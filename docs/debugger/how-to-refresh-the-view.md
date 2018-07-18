@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480081"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：重新整理檢視
 Spy + + 會採用系統資料表 「 快照集 」 並重新整理檢視，這項資訊為基礎。 請務必您定期重新整理您的系統檢視表。 如果您有 Spy + + 檢視開啟並沒有重新整理檢視，不會看到這些處理程序、 執行緒和後續建立的 windows。 此外，您可能會看見項目已不存在。 **重新整理**命令適用於訊息檢視以外的所有檢視。  

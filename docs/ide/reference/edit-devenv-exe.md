@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704287"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 在現有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 執行個體中開啟指定的檔案。

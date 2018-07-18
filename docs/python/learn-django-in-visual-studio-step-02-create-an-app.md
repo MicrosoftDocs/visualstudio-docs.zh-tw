@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750502"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>教學課程步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 05/23/2018
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>步驟 2-1：建立具有預設結構的應用程式
 
-Django 應用程式是個別的 Python 套件，其中包含具特定用途的相關檔案集。 Django 專案可包含任意數目的應用程式，這反映出 Web 主機可從單一網域名稱提供任意數目的個別進入點。 例如，針對 contoso.com 網域的 Django 專案可能包含三個應用程式，分別用於 www.contoso.com、support.contoso.com 及 docs.contoso.com。在此情況下，Django 專案會處理網站層級 URL 路由與設定 (於其 `urls.py` 與 `settings.py` 檔案中)，同時每個應用程式都會透過其內部路由、檢視、模型、靜態檔案及系統管理介面，擁有屬於自己的獨特樣式與行為。
+Django 應用程式是個別的 Python 套件，其中包含具特定用途的相關檔案集。 Django 專案可包含任意數目的應用程式，這反映出 Web 主機可從單一網域名稱提供任意數目的個別進入點。 例如，針對 contoso.com 網域的 Django 專案可能包含三個應用程式，分別用於 www.contoso.com、support.contoso.com 及 docs.contoso.com。 在此情況下，Django 專案會處理網站層級 URL 路由與設定 (於其 `urls.py` 與 `settings.py` 檔案中)，同時每個應用程式都會透過其內部路由、檢視、模型、靜態檔案及系統管理介面，擁有屬於自己的獨特樣式與行為。
 
 Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studio 提供項目範本以初始化 Django 專案內的 Django 應用程式，並提供具相同用途的整合式功能表命令：
 
@@ -106,7 +107,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 因為您已變更並成功測試程式碼，所以現在是檢閱並認可對原始碼控制所做變更的絕佳時機。 本教學課程稍後的步驟會在適當時刻提醒您再次認可至原始檔控制，並請您回頭參閱本節。
 
-1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這將會瀏覽至 [Team Explorer]。
+1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這會瀏覽至 [Team Explorer]。
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/django/step02-source-control-changes-button.png)
 
@@ -210,9 +211,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
 1. 執行專案，並觀察輸出結果。 您應該會看到和步驟 2-2 類似的訊息，表示範本運作正常。
 
-    不過，您會觀察到在 `content` 屬性中使用的 HTML 只會轉譯為純文字，原因是 `render` 函式會自動逸出該 HTML。 雖然您可以迴避逸出，但最好一開始就避免使用內嵌 HTML。 格式設定和樣式最好保留在頁面範本，而非程式碼之中，加上在需要之處建立額外的變數本身是一件相當容易的事。
-
-    例如，透過變更 `templates/index.html` 以符合下列標記，可新增頁面標題，同時保留頁面範本中的所有格式設定：
+    不過，您會觀察到在 `content` 屬性中使用的 HTML 只會轉譯為純文字，原因是 `render` 函式會自動逸出該 HTML。 自動逸出可防止意外遭受插入式攻擊：開發人員經常會透過範本預留位置從一個頁面收集輸入，再使用該輸入作為另一個頁面的值。 逸出也可作為一種提醒，就是最好將 HTML 放在頁面範本中且在程式碼外。 幸運的是，視需要建立額外變數是相當簡單的事。 例如，透過變更 `templates/index.html` 以符合下列標記，可新增頁面標題，同時保留頁面範本中的所有格式設定：
 
     ```html
     <html>

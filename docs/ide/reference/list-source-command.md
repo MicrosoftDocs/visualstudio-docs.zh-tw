@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943614"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。

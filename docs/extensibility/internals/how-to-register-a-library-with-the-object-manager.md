@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132991"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 註冊物件管理員與程式庫
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**和**尋找符號結果**，讓您檢視外部元件或專案中的符號。 符號包含命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，以及將它們以公開[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會填入資料的工具。  

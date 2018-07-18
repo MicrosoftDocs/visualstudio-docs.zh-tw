@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147111"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>逐步解說： 顯示陳述式完成
 您可以實作以語言為基礎的陳述式完成定義您要提供完成的識別項，然後觸發完成的工作階段。 您可以定義的語言服務內容中的陳述式完成、 定義您自己檔案的副檔名和內容類型，然後顯示 完成，只要該類型，或完成現有的內容類型的觸發程序 — 例如，「 純文字 」。 本逐步解說示範如何觸發陳述式完成，「 純文字"內容型別，也就是文字檔案的內容類型。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  

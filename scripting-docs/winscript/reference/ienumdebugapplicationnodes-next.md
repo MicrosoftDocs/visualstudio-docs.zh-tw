@@ -1,11 +1,11 @@
 ---
-title: "IEnumDebugApplicationNodes::Next |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugApplicationNodes::Next |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugApplicationNodes.Next
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugApplicationNodes::Next
 ms.assetid: 925511c8-4f11-423d-ba2d-01589457050c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727828"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 擷取指定的列舉順序中的區段數目。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099798"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 項目 (Visual Studio 範本)
 群組精靈進行參數取代時，應該傳遞至範本精靈的自訂參數。  

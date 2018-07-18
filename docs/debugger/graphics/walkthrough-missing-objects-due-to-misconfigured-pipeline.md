@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481875"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 此逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為沒有設定像素著色器而遺失的物件。  

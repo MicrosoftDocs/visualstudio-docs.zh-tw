@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139457"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中著色的語法
 Visual Studio 環境 SDK 編輯器，包括核心編輯器中，使用語言服務找出特定語法的項目，並使用指定的色彩，給定文件檢視中顯示它們。

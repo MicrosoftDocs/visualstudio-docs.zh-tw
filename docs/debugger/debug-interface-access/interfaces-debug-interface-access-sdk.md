@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474738"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 方法依字母順序列在每個介面，在該資料表的內容，並依照 Vtable 順序的介面上。  

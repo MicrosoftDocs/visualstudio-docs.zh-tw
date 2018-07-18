@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568198"
 ---
 # <a name="formatversion-task"></a>FormatVersion 工作
 將修訂編號附加至版本號碼。  

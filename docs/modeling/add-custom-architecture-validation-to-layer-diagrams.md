@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952540"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>相依性圖表中加入自訂架構驗證
 在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，以便他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。

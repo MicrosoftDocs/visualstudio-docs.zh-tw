@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474917"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 使用此對話方塊來選取哪一個訊息會列在[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，選擇**記錄檔訊息**從**Spy**功能表。  

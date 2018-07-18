@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31583992"
 ---
 # <a name="noise-reduction-percentage"></a>雜訊減少百分比
 根據預設，[雜訊減少百分比] 設定的值為 2。 呼叫樹狀結構只會顯示內含時間百分比大於或等於這項設定的項目。 只要變更此設定，您就可以控制呼叫樹狀結構顯示的項目數。 例如，值變更為 10 只會顯示內含時間大於或等於 10% 的呼叫樹狀結構項目。 增加設定的值，您就可以專注於對程序效能有較大影響的項目。

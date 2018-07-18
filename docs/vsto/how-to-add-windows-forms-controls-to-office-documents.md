@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264543"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何： 將 Windows Form 控制項加入 Office 文件
   您可以在文件層級專案的設計階段中，將 Windows Form 控制項加入 Microsoft Office Excel 和 Microsoft Office Word 文件。 在執行階段，您可以將控制項在文件層級自訂和 VSTO 增益集。例如，您可以將 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 控制項加入工作表，讓使用者可以從選項清單中進行選取。  

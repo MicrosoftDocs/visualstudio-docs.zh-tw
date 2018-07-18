@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102196"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>建立和管理的強制回應對話方塊
 當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，對話方塊中的父視窗已停用，然後關閉對話方塊後重新啟用父視窗。 如果不這麼做，您可能會收到錯誤:"Microsoft Visual Studio 無法關閉，因為強制回應對話方塊為作用中。 關閉 active 對話方塊，然後再試一次。 」  

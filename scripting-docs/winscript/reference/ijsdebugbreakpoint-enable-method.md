@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugbreakpoint:: Enable 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Ijsdebugbreakpoint:: Enable 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJSDebugBreakPoint.Enable
-apilocation: jscript9diag.dll
+apiname:
+- IJSDebugBreakPoint.Enable
+apilocation:
+- jscript9diag.dll
 ms.assetid: f7164fc6-4463-41aa-bc79-439d61535c46
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728038"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable 方法
 啟用中斷點。  

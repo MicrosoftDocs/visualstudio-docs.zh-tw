@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481784"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>編輯後繼續對話方塊 (C++)
 [編輯後繼續] 無法套用您對機器碼所做的變更。 不過這可能只是暫時的狀況。 有時 [編輯後繼續] 無法立即套用機器碼變更，但是可以稍後在偵錯工作階段期間套用 (例如，完成目前執行的程序呼叫後)。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。  

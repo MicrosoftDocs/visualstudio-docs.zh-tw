@@ -1,11 +1,11 @@
 ---
-title: "IRemoteDebugApplication::DisconnectDebugger |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplication::DisconnectDebugger |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IRemoteDebugApplication.DisconnectDebugger
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IRemoteDebugApplication::DisconnectDebugger
 ms.assetid: 989e5a34-0267-4a2e-96b6-e1dcc2ffe883
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729198"
 ---
 # <a name="iremotedebugapplicationdisconnectdebugger"></a>IRemoteDebugApplication::DisconnectDebugger
 目前的偵錯工具中斷應用程式。  

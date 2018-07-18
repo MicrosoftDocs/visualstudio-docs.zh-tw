@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135496"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>擴充的方案總管篩選條件
 您可以擴充**方案總管 中**篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立顯示只有 C# 類別處理站的檔案篩選器**方案總管 中**，如本逐步解說示範。  

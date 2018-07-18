@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709827"
 ---
 # <a name="view-recent-job-performance-and-details"></a>檢視最近的作業效能和詳細資料
 提交作業之後，您可以檢視作業清單，以查看它們的狀態、期間及其他資訊。

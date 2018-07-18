@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147215"
 ---
 # <a name="walkthrough-highlighting-text"></a>逐步解說： 反白顯示文字
 您可以加入不同的視覺效果編輯器所建立 Managed Extensibility Framework (MEF) 元件組件。 本逐步解說示範如何以反白顯示每個出現的文字檔案中目前字組。 如果 word 中文字檔案時，發生一次以上，而且您將插入號放一個出現項目，每個出現反白顯示。  

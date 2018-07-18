@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978371"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -37,14 +38,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>如何使用支援的 Web 瀏覽器，在 Web 應用程式上錄製和播放自動程式化 UI 測試？
 
-**記錄：**您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。
+**記錄：** 您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。
 
 > [!NOTE]
 > 您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。
 
- **使用 Internet Explorer 播放：**若未明確指定瀏覽器，預設會使用 Internet Explorer 執行測試。 您可以在測試程式碼中設定 **BrowserWindow.CurrentBrowser** 屬性，以明確指定要使用的瀏覽器。 若使用 Internet Explorer，應將這個屬性設定為 **IE** 或 **Internet Explorer**。
+ **使用 Internet Explorer 播放：** 若未明確指定瀏覽器，預設會使用 Internet Explorer 執行測試。 您可以在測試程式碼中設定 **BrowserWindow.CurrentBrowser** 屬性，以明確指定要使用的瀏覽器。 若使用 Internet Explorer，應將這個屬性設定為 **IE** 或 **Internet Explorer**。
 
- **使用非 Internet Explorer 網頁瀏覽器播放：**若要在非 Internet Explorer 的網頁瀏覽器中播放，請將測試程式碼中的 BrowserWindow.CurrentBrowser 屬性變更為 **Firefox** 或 **Chrome**。
+ **使用非 Internet Explorer 網頁瀏覽器播放：** 若要在非 Internet Explorer 的網頁瀏覽器中播放，請將測試程式碼中的 BrowserWindow.CurrentBrowser 屬性變更為 **Firefox** 或 **Chrome**。
 
  若要在非 IE 網頁瀏覽器上播放測試，您必須安裝**自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件**。
 

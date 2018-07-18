@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111184"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 這個介面用來傳達重要的偵錯資訊，例如停止於中斷點和非關鍵資訊，例如偵錯訊息。  

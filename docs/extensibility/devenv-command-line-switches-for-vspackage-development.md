@@ -25,6 +25,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134356"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv 命令列參數為 VSPackage 開發的
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓開發人員執行 devenv.exe，會啟動 Visual Studio 整合式的開發環境 (IDE) 的檔案時，從命令列的工作自動化。  

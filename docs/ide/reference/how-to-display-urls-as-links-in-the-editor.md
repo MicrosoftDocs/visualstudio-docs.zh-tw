@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448048"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 您可以選擇用程式碼編輯器，將您的程式碼中的統一資源定位器 (URL) 視為使用中的連結。 當您使用這項功能時，URL：

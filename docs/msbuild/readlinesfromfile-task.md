@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567339"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 工作
 從文字檔讀取項目清單。  

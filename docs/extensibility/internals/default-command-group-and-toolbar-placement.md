@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130527"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設的命令、 群組及工具列位置
 產品的一致性與穩定性，UI 預設會顯示特定命令的群組，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令和命令群組提供定義。 Vspackage 也可以使用標準命令和命令群組。  

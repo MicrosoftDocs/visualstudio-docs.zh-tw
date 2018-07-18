@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45306283d6aaa2346b121455cca398e918b66e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764526"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 在並行視覺化檢視中，時間表區段空白 (具有白色背景) 的原因取決於通道的類型。  
@@ -31,6 +32,6 @@ ms.lasthandoff: 04/19/2018
   
 -   如為標記通道，表示未產生任何標記。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)

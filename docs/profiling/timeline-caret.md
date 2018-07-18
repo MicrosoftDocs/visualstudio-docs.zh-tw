@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2127515d74fba12a0248731c7483697f6e3afa78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f55f42e17dec1a1b236d713ac31c2dfa681cd913
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476660"
 ---
 # <a name="timeline-caret"></a>時間軸插入號
 當您在執行執行緒區段的時間軸上選取一點，時間軸插入號會出現在那點上方。 顯示在目前堆疊索引標籤上的呼叫堆疊，在時間上最接近您所按的區段。 插入號是用來和呼叫堆疊相關聯，其會在取樣的瞬間，顯示在 [目前] 索引標籤下方。 插入號顯示呼叫堆疊的確切位置，其是最接近使用者所選取位置的呼叫堆疊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

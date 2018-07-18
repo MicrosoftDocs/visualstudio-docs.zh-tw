@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915228"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821：必須移除空的完成項
 |||

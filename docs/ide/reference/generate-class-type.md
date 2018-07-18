@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947358"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -28,11 +29,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您立即產生類別或類型的程式碼。
+**功能：** 讓您立即產生類別或類型的程式碼。
 
 **時機：** 您引進新的類別或類型，並想要自動正確地宣告它。
 
-**原因：**您可以在使用類別或類型之前先宣告它，不過，此功能將可自動產生類別或類型。
+**原因：** 您可以在使用類別或類型之前先宣告它，不過，此功能將可自動產生類別或類型。
 
 ## <a name="how-to"></a>操作說明
 

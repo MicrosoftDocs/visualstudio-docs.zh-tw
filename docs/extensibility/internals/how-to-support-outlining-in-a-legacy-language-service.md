@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130241"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支援舊版語言服務中的大綱
 大綱用來展開或摺疊的文字不同的區域。 使用方式大綱定義不同的語言不同。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。  

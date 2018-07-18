@@ -1,14 +1,14 @@
 ---
-title: "JavaScript 執行階段 Typedef、常數和列舉 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 執行階段 Typedef、常數和列舉 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1aa107ed-e144-4947-b5bb-90284a537174
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569038"
 ---
 # <a name="javascript-runtime-typedefs-constants-and-enumerations"></a>JavaScript 執行階段 Typedef、常數和列舉
 JavaScript Runtime (JsRT) typedef、常數及列舉支援將指令碼功能加入至 Windows 上執行的桌面和伺服器端應用程式。  

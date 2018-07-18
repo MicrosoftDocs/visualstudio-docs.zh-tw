@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475676"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何： 在 Visual Studio 中偵錯時切換至另一個執行緒
 當您偵錯多執行緒應用程式時，您可以使用數種方法的任何一個可從您已使用的其他執行緒的執行緒切換。

@@ -1,16 +1,16 @@
 ---
-title: "IEnumDebugExpressionContexts 介面 |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugExpressionContexts 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IEnumDebugExpressionContexts interface
 ms.assetid: 1c11f9ff-c5a6-48b8-a287-0d782513ba55
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728358"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts 介面
 列舉的集合`IDebugExpressionContexts`物件。  

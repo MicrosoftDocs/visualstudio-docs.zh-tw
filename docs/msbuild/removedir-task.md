@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578129"
 ---
 # <a name="removedir-task"></a>RemoveDir 工作
 移除指定的目錄及其所有檔案和子目錄。  

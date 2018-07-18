@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131851"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務提供語法顏色標示時，剖析器將一行文字轉換成色彩項目的陣列，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應傳回語彙基元的型別屬於色彩的項目清單。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在程式碼視窗中，根據指派給適當的權杖類型的色彩標示器物件的屬性，會顯示每個色彩的項目。  

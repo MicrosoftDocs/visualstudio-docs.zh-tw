@@ -1,13 +1,13 @@
 ---
-title: "未預期的數量詞 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 未預期的數量詞 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5018
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633248"
 ---
 # <a name="unexpected-quantifier-javascript"></a>非預期的數量詞 (JavaScript)
 當您在撰寫規則運算式搜尋模式，您會建立包含不合法的重複因數模式項目。 例如，模式  

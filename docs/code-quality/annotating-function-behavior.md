@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899351"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 除了標註[函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)，您可以標註整體函式的屬性。

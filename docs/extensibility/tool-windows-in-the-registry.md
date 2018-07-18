@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138443"
 ---
 # <a name="tool-windows-in-the-registry"></a>在登錄中的工具視窗
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]做為工具視窗提供者。 使用 Visual Studio 封裝範本所建立的工具視窗這麼做的預設值。 工具視窗提供者具有指定可視性的屬性，例如預設工具視窗大小和位置，做為工具視窗窗格和停駐樣式的視窗 GUID 的系統登錄機碼。  

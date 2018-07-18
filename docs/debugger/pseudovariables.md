@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926832"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的虛擬變數
 虛擬變數是用來顯示在變數視窗中的特定資訊的詞彙或**快速監看式** 對話方塊。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。  

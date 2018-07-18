@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952822"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 如果您撰寫文字範本讀取模型，其中包含[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 參考時，您可能想要解析的參考來存取目標模型。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):

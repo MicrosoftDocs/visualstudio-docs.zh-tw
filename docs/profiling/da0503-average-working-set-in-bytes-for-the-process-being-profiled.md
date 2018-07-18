@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e9bfac449598e9edb203dadbf2a49b0047f098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d45e5ea6e4739e4be7242c97489abaf412652a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764952"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：進行程式碼剖析之處理序的平均工作集 (以位元組為單位)
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：所分析之處理序的平均工作集 (以位元組為單位)
 |||  
 |-|-|  
 |規則 ID|DA0503|  

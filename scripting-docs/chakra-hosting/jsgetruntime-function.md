@@ -1,18 +1,18 @@
 ---
-title: "JsGetRuntime 函式 | Microsoft Docs"
-ms.custom: 
+title: JsGetRuntime 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsGetRuntime
 helpviewer_keywords:
 - JsGetRuntime function
 ms.assetid: 5b62e940-a885-405a-9fdd-0495fb391b95
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568488"
 ---
 # <a name="jsgetruntime-function"></a>JsGetRuntime 函式
 取得內容所屬的執行階段。  

@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugbreakpoint:: Getdocumentposition 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Ijsdebugbreakpoint:: Getdocumentposition 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJSDebugBreakPoint.GetDocumentPosition
-apilocation: jscript9diag.dll
+apiname:
+- IJSDebugBreakPoint.GetDocumentPosition
+apilocation:
+- jscript9diag.dll
 ms.assetid: 886df8ba-a59a-48a7-87f2-3b669e71528f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727608"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition 方法
 傳回陳述式在繫結中斷點的位置。  

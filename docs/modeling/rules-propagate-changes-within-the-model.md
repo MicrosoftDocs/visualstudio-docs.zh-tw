@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952755"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立將變更傳播會在項目到另一個 Visualization and Modeling SDK (VMSDK) 中的存放區規則。 存放區中的任何項目變更時，規則排程時所要執行，通常就會認可最外層的交易。 有不同類型的不同類型的事件，例如加入新項目，或刪除它的規則。 您可以將規則附加到特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保模型變更時，會更新圖表。 您可以自訂特定領域語言，加入您自己的規則。
@@ -133,7 +134,7 @@ namespace ExampleNamespace
     |基底類別|觸發程序|
     |----------------|-------------|
     |<xref:Microsoft.VisualStudio.Modeling.AddRule>|加入項目、 連結或圖形。<br /><br /> 使用此偵測新的關聯性，除了新的項目。|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|網域屬性值已變更。 方法引數提供的舊的和新值。<br /><br /> 形狀，就會觸發這個規則時內建`AbsoluteBounds`屬性變更，如果圖形移動時。<br /><br /> 在許多情況下，會比較方便覆寫`OnValueChanged`或`OnValueChanging`屬性處理常式中。 變更立即之前和之後，會呼叫這些方法。 相反地，規則通常會在交易結束執行。 如需詳細資訊，請參閱[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。 **注意：**建立或刪除連結時，不會觸發這個規則。 相反地，寫入`AddRule`和`DeleteRule`網域關聯性。|
+    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|網域屬性值已變更。 方法引數提供的舊的和新值。<br /><br /> 形狀，就會觸發這個規則時內建`AbsoluteBounds`屬性變更，如果圖形移動時。<br /><br /> 在許多情況下，會比較方便覆寫`OnValueChanged`或`OnValueChanging`屬性處理常式中。 變更立即之前和之後，會呼叫這些方法。 相反地，規則通常會在交易結束執行。 如需詳細資訊，請參閱[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。 **注意：** 建立或刪除連結時，不會觸發這個規則。 相反地，寫入`AddRule`和`DeleteRule`網域關聯性。|
     |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|即將刪除的項目或連結時，就會觸發。 屬性 ModelElement.IsDeleting 成立直到交易結束為止。|
     |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|已刪除的項目或連結時執行。 所有其他規則已執行，包括 DeletingRules 之後，會執行規則。 ModelElement.IsDeleting 為 false，而且 ModelElement.IsDeleted 為 true。 若要允許進行後續的復原，項目實際上不會移除從記憶體中，但會從 Store.ElementDirectory 移除。|
     |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|項目移至另一個存放區的磁碟分割。<br /><br /> （請注意，這不與圖形化圖案的位置）。|

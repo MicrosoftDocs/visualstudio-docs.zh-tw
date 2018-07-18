@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924713"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>將資料從物件儲存至資料庫
 您也可以從物件的值傳遞至 TableAdapter 的 DBDirect 方法的其中一個資料庫物件中儲存資料 (例如， `TableAdapter.Insert`)。 如需詳細資訊，請參閱[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570076"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 項目 (MSBuild)
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。  

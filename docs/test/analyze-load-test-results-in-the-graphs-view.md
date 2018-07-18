@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973150"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -78,12 +79,12 @@ ms.lasthandoff: 04/26/2018
 |工作|相關主題|
 |-----------|-----------------------|
 |**使用圖例自訂圖形：**[圖形] 檢視圖例會顯示每個與圖形建立關聯之效能計數器的資訊。 您可以使用圖例來移除效能計數器、反白顯示圖形中的效能計數器，以及自訂繪圖選項。|-   [使用圖形檢視圖例來分析負載測試](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**在圖形上顯示計數器：**藉由在圖形上置放計數器，您可以將各種資料新增至負載測試結果圖形。|-   [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**放大圖形：**完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。|-   [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**並排顯示圖形：**您可以使用數種模式排列負載測試結果圖形。 最多可以並排顯示四個圖形。||
-|**修改圖形中效能計數器繪圖的外觀：**您可以變更圖形中效能計數器的繪圖線條選項。 包括色彩和線條樣式。 此外，也可以指定要自動或手動指定用於繪製效能計數器的範圍。|-   [如何：指定圖形計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)|
-|**建立自訂圖形：**您可以設計用來顯示有關負載測試結果的特定資訊的圖形。 藉由指定圖形要顯示的負載測試計數器，即可以設計自訂圖形。|-   [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**匯出圖形中的效能計數器資料：**您可以在 [負載測試分析器] 的 [圖形] 檢視中使用工具列上的 [將圖形資料匯出至 Excel] 按鈕，將圖形資料匯出至 Microsoft Excel。||
+|**在圖形上顯示計數器：** 藉由在圖形上置放計數器，您可以將各種資料新增至負載測試結果圖形。|-   [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**放大圖形：** 完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。|-   [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**並排顯示圖形：** 您可以使用數種模式排列負載測試結果圖形。 最多可以並排顯示四個圖形。||
+|**修改圖形中效能計數器繪圖的外觀：** 您可以變更圖形中效能計數器的繪圖線條選項。 包括色彩和線條樣式。 此外，也可以指定要自動或手動指定用於繪製效能計數器的範圍。|-   [如何：指定圖形計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)|
+|**建立自訂圖形：** 您可以設計用來顯示有關負載測試結果的特定資訊的圖形。 藉由指定圖形要顯示的負載測試計數器，即可以設計自訂圖形。|-   [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**匯出圖形中的效能計數器資料：** 您可以在 [負載測試分析器] 的 [圖形] 檢視中使用工具列上的 [將圖形資料匯出至 Excel] 按鈕，將圖形資料匯出至 Microsoft Excel。||
 
 ## <a name="related-tasks"></a>相關工作
 

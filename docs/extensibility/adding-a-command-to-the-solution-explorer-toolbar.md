@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107383"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何新增按鈕**方案總管 中**工具列。  

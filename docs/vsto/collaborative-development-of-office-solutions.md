@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267772"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多位開發人員可以在 Office 專案工作，如同它們在其他 Visual Studio 專案上共同作業。 Visual Studio 正確地找出每一部做為 Microsoft Office 安裝，即使將 Office 安裝在不同的位置。 不過，有一些要注意的重要的考量。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129692"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>取得字型和色彩資訊文字的顏色標示
 呈現或彩色的文字顯示在使用者介面 (UI) 項目中的程序取決於專案、 技術和開發人員的喜好設定的類型。 **字型和色彩**屬性頁儲存設定。

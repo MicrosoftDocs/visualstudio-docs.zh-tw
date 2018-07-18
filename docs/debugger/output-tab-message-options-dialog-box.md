@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475401"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>訊息選項對話方塊、輸出索引標籤
 使用**輸出**索引標籤可指定從每個訊息至清單中的哪些資料[訊息檢視](../debugger/messages-view.md)。 若要顯示[訊息選項對話方塊](../debugger/message-options-dialog-box.md)，選擇**記錄檔訊息**從**Spy**功能表。  

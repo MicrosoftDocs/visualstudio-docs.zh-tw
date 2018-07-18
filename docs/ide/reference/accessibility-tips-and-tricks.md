@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747452"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -34,13 +35,13 @@ Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助
 
 對有些人而言，部分色彩十分難以辨識。 如果希望提高程式碼的對比，但不想使用一般的「高對比」佈景主題，我們現在提供「藍色 (超對比)」佈景主題。
 
-  ![比較藍色佈景主題和藍色超對比佈景主題](media/blue-extra-contrast-theme.png "看到藍色佈景主題和藍色超對比佈景主題之間的差異")
+  ![比較藍色佈景主題和藍色 (超對比) 佈景主題](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用註釋顯示程式碼的實用資訊
 
 Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特定點的特性和功能，例如燈泡、錯誤和警告的「波浪線」、書籤等等。 您可以使用「顯示程式碼行註釋」命令集協助探索，然後巡覽這些裝飾。
 
-  ![使用顯示程式碼行註釋命令集](media/show-line-annotations-command-set.png "示範如何設定顯示程式碼行註釋命令集")
+  ![使用「顯示程式碼行註釋」命令集](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>使用快速鍵組合存取工具列
 
@@ -49,7 +50,7 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 |功能|描述|按鍵組合|
 |-------------|-----------------|---------------------|
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
-|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：**這適用於大部分的工具視窗，但只限焦點在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
+|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
 |工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**CTRL** + **TAB**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合
@@ -58,10 +59,10 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 |功能|描述|按鍵組合|
 |-------------|-----------------|---------------------|
-|IDE|開啟或關閉高對比。 <br> <br> **注意：**標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
-|對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：**標準 Windows 捷徑|**空格鍵**|
-|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：**標準 Windows 捷徑|**SHIFT** + **F10**|
-|Menus|使用其快速鍵來快速存取功能表項目。 選擇後接功能表中加底線字母的 **ALT** 鍵，來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，您將選擇 **ALT** + **F** + **O** + **P**。  <br><br> **注意：**標準 Windows 捷徑|**ALT** + **[字母]**|
+|IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
+|對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|
+|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**SHIFT** + **F10**|
+|Menus|使用其快速鍵來快速存取功能表項目。 選擇後接功能表中加底線字母的 **ALT** 鍵，來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，您將選擇 **ALT** + **F** + **O** + **P**。  <br><br> **注意：** 標準 Windows 捷徑|**ALT** + **[字母]**|
 |[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**CTRL** + **向上鍵**<br /><br /> 和<br /><br /> **CTRL** + **向下鍵**|
 |[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**ENTER**|
 |選項對話方塊、環境、鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|
@@ -82,18 +83,18 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 1. 在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入**變更系統音效**。
 
-  ![Windows 10 的 [搜尋] 方塊](media/type-here-to-search.png "在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入音效")
+  ![Windows 10 中的搜尋方塊](media/type-here-to-search.png)
 
   (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
 
 2. 按兩下 [變更系統音效]。
 
-  ![Windows 10 的搜尋結果](media/change-system-sounds.png "按兩下搜尋結果中的 [變更系統音效]")
+  ![Windows 10 中的搜尋結果](media/change-system-sounds.png)
 
 3. 在 [音效] 對話方塊中，按一下 [音效] 索引標籤。 <br><br>
  然後，在 [程式事件] 中捲動到 **Microsoft Visual Studio**，選取您想要套用至所選事件的音效。
 
-  ![Windows 10 音效小程式的 [音效] 索引標籤](media/sound-applet.png "按兩下搜尋結果中的 [變更系統音效]")
+  ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png)
 
 4. 按一下 [確定 **Deploying Office Solutions**]。
 

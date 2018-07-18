@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704521"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [即時運算] 視窗用來偵錯和評估運算式、執行陳述式、列印變數值等等。 它可讓您在偵錯期間，輸入開發語言要評估或執行的運算式。 若要顯示 [即時運算] 視中，請開啟專案以進行編輯，然後從 [偵錯] 功能表中選擇 [視窗]，並選取 [即時運算]，或按 CTRL+ALT+I。

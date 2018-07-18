@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c773d3135cff3d898c93ed6d9df43b36c387747c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764705"
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
-[匯出] 按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .csv 檔案或與 Microsoft Excel 這類其他工具搭配使用。  
+[匯出] 按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .*csv* 檔案或與 Microsoft Excel 這類其他工具搭配使用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474696"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 使用**訊息**索引標籤，選取 [訊息類型] 清單中以[訊息檢視](../debugger/messages-view.md)，並指定訊息搜尋準則。 若要顯示[訊息選項對話方塊](../debugger/message-options-dialog-box.md)，選擇**記錄檔訊息**從**Spy**功能表。  

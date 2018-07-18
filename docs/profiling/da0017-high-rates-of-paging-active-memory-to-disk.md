@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e962cfe761af48f5c7aa02d1e476c33e1bf9f4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 60dfbba96a7b52ff271e1633528cf0934e347b6e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749839"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
 |||  

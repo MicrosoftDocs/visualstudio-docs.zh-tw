@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104679"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 包含實作中斷點的行，包括廠商 GUID、 條件約束和追蹤點所需的資訊。  

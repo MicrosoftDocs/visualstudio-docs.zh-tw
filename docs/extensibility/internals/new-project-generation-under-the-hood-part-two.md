@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133181"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生： 在幕後，第二部分
 中[產生新的專案： 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新專案**對話方塊方塊會填入。 讓我們假設您已選取**Visual C# Windows 應用程式**、 填寫**名稱**和**位置**文字方塊中，並按下 [確定]。  

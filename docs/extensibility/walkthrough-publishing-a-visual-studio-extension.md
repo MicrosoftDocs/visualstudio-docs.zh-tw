@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147062"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說： 發行 Visual Studio 擴充功能
 

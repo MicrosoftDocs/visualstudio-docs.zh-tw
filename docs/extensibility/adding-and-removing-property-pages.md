@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101286"
 ---
 # <a name="adding-and-removing-property-pages"></a>加入和移除屬性頁
 專案設計工具提供管理專案屬性、 設定和資源的集中式的位置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，並包含存取透過左側索引標籤的窗格右邊的數字。 專案設計工具中 （通常稱為屬性頁） 的窗格會因專案類型和語言而異。 專案設計工具可以使用存取**屬性**命令**專案**功能表。  

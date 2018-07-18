@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108384"
 ---
 # <a name="capability-flags"></a>功能旗標
 SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元旗標。 SCC_EXCAP_*xxx*旗標是累加式的旗標，表示擴充的功能，並解析為整數值。  

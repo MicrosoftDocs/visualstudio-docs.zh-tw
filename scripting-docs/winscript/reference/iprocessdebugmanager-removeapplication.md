@@ -1,11 +1,11 @@
 ---
-title: "IProcessDebugManager::RemoveApplication |Microsoft 文件"
-ms.custom: 
+title: IProcessDebugManager::RemoveApplication |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IProcessDebugManager.RemoveApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IProcessDebugManager::RemoveApplication
 ms.assetid: 334e869d-81ae-4d30-9e89-89763ad4f184
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729178"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
 移除應用程式從執行的應用程式清單。  

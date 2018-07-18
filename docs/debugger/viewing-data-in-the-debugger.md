@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482174"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立資料的自訂檢視
 各種由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具所提供的工具，都可用來檢查和修改您的程式狀態。 這些工具大多數只能在中斷模式下運作。

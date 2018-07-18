@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplication110::AsynchronousCallInMainThread |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication110::AsynchronousCallInMainThread |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplication110::AsynchronousCallInMainThread
 ms.assetid: 13b80ff0-4bed-48c1-8031-d4147b51bf6c
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725738"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
 在主執行緒上進行非同步呼叫。  

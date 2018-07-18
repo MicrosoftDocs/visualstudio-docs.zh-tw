@@ -10,21 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572341"
 ---
-# <a name="troubleshooting-performance-tools-issues"></a>效能工具問題疑難排解
+# <a name="troubleshoot-performance-tools-issues"></a>針對效能工具問題進行疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：  
   
 -   [程式碼剖析工具沒有收集到任何資料](#NoDataCollected)  
   
 -   [效能檢視和報表將函式名稱顯示為數字](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a>程式碼剖析工具沒有收集到任何資料  
- 在您分析應用程式之後，並未建立程式碼剖析資料 (.vsp) 檔案，而且您在輸出視窗或命令視窗中收到下列警告：  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>程式碼剖析工具沒有收集到任何資料  
+ 在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出] 視窗或命令視窗中收到下列警告：  
   
  PRF0025: 未收集任何資料。  
   
@@ -34,16 +35,16 @@ ms.lasthandoff: 04/19/2018
   
      若要在這種情況下收集程式碼剖析資料，請將分析工具附加至子處理序，而不是使用分析工具來啟動應用程式。 如需詳細資訊，請參閱[如何：為執行中的處理序附加和中斷連結效能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
   
-##  <a name="NoSymbols"></a>效能檢視和報表將函式名稱顯示為數字  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>效能檢視和報表將函式名稱顯示為數字  
  在您分析應用程式之後，您在報表和檢視中看到數字，而不是函式名稱。  
   
- 這是由程式碼剖析工具分析引擎造成的問題，因其無法找到所含的符號資訊和原始程式碼資訊對應的 .pdb 檔，例如已編譯檔案的函式名稱和行號。 根據預設，編譯器會在建置應用程式檔案時建立 .pdb 檔。 .pdb 檔案的本機目錄參考會儲存在已編譯的應用程式中。 分析引擎會在參考的目錄中尋找 .pdb 檔，然後在目前包含應用程式檔案的檔案中尋找。 如果找不到 .pdb 檔，分析引擎會使用函式位移，而不是函式名稱。  
+ 這是由程式碼剖析工具分析引擎造成的問題，因其無法找到其所含的符號資訊與原始程式碼資訊對應的 .*pdb* 檔，例如已編譯檔案的函式名稱和行號。 根據預設，編譯器會在建置應用程式檔案時建立 .*pdb* 檔。 .*pdb* 檔案的本機目錄參考會儲存在已編譯的應用程式中。 分析引擎會在參考的目錄中尋找 .*pdb* 檔，然後在目前包含應用程式檔案的檔案中尋找。 如果找不到 .*pdb* 檔，分析引擎會使用函式位移，而不是函式名稱。  
   
  您可以下列兩種方式解決這個問題︰  
   
--   找到 .pdb 檔，並放入和應用程式檔案相同的目錄。  
+-   找到 .*pdb* 檔，並放入和應用程式檔案相同的目錄。  
   
--   在程式碼剖析資料 (.vsp) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。  
+-   在程式碼剖析資料 (.*vsp*) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。  
   
 > [!NOTE]
->  分析引擎所需的 .pdb 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .pdb 檔不適用。
+>  分析引擎所需的 .*pdb* 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .*pdb* 檔不適用。

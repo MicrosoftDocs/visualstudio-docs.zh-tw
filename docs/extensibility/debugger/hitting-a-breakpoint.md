@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109138"
 ---
 # <a name="hitting-a-breakpoint"></a>叫用中斷點
 以下描述的偵錯引擎 (DE) 執行，或逐步執行時叫用中斷點時的處理程序：  

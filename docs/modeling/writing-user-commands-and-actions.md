@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965173"
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。

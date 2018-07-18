@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633698"
 ---
 # <a name="unterminated-comment"></a>未結束的註解
 您已經開始多行註解區塊中，但未正確地終止它。 開頭為多行註解"/ * 」 組合，並以相反順序的結尾 」\*/ 」 組合。 以下是一個範例：  

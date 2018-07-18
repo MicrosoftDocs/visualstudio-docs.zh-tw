@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132544"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂的文件
 環境控制代碼**儲存**，**存**，和**全部儲存**命令。 當使用者按一下**儲存**，**存**，**或 全部儲存**上**檔案**功能表或關閉方案，導致 全部儲存，下列程序。  

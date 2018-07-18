@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549099"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何： 選取要使用的 XML 結構描述
 

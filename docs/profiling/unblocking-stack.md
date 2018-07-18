@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77f9240b223ad903cc89be0e49f3b0ea46d2fe3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2a22c413c7f27b5aff14fa21d28163963a7351
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477024"
 ---
-# <a name="unblocking-stack"></a>解除封鎖堆疊
+# <a name="unblock-stack"></a>解除封鎖堆疊
 如果目前選取的執行緒元素代表封鎖的區段，稍後會在目前處理序中的另一個執行緒將其解除封鎖之後執行，此索引標籤上會顯示執行解除封鎖的執行緒呼叫堆疊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

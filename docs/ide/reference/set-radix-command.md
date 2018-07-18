@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704469"
 ---
 # <a name="set-radix-command"></a>設定基數命令
 設定或傳回用來顯示整數值的數值基底。

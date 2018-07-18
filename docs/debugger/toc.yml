@@ -826,3 +826,5 @@
   items:
     - name: Visual Studio 中偵錯工具的新功能
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: 適用於徹底初學者偵錯
+      href: debugging-absolute-beginners.md

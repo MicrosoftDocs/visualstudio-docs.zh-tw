@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476451"
 ---
 # <a name="search-menu-commands"></a>搜尋功能表命令
 **搜尋** 功能表提供要搜尋特定的 windows 命令。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917392"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：將著色器套用至 3D 模型
 

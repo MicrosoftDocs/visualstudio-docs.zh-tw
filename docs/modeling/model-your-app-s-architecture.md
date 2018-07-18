@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952475"
 ---
 # <a name="model-your-app39s-architecture"></a>您的應用程式&#39;s 架構
 為了協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，為您的整體結構描述與軟體系統或應用程式行為的一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。

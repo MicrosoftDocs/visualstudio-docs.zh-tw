@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957732"
 ---
 # <a name="connected-services-walkthrough"></a>已連線的服務逐步解說
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 05/10/2018
 1.  從按兩下方案中的 [已連線的服務] 節點開始著手，這會顯示 [服務資源庫]。
   這是一份應用程式類型可用的所有服務清單。 按一下某個服務 (例如 [採用 Azure App Service 的行動後端]) 來選取該服務。
 
-    [![Visual Studio for Mac 中的 [已連線的服務] 節點](media/connected-services-image001-sml.png "Visual Studio for Mac 中的 [已連線的服務] 節點")](media/connected-services-image001.png#lightbox)
+    [![Visual Studio for Mac 中的 已連線的服務 節點](media/connected-services-image001-sml.png "Visual Studio for Mac 中的 [已連線的服務] 節點")](media/connected-services-image001.png#lightbox)
 
 2. [服務詳細資料] 頁面會有該服務的描述，以及要安裝的相依性。
   按一下 [新增] 按鈕以將相依性新增至應用程式：

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473182"
 ---
 # <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
 若要進一步了解中所列的視窗[視窗檢視](../debugger/windows-view.md)，使用[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)。  

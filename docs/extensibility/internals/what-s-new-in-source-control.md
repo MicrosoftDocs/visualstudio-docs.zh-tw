@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137764"
 ---
 # <a name="what39s-new-in-source-control"></a>什麼&#39;s 原始檔控制的新功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]您可以藉由實作 VSPackage 的原始檔控制提供緊密整合式原始檔控制方案。 本節描述原始檔控制 Vspackage 的功能，並提供實作步驟的概觀。  

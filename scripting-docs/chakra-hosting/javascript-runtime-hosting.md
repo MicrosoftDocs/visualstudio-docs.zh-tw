@@ -1,14 +1,14 @@
 ---
-title: "JavaScript 執行階段裝載 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 執行階段裝載 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567768"
 ---
 # <a name="javascript-runtime-hosting"></a>JavaScript 執行階段裝載
 JavaScript 執行階段 (JsRT) API 藉由同時在 Microsoft Edge 及 Internet Explorer 上使用的標準 Chakra JavaScript 引擎，為 Windows 作業系統上執行的桌面、Windows 市集及伺服器端應用程式，提供加入指令碼的功能。 這些 API 可以在已安裝 Internet Explorer 11.0 的 Windows 10 及任何 Windows 作業系統版本上取得。  

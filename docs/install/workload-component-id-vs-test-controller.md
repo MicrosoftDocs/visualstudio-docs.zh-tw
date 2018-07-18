@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33873322"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 元件目錄
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="test-controller"></a>測試控制器
 
-**識別碼：**Microsoft.VisualStudio.Workload.TestController
+**識別碼：** Microsoft.VisualStudio.Workload.TestController
 
-**描述：**將自動化測試散發到多部電腦
+**描述：** 將自動化測試散發到多部電腦
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549002"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/19/2018
 
 如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。
 
-如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Windows 的平行效能工具](http://go.microsoft.com/fwlink/?LinkID=160569)中發表的＜效能模式 1：識別鎖定爭用＞(英文)。
+如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Parallel performance tools for Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Windows 的平行效能工具) 部落格中發表的＜Performance pattern 1: Identifying lock contention＞(效能模式 1：識別鎖定爭用)。
 
 ![鎖定爭用](../profiling/media/lockcontention_2.png "LockContention_2")
 

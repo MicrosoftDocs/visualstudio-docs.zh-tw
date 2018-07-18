@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138050"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>保存專案項目的屬性
 若要保存您加入專案項目，例如作者的原始程式檔的屬性。 您可以將屬性儲存在專案檔。

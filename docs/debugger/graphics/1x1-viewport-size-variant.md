@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472054"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport 大小變異
 將所有呈現目標上的檢視區維度減少為 1x1 個像素。  

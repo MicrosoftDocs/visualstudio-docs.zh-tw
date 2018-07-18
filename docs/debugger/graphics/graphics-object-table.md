@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477761"
 ---
 # <a name="graphics-object-table"></a>圖形物件表
 Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您遊戲或應用程式之畫面格的 Direct3D 物件。  

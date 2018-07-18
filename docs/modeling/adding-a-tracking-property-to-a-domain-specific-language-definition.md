@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953857"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>新增至網域特定領域語言定義的追蹤屬性
 
@@ -124,7 +125,7 @@ A*追蹤網域*屬性是使用者可以更新，但具有預設值所使用的�
 
 3.  在**DSL 總管**，依序展開**網域類別**資料夾中，以滑鼠右鍵按一下**ExampleElement**節點，然後再按一下**加入新網域類型描述元**.
 
-    1.  展開**ExampleElement**節點，然後選取**自訂類型描述元 （網域型別描述項）**節點。
+    1.  展開**ExampleElement**節點，然後選取**自訂類型描述元 （網域型別描述項）** 節點。
 
     2.  在**屬性**視窗中的網域類型描述元，將**自訂編碼**至**True**。
 

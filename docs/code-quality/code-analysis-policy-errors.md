@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922451"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 如果程式碼分析原則不符合在簽入時，會發生下列錯誤：

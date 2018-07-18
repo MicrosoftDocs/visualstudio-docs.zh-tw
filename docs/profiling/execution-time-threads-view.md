@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bce4b4e5c0d4a9d4f66fade6b01044ac149968a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b06532771aaa432deccb8040c7dd7e5962dd15f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764426"
 ---
 # <a name="execution-time-threads-view"></a>執行時間 (執行緒檢視)
 當執行緒在系統的邏輯核心上主動執行工作時，[執行緒檢視] 時間表中的這些區段代表執行時間。  
@@ -29,6 +30,6 @@ ms.lasthandoff: 04/19/2018
   
  若要在目前檢視中查看所有執行區段的傳統取樣分析，請在 [可見時間表分析] 中按一下 [執行]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行分析報表](../profiling/execution-profile-report.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

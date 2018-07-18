@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113340"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 此介面代表錯誤或警告中斷點，例如無效的位置、 運算式無效或為何暫止中斷點具有未繫結 （程式碼不會載入尚未等等） 的原因。  

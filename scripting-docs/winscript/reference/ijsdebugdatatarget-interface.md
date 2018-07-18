@@ -1,14 +1,14 @@
 ---
-title: "IJsDebugDataTarget 介面 |Microsoft 文件"
-ms.custom: 
+title: IJsDebugDataTarget 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: a9b784d6-958f-4d55-b3f6-c2d6b260a16b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729278"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget 介面
 藉由偵錯工具提供功能來存取及變更目標偵錯工具處理序的狀態。  

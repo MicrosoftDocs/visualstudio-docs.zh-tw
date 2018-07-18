@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977773"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 

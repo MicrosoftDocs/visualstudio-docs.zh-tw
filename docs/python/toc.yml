@@ -49,6 +49,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 - 使用投票 Django Web 專案範本
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: 了解 Visual Studio 中的 Flask
+      items:
+        - name: 1 - 建立專案和方案
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - 建立 Flask 應用程式
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - 提供靜態檔案並新增頁面
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - 使用 Flask Web 專案範本
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - 使用 Polls Flask Web 專案範本
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: 概念
   items:
     - name: Python 專案

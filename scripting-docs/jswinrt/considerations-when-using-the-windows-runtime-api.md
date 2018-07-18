@@ -1,18 +1,18 @@
 ---
-title: "使用 Windows 執行階段 API 時的考量 | Microsoft Docs"
-ms.custom: 
+title: 使用 Windows 執行階段 API 時的考量 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime API
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571468"
 ---
 # <a name="considerations-when-using-the-windows-runtime-api"></a>使用 Windows 執行階段 API 時的考量
 在 JavaScript 中，您幾乎可以使用 Windows 執行階段 API 的所有項目。 不過，您應該記住之 Windows 執行階段項目的 JavaScript 表示有一些層面。  

@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691143"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
-您可以使用並行視覺化檢視命令列公用程式 (CVCollectionCmd.exe) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
+您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
   
 > [!NOTE]
->  從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具 (英文)](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
+>  從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下載並行視覺化檢視命令列公用程式  
- 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，CVCollectionCmd.exe 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。  
+ 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤  
  您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如  
@@ -51,13 +52,13 @@ ms.lasthandoff: 05/14/2018
 |處理序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|  
 |組態|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|無。|  
   
-## <a name="customizing-configuration-settings"></a>自訂組態設定  
+## <a name="customize-configuration-settings"></a>自訂組態設定  
  如果您使用 CVCollectionCmd 收集追蹤並想自訂收集設定，請使用組態檔指定這些設定。  
   
 > [!NOTE]
 >  當您使用 Visual Studio 收集追蹤時，不要直接修改組態檔。  請改用 [[進階設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊來修改設定。  
   
- 若要修改收集設定，請在您要執行 CVCollectionCmd 公用程式的電腦上建立組態檔。 您可以從頭開始建立組態檔，也可以從已安裝 Visual Studio 的電腦上複製組態檔，再進行修改。 檔案名稱為 `UserConfig.xml` ，並位在 [Local AppData]  資料夾中。 當您執行公用程式時，請搭配 Launch、Attach 或 Analyze 命令使用 Config 選項。  在與 Config 選項相關聯的參數中，指定組態檔的路徑。  
+ 若要修改收集設定，請在您要執行 CVCollectionCmd 公用程式的電腦上建立組態檔。 您可以從頭開始建立組態檔，也可以從已安裝 Visual Studio 的電腦上複製組態檔，再進行修改。 檔案名稱為 *UserConfig.xml*，並位在 *Local AppData* 資料夾中。 當您執行公用程式時，請搭配 Launch、Attach 或 Analyze 命令使用 Config 選項。  在與 Config 選項相關聯的參數中，指定組態檔的路徑。  
   
 ### <a name="configuration-file-tags"></a>組態檔標記  
  組態檔採用 XML 格式。 以下是有效的標記和值：  

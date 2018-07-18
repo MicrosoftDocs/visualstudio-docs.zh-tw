@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562750"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。  

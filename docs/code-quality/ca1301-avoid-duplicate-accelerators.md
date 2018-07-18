@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900115"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免使用重複的快速鍵
 |||

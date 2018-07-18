@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949263"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>將宣告移到靠近參考的位置重構
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - C#
 
-**功能：**讓您將變數宣告移到靠近其使用方式的位置。
+**功能：** 讓您將變數宣告移到靠近其使用方式的位置。
 
-**時機：**您有可以在更小範圍中的變數宣告。
+**時機：** 您有可以在更小範圍中的變數宣告。
 
-**原因：**您可以保持不變，但可能造成可讀性問題或資訊隱藏。 這是一個可進行重構來提升可讀性的機會。
+**原因：** 您可以保持不變，但可能造成可讀性問題或資訊隱藏。 這是一個可進行重構來提升可讀性的機會。
 
 ## <a name="how-to"></a>操作說明
 

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475531"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中檢視反組譯碼程式碼
 這項功能會啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。 它並不能用來偵錯指令碼或 SQL。  

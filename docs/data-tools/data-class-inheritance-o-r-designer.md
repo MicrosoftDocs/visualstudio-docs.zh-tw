@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921733"
 ---
 # <a name="data-class-inheritance-or-designer"></a>資料類別繼承 （O/R 設計工具）
 

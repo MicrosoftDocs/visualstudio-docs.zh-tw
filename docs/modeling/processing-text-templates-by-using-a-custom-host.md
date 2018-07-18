@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950055"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自訂主機的程序文字範本
 

@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 語言參考 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 語言參考 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.General
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript
 ms.assetid: 1c457e66-a6b2-4545-b2dd-33a59d8661e8
-caps.latest.revision: 
+caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569298"
 ---
 # <a name="javascript-language-reference"></a>JavaScript 語言參考
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 是可以內嵌在網頁與其他應用程式中的指令碼語言。  

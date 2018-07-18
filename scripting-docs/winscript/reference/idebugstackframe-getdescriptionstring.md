@@ -1,11 +1,11 @@
 ---
-title: "IDebugStackFrame::GetDescriptionString |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame::GetDescriptionString |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugStackFrame.GetDescriptionString
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugStackFrame::GetDescriptionString
 ms.assetid: a2ddc069-c440-4dee-98dc-ab7c78773b94
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729368"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
 傳回堆疊框架的短或長時間的文字的描述。  

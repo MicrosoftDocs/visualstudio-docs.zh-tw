@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747863"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/28/2018
 
      請注意，您在程式碼中的 `randomizer` 後面輸入點 (.) 時，[IntelliSense] 視窗便會開啟，並顯示可以呼叫的所有隨機物件的方法。 例如，IntelliSense 會列出 `Next()` 方法，如下所示。
 
-     ![Next 方法](../ide/media/express_randomwhite.png "Express_RandomWhite") Next 方法
+     ![Next 方法](../ide/media/express_randomwhite.png) Next 方法
 
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/28/2018
 
      隨機加法問題就會出現，如下圖所示。
 
-     ![隨機加法問題](../ide/media/express_additionproblem.png "Express_AdditionProblem") 隨機加法問題
+     ![隨機加法問題](../ide/media/express_additionproblem.png) 隨機加法問題
 
      在本教學課程的下一個步驟中，您將加入總和。
 

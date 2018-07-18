@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099469"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
 文字是負責管理文字資料流和檔案的持續性。 雖然緩衝區可以讀取或寫入其他格式，使用 Unicode 來執行所有一般與緩衝區通訊。 在舊版的 Api，文字緩衝區可以使用一段或二維座標系統來找出緩衝區中的字元位置。  

@@ -1,18 +1,18 @@
 ---
-title: "JsSetRuntimeBeforeCollectCallback 函式 | Microsoft Docs"
-ms.custom: 
+title: JsSetRuntimeBeforeCollectCallback 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsSetRuntimeBeforeCollectCallback
 helpviewer_keywords:
 - JsSetRuntimeBeforeCollectCallback function
 ms.assetid: 7b2fb911-6007-4ed9-a307-66cefe590ea4
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568988"
 ---
 # <a name="jssetruntimebeforecollectcallback-function"></a>JsSetRuntimeBeforeCollectCallback 函式
 設定在記憶體回收之前執行階段所呼叫的回呼函式。  

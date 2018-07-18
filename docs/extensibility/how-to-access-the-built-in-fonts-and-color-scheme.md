@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131143"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
 Visual Studio 整合式的開發環境 (IDE) 將其 [編輯器] 視窗相關聯字型和色彩的配置。 您可以存取透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
@@ -32,13 +33,13 @@ Visual Studio 整合式的開發環境 (IDE) 將其 [編輯器] 視窗相關聯�
 
 -   建議特定的視窗藉由使用內建的顯示項目和類別目錄使用 IDE<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>介面。
 
- IDE 使用產生的類別目錄做為視窗的控制代碼。 類別目錄的名稱會顯示在**顯示設定：**下拉式清單方塊中的**字型和色彩**屬性頁。
+ IDE 使用產生的類別目錄做為視窗的控制代碼。 類別目錄的名稱會顯示在**顯示設定：** 下拉式清單方塊中的**字型和色彩**屬性頁。
 
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定義類別，使用內建的字型和色彩
 
 1.  建立任意的 GUID。
 
-     此 GUID 用來唯一識別類別**。** IDE 的預設字型和色彩規格，會重複使用此類別。
+     此 GUID 用來唯一識別類別 **。** IDE 的預設字型和色彩規格，會重複使用此類別。
 
     > [!NOTE]
     >  字型和色彩以擷取資料時<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。

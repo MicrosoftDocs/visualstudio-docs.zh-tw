@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476818"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>檢查與 IntelliTrace 歷程偵錯 Visual Studio 中的應用程式
 您可以使用[歷程偵錯](../debugger/historical-debugging.md)向後移動和向前逐步執行您的應用程式並檢查其狀態。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470058"
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
 程式資料庫檔案 (副檔名.pdb) 是包含類型和符號進行編譯和連結專案期間所收集的偵錯資訊的二進位檔案。 當您編譯 C/c + + 程式以建立 PDB 檔案 **/ZI**或 **/Zi**或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]程式與**偵錯**選項。 物件的檔案包含偵錯資訊的.pdb 檔案的參考。 如需有關 pdb 檔的詳細資訊，請參閱[PDB 檔案](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 應用程式可以使用下列一般步驟，以取得詳細各種符號、 物件和可執行映像中的資料元素。  

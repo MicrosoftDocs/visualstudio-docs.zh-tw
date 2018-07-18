@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031318"
 ---
 # <a name="exporting-subscription-information"></a>匯出訂用帳戶資訊
 

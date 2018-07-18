@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668309"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以模型化虛擬使用者活動
 
@@ -109,9 +110,9 @@ ms.lasthandoff: 04/26/2018
 
 |工作|相關主題|
 |-----------|-----------------------|
-|**指定負載測試的初始負載模式：**當您使用 [新增負載測試精靈] 來建立負載測試時，就會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#EditingLoadPatternsChanging)|
-|**編輯負載測試的負載模式：**建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯負載模式。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**指定負載測試情節中的虛擬使用者是否應該包含 Web 快取資料：**您可以變更 [新使用者的百分比] 屬性，以便影響負載測試模擬虛擬使用者網頁瀏覽器所執行之 Web 快取的方式。|-   [如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**指定負載測試的初始負載模式：** 當您使用 [新增負載測試精靈] 來建立負載測試時，就會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
+|**編輯負載測試的負載模式：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯負載模式。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**指定負載測試情節中的虛擬使用者是否應該包含 Web 快取資料：** 您可以變更 [新使用者的百分比] 屬性，以便影響負載測試模擬虛擬使用者網頁瀏覽器所執行之 Web 快取的方式。|-   [如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**指定步驟負載模式的逐步遞增時間：**[逐步遞增時間] 屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="changing-the-load-pattern"></a>變更負載模式

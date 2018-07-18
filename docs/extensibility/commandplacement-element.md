@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267971"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 項目
 按鈕、 群組和包含在一個以上的群組或功能表的功能表，可讓 CommandPlacement 項目。 使用 CommandPlacement 項目，讓您不必完全重新定義這些項目，才能修改使用者介面的外觀。  

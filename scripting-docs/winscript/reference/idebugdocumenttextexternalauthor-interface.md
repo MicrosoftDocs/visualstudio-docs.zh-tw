@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentTextExternalAuthor 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentTextExternalAuthor 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentTextExternalAuthor interface
 ms.assetid: 0b04de1b-f922-4526-af4e-c0af2b7c1ce4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727028"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor 介面
 可讓外部編輯器來安全地編輯以檔案為基礎的偵錯工具文件的來源檔案變更時通知文件。  

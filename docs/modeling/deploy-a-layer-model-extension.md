@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949432"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 其他 Visual Studio 使用者可以安裝您使用 Visual Studio 建立的圖層模型擴充功能。

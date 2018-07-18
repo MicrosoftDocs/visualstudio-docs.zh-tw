@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473650"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式偵錯
 若要混合偵錯機器碼和 Managed 程式碼，您必須要有 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0、3.0、 3.5 或 4 版。 混合模式偵錯與舊版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]不支援。  

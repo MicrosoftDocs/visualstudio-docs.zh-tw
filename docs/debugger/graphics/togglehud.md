@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472509"
 ---
 # <a name="togglehud"></a>ToggleHUD
 切換 圖形診斷*抬頭顯示器*（Hud 顯示器） 重疊或關閉。  

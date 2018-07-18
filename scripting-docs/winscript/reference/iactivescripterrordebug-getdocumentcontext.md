@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptErrorDebug::GetDocumentContext |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptErrorDebug::GetDocumentContext |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptErrorDebug.GetDocumentContext
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptErrorDebug::GetDocumentContext
 ms.assetid: 567601a1-551a-4905-bda1-1f54610174f4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645858"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
 此錯誤提供的文件內容。  

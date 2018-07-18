@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37433531"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -23,25 +24,23 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 > [!NOTE]
 > 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)讓我們知道。
 
-## <a name="optimize-your-environment"></a>將您的環境最佳化
+## <a name="use-a-64-bit-os"></a>使用 64 位元 OS
 
-- **使用 64 位元 OS**
+如果您將系統從 32 位元版本的 Windows 升級至 64 位元版本，請將 Visual Studio 可用的虛擬記憶體數量從 2 GB 擴充為 4 GB。 這可讓 Visual Studio 處理更大量的工作負載，即使是 32 位元處理序亦然。
 
-    如果您將系統從 32 位元版本的 Windows 升級至 64 位元版本，請將 Visual Studio 可用的虛擬記憶體數量從 2 GB 擴充為 4 GB。 這可讓 Visual Studio 處理更大量的工作負載，即使它是 32 位元處理序也是一樣。
+如需詳細資訊，請參閱[記憶體限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
 
-    如需詳細資訊，請參閱[記憶體限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
+## <a name="disable-automatic-file-restore"></a>停用自動檔案還原
 
-## <a name="configure-solution-and-projects"></a>設定方案和專案
+Visual Studio 會自動重新開啟在上一個工作階段保持開啟的文件。 這可能會讓載入解決方案的時間延長達 30% 以上，依開啟的專案類型及文件而定。 Windows Forms 及 XAML 這類設計工具和某些 JavaScript 與 typescript 檔案可能會很慢才開啟。
 
-如果您的極大型方案包含多個專案，則進行下列最佳化會有所助益：
+Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢時，以黃色的列通知您。 您可遵循下列步驟停用自動檔案重新開啟：
 
-- **卸載專案**
+1. 選取 [工具] > [選項] 開啟 [選項] 對話方塊。
 
-    您可以從 [方案總管] 中，使用滑鼠右鍵操作功能表手動卸載極少使用的個別專案。
+1. 在 [專案與解決方案] > [一般] 頁面上，選取 [在解決方案載入時重新開啟文件]。
 
-- **重構方案**
-
-    您可以將您的方案分割成數個包含常用專案的較小方案檔。 這項重構應該可以大幅降低您工作流程的記憶體使用量。 較小方案的載入速度也會較快。
+若您停用自動檔案還原，則可以使用[移至](../ide/go-to.md)快速瀏覽到您要開啟的檔案。 選取 [編輯] > [移至] > [移至全部]，或按 **Ctrl**+**T**。
 
 ## <a name="configure-debugging-options"></a>設定偵錯選項
 
@@ -69,32 +68,33 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
     若要停用**診斷工具**，請啟動偵錯工作階段，並選擇 [工具] > [選項] > [啟用診斷工具]，然後取消選取此選項。
 
-    如需詳細資訊，請參閱 [Profiling Tools](../profiling/profiling-tools.md) (分析工具)。
+    如需詳細資訊，請參閱 [Profiling Tools](../profiling/profiling-feature-tour.md) (分析工具)。
 
 ## <a name="disable-tools-and-extensions"></a>停用工具和延伸模組
 
-若要改善效能，則可能需要關閉一些工具或延伸模組。
+若要改善效能，可以關閉一些工具或延伸模組。
 
 > [!TIP]
 > 一次關閉一個延伸模組，然後重新檢查效能，通常可以隔離效能問題。
 
-### <a name="managed-language-services-roslyn"></a>Managed 語言服務 (Roslyn)
+### <a name="managed-language-service-roslyn"></a>受控語言服務 (Roslyn)
 
 如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱[大型解決方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
 
 - **停用完整解決方案分析**
 
-    在叫用組建之前，Visual Studio 會對整個解決方案執行分析，以提供錯誤的豐富體驗。 這項功能十分適用於盡快識別錯誤。 不過，針對非常大型的方案，這項功能可能會耗用大量記憶體資源。 如果您遇到記憶體壓力或類似問題，則可以停用此體驗，來釋出這些資源。 根據預設，會針對 Visual Basic 啟用這個選項，但針對 C# 則會予以停用。
+    在叫用組建之前，Visual Studio 會對整個解決方案執行分析，以提供錯誤的豐富體驗。 這項功能十分適用於盡快識別錯誤。 不過，對於大型解決方案，這項功能可能會耗用大量記憶體資源。 如果您遇到記憶體壓力或類似問題，則可以停用此體驗，來釋出這些資源。 根據預設，會針對 Visual Basic 啟用這個選項，但針對 C# 則會予以停用。
 
-    若要停用 [完整解決方案分析]，請選擇 [工具] > [選項] > [文字編輯器] > [<Visual Basic 或 C#>]。 接著選擇 [進階]，然後取消選取 [啟用完整解決方案分析]。
+    若要停用 [完整解決方案分析]，請選擇 [工具] > [選項] > [文字編輯器]，然後選取 [Visual Basic] 或 [C#]。 選擇 [進階]，然後取消選取 [啟用完整解決方案分析]。
 
 - **停用 CodeLens**
 
-    Visual Studio 會對顯示的每個方法執行 [尋找所有參考] 工作。 CodeLens 會提供參考數目內嵌顯示這類功能。 工作會在不同的處理序中執行 (例如，*ServiceHub.RoslynCodeAnalysisService32*)。 在極大型方案中或資源限制系統上，這項功能會對效能造成顯著影響，即使它是以低優先順序執行也是一樣。 如果您在此處理序中遇到高 CPU 或是遇到記憶體問題 (例如，在 4 GB 電腦上載入大型方案時)，可以嘗試停用這項功能來釋出資源。
+    Visual Studio 會對顯示的每個方法執行 [尋找所有參考] 工作。 CodeLens 會提供參考數目內嵌顯示這類功能。 工作會在不同的處理序中執行，例如 *ServiceHub.RoslynCodeAnalysisService32*。 在大型解決方案或資源受限的系統中，這項功能會對效能有顯著影響。 如果您遇到記憶體問題 (例如在 4 GB 電腦上載入大型解決方案時) 或此處裡序使用大量 CPU，可以停用 CodeLens 來釋出資源。
 
     若要停用 **CodeLens**，請選擇 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]，然後取消選取這項功能。
 
-    這項功能適用於 Visual Studio Professional 和 Visual Studio Enterprise。
+    > [!NOTE]
+    > CodeLens 適用於 Visual Studio 的 Professional 和 Enterprise 版本。
 
 ### <a name="other-tools-and-extensions"></a>其他工具和延伸模組
 
@@ -127,4 +127,4 @@ CLR 使用記憶體回收記憶體管理系統。 在此系統中，有時不再
 ## <a name="see-also"></a>另請參閱
 
 - [最佳化 Visual Studio 效能](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [更快載入解決方案 (Visual Studio 部落格)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

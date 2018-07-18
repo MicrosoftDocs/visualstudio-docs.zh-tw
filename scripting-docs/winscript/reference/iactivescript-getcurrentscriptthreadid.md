@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::GetCurrentScriptThreadID |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::GetCurrentScriptThreadID |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.GetCurrentScriptThreadID
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_GetCurrentScriptThreadID
 ms.assetid: b09e8b48-4209-480e-8b71-e99ee9ae2e17
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640788"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
 擷取目前執行中執行緒的指令碼引擎-定義識別項。 識別項可以用於指令碼的執行緒執行控制方法的後續呼叫這類[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  

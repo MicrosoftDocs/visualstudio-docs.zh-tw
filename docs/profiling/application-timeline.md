@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691020"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 使用 [應用程式時間軸]  程式碼剖析工具來找出並修正 XAML 應用程式中的應用程式互動相關效能問題。 此工具可透過提供應用程式資源耗用量的詳細檢視，來協助改善 XAML 應用程式的效能。 您可以分析應用程式準備 UI 框架 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。  
@@ -34,10 +35,10 @@ ms.lasthandoff: 05/17/2018
 5.  Windows 7  
   
 > [!NOTE]
->  除了 [時間軸]  資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[使用或不使用偵錯工具來執行程式碼剖析工具 (Running Profiling Tools With or Without the Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+>  除了 [時間軸]  資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> 收集應用程式時間軸資料  
- 您可以在本機電腦、連接的裝置、Visual Studio 模擬器 (Simulator 或 Emulator) 或遠端裝置上分析應用程式的回應性。 請參閱[使用或不使用偵錯工具來執行程式碼剖析工具 (Running Profiling Tools With or Without the Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+## <a name="collect-application-timeline-data"></a>收集應用程式時間軸資料  
+ 您可以在本機電腦、連接的裝置、Visual Studio 模擬器 (Simulator 或 Emulator) 或遠端裝置上分析應用程式的回應性。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   
 > [!TIP]
 >  請盡可能直接在裝置上執行應用程式。 在模擬器上或透過遠端桌面連接觀察到的應用程式效能，可能與裝置上的實際效能不同。 相反地，使用 Visual Studio 遠端工具收集資料並不會影響效能資料。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/17/2018
 3.  選取 [應用程式時間軸]  ，然後在視窗底部按一下 [開始]  。  
   
     > [!NOTE]
-    >  您可能會看到 [使用者帳戶控制] 視窗，其要求您提供執行 VsEtwCollector.exe 的權限。 按一下 [ **是**]。  
+    >  您可能會看到 [使用者帳戶控制] 視窗，其要求您提供執行 *VsEtwCollector.exe* 的權限。 按一下 [ **是**]。  
   
 4.  執行您感興趣用來在應用程式中程式碼剖析的案例，來收集效能資料。  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 05/17/2018
   
      ![時間軸分析工具報告](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> 分析時間軸程式碼剖析資料  
+## <a name="analyze-timeline-profiling-data"></a>分析時間軸分析資料  
  收集到分析資料之後，您可以使用下面這些步驟開始分析：  
   
 1.  檢查 [ **UI 執行緒使用率** ] 和 [ **視覺輸送量 (FPS)** ] 圖形中的資訊，然後使用時間軸巡覽列選取您要分析的時間範圍。  
@@ -96,7 +97,7 @@ ms.lasthandoff: 05/17/2018
 |||  
 |-|-|  
 |**正在剖析**|剖析 XAML 檔案和建立物件所花費的時間。<br /><br /> 展開 [時間軸詳細資料]  中的 [剖析]  節點會顯示剖析為根事件結果之所有 XAML 檔案的相依性鏈結。 這可讓您識別效能敏感情節中不必要的檔案剖析和物件建立作業，並排除這些作業以取得最佳化。|  
-|**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 這可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的成本配置 (也就是在排列、量值、ApplyTemplate、ArrangeOverride 和 ArrangeOverride 所花的時間)，並建置參與配置傳遞的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以將配置傳遞最佳化。|  
+|**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 這可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 ArrangeOverride 所花的時間)，並建置參與配置傳遞的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以將配置傳遞最佳化。|  
 |**轉譯**|將 XAML 項目繪製到螢幕所花費的時間。|  
 |**I/0**|從本機磁碟或網路資源 (透過 [Microsoft Windows 網際網路 (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)存取) 擷取資料所花費的時間。|  
 |**應用程式程式碼**|執行與剖析或配置不相關的應用程式 (使用者) 程式碼所花費的時間。|  
@@ -116,8 +117,8 @@ ms.lasthandoff: 05/17/2018
 |![自訂時間軸詳細資料資訊](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|可讓您指定事件的註釋。|  
   
 ## <a name="see-also"></a>另請參閱  
- [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx) (WPF 小組部落格︰WPF 應用程式的新 UI 效能分析工具)  
+ [WPF team blog: New UI performance analysis tool for WPF applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx) (WPF 小組部落格︰WPF 應用程式的新 UI 效能分析工具)  
  [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+ [分析功能導覽](../profiling/profiling-feature-tour.md)

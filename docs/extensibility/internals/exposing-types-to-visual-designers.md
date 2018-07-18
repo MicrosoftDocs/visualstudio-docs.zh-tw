@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135970"
 ---
 # <a name="exposing-types-to-visual-designers"></a>若要公開的視覺化設計工具的類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考加上其相依性） 的一組完整的相依性的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂的工具所產生的檔案中定義的型別。  

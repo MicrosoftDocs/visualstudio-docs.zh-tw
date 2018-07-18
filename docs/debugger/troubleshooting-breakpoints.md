@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477101"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>疑難排解 Visual Studio 偵錯工具中的中斷點
 

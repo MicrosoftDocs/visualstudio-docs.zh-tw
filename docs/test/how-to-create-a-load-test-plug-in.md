@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975917"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 

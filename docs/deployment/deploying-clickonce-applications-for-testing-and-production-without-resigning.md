@@ -26,6 +26,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266185"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章
 本文說明 ClickOnce 引進.NET Framework 3.5 版可讓部署 ClickOnce 應用程式，從多個網路位置，而不需要重新簽署，或變更 ClickOnce 資訊清單中的一項功能。  

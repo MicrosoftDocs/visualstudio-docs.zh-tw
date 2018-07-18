@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128457"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何： 將附加至文件資料的檢視
 如果您有新的文件檢視，您可以將它附加至現有的文件資料物件。  

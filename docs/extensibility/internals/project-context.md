@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134691"
 ---
 # <a name="project-context"></a>專案內容
 當使用者加入或適用於專案和專案項目時，IDE 會使用專案內容的概念來決定應該執行的各種方式作業。  

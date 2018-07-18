@@ -1,11 +1,11 @@
 ---
-title: "IScriptEntry::GetItemName |Microsoft 文件"
-ms.custom: 
+title: IScriptEntry::GetItemName |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptEntry.GetItemName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptEntry::GetItemName
 ms.assetid: 8f2562f1-8231-4a39-ad79-074f9ec3d403
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729088"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
 傳回識別的項目名稱`IScriptEntry`物件。  

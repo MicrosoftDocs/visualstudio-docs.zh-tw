@@ -1,14 +1,14 @@
 ---
-title: "JsSetIndexedPropertiesToExternalData 函式 | Microsoft Docs"
-ms.custom: 
+title: JsSetIndexedPropertiesToExternalData 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: cee2d86d-ed42-4acb-86ef-95a67e63d0d6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568848"
 ---
 # <a name="jssetindexedpropertiestoexternaldata-function"></a>JsSetIndexedPropertiesToExternalData 函式
 將物件的索引屬性設定為外部資料。 這個外部資料將會做為物件索引屬性的後備存放區，並以類似具類型陣列的方式來存取。  

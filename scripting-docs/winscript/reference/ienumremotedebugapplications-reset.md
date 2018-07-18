@@ -1,11 +1,11 @@
 ---
-title: "IEnumRemoteDebugApplications::Reset |Microsoft 文件"
-ms.custom: 
+title: IEnumRemoteDebugApplications::Reset |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumRemoteDebugApplications.Reset
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumRemoteDebugApplications::Reset
 ms.assetid: a2c03728-999f-400c-bf40-4ced6cd88410
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727428"
 ---
 # <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
 列舉序列重設為開頭。  

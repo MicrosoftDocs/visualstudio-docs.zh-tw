@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139022"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式詞彙
 下列很有幫助的詞彙和定義適用於原始檔控制外掛程式 SDK 文件。  

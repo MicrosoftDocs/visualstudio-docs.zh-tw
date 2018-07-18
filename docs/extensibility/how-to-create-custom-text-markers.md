@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132256"
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 建立自訂文字標記
 如果您想要建立自訂文字標記強調或組織程式碼，您必須採取下列步驟：  

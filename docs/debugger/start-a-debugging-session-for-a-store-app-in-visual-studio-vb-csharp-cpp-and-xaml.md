@@ -41,6 +41,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481105"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio 中啟動的 UWP 應用程式的偵錯工作階段
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/18/2018
 |-|-|  
 |**僅限 Managed**|在您的應用程式中偵錯 Managed 程式碼。 JavaScript 程式碼與原生 C/C++ 程式碼都會被忽略。|  
 |**僅限原生**|在您的應用程式中偵錯原生 C/C++程式碼。 Managed 程式碼與 JavaScript 程式碼都會被忽略。|  
-|**混合 (Managed 與原生)**|在您的應用程式中偵錯原生 C/C++ 程式碼與 Managed 程式碼。 JavaScript 程式碼會被忽略。 此選項會在 c + + 專案中，稱為**（Managed 與原生）**。|  
+|**混合 (Managed 與原生)**|在您的應用程式中偵錯原生 C/C++ 程式碼與 Managed 程式碼。 JavaScript 程式碼會被忽略。 此選項會在 c + + 專案中，稱為 **（Managed 與原生）**。|  
 |**僅限指令碼**|在您的應用程式中偵錯 JavaScript 程式碼。 Managed 程式碼與機器碼都會被忽略。|  
 |**指令碼與原生**|偵錯原生 C/c + + 程式碼和應用程式中的 JavaScript 程式碼。 Managed 程式碼會被忽略。 適用於僅限 c + + 專案。|  
 |**僅限 GPU (c + + AMP)**|對在圖形處理器 (GPU) 上執行的原生 C++ 程式碼進行偵錯。 適用於僅限 c + + 專案。|  
@@ -145,7 +146,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  針對 Visual c + + 和 JavaScript 的應用程式，選取**遠端機器**為**目標裝置**上**偵錯**屬性頁上，並將其設定**需要驗證**至**無**或**Universal （未加密的通訊協定）**。  
 
-    **通用 （未加密的通訊協定）**適用於當您部署到遠端裝置。 目前，這是 IoT 裝置、 Xbox 裝置和 HoloLens 裝置，以及建立者更新或更新版本的電腦。 通用 （未加密的通訊協定） 應該只用於受信任的網路。 偵錯連接容易受到惡意使用者便無法攔截及變更程式開發和遠端電腦之間傳遞資料。  
+    **通用 （未加密的通訊協定）** 適用於當您部署到遠端裝置。 目前，這是 IoT 裝置、 Xbox 裝置和 HoloLens 裝置，以及建立者更新或更新版本的電腦。 通用 （未加密的通訊協定） 應該只用於受信任的網路。 偵錯連接容易受到惡意使用者便無法攔截及變更程式開發和遠端電腦之間傳遞資料。  
   
 ##  <a name="BKMK_Start_the_debugging_session"></a> 開始偵錯工作階段  
   

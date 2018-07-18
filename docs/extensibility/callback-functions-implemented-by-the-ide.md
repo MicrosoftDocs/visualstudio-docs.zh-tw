@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109684"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 若要與整合整合式的開發環境 (IDE)，以作為無縫越好，並提供整合的經驗，原始檔控制外掛程式可以使用 IDE 所實作的回呼函式。 外掛程式可以呼叫這些函式在適當時將資訊傳遞至 IDE; 原始檔控制作業的時間IDE 可以做為內嵌的項目在其原生的 UI 中顯示這項資訊。 使用者擁有較低分散的體驗，在此案例中比如果外掛程式採用自己的 UI。  

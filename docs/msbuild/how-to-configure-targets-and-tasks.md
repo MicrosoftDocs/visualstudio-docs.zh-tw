@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578409"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476601"
 ---
 # <a name="spy-help"></a>Spy++ 說明
 Spy + + 公用程式的文件包含兩個一般主題上使用 Spy + + 和 Spy + + 檢視上的群組。 這些被後面接著 Spy + + 參考，即在每個可用的功能表命令和對話方塊中提供更多詳細資料。  

@@ -1,11 +1,11 @@
 ---
-title: "IScriptScriptlet::GetSubItemName |Microsoft 文件"
-ms.custom: 
+title: IScriptScriptlet::GetSubItemName |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptScriptlet.GetSubItemName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptScriptlet::GetSubItemName
 ms.assetid: 9ad963fc-9ce8-4b77-92c1-fb90d6307801
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733698"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
 傳回最後一個識別項中的程式碼片段物件主機的完整限定名稱。  

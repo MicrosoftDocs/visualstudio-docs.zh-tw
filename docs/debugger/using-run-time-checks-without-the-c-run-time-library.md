@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481755"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>不使用 C 語言執行階段程式庫進行執行階段檢查
 如果您連結您的程式不使用 C 執行階段程式庫，請使用 **/NODEFAULTLIB**，而且想要使用執行階段檢查，您必須連結 runtmchk.lib。  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563023"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>如何：指定 ClickOnce 離線或線上安裝模式
 `Install Mode`如[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會決定應用程式可以在離線或在線上時使用。 當您選擇**應用程式僅提供線上**，使用者必須能夠存取[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]發行 （網頁或檔案共用） 才能執行應用程式的位置。 當您選擇**應用程式也可以在離線時**，應用程式將項目加入**啟動**功能表和**新增或移除程式**對話方塊; 使用者是無法在未連線時執行的應用程式。  

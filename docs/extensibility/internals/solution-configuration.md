@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132717"
 ---
 # <a name="solution-configuration"></a>方案組態
 方案層級內容儲存在方案組態。 這些指示的行為**啟動**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案透過設定設定的組建。 環境被設計來建置及執行時，最佳化解決方案，而不是專案。  

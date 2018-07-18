@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109801"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 偵錯 SDK)
 在中斷模式期間 IDE 必須能夠評估簡單運算式包含數個變數，您的程式。 若要達成此目的，偵錯引擎 (DE) 必須能夠剖析及評估在一個 IDE 視窗中輸入的運算式。  

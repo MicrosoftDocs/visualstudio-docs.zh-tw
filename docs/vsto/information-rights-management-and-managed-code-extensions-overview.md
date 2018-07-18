@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263757"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>資訊版權管理和 managed 程式碼擴充概觀
   Microsoft Office Word 和 Microsoft Office Excel 提供的資訊版權管理 (IRM)，可協助防止未經授權的人員檢視或變更敏感資訊的功能。 如需資訊版權管理的運作方式的詳細資訊，請參閱特定 Office 應用程式中的說明。  

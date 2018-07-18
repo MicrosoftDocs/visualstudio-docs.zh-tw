@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135702"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 VSPackage 中 managed 的 package framework (MPF) 提供語言服務 (請參閱[Vspackage](../../extensibility/internals/vspackages.md)) 和已向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由新增登錄機碼和項目。 此登錄程序會進行部分在安裝期間，而且在執行階段的部分。  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567963"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) 增加建置支援，本節會加以說明。  

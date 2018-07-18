@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102924"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 偵錯引擎 (DE) 搭配運作的解譯器或作業系統提供偵錯服務，例如執行控制項、 中斷點及運算式評估。 DE 負責監視程式，偵錯時的狀態。 若要執行完成此動作，DE 會使用任何方法有它中支援的執行階段，是否將 cpu，或從應用程式開發介面由執行階段所提供。  

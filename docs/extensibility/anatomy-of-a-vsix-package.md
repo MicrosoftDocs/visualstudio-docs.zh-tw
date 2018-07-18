@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099547"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的結構
 VSIX 封裝是.vsix 檔，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 會使用分類，並安裝擴充功能的中繼資料。 在 VSIX 資訊清單和 [Content_Types].xml 檔案中包含的中繼資料。 VSIX 封裝，也可能包含一或多個 Extension.vsixlangpack 檔案，提供當地語系化的安裝文字，而且可能包含其他 VSIX 封裝，以安裝相依項目。  

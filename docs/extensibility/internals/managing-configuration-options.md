@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134756"
 ---
 # <a name="managing-configuration-options"></a>管理組態選項
 當您建立新的專案類型時，您必須管理專案和方案組態設定，以決定如何您將會建立專案、 封裝、 部署和執行。 下列主題將討論專案和方案組態。  

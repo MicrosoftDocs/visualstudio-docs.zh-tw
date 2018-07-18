@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922713"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212：不要以 WebMethod 標記 Serviced 元件
 |||

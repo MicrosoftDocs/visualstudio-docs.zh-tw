@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135846"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以移轉至較新版的 Visual Studio 的舊版語言服務更新專案，並將 source.extension.vsixmanifest 檔案加入專案。 語言服務本身將會繼續如往常一般，運作，因為 Visual Studio 編輯器會調整它。  
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/16/2018
   
     -   儲存並關閉檔案。  
   
-11. 建置方案。 已建置的檔案會部署到**%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
+11. 建置方案。 已建置的檔案會部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
   
 12. 開始偵錯。 開啟 Visual Studio 的第二個執行個體。  
   

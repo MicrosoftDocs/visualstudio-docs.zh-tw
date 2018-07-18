@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473841"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
 您可能會發現很方便使用**尋找視窗**對話方塊來選取目標視窗中，然後再開啟該視窗的訊息檢視。  

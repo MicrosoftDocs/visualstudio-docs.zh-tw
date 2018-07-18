@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472658"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。  

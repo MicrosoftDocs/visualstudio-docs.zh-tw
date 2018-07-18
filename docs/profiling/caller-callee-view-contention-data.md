@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263146"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的爭用資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。  

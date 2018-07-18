@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114413"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示單一的偵錯引擎 (DE) 可控制偵錯的一個或多個模組。  

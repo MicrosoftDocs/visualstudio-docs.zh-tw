@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132030"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合 Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合： 原始檔控制外掛程式，提供基本功能，並會使用原始檔控制外掛程式 API （之前稱為 MSSCCI API） 和 VSPackage 為基礎的原始檔控制整合方案所建置的提供更強固的功能。  

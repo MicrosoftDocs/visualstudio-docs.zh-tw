@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133743"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型必須登錄其專案和專案項目範本目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的登錄資訊來決定要顯示在**加入新的專案**和**加入新項目**對話方塊。  

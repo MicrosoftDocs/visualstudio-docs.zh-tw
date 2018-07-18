@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133537"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包括三個步驟：  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 >  IDE 無法載入 Dll 從相對路徑 (例如，.\NewProvider.DLL)。 必須指定 DLL 的完整路徑 (例如，c:\Providers\NewProvider.DLL)。 這可在 IDE 的安全性強化藉由防止未經授權或模擬外掛程式 Dll 的載入。  
   
- 在第二種方式中，找出 DLL，IDE 會尋找所有項目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子機碼下*。* 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單*。* 當使用者選擇的名稱時，IDE 會尋找的值指向的子機碼所選取名稱。 IDE 會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的子機碼中的項目。 該項目的值會指向正確的 DLL 中的 IDE。  
+ 在第二種方式中，找出 DLL，IDE 會尋找所有項目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子機碼下 *。* 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單 *。* 當使用者選擇的名稱時，IDE 會尋找的值指向的子機碼所選取名稱。 IDE 會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的子機碼中的項目。 該項目的值會指向正確的 DLL 中的 IDE。  
   
  原始檔控制外掛程式，就必須支援這兩種尋找 DLL，並因此，設定 ProviderRegKey，覆寫任何先前的設定。 更重要的是，它必須將本身加入清單的 InstalledSccProviders 讓使用者可以選擇来使用哪一個原始檔控制外掛程式。  
   

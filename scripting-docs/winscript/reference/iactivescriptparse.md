@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptParse |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptParse |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptParse interface
 ms.assetid: 8c967d70-f582-4f64-9e79-49f40c4dcb7c
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645828"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 如果 Windows 指令碼引擎可讓未經處理的文字加入指令碼的程式碼程式碼片段，或允許在執行階段評估的運算式文字，它會實作`IActiveScriptParse`介面。 這在具有任何獨立的撰寫環境，例如，VBScript、 解譯指令碼語言提供替代機制 (以外`IPersist*`) 到指令碼引擎中，取得指令碼，並將附加到不同的物件的指令碼片段事件。  

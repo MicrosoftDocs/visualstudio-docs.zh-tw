@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563670"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：建立封裝資訊清單
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但卻封裝資訊清單的每個地區設定。 產品資訊清單都應在不同的當地語系化版本的共用的功能。  

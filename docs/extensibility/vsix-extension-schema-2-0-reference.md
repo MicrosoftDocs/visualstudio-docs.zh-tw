@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148645"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 擴充功能 2.0 結構描述參考
 VSIX 部署資訊清單檔描述 VSIX 套件的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂類型和屬性加入。  資訊清單的結構描述可以延伸。 資訊清單的載入器會忽略不了解的 XML 元素和屬性。  

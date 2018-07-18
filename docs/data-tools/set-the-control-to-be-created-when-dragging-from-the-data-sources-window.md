@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922332"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 您可以建立資料繫結控制項項目從**資料來源**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 每個項目**資料來源**視窗有時將它拖曳至設計工具所建立的預設控制項。 不過，您可以選擇建立不同的控制項。

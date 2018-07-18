@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751419"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   可在一個視窗中查看需要的所有資訊。
 
 ## <a name="using-test-explorer"></a>使用測試總管
- ![顯示 [全部執行] 按鈕的 [單元測試總管]](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![顯示 [全部執行] 按鈕的 [單元測試總管]](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>若要使用測試總管來執行單元測試
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  將每個單元測試撰寫成方法。 在每個測試方法的前面加上 `[TestMethod]` 屬性。
 
-2.  如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。
+2.  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 3.  在功能表列上，選擇 [ **測試**]、[ **執行單元測試**]、[ **所有測試**]。
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
     -   在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#**]、[ **測試** ]，然後選擇 [ **單元測試專案**]。
 
-         ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
 
 3.  撰寫基本測試方法。 驗證特定輸入所產生的結果：
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  選取 [ **堆疊追蹤** ] 底下的項目，以查看測試失敗的位置。
 
- ![顯示失敗之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![顯示失敗之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough2.png)
 
  此時，您已建立要修改的測試和 stub，好讓測試能夠成功。
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
      測試就會成功。
 
-     ![顯示成功之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![顯示成功之測試的單元測試總管。](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>加入測試以擴充輸入的範圍
 
@@ -288,4 +289,4 @@ ms.lasthandoff: 04/26/2018
 
      所有測試仍然成功。
 
-     ![顯示 3 個成功測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![顯示 3 個成功測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough4.png)

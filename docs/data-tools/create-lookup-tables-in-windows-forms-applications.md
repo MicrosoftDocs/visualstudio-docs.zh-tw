@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917064"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Form 應用程式建立查閱資料表
 詞彙*查閱資料表*描述繫結至兩個關聯的資料表的控制項。 這些查閱控制項顯示資料的第一個資料表，根據在第二個資料表中選取的值。

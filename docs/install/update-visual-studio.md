@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33997933"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 

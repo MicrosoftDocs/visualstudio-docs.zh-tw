@@ -28,6 +28,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704846"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>安裝 Dotfuscator Community Edition (CE)
 

@@ -1,11 +1,11 @@
 ---
-title: "DebugPropertyInfo 結構 |Microsoft 文件"
-ms.custom: 
+title: DebugPropertyInfo 結構 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DebugPropertyInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - DebugPropertyInfo structure
 ms.assetid: 3246efbc-c212-4024-8f07-6414c2f85e75
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640808"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo 結構
 描述的階層式本質，具有名稱、 類型和值的物件。 它用來描述的本機變數、 參數、 監看變數和運算式，偵錯 屬性，並註冊。  

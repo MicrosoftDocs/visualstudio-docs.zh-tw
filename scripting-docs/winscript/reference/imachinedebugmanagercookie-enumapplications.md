@@ -1,11 +1,11 @@
 ---
-title: "IMachineDebugManagerCookie::EnumApplications |Microsoft 文件"
-ms.custom: 
+title: IMachineDebugManagerCookie::EnumApplications |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IMachineDebugManagerCookie.EnumApplications
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IMachineDebugManagerCookie::EnumApplications
 ms.assetid: 03f863cf-fa7f-4ec4-b1a1-1ae0ad296c39
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728588"
 ---
 # <a name="imachinedebugmanagercookieenumapplications"></a>IMachineDebugManagerCookie::EnumApplications
 傳回目前執行的應用程式清單的列舉值。  

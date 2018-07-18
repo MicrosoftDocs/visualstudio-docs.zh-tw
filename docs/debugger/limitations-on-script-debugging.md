@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476831"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援用戶端指令碼偵錯，但受限於本主題所述的限制。  

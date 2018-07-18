@@ -8,12 +8,12 @@
   items:
     - name: 部署簡介
       href: deploying-applications-services-and-components.md
-    - name: 部署到本機資料夾
-      href: quickstart-deploy-to-local-folder.md
+    - name: 部署到 Azure App Service
+      href: quickstart-deploy-to-azure.md
     - name: 部署到網站
       href: quickstart-deploy-to-a-web-site.md
-    - name: 部署到 Azure
-      href: quickstart-deploy-to-azure.md
+    - name: 部署到本機資料夾
+      href: quickstart-deploy-to-local-folder.md
 - name: 教學課程
   items:
     - name: .NET
@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: 匯入發佈設定並部署至 IIS
           href: tutorial-import-publish-settings-iis.md
+        - name: 使用 Web Deploy 部署至 IIS
+          href: deploy-iis-with-web-deploy.md
         - name: 使用 Git 將 ASP.NET Core 持續部署到 Azure
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: 將 ASP.NET 部署到 IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: 利用 Visual Studio Kubernetes 工具發行至 Kubernetes
+          href: tutorial-kubernetes-tools.md
     - name: 原生
       items:
         - name: Visual C++ 中的部署...

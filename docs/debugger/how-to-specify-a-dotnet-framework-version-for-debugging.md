@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476669"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定偵錯的 .NET Framework 版本
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 偵錯工具支援偵錯舊版 Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 以及最新的版本。 如果您從 Visual Studio 啟動應用程式，偵錯工具可以一定能辨識的正確版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]您正在偵錯應用程式。 如果已在執行應用程式，並使用**附加至**，偵錯工具可能不一定能夠識別舊版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果發生這種情況，就會出現錯誤訊息：  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127920"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 將擴充性專案移轉至 Visual Studio 2015
 以下是如何升級您的擴充功能。  

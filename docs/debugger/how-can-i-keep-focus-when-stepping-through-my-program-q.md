@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473468"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>逐步執行我的程式時，如何保持焦點？
 ## <a name="description"></a>描述  

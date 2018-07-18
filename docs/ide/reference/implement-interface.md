@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946438"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您立即產生實作介面所需的程式碼。
+**功能：** 讓您立即產生實作介面所需的程式碼。
 
-**時機：**您想要從介面繼承。
+**時機：** 您想要從介面繼承。
 
-**原因：**您可以手動逐一實作所有介面，不過，此功能將可自動產生所有方法簽章。
+**原因：** 您可以手動逐一實作所有介面，不過，此功能將可自動產生所有方法簽章。
 
 ## <a name="how-to"></a>操作說明
 

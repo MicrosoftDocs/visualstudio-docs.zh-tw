@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132011"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE 定義的命令，以擴充專案系統
 當您想要擴充的專案系統時，您可以使用命令和命令所提供的群組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  

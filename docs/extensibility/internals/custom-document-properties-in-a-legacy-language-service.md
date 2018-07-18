@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132491"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在舊版語言服務的自訂文件屬性
 文件屬性可顯示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的來源檔案相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。  

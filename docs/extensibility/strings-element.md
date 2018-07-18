@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143883"
 ---
 # <a name="strings-element"></a>字串的項目
 字串元素必須包含至少一個**ButtonText**子項目。 所有其他子項目是選擇性的。 無效的 XML 字元，例如 '&' 和 '<' 必須編碼為實體 ('&amp;'和'&lt;' 等)。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126696"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>自動格式化在舊版語言服務
 使用自動格式設定中，語言服務會自動插入程式碼的程式碼片段時使用者開始輸入已知的程式碼建構。  

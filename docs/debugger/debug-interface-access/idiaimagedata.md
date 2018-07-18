@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463009"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 公開的基底的位置和記憶體位移之模組的映像的詳細資料。  

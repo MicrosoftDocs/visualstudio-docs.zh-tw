@@ -1,18 +1,18 @@
 ---
-title: "JsCreateContext 函式 | Microsoft Docs"
-ms.custom: 
+title: JsCreateContext 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsCreateContext
 helpviewer_keywords:
 - JsCreateContext function
 ms.assetid: aceca043-2c73-4029-a06c-8ad6695109cf
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568008"
 ---
 # <a name="jscreatecontext-function"></a>JsCreateContext 函式
 建立執行指令碼的指令碼內容。  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558005"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 應用程式的發行頁面
 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，產生並與應用程式發行預設網頁 (publish.htm)。 此頁面包含的應用程式、 安裝應用程式和/或任何必要條件，以及說明主題描述的連結名稱[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **發行頁**為您的專案屬性可讓您指定的網頁名稱您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  在**發行選項**對話方塊方塊中，請確定**發行之後開啟部署網頁**選取核取方塊 （也應該選取依預設）。  
   
-6.  在**部署網頁：**方塊中，輸入網頁的名稱，然後按一下**確定**。  
+6.  在**部署網頁：** 方塊中，輸入網頁的名稱，然後按一下**確定**。  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>若要防止啟動每次您發行的 [發行] 頁面  
   

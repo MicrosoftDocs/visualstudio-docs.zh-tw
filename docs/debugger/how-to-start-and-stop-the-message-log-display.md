@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481070"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
 當[訊息檢視](../debugger/messages-view.md)視窗是作用中，**開始記錄**或**停止記錄**選擇出現在 Spy + +**訊息**功能表上，而對應**開始記錄**或**停止記錄**工具列按鈕會變成作用中。  

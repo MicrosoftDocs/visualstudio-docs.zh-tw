@@ -1,16 +1,16 @@
 ---
-title: "IProcessDebugManager 介面 |Microsoft 文件"
-ms.custom: 
+title: IProcessDebugManager 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IProcessDebugManager interface
 ms.assetid: b6ecb2bd-a4d1-4857-9232-036c154d0cb1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729218"
 ---
 # <a name="iprocessdebugmanager-interface"></a>IProcessDebugManager 介面
 偵錯程序管理員的主要介面。 這個介面可建立、 新增或移除處理程序中的虛擬應用程式。 它可以列舉堆疊框架和應用程式執行緒。  

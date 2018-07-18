@@ -1,16 +1,16 @@
 ---
-title: "IApplicationDebuggerUI 介面 |Microsoft 文件"
-ms.custom: 
+title: IApplicationDebuggerUI 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IApplicationDebuggerUI interface
 ms.assetid: b8828817-ca24-4012-802c-7dcaeea65dc8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725138"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI 介面
 藉由偵錯工具整合式的開發環境 (IDE) (除了`IApplicationDebugger`) 若要讓外部元件更充分掌控偵錯工具的使用者介面 (UI)。  

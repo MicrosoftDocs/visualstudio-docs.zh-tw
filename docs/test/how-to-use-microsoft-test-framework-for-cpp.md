@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751685"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 2.  在測試總管中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。
 3. 在 [輸出視窗] 的下拉式清單中，選擇 [測試]，以檢視由 `Logger` 類別寫出的訊息：
 
-  ![顯示測試訊息的 C++ 輸出視窗](media/cpp-test-output-window.png "輸出視窗")
+  ![顯示測試訊息的 C++ 輸出視窗](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>定義特徵以啟用群組
 您可以在測試方法上定義特徵，以便您分類及分組**測試總管**中的測試。 若要定義特性，請使用 `TEST_METHOD_ATTRIBUTE` 巨集。 例如，若要定義名為 `TEST_MY_TRAIT`的特性：

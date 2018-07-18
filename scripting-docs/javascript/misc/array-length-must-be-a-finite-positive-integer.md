@@ -1,13 +1,13 @@
 ---
-title: "陣列長度必須是有限的正整數 |Microsoft 文件"
-ms.custom: 
+title: 陣列長度必須是有限的正整數 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5029
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 1a467040-4702-4178-848f-418a5974e907
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632718"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您要呼叫**陣列**不是整數 （整數包含零加上正整數的集合） 的引數的建構函式。  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064606"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 

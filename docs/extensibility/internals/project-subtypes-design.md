@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133795"
 ---
 # <a name="project-subtypes-design"></a>專案子類型設計
 專案子類型可讓 Vspackage 延伸 Microsoft Build Engine (MSBuild) 為基礎的專案。 使用彙總可讓您重複使用的核心管理專案系統中實作大量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]卻仍然來自訂特定案例的行為。  

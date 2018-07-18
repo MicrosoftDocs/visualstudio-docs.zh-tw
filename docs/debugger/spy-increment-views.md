@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475099"
 ---
 # <a name="spy-views"></a>Spy++ 檢視
 Spy + + 中會顯示在您的電腦上的 windows、 訊息、 處理程序和執行緒可用的樹狀檢視。  

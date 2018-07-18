@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900442"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文章說明簡單的函式參數的註解一般用法： 純量和結構和類別的指標，和大部分的緩衝區類型。  本文也會顯示常見的使用模式的附註。 功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)

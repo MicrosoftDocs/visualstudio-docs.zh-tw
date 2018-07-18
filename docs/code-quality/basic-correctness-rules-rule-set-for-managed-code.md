@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900626"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 基本正確性規則規則集著重於邏輯錯誤和使用 framework 應用程式開發介面中常見的錯誤。 基本正確性規則規則在集合中包含最小建議規則規則。 如需詳細資訊，請參閱[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)您應該包含這個規則集以擴充的最小建議規則報告的警告清單。

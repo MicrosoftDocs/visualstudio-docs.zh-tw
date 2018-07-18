@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458241"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[選擇中斷點] 對話方塊
 **選擇中斷點**對話方塊隨即開啟，當您嘗試從模稜兩可的輸入中設定中斷點**新增中斷點** 對話方塊。 模稜兩可的常見範例是輸入的多載函式名稱。  

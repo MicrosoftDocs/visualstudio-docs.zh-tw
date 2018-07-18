@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950289"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 使用 [專案設計工具] 的 [參考] 頁面來管理專案中的參考、Web 參考，以及匯入的命名空間。 專案可以包含 COM 元件、XML Web 服務、.NET Framework 類別庫/組件或其他類別庫的參考。 如需使用參考的詳細資訊，請參閱[管理專案中的參考](../../ide/managing-references-in-a-project.md)。

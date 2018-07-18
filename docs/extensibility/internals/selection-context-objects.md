@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131257"
 ---
 # <a name="selection-context-objects"></a>選擇內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 以判斷應該顯示在 IDE 中使用全域選取範圍的內容物件。 每個視窗在 IDE 中的可以有自己的選取範圍的內容物件推送至全域範圍內容。 IDE 視窗中的值更新全域選取範圍的內容，該視窗具有焦點時。 如需詳細資訊，請參閱[意見反應給使用者](../../extensibility/internals/feedback-to-the-user.md)。  

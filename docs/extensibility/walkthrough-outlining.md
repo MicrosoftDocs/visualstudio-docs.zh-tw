@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143887"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說： 大綱
 您可以實作以語言為基礎的功能，例如藉由定義的一種您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的語言服務內容或您可以定義您自己的檔案名稱副檔名和內容類型，並區定義套用至該類型，或者您可以將區域定義套用至現有的內容類型 （例如"text")。 本逐步解說示範如何定義及顯示大綱區域。  

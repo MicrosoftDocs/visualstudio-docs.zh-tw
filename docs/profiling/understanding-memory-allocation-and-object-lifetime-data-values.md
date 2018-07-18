@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7569b36b954553dbb03e8a3934c375012a4349
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476726"
 ---
-# <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>認識記憶體配置和物件存留期資料值
+# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解記憶體配置和物件存留期資料值
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的 *.NET 記憶體配置*程式碼剖析方法收集在配置時建立或在記憶體回收時終結的物件大小和數目相關資訊，以及事件發生時有關函式「呼叫堆疊」的其他資訊。 「呼叫堆疊」是一個動態結構，其中儲存在處理器上執行的函式相關資訊。
 

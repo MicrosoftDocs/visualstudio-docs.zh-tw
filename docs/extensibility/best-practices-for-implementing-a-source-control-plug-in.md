@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106044"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳作法
 下列技術詳細資料可協助您能夠可靠地實作原始檔控制外掛程式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  

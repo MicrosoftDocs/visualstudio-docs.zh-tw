@@ -1,11 +1,11 @@
 ---
-title: "IScriptNode::Alive |Microsoft 文件"
-ms.custom: 
+title: IScriptNode::Alive |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptNode.Alive
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptNode::Alive
 ms.assetid: d2755c83-e9b9-4c0a-acb7-25b554fc9fe8
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728658"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
 指出物件是否仍在作用中。  

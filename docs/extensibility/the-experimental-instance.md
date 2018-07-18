@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138921"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 為了保護您的 Visual Studio 開發環境，從未經測試的應用程式，可能會變更，VSSDK 會提供您可用來試用實驗空間。 您像往常一樣，使用 Visual Studio 來開發新的應用程式，但您執行使用此實驗執行個體。  

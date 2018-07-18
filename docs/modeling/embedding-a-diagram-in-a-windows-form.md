@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950539"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗。

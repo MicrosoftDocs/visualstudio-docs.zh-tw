@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556588"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技術支援的連結
 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，**支援 URL**屬性會識別網頁或檔案共用使用者可以前往以取得應用程式的相關資訊。 這個屬性是選擇性的。如果提供，將應用程式的項目中看到這個 URL**新增或移除程式** 對話方塊。  

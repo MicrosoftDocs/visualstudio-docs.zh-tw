@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703415"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。

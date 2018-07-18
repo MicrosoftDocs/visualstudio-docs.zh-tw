@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923093"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。

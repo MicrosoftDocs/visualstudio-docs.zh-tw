@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentContext::EnumCodeContexts |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentContext::EnumCodeContexts |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentContext.EnumCodeContexts
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentContext::EnumCodeContexts
 ms.assetid: fb0aa64e-c458-4ef1-bcd8-5cebdc972549
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725868"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
 列舉與此文件內容相關聯的程式碼內容。  

@@ -1,11 +1,11 @@
 ---
-title: "IScriptNode::Delete |Microsoft 文件"
-ms.custom: 
+title: IScriptNode::Delete |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptNode.Delete
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptNode::Delete
 ms.assetid: 6765ff80-a9a8-40a3-a669-7fcc284c87af
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733658"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
 刪除此物件樹狀結構。  

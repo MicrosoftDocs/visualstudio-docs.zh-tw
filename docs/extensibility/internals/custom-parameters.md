@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134330"
 ---
 # <a name="custom-parameters"></a>自訂參數
 啟動精靈之後自訂參數可控制精靈 的作業。 關聯的.vsz 檔案提供整合式的開發環境 (IDE) 來封裝並啟動精靈時以字串的陣列傳遞給精靈的使用者定義參數的陣列。 然後精靈會剖析字串的陣列，並使用的資訊來控制精靈的實際操作。 如此一來，精靈可以自訂功能，根據.vsz 檔案內容而定。  

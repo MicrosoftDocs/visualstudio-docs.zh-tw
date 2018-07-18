@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106652"
 ---
 # <a name="control-of-execution"></a>控制執行
 偵錯引擎 (DE) 通常會傳送下列事件之一為最後一個啟動事件：  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927464"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集的資料
 驗證資料是確認的程序的輸入資料物件的值符合資料集的結構描述中的條件約束。 驗證程序也會確認這些值會遵循您的應用程式已建立的規則。 它是最好的作法是驗證之前將更新傳送至基礎資料庫的資料。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。

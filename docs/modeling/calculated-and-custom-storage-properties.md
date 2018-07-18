@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951306"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言 (DSL) 中的所有網域屬性可以顯示在圖表上和您語言總管中，對使用者和程式碼可以存取。 不過，屬性不同，其值會儲存的方式。

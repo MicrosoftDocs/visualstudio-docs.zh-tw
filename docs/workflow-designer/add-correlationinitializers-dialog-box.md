@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975142"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131728"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 Managed 的封裝架構 (MPF) 語言服務可支援一或多個[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能，例如語法反白顯示、 IntelliSense 和中斷點驗證。 每項功能可以獨立於其他實作，但所有需要的剖析器和除了語法反白顯示，這需要掃描程式的掃描器。  

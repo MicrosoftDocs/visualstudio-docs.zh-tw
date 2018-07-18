@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptProperty::SetProperty |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptProperty::SetProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptProperty.SetProperty
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - SetProperty method, IActiveScriptProperty interface
 ms.assetid: 0ba429c5-04a3-4505-bc5f-69c505dfca91
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726498"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 設定參數所指定的屬性。  

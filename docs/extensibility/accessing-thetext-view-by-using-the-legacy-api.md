@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097779"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>使用舊版 API 存取 theText 檢視
 文字檢視是儲存在文字緩衝區之文字的呈現。 您可以在下一節中所示，使用舊版 API 存取文字檢視。

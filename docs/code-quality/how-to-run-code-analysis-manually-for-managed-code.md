@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919424"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：對 Managed 程式碼手動執行程式碼分析
 程式碼分析工具會提供給您在原始程式碼中可能的缺失相關資訊。 您可以使用的程式碼專案，每個組建自動執行程式碼分析，您也可以手動執行程式碼分析。 在專案屬性頁的 [程式碼分析] 頁面上指定程式碼分析執行時，會檢查規則。 如需詳細資訊，請參閱[How to： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

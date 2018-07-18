@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468696"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 完整的介面和支援列舉和結構在 DIA SDK 中的所有參考。  

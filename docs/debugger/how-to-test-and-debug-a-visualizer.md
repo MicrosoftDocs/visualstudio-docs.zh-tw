@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476133"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。  

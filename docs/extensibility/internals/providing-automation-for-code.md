@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130659"
 ---
 # <a name="providing-automation-for-code"></a>提供程式碼的自動化
 建立 automation 模型，讓您的程式碼不需要。 環境 SDK 不這麼做提供範例。 如需深入的程式碼模型，請參閱<xref:EnvDTE.CodeModel>物件。  

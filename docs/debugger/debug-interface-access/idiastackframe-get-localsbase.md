@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461541"
 ---
 # <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
 擷取框架的本機變數的起始位址。  

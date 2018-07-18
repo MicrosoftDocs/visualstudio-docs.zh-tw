@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268135"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動時執行 Visual Studio 外部的應用程式中發生的例外狀況或損毀。 這可讓您測試您的應用程式未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。

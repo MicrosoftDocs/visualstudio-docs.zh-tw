@@ -1,17 +1,17 @@
 ---
-title: "動態指令碼介面 |Microsoft 文件"
-ms.custom: 
+title: 動態指令碼介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script interfaces
 - activscp.h
 ms.assetid: f2afee5f-b930-4b32-b903-84ba41eb2d88
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641468"
 ---
 # <a name="active-script-interfaces"></a>動態指令碼的介面
 ActivScp.h 標頭檔提供介面、 列舉和此章節中列出的錯誤碼。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102378"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項和功能表
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 本節中的頁面詳細說明如何使用這些功能。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142896"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在編輯器中的傳統介面
 您可以從舊版的介面存取 Visual Studio 編輯器。 Visual Studio SDK 包括配接器稱為*填充碼*，可讓這些介面，以新的編輯器進行互動。 不過，我們建議您更新您要使用新的編輯器 API 的舊版程式碼。 您的程式碼執行效能，您可以使用新的技術，例如 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF)。  

@@ -1,11 +1,11 @@
 ---
-title: "IDebugFormatter::GetStringForVariant |Microsoft 文件"
-ms.custom: 
+title: IDebugFormatter::GetStringForVariant |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugFormatter.GetStringForVariant
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugFormatter::GetStringForVariant
 ms.assetid: 95189d03-1126-433e-8513-659107b3df16
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726658"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
 傳回表示指定的變數值的字串。  

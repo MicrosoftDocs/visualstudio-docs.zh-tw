@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465118"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 擷取符號的原始設備製造商 (OEM) 的識別碼值。  

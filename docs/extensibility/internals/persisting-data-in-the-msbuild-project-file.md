@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132074"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 專案檔中的保存資料
 專案子類型可能需要將特定子類型的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔的持續性符合下列需求：  

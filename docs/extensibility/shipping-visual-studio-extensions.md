@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142747"
 ---
 # <a name="shipping-visual-studio-extensions"></a>傳送 Visual Studio 擴充功能
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 共用與朋友或同事，或發行 Visual Studio Marketplace 上。 本節中，我們說明您需要執行動作以發行和維護您的擴充功能的所有事情：.vsix 檔案時，發佈、 當地語系化，以及更新工作。  

@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentHelper::AddUnicodeText |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentHelper::AddUnicodeText |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.AddUnicodeText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::AddUnicodeText
 ms.assetid: f4ef648e-c55d-4ef0-8df3-e808b798d3b8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726238"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
 將 Unicode 字串附加至這份文件結尾。  

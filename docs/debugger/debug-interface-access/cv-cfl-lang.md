@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461050"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 指定原始程式碼語言的應用程式或連結的模組。  

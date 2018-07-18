@@ -1,11 +1,11 @@
 ---
-title: "IDebugAsyncOperation::Abort |Microsoft 文件"
-ms.custom: 
+title: IDebugAsyncOperation::Abort |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugAsyncOperation.Abort
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugAsyncOperation::Abort
 ms.assetid: 232541c6-81b8-4eb7-96a7-a8e5fe087b31
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726028"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 取消作業。  

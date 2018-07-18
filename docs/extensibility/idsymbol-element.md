@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127522"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 項目
 `IDSymbol`項目包含 guid: id 配對，代表功能表、 群組或命令的識別碼。 GUID 是來自父`GuidSymbol`項目。 `IDSymbol`項目具有`name`提供包含此識別碼的易記名稱的屬性`value`屬性。  

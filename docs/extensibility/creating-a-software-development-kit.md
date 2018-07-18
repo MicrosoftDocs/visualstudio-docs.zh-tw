@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109174"
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是的 Api，您可以參考做為 Visual Studio 中的單一項目集合。 **參考管理員**對話方塊會列出與專案相關的所有 Sdk。 當您將 SDK 加入至專案時，應用程式開發介面是 Visual Studio 中提供。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 |DesignTime 資料夾|包含只能在前-run/偵錯期間所需的檔案。 這些可能包括 XML 文件、 程式庫、 標頭、 工具箱設計階段二進位檔，MSBuild 成品等等<br /><br /> XML 文件，在理想情況下，放在 \DesignTime 資料夾中，但 XML 文件的參考仍將會放置在一起的 Visual Studio 中的參考檔案。 例如，XML 文件的參考 \References\\[組態]\\[arch]\sample.dll 將 \References\\[組態]\\[arch]\sample.xml 和該文件的當地語系化的版本會 \References\\[組態]\\[架構]\\[locale]\sample.xml。|  
 |設定資料夾|可以有只有三個資料夾： 偵錯、 零售和 CommonConfiguration。 如果同一組 SDK 檔案應該取用，不論目標 SDK 取用者的組態，SDK 作者可以放置在 CommonConfiguration 檔案。|  
 |架構資料夾|可以存在的任何支援的架構資料夾。 Visual Studio 支援在下列架構： x86、 x64、 ARM 和 neutral。 注意： 為 x86，對應的 Win32 和 AnyCPU map 中性。<br /><br /> 平台 Sdk 下 \CommonConfiguration\neutral 只會尋找 MSBuild。|  
-|SDKManifest.xml|此檔案描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 這個屬性的存在告知 Visual Studio 和 MSBuild 的 SDK 是平台 SDK 和從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:** 這個屬性可由 Visual Studio 來確保，只會目標相同的架構中的值所指定的專案屬性可能會耗用 SDK。<br /><br /> **MinVSVersion:** 這個屬性可由 Visual Studio 來使用套用至該 Sdk。<br /><br /> **參考：**這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，請參閱下文。|  
+|SDKManifest.xml|此檔案描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 這個屬性的存在告知 Visual Studio 和 MSBuild 的 SDK 是平台 SDK 和從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:** 這個屬性可由 Visual Studio 來確保，只會目標相同的架構中的值所指定的專案屬性可能會耗用 SDK。<br /><br /> **MinVSVersion:** 這個屬性可由 Visual Studio 來使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，請參閱下文。|  
   
 ##  <a name="ExtensionSDKs"></a> 擴充功能 Sdk  
  下列各節說明您需要如何部署擴充功能 SDK。  
@@ -126,7 +127,7 @@ ms.lasthandoff: 04/16/2018
   
     ```  
   
-     XML 參考文件被放置在一起的參考檔案。 例如，XML 參考文件 **\References\\< 組態\>\\< a c h\>\sample.dll**組件是 **\References\\< 組態\>\\< a c h\>\sample.xml**，和該文件的當地語系化的版本是 **\References\\< 組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
+     XML 參考文件被放置在一起的參考檔案。 例如，XML 參考文件**\References\\< 組態\>\\< a c h\>\sample.dll**組件是**\References\\< 組態\>\\< a c h\>\sample.xml**，和該文件的當地語系化的版本是**\References\\< 組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
   
 5.  設定資料夾： 三個子資料夾： 偵錯、 零售版和 CommonConfiguration。 同一組 SDK 檔案應該取用，不論目標 SDK 取用者的組態時，SDK 作者可以放置在 CommonConfiguration 檔案。  
   

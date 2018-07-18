@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471596"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (解構函式)
 終結的執行個體`VsgDbg`類別。 如果目前正在錄製圖形資訊，圖形記錄檔已完成並關閉，且主動擷取圖形資訊時所使用的資源會釋放。  

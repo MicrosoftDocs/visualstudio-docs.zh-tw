@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128614"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>使用 [開啟] 命令顯示檔案
 專案可以要求顯示 IDE**開啟** 對話方塊。 此要求會提示使用者開啟的標準編輯器中選取的檔案。 下列步驟說明此程序。  

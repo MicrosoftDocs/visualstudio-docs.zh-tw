@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptError::GetExceptionInfo |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptError::GetExceptionInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptError.GetExceptionInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptError_GetExceptionInfo
 ms.assetid: 528416cc-8468-4ad7-a6c2-fa1daf6ecf33
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645718"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
 擷取之指令碼引擎執行指令碼時發生錯誤的相關資訊。  

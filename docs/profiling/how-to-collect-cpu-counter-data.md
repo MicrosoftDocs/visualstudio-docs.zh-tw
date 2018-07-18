@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765095"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 
-CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明當您使用檢測分析方法時要如何收集事件計數器資料。
+CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當您使用檢測分析方法時，要如何收集事件計數器資料。
 
 有兩種類型的 CPU 計數器事件會發生︰
 
@@ -40,7 +41,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明
 
 - 分支事件。
 
- 在程式碼剖析工具中，收集效能計數器資料的方式有兩種︰
+ 在分析工具中，收集效能計數器資料的方式有兩種：
 
 - 透過檢測分析時，從一或多個計數器收集資料。
 
@@ -64,4 +65,4 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
 [效能工作階段屬性](../profiling/performance-session-properties.md)  
 [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)  
-[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
+[操作說明：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)

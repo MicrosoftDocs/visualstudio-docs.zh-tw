@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126223"
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
 工作階段的偵錯管理員 (SDM) 會管理任何數目的偵錯引擎 (DE) 偵錯任意數目的任意數目的機器上的多個處理程序中的程式。 除了多工器偵錯引擎，SDM 會提供 ide 偵錯工作階段的統一的檢視。  

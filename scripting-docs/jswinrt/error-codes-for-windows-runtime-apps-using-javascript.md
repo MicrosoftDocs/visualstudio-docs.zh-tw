@@ -1,12 +1,13 @@
 ---
-title: "使用 JavaScript 的 Windows 執行階段應用程式錯誤碼 | Microsoft Docs"
-ms.custom: 
+title: 使用 JavaScript 的 Windows 執行階段應用程式錯誤碼 | Microsoft Docs
+ms.custom: ''
 ms.date: 05/10/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - JavaScript, Windows Runtime error codes
@@ -32,7 +33,7 @@ f1_keywords:
 - VS.WebClient.Help.APPHOST9624
 - VS.WebClient.Help.APPHOST9626
 ms.assetid: 4c6d4e90-602a-4b56-ae74-3458929da442
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: erikadoyle
 ms.author: edoyle
 manager: jken
@@ -41,6 +42,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571508"
 ---
 # <a name="error-codes-for-windows-runtime-apps-using-javascript"></a>使用 JavaScript 的 Windows 執行階段應用程式錯誤碼
 以下是使用 JavaScript 開發 Windows 執行階段應用程式時，由 Microsoft Visual Studio 主控台所顯示的錯誤碼。

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137670"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>字串做為索引鍵來尋找原始檔控制外掛程式
 下列字串是索引鍵來存取此登錄來尋找資訊的原始檔控制外掛程式。  

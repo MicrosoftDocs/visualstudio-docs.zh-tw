@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140130"
 ---
 # <a name="managing-vspackages"></a>管理 Vspackage
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本的註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的位元，以管理您的封裝。  

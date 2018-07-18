@@ -9,7 +9,7 @@ author: mikejo5000
 manager: douge
 ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
 ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/06/2018
 ms.locfileid: "34815320"

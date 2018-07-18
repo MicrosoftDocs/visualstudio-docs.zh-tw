@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923121"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何： 為實體類別加入驗證
 *驗證*實體類別會確認程序的輸入資料物件的值符合的條件約束物件的結構描述，以及建立應用程式的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。

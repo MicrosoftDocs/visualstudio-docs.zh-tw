@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750489"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>教學課程步驟 6：使用「投票 Django Web 專案」範本
 
@@ -111,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是針對資料庫的 Poll 而唯一存在的 onesields；`total_votes` 會在執行階段時進行計算。
+如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是針對資料庫的 Poll 而唯一存在的欄位；`total_votes` 會在執行階段進行計算。
 
 Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一段描述，以及在 `votes` 保留該選擇的一個計數。 `votes_percentage` 欄位會在執行階段進行計算，而且在資料庫中找不到它。
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-這裡用到是更複雜的規則運算式，如果您有什麼地方不明白，可以將運算式貼到 [regex101.com](https://regex101.com/)，然後就會看到淺顯易懂的說明。 (您需要在斜線 `/` 前面加上一個反斜線 `\`，這樣才能正常顯示斜線；Python 不需要做逸出處理，因為字串中的 `r` 前置詞，表示 raw)。
+這裡用到是更複雜的規則運算式，如果您有什麼地方不明白，可以將運算式貼到 [regex101.com](https://regex101.com/)，然後就會看到淺顯易懂的說明。 (您需要在正斜線 `/` 前面加上反斜線 `\` 以逸出正斜線；Python 不需要做逸出處理，因為字串中的 `r` 前置詞，表示 "raw")。
 
 在 Django 中，語法 `?P<name>pattern` 會建立名為 `name` 的群組，然後當作引數而傳遞至依序顯示的檢視。 在前面顯示的程式碼中，`PollsDetailView` 和 `PollsResultsView` 會收到 `pk` 引數，而 `app.views.vote` 會收到 `poll_id` 引數。
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921426"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>使用 LINQ to XML 的 WPF 資料繫結範例
 

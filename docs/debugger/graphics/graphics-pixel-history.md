@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479951"
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫助您了解在遊戲或應用程式的畫面格期間，Direct3D 事件對特定像素有何影響。  

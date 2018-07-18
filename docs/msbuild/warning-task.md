@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568432"
 ---
 # <a name="warning-task"></a>警告工作
 在建置期間，根據評估的條件陳述式來記錄警告。  

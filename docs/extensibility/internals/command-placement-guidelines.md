@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134456"
 ---
 # <a name="command-placement-guidelines"></a>命令位置指導方針
 在 Visual Studio 整合式的開發環境 (IDE) 中定位命令的最佳作法是根據命令集的大小而有所不同。 定義命令和定位根據.vsct 檔案中的資訊。  

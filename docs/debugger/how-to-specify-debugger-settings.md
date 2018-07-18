@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472720"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定偵錯工具設定
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，您可以指定偵測工具行為的各種設定，包括變數如何顯示、某些警告是否要呈現、如何設定中斷點，以及中斷會如何影響執行中的程式  指定在偵錯工具設定**選項** 對話方塊。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141447"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的完整描述可建置、 建置工作，與組建組態的專案項目。  

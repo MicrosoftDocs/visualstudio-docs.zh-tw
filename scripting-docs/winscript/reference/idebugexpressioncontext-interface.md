@@ -1,11 +1,11 @@
 ---
-title: "IDebugExpressionContext 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugExpressionContext 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugExpressionContext Interface
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugExpressionContext interface
 ms.assetid: 52af82e8-0dec-49e2-a7f3-d00f66ca1401
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726528"
 ---
 # <a name="idebugexpressioncontext-interface"></a>IDebugExpressionContext 介面
 代表可以評估運算式的內容。 堆疊框架物件會實作這個介面。  

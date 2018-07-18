@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132086"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>屬性和擴充的專案子類型的方法
 專案子類型都有大量的電力來影響專案的行為，因為它會建構為彙總工具的基底的專案。 本節摘要說明的某些功能，可增強或修改專案子類型。  

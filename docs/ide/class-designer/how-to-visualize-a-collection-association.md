@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33995877"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在類別設計工具中將集合關聯視覺化
 

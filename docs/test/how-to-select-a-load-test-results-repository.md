@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751997"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果儲存機制
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  從 [負載測試] 工具列選擇 [管理測試控制器]。 [管理測試控制器] 對話方塊隨即顯示。 如果您正在遠端使用代理程式，則必須選取控制器。
 
-     ![負載測試結果存放區連接屬性](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") 負載測試結果存放區連接屬性
+     ![負載測試結果存放區連接屬性](../test/media/loadtestconnectionproperties.png) 負載測試結果存放區連接屬性
 
 3.  在 [負載測試結果存放區] 中，按一下 (…) 以顯示 [連接屬性] 對話方塊。
 

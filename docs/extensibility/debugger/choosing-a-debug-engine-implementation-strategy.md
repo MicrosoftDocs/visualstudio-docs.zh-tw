@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098065"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>選擇偵錯引擎實作策略
 您可以使用執行階段架構來判斷您偵錯引擎 (DE) 實作的策略。 偵錯引擎可能會建立在同處理序執行的程式偵錯，在同處理序執行的 Visual Studio 工作階段偵錯管理員 (SDM) 或超出-處理序以這兩種。 下列指導方針有助於您選擇下列三種策略。  

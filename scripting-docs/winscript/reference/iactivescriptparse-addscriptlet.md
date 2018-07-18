@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptParse::AddScriptlet |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptParse::AddScriptlet |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParse.AddScriptlet
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParse_AddScriptlet
 ms.assetid: 824929f4-4dd3-473a-92d9-0b96acea2f14
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724648"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 將程式碼的程式碼片段加入至指令碼。 這個方法使用與主應用程式的文件密不可分永續性狀態的指令碼，且主應用程式會負責將還原指令碼中，環境中而非透過`IPersist*`介面。 主要的範例包括允許的內嵌於 HTML 文件附加至內建事件的程式碼的程式碼片段的 HTML 指令碼語言 (例如，ONCLICK="button1.text='Exit'")。  

@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugdatatarget:: Getthreadcontext 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Ijsdebugdatatarget:: Getthreadcontext 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugDataTarget.GetThreadContext
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugDataTarget.GetThreadContext
+apilocation:
+- jscript9diag.dll
 ms.assetid: faf2a689-6c49-4a7d-b5a6-2b323e2257a7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728178"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext 方法
 擷取內容提供執行緒。  

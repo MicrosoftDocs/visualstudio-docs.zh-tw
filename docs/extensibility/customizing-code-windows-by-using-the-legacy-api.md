@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109960"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼視窗
 程式碼視窗會支援一或多個文字檢視文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  

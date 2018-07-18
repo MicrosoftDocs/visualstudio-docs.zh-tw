@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136051"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>使用語法色彩編碼舊版語言服務
 

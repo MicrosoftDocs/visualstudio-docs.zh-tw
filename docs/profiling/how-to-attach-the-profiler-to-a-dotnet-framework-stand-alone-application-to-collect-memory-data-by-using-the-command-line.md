@@ -9,26 +9,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766668"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
 
-本主題描述如何使用 Visual Studio 分析工具命令列工具，將分析工具附加至執行中的 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。
+本文描述如何使用 Visual Studio 分析工具命令列工具，將分析工具附加至執行中的 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。
 
 > [!NOTE]
-> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+> 分析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
-若要附加至 .NET Framework 應用程式並收集記憶體資料，您必須在目標應用程式啟動前，先使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化適當的環境變數。 分析工具附加至應用程式時，您可以使用 **VSPerfCmd.exe** 工具暫停和繼續收集資料。
+若要附加至 .NET Framework 應用程式並收集記憶體資料，您必須在目標應用程式啟動前，先使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化適當的環境變數。 分析工具附加至應用程式時，您可以使用 *VSPerfCmd.exe* 工具暫停和繼續收集資料。
 
 若要結束程式碼剖析工作階段，必須從所有分析的處理序中斷連結程式碼剖析工具，而且必須明確地關閉程式碼剖析工具。 在大部分情況下，建議您在工作階段結束時清除程式碼剖析環境變數。
 
-## <a name="attaching-the-profiler"></a>附加程式碼剖析工具
+## <a name="attach-the-profiler"></a>附加分析工具
 
-### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>將程式碼剖析工具附加至執行中的 .NET Framework 應用程式
+### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>將分析工具附加至執行中的 .NET Framework 應用程式
 
 1. 開啟 [命令提示字元] 視窗。
 
@@ -72,9 +73,9 @@ ms.lasthandoff: 04/19/2018
 
     - **/targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。
 
-## <a name="controlling-data-collection"></a>控制資料收集
+## <a name="control-data-collection"></a>控制資料收集
 
-當目標應用程式執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
+當目標應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 ### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** 會開始收集 `PID` 或處理序名稱 (ProcName) 指定的處理序資料。 **/detach** 會停止指定的處理序或所有處理序 (如果未指定特定處理序) 的資料收集。|
 
-## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段
+## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
 
 若要結束程式碼剖析工作階段，必須從所有分析的處理序中斷連結程式碼剖析工具，而且必須明確地關閉程式碼剖析工具。 您可以關閉應用程式或呼叫 **VSPerfCmd /detach** 選項，以從使用取樣方法剖析的應用程式中斷連結程式碼剖析工具。 接著呼叫 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。 **VSPerfClrEnv /off** 命令會清除程式碼剖析環境變數。
 
@@ -110,5 +111,5 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[對獨立應用程式進行分析](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)  
 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478105"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式，請安裝，您將在其中部署應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行應用程式。
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/18/2018
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。  
   
     > [!TIP]
-    >  或者，您可以另外執行一個步驟來部署檔案。 在**方案總管] 中，**以滑鼠右鍵按一下**mymfc**節點，然後選擇 [**部署**。  
+    >  或者，您可以另外執行一個步驟來部署檔案。 在**方案總管] 中，** 以滑鼠右鍵按一下**mymfc**節點，然後選擇 [**部署**。  
   
  如果您有應用程式所使用的非程式碼檔案，您需要將它們包含在 Visual Studio 專案。 建立其他檔案的專案資料夾 (在**方案總管] 中**，按一下 [**新增 > 新的資料夾**。)然後將檔案加入資料夾 (在**方案總管] 中**，按一下 [**新增 > 現有項目**，然後選取的檔案)。 在**屬性**頁面上的每個檔案，將**複製到輸出目錄**至**永遠複製**。
   

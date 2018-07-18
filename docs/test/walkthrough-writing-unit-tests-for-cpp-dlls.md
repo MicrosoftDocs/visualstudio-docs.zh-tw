@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751828"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 
@@ -45,11 +46,11 @@ ms.lasthandoff: 04/26/2018
 
      在此逐步解說中，測試專案名為 `NativeRooterTest`。
 
-     ![建立 C++ 單元測試專案](../test/media/utecpp01.png "UteCpp01")
+     ![建立 C++ 單元測試專案](../test/media/utecpp01.png)
 
 2.  在新的專案中，檢查 **unittest1.cpp**
 
-     ![包含 TEST&#95;CLASS 和 TEST&#95;METHOD 的測試專案](../test/media/utecpp2.png "UteCpp2")
+     ![包含 TEST&#95;CLASS 和 TEST&#95;METHOD 的測試專案](../test/media/utecpp2.png)
 
      請注意：
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
          此測試會出現在 [通過的測試] 底下。
 
-         ![[單元測試總管] 中有一個測試成功](../test/media/utecpp04.png "UteCpp04")
+         ![[單元測試總管] 中有一個測試成功](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> 建立 DLL 專案
 
@@ -90,17 +91,17 @@ ms.lasthandoff: 04/26/2018
 
      在此逐步解說中，專案名為 `RootFinder`。
 
-     ![建立 C++ Win32 專案](../test/media/utecpp05.png "UteCpp05")
+     ![建立 C++ Win32 專案](../test/media/utecpp05.png)
 
 2.  在 [Win32 應用程式精靈] 中選取 [DLL]  和 [匯出符號]  。
 
      [匯出符號]  選項會產生方便的巨集，可讓您用來宣告匯出的方法。
 
-     ![[DLL] 和 [匯出符號] 的 C++ 專案精靈設定](../test/media/utecpp06.png "UteCpp06")
+     ![已選取 [DLL] 和 [匯出符號] 的 C++ 專案精靈設定](../test/media/utecpp06.png)
 
 3.  在主體 .h 檔案中宣告匯出的函式：
 
-     ![新的 DLL 程式碼專案以及包含 API 巨集的 .h 檔案](../test/media/utecpp07.png "UteCpp07")
+     ![新的 DLL 程式碼專案以及包含 API 巨集的 .h 檔案](../test/media/utecpp07.png)
 
      宣告子 `__declspec(dllexport)` 會使類別的 public 和 protected 成員顯示在 DLL 外部。 如需詳細資訊，請參閱 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)。
 
@@ -120,13 +121,13 @@ ms.lasthandoff: 04/26/2018
 
     1.  開啟測試專案的屬性，然後選擇 [通用屬性] 、[架構和參考] 。
 
-         ![C++ 專案屬性 | [架構和參考]](../test/media/utecpp08.png "UteCpp08")
+         ![C++ 專案屬性 | 架構和參考](../test/media/utecpp08.png)
 
     2.  選擇 [加入新參考] 。
 
          在 [加入參考]  對話方塊中，選取 DLL 專案，並選擇 [加入] 。
 
-         ![C++ 專案屬性 | [新增參考]](../test/media/utecpp09.png "UteCpp09")
+         ![C++ 專案屬性 | 新增參考](../test/media/utecpp09.png)
 
 2.  在主體單元測試 .cpp 檔案中，加入 DLL 程式碼的 .h 檔案：
 
@@ -160,7 +161,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  在 [測試總管] 中，選擇 [ **全部執行**]。
 
-     ![單元測試總管 &#45; 基本測試成功](../test/media/utecpp10.png "UteCpp10")
+     ![[單元測試總管] &#45;「基本測試」成功](../test/media/utecpp10.png)
 
  您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
@@ -189,7 +190,7 @@ ms.lasthandoff: 04/26/2018
 
      新的測試失敗。
 
-     ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
@@ -217,7 +218,7 @@ ms.lasthandoff: 04/26/2018
 
      這兩個測試都通過。
 
-     ![單元測試總管 &#45; 範圍測試成功](../test/media/utecpp12.png "UteCpp12")
+     ![[單元測試總管] &#45;「範圍測試」成功](../test/media/utecpp12.png)
 
     > [!TIP]
     > 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。
@@ -263,7 +264,7 @@ ms.lasthandoff: 04/26/2018
 
      失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。
 
-     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  若要查看測試失敗的原因，請逐步執行函式：
 
@@ -291,10 +292,10 @@ ms.lasthandoff: 04/26/2018
 
 6.  現在所有測試都通過了。
 
-     ![所有測試都成功](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。
+> 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 
 ##  <a name="refactor"></a> 重構程式碼，但不變更測試

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923546"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 如有必要，按一下適當的選項中**組態**和**平台**列出。
 
-5. 若要在程式碼專案使用指定的組態建置每次執行程式碼分析，選取**啟用建置程式碼分析 （定義 CODE_ANALYSIS 常數）**核取方塊。
+5. 若要在程式碼專案使用指定的組態建置每次執行程式碼分析，選取**啟用建置程式碼分析 （定義 CODE_ANALYSIS 常數）** 核取方塊。
 
 6. 若要忽略來自其他公司的元件中的程式碼，請選取**隱藏來自產生的程式碼的結果**核取方塊。
 

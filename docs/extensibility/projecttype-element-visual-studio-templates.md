@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137878"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 (Visual Studio 範本)
 將專案範本分類，使其出現在中指定的群組**新專案**或**加入新項目** 對話方塊。  

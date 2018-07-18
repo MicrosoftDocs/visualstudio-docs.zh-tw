@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplication::StartDebugSession |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication::StartDebugSession |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.StartDebugSession
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::StartDebugSession
 ms.assetid: 737f8424-bbcf-473f-9cf1-6601b9aa250d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725438"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
 啟動預設的偵錯工具整合式的開發環境 (IDE)，並會附加偵錯工作階段對此應用程式，如果其中一個未附加。  

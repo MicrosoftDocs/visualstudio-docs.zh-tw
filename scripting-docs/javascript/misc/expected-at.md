@@ -1,13 +1,13 @@
 ---
-title: "必須是 &#39; @&#39; |Microsoft 文件"
-ms.custom: 
+title: 必須是 &#39; @&#39; |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1032
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633068"
 ---
 # <a name="expected-3939"></a>必須是 &#39; @&#39;
 您嘗試建立用於條件式編譯陳述式中使用變數`@set`陳述式，但未將 @ 記號"**@**"變數名稱之前。  

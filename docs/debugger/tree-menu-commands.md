@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481352"
 ---
 # <a name="tree-menu-commands"></a>樹狀結構功能表命令
 **樹狀**功能表提供命令來展開或摺疊檢視。  

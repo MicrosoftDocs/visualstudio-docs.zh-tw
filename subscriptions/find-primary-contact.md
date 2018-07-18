@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862792"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>尋找與 Visual Studio 訂用帳戶相關聯的主要連絡人
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110051"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 指定要擷取失敗的解決方式的中斷點相關的資訊。  

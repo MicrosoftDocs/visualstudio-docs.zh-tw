@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477007"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>檢視登錄值和使用 Visual Studio 偵錯工具中的暫存器視窗
 暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯** 節點，**一般**類別目錄。  

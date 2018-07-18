@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114686"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 中止要求下一個程式也就是這個處理序中執行的程式碼，並傳送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件物件。  

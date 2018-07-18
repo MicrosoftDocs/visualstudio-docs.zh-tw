@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131743"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用 Project Factory 建立的專案執行個體
 專案中的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*專案 factory*建立專案中物件的執行個體。 專案 factory 是類似於標準的 class factory cocreatable COM 物件。 不過，專案物件不是 cocreatable： 只可以建立使用專案 factory。  

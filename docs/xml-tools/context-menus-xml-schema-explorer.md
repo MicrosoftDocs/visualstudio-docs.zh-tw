@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477817"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 

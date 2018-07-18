@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752407"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 [尋找/命令] 方塊會保留輸入的最後 20 個項目，並以下拉式清單予以顯示。 您可以選擇**方向鍵**來巡覽清單。
 
-![尋找&#47;命令方塊](../ide/media/findcommandbox.png "FindCommandBox")
+![尋找&#47;命令方塊](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>搜尋文字
 

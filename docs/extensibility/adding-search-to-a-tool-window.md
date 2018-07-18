@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032066"
 ---
 # <a name="adding-search-to-a-tool-window"></a>加入工具視窗搜尋
 當您建立或更新您的擴充功能中的工具視窗時，您可以在 Visual Studio 中加入相同出現的其他位置的搜尋功能。 這項功能包含下列功能：  

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573176"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -35,12 +36,12 @@ ms.lasthandoff: 05/17/2018
  如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這類其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
 > [!TIP]
->  如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
+>  如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
   
-##  <a name="Step1"></a>建立和執行效能工作階段  
+## <a name="create-and-run-a-performance-session"></a>建立和執行效能工作階段  
  若要取得您要分析的資料，您必須先建立效能工作階段，然後再執行工作階段。 [效能精靈] 可讓您進行這兩項工作。  
   
- 如果您不是在對 Windows 傳統型應用程式或 ASP.NET 應用程式進行程式碼剖析，您必須使用其他的程式碼剖析工具。 請參閱[程式碼剖析工具](../profiling/profiling-tools.md)。  
+ 如果您不是在對 Windows 傳統型應用程式或 ASP.NET 應用程式進行程式碼剖析，您必須使用其他的程式碼剖析工具。 請參閱[初步認識分析工具](../profiling/profiling-tools.md)。  
   
 #### <a name="to-create-and-run-a-performance-session"></a>建立和執行效能工作階段  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
   
      在您完成執行應用程式後，程式碼剖析資料的 [摘要] 檢視會顯示在 Visual Studio 主視窗中，且新工作階段的圖示會出現在 [效能總管] 視窗中。  
   
-##  <a name="Step2"></a> 步驟 2：分析取樣資料  
+## <a name="step-2-analyze-sampling-data"></a>步驟 2：分析取樣資料  
  完成執行效能工作階段之後，分析報告的 [摘要] 檢視會出現在 Visual Studio 主視窗中。  
   
  建議您先檢查 [最忙碌路徑]，接著檢查執行最多工作之函式的清單，最後使用 [摘要時間表] 來專注於其他函式以開始分析資料。 您也可以在 [錯誤清單] 視窗中檢視分析建議和警告。  
@@ -108,7 +109,7 @@ ms.lasthandoff: 05/17/2018
   
     -   若要檢視有關警告的詳細資訊，請以滑鼠右鍵按一下錯誤，然後按一下 [顯示錯誤說明]。  
   
-##  <a name="Step3"></a>步驟 3：修訂程式碼並重新執行工作階段  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>步驟 3：修訂程式碼並重新執行工作階段  
  在找到並最佳化一個或多個函式之後，您可以重複執行程式碼剖析並且比較資料，識別對應用程式效能的變更所帶來的差異。  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>修訂程式碼並重新執行分析工具  

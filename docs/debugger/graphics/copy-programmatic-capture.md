@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472090"
 ---
 # <a name="copy-programmatic-capture"></a>複製 (程式設計擷取)
 將使用中的圖形記錄 (.vsglog) 檔案的內容複製到新的檔案。  

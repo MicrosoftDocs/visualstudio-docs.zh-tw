@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945086"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Studio 中產生欄位、屬性或區域變數
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您針對先前未宣告的欄位、屬性或區域變數立即產生程式碼。
+**功能：** 讓您針對先前未宣告的欄位、屬性或區域變數立即產生程式碼。
 
 **時機：** 您在輸入時引進新的欄位、屬性或區域變數，並想要自動正確地宣告這些項目。
 
-**原因：**您可以在使用欄位、屬性或區域變數之前先宣告這些項目，不過，此功能將可自動產生宣告和類型。
+**原因：** 您可以在使用欄位、屬性或區域變數之前先宣告這些項目，不過，此功能將可自動產生宣告和類型。
 
 ## <a name="how-to"></a>操作說明
 

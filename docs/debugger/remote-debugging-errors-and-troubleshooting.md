@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474359"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
 您可能會在嘗試進行遠端偵錯時，發生下列錯誤。  

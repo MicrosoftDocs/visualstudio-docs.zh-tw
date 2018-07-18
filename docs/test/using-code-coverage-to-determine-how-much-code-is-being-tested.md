@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752088"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  例如，假設您在執行輸入 "2" 的測試時發現特定函式的涵蓋範圍是 50%。 當您第二次輸入 "-2" 執行測試時，您會在涵蓋範圍著色檢視中看見涵蓋範圍多了另外的 50%。 現在您合併了兩個測試回合的結果，而報告和涵蓋範圍檢視也顯示涵蓋範圍是該函式的 100%。
 
- 若要這樣做，請使用 ![[程式碼涵蓋範圍] 視窗中的 [合併] 按鈕圖示](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")[合併程式碼涵蓋範圍結果]。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
+ 若要這樣做，請使用 ![[程式碼涵蓋範圍] 視窗中的 [合併] 按鈕圖示](../test/media/codecoverage-mergeicon.png)**合併程式碼涵蓋範圍結果**。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
 
  使用 [匯出程式碼涵蓋範圍結果]，儲存合併作業的結果。
 
@@ -258,7 +259,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    如果您有一個以上的測試來源定義，請針對每一個定義重複以上步驟。
 
-   ![設定程式碼涵蓋範圍的組建定義](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![設定程式碼涵蓋範圍的組建定義](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > 如果沒有名為 [回合設定檔案的類型] 的檔案，請變更 [測試執行程式] 屬性。 在 [自動化測試] 下，選取 [測試組件]，然後選擇行末的省略符號按鈕 [...]。 在 [加入/編輯測試回合] 對話方塊中，選擇 [測試執行器] 之下的 [Visual Studio 測試執行器]。

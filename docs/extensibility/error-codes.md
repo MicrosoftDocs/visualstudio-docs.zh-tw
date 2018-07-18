@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130770"
 ---
 # <a name="error-codes"></a>錯誤碼
 原始檔控制外掛程式 API 函式會傳回錯誤，預期為下列錯誤碼。 所有的錯誤是負數，警告或參考用錯誤代碼是正數，以及成功是 0。  

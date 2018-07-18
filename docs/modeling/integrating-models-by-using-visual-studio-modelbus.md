@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954268"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，與從其他工具的連結。 例如，您無法連結特定領域語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
@@ -114,7 +115,7 @@ ms.lasthandoff: 04/26/2018
 
  在這個階段中，程式碼可設定此屬性值，但此屬性在 [屬性] 視窗中是唯讀的。
 
- 您可以允許使用者使用專用 ModelBus 參考編輯器來設定此屬性。 有兩個版本，此編輯器或*選擇器：*其中一個可讓使用者選擇的模型檔案，以及其他可讓使用者選擇的模型檔案，以及模型中的項目。
+ 您可以允許使用者使用專用 ModelBus 參考編輯器來設定此屬性。 有兩個版本，此編輯器或*選擇器：* 其中一個可讓使用者選擇的模型檔案，以及其他可讓使用者選擇的模型檔案，以及模型中的項目。
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>允許使用者設定網域屬性中的模型匯流排參考
 

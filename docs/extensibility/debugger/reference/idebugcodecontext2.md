@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103873"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此介面代表程式碼指示的開始位置。 大部分的執行階段架構，程式碼內容可以視為程式的執行資料流中的位址。  

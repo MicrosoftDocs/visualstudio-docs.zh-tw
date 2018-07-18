@@ -1,11 +1,11 @@
 ---
-title: "IRemoteDebugApplicationThread::GetState |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplicationThread::GetState |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IRemoteDebugApplicationThread.GetState
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IRemoteDebugApplicationThread::GetState
 ms.assetid: 44503a78-efa9-4fbf-98be-a5dcfa329c5a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729778"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
 取得這個執行緒的狀態。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100935"
 ---
 # <a name="combo-element"></a>下拉式項目
 定義了出現在下拉式方塊中的命令。 有四種下拉式方塊的如下所示： 下拉式組合、 DynamicCombo、 IndexCombo 和 MRUCombo。  

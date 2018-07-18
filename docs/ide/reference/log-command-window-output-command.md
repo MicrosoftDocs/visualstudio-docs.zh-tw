@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704677"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。

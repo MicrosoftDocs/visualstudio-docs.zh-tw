@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134603"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>在舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊是顯示在方法簽章，當使用者輸入的參數清單中的工具提示啟動方法參數清單的字元 （通常是左括號）。 當每個參數輸入和輸入參數分隔符號 （通常是逗號），工具提示會更新以顯示下一個參數以粗體顯示。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130576"
 ---
 # <a name="project-modeling"></a>專案模型
 您的專案實作標準專案物件，提供自動化的下一個步驟：<xref:EnvDTE.Projects>和`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>物件; 並且您的實作唯一剩餘的物件。 Dteinternal.h 檔案中，會定義這些標準的物件。 BscPrj 範例中提供的標準物件實作。 您也可以為模型使用這些類別，建立您自己獨立的並排的標準專案物件與從其他專案類型的專案物件。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148684"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說： 實作程式碼片段
 您可以建立程式碼片段，及它們包含在編輯器延伸模組，以便擴充功能的使用者可以將它們加入自己的程式碼。  

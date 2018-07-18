@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137507"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>管理復原和取消復原使用舊版 API
 編輯器必須支援，讓使用者可以反轉最近的變更，它們就會修改程式碼時的復原作業。 大部分的編輯器下實作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可以自動提供整合式的開發環境 (IDE) 的復原支援。  

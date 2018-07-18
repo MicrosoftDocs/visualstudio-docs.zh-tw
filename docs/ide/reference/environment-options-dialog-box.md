@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947933"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 您可以使用 [選項] 對話方塊之 [環境] 資料夾內的頁面，設定整合式開發環境 (IDE) 會如何顯示及作用某些項目。 您可以在功能表列上依序選擇 [工具] 和 [選項]，然後選取 [環境]，以存取 [環境] 頁面。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125367"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 此結構會指定取自 PDB 符號的欄位類型的相關資訊。  

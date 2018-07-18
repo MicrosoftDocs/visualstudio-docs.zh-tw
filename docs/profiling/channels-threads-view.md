@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269124"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 並行視覺化檢視會顯示四種通道︰執行緒通道、磁碟通道、標記通道和 GPU 通道。  

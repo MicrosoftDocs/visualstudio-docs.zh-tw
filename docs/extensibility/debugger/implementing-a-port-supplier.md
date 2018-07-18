@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098988"
 ---
 # <a name="implementing-a-port-supplier"></a>實作連接埠供應商
 連接埠供應商提供要求的工作階段的偵錯管理員 (SDM) 上的連接埠。 連接埠提供者必須實作非 DCOM 機器進行偵錯時，或當新裝置需要支援。 比方說，若要提供行動電話偵錯，您可能會實作一個提供連接埠，行動電話 （或許是藉由連線到 IR 或儲存格連線），並列舉的程序和程式的手機上執行的連接埠供應商。  

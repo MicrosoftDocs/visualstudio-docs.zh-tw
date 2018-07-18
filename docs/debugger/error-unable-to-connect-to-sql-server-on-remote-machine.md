@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482148"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>錯誤：無法連接至遠端電腦的 SQL Server
 無法連接到 SQL Server 遠端電腦上*名稱*。 存取遭拒。 請確認您已在遠端電腦中安裝遠端偵錯工具。 如果遠端電腦不在網域中，或者 Visual Studio 是以本機帳戶執行，則遠端電腦必須具有一個與本機帳戶相同使用者名稱的帳戶和密碼。  

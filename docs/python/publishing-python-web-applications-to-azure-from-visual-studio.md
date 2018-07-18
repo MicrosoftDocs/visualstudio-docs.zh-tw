@@ -17,6 +17,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032238"
 ---
 # <a name="publishing-to-azure-app-service"></a>發佈至 Azure App Service
 

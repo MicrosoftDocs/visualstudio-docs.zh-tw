@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464348"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 擷取指定函式是否包含任何 unmanaged c + +-樣式例外狀況處理 （例如，try/catch 區塊） 的旗標。  

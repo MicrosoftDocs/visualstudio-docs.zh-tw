@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146019"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>逐步解說： 加入功能與自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。  

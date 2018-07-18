@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131959"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>大括號比對以舊版語言服務
 大括號比對，可協助開發人員追蹤需要一起發生，例如括弧和大括號的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471216"
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 偵錯資訊編譯的程式儲存在程式資料庫 (.pdb) 檔，做為可使用偵錯介面存取 (DIA) SDK Api 的符號。 所有符號[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)屬性。 `symTag`屬性指示符號的類型所定義的[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 `symIndexId`屬性是`DWORD`含有符號的每個執行個體的唯一識別碼值。  

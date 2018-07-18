@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130218"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩概觀
 本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它也介紹的概念分類和顯示項目，並說明 Vspackage 和核心編輯器如何使用文字屬性。  

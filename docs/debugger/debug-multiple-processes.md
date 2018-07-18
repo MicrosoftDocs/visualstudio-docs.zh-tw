@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478222"
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 以下是如何開始偵錯處理程序、 處理序之間切換、 中斷和繼續執行、 逐步執行來源、 停止偵錯，並終止或中斷處理序。  

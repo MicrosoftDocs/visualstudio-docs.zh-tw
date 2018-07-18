@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467952"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
 C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一種 CRT 偵錯程式庫，您必須連結[偵錯](/cpp/build/reference/debug-generate-debug-info)然後使用編譯 **/MDd**， **/MTd**，或 **/LDd**。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922293"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET 編譯器平台分析器的概觀
 

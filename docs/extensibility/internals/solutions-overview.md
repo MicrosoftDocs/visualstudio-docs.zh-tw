@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131645"
 ---
 # <a name="solutions-overview"></a>方案概觀
 方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個不同的方案檔。 方案 (.sln) 檔案是以文字為基礎和可以是放在原始檔控制之下，而且使用者之間共用。 方案使用者選項 (.suo) 檔案是二進位檔案。 如此一來，.suo 檔案不能放在原始檔控制之下，並包含使用者特定資訊。  

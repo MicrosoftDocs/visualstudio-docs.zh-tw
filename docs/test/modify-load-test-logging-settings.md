@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968190"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 
@@ -24,9 +25,9 @@ ms.lasthandoff: 04/26/2018
 
 |工作|相關主題|
 |----------|-----------------------|
-|**指定負載測試回合期間儲存記錄的頻率：**您可以指定負載測試執行時，儲存測試記錄的頻率。|-   [如何：指定儲存測試記錄的頻率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**負載測試失敗時儲存記錄：**您可以指定是否要在每次負載測試失敗時都儲存一次測試記錄。|-   [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**設定記錄檔的檔案大小上限：**您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|[如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**指定負載測試回合期間儲存記錄的頻率：** 您可以指定負載測試執行時，儲存測試記錄的頻率。|-   [如何：指定儲存測試記錄的頻率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**負載測試失敗時儲存記錄：** 您可以指定是否要在每次負載測試失敗時都儲存一次測試記錄。|-   [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**設定記錄檔的檔案大小上限：** 您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|[如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>相關工作
 

@@ -1,14 +1,14 @@
 ---
 title: JsMemoryAllocationCallback Typedef | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 511babc7-3caa-4ee5-82a2-943bbd34db8d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568728"
 ---
 # <a name="jsmemoryallocationcallback-typedef"></a>JsMemoryAllocationCallback Typedef
 使用者針對記憶體配置事件實作的回呼常式。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065591"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動開發範例
 數個 Visual C++ for Cross-Platform Mobile Development 所安裝的範本會產生完整的範例，可讓您從中學習。 此外，Windows 開發人員中心有數個範例應用程式，您可以下載並在 Visual Studio 中試用。  

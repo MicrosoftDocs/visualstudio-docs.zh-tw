@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247a152cd04a262115cbde78a7a06ad2e95f250c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572400"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
-Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以依照下列步驟進行，以為本機電腦上的 Windows 版本自動下載並更新正確的 .pdb 檔案。  
+Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以遵循下列步驟來自動下載並更新本機電腦上之 Windows 版本的正確 .*pdb* 檔案。  
   
 > [!NOTE]
 >  此設定不會影響現有的報告。 只有在指定符號伺服器之後所建立的報告會含有符號資訊。  
   
- 如需詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+ 如需詳細資訊，請參閱[指定符號 (.*pdb*) 和原始程式檔 ](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>使用 Microsoft 符號伺服器  
   
@@ -47,6 +48,6 @@ Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號�
   
      您也可以按一下省略符號按鈕 (**...**)，然後從 [瀏覽資料夾] 對話方塊選取一個目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)
+ [操作說明：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

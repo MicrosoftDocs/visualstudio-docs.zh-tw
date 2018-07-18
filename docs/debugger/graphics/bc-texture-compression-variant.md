@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474397"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的紋理上啟用區塊壓縮。  

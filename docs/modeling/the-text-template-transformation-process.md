@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951176"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字範本轉換流程接受文字範本檔做為輸入，並產生新的文字檔，做為輸出。 例如，您可以使用文字範本產生 Visual Basic 或 C# 程式碼，或您可以產生 HTML 報表。

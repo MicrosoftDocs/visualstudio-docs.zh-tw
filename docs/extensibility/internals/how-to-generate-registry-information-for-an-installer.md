@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131864"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 產生的安裝程式的登錄資訊
 RegPkg.exe 公用程式，可以用來產生 managed VSPackage 的登錄資訊清單。 資訊清單可以併入 Windows Installer 安裝程式套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。  

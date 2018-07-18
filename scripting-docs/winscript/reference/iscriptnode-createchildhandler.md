@@ -1,11 +1,11 @@
 ---
-title: "IScriptNode::CreateChildHandler |Microsoft 文件"
-ms.custom: 
+title: IScriptNode::CreateChildHandler |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptNode.CreateChildHandler
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptNode::CreateChildHandler
 ms.assetid: 4ce5eb10-1a3f-43b0-a4b7-599a397ed3a2
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729558"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
 將程式碼片段加入作為子執行個體`IScriptNode`。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099222"
 ---
 # <a name="bptype"></a>BP_TYPE
 指定中斷點是在程式碼的位置、 資料位置，還是其他類型的中斷點。  

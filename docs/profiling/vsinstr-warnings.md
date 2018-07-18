@@ -16,19 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571642"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
-下表列出 VSInstr.exe 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
+下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
 |警告編號|描述|  
 |--------------------|-----------------|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
-|**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 sn.exe 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
+|**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 *sn.exe* 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
 |**VSP2002**|在檔案 \<filename> 中找不到函式 \<funcname><br /><br /> 如果在指定的檔案中找不到函式，就會發生這個警告。|  
 |**VSP2003**|在檔案 \<filename> 中找不到任何前往函式 \<funcname> 的交互跳躍點。<br /><br /> 如果 VSInstr 無法將交互跳躍點設為空值，就會發生這個警告。 交互跳躍點用於程式碼最佳化。|  
 |**VSP2004**|必須有函式 \<funcname>，因為它含有交互跳躍點，但它已被 EXCLUDE 命令列參數排除。<br /><br /> 如果函式已透過 EXCLUDE 選項排除，但在檢測程序期間需要此函式，就會發生這個警告。 分析工具會自動包含所需的函式。|  

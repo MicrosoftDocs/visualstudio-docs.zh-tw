@@ -1,11 +1,11 @@
 ---
-title: "IPerPropertyBrowsing2::MapPropertyToPage |Microsoft 文件"
-ms.custom: 
+title: IPerPropertyBrowsing2::MapPropertyToPage |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IPerPropertyBrowsing2.MapPropertyToPage
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IPerPropertyBrowsing2::MapPropertyToPage
 ms.assetid: e6418a8e-500b-42e1-9b5a-52e6f7567f99
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728998"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
 傳回可以用來編輯這個屬性的屬性頁 CLSID。  

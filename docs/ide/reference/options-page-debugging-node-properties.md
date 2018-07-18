@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951774"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263273"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>錯誤訊息 （在 Visual Studio 中的 Office 程式開發）
   每個錯誤訊息主題都涵蓋一個訊息，並提供可能產生錯誤的原因和可行的解決方式或替代方式來解決問題。  

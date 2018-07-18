@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479802"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在執行緒檢視中搜尋執行緒
 您可以使用它的執行緒 ID 或模組字串做為搜尋準則來搜尋特定執行緒 檢視中的執行緒。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示所選取之執行緒的屬性中的執行緒樹狀結構。  

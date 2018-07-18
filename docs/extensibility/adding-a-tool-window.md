@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107877"
 ---
 # <a name="adding-a-tool-window"></a>加入工具視窗
 在本逐步解說，您會學習如何建立工具視窗，並將其整合到 Visual Studio 中，以下列方式：  

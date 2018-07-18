@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265771"
 ---
 # <a name="inside-the-editor"></a>在編輯器
 編輯器 是由不同子系統，設計用來將編輯器 中 文字 檢視和使用者介面文字模型分開的數字。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947517"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字範本具有下列安全性考量：

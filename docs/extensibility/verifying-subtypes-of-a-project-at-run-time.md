@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136825"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>在執行階段驗證專案的子類型
 自訂專案子類型而定的 VSPackage 應該包含邏輯，以尋找子類型，讓它可以執行正常失敗子型別是否不存在。 下列程序示範如何確認存在指定的子類型。  

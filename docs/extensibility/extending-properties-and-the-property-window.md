@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126067"
 ---
 # <a name="extending-properties-and-the-property-window"></a>擴充屬性和屬性視窗
 **屬性**視窗用來檢視和編輯的設計階段屬性和所選物件的事件。  

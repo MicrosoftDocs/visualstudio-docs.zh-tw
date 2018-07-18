@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579000"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 在指定的清單中，尋找擁有相符 itemspec 的項目。  

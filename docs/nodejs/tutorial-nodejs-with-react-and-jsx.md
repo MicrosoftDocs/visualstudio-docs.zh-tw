@@ -2,7 +2,7 @@
 title: 建立 Node.js 與 React 應用程式
 description: 在本教學課程中，您會使用適用於 Visual Studio 的 Node.js 工具來建立應用程式
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765839"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense 和其他支援 Node.js 的內建功能。 在適用於 Visual Studio 的本教學課程中，請從 Visual Studio 範本建立 Node.js Web 應用程式專案。 然後，請使用 React 建立簡單的應用程式。
@@ -34,15 +35,15 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 * 您必須安裝 Visual Studio 2017 和 Node.js 開發工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
 * 您必須安裝 Node.js 執行階段。
 
-    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    本教學課程已使用 8.11.2 版進行測試。
 
-    本教學課程已使用 8.9.4 版進行了測試。
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
 
 ## <a name="create-a-project"></a>建立專案
 首先，請建立 Node.js Web 應用程式專案。
@@ -88,7 +89,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     ![安裝 npm 套件](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    [輸出] 視窗會顯示安裝套件的進度。 安裝後，套件會出現在 **npm** 節點下。
+    按一下 [輸出] 視窗來查看安裝套件的進度 (選取 [顯示輸出來源] 欄位中的 [Npm])。 安裝後，套件會出現在 **npm** 節點下。
 
     專案的 *package.json* 檔案會以新的套件資訊 (包括套件版本) 進行更新。
 
@@ -98,8 +99,8 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,9 +108,9 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
     }
     ```
 
-1. 以滑鼠右鍵按一下專案中的 [npm] 節點，然後選擇 [安裝遺漏的 npm 套件]。
+1. 以滑鼠右鍵按一下專案中的 [npm] 節點，然後選擇 [更新 npm 套件]。
 
-    [輸出] 視窗會顯示安裝套件的進度。
+    按一下 [輸出] 視窗以查看安裝套件的進度。 這可能需要幾分鐘的時間，您可能無法立即查看結果。
 
     以下是安裝後顯示在 [方案總管] 中的 npm 模組。
 
@@ -133,7 +134,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 在 [新增項目] 對話方塊方塊中，選擇 [TypeScript JSX 檔案]，鍵入名稱 *app.tsx*，然後按一下 [確定]。
 
-1. 重複這些步驟來新增 *webpack-config.js*。
+1. 重複這些步驟來新增 *webpack-config.js*。 選擇 [JavaScript 檔案]，而非 TypeScript JSX 檔案。
 
 1. 重複相同的步驟，以將 *index.html* 新增至專案。 請選擇 [HTML 檔案]，而不是 JavaScript 檔案。
 
@@ -229,7 +230,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     webpack 組態程式碼會指示 Webpack 使用 TypeScript 載入器來轉換 JSX。
 
-1. 開啟 tsconfig.json，然後新增指定 TypeScript 編譯器選項的下列程式碼：
+1. 開啟 *tsconfig.json*，然後將預設程式碼取代為指定 TypeScript 編譯器選項的下列程式碼：
 
     ```json
     {
@@ -251,7 +252,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
     }
     ```
 
-    app.tsx 已指定為原始程式檔。
+    *app.tsx* 已指定為原始程式檔。
 
 ## <a name="transpile-the-jsx"></a>轉換 JSX
 
@@ -331,7 +332,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     ![設定中斷點](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl + F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
+1. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl**+**F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
 
     應用程式會在新的瀏覽器索引標籤中開啟。
 
@@ -346,7 +347,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
     當 [DOM 總管] 和 JavaScript 主控台在 Visual Studio 中開啟時，您就知道偵錯工具已正確附加。 這些偵錯工具類似於 Chrome Developer Tools 和 Edge 的 F12 工具。
 
     > [!NOTE]
-    > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 作業在目前狀態中不合法。」 然後在將 Chrome 啟動為偵錯模式之前，先使用 Task Manager 關閉 Chrome 的所有執行個體。 Chrome 擴充功能可能會執行，並防止完整的偵錯模式。
+    > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 作業在目前狀態中不合法。請在將 Chrome 啟動為偵錯模式之前，先使用工作管理員關閉 Chrome 的所有執行個體。 Chrome 擴充功能可能會執行，並防止完整的偵錯模式。
 
 1. 因為已執行具有中斷點的程式碼，所以請重新整理瀏覽器頁面以叫用中斷點。
 
@@ -354,7 +355,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     根據您的環境和瀏覽器狀態而定，您可能會叫用 *app-bundle.js* 的中斷點，或它在 *app.tsx* 中對應的位置。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
 
-    * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序] 來附加偵錯工具。 然後藉由從 [方案總管] 開啟 [指令碼文件] > [app.tsx] 來開啟動態產生的 *app.tsx* 檔案，接著設定中斷點並在瀏覽器中重新整理頁面。
+    * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序] 來附加偵錯工具。 然後藉由從 [方案總管] 開啟 [指令碼文件] > [app.tsx] 來開啟動態產生的 *app.tsx* 檔案，接著設定中斷點並在瀏覽器中重新整理頁面 (在允許中斷點的程式碼行中設定繼點，例如 `return` 陳述式或 `var` 宣告)。
 
         或者，如果您要在 *app.tsx* 內中斷程式碼，但而無法這樣做，請嘗試在 *app.tsx* 中使用 `debugger;` 陳述式，或改為在 Chrome 開發人員工具中設定中斷點。
 

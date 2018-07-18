@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927096"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 若要最大化的可用性和可維護性問題，會報告基本設計方針規則會展開，Microsoft 擴充設計方針規則規則集。 額外的強調重點是命名指導方針。 您應該考慮包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行最高標準來撰寫容易維護的程式碼。

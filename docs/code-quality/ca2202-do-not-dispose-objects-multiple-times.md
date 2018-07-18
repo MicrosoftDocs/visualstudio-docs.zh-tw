@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920145"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202：不要多次處置物件
 |||

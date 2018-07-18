@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141206"
 ---
 # <a name="using-fonts-and-colors"></a>使用字型和色彩
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]支援使用顯示文字的字型和色彩。  

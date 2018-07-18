@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475505"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的處理序中的節點[處理序檢視](../debugger/processes-view.md)。 若要顯示此對話方塊中，焦點移至**處理程序**檢視 視窗中。 然後選擇 **尋找處理序**從**搜尋**功能表。  

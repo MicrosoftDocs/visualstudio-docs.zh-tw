@@ -10,23 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748796"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 「CPU 使用量」工具顯示 CPU 花時間執行 Visual C++、Visual C#/Visual Basic 和 JavaScript 程式碼的地方。 從 Visual Studio 2015 Update 1 開始，您不需要離開偵錯工具，就可以看到依函式的 CPU 使用量明細。 您可以在偵錯時開啟和關閉 CPU 分析，並檢視執行停止時的結果，例如中斷點。  
   
-若要執行和管理診斷工作階段，您有幾個選項可以採用。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行「CPU 使用量」 工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Microsoft Store 安裝的應用程式。 如需詳細資訊，請參閱[搭配或不搭配偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+若要執行和管理診斷工作階段，您有幾個選項可以採用。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行「CPU 使用量」 工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Microsoft Store 安裝的應用程式。 如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 此處，我們會說明如何收集並分析發行組建的 CPU 使用量。 若要在偵錯期間分析 CPU 使用量，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。 
 
 > [!NOTE]
 > 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
+##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料  
   
 1.  在 Visual Studio 中，將方案組態設定為 [發行] 並選擇部署目標。  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 05/17/2018
 |**CPU 總計 (%)**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，函式的呼叫和該函式所呼叫的函式所使用的應用程式 CPU 活動百分比。 請注意，這與 [CPU 使用率]  時間軸圖表不同，後者會將時間範圍內的應用程式活動總計與可用的 CPU 容量總計進行比較。|  
 |**自我 CPU (%)**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，函式的呼叫所使用的應用程式 CPU 活動百分比 (不包括該函式所呼叫的函式活動)。|  
 |**CPU 總計 (毫秒)**|在選取的時間範圍內，函式的呼叫和該函式所呼叫的函式所花費的毫秒數。|  
-|**自我 CPU (毫秒)**|在選取的時間範圍內，函式的呼叫和該函式所呼叫的函式所花費的毫秒數。|  
+|**自我 CPU (毫秒)**|在選取的時間範圍內，函式的呼叫和該函式所呼叫的函式所花費的毫秒數，不包括函式所呼叫之函式的活動。|  
 |**模組**|內含函式的模組名稱，或內含 [外部程式碼] 節點中的函式的模組數目。|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式  

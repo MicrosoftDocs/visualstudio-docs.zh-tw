@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921097"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：連接至服務中的資料
 

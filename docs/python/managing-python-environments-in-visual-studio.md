@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 05/07/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1ba3902fde77e297148c2006f89dd61bca1e902b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342745"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
 Python「環境」是您執行 Python 程式碼的內容，其中包含全域、虛擬和 Conda 環境。 環境是由解譯器、程式庫 (通常是 Python 標準程式庫) 及一組已安裝的套件所組成。 這些元件共同決定有效的語言建構和語法、您可存取的作業系統功能，以及您可以使用的套件。
 
-在 Windows 上的 Visual Studio 中，您可以在本文所描述的 [Python 環境視窗](#the-python-environments-window)中，管理這些環境並選取其中之一作為新專案的預設環境。 對於任何給定的專案，您也可以選取特定的環境，而不使用預設的環境。
+在 Windows 上的 Visual Studio 中，您可以在本文所描述的 [Python 環境視窗](#the-python-environments-window)中，管理這些環境並選取其中之一作為新專案的預設環境。 對於任何指定的專案，您也可以[選取特定的環境](selecting-a-python-environment-for-a-project.md)，而不使用預設的環境。
 
 **注意**：如果您剛接觸 Visual Studio 中的 Python，請參閱下列文章以了解必要的背景：
 
@@ -30,7 +31,7 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 另請注意，針對僅開啟為資料夾 (使用 [檔案] > [開啟] > [資料夾] 命令) 的 Python 程式碼，您無法管理其環境。 您可以改為[從現有的程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)，即可享受 Visual Studio 的環境功能。
 
-如果您想要在環境中安裝套件，請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。
+如果您想要在環境中安裝套件，請參閱[套件索引標籤參考](python-environments-window-tab-reference.md#packages-tab)。
 
 ## <a name="types-of-environments"></a>環境的類型
 
@@ -55,9 +56,10 @@ Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 
 
 若要查看 Conda 環境儲存所在的 Conda 版本和其他資訊，請在 Anaconda 的命令提示字元中 (亦即 Anaconda 所在路徑的命令提示字元) 執行 `conda info`：
 
-```bash
+```cli
 conda info
 ```
+
 您的 Conda 環境資料夾隨即出現，如下所示：
 
 ```output
@@ -85,17 +87,18 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 ![[Python Environments (Python 環境)] 視窗](media/environments-default-view.png)
 
-以粗體顯示的預設環境是 Python 3.6，Visual Studio 用它處理所有的新專案。 所有列出的環境，無論任何類型，都可以用為預設值。
+Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/) 來識別使用登錄來安裝的環境。 如果在清單中沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
 
-視窗下半部的命令適用於所選的解譯器，如您所見，它是 `C:\Python36-32` 中的特定安裝 (粗體的預設環境是 Anaconda 安裝的一部分)。 如果沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
+在清單中選取環境，會在 [概觀] 索引標籤上顯示該環境的各種屬性與指令。例如，您在上圖中可見，解譯器的位置是 `C:\Python36-32`。 使用環境清單下的下拉式清單，切換到不同的索引標籤，例如 [套件] 和 [IntelliSense]。 這些索引標籤描述於 [Python 環境視窗索引標籤參考](python-environments-window-tab-reference.md)。
 
-在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 (在 Visual Studio 2017 15.5 版和較舊版本中會出現另一個控制項，重新整理該環境的 IntelliSense 資料庫。 如需資料庫的詳細資料，請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
+選取環境不會以任何方式啟動它。 在清單中以粗體顯示的預設環境，是目前已啟動的環境，Visual Studio 會用於任何新的專案。 若要啟用不同的環境，請使用 [將此設定為新專案的預設環境] 命令。 在專案的內容中，您一律可以啟用不同的環境。 如需詳細資訊，請參閱[選取專案的環境](selecting-a-python-environment-for-a-project.md)。
 
-環境清單下方是 [概觀]、[套件] 和 [IntelliSense] 選項的下拉式選取器，如 [Python 環境視窗參考](python-environments-window-tab-reference.md)中所述。 此外，如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用：
+在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 (在 Visual Studio 2017 15.5 版和較舊版本中會出現另一個控制項，重新整理該環境的 IntelliSense 資料庫。 如需資料庫的詳細資料，請參閱[環境視窗索引標籤參考](python-environments-window-tab-reference.md#intellisense-tab)。)
 
-![[Python Environments (Python 環境)] 視窗展開檢視](media/environments-expanded-view.png)
-
-您可在上圖中看到這部特定電腦上的完整環境清單，以及建立環境的其他命令。
+> [!Tip]
+> 如果您將 [Python 環境] 視窗展開至足夠寬度，您便可以較完整地檢視環境，您可能會發現更方便使用。
+>
+> ![[Python Environments (Python 環境)] 視窗展開檢視](media/environments-expanded-view.png)
 
 > [!Note]
 > 雖然 Visual Studio 會遵守「系統-站台-套件」選項，但未提供從 Visual Studio 內變更它的方式。
@@ -115,7 +118,27 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 >
 > 不過，如果您使用檔案系統以手動方式移動解譯器和其環境時，Visual Studio 不會知道新的位置。 如需詳細資訊，請參閱[移動解譯器](installing-python-interpreters.md#moving-an-interpreter)。
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>修正無效的環境
+
+若 Visual Studio 找到環境的登錄項目，但解譯器的路徑無效，[Python 環境] 視窗就會以有刪除線的字型顯示名稱：
+
+![顯示無效環境的 [Python 環境] 視窗](media/environments-invalid-entry.png)
+
+若要修正您想保留的環境，請先嘗試使用其安裝程式的**修復**流程。 例如，標準 Python 3.x 的安裝程式即包含該選項。
+
+若要修正沒有修復選項的環境，或要移除無效的環境，請直接使用下列步驟修改登錄。 Visual Studio 會在您對登錄進行變更時，自動更新 [Python 環境] 視窗。
+
+1. 執行 `regedit.exe`。
+1. 若是 32 位元解譯器，請瀏覽到 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`；若是 64 位元解譯器，則請瀏覽到 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`。 若是 IronPython，請改為尋找 `IronPython`。
+1. 展開符合發佈的節點，例如 CPython 為 `PythonCore`，Anaconda 為 `ContinuumAnalytics`。 若是 IronPython，請展開版本號碼節點。
+1. 檢查 `InstallPath` 節點下的值：
+
+    ![一般 CPython 安裝的登錄項目](media/environments-registry-entries.png)
+
+    - 若環境仍存在於您的電腦上，請將 `ExecutablePath` 的值變更為正確位置。 如有必要，也請修正 `(Default)` 和 `WindowedExecutablePath` 值。
+    - 若環境不再存在於您的電腦上，而您想要從 [Python 環境] 視窗中予以移除，請刪除 `InstallPath` 的父節點，如上圖中的 `3.6`。
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>手動識別現有的環境
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467284"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 擷取表示符號是否與對應的旗標*定義範圍符號*標記元件在編譯 c + + AMP 加速器的程式碼指標變數。 定義範圍符號就是位址的範圍變數的位置。  

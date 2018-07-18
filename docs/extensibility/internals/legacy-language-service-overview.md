@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131733"
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 語言服務提供可讓您實作特定的編輯器支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能。 Managed Package Framework (MPF) 語言服務類別提供常用的功能和部分支援其他功能的完整支援。  

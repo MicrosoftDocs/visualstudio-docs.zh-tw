@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139860"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者經驗指導方針
 Visual Studio 使用者經驗指導方針適用於 Visual studio 中設計的新功能的任何人。 這些指導方針包含常見的使用者模型和互動模式的相關資訊，因此新的使用者介面 (UI) 的設計工具可以建立會順暢且一致的開發環境中的使用者經驗。  

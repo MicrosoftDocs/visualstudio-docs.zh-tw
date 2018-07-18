@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100269"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 這個介面提供的存取權，擁有物件的位址的處理序的識別碼由這個介面。  

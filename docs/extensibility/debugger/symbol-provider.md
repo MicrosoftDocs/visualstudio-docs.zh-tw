@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126163"
 ---
 # <a name="symbol-provider"></a>符號提供者
 運算式評估工具實作必須存取以便評估變數和運算式語言編譯器所產生的符號偵錯資訊。 它會使用介面的符號提供者 (SP)，也稱為符號處理常式。  

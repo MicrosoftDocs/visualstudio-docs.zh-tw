@@ -1,16 +1,16 @@
 ---
-title: "實作智慧主機協助程式介面 | Microsoft Docs"
-ms.custom: 
+title: 實作智慧主機協助程式介面 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571518"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>實作智慧主機協助程式介面
 [IDebugDocumentHelper 介面](../winscript/reference/idebugdocumenthelper-interface.md)介面可大幅簡化建立智慧主機以進行主動式偵錯的工作，因為它提供智慧裝載所需的許多介面的實作。  

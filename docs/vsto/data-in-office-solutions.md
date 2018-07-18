@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263450"
 ---
 # <a name="data-in-office-solutions"></a>在 Office 方案中的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。  

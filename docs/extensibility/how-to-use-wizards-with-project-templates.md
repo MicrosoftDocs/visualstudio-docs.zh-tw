@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136090"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用精靈
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  

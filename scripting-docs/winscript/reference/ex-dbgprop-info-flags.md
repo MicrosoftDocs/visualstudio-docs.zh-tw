@@ -1,11 +1,11 @@
 ---
-title: "EX_DBGPROP_INFO_FLAGS |Microsoft 文件"
-ms.custom: 
+title: EX_DBGPROP_INFO_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - EX_DBGPROP_INFO_FLAGS
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - EX_DBGPROP_INFO_FLAGS
 ms.assetid: ee309dfe-9432-4dff-8756-7a8d677f9dcc
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640898"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 用來指定`ExtendedDebugPropertyInfo`欄位。  

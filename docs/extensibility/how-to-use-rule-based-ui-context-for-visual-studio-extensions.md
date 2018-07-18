@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133704"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 擴充功能以規則為基礎的 UI 內容
 Visual Studio 可讓載入 Vspackage 時，某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不是非常精細的更細緻，離開延伸模組作者沒有其他選擇，但挑選可用的 UI 內容點之前啟動他們真的想載入 VSPackage。 如需已知 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  

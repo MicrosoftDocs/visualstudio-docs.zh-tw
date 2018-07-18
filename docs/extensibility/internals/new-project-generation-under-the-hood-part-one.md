@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133756"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生： 在幕後，第一部
 您曾經想過有關如何建立您自己的專案類型嗎？ 不知道實際發生的狀況時建立新的專案？ 讓我們看一下實際上並查看實際狀況。  

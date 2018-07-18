@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135062"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>加入項目來加入新項目對話方塊
 新增項目到的程序**加入新項目**對話方塊開頭的登錄機碼。 AddItemTemplates > 一節中所示的下列登錄項目，包含可在哪些項目中的目錄名稱與路徑**加入新項目**放 對話方塊。  

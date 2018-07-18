@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473195"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制訊息檢視
 使用 Spy + + 中，您有相當大的控制權的內容[訊息檢視](../debugger/messages-view.md)視窗。 您可以[啟動和停止](../debugger/how-to-start-and-stop-the-message-log-display.md)訊息顯示在任何時間，而且您可以指定：  

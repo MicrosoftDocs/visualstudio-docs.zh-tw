@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134028"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>在舊版語言服務中的成員完成
 IntelliSense 成員完成會顯示一份可能的成員，例如類別、 結構、 列舉型別或命名空間的特定範圍的工具提示。 例如，在 C# 中，如果使用者輸入"this"，後面接著句號，類別或結構目前範圍的所有成員的清單會以清單，使用者可以從中選取。  

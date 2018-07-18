@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468459"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 擷取指定的符號是否參考 managed 程式碼的旗標。  

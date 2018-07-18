@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142785"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (來源控制 VSPackage)
 原始檔控制封裝 SDK 提供的指導方針建立 VSPackage，允許將他或她原始檔控制功能與整合原始檔控制實施者[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。 VSPackage 是 COM 元件，通常會視需要而載入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 為基礎的服務，其登錄項目中的封裝會通告。 每個 VSPackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常會使用所提供的服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 和 proffers 自己的某些服務。  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572604"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 下表說明在建立期間指派給每個項目的中繼資料。 每個範例都使用了下列項目宣告，以在專案中包含 `C:\MyProject\Source\Program.cs` 檔案。  

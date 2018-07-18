@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481953"
 ---
 # <a name="window-menu-commands"></a>視窗功能表命令
 **視窗** 功能表提供管理 Spy + + 視窗的命令。  

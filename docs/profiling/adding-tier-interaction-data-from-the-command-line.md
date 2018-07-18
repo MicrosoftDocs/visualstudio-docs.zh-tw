@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548657"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
 
@@ -79,7 +80,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
     vsperfclrenv /off
     ```
 
-如需詳細資訊，請參閱[對獨立應用程式進行分析](../profiling/command-line-profiling-of-stand-alone-applications.md)。
+如需詳細資訊，請參閱[分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)。
 
 ## <a name="profile-services"></a>分析服務
 
@@ -141,9 +142,9 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 如需詳細資訊，請參閱下列其中一個主題：
 
-[對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+[分析服務](../profiling/command-line-profiling-of-services.md)
 
 ## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 加入階層互動資料
 
@@ -155,4 +156,4 @@ VSPerfASPNETCmd 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../c
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-如需 VSPerfASPNETCmd 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站程式碼剖析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
+如需 VSPerfASPNETCmd 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。

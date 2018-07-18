@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447813"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在編輯器中變更字型和顏色
 在程式碼編輯器的 [顯示項目] 中，您可以變更預設字體、調整字型大小，亦可變更各種文字的前景和背景色彩。 當變更字型設定時，請注意下列資訊：

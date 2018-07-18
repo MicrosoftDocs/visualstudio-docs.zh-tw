@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127229"
 ---
 # <a name="enumerators"></a>列舉值
 此區段會列出原始檔控制外掛程式必須知道原始檔控制外掛程式 API 中的列舉值資料型別。  

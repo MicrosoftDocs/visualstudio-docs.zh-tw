@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135918"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 進行偵錯的協助程式
 這些函式和宣告是 c + + 中實作偵錯引擎，運算式評估工具，符號提供者的全域 helper 函式。  
@@ -178,7 +179,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|設為非零，表示支援的設定資料中的變更時的中斷點。|  
 |metricDisassembly|設定為非零，表示支援反組譯碼清單的生產環境。|  
 |metricDumpWriting|設為非零，表示傾印寫入 （傾印至輸出裝置記憶體） 的支援。|  
-|metricENC|設定為非零，表示支援編輯後繼續。 **注意：**自訂偵錯引擎應該永遠不會將此設定，或應該一律將它設定為 0。|  
+|metricENC|設定為非零，表示支援編輯後繼續。 **注意：** 自訂偵錯引擎應該永遠不會將此設定，或應該一律將它設定為 0。|  
 |metricExceptions|設為非零，表示支援的例外狀況。|  
 |metricFunctionBP|設為非零，表示具名中斷點 （中斷呼叫某些函式名稱時的中斷點） 的支援。|  
 |metricHitCountBP|設為非零，表示支援"hit 點"中斷點 （叫用特定次數之後，才會觸發中斷點） 的設定。|  
@@ -193,7 +194,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|將此設為非零，表示程式提供者應該一律會載入在本機的。|  
 |metricEngineCanWatchProcess|將此設為非零，表示偵錯引擎將會監視程序事件，而程式的提供者。|  
 |metricRemoteDebugging|將此設為非零，表示支援遠端偵錯。|  
-|metricEncUseNativeBuilder|將此設為非零，表示編輯後繼續的管理員應該使用偵錯引擎的 encbuild.dll 來建置編輯後繼續的。 **注意：**自訂偵錯引擎應該永遠不會將此設定，或應該一律將它設定為 0。|  
+|metricEncUseNativeBuilder|將此設為非零，表示編輯後繼續的管理員應該使用偵錯引擎的 encbuild.dll 來建置編輯後繼續的。 **注意：** 自訂偵錯引擎應該永遠不會將此設定，或應該一律將它設定為 0。|  
 |metricLoadUnderWOW64|將此設為非零，表示在 WOW 下偵錯項目處理序中應該載入的偵錯引擎，當偵錯 64 位元處理序中;否則，偵錯引擎會載入 Visual Studio 處理序 （這在 WOW64 下執行） 中。|  
 |metricLoadProgramProviderUnderWOW64|將此設為非零，表示在 WOW; 下的 64 位元處理序進行偵錯時程式提供者應該會在偵錯項目處理序中載入否則，它會載入 Visual Studio 處理序中。|  
 |metricStopOnExceptionCrossingManagedBoundary|將此設為非零，表示如果跨越界限的 managed/unmanaged 程式碼擲回未處理的例外狀況，應該停止處理程序。|  
@@ -265,7 +266,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[登錄機碼]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本 root]*|Visual Studio 版本 (例如， `7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用 **/rootsuffix**切換至**devenv.exe**。 VSIP，對於此修飾詞通常是**Exp**，因此版本根為，比方說，8.0Exp。|  
-|*[度量 root]*|這可能是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：**到應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須反映在登錄中的版本。|  
+|*[度量 root]*|這可能是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：** 到應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須反映在登錄中的版本。|  
 |*[度量 type]*|要寫入標準的類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些所有定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
 |*[度量]*|若要將度量指派值的項目名稱。 實際的組織的度量取決於指標的類型。|  
 |*[指標值]*|指定度量的值。 此值應該有 （字串、 數值、 等） 的類型取決於度量。|  

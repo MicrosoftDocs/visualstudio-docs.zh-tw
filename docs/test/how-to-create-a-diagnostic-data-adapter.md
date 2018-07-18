@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844738"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
@@ -92,13 +93,13 @@ ms.lasthandoff: 04/26/2018
 
 5.  將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> 新增至您診斷資料配接器的類別，以將其識別為診斷資料配接器，並且將 **Company**、**Product** 和 **Version** 取代為診斷資料配接器的適當資訊：
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 屬性加入至類別，而將參數取代為診斷資料配接器的適當資訊：
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

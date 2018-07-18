@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128084"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 使用 CreateExpInstance 公用程式建立時，重設，或刪除的 Visual Studio 的實驗執行個體。 偵錯及測試 Visual Studio 擴充功能，而不需要變更基礎產品，您可以使用實驗性執行個體。  

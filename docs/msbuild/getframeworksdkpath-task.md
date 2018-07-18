@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578677"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568665"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
 本逐步解說置於工具視窗的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 捷徑功能表上的命令的行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，在.vsct 檔案中指定它並顯示以回應按一下滑鼠右鍵。  

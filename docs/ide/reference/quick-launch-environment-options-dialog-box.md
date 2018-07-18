@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946776"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 您可以使用 [快速啟動] 快速搜尋選項、範本、功能表這類 IDE 資產，並對其執行動作。 但無法使用 [快速啟動] 來搜尋程式碼和符號。 [快速啟動] 搜尋方塊位於功能表列的右上角，而且選擇 Ctrl+Q 鍵即可存取。 只要在方塊中輸入搜尋字串即可。 若要搜尋包含 @ 的字串，請使用 ”@@”。

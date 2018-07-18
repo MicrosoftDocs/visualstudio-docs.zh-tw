@@ -1,14 +1,14 @@
 ---
-title: "IActiveScriptProfilerControl 介面 |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptProfilerControl 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1448b394-9743-41b5-8eb9-5026a45773a4
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724668"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl 介面
 實作支援程式碼剖析的指令碼引擎。 一般而言，該物件會實作`IActiveScriptProfilerControl`也會實作[IActiveScript](../../winscript/reference/iactivescript.md)介面。 在此情況下，您可以取得的控制代碼`IActiveScriptProfilerControl`介面，藉由呼叫`IUnknown::QueryInterface`物件上的方法。 介面會提供必要的方法，如停止和啟動指令碼引擎上的分析。  

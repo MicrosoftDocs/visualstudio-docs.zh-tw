@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134122"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制設定的詳細資料
 若要實作原始檔控制，您需要正確地設定您的專案系統或編輯器，請執行下列：

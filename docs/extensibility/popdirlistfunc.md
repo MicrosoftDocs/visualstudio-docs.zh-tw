@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142182"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄以及 （選擇性） 若要找出哪些是原始檔控制下的檔案名稱的集合。  

@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::InterruptScriptThread |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::InterruptScriptThread |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.InterruptScriptThread
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_InterruptScriptThread
 ms.assetid: 2304d035-6d39-4811-acd3-8a9640fdbef6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641848"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 會中斷執行的執行指令碼中的執行緒 （事件接收器、 立即執行或巨集引動）。 這個方法可以用來終止卡 （例如，在無限迴圈） 的指令碼。 可以從非基底執行緒中呼叫不會導致非基本圖說文字主機物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)方法。  

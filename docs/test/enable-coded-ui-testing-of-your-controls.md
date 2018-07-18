@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751750"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
 請實作自動程式化 UI 測試架構的支援，讓您的控制項能夠進行測試。 您可以用累加方式加入不斷增加的支援層級。 請從支援錄製和播放以及屬性驗證開始。 然後，以此為建置基礎，讓自動程式化的 UI 測試產生器能夠辨識控制項的自訂屬性。 請提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>藉由實作協助工具，支援錄製和播放以及屬性驗證
 
 自動程式化 UI 測試產生器會擷取它在錄製期間遇到之控制項的相關資訊，然後產生程式碼，以重新執行該工作階段。 如果您的控制項不支援協助工具，自動程式化 UI 測試產生器則會使用螢幕座標來擷取動作 (例如滑鼠點按)。 播放測試時，所產生的程式碼就會在相同的螢幕座標中發出這些動作。 如果在播放測試時，您的控制項出現在螢幕上的不同位置，所產生的程式碼將無法執行該動作。 若未實作控制項的協助工具，如果在不同螢幕組態、不同環境中或 UI 配置變更時播放測試，您可能會看到測試失敗。
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  不過，如果您實作協助工具，當自動程式化 UI 測試產生器錄製測試時，會使用該協助工具來擷取控制項的相關資訊。 然後，當您執行測試時，即使控制項是在使用者介面中的其他地方，所產生的程式碼還是會對您的控制項重新執行這些事件。 測試作者也可以使用控制項的基本屬性來建立判斷提示。
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>支援錄製和播放、屬性驗證，以及巡覽 Windows 表單控制項
  依照下列程序的概述，以及 <xref:System.Windows.Forms.AccessibleObject> 的詳細說明，為您的控制項實作協助工具。
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  實作衍生自 <xref:System.Windows.Forms.Control.ControlAccessibleObject> 的類別，並覆寫 <xref:System.Windows.Forms.Control.AccessibilityObject%2A> 屬性，以傳回您的類別物件。
 
@@ -74,11 +75,11 @@ ms.lasthandoff: 04/26/2018
 
 為記錄和播放以及屬性驗證實作基本支援之後，就可以藉由實作 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 外掛程式，讓自動程式化 UI 測試能夠使用控制項的自訂屬性。 例如，下列程序所建立的屬性提供者，能夠讓自動程式化 UI 測試存取圖表控制項的 CurveLegend 子控制項的狀態屬性：
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>支援自訂屬性驗證
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. 覆寫曲線圖例可存取物件的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 屬性，以描述字串來傳遞豐富的屬性值。 以分號 (;) 分隔多個值。
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>加入用來存取控制項的特定類別
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. 實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> 的類別，並將控制項的類型新增至建構函式中的搜尋屬性集合。
 
@@ -162,7 +163,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-support-intent-aware-actions"></a>支援意圖感知動作
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
 1. 實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 的動作篩選類別，覆寫下列屬性：<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>。
 

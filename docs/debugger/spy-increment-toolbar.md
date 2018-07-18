@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477377"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具列
 此工具列會出現在 Spy + + 中的功能表列底下。 若要顯示或隱藏工具列上**檢視**功能表上，按一下 **工具列**。  

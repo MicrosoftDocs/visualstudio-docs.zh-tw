@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953612"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 下列一般指導方針可能有幫助您在產生程式碼或其他應用程式資源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它們不被固定的規則。

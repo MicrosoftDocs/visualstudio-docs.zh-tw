@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953371"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以定義模型工具：

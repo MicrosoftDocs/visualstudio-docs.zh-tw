@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692297"
 ---
-# <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
+# <a name="concurrency-visualizer-markers"></a>並行視覺化檢視標記
 在並行視覺化檢視中，標記是代表應用程式中事件的圖示。  一般而言，應用程式會產生這些事件，以指定應用程式中的階段或發生次數。  應用程式或程式庫和應用程式使用的執行階段，可以產生事件。  
   
 ## <a name="kinds-of-markers"></a>標記類型  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
  產生標記的每個執行緒都有不同的時間軸通道。  負責產生標記事件的執行緒識別碼會顯示在標記通道的描述旁邊。  標記通道左邊顯示的識別碼符合目前處理序中另一個執行緒的 ID。  
   
 ## <a name="marker-importance"></a>標記重要性  
- 標記可以有其中一種四種重要性層級︰低、標準、高和重要。  您可以根據重要性層級篩選標記的來源。  例如，如果您只想看到來自特定來源有一般或重要重要性的標記，您可以在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中設定篩選。標記的重要性會顯示在其工具提示和[標記報告](../profiling/markers-report.md)中。  
+ 標記可以有其中一種四種重要性層級︰低、標準、高和重要。  您可以根據重要性層級篩選標記的來源。  例如，如果您只想看到來自特定來源有一般或重要重要性的標記，您可以在[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)對話方塊中設定篩選。 標記的重要性會顯示在其工具提示和[標記報告](../profiling/markers-report.md)中。  
   
 ## <a name="marker-category"></a>標記分類  
  標記分類表示一組來自相同來源的標記事件。  並行視覺化檢視使用色彩來區別不同分類的旗標和範圍。 您可以設定並行視覺化檢視以使用分類來篩選來自特定事件提供者的標記事件。  使用 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊可設定篩選。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="markers-from-eventsource"></a>來自 EventSource 的標記  
  並行視覺化檢視也可以顯示 EventSource 事件。  如需詳細資訊，請參閱[將 EventSource 事件顯示為標記](../profiling/visualizing-eventsource-events-as-markers.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [旗標標記](../profiling/flag-markers.md)   
  [訊息標記](../profiling/message-markers.md)   
  [範圍標記](../profiling/span-markers.md)   

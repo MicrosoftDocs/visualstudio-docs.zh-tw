@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471514"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  

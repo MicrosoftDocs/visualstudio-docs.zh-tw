@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144746"
 ---
 # <a name="windows-installer-basics"></a>Windows 安裝程式的基本概念
 Windows Installer 安裝和解除安裝應用程式或軟體產品，使用者的電腦上執行這些工作單位稱為 （有時稱為 WICs 或只是元件） 的 Windows Installer 元件。 GUID 識別每個 WIC，也就是安裝和參考計數，若是使用 Windows Installer 設定的基本單位。  

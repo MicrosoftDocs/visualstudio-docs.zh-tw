@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263486"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 方案的部署資訊清單
   部署資訊清單是 XML 檔案，說明 Office 方案的部署設定，以及識別目前的應用程式版本。  

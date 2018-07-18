@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132927"
 ---
 # <a name="options-and-options-pages"></a>選項與選項 頁面
 按一下**選項**上**工具**功能表開啟**選項** 對話方塊。 在此對話方塊中的選項合稱為 [選項] 頁。 樹狀目錄控制項導覽窗格中的包含的選項類別，而且每個類別目錄選項頁面。 當您選取的頁面時，它的選項會出現在右窗格中。 這些頁面可讓您變更判斷 VSPackage 的狀態選項的值。  

@@ -1,18 +1,18 @@
 ---
-title: "JsRuntimeAttributes 列舉 | Microsoft Docs"
-ms.custom: 
+title: JsRuntimeAttributes 列舉 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsRuntimeAttributes
 helpviewer_keywords:
 - JsRuntimeAttributes enumeration
 ms.assetid: f76d82e9-a695-4d6a-96c1-b3a4d27fed68
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569058"
 ---
 # <a name="jsruntimeattributes-enumeration"></a>JsRuntimeAttributes 列舉
 執行階段的屬性。  

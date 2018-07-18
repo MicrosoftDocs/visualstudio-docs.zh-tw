@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568620"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在目前的內容中暫停追蹤。  
@@ -36,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
  如已暫停追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：**FileTracker.h  
+ **標頭：** FileTracker.h  
   
 ## <a name="see-also"></a>請參閱  
  [ResumeTracking](../msbuild/resumetracking.md)

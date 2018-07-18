@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135906"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支援下列服務。 有些封裝提供它們自己這裡未列出的服務 — 例如，語言服務並沒有單一的服務 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  

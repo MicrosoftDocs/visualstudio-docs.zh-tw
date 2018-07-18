@@ -1,13 +1,13 @@
 ---
-title: "JsSetContextData 函式 | Microsoft Docs"
-ms.custom: 
+title: JsSetContextData 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be90aa6a-b001-4a6f-90c5-c2135e913be0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568928"
 ---
 # <a name="jssetcontextdata-function"></a>JsSetContextData 函式
 設定 JsrtContext 的內部資料。  

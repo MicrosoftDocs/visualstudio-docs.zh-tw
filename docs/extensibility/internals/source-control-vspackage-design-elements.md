@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130217"
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 設計元素
 此章節的主題會概述結構 VSPackage 必須實作深層整合原始檔控制。 它也會列出的介面可以實作服務的原始檔控制 VSPackage，和原始檔控制 VSPackage 的介面和服務可以使用從其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]元件來支援其來源控制模型和功能。  

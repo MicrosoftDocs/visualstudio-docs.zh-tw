@@ -31,6 +31,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472574"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>啟用 Visual C++ 的偵錯功能 (/D_DEBUG)
 在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，偵錯功能，當您編譯您的程式使用的符號時，會啟用判斷提示之類 **_DEBUG**定義。 您可以定義 **_DEBUG**中有兩種：  

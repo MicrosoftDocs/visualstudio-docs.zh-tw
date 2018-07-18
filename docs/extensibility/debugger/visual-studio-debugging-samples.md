@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125433"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 偵錯範例
 兩個範例示範如何擴充 Visual Studio 偵錯工具使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

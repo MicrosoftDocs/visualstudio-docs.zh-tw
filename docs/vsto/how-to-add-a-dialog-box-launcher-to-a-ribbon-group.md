@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548384"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>如何： 在功能區群組中加入對話方塊啟動程式
   您可以加入對話方塊啟動程式功能區上的任何群組。 對話方塊啟動是小型圖示出現在群組中。 使用者按一下此圖示以開啟相關的對話方塊或提供更多的選項與群組相關聯的工作窗格。  

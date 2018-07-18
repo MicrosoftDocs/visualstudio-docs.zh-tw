@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143461"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 項目
 `VisibilityItem`元素會決定的命令和工具列靜態的可見性。 每個項目會識別命令或功能表上，以及相關聯的命令 UI 內容。 Visual Studio 會偵測命令、 功能表和工具列和其可見性，而不必載入定義它們的 Vspackage。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法來判斷命令 UI 內容是否為作用中。  

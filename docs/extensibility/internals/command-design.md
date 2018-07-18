@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132167"
 ---
 # <a name="command-design"></a>命令的設計
 當您將命令加入 VSPackage 時，您必須指定所在出現、 時，以及它的方式處理。  

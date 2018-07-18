@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704742"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。

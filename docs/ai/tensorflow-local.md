@@ -1,7 +1,7 @@
 ---
-title: "在本機定型 TensorFlow 模型"
-description: "在適用於 Visual Studio 的 AI 工具本機執行 TensorFlow 模型"
-keywords: "AI, Visual Studio, TensorFlow, 本機"
+title: 在本機定型 TensorFlow 模型
+description: 在適用於 Visual Studio 的 AI 工具本機執行 TensorFlow 模型
+keywords: AI, Visual Studio, TensorFlow, 本機
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708929"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130540"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 執行文件資料表 (RDT) 維護的計數為開啟的文件和它們的任何編輯鎖定。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件。 修改多個檔案的圖形化使用者介面的設計工具通常會使用這項功能。  

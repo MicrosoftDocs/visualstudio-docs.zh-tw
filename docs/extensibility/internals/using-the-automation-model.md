@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136532"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
 VSPackage 連接自動化之後，您可以取得的屬性和方法的呼叫<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>物件，傳遞字串，表示您想要擷取的物件。  

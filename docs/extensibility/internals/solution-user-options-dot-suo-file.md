@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130843"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項 (。Suo) 檔案
 方案使用者選項 (.suo) 檔案包含每個使用者方案選項。 這個檔案不應該簽入原始程式碼控制項中。  

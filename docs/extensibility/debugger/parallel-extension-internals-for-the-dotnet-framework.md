@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100607"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>平行擴充功能內部項目適用於.NET Framework
 本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的平行擴充功能，.NET framework 偵錯工具。  

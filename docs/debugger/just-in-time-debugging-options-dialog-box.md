@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480885"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
 若要存取**時間恰好**頁面，請移至**工具**功能表，然後按一下**選項**。 在**選項**對話方塊方塊中，展開 **偵錯**節點，然後選取**時間恰好**。 這個頁面可讓您啟用 Managed 程式碼、機器碼和指令碼的 Just-In-Time 偵錯。 如需詳細資訊，請參閱[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570989"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 寫入所有執行緒和內容的追蹤記錄檔。  
@@ -43,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：**FileTracker.h  
+ **標頭：** FileTracker.h  
   
 ## <a name="see-also"></a>請參閱  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

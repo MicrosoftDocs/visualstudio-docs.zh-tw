@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140442"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>移轉 COM 類別註冊 64 位元偵錯工具
 

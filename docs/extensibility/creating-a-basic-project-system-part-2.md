@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107942"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本專案系統，第 2 部分
 在這一系列，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本專案系統。 本逐步解說為基礎的基本專案系統所加入 Visual Studio 範本、 屬性頁，以及其他功能。 您必須先完成第一個逐步解說，才能啟動這一個。  

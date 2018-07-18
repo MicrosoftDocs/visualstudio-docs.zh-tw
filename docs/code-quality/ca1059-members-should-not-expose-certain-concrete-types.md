@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31898163"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059：成員不應該公開特定的具象類型
 |||

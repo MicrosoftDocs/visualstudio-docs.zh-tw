@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558330"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>如何：設定 ClickOnce 發行版本
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`屬性會決定是否要發行應用程式將會被視為更新。 每個時間版本會遞增，應用程式將更新的形式發行。  

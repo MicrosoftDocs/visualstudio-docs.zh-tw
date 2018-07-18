@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461593"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 擷取對應至這個符號存放區中的符號的可執行檔的負載位址。  

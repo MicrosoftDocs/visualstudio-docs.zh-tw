@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464832"
 ---
 # <a name="create-custom-visualizers-of-data"></a>建立自訂的視覺化檢視的資料
  視覺化檢視是元件的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]偵錯工具使用者介面。 A*視覺化檢視*建立對話方塊或另一個介面是適用於其資料類型的方式顯示變數或物件。 例如，HTML 視覺化檢視會解譯 HTML 字串，並在瀏覽視窗中顯示出現的結果，而點陣圖視覺化檢視會解譯點陣圖結構，並顯示其所代表的圖形。 除了檢視資料外，有些視覺化檢視也能讓您修改資料。

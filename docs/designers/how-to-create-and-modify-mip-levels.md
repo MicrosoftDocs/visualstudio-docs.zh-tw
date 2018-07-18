@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925621"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：建立和修改 MIP 層級
 本文件將示範如何使用「影像編輯器」來產生和修改材質空間「詳細層級」(LoD) 的「MIP 層級」。

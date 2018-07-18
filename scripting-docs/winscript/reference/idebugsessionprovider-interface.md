@@ -1,16 +1,16 @@
 ---
-title: "IDebugSessionProvider 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugSessionProvider 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSessionProvider interface
 ms.assetid: 1b898423-7af9-44f5-8dda-987005309c99
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727138"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider 介面
 偵錯工具若要啟用主機和語言的 IDE 所提供的主要介面起始偵錯。 它會建立執行的應用程式的偵錯工作階段。 這個介面是由電腦偵錯管理員實作的。  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474930"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援 Language-Integrated Query (LINQ) 程式碼偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題描述 LINQ 偵錯的主要限制。  

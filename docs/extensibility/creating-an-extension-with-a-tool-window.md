@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102144"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>建立擴充功能與工具視窗
 在此程序，您會了解如何使用 VSIX 專案範本和**自訂工具視窗**項目範本建立的擴充功能與工具視窗。  

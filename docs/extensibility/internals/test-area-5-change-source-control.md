@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134340"
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5： 變更原始檔控制
 變更原始檔控制，透過此原始檔控制外掛程式的測試區域涵蓋了**變更原始檔控制**命令。  

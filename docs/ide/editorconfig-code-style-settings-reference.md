@@ -18,11 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572643"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -74,6 +75,7 @@ warning | 違反此樣式規則時，顯示編譯器警告。
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - dotnet\_style\_readonly\_field
     - [運算式層級喜好設定](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -238,7 +240,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 | 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 和 IDE0014 | C# 和 Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 和 IDE0014 | C# 和 Visual Basic | true:none |
 | dotnet_style_predefined_type_for_member_access | IDE0013 和 IDE0015 | C# 和 Visual Basic | true:none |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
@@ -298,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>修飾詞喜好設定
 
-本節中的樣式規則與修飾詞喜好設定有關，包括要求存取範圍修飾詞及指定所需的修飾詞排序次序。
+本節中的樣式規則與修飾詞喜好設定有關，包括要求存取範圍修飾詞、指定所需的修飾詞排序次序和要求唯讀修飾詞。
 
 下表顯示規則名稱、規則識別碼、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：
 
@@ -307,6 +309,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial、Default、Private、Protected、Public、Friend、NotOverridable、Overridable、MustOverride、Overloads、Overrides、MustInherit、NotInheritable、Static、Shared、Shadows、ReadOnly、WriteOnly、Dim、Const、WithEvents、Widening、Narrowing、Custom、Async:none | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# 和 Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
@@ -315,7 +318,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | 值 | 描述 |
 | ----- |:----------- |
 | always | 偏好指定存取範圍修飾詞 |
-| for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 目前此值相當於 **always**，未來將視 C# 是否新增預設介面方法予以校正而定。 |
+| for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 這是與**一律**相同，且已新增以便未來 C# 新增預設介面方法時校訂之用。 |
 | never | 偏好不指定存取範圍修飾詞 |
 
 程式碼範例：
@@ -325,13 +328,13 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 // dotnet_style_require_accessibility_modifiers = for_non_interface_members
 class MyClass
 {
-    private const string thisFieldIsConst= "constant";
+    private const string thisFieldIsConst = "constant";
 }
 
 // dotnet_style_require_accessibility_modifiers = never
 class MyClass
 {
-    const string thisFieldIsConst= "constant";
+    const string thisFieldIsConst = "constant";
 }
 ```
 
@@ -364,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- 當此規則設定為 **true** 時，偏好欄位應該標記 `readonly` (C#) 或 `ReadOnly` (Visual Basic)，如果只是內嵌指派，或在建構函式內指派的話。
+- 當此規則設定為 **false** 時，對於欄位是否應標記 `readonly` (C#) 或 `ReadOnly` (Visual Basic)，不指派喜好設定。
+
+程式碼範例：
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]

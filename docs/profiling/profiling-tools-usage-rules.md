@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31582081"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 程式碼剖析工具使用分類中的效能規則提供的指引，可最有效地使用分析工具來收集資料。  

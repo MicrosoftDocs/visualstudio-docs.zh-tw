@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134948"
 ---
 # <a name="source-control-vspackage-features"></a>原始檔控制 VSPackage 的功能
 本章節描述各種功能的原始檔控制 VSPackage。 本文將概述註冊，並選取 VSPackage，在 詳細資料，並討論三種主要的原始檔控制相關功能： 處理查詢編輯查詢儲存 (QEQS) 事件、 字符取代和原始檔控制的自訂使用者介面 (UI)函式。  

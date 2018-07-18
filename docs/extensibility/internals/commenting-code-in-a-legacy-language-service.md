@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128716"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在舊版語言服務中的註解程式碼
 程式設計語言通常會提供註解或註解的程式碼的方法。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118904"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 這個介面供程式節點，來指定所有可能的偵錯引擎 (DE)，可以進行偵錯此程式。  

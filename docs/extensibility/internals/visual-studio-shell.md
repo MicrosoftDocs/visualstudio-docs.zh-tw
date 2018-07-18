@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144352"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]殼層是在整合的主要代理程式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 此命令介面提供必要的功能，讓 VSPackages 共用通用的服務。 因為架構的目標[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]背心 Vspackage 中的主要功能是殼層是一種架構來提供基本功能，並支援 Vspackage 及其元件之間的互通。  

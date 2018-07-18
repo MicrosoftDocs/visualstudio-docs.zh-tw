@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749456"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
@@ -136,7 +137,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>追蹤記憶體使用量
+## <a name="track-memory-usage"></a>追蹤記憶體使用量
 這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
 
 ![啟用堆積分析](media/heap-enable-heap.png)
@@ -154,8 +155,8 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](../profiling/memory-usage.md)文件，以了解相關說明。
 
 > [!TIP]
-> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt + F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl+Alt+F2** 鍵盤組合，加以啟用)。
+> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯]>[效能分析工具] 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯]>[視窗]>[顯示診斷工具] 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [分析工具](../profiling/profiling-tools.md)  
 [記憶體使用量](../profiling/memory-usage.md)

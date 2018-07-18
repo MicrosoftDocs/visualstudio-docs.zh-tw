@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764903"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報告
-本主題描述基本的 VSPerfReport 命令，它們會從 .vsp、.vsps 分析資料檔案產生逗號分隔值 (.csv) 的報告。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報表
+本文描述基本的 VSPerfReport 命令，它們會從 .*vsp* 或 .*vsps* 分析資料檔案產生逗號分隔值 (.*csv*) 的報表。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ## <a name="report-commands"></a>報表命令  
  使用下列命令之一建立指定的分析資料檔報表。  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- 產生可供 .vsp 或.vsps 檔案使用的所有報表。  
+ 產生可供 .*vsp* 或.*vsps* 檔案使用的所有報表。  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  產生指定的報表類型。  

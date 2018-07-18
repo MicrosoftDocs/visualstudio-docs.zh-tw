@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106714"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 代表偵錯文件的總和檢查碼，並可讓您傳遞元件之間的總和檢查碼。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571945"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 除非專案檔內含 `DefaultTargets` 屬性、`InitialTargets` 屬性，或在命令列中使用 **/target** 參數來指定目標，否則 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 引擎會建置它找到的第一個專案以及任何相依性。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459671"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 擷取旗標，表示這個行資訊會描述陳述式，而不是運算式，以原始程式碼的開頭。  

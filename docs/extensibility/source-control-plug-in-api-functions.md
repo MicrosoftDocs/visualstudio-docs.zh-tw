@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144365"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列功能，必須由原始檔控制外掛程式依據這個應用程式開發介面實作。 每個函式和語意的簽章相關聯的位元旗標，此參考中的詳細說明其他參數。  

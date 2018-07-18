@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102365"
 ---
 # <a name="adding-commands-to-toolbars"></a>將命令加入至工具列
 工具列是包含繫結至命令按鈕的水平或垂直區域。 您可以將您自己的命令加入 Visual Studio 中許多不同的 windows 上的工具列： Visual Studio 主視窗、 [方案總管] 中和您自己的自訂工具視窗。  

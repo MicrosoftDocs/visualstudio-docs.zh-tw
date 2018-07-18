@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134433"
 ---
 # <a name="delayed-document-loading"></a>延遲的文件載入
 當使用者重新開啟 Visual Studio 方案時，大部分的相關聯的文件並不會立即載入。 文件視窗框架建立的暫止的初始化狀態，並 （稱為虛設常式框架） 預留位置文件放置執行文件資料表 (RDT) 中。  

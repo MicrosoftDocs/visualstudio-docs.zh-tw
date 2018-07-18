@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457442"
 ---
 # <a name="debug-interface-access-sdk"></a>偵錯 (偵錯介面存取 SDK)
 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK) 提供存取偵錯資訊儲存在 Microsoft 讓工具所產生的程式資料庫 (.pdb) 檔。 .Pdb 檔案，讓工具所產生的格式會經歷常數修訂，因為公開格式是不可行的。 使用 DIA API 時，您可以開發應用程式，搜尋並瀏覽儲存在.pdb 檔案中的偵錯資訊。 這類應用程式，例如無法，堆疊追蹤回資訊報告和分析效能資料。  

@@ -1,11 +1,11 @@
 ---
-title: "IProvideExpressionContexts::EnumExpressionContexts |Microsoft 文件"
-ms.custom: 
+title: IProvideExpressionContexts::EnumExpressionContexts |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IProvideExpressionContexts.EnumExpressionContexts
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IProvideExpressionContexts::EnumExpressionContexts
 ms.assetid: ec5f0065-00df-41e6-b480-4c04ba464872
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729418"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 傳回這個元件的已知的運算式內容的列舉值。  

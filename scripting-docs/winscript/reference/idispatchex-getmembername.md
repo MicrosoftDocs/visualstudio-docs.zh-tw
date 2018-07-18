@@ -1,11 +1,11 @@
 ---
-title: "IDispatchEx::GetMemberName |Microsoft 文件"
-ms.custom: 
+title: IDispatchEx::GetMemberName |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispatchEx.GetMemberName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - GetMemberName method
 ms.assetid: 5e59b63c-b781-4b90-88fd-40603a379a2d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727918"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 擷取成員的名稱。  

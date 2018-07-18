@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130488"
 ---
 # <a name="extending-the-status-bar"></a>擴充 [狀態] 列
 您可以使用 Visual Studio 的 [狀態] 列底部的 IDE，來顯示資訊。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465070"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 如果函式定義的時間點，在偵錯哪些是要開始，點由使用的符號`SymTagFuncDebugStart`標記。  

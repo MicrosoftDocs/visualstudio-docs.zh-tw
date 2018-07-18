@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133355"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令資料表 (。Vsct) 檔案
 XML 命令表 (.vsct) 檔案描述的配置和外觀 VSPackage 的命令項目。 命令項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目群組。 本主題描述 XML 命令資料表檔、 它們如何影響命令項目和功能表，以及如何建立它們。

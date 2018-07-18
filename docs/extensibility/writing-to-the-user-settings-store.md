@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145408"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 使用者設定為可寫入的設定，例如在中的**工具 / 選項**對話方塊、 屬性 視窗和某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些儲存小量的資料。 本逐步解說示範如何讀取和寫入使用者設定存放區所做的外部工具將 [記事本] 加入 Visual Studio。  

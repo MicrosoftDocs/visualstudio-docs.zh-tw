@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944670"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。

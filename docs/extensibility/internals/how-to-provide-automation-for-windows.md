@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129468"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何： 提供適用於 Windows 的自動化
 您可以提供文件和工具視窗的自動化。 每當您想要的視窗中，使用 automation 物件和環境不存在時，提供自動化建議提供的現成的 automation 物件，與工作清單。

@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917103"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 
@@ -94,7 +95,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 |**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](http://go.microsoft.com/fwlink/p/?LinkId=246265)。|
 |轉換成預乘的 Alpha 格式|[是] 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]。 只會變更輸出檔案，來源影像並不會變更。|
 |**產生 Mips**|[是] 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]。 如果為 [否]，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：**變更輸出檔案的副檔名並不會影響其檔案格式。|
+|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
 ### <a name="mesh-content-pipeline-configuration"></a>網狀內容管線組態
 
@@ -102,7 +103,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |屬性|描述|
 |--------------|-----------------|
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：**變更輸出檔案的副檔名並不會影響其檔案格式。|
+|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
 ### <a name="shader-content-pipeline-configuration"></a>著色器內容管線組態
 
@@ -110,7 +111,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |屬性|描述|
 |--------------|-----------------|
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：**變更輸出檔案的副檔名並不會影響其檔案格式。|
+|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>在執行階段載入並使用 3D 資產
 

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475658"
 ---
 # <a name="sdi-server-applications"></a>SDI 伺服器應用程式
 如果您正在偵錯 SDI 伺服器應用程式，您必須指定`/Embedding`或`/Automation`中**命令列引數**屬性*專案*屬性頁對話方塊中，C/c + +、 C# 中，或Visual Basic 專案。  

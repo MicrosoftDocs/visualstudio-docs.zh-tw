@@ -1,16 +1,18 @@
 ---
-title: "IDebugSessionProviderEx:StartDebugSession |Microsoft 文件"
-ms.custom: 
+title: IDebugSessionProviderEx:StartDebugSession |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugSessionProviderEx:StartDebugSession
-apilocation: scrobj.dll
+apiname:
+- IDebugSessionProviderEx:StartDebugSession
+apilocation:
+- scrobj.dll
 ms.assetid: 247337ca-476c-4aa7-8500-d84fd1d98176
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727468"
 ---
 # <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
 初始化具有指定的應用程式偵錯工作階段。  

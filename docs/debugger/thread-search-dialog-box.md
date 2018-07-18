@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475122"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的執行緒中的節點[執行緒檢視](../debugger/threads-view.md)。 若要顯示此對話方塊中，焦點移至**執行緒**檢視 視窗中。 然後選擇 **尋找執行緒**從**搜尋**功能表。  

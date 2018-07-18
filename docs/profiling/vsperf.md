@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477388"
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令列工具，可以︰  
@@ -25,16 +26,7 @@ ms.lasthandoff: 05/22/2018
   
  如需程式碼剖析選項的詳細資訊，請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
- 本主題說明您可以搭配 `vsperf.exe` 命令列工具一起使用的選項。 此主題包括下列各節：  
-  
- [僅限 UWP 應用程式](#BKMK_windows_store_apps_only)  
-  
- [僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [所有應用程式](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> 僅限 UWP 應用程式  
+## <a name="uwp-apps-only"></a>僅限 UWP 應用程式  
  這些選項僅適用於 UWP 應用程式。  
   
 |||  
@@ -45,7 +37,7 @@ ms.lasthandoff: 05/22/2018
 |**/noclr**|選擇性。 不會收集 CLR 資料。<br /><br /> 只能搭配 /package 或 /attach 一起使用。<br /><br /> 最佳化，不會解析任何 Managed 符號。|  
 |**/listapps**|列出已安裝應用程式的 AppName 和 PackageFullNames。|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式  
  這些選項無法在 UWP 應用程式上運作。  
   
 |||  
@@ -54,7 +46,7 @@ ms.lasthandoff: 05/22/2018
 |**/args:{ExecutableArguments}**|指定要傳遞給 **/launch** 目標的命令列引數。|  
 |**/console**|在新的命令視窗中執行 **/launch** 目標。|  
   
-##  <a name="BKMK_All_applications"></a>所有應用程式  
+## <a name="all-applications"></a>所有應用程式  
  這些選項適用於任何 Windows 8 或 Windows Server 2012 應用程式。  
   
 |||  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471628"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>錯誤：無法存取 SQL Server 偵錯介面
 當您嘗試在未啟用 SQL 偵錯的電腦上進行 SQL 偵錯時，便會出現這則訊息。  

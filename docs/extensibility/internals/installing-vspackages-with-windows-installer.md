@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130998"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer 安裝 Vspackage
 整合到 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]需要不只將檔案複製到使用者的電腦。 VSPackage 的安裝程式，必須安裝 VSPackage 和其相依的檔案，並登錄及它們整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 VSPackage 可以利用整合功能，例如上顯示圖示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]啟動顯示畫面和 [關於] 對話方塊。  

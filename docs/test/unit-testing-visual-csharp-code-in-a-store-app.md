@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979408"
 ---
 # <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
 

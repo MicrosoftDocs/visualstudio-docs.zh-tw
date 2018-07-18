@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458986"
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 本主題列出可幫助您進行測試和檢驗 COM 程式的工具。  

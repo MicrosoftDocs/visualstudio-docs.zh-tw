@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptError |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptError |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptError interface
 ms.assetid: c8e0288d-38ff-4145-a7e3-f8cdfb72eefe
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645778"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 實作這個介面的物件傳遞至[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)方法時，指令碼引擎遇到未處理的錯誤。 然後主機會取得發生錯誤的相關資訊，此物件上呼叫方法。  

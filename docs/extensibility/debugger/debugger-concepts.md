@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102677"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝時所使用的架構概念。  

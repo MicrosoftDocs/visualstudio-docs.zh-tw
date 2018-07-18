@@ -1,11 +1,11 @@
 ---
-title: "IRemoteDebugApplication::GetDebugger |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplication::GetDebugger |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IRemoteDebugApplication.GetDebugger
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IRemoteDebugApplication::GetDebugger
 ms.assetid: 3d173b86-9281-4a3c-9550-d79408fd50ba
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729188"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
 傳回目前的偵錯工具連接到應用程式。  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750691"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  從 [工具箱] 的 [通用控制項] 分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
 
-6.  選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))，然後選取並且 [停駐於父容器中]。
+6.  選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]。
 
 7.  在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 程式庫] 專案，然後選取 [屬性]。
 

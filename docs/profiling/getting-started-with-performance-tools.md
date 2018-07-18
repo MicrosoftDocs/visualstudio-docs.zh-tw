@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576439"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 本節提供當您使用 Visual Studio 效能工具來收集、檢視和分析程式碼效能時將運用之概念和工作的概觀。  
@@ -32,8 +33,8 @@ ms.lasthandoff: 04/19/2018
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**快速剖析應用程式或網站：**使用「效能精靈」針對 Visual Studio 方案或網站設定及執行程式碼剖析工作階段。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**在不使用精靈的情況下對應用程式進行程式碼剖析：**了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**快速剖析應用程式或網站：** 使用「效能精靈」針對 Visual Studio 方案或網站設定及執行程式碼剖析工作階段。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**在不使用精靈的情況下對應用程式進行程式碼剖析：** 了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
   
 ## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   

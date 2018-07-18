@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplicationNode::Attach |Microsoft 文件"
-ms.custom: 
+title: IDebugApplicationNode::Attach |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplicationNode.Attach
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplicationNode::Attach
 ms.assetid: f4aad4ae-5bb0-4b5e-8f70-912a677f8f7a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725928"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 此應用程式將節點加入至指定的專案樹狀結構。  

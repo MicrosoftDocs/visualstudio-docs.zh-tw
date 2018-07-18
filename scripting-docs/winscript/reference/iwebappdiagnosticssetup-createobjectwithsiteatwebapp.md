@@ -1,16 +1,16 @@
 ---
-title: "IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp |Microsoft 文件"
-ms.custom: 
+title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 ms.assetid: 30975973-acb1-48f4-8266-5e097a57db22
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733938"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 這個方法會同時建立類別的識別碼，您在以傳遞`rclsid`使用`dwClsContext`。 這是類似的方式[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)運作方式，不同處在於是`CreateObjectWithSiteAtWebApp`web 應用程式的 UI 執行緒上以非同步方式建立物件。 類別識別碼所指定的物件應該實作[IWebAppDiagnosticsObjectInitialization 介面](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)。 在建立物件之後， [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md)稱為 PDM 偵錯應用程式的參考和`hPassToObject`參數`CreateObjectWithSiteAtWebApp`。 您可以使用這個方法以傳遞至應用程式的控制代碼到您已複製使用匿名管道[DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450)。  

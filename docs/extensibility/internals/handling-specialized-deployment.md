@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135776"
 ---
 # <a name="handling-specialized-deployment"></a>處理特製化部署
 部署是專案的選擇性作業。 Web 專案中，例如，支援的部署，讓更新的 Web 伺服器的專案。 同樣地，**智慧型裝置**專案支援複製到目標裝置的內建應用程式的部署。 專案子類型可以藉由實作提供特製化的部署行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>介面。 這個介面會定義一組完整的部署作業：  

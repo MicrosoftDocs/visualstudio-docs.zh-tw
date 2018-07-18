@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765826"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
@@ -26,17 +27,33 @@ ms.lasthandoff: 05/23/2018
 > [!div class="checklist"]
 > * 建立 Node.js 專案
 > * 新增一些程式碼
-> * 使用 IntelliSense
+> * 使用 IntelliSense 來編輯程式碼
 > * 執行應用程式
-> * 叫用中斷點
+> * 叫用偵錯工具中的中斷點
+
+## <a name="before-you-begin"></a>開始之前
+
+以下快速常見問題集介紹一些重要概念。
+
+### <a name="what-is-nodejs"></a>什麼是 Node.js？
+
+Node.js 是執行 JavaScript 伺服器端的伺服器端 JavaScript 執行階段環境。
+
+### <a name="what-is-npm"></a>什麼是 npm？
+
+npm 是 Node.js 的預設套件管理員。 套件管理員可讓程式設計人員能夠發佈並共用 Node.js 程式庫的原始程式碼，其設計目的是為了簡化程式庫的安裝、更新及解除安裝。
+
+### <a name="what-is-express"></a>什麼是 express？
+
+Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以建置 Web 應用程式。 Express 可讓您使用選擇不同的前端架構來建立 UI，例如 Pug (之前稱為 Jade)。 本教學課程中使用 Pug。
 
 ## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 2017 和 Node.js 開發工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
-    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
 * 您必須安裝 Node.js 執行階段。
 
@@ -44,8 +61,11 @@ ms.lasthandoff: 05/23/2018
 
     本教學課程使用 Node.js 8.10.0 來進行測試。
 
-## <a name="create-a-project"></a>建立專案
-首先，您將建立 Node.js Web 應用程式專案。
+## <a name="create-a-new-nodejs-project"></a>建立新的 Node.js 專案
+
+Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案包含原始程式碼、資源和組態檔。
+
+在本教學課程中，您會從包含 Node.js 和 express 應用程式之程式碼的簡單專案開始。
 
 1. 開啟 Visual Studio 2017。
 
@@ -53,23 +73,29 @@ ms.lasthandoff: 05/23/2018
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選取 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
 
-     如果沒有看到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，您必須先安裝 [Node.js 開發] 工作負載。
+     如果沒有看到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，您必須先安裝 [Node.js 開發] 工作負載 (請參閱＜必要條件＞以取得指示)。
 
-    Visual Studio 會建立新的方案，並開啟專案。 *app.js* 專案檔會在編輯器 (左窗格) 中開啟。
+    Visual Studio 會建立新的方案，並在右窗格中開啟專案。 *app.js* 專案檔會在編輯器 (左窗格) 中開啟。
 
-    - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
+    ![專案結構](../nodejs/media/tutorial-project-structure.png)
 
-    - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
+    (1) 以**粗體**反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
 
-    - npm 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
+    (2) 最上層是方案，其名稱預設會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
 
-    - *app.js* 之類的專案檔會顯示在專案節點下。 *app.js* 是專案啟動檔案。
+    (3) npm 節點會顯示任何已安裝的 npm 套件。 您可以用滑鼠右鍵按一下 npm 節點，使用對話方塊來搜尋及安裝 npm 套件，或者使用 *package.json* 中的設定來安裝及更新套件，並以滑鼠右鍵按一下 npm 節點中的選項。
+
+    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。
+
+    (5) *app.js* 之類的專案檔會顯示在專案節點下。 *app.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]，即可設定啟動檔案。
 
 1. 開啟 **npm** 節點，並確定所有必要的 npm 套件都存在。
 
-    如果遺漏任何項目 (驚嘆號圖示)，您可以用滑鼠右鍵按一下 **npm** 節點，然後選擇 [安裝遺漏的 npm 套件]。
+    如果遺漏任何套件 (驚嘆號圖示)，您可以用滑鼠右鍵按一下 **npm** 節點，然後選擇 [安裝遺漏的 npm 套件]。
 
 ## <a name="add-some-code"></a>新增一些程式碼
+
+應用程式使用 Pug 作為前端 JavaScript 架構。 Pug 則使用編譯成 HTML 的簡單標記程式碼。 (Pug 會設定為 *app.js* 中的檢視引擎。 設定 *app.js* 檢視引擎的程式碼為 `app.set('view engine', 'pug');`。)
 
 1. 在 [方案總管] (右窗格) 中，開啟 views 資料夾，然後開啟 *index.pug*。
 
@@ -95,7 +121,7 @@ ms.lasthandoff: 05/23/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    上述程式碼會新增標記來動態產生一個具有標題和歡迎訊息的 HTML 頁面。 此頁面也包含了程式碼，以顯示每次按下按鈕就會隨之變更的影像。
+    上述程式碼會用來動態產生一個具有標題和歡迎訊息的 HTML 頁面。 此頁面也包含了程式碼，以顯示每次按下按鈕就會隨之變更的影像。
 
 1. 在 routes 資料夾中，開啟 *index.js*。
 
@@ -122,15 +148,17 @@ ms.lasthandoff: 05/23/2018
     });
     ```
     
-    上述程式碼會使用 Express 路由器物件來設定目前的頁面，然後轉譯頁面，其中會將標題和資料物件傳遞給頁面。
+    上述程式碼會使用 Express 路由器物件來設定目前的頁面，然後轉譯頁面，其中會將標題和資料物件傳遞給頁面。 *Index.pug* 檔案在這裡指定為執行 *index.js* 時要載入的頁面。 *index.js* 設定為 *app.js* 程式碼中的預設路由 (未顯示)。
 
     為了示範 Visual Studio 的數個功能，我們在包含 `res.render` 的程式碼行中納入了一個錯誤。 我們必須先修正此錯誤，應用程式才能執行。 我們將在下節修正該錯誤。
 
 ## <a name="use-intellisense"></a>使用 IntelliSense
 
+IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
+
 1. 在 *index.js* 中，移至包含 `res.render` 的行。
 
-1. 將您的游標放在 `data` 字串後面，輸入 `: get`，IntelliSense 將會顯示 `getData` 函式。 選取 `getData`。
+1. 將您的游標放在 `data` 字串後面，鍵入 `: get`，IntelliSense 將會顯示稍早在程式碼中定義的 `getData` 函式。 選取 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
@@ -140,7 +168,7 @@ ms.lasthandoff: 05/23/2018
 
     此訊息的最後一行告訴您：JavaScript 解譯器必須要有逗號 (`,`)。
 
-1. 按一下 [錯誤清單] 索引標籤。
+1. 在下方窗格中，按一下 [錯誤清單] 索引標籤。
 
     您會看到警告和描述以及檔案名稱和行號。
 
@@ -148,7 +176,11 @@ ms.lasthandoff: 05/23/2018
 
 1. 在 `"data"` 前面新增逗號 (`,`)，以修正程式碼。
 
+    更正後，程式碼行應該如下所示：`res.render('index', { title: 'Express', "data": getData() });`
+
 ## <a name="set-a-breakpoint"></a>設定中斷點
+
+我們即將執行附加了 Visual Studio 偵錯工具的應用程式。 在可以這樣做之前，我們需要設定一個中斷點。
 
 1. 在 *index.js* 中，按一下下列程式碼行前面的左裝訂邊，以設定中斷點：
 
@@ -194,7 +226,7 @@ ms.lasthandoff: 05/23/2018
 
     在 [App Service] 對話方塊中，您可以登入 Azure 帳戶，並連線至現有 Azure 訂用帳戶。
 
-1. 遵循其餘步驟來選取訂用帳戶、選擇或建立資源群組、選擇或建立應用程式服務平面，然後在系統提示發行至 Azure 時遵循步驟。 如需詳細指示，請參閱[使用 Web Deploy 發行到 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)。
+1. 遵循其餘步驟來選取訂用帳戶、選擇或建立資源群組、選擇或建立應用程式服務平面，然後在系統提示發行至 Azure 時遵循步驟。 如需詳細指示，請參閱 [Publish to Azure website using web deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy) (使用 Web Deploy 發佈到 Azure 網站)。
 
 1. [輸出] 視窗會顯示部署到 Azure 的進度。
 

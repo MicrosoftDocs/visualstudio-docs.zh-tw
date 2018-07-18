@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954225"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。

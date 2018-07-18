@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140683"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定副檔名的檔案處理常式
 有數種方式可判斷應用程式會處理具有特定副檔名的檔案。 OpenWithList 和 OpenWithProgids 動詞命令是兩種方式指定之副檔名的登錄項目下的檔案處理常式。  

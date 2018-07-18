@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578818"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
 本節中的文件說明如何使用進階技術以 MSBuild 改善組建。  

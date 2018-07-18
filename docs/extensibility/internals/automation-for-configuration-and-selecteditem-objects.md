@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128198"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>自動化組態和 SelectedItem 物件
 您可以自動化組建和選取的項目中的程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

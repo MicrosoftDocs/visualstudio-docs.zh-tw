@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460003"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 Friend 類別和 friend 函式由`SymTagFriend`符號。 可為父系的子系的使用者定義型別 (Udt)，並且具有[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)屬性。  

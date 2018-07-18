@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953303"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
 您可以移轉專案定義及使用以網域特定語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]可散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。

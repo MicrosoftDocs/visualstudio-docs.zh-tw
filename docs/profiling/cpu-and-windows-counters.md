@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748734"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 
@@ -45,9 +46,9 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 可攜式事件是一組不屬於特定處理器的 CPU 計數器。 其他所有的 CPU 計數器都稱為平台事件，在各種平台上可能不支援。
 
- 可攜式和平台事件的計數器都以 .XML 檔案定義，其中提供有關計數器的特定值。 不同 CPU 有多個檔案，因為 (例如) Intel 和 AMD 的 CPU 資料不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 分析工具使用此資訊對使用者顯示適當的計數器 (可攜式和平台) 進行效能度量。
+ 可攜式和平台事件的計數器都以 .*xml* 檔案定義，其中提供有關計數器的特定值。 不同 CPU 有多個檔案，因為 (例如) Intel 和 AMD 的 CPU 資料不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 分析工具使用此資訊對使用者顯示適當的計數器 (可攜式和平台) 進行效能度量。
 
-### <a name="portable-events"></a>Portable Events
+### <a name="portable-events"></a>可攜式事件
 
 可攜式事件包含下列事件︰
 
@@ -78,7 +79,7 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 |L2 Cache Read Misses|表示第二個層級快取讀取遺漏的數目。|
 |L2 Cache Read References|表示第二個層級快取讀取參考的數目。 包括載入遺漏和讀取擁有權 (RFO) 的遺漏和叫用。|
 
-## <a name="viewing-available-counters"></a>檢視可用的計數器
+## <a name="view-available-counters"></a>檢視可用的計數器
 
 您可以在 Visual Studio IDE 或 [命令提示字元] 視窗中，列出可用的 CPU 計數器。
 
@@ -126,13 +127,13 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
      **\<Visual Studio 效能工具目錄>\VSPerfCmd /querycounters**
 
-     其中 **\<Visual Studio 效能工具目錄>** 是您通常安裝 Visual Studio 之效能工具目錄的路徑
+     其中 *\<Visual Studio 效能工具目錄>* 是您通常安裝 Visual Studio 之效能工具目錄的路徑
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>另請參閱
 
 [概觀](../profiling/overviews-performance-tools.md)  
-[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
-[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
+[操作說明：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
+[操作說明：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)

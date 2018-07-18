@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097646"
 ---
 # <a name="buttons-element"></a>按鈕項目
 群組[按鈕](../extensibility/button-element.md)項目，則表示個別的命令。  

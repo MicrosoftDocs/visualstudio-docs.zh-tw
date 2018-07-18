@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474842"
 ---
 # <a name="processes-view"></a>處理序檢視
 處理序檢視會顯示您系統上的所有使用中的處理序樹狀結構。 顯示處理序識別碼和模組名稱。 如果您想要檢查通常對應於正在執行之程式的特定系統處理序，請使用處理序檢視。 處理程序所識別的模組名稱，或指定 「 系統處理序 」。  

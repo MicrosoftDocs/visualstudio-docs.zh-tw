@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473133"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 （僅限原生）當您偵錯時編輯的程式碼時，會出現此對話方塊和**編輯後繼續**認為可以套用程式碼變更。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。  

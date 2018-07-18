@@ -1,14 +1,14 @@
 ---
-title: "Windows 指令碼介面 | Microsoft Docs"
-ms.custom: 
+title: Windows 指令碼介面 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571848"
 ---
 # <a name="windows-script-interfaces"></a>Windows 指令碼的介面
 Microsoft Windows 指令碼介面可讓應用程式新增指令碼和 OLE Automation。 依賴 Windows 指令碼的指令碼主機可以使用來自多個來源和廠商的指令碼引擎，來管理元件之間的指令碼。 指令碼本身的實作 (語言、語法、永續性格式、執行模型等等) 保留給指令碼廠商。  

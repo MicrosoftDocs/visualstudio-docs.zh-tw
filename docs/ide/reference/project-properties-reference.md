@@ -18,6 +18,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102650"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 深入了解如何設定和自訂專案屬性。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118186"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 設定執行緒的名稱。  

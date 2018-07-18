@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951241"
 ---
 # <a name="properties-of-port-shapes"></a>通訊埠圖案的屬性
 您可以使用連接埠圖形來表示產生的設計工具中的網域類別。

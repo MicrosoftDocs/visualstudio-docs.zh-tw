@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481680"
 ---
 # <a name="how-to-debug-com-servers"></a>如何：偵錯 COM 伺服器
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  

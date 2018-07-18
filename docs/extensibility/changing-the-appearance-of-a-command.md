@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099079"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更的命令外觀，對使用者提供意見反應。 例如，您可以命令無法使用時的外觀不同。 您可以使用或無法使用，讓命令、 隱藏或顯示它們，或檢查或取消核取功能表上。  

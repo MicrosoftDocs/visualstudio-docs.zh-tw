@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125579"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 包含描述感興趣的程式物件的陣列。  

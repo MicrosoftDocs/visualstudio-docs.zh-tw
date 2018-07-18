@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102313"
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
 運算式評估工具 (EE) 檢查語言剖析和執行階段，在評估變數和運算式的語法讓 IDE 處於中斷模式時，使用者可以檢視它們。  

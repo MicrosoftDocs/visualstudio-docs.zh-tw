@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099372"
 ---
 # <a name="launch-based-attachment"></a>啟動為基礎的附件
 啟動為基礎的附件，程式會自動執行。 裝載程式的處理序啟動時由 SDM，啟動為基礎的附件遵循類似於手動附件方法的路徑。 如需資訊，請參閱[附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。  

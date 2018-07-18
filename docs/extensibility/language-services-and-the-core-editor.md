@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138476"
 ---
 # <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
 在 Visual Studio 中的編輯器的常見問題與服務相關聯的語言。 在其他方面，語言服務會提供語法著色、 陳述式完成、 IntelliSense 和文字格式設定。  

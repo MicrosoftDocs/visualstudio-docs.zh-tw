@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplicationNode::SetDocumentProvider |Microsoft 文件"
-ms.custom: 
+title: IDebugApplicationNode::SetDocumentProvider |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplicationNode.SetDocumentProvider
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplicationNode::SetDocumentProvider
 ms.assetid: 7cb587ca-d84e-4b5e-9b94-e973cca55a03
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725468"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
 設定此應用程式節點的文件提供者。  

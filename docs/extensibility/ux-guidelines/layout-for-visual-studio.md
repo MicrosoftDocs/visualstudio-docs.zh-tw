@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31149012"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 Visual Studio 對話方塊多數[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話遵循標準[Windows 桌面對話方塊版面配置原則](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)。 隨著 Visual Studio 會移到重新整理其 UI，一些更重要的對話方塊會有新的設計，以建立它們，產品定義體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  

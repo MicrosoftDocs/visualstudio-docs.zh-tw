@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113090"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 此介面代表偵錯引擎 (DE)。 它用來建立中斷點來設定及清除例外狀況中管理的偵錯工作階段，各層面。  

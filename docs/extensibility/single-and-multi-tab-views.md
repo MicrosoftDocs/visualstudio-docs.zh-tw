@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142970"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 編輯器可以建立不同類型的檢視。 其中一個範例的程式碼編輯器 視窗，另一個是表單設計工具。  

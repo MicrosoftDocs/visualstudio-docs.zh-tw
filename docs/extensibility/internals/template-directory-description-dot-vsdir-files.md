@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133990"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄的描述 (。Vsdir) 檔案
 範本的目錄描述檔案 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE) 以顯示與您在對話方塊中的專案相關聯的範本檔案、 精靈.vsz 檔案和資料夾。 內容包括每個檔案或資料夾的一筆記錄。 參考位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。  
@@ -41,9 +42,9 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 |欄位|描述|  
 |-----------|-----------------|  
 |相對路徑名稱 (RelPathName)|資料夾、 範本或.vsz 檔案，例如 HeaderFile.h 或 MyWizard.vsz 的名稱。 這個欄位也可以用來代表資料夾的名稱。|  
-|{clsidPackage}|VSPackage 可讓您存取中的當地語系化字串，例如 LocalizedName、 描述、 IconResourceId 和 SuggestedBaseName，VSPackage 的附屬項目動態連結程式庫 (DLL) 資源的 GUID。 如果未提供 DLLPath，適用於 IconResourceId。 **注意：**這個欄位是選擇性的除非一或多個先前的欄位是資源識別碼。 這個欄位是通常是空白的未當地語系化文字的第三方精靈與對應的.vsdir 檔案。|  
-|LocalizedName|範本檔案或精靈的當地語系化的名稱。 這個欄位可以是字串或表單"#ResID 」 資源識別項。 這個名稱會顯示在**加入新項目** 對話方塊。 **注意：**如果 LocalizedName 資源識別項，則 {clsidPackage} 是必要項。|  
-|SortPriority|表示此範本檔案或精靈的相對優先權的整數。 例如，如果此項目有值為 1，此項目會顯示其他項目旁的值為 1 和 2 或更大的所有項目排序值前面。<br /><br /> 排序優先順序是相對於相同的目錄中的項目。 相同的目錄中可能有一個以上的.vsdir 檔案。 在此情況下，從所有的項目*。*該目錄中的 vsdir 檔案會合併。 具有相同優先順序的項目所述的顯示名稱不區分大小寫的詞典編纂順序。 `_wcsicmp`函式用來排序項目。<br /><br /> 未在.vsdir 檔中描述的項目包括大於.vsdir 檔案中列出的最高優先順序編號的優先順序數字。 結果是清單的，這些項目所顯示，不論其名稱的結尾。|  
+|{clsidPackage}|VSPackage 可讓您存取中的當地語系化字串，例如 LocalizedName、 描述、 IconResourceId 和 SuggestedBaseName，VSPackage 的附屬項目動態連結程式庫 (DLL) 資源的 GUID。 如果未提供 DLLPath，適用於 IconResourceId。 **注意：** 這個欄位是選擇性的除非一或多個先前的欄位是資源識別碼。 這個欄位是通常是空白的未當地語系化文字的第三方精靈與對應的.vsdir 檔案。|  
+|LocalizedName|範本檔案或精靈的當地語系化的名稱。 這個欄位可以是字串或表單"#ResID 」 資源識別項。 這個名稱會顯示在**加入新項目** 對話方塊。 **注意：** 如果 LocalizedName 資源識別項，則 {clsidPackage} 是必要項。|  
+|SortPriority|表示此範本檔案或精靈的相對優先權的整數。 例如，如果此項目有值為 1，此項目會顯示其他項目旁的值為 1 和 2 或更大的所有項目排序值前面。<br /><br /> 排序優先順序是相對於相同的目錄中的項目。 相同的目錄中可能有一個以上的.vsdir 檔案。 在此情況下，從所有的項目 *。* 該目錄中的 vsdir 檔案會合併。 具有相同優先順序的項目所述的顯示名稱不區分大小寫的詞典編纂順序。 `_wcsicmp`函式用來排序項目。<br /><br /> 未在.vsdir 檔中描述的項目包括大於.vsdir 檔案中列出的最高優先順序編號的優先順序數字。 結果是清單的，這些項目所顯示，不論其名稱的結尾。|  
 |描述|範本檔案或精靈的當地語系化的描述。 這個欄位可以是字串或表單"#ResID 」 資源識別項。 此字串會出現在**新專案**或**加入新項目**對話方塊中選取項目時。|  
 |DLLPath 或者 {clsidPackage}|用來載入的範本檔案或精靈圖示。 圖示會 IconResourceId 載入做為從.dll 或.exe 檔案的資源。 使用完整路徑，或是使用 VSPackage 的 GUID，可以識別此.dll 或.exe 檔案。 實作 VSPackage 的 DLL 用來載入圖示 （不附屬 DLL）。|  
 |IconResourceId|中的 DLL 或 VSPackage 的實作會決定要顯示的圖示的 DLL 的資源識別碼。|  

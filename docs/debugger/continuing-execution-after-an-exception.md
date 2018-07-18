@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466175"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 當偵錯工具會中斷執行，因為發生例外狀況時，您會看到**例外狀況協助程式**，根據預設。 如果您已停用**例外狀況協助程式**中**選項**對話方塊中，您會看到**例外狀況助理**（C# 或 Visual Basic） 或**例外狀況**對話方塊 （c + +）。  

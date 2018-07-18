@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476906"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
 您可以使用 **_RPTn**，和 **_RPTFn**巨集，定義在 CRTDBG。H，來取代使用`printf`陳述式中的偵錯。 這些巨集自動地消失在您的發行組建 **_DEBUG**未定義，所以不需要括住在 **#ifdef**s。  

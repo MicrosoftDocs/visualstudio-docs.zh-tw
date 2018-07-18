@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugdatatarget:: Allocatevirtualmemory 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Ijsdebugdatatarget:: Allocatevirtualmemory 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugDataTarget.AllocateVirtualMemory
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugDataTarget.AllocateVirtualMemory
+apilocation:
+- jscript9diag.dll
 ms.assetid: 1d3a77b0-c1de-4a0c-a759-3e0c68fd96dd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728398"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory 方法
 保留和/或認可的目標處理序的虛擬位址空間中的記憶體區域。  

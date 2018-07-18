@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135555"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的項目
 介面與實作中的所有專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共用基本結構： 您的專案類型的專案模型。 在您專案的模型，也就是您開發的 VSPackage，您可以建立符合您的設計決策及 IDE 所提供的通用功能搭配運作的物件。 雖然您控制的專案項目會保存方式，例如，您無法控制通知檔案必須 persisted。 當使用者將焦點放在開啟的專案項目，並選擇**儲存**上**檔案**功能表[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能表列，您的專案類型程式碼必須攔截從 IDE 命令、 保留檔案，並傳送通知回 IDE 不會再變更的檔案時。  

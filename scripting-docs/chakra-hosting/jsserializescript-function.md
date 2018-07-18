@@ -1,18 +1,18 @@
 ---
-title: "JsSerializeScript 函式 | Microsoft Docs"
-ms.custom: 
+title: JsSerializeScript 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsSerializeScript
 helpviewer_keywords:
 - JsSerializeScript function
 ms.assetid: ca42c194-e1c1-407d-b542-b9d494e3ac4e
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568868"
 ---
 # <a name="jsserializescript-function"></a>JsSerializeScript 函式
 將已剖析的指令碼序列化至緩衝區以重複使用。  

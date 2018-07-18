@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946477"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。

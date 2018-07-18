@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84e5505b077d4d237ed8f8b2532b4ac2b48544d5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3935bb38e47c18f3931f41a75daff9b608f8704
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765953"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集記憶體資料
-本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET 服務以收集記憶體資料
+本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  分析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，您必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
  若要收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務的記憶體資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具在裝載服務的電腦上初始化適當的環境變數。 電腦必須重新啟動，才能設定它進行分析。  
   
@@ -31,9 +32,9 @@ ms.lasthandoff: 04/19/2018
   
  若要結束分析工作階段，必須從服務中斷連結分析工具，而且必須明確地關閉分析工具。 在大部分情況下，建議您在工作階段結束時清除程式碼剖析環境變數。  
   
-## <a name="attaching-the-profiler"></a>附加程式碼剖析工具  
+## <a name="attach-the-profiler"></a>附加分析工具  
   
-#### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>將程式碼剖析工具附加至 .NET Framework 服務  
+#### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>將分析工具附加至 .NET Framework 服務  
   
 1.  如有必要，請安裝服務。  
   
@@ -90,8 +91,8 @@ ms.lasthandoff: 04/19/2018
   
     -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。  
   
-## <a name="controlling-data-collection"></a>控制資料收集  
- 當服務執行時，您可以使用 **VSPerfCmd.exe** 選項停止和開始將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
+## <a name="control-data-collection"></a>控制資料收集  
+ 當服務執行時，您可以使用 *VSPerfCmd.exe* 選項停止和開始將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
   
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
     |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** 會開始為處理序 ID 或處理序名稱指定的處理序收集資料。 **/detach** 會停止指定的處理序或所有處理序 (如果未指定特定處理序) 的資料收集。|  
   
-## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段  
+## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段  
  若要結束程式碼剖析工作階段，程式碼剖析工具不得進行資料收集。 您可以停止服務或呼叫 **VSPerfCmd /detach** 選項，以停止從使用取樣方法分析的應用程式中收集資料。 接著呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉分析工具，並關閉分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除程式碼剖析環境變數，但在重新啟動電腦之前不會重設系統組態。  
   
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
@@ -126,6 +127,6 @@ ms.lasthandoff: 04/19/2018
   
 4.  重新啟動電腦。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921782"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>如何：擴充 O/R 設計工具產生的程式碼
 變更設計工具介面上的實體 (Entity) 類別 (Class) 和其他物件時，系統會重新產生 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]所產生的程式碼。 因為有這項重新產生作業，所以當設計工具重新產生程式碼時，您之前加入至所產生程式碼的程式碼，通常都會遭覆寫。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]可以產生部分類別檔案，您可以在其中加入不要覆寫的程式碼。 需要將自訂程式碼加入至 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]所產生程式碼的其中一個範例，就是將資料驗證加入至 LINQ to SQL (實體) 類別。 如需資訊，請參閱[如何： 為實體類別加入驗證](../data-tools/how-to-add-validation-to-entity-classes.md)。

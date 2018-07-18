@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130254"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和文件 檢視中自訂編輯器
 自訂編輯器包含兩個部分： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件代表要顯示的文字資料，而文件檢視物件 （或 「 檢視 」） 則代表要在其中顯示文件資料物件的一或多個 windows。  

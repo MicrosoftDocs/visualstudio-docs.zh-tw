@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146192"
 ---
 # <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage
 以下是常見的問題，您可能有與您的 VSPackage，並解決問題的秘訣。  

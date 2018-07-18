@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137598"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 物件
 語言服務實作的程式碼視窗管理員，並負責管理裝飾時 （例如，在下拉式清單列）。 如需詳細資訊，請參閱[自訂程式碼視窗中，使用舊版 API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  

@@ -1,16 +1,16 @@
 ---
-title: "IRemoteDebugApplicationEvents 介面 |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplicationEvents 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IRemoteDebugApplicationEvents interface
 ms.assetid: 9626519e-910c-48e0-ae99-c711ce6628fd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729638"
 ---
 # <a name="iremotedebugapplicationevents-interface"></a>IRemoteDebugApplicationEvents 介面
 `IRemoteDebugApplicationEvents`介面是偵錯應用程式所提供的事件介面。 這個介面永遠偵錯工具執行緒中呼叫。  

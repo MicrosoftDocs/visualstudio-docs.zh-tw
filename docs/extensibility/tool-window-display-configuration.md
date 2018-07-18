@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143689"
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示設定
 中的選擇性值會指定當 VSPackage 註冊工具視窗、 的預設位置、 大小、 停駐樣式，以及其他可見性資訊。 如需有關工具視窗登錄的詳細資訊，請參閱[登錄中的工具視窗](../extensibility/tool-windows-in-the-registry.md)  

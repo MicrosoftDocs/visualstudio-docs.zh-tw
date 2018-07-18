@@ -1,11 +1,11 @@
 ---
-title: "ISimpleConnectionPoint::Advise |Microsoft 文件"
-ms.custom: 
+title: ISimpleConnectionPoint::Advise |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ISimpleConnectionPoint.Advise
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - ISimpleConnectionPoint::Advise
 ms.assetid: 59ded60d-b938-4110-aca3-e69ba234ca9a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733788"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
 建立簡單的連接點物件與用戶端接收器之間的連接。  

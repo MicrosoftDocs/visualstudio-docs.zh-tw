@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979382"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 程式碼產生可讓您產生強類型的程式碼，而且可以在來源模型變更時輕鬆地進行變更。 這與撰寫可接受組態檔的完全泛型程式的替代技術相反，它更具彈性，但不容易讀取和變更程式碼，也不會有這樣的良好效能。 本逐步解說示範這項優點。

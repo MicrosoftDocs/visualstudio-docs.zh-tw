@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142824"
 ---
 # <a name="vspackages"></a>VSPackages
 Vspackage 是可擴充的軟體模組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI 項目、 服務、 專案、 編輯器和設計工具提供整合式的開發環境 (IDE)。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126893"
 ---
 # <a name="security-issues"></a>安全性問題
 偵錯使用 Visual Studio 的程式，所需的唯一權限是相同的開發人員必須在執行程式。 這包括大部分的情況下 （與其他服務，例如網際網路資訊服務，某些情況下可能需要較高的層級的權限） 的遠端偵錯。  

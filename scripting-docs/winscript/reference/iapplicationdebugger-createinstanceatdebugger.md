@@ -1,11 +1,11 @@
 ---
-title: "IApplicationDebugger::CreateInstanceAtDebugger |Microsoft 文件"
-ms.custom: 
+title: IApplicationDebugger::CreateInstanceAtDebugger |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IApplicationDebugger.CreateInstanceAtDebugger
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IApplicationDebugger::CreateInstanceAtDebugger
 ms.assetid: 6763afac-c86a-4e88-9580-77108fb242fb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725768"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 允許偵錯工具處理序中的物件來建立程式碼也就是跨-處理序偵錯工具。  

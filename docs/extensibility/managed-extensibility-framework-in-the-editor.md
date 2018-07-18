@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141645"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>在編輯器中的 managed 的 Extensibility Framework
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建立。 您可以建立 MEF 元件，以便擴充編輯器，和您的程式碼可以使用編輯器元件以及。  

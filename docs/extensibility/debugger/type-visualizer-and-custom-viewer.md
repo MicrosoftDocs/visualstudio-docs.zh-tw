@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126906"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>類型的視覺化檢視和自訂檢視器
 類型的視覺化檢視是非常特定的格式顯示一段資料的元件。 這種格式是完全由實作者的視覺化檢視，是使用者或協力廠商供應商的視覺化檢視。  

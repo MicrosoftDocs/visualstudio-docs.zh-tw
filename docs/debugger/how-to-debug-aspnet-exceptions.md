@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476152"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 偵錯例外狀況是很重要的部分開發強固[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]應用程式。 如何偵錯例外狀況的一般資訊是在[管理例外狀況，偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)。  

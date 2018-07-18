@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127094"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活動記錄檔
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是在零售環境中偵錯 Vspackage 特別有用。  

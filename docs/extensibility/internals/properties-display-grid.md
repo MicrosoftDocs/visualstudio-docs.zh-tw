@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134060"
 ---
 # <a name="properties-display-grid"></a>屬性顯示格線
 **屬性**視窗會顯示格線中的欄位。 左側資料行包含的屬性名稱。右邊的資料行包含的屬性值。  

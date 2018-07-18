@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IntelliSense
-ms.date: 11/04/2016
+title: 參數資訊、列出成員和快速諮詢
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748471"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>在 Visual Studio 中使用 Intellisense
+# <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
-IntelliSense 是一些功能的概括詞彙：列出成員、參數資訊，快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼，追蹤所輸入的參數，以及幾個按鍵即可加入屬性和方法呼叫。
+IntelliSense 是包含一些功能的程式碼完成輔助工具：列出成員、參數資訊、快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼、追蹤所鍵入的參數，以及幾個按鍵即可新增屬性和方法呼叫。
 
 IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 IntelliSense 的詳細資訊，請參閱[另請參閱](#see-also)小節中所列的主題。
 
@@ -37,7 +38,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 在成員清單中，左方的圖示代表成員的類型，如命名空間、類別、函式或變數。 如需圖示清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 清單可能相當長，因此您可以按 **PgUp** 和 **PgDn**，以在清單中上下移動。
 
-![Visual Studio 成員清單](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Visual Studio 成員清單](../ide/media/vs2015_intellisense.png)
 
 您可以鍵入 **Ctrl**+**J**，並選擇 [編輯] > [IntelliSense] > [列出成員]，或選擇編輯器工具列上的 [列出成員] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。
 
@@ -51,7 +52,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用**向上鍵**和**向下鍵**檢視函式多載的替代參數資訊。
 
-![參數資訊](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![參數資訊](../ide/media/vs2015_param_info.png)
 
 當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)。
 
@@ -61,11 +62,11 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 [快速諮詢] 會顯示程式碼中任一識別項的完整宣告。
 
-![Visual Studio 快速諮詢](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Visual Studio 快速諮詢](../ide/media/vs2015_quick_info.png)
 
 當您從 [列出成員] 方塊中選取成員時，也會出現 [快速諮詢]。
 
-![C&#35; 程式碼檔中的參數資訊](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![C&#35; 程式碼檔案中的參數資訊](../ide/media/vs2015_paraminfo.png)
 
 您可以選擇 [編輯] > [IntelliSense] > [快速諮詢]、按 **Ctrl**+**I**，或選擇編輯器工具列上的 [快速諮詢] 按鈕，手動叫用 [快速諮詢]。
 

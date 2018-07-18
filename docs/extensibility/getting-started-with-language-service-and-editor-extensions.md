@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131573"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務與編輯器延伸模組
 您可以使用編輯器延伸模組，將語言服務功能，例如，大綱、 括號對稱、 IntelliSense 和燈泡您自己的程式語言，或任何內容型別。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如文字著色、 邊界、 裝飾和其他視覺化項目。 您也可以定義您自己的內容，類型，並指定的外觀和行為的文字檢視您的內容隨即出現。  

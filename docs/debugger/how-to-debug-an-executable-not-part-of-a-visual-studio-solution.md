@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476243"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>如何： 偵錯的可執行檔不是 Visual Studio 方案的一部分
 有時候，您可能想要偵錯的可執行檔 （.exe 檔） 不屬於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 這種可執行檔可能是您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之外所建立的可執行檔，或是您從別處取得的可執行檔。  

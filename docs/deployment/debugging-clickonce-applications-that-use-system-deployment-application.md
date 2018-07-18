@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561658"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可讓您設定應用程式更新的方式。 不過，如果您要使用和自訂進階[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，您將需要存取所提供的部署物件模型<xref:System.Deployment.Application>。 您可以使用<xref:System.Deployment.Application>應用程式開發介面的這類進階工作：  

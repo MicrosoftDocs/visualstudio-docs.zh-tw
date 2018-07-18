@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplication::QueryCurrentThreadIsDebuggerThread |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication::QueryCurrentThreadIsDebuggerThread |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.QueryCurrentThreadIsDebuggerThread
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::QueryCurrentThreadIsDebuggerThread
 ms.assetid: e22ad8a4-a8be-423d-80f2-28256a7448ed
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725338"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
 判斷目前執行的執行緒是否為偵錯工具執行緒。  

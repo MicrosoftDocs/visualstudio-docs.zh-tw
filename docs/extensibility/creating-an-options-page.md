@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108137"
 ---
 # <a name="creating-an-options-page"></a>建立選項頁面
 這個逐步解說會建立使用屬性方格中檢查和設定屬性的簡單工具/選項頁面。  

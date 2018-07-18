@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476194"
 ---
 # <a name="init"></a>Init
 準備主動擷取和記錄到圖形記錄檔的圖形資訊的圖形診斷的應用程式元件。  

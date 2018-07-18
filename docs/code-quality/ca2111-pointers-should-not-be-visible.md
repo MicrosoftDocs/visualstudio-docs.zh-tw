@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916370"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111：指標不應該為可見的
 |||

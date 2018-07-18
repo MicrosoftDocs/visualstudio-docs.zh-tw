@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130661"
 ---
 # <a name="supporting-source-control"></a>支援的原始檔控制
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援的檔案簽出、 簽入和其他原始檔控制作業，您的專案或編輯器。 做為原始檔控制用戶端，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設計來與原始檔控制封裝中，例如互動[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，可保存、 版本控制和一組動態定義檔案的存取控制等機能。  

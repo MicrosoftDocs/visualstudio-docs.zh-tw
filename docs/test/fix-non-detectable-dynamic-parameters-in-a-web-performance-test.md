@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf719eec2b9695e6019cf78e16ec5018639a92ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751042"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -36,13 +37,13 @@ ms.lasthandoff: 04/26/2018
 
 1.  建立名為 DynamicParamaterSample 的新 ASP.NET 專案。
 
-     ![建立空白的 ASP.NET Web 應用程式專案](../test/media/web_test_dynamicparameter_aspproject.png "Web_Test_DynamicParameter_ASPProject")
+     ![建立空白的 ASP.NET Web 應用程式專案](../test/media/web_test_dynamicparameter_aspproject.png)
 
 2.  加入名為 Querystring.aspx 的 Web 表單。
 
 3.  在設計檢視中，將 HiddenField 拖曳到頁面上，然後將 (ID) 屬性的值變更為 HiddenFieldSessionID。
 
-     ![新增 HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
+     ![加入 HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
 4.  變更為 Querystring 頁面的來源檢視，並加入下面反白顯示的 ASP.NET 和 JavaScript 程式碼，用來產生模擬的工作階段 ID 動態參數：
 
@@ -77,19 +78,19 @@ ms.lasthandoff: 04/26/2018
 
 7.  在設計檢視中，將 Label 拖曳到頁面上，然後將其 (ID) 屬性的值變更為 IndexLabel。
 
-     ![將標籤新增至 Web 表單](../test/media/web_test_dynamicparameter_label.png "Web_Test_DynamicParameter_Label")
+     ![將標籤加入至 Web Form](../test/media/web_test_dynamicparameter_label.png)
 
 8.  將 HyperLink 拖曳至頁面上，並將其 Text 屬性值變更為 Back。
 
-     ![將超連結新增至 Web 表單](../test/media/web_test_dynamicparameter_hyperlink.png "Web_Test_DynamicParameter_Hyperlink")
+     ![將超連結加入至 Web Form](../test/media/web_test_dynamicparameter_hyperlink.png)
 
 9. 選擇 NavigationURL 屬性的 (...)。
 
-     ![編輯 NavigateURL 屬性](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
+     ![編輯 NavigateURL 屬性](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
      選取 Querystring.aspx。
 
-     ![選擇要成為 Querystring.aspx 的 URL](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
+     ![選擇要成為 Querystring.aspx 的 URL](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
 10. 開啟 ASPQuery.aspx.cs 檔案，並將下列反白顯示的程式碼加入至 Page_Load 方法：
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
      正如我們對第二個頁面所做的，拖曳標籤到表單上，將其 (ID) 屬性設定為 IndexLabel 並拖曳 Hyperlink 到表單上，將其文字屬性設定為 Back，再將其 NavigationURL 屬性設定為 Querystring.aspx。
 
-     ![新增和設定第三個 Web 表單](../test/media/web_test_dynamicparameter_addwebform3.png "Web_Test_DynamicParameter_AddWebForm3")
+     ![加入和設定第三個 Web Form](../test/media/web_test_dynamicparameter_addwebform3.png)
 
 12. 開啟 JScriptQuery.aspx.cs 檔案，並將下列反白顯示的程式碼加入至 Page_Load 方法：
 
@@ -119,33 +120,33 @@ ms.lasthandoff: 04/26/2018
 
 14. 在 [方案總管] 中，將 Querystring.aspx 設定為起始頁。
 
-     ![將 Querystring.aspx 設定為起始頁](../test/media/web_test_dynamicparameter_setstartpage.png "Web_Test_DynamicParameter_SetStartPage")
+     ![將 Querystring.aspx 設定為起始頁](../test/media/web_test_dynamicparameter_setstartpage.png)
 
 15. 按下 CTRL+F5，即可在瀏覽器中執行 Web 應用程式。 複製 URL。 當您錄製測試時，您將會需要它。
 
 16. 嘗試兩個連結。 它們應該都會顯示訊息「成功。 Dynamic querystring parameter found."
 
-     ![執行 Web 應用程式](../test/media/web_test_dynamicparameter_runapp.png "Web_Test_DynamicParameter_RunApp")
+     ![執行 Web 應用程式](../test/media/web_test_dynamicparameter_runapp.png)
 
-     ![成功&#33;](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
+     ![成功！](../test/media/web_test_dynamicparameter_runapp2.png)
 
 ## <a name="create-a-web-performance-test"></a>建立 Web 效能測試
 
 1.  將 Web 效能和負載測試專案加入至您的方案。
 
-     ![新增 Web 效能和負載測試專案](../test/media/web_test_dynamicparameter_addtestproject.png "Web_Test_DynamicParameter_AddTestProject")
+     ![加入 Web 效能和負載測試專案](../test/media/web_test_dynamicparameter_addtestproject.png)
 
 2.  將 WebTest1.webtest 重新命名為 DynamicParameterSampleApp.webtest。
 
-     ![重新命名 Web 效能測試](../test/media/web_test_dynamicparameter_renametest.png "Web_Test_DynamicParameter_RenameTest")
+     ![重新命名 Web 效能測試](../test/media/web_test_dynamicparameter_renametest.png)
 
 3.  錄製測試。
 
-     ![錄製 Web 效能測試](../test/media/web_test_dynamicparameter_recordtest.png "Web_Test_DynamicParameter_RecordTest")
+     ![錄製 Web 效能測試](../test/media/web_test_dynamicparameter_recordtest.png)
 
 4.  將您要測試之網站的 URL 複製並貼入瀏覽器中。
 
-     ![從正在測試的網站貼上 URL](../test/media/web_test_dynamicparameter_recordtest2.png "Web_Test_DynamicParameter_RecordTest2")
+     ![從正在測試的網站貼上 URL](../test/media/web_test_dynamicparameter_recordtest2.png)
 
 5.  瀏覽 Web 應用程式。 選擇 ASP.NET 連結、[上一步] 連結，然後選擇 javascript 連結及 [上一步] 連結。
 
@@ -159,15 +160,15 @@ ms.lasthandoff: 04/26/2018
 
      選擇 [確定]，將擷取規則加入至 Querystring.aspx，將其繫結至 ASPQuery 頁面。
 
-     ![提升偵測到的動態參數](../test/media/web_test_dynamicparameter_promotedialog.png "Web_Test_DynamicParameter_PromoteDialog")
+     ![提升偵測到的動態參數](../test/media/web_test_dynamicparameter_promotedialog.png)
 
      擷取規則會加入至 Querystring.aspx 的第一個要求。
 
-     ![擷取規則已新增至要求](../test/media/web_test_dynamicparameter_autoextractionrule.png "Web_Test_DynamicParameter_AutoExtractionRule")
+     ![擷取規則已加入至要求](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
      展開 ASPQuery.aspx 的要求樹狀中的第二個要求，並且注意 CustomQueryString 的值已繫結程序至擷取規則。
 
-     ![CustomQueryString 已繫結至擷取規則](../test/media/web_test_dynamicparameter_autoextractionrule2.png "Web_Test_DynamicParameter_AutoExtractionRule2")
+     ![CustomQueryString 已繫結至擷取規則](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
 8.  儲存測試。
 
@@ -175,19 +176,19 @@ ms.lasthandoff: 04/26/2018
 
 1.  執行測試。
 
-     ![執行 Web 效能測試](../test/media/web_test_dynamicparameter_runtest.png "Web_Test_DynamicParameter_RunTest")
+     ![執行 Web 效能測試](../test/media/web_test_dynamicparameter_runtest.png)
 
 2.  針對 JScriptQuery.aspx 頁面的第四個要求失敗。 移至 Web 測試。
 
-     ![測試結果中的動態參數錯誤](../test/media/web_test_dynamicparameter_runresults.png "Web_Test_DynamicParameter_RunResults")
+     ![測試結果中的動態參數錯誤](../test/media/web_test_dynamicparameter_runresults.png)
 
      JScriptQuery.aspx 要求節點會在編輯器中反白顯示。 展開節點就會注意到 CustomQueryString 的 "1v0yhyiyr0raa2w4j4pwf5zl" 部分似乎是動態的。
 
-     ![CustomQueryString 中的疑似動態參數](../test/media/web_test_dynamicparameter_runresults2.png "Web_Test_DynamicParameter_RunResults2")
+     ![CustomQueryString 中的疑似動態參數](../test/media/web_test_dynamicparameter_runresults2.png)
 
 3.  返回 [Web 效能測試結果檢視器]，並選取失敗的 JScriptQuery.aspx 頁面。 然後，選取要求索引標籤，確認已清除 [顯示未經處理資料] 核取方塊，向下捲動並對 CustomQueryString 選取快速尋找。
 
-     ![使用快速尋找隔離動態參數](../test/media/web_test_dynamicparameter_runresultsquckfind.png "Web_Test_DynamicParameter_RunResultsQuckFind")
+     ![使用快速尋找隔離動態參數](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4.  查看測試編輯器就可得知指派給 JScriptQuery.aspx 要求之 CustomQueryString 的值為：`jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`，而疑似動態部分為 "1v0yhyiyr0raa2w4j4pwf5zl"。 在 [尋找目標] 下拉式清單中，移除搜尋字串的可疑部分。 字串應該是 "CustomQueryString=jScriptQueryString___"。
 
@@ -206,43 +207,43 @@ ms.lasthandoff: 04/26/2018
 
 5.  在 HiddenFieldSessionID 上使用快速尋找，清除 [向上搜尋] 核取方塊和選取目前要求。
 
-     ![針對 HiddenFieldSession 使用快速尋找](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png "Web_Test_DynamicParameter_RunResultsQuckFindHiddenSession")
+     ![針對 HiddenFieldSession 使用快速尋找](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      請注意，傳回的值與原始 Web 效能測試錄製的字串並不相同。 對於這個測試回合，傳回的值為 "5w4v3yrse4wa4axrafykqksq"，而在原始錄製中，值為 "1v0yhyiyr0raa2w4j4pwf5zl"。 因為值與原始錄製的值不相符，所以產生錯誤。
 
 6.  由於我們必須修正原始錄製的動態參數，請選擇工具列中的記錄結果。
 
-     ![選擇錄製的結果](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
+     ![選取 [錄製的結果]](../test/media/web_test_dynamicparameter_recordedresult.png)
 
 7.  在錄製的結果中，選取第三項要求，這與您在測試回合結果中找出的 Querystringrequest.aspx 要求相同。
 
-     ![在錄製的結果中選擇相同的要求](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png "Web_Test_DynamicParameter_RecordedResultsSelectNode")
+     ![在錄製的結果中選擇相同的要求](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
      選擇回應索引標籤，向下捲動並選擇先前隔離的原始動態參數值 1v0yhyiyr0raa2w4j4pwf5zl，並且加入擷取規則。
 
-     ![為動態參數新增擷取規則](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png "Web_Test_DynamicParameter_RecordedResultAddExtractionRule")
+     ![為動態參數加入擷取規則](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
      新的擷取規則已加入至 Querystring.aspx 要求，而且已獲指派 "Param0" 的值。
 
      如果對話方塊通知我們找到可讓所擷取文字將參數繫結至其中的相符項目，則選擇 [是]。
 
-     ![已建立擷取規則](../test/media/web_test_dynamicparameter_addextractiondialog.png "Web_Test_DynamicParameter_AddExtractionDialog")
+     ![已建立擷取規則](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
 8.  選擇 [尋找下一個]。 需要變更的第一個符合項目，這是 JScriptQuery 頁面中 CustomQueryString 的參數。
 
-     ![尋找並取代參數的文字](../test/media/web_test_dynamicparameter_addextractionfindreplace.png "Web_Test_DynamicParameter_AddExtractionFindReplace")
+     ![尋找並取代參數的文字](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
 9. 選擇 [取代]。
 
-     ![以參數取代文字](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png "Web_Test_DynamicParameter_AddExtractionFindReplace2")
+     ![以參數取代文字](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
      JScriptQuery.aspx 要求底下的 QueryString 參數會以新的內容參數更新：CustomQueryString=jScriptQueryString___{{Param0}}。
 
-     ![參數已套用至查詢字串](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png "Web_Test_DynamicParameter_AddExtractionFindReplace3")
+     ![參數已套用至查詢字串](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
 10. 關閉 [尋找和取代] 對話方塊。 請注意要求樹狀中，相互關聯之偵測到的動態參數和未偵測到的動態參數之間相似的結構。
 
-     ![偵測到的和相互關聯的動態參數](../test/media/web_test_dynamicparameter_conclusion.png "Web_Test_DynamicParameter_Conclusion")
+     ![偵測到的和相互關聯的動態參數](../test/media/web_test_dynamicparameter_conclusion.png)
 
 11. 執行測試。 它現在會執行，而不會失敗。
 
@@ -250,7 +251,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>問：如果 Web 應用程式有修改，我可以重新執行動態參數偵測嗎？
 
- **答：**可以，請使用下列程序：
+ **答：** 可以，請使用下列程序：
 
 1.  選擇工具列中的 [將動態參數升至 Web 測試參數] 按鈕。
 
@@ -264,4 +265,4 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>問：我是否需要設定 Visual Studio 來偵測動態參數？
 
- **答：**預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以[從 Web 效能測試編輯器中執行動態參數偵錯](#FindingNonDetectableDynamicParamters_QA_ReRunDetection)。
+ **答：** 預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以[從 Web 效能測試編輯器中執行動態參數偵錯](#FindingNonDetectableDynamicParamters_QA_ReRunDetection)。

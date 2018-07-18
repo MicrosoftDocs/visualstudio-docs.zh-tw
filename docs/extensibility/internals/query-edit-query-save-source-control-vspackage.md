@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131513"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>(原始檔控制 VSPackage) 儲存的查詢編輯查詢
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器可以廣播查詢編輯查詢儲存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 原始檔控制虛設常式實作 QEQS 服務，使其具備 QEQS 事件的收件者。 這些事件然後委派給目前作用中的原始檔控制 VSPackage。 VSPackage 實作的作用中的原始檔控制<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>及其方法。 方法的`IVsQueryEditQuerySave2`介面通常稱為第一次，以及在儲存文件之前，編輯的文件之前。  

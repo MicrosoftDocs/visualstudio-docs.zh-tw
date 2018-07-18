@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134769"
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 本文件示範如何撰寫.vsct 檔加入 Visual Studio 整合式的開發環境 (IDE) 中的功能表項目、 工具列和其他使用者介面 (UI) 項目。 UI 項目加入 Visual Studio Package (VSPackage) 已經沒有.vsct 檔時，請使用下列步驟。  

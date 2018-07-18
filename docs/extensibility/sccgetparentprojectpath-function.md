@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142023"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
 此函式會判斷指定的專案的父專案路徑。 使用者加入原始檔控制的 Visual Studio 專案時，會呼叫此函數。  

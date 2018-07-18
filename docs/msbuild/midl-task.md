@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575721"
 ---
 # <a name="midl-task"></a>MIDL 工作
 包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 midl.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  

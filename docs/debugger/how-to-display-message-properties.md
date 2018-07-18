@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473273"
 ---
 # <a name="how-to-display-message-properties"></a>如何：顯示訊息屬性
 若要進一步了解訊息中所列[訊息檢視](../debugger/messages-view.md)，使用[訊息屬性 對話方塊](../debugger/message-properties-dialog-box.md)。  

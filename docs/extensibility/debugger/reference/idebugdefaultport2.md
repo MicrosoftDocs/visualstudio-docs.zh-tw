@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106899"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 這個介面會提供數種方法來存取伺服器的連接埠，以及通知功能。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457760"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 本文中的資訊可能不經通知即予以變更。 除非另有說明，否則本文範例中所使用的公司、名稱和資料均為虛構。 非經 Microsoft Corporation 的書面許可，不得將本文的任何部分以任何形式或任何方式 (電子或機械式) 重製或傳輸以用於任何用途。  

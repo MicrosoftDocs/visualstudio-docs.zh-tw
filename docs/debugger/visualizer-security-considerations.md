@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476513"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。  

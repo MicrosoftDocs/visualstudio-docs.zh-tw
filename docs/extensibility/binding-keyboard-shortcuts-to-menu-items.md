@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103353"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>繫結之功能表項目的的鍵盤快速鍵
 要繫結的自訂功能表命令鍵盤快速鍵，只要加入.vsct 檔以取得封裝的項目。 本主題說明如何將鍵盤快速鍵對應至自訂按鈕、 功能表項目或工具列命令，以及如何套用的預設編輯器中的鍵盤對應，或將它限制為自訂編輯器。  

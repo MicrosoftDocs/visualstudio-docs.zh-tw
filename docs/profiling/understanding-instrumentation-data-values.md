@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477544"
 ---
-# <a name="understanding-instrumentation-data-values"></a>認識檢測資料值
+# <a name="understand-instrumentation-data-values"></a>了解檢測資料值
 
 Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式呼叫、程式碼行及指示的詳細計時資訊
 
-檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列項目︰
+檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列資訊︰
 
 - 此收集事件與前一個事件之間的間隔。
 
@@ -99,4 +100,4 @@ Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式
 ## <a name="see-also"></a>另請參閱
 
 [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)  
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
+[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

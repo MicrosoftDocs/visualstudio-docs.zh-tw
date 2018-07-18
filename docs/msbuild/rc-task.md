@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574564"
 ---
 # <a name="rc-task"></a>RC 工作
 包裝 Microsoft Windows 資源編譯器工具 (rc.exe)。 **RC** 工作會將資料指標、圖示、點陣圖、對話方塊和字型這類資源編譯為資源 (.res) 檔案。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜資源編譯器＞。  

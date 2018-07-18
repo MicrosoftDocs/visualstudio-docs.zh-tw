@@ -1,11 +1,11 @@
 ---
-title: "IProcessDebugManager::CreateApplication |Microsoft 文件"
-ms.custom: 
+title: IProcessDebugManager::CreateApplication |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IProcessDebugManager.CreateApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IProcessDebugManager::CreateApplication
 ms.assetid: d6b646f2-8af0-445c-ae7e-a9772042b3a1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729208"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 建立新的偵錯應用程式物件為此應用程式。  

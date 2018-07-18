@@ -23,6 +23,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548553"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：將執行窗格加入至 Word 文件或 Excel 活頁簿
   若要加入 Microsoft Office Word 文件或 Microsoft Excel 活頁簿的 [動作] 窗格，請先建立 Windows Form 使用者控制項。 然後，將使用者控制項加入<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>屬性`ThisDocument.ActionsPane`欄位 (Word) 或`ThisWorkbook.ActionsPane`您的專案中的欄位 (Excel)。  

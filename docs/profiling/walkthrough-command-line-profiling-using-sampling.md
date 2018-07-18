@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572149"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/22/2018
 「取樣」是一種剖析的方法，會定期輪詢特定處理序以判斷使用中的函數。 產生的資料會提供計數，表示在取樣處理序時，函式位於呼叫堆疊頂端的頻率。
 
 > [!NOTE]
-> 程式碼剖析工具的命令列工具位於 Visual Studio 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼分析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 PeopleTrax 是 32 位元應用程式。
+> 程式碼剖析工具的命令列工具位於 Visual Studio 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼分析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 PeopleTrax 是 32 位元應用程式。
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>使用取樣方法剖析 PeopleTrax 應用程式
 
@@ -58,13 +59,13 @@ ms.lasthandoff: 05/22/2018
     VSPerfCLREnv /sampleon
     ```
 
-5. 執行 VSPerfCmd.exe 這個控制分析工具的命令列工具，以開始剖析。 下列命令會以取樣模式啟動應用程式和分析工具：
+5. 執行 *VSPerfCmd.exe* 這個控制分析工具的命令列工具，以開始剖析。 下列命令會以取樣模式啟動應用程式和分析工具：
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     分析工具處理序隨即開始，並附加至 PeopleTrax.exe 處理序。 分析工具處理序開始將收集到的剖析資料寫入報告檔。
+     分析工具處理序隨即開始，並附加至 *PeopleTrax.exe* 處理序。 分析工具處理序開始將收集到的剖析資料寫入報告檔。
 
 6. 按一下 [取得人員]。
 
@@ -86,13 +87,13 @@ ms.lasthandoff: 05/22/2018
     VSPerfCLREnv /sampleoff
     ```
 
-11. 剖析資料會儲存在 .vsp 檔案中，請使用下列其中一個方法來分析結果：
+11. 剖析資料會儲存在 .*vsp* 檔案中，請使用下列其中一個方法來分析結果：
 
-    - 在 Visual Studio IDE 中開啟 .vsp 檔案。
+    - 在 Visual Studio IDE 中開啟 .*vsp* 檔案。
 
          — 或 —
 
-    - 使用 VSPerfReport.exe 命令列工具產生逗號分隔值 (.csv) 檔案。 若要產生報表以供在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 外部使用，請使用下列命令：
+    - 使用 *VSPerfReport.exe* 命令列工具產生逗號分隔值 (.*csv*) 檔案。 若要產生報表以供在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 外部使用，請使用下列命令：
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

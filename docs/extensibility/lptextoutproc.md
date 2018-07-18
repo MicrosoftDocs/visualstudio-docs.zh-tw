@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143523"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 當使用者執行從原始檔控制作業，在整合式的開發環境 (IDE) 內時，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 外掛程式可以針對此用途顯示自己的訊息方塊。 不過，多個緊密整合，外掛程式可以傳遞字串給 IDE，並接著顯示在其原生方法來顯示狀態資訊。 這個機制是`LPTEXTOUTPROC`函式指標。 IDE 會實作此函式 （以下更詳細說明） 來顯示錯誤和狀態。  

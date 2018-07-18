@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139272"
 ---
 # <a name="private-galleries"></a>Private Galleries
 控制項、 範本和公佈到您開發的工具，您可以共用*私用組件庫*內部為您的組織，如下所示：  

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750294"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程步驟 1：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -33,11 +34,13 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-- Visual Studio 2017，具有下列選項：
+- 含下列選項的 Windows 上 Visual Studio 2017：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
   - [程式碼工具] 下 [個別元件] 索引標籤上的 [Git for Windows] 和 [Visual Studio 的 GitHub 擴充]。
 
 Django 專案範本也包含於所有舊版的適用於 Visual Studio 的 Python 工具，不過其詳細資料可能會和本教學課程所討論的內容不同 (和舊版的 Django 架構之間會有特別多的不同之處)。
+
+Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，請使用 [Visual Studio Code 中的 Python 延伸模組](https://code.visualstudio.com/docs/python/python-tutorial)。
 
 ### <a name="visual-studio-projects-and-django-projects"></a>「Visual Studio 專案」和「Django 專案」
 
@@ -62,7 +65,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
     - **解決方案**：讓此控制項保持設定為預設的 [建立新解決方案] 選項。
     - **解決方案名稱**：設定為 "LearningDjango"，這適用於本教學課程中作為多個專案容器的解決方案。
     - **為解決方案建立目錄**：設定維持不變 (預設值)。
-    - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。
+    - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 2017 安裝工具，並在 [程式碼工具] 下的 [個別元件] 索引標籤新增 Git for Windows 和 GitHub Extension for Visual Studio。
 
 1. 隨後 Visual Studio 會以對話方塊提示您，指出「此專案需要外部套件」(如下所示)。 此對話方塊出現的原因，是因為範本有包含參考最新 Django 1.x 套件的 `requirements.txt` 檔案。 (選取 [顯示必要套件] 來查看確切相依性)。
 
@@ -116,7 +119,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步驟 1-3：建立虛擬環境並將它從原始檔控制中排除
 
-在您為專案設定原始檔控制之後，便可以為專案所需的 Django 套件建立必要的虛擬環境。 接著，您可以使用 [Team Explorer] 將環境的資料夾從原始檔控制中排除。
+在您為專案設定原始檔控制之後，便可以建立包含專案所需之 Django 套件的虛擬環境。 接著，您可以使用 [Team Explorer] 將環境的資料夾從原始檔控制中排除。
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下 [Python 環境] 節點，然後選取 [新增虛擬環境]。
 

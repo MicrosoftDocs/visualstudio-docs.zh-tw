@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127970"
 ---
 # <a name="deploying-project-types"></a>部署專案類型
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 安裝新的專案類型彙總 (ProjectAggregator2.dll) 以及 Windows Installer 封裝 (ProjectAggregator2.msi) 可轉散發。 您必須使用新的彙總工具適用於 managed 程式碼專案類型。 ProjectAggregator2 運作的方法限制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案造成無法正常運作的 managed 程式碼專案類型的彙總工具。 下列步驟說明如何變更您要使用新的彙總工具的 VSPackage。  

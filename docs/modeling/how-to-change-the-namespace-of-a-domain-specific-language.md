@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948258"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更網域指定的語言命名空間
 您可以變更特定領域語言命名的空間。 您必須進行的變更**DSL 總管**、 Dsl 封裝專案中，屬性和組件資訊。
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 
 10. 重設 Visual Studio 實驗執行個體。
 
-    1.  刪除 **\Users\\ ***{name}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**
+    1.  刪除**\Users\\ ***{name}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**
 
     2.  在 Windows**啟動**功能表上，選擇**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，**重設實驗執行個體**。
 

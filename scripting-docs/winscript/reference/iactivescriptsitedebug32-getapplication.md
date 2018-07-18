@@ -1,13 +1,13 @@
 ---
-title: "IActiveScriptSiteDebug32::GetApplication |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptSiteDebug32::GetApplication |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: bb7fdf5a6d0b380a8024cfdfa70282bcf80ba16d
@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725018"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 傳回與此指令碼的站台相關聯的偵錯應用程式物件。  

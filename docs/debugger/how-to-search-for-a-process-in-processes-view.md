@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472474"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 您可以使用它的處理序識別碼或模組字串做為搜尋準則搜尋處理序檢視中的特定處理序。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示所選處理序的屬性，處理序樹狀結構中。  

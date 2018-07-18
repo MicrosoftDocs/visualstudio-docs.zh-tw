@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480328"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web Form
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 它會顯示您如何啟動及停止執行、 設定中斷點，以及在中檢查變數**監看式**視窗。  

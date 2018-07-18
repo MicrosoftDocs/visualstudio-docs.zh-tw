@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480845"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 擷取位置的登錄指示項時[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設`LocIsEnregistered`。  

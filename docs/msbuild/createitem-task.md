@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577479"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479733"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>巡覽程式碼與 Visual Studio 偵錯工具
 熟悉命令和快速鍵來巡覽偵錯工具中的程式碼，也會讓更快且更容易尋找和解決您的應用程式中的問題。 當您巡覽程式碼偵錯工具中的時，您可以檢查您的應用程式的狀態，或深入了解它的執行流程。  

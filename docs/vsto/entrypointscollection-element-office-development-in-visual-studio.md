@@ -22,6 +22,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447901"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPointsCollection` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoints` 項目。  

@@ -1,11 +1,11 @@
 ---
-title: "IProcessDebugManager::AddApplication |Microsoft 文件"
-ms.custom: 
+title: IProcessDebugManager::AddApplication |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IProcessDebugManager.AddApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IProcessDebugManager::AddApplication
 ms.assetid: 73828299-11eb-4c58-ad70-f80f2d0eede8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729518"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
 新增機器偵錯管理員清單應用程式執行的應用程式。  

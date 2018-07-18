@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129731"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持續性和執行 Document 資料表
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，專案會完全負責管理其專案，這些項目他們完成使用服務時，持續性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文件是在 Visual Studio 環境中的持續性的基本單位。 專案協調開啟、 儲存及重新命名的文件與執行文件資料表 (RDT)，會追蹤所有開啟的文件的狀態的資源。  

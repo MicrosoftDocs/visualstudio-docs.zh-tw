@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461434"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  

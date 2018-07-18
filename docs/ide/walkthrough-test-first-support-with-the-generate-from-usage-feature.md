@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748188"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/22/2018
 
 3.  在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 `UnitTestProject1`。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
 
-     ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png "NewProject_Test")
+     ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png)
 
 4.  選擇 [確定] 關閉 [新增專案] 對話方塊。
 
@@ -66,9 +67,9 @@ ms.lasthandoff: 05/22/2018
 
 3.  找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)燈泡會出現在左邊界 (僅限 C#) 或波浪線正下方。
 
-     ![Visual Basic 中的快速動作](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Visual Basic 中的快速動作](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35; 中的快速動作](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![C&#35; 中的快速動作](../ide/media/genclass_underline.png)
 
 4.  選擇或按一下 [快速動作] 燈泡。 您會看到錯誤訊息，說明類型 `Automobile` 未定義。 您也會看到一些解決方案。
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 05/22/2018
 
 6. 在 [專案] 清單中，按一下 [GFUDemo\_VB] 或 [GFUDemo_CS] 指示 Visual Studio 將檔案新增至類別庫專案，不是新增至測試專案。 如果尚未選取，請選擇 [建立新檔案]並將其命名為 *Automobile.cs* 或 *Automobile.vb*。
 
-     ![[產生新的類型] 對話方塊](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![[產生新的類型] 對話方塊](../ide/media/genotherdialog.png)
 
 6.  按一下 [確定]  關閉對話方塊，並建立新的檔案。
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 05/22/2018
 
      下圖顯示 [測試結果]  視窗。
 
-     ![失敗的測試結果](../ide/media/testsfailed.png "TestsFailed")
+     ![失敗的測試結果](../ide/media/testsfailed.png)
 
 2.  在 [測試結果] 視窗中，在每個測試結果資料列按兩下，移至每一項測試的位置。
 
@@ -155,7 +156,7 @@ ms.lasthandoff: 05/22/2018
 
      測試這一次會成功。 下圖顯示 [測試結果]  視窗。
 
-     ![成功的測試結果](../ide/media/testspassed.png "TestsPassed")
+     ![成功的測試結果](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>另請參閱
 

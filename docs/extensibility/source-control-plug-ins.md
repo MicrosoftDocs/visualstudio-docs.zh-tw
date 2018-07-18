@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140212"
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考章節包含完整的介面規格，可讓原始檔控制系統整合與[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會指定的語法和語意的原始檔控制外掛程式必須實作介面以各種函式和資料類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  

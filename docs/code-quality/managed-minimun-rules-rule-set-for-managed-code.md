@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919048"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>受管理的最小規則規則集為 managed 程式碼
 Managed 最小規則的重點在於程式碼，包括潛在的安全性漏洞、 應用程式當機，以及其他重要邏輯和設計錯誤中最關鍵的問題。 您應該建立包含這個規則設定任何自訂規則集中您針對您的專案。

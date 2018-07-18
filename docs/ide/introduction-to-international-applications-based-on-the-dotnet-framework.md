@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943936"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 

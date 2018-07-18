@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplication110::CallableWaitForHandles |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication110::CallableWaitForHandles |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplication110::CallableWaitForHandles
 ms.assetid: 02e79b60-0d67-47f9-bf78-b65a02c9c014
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725348"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
 等候任何指定的控制代碼，同時允許發出信號的跨執行緒呼叫張貼至這個執行緒。 必須呼叫這個方法，從 偵錯工具執行緒。  

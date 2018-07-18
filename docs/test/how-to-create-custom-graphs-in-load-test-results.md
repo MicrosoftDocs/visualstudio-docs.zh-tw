@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965121"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖形
 

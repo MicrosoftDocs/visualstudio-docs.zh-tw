@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130567"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>原始檔控制存放區的本機專案資料夾的選擇性比較
 在原始檔控制外掛程式 API 1.2 局部的專案資料夾與原始檔控制之間的比較透過函式的使用[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)。  

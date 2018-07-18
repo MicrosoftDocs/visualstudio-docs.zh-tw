@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101790"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令加入至 [開始] 頁面
 當您建立自訂起始頁時，您可以將 Visual Studio 命令加入它。 本文將討論不同的方式將 Visual Studio 命令繫結至 XAML 開始頁面上的物件。  

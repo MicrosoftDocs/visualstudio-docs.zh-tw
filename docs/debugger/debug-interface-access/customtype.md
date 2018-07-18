@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468251"
 ---
 # <a name="customtype"></a>CustomType
 廠商定義的型別 （編譯器特定型別） 所識別`SymTagCustomType`符號。  

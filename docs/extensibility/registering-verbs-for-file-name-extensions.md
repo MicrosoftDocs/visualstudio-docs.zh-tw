@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138102"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊副檔名的指令動詞
 與應用程式的檔案名稱副檔名關聯通常會有發生於使用者按兩下檔案時的慣用的動作。 這建議動作連結至一個動詞命令，例如開啟時，都會對應至動作。  

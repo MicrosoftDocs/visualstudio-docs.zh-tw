@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139048"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>註冊和取消登錄 Vspackage
 您可以使用屬性來註冊 VSPackage，但  

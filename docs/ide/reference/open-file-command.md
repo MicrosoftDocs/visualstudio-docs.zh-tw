@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703817"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 開啟現有的檔案，並可讓您指定編輯器。

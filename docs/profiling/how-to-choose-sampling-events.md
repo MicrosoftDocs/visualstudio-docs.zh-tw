@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765628"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 根據預設，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具收集效能資料的間隔，是分析程序使用的處理器週期數。 一個間隔的預設週期數是 10,000,000，在 1 GH 電腦上約為 0.01 秒。 您可以變更間隔中的週期數，而且可以變更取樣事件。 下列是可用的取樣事件︰  
@@ -59,9 +60,9 @@ ms.lasthandoff: 04/19/2018
   
 5.  當您選取取樣事件時，[取樣間隔] 文字方塊中會顯示預設的取樣間隔值。 您可視需要在文字方塊中輸入您想要的值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)   
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
- [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
+ [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

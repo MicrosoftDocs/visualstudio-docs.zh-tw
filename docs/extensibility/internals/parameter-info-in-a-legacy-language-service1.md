@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132759"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>在舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊工具提示提供使用者有關的語言建構中的提示。  

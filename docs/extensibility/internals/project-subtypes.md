@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130653"
 ---
 # <a name="project-subtypes"></a>專案子類型
 專案子類型可讓您自訂或 flavor 的專案系統的行為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自訂包括將其他資料儲存在專案檔中，加入或篩選中的項目**加入新項目**對話方塊中，控制如何組件是偵錯和部署，並擴充專案**屬性頁面** 對話方塊。 Vspackage 實作專案子類型使用 COM 彙總。  

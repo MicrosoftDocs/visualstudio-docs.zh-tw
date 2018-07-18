@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130889"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用 開啟檔案命令顯示檔案
 下列步驟描述 IDE 如何處理**開啟檔案**命令，可用於**檔案**功能表[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。  

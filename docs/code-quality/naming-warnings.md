@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927083"
 ---
 # <a name="naming-warnings"></a>命名警告
 命名警告支援遵循的命名慣例[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]設計指導方針。

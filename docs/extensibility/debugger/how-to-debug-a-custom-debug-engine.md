@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106977"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何： 偵錯自訂偵錯引擎
 專案類型會從啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示所控制的執行個體啟動時 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]無法偵錯 DE。 下面這樣是可讓您偵錯您的自訂 DE 的步驟。  

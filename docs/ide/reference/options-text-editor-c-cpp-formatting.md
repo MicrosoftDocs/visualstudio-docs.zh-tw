@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946061"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
 讓您在使用 C 或 C++ 進行程式設計時，變更 [程式碼編輯器] 的預設行為。

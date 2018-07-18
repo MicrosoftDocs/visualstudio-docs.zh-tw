@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138710"
 ---
 # <a name="wizards"></a>精靈
 建立精靈之後，您通常想要將它加入至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 加入的精靈則會出現在**加入新的專案**或**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，開啟的方案中以滑鼠右鍵按一下**方案總管 中**，指向 **新增**，和然後按一下 **新專案**或**新項目**。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945151"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 

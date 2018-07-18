@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126792"
 ---
 # <a name="extending-projects"></a>擴充專案
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署的單位的方式。 您可以找到詳細資訊中的專案[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  

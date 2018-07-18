@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134492"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何： 更新狀態列
 **狀態列**一種控制列位於包含一或多個狀態的文字行或指標許多應用程式視窗的下方。  

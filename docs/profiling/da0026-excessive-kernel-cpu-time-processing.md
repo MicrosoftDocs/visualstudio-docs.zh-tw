@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7f38bbf0655099e3c90f3893c34be39ef4b28
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4a571b0eee0a0cdd4b6e232dc13bd8e8923da805
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750177"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多核心 CPU 時間處理
 |||  
@@ -38,4 +39,4 @@ ms.lasthandoff: 04/19/2018
  應用程式花在核心模式執行很高比例的時間可能需要進一步調查。 使用者模式應用程式會轉換成核心模式以執行 I/O 作業、等候執行緒或處理同步原始物件，或執行系統呼叫。 當您根據系統呼叫選取要收集樣本呼叫堆疊的選項時，可以調查應用程式呼叫的系統呼叫種類，以及負責呼叫這些系統呼叫的函式。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要調查應用程式呼叫的系統呼叫種類，請再次執行分析並根據系統呼叫選取要收集樣本的選項。 如果您在 IDE 內執行分析工具，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)了解詳細資訊。 如果您要從命令列執行分析工具，請參閱分析工具命令列工具參考中 [VSPerfCmd](../profiling/vsperfcmd.md) 主題中的＜取樣間隔選項＞一節。
+ 若要調查應用程式呼叫的系統呼叫種類，請再次執行分析並根據系統呼叫選取要收集樣本的選項。 如果您在 IDE 內執行分析工具，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)了解詳細資訊。 如果您要從命令列執行分析工具，請參閱分析工具命令列工具參考中 [VSPerfCmd](../profiling/vsperfcmd.md) 一文的＜取樣間隔選項＞一節。

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101138"
 ---
 # <a name="debugging-tasks"></a>偵錯工作
 偵錯程式，它必須啟動並偵錯引擎 (DE) 必須連接到它，否則 DE 必須附加至先前啟動程式。 在附加之後，DE 必須產生特定的啟動事件。 在回應時，偵錯封裝嘗試繫結在 IDE 中設定的中斷點。 當程式叫用繫結的中斷點時，它會中止，並等待使用者輸入。  

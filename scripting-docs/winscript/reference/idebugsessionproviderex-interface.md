@@ -1,14 +1,14 @@
 ---
-title: "IDebugSessionProviderEx 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugSessionProviderEx 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 26c5da2d-8c93-4d2b-94d2-97aaa377dcfe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726928"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx 介面
 提供 IDE，可啟用主控件和語言初始化偵錯的偵錯工具的主要介面。 它會建立執行的應用程式的偵錯工作階段。 這個介面是由電腦偵錯管理員實作的。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645868"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 如果 Windows 指令碼引擎可讓來源的程式碼文字加入指令碼的程序，它會實作`IActiveScriptParseProcedure32`介面。 這在具有任何獨立的撰寫環境，例如，VBScript、 解譯指令碼語言提供替代機制 (以外`IActiveScriptParse32`或`IPersist`*) 將指令碼程序新增至命名空間。  

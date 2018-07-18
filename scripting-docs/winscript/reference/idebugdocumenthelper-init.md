@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentHelper::Init |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentHelper::Init |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.Init
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::Init
 ms.assetid: 1dd5a01f-0779-4109-8c6c-f16f5a3835bf
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726318"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 `Init`方法初始化偵錯文件協助程式名稱，且初始屬性。  

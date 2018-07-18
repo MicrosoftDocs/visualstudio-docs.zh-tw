@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101257"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 之後啟動程式，連接埠必須要收到通知，，如下所示：  

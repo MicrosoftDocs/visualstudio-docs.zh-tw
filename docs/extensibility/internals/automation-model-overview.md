@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134743"
 ---
 # <a name="automation-model-overview"></a>Automation 模型概觀
 Automation 模型包含一組針對，您可以撰寫 Visual Studio 增益集或擴充功能的物件。 增益集是應用程式可以操作 Visual Studio 環境並自動化一般工作。 Visual Studio 擴充功能可以建立自訂 Visual Studio 元件，或加入至標準元件，例如文字編輯器功能。  

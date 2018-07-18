@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978784"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -130,8 +131,8 @@ ms.lasthandoff: 04/26/2018
 |**最小回應時間**|這不包括考慮時間。|否|
 |**最大回應時間**|這不包括考慮時間。|否|
 |**中間值回應時間**|這不包括考慮時間。|否|
-|**90% 回應時間**|異動時間的第 90 個百分位數。 這不包括考慮時間。 **注意：**與使用 [90% 異動時間] 值的 Visual Studio Team System 2008 Test Load Agent 有所不同。|否|
-|**95% 回應時間**|異動時間的第 95 個百分位數。 這不包括考慮時間。 **注意：**與使用 [95% 異動時間] 值的 Visual Studio Team System 2008 Test Load Agent 有所不同。|否|
+|**90% 回應時間**|異動時間的第 90 個百分位數。 這不包括考慮時間。 **注意：** 與使用 [90% 異動時間] 值的 Visual Studio Team System 2008 Test Load Agent 有所不同。|否|
+|**95% 回應時間**|異動時間的第 95 個百分位數。 這不包括考慮時間。 **注意：** 與使用 [95% 異動時間] 值的 Visual Studio Team System 2008 Test Load Agent 有所不同。|否|
 |**99% 回應時間**|異動時間的第 99 個百分位數。 這不包括考慮時間。|否|
 |**標準差回應時間**|這不包括考慮時間。|否|
 

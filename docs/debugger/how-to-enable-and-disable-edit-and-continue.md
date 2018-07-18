@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480449"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +）
 您可以停用或啟用編輯後繼續中的**選項**在執行階段 對話方塊。 但是在進行偵錯時，無法變更這項設定。  

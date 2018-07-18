@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472393"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 本節將說明如何偵錯數種類型的 Web 應用程式。  

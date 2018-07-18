@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105134"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>改寫舊版程式碼編輯器
 在 Visual Studio 編輯器具有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，若要使用編輯器功能。 指示也會示範如何取得編輯器的服務，在 managed 和 unmanaged 程式碼中使用配接器。  

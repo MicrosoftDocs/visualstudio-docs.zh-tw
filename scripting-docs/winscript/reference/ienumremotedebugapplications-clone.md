@@ -1,11 +1,11 @@
 ---
-title: "IEnumRemoteDebugApplications::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumRemoteDebugApplications::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumRemoteDebugApplications.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumRemoteDebugApplications::Clone
 ms.assetid: 762f6dac-1be4-49ec-afda-68c1b29f7a4b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727378"
 ---
 # <a name="ienumremotedebugapplicationsclone"></a>IEnumRemoteDebugApplications::Clone
 建立列舉值，包含目前的列舉值的狀態相同。  

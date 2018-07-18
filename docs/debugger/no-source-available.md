@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479731"
 ---
 # <a name="no-source-available"></a>沒有可用來源
 您的專案未包含您嘗試檢視之程式碼的原始程式碼。 常見的原因按兩下沒有原始程式碼的模組**呼叫堆疊視窗**或**執行緒 視窗**。 您可以繼續偵錯，但無法使用來源視窗設定中斷點，或是在此位置執行其他動作。 如果您要設定中斷點，請使用**反組譯碼視窗**改為。  

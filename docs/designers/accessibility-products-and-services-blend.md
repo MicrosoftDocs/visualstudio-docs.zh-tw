@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923901"
 ---
 # <a name="accessibility-products-and-services-blend"></a>協助工具產品和服務 (Blend)
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列章節提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：

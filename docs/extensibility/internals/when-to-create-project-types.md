@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140416"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自訂項目。 下列指導方針有助於您判斷是否為您的案例需要新的專案類型。  

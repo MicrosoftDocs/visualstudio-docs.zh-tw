@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132145"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>在舊版語言服務的快速諮詢
 IntelliSense 快速諮詢 會顯示在來源中的識別項的相關資訊時使用者識別項中將插入號，選取**快速諮詢**從**IntelliSense**功能表或保存滑鼠資料指標的識別碼上方。 這會導致識別項的相關資訊會出現工具提示。 這項資訊通常包含識別項類型。 使用偵錯引擎時，這項資訊可能包含目前的值。 語言服務會處理只有識別碼時，偵錯引擎會提供運算式值。  

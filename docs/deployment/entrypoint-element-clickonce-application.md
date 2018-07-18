@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565246"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;元素 （ClickOnce 應用程式）
 識別應該是組件時執行這[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用戶端電腦上執行應用程式。  

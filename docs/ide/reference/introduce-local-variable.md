@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950461"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您立即產生區域變數來取代現有的運算式。
+**功能：** 讓您立即產生區域變數來取代現有的運算式。
 
-**時機：**您有只要放在區域變數中便可在稍後輕鬆重複使用的程式碼。
+**時機：** 您有只要放在區域變數中便可在稍後輕鬆重複使用的程式碼。
 
-**原因：**您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好是只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
+**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好是只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
 
 ## <a name="how-to"></a>操作說明
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140832"
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案可以擴充來支援 Web 程式設計語言。 語言必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，讓專案範本可以出現在**新網站**時選取語言 對話方塊。

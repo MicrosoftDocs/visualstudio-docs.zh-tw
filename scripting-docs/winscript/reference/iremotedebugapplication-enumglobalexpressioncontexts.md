@@ -1,11 +1,11 @@
 ---
-title: "IRemoteDebugApplication::EnumGlobalExpressionContexts |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplication::EnumGlobalExpressionContexts |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IRemoteDebugApplication.EnumGlobalExpressionContexts
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IRemoteDebugApplication::EnumGlobalExpressionContexts
 ms.assetid: 61598a34-f409-42a2-810d-a9e92e2f4861
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728688"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
 列舉執行此應用程式中的所有語言通用的運算式內容。  

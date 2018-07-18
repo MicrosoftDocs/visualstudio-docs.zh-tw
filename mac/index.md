@@ -5,15 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693688"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
-Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 Visual Studio for Mac 支援下列開發：
+Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 支援下列開發類型：
 
 * 使用 .NET 的行動裝置：Android、iOS、tvOS、watchOS
 * Mac 桌面應用程式

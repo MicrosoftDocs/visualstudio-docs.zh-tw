@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668349"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在該檔案的系統診斷區段中，編輯 `EqtTraceLevel` 參數的項目。 您的程式碼應該會與以下相似：
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 -   再次安裝測試代理程式。 這次請指定測試控制器的 IP 位址，而非測試控制器名稱。
 
- 這適用於測試控制器、測試代理程式服務和測試代理程式處理序。 在超過一個以上網路介面卡的電腦上所執行的每一個處理序，都必須設定 `BindTo` 屬性。 這三個處理序的 `BindTo` 屬性設定程序都一樣，和前述針對測試控制器所指定的設定程序相同。 若要設定測試代理程式服務與測試代理程式處理序的記錄層次，請使用[在測試控制器電腦上設定記錄層次](#Logging)中列出的組態檔。
+ 這適用於測試控制器、測試代理程式服務和測試代理程式處理序。 在超過一個以上網路介面卡的電腦上所執行的每一個處理序，都必須設定 `BindTo` 屬性。 這三個處理序的 `BindTo` 屬性設定程序都一樣，和前述針對測試控制器所指定的設定程序相同。 若要設定測試代理程式服務與測試代理程式處理序的記錄層次，請使用[在測試控制器電腦上設定記錄層次](#setting-the-logging-level-on-a-test-controller-computer)中列出的組態檔。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481823"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用與 Visual Studio 的傾印檔案
 使用或不含堆積; 傾印檔案建立傾印檔案;開啟傾印檔案;尋找二進位檔、 pdb 的傾印檔案的原始程式檔。

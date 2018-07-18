@@ -1,14 +1,14 @@
 ---
-title: "Iactivescriptsitetraceinfo:: Sendscripttraceinfo 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Iactivescriptsitetraceinfo:: Sendscripttraceinfo 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0419e4c5-eb7c-45a3-b6dc-1a5e157d95f9
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724838"
 ---
 # <a name="iactivescriptsitetraceinfosendscripttraceinfo-method"></a>IActiveScriptSiteTraceInfo::SendScriptTraceInfo 方法
 會傳送追蹤資訊，包括事件類型、 內容和指令碼陳述式。  

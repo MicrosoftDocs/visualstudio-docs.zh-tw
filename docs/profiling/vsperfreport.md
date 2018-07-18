@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572211"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .csv 檔案。  
+VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .*csv* 檔案。  
   
  VSPerfReport 會使用下列語法︰  
   
@@ -32,15 +33,15 @@ VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-qu
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- 請注意，`filename` 必須是有效的 .vsp 或 .vsps 檔案。  
+ 請注意，`filename` 必須是有效的 .*vsp* 或 .*vsps* 檔案。  
   
- VSPerfReport 命令列工具也可以用來比較 .vsp 或 .vsps 檔案。 若要產生差異 ("diff") 報告，請使用下列語法︰  
+ VSPerfReport 命令列工具也可以用來比較 .*vsp* 或 .*vsps* 檔案。 若要產生差異 ("diff") 報告，請使用下列語法︰  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` 必須是有效的 .vsp 或 .vsps 檔案。  
+ `vspfilename1 and vspfilename2` 必須是有效的 .*vsp* 或 .*vsps* 檔案。  
   
 ## <a name="symbol-files"></a>符號檔  
  若要顯示符號資訊 (例如函式名稱與行號)，VSPerfReport 需要存取已分析元件的符號 (.PDB) 檔與 Windows 符號檔。 如需詳細資訊，請參閱[如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
@@ -57,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|從分析工具資料檔案移除先前內嵌的符號。 在第二次執行 PackSymbols 之前，執行此命令。|  
 |**SymbolPath:** `path`|指定包含分析工具資料檔案符號的一或多個搜尋路徑或符號伺服器。|  
 |**DebugSymPath**|列出搜尋符號以及是否找到符號的位置。 這個選項適合解決符號解析問題。|  
-|**PackSymbols**|將符號儲存到分析資料 (.vsp) 檔案中，這樣不需要符號 (.pdb) 檔案就能進行分析。|  
+|**PackSymbols**|將符號儲存到分析資料 (.vsp) 檔案中，這樣不需要符號 (.*pdb*) 檔案就能進行分析。|  
 |**Output:** *path*&#124;*filename*|指定產生之報告檔案的替代位置。 根據預設，會在目前的目錄中建立報告。|  
 |**SummaryFile**|分析並將已分析的資訊儲存於 .vsps 摘要檔中。|  
 |**PrintMarks**|在指定的報告檔案中顯示所有標記的名稱與時間戳記。|  
@@ -84,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |選項|描述|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|比較兩個報告檔案 (.vsp 或 .vsps)。 使用 diff 選項將會忽略摘要選項。|  
+|**Diff**  `vspfile1 vspfile2`|比較兩個報告檔案 (.*vsp* 或 .*vsps*)。 使用 diff 選項將會忽略摘要選項。|  
 |**Diff:**[*value*]|低於此臨界值將會略過兩個值之間的差異。 此外，將不會顯示包含值低於此臨界值的新資料。|  
 |**DiffTable:**[*tablename*]|使用此特定資料表來比較檔案。 預設為函式資料表。|  
 |**DiffColumn:**[*columnname*]|使用此特定資料行來比較值。 預設為專有樣本百分比資料行。|  

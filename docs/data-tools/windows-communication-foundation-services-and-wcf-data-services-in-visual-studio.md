@@ -42,6 +42,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925910"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]檢視方塊。 如需完整的文件，請參閱[WCF 資料服務 4.5](/dotnet/framework/data/wcf/index)。

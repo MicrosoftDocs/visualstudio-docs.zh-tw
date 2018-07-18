@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973525"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 > 不支援在已叫用的工作流程上設定中斷點。
 
 > [!WARNING]
-> 請確定您選取選項**啟用 Just My Code （僅限 Managed）**從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀方式置於另一個序列的序列，而且您在第一個內部序列上設定中斷點，請按**F11**將不進行偵錯個第二個內部序列**啟用 Just My Code （僅限 Managed）**選項並未選取。
+> 請確定您選取選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀方式置於另一個序列的序列，而且您在第一個內部序列上設定中斷點，請按**F11**將不進行偵錯個第二個內部序列**啟用 Just My Code （僅限 Managed）** 選項並未選取。
 
 > [!WARNING]
 > 如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。

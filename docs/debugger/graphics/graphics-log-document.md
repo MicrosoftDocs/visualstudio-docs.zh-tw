@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477871"
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 圖形記錄文件是在圖形診斷工作階段下執行應用程式時所發生圖形事件的記錄。 錄製之後，您可以在 Visual Studio 圖形分析器中檢查記錄來診斷轉譯和效能問題。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/18/2018
   
 |屬性|描述|  
 |--------------|-----------------|  
-|**路徑**|.vsglog 檔案的路徑。 **注意：**下舊版擷取，這個屬性是未使用。|  
+|**路徑**|.vsglog 檔案的路徑。 **注意：** 下舊版擷取，這個屬性是未使用。|  
   
  **模組資訊**  
  列出應用程式已在擷取工作階段期間，所載入之動態連結程式庫 (DLL) 的名稱和版本。  

@@ -1,16 +1,16 @@
 ---
-title: "IRemoteDebugApplication 介面 |Microsoft 文件"
-ms.custom: 
+title: IRemoteDebugApplication 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IRemoteDebugApplication interface
 ms.assetid: 96bf2a3f-049f-46ba-86ad-57fc184343a2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729598"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication 介面
 表示執行的應用程式。 不需要對應到作業系統處理序。 一般而言，偵錯工具為目標的應用程式進行偵錯。 程序進行偵錯管理員通常會實作應用程式物件。  

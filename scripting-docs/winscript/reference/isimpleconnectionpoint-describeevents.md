@@ -1,11 +1,11 @@
 ---
-title: "ISimpleConnectionPoint::DescribeEvents |Microsoft 文件"
-ms.custom: 
+title: ISimpleConnectionPoint::DescribeEvents |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ISimpleConnectionPoint.DescribeEvents
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - ISimpleConnectionPoint::DescribeEvents
 ms.assetid: 659ea05f-d41e-424a-bb38-df7672b2d135
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734018"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 在指定範圍的事件中傳回的 DISPID 和每個事件的名稱。  

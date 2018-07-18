@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949419"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。

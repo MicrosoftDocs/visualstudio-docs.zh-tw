@@ -26,11 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750112"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
 標記新範圍的開頭。  
@@ -125,11 +126,11 @@ HRESULT CvEnterSpanExVA(
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰** cvmarkers.h  
+ **標頭︰***cvmarkers.h*  
   
  **Unicode：** CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
   
  **ANSI：** CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

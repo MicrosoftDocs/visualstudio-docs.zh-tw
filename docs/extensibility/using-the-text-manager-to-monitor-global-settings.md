@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141668"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>使用文字管理員監控全域設定
 如果您實作的核心編輯器，您必須監視通用的設定值所做的變更，因為這些變更可能會影響您在編輯器的執行個體。 您可以透過文字管理員所引發的事件接聽追蹤所做的變更。 比方說，當您指定的外觀或行為元件的全域喜好設定，在核心編輯器中，其文件資料物件，例如文字管理員儲存這項資訊和通訊受影響的所有用戶端。  

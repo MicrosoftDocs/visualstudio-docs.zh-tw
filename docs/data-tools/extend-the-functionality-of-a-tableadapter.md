@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924445"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 您可以擴充 TableAdapter 的功能，將程式碼加入至 TableAdapter 的部分類別檔案。

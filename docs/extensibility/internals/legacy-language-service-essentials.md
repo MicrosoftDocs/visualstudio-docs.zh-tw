@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135441"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務 Essentials
 您必須提供整合到 Visual Studio 程式設計語言的語言服務。 本主題說明可在舊版語言服務的功能。  

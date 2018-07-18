@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561697"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 Windows Form 的應用程式設定可讓您輕鬆地建立、 儲存和維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件說明應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及如何 ClickOnce 移轉設定時使用者升級至下一個版本。  

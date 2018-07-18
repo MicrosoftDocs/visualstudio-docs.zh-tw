@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465586"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 描述區段比重的擷取資料，也就是連續的記憶體區塊至映像所提供的編譯模組。  

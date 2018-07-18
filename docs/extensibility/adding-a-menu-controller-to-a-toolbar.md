@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104626"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>功能表控制器加入工具列
 本逐步解決建置於[工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)逐步解說，並示範如何將功能表控制器加入至 [工具] 視窗工具列。 如下所示的步驟也可以套用至所建立的工具列[新增工具列](../extensibility/adding-a-toolbar.md)逐步解說。  

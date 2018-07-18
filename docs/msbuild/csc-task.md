@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575653"
 ---
 # <a name="csc-task"></a>Csc 工作
 包裝 CSC.exe，並產生可執行檔 (.exe 檔)、動態連結程式庫 (.dll 檔) 或程式碼模組 (.netmodule 檔)。 如需 CSC.exe 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。  

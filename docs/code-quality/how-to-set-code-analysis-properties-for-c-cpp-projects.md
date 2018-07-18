@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920673"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
 您可以設定使用哪些規則程式碼分析工具來分析專案的每個組態中的程式碼。 此外，您可以將程式碼分析，隱藏警告的程式碼與產生及協力廠商工具加入至您的專案。

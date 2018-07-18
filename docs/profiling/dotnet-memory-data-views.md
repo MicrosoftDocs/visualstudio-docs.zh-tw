@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262253"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。  

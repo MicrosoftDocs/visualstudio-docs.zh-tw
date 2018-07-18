@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573202"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具是用來檢測二進位檔。 使用下列語法叫用：  
@@ -43,7 +44,7 @@ VSInstr [/U] filename [/options]
 |**Exclude** `:funcspec`|指定探查時要從檢測中排除的函式規格。 這在分析函式中的探查插入卻造成無法預期或不想要的結果時很有用。<br /><br /> 請勿使用 **Exclude** 和 **Include** 選項來參考相同二進位檔中的函式。<br /><br /> 您可以使用不同的 **Exclude** 選項來指定多個函式規格。<br /><br /> `funcspec` 會定義為：<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1 > 對於原生程式碼而言是 `::`，對於 Managed 程式碼而言則是 `.`。<br /><br /> \<separator2> 一律為 `::`<br /><br /> 程式碼涵蓋範圍支援 **Exclude**。<br /><br /> 支援萬用字元 \*。 例如，要排除命名空間中的所有函式，可使用︰<br /><br /> MyNamespace::\*<br /><br /> 您可以使用 **VSInstr /DumpFuncs**，列出所指定二進位檔中函式的完整名稱。|  
 |**Include** `:funcspec`|指定二進位檔中的函式規格以使用探查來檢測。 二進位檔中的所有其他函式則不檢測。<br /><br /> 您可以使用不同的 **Include** 選項來指定多個函式規格。<br /><br /> 請勿使用 **Include** 和 **Exclude** 選項來參考相同二進位檔中的函式。<br /><br /> 程式碼涵蓋範圍不支援 **Include**。<br /><br /> `funcspec` 會定義為：<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1 > 對於原生程式碼而言是 `::`，對於 Managed 程式碼而言則是 `.`。<br /><br /> \<separator2> 一律為 `::`<br /><br /> 支援萬用字元 \*。 例如，要包含命名空間中的所有函式，可使用︰<br /><br /> MyNamespace::\*<br /><br /> 您可以使用 **VSInstr /DumpFuncs**，列出所指定二進位檔中函式的完整名稱。|  
 |**DumpFuncs**|列出指定映像中的函式。 不會執行任何檢測。|  
-|**ExcludeSmallFuncs**|從檢測中排除小型函式，其為不會進行任何函式呼叫的精簡函式。 **ExcludeSmallFuncs** 選項的檢測負荷較低，因此可改善檢測速度。<br /><br /> 排除小型函式，也會減少 .vsp 的檔案大小和分析所需的時間。|  
+|**ExcludeSmallFuncs**|從檢測中排除小型函式，其為不會進行任何函式呼叫的精簡函式。 **ExcludeSmallFuncs** 選項的檢測負荷較低，因此可改善檢測速度。<br /><br /> 排除小型函式，也會減少 .*vsp* 的檔案大小和分析所需的時間。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|插入設定檔標記 (用來分隔報表中資料的識別碼)，您可以用來識別 .vsp 報告檔中某個資料範圍的開頭或結尾。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱<br /><br /> `Markid` - 正整數 (長整數)，可用來當做設定檔標記的識別碼。|  
 |**Coverage**|執行涵蓋範圍檢測。 只能和下列選項搭配使用：**Verbose**、**OutputPath**、**Exclude** 及 **Logfile**。|  
 |**Verbose**|**Verbose** 選項是用來檢視有關檢測處理序的詳細資訊。|  
@@ -56,7 +57,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 SuspendProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間開始或繼續資料收集。<br /><br /> 其通常是在 **SuspendOnly** 選項已停止程式碼剖析之後，用來啟動程式碼剖析。 在指定位置插入 ResumeProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

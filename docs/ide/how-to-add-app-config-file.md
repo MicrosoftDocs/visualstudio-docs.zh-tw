@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31941970"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔新增至 C# 專案
 

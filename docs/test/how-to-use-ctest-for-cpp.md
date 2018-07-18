@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751029"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 CTest
 
@@ -29,7 +30,7 @@ Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此�
 
 下圖顯示使用 Google 測試架構的 CTest 執行結果：
 
-![VS2017 15.6 中使用 Google 測試架構的 CTest](media/ctest-test-explorer.png "[測試總管] 中的 CTest 和 Google 測試")
+![VS2017 15.6 中的 CTest 和 Google Test 架構](media/ctest-test-explorer.png)
 
 如果您是使用 CTest 而非 Google 或 Boost 配接器，便會看到 CTest 層級的結果，而不是個別測試方法層級的結果。 您可以偵錯並逐步執行僅限 CTest 可執行檔，但不支援個別測試上的堆疊追蹤。
 
@@ -37,7 +38,7 @@ Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此�
 
 在 **Visual Studio 2017 15.5 版**中，CTest 目前尚未與 [測試總管] 整合。 您可以從 CMake 主功能表執行測試，或從**方案總管**中 **CMakeLists.txt** 檔案的操作功能表執行測試。 測試結果會被導向至 Visual Studio 的 [輸出視窗]。
 
-![在 VS2017 15.5 中執行 CTest 測試](media/cpp-cmake-run-tests.png "在 15.5 中執行 CTest 測試")
+![在 VS2017 15.5 中執行 CTest 測試](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>另請參閱
 

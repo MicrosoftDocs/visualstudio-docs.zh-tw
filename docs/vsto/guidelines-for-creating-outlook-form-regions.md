@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548163"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>若要建立 Outlook 表單區域的指導方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：  

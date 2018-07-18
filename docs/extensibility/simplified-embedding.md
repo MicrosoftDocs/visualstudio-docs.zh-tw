@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142928"
 ---
 # <a name="simplified-embedding"></a>簡化的嵌入
 簡化內嵌時，會啟用在編輯器中 （也就是對的子系） 父代其文件檢視物件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗命令。 簡化的嵌入編輯器無法裝載作用中的控制項。 下圖中會顯示用來建立使用簡化的嵌入編輯器的物件。  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559591"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定位置讓終端使用者從此處執行安裝作業
 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，若要下載並安裝應用程式使用者的去向不一定是一開始發行應用程式的位置。 例如，在某些組織中開發人員可能會發行臨時伺服器，應用程式，然後系統管理員，將移至 Web 伺服器應用程式。  

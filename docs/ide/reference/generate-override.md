@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943862"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您針對任何可從基底類別覆寫的方法立即產生程式碼。
+**功能：** 讓您針對任何可從基底類別覆寫的方法立即產生程式碼。
 
-**時機：**您想要覆寫基底類別方法並自動產生簽章。
+**時機：** 您想要覆寫基底類別方法並自動產生簽章。
 
-**原因：**您可以自行撰寫方法簽章，不過，此功能將可自動產生簽章。
+**原因：** 您可以自行撰寫方法簽章，不過，此功能將可自動產生簽章。
 
 ## <a name="how-to"></a>操作說明
 

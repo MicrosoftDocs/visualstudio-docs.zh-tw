@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130433"
 ---
 # <a name="inside-the-core-editor"></a>核心編輯器內
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器是一組可讓您修改和查詢文字資訊的數個元件。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會路由到編輯器介面卡。 建議，不過，您調整您的自訂內容到新的編輯器應用程式開發介面。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266368"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。  
