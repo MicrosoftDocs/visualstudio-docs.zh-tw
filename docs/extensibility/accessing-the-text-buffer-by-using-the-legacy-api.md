@@ -1,5 +1,5 @@
 ---
-title: 使用舊版 API 存取文字緩衝區 |Microsoft 文件
+title: 使用舊版 API 存取的文字緩衝 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84bf79ea19fc0867643ce3e8ee6db0a645d9a0dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099469"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078010"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
-文字是負責管理文字資料流和檔案的持續性。 雖然緩衝區可以讀取或寫入其他格式，使用 Unicode 來執行所有一般與緩衝區通訊。 在舊版的 Api，文字緩衝區可以使用一段或二維座標系統來找出緩衝區中的字元位置。  
+# <a name="access-the-text-buffer-by-using-the-legacy-api"></a>使用舊版的 API 來存取文字緩衝區
+負責管理文字資料流和檔案持續性的文字。 雖然緩衝區可以讀取或寫入其他格式中，使用 Unicode 來執行所有一般的通訊緩衝區。 在舊版的 Api 中，文字緩衝區可以使用一段或二維的座標系統識別緩衝區中的字元位置。  
   
-## <a name="one--and-two-dimension-coordinate-systems"></a>其中一個，而兩個維度座標系統  
- 一維座標位置根據緩衝區，例如 147 中從第一個字元的字元位置。 您使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>介面，以存取緩衝區中的一維的位置。 二維座標系統為基礎行和索引組。 例如，43 緩衝區中的字元，5 會在行 43，該行的第一個字元右邊的五個字元。 您存取在緩衝區中使用的二維位置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>介面。 同時<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>文字緩衝區物件會實作介面 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) 而且可以使用來存取彼此`QueryInterface`。 下圖顯示這些和其他索引鍵的介面上<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>。  
+## <a name="one--and-two-dimension-coordinate-systems"></a>一個和兩個維度座標系統  
+ 一維座標位置為基礎的第一個字元緩衝區，例如 147 中的字元的位置。 您使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>介面，以存取緩衝區中的一維的位置。 二維的座標系統根據行和索引的配對。 比方說，43 緩衝區中的字元，5 會在行 43，該行的第一個字元右邊的五個字元。 您存取在緩衝區中使用的二維位置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>介面。 同時<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>而<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>介面由文字緩衝區物件 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>)，而且可以使用存取彼此`QueryInterface`。 下圖顯示這些和其他重要的介面上<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>。  
   
  ![文字緩衝區物件](../extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 文字緩衝區物件  
   
- 其中一個座標系統的運作方式的文字緩衝區中，雖然它被最佳化使用二維座標。 一維座標系統，可以建立的效能負擔。 因此，使用盡可能二維座標系統。  
+ 雖然兩個座標系統的運作方式的文字緩衝區中，最好使用二維座標。 一維的座標系統造成的效能負擔。 因此，使用盡可能二維座標系統。  
   
- 文字緩衝區的第二個責任是檔案的持續性。 若要這樣做，文字緩衝區物件會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和做為專案項目的文件資料物件的元件和其他參與持續性的環境元件。 如需詳細資訊，請參閱[開啟和儲存的專案項目](../extensibility/internals/opening-and-saving-project-items.md)。  
+ 文字緩衝區的第二個責任就檔案持續性。 若要這樣做，文字緩衝區物件會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，做為專案項目的文件資料物件的元件和其他參與持續性的環境元件。 如需詳細資訊，請參閱 <<c0> [ 開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
- [變更檢視設定，以使用舊版 API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ [使用舊版的 API 來變更檢視設定](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  說明如何變更檢視設定使用舊版 API。  
   
- [使用文字管理員監控全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- 說明如何使用文字管理員監視通用設定...  
+ [使用文字管理員監視全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ 說明如何使用文字管理員監視全域設定。  
   
 ## <a name="see-also"></a>另請參閱  
- [核心編輯器內](../extensibility/inside-the-core-editor.md)
+ [在核心編輯器](../extensibility/inside-the-core-editor.md)

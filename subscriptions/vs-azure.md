@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336080"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280653"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -94,13 +94,13 @@ ms.locfileid: "34336080"
 1.  透過 Visual Studio Marketplace 購買年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 雲端訂用帳戶。
 2.  透過 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 為目前的訂用帳戶續約，來充分利用 50% 或更高的折扣。
 
-比較所有的[訂用帳戶及其權益](https://www.visualstudio.com/vs/pricing/)。
+比較所有的[訂用帳戶及其權益](https://visualstudio.microsoft.com/vs/pricing/)。
 
 如果您在 Microsoft 帳戶下有另一個**相同**訂用帳戶層級的有效 Visual Studio 訂用帳戶，則可以透過在 Visual Studio 訂用帳戶入口網站中加入[替代帳戶](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions)，將它連結到此 Azure 權益。 如果這樣沒有用，您也可以嘗試[移轉您的 Azure 權益](/azure/billing/billing-subscription-transfer/)至有效 Visual Studio 訂用帳戶。
 
 如果您在 Microsoft 帳戶下有另一個**不同**訂用帳戶層級的有效 Visual Studio 訂用帳戶，請連絡 [Azure 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以取得協助。
 
-如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為預付型方案並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
+如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為預付型供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
 
 如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](http://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
 
@@ -111,5 +111,5 @@ ms.locfileid: "34336080"
 -  需要使用 Azure 的說明嗎？  請參閱這些資源：
     - 技術支援：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure 文件](/azure/)
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/)
+-  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

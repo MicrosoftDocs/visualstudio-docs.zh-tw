@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578584"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302788"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 項目
 包含選擇性參數清單，將出現在 `UsingTask``TaskFactory` 所產生的工作中。 如需詳細資訊，請參閱 [UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -34,7 +34,7 @@ ms.locfileid: "31578584"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 

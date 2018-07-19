@@ -1,5 +1,5 @@
 ---
-title: 如何： 設定 ClickOnce 應用程式的安全性區域 |Microsoft 文件
+title: 如何： 設定 ClickOnce 應用程式的安全性區域 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564544"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077723"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>如何：設定 ClickOnce 應用程式的安全性區域
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>如何： 設定 ClickOnce 應用程式的安全性區域
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。  
   
  在大多數情況下，您也可以選擇 [網際網路]  區域 (包含一組有限的權限) 或 [近端內部網路]  區域 (包含一組更高的權限)。 如果應用程式需要自訂權限，您可以選擇 [自訂]  安全性區域來完成。 如需設定自訂權限的詳細資訊，請參閱 [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
@@ -45,7 +45,6 @@ ms.locfileid: "31564544"
 5.  在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何： 設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
- [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

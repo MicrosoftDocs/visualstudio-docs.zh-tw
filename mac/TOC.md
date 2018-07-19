@@ -1,5 +1,4 @@
 # [Visual Studio for Mac 簡介](index.md)
-## [透過 Xamarin Studio 的 Visual Studio for Mac 優點](benefits-vsmac-over-xs.md)
 # [IDE 導覽](ide-tour.md)
 
 # [安裝](installation.md)

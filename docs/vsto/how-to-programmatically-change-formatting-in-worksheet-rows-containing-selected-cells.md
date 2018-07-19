@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式變更工作表包含選取儲存格的資料列中的格式設定 |Microsoft 文件
+title: 如何： 以程式設計方式變更包含選取儲存格的工作表列格式
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,50 +17,51 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35f0475a15b41b63b99c08a90ebbf724b0adaed8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a4f71af9e19cbb9eaefd2937e498b0e59cc2b8f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256376"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何：以程式設計方式在包含選取儲存格的工作表列中變更格式
-  您可以變更包含選取的資料格，讓文字是粗體的整個資料列的字型。  
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何： 以程式設計方式變更包含選取儲存格的工作表列格式
+  您可以變更包含選取的儲存格，讓文字是粗體的整個資料列的字型。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>若要讓目前的資料列變成粗體和先前粗體字顯示在資料列正常  
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>若要將目前的資料列變成粗體和一般先前粗體列  
   
 1.  宣告靜態變數來追蹤先前選取的資料列。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
      [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
   
-2.  擷取參考目前的儲存格使用<xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A>屬性。  
+2.  擷取目前的儲存格使用的參考<xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A>屬性。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
      [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
   
-3.  目前資料列粗體使用樣式<xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A>的現用儲存格的屬性。  
+3.  目前資料列粗體使用樣式<xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A>作用中的資料格的屬性。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
      [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
   
-4.  請確認目前的值`previousRow`是不是 0。 0 （零） 表示這是透過此程式碼第一次。  
+4.  請確認目前的值`previousRow`是不是 0。 0 （零） 表示這是此程式碼在第一次。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
      [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
   
-5.  請確認目前的資料列不同於先前的資料列。  
+5.  請確定目前的資料列是不同於先前的資料列。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
      [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
   
-6.  擷取方法的參考，代表先前選取的資料列範圍並將資料列不是粗體。  
+6.  參考，表示先前選取的資料列範圍的擷取和設定該資料列不是粗體。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
      [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
   
-7.  儲存目前資料列，讓它成為下個階段的上一個資料列。  
+7.  儲存目前的資料列，以便它可以成為下個階段的上一個資料列。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
      [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  

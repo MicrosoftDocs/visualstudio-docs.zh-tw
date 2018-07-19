@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+title: '&lt;fileAssociation&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f59ef1d00951d4c49c1bcb19c6c9122e281c3ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561073"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080021"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 應用程式）
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 識別要與應用程式相關聯的副檔名。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <fileAssociation  
     xmlns="urn:schemas-microsoft-com:clickonce.v1"  
     extension  
@@ -47,17 +47,17 @@ ms.locfileid: "31561073"
 |`extension`|必要。 要與應用程式相關聯的副檔名。|  
 |`description`|必要。 Shell 所使用的檔案類型的描述。|  
 |`progid`|必要。 可唯一識別檔案類型的名稱。|  
-|`defaultIcon`|必要。 指定要用於此副檔名的檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，其中包含這個項目。|  
+|`defaultIcon`|必要。 指定要用於與此延伸模組檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，包含這個項目。|  
   
 ## <a name="remarks"></a>備註  
- 這個項目必須包括 XML 命名空間參考，以 「 結構描述 urn:-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`中其父系的項目[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  
+ 此元素必須包含的 XML 命名空間參考"urn: schemas-microsoft-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`項目在其父代[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不會覆寫現有的檔案關聯。 不過，ClickOnce 應用程式可以覆寫目前使用者的副檔名。 解除安裝該 ClickOnce 應用程式之後，ClickOnce 會刪除檔案關聯的使用者，而每台機器關聯作用中一次。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不會覆寫現有的檔案關聯。 不過，ClickOnce 應用程式可以覆寫目前使用者的檔案副檔名。 ClickOnce 應用程式解除安裝後，ClickOnce 會刪除使用者的檔案關聯和每台電腦關聯為使用一次。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`fileAssociation`的部署使用的文字編輯器應用程式資訊清單的應用程式中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 這個程式碼範例也包含[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)所`defaultIcon`屬性。  
+ 下列程式碼範例說明`fileAssociation`的文字編輯器的應用程式，使用部署資訊清單的應用程式中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 此程式碼範例也包含[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)所`defaultIcon`屬性。  
   
-```  
+```xml  
 <file name="text.ico" size="4286">  
   <hash>  
     <dsig:Transforms>  

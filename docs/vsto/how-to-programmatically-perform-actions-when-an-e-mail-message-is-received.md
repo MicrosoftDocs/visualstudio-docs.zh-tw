@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式執行動作時收到電子郵件 |Microsoft 文件
+title: 如何： 以程式設計方式在收到電子郵件訊息時執行動作
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b9936d1d3e1ffd3b4ec04af6719d0699000f8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb3ab28a70904d7f7bedbf126dc5fcdce77f176a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257383"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>如何：以程式設計方式在收到電子郵件訊息時執行動作
-  本範例會在使用者會收到電子郵件訊息時執行自訂動作。  
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>如何： 以程式設計方式在收到電子郵件訊息時執行動作
+  使用者會收到一封電子郵件時，此範例會執行自訂動作。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -34,8 +35,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)   
+ [如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [使用郵件項目](../vsto/working-with-mail-items.md)   
- [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

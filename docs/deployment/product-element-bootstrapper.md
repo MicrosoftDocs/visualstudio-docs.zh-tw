@@ -1,5 +1,5 @@
 ---
-title: '&lt;產品&gt;元素 （啟動載入器） |Microsoft 文件'
+title: '&lt;產品&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559435"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080401"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;元素 （啟動載入器）
-`Product`元素是產品檔案內的最上層 XML 元素。  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
+`Product`項目是最上層 XML 元素內的產品檔案。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -140,7 +140,7 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `Product`項目必要的產品檔案中。 它有下列屬性。  
+ `Product`項目必要的產品檔案中。 它具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -149,7 +149,7 @@ ProductCode
 ## <a name="example"></a>範例  
  下列程式碼範例會顯示完整的產品檔案安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

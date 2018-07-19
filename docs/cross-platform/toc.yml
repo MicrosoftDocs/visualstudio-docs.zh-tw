@@ -18,7 +18,7 @@
     - name: 針對 Mac 使用者的設定、安裝和驗證
       href: setup-install-and-verifications-for-mac-users.md
 - name: Visual Studio Tools for Apache Cordova
-  href: visual-studio-tools-for-apache-cordova.md
+  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:

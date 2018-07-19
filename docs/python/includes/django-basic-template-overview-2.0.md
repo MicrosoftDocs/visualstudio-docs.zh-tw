@@ -1,10 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: b629de8144e08c7c0019a0a116f84e5877c3a477
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0ee0234e91cdf07c2b52c39d065d527a776dc4ce
+ms.sourcegitcommit: 64bf371ffe294e9b3cf769db03cf0f5c1a9b680c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "35666975"
 ---
 ### <a name="create-a-project-using-django-20"></a>使用 Django 2.0 建立專案
 
@@ -16,7 +17,7 @@ ms.lasthandoff: 04/27/2018
 
 1. 執行 `pip install django` 以在全域 Python 環境中安裝最新的 Django 套件。
 
-1. 執行 `django-admin startproject <project_name>` 以在步驟 1 使用的相同專案名稱來取代 `<project_name>`，例如 "HelloDjango"。 `startproject` 命令會建立 `manage.py` 檔案以及符合 `<project_name>` 的資料夾，其中包含 `__init.py__`、`settings.py`、`urls.py` 及 `wsgi.py` 檔案。
+1. 執行 `django-admin startproject <project_name>` 以在步驟 1 使用的相同專案名稱來取代 `<project_name>`，例如 "HelloDjango"。 `startproject` 命令會建立 `manage.py` 檔案以及符合 `<project_name>` 的資料夾，其中包含 `__init__.py`、`settings.py`、`urls.py` 及 `wsgi.py` 檔案。
 
 1. 在 Visual Studio 中，以 Django 2.x 檔案取代專案中的 Django 1.x 檔案，如下所示：
 

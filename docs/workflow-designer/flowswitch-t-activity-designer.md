@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c655987f3cafd77b284d9d11eafefd56a188fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978001"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757217"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > 活動設計工具
 
@@ -28,15 +28,15 @@ ms.locfileid: "31978001"
 
 ## <a name="the-flowswitcht-activity"></a>FlowSwitch\<T > 活動
 
-<xref:System.Activities.Statements.FlowSwitch%601>活動包含<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>傳回型別的值*T* （由泛型參數指定） 時進行評估。 活動也包含一組 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>，這會指定從這個評估的可能結果到一組 <xref:System.Activities.Statements.FlowNode> 物件的唯一對應。 <xref:System.Activities.Statements.FlowNode>已執行之物件的型別*T*的評估值<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>。 <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> 案例可 (選擇性) 地提供給未取得相符結果的案例。
+<xref:System.Activities.Statements.FlowSwitch%601>活動包含<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>的傳回值的型別*T* （由泛型參數指定） 時進行評估。 活動也包含一組 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>，這會指定從這個評估的可能結果到一組 <xref:System.Activities.Statements.FlowNode> 物件的唯一對應。 <xref:System.Activities.Statements.FlowNode>已執行之物件的型別*T*比對的已評估值<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>。 <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> 案例可 (選擇性) 地提供給未取得相符結果的案例。
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>使用 FlowSwitch\<T > 活動設計工具
 
-**FlowSwitch\<T >** 活動設計工具位於**流程圖**分類的**工具箱**，依序按一下存取的哪一個**工具箱** 索引標籤上的工作流程設計工具左側 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
+**FlowSwitch\<T >** 活動設計工具可在**流程圖**分類**工具箱**，依序按一下 存取的哪一個**工具箱**工作流程設計工具左側的索引標籤。 或者，選取**工具箱**從**檢視**功能表，或是按下**Ctrl**+**Alt** + **X**。
 
-**FlowSwitch\<T >** 活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面內**流程圖**活動設計工具。 使用**選取型別**視窗會顯示指定的型別 (相關聯的程式碼中<xref:System.Activities.Statements.FlowSwitch%601>藉由其泛型參數) 取自評估<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>。 這個程序建立<xref:System.Activities.Statements.FlowSwitch%601>活動標示為**交換器**內<xref:System.Activities.Statements.Flowchart>活動。 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>可以依照輸入**運算式**方塊**屬性**按一下的視窗上提示文字該處會指示 「 輸入 VB 運算式 」。
+**FlowSwitch\<T >** 活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面內**流程圖**活動設計工具。 使用**選取型別**視窗，顯示指定的型別 (相關聯的程式碼中<xref:System.Activities.Statements.FlowSwitch%601>其泛型參數) 取自評估<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>。 此程序會建立<xref:System.Activities.Statements.FlowSwitch%601>標示為 活動**交換器**內<xref:System.Activities.Statements.Flowchart>活動。 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>可以使用大寫字母**運算式**方塊**屬性**按一下的視窗，顯示提示文字 「 輸入 VB 運算式 」。
 
-將滑鼠移**FlowSwitch\<T >** 活動設計工具用來連結的方形控點<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>來顯示其邊緣。 拖曳之後**FlowSwitch < T\>** 活動設計工具和其他活動設計工具到**流程圖**、<xref:System.Activities.Activity>它們代表的物件已經準備好連結在一起若要指定執行順序。 若要建立的其中一個<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>聯<xref:System.Activities.Statements.FlowSwitch%601>，按一下其中一個方形案例控點的周邊網路上**FlowSwitch < T\>** 並將它拖曳 （按住滑鼠按鈕） 以其中一個控點以類似的方式在目的地活動周圍時出現的滑鼠停留在其設計工具。 放開滑鼠按鈕以及從箭頭**FlowSwitch < T\>** 至目的地設計工具會顯示表示此案例。 預設值，這個案例顯示在箭號，而且可以在編輯**案例**方塊**屬性**視窗。
+將滑鼠移**FlowSwitch\<T >** 活動設計工具用來連結的方形控點<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>以顯示其邊緣。 拖曳之後**FlowSwitch < T\>** 活動設計工具] 和 [到其他活動設計工具**流程圖**，則<xref:System.Activities.Activity>它們所代表的物件已經準備好要連結在一起若要指定執行順序。 若要建立的其中一個<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>相關聯<xref:System.Activities.Statements.FlowSwitch%601>，按一下其中一個方形案例控點上的周邊**FlowSwitch < T\>** 並將它拖曳 （按住滑鼠按鈕） 到其中一個控點以類似的方式，目的地活動各地時出現的滑鼠停留在其設計工具。 放開滑鼠按鈕，從箭號**FlowSwitch < T\>** 目的地設計工具會顯示表示此案例。 預設值，此情況下顯示的箭號，而且可以在中編輯**案例**的方塊**屬性**視窗。
 
 ### <a name="the-flowswitcht-properties"></a>FlowSwitch\<T > 屬性
 

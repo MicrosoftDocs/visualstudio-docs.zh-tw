@@ -9,16 +9,16 @@ description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335589"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283259"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
-Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows、iOS、Android 與 Linux 等慣用平台及裝置上，建立、部署及管理絕佳的應用程式。  特定的權益會視您擁有的訂用帳戶類型而不同。  為了提供訂閱者最大價值，根據我們調整專注於最新且最有用的技術、訓練教材，及可用的夥伴權益，提供的權益每隔一段時間會隨上述項目變更。 
+Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows、iOS、Android 與 Linux 等慣用平台及裝置上，建立、部署及管理絕佳的應用程式。  特定的權益會視您擁有的訂用帳戶類型而不同。  為了提供訂閱者最大價值，根據我們調整專注於最新且最有用的技術、訓練教材，及可用的夥伴權益，提供的權益每隔一段時間會隨上述項目變更。
 
 權益分為三個類別：
 
@@ -32,17 +32,17 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 - 由 Pluralsight 提供的適用於 .Net 開發人員的 Microsoft Azure 與其他絕佳內容
 - 由 DataCamp 提供的適用於開發人員的資料科學
 - 由 Microsoft Virtual Academy 提供的設計適用於 SQL Server 的資料庫解決方案
-- LinkedIn Learning 提供您邁向成功的人員、深入解析和技能。 
+- LinkedIn Learning 提供您邁向成功的人員、深入解析和技能。
 
-## <a name="support"></a>支援 
-身為 Visual Studio 訂閱者，您也擁有各種類型支援的存取權，以防您有疑問或需要技術協助。 
-- 付費訂用帳戶包含解決在開發/測試環境中執行的工具與應用程式相關問題的專業技術支援事件存取權。  
-- 需要技術文件或產品資訊嗎？  立即從服務台交談服務取得支援。 
-- 從「優先支援論壇」中社群的成員取得協助。  如果社群成員無法回答您的問題，Microsoft 的專家會提供解答。 
-- 對 Azure 有任何疑問嗎？  請查看 Azure 社群和 Azure Advisor 交談服務。  
+## <a name="support"></a>支援
+身為 Visual Studio 訂閱者，您也擁有各種類型支援的存取權，以防您有疑問或需要技術協助。
+- 付費訂用帳戶包含解決在開發/測試環境中執行的工具與應用程式相關問題的專業技術支援事件存取權。
+- 需要技術文件或產品資訊嗎？  立即從服務台交談服務取得支援。
+- 從「優先支援論壇」中社群的成員取得協助。  如果社群成員無法回答您的問題，Microsoft 的專家會提供解答。
+- 對 Azure 有任何疑問嗎？  請查看 Azure 社群和 Azure Advisor 交談服務。
 
-> [!NOTE] 
+> [!NOTE]
 > 您的訂用帳戶也可能提供軟體下載的存取。  如需下載的詳細資訊，包括您的訂用帳戶隨附哪些下載，請前往 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
 
-如需訂用帳戶中所包含權益的詳細資訊，請參閱 [Visual Studio 定價頁面](https://www.visualstudio.com/vs/pricing/)。  特定權益的相關資訊 (包含哪些訂用帳戶包含這些權益) 可在下方的**使用訂閱者權益**主題中取得。 
+如需訂用帳戶中所包含權益的詳細資訊，請參閱 [Visual Studio 定價頁面](https://visualstudio.microsoft.com/vs/pricing/)。  特定權益的相關資訊 (包含哪些訂用帳戶包含這些權益) 可在下方的**使用訂閱者權益**主題中取得。
 

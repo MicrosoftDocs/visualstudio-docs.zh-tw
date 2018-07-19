@@ -1,7 +1,7 @@
 ---
 title: 適用於 Python 的 Azure 雲端服務專案範本
 description: 使用 Python 所撰寫適用於 Azure 雲端服務的 Visual Studio 範本概觀，其中包括角色部署、相依性和疑難排解。
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031809"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058655"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
@@ -29,7 +29,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 安裝[適用於 Visual Studio 的 Azure .NET SDK](https://www.visualstudio.com/vs/azure-tools/)，這是使用雲端服務範本的必要項目。
+1. 安裝[適用於 Visual Studio 的 Azure .NET SDK](https://visualstudio.microsoft.com/vs/azure-tools/)，這是使用雲端服務範本的必要項目。
 1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案...]，然後搜尋「Azure Python」，並從清單中選取 [Azure 雲端服務]：
 
     ![適用於 Python 的 Azure 雲端專案範本](media/template-azure-cloud-project.png)

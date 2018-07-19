@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694060"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282521"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694060"
 
 Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」，這些是您慣用的程式設計語言或平台所需的幾組功能。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
 
-如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 若要深入了解如何在您的系統上設定 Visual Studio，請參閱 [Install Visual Studio 2017](../install/install-visual-studio.md)。
 
@@ -52,17 +52,17 @@ Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 ![Visual Studio 連線服務](media/connected-services.png)
 
-如需詳細資訊，請參閱[使用 Visual Studio 和 Azure 移至雲端](https://www.visualstudio.com/vs/azure-tools/)。
+如需詳細資訊，請參閱[使用 Visual Studio 和 Azure 移至雲端](https://visualstudio.microsoft.com/vs/azure-tools/)。
 
 ## <a name="create-apps-for-the-web"></a>建立適用於 Web 的應用程式
 
 Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](http://www.asp.net/core/overview) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
 
-如需詳細資訊，請參閱[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
+如需詳細資訊，請參閱[新式 Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
 
 ## <a name="build-cross-platform-apps-and-games"></a>建置跨平台應用程式和遊戲
 
-您可以使用 Visual Studio 建置 macOS、Linux、Windows、Android、iOS 和其他[行動裝置](https://www.visualstudio.com/vs/mobile-app-development/)用的應用程式和遊戲。
+您可以使用 Visual Studio 建置 macOS、Linux、Windows、Android、iOS 和其他[行動裝置](https://visualstudio.microsoft.com/vs/mobile-app-development/)用的應用程式和遊戲。
 
 - 建置在 Windows、macOS 和 Linux 上執行的 [.NET Core](/dotnet/core/) 應用程式。
 
@@ -122,7 +122,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 尋找由 Microsoft 開發人員和開發社群所建立的 Visual Studio [現有延伸模組](https://marketplace.visualstudio.com/vs)。
 
-若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
+若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/)。
 
 ## <a name="see-also"></a>另請參閱
 

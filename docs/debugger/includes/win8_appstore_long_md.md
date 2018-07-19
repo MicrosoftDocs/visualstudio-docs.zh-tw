@@ -14,9 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 377419828bf3199ee74bf1f18200723ede57a0d3
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
-ms.translationtype: MT
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38945189"
 ---
-Microsoft Store
+Microsoft 市集

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 935df371b912d51ef6a5d88fdae4e9e11c449049
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bf8720efab88556092e6552a8ffa47cb1151fef
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577063"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946377"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 結束目前追蹤內容。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 HRESULT WINAPI EndTrackingContext();  
 ```  
   
@@ -39,5 +39,5 @@ HRESULT WINAPI EndTrackingContext();
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

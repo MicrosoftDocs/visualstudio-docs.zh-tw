@@ -15,55 +15,55 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b1701b95f86f3645ea7d54a47f8b3c7b36b3fd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a72800cda8b80daec1adeb82d7884789cc4d2bd7
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922332"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174161"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
-您可以建立資料繫結控制項項目從**資料來源**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 每個項目**資料來源**視窗有時將它拖曳至設計工具所建立的預設控制項。 不過，您可以選擇建立不同的控制項。
+您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 在每個項目**Zdroje dat**視窗已將它拖曳至設計工具時，會建立一個預設控制項。 不過，您可以選擇建立不同的控制項。
 
-## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>設定要建立的資料表或物件的控制項
-您拖曳項目，代表資料的資料表或從物件之前**資料來源**視窗中，您可以選擇一個控制項，以顯示所有資料，或個別控制項中都顯示每個資料行或屬性。
+## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>設定要為資料表或物件建立的控制項
+您拖曳項目，表示資料的資料表或物件之前**Zdroje dat**  視窗中，您可以選擇一個控制項，顯示所有資料，或都顯示個別控制項中的每個資料行或屬性。
 
-在此內容中，詞彙*物件*指的是自訂的商務物件、 實體 （以實體資料模型） 或服務所傳回的物件。
+在此情況下，詞彙*物件*指的是自訂商務物件、 實體 （在 Entity Data Model) 或服務所傳回的物件。
 
-### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>若要設定要針對資料表或物件建立控制項
+### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>若要設定要針對資料表或物件來建立控制項
 
-1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。
+1.  請務必**WPF**設計工具或**Windows Forms**會開啟設計工具。
 
-2.  在**資料來源**視窗中，選取代表資料表的項目，或您想要設定的物件。
+2.  在 [ **Zdroje dat** ] 視窗中，選取表示資料表的項目，或您要設定物件。
 
-3.  按一下下拉式清單項目的功能表，並按一下功能表中的下列項目：
+3.  按一下 項目，下拉式功能表，然後按一下其中一個功能表中的下列項目：
 
-    -   若要在個別控制項中顯示每個資料欄位，請按一下**詳細資料**。 當您將資料的項目拖曳至設計工具時，此動作會建立不同的資料繫結控制項，每個資料行或屬性的父資料表或物件，以及每個控制項的標籤。
+    -   若要在個別控制項中顯示每個資料欄位，請按一下**詳細資料**。 當您將資料的項目拖曳至設計工具時，這個動作會建立不同的資料繫結控制項，每個資料行或屬性的父資料表或物件，以及每個控制項的標籤。
 
-    -   若要顯示的所有資料在單一的控制項中，選取不同的控制項在清單中，例如**DataGrid**或**清單**在 WPF 應用程式，或**DataGridView** Windows Form 中應用程式。
+    -   若要顯示的所有資料的單一控制項，選取不同的控制項清單中，例如**DataGrid**或是**清單**WPF 應用程式中，或**DataGridView** Windows Form 中應用程式。
 
-    可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及是否加入自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項不在可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+    可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及是否您已新增自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項不在可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
-    若要了解如何建立自訂的 Windows Form 控制項加入至資料的資料表或物件中的控制項清單**資料來源**視窗中，請參閱[建立支援複雜資料的 Windows Form 使用者控制項繫結](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。
+    若要了解如何建立自訂的 Windows Form 控制項加入至控制項中資料的資料表或物件的清單**資料來源** 視窗中，請參閱[建立支援複雜資料的 Windows Forms 使用者控制項繫結](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。
 
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>設定要用於建立資料行或屬性的控制項
-拖曳的資料行或從物件的屬性所代表的項目之前**資料來源**至設計工具 視窗中的，您可以設定要建立控制項。
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>設定為資料行或屬性建立的控制項
+您拖曳項目，表示資料行或從物件的屬性之前**Zdroje dat**至設計工具 視窗中的，您可以設定要建立的控制項。
 
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>若要設定要用於建立資料行或屬性的控制項
+#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>若要設定為資料行或屬性建立的控制項
 
-1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。
+1.  請務必**WPF**設計工具或**Windows Forms**會開啟設計工具。
 
-2.  在**資料來源**視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。
+2.  在 [ **Zdroje dat** ] 視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。
 
 3.  選取您要將控制項設為建立每個資料行或屬性。
 
-4.  按一下下拉式功能表，針對資料行或屬性，然後選取您想要的項目拖曳至設計工具時建立的控制項。
+4.  按一下 資料行或屬性的下拉式選單，然後選取您想要建立項目拖曳至設計工具時的控制項。
 
-     可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及哪些自訂控制項的支援資料繫結，您已新增至**工具箱**。 如果您想要建立的控制項的可用控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+     可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及哪些自訂控制項資料繫結，您已加入該支援**工具箱**。 如果您想要建立的控制項是可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
-     若要了解如何建立自訂控制項加入至控制項的資料行或在屬性清單**資料來源**視窗中，請參閱[建立 Windows Form 使用者控制項支援簡單資料繫結](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
+     若要了解如何建立自訂控制項，可以加入的資料行或屬性中的控制項清單**資料來源** 視窗中，請參閱[建立支援簡單資料繫結WindowsForm使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 
-     如果您不想要建立資料行或屬性的控制項，選取**無**下拉式選單中。 如果您想要將父資料表或物件拖曳至設計工具中，但您不想要包含的特定資料行或屬性，這非常有用。
+     如果您不想要建立資料行或屬性的控制項，選取**無**下拉式選單中。 如果您想要將父資料表或物件拖曳至設計工具中，但不是想包含的特定資料行或屬性，這非常有用。
 
 ## <a name="see-also"></a>另請參閱
 

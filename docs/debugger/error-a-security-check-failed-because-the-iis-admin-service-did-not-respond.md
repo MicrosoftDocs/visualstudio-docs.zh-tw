@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft 文件
+title: 錯誤： 安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b0b3412c450976cb15211813de32ab6e78eaa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471108"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058057"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應
-當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，請確認服務正在執行使用**服務**工具**系統管理工具**。  
+當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，請確認服務正在執行使用**Services**工具**系統管理工具**。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
@@ -36,9 +36,7 @@ ms.locfileid: "31471108"
   
 -   使用新增或移除程式控制台來移除電腦中的 IIS。 如果移除 IIS 後仍有問題，請檢查登錄，確定這個機碼已不存在：  
   
-    ```  
-    HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
-    ```  
+    `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`  
   
      -或-  
   

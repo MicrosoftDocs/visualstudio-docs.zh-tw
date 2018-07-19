@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs |Microsoft 文件
+title: IDiaEnumSectionContribs |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47577b3a2abfef3b6c6741d2e25af418318340ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5903c276b82f8b689e67c20310ccc6d6a6514896
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463773"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057056"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-列舉各種資料來源中所包含的區段比重。  
+列舉包含的資料來源中的各種區段貢獻。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,21 +35,21 @@ IDiaEnumSectionContribs : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|擷取[IEnumVARIANT 介面](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|擷取 > 一節比重的數目。|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|透過索引擷取 > 一節的比重。|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|擷取指定的數目的列舉順序中的區段比重。|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|略過指定的數目的列舉順序中的區段比重。|  
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|列舉序列重設為開頭。|  
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|擷取區段貢獻數目。|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|透過索引中擷取一節的貢獻。|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|擷取指定的數目的列舉型別序列中的區段比重。|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|略過指定的數目的列舉型別序列中的區段比重。|  
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|將列舉型別序列重設到開頭。|  
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
   
 ## <a name="remarks"></a>備註  
   
 ## <a name="note-for-callers"></a>請注意，呼叫端  
- 取得從這個介面[idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法。 如需詳細資訊的範例，請參閱。  
+ 取得從這個介面[idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法。 請參閱詳細資料的範例。  
   
 ## <a name="example"></a>範例  
- 這個範例示範如何取得 (`GetEnumSectionContribs`函式)，並使用 (`ShowSectionContribs`函式)`IDiaEnumSectionContribs`介面。 使用區段比重的更完整的範例，請參閱[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)介面。  
+ 此範例示範如何取得 (`GetEnumSectionContribs`函式)，並使用 (`ShowSectionContribs`函式)`IDiaEnumSectionContribs`介面。 使用區段貢獻的更完整範例，請參閱 < [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)介面。  
   
 ```C++  
   

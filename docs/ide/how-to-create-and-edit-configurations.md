@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946308"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808788"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 

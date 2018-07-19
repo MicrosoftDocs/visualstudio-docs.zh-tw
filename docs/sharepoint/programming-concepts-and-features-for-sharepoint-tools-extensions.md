@@ -1,5 +1,5 @@
 ---
-title: SharePoint 工具擴充功能的程式設計概念和功能 |Microsoft 文件
+title: 程式設計概念和功能的 SharePoint 工具擴充功能 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,30 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67aa5bcb83b1ab820286ad70a74cd36c101dbe86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3347b36f64ac84082bee5c3087c035571c6a6b08
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118726"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計概念和功能
-  有數個重要的程式設計概念和相關 Visual Studio 中 SharePoint 工具的功能。 這些概念和功能扮演著重要角色，在大部分的 SharePoint 工具擴充功能。  
+  有數個重要的程式設計概念和 Visual Studio 中 SharePoint 工具相關的功能。 這些概念和功能扮演著重要角色，在大部分的 SharePoint 工具擴充功能。  
   
-## <a name="in-this-section"></a>本節內容  
+## <a name="in-this-section"></a>本節內容
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)  
- 比較使用 SharePoint 用戶端和 SharePoint 伺服器物件模型，從 SharePoint 工具擴充功能，並提供有關如何建立資訊*SharePoint 命令*來呼叫 SharePoint 伺服器物件模型。  
+ 比較使用 SharePoint 用戶端和 SharePoint 伺服器物件模型，從 SharePoint 工具擴充功能，並提供有關如何建立資訊*SharePoint 命令*呼叫 SharePoint 伺服器物件模型。  
   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)  
- 描述的功能，SharePoint 專案服務提供給 SharePoint 工具擴充功能，並提供指示來擷取的各種擴充功能中的服務。  
+ 描述的功能，SharePoint 專案服務提供給 SharePoint 工具擴充功能，並提供用於擷取不同類型的延伸模組中的服務的指示。  
   
- [讓自訂資料與 SharePoint 工具延伸模組產生關聯](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
- 描述如何將自訂資料與特定類型的 SharePoint 工具擴充功能中的物件產生關聯。  
+ [將自訂的資料產生關聯的 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
+ 描述如何將自訂的資料對於特定類型的 SharePoint 工具擴充功能中的物件產生關聯。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [在 Visual Studio 中 SharePoint 工具的偵錯擴充功能](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
- [部署 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
+ [偵錯在 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
+ [部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

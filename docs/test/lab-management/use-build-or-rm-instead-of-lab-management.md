@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845375"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build and Release Management 而非 Lab Management 進行自動化測試
 
@@ -58,7 +59,7 @@ MTM 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測
 
 | 步驟 | 使用實驗室中心 | 使用 Build or Release Management |
 |-------|----------------------|-----------------|
-| 管理環境範本程式庫。 | 建立實驗室環境。 在虛擬機器上安裝必要軟體。 將環境 Sysprep 和存放為程式庫範本。 | 直接使用 SCVMM 管理主控台來建立及管理虛擬機器範本或服務範本。 當使用 Azure 時，選取其中一個 [Azure 快速入門範本](/resources/templates/)。 |
+| 管理環境範本程式庫。 | 建立實驗室環境。 在虛擬機器上安裝必要軟體。 將環境 Sysprep 和存放為程式庫範本。 | 直接使用 SCVMM 管理主控台來建立及管理虛擬機器範本或服務範本。 當使用 Azure 時，選取其中一個 [Azure 快速入門範本](https://azure.microsoft.com/resources/templates/)。 |
 | 建立實驗室環境。 | 選取並部署程式庫中的環境範本。 提供自訂虛擬機器設定的必要參數。 | 直接使用 SCVMM 管理主控台從範本建立 VM 或服務執行個體。 直接使用 Azure 入口網站建立資源。 或者，建立環境的版本定義。 使用 Azure 工作或 [SCVMM 整合延伸模組](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)的工作，建立新的虛擬機器。 建立此定義的新版本，相當於在實驗室中心建立新的環境。 |
 | 連接到電腦。 | 在環境檢視器中開啟實驗室環境。 | 直接使用 SCVMM 管理主控台連線至虛擬機器。 或者，使用虛擬機器的 IP 位址或 DNS 名稱，開啟遠端桌面工作階段。 |
 | 接受環境檢查點，或將環境還原到乾淨的檢查點。 | 在環境檢視器中開啟實驗室環境。 選取接受檢查點的選項，或還原到上一個檢查點。 | 直接使用 SCVMM 管理主控台，在虛擬機器上執行這些作業。 或者，將這些步驟執行為大型自動化過程的一部分，包括在版本定義中屬於環境的 [SCVMM 整合延伸模組](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)檢查點工作。 |

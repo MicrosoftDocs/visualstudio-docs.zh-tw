@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327389"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 訂用帳戶系統管理員入口網站
 
@@ -28,9 +29,9 @@ ms.lasthandoff: 04/06/2018
 
 大量授權客戶的新 Visual Studio 訂用帳戶管理入口網站中有兩個不同的角色。 這些角色像是目前 VLSC 中的主要/通知連絡人角色和訂用帳戶管理員角色。 
 
-**超級管理員：**第一次設定組織時，主要或通知連絡人預設會成為超級管理員。 主要或通知連絡人可以選擇指派其他的超級管理員或系統管理員。 超級管理員可以新增和移除其他系統管理員以及訂閱者。 如果系統中有兩個以上的超級管理員，則超級管理員可以刪除所有超級管理員，但最後必須保留兩個以策安全。 
+**超級管理員：** 第一次設定組織時，主要或通知連絡人預設會成為超級管理員。 主要或通知連絡人可以選擇指派其他的超級管理員或系統管理員。 超級管理員可以新增和移除其他系統管理員以及訂閱者。 如果系統中有兩個以上的超級管理員，則超級管理員可以刪除所有超級管理員，但最後必須保留兩個以策安全。 
 
-**系統管理員：**系統管理員只能由超級管理員設定。系統管理員可以管理超級管理員在合約中指派給他們的訂閱者。 
+**系統管理員：** 系統管理員只能由超級管理員設定。系統管理員可以管理超級管理員在合約中指派給他們的訂閱者。 
 
 ## <a name="getting-started"></a>使用者入門
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/06/2018
 > [!NOTE]
 > 如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序。*
 
-如果您需要新增至新的 Visual Studio 訂用帳戶管理入口網站，但不確定主要/通知連絡人是誰，您可以在登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 之後尋找此資訊。 如需在 VLSC 中尋找主要/通知連絡人的步驟，請參考[如何尋找我的主要連絡人](/find-primary-contact/)主題。
+如果您需要新增至新的 Visual Studio 訂用帳戶管理入口網站，但不確定主要/通知連絡人是誰，您可以在登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 之後尋找此資訊。 如需在 VLSC 中尋找主要/通知連絡人的步驟，請參考[如何尋找我的主要連絡人](find-primary-contact.md)主題。
 如果您已具備系統管理員的身分，就可以直接前往 [Visual Studio 訂閱管理入口網站](https://manage.visualstudio.com)。
 
 ### <a name="understanding-the-subscribers-page"></a>了解 [訂閱者] 頁面
@@ -67,11 +68,9 @@ ms.lasthandoff: 04/06/2018
 - 選擇性欄位，用於登入通訊以外的其他電子郵件地址。 
 
 在此頁面的左側，您可以看到已購買、指派，及貴組織每份合約仍然可用的訂用帳戶授權數目等其他資訊。
-
-   ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
+    ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>了解 [詳細資料] 頁面
 如需目前檢視的合約詳細資訊，請選取 [詳細資料] 索引標籤。它會顯示合約狀態、購買帳戶、組織詳細資料、主要連絡人 (VLSC)、超級管理員 (如有) 和其他相關資訊。
-
-   ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
+    ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
 

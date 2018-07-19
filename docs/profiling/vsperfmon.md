@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b277eaebb0c35afaec0b3ff664da99d65216474f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572533"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254806"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 您可以使用 VSPerfMon 工具來收集應用程式的效能資料，而這項工具通常是由 *VSPerfCmd.exe* 啟動。 VSPerfMon 會顯示有關附加或中斷連結處理序的其他資訊，其在使用 VSPerfCmd 工具時無法使用。 若要檢視這項資訊，請以個別的視窗來啟動 VSPerfMon。 若要叫用 VSPerfMon，請使用下列語法︰  
@@ -48,7 +48,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**WINCOUNTER** `:path`|指定要加入標記資料的 Windows 效能計數器。 `path` 是 PDH 計數器路徑格式的 Windows 效能計數器字串。 例如: <br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
 |**AUTOMARK** `:n`|指定使用 /WINCOUNTER 時自動標記之間的時間間隔 (以毫秒為單位)。 捨入為最接近的 500ms。<br /><br /> 使用 0 即可停用自動標記。 (如果未指定則為預設的 500ms)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

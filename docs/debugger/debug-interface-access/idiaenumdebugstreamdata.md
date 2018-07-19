@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData |Microsoft 文件
+title: IDiaEnumDebugStreamData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5fe2d4a627b9d607607ba53c3962d244c5c369
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460621"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058278"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-提供偵錯資料流中記錄的存取。  
+提供偵錯資料流中記錄的存取權。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,23 +35,23 @@ IDiaEnumDebugStreamData : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|擷取[IEnumVARIANT 介面](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|  
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|擷取偵錯資料流中的記錄的數目。|  
 |[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|擷取偵錯資料流的名稱。|  
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|擷取指定的記錄。|  
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|從列舉順序中擷取指定的記錄數目。|  
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|列舉序列中擷取指定的記錄數目。|  
 |[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|略過指定的數目的列舉順序中的記錄。|  
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|列舉的序列重設為開頭。|  
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|會列舉的序列重設到開頭。|  
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|建立包含相同的列舉的序列，做為目前的列舉值的列舉值。|  
   
 ## <a name="remarks"></a>備註  
- 此介面代表偵錯資料流中記錄的資料流。 大小和每一筆記錄的解譯會相依於記錄來自資料流。 此介面能有效地提供未經處理資料中的位元組符號檔的存取。  
+ 這個介面會表示偵錯資料流中記錄的資料流。 大小和每一筆記錄的解譯會相依於記錄來自資料流。 此介面實際上提供符號檔中的未經處理的資料位元組的存取。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)或[idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)方法，取得`IDiaEnumDebugStreamData`物件。  
+ 呼叫[idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)或是[idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)方法來取得`IDiaEnumDebugStreamData`物件。  
   
 ## <a name="example"></a>範例  
- 這個範例示範如何存取單一資料流和其記錄。  
+ 此範例示範如何存取單一資料流和其記錄。  
   
 ```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  

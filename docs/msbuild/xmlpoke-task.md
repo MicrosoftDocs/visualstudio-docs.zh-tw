@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37056351"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030412"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 
@@ -48,7 +48,7 @@ ms.locfileid: "37056351"
 
 以下是要修改的 sample.xml：
 
-```
+```xml
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
          xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
          xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
@@ -59,8 +59,8 @@ ms.locfileid: "37056351"
 
 在此範例中，若您想要修改 `/Package/mp:PhoneIdentity/PhonePublisherId`，請使用
 
-```
-<Project>
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Namespace>
         <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c9c2d28a3e36a53e7a9da3acf36752f1f8d82f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926518"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890112"
 ---
 # <a name="constant-nodes"></a>常數節點
 

@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954088"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117689"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
-設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓這些變更的程式碼，它們會根據從資料產生*模型*。 模型是檔案或資料庫包含您的應用程式需求重要資訊。
+設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
 
  例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您的使用者需求變更時，很容易與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。
 
 > [!NOTE]
 >  A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「網域指定的語言」模型)。 一般模型的格式是表格或 XML 檔案。
 
- 您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案中您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案時，類別和方法的集合，會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
+ 您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案中您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解決方案、 一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
 
  文字範本混合了您想要產生的文字以及產生文字變動部分的程式碼。 程式碼可讓您重複或有條件地省略所產生文字的某些部分。 所產生的文字本身可以是形成您應用程式一部分的程式碼。
 
@@ -40,13 +40,13 @@ ms.locfileid: "31954088"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中建立設計階段 T4 範本
 
-1.  建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案或開啟現有的我的最愛。
+1.  建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案，或開啟現有的帳戶。
 
-     例如，在**檔案**功能表上，選擇**新增**，**專案**。
+     例如，在**檔案**功能表上，選擇**新增** > **專案**。
 
-2.  將文字範本檔加入至您的專案，並提供給它副檔名為名稱 **.tt**。
+2.  將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。
 
-     若要這樣做，請在**方案總管] 中**，您的專案捷徑功能表，選擇 [**新增**，**新項目**。 在**加入新項目**對話方塊中，選取**文字範本**從中間窗格。
+     若要這樣做，請在**方案總管**，在您的專案的捷徑功能表，選擇**新增** > **新項目**。 在 [**加入新項目**] 對話方塊中選取**文字範本**從中間的窗格。
 
      請注意，**自訂工具**檔案的屬性是**TextTemplatingFileGenerator**。
 
@@ -67,9 +67,9 @@ ms.locfileid: "31954088"
 
 5.  儲存檔案。
 
-     您可能會看到**安全性警告**會要求您確認您想要執行此範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
+     您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
 
-6.  在**方案總管 中**，展開範本檔節點，而您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
+6.  在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
 
     > [!NOTE]
     >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。
@@ -81,11 +81,11 @@ ms.locfileid: "31954088"
 
 -   儲存範本。
 
--   按一下**轉換所有範本**中**建置**功能表。 這樣會轉換 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的所有範本。
+-   按一下 **轉換所有範本**中**建置**功能表。 這樣會轉換 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的所有範本。
 
--   在**方案總管 中**、 快顯功能表的任何檔案中，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。
+-   在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。
 
- 您也可以設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案，以在範本所讀取的資料檔案變更時執行範本。 如需詳細資訊，請參閱[自動重新產生程式碼](#Regenerating)。
+ 您也可以設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案，以在範本所讀取的資料檔案變更時執行範本。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。
 
 ## <a name="generating-variable-text"></a>產生變數文字
  文字範本可讓您使用程式碼，讓所產生檔案的內容不同。
@@ -121,7 +121,7 @@ ms.locfileid: "31954088"
 
 2.  儲存 .tt 檔案，並重新檢查產生的 .txt 檔案。 它會列出 0 到 10 之數字的平方。
 
- 請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱[撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
+ 請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
 
  如果您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。
 
@@ -134,7 +134,7 @@ ms.locfileid: "31954088"
 
 -   在範本中設定中斷點，方法與您對一般程式碼設定中斷點一樣。
 
--   選擇**偵錯 T4 範本**從文字範本檔，在 [方案總管] 的捷徑功能表。
+-   選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。
 
  範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
 
@@ -222,7 +222,7 @@ ms.locfileid: "31954088"
 
  `assembly` 指示詞讓您的範本程式碼可以使用指定的組件，方式與 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案的 [參考] 區段相同。 您不需要包括自動參考之 System.dll 的參考。 `import` 指示詞可讓您使用未使用其完整名稱的類型，方式與一般程式檔案中的 `using` 指示詞相同。
 
- 例如，在匯入之後**System.IO**，您可以撰寫：
+ 例如，在匯入之後，才能**System.IO**，您可以撰寫：
 
 ```csharp
 
@@ -296,12 +296,12 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ##  <a name="Regenerating"></a> 自動重新產生程式碼
  通常，會使用一個輸入模型來產生 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的數個檔案。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。
 
- 如果來源模型變更，則您應該重新執行方案中的所有範本。 若要手動執行此作業，選擇 **轉換所有範本**上**建置**功能表。
+ 如果來源模型變更，則您應該重新執行方案中的所有範本。 若要這樣做以手動方式，請選擇**轉換所有範本**上**建置**功能表。
 
- 如果您已安裝 Visual Studio Modeling SDK，您可以讓您執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
+ 如果您已安裝 Visual Studio Modeling SDK，您可以在執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
 
 > [!NOTE]
-> 在 Visual Studio 2017，文字範本轉換 SDK 及 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 ```
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -311,7 +311,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- 如需詳細資訊，請參閱[建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。
+ 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。
 
 ## <a name="error-reporting"></a>錯誤報告
  若要將錯誤和警告訊息放入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 錯誤視窗中，您可以使用這些方法：
@@ -321,8 +321,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> 將現有檔案轉換為範本
- 範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 先建立一般檔案做為原型，例如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]檔案，然後逐漸引進讓產生的檔案不同的產生程式碼。
+##  <a name="Converting"></a> 將現有的檔案轉換成範本
+ 範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 第一次建立一般檔案為原型，例如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]檔案，然後逐漸引進不同所產生的檔案產生程式碼。
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
 
@@ -330,9 +330,9 @@ Warning("A warning message");
 
 2.  測試新的檔案，確定其運作。
 
-3.  在 [方案總管] 中變更的檔案名稱副檔名 **.tt**。
+3.  在 [方案總管] 中，變更的檔案名稱副檔名 **.tt**。
 
-4.  請確認下列內容的 **.tt**檔案：
+4.  請確認下列屬性的 **.tt**檔案：
 
     |||
     |-|-|
@@ -352,14 +352,14 @@ Warning("A warning message");
 
 6.  儲存檔案。
 
-     即會建立具有所指定副檔名的附帶檔案。 其屬性對檔案類型而言正確。 例如，**建置動作**.cs 檔案的屬性將會是**編譯**。
+     即會建立具有所指定副檔名的附帶檔案。 其屬性對檔案類型而言正確。 例如，**建置動作**.cs 檔案的屬性會是**編譯**。
 
      請確認產生的檔案包含與原始檔案相同的內容。
 
 7.  識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。
 
 ## <a name="guidelines-for-code-generation"></a>產生程式碼的指導方針
- 請參閱[撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
+ 請參閱[撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

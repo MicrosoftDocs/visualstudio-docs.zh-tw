@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 遺漏的物件因頂點著色而產生 |Microsoft 文件
+title: 逐步解說： 遺漏的物件因端點著色而 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482005"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234253"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
@@ -79,13 +79,13 @@ ms.locfileid: "31482005"
   
 3.  第一次修改 `output` 時，會寫入 `worldPos` 成員。  
   
-     !["Output.worldpos"的值看似合理](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+     !["Output.worldPos"的值看似合理](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
      由於其值似乎很合理，因此您會繼續逐步執行程式碼，直到下一個修改 `output`的程式碼行為止。  
   
 4.  下次修改 `output` 時，會寫入 `pos` 成員。  
   
-     !["Output.pos"歸](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+     !["Output.pos"的值已歸零](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
      這次， `pos` 成員的值 (全部為零) 看起來十分可疑。 接下來，您要判斷 `output.pos` 的值為何全都為零。  
   
@@ -103,12 +103,12 @@ ms.locfileid: "31482005"
   
 2.  在呼叫堆疊向上巡覽至應用程式的原始程式碼中。 在 [圖形事件呼叫堆疊]  視窗中，選擇最上方的呼叫，查看常數緩衝區是否填入此處。 如果沒有，請繼續向上查看呼叫堆疊，直到您找到其填入的位置。 在此情節中，您會發現常數緩衝區正在進一步向上填滿 (使用 `UpdateSubresource` Direct3D API) 名為 `MarbleMaze::Render`之函式中的呼叫堆疊，而且其值來自名為 `m_marbleConstantBufferData`的常數緩衝區物件：  
   
-     ![設定物件之常數緩衝區的程式碼](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")  
+     ![設定物件的常數緩衝區的程式碼](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
     > [!TIP]
     >  如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
   
- 在您找到填入常數緩衝區的位置，並發現其值來自於變數 `m_marbleConstantBufferData`之後，下一個步驟就是查明 `m_marbleConstantBufferData.projection` 成員設定為全部為零的位置。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
+ 您發現常數緩衝區是否填入其中的位置，而發現其值來自於變數之後`m_marbleConstantBufferData`下, 一步是找出從何處`m_marbleConstantBufferData.projection`成員設定為全部為零。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在應用程式原始程式碼中尋找設定 projection 成員的位置  
   
@@ -118,11 +118,11 @@ ms.locfileid: "31482005"
   
  找到設定 `m_marbleConstantBufferData.projection` 的位置之後，即可檢查周圍的原始程式碼以判斷無效值的來源。 在此情節中，您會發現 `m_marbleConstantBufferData.projection` 的值在初始化為下一行的程式碼 `projection` 所提供的值之前，已設定為名為 `m_camera->GetProjection(&projection);` 的區域變數。  
   
- ![滾珠設定其投影初始化之前](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")  
+ ![初始化之前設定彈珠投影](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")  
   
  若要修正問題，請將設定 `m_marbleConstantBufferData.projection` 值的程式碼行，移至初始化區域變數 `projection`值的程式碼行後面。  
   
- ![修正過的 C&#43; &#43;原始程式碼](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![已更正的 C&#43; &#43;原始程式碼](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  修正程式碼之後，您可以加以重新建置並再次執行應用程式，以確認轉譯問題已解決：  
   

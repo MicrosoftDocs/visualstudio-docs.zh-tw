@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751419"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845752"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 
@@ -66,11 +66,11 @@ ms.locfileid: "34751419"
 
 
 > [!NOTE]
-> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 [搭配不同的測試架構來使用測試總管](#frameworks)。
+> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
 
 ##  <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法
- 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 [使用不同的測試架構](#frameworks)。
+ 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
 #### <a name="creating-the-test-and-method"></a>建立測試和方法
 
@@ -190,7 +190,7 @@ ms.locfileid: "34751419"
 
 3.  檢查受測方法看看可能是哪裡出錯了。 在 `MyMath.Rooter` 類別中，重寫程式碼：
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

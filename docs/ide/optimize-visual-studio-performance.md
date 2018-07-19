@@ -9,14 +9,16 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce1f0e8b7ab522cf9272918a794d61e09cd243d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280347"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -24,9 +26,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>升級至 Visual Studio 2017 15.6 版或更新版本
 
-如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 簽出其改善的效能。 Visual Studio 2017 中的解決方案載入速度快兩或三倍，而其他領域的效能也會改善。 Visual Studio 2017 與 Visual Studio 2015 並存相容，因此您試用並不會遺失任何項目。
+如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 簽出其改善的效能。 Visual Studio 2017 中的解決方案載入速度快兩或三倍，而其他領域的效能也會改善。 Visual Studio 2017 與 Visual Studio 2015 並存相容，因此您試用並不會遺失任何項目。
 
-如果您目前使用 Visual Studio 2017，則請確定執行 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)下載。
+如果您目前使用 Visual Studio 2017，則請確定執行 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)下載。
 
 ## <a name="extensions-and-tool-windows"></a>延伸模組和工具視窗
 

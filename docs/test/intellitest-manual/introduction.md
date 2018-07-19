@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9b8a83ec50ce724b0d62e83a4f8848f7d82f11ff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50baf803cb6669640c9ffe2c0e94ea43b56f5341
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815479"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -103,7 +104,7 @@ public void HelloWorldThrowsException167()
 * [平台](#platform)
 * [Language](#language)
 * [符號推理](#symbolic-reasoning)
-* [堆疊追蹤](#incorrect-stack)
+* [堆疊追蹤](#incorrect-stack-traces)
 
 ### <a name="nondeterminism"></a>不具決定性
 

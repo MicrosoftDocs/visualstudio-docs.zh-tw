@@ -1,7 +1,5 @@
 - name: 總覽
-  items:
-    - name: 使用 Visual Studio 存取資料
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: 教學課程
   items:
     - name: 使用 ADO.NET 建立簡單的資料應用程式

@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cbde06b10d1201c7e69c1823714007dfa57397
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971897"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755579"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 
-本主題說明使用 Windows 工作流程設計工具時可能會遇到的錯誤訊息的型別。
+本主題描述使用工作流程設計工具時可能會遇到的錯誤訊息的類型。
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>在工作流程設計工具中發生錯誤的情況
 
@@ -39,16 +39,16 @@ ms.locfileid: "31971897"
 
 無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 工作流程會成功建置，但是在執行階段擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
 
-在 Visual Studio 中，載入工作流程時，其錯誤會顯示在**錯誤清單**。 若要巡覽至錯誤的來源活動，按兩下中的錯誤**錯誤清單**。
+在 Visual Studio 中，當載入工作流程時，其錯誤會顯示在**錯誤清單**。 若要瀏覽至錯誤的來源活動，按兩下 [] 中的錯誤**錯誤清單**。
 
 ### <a name="expression-errors"></a>運算式錯誤
- 如果有無效的運算式，則會在運算式旁出現內含白色驚嘆號的紅色圓圈來標註。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。 在 Visual Studio 中，按一下以檢視錯誤來源底下的行的運算式。 將游標移至這行文字上方，隨即出現描述錯誤來源的工具提示。
+ 如果有無效的運算式，則會在運算式旁出現內含白色驚嘆號的紅色圓圈來標註。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。 在 Visual Studio 中，按一下要檢視錯誤來源底下的那一行的運算式。 將游標移至這行文字上方，隨即出現描述錯誤來源的工具提示。
 
 ### <a name="activity-validation-errors"></a>活動驗證錯誤
  當未滿足活動的驗證條件限制時，活動的右上角會出現內含白色驚嘆號的紅色圓圈。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。
 
 ### <a name="xaml-load-errors"></a>XAML 載入錯誤
- 當活動無法載入時，則會出現紅色方塊，以文字"活動無法載入，因為 XAML 中發生錯誤 」。 這通常發生在活動的型別無法解析。 選取紅色方塊並加以刪除，以刪除設計工具中無效的活動。
+ 當活動失敗時載入時，便會出現紅色方塊以文字 」 活動無法載入因為 XAML 中發生錯誤 」。 這通常發生在活動的型別無法解析時。 選取紅色方塊並加以刪除，以刪除設計工具中無效的活動。
 
 ### <a name="workflow-load-errors"></a>工作流程載入錯誤
- 工作流程無法載入，」 文件的工作流程設計工具發生問題 」 的文字會出現在設計工具的介面，以及載入工作流程的失敗原因的例外狀況資訊。 通常當無法剖析 XAML 檔時，就會發生這個錯誤。
+ 無法載入工作流程，「 工作流程設計工具發生問題與文件 」 的文字會出現在設計工具介面，以及造成工作流程載入失敗的例外狀況資訊。 通常當無法剖析 XAML 檔時，就會發生這個錯誤。

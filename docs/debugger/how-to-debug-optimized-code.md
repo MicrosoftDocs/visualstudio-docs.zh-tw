@@ -1,5 +1,5 @@
 ---
-title: 如何： 偵錯最佳化程式碼 |Microsoft 文件
+title: 如何： 偵錯最佳化程式碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,21 +23,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478076"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058506"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 > [!NOTE]
->  [/Zo （增強最佳化偵錯）](/cpp/build/reference/zo-enhance-optimized-debugging)編譯器選項 （在 Visual Studio Update 3 引入） 會產生更豐富的偵錯資訊，針對最佳化程式碼 (未建置的專案 **/Od**編譯器選項。 請參閱[/O 選項 （最佳化程式碼）](/cpp/build/reference/o-options-optimize-code))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
+>  [/Zo （增強最佳化偵錯）](/cpp/build/reference/zo-enhance-optimized-debugging)編譯器選項 （在 Visual Studio Update 3 引入） 會產生更豐富的偵錯資訊，針對最佳化程式碼 (不使用建置的專案 **/Od**編譯器選項。 請參閱[/O 選項 （最佳化程式碼）](/cpp/build/reference/o-options-optimize-code))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
 >   
->  [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)停用當 **/Zo** ocompiler 選項可用。  
+>  [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)時，會停 **/Zo**使用編譯器選項。  
   
  當編譯器最佳化程式碼時，它會重新調整位置並重新組織指令。 這會產生較有效率的已編譯程式碼。 因為這種重新安排，偵錯工具不一定能辨識對應到一組指令的原始程式碼。  
   
@@ -59,36 +59,36 @@ ms.locfileid: "31478076"
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>若要啟動偵錯組建組態的最佳化  
   
-1.  當您建立新專案時，選取 `Win32 Debug` 目標。 使用`Win32``Debug`目標之前進行完整偵錯您的程式，而且您準備好要建置`Win32 Release`目標。 編譯器不會最佳化 `Win32 Debug` 目標。  
+1.  當您建立新專案時，選取 `Win32 Debug` 目標。 使用`Win32``Debug`目標以前完成偵錯您的程式，並準備好建置`Win32 Release`目標。 編譯器不會最佳化 `Win32 Debug` 目標。  
   
 2.  在 [方案總管] 中選取專案。  
   
-3.  在**檢視**功能表上，按一下 **屬性頁**。  
+3.  在 **檢視**功能表上，按一下**屬性頁**。  
   
-4.  在**屬性頁**對話方塊方塊中，請確定`Debug`中選取**組態**下拉式清單。  
+4.  在 **屬性頁**對話方塊方塊中，請確定`Debug`中選取**Configuration**下拉式清單。  
   
 5.  在左側的資料夾檢視，選取**C/c + +** 資料夾。  
   
-6.  在下**c + +** 資料夾中，選取`Optimization`。  
+6.  底下**c + +** 資料夾中，選取`Optimization`。  
   
-7.  在右邊的屬性清單裡，尋找 `Optimization`。 旁邊的設定可能是`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 選擇其中一個其他選項 (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
+7.  在右邊的屬性清單裡，尋找 `Optimization`。 它旁邊的設定可能是`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 選擇其中一個其他選項 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
   
 8.  如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。  
   
-9. 選取 組態屬性 | C/c + + 專案屬性頁面中，命令列節點並加入`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`至**其他選項**文字方塊。  
+9. 選取 [組態屬性 | C/c + +，命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`來**其他選項**文字方塊。  
   
     > [!WARNING]
     >  `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。  
     >   
-    >  加入`/Zo`將會停用[編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
+    >  新增`/Zo`將會停用[編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
   
- 當您偵錯最佳化程式碼時，使用**反組譯碼**視窗來查看哪些指令實際建立並執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：  
+ 當您偵錯最佳化程式碼時，使用**反組譯碼**視窗來查看哪些指令來實際建立並執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   
- 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視**反組譯碼**視窗中，[步驟單位](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)自動設定為指令更大的控制權，當您逐步執行最佳化程式碼時非常有用。  
+ 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視**反組譯碼** 視窗中，[步驟單位](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)會自動設定指令更好的控制，當您逐步執行最佳化程式碼時非常有用。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

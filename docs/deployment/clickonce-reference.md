@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 參考 |Microsoft 文件
+title: ClickOnce 參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d73cb7aa647a3ee6adbf7d06d832fe3b59c5ed8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557030"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081562"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 下列頁面描述用來代表 ClickOnce 應用程式的 XML 檔案的結構。  
   
 ## <a name="in-this-section"></a>本節內容  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
- 列出並描述的元素和構成應用程式資訊清單的屬性。  
+ 列出並描述的元素和屬性組成的應用程式資訊清單。  
   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)  
  列出並描述的元素和部署資訊清單所組成的屬性。  
@@ -38,7 +38,7 @@ ms.locfileid: "31557030"
  列出產品和套件檔案項目。  
   
  [ClickOnce Unmanaged API 參考](../deployment/clickonce-unmanaged-api-reference.md)  
- 列出 dfshim.dll unmanaged 的公用 Api。  
+ 列出未受管理的公用 Api 從 dfshim.dll。  
   
 ## <a name="reference"></a>參考資料  
   
@@ -47,7 +47,7 @@ ms.locfileid: "31557030"
  提供有關 ClickOnce 部署的詳細概念資訊。  
   
  <xref:System.Deployment.Application>  
- 提供參考的 ClickOnce 支援 managed 程式碼中的公用類別的文件的連結。  
+ 提供參考的 managed 程式碼內支援 ClickOnce 的公用類別的文件的連結。  
   
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)  
- 提供逐步解說和如何-若要的可執行 ClickOnce 工作。
+ 提供逐步解說以及-若要的可執行 ClickOnce 工作。

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766034"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282950"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
@@ -33,7 +33,7 @@ ms.locfileid: "34766034"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>步驟 1 - 查看此問題是否為已知問題
 
-Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正。 若要查看是否有您問題的因應措施，請參閱[版本資訊的＜已知問題＞一節](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues)。
+Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正。 若要查看是否有您問題的因應措施，請參閱[版本資訊的＜已知問題＞一節](/visualstudio/releasenotes/vs2017-relnotes#-known-issues)。
 
 ### <a name="step-2---check-with-the-developer-community"></a>步驟 2 - 查看開發人員社群
 
@@ -48,7 +48,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 1. 關閉 Visual Studio 安裝程式。
 2. 刪除 Visual Studio 安裝程式目錄。 此目錄通常是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 執行 Visual Studio 安裝程式啟動載入器。 您可在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://www.visualstudio.com/downloads/)頁面並按一下您 Visual Studio 版本的 [下載] 來下載啟動載入器。 執行該可執行檔來重設您的安裝中繼資料。
+3. 執行 Visual Studio 安裝程式啟動載入器。 您可在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面並按一下您 Visual Studio 版本的 [下載] 來下載啟動載入器。 執行該可執行檔來重設您的安裝中繼資料。
 4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ### <a name="step-4---report-a-problem"></a>步驟 4 - 回報問題
@@ -71,7 +71,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ### <a name="step-6---contact-us-optional"></a>步驟 6 - 與我們連絡 (選擇性)
 
-如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
+如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>如何針對離線安裝程式進行疑難排解
 
@@ -100,7 +100,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ## <a name="more-support-options"></a>更多支援選項
 
-如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
+如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 以下是一些選項：
 

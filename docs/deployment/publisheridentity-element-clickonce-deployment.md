@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+title: '&lt;publisherIdentity&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815138"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081406"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
 包含簽署此部署資訊清單之發行者的資訊。  
   
 ## <a name="syntax"></a>語法  
@@ -38,7 +38,7 @@ ms.locfileid: "34815138"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `publisherIdentity` ，則需要已簽署的元素。 下表顯示的屬性，`publisherIdentity`項目支援。  
+ `publisherIdentity` ，則需要簽署資訊清單元素。 下表顯示的屬性，`publisherIdentity`項目支援。  
   
 |屬性|描述|  
 |---------------|-----------------|  

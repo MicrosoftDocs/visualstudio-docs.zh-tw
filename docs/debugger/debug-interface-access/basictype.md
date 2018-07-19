@@ -1,5 +1,5 @@
 ---
-title: BasicType |Microsoft 文件
+title: BasicType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458771"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433076"
 ---
 # <a name="basictype"></a>BasicType
 指定符號的基本類型。  
@@ -46,12 +46,14 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
 ## <a name="elements"></a>項目  
  btNoType  
- 未不指定任何基本類型。  
+ 未不指定任何基本的類型。  
   
  btVoid  
  基本類型是`void`。  
@@ -60,7 +62,7 @@ enum BasicType {
  基本類型是`char`（C/c + + 型別）。  
   
  btWChar  
- 基本類型是寬的 (Unicode) 字元 (`WCHAR`)。  
+ 基本類型是寬 (Unicode) 字元 (`WCHAR`)。  
   
  btInt  
  基本類型是`signed int`（C/c + + 型別）。  
@@ -69,13 +71,13 @@ enum BasicType {
  基本類型是`unsigned int`（C/c + + 型別）。  
   
  btFloat  
- 基本類型是浮點數 (`FLOAT`)。  
+ 基本的型別是浮點數 (`FLOAT`)。  
   
  btBCD  
  基本類型是二進位編碼的十進位 (`BCD`)。  
   
  btBool  
- 基本類型為布林值 (`BOOL`)。  
+ 基本的型別是布林值 (`BOOL`)。  
   
  btLong  
  基本類型是`long int`（C/c + + 型別）。  
@@ -90,22 +92,22 @@ enum BasicType {
  基本類型是日期/時間 (`DATE`)。  
   
  btVariant  
- 基本類型是一種變數型別結構 (`VARIANT`)。  
+ 基本的型別是一種變數類型結構 (`VARIANT`)。  
   
  btComplex  
- 基本類型為複數。  
+ 基本類型會是複數。  
   
  btBit  
- 基本類型為位元。  
+ 一些基本的類型。  
   
  btBSTR  
- 基本類型是基本或二進位字串 (`BSTR`)。  
+ 基本的類型是基本或二進位字串 (`BSTR`)。  
   
  btHresult  
  基本類型是`HRESULT`。  
   
 ## <a name="remarks"></a>備註  
- 所傳回的值，這個列舉型別中[idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法。  
+ 傳回這個列舉型別中的值[idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948336"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282223"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "31948336"
 
 當您登入時，您可以擴充 Visual Studio 體驗。 例如，您可以在登入之後，跨裝置同步處理您的設定、延長試用期及自動連接到 Azure 服務等等。
 
-以下是您在登入後預期及可執行事項的完整清單：  
+以下是您在登入後預期及可執行事項的完整清單：
 
 - **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 。
 
@@ -62,9 +62,9 @@ ms.locfileid: "31948336"
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您在登入時遇到任何問題，請參閱[帳戶支援](https://www.visualstudio.com/subscriptions/support/)頁面來取得協助。
+如果您在登入時遇到任何問題，請參閱[帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面來取得協助。
 
 ## <a name="see-also"></a>另請參閱
 
-* [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

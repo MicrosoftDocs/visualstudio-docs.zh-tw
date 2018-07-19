@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eaa3a852ad67b0d1ffb4e0fb5c121adca81091a9
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815161"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 您可以使用此項目的具名屬性和其衍生屬性來修改設定：
 
-```
+```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
@@ -75,7 +76,7 @@ IntelliTest 對程式執行路徑的探索越深，IntelliTest 從程式的控�
 
 例如，下列程式碼會依照 100 的順序取用分支：
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
@@ -104,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 例如，下列程式碼中的每個路徑會取用 n + 1 條件：
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) 
 {

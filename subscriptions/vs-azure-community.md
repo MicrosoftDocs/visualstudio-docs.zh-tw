@@ -9,16 +9,16 @@ description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199179"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280373"
 ---
-# <a name="azure-community"></a>Azure 社群  
+# <a name="azure-community"></a>Azure 社群
 
-直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。  
+直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ ms.locfileid: "31199179"
 
 
 ## <a name="activation-steps"></a>啟用步驟
-開始使用 Azure 社群非常簡單。  
+開始使用 Azure 社群非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助] 連結。 
+2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助] 連結。
 
    ![[Azure 社群] 圖格](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. 您將會看到可用論壇清單。  只要按一下您要的論壇。  
+3. 您將會看到可用論壇清單。  只要按一下您要的論壇。
 
    ![Azure 社群論壇](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  在論壇內，您可以檢視主題與回應、搜尋您問題的解答，以及張貼新問題。 
+4.  在論壇內，您可以檢視主題與回應、搜尋您問題的解答，以及張貼新問題。
 
    ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -62,10 +62,10 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft FTE、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT)*
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
 -  如需其他 Azure 社群資源，請瀏覽 Azure 社群[支援頁面](https://azure.microsoft.com/support/forums/)。
 -  [Azure 文件](/azure/)。
--  需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 
+-  需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

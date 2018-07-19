@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具的控制流程活動設計工具
+title: 工作流程設計工具-Control Flow 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967396"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758390"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 
-Windows 工作流程設計工具包含數個系統供應的活動可讓您建構工作流程時。 本節包含用來控制工作流程中之流程的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。
+工作流程設計工具包含數個系統提供建構工作流程時，您可以使用的活動。 本節包含用來控制工作流程中之流程的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。
 
 ## <a name="reference"></a>參考資料
 
@@ -53,7 +53,7 @@ Windows 工作流程設計工具包含數個系統供應的活動可讓您建構
 
  [流程圖](../workflow-designer/flowchart-activity-designers.md)
 
- [訊息處理](../workflow-designer/messaging-activity-designers.md)
+ [傳訊](../workflow-designer/messaging-activity-designers.md)
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 

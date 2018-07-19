@@ -1,5 +1,5 @@
 ---
-title: 格式規範，在偵錯工具 （c + +） |Microsoft 文件
+title: 格式規範，在偵錯工具 （c + +） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,20 +29,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478118"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057752"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C + + 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。  
   
- 您也可以使用中的格式規範**即時運算**視窗中，**命令**視窗，請在[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，甚至來源視窗中。 如果您在這些視窗中的某個運算式上暫停時，結果會出現在資料提示方塊。 DataTip 顯示會反映格式規範。  
+ 您也可以使用中的格式規範**Immediate**  視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，和甚至來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在資料提示方塊中。 DataTip 顯示會反映格式規範。  
   
 > [!NOTE]
->  當 Visual Studio 原生偵錯工具變更為新的偵錯引擎時，已加入一些新的格式規範，並移除一些舊的。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。
+>  當 Visual Studio 原生偵錯工具變更為新的偵錯引擎中時，新增一些新的格式規範，並已移除一些舊的。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。
 >   
 >  -   [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
 > -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
@@ -58,7 +58,7 @@ int main() {
 }  
 ```  
   
- 新增`my_var1`變數設為**監看式**視窗 (偵錯時，**偵錯 > Windows > 監看式 > 監看式 1**)，然後將顯示設定為十六進位 (在**觀賞**視窗中，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**)。 現在監看式視窗顯示它包含了值 0x0065。 若希望數值以字元顯示，而非整數，請在 [名稱] 欄位中變數名稱後面，加入字元格式規範 **, c**。 [值]  資料行現在出現時會帶有 **101 'e'**。  
+ 新增`my_var1`變數設為**監看式**視窗 (偵錯時，**偵錯 > Windows > 監看式 > 監看式 1**)，然後將顯示設定為十六進位 (在**觀看**視窗中，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**)。 現在監看式視窗顯示它包含了值 0x0065。 若希望數值以字元顯示，而非整數，請在 [名稱] 欄位中變數名稱後面，加入字元格式規範 **, c**。 [值]  資料行現在出現時會帶有 **101 'e'**。  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -79,7 +79,7 @@ int main() {
 |su|Unicode （utf-16 編碼） 字串|\<位置 > L"hello world"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode （utf-16 編碼） 字串 （沒有引號）|\<位置 > L"hello world"|hello world|  
 |bstr|BSTR 字串|\<位置 > L"hello world"|L"hello world"|  
-|env|環境區塊 （雙 null 終止字串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|環境區塊 （雙精度浮點數 null 終止字串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32 字串|\<位置 > U"hello world"|u"hello world"|  
 |**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
@@ -115,13 +115,13 @@ int main() {
 |**l,h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|  
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|  
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
-|**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
+|**g**|帶正負號的浮點數或帶正負號的科學記號標記法<br/> 何者較短|(3.0/2.0)|1.5|  
 |c|單一字元|\<location>|101 'e'|  
 |秒|const char*|\<location>|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
 |sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
 |s8|const char*|\<location>|"hello world"|  
-|hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
+|hr|HRESULT 或 Win32 錯誤碼。<br/>（偵錯工具自動將 Hresult 解碼，<br/> 因此不需要在這些情況下的規範。|S_OK|S_OK|  
 |wc|Window 類別旗標。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|  
 |!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示 >|4|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C + interop 偵錯中做為陣列的指標大小規範 + CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C + 的 interop 偵錯中做為陣列的指標大小規範 + CLI  
  如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
   
 |指定名稱|格式|運算式|顯示的值|  

@@ -1,5 +1,5 @@
 ---
-title: 資料夾項目 （Visual Studio 專案範本） |Microsoft 文件
+title: Folder 元素 （Visual Studio 專案範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132811"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234919"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>資料夾項目 (Visual Studio 專案範本)
 指定將會加入至專案的資料夾。  
@@ -47,9 +47,9 @@ ms.locfileid: "31132811"
 |屬性|描述|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|  
-|`TargetFolderName`|選擇性屬性。<br /><br /> 指定要從範本建立專案時，提供給資料夾的名稱。 這個屬性可用於使用取代參數建立的資料夾名稱或命名的資料夾有國際字串不能直接在.zip 檔案。|  
+|`TargetFolderName`|選擇性屬性。<br /><br /> 指定要從範本建立專案時，提供給資料夾的名稱。 這個屬性可用於使用參數取代建立的資料夾名稱或命名資料夾中的，使用國際字串不能直接在.zip 檔案。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -65,9 +65,9 @@ ms.locfileid: "31132811"
 ## <a name="remarks"></a>備註  
  `Folder` 是選擇性的子系的`Project`。  
   
- 您可以使用任何下列方法，以將專案項目組織成範本中的資料夾：  
+ 您可以使用下列方法之一，將專案項目組織成在範本中的資料夾：  
   
--   在範本的.zip 檔案，包括資料夾並將它們加入至專案的.vstemplate 檔案中指定的路徑中的檔案`ProjectItem`項目，不含`Folder`項目。 這是建議的方法。 例如:   
+-   在範本.zip 檔案中包含的資料夾，並將其加入.vstemplate 檔案中的專案，藉由指定的路徑中的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如:   
   
      `...`  
   
@@ -77,7 +77,7 @@ ms.locfileid: "31132811"
   
      `...`  
   
--   將資料夾加入範本的.zip 檔案，並將它們加入使用.vstemplate 檔案中的專案`Folder`項目。 例如:   
+-   在範本.zip 檔案中包含的資料夾，並將其加入使用.vstemplate 檔案中的專案`Folder`項目。 例如:   
   
      `...`  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31132811"
   
      `...`  
   
--   在範本的.zip 檔案中，不包含資料夾，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如:   
+-   在範本的.zip 檔案中，不包含資料夾，但將使用的資料夾新增`TargetFileName`屬性的`ProjectItem`項目。 例如:   
   
      `...`  
   
