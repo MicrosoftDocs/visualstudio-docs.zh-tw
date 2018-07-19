@@ -1,5 +1,5 @@
 ---
-title: 偵錯 LINQ |Microsoft 文件
+title: 偵錯 LINQ |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474930"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056691"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援 Language-Integrated Query (LINQ) 程式碼偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題描述 LINQ 偵錯的主要限制。  
@@ -34,7 +34,7 @@ ms.locfileid: "31474930"
 ##  <a name="BKMK_ViewingLINQResults"></a> 檢視 LINQ 結果  
  藉由使用資料提示方塊、[監看式] 視窗和 [快速監看式] 對話方塊，您可以檢視 LINQ 陳述式的結果。 使用來源視窗時，您可以將指標暫停在來源視窗中的查詢上，則資料提示方塊會隨即出現。 您可以複製 LINQ 變數並張貼到 [監看式] 視窗或 [快速監看式] 對話方塊。  
   
- 在 LINQ 中，建立或宣告查詢時並不會進行評估，只有在使用查詢時才會評估。 因此，直到評估前查詢都不會有值。 建立查詢和評估的完整說明，請參閱[LINQ 查詢 (C#) 簡介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或[撰寫您的第一個 LINQ 查詢](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
+ 在 LINQ 中，建立或宣告查詢時並不會進行評估，只有在使用查詢時才會評估。 因此，直到評估前查詢都不會有值。 如需查詢建立及評估的完整說明，請參閱[LINQ 查詢 (C#) 簡介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或是[撰寫您的第一個 LINQ 查詢](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
   
  若要顯示查詢結果，偵錯工具必須進行評估。 在偵錯工具中檢視 LINQ 查詢結果時發生的這個隱含評估，會帶來一些您需要考慮的影響：  
   
@@ -49,11 +49,11 @@ ms.locfileid: "31474930"
  在 LINQ to SQL 查詢中，偵錯工具無法控制述詞 (Predicate) 程式碼。 因此，您無法逐步執行述詞程式碼。 任何編譯成運算式樹狀架構的查詢所造成的程式碼，都無法由偵錯工具控制。  
   
 ### <a name="stepping-in-visual-basic"></a>Visual Basic 中的逐步執行  
- 在 Visual Basic 程式中逐步執行且偵錯工具遇到查詢宣告時，並不會逐步執行該宣告，而會將整個宣告反白顯示為單一陳述式。 這種行為的發生，是因為查詢是等到被呼叫時才會評估的 如需詳細資訊，請參閱[Visual Basic 中的 LINQ 簡介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)。  
+ 在 Visual Basic 程式中逐步執行且偵錯工具遇到查詢宣告時，並不會逐步執行該宣告，而會將整個宣告反白顯示為單一陳述式。 這種行為的發生，是因為查詢是等到被呼叫時才會評估的 如需詳細資訊，請參閱 <<c0> [ 在 Visual Basic 中的 LINQ 簡介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)。  
   
  如果逐步執行下列範例程式碼，偵錯工具會將查詢宣告或查詢建立反白顯示為單一陳述式。  
   
-```  
+```vb
 Function MyFunction(ByVal x As Char)  
     Return True  
 End Function  
@@ -76,7 +76,7 @@ End Sub
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>使用函式取代述詞以啟用逐步執行 (Visual Basic)  
  如果基於偵錯目的而必須逐步執行述詞程式碼，您可以藉由呼叫包含原始述詞程式碼的函式來取代述詞。 例如，假設您有下段程式碼：  
   
-```  
+```vb
 Dim items() as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -89,7 +89,7 @@ Next
   
  您可以將述詞程式碼移到新的函式，名為 `IsEven`：  
   
-```  
+```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -106,11 +106,11 @@ End Function
   
  修訂的查詢每回會透過 `IsEven` 呼叫函式 `items`。 您可以使用偵錯工具視窗查看每個項目是否符合指定狀況，而且可以逐步執行 `IsEven` 中的程式碼。 這個範例中的述詞相當簡單。 但是，當您必須偵錯更為複雜的述詞時，這個技巧就很好用。  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Linq 不支援編輯後繼續  
- 編輯後繼續 支援 LINQ 查詢，但有限制的變更。 如需詳細資訊，請參閱[EnC 支援變更](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 不支援 LINQ 的編輯後繼續  
+ 編輯後繼續 支援 LINQ 查詢，但有限制的變更。 如需詳細資訊，請參閱 < [EnC 支援變更](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>另請參閱  
- [SQL 偵錯](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
- [管理例外狀況偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)   
+ [偵錯 SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
+ [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)   
  [LINQ 查詢簡介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   
  [Visual Basic 中的 LINQ 簡介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
