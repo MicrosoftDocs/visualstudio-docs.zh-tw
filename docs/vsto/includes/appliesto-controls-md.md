@@ -1,3 +1,3 @@
-  **適用對象：**本主題資訊適用於 Excel 及 Word 的文件層級專案及 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../../vsto/features-available-by-office-application-and-project-type.md)。
+  **適用於：** 本主題資訊適用於文件\-層級專案及 VSTO 加入\-for Excel 和 Word 專案中。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../../vsto/features-available-by-office-application-and-project-type.md)。
 
   

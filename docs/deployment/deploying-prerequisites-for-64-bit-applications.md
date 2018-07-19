@@ -1,5 +1,5 @@
 ---
-title: 64 位元應用程式的部署必要條件 |Microsoft 文件
+title: 64 位元應用程式的部署必要條件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566000"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077928"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>64 位元應用程式的部署必要條件
-ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括**x86**對於 32 位元平台， **x64**用於支援 AMD64 和 EM64T 指令集，和**Itanium** 64 位元 Itanium 處理器。  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>64 位元應用程式的部署必要條件
+ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括**x86**對於 32 位元平台， **x64**機器支援 AMD64 和 EM64T 指令集，並**Itanium** 64 位元 Itanium 處理器。  
   
 ## <a name="prerequisites"></a>必要條件  
  下表列出一些可轉散發套件，您可以將它們當做 64 位元應用程式安裝的必要條件來使用。  
@@ -38,12 +38,12 @@ ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標�
 |可轉散發套件|x64 支援|IA64 支援|  
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)]|是|否|  
-|Visual C++ 2010 執行階段程式庫 (IA64)|否|是|  
-|Visual C++ 2010 執行階段程式庫 (x64)|是|否|  
+|Visual C++ 2010 執行階段程式庫 (IA64)|否|[是]|  
+|Visual C++ 2010 執行階段程式庫 (x64)|[是]|否|  
 |Microsoft .NET Framework 4 (x86 和 x64)|是||  
 |Microsoft .NET Framework 4 Client Profile (x86 和 x64)|[是]||  
   
 ## <a name="see-also"></a>另請參閱  
  [部署應用程式、 服務和元件](../deployment/deploying-applications-services-and-components.md)   
- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

@@ -1,5 +1,5 @@
 ---
-title: 使用舊版 API 存取 theText 檢視 |Microsoft 文件
+title: 使用舊版 API 存取 theText 檢視 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 534016bda397ca998740c9fcc8252f4efbc8ccc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fe57ab7ef5ac113f1248f89cd62ef5b9ec33ca3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097779"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081819"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>使用舊版 API 存取 theText 檢視
-文字檢視是儲存在文字緩衝區之文字的呈現。 您可以在下一節中所示，使用舊版 API 存取文字檢視。
+# <a name="access-the-text-view-by-using-the-legacy-api"></a>使用舊版的 API 來存取 [文字] 檢視
+文字檢視是儲存在文字緩衝區中的文字呈現。 您可以存取 [文字] 檢視下一節中所示，使用舊版 API。
 
 ## <a name="text-view-object"></a>文字檢視物件
- 每個檢視都與它自己的文字緩衝區，並檢視是在緩衝區中資料的視窗。 下圖顯示的文字檢視物件，因為它由索引鍵的介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>。
+ 每個檢視是它自己的文字緩衝區，相關聯，而檢視上的資料緩衝區中的視窗。 下圖顯示的文字檢視物件，因為它由索引鍵的介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>。
 
  ![Visual Studio 文字檢視物件](../extensibility/media/vstextview.gif "vstextview")文字檢視物件
 
- 檢視是一種在緩衝區中呈現的文字。 它包含功能，例如自動換行和大綱，以便在檢視中看到的內容不會確切的緩衝區中的文字。
+ 檢視是一種呈現文字緩衝區中。 它包含功能，例如自動換行和製作大綱，以便在檢視中看到的內容不是確切的緩衝區中的文字。
 
- 檢視可讓其他服務或處理程序以攔截連入的命令，並採取行動才能檢視充當他們。 若要這樣做最常見的服務是語言服務。 語言服務可能需要，比方說，攔截 ENTER 鍵，以提供自訂的縮排行為或工具提示的命令。
+ 檢視可讓其他服務或攔截連入的命令，並檢視採取行動之前採取動作的程序。 若要這樣做最常見的服務是語言服務。 語言服務可能需要，比方說，攔截 ENTER 鍵來提供自訂的縮排的行為或工具提示的命令。
 
-## <a name="adding-functionality-to-the-text-view"></a>將功能加入至文字檢視
- 您可以自訂文字檢視行為來處理特定的按鍵輸入。 若要攔截按鍵動作，您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>上您的物件，並提供命令目標 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) 監視和截距命令。
+## <a name="add-functionality-to-the-text-view"></a>將功能加入至文字檢視
+ 您可以藉由處理特定的按鍵輸入自訂文字檢視行為。 若要攔截的按鍵輸入，您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>物件，並提供命令目標 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) 監視和截距命令。
 
- 文字檢視會針對命令篩選器使用循序的架構。 新的命令篩選器 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>物件) 的呼叫新增至序列<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法。
+ [文字] 檢視會用於命令篩選器中的循序的架構。 新的命令篩選器 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>物件) 的呼叫加入至序列<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法。
 
- [文字] 檢視的事件通知使用來提供<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents>介面。 實作這個介面上您的用戶端物件來接收通知的文字檢視變更。 使用公開這個介面可文字檢視<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>上文字檢視，以從檢視接收變更通知的介面。
+ 文字檢視的事件通知使用來提供<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents>介面。 實作此介面上接收到 [文字] 檢視的變更通知用戶端物件。 使用公開這個介面來文字檢視<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>上的文字檢視，以從檢視收到變更通知的介面。
 
 ## <a name="see-also"></a>另請參閱
 
-- [變更檢視設定，以使用舊版 API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
-- [使用文字管理員監控全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
+- [使用舊版的 API 來變更檢視設定](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
+- [使用文字管理員監視全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)

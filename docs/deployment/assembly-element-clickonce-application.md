@@ -1,5 +1,5 @@
 ---
-title: '&lt;組件&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+title: '&lt;組件&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704219"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077086"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;組件&gt;元素 （ClickOnce 應用程式）
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;組件&gt;項目 （ClickOnce 應用程式）
 應用程式資訊清單最上層項目。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -38,7 +38,7 @@ ms.locfileid: "33704219"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `assembly`元素是根項目，就需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間的其中一個：  
+ `assembly`元素是根項目，且需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間的其中一個：  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -55,9 +55,9 @@ ms.locfileid: "33704219"
 |`manifestVersion`|必要。 `manifestVersion`屬性必須設為`1.0`。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`assembly`應用程式資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這個程式碼範例是中提供之較大範例的一部分[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
+ 下列程式碼範例說明`assembly`的應用程式資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此程式碼範例是中提供之較大範例的一部分[ndptecclick](../deployment/clickonce-application-manifest.md)。  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

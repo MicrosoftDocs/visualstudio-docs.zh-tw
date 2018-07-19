@@ -1,5 +1,5 @@
 ---
-title: 映像服務與類別目錄 |Microsoft 文件
+title: 影像服務 」 和 「 類別目錄 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,43 +9,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134664"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079076"
 ---
-# <a name="image-service-and-catalog"></a>映像服務與類別目錄
-此操作手冊包含指導和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。  
+# <a name="image-service-and-catalog"></a>映像服務和目錄
+此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。  
   
- Visual Studio 2015 中導入的映像服務可讓開發人員取得最佳的映像的裝置，並顯示映像，包括正確內容中顯示的主題設定使用者選取的佈景主題。 採用映像服務，可協助消除資產維護、 HDPI 調整和主題相關的主要痛苦點。  
+ Visual Studio 2015 中導入的映像服務可讓開發人員快速在裝置和使用者的輸入選取的佈景主題來顯示影像，包括正確的佈景主題，它們會顯示內容的最佳映像。 採用映像服務能讓您避免與相關資產維護、 HDPI 調整及佈景主題的主要難題。  
   
 |||  
 |-|-|  
-|**現今的問題**|**方案**|  
-|背景色彩混色|內建的 alpha 混色|  
+|**今天的問題**|**方案**|  
+|透明混色的背景色彩|內建的 alpha 混色|  
 |佈景主題 （部分） 映像|佈景主題的中繼資料|  
 |高對比模式|替代的高對比資源|  
 |不同 DPI 模式需要多個資源|選取以向量為基礎的後援資源|  
-|複製影像|映像概念每一個識別項|  
+|重複的映像|每個映像概念的一個識別項|  
   
  為什麼採用映像服務嗎？  
   
 -   一律從 Visual Studio 中取得最新的 「 像素完美 」 映像  
   
--   您可以送出，並使用自己的映像  
+-   您可以送出，並使用您自己的映像  
   
--   若要測試您的映像出 Windows 新增新的 DPI 縮放比例不需要  
+-   若要測試您的映像出 Windows 當新增新的 DPI 縮放比例不需要  
   
--   在您實作舊架構的障礙地址  
+-   解決您的實作中的舊架構障礙  
   
  Visual Studio shell 工具列之前和之後使用映像服務：  
   
- ![影像服務之前和之後](../extensibility/media/image-service-before-and-after.png "影像服務之前和之後")  
+ ![影像服務之前及之後](../extensibility/media/image-service-before-and-after.png "影像服務之前和之後")  
   
-## <a name="how-it-works"></a>它的運作方式  
- 映像服務可以提供適用於任何支援的 UI 架構點陣圖影像：  
+## <a name="how-it-works"></a>它的運作方式
+ 映像服務可以提供點陣圖影像適用於任何支援的 UI 架構：  
   
 -   WPF: BitmapSource  
   
@@ -59,15 +59,15 @@ ms.locfileid: "31134664"
   
  **影像 moniker**  
   
- 影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產的 GUID/識別碼組。  
+ 影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產 GUID/識別碼組。  
   
  **已知的 moniker**  
   
- 包含在 Visual Studio 映像類別目錄和公開可使用中的任何 Visual Studio 元件或擴充影像 moniker 組。  
+ 一任何的組 Visual Studio 元件或擴充功能包含在 Visual Studio 映像目錄及公開可使用的影像 moniker。  
   
- **映像資訊清單檔案**  
+ **影像資訊清單檔**  
   
- 影像資訊清單 (.imagemanifest) 檔案是 XML 檔案會定義一組的影像資產，表示這些資產，和實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像，或影像清單的舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或之後每個資產的個別映像上的屬性。  
+ 影像資訊清單 (*.imagemanifest*) 檔案是 XML 檔案，定義一組的影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
   
  **映像資訊清單結構描述**  
   
@@ -92,7 +92,7 @@ ms.locfileid: "31134664"
   
  **符號**  
   
- 可讀性和維護的協助，映像資訊清單可以使用符號的屬性值。 符號已定義如下：  
+ 當可讀性及維護的協助，映像資訊清單可用於屬性值的符號。 符號定義如下：  
   
 ```xml  
 <Symbols>  
@@ -106,9 +106,9 @@ ms.locfileid: "31134664"
 |||  
 |-|-|  
 |**子元素**|**定義**|  
-|匯入|匯入的目前資訊清單中使用的指定資訊清單檔案的符號|  
+|匯入|匯入使用目前的資訊清單中的指定資訊清單檔案的符號|  
 |Guid|符號表示的 GUID，而且必須符合 GUID 格式|  
-|識別碼|符號代表識別碼，而且必須是非負值整數|  
+|識別碼|符號代表的識別碼，而必須是非負整數|  
 |String|符號代表任意字串值|  
   
  符號會區分大小寫，且參考使用 $(symbol-name) 語法：  
@@ -119,7 +119,7 @@ ms.locfileid: "31134664"
 </Image>  
 ```  
   
- 某些符號會預先定義的所有資訊清單。 這些可用的 Uri 屬性中\<來源 > 或\<匯入 >，在本機電腦上的參考路徑的項目。  
+ 所有的資訊清單已預先定義一些符號。 這些可用的 Uri 屬性中\<來源 > 或\<匯入 >，在本機電腦上的參考路徑的項目。  
   
 |||  
 |-|-|  
@@ -129,14 +129,14 @@ ms.locfileid: "31134664"
 |ManifestFolder|包含資訊清單檔案的資料夾|  
 |MyDocuments|目前使用者的 [我的文件] 資料夾的完整路徑|  
 |ProgramFiles|%Programfiles%環境變數的值|  
-|系統|Windows\System32 資料夾|  
+|系統|*Windows\System32*資料夾|  
 |WinDir|%Windir%環境變數的值|  
   
  **影像**  
   
- \<影像 > 項目會定義可以參考 moniker 的映像。 GUID 和 ID 聚集在一起會形成影像 moniker。 在整個影像程式庫，moniker 映像必須是唯一的。 如果多個映像具有給定的 moniker，建置程式庫時遇到的第一個是保留的一個。  
+ \<映像 > 項目定義的映像，您可以參考 moniker。 GUID 和 ID 結合在一起形成影像 moniker。 跨整個映像庫，影像 moniker 必須是唯一的。 如果多個映像具有指定的 moniker，在建置程式庫時所遇到的第一個是會保留。  
   
- 它必須包含至少一個來源。 中性大小來源會提供最佳結果，並在廣泛的大小，但它們並非必要。 如果服務要求中未定義大小的影像\<影像 > 項目並沒有中性大小來源，服務將選擇最佳的特定大小的來源，並調整為要求的大小。  
+ 它必須包含至少一個來源。 中性大小來源會提供最佳結果，並跨各種大小，但它們並非必要條件。 如果此服務會要求中未定義大小的影像\<映像 > 項目並沒有中性大小來源，會選擇最佳的特定大小的來源服務，並將其調整為要求的大小。  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -150,7 +150,7 @@ ms.locfileid: "31134664"
 |**屬性**|**定義**|  
 |Guid|[必要]影像 moniker GUID 部分|  
 |識別碼|[必要]影像 moniker 識別碼部分|  
-|AllowColorInversion|[選擇性的預設為 true]指出映像是否可以具有它以程式設計方式反轉使用深色背景的色彩。|  
+|AllowColorInversion|[選擇性的預設為 true]指出影像是否可以使用深色背景時以程式設計的方式已反轉其色彩。|  
   
  **來源**  
   
@@ -165,21 +165,21 @@ ms.locfileid: "31134664"
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|URI|[必要]定義從何處可以載入影像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑|  
-|背景|[選用]指出項目類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景使用的來源。<br /><br /> *深色：* 深色背景使用的來源。<br /><br /> *高對比：* 來源可用在任何高對比模式中的背景上。<br /><br /> *HighContrastLight:* 淺色背景高對比模式中使用的來源。<br /><br /> *HighContrastDark:* 深色背景高對比模式中使用的來源。<br /><br /> 如果省略背景屬性，則來源可以用於任何背景上。<br /><br /> 如果背景是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉的來源色彩。 如果省略或設為背景*高對比*，反轉的來源色彩由映像的**AllowColorInversion**屬性。|  
+|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑|  
+|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> *暗色調：* 來源可以使用深色背景上。<br /><br /> *高對比：* 來源可以使用高對比模式中的任何背景上。<br /><br /> *HighContrastLight:* 來源可以使用高對比模式中是淺色背景。<br /><br /> *HighContrastDark:* 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
 |||  
   
- A\<來源 > 項目可以有一個下列選擇性子項目：  
+ A\<來源 > 項目可以有一個下列的選擇性子項目：  
   
 ||||  
 |-|-|-|  
 |**目**|**屬性 （全部所需）**|**定義**|  
-|\<大小 >|值|來源將使用指定的大小 （以裝置為單位） 的映像。 將正方形映像。|  
-|\<SizeRange >|MinSize MaxSize|來源將使用映像從 MinSize 成 MaxSize （以裝置為單位） （含） 之間。 將正方形映像。|  
-|\<維度 >|寬度、 高度|來源將使用指定的寬度和高度 （以裝置單位） 的映像。|  
-|\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含） 之間。|  
+|\<大小 >|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
+|\<SizeRange >|MinSize、 MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
+|\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
+|\<DimensionRange >|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
   
- A\<來源 > 項目也可以有選擇性\<NativeResource > 子元素，它會定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
+ A\<來源 > 項目也可以選擇性\<NativeResource > 子元素，定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -188,12 +188,12 @@ ms.locfileid: "31134664"
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|類型|[必要]原生資源 PNG 或 XAML 的類型|  
+|類型|[必要]資源類型的原生、 XAML 或 PNG|  
 |識別碼|[必要]原生資源的整數識別碼部分|  
   
  **ImageList**  
   
- \<ImageList > 項目會定義一個可傳回單一區域中影像的集合。 視需要視情況下，建置該區域。  
+ \<ImageList > 項目會定義可傳回單一區域中的映像的集合。 視需求為基礎，帶。  
   
 ```xml  
 <ImageList>  
@@ -209,44 +209,44 @@ ms.locfileid: "31134664"
 |識別碼|[必要]影像 moniker 識別碼部分|  
 |外部|[選擇性的預設為 false]指出是否影像 moniker 參考目前的資訊清單中的映像。|  
   
- 所含影像 moniker 沒有參考目前的清單中所定義的映像。 如果映像庫中找不到包含的影像，影像空白預留位置，將使用其所在位置。  
+ 參考目前的資訊清單中定義的映像沒有包含映像的 moniker。 如果映像庫中找不到包含映像，其位置中都將使用的空白預留位置映像。  
   
 ## <a name="using-the-image-service"></a>使用映像服務  
   
 ### <a name="first-steps-managed"></a>第一個步驟 (managed)  
  若要使用映像服務，您需要將部分或全部的下列組件的參考加入至您的專案：  
   
--   **Microsoft.VisualStudio.ImageCatalog.dll**  
+-   *Microsoft.VisualStudio.ImageCatalog.dll*  
   
-    -   如果您使用內建的映像目錄 KnownMonikers 必要項  
+    -   如果您使用內建映像目錄所需**KnownMonikers**。  
   
--   **Microsoft.VisualStudio.Imaging.dll**  
+-   *Microsoft.VisualStudio.Imaging.dll*  
   
-    -   如果您使用所需**CrispImage**和**ImageThemingUtilities** WPF ui  
+    -   如果您使用所需**CrispImage**並**ImageThemingUtilities** WPF UI 中。
   
--   **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+-   *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*  
   
-    -   如果您使用所需**ImageMoniker**和**ImageAttributes**類型  
+    -   如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
   
-    -   **EmbedInteropTypes**應該設定為 true  
+    -   **EmbedInteropTypes**應該設定為 true。  
   
--   **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+-   *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*  
   
-    -   如果您使用所需**IVsImageService2**類型  
+    -   如果您使用所需**IVsImageService2**型別。  
   
-    -   **EmbedInteropTypes**應該設定為 true  
+    -   **EmbedInteropTypes**應該設定為 true。  
   
--   **Microsoft.VisualStudio.Utilities.dll**  
+-   *Microsoft.VisualStudio.Utilities.dll*  
   
-    -   如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor** WPF ui  
+    -   如果您使用所需**BrushToColorConverter** for **ImageThemingUtilities.ImageBackgroundColor** WPF UI 中。  
   
--   **Microsoft.VisualStudio.Shell。\<VSVersion >.0**  
+-   *Microsoft.VisualStudio.Shell。\<VSVersion >.0*  
   
-    -   如果您使用所需**IVsUIObject**類型  
+    -   如果您使用所需**IVsUIObject**型別。  
   
--   **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+-   *Microsoft.VisualStudio.Shell.Interop.10.0.dll*  
   
-    -   如果您使用 WinForms 相關 UI 協助程式為必要項  
+    -   如果您使用 WinForms 相關的 UI 協助程式為必要項。  
   
     -   **EmbedInteropTypes**應該設定為 true  
   
@@ -255,15 +255,15 @@ ms.locfileid: "31134664"
   
 -   **KnownImageIds.h**  
   
-    -   如果您使用內建的映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或**GetProperty**呼叫。  
+    -   如果您使用內建映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或是**GetProperty**呼叫。  
   
 -   **KnownMonikers.h**  
   
-    -   如果您使用內建的映像目錄所需**KnownMonikers**。  
+    -   如果您使用內建映像目錄所需**KnownMonikers**。  
   
 -   **ImageParameters140.h**  
   
-    -   如果您使用所需**ImageMoniker**和**ImageAttributes**型別。  
+    -   如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
   
 -   **VSShell140.h**  
   
@@ -271,23 +271,23 @@ ms.locfileid: "31134664"
   
 -   **ImageThemingUtilities.h**  
   
-    -   如果您將無法讓處理佈景主題為您的映像服務的需要。  
+    -   如果您將無法讓映像服務來處理佈景主題為您的需要。  
   
-    -   請勿使用此標頭，如果映像服務可以處理影像主題。  
+    -   如果映像服務可以處理您的映像佈景主題，請不要使用此標頭。  
   
 -   **VSUIDPIHelper.h**  
   
-    -   如果您使用的 DPI helper 取得目前的 DPI 必要項。  
+    -   如果您使用 DPI 協助程式來取得目前的 DPI 為必要項。  
   
 ## <a name="how-do-i-write-new-wpf-ui"></a>如何撰寫新的 WPF UI？  
   
-1.  藉由新增在以上所需的組件參考開始第一次的步驟 > 一節，以您的專案。 您不需要加入它們全部，因此加入您需要的參考。 (注意： 如果您使用或存取**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換。)  
+1.  藉由新增在以上所需的組件參考的開始前幾個步驟區段到您的專案。 您不需要新增它們全部，因此新增您需要的參考。 (注意： 如果您使用或享有**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換子。)  
   
-2.  選取所需的映像，並取得其 moniker。 使用**KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
+2.  選取所需的映像，並取得其 moniker。 使用  **KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
   
-3.  新增**CrispImages**為您的 XAML。 （請參閱下列範例中）。  
+3.  新增**CrispImages**到您的 XAML。 （請參閱下列範例中）。  
   
-4.  設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該在其中的背景色彩為已知，不一定是在位置設定**CrispImage**。)（請參閱下列範例中）。  
+4.  設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該設定在其中的背景色彩為已知，不一定是在位置**CrispImage**。)（請參閱下列範例中）。  
   
 ```xaml  
 <Window  
@@ -309,26 +309,26 @@ ms.locfileid: "31134664"
 </Window>  
 ```  
   
- **如何更新現有 WPF UI？**  
+ **如何更新現有的 WPF UI？**  
   
- 更新現有 WPF UI，是相當簡單的程序包含三個基本步驟：  
+ 更新現有的 WPF UI 是相當簡單的程序，包含三個基本步驟：  
   
-1.  全部取代\<影像 > 您使用的 UI 中的項目\<CrispImage > 項目  
+1.  程式碼取代所有\<映像 > 在您使用的 UI 中的項目\<CrispImage > 項目。  
   
-2.  將來源的所有屬性都變更為 Moniker 屬性  
+2.  將來源的所有屬性都變更為 Moniker 屬性。  
   
-    -   如果影像永遠不會變更，而且您正在使用**KnownMonikers**，然後以靜態方式將繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
+    -   如果映像永遠不會變更，而且您使用**KnownMonikers**，然後以靜態方式繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
   
-    -   如果影像永遠不會變更，而且您使用自訂映像，然後以靜態方式繫結至自己的 moniker。  
+    -   如果映像永遠不會變更，而且您使用您自己的自訂映像，然後以靜態方式繫結至您自己的 moniker。  
   
-    -   如果映像可能會變更，繫結 Moniker 屬性，以通知屬性變更的程式碼內容。  
+    -   如果映像可以變更，繫結 Moniker 屬性，以通知屬性變更的程式碼屬性。  
   
-3.  某處，在 UI 階層設定**ImageThemingUtilities.ImageBackgroundColor**進行確定色彩反轉運作正常。  
+3.  某處 UI 階層架構中設定**ImageThemingUtilities.ImageBackgroundColor**要確定色彩反轉運作正常。  
   
     -   這可能需要使用**BrushToColorConverter**類別。 （請參閱上述範例中）。  
   
 ## <a name="how-do-i-update-win32-ui"></a>如何更新 Win32 UI？  
- 只要適當取代原始的映像載入，請將下列程式碼。 切換傳回 HBITMAPs 與 HIMAGELIST HICONs 與視需要的值。  
+ 新增下列程式碼，只要適當取代原始的映像載入。 切換傳回與 HIMAGELIST HICONs HBITMAPs，視需要的值。  
   
  **取得映像服務**  
   
@@ -359,7 +359,7 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 ```  
   
 ## <a name="how-do-i-update-winforms-ui"></a>如何更新 WinForms UI？  
- 只要適當取代原始的映像載入，請將下列程式碼。 切換傳回點陣圖與圖示所需的值。  
+ 新增下列程式碼，只要適當取代原始的映像載入。 切換傳回點陣圖與圖示所需的值。  
   
  **使用陳述式的有用**  
   
@@ -400,13 +400,13 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ```  
   
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>如何使用新的工具視窗中的影像 moniker？  
- VSIX 封裝專案範本已更新 Visual Studio 2015。 若要建立新的工具視窗，以滑鼠右鍵按一下 VSIX 專案，然後選取 加入新項目(Ctrl + Shift + A)。 在此專案語言為 [擴充性] 節點中，選取 「 自訂工具視窗 」 提供的工具視窗名稱，然後按 [新增] 按鈕。  
+ VSIX 封裝專案範本已更新為 Visual Studio 2015。 若要建立新的工具視窗，以滑鼠右鍵按一下 VSIX 專案，然後選取**新增** > **新項目**(**Ctrl**+**Shift**+ **A**)。 在 專案語言擴充性 節點中，選取**自訂工具視窗**，讓工具視窗名稱，然後按**新增** 按鈕。  
   
- 這些是工具視窗中使用 moniker 的索引鍵位置。 請遵循每個指示：  
+ 這些是使用工具視窗中的 moniker 索引鍵的地方。 請遵循每個指示：  
   
-1.  當索引標籤取得小工具視窗索引標籤 （也用於 Ctrl + Tab 視窗切換器） 不夠。  
+1.  當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
   
-     衍生自類別的建構函式中加入以下一行**ToolWindowPane**類型：  
+     將這一行新增至衍生自類別的建構函式**ToolWindowPane**類型：  
   
     ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
@@ -415,7 +415,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
 2.  若要開啟工具視窗命令。  
   
-     在封裝.vsct 檔案中，編輯工具視窗的命令按鈕：  
+     在  *.vsct*封裝檔案中，編輯工具視窗的命令按鈕：  
   
     ```xml  
     <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
@@ -432,27 +432,27 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  **如何使用現有的工具視窗中的影像 moniker？**  
   
- 更新現有的工具視窗，以使用影像 moniker 是類似於建立新的工具視窗的步驟。  
+ 更新現有的工具視窗，以使用影像 moniker 是類似的步驟來建立新的工具視窗。  
   
- 這些是工具視窗中使用 moniker 的索引鍵位置。 請遵循每個指示：  
+ 這些是使用工具視窗中的 moniker 索引鍵的地方。 請遵循每個指示：  
   
-1.  當索引標籤取得小工具視窗索引標籤 （也用於 Ctrl + Tab 視窗切換器） 不夠。  
+1.  當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
   
-    1.  衍生自類別的建構函式 （如果有的話） 移除這行**ToolWindowPane**類型：  
+    1.  移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
   
         ```csharp  
         this.BitmapResourceID = <Value>;  
         this.BitmapIndex = <Value>;  
         ```  
   
-    2.  請參閱步驟 1 的 「 如何使用新的工具視窗中的影像 Moniker？ 」 上一節。  
+    2.  請參閱步驟 1 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
   
 2.  若要開啟工具視窗命令。  
   
-    -   請參閱步驟 2 的 「 如何使用新的工具視窗中的影像 Moniker？ 」 上一節。  
+    -   請參閱步驟 2 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
   
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何在.vsct 檔案中使用影像 moniker？  
- 更新您.vsct 檔案加上註解下列的程式行所示：  
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何使用.vsct 檔案中的影像 moniker？  
+ 更新您 *.vsct*檔案加上註解的線條下方所示：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -492,11 +492,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
   
- **如果我.vsct 檔案也需要讀取以舊版的 Visual Studio 嗎？**  
+ **如果我.vsct 檔案也必須可由舊版的 Visual Studio 嗎？**  
   
- 舊版的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以使用映像服務映像上支援它，但繼續使用舊樣式的映像在舊版的 Visual Studio 的 Visual Studio 版本。 若要這樣做，您會保留不變，因此與舊版的 Visual Studio 相容的.vsct 檔並從.vsct 檔案中定義的 GUID/識別碼組建立對應的 CSV （逗點分隔值） 檔案\<點陣圖 > 項目至映像moniker GUID/識別碼組。  
+ 舊版的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以使用從映像服務的映像上的 Visual Studio 支援它，但繼續使用舊式的映像在舊版的 Visual Studio 版本。 若要這樣做，您會留下 *.vsct*檔案不變 （並因此相容於舊版的 Visual Studio），並建立對應的 CSV （逗點分隔值） 檔案，從定義中的 GUID/識別碼組 *.vsct*檔案的\<點陣圖 > 項目影像 moniker GUID/識別碼組。  
   
- 對應的 CSV 檔案的格式如下：  
+ 對應的 CSV 檔案格式為：  
   
 ```  
 Icon guid, Icon id, Moniker guid, Moniker id  
@@ -504,49 +504,49 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200  
 ```  
   
- CSV 檔案會與封裝一起部署，且它的位置由指定**IconMappingFilename**屬性**ProvideMenuResource**封裝屬性：  
+ CSV 檔案與封裝一起部署，並指定其位置**IconMappingFilename**屬性**ProvideMenuResource**封裝屬性：  
   
 ```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
- **IconMappingFilename**相對路徑隱含根目錄 $PackageFolder$ （如同上述範例中），或明確地為環境變數，例如 @"%UserProfile%\ 所定義的目錄的絕對路徑根目錄dir1\dir2\MyMappingFile.csv"。  
+ **IconMappingFilename**相對路徑以隱含方式進行 root 破解 $PackageFolder （如同上述範例中），或明確根目錄中的絕對路徑，在環境變數所定義，例如目錄 *@"%UserProfile%\dir1\dir2\MyMappingFile.csv"*。  
   
-## <a name="how-do-i-port-a-project-system"></a>如何連接埠專案系統？  
+## <a name="how-do-i-port-a-project-system"></a>如何連接埠的專案系統？  
  **如何為專案提供 ImageMonikers**  
   
 1.  實作**VSHPROPID_SupportsIconMonikers**專案的**IVsHierarchy**，並傳回 true。  
   
-2.  實作**VSHPROPID_IconMonikerImageList** (如果使用原始專案**VSHPROPID_IconImgList**) 或**VSHPROPID_IconMonikerGuid**， **VSHPROPID_IconMonikerId**， **VSHPROPID_OpenFolderIconMonikerGuid**， **VSHPROPID_OpenFolderIconMonikerId** (如果使用原始專案**VSHPROPID_IconHandle**和**VSHPROPID_OpenFolderIconHandle**)。  
+2.  實作**VSHPROPID_IconMonikerImageList** (如果使用原始專案**VSHPROPID_IconImgList**) 或**VSHPROPID_IconMonikerGuid**， **VSHPROPID_IconMonikerId**， **VSHPROPID_OpenFolderIconMonikerGuid**， **VSHPROPID_OpenFolderIconMonikerId** (如果使用原始專案**VSHPROPID_IconHandle**並**VSHPROPID_OpenFolderIconHandle**)。  
   
-3.  變更原始 VSHPROPIDs 圖示來建立圖示的 「 舊版 」 版本，如果擴充點，要求他們的實作。 **IVsImageService2**提供這些圖示所需的功能  
+3.  變更原始 VSHPROPIDs 圖示來建立 「 舊版 」 版本的圖示，如果擴充點，要求它們的實作。 **IVsImageService2**提供讓那些圖示所需的功能  
   
- **額外的需求 vb / C# 專案特性**  
+ **額外的需求，vb / C# 專案特性**  
   
- 只實作**VSHPROPID_SupportsIconMonikers**若您偵測到您的專案是**最外層 flavor**。 否則，實際的最外層類別可能不支援影像 moniker，但實際上，而且您的基底類別可能會有效地 「 隱藏 」 自訂映像。  
+ 只有實作**VSHPROPID_SupportsIconMonikers**如果您偵測到您的專案**最外層 flavor**。 否則，實際的最外層類別可能不支援影像 moniker，事實上，而且基底的類別可能會有效地 「 隱藏 」 的自訂映像。  
   
- **如何在 CPS 中使用影像 moniker？**  
+ **如何使用在 CPS 中的影像 moniker？**  
   
- CPS （通用專案系統） 中設定自訂映像即可手動或透過項目範本所隨附的專案系統擴充性 SDK。  
+ CPS （通用專案系統） 中設定的自訂映像可以進行手動或透過項目範本所隨附的專案系統擴充性 SDK。  
   
  **使用專案系統擴充性 SDK**  
   
- 請遵循指示[專案類型項目類型中提供自訂圖示](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)來自訂您的 CPS 映像。 可以找到 CPS 的詳細資訊，在[Visual Studio 專案系統擴充性文件](https://github.com/Microsoft/VSProjectSystem)  
+ 請遵循指示[專案類型/項目型別提供自訂圖示](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)來自訂您的 CPS 映像。 CPS 的詳細資訊，參閱[Visual Studio 專案系統擴充性文件](https://github.com/Microsoft/VSProjectSystem)  
   
- **以手動方式使用 ImageMonikers**  
+ **手動使用 ImageMonikers**  
   
-1.  實作並匯出**IProjectTreeModifier**專案系統中的介面。  
+1.  實作及匯出**IProjectTreeModifier**專案系統中的介面。  
   
-2.  判斷哪些**KnownMoniker**或您想要使用自訂影像 moniker。  
+2.  判斷哪些**KnownMoniker**或您想要使用的自訂映像 moniker。  
   
-3.  在**ApplyModifications**方法，執行下列動作在某個位置的方法，再傳回新的樹狀結構，類似於下列範例：  
+3.  在**ApplyModifications**方法，執行下列位置中的方法，再傳回新的樹狀結構，類似於下列範例：  
   
     ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
     tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
     ```  
   
-4.  如果您要建立新的樹狀結構，您可以設定自訂映像所需的 moniker，傳遞至 NewTree 方法類似於下例：  
+4.  如果您要建立新的樹狀結構，您可以設定自訂的映像傳遞所需的 moniker NewTree 方法類似於下列範例：  
   
     ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
@@ -560,38 +560,38 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                  expandedIcon);  
     ```  
   
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>如何將轉換從實際影像區域的 moniker 為基礎的影像區域？  
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>如何以 moniker 為基礎的影像區域轉換從實際的影像區域？  
  **我需要支援 HIMAGELISTs**  
   
- 如果您要更新成使用映像服務，但需要影像清單傳遞 Api 會限制您的程式碼已存在影像區域，您仍然可以取得映像服務的優點。 若要建立的 moniker 為基礎的影像區域，請遵循下列步驟來建立資訊清單，從現有的 moniker。  
+ 如果您想要更新為使用映像服務，但您會受限於需要傳遞映像清單 Api 的程式碼的現有影像區域，您仍然可以取得映像服務的優點。 若要建立的 moniker 為基礎的影像區域，請遵循下列步驟來建立資訊清單，從現有的 moniker。  
   
-1.  執行**ManifestFromResources**工具，將影像區域傳遞給它。 這會產生帶狀的資訊清單。  
+1.  執行**ManifestFromResources**工具，將它傳遞影像區域。 這會產生帶狀的資訊清單。  
   
-    -   建議使用： 提供要視其使用情形的資訊清單的非預設名稱。  
+    -   建議： 提供的資訊清單，以符合其使用量非預設名稱。  
   
 2.  如果您只使用**KnownMonikers**，然後執行下列動作：  
   
-    -   取代\<影像 > 與資訊清單區段\<映像 / >。  
+    -   取代\<映像 > 與資訊清單區段\<映像 / >。  
   
-    -   移除所有 subimage Id (任何項目與\<imagestrip 名稱 > _ # #)。  
+    -   移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
   
-    -   建議使用： 重新命名的 AssetsGuid 符號和映像區域符號，以符合其使用情形。  
+    -   建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
   
-    -   取代每個**ContainedImage**的 GUID 為 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼，以及 $(\<moniker >)，並將外部 ="true"屬性加入至每個**ContainedImage**  
+    -   取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
   
-        -   \<moniker > 應該取代成**KnownMoniker**符合映像，但"KnownMonikers。 」 從名稱中移除。  
+        -   \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
   
-    -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 相對安裝目錄路徑\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>頂端\<符號 > 一節。  
+    -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> 頂端\<符號 > 一節。  
   
-        -   相對路徑取決於安裝程式撰寫為資訊清單中定義的部署位置。  
+        -   相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
   
-3.  執行**ManifestToCode**工具來產生包裝函式使現有的程式碼具有的 moniker，它可用於查詢的影像區域的映像服務。  
+3.  執行**ManifestToCode**工具來產生包裝函式，使現有的程式碼具有可用來查詢映像服務，影像區域的 moniker。  
   
-    -   建議使用： 提供包裝函式和命名空間，以符合其用法的非預設的名稱。  
+    -   建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
   
-4.  執行的動作，會增加，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
+4.  執行所有加入時，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
   
- 範例包括內部和外部的映像，以查看其外觀應該為何資訊清單：  
+ 範例資訊清單，包括內部和外部的映像，以查看它應該看起來像：  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -642,54 +642,54 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>  
 ```  
   
- **不需要支援 HIMAGELISTs**  
+ **我不需要支援 HIMAGELISTs**  
   
-1.  決定一組**KnownMonikers** ，符合您的影像區域，在映像，或在影像區域中建立您自己的映像的 moniker。  
+1.  判斷一組**KnownMonikers** ，符合您的影像區域中的映像，或在您的影像區域中建立您自己的映像的 moniker。  
   
-2.  更新任何對應，您用來取得映像，改為使用 moniker 影像區域中必要的索引處。  
+2.  更新您用來取得映像，在所需的索引，要改為使用 moniker 的映像帶中的任何對應。  
   
-3.  更新您的程式碼使用映像服務要求更新的對應透過 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和傳送它們周圍原生程式碼。)  
+3.  更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
   
 ## <a name="testing-your-images"></a>測試您的映像  
- 您可以使用影像庫檢視器工具來測試您的映像資訊清單，並確定已正確撰寫的所有項目。 您可以找到在工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[這裡](http://aka.ms/VSImageThemeTools)。  
+ 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](http://aka.ms/VSImageThemeTools)。  
   
 ## <a name="additional-resources"></a>其他資源  
   
 ### <a name="samples"></a>範例  
- 有幾個 GitHub 上的 Visual Studio 範例已更新以顯示如何使用映像服務做為不同的 Visual Studio 擴充性點的一部分。  
+ 有幾個 GitHub 上的 Visual Studio 範例已更新以顯示如何使用映像服務不同的 Visual Studio 擴充性點的一部分。  
   
- 請檢查[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)如需最新的範例。  
+ 請檢查[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)的最新的範例。  
   
 ### <a name="tooling"></a>Tooling  
- 建立一組映像服務的支援工具以協助您建立/更新映像服務所使用的 UI。 如需每項工具的詳細資訊，請檢查工具所隨附的文件。 工具會包含在[Visual Studio 2015 SDK。](http://msdn.microsoft.com/library/bb166441.aspx)  
+ 建立一組映像服務的支援工具以協助建立/更新映像服務與搭配運作的 UI。 如需有關每個工具的詳細資訊，請查閱文件隨附的工具。 工具會併入[Visual Studio 2015 SDK。](http://msdn.microsoft.com/library/bb166441.aspx)  
   
  **ManifestFromResources**  
   
- 從資源工具資訊清單會採用影像資源 （PNG 或 XAML） 的清單，並產生映像服務搭配使用這些影像的影像資訊清單檔。  
+ 從 [資源] 工具的資訊清單是影像資源 （PNG 或 XAML） 的清單，並產生映像服務與使用這些映像的映像資訊清單檔案。  
   
  **ManifestToCode**  
   
- 資訊清單，以程式碼工具會採用映像資訊清單檔，並產生包裝函式參考程式碼 （c + +、 C# 或 VB） 或.vsct 檔案中的資訊清單值的檔案。  
+ 資訊清單以程式碼工具會使用映像資訊清單檔案，並產生包裝函式檔案的參考資訊清單的值，在程式碼 （c + +、 C# 或 VB） 或 *.vsct*檔案。  
   
  **ImageLibraryViewer**  
   
- 影像庫檢視器工具可以載入映像資訊清單，並可讓使用者操作它們的 Visual Studio 會先確定已正確撰寫資訊清單的方式相同。 使用者可以改變背景、 大小、 DPI 設定、 高對比，以及其他設定。 也會顯示在資訊清單中尋找錯誤載入資訊並顯示在資訊清單中的每個映像的來源資訊。  
+ 影像庫檢視器工具可以載入映像資訊清單，並可讓使用者操作這些 Visual Studio 會先確定已正確撰寫資訊清單的方式相同。 使用者可以改變背景、 大小、 DPI 設定、 高對比，以及其他設定。 它也會顯示載入資訊清單中找出錯誤的資訊，並顯示資訊清單中的每個映像的來源資訊。  
   
 ## <a name="faq"></a>常見問題集  
   
--   是否有任何相依性，載入時，您必須包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
+-   是否有任何相依性，您必須在載入時包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
   
-    -   設定 EmbedInteropTypes ="true"的所有 interop Dll。  
+    -   設定 EmbedInteropTypes ="true"，所有的 interop Dll 上。  
   
--   如何部署與 my 擴充功能的影像資訊清單？  
+-   如何使用 my 擴充功能部署的映像資訊清單？  
   
-    -   將.imagemanifest 檔案加入至您的專案。  
+    -   新增 *.imagemanifest*檔案加入專案。  
   
-    -   設定 「 在 VSIX 中包含"為 True。  
+    -   將 [包含在 VSIX] 設定為 True。  
   
--   我更新 CPS 專案系統。 發生了什麼事**ImageName**和**StockIconService**？  
+-   我要更新我的 CPS 專案系統。 發生了什麼事**ImageName**並**StockIconService**？  
   
-    -   o CPS 已更新為使用 moniker 時，這些被移除。 您不需要再呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式中。 您可以找到從對應**ImageName**至**KnownMonikers**如下：  
+    -   CPS 已更新為使用 moniker 時，已移除這些項目。 您不再需要呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式。 您可以找到的對應**ImageName**要**KnownMonikers**如下：  
   
         |||  
         |-|-|  
@@ -757,7 +757,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
   
-    -   我更新我的完成清單提供者。 什麼**KnownMonikers**符合舊**StandardGlyphGroup**和**StandardGlyph**值嗎？  
+    -   我要更新我的完成清單提供者。 什麼**KnownMonikers**比對舊**StandardGlyphGroup**並**StandardGlyph**值？  
   
         ||||  
         |-|-|-|  
@@ -968,11 +968,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||文件|  
         |GlyphForwardType||GoToNext|  
-        |GlyphCallersGraph||CallTo|  
+        |GlyphCallersGraph||下列|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
         |GlyphMaybeReference||QuestionMark|  
-        |GlyphMaybeCaller||CallTo|  
+        |GlyphMaybeCaller||下列|  
         |GlyphMaybeCall||CallFrom|  
         |GlyphExtensionMethod||ExtensionMethod|  
         |GlyphExtensionMethodInternal||ExtensionMethod|  
@@ -983,7 +983,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlAttribute||XmlAttribute|  
         |GlyphXmlChild||XmlElement|  
         |GlyphXmlDescendant||XmlDescendant|  
-        |GlyphXmlNamespace||xmlNamespace|  
+        |GlyphXmlNamespace||XmlNamespace|  
         |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|  
         |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|  
         |GlyphXmlChildQuestion||XmlElementLowConfidence|  

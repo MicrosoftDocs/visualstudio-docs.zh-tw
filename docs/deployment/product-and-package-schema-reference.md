@@ -1,5 +1,5 @@
 ---
-title: 產品和封裝結構描述參考 |Microsoft 文件
+title: 產品和封裝結構描述參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -27,32 +27,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815570"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080645"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
-A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化的組件、 授權合約和文件的文化特性相關元件。  
+A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。  
   
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。  
   
 |元素|描述|屬性|  
 |-------------|-----------------|----------------|  
-|[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|必要的產品檔案的最上層項目。|無|  
-|[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的套件檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > 項目](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性項目。 其他產品的此產品安裝，或相依。|無|  
+|[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|無|  
+|[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts > 項目](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 其他產品，這項產品安裝，或相依。|無|  
 |[\<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)|必要項目。 列出在安裝期間，在本機電腦上執行的相依性檢查。|無|  
-|[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)|必要項目。  執行所述的一個或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|無|  
-|[\<請為 PackageFiles > 項目](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能會安裝的套件。|無|  
-|[\<字串 > 項目](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤的字串。|無|  
+|[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)|必要項目。  如所述，執行一或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|無|  
+|[\<請為 PackageFiles > 項目](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能安裝的套件。|無|  
+|[\<字串 > 項目](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤字串。|無|  
   
 ## <a name="remarks"></a>備註  
- 封裝結構描述是由包含它自己的小硬式編碼的邏輯 MS 建置啟動載入工作所產生的虛設常式程式的 Setup.exe，取用。 結構描述磁碟機的安裝程序的各個層面。  
+ 封裝結構描述由*Setup.exe*，啟動工作，其中包含一些硬式編碼的邏輯，它自己的 MS 組建所產生的虛設常式程式。 結構描述驅動的安裝程序的各個層面。  
   
- `InstallChecks` 測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles` 列出所有安裝程序可能需要安裝，應指定的測試失敗的封裝。 每個命令下的項目命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行應該測試失敗。 您可以使用`Strings`當地語系化產品名稱和錯誤訊息，好讓您可以使用一個單一的安裝二進位檔案安裝應用程式的各種語言的項目。  
+ `InstallChecks` 測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles` 列出所有封裝的安裝程序可能必須安裝，應該指定的測試失敗。 每個命令項目，在命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行測試失敗。 您可以使用`Strings`產品名稱和當地語系化錯誤訊息，以便您可以使用一個單一的安裝二進位檔來安裝各種語言的應用程式的項目。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何安裝完整的產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  

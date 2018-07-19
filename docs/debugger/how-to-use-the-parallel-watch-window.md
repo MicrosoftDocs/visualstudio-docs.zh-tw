@@ -1,5 +1,5 @@
 ---
-title: 平行執行緒中的變數上設定監看式 |Microsoft 文件
+title: 在平行執行緒中的變數設定監 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -20,25 +20,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475943"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808070"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的平行執行緒中的變數上設定監看式
-在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各欄會顯示在**平行監看式**視窗：  
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的平行執行緒中的變數設定監看式
+在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行所示**平行監看式**視窗：  
   
 -   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
   
--   目前的執行緒資料行，其中黃色箭號表示目前的執行緒 （尾端彎曲的綠色箭號表示非目前執行緒的目前偵錯工具內容）。  
+-   目前的執行緒資料行，其中黃色箭號表示目前的執行緒 （尾端彎曲的綠色箭號表示非目前執行緒具有目前的偵錯工具內容）。  
   
 -   可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。  
   
     > [!TIP]
-    >  Dislay 工作資訊中**平行監看式**視窗中，您必須先開啟**工作**視窗。  
+    >  顯示工作中的資訊**平行監看式** 視窗中，您必須先開啟**工作**視窗。  
   
--   空白*加入監看式*資料行，您可以在其中輸入要監看的運算式。  
+-   空白*新增監看式*資料行，您可以在其中輸入要監看的運算式。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -52,11 +52,11 @@ ms.locfileid: "31475943"
   
 ### <a name="to-add-a-watch-expression"></a>若要加入監看運算式  
   
--   選取其中一個空白*加入監看式*資料行，然後輸入 監看式運算式。  
+-   選取其中一個空白*新增監看式*資料行，然後輸入 監看式運算式。  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標  
   
--   選取資料列的旗標資料行 （第一個資料行），或開啟執行緒的捷徑功能表並選擇 **旗標**或**取消旗標**。  
+-   選取資料列的旗標資料行 （第一個資料行），或開啟執行緒的捷徑功能表，然後選擇 **旗標**或是**取消旗標**。  
   
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒  
   
@@ -76,15 +76,15 @@ ms.locfileid: "31475943"
   
 ### <a name="to-freeze-or-thaw-threads"></a>若要凍結或解除凍結執行緒  
   
--   開啟資料列的捷徑功能表並選擇 **凍結**或**解除凍結**。  
+-   開啟資料列的捷徑功能表，然後選擇**凍結**或是**解除凍結**。  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>若要匯出 [平行監看式] 視窗中的資料  
   
--   選擇**在 Excel 中開啟**按鈕，然後選擇**在 Excel 中開啟**或**匯出至 CSV**。  
+-   選擇**在 Excel 中開啟**按鈕，然後選擇**在 Excel 中開啟**或是**匯出至 CSV**。  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>若要依布林運算式篩選  
   
--   輸入布林運算式中的**依布林運算式篩選**方塊。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
+-   輸入中的布林運算式**依布林運算式篩選** 方塊中。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

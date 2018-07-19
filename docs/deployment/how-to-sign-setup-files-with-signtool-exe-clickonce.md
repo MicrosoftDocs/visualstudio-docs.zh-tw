@@ -1,5 +1,5 @@
 ---
-title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft 文件
+title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc4dc7b2f96b1d36e91e8114458a7a8e9f3231f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566117"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081497"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
-您可以使用 SignTool.exe 簽署安裝程式 (setup.exe)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce)
+您可以使用*SignTool.exe*簽署安裝程式 (*setup.exe*)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  
   
  根據預設，ClickOnce 具有已簽署的資訊清單和已簽署的安裝程式。 不過，如果您稍後要變更安裝程式的參數，就必須在稍後簽署安裝程式。 如果在簽署安裝程式之後變更參數，簽章會損毀。  
   
@@ -38,45 +38,45 @@ ms.locfileid: "31566117"
   
 1.  在開發電腦上，安裝您要用來簽署資訊清單的憑證。  
   
-2.  選取的專案中**方案總管 中**。  
+2.  中，選取專案**方案總管 中**。  
   
-3.  在**專案**功能表上，按一下  *ProjectName* **屬性**。  
+3.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
   
-4.  在**簽署**頁面上，清除**簽署 ClickOnce 資訊清單**。  
+4.  在  **Signing**頁面上，清除**簽署 ClickOnce 資訊清單**。  
   
-5.  在**發行**頁面上，按一下**必要條件**。  
+5.  在 **發佈**頁面上，按一下**必要條件**。  
   
-6.  確認所有先決條件都已選取，然後按一下**確定**。  
+6.  確認所有必要條件都已選取，然後按一下 **確定**。  
   
-7.  在**發行**頁面上，確認發行設定，然後按一下**立即發行**。  
+7.  在 **發佈**頁面上，確認發行設定，然後按一下**立即發佈**。  
   
      方案隨即將未簽署的應用程式資訊清單、未簽署的部署資訊清單、版本特定檔案，以及未簽署的安裝程式發行至發行資料夾位置。  
   
-8.  在**發行**頁面上，按一下**必要條件**。  
+8.  在 **發佈**頁面上，按一下**必要條件**。  
   
-9. 在**必要條件**對話方塊中，清除**建立安裝程式以安裝必要條件元件**。  
+9. 在 **必要條件**對話方塊中，清除**建立安裝程式以安裝必要條件元件**。  
   
-10. 在**發行**頁面上，確認發行設定，然後按一下**立即發行**。  
+10. 在 **發佈**頁面上，確認發行設定，然後按一下**立即發佈**。  
   
      方案隨即將已簽署的應用程式資訊清單、已簽署的部署資訊清單，以及版本特定檔案發行至發行資料夾位置。 發行流程不會覆寫未簽署的安裝程式。  
   
 11. 在客戶端開啟命令提示字元。  
   
-12. 變更為包含 .exe 檔的目錄。  
+12. 將包含的目錄 *.exe*檔案。  
   
-13. 使用下列命令簽署 .exe 檔：  
+13. 登 *.exe*檔案使用下列命令：  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CertificateHash Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
      例如，若要簽署安裝程式，請使用下列其中一個命令：  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CCB... Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [如何： 重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

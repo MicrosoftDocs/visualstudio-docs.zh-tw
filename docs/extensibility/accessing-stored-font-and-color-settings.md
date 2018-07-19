@@ -1,5 +1,5 @@
 ---
-title: 存取預存的字型和色彩設定 |Microsoft 文件
+title: 存取預存的字型和色彩設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,34 +15,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1280555a2b8a293fcdd0f86891a1d198ef3c99d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105786"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081640"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，以存取這些設定。
+# <a name="access-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面來存取這些設定。
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要起始狀態持續性的字型和色彩
- 字型和色彩資訊會儲存在下列登錄位置中的類別目錄: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 是類別目錄 GUID。
+ 字型和色彩資訊會儲存下列登錄位置中依分類: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 類別 GUID。
 
  因此，若要起始持續性，VSPackage 必須：
 
--   取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，藉由呼叫`QueryService`針對全域服務提供者。
+-   取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，藉由呼叫`QueryService`對全域服務提供者。
 
-     `QueryService` 必須使用的服務識別碼引數呼叫`SID_SVsFontAndColorStorage`介面識別碼引數和`IID_IVsFontAndColorStorage`。
+     `QueryService` 必須使用的服務識別碼引數來呼叫`SID_SVsFontAndColorStorage`和 介面識別碼引數的`IID_IVsFontAndColorStorage`。
 
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法來開啟 類別目錄，才能保存做為引數使用的類別目錄 GUID 和模式的旗標。
+-   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法來開啟 保存使用類別的 GUID 和模式旗標做為引數類別。
 
-     以指定的模式`fFlags`引數，會建構中的值從<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列舉型別。 此模式可控制：
+     以指定的模式`fFlags`引數，從中的值建構<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列舉型別。 此模式可控制：
 
-    -   可以透過存取的設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
+    -   您可以透過設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
 
-    -   所有的設定或那些設定的使用者修改，且皆可透過擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
+    -   所有的設定或只有這些設定的使用者修改，以及屬於可擷取透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
 
-    -   將變更傳播至使用者設定的方式。
+    -   「 的傳播變更使用者設定的方式。
 
     -   所使用的色彩值的格式。
 
@@ -55,32 +55,32 @@ ms.locfileid: "31105786"
 
 -   設定和擷取儲存在登錄中的設定。
 
- IDE 設定與同步處理的存放裝置設定是大致上。 基礎 IDE 會自動寫入的更新的設定**顯示項目**一個類別目錄的登錄項目。
+ IDE 設定與同步處理的儲存體設定是透明化的。 基礎的 IDE 會自動寫入更新的設定，如**顯示的項目**至類別的登錄項目。
 
- 如果多個 Vspackage 共用特定分類，VSPackage 應該要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。
+ 如果多個的 Vspackage 會共用特定分類，VSPackage 應要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。
 
- 根據預設，不會啟用事件產生。 若要啟用事件的產生，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 開啟 類別目錄會造成呼叫適當 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> VSPackage 實作的方法。
-
-> [!NOTE]
->  透過修改**字型和色彩**屬性頁產生事件的獨立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷是否需要更新的快取的字型和色彩設定呼叫的方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>類別。
-
-### <a name="storing-and-retrieving-information"></a>儲存和擷取資訊
- 要取得或設定使用者可修改具名的顯示中的項目開啟的類別目錄的資訊，請呼叫 Vspackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A>方法。
-
- 字型的相關資訊屬性的特定某類透過使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A>方法。
+ 根據預設，不會啟用事件產生。 若要啟用的事件產生時，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 開啟 類別目錄會造成 IDE 呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 實作的方法。
 
 > [!NOTE]
->  `fFlags`引數傳遞至<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>開啟該類別的方法定義的行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>方法。 根據預設，這些方法只會傳回顯示項目已變更的相關資訊。 不過，如果類別已被使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>旗標，同時更新和變更的顯示的項目可以存取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>。
+>  透過修改**字型和色彩** 屬性頁產生事件的獨立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷呼叫的方法之前是否需要更新的快取的字型和色彩設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>類別。
 
- 根據預設，只有變更**顯示項目**資訊會儲存在登錄中。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面不能用來擷取所有設定的字型和色彩。
+### <a name="store-and-retrieve-information"></a>儲存和擷取資訊
+ 若要取得或設定使用者可修改的已命名的顯示中的項目開啟分類的資訊，請呼叫 Vspackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A>方法。
+
+ 字型的資訊屬性，對於特定類別由使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A>方法。
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>方法傳回未變更的相關 REGDB_E_KEYMISSING，當您使用它們來擷取資訊 (0x80040152L)**顯示項目**。
+>  `fFlags`傳遞給引數<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法，該類別已開啟時定義的行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>方法。 根據預設，這些方法只會傳回顯示的項目已變更的相關資訊。 不過，如果類別使用開啟<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>旗標，同時更新，並變更的顯示項目可以存取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>。
 
- 所有設定**顯示項目**依特定**類別**可以使用的方法可取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>介面。
+ 根據預設，只變更**顯示的項目**資訊會保留在登錄中。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面不能用來擷取所有設定的字型和色彩。
+
+> [!NOTE]
+>  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>方法會傳回 REGDB_E_KEYMISSING，當您使用它們來擷取資訊 (0x80040152L) 未變更的相關**顯示項目**。
+
+ 所有的設定**顯示的項目**特別**類別目錄**使用的方法可以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>介面。
 
 ## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>
-- [實作自訂的分類和顯示項目](../extensibility/implementing-custom-categories-and-display-items.md)
+- [實作自訂類別和顯示項目](../extensibility/implementing-custom-categories-and-display-items.md)

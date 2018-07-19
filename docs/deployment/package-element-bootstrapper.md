@@ -1,5 +1,5 @@
 ---
-title: '&lt;封裝&gt;元素 （啟動載入器） |Microsoft 文件'
+title: '&lt;封裝&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815596"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080782"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;元素 （啟動載入器）
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。  
   
 ## <a name="syntax"></a>語法  
@@ -143,13 +143,13 @@ ms.locfileid: "34815596"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `Package`項目為必要。 它有下列屬性。  
+ `Package`是必要元素。 它具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Culture`|必要。 定義這個封裝，決定要使用的語言的文化特性。 這個屬性是索引鍵到`Strings`元素，其在安裝期間列出產品名稱和錯誤訊息的特定文化特性的字串。|  
-|`Name`|必要。 例如，開發人員工具內顯示的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵到`Strings`項目，其中應包含`String`具有項目`Name`和`Culture`屬性設定為符合`Name`和`Culture`屬性`Package`。|  
-|`LicenseAgreement`|選擇性。 指定的檔案名稱中包含使用者授權合約 (EULA) 散發套件。  這個檔案可以是純文字 (.txt) 或 Rtf 格式。 (.rtf)|  
+|`Culture`|必要。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。|  
+|`Name`|必要。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。|  
+|`LicenseAgreement`|選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 (*.txt*) 或豐富文字格式。 (*.rtf*)|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會顯示完整的封裝檔案轉散發[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
