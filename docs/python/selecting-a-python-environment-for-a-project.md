@@ -1,7 +1,7 @@
 ---
 title: 選取要用於專案的 Python 解譯器和環境
 description: 如何指派要為 Visual Studio 專案使用的 Python 環境，以及建立虛擬環境的指示。
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976685"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117104"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何指派要為專案使用的 Python 環境
 

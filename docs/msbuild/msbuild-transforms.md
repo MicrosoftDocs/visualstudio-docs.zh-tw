@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571616"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325286"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用轉換作業以更有效建置專案。  
@@ -28,7 +28,7 @@ ms.locfileid: "31571616"
   
 下列範例會將一份 *.resx* 檔案清單轉換為 *.resources* 檔案清單。 %(filename) 轉換修飾詞會指定每個 *.resources* 檔案使用與對應 *.resx* 檔案相同的檔案名稱。  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ ms.locfileid: "31571616"
 ## <a name="using-multiple-modifiers"></a>使用多個修飾詞  
  轉換運算式可包含多個修飾詞，其可依照任何順序合併，亦可以重複。 在下列範例中，含有檔案的目錄名稱已變更，但這些檔案會保留原始名稱和副檔名。  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

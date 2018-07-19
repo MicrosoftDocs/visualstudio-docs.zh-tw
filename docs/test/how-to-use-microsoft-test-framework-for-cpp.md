@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751685"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845489"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
@@ -32,7 +32,7 @@ ms.locfileid: "34751685"
 
     3.  按一下以下資料列中的向下箭號，然後選擇 [<Edit>]：
 
-        |||
+        |Directory|屬性|
         |-|-|
         |**Include 目錄**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**程式庫目錄**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ ms.locfileid: "34751685"
 
  若要在單元測試中使用定義的特性：
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

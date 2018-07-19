@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750736"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233486"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -32,7 +32,7 @@ ms.locfileid: "34750736"
 
 **測試 SharePoint 應用程式**
 
-以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 如需如何使用 Visual Studio 開發 SharePoint 應用程式的詳細資訊，請參閱[建立 SharePoint 解決方案](/office-dev/office-dev/create-sharepoint-solutions)、[建置和偵錯 SharePoint 解決方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)及[驗證及偵錯 SharePoint 程式碼](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)。
+以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 如需如何使用 Visual Studio 開發 SharePoint 應用程式的詳細資訊，請參閱[建立 SharePoint 解決方案](../sharepoint/create-sharepoint-solutions.md)、[建置和偵錯 SharePoint 解決方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)及[驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
 
 **限制**
 
@@ -126,6 +126,6 @@ ms.locfileid: "34750736"
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立 SharePoint 方案](/office-dev/office-dev/create-sharepoint-solutions)
-- [建置和偵錯 SharePoint 方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
+- [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [進階編譯器設定對話方塊 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

@@ -99,7 +99,7 @@ ms.locfileid: "37118619"
  如果欄位的來源 XML 格式錯誤或者不是有效的 XML 檔案，或出現其他問題，則會發生「無法剖析檔案」錯誤。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英文網站定義未出現在 站台建立頁面在部署之後
- 建立和部署網站定義所使用的非英文版之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇** 方塊中，新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
+ 建立和部署網站定義所使用的非英文版之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇** 方塊中，新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
   
 ### <a name="error-message"></a>錯誤訊息
  無。  

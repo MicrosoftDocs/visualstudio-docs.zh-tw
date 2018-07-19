@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c3fa95bce2de1d380074b7ce40bde528220a77
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52e7002deeba9d2d61eb860b2f5814375f2a18e6
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916519"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977696"
 ---
 # <a name="parameter-nodes"></a>參數節點
 

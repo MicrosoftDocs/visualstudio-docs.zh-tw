@@ -9,28 +9,28 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197174"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281647"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
-Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobility + Security (EMS)。  使用 EMS 保護和管理身分識別、裝置、應用程式和資料 - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security.  
+Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobility + Security (EMS)。  使用 EMS 保護和管理身分識別、裝置、應用程式和資料 - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security.
 
 ## <a name="activation-steps"></a>啟用步驟
 
-若要使用 EMS，您必須設定帳戶，或使用現有的帳戶登入。 
+若要使用 EMS，您必須設定帳戶，或使用現有的帳戶登入。
 
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2.  在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。 
+2.  在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
 
     ![EMS 權益磚](_img\vs-ems\vs-ems-tile.png)
 
-2.  在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。 
+2.  在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。
 
     ![EMS 權益建立帳戶](_img\vs-ems\vs-ems-create-account-cropped.png)
 
@@ -62,10 +62,10 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 
 <sup>2</sup> *排除 Microsoft Partner Network (Professional)*
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
 -  需要使用 EMS 的說明嗎？  請參閱線上 [EMS 文件](/enterprise-mobility-security/)。
 -  如需任何 EMS 元件的技術支援，請前往 https://support.microsoft.com/allproducts 並選取產品。
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 
+-  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

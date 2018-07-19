@@ -1,5 +1,5 @@
 ---
-title: 如何： 建立當地語系化啟動載入器套件 |Microsoft 文件
+title: 如何： 建立當地語系化啟動載入器套件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566013"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785234"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權合約檔案 (例如 eula.rtf) 和套件資訊清單 (package.xml)。  
@@ -33,7 +33,7 @@ ms.locfileid: "31566013"
 3.  建立名為 package.xml 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已建立目標語言的 Visual Studio 啟動載入器，可以複製 Visual Studio package.xml 檔，並且在這個步驟中進行修改。  
   
 > [!NOTE]
->  如果您使用安裝專案部署的應用程式，您可以藉由變更當地語系化您的應用程式**當地語系化**屬性。  
+>  如果您使用安裝專案部署的應用程式，您可以將您的應用程式當地語系化變更**當地語系化**屬性。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -43,7 +43,7 @@ ms.locfileid: "31566013"
   
      在 32 位元電腦上建立資料夾中 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 資料夾。  
   
-     在 64 位元電腦上建立資料夾 \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中\\*BootstrapperPackageName*\ 資料夾。  
+     在 64 位元電腦上建立資料夾在 \Program 檔案 (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 資料夾。  
   
      下表顯示可用來比對地區設定的資料夾名稱。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "31566013"
   
 2.  建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。  
   
-3.  建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱[How to： 建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。  
+3.  建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱 < [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)。  
   
 4.  更新套件資訊清單的 `<Strings>` 區段，讓字串能夠以正確的地區設定語言顯示。  
   

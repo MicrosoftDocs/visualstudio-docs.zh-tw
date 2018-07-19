@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1abe2192ab919d1519c0a95f4b58bdfe1d82aacb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ec6364b3d130ab3ca333838c7e1b6eb2fdcb4a3d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815047"
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/26/2018
 
 **範例**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 [assembly: PexAssemblySettings(MaxBranches = 1000)] // we override the default value of maxbranches

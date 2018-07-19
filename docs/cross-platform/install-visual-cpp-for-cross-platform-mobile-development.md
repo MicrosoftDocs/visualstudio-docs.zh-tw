@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454697"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281093"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 
@@ -25,7 +25,7 @@ ms.locfileid: "34454697"
 
 ## <a name="requirements"></a>需求
 
-- 如需了解安裝需求，請參閱 [Visual Studio 產品系列系統需求](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)。
+- 如需了解安裝需求，請參閱 [Visual Studio 產品系列系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
    > [!IMPORTANT]
    > 如果您使用 Windows 7 或 Windows Server 2008 R2，則開發程式碼的對象可包括 Windows 傳統型應用程式、Android Native Activity 應用程式和程式庫，以及適用於 iOS 的應用程式和程式碼程式庫，但不包括 Windows Phone 或 UWP 應用程式。

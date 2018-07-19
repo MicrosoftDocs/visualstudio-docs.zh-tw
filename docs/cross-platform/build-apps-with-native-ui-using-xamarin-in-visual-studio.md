@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747426"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757249"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
@@ -50,7 +50,7 @@ ms.locfileid: "34747426"
 >  -   具有原生 UI 的 Xamarin 應用程式：
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (單一畫面的簡單應用程式)
 >     -   [Hello, Android 多重畫面](/xamarin/android/get-started/hello-android-multiscreen/) (可瀏覽不同畫面的應用程式)
->     -   [Android Fragment 逐步解說](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (用於主要/詳細資料畫面及其他項目)
+>     -   [Android Fragment 逐步解說](/xamarin/android/platform/fragments/implementing-with-fragments/) (用於主要/詳細資料畫面及其他項目)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS 多重畫面](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 

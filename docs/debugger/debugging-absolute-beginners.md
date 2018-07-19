@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890210"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131865"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>如何偵錯適用於徹底初學者
 
@@ -41,7 +41,7 @@ ms.locfileid: "37890210"
 
 ## <a name="examine-your-assumptions"></a>檢查您的假設
 
-您可以調查 bug 或錯誤之前，請考慮您預期某些結果所做的假設。 隱藏或未知的假設可以妨礙識別問題，即使您正在偵錯工具中正確的問題原因。 您可能會有一長串的可能假設 ！ 以下是幾個問題，問問自己挑戰您的假設。
+您可以調查 bug 或錯誤之前，請考慮您預期某些結果所做的假設。 隱藏或未知的假設可以妨礙識別問題，即使您正在偵錯工具中正確的問題原因。 您可能會有一長串的可能假設 ！ 以下是幾個問題要問問自己挑戰您的假設。
 
 * 您是否使用正確的 API （也就是正確的物件、 函式、 方法或屬性）？ 您使用的 API 可能會執行您認為它。 （您檢查偵錯工具中的 API 呼叫之後，修正它可能需要某趟車程支付的說明文件，以協助找出正確的 API）。
 
@@ -322,7 +322,7 @@ ms.locfileid: "37890210"
 
 * [檢查變數](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)並檢查它們是否包含應該包含的值型別。 如果您發現不正確的值，找出不正確的值已設定的位置 (若要尋找的值設定的位置，您可能需要重新啟動偵錯工具，，看看[呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)，或兩者)。
 
-* 請檢查您的應用程式是否正在執行您預期的程式碼。 (例如，在範例應用程式中，我們預期將 galaxy 類型為異常，switch 陳述式的程式碼，但應用程式略過的程式碼，因為錯字。)
+* 請檢查您的應用程式是否正在執行您預期的程式碼。 （例如，在範例應用程式中，我們預期將 galaxy 類型為異常，switch 陳述式的程式碼但應用程式略過的程式碼，因為錯字）。
 
 > [!TIP]
 > 您可以使用偵錯工具可協助您找出 bug。 偵錯工具可以找出 bug*為您*只有當它知道您的程式碼的意圖。 如果您的開發人員，該意圖，工具可以只會知道您的程式碼的意圖。 撰寫[單元測試](../test/improve-code-quality.md)是做法。

@@ -9,23 +9,23 @@ description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196810"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280301"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
 
-全面涵蓋適用於實用方案及實際問題的 Microsoft 技術。  根據您的訂用帳戶，您有權存取印出的雜誌，或提早存取數位版本。  
+全面涵蓋適用於實用方案及實際問題的 Microsoft 技術。  根據您的訂用帳戶，您有權存取印出的雜誌，或提早存取數位版本。
 
 
 ## <a name="activation-steps"></a>啟用步驟
-啟用您權益的步驟取決於您選擇的版本。  
+啟用您權益的步驟取決於您選擇的版本。
 
 ### <a name="digital-edition"></a>數位版
-數位版已可提供 Visual Studio Dev Essentials 成員使用。  
+數位版已可提供 Visual Studio Dev Essentials 成員使用。
 
 1.  若要存取 MSDN Magazine 數位版，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2.  在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 [存取]。
@@ -37,7 +37,7 @@ ms.locfileid: "31196810"
     ![MSDN Magazine 權益磚](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  在 [MSDN Magazine] 頁面上，選擇您慣用的訂用帳戶類型。  不論您居住在哪裏，都可以選擇免費的數位版本。  美國居民可以免費使用印出的版本。  印出的版本若傳送到非美國地址，則需要運費。  
+3.  在 [MSDN Magazine] 頁面上，選擇您慣用的訂用帳戶類型。  不論您居住在哪裏，都可以選擇免費的數位版本。  美國居民可以免費使用印出的版本。  印出的版本若傳送到非美國地址，則需要運費。
 
     ![MSDN Magazine 權益訂用帳戶](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -57,15 +57,15 @@ ms.locfileid: "31196810"
 |Visual Studio Enterprise、Visual Studio Professional (每月雲端)   | Azure |無法使用      |  NA         |
 |Visual Studio Dev Essentials| NA |數位版       |  [是]|
 
-<sup>1</sup>  *列印版：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、FTE、Microsoft Partner Network (Enterprise)、Imagine (Premium)。*  
+<sup>1</sup>  *列印版：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、FTE、Microsoft Partner Network (Enterprise)、Imagine (Premium)。*
 
 *數位版：MCT Software & Services、Microsoft Valued Partner (Professional)、Region Director (RD)。*
 
 *排除：Imagine (Standard)、BizSpark、MCT Software & Services Developer*
 
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 
+-  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

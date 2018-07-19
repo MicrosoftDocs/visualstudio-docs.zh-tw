@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a1587a429c92fe1bac5d2cd0bcd63c0f27a68c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577785"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303331"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定 `Choose` 元素的可能程式碼區塊以選取。  
@@ -41,7 +41,7 @@ ms.locfileid: "31577785"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <When Condition="'StringA'=='StringB'">  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  

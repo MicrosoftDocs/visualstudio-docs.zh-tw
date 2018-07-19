@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750476"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282969"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -42,7 +42,7 @@ ms.locfileid: "34750476"
 * **[AI 開發](#ai-development)**。 有了 Visual Studio Tools for AI (**15.5 的新功能**)，您就可以使用 Visual Studio 的生產力功能，來加速 AI 創新。 建置、測試及部署與 Azure Machine Learning 緊密整合的深度學習/AI 解決方案，以取得強大的測試功能，例如將資料準備和模型定型作業明確提交至不同的計算目標。 此外，Visual Studio Tools for AI 也提供自訂計量和執行歷程記錄追蹤的支援，以便進行資料科學重現與稽核。
 
 > [!NOTE]
-> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[目前版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)。 如需預覽未來提供的功能，請參閱[預覽版本資訊](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)。
+> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[目前版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)。 如需預覽未來推出的供應項目，請參閱[預覽版本資訊](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)。
 
 以下是一些最值得注意的 Visual Studio 2017 改善和新功能的詳細資訊。
 
@@ -50,7 +50,7 @@ ms.locfileid: "34750476"
 
 ### <a name="a-new-setup-experience"></a>新的安裝經驗
 
-[下載 Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[查看 Visual Studio 系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[查看 Visual Studio 系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安裝所需的功能。 而且，它也會完全進行解除安裝。
 
@@ -338,8 +338,8 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 我們對 Visual Studio 2017 的更新通常附帶可大幅改善您開發體驗的新功能。 以下提供最值得您注意的更新回顧，目前處於實驗性預覽：
 
-* **[Live Share](https://www.visualstudio.com/services/live-share/)**：這項新工具可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。<br><br>如需詳細資訊，請參閱 [Live Share 常見問題集](/visualstudio/liveshare/faq)。<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**：這項新功能使用了 AI 帶來更棒的內容感知程式碼完成以改善軟體開發，可引導開發人員遵循其小組的模式與風格進行編碼、找出難以發現的程式碼問題，並將程式碼檢閱聚焦於真正重要之處。 <br><br>如需詳細資訊，請參閱 [IntelliCode 常見問題集](../ide/not-in-toc/intellicode-faq.md)。
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**：這項新工具可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。<br><br>如需詳細資訊，請參閱 [Live Share 常見問題集](/visualstudio/liveshare/faq)。<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**：這項新功能使用了 AI 帶來更棒的內容感知程式碼完成以改善軟體開發，可引導開發人員遵循其小組的模式與風格進行編碼、找出難以發現的程式碼問題，並將程式碼檢閱聚焦於真正重要之處。 <br><br>如需詳細資訊，請參閱 [IntelliCode 常見問題集](../ide/not-in-toc/intellicode-faq.md)。
 
 想深入了解 Visual Studio 2017 中還包含哪些內容嗎？ 請參閱 [Visual Studio 路程圖](/visualstudio/productinfo/vs2018-roadmap)頁面。
 
@@ -358,5 +358,5 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 * [Visual Studio 2017 版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](/dotnet/csharp/whats-new)
-* [Team Foundation Server 的新功能](https://www.visualstudio.com/docs/whats-new)
-* [Visual Studio for Mac 的新功能](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Team Foundation Server 的新功能](/tfs/server/whats-new?view=vsts)
+* [Visual Studio for Mac 的新功能](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

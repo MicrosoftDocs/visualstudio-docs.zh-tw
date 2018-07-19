@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764929"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280334"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 使用者入門
 
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在這麼做時探索 [Visual Studio 整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -58,7 +58,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *HelloWorld*。  
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *HelloWorld*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 1. 開啟 Visual Studio 2017，然後從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-2. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。  
+2. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。
 
 3. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
 
@@ -136,7 +136,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
    ![程式碼視窗顯示 Calculate This code](../ide/media/vb-codewindow-calculate-this.png)
 
-4. 按一下 **CalculateThis** 以執行程式。 主控台視窗應該類似下列螢幕擷取畫面：       
+4. 按一下 **CalculateThis** 以執行程式。 主控台視窗應該類似下列螢幕擷取畫面：
 
     ![主控台視窗顯示 CaluculateThis 應用程式，其中包含提示要採取的動作。](../ide/media/vb-console-calculate-this.png)
 

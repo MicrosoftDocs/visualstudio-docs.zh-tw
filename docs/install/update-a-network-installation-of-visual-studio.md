@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620449"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282557"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -41,10 +41,10 @@ ms.locfileid: "31620449"
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* 以下是如何該相同的配置更新為較新版本。 您不需要指定任何其他命令列參數。 已儲存先前的設定，並且將供這個配置資料夾中的任何後續配置命令使用。  
+* 以下是如何該相同的配置更新為較新版本。 您不需要指定任何其他命令列參數。 已儲存先前的設定，並且將供這個配置資料夾中的任何後續配置命令使用。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * 以下是如何以自動方式將配置更新為較新版本。 配置作業會在新的主控台視窗中執行安裝程序。 此視窗會保持開啟，好讓使用者可以看到最後的結果及可能發生之任何錯誤的摘要。 如果您正以自動方式執行配置作業 (例如讓指令碼定期執行以將配置更新為最新版本)，則使用 `--passive` 參數和處理序將會自動關閉視窗。
@@ -96,7 +96,7 @@ vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 > [!NOTE]
 > `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如，`Vs_enterprise.exe --layout <layoutDir>`。
 
-Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。  
+Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。
 
 ## <a name="how-to-fix-a-layout"></a>如何修正配置
 
@@ -114,9 +114,9 @@ vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
 若要這麼做，您需要包含這些過時套件之目錄資訊清單的檔案路徑。 您可以在離線配置快取的 [封存] 資料夾中尋找目錄資訊清單。 當您更新配置時，即會將它們儲存在該處。 在 [封存] 資料夾中，有一或多個 "GUID" 具名資料夾，且各包含過時目錄資訊清單。 "GUID" 資料夾數目應該與對您的離線快取進行的更新數目相同。
 
-有一些檔案儲存在每個 "GUID" 資料夾內。 最有趣的兩個檔案是 "catalog.json" 檔案和 "version.txt" 檔案。 "catalog.json" 檔案是您需要傳遞至 `--clean` 選項的過時目錄資訊清單。 其他 version.txt 檔案包含此過時目錄資訊清單的版本。 根據版本號碼，您可以決定是否要從此目錄資訊清單中移除過時套件。 當您瀏覽其他 "GUID" 資料夾時，可以執行相同動作。 在您決定想要清除的目錄之後，請提供這些目錄的檔案路徑來執行 `--clean` 命令。  
+有一些檔案儲存在每個 "GUID" 資料夾內。 最有趣的兩個檔案是 "catalog.json" 檔案和 "version.txt" 檔案。 "catalog.json" 檔案是您需要傳遞至 `--clean` 選項的過時目錄資訊清單。 其他 version.txt 檔案包含此過時目錄資訊清單的版本。 根據版本號碼，您可以決定是否要從此目錄資訊清單中移除過時套件。 當您瀏覽其他 "GUID" 資料夾時，可以執行相同動作。 在您決定想要清除的目錄之後，請提供這些目錄的檔案路徑來執行 `--clean` 命令。
 
-以下是如何使用 --clean 選項的一些範例：   
+以下是如何使用 --clean 選項的一些範例：
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 您也可以叫用 &lt;layoutDir&gt; 內的 vs_enterprise.exe。 以下為範例：
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layo
 
 ## <a name="get-support"></a>取得支援
 
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951787"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924261"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗，或 [尋找/命令]  方塊來叫用命令。 在每種情況下，大於符號 (`>`) 都用來表示應執行命令，而不是搜尋或偵錯作業。
@@ -61,7 +61,6 @@ Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗
 |[新增檔案](../../ide/reference/new-file-command.md)|建立新的檔案，並將它新增至目前選取的專案。|
 |[開啟檔案](../../ide/reference/open-file-command.md)|開啟現有的檔案，並可讓您指定編輯器。|
 |[開啟專案](../../ide/reference/open-project-command.md)|開啟現有的專案，並可讓您將專案新增至目前的方案。|
-|[開啟方案](../../ide/reference/open-solution-command.md)|開啟現有的方案。|
 |[列印](../../ide/reference/print-command.md)|評估運算式，並顯示結果或指定的文字。|
 |[快速監看式命令](../../ide/reference/quick-watch-command.md)|顯示 [快速監看式]  對話方塊的 [運算式]  欄位中所選取或指定的文字。|
 |[取代](../../ide/reference/replace-command.md)|使用 [尋找和取代]  控制項提供的選項子集，取代檔案中的文字。|

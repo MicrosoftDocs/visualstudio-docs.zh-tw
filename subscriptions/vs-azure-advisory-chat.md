@@ -9,16 +9,16 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f33c4fdfd026fc7517fb32b16fc90ea4bedeec7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196784"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280799"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
-即時取得使用 Azure 的協助！ 包括 Azure PaaS 服務諮詢。  Visual Studio Enterprise Standard 與年度雲端訂用帳戶中包含「Azure 資訊對談」權益。  
+即時取得使用 Azure 的協助！ 包括 Azure PaaS 服務諮詢。  Visual Studio Enterprise Standard 與年度雲端訂用帳戶中包含「Azure 資訊對談」權益。
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -32,7 +32,7 @@ ms.locfileid: "31196784"
 
     ![[Azure 諮詢對談] 免責聲明](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
-4. 這樣就全部完成了。  對談視窗隨即開啟，而且您將會看到可讓您知道您在佇列中之位置的狀態。  下一個有空的專家將會回應您的對談。 
+4. 這樣就全部完成了。  對談視窗隨即開啟，而且您將會看到可讓您知道您在佇列中之位置的狀態。  下一個有空的專家將會回應您的對談。
 
     ![Azure 諮詢對談](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "31196784"
 | Visual Studio Dev Essentials                                          | N/A                                              |無法使用                                              |  否          |
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、MCT*
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -55,5 +55,5 @@ ms.locfileid: "31196784"
 -  答：Azure 諮詢對談是即時對談服務，可解決有關 Azure 的問題。 [Azure Advisor](/azure/advisor/advisor-overview) 是個人化的雲端顧問，可協助您依照最佳做法最佳化您的 Azure 部署。 它會分析您的資源設定與使用情況遙測，然後建議可協助您改善 Azure 資源成本效益、效能、高可用性與安全性的解決方式。
 
 ## <a name="support-resources"></a>支援資源
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 
+-  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
