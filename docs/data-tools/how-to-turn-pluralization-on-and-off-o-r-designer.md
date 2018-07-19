@@ -1,5 +1,5 @@
 ---
-title: 如何： 開啟複數表示開啟和關閉 （O R 設計工具）
+title: 如何： 開啟和關閉 （O-R 設計工具） 的複數表示
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -10,15 +10,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8c477ac276ce0ff9c292dc42ba2f5f7d1e53dd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921679"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089379"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 開啟複數表示開啟和關閉 （O/R 設計工具）
-根據預設，當您將資料庫物件名稱結尾 s 或從 ies**伺服器總管**/**資料庫總管**到[LINQ to SQL 工具，在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，產生的實體類別的名稱會變成從複數單數。 這是為了更正確地呈現具現化 (Instantiated) 的實體類別對應至單一筆記錄的情況。 例如，將名為 Customers 的資料表加入至 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]會產生實體類別 Customer，原因是這個類別只會保留單一客戶的資料。
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 開啟和關閉 （O/R 設計工具） 的複數表示
+根據預設，當您將資料庫物件具有名稱結尾為 s 或 ies 從拖曳**伺服器總管**或**資料庫總管**拖曳至[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，產生的實體類別的名稱會從複數變更變為單數。 這是為了更正確地呈現具現化 (Instantiated) 的實體類別對應至單一筆記錄的情況。 例如，新增`Customers`資料表**O/R Designer**產生實體類別`Customer`因為類別會保留單一客戶的資料。
 
 > [!NOTE]
 >  只有在英文版的 Visual Studio 中，才會啟用複數表示。
@@ -29,19 +29,19 @@ ms.locfileid: "31921679"
 
 1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2.  在**選項**對話方塊方塊中，展開 **資料庫工具**。
+2.  在 **選項**對話方塊方塊中，展開**Database**。
 
     > [!NOTE]
-    >  選取**顯示所有設定**如果**資料庫工具**看不到節點。
+    >  選取 **顯示所有設定**如果**Database**看不到節點。
 
-3.  按一下**O/R Designer**。
+3.  按一下  **O/R Designer**。
 
-4.  設定**名稱的複數表示**至**啟用** = **False**設定[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]，讓它不會變更類別名稱。
+4.  設定**名稱的複數表示**要**已啟用** = **False**設**O/R Designer** ，讓它不會變更類別名稱.
 
-5.  設定**名稱的複數表示**至**啟用** = **True**將複數表示規則套用至類別名稱加入物件[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。
+5.  設定**名稱的複數表示**要**已啟用** = **True**將複數表示規則套用至類別物件的名稱新增至**O/R設計工具**。
 
 ## <a name="see-also"></a>另請參閱
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)
+- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

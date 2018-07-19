@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2728faddd71485f3636eeefb6b86bb1f6be90fdd
+ms.openlocfilehash: fa8443ce0c6ac3c1ccaaeb17ef670786d2e6bbc6
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/11/2018
-ms.locfileid: "38945463"
+ms.locfileid: "38945953"
 ---
-Visual Studio SDK
+Windows Vista

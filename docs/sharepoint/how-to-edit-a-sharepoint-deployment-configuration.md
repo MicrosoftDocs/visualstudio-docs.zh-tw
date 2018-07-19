@@ -1,5 +1,5 @@
 ---
-title: 如何： 編輯 SharePoint 部署組態 |Microsoft 文件
+title: 如何： 編輯 SharePoint 部署組態 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,43 +19,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f6851b3d9aefee969851f355552373e7ecc7ff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118630"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：編輯 SharePoint 部署組態
-  您可以建立部署組態，或修改現有的部署組態。 例如，您無法執行的單一步驟或變更的部署程序中的步驟順序。 您可能想要建立或修改部署組態，因為無法變更內建和以程式設計方式加入的組態。  
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何： 編輯 SharePoint 部署組態
+  您可以建立部署組態，或修改現有的部署組態。 比方說，您無法執行單一的步驟，或變更的部署程序中的步驟順序。 您可能想要建立或修改部署組態，因為無法變更內建和以程式設計方式加入組態。  
   
-## <a name="creating-a-sharepoint-deployment-configuration"></a>建立 SharePoint 部署組態  
+## <a name="create-a-sharepoint-deployment-configuration"></a>建立 SharePoint 部署組態  
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>若要建立 SharePoint 部署組態  
   
-1.  在**方案總管] 中**，選擇 SharePoint 專案，然後在功能表列上選擇 [**專案**，* ProjectName ***屬性**。  
+1.  在 **方案總管**，選擇 SharePoint 專案，然後在功能表列上選擇 **專案**，* 專案名稱 ***屬性**。  
   
-2.  在**SharePoint**索引標籤上，選擇**新增** 按鈕。  
+2.  在 [ **SharePoint**索引標籤上，選擇**新增**] 按鈕。  
   
      **加入新的部署組態** 對話方塊隨即出現。  
   
-3.  在**名稱**文字方塊中，輸入部署組態的名稱。  
+3.  在 **名稱**文字中，輸入部署組態的名稱。  
   
-4.  在**可用的部署步驟** 窗格中，選擇您想要加入部署組態，請選擇的步驟 (**>**) 按鈕，然後再選擇**確定**  按鈕。  
+4.  在 [**可用的部署步驟**窗格中，選擇您想要加入部署組態，請選擇的步驟 (**>**) 按鈕，然後再選擇 **[確定]** ] 按鈕。  
   
     > [!NOTE]  
-    >  如果您已設定預先部署或部署後命令，只有在您加入自訂的部署設定，也會執行這些步驟。  
+    >  如果您已設定預先部署命令或部署後命令，只有在您加入自訂的部署設定，也會執行這些步驟。  
   
-## <a name="changing-the-active-deployment-configuration"></a>變更現用部署組態  
+## <a name="change-the-active-deployment-configuration"></a>變更現用部署組態  
   
 #### <a name="to-change-the-active-deployment-configuration"></a>若要變更現用部署組態  
   
-1.  在**方案總管] 中**，選擇 SharePoint 專案，然後在功能表列上選擇 [**專案**，* ProjectName ***屬性**。  
+1.  在 **方案總管**，選擇 SharePoint 專案，然後在功能表列上選擇 **專案** > **\<*ProjectName*> 屬性**。  
   
 2.  選擇**SharePoint**  索引標籤。  
   
-3.  在**現用部署組態**清單方塊中，選擇您想要使用的部署組態的名稱。  
+3.  在 **現用部署組態**清單方塊中，選擇您想要使用的部署組態的名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   
