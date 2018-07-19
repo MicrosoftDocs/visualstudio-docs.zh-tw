@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 204a4b668feab3b46e5aa20ae90b0864792daa1c
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
-ms.translationtype: HT
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/18/2018
-ms.locfileid: "39111974"
+ms.locfileid: "39135576"
 ---
 Windows Presentation Foundation (WPF)

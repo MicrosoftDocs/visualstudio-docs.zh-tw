@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38801119"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131956"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -240,7 +240,7 @@ ms.locfileid: "38801119"
 
 ## <a name="next-steps"></a>後續步驟
 
-完成本逐步解說之後, 您可以嘗試下列相關工作：
+完成本逐步解說之後, 您可以嘗試下列的相關的工作：
 
 - 了解如何使用**Zdroje dat**視窗在 Visual Studio 中要繫結 WPF 控制項新增至其他類型的資料來源。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
