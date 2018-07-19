@@ -1,5 +1,5 @@
 ---
-title: 報告攔截函式 |Microsoft 文件
+title: 報告攔截函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,30 +25,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562944404d3e02a2e5768fcd74c67302475e6190
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481174"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056478"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
-報告攔截函式，使用安裝[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)會產生偵錯報表。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：  
+報告攔截函式，使用安裝[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次都會呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)會產生偵錯報表。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：  
   
-```  
+```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- 您傳遞給指標 **_CrtSetReportHook**的型別 **_CRT_REPORT_HOOK**、 CRTDBG 中所定義。H:  
+ 將指標傳遞給 **_CrtSetReportHook**別的 **_CRT_REPORT_HOOK**、 CRTDBG 中所定義。H:  
   
-```  
+```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- 當執行階段程式庫呼叫攔截函式， *nRptType*引數包含報表的類別目錄 (**_CRT_WARN**， **_CRT_ERROR**，或 **_CRT_ASSERT**)， *szMsg*包含完全組裝的報告訊息字串、 指標和*retVal*指定是否`_CrtDbgReport`應繼續正常執行之後產生的報表或開始偵錯工具。 (A *retVal*值為零會繼續執行，值為 1 時會啟動偵錯工具。)  
+ 當執行階段程式庫呼叫攔截函式， *nRptType*引數包含報告的分類 (**_CRT_WARN**， **_CRT_ERROR**，或 **_CRT_ASSERT**)， *szMsg*包含完全組裝的報告訊息字串、 指標和*retVal*指定是否`_CrtDbgReport`應繼續正常執行之後產生報表] 或 [啟動偵錯工具。 (A *retVal*值為零會繼續執行，值為 1 會啟動偵錯工具。)  
   
- 如果攔截處理問題中的訊息完全，而無須任何進一步的報告，它應該傳回**TRUE**。 如果它傳回**FALSE**，`_CrtDbgReport`通常會報告訊息。  
+ 如果攔截處理的訊息完全，而沒有進一步回報是必要，它應該傳回 **，則為 TRUE**。 如果它傳回**假**，`_CrtDbgReport`通常會報告訊息。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯攔截函式寫入](../debugger/debug-hook-function-writing.md)   
+ [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 範例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
