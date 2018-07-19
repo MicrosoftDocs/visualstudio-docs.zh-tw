@@ -1,5 +1,5 @@
 ---
-title: 如何： 建立事件接收器 |Microsoft 文件
+title: 如何： 建立事件接收器 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,58 +20,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ead81e01022c8f389ad6010c89d0e433b82c542e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 687e82561d49043405691cf4406a2a084c2619a1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118771"
 ---
-# <a name="how-to-create-an-event-receiver"></a>如何：建立事件接收器
-  藉由建立*事件接收器*，您可以回應使用者互動 SharePoint 項目，例如清單或清單項目時。 比方說，當使用者變更行事曆，或刪除連絡人清單的名稱，會觸發的事件接收器中的程式碼。 您可以遵循本主題，來學習如何將事件接收器加入至清單執行個體。  
+# <a name="how-to-create-an-event-receiver"></a>如何： 建立事件接收器
+  藉由建立*事件接收器*，您可以回應使用者互動 SharePoint 項目，例如清單或清單項目時。 例如，當使用者將行事曆變更或刪除連絡人清單中的名稱，會觸發事件接收器中的程式碼。 遵循本主題，您可以了解如何將事件接收器加入至清單執行個體。  
   
- 若要完成這些步驟，您必須安裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支援的 Windows 版本和 SharePoint。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 因為這個範例需要 SharePoint 專案，您也必須先完成本主題中的程序[逐步解說： 建立網站資料行、 內容類型，以及 sharepoint 清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。  
+ 若要完成這些步驟，您必須已安裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支援的 Windows 和 SharePoint 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 因為此範例需要 SharePoint 專案，您也必須已經完成本主題中的程序[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。  
   
 ## <a name="adding-an-event-receiver"></a>加入事件接收器  
- 您在建立專案[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包括自訂網站資料行、 自訂的清單，以及內容的類型。 在下列程序中，您會展開這個專案加入簡單的事件處理常式 （事件接收器） 來顯示如何處理 SharePoint 項目，例如清單中所發生事件的清單執行個體。  
+ 您在建立專案[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包含自訂的網站資料行、 自訂清單和內容類型。 在下列程序中，您會藉由新增一個簡單的事件處理常式 （事件接收器） 展開這個專案的清單執行個體，以示範如何處理 SharePoint 項目，例如清單中所發生事件。  
   
-#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>加入事件接收器的清單執行個體  
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>若要加入的清單執行個體中的事件接收器  
   
-1.  開啟您在建立專案[逐步解說： 建立網站資料行、 內容類型，以及 sharepoint 清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。  
+1.  開啟您在建立專案[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。  
   
-2.  在**方案總管 中**，選擇 SharePoint 專案節點，稱為**診所**。  
+2.  在 [**方案總管] 中**，選擇 SharePoint 專案節點，稱為**Clinic**。  
   
-3.  在功能表列上選擇 **專案**，**加入新項目**。  
+3.  在功能表列中，選擇 [專案] > [加入新項目]。  
   
-4.  之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**項目。  
+4.  之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**項目。  
   
-5.  在**範本** 窗格中，選擇**事件接收器**，其命名**TestEventReceiver1**，然後選擇  **確定**  按鈕。  
+5.  中**範本**窗格中，選擇**事件接收器**，其命名**TestEventReceiver1**，然後選擇**確定**  按鈕。  
   
      **SharePoint 自訂精靈**隨即出現。  
   
-6.  在**您要何種類型的事件接收器？**清單中，選擇**清單項目事件**。  
+6.  在 **何種類型的事件接收器？** 清單中，選擇**清單項目事件**。  
   
-7.  在**何種項目應該做為事件來源？**清單中，選擇**病患 (Clinic\Patients)**。  
+7.  在 **何種項目應該做為事件來源？** 清單中，選擇**病患 (Clinic\Patients)**。  
   
-8.  在**處理下列事件**清單中，選取核取方塊旁的 **項目已加入**，然後選擇 **完成** 按鈕。  
+8.  中**處理下列事件**清單中，選取旁邊的核取方塊**已加入的項目**，然後選擇**完成**按鈕。  
   
-     新的事件接收器的程式碼檔包含的單一方法，名為`ItemAdded`。 在下一個步驟中，會將程式碼加入至這個方法，讓每個連絡人將會預設名稱為 Scott Brown。  
+     新的事件接收器的程式碼檔案包含的單一方法，名為`ItemAdded`。 在下一個步驟中，會將程式碼新增至這個方法，讓每個連絡人將會命名為 Scott Brown 預設。  
   
-9. 取代現有`ItemAdded`方法，以下列程式碼，並再選擇 F5 鍵：  
+9. 取代現有`ItemAdded`方法，以下列程式碼，然後選擇  **F5**機碼：  
   
      [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
      [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
   
-     在程式碼執行和 SharePoint 網站會出現在網頁瀏覽器。  
+     在程式碼執行後，SharePoint 網站會出現在網頁瀏覽器。  
   
-10. 在 快速啟動 列上選擇 **病患**連結，，然後選擇 **加入新項目**連結。  
+10. 在 [快速啟動] 列中，選擇**病患**連結，然後再選擇**加入新項目**連結。  
   
-     新的項目項目表單隨即開啟。  
+     新項目的項目表單隨即開啟。  
   
 11. 在欄位中，輸入資料，然後選擇**儲存** 按鈕。  
   
-     選擇之後**儲存** 按鈕，**病患名稱**Scott Brown 的名稱會自動更新資料行。  
+     您選擇後**儲存** 按鈕，**病患名稱**Scott Brown 的名稱會自動更新資料行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

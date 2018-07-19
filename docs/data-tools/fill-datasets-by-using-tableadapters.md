@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757077"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131969"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
 
@@ -106,7 +106,7 @@ Tableadapter 會使用資料命令，來讀取和寫入資料庫中。 使用 Ta
 當您使用的 TableAdapter 時，它實際上會執行相同的作業，您通常會執行的命令。 比方說，當您呼叫的介面卡`Fill`方法中，配接器執行的資料中的命令及其`SelectCommand`屬性，並使用資料讀取器 (比方說， <xref:System.Data.SqlClient.SqlDataReader>) 載入結果集中的資料表。 同樣地，當您呼叫的介面卡`Update`方法，它會執行適當的命令 (在`UpdateCommand`， `InsertCommand`，和`DeleteCommand`屬性) 針對每個變更資料表中的記錄。
 
 > [!NOTE]
-> 如果沒有足夠的資訊，在主要的查詢中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`預設會建立命令時產生的 TableAdapter。 如果 TableAdapter 的主要查詢是單一的資料表超過`SELECT`陳述式，就可以在設計工具將無法產生`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不產生這些命令，執行時，您可能會收到錯誤`TableAdapter.Update`方法。
+> 如果沒有足夠的資訊，在主要的查詢中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`TableAdapter 產生時，將會建立預設的命令。 如果 TableAdapter 的主要查詢是單一的資料表超過`SELECT`陳述式，就可以在設計工具將無法產生`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不產生這些命令，執行時，您可能會收到錯誤`TableAdapter.Update`方法。
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 

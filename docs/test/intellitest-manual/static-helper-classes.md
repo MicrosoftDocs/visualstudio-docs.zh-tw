@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815895"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -41,7 +42,7 @@ IntelliTest 提供一組靜態的協助程式類別，可以在撰寫[參數化�
 
 下列參數化測試不會考慮 **j=0**：
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 上述程式碼幾乎等同於：
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ public void TestSomething(int i, int j) {
 
 整數的絕對值是正數的判斷提示如下：
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ public void TestSomething(int i) {
 
 * 簡單呼叫 **PexChoose.Value** 以產生新值：
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ public int Foo() {
 
 當 IntelliTest 探索程式碼時，會使用其格式化的字串表示法利用 **PexObserve** 記錄計算的值。 值與唯一的名稱建立關聯。
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **範例**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ public partial class MathExTests {
 
 本例會示範 **PexAssume.Arrays.ElementsAreNotNull** 方法的實作。 在此方法中，您會忽略陣列值的長度條件約束，以免 IntelliTest 嘗試產生不同的陣列大小。 只在這裡忽略條件約束。 如果受測程式碼對不同的陣列長度有不同的行為，則 IntelliTest 無法從受測程式碼的條件約束產生不同大小的陣列。
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

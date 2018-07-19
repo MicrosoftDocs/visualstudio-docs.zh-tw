@@ -1,6 +1,6 @@
 ---
 title: CA1305：指定 IFormatProvider
-ms.date: 11/04/2016
+ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -14,67 +14,77 @@ ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: da4125a87ea7fe1576834dacc14af9a1a1861206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900353"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174302"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
 |分類|Microsoft.Globalization|
-|中斷變更|非中斷|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 方法或建構函式呼叫一或多個成員具有多載，可接受<xref:System.IFormatProvider?displayProperty=fullName>參數和方法或建構函式不會呼叫的多載，<xref:System.IFormatProvider>參數。 此規則會忽略呼叫[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]記載成略過的方法<xref:System.IFormatProvider>參數與此外下列方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+方法或建構函式會呼叫具有多載，接受的一或多個成員<xref:System.IFormatProvider?displayProperty=fullName>參數的方法或建構函式不會呼叫多載，<xref:System.IFormatProvider>參數。
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+此規則會忽略會記載為略過的.NET Framework 方法的呼叫<xref:System.IFormatProvider>參數。 此規則也會忽略下列方法：
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>規則描述
- 當<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要在所有地區設定的效果。 此外，[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]成員選擇預設文化特性及格式設定為基礎的假設，可能不正確的程式碼。 若要確定程式碼的運作不如預期您的案例，您應該提供根據下列指導方針的特定文化特性資訊：
 
--   如果此值將會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
+當<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，.NET Framework 成員選擇預設文化特性，而且格式為基礎的假設，可能不正確的程式碼。 若要確定程式碼運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列方針：
 
--   如果將儲存的值，且 （保存至檔案或資料庫） 的軟體存取，使用文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
+- 如果此值會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 
--   如果您不知道值的目的，有資料取用者，或提供者指定的文化特性。
+- 如果將儲存的值，且供軟體 （保存至檔案或資料庫），使用文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>。
 
- 請注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>只能用於擷取當地語系化的資源所使用的執行個體<xref:System.Resources.ResourceManager?displayProperty=fullName>類別。
+- 如果您不知道值的目的地，具有資料取用者，或提供者指定的文化特性。
 
- 即使多載成員的預設行為是適用於您的需求，最好明確呼叫的特定文化特性的多載，讓您的程式碼是自我記錄並更容易維護。
+即使多載成員的預設行為是適用於您的需求，最好明確呼叫的特定文化特性的多載，讓您的程式碼是自我記錄並更容易維護。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，使用的多載，<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider>和指定的引數，根據先前列出的指導方針。
+
+若要修正此規則的違規情形，使用採用的多載<xref:System.IFormatProvider>引數。 或者，您也可以使用[C# 字串插值](/dotnet/csharp/tutorials/string-interpolation)並將它傳遞給<xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，當您確定預設文化特性/格式提供者是正確的選擇，而且程式碼維護性不重要的開發優先順序。
+
+它可安全地隱藏此規則的警告，當您確定預設的格式是正確的選擇，以及程式碼維護性不是重要的開發優先順序。
 
 ## <a name="example"></a>範例
- 在下列範例中，`BadMethod`會導致兩個違反此規則。 `GoodMethod` 藉由傳遞而異的文化特性，若要更正第一個違規<xref:System.String.Compare%2A>，並藉由傳遞至目前的文化特性修正第二個違規<xref:System.String.ToLower%2A>因為`string3`顯示給使用者。
 
- [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_1.cs)]
+下列程式碼，`example1`字串違反規則 CA1305。 `example2`字串傳遞符合規則 CA1305 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>，它會實作<xref:System.IFormatProvider>至<xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>。 `example3`字串符合規則 CA1305 藉由傳遞字串插值的<xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>。
 
-## <a name="example"></a>範例
- 下列範例會顯示目前的文化特性的效果，使用預設<xref:System.IFormatProvider>，會選取<xref:System.DateTime>型別。
+```csharp
+string name = "Georgette";
 
- [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_2.cs)]
+// Violates CA1305
+string example1 = String.Format("Hello {0}", name);
 
- 此範例會產生下列輸出。
+// Satisfies CA1305
+string example2 = String.Format(CultureInfo.CurrentCulture, "Hello {0}", name);
 
- **1900 年 6 月 4 日 12:15:12 PM**
-**06/04/1900年 12:15:12**
+// Satisfies CA1305
+string example3 = FormattableString.Invariant($"Hello {name}");
+```
+
 ## <a name="related-rules"></a>相關的規則
- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+
+- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>另請參閱
-[使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#Cultures)
+
+- [使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#Cultures)

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577310"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326276"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 在目前的內容中繼續追蹤。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 HRESULT WINAPI ResumeTracking();  
 ```  
   

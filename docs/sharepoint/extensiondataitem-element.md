@@ -1,5 +1,5 @@
 ---
-title: ExtensionDataItem 項目 |Microsoft 文件
+title: ExtensionDataItem 項目 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766503"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325717"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 項目
-  自訂資料項目索引鍵/值格式中的 SharePoint 專案項目與相關聯。 索引鍵和值都必須是字串。  
+  自訂資料項目中索引鍵/值格式的 SharePoint 專案項目與相關聯。 金鑰和值必須是字串。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,8 +39,8 @@ ms.locfileid: "34766503"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|**Key**|需要**xs： 字串**屬性。<br /><br /> 用來儲存和擷取資料的項目索引鍵。|  
-|**值**|需要**xs: string**屬性。<br /><br /> 資料項目的值。|  
+|**Key**|所需**xs： 字串**屬性。<br /><br /> 用來儲存和擷取的資料項目的索引鍵。|  
+|**值**|所需**xs: string**屬性。<br /><br /> 資料項目的值。|  
   
 ### <a name="child-elements"></a>子元素
  無。  
@@ -52,7 +52,7 @@ ms.locfileid: "34766503"
 |[ExtensionData](../sharepoint/extensiondata-element.md)|代表 SharePoint 專案項目相關聯的自訂資料項目的集合。|  
   
 ## <a name="remarks"></a>備註  
- 當您自訂的資料使用與相關聯的 SharePoint 專案項目<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>物件時，Visual Studio 會將資料儲存至新**ExtensionDataItem**中的項目`.spdata`檔案專案項目。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統中儲存的資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+ 當您自訂的資料使用與相關聯的 SharePoint 專案項目<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>的屬性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>物件時，Visual Studio 會將資料儲存至新**ExtensionDataItem**中的項目`.spdata`檔案專案項目。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ## <a name="element-information"></a>項目資訊
   
@@ -60,7 +60,7 @@ ms.locfileid: "34766503"
 |-|-|  
 |**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
-|**驗證檔**|ProjectItemModelSchema.xsd|  
+|**驗證檔案**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
   
 ## <a name="see-also"></a>另請參閱

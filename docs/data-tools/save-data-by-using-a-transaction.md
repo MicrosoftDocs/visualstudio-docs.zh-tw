@@ -18,35 +18,35 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920543"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174207"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用異動儲存資料
-將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>物件能夠參與的交易，為您自動管理。
+將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>參與的交易，會自動為您管理的物件。
 
-因此您必須手動將參考加入至使用交易之專案的專案不會建立使用 System.Transactions 組件的參考。
+參考不會建立專案*System.Transactions*組件，因此您必須以手動方式將參考加入專案，使用交易。
 
-最簡單的方式實作交易是具現化<xref:System.Transactions.TransactionScope>物件存放至`using`陳述式。 (如需詳細資訊，請參閱[Using 陳述式](/dotnet/visual-basic/language-reference/statements/using-statement)，和[使用陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。)執行內的程式碼`using`參與交易的陳述式。
+最簡單的方式實作交易是具現化<xref:System.Transactions.TransactionScope>物件中`using`陳述式。 (如需詳細資訊，請參閱 < [Using 陳述式](/dotnet/visual-basic/language-reference/statements/using-statement)，並[Using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。)執行內的程式碼`using`參與交易的陳述式。
 
-若要認可的交易，呼叫<xref:System.Transactions.TransactionScope.Complete%2A>方法中使用的最後一個陳述式區塊。
+若要認可交易，呼叫<xref:System.Transactions.TransactionScope.Complete%2A>方法中使用的最後一個陳述式區塊。
 
 若要回復交易，會擲回例外狀況之前呼叫<xref:System.Transactions.TransactionScope.Complete%2A>方法。
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要加入的參考 system.transactions.dll
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要新增參考 system.transactions.dll，才能
 
-1.  在**專案**功能表上，選取**加入參考**。
+1.  在 **專案**功能表上，選取**加入參考**。
 
-2.  上 **.NET**  索引標籤 (**SQL Server**  索引標籤的 SQL Server 專案)，選取**System.Transactions**，然後選取**確定**。
+2.  上 **.NET**  索引標籤 (**SQL Server** SQL Server 專案 索引標籤)，選取**System.Transactions**，然後選取**確定**。
 
-     System.transactions.dll 的參考會加入至專案。
+     參考*System.Transactions.dll*加入至專案。
 
-## <a name="to-save-data-in-a-transaction"></a>若要在交易中儲存資料
+## <a name="to-save-data-in-a-transaction"></a>若要將資料儲存在交易中
 
--   加入程式碼中所使用的儲存資料以包含交易的陳述式。 下列程式碼會示範如何建立及具現化<xref:System.Transactions.TransactionScope>物件中使用陳述式：
+-   加入程式碼來儲存內使用的資料包含交易的陳述式。 下列程式碼示範如何建立和具現化<xref:System.Transactions.TransactionScope>物件中的 using 陳述式：
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

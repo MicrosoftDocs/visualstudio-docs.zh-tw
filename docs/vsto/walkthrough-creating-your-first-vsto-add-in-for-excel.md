@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 建立 Excel 的第一個 VSTO 增益集 |Microsoft 文件
+title: 您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797795"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>逐步解說：建立 Excel 的第一個 VSTO 增益集
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的應用程式層級增益集。 不論開啟哪一份活頁簿，您在這類方案中建立的功能都可供應用程式本身使用。  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>建立專案  
+## <a name="create-the-project"></a>建立專案  
   
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>在 Visual Studio 中建立新的 Excel VSTO 增益集專案  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstExcelAddIn** 專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
   
-## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>撰寫程式碼以將文字加入儲存的活頁簿  
+## <a name="write-code-to-add-text-to-the-saved-workbook"></a>撰寫程式碼，將文字加入儲存的活頁簿  
  接著，將程式碼加入 ThisAddIn 程式碼檔。 新程式碼會使用 Excel 物件模型，將未定案文字插入現用工作表的第一列中。 現用工作表是使用者儲存活頁簿時所開啟的工作表。 根據預設，ThisAddIn 程式碼檔包含下列產生的程式碼：  
   
--   `ThisAddIn` 類別的部分定義。 這個類別提供您撰寫程式碼的進入點，並提供對 Excel 物件模型的存取。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。  
+-   `ThisAddIn` 類別的部分定義。 這個類別提供您撰寫程式碼的進入點，並提供對 Excel 物件模型的存取。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。  
   
--   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件處理常式。 當 Excel 載入和卸載 VSTO 增益集時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在 VSTO 增益集載入時將它初始化，以及在增益集卸載時清除它所用的資源。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。  
+-   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件處理常式。 當 Excel 載入和卸載 VSTO 增益集時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在 VSTO 增益集載入時將它初始化，以及在增益集卸載時清除它所用的資源。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。  
   
-#### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>將一行文字加入儲存的活頁簿  
+### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>將一行文字加入儲存的活頁簿  
   
 1.  在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 新的程式碼會定義 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式，該事件是在儲存活頁簿時所引發的。  
   
@@ -92,15 +93,15 @@ ms.lasthandoff: 04/16/2018
   
 -   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Excel.Application> 物件，此物件代表 Excel 目前的執行個體。  
   
--   <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式的 `Wb` 參數。 `Wb` 參數是 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，此物件代表儲存的活頁簿。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/excel-object-model-overview.md)。  
+-   <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式的 `Wb` 參數。 `Wb` 參數是 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，此物件代表儲存的活頁簿。 如需詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
-## <a name="testing-the-project"></a>測試專案  
+## <a name="test-the-project"></a>測試專案  
   
-#### <a name="to-test-the-project"></a>測試專案  
+### <a name="to-test-the-project"></a>測試專案  
   
 1.  按 F5 **Deploying Office Solutions** 建置及執行專案。  
   
-     當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Excel 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱[建置 Office 方案](../vsto/building-office-solutions.md)。  
+     當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Excel 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱 <<c0> [ 建置 Office 方案](../vsto/building-office-solutions.md)。  
   
 2.  在 Excel 中儲存活頁簿。  
   
@@ -110,32 +111,32 @@ ms.lasthandoff: 04/16/2018
   
 4.  關閉 Excel。  
   
-## <a name="cleaning-up-the-project"></a>清除 Project  
+## <a name="clean-up-the-project"></a>清除專案  
  當您完成專案開發時，請從開發電腦移除 VSTO 增益集組件、登錄項目和安全性設定。 否則，每次在開發電腦上開啟 Excel 時，VSTO 增益集將會繼續執行。  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案  
   
 1.  在 Visual Studio 中，按一下 [建置] **Deploying Office Solutions** 功能表上的 [清除方案] 。  
   
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Excel 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  
   
--   您可以透過 VSTO 增益集執行的一般程式設計工作： [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+-   您可以在 VSTO 增益集執行的一般程式設計工作：[程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   Excel VSTO 增益集特有的程式設計工作： [Deploying Office Solutions](../vsto/excel-solutions.md)。  
+-   Excel VSTO 增益集特有的程式設計工作： [Excel 方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 的物件模型： [Deploying Office Solutions](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 物件模型： [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
--   自訂 Excel 的使用者介面 (UI)，例如，藉由在功能區中加入自訂索引標籤或建立您專屬自訂工作窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   自訂 Excel 的使用者介面 (UI)，例如，在功能區中加入自訂索引標籤或建立您自己的自訂工作窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
   
--   建置和偵錯 Excel VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
+-   建置和偵錯適用於 Excel 的 VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
   
--   部署 Excel VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
+-   部署適用於 Excel 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 方案](../vsto/excel-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)   

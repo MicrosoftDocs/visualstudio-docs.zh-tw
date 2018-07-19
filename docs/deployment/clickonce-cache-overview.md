@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 快取概觀 |Microsoft 文件
+title: ClickOnce 快取概觀 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff72cd106f39b4573a0e1d61715dad4f8c65140
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d846ec60f6cf1722584c4ea93c56c29bc7007b89
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564918"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077616"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 快取概觀
-所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，無論它們是安裝在本機，或裝載於線上，會儲存在用戶端電腦[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式*快取*。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取是一系列的本機設定目錄的目前使用者的 [Documents and Settings] 資料夾底下的隱藏目錄。 此快取保存應用程式的所有檔案，包括組件、 組態檔、 應用程式和使用者設定和資料目錄。 快取也會負責將應用程式的資料目錄移轉到最新版本。 如需有關資料移轉的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
+所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，無論它們是在本機安裝或線上，儲存在用戶端電腦[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式*快取*。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取是一系列的隱藏目前使用者的 Documents and Settings 資料夾的本機設定目錄底下的目錄。 此快取保留應用程式的所有檔案，包括組件、 組態檔、 應用程式和使用者設定和資料目錄。 快取也會負責將應用程式的資料目錄移轉到最新版本的。 如需有關資料移轉的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
   
- 藉由提供應用程式儲存區中，單一位置[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]高於管理應用程式的實體安裝從使用者的工作。 快取也有助於隔離應用程式會保留組件和資料檔案的所有應用程式封裝，並從另一個將其不同版本。 例如，當您升級[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，提供版本和其資料資源，以自己的目錄快取中。  
+ 藉由提供單一位置的應用程式存放區，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]高於管理實體的安裝應用程式的使用者的工作。 快取也有助於隔離應用程式是將保留組件和資料檔案的所有應用程式，其不同的版本與彼此分開。 例如，當您升級[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，提供版本和其資料資源，使用自己的快取中的目錄。  
   
-## <a name="cache-storage-quota"></a>快取的儲存配額  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 它們可能會佔據的空間數量會限制大小的配額限制之應用程式裝載於線上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取。 快取大小適用於所有使用者的線上應用程式。一個單一的部分信任的線上應用程式僅限於佔用一半的配額空間。 已安裝應用程式不會受到快取大小，並不會計入快取限制。 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，快取保留目前的版本和先前安裝的版本。  
+## <a name="cache-storage-quota"></a>快取儲存體配額  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 線上裝載的應用程式類型受限於他們可以佔用的空間量限制大小的配額[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取。 快取大小適用於所有使用者的線上應用程式;單一的部分信任的線上應用程式僅限於佔用一半的配額空間。 已安裝的應用程式不會受到快取大小，而且不會計入快取限制。 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，快取會保留目前的版本與先前安裝的版本。  
   
- 根據預設，用戶端電腦有 250 MB 的儲存體的線上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這項限制不計算的資料檔案。 系統管理員可以放大或縮小特定用戶端電腦上的此配額變更登錄機碼，HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB，也就是 DWORD 值表示快取大小，以 kb 為單位。 例如，為了減少快取大小為 50 MB，您會為 51200 變更此值。  
+ 根據預設，用戶端電腦有 250 MB 的儲存體的線上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 資料檔案不會計入這項限制。 系統管理員可以放大或縮小 藉由變更登錄機碼中，特定用戶端電腦上的此配額**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**，這是 DWORD 值，表示快取大小 （kb）。 比方說，為了減少快取大小為 50 MB，您會為 51200 變更此值。  
   
 ## <a name="see-also"></a>另請參閱  
- [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

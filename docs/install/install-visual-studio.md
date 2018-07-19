@@ -19,17 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283441"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
 歡迎使用安裝 Visual Studio 的新方式！ 在這個最新的版本之中，您將能更輕鬆地選取和安裝所需的功能。 我們也已經減少 Visual Studio 的最少使用量，使它能以更快的速度完成安裝，並對系統產生較少的影響。
 
-是否想要深入了解此版本的其他新功能？ 請參閱[版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。
+是否想要深入了解此版本的其他新功能？ 請參閱[版本資訊](/visualstudio/releasenotes/vs2017-relnotes)。
 
 準備要安裝了嗎？ 我們將逐步引導完成安裝。
 
@@ -37,19 +38,19 @@ ms.lasthandoff: 05/22/2018
 
 在您開始安裝 Visual Studio 之前：
 
-1. 檢查[系統需求](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)。 這些需求可以協助確定您的電腦是否支援 Visual Studio 2017。
+1. 檢查[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。 這些需求可以協助確定您的電腦是否支援 Visual Studio 2017。
 2. 套用最新的 Windows 更新。 這些更新可以確保您的電腦已具備最新的安全性更新，以及 Visual Studio 所需的系統元件。
 3. 重新開機。 重新開機可以確保不會有任何擱置的安裝或更新會阻礙 Visual Studio 安裝。
 4. 釋出空間。 透過執行 [磁碟清理] 應用程式之類的方式，將不必要的檔案及應用程式從 %SystemDrive% 移除。
 
-針對並存執行舊版 Visual Studio 及 Visual Studio 2017 的相關問題，請參閱 [Visual Studio 相容性詳細資料](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)。
+針對並存執行舊版 Visual Studio 及 Visual Studio 2017 的相關問題，請參閱 [Visual Studio 相容性詳細資料](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)。
 
 ## <a name="step-2---download-visual-studio"></a>步驟 2：下載 Visual Studio
 
 接下來，請下載 Visual Studio 啟動載入器檔案。 若要這麼做，請按一下下方的按鈕，選取想要的 Visual Studio 2017 版本，按一下 [儲存]，然後按一下 [開啟資料夾]。
 
  > [!div class="button"]
- > [下載 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/22/2018
 
   如果您收到 [使用者帳戶控制] 通知，請按一下 [是]。
 
-2. 我們將會要求您認可 Microsoft [授權條款](https://www.visualstudio.com/license-terms/)和 Microsoft [隱私權聲明](https://go.microsoft.com/fwlink/?LinkID=824704)。 按一下 [ **繼續**]。  
+2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://go.microsoft.com/fwlink/?LinkID=824704)。 按一下 [ **繼續**]。
 
    ![授權條款和隱私權聲明](media/vs2017-privacy-and-license-terms.PNG "Microsoft 授權條款和隱私權聲明")
 
@@ -80,16 +81,16 @@ ms.lasthandoff: 05/22/2018
 
  ![從 Visual Studio 2017 設定對話方塊中選取工作負載](../install/media/install-visual-studio-community.png)
 
-     例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。  
+     例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
 2. 選取您想要的工作負載之後，按一下 [安裝]。
 
     接著會出現狀態畫面，顯示 Visual Studio 的安裝進度。
 
-3. 安裝新的工作負載和元件之後，按一下 [啟動]。  
+3. 安裝新的工作負載和元件之後，按一下 [啟動]。
 
 > [!TIP]
-> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已開啟 Visual Studio，請移至 [工具] > [Get Tools and Features] (取得工具和功能)，以開啟 Visual Studio 安裝程式。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]。 您可以從該處選取想要安裝的工作負載或元件，然後按一下 [修改]。  
+> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已開啟 Visual Studio，請移至 [工具] > [Get Tools and Features] (取得工具和功能)，以開啟 Visual Studio 安裝程式。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]。 您可以從該處選取想要安裝的工作負載或元件，然後按一下 [修改]。
 
 |         |         |
 |---------|---------|
@@ -139,7 +140,7 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="get-support"></a>取得支援
 
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
 

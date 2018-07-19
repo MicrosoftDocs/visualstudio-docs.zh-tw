@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815018"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 以下為範例測試結構：
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ IntelliTest 產生測試案例的方法是，在要執行的測試下選取一�
 
 PUT 是使用 [PexMethod](attribute-glossary.md#pexmethod) 自訂屬性以類似 MSTest (或 NUnit、xUnit) 的方式定義。 PUT 是標記為 [PexClass](attribute-glossary.md#pexclass)，以邏輯方式分組為類別的執行個體方法。 下列範例顯示的簡單 PUT，儲存在 **MyPexTest** 類別：
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 其中 **ReplaceFirstChar** 方法會取代字串的第一個字元：
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 從這項測試中，IntelliTest 會自動為涵蓋許多受測程式碼執行路徑的 PUT [產生輸入](input-generation.md)。 每個涵蓋不同執行路徑的輸入，都會被「序列化」為單元測試：
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 參數化單元測試可以是泛型方法。 在此情況下，使用者必須使用 [PexGenericArguments](attribute-glossary.md#pexgenericarguments) 來指定具現化方法所用的類型。
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest 會提供許多驗證屬性，幫助將例外狀況分級為預期�
 
 預期的例外狀況會產生有 **ExpectedException(typeof(*xxx*))** 等適當註釋的負面測試案例，而未預期的例外狀況則會產生失敗的測試案例。
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ void SomeTest() {...}
 
 IntelliTest 只要看得見內部類型，就可以「測試」它們。 為使 Intellitest 看見這些類型，Visual Studio IntelliTest 精靈會將下列屬性新增至您的產品或測試專案：
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ IntelliTest 只要看得見內部類型，就可以「測試」它們。 為使 
 
 判斷提示是一般單元測試架構中眾所周知的概念，因此 IntelliTest 已經「了解」每個受支援測試架構所提供的內建 **Assert** 類別。 不過，大部分的架構不提供 **Assume** 類別。 在此情況下，IntelliTest 提供 [PexAssume](static-helper-classes.md#pexassume) 類別。 如果您不想要使用現成的測試架構，IntelliTest 還有 [PexAssert](static-helper-classes.md#pexassert) 類別。
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 尤其是，非 null 假設可以編碼為自訂屬性：
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ IntelliTest 是測試架構整合的一部分，支援偵測與執行設定和�
 
 **範例**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

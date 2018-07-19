@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574681"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303305"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
@@ -39,20 +39,20 @@ ms.locfileid: "31574681"
   
  當您將 **/verbosity** 設為 `detailed` 時，建置程序可能會變慢，而當您將 **/verbosity** 設為 `diagnostic` 時，甚至會變得更慢。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>將建置記錄儲存至檔案  
  您可以使用 **/fileLogger** (**fl**) 參數，將組建資料儲存至檔案。 下列範例會將組建資料儲存至名為 `msbuild.log` 的檔案。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  在下列範例中，會將記錄檔命名為 `MyProjectOutput.log`，並將記錄檔輸出的詳細資訊設為 `diagnostic`。 您可以使用 **/filelogparameters** (`flp`) 參數，來指定這兩個設定。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  適用於檔案 2 和 3 的 **/Filelogparameters** (`flp`) 參數會指定每個檔案的名稱，以及要在每個檔案中包含的項目。 由於未指定檔案 1 的名稱，因此會使用 `msbuild1.log` 的預設名稱。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 在下列範例中，會建立具有名稱 `binarylogfilename` 的二進位記錄檔。
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668315"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用負載測試分析器在負載測試中檢視網頁回應時間
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  每一個頁面的資料會顯示在方格中。 通常會顯示下列資料行。
 
-    |||
+    |資料行標題|描述|
     |-|-|
     |**頁面**|網頁的名稱。|
     |**案例**|情節的名稱。 如果您的 Web 效能測試中有多個情節，此項就很重要。|
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
     |**最大值**|頁面回應時間的最大值。<br /><br /> 根據預設並未收集這個資料。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
     |**標準差**|根據預設，標準差資料並未收集。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
     |**頁面時間**|對網頁發出的所有要求的平均回應時間。|
-    |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：**只有在定義了 Web 效能測試之要求的目標時，才會顯示「頁面時間目標」。|
+    |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：** 只有在定義了 Web 效能測試之要求的目標時，才會顯示「頁面時間目標」。|
     |**% 符合目標**|對符合回應時間目標的網頁發出的要求百分比。|
 
  如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。

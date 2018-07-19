@@ -1,5 +1,5 @@
 ---
-title: 使用舊版 API 存取文字層 |Microsoft 文件
+title: 使用舊版 API 存取文字圖層 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21b31940f1e1ebca767b9d3f0cf5ab802181bda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098663"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078663"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
-文字層通常會封裝文字配置的某些層面。 比方說，「 函式-一次 「 圖層會隱藏的文字之前和之後包含插入號 （文字插入點） 的函式。  
+# <a name="access-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
+文字層通常會封裝在某種程度的文字版面配置。 比方說，「 函式-一次 「 圖層會隱藏文字之前和之後包含文字插入點 （caret) 的函式。  
   
- 緩衝區與檢視中，位於文字層，而且會修改此檢視會看到緩衝區的內容的方式。  
+ 文字層位於緩衝區和檢視之間，它會修改此檢視會看到緩衝區的內容的方式。  
   
 ## <a name="text-layer-information"></a>文字層資訊  
  下列清單描述文字圖層中的運作方式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   文字層中的文字可以裝飾的語法著色和標記。  
+-   使用語法著色和標記，可以裝飾文字圖層中的文字。  
   
--   您目前無法實作您自己的圖層。  
+-   您目前無法實作您自己的層級。  
   
--   圖層會公開<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，其衍生自<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>。 文字緩衝區本身也會實作為圖層，可讓檢視，以多型方式處理基礎的圖層中。  
+-   圖層會公開<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，其係衍生自<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>。 文字緩衝區本身也會實作成圖層，可讓多型方式處理基礎層的檢視。  
   
--   檢視和緩衝區之間，可能位於任何數目的層。 每個圖層只會處理它下, 一層，而檢視處理大部分的最高的層級。 （檢視沒有緩衝區的一些資訊。）  
+-   檢視與緩衝區之間，可能位於任何數目的層。 每個圖層只會處理它下, 一層，而檢視處理大部分的最上層的圖層。 （檢視沒有緩衝區的一些資訊。）  
   
--   圖層可能會影響其下方的圖層。 它不會影響超出源自標準事件上面的圖層。  
+-   圖層可能會影響其下方的圖層。 它不會影響其上方的圖層，超出原始標準事件。  
   
--   在編輯器中，隱藏的文字、 綜合的文字和自動換行會實作為圖層。 您可以實作隱藏和綜合文字而不直接與圖層的互動。 如需詳細資訊，請參閱[舊版語言服務中的大綱](../extensibility/internals/outlining-in-a-legacy-language-service.md)和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>。  
+-   在編輯器中，隱藏的文字、 綜合的文字和自動換行會實作為圖層。 您可以實作隱藏與綜合文字而不需要直接互動的層級。 如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的大綱](../extensibility/internals/outlining-in-a-legacy-language-service.md)和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>。  
   
--   每個文字圖層的透過公開自己區域座標系統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>介面。 行換行圖層，例如，可能包含兩行，而基礎文字緩衝區可能包含只有一行。  
+-   每個文字圖層有它自己透過公開的區域座標系統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>介面。 換行的線條圖層，例如，可能包含兩行而基礎的文字緩衝區可能會包含只有一行。  
   
--   檢視與外界溝通的圖層透過<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>介面。 您可以使用此介面來協調檢視緩衝區座標的座標。  
+-   檢視與外界溝通的圖層透過<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>介面。 您可以使用這個介面來協調緩衝區座標檢視座標表示。  
   
--   任何圖層例如綜合文字層源自文字必須提供本機實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>。  
+-   任何圖層等來源文字的綜合文字圖層必須提供本機實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>。  
   
--   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，文字層必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>引發的事件和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>介面。  
+-   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，文字圖層必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>引發的事件和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>介面。  
   
 ## <a name="see-also"></a>另請參閱  
- [自訂編輯器中著色的語法](../extensibility/syntax-coloring-in-custom-editors.md)   
- [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [使用舊版 API 自訂編輯器控制項和功能表](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+ [自訂編輯器中的語法著色](../extensibility/syntax-coloring-in-custom-editors.md)   
+ [在舊版的 API 中使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [使用舊版 API 自訂編輯器控制項及功能表](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

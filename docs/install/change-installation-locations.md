@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995776"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282056"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>變更 Visual Studio 2017 中的安裝位置
 
@@ -54,7 +54,7 @@ ms.locfileid: "33995776"
 
 ## <a name="get-support"></a>取得支援
 
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面的說明。 您也可以連絡我們，透過[即時聊天](https://www.visualstudio.com/vs/support/#talktous) \(僅限英文\) 取得安裝說明。如需詳細資訊，請參閱 [Visual Studio「與我們連絡」頁面](https://www.visualstudio.com/vs/support/#talktous)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面的說明。 您也可以連絡我們，透過[即時聊天](https://visualstudio.microsoft.com/vs/support/#talktous) \(僅限英文\) 取得安裝說明。如需詳細資訊，請參閱 [Visual Studio「與我們連絡」頁面](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 以下是一些支援選項：
 

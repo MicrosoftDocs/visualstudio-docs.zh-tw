@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 從 Visual C# 專案中的 VBA 呼叫程式碼 |Microsoft 文件
+title: 逐步解說： 從 VBA 呼叫程式碼，在 Visual C# 專案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781685"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual C# 專案中呼叫 VBA 的程式碼
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說： 從 VBA 呼叫程式碼，在 Visual C# 專案
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,21 +60,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>建立含有 VBA 程式碼的活頁簿  
+## <a name="create-a-workbook-that-contains-vba-code"></a>建立含有 VBA 程式碼的活頁簿  
  第一個步驟是建立已啟用巨集的活頁簿，該活頁簿包含簡單 VBA 巨集。 活頁簿必須已含有 VBA 程式碼，您才能將自訂中的程式碼公開至 VBA。 否則，Visual Studio 無法修改 VBA 專案，讓 VBA 程式碼能夠呼叫自訂組件。  
   
  如果您已經有包含想使用之 VBA 程式碼的活頁簿，則可略過這個步驟。  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>建立含有 VBA 程式碼的活頁簿  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>建立含有 VBA 程式碼的活頁簿  
   
 1.  啟動 Excel。  
   
-2.  儲存使用中文件做為**excel 啟用巨集的活頁簿 (\*.xlsm)**名稱**WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。  
+2.  儲存為作用中的文件**excel 啟用巨集的活頁簿 (\*.xlsm)** 同名**WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。  
   
 3.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 [程式碼]  群組中，按一下 [Visual Basic] 。  
   
@@ -85,17 +86,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  將下列 VBA 程式碼加入程式碼檔案。 此程式碼會定義毫無作用的簡單函式。 這個函式的唯一目的在於確保 VBA 專案存在於活頁簿中。 本逐步解說中的後續步驟需要用到此函式。  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  儲存文件並結束 Excel。  
   
-## <a name="creating-the-project"></a>建立專案  
+## <a name="create-the-project"></a>建立專案  
  您現在即可建立 Excel 的文件層級專案，而該專案會使用您先前建立且已啟用巨集的活頁簿。  
   
-#### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會在設計工具中開啟 **WorkbookWithVBA** 活頁簿，並將 [CallingCodeFromVBA]  專案加入 [方案總管] 。  
   
-## <a name="trusting-the-location-of-the-workbook"></a>信任活頁簿的位置  
+## <a name="trust-the-location-of-the-workbook"></a>信任活頁簿的位置  
  您必須先信任活頁簿中要執行的 VBA，才能將方案中的程式碼公開至活頁簿中的 VBA 程式碼。 有幾個方式可做到這點。 在本逐步解說中，您會藉由在 Excel 的 [信任中心]  中信任活頁簿的位置來完成這項工作。  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>信任活頁簿的位置  
+### <a name="to-trust-the-location-of-the-workbook"></a>信任活頁簿的位置  
   
 1.  啟動 Excel。  
   
@@ -150,10 +151,10 @@ ms.lasthandoff: 04/16/2018
   
 13. 結束 **Excel**。  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>將方法加入 Sheet1 類別  
+## <a name="add-a-method-to-the-sheet1-class"></a>將方法加入 Sheet1 類別  
  目前已設定 VBA 專案，請將公用方法加入您可以從 VBA 程式碼呼叫的 `Sheet1` 主項目類別。  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>將方法加入 Sheet1 類別  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>將方法加入 Sheet1 類別  
   
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 [Sheet1.cs] ，然後按一下 [檢視程式碼] 。  
   
@@ -171,10 +172,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>擷取 Sheet1 類別的介面  
+## <a name="extract-an-interface-for-the-sheet1-class"></a>擷取 Sheet1 類別的介面  
  您必須先建立用以定義此方法的公用介面，且必須將此介面公開至 COM，才能將 `CreateVstoNamedRange` 方法公開至 VBA 程式碼。  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>擷取 Sheet1 類別的介面  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>擷取 Sheet1 類別的介面  
   
 1.  在 **Sheet1.cs** 程式碼檔案中，按一下 `Sheet1` 類別中的任意處。  
   
@@ -192,10 +193,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  建置專案。  
   
-## <a name="exposing-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼  
+## <a name="expose-the-method-to-vba-code"></a>方法公開至 VBA 程式碼  
  若要將 `CreateVstoNamedRange` 方法公開至活頁簿中的 VBA 程式碼，請將 **主項目的** ReferenceAssemblyFromVbaProject `Sheet1` 屬性設定為 [True] 。  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼  
+### <a name="to-expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼  
   
 1.  按兩下 [方案總管] 中的 **Sheet1.cs**。  
   
@@ -207,15 +208,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  建置專案。  
   
-## <a name="calling-the-method-from-vba-code"></a>從 VBA 程式碼呼叫方法  
+## <a name="call-the-method-from-vba-code"></a>從 VBA 程式碼呼叫方法  
  您現在可以從活頁簿中的 VBA 程式碼呼叫 `CreateVstoNamedRange` 方法。  
   
 > [!NOTE]  
->  在這個逐步解說中，您會在偵錯專案時將 VBA 程式碼加入活頁簿。 您加入此文件的 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。 如果您要儲存 VBA 程式碼，可以將它複製到專案資料夾的文件中。 如需詳細資訊，請參閱 [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)。  
+>  在這個逐步解說中，您會在偵錯專案時將 VBA 程式碼加入活頁簿。 您加入此文件的 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。 如果您要儲存 VBA 程式碼，可以將它複製到專案資料夾的文件中。 如需詳細資訊，請參閱 <<c0> [ 合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
   
-#### <a name="to-call-the-method-from-vba-code"></a>從 VBA 程式碼呼叫方法  
+### <a name="to-call-the-method-from-vba-code"></a>從 VBA 程式碼呼叫方法  
   
-1.  請按 F5 執行您的專案。  
+1.  按下**F5**執行您的專案。  
   
 2.  在 [開發人員]  索引標籤上的 [程式碼]  群組中，按一下 [Visual Basic] 。  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 04/16/2018
   
      這段程式碼會呼叫自訂組件中的 `CreateTable` 方法。 巨集會使用全域 `GetManagedClass` 方法來存取此方法，以存取您公開至 VBA 程式碼的 `Sheet1` 主項目類別。 當您稍早在本逐步解說中設定 `GetManagedClass` ReferenceAssemblyFromVbaProject **屬性時，便已自動產生** 方法。  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim VSTOSheet1 As CallingCodeFromVBA.Sheet1  
         Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-5.  按 F5。  
+5.  請按 **F5**。  
   
 6.  在開啟的活頁簿中，按一下 [Sheet1]  上的儲存格 [A1] 。 確認訊息方塊是否出現。  
   
@@ -244,14 +245,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>後續步驟  
  您可以在這些主題中，進一步了解如何從 VBA 呼叫 Office 方案中的程式碼：  
   
--   從 VBA 呼叫 Visual Basic 自訂之主項目中的程式碼。 此處理序與 Visual C# 處理序不同。 如需詳細資訊，請參閱[逐步解說： 從 VBA 在 Visual Basic 專案中呼叫的程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。  
+-   從 VBA 呼叫 Visual Basic 自訂之主項目中的程式碼。 此處理序與 Visual C# 處理序不同。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案中](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。  
   
--   從 VBA 呼叫 VSTO 增益集中的程式碼。 如需詳細資訊，請參閱[逐步解說： 在 VSTO 增益集從 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+-   從 VBA 呼叫 VSTO 增益集中的程式碼。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
- [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
+ [如何： 公開程式碼給 Visual Basic 專案中的 VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

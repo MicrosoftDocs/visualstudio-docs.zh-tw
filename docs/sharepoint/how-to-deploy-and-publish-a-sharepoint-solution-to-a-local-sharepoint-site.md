@@ -1,5 +1,5 @@
 ---
-title: 如何： 部署和發行至本機 SharePoint 網站的 SharePoint 方案 |Microsoft 文件
+title: 如何： 部署並發佈至本機 SharePoint 網站的 SharePoint 方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,37 +18,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c4f7e347f9cea3a73ab5326b42720a1b2c33529
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e288b5a284ca4155cf70f4458b5b490ca4289cbe
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118743"
 ---
-# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：將 SharePoint 方案部署和發行至本機 SharePoint 網站
-  您可以部署或發行至本機 SharePoint 伺服器的 SharePoint 方案，在開發電腦上。 部署程序將.wsp 檔案複製到 SharePoint 伺服器、 安裝方案，然後啟動 功能。 在發佈程序只會將.wsp 檔案複製到 SharePoint 伺服器，並將它安裝。 您必須以手動方式啟用它來啟用 SharePoint 中。  
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何： 部署並發佈至本機 SharePoint 網站的 SharePoint 方案
+  您可以部署或發行至本機 SharePoint 伺服器的 SharePoint 解決方案，在您的開發電腦上。 部署程序副本 *.wsp*檔案至 SharePoint 伺服器，會安裝方案，，，然後啟動功能。 發佈處理只能複製 *.wsp*檔案至 SharePoint 伺服器並將其安裝。 您必須以手動方式啟動它在 SharePoint 中啟用它。  
   
-## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>若要將 SharePoint 方案部署到本機 SharePoint 伺服器  
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>若要將 SharePoint 方案部署至本機 SharePoint 伺服器  
   
-1.  在**方案總管 中**，選擇您想要部署的專案。  
+1.  在 [**方案總管] 中**，選擇您想要部署的專案。  
   
 2.  在功能表列上選擇 **建置**，**部署方案**。  
   
-     建立並在本機 SharePoint 伺服器上安裝.wsp 檔案。 此外，就會啟動功能。  
+     *.Wsp*建立檔並將其安裝在本機 SharePoint 伺服器上。 此外，就會啟動功能。  
   
-## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>若要發行至本機 SharePoint 伺服器的 SharePoint 方案  
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>若要將 SharePoint 方案發行至本機 SharePoint 伺服器  
   
-1.  在**方案總管 中**，開啟您想要發行，然後選擇 SharePoint 專案的捷徑功能表**發行**。  
+1.  在 **方案總管**，開啟您想要發佈，然後選擇 SharePoint 專案的捷徑功能表**發佈**。  
   
-2.  在**發行**對話方塊方塊中，選擇**發行至檔案系統**選項按鈕。  
+2.  在 **發佈**對話方塊方塊中，選擇**發行至檔案系統**選項按鈕。  
   
-3.  在**目標位置** 文字方塊中，輸入本機路徑，然後選擇**發行** 按鈕。  
+3.  在 [**目標位置**文字方塊中，輸入本機路徑，然後選擇**發佈**] 按鈕。  
   
-     發行進度出現在 Visual Studio**輸出**視窗。 處理程序完成時，方案 (.wsp) 檔案被安裝在本機 SharePoint 伺服器上。 不過，它必須仍然啟用，才能在 SharePoint 中使用。 如果方案檔已經存在，就會發生錯誤，並詢問您是否要覆寫現有檔案。 在升級封裝的資訊，請參閱 > 一節，升級中的遠端封裝[如何： 發行，並在遠端伺服器上升級 SharePoint 方案部署](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。  
+     發行進度出現在 Visual Studio**輸出**視窗。 當處理程序完成時，方案 (*.wsp*) 檔案會安裝在本機 SharePoint 伺服器上。 不過，它仍舊需要啟動來在 SharePoint 中。 如果已經存在方案檔，發生錯誤，並詢問您是否要覆寫現有的檔案。 在升級封裝的資訊，請參閱升級中的遠端封裝區段[如何： 部署、 發行和升級 SharePoint 方案，在遠端伺服器上的](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [如何： 部署、 發行和升級遠端伺服器上的 SharePoint 方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [如何：使用套件設計工具在套件中新增與移除功能和項目](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [如何： 新增和移除功能和項目加入封裝時，使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   

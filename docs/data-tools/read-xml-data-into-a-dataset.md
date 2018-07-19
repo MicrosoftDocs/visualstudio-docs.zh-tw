@@ -22,58 +22,45 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745932"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174771"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
-ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可以建立 Windows 應用程式，可將 XML 資料載入資料集。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。
 
- 這個逐步解說包含五個主要步驟：
-
-1.  建立新的專案
-
-2.  建立 XML 檔案讀取至資料集
-
-3.  建立使用者介面
-
-4.  建立資料集、 讀取 XML 檔案，以及顯示在<xref:System.Windows.Forms.DataGridView>控制項
-
-5.  加入程式碼以顯示 XML 結構描述中的 XML 檔案為基礎<xref:System.Windows.Forms.TextBox>控制項
+ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您可以建立 XML 資料載入資料集的 Windows 應用程式。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。
 
 > [!NOTE]
->  對話方塊與功能表命令可能會與 [說明] 中所述，根據您目前使用的設定或版本不同，看您正在使用它。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="create-a-new-project"></a>建立新專案
- 在此步驟中，您可以建立包含此逐步解說的 Visual Basic 或 Visual C# 專案。
 
-#### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案
+在此步驟中，您可以建立 Visual Basic 或 Visual C# 專案。
 
-1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
+2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
 
-3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
+3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
-4. 將專案命名**ReadingXML**，然後選擇 **確定**。
+4. 將專案命名為**ReadingXML**，然後選擇**確定**。
 
-     **ReadingXML**建立專案並將其加入**方案總管 中**。
+   **ReadingXML**建立專案並將其加入至**方案總管 中**。
 
-## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>產生 XML 檔案讀取至資料集
- 這個逐步解說是針對 XML 資料讀入資料集，因為提供的 XML 檔案的內容。
+## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>產生 XML 檔案讀入資料集
 
-#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>若要建立的 XML 檔案，將會讀取至資料集
+本逐步解說著重於 XML 資料讀入資料集，因為提供的 XML 檔案的內容。
 
-1.  在**專案**功能表上，選取**加入新項目**。
+1.  在 **專案**功能表上，選取**加入新項目**。
 
-2.  選取**XML 檔案**，將檔案命名`authors.xml`，然後選取**新增**。
+2.  選取  **XML 檔案**，將檔案命名**authors.xml**，然後選取**新增**。
 
-     XML 檔案載入至設計工具，並可供編輯。
+   XML 檔案載入設計工具，並且可供編輯。
 
-3.  將下列程式碼貼到編輯器 中的 XML 宣告：
+3.  貼上下列 XML 資料到編輯器中的 XML 宣告如下：
 
     ```xml
     <Authors_Table>
@@ -135,22 +122,23 @@ ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可
     </Authors_Table>
     ```
 
-4.  在**檔案**功能表上，選取**儲存 authors.xml**。
+4.  在 **檔案**功能表上，選取**儲存 authors.xml**。
 
 ## <a name="create-the-user-interface"></a>建立使用者介面
- 此應用程式的使用者介面是由下列項目所組成：
+
+此應用程式的使用者介面是由下列項目所組成：
 
 -   A<xref:System.Windows.Forms.DataGridView>顯示做為資料的 XML 檔案的內容控制項。
 
--   A<xref:System.Windows.Forms.TextBox>顯示為 XML 檔案的 XML 結構描述的控制項。
+-   A<xref:System.Windows.Forms.TextBox>顯示 XML 結構描述的 XML 檔案的控制項。
 
 -   兩個<xref:System.Windows.Forms.Button>控制項。
 
-    -   其中一個按鈕讀入資料集的 XML 檔案，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。
+    -   一個按鈕的 XML 檔案讀入資料集，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。
 
-    -   第二個按鈕會擷取結構描述集中的資料，以及透過<xref:System.IO.StringWriter>它顯示在<xref:System.Windows.Forms.TextBox>控制項。
+    -   第二個按鈕會在從資料集，以及透過將結構描述擷取<xref:System.IO.StringWriter>會顯示在<xref:System.Windows.Forms.TextBox>控制項。
 
-#### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單
+### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單
 
 1.  開啟`Form1`設計 檢視中。
 
@@ -174,77 +162,74 @@ ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可
     ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>建立接收 XML 資料的資料集
- 在此步驟中，您會建立名為新的資料集`authors`。 如需有關資料集的詳細資訊，請參閱[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
-#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>若要建立新的資料集，接收 XML 資料
+在此步驟中，您會建立新的資料集，名為`authors`。 如需有關資料集的詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
-1.  在**方案總管 中**，選取的原始程式檔**Form1**，然後選取**檢視表設計工具**按鈕上**方案總管 中**工具列。
+1.  中**方案總管**，選取的原始程式檔**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
 
-2.  從[工具箱、 資料索引標籤](../ide/reference/toolbox-data-tab.md)，拖曳**資料集**到**Form1**。
+2.  從[資料索引標籤、 工具箱](../ide/reference/toolbox-data-tab.md)，拖曳**資料集**拖曳至**Form1**。
 
-3.  在**加入資料集**對話方塊中，選取**不具類型資料集**，然後選取**確定**。
+3.  在 **加入資料集**對話方塊中，選取**不具類型資料集**，然後選取**確定**。
 
      **DataSet1**已加入至元件匣。
 
-4.  在**屬性**視窗中，將**名稱**和<xref:System.Data.DataSet.DataSetName%2A>屬性`AuthorsDataSet`。
+4.  在 **屬性**視窗中，將**名稱**並<xref:System.Data.DataSet.DataSetName%2A>屬性`AuthorsDataSet`。
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>建立 XML 檔案讀入資料集的事件處理常式
- **讀取 XML**按鈕會將 XML 檔案讀入資料集。 它接著會設定屬性<xref:System.Windows.Forms.DataGridView>繫結至資料集的控制項。
 
-#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>若要將程式碼加入至 ReadXmlButton_Click 事件處理常式
+**讀取 XML**按鈕會將 XML 檔案讀入資料集。 它接著會根據設定的屬性<xref:System.Windows.Forms.DataGridView>繫結至資料集的控制項。
 
-1.  在**方案總管 中**，選取**Form1**，然後選取**檢視表設計工具**按鈕上**方案總管 中**工具列。
+1.  中**方案總管**，選取**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
 
-2.  選取**讀取 XML**  按鈕。
+2.  選取 [**讀取 XML** ] 按鈕。
 
      **程式碼編輯器**會在開啟`ReadXmlButton_Click`事件處理常式。
 
-3.  下列程式碼輸入到`ReadXmlButton_Click`事件處理常式：
+3.  輸入下列程式碼插入`ReadXmlButton_Click`事件處理常式：
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  在`ReadXMLButton_Click`事件處理常式程式碼，變更`filepath =`正確路徑的項目。
+4.  在 `ReadXMLButton_Click`事件處理常式程式碼，變更`filepath =`正確路徑的項目。
 
-## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>建立事件處理常式，在文字方塊中顯示結構描述
- **顯示結構描述** 按鈕會建立<xref:System.IO.StringWriter>物件，會填入結構描述，並顯示在<xref:System.Windows.Forms.TextBox>控制項。
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>建立事件處理常式，若要在文字方塊中顯示的結構描述
 
-#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>若要將程式碼加入至 ShowSchemaButton_Click 事件處理常式
+**顯示的結構描述** 按鈕會建立<xref:System.IO.StringWriter>物件，會填入結構描述，並會顯示在<xref:System.Windows.Forms.TextBox>控制項。
 
-1.  在**方案總管 中**，選取**Form1**，然後選取**檢視表設計工具** 按鈕。
+1.  在 **方案總管 中**，選取**Form1**，然後選取**檢視表設計工具** 按鈕。
 
-2.  選取**顯示結構描述** 按鈕。
+2.  選取 [**顯示的結構描述**] 按鈕。
 
      **程式碼編輯器**會在開啟`ShowSchemaButton_Click`事件處理常式。
 
-3.  下列程式碼輸入到`ShowSchemaButton_Click`事件處理常式。
+3.  貼上下列程式碼插入`ShowSchemaButton_Click`事件處理常式。
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
 
 ## <a name="test-the-form"></a>測試表單
- 您現在可以測試表單，以確定其如預期般運作。
 
-#### <a name="to-test-the-form"></a>若要測試表單
+您現在可以測試表單，以確定它如預期般運作。
 
-1.  選取**F5**執行應用程式。
+1.  選取  **F5**執行應用程式。
 
-2.  選取**讀取 XML**  按鈕。
+2.  選取 [**讀取 XML** ] 按鈕。
 
-     DataGridView 中顯示的 XML 檔案的內容。
+     DataGridView 中顯示 XML 檔案的內容。
 
-3.  選取**顯示結構描述** 按鈕。
+3.  選取 [**顯示的結構描述**] 按鈕。
 
-     在文字方塊中顯示的 XML 檔案的 XML 結構描述。
+     文字方塊會顯示 XML 檔案的 XML 結構描述。
 
 ## <a name="next-steps"></a>後續步驟
- 本逐步解說教導 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：
+
+本逐步解說會說明 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：
 
 -   編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱<xref:System.Data.DataSet.WriteXml%2A>。
 
--   編輯資料集中的資料，並寫出至資料庫。 如需詳細資訊，請參閱[儲存資料](../data-tools/saving-data.md)。
+-   編輯資料集中的資料，並寫出至資料庫。
 
 ## <a name="see-also"></a>另請參閱
 
-- [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
+- [使用 Visual Studio 存取資料](../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

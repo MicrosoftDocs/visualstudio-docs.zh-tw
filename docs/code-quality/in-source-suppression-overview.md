@@ -16,30 +16,30 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aec11e54547f05e3ac7babae29e0c95737bc725e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924414"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117780"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
-通常會很有用，表示警告不適用。 這表示此程式碼的檢閱，而且可以隱藏警告的小組成員。 來源隱藏項目 (ISS) 使用<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性來隱藏的警告。 屬性可以放接近產生警告的程式碼片段。 您可以加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性設定為原始程式檔中，輸入您可以使用捷徑功能表中的警告或**錯誤清單**自動將它加入。
+它通常是用於指出警告不適用。 這表示小組成員檢閱的程式碼，而且可以隱藏警告。 來源隱藏項目 (ISS) 使用<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性隱藏警告。 屬性可以放接近產生警告的程式碼片段。 您可以加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性至原始程式檔中輸入，或者您可以使用捷徑功能表上的警告中**錯誤清單**自動將它加入。
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性才隨附於您的 managed 程式碼組件的 IL 中繼資料的 conditional 屬性在編譯時期定義 CODE_ANALYSIS 編譯符號。
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才是隨附於您的 managed 程式碼組件的 IL 中繼資料的條件式屬性。
 
-在 C + + CLI 使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的將屬性。
-
-> [!NOTE]
-> 您不應該使用原始檔中隱藏項目上的發行組建，以避免不小心傳送的原始檔中隱藏項目中繼資料。 此外，因為在來源隱藏的處理成本，而可能降低應用程式的效能。
+在 C + + /cli CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
 
 > [!NOTE]
-> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨著產生大量的程式碼分析警告。 如果您不可以修正警告，並想要暫時關閉程式碼分析，請開啟專案屬性頁 (**專案** > ***專案*屬性...**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同的小型規則集執行程式碼。 請記得在當您準備好修正警告的程式碼分析。
+> 您不應該在發行組建中，使用在原始程式檔的隱藏項目，以避免不小心傳送來源在隱藏項目中繼資料。 此外，在原始程式檔隱藏項目處理成本，因為您的應用程式的效能可能會降低。
+
+> [!NOTE]
+> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨與程式碼分析警告的數量非常龐大。 如果您尚未準備好，修正警告，而且想要暫時關閉程式碼分析，開啟專案屬性頁 (**專案** > **\<專案 > 屬性**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同且較小的規則集至對程式碼執行。 請記住要關閉重新開啟當您準備好，修正警告的程式碼分析。
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
 
-當您選擇**抑制**從程式碼分析警告中的內容或以滑鼠右鍵按一下功能表**錯誤清單**、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性加入您的程式碼中，或專案的全域隱藏項目檔案。
+當您選擇**抑制**從操作功能表或以滑鼠右鍵按一下功能表中的程式碼分析警告**錯誤清單**、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性會加入程式碼中，或專案的全域隱藏項目檔案。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性具有下列格式：
 
@@ -57,15 +57,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 屬性的屬性包括：
 
-- **規則類別**-定義此規則的類別目錄。 如需程式碼分析規則類別的詳細資訊，請參閱[Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。
+- **規則類別**-規則定義所在的類別。 如需程式碼分析規則類別的詳細資訊，請參閱[Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。
 
-- **Rule Id** -規則的識別碼。 支援包括同時短期或長期的規則識別項名稱。 簡短名稱是 CAXXXX;完整名稱是 CAXXXX:FriendlyTypeName。
+- **規則 Id** -規則的識別碼。 支援包括同時短期和長期的規則識別項的名稱。 簡短名稱是 CAXXXX;CAXXXX:FriendlyTypeName 長的名稱。
 
-- **對齊**-用來記錄原因隱藏訊息的文字。
+- **理由**-用來記錄原因隱藏訊息的文字。
 
-- **訊息識別碼**-針對每則訊息有問題的唯一識別碼。
+- **訊息識別碼**-每個訊息發生問題的唯一識別碼。
 
-- **範圍**位在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：
+- **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：
 
     - Module
 
@@ -81,25 +81,25 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用量
 
-程式碼分析警告會隱藏層級的<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性會套用。 例如，屬性可以套用在組件、 模組、 類型、 成員或參數的層級。 目的是緊密結合的程式碼的隱藏項目資訊發生違規。
+程式碼分析警告會隱藏的層級<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性會套用。 例如，屬性可以套用在組件、 模組、 類型、 成員或參數層級。 的目的是緊密結合的程式碼的隱藏項目資訊發生違規的位置。
 
-一般格式的隱藏項目包括規則分類和規則的識別碼，其中包含規則名稱的選擇性人們可讀取表示。 例如: 
+一般格式的隱藏項目包含規則的類別和規則識別項，其中包含規則名稱的選擇性人們可讀取表示。 例如: 
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果有嚴格的效能考量，在原始程式檔隱藏項目中繼資料將降到最低，可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成充分唯一的規則識別項。 例如: 
+如果有最小化在原始程式檔隱藏項目中繼資料的嚴格的效能考量，就可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成夠唯一的規則識別項。 例如: 
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
-為了可維護性，不建議省略規則名稱。
+基於可維護性，不建議省略之規則的名稱。
 
-## <a name="suppress-selective-violations-within-a-method-body"></a>隱藏方法主體中的選擇性違規
+## <a name="suppress-selective-violations-within-a-method-body"></a>隱藏在方法主體中的選擇性違規
 
-隱藏項目屬性可以套用至方法，但不可以內嵌在方法主體。 這表示會抑制所有特定規則的違規，如果您將加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性加入方法。
+隱藏項目屬性可以套用至方法，但不能在方法主體中內嵌。 這表示會隱藏所有違規的特定規則，如果您新增<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性加入方法。
 
-在某些情況下，您可能想要隱藏的違規情形，例如特定執行個體，以便未來的程式碼不會自動受程式碼分析規則。 某些程式碼分析規則可讓您利用`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 一般情況下，傳統規則違規 （本機變數或參數） 的特定符號尊重`MessageId`屬性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)是這類規則的範例。 不過，傳統規則違規的可執行程式碼 （非符號） 不受影響`MessageId`屬性。 此外，.NET 編譯器平台 ("Roslyn") 分析器不受影響`MessageId`屬性。
+在某些情況下，您可能想要隱藏的違規情形，例如特定執行個體，以便未來的程式碼不會自動從程式碼分析規則中免除。 某些程式碼分析規則可讓您可以使用`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 一般情況下，傳統規則違規 （本機變數或參數） 的特定符號尊重`MessageId`屬性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)舉例說明這樣的規則。 不過，傳統的規則，可執行程式碼 （非符號） 的違規不遵守`MessageId`屬性。 此外，.NET 編譯器平台 ("Roslyn") 分析器不遵守`MessageId`屬性。
 
-若要隱藏特定符號規則的違規情形，指定的符號名稱`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 下列範例示範具有兩個違規的程式碼[CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;另一個用於`name`變數，另一個用於`age`變數。 僅違反`age`符號會隱藏。
+若要隱藏特定符號規則的違規情形，指定的符號名稱`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 下列範例示範具有兩個違規的程式碼[CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;另一個用於`name`變數，另一個用於`age`變數。 只有違反`age`符號會隱藏。
 
 ```vb
 Public Class Animal
@@ -136,25 +136,25 @@ public class Animal
 
 ## <a name="generated-code"></a>產生的程式碼
 
-Managed 程式碼編譯器和某些協力廠商工具產生程式碼，以便快速的程式碼開發。 出現在原始程式檔的編譯器所產生程式碼通常會標示`GeneratedCodeAttribute`屬性。
+Managed 程式碼編譯器和某些協力廠商工具產生程式碼，以便快速的程式碼開發。 編譯器所產生的程式碼會出現在原始程式檔，通常會標示`GeneratedCodeAttribute`屬性。
 
-您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[如何： 隱藏產生的程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
+您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[如何： 隱藏的警告，產生的程式碼](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
 
 > [!NOTE]
-> 程式碼分析會略過`GeneratedCodeAttribute`套用至整個組件或單一參數時。
+> 程式碼分析忽略`GeneratedCodeAttribute`套用至整個組件或單一參數時。
 
 ## <a name="global-level-suppressions"></a>全域層級隱藏項目
 
-Managed 程式碼分析工具會檢查`SuppressMessage`會套用到組件、 模組、 類型、 成員或參數的層級的屬性。 它也會引發對資源和命名空間的違規。 這些違規必須在全域層級套用，並為範圍並為目標。 例如，下列訊息會隱藏命名空間違規：
+Managed 程式碼分析工具會檢查`SuppressMessage`會套用到組件、 模組、 類型、 成員或參數層級的屬性。 它也會引發對資源和命名空間的違規。 這些違規必須套用的全域層級是範圍和目標。 例如，下列訊息會隱藏命名空間違規：
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> 當您隱藏警告，並且包含命名空間範圍內時，它會抑制警告針對命名空間本身。 它不會隱藏對型別在命名空間中的警告。
+> 當您隱藏警告，其中含有命名空間範圍時，它會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。
 
-可以表示任何隱藏項目，藉由指定明確的範圍。 這些隱藏項目必須駐留在全域層級。 您無法指定成員層級隱藏項目，而將型別。
+可以表示任何隱藏項目，藉由指定明確的範圍。 這些隱藏項目必須即時的全域層級。 您無法指定成員層級隱藏項目來裝飾型別。
 
-全域層級隱藏項目會隱藏編譯器產生的程式碼不會對應至提供明確的使用者來源是指的訊息的唯一方式。 例如，下列程式碼會隱藏編譯器發出的建構函式的違規：
+全域層級隱藏項目會隱藏編譯器產生的程式碼未明確提供的使用者來源對應到參考的訊息的唯一方式。 例如，下列程式碼會封鎖對編譯器發出的建構函式的違規：
 
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
@@ -163,7 +163,7 @@ Managed 程式碼分析工具會檢查`SuppressMessage`會套用到組件、 模
 
 ## <a name="global-suppression-file"></a>全域隱藏項目檔
 
-全域隱藏項目檔案維護的全域層級隱藏項目或未指定目標的隱藏項目的隱藏項目。 例如，組件層級違規的隱藏項目會儲存此檔案中。 此外，某些 ASP.NET 隱藏項目會儲存在這個檔案中，因為沒有可用的表單背後的程式碼專案層級設定。 建立全域隱藏項目檔並將其加入至專案，您選取第一次**專案隱藏項目檔中**選項**抑制**命令**錯誤清單**視窗。
+全域隱藏項目檔案會維護的全域層級隱藏項目或未指定目標的隱藏項目會隱藏項目。 例如，組件層級違規的隱藏項目會儲存此檔案中。 此外，有些 ASP.NET 隱藏項目會儲存在這個檔案中，因為專案層級設定不適用於表單後面的程式碼。 建立全域隱藏項目檔並將其加入至專案，因此您選取第一次**專案隱藏項目檔中的流程範本**選項**隱藏**命令**錯誤清單**視窗。
 
 ## <a name="see-also"></a>另請參閱
 

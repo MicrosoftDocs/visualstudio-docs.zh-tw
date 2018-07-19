@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925152"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890366"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 
@@ -79,13 +79,13 @@ WPF 資料繫結可讓 UI 項目將其屬性中的一個屬性與資料來源產
 
 但是，相較之下，在 XML 原始檔中，動態屬性可以透過下列格式的直接附註存取：
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 這兩種類別的動態屬性會解析可直接使用的值，或解析必須隨索引提供的索引子 (Indexer)，才能取得所產生的值或值集合。 後者的語法採用的格式為：
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 

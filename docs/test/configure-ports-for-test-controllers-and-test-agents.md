@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297593"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
 
@@ -33,22 +34,22 @@ ms.lasthandoff: 04/26/2018
 
 測試控制器所使用的預設通訊埠是 6901，而測試代理程式的預設通訊埠是 6910。 根據預設，用戶端會使用隨機通訊埠，從測試控制器接收測試結果。 對於所有連入連線，測試控制器會驗證呼叫方並確認它是否屬於特定安全性群組。
 
-- **測試控制器** 連入連線位於 TCP 通訊埠 6901 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#ConfigurePorts)。
+- **測試控制器** 連入連線位於 TCP 通訊埠 6901 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#configure-the-incoming-ports)。
 
     測試控制器必須能夠建立測試代理程式和用戶端的連出連線。
 
     > [!NOTE]
     > 測試控制器需要將 [檔案及印表機共用] 連入連線保持在開啟狀態。
 
-- **測試代理程式** 連入連線位於 TCP 通訊埠 6910 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#ConfigurePorts)。
+- **測試代理程式** 連入連線位於 TCP 通訊埠 6910 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#configure-the-incoming-ports)。
 
    測試代理程式必須能夠建立測試控制器的連出連線。
 
-- **用戶端** 根據預設，隨機 TCP 通訊埠會用於連入連線。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#ConfigurePorts)。
+- **用戶端** 根據預設，隨機 TCP 通訊埠會用於連入連線。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#configure-the-incoming-ports)。
 
    當測試控制器第一次嘗試連接至用戶端時，您可能會收到防火牆通知。
 
-   在 Windows Server 2008 上，防火牆通知預設為停用，而且您必須手動針對用戶端程式 (devenv.exe、mstest.exe 和 mlm.exe) 新增防火牆例外狀況，才能讓系統接受連入連線。
+   在 Windows Server 2008 上，防火牆通知預設為停用，而且您必須手動針對用戶端程式 (*devenv.exe*、*mstest.exe* 和 *mlm.exe*) 新增防火牆例外狀況，才能讓系統接受連入連線。
 
 ## <a name="outgoing-connections"></a>傳出連線
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/26/2018
 
 依照這些指示設定測試控制器和測試代理程式的通訊埠。
 
-- **控制器服務** 請編輯 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config 檔案來修改通訊埠的值：
+- **控制器服務** 請編輯 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* 檔案來修改通訊埠的值：
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **代理程式服務** 請編輯 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config 檔案來修改通訊埠：
+- **代理程式服務** 請編輯 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* 檔案來修改通訊埠：
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **用戶端** 請使用登錄編輯程式來新增下列登錄 (DWORD) 值。 用戶端將會使用指定之範圍內的其中一個通訊埠來接收測試控制器的資料：
+- **用戶端** 請使用登錄編輯程式來新增下列登錄 (**DWORD**) 值。 用戶端將會使用指定之範圍內的其中一個通訊埠來接收測試控制器的資料：
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>另請參閱
 

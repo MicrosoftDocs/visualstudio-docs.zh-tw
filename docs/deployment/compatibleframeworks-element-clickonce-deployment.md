@@ -1,5 +1,5 @@
 ---
-title: '&lt;w&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+title: '&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d406ecf058bf1c570b57ed8f50815cc3d9378cbe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560774"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077681"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;w&gt;元素 （ClickOnce 部署）
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）
 識別安裝及執行此應用程式所需的 .NET Framework 版本。  
   
 > [!NOTE]
->  [MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支援`compatibleFrameworks`項目時，儲存應用程式資訊清單已簽署憑證，使用[MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 您必須改用 [Mage.exe](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
+>  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支援`compatibleFrameworks`憑證，使用已簽署項目儲存應用程式資訊清單時[ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 相反地，您必須使用[ *Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <compatibleFrameworks  
       SupportUrl>   
    <framework  
@@ -43,13 +43,13 @@ ms.locfileid: "31560774"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `compatibleFrameworks`項目是必要的部署資訊清單目標[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所提供的執行階段[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]或更新版本。 `compatibleFrameworks`元素包含一或多個`framework`項目會指定可以執行此應用程式的.NET Framework 版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行階段會執行應用程式在第一個可用`framework`這份清單中。  
+ `compatibleFrameworks`項目時，需要部署資訊清單目標[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所提供的執行階段[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]或更新版本。 `compatibleFrameworks`元素包含一或多個`framework`項目會指定此應用程式可以執行所在的.NET Framework 版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行階段將執行應用程式在第一個可用`framework`這份清單中。  
   
  下表列出屬性，`compatibleFrameworks`項目支援。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`S` `upportUrl`|選擇性。 指定的 URL，您可以在其中下載慣用相容的.NET Framework 版本。|  
+|`S` `upportUrl`|選擇性。 指定的 URL，可以下載相容的慣用的.NET Framework 版本的位置。|  
   
 ## <a name="framework"></a>架構  
  必要。 下表列出的屬性，`framework`項目支援。  
@@ -63,9 +63,9 @@ ms.locfileid: "31560774"
 ## <a name="remarks"></a>備註  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例示範`compatibleFrameworks`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 可以執行此部署[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。 它也可以在執行[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]的超集，所以[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。  
+ 下列程式碼範例所示`compatibleFrameworks`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 可以執行此部署[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。 它也可以執行[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]因為它的超集[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。  
   
-```  
+```xml  
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
   <framework   
       targetVersion="4.0"   

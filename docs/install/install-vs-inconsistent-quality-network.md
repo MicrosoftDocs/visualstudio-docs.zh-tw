@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297623"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低頻寬或不可靠的網路環境安裝 Visual Studio 2017
 
 建議您嘗試使用 Visual Studio Web 安裝程式&mdash; 相信您在大多數情況下會發現這是很好的體驗。
 
  > [!div class="button"]
- > [下載 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 不過，如果您的網際網路連線無法使用或不可靠，您可以使用命令列來建立完成離線安裝所需之檔案的本機快取。 方式如下：
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="step-2---create-a-local-install-cache"></a>步驟 2 - 建立本機安裝快取
 
-您必須具有網際網路連線才能完成此步驟。 若要建立本機配置，請開啟命令提示字元，然後使用下列範例的其中一個命令：這裡的範例假設您使用 Visual Studio Community 版本；請根據您的版本適當地調整命令。
+您必須具有網際網路連線才能完成此步驟。 若要建立本機配置，請開啟命令提示字元，然後使用下列範例的其中一個命令。 這裡的範例假設您是使用 Visual Studio Community Edition。請根據您的版本適當地調整命令。
 
 - 針對 .NET Web 和 .NET 桌面開發，請執行：
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="get-support"></a>取得支援
 
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
 
@@ -120,3 +121,4 @@ ms.lasthandoff: 04/20/2018
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)

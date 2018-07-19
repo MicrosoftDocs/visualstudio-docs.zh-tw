@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944407"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279982"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
@@ -46,7 +46,7 @@ ms.locfileid: "31944407"
 
 您可以使用本區段中的下拉式清單，為您的應用程式設定 Windows 10 的目標版本和最低版本。 建議您以 Windows 10 最新版本為目標。如果您正在開發企業應用程式，則也應該支援較舊的最低版本。 如需選擇 Windows 10 版本的相關詳細資訊，請參閱[選擇 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)。
 
-如需 Visual Studio 2017 中目標平台的相關詳細資訊，請參閱[目標平台](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development)。
+如需 Visual Studio 2017 中目標平台的相關詳細資訊，請參閱[目標平台](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development)。
 
 ## <a name="see-also"></a>另請參閱
 
