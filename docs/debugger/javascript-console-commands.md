@@ -1,9 +1,9 @@
 ---
-title: 在 Visual Studio 中的 JavaScript 主控台命令 |Microsoft 文件
+title: 在 Visual Studio 中的 JavaScript 主控台命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
@@ -14,18 +14,18 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478716"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154368"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
   
- 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式。 如需 Cordova 應用程式支援的主控台命令的資訊，請參閱[偵錯應用程式](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
+ 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令的資訊，請參閱[偵錯應用程式](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中偵錯時，透過選擇 [偵錯]  >  > 。  
+ 如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
   
 > [!NOTE]
 >  如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
@@ -52,9 +52,9 @@ ms.locfileid: "31478716"
 |`groupEnd()`|結束目前的群組。<br /><br /> 需求：<br /><br /> Visual Studio 2013|請參閱 `group` 命令的範例。|  
 |`info(message)`|將 `message` 傳送至主控台視窗。 訊息開頭處會有資訊符號。|`console.info("info message");`<br /><br /> 如需更多範例，請參閱本主題稍後的 [Formatting console.log output](#ConsoleLog) 。|  
 |`log(message)`|將 `message` 傳送至主控台視窗。<br /><br /> 如果您傳遞物件，這個命令會將該物件傳送至主控台視窗，並在視覺化檢視中顯示物件。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
-|`profile(reportName)`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
-|`profileEnd()`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
+|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|  
+|`profile(reportName)`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|  
+|`profileEnd()`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|  
 |`select(element)`|選取指定的 HTML`element`中[DOM 總管](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
 |`time (name)`|啟動由選擇性 `name` 參數識別的計時器。 與 `console.timeEnd`搭配使用時，計算 `time` 與 `timeEnd`之間經過的時間，並使用 `name` 字串做為前置詞，將結果 (以毫秒為單位) 傳送至主控台。 用來啟用應用程式程式碼的檢測以測量效能。|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|停止由選擇性 `name` 參數識別的計時器。 請參閱 `time` 主控台命令。|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
@@ -70,7 +70,7 @@ ms.locfileid: "31478716"
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|  
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|選取指定的項目中[DOM 總管](../debugger/quickstart-debug-html-and-css.md)。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|選取指定的項目[DOM 總管](../debugger/quickstart-debug-html-and-css.md)。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|傳回指定物件的視覺化檢視。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>檢查主控台命令是否存在  

@@ -1,5 +1,5 @@
 ---
-title: Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件
+title: Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109607"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153852"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>組件項目 (Visual Studio 範本精靈擴充)
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 項目 （Visual Studio 範本精靈擴充）
 指定的名稱或實作的組件的強式名稱`IWizard`介面。  
   
  \<VSTemplate >  
@@ -36,31 +36,31 @@ ms.locfileid: "31109607"
 <Assembly>AssemblyName</Assembly>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  下列章節將說明屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本精靈的註冊項目。|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本精靈 的註冊項目。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字會指定實作的組件`IWizard`介面。 必須指定這個組件名稱做為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
+ 此文字會指定實作的組件`IWizard`介面。 這個組件名稱必須指定為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
   
 ## <a name="remarks"></a>備註  
  `Assembly` 是 `WizardExtension` 的必要子項目。  
   
 ## <a name="example"></a>範例  
- 下列範例說明標準的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
+ 下列範例說明的標準專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -93,4 +93,4 @@ ms.locfileid: "31109607"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何： 搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

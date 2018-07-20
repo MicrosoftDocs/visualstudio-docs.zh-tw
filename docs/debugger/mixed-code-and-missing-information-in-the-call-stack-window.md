@@ -1,9 +1,9 @@
 ---
-title: 混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中 |Microsoft 文件
+title: 混合程式碼和遺失的資訊，在呼叫堆疊視窗 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -25,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f0a0822dc99eccea4ddd621ae622a112e0909bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480224"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151976"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
 因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫 managed 程式碼時，您可能會發現下列不一致的地方**呼叫堆疊**視窗：  
   
--   Managed 程式碼正上方的原生框架可能會遺漏**呼叫堆疊**視窗。 如需詳細資訊，請參閱[How to： 原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)。  
+-   正上方的 managed 程式碼的原生框架可能遺漏**呼叫堆疊**視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 原生框架遺失於呼叫堆疊視窗時跳離 Managed 程式碼](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)。  
   
--   混合模式應用程式啟動偵錯工具中，外部**呼叫堆疊**視窗會顯示 managed 程式碼，並且不到任一個原生框架會顯示。  
+-   混合式應用程式啟動偵錯工具，之外**呼叫堆疊**視窗會顯示 managed 程式碼，並且沒有任何原生框架會顯示。  
   
  這兩個狀況都相當少見。 在大多數呼叫 Managed 程式碼的原生呼叫中，呼叫堆疊看起來都是正確的。  
   

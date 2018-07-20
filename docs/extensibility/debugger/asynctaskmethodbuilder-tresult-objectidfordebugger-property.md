@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;。ObjectIdForDebugger 屬性 |Microsoft 文件
+title: AsyncTaskMethodBuilder&lt;TResult&gt;。ObjectIdForDebugger 屬性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d5a5816bf26b7de704cfe1c1462c89918b7dc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f60f7cf4cb524a473b89528c7b7077459d140a9
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109411"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153646"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;。ObjectIdForDebugger 屬性
-取得可用來唯一識別此產生器偵錯工具的物件。  
+取得物件，可用來唯一識別這個產生器偵錯工具。  
   
  **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll)  
+ **組件：** mscorlib （在 mscorlib.dll 中)  
   
  因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
   
@@ -37,4 +37,4 @@ private object ObjectIdForDebugger
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

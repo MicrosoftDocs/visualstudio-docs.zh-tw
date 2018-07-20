@@ -1,5 +1,5 @@
 ---
-title: 按鈕項目 |Microsoft 文件
+title: 按鈕項目 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b5abd8762669db4e225a68817f2c9823a49267
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 128016b892206db64a5295c8c15b26b87637b530
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109626"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154267"
 ---
-# <a name="button-element"></a>Button 項目
-定義使用者可以與之互動的項目。 按鈕可以屬於不同類型： 按鈕、 MenuButton 和 SplitDropDown。  
+# <a name="button-element"></a>按鈕項目
+定義使用者可以互動的項目。 按鈕可以屬於不同類型： 按鈕、 MenuButton 和 SplitDropDown。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,37 +35,37 @@ ms.locfileid: "31109626"
 </Button>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|Guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
-|id|必要。 GUID/識別碼命令識別項的識別碼。|  
+|guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
+|id|必要。 GUID/識別碼的命令識別項的識別碼。|  
 |priority|選擇性。 數值，指定的優先權。|  
-|類型|選擇性。 列舉的值，指定按鈕類型。<br /><br /> 如果沒有指定，會使用按鈕。<br /><br /> 按鈕<br /> 標準命令，會出現在工具列上 （通常為圖示的按鈕），功能表和操作功能表。<br /><br /> MenuButton<br /> 功能表項目不會執行命令，但會產生另一個功能表。<br /><br /> SplitDropDown<br /> 控制項，例如 Microsoft Word 中的 [標準] 工具列上的復原與取消復原按鈕。|  
+|類型|選擇性。 列舉的值，指定的按鈕類型。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> 按鈕<br /> 會出現在工具列 （通常為圖示的按鈕），功能表和快顯功能表標準命令。<br /><br /> MenuButton<br /> 功能表項目不會執行命令，但會產生另一個功能表。<br /><br /> SplitDropDown<br /> 控制項，例如 Microsoft Word 中的 [標準] 工具列上的 [復原與取消復原] 按鈕。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[Parent 元素](../extensibility/parent-element.md)|選擇性。 按鈕的父項目。|  
-|[Icon 元素](../extensibility/icon-element.md)|選擇性。 與按鈕相關聯的圖示。|  
-|[Command Flag 元素](../extensibility/command-flag-element.md)|必要。 CommandFlag 按鈕的有效值，如下所示。<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -文字變更<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
+|[父項目](../extensibility/parent-element.md)|選擇性。 按鈕的父項目。|  
+|[Icon 元素](../extensibility/icon-element.md)|選擇性。 與按鈕關聯的圖示。|  
+|[Command flag 元素](../extensibility/command-flag-element.md)|必要。 CommandFlag 按鈕有效值，如下所示。<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -文字變更<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
 |[Strings 元素](../extensibility/strings-element.md)|必要。 子系[ButtonText 元素](../extensibility/buttontext-element.md)必須定義。|  
 |註釋|選擇性註解。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|[Buttons 元素](../extensibility/buttons-element.md)|群組按鈕項目。|  
+|[Buttons 元素](../extensibility/buttons-element.md)|分組按鈕項目。|  
   
 ## <a name="example"></a>範例  
- 下列範例會定義在.vsct 檔案中的按鈕。  
+ 下列範例會定義中的按鈕 *.vsct*檔案。  
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -80,4 +80,4 @@ ms.locfileid: "31109626"
  ```
  
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
