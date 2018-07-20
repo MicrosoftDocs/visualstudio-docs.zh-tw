@@ -3,22 +3,23 @@ layout: LandingPage
 title: 將應用程式部署在 Visual Studio 中 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 部署應用程式、服務與元件。
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815320"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030399"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 
 Visual Studio 提供數種不同工具，協助您部署應用程式。
 
-<h2>遇到 5 分鐘快速入門與 Visual Studio 部署</h2>
+<h2>透過 5 分鐘的快速入門體驗 Visual Studio 部署</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>

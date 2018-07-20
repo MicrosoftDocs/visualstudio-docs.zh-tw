@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: 使用 IntelliTrace 回溯檢視快照
       href: how-to-use-intellitrace-step-back.md
+    - name: 適合完全初學者的偵錯
+      href: debugging-absolute-beginners.md
 - name: 作法指南
   items:
     - name: 使用偵錯工具巡覽程式碼
@@ -105,8 +107,6 @@
           items:
             - name: 以編輯後繼續在中斷模式中套用編輯
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Visual Basic 編輯後繼續中不支援的編輯
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 檢視偵錯工具資料
@@ -826,5 +826,3 @@
   items:
     - name: Visual Studio 中偵錯工具的新功能
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: 適用於徹底初學者偵錯
-      href: debugging-absolute-beginners.md

@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+title: '&lt;trustInfo&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815999"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151057"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 應用程式）
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;項目 （ClickOnce 應用程式）
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。  
   
 ## <a name="syntax"></a>語法  
@@ -163,7 +163,7 @@ ms.locfileid: "34815999"
   
  如果部署資訊清單有有效的信任授權，所有使用 `defaultAssemblyRequest` 與 `assemblyRequest` 要求的權限就都會在不提示使用者的情況下授與。  
   
- 如需提高權限的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。 如需原則部署的詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
+ 如需權限提高的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。 如需原則部署的詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
 ## <a name="examples"></a>範例  
  下列三個程式碼範例說明了適用於 `trustInfo` 部署應用程式資訊清單中預設具名安全性區域 (Internet、LocalIntranet 及 FullTrust) 的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 元素。  

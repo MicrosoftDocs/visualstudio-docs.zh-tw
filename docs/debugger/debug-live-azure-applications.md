@@ -4,7 +4,7 @@ ms.description: Learn how to set snappoints and view snapshots with the Snapshot
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
-ms.topic: tutorial
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281546"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154459"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 

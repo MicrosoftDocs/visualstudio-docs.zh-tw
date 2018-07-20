@@ -3,17 +3,18 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: 使用 C++ 進行行動裝置開發文件 | Microsoft Docs
 description: 使用 Visual Studio 建立適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060947"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924170"
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 進行行動裝置開發文件
 
@@ -31,8 +32,8 @@ ms.locfileid: "31060947"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>安裝適用於跨平台行動裝置開發的 Visual C++</h3>
-                        <p>設定建置跨平台行動裝置應用程式所需的工具。</p>
+                        <h3>安裝 Visual C++ for Cross-Platform Mobile Development</h3>
+                        <p>設定建置跨平台行動應用程式所需的工具。</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +70,8 @@ ms.locfileid: "31060947"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>讓您開始進行跨平台行動裝置開發的範例。</p>
+                        <h3>跨平台行動開發範例</h3>
+                        <p>參閱協助您開始進行跨平台行動開發的範例。</p>
                     </div>
                 </div>
             </div>
