@@ -3,7 +3,7 @@ title: 如何： 回應在 Just-in-time 偵錯工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 05/23/17
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5cec8887ddf2023a8abd08f409b93f47efdc7001
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281494"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155564"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 回應在 Just-in-time 偵錯工具
 

@@ -3,19 +3,19 @@ title: 遠端偵錯工具連接埠指派 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59379e2b6a10ac98a739487eac064f3b261f35c5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057800"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150998"
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：  

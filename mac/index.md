@@ -5,16 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693688"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889881"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
-Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 支援下列開發類型：
+Visual Studio for Mac 是現代化的尖端 IDE，具備可用於建立行動、傳統型和 Web 應用程式的多項功能。 支援下列開發類型：
 
 * 使用 .NET 的行動裝置：Android、iOS、tvOS、watchOS
 * Mac 桌面應用程式
@@ -24,11 +24,11 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌
 
 其支援多功能編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，以及整合式原始檔控制。
 
-本文審視 Visual Studio for Mac 的各個部分，帶您了解其具備哪些功能，使其得以成為建立跨平台應用程式的強力工具。
+本文概括論述 Visual Studio for Mac 的不同章節，並介紹有哪些功能使其成為建立跨平台應用程式的強大工具。
 
 ## <a name="installation"></a>安裝
 
-請遵循[安裝](installation.md)指南下載並安裝 Visual Studio for Mac。
+遵循[安裝](installation.md)指南中的步驟，下載及安裝 Visual Studio for Mac。
 
 ## <a name="language-support"></a>語言支援
 
@@ -36,7 +36,7 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌
 
 ### <a name="c"></a>C#
 
-C# 是在 Visual Studio for Mac 中建立跨平台應用程式最常用的語言。 IDE 具有所有 C# 7 功能的完整支援。
+C# 是在 Visual Studio for Mac 中最常用來建立跨平台應用程式的語言。 IDE 具有所有 C# 7 功能的完整支援。
 
 ### <a name="f"></a>F#
 
@@ -46,7 +46,7 @@ F# 是專為在 .NET 上執行所設計的強型別功能性程式設計語言�
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) 是一種平台，用於建立在 Windows、Linux 和 Mac 上執行的應用程式。 Visual Studio for Mac 支援載入、建立、執行和偵錯 .NET Core 專案。
+[.NET Core](https://www.microsoft.com/net/core#macos) 是一種平台，用於建立在 Windows、Linux 和 Mac 上執行的應用程式。 Visual Studio for Mac 支援載入、建立、執行 .NET Core 專案及對其偵錯。 
 
 若要執行 .NET Core 專案，應該下載和安裝 .NET Core SDK。
 
@@ -93,7 +93,7 @@ Xamarin 提供可讓您建立美觀 Mac 應用程式的原生 Mac API 繫結。
 
 ## <a name="gaming"></a>遊戲
 
-Visual Studio for Mac 支援 Unity 5.6.1 的跨平台遊戲開發。
+Visual Studio for Mac 支援使用 Unity 5.6.1 的跨平台遊戲開發。
 
 若要開始，請參閱 Unity [實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)。
 
@@ -108,11 +108,11 @@ Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](
 
 ### <a name="inspector"></a>檢查程式
 
-Xamarin Inspector 為使用者提供互動式的 C# 主控台和工具。 檢查即時應用程式時，它可作為教學工具、記錄工具或試驗工具，用為偵錯或診斷輔助工具。
+Xamarin Inspector 提供互動式的 C# 主控台與使用者工具。 它可以當作檢查即時應用程式時的偵錯或診斷輔助工具、教學工具、記錄工具或試驗工具。
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-其包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，並整合到 IDE 的偵錯工作流程中。
+其包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，並整合到您的 IDE 偵錯工作流程中。 
 
 如需詳細資訊，請參閱 [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) 指南。
 

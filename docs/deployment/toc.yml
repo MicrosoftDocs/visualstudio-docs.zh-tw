@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: 使用發行工具部署 .NET Core 應用程式
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: 為 Microsoft Store 封裝桌面應用程式 (傳統型橋接器)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: 使用 ClickOnce 部署傳統型應用程式
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: 從命令列建置 ClickOnce 應用程式
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: 將 ASP.NET Core 應用程式發行到 Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: 使用 Web Deploy 部署至 IIS
+          href: deploy-iis-with-web-deploy.md
         - name: 匯入發行設定並部署至 Azure
           href: tutorial-import-publish-settings-azure.md
         - name: 匯入發佈設定並部署至 IIS
           href: tutorial-import-publish-settings-iis.md
-        - name: 使用 Web Deploy 部署至 IIS
-          href: deploy-iis-with-web-deploy.md
         - name: 使用 Git 將 ASP.NET Core 持續部署到 Azure
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: 利用 Visual Studio Kubernetes 工具發行至 Kubernetes
           href: tutorial-kubernetes-tools.md
     - name: 原生
@@ -45,21 +45,21 @@
         - name: Visual C++ 中的部署...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: 為 Microsoft Store 封裝桌面應用程式 (傳統型橋接器)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: 使用 ClickOnce 部署原生應用程式...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: 使用 Visual Studio 封裝 UWP 應用程式
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: 使用 Web Deploy 發行到 Azure 網站
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: 發佈到 Linux App Service
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: 發佈至 Azure App Service
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: 作法指南
   items:
     - name: ClickOnce 安全性和部署

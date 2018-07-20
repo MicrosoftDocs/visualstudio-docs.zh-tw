@@ -1,5 +1,5 @@
 ---
-title: 中斷點相關的方法 |Microsoft 文件
+title: 中斷點相關的方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce44a7d3d3578d5157bcefcf14172d92ece677d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107286"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152138"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：  
   
 -   繫結  
   
-     透過 UI 要求，並成功繫結到指定的程式碼的位置  
+     透過 UI 要求及成功繫結到指定的程式碼的位置  
   
 -   擱置  
   
-     要求透過 UI 但不是尚未繫結至實際的指示  
+     透過 UI，但無法尚未繫結至實際的指示要求  
   
 ## <a name="discussion"></a>討論  
- 例如，指示尚未載入時，就會發生暫止中斷點。 程式碼載入時，暫止中斷點嘗試繫結至程式碼中指定的位置，也就是，以插入的程式碼中斷的指示。 事件傳送至工作階段的偵錯管理員 (SDM) 表示成功的繫結，或是通知繫結錯誤。  
+ 比方說，指示尚未載入時，就會發生暫止中斷點。 程式碼載入時，暫止的中斷點試，也就是繫結至指定位置的程式碼，以中斷指令插入程式碼中。 事件會傳送工作階段的偵錯管理員 (SDM)，以指出成功的繫結，或通知已繫結錯誤。  
   
- 暫止中斷點也會管理它自己的繫結的對應中斷點的內部清單。 一個暫止中斷點會造成許多中斷點插入的程式碼。 Visual Studio 偵錯 UI 顯示的樹狀檢視的暫止中斷點，和其對應的繫結中斷點。  
+ 暫止中斷點也會管理它自己內部的相對應的繫結中斷點清單。 一個暫止中斷點可能會導致許多中斷點的插入動作，在程式碼。 Visual Studio 偵錯 UI 顯示暫止中斷點的樹狀結構檢視和其對應的繫結中斷點。  
   
  建立和使用暫止中斷點需要實作[IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)方法，以及下列的方法[IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|決定指定暫止中斷點可以繫結至程式碼位置。|  
-|[繫結](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將繫結指定暫止中斷點到一或多個程式碼位置。|  
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|判斷指定暫止的中斷點可以繫結到程式碼的位置。|  
+|[繫結](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|繫結指定暫止的中斷點至一或多個程式碼位置。|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|取得暫止中斷點的狀態。|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|取得用來建立暫止中斷點的中斷點要求。|  
 |[啟用](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切換暫止中斷點的啟用的狀態。|  
-|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|列舉從暫止中斷點繫結的所有中斷點。|  
-|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|列舉所有錯誤中斷點所導致的暫止中斷點。|  
-|[刪除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|刪除暫止中斷點，並從其繫結的所有中斷點。|  
+|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|列舉所有的中斷點暫止中斷點的資料繫結。|  
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|列舉所有錯誤中斷點所產生的暫止中斷點。|  
+|[刪除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|刪除暫止中斷點和繫結從它的所有中斷點。|  
   
- 若要列舉的繫結的中斷點和錯誤中斷點，您必須實作所有方法的[IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)和[IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)。  
+ 若要列舉的繫結的中斷點和錯誤的中斷點，您必須實作的所有方法[IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)以及[IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)。  
   
  暫止繫結至程式碼的中斷點位置需要實作下列[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)方法。  
   
@@ -58,32 +58,32 @@ ms.locfileid: "31107286"
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|取得包含中斷點暫止中斷點。|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|取得繫結中斷點的狀態。|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|取得描述中斷點的中斷點解析度。|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|取得描述中斷點的中斷點解析。|  
 |[啟用](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|啟用或停用中斷點。|  
 |[刪除](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|刪除繫結的中斷點。|  
   
- 解析度及要求資訊需要實作下列[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)方法。  
+ 解析和要求資訊需要實作下列[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|取得中斷點解析度所代表的類型。|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|取得中斷點表示所解析的型別。|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|取得描述中斷點的中斷點解析資訊。|  
   
  在繫結期間可能發生之錯誤的解析所需的下列實作[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|取得包含錯誤中斷點暫止中斷點。|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|取得包含錯誤的中斷點暫止中斷點。|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|取得描述錯誤中斷點的中斷點錯誤解決方式。|  
   
- 在繫結期間可能發生之錯誤的解決方式也需要下列的方法[IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)。  
+ 在繫結期間可能發生之錯誤的解決方法也會需要的下列方法[IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|取得中斷點類型。|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|取得中斷點的解決方法資訊。|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|取得中斷點的型別。|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|取得中斷點解析資訊。|  
   
- 在中斷點處檢視原始碼需要您實作的方法[IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)和 （或) 的方法[IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。  
+ 檢視在中斷點的原始程式碼會要求您實作的方法[IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)及 （或) 的方法[IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
