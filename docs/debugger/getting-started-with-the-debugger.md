@@ -1,4 +1,4 @@
----
+﻿---
 title: 了解如何使用 Visual Studio 偵錯工具進行偵錯
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
@@ -43,7 +43,7 @@ ms.locfileid: "36303142"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和。**NET 桌面開發**工作負載。
+* 您必須安裝 Visual Studio 2017 和。**.NET 桌面開發**工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 

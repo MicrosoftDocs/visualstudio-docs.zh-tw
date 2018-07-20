@@ -1,4 +1,4 @@
----
+﻿---
 title: 偵錯即時 ASP.NET Azure 應用程式
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
 ms.custom: mvc
@@ -36,7 +36,7 @@ ms.locfileid: "39154459"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**ASP.NET 和 web 開發工作負載**。 針對 ASP.NET Core，您也需要。**NET 核心開發**安裝的工作負載。
+* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**ASP.NET 和 web 開發工作負載**。 針對 ASP.NET Core，您也需要。**.NET Core 開發**安裝的工作負載。
 
     如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
 

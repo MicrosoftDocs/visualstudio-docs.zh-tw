@@ -1,4 +1,4 @@
----
+﻿---
 title: 將發佈至 Azure 匯入發行設定
 ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
@@ -38,7 +38,7 @@ ms.locfileid: "38808317"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 並**ASP.NET**並。**NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要。**NET 核心**工作負載。
+* 您必須安裝 Visual Studio 2017 並**ASP.NET**並。**NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要。**.NET Core**工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
