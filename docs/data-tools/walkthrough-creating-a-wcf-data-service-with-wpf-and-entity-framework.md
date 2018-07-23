@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174974"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178383"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說： 使用 WPF 和 Entity Framework 建立 WCF 資料服務
-本逐步解說示範如何建立簡單[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]裝載在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 應用程式，然後將它存取 Windows Form 應用程式。
+本逐步解說示範如何建立簡單[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]裝載在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 應用程式，然後將它存取 Windows Form 應用程式。
 
 在本逐步解說您：
 
--   建立裝載 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的 Web 應用程式。
+-   建立 web 應用程式，以裝載[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
 -   建立[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]表示`Customers`Northwind 資料庫中的資料表。
 
@@ -60,13 +60,13 @@ ms.locfileid: "37174974"
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
 ## <a name="creating-the-service"></a>建立服務
-若要建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，請加入 Web 專案、建立 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然後透過模型建立服務。
+若要建立[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，您會加入一個 web 專案，請建立[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然後從模型中建立服務。
 
-在第一個步驟中，您可以新增 Web 專案來裝載服務。
+在第一個步驟中，您可以新增 web 專案來裝載服務。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>若要建立 Web 專案
+#### <a name="to-create-the-web-project"></a>若要建立 web 專案
 
 1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
@@ -164,7 +164,7 @@ ms.locfileid: "37174974"
 
 5.  在功能表列上選擇 **專案**，**設定為啟始專案**。
 
-您可以在下一個步驟中，加入服務參考[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]Web 專案中。
+您可以在下一個步驟中，加入服務參考[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 專案中。
 
 #### <a name="to-add-a-service-reference"></a>若要加入服務參考
 

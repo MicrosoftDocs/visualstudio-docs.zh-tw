@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058759"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176437"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動 Visual Studio 外部執行的應用程式中發生的例外狀況或損毀時。 這可讓您測試您的應用程式，若未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
@@ -176,4 +176,4 @@ static void Main(string[] args)
      若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。
 
 ## <a name="see-also"></a>另請參閱
- [偵錯工具安全性](../debugger/debugger-security.md)[偵錯工具基本概念](../debugger/debugger-basics.md)[只要時間，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+ [偵錯工具安全性](../debugger/debugger-security.md)[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)[只要時間，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

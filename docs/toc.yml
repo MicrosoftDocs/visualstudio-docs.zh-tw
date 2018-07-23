@@ -39,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: 解除安裝 Visual Studio
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Administrator Guide
+    - name: Visual Studio 系統管理員指南
       href: install/visual-studio-administrator-guide.md
       items:
         - name: 使用命令列
@@ -57,7 +57,7 @@
             - name: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio
               href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
               items:
-                - name: 針對安裝或使用 Visual Studio 時的網路錯誤進行疑難排解
+                - name: 對安裝或使用 Visual Studio 時的網路錯誤進行疑難排解
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: 部署於企業中
           items:
@@ -132,7 +132,7 @@
     - name: Visual Studio 中的 R...
       href: rtvs/getting-started-with-r.md
     - name: Visual Studio 中的 Node.js
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'Visual Studio 中的 C#'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Studio 中的 Visual Basic
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 移植、移轉及升級專案
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: 新增及移除專案項目
-              href: ide/adding-and-removing-project-items.md
             - name: 管理專案和解決方案屬性
               href: ide/managing-project-and-solution-properties.md
             - name: 管理專案中的參考
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Visual Basic 中已篩選的完成清單
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: 跨平台行動裝置程式開發
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'F# 開發'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: 以舊版 .NET 為目標
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Office 和 SharePoint 程式開發
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: 使用 XML 與 XSLT 檔案
@@ -605,15 +605,15 @@
         - name: 逐步解說：建立多電腦組建環境
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 偵錯...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: 測試...
       href: test/improve-code-quality.md
     - name: 測量效能...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: 分析程式碼品質...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: 部署...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: 延伸 Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: 分析架構並製作架構模型...
@@ -686,8 +686,6 @@
       items:
         - name: 範本參數
           href: ide/template-parameters.md
-        - name: 範本結構描述參考 (擴充性)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: 一般使用者介面項目
       items:
         - name: 呼叫階層
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: 開啟專案命令
           href: ide/reference/open-project-command.md
-        - name: 開啟方案命令
-          href: ide/reference/open-solution-command.md
         - name: 列印命令
           href: ide/reference/print-command.md
         - name: 快速監看式命令
