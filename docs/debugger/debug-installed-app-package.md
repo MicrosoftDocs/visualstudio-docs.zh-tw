@@ -1,5 +1,5 @@
 ---
-title: 偵錯已安裝的應用程式套件 (UWP) |Microsoft 文件
+title: 偵錯已安裝的應用程式套件 (UWP) |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -21,76 +21,77 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059240"
 ---
-# <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式套件 Visual Studio (UWP)
+# <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式封裝在 Visual Studio (UWP)
 
-您可以按一下 偵錯任何已安裝的應用程式套件**偵錯 > 其他偵錯目標 > 偵錯已安裝的應用程式套件**。 這個偵錯的方法有通用 Windows 應用程式 (UWP) 在這些裝置上：
+您可以將任何已安裝的應用程式套件偵錯，即可**偵錯 > 其他偵錯目標 > 偵錯 Installed App Package**。 這個偵錯的方法是使用適用於通用 Windows 應用程式 (UWP) 在這些裝置上：
 
 * Windows 10 （不支援在手機上）
 * XBox
 * HoloLens
 * IoT
 
-如需有關這些功能的詳細資訊，請參閱部落格文章上更新[偵錯已安裝應用程式封裝](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)和上的 post[建置通用 Windows 應用程式 (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
+如需這些功能的詳細資訊，請參閱部落格文章上的更新[偵錯已安裝的應用程式套件](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)並在 post[建置通用 Windows App (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
-## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>偵錯已安裝的應用程式套件或在本機電腦或裝置上的執行應用程式
+## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>已安裝的應用程式套件或在本機電腦或裝置上執行的應用程式進行偵錯
 
-1. 您在 Visual Studio 中開啟的 UWP 專案，按一下**偵錯 > 其他偵錯目標 > 偵錯已安裝的應用程式套件**。
+1. 您在 Visual Studio 中開啟的 UWP 專案，按一下**偵錯 > 其他偵錯目標 > 偵錯 Installed App Package**。
 
-2. 選取 **本機**或**裝置**。
+2. 選取 **本機電腦**或是**裝置**。
 
-     如果您選擇**裝置**，您的電腦必須實際連接到 Windows 10 裝置。
+     如果您選擇**裝置**，您的電腦必須實際連線到 Windows 10 裝置。
 
      ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-     目前正在執行安裝的應用程式封裝顯示底下**執行**節點。 安裝不顯示設定下執行的應用程式套件**未執行**。
+     正在安裝應用程式套件會顯示下的**執行**節點。 安裝不顯示設定下執行的應用程式套件**未執行**。
 
-3. 選取您想要在偵錯的應用程式名稱**執行**或**未執行**選擇**啟動**或者，如果應用程式已在執行中，選擇**附加**.
+3. 選取您想要在偵錯的應用程式名稱**執行**或**未執行**，然後選擇 **啟動**或者，如果應用程式已在執行中，選擇 **附加**.
 
-     如果您選取**不啟動，但在啟動時，將我的程式碼進行偵錯**，這會導致 Visual Studio 偵錯工具附加至您的應用程式，當您啟動在自訂階段。 這是有效的方式來偵錯控制路徑從[不同啟動方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，例如使用自訂參數的通訊協定啟動。
+     如果您選取**不啟動，但啟動時，將我的程式碼進行偵錯**，這會導致 Visual Studio 偵錯工具附加至您的應用程式，當您啟動在自訂的時間。 這是偵錯中的控制路徑的有效辦法[不同的啟動方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，例如，使用自訂參數的通訊協定啟用。
 
 > [!NOTE]
-> Visual Studio 也可以將附加至任何正在執行的 UWP 應用程式處理序藉由選取**偵錯**，然後**附加至處理序**。 附加至正在執行的處理序不需要原始的 Visual Studio 專案中，但載入處理序的符號將有助於大幅偵錯的處理序，您不需要的原始碼時。
+> Visual Studio 也可以附加至任何執行中 UWP 應用程式處理序選取**偵錯**，然後**附加至處理序**。 附加至執行中處理序並不需要原始的 Visual Studio 專案中，但您不需要的原始碼的程序進行偵錯時載入處理序的符號可大幅協助。
   
-## <a name="remote"></a> 偵錯在遠端電腦上的安裝或執行應用程式 
+## <a name="remote"></a> 偵錯遠端電腦上的安裝或執行應用程式 
 
-當您在遠端電腦上安裝的應用程式封裝偵錯時第一次時，Visual Studio 會安裝適用於您的目標裝置的遠端工具的正確版本。 Windows 10 電腦、 XBox、 HoloLens 或 IoT 裝置，必須是您的目標裝置。
+當您第一次偵錯遠端電腦上已安裝的應用程式套件時，Visual Studio 會安裝適用於您的目標裝置的遠端工具的正確版本。 Windows 10 電腦、 XBox、 HoloLens、 或 IoT 裝置，必須是您的目標裝置。
 
-1. 在您的 Windows 10 裝置上啟用[開發人員模式下](/windows/uwp/get-started/enable-your-device-for-development)。
+1. 在您的 Windows 10 裝置上啟用[開發人員模式](/windows/uwp/get-started/enable-your-device-for-development)。
 
-2. 如果您要連接至遠端電腦上執行前的建立者的更新版本的 Windows 10 中，第一次手動[安裝並啟動遠端偵錯工具](../debugger/remote-debugging.md)。
+2. 如果您要連接至遠端電腦上執行預先建立者更新版本的 Windows 10 中，第一次手動[安裝並啟動遠端偵錯工具](../debugger/remote-debugging.md)。
 
-     為 XBox、 HoloLens 或 IoT 裝置和 Windows 裝置執行 Windows 10 建立者的更新，您不需要手動安裝遠端偵錯工具。 部署應用程式時，就會自動安裝遠端工具。
+     XBox、 HoloLens、 或 IoT 裝置，以及執行 Windows 10 Creator's Update 的 Windows 裝置，您不需要手動安裝遠端偵錯工具。 當您部署應用程式時，就會自動安裝遠端工具。
 
-3. 按一下**偵錯 > 其他偵錯目標 > 偵錯已安裝應用程式套件**。
+3. 按一下 **偵錯 > 其他偵錯目標 > 偵錯已安裝應用程式套件**。
 
-4. 從第一個下拉式清單中，選擇 **遠端機器**。
+4. 從第一個下拉式清單中，選擇**遠端機器**。
 
-5. 輸入名稱或您想要將附加至電腦的 IP 位址。
+5. 輸入名稱或您想要附加至電腦的 IP 位址。
 
      ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
-     如果您無法附加使用電腦名稱 (選擇之後**啟動**)，請改用 IP 位址。 使用 XBox、 HoloLens 或 IoT 裝置的 IP 位址。
+     如果您不能附加使用電腦名稱 (您選擇後**啟動**)，改為使用的 IP 位址。 使用 XBox、 HoloLens、 或 IoT 裝置的 IP 位址。
 
-5. 選擇如何選取中的選項來驗證**驗證模式**。
+5. 選擇如何藉由選取的選項中進行驗證**驗證模式**。
 
-    針對大部分的應用程式，請保留預設值， **Universal （未加密的通訊協定）**。
+    對於大多數的應用程式，請保留預設值，**通用 （未加密的通訊協定）**。
 
-6. 選取您想要在偵錯的應用程式名稱**執行**或**未執行**選擇**啟動**或 （適用於執行的應用程式）**附加**。
+6. 選取您想要在偵錯的應用程式名稱**執行**或是**未執行**，然後選擇 **啟動**或 （適用於執行應用程式）**附加**。
 
-     如果您選取**不啟動，但在啟動時，將我的程式碼進行偵錯**，這會導致 Visual Studio 偵錯工具附加至應用程式套件，當您啟動在自訂階段。 這是有效的方式來偵錯控制路徑從[不同啟動方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，例如使用自訂參數的通訊協定啟動。
+     如果您選取**不啟動，但啟動時，將我的程式碼進行偵錯**，這會導致 Visual Studio 偵錯工具附加至應用程式套件，當您啟動在自訂的時間。 這是偵錯中的控制路徑的有效辦法[不同的啟動方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，例如，使用自訂參數的通訊協定啟用。
 
-     當您已連接 XBox、 HoloLens 或 IoT 裝置上安裝的應用程式封裝偵錯時第一次時，Visual Studio 會安裝您的目標裝置的遠端偵錯工具的正確版本。 這可能需要一些時間，您會看到一則訊息``Starting remote debugger``而發生此問題。
+     當您第一次偵錯連接 XBox、 HoloLens、 或 IoT 裝置上已安裝的應用程式套件時，Visual Studio 會安裝正確版本的目標裝置的遠端偵錯工具。 這可能需要一些時間，您會看到一則訊息``Starting remote debugger``而發生此問題。
 
      > [!NOTE]
-> 在存在、 XBox 或 HoloLens 裝置會重新啟動應用程式如果它已經在執行附加了偵錯工具。
+> 在存在、 XBox 或 HoloLens 裝置將會重新啟動應用程式偵錯工具附加，如果已在執行。
 
-在 UWP 應用程式的遠端部署的進階選項的資訊，請參閱[部署和偵錯 UWP 應用程式](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options)。 
+如需遠端部署的 UWP 應用程式的進階選項的資訊，請參閱 [部署和偵錯 UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)。 
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  

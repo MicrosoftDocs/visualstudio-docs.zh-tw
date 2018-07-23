@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078848"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154381"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。  
@@ -93,7 +93,7 @@ ms.locfileid: "39078848"
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 和對應的磁碟機  
  如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)並[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP 通訊協定 nt 支援如安裝應用程式  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援如安裝應用程式的 FTP 通訊協定  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  
   
 |URL 類型|描述|  

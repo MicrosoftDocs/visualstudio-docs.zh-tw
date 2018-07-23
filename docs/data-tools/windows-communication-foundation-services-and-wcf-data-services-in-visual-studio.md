@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175313"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178874"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供從 Visual Studio 的觀點來看 services 簡介。 如需完整的文件，請參閱[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)。
 
 ## <a name="what-is-wcf"></a>WCF 是什麼？
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 是用來建立安全、 可靠、 交易，且可互通的分散式應用程式的統一的架構。 它會取代較舊的處理序間通訊技術，例如 ASMX Web 服務、.NET 遠端處理、 Enterprise Services (DCOM) 及 MSMQ。 WCF 結合了統一的程式設計模型下的所有這些技術的功能。 這可簡化開發分散式應用程式的體驗。
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 是用來建立安全、 可靠、 交易，且可互通的分散式應用程式的統一的架構。 它會取代較舊的處理序間通訊技術，例如 ASMX web 服務、.NET 遠端處理、 Enterprise Services (DCOM) 及 MSMQ。 WCF 結合了統一的程式設計模型下的所有這些技術的功能。 這可簡化開發分散式應用程式的體驗。
 
 ### <a name="what-are-wcf-data-services"></a>WCF 資料服務有哪些？
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 是開放式資料 (OData) 通訊協定實作的標準。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您傳回資料，例如使用標準 HTTP 動詞命令 GET、 POST、 PUT 或 DELETE。 在伺服器端，WCF Data Services 正由取代[ASP.NET Web API](http://www.asp.net/web-api)用於建立新的 OData 服務。 WCF Data Services 用戶端程式庫仍然是不錯的選擇，以便使用.NET 應用程式從 Visual Studio 中的 OData 服務 (**專案&#124;加入服務參考**)。 如需詳細資訊，請參閱 < [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
@@ -90,7 +90,7 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
  您可以使用做為基礎的 WCF Visual Studio 範本快速建立您自己的服務。 您接著可以使用 WCF 服務自動主機和 WCF 測試用戶端偵錯和測試服務。 這些工具一起提供快速且方便的偵錯和測試循環，並排除在早期階段認可裝載模型的需求。
 
 #### <a name="wcf-templates"></a>WCF 範本
- WCF Visual Studio 範本會提供服務開發的基本類別結構。 會提供數個 WCF 範本**加入新的專案** 對話方塊。 其中包括 WCF 服務庫專案中，WCF 服務網站和 WCF 服務項目範本。
+ WCF Visual Studio 範本會提供服務開發的基本類別結構。 會提供數個 WCF 範本**加入新的專案** 對話方塊。 其中包括 WCF 服務 lLibrary 專案、 WCF 服務、 網站和 WCF 服務項目範本。
 
  當您選取範本時，就會將檔案新增的服務合約、 服務實作中，和服務組態。 已加入所有必要的屬性，建立服務的簡單"Hello World"型別，您不需要撰寫任何程式碼。 您當然會想要加入程式碼來提供函式和方法，為您實際的服務，但範本提供基本的基礎。
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059243"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179992"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 
@@ -96,7 +96,7 @@ ms.locfileid: "37059243"
 
 ## <a name="see-also"></a>另請參閱
 
-- [偵錯工具基礎](../debugger/debugger-basics.md)
+- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
 - [平行程式設計](/dotnet/standard/parallel-programming/index)
 - [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281062"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180460"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 
@@ -50,7 +50,7 @@ ms.locfileid: "36281062"
 
  **地址**
 
- 更新服務參考服務的尋找位置的 Web 位址。 比方說，在開發期間，服務可能會裝載程式開發伺服器上，然後稍後移到實際執行伺服器，並強迫變更位址。
+ 更新服務參考服務的尋找位置的 web 位址。 比方說，在開發期間，服務可能會裝載程式開發伺服器上，然後稍後移到實際執行伺服器，並強迫變更位址。
 
 > [!NOTE]
 > 位址 項目時不可以使用**設定服務參考** 對話方塊會顯示從**加入服務參考對話方塊**。
@@ -96,7 +96,7 @@ ms.locfileid: "36281062"
 
  **參考組件清單**
 
- 包含專案或網站的參考組件清單。 當您選取**重複使用指定的參考組件中的型別**，您可以選取或清除個別組件。
+ 包含一份參考組件的專案或網站。 當您選取**重複使用指定的參考組件中的型別**，您可以選取或清除個別組件。
 
  **加入 Web 參考**
 

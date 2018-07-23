@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056293"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178422"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>關於 Visual Studio 中的暫存器視窗
 **註冊** 視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點。  
@@ -52,4 +52,4 @@ ms.locfileid: "37056293"
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)   
- [偵錯工具基礎](../debugger/debugger-basics.md)
+ [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

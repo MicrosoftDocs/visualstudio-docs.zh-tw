@@ -3,13 +3,13 @@ title: 如何：連接至服務中的資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- data [Visual Studio], connecting to Web services
-- data sources, creating from Web services
-- data [Visual Studio], reading from Web services
-- reading data, from Web services
-- Web services, reading data
-- Web services, as data sources
-- Web services, connecting
+- data [Visual Studio], connecting to web services
+- data sources, creating from web services
+- data [Visual Studio], reading from web services
+- reading data, from web services
+- web services, reading data
+- web services, as data sources
+- web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: gewarren
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f90a99a387452500686af332edb1d112a88f82
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089114"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175695"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何： 連接到服務中的資料
 
