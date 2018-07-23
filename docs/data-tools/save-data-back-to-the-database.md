@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175326"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177340"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -185,7 +185,7 @@ ms.locfileid: "37175326"
     > [!NOTE]
     > 您可以避免配接器會自動認可變更，當您呼叫`Fill`方法，藉由設定`AcceptChangesDuringFill`屬性的介面卡`false`。 如果設定為`false`，則<xref:System.Data.DataRow.RowState%2A>填滿期間插入每個資料列會設為<xref:System.Data.DataRowState.Added>。
 
-- 之後您的資料集將變更傳送至另一個處理序，例如 XML Web service。
+- 之後您的資料集將變更傳送至另一個處理序，例如 XML web service。
 
     > [!CAUTION]
     > 認可變更，如此一來，就會清除任何變更資訊。 不認可後的變更直到您完成執行作業，需要您的應用程式知道在資料集中進行哪些變更。

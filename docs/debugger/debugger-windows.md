@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具 Visual Studio 中的視窗 |Microsoft 文件
+title: 在 Visual Studio 中的 Windows 偵錯工具 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481485"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178302"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具視窗
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具 Windows
 
-您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 **偵錯 > Windows**。
+您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下**偵錯 > Windows**。
 
 ||||
 |-|-|-|
@@ -51,4 +51,4 @@ ms.locfileid: "31481485"
 
 ## <a name="see-also"></a>另請參閱
 
-[偵錯工具基礎](../debugger/debugger-basics.md)
+[偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

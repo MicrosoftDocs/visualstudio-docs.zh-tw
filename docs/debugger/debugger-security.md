@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具安全性 |Microsoft 文件
+title: 偵錯工具安全性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0b97564c48255ea8b8f37e370402fa8f7499aa
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 640c127d9e82a78f629365141c5948d21eafcf3c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065002"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175991"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。  
@@ -39,7 +39,7 @@ ms.locfileid: "34065002"
 ### <a name="managed-debugging-security"></a>Managed 偵錯安全性  
  以下列出幾項適用所有 Managed 偵錯的一般建議：  
   
--   附加至未受信任的使用者處理序時要小心： 當您這樣做，您就會假設是值得信任。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 將附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+-   附加至未受信任的使用者處理序時要小心： 當您這樣做，您就會假設它是值得信任。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
   
 -   從網際網路下載專案並載入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "34065002"
   
  請勿在遠端電腦上偵錯未知的處理序：可能會有潛在弱點影響執行偵錯工具的電腦，或是危害 Visual Studio 遠端偵錯監視 (msvsmon.exe)。 如果您一定要偵錯未知的處理序，請嘗試在本機偵錯並使用防火牆以避免任何潛在的威脅。  
   
- 如需詳細資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](../debugger/remote-debugging.md)。  
   
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性  
  在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
@@ -81,6 +81,6 @@ ms.locfileid: "34065002"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [偵錯工具基礎](../debugger/debugger-basics.md)   
+ [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
  [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
  [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

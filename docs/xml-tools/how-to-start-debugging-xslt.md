@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548401"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178344"
 ---
 # <a name="how-to-start-debugging-xslt"></a>如何： 開始偵錯 XSLT
 
@@ -30,13 +30,13 @@ XSLT 偵錯工具可用於偵錯 XSLT 樣式表或 XSLT 應用程式。 偵錯�
 
 1. 在 [XML 編輯器] 中開啟樣式表。
 
-1. 選取**偵錯 XSL**從**XML**功能表。
+1. 選取 **偵錯 XSL**從**XML**功能表。
 
 ### <a name="to-start-debugging-from-an-xml-input-document"></a>若要從 XML 輸入文件開始偵錯
 
 1. 在 XML 編輯器中開啟 XML 文件。
 
-1. 選取**偵錯 XSL**從**XML**功能表。
+1. 選取 **偵錯 XSL**從**XML**功能表。
 
 ## <a name="xslt-from-other-languages"></a>其他語言的 XSLT
 
@@ -94,4 +94,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說： 偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [偵錯工具基礎](../debugger/debugger-basics.md)
+- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

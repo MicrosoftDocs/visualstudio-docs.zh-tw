@@ -1,5 +1,5 @@
 ---
-title: '&lt;組件&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+title: '&lt;組件&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815661"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080629"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;元素 （ClickOnce 部署）
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;項目 （ClickOnce 部署）
 部署資訊清單最上層項目。  
   
 ## <a name="syntax"></a>語法  
@@ -38,7 +38,7 @@ ms.locfileid: "34815661"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `assembly`元素是根項目，就需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間： `urn:schemas-microsoft-com:asm.v1`， `urn:schemas-microsoft-com:asm.v2`，和`http://www.w3.org/2000/09/xmldsig#`。 組件的子項目也必須是這些命名空間，繼承或標記。  
+ `assembly`元素是根項目，且需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間： `urn:schemas-microsoft-com:asm.v1`， `urn:schemas-microsoft-com:asm.v2`，和`http://www.w3.org/2000/09/xmldsig#`。 組件的子項目也必須是這些命名空間，繼承或標記。  
   
  `assembly`項目具有下列屬性。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "34815661"
 |`manifestVersion`|必要。 此屬性必須設為`1.0`。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`assembly`部署使用的應用程式的部署資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 這個程式碼範例是針對所提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
+ 下列程式碼範例說明`assembly`部署使用的應用程式的部署資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 此程式碼範例是針對提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
   
 ```xml  
 <asmv1:assembly   
