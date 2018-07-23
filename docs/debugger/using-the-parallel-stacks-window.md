@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: HT
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058733"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176963"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>檢視往來文章和使用平行堆疊 視窗的工作
 **平行堆疊**視窗會很有用，當您偵錯多執行緒應用程式。 其**執行緒檢視**顯示您的應用程式中的所有執行緒的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼 **[工作] 檢視**顯示呼叫堆疊的<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件。 原生程式碼，在 **[工作] 檢視**顯示呼叫堆疊[工作群組](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[平行演算法](/cpp/parallel/concrt/parallel-algorithms)，[非同步代理程式](/cpp/parallel/concrt/asynchronous-agents)，以及[輕量型工作](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -118,7 +118,7 @@ ms.locfileid: "37058733"
 ## <a name="see-also"></a>另請參閱  
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)   
  [逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [偵錯工具基礎](../debugger/debugger-basics.md)   
+ [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [平行程式設計](/dotnet/standard/parallel-programming/index)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)   
