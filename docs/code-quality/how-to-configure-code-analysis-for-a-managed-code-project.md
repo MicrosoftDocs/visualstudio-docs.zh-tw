@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179556"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204228"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：設定 Managed 程式碼專案的程式碼分析
 
-在 Visual Studio 中，您可以從清單中選擇的程式碼分析*規則集*来套用至 managed 程式碼專案。 預設規則集*Microsoft 最小建議規則*。 您可以套用設定至專案或方案中的所有專案的另一個規則。
+在 Visual Studio 中，您可以從清單中選擇的程式碼分析[規則集](../code-quality/rule-set-reference.md)) 套用至 managed 程式碼專案。 根據預設， **Microsoft 最小建議規則**選取規則集，但您可以套用不同的規則集有需要。 規則集可以套用至解決方案中的一或多個專案中。
 
 > [!TIP]
 > 如需如何設定 ASP.NET web 應用程式設定的規則的詳細資訊，請參閱[如何： 設定程式碼分析 asp.net web 應用程式](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
@@ -76,4 +76,5 @@ ms.locfileid: "39179556"
 
 ## <a name="see-also"></a>另請參閱
 
+- [程式碼分析規則集參考](../code-quality/rule-set-reference.md)
 - [如何： 設定 ASP.NET web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

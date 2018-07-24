@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的程式碼分析規則集
+title: 程式碼分析規則集
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e727fd331ebd98a74acbb63738e6921e5ad1a0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923051"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204423"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
-當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集套用至專案，並是一群的程式碼分析規則，識別目標的問題以及該專案的特定條件。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或最小建議規則。 您也可以套用的規則集包含的所有規則。
+當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集適用於專案，而且是一組的程式碼分析規則，識別目標的問題，以及該專案的特定條件。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或只是最小建議規則。 您也可以套用的規則集包含所有規則。
 
-您可以自訂規則集中加入或刪除規則，或變更規則的重要性顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足特定的開發環境的需要。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序中。
+您可以自訂規則集顯示為警告或錯誤中的新增或刪除規則，或變更規則嚴重性**錯誤清單**。 自訂的規則集可滿足您特定的開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序。
+
+規則集可供[的 managed 程式碼靜態分析](how-to-configure-code-analysis-for-a-managed-code-project.md)， [c + + 程式碼分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，並[Roslyn 分析器](analyzer-rule-sets.md)。
 
 ## <a name="rule-set-format"></a>規則集格式
 
-中的 XML 格式中指定的規則集 *.ruleset*檔案。 包含識別碼的規則和*動作*，依分析器 ID 和檔案中的命名空間加以分組。
+中的 XML 格式中指定的規則集 *.ruleset*檔案。 包含識別碼的規則和*動作*，依據分析器 ID 和檔案中的命名空間。
 
-XML 內容 *.ruleset*檔案看起來類似這樣：
+內容 *.ruleset*檔案看起來類似此 XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,9 +56,9 @@ XML 內容 *.ruleset*檔案看起來類似這樣：
 ```
 
 > [!TIP]
-> 更輕鬆地[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)圖形**規則集編輯器**比以手動方式。
+> 更輕鬆地[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)中的圖形**規則集編輯器**比以手動方式。
 
-規則集的專案由指定`CodeAnalysisRuleSet`Visual Studio 專案檔中的屬性。 例如: 
+規則集的專案由**CodeAnalysisRuleSet** Visual Studio 專案檔中的屬性。 例如: 
 
 ```xml
 <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>

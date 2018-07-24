@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具內容 |Microsoft 文件
+title: 偵錯工具內容 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9310512417ac0e24046a1b7bcc1fd92099fe98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49af504b27afc6171a914d9559a5ff83f3d595eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099414"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204098"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，偵錯引擎 (DE) 運作方式同時在數種不同的內容，如下：  
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，偵錯引擎 (DE) 同時會在內部運作數種不同的內容，，如下所示：  
   
--   程式碼內容，描述在程式的執行資料流中目前的位置。  
+-   程式碼內容，說明該應用程式的執行資料流中目前的位置。  
   
 -   文件內容的位置，其中描述來源文件中目前的位置。  
   
@@ -31,16 +31,16 @@ ms.locfileid: "31099414"
   
 ## <a name="in-this-section"></a>本節內容  
  [程式碼內容](../../extensibility/debugger/code-context.md)  
- 討論程式碼內容，為程式的指令資料流在現今的執行階段架構社會語言，與其中的程式碼可能不會顯示所需的指示，但其他方式的位址。  
+ 在現今的執行階段架構與非傳統任務為語言，其中的程式碼可能不會表示所需的指示，但其他方式的程式的指令資料流中的地址為討論程式碼內容。  
   
  [文件位置](../../extensibility/debugger/document-position.md)  
- 定義文件位置，在 Visual Studio 偵錯透過抽象概念的原始程式檔，因為知道在 IDE 中的位置。  
+ 定義在 Visual Studio 偵錯中透過 ide 中眾所周知的原始程式檔中的某個位置的抽象概念的文件位置。  
   
  [文件內容](../../extensibility/debugger/document-context.md)  
- 討論在 Visual Studio 偵錯相對於原始程式檔中表示哪些文件內容。 也會討論如何符號處理常式對應至文件內容的程式碼內容。  
+ 討論哪些文件內容代表 Visual Studio 偵錯相對於原始程式檔中。 也會討論如何符號處理常式對應至文件內容的程式碼內容。  
   
  [運算式評估內容](../../extensibility/debugger/expression-evaluation-context.md)  
- 提供 Visual Studio 中，運算式評估內容相關資訊。 例如，堆疊框架相關聯的運算式評估內容提供內容評估本機變數、 方法參數和類別成員。  
+ 提供在 Visual Studio 中，運算式評估內容的相關資訊。 例如，堆疊框架相關聯的運算式評估內容提供的內容評估區域變數、 方法參數和類別成員。  
   
 ## <a name="related-sections"></a>相關章節  
  [偵錯概念](../../extensibility/debugger/debugger-concepts.md)  
