@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: 設定 Windows 防火牆以進行遠端偵錯
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: 解除封鎖 Windows Server 上的下載
+          href: remote-debugging-unblock-file-download.md
         - name: 遠端偵錯錯誤和疑難排解
           href: remote-debugging-errors-and-troubleshooting.md
           items:
