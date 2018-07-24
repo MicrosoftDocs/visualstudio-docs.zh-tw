@@ -46,7 +46,7 @@ ms.locfileid: "33877328"
 
 1. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。 
 
-     另外還有三個檔案：- **host.json** 用於描述主機的全域組態選項 - **local.settings.json** 用於進行服務設定。 
+     另外還有三個檔案： - **host.json** 用於描述主機的全域組態選項 - **local.settings.json** 用於進行服務設定。 
         - 專案範本也會建立預設 HttpTrigger。 為了此實驗室，您應該從專案刪除 **HttpTrigger.cs** 檔案。
 
     開啟 **local.settings.json**。 預設會有兩個空的連接字串設定。
