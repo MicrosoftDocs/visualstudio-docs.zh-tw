@@ -2,7 +2,7 @@
 title: 建立原生物件的自訂檢視
 description: 自訂 Visual Studio 偵錯工具顯示原生類型的方式使用 Natvis 架構
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433570"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204241"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立原生物件的自訂檢視
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視窗中顯示原生類型的方式 (例如**監看式** 視窗中，**區域變數**視窗中，然後在**資料提示方塊**。
@@ -631,7 +631,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
 </Type>  
 ```  
   
- 您可以在用來檢視記憶體內部點陣圖影像的 Image Watch 擴充功能中看到 UIVisualizer 的範例： [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ 您可以看到用來檢視記憶體中點陣圖的 Image Watch 擴充功能中的 UIVisualizer 的範例： [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer 項目  
  `CustomVisualizer` 是指定 VSIX 擴充功能的擴充點，您可以撰寫此擴充來控制在 Visual Studio 中執行之程式碼的視覺化。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 撰寫自訂視覺化檢視是比撰寫 XML natvis 定義花更多的心力，但您不會遭受有關哪些 natvis 支援或不支援的條件約束。 自訂視覺化檢視可以存取完整的偵錯工具擴充性 API 集，這可用於查詢和修改偵錯項目處理序或與 Visual Studio 的其他組件通訊。  
