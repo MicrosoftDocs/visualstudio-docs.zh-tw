@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38652b0273aed3712afbb05b4795cb2419bde747
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e0c5e29260affb31d94d702fc19dad7704e3c110
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946647"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176170"
 ---
 # <a name="formaturl-task"></a>FormatUrl 工作
 將 URL 轉換為正確的 URL 格式。  
