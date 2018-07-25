@@ -10,19 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0687b4f56906aeca0866f8d5d6ad7d329bb84df6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844465"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
 
-根據預設，您要使用下列語法來儲存程式碼剖析資料 (.vsp) 檔案：
+根據預設，您要使用下列語法來儲存分析資料檔 (.*vsp*)：
 
 *Path\VSP-File\YYMMDD(N)* **.vsp**
 
-您可以在效能工作階段中屬性對話方塊的 [一般] 頁面上，變更任何命名參數。
+您可以在效能工作階段中 [屬性] 對話方塊的 [一般] 頁面上，變更任何命名參數。
 
 |||
 |-|-|

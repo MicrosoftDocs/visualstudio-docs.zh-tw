@@ -1,7 +1,7 @@
 ---
 title: 選取並安裝 Python 解譯器
 description: Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851847"
 ---
 # <a name="installing-python-interpreters"></a>安裝 Python 解譯器
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/07/2018
 
 針對 **Visual Studio 2015 及更早版本**，您必須安裝其中一個解譯器。
 
-Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄中的 Python 註冊](https://www.python.org/dev/peps/pep-0514/) \(英文\))，以自動偵測每個安裝的 Python 解譯器與其環境。
+Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Windows 登錄中的 Python 註冊) 檢查登錄，以自動偵測每個安裝的 Python 解譯器與其環境。 Python 安裝通常位於 `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 位元) 和 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 位元) 下如 "PythonCore" (CPython) 和 "ContinuumAnalytics" (Anaconda) 等要散發的節點內。
 
 如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 

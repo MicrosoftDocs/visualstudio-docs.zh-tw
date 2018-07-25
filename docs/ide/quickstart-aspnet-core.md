@@ -2,7 +2,7 @@
 title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,17 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089295"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 C# ASP.NET Core Web 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 05/11/2018
 
    ![移至定義操作功能表](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. 接下來，我們將會使用簡單捷徑來清除檔案頂端的 `using` 指示詞。 選擇任何灰色 using 指示詞，而且[快速動作](../ide/quick-actions.md)燈泡會顯示在插入點正下方或左邊界中。 選擇燈泡，然後選擇 [移除不必要的 Using]。
+1. 接下來，使用簡單捷徑來清除檔案頂端的 `using` 指示詞。 選擇任何灰色 using 指示詞，而且[快速動作](../ide/quick-actions.md)燈泡會顯示在插入點正下方或左邊界中。 選擇燈泡，然後選擇 [移除不必要的 Using]。
 
      不必要的 using 會從檔案中刪除。
 
@@ -86,7 +87,10 @@ ms.lasthandoff: 05/11/2018
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Studio IDE。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。
 
 ## <a name="next-steps"></a>後續步驟
-恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要深入了解，請繼續下列教學課程。
+
+恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要查看公用伺服器上執行的應用程式，請選取下列按鈕。
 
 > [!div class="nextstepaction"]
-> [Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)
+> [將應用程式部署至 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+若要進一步了解，請繼續進行教學課程，[Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)和[ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)。

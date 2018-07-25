@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745681"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924326"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：建立基本 3D 模型
 
@@ -52,7 +52,7 @@ ms.locfileid: "34745681"
 
      ![細分立方體的頂端](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  使立方體的兩個相鄰面立體化，例如立方體的前面與右邊。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體的某一面。 按住 Control 鍵，在立方體選擇和您最先選取的面相鄰的另一面，然後在 [模型編輯器] 工具列上，選擇 [使表面立體化]。
+5.  使立方體的兩個相鄰面立體化，例如立方體的前面與右邊。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體的某一面。 按住 **Ctrl** 鍵，在立方體選擇和您最先選取的面相鄰的另一面，然後在 [模型編輯器] 工具列上，選擇 [使表面立體化]。
 
      ![將立方體的側邊立體化](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ ms.locfileid: "34745681"
 
      ![進一步將立方體的其中一邊立體化。](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  將模型分成三角形。 在 [模型編輯器] 工具列上，選擇 [進階]、[工具]、[分成三角形]。
+7.  將模型分成三角形。 在 [模型編輯器] 工具列上，選擇 [進階] > [工具] > [分成三角形]。
 
-8.  建立房屋的屋頂。 在 [模型編輯器] 工具列上，選擇 [選取邊緣]，然後選取立方體來加以啟動，切換至邊緣選取模式。 按住 Control 鍵，並選取如下所示的邊緣︰
+8.  建立房屋的屋頂。 在 [模型編輯器] 工具列上，選擇 [選取邊緣]，然後選取立方體來加以啟動，切換至邊緣選取模式。 按住 **Ctrl** 鍵，並選取如下所示的邊緣︰
 
      ![即將成為屋頂頂端的邊緣](../designers/media/gfx_model_demo_house_edges.png)
 
@@ -72,10 +72,10 @@ ms.locfileid: "34745681"
 
  ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
 
- 下一步可以將著色器套用至這個 3D 模型。 如需詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+ 下一步可以將著色器套用至這個 3D 模型。 如需資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)
 - [模型編輯器](../designers/model-editor.md)
 - [著色器設計工具](../designers/shader-designer.md)

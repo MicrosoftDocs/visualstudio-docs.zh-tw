@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255154"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/19/2018
   
  您可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中將效能工作階段設定為專案方案的一部分，或透過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 剖析任意二進位檔。 您可以在 [效能工作階段] 屬性頁中指定工作階段屬性，或使用程式碼剖析精靈。  
   
-## <a name="collect-profiling-data"></a>收集程式碼剖析資料  
+## <a name="collect-profiling-data"></a>收集分析資料  
  您可以從 [效能總管] 開始收集程式碼剖析資料。 您可以暫停和繼續分析，以限制資料收集量。 您也可以附加至已在執行中的處理序。  
   
  只要一啟動應用程式，[資料收集控制] 視窗即會出現在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中。 從 [資料收集控制] 視窗中，藉由暫停和繼續收集處理序，即可對應用程式的特定部分進行程式碼剖析。 您也可以使用 [資料收集控制] 視窗，將標記插入收集到的資料中。 標記是使用者定義的資料點，這些資料點會顯示在程式碼剖析檢視中，而且可以用來篩選程式碼剖析資料。  
@@ -68,12 +69,12 @@ ms.lasthandoff: 04/19/2018
 ## <a name="modify-the-application-code"></a>修改應用程式程式碼  
  在隔離出一個或多個相關效能問題後，您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 修改程式碼，然後再收集變更的程式碼剖析資料。  
   
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>再度收集程式碼剖析資料並比較程式碼剖析執行間的資料  
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>再度收集分析資料並比較分析回合間的資料  
  程式碼剖析工具的 [比較報告] 檢視顯示兩個選取的程式碼剖析資料檔間，在模組、函式或程式行方面的差異。 您可以指定要比較的程式碼剖析資料值，並可以在 [比較] 檢視和個別檔案檢視之間進行切換。  
   
-## <a name="generate-a-report-of-the-results"></a>產生結果報告  
+## <a name="generate-a-report-of-the-results"></a>產生結果報表  
  您可以將任何效能報告檢視的資料列貼入電子郵件和試算表中，而且可以產生包含一個或多個檢視資料的報告。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)

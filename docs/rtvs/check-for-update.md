@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 20811c10ddad6df18512f23aa1312f154c2e294b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8bd48533cd50b198ce8e70819fa4bb5d991b098e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235261"
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
@@ -30,4 +31,4 @@ ms.lasthandoff: 04/19/2018
 
 請參閱[安裝](installing-r-tools-for-visual-studio.md)以取得 Visual Studio 和 Windows 的需求。
 
-如需 Microsoft R Open 和 Microsoft R Server 的更新，請參閱︰[Microsoft R 產品。](http://aka.ms/rtvs-msft-r)
+如需 Microsoft R Open 和 Microsoft Machine Learning Server (先前稱為 Microsoft R Server) 的更新，請參閱 [Microsoft R 產品](http://aka.ms/rtvs-msft-r)。

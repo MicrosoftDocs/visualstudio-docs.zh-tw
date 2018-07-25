@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fac1ce26c95d0a0c51c77e6ca1525d034a4e01f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8a3e2df1097705025fd108f356ca7f307ffe6e51
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578259"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945413"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -37,7 +37,7 @@ ms.locfileid: "31578259"
         Outputs="hello.exe">  
     ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 hello.exe 檔案新，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將執行目標，否則將會略過︰  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 *hello.exe* 檔案新，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會執行目標，否則將會予以略過︰  
   
 ```xml  
 <Target Name="Build"   
@@ -55,15 +55,16 @@ ms.locfileid: "31578259"
 > [!NOTE]
 >  輸入和輸出之間沒有直接對應的目標，一律會比每個輸出對應只能對應到一個輸入的目標更常建置，因為 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 無法判斷某些輸入變更的情況下，哪些輸出需要重建。  
   
- 您可以識別輸出和輸入之間有直接對應的工作，例如 [LC 工作](../msbuild/lc-task.md)，最適合進行累加建置，而不像 `Csc` 和 [Vbc](../msbuild/vbc-task.md) 之類的工作，它們會從許多輸入產生一個輸出組件。  
+ 您可以識別輸出和輸入之間有直接對應的工作，例如 [LC 工作](../msbuild/lc-task.md)，最適合進行累加建置，而不像 [Csc](../msbuild/csc-task.md) 和 [Vbc](../msbuild/vbc-task.md) 之類的工作，它們會從許多輸入產生一個輸出組件。  
   
 ## <a name="example"></a>範例  
- 下列範例使用為假定說明系統建置說明檔的專案。 專案的運作方式是將來源的 .txt 檔案轉換成中繼 .content 檔案，然後與 XML 中繼資料檔案結合以產生說明系統所使用的最終 .help 檔案。 專案會使用下列假定的工作︰  
+ 下列範例使用為假定說明系統建置說明檔的專案。 專案的運作方式是將來源的 *.txt* 檔案轉換成中繼 *.content* 檔案，然後與 XML 中繼資料檔案結合以產生說明系統所使用的最終 *.help* 檔案。 專案會使用下列假定的工作︰  
   
--   `GenerateContentFiles`︰將 .txt 檔案轉換為 content 檔案。  
+-   `GenerateContentFiles`︰將 *.txt* 檔案轉換為 *.content* 檔案。  
   
--   `BuildHelp`︰結合 .content 檔案和 XML 中繼資料檔案，建置最終的 .help 檔案。  
+-   `BuildHelp`︰結合 *.content* 檔案和 XML 中繼資料檔案，建置最終的 *.help* 檔案。  
   
+
  專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。  
   
  這個專案檔同時包含 `Convert` 和 `Build` 目標。 `GenerateContentFiles` 和 `BuildHelp` 工作分別放在 `Convert` 和 `Build`目標，以便能以累加方式建置每個目標。 藉由使用 `Output` 項目，`GenerateContentFiles` 工作的輸出會放在 `ContentFile` 項目清單，在這裡它們可以作為 `BuildHelp` 工作的輸入。 這樣使用 `Output` 項目，會自動提供一個工作的輸出作為另一個工作的輸入，您便不需要以手動方式在每個工作列出個別項目或項目清單。  
@@ -103,7 +104,7 @@ ms.locfileid: "31578259"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [轉換](../msbuild/msbuild-transforms.md)   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747114"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924352"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 
@@ -29,7 +29,7 @@ ms.locfileid: "34747114"
 
 1.  建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。
 
-2.  刪除 [點色彩] 節點。 使用 [選取] 工具，選取 [點色彩] 節點，然後在功能表列上，選取 [編輯]、[刪除]。
+2.  刪除 [點色彩] 節點。 使用 [選取] 工具，選取 [點色彩] 節點，然後在功能表列上，選擇 [編輯] > [刪除]。
 
 3.  將 [色彩常數] 節點加入圖形。 在 [工具箱] 的 [常數] 下，選取 [色彩常數]，然後將其移至設計介面。
 

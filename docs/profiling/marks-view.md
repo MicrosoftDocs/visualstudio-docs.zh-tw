@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1008f09e7511a26613b6cb5984513c1d049f61ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237623"
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
  下表提供 [標記] 檢視中可用資料行的定義。  
   
  **標記 ID**  
- 分析標記的「唯一識別碼」。  
+ 分析標記的唯一識別碼。  
   
  **標記名稱**  
  事件的名稱。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
  Windows 效能計數器資料  
  收集 Windows 效能計數器資料時，值會顯示在含有計數器名稱的資料行中。  
   
-## <a name="see-also"></a>請參閱  
- [效能報告概觀](../profiling/performance-report-overview.md)   
+## <a name="see-also"></a>另請參閱  
+ [效能報表概觀](../profiling/performance-report-overview.md)   
  [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; 資料收集控制項視窗](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

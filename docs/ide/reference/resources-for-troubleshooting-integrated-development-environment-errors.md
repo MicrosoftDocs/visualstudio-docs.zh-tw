@@ -1,5 +1,5 @@
 ---
-title: 用於疑難排解整合式開發環境錯誤的資源
+title: 針對錯誤進行疑難排解的資源
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106917"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302622"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 
-並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。
+並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、論壇或產品支援這類其他資源。
 
 ## <a name="knowledge-base-articles"></a>知識庫文章
 
 您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [Microsoft 支援服務](https://support.microsoft.com)網站存取 KB 文章。
 
-## <a name="the-developer-community"></a>開發人員社群
+## <a name="developer-forums"></a>開發人員論壇
 
 論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。
 

@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924840"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079470"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 
 本文件所描述的 Visual Studio 工具，可用來建立或修改 DirectX 遊戲和應用程式的 3D 模型、紋理和著色器。
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 應用程式開發
- DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，加上音訊和 3D 視覺資產，以呈現豐富的互動式多媒體體驗。Visual Studio 包含的工具，可讓您用以處理影像和紋理、3D 模型及著色器，不用離開 IDE 即可使用其他工具。 Visual Studio 工具特別適用於建立「預留位置」資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
+ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，以及音訊和 3D 視覺效果資產，以呈現豐富的互動式多媒體體驗。 Visual Studio 包含的工具可用來處理影像和紋理、3D 模型以及著色器，而且不需要離開 IDE 就能使用另一個工具。 Visual Studio 工具特別適用於建立「預留位置」資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
 
  以下是有關可在 Visual Studio 中使用之資產類型的詳細資訊。
 

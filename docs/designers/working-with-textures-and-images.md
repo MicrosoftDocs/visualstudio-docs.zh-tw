@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925507"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079656"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
 
 您可以使用 Visual Studio 中的影像編輯器來建立和修改紋理和影像。 影像編輯器支援豐富的紋理和影像格式，如同在 DirectX 應用程式開發中所使用的一樣。
 
 > [!NOTE]
-> 影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這種影像，請使用[圖示影像編輯器 (C++)](/cpp/windows/image-editor-for-icons)。
+> 影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這類影像，請使用[圖示影像編輯器 (C++)](/cpp/windows/image-editor-for-icons)。
 
 ## <a name="textures-and-images"></a>紋理和影像
 

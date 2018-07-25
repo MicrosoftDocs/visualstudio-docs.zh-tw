@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d83891ff17ae1dfef7985ba4e8b28688a294e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8151c697ebe431da8799d4da98eceb1a00dd526
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923194"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977494"
 ---
 # <a name="image-editor-examples"></a>影像編輯器範例
 

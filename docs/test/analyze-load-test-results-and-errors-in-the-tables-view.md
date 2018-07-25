@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3820e1d7ef4294b4c46e0e7d0174a89dfe5b0e75
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2599968aad98339014182edf21282a4e5e26fbcf
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978784"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234516"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -74,7 +74,7 @@ ms.locfileid: "31978784"
 
 |資料行|描述|預設為可見|
 |------------|-----------------|------------------------|
-|**要求**|要求的 URL。 例如：home.html 或 orange-arrow.gif。|[是]|
+|**要求**|要求的 URL。 例如：*home.html* 或 *orange-arrow.gif*。|[是]|
 |**案例**|情節的名稱。|[是]|
 |**測試**|測試的名稱。|[是]|
 |**總計**|負載測試回合期間發出的此 Web 效能測試要求總數。 這個總數包含成功和失敗的要求，但不包含快取的要求，因為快取的要求並未發給 Web 伺服器。|[是]|
@@ -116,7 +116,7 @@ ms.locfileid: "31978784"
  下表列出 [異動] 資料表中的資料行。
 
 > [!NOTE]
-> 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資訊，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+> 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資料，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 |資料行|描述|可見 (不含計時詳細資料)|
 |------------|-----------------|------------------------------------|
@@ -153,7 +153,7 @@ ms.locfileid: "31978784"
 
  如需詳細資訊，請參閱[使用負載測試資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
-### <a name="drilling-down-to-the-error-list"></a>向下切入錯誤清單
+### <a name="drill-down-to-the-error-list"></a>向下切入錯誤清單
 
 錯誤資料表會根據錯誤的類型與子類型，將錯誤分組。 若要檢視個別錯誤的資料表，請顯示 [負載測試錯誤] 對話方塊。 若要顯示這個對話方塊，請選擇錯誤資料表的 [計數] 資料行中的超連結。 您也可以在已填入的錯誤資料表中，以滑鼠右鍵按一下資料列，然後選擇 [錯誤] 顯示對話方塊。
 
@@ -194,21 +194,21 @@ ms.locfileid: "31978784"
 
    顯示的資料行如下所示：
 
-    - 事件類別
+    - **事件類別**
 
-    - 持續期間
+    - **持續期間**
 
-    - CPU
+    - **CPU**
 
-    - 讀取
+    - **讀取**
 
-    - 寫入
+    - **寫入**
 
-    - 文字資料
+    - **TextData**
 
-    - 開始時間
+    - **StartTime**
 
-    - 結束時間
+    - **EndTime**
 
    如果您想要追蹤這些資料行所識別之資料以外的 SQL 事件，可以使用 SQL Profiler 工具 (與 Visual Studio 分開的獨立工具) 設定自訂 SQL 追蹤。
 
@@ -226,13 +226,13 @@ ms.locfileid: "31978784"
 
 2. 在 [負載測試分析器] 工具列上，選擇 [配置] 按鈕，然後選擇下列其中一個選項：
 
-    - 一個面板
+    - **一個面板**
 
-    - 兩個水平面板
+    - **兩個水平面板**
 
-    - 三個水平面板
+    - **三個水平面板**
 
-    - 四個水平面板
+    - **四個水平面板**
 
 3. 若要在不同的資料表之間切換，請使用每個面板中資料表方格上方的下拉式清單。
 
@@ -243,7 +243,7 @@ ms.locfileid: "31978784"
 
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)
-- [在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)

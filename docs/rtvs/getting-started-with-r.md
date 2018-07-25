@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235288"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="create-an-r-project"></a>建立 R 專案
 
 1. 啟動 Visual Studio。
-1. 選擇 [檔案] > [新增] > [專案...](Ctrl+Shift+N)
+1. 選擇 檔案 > 新增 > 專案 (**Ctrl**+**Shift**+**N**)
 1. 從 [範本] > [R] 下選取 [R 專案]、提供專案名稱和位置，然後選取 [確定]：
 
    ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>瀏覽 Interactive 視窗和 IntelliSense
 
-1. 藉由輸入 `3 + 4` 然後按 Enter 鍵查看結果，測試互動式視窗是否在運作中︰
+1. 藉由鍵入 `3 + 4` 然後按 **Enter** 鍵查看結果，測試互動式視窗是否在運作中︰
 
     ![Visual Studio 2017 (VS2017) 中的 R 互動視窗](media/getting-started-02-interactive1.png)
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/26/2018
 
     ![Visual Studio R 的其他互動式範例](media/getting-started-03-interactive2.png)
 
-1. 輸入 `mean(ds)`，但請注意，只要您輸入 `m` 或 `me`，Visual Studio IntelliSense 就會提供自動完成的選項。 在清單中選取您想要的完成時，按 Tab 鍵插入。您可以使用方向鍵或滑鼠變更選取範圍。
+1. 輸入 `mean(ds)`，但請注意，只要您輸入 `m` 或 `me`，Visual Studio IntelliSense 就會提供自動完成的選項。 在清單中選取您想要的完成時，按 **Tab** 鍵插入。您可以使用方向鍵或滑鼠變更選取範圍。
 
     ![您輸入程式碼時會顯示 IntelliSense](media/getting-started-04-intellisense1.png)
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 簡短地使用互動式視窗，示範了也適用於程式碼編輯器的基本編輯功能，例如 IntelliSense。 如果您如同之前一樣輸入相同的程式碼，您會看到相同的自動完成和 IntelliSense 提示，但輸出不會相同。
 
-在 `.R` 檔案中撰寫程式碼可讓您一次看到所有程式碼，並且能較輕鬆地進行細微變更，然後快速在互動式視窗中執行程式碼，以查看結果。 您也可以在專案中有任意數目的檔案。 當程式碼在檔案中時，您也可以在偵錯工具中逐步執行程式碼 (在本文中稍後討論)。 當您開發計算演算法並撰寫程式碼來管理一或多個資料集時，尤其是當您想要檢查所有中繼結果時，這些功能很有幫助。
+在 *.R* 檔案中撰寫程式碼可讓您一次看到所有程式碼，並且能較輕鬆地進行細微變更，然後快速在互動式視窗中執行程式碼，以查看結果。 您也可以在專案中有任意數目的檔案。 當程式碼在檔案中時，您也可以在偵錯工具中逐步執行程式碼 (在本文中稍後討論)。 當您開發計算演算法並撰寫程式碼來管理一或多個資料集時，尤其是當您想要檢查所有中繼結果時，這些功能很有幫助。
 
 舉例來說，下列步驟會建立一些程式碼來探索 [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem) (中央限制理論) (Wikipedia)。 (這個範例取自於 Paul Teetor 的 *R Cookbook*。)
 
@@ -85,14 +86,14 @@ ms.lasthandoff: 04/26/2018
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. 若要快速查看結果，請選取所有程式碼 (Ctrl + A)，然後按 Ctrl + Enter 鍵或以滑鼠右鍵按一下並選取 [以互動方式執行]。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
+1. 若要快速查看結果，請選取所有程式碼 (**Ctrl**+**A**)，然後按 **Ctrl**+**Enter** 鍵或以滑鼠右鍵按一下並選取 [以互動方式執行]。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
 
     ![在 Visual Studio 中顯示繪圖](media/getting-started-08-plot1.png)
 
-1. 對於某一行，隨時按 Ctrl + Enter，在互動式視窗中執行這一行。
+1. 針對某一行，隨時按 **Ctrl**+**Enter**，在互動式視窗中執行這一行。
 
 > [!Tip]
-> 了解進行編輯並按 Ctrl + Enter 鍵 (或用 Ctrl + A 選取所有項目，然後按 Ctrl + Enter 鍵) 以快速執行程式碼的模式。 這樣做會比使用滑鼠進行相同的作業更有效率。
+> 了解進行編輯並按 **Ctrl**+**Enter** 鍵 (或用 **Ctrl**+**A** 選取所有項目，然後按 **Ctrl**+**Enter** 鍵) 以快速執行程式碼的模式。 這樣做會比使用滑鼠進行相同的作業更有效率。
 > 
 > 此外，您可以將繪圖視窗從 Visual Studio 框架拖曳出來，放在顯示畫面上您想要的其他任何地方。 您可以輕鬆地將繪圖視窗調整成您想要的尺寸，然後將它儲存成影像或 PDF 檔案。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
     lines(density(samp.means))
     ```
 
-1. 再次按 Ctrl + A 和 Ctrl + Enter，執行程式碼以產生下列結果︰
+1. 再次按 **Ctrl**+**A** 和 **Ctrl**+**Enter**，執行程式碼以產生下列結果︰
 
     ![Visual Studio 中的更新雙重繪圖](media/getting-started-09-plot2.png)
 
@@ -126,23 +127,23 @@ ms.lasthandoff: 04/26/2018
     lines(density(samp.means))
     ```
 
-1. 再次按 Ctrl + A 和 Ctrl + Enter 鍵，查看結果︰
+1. 再次按 **Ctrl**+**A** 和 **Ctrl**+**Enter** 鍵，查看結果︰
 
     ![Visual Studio 中的更新雙重繪圖，比例正確](media/getting-started-10-plot3.png)
 
-您在編輯器中還可以做其他事。 如需詳細資訊，請參閱[編輯程式碼](editing-r-code-in-visual-studio.md)、[IntelliSense](r-intellisense.md)和[程式碼片段](code-snippets-for-r.md)。
+您在編輯器中還可以做其他事。 如需詳細資料，請參閱[編輯 R 程式碼](editing-r-code-in-visual-studio.md)、[IntelliSense](r-intellisense.md) 和[程式碼片段](code-snippets-for-r.md)。
 
-## <a name="debugging-your-code"></a>偵錯您的程式碼
+## <a name="debug-your-code"></a>偵錯程式碼
 
-Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項強固的基礎上，並新增了創新的 UI，例如[變數總管和資料表檢視器](variable-explorer.md)。 在這裡，我們只是初探一下偵錯。
+Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項強固的基礎上，並新增創新的 UI，例如[變數總管](variable-explorer.md)。 在這裡，我們只是初探一下偵錯。
 
-1. 若要開始，請重設目前的工作區，清除到目前為止已經進行的一切，方法是使用 [R 工具] > [工作階段] > [重設] 功能表命令。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設] 並不會影響您的 `script.R` 原始程式檔，因為它是在工作區之外管理和儲存。
+1. 若要開始，請重設目前的工作區，清除到目前為止已經進行的一切，方法是使用 [R 工具] > [工作階段] > [重設] 功能表命令。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設] 並不會影響您的 *script.R* 來源檔案，因為它是在工作區之外管理和儲存。
 
-1. 使用上一節中所建立的 `script.R` 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 F9 鍵，或選取 [偵錯] > [切換中斷點] 功能表命令。 或者，只要按一下出現紅色中斷點的那一行的左邊界 (或裝訂邊)︰
+1. 使用上一節中所建立的 *script.R* 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 **F9** 鍵，或選取 [偵錯] > [切換中斷點] 功能表命令。 或者，只要按一下出現紅色中斷點的那一行的左邊界 (或裝訂邊)︰
 
     ![在編輯器中設定中斷點](media/getting-started-11-debug1.png)
 
-1. 使用 `script.R` 中的程式碼啟動偵錯工具，方法是選取工具列上的 [執行啟動檔案] 按鈕、選取 [偵錯] > [執行啟動檔案] 功能表項目，或按 F5 鍵。 Visual Studio 會進入偵錯模式，並開始執行程式碼。 不過，它會停在您設定中斷點的行上︰
+1. 使用 *script.R* 中的程式碼啟動偵錯工具，方法是選取工具列上的 [執行啟動檔案] 按鈕、選取 [偵錯] > [執行啟動檔案] 功能表項目，或按 **F5** 鍵。 Visual Studio 會進入偵錯模式，並開始執行程式碼。 不過，它會停在您設定中斷點的行上︰
 
     ![在 Visual Studio 偵錯工具的中斷點上停止](media/getting-started-12-debug2.png)
 
@@ -150,7 +151,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![Visual Studio 中的 [偵錯] 工具列](media/getting-started-13-debug3.png)
 
-1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數] 視窗，在底部選取名為 [區域變數] 的索引標籤。 [區域變數] 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在，使用 [偵錯] > [不進入函式] 命令 (F10)，您會看到出現 `pop` 的值︰
+1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數] 視窗，在底部選取名為 [區域變數] 的索引標籤。 [區域變數] 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在，使用 [偵錯] > [不進入函式] 命令 (**F10**)，您會看到出現 `pop` 的值︰
 
     ![Visual Studio 中的 [區域變數] 視窗](media/getting-started-14-debug4.png)
 
@@ -158,7 +159,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
 
-1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。
+1. 您可以繼續逐步執行程式行，或選取 [繼續] (**F5**) 來執行到完成 (或下一個中斷點)。
 
 若要深入資訊，請參閱[偵錯](debugging-r-in-visual-studio.md)和[變數總管](variable-explorer.md)。
 

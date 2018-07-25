@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 6：使用 Git
 description: 在 Visual Studio 中 Python 核心逐步解說的步驟 6，涵蓋 Visual Studio 的 Git 相關功能。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965016"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056491"
 ---
-# <a name="step-6-working-with-git"></a>步驟 6：使用 Git
+# <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 
 **上一個步驟：[安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
 1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取 [Team Explorer] 中的下拉式標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的提取與擷取命令。
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 如需從遠端 Git 存放庫建立專案的簡短逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 

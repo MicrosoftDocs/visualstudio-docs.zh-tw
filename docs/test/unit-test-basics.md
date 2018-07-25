@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751513"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978368"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -28,13 +28,13 @@ ms.locfileid: "34751513"
 
 [測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
-## <a name="getting-started"></a>使用者入門
+## <a name="get-started"></a>開始使用
 
 如需單元測試的簡介以便直接參考編碼，請參閱下列其中一個主題：
 
-- [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [快速入門：搭配 [測試總管] 進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [在 Visual Studio 中撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -54,13 +54,13 @@ ms.locfileid: "34751513"
 
  我們第一次在 `Accounts` 專案的設計嘗試包含一個保留帳戶相關基本資訊的類別、一個指定任一種帳戶通用功能 (例如在帳戶的資產中存款和提款) 的介面，以及一個從該介面衍生代表支票帳戶的類別。 一開始我們先在帳戶專案中建立下列原始程式檔：
 
--   `AccountInfo.cs` 定義帳戶的基本資訊。
+-   AccountInfo.cs 定義帳戶的基本資訊。
 
--   `IAccount.cs` 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。
+-   IAccount.cs 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。
 
--   `CheckingAccount.cs` 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccounts` 介面。
+-   CheckingAccount.cs 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccounts` 介面。
 
-我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：
+我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdraw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：
 
 ```csharp
 public void Withdraw(double amount)
@@ -96,7 +96,7 @@ public void Withdraw(double amount)
 
      ![隨即建立單元測試](../test/media/createunittestsstubs.png)
 
-4.  現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。
+4.  現在往前跳至了解如何 [將程式碼加入單元測試方法](#write-your-tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。
 
  **手動建立單元測試專案和單元測試**
 
@@ -104,9 +104,9 @@ public void Withdraw(double amount)
 
  **將單元測試專案加入方案：**
 
-1.  在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]  (鍵盤 Ctrl + Shift + N)。
+1.  在 [檔案] 功能表上，選擇 [新增]，然後選擇 [專案] (鍵盤 **Ctrl**+**Shift**+**N**)。
 
-2.  在 [新增專案] 對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試] 。
+2.  在 [新增專案] 對話方塊上，展開 [已安裝] 節點，並選擇您想要用於測試專案的語言，然後選擇 [測試]。
 
 3.  若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
 
@@ -121,17 +121,17 @@ public void Withdraw(double amount)
 
     2.  在 [專案]  功能表上，選擇 [加入參考] 。
 
-    3.  在 [參考管理員] 對話方塊上，開啟 [方案]  節點，然後選擇 [專案] 。 選取程式碼專案名稱，然後關閉對話方塊。
+    3.  在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
 
  每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
 
--   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `BankAccount` 類別的單元測試方法。
+-   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
 
 -   `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
 
 ## <a name="write-your-tests"></a>撰寫您的測試
 
-您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管] 中執行，大部分的架構都會要求您加入特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。
+您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管] 中執行，大部分的架構都會要求您新增特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。
 
 AAA (排列、作用、判斷提示) 模式是為受測方法撰寫單元測試的常見方式。
 
@@ -175,9 +175,11 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 如需 Microsoft 單元測試架構的詳細資訊，請參閱下列其中一個主題：
 
--   [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+-   [對程式碼進行單元測試](unit-test-your-code.md)
 
 -   [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
+
+-   [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時
 
@@ -203,11 +205,11 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
 
-在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。
+在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]，並選擇 [Windows]，然後選擇 [測試總管]。
 
  ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
 
- 隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  及 [未執行的測試] 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有這些測試的檢視。
+ 隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試]、[通過的測試]、[略過的測試] 及 [未執行的測試] 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有測試的檢視。
 
  在搜尋方塊中找出全域層級中相符的文字或選取其中一個預先定義的篩選器，也能在任何檢視中篩選測試。 您可以隨時執行測試的任何選取範圍。 測試回合的結果會立即顯示在 [總管] 視窗上方的通過/失敗列中。 選取測試時，會顯示測試方法結果的詳細資料。
 
@@ -217,7 +219,7 @@ public void My_Test ()
 
  ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
- 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]\(鍵盤：F12) 以顯示所選測試的原始程式碼。
+ 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從操作功能表中選擇 [開啟測試] (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
 
  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -226,17 +228,17 @@ public void My_Test ()
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
 
-|||
+|按鈕|描述|
 |-|-|
-|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，接著在 [測試總管] 工具列上選擇 [建置之後執行測試]  。|
+|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]。|
 
 ### <a name="filter-and-group-the-test-list"></a>篩選與群組測試清單
 
-若有大量測試，您可以在 [測試總管] 搜尋方塊中輸入文字以便依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
+若有大量測試，您可以在 [測試總管] 搜尋方塊中鍵入文字，以依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
 
  ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
-|||
+|按鈕|描述|
 |-|-|
 |![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png)|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
 
@@ -253,7 +255,7 @@ public void My_Test ()
     > [!NOTE]
     > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯所選測試]  。
+2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
 
 進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。
 
@@ -272,7 +274,7 @@ public void My_Test ()
 
  例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper` 類別。 `AddIntegerHelper` 會加入兩個整數。
 
- 若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 `AccountsTest.accdb` 的 Access 資料庫和名為 `AddIntegerHelperData`的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。
+ 若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 *AccountsTest.accdb* 的 Access 資料庫和名為 `AddIntegerHelperData` 的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。
 
 ```csharp
 [DataSource(

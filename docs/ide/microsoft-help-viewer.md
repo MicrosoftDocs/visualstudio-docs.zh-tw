@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948203"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117156"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-您可以使用 Microsoft Help Viewer 在本機電腦上安裝並檢視各種產品和技術的內容，包括 Visual Studio、.NET Framework、語言參考、SQL Server 和 Windows 程式開發。 說明檢視器可讓您：
+您可以使用 Microsoft Help Viewer 在本機電腦上安裝及檢視各種產品和技術的內容。 這些產品包括 Visual Studio、.NET Framework、語言參考、SQL Server 和 Windows 開發。 說明檢視器可讓您：
 
--   尋找並下載內容集，這也稱為書籍。
+- 下載內容集，這也稱為書籍。 這在您需要「離線」工作，並且仍能存取文件時相當實用。
 
--   瀏覽和搜尋目錄，依標題尋找主題。
+- 瀏覽和搜尋目錄，依標題尋找主題。
 
--   查詢索引中的主旨。
+- 查詢索引中的主旨。
 
--   使用全文檢索搜尋來尋找資訊。
+- 使用全文檢索搜尋來尋找資訊。
 
--   檢視主題、將主題加入書籤以及列印。
+- 檢視主題、將主題加入書籤以及列印。
 
 若要安裝說明檢視器，請參閱 [Microsoft Help Viewer 安裝](../ide/microsoft-help-viewer-installation.md)。 若要在說明檢視器中開始閱讀說明主題，而不要在線上閱讀，請在 Visual Studio 中移至 [說明] 功能表，然後選擇 [設定說明偏好] > [在說明檢視器中啟動]。
+
+> [!TIP]
+> 在本機下載內容的另一個方法，以便您可以在沒有網際網路連線時檢視，就是下載 PDF 版本。 docs.microsoft.com 上的許多文件集，在目錄 (TOC) 底部有連結可下載 PDF 檔案，其中包含該 TOC 的所有文章。
+>
+> ![下載 Visual Studio 文件的 PDF](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>說明檢視器導覽
 
@@ -74,19 +79,19 @@ ms.locfileid: "31948203"
 
 [說明檢視器] 視窗中的工具列包含下列按鈕：
 
--   [顯示內容中的主題] 按鈕會在 [內容] 索引標籤中顯示主題的位置。
+- [顯示內容中的主題] 按鈕會在 [內容] 索引標籤中顯示主題的位置。
 
--   [加到我的最愛] 按鈕會將使用中的主題加到 [我的最愛] 索引標籤。
+- [加到我的最愛] 按鈕會將使用中的主題加到 [我的最愛] 索引標籤。
 
--   [在主題中尋找] 按鈕會反白顯示使用中主題的搜尋文字。
+- [在主題中尋找] 按鈕會反白顯示使用中主題的搜尋文字。
 
--   [列印] 按鈕會列印或顯示使用中主題的預覽。
+- [列印] 按鈕會列印或顯示使用中主題的預覽。
 
--   [檢視器選項] 按鈕會顯示設定，例如出現的文字要有多大、要傳回多少搜尋結果、要在歷程記錄顯示多少主題，以及是否要線上檢查更新。
+- [檢視器選項] 按鈕會顯示設定，例如出現的文字要有多大、要傳回多少搜尋結果、要在歷程記錄顯示多少主題，以及是否要線上檢查更新。
 
--   [管理內容] 按鈕讓 [管理內容] 索引標籤成為使用中。
+- [管理內容] 按鈕讓 [管理內容] 索引標籤成為使用中。
 
--   右側的小三角形會開啟索引標籤清單，包含主題索引標籤和 [管理內容] 索引標籤。您可以選擇某個索引標籤名稱，使它成為作用中的索引標籤。
+- 右側的小三角形會開啟索引標籤清單，包含主題索引標籤和 [管理內容] 索引標籤。您可以選擇某個索引標籤名稱，使它成為作用中的索引標籤。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d32a6f2f8e03140ee5463f457201912c42026a
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967680"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302844"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -57,7 +57,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 雖然測試控制器通常能管理數個測試代理程式，但是一個代理程式只能與單一控制器相關聯。 每個測試代理程式可由一組開發人員共用。 這個架構能讓您輕鬆地增加代理程式的數量，進而產生更大的負載。
 
-## <a name="test-agent-and-test-controller-interaction"></a>測試代理程式與測試控制器互動
+## <a name="test-agent-and-test-controller-interaction"></a>測試代理程式和測試控制器互動
 
 測試控制器會管理一組測試代理程式以執行測試。 測試控制器藉由與測試代理程式之間的溝通，即可啟動測試、停止測試、追蹤測試代理程式狀態，以及收集測試結果。
 
@@ -79,13 +79,13 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
  ![測試控制器和測試代理程式的通訊埠與安全性](./media/test-controller-agent-firewall.png)
 
- 如需詳細資訊，請參閱[設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)。
+ 如需詳細資訊，請參閱[設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)。
 
-## <a name="test-controller-and-agent-installation-information"></a>測試控制器和代理程式的安裝資訊
+## <a name="test-controller-and-agent-installation-information"></a>測試控制器和代理程式安裝資訊
 
 如需測試控制器和測試代理程式的軟硬體需求、安裝程序以及針對最佳效能進行環境設定等的重要資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>使用測試控制器和測試代理程式與單元測試
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>使用測試控制器和測試代理程式與單元測試
 
 安裝測試控制器和一個或多個代理程式後，您可以在負載測試的測試設定中指定是否使用測試控制器進行遠端執行。 此外，您還可以在測試設定中指定與代理程式關聯的角色能使用的資料和診斷配接器。
 

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924323"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978186"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 原始程式碼
 
-本主題包含並描述 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)L2DBForm.xaml 的 XAML 原始程式檔。
+本主題包含並描述[使用 LINQ to XML 的 WPF 資料繫結範例](../designers/wpf-data-binding-using-linq-to-xml-example.md) L2DBForm.xaml 的 XAML 原始程式檔。
 
-## <a name="overall-ui-structure"></a>UI 的整體結構
+## <a name="overall-ui-structure"></a>整體 UI 結構
 
 如同 WPF 專案般，這個檔案包含一個父項目，也就是 <xref:System.Windows.Window> 命名空間中，與衍生類別 `L2XDBFrom` 相關聯的 `LinqToXmlDataBinding` XML 項目。
 
@@ -37,7 +37,7 @@ ms.locfileid: "31924323"
 
 最後在第 28 到 34 行會定義名稱為 <xref:System.Windows.DataTemplate> 的 `BookTemplate` 。 這個範本將用於顯示 [書籍清單] UI 區段中的項目。 它會使用資料繫結和 LINQ to XML 動態屬性，透過下列指派，擷取書籍 ID 和書籍名稱：
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 
 在第 38 行的 `<StackPanel>` 開頭標記中，此面板的 <xref:System.Windows.FrameworkElement.DataContext%2A> 屬性會設定為 `LoadedBooks` 資料提供者。
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 設定資料內容可以讓 (第 46 行) 名為 `tbRawXml` 的 <xref:System.Windows.Controls.TextBlock> 繫結至此資料提供者的 `Xml` 屬性，以顯示原始 XML：
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 第 58 到 62 行 [書籍清單] <xref:System.Windows.Controls.ListBox>**UI 區段中的** 會將其顯示項目的範本設定為視窗資源區段中定義的 `BookTemplate` ：
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 接著在第 59 到 62 行，書籍的實際值會繫結到此清單方塊：
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ ItemTemplate ="{StaticResource BookTemplate}"
 
 第三個 UI 區段，也就是 [ **編輯選取的書籍**] 會先將父代 <xref:System.Windows.FrameworkElement.DataContext%2A> 的 <xref:System.Windows.Controls.StackPanel> 繫結到目前從 [ **書籍清單** ] UI 區段 (第 82 行) 選取的項目：
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 接著，它會使用雙向資料繫結，讓書籍項目的目前值顯示到此面板的兩個文字方塊中，或從其中更新。 動態屬性的資料繫結類似於 `BookTemplate` 資料範本中所使用的資料繫結：
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -243,9 +243,9 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ### <a name="comments"></a>註解
 
-如需與 WPF UI 項目相關聯之事件處理常式的 C# 原始程式碼，請參閱 [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)。
+如需與 WPF UI 項目建立關聯之事件處理常式的 C# 原始程式碼，請參閱 [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)
+- [L2DBForm.xaml.cs 來源程式碼](../designers/l2dbform-xaml-cs-source-code.md)

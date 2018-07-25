@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237223"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
   
 > [!NOTE]
->  下列步驟適用於從 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需使用命令列工具的詳細資訊，請參閱[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行程式碼剖析的詳細資訊，請參閱[對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)。  
+>  下列步驟適用於從 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需如何使用命令列工具的資訊，請參閱[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行分析的資訊，請參閱[對服務進行分析](../profiling/command-line-profiling-of-services.md)。  
   
  可以進行程式碼剖析的處理序，取決於電腦系統管理員所設定的使用者存取權限。 例如，使用者帳戶可能擁有下列任何一項的使用權限：  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/19/2018
   
 3.  按一下 [中斷連結]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
- [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

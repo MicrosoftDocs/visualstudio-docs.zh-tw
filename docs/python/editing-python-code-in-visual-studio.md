@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 454d8b0294181329c8b1c4414d8f7c70127e661c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449136"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175055"
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
@@ -224,4 +224,4 @@ Visual Studio 中的 Python 支援提供幾種快速瀏覽程式碼 (以及有�
 
 - [格式設定](formatting-python-code.md)
 - [重構](refactoring-python-code.md)
-- [正在 Lint](linting-python-code.md)
+- [使用 Linter](linting-python-code.md)

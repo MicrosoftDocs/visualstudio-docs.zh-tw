@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9368e752a2b3064c8f4b70bde6005fa5996d4f78
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575315"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945958"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
@@ -40,10 +40,10 @@ ms.locfileid: "31575315"
 |`AssemblyVersion`|選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。|  
 |`ClrVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小 Common Language Runtime (CLR) 版本。 預設值是建置系統所使用的 CLR 版本。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`ConfigFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含應用程式組態檔的項目。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
-|`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱以下的＜項目中繼資料＞一節。|  
+|`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱[項目中繼資料](#item-metadata)。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式或元件的描述。|  
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定單一項目，以指出所產生資訊清單組件的進入點。<br /><br /> 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單，這個參數會指定應用程式執行時啟動的組件。|  
-|`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
+|`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示於對話方塊中的網頁 URL。|  
 |`FileAssociations`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定與 ClickOnce 部署資訊清單建立關聯之一或多個檔案類型的清單。<br /><br /> 檔案關聯只有在 .NET Framework 3.5 或更新版本設為目標時才有效。|  
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要包含在資訊清單中的檔案。 指定每個檔案的完整路徑。|  
 |`HostInBrowser`|選擇性的 <xref:System.Boolean> 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
@@ -55,8 +55,8 @@ ms.locfileid: "31575315"
 |`OSVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小必要作業系統 (OS) 版本。 例如，"5.1.2600.0" 的值表示作業系統是 Windows XP。 如果未指定此參數，便會使用表示 Windows 98 Second Edition 的值 "4.10.0.0"，也就是 .NET Framework 支援的最小 OS 版本。 如果工作是要產生原生資訊清單，則會忽略這項輸入。|  
 |`OutputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的目標平台。 此參數的值如下：<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 如果未指定此參數，工作會預設為 `AnyCPU`。|  
-|`Product`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來做為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|  
-|`Publisher`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來做為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|  
+|`Product`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|  
+|`Publisher`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|  
 |`RequiresMinimumFramework35SP1`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 true，則應用程式需要 .NET Framework 3.5 SP1 或更新版本。|  
 |`TargetCulture`|選擇性的 `String` 參數。<br /><br /> 識別應用程式的文化特性，並為產生的資訊清單指定組件身分識別的 `Language` 欄位。 如果未指定此參數，則會假設應用程式不因文化特性而異。|  
 |`TargetFrameworkMoniker`|選擇性的 `String` 參數。<br /><br /> 指定目標 Framework Moniker。|  
@@ -315,9 +315,9 @@ ms.locfileid: "31575315"
 ```  
   
 ## <a name="example"></a>範例  
- 這個範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe 的原生資訊清單，並參考原生元件 Alpha.dll 和隔離的 COM 元件 Bravo.dll。  
+ 此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe 的原生資訊清單，並參考原生元件 Alpha.dll 和隔離的 COM 元件 Bravo.dll。  
   
- 這個範例會產生 Test.exe.manifest，使應用程式 XCOPY 能夠利用「免註冊的 COM」進行部署。  
+ 此範例會產生 Test.exe.manifest，讓應用程式 XCOPY 可部署並利用「免註冊的 COM」。  
   
 > [!NOTE]
 >  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。  
@@ -351,7 +351,7 @@ ms.locfileid: "31575315"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 工作](../msbuild/signfile-task.md)   

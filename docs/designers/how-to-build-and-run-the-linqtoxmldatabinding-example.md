@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78665f19f4cbc62197cc8474feb1c550cc4e491
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923796"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924157"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：建置並執行 LinqToXmlDataBinding 範例
 
@@ -22,7 +22,7 @@ ms.locfileid: "31923796"
 
 如需 Visual Studio 的詳細資訊，請參閱 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)。
 
-## <a name="creating-and-populating-the-project"></a>建立和填入專案
+## <a name="create-and-populate-the-project"></a>建立並填入專案
 
 ### <a name="to-create-the-starting-project"></a>若要建立起始專案
 
@@ -38,29 +38,29 @@ ms.locfileid: "31923796"
 
     - System.Xml.Linq
 
-1. 按下 **Ctrl+Shift+B** 來建置方案，然後按下 **F5** 來執行。 專案的編譯應該沒有錯誤，而且應該當做一般 WPF 應用程式執行。
+1. 按 **Ctrl**+**Shift**+**B** 來建置方案，然後按 **F5** 鍵來執行。 專案的編譯應該沒有錯誤，而且應該當做一般 WPF 應用程式執行。
 
 ### <a name="to-add-custom-code-to-the-project"></a>若要將自訂程式碼加入至專案
 
-1. 在 [方案總管] 中，將原始程式檔 Window1.xaml 重新命名為 L2XDBForm.xaml。 相依的原始程式檔 Window1.xaml.cs 應該會自動重新命名為 L2XDBForm.xaml.cs。
+1. 在 [方案總管] 中，將原始程式檔 **Window1.xaml** 重新命名為 **L2XDBForm.xaml**。 相依的原始程式檔 **Window1.xaml.cs** 應該會自動重新命名為 **L2XDBForm.xaml.cs**。
 
-1. 將 L2XDBForm.xaml 檔案中找到的原始程式碼，以 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)主題中的程式碼區段取代。 使用 XAML 原始碼檢視來使用這個檔案。
+1. 將 L2XDBForm.xaml 檔案中找到的原始程式碼，取代為 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)主題中的程式碼區段。 使用 XAML 原始碼檢視來使用這個檔案。
 
-1. 同樣地，將 L2XDBForm.xaml.cs 中的原始碼，以 [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)中找到的程式碼取代。
+1. 同樣地，將 **L2XDBForm.xaml.cs** 中的原始碼，取代為 [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)中找到的程式碼。
 
-1. 在 App.xaml 檔案中，將出現的所有字串 "Window1.xaml" 取代為 "L2XDBForm.xaml"。
+1. 在 **App.xaml** 檔案中，將所有出現的字串 `Window1.xaml` 取代為 `L2XDBForm.xaml`。
 
-1. 按下 **Ctrl+Shift+B**，建置解決方案。
+1. 按 **Ctrl**+**Shift**+**B** 來建置方案。
 
-## <a name="running-the-program"></a>執行程式
+## <a name="run-the-program"></a>執行程式
 
 LinqToXmlDataBinding 程式可讓使用者檢視與管理儲存為內嵌 XML 項目之書籍的清單。
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>若要執行程式與檢視書籍清單
 
-- 按下 **F5** (開始偵錯) 或 **Ctrl+F5** (啟動但不偵錯)，執行 LinqToXmlDataBinding。
+- 按 **F5** (開始偵錯) 或 **Ctrl**+**F5** (啟動但不偵錯)，執行 LinqToXmlDataBinding。
 
-   隨即顯示標題為 [使用 LINQ to XML 進行 WPF 資料繫結] 的程式視窗。
+   標題為 [使用 LINQ to XML 進行 WPF 資料繫結] 的程式視窗隨即出現。
 
 - 請注意 UI 的上方區段，其中會顯示代表書籍清單的原始 **XML**。 它會使用 WPF <xref:System.Windows.Controls.TextBlock> 控制項顯示，不會透過滑鼠或鍵盤啟用互動。
 
@@ -68,9 +68,9 @@ LinqToXmlDataBinding 程式可讓使用者檢視與管理儲存為內嵌 XML 項
 
 ### <a name="to-add-and-delete-books-from-the-list"></a>若要加入和刪除清單中的書籍
 
-- 若要從清單刪除現有的書籍，請在 [書籍清單] 區段選取該書籍，然後按一下 [移除選取的書籍] 按鈕。 請注意，該書籍項目已同時從書籍和原始 XML 來源清單移除。
-
 - 若要將新的書籍新增至清單，請在最後一個區段 [新增書籍] 的 [ID] 和 [值] <xref:System.Windows.Controls.TextBox> 控制項中輸入值，然後按一下 [新增書籍] 按鈕。 請注意，該書籍會同時附加到書籍的清單和 XML 清單中。 這個程式不會驗證輸入值。
+
+- 若要從清單刪除現有的書籍，請在 [書籍清單] 區段選取該書籍，然後按一下 [移除選取的書籍] 按鈕。 請注意，該書籍項目已同時從書籍和原始 XML 來源清單移除。
 
 ### <a name="to-edit-an-existing-book-entry"></a>若要編輯現有的書籍項目
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746023"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117117"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -89,7 +89,7 @@ ms.locfileid: "34746023"
 
 若您的程式碼基底包含 Python 或 JavaScript 程式碼，您不需要設定任何 *.json* 檔案，但必須安裝相對應的工作負載。 您也必須設定啟動指令碼：
 
-1. 選擇 [工具] > [取得工具和功能] 或關閉 Visual Studio 並執行 Visual Studio 安裝程式，來安裝 [Node.js 開發](https://www.visualstudio.com/vs/node-js/)工作負載或 [Python 開發](https://www.visualstudio.com/vs/python/)工作負載。
+1. 選擇 [工具] > [取得工具和功能] 或關閉 Visual Studio 並執行 Visual Studio 安裝程式，來安裝 [Node.js 開發](https://visualstudio.microsoft.com/vs/node-js/)工作負載或 [Python 開發](https://visualstudio.microsoft.com/vs/python/)工作負載。
 
    ![Node.js 和 Python 開發工作負載](media/python_nodejs_workloads.png)
 

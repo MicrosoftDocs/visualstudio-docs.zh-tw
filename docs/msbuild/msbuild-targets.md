@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5b35c04d34143731ccf9fe5e8fe02f5389a2e5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f6ae74ed310da6f937dcadf168630102c004877
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570596"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081435"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -44,7 +44,7 @@ ms.locfileid: "31570596"
   
  如果執行 AfterBuild，則只會顯示「第二次出現」。  
   
-## <a name="target-build-order"></a>目標建置順序  
+## <a name="target-build-order"></a>目標組建順序  
  如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 有幾種方式可指定目標的執行順序。  
   
 -   初始目標  
@@ -56,13 +56,13 @@ ms.locfileid: "31570596"
 -   目標相依性  
   
 -   `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)  
-  
- 目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。  
-  
- 如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。  
-  
+
+目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。  
+
+如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。  
+
 ## <a name="target-batching"></a>目標批次處理  
- 目標項目可能有 `Outputs` 屬性以 %(中繼資料) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的  
+目標項目可能有 `Outputs` 屬性以 %(\<中繼資料>) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的  
   
 ```xml  
 <ItemGroup>  
@@ -97,6 +97,6 @@ Reference: 4.0
   
  如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多個專案檔中使用相同目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

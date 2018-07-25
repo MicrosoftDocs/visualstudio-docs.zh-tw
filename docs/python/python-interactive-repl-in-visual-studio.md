@@ -1,7 +1,7 @@
 ---
 title: Python 互動式視窗 (REPL)
 description: 如何在 Visual Studio 中使用適用於 Python 程式碼的互動式視窗 (REPL)，以進行快速程式碼開發。
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582341"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057914"
 ---
-# <a name="working-with-the-python-interactive-window"></a>使用 Python 互動式視窗
+# <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
 Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 `python.exe` 取得的 REPL 為基礎加以改進。 互動式視窗 (以 檢視 > 其他視窗 > &lt;環境&gt; 互動式 功能表命令開啟) 可讓您輸入任意的 Python 程式碼並立即查看結果。 這種編碼方式可協助您了解並實驗應用程式開發介面和程式庫，並以互動方式開發工作程式碼，以包含在您的專案中。
 

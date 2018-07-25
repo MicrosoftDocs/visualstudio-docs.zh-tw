@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970396"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078325"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -32,15 +32,17 @@ Visual Studio [建立單元測試] 命令可讓您建立單元測試方法虛設
 
 * 可擴充，並且支援以 MSTest、MSTest V2、NUnit、xUnit 格式發出測試。
 
+* 尚無法於 .NET Core 專案中使用。
+
 ## <a name="get-started"></a>開始使用
 
-若要開始，請在您想要測試之專案的程式碼編輯器中選取方法、類型或命名空間，並開啟捷徑功能表，然後選擇 [建立單元測試]。 這會開啟 [建立單元測試] 對話方塊，在其中，可以選取新單元測試的建立選項。
+若要開始，請在您想要測試之專案的程式碼編輯器中選取方法、類型或命名空間，並開啟捷徑功能表，然後選擇 [建立單元測試]。 [建立單元測試] 對話方塊隨即開啟；在其中，可以選取新單元測試的建立選項。
 
 ![使用建立單元測試命令](media/createunittestcommand.png)
 
 ## <a name="setting-unit-test-traits"></a>設定單元測試特性
 
-如果您計劃執行這些測試是測試自動化程序的一部分，則可能會考慮在另一個測試專案中建立測試 (上述對話方塊中的第二個選項)，以及設定單元測試的單元測試特性。 這可讓您更輕鬆地包含或排除這些特定測試作為持續整合或持續部署管線的一部分。 特性是透過直接將中繼資料新增至單元測試所設定，如下所示。
+如果您計劃執行這些測試作為測試自動化程序的一部分，則可能會考慮在另一個測試專案中建立測試 (上述對話方塊中的第二個選項)，以及設定單元測試的單元測試特性。 這可讓您更輕鬆地包含或排除這些特定測試作為持續整合或持續部署管線的一部分。 特性是透過直接將中繼資料新增至單元測試所設定，如下所示。
 
 ![設定單元測試特性](media/createunittest.png)
 
@@ -60,7 +62,7 @@ Visual Studio Marketplace 提供測試架構延伸模組︰
 
 ## <a name="when-should-i-use-this-feature"></a>何時應該使用這項功能？
 
-只要您需要建立單元測試，但特別是當您要測試有很少或沒有測試涵蓋範圍且沒有文件的現有程式碼時，就會使用此功能。 換句話說，其中具有有限或不存在的程式碼規格。 它會有效地實作與 [Smart Unit Tests](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) (智慧型單元測試) 類似的方法，以描述觀察到的程式碼行為。
+只要您需要建立單元測試，但特別是當您要測試僅有少量或沒有測試涵蓋範圍且沒有文件的現有程式碼時，就會使用此功能。 換句話說，其中具有有限或不存在的程式碼規格。 它會有效地實作與 [Smart unit tests](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) (智慧型單元測試) 類似的方法，以描述觀察到的程式碼行為。
 
 不過，這項功能也同樣適用於這種情況；其中，開發人員會開始撰寫某個程式碼，並使用該程式碼來啟動單元測試專業領域。 在編碼流程內，開發人員可能想要快速建立特定程式碼部分的單元測試方法虛設常式 (具有適當的測試類別，以及適當的測試專案)。
 

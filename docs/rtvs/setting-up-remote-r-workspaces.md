@@ -10,24 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978306"
 ---
-# <a name="setting-up-remote-workspaces"></a>設定遠端工作區
+# <a name="set-up-remote-workspaces"></a>設定遠端工作區
 
 本文說明如何使用 SSL 和適當的 R 服務來設定遠端伺服器。 這可讓 Visual Studio R 工具 (RTVS) 連線到該伺服器上的遠端工作區。
-
-- [遠端電腦需求](#remote-computer-requirements)
-- [安裝 SSL 憑證](#install-an-ssl-certificate)
-- [在 Windows 上安裝 SSL 憑證](#install-an-ssl-certificate-on-windows)
-- [在 Ubuntu 上安裝 SSL 憑證](#install-an-ssl-certificate-on-ubuntu)
-- [在 Windows 上安裝 R 服務](#install-r-services-on-windows)
-- [在 Linux 上安裝 R 服務](#install-r-services-on-Linux)
-- [設定 R 服務](#configure-r-services)
-- [疑難排解](#troubleshooting)
 
 ## <a name="remote-computer-requirements"></a>遠端電腦需求
 
@@ -36,9 +28,9 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="install-an-ssl-certificate"></a>安裝 SSL 憑證
 
-RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 (自我簽署憑證可讓 RTVS 在連線時發出警告)。 無論使用哪一項，您都需要在電腦上安裝它，並允許存取其私密金鑰。
+RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 (自我簽署憑證可讓 RTVS 在連線時發出警告)。無論使用哪一項，您都需要在電腦上安裝它，並允許存取其私密金鑰。
 
-### <a name="obtaining-a-trusted-certificate"></a>取得受信任的憑證
+### <a name="obtain-a-trusted-certificate"></a>取得受信任的憑證
 
 受信任的憑證是由憑證授權單位核發 (請參閱[維基百科的憑證授權單位](https://en.wikipedia.org/wiki/Certificate_authority)了解背景)。 如同取得政府的身分證一樣，發出受信任的憑證牽涉到很多程序和可能產生的費用，但會驗證要求及要求者的真實性。
 
@@ -48,9 +40,9 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ## <a name="install-an-ssl-certificate-on-windows"></a>在 Windows 上安裝 SSL 憑證
 
-您必須以手動方式將 SSL 憑證安裝到 Windows 上。 請遵循下列指示安裝 SSL 憑證。
+您必須手動將 SSL 憑證安裝到 Windows 上。 請遵循下列指示安裝 SSL 憑證。
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>取得自我簽署憑證 (Windows)
+### <a name="obtain-a-self-signed-certificate-windows"></a>取得自我簽署憑證 (Windows)
 
 如果您有受信任的憑證，請略過本節。 相較於來自受信任授權單位的憑證，自我簽署的憑證就像是您自行建立的身分證。 此程序當然比使用受信任的授權單位更為簡單，但因為缺乏強有力的驗證，表示攻擊者可以他們自己的憑證取代未簽署的憑證，擷取用戶端與伺服器之間的所有流量。 因此，「自我簽署憑證應該僅用於受信任網路上的測試案例，絕不能用在生產環境中」。
 
@@ -75,18 +67,18 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 如需背景，請參閱維基百科上的[自我簽署憑證](https://en.wikipedia.org/wiki/Self-signed_certificate)。
 
-### <a name="installing-the-certificate"></a>安裝憑證。
+### <a name="install-the-certificate"></a>安裝憑證
 
-若要在遠端電腦上安裝憑證，請從命令提示字元執行 `certlm.msc` (憑證管理員)。 以滑鼠右鍵按一下 [個人] 資料夾，然後選取 [所有工作] > [匯入] 命令︰
+若要在遠端電腦上安裝憑證，請從命令提示字元執行 certlm.msc (憑證管理員)。 以滑鼠右鍵按一下 [個人] 資料夾，然後選取 [所有工作] > [匯入] 命令︰
 
 ![匯入憑證命令](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>授權讀取 SSL 憑證的私密金鑰
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>授權讀取 SSL 憑證的私密金鑰
 
 一旦匯入憑證，即授與 `NETWORK SERVICE` 帳戶讀取私密金鑰的權限，如下列指示所述。 `NETWORK_SERVICE` 是執行 R 服務訊息代理程式所使用的帳戶，這是終止 SSL 連線連入伺服器電腦的服務。
 
-1. 從系統管理員命令提示字元執行 `certlm.msc` (憑證管理員)。
-1. 展開 [個人] > [憑證]，以滑鼠右鍵按一下您的憑證，然後選取 [所有工作] > [管理私密金鑰]。
+1. 從系統管理員命令提示字元執行 certlm.msc (憑證管理員)。
+1. 展開 [個人] > [憑證]，並以滑鼠右鍵按一下您的憑證，然後選取 [所有工作] > [管理私密金鑰]。
 1. 以滑鼠右鍵按一下憑證，然後選取 [所有工作] 下的 [管理私密金鑰] 命令。
 1. 在出現的對話方塊中，選取 [新增] 並輸入 `NETWORK SERVICE` 為帳戶名稱︰
 
@@ -98,9 +90,9 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 `rtvs-daemon` 套件預設會在安裝時一併安裝自我簽署的憑證。
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>取得自我簽署憑證 (Ubuntu)
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>取得自我簽署憑證 (Ubuntu)
 
-如需了解使用自我簽署憑證的優點與風險，請參閱 Windows 說明。 `rtvs-daemon` 套件會在安裝期間產生自我簽署的憑證並進行設定。 只有當您想要取代自動產生的自我簽署憑證時，才需要進行下列作業。
+如需了解使用自我簽署憑證的優點與風險，請參閱 Windows 描述。 `rtvs-daemon` 套件會在安裝期間產生和設定自我簽署的憑證。 只有當您想要取代自動產生的自我簽署憑證時，才需要進行下列作業。
 
 自行核發自我簽署憑證：
 
@@ -118,9 +110,9 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>設定 RTVS 精靈
+### <a name="configure-rtvs-daemon"></a>設定 RTVS 精靈
 
-您必須在 `/etc/rtvs/rtvsd.config.json` 中設定 SSL 憑證檔案路徑 (PFX 的路徑)。 分別使用檔案路徑與密碼來更新 `X509CertificateFile` 和 `X509CertificatePassword`。
+您必須在 /etc/rtvs/rtvsd.config.json 中設定 SSL 憑證檔案路徑 (PFX 的路徑)。 分別使用檔案路徑與密碼來更新 `X509CertificateFile` 和 `X509CertificatePassword`。
 
 ```json
 {
@@ -150,17 +142,17 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 1. 執行 [R 服務安裝程式](https://aka.ms/rtvs-services)，並於系統提示時重新開機。 安裝程式會執行下列動作︰
 
-    - 在 `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` 中建立資料夾，並複製所有需要的二進位檔。
+    - 在 *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* 中建立資料夾，然後複製所有必要的二進位檔。
     - 安裝 `RHostBrokerService` 和 `RUserProfileService` 並設定自動啟動。
     - 設定 `seclogon` 服務自動啟動。
-    - 將 `Microsoft.R.Host.exe` 和 `Microsoft.R.Host.Broker.exe` 新增至預設通訊埠 5444 的防火牆傳入規則。
+    - 在預設連接埠 5444 上，將 Microsoft.R.Host.exe 和 Microsoft.R.Host.Broker.exe 新增至防火牆輸入規則。
 
 電腦重新開機時會自動啟動 R 服務︰
 
 - **R 主機訊息代理程式服務**處理 Visual Studio 與電腦上執行 R 程式碼之處理序間的所有 HTTPS 流量。
 - **R 使用者設定檔服務**是處理 Windows 使用者設定檔建立的特殊權限元件。 新使用者第一次登入 R 伺服器電腦時，會呼叫此服務。
 
-您可以在服務管理主控台中看到這些服務 (`compmgmt.msc`)。
+您可以在服務管理主控台中看到這些服務 (compmgmt.msc)。
 
 ## <a name="install-r-services-on-linux"></a>在 Linux 上安裝 R 服務
 
@@ -189,7 +181,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
     不過，如果您要在網際網路伺服器 (例如 Azure VM) 上安裝憑證，請使用伺服器的完整網域名稱 (FQDN)，因為網際網路伺服器的 FQDN 與其 NETBIOS 名稱絕不會相同。
 
-    若要使用 FQDN，請巡覽至 R 服務的安裝位置 (預設為 `%PROGRAM FILES%\R Remote Service for Visual Studio\1.0`)，並在文字編輯器中開啟 `Microsoft.R.Host.Broker.Config.json` 檔案，然後使用下列內容取代其內容，以將 CN 指派給任何的伺服器 FQDN，例如 `foo.westus.cloudapp.azure.com`：
+    若要使用 FQDN，請巡覽至 R 服務的安裝位置 (預設為 %PROGRAM FILES%\R Remote Service for Visual Studio\1.0)，並在文字編輯器中開啟 Microsoft.R.Host.Broker.Config.json 檔案，然後使用下列內容取代其內容，以將 CN 指派給任何的伺服器 FQDN，例如 `foo.westus.cloudapp.azure.com`：
 
     ```json
     {
@@ -204,7 +196,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-**R 伺服器電腦沒有回應，我該怎麼辦？**
+**問：R 伺服器電腦沒有回應，我該怎麼辦？**
 
 嘗試從命令列 ping 遠端電腦：`ping remote-machine-name`。 如果 ping 失敗，請確定電腦正在執行。
 
@@ -216,14 +208,14 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 - 通訊埠 5444 連接埠的連入和連出連線未啟用 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 防火牆規則。
 - 未安裝具有 `CN=<remote-machine-name>` 的SSL 憑證。
 
-完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 `services.msc` 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
+完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 services.msc 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
 
 **問：連線到 R 伺服器時，R 互動視窗為何顯示「401 拒絕存取」？**
 
 可能有二個原因：
 
 - `NETWORK SERVICE` 帳戶很可能無法存取 SSL 憑證的私密金鑰。 請依稍早的指示授與私密金鑰的 `NETWORK SERVICE` 存取權。
-- 確定 `seclogon` 服務正在執行。 使用 `services.msc` 設定 `seclogon` 自動啟動。
+- 確定 `seclogon` 服務正在執行。 使用 services.msc 設定 `seclogon` 自動啟動。
 
 **問：連線到 R 伺服器時，R 互動視窗為何顯示「找不到 404 」？**
 
@@ -235,4 +227,4 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 **問：我嘗試過上述所有方法，但都沒有用。接下來該怎麼辦？**
 
-查看 `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp` 的記錄檔。 此資料夾包含每個已執行之 R 訊息代理程式服務執行個體的個別記錄檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。
+在 *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp* 中的記錄檔內尋找。此資料夾包含每個已執行之 R 訊息代理程式服務執行個體的個別記錄檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。

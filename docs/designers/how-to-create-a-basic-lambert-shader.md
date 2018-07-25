@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9700fb8cc84e0403c180b0570ca874fdff784e8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748201"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924339"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
 

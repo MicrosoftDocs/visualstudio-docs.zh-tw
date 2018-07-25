@@ -10,38 +10,39 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 12d5ae929c34b100ed83ea23823e88f7efbc5d14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235292"
 ---
-# <a name="working-with-the-r-interactive-window"></a>使用 R 互動視窗
+# <a name="work-with-the-r-interactive-window"></a>使用 R 互動視窗
 
 Visual Studio R 工具 (RTVS) 所提供的 R 互動視窗也稱為 **REPL** (Read-Evaluate-Print-Loop) 視窗，您可以在其中輸入 R 程式碼，並立即查看結果。 所有模組、語法和變數以及 IntelliSense 都可以在互動式視窗中使用。
 
-互動式視窗也會與一般 R 編輯器視窗整合。 您可以選取程式碼並按 Ctrl+Enter，或是按一下滑鼠右鍵並選取 [以互動方式執行]，就會在互動式視窗中逐行執行程式碼，就像您直接鍵入它們一樣。 游標位於編輯器視窗中的單行時，Ctrl+Ente 會將該行傳送到互動式視窗，然後將游標移至下一行。 如此一來，只要重複按 Ctrl+Enter，即可逐步執行程式碼。
+互動式視窗也會與一般 R 編輯器視窗整合。 您可以選取程式碼並按 **Ctrl**+**Enter**，或是按一下滑鼠右鍵並選取 [以互動方式執行]，就會在互動式視窗中逐行執行程式碼，就像您直接鍵入它們一樣。 游標位於編輯器視窗中的單行時，**Ctrl**+**Enter** 會將該行傳送到互動式視窗，然後將游標移至下一行。 如此一來，只要重複按 **Ctrl**+**Enter**，即可逐步執行程式碼。
 
-若要體驗這些功能，請遵循[開始使用 R](getting-started-with-r.md) 逐步解說以及本文中各小節。 [程式碼片段](code-snippets-for-r.md)也作用於互動式視窗，就像在 R 編輯器視窗中一樣。
+若要體驗這些功能，請遵循[開始使用 R](getting-started-with-r.md) 逐步解說以及本文中的各節。 [程式碼片段](code-snippets-for-r.md)也作用於互動式視窗，就像在 R 編輯器視窗中一樣。
 
 ## <a name="overview-of-the-interactive-window"></a>互動式視窗概觀
 
-在行尾鍵入有效的 R 程式碼並按 Enter，會執行該行上的程式碼︰
+在行尾鍵入有效的 R 程式碼並按 **Enter**，會執行該行上的程式碼︰
 
 ```repl
 > 3 + 3
 [1] 6
 ```
 
-在單行輸入的任意位置上按 Enter，也會執行該行。
+在單行輸入的任意位置上按 **Enter**，也會執行該行。
 
 REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 不過，您隨時都可以從視窗中選取和複製文字，以及貼上文字。 會執行貼上的程式碼，就像它是逐行輸入地一樣。
 
-也就是說，如果您開始鍵入陳述式，並按 Enter，則 RTVS 會知道何時必須繼續執行陳述式，並進入左側有 + 提示且適當縮排的多行模式。 RTVS 也會完成括弧、括號和大括弧：
+也就是說，如果您開始鍵入陳述式，並按 **Enter**，則 RTVS 會知道何時必須繼續執行陳述式，並進入左側有 + 提示且適當縮排的多行模式。 RTVS 也會完成括弧、括號和大括弧：
 
 ![互動式視窗中的多行陳述式項目](media/repl-multiline-entry.png)
 
-在這個多行模式中，Enter 鍵只有在置放於程式碼區塊結尾時才會執行程式碼區塊，否則會插入新行。 不過，您可以在任意位置按 Ctrl+Enter，立即執行該程式碼區塊。
+在這個多行模式中，**Enter** 鍵只有在置放於程式碼區塊結尾時才會執行程式碼區塊，否則會插入新行。 不過，您可以在任意位置按 **Ctrl**+**Enter**，立即執行該程式碼區塊。
 
 ### <a name="toolbar-commands"></a>工具列命令
 
@@ -53,26 +54,26 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 
 | 按鈕 | 命令 | 按鍵組合 | 描述 | 
 | --- | --- | --- | --- |
-| ![[重設] 按鈕](media/repl-toolbar-01-reset.png) | 重設 | Ctrl+Shift+F10 | 重設互動式視窗工作階段，並清除所有變數和歷程記錄。 |
-| ![[清除] 按鈕](media/repl-toolbar-02-clear.png) | 清除 | Ctrl+L | 清除互動式視窗中所顯示的輸出；不會影響工作階段變數或歷程記錄。 |
-| ![[歷程記錄] 按鈕](media/repl-toolbar-03-history.png) | 前一個歷程記錄命令<br/>下一個歷程記錄命令 | 上、下<br/>Alt+向上鍵、Alt-向下鍵 | 捲動歷程記錄，具有多行程式碼區塊的特定行為。 請參閱[歷程記錄](#history)。 |
+| ![[重設] 按鈕](media/repl-toolbar-01-reset.png) | 重設 | **Ctrl**+**Shift**+**F10** | 重設互動式視窗工作階段，並清除所有變數和歷程記錄。 |
+| ![[清除] 按鈕](media/repl-toolbar-02-clear.png) | 清除 | **Ctrl**+**L** | 清除互動式視窗中所顯示的輸出；不會影響工作階段變數或歷程記錄。 |
+| ![[歷程記錄] 按鈕](media/repl-toolbar-03-history.png) | 前一個歷程記錄命令<br/>下一個歷程記錄命令 | **向上鍵**、**向下鍵**<br/>**Alt**+**向上鍵**、**Alt**+**向下鍵** | 捲動歷程記錄，具有多行程式碼區塊的特定行為。 請參閱[歷程記錄](#history)。 |
 | ![[載入工作區] 按鈕](media/repl-toolbar-04-load-workspace.png) | 載入工作區 | N/A | 載入先前儲存的工作區 (請參閱[工作區和工作階段](#workspaces-and-sessions))。 |
 | ![[另存工作區為] 按鈕](media/repl-toolbar-05-save-workspace-as.png)| 另存工作區為 | N/A | 將工作階段的目前狀態儲存為工作區 (請參閱[工作區和工作階段](#workspaces-and-sessions))。 |
-| ![[來源 R 指令碼] 按鈕](media/repl-toolbar-06-source-r-script.png) | 來源 R 指令碼 | Ctrl+Shift+S | 使用 Visual Studio 編輯器中目前作用中的 R 指令碼來呼叫 `source`，而編輯器會執行程式碼。  只有在 Visual Studio 編輯器中開啟 R 檔案時，才會出現此按鈕。 | 
-| ![[有回應的來源 R 指令碼] 按鈕](media/repl-toolbar-07-source-r-script-with-echo.png) | 有回應的來源 R 指令碼 | Ctrl+Shift+Enter | 與 [來源 R 指令碼] 相同，但在互動式視窗中顯示指令碼內容。 | 
-| ![[插斷 R] 按鈕](media/repl-toolbar-08-interrupt-r.png)| 插斷 R | Esc | 停止互動式視窗中的任何執行中程式碼，例如，螢幕擷取畫面中的 `while` 迴圈會顯示在此區段的開頭。 |
+| ![[來源 R 指令碼] 按鈕](media/repl-toolbar-06-source-r-script.png) | 來源 R 指令碼 | **Ctrl**+**Shift**+**S** | 使用 Visual Studio 編輯器中目前作用中的 R 指令碼來呼叫 `source`，而編輯器會執行程式碼。  只有在 Visual Studio 編輯器中開啟 R 檔案時，才會出現此按鈕。 | 
+| ![[有回應的來源 R 指令碼] 按鈕](media/repl-toolbar-07-source-r-script-with-echo.png) | 有回應的來源 R 指令碼 | **Ctrl**+**Shift**+**Enter** | 與 [來源 R 指令碼] 相同，但在互動式視窗中顯示指令碼內容。 |
+| ![[插斷 R] 按鈕](media/repl-toolbar-08-interrupt-r.png)| 插斷 R | **Esc** | 停止互動式視窗中的任何執行中程式碼，例如，螢幕擷取畫面中的 `while` 迴圈會顯示在此區段的開頭。 |
 | ![[附加偵錯工具] 按鈕](media/repl-toolbar-09b-attach-debugger.png)| 附加偵錯工具 | N/A | 也可使用 [偵錯] > [附加至 R 互動] 命令取得。 | 
-| ![[將工作目錄設定為來源檔案位置] 按鈕](media/repl-toolbar-10-set-working-directory-source.png)| 將工作目錄設定為來源檔案位置 | CTRL+SHIFT+E | 將工作目錄設定為載入至互動式視窗的最近來源檔案 (使用 `source`)。 請參閱[工作目錄](#working-directory)。 |
-| ![[將工作目錄設定為專案位置] 按鈕](media/repl-toolbar-11-set-working-directory-to-project.png) | 將工作目錄設定為專案位置 | Ctrl+Shift+P | 將工作目錄設定為 Visual Studio 中目前已載入專案的根目錄。 請參閱[工作目錄](#working-directory)。 |
+| ![[將工作目錄設定為來源檔案位置] 按鈕](media/repl-toolbar-10-set-working-directory-source.png)| 將工作目錄設定為來源檔案位置 | **Ctrl**+**Shift**+**E** | 將工作目錄設定為載入至互動式視窗的最近來源檔案 (使用 `source`)。 請參閱[工作目錄](#working-directory)。 |
+| ![[將工作目錄設定為專案位置] 按鈕](media/repl-toolbar-11-set-working-directory-to-project.png) | 將工作目錄設定為專案位置 | **Ctrl**+**Shift**+**P** | 將工作目錄設定為 Visual Studio 中目前已載入專案的根目錄。 請參閱[工作目錄](#working-directory)。 |
 | (文字欄位) | 選取工作目錄 | N/A | 工作目錄的直接輸入欄位。 請參閱[工作目錄](#working-directory)。 |
 
 ## <a name="workspaces-and-sessions"></a>工作區和工作階段
 
 在互動式視窗中執行程式碼，會在您目前的工作階段中建置內容。 內容是由全域變數、函式定義、程式庫載入等所組成。 這個內容統稱為「工作區」，而您隨時可以儲存和載入工作區。 
 
-選取 [另存工作區為] 按鈕或使用 [R 工具] > [工作階段] > [另存工作區為...] 命令會提示您輸入位置和檔案名稱 (預設副檔名為 `.RData`)。
+選取 [另存工作區為] 按鈕或使用 [R 工具] > [工作階段] > [另存工作區為] 命令會提示您輸入位置和檔案名稱 (預設副檔名為 *.RData*)。
 
-若要使用特定檔案名稱 (預設值為 `.RData`) 來儲存工作區，請按一下 REPL 中的 [儲存工作區] 按鈕：
+若要使用特定檔案名稱 (預設值為 *.RData*) 來儲存工作區，請按一下 REPL 中的 [儲存工作區] 按鈕：
 
 若要重新載入先前儲存的工作區，請選取 [載入工作區] 按鈕，或使用 [R 工具] > [工作階段] > [載入工作區]，並巡覽至工作區檔案。
 
@@ -90,11 +91,11 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 
 互動式視窗中的歷程記錄也會透過智慧方式與跨多行的其他程式碼區塊的陳述式搭配運作。 使用向上鍵和向下鍵循環查看歷程記錄時，會將多行程式碼區塊擷取為一整個單位，並顯示為目前的項目。 目前，方向鍵會逐行巡覽該程式碼區塊，直到到達頂端或底端。 在程式碼區塊頂端，向上箭號會擷取歷程記錄中的前一個項目；在底端列，向下箭號會擷取下一個項目。
 
-此行為包括搭配使用向上鍵與 Enter 按鍵組合來重新執行歷程記錄中最後一個項目的一般情況，同時自然允許編輯多行程式碼區塊，方法是按向上鍵進行巡覽。
+此行為包括搭配使用向上鍵與 **Enter** 按鍵組合來重新執行歷程記錄中最後一個項目的一般情況，同時自然允許編輯多行程式碼區塊，方法是按向上鍵進行巡覽。
 
-若要避免巡覽至多行程式碼區塊，請使用工具列按鈕，或使用 Alt+向上鍵和 Alt-向下鍵，並將所有這類區塊都視為單行。
+若要避免巡覽至多行程式碼區塊，請使用工具列按鈕，或使用 **Alt**+向上鍵和 **Alt**-向下鍵，並將所有這類區塊都視為單行。
 
-體驗歷程記錄功能的最簡單方式是在互動式視窗中自行嘗試即可。 下列程式碼提供數個適合的單行和多行陳述式。 不過，個別搭配使用複製並貼上與每個陳述式，可建立適當的歷程記錄 (您也可以將程式碼貼入不同的程式碼檔案，然後使用 Ctrl+Enter 將這些行傳送至互動式視窗)。
+體驗歷程記錄功能的最簡單方式是在互動式視窗中自行嘗試即可。 下列程式碼提供數個適合的單行和多行陳述式。 不過，個別搭配使用複製並貼上與每個陳述式，可建立適當的歷程記錄 (您也可以將程式碼貼入不同的程式碼檔案，然後使用 **Ctrl**+**Enter** 將這些行傳送至互動式視窗)。
 
 ```R
 3 + 3

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269186"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078923"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 您可以在 XAML 中、在程式碼中或使用 XAML 設計工具，將項目 (控制項、版面配置和圖形) 加入應用程式。 本主題說明如何在 Visual Studio 或 Blend for Visual Studio 中，使用 XAML 設計工具來處理項目。
@@ -29,7 +29,7 @@ ms.locfileid: "34269186"
 
 -   在 XAML 設計工具中，執行下列其中一個動作：
 
-    -   按兩下 [工具箱] 中的項目 (或是在 [工具箱] 中選取項目，然後按 Enter)。
+    -   按兩下 [工具箱] 中的項目 (或是在 [工具箱] 中選取項目，然後按 **Enter**)。
 
     -   將項目從 [工具箱] 拖曳至畫板。
 
@@ -63,7 +63,7 @@ ms.locfileid: "34269186"
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>使用功能表命令對齊兩個或多個項目
 
-1.  選取您要對齊的項目。 您可以按住 Ctrl 鍵並選取項目，來選取多個項目。
+1.  選取您要對齊的項目。 您可以按住 **Ctrl** 鍵並選取項目，來選取多個項目。
 
 2.  在 [屬性] 視窗的 [版面配置] 區段中，選取 **HorizontalAlignment** 下的下列其中一個屬性：[靠左]、[置中]、[靠右] 或 [自動縮放]。
 
@@ -100,7 +100,7 @@ ms.locfileid: "34269186"
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>將項目群組成新的版面配置容器
 
-1.  選取您要群組的項目。 (若要選取多個項目，請按住 Ctrl 鍵並按一下這些項目)。
+1.  選取您要群組的項目。 (若要選取多個項目，請按住 **Ctrl** 鍵並按一下這些項目。)
 
 2.  以滑鼠右鍵按一下選取的項目，並指向 [群組置入]，然後按一下您要置入群組的版面配置容器類型。
 
@@ -118,7 +118,7 @@ ms.locfileid: "34269186"
 
 #### <a name="to-reset-the-element-layout"></a>重設項目配置
 
--   在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下項目，然後依序選擇 [版面配置] 和 [重設*屬性名稱*]，其中*屬性名稱* 是您要重設的屬性 (或者依序選擇 [版面配置] 和 [全部重設]，以重設項目的所有版面配置屬性)。
+-   在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下項目，然後依序選擇 [版面配置] > [重設 *PropertyName*]，其中 *PropertyName* 是您要重設的屬性 (或者依序選擇 [版面配置] > [全部重設]，以重設項目的所有版面配置屬性)。
 
 ## <a name="see-also"></a>另請參閱
 

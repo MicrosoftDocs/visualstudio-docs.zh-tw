@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745707"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079884"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
 
@@ -27,13 +27,13 @@ ms.locfileid: "34745707"
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>建立要做為資料來源使用的類別
 
-1. 在 [檔案] 功能表上，選擇 [新增]> [專案]。
+1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
 1. 在 [新增專案] 對話方塊中，選擇 [Visual C#] 或 [Visual Basic] 節點，並展開 [Windows 桌面] 節點，然後選擇 [WPF 應用程式] 範本。
 
 1. 將專案命名為 **BindingTest**，然後選擇 [確定] 按鈕。
 
-1. 開啟 MainWindow.xaml.cs (或 MainWindow.xaml.vb) 檔案並加入下列程式碼。 在 C# 中，將程式碼加入 `BindingTest` 命名空間中 (檔案中最後一個右括號之前)。 在 Visual Basic 中，只要加入新類別。
+1. 開啟 **MainWindow.xaml.cs** (或 **MainWindow.xaml.vb**) 檔案並新增下列程式碼。 在 C# 中，將程式碼加入 `BindingTest` 命名空間中 (檔案中最後一個右括號之前)。 在 Visual Basic 中，只要加入新類別。
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ ms.locfileid: "34745707"
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>將 ItemCount 屬性繫結至 TextBlock 控制項
 
-1. 在方案總管中，開啟 MainWindow.xaml 的捷徑功能表，然後選擇 [設計工具檢視]。
+1. 在方案總管中，開啟 **MainWindow.xaml** 的捷徑功能表，然後選擇 [檢視設計工具]。
 
 1. 在 [工具箱] 中，選擇 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) 控制項，以將它新增至表單。
 

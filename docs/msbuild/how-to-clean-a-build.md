@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578216"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079118"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
-## <a name="creating-a-directory-for-output-items"></a>建立輸出項目的目錄  
- 編譯專案時所建立的 .exe 檔案預設位於與專案和原始程式檔相同的目錄中。 不過，一般而言，會在不同的目錄中建立輸出項目。  
+## <a name="create-a-directory-for-output-items"></a>建立輸出項目的目錄  
+ 根據預設，編譯專案時所建立的 *.exe* 檔案位於與專案和來源檔案相同的目錄中。 不過，一般而言，會在不同的目錄中建立輸出項目。  
   
 #### <a name="to-create-a-directory-for-output-items"></a>建立輸出項目的目錄  
   
-1.  使用 `Property` 項目來定義目錄的位置和名稱。 例如，在包含專案和原始程式檔的目錄中，建立名為 `BuiltApp` 的目錄：  
+1.  使用 `Property` 項目來定義目錄的位置和名稱。 例如，在包含專案和來源檔案的目錄中，建立名為 *BuiltApp* 的目錄：  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如:   
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>移除輸出項目  
+## <a name="remove-the-output-items"></a>移除輸出項目  
  建立新的中繼和輸出檔案執行個體之前，您可能想要清除所有先前的中繼和輸出檔案執行個體。 使用 [RemoveDir](../msbuild/removedir-task.md) 工作，以從磁碟中刪除目錄以及其所含的所有檔案和目錄。  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>移除目錄中所含的目錄和所有檔案  
@@ -100,7 +101,7 @@ ms.locfileid: "31578216"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Exec 工作](../msbuild/exec-task.md)   
  [MakeDir 工作](../msbuild/makedir-task.md)   
  [RemoveDir 工作](../msbuild/removedir-task.md)   

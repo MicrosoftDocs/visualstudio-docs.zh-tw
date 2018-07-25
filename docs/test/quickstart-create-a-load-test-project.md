@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89a72c115edf8eae11fc1159686dee2b7b3f44d6
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976711"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118277"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -27,7 +27,7 @@ ms.locfileid: "31976711"
 
 如果您尚未安裝 Web 效能與負載測試工具元件，您需要透過 Visual Studio 安裝程式來安裝它。
 
-1. 從 Windows 的 [開始] 功能表開啟 Visual Studio 安裝程式。 您也可以在 Visual Studio 中，從 [新增專案] 對話方塊，或從功能表選擇 [工具] > [取得工具與功能...] 來存取它。
+1. 從 Windows 的 [開始] 功能表開啟 Visual Studio 安裝程式。 您也可以在 Visual Studio 中，從 [新增專案] 對話方塊，或從功能表選擇 [工具] > [取得工具與功能] 來存取它。
 
 1. 在 Visual Studio 安裝程式中，選擇 [個別元件] 索引標籤，然後向下捲動至 [偵錯和測試] 區段。 選取 [Web 效能與負載測試工具]。
 
@@ -41,7 +41,7 @@ ms.locfileid: "31976711"
 
 在本節中，我們將建立 C# 負載測試專案。 如果您想要的話，您也可以建立 Visual Basic 負載測試專案。
 
-1. 開啟 Visual Studio，然後從功能表列選擇 [檔案] > [新增] > [專案...]。
+1. 開啟 Visual Studio，然後從功能表列選擇 [檔案] > [新增] > [專案]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
@@ -55,7 +55,7 @@ ms.locfileid: "31976711"
 
 ## <a name="add-a-load-test-to-the-project"></a>將負載測試新增至專案
 
-1. 從 [方案總管] 之專案節點的右鍵功能表或操作功能表，選擇 [新增] > [負載測試...]。
+1. 從 [方案總管] 之專案節點的右鍵功能表或操作功能表，選擇 [新增] > [負載測試]。
 
    [新增負載測試精靈] 隨即開啟。
 

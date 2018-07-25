@@ -6,24 +6,33 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 14afeefac0bb5aa198b2f62ba00ba85831b23ffb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: dcd305cd7cb3759483c79b75629a688d852f7c7a
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884219"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433195"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
 有許多 Xamarin 產品可啟用跨平台應用程式開發，包含 Visual Studio for Mac 這類獨立應用程式。
 
-瀏覽至相關章節，即可使用本指南來個別解除安裝每個產品。 只要遵循本指南，即可解除安裝整個 Xamarin 工具組。
+您可以使用本指南來個別解除安裝每項產品，方法是巡覽至相關章節，或使用[解除安裝指令碼](#uninstall-script)一節中提供的指令碼，以解除安裝所有項目。
 
-如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 developer.xamarin.com 上[解除安裝](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/)指南中的指示。
+如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 [Xamarin 解除安裝](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的指示。
 
 ## <a name="uninstall-script"></a>解除安裝指令碼
 
-使用[解除安裝指令碼](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)即可將 Visual Studio 及其相關元件解除安裝。
+有兩個指令碼可用來解除安裝您電腦的 Visual Studio for Mac 和所有元件：
+
+- [Visual Studio 和 Xamarin 指令碼](#visual-studio-for-mac-and-xamarin-script)
+- [.NET Core 指令碼](#net-core-script)
+
+下列各節提供有關下載和使用指令碼的資訊。
+
+### <a name="visual-studio-for-mac-and-xamarin-script"></a>Visual Studio for Mac 和 Xamarin 指令碼
+
+使用[解除安裝指令碼](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)即可透過一個步驟將 Visual Studio 和 Xamarin 元件解除安裝。
 
 此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有兩個主要省略項目，並且因可能的外部相依性而未包含：
 
@@ -45,6 +54,26 @@ ms.locfileid: "33884219"
     $ sudo ./uninstall-vsmac.sh
     ```
 4. 最後，刪除解除安裝指令碼。
+
+### <a name="net-core-script"></a>.NET Core 指令碼
+
+.NET Core 的解除安裝指令碼位於[存放庫](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh)中
+
+若要執行指令碼，請執行下列步驟：
+
+1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔...] 以將檔案儲存至 Mac。
+2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
+
+    ```bash
+    $ cd /location/of/file
+    ```
+3. 將指令碼設為可執行，並使用 **sudo** 執行它：
+
+    ```bash
+    $ chmod +x ./dotnet-uninstall-pkgs.sh
+    $ sudo ./dotnet-uninstall-pkgs.sh
+    ```
+4. 最後，刪除 .NET Core 解除安裝指令碼。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 

@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 1：建立專案
 description: 在 Visual Studio 中 Python 功能核心逐步解說的概觀與步驟 1，包含必要條件和建立新的 Python 專案。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031705"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057007"
 ---
-# <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
+# <a name="tutorial-work-with-python-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 Python
 
 Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 語言支援所有形式的開發 (包含 Web 應用程式、Web 服務、傳統型應用程式、指令碼和科學計算)，並且許多大學、科學家、業餘開發人員和專業開發人員等都使用它。
 
@@ -73,7 +73,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 > [!div class="nextstepaction"]
 > [撰寫和執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [Visual Studio 中的 Python 專案](managing-python-projects-in-visual-studio.md)。
 - [了解 python.org 上的 Python 語言](https://www.python.org)

@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746321"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924183"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階材質著色器
+# <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階紋理著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立灰階紋理著色器。 這個著色器可修改材質範例的 RGB 色彩值，然後和未經修改的 Alpha 值一起使用來設定完稿色彩。
 
@@ -27,7 +27,7 @@ ms.locfileid: "34746321"
 
 開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
-1.  建立基本材質著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
+1.  建立基本紋理著色器，如[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
 
 2.  將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。
 

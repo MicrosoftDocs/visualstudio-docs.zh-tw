@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745626"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924456"
 ---
-# <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
+# <a name="how-to-create-a-basic-texture"></a>如何：建立基本紋理
 本文件將示範如何使用影像編輯器來建立基本材質。
 
  本文件示範下列活動︰
@@ -35,7 +35,7 @@ ms.locfileid: "34745626"
 ## <a name="creating-a-basic-texture"></a>建立基本材質
  您可以使用影像編輯器來建立和修改遊戲或應用程式的紋理和影像。
 
- 下列步驟示範如何建立代表「靶心」目標的材質。當您完成時，材質看起來應該類似下列圖片。 設定影像編輯器使用綠色棋盤式圖樣顯示材質，更能展現出材質中的透明度。
+ 下列步驟示範如何建立代表「靶心」目標的紋理。 當您完成時，紋理看起來應該類似於下列圖片。 設定影像編輯器使用綠色棋盤式圖樣顯示材質，更能展現出材質中的透明度。
 
  ![透明度以綠色呈現的「準星型」鏢靶](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "34745626"
 
 #### <a name="to-create-a-bullseye-target-texture"></a>建立「靶心」目標材質
 
-1.  建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。
+1.  建立要使用的紋理。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。
 
 2.  將影像大小設定為 512x512 像素。 在 [屬性] 視窗中，將 [寬度] 和 [高度] 屬性的值設定為 `512`。
 
@@ -51,7 +51,7 @@ ms.locfileid: "34745626"
 
 4.  將前景色彩設為完全透明的黑色。 在 [屬性] 視窗的 [色彩] 屬性群組中，選取 [前景]。 將色彩選擇器旁邊的 [R]、[G]、[B] 及 [A] 屬性值設定為 `0`。
 
-5.  在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 Shift 鍵並選擇影像中的任意點。 使用 Shift 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。
+5.  在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 **Shift** 鍵並選擇影像中的任意點。 使用 **Shift** 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。
 
     > [!IMPORTANT]
     >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。
@@ -66,7 +66,7 @@ ms.locfileid: "34745626"
 
 10. 確定已啟用消除鋸齒功能。 在 [屬性] 視窗的 [外觀] 屬性群組中，確定已設定 [消除鋸齒] 屬性。
 
-11. 使用 [橢圓形] 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 您在繪製時按住 Shift 鍵，可以更輕鬆繪製圓形。
+11. 使用 [橢圓形] 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 您在繪製時按住 **Shift** 鍵，可以更輕鬆地繪製圓形。
 
     > [!NOTE]
     >  目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 狀態列。

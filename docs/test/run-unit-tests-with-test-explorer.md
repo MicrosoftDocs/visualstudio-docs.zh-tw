@@ -1,5 +1,6 @@
 ---
-title: 使用測試總管執行單元測試
+title: 使用 [測試總管] 執行、建置和偵錯單元測試
+description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在建置後啟用自動測試回合、檢視測試結果、群組和篩選測試清單、建立播放清單、偵錯測試，以及使用測試捷徑。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752062"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977787"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -44,7 +45,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 若要執行方案中的所有測試，請選擇 [全部執行] 。
 
-- 若要執行預設群組中的所有測試，請選取 [執行…]  ，然後選取功能表上的群組。
+- 若要執行預設群組中的所有測試，請選擇 [執行]，然後選擇功能表上的群組。
 
 - 選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。
 
@@ -54,7 +55,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
-|||
+|按鈕|描述|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]  ，然後選擇測試總管工具列上的 [建置之後執行測試]  。|
 
@@ -126,7 +127,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 您可以使用測試總管篩選條件，以在檢視和執行的專案中限制測試方法。
 
-當您在測試總管的搜尋方塊輸入字串並選擇 ENTER 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。
+當您在 [測試總管] 的搜尋方塊鍵入字串並選擇 ENTER 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。
 
 若要依據不同準則篩選：
 
@@ -153,7 +154,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 若要排除篩部分選條件的結果，請使用下列語法：
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e85bb64252a73195e4ab8226cfbdb141199107d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: deb3034c00a6f929ed728534bccf66325a45ed38
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569166"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079959"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。  
@@ -36,15 +36,15 @@ ms.locfileid: "31569166"
 -   MSBuild 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。  
   
 ## <a name="target-framework-and-platform"></a>目標架構和平台  
- 「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。  
+ 「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。  
   
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)  
- 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包括 csc.exe 和 vbc.exe 這類編譯器、一般 targets 檔案 (microsoft.common.targets) 和一般 tasks 檔案 (microsoft.common.tasks)。 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。  
+ 工具組會將用來建立應用程式的工具、工作及目標收集在一起。 工具組包括 *csc.exe* 和 *vbc.exe* 這類編譯器、一般 targets 檔案 (*microsoft.common.targets*) 和一般 tasks 檔案 (*microsoft.common.tasks*)。 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。  
   
 ## <a name="reference-assemblies"></a>參考組件  
- 工具組中所指定的參考組件可協助您設計和建置應用程式。 這些參考組件不僅會啟用特定目標組建，也會將 Visual Studio IDE 中的元件和功能限制為與目標相容的元件和功能。 如需詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。  
+ 工具組中所指定的參考組件可協助您設計和建置應用程式。 這些參考組件不僅會啟用特定目標組建，也會將 Visual Studio IDE 中的元件和功能限制為與目標相容的元件和功能。 如需詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)  
   
-## <a name="configuring-targets-and-tasks"></a>設定目標和工作  
+## <a name="configure-targets-and-tasks"></a>設定目標和工作  
  您可以設定 MSBuild 目標和工作以跨處理序方式隨 MSBuild 一起執行，如此您就能以視為與目前執行之內容不同的內容作為目標。  例如，您可以在開發電腦以具有 .NET Framework 4.5 的 64 位元平台執行時，以 32 位元 .NET Framework 2.0 應用程式為目標。 如需詳細資訊，請參閱[設定目標和工作](../msbuild/configuring-targets-and-tasks.md)。  
   
 ## <a name="troubleshooting"></a>疑難排解  

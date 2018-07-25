@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971393"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282274"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
 您可以建立自己的驗證規則。 若要執行這項作業，您可以從驗證規則類別中衍生自己的規則類別。 驗證規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 基底類別。
 

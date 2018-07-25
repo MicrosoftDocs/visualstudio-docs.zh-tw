@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254614"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。  
@@ -29,13 +30,13 @@ ms.lasthandoff: 04/19/2018
  [認識取樣資料值](../profiling/understanding-sampling-data-values.md)  
  了解使用取樣程式碼剖析方法時報告的資料值。  
   
- [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)  
+ [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)  
  了解使用檢測程式碼剖析方法時報告的資料值。  
   
- [認識記憶體配置和物件存留期資料值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [了解記憶體配置和物件存留期資料值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
  了解使用 .NET 記憶體程式碼剖析方法時報告的資料值。  
   
- [認識資源爭用資料值](../profiling/understanding-resource-contention-data-values.md)  
+ [了解資源爭用資料值](../profiling/understanding-resource-contention-data-values.md)  
  了解使用並行程式碼剖析方法時報告的資料值。  
   
  [效能總管視窗](../profiling/performance-explorer-window.md)  
@@ -47,6 +48,6 @@ ms.lasthandoff: 04/19/2018
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)  
  了解在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 上收集取樣資料以及剖析跨工作階段應用程式時，可能會遇到的問題與必須執行的步驟。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [效能總管](../profiling/performance-explorer.md)

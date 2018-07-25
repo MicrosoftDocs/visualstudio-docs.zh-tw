@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffaf1bf06a39036845dc6a2f48c3f0d5f537da01
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37967921"
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。  
@@ -87,9 +88,10 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 -   項目定義是以其出現的順序來定義和修改。  
   
 -   項目是以其出現的順序來定義和修改。  
-  
+ 
+ 
  在組建的執行階段，目標內所定義的屬性和項目會在單一階段以其出現的順序一併進行評估。  
-  
+ 
  不過，這不是完整的資訊。 在定義屬性、項目定義或項目時，會評估它的值。 運算式評估工具會展開字串來指定值。 字串展開是取決於建置階段。 以下是更詳細的屬性和項目評估順序：  
   
 -   在組建的評估階段：  
@@ -127,9 +129,9 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 KeyFileVersion: 1.0.0.3  
 ```  
   
- 這是因為 `KeyFileVersion` 的值實際上是 "@(KeyFile->'%(Version)')" 字串。 項目和項目轉換並未在第一次定義屬性時展開，因此已為 `KeyFileVersion` 屬性指派未展開的字串值。  
+ 這是因為 `KeyFileVersion` 的值實際上是 "\@(KeyFile->'%(Version)')" 字串。 項目和項目轉換並未在第一次定義屬性時展開，因此已為 `KeyFileVersion` 屬性指派未展開的字串值。  
   
- 在組建的執行階段，當它處理 Message 工作時，MSBuild 會展開字串 "@(KeyFile->'%(Version)')" 以得出 "1.0.0.3"。  
+ 在組建的執行階段，當它處理 Message 工作時，MSBuild 會展開字串 "\@(KeyFile->'%(Version)')" 以得出 "1.0.0.3"。  
   
  請注意，即使反轉了屬性和項目群組的順序，還是會出現相同的訊息。  
   
@@ -173,11 +175,11 @@ KeyFileVersion:
 </Target>  
 ```  
   
- `KeyFileVersion` 的值會設為 "1.0.0.3"，而不是 "@(KeyFile->'%(Version)')"。 Message 工作會顯示下列訊息：  
+ `KeyFileVersion` 的值會設為 "1.0.0.3"，而不是 "\@(KeyFile->'%(Version)')"。 Message 工作會顯示下列訊息：  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

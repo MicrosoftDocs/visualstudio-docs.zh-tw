@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745574"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977742"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
 
@@ -31,7 +31,7 @@ ms.locfileid: "34745574"
 
 開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
-1.  建立要使用的 3D 模型。 如需有關如何將模型加到專案的詳細資訊，請參閱[模型編輯器](../designers/model-editor.md)中的＜使用者入門＞一節。
+1.  建立要使用的 3D 模型。 如需如何將模型新增至專案的資訊，請參閱[模型編輯器](../designers/model-editor.md)中的＜使用者入門＞一節。
 
 2.  將平面加入場景。 在 [工具箱] 的 [形狀] 下，選取 [平面]，並將其移至設計介面。
 

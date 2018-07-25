@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578409"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078110"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。  
@@ -30,7 +30,7 @@ ms.locfileid: "31578409"
   
 -   `Architecture` 屬性如果存在的話，會設定平台和位元，並且可接受下列任何一個值：`x86`、`x64`、`CurrentArchitecture` 或 `*` (任何架構)。  
   
--   `TaskFactory` 屬性如果存在的話，會設定建立及執行工作執行個體的工作 Factory，並且只接受 `TaskHostFactory` 值。 如需詳細資訊，請參閱本文件中稍後的＜工作 Factory＞一節。  
+-   `TaskFactory` 屬性如果存在的話，會設定建立及執行工作執行個體的工作 Factory，並且只接受 `TaskHostFactory` 值。 如需詳細資訊，請參閱本文件中稍後的[工作 Factory](#task-factories)。  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ ms.locfileid: "31578409"
  `MSBuildRuntime` 和 `MSBuildArchitecture` 參數提供最具彈性的方式，來設定目標內容，但是範圍也最受限制。  一方面，因為它們是設定在工作執行個體本身，並且在即將執行工作之前才會評估，所以它們可以從評估時間和建置階段可用屬性的完整範圍衍生其值。  在另一方面，這些參數僅適用於特定目標中工作的特定執行個體。  
   
 > [!NOTE]
->  工作參數是在父節點的內容中評估，而非工作主機的內容。執行階段或架構相依的環境變數 (例如程式檔案位置) 將評估為符合父節點的值。  不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。  
+>  工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」位置) 將評估為符合父節點的值。  不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

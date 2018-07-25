@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 439afb9142e3e5ae795b0457f6405ba47227105f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751042"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845301"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -198,7 +198,7 @@ ms.locfileid: "34751042"
 
      如 [回應] 索引標籤以及稍早實作的 JavaScript 中所示，指派給查詢字串參數 CustomQueryString 的值為 " jScriptQueryString___"，而且會與 var sessionId 傳回的值串連。
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ ms.locfileid: "34751042"
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>問：我是否需要設定 Visual Studio 來偵測動態參數？
 
- **答：** 預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以[從 Web 效能測試編輯器中執行動態參數偵錯](#FindingNonDetectableDynamicParamters_QA_ReRunDetection)。
+ **答：** 預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以從 Web 效能測試編輯器中執行動態參數偵測。

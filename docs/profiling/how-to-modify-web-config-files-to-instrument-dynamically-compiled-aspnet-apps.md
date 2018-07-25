@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336028"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844761"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。  
   
- 本主題說明如何修改 web.config 組態檔，以啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和程式碼剖析。  
+ 本主題描述如何修改 *web.config* 組態檔，以啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。  
   
 > [!NOTE]
->  當您使用取樣程式碼剖析方法，或是想要檢測預先編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模組時，不需要修改 web.config 檔。  
+>  當您使用取樣分析方法，或是想要檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模組時，不需要修改 *web.config* 檔案。  
   
- web.config 檔的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行程式碼剖析，您必須加入或修改下列項目：  
+ *web.config* 檔案的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行分析，您必須新增或修改下列項目：  
   
 -   **configuration/runtime/assemblyBinding/dependentAssembly** 項目，識別控制程式碼剖析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 組件。 **dependentAssembly** 項目包含兩個子項目：**assemblyIdentity** 和 **codeBase**。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "34336028"
   
 -   兩個 **add** 項目，識別加入至 **configuration/appSettings** 區段之程式碼剖析工具的位置。  
   
- 建議您建立原始 web.config 檔的複本，以便用來還原應用程式的組態。  
+ 建議您建立原始的 *web.config* 檔案複本，以便用來還原應用程式的組態。  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>加入 ASPNetHelper 組件做為 configuration/runtime/assemblyBinding/dependentAssembly 項目  
   
@@ -176,7 +176,7 @@ ms.locfileid: "34336028"
 ```  
   
 ## <a name="example"></a>範例  
- 以下為完整的 web.config 檔，會啟用動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和程式碼剖析。 本範例假設修改前檔案中沒有其他設定。  
+ 以下為完整的 *web.config* 檔案，會啟用動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。 本範例假設修改前檔案中沒有其他設定。  
   
 ```xml  
 <?xml version="1.0"?>  

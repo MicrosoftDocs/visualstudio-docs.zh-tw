@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751867"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117624"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何測試 Visual C++ DLL
 
@@ -46,7 +46,7 @@ ms.locfileid: "34751867"
 
     -   測試方法會使用 `TEST_CLASS(YourClassName){...}`來分類。
 
-         當測試執行時，就會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱 MSDN Library 中的[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)。
+         當測試執行時，就會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱 MSDN Library 中的[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 確認測試在測試總管中執行
 
@@ -113,7 +113,7 @@ ms.locfileid: "34751867"
 
 5.  加入已宣告函式的最低限度實作。 開啟 **RooterLib.cpp** 並新增下列程式碼︰
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ ms.locfileid: "34751867"
 
 1.  將 RooterLib 加入 RooterLibTests 專案。
 
-    1.  在 [方案總管] 中，選擇 [RooterLibTests] 專案，然後在捷徑功能表上選擇 [參考...]。
+    1.  在 [方案總管] 中，選擇 [RooterLibTests] 專案，然後在捷徑功能表上選擇 [參考]。
 
     2.  在 [RooterLib 專案屬性] 對話方塊中，展開 [通用屬性]，然後選擇 [架構和參考]。
 
-    3.  選擇 [加入新參考....]
+    3.  選擇 [新增參考]
 
     4.  在 [加入參考] 對話方塊中，展開 [方案]，然後選擇 [專案]。 然後選取 [RouterLib] 項目。
 
@@ -151,7 +151,7 @@ ms.locfileid: "34751867"
 
 3.  加入使用已匯入函式的測試。 將下列程式碼加入至 **unittest1.cpp**：
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ ms.locfileid: "34751867"
 
 1.  將另一個測試加入至 **unittest1.cpp**：
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ ms.locfileid: "34751867"
 
     3.  將程式碼加入至 **RooterLib.cpp** 以攔截例外狀況︰
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

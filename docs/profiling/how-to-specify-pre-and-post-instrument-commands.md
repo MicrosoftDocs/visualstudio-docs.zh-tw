@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844634"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
  **32 位元電腦**
 
-在 32 位元電腦上，預設的程式碼剖析工具目錄是磁碟機\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
+在 32 位元電腦上，預設的分析工具目錄是 <磁碟機>\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
 
 **64 位元電腦**
 
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/19/2018
 
 - 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
-     *磁碟機*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     <磁碟機>\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
 
 - 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
-     *磁碟機*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     <磁碟機>\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
 
 ## <a name="to-specify-pre-instrument-commands"></a>指定檢測前置命令
 

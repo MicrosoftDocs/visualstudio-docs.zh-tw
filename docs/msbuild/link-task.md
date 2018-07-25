@@ -32,18 +32,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25cea2311043f50ec08937f72d883e9334df2f81
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575893"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081705"
 ---
 # <a name="link-task"></a>Link 工作
-包裝 Visual C++ 連結器工具 link.exe。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 (.exe) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。  
+包裝 Visual C++ 連結器工具 (link.exe)。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 (*.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。  
   
 ## <a name="parameters"></a>參數  
- 下表說明 **Link** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
+ 以下描述 **Link** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
 -   **AdditionalDependencies**  
   
@@ -67,13 +67,13 @@ ms.locfileid: "31575893"
   
      指定將放入資訊清單檔案的 `dependency` 區段的屬性。  
   
-     如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜發行者組態檔＞。  
+     如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另請參閱[發行者組態檔](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files)。  
   
 -   **AdditionalOptions**  
   
      選擇性的 **String** 參數。  
   
-     指定於命令列上的連結器選項清單。 例如 **"***/option1 /option2 /option#*"。 使用此參數，來指定任何其他 **Link** 工作參數未表示的連結器選項。  
+     指定於命令列上的連結器選項清單。 例如，/\<option1> /\<option2> /\<option#>。 使用此參數，來指定任何其他 **Link** 工作參數未表示的連結器選項。  
   
      如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "31575893"
   
      將模組參考加入組件。  
   
-     如需詳細資訊，請參閱 [/ASSEMBLYMODULE (將 MSIL 模組加入組件)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly)。  
+     如需詳細資訊，請參閱 [/ASSEMBLYMODULE (將 MSIL 模組新增至組件)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly)。  
   
 -   **AllowIsolation**  
   
@@ -147,7 +147,7 @@ ms.locfileid: "31575893"
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     如需詳細資訊，請參閱 [/CLRIMAGETYPE (指定 CLR 映像類型)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)。  
+    如需詳細資訊，請參閱 [/CLRIMAGETYPE (指定 CLR 映像類型)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)。  
   
 -   **CLRSupportLastError**  
   
@@ -163,7 +163,7 @@ ms.locfileid: "31575893"
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     如需詳細資訊，請參閱 [/CLRSUPPORTLASTERROR (保留 PInvoke 呼叫的最後一個錯誤碼)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)。  
+    如需詳細資訊，請參閱 [/CLRSUPPORTLASTERROR (保留 PInvoke 呼叫的最後一個錯誤碼)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)。  
   
 -   **CLRThreadAttribute**  
   
@@ -179,7 +179,7 @@ ms.locfileid: "31575893"
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     如需詳細資訊，請參閱 [/CLRTHREADATTRIBUTE (設定 CLR 執行緒屬性)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)。  
+    如需詳細資訊，請參閱 [/CLRTHREADATTRIBUTE (設定 CLR 執行緒屬性)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)。  
   
 -   **CLRUnmanagedCodeCheck**  
   
@@ -187,7 +187,7 @@ ms.locfileid: "31575893"
   
      指定連結器是否會將 **SuppressUnmanagedCodeSecurityAttribute** 套用至連結器產生的 P/Invoke 呼叫 (由 Managed 程式碼至原生 DLL)。  
   
-     如需詳細資訊，請參閱 [/CLRUNMANAGEDCODECHECK (加入 SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
+    如需詳細資訊，請參閱 [/CLRUNMANAGEDCODECHECK (加入 SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
   
 -   **CreateHotPatchableImage**  
   
@@ -205,7 +205,7 @@ ms.locfileid: "31575893"
   
     -   **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
-     如需詳細資訊，請參閱 [/FUNCTIONPADMIN (建立可進行 Hotpatch 的映像)](/cpp/build/reference/functionpadmin-create-hotpatchable-image)。  
+    如需詳細資訊，請參閱 [/FUNCTIONPADMIN (建立可進行 Hotpatch 的映像)](/cpp/build/reference/functionpadmin-create-hotpatchable-image)。  
   
 -   **DataExecutionPrevention**  
   
@@ -247,7 +247,7 @@ ms.locfileid: "31575893"
   
     -   **WDM** - **/DRIVER:WDM**  
   
-     如需詳細資訊，請參閱 [/DRIVER (Windows NT 核心模式驅動程式)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)。  
+    如需詳細資訊，請參閱 [/DRIVER (Windows NT 核心模式驅動程式)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)。  
   
 -   **EmbedManagedResourceFile**  
   
@@ -255,7 +255,7 @@ ms.locfileid: "31575893"
   
      在組件中內嵌資源檔。 指定所需的資源檔名稱。 選擇性地指定邏輯名稱 (用來載入資源) 及 **PRIVATE** 選項 (表示在組件資訊清單中資源檔為私用的)。  
   
-     如需詳細資訊，請參閱 [/ASSEMBLYRESOURCE (內嵌 Managed 資源)](/cpp/build/reference/assemblyresource-embed-a-managed-resource)。  
+     如需詳細資訊，請參閱 [/ASSEMBLYRESOURCE (內嵌受控資源)](/cpp/build/reference/assemblyresource-embed-a-managed-resource)。  
   
 -   **EnableCOMDATFolding**  
   
@@ -277,7 +277,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     指定進入點函式做為 .exe 檔或 DLL 的開始位址。 指定函式名稱做為參數值。  
+     指定進入點函式作為 *.exe* 檔案或 DLL 的開始位址。 指定函式名稱做為參數值。  
   
      如需詳細資訊，請參閱 [/ENTRY (進入點符號)](/cpp/build/reference/entry-entry-point-symbol)。  
   
@@ -293,7 +293,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     告訴連結器即使參考到未定義或多次定義的符號，也要建立有效的 .exe 檔或 DLL。  
+     告訴連結器即使參考到未定義或多次定義的符號，也要建立有效的 *.exe* 檔案或 DLL。  
   
      指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
@@ -303,7 +303,7 @@ ms.locfileid: "31575893"
   
     -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     如需詳細資訊，請參閱 [/FORCE (強制檔案輸出)](/cpp/build/reference/force-force-file-output)。  
+    如需詳細資訊，請參閱 [/FORCE (強制檔案輸出)](/cpp/build/reference/force-force-file-output)。  
   
 -   **ForceSymbolReferences**  
   
@@ -319,13 +319,13 @@ ms.locfileid: "31575893"
   
      此參數會以預先定義的順序將指定的封裝函式 (COMDAT) 放入映像中，來最佳化您的程式。  
   
-     如需詳細資訊，請參閱 [/ORDER (依順序置放函式)](/cpp/build/reference/order-put-functions-in-order)。  
+     如需詳細資訊，請參閱 [/ORDER (依序置放函式)](/cpp/build/reference/order-put-functions-in-order)。  
   
 -   **GenerateDebugInformation**  
   
      選擇性的 **Boolean** 參數。  
   
-     如果是 `true`，即會建立 .exe 檔或 DLL 的偵錯資訊。  
+     若為 `true`，即會建立 *.exe* 檔或 DLL 的偵錯資訊。  
   
      如需詳細資訊，請參閱 [/DEBUG (產生偵錯資訊)](/cpp/build/reference/debug-generate-debug-info)。  
   
@@ -341,7 +341,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **Boolean** 參數。  
   
-     如果是 `true`，即會建立「對應檔」。 對應檔的副檔名是 .map。  
+     如果是 `true`，即會建立「對應檔」。 對應檔的副檔名是 *.map*。  
   
      如需詳細資訊，請參閱 [/MAP (產生對應檔)](/cpp/build/reference/map-generate-mapfile)。  
   
@@ -373,7 +373,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **Boolean** 參數。  
   
-     如果是 `true`，即會指定不應將原始程式碼中的任何 IDL 屬性處理到 .idl 檔中。  
+     若為 `true`，即會指定不應將原始程式碼中的任何 IDL 屬性處理到 *.idl* 檔案中。  
   
      如需詳細資訊，請參閱 [/IGNOREIDL (不要將屬性處理至 MIDL 中)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl)。  
   
@@ -399,13 +399,13 @@ ms.locfileid: "31575893"
   
      如果是 `true`，連結器只有在它也可以產生映像的安全例外狀況處理常式表格時，才會產生該映像。  
   
-     如需詳細資訊，請參閱 [/SAFESEH (映像有安全例外狀況處理常式)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)。  
+     如需詳細資訊，請參閱 [/SAFESEH (映像擁有安全例外狀況處理常式)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)。  
   
 -   **ImportLibrary**  
   
      使用者指定的匯入程式庫名稱，可取代預設的程式庫名稱。  
   
-     如需詳細資訊，請參閱 [/IMPLIB (名稱匯入程式庫)](/cpp/build/reference/implib-name-import-library)。  
+     如需詳細資訊，請參閱 [/IMPLIB (命名匯入程式庫)](/cpp/build/reference/implib-name-import-library)。  
   
 -   **KeyContainer**  
   
@@ -421,7 +421,7 @@ ms.locfileid: "31575893"
   
      指定包含已簽署組件之金鑰的容器。  
   
-     如需詳細資訊，請參閱 [/KEYFILE (指定要簽署組件的金鑰或金鑰組)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)。 另請參閱 **KeyContainer** 參數。  
+     如需詳細資訊，請參閱 [/KEYFILE (指定金鑰或金鑰組以簽署組件)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)。 另請參閱 **KeyContainer** 參數。  
   
 -   **LargeAddressAware**  
   
@@ -429,7 +429,7 @@ ms.locfileid: "31575893"
   
      如果是 `true`，應用程式就能處理大於 2 GB 的位址。  
   
-     如需詳細資訊，請參閱 [/LARGEADDRESSAWARE (處理大型記憶體)](/cpp/build/reference/largeaddressaware-handle-large-addresses)。  
+     如需詳細資訊，請參閱 [/LARGEADDRESSAWARE (處理大型記憶體位址)](/cpp/build/reference/largeaddressaware-handle-large-addresses)。  
   
 -   **LinkDLL**  
   
@@ -455,7 +455,7 @@ ms.locfileid: "31575893"
   
     -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     如需詳細資訊，請參閱 [/ERRORREPORT (回報內部連結器錯誤)](/cpp/build/reference/errorreport-report-internal-linker-errors)。  
+    如需詳細資訊，請參閱 [/ERRORREPORT (回報內部連結器錯誤)](/cpp/build/reference/errorreport-report-internal-linker-errors)。  
   
 -   **LinkIncremental**  
   
@@ -501,7 +501,7 @@ ms.locfileid: "31575893"
   
          \- **/LTCG:PGUpdate**  
   
-     如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation)。  
+    如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation)。  
   
 -   **ManifestFile**  
   
@@ -509,7 +509,7 @@ ms.locfileid: "31575893"
   
      將預設的資訊清單檔案名稱變更為指定的檔案名稱。  
   
-     如需詳細資訊，請參閱 [/MANIFESTFILE (為資訊清單檔案命名)](/cpp/build/reference/manifestfile-name-manifest-file)。  
+     如需詳細資訊，請參閱 [/MANIFESTFILE (命名資訊清單檔)](/cpp/build/reference/manifestfile-name-manifest-file)。  
   
 -   **MapExports**  
   
@@ -529,9 +529,9 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     指定 .idl 檔的檔名和副檔名。  
+     指定 .idl 檔案的檔名和副檔名。  
   
-     如需詳細資訊，請參閱 [/IDLOUT (為 MIDL 輸出檔命名)](/cpp/build/reference/idlout-name-midl-output-files)。  
+     如需詳細資訊，請參閱 [/IDLOUT (命名 MIDL 輸出檔案)](/cpp/build/reference/idlout-name-midl-output-files)。  
   
 -   **MergeSections**  
   
@@ -547,7 +547,7 @@ ms.locfileid: "31575893"
   
      指定包含 MIDL 命令列選項的檔案名稱。  
   
-     如需詳細資訊，請參閱 [/MIDL (指定 MIDL 命令列引數選項)](/cpp/build/reference/midl-specify-midl-command-line-options)。  
+     如需詳細資訊，請參閱 [/MIDL (指定 MIDL 命令列選項)](/cpp/build/reference/midl-specify-midl-command-line-options)。  
   
 -   **MinimumRequiredVersion**  
   
@@ -569,7 +569,7 @@ ms.locfileid: "31575893"
   
      將指定的 MS-DOS Stub 程式附加至 Win32 程式。  
   
-     如需詳細資訊，請參閱 [/STUB (MS-DOS Stub 檔名)](/cpp/build/reference/stub-ms-dos-stub-file-name)。  
+     如需詳細資訊，請參閱 [/STUB (MS-DOS Stub 檔名稱)](/cpp/build/reference/stub-ms-dos-stub-file-name)。  
   
 -   **NoEntryPoint**  
   
@@ -599,7 +599,7 @@ ms.locfileid: "31575893"
   
      覆寫連結器所建立程式的預設名稱和位置。  
   
-     如需詳細資訊，請參閱 [/OUT (輸出檔名稱)](/cpp/build/reference/out-output-file-name)。  
+     如需詳細資訊，請參閱 [/OUT (輸出檔案名稱)](/cpp/build/reference/out-output-file-name)。  
   
 -   **PerUserRedirection**  
   
@@ -617,7 +617,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **Boolean** 參數。  
   
-     如果是 `true`，即會指示 Bind.exe 不應該繫結連結的映像。  
+     若為 `true`，即會指示 *Bind.exe* 不應該繫結連結的映像。  
   
      如需詳細資訊，請參閱 [/ALLOWBIND (防止 DLL 繫結)](/cpp/build/reference/allowbind-prevent-dll-binding)。  
   
@@ -633,9 +633,9 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     指定將用來保存執行中程式相關資訊的 .pgd 檔案名稱  
+     指定將用來保存執行中程式相關資訊的 *.pgd* 檔案名稱  
   
-     如需詳細資訊，請參閱 [/PGD (指定特性指引最佳化的資料庫)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations)。  
+     如需詳細資訊，請參閱 [/PGD (指定特性指引最佳化資料庫)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations)。  
   
 -   **ProgramDatabaseFile**  
   
@@ -665,13 +665,13 @@ ms.locfileid: "31575893"
   
      指定程式線性位址空間內每個區段的對應儲存方式。 參數值是一個單位數的位元組且為 2 的次方。  
   
-     如需詳細資訊，請參閱 [/ALIGN (區段對應儲存)](/cpp/build/reference/align-section-alignment)。  
+     如需詳細資訊，請參閱 [/ALIGN (區段對齊)](/cpp/build/reference/align-section-alignment)。  
   
 -   **SetChecksum**  
   
      選擇性的 **Boolean** 參數。  
   
-     如果是 `true`，即會在 .exe 檔的標頭中設定總和檢查碼。  
+     若為 `true`，即會在 *.exe* 檔案的標頭中設定總和檢查碼。  
   
      如需詳細資訊，請參閱 [/RELEASE (設定總和檢查碼)](/cpp/build/reference/release-set-the-checksum)。  
   
@@ -697,7 +697,7 @@ ms.locfileid: "31575893"
   
     -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     如需詳細資訊，請參閱 [/VERBOSE (列印進度訊息)](/cpp/build/reference/verbose-print-progress-messages)。  
+    如需詳細資訊，請參閱 [/VERBOSE (列印進度訊息)](/cpp/build/reference/verbose-print-progress-messages)。  
   
 -   **Sources**  
   
@@ -709,7 +709,7 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     指定區段的屬性。 這會覆寫在編譯區段的 .obj 檔案時所設定的屬性。  
+     指定區段的屬性。 這會覆寫在編譯區段的 *.obj* 檔案時所設定的屬性。  
   
      如需詳細資訊，請參閱 [/SECTION (指定區段屬性)](/cpp/build/reference/section-specify-section-attributes)。  
   
@@ -765,7 +765,7 @@ ms.locfileid: "31575893"
   
     -   **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     如需詳細資訊，請參閱 [/SUBSYSTEM (指定子系統)](/cpp/build/reference/subsystem-specify-subsystem)。  
+    如需詳細資訊，請參閱 [/SUBSYSTEM (指定子系統)](/cpp/build/reference/subsystem-specify-subsystem)。  
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
@@ -839,7 +839,7 @@ ms.locfileid: "31575893"
   
     -   **MachineX86** - **/MACHINE:X86**  
   
-     如需詳細資訊，請參閱 [/MACHINE (指定目標平台)](/cpp/build/reference/machine-specify-target-platform)。  
+    如需詳細資訊，請參閱 [/MACHINE (指定目標平台)](/cpp/build/reference/machine-specify-target-platform)。  
   
 -   **TerminalServerAware**  
   
@@ -875,9 +875,9 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     指定 .tlb 檔的檔名和副檔名。 指定檔案名稱，或路徑和檔案名稱。  
+     指定 *.tlb* 檔的檔名和副檔名。 指定檔案名稱，或路徑和檔案名稱。  
   
-     如需詳細資訊，請參閱 [/TLBOUT (為 .TLB 檔命名)](/cpp/build/reference/tlbout-name-dot-tlb-file)。  
+     如需詳細資訊，請參閱 [/TLBOUT (命名 .tlb 檔)](/cpp/build/reference/tlbout-name-dot-tlb-file)。  
   
 -   **TypeLibraryResourceID**  
   
@@ -901,7 +901,7 @@ ms.locfileid: "31575893"
   
     -   **RequireAdministrator** - `level='requireAdministrator'`  
   
-     如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `level` 引數。  
+    如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `level` 引數。  
   
 -   **UACUIAccess**  
   
@@ -921,9 +921,9 @@ ms.locfileid: "31575893"
   
      選擇性的 **String** 參數。  
   
-     將版本號碼放入 .exe 或 .dll 檔的標頭。 請指定 "`major[.minor]`"。 `major` 和 `minor` 引數都是範圍從 0 到 65535 的十進位數字。  
+     將版本號碼放入 *.exe* 或 *.dll* 檔案的標頭。 請指定 "`major[.minor]`"。 `major` 和 `minor` 引數都是範圍從 0 到 65535 的十進位數字。  
   
      如需詳細資訊，請參閱 [/VERSION (版本資訊)](/cpp/build/reference/version-version-information)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

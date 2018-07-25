@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c99dea00506fa838a2bb5c800fa05b7d55af3844
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752137"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947098"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>教學課程步驟 5：使用投票 Flask Web 專案範本
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
 **上一個步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 

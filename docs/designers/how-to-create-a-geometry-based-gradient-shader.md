@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745772"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923903"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
 
@@ -64,7 +64,7 @@ ms.locfileid: "34745772"
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)
-- [如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)
 - [如何：建立灰階材質著色器](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

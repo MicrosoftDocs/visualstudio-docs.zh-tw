@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747049"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924062"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 
@@ -29,7 +29,7 @@ ms.locfileid: "34747049"
 
 1.  建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。
 
-2.  刪除 [點色彩] 節點。 在 [選取] 模式中，選取 [點色彩] 節點，然後在功能表列上，選取 [編輯]、[刪除]。 這樣會替下一個步驟加入的節點留出空間。
+2.  刪除 [點色彩] 節點。 在 [選取] 模式中，選取 [點色彩] 節點，然後在功能表列上，選擇 [編輯] > [刪除]。 這樣會替下一個步驟加入的節點留出空間。
 
 3.  將 [材質範例] 節點加入圖形。 在 [工具箱] 的 [材質] 下，選取 [材質範例]，並將其移至設計介面。
 

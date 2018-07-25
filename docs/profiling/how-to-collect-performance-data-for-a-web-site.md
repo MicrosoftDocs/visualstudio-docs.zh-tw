@@ -19,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815921"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
 
-您可以使用 [效能精靈]  收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料。 您可以對 Visual Studio 中開啟的 Web 應用程式進行分析，也可以對位於本機電腦上但未在 Visual Studio IDE 中開啟的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網站進行分析。
+您可以使用 [效能精靈] 收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料。 您可以對 Visual Studio 中開啟的 Web 應用程式進行分析，也可以對位於本機電腦上但未在 Visual Studio IDE 中開啟的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網站進行分析。
 
 > [!NOTE]
 > [效能精靈]  可讓您將階層互動 (TIP) 資料及/或 JScript 效能資料新增至收集的程式碼剖析資料。 TIP 選項會從伺服器端處理序收集資料。 JScript 程式碼剖析會從本機或遠端網站上執行的指令碼收集資料。 在大部分情況下，您應該只選擇其中一個選項。
@@ -42,13 +43,13 @@ ms.lasthandoff: 04/19/2018
 
  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。
 
-## <a name="to-profile-a-web-site-project"></a>對網站專案進行程式碼剖析
+## <a name="to-profile-a-web-site-project"></a>對網站專案進行分析
 
 1. 在 Visual Studio 中開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。
 
 2. 在 [分析] 功能表上，選取 [效能分析工具]，再選取 [效能總管]，然後選取 [啟動]。
 
-3. 在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需程式碼剖析方法的詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。 請注意，並行視覺化檢視程式碼剖析方法不適用於 Web 應用程式。
+3. 在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需分析方法的詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。 請注意，並行視覺化檢視程式碼剖析方法不適用於 Web 應用程式。
 
 4. 在 [您要以哪一個應用程式作為分析的目標?]  下拉式清單中，確認已選取目前的專案，然後按一下 [下一步] 。
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/19/2018
 
      分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主視窗中顯示資料的 [摘要] 檢視。
 
-## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>對網站進行程式碼剖析，但不在 Visual Studio 中開啟專案
+## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>對網站進行分析，但不在 Visual Studio 中開啟專案
 
 1. 開啟 Visual Studio。
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/19/2018
 
     - 若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。
 
-    - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。
+    - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript] 核取方塊。
 
 7. 按 [ **下一步**]。
 
@@ -105,4 +106,4 @@ ms.lasthandoff: 04/19/2018
 [概觀](../profiling/overviews-performance-tools.md)  
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
 [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)  
-[了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+[認識取樣資料值](../profiling/understanding-sampling-data-values.md)

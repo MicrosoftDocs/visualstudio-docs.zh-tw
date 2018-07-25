@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 798cf3622c5f6bc8462ce475c780ce26190b7ae6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5207c995d79f83df89224d8f44b41986ef21e898
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917432"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978055"
 ---
 # <a name="model-editor-examples"></a>模型編輯器範例
 
@@ -27,5 +27,5 @@ ms.locfileid: "31917432"
 |-----------|-----------------|
 |[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)|描述如何建立基本 3D 模型。|
 |[如何：修改 3D 模型的樞紐點](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|描述如何修改 3D 模型的樞紐點和比例。|
-|[如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)|描述如何建立基本的景觀場景。|
+|[如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)|描述如何建立基本的景觀場景。|
 |[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|描述如何將著色器套用至 3D 模型。|

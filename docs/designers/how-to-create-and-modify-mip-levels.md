@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925621"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924443"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：建立和修改 MIP 層級
 本文件將示範如何使用「影像編輯器」來產生和修改材質空間「詳細層級」(LoD) 的「MIP 層級」。
@@ -25,9 +25,9 @@ ms.locfileid: "31925621"
 
 #### <a name="to-generate-mip-levels"></a>產生 MIP 層級
 
-1.  從基本材質著手，如[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述。 為了獲得最佳結果，請指定寬度和高度大小是 2 的乘冪 (例如 256、512、1024 等) 的材質。
+1.  從基本紋理著手，如[如何：建立基本紋理](../designers/how-to-create-a-basic-texture.md)中所述。 為了獲得最佳結果，請指定寬度和高度大小是 2 的乘冪 (例如 256、512、1024 等) 的材質。
 
-2.  產生 MIP 層級。 在 [影像編輯器模式] 工具列上，選擇 [進階]、[工具]、[產生 Mips]。
+2.  產生 MIP 層級。 在 [影像編輯器模式] 工具列上，選擇 [進階] > [工具] > [產生 Mips]。
 
      請注意，[移至下一個 MIP 層級] 和 [移至上一個 MIP 層級] 按鈕現在出現在 [影像編輯器模式] 工具列上。 如果顯示 [屬性] 視窗，請一併注意唯獨屬性 [MIP 層級] 和 [MIP 層級計數] 現在出現在影像屬性中。
 
@@ -41,7 +41,7 @@ ms.locfileid: "31925621"
 2.  選取您想要修改的 MIP 層級之後，您可以使用繪圖工具來修改它，而不需變更其他 MIP 層級的內容。 「影像編輯器」工具列上會提供繪圖工具。 選取工具之後，您可以在 [屬性] 視窗中變更其屬性。 如需有關繪圖工具及其屬性的資訊，請參閱[影像編輯器](../designers/image-editor.md)。
 
 > [!NOTE]
->  如果您不需要修改個別 MIP 層級的內容 (就像您想要達成特定效果時可能會做的)，建議您在建置階段從來源材質產生 Mipmap。 這有助於確保 MIP 層級與來源材質保持同步，因為對某個 MIP 層級的修改並不會自動傳播至其他層級。 如需有關如何在建置階段產生 Mipmap 的詳細資訊，請參閱[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。
+>  如果您不需要修改個別 MIP 層級的內容 (就像您想要達成特定效果時可能會做的)，建議您在建置階段從來源材質產生 Mipmap。 這有助於確保 MIP 層級與來源材質保持同步，因為對某個 MIP 層級的修改並不會自動傳播至其他層級。 如需如何在建置階段產生 Mipmap 的詳細資訊，請參閱[如何：匯出包含 Mipmap 的紋理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。
 
 ## <a name="see-also"></a>另請參閱
 

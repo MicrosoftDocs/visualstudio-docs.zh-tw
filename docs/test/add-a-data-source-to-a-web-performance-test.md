@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750821"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283285"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "34750821"
 
  ![將資料繫結至 Web 效能測試](../test/media/web_test_databinding_conceptual.png)
 
- 我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx 網頁：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
+ 我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx 頁面：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
 
  ![執行要測試的 Web 應用程式](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "34750821"
 
 ## <a name="create-a-sql-database"></a>建立 SQL 資料庫
 
-1. 如果您沒有 Visual Studio Enterprise，您可以從 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面進行下載。
+1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面予以下載。
 
 2. 建立 SQL 資料庫。
 
@@ -90,7 +90,7 @@ ms.locfileid: "34750821"
 
 ## <a name="bind-the-data"></a>繫結資料
 
-1. 繫結 ColorName 欄位。
+1. 繫結 **ColorName** 欄位。
 
      ![將 ColorName 欄位繫結至 RadioButtonList1 值](../test/media/web_test_databinding_sql_binddatasource.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "34750821"
 
      當您繫結至資料來源時，您可能違反預設回應 URL 規則。 在這種情況下，回合 2 中的錯誤是由預期原始測試記錄提供 Red.aspx 頁面的規則所造成，但是資料繫結現在會將其導向至 Blue.aspx 頁面。
 
-2. 藉由刪除「回應 URL」驗證規則並再次執行測試，即可修正驗證錯誤。
+2. 刪除**回應 URL** 驗證規則並再次執行測試，即可修正驗證錯誤。
 
      ![刪除回應 URL 驗證規則](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -152,13 +152,13 @@ ms.locfileid: "34750821"
 
 3. 編輯文字檔並加入下列內容：
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. 使用[繫結 SQL 資料](#AddingDataBindingWebTest_BindSQLData)中的步驟，但要選擇 CSV 檔案作為資料來源。
+4. 使用[新增資料來源](#add-the-data-source)中的步驟，但要選擇 CSV 檔案作為資料來源。
 
      ![輸入名稱並選擇 CSV 檔案](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -170,9 +170,9 @@ ms.locfileid: "34750821"
 
      ![加入 schema.ini 檔案](../test/media/web_test_databinding_schemafile.png)
 
-2. 請編輯 schema.ini 檔案，加入描述您的資料結構之資訊。 例如，描述 CSV 檔案的結構描述檔可能像這樣：
+2. 請編輯 schema.ini 檔案，新增可描述您資料結構的資訊。 例如，描述 CSV 檔案的結構描述檔可能像這樣：
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -181,7 +181,7 @@ ms.locfileid: "34750821"
 
      ![將資料來源加入至 Web 效能測試](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. 如果您使用的是 schema.ini 檔案，請選擇資料庫 (而非 CSV 檔案) 做為資料來源並為其命名。
+4. 如果您使用 schema.ini 檔案，請選擇 [資料庫] (而非 CSV 檔案) 作為資料來源並為其命名。
 
      ![加入資料庫資料來源](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -197,7 +197,7 @@ ms.locfileid: "34750821"
 
      ![選擇 [進階]](../test/media/web_test_databinding_advanced.png)
 
-8. 針對 [提供者] 屬性，選取 [Microsoft.Jet.OLEDB.4.0]，然後將 [擴充屬性] 設為 [Text;HDR=NO]。
+8. 針對 [提供者] 屬性，選取 [Microsoft.Jet.OLEDB.4.0]，然後將 [擴充屬性] 設定為 [Text;HDR=NO]。
 
      ![套用進階屬性](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -241,7 +241,7 @@ ms.locfileid: "34750821"
     </ColorData>
     ```
 
-4. 使用[繫結 SQL 資料](#AddingDataBindingWebTest_BindSQLData)中的步驟，但要選擇 XML 檔案作為資料來源。
+4. 使用[新增資料來源](#add-the-data-source)中的步驟，但要選擇 XML 檔案作為資料來源。
 
      ![輸入名稱並選擇 XML 檔案](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ ms.locfileid: "34750821"
 
 2. 請使用下列語法，以資料繫結值取代 SOAP 主體中的值：
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

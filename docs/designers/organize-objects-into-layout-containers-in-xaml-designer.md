@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2da34d180a59212b171e484129df27d94f580a1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924540"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978173"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 
@@ -23,7 +23,7 @@ ms.locfileid: "31924540"
 
 想像一下您想讓物件 (例如影像、按鈕和影片等物件) 出現在頁面的什麼地方。 或許您想讓物件出現在資料列和資料行中、在垂直或水平的單一行中，或在固定位置中。
 
-在利用此機會思考頁面可能會如何出現之後，請選擇版面配置面板。 所有頁面都會以此開始，因為您需要一些項目來加入物件。 預設是 [格線]，但可以變更。
+在利用此機會思考頁面可能會如何出現之後，請選擇版面配置面板。 所有頁面都會以此開始，因為您需要一些項目來新增物件。 預設是 [格線]，但可以變更。
 
 版面配置面板可協助您在頁面上排列物件，但不僅僅如此。 此面板還可協助您針對不同螢幕大小和解析度進行設計。 當使用者執行您的應用程式時，版面配置面板中的所有項目會調整大小以符合他們裝置的實際螢幕面積。 當然，如果您不想要讓版面配置這麼做，可以對某部分版面配置或整個版面配置覆寫該行為。 您可以使用高度和寬度屬性來控制該行為。
 
@@ -115,7 +115,7 @@ ms.locfileid: "31924540"
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-可用來向下捲動頁面或頁面的區域。 您可以只將一個物件加入至 [捲動檢視器]，以便可以更合理地加入版面配置面板，例如 **Grid** 或 **StackPanel**。
+可讓使用者向下捲動頁面或頁面的區域。 您可以只將一個物件加入至 [捲動檢視器]，以便可以更合理地加入版面配置面板，例如 **Grid** 或 **StackPanel**。
 
 ![ScrollViewer 版面配置控制項](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

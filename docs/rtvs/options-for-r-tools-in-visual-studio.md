@@ -5,8 +5,6 @@ ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: reference
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
@@ -17,11 +15,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d284355af0d5ec406a5d355bf670a520d1a83e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37342742"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 
@@ -32,9 +31,9 @@ ms.lasthandoff: 04/19/2018
 您可以使用下列方法存取 R 專用的選項及設定。 您必須選取位於 [選項] 對話方塊底部的 [顯示所有設定] 方塊，才能顯示這些區段。
 
 - 程式碼格式設定選項 (請參閱[編輯器選項](editing-r-code-in-visual-studio.md#editor-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [格式設定]
-- Linting 選項 (請參閱 [Linting](linting-r-code.md))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [Lint]
-- 進階編輯器選項 ([於此篇文章中描述](#text-editor--r--advanced-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [進階]
-- 行為選項 ([於此篇文章中描述](#r-tools--advanced-options))：[R 工具] > [選項] 功能表，或 [工具] > [選項]，然後捲動至 [R 工具]。
+- Linter 選項 (請參閱 [Linter](linting-r-code.md))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [Lint]
+- 進階編輯器選項 ([於本文中描述](#text-editor--r--advanced-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [進階]
+- 行為選項 ([於本文中描述](#r-tools--advanced-options))：[R 工具] > [選項] 功能表，或 [工具] > [選項]，然後捲動至 [R 工具]。
 
 [R 工具] > [資料科學設定] 命令整體上也會影響幾個 Visual Studio 的不同設定。 下一節將描述此命令。
 
@@ -68,7 +67,7 @@ ms.lasthandoff: 04/19/2018
 
 ### <a name="debugging"></a>偵錯
 
-這些選項控制[變數總管](variable-explorer.md)和偵錯工具視窗 (如監看式和區域變數) 中的值處理方式 (請參閱[偵錯](debugging-r-in-visual-studio.md))。
+這些選項控制[變數總管](variable-explorer.md)和偵錯工具視窗 (如監看式和區域變數) 中的值處理方式 (請參閱[對 R 程式碼進行偵錯](debugging-r-in-visual-studio.md))。
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
@@ -85,16 +84,16 @@ ms.lasthandoff: 04/19/2018
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| F1 網頁瀏覽器 | `Internal` | 控制使用 Ctrl+F1 搜尋詞彙時的說明顯示方式。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
-| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中對詞彙按 Ctrl+F1 時，如何將搜尋詞彙傳遞至搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
-| R 說明瀏覽器 | `Automatic` | 控制使用 F1、`?` 或 `??` 搜尋 R 文件時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
+| F1 網頁瀏覽器 | `Internal` | 控制使用 **Ctrl**+**F1** 搜尋字詞時的說明顯示方式。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
+| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中對字詞按 **Ctrl**+**F1** 時，如何將搜尋字詞傳遞至搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
+| R 說明瀏覽器 | `Automatic` | 控制使用 **F1**、**?** 或 **??** 搜尋 R 文件時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
 
 ### <a name="history"></a>歷程
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| 一律儲存歷程記錄 | `True` | 控制只要關閉專案，RTVS 是否就會將命令歷程記錄寫入工作目錄中的 `.RHistory` 檔案。 即使您在結束前未儲存專案，還是會儲存歷程記錄。 |
-| 重設搜尋篩選 | `True` | 判斷 [歷程記錄] 視窗是否可以篩選命令歷程記錄，只顯示子字串與 [R 歷程記錄] 對話方塊中篩選詞彙相符的命令。 此設定可決定是否只要執行新命令就重設歷程記錄搜尋篩選，或切換至新專案，這樣會觸發載入不同的 `.RHistory` 檔案。 如果您使用篩選集來執行命令，並且納悶剛剛執行的命令為什麼未顯示在 [歷程記錄] 中，則預設設定 `True` 可將驚喜降至最低。 |
+| 一律儲存歷程記錄 | `True` | 控制只要關閉專案，RTVS 是否就會將命令歷程記錄寫入工作目錄中的 *.RHistory* 檔案。 即使您在結束前未儲存專案，還是會儲存歷程記錄。 |
+| 重設搜尋篩選 | `True` | 判斷 [歷程記錄] 視窗是否可以篩選命令歷程記錄，只顯示子字串與 [R 歷程記錄] 對話方塊中篩選詞彙相符的命令。 此設定可決定是否只要執行新命令就重設歷程記錄搜尋篩選，或切換至新專案，這樣會觸發載入不同的 *.RHistory* 檔案。 如果您使用篩選集來執行命令，並且納悶剛剛執行的命令為什麼未顯示在 [歷程記錄] 中，則預設設定 `True` 可將驚喜降至最低。 |
 | 使用多行選取範圍 | `True` | 指定是否可以只按一下就在 [歷程記錄] 中選取多行陳述式。 也會透過陳述式而非行來啟用互動式視窗中的向上/向下箭號巡覽。 |
 
 ### <a name="html"></a>HTML
@@ -119,15 +118,15 @@ ms.lasthandoff: 04/19/2018
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| 字碼頁 | `(OS Default)` | 設定 R 的字碼頁 (地區設定)。預設會使用作業系統的基礎地區設定。 | 
-| CRAN 鏡像 | `(Use .Rprofile)` | 設定預設 CRAN 鏡像來進行套件安裝。 預設設定 `Use .Rprofile` 使用 `.RProfile` 檔案中的 CRAN 鏡像設定。 |
+| 字碼頁 | `(OS Default)` | 設定 R 的字碼頁 (地區設定)。預設會使用作業系統的基礎地區設定。 |
+| CRAN 鏡像 | `(Use .Rprofile)` | 設定預設 CRAN 鏡像來進行套件安裝。 預設設定 `Use .Rprofile` 使用 *.RProfile* 檔案中的 CRAN 鏡像設定。 |
 
 ### <a name="workspace"></a>工作區
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| 在專案開啟時載入工作區 | `No` | 設定為 `Yes` 會在開啟專案時，將工作階段資料從 `.RData` 檔案載入至全域環境。 |
+| 在專案開啟時載入工作區 | `No` | 設定為 `Yes` 會在開啟專案時，將工作階段資料從 *.RData* 檔案載入至全域環境。 |
 | 在重設時提示儲存工作區 | `Yes` | 設定為 `No` 會在您按一下 [互動式視窗] 中的 [重設] 按鈕時停用提示儲存工作區。 |
-| 在專案關閉時儲存工作區 | `No` | 設定為 `Yes` 會在關閉專案時，將全域環境儲存至 `.RData` 檔案。 |
-| 在切換工作區前顯示確認對話方塊 | `Yes` | 設定為 `No` 會在切換不同的工作區時停止提示使用者進行確認。 請參閱[切換工作區](r-workspaces-in-visual-studio.md#switching-between-workspaces)。 |
+| 在專案關閉時儲存工作區 | `No` | 設定為 `Yes` 會在關閉專案時，將全域環境儲存至 *.RData* 檔案。 |
+| 在切換工作區前顯示確認對話方塊 | `Yes` | 設定為 `No` 會在切換不同的工作區時停止提示使用者進行確認。 請參閱[切換工作區](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
 | 顯示機器負載指示器 | `False` | 控制狀態列中 CPU/記憶體/網路負載指示器的可見度。 由於指示器會產生網路流量，在遠端計量的案例中，將其設為 `False` 可能會有所幫助。 變更此選項需要重新啟動 Visual Studio。 |

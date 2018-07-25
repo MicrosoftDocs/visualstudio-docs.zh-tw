@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fef7a6a5d585625471794df3c6e98b8c149a82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569498"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946660"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
-如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 .resx 檔案做為資源檔。  
+如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 *.resx* 檔案作為資源檔。  
   
 ## <a name="compiling-resources-with-msbuild"></a>使用 MSBuild 編譯資源  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 `GenerateResource` 工作，讓您可用來編譯 .resx 檔或文字檔中的資源。 此工作包含 `Sources` 參數來指定要編譯哪一個資源檔，以及 `OutputResources` 參數來指定輸出資源檔的名稱。 如需 `GenerateResource` 工作的詳細資訊，請參閱 [GenerateResource 工作](../msbuild/generateresource-task.md)。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 `GenerateResource` 工作，讓您可用來編譯 *.resx* 檔或文字檔中的資源。 此工作包含 `Sources` 參數來指定要編譯哪一個資源檔，以及 `OutputResources` 參數來指定輸出資源檔的名稱。 如需 `GenerateResource` 工作的詳細資訊，請參閱 [GenerateResource 工作](../msbuild/generateresource-task.md)。  
   
 #### <a name="to-compile-resources-with-msbuild"></a>使用 MSBuild 編譯資源  
   
@@ -39,7 +39,7 @@ ms.locfileid: "31569498"
 4.  使用從 `Output` 項目(Element) 建立的項目 (Item) 做為另一個工作的輸入。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例示範 `Output` 項目 (Element) 如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 `alpha.resources` 和 `beta.resources`，而這兩個檔案將會置於 `Resources` 項目 (Item) 清單中。 藉由將這些 .resources 檔案識別為相同名稱的項目集合，您可以輕鬆地使用它們做為另一個工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。  
+ 下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources*和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 藉由將這些 *.resources* 檔案識別為相同名稱的項目集合，您可以輕鬆地使用它們作為另一個工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。  
   
  此工作相當於使用 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 的 **/compile** 參數：  
   
@@ -78,7 +78,7 @@ ms.locfileid: "31569498"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
  [GenerateResource 工作](../msbuild/generateresource-task.md)   
  [Csc 工作](../msbuild/csc-task.md)   
