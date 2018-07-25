@@ -1,7 +1,7 @@
 ---
 title: 安裝 Python 支援
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
-ms.date: 02/15/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ae4dd83f5618ed908dee666f04c580f8c3161cbf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058681"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -40,10 +41,10 @@ ms.lasthandoff: 05/07/2018
 1. 下載並執行最新的 Visual Studio 2017 安裝程式。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式、選取 [修改] 選項 (請參閱[修改 Visual Studio](../install/modify-visual-studio.md)) 並移至步驟 2。
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">安裝 Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">安裝 Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > Community Edition 是針對個別開發人員、課堂學習、學術研究和開放原始碼開發。 針對其他用途，請安裝 <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> 或 <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>。
+    > Community Edition 是針對個別開發人員、課堂學習、學術研究和開放原始碼開發。 針對其他用途，請安裝 <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> 或 <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>。
 
 1. 安裝程式會顯示一份工作負載清單，而工作負載是特定開發區域的相關選項群組。 針對 Python，選取 [Python 開發] 工作負載。
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/07/2018
     | Python 原生開發工具 | 安裝 C++ 編譯器和其他必要元件，以開發 Python 的原生延伸模組。 請參閱[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)。 同時也請安裝 [使用 C++ 的桌面開發] 工作負載，以取得完整的 C++ 支援。 |
     | Azure 雲端服務核心工具 | 提供 Python 中 Azure Cloud Services 之開發人員的其他支援。 請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。 |
 
-1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有更新時，如果 Visual Studio 有更新，則 [修改] 按鈕會變更為 [更新]  (修改選項接著就會出現在下拉式功能表上)。您也可以搜尋 "Visual Studio"，以從 Windows [開始] 功能表啟動 Visual Studio 和安裝程式。
+1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有 Visual Studio 的更新時，[修改] 按鈕會變更為 [更新]。 (修改選項接著就會出現在下拉式功能表上)。您也可以搜尋 "Visual Studio"，以從 Windows [開始] 功能表啟動 Visual Studio 和安裝程式。
 
     ![從安裝程式啟動、修改或解除安裝 Visual Studio](media/installation-vs-launch.png)
 
