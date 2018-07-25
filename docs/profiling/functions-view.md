@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f401e5406ed7e5bb8244c556dbc6fbc365e773
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 935b7aa55633167b6f9630b8046e29f9bc8eba91
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238078"
 ---
 # <a name="functions-view"></a>函式檢視
 [函式] 檢視會列出分析期間呼叫的函式。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
   
  [函式] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [函式檢視](../profiling/functions-view-sampling-data.md)   
  [函式檢視](../profiling/functions-view-instrumentation-data.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

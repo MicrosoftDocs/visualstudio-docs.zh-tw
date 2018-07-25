@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae17a44b37536359a5f09fd75fda82ce34b50c3
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237363"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert 方法
 將警示寫入並行視覺化檢視追蹤檔。  
@@ -37,9 +38,9 @@ void write_alert(
  複合格式字串，其中包含混合零或多個格式項目的文字，並與引數清單中的物件相對應。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** cvmarkersobj.h  
+ **標頭：***cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)

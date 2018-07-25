@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0e5d3e501138ede3679214650e29d602a6b7cf94
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966156"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282827"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 
 您可以建立自己的擷取規則。 若要執行這項操作，可以從擷取規則類別中衍生自己的規則。 擷取規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 基底類別。
 

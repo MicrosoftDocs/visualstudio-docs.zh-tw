@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b769cc89095aca5b22aed46375f56c2ab4c987
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f27bc6149ec82bd1c3d14e0c60e8d7747c290ccb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570625"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081136"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後針對每個批次一次執行一個目標或工作。  
@@ -26,10 +26,10 @@ ms.locfileid: "31570625"
 ## <a name="task-batching"></a>工作批次處理  
  工作批次處理可讓您將項目清單分割成不同的批次，並分別將各批次傳遞給工作，以簡化專案檔案。 這表示即使工作可能要執行若干次，專案檔也只需要宣告一次工作和其屬性。  
   
- 您可以在其中一個工作屬性中使用 %(*ItemMetaDataName*) 標記法，以指定要讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 執行工作的批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。  
+ 您可以在其中一個工作屬性中使用 %(\<ItemMetaDataName>) 標記法，以指定要讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 執行工作的批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。  
   
 > [!NOTE]
->  如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(*ItemCollection.ItemMetaDataName*) 標記法，來完整限定要用於批次處理的項目中繼資料值。  
+>  如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(\<ItemCollection.ItemMetaDataName>) 標記法，來完整限定要用於批次處理的項目中繼資料值。  
   
 ```xml  
 <Project  
@@ -58,7 +58,7 @@ ms.locfileid: "31570625"
 ## <a name="target-batching"></a>目標批次處理  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在執行目標之前檢查目標的輸入和輸出是否都為最新狀態。 如果輸入和輸出都是最新的，則會略過目標。 如果在目標內的工作會使用批次處理，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要判斷每個批次項目的輸入和輸出是否都為最新狀態。 否則，每次叫用目標時均會執行。  
   
- 下列範例示範包含 `Outputs` 屬性與 %(*ItemMetaDataName*) 標記法的 `Target` 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會根據 `Color` 項目中繼資料，將 `Example` 項目清單分割成批次，並分析每個批次的輸出檔時間戳記。 如果批次的輸出不是最新狀態，則會執行目標。 否則，會略過目標。  
+ 下列範例示範包含 `Outputs` 屬性與 %(\<ItemMetaDataName>) 標記法的 `Target` 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會根據 `Color` 項目中繼資料，將 `Example` 項目清單分割成批次，並分析每個批次的輸出檔時間戳記。 如果批次的輸出不是最新狀態，則會執行目標。 否則，會略過目標。  
   
 ```xml  
 <Project  
@@ -101,8 +101,8 @@ ms.locfileid: "31570625"
   
  如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
-## <a name="see-also"></a>請參閱  
- [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+## <a name="see-also"></a>另請參閱  
+ [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 022e7f47f17292c62b851868b85773e8295a6991
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578727"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945893"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。  
@@ -67,11 +67,11 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 |`ToolPath`|選擇性的 `String` 參數。<br /><br /> 指定位置，工作會從該位置載入基礎可執行檔 (Al.exe)。 如果未指定這個參數，工作會使用 SDK 安裝路徑，此路徑對應到執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之架構的版本。|  
 |`Trademark`|選擇性的 `String` 參數。<br /><br /> 為組件中的 [`Trademark`] 欄位指定字串。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/trade[mark]` 選項的說明文件。|  
 |`Version`|選擇性的 `String` 參數。<br /><br /> 指定這個組件的版本資訊。 字串格式是 *major.minor.build.revision*。 預設值為 0。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/v[ersion]` 選項的說明文件。|  
-|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 將 .ico 檔案插入組件中。 .ico 檔案會讓輸出檔在檔案總管中以所要的外觀顯示。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/win32icon` 選項。|  
-|`Win32Resource`|選擇性的 `String` 參數。<br /><br /> 將 Win32 資源 (.res 檔案) 插入輸出檔中。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/win32res` 選項的說明文件。|  
+|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 將 *.ico* 檔案插入組件中。 *.ico* 檔案會讓輸出檔案在檔案總管中以所要的外觀顯示。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/win32icon` 選項。|  
+|`Win32Resource`|選擇性的 `String` 參數。<br /><br /> 將 Win32 資源 (*.res* 檔案) 插入輸出檔案中。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/win32res` 選項的說明文件。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其說明，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會使用指定的選項來建立組件。  
@@ -93,6 +93,6 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 </AL>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

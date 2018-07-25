@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571610"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118098"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -100,7 +100,7 @@ ms.locfileid: "34571610"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表上，選擇 [檔案] > [新增] > [專案...]。
+1. 在功能表上，選擇 [檔案] > [新增] > [專案]。
 
 1. 在左側 ([範本]) 窗格中，在展開的清單中選擇 [其他專案類型] > [Visual Studio 方案]。
 

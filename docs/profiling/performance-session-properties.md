@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254689"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/19/2018
 
 如需詳細資訊，請參閱:
 
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
+[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
 [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
+ [操作說明：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>啟動
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/19/2018
 如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>二元
-這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在剖析 My.DLL 並選擇不要重新配置已檢測的二進位檔，則會建立名為 My.Orig.DLL 的 My.DLL 備份複本。 接著會插入探查來修改 My.DLL 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。
+這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在分析 *My.DLL* 並選擇不要重新配置已檢測的二進位檔，則會建立名為 *My.Orig.DLL* 的 *My.DLL* 備份複本。 接著會插入探查來修改 *My.DLL* 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。
 
 如需詳細資訊，請參閱[如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/19/2018
 
 [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[操作說明：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>CPU 計數器
 
@@ -86,11 +87,11 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="windows-events"></a>Windows 事件
 
-在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 VSPerfReport.exe 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](http://go.microsoft.com/fwlink/?linkid=90752)。
+在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 *VSPerfReport.exe* 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](http://go.microsoft.com/fwlink/?linkid=90752)。
 
 如需詳細資訊，請參閱:
 
-[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。
+[操作說明：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md)。
 
@@ -106,9 +107,9 @@ ms.lasthandoff: 04/19/2018
 
 如需詳細資訊，請參閱:
 
-[如何︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[操作說明︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
+[操作說明：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>另請參閱
 

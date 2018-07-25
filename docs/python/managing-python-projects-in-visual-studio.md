@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 應用程式專案
 description: 專案在 Visual Studio 中的目的，在於如何建立及管理適用於 Python 程式碼的專案，以及可供 Python 使用的各種專案範本。
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032186"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38778517"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -109,7 +109,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 - 連結的檔案包含 Link 中繼資料，且 Link 路徑是位於專案階層外的相對路徑
 - 連結路徑是根目錄
 
-### <a name="working-with-linked-files"></a>使用連結的檔案
+### <a name="work-with-linked-files"></a>使用連結的檔案
 
 若要新增現有的項目作為連結，請在專案中您要新增檔案的資料夾上按一下滑鼠右鍵，然後選取 [新增] > [現有項目]。在顯示的對話方塊中，選取檔案，然後從 [新增] 按鈕上的下拉式清單中選擇 [新增作為連結]。 在沒有任何衝突檔案的情況下，此命令會在選取的資料夾中建立連結。 不過，如果已經有相同名稱的檔案存在，或專案中已經有該檔案的連結存在，就不會新增連結。
 

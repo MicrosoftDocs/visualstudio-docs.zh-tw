@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976383"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282102"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
@@ -32,9 +32,9 @@ ms.locfileid: "31976383"
 
 ### <a name="configure-code-generation-of-stubs"></a>設定虛設常式的程式碼產生
 
-虛設常式類型會在有 .fakes 副檔名的 XML 檔中設定產生 。 Fakes 框架會在建置流程中透過自訂 MSBuild 工作整合，並在建置期間偵測這些檔案。 Fakes 程式碼產生器會編譯虛設常式類型至組件內，並加入專案參考。
+虛設常式類型會在有 *.fakes* 副檔名的 XML 檔中設定產生。 Fakes 框架會在建置流程中透過自訂 MSBuild 工作整合，並在建置期間偵測這些檔案。 Fakes 程式碼產生器會編譯虛設常式類型至組件內，並加入專案參考。
 
-下列範例說明在 FileSystem.dll 中定義的虛設常式類型：
+下列範例說明在 *FileSystem.dll* 中定義的虛設常式類型：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ ms.locfileid: "31976383"
 
 ### <a name="type-filtering"></a>類型篩選
 
-篩選條件可以在 .fakes 檔案中設定，以限制應該設定哪些虛設常式類型。 您可以在 StubGeneration 項目下加入 Clear、Add、Remove 項目的未繫結數目，已建置所選類型的清單。
+篩選條件可以在 *.fakes* 檔案中設定，以限制應該設定哪些虛設常式類型。 您可以在 StubGeneration 項目下加入 Clear、Add、Remove 項目的未繫結數目，已建置所選類型的清單。
 
-例如，下列 .fakes 檔案會針對在 System 和 System.IO 命名空間下的類型產生虛設常式，但是排除 System 中任何包含 "Handle" 的類型：
+例如，下列 *.fakes* 檔案會針對在 System 和 System.IO 命名空間下的類型產生虛設常式，但是排除 System 中任何包含 "Handle" 的類型：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ ms.locfileid: "31976383"
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>設定具象類別及虛擬方法的虛設常式
 
-預設會為所有非密封類別產生虛設常式類型。 透過 .fakes 組態檔可將虛設常式類型限制為抽象類別：
+預設會為所有非密封類別產生虛設常式類型。 透過 *.fakes* 組態檔可將虛設常式類型限制為抽象類別：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -136,7 +136,7 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 **.snk** 檔案的完整路徑，其中包含替代金鑰做為 **.fakes** 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如: 
+您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 *.snk* 檔案的完整路徑，其中包含替代金鑰做為 *.fakes* 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如: 
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 </Fakes>
 ```
 
-接著您必須在填充組件程式碼中，使用替代 **.snk** 檔案的公開金鑰，做為 Fakes 組件中 InternalVisibleTo 屬性的第二個參數：
+接著您必須在填充組件程式碼中，使用替代 *.snk* 檔案的公開金鑰，做為 Fakes 組件中 InternalVisibleTo 屬性的第二個參數：
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 
 從單元測試專案中，請新增已編譯 Fakes 組件的參考，這些組件是放置在專案資料夾中的 FakesAssemblies 底下。
 
-1.  建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 class1.cs 檔。
+1.  建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 *class1.cs* 檔。
 
 2.  將參考加入您所需之 Fakes 的所有系統和協力廠商組件。
 
-3.  為每個組件和組建加入 .fakes 檔案。
+3.  為每個組件和組建新增 *.fakes* 檔案。
 
 4.  從您的測試專案
 
@@ -175,17 +175,17 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   對於您已建立 Fakes 的每個組件，加入專案之 Fakes.Prebuild\FakesAssemblies 資料夾中對應 DLL 檔案的參考。
+    -   對於您已建立 Fakes 的每個組件，新增專案之 *Fakes.Prebuild\FakesAssemblies* 資料夾中對應 DLL 檔案的參考。
 
 ### <a name="avoid-assembly-name-clashing"></a>避免組件名稱發生衝突
 
-在 Team Build 環境中，所有組建輸出會合併到單一目錄。 如果多個專案使用 Fakes，可能會發生不同版本的 Fakes 組件彼此覆寫的情形。 例如，.NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 與 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都會產生 mscorlib.Fakes.dll Fakes 組件。
+在 Team Build 環境中，所有組建輸出會合併到單一目錄。 如果多個專案使用 Fakes，可能會發生不同版本的 Fakes 組件彼此覆寫的情形。 例如，.NET Framework 2.0 的 TestProject1 fakes *mscorlib.dll* 與 .NET Framework 4 的 TestProject2 fakes *mscorlib.dll* 都會產生 *mscorlib.Fakes.dll* Fakes 組件。
 
- 若要避免這個問題，當加入 .fakes 檔時，Fake 應該會自動為非專案參考建立版本限定的 Fake 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：
+ 若要避免這個問題，當新增 *.fakes* 檔時，Fakes 應該會自動為非專案參考建立版本限定的 Fakes 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：
 
  假設組件 MyAssembly 和版本 1.2.3.4，則 Fakes 組件名稱為 MyAssembly.1.2.3.4.Fakes。
 
- 您可以透過編輯 .fakes 中 Assembly 項目的 Version 屬性來變更或移除這個版本：
+ 您可以透過編輯 *.fakes* 中 Assembly 項目的 Version 屬性來變更或移除這個版本：
 
 ```xml
 attribute of the Assembly element in the .fakes:

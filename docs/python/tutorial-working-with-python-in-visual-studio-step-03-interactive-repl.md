@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 3：互動式 REPL
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 3，涵蓋 Python 互動式 REPL 視窗。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425747"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057232"
 ---
-# <a name="step-3-using-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
+# <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
 **上一個步驟：[撰寫和執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
@@ -95,7 +95,7 @@ ms.locfileid: "32425747"
 > [!div class="nextstepaction"]
 > [在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [使用互動式視窗](python-interactive-repl-in-visual-studio.md)
 - [使用 IPython REPL](interactive-repl-ipython.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582591"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118141"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>自訂 [方案總管] 中的檔案巢狀
 
@@ -116,7 +116,7 @@ ms.locfileid: "34582591"
 
 ![fileToFile 範例規則](media/filenesting_filetofile.png) ![fileToFile 範例作用](media/filenesting_filetofile_effect.png)
 
-* *bower.json* 巢狀於 *.bowerrc* 下，這是因為 **fileToFile** 規則
+* *.bowerrc* 巢狀於 *bower.json* 下，這是因為 **fileToFile** 規則
 
 ### <a name="rule-order"></a>規則順序
 

@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752088"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978245"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -266,9 +266,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 組建執行後會將程式碼涵蓋範圍結果附加至測試回合，而且結果會出現在組建摘要。
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>在命令列中分析程式碼涵蓋範圍
+## <a name="analyze-code-coverage-from-the-command-line"></a>從命令列分析程式碼涵蓋範圍
 
-若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是 vstest.console.exe 公用程式的選項。
+若要從命令列執行測試，請使用 *vstest.console.exe*。 程式碼涵蓋範圍是 vstest.console.exe 公用程式的選項。
 
 1.  啟動 Visual Studio Developer 命令提示字元：
 
@@ -278,9 +278,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。
+
 ## <a name="troubleshoot"></a>疑難排解
 
-如果您沒有看見程式碼涵蓋範圍結果，[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)主題可能對您有幫助。
+如果您看不到程式碼涵蓋範圍結果，[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)主題可能對您有幫助。
 
 ## <a name="see-also"></a>另請參閱
 

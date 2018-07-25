@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 221f8ceba5a82b25e78314579323f6a7d55cf984
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64c1ac7eb3f90444da702d699201a251aaba411c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573027"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077587"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援一組只要允許 `Condition` 屬性就能套用的特定條件。 下表說明這些條件。  
@@ -39,9 +39,9 @@ ms.locfileid: "31573027"
 |及|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|  
 |或|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|  
 |()|如果內部包含的運算式評估為 `true`，即會評估為 `true` 的群組機制。|  
-|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 如需使用方式的範例，請參閱 [Visual Studio 專案/項目範本參數邏輯 (英文)](http://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|  
+|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 如需使用方式的範例，請參閱 [Visual Studio project/item template parameter logic](http://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic) (Visual Studio 專案/項目範本參數邏輯)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

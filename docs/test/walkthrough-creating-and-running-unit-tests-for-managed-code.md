@@ -15,22 +15,21 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767682"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978150"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
 
 本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
 
 > [!NOTE]
 > 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)
 
-> [!NOTE]
-> 如需如何從命令列執行測試的資訊，請參閱[逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。
+如需如何從命令列執行測試的資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。
 
 ## <a name="prerequisites"></a>必要條件
 

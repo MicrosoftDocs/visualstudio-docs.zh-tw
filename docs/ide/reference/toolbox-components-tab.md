@@ -4,6 +4,10 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
+f1_keywords:
+- VS.CHOOSEITEMS.FrameworkComponents
+- VS.CHOOSEITEMS.COMComponents
+- VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
@@ -11,81 +15,82 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a05ea5b06e985a21fbe45882ccfb36bfe194034
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6365ebc9c44d5d453e04a3579d1b87d766413f
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947946"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924313"
 ---
-# <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
+# <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 
-顯示您可以新增至 Visual Basic 和 C# 設計工具的元件。 除了 Visual Studio隨附的 .NET Framework 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。
+顯示您可以新增至 Windows Forms 之 Visual Basic 和 C# 設計工具的元件。 除了 Visual Studio隨附的 .NET Framework 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。
 
- 若要顯示這個索引標籤，請從 [檢視] 功能表中選取 [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。
+若要顯示此索引標籤，請開啟 Windows Forms 設計工具。 選取 [檢視] > [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。
 
- **BackgroundWorker**
+## <a name="components"></a>元件
 
- 建立可在個別專用執行緒上執行作業的 `System.ComponentModel.BackgroundWorker` 元件執行個體。
+**BackgroundWorker**
 
- **DirectoryEntry**
+建立可在個別專用執行緒上執行作業的 <xref:System.ComponentModel.BackgroundWorker> 元件執行個體。 如需詳細資訊，請參閱 [BackgroundWorker 元件](/dotnet/framework/winforms/controls/backgroundworker-component)。
 
- 建立 <xref:System.DirectoryServices.DirectoryEntry> 元件執行個體，以封裝 Active Directory 階層中的節點或物件，而且可以用來與 Active Directory 服務提供者互動。
+**DirectoryEntry**
 
- **DirectorySearcher**
+建立 <xref:System.DirectoryServices.DirectoryEntry> 元件執行個體，以封裝 Active Directory 階層中的節點或物件，而且可以用來與 Active Directory 服務提供者互動。
 
- 建立可用來對 Active Directory 執行查詢的 <xref:System.DirectoryServices.DirectorySearcher> 元件執行個體。
+**DirectorySearcher**
 
- **ErrorProvider**
+建立可用來對 Active Directory 執行查詢的 <xref:System.DirectoryServices.DirectorySearcher> 元件執行個體。
 
- 建立 `System.Windows.Forms.ErrorProvider` 元件執行個體，以向使用者指出表單上的控制項具有相關聯的錯誤。
+**ErrorProvider**
 
- **EventLog**
+建立 <xref:System.Windows.Forms.ErrorProvider> 元件執行個體，以向使用者指出表單上的控制項具有相關聯的錯誤。 如需詳細資訊，請參閱 [ErrorProvider 元件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
 
- 建立可用來與系統和自訂事件記錄檔互動的 <xref:System.Diagnostics.EventLog> 元件執行個體，包括將事件寫入記錄檔以及讀取記錄檔資料。
+**EventLog**
 
- **FileSystemWatcher**
+建立可用來與系統和自訂事件記錄檔互動的 <xref:System.Diagnostics.EventLog> 元件執行個體，包括將事件寫入記錄檔以及讀取記錄檔資料。
 
- 建立 <xref:System.IO.FileSystemWatcher> 元件執行個體，以用來監視您具有存取權之任何目錄或檔案的變更。
+**FileSystemWatcher**
 
- **HelpProvider**
+建立 <xref:System.IO.FileSystemWatcher> 元件執行個體，以用來監視您具有存取權之任何目錄或檔案的變更。
 
- 建立 `System.Windows.Forms.HelpProvider` 元件執行個體，以提供控制項的快顯畫面或線上說明。
+**HelpProvider**
 
- **ImageList**
+建立 <xref:System.Windows.Forms.HelpProvider> 元件執行個體，以提供控制項的快顯畫面或線上說明。 如需詳細資訊，請參閱 [HelpProvider 元件](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms)。
 
- 建立 `System.Windows.Forms.ImageList` 元件執行個體，以提供方法來管理 `System.Drawing.Image` 物件集合。
+**ImageList**
 
- **MessageQueue**
+建立 <xref:System.Windows.Forms.ImageList> 元件執行個體，以提供方法來管理 <xref:System.Drawing.Image> 物件集合。 如需詳細資訊，請參閱 [ImageList 元件](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)。
 
- 建立可用來與訊息佇列互動的 <xref:System.Messaging.MessageQueue> 元件執行個體，包括從佇列中讀取訊息與將訊息寫入其中、處理交易，以及執行佇列管理工作。
+**MessageQueue**
 
- **PerformanceCounter**
+建立可用來與訊息佇列互動的 <xref:System.Messaging.MessageQueue> 元件執行個體，包括從佇列中讀取訊息與將訊息寫入其中、處理交易，以及執行佇列管理工作。
 
- 建立可用來與 Windows 效能計數器互動的 <xref:System.Diagnostics.PerformanceCounter> 元件執行個體，包括建立新的類別和執行個體、讀取計數器中的值，以及對計數器資料執行計算。
+**PerformanceCounter**
 
- **Process**
+建立可用來與 Windows 效能計數器互動的 <xref:System.Diagnostics.PerformanceCounter> 元件執行個體，包括建立新的類別和執行個體、讀取計數器中的值，以及對計數器資料執行計算。
 
- 建立 <xref:System.Diagnostics.Process> 元件執行個體，以用來停止、啟動和操作與系統上的處理序建立關聯的資料。
+**Process**
 
- **SerialPort**
+建立 <xref:System.Diagnostics.Process> 元件執行個體，以用來停止、啟動和操作與系統上的處理序建立關聯的資料。
 
- 建立 `System.IO.Ports.SerialPort` 元件執行個體，以提供同步和事件驅動的 I/O、Pin 和中斷狀態的存取權，以及序列驅動程式屬性的存取權。
+**SerialPort**
 
- **ServiceController**
+建立 <xref:System.IO.Ports.SerialPort> 元件執行個體，以提供同步和事件驅動的 I/O、Pin 和中斷狀態的存取權，以及序列驅動程式屬性的存取權。
 
- 建立可用來操作現有服務的 <xref:System.ServiceProcess.ServiceController> 元件執行個體，包括啟動和停止服務，以及將命令傳送給它們。
+**ServiceController**
 
- **Timer**
+建立可用來操作現有服務的 <xref:System.ServiceProcess.ServiceController> 元件執行個體，包括啟動和停止服務，以及將命令傳送給它們。
 
- 建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 如需詳細資訊，請參閱 [Timer 元件](/dotnet/framework/winforms/controls/timer-component-windows-forms)。
+**Timer**
+
+建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 如需詳細資訊，請參閱 [Timer 元件](/dotnet/framework/winforms/controls/timer-component-windows-forms)。
 
 > [!NOTE]
 > 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。
 
-
 ## <a name="see-also"></a>另請參閱
 
-- [使用元件進行程式設計](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
-- [元件程式設計逐步解說](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)
+- [在 Windows Forms 上使用的控制項](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [選擇工具箱項目、WPF 元件](choose-toolbox-items-wpf-components.md)
 - [工具箱](../../ide/reference/toolbox.md)

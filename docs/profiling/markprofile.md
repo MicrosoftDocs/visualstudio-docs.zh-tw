@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238156"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` 方法會在 .vsp 檔案中插入分析標記。 包含 `MarkProfile` 函式之執行緒的分析必須設定為 ON，才能插入標記。  
+`MarkProfile` 方法會在 .*vsp* 檔案中插入分析標記。 包含 `MarkProfile` 函式之執行緒的分析必須設定為 ON，才能插入標記。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|會傳回 MARK_OK 以表示作業成功。|  
   
 ## <a name="remarks"></a>備註  
- 如果要對包含 MarkProfile 函式的執行緒進行分析，則每次程式碼執行時，都會將標記值插入到 .vsp 檔案中。 您可以呼叫 MarkProfile 多次。  
+ 如果要對包含 MarkProfile 函式的執行緒進行分析，則每次程式碼執行時，都會將標記值插入到 .*vsp* 檔案中。 您可以呼叫 MarkProfile 多次。  
   
- 分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .vsp 檔案中任何執行緒之資料區段的開頭或結尾。  
+ 分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .*vsp* 檔案中任何執行緒之資料區段的開頭或結尾。  
   
  使用 Mark 命令或 API 函式 (CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile) 來插入標記和註解時，包含標記分析函式之執行緒的分析狀態必須設定為開啟。  
   
@@ -56,12 +57,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 >  MarkProfile 方法應該只與檢測分析方法搭配使用。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>函式資訊  
- 標頭：在 VSPerf.h 中宣告  
+ 標頭：在 *VSPerf.h* 中宣告  
   
- 匯入程式庫：VSPerf.lib  
+ 匯入程式庫：*VSPerf.lib*  
   
 ## <a name="example"></a>範例  
  下列程式碼說明 MarkProfile 函式。  
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,6 +1,6 @@
 ---
 title: '[進階安全性設定] 對話方塊'
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,29 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fec353f6ede2a9d2f99a8dfc19611577bbc6160
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3910383733171775bd1f25e230cbb896648034bb
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943032"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089538"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[進階安全性設定] 對話方塊
+
 此對話方塊可讓您指定在區域中偵錯的相關安全性設定。
 
- 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [安全性] 索引標籤。在 [安全性] 頁面上，選取 [啟用 ClickOnce 安全性設定]，並按一下 [這是部分信任的應用程式]，然後按一下 [進階]。
+![Visual Studio 中的進階安全性設定對話方塊](../media/advanced-security-settings.png)
+
+若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [安全性] 索引標籤。在 [安全性] 頁面上，選取 [啟用 ClickOnce 安全性設定]，並按一下 [這是部分信任的應用程式]，然後按一下 [進階]。
 
 ## <a name="uielement-list"></a>UIElement 清單
- **以選取的權限集合對此應用程式進行偵錯** 如果您選取此核取方塊，則會在偵錯期間使用 [安全性] 頁面上所選取的權限集合。 根據預設，這個選項是選取的。
 
- 若要讓安全性區域中的偵錯運作，必須啟用此選項；也必須啟用 [啟用 Visual Studio 裝載處理序] 選項 (位於 [專案設計工具] 的 [偵錯] 頁面上)。
+**允許應用程式存取它的來源網站**
 
- 針對 WPF 網站瀏覽器應用程式專案，核取並停用 [以選取的使用權限集合對此應用程式進行偵錯] 選項。
+如果您選取此核取方塊，則應用程式可以存取在其上發行它的網站或伺服器共用。 根據預設，這個選項是選取的。
 
- **允許應用程式存取它的來源網站** 如果您選取此核取方塊，則應用程式可以存取在其上發行它的網站或伺服器共用。 根據預設，這個選項是選取的。
+**將下列 URL 視為此應用程式的下載位置來進行偵錯**
 
- **將下列 URL 視為此應用程式的下載位置來進行偵錯** 如果您必須讓應用程式存取對應至 [發行] 頁面上所指定之 [安裝 URL] 的網站或伺服器共用，請在這裡鍵入該 URL。 只有在選取 [允許應用程式存取它的來源網站] 時，才能使用此選項。
+如果您必須讓應用程式存取對應至 [發行] 頁面上所指定之**安裝 URL** 的網站或伺服器共用，請在這裡輸入該 URL。 只有在選取 [允許應用程式存取它的來源網站] 時，才能使用此選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md)

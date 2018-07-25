@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449165"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175362"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
+# <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
 Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 Python 支援各式各樣的開發，包括 Web 應用程式、Web 服務、傳統型應用程式、指令碼及科學計算，並且許多大學、科學家、業餘開發人員及專業開發人員等都使用它。 您可以從 [python.org (英文)](https://www.python.org) 和[適用於初學者的 Python (英文)](https://www.python.org/about/gettingstarted/) 深入了解此語言。
 
@@ -47,7 +47,7 @@ Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>豐富的編輯功能、IntelliSense 及程式碼理解
 
-Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理 (如下所示) 和類型提示。 Visual Studio 也提供獨一無二的功能，例如類別檢視、[移至 定義]、[尋找所有參考] 及程式碼片段。 與[互動式視窗](#interactive-window)的整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
+Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理和類型提示。 Visual Studio 也提供獨一無二的功能，例如類別檢視、[移至 定義]、[尋找所有參考] 及程式碼片段。 與[互動式視窗](#interactive-window)的整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
 
 ![Visual Studio 中 Python 程式碼的程式碼完成](media/code-editing-completions-simple.png)
 
@@ -55,9 +55,9 @@ Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、�
 
 - 應面 (2 分 30 秒)：[編輯 Python 程式碼](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - 文件：[編輯 Python 程式碼](editing-python-code-in-visual-studio.md)
-- 文件：[程式碼格式設定](formatting-python-code.md)
-- 文件：[重構](refactoring-python-code.md)
-- 文件：[Lint 處理](linting-python-code.md)
+- 文件：[格式化程式碼](formatting-python-code.md)
+- 文件：[重構程式碼](refactoring-python-code.md)
+- 文件：[使用 Linter](linting-python-code.md)
 - 一般 Visual Studio 功能文件：[程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>互動式視窗
@@ -159,7 +159,7 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 
 **問：建置 UI 時，我可以使用什麼功能來搭配 Python？**
 
-答： 這方面的主要提供項目是 [Qt 專案](https://www.qt.io/qt-for-application-development/) 及 Python 的繫結，其稱為 [PySide (正式繫結)](http://wiki.qt.io/PySide) (另請參閱 [PySide downloads](https://download.qt.io/official_releases/pyside/.)) (PySide 下載) 和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支援不包含任何特定的 UI 開發工具。
+答： 這方面的主要供應項目是 [Qt 專案](https://www.qt.io/qt-for-application-development/) 及 Python 的繫結，其稱為 [PySide (正式繫結)](http://wiki.qt.io/PySide) (另請參閱 [PySide downloads](https://download.qt.io/official_releases/pyside/.)) (PySide 下載) 和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支援不包含任何特定的 UI 開發工具。
 
 **問：Python 專案是否能產生獨立的可執行檔？**
 
@@ -169,7 +169,7 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 
 您可用下列版本的 Visual Studio 安裝 Python 功能，如[安裝指南](installing-python-support-in-visual-studio.md)所述：
 
-- [Visual Studio 2017 (所有版本)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017 (所有版本)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015 (所有版本)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web (Update 2 或更新版本)
@@ -178,7 +178,7 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 - Visual Studio 2012 (Pro 版或更新版本)
 - Visual Studio 2010 SP1 (Pro 版或更新版本；需要 .NET 4.5)
 
-Visual Studio 2015 及更早版本位於 [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/)。
+Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/)。
 
 > [!Important]
 > 只有最新版本的 Visual Studio 具備功能的完整支援與維護。 功能在較舊版本中依然可用，但不會主動維護。

@@ -1,6 +1,6 @@
 ---
 title: 格式、C/C++、文字編輯器、選項
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946061"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235137"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
-讓您在使用 C 或 C++ 進行程式設計時，變更 [程式碼編輯器] 的預設行為。
+
+在使用 C 或 C++ 進行程式設計時，請使用這些屬性頁變更程式碼編輯器的預設行為。
+
+[C++ Formatting 屬性頁](media/cpp-formatting.png)
 
  若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後按一下 [格式]。
 
 > [!NOTE]
 > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
+## <a name="general-page"></a>一般頁面
 
-## <a name="cc-options"></a>C/C++ 選項
- **啟用自動快速諮詢工具提示**
+此頁面包含在您鍵入時格式化陳述式和區塊的選項。
 
- 啟用或停用 [快速諮詢 IntelliSense] 功能。
+**Visual Studio 2017 15.7 版及更新版本**：頁面也有設定 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 5.0 版支援的選項。 ClangFormat 是一個公用程式，可讓您更輕鬆地根據一組可以在 .clang-format 或 _clang-format 檔案中設定的規則，設定程式碼的樣式和格式化。
 
-## <a name="inactive-code"></a>非現用程式碼
- **顯示非現用程式碼區塊**
+### <a name="configuring-clangformat-options"></a>設定 ClangFormat 選項
 
- 因為 `#ifdef` 宣告而變成非現用的程式碼會以不同色彩標示，有助於識別。
+在 Visual Studio 2017 15.7 版及更新版本，預設會啟用 ClangFormat 支援。 您可以選擇要將這些常見格式設定慣例的哪一項，套用至所有專案：LLVM、Google、Chrome、Mozilla 或 WebKit。 您也可以建立自訂的格式定義 .clang-format 或 _clang-format 檔案。 如果這樣的檔案存在於專案資料夾，則 Visual Studio 會使用它來格式化該資料夾及其子資料夾中的所有原始程式碼檔。 
 
- **停用非現用程式碼不透明度**
+根據預設，Visual Studio 在背景中執行 clangformat.exe，並在您鍵入時套用格式。 您也可以指定只針對以手動方式叫用的格式化命令**格式化文件 (Ctrl+K、Ctrl+D)** 或**格式化選取範圍 (Ctrl+K、Ctrl+F)** 來執行它。
 
- 非現用程式碼可以使用色彩而非透明度進行識別。
 
- **非現用程式碼不透明度百分比**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>縮排、新行、間距文繞圖頁面
 
- 可以自訂非現用程式碼區塊的不透明度程度。
-
-## <a name="indentation"></a>縮排
- **縮排大括弧**
-
- 您可以設定在開始程式碼區塊後按下 ENTER 時，括號對齊的方式 (例如，函式或 `for` 迴圈)。 括號可以對齊程式碼區塊的第一個字元或是縮排。
-
- **使用 Tab 自動縮排**
-
- 您可以設定按 TAB 鍵時，目前程式碼行會發生什麼狀況。 程式碼行會縮排，或是會插入定位點。
-
-## <a name="miscellaneous"></a>其他
- **在 [工作清單] 視窗中列舉註解**
-
- 編輯器可以掃描開啟的原始程式檔，以尋找註解中的預設文字。 它會在 [工作清單] 視窗中為找到的任何關鍵字建立項目。
-
- **反白顯示相符的語彙基元**
-
- 當游標位於括號旁邊時，編輯器可以反白顯示對稱的括號，讓您更容易看清楚包含的程式碼。
-
-## <a name="outlining"></a>大綱
- **檔案開啟時進入大綱模式**
-
- 在文字編輯器中開啟檔案時，可以啟用大網功能。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。 選取這個選項後，在您開啟檔案時將會啟用大綱功能。
-
- **#pragma 區域區塊的自動大綱**
-
- 選取這個選項時，會啟用 [pragma 指示詞](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)的自動大綱。 這可讓您在大綱模式下展開或摺疊 Pragma 區域區塊。
-
- **陳述式區塊的自動大綱**
-
- 選取這個選項時，會啟用下列陳述式結構的自動大綱：
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch 陳述式 (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while 陳述式 (C++)](/cpp/cpp/while-statement-cpp)
+這些頁面能啟用各種格式化自訂，但如果已啟用 ClangFormat 便會被忽略。
 
 ## <a name="see-also"></a>請參閱
 

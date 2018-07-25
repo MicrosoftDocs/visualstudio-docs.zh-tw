@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4c50a7b6e3fe14f27bfd78e6814f9e120864d60
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752136"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947425"
 ---
-# <a name="tutorial-step-4-use-the-full-flask-web-project-template"></a>教學課程步驟 4：使用完整的 Flask Web 專案範本
+# <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
 **上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -231,8 +231,8 @@ def about():
 > [!div class="nextstepaction"]
 > [投票 Flask Web 專案範本](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [撰寫您的第一個 Flask 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
 - [GitHib 上的 Jade (文件)](https://github.com/liuliqiang/pyjade) \(英文\) (github.com)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learn-flask](https://github.com/Microsoft/python-sample-vs-learn-flask) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

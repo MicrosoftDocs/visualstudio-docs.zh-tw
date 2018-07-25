@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979408"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117397"
 ---
 # <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
 
@@ -116,7 +116,7 @@ ms.locfileid: "31979408"
 
 1. 將 Maths 應用程式的參考新增至 RooterTests 專案。
 
-    1. 在方案總管中選擇 **RooterTests** 專案，然後在捷徑功能表上選擇 [新增參考...]。
+    1. 在 [方案總管] 中選擇 **RooterTests** 專案，然後在捷徑功能表上選擇 [新增參考]。
 
     2. 在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 然後選取 **Maths** 項目。
 

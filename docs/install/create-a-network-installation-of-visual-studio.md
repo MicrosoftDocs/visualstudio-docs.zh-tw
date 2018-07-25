@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622883"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057992"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
@@ -121,7 +121,7 @@ ms.locfileid: "31622883"
 > [!TIP]
 > 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。  如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
 
-當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。  
+當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 
 ### <a name="error-codes"></a>錯誤碼
 
@@ -140,7 +140,7 @@ ms.locfileid: "31622883"
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>如何建立舊版 Visual Studio 2017 的配置
 
 > [!NOTE]
-> 可在 [VisualStudio.com](http://www.visualstudio.com) 上取得的 Visual Studio 2017 啟動載入器，會下載並安裝執行時所能取得的最新版 Visual Studio 2017。 如果您今天下載 Visual Studio 啟動載入器，並在六個月後執行，則會安裝六個月後可取得的 Visual Studio 2017 版本。 如果您建立配置，則從該配置安裝 Visual Studio 時會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 可在 [visualstudio.microsoft.com](http://visualstudio.microsoft.com) 上取得的 Visual Studio 2017 啟動載入器，會下載並安裝執行時所能取得的最新版 Visual Studio 2017。 如果您今天下載 Visual Studio 啟動載入器，並在六個月後執行，則會安裝六個月後可取得的 Visual Studio 2017 版本。 如果您建立配置，則從該配置安裝 Visual Studio 時會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 如果您需要建立舊版 Visual Studio 2017 的配置，則可以前往 https://my.visualstudio.com，下載「固定」版本的 Visual Studio 2017 啟動載入器。
 
@@ -152,7 +152,7 @@ ms.locfileid: "31622883"
 
 ## <a name="get-support"></a>取得支援
 
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
 

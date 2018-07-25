@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255521"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體檢測資料 [模組] 檢視，會將記憶體和計時資料依據分析執行中所執行的模組來分類。 模組函式的分析資料會列在模組節點下。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 04/19/2018
 |**最大應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的最大應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最大應用程式專屬時間。|  
 |**最小應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小應用程式專屬時間。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)   
  [模組檢視](../profiling/modules-view-sampling-data.md)

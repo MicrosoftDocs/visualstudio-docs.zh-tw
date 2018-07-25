@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948804"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797505"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>IntelliSense、JavaScript、文字編輯器、選項
 使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以選擇功能表列上的 [ **工具** ]、[ **選項**, **文字編輯器** ]、[ **IntelliSense**, **IntelliSense**, **工具.**] 頁面。
@@ -67,7 +67,7 @@ ms.locfileid: "31948804"
 
  您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 有四種參考群組可用：
 
--   隱含 (Windows *版本*)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式。 這個群組中包含的檔案會在程式碼編輯器中針對使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式開啟的每一個 .js 檔案範圍中。
+-   隱含 (Windows *版本*)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式。 此群組中所含的檔案會在程式碼編輯器中針對使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式開啟的每個 .js 檔案範圍中。
 
 -   隱含 (Web)，適用於 HTML5 專案。 這個群組中包含的檔案會在程式碼編輯器中針對這些專案類型開啟的每一個 .js 檔案範圍中。
 

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68561b5a814ba27f241cee3118ef1bae938adb20
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237538"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/19/2018
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [函式檢視](../profiling/functions-view.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

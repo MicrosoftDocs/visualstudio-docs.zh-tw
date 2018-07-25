@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750489"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089499"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>教學課程步驟 6：使用「投票 Django Web 專案」範本
+# <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
 **上一個步驟： [在 Django 中驗證使用者](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
@@ -368,11 +368,11 @@ admin.site.register(Poll, PollAdmin)
 
 在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
 
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括如 Django 應用程式所需的特定變更。
+
 - 建立名為 `templates/404.html` 的範本，以自訂 404 頁面。 如果這個範本存在，Django 就會使用它，而不使用預設範本。 如需詳細資訊，請參閱 Django 文件中的[錯誤檢視](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 
 - 在 `tests.py` 中編寫單位測試; 您可以在 Visual Studio 專案範本的基礎上再進行設計，而且 Django 文件中的[編寫第一個 Django 應用程式，第 5 部分 - 測試](https://docs.djangoproject.com/en/2.0/intro/tutorial05/)以及[在 Django 中進行測試](https://docs.djangoproject.com/en/2.0/topics/testing/)都有相關的詳細資訊。
-
-- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括如 Django 應用程式所需的特定變更。
 
 - 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來操作 Azure 儲存體服務，例如資料表和 blob。
 

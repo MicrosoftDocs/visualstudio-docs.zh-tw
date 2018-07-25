@@ -2,7 +2,7 @@
 title: 在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務 | Microsoft Docs
 description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入白名單或開啟的網域 URL、連接埠及通訊協定
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765664"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978433"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -49,7 +49,7 @@ ms.locfileid: "34765664"
 | download.visualstudio.com | 安裝套件下載位置 |
 | dl.xamarin.com | 安裝套件下載位置 |
 | visualstudiogallery.msdn.microsoft.com | Visual Studio 延伸模組下載位置 |
-| www.visualstudio.com | 文件位置 |
+| visualstudio.microsoft.com | 文件位置 |
 | docs.microsoft.com | 文件位置 |
 | msdn.microsoft.com | 文件位置 |
 | www.microsoft.com | 文件位置 |
@@ -118,7 +118,8 @@ ms.locfileid: "34765664"
 | 快照 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (相依於 Visual Studio 版本) | 1.針對 App Service SKU 大小的查詢 .json 檔案 <br>2.各種 Azure RM 呼叫 <br>3.網站熱身呼叫，透過  <br>4.客戶的目標 App Service Kudu 端點 <br>5.於 nuget.org 中發行的查詢網站延伸模組版本 <br>6.遠端偵錯通道 |
 |Azure 串流分析 <br><br>HDInsight | Management.azure.com |https|443 |用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
-|封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有對特定建置工作案例 (例如：NuGet 工具安裝程式、Node 工具安裝程式)，或在您想要讓摘要使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
+| 封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有對特定建置工作案例 (例如：NuGet 工具安裝程式、Node 工具安裝程式)，或在您想要讓摘要使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用來與 VSTS 連線 |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解

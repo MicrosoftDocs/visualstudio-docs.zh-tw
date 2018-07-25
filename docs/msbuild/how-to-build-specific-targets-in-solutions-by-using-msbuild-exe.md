@@ -14,36 +14,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c14c73a4ed49f8fa78422d151d526990359a15
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b735d1543c9af4fead999e3c530fad063672337e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567531"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080578"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在方案中建置特定目標
-您可以使用 MSBuild.exe，在方案中建置特定專案的特定目標。  
+您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。  
   
-### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標  
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標  
   
 1.  在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。  
   
-2. 以 **`ProjectName`**`:`**`TargetName`** 格式，在 `/target:` 參數之後指定目標。 如果專案名稱包含以下任何字元：`%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，將其取代為指定目標名稱中的 `_`。
+2. 以 \<ProjectName>:\<TargetName> 格式，在 `/target:` 參數之後指定目標。 如果專案名稱包含以下任何字元：`%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，將其取代為指定目標名稱中的 `_`。
   
 ## <a name="example"></a>範例  
- 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 `NewFolder` 方案資料夾中。  
+ 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder 方案資料夾中。  
   
-```
-msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean`
+```cmd
+msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您想要檢視可用的選項，可以使用 MSBuild 所提供的偵錯選項。 設定環境變數 `MSBUILDEMITSOLUTION=1` 及建置解決方案。 這會產生名為 `<SolutionName>.sln.metaproj` 的 MSBuild 檔案，在建置階段顯示解決方案中 MSBuild 的內部檢視。 您可以檢查此檢視來判斷哪些目標可用來建置。
+如果您想要檢視可用的選項，可以使用 MSBuild 所提供的偵錯選項。 設定環境變數 `MSBUILDEMITSOLUTION=1` 及建置解決方案。 這會產生名為 *\<SolutionName>.sln.metaproj* 的 MSBuild 檔案，在建置階段顯示方案中 MSBuild 的內部檢視。 您可以檢查此檢視來判斷哪些目標可用來建置。
 
 除非您需要這個內部檢視，否則請勿以此環境變數設定來建置。 此設定可能會在解決方案中建置專案時造成問題。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令列參考](../msbuild/msbuild-command-line-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [ MSBuild](../msbuild/msbuild.md)  

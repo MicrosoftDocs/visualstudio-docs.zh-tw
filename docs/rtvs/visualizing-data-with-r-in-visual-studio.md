@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235252"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
+# <a name="create-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
 
 繪圖是資料科學家工作流程的重要部分。 在 Visual Studio R 工具 (RTVS) 中，所有繪圖活動都著重於一或多個繪圖視窗，其設計旨在以此重要活動來提升生產力。
 
@@ -67,11 +68,11 @@ ms.lasthandoff: 04/19/2018
 
 繪圖也是獨立物件，這表示您可以在繪圖視窗間複製或移動它們，方法是使用滑鼠拖放，或使用滑鼠右鍵操作功能表和 [編輯] 功能表的 [複製]、[剪下] 和 [貼上] 命令。
 
-預設的拖放行為是複製；若要移動，拖曳時請按住 Shift 鍵。
+預設的拖放行為是複製；若要移動，拖曳時請按住 **Shift** 鍵。
 
 ## <a name="plot-history"></a>繪圖歷程記錄
 
-繪圖命令會保留在每個視窗的繪圖歷程記錄中，確保留存工作階段中的所有繪圖作業。 若要巡覽歷程記錄，請使用繪圖視窗工具列上的箭號按鈕，或使用 Ctrl+Alt+F11 和 Ctrl+Alt+F12。 您也可以再次使用工具列按鈕或 [R 工具] > [繪圖] 功能表命令，從視窗中移除單一繪圖或清除所有繪圖。
+繪圖命令會保留在每個視窗的繪圖歷程記錄中，確保留存工作階段中的所有繪圖作業。 若要巡覽歷程記錄，請使用繪圖視窗工具列上的箭號按鈕，或使用 **Ctrl**+**Alt**+**F11** 和 **Ctrl**+**Alt**+**F12**。 您也可以再次使用工具列按鈕或 [R 工具] > [繪圖] 功能表命令，從視窗中移除單一繪圖或清除所有繪圖。
 
 若要查看整個繪圖集合，請使用工具列按鈕或 [R 工具] > [繪圖] > [繪圖歷程記錄視窗]，開啟 [繪圖歷程記錄視窗]。
 歷程記錄會提供您一份在該視窗中顯示的繪圖縮圖清單，並依不同的繪圖視窗 (或裝置) 分組。 使用工具列上的縮放按鈕可變更縮圖的大小。
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/19/2018
 
 所有視窗的繪圖歷程記錄存留期都會繫結至互動式 R 工作階段的存留期。 如果您重設 R 工作階段，或結束並重新啟動 Visual Studio，就會重設您的繪圖歷程記錄。
 
-## <a name="programmatically-manipulating-plot-windows"></a>以程式設計方式操作繪圖視窗
+## <a name="programmatically-manipulate-plot-windows"></a>以程式設計方式操作繪圖視窗
 
 您可利用裝置編號識別特定的繪圖視窗，使用 R 程式碼以程式設計方式操作繪圖視窗。 
 

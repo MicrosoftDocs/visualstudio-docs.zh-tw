@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 527a12591b05fcd1f20f8664132bf174ef553477
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5fa68a4db42874a157b5ee3a0665d3642e360486
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978254"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233993"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 
@@ -65,7 +65,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-類別程式碼以套用至類別的 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性開頭，而類別宣告為部分類別。 請注意，該屬性也會套用到此檔案中的每個類別。 另一個可能包含這個類別的其他程式碼的檔案是 `UIMap.cs`，稍後再討論。
+類別程式碼以套用至類別的 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性開頭，而類別宣告為部分類別。 請注意，該屬性也會套用到此檔案中的每個類別。 另一個可能包含這個類別的其他程式碼的檔案是 *UIMap.cs*，稍後會討論。
 
 產生的 `UIMap` 類別包含錄製測試時所指定的每個方法的程式碼。
 
@@ -120,11 +120,11 @@ public void AddItems()
 }
 ```
 
-每個方法定義的摘要註解指出哪一個類別用於該方法的參數值。 在此例子中是 `AddItemsParams` 類別，這在稍後的 `UIMap.cs` 檔案中定義，也是 `AddItemsParams` 屬性傳回的實值型別。
+每個方法定義的摘要註解指出哪一個類別用於該方法的參數值。 在此例子中是 `AddItemsParams` 類別，這在稍後的 *UIMap.cs* 檔案中定義，也是 `AddItemsParams` 屬性傳回的實值型別。
 
  方法程式碼的頂端是 `Variable Declarations` 區域，定義方法使用的 UI 物件的區域變數。
 
- 在這個方法中，`UIItemWindow` 和 `UIItemEdit` 都是使用 `UICalculatorWindow` 類別來存取的屬性，稍後的 `UIMap.cs` 檔案中定義此類別。
+ 在這個方法中，`UIItemWindow` 和 `UIItemEdit` 都是使用 `UICalculatorWindow` 類別來存取的屬性，稍後的 *UIMap.cs* 檔案中定義此類別。
 
  接下來的幾行使用 `AddItemsParams` 物件的屬性，將鍵盤的文字傳送至小算盤應用程式。
 
@@ -156,7 +156,7 @@ public virtual AddItemsParams AddItemsParams
 }
 ```
 
- 請注意，此屬性在傳回值之前，先使用名為 `mAddItemsParams` 的私用區域變數來保留值。 它傳回的物件有相同的屬性名稱和類別名稱。 此類別在稍後的 `UIMap.cs` 檔案中定義。
+ 請注意，此屬性在傳回值之前，先使用名為 `mAddItemsParams` 的私用區域變數來保留值。 它傳回的物件有相同的屬性名稱和類別名稱。 此類別在稍後的 *UIMap.cs* 檔案中定義。
 
  屬性所傳回的每個類別有類似的結構。 以下是 `AddItemsParams` 類別：
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-如同 `UIMap.cs` 檔案中的所有類別，這個類別也是以 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭。 這個小類別中有一個 `Fields` 區域，定義字串做為 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 方法的參數，此方法在先前討論的 `UIMap.AddItems()` 方法中使用。 在呼叫使用這些參數的方法之前，您可以撰寫程式碼來取代這些字串欄位中的值。
+如同 *UIMap.cs* 檔案中的所有類別，這個類別也是以 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭。 這個小類別中有一個 `Fields` 區域，定義字串做為 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 方法的參數，此方法在先前討論的 `UIMap.AddItems()` 方法中使用。 在呼叫使用這些參數的方法之前，您可以撰寫程式碼來取代這些字串欄位中的值。
 
 ###  <a name="UIMapCS"></a> UIMap.cs
  根據預設，此檔案包含一個部分 `UIMap` 類別，沒有方法或屬性。
@@ -264,7 +264,7 @@ public void MyTestCleanup()
 ###  <a name="UIMapuitest"></a> UIMap.uitest
  這是一個 XML 檔案，代表自動程式化 UI 測試錄製及其所有部分的結構。 其中包括動作和類別，還有這些類別的方法和屬性。 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案包含自動程式碼 UI 產生器為了重現測試結構而產生的程式碼，並提供測試架構的連線。
 
- 不可直接編輯 `UIMap.uitest` 檔案。 不過，您可以使用自動程式碼 UI 產生器來修改測試，進而自動修改 `UIMap.uitest` 檔案和 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案。
+ 不可直接編輯 *UIMap.uitest* 檔案。 不過，您可以使用自動程式碼 UI 產生器來修改測試，進而自動修改 *UIMap.uitest* 檔案和 [*UIMap.Designer.cs*](#UIMapDesignerFile) 檔案。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -282,4 +282,4 @@ public void MyTestCleanup()
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
 - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

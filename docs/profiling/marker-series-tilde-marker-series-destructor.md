@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84bdb0b1eb5c875bb1fe30595c59e97c0338b37f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: fe0aff26a781b31e5fb0273428df32ac7b19e660
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845570"
 ---
 # <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series 解構函式
 終結 marker_series 物件並釋放所有配置的資源。  
@@ -30,9 +31,9 @@ ms.lasthandoff: 05/11/2018
 ```  
   
 ## <a name="requirements"></a>需求  
- **標頭：** cvmarkersobj.h  
+ **標頭：***cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)

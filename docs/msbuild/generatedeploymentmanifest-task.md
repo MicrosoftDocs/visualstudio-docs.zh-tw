@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1eb989972f8cfd2e44516b798c25e5f579e5f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 470e08454d39bf63542a63359359b1577e70f5b3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571473"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945353"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 
@@ -43,16 +43,16 @@ ms.locfileid: "31571473"
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的選擇性描述。|
 |`DisallowUrlActivation`|選擇性的 `Boolean` 參數。<br /><br /> 指定當應用程式透過 URL 開啟時，是否應該自動執行。 如果此參數為 `true`，應用程式只能從 [開始] 功能表啟動。 此參數的預設值為 `false`。 只有當 `Install` 參數值為 `true` 時，此輸入才適用。|
 |`EntryPoint`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指出所產生資訊清單組件的進入點。 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單，此輸入會指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。<br /><br />如果 `EntryPoint` 工作參數未指定，`<customHostSpecified>` 標記會插入為 `<entryPoint>` 標記的子系，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 您可以使用下列步驟，將 DLL 相依性加入至應用程式資訊清單︰<br /><br /> 1.藉由呼叫 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析組件參考。<br />2.將上一個工作和組件本身的輸出傳遞至 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 參數將相依性傳遞至 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|
-|`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝期間顯示在對話方塊中的網頁 URL。|
+|`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝期間顯示於對話方塊中的網頁 URL。|
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這能讓結構化資料 (例如自訂資訊清單定義) 反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|
-|`Install`|選擇性的 `Boolean` 參數。<br /><br /> 指定應用程式是已安裝的應用程式或是線上專用應用程式。 如果此參數為 `true`，應用程式將會安裝在使用者的 [開始] 功能表上，並可以使用 [新增或移除程式] 對話方塊來移除。 如果此參數為 `false`，應用程式僅供從網頁線上使用。 此參數的預設值為 `true`。|
+|`Install`|選擇性的 `Boolean` 參數。<br /><br /> 指定應用程式是已安裝的應用程式或是線上專用應用程式。 如果此參數為 `true`，應用程式將會安裝在使用者的 [開始] 功能表上，並可以使用 [新增或移除程式] 對話方塊予以移除。 如果此參數為 `false`，應用程式僅供從網頁線上使用。 此參數的預設值為 `true`。|
 |`MapFileExtensions`|選擇性的 `Boolean` 參數。<br /><br /> 指定是否要使用 .deploy 副檔名對應。 如果此參數為 `true`，每個程式檔都是以 .deploy 副檔名發行。 對於限制必須解除封鎖的副檔名數目，以啟用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署的網頁伺服器安全性，此選項很實用。 此參數的預設值為 `false`。|
 |`MaxTargetPath`|選擇性的 `String` 參數。<br /><br /> 指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署中允許的檔案路徑長度上限。 如果指定此參數，則會根據此限制來檢查應用程式中的每個檔案路徑長度。 任何超過限制的項目都會造成建置警告。 如果這項輸入未指定或為零，則不會執行任何檢查。|
 |`MinimumRequiredVersion`|選擇性的 `String` 參數。<br /><br /> 指定使用者是否可以略過更新。 如果使用者的版本低於最小必要版本，則無法選擇略過更新。 當 `Install` 參數的值是 `true` 時，此輸入才適用。|
 |`OutputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。|
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的目標平台。 此參數的值如下：<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 預設值是 `AnyCPU`。|
-|`Product`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來做為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|
-|`Publisher`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來做為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|
+|`Product`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|
+|`Publisher`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|
 |`SuiteNamel`|選擇性的 `String` 參數。<br /><br /> 指定在 ClickOnce 部署之後，[開始] 功能表上的應用程式所在的資料夾名稱。|
 |`SupportUrl`|選擇性的 `String` 參數。<br /><br /> 指定出現在 [新增或移除程式] 對話方塊中的應用程式連結。 指定的值應該是完整 URL 或 UNC 路徑。|
 |`TargetCulture`|選擇性的 `String` 參數。<br /><br /> 識別應用程式的文化特性，並為產生的資訊清單指定組件識別的 `Language` 欄位。 如果未指定此參數，則會假設應用程式會因文化特性而異。|
@@ -66,7 +66,7 @@ ms.locfileid: "31571473"
 
 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需工作類別的參數清單，請參閱[工作基底類別](../msbuild/task-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [工作](../msbuild/msbuild-tasks.md)  
 [GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)  

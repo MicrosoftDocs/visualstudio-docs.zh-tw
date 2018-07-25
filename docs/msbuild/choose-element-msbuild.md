@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569517"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945765"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。  
@@ -42,15 +42,15 @@ ms.locfileid: "31569517"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
 </Choose>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
  無。  
@@ -62,7 +62,7 @@ ms.locfileid: "31569517"
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|選擇性項目。<br /><br /> 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需評估的程式碼 `PropertyGroup` 和 `ItemGroup` 項目的區塊。 `Choose` 項目中可能有零或一個 `Otherwise` 項目，而且它必須是最後一個項目。|  
 |[When](../msbuild/when-element-msbuild.md)|必要項目。<br /><br /> 指定 `Choose` 項目可能要選取的程式碼區塊。 `Choose` 項目中可能有一或多個 `When` 項目。|  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -121,6 +121,6 @@ ms.locfileid: "31569517"
 </Project>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

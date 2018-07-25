@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576036"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058642"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -88,6 +88,9 @@ ms.locfileid: "31576036"
   
  [Delete 工作](../msbuild/delete-task.md)  
  刪除指定的檔案。  
+
+ [DownloadFile 工作](../msbuild/downloadfile-task.md)  
+ 將檔案下載至指定的位置。  
   
  [Error 工作](../msbuild/error-task.md)  
  停止組建，並根據評估的條件陳述式來記錄錯誤。  
@@ -200,6 +203,9 @@ ms.locfileid: "31576036"
  [UnregisterAssembly 工作](../msbuild/unregisterassembly-task.md)  
  針對 COM Interop 用途將指定的組件取消註冊。  
   
+ [Unzip 工作](../msbuild/unzip-task.md)  
+ 將 `.zip` 封存解壓縮至指定的位置。
+  
  [UpdateManifest 工作](../msbuild/updatemanifest-task.md)  
  更新資訊清單中選取的屬性，並重新簽署。  
   
@@ -223,6 +229,9 @@ ms.locfileid: "31576036"
   
  [XslTransformation 工作](../msbuild/xsltransformation-task.md)  
  使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
+  
+  [ZipDirectory 工作](../msbuild/zipdirectory-task.md)  
+ 從目錄的內容建立 `.zip` 封存。
   
 ## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

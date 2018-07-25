@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd3f7e6c5075ad024e227c847ff05f186f7b016
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570160"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945919"
 ---
 # <a name="copy-task"></a>Copy 工作
 將檔案複製到檔案系統上的新位置。  
@@ -44,7 +44,7 @@ ms.locfileid: "31570160"
 |`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 即使已將檔案標示為唯讀檔案，還是會覆寫它們|  
 |`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試複製多少次。 預設值為零。<br /><br /> **注意︰** 使用重試，可以為建置流程中的同步處理問題設定遮罩。|  
 |`RetryDelayMilliseconds`|選擇性的 `Int32` 參數。<br /><br /> 指定任何必要重試之間的延遲。 預設值為 RetryDelayMillisecondsDefault 引數，其會傳遞至 CopyTask 建構函式。|  
-|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會略過複製來源與目的地之間未變更的檔案。 如果檔案具有相同的大小和相同的上次修改時間，`Copy` 工作即會將檔案視為未變更。 **注意︰** 如果您將此參數設為 `true`，您應該在包含目標上使用相依性分析，因為只有在來源檔案的上次修改時間比目的地檔案的上次修改時間還新時，才會執行此工作。|  
+|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會略過複製來源與目的地之間未變更的檔案。 如果檔案具有相同的大小和相同的上次修改時間，`Copy` 工作即會將檔案視為未變更。 <br /><br /> **注意︰** 如果您將此參數設為 `true`，您應該在包含目標上使用相依性分析，因為只有在來源檔案的上次修改時間比目的地檔案的上次修改時間還新時，才會執行此工作。|  
 |`SourceFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要複製的檔案。|  
 |`UseHardlinksIfPossible`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會針對複製的檔案建立永久連結，而非複製檔案。|  
   
@@ -70,10 +70,10 @@ ms.locfileid: "31570160"
 ## <a name="remarks"></a>備註  
  您必須指定 `DestinationFolder` 或 `DestinationFiles` 參數，但不能同時指定這兩者。 如果同時指定這兩者，工作即會失敗，並記錄錯誤。  
   
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
- 下列範例會將 `MySourceFiles` 項目集合中的項目複製到資料夾 c:\MyProject\Destination。  
+ 下列範例會將 `MySourceFiles` 項目集合中的項目複製到資料夾 *c:\MyProject\Destination*。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -93,7 +93,7 @@ ms.locfileid: "31570160"
 ```  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何進行遞迴複製。 此專案會以遞迴方式將所有檔案從 c:\MySourceTree 中複製到 c:\MyDestinationTree，同時保有目錄結構。  
+ 下列範例示範如何進行遞迴複製。 此專案會以遞迴方式將所有檔案從 *c:\MySourceTree* 中複製到 *c:\MyDestinationTree*，同時保有目錄結構。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -112,6 +112,6 @@ ms.locfileid: "31570160"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

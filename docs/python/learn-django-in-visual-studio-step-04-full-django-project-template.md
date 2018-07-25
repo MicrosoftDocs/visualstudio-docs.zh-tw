@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750359"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090045"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>教學課程步驟 4：使用完整的 Django Web 專案範本
+# <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 
 **上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ ms.locfileid: "34750359"
   - `requirements.txt`：包含 Django 1.x 的相依性。
   - `readme.html`：建立專案後，會在 Visual Studio 中顯示的檔案。 如前一節中所述，請遵照此處的指示來建立應用程式的進階使用者 (系統管理員) 帳戶。
 - `app` 資料夾包含所有應用程式檔案，包括檢視、模型、測試、表單、範本和靜態檔案 (請參閱步驟 4-2)。 您通常會重新命名此資料夾，以便使用更特定的應用程式名稱。
-- `DjangoWeb` (Django 專案) 資料夾包含一般的 Django 專案檔案：`__init.py__`、`settings.py`、`urls.py` 和 `wsgi.py`。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 `settings.py`，而且 `urls.py` 也會設定好所有應用程式頁面的路由，包括登入表單。
+- `DjangoWeb` (Django 專案) 資料夾包含一般的 Django 專案檔案：`__init__.py`、`settings.py`、`urls.py` 和 `wsgi.py`。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 `settings.py`，而且 `urls.py` 也會設定好所有應用程式頁面的路由，包括登入表單。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
@@ -215,7 +215,8 @@ urlpatterns = [
 > [!div class="nextstepaction"]
 > [在 Django 中驗證使用者](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
+- [將 Web 應用程式部署至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [撰寫您的第一個 Django 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
 - GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

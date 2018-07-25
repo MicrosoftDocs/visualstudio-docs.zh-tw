@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ec14a6d8909276d479f1e43b1bc20acd4452ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6527825d23e0c09d156f61f2645276e61d72e165
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843633"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暫停和繼續效能資料收集
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  
   
  控制資料收集可以讓您縮減分析資料檔案的大小，而且可以只收集自己有興趣的作業資料。 您可以在效能工作階段中重複暫停及繼續剖析程式碼。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 04/19/2018
   
     -   選擇 [停止分析] 即可結束程式碼剖析工作階段並產生報告。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
- [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [操作說明︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)

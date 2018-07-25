@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575604"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081653"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
   
-## <a name="using-properties-to-modify-projects"></a>使用屬性修改專案  
+## <a name="use-properties-to-modify-projects"></a>使用屬性修改專案  
  `Property` 項目會定義要在專案檔中多次參考的變數 (例如暫存目錄的位置)，或設定要在數個組態中使用的屬性值 (例如偵錯組建和發行組建)。 如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
   
  您可以使用屬性來變更組建的組態，而不需變更專案檔。 `Property` 項目和 `PropertyGroup` 項目的 `Condition` 屬性 (Attribute) 可讓您變更屬性 (Property) 的值。 如需 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
@@ -49,20 +49,20 @@ ms.locfileid: "31575604"
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>在命令列上指定屬性  
+## <a name="specify-properties-on-the-command-line"></a>在命令列上指定屬性  
  一旦將您的專案檔編寫為可接受多個組態之後，您就必須能夠在每次建置專案時變更這些設定。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 藉由允許使用 **/property** 或 **/p** 參數在命令列中指定屬性來提供此功能。  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性  
   
 -   使用 **/property** 參數搭配屬性和屬性值。 例如:   
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 或 -  
+    或  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ ms.locfileid: "31575604"
   
 -   多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - 或-  
+    或
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ ms.locfileid: "31575604"
   
  若要建置此專案的偵錯版本，請輸入：  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  若要建置此專案的零售版本，請輸入：  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  若要建置專案，請輸入下列命令：  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   
@@ -184,7 +184,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

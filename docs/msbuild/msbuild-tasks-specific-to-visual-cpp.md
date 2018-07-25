@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 特有的 MSBuild 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0aaec01c24e68c42d2dc87e71875f664b7b61def
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573755"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056507"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ 特有的 MSBuild 工作
 提供在建置流程期間執行之程式碼的工作。 安裝 Visual C++ 之後，除了已隨 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 安裝的工作之外，還會有下列工作可供使用。 如需詳細資訊，請參閱 [MSBuild (Visual C++) 概觀](/cpp/build/msbuild-visual-cpp-overview)。  
@@ -47,9 +47,12 @@ ms.locfileid: "31573755"
 |[MT 工作](../msbuild/mt-task.md)|包裝 Microsoft 資訊清單工具 (mt.exe)。|  
 |[RC 工作](../msbuild/rc-task.md)|包裝 Microsoft Windows 資源編譯器工具 (rc.exe)。|  
 |[SetEnv 工作](../msbuild/setenv-task.md)|設定或刪除指定環境變數的值。|  
-|[VCMessage 工作](../msbuild/vcmessage-task.md)|在建置期間記錄警告訊息和錯誤訊息。|  
+|[VCMessage 工作](../msbuild/vcmessage-task.md)|在建置期間記錄警告訊息和錯誤訊息。 (不可擴充。 僅供內部使用。)|  
 |[XDCMake 工作](../msbuild/xdcmake-task.md)|包裝 XML 文件工具 (xdcmake.exe)，此工具可將 XML 文件註解 (.xdc) 檔案合併至 .xml 檔案。|  
-|[XSD 工作](../msbuild/xsd-task.md)|包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。|  
+|[XSD 工作](../msbuild/xsd-task.md)|包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。 請參閱下列注意事項。|  
 |[MSBuild 參考](../msbuild/msbuild-reference.md)|描述 MSBuild 系統的項目。|  
 |[工作](../msbuild/msbuild-tasks.md)|描述工作，也就是可結合以產生組建的程式碼單位。|  
 |[工作撰寫](../msbuild/task-writing.md)|描述如何建立工作。|
+
+> [!NOTE]
+> 在 Visual Studio 2017 中，即將淘汰 xsd.exe 的 C++ 專案支援。 您仍然可以將 **CppCodeProvider.dll** 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。

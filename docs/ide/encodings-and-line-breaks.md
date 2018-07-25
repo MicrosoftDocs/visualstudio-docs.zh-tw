@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446689"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117091"
 ---
 # <a name="encodings-and-line-endings"></a>編碼與行尾結束符號
 
@@ -51,9 +51,9 @@ ms.locfileid: "34446689"
 ![[進階儲存選項] 對話方塊](media/line_endings.png)
 
 > [!NOTE]
-> 如果您在 [檔案] 功能表上看不到 [進階儲存選項]，您可以新增它。 選擇 [工具]、[自訂...]，然後選擇 [命令] 索引標籤。在 [功能表列] 下拉式清單中，選擇 [檔案]，然後選擇 [新增命令...] 按鈕。 在 [新增命令] 對話方塊的 [類別] 下，選擇 [檔案]，然後在 [命令] 清單中選擇 [進階儲存選項...]。選擇 [確定]，然後選擇 [下移] 按鈕，將命令移至功能表中的任何位置。 選擇 [關閉] 以關閉 [自訂] 對話方塊。 如需詳細資訊，請參閱[自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
+> 如果您在 [檔案] 功能表上看不到 [進階儲存選項]，您可以新增它。 選擇 [工具]、[自訂]，然後選擇 [命令] 索引標籤。在 [功能表列] 下拉式清單中，選擇 [檔案]，然後選擇 [新增命令] 按鈕。 在 [新增命令] 對話方塊的 [類別] 下，選擇 [檔案]，然後在 [命令] 清單中選擇 [進階儲存選項]。 選擇 [確定]，然後選擇 [下移] 按鈕，將命令移至功能表中的任何位置。 選擇 [關閉] 以關閉 [自訂] 對話方塊。 如需詳細資訊，請參閱[自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
 >
-> 或者，您可以選擇 [檔案] > [另存 \<檔案\> 為...] 來存取 [進階儲存選項] 對話方塊。在 [另存新檔] 對話方塊中，選擇 [儲存] 按鈕旁的下拉式三角形，然後選擇 [以編碼方式儲存...]。
+> 或者，您可以選擇 [檔案] > [另存 \<檔案\> 為] 來存取 [進階儲存選項] 對話方塊。 在 [另存新檔] 對話方塊中，選擇 [儲存] 按鈕旁的下拉式三角形，然後選擇 [以編碼方式儲存]。
 
 ## <a name="see-also"></a>另請參閱
 

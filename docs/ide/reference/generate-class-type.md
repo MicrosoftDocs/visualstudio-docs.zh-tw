@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25e56d77ef9094338455b3a3f576fe8bc58387b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947358"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116984"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -68,7 +68,7 @@ ms.locfileid: "31947358"
    > [!TIP]
    > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
-1. 如果您選取 [產生新的類型...] 項目，[產生類型] 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
+1. 如果您選取 [產生新的類型] 項目，[產生類型] 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
 
    ![產生類型](media/class-newtype-cs.png)
 

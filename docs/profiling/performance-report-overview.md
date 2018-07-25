@@ -14,21 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255989"
 ---
-# <a name="performance-report-overview"></a>效能報告概觀
+# <a name="performance-report-overview"></a>效能報表概觀
 您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告] 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。  
   
 > [!CAUTION]
->  程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該嚴格控管資料的散發，包括資料為其原生 .vsp 格式時及匯出至 .csv 或 .xml 檔案時。  
+>  程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該嚴格控管資料的散發，包括資料為其原生 .*vsp* 格式時及匯出至 .*csv* 或 .*xml* 檔案時。  
 >   
->  如果在效能工作階段期間收集事件追蹤資料，其他資訊可能會出現在事件追蹤記錄 (.etl) 檔。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。  
+>  如果在效能工作階段期間收集事件追蹤資料，其他資訊可能會出現在事件追蹤記錄檔 (.*etl*) 中。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。  
   
-## <a name="performance-report-window"></a>效能報告視窗  
+## <a name="performance-report-window"></a>效能報表視窗  
  [效能報告] 視窗是用來檢視、管理及篩選效能資料的工具視窗，並包含可自訂的查詢控制項。  
   
  您可以在 [效能報告] 視窗的主要工具列上存取每個檢視。 按一下 [目前檢視] 清單旁的箭號，以顯示和選取可用的個別檢視。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
   
  [物件存留期] 檢視顯示每個型別的執行個體總數和每個記憶體回收層代中所收集的物件數目。 如需詳細資訊，請參閱[物件存留期檢視](../profiling/object-lifetime-view.md)。  
   
-## <a name="customizable-filter-control"></a>可自訂的篩選器控制項  
+## <a name="customizable-filter-control"></a>可自訂的篩選控制項  
  可自訂的篩選控制項具有下列選項︰  
   
 -   **匯入篩選** - 擷取先前儲存的自訂查詢。  
@@ -94,6 +95,6 @@ ms.lasthandoff: 04/19/2018
   
 -   **匯出** - 將目前的報告儲存在 .CVS 格式或 .XML 格式檔案，提供選項以儲存不同的檢視。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [效能報告檢視](../profiling/performance-report-views.md)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb92e37a8bc1543cfdf2efa142768d9edbea4f69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845635"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 使用取樣方法之 .NET 記憶體配置分析資料的 [程式行] 檢視，會列出在執行分析期間配置記憶體的陳述式。 資料行也包含配置的大小和數量。  
@@ -61,5 +62,5 @@ ms.lasthandoff: 04/19/2018
 |**專有位元組**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|  
 |**專有位元組 %**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式行檢視](../profiling/lines-view-sampling-data.md)

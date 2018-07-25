@@ -12,20 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8390638179443b5e8abe847a0f0421402361f25
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574636"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080388"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   
  從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 這讓您能夠更輕鬆地追蹤原始程式碼，並讓部署工作變得更容易。 原始程式碼已整合到指令碼。  
   
+
+ 在 MSBuild 15.8 中，已新增 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)，以建立 .NET Standard 跨平台內嵌工作。  如果您需要在 .NET Core 上使用內嵌工作，則必須使用 RoslynCodeTaskFactory。
 ## <a name="the-structure-of-an-inline-task"></a>內嵌工作的結構  
- 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內嵌工作與包含它的 `UsingTask` 項目通常會包含於 .targets 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。  
+ 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內嵌工作與包含它的 `UsingTask` 項目通常會包含於 *.targets* 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -55,7 +57,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   
  `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。  
   
--   `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的＜輸入和輸出參數＞。  
+-   `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。  
   
 -   `Task` 項目會描述並包含工作原始程式碼。  
   
@@ -68,7 +70,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 > [!NOTE]
 >  `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。  
   
-### <a name="code-element"></a>Code 項目  
+### <a name="code-element"></a>程式碼項目  
  `Task` 項目內顯示的最後一個子項目是 `Code` 項目。 `Code` 項目會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 項目的內容取決於您要撰寫工作的方式。  
   
  `Language` 屬性會指定您用來撰寫程式碼的語言。 可接受的值為 `cs` (適用於 C#)、`vb` (適用於 Visual Basic)。  
@@ -88,7 +90,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 > [!NOTE]
 >  在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。  
   
 ```xml  
@@ -114,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- 您可以在名為 HelloWorld.targets 的檔案中儲存 HelloWorld 工作，然後從專案中叫用它，如下所示。  
+ 您可以在名為 H*elloWorld.targets* 的檔案中儲存 HelloWorld 工作，然後從專案中叫用它，如下所示。  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。  
   
- 例如，套用至物件的  
+例如，套用至物件的  
   
 ```xml  
 <ParameterGroup>  
@@ -152,7 +154,7 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- 定義下列三個參數：  
+定義下列三個參數：  
   
 -   `Expression` 是 System.String 類型的必要輸入參數。  
   
@@ -190,6 +192,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)

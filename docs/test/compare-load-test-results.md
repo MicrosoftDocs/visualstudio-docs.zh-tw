@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66893198028fcd23e3d42e1e595764e723ed82da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a23c6da2f27ef5b25d33caa3a464ec0f4018b40b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966363"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280505"
 ---
-# <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>針對測試比較或趨勢分析報告負載測試結果
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>針對測試比較或趨勢分析報告負載測試結果
 
 您可以根據兩個或多個測試結果，產生 Microsoft Excel 負載測試報告。 共有兩種負載測試報告可供使用：
 

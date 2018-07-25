@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256054"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 爭用資料的 [模組檢視] 會顯示根據分析資料中取樣的模組所分組的效能資料。 每個模組都是階層式樹狀結構的根。 爭用事件發生所在模組的函式會列在模組節點之下。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [模組檢視](../profiling/modules-view.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

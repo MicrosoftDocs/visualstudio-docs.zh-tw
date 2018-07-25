@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568821"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946585"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 工作
 從指定的檔案擷取組件識別，並輸出識別資訊。  
@@ -41,7 +41,7 @@ ms.locfileid: "31568821"
 ## <a name="remarks"></a>備註  
  `Assemblies` 參數所輸出的項目包含名為 `Version`、`PublicKeyToken` 和 `Culture` 的項目中繼資料項目。  
   
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會擷取 `MyAssemblies` 項目中指定的檔案識別，並將其輸出到 `MyAssemblyIdentities` 項目。  
@@ -59,6 +59,6 @@ ms.locfileid: "31568821"
 </Project>  
 ```
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

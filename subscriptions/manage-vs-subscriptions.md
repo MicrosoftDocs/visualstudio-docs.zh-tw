@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548719"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326994"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -102,8 +102,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 3.  在 [關於] 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。  在 [喜好設定] 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。  
 4.  完成變更時，請按一下 [儲存]。 
 5.  按一下瀏覽器的 [返回] 按鈕，返回「權益」頁面。 
+    ![編輯設定檔資訊](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![編輯設定檔資訊](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>將訂閱連結至現有的 VSTS 或 Azure 訂閱
 如果您是使用個人 Microsoft 帳戶 (MSA) 登入訂閱，且其中一個訂閱使用由 Azure 管理的公司帳戶或學校帳戶，並包含 Visual Studio Team Services 或 Microsoft Azure，那麼您可以將這兩個訂閱連結起來。 這個連結稱為「其他帳戶」，其可讓您繼續使用 MSA 登入訂閱，同時存取與您學校或公司帳戶建立關聯的現有 Azure、VSTS 或 IDE 資源。 
@@ -111,12 +111,11 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 即使這兩個帳戶使用同一組電子郵件地址，您仍需要將公司帳戶/學校帳戶新增為其他帳戶，讓這兩個帳戶也能使用您的權益。 
 
 若要新增其他帳戶：
-1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com)。
+1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 2. 按一下 [訂閱] 索引標籤。
 3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
 4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]。 
-
-![其他帳戶](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![其他帳戶](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。  
 

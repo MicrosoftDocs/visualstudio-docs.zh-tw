@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f3514b042b3fbe5ebbac5f79e00d235f9d8e88
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752342"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923945"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 在 XAML 設計工具中，「圖形」(Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
@@ -43,91 +43,91 @@ ms.locfileid: "34752342"
 
  將您想要的任何圖形拖曳至畫板。 然後，您可以使用圖形控點來調整、旋轉、移動或扭曲圖形。
 
- ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+ ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
 ##  <a name="Path"></a> 繪製路徑
  路徑是一系列連接的直線和曲線。 使用路徑可建立 [資產]  面板中所沒有的有趣圖形。
 
  您可以使用線條、畫筆或鉛筆來繪製路徑。 您可以在 [工具]  面板中找到這些工具。
 
- ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
+ ![畫筆工具](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![畫筆工具選項](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
 
 ### <a name="draw-a-straight-line"></a>繪製直線
- 使用 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)，或 [線條]  工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)。
+ 使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)，或 [線條] 工具 ![[線條] 工具](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)。
 
- **使用 [畫筆] 工具** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
+ **使用 [畫筆] 工具** ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
 
  在畫板上，按一次可定義起始點，然後再按一次可定義線條的結尾。
 
- **使用 [線條] 工具** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
+ **使用 [線條] 工具** ![[線條] 工具](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
 
  在畫板上，從想要讓線條開始的地方拖曳起，然後再於想要線條結束的點上放開。
 
 ### <a name="draw-a-curve"></a>繪製曲線
- 使用 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
+ 使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
 
  在畫板上，按一次可定義線條的起始點，然後按一下並拖曳指標可建立所需的曲線。
 
  如果您想要關閉路徑，請按一下線條的第一個點。
 
 ### <a name="change-the-shape-of-a-curve"></a>變更曲線的形狀
- 使用 [直接選取]  工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png)。
+ 使用 [直接選取] 工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png)。
 
  按一下圖形，然後拖曳圖形上的任一點可變更曲線圖形。
 
 ### <a name="draw-a-free-form-path"></a>繪製任意形狀的路徑
- 使用 [鉛筆]  工具 ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png)。
+ 使用 [鉛筆] 工具 ![[鉛筆] 工具](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png)。
 
  在畫板上，繪製任意形狀的路徑，就像使用真正的鉛筆一樣。
 
 ### <a name="remove-part-of-a-path"></a>移除路徑的一部分
- 使用 [直接選取]  工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png)。
+ 使用 [直接選取] 工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png)。
 
  選取包含所要刪除線段的路徑，然後按一下 [刪除]  按鈕。
 
 ### <a name="remove-a-point-in-a-path"></a>移除路徑中的點
- 使用 [選取]  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)，和 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
+ 使用 [選取] 工具 ![[選取] 工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)，和 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
 
- 使用 [選取]  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) 來選取路徑。 然後，使用 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) 按一下您要移除的點。
+ 使用 [選取] 工具 ![[選取] 工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) 來選取路徑。 然後，使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) 按一下您要移除的點。
 
 ### <a name="add-a-point-to-a-path"></a>將點加入至路徑
- 使用 [選取]  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)，和 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
+ 使用 [選取] 工具 ![[選取] 工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)，和 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)。
 
- 使用 [選取]  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) 來選取路徑。 使用 [畫筆]  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) 按一下路徑上您要加入點的任何位置。
+ 使用 [選取] 工具 ![[選取] 工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) 來選取路徑。 使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) 按一下路徑上您要新增點的任何位置。
 
 ##  <a name="Convert"></a> 將圖形轉換成路徑
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) \(英文\)。
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (使用路徑：將圖形轉換成路徑)。
 
 ##  <a name="Combine"></a> 合併路徑
  您可以將路徑與圖形合併為單一路徑。
 
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+ ![合併路徑](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png)|合併前的兩個圖形|![](../designers/media/b1_4.png)|交集|
-|![](../designers/media/b1_2.png)|聯集|![](../designers/media/b1_5.png)|排除重疊|
-|![](../designers/media/b1_3.png)|分割|![](../designers/media/b1_6.png)|差集|
+|![合併前的兩個圖形](../designers/media/b1_1.png)|合併前的兩個圖形|![交集](../designers/media/b1_4.png)|交集|
+|![排除重疊](../designers/media/b1_2.png)|聯集|![](../designers/media/b1_5.png)|排除重疊|
+|![差集](../designers/media/b1_3.png)|分割|![](../designers/media/b1_6.png)|差集|
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) \(英文\)。
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (使用路徑：合併路徑)。
 
 ##  <a name="Compound"></a> 建立複合路徑
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。
 
  您可以在建立複合路徑之後隨時打散這些路徑。
 
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
+ ![中斷複合路徑](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q) \(英文\)。
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (使用路徑：建立複合路徑)。
 
 ##  <a name="Clipping"></a> 建立裁剪路徑
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。
 
- ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
+ ![裁剪路徑](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) \(英文\)。
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (使用路徑：建立裁剪路徑)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7db34fb4913e3576f286aa7c34fe3cf80296ed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256106"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
 模組檢視顯示依據分析資料中模組來分組的效能資料。 模組的函式列在模組節點之下。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/19/2018
 |**最小功能專屬耗用 (Elapsed Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小功能專屬耗用時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小功能專屬耗用時間。|  
   
 ## <a name="application-inclusive-values"></a>應用程式內含值  
- 應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
+ 應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
   
 |資料行|描述|  
 |------------|-----------------|  
@@ -81,7 +82,7 @@ ms.lasthandoff: 04/19/2018
 |**最大應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的最大應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最大應用程式專屬時間。|  
 |**最小應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小應用程式專屬時間。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)

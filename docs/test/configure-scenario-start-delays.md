@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297813"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/22/2018
 
 而某個情節只能在一天中的特定時間中執行，這是另一個範例。 因此，您要延遲啟動情節以同步進行此項作業。
 
-## <a name="specifying-the-delay-start-time-of-a-scenario"></a>指定情節的延遲開始時間
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>指定情節的延遲開始時間
 
 您可以使用 [負載測試編輯器] 來變更 [屬性] 視窗中的 [延遲開始時間] 屬性，藉以指定在負載測試中啟動情節之前的延遲。
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 05/22/2018
  此外，您可能會有某個只在一天中特定時間執行的情節，而這是另一個範例。 因此，您想要延遲啟動情節以模擬這種情況。
 
 > [!NOTE]
-> 如需回合設定屬性及其描述的完整清單，請參[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需回合設定屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
 ### <a name="to-specify-the-delay-start-time-for-a-scenario"></a>若要指定情節的延遲開始時間
 
@@ -57,11 +58,11 @@ ms.lasthandoff: 05/22/2018
 
 5. 變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [延遲開始時間] 值來執行負載測試。
 
-## <a name="enabling-and-disabling-whether-a-scenario-runs-during-the-warm-up-period"></a>啟用和停用熱身期間是否要執行情節
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>啟用和停用熱身期間是否要執行情節
 
-[準備期間停用] 屬性是使用 [屬性] 視窗來設定。 編輯負載測試情節屬性是由 [負載測試編輯器] 設定。
+[熱身期間停用] 屬性是使用 [屬性] 視窗來設定。 編輯負載測試情節屬性是由 [負載測試編輯器] 設定。
 
- [準備期間停用] 屬性是用來指示在 [延遲開始時間] 屬性中指定的準備期間是否應該執行情節。 如需詳細資訊，請檢閱前一個程序[指定情節的延遲開始時間](../test/configure-scenario-start-delays.md#ConfiguringScenarioStartDelayHowTo)。
+ [準備期間停用] 屬性是用來指示在 [延遲開始時間] 屬性中指定的準備期間是否應該執行情節。 如需詳細資訊，請檢閱前一個程序[指定情節的延遲開始時間](#specify-the-delay-start-time-of-a-scenario)。
 
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。

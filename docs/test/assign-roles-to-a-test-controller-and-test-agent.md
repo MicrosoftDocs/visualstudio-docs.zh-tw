@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968764"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280607"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>將角色指派至測試控制器和測試代理程式
 
@@ -41,7 +41,7 @@ ms.locfileid: "31968764"
 
 ## <a name="to-create-and-configure-a-test-setting"></a>若要建立和設定測試設定
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 [方案項目]，指向 [新增]，然後選擇 [新增項目]。
+1.  在 [方案總管] 中，以滑鼠右鍵按一下 [方案項目]、指向 [新增]，然後選擇 [新增項目]。
 
      [新增項目] 對話方塊隨即出現。
 
@@ -51,7 +51,7 @@ ms.locfileid: "31968764"
 
 4.  選擇 [新增]。
 
-     新測試 TestSettingDistributedTestWalkthrough.testsettings 檔案會出現在 [方案總管] 的 [方案項目] 資料夾底下。
+     新測試 *TestSettingDistributedTestWalkthrough.testsettings* 檔案會出現在 [方案總管] 的 [方案項目] 資料夾底下。
 
      [測試設定] 對話方塊隨即顯示。 已選取 [一般] 頁面。
 

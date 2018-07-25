@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3251f3f4f9ee43584d427ada7c014a566dc4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 78e9bfffc38ac54ec7aeb525665dc7e3a8927f74
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567976"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080485"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 項目 (MSBuild)
 包含使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目可能有任何數目的中繼資料索引鍵值組。  
@@ -34,12 +34,12 @@ ms.locfileid: "31567976"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -47,10 +47,10 @@ ms.locfileid: "31567976"
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -60,8 +60,6 @@ ms.locfileid: "31567976"
  可選擇使用文字值。  
 
  此文字會指定項目中繼資料值，它可以是文字或 XML。  
-
-## <a name="remarks"></a>備註  
 
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何新增含有值 `fr` 的 `Culture` 中繼資料到項目 `CSFile`。  
@@ -74,6 +72,6 @@ ms.locfileid: "31567976"
 </ItemGroup>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [項目](../msbuild/msbuild-items.md)

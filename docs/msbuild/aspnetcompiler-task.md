@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2f6554a1c29618d8d3373fc3fb8f46f24816531e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69971e72569dcae1f02f1e2b7988ef15f881fe85
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567950"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945165"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 工作
 `AspNetCompiler` 工作會包裝 aspnet_compiler.exe，此為先行編譯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式的公用程式。  
@@ -51,7 +51,7 @@ ms.locfileid: "31567950"
 |`VirtualPath`|選擇性的 `String` 參數。<br /><br /> 要編譯之應用程式的虛擬路徑。 如果指定了 `PhysicalPath`，就能使用實體路徑來尋找應用程式。 否則，會使用 IIS metabase，而且假設應用程式位於預設網站中。 此參數 (Parameter) 對應到 aspnet_compiler.exe 上的 **-v** 參數 (Switch)。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其說明，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例使用 `AspNetCompiler` 工作來先行編譯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式。  
@@ -70,6 +70,6 @@ ms.locfileid: "31567950"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

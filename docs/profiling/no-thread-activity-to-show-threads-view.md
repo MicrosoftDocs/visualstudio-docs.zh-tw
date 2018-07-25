@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab1aab1be9fa8ebb8667a7cf7c524da71fa013d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257874"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>沒有執行緒活動可顯示 (執行緒檢視)
 這個區域會顯示目前可見時間範圍內未隱藏的執行緒相關資料。  
@@ -33,5 +34,5 @@ ms.lasthandoff: 04/19/2018
   
 -   確定 [減少雜訊] 設定低閾值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

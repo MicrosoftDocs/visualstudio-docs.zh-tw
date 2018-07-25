@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 5：安裝套件
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 5，示範 Visual Studio 在 Python 環境中管理套件的功能。
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875314"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055977"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>第 5 步：在 Python 環境中安裝套件
+# <a name="step-5-install-packages-in-your-python-environment"></a>步驟 5：在 Python 環境中安裝套件
 
 **上一步：[在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
 > [!div class="nextstepaction"]
 > [使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>繼續探討
+### <a name="go-deeper"></a>深入了解
 
 - [Python 環境](managing-python-environments-in-visual-studio.md)

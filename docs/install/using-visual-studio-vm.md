@@ -1,7 +1,7 @@
 ---
 title: 在 Azure 虛擬機器上使用 Visual Studio
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 03/03/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 457953d161d6fd31c686199e76bdedbe548f5b8f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957667"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977709"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,9 +34,9 @@ ms.locfileid: "33957667"
 
 | 發行版本                                              | 版本                     |     產品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新 (15.7 版)                    |    Enterprise、Community     |      15.7.0 版     |
-| Visual Studio 2017：最新預覽 (15.8 版 Preview 1) |    Enterprise、Community     |      15.8.1 版     |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.13 版    |
+| Visual Studio 2017：最新 (15.7 版)                    |    Enterprise、Community     |      15.7.5 版     |
+| Visual Studio 2017：最新預覽 (15.8 版 Preview 4) |    Enterprise、Community     |      15.8.4 版     |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.15 版    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版  |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期) |
 
@@ -59,14 +59,14 @@ ms.locfileid: "33957667"
 
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
-       add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^
-       add Microsoft.Net.Component.4.6.2.SDK ^
-       add Microsoft.Net.Component.4.6.2.TargetingPack ^
-       add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
-       add Microsoft.VisualStudio.Component.FSharp ^
-       add Component.GitHub.VisualStudio ^
-       add Microsoft.VisualStudio.Component.LinqToSql
+       --add Microsoft.Net.Component.4.7.SDK ^
+       --add Microsoft.Net.Component.4.7.TargetingPack ^
+       --add Microsoft.Net.Component.4.6.2.SDK ^
+       --add Microsoft.Net.Component.4.6.2.TargetingPack ^
+       --add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
+       --add Microsoft.VisualStudio.Component.FSharp ^
+       --add Component.GitHub.VisualStudio ^
+       --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
 如果映像不包含您需要的 Visual Studio 功能，請透過位於頁面右上角的意見反應工具提供意見反應。

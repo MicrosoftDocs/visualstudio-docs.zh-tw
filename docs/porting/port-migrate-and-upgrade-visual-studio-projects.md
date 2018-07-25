@@ -1,7 +1,7 @@
 ---
 title: 移植、移轉及升級專案
 description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2017 支援參考，以及 Visual Studio 決定何時需要移轉專案的方式。
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,24 +19,23 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032199"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058746"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
-一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](https://www.visualstudio.com/vs/release-notes/)，以了解哪些功能專屬於哪一個版本)。
+一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](https://visualstudio.microsoft.com/vs/release-notes/)，以了解哪些功能專屬於哪一個版本)。
 
-有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community 網站](https://developercommunity.visualstudio.com)。
+有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community 網站](https://developercommunity.visualstudio.com)。
+
+本文僅提供 Visual Studio 2017 能移轉之專案類型的詳細資料。 文中不包含 Visual Studio 2017 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)中。
 
 > [!Important]
-> 本文僅提供 Visual Studio 2017 中包含移轉之專案類型的詳細資料。 它不會包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)中。 另請注意，某些專案類型在 Visual Studio 2017 中已不再支援，因此無法進行移轉。
-
-> [!Important]
-> 特定專案類型需要透過 Visual Studio 安裝程式安裝適當的工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在該情況下，請檢查您的安裝選項，然後再試一次。 同樣地，如需 Visual Studio 2017 中專案支援的詳細資料，請參閱 [Visual Studio 2017 平台目標及相容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)一文。
+> 特定專案類型需要透過 Visual Studio 安裝程式安裝適當的工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在該情況下，請檢查您的安裝選項，然後再試一次。 同樣地，如需 Visual Studio 2017 中專案支援的詳細資料，請參閱 [Visual Studio 2017 平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)一文。
 
 ## <a name="project-types"></a>專案類型
 
@@ -76,7 +75,7 @@ ms.locfileid: "32032199"
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio 如何決定移轉專案的時間
 
-Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，使得相同的專案可以在不同的版本中開啟、修改和建置。 不過，隨著時間變化出現無可避免的變更，而導致某些專案類型可能不再受支援。 (請參閱[平台目標及相容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)，以了解 Visual Studio 2017 中支援哪些專案類型。)在這些情況下，較新版本的 Visual Studio 不會載入專案，而且不會提供移轉路徑；您需要在確實支援該專案的舊版 Visual Studio 中維護該專案。
+Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，使得相同的專案可以在不同的版本中開啟、修改和建置。 不過，隨著時間變化出現無可避免的變更，而導致某些專案類型可能不再受支援。 (請參閱[平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)，以了解 Visual Studio 2017 中支援哪些專案類型。)在這些情況下，較新版本的 Visual Studio 不會載入專案，而且不會提供移轉路徑；您需要在確實支援該專案的舊版 Visual Studio 中維護該專案。
 
 在其他情況下，較新版本的 Visual Studio 可以開啟專案，但必須以可能會使其與舊版不相容的方式更新或移轉專案。 Visual Studio 會使用幾個準則，來判斷是否必須進行這類移轉：
 
@@ -92,7 +91,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 這類單向變更可能包含變更專案檔中的 `ToolsVersion` 屬性，此屬性確切表示哪個版本的 MSBuild 可以將專案的原始程式碼變成您最終需要的可執行且可部署成品。 也就是說，使專案與舊版 Visual Studio 不相容的項目不是 *Visual Studio* 版本，而是 `ToolsVersion` 所決定的 *MSBuild* 版本。 只要您的 Visual Studio 版本包含的 MSBuild 工具鏈符合專案中的 `ToolsVersion`，Visual Studio 就可以叫用該工具鏈來建置專案。
 
-為了保持與較舊版本所建立專案的最大相容性，Visual Studio 2017 包含了必要的 MSBuild 工具鏈來支援 `ToolsVersion` 15、14、12 和 4。 使用其中任一 `ToolsVersion` 值的專案應該都能成功建置。 (同樣地，取決於 Visual Studio 2017 是否完全支援該專案類型，如[平台目標及相容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)所述。)
+為了保持與較舊版本所建立專案的最大相容性，Visual Studio 2017 包含了必要的 MSBuild 工具鏈來支援 `ToolsVersion` 15、14、12 和 4。 使用其中任一 `ToolsVersion` 值的專案應該都能成功建置。 (同樣地，取決於 Visual Studio 2017 是否完全支援該專案類型，如[平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)所述。)
 
 在此情況下，自然會產生下列問題：您是否應該嘗試以手動方式更新，或將專案移轉至較新的 `ToolsVersion` 值。 進行這類變更是不必要的作業，而且可能會產生許多錯誤和警告，您必須修正這些問題才能重新建置專案。 此外，如果 Visual Studio 日後移除對特定 `ToolsVersion` 的支援，則開啟專案將會明確地觸發專案移轉處理序，因為 `ToolsVersion` 值必須進行變更。 在這種情況下，該特定專案類型的子系統會確切知道需要變更哪些項目，而且會遵循本文稍早所述自動進行這些變更。
 

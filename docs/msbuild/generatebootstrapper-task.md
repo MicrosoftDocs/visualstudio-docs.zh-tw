@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4a81b02d4179c58c63c1429aa2e522bb39bb9aaf
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573794"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945932"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
   
 ## <a name="task-parameters"></a>工作參數  
- 下表說明 `GenerateBootstrapper` 工作的參數。  
+ 以下描述 `GenerateBootstrapper` 工作的參數。  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ ms.locfileid: "31573794"
     </BootstrapperItem>  
     ```  
   
-     `Include` 屬性可用來表示必須安裝的必要條件名稱。 `ProductName` 項目中繼資料是選擇性的，而且萬一找不到封裝，建置引擎將使用它做為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。  
+     `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。  
   
      如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。  
   
@@ -130,7 +130,7 @@ ms.locfileid: "31573794"
   
      選擇性的 `String` 參數。  
   
-     指定要複製 setup.exe 和所有封裝檔案的位置。  
+     指定要複製 *setup.exe* 和所有套件檔案的位置。  
   
 -   `Path`  
   
@@ -142,7 +142,7 @@ ms.locfileid: "31573794"
   
      選擇性的 `String` 參數。  
   
-     指定應在啟動載入器安裝失敗時提供的 URL  
+     指定在啟動載入器安裝失敗時提供的 URL。  
   
 -   `Validate`  
   
@@ -151,7 +151,7 @@ ms.locfileid: "31573794"
      如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會使用 `GenerateBootstrapper` 工作，來安裝必須安裝 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 做為必要條件的應用程式。  
@@ -177,6 +177,6 @@ ms.locfileid: "31573794"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

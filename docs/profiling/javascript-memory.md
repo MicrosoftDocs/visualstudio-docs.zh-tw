@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8a4c29855cb9a771660fa5070f6d34a4d10c557a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235263"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/17/2018
   
      不是直接由應用程式程式碼建立的物件都將被自動篩選掉。您也可以根據物件名稱來篩選資料。  
   
-##  <a name="Run"></a> 執行 JavaScript 記憶體分析器  
+## <a name="run-the-javascript-memory-analyzer"></a>執行 JavaScript 記憶體分析器  
  在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用記憶體分析器。
   
 #### <a name="to-run-the-memory-analyzer"></a>若要執行記憶體分析器  
@@ -74,35 +75,35 @@ ms.lasthandoff: 05/17/2018
   
      如下列章節中的討論內容所述，與應用程式互動以測試相關記憶體使用量狀況並檢視記憶體圖表。  
   
-6.  按 Alt+Tab 切換至 Visual Studio。  
+6.  按 **Alt**+**Tab** 切換至 Visual Studio。  
   
-7.  若要檢視記憶體分析器收集的資料，請選擇 [ **擷取堆積快照**]。 請參閱本主題稍後的 [View a snapshot summary](#SnapshotSummary) 。  
+7.  若要檢視記憶體分析器收集的資料，請選擇 [ **擷取堆積快照**]。 請參閱本主題稍後的 [View a snapshot summary](#view-a-snapshot-summary) 。  
   
-##  <a name="Check"></a> 檢查記憶體使用量  
- 您可以使用 JavaScript 記憶體分析器的不同檢視，嘗試識別記憶體流失。 如果您已經懷疑應用程式正在流失記憶體，請參閱 [Isolate a memory leak](#Isolate) 以了解建議的工作流程。  
+## <a name="check-memory-usage"></a>檢查記憶體使用量  
+ 您可以使用 JavaScript 記憶體分析器的不同檢視，嘗試識別記憶體流失。 如果您已經懷疑應用程式正在流失記憶體，請參閱 [Isolate a memory leak](#isolate-a-memory-leak) 以了解建議的工作流程。  
   
  請使用下列檢視協助識別應用程式中的記憶體流失：  
   
--   [檢視即時記憶體使用量摘要](#LiveMemory). 使用記憶體使用量圖表可以查看記憶體使用量是否突然增加，或者是否因特定動作而持續增加。 使用即時記憶體使用量摘要檢視可以取得堆積的快照。 快照會在記憶體使用量圖表下方顯示為集合。  
+-   [檢視即時記憶體使用量摘要](#view-live-memory-usage-summary). 使用記憶體使用量圖表可以查看記憶體使用量是否突然增加，或者是否因特定動作而持續增加。 使用即時記憶體使用量摘要檢視可以取得堆積的快照。 快照會在記憶體使用量圖表下方顯示為集合。  
   
     > [!TIP]
     >  當您擷取快照時，記憶體使用量中就會顯示增量。 請使用快照摘要找出記憶體增加的精確位置。  
   
--   [View a snapshot summary](#SnapshotSummary). 您可以檢視在記憶體分析工作階段期間或之後檢視快照摘要資訊。 使用快照摘要可以連結快照詳細資料和快照差異檢視。  
+-   [View a snapshot summary](#view-a-snapshot-summary). 您可以檢視在記憶體分析工作階段期間或之後檢視快照摘要資訊。 使用快照摘要可以連結快照詳細資料和快照差異檢視。  
   
     > [!TIP]
     >  一般來說，快照差異檢視會提供有關記憶體流失最有用的資訊。  
   
--   [檢視快照詳細資料](#SnapshotDetails). 顯示單一快照的詳細記憶體使用量資料。  
+-   [檢視快照詳細資料](#view-snapshot-details). 顯示單一快照的詳細記憶體使用量資料。  
   
--   [檢視快照差異](#SnapshotDiff).顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
+-   [檢視快照差異](#view-a-snapshot-diff).顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
   
-##  <a name="Isolate"></a> Isolate a memory leak  
+## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
  下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
 1.  在 Visual Studio 中開啟應用程式。  
   
-2.  執行 JavaScript 記憶體分析器。 如需詳細資訊，請參閱 [執行 JavaScript 記憶體分析器](#Run)。  
+2.  執行 JavaScript 記憶體分析器。 如需詳細資訊，請參閱 [執行 JavaScript 記憶體分析器](#run-the-JavaScript-memory-analyzer)。  
   
 3.  在您要測試的案例中執行您的應用程式。 例如，當特定頁面載入或應用程式啟動的時候，此案例可能涉及大型 DOM 變動。  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 05/17/2018
     > [!TIP]
     >  藉由重複測試案例數次，有助於確定可從結果篩選掉的初始化工作。  
   
-5.  切換至 Visual Studio (按 Alt+Tab)。  
+5.  切換至 Visual Studio (按 **Alt**+**Tab**)。  
   
 6.  選擇 [ **擷取堆積快照**] 接受基準堆積快照。  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 05/17/2018
      ![基準快照](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
     > [!TIP]
-    >  若要更精確地控制快照時機，可以在程式碼中使用 [Associate source code with memory usage data](#JSConsoleCommands) 命令。  
+    >  若要更精確地控制快照時機，可以在程式碼中使用 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) 命令。  
   
 7.  切換至您的應用程式，並重複您要測試的案例 (僅重複一次)。  
   
@@ -161,20 +162,20 @@ ms.lasthandoff: 05/17/2018
   
 13. 若要查看差異檢視中物件的根項目是否為全域物件，以避免進行記憶體回收，請開啟物件的捷徑功能表，然後選擇 [在根檢視中顯示] 。 大量的物件可能被保留在記憶體中，因為它們是由根項目為全域物件的單一物件 (或幾個物件) 所參考。  
   
-14. 如果剩餘物件的檢視中有過多物件，請嘗試進一步找出發生記憶體流失的時段，然後重新擷取第三張快照。 若要進一步找出記憶體流失的問題，請使用 [Associate source code with memory usage data](#JSConsoleCommands)、[模擬器] [Associate source code with memory usage data](#JSConsoleCommands)，以及記憶體分析器中提供的其他記憶體使用量資料。  
+14. 如果剩餘物件的檢視中有過多物件，請嘗試進一步找出發生記憶體流失的時段，然後重新擷取第三張快照。 若要進一步找出記憶體流失的問題，請使用 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)、[模擬器] [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)，以及記憶體分析器中提供的其他記憶體使用量資料。  
   
-##  <a name="LiveMemory"></a> 檢視即時記憶體使用量摘要  
- 即時記憶體使用量摘要檢視可為執行中的應用程式提供記憶體使用量圖表，並提供所有快照摘要磚的集合。 在這個檢視中，您可以執行像是擷取快照、分析摘要資訊以及巡覽至其他檢視等基本工作。 停止收集資料時，記憶體圖表會隨即消失，您只會看到 [View a snapshot summary](#SnapshotSummary) 檢視。  
+## <a name="view-live-memory-usage-summary"></a>檢視即時記憶體使用量摘要  
+ 即時記憶體使用量摘要檢視可為執行中的應用程式提供記憶體使用量圖表，並提供所有快照摘要磚的集合。 在這個檢視中，您可以執行像是擷取快照、分析摘要資訊以及巡覽至其他檢視等基本工作。 停止收集資料時，記憶體圖表會隨即消失，您只會看到 [View a snapshot summary](#view-a-snapshot-summary) 檢視。  
   
  記憶體圖表可讓您即時檢視應用程式的處理序記憶體，包括私用位元組、原生記憶體和 JavaScript 堆積。 記憶體圖表可讓您以捲動方式檢視處理序記憶體。 看起來如下：  
   
  ![JavaScript 記憶體分析器記憶體圖表](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
   
- 如果您已將使用者標記加入應用程式程式碼 (請參閱 [Associate source code with memory usage data](#JSConsoleCommands))，記憶體使用量圖表中會出現倒三角形，表示到達該程式碼區段的時間。  
+ 如果您已將使用者標記加入應用程式程式碼 (請參閱 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data))，記憶體使用量圖表中會出現倒三角形，表示到達該程式碼區段的時間。  
   
  記憶體圖表中顯示的某些記憶體是由 JavaScript 執行階段所配置。 您無法在應用程式中控制此記憶體使用量。 圖表中顯示的記憶體使用量會在您初次擷取快照時增加，之後每當您擷取一次快照，記憶體使用量會以最小幅度再增加一些。  
   
-##  <a name="SnapshotSummary"></a> View a snapshot summary  
+## <a name="view-a-snapshot-summary"></a>View a snapshot summary  
  若要擷取應用程式目前記憶體使用量狀態的快照，請選擇記憶體圖表中的 [ **擷取堆積快照** ]。 快照摘要磚會顯示在即時記憶體使用量摘要 (於應用程式執行期間顯示) 和快照摘要 (於應用程式停止時顯示) 中，可提供 JavaScript 堆積相關資訊以及詳細資料連結。 如果您擷取兩個以上的快照，則在任何相鄰的兩個快照中，後者會額外提供相較於前者的差異資料。  
   
 > [!NOTE]
@@ -200,7 +201,7 @@ ms.lasthandoff: 05/17/2018
   
 -   在擷取快照當時的螢幕擷取畫面。  
   
-##  <a name="SnapshotDetails"></a> 檢視快照詳細資料  
+## <a name="view-snapshot-details"></a>檢視快照詳細資料  
  您可以在快照詳細資料檢視中，查看每個快照的記憶體使用量詳細資訊。  
   
  請從快照摘要檢視中選擇連結以查看快照詳細資料。 例如，堆積大小連結會開啟快照詳細資料，且其中預設會開啟類型檢視。  
@@ -235,7 +236,7 @@ ms.lasthandoff: 05/17/2018
   
 -   **計數**： 物件執行個體數目。 這個值只會出現在 [型別] 檢視中。  
   
-##  <a name="SnapshotDiff"></a> 檢視快照差異  
+## <a name="view-a-snapshot-diff"></a>檢視快照差異  
  在 JavaScript 記憶體分析器中，您可以透過快照差異檢視來比較相鄰兩個快照。  
   
  在快照摘要檢視中，在擷取兩個以上的快照之後，您可以選擇差異堆積大小或差異物件計數連結來檢視差異快照詳細資料。  
@@ -246,7 +247,7 @@ ms.lasthandoff: 05/17/2018
   
  ![顯示類型的快照差異檢視](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")  
   
- 在快照差異視窗中，[主導者]、[類型] 和 [根] 檢視與 [檢視快照詳細資料](#SnapshotDetails) 視窗中的相同。 快照差異與快照詳細資料都會顯示相同資料，但是前者還包含下列額外的值：  
+ 在快照差異視窗中，[主導者]、[類型] 和 [根] 檢視與 [檢視快照詳細資料](#view-snapshot-details) 視窗中的相同。 快照差異與快照詳細資料都會顯示相同資料，但是前者還包含下列額外的值：  
   
 -   **大小差異**：目前快照和上一個快照中的物件大小差異，其中不包括任何參考之物件的大小。  
   
@@ -257,7 +258,7 @@ ms.lasthandoff: 05/17/2018
 -   **快照 #\<number> 中剩餘的物件**。 此篩選條件會顯示加入至堆積和從堆積移除的物件，與基準快照和上一個快照比較的差異。 例如，如果快照摘要顯示物件計數為 +205 / -195，則此篩選條件將顯示十個已加入而未移除的物件。  
   
     > [!TIP]
-    >  若要顯示此篩選條件中最有用的資訊，請進行以下所述步驟： [Isolate a memory leak](#Isolate).  
+    >  若要顯示此篩選條件中最有用的資訊，請進行以下所述步驟： [Isolate a memory leak](#isolate-a-memory-leak).  
   
 -   **在快照 #\<number> 與 #\<number> 之間加入的物件**。 此篩選條件會顯示從上一個快照加入至堆積的所有物件。  
   
@@ -266,24 +267,24 @@ ms.lasthandoff: 05/17/2018
  若要顯示不符合目前 [範圍] 篩選條件的物件參考，請在窗格右上角設定清單 ![記憶體分析器中的設定下拉式清單](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中選取 [顯示不相符的參考]。 如果您啟用此設定，則不相符的參考會以灰色文字顯示。  
   
 > [!TIP]
->  建議您進行 [Isolate a memory leak](#Isolate) 中的步驟，然後使用剩餘的物件 [範圍]  篩選條件，協助您找出流失記憶體的物件。  
+>  建議您進行 [Isolate a memory leak](#isolate-a-memory-leak) 中的步驟，然後使用剩餘的物件 [範圍]  篩選條件，協助您找出流失記憶體的物件。  
   
-##  <a name="FoldObjects"></a> 依主導者檢視物件  
+## <a name="view-objects-by-dominator"></a>依主導者檢視物件  
  在 [類型] 和 [主導者] 檢視中，可以選擇是否要檢視摺疊在其主導者中的物件 (此為 [主導者] 索引標籤中的預設檢視)。 選取此檢視時，只有主導者會顯示在物件的最上層檢視中 (在最上層檢視中，會隱藏非全域物件的子物件)。對於某些應用程式而言，如此可減少不必要的資料，以釐清是哪些物件造成記憶體流失。  
   
  若要依主導者切換物件的檢視，請選擇 [依主導者摺疊在物件中]  按鈕。 ![將物件摺疊到其主導者](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
- 如需主導者的詳細資訊，請參閱 [檢視快照詳細資料](#SnapshotDetails).  
+ 如需主導者的詳細資訊，請參閱 [檢視快照詳細資料](#view-snapshot-details).  
   
-##  <a name="Filter"></a> 根據識別項來篩選資料  
+## <a name="filter-data-by-identifier"></a>根據識別項來篩選資料  
  在 [主導者] 和 [類型] 檢視中，您可以搜尋特定識別項來篩選資料。 若要搜尋識別項，請在右上角的 [ **識別項篩選** ] 文字方塊中輸入識別項名稱。 當您開始輸入時，不包含所輸入字元的識別項會被篩選掉。  
   
  每個檢視都有自己的篩選條件，所以當您切換至其他檢視時，篩選條件並不會保留下來。  
   
-##  <a name="ShowInRootsView"></a> 在物件樹狀結構中尋找物件  
+## <a name="find-an-object-in-the-object-tree"></a>在物件樹狀結構中尋找物件  
  在類型和主導者檢視中，您可以查看特定物件與 `Global` 物件的關聯性。 將不會對根項目為 `Global` 物件的物件進行記憶體回收。 您可以在 [根] 檢視中輕鬆找到已知物件，而不必搜尋整個 `Global` 物件樹狀結構。 若要這麼做，請在 [主導者] 或 [類型] 檢視中開啟物件的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
   
-##  <a name="References"></a> 檢視共用物件參考  
+## <a name="view-shared-object-references"></a>檢視共用物件參考  
  類型和主導者檢視中的下方窗格包含顯示共用參考的物件參考清單。 當您在上方窗格中選擇物件，[物件] 參考清單隨即顯示指向該物件的所有物件。  
   
 > [!NOTE]
@@ -295,24 +296,24 @@ ms.lasthandoff: 05/17/2018
   
  ![顯示 ID 的物件參考](../profiling/media/js_mem_shared_refs.png "JS_Mem_Shared_Refs")  
   
-##  <a name="BuiltInValues"></a> 顯示內建物件  
+## <a name="show-built-in-objects"></a>顯示內建物件  
  根據預設，[主導者] 和 [類型] 檢視只會顯示應用程式中建立的物件。 這有助於篩選掉不需要的資訊並隔離應用程式相關的問題。 不過，當您要檢視 JavaScript 執行階段為應用程式產生的所有物件時，這就相當實用。  
   
  若要顯示這些物件，請在窗格右上角的設定清單 ![記憶體分析器中的設定下拉式清單](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中，選擇 [顯示內建]。  
   
-##  <a name="Save"></a> 儲存診斷工作階段檔案  
- 診斷快照摘要及其關聯的詳細資料檢視會儲存為 .diagsession 檔案。 [**方案總管** ] 會在 [診斷工作階段] 資料夾中顯示之前的診斷工作階段。 在 [ **方案總管**] 中，您可以開啟先前的工作階段，或者刪除或重新命名這些檔案。  
+## <a name="save-diagnostic-session-files"></a>儲存診斷工作階段檔案  
+ 診斷快照摘要及其關聯的詳細資料檢視會儲存為 .*diagsession* 檔案。 [**方案總管** ] 會在 [診斷工作階段] 資料夾中顯示之前的診斷工作階段。 在 [ **方案總管**] 中，您可以開啟先前的工作階段，或者刪除或重新命名這些檔案。  
   
-##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
+## <a name="associate-source-code-with-memory-usage-data"></a>Associate source code with memory usage data  
  若要協助隔離發生記憶體問題的程式碼區段，請使用下列方法：  
   
--   在詳細資料和差異檢視中尋找 DOM 項目的類別名稱和 ID。  
+- 在詳細資料和差異檢視中尋找 DOM 項目的類別名稱和 ID。  
   
--   在詳細資料和差異檢視中，尋找可能與原始程式碼有關聯的字串值。  
+- 在詳細資料和差異檢視中，尋找可能與原始程式碼有關聯的字串值。  
   
--   使用 [在物件樹狀結構中尋找物件](#ShowInRootsView) 命令，可向上查看物件樹狀結構。 這有助於識別相關聯的原始程式碼。  
+- 使用 [在物件樹狀結構中尋找物件](#find-an-object-in-the-object-tree) 命令，可向上查看物件樹狀結構。 這有助於識別相關聯的原始程式碼。  
   
--   將記憶體分析器命令加入至原始程式碼。  
+- 將記憶體分析器命令加入至原始程式碼。  
   
  您可以在原始程式碼中使用下列命令：  
   
@@ -344,11 +345,11 @@ if (performance && performance.mark) {
   
  ![使用分析標記](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> 識別記憶體問題的秘訣  
+## <a name="tips-to-identify-memory-issues"></a>識別記憶體問題的祕訣  
   
--   請依照[找出記憶體流失](#Isolate)中所述的工作流程以及使用差異檢視中 [快照 #\<number> 剩餘的物件] 篩選條件，找出可能出現記憶體流失之處。  
+-   請依照[找出記憶體流失](#isolate-a-memory-leak)中所述的工作流程以及使用差異檢視中 [快照 #\<number> 剩餘的物件] 篩選條件，找出可能出現記憶體流失之處。  
   
--   當重複記憶體使用量情節時，請使用 [在物件樹狀結構中尋找物件](#ShowInRootsView) 可查看記憶體階層中參考物件的位置。 根檢視會顯示物件的根項目如何為全域物件，而這可避免對其進行記憶體回收。  
+-   當重複記憶體使用量情節時，請使用 [在物件樹狀結構中尋找物件](#find-an-object-in-the-object-tree) 可查看記憶體階層中參考物件的位置。 根檢視會顯示物件的根項目如何為全域物件，而這可避免對其進行記憶體回收。  
   
 -   如果難以識別造成記憶體問題的原因，請使用各種檢視 (例如主導者和類型) 尋找其共同特徵，特別是幫助識別一個 (或幾個) 物件，且這些物件可能包含顯示在檢視中許多其他物件的參考。  
   
@@ -366,7 +367,7 @@ if (performance && performance.mark) {
   
 -   考慮暫時修改程式碼來隔離問題。 例如，您可能要：  
   
-    -   使用記憶體分析器的 `console.takeSnapshot` 和 `performance.mark`命令 (請參閱 [Associate source code with memory usage data](#JSConsoleCommands))。  
+    -   使用記憶體分析器的 `console.takeSnapshot` 和 `performance.mark`命令 (請參閱 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data))。  
   
          您可以使用上述命令，協助隔離無法藉由擷取堆積快照來隔離的問題。  
   

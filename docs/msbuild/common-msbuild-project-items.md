@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574255"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945516"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
-在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 Microsoft.Build.CommonTypes.xsd 檔案中定義。  
+在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。  
   
 ## <a name="common-items"></a>共同項目  
  下列是所有共同專案項目的清單。  
@@ -141,5 +141,5 @@ ms.locfileid: "31574255"
 ### <a name="import"></a>匯入  
  代表應該由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器匯入命名空間的組件。  
   
-## <a name="see-also"></a>請參閱  
- [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>另請參閱  
+ [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

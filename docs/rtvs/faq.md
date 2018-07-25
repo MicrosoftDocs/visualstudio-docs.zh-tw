@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235240"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 答： 當然可以。 說到這個，以下是使用 R 的人員最愛使用的幾個擴充功能。
 
 - [適用於 Vim 金鑰繫結的 VsVim (英文)](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [GitHub (英文)](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [具有即時預覽的 Markdown 編輯器 (英文)](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 請造訪 [Visual Studio Marketplace (英文)](https://marketplace.visualstudio.com/) 以尋找更多擴充功能。
@@ -78,9 +79,9 @@ ms.lasthandoff: 04/19/2018
 
 答： 是，您可以使用任何與 Visual Studio 整合的原始檔控制系統。
 
-**問：針對 RTVS 專案所建議的 `.gitignore` 設定為何？**
+**問：針對 RTVS 專案所建議的 *.gitignore* 設定為何？**
 
-答： GitHub 有維護建議之 `.gitignore` 檔案的主要存放庫。 您可以在此查看它：[R .gitignore (英文)](https://github.com/github/gitignore/blob/master/R.gitignore)
+答： GitHub 會維護建議之 *.gitignore* 檔案的主要存放庫。 您可以在此查看它：[R .gitignore (英文)](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>遠端服務
 
@@ -88,9 +89,9 @@ ms.lasthandoff: 04/19/2018
 
 答： Visual Studio 的遠端 R 服務可讓您設定 Windows 或 Linux 電腦，並從 RTVS 連線到該服務。 請參閱[設定遠端工作區](setting-up-remote-r-workspaces.md)。
 
-問： **RTVS 可以連線到 Microsoft R Server 嗎？**
+問： **RTVS 可以連線到 Microsoft Machine Learning Server 嗎？**
 
-答： 不可以，因為 Microsoft R Server 是不同的技術，不會提供 RTVS 所需的相同連線機制。
+答： 不可以，因為 Microsoft ML Server 是不同的技術，不會提供 RTVS 所需的相同連線機制。
 
 問： **RTVS 可以連線到使用 Azure 上的資料科學 VM 映像建立的 VM 嗎？**
 

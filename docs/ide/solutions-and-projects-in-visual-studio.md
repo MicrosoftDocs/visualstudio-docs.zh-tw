@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747622"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089655"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -53,7 +53,12 @@ ms.locfileid: "34747622"
 
 「方案」內所含的專案。 方案包含一或多個相關專案，以及組建資訊、Visual Studio 視窗設定與任何未與特定專案建立關聯的其他檔案。 方案是由具有自己獨特格式的文字檔 (副檔名為 *.sln*) 所描述；它通常不適合手動編輯。
 
-方案具有相關聯的 *.suo* 檔案，其中儲存每個專案使用者的設定、喜好設定與組態資訊。
+Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設定。
+
+|副檔名|名稱|描述|
+|---------------|----------|-----------------|
+|.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
+|.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
 
 ## <a name="create-new-projects"></a>建立新專案
 
