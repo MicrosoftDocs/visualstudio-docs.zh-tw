@@ -1,5 +1,5 @@
 ---
-title: 內容功能表 |Microsoft 文件
+title: 操作功能表 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa957e949127663eca7d4e619919edcc07c7a29b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afd67578bee63408b50e402fb0bd8b29be3fc6eb
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108556"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232529"
 ---
 # <a name="context-menus"></a>操作功能表
-操作功能表時使用者以滑鼠右鍵按一下工作區的使用中的區域中，會顯示，並清除且放開滑鼠按鈕。  
+操作功能表會顯示當使用者以滑鼠右鍵按一下的作用中區域的工作區中，並清除 當使用者放開滑鼠右按鈕。  
   
 ## <a name="editor-context-menus"></a>編輯器操作功能表  
- 藉由攔截`ECMD_SHOWCONTEXTMENU`，語言服務可以控制會顯示在編輯器的操作功能表。 若要顯示您自己的內容功能表，此命令時處理傳遞到您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>。 如果您不處理這個命令，IDE 會顯示標準的操作功能表提供的編輯器。 您也可以控制每個標記為基礎的內容功能表的內容。 如需詳細資訊，請參閱[具有舊版應用程式開發介面使用的文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)和[攔截舊版語言服務命令](../extensibility/internals/intercepting-legacy-language-service-commands.md)。  
+ 藉由攔截`ECMD_SHOWCONTEXTMENU`，語言服務可以控制將會顯示在編輯器中的操作功能表。 若要顯示您自己的操作功能表，請處理此命令時傳遞至您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>。 如果您並未處理這個命令，IDE 會顯示標準的操作功能表提供的編輯器。 您也可以控制每個標記為基礎的內容功能表的內容。 如需詳細資訊，請參閱[在舊版的 API 中使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)並[攔截舊版語言服務命令](../extensibility/internals/intercepting-legacy-language-service-commands.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)   

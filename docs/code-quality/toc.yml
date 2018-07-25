@@ -1,6 +1,7 @@
 - name: 程式碼分析文件
   href: index.md
 - name: 總覽
+  expanded: true
   items:
     - name: 受控碼的程式碼分析
       href: code-analysis-for-managed-code-overview.md
@@ -80,6 +81,8 @@
     - name: 規則集
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 分析器套件的規則集
+          href: analyzer-rule-sets.md
         - name: 受控碼的規則集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
@@ -125,8 +128,8 @@
           href: extended-design-guidelines-rules-rule-set-for-managed-code.md
         - name: 適用於 Managed 程式碼的全球化規則規則集
           href: globalization-rules-rule-set-for-managed-code.md
-        - name: 適用於 Managed 程式碼的 Managed 最小規則規則集
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+        - name: 適用於受控碼的受控最小規則規則集
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: 適用於 Managed 程式碼的 Managed 建議規則規則集
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: 混合最小規則規則集

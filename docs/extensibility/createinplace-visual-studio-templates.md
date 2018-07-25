@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace （Visual Studio 範本） |Microsoft 文件
+title: CreateInPlace （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099209"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231387"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
-指定是否要建立專案及執行參數取代在指定的位置，或執行參數取代在暫存位置，然後儲存專案到指定的位置。  
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace （Visual Studio 範本）
+指定是否要建立專案和執行參數取代在指定的位置，或執行參數取代的暫存位置中，然後將專案儲存至指定的位置。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -36,25 +36,25 @@ ms.locfileid: "31099209"
 <CreateInPlace> true/false </CreateInPlace>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
+ 此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新的專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
   
 ## <a name="remarks"></a>備註  
  `CreateInPlace` 是選擇性項目。 預設值是 `true`。  

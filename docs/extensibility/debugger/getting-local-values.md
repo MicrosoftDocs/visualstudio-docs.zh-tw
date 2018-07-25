@@ -1,5 +1,5 @@
 ---
-title: 取得本機值 |Microsoft 文件
+title: 取得區域變數值 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,31 +15,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b38b346b8429ba04fb3730ea4c5fef0b2b6da1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d182d98b4813cfebedf113103ca515293b8d79b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107968"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231868"
 ---
-# <a name="getting-local-values"></a>取得本機值
+# <a name="get-local-values"></a>取得本機值
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 若要取得的值是在本機，Visual Studio 會呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)該本機。 在此實作中，類別`CFieldProperty`實作每個本機 IDebugProperty2 介面。  
+ 若要取得區域變數的值，Visual Studio 會呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)該本機。 在此實作中，類別`CFieldProperty`實作每個本機 IDebugProperty2 介面。  
   
- 這項實作`IDebugProperty2::GetPropertyInfo`會執行下列工作：  
+ 這個實作`IDebugProperty2::GetPropertyInfo`會執行下列工作：  
   
-1.  取得區域的名稱、 屬性和屬性從[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)類別已啟動並初始化時，填入結構。  
+1.  取得區域的名稱、 屬性和屬性從[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)填入時已具現化這個類別，並將其初始化的結構。  
   
-2.  取得區域的類型從[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件。  
+2.  取得從本機的型別[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件。  
   
-3.  取得區域的值從`IDebugField`物件。 這個欄位繫結至本機使用的記憶體位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件和值取自產生[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
+3.  取得本機值`IDebugField`物件。 此欄位繫結至本機使用的記憶體位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件和值取自產生[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
   
-4.  傳回所有要求的內容中[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。  
+4.  傳回所有要求中的屬性[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
- 這個範例會示範實作`IDebugProperty2::GetPropertyInfo`方法的 managed 程式碼中的本機。 它也會顯示 helper 函式， `Field.GetType`，也就是用來取得欄位的類型。 `Field.GetValue` 如下所示[評估 [區域變數]](../../extensibility/debugger/evaluating-locals.md)。 Helper 函式`Field.MapModifiersToAttributes`（未顯示） 只是將欄位的轉換[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)旗標，用於[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
+ 此範例示範如何實作`IDebugProperty2::GetPropertyInfo`方法的 managed 程式碼中的本機。 它也會顯示協助程式函式， `Field.GetType`，也就是用來取得欄位的類型。 `Field.GetValue` 所示[評估區域變數](../../extensibility/debugger/evaluating-locals.md)。 Helper 函式`Field.MapModifiersToAttributes`（未顯示） 只需將轉換的欄位[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)旗標，用於[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
   
 ```csharp  
 namespace EEMC  
@@ -179,7 +179,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Unmanaged 程式碼  
- 這個範例會示範實作`IDebugProperty2::GetPropertyInfo`方法的本機 unmanaged 程式碼中。 它也會顯示兩個 helper 函式，`FieldGetType`和`FieldGetValue`，用來取得欄位的類型和值，分別。 請注意， `VARIANT`s 使用於欄位的值並使用 type 當做`VARIANT`可以處理各種不同的實值類型。 在此實作中，`FieldGetValue`傳回[IDebugField](../../extensibility/debugger/reference/idebugfield.md)晚的物件轉換成的呼叫中的值`FieldGetPrimitiveValue`(所示[評估 [區域變數]](../../extensibility/debugger/evaluating-locals.md))。  
+ 此範例示範如何實作`IDebugProperty2::GetPropertyInfo`方法的 unmanaged 程式碼中的本機。 它也會顯示兩個協助程式函式，`FieldGetType`和`FieldGetValue`用來取得欄位的型別和值，分別。 `VARIANT`s 用於該欄位的值，做為輸入`VARIANT`可以處理各種不同的實值型別。 在此實作中，`FieldGetValue`會傳回[IDebugField](../../extensibility/debugger/reference/idebugfield.md)晚的物件轉換成呼叫中的值`FieldGetPrimitiveValue`(所示[評估區域變數](../../extensibility/debugger/evaluating-locals.md))。  
   
 ```cpp  
 STDMETHODIMP CFieldProperty::GetPropertyInfo(   
@@ -442,6 +442,6 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [範例實作的區域變數](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [取得本機屬性](../../extensibility/debugger/getting-local-properties.md)   
+ [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [取得本機內容](../../extensibility/debugger/getting-local-properties.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)
