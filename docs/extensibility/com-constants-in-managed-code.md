@@ -1,5 +1,5 @@
 ---
-title: 在 Managed 程式碼的 COM 常數 |Microsoft 文件
+title: 在 Managed 程式碼的 COM 常數 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101884"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231531"
 ---
-# <a name="com-constants-in-managed-code"></a>在 Managed 程式碼的 COM 常數
-Managed Package Framework (MPF) 提供一些標準的 COM 常數至 managed 程式碼。 以下列出這些常數供您參考。  
+# <a name="com-constants-in-managed-code"></a>在 managed 程式碼的 COM 常數
+Managed Package Framework (MPF) 提供一些標準的 COM 常數給 managed 程式碼。 這些常數如下所列供您參考。  
   
 ## <a name="boolean-hresult-values"></a>布林值的 HRESULT 值  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  

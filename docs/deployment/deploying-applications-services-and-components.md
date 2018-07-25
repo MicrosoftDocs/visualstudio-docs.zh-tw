@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080259"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231222"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 初步了解在 Visual Studio 中的部署
 
@@ -57,9 +57,9 @@ ms.locfileid: "39080259"
 
     針對 Python 應用程式，另請參閱[Python-發佈至 Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
 
-    如需有關從 Azure App Service 的發行設定檔匯入至 Visual Studio，請參閱[匯入發佈設定，並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
+    如需快速簡介，請參閱 <<c0> [ 發佈至 Azure](quickstart-deploy-to-azure.md)並[發佈至 Linux](quickstart-deploy-to-linux.md)。 此外，請參閱[將 ASP.NET Core 應用程式發佈至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 使用 Git 進行部署，請參閱 <<c0> [ 持續部署至 Azure Git 的 ASP.NET Core 的](/aspnet/core/publishing/azure-continuous-deployment)。
 
-    如需快速簡介，請參閱 <<c0> [ 發佈至 Azure](quickstart-deploy-to-azure.md)。 此外，請參閱[將 ASP.NET Core 應用程式發佈至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 使用 Git 進行部署，請參閱 <<c0> [ 持續部署至 Azure Git 的 ASP.NET Core 的](/aspnet/core/publishing/azure-continuous-deployment)。
+    如需有關從 Azure App Service 的發行設定檔匯入至 Visual Studio，請參閱[匯入發佈設定，並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
 
     > [!NOTE]
     > 如果您還沒有 Azure 帳戶，您可以[歡迎現在註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。

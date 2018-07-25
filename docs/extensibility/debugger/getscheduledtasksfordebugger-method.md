@@ -1,5 +1,5 @@
 ---
-title: GetScheduledTasksForDebugger 方法 |Microsoft 文件
+title: GetScheduledTasksForDebugger 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20cde88083acd38df780468927faec5fbd142b67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 648d48f34681865a34654ed9f82bd790d77b2395
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100308"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231160"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 擷取所有排定工作的陣列。  
   
  **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll)  
+ **組件：** mscorlib (在*mscorlib.dll*)  
   
  因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```csharp  
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 陣列的所有排程工作。 每項工作正在執行，或已完成執行。  
+ 所有排程工作的陣列。 每項工作正在執行，或已完成執行。  
   
 ## <a name="remarks"></a>備註  
- 這個方法不是安全執行緒，並不應與其他執行個體同時使用<xref:System.Threading.Tasks.TaskScheduler>它時，應該呼叫從偵錯工具只偵錯工具已經暫停所有其他執行緒。  
+ 這個方法不是安全執行緒，以及您不應該使用它與其他執行個體同時<xref:System.Threading.Tasks.TaskScheduler>。 只在偵錯工具已暫止的其他所有執行緒時，請從 偵錯工具呼叫此方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757158"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232169"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>在 Visual Studio 中部署的概觀
 
@@ -42,9 +42,9 @@ ms.locfileid: "36757158"
 
 ## <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview) 可協助開發人員快速建立各種可調整的 Web 應用程式和服務，而不需要維護基礎結構。
+[Azure App Service](/azure/app-service/app-service-web-overview)並[Linux 上的 App Service](/azure/app-service/containers/app-service-linux-intro)協助開發人員快速建立各種可調整的 web 應用程式和服務，而不需要維護基礎結構。
 
-您決定如何計算能力的 APp Service 已藉由選擇[定價層或方案](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)包含 App service。 您可以有多個 Web 應用程式 （和其他應用程式類型） 共用相同的 App Service，而不變更定價層。 比方說，您也可以裝載在一起在相同的 App Service 上開發、 預備及生產環境 Web 應用程式。
+您決定如何計算能力的 App Service 已藉由選擇[定價層或方案](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)包含 App service。 您可以有多個 Web 應用程式 （和其他應用程式類型） 共用相同的 App Service，而不變更定價層。 比方說，您也可以裝載在一起在相同的 App Service 上開發、 預備及生產環境 Web 應用程式。
 
 App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管理這些虛擬機器。 App Service 中的每個應用程式都會指派唯一\*。 azurewebsites.net URL; 以外的所有定價層免費允許指派至站台的自訂網域名稱。
 
@@ -57,7 +57,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure App Service，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
-如需有關發佈至 App Service 的詳細資訊，請參閱[快速入門-發佈至 Azure App Service](quickstart-deploy-to-azure.md)。
+如需有關發佈至 App Service 的詳細資訊，請參閱[快速入門-發佈至 Azure App Service](quickstart-deploy-to-azure.md)並[快速入門-linux 發佈 ASP.NET Core](quickstart-deploy-to-linux.md)。
 
 ## <a name="azure-virtual-machines"></a>Azure 虛擬機器
 

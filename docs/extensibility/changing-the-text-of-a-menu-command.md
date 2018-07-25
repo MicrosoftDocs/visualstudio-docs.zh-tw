@@ -1,5 +1,5 @@
 ---
-title: 將功能表命令的文字變更 |Microsoft 文件
+title: 將功能表命令的文字變更 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,20 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e360e08cbdfee23221b9384a5574530f92e23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df943221fc2f154e8f18007bd5f7ff5454434d84
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39234839"
 ---
-# <a name="changing-the-text-of-a-menu-command"></a>變更功能表命令的文字
-下列步驟顯示如何藉由變更功能表命令的文字標籤<xref:System.ComponentModel.Design.IMenuCommandService>服務。  
+# <a name="change-the-text-of-a-menu-command"></a>變更功能表命令的文字
+下列步驟示範如何使用變更功能表命令的文字標籤<xref:System.ComponentModel.Design.IMenuCommandService>服務。  
   
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>變更功能表命令與 IMenuCommandService 標籤  
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>變更功能表命令標籤與 IMenuCommandService  
   
-1.  建立 VSIX 專案，名為`MenuText`功能表命令與名稱為**ChangeMenuText**。 如需詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1.  建立 VSIX 專案，名為`MenuText`功能表命令與名為**ChangeMenuText**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-2.  在.vstc 檔案中，加入`TextChanges`旗標設為您的功能表命令，如下列範例所示。  
+2.  在  *.vsct*檔案中，新增`TextChanges`旗標設為您的功能表命令，如下列範例所示。  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
     </Button>  
     ```  
   
-3.  在 ChangeMenuText.cs 檔案中，建立功能表命令會顯示之前呼叫的事件處理常式。  
+3.  在  *ChangeMenuText.cs*檔案中，建立事件處理常式將會在顯示的功能表命令之前呼叫。  
   
     ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
@@ -54,11 +55,11 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
   
-     您也可以藉由變更更新這個方法中的功能表命令狀態<xref:System.ComponentModel.Design.MenuCommand.Visible%2A>， <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>，和<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>屬性<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件。  
+     您也可以藉由變更來更新這個方法中的功能表命令的狀態<xref:System.ComponentModel.Design.MenuCommand.Visible%2A>， <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>，並<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>上的屬性<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件。  
   
 4.  ChangeMenuText 建構函式中的原始命令初始化和放置程式碼取代程式碼會建立<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>(而非`MenuCommand`)，表示功能表命令，新增<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件處理常式，並提供功能表功能表命令服務命令。  
   
-     以下是其外觀應該為何：  
+     它應該看起來如下：  
   
     ```csharp  
     private ChangeMenuText(Package package)  
@@ -85,6 +86,6 @@ ms.lasthandoff: 04/16/2018
   
 5.  建置此專案並開始偵錯。 Visual Studio 的實驗執行個體隨即出現。  
   
-6.  在**工具**功能表您應該會看到名為命令**叫用 ChangeMenuText**。  
+6.  在 [**工具**] 功能表您應該會看到名為的命令**叫用 ChangeMenuText**。  
   
-7.  按一下命令。 您應該會看到訊息方塊中，宣告 MenuItemCallback 已呼叫。 當您關閉訊息方塊時，您應該會看到 [工具] 功能表命令的名稱現在是**新文字**。
+7.  按一下 [命令]。 訊息方塊宣布，您應該會看到**MenuItemCallback**已呼叫。 當您關閉訊息方塊時，您應該會看到 [工具] 功能表命令的名稱，現在是**新的文字**。

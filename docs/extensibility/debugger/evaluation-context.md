@@ -1,5 +1,5 @@
 ---
-title: 評估內容 |Microsoft 文件
+title: 評估內容 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266fe85bedeea2c7e3dae7726d113d66a4b2b1e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 523ef45d52a81a475eca0e3560243e0eb8357bbd
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101127"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232451"
 ---
 # <a name="evaluation-context"></a>評估內容
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 當偵錯引擎 (DE) 呼叫時，運算式評估工具 (EE) 時，三個引數傳遞至[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)決定尋找及評估符號的內容下, 表所示。  
+ 當偵錯引擎 (DE) 呼叫運算式評估工具 (EE)，三個引數，傳遞給[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)判斷尋找及評估符號的內容下, 表所示。  
   
 ## <a name="arguments"></a>引數  
   
 |引數|描述|  
 |--------------|-----------------|  
-|`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)用來識別符號的介面，可指定符號處理常式 (SH)。|  
-|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)介面，可指定目前執行點。 這可以用來尋找包含正在執行的程式碼的方法。|  
-|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)可用來尋找的值和指定之名稱的符號類型的介面。|  
+|`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)用來識別符號的介面，可指定的符號處理常式 (SH)。|  
+|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)介面，可指定目前執行點。 這個介面會尋找包含正在執行的程式碼的方法。|  
+|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)找到的值和類型指定名稱的符號的介面。|  
   
- `IDebugParsedExpression::EvaluateSync` 傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表所產生的值和其類型的介面。  
+ `IDebugParsedExpression::EvaluateSync` 會傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面，表示產生的值和型別。  
   
 ## <a name="see-also"></a>另請參閱  
  [索引鍵運算式評估工具介面](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
- [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)   
+ [顯示區域變數](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)   

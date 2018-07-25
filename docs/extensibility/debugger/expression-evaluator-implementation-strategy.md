@@ -1,5 +1,5 @@
 ---
-title: 運算式評估工具實作策略 |Microsoft 文件
+title: 運算式評估工具的實作策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67b2496c2e30428cd4cc830526e53cf0cc61fdd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0b60a82b9451dfa43f5cd231fd38dd32b1729ed
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102430"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233044"
 ---
-# <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具實作策略
+# <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具的實作策略
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 若要快速建立的運算式評估工具 (EE) 的其中一個方法是先實作最小的程式碼顯示本機變數中的所需**區域變數**視窗。 對於要了解中的每一行**區域變數**視窗會顯示名稱、 類型和值的區域變數，並全部三個都由[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。 名稱、 類型和本機變數的值可以取自`IDebugProperty2`物件藉由呼叫其[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 如需有關如何顯示中的區域變數**區域變數**視窗中，請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)。  
+ 若要快速建立的運算式評估工具 (EE) 的其中一個方法是先實作最小的程式碼顯示本機變數中的所需**區域變數**視窗。 您最好了解中的每一行**區域變數** 視窗會顯示名稱、 類型和值的區域變數，且所有三個都由[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。 名稱、 類型和本機變數的值取自`IDebugProperty2`物件，藉由呼叫其[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 如需有關如何顯示在中的區域變數**區域變數** 視窗中，請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)。  
   
 ## <a name="discussion"></a>討論  
- 可能的實作順序開頭實作[IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)。 [剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)和[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)方法需要實作，以顯示 [區域變數]。 呼叫`IDebugExpressionEvaluator::GetMethodProperty`傳回`IDebugProperty2`物件，代表一種方法： 也就是[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 方法本身不會顯示在**區域變數**視窗。  
+ 可能的實作順序開始實作[IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)。 [剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)並[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)必須實作的方法，以顯示區域變數。 呼叫`IDebugExpressionEvaluator::GetMethodProperty`會傳回`IDebugProperty2`物件，表示一種方法： 亦即[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 方法本身不會顯示在**區域變數**視窗。  
   
- [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)接下來應該實作方法。 偵錯引擎 (DE) 呼叫此方法來取得本機變數和引數的清單傳遞`IDebugProperty2::EnumChildren``guidFilter`引數的`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren` 呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，結合在單一的列舉中的結果。 請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊。  
+ [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)接下來應該實作方法。 偵錯引擎 (DE) 呼叫此方法來取得本機變數和引數的清單，藉由傳遞`IDebugProperty2::EnumChildren``guidFilter`引數`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren` 呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)並[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，結合在單一的列舉型別結果。 請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊。  
   
 ## <a name="see-also"></a>另請參閱  
  [實作運算式評估工具](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
- [顯示區域變數](../../extensibility/debugger/displaying-locals.md)
+ [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)

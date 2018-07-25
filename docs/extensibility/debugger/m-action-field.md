@@ -1,5 +1,5 @@
 ---
-title: m_action 欄位 |Microsoft 文件
+title: m_action 欄位 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd045c19b08ec5b3ba5db71e72e6380e65093a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed825569809568269726e6ba592118f8b03c80b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109245"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232373"
 ---
 # <a name="maction-field"></a>m_action 欄位
 委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。  
   
  **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll)  
+ **組件：** mscorlib (在*mscorlib.dll*)  
   
  因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```csharp  
 .field assembly object m_action  
 ```  
   
@@ -39,4 +39,4 @@ ms.locfileid: "31109245"
  這是`action`中的參數<xref:System.Threading.Tasks.Task.%23ctor%2A>建構函式。  
   
 ## <a name="see-also"></a>另請參閱  
- [工作類別](../../extensibility/debugger/task-class-internal-members.md)
+ [Task 類別](../../extensibility/debugger/task-class-internal-members.md)

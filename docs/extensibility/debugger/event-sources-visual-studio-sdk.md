@@ -1,5 +1,5 @@
 ---
-title: 事件來源 (Visual Studio SDK) |Microsoft 文件
+title: 事件來源 (Visual Studio SDK) |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099834"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232653"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件來源 (Visual Studio SDK)
-有兩個來源的事件： 偵錯引擎 (DE) 工作階段偵錯和管理員 (SDM)。 從 DE 傳送的事件有非 NULL 引擎，而從 SDM 傳送的事件都有 NULL 引擎。  
+有兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。 從裝置傳送的事件會有非 NULL 引擎，而從 SDM 傳送事件都有 NULL 引擎。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何將傳送**IDebugProgramCreateEvent2**從 SDM 至 DE。  
+ 下列範例示範如何將傳送**IDebugProgramCreateEvent2**從以 SDM DE。  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  

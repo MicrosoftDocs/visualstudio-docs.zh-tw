@@ -1,5 +1,5 @@
 ---
-title: 實作運算式評估工具 |Microsoft 文件
+title: 實作運算式評估工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103340"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232503"
 ---
-# <a name="implementing-an-expression-evaluator"></a>實作運算式評估工具
+# <a name="implement-an-expression-evaluator"></a>實作運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 評估運算式是在偵錯引擎 (DE)、 符號提供者 (SP)、 繫結器物件，以及運算式評估工具 (EE) 本身之間的複雜相互作用。 四個元件會透過介面是由一個元件實作並取用由另一個連接。  
+ 評估運算式時錯綜複雜的偵錯引擎 (DE)、 符號提供者 (SP)、 繫結器物件與運算式評估工具 (EE) 之間。 這四個元件會透過介面會實作一個元件，並由另一個連接。  
   
- EE 採用運算式從字串的形式 DE 與剖析或評估它。 EE 實作下列介面，以供 DE:  
+ EE 會使用運算式從字串的形式在德國和剖析或加以評估。 EE 會執行下列介面，以供 DE:  
   
 -   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
 -   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE 呼叫繫結器物件，提供 DE，若要取得的符號和物件的值。 EE 取用 DE 透過下列介面：  
+ EE 呼叫繫結器提供的物件，由 DE，以取得此值的符號和物件。 EE 會取用 DE 所實作的下列介面：  
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
@@ -49,9 +49,9 @@ ms.locfileid: "31103340"
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- 實作 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供描述結果的運算式評估，例如本機變數、 基本型別或物件，Visual studio，然後顯示中的相關資訊的機制**區域變數**， **監看式**，或**即時運算**視窗。  
+ 執行 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供機制，來描述運算式評估，例如本機變數、 基本類型或 Visual Studio 中，則會顯示在適當的資訊物件的結果**區域變數**，**監看式**，或**即時運算**視窗。  
   
- 預存程序是指定給 EE DE 時，它會要求的資訊。 預存程序會實作說明位址和欄位，例如下列介面和其衍生的介面：  
+ 預存程序會提供給 EE DE 時它會要求資訊。 預存程序執行介面描述位址和欄位，例如下列介面和其衍生項目：  
   
 -   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
@@ -63,7 +63,7 @@ ms.locfileid: "31103340"
   
 ## <a name="in-this-section"></a>本節內容  
  [運算式評估工具的實作策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
- 定義運算式評估工具 (EE) 實作策略的三個步驟程序。  
+ 定義運算式評估工具 (EE) 的實作策略的三步驟程序。  
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
