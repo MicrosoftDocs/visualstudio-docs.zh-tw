@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865093"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178256"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -38,7 +38,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 延伸模組套件會將其名稱、版本、相依性以及其他資訊的相關中繼資料儲存在 C# 屬性。 增益集製作程式會建立兩個檔案 `AddinInfo.cs` 和 `AssemblyInfo.cs`，來儲存和組織這項資訊。 延伸模組套件必須在其「增益集屬性」中指定唯一的識別碼和命名空間：
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -70,7 +70,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 命令延伸模組是藉由新增項目至 `/MonoDevelop/Ide/Commands` 擴充點來定義。 我們使用下列程式碼，在 `Manifest.addin.xml` 中定義了延伸模組：
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -90,7 +90,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 下列程式碼片段會示範插入 `/MonoDevelop/Ide/MainMenu/Edit` 擴充點的 CommandItem 延伸模組：
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -102,7 +102,7 @@ CommandItem 將其 id 屬性中指定的命令放入功能表。 此 CommandItem
 
 `InsertDateHandler` 是 `CommandHandler` 類別的延伸模組。 它覆寫兩個方法：`Update` 和 `Run`。 每當命令顯示在功能表中或透過按鍵繫結執行時，便會查詢 `Update`。 藉由變更資訊物件，您可以停用命令或讓它成為不可見、填入陣列命令等等。 這個 `Update` 方法會停用命令，如果它找不到作用中的「文件」與「文字編輯器」來插入文字：
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 您只需要在有啟用或隱藏命令的特殊邏輯時才覆寫 `Update` 方法。 每當使用者執行命令，`Run` 方法便會執行，在此案例中則是當使用者從 [編輯] 功能表選取命令時發生。 這個方法會在文字編輯器的插入號位置插入日期和時間：
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -122,7 +122,7 @@ protected override void Run ()
 
 在 `DateInserterCommands` 內將命令類型宣告為列舉成員：
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

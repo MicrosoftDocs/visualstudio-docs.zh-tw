@@ -1,10 +1,11 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 92ef535c9f0f1110308cb287132a6d4180066238
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38945582"
 ---
 ## <a name="prerequisites"></a>必要條件
 

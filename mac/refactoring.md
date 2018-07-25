@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ec0ae7aa61275b9b5362db178b9bdb8e3ccedfbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 20259d2565fd1dc32b38d5b2c8bba9c6fbf06db1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884192"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176254"
 ---
 # <a name="refactoring"></a>重構
 
@@ -67,7 +67,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 1. 加入下列程式碼：
 
-```
+```csharp
     class MainClass
     {
 

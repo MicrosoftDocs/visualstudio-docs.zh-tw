@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fe0b8c2f8e6018924e3e85133158ae364a95bf3d
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924748"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131904"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -110,3 +110,4 @@ ms.locfileid: "37924748"
 
 - 逐步進行 [Node.js 和 Express 的教學課程](../nodejs/tutorial-nodejs.md)
 - 逐步進行 [Node.js 和 React 的教學課程](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)

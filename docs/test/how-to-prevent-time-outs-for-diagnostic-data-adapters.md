@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844234"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178315"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>如何：防止診斷資料配接器逾時
 
@@ -23,17 +23,17 @@ ms.locfileid: "34844234"
 
 -   測試控制器服務並未在測試控制器電腦上執行。 您可能必須重新啟動服務。 如需如何判斷測試控制器和管理測試控制器的詳細資訊，請參閱[使用 Visual Studio 管理測試控制器和測試代理程式](../test/manage-test-controllers-and-test-agents.md)。
 
--   如果您在遠端電腦上收集資料，防火牆可能會封鎖 Microsoft Test Manager。 執行 Microsoft Test Manager 的電腦必須接受來自測試控制器的連入連線。 當 Microsoft Test Manager 沒有收到來自控制器的訊息 (因為防火牆封鎖了訊息) 時，就會發生逾時。 您必須在執行 Microsoft Test Manager 的電腦上檢查防火牆設定。 如需防火牆設定的詳細資訊，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=184980)。
+-   如果您在遠端電腦上收集資料，防火牆可能會封鎖 Microsoft Test Manager。 執行 Microsoft Test Manager 的電腦必須接受來自測試控制器的連入連線。 當 Microsoft Test Manager 沒有收到來自控制器的訊息 (因為防火牆封鎖了訊息) 時，就會發生逾時。 您必須在執行 Microsoft Test Manager 的電腦上檢查防火牆設定。
 
 -   測試控制器無法解析執行 Microsoft Test Manager 之電腦的名稱。 如果 DNS 提供了錯誤的位址給這部電腦，就可能會發生這種情況。 您可能必須連絡網路系統管理員來解決此問題。
 
- 當您執行必須收集大量資料的長時間測試時，可能會發現這項資料的收集作業逾時。您可以使用下列程序來解決此問題。
+當您執行必須收集大量資料的長時間測試時，可能會發現這項資料的收集作業逾時。您可以使用下列程序來解決此問題。
 
- 您可以更新 Microsoft Test Manager 的組態檔或發生逾時之測試代理程式的組態檔來增加逾時值。
+您可以更新 Microsoft Test Manager 的組態檔或發生逾時之測試代理程式的組態檔來增加逾時值。
 
- Microsoft Test Manager 的組態檔稱為 **mtm.exe.config**。所在目錄為 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+Microsoft Test Manager 的組態檔稱為 **mtm.exe.config**。所在目錄為 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
- 若要更新測試代理程式，則需更新測試代理程式電腦上的下列組態檔。 這些檔案都位於測試代理程式電腦的相同目錄 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中。
+若要更新測試代理程式，則需更新測試代理程式電腦上的下列組態檔。 這些檔案都位於測試代理程式電腦的相同目錄 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中。
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ ms.locfileid: "34844234"
 
 -   QTDCAgent32.exe.config
 
- 如果您執行手動測試並且從環境中收集資料，當系統建立 Bug 或完成測試案例時，診斷資料配接器已經收集的任何資料都會傳輸至執行手動測試的電腦。 如果您已經收集大量資料或者網路連線速度很慢，所花費的時間可能會超過預設值 60 秒。 例如，如果您已經將 IntelliTrace 配接器設定為收集許多處理序的 IntelliTrace 事件和呼叫資訊，這項資料的傳輸可能會超過預設逾時。若要增加這個值，您可以使用下列程序來更新 **mtm.exe.config**。
+如果您執行手動測試並且從環境中收集資料，當系統建立 Bug 或完成測試案例時，診斷資料配接器已經收集的任何資料都會傳輸至執行手動測試的電腦。 如果您已經收集大量資料或者網路連線速度很慢，所花費的時間可能會超過預設值 60 秒。 例如，如果您已經將 IntelliTrace 配接器設定為收集許多處理序的 IntelliTrace 事件和呼叫資訊，這項資料的傳輸可能會超過預設逾時。若要增加這個值，您可以使用下列程序來更新 **mtm.exe.config**。
 
- 如果測試執行器活動發生逾時或測試代理程式發生逾時，則會顯示錯誤訊息。在測試代理程式的錯誤訊息中，包含發生逾時之測試代理程式電腦的相關資訊。請根據您收到的錯誤訊息，利用下列程序更新組態檔。
+如果測試執行器活動發生逾時或測試代理程式發生逾時，則會顯示錯誤訊息。在測試代理程式的錯誤訊息中，包含發生逾時之測試代理程式電腦的相關資訊。請根據您收到的錯誤訊息，利用下列程序更新組態檔。
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>若要為您的診斷資料配接器增加逾時
 

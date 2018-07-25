@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749280"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179056"
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行您的程式
 當您建立新的方案時，實際上就是建置要執行的程式。 它現在還沒有其他功能，只是顯示空白視窗，標題列中顯示 **Form1**。 但它真的可以執行，因為您即將進一步了解其做法。
@@ -55,7 +55,7 @@ ms.locfileid: "34749280"
     -   選擇 [Form1] 視窗右上角的 **X** 按鈕。
 
     > [!NOTE]
-    >  當您在 IDE 內部執行程式時，就稱為「偵錯」，因為通常這樣做可找出並修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要進一步了解偵錯，請參閱[偵錯工具基本概念](../debugger/debugger-basics.md)。
+    >  當您在 IDE 內部執行程式時，就稱為「偵錯」，因為通常這樣做可找出並修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要進一步了解偵錯，請參閱[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

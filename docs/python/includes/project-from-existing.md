@@ -1,10 +1,11 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809414"
 ---
 1. 啟動 Visual Studio，然後選取 [檔案] > [新增] > [專案]。
 

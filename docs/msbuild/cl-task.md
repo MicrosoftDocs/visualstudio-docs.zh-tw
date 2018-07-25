@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668e2a5f63011730cb731a4966df0bccd4721e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945997"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152613"
 ---
 # <a name="cl-task"></a>CL 工作
 包裝 Visual C++ 編譯器工具 *cl.exe*。 編譯器會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 檔案或程式碼模組 (*.netmodule*) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
@@ -799,8 +799,6 @@ ms.locfileid: "37945997"
      如果是 `true`，即會追蹤檔案存取模式。  
   
      如需詳細資訊，請參閱此表格中的 **TLogReadFiles** 和 **TLogWriteFiles** 參數。  
-  
-## <a name="remarks"></a>備註  
   
 ## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
