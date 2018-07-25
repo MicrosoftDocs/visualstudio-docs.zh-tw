@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947425"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232285"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -166,63 +166,63 @@ def about():
 
 應用程式的 `__init__.py` 檔案會包含以下的行：
 
-    ```python
-    app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
-    ```
+```python
+app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+```
 在 `templates` 資料夾中，您會看到 `.jade` 檔案而不是 `.html` 範本，而 `views.py` 中的檢視會在其對 `flask.render_template` 的呼叫中參考這些檔案。 除此之外，檢視程式碼都相同。
 
 開啟其中一個 `.jade` 檔案時，您將可看到以更簡潔方式表達的範本。 例如，以下是「Flask/Jade Web 專案」所建立 `templates/layout.jade` 的內容：
 
-    ```jade
-    doctype html
-    html
-      head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title #{title} - My Flask/Jade Application
-        link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='/static/content/site.css')
-        script(src='/static/scripts/modernizr-2.6.2.js')
-      body
-        .navbar.navbar-inverse.navbar-fixed-top
-          .container
-            .navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='/') Application name
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li
-                  a(href='/') Home
-                li
-                  a(href='/about') About
-                li
-                  a(href='/contact') Contact
-        .container.body-content
-          block content
-          hr
-          footer
-            p &copy; #{year} - My Flask/Jade Application
+```jade
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - My Flask/Jade Application
+    link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/static/content/site.css')
+    script(src='/static/scripts/modernizr-2.6.2.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Application name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+    .container.body-content
+      block content
+      hr
+      footer
+        p &copy; #{year} - My Flask/Jade Application
 
-        script(src='/static/scripts/jquery-1.10.2.js')
-        script(src='/static/scripts/bootstrap.js')
-        script(src='/static/scripts/respond.js')
+    script(src='/static/scripts/jquery-1.10.2.js')
+    script(src='/static/scripts/bootstrap.js')
+    script(src='/static/scripts/respond.js')
 
-        block scripts
-    ```
+    block scripts
+```
 
 而以下是 `templates/about.jade` 的內容，其中顯示使用 `#{ <name>}` 來作為預留位置：
 
-    ```jade
-    extends layout
+```jade
+extends layout
 
-    block content
-      h2 #{title}.
-      h3 #{message}
-      p Use this area to provide additional information.
-    ```
+block content
+  h2 #{title}.
+  h3 #{message}
+  p Use this area to provide additional information.
+```
 
 請隨意進行 Jinja 和 Jade 語法實驗，以了解哪個語法最適合您。
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c99dea00506fa838a2bb5c800fa05b7d55af3844
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947098"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232315"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -78,35 +78,35 @@ Visual Studio 也規劃了「投票 Flask/Jade Web Project」範本，此範本�
 
 應用程式的資料模型是名為 Poll 和 Choice 的 Python 類別，兩者皆定義於 `models/__init__.py` 中。 Poll 代表問題，而其 Choice 執行個體的集合則代表可用的解答。 Poll 也保有投票總數 (針對任何選項)，以及可計算用來產生檢視之統計資料的方法：
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 這些資料模型是一般抽象概念，可讓應用程式的檢視針對不同類型的支援資料存放區 (下一個步驟中會說明) 運作。
 
@@ -189,32 +189,32 @@ Visual Studio 也規劃了「投票 Flask/Jade Web Project」範本，此範本�
 
 一開始，所選的任何資料存放區都不包含任何投票項目，因此應用程式的首頁會顯示隨附 [Create Sample Polls] \(建立範例投票項目\) 按鈕的「沒有可用的投票項目」(No polls available) 訊息。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 `templates\index.html` 中的條件式標記進行 (為了簡潔起見，已省略一些空白行)：
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 範本中的 `polls` 變數來自對 `repository.get_polls` 的呼叫，這會在資料存放區初始化之後，才會傳回資料。
 
