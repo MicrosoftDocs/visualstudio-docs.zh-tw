@@ -14,28 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234022"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251201"
 ---
-# <a name="registering-an-expression-evaluator"></a>註冊運算式評估工具
+# <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 運算式評估工具 (EE) 必須將自己做為使用 Windows COM 環境和 Visual Studio 的 class factory 登錄。 因此，它可能會插入至偵錯引擎 (DE) 位址空間或 Visual Studio 的位址空間，視實體會具現化 EE EE 被實作為 DLL。  
+ 運算式評估工具 (EE) 必須將自己做為使用 Windows COM 環境和 Visual Studio 的 class factory 登錄。 EE 會設為 DLL，因此它會將其插入偵錯引擎 (DE) 位址空間或 Visual Studio 的位址空間，視實體會具現化 EE。  
   
 ## <a name="managed-code-expression-evaluator"></a>Managed 程式碼運算式評估工具  
- EE 會實作為類別庫，也就是向 COM 環境中，啟動一般 VSIP 計畫中，呼叫 DLL 的 managed 程式碼**regpkg.exe**。 撰寫 COM 環境的登錄機碼的實際程序會自動處理。  
+ EE 會實作為類別庫，也就是向 COM 環境中，啟動一般 VSIP 計畫中，呼叫 DLL 的 managed 程式碼*regpkg.exe*。 撰寫 COM 環境的登錄機碼的實際程序會自動處理。  
   
  主要類別的方法會標示<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>，指出正在使用 COM 註冊 DLL 時要呼叫的方法 此註冊方法，通常稱為`RegisterClass`，執行使用 Visual Studio 註冊 DLL 的工作。 相對應`UnregisterClass`(以標記<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)，復原的效果`RegisterClass`當解除安裝此 DLL。  
-  
- 與 unmanaged 程式碼，以撰寫 EE 做相同的登錄項目唯一的差別是，沒有任何協助程式函式例如`SetEEMetric`來為您執行工作。 此註冊/取消註冊程序的範例看起來像這樣：  
+ 與 unmanaged 程式碼，以撰寫 EE 做相同的登錄項目唯一的差別是，沒有任何協助程式函式例如`SetEEMetric`來為您執行工作。 以下是註冊和取消註冊程序的範例。  
   
 ### <a name="example"></a>範例  
- 此函式會顯示如何註冊 EE 的 managed 程式碼，並使用 Visual Studio 自動取消登錄。  
+ 下列函式會示範如何註冊 EE 的 managed 程式碼，並使用 Visual Studio 自動取消登錄。  
   
 ```csharp  
 namespace EEMC  
@@ -105,14 +104,14 @@ namespace EEMC
  EE DLL 實作`DllRegisterServer`向 COM 環境，以及 Visual Studio 的函式。  
   
 > [!NOTE]
->  MyCEE 程式碼範例登錄機碼位於檔案 dllentry.cpp，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。  
+>  Yoou 可以找到 MyCEE 程式碼範例登錄程式碼檔案中*dllentry.cpp*，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。  
   
 ### <a name="dll-server-process"></a>DLL 伺服器處理序  
  當註冊 EE，DLL 伺服器：  
   
 1.  其 class factory 註冊`CLSID`根據一般的 COM 慣例。  
   
-2.  呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`以下指定的計量，而 dbgmetric.lib 程式庫的一部分。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。  
+2.  呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`和指定，如下所示的計量是的一部分*dbgmetric.lib*程式庫。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。  
   
     |度量|描述|  
     |------------|-----------------|  
@@ -127,7 +126,7 @@ namespace EEMC
 3.  藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。  
   
 ### <a name="example"></a>範例  
- 此函式會顯示未受管理的程式碼 （c + +） EE 如何註冊，並使用 Visual Studio 自動取消登錄。  
+ 下列函式會顯示未受管理的程式碼 （c + +） EE 如何註冊，並使用 Visual Studio 自動取消登錄。  
   
 ```cpp  
 /*---------------------------------------------------------  
@@ -215,4 +214,4 @@ static HRESULT RegisterMetric( bool registerIt )
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [適用於偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

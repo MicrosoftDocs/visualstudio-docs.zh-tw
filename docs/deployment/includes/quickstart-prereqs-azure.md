@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)隨您選擇的語言的適當工作負載：
   * ASP.NET: **ASP.NET 與網頁程式開發**
+  * ASP.NET Core: ASP.NET 工作負載並 **.NET Core 跨平台開發**工作負載
   * Node.js: **Node.js 開發**
 
 * Azure 訂用帳戶。 如果您還沒有訂用帳戶[免費註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)，其中包括美金 200 元的點數 30 天和 12 個月的熱門免費服務。
