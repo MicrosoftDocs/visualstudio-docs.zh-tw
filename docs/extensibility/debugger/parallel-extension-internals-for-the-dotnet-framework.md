@@ -1,5 +1,5 @@
 ---
-title: 適用於.NET Framework 進行平行擴充功能的內部 |Microsoft 文件
+title: 適用於.NET Framework 進行平行擴充內部資訊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4936efe50023ed1e193d0c2ec0d9c3423ac5cc64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b4106509f62f1929f20283bc86c7930c22d39b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100607"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251081"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>平行擴充功能內部項目適用於.NET Framework
-本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的平行擴充功能，.NET framework 偵錯工具。  
+# <a name="parallel-extension-internals-for-the-net-framework"></a>適用於.NET Framework 的平行擴充內部資訊
+本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的 parallel extensions 到.NET Framework 偵錯工具。  
   
 ## <a name="in-this-section"></a>本節內容  
- [工作類別](../../extensibility/debugger/task-class-internal-members.md)  
- 描述的內部資料成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別。  
+ [Task 類別](../../extensibility/debugger/task-class-internal-members.md)  
+ 描述內部的資料成員的<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別。  
   
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- 描述的內部資料成員<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別。  
+ 描述內部的資料成員的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別。  
   
  [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- 描述的內部資料成員`System.Threading.Tasks.ContingentProperties`類別。  
+ 描述內部的資料成員的`System.Threading.Tasks.ContingentProperties`類別。  
   
  [AsyncTaskMethodBuilder 結構](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
  描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>結構。  

@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234836"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252358"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>將 ASP.NET Core 應用程式發行至 App Service 在 Linux 上使用 Visual Studio
 
 您可以使用**發佈**發佈至 Azure App Service，Linux 上的 ASP.NET Core 應用程式的工具。
+
+在 Linux 上使用的部署至 App Service**發佈**工具需要 Visual Studio 2017 15.7 版。
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
@@ -49,4 +51,4 @@ ms.locfileid: "39234836"
 在本快速入門中，您已了解如何在 Linux 上建立發行設定檔部署至 App Service 使用 Visual Studio。 您可能想要使用 Azure 的 Linux 發佈的詳細資訊。
 
 > [!div class="nextstepaction"]
-> [Linux 的 App Service](/azure/app-service/containers/app-service-linux-intro)
+> [Linux App Service](/azure/app-service/containers/app-service-linux-intro)

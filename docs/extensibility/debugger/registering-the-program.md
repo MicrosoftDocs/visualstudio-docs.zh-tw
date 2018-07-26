@@ -1,5 +1,5 @@
 ---
-title: 註冊程式 |Microsoft 文件
+title: 註冊計劃 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126297"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251149"
 ---
-# <a name="registering-the-program"></a>註冊程式
-偵錯引擎取得連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，啟用偵錯程式下一步是註冊該連接埠。 註冊之後，程式會用於偵錯由下列方式的其中一個：  
+# <a name="register-the-program"></a>註冊計劃
+偵錯引擎已取得的連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面後，啟用要偵錯程式的下一個步驟是註冊的連接埠。 註冊之後，程式就會有可供偵錯由下列方式之一：  
   
--   程序附加，可取得完整的偵錯控制權的執行中應用程式偵錯工具。  
+-   程序的連結，可取得完整偵錯的控制權，執行中應用程式偵錯工具。  
   
--   在 just-in-time (JIT) 偵錯，以便允許獨立偵錯工具執行的程式進行偵錯之後事實。 當執行階段架構會攔截錯誤時，偵錯工具會通知之前的作業系統，或執行階段環境釋放的記憶體和資源的失敗的程式。  
+-   在 just-in-time (JIT) 偵錯，以便之後事實偵錯的偵錯工具獨立執行的程式。 當執行階段架構會攔截錯誤時，偵錯工具會收到通知之前的作業系統，或執行階段環境釋放的記憶體和資源之錯誤的程式。  
   
 ## <a name="registering-procedure"></a>註冊程序  
   
-#### <a name="to-register-your-program"></a>若要註冊您的程式  
+### <a name="to-register-your-program"></a>若要註冊您的程式  
   
-1.  呼叫[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)連接埠所實作的方法。  
+1.  呼叫[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)藉由將連接埠的方法。  
   
      `IDebugPortNotify2::AddProgramNode` 需要指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
-     一般而言，當作業系統或執行階段環境載入程式，它會建立程式節點。 如果偵錯引擎 (DE) 會要求載入程式 DE 建立並註冊程式節點。  
+     通常，當作業系統或執行階段環境載入程式，它會建立 [程式] 節點。 如果偵錯引擎 (DE) 會要求載入程式，DE 會建立並註冊程式 節點。  
   
-     下列範例會顯示啟動程式和註冊的通訊埠的偵錯引擎。  
+     下列範例會顯示啟動程式，並註冊與連接埠的偵錯引擎。  
   
     > [!NOTE]
-    >  這不是唯一的方式來啟動並繼續處理程序;這是主要程式登錄連接埠的範例。  
+    >  此程式碼範例不是唯一的方式來啟動，並繼續處理序;此程式碼是主要的註冊計劃與連接埠的範例。  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  
@@ -109,4 +109,4 @@ ms.locfileid: "31126297"
   
 ## <a name="see-also"></a>另請參閱  
  [取得連接埠](../../extensibility/debugger/getting-a-port.md)   
- [啟用要偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

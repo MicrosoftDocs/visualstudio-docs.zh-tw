@@ -1,5 +1,5 @@
 ---
-title: 處理偵錯管理員 |Microsoft 文件
+title: 處理偵錯管理員 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ce0979b02ac3b0e8bb01f038c9883f5dcfd766
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bea7736174c64cb82f2dc1b66609175cb8584555
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098091"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252157"
 ---
 # <a name="process-debug-manager"></a>處理序偵錯管理員
-處理序偵錯管理員 (PDM) 是管理程式的 Visual Studio 的元件和處理程序，讓它們可以在工作階段偵錯管理員和偵錯引擎。  
+處理序偵錯管理員 (PDM) 是管理程式的 Visual Studio 的元件和程序，以提供給工作階段偵錯管理員和偵錯引擎。  
   
- PDM 管理可偵錯的所有處理序。 要進行偵錯程式必須向 PDM。 這是在啟動程式時，透過連接埠或偵錯引擎。  
+ PDM 管理可進行偵錯的所有處理序。 若要進行偵錯，程式必須向 PDM 的影響。 這項註冊會在啟動程式時，透過連接埠或偵錯引擎的時間完成。  
   
 ## <a name="see-also"></a>另請參閱  
  [處理程序](../../extensibility/debugger/processes.md)   
