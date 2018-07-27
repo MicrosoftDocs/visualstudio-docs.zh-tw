@@ -1,5 +1,5 @@
 ---
-title: 執行緒 |Microsoft 文件
+title: 執行緒 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2754d3b1b15771f876855e7ca7d1dc510748308
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 456ec81c5f39f533bddd58d0a9e4d9d5889f066d
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125782"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276630"
 ---
 # <a name="threads"></a>執行緒
-偵錯工具就架構而言，**執行緒**:  
+在偵錯工具架構中，*執行緒*:  
   
--   是計算的基本單位。 執行緒以循序方式執行，其指示的內容中的單一呼叫堆疊，從一種程式碼的內容移到下一步。  
+-   是計算的基本單位。 執行緒會以循序方式執行其指示的內容中的單一呼叫堆疊，從一個程式碼內容移至下一步。  
   
--   可識別本身以及程式它正在執行中，和名為、 暫停，並繼續。 執行緒也可以列舉其相關聯的堆疊框架，而且在某些情況下，可以移到另一個堆疊框架。 指定堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒，如果有的話。 執行緒有屬性，例如暫停計數，可以顯示在 IDE 的 [執行緒] 視窗中。  
+-   可以識別本身，以及在執行的程式。 執行緒可以命名為、 擱置，而且繼續。 執行緒也可以列舉其相關聯的堆疊框架，並在某些情況下可以移至另一個堆疊框架。 指定的堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒，如果有的話。 執行緒必須屬性，例如暫停計數，可顯示在**執行緒**在 IDE 的視窗。  
   
--   由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面，通常由偵錯引擎 (DE) 或由於執行程式的虛擬機器所建立。  
+-   由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)通常所偵錯引擎 (DE) 或由於執行程式的虛擬機器建立的介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式](../../extensibility/debugger/programs.md)   
