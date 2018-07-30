@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1892afefa7840910c51f184ca16ef2a6c6cd771a
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302906"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176137"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 
@@ -45,7 +45,7 @@ ms.locfileid: "36302906"
 
  ![在情節中指定測試反覆項目](../test/media/loadtest_prop.png)
 
-### <a name="to-specify-the-maximum-test-iterations"></a>若要指定測試反覆項目上限
+### <a name="to-specify-the-maximum-test-iterations"></a>指定測試反覆項目上限
 
 1. 開啟負載測試。
 

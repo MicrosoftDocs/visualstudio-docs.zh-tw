@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb2ef935015e7bd1058868b546543a789d7cec2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6f1712192f8d68131a9adbbc8eb6de5d85429ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576829"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150531"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
-針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
+針對 COM Interop 用途將指定的組件取消註冊。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `UnregisterAssembly` 工作的參數。  
@@ -62,7 +62,7 @@ ms.locfileid: "31576829"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [RegisterAssembly 工作](../msbuild/registerassembly-task.md)   
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

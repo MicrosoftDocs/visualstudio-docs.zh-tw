@@ -1,5 +1,6 @@
 ---
 title: MSBuild 項目 | Microsoft Docs
+description: 使用 ItemGroup 的 MSBuild Include 屬性來指定要包含在組建中的檔案
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a483d6dcaa4de7c2b9760704f4933a73d810061
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081832"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204124"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
-MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
+MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案是在 `Include` 屬性中指定)。 項目 (Item) 會依據它們的元素 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
   
  由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」和「項目值」等詞彙。  
   
 ##  <a name="create-items-in-a-project-file"></a>在專案檔中建立項目  
- 您會將專案檔中的項目 (Item) 宣告為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目 (Element) 的子項目 (Element)。 子項目 (Element) 的名稱是項目 (Item) 的類型。 項目 (Element) 的 `Include` 屬性會指定要包含於該項目 (Item) 類型的項目 (Item) (檔案)。 例如，下列 XML 會建立名為 `Compile` 的項目類型，其中包含兩個檔案。  
+ 您會將專案檔中的項目 (Item) 宣告為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素 (Element) 的子元素 (Element)。 子元素 (Element) 的名稱是項目 (Item) 的類型。 元素 (Element) 的 `Include` 屬性會指定要包含於該項目 (Item) 類型的項目 (Item) (檔案)。 例如，下列 XML 會建立名為 `Compile` 的項目類型，其中包含兩個檔案。  
   
 ```xml  
 <ItemGroup>  
@@ -45,13 +46,13 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 ```  
   
 ##  <a name="create-items-during-execution"></a>執行期間建立項目  
- [Target](../msbuild/target-element-msbuild.md) 項目 (Element) 以外的項目 (Item) 值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改項目：  
+ [Target](../msbuild/target-element-msbuild.md) 元素 (Element) 以外的項目 (Item) 值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改項目：  
   
--   任何工作均可發出項目。 若要發出項目 (Item)，[Task](../msbuild/task-element-msbuild.md) 項目 (Element) 必須含有具 `ItemName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目 (Element)。  
+-   任何工作均可發出項目。 若要發出項目 (Item)，[Task](../msbuild/task-element-msbuild.md) 元素 (Element) 必須含有具 `ItemName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 元素 (Element)。  
   
 -   [CreateItem](../msbuild/createitem-task.md) 工作可以發出項目。 這種使用方式已過時。  
   
--   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。  
+-   從 .NET Framework 3.5 開始，`Target` 元素可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，其中可能包含 Item 元素。  
   
 ##  <a name="reference-items-in-a-project-file"></a>參考專案檔中的項目  
  若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
@@ -67,13 +68,13 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
 -   \*\* 萬用字元會循序比對部分路徑。  
 
-例如，您可以在專案檔中使用下列項目，來指定包含該專案檔之目錄中的所有 *.cs* 檔案。  
+例如，您可以在專案檔中使用下列元素，來指定包含該專案檔之目錄中的所有 *.cs* 檔案。  
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-下列項目會選取 *D:* 磁碟機上的所有 *.vb* 檔案：  
+下列元素會選取 *D:* 磁碟機上的所有 *.vb* 檔案：  
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
@@ -82,7 +83,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 如需萬用字元的詳細資訊，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
 
 ##  <a name="use-the-exclude-attribute"></a>使用 Exclude 屬性  
- Item 項目 (Element) 可以包含 `Exclude` 屬性，以從項目 (Item) 類型中排除特定的項目 (Item) (檔案)。 `Exclude` 屬性通常會與萬用字元搭配使用。 例如，下列 XML 會將目錄中的每個 *.cs* 檔案新增至 CSFile 項目類型，但 *DoNotBuild.cs* 檔案除外。  
+ Item 元素 (Element) 可以包含 `Exclude` 屬性，以從項目 (Item) 類型中排除特定的項目 (Item) (檔案)。 `Exclude` 屬性通常會與萬用字元搭配使用。 例如，下列 XML 會將目錄中的每個 *.cs* 檔案新增至 CSFile 項目類型，但 *DoNotBuild.cs* 檔案除外。  
   
 ```xml  
 <ItemGroup>  
@@ -90,7 +91,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 </ItemGroup>  
 ```  
   
- `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除 *Form1.cs* 檔案，這是在前一個 Item 項目中新增的檔案。  
+ `Exclude` 屬性只會影響包含這兩者之 Item 元素 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除 *Form1.cs* 檔案，這是在前一個 Item 元素中新增的檔案。  
   
 ```xml  
 <Compile Include="*.cs" />  
@@ -102,9 +103,9 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 ##  <a name="item-metadata"></a>項目中繼資料  
  在 `Include` 和 `Exclude` 屬性中，除了資訊，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊，就會使用此中繼資料，或使用此中繼資料來批次處理工作和目標。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
- 中繼資料是一個索引鍵值組的集合，可在專案檔中宣告為 Item 項目的子項目。 子項目的名稱是中繼資料的名稱，而子項目的值是中繼資料的值。  
+ 中繼資料是一個索引鍵值組的集合，可在專案檔中宣告為 Item 元素的子元素。 子元素的名稱是中繼資料的名稱，而子元素的值是中繼資料的值。  
   
- 中繼資料會與包含它的 Item 項目相關聯。 例如，下列 XML 會將值為 `Fr` 的 `Culture` 中繼資料新增至 CSFile 項目類型的 *one.cs* 和 *two.cs* 項目。  
+ 中繼資料會與包含它的 Item 元素相關聯。 例如，下列 XML 會將值為 `Fr` 的 `Culture` 中繼資料新增至 CSFile 項目類型的 *one.cs* 和 *two.cs* 項目。  
   
 ```xml  
 <ItemGroup>  
@@ -157,7 +158,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
  如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
   
 ##  <a name="item-definitions"></a>項目定義  
- 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會為 `Compile` 項目 *one.cs* 和 *three.cs*，提供值為 "Monday" 的中繼資料 `BuildDay`。 此程式碼會為項目 *two.cs* 提供值為 "Tuesday" 的中繼資料 `BuildDay`。  
+ 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 元素](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會為 `Compile` 項目 *one.cs* 和 *three.cs*，提供值為 "Monday" 的中繼資料 `BuildDay`。 此程式碼會為項目 *two.cs* 提供值為 "Tuesday" 的中繼資料 `BuildDay`。  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -176,7 +177,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
  如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。  
   
 ##  <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>目標 ItemGroup 中的項目屬性  
- 從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。 如果已針對 `ItemGroup` (位於 `Target`) 中的項目指定本節中的屬性，則它們是有效的。  
+ 從 .NET Framework 3.5 開始，`Target` 元素可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，其中可能包含 Item 元素。 如果已針對 `ItemGroup` (位於 `Target`) 中的項目指定本節中的屬性，則它們是有效的。  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Remove 屬性  
  目標之 `ItemGroup` 屬性中的項目可能會包含 `Remove` 屬性，其會從項目類型中移除特定的項目 (檔案)。 此屬性是在 .NET Framework 3.5 中引入的。  
@@ -192,7 +193,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 ```  
   
 ###  <a name="BKMK_KeepMetadata"></a> KeepMetadata 屬性  
- 如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepMetadata` 屬性。 如果指定了這個屬性，只會將以分號分隔之名稱清單中指定的中繼資料從來源項目傳輸到目標項目。 若此屬性的值為空值，就相當於未指定它。 `KeepMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
+ 如果在目標內產生項目 (Item)，則 Item 元素 (Element) 可以包含 `KeepMetadata` 屬性。 如果指定了這個屬性，只會將以分號分隔之名稱清單中指定的中繼資料從來源項目傳輸到目標項目。 若此屬性的值為空值，就相當於未指定它。 `KeepMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
   
  下列範例示範如何使用 `KeepMetadata` 屬性。  
   
@@ -234,7 +235,7 @@ Output:
 ```  
   
 ###  <a name="BKMK_RemoveMetadata"></a> RemoveMetadata 屬性  
- 如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `RemoveMetadata` 屬性。 如果指定了此屬性，則會將所有中繼資料從來源項目傳輸到目標項目，但名稱位於以分號分隔之名稱清單內的中繼資料除外。 若此屬性的值為空值，就相當於未指定它。 `RemoveMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
+ 如果在目標內產生項目 (Item)，則 Item 元素 (Element) 可以包含 `RemoveMetadata` 屬性。 如果指定了此屬性，則會將所有中繼資料從來源項目傳輸到目標項目，但名稱位於以分號分隔之名稱清單內的中繼資料除外。 若此屬性的值為空值，就相當於未指定它。 `RemoveMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
   
  下列範例示範如何使用 `RemoveMetadata` 屬性。  
   
@@ -283,7 +284,7 @@ Output:
 ```  
   
 ###  <a name="BKMK_KeepDuplicates"></a> KeepDuplicates 屬性  
- 如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepDuplicates` 屬性。 `KeepDuplicates` 為 `Boolean` 屬性，會指定項目如果與現有項目完全重複，是否應加入目標群組。  
+ 如果在目標內產生項目 (Item)，則 Item 元素 (Element) 可以包含 `KeepDuplicates` 屬性。 `KeepDuplicates` 為 `Boolean` 屬性，會指定項目如果與現有項目完全重複，是否應加入目標群組。  
   
  如果來源和目標項目具有相同的 Include 值，但中繼資料不同，則即使已將 `KeepDuplicates` 設定為 `false`，也會加入該項目。 若此屬性的值為空值，就相當於未指定它。 `KeepDuplicates` 屬性是在 .NET Framework 4.5 中引入的。  
   
@@ -329,4 +330,4 @@ Output:
  [如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [項目定義](../msbuild/item-definitions.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
- [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Item 元素 (MSBuild)](../msbuild/item-element-msbuild.md)

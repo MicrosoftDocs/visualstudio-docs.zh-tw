@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc52232d8917835883c8390a24cb049b04fed94
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572513"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153698"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 更新資訊清單中選取的屬性，並重新簽署。  
@@ -41,6 +41,6 @@ ms.locfileid: "31572513"
 ## <a name="remarks"></a>備註  
  除了具有表格中所列的參數之外，此工作會繼承 <xref:Microsoft.Build.Utilities.Task> 類別中的參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -13,21 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477284"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206818"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (ASP.NET)
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量] 工具未提供您所需的資料，則[其他分析工具](../profiling/Profiling-Tools.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。
-
-> [!NOTE]
-> 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -132,7 +129,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     }
     ```
 
-1. 在方案總管中，開啟 Controller/HomeControllers.cs，並將下列程式碼：
+1. 在 [方案總管] 中，開啟 *Controller/HomeControllers.cs*，並取代下列程式碼：
 
     ```csharp
     public ActionResult About()
@@ -156,7 +153,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料 
+##  <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
   
 1.  首先，在 `Simple` 建構函式的這行程式碼上，於應用程式中設定中斷點：
 
@@ -171,9 +168,9 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
   
-1.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
+1.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-1.  按一下 [偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+1.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
 1.  應用程式完成載入時，請按一下網頁頂端的 [關於] 連結，以開始執行新的程式碼。
 
@@ -197,7 +194,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
      此時，您可以開始分析資料。
 
-## <a name="Step2"></a> 步驟 2：分析 CPU 使用量資料
+## <a name="step-2-analyze-cpu-usage-data"></a>步驟 2：分析 CPU 使用量資料
 
 建議您先檢查 [CPU 使用量] 下方的函式清單、識別執行最多工作的函式，仔細觀察每一項，接著開始分析您的資料。
 
@@ -229,7 +226,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 - 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
  [Visual Studio 中的分析](../profiling/index.md)  
- [分析功能導覽](../profiling/profiling-feature-tour.md)
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)

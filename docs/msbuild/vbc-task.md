@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 511e980b8c312803a82692042d7f88f389265c3a
-ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
+ms.openlocfilehash: 0f45cd451af252dbc62ea4ce0bc1d9edd90359a0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36962576"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177288"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 包裝 *vbc.exe*，這會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 或程式碼模組 (*.netmodule*)。 如需 *vbc.exe* 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -45,7 +45,7 @@ ms.locfileid: "36962576"
 |`Deterministic`|選擇性的 `Boolean` 參數。<br/><br/> 若為 `true`，可讓編譯器輸出在輸入相同時編譯之間二進位內容相同的組件。<br/><br/>如需詳細資訊，請參閱 [-deterministic](/dotnet/visual-basic/reference/command-line-compiler/deterministic)。|
 |`DisabledWarnings`|選擇性的 `String` 參數。<br /><br /> 隱藏指定的警告。 您只需要指定警告識別項的數值部分。 若有多個警告，則會以分號分隔。 此參數對應至 *vbc.exe* 編譯器的 [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 參數。|  
 |`DocumentationFile`|選擇性的 `String` 參數。<br /><br /> 將文件註解處理成指定的 XML 檔案。 此參數會覆寫 `GenerateDocumentation` 屬性。 如需詳細資訊，請參閱 [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)。|  
-|`EmitDebugInformation`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，工作就會產生偵錯資訊，並將其放在 .pdb 檔案中。 如需詳細資訊，請參閱 [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。|  
+|`EmitDebugInformation`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，工作就會產生偵錯資訊，並將其放在 *.pdb* 檔案中。 如需詳細資訊，請參閱 [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。|  
 |`ErrorReport`|選擇性的 `String` 參數。<br /><br /> 指定工作應如何報告編譯器內部錯誤。 此參數的值如下：<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> 如果指定 `prompt` 且發生編譯器內部錯誤時，會提示使用者選擇是否將錯誤資料傳送給 Microsoft。<br /><br /> 如果指定 `send` 且發生編譯器內部錯誤時，工作會將錯誤資料傳送給 Microsoft。<br /><br /> 預設值為 `none`，僅報告文字輸出中的錯誤。<br /><br /> 此參數對應至 *vbc.exe* 編譯器的 [-errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) 參數。|  
 |`FileAlignment`|選擇性的 `Int32` 參數。<br /><br /> 以位元組為單位，指定要對齊輸出檔案區段的位置。 此參數的值如下：<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> 此參數對應至 *vbc.exe* 編譯器的 [-filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) 參數。|  
 |`GenerateDocumentation`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` 則產生文件資訊，並將該資訊放入 XML 檔中，此檔案的名稱為工作所建立的可執行檔或程式庫名稱。 如需詳細資訊，請參閱 [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)。|  
@@ -59,7 +59,7 @@ ms.locfileid: "36962576"
 |`NoConfig`|選擇性的 `Boolean` 參數。<br /><br /> 指定編譯器不應使用 *vbc.rsp* 檔案。 此參數對應至 *vbc.exe* 編譯器的 [-noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) 參數。|  
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會隱藏顯示編譯器橫幅資訊。 此參數對應至 *vbc.exe* 編譯器的 [-nologo](/dotnet/visual-basic/reference/command-line-compiler/nologo) 參數。|  
 |`NoStandardLib`|選擇性的 `Boolean` 參數。<br /><br /> 使編譯器不要參考標準程式庫。 此參數對應至 *vbc.exe* 編譯器的 [-nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) 參數。|  
-|`NoVBRuntimeReference`|選擇性的 `Boolean` 參數。<br /><br /> 僅供內部使用。 如果為 true，則防止自動參考 Microsoft.VisualBasic.dll。|  
+|`NoVBRuntimeReference`|選擇性的 `Boolean` 參數。<br /><br /> 僅供內部使用。 如果為 true，則防止自動參考 *Microsoft.VisualBasic.dll*。|  
 |`NoWarnings`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，工作便會隱藏所有警告。 如需詳細資訊，請參閱 [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)。|  
 |`Optimize`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則啟用編譯器最佳化。 此參數對應至 *vbc.exe* 編譯器的 [-optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) 參數。|  
 |`OptionCompare`|選擇性的 `String` 參數。<br /><br /> 指定如何進行字串比較。 此參數的值如下：<br /><br /> -   `binary`<br />-   `text`<br /><br /> 值 `binary` 指定此工作使用二進位字串比較。 值 `text` 指定此工作使用文字字串比較。 此參數的預設值為 `binary`。 此參數對應至 *vbc.exe* 編譯器的 [-optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) 參數。|  
@@ -86,11 +86,11 @@ ms.locfileid: "36962576"
 |`Verbosity`|選擇性的 `String` 參數。<br /><br /> 指定編譯器輸出的詳細資訊。 詳細資訊可以是 `Quiet`、`Normal` (預設值) 或 `Verbose`。|  
 |`WarningsAsErrors`|選擇性的 `String` 參數。<br /><br /> 指定要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)。<br /><br /> 此參數會覆寫 `TreatWarningsAsErrors` 參數。|  
 |`WarningsNotAsErrors`|選擇性的 `String` 參數。<br /><br /> 指定不要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)。<br /><br /> 唯有將 `TreatWarningsAsErrors` 參數設為 `true` 時，此參數才有用。|  
-|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 在組件中插入 *.ico* 檔案，讓輸出檔在檔案總管中具有所需的外觀。 這個參數對應於 *vbc.exe* 編譯器的 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 參數。|  
+|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 在組件中插入 *.ico* 檔案，讓輸出檔在 [檔案總管] 中具有所需的外觀。 這個參數對應於 *vbc.exe* 編譯器的 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 參數。|  
 |`Win32Resources`|選擇性的 `String` 參數。<br /><br /> 將 Win32 資源檔 (*.res*) 插入輸出檔中。 這個參數對應於 *vbc.exe* 編譯器的 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 參數。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數及其描述的清單，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會編譯 Visual Basic 專案。  

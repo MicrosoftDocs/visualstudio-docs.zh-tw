@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567895"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154820"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有的追蹤，並釋放追蹤工作階段使用的所有記憶體。  
@@ -37,7 +37,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
  如已停止追蹤，則傳回 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** FileTracker.h  
+ **標頭：***FileTracker.h*  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

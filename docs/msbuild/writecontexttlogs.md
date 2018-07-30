@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfd22d45eaffea926989dc87d8f0f587a925fe7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a01dbd11411204affa082bfa0772530662657853
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572765"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230795"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 寫入目前內容的記錄檔。  
@@ -44,7 +44,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** FileTracker.h  
+ **標頭：** *FileTracker.h*  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

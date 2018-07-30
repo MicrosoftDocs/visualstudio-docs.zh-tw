@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970945"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203959"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 
@@ -31,9 +31,9 @@ ms.locfileid: "31970945"
 >
 > 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。 也有可能在您嘗試執行測試之前，都能夠成功安裝代理程式，而且不會看到這個問題。
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>將測試控制器繫結至特定網路介面卡
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>將測試控制器繫結至特定網路介面卡
 
-### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>若要取得網路介面卡的 IP 位址
+### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>取得網路介面卡的 IP 位址
 
 1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
 
@@ -41,7 +41,7 @@ ms.locfileid: "31970945"
 
      接著便會顯示您的網路介面卡 IP 位址。 請將控制器要繫結之網路介面卡的 IP 位址記錄下來。
 
-### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>若要將網路介面卡繫結至測試控制器
+### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>將網路介面卡繫結至測試控制器
 
 1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "31970945"
 
      這適用於控制器、代理程式服務和代理程式處理序。 在超過一個以上網路介面卡的電腦上所執行的每一個處理序，都必須設定 `BindTo` 屬性。 這三個處理序的 `BindTo` 屬性設定程序都一樣，和本主題前面針對測試控制器所指定的設定程序相同。
 
-### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>若要將網路介面卡繫結至測試代理程式
+### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>將網路介面卡繫結至測試代理程式
 
 1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
@@ -132,6 +132,6 @@ ms.locfileid: "31970945"
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
-- [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：指定測試控制器和測試代理程式的逾時期限](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

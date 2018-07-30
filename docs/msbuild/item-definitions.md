@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079092"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178558"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。  
@@ -144,7 +144,7 @@ ms.locfileid: "39079092"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用條件  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用條件  
  您可以在 ItemDefinitionGroup 中使用條件來控制是否要包含中繼資料。 例如:   
   
 ```xml  
@@ -190,7 +190,7 @@ ms.locfileid: "39079092"
 
 在上述範例中，"m" 會設定為 "m1" 值，因為 Condition 針對項目 "yes" 參考了項目 "i" 的中繼資料值。 
   
-## <a name="overriding-and-deleting-metadata"></a>覆寫及刪除中繼資料  
+## <a name="override-and-delete-metadata"></a>覆寫及刪除中繼資料  
  ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如:   
   
 ```xml  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c13addcaa6e64cd337741708494875bcbe0aaf8
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a14d5560d424da9ad1ff83da7453048f3c8188c0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281283"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176339"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0bf21ec99bd7b98ce90cd49c3edf5e3738c25b1
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978394"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178630"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -37,7 +37,7 @@ ms.locfileid: "38978394"
 
 1. 在範本的 *.vstemplate* 檔案中，針對您要啟用參數取代的項目，找出對應的 `ProjectItem` 元素。
 
-1. 將 `ReplaceParameters` 項目的 `ProjectItem` 屬性設定為 `true`。
+1. 將 `ReplaceParameters` 元素的 `ProjectItem` 屬性設定為 `true`。
 
 1. 在適當時，於專案項目的程式碼檔案中納入參數。 例如，下列參數指定用於檔案中命名空間的安全專案名稱：
 
@@ -64,7 +64,7 @@ ms.locfileid: "38978394"
 |SpecificSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|
 |userdomain|目前的使用者網域。|
 |username|目前的使用者名稱。|
-|webnamespace|目前的網站名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於 Web 伺服器的根目錄，此範本參數會解析為 Web 伺服器的根目錄。|
+|webnamespace|目前網站的名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於 Web 伺服器的根目錄，此範本參數會解析為 Web 伺服器的根目錄。|
 |年|目前的年份，格式為 YYYY。|
 
 > [!NOTE]
@@ -72,7 +72,7 @@ ms.locfileid: "38978394"
 
 ## <a name="custom-template-parameters"></a>自訂範本參數
 
-除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 項目 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
+除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 元素 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
 
 ## <a name="example-use-the-project-name-for-a-file-name"></a>範例：檔案名稱使用專案名稱
 

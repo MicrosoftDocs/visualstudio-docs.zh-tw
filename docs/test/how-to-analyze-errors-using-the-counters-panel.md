@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7ccd21e5432003de7ec3b03bf94716802846bd4
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751880"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204332"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>如何：使用計數器面板來分析錯誤
 

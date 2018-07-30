@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778517"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232266"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -139,7 +139,18 @@ Visual Studio 專案支援新增對專案和擴充功能的參考，這些參考
 
 使用 IronPython 時，您可以新增對 .NET 組件的參考來啟用 IntelliSense。 針對您方案中的 .NET 專案，請在 Python 專案中的 [參考] 節點上按一下滑鼠右鍵，依序選取 [加入參考]、[專案] 索引標籤，然後瀏覽至想要的專案。 針對您已個別下載的 DLL，請改為選取 [瀏覽] 索引標籤，然後瀏覽至想要的 DLL。
 
-由於 IronPython 的參考必須等到呼叫 `clr.AddReference('AssemblyName')` 之後才可供使用，因此您還必須將 `clr.AddReference` 呼叫新增到組件中。
+由於 IronPython 的參考必須等到呼叫 `clr.AddReference('<AssemblyName>')` 之後才可供使用，因此您還必須將適當的 `clr.AddReference` 呼叫加入到組件中，通常是在程式碼的開頭處。 例如，**IronPython Windows Forms 應用程式**專案範本在 Visual Studio 中建立的程式碼在檔案頂端包含兩個呼叫：
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>WebPI 專案
 

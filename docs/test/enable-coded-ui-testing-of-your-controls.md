@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751750"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153559"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
@@ -69,7 +69,7 @@ ms.locfileid: "34751750"
 4.  針對子控制項的協助工具物件，覆寫 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 和 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 屬性和方法。
 
 > [!NOTE]
-> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 Program.cs 中的程式碼取代成該範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型] 變更為 [False]，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式] 變更為 [Windows 應用程式]，如此當您執行應用程式時，才不會出現主控台視窗。
+> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 *Program.cs* 中的程式碼取代成該範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型] 變更為 [False]，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式] 變更為 [Windows 應用程式]，如此當您執行應用程式時，才不會出現主控台視窗。
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>藉由實作屬性提供者，支援自訂屬性驗證
 
@@ -134,7 +134,7 @@ ms.locfileid: "34751750"
 
 1. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的其餘抽象方法和屬性。
 
-1. 建置您的二進位檔，並將其複製到 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**。
+1. 建置您的二進位檔，並將其複製到 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
 
 > [!NOTE]
 > 這個延伸模組套件會套用至 "Text" 類型的任何控制項。 如果您要測試多個相同類型的控制項，請個別進行測試，並管理當您錄製測試時所要部署的延伸模組套件。
@@ -171,7 +171,7 @@ ms.locfileid: "34751750"
 
 1. 將動作篩選加入擴充套件的 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> 方法。
 
-1. 建置您的二進位檔，並將其複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。
+1. 建置您的二進位檔，並將其複製到 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
 
 > [!NOTE]
 > 動作篩選與協助工具實作或屬性提供者沒有相依關係。
@@ -182,7 +182,7 @@ ms.locfileid: "34751750"
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>偵錯內容提供者或動作篩選
 
-1.  建置延伸模組套件的偵錯版本，將 .dll 和.pdb 檔案複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。
+1.  建置延伸模組套件的偵錯版本，將 *.dll* 和 *.pdb* 檔案複製到 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
 
 2.  執行您的應用程式 (不在偵錯工具中)。
 

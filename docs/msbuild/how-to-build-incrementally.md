@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3e2df1097705025fd108f356ca7f307ffe6e51
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945413"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178965"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
   
-## <a name="specifying-inputs-and-outputs"></a>指定輸入和輸出  
+## <a name="specify-inputs-and-outputs"></a>指定輸入和輸出  
  如果專案檔中指定了輸入和輸出，您就可以累加方式來建置目標。  
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  

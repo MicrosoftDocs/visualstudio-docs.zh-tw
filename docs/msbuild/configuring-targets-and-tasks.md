@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 114e63d1d54f67f15215d17724962b191074588f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b6075eea96d217b029f7febb8bcf80aef2a47eb2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946546"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151141"
 ---
 # <a name="configure-targets-and-tasks"></a>設定目標和工作
 您可以設定 MSBuild 目標和工作以跨處理序方式隨 MSBuild 一起執行，如此您就能以與目前執行的內容不同的內容做為目標。 例如，您可以在開發電腦以 64 位元 .NET Framework 4.5 作業系統執行時，以 32 位元 .NET Framework 2.0 應用程式為目標。 您也可以將執行 .NET Framework 4 或以前版本的電腦做為目標。 32 或 64 位元與特定 .NET Framework 版本的組合稱為「目標內容」。  
   
 ## <a name="installation"></a>安裝  
- .NET Framework 4.5 和 4.5.1 會取代 .NET Framework 4 的通用語言執行平台 (CLR)、目標、工作和工具，而不會將它們重新命名。 .NET Framework 4.5.1 會安裝為 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 的一部分。  
+ .NET Framework 4.5 和 4.5.1 會取代 .NET Framework 4 的通用語言執行平台 (CLR)、目標、工作和工具，而不會將它們重新命名。 .NET Framework 4.5.1 會隨著 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 安裝。  
   
  如果您想要將 MSBuild 與 Visual Studio 分開安裝，可以從 [MSBuild 下載](http://go.microsoft.com/fwlink/?LinkId=309745)下載安裝套件。 您也必須安裝要使用的 .NET Framework 版本。  
   

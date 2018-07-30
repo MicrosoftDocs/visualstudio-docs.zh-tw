@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750866"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178530"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 `if` 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。
@@ -60,7 +60,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
      ![選取測試，再按一下滑鼠右鍵，然後選擇 [儲存]](../test/media/savepextests.png)
 
-     您可以檢視測試專案和已建立的參數化單元測試，其中每個資料列對應的個別單元測試會儲存在測試專案的 .g.cs 檔案中，而參數化的單元測試會儲存在其對應的 .cs 檔中。 您可以從 [測試總管] 執行這些測試及檢視其結果，與您手動建立單元測試時所執行的各項作業無異。
+     您可以檢視測試專案和已建立的參數化單元測試，其中每個資料列對應的個別單元測試會儲存在測試專案的 *.g.cs* 檔案中，而參數化的單元測試會儲存在其對應的 *.cs* 檔案中。 您可以從 [測試總管] 執行這些測試及檢視其結果，與您手動建立單元測試時所執行的各項作業無異。
 
      ![開啟測試方法中的類別檔案，以檢視單元測試](../test/media/testmethodpex.png)
 
@@ -80,7 +80,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
      ![以滑鼠右鍵按一下警告，然後選擇 [修正]](../test/media/pexfixwarning.png)
 
-     這項選擇會加入 PexAssemblyInfo.cs 檔案中。
+     這個選擇會加入 *PexAssemblyInfo.cs* 檔案中。
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -92,7 +92,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 指定輸入和輸出之間的一般關聯性，以用產生的單元測試來驗證。 此規格的封裝方法看似測試方法，但它卻是通用數量化的規格。 這是參數化的單元測試方法，因此您所進行的任何判斷提示必須保留所有 IntelliTest 產生的可能輸入值。
 
-##  <a name="QandALink"></a> 問與答
+##  <a name="q--a"></a>問與答
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於 Unmanaged 程式碼嗎？
 
@@ -152,7 +152,7 @@ Visual Studio Marketplace 也提供測試架構延伸模組︰
 
 ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png)
 
-然後執行 IntelliTest，以在對應的 g.cs 檔案中產生個別的單元測試。
+然後執行 IntelliTest，以在對應的 *g.cs* 檔案中產生個別的單元測試。
 
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？

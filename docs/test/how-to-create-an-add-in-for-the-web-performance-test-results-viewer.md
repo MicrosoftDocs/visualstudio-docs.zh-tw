@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751672"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177249"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
@@ -32,7 +32,7 @@ ms.locfileid: "34751672"
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>建立或開啟包含 ASP.NET Web 應用程式和 Web 效能測試及負載測試專案的方案
 
-### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>若要準備擴充 Web 效能測試結果檢視器
+### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>準備擴充 Web 效能測試結果檢視器
 
 建立或開啟您可以用來實驗的非生產環境方案，其中包含 ASP.NET Web 應用程式以及 Web 效能和負載測試專案 (含有 ASP.NET Web 應用程式的一個或多個效能測試)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "34751672"
 
  您將在本主題的結尾使用 [增益集管理員]。
 
-### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
+### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>使用增益集精靈建立增益集
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [加入]，然後選取 [新增專案]。
 
@@ -115,7 +115,7 @@ ms.locfileid: "34751672"
 
 在上一個程序中建立的 Visual Studio 增益集會參考 Windows Form 控制項程式庫專案，以便建立 <xref:System.Windows.Forms.UserControl> 類別的執行個體。
 
-### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>若要建立要用於 Web 測試結果檢視器的控制項
+### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>建立要用於 Web 測試結果檢視器的控制項
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [加入]，然後選取 [新增專案]。
 
@@ -179,7 +179,7 @@ ms.locfileid: "34751672"
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>將程式碼加入至 WebPerfTestResultsViewerAddin
 
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>若要將程式碼加入至 Visual Studio 增益集以擴充 Web 測試結果檢視器
+### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>將程式碼加入至 Visual Studio 增益集以擴充 Web 測試結果檢視器
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考] 節點，然後選取 [新增參考]。
 
@@ -277,7 +277,7 @@ ms.locfileid: "34751672"
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>將程式碼加入至 WebPerfTestResultsViewerControl
 
-### <a name="to-add-code-to-the-user-control"></a>若要將程式碼加入至使用者控制項
+### <a name="to-add-code-to-the-user-control"></a>將程式碼加入至使用者控制項
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]。
 
@@ -327,13 +327,13 @@ ms.locfileid: "34751672"
 
 ## <a name="build-the-webperftestresultsvieweraddin-solution"></a>建置 WebPerfTestResultsViewerAddin 方案
 
-### <a name="to-build-the-solution"></a>若要建置方案
+### <a name="to-build-the-solution"></a>建置方案
 
 -   在 [建置] 功能表上，選取 [建置方案]。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>登錄 WebPerfTestResultsViewerAddin 增益集
 
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>若要使用增益集管理員來登錄增益集
+### <a name="to-register-the-add-in-using-the-add-in-manager"></a>使用增益集管理員來登錄增益集
 
 1.  在 [工具] 功能表上，選取 [增益集管理員]。
 
@@ -345,7 +345,7 @@ ms.locfileid: "34751672"
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>使用已建置的 WebPerfTestResultsViewerAddin 增益集執行 Web 效能測試
 
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>若要執行 Web 測試結果檢視器的新 VS 增益集
+### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>執行 Web 測試結果檢視器的新 VS 增益集
 
 1.  執行 Web 效能測試，然後您將會看見 WebPerfTestResultsViewerAddin 增益集中名為 Sample 的新索引標籤顯示在 [Web 效能測試結果檢視器] 中。
 

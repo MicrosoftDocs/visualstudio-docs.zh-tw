@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 576e1f715e1196e7e0b774698fe45b550a1313f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924579"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176706"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 
@@ -41,7 +41,7 @@ ms.locfileid: "31924579"
 
 -   **文字輸入**：Visual Studio 可支援 Unicode，因此如果您的系統已設好適當的地區設定和輸入語言，即可使用阿拉伯文或希伯來文輸入文字。 (阿拉伯文支援包括 Kashida 和讀音符號)。
 
--   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他項目的名稱使用雙向語言。
+-   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他元素的名稱使用雙向語言。
 
 -   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[如何：使用編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "31924579"
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>使用阿拉伯文或希伯來文文字命名
  您可以使用阿拉伯文或希伯來文文字，將名稱指派給資料夾、變數或其他物件。 當使用阿拉伯文時，您可以使用任何阿拉伯文字元，包括 Kashida 和讀音符號。
 
- 下列項目可以使用阿拉伯文或希伯來文命名，並在 Visual Studio 中正確處理：
+ 下列元素可以使用阿拉伯文或希伯來文命名，並在 Visual Studio 中正確處理：
 
 -   方案、專案和檔案名稱，包括您在專案路徑中包含的任何資料夾。 [方案總管] 會正確顯示方案和項目名稱。
 
@@ -68,9 +68,9 @@ ms.locfileid: "31924579"
     > [!NOTE]
     >  程式碼編輯器是特殊案例。 如需詳細資訊，請參閱下方。
 
--   資料項目。 伺服器總管會正確顯示下列項目，以供您編輯。
+-   資料元素。 伺服器總管會正確顯示下列元素，以供您編輯。
 
--   複製到 Windows 剪貼簿的項目。
+-   複製到 Windows 剪貼簿的元素。
 
 -   屬性和中繼資料。
 

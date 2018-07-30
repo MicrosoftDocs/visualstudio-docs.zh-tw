@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752010"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204085"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器加入自訂計數器集合
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器新增自訂計數器集合
 
 當您使用 [新增負載測試精靈] 建立負載測試時，會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。
 
@@ -39,7 +39,7 @@ ms.locfileid: "34752010"
 3.  以滑鼠右鍵按一下 [計數器集合] 節點，然後選取 [新增自訂計數器集合]。
 
     > [!NOTE]
-    > 計數器集合會命名為預設名稱，例如 **Custom1**。 您可以使用 [屬性] 視窗變更名稱。 按 F4 顯示 [屬性] 視窗。
+    > 計數器集合會命名為預設名稱，例如 **Custom1**。 您可以使用 [屬性] 視窗變更名稱。 按 **F4** 顯示 [屬性] 視窗。
 
 4.  若要將計數器新增至自訂計數器集合，請以滑鼠右鍵按一下新的計數器集合，然後選擇 [新增計數器]。 如需如何新增計數器的詳細資訊，請參閱[如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
 

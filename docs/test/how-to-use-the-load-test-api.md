@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5204848c24a25514fc8eb30a81dbca704a77a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9533083410af061ed8b2958349009cb5234ff251
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969640"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176241"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
 
@@ -28,7 +28,7 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 
 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
 
-## <a name="to-use-the-loadtesting-namespace"></a>若要使用 LoadTesting 命名空間
+## <a name="to-use-the-loadtesting-namespace"></a>使用 LoadTesting 命名空間
 
 1.  開啟包含負載測試的 Web 效能和負載測試專案。
 

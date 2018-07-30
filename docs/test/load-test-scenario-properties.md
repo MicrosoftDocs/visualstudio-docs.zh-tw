@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2619ce42d80eb804929482ffc2c6fd431e238ca5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f18376637cf7156fc0165b0360281e9415b7c80
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977211"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176784"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 
@@ -32,7 +32,7 @@ ms.locfileid: "31977211"
 
 |屬性|定義|
 |--------------|----------------|
-|**瀏覽器混合**|為負載測試指定 Web 瀏覽器混合。 您可以指定不同的 Web 瀏覽器類型及其負載分佈。<br /><br />選擇省略符號 (...) 按鈕開啟 [編輯瀏覽器混合] 對話方塊，並使用 [新增] 和 [移除] 選取負載測試中的網頁瀏覽器類型。<br /><br />如需詳細資訊，請參閱[指定網頁瀏覽器類型](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。|
+|**瀏覽器混合**|為負載測試指定網頁瀏覽器混合。 您可以指定不同的網頁瀏覽器類型及其負載分佈。<br /><br />選擇省略符號 (...) 按鈕開啟 [編輯瀏覽器混合] 對話方塊，並使用 [新增] 和 [移除] 選取負載測試中的網頁瀏覽器類型。<br /><br />如需詳細資訊，請參閱[指定網頁瀏覽器類型](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。|
 |**網路混合**|為負載測試指定網路混合。 您可以指定要包含哪些網路類型及其負載分佈。<br /><br />選擇省略符號 (...) 按鈕開啟 [編輯網路混合] 對話方塊，並使用 [新增] 和 [移除] 選取負載測試中的網路類型。<br /><br />如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。|
 |**測試混合**|為負載測試指定 Web 效能和單元測試混合。 您可以指定要包含哪些測試及其負載分佈。<br /><br />選擇省略符號 (...) 按鈕開啟 [編輯測試混合] 對話方塊，並使用 [新增] 和 [移除] 選取負載測試中的測試。<br /><br />如需詳細資訊，請參閱[編輯負載測試情節的測試混合](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。|
 |**測試混合類型**|指定負載測試的測試混合模型。<br /><br />選擇省略符號 (...) 按鈕開啟 [編輯測試混合] 對話方塊，並使用 [測試混合模型] 底下的下拉式清單選取要用於負載測試的測試混合模型。<br /><br />如需詳細資訊，請參閱[編輯測試混合模型](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。|

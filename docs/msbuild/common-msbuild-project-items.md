@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945516"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152551"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。  
@@ -78,6 +78,7 @@ ms.locfileid: "37945516"
 |名稱|選擇性字串。 參考的顯示名稱。|  
 |專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
 |Package|選擇性字串。 所參考的專案檔路徑。|  
+|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#Reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
   
 ### <a name="compile"></a>編譯  
  代表編譯器的原始程式檔。  

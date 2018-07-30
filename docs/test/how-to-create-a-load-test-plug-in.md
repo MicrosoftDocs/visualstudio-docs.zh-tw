@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975917"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179675"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "31975917"
 > [!NOTE]
 > 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
 
-## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>若要使用 Visual C# 建立負載測試外掛程式
+## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>使用 Visual C# 建立負載測試外掛程式
 
 1.  開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 
@@ -60,9 +60,9 @@ ms.locfileid: "31975917"
 
      **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-13. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [新增參考]。
+13. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [加入參考]。
 
-14. [新增參考] 對話方塊隨即顯示。
+14. [加入參考] 對話方塊隨即顯示。
 
 15. 選擇 [專案] 索引標籤，然後選取 [類別庫專案]。
 
@@ -90,7 +90,7 @@ ms.locfileid: "31975917"
      此外掛程式就會新增至 [負載測試外掛程式] 資料夾。
 
     > [!WARNING]
-    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到類似下面的錯誤：
+    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
     > **要求失敗: \<plug-in> 事件中發生例外狀況: 無法載入檔案或組件 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >

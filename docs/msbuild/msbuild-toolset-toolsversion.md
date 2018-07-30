@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d46c8d3e076e194369cce2e01325f53aa6a36
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578883"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153156"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
-MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 microsoft.common.tasks 檔案、microsoft.common.targets 檔案和編譯器，例如 csc.exe 和 vbc.exe。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。  
+MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 *microsoft.common.tasks* 檔案、*microsoft.common.targets* 檔案和編譯器，例如 *csc.exe* 和 *vbc.exe*。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion 屬性  
  在專案檔之 [Project](../msbuild/project-element-msbuild.md) 項目的 `ToolsVersion` 屬性中指定工具組。 下列範例會指定應該使用 MSBuild 15.0 工具組組建專案。  
@@ -42,15 +42,15 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
  從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 /ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
   
- 在下列範例中，MSBuild 會使用 `MSBuildToolsPath` 保留屬性，即可尋找 Microsoft.CSharp.targets 檔案。  
+ 在下列範例中，MSBuild 會使用 `MSBuildToolsPath` 保留屬性，尋找 *Microsoft.CSharp.targets* 檔案。  
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。  
+ 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)  
   
- 當您在命令列上建置方案並針對 msbuild.exe 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
+ 當您在命令列上建置方案並針對 *msbuild.exe* 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
   
  `ToolsVersion` 屬性也用於專案移轉。 例如，如果您在 Visual Studio 2010 中開啟 Visual Studio 2008 專案，則會上傳專案檔，以包括 ToolsVersion="4.0"。 如果您隨後嘗試在 Visual Studio 2008 中開啟該專案，它不會識別已升級的 `ToolsVersion`，因此會像該屬性仍設為 3.5 那樣建置專案。  
   
@@ -65,15 +65,15 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
 -   其他 Managed 工具。  
   
- Managed 工具包括 ResGen.exe 和 TlbImp.exe。  
-  
- MSBuild 會提供兩種方法來存取工具組：  
+  Managed 工具包括 *ResGen.exe* 和 *TlbImp.exe*。  
+
+MSBuild 會提供兩種方法來存取工具組：  
   
 -   透過使用工具組屬性  
   
 -   透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
-  
- 工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，其位於 MSBuild\15.0\Bin 資料夾，這相對於 Visual Studio 的安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼，來設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
+
+工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，其位於相對於 Visual Studio 安裝位置的 *MSBuild\15.0\Bin* 資料夾。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼設定工具組屬性：**HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**。  
   
  以下為工具組屬性：  
   
@@ -82,8 +82,8 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 -   `SDK40ToolsPath` 會指定 MSBuild 4.x (可能是 4.0 或 4.5) 之其他 Managed 工具的路徑。  
   
 -   `SDK35ToolsPath` 會指定 MSBuild 3.5 之其他 Managed 工具的路徑。  
-  
- 或者，您可以呼叫 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 類別的方法，即可以程式設計方式判定工具組。 該類別包括下列方法：  
+
+或者，您可以呼叫 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 類別的方法，即可以程式設計方式判定工具組。 該類別包括下列方法：  
   
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 會傳回 .NET Framework 資料夾的路徑。  
   
@@ -108,15 +108,15 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 -   "11.0" 會指定 .NET Framework 4.5 子工具組  
   
 -   "12.0" 會指定 .NET Framework 4.5.1 子工具組 
+
+子工具組 10.0 和 11.0 應該與 ToolsVersion 4.0 搭配使用。 在更新的版本中，子工具組版本應該與 ToolsVersion 相符。  
+
+在建置期間，MSBuild 會自動判定並設定 `VisualStudioVersion` 屬性的預設值 (如果尚未定義的話)。  
+
+MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `VisualStudioVersion` 列舉值做為參數  
+
+子工具組已引進 .NET Framework 4.5。  
   
- 子工具組 10.0 和 11.0 應該與 ToolsVersion 4.0 搭配使用。 在更新的版本中，子工具組版本應該與 ToolsVersion 相符。  
-  
- 在建置期間，MSBuild 會自動判定並設定 `VisualStudioVersion` 屬性的預設值 (如果尚未定義的話)。  
-  
- MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `VisualStudioVersion` 列舉值做為參數  
-  
- 子工具組已引進 .NET Framework 4.5。  
-  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

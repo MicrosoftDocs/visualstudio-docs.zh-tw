@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057368"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231593"
 ---
 # <a name="xsd-task"></a>XSD 工作
-包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。  
+包裝 XML 結構描述定義工具 (*xsd.exe*)，其會從來源產生結構描述或類別檔案。  
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，即將淘汰 xsd.exe 的 C++ 專案支援。 您仍然可以將 **CppCodeProvider.dll** 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。 
+> 在 Visual Studio 2017 中，即將淘汰 *xsd.exe* 的 C++ 專案支援。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。 
   
 ## <a name="parameters"></a>參數  
  下表說明 **XSD** 工作的參數。  
@@ -42,7 +42,7 @@ ms.locfileid: "37057368"
   
      選擇性的 **String** 參數。  
   
-     選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
+     選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
   
 -   **GenerateFromSchema**  
   
@@ -88,5 +88,5 @@ ms.locfileid: "37057368"
   
      指定追蹤器記錄檔的目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

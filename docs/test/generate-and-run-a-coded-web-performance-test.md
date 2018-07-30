@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750850"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179572"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -84,11 +84,11 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
 ## <a name="qa"></a>問與答
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
- **答：** 可以，請使用 [方案總管] 中的操作功能表。
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我是否可以同時執行多個測試？
+ **答：** 是，請使用 [方案總管] 中的操作功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？
- **答：** 在您產生程式碼測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
+ **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
 
  當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
 
@@ -97,4 +97,4 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
  發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入驗證和擷取規則？
- **答：** 在產生程式碼測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。
+ **答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。

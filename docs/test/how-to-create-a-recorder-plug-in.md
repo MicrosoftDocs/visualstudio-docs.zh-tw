@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978173"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176209"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
@@ -31,7 +31,7 @@ ms.locfileid: "31978173"
 
 ## <a name="creating-a-recorder-plug-in"></a>建立錄製器外掛程式
 
-### <a name="to-create-a-recorder-plug-in"></a>若要建立錄製器外掛程式
+### <a name="to-create-a-recorder-plug-in"></a>建立錄製器外掛程式
 
 1.  開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
 
@@ -77,7 +77,7 @@ ms.locfileid: "31978173"
      事件引數提供兩個可用的物件：錄製的結果和錄製的 Web 效能測試。 這可讓您逐一查看結果尋找特定值，然後跳至 Web 效能測試中的相同要求進行修改。 如果您要加入內容參數或參數化 URL 的組成部分，也可以只修改 Web 效能測試。
 
     > [!NOTE]
-    > 如果修改 Web 效能測試，同時也需要將 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 屬性設定為 true：`e.RecordedWebTestModified = true;`。
+    > 如果修改 Web 效能測試，同時也需要將 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 屬性設定為 true：`e.RecordedWebTestModified = true;`
 
 11. 依據您要錄製器外掛程式在 Web 錄製發生之後執行的動作，加入其他程式碼。 例如，您可以加入程式碼以處理自訂相互關聯，如下列範例所示。 此外，也可以建立錄製器外掛程式，以用於將註解轉換為異動，或將驗證規則加入至 Web 效能測試等作業。
 
@@ -96,7 +96,7 @@ ms.locfileid: "31978173"
 > [!WARNING]
 > 將錄製器外掛程式複製到這兩個位置之一後，您必須重新啟動 Visual Studio，以便註冊錄製器外掛程式。
 
-### <a name="to-execute-the-recorder-plug-in"></a>若要執行錄製器外掛程式
+### <a name="to-execute-the-recorder-plug-in"></a>執行錄製器外掛程式
 
 1.  建立新的 Web 效能測試。
 
@@ -107,7 +107,7 @@ ms.locfileid: "31978173"
      在 Web 效能測試完成錄製之後，就會執行新的錄製器外掛程式。
 
     > [!WARNING]
-    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到類似下面的錯誤：
+    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
     > **要求失敗: \<plug-in> 事件中發生例外狀況: 無法載入檔案或組件 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >

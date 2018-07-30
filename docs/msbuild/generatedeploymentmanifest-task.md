@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 470e08454d39bf63542a63359359b1577e70f5b3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: accf8ffb81b28451f7561b027e4a11fe5a59b202
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945353"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177600"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "37945353"
 |`DeploymentUrl`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的更新位置。 如果未指定此參數，就不會為應用程式定義任何更新位置。 不過，如果 `UpdateEnabled` 參數是 `true`，則必須指定更新位置。 指定的值應該是完整的 URL 或 UNC 路徑。|
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的選擇性描述。|
 |`DisallowUrlActivation`|選擇性的 `Boolean` 參數。<br /><br /> 指定當應用程式透過 URL 開啟時，是否應該自動執行。 如果此參數為 `true`，應用程式只能從 [開始] 功能表啟動。 此參數的預設值為 `false`。 只有當 `Install` 參數值為 `true` 時，此輸入才適用。|
-|`EntryPoint`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指出所產生資訊清單組件的進入點。 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單，此輸入會指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。<br /><br />如果 `EntryPoint` 工作參數未指定，`<customHostSpecified>` 標記會插入為 `<entryPoint>` 標記的子系，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 您可以使用下列步驟，將 DLL 相依性加入至應用程式資訊清單︰<br /><br /> 1.藉由呼叫 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析組件參考。<br />2.將上一個工作和組件本身的輸出傳遞至 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 參數將相依性傳遞至 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|
+|`EntryPoint`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指出所產生資訊清單組件的進入點。 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單，此輸入會指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。<br /><br />如果 `EntryPoint` 工作參數未指定，`<customHostSpecified>` 標記會插入為 `<entryPoint>` 標記的子系，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 您可以使用下列步驟，將 DLL 相依性加入至應用程式資訊清單︰<br /><br /> 1.藉由呼叫 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析組件參考。<br />2.將上一個工作和組件本身的輸出傳遞至 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 參數將相依性傳遞至 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|
 |`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝期間顯示於對話方塊中的網頁 URL。|
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這能讓結構化資料 (例如自訂資訊清單定義) 反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|
 |`Install`|選擇性的 `Boolean` 參數。<br /><br /> 指定應用程式是已安裝的應用程式或是線上專用應用程式。 如果此參數為 `true`，應用程式將會安裝在使用者的 [開始] 功能表上，並可以使用 [新增或移除程式] 對話方塊予以移除。 如果此參數為 `false`，應用程式僅供從網頁線上使用。 此參數的預設值為 `true`。|

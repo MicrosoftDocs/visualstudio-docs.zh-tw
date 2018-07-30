@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877328"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232281"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -46,8 +46,10 @@ ms.locfileid: "33877328"
 
 1. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。 
 
-     另外還有三個檔案： - **host.json** 用於描述主機的全域組態選項 - **local.settings.json** 用於進行服務設定。 
-        - 專案範本也會建立預設 HttpTrigger。 為了此實驗室，您應該從專案刪除 **HttpTrigger.cs** 檔案。
+     還有三個檔案：  
+        - **host.json**：用於描述主機的全域設定選項  
+        - **local.settings.json**：用於設定服務設定。  
+        - 專案範本也會建立預設 HttpTrigger。 為了此實驗室，您應該從專案刪除 **HttpTrigger.cs** 檔案。  
 
     開啟 **local.settings.json**。 預設會有兩個空的連接字串設定。
 

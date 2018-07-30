@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957823"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179163"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>如何：在類別設計工具中將類別分割成部分類別
 

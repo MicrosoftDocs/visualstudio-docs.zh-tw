@@ -9,12 +9,12 @@ description: 設定雲端訂用帳戶的系統管理員
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335680"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231272"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>設定 Visual Studio 雲端訂用帳戶的系統管理員
 
@@ -46,6 +46,8 @@ Visual Studio 雲端訂用帳戶是由系統管理員管理。  這些人可以�
 
 新的系統管理員現在可以登入[管理入口網站](https://manage.visualstudio.com)、從頁面左上角的清單中選取與用來購買雲端訂用帳戶相同的 Azure 訂用帳戶，並開始管理那些訂用帳戶。 
 
+> [!NOTE]
+> 若您看到有存取權可編輯您未在其中被建立為系統管理員之雲端訂用帳戶的使用者，他們在底層 Azure 訂用帳戶中可能擁有可讓他們管理訂用帳戶的 角色。  那些角色包括：擁有者、參與者、服務系統管理員或共同系統管理員。如需詳細資訊，請參閱 https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts
 
 如需 Visual Studio 雲端訂用帳戶的資訊，請參閱＜購買雲端訂用帳戶＞底下的[概觀](vscloud-overview.md)。 若要購買 Visual Studio 雲端訂用帳戶，請瀏覽 Visual Studio Marketplace，網址是 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。 
 

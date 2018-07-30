@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078988"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177191"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後使用每個批次一次執行一個工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。  
@@ -133,7 +133,7 @@ ms.locfileid: "39078988"
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>一次批次處理一個項目  
+## <a name="batch-one-item-at-a-time"></a>一次批次處理一個項目  
  在於建立每個項目時指派給項目的已知項目中繼資料上，也可以執行批次處理。 這可確保集合中的每個項目都具有相同的中繼資料可用於批次處理。 每個項目的 `Identity` 中繼資料值都是唯一的，可用來將項目清單中的每個項目分割成個別的批次。 如需已知項目中繼資料的完整清單，請參閱[已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。  
   
  下列範例示範如何以一次一個的方式，批次處理項目清單中的每個項目。 由於每個項目的 `Identity` 中繼資料值是唯一的，因此 `ExampColl` 項目清單會分割成六個批次，每個批次包含項目清單的一個項目。 `Text` 屬性中的 `%(Identity)` 會通知 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 應該執行批次處理。  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>篩選項目清單  
+## <a name="filter-item-lists"></a>篩選項目清單  
  批次處理可用來先篩除項目清單中的特定項目，再將其傳遞給工作。 例如，篩選 `Extension` 已知項目中繼資料值可讓您只在具有特定副檔名的檔案上執行工作。  
   
  下列範例示範如何根據項目中繼資料，將項目清單分割成批次，然後在將這些批次傳遞給工作時，進行篩選。 `ExampColl` 項目清單會根據 `Number` 項目中繼資料分割成三個批次。 工作的 `Condition` 屬性指定只將 `Number` 項目中繼資料值為 `2` 的批次傳遞給工作  
