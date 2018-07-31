@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326276"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151177"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 在目前的內容中繼續追蹤。  
@@ -37,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  如已繼續追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。 如果因為無法取得內容而無法繼續追蹤，則傳回 **E_FAIL**。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** FileTracker.h  
+ **標頭：** *FileTracker.h*  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SuspendTracking](../msbuild/suspendtracking.md)

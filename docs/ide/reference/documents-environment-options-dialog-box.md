@@ -34,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb14ae44dd137d7bf600cec505fe17fa6e105a42
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ceccf3c051e3c85fa4b8e64ecbc33c388e9a884f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948973"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178175"
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件
 使用 [選項] 對話方塊的這個頁面，即可控制整合式開發環境 (IDE) 中的文件顯示，以及管理文件和檔案的外部變更。 按一下 [工具] 功能表上的 [選項]，然後選取 [環境] 節點中的 [文件]，即可存取此對話方塊。 如果 [文件] 未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。
@@ -75,7 +75,7 @@ ms.locfileid: "31948973"
 
  **無法以字碼頁儲存資料時，將文件儲存為 Unicode**：選取此選項，針對包含的資訊與所選取字碼頁不相容的檔案，預設將檔案儲存為 Unicode。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
 - [其他檔案](../../ide/reference/miscellaneous-files.md)

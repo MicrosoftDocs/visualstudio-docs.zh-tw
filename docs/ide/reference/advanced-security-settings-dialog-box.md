@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3910383733171775bd1f25e230cbb896648034bb
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: dce482f53f9f3e6dd0b57d6cb905f97cdfaa601a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089538"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180512"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[進階安全性設定] 對話方塊
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad5961d3af1e729d33d216c55e7386885a970e0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965490"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175978"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>在負載測試情節中編輯考慮時間以模擬網站人類互動延遲
 
@@ -44,13 +44,13 @@ ms.locfileid: "31965490"
 > [!NOTE]
 > 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-## <a name="changing-the-think-profile"></a>變更考慮特性
+## <a name="change-the-think-profile"></a>變更考慮特性
 
-### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>若要變更負載測試情節中的考慮特性
+### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>變更負載測試情節中的考慮特性
 
 1.  從 Web 效能和負載測試專案中，開啟負載測試。
 
-2.  在 [負載測試編輯器] 中，選擇您要變更 [考慮特性] 的情節節點。 [考慮特性] 隨即顯示在 [屬性] 視窗中。 按 F4 顯示 [屬性] 視窗。
+2.  在 [負載測試編輯器] 中，選擇您要變更 [考慮特性] 的情節節點。 [考慮特性] 隨即顯示在 [屬性] 視窗中。 按 **F4** 顯示 [屬性] 視窗。
 
 3.  變更 [屬性] 視窗中的 [考慮特性] 屬性。
 

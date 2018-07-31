@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751529"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179004"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報表
 
@@ -47,7 +47,7 @@ ms.locfileid: "34751529"
 > [!NOTE]
 > 如果您將註解加入至負載測試，這些註解就會顯示在 Excel 報表中。 如需詳細資訊，請參閱[如何：在分析已完成的負載測試時新增註解](../test/how-to-add-comments-on-a-completed-load-test.md)。
 
-## <a name="to-generate-load-test-comparison-reports-using-excel"></a>若要使用 Excel 產生負載測試比較報告
+## <a name="to-generate-load-test-comparison-reports-using-excel"></a>使用 Excel 產生負載測試比較報告
 
 1.  在產生報告前，首先您必須執行負載測試。
 
@@ -102,7 +102,7 @@ ms.locfileid: "34751529"
     > [!TIP]
     > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報告中：目標和報告名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
 
-## <a name="to-generate-load-test-trend-reports-using-excel"></a>若要使用 Excel 產生負載測試趨勢報告
+## <a name="to-generate-load-test-trend-reports-using-excel"></a>使用 Excel 產生負載測試趨勢報告
 
 1.  在產生報告前，您必須先執行負載測試。
 

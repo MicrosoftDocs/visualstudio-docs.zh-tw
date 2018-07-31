@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945880"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177213"
 ---
 # <a name="csc-task"></a>Csc 工作
 包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 (*.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。  
@@ -60,12 +60,12 @@ ms.locfileid: "37945880"
 |`ModuleAssemblyName`|選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件名稱。|  
 |`NoConfig`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，即會指示編譯器不要使用 *csc.rsp* 檔案進行編譯。 如需詳細資訊，請參閱 [-noconfig (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)。|  
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會隱藏顯示編譯器橫幅資訊。 如需詳細資訊，請參閱 [-nologo (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option)。|  
-|`NoStandardLib`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會防止匯入 mscorlib.dll，此檔案會定義整個系統命名空間。 如果您想要定義或建立自己的系統命名空間和物件，請使用此參數。 如需詳細資訊，請參閱 [-nostdlib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。|  
+|`NoStandardLib`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會防止匯入 *mscorlib.dll*，此檔案會定義整個系統命名空間。 如果您想要定義或建立自己的系統命名空間和物件，請使用此參數。 如需詳細資訊，請參閱 [-nostdlib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。|  
 |`NoWin32Manifest`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，就不會包含預設的 Win32 資訊清單。|  
 |`Optimize`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會啟用最佳化。 如果是 `false`，則會停用最佳化。 如需詳細資訊，請參閱 [-optimize (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。|  
 |`OutputAssembly`|選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 如需詳細資訊，請參閱 [-out (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option)。|  
 |`OutputRefAssembly`|選擇性的 `String` 參數。<br /><br /> 指定輸出參考組件檔的名稱。 如需詳細資訊，請參閱 [-refout (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)。|  
-|`PdbFile`|選擇性的 `String` 參數。<br /><br /> 指定偵錯資訊檔案名稱。 預設名稱是副檔名為 .pdb 的輸出檔案名稱。|  
+|`PdbFile`|選擇性的 `String` 參數。<br /><br /> 指定偵錯資訊檔案名稱。 預設名稱是副檔名為 *.pdb* 的輸出檔案名稱。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 此參數可以具有 `x86`、`x64` 或 `anycpu` 的值。 預設為 `anycpu`。 如需詳細資訊，請參閱 [-platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)。|  
 |`References`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 如需詳細資訊，請參閱 [-reference (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)。<br /><br /> 您可以將中繼資料 `Aliases` 加入至原始的「參考」項目，藉以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案中指定 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 參考別名。 例如，若要在下列 Csc 命令列中設定別名 "LS1"：<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 您可以使用：<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 資源內嵌到輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/resource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [-resource (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)。|  
@@ -78,9 +78,9 @@ ms.locfileid: "37945880"
 |`WarningLevel`|選擇性的 `Int32` 參數。<br /><br /> 指定要針對編譯器顯示的警告層級。 如需詳細資訊，請參閱 [-warn (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)。|  
 |`WarningsAsErrors`|選擇性的 `String` 參數。<br /><br /> 指定要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。<br /><br /> 此參數會覆寫 `TreatWarningsAsErrors` 參數。|  
 |`WarningsNotAsErrors`|選擇性的 `String` 參數。<br /><br /> 指定不要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。<br /><br /> 唯有將 `TreatWarningsAsErrors` 參數設為 `true` 時，此參數才有用。|  
-|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 在組件中插入 .ico 檔，讓輸出檔在 [檔案總管] 中具有所需的外觀。 如需詳細資訊，請參閱 [-win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。|  
+|`Win32Icon`|選擇性的 `String` 參數。<br /><br /> 在組件中插入 *.ico* 檔案，讓輸出檔在 [檔案總管] 中具有所需的外觀。 如需詳細資訊，請參閱 [-win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。|  
 |`Win32Manifest`|選擇性的 `String` 參數。<br /><br /> 指定要包含的 Win32 資訊清單。|  
-|`Win32Resource`|選擇性的 `String` 參數。<br /><br /> 將 Win32 資源檔 (.res) 插入輸出檔。 如需詳細資訊，請參閱 [-win32res (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)。|  
+|`Win32Resource`|選擇性的 `String` 參數。<br /><br /> 將 Win32 資源檔 (*.res*) 插入輸出檔中。 如需詳細資訊，請參閱 [-win32res (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)。|  
   
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，此項工作還會繼承 `Microsoft.Build.Tasks.ManagedCompiler` 類別中的參數，此類別繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，而後者本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  

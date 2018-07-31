@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2599968aad98339014182edf21282a4e5e26fbcf
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234516"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179657"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -218,7 +218,7 @@ ms.locfileid: "36234516"
 
 在資料表檢視中，您一次最多可以檢視四份資料表 (在資料表不重疊的情況下)。
 
-### <a name="to-tile-tables"></a>若要並排顯示資料表
+### <a name="to-tile-tables"></a>並排顯示資料表
 
 1. 在 [負載測試分析器] 工具列上，選擇 [資料表]。
 
@@ -245,5 +245,5 @@ ms.locfileid: "36234516"
 - [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)

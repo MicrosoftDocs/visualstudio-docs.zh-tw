@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123b3c0c66d162b62d8f925ab58679a95fc3838f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326757"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153825"
 ---
-# <a name="task-element-msbuild"></a>Task 項目 (MSBuild)
+# <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 元素名稱取決於所建立之工作的名稱。  
 
  \<Project>  
@@ -41,8 +41,8 @@ ms.locfileid: "36326757"
 </Task>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -58,7 +58,7 @@ ms.locfileid: "36326757"
 |-------------|-----------------|  
 |[Output](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -86,7 +86,7 @@ ms.locfileid: "36326757"
 </Target>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

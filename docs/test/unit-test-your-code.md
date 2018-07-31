@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237327"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179212"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 

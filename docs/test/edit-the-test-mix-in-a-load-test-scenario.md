@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750931"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179511"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
 
@@ -39,13 +39,13 @@ ms.locfileid: "34750931"
 
 ![將測試加入至現有的負載測試](../test/media/ltest_addingtests.png)
 
-### <a name="to-add-more-tests-to-an-existing-scenario"></a>若要將其他測試加入至現有的情節
+### <a name="to-add-more-tests-to-an-existing-scenario"></a>將其他測試加入至現有的情節
 
 1.  開啟負載測試。
 
-2.  在 [負載測試編輯器] 中，以滑鼠右鍵按一下現有的情節，然後選擇 [新增測試]。
+2.  在 [負載測試編輯器] 中，以滑鼠右鍵按一下現有的情節，然後選擇 [加入測試]。
 
-     [新增測試] 對話方塊隨即出現。 方案中所有原本不存在於情節的 Web 效能、單元和自動程式化 UI 測試都可以加入至情節。
+     [加入測試] 對話方塊隨即出現。 方案中所有原本不存在於情節的 Web 效能、單元和自動程式化 UI 測試都可以加入至情節。
 
 3.  在 [可用的測試] 窗格中，選取您想要新增的 Web 效能、單元和自動程式化 UI 測試。 選擇向右箭號，將測試新增至 [選取的測試] 窗格。
 
@@ -55,7 +55,7 @@ ms.locfileid: "34750931"
 
 5.  (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
-##  <a name="EditingTestMixRemoveTest"></a> 從情節移除測試
+##  <a name="remove-tests-from-a-scenario"></a>從情節移除測試
  ![從現有的負載測試中移除測試](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>從情節移除測試

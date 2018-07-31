@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968628"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178409"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 
@@ -37,7 +37,7 @@ ms.locfileid: "31968628"
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>設定和管理效能計數器集合
 
-負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈] 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 您可以在 [負載測試編輯器] 中管理計數器。
+負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈] 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 請在 [負載測試編輯器] 中管理計數器。
 
 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 

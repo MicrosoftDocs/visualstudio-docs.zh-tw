@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970700"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180070"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
@@ -29,7 +29,7 @@ ms.locfileid: "31970700"
 
 -   Visual Studio 企業版
 
-## <a name="to-test-a-web-service"></a>若要測試 Web 服務
+## <a name="to-test-a-web-service"></a>測試 Web 服務
 
 1.  建立新的 Web 效能測試。 在瀏覽器開啟後，選擇 [停止]。
 
@@ -71,7 +71,7 @@ ms.locfileid: "31970700"
     > [!NOTE]
     > 您可以在 SOAP 主體中使用資料繫結，以便使用 `{{DataSourceName.TableName.ColumnName}}` 語法以資料繫結值取代任何預留位置值。
 
-13. 執行測試。 在 [Web 效能測試結果檢視器] 的上方窗格中，選取 Web 服務要求。 在下方窗格中，選取 [Web 瀏覽器] 索引標籤。接著會顯示 Web 服務所傳回的 XML，以及所有作業的結果。
+13. 執行測試。 在 [Web 效能測試結果檢視器] 的上方窗格中，選取 Web 服務要求。 在下方窗格中，選取 [網頁瀏覽器] 索引標籤。接著會顯示 Web 服務所傳回的 XML，以及所有作業的結果。
 
 ## <a name="see-also"></a>另請參閱
 

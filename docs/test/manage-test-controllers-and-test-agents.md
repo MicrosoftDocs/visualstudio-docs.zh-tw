@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c676424dbba0cea17670df5a99ac0f9dbbfb5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979304"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179732"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -32,7 +32,7 @@ ms.locfileid: "31979304"
 
 您可能想要將測試代理程式加入至其他測試控制器，或者可能必須將測試代理程式加入至您剛剛安裝的測試控制器。
 
-### <a name="to-add-a-test-agent-to-a-test-controller"></a>若要將測試代理程式加入至測試控制器
+### <a name="to-add-a-test-agent-to-a-test-controller"></a>將測試代理程式加入至測試控制器
 
 1. 選擇 [開始] > [Test Agent 組態工具]。
 
@@ -102,7 +102,7 @@ ms.locfileid: "31979304"
 > [!NOTE]
 > 若代理程式已在控制器中註冊為實驗室環境的一部分，則無法使用此程序加以移除。 您必須先使用 Microsoft Test Manager 移除環境，才能從控制器中移除這類代理程式。
 
-### <a name="to-remove-a-test-agent-from-a-test-controller"></a>若要從測試控制器移除測試代理程式
+### <a name="to-remove-a-test-agent-from-a-test-controller"></a>從測試控制器移除測試代理程式
 
 1. 如果測試控制器未向 Team 專案註冊，請遵循下列步驟進行。
 
@@ -132,7 +132,7 @@ ms.locfileid: "31979304"
 
 您可以透過使用下列程序，變更測試代理程式的狀態及其他設定。
 
-### <a name="to-change-the-settings-of-a-test-agent"></a>若要變更測試代理程式的設定
+### <a name="to-change-the-settings-of-a-test-agent"></a>變更測試代理程式的設定
 
 > [!NOTE]
 > 如果測試代理程式註冊至已向 Team 專案註冊的測試控制器，請變更 Microsoft Test Manager 中的設定。
@@ -171,7 +171,7 @@ ms.locfileid: "31979304"
 > [!NOTE]
 > 如果您從具有現有環境的 Team 專案集合解除測試控制器的註冊，則即使您移動該 Team 專案集合，並對其重新註冊測試控制器，該環境仍會存在。
 
-### <a name="to-configure-a-test-controller"></a>若要設定測試控制器
+### <a name="to-configure-a-test-controller"></a>設定測試控制器
 
 1. 若要執行工具以便隨時重新設定測試控制器，請依序選擇 [開始] > [所有程式] >  [Microsoft Visual Studio] > [Microsoft Visual Studio Test Controller 組態工具]。
 

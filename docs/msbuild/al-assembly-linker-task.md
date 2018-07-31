@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945893"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177834"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。  
@@ -59,7 +59,7 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 |`ProductVersion`|選擇性的 `String` 參數。<br /><br /> 為組件中的 [`ProductVersion`] 欄位指定字串。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/productv[ersion]` 選項的說明文件。|  
 |`ResponseFiles`|選擇性的 `String[]` 參數。<br /><br /> 指定包含要傳遞至組件連結器之其他選項的回應檔。|  
 |`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具 (例如 resgen.exe) 的路徑。|  
-|`SourceModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 一或多個要編譯到組件的模組。 模組將列在所產生組件的資訊清單中，且仍需依序散發和提供，才能載入組件。 傳遞到此參數的項目可能具有名為 `Target` 的其他中繼資料，以指定工作要將檔案複製到其中的路徑和檔案名稱，之後它會將這個新檔案編譯成組件。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 的說明文件。 此參數 (Parameter) 對應到傳遞至 Al.exe 的模組清單，但不含特定參數 (Switch)。|  
+|`SourceModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 一或多個要編譯到組件的模組。 模組將列在所產生組件的資訊清單中，且仍需依序散發和提供，才能載入組件。 傳遞到此參數的項目可能具有名為 `Target` 的其他中繼資料，以指定工作要將檔案複製到其中的路徑和檔案名稱，之後它會將這個新檔案編譯成組件。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 的說明文件。 此參數 (Parameter) 對應到傳遞至 *Al.exe* 的模組清單，但不含特定參數 (Switch)。|  
 |`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式：`library` (程式碼程式庫)、`exe` (主控台應用程式) 或 `win` (Windows 應用程式)。 預設為 `library`。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/t[arget]` 選項。|  
 |`TemplateFile`|選擇性的 `String` 參數。<br /><br /> 指定要從其中繼承所有組件中繼資料的組件，但不包括 [文化特性] 欄位。 指定的組件必須具有強式名稱。<br /><br /> 使用 `TemplateFile` 參數建立的組件會是附屬組件。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/template` 選項。|  
 |`Timeout`|選擇性的 `Int32` 參數。<br /><br /> 指定時間量 (以毫秒為單位)，在此時間量之後會終止工作可執行檔。 預設值是 `Int.MaxValue`，表示沒有逾時期間。|  

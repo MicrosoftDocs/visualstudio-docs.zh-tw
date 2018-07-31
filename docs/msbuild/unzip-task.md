@@ -24,17 +24,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a46f2a079cc35e6c1add9e53abdcbdd283ddb9e
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059397"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151209"
 ---
 # <a name="unzip-task"></a>Unzip 工作
-將 `.zip` 封存解壓縮至指定的位置。
+將 *.zip* 封存解壓縮至指定的位置。
 
-**注意︰**`Unzip` 工作僅適用於 MSBuild 15.8 和更新版本。
+>[!NOTE]
+>`Unzip` 工作僅適用於 MSBuild 15.8 和更新版本。
   
 ## <a name="parameters"></a>參數  
  下表說明 `Unzip` 工作的參數。  
@@ -47,7 +48,7 @@ ms.locfileid: "37059397"
 |`SourceFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個檔案以便解壓縮。 指定多個檔案時，它們會依序解壓縮到相同的資料夾。|
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會解壓縮封存，並覆寫任何唯讀檔案。
@@ -66,6 +67,6 @@ ms.locfileid: "37059397"
 </Project>
 ```
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

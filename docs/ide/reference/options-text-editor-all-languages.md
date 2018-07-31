@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749225"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175731"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。
@@ -104,13 +104,13 @@ ms.locfileid: "34749225"
 
  啟用按一下方式的 URL 巡覽
 
- 選取此選項，且滑鼠游標經過編輯器的 URL 上方時，就會變為指示手形狀。 您可以按一下 URL，在 Web 瀏覽器中顯示手形指標所指示的網頁。
+ 選取此選項，且滑鼠游標經過編輯器的 URL 上方時，就會變為指示手形狀。 您可以按一下 URL，在網頁瀏覽器中顯示手形指標所指示的網頁。
 
  巡覽列
 
  選取時，會在程式碼編輯器的頂端顯示 [導覽列]。 它的下拉式 [物件] 和 [成員] 清單，可讓您選擇程式碼中的特定物件、從其成員選擇，並在程式碼編輯器中巡覽至選取之成員的宣告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

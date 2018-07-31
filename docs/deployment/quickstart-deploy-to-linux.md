@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252358"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341744"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>將 ASP.NET Core 應用程式發行至 App Service 在 Linux 上使用 Visual Studio
 
@@ -45,6 +45,13 @@ ms.locfileid: "39252358"
 1. 選取 [建立]。 Visual Studio 部署至 Azure App Service 的應用程式和 web 應用程式載入瀏覽器中。 專案屬性**發佈** 窗格會顯示網站 URL 和其他詳細資料。
 
     ![發佈屬性窗格中顯示的設定檔摘要](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>清除資源
+
+在前述步驟中，您可以建立資源群組中的 Azure 資源。 如果您不希望在未來需要這些資源，您可以藉由刪除資源群組中刪除它們。
+從 Azure 入口網站左側功能表中，選取**資源群組**，然後選取**myResourceGroup**。
+在資源群組頁面上，確定列出的資源是您想要刪除的項目。
+選取 **刪除**，型別**myResourceGroup**文字方塊中，然後選取**刪除**。
 
 ## <a name="next-steps"></a>後續步驟
 

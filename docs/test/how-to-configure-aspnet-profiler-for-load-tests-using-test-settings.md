@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8910ee5aa73e057849ad6b72b67c8b27ba9b0e6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969367"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175548"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
 
@@ -33,11 +33,11 @@ ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從
 
 下列程序描述如何設定 ASP.NET 分析工具的診斷資料配接器。
 
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>若要針對您的測試設定來設定 ASP.NET 分析工具
+## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>針對您的測試設定來設定 ASP.NET 分析工具
 
 執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
 
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>若要針對測試設定來設定 ASP.NET 分析工具
+### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>針對測試設定來設定 ASP.NET 分析工具
 
 1.  選取要用來收集 ASP.NET 分析工具資料的角色。
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa68a4db42874a157b5ee3a0665d3642e360486
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233993"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180317"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 
@@ -55,7 +55,7 @@ using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
 using MouseButtons = System.Windows.Forms.MouseButtons;
 ```
 
- 包含 Windows 使用者介面 (UI) 的 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> 命名空間。 若為網頁 UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>，若為 Windows Presentation Foundation UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>。
+ 包含 Windows 使用者介面 (UI) 的 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> 命名空間。 針對網頁 UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>，針對 Windows Presentation Foundation UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>。
 
 ####  <a name="UIMapClass"></a> UIMap 類別
  檔案的下一個區段是 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別。

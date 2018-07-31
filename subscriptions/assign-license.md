@@ -9,12 +9,12 @@ description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e43e9050e2b021025ed4ae104f4345bce6e8eee3
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131927"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178396"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
@@ -24,7 +24,7 @@ ms.locfileid: "39131927"
 
 ## <a name="individual-assignments"></a>個人工作分派
 
-以下是如何將 Visual Studio 訂用帳戶授權指派給新使用者，使其可以存取訂用帳戶權益。
+以下說明如何將 Visual Studio 訂用帳戶授權指派給新使用者，使其可以存取訂用帳戶權益。
 
 1. 登入[系統管理員入口網站](https://manage.visualstudio.com)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "39131927"
 
 4. 在您新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
 
-   ![只要您想就重新傳送啟用電子郵件給任何使用者或多位使用者](media\resend-subscriber-activation-emails.png) 
+   ![您可隨時重新傳送啟用電子郵件給任何使用者或多位使用者](media\resend-subscriber-activation-emails.png) 
 
 ## <a name="bulk-assignments"></a>大量指派
 

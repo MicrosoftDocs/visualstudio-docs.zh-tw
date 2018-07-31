@@ -95,12 +95,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302622"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176537"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 

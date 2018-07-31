@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c479435ccd37c260c199b66a3a6fee20ce3e602
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235121"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203750"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數加入至負載測試回合設定
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數新增至負載測試回合設定
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
 

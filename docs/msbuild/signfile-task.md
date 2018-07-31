@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329cef79c529850bbe90a62cc24d5ec989379aa9
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104174"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154841"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 
@@ -49,7 +49,7 @@ ms.locfileid: "33104174"
   
 ## <a name="remarks"></a>備註
 
- 除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
+ 除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
   
 ## <a name="example"></a>範例
 
@@ -75,6 +75,6 @@ ms.locfileid: "33104174"
 > [!NOTE]
 > 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

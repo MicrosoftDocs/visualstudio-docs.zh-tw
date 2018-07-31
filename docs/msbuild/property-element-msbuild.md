@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a30dde405c172a1bf29f69edf4e3b9d1b79eee
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327355"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154976"
 ---
-# <a name="property-element-msbuild"></a>Property 項目 (MSBuild)
+# <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 包含使用者定義的屬性名稱和值。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個屬性，都必須指定為 `PropertyGroup` 項目的子系。  
 
  \<Project>  
@@ -39,8 +39,8 @@ ms.locfileid: "36327355"
 </Property>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -48,10 +48,10 @@ ms.locfileid: "36327355"
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -63,7 +63,7 @@ ms.locfileid: "36327355"
  此文字會指定屬性值，而且可能包含 XML。  
 
 ## <a name="remarks"></a>備註  
- 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如，如果 `builddir` 屬性值為 `build`，即會將 `$(builddir)\classes` 解析為 "build\classes"。 如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
+ 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如，如果 `builddir` 屬性值為 `build`，即會將 `$(builddir)\classes` 解析為 *build\classes*。 如需有關屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
 
 ## <a name="example"></a>範例  
  下列程式碼會將 `Optimization` 屬性設為 `false`，而且如果 `Version` 屬性是空的，會將 `DefaultVersion` 屬性設為`1.0`。  
@@ -75,6 +75,6 @@ ms.locfileid: "36327355"
 </PropertyGroup>  
 ```  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [MSBuild 屬性](../msbuild/msbuild-properties.md)  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

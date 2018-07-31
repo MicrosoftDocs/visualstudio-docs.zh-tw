@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967953"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176758"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>編輯測試混合以指定負載測試情節中的網頁瀏覽器類型
 
-「瀏覽器混合」提供在負載測試情節中更真實的模擬負載方法。 負載是使用 Web 瀏覽器的異質混合，而非只是以單一的 Web 瀏覽器來產生。 您會建立與應用程式搭配使用之 Web 瀏覽器的極為近似混合。
+「瀏覽器混合」提供在負載測試情節中更真實的模擬負載方法。 負載是使用網頁瀏覽器的異質混合，而非只是以單一的網頁瀏覽器來產生。 您會建立與應用程式搭配使用之網頁瀏覽器的極為近似混合。
 
- 瀏覽器混合會指定在負載測試情節中，一位虛擬使用者執行特定 Web 瀏覽器類型的可能性。 當您建立負載測試時，可能想要模擬多個 Web 瀏覽器所產生的負載。 當您從提供的 Web 瀏覽器集合，將 Web 瀏覽器類型加入至混合時，所選 Web 瀏覽器的一組關聯標頭就會加入至由 Web 效能測試所送出的每個 HTTP 要求。
+ 瀏覽器混合會指定在負載測試情節中，一位虛擬使用者執行特定網頁瀏覽器類型的可能性。 當您建立負載測試時，可能想要模擬多個網頁瀏覽器所產生的負載。 當您從提供的網頁瀏覽器集合，將網頁瀏覽器類型加入至混合時，所選網頁瀏覽器的一組關聯標頭就會加入至由 Web 效能測試所送出的每個 HTTP 要求。
 
- 瀏覽器混合的運作方式與其他混合選項相同。 Web 瀏覽器類型會根據瀏覽器混合，隨機地與虛擬使用者相關聯。 該使用者的測試則會根據您在混合中指定的可能性，而在特定的 Web 瀏覽器上執行。
+ 瀏覽器混合的運作方式與其他混合選項相同。 網頁瀏覽器類型會根據瀏覽器混合，隨機地與虛擬使用者相關聯。 該使用者的測試則會根據您在混合中指定的可能性，而在特定的網頁瀏覽器上執行。
 
- 在指定瀏覽器混合之後，您依然可以在瀏覽器混合中加入或移除 Web 瀏覽器類型。 您也可以使用混合控制來變更瀏覽器混合的散發。 混合控制讓您能夠輕鬆調整情節中瀏覽器的分佈。
+ 在指定瀏覽器混合之後，您依然可以在瀏覽器混合中加入或移除網頁瀏覽器類型。 您也可以使用混合控制來變更瀏覽器混合的散發。 混合控制讓您能夠輕鬆調整情節中瀏覽器的分佈。
 
-## <a name="adding-new-browsers-to-a-scenario"></a>將新瀏覽器加入至情節
+## <a name="add-new-browsers-to-a-scenario"></a>將新瀏覽器加入至情節
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>將新瀏覽器加入至情節
 
@@ -47,7 +47,7 @@ ms.locfileid: "31967953"
 
 4.  完成新增瀏覽器後，選擇 [確定]。
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> 從情節移除瀏覽器
+##  <a name="remove-browsers-from-a-scenario"></a>從情節移除瀏覽器
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>從情節移除瀏覽器
 

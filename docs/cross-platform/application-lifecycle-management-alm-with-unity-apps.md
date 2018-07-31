@@ -1,5 +1,5 @@
 ---
-title: 應用程式生命週期管理 (ALM) 與 Unity 應用程式 | Microsoft Docs
+title: 應用程式生命週期管理 (ALM) (含 Unity 應用程式) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237506"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232328"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 
@@ -93,18 +93,18 @@ ms.locfileid: "35237506"
 |手動測試|[是]||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
 |程式碼涵蓋範圍|N/A|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具 (英文)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
+|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
 ## <a name="improve-code-quality"></a>改善程式碼品質
 
-參考連結︰**[改善程式碼品質](../test/improve-code-quality.md)**
+參考連結：**[改善程式碼品質](../test/improve-code-quality.md)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
+|[分析受控程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
 |[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
-|[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
+|[測量受控程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
 |[效能總管](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 

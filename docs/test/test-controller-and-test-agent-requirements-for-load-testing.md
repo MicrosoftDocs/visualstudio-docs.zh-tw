@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f2a598ba816b12ca7027495e3775d160a7aefd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974854"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178487"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的 Test Controller 和 Test Agent 需求
 
