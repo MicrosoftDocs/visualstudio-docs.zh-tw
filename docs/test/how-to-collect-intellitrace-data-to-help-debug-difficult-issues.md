@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976893"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203848"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 資料以協助偵錯困難的問題
 
@@ -27,7 +27,7 @@ ms.locfileid: "31976893"
 > [!NOTE]
 > IntelliTrace 只會在使用 Managed 程式碼所撰寫的應用程式上運作。 如果您要測試使用瀏覽器做為用戶端的 Web 應用程式，就不應該在測試設定中針對該用戶端啟用 IntelliTrace，因為沒有任何 Managed 程式碼可進行追蹤。 在此情況下，您可能會想要設定環境並且在 Web 伺服器上遠端收集 IntelliTrace 資料。
 
-IntelliTrace 資料儲存在副檔名為 iTrace 的檔案中。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷資訊的 IntelliTrace 檔案會自動附加至此 Bug 中。
+IntelliTrace 資料儲存在副檔名為 *.iTrace* 的檔案中。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷資訊的 IntelliTrace 檔案會自動附加至此 Bug 中。
 
 > [!NOTE]
 > 測試成功時，IntelliTrace does 的診斷資料配接器不會建立 IntelliTrace 檔。 它只會在測試案例失敗或您送出 Bug 時儲存檔案。
@@ -49,7 +49,7 @@ IntelliTrace 資料儲存在副檔名為 iTrace 的檔案中。 在您執行測�
 
 執行這個程序中的步驟之前，您必須先從 Microsoft Test Manager 或 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
 
-### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>若要設定利用 IntelliTrace 診斷資料配接器收集的資料
+### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>設定利用 IntelliTrace 診斷資料配接器收集的資料
 
 1.  選取要用來收集 IntelliTrace 資料的角色。
 
@@ -73,7 +73,7 @@ IntelliTrace 資料儲存在副檔名為 iTrace 的檔案中。 在您執行測�
 
 5.  選擇 [一般] 索引標籤。選取 [僅 IntelliTrace 事件] 記錄重大診斷事件，同時對測試期間的效能造成最小影響。
 
-     **-** 或者-
+     -或-
 
      選取 [IntelliTrace 事件和呼叫資訊] 記錄診斷事件和顯示呼叫資訊的方法層級追蹤。 此追蹤層級可能會在您執行測試時對效能造成影響。
 

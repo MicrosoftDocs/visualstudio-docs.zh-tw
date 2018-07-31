@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f44ad3a7c44f9de592d3b4d4add261fca74f5c39
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281296"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231852"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 
@@ -99,9 +99,9 @@ Visual Studio 以及 Visual Studio Team Services 和 Team Foundation Server 會�
 
 |功能|支援 Xamarin|其他註解|
 |-------------|----------------------------|-------------------------|
-|[分析受控碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]||
+|[分析受控程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]||
 |[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|[是]||
-|[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]||
+|[測量受控程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]||
 |[效能總管](../profiling/performance-explorer.md)|否|請改為透過 Xamarin Studio 來使用 [Xamarin 分析工具](/xamarin/cross-platform/deploy-test/) 。 請注意 Xamarin 分析工具目前為預覽狀態，而且尚未適用於 Windows 目標。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Mono 架構。|
 

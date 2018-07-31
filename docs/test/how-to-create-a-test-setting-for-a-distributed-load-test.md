@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751815"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180304"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 
@@ -41,7 +41,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
 ## <a name="create-a-test-setting-for-a-distributed-load-test"></a>建立分散式負載測試的測試設定
 
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>若要加入分散式負載測試的測試設定
+### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>加入分散式負載測試的測試設定
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 [方案項目]，指向 [新增]，然後選擇 [新增項目]。
 
@@ -185,7 +185,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     > [!NOTE]
     > 如果您必須變更測試設定，請選擇 [測試]，然後選擇 [編輯測試設定] 並指向您建立的測試設定。
 
-### <a name="to-remove-a-test-settings-from-your-solution"></a>若要從您的方案移除測試設定
+### <a name="to-remove-a-test-settings-from-your-solution"></a>從您的方案移除測試設定
 
 在 [方案總管] 中的 [方案項目] 下，以滑鼠右鍵按一下您所要移除的測試設定，再選擇 [移除]。
 

@@ -1,7 +1,7 @@
 ---
 title: 目標建置順序 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178952"
 ---
-# <a name="target-build-order"></a>目標建置順序
+# <a name="target-build-order"></a>目標組建順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
 -   `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
   
  告知 MSBuild，`Serve` 目標相依於 `Chop` 目標和 `Cook` 目標。 MSBuild 會執行 `Chop` 目標，然後在執行 `Serve` 目標之前先執行 `Cook` 目標。  
   
-## <a name="beforetargets-and-after-targets"></a>BeforeTargets 和 AfterTargets  
+## <a name="beforetargets-and-aftertargets"></a>BeforeTargets 和 AfterTargets  
  在 MSBuild 4.0 中，您可以使用 `BeforeTargets` 和 `AfterTargets` 屬性來指定目標順序。  
   
  請考慮下列指令碼。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>判斷目標建置順序  
+## <a name="determine-the-target-build-order"></a>判斷目標建置順序  
  MSBuild 會以如下方式判斷目標建置順序：  
   
 1.  執行 `InitialTargets` 目標。  
@@ -115,11 +116,11 @@ ms.lasthandoff: 04/19/2018
   
 4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
   
-5.  執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
+5.  執行或略過目標之前，就會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
   
 6.  執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
   
 7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)

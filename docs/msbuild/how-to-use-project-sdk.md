@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee92d81f9b22fb0fe60f8c51ce4e9d53c606f1e7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077323"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151011"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
@@ -59,6 +59,9 @@ ms.locfileid: "39077323"
     ```
 
     如上所述，隱含的匯入會新增到專案的頂端和底部。  `Sdk` 屬性的格式為 `Name[/Version]`，其中 Version 是選擇性的。  例如，您可以指定 `My.Custom.Sdk/1.2.3`。
+
+    > [!NOTE]
+    > 這是目前在 Visual Studio for Mac 中參考專案 SDK 的唯一方法。
 
 2. 使用最上層的 `<Sdk/>` 元素：
 

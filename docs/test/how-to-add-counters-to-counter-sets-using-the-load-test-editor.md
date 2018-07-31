@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967881"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203634"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器加入至計數器集合
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器新增至計數器集合
 
 當您使用 [負載測試精靈] 建立負載測試時，您會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "31967881"
 7.  選擇 [確定] 。
 
     > [!NOTE]
-    > 另一個將計數器加入至計數器集合的方法是，按一下滑鼠右鍵選擇現有的計數器或計數器類別，選擇 [複製]，然後將它們貼至另一個計數器集合節點。 如果也複製了其他不需要的計數器，可以予以刪除。
+    > 另一個將計數器加入至計數器集合的方法是，選擇現有的計數器或計數器類別，選擇 [複製]，然後將它們貼至另一個計數器集合節點。 如果也複製了其他不需要的計數器，可以予以刪除。
 
 ## <a name="see-also"></a>另請參閱
 

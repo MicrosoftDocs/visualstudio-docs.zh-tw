@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668309"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179436"
 ---
-# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以模型化虛擬使用者活動
+# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以建構虛擬使用者活動模型
 
 負載模式屬性會指定在負載測試期間，如何調整模擬的使用者負載。 Visual Studio 提供三種內建的負載模式：常數、逐步執行和以目標為依據。 請根據您的負載測試目標，選擇負載模式並將屬性調整為適當的層級。
 
@@ -45,7 +45,7 @@ ms.locfileid: "35668309"
  例如，具有 [初始使用者計數] 為 1、[最大使用者計數] 為 100、[逐步執行持續期間 (秒)] 為 10 以及 [逐步執行使用者計數] 為 1 的逐步執行負載，會建立從 1 開始，且每隔 10 秒加 1 直到達到 100 個使用者的使用者負載模式。
 
 > [!NOTE]
-> 如果總測試持續期間小於逐漸增加至最大使用者負載所需的時間，在經過持續期間之後，測試就會停止，並且不會到達最大使用者計數目標。
+> 如果總測試持續期間小於逐漸增加至最大使用者負載所需的時間，在經過持續期間之後，測試就會停止，並且不會到達 [最大使用者計數] 目標。
 
 
  您可以使用逐步執行的目標增加負載，直到伺服器到達效能明顯低落的點。 隨著負載增加，伺服器最終會耗盡資源。 逐步執行負載是用來判斷何時使用者數目會到達上限的好方法。 有了逐步執行負載，您還必須緊密地監視代理程式資源，以確保代理程式能夠產生想要的負載。
@@ -58,7 +58,7 @@ ms.locfileid: "35668309"
 
 -   初始使用者計數：100
 
--   最大使用者計數：2,000
+-   最大使用者計數：2000
 
 -   逐步執行持續期間 (秒)：1,800
 
@@ -110,12 +110,12 @@ ms.locfileid: "35668309"
 
 |工作|相關主題|
 |-----------|-----------------------|
-|**指定負載測試的初始負載模式：** 當您使用 [新增負載測試精靈] 來建立負載測試時，就會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
+|**指定負載測試的初始負載模式：** 當您使用 [新增負載測試精靈] 來建立負載測試時，就會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**編輯負載測試的負載模式：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯負載模式。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**指定負載測試情節中的虛擬使用者是否應該包含 Web 快取資料：** 您可以變更 [新使用者的百分比] 屬性，以便影響負載測試模擬虛擬使用者網頁瀏覽器所執行之 Web 快取的方式。|-   [如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**指定步驟負載模式的逐步遞增時間：**[逐步遞增時間] 屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
-## <a name="changing-the-load-pattern"></a>變更負載模式
+## <a name="change-the-load-pattern"></a>變更負載模式
 
  在您使用 [新增負載測試精靈] 建立負載測試之後，就可以使用 [負載測試編輯器]，將與情節建立關聯的負載模式屬性變更為符合您測試目標的層級。
 
@@ -129,7 +129,7 @@ ms.locfileid: "35668309"
 > 您也可以使用負載測試外掛程式，以程式設計方式變更負載屬性。 如需詳細資訊，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 
-### <a name="to-change-the-load-pattern"></a>若要變更負載模式
+### <a name="to-change-the-load-pattern"></a>變更負載模式
 
 1.  開啟負載測試。
 

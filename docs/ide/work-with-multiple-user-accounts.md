@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749167"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179693"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

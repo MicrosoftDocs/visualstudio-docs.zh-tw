@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b95d6e0e03aa0ed9aeb84a1709c5806c13946c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058330"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154135"
 ---
 # <a name="vcmessage-task"></a>VCMessage 工作
 在組建期間記錄警告和錯誤訊息。  
@@ -41,7 +41,7 @@ ms.locfileid: "37058330"
 |---------------|-----------------|  
 |**引數**|選擇性的 **String** 參數。<br /><br /> 要顯示的訊息清單 (以分號分隔)。|  
 |**程式碼**|必要的 **String** 參數。<br /><br /> 限定訊息的錯誤號碼。|  
-|**Type**|選擇性的 **String** 參數。<br /><br /> 指定要發出訊息的類型。 指定 `"Warning"` 發出警告訊息，或 `"Error"` 發出錯誤訊息。|  
+|**Type**|選擇性的 **String** 參數。<br /><br /> 指定要發出訊息的類型。 指定「警告」發出警告訊息，或「錯誤」發出錯誤訊息。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

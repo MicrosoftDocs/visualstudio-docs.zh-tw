@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中針對負載測試模擬網站的真實使用情況
+title: 針對負載測試模擬網站的真實使用情況
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9ec5777bc1a2bfffc650497314a219d071057beb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977040"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177262"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>使用測試混合模型在負載測試中模擬網站或應用程式的預期實際使用情況
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>使用測試混合模型在負載測試中模擬網站或應用程式的預期實際使用情況
 
 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。
 
@@ -66,7 +66,7 @@ ms.locfileid: "31977040"
 
  使用步調測試混合時，[測試反覆項目間的考慮時間] 設定並不適用。
 
-#### <a name="applying-distribution-to-pacing-delay"></a>將分佈套用到步調延遲
+#### <a name="apply-distribution-to-pacing-delay"></a>將分佈套用到步調延遲
  負載測試情節中的 [將分佈套用到步調延遲] 屬性值可以設定為 true 或 false：
 
 -   **True**：情節將套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位的值所指定的一般統計散發延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。

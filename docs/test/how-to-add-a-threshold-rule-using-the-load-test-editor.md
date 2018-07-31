@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965542"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179875"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用負載測試編輯器新增臨界值規則
 
@@ -36,7 +36,7 @@ ms.locfileid: "31965542"
 
      [新增臨界值規則] 對話方塊隨即出現。
 
-5.  您可以選擇兩種規則類型：比較常數和比較計數器。 請選取適當的類型並設定其值。
+5.  您可以選擇兩種規則類型：**比較常數**和**比較計數器**。 請選取適當的類型並設定其值。
 
     > [!NOTE]
     > 將 [超出時提醒] 屬性設定為 [True]，表示超出臨界值會是一個問題，或設為 [False]，表示未達臨界值會是一個問題。
@@ -46,4 +46,3 @@ ms.locfileid: "31965542"
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

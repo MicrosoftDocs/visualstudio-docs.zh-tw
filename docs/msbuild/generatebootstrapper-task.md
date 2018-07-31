@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a81b02d4179c58c63c1429aa2e522bb39bb9aaf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945932"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177733"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
@@ -86,7 +86,7 @@ ms.locfileid: "37945932"
   
      選擇性的 `String` 輸出參數。  
   
-     指定 setup.exe 的建置位置  
+     指定 *setup.exe* 的建置位置  
   
 -   `ComponentsLocation`  
   

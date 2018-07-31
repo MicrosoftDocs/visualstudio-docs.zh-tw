@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cb64626034c8c9bf03875385a80ebc417bf05dcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751802"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204059"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>如何：使用負載測試分析器中的計數器面板來分析臨界值違規
 
@@ -39,11 +39,11 @@ ms.locfileid: "34751802"
 
  ![預先間隔期間的警告臨界值違規](../test/media/icon_ltest_5.gif) 在前一個間隔中發生了警告臨界值違規。
 
-## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>若要在計數器面板中分析臨界值違規
+## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>在計數器面板中分析臨界值違規
 
 1.  在負載測試完成或是載入測試結果之後，於 [負載測試分析器] 的工具列中選擇 [圖形] 或 [資料表]。
 
-     [計數器] 面板會在 [圖形] 檢視或 [資料表] 檢視中顯示。
+     [計數器] 面板就會顯示在 [圖形] 檢視或 [資料表] 檢視中。
 
 2.  如果看不見 [計數器] 面板，請選擇工具列上的 [顯示計數器面板]。
 

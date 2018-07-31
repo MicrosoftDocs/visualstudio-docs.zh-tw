@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1360b63eb1469efe4948f2859e28a567b00ad1a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117260"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176924"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 

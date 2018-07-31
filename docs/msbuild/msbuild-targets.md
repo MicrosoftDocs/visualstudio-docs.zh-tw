@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ae74ed310da6f937dcadf168630102c004877
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081435"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176108"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   
-## <a name="declaring-targets-in-the-project-file"></a>在專案檔中宣告目標  
+## <a name="declare-targets-in-the-project-file"></a>在專案檔中宣告目標  
  在專案檔中，目標是使用 [Target](../msbuild/target-element-msbuild.md) 項目所宣告。 例如，下列 XML 會建立名為 Construct 的目標，其接著會呼叫具有 Compile 項目類型的 Csc 工作。  
   
 ```xml  
@@ -92,7 +92,7 @@ Reference: 4.0
   
  目標批次處理很少用於真實的組建。 工作批次處理較為常見。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
-## <a name="incremental-builds"></a>累加建置  
+## <a name="incremental-builds"></a>累加組建  
  累加組建是已最佳化的建置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 和 `Outputs` 屬性，並指出目標預期作為輸入的項目，以及它產生作為輸出的項目。  
   
  如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)。  

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117247"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177863"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -97,7 +97,7 @@ ms.locfileid: "37117247"
 
 ## <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
-您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
+您可以使用 [測試總管]，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
 
 ![使用 [測試總管] 執行單元測試](media/testexplorer.png)
 

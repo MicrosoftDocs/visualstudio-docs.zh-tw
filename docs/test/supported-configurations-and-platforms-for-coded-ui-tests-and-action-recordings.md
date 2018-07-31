@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693883"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178815"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -61,11 +61,11 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 |Windows Forms 2.0 和更新版本|完全支援。 **注意：**  完整支援 NetFx 控制項，但並未支援所有協力廠商控制項。|
 |WPF 3.5 和更新版本|完全支援。<br /><br /> **注意** 完全支援 NetFx 控制項，但並非所有協力廠商控制項都可支援。|
 |Windows Win32|使用時可能會出現某些已知問題，且未正式支援。|
-|MFC|部分支援。 如需有關支援哪些功能的詳細資料，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=206511) 。|
+|MFC|部分支援。 請參閱[UITest 架構](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) \(英文\) 以取 得支援之功能的詳細資料。|
 |SharePoint|完全支援。|
 |Office 用戶端應用程式|不支援。|
 |Dynamics CRM Web 用戶端|完全支援。|
-|Dynamics (Ax) 2012 用戶端|部分支援動作記錄和播放。 如需詳細資訊，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=232677) 。|
+|Dynamics (Ax) 2012 用戶端|部分支援動作記錄和播放。 請參閱[Visual Studio 10 針對 Microsoft Dynamics 的自動程式化 UI / 動作記錄支援](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) \(英文\) 以取得詳細資料。|
 |SAP|不支援。|
 |Citrix/終端機服務|我們不建議在終端機伺服器上錄製動作。 錄製器不支援同時執行多個執行個體。|
 |PowerBuilder|部分支援。<br /><br /> 支援的程度相當於啟用 PowerBuilder 控制項的協助工具。|

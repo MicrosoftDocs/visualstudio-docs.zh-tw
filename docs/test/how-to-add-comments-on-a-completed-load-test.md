@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c8efc27dd7e9dd6b201421aed17ded3dd31342cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d21c00dbb40c0262bdeae85f4957cd78d253f1a2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967135"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176036"
 ---
-# <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>如何：在分析已完成的負載測試時加入註解
+# <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>如何：在分析已完成的負載測試時新增註解
 
 在負載測試完成或您載入測試結果之後，您可以使用 [負載測試分析器] 將描述和分析註解加入至負載測試。 描述和分析註解會隨著負載測試結果永久儲存。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "31967135"
 
 ![加入負載測試備註的分析對話方塊](../test/media/ltest_ananotes.png)
 
-## <a name="to-add-a-comment-to-a-load-test"></a>若要將註解加入至負載測試
+## <a name="to-add-a-comment-to-a-load-test"></a>將註解加入至負載測試
 
 1.  在負載測試完成或您載入測試結果之後，請選擇 [負載測試分析器] 工具列上的 [新增分析注意事項]。
 

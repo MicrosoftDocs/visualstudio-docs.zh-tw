@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c323fd5f5f54bbc5c53934505c43dd20a9d58591
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950487"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179498"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。
@@ -43,7 +43,7 @@ ms.locfileid: "31950487"
 
  判斷是從 [發行位置]  直接執行應用程式 (選取 [應用程式只能在線上時使用]  時)，還是將應用程式安裝並新增至 [開始]  功能表以及 [控制台]  中的 [新增或移除程式]  項目 (選取 [應用程式也可以在離線時使用]  時)。
 
- 針對 WPF Web 瀏覽器應用程式，停用 [應用程式也可以在離線時使用]  選項，因為這類應用程式只能在上線時使用。
+ 針對 WPF 網頁瀏覽器應用程式，[應用程式也可以在離線時使用] 選項已停用，因為這類應用程式只能在上線時使用。
 
  **應用程式檔案**
 
@@ -79,7 +79,7 @@ ms.locfileid: "31950487"
 
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [發行 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)
 - [如何：使用發行精靈發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

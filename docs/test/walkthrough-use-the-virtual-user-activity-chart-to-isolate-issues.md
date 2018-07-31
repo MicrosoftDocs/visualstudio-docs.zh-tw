@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976428"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179826"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來隔離問題
 
@@ -67,7 +67,7 @@ ms.locfileid: "31976428"
 
 執行負載測試並且收集虛擬使用者活動資料之後，您可以在虛擬使用者活動圖中使用 [負載測試分析器] 的 [詳細資料] 檢視，檢視負載測試結果中的資料。 此外，您還可以使用虛擬使用者活動圖，協助您找出負載測試中的效能問題。
 
-### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>若要在負載測試結果中使用虛擬使用者活動圖
+### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>在負載測試結果中使用虛擬使用者活動圖
 
 1.  在負載測試完成執行之後，[負載測試分析器] 中會顯示負載測試結果的 [摘要] 頁面。 選擇工具列上的 [圖形] 按鈕。
 

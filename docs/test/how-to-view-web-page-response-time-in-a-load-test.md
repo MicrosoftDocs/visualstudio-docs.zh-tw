@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668315"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178289"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用負載測試分析器在負載測試中檢視網頁回應時間
 
@@ -29,7 +29,7 @@ ms.locfileid: "35668315"
 
 -   測試反覆項目符合網頁之回應時間目標的百分比。
 
--   您可以在 [負載測試分析器] 中使用 [資料表] 檢視或 [圖形] 檢視來分析網頁回應時間。
+-   您可以在 [負載測試分析器] 中使用 [資料表] 檢視或 [圖形] 檢視來分析網頁回應時間：
 
 -   在資料表檢視中分析網頁回應時間
 

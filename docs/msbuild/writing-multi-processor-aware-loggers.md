@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 87f54ec6e284a913f8bdb87826f585b7c4f38a4c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326725"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233135"
 ---
-# <a name="writing-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
+# <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  
   
 ## <a name="multi-processor-logging-challenges"></a>多處理器記錄挑戰  
@@ -33,7 +33,7 @@ ms.locfileid: "36326725"
  為解決與多處理器相關的建置問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援兩種記錄模式，分別為中央和分散式。  
   
 ### <a name="central-logging-model"></a>集中式記錄模型  
- 在集中式記錄模型中，MSBuild.exe 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。  
+ 在集中式記錄模型中，*MSBuild.exe* 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。  
   
  ![中央記錄器模型](../msbuild/media/centralnode.png "CentralNode")  
   
@@ -67,13 +67,13 @@ public interface INodeLogger: ILogger
 -   自訂預先製作的 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 轉送記錄器。  
   
 -   撰寫您自己的自訂轉送記錄器。  
-  
- 您可以修改 ConfigurableForwardingLogger 使符合您的需求。 若要這樣做，請使用 MSBuild.exe 在命令列上呼叫記錄器，並列出您想要記錄器轉送到中央節點的組建事件。  
-  
- 或者，您也可以建立自訂的轉送記錄器。 建立自訂轉送記錄器，可以微調記錄器的行為。 不過，建立自訂轉送記錄器會比只自訂 ConfigurableForwardingLogger 更為複雜。 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
+
+您可以修改 ConfigurableForwardingLogger 使符合您的需求。 若要這樣做，請使用 *MSBuild.exe* 在命令列上呼叫記錄器，並列出您想要記錄器轉送到中央節點的組建事件。  
+
+或者，您也可以建立自訂的轉送記錄器。 建立自訂轉送記錄器，可以微調記錄器的行為。 不過，建立自訂轉送記錄器會比只自訂 ConfigurableForwardingLogger 更為複雜。 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>使用 ConfigurableForwardingLogger 進行簡單的分散式記錄  
- 若要附加 ConfigurableForwardingLogger 或自訂的轉送記錄器，請在 MSBuild.exe 命令列組建中使用 `/distributedlogger` 參數 (簡寫為 `/dl`)。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器一律有兩個記錄類別，而不是一個：轉送記錄器和集中式記錄器。 以下是如何附加 XMLForwardingLogger 自訂轉送記錄器的範例。  
+ 若要附加 ConfigurableForwardingLogger 或自訂的轉送記錄器，請在 *MSBuild.exe* 命令列組建中使用 `/distributedlogger` 參數 (簡寫為 `/dl`)。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器一律有兩個記錄類別，而不是一個：轉送記錄器和集中式記錄器。 以下是如何附加 XMLForwardingLogger 自訂轉送記錄器的範例。  
   
 ```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
@@ -113,5 +113,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

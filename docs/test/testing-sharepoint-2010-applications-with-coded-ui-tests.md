@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233538"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177505"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "36233538"
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>建立 SharePoint 應用程式的自動程式化 UI 測試
 
-為您的 SharePoint 應用程式[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
+為您的 SharePoint 應用程式[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 [Web 編輯] 介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
 
 ![SharePoint 網頁組件](../test/media/cuit_sharepoint.png)
 

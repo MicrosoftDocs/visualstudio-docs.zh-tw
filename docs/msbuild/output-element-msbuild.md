@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 754968b95ce1332991ddc921138741a1d9235015
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 34c6e966a7feff00fc9b32495f3697643120f1ee
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756921"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154420"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 在項目或屬性中儲存工作輸出值。  
@@ -43,22 +43,22 @@ ms.locfileid: "36756921"
     Condition = "'String A' == 'String B'" />  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
 |屬性|描述|  
 |---------------|-----------------|  
 |`TaskParameter`|必要屬性。<br /><br /> 工作的輸出參數名稱。|  
-|`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後您的專案即可用 `$(`*PropertyName*`)` 語法來參考該屬性。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|  
-|`ItemName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的項目。 然後您的專案即可用 `@(`*ItemName*`)` 語法來參考該項目。 項目名稱可以是新的項目名稱，或是已經在專案中定義的名稱。 當項目名稱是現有的項目時，輸出參數值會新增至現有的項目中。 <br /><br /> 如果同時也使用 `PropertyName`，就不能使用這個屬性。|  
+|`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後您的專案即可用 $(\<PropertyName>) 語法參考該屬性。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|  
+|`ItemName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的項目。 然後您的專案即可用 @(\<ItemName>) 語法參考該項目。 項目名稱可以是新的項目名稱，或是已經在專案中定義的名稱。 當項目名稱是現有的項目時，輸出參數值會新增至現有的項目中。 <br /><br /> 如果同時也使用 `PropertyName`，就不能使用這個屬性。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -84,6 +84,6 @@ ms.locfileid: "36756921"
 </Target>  
 ```  
 
-## <a name="see-also"></a>請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+## <a name="see-also"></a>另請參閱  
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

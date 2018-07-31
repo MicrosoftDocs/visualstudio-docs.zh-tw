@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,21 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282274"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178197"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
-您可以建立自己的驗證規則。 若要執行這項作業，您可以從驗證規則類別中衍生自己的規則類別。 驗證規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 基底類別。
+您可以建立自己的驗證規則。 若要執行此作業，您可以從驗證規則類別中衍生自己的規則類別。 驗證規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 基底類別。
 
 > [!NOTE]
 > 您也可以建立自訂擷取規則。 如需詳細資訊，請參閱[為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)。
 
-## <a name="to-create-custom-validation-rules"></a>若要建立自訂驗證規則
+## <a name="to-create-custom-validation-rules"></a>建立自訂驗證規則
 
 1.  開啟包含 Web 效能測試的測試專案。
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d2c31db4c117f3bc902218a61656e5eca49e27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951017"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177889"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 

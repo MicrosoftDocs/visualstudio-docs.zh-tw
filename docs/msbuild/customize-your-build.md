@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945971"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175952"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
 使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
 
 來源目錄中或其上的 *Directory.Build.rsp* 檔案將會套用到專案的命令列組建。 如需詳細資料，請參閱 [MSBuild 回應檔](../msbuild/msbuild-response-files.md#directorybuildrsp)。
 
@@ -138,7 +138,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 *%LOCALAPPDATA%\Microsoft\MSBuild*。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
 
-## <a name="customizing-the-solution-build"></a>自訂方案組建
+## <a name="customize-the-solution-build"></a>自訂方案組建
 
 > [!IMPORTANT]
 > 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它**不**適用於 Visual Studio 內的組建。

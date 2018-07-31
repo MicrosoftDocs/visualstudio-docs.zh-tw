@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704521"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177694"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [即時運算] 視窗用來偵錯和評估運算式、執行陳述式、列印變數值等等。 它可讓您在偵錯期間，輸入開發語言要評估或執行的運算式。 若要顯示 [即時運算] 視中，請開啟專案以進行編輯，然後從 [偵錯] 功能表中選擇 [視窗]，並選取 [即時運算]，或按 CTRL+ALT+I。
@@ -124,12 +124,12 @@ ms.locfileid: "33704521"
 
 2.  以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)
-- [偵錯工具基礎](../../debugger/debugger-basics.md)
+- [偵錯工具基礎](../../debugger/getting-started-with-the-debugger.md)
 - [逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)

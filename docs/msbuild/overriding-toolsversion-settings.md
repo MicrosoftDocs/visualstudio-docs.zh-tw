@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327085"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153913"
 ---
-# <a name="overriding-toolsversion-settings"></a>覆寫 ToolsVersion 設定
+# <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  
   
-1.  從命令列建置專案或方案時，使用 `/ToolsVersion` 切換參數 (或簡寫 `/tv`)  
+1.  從命令列建置專案或方案時，請使用 `/ToolsVersion` 參數 (或簡寫 `/tv`)。  
   
-2.  方法是在 MSBuild 工作上設定 `ToolsVersion` 參數  
+2.  在 MSBuild 工作上設定 `ToolsVersion` 參數。  
   
 3.  在方案的專案上設定 `$(ProjectToolsVersion)` 屬性。 這可讓您使用與其他專案不同的工具組版本，以在方案中建置專案。  
   
@@ -36,14 +36,14 @@ ms.locfileid: "36327085"
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- 在此範例中，使用 ToolsVersion 12.0 建置所有專案 (不過，請參閱本主題後面的＜優先順序＞一節)。  
+ 在此範例中，使用 ToolsVersion 12.0 建置所有專案 (不過，請參閱本主題稍後的[優先順序](#order-of-precedence)一節)。  
   
  在命令列上使用 `/tv` 切換參數時，您可以選擇性地在個別專案中使用 `$(ProjectToolsVersion)` 屬性，以使用與方案中其他專案不同的 ToolsVersion 值來建置它們。  
   
-## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>使用 MSBuild 工作的 ToolsVersion 參數來覆寫 ToolsVersion 設定  
+## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>使用 MSBuild 工作的 ToolsVersion 參數覆寫 ToolsVersion 設定  
  MSBuild 工作是讓某個專案建置另一個專案的主要方式。 為了讓 MSBuild 工作使用與專案中所指定的不同 ToolsVersion 來建置專案，它會提供名為 `ToolsVersion` 的選擇性工作參數。 下列範例示範如何使用這個參數：  
   
-1.  建立名為 `projectA.proj` 並包含下列程式碼的檔案：  
+1.  建立一個名為 *projectA.proj* 並包含下列程式碼的檔案：  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -61,7 +61,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-2.  建立名為 `projectB.proj` 並包含下列程式碼的另一個檔案：  
+2.  建立另一個名為 *projectB.proj* 並包含下列程式碼的檔案：  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -111,7 +111,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     1.  專案檔中 [Project](../msbuild/project-element-msbuild.md) 項目的 `ToolsVersion` 屬性。 如果這個屬性不存在，則會假設為最新版本。  
   
-    2.  MSBuild.exe.config 檔案中的預設工具版本。  
+    2.  *MSBuild.exe.config* 檔案中的預設工具版本。  
   
     3.  登錄中的預設工具版本。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。  
   
@@ -119,13 +119,13 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     1.  如果環境變數 `MSBUILDDEFAULTTOOLSVERSION` 設定為現有的 `ToolsVersion`，請使用它。  
   
-    2.  如果在 MSBuild.exe.config 中設定 `DefaultOverrideToolsVersion`，請使用它。  
+    2.  如果在 *MSBuild.exe.config* 中設定 `DefaultOverrideToolsVersion`，請使用它。  
   
     3.  如果在登錄中設定 `DefaultOverrideToolsVersion`，請使用它。  
   
     4.  否則，請使用目前的 `ToolsVersion`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   

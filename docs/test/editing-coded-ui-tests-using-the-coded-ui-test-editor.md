@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35668392"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177353"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
@@ -74,15 +74,15 @@ ms.locfileid: "35668392"
 
 若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。
 
-例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
+例如，如果伺服器無法使用，而且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
 
 ![控制項屬性](../test/media/codeduitestcontrolprop.png)
 
-修改控制項屬性的方法與修改 UI 動作的方法一樣。 在 [ **UI 控制項對應** ] 窗格中，選取您想要使用 [屬性] 視窗來編輯和修改其屬性的控制項。
+修改控制項屬性的方法與修改 UI 動作的方法一樣。 在 [UI 控制項對應] 窗格中，選取您想要使用 [屬性] 視窗來編輯和修改其屬性的控制項。
 
 例如，開發人員可能已在受測試之應用程式的原始程式碼中將按鈕控制項上的 **(ID)** 從 "idSubmit" 變更為 "idLogin"。 一旦變更了應用程式中的 [ **(ID)** ] 屬性，自動程式碼 UI 測試將找不到按鈕控制項而失敗。 在此情況下，測試人員可以開啟 [ **搜尋屬性** ] 集合，並變更 [ **識別碼** ] 屬性，以符合開發人員在應用程式中使用的新值。 測試人員也可以將 [易記名稱] 屬性值從 "Submit" 變更為 "Login"。 藉由進行這項變更，自動程式化 UI 測試編輯器中的相關聯 UI 動作會從「選擇 [提交] 按鈕」更新為「選擇 [登入] 按鈕」。
 
-完成您的修改之後，選擇 Visual Studio 工具列上的 [儲存]，儲存 UIMap.Designer 檔案的變更。
+完成您的修改之後，選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
 ### <a name="tips"></a>秘訣
 
@@ -90,7 +90,7 @@ ms.locfileid: "35668392"
 
 - 若要復原您所做的屬性變更，請從 [編輯] 功能表中選取 [復原]，或是按 **Ctrl**+**Z**。
 
-- 您可以使用自動程式化 UI 測試編輯器工具列中的 [尋找] 按鈕，以開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 您無法在 [自動程式碼 UI 測試編輯器] 的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
+- 您可以使用自動程式化 UI 測試編輯器工具列中的 [尋找] 按鈕，以開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 您無法在 [自動程式碼 UI 測試編輯器] 的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱[尋找和取代文字](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
 
 - 有時候，很難視覺化控制項在受測試應用程式之 UI 中的位置。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 如需詳細資訊，請參閱本文更下方位置的[尋找受測試應用程式中的 UI 控制項](#locate-a-ui-control-in-the-application-under-test)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "35668392"
 
 在 [ **UI 動作** ] 窗格中，展開您想要分割為兩個各自方法的測試方法，並選取您想要新的測試方法開始的 UI 動作。 開啟 UI 動作的捷徑功能表，然後選擇 [ **分割為新方法**]，或選擇自動程式碼 UI 測試編輯器工具列上的 [ **分割為新方法** ] 按鈕。 新的測試方法會出現在 [UI 動作] 窗格中。 它包含的 UI 動作從您指定分割的動作開始。
 
-完成分割方法之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 UIMap.Designer 檔案的變更。
+完成分割方法之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
 > [!WARNING]
 > 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。
@@ -123,7 +123,7 @@ ms.locfileid: "35668392"
 
 - 若要復原分割，請從 [編輯] 功能表中選擇 [復原]，或是按 **Ctrl**+**Z**。
 
-- 您可以重新命名新方法。 在 [UI 動作] 窗格中選取它，然後選擇自動程式碼 UI 測試編輯器工具列中的 [ **重新命名** ] 按鈕。
+- 您可以重新命名新方法。 在 [UI 動作] 窗格中選取它，然後選擇自動程式碼 UI 測試編輯器工具列中的 [重新命名] 按鈕。
 
    -或-
 
@@ -133,18 +133,18 @@ ms.locfileid: "35668392"
 
 ## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>將測試方法移至 UIMap 檔案，以更方便自訂
 
-如果您判斷自動程式碼 UI 測試的其中一個測試方法需要自訂程式碼，則必須將它移至 UIMap.cs 或 UIMap.vb 檔案。 否則，每當重新編譯自動程式碼 UI 測試，就會覆寫您的程式碼。 如果未移動方法，每次重新編譯測試，就會覆寫自訂程式碼。
+如果您判斷自動程式碼 UI 測試的其中一個測試方法需要自訂程式碼，則必須將它移至 *UIMap.cs* 或 *UIMap.vb* 檔案。 否則，每當重新編譯自動程式碼 UI 測試，就會覆寫您的程式碼。 如果未移動方法，每次重新編譯測試，就會覆寫自訂程式碼。
 
-在 [UI 動作] 窗格中，選取要移至 UIMap.cs 或 UIMap.vb 檔案的測試方法，以促進自訂程式碼功能，如此一來，當測試程式碼重新編譯時，就不會覆寫自訂程式碼。 接下來，選擇自動程式碼 UI 測試編輯器工具列上的 [ **移動程式碼** ] 按鈕，或開啟測試方法的捷徑功能表，並選擇 [ **移動程式碼**]。 測試方法就會從 UIMap.uitest 檔案移除，不再顯示在 [UI 動作] 窗格中。 若要編輯您所移動的測試檔案，請從 [方案總管] 中開啟 UIMap.cs 或 UIMap.vb 檔案。
+在 [UI 動作] 窗格中，選取要移至 *UIMap.cs* 或 *UIMap.vb* 檔案的測試方法，以促進自訂程式碼功能，如此一來，當測試程式碼重新編譯時，就不會覆寫自訂程式碼。 接下來，選擇自動程式碼 UI 測試編輯器工具列上的 [ **移動程式碼** ] 按鈕，或開啟測試方法的捷徑功能表，並選擇 [ **移動程式碼**]。 測試方法會從 *UIMap.uitest* 檔案移除，不再顯示在 [UI 動作] 窗格中。 若要編輯您所移動的測試檔案，請從 [方案總管] 開啟 *UIMap.cs* 或 *UIMap.vb* 檔案。
 
-完成移動方法之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 UIMap.Designer 檔案的變更。
+完成移動方法之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
 > [!WARNING]
-> 一旦移動方法，便無法再使用 [自動程式化 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 或 UIMap.vb 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。
+> 一旦移動方法，便無法再使用 [自動程式化 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 *UIMap.uitest* 檔案移至 *UIMap.cs* 或 *UIMap.vb* 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。
 
 ### <a name="tips"></a>秘訣
 
-若要復原移動，請從 [編輯] 功能表中選取 [復原]，或是按 **Ctrl**+**Z**。 不過，您必須從 UIMap.cs 或 UIMap.vb 檔案手動移除此程式碼。
+若要復原移動，請從 [編輯] 功能表中選取 [復原]，或是按 **Ctrl**+**Z**。 不過，您必須從 *UIMap.cs* 或 U*IMap.vb* 檔案手動移除此程式碼。
 
 ## <a name="locate-a-ui-control-in-the-application-under-test"></a>尋找受測試應用程式中的 UI 控制項
 
@@ -184,9 +184,9 @@ ms.locfileid: "35668392"
 
 ![加上 5 秒鐘的延遲](../test/media/codeduidealy2.png)
 
-在 [ **UI 動作** ] 窗格中，展開包含 UI 動作的測試方法，而您想要在該 UI 動作之前插入延遲。 選取 UI 動作。 接下來，開啟 UI 動作的捷徑功能表，然後選擇 [ **在前面插入延遲**]。 在選取的 UI 動作之前，以下列文字插入延遲並反白顯示： **動作之間等候 1 秒的使用者延遲**。 在 [屬性] 視窗中，將 [ **延遲** ] 屬性的值變更為需要的毫秒數。
+在 [ **UI 動作** ] 窗格中，展開包含 UI 動作的測試方法，而您想要在該 UI 動作之前插入延遲。 選取 UI 動作。 接下來，開啟 UI 動作的捷徑功能表，然後選擇 [ **在前面插入延遲**]。 在選取的 UI 動作之前，以下列文字插入延遲並反白顯示： **動作之間等候 1 秒的使用者延遲**。 在 [屬性] 視窗中，將 [延遲] 屬性的值變更為需要的毫秒數。
 
-完成插入延遲之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 UIMap.Designer 檔案的變更。
+完成插入延遲之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼加入至測試方法。 如需詳細資訊，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
 
@@ -194,5 +194,5 @@ ms.locfileid: "35668392"
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
-- [建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)
+- [建立資料驅動式自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)
 - [逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
