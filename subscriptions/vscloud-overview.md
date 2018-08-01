@@ -9,12 +9,12 @@ description: 每月或每年租 Visual Studio Professional 或 Visual Studio Ent
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302827"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380599"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -36,7 +36,7 @@ ms.locfileid: "36302827"
 
 0.  選取要用於計費的 Azure 訂用帳戶。 如果沒有 Azure 訂用帳戶，您可以建立新的帳戶。
 
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.  選取要購買的訂用帳戶數目。
 
