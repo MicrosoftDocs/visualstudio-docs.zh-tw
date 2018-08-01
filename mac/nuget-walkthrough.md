@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2bdff15b101b9a9c916c8ba98cfd4964ca0f3189
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380936"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -60,7 +60,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 確定您將任何必要 `using` 指示詞新增至檔案頂端：
 
 ```csharp
-using Newtownsoft.json;
+using Newtonsoft.Json;
 ```
 
 大部分 NuGet 都會提供其他資訊，例如 Nuget 來源的 README 或專案頁面連結。 您通常可以在 [新增套件] 頁面的套件簡介上找到此項目的連結：

@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280653"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379732"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -22,7 +22,7 @@ ms.locfileid: "36280653"
 
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用[每月 Azure 信用額度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，Azure 就是您進行開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
 
-## <a name="eligibililty"></a>合格
+## <a name="eligibility"></a>資格
 
 | 訂用帳戶等級/方案                                 | 優勢                     | 可續約？                                                   |
 |--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|

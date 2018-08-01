@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177275"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382044"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，以及從其他工具的連結。 例如，您可以連結定義域專屬語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
@@ -127,10 +127,10 @@ ms.locfileid: "39177275"
 
 4.  如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
 
-5.  按一下  **確定**，然後按一下**轉換所有範本**在 方案總管 工具列中。
+5.  按一下 [ **[確定]**，然後按一下**轉換所有範本**中**方案總管] 中**工具列。
 
     > [!WARNING]
-    >  如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
+    > 如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
 
 6.  如果您指定目標類型清單 (例如 Company.FamilyTree.Person)，則必須將組件參考加入至您的 DSL 專案，並參考目標 DSL 的 DLL (例如 Company.FamilyTree.Dsl.dll)。
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177275"
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。
 
     > [!NOTE]
-    >  只有在模型是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
+    > 只有在模型是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
 
 4.  在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117650"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380739"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>從範本建置的程式碼
 
-當您儲存 **.tt**檔案，分公司 **.cs**或是 **.vb**產生檔案。 若要查看此檔案在方案總管 中的，展開 **.tt**檔案節點。 在 Visual Basic 專案中，首先選擇**顯示所有檔案**在 [方案總管] 工具列中。
+當您儲存 **.tt**檔案，分公司 **.cs**或是 **.vb**產生檔案。 若要查看此檔案中的**方案總管**，展開 **.tt**檔案節點。 在 Visual Basic 專案中，首先選擇**顯示所有檔案**中**方案總管 中**工具列。
 
 請注意，分公司的檔案會包含部分類別，其中包含呼叫的方法`TransformText()`。 您可以從您的應用程式來呼叫這個方法。
 
