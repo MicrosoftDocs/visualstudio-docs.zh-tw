@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: a744fccb3aedc4672af170a8220a2ec4b6d2a6b0
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39357086"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39395157"
 ---
 Visual C++
