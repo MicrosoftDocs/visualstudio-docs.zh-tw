@@ -52,7 +52,7 @@ ms.locfileid: "37945815"
 |CleanFile|做為「清除快取」使用之檔案的名稱。 清除快取是所產生檔案的清單，這些檔案將要在清除作業期間刪除。 建置流程會將這個檔案放入中繼輸出路徑。<br /><br /> 這個屬性只會指定檔案名稱，不包含路徑資訊。|  
 |CodePage|指定編譯過程中所有原始程式碼檔使用的字碼頁。 這個屬性相當於 `/codepage` 編譯器參數。|  
 |CompilerResponseFile|可傳遞至編譯器工作的選擇性回應檔。|  
-|組態|您要建置的組態，它會是 "Debug" 或是 "Release"。|  
+|Configuration|您要建置的組態，它會是 "Debug" 或是 "Release"。|  
 |CscToolPath|*csc.exe* ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 編譯器) 的路徑。|  
 |CustomBeforeMicrosoftCommonTargets|專案檔或 targets 檔的名稱，該檔案會在一般 targets 匯入之前自動匯入。|  
 |DebugSymbols|布林值，指出建置是否要產生符號。<br /><br /> 在命令列上設定 **/p:DebugSymbols=false** 時，會停用產生程式資料庫 (*.pdb*) 符號檔。|  
@@ -61,7 +61,7 @@ ms.locfileid: "37945815"
 |DefineTrace|布林值，指出您是否要定義 TRACE 常數。|  
 |DebugType|定義您要產生的偵錯資訊層級。 有效值為 "full"、"pdbonly" 和 "none"。|  
 |DelaySign|布林值，指出您是否要延遲簽署組件，而不要完整簽署組件。|  
-|具決定性|布林值，指出編譯器是否應該針對相同的輸入產生相同的組件。 此參數對應於 *vbc.exe* 和 *csc.exe* 編譯器的 `/deterministic` 參數。|
+|Deterministic|布林值，指出編譯器是否應該針對相同的輸入產生相同的組件。 此參數對應於 *vbc.exe* 和 *csc.exe* 編譯器的 `/deterministic` 參數。|
 |DisabledWarnings|隱藏指定的警告。 您只需要指定警告識別項的數值部分。 若有多個警告，則會以分號分隔。 此參數對應於 *vbc.exe* 編譯器的 `/nowarn` 參數。|  
 |DisableFastUpToDateCheck|僅適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的布林值。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式會使用稱為 FastUpToDateCheck 的處理序，判斷是否必須重建專案使其成為最新版本。 使用這個處理序比使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷的速度快。 將 DisableFastUpToDateCheck 屬性設為 `true`，可讓您略過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式，並強制使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷專案是否為最新版本。|  
 |DocumentationFile|產生為 XML 文件檔案之檔案的名稱。 這個名稱只包含檔案名稱，不包含路徑資訊。|  
@@ -88,7 +88,7 @@ ms.locfileid: "37945815"
 |OutputType|指定輸出檔的檔案格式。 這個參數的值可以是下列其中一個：<br /><br /> -   Library。 建立程式碼程式庫  (預設值)。<br />-   Exe。 建立主控台應用程式 (Console Application)。<br />-   Module。 建立模組。<br />-   Winexe。 建立 Windows 程式。<br /><br /> 此屬性相當於 *vbc.exe* 編譯器的 `/target` 參數。|  
 |OverwriteReadOnlyFiles|布林值，指出您要讓建置覆寫唯讀檔案或是觸發錯誤。|  
 |PdbFile|您要發出之 *.pdb* 檔案的檔案名稱。 此屬性相當於 *csc.exe* 編譯器的 `/pdb` 參數。|  
-|平台|做為您建置目標的作業系統。 有效值為 "Any CPU"、"x86" 及 "x64"。|  
+|Platform|做為您建置目標的作業系統。 有效值為 "Any CPU"、"x86" 及 "x64"。|  
 |ProduceReferenceAssembly|布林值，設定為 `true` 時會產生目前組件的[參考組件](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用這項功能時，`Deterministic` 應該是 `true`。 此屬性對應於 *vbc.exe* 和 *csc.exe* 編譯器的 `/refout` 參數。|
 |RemoveIntegerChecks|布林值，指出是否要停用整數溢位錯誤檢查。 預設值是 `false`。 此屬性相當於 *vbc.exe* 編譯器的 `/removeintchecks` 參數。|  
 |SGenUseProxyTypes|布林值，指出是否要由 *SGen.exe* 產生 Proxy 類型。<br /><br /> SGen 目標會使用這個屬性設定 UseProxyTypes 旗標。 這個屬性預設為 true，而且沒有 UI 可用來變更這個屬性。 若要產生非 WebService 類型的序列化組件，請先將這個屬性新增至專案檔並將它設定為 false，再匯入 *Microsoft.Common.Targets* 或 *C#/VB.targets*。|  
