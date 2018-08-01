@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477505"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079634"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
-## <a name="using-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 屬性  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一些保留的屬性，讓您不必每次定義就能在專案檔中加以使用。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。  
+## <a name="use-the-project-properties"></a>使用專案屬性
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一些保留的屬性，讓您不必每次定義就能在專案檔中加以使用。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。 保留的屬性 `MSBuildProjectDirectory` 提供專案檔案位置的參考。
   
-#### <a name="to-use-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 屬性  
+#### <a name="to-use-the-project-properties"></a>使用專案屬性
   
 -   使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如:   
   
@@ -39,7 +39,7 @@ ms.locfileid: "34477505"
     <CSC Sources = "@(CSFile)"   
         OutputAssembly = "$(MSBuildProjectName).exe"/>  
     </CSC>  
-    ```  
+    ```          
   
  使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "34477505"
     <!-- Specify the inputs -->  
     <ItemGroup>  
         <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
+     </ItemGroup>  
     <Target Name = "Compile">  
         <!-- Run the Visual C# compilation using  
         input files of type CSFile -->  
@@ -73,7 +73,20 @@ ms.locfileid: "34477505"
     </Target>  
 </Project>  
 ```  
+
+## <a name="example"></a>範例
+ 下列範例專案檔使用 `MSBuildProjectDirectory` 保留屬性，在專案檔案位置中建立檔案的完整路徑。  
   
-## <a name="see-also"></a>請參閱  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">     
+    
+    <!-- Build the path to a file in the root of the project -->  
+    <PropertyGroup>  
+        <NewFilePath>$([System.IO.Path]::Combine($(MSBuildProjectDirectory), `BuildInfo.txt`))</NewFilePath>
+    </PropertyGroup>  
+</Project>  
+```  
+  
+## <a name="see-also"></a>另請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
- [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

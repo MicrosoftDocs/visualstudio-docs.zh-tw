@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918137"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890353"
 ---
 # <a name="display-data-in-blend"></a>在 Blend 中顯示資料
 
-您可以在自訂頁面的版面配置時於設計工具中檢視範例資料。 您可以從頭產生範例資料，或使用現有的類別。 您也可以連接到在執行應用程式時會出現於其中的 *「即時資料」* (Live data)。
+您可以在自訂頁面的版面配置時於設計工具中檢視範例資料。 您可以從頭產生範例資料，或使用現有的類別。 您也可以連線到在執行應用程式時會出現於其中的「即時資料」。
 
 ## <a name="generate-sample-data"></a>產生範例資料
 
@@ -53,7 +53,7 @@ ms.locfileid: "31918137"
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>在市集或 Phone 應用程式中顯示即時資料
 
-請參閱 [使用資料和檔案 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
+請參閱[使用資料和檔案 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
 
 ## <a name="see-also"></a>另請參閱
 

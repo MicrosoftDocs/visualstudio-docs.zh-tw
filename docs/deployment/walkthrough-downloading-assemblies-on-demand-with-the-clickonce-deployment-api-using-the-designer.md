@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 下載 ClickOnce 部署應用程式開發介面使用設計工具的要求組件 |Microsoft 文件
+title: 逐步解說： 下載組件隨選與 ClickOnce 部署 API 使用設計工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565454"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151512"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說： 下載組件隨選與 ClickOnce 部署 API 使用設計工具
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "31565454"
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="creating-the-projects"></a>建立專案  
+## <a name="create-the-projects"></a>建立專案  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>使用 Visual Studio 建立使用隨選組件的專案  
   
@@ -69,7 +69,7 @@ ms.locfileid: "31565454"
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>將組件標示為選擇性  
+## <a name="mark-assemblies-as-optional"></a>組件必須標記為選擇性  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 將組件標示為 ClickOnce 應用程式中的選用項目  
   
@@ -77,7 +77,7 @@ ms.locfileid: "31565454"
   
 2.  按一下 [應用程式檔案]  按鈕。  
   
-3.  尋找 ClickOnceLibrary.dll 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。  
+3.  找出列出*ClickOnceLibrary.dll*。 將 [發行狀態]  下拉式方塊設定成 [包含] 。  
   
 4.  展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31565454"
   
 3.  在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無] 。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。  
   
-## <a name="testing-the-new-assembly"></a>測試新的組件  
+## <a name="test-the-new-assembly"></a>測試新的組件  
   
 #### <a name="to-test-your-on-demand-assembly"></a>測試隨選組件  
   

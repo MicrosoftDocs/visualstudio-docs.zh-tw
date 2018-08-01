@@ -13,21 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750281"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206819"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量] 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
-
-> [!NOTE]
-> 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -39,7 +36,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
     Visual Studio 會建立專案。
 
-2. 開啟 Program.cs，並將所有程式碼取代為下列程式碼：
+2. 開啟 *Program.cs*，並將所有程式碼取代為下列程式碼：
 
     ```csharp
     using System;
@@ -160,7 +157,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     > [!NOTE]
     > 在 Visual Basic 中，確定啟始物件設定為 `Sub Main` ([屬性] > [應用程式] > [啟始物件])。
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料
+##  <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料
 
 1.  首先，在 `Main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
@@ -179,9 +176,9 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
+3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  按一下 [偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+4.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
      應用程式完成載入時，會出現 [診斷工具] 的 [摘要] 檢視。
 
@@ -193,7 +190,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
      當您選擇 [記錄 CPU 分析] 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間，也會提供您可以用來專注於取樣工作階段特定區段的時間軸圖表。只有在應用程式於中斷點停止時，您才能檢視這個收集的資料。
 
-6.  按 F5 使應用程式執行至第二個中斷點。
+6.  按 **F5** 使應用程式執行至第二個中斷點。
 
      現在，您擁有在兩個中斷點之間執行的程式碼區域專屬的應用程式效能資料。
 
@@ -203,7 +200,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
      此時，您可以開始分析資料。
 
-## <a name="Step2"></a> 步驟 2：分析 CPU 使用量資料
+## <a name="step-2-analyze-cpu-usage-data"></a>步驟 2：分析 CPU 使用量資料
 
 建議您先檢查 [CPU 使用量] 下方的函式清單、識別執行最多工作的函式，仔細觀察每一項，接著開始分析您的資料。
 
@@ -235,7 +232,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 - 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.md)
-- [分析功能導覽](../profiling/profiling-feature-tour.md)
+- [初步認識分析工具](../profiling/profiling-feature-tour.md)

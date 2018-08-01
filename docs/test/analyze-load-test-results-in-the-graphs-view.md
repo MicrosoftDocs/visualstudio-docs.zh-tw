@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973150"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175744"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -30,7 +30,7 @@ ms.locfileid: "31973150"
 
 若要以圖形呈現測試結果，請選擇 [負載測試] 工具列上的 [圖形]。 在窗格中會顯示每個獨立的圖形，窗格頂端的下拉式清單會顯示圖形名稱。 若要在窗格中顯示不同的圖形，請從清單選擇不同的圖形名稱。
 
-同時最多可以顯示四個圖形。 藉由使用面板配置工具列按鈕，可以在不同面板配置間切換。
+同時最多可以顯示四個圖形。 藉由使用 [面板配置] 工具列按鈕，可以在不同面板配置間切換。
 
 有提供數種內建圖形。 您可以直接使用內建圖形或是自訂這些圖形。 除此之外，您也可以建立自己的圖形。 如需詳細資訊，請參閱[如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)和[如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)。
 

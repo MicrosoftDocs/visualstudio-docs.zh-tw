@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844774"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段] 或目標二進位檔屬性頁的 [進階] 頁面中設定選項，將檢測和資料收集限制在一或多個函式：  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/19/2018
     > [!NOTE]
     >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [操作說明：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)

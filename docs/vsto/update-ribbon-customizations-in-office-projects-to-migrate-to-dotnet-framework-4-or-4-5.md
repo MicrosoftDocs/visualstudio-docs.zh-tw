@@ -1,5 +1,5 @@
 ---
-title: 更新您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
+title: 更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34767633"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252502"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
-  如果專案包含使用所建立的功能區自訂**功能區 （視覺化設計工具）** 專案項目，您必須進行下列變更您的專案程式碼，如果目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。  
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
+  如果您的專案包含使用所建立的功能區自訂**功能區 （視覺化設計工具）** 專案項目，您必須進行下列變更您的專案程式碼，如果目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。  
   
 -   修改產生的功能區程式碼。  
   
@@ -32,9 +32,9 @@ ms.locfileid: "34767633"
 ## <a name="update-the-generated-ribbon-code"></a>更新產生的功能區程式碼  
  如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須執行下列步驟變更功能區項目產生的程式碼。 您需要更新的程式碼檔是根據程式語言和您建立專案的方式而定：  
   
--   在 Visual Basic 專案中，或在 Visual C# 專案，您建立[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]功能區程式碼後置檔案中執行的所有步驟 (*YourRibbonItem*.Designer.cs 或*YourRibbonItem*.Designer.vb)。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**顯示所有檔案**按鈕**方案總管 中**。  
+-   在 Visual Basic 專案，或在 Visual C# 專案中建立[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或是[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]功能區程式碼後置檔案中執行的所有步驟 (*YourRibbonItem*。Designer.cs 或*YourRibbonItem*.Designer.vb)。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**顯示所有檔案**按鈕**方案總管 中**。  
   
--   Visual C# 專案，您在 Visual Studio 2008 中建立並升級至[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，執行功能區程式碼檔中的前兩個步驟 (*YourRibbonItem*.cs 或*YourRibbonItem*.vb)，以及在功能區程式碼後置檔案中執行其餘的步驟。  
+-   Visual C# 專案，您在 Visual Studio 2008 中建立並升級至[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，在功能區程式碼檔案執行前兩個步驟 (*YourRibbonItem*.cs 或*YourRibbonItem*.vb)，以及在功能區程式碼後置檔案中執行其餘的步驟。  
   
 ### <a name="to-change-the-generated-ribbon-code"></a>變更產生的功能區程式碼  
   
@@ -100,7 +100,7 @@ ms.locfileid: "34767633"
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
-     如需功能區控制項之協助程式方法的完整清單，請參閱[具現化功能區控制項](#ribboncontrols)。  
+     如需功能區控制項之協助程式方法的完整清單，請參閱[具現化的功能區控制項](#ribboncontrols)。  
   
 4.  在 Visual C# 專案中，將 `InitializeComponent` 方法中任何使用 <xref:System.EventHandler%601> 委派的程式碼行，修改為使用特定功能區委派。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "34767633"
      在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案中，您必須改用下列程式碼。  
   
     <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-     如需完整的功能區委派清單，請參閱[處理功能區事件](#ribbonevents)。  
+     功能區委派的完整清單，請參閱[處理功能區事件](#ribbonevents)。  
   
 5.  在 Visual Basic 專案中，尋找位於檔案結尾的 `ThisRibbonCollection` 類別。 修改此類別的宣告，使其不再繼承自 `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`。  
   

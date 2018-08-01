@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103134"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946971"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>教學課程步驟 5：在 Django 中驗證使用者
+# <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
 **上一個步驟：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -33,7 +33,7 @@ ms.locfileid: "33103134"
 
 下列步驟會進行驗證流程，並說明所有涉及的專案部分：
 
-1. 如果您尚未依照專案根目錄 `readme.html` 檔案中的指示來建立進階使用者 (系統管理員) 帳戶，請現在建立。
+1. 如果您尚未遵循專案根目錄之 `readme.html` 檔案中的指示來建立進階使用者 (系統管理員) 帳戶，請現在建立。
 
 1. 使用 [偵錯] > [開始偵錯] (F5) 在 Visual Studio 中執行應用程式。 當應用程式出現在瀏覽器中時，觀察到瀏覽列的右上角出現 [登入]。
 
@@ -62,7 +62,7 @@ ms.locfileid: "33103134"
     {% endif %}
     ```
 
-1. 由於您初次啟動應用程式時還沒有已驗證的使用者，所以此範本程式碼只會轉譯針對相對路徑 "login" 的 [登入] 連結。 如上節所示的 `urls.py` 中所指定，該路由會對應至給予下列資料的 `django.contrib.auth.views.login` 檢視：
+1. 由於您初次啟動應用程式時還沒有已驗證的使用者，所以此範本程式碼只會轉譯針對相對路徑 "login" 的 [登入] 連結。 如上節所示的 `urls.py` 中所指定，該路由會對應至 `django.contrib.auth.views.login` 檢視。 該檢視會收到下列資料：
 
     ```python
     {
@@ -144,13 +144,13 @@ ms.locfileid: "33103134"
     {% endblock %}
     ```
 
-1. 當您提交表單時，Django 會嘗試驗證您提供的認證 (例如進階使用者的認證)。 如果驗證失敗，您會留在相同頁面上，但 `form.errors` 會設為 true。 如果驗證成功，Django 會瀏覽至 "next" 欄位中的相對 URL `<input type="hidden" name="next" value="/" />`，在此案例中為首頁 (`/`)。
+1. 當您提交表單時，Django 會嘗試驗證您的認證 (例如進階使用者的認證)。 如果驗證失敗，您會留在目前的頁面上，但 `form.errors` 會設為 true。 如果驗證成功，Django 會瀏覽至 "next" 欄位中的相對 URL `<input type="hidden" name="next" value="/" />`，在此案例中為首頁 (`/`)。
 
 1. 現在，當首頁再次轉譯時，`user.is_authenticated` 屬性在轉譯 `loginpartial.html` 範本時為 true。 因此，您會看見 "Hello (使用者)" 訊息和 "Log off"。 您可以在應用程式的其他部分使用 `user.is_authenticated` 來檢查驗證。
 
     ![Django Web 專案應用程式頁面上的 Hello 訊息與登出控制項](media/django/step05-logoff-control.png)
 
-1. 若要檢查驗證的使用者是否被授權存取特定資源，您必須從針對該使用者的資料庫擷取使用者特定權限。 如需詳細資料，請參閱[使用 Django 驗證系統](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) \(英文\) (Django 文件)。
+1. 若要檢查驗證的使用者是否被授權存取特定資源，您必須從您的資料庫擷取使用者特定權限。 如需詳細資訊，請參閱[使用 Django 驗證系統](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django 文件)。
 
 1. 其中進階使用者或系統管理員，皆被授權使用相對 URL "/admin/" 與 "/admin/doc/" 來存取內建的 Django 系統管理員介面。 若要啟用這些介面，請開啟 Django 專案的 `urls.py`，然後移除下列項目的註解：
 
@@ -200,14 +200,14 @@ ms.locfileid: "33103134"
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 元素中出現的 {% crsf_token %} 標籤有何用途？
 
-回答：`{% crsf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (crsf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) \(英文\) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的元素 (例如表單)，而範本轉譯函式 (`render`) 會插入必要的保護。
+回答：`{% crsf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (crsf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) \(英文\) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [使用投票 Django Web 專案範本](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [Django 中的使用者驗證](https://docs.djangoproject.com/en/2.0/topics/auth/) \(英文\) (docs.djangoproject.com)
 - GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

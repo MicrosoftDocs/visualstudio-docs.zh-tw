@@ -18,28 +18,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fa2751b901323adb6aa17ab553aa2f464d883ebd
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766697"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206830"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
   
 當偵錯工具暫停時，[CPU 使用量] 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
-診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量] 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/Profiling-Tools.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
+診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量] 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
 
 |         |         |
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。 |
 
 在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
-
-> [!NOTE]
-> 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
 
 在本教學課程中，您將進行下列作業：
 
@@ -56,15 +53,15 @@ ms.locfileid: "34766697"
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
   
-3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
+3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
+4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 如果您執行的是 Visual Studio Enterprise，您也可以在 [工具] > [選項] > [IntelliTrace] 中啟用或停用 IntelliTrace。
 
      ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      我們主要是要查看 CPU 使用率，因此，請務必啟用 [CPU 使用量] (預設為啟用)。
 
-5.  按一下 [偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+5.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
      當應用程式完成載入時，會出現 [Diagnostics Tools (診斷工具)] 的 [Summary (摘要)] 檢視。
 
@@ -132,7 +129,7 @@ ms.locfileid: "34766697"
 |||
 |-|-|
 |![步驟 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|  
-|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼](#BKMK_External_Code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼]  節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
+|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼](#view-external-code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼]  節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
 |![步驟 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|
 |![步驟 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼]  時，應用程式方法也可包含 [外部程式碼]  節點。|
 
@@ -157,11 +154,11 @@ ms.locfileid: "34766697"
 使用搜尋方塊尋找您所尋找的節點，然後使用水平捲軸檢視資料。
 
 > [!TIP]
-> 如果您分析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確定您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.*pdb*) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+> 如果您分析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需有關如何確定您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您已了解如何收集並分析 CPU 使用量資料。 如果您已完成[分析工具導覽](../profiling/profiling-feature-tour.md)，建議您快速查看如何分析應用程式的記憶體使用量。
+在本教學課程中，您已了解如何收集並分析 CPU 使用量資料。 如果您已完成[初步認識分析工具](../profiling/profiling-feature-tour.md)，建議您快速查看如何分析應用程式的記憶體使用量。
 
 > [!div class="nextstepaction"]
-> [分析記憶體使用量](../profiling/memory-usage.md) 
+> [分析 Visual Studio 中的記憶體使用狀況](../profiling/memory-usage.md) 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817d888a14d20b4778b28f81811b876c6d97ad61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4843262862501377fd3740639d6a22a79e77879d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566689"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946341"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。  
@@ -39,7 +39,7 @@ ms.locfileid: "31566689"
 |`ValueSetByTask`|選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 因輸出具有最新資訊而略過封入目標時，只有在您想要避免具有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所設定的輸出屬性時，才使用此參數。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `CreateProperty` 工作，以使用 `SourceFilename` 和 `SourceFileExtension` 屬性值組合建立 `NewFile` 屬性。  
@@ -66,8 +66,8 @@ ms.locfileid: "31566689"
 </Project>  
 ```  
   
- 執行專案之後，`NewFile` 屬性的值是 `Module1.vb`。  
+ 執行專案之後，`NewFile` 屬性的值是 *Module1.vb*。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

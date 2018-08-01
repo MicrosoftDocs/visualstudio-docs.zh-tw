@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79863ec5038b420bcfa00ed67fe105c28cf9fff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c403aba7f758c0acf7ba8d2520f617b2afeba214
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945151"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176394"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
@@ -27,7 +27,6 @@ ms.locfileid: "31945151"
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
-
 
 ## <a name="settings"></a>設定
 
@@ -39,7 +38,7 @@ ms.locfileid: "31945151"
 
 如有設定此選項，若您嘗試執行編譯過程中有錯誤的 Web 應用程式，會出現警告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)
 - [選項對話方塊、專案和方案、建置並執行](options-dialog-box-projects-and-solutions-web-projects.md)

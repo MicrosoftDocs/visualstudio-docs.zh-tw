@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01020148db1c5d34b4108d2c7ab25aa74fb1b308
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575074"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078751"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。  
@@ -64,7 +64,7 @@ ms.locfileid: "31575074"
  項目定義群組包含要將預設中繼資料加入任何項目類型的項目定義。 如同已知的中繼資料，預設的中繼資料會與指定項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。  
   
  項目函式  
- 項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱[函式](../msbuild/item-functions.md)。  
+ 項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱 [Item 函式](../msbuild/item-functions.md)  
   
  項目中繼資料  
  請參閱＜中繼資料，項目＞。  
@@ -85,7 +85,7 @@ ms.locfileid: "31575074"
  完整架構的子集。 這可用來減少需要下載到電腦的需求量。  
   
  專案檔  
- 專案檔包含控制組建的 MSBuild 指令碼。 專案檔的副檔名結尾通常是 "proj"，例如 .csproj 或 .vbproj。 專案檔可匯入屬性檔和目標檔案。  
+ 專案檔包含控制組建的 MSBuild 指令碼。 專案檔的副檔名結尾通常是 *proj*，例如 *.csproj* 或 *.vbproj*。 專案檔可匯入屬性檔和目標檔案。  
   
  屬性  
  屬性是用來控制建置程序的索引鍵/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
@@ -94,17 +94,17 @@ ms.locfileid: "31575074"
  環境屬性是會自動初始化為具相同名稱之系統環境變數值的屬性。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
   
  屬性檔  
- 屬性檔是包含大部分屬性群組及可引導建置之項目群組的專案檔。 依照慣例，其副檔名為 .props。 通常會在相關聯的專案檔開始時匯入屬性檔。  
+ 屬性檔是包含大部分屬性群組及可引導建置之項目群組的專案檔。 依照慣例，其副檔名為 *.props*。 通常會在相關聯的專案檔開始時匯入屬性檔。  
   
  屬性，函式  
- 屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
+ 屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱 [Property 函式](../msbuild/property-functions.md)。  
   
  屬性函式，巢狀  
  屬性函式可能會加以結合，以形成更複雜的函式。 例如，套用至物件的  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
- 如需詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
+ 如需詳細資訊，請參閱 [Property 函式](../msbuild/property-functions.md)。  
   
  屬性，全域  
  全域屬性是用來控制建置程序的索引鍵/值組。 您可以在命令提示字元上，或使用 [MSBuild 工作](../msbuild/msbuild-task.md)的 `Properties` 屬性來設定全域屬性，而且無法在組建的評估階段加以修改。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
@@ -152,13 +152,13 @@ ms.locfileid: "31575074"
  如果累加編譯判斷所有的輸出檔都是最新狀態，則會略過目標，也就是，會評估目標，但不會執行目標內的工作。 如需詳細資訊，請參閱＜目標，評估＞。  
   
  目標 Framework Moniker  
- 一個名稱，可說明架構 (例如 .NETFramwork、Silverlight 等)、版本及您希望設為目標的設定檔 (例如用戶端、伺服器等)。  
+ 一個名稱，可描述架構 (例如 .NETFramwork、Silverlight 等)、版本及您希望設為目標的設定檔 (例如用戶端、伺服器等)。  
   
  目標套件  
  特定架構隨附的組建清單，以及一組適用於該架構的參考組件。  
   
  目標檔案  
- 目標檔案是一個專案檔，其中包含大部分的目標及可引導組建的工作。 依照慣例，其副檔名為 .targets。 通常會在相關聯的專案檔結束時匯入目標檔案。  
+ 目標檔案是一個專案檔，其中包含大部分的目標及可引導組建的工作。 依照慣例，其副檔名為 *.targets*。 通常會在相關聯的專案檔結束時匯入目標檔案。  
   
  task  
  工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案用來執行建置作業之可執行程式碼的單元。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -169,5 +169,5 @@ ms.locfileid: "31575074"
  已知的中繼資料  
  請參閱＜中繼資料，已知＞。  
   
-## <a name="see-also"></a>請參閱  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>另請參閱  
+ [ MSBuild](../msbuild/msbuild.md)

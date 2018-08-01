@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238000"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
-VSPerfCmd.exe **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列程式碼剖析工作階段中的所有處理序和執行緒進行程式碼剖析。  
+*VSPerfCmd.exe* **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列分析工作階段中的所有處理序和執行緒進行分析。  
   
- 您可以在 VSPerfCmd.exe 命令列中僅指定 **GlobalOn** 和 **GlobalOff** 選項，或您可以將它們納入也包含 **Start**、**Launch** 或 **Attach** 選項的命令列中。  
+ 您可以在 *VSPerfCmd.exe* 命令列中僅指定 **GlobalOn** 和 **GlobalOff** 選項，也可以將它們納入同時還包含 **Start**、**Launch** 或 **Attach** 選項的命令列中。  
   
  **GlobalOn** 和 **GlobalOff** 也能夠結合 **ProcessOn**、**ProcessOff**、**ThreadOn** 及 **ThreadOff** 選項一起使用。  
   
@@ -31,7 +32,7 @@ VSPerfCmd.exe **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令�
   
 -   **GlobalOn** 可立即將全域啟動/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
+ 如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -82,8 +83,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [分析服務](../profiling/command-line-profiling-of-services.md)

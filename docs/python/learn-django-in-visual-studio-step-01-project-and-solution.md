@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750294"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947124"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程步驟 1：開始使用 Visual Studio 中的 Django Web 架構
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
 [Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 本教學課程會探索 Visual Studio 所提供專案範本內容中的 Django 架構，以簡化以 Django 為基礎之 Web 應用程式的建立。
 
@@ -207,7 +207,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 > [!div class="nextstepaction"]
 > [使用檢視與頁面範本建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - Django 專案程式碼：[撰寫第一個 Django 應用程式，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) \(英文\) (docs.djangoproject.com)
 - 系統管理公用程式：[django-admin 與 manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) \(英文\) (docs.djangoproject.com)

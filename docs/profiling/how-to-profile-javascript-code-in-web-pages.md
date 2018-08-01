@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843919"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 
@@ -30,11 +31,11 @@ Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vste
 
 當您指定 JavaScript 程式碼剖析時，會同時對瀏覽器中執行的 JavaScript 程式碼與伺服器上執行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式碼進行程式碼剖析。
 
-- 如果是指定 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，會同時對瀏覽器中執行的 JavaScript 程式碼與伺服器上執行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式碼進行程式碼剖析。
+- 如果是指定 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，會同時對瀏覽器中執行的 JavaScript 程式碼與伺服器上執行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式碼進行分析。
 
-- 若是任意網頁，則會對瀏覽器中執行的 JavaScript 程式碼進行程式碼剖析。
+- 若是任意網頁，則會對瀏覽器中執行的 JavaScript 程式碼進行分析。
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>對 ASP.NET Web 應用程式專案中的 JavaScript 進行程式碼剖析
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>對 ASP.NET Web 應用程式專案中的 JavaScript 進行分析
 
 1. 在 Visual Studio 中開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。
 
@@ -46,13 +47,13 @@ Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vste
 
 5. 在精靈的第三個頁面上，選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。
 
-6. 在精靈的第四個頁面上，按一下 [完成]  ，在瀏覽器中啟動 Web 應用程式。
+6. 在精靈的第四個頁面上，按一下 [完成]，以在瀏覽器中啟動 Web 應用程式。
 
 7. 執行您要進行程式碼剖析的功能。
 
 8. 若要結束程式碼剖析工作階段，請關閉瀏覽器。
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>對個別網頁或 JavaScript 應用程式中的 JavaScript 進行程式碼剖析
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>對個別網頁或 JavaScript 應用程式中的 JavaScript 進行分析
 
 1. 開啟 Visual Studio。
 
@@ -68,7 +69,7 @@ Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vste
 
     2. 選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。
 
-6. 在精靈的第四個頁面上，按一下 [完成]  ，在瀏覽器中啟動網頁。
+6. 在精靈的第四個頁面上，按一下 [完成]，以在瀏覽器中啟動網頁。
 
 7. 執行您要進行程式碼剖析的功能。
 

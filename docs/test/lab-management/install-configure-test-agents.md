@@ -1,6 +1,6 @@
 ---
-title: 安裝 Visual Studio 的測試代理程式和測試控制器
-ms.date: 03/02/2018
+title: 安裝測試代理程式和測試控制器
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,32 +11,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972101"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204202"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
-對於使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 VSTS 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 VSTS 或 TFS 中執行建置和發行工作流程的持續測試。
+針對使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 VSTS 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 VSTS 或 TFS 中執行建置和發行工作流程的持續測試。
 
 建議您也可考慮使用[建置或發行管理](use-build-or-rm-instead-of-lab-management.md)是否更為適合，而不是 Lab Management。
 
 ## <a name="system-requirements"></a>系統需求
 
+下表顯示安裝適用於 Visual Studio 2017 之測試代理程式或測試控制器的系統需求：
+
 | 項目 | 需求 |
 | ---- | ------------ |
-| **代理程式** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2 Service Pack 1 |
-| **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2 Service Pack 1 |
+| **代理程式** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
+| **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安裝測試控制器和測試代理程式
 
-您可以從 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 下載 Agents for Visual Studio 2017。捲動到頁面底部，然後尋找 *Agents for Visual Studio 2017*。 選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
+您可以從 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 下載 Agents for Visual Studio 2017。 捲動到頁面底部，然後尋找 *Agents for Visual Studio 2017*。 選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
 
-您可以從[舊版下載](https://www.visualstudio.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
+您可以從[舊版下載](https://visualstudio.microsoft.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
 
 這些安裝程式會以 ISO 檔案提供，方便安裝在虛擬機器上。
 

@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24569298"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962654"
 ---
 # <a name="javascript-language-reference"></a>JavaScript 語言參考
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 是可以內嵌在網頁與其他應用程式中的指令碼語言。  
   
  本文說明 Microsoft 的 JavaScript 實作，這個實作符合 ECMAScript 語言規格第 5 版的標準。 其中還提供 ECMA 標準所未包含的其他功能。  
+
+> [!NOTE]
+> 我們已投入整個社群的努力使 [MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 上一應俱全的一流開發資源，方法是將 docs.microsoft.com 中的所有 (500 以上的頁面) Microsoft JavaScript API 參考重新導向至其 MDN 對應項目。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
   
  您可以在瀏覽器應用程式中使用 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 程式碼與 HTML、CSS 和「文件物件模型」(Document Object Model，DOM)，後者代表 HTML 和瀏覽器物件。  
   
@@ -54,20 +57,5 @@ ms.locfileid: "24569298"
   
  Visual Studio 中的 JavaScript 編輯器會提供 IntelliSense 支援。 如需詳細資訊，請參閱 [JavaScript IntelliSense](http://go.microsoft.com/fwlink/p/?LinkId=256499)。  
   
-## <a name="in-this-section"></a>本章節內容  
- 下列各節將提供 JavaScript 的詳細資訊。  
-  
- [JavaScript 的新功能](../javascript/what-s-new-in-javascript.md)  
- 說明 JavaScript 中的新功能。  
-  
- [JavaScript 基本概念](../javascript/javascript-fundamentals.md)  
- 介紹 JavaScript 的基本結構。  
-  
- [進階 JavaScript](../javascript/advanced/advanced-javascript.md)  
- 說明進階 JavaScript 功能，例如遞迴，陣列和疑難排解等等。  
-  
- [JavaScript 參考](../javascript/reference/javascript-reference.md)  
- 說明 JavaScript 語言的各個項目。  
-  
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [文件物件模型](http://go.microsoft.com/fwlink/?LinkId=148095)

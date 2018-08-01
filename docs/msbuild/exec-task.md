@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89a8fd27dbf16db2277b52b2def2fac1e9f06e68
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569683"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945201"
 ---
 # <a name="exec-task"></a>Exec 工作
 使用指定的引數來執行指定的程式或命令。  
@@ -54,7 +54,7 @@ ms.locfileid: "31569683"
   
  `Exec` 工作會呼叫 cmd.exe，而不是直接叫用處理序。  
   
- 除了本文件所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其說明，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+ 除了本文件所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會使用 `Exec` 工作來執行命令。  
@@ -73,6 +73,6 @@ ms.locfileid: "31569683"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

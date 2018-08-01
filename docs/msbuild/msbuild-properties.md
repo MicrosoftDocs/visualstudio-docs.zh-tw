@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a45f4388fe02e7192da91a246b3dd05657f0ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573956"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080746"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。  
   
-## <a name="defining-and-referencing-properties-in-a-project-file"></a>定義和參考專案檔中的屬性  
+## <a name="define-and-reference-properties-in-a-project-file"></a>定義和參考專案檔中的屬性  
  宣告屬性的方式是建立具有屬性名稱的項目，做為 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 項目的子項目。 例如，下列 XML 會建立名為 `BuildDir` 並具有 `Build` 值的屬性。  
   
 ```xml  
@@ -31,7 +31,7 @@ ms.locfileid: "31573956"
 </PropertyGroup>  
 ```  
   
- 在整個專案檔中，可使用語法 $(`PropertyName`) 來參考屬性。 例如，使用 $(BuildDir) 來參考上述範例中的屬性。  
+ 在整個專案檔中，可使用語法 $(\<PropertyName>) 來參考屬性。 例如，使用 $(BuildDir) 來參考上述範例中的屬性。  
   
  您可以藉由重新定義屬性來變更屬性值。 您可以使用下列 XML，為 `BuildDir` 屬性指定新值：  
   
@@ -56,20 +56,20 @@ ms.locfileid: "31573956"
  若要從衍生的工具內取得環境變數的目前值，請使用[屬性函式](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 然而，一般慣用的方法是使用工作參數 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 這個字串陣列中設定的環境屬性可以傳遞至繁衍的工具，而不會影響系統環境變數。  
   
 > [!TIP]
->  並非所有環境變數都會在讀取後變成初始屬性。 任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數都會被忽略。  
+>  並非所有環境變數都會在讀取後變成初始屬性。 會忽略任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數。  
   
  如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
 ## <a name="registry-properties"></a>登錄屬性  
- 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄區 (例如 HKEY_LOCAL_MACHINE)、`Key` 是機碼名稱、`SubKey` 是子機碼名稱，而`Value` 是子機碼的值。  
+ 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄區 (例如 **HKEY_LOCAL_MACHINE**)、`Key` 是機碼名稱、`SubKey` 是子機碼名稱，而 `Value` 是子機碼的值。  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey@Value)  
 ```  
   
  若要取得預設的子機碼值，請省略 `Value`。  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey)  
 ```  
   
@@ -88,7 +88,7 @@ $(registry:Hive\MyKey\MySubKey)
   
  下列範例會將全域 `Configuration` 屬性設定為 `DEBUG`。  
   
-```  
+```cmd  
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
@@ -107,7 +107,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
  如需詳細資訊及屬性函式清單，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
-## <a name="creating-properties-during-execution"></a>在執行期間建立屬性  
+## <a name="create-properties-during-execution"></a>在執行期間建立屬性  
  位於 `Target` 項目以外的屬性值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改屬性：  
   
 -   任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。  
@@ -116,7 +116,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
 -   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 `PropertyGroup` 項目，其中可能包含屬性宣告。  
   
-## <a name="storing-xml-in-properties"></a>將 XML 儲存於屬性中  
+## <a name="store-xml-in-properties"></a>將 XML 儲存於屬性中  
  屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會藉由使用其各自的屬性值來取代屬性參考。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。  
   
 ```xml  
@@ -138,9 +138,9 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
- [MSBuild](../msbuild/msbuild.md)  
+ [ MSBuild](../msbuild/msbuild.md)  
  [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)   
  [如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
  [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   

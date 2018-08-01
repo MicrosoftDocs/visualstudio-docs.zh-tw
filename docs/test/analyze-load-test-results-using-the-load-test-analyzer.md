@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 06c9125de718ddada277985513efdb5e0590e4c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968286"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234159"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 
-當您使用 [負載測試分析器] 時，可以找出應用程式的瓶頸、辨識應用程式的錯誤，以及測量應用程式的改進程度。 您可以透過下列方式來分析負載測試結果：
+當您使用 [負載測試分析器] 時，可以找出應用程式的瓶頸、辨識應用程式的錯誤，以及測量應用程式的改善程度。 您可以透過下列方式來分析負載測試結果：
 
 -   在負載測試執行時予以監視。
 

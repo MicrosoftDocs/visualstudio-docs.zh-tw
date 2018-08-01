@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926910"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077183"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>XAttribute 類別動態屬性
 

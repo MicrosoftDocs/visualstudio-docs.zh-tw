@@ -1,5 +1,5 @@
 ---
-title: ButtonText 項目 |Microsoft 文件
+title: ButtonText 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fca0fbb22bf51353eeaa64f519face53bfb23c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8ba4667a34594c764a57788ee468d32733ded8e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100175"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232004"
 ---
-# <a name="buttontext-element"></a>ButtonText 項目
-此欄位可讓您指定各種功能表所顯示的文字。 根據預設，`ButtonText`元素會出現在功能表控制器。 `ButtonText`項目也會成為預設值，如果是空白的其他文字欄位。 `ButtonText`元素不可為空白，即使指定的文字欄位。  
+# <a name="buttontext-element"></a>ButtonText 元素
+此欄位可讓您指定各種功能表所顯示的文字。 根據預設，`ButtonText`元素會出現在功能表控制站。 `ButtonText`項目也會成為預設值，如果其他的文字欄位為空白。 `ButtonText`元素不可為空白，即使指定的其他文字欄位。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <ButtonText>My Command</ButtonText>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Strings 元素](../extensibility/strings-element.md)|群組文字項目，例如`ButtonText`和`CommandName`。|  
   
 ## <a name="text-value"></a>文字值  
- 文字值`ButtonText`項目會提供功能表項目、 組合，以及某些使用者介面 (UI) 項目所顯示的文字顯示的文字。  
+ 文字值`ButtonText`項目提供為功能表項目、 combos 和其他可見文字的使用者介面 (UI) 項目顯示的文字。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

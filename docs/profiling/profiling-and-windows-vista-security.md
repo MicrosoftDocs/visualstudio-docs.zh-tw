@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254640"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 依據電腦系統管理員提供的 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 使用者存取權限設定，個別使用者可能具有安全性權限可以在該電腦上分析處理序。 下列範例説明各使用者之間可能存在的差異：  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
   
      未選取此選項時，清單會顯示目前工作階段中的處理序。 選取此選項時，清單才會顯示所有工作階段中的處理序。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [ 如何：附加至執行中處理序](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [ 如何：附加至執行中的處理序](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

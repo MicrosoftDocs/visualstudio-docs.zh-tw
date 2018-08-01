@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8a1c38dfac5e403d7060031d70c6c6c558eff9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951644"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177808"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
@@ -55,7 +55,7 @@ ms.locfileid: "31951644"
 |VirtualSpace|Get/Set (布林值)|決定是否將泛空白字元顯示為圖形。 如果將此屬性項目設定為 `true`，則會將此清單中的 `WordWrap` 屬性項目設定為 `false`|
 |WordWrap|Get/Set (布林值)|決定檢視表是否在字組界限處自動為長行換行。 如果將此屬性項目設定為 `true`，則會將此清單中的 `VirtualSpace` 屬性項目設定為 `false`|
 |WordWrapGlyphs|Get/Set (布林值)|在一行的結尾顯示圖像；這表示該行會換行至下一行。|
-|EnableLeftClickForURLs|Get/Set (布林值)|決定編輯器是否為 URL 加底線，以及是否只要按一下滑鼠左鍵即可跳至系統登錄之 Web 瀏覽器中的 URL|
+|EnableLeftClickForURLs|Get/Set (布林值)|決定編輯器是否為 URL 加底線，以及是否只要按一下滑鼠左鍵即可跳至系統登錄之網頁瀏覽器中的 URL。|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|判斷縮排樣式：預設、智慧或無。|
 |TabSize|Get/Set (長整數)|表示一個定位點相當於幾個空格。如果設定的整數超出 1 到 60 (含) 的範圍就會失敗|
 |InsertTabs|Get/Set (布林值)|如果為 `True`，則縮排時會使用定位字元|
@@ -64,7 +64,7 @@ ms.locfileid: "31951644"
 |ShowNavigationBar|Get/Set (布林值)|決定是否在編輯器視窗的頂端顯示下拉式清單和按鈕|
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

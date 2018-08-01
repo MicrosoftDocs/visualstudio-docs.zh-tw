@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234006"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153595"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 本文列出當您在部署時，可能會發生下列常見的錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。  
   
 ## <a name="general-errors"></a>一般錯誤  
@@ -36,7 +36,7 @@ ms.locfileid: "36234006"
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>當您嘗試找出應用程式檔，好像沒有發生，或在 Internet Explorer 中的 XML 呈現或您收到 [執行] 或 [另存新檔] 對話方塊  
  此錯誤可能被因伺服器或用戶端上未正確登錄的內容類型 （也稱為 MIME 類型）。  
   
- 首先，請確定伺服器設定為關聯`.application`內容類型 」 / x ms-應用程式。 」  
+ 首先，請確定伺服器設定為產生關聯 *.application*內容類型 」 / x ms-應用程式。 」  
   
  如果伺服器已正確設定，請確認[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝在您的電腦上。 如果[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝時，您仍發現此問題，請解除安裝再重新安裝和[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]重新註冊用戶端上的內容類型。  
   
@@ -45,20 +45,20 @@ ms.locfileid: "36234006"
   
 -   如果記錄檔會說 「 (403) 禁止 」 或"(404) 找不到，「 驗證設定 Web 伺服器，這樣不會封鎖下載這個檔案。 如需詳細資訊，請參閱 [ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
--   如果伺服器正在封鎖的.config 檔案，請參閱節 「 下載錯誤，當您嘗試安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].config 檔案的應用程式 「 本文稍後的。  
+-   如果 *.config*伺服器正在封鎖的檔案，請參閱區段 」 下載錯誤，當您嘗試安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].config 檔案的應用程式 「 本文稍後的。  
   
--   判斷是否發生此狀況因為`deploymentProvider`部署資訊清單中的 URL 指向不同的位置，用來啟動的 URL。  
+-   判斷是否發生此錯誤，因為`deploymentProvider`部署資訊清單中的 URL 指向不同的位置，用來啟動的 URL。  
   
 -   請確定所有檔案都都存在於伺服器上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]記錄應該會告訴您找不到的檔案。  
   
 -   查看是否有網路連線問題;如果您的用戶端電腦在下載期間已離線，您就可以接收此訊息。  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>當您嘗試安裝 ClickOnce 應用程式的.config 檔案下載錯誤  
- 根據預設，Visual Basic Windows 為基礎的應用程式會包含 App.config 檔案。 當使用者嘗試安裝從使用 Windows Server 2003，Web 伺服器，因為該作業系統會封鎖基於安全性考量的.config 檔案的安裝時，則會是問題。 若要啟用的.config 檔案，以安裝，請按一下**使用".deploy"副檔名**中**發行選項** 對話方塊。  
+ 根據預設，Visual Basic Windows 為基礎的應用程式會包含 App.config 檔案。 會有問題的使用者嘗試安裝從使用 Windows Server 2003，Web 伺服器，因為該作業系統會封鎖安裝時 *.config*基於安全性考量的檔案。 若要啟用 *.config*檔案安裝，請按一下 [**使用".deploy"副檔名**中**發行選項**] 對話方塊。  
   
  您也必須設定內容類型 （也稱為 MIME 類型） 適當.application、.manifest，和.deploy 檔案。 如需詳細資訊，請參閱您的 Web 伺服器文件。  
   
- 如需詳細資訊，請參閱 「 Windows Server 2003:: 之一內容類型 」 中[伺服器和 ClickOnce 部署中的用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
+ 如需詳細資訊，請參閱 「 Windows Server 2003:: 之一內容類型 」 中[ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>錯誤訊息: 「 應用程式格式不正確。 」記錄檔包含 「 XML 簽章無效 」  
  請確定您已更新資訊清單檔案，並重新簽署它。 重新發佈應用程式使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或使用 Mage 簽署應用程式一次。  

@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder 項目 （Visual Studio 範本） |Microsoft 文件
+title: CreateNewFolder 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0897a5fdd160abf42e28ba6f36755822172fa743
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77a67f69db12f5b651be45380e46e437ecc8bf3c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108358"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232676"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 項目 (Visual Studio 範本)
+# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 項目 （Visual Studio 範本）
 決定是否要檢查建立專案的目標目錄是否不存在。 如果目錄不存在，則可為專案建立全新的目錄。 此設定通常會由 `NewProjectRequiresNewFolder(VsTemplate)` 登錄旗標 (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) 覆寫，所有一般專案類型都會使用此設定來決定是否要在新目錄中建立新專案。  
   
  \<VSTemplate >  
@@ -40,18 +40,18 @@ ms.locfileid: "31108358"
 ## <a name="type"></a>類型  
  `Boolean`  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   

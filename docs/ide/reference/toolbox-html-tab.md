@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752692"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177002"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 
-工具箱的 [HTML] 索引標籤提供適用於網頁和 Web Forms 的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視] 功能表上，按一下 [工具箱]，然後按一下 [工具箱] 的 [HTML] 索引標籤。
+工具箱的 [HTML] 索引標籤提供適用於網頁和 Web 表單的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視] 功能表上，按一下 [工具箱]，然後按一下 [工具箱] 的 [HTML] 索引標籤。
 
  若要在 [HTML] 索引標籤上建立工具的執行個體，請按兩下工具以將它新增至文件的目前插入點，或選取工具並將它拖曳至編輯介面上的想要位置。
 
@@ -42,7 +42,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif)
 
-插入 `type="button"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Button1"` 表示第一個按鈕、插入 `id="Button2"` 表示第二個按鈕，以此類推。
+插入 `type="button"` 的 `input` 元素。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Button1"` 表示第一個按鈕、插入 `id="Button2"` 表示第二個按鈕，以此類推。
 
 當您將 [輸入 (按鈕)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -54,7 +54,7 @@ ms.locfileid: "34752692"
 
 ![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif)
 
-插入 `type="reset"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Reset1"` 表示第一個重設按鈕、插入 `id="Reset2"` 表示第二個重設按鈕，以此類推。
+插入 `type="reset"` 的 `input` 元素。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Reset1"` 表示第一個重設按鈕、插入 `id="Reset2"` 表示第二個重設按鈕，以此類推。
 
 當您將 [輸入 (重設)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -66,7 +66,7 @@ ms.locfileid: "34752692"
 
 ![HTMLpageToolbarSubmitButton 螢幕擷取畫面](../../ide/reference/media/vxsubmit.gif)
 
-插入 `type="submit"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Submit1"` 表示第一個送出按鈕、插入 `id="Submit2"` 表示第二個送出按鈕，以此類推。
+插入 `type="submit"` 的 `input` 元素。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Submit1"` 表示第一個送出按鈕、插入 `id="Submit2"` 表示第二個送出按鈕，以此類推。
 
 當您將 [輸入 (送出)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -78,7 +78,7 @@ ms.locfileid: "34752692"
 
 ![HTMLpageToolbarTextField 螢幕擷取畫面](../../ide/reference/media/vxtextfield.gif)
 
-在文件中，插入 `type="text"` 的 `input` 項目。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="Text1"` 表示第一個文字欄位、插入 `id="Text2"` 表示第二個文字欄位，以此類推。
+在文件中，插入 `type="text"` 的 `input` 元素。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="Text1"` 表示第一個文字欄位、插入 `id="Text2"` 表示第二個文字欄位，以此類推。
 
 當您將 [輸入 (文字)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -93,7 +93,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif)
 
-在文件中，插入 `type="file"` 的 `input` 項目。 根據預設，插入 `id="File1"` 表示第一個檔案欄位、插入 `id="File2"` 表示第二個檔案欄位，以此類推。
+在文件中，插入 `type="file"` 的 `input` 元素。 根據預設，插入 `id="File1"` 表示第一個檔案欄位、插入 `id="File2"` 表示第二個檔案欄位，以此類推。
 
 當您將 [輸入 (檔案)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -108,7 +108,7 @@ ms.locfileid: "34752692"
 
 ![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif)
 
-插入 `type="password"` 的 `input` 項目。 根據預設，插入 `id="Password1"` 表示第一個密碼欄位、插入 `id="Password2"` 表示第二個密碼欄位，以此類推。
+插入 `type="password"` 的 `input` 元素。 根據預設，插入 `id="Password1"` 表示第一個密碼欄位、插入 `id="Password2"` 表示第二個密碼欄位，以此類推。
 
 當您將 [輸入 (密碼)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -123,7 +123,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif)
 
-插入 `type="checkbox"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Checkbox1"` 表示第一個核取方塊、插入 `id="Checkbox2"` 表示第二個核取方塊，以此類推。
+插入 `type="checkbox"` 的 `input` 元素。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Checkbox1"` 表示第一個核取方塊、插入 `id="Checkbox2"` 表示第二個核取方塊，以此類推。
 
 當您將 [輸入 (核取方塊)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -135,7 +135,7 @@ ms.locfileid: "34752692"
 
 ![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif)
 
-插入 `type="radio"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Radio1"` 表示第一個選項按鈕、插入 `id="Radio2"` 表示第二個選項按鈕，以此類推。
+插入 `type="radio"` 的 `input` 元素。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Radio1"` 表示第一個選項按鈕、插入 `id="Radio2"` 表示第二個選項按鈕，以此類推。
 
 當您將 [輸入 (選項按鈕)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -147,7 +147,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁隱藏項目](../../ide/reference/media/vxhidden.gif)
 
-插入 `type="hidden"` 的 `input` 項目。 根據預設，插入 `id="Hidden1"` 表示第一個隱藏欄位、插入 `id="Hidden2"` 表示第二個隱藏欄位，以此類推。
+插入 `type="hidden"` 的 `input` 元素。 根據預設，插入 `id="Hidden1"` 表示第一個隱藏欄位、插入 `id="Hidden2"` 表示第二個隱藏欄位，以此類推。
 
 當您將 [輸入 (隱藏)] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -159,7 +159,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁工具列文字區域](../../ide/reference/media/vxtextarea.gif)
 
-插入 `textarea` 項目。 您可以重新調整文字區域，或使用其捲軸來檢視超出顯示區域的文字。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="textarea1"` 表示第一個文字區域、插入 `id=" textarea 2"` 表示第二個文字區域，以此類推。
+插入 `textarea` 元素。 您可以重新調整文字區域，或使用其捲軸來檢視超出顯示區域的文字。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="textarea1"` 表示第一個文字區域、插入 `id=" textarea 2"` 表示第二個文字區域，以此類推。
 
 當您將 [文字區域] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -174,7 +174,7 @@ ms.locfileid: "34752692"
 
 ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif)
 
-插入 `table` 項目。
+插入 `table` 元素。
 
 當您將 [資料表] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -186,7 +186,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁影像項目](../../ide/reference/media/vximage.gif)
 
-插入 `img` 項目。 編輯這個項目來指定其 `src` 和其 `alt` 文字。
+插入 `img` 元素。 編輯這個元素來指定其 `src` 和其 `alt` 文字。
 
 當您將 [影像] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -198,7 +198,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁工具箱下拉式清單](../../ide/reference/media/vxdropdown.gif)
 
-插入下拉式清單 `select` 項目 (不使用 `size` 屬性)。 根據預設，插入 `id="select1"` 表示第一個清單方塊、插入 `id="select2"` 表示第二個清單方塊，以此類推。
+插入下拉式清單 `select` 元素 (不使用 `size` 屬性)。 根據預設，插入 `id="select1"` 表示第一個清單方塊、插入 `id="select2"` 表示第二個清單方塊，以此類推。
 
 當您將 [選取] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -206,13 +206,13 @@ ms.locfileid: "34752692"
 <select id="select1" name="select1"><option selected></option></select>
 ```
 
-您可以增加 size 屬性的值來建立多行 `select` 項目。
+您可以增加 size 屬性的值來建立多行 `select` 元素。
 
 **水平尺規**
 
 ![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif)
 
-插入 `hr` 項目。 若要增加線條的粗細，請編輯 `size` 屬性。
+插入 `hr` 元素。 若要增加線條的粗細，請編輯 `size` 屬性。
 
 當您將 [水平尺規] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 
@@ -224,7 +224,7 @@ ms.locfileid: "34752692"
 
 ![HTML 網頁標籤](../../ide/reference/media/vxlabel.gif)
 
-插入包含 `ms_positioning="FlowLayout"` 屬性的 `div` 項目。 除了寬度和高度之外，這個項目等同於「流程配置面板」。 若要格式化 `div` 項目內所含的文字，請將 `class="stylename"` 屬性新增至開始標記。
+插入包含 `ms_positioning="FlowLayout"` 屬性的 `div` 元素。 除了寬度和高度之外，這個項目等同於「流程配置面板」。 若要設定 `div` 元素內所含文字的格式，請將 `class="stylename"` 屬性新增至開始標記。
 
 當您將 [Div] 拖曳至 [設計] 檢視介面時，會將下列這類 HTML 標記插入文件中：
 

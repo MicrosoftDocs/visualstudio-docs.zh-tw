@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties 類別-內部成員 |Microsoft 文件
+title: ContingentProperties 類別-內部成員 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44bec34394df6f976416a827d7eb5d67cb99f6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097844"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204410"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別-內部成員
-包含的其他屬性<xref:System.Threading.Tasks.Task>物件。  
+包含其他屬性<xref:System.Threading.Tasks.Task>物件。  
   
  **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll)  
+ **組件：** mscorlib （在 mscorlib.dll 中)  
   
  因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```csharp  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
@@ -46,7 +46,7 @@ ms.locfileid: "31097844"
 |[m_children](../../extensibility/debugger/m-children-field.md)|使用這項工作中註冊的子工作的清單。|  
   
 ## <a name="remarks"></a>備註  
- 只有在需要時，這個類別的欄位初始化.NET Framework。  
+ 只有在需要時，.NET Framework 會初始化這個類別的欄位。  
   
 ## <a name="see-also"></a>另請參閱  
- [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

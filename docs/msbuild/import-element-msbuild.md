@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570963"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077486"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 將某個專案檔的內容匯入至另一個專案檔。  
@@ -35,13 +35,13 @@ ms.locfileid: "31570963"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -53,7 +53,7 @@ ms.locfileid: "31570963"
 ### <a name="child-elements"></a>子元素  
  無  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -63,7 +63,7 @@ ms.locfileid: "31570963"
 ## <a name="remarks"></a>備註  
  使用 `Import` 項目，您可以重複使用通用於許多專案檔的程式碼。 因為您對共用程式碼的更新都會傳播至匯入它的所有專案，所以這可讓您更輕鬆地維護程式碼。  
 
- 依照慣例，共用的匯入專案檔儲存為 .targets 檔案，但它們是標準 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可讓您匯入副檔名不同的專案，但基於一致性，建議您使用 .targets 副檔名。  
+ 依照慣例，共用的匯入專案檔儲存為 *.targets* 檔案，但它們是標準 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可讓您匯入副檔名不同的專案，但基於一致性，建議您使用 *.targets* 副檔名。  
 
  所匯入專案中的相對路徑是解譯成相對於匯入專案的目錄。 因此，如果將專案檔匯入至不同位置中的數個專案檔，則針對每個匯入的專案，會以不同的方式解譯匯入之專案檔中的相對路徑。  
 
@@ -76,12 +76,12 @@ ms.locfileid: "31570963"
 > [!NOTE]
 >  雖然條件式匯入陳述式可在命令列 MSBuilds 中運作，但是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中無法與 MSBuild 搭配運作。 條件式匯入是使用載入專案時所設定的組態與平台值進行評估。 如果後續變更需要重新評估專案檔中的條件 (例如，變更平台)，則 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會重新評估屬性和項目的條件，但匯入時不會重新評估。 因為不會重新評估條件式匯入，所以會略過匯入。  
 >   
->  若要解決這個問題，請將條件式匯入放到 .targets 檔案中，或將程式碼放到條件式區塊中 (例如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 區塊)。  
+>  若要解決這個問題，請將條件式匯入放到 *.targets* 檔案中，或將程式碼放到條件式區塊中 (例如 [Choose element (MSBuild)](../msbuild/choose-element-msbuild.md) 區塊)。  
 
 ## <a name="wildcards"></a>萬用字元  
  在 .NET Framework 4 中，MSBuild 允許在 Project 屬性中使用萬用字元。 有萬用字元時，會排序所有找到的相符項目 (適用於重現性)，然後依該順序進行匯入，就像已明確設定順序一樣。  
 
- 如果您想要提供擴充點，讓其他人可以匯入檔案，而不需要您將檔案名稱明確地新增至匯入檔案，則這非常好用。 基於此目的，Microsoft.Common.Targets 會在檔案頂端包含下行。  
+ 如果您想要提供擴充點，讓其他人可以匯入檔案，而不需要您將檔案名稱明確地新增至匯入檔案，則這非常好用。 基於此目的，*Microsoft.Common.Targets* 會在檔案頂端包含下行。  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  
@@ -113,6 +113,6 @@ ms.locfileid: "31570963"
 </Project>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

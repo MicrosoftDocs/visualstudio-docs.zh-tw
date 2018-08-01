@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425331"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180437"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 
@@ -51,7 +51,7 @@ ms.locfileid: "32425331"
 
 使用 [負載測試編輯器]，您可以在 [屬性] 視窗中編輯 [測試混合類型] 屬性，藉此在負載測試情節中變更測試混合模型。
 
-### <a name="to-change-the-test-mix-model"></a>若要變更測試混合模型
+### <a name="to-change-the-test-mix-model"></a>變更測試混合模型
 
 1.  開啟負載測試。
 

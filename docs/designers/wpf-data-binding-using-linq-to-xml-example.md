@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a436ff48e923f34bf5baa72857a6f82e8258cbfa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c206e19ec94e2644cfec35bb7e33551dddb713d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921426"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080733"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>使用 LINQ to XML 的 WPF 資料繫結範例
 
@@ -30,4 +30,4 @@ ms.locfileid: "31921426"
 
 ## <a name="see-also"></a>另請參閱
 
-- [WPF 資料繫結與 LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml-overview.md)

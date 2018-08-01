@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45115b03fe62ecd78815861d6e82f1a0e6b98449
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39277729"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列搭配程式碼剖析工具啟動獨立的原生應用程式以收集並行資料
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的原生應用程式來收集並行資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動原生的獨立 (用戶端) 應用程式，並收集處理序和執行緒並行資料。  
   
  程式碼剖析工作階段分成下列幾個部分︰  
@@ -28,12 +29,12 @@ ms.lasthandoff: 04/19/2018
 -   結束程式碼剖析工作階段  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要在命令提示字元使用程式碼剖析工具，必須將工具路徑加入至**命令提示字元**視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  分析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要在命令提示字元使用程式碼剖析工具，必須將工具路徑加入至**命令提示字元**視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
-## <a name="starting-the-application-with-the-profiler"></a>使用程式碼剖析工具啟動應用程式  
+## <a name="start-the-application-with-the-profiler"></a>使用分析工具啟動應用程式  
  若要使用程式碼剖析工具啟動目標應用程式，請使用 [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** 和 **/launch** 選項初始化程式碼剖析工具，並啟動應用程式。 您可以指定 **/start** 和 **/launch** 及其個別選項。 您也可以加入 **/globaloff** 選項以在目標應用程式啟動時暫停資料收集。 然後使用 **/globalon** 開始收集資料。  
   
-#### <a name="to-start-an-application-with-the-profiler"></a>使用程式碼剖析工具啟動應用程式  
+#### <a name="to-start-an-application-with-the-profiler"></a>使用分析工具啟動應用程式  
   
 1.  在命令提示字元中，輸入下列命令：  
   
@@ -61,8 +62,8 @@ ms.lasthandoff: 04/19/2018
     |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|  
     |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|指定當應用程式載入多個版本的 Common Language Runtime (CLR) 時要分析的 CLR 版本。|  
   
-## <a name="controlling-data-collection"></a>控制資料收集  
- 當目標應用程式執行時，您可以使用 VSPerfCmd.exe 選項開始和停止將資料寫入至檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
+## <a name="control-data-collection"></a>控制資料收集  
+ 當目標應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
   
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/19/2018
   
 -   您也可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 選項將程式碼剖析標記插入資料檔案。 **/mark** 命令會新增識別碼、時間戳記和一個選擇性的使用者定義文字字串。 標記可用來篩選程式碼剖析工具報告和資料檢視中的資料。  
   
-## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段  
+## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段  
  若要結束程式碼剖析工作階段，程式碼剖析工具不得進行資料收集。 您可以關閉分析的應用程式或叫用 **VSPerfCmd /detach**選項，以停止收集並行資料。 接著叫用 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。  
   
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  

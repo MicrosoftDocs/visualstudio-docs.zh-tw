@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8c5c93edd089c09fff1423b7375bebb10dc18168
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752659"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179628"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 

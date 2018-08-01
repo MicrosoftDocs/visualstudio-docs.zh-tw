@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37342745"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232214"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -118,7 +118,7 @@ Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/) 來識
 >
 > 不過，如果您使用檔案系統以手動方式移動解譯器和其環境時，Visual Studio 不會知道新的位置。 如需詳細資訊，請參閱[移動解譯器](installing-python-interpreters.md#moving-an-interpreter)。
 
-## <a name="fix-invalid-environments"></a>修正無效的環境
+## <a name="fix-or-delete-invalid-environments"></a>修正或刪除無效的環境
 
 若 Visual Studio 找到環境的登錄項目，但解譯器的路徑無效，[Python 環境] 視窗就會以有刪除線的字型顯示名稱：
 

@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065877"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230944"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 連結器屬性 (Android C++)
 
@@ -63,4 +63,4 @@ ms.locfileid: "31065877"
 Whole Archive | Whole Archive 會使用來自來源及其他相依性的所有程式碼。
 其他選項 | 其他選項。
 其他相依性 | 指定要新增至連結命令列的其他項目。
-程式庫相依性 | 此選項可指定要新增至連結器命令列的其他程式庫。 其他程式庫會新增至連結器命令列的結尾，並以 'lib' 為開頭，以 '.a' 或 '.so' 副檔名結尾。  (-lFILE)
+程式庫相依性 | 此選項可指定要新增至連結器命令列的其他程式庫。 其他程式庫會新增至連結器命令列的結尾，並以 *lib* 為開頭，以 *.a* 或 *.so* 副檔名結尾。  (-lFILE)

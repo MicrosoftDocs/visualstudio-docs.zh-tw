@@ -13,26 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815609"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的 Web 伺服器上安裝開發環境。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。  
   
 > [!NOTE]
->  當您要用獨立的分析工具收集 ASP.NET 網站的效能資料時，建議您使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 程式碼工具，不要用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
+>  當您要使用獨立的分析工具收集 ASP.NET 網站的效能資料時，建議您使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 命令列工具，不要用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>安裝獨立分析工具  
   
-1.  在包含 \Standalone 分析工具路徑的目錄中，找到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝媒體的獨立分析工具安裝程式 (vs_profiler.exe)，並執行它。  
+1.  在包含 *\Standalone Profiler* 路徑的目錄中，找到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝媒體的獨立分析工具安裝程式 (*vs_profiler.exe*)，並執行它。  
   
-2.  將 vsintr.exe 和 msdis150.dll 的路徑新增至系統路徑。  
+2.  將 *vsintr.exe* 和 *msdis150.dll* 的路徑新增至系統路徑。  
   
     > [!NOTE]
-    >  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的預設安裝中，vsinstr.exe 和 msdis150.dll 位於 \Program Files\Visual Studio 10\Team Tools\Performance Tools。  
+    >  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的預設安裝中，*vsinstr.exe* 和 *msdis150.dll* 位於 *\Program Files\Visual Studio 10\Team Tools\Performance Tools*。  
   
 3.  在命令提示字元處，鍵入 **VSInstr**。  
   
@@ -50,8 +51,8 @@ ms.lasthandoff: 04/19/2018
   
 6.  使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。  
   
-## <a name="see-also"></a>請參閱  
- [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>另請參閱  
+ [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [逐步解說：使用檢測進行命令列分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   

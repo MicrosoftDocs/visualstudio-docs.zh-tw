@@ -14,26 +14,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57917b3820bac6005faa7b31f8cdd6cffd4978b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cf8c8a05d07d1a75a8794c52a2f89a55f01419e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965607"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152059"
 ---
 # <a name="task-writing"></a>工作撰寫
-提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的工作程式庫詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
+提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="tasks"></a>工作  
- 工作範例包括複製一或多個檔案的 [Copy](../msbuild/copy-task.md)、建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 每項工作都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ITask> 介面，此介面定義於 Microsoft.Build.Framework.dll 組件中。  
+ 工作範例包括複製一或多個檔案的 [Copy](../msbuild/copy-task.md)、建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 每個工作都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ITask> 介面，此介面定義於 *Microsoft.Build.Framework.dll* 組件中。  
   
  實作工作時有兩種方法可供使用：  
   
 -   直接實作 <xref:Microsoft.Build.Framework.ITask> 介面。  
   
--   從協助程式類別 <xref:Microsoft.Build.Utilities.Task> 衍生您的類別，此協助程式類別定義於 Microsoft.Build.Utilities.dll 組件中。 工作會實作 ITask 並提供部分 ITask 成員的預設實作。 此外，記錄會更容易。  
-  
- 這兩種情況都必須在您的類別中新增名為 `Execute` 的方法，這是工作執行時所呼叫的方法。 這個方法不採用任何參數，並會傳回 `Boolean` 值：如果工作成功為 `true`，如果失敗為 `false`。 下例示範的工作不執行任何動作，並會傳回 `true`。  
+-   從協助程式類別 <xref:Microsoft.Build.Utilities.Task> 衍生您的類別，此協助程式類別定義於 *Microsoft.Build.Utilities.dll* 組件中。 工作會實作 ITask 並提供部分 ITask 成員的預設實作。 此外，記錄會更容易。  
+
+這兩種情況都必須在您的類別中新增名為 `Execute` 的方法，這是工作執行時所呼叫的方法。 這個方法不採用任何參數，並會傳回 `Boolean` 值：如果工作成功為 `true`，如果失敗為 `false`。 下例示範的工作不執行任何動作，並會傳回 `true`。  
   
 ```csharp
 using System;  
@@ -98,15 +98,15 @@ namespace MyTasks
 </Project>  
 ```  
   
-## <a name="registering-tasks"></a>註冊工作  
- 如果專案即將執行工作，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 必須知道如何找出包含工作類別的組件。 工作是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 註冊。  
+## <a name="register-tasks"></a>註冊工作  
+ 如果專案即將執行工作，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 必須知道如何找出包含工作類別的組件。 工作是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 註冊的。  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案 Microsoft.Common.Tasks 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 Microsoft.Common.Tasks 中註冊的工作也在目前的專案檔中註冊，則目前的專案檔有優先順序，亦即您可以使用自己的同名工作覆寫預設工作。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案 *Microsoft.Common.Tasks* 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 *Microsoft.Common.Tasks* 中註冊的工作也在目前的專案檔中註冊，則以目前的專案檔為優先，亦即您可以使用自己的同名工作覆寫預設工作。  
   
 > [!TIP]
->  檢視 Microsoft.Common.Tasks 的內容即可以查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所附的工作清單。  
+>  檢視 *Microsoft.Common.Tasks* 的內容即可以查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供之工作的清單。  
   
-## <a name="raising-events-from-a-task"></a>從工作引發事件  
+## <a name="raise-events-from-a-task"></a>從工作引發事件  
  如果您的工作衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別，您可以對 <xref:Microsoft.Build.Utilities.Task> 類別使用下列任一 helper 方法，引發要被攔截且由任何已註冊記錄器顯示的事件：  
   
 ```csharp
@@ -143,7 +143,7 @@ public class SimpleTask : ITask
 }  
 ```  
   
-## <a name="requiring-task-parameters-to-be-set"></a>需要設定工作參數  
+## <a name="require-task-parameters-to-be-set"></a>要求設定工作參數  
  您可將某些工作屬性標記為「必要」，讓所有執行工作的專案檔都必須設定這些屬性值，否則組建會失敗。 在您的工作中將 `[Required]` 屬性套用至 .NET 屬性，如下所示：  
   
 ```csharp
@@ -267,5 +267,5 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   

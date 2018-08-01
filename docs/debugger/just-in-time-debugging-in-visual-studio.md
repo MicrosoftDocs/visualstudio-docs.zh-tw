@@ -3,7 +3,7 @@ title: 如何： 回應在 Just-in-time 偵錯工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 05/23/17
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281494"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179771"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 回應在 Just-in-time 偵錯工具
 
@@ -50,4 +50,4 @@ ms.locfileid: "36281494"
     在 IIS 管理員 中，以滑鼠右鍵按一下伺服器節點，然後選擇**切換至 功能檢視**。 在 [ASP.NET] 區段中，選擇 **.NET 編譯**，然後確定您選擇**False**做為偵錯行為 （步驟是在較舊版本的 IIS 不同）。
 
 ## <a name="see-also"></a>另請參閱
- [偵錯工具基礎](../debugger/debugger-basics.md)
+ [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

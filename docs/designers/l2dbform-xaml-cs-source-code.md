@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926053"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977729"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 
-本主題包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。 此檔案中所包含的 L2XDBForm 部分類別可分為三個邏輯區段：資料成員、`OnRemove` 以及 `OnAddBook` 按鈕 Click 事件處理常式。
+本主題包含 L2DBForm.xaml.cs 檔案中 C# 原始程式碼的內容與描述。 此檔案中所包含的 L2XDBForm 部分類別可分為三個邏輯區段：資料成員、`OnRemove` 以及 `OnAddBook` 按鈕 Click 事件處理常式。
 
 ## <a name="data-members"></a>資料成員
 
@@ -29,7 +29,7 @@ ms.locfileid: "31926053"
 
 -   利用下行，建構函式中的成員 `bookList` 會被初始化為 L2DBForm.xaml 中的 CDATA 字串：
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
@@ -41,7 +41,7 @@ ms.locfileid: "31926053"
 
 -   第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。
 
--   最後一個陳述式會將這個新書籍項目加入到 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。
+-   最後一個陳述式會將這個新書籍項目新增至 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。
 
 ## <a name="onremove-event-handler"></a>OnRemove 事件處理常式
 
@@ -51,13 +51,13 @@ ms.locfileid: "31926053"
 
 -   首先，系統會擷取清單方塊中，與目前所選項目相關聯的書籍項目：
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
 -   接著，這個項目會從資料提供者刪除：
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 
@@ -137,9 +137,9 @@ namespace LinqToXmlDataBinding {
 
 ### <a name="comments"></a>註解
 
-如需這些處理常式的相關 XAML 來源，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。
+如需這些處理常式的相關聯 XAML 原始碼，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)
+- [L2DBForm.xaml 來源程式碼](../designers/l2dbform-xaml-source-code.md)

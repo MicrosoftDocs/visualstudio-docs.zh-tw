@@ -1,7 +1,7 @@
 ---
 title: 快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 description: 在此快速入門中，您會在 Visual Studio 中建立 Node.js 應用程式
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,17 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0a78f9fdfd1ea3612d86432619c463d526eed5c2
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131852"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 Node.js Web 應用程式。 如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 Node.js Web 應用程式。 如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
+
 首先，您將建立 Node.js Web 應用程式專案。
 
 1. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。
@@ -41,7 +43,7 @@ ms.lasthandoff: 05/23/2018
 
      ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
-    Visual Studio 會建立新的方案並開啟專案。 *server.js* 會在左窗格的編輯器中開啟。
+    在您選擇 [空白的 Node.js Web 應用程式] 範本並按一下 [確定] 之後，Visual Studio 會建立新的方案並開啟專案。 *server.js* 會在左窗格的編輯器中開啟。
 
 ## <a name="explore-the-ide"></a>探索 IDE
 
@@ -49,13 +51,13 @@ ms.lasthandoff: 05/23/2018
 
    ![底下提供說明，包括方案總管](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。
+   - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。
 
-  - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
+   - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
 
-  - npm 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
+   - npm 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
 
-1. 如果您想要從命令提示字元安裝 npm 套件或 node.js 命令，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]。
+1. 如果您想要從命令提示字元安裝 npm 套件或 Node.js 命令，請以滑鼠右鍵按一下專案節點，然後選擇 [於此處開啟命令提示字元]。
 
    ![Node.js 命令提示字元](../ide/media/quickstart-nodejs-command-prompt.png)
 
@@ -83,9 +85,12 @@ ms.lasthandoff: 05/23/2018
 
 1. 關閉網頁瀏覽器。
 
-恭喜您完成此快速入門！ 我們希望您更了解 Visual Studio IDE。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。
+恭喜您完成本快速入門，其中，您已開始使用 Visual Studio IDE 和 Node.js。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。
 
 ## <a name="next-steps"></a>後續步驟
 
-- 逐步進行 [Node.js 和 Express 的教學課程](../nodejs/tutorial-nodejs.md)
-- 逐步進行 [Node.js 和 React 的教學課程](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)
+
+- [Node.js 和 Express 的教學課程](../javascript/tutorial-nodejs.md)
+- [Node.js 和 React 的教學課程](../javascript/tutorial-nodejs-with-react-and-jsx.md)

@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c064f3398ac29cfa4187c19139e9264e2925689f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 650b550b21f239f382bb464078ee766920262309
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578831"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079845"
 ---
-# <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 項目 (MSBuild)
+# <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 `ItemDefinitionGroup` 元素可讓您定義一組項目定義，這些項目定義預設為套用至專案中所有項目的中繼資料值。 ItemDefinitionGroup 可取代使用 [CreateItem 工作](../msbuild/createitem-task.md)和 [CreateProperty 工作](../msbuild/createproperty-task.md)的需求。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。  
 
  \<Project>  
@@ -35,15 +35,15 @@ ms.locfileid: "31578831"
 
 ## <a name="syntax"></a>語法  
 
-```  
+```xml  
 <ItemDefinitionGroup Condition="'String A' == 'String B'">  
     <Item1>... </Item1>  
     <Item2>... </Item2>  
 </ItemDefinitionGroup>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -57,7 +57,7 @@ ms.locfileid: "31578831"
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemDefinitionGroup` 中可能有零或多個 `Item` 項目。|  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -84,6 +84,6 @@ ms.locfileid: "31578831"
 </Project>  
 ```  
 
-## <a name="see-also"></a>請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+## <a name="see-also"></a>另請參閱  
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [項目](../msbuild/msbuild-items.md)

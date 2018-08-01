@@ -1,5 +1,5 @@
 ---
-title: 文件位置 |Microsoft 文件
+title: 文件位置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c2c3d50c9353caf14db18a22d93cc363903961
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 456761279e41bd35a3a5f049b33403132fe07d66
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098013"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203692"
 ---
 # <a name="document-position"></a>文件位置
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**文件位置**:  
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯*文件位置*:  
   
--   提供抽象的原始程式檔中的位置，因為知道 IDE。 大部分語言目前文件位置可以視為的原始程式檔中的位置。  
+-   為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。  
   
 -   描述偵錯引擎來源文件中的位置。  
   

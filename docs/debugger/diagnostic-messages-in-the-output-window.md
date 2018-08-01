@@ -1,5 +1,5 @@
 ---
-title: 診斷訊息傳送至輸出視窗 |Microsoft 文件
+title: 將診斷訊息傳送至輸出視窗 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -28,26 +28,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474579"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252293"
 ---
-# <a name="send-diagnostic-messages-to-the-output-window"></a>診斷訊息傳送至輸出視窗
-您可以撰寫執行階段訊息**輸出**視窗使用`Debug`類別或`Trace`類別，也就是組件的<xref:System.Diagnostics>類別庫。 如果您只希望在程式的偵錯版本中輸出，請使用 Debug 類別。 如果要同時在偵錯和發行版本 (Release Version) 中輸出，則使用 Trace 類別。  
+# <a name="send-diagnostic-messages-to-the-output-window"></a>將診斷訊息傳送至 [輸出] 視窗
+您可以撰寫執行階段訊息**輸出**視窗中使用<xref:System.Diagnostics.Debug>類別或<xref:System.Diagnostics.Trace>類別，也就是組件的<xref:System.Diagnostics>類別庫。 使用<xref:System.Diagnostics.Debug>類別，如果您只在輸出*偵錯*程式的版本。 使用<xref:System.Diagnostics.Trace>類別，如果您想在輸出*偵錯*並*發行*版本。  
   
 ## <a name="output-methods"></a>輸出方法  
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 類別會提供下列輸出方法：  
   
 -   各種 `Write` 方法可在不中斷執行的情況下輸出資訊。 這些方法將取代前幾版 Visual Basic 所使用的 `Debug.Print` 方法。  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法會在指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱[Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
+-   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法會在指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱 < [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
   
 -   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法一定會中斷執行並輸出資訊。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。  
   
- 程式所輸出的應用程式時，除了**輸出**視窗可以顯示下列資訊：  
+ 程式所輸出的應用程式中，除了**輸出**視窗可以顯示下列資訊：  
   
 -   偵錯工具已載入或卸載的模組。  
   

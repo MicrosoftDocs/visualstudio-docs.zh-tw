@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578597"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081471"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。  
   
-## <a name="using-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性  
+## <a name="use-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性  
  `Task` 項目的 `ContinueOnError` 屬性可控制當工作失敗發生時，建置是否要停止或繼續。 此屬性也可控制當組建繼續時，是否要將錯誤視為錯誤或警告。  
   
  `ContinueOnError` 屬性可包含一或多個下列值：  
@@ -61,7 +61,7 @@ ms.locfileid: "31578597"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [ MSBuild](../msbuild/msbuild.md)  
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [工作](../msbuild/msbuild-tasks.md)
+[工作參考](../msbuild/msbuild-task-reference.md)   
+[工作](../msbuild/msbuild-tasks.md)

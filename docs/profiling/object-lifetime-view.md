@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255615"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
-在 [效能工作階段] 屬性頁上核取 [Also collect .NET object lifetime data (同時收集 .NET 物件存留期的資料)] 時，可以使用 [物件存留期] 檢視。  
+在 [效能工作階段] 屬性頁上核取 [同時收集 .NET 物件存留期的資料] 時，可以使用 [物件存留期] 檢視。  
   
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的記憶體回收行程可管理應用程式的記憶體配置和釋放。 為了要最佳化記憶體回收行程的效能，Managed 堆積分成三個層代 (Generation)：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存至世代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。  
   
@@ -72,5 +73,5 @@ ms.lasthandoff: 04/19/2018
 |**大型物件堆積執行個體已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體數目。|  
 |**大型物件堆積位元組已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體大小 (以位元組為單位)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

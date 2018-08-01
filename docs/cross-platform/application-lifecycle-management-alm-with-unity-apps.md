@@ -1,5 +1,5 @@
 ---
-title: 應用程式生命週期管理 (ALM) 與 Unity 應用程式 | Microsoft Docs
+title: 應用程式生命週期管理 (ALM) (含 Unity 應用程式) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232328"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
+
 開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。
 
  Visual Studio 以及 Visual Studio Team Services 和 Team Foundation Server 會一同提供各種 DevOps 功能，也稱為「應用程式生命週期管理」或 ALM。 其中許多項目都適用於跨平台專案 (包括使用 Unity 所建立的遊戲和沈浸式圖形化應用程式)，特別是使用 C# 做為指令碼語言時。 不過，因為 Unity 有其專屬開發環境和執行階段引擎，所以許多 ALM 功能不適用，如同其在 Visual Studio 中所建置的其他類型專案中亦不適用。
@@ -24,9 +26,10 @@ ms.lasthandoff: 04/16/2018
  下表說明使用 Unity 時 Visual Studio ALM 功能是否適用。 請參閱連結文件以取得這項功能的詳細資訊。
 
 ## <a name="agile-tools"></a>Agile 工具
- 參考連結︰**[工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere)
 
- 一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。
+參考連結︰[關於 Agile 工具和 Agile 專案管理](/vsts/work/backlogs/overview?view=vsts) (使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere)
+
+一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ ms.lasthandoff: 04/16/2018
 |報告和視覺化進度|[是]||
 
 ## <a name="modeling"></a>模型化
- 參考連結：**[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**
 
- 一般註解：雖然這些設計功能是獨立的編碼語言，或是使用 C# 之類的 .NET 語言，但它們是在具有物件階層和類別關聯性的傳統應用程式範例上運作。 在 Unity 內設計遊戲牽涉不同的範例 (即圖形物件、音效、著色器、指令碼等的關聯性)。 因此，Visual Studio 模型圖工具未特別與整個 Unity 專案相關。 它們可能用來管理 C# 指令碼內的關聯性，但那只是其中一項功能而已。
+參考連結：**[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**
+
+一般註解：雖然這些設計功能是獨立的編碼語言，或是使用 C# 之類的 .NET 語言，但它們是在具有物件階層和類別關聯性的傳統應用程式範例上運作。 在 Unity 內設計遊戲牽涉不同的範例 (即圖形物件、音效、著色器、指令碼等的關聯性)。 因此，Visual Studio 模型圖工具未特別與整個 Unity 專案相關。 它們可能用來管理 C# 指令碼內的關聯性，但那只是其中一項功能而已。
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ ms.lasthandoff: 04/16/2018
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[使用 Team Foundation 版本控制](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285)或 Visual Studio Team Services|[是]|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
-|[開始使用 Team Services 中的 Git (英文)](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|[是]|請參閱表格後面的注意事項。|
-|[改善程式碼品質](/visualstudio/test/improve-code-quality)|[是]||
+|[使用 Team Foundation 版本控制](/vsts/tfvc/overview?view=vsts)或 Visual Studio Team Services|[是]|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
+|[開始使用 Team Services 中的 Git (英文)](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|[是]|請參閱表格後面的注意事項。|
+|[改善程式碼品質](../test/improve-code-quality.md)|[是]||
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|[是]||
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|[是]||
 
@@ -89,23 +93,24 @@ ms.lasthandoff: 04/16/2018
 |手動測試|[是]||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
 |程式碼涵蓋範圍|N/A|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具 (英文)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
+|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
 ## <a name="improve-code-quality"></a>改善程式碼品質
 
-參考連結︰**[改善程式碼品質](/visualstudio/test/improve-code-quality)**
+參考連結：**[改善程式碼品質](../test/improve-code-quality.md)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
+|[分析受控程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
 |[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
-|[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
+|[測量受控程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
 |[效能總管](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 
 ## <a name="release-management"></a>版本管理
- 參考連結：**[使用 Release Management 進行自動部署 (英文)](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+參考連結︰[建置和發行](/vsts/pipelines/overview?view=vsts)
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ ms.lasthandoff: 04/16/2018
 |上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視
- 參考連結︰ **[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**
+
+參考連結︰ **[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|

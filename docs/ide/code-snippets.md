@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924468"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117208"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -36,9 +36,9 @@ ms.locfileid: "31924468"
 
 程式碼片段可用下列一般方式存取：
 
-- 在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段...]
+- 在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段]
 
-- 以滑鼠右鍵按一下內容功能表，或是從程式碼編輯器中，選擇 [片段] > [插入程式碼片段...]
+- 以滑鼠右鍵按一下操作功能表，或是從程式碼編輯器中，選擇 [片段] > [插入程式碼片段]
 
 - 或者，您也可以從鍵盤按 **Ctrl**+**K**+**X**
 
@@ -74,7 +74,7 @@ if (true)
 
 程式碼片段可以包含取代參數，這些都是您必須取代的預留位置，以符合您要撰寫的精確程式碼。 在上述範例中，`true` 是取代參數，您必須以適當的條件取代。 在此程式碼片段中同一個取代參數的每個執行個體都要重複這項您所進行的取代。
 
-例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段，請在 Visual Basic 程式碼檔中以滑鼠右鍵按一下，或是從內容功能表中選擇 [片段...] > [插入程式碼片段]。 然後，選擇 [程式碼模式] > [屬性、程序、事件] > [定義屬性]。
+例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段，請在 Visual Basic 程式碼檔中以滑鼠右鍵按一下，或是從操作功能表中選擇 [片段] > [插入程式碼片段]。 然後，選擇 [程式碼模式] > [屬性、程序、事件] > [定義屬性]。
 
 ![定義屬性的程式碼片段功能表](media/code-snippets-vb-property.png)
 

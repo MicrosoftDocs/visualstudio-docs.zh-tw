@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808438"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152496"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說：建立具有隱私權提示的自訂啟動載入器
 您可以設定為自動更新時使用較新的檔案版本和組件版本的組件，就可以使用 ClickOnce 應用程式。 若要確定您的客戶同意加入這項行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，它不會安裝。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -116,7 +116,7 @@ ms.locfileid: "38808438"
   
     2.  在上**專案**功能表上，按一下**加入模組**，然後按一下 **新增**。  
   
-    3.  在 Module1.vb 的程式碼檔案中，新增下列程式碼。  
+    3.  在  *Module1.vb*程式碼檔案，新增下列程式碼。  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ ms.locfileid: "38808438"
   
      適用於 Visual C# 只有開發人員：  
   
-     開啟 Program.cs 程式碼檔案，並加入下列程式碼。  
+     開啟*Program.cs*程式碼檔案，並新增下列程式碼。  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ ms.locfileid: "38808438"
   
  此程序示範如何藉由建立下列文件建立自訂啟動載入器套件：  
   
--   Product.xml 資訊清單檔案以描述啟動載入器的內容。  
+-   A *product.xml*資訊清單檔案，以描述啟動載入器的內容。  
   
--   若要列出您的套件，例如字串和軟體授權條款的當地語系化特定層面的 package.xml 資訊清單檔案。  
+-   A *package.xml*列出您的套件，例如字串和軟體授權條款的當地語系化特定層面的資訊清單檔案。  
   
 -   軟體授權條款的文件中。  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1： 建立啟動載入器目錄  
   
-1.  建立名為**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
+1.  建立名為**UpdateConsentDialog**中 *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*。  
   
     > [!NOTE]
     >  您可能需要系統管理權限才能建立這個資料夾。  
   
-2.  在 [UpdateConsentDialog] 目錄中，建立名為 en-us 子目錄。  
+2.  在  *UpdateConsentDialog*目錄中，建立名為子目錄*en*。  
   
     > [!NOTE]
     >  建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，這些目錄會包含法文與德文字串和語言套件。  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2： 建立 product.xml 資訊清單檔案  
   
-1.  建立文字檔案，稱為`product.xml`。  
+1.  建立文字檔案，稱為*product.xml*。  
   
-2.  在 product.xml 檔中，新增下列 XML 程式碼。 請確定您不覆寫現有的 XML 程式碼。  
+2.  在  *product.xml*檔案中，新增下列 XML 程式碼。 請確定您不覆寫現有的 XML 程式碼。  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ ms.locfileid: "38808438"
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3： 建立 package.xml 資訊清單檔案和軟體授權條款  
   
-1.  建立文字檔案，稱為`package.xml`。  
+1.  建立文字檔案，稱為*package.xml*。  
   
-2.  在 package.xml 檔中，新增下列 XML 程式碼定義之地區設定，並包含的軟體授權條款。 請確定您不覆寫現有的 XML 程式碼。  
+2.  在  *package.xml*檔案中，新增下列 XML 程式碼定義之地區設定，並包含的軟體授權條款。 請確定您不覆寫現有的 XML 程式碼。  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ ms.locfileid: "38808438"
   
 3.  將檔案儲存在 UpdateConsentDialog 啟動載入器目錄的 en-us 子目錄。  
   
-4.  建立稱為 「 軟體授權條款 eula.rtf 文件。  
+4.  建立稱為 「 文件*eula.rtf*的軟體授權條款。  
   
     > [!NOTE]
     >  軟體授權條款應該包含授權、 擔保、 責任和用戶所在地法律資訊。 這些檔案應該是地區設定特定，因此請確定該檔案會儲存在支援 MBCS 或 UNICODE 字元格式。 請參閱您的法務部門與內容相關的軟體授權條款。  
   
-5.  將文件儲存在 UpdateConsentDialog 啟動載入器目錄的 en-us 子目錄。  
+5.  儲存文件中的 en-us 子目錄*UpdateConsentDialog*啟動載入器目錄。  
   
-6.  如有必要，請為每個地區設定的軟體授權條款中建立新的 package.xml 資訊清單檔和新的 eula.rtf 文件。 比方說，如果您建立子目錄，fr，以 de 的地區設定，建立個別的 package.xml 資訊清單檔案和軟體授權條款，並將它們儲存到 fr，以 de 子目錄。  
+6.  如有必要，建立新*package.xml*資訊清單檔案和新*eula.rtf*文件的每個地區設定的軟體授權條款。 比方說，如果您建立子目錄，fr，以 de 的地區設定，建立個別的 package.xml 資訊清單檔案和軟體授權條款，並將它們儲存到 fr，以 de 子目錄。  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>將更新同意應用程式設定的必要元件  
  在 Visual Studio 中，您可以設定更新同意應用程式的必要元件。  
@@ -260,7 +260,7 @@ ms.locfileid: "38808438"
   
 4.  如果發行輸出不會自動開啟，瀏覽至發行輸出。  
   
-5.  執行 Setup.exe 程式。  
+5.  執行*Setup.exe*程式。  
   
      安裝程式會顯示同意對話方塊中更新的軟體授權合約。  
   
@@ -286,7 +286,7 @@ ms.locfileid: "38808438"
   
 4.  如果發行輸出不會自動開啟，瀏覽至發行輸出。  
   
-5.  執行 Setup.exe 程式。  
+5.  執行*Setup.exe*程式。  
   
      安裝程式會顯示同意對話方塊中更新的軟體授權合約。  
   

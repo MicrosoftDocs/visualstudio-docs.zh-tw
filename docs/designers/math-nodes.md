@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919725"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978199"
 ---
 # <a name="math-nodes"></a>數學節點
 
 在著色器設計工具中，數學節點負責執行代數、邏輯、三角及其他數學運算。
 
 > [!NOTE]
-> 當您使用著色器設計工具中的數學節點時，特別常見型別提升。 若要了解型別提升如何影響輸入參數，請參閱[著色器設計工具節點](../designers/shader-designer-nodes.md)中的＜輸入提升＞一節。
+> 當您使用著色器設計工具中的數學節點時，特別常見型別提升。 若要了解型別提升如何影響鍵入參數，請參閱[著色器設計工具節點](../designers/shader-designer-nodes.md)中的＜鍵入提升＞一節。
 
 ## <a name="math-node-reference"></a>數學節點參考
 

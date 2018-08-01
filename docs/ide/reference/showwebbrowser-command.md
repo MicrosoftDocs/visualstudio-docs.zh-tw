@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704872"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176381"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
-顯示您在 Web 瀏覽器視窗內指定的 URL (不論是在整合式開發環境 (IDE) 內或 IDE 外部)。
+
+顯示您在網頁瀏覽器視窗內指定的 URL (不論是在整合式開發環境 (IDE) 內或 IDE 外部)。
 
 ## <a name="syntax"></a>語法
 
@@ -55,7 +56,7 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

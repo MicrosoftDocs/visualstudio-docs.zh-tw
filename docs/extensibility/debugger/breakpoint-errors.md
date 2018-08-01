@@ -1,5 +1,5 @@
 ---
-title: 中斷點錯誤 |Microsoft 文件
+title: 中斷點錯誤 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e3c7271cc573388231045143f275d1032bef437
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b08b9bee82a2505411be95ef2e6634e7897c15ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099879"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153750"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
-下列中斷點嘗試繫結至程式碼時，描述的程序，但是會失敗：  
+以下說明的程序時嘗試繫結至程式碼的中斷點，但會失敗。  
   
-## <a name="troubleshooting-a-breakpoint-error"></a>中斷點錯誤疑難排解  
+## <a name="troubleshoot-a-breakpoint-error"></a>中斷點錯誤的疑難排解  
   
-1.  偵錯引擎 (DE) 傳送[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)到工作階段的偵錯管理員 (SDM)。  
+1.  偵錯引擎 (DE) 會傳送[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)工作階段的偵錯管理員 (SDM)。  
   
-2.  SDM 呼叫[IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 * * `ppErrorBP`) 以取得錯誤中斷點。  
+2.  SDM 呼叫[IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 * * `ppErrorBP`) 以取得錯誤的中斷點。  
   
-3.  SDM 呼叫[IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)取得來源錯誤中斷點暫止中斷點。  
+3.  SDM 呼叫[IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)取得從中產生錯誤的中斷點暫止中斷點。  
   
 4.  SDM 呼叫[IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)以取得錯誤中斷點繫結失敗的原因。  
   

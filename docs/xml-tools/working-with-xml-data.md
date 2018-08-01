@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693717"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176183"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 
@@ -50,11 +50,11 @@ Visual Studio 支援偵錯 XSLT 樣式表。 使用偵錯工具，您可在 XSLT
 
 [偵錯 XSLT](../xml-tools/debugging-xslt.md)討論如何偵錯使用 Visual Studio 偵錯工具的樣式表。
 
-[XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 及 XSLT 技術的相關資訊。
+[XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 和 XSLT 的相關資訊。
 
-[建立和設定 Visual Studio 中的資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)提供設計階段工具的說明建立資料集。
+[建立和設定 Visual Studio 中的資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)提供設計階段工具的說明，以建立資料集。
 
-[Managed 程式碼中的 XML Web service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立及部署 XML Web 服務以及如何存取 XML Web 服務。
+[在 managed 程式碼中的 XML web service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立及部署 XML web service，以及如何存取 XML web service。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: 偵錯工作階段 |Microsoft 文件
+title: 偵錯工作階段 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0fd986e5a3c0dbbe515e0338c4ca6007fd4162
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67734025b70ee6f910ed46f034dcfb1b10135cc3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098842"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203773"
 ---
 # <a name="debug-session"></a>偵錯工作階段
-偵錯工具就架構而言，**工作階段**:  
+偵錯工具就架構而言，*工作階段*:  
   
--   為所有的設定或處理程序，相關不相關，已啟動或附加至從 IDE 的單一執行個體。  
+-   是集合的所有處理序，相關或不相關，已啟動或附加到 IDE 的單一執行個體。  
   
--   是由工作階段偵錯管理員 (SDM) 實作。 如需詳細資訊，請參閱[工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)。  
+-   是由工作階段的偵錯管理員 (SDM) 實作。 如需詳細資訊，請參閱 <<c0> [ 工作階段進行偵錯管理員](../../extensibility/debugger/session-debug-manager.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)   

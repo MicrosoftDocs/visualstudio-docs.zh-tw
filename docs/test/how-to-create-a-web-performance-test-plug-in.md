@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974971"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178357"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
 
@@ -31,7 +31,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 > [!NOTE]
 > 您還可以建立負載測試外掛程式，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
-## <a name="to-create-a-custom-web-performance-test-plug-in"></a>若要建立自訂的 Web 效能測試外掛程式
+## <a name="to-create-a-custom-web-performance-test-plug-in"></a>建立自訂的 Web 效能測試外掛程式
 
 1.  開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 
@@ -107,7 +107,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
      此外掛程式就會新增至 [Web 測試外掛程式] 資料夾。
 
     > [!WARNING]
-    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到類似下面的錯誤：
+    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
     > **要求失敗: \<plug-in> 事件中發生例外狀況: 無法載入檔案或組件 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >

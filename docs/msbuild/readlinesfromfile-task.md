@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f05bb6e3f12dde2fbfd17120b9e2d646cb6e9f59
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9b545efb397e2dcd5052605db1d14e113ea9fc76
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567339"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152044"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 工作
 從文字檔讀取項目清單。  
@@ -39,7 +39,7 @@ ms.locfileid: "31567339"
 |`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含從檔案讀取的行。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `ReadLinesFromFile` 工作，以從文字檔的清單中建立項目。 從檔案讀取的項目會儲存在 `ItemsFromFile` 項目集合中。  
@@ -63,7 +63,7 @@ ms.locfileid: "31567339"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [工作](../msbuild/msbuild-tasks.md)

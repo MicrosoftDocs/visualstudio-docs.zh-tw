@@ -8,11 +8,12 @@
 - name: 快速入門
   items:
     - name: 使用 Flask 建立 Web 應用程式
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: 從範本建立專案
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: 從現有程式碼建立專案
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: 從存放庫建立專案
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: 從 Cookiecutter 範本建立專案
@@ -87,7 +88,7 @@
           href: search-paths.md
         - name: 環境視窗參考
           href: python-environments-window-tab-reference.md
-    - name: 編輯程式碼
+    - name: 編輯 Python 程式碼
       href: editing-python-code-in-visual-studio.md
       items:
         - name: 格式化程式碼

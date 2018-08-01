@@ -13,24 +13,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973512"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175952"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
-使用標準建置程序 (匯入 `Microsoft.Common.props` 和 `Microsoft.Common.targets`) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
+使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
 
-來源目錄中或其上的 `Directory.Build.rsp` 檔案將會套用到專案的命令列組建。 如需詳細資料，請參閱 [MSBuild 回應檔](../msbuild/msbuild-response-files.md#directorybuildrsp)。
+來源目錄中或其上的 *Directory.Build.rsp* 檔案將會套用到專案的命令列組建。 如需詳細資料，請參閱 [MSBuild 回應檔](../msbuild/msbuild-response-files.md#directorybuildrsp)。
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props 和 Directory.Build.targets
 
-在版本 15 之前的 MSBuild 版本中，如果您想要將新的自訂屬性提供給方案中的專案，則必須手動將該屬性的參考新增至方案中的每個專案檔。 或者，除此之外，您必須在 *.props* 檔案中定義屬性，然後明確地匯入方案之每個專案中的 *.props* 檔案。
+在 MSBuild 第 15 版之前，如果您想要將新的自訂屬性提供給方案中的專案，則必須手動將該屬性的參考新增至方案中的每個專案檔。 或者，除此之外，您必須在 *.props* 檔案中定義屬性，然後明確地匯入方案之每個專案中的 *.props* 檔案。
 
 不過，您現在可以使用一個步驟將新的屬性新增至每個專案，方法是將它定義在包含原始檔的根資料夾內稱為 *Directory.Build.props* 的單一檔案中。 執行 MSBuild 時，*Microsoft.Common.props* 會搜尋您的目錄結構中是否有 *Directory.Build.props* 檔案 (而且 *Microsoft.Common.targets* 會尋找 *Directory.Build.targets*)。 如果找到，則會匯入屬性。 *Directory.Build.props* 是使用者定義的檔案，可讓您自訂目錄下的專案。
 
@@ -67,9 +67,9 @@ c:\
 
 ### <a name="import-order"></a>匯入順序
 
-在 *Microsoft.Common.props* 中，因為 *Directory.Build.props* 很早就會被匯入，所以它無法使用較晚才定義的屬性。 因此，請避免參考尚未定義的屬性 (因此會評估為空的)。
+在 *Microsoft.Common.props* 中，*Directory.Build.props* 很早就會被匯入，因此它無法使用較晚才定義的屬性。 因此，請避免參考尚未定義的屬性 (將會評估為空的)。
 
-從 NuGet 套件匯入 *.targets* 檔案之後，會從 *Microsoft.Common.targets* 匯入 *Directory.Build.targets*。 因此，它可以用來覆寫大部分組建邏輯中所定義的屬性和目標，但有時可能需要在最後匯入之後於專案檔內執行自訂。
+從 NuGet 套件匯入 *.targets* 檔案之後，會從 *Microsoft.Common.targets* 匯入 *Directory.Build.targets*。 因此，它可以覆寫大部分組建邏輯中所定義的屬性和目標，但有時可能需要在最後匯入之後自訂專案檔。
 
 ### <a name="use-case-multi-level-merging"></a>使用案例：多層級合併
 
@@ -91,7 +91,7 @@ c:\
 
 使用者可能需要所有專案 *(1)* 的通用屬性、*src* 專案 *(2-src)* 的通用屬性和 *test* 專案 *(2-test)* 的通用屬性。
 
-若要讓 MSBuild 正確合併「內部」檔案 (*2-src* 和 *2-test*) 與「外部」檔案 (*1*)，您必須注意，一旦 MSBuild 找到 *Directory.Build.props* 檔案，就會停止進一步掃描。 若要繼續掃描並合併至外部檔案，請將此項目放入這兩個內部檔案中：
+若要讓 MSBuild 正確合併「內部」檔案 (*2-src* 和 *2-test*) 與「外部」檔案 (*1*)，您必須注意，一旦 MSBuild 找到 *Directory.Build.props* 檔案，就會停止進一步掃描。 若要繼續掃描並合併至外部檔案，請將此程式碼放入這兩個內部檔案中：
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
@@ -106,16 +106,16 @@ MSBuild 的一般方法摘要如下：
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-根據預設，`Microsoft.Common.props` 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`，而 `Microsoft.Common.targets` 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`。 `MSBuildProjectExtensionsPath` 的預設值是 `$(BaseIntermediateOutputPath)` (`obj/`)。 這是 NuGet 用來參考套件所傳遞之組建邏輯的機制；亦即，在還原時，它會建立參考套件內容的 `{project}.nuget.g.props` 檔案。
+根據預設，*Microsoft.Common.props* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`，而 *Microsoft.Common.targets* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`。 `MSBuildProjectExtensionsPath` 的預設值是 `$(BaseIntermediateOutputPath)` (`obj/`)。 NuGet 使用此機制來參考套件所傳遞的組建邏輯；亦即，在還原時，它會建立參考套件內容的 `{project}.nuget.g.props` 檔案。
 
-您可以停用此擴充性機制，方法是在 `Directory.Build.props` 中或匯入 `Microsoft.Common.props` 之前，將 `ImportProjectExtensionProps` 屬性設定為 `false`。
+您可以將 *Directory.Build.props* 中的 `ImportProjectExtensionProps` 屬性設定為 `false`，或在匯入 *Microsoft.Common.props* 之前，停用此擴充性機制。
 
 > [!NOTE]
 > 停用 MSBuildProjectExtensionsPath 匯入會導致 NuGet 套件所傳遞的組建邏輯無法套用到您的專案。 部分 NuGet 套件需要建置邏輯來執行其函式，若停用此項目則會變成沒有用處。
 
 ## <a name="user-file"></a>.user 檔案
 
-Microsoft.Common.CurrentVersion.targets 會匯入 `$(MSBuildProjectFullPath).user` (如果存在的話)，因此您可以在專案旁建立含有這個額外延伸模組的檔案。 對於想要存回原始檔控制的長期變更，最好是變更專案本身，如此維護人員未來就不需要知道這個擴充機制。
+*Microsoft.Common.CurrentVersion.targets* 會匯入 `$(MSBuildProjectFullPath).user` (若存在的話)，因此您可以在專案旁建立含有這個額外延伸模組的檔案。 對於想要存回原始檔控制的長期變更，最好是變更專案本身，如此維護人員未來就不需要知道這個擴充機制。
 
 ## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath 和 MSBuildUserExtensionsPath
 
@@ -124,28 +124,28 @@ Microsoft.Common.CurrentVersion.targets 會匯入 `$(MSBuildProjectFullPath).use
 
 依照慣例，許多核心組建邏輯檔案會在其內容之前匯入
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
 ，並在之後匯入
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
 。 這可讓已安裝的 SDK 擴增常見專案類型的組建邏輯。
 
-會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 `%LOCALAPPDATA%\Microsoft\MSBuild`。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 藉由使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定　的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
+會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 *%LOCALAPPDATA%\Microsoft\MSBuild*。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
 
-## <a name="customizing-the-solution-build"></a>自訂方案組建
+## <a name="customize-the-solution-build"></a>自訂方案組建
 
 > [!IMPORTANT]
-> 以這種方式自訂方案組建只適用於使用 `MSBuild.exe` 的命令列組建。 它**不**適用於 Visual Studio 內的組建。
+> 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它**不**適用於 Visual Studio 內的組建。
 
 MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建置該檔案。 產生的專案檔會在定義任何目標之前匯入 `before.{solutionname}.sln.targets`，並在匯入目標之後匯入 `after.{solutionname}.sln.targets`，包括安裝到 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 和 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 目錄的目標。
 
-例如，您可以在建置 `MyCustomizedSolution.sln` 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 `after.MyCustomizedSolution.sln.targets` 的相同目錄中建立一個檔案，其中包含：
+例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets 的相同目錄中建立一個檔案，其中包含：
 
 ```xml
 <Project>
@@ -155,6 +155,8 @@ MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
- [MSBuild 概念](../msbuild/msbuild-concepts.md) [MSBuild 參考](../msbuild/msbuild-reference.md)
+[MSBuild 概念](../msbuild/msbuild-concepts.md)
+
+[MSBuild 參考](../msbuild/msbuild-reference.md)

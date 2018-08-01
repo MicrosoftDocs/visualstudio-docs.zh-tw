@@ -1,7 +1,7 @@
 ---
 title: 對 Python 程式碼進行偵錯
 description: 在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032251"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079819"
 ---
-# <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
+# <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
 Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處理序、在 [監看式] 和 [即時運算] 視窗中評估運算式、檢查區域變數、中斷點、逐步執行/跳離/不進入陳述式及設定下一個陳述式等。
 
@@ -193,6 +193,49 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 [互動式偵錯] 視窗有自己的一組選項，您可以透過 [工具] > [選項] > [Python 工具] > [互動式偵錯視窗] 來存取。 不同於一般 [Python 互動式 (Python Interactive)] 視窗針對各個 Python 環境有不同的執行個體，[偵錯互動式視窗 (Debug Interactive Window)] 只有一個，而且一律使用 Python 解譯器進行處理序偵錯。 請參閱[選項 - 偵錯選項](python-support-options-and-settings-in-visual-studio.md#debugging-options)。
 
 ![[偵錯互動式視窗 (Debug Interactive Window)] 選項](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>使用實驗性偵錯工具
+
+從 Visual Studio 2017 預覽 4.0 開始，您可以選擇使用「實驗性偵錯工具」，其以 ptvsd 版本 4.1+ 為基礎。 若要選擇該工具，請選取 [工具] > [選項] 功能表命令，然後瀏覽至 [選項] 對話方塊中的 [Python] > [實驗性]，然後選取 [使用實驗性偵錯工具]
+
+實驗性偵錯工具僅與有限的 Python 環境相容，如下表所述：
+
+| Python 版本 | 與實驗性偵錯工具相容 |
+| --- | --- |
+| 2.6 | 否 |
+| 2.7 | [是] |
+| 3.1 至 3.4 | 否 |
+| 3.5 和更新版本 | [是] |
+| IronPython | 否 |
+
+如果您嘗試在不相容的環境中使用實驗性偵錯工具，Visual Studio 會顯示錯誤「偵錯工具與此環境不相容」：
+
+![當您使用實驗性偵錯工具時，偵錯工具與此環境不相容的錯誤](media/debugging-experimental-incompatible-error.png)
+
+選取 [停用實驗性偵錯工具] 命令，該命令會清除 [使用實驗性偵錯工具] 選項。
+
+> [!Note]
+> Python 3.3 和 3.4 目前不會顯示該警告。
+
+如果您已在目前的環境中安裝較舊版的 ptvsd (例如遠端偵錯所需較舊的 4.0.x 版或 3.x 版)，Visual Studio 會顯示錯誤「無法載入偵錯工具套件」或警告「偵錯工具套件已過期」:
+
+![當您使用實驗性偵錯工具時，無法載入偵錯工具套件的錯誤](media/debugging-experimental-version-error.png)
+
+![當您使用實驗性偵錯工具時，偵錯工具套件已過期的錯誤](media/debugging-experimental-version-warning.png)
+
+若要管理您 ptvsd 的安裝，請使用 [Python 環境] 視窗中的 [套件] 索引標籤或透過命令列使用下列命令：
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> 雖然您可以選擇忽略某些 ptvsd 版本的警告，但 Visual Studio 可能無法正常運作。
 
 ## <a name="see-also"></a>另請參閱
 

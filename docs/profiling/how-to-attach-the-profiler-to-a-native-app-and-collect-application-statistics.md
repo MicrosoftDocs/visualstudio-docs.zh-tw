@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a2e7e0a41660aa7410dac553337cc7e3fbc2483
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0a63b373220cc004ab13ba9da7ca6cc90bfafc9f
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765781"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39277725"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至原生獨立應用程式並收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加到執行中的原生獨立 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。  

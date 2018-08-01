@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8404deaeeadd65a4e032266422520721a50a51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815375"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
-您可以透過建立比較 (「差異」) 報告或檢視，來比較兩個不同的程式碼剖析工具資料檔案 (.vsp 或 .vsps) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  
+您可以透過建立比較 (「差異」) 報表或檢視，來比較兩個不同的分析工具資料檔案 (.*vsp* 或 .*vsps*) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  
   
  差異報告提供資料的資料表檢視。 資料表提供差異或相對於基準的變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。  
   
@@ -32,9 +33,9 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>在效能總管中建立專案的比較檔案檢視  
   
-1.  在 [效能總管] 的 [報告] 下方，選取您想要做為比較基準值使用的 .vsp 或 .vsps 報告檔案。  
+1.  在 [效能總管] 的 [報表] 下方，選取您想要作為比較基準值使用的 .*vsp* 或 .*vsps* 報表檔案。  
   
-2.  選取您想要比較的 .vsp 或 .vsps 報告檔案。  
+2.  選取您想要比較的 .*vsp* 或 .*vsps* 報表檔案。  
   
 3.  以滑鼠右鍵按一下其中一個選取的檔案，然後按一下 [比較報告]。  
   
@@ -54,6 +55,6 @@ ms.lasthandoff: 04/19/2018
   
 1.  在 [分析] 功能表上，選取 [比較效能報告]。  
   
-2.  在 [選取要進行比較的分析檔案] 視窗中，瀏覽並選取 [基準檔案] 分析檔 (.vsp 或 .vsps) 和 [比較檔案] (.vsp 或 .vsps)。  
+2.  在 [選取要進行比較的分析檔案] 視窗中，瀏覽並選取 [基準檔案] 分析檔 (.*vsp* 或 .*vsps*) 和 [比較檔案] (.*vsp* 或 .*vsps*)。  
   
 3.  按一下 [確定 **Deploying Office Solutions**]。

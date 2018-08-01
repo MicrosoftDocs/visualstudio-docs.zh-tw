@@ -1,5 +1,5 @@
 ---
-title: 呼叫偵錯工具事件 |Microsoft 文件
+title: 呼叫偵錯工具事件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100023"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153029"
 ---
-# <a name="calling-debugger-events"></a>呼叫偵錯工具事件
-偵錯工作階段中的事件會以特定順序發生。  
+# <a name="call-debugger-events"></a>呼叫偵錯工具事件
+在偵錯工作階段的事件會發生特定的順序。  
   
 ## <a name="discussion"></a>討論  
- 若要了解的偵錯引擎 (DE) 和工作階段的偵錯管理員 (SDM) 之間的呼叫模式，下列表示呼叫的典型的偵錯工作階段中發生的事件順序：  
+ 若要了解的偵錯引擎 (DE) 和工作階段的偵錯管理員 (SDM) 之間的呼叫模式，下列表示一般的偵錯工作階段中發生的事件的呼叫順序：  
   
 1.  [附加和中斷連結至程式](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
@@ -32,9 +32,9 @@ ms.locfileid: "31100023"
   
 3.  [終止程式](../../extensibility/debugger/terminating-a-program.md)  
   
-4.  [建立的中斷點](../../extensibility/debugger/creating-a-breakpoint.md)  
+4.  [建立中斷點](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [中斷點會繫結，或成為未繫結](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5.  [當中斷點繫結或變成未繫結](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
 6.  [中斷點錯誤](../../extensibility/debugger/breakpoint-errors.md)  
   

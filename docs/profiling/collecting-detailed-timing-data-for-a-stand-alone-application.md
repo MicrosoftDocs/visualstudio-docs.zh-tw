@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335810"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276347"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的詳細計時資料
 本節說明從命令列使用檢測方法收集用戶端 (獨立) 元件之詳細效能資料的程序和選項。  
@@ -27,8 +27,8 @@ ms.locfileid: "34335810"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**使用檢測分析 .NET Framework 應用程式**|-   [如何：檢測 .NET 元件並收集詳細計時資料](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**使用檢測分析 C/C++ 應用程式**|-   [如何：檢測原生元件並收集詳細計時資料](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**使用檢測分析 .NET Framework 應用程式**|-   [如何：檢測 .NET 元件並收集詳細計時資料](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**使用檢測分析 C/C++ 應用程式**|-   [如何：檢測原生元件並收集詳細計時資料](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>相關工作

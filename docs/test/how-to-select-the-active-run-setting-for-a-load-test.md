@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967605"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977602"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：選取負載測試的使用中回合設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "31967605"
 
 在 [負載測試編輯器] 中，現用回合設定可由 "[Active]" 後置字元加以辨識。
 
-## <a name="selecting-the-active-run-setting"></a>選取使用中的回合設定
+## <a name="select-the-active-run-setting"></a>選取使用中的回合設定
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>若要在負載測試中選取使用中的回合設定
 
@@ -47,15 +47,15 @@ ms.locfileid: "31967605"
 > [!NOTE]
 > 您可以透過設定名為 `Test.UseRunSetting=<run setting name>` 的環境變數，覆寫使用中的回合設定。 當您從命令列或批次 (Batch) 檔執行負載測試時，這種方法會很有用。 這可讓您在不用開啟負載測試的情況下，選擇不同的回合設定。
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>從命令列指定要使用的回合設定
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>從命令列指定要使用的回合設定
- 從命令列設定環境變數，即可覆寫負載測試中的預設回合設定。
+從命令列設定環境變數，即可覆寫負載測試中的預設回合設定。
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+**Set Test.UseRunSetting=PreProdEnvironment**
 
- 然後執行測試：
+然後執行測試：
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>另請參閱
 

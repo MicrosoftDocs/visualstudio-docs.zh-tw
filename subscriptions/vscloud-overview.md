@@ -9,23 +9,22 @@ description: 每月或每年租 Visual Studio Professional 或 Visual Studio Ent
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196423"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380599"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
-您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://www.visualstudio.com/subscriptions/)。 這些就是我們稱之為雲端訂用帳戶的內容。
+您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為雲端訂用帳戶。
 
-[比較雲端訂閱權益和定價](https://www.visualstudio.com/vs/pricing/)
+[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>開始之前
 
-*   若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。
-您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
+*   若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 
@@ -37,7 +36,7 @@ ms.locfileid: "31196423"
 
 0.  選取要用於計費的 Azure 訂用帳戶。 如果沒有 Azure 訂用帳戶，您可以建立新的帳戶。
 
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.  選取要購買的訂用帳戶數目。
 
@@ -57,16 +56,13 @@ ms.locfileid: "31196423"
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>取消您已購買的雲端訂用帳戶更新
-
+## <a name="manage-subscriptions"></a> 取消您已購買的雲端訂用帳戶更新
 
 *   變更所購買的訂用帳戶數目：
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   若要取消這些訂用帳戶，請將訂用帳戶數目減少為零 (0)。
-它們不會在下個計費週期的開頭更新 (每月雲端訂用帳戶的次月一號；年度雲端訂用帳戶的 12 個月後)。
+*   若要取消這些訂用帳戶，請將訂用帳戶數目減少為零 (0)。 它們不會在下個計費週期的開頭更新 (每月雲端訂用帳戶的次月一號；年度雲端訂用帳戶的 12 個月後)。
 
 ## <a name="buy-cloud-subscriptions-now"></a>立即購買雲端訂用帳戶
 
@@ -78,6 +74,6 @@ ms.locfileid: "31196423"
 ## <a name="related-resources"></a>相關資源
 
 * [Visual Studio 訂用帳戶系統管理入口網站](https://manage.visualstudio.com/)
-* [Visual Studio 訂用帳戶支援](https://www.visualstudio.com/vs/support/)
+* [Visual Studio 訂用帳戶支援](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio 雲端訂用帳戶帳單常見問題集](vscloud-billing-faq.md)
 * [Visual Studio 雲端訂用帳戶購買 CSP](vscloud-csp.md)

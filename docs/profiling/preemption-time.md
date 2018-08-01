@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc117d84fb6d2b7076e4084c81f197ba3a464ab
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7ac7152ec663a0a7b7bbbeee5c30a38885623cb9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254755"
 ---
 # <a name="preemption-time"></a>先佔時間
-時間軸中的這些區段，會和分類為先佔時間的封鎖時間相關聯。 此分類表示執行緒因為下列原因之一而被切換︰  
+時間軸中的這些區段，會和分類為先佔的封鎖時間建立關聯。 此分類表示執行緒因為下列原因之一而被切換︰  
   
 -   排程器已使用較高優先順序的執行緒取代它。  
   
@@ -31,5 +32,5 @@ ms.lasthandoff: 04/19/2018
   
  先佔區段的工具提示會顯示造成先佔的處理序或執行緒名稱。 不過，這不表示接手的處理序或執行緒會在先佔期間全程執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

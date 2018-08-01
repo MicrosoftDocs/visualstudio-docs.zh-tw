@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd1d899d3b3a84af2b07602b959dd031874e972c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571353"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155447"
 ---
-# <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
+# <a name="troubleshoot-net-framework-targeting-errors"></a>針對 .NET Framework 目標錯誤進行疑難排解
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>您參考了以不同 .NET Framework 版本為目標的專案或組件  
@@ -35,7 +35,7 @@ ms.locfileid: "31571353"
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>您將專案的目標重定為不同版本的 .NET Framework  
  如果您變更應用程式的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目標版本，Visual Studio 會變更一些參考，但您可能要手動更新某些參考。 例如，如果您變更應用程式將目標設定為 [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)]，且該應用程式有依賴 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 用戶端設定檔的資源或設定，就可能發生其中一個前述的錯誤。  
   
- 若要解決應用程式設定，請開啟 [方案總管]，選擇 [顯示所有檔案]，然後在 Visual Studio 的 XML 編輯器中編輯 app.config 檔案。 將設定中的版本變更為符合 .NET Framework 的適當版本。 例如，您可以將版本設定從 4.0.0.0 變更為 2.0.0.0。 同樣地，針對加入資源的應用程式，請開啟 [方案總管]，選擇 [顯示所有檔案] 按鈕，展開 [我的專案]\(Visual Basic) 或 [屬性]\ (C#)，然後在 Visual Studio 的 XML 編輯器中編輯 Resources.resx 檔案。 將版本設定從 4.0.0.0 變更為 2.0.0.0。  
+ 若要解決應用程式設定，請開啟 [方案總管]，選擇 [顯示所有檔案]，然後在 Visual Studio 的 XML 編輯器中編輯 *app.config* 檔案。 將設定中的版本變更為符合 .NET Framework 的適當版本。 例如，您可以將版本設定從 4.0.0.0 變更為 2.0.0.0。 同樣地，針對加入資源的應用程式，請開啟 [方案總管]，選擇 [顯示所有檔案] 按鈕，展開 [我的專案] (Visual Basic) 或 [屬性] (C#)，然後在 Visual Studio 的 XML 編輯器中編輯 *Resources.resx* 檔案。 將版本設定從 4.0.0.0 變更為 2.0.0.0。  
   
  如果您的應用程式具有資源 (例如圖示或點陣圖) 或設定 (例如資料連接字串)，您也可以透過在 [專案設計工具] 的 [設定] 頁面上移除所有的項目，然後重新加入必要的設定來解決錯誤。  
   
@@ -55,8 +55,8 @@ ms.locfileid: "31571353"
 > [!NOTE]
 >  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
   
-## <a name="see-also"></a>請參閱  
- [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：將 .NET Framework 的某個版本設定為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

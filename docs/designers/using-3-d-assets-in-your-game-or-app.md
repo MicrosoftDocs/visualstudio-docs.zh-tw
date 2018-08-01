@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ed78375438dd699959ce40a3427692ae1649af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917103"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081305"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 
@@ -36,9 +36,9 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>將組建自訂加入至專案
 
-1.  在方案總管中，開啟專案的捷徑功能表，然後依序選擇 [組建相依性] 和 [組建自訂]。 [Visual C++ 組建自訂檔] 對話方塊隨即顯示。
+1.  在 [方案總管] 中，開啟專案的捷徑功能表，然後選擇 [組建相依性] > [組建自訂]。 [Visual C++ 組建自訂檔] 對話方塊隨即出現。
 
-2.  在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如此表格所述：
+2.  在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如下表所述：
 
     |資產類型|組建自訂名稱|
     |----------------|------------------------------|
@@ -53,7 +53,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-add-an-asset-to-your-build"></a>將資產加入至組建
 
-1.  在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。
+1.  在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即出現。
 
 2.  請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
 
@@ -68,9 +68,9 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |項目類型|原始程式檔類型|輸出檔案格式|
 |---------------|-----------------------|------------------------|
-|**影像內容管線**|可攜式網路圖形 (.png)<br /><br /> JPEG (.jpg、.jpeg、.jpe、.jfif)<br /><br /> DirectDraw 表面 (.dds)<br /><br /> 圖形交換格式 (.gif)<br /><br /> 點陣圖 (.bmp、.dib)<br /><br /> 標記的影像檔案格式 (.tif、.tiff)<br /><br /> Targa (.tga)|DirectDraw 表面 (.dds)|
-|**網狀內容管線**|AutoDesk FBX 交換檔案 (.fbx)<br /><br /> Collada DAE 檔案 (.dae)<br /><br /> Wavefront OBJ 檔案 (.obj)|3D 網狀檔案 (.cmo)|
-|**著色器內容管線**|視覺著色器圖形 (.dgsl)|已編譯的著色器輸出 (.cso)|
+|**影像內容管線**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*、*.jpeg*、*.jpe*、*.jfif*)<br /><br /> DirectDraw 表面 (*.dds*)<br /><br /> 圖形交換格式 (*.gif*)<br /><br /> 點陣圖 (*.bmp*、*.dib*)<br /><br /> 標記的影像檔案格式 (*.tif*、*.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw 表面 (*.dds*)|
+|**網狀內容管線**|AutoDesk FBX 交換檔案 (*.fbx*)<br /><br /> Collada DAE 檔案 (*.dae*)<br /><br /> Wavefront OBJ 檔案 (*.obj*)|3D 網狀檔案 (*.cmo*)|
+|**著色器內容管線**|視覺著色器圖形 (*.dgsl*)|已編譯的著色器輸出 (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>設定資產內容管線屬性
 
@@ -78,7 +78,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-configure-content-pipeline-properties"></a>設定內容管線屬性
 
-1.  在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。
+1.  在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即出現。
 
 2.  請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
 
@@ -145,7 +145,7 @@ struct PixelShaderInput
 
 根據您在著色器中使用的著色器設計工具節點，可能也需要提供其他資料，而這些資料的格式是根據這些定義：
 
-```
+```hlsl
 Texture2D Texture1 : register( t0 );
 Texture2D Texture2 : register( t1 );
 Texture2D Texture3 : register( t2 );

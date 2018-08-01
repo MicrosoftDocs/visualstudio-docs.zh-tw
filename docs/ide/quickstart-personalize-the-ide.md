@@ -9,27 +9,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078221"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
-在此 5-10 分鐘快速入門中，我們將自訂 Visual Studio 色彩佈景主題，以及 [文字編輯器] 中的兩種文字色彩。
+在此 5-10 分鐘快速入門中，我們會在文字編輯器中自訂 Visual Studio 色彩佈景主題以及兩種文字色彩。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="set-the-color-theme"></a>設定色彩佈景主題
 
-Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變更為 [深色]。
+Visual Studio 2017 使用者介面的預設色彩佈景主題為 [藍色]。 讓我們將它變更為 [深色]。
 
-1. 在功能表列上選擇 [工具] > [選項]。
+1. 在功能表列上 (即 [檔案] 和 [編輯] 這類功能表列)，選擇 [工具] > [選項]。
 
 1. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
-   整個 IDE 的色彩佈景主題會變更為 [深色]。
+   完整的 Visual Studio 開發環境 (IDE) 色彩佈景主題變更為 [深色]。
 
    ![深色佈景主題的 VS](media/quickstart-personalize-dark-theme.png)
 
@@ -38,7 +39,7 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
 ## <a name="change-text-color"></a>變更文字色彩
 
-現在我們將自訂編輯器的部分文字色彩。 首先，讓我們開啟 XML 檔案來查看預設色彩。
+現在我們將自訂編輯器的部分文字色彩。 首先，讓我們建立新的 XML 檔案來查看預設色彩。
 
 1. 從功能表列中，選擇 [檔案] > [新增] > [檔案]。
 
@@ -72,7 +73,7 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
    </Catalog>
    ```
 
-   請注意，行號是藍綠色，而 XML 屬性是淺藍色。 我們將變更這些項目的文字色彩。
+   請注意，行號是藍綠色，而 XML 屬性 (例如 `id="bk101"`) 是淺藍色。 我們要變更這些項目的文字色彩。
 
    ![XML 檔案的字型色彩](media/quickstart-personalize-xml-file.png)
 
@@ -80,7 +81,7 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
 1. 在 [環境] 底下，選擇 [字型和色彩] 類別。
 
-   請注意，[顯示設定] 底下的文字為 [文字編輯器]&mdash; 這正是我們要的設定目標。 您可以展開下拉式清單，看看您可以自訂字型和文字色彩的多個位置清單。
+   請注意，[顯示設定] 底下的文字為 [文字編輯器]&mdash; 這正是我們要的設定目標。 展開下拉式清單，看看您可以自訂字型和文字色彩的多個位置清單。
 
 1. 若要變更行號文字的色彩，請在 [顯示項目] 清單中，選擇 [行號]。 在 [項目前景] 方塊中，選擇 [橄欖色]。
 

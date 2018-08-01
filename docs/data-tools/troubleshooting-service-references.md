@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118079"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180421"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -58,7 +58,7 @@ ms.locfileid: "37118079"
 2.  在 **啟動選項**索引標籤上，清除**NTLM 驗證**核取方塊。
 
     > [!NOTE]
-    > 您應該關閉 NTLM 驗證，只有針對只包含 WCF 服務的網站。 WCF 服務的安全性透過在組態管理*web.config*檔案。 這可讓 NTLM 驗證的非必要。
+    > 您應該關閉 NTLM 驗證，只針對只包含 WCF 服務的網站。 WCF 服務的安全性透過在組態管理*web.config*檔案。 這可讓 NTLM 驗證的非必要。
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>產生的類別設定的存取層級沒有任何作用
 

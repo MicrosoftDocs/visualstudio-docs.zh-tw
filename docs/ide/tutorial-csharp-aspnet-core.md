@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765511"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177366"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 使用者入門
 
 在利用使用 Visual Studio 的 ASP.NET Core 進行 C# 開發的這個教學課程中，您將建立 C# ASP.NET Core Web 應用程式、新增其程式碼、探索 IDE 的一些功能，以及執行應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -41,7 +41,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置網際網路�
 
 ### <a name="what-is-visual-studio"></a>什麼是 Visual Studio？
 
-Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。  
+Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。
 
 ## <a name="start-developing"></a>開始進行開發
 
@@ -65,9 +65,9 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 按一下 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+1. 選取 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
-   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![從 [新增專案] 對話方塊中選取 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
 
@@ -81,7 +81,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 #### <a name="add-a-project-template"></a>新增專案範本
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，選擇 [Web 應用程式 (模型檢視控制器)] 專案範本。  
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，選擇 [Web 應用程式 (模型檢視控制器)] 專案範本。
 
 2. 從頂端下拉式功能表中，選取 [ASP.NET Core 2.0]。 (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
 
@@ -134,7 +134,7 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
 1. 選擇 IDE 中的 [IIS Express] 按鈕，以偵錯模式建置和執行應用程式  (或者，按 **F5**，或從功能表列中選擇 [偵錯] > [開始偵錯])。
 
-   ![按一下 Visual Studio 中的 [IIS Express] 按鈕](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![選取 Visual Studio 中的 [IIS Express] 按鈕](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > 如果您收到錯誤訊息指出「無法連線到網頁伺服器 'IIS Express'」，請關閉 Visual Studio，然後使用右鍵或操作功能表中的 [以系統管理員身分執行] 選項來開啟它。 接著，再次執行應用程式。
@@ -179,11 +179,13 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
 11. 從工具列中選擇 [停止偵錯] 按鈕，以停止偵錯  (或者，按 **Shift**+**F5**，或從功能表列中選擇 [偵錯] > [開始偵錯])。
 
-   ![按一下工具列上的 [停止偵錯] 按鈕](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![選取工具列上的 [停止偵錯] 按鈕](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>後續步驟
 
-恭喜您完成此教學課程！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要更深入了解，請繼續下列教學課程。
+恭喜您完成此教學課程！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要查看公用伺服器上執行的應用程式，請選取下列按鈕。
 
- > [!div class="nextstepaction"]
- > [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [將應用程式部署至 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+您也可以遵循教學課程 [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)，了解如何在 ASP.NET Core 中使用模型檢視控制器 (MVC) 架構。

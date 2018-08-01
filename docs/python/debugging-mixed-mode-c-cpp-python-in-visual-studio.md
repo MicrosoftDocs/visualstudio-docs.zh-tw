@@ -1,7 +1,7 @@
 ---
 title: Python 混和模式偵錯
 description: 如何在 Visual Studio 中同時對 C++ 和 Python 進行偵錯，包括跨環境之間逐步執行、檢視值和評估運算式。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583147"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057431"
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -64,7 +64,7 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 專案中啟用混合模式偵錯
 
-Visual Studio 2017 (15.5 版及更新版本) 支援從 C/C++ 專案進行混合模式偵錯 (例如[以 python.org 上所述方式將 Python 內嵌至另一個應用程式時](https://docs.python.org/3/extending/embedding.html) \(英文\))。 若要啟用混合模式偵錯，請設定 C/C++ 專案以啟動「Python/原生偵錯工具」：
+Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合模式偵錯 (例如，[以 python.org 上所述方式將 Python 內嵌至另一個應用程式](https://docs.python.org/3/extending/embedding.html)時)。 若要啟用混合模式偵錯，請設定 C/C++ 專案以啟動「Python/原生偵錯工具」：
 
 1. 以滑鼠右鍵按一下方案總管中的 C/C++ 專案，然後選取 [屬性]
 1. 選取 [偵錯] 索引標籤，從 [要啟動的偵錯工具] 中選取 [Python/原生偵錯工具]，然後選取 [確定]。

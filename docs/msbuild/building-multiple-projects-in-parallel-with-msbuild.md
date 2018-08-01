@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164767c628a6b48a3d9479fdd4f7918f12093ea7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b96fca759c3a35bd7220cde4a3d2fea7463f46b5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572237"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177613"
 ---
-# <a name="building-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
+# <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 您可以使用 MSBuild 透過讓專案平行執行的方式，加快建置多個專案的速度。 若要平行執行組建，您可以使用多核心或多處理器電腦上的下列設定：  
   
 -   命令提示字元中的 `/maxcpucount` 參數。  
@@ -29,10 +29,10 @@ ms.locfileid: "31572237"
 -   MSBuild 工作上的 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 工作參數。  
   
 > [!NOTE]
->  命令列中的 **/verbosity** (**/v**) 參數也會影響建置效能。 如果組建記錄檔資訊的詳細程度設為詳細或診斷 (用於疑難排解)，建置效能就可能會降低。 如需詳細資訊，請參閱[取得建置記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)和[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
+>  命令列中的 **/verbosity** (**/v**) 參數也會影響建置效能。 如果組建記錄檔資訊的詳細程度設為詳細或診斷 (用於疑難排解)，建置效能就可能會降低。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)和[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
 ## <a name="maxcpucount-switch"></a>/maxcpucount 參數  
- 如果您使用 `/maxcpucount` 參數 (簡寫為 `/m`)，MSBuild 就可建立可平行執行的指定 MSBuild.exe 處理序數目。 這些處理序也稱為「背景工作處理序」。 每個背景工作處理序會使用個別的核心或處理器 (如果有的話)，在其他可用處理器可能正在建置其他專案的同時建置專案。 例如，將此參數設為值 "4" 時，MSBuild 會建立四個背景工作處理序來建置專案。  
+ 如果您使用 `/maxcpucount` 參數 (簡寫為 `/m`)，則 MSBuild 可以建立可平行執行的 MSBuild.exe 處理序指定數目。 這些處理序也稱為「背景工作處理序」。 每個背景工作處理序會使用個別的核心或處理器 (如果有的話)，在其他可用處理器可能正在建置其他專案的同時建置專案。 例如，將此參數設為值 "4" 時，MSBuild 會建立四個背景工作處理序來建置專案。  
   
  如果您引入 `/maxcpucount` 參數但未指定值，MSBuild 會使用電腦上的處理器最大數目。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "31572237"
   
  下列範例會指示 MSBuild 使用三個背景工作處理序。 如果您使用此組態，MSBuild 就可以同時建立三個專案。  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
@@ -49,7 +49,7 @@ msbuild.exe myproj.proj /maxcpucount:3
   
  以下範例取自 microsoft.common.targets，說明如何設定 `BuildInParallel` 參數。  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildInParallel Condition="'$(BuildInParallel)' ==   
         ''">true</BuildInParallel>  
@@ -71,7 +71,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)   
  [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)   
- [調整 C++ 組建平行處理原則部落格 (英文)](http://go.microsoft.com/fwlink/?LinkId=251457)
+ [Tuning C++ build parallelism blog](http://go.microsoft.com/fwlink/?LinkId=251457) (調整 C++ 組建平行處理原則部落格)

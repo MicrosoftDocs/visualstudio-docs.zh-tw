@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e2ec53e78bc88e18d9ba8e77aa888ffa855b64ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924151"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977800"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 設計工具中插入控制項並修改其行為
 
@@ -41,7 +41,7 @@ ms.locfileid: "31924151"
 
 ## <a name="make-controls-do-things"></a>讓控制項執行動作
 
-當使用者與控制項互動時，控制項可以執行動作。 例如，他們可以啟動動畫、更新資料來源或播放視訊。
+當使用者與控制項互動時，控制項可以執行動作。 例如，他們可以啟動動畫、更新資料來源或播放影片。
 
 使用 *「觸發程序」*(trigger)、 *「行為」*(behavior) 及 *「事件」* (event)，讓控制項執行動作。
 
@@ -49,11 +49,11 @@ ms.locfileid: "31924151"
 
 *「觸發程序」* (trigger)會變更屬性或執行工作以回應事件或另一個屬性的變更。 例如，在使用者將滑鼠停留在按鈕上時可變更按鈕的色彩。
 
-![「觸發程序」面板](../designers/media/custom_button_blend_propertytriggerinfo.png)
+![觸發程序面板](../designers/media/custom_button_blend_propertytriggerinfo.png)
 
 ### <a name="behaviors"></a>「行為」
 
-*「行為」* (behavior) 是可重複使用的程式碼封裝。 它能做的不僅僅是變更屬性， 還能執行像是查詢資料服務等動作。 Blend 隨附一小組的以上功能，但是您可以加入更多功能。 將行為拖曳至畫板中的任何物件上，然後設定屬性以自訂行為。
+*「行為」* (behavior) 是可重複使用的程式碼封裝。 它能做的不僅僅是變更屬性， 還能執行像是查詢資料服務等動作。 Blend 隨附一小組的行為，但是您可以新增更多功能。 將行為拖曳至畫板中的任何物件上，然後設定屬性以自訂行為。
 
 ![[屬性] 面板中的 FluidMoveBehavior](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 

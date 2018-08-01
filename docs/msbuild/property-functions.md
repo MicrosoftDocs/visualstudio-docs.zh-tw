@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978215"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155512"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>靜態屬性函式
 
-在您的組建指令碼中，您可以存取許多系統類別的靜態屬性和方法。 若要取得靜態屬性的值，請使用下列語法，其中 *Class* 是系統類別的名稱，而 *Property* 是屬性的名稱。
+在您的組建指令碼中，您可以存取許多系統類別的靜態屬性和方法。 若要取得靜態屬性的值，請使用下列語法，其中 \<Class> 是系統類別的名稱，而 \<Property> 是屬性的名稱。
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-若要呼叫靜態方法，請使用下列語法，其中 *Class* 是系統類別的名稱、*Method* 是方法的名稱，而 *(Parameters)* 是方法的參數清單：
+若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -119,7 +119,7 @@ $([Class]::Method(Parameters))
 
 ### <a name="calling-instance-methods-on-static-properties"></a>在靜態屬性上呼叫執行個體方法
 
-如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 *Class* 是系統類別的名稱、*Property* 是屬性的名稱、*Method* 是方法的名稱，而 *(Parameters)* 是方法的參數清單：
+如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Property> 是屬性的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>MSBuild 屬性函式
 
-您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 *Method* 是方法的名稱，而 *Parameters* 是方法的參數清單。
+您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單。
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -261,7 +261,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位元作業系統會維護 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node 登錄機碼，以代表 32 位元應用程式的 HKEY_LOCAL_MACHINE\SOFTWARE 登錄檢視。
+Windows 64 位元作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 登錄機碼，此登錄機碼會呈現 32 位元應用程式的 **HKEY_LOCAL_MACHINE\SOFTWARE** 登錄檢視。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -279,7 +279,7 @@ Windows 64 位元作業系統會維護 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node �
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-會取得 ReferenceAssemblies 機碼的 SLRuntimeInstallPath 資料，首先在 64 位元登錄檢視中尋找，然後在 32 位元登錄檢視中尋找。
+取得 **ReferenceAssemblies** 機碼的 **SLRuntimeInstallPath** 資料，首先在 64 位元登錄檢視中尋找，然後在 32 位元登錄檢視中尋找。
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -338,7 +338,8 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [MSBuild 屬性](../msbuild/msbuild-properties.md)
+
 [MSBuild 概觀](../msbuild/msbuild.md)

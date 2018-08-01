@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703817"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923992"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
+
 開啟現有的檔案，並可讓您指定編輯器。
 
 ## <a name="syntax"></a>語法
@@ -33,34 +34,38 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>引數
- `filename`
 
- 必要。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。
+`filename`
+
+必要。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。
 
 ## <a name="switches"></a>參數
- /e:`editorname`
 
- 選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
+/e:`editorname`
 
- /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
 
- 例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
+/e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
+
+例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>備註
- 在您輸入路徑時，自動完成會嘗試找出正確的路徑和檔名。
+
+在您輸入路徑時，自動完成會嘗試找出正確的路徑和檔名。
 
 ## <a name="example"></a>範例
- 本範例會在原始程式碼編輯器中開啟樣式檔案 "Test1.css"。
+
+本範例會在原始程式碼編輯器中開啟樣式檔案 "Test1.css"。
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bfc2b3b171dffdcf77a22ccf02d5e3f70658a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925008"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924036"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用
 「影像內容管線」能夠產生可與 Direct2D 的內部轉譯慣例相容的材質。 這種類型的紋理適合在使用 Direct2D 的應用程式中使用，以及在使用 JavaScript 建立的 UWP 應用程式中使用。
@@ -35,7 +35,7 @@ ms.locfileid: "31925008"
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D 中的轉譯慣例
  在 Direct2D 內容中使用的材質必須符合 Direct2D 內部轉譯慣例：
 
--   Direct2D 會使用預乘 Alpha 來實作透明度和半透明度。 與 Direct2D 搭配使用的材質即使不使用透明度或半透明度，也必須包含預乘 Alpha。 如需有關預乘 Alpha 的詳細資訊，請參閱[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
+-   Direct2D 會使用預乘 Alpha 來實作透明度和半透明度。 與 Direct2D 搭配使用的材質即使不使用透明度或半透明度，也必須包含預乘 Alpha。 如需預乘 Alpha 的詳細資訊，請參閱[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
 
 -   提供材質時，必須使用下列其中一種區塊壓縮格式，以 .dds 格式提供：
 
@@ -47,18 +47,18 @@ ms.locfileid: "31925008"
 
 -   不支援 Mipmap。
 
-#### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>建立與 Direct2D 轉譯慣例相容的材質
+### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>建立與 Direct2D 轉譯慣例相容的材質
 
-1.  從基本材質著手。 載入現有的影像，或依照[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述，建立新影像。 若要支援以 .dds 格式支援區塊壓縮，請指定寬度和高度大小是 4 的倍數 (例如 100x100、128x128 或 256x192) 的材質。 由於不支援 Mipmap，因此材質不一定要是正方形，且大小不一定要是 2 的乘冪。
+1.  從基本材質著手。 載入現有的影像，或依照[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述，建立新影像。 若要支援以 .dds 格式支援區塊壓縮，請指定寬度和高度大小是 4 的倍數 (例如 100x100、128x128 或 256x192) 的材質。 由於不支援 Mipmap，因此材質不一定要是正方形，且大小不一定要是 2 的乘冪。
 
 2.  設定材質檔案，以便供「影像內容管線」處理。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 
-3.  將輸出格式設定為其中一種區塊壓縮格式。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [壓縮] 屬性設定為 [BC3_UNORM 壓縮 (/compress:BC3_UNORM)]。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需有關不同 BC 格式的詳細資訊，請參閱[區塊壓縮 (Direct3D 10) (英文)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)。
+3.  將輸出格式設定為其中一種區塊壓縮格式。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [壓縮] 屬性設定為 [BC3_UNORM 壓縮 (/compress:BC3_UNORM)]。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需不同 BC 格式的詳細資訊，請參閱 [Block compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx) (區塊壓縮 (Direct3D 10))。
 
     > [!NOTE]
     >  指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式] 屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」。 一般而言，您不會想要壓縮工作格式。
 
-4.  設定「影像內容管線」以產生使用預乘 Alpha 的輸出。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [轉換成預乘 Alpha 格式] 屬性設定為 [是 (/generatepremultipliedalpha)]。
+4.  設定「影像內容管線」以產生使用預乘 Alpha 的輸出。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [轉換成預乘的 Alpha 格式] 屬性設定為 [是 (/generatepremultipliedalpha)]。
 
 5.  設定影像內容管線，使其不會產生 Mipmap。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [產生 Mips] 屬性設定為 [否]。
 

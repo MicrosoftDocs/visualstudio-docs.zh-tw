@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a871effd2b7560cc34ae8e2a91c0b55f63bcfe44
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 749d60c764f522d188b45b4ecf7302d69b6cd64b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568512"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179075"
 ---
 # <a name="cppclean-task"></a>CPPClean 工作
 刪除在建置 Visual C++ 專案時由 MSBuild 所建立的暫存檔。 刪除組建檔案的程序稱為「清除」。  
@@ -40,9 +40,7 @@ ms.locfileid: "31568512"
 |**DoDelete**|選擇性的 **Boolean** 參數。<br /><br /> 如果為 `true` 則清除暫時的組建檔案。|  
 |**FilePatternsToDeleteOnClean**|必要的 `String` 參數。<br /><br /> 指定要清除的檔案副檔名清單，以分號分隔。|  
 |**FilesExcludedFromClean**|選擇性的 `String` 參數。<br /><br /> 指定不要清除的檔案清單，以分號分隔。|  
-|**FoldersToClean**|必要的 `String` 參數。<br /><br /> 指定要清除的目錄清單，以分號分隔。 您可以指定完整或相對路徑，且路徑可以包含萬用字元符號 (**\***)。|  
+|**FoldersToClean**|必要的 `String` 參數。<br /><br /> 指定要清除的目錄清單，以分號分隔。 您可以指定完整或相對路徑，且路徑可以包含萬用字元符號 (*)。|  
   
-## <a name="remarks"></a>備註  
-  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

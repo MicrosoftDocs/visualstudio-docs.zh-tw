@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942405"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178939"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
@@ -38,7 +38,7 @@ ms.locfileid: "31942405"
 
 1. 找出 *vstemplate* 檔案中的 `ProjectType` 元素，並將文字值設為 `Web`。
 
-1. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
+1. 在 `ProjectType` 元素後面，新增 `ProjectSubType` 元素，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
     - CSharp
     - VisualBasic
@@ -67,7 +67,7 @@ ms.locfileid: "31942405"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
-        <Description>A simple Web template</Description>
+        <Description>A simple web template</Description>
         <Icon>icon.ico</Icon>
         <ProjectType>Web</ProjectType>
         <ProjectSubType>CSharp</ProjectSubType>

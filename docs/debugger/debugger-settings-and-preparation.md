@@ -1,9 +1,9 @@
 ---
-title: 偵錯工具設定和準備 |Microsoft 文件
+title: 偵錯工具設定和準備 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473312"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151570"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  

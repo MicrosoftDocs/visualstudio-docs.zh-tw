@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327007"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155044"
 ---
-# <a name="otherwise-element-msbuild"></a>Otherwise 項目 (MSBuild)
+# <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。  
 
  \<Project>  
@@ -49,8 +49,8 @@ ms.locfileid: "36327007"
 </Otherwise>  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
  無。  
@@ -63,7 +63,7 @@ ms.locfileid: "36327007"
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 項目。 `Otherwise` 項目中可能有零或多個 `ItemGroup` 項目。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `Otherwise` 元素中可能有零個或多個 `PropertyGroup` 元素。|  
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
 
 |元素|描述|  
 |-------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "36327007"
 ## <a name="remarks"></a>備註  
  `Choose` 項目中可能只有一個 `Otherwise` 項目，而且它必須是最後一個項目。  
 
- `Choose`、`When` 和 `Otherwise` 項目會一起用於提供一種方式來選取一個程式碼區段，以執行一些可能的替代方案。 如需詳細資訊，請參閱[條件式建構](../msbuild/msbuild-conditional-constructs.md)。  
+ `Choose`、`When` 和 `Otherwise` 元素會一起用來提供選取一個程式碼區段的方式，以執行一些可能的替代方案。 如需詳細資訊，請參閱[條件式建構](../msbuild/msbuild-conditional-constructs.md)。  
 
 ## <a name="example"></a>範例  
  下列專案使用 `Choose` 元素來選取 `When` 元素中要設定的屬性值集合。 如果兩個 `When` 元素的 `Condition` 屬性都評估為 `false`，則 `Otherwise` 元素中的屬性值已設定。  
@@ -122,6 +122,6 @@ ms.locfileid: "36327007"
 </Project>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 2：撰寫和執行程式碼
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 2，包含編輯程式碼和執行專案。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031546"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174837"
 ---
-# <a name="step-2-writing-and-running-code"></a>第 2 步：撰寫和執行程式碼
+# <a name="step-2-write-and-run-code"></a>步驟 2：撰寫和執行程式碼
 
 **上一步：[建立新的 Python 專案](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -91,7 +91,7 @@ ms.locfileid: "32031546"
 > [!div class="nextstepaction"]
 > [使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [編輯程式碼](editing-python-code-in-visual-studio.md)
 - [格式化程式碼](formatting-python-code.md)

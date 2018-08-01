@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969102"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203750"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數加入至負載測試回合設定
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數新增至負載測試回合設定
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
 
@@ -36,9 +36,9 @@ ms.locfileid: "31969102"
 
 此外，藉由在不同的負載測試回合設定中使用相同名稱將不同的值指派給內容參數，就能使用不同的環境執行負載測試：
 
--   企業臨時 Web 伺服器回合設定：名為 WebServer1=http://CorporateStagingWebServer 的內容參數
+-   企業臨時網頁伺服器回合設定：名為 `WebServer1=http://CorporateStagingWebServer` 的內容參數
 
--   企業實際執行 Web 伺服器回合設定：名為 WebServer1=http://CorporateProductionWebServer 的內容參數
+-   企業實際執行網頁伺服器回合設定：名為 `WebServer1=http://CorporateProductionWebServer` 的內容參數
 
  **從命令列變更回合設定**
 
@@ -64,9 +64,9 @@ ms.locfileid: "31969102"
 
      如果回合設定已包含 [內容參數] 資料夾，您可以在該資料夾上按一下滑鼠右鍵，然後選擇 [新增內容參數]。
 
-4.  在 [屬性] 視窗中，將 [名稱] 變更為適當的值 (例如 WebServer1)。 在 [屬性] 視窗中，將 [值] 變更為您要使用的參數 (例如 http://CorporateStagingWebServer))。
+4.  在 [屬性] 視窗中，將 [名稱] 變更為適當的值 (例如 WebServer1)。 在 [屬性] 視窗中，將 [值] 變更為您要使用的參數 (例如 `http://CorporateStagingWebServer`)。
 
-5.  (選擇性) 重複步驟 3 到 5，並且針對 [值] 屬性使用不同的字串 (例如 http://CorporateProductionWebServer))。
+5.  (選擇性) 重複步驟 3 到 5，並且針對 [值] 屬性使用不同的字串 (例如 `http://CorporateProductionWebServer`)。
 
 6.  選擇要成為使用中的回合設定。 在回合設定上開啟捷徑功能表，然後選擇 [設定為使用中]。
 

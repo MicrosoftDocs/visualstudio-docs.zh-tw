@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425211"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177863"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -97,7 +97,7 @@ ms.locfileid: "32425211"
 
 ## <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
-您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
+您可以使用 [測試總管]，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
 
 ![使用 [測試總管] 執行單元測試](media/testexplorer.png)
 
@@ -113,7 +113,7 @@ ms.locfileid: "32425211"
 
 以下是啟用協力廠商測試架構的步驟：
 
-1. 選擇工具列上的 [工具] > [延伸模組和更新...]。
+1. 選擇工具列上的 [工具] > [延伸模組和更新]。
 
 1. 在 [延伸模組和更新] 對話方塊中，展開 [線上] 分類，然後選擇 [Visual Studio Marketplace]。 然後，選擇 [工具] > [測試]。
 
@@ -125,7 +125,7 @@ ms.locfileid: "32425211"
 
    ![為類別庫專案命名，並將其新增](media/create3rdpartyunittest3.png)
 
-1. 安裝外掛程式。 在 [方案總管] 中選取類別庫專案，然後從其右鍵功能表或快顯功能表中選擇 [管理 NuGet 套件...]。
+1. 安裝外掛程式。 在 [方案總管] 中選取類別庫專案，然後從其右鍵功能表或快顯功能表中選擇 [管理 NuGet 套件]。
 
    ![管理 NuGet 套件來安裝外掛程式](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ ms.locfileid: "32425211"
 
    ![協力廠商單元測試架構的參考已新增至方案](media/create3rdpartyunittest6.png)
 
-1. 從類別庫專案中的 [參考] 節點中，選取 [新增參考...]。
+1. 從類別庫專案中的 [參考] 節點中，選取 [新增參考]。
 
    ![將參考新增至專案](media/createunittest6.png)
 

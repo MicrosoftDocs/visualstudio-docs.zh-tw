@@ -9,12 +9,12 @@ description: 了解如何使用 Visual Studio Team Services (VSTS) 做為 Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196072"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281816"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Visual Studio Team Services (VSTS) 權益
 
@@ -22,9 +22,10 @@ ms.locfileid: "31196072"
 
 當您使用和啟動 Visual Studio 訂用帳戶所用的相同身分識別，或使用您的[其他身分識別](vs-alternate-identity.md)登入 VSTS 時，我們會自動辨識此身分識別。
 
-[註冊取得免費的 VSTS 帳戶](https://www.visualstudio.com/team-services/)
+[註冊取得免費的 VSTS 帳戶](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>, FTE  | 基本, Test Manager, 套件管理, 自我裝載 CI/CD       |  [是]          |
@@ -34,10 +35,9 @@ ms.locfileid: "31196072"
 
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer。排除：MCT Software & Services、Imagine。*
 
-
-
 進一步了解 VSTS 功能：
-- [基本](https://www.visualstudio.com/team-services/compare-features/)
+
+- [基本](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [封裝管理](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -46,6 +46,6 @@ ms.locfileid: "31196072"
 
 ## <a name="support-resources"></a>支援資源
 
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/)
+-  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+-  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 -  完整的 [Visual Studio Team Services 文件](/vsts/)。

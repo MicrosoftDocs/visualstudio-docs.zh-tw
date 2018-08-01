@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254266"
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
-[程式碼剖析工具報告檢視篩選條件] 視窗位於 [效能報告] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
+[分析工具報表檢視篩選條件] 視窗位於 [效能報表] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
   
  您可以修改每個篩選條件子句來限定結果。 篩選條件產生器中包含下列資料行。  
   
@@ -35,8 +36,8 @@ ms.lasthandoff: 04/19/2018
   
  透過 [標記] 報告檢視，您可以產生篩選條件，將報告檢視中的資料限制為在兩個標記之間收集到的資料。 請選取您要做為報告資料開頭和結尾的標記，然後按一下滑鼠右鍵，並選取 [在標記上加入篩選條件] 或 [在時間戳記上加入篩選條件]。 這兩種篩選條件都會將目前資料檔案中的資料限制在相同的範圍內；[在標記上加入篩選條件] 可以套用到其他 .vsp 檔案。  
   
- 若要儲存篩選條件，請按一下 [效能報告] 工具列上的 [匯出篩選條件]，然後指定 .vspf 檔案的位置和檔案名稱。 若要載入先前儲存的篩選條件，請按一下 [匯入篩選條件]，並找出已儲存的篩選條件檔案。 您也可以在已安裝獨立程式碼剖析工具的電腦上，使用篩選條件檔案來篩選資料檔案。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
+ 若要儲存篩選條件，請按一下 [效能報表] 工具列上的 [匯出篩選條件]，然後指定 .*vspf* 檔案的位置和檔案名稱。 若要載入先前儲存的篩選條件，請按一下 [匯入篩選條件]，並找出已儲存的篩選條件檔案。 您也可以在已安裝獨立程式碼剖析工具的電腦上，使用篩選條件檔案來篩選資料檔案。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

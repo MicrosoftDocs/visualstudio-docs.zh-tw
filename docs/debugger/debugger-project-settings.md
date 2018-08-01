@@ -1,9 +1,9 @@
 ---
-title: 偵錯工具專案設定 |Microsoft 文件
+title: 偵錯工具專案設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474020"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152981"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。  
@@ -53,7 +53,7 @@ ms.locfileid: "31474020"
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  描述偵錯工具如何使用符號檔和原始程式檔來顯示偵錯的資訊。  
   
- [偵錯 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)  
+ [偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)  
  描述如何偵錯 UWP 應用程式。 (Windows 開發人員中心)  
   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  

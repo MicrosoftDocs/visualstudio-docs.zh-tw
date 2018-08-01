@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55386b5e586b88e91e252280da9510ce395daf78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965820"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175533"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>為負載測試建立自訂程式碼和外掛程式
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704742"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179953"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。
@@ -70,7 +70,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

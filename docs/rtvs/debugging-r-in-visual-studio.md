@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3cc04188695daaf15821707350a84df9dfa5d891
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235243"
 ---
-# <a name="debugging-r-in-visual-studio"></a>在 Visual Studio 中對 R 進行偵錯
+# <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中偵錯 R
 
 Visual Studio R 工具整合了完整的 Visual Studio 偵錯體驗 (請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。 這項支援包括中斷點、附加至執行中處理序、檢查和監看變數，以及檢查呼叫堆疊。 本文接著會探索 R 和 RTVS 特有的偵錯功能。
 
-在 R 專案中，啟動 R 檔案的偵錯工具啟動方式，與其他專案類型一樣︰使用 [偵錯] > [啟動偵錯]、F5 鍵，或 [偵錯] 工具列上的 [執行啟動檔案] 
+在 R 專案中，啟動 R 檔案的偵錯工具啟動方式，與其他專案類型一樣︰使用 [偵錯] > [啟動偵錯]、**F5** 鍵，或 [偵錯] 工具列上的 [執行啟動檔案]： 
 
 ![R 的偵錯工具 [開始] 按鈕](media/debugger-start-button.png)
 

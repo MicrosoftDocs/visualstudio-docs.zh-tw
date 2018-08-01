@@ -1,5 +1,5 @@
 ---
-title: 偵錯原生程式碼 |Microsoft 文件
+title: 偵錯原生程式碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472902"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180187"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
-本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱[偵錯工具藍圖](../debugger/debugger-basics.md)。  
+本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 偵錯工具藍圖](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [如何：偵錯最佳化程式碼](../debugger/how-to-debug-optimized-code.md)  
@@ -61,17 +61,17 @@ ms.locfileid: "31472902"
  提供使用屬性 (Attribute) 之程式碼的偵錯指引。 包含如何開啟來源附註、如何檢視插入程式碼，以及如何在目前的執行點上檢視反組譯碼程式碼的指示。  
   
  [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用**平行工作**和**平行堆疊**工具視窗來偵錯平行應用程式。  
+ 描述如何使用**平行工作**並**平行堆疊**工具視窗來偵錯平行應用程式。  
   
 ## <a name="related-sections"></a>相關章節  
  [Visual C++ 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)  
  提供描述如何針對由 Visual C++ 專案範本所建立之原生專案類型進行偵錯的主題連結。  
 
- [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)提供如何偵錯原生和 managed Dll 的相關資訊。
+ [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)提供有關如何偵錯原生和 managed Dll 的資訊。
   
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
- [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能的教學課程](../debugger/debugger-feature-tour.md)
+ [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

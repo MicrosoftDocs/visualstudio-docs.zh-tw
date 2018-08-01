@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 596c066018a5f6f731c4ca0cefbefae458646ec1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574190"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153068"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 從指定的項目集合中移除重複項目。  
@@ -41,7 +41,7 @@ ms.locfileid: "31574190"
 ## <a name="remarks"></a>備註  
  此工作不區分大小寫，而且在判斷重複項目時不會比較項目中繼資料。  
   
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `RemoveDuplicates` 工作，以從 `MyItems` 項目集合中移除重複項目。 工作完成時，`FilteredItems` 項目集合會包含一個項目。  
@@ -68,7 +68,7 @@ ms.locfileid: "31574190"
 </Project>  
 ```  
 
- 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 "MyFile2.cs"、"MyFile1.cs" 和 "MyFile3.cs" 項目。  
+ 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 *MyFile2.cs*、*MyFile1.cs* 和 *MyFile3.cs* 項目。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -91,7 +91,7 @@ ms.locfileid: "31574190"
 </Project>  
 ```  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [工作](../msbuild/msbuild-tasks.md)

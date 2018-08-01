@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c9f5ca61c2950dfc2cc705a1e574e275ba1246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 95ac5777f1f4722ba972ba647f56c51856492806
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39277724"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
-本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測預先編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件或網站，並收集 .NET 記憶體配置、物件存留期和詳細的計時資料。  
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
+本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件或網站，並收集 .NET 記憶體配置、物件存留期和詳細的計時資料。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  分析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，您必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
  若要使用檢測方法從 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件收集資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 在主控元件的電腦上，使用已檢測版本取代元件的未檢測版本。 然後使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域分析環境變數，並重新啟動主機電腦。 然後啟動分析工具。  
   
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/19/2018
   
  若要結束分析工作階段，您要關閉主控元件的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序，並明確地關閉分析工具。 在大部分情況下，建議您在工作階段結束時清除程式碼剖析環境變數。  
   
-## <a name="starting-to-profile"></a>開始分析  
+## <a name="start-to-profile"></a>開始分析  
   
 #### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>檢測 ASP.NET Web 元件並開始分析  
   
@@ -67,8 +68,8 @@ ms.lasthandoff: 04/19/2018
   
     |選項|描述|  
     |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有 ASP.NET 背景工作處理序之帳戶的選用網域和使用者名稱。 如果不是使用登入使用者的使用者身分執行處理序，就需要此選項。Windows 工作管理員中 [處理序] 索引標籤的 [使用者名稱] 欄中會列出名稱。|  
-    |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有 ASP.NET 背景工作處理序之帳戶的選用網域和使用者名稱。 如果不是使用登入使用者的使用者身分執行處理序，就需要此選項。名稱會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [使用者名稱] 資料行中。|  
+    |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [工作階段識別碼] 資料行中。 **/crosssession** 可縮寫成 **/CS**。|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
     |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。|  
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|  
@@ -76,8 +77,8 @@ ms.lasthandoff: 04/19/2018
   
 7.  開啟包含已檢測元件的網站。  
   
-## <a name="controlling-data-collection"></a>控制資料收集  
- 當目標應用程式執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
+## <a name="control-data-collection"></a>控制資料收集  
+ 當目標應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
   
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|  
   
-## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段  
+## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段  
  若要結束分析工作階段，請關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，然後使用 Internet Information Services (IIS) **IISReset** 命令關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。 呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項關閉分析工具，並結束分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。 您必須重新啟動電腦才能套用新的環境設定。  
   
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
@@ -112,6 +113,6 @@ ms.lasthandoff: 04/19/2018
   
      **IISReset /start**  
   
-## <a name="see-also"></a>請參閱  
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>另請參閱  
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

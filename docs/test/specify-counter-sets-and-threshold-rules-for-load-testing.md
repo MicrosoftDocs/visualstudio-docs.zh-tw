@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751338"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180637"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -58,7 +58,7 @@ ms.locfileid: "34751338"
 
 為了讓您輕鬆收集 Web 伺服器上的效能資料，Visual Studio Enterprise 也以負載測試中使用的技術做為基礎，提供了預先定義的具名計數器集合。 當您分析執行 IIS、ASP.NET 或 SQL Server 的伺服器時，這些集合會有所幫助。 至於預設計數器集合中未提供的計數器，則可以利用負載測試編輯器來新增。 請務必將受測試的電腦或伺服器加入至負載測試，以確保您可以監視這些電腦上的資源使用情況。 如需詳細資訊，請參閱[如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
 
-為了了解要收集哪些資料、在何處設定臨界值規則，以及如何在度量反映應用程式中的特定問題時發出通知，負載回合的結果分析通常需要特定的定義域知識。 如需詳細資訊，請參閱[關於臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules)。
+為了了解要收集哪些資料、在何處設定臨界值規則，以及如何在度量反映應用程式中的特定問題時發出通知，負載回合的結果分析通常需要特定的定義域知識。 如需詳細資訊，請參閱[關於臨界值規則](#about-threshold-rules)。
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>效能計數器取樣間隔考量
 
@@ -75,7 +75,7 @@ ms.locfileid: "34751338"
 
 ## <a name="store-performance-data"></a>儲存效能資料
 
-在負載測試回合期間，會收集效能計數器資料，並將資料儲存在「負載測試結果儲存機制」中。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+在負載測試回合期間，會收集效能計數器資料，並將資料儲存在「負載測試結果存放庫」中。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
 ## <a name="about-threshold-rules"></a>關於臨界值規則
 

@@ -1,5 +1,5 @@
 ---
-title: 取得本機屬性 |Microsoft 文件
+title: 取得區域變數的屬性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,27 +15,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8627e3dae07b57703280359d8064cc4a4396120
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 264250ecf245f4f13504d1e8a6e78ed23b780e3b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102872"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232617"
 ---
-# <a name="getting-local-properties"></a>取得本機屬性
+# <a name="get-local-properties"></a>取得本機內容
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- Visual Studio 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)取得[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，可讓您存取中顯示的所有區域變數**區域變數**視窗。 Visual Studio 接著會呼叫[下一步](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)來取得要顯示的每個區域的資訊。 在此範例中，類別`CEnumPropertyInfo`實作`IEnumDebugPropertyInfo2`介面。  
+ Visual Studio 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)若要取得[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，可讓您存取中顯示的所有區域變數**區域變數**視窗。 Visual Studio 接著會呼叫[下一步](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)以取得要顯示的每個本機資訊。 在此範例中，類別`CEnumPropertyInfo`實作`IEnumDebugPropertyInfo2`介面。  
   
- 這項實作`IEnumDebugPropertyInfo2::Next`會執行下列工作：  
+ 這個實作`IEnumDebugPropertyInfo2::Next`會執行下列工作：  
   
 1.  清除儲存資訊的陣列。  
   
-2.  呼叫[下一步](../../extensibility/debugger/reference/ienumdebugfields-next.md)每個區域變數，儲存傳回[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)傳回陣列中。 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)提供物件時這`CEnumPropertyInfo`類別具現化。  
+2.  呼叫[下一步](../../extensibility/debugger/reference/ienumdebugfields-next.md)的每個區域中，儲存傳回[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)中要傳回的陣列。 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)提供物件時這`CEnumPropertyInfo`類別具現化。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
- 這個範例會示範實作`IEnumDebugPropertyInfo2::EnumChildren`的 managed 程式碼中的該方法的區域變數。  
+ 此範例示範如何實作`IEnumDebugPropertyInfo2::EnumChildren`的 managed 程式碼中的方法的區域變數。  
   
 ```csharp  
 namespace EEMC  
@@ -98,7 +98,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Unmanaged 程式碼  
- 這個範例會示範實作`IEnumDebugPropertyInfo2::EnumChildren`的 unmanaged 程式碼中的該方法的區域變數。  
+ 此範例示範如何實作`IEnumDebugPropertyInfo2::EnumChildren`的 unmanaged 程式碼中的方法的區域變數。  
   
 ```cpp  
 STDMETHODIMP CEnumPropertyInfo::Next(  
@@ -160,5 +160,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [範例實作的區域變數](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [列舉區域變數](../../extensibility/debugger/enumerating-locals.md)

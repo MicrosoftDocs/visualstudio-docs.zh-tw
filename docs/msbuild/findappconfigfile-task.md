@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf30e53f8d62f98b5e18b4e9a64e43d32aa498b0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 04a8209ca6856ba550a45c7f67480d1e89db49a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567469"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946205"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 工作
-在提供的清單中尋找 app.config 檔案 (如果有的話)。  
+在提供的清單中尋找 *app.config* 檔案 (若有的話)。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `FindAppConfigFile` 工作的參數。  
@@ -39,8 +39,8 @@ ms.locfileid: "31567469"
 |`TargetPath`|必要的 `String` 參數。<br /><br /> 指定要新增為中繼資料的值。|  
   
 ## <a name="remarks"></a>備註  
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

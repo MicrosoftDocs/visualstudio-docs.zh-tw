@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9ccb3788246e359183cff889f0996b4e74aecb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577479"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945296"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。  
@@ -44,12 +44,12 @@ ms.locfileid: "31577479"
 |`PreserveExistingMetadata`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `True`，僅會套用其他中繼資料 (如果它們還不存在)。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會從項目集合 `MySourceItems` 建立名為 `MySourceItemsWithMetadata` 的新項目集合。 `CreateItem` 工作會使用 `MySourceItems` 項目中的項目來填入新的項目集合。 接著它會將名為 `MyMetadata` 且值為 `Hello` 的其他中繼資料項目 (Entry) 加入至新集合中的每個項目 (Item)。  
   
- 執行此工作之後，`MySourceItemsWithMetadata` 項目 (Item) 集合會包含 `file1.resx` 和 `file2.resx` 等項目，這兩者皆擁有 `MyMetadata` 的中繼資料項目 (Entry)。 `MySourceItems` 項目集合會保持不變。  
+ 執行此工作之後，`MySourceItemsWithMetadata` 項目 (Item) 集合會包含 file1.resx 和 file2.resx 項目，這兩者皆擁有 `MyMetadata` 的中繼資料項目 (Entry)。 `MySourceItems` 項目集合會保持不變。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -76,8 +76,8 @@ ms.locfileid: "31577479"
   
 |項目集合。|內容|  
 |---------------------|--------------|  
-|`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
+|`MySourceItemsWithMetadata`|file1.resx (`MyMetadata="Hello"`)<br /><br /> file2.resx (`MyMetadata="Hello"`)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

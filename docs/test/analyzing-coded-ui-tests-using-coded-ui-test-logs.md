@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750723"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233905"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
@@ -26,7 +26,7 @@ ms.locfileid: "34750723"
 
 - 測試專案中沒有 *App.config* 檔案的目標 .NET Framework 第 4 版：
 
-   1. 開啟 **QTAgent32_40.exe.config** 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+   1. 開啟 *QTAgent32_40.exe.config* 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
    2. 將 EqtTraceLevel 的值修改為您要的記錄層級。
 
@@ -34,7 +34,7 @@ ms.locfileid: "34750723"
 
 - 測試專案中沒有 *App.config* 檔案的目標 .NET Framework 4.5 版：
 
-   1. 開啟 **QTAgent32.exe.config** 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+   1. 開啟 *QTAgent32.exe.config* 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
    2. 將 EqtTraceLevel 的值修改為您要的記錄層級。
 
@@ -58,7 +58,7 @@ ms.locfileid: "34750723"
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>步驟 2：執行自動程式化 UI 測試並檢視記錄
 
-當您在已修改 **QTAgent32.exe.config** 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管] 結果中有輸出連結。 記錄檔不只在測試失敗時才產生，在追蹤層級設定為 "verbose" 時，就算測試成功也會產生。
+當您在已修改 *QTAgent32.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管] 結果中有輸出連結。 記錄檔不只在測試失敗時才產生，在追蹤層級設定為 "verbose" 時，就算測試成功也會產生。
 
 1.  在 [測試] 功能表上，選擇 [Windows]，然後選取 [測試總管]。
 
@@ -69,7 +69,7 @@ ms.locfileid: "34750723"
      自動化測試會執行，並指出測試成功或失敗。
 
     > [!TIP]
-    > 若要檢視 [測試總管]，請選擇 [測試] >  [Windows]，然後選擇 [測試總管]。
+    > 若要檢視 [測試總管]，請選擇 [測試] > [Windows]，然後選擇 [測試總管]。
 
 4.  選擇 [測試總管] 結果中的 [輸出] 連結。
 

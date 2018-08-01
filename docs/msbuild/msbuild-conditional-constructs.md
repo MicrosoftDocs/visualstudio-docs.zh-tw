@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46426fd77e86962762f8ac3beaf8aa6a490bc6ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ade8344b5f4189e9588fc8e75ef88fa5cf8f8c5
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569081"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080193"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供搭配使用 [Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md) 和 [Otherwise](../msbuild/otherwise-element-msbuild.md) 項目的二選一處理機制。  
   
-## <a name="using-the-choose-element"></a>使用 Choose 項目  
+## <a name="use-the-choose-element"></a>使用 Choose 元素  
  `Choose` 項目包含一系列的 `When` 項目與 `Condition` 屬性，其會按由上到下的順序進行測試，直到其中一個項目評估為 `true` 為止。 如果有一個以上的 `When` 項目評估為 `true`，則只會使用第一個項目。 如果 `When` 項目上沒有任何條件評估為 `true`，則會評估 `Otherwise` 項目 (如果有的話)。  
   
  `Choose` 項目可以作為 `Project`、`When` 和 `Otherwise` 項目的子項目。 `When` 和 `Otherwise` 項目可以有 `ItemGroup`、`PropertyGroup` 或 `Choose` 子項目。  
@@ -78,8 +78,8 @@ ms.locfileid: "31569081"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)   
- [When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
+## <a name="see-also"></a>另請參閱  
+ [Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)   
+ [When 元素 (MSBuild)](../msbuild/when-element-msbuild.md)   
+ [Otherwise 元素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

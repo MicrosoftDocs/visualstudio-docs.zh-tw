@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4b1eddfd2d4b0ab0f285b727b6bc6638ca2e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237490"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
 取樣方法的函式報表檢視會列出程式碼剖析執行期間取樣的函式。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 |**專有樣本**|此函式主體中的程式碼執行時 (亦即此函式在呼叫堆疊最上方時) 所收集的樣本總數。 不包含此函式所呼叫之函式中所收集的樣本。|  
 |**專有樣本 %**|分析執行的所有樣本中，屬於此函式之專有樣本的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [函式檢視 - 取樣](../profiling/functions-view-dotnet-memory-sampling-data.md)   

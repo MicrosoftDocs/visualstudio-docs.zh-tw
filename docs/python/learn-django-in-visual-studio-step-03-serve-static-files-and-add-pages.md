@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 3
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，特別示範如何提供靜態檔案、將頁面加入應用程式，以及使用範本繼承
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750330"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089583"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教學課程步驟 3：提供靜態檔案、加入頁面，以及使用範本繼承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
 **上一個步驟：[使用檢視與頁面範本來建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁組成，並且使用如 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
+在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
 在這個步驟中，您將了解如何：
 
@@ -277,8 +277,9 @@ Django 的範本化系統提供兩個方法，可跨多個範本重複使用特�
 > [!div class="nextstepaction"]
 > [使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
+- [將 Web 應用程式部署至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [撰寫您的第一個 Django 應用程式，第 3 部分 (檢視)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) \(英文\) (docs.djangoproject.com)
 - 如需了解更多 Django 範本的功能，例如控制流程，請參閱 [Django 範本語言](https://docs.djangoproject.com/en/2.0/ref/templates/language/) \(英文\) (docs.djangoproject.com)
 - 如需使用 `{% url %}` 標籤的完整詳細資料，請參閱 [Django 範本的內建範本標籤和篩選參考](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) \(英文\) (docs.djangoproject.com) 中的 [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) \(英文\)

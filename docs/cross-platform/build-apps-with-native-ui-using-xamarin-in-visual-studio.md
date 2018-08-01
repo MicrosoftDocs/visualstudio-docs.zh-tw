@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757249"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232386"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
@@ -110,9 +110,9 @@ ms.locfileid: "36757249"
 
 1.  先在 [http://openweathermap.org/appid](http://openweathermap.org/appid)註冊免費的天氣 API 金鑰。 此 API 金鑰將可允許應用程式取得任何美國郵遞區號的天氣資料。 (這不適用於美國境外的郵遞區號)。
 
-2.  以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。在 [加入新項目]  對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
+2.  以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。在 [加入新項目]  對話方塊中，將檔案命名為 *Weather.cs*。 您將使用此類別儲存天氣資料服務的資料。
 
-3.  以下列程式碼取代整個 **Weather.cs** 的內容：
+3.  以下列程式碼取代整個 *Weather.cs* 的內容：
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ ms.locfileid: "36757249"
     }
     ```
 
-4.  將其他類別新增至名為 **DataService.cs** 的 .NET Standard 專案。 您將使用此類別來處理來自天氣資料服務的 JSON 資料。
+4.  將其他類別新增至名為 `DataService.cs` 的 .NET Standard 專案。 您將使用此類別來處理來自天氣資料服務的 JSON 資料。
 
-5.  以下列程式碼取代整個 **DataService.cs** 的內容：
+5.  以下列程式碼取代整個 *DataService.cs* 的內容：
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ ms.locfileid: "36757249"
     }
     ```
 
-6.  在名為 **Core.cs** 的 .NET Standard 程式庫中新增第三個類別。 您將使用此程式碼來組成含郵遞區號的查詢字串、呼叫天氣資料服務，然後填入 **Weather** 類別的執行個體。
+6.  在名為 *Core.cs* 的 .NET Standard 程式庫中新增第三個類別。 您將使用此程式碼來組成含郵遞區號的查詢字串、呼叫天氣資料服務，然後填入 **Weather** 類別的執行個體。
 
-7.  以下列程式碼取代 **Core.cs** 的內容：
+7.  以下列程式碼取代 *Core.cs* 的內容：
 
     ```csharp
     using System;
@@ -217,7 +217,7 @@ ms.locfileid: "36757249"
 
 8. 以您在步驟 1 中取得的 API 金鑰取代第一個出現的 *YOUR API KEY HERE*。 仍然需要用引號括住它！
 
-9. 刪除 .NET Standard 程式庫中的 **MyClass.cs**，因為將不會用到它。
+9. 刪除 .NET Standard 程式庫中的 *MyClass.cs*，因為將不會用到它。
 
 10. 建置 **WeatherApp** 專案，以確保程式碼正確。
 
@@ -229,7 +229,7 @@ ms.locfileid: "36757249"
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>設計應用程式的外觀與風格
 
-1.  在 [方案總管] 中，展開 [WeatherApp.Droid] > [資源] > [版面配置] 資料夾，然後開啟 **Main.axml**。 此命令會在視覺化設計工具中開啟檔案。 (如果出現 Java 相關錯誤，請參閱此[部落格文章](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9))。
+1.  在 [方案總管] 中，展開 [WeatherApp.Droid] > [資源] > [版面配置] 資料夾，然後開啟 *Main.axml*。 此命令會在視覺化設計工具中開啟檔案。 (如果出現 Java 相關錯誤，請參閱此[部落格文章](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9))。
 
     > [!TIP]
     >  專案中還有許多其他檔案。 本文的範圍並未涵蓋探索這些檔案，但如果您想要更深入了解 Android 專案的結構，請參閱 Hello Android 文章的[第 2 部分：深度剖析](/xamarin/android/get-started/hello-android/hello-android-deepdive/)。
@@ -256,11 +256,11 @@ ms.locfileid: "36757249"
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  請注意，有許多屬性不包含可供您選取之值的下拉式清單。  所以可能會很難知道指定的屬性要使用什麼字串值。 如需建議，請嘗試在 [R.attr](http://developer.android.com/reference/android/R.attr.html) 類別頁面中搜尋屬性的名稱。
+    >  請注意，有許多屬性不包含可供您選取之值的下拉式清單。  所以可能會很難知道指定的屬性要使用什麼字串值。 如需建議，請嘗試在 [`R.attr`](http://developer.android.com/reference/android/R.attr.html) 類別頁面中搜尋屬性的名稱。
     >
     >  此外，直接在網路上搜尋常被導向至 [http://stackoverflow.com/](http://stackoverflow.com/) 上的頁面；在其中，其他人已使用了相同的屬性。
 
-     基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此項目的程式碼：
+     基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此元素的程式碼：
 
     ```xml
     <TextView
@@ -347,7 +347,7 @@ ms.locfileid: "36757249"
         android:width="165dp" />
     ```
 
-11. 現在，您已具備足夠的知識，可使用 Android 設計工具來建置基本的 UI。 您也可以直接將標記新增至頁面的 Main.axml 檔案中來建置 UI。 若要以該方式建立其餘的 UI，請切換至設計工具中的 [原始碼] 檢視，然後將下列標記貼到 `</RelativeLayout>` 結束標籤的「下方」。 (它們必須在該標籤下方，因為這些元素「不」包含在 `RelativeLayout`中)。
+11. 現在，您已具備足夠的知識，可使用 Android 設計工具來建置基本的 UI。 您也可以直接將標記新增至頁面的 *Main.axml* 檔案中來建置 UI。 若要以該方式建立其餘的 UI，請切換至設計工具中的 [原始碼] 檢視，然後將下列標記貼到 `</RelativeLayout>` 結束標籤的「下方」。 (它們必須在該標籤下方，因為這些元素「不」包含在 `RelativeLayout`中)。
 
     ```xml
     <TextView
@@ -457,7 +457,7 @@ ms.locfileid: "36757249"
 
 13. 開啟 **MainActivity.cs**。 程式碼應該看起來如下：
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ ms.locfileid: "36757249"
     }
     ```
 
-14. 建置 Android 專案以檢查您的工作。 此建置程序會將控制項識別碼新增至 **Resource.Designer.cs** 檔案，讓您可以在程式碼中依名稱參考控制項。
+14. 建置 Android 專案以檢查您的工作。 此建置程序會將控制項識別碼新增至 *Resource.Designer.cs* 檔案，讓您可以在程式碼中依名稱參考控制項。
 
 ### <a name="consume-your-shared-code"></a>使用您的共用程式碼
 
-1.  在程式碼編輯器中開啟 **WeatherApp** 專案的 **MainActivity.cs** 檔案，並使用下列程式碼來取代它的內容。 此程式碼會呼叫您在共用程式碼中定義的 `GetWeather` 方法。 然後它會在應用程式的 UI 中，顯示從該方法擷取的資料。
+1.  在程式碼編輯器中開啟 **WeatherApp** 專案的 *MainActivity.cs* 檔案，並使用下列程式碼來取代它的內容。 此程式碼會呼叫您在共用程式碼中定義的 `GetWeather` 方法。 然後它會在應用程式的 UI 中，顯示從該方法擷取的資料。
 
     ```csharp
     using System;
@@ -545,7 +545,7 @@ ms.locfileid: "36757249"
 
  設計 Xamarin 應用程式中原生 UWP 使用者介面的流程，與任何其他原生 UWP 應用程式一樣。 因此，這裡將不討論設計工具的使用。 如需詳細的討論，請參閱[使用 XAML 設計工具來建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
- 取而代之的是，請開啟 **MainPage.xaml**，然後以下列標記取代整個 XAML 內容：
+ 取而代之的是，請開啟 *MainPage.xaml*，然後以下列標記取代整個 XAML 內容：
 
 ```xaml
 <Page
@@ -634,7 +634,7 @@ ms.locfileid: "36757249"
 
 ### <a name="consume-your-shared-code"></a>使用您的共用程式碼
 
-在 **MainPage.xaml.cs** 程式碼後置檔案中，為按鈕新增下列事件處理常式：
+在 *MainPage.xaml.cs* 程式碼後置檔案中，為按鈕新增下列事件處理常式：
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -663,7 +663,7 @@ private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
 
 2.  在 [方案平台] 下拉式方塊中，選取 [x86]，然後選取 [本機電腦]，以將應用程式部署至 Windows 10 Desktop。
 
-3.  按 F5 鍵以啟動應用程式。
+3.  按 **F5** 鍵以啟動應用程式。
 
 4.  在編輯方塊中輸入有效的五位數美國郵遞區號，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在頁面上。
 

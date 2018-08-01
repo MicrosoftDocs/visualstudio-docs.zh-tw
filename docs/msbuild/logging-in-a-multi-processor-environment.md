@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf90c51ec2cd4f1864d5573925ed17a0d69b2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575374"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077574"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了記錄的複雜性。 在單一處理器環境中，記錄器可以透過可預測的循序方式來處理傳入的事件、訊息、警告和錯誤。 不過，在多處理器環境中，來自數個來源的事件可能會同時或不依順序到達。 MSBuild 提供可辨識多處理器的新記錄器，並啟用建立自訂「轉送記錄器」。  
   
-## <a name="logging-multiple-processor-builds"></a>記錄多處理器建置  
+## <a name="log-multiple-processor-builds"></a>記錄多處理器建置  
  當您在多處理器或多核心系統中建置一個或多個專案時，所有專案的 MSBuild 建置事件會同時產生。 記錄器可能會同時或不依順序收到大量的事件資料。 這可能會讓記錄器不勝負荷，導致建置時間拉長、不正確記錄器輸出，甚至中斷建置。 為解決這些問題，MSBuild 記錄器可處理不依順序的事件，並將事件與其來源建立相互關聯。  
   
  建立自訂轉送記錄器，甚至可以改善更多的記錄效率。 自訂轉送記錄器可讓您在建置之前選擇您要監視的事件，以作為篩選。 當您使用自訂轉送記錄器時，不想要的事件不會讓記錄器不勝負荷、導致記錄雜亂，或讓建置時間變慢。  
   
-### <a name="central-logging-model"></a>中央記錄模型  
- 針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央記錄模型中，MSBuild.exe 執行個體作為主要建置處理序或「中央節點」。 次要 MSBuild.exe 執行個體或「次要節點」會附加至中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。  
+### <a name="central-logging-model"></a>集中式記錄模型  
+ 針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央記錄模型中，*MSBuild.exe* 執行個體作為主要建置處理序或「中央節點」。 次要 *MSBuild.exe* 執行個體或「次要節點」會附加至中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。  
   
  進行建置時，次要記錄器會將其事件流量路由傳送至中央記錄器。 因為事件產生自數個次要節點，所以資料會同時但交錯地到達中央節點。 為了解析事件對專案和事件對目標參考，事件引數會包含其他建置事件內容資訊。  
   
@@ -64,7 +64,7 @@ public interface IForwardingLogger: INodeLogger
 ### <a name="attaching-a-distributed-logger"></a>附加分散式記錄器  
  若要在命令列建置上附加分散式記錄器，請使用 `/distributedlogger` (或者，簡稱是 `/dl`) 參數。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器包含兩個記錄類別：轉送記錄器和中央記錄器。 以下是附加分散式記錄器範例：  
   
-```  
+```cmd  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
@@ -72,6 +72,6 @@ Culture=neutral
   
  星號 (*) 可分隔 `/dl` 參數中的兩個記錄器名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [組建記錄器](../msbuild/build-loggers.md)   
  [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d674e7613898816f905e0d0a11bdc2484cf4f25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325319"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154089"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。  
@@ -40,8 +40,8 @@ ms.locfileid: "36325319"
      Version="1.0.0" />  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -53,12 +53,12 @@ ms.locfileid: "36325319"
 ### <a name="child-elements"></a>子元素  
  無。
 
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
  |元素|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。|  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)   
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [ MSBuild](../msbuild/msbuild.md)

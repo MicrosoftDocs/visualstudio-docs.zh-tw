@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752135"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118196"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>教學課程步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
 **上一個步驟：[建立 Visual Studio 專案和解決方案](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ ms.locfileid: "34752135"
 
 1. 在您的專案資料夾中，建立一個名為 `HelloFlask` 的應用程式資料夾 (在 [方案總管] 中的專案上按一下滑鼠右鍵，然後選取 [新增] > [新增資料夾])。
 
-1. 在 `HelloFlask` 資料夾中，使用下列會建立 `Flask` 執行個體並載入應用程式檢視 (在下一個步驟中會建立) 的內容來建立名為 `__init.py__` 的檔案：
+1. 在 `HelloFlask` 資料夾中，使用下列會建立 `Flask` 執行個體並載入應用程式檢視 (在下一個步驟中會建立) 的內容來建立名為 `__init__.py` 的檔案：
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ ms.locfileid: "34752135"
 > [!div class="nextstepaction"]
 > [提供靜態檔案、新增頁面，然後使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>繼續探討
+## <a name="go-deeper"></a>深入了解
 
 - [Flask 快速入門 - 轉譯範本](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) \(英文\) (flask.pocoo.org)
 - GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

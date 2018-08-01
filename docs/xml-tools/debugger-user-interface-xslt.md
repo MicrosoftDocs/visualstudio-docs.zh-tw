@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548195"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176020"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 
 本主題說明偵錯工具的視窗及對話方塊。 它僅討論具有 XSLT 特定偵錯行為的使用者介面片段。
 
-如需詳細資訊，請參閱[偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)。
+如需詳細資訊，請參閱 <<c0> [ 偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)。
 
 ## <a name="locals-window"></a>[區域變數] 視窗
  [本機] 視窗會顯示樣式表中定義之任何變數的相關資訊。 [本機] 視窗包含資訊的三個資料行：
@@ -49,15 +49,15 @@ ms.locfileid: "34548195"
 ## <a name="output-window"></a>輸出視窗
  [輸出] 視窗會顯示偵錯時發生的任何錯誤訊息或安全性例外狀況。
 
- XSLT 偵錯工具使用分開的視窗顯示偵錯工具輸出。 這是用來顯示的輸出相同的視窗**顯示 XSL 輸出**命令。
+ XSLT 偵錯工具使用分開的視窗顯示偵錯工具輸出。 這是用來顯示輸出的相同視窗**顯示 XSL 輸出**命令。
 
 ## <a name="task-list"></a>工作清單
  **工作清單**列出樣式表中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
 
- **工作清單**包括 XSLT 檔中的指令碼區塊中發生的任何錯誤。
+ **工作清單**XSLT 檔案中指令碼區塊中包含所發生的任何錯誤。
 
 > [!NOTE]
-> XSLT 偵錯工具會有任何警告，所以它們永不會顯示在**工作清單**。
+> XSLT 偵錯工具會有任何警告，使它們永遠不會顯示在**工作清單**。
 
 ## <a name="breakpoints-window"></a>中斷點視窗
  [中斷點] 視窗會顯示目前專案中的所有中斷點。 當視窗在檢視表中時如果加入中斷點，則視窗會自動更新以顯示新中斷點。
@@ -73,9 +73,9 @@ ms.locfileid: "34548195"
  [監看式] 視窗中顯示的變數是針對目前的內容 (呼叫堆疊上的最上層項目)。 如果您變更內容，則監看式視窗會更新，並顯示為該內容設定的變數。
 
 ## <a name="call-stack-window"></a>[呼叫堆疊] 視窗
- **呼叫堆疊** 視窗用於檢視呼叫堆疊、 參數類型和參數值的函式的名稱。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
+ **呼叫堆疊**視窗用來檢視呼叫堆疊、 參數類型和參數值的函式的名稱。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
 
- 呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果沒有從範本"a"至"b"的範本，範本"a"，而且範本"b"出現在**呼叫堆疊**與目前內容的清單最上方的視窗。 使用者可以查看目前執行的查詢。
+ 呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果是從範本呼叫"a"到"b"的範本、 範本"a"和範本"b"會出現在**呼叫堆疊**與目前內容的清單最上方的視窗。 使用者可以查看目前執行的查詢。
 
  如果範本在 XSLT 檔中沒有名稱，則會使用由 XSLT 處理器產生的名稱。
 
@@ -92,15 +92,15 @@ ms.locfileid: "34548195"
 
 -   不允許使用者定義函式。
 
-如需詳細資訊，請參閱[How to： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
+如需詳細資訊，請參閱 <<c0> [ 如何： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
 
 ## <a name="disassembly-window"></a>反組譯碼視窗
  [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。
 
- 如需詳細資訊， [How to： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
+ 如需詳細資訊，[如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
-- [偵錯工具基礎](../debugger/debugger-basics.md)
+- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
 - [檢查 [Visual Studio 中的] [自動變數] 和 [區域變數] 視窗中的變數](../debugger/autos-and-locals-windows.md)

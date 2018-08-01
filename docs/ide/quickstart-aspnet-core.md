@@ -2,7 +2,7 @@
 title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,79 +14,106 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232189"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 C# ASP.NET Core Web 應用程式。
+在這個 5-10 分鐘的 Visual Studio 使用方式簡介中，您將會使用 ASP.NET 專案範本與e C# 程式設計語言建立簡單的 "Hello World" 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
-首先，您將建立 ASP.NET Core Web 應用程式專案。 在新增任何項目之前，專案類型隨附的範本檔案可構成功能性 Web 應用程式！
+首先，您將建立 ASP.NET Core Web 應用程式專案。 此專案類型隨附建立 Web 應用程式所需的範本檔案，甚至是在您新增任何項目之前便已完備！
 
 1. 開啟 Visual Studio 2017。
 
 1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]。 接著，將您的檔案命名為 `HelloWorld` 並選擇 [確定]。
 
-     如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+   ![建立新的 C# ASP.NET Core Web 應用程式專案](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
-     ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
+   > [!NOTE]
+   > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+   >![從 [新增專案] 對話方塊開啟 Visual Studio 安裝程式](../ide/media/open-visual-studio-installer.png)
+   >
+   > Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+   >
+   > ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
+   >
+   >(您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，確認上方的下拉式功能表出現 [ASP.NET Core 2.0]。 接著，選擇 [Web 應用程式]，然後選擇 [確定]。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/quickstart-aspnet-core20.png)
 
-## <a name="explore-the-ide"></a>探索 IDE
+Visual Studio 隨即開啟您的專案檔。
 
-1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中予以開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。
+## <a name="create-the-application"></a>建立應用程式
 
-1. 在編輯器中，選擇 `AboutModel`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 `AboutModel` C# 類別的定義。
+1. 在 [方案總管] 中，展開 [頁面] 資料夾，然後選擇 **About.cshtml**。
 
-   ![移至定義操作功能表](../ide/media/quickstart-aspnet-gotodefinition.png)
+   ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-1. 接下來，我們將會使用簡單捷徑來清除檔案頂端的 `using` 指示詞。 選擇任何灰色 using 指示詞，而且[快速動作](../ide/quick-actions.md)燈泡會顯示在插入點正下方或左邊界中。 選擇燈泡，然後選擇 [移除不必要的 Using]。
+   此檔案對應至 Web 應用程式中名為 [關於] 的頁面。
 
-     不必要的 using 會從檔案中刪除。
+   ![Web 應用程式中的 [關於] 頁面](../ide/media/csharp-aspnet-about-page.png)
 
-1. 在 `OnGet()` 方法中，將主體變更為下列程式碼：
+   在編輯器中，您將會看到 [關於] 頁面之 [其他資訊] 區域的 HTML 程式碼。
 
- ```csharp
- public void OnGet()
- {
-     string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
- }
- ```
+   ![Visual Studio 編輯器中其他資訊區域的 HTML 程式碼](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. 您會看到兩個波浪底線出現在 [環境] 和 [字串] 下方，因為這些類型不在範圍內。 開啟 [錯誤清單] 工具列，以查看該處所列的相同錯誤  (如果您看不到 [錯誤清單] 工具列，請從頂端功能表列中選擇 [檢視] > [錯誤清單])。
+1. 將 [其他資訊] 文字變更為 "**Hello World!**"。
 
-   ![錯誤清單](../ide/media/quickstart-aspnet-errorlist.png)
+   ![變更 Visual Studio 編輯器中其他資訊區域的預設 HTML 程式碼](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. 在編輯器視窗中，將游標放在包含錯誤的任一行上方，然後選擇左邊界的 [快速動作] 燈泡。 從下拉式功能表中，選擇 **using System;** 將此指示詞新增至檔案頂端，並解決錯誤。
+1. 在 [方案總管] 中，展開 [About.cshtml]，然後選擇 **About.cshtml.cs**。 (此檔案也對應到您 Web 應用程式中的 [關於] 頁面)。
+
+   ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-code-file.png)
+
+   在編輯器中，您將會看到包含 [關於] 頁面之 [應用程式描述] 區域文字的 C# 程式碼。
+
+   ![Visual Studio 編輯器中應用程式描述區域的 C# 程式碼](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+
+1. 將 [應用程式描述] 訊息文字變更為「**什麼是我的訊息?**」。
+
+   ![變更 Visual Studio 編輯器中應用程式描述區域的預設訊息文字](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
 ## <a name="run-the-application"></a>執行應用程式
 
 1. 按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
-1. 在網站頂端，選擇 [關於]，以查看您在 [關於] 頁面的 `OnGet()` 方法中新增目錄訊息。
+   > [!NOTE]
+   > 如果您收到錯誤訊息指出「無法連接到網頁伺服器 'IIS Express'」，請關閉 Visual Studio，然後使用右鍵或操作功能表中的 [以系統管理員身分執行] 選項來開啟它。 接著，再次執行應用程式。
+
+1. 在網頁頂端，選擇 [關於]。
+
+   ![從網頁選取 [關於]](../ide/media/csharp-aspnet-home-page-about.png)
+
+1. 檢視您加入到 [關於] 頁面的更新文字。
+
+   ![檢視包含您加入之文字的已更新 [關於] 頁面](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
 1. 關閉網頁瀏覽器。
 
-> [!NOTE]
-> 如果您收到錯誤訊息指出「無法連接到 Web 伺服器 'IIS Express'」，請關閉 Visual Studio，然後以滑鼠右鍵按一下或開啟快顯功能表，使用 [以系統管理員身分執行] 選項開啟它。 接著，再次執行應用程式。
-
-恭喜您完成此快速入門！ 我們希望您更了解 Visual Studio IDE。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。
+恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE (整合式開發環境)。
 
 ## <a name="next-steps"></a>後續步驟
-恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要深入了解，請繼續下列教學課程。
+
+若要深入了解，請繼續進行下列教學課程：
 
 > [!div class="nextstepaction"]
 > [Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)
+>
+> [!div class="nextstepaction"]
+> [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+
+## <a name="see-also"></a>另請參閱
+
+[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)

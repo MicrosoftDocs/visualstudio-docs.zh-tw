@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844421"
 ---
 # <a name="manage-channels"></a>管理通道
 在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="move-selected-channel-up-or-down"></a>向上或向下移動選取的通道  
  您可以使用這些控制項在清單中向上或向下移動通道。 例如，您可以將相關的通道放置在一起，以便檢查特定模式或跨執行緒的關係。  
   
-## <a name="move-selected-channel-to-top-or-bottom"></a>將選取的通道移動到頂端或底部  
+## <a name="move-selected-channel-to-top-or-bottom"></a>將選取的通道移至頂端或底部  
  您可以將選取的通道移動到清單的頂端或底部，以便檢查特定模式，或是在檢查的時候排除不相關的通道。  
   
 ## <a name="hide-selected-channels"></a>隱藏選取的通道  
@@ -53,13 +54,13 @@ ms.lasthandoff: 04/19/2018
 ## <a name="show-all-channels"></a>顯示所有通道  
  此控制項會在有一個以上的隱藏通道時顯示。 若選取它，所有隱藏的元素就都會顯示，並且再次回到計算時間。  
   
-## <a name="move-markers-to-top"></a>將標記移至最上  
+## <a name="move-markers-to-top"></a>將標記移至頂端  
  如果追蹤包含標記事件，則您可以使用此命令將標記通道移動到時間軸的頂端。 系統會保留他們的相對順序。  
   
 ## <a name="group-markers-by-thread"></a>依據執行緒來分組標記  
  如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

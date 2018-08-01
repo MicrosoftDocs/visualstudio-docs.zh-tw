@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924991"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924075"
 ---
 # <a name="how-to-export-a-shader"></a>如何：匯出著色器
 本文件將示範如何使用著色器設計工具匯出有向圖著色器語言 (DGSL) 著色器，以便您在應用程式中使用。
@@ -27,13 +27,13 @@ ms.locfileid: "31924991"
 ## <a name="exporting-a-shader"></a>匯出著色器
  當您使用著色器設計工具建立著色器之後，在您用於應用程式之前，必須以圖形 API 了解的格式將其匯出。 您可以根據不同的需求以不同的方式匯出著色器。
 
-#### <a name="to-export-a-shader"></a>匯出著色器
+### <a name="to-export-a-shader"></a>匯出著色器
 
 1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，開啟 [視覺著色器圖形 (.dgsl)] 檔案。
 
-     如果您沒有可開啟的 [視覺著色器圖形 (.dgsl)] 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)所述，建立一個檔案。
+     如果您沒有可開啟的**視覺著色器圖形 (.dgsl)** 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個檔案。
 
-2.  在 [著色器設計工具] 工具列上，選擇 [進階]、[匯出]、[匯出成]。 [匯出著色器] 對話方塊隨即顯示。
+2.  在 [著色器設計工具] 工具列上，選擇 [進階] > [匯出] > [匯出成]。 [匯出著色器] 對話方塊隨即出現。
 
 3.  在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。
 

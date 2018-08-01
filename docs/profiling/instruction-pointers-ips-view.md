@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f34df089219fda6a27e68c59a1b67f1e48a0839
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3c72d0d1cca803996461ccfba9d7f04811b9048e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844195"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
 [指令指標] 檢視可讓您查看取樣程式碼剖析期間所執行的特定指標。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
  對於 .NET 記憶體資料，[程式行] 檢視會識別用於配置記憶體的指令。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-contention-data.md)

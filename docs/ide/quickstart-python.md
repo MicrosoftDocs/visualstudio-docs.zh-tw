@@ -1,7 +1,7 @@
 ---
 title: 快速入門：使用 Visual Studio 建立 Python Web 應用程式
 description: 在此快速入門中，您將使用 Visual Studio 和 Flask 架構來建立一個簡易的 Python Web 應用程式。
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957141"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131982"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
 在這個 5-10 分鐘將 Visual Studio 當成 Python IDE 的簡介中，您會根據 Flask 架構 建立簡單的 Python Web 應用程式。 您會透過離散步驟建立可協助您了解 Visual Studio 基本功能的專案。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)，免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)，免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
 
 ## <a name="create-the-project"></a>建立專案
 
@@ -146,15 +146,12 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 恭喜您從 Visual Studio 執行第一個 Python 應用程式，您已了解將 Visual Studio 當成 Python IDE 使用的一些內容！
 
-因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio 專案範本負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請選取下面的按鈕。
-
 > [!div class="nextstepaction"]
-> [快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [將應用程式部署至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請選取下方的按鈕。
+因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio 專案範本負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請檢閱[快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)。
 
-> [!div class="nextstepaction"]
-> [教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請檢閱[教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
 若要深入探索 Visual Studio 所提供的各項功能，請選取下列連結。
 

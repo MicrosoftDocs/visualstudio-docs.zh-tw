@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396253865e01ddfe5566e6cd97424af644bd9246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578051"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152613"
 ---
 # <a name="cl-task"></a>CL 工作
-包裝 Visual C++ 編譯器工具 cl.exe。 編譯器會產生可執行檔 (.exe)、動態連結程式庫 (.dll) 檔案或程式碼模組 (.netmodule) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
+包裝 Visual C++ 編譯器工具 *cl.exe*。 編譯器會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 檔案或程式碼模組 (*.netmodule*) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
   
 ## <a name="parameters"></a>參數  
- 下表說明 **CL** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
+ 下列清單描述 **CL** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "31578051"
   
      選擇性的 String 參數。  
   
-     命令列選項清單。 例如，"/*option1* /*option2* /*option#*"。 使用此參數，來指定任何其他工作參數未表示的命令列選項。  
+     命令列選項清單。 例如，"/\<option1> /\<option2> /\<option#>"。 使用此參數，來指定任何其他工作參數未表示的命令列選項。  
   
      如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "31578051"
   
      如果是 `true`，即會建立瀏覽資訊檔。  
   
-     如需詳細資訊，請參閱 [/FR、/Fr (建立 .Sbr 檔案)](/cpp/build/reference/fr-fr-create-dot-sbr-file) 中的 **/FR** 選項。  
+     如需詳細資訊，請參閱 [/FR、/Fr (建立 .sbr 檔案)](/cpp/build/reference/fr-fr-create-dot-sbr-file) 中的 **/FR** 選項。  
   
 -   **BrowseInformationFile**  
   
@@ -122,7 +122,7 @@ ms.locfileid: "31578051"
   
      指定瀏覽資訊檔的檔案名稱。  
   
-     如需詳細資訊，請參閱此表格中的 **BrowseInformation** 參數，另請參閱 [/FR、/Fr (建立 .Sbr 檔案)](/cpp/build/reference/fr-fr-create-dot-sbr-file)。  
+     如需詳細資訊，請參閱此表格中的 **BrowseInformation** 參數，另請參閱 [/FR、/Fr (建立 .sbr 檔案)](/cpp/build/reference/fr-fr-create-dot-sbr-file)。  
   
 -   **BufferSecurityCheck**  
   
@@ -220,7 +220,7 @@ ms.locfileid: "31578051"
   
      如果是 **true**，即會告訴編譯器，針對與 ANSI C 或 ANSI C++ 不相容的語言建構發出錯誤。  
   
-     如需詳細資訊，請參閱 [/Za、/Ze (停用語言擴充功能)](/cpp/build/reference/za-ze-disable-language-extensions) 中的 **/Za** 選項。  
+     如需詳細資訊，請參閱 [/Za、/Ze (停用語言延伸模組)](/cpp/build/reference/za-ze-disable-language-extensions) 中的 **/Za** 選項。  
   
 -   **DisableSpecificWarnings**  
   
@@ -302,7 +302,7 @@ ms.locfileid: "31578051"
   
      如果是 `true`，即會建立清單檔案，並展開已加入原始程式碼的屬性。  
   
-     如需詳細資訊，請參閱[/Fx (合併加入的程式碼)](/cpp/build/reference/fx-merge-injected-code)。  
+     如需詳細資訊，請參閱 [/Fx (合併插入的程式碼)](/cpp/build/reference/fx-merge-injected-code)。  
   
 -   **FavorSizeOrSpeed**  
   
@@ -358,7 +358,7 @@ ms.locfileid: "31578051"
   
      導致前置處理器要處理一或多個指定的標頭檔。  
   
-     如需詳細資訊，請參閱 [/FI (指定強制的 Include 檔)](/cpp/build/reference/fi-name-forced-include-file)。  
+     如需詳細資訊，請參閱 [/FI (指定強制的包含檔)](/cpp/build/reference/fi-name-forced-include-file)。  
   
 -   **ForcedUsingFiles**  
   
@@ -366,7 +366,7 @@ ms.locfileid: "31578051"
   
      導致前置處理器要一或多個指定的 **#using** 檔案。  
   
-     如需詳細資訊，請參閱 [/FU (指定強制的 #using 檔)](/cpp/build/reference/fu-name-forced-hash-using-file)。  
+     如需詳細資訊，請參閱 [/FU (命名強制的 #using 檔案)](/cpp/build/reference/fu-name-forced-hash-using-file)。  
   
 -   **FunctionLevelLinking**  
   
@@ -380,7 +380,7 @@ ms.locfileid: "31578051"
   
      選擇性的 `Boolean` 參數。  
   
-     如果是 `true`，即會導致編譯器處理原始程式碼檔案中的文件註解，並針對每個具有文件註解的原始程式碼檔案建立 .xdc 檔案。  
+     若為 `true`，即會導致編譯器處理原始程式碼檔案中的文件註解，並針對每個具有文件註解的原始程式碼檔案建立 *.xdc* 檔案。  
   
      如需詳細資訊，請參閱 [/doc (處理文件註解) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp)。 另請參閱此表格中的 **XMLDocumentationFileName** 參數。  
   
@@ -452,7 +452,7 @@ ms.locfileid: "31578051"
   
      選擇性的 `Boolean` 參數。  
   
-     如果是 `true`，即會在目的檔 (.obj) 中省略預設的 C 執行階段程式庫名稱。 根據預設，編譯器會將程式庫名稱置入 .obj 檔案中，以將連結器導向至正確的程式庫。  
+     若為 `true`，即會在目的檔 (*.obj*) 中省略預設的 C 執行階段程式庫名稱。 根據預設，編譯器會將程式庫名稱置入 .obj 檔案中，以將連結器導向至正確的程式庫。  
   
      如需詳細資訊，請參閱 [/Zl (省略預設程式庫名稱)](/cpp/build/reference/zl-omit-default-library-name)。  
   
@@ -520,7 +520,7 @@ ms.locfileid: "31578051"
   
      指定先行編譯標頭檔的路徑名稱，而不使用預設的路徑名稱。  
   
-     如需詳細資訊，請參閱 [/Fp (指定 .PCH 檔)](/cpp/build/reference/fp-name-dot-pch-file)。  
+     如需詳細資訊，請參閱 [/Fp (命名 .pch 檔案)](/cpp/build/reference/fp-name-dot-pch-file)。  
   
 -   **PreprocessKeepComments**  
   
@@ -528,7 +528,7 @@ ms.locfileid: "31578051"
   
      如果是 `true`，即會在前置處理期間保留註解。  
   
-     如需詳細資訊，請參閱 [/C (在前置處理期間保留註解)](/cpp/build/reference/c-preserve-comments-during-preprocessing)。  
+     如需詳細資訊，請參閱 [/C (前置處理時保留註解)](/cpp/build/reference/c-preserve-comments-during-preprocessing)。  
   
 -   **PreprocessorDefinitions**  
   
@@ -550,7 +550,7 @@ ms.locfileid: "31578051"
   
      指定 **PreprocessToFile** 參數要將前置處理過的輸出寫入其中的輸出檔名稱。  
   
-     如需詳細資訊，請參閱 [/Fi (前置處理輸出檔名稱)](/cpp/build/reference/fi-preprocess-output-file-name)。  
+     如需詳細資訊，請參閱 [/Fi (前置處理輸出檔案名稱)](/cpp/build/reference/fi-preprocess-output-file-name)。  
   
 -   **PreprocessSuppressLineNumbers**  
   
@@ -614,7 +614,7 @@ ms.locfileid: "31578051"
   
      如果是 `true`，即會導致編譯器輸出 include 檔案清單。  
   
-     如需詳細資訊，請參閱 [/showIncludes (列示 Include 檔案)](/cpp/build/reference/showincludes-list-include-files)。  
+     如需詳細資訊，請參閱 [/showIncludes (列示包含檔)](/cpp/build/reference/showincludes-list-include-files)。  
   
 -   **SmallerTypeCheck**  
   
@@ -658,7 +658,7 @@ ms.locfileid: "31578051"
   
     -   **16Bytes** - **/Zp16**  
   
-     如需詳細資訊，請參閱 [/Zp (結構成員對應儲存)](/cpp/build/reference/zp-struct-member-alignment)。  
+     如需詳細資訊，請參閱 [/Zp (結構成員對齊)](/cpp/build/reference/zp-struct-member-alignment)。  
   
 -   **SuppressStartupBanner**  
   
@@ -782,7 +782,7 @@ ms.locfileid: "31578051"
   
      指定代表「讀取檔案追蹤記錄檔」的項目陣列。  
   
-     讀取檔案追蹤記錄檔 (.tlog) 包含工作所讀取的輸入檔名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
+     讀取檔案追蹤記錄檔 (*.tlog*) 包含工作所讀取的輸入檔名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
   
 -   **TLogWriteFiles**  
   
@@ -790,7 +790,7 @@ ms.locfileid: "31578051"
   
      指定代表「寫入檔案追蹤記錄檔」的項目陣列。  
   
-     寫入檔案追蹤記錄檔 (.tlog) 包含工作所寫入的輸出檔名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
+     寫入檔案追蹤記錄檔 (*.tlog*) 包含工作所寫入的輸出檔案名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
   
 -   **TrackFileAccess**  
   
@@ -800,7 +800,5 @@ ms.locfileid: "31578051"
   
      如需詳細資訊，請參閱此表格中的 **TLogReadFiles** 和 **TLogWriteFiles** 參數。  
   
-## <a name="remarks"></a>備註  
-  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

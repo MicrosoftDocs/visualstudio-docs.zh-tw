@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb696aae19675a12aeb9aa6f2b76c8e6b710ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 78cf1405cf3a09d43aab21c53e64644db29af0de
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571239"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077697"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化屬性和註解合併到適用於整個組件的單一檔案。  
@@ -38,10 +38,10 @@ ms.locfileid: "31571239"
 |`OutputFile`|必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。|  
   
 ## <a name="remarks"></a>備註  
- 您可以將當地語系化屬性和註解加入至 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 內容中。 透過 [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] 當地語系化支援，您可以取出當地語系化屬性和註解，然後將它們放入有別於產生組件的 .loc 檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。  
+ 您可以將當地語系化屬性和註解加入至 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 內容中。 透過 [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] 當地語系化支援，您可以取出當地語系化屬性和註解，然後將它們放入有別於產生組件的 *.loc* 檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。  
   
 ## <a name="example"></a>範例  
- 下列範例會將數個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化註解合併到單一 .loc 檔案。  
+ 下列範例會將數個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化註解合併到單一 *.loc* 檔案。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -56,9 +56,9 @@ ms.locfileid: "31571239"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)   
- [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+## <a name="see-also"></a>另請參閱  
+[WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
+[WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)  
+[MSBuild 參考](../msbuild/msbuild-reference.md)  
+[MSBuild 工作參考](../msbuild/msbuild-task-reference.md)  
+[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  

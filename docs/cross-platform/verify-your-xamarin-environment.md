@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924469"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233083"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 
@@ -32,7 +32,7 @@ ms.locfileid: "37924469"
 
 在 Visual Studio 中，先選取 [工具] > [擴充功能和更新]，然後檢查是否有任何 Xamarin 元件需要更新。
 
-接著，在 Visual Studio 中使用 [檔案] > [新增專案] 來建立新的 Xamarin.Forms 方案。 在對話方塊中，展開 [Visual C#] > [跨平台]選取 [行動應用程式 (Xamarin.Forms)]，然後按一下 [確定]。 在下一個對話方塊中，選取 [空白應用程式]。 在 [程式碼共用策略] 底下，選取 [.NET Standard]。 按一下 [確定]。
+接著，在 Visual Studio 中使用 [檔案] > [新增專案] 來建立新的 Xamarin.Forms 方案。 在對話方塊中，展開 [Visual C#] > [跨平台]，選取 [行動應用程式 (Xamarin.Forms)]，然後按一下 [確定]。 在下一個對話方塊中，選取 [空白應用程式]。 在 [程式碼共用策略] 底下，選取 [.NET Standard]。 按一下 [確定 **Deploying Office Solutions**]。
 
 這些動作會建立一個含有四個專案的方案：共用的 .NET Standard 2.0 程式庫專案，以及 Android、iOS 和「通用 Windows 平台」(UWP) 的應用程式專案：
 
@@ -54,9 +54,9 @@ ms.locfileid: "37924469"
 
   ![選取 Android 版 Visual Studio 模擬器作為偵錯目標](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin 驗證 3")
 
-  如需更詳細的資訊，請參閱 [Visual Studio 的 Android 模擬器簡介](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) \(英文\) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android] > [Android 模擬器管理員]，為模擬器建立新的裝置設定檔。
+  如需更詳細的資訊，請參閱 [Visual Studio 的 Android 模擬器簡介](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) \(英文\) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱[針對 Android 版 Visual Studio 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android] > [Android 模擬器管理員]，為模擬器建立新的裝置設定檔。
 
-3. 按 F5 來編譯程式並部署至 Android 裝置或模擬器。
+3. 按 **F5** 來編譯程式並部署至 Android 裝置或模擬器。
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ ms.locfileid: "37924469"
 
 2.  在 [方案平台] 下拉式清單中，選取 [x86] 或 [x64]。 選取 [本機電腦]。
 
-3.  按 F5 將程式部署至桌面。
+3.  按 **F5** 將程式部署至桌面。
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ ms.locfileid: "37924469"
 
  ![選取 iPhoneSimulator 建置目標](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 驗證 5")
 
- 如果未列出任何模擬器，請在您的 Mac 上啟動 Xcode，選取 [Xcode] > [喜好設定]，然後按一下 [下載]。 在 [元件] 標題底下，您應該會看到可供下載的模擬器版本。 您可以在 [iOS 偵錯](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator)頁面上找到其他偵錯指示。
+ 如果未列出任何模擬器，請在您的 Mac 上啟動 Xcode，選取 [Xcode] >  [喜好設定]，然後按一下 [下載]。 在 [元件] 標題底下，您應該會看到可供下載的模擬器版本。 您可以在 [iOS 偵錯](/xamarin/ios/deploy-test/debugging-in-xamarin-ios)頁面上找到其他偵錯指示。
 
 4.  從 Visual Studio 下拉式清單中選取一個模擬器裝置目標：
 
  ![選取 iPhone 偵錯目標](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 驗證 6")
 
-5. 按 F5 來啟動偵錯工具。 模擬器會在 Mac 上啟動，您將在該處與應用程式進行互動，而在 Visual Studio 中進行偵錯。 如果您有連接到 Mac 的實體 iPhone 或 iPad，清單上也會顯示這些裝置，您可以改為選取它們。 如果您沒有看到列出任何裝置或模擬器，請檢查與 Mac 的連線。 請檢閱上面步驟 1 中所列的文章，或移至 [工具] > [iOS] > [與 Mac 配對]
+5. 按 **F5** 來啟動偵錯工具。 模擬器會在 Mac 上啟動，您將在該處與應用程式進行互動，而在 Visual Studio 中進行偵錯。 如果您有連接到 Mac 的實體 iPhone 或 iPad，清單上也會顯示這些裝置，您可以改為選取它們。 如果您沒有看到列出任何裝置或模擬器，請檢查與 Mac 的連線。 請檢閱上面步驟 1 中所列的文章，或移至 [工具] > [iOS] > [與 Mac 配對]
 
 6.  如果您在連線到 Mac 時發生問題，請參閱[連線疑難排解](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/)。
 
 7.  如果您看到錯誤指出「沒有任何已安裝的佈建設定檔符合已安裝的 iOS 簽署金鑰」，請嘗試下列建議：
 
-  - 依照 [將您的帳戶加入 Xcode 中](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 所述，檢查您在 Mac 上的 Apple ID 帳戶是否已加入 Xcode 中。  加入您的帳戶之後，請務必重新啟動 Visual Studio 和 Xcode。
+  - 依照[將您的帳戶加入 Xcode 中](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 所述，檢查您在 Mac 上的 Apple ID 帳戶是否已加入 Xcode 中。  加入您的帳戶之後，請務必重新啟動 Visual Studio 和 Xcode。
 
   - 確認在 [iOS 套件組合簽署] 索引標籤的 iOS 專案屬性中，使用中偵錯組態的 [自訂權益] 欄位是空的。  注意：如果遇到上述錯誤訊息，只能嘗試移除此設定。
 

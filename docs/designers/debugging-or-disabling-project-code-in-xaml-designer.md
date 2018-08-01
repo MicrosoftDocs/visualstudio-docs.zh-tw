@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925813"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890561"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 
-在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 XAML 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼來解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止例外狀況發生。
+在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 **XAML** 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼來解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止例外狀況發生。
 
 專案程式碼包括：
 
@@ -73,7 +73,7 @@ ms.locfileid: "31925813"
 
 -   在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具]  連結。
 
--   或者，在 XAML 設計工具的工具列上選擇 [停用專案程式碼]  按鈕。
+-   或者，在 XAML 設計工具的工具列上選擇 [停用專案程式碼] 按鈕。
 
      ![[停用專案程式碼] 按鈕](../designers/media/xaml_disablecode.png)
 

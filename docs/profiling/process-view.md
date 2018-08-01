@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e8a11f55edd2f7a04498b81ec6b8713876f718
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4924f38bf893bc17a599802d9962d664da01c26d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254520"
 ---
 # <a name="process-view"></a>處理序檢視
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的程式碼剖析資料。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/19/2018
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**結束時間**|從程式碼剖析開始到處理序或執行緒結束的毫秒數或處理器週期數。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

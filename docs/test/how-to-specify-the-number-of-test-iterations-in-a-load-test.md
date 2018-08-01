@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c9122ec3f6eaed156c48f6fd31b4cbbed32292b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965558"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179644"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在負載測試回合設定中指定測試反覆項目的數目
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。 如需詳細資訊，請參閱[逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。
 
-使用 [負載測試編輯器] 時，您可以在 [屬性] 視窗中編輯回合設定值的 [測試反覆項目] 屬性。 [測試反覆項目] 屬性是透過 [負載測試編輯器] 指定負載測試中所有情節之 Web 效能測試和單元測試要執行的反覆項目數上限。
+使用 [負載測試編輯器] 時，您可以在 [屬性] 視窗中編輯回合設定值的 [測試反覆項目] 屬性。 [測試反覆項目] 屬性會使用 [負載測試編輯器] 指定負載測試中所有情節之所有 Web 效能測試和單元測試要執行的反覆項目數上限。
 
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。

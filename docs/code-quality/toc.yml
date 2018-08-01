@@ -1,16 +1,19 @@
+- name: 程式碼分析文件
+  href: index.md
 - name: 總覽
+  expanded: true
   items:
-    - name: Managed 程式碼的程式碼分析
+    - name: 受控碼的程式碼分析
       href: code-analysis-for-managed-code-overview.md
     - name: Roslyn 分析器
       href: roslyn-analyzers-overview.md
     - name: C/C++ 的程式碼分析
       href: code-analysis-for-c-cpp-overview.md
-    - name: 使用程式碼度量來衡量程式碼維護性
+    - name: 使用程式碼度量來衡量程式碼可維護性
       href: code-metrics-values.md
 - name: 快速入門
   items:
-    - name: 快速入門：C/C++ 程式碼分析
+    - name: 快速入門：C/C++ 的程式碼分析
       href: quick-start-code-analysis-for-c-cpp.md
 - name: 教學課程
   items:
@@ -23,7 +26,7 @@
           href: demo-sample.md
 - name: 作法指南
   items:
-    - name: Managed 程式碼的程式碼分析
+    - name: 受控碼的程式碼分析
       items:
         - name: 安裝 Roslyn 分析器
           href: install-roslyn-analyzers.md
@@ -78,6 +81,8 @@
     - name: 規則集
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 分析器套件的規則集
+          href: analyzer-rule-sets.md
         - name: 受控碼的規則集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
@@ -123,8 +128,8 @@
           href: extended-design-guidelines-rules-rule-set-for-managed-code.md
         - name: 適用於 Managed 程式碼的全球化規則規則集
           href: globalization-rules-rule-set-for-managed-code.md
-        - name: 適用於 Managed 程式碼的 Managed 最小規則規則集
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+        - name: 適用於受控碼的受控最小規則規則集
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: 適用於 Managed 程式碼的 Managed 建議規則規則集
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: 混合最小規則規則集
@@ -137,7 +142,7 @@
           href: native-recommended-rules-rule-set.md
         - name: 適用於 Managed 程式碼的安全性規則規則集
           href: security-rules-rule-set-for-managed-code.md
-    - name: Managed 程式碼的程式碼分析警告
+    - name: 受控碼的程式碼分析警告
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: 依據 CheckId 列出 Managed 程式碼的程式碼分析警告

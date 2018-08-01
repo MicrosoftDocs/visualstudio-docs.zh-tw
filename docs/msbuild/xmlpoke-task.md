@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030412"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231258"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "39030412"
 
 ## <a name="remarks"></a>備註
 
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
@@ -81,7 +81,7 @@ ms.locfileid: "39030412"
 
 `dn` 在這裡的用途是預設命名空間的假造命名空間前置詞。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

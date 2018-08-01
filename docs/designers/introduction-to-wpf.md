@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747277"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978345"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 
@@ -38,7 +38,7 @@ WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬�
 
 ## <a name="markup-and-code-behind"></a>標記和程式碼後置
 
-WPF 可讓您使用 *標記* 和 *程式碼後置*來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
+WPF 可讓您使用「標記」和「程式碼後置」來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
 
 - 由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。
 
@@ -48,7 +48,7 @@ WPF 可讓您使用 *標記* 和 *程式碼後置*來開發應用程式，這是
 
 ### <a name="markup"></a>標記
 
-XAML 是以宣告方式來實作應用程式外觀所用的 XML 標記語言。 它通常可用來建立視窗、對話方塊、頁面和使用者控制項，並填入控制項、圖案和圖形。
+XAML 是以宣告方式來實作應用程式外觀的 XML 標記語言。 您通常可以使用它來建立視窗、對話方塊、頁面和使用者控制項，並填入控制項、圖案和圖形。
 
  下列範例使用 XAML 來實作包含單一按鈕的視窗外觀。
 
@@ -183,11 +183,11 @@ End Namespace
 
 - **使用者資訊**： <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>和 <xref:System.Windows.Controls.ToolTip>。
 
-## <a name="input-and-commands"></a>輸入與命令
+## <a name="input-and-commands"></a>輸入和命令
 
 控制項最常用來偵測及回應使用者輸入。 [WPF 輸入系統](/dotnet/framework/wpf/advanced/input-overview) 使用直接和路由事件來支援文字輸入、焦點管理和滑鼠定位。
 
-應用程式通常具有複雜的輸入需求。 WPF 提供一個 [命令系統](/dotnet/framework/wpf/advanced/commanding-overview) ，將使用者輸入動作與回應這些動作的程式碼區隔開來。
+應用程式通常具有複雜的輸入需求。 WPF 提供一個[命令系統](/dotnet/framework/wpf/advanced/commanding-overview)，將使用者輸入動作與回應這些動作的程式碼區隔開。
 
 ## <a name="layout"></a>配置
 
@@ -260,7 +260,7 @@ End Namespace
 
 WPF 資料繫結引擎還提供其他支援，包括驗證、排序、篩選和群組。 此外，資料繫結可在標準 WPF 控制項所顯示的使用者介面不適用時，使用資料範本來建立繫結資料的自訂使用者介面。
 
-如需詳細資訊，請參閱 [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+如需詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="graphics"></a>圖形
 
@@ -301,7 +301,7 @@ WPF 提供的 2D 圖形涵蓋一組標準的基本圖形。 不過，您可能�
 
 <xref:System.Windows.Media.Geometry> 物件可用來裁剪、叫用測試及轉譯 2D 圖表資料。
 
-![Path 的各種用法](../designers/media/wpfintrofigure5.png)
+![各種路徑用法](../designers/media/wpfintrofigure5.png)
 
 如需詳細資訊，請參閱[幾何概觀](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。
 
@@ -327,7 +327,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ![立方體動畫的影像](../designers/media/wpfintrofigure7.png)
 
-如需詳細資訊，請參閱 [動畫概觀](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
+如需詳細資訊，請參閱[動畫概觀](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
 
 ## <a name="media"></a>媒體
 
@@ -339,7 +339,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ![縮圖影像與完整影像](../designers/media/wpfintrofigure8.png)
 
-如需詳細資訊，請參閱 [影像處理概觀](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
+如需詳細資訊，請參閱[影像處理概觀](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
 
 ### <a name="video-and-audio"></a>影片和音訊
 
@@ -375,7 +375,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ## <a name="customize-wpf-apps"></a>自訂 WPF 應用程式
 
-到目前為止，您已經認識用於開發應用程式的核心 WPF 建置組塊。 您可以使用應用程式模型，來裝載及傳遞主要由控制項所組成的應用程式內容。 為了簡化使用者介面中的控制項排列方式，並確保不論視窗大小和顯示設定如何變更，都能維持此排列方式，您可以使用 WPF 版面配置系統。 由於大多數應用程式可讓使用者與資料互動，因此您可以使用資料繫結來減少使用者介面與資料整合的工作。 若要改進應用程式的視覺外觀，您可以使用的 WPF 所提供的各種圖形、動畫和媒體支援。
+到目前為止，您已經認識用於開發應用程式的核心 WPF 建置組塊。 您可以使用應用程式模型，來裝載及傳遞主要由控制項所組成的應用程式內容。 為了簡化使用者介面中的控制項排列方式，並確保不論視窗大小和顯示設定如何變更，都能維持此排列方式，您可以使用 WPF 版面配置系統。 大多數應用程式可讓使用者與資料互動，因此您可以使用資料繫結來減少使用者介面與資料整合的工作。 若要改進應用程式的視覺外觀，您可以使用的 WPF 所提供的各種圖形、動畫和媒體支援。
 
 不過，這些基本功能通常並不足以建立及管理與眾不同且具有豐富視覺效果的使用者介面。 標準 WPF 控制項可能未與應用程式所需的外觀進行整合。 資料可能不會以最有效的方式來顯示。 Windows 佈景主題的預設外觀和風格可能不適合您應用程式的整體使用者介面。 在許多方面，呈現技術除了其他任何類型的擴充性之外，也需要視覺擴充性。
 
@@ -430,7 +430,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ### <a name="triggers"></a>觸發程序
 
-雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱 [設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
+雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱[設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
 
 ### <a name="control-templates"></a>控制項範本
 
@@ -512,7 +512,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 請注意， <xref:System.Windows.Controls.ListBox> 已保留其行為和整體外觀，只會變更清單方塊所要顯示的內容外觀。
 
-如需詳細資訊，請參閱 [資料範本化概觀](/dotnet/framework/wpf/data/data-templating-overview)。
+如需詳細資訊，請參閱[資料範本化概觀](/dotnet/framework/wpf/data/data-templating-overview)。
 
 ### <a name="styles"></a>樣式
 
@@ -547,7 +547,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 ![兩個橙色按鈕](../designers/media/wpfintrofigure20.png)
 
-如需詳細資訊，請參閱 [設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
+如需詳細資訊，請參閱[設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
 
 ### <a name="resources"></a>資源
 
@@ -652,7 +652,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
  ![自訂 UserControl](../designers/media/wpfintrofigure3.png)
 
-如需自訂控制項的詳細資訊，請參閱 [控制項撰寫概觀](/dotnet/framework/wpf/controls/control-authoring-overview)。
+如需自訂控制項的詳細資訊，請參閱[控制項撰寫概觀](/dotnet/framework/wpf/controls/control-authoring-overview)。
 
 ## <a name="wpf-best-practices"></a>WPF 最佳做法
 

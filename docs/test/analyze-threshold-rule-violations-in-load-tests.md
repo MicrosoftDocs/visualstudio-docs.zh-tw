@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750905"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234981"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
 臨界值規則與特定的效能計數器有關，而違規指的是效能計數器超過或未達設定值。 當您執行負載測試時，可以針對事先設定的臨界值規則分析所發生的違規。
 
-如果發生違規，負載測試分析器的狀態列就會出現 [臨界值違規] 超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器] 視窗和圖形上檢視臨界值違規。
+如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規] 超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器] 視窗和圖形上檢視臨界值違規。
 
 ## <a name="view-threshold-violations-in-the-table"></a>在資料表中檢視臨界值違規
 

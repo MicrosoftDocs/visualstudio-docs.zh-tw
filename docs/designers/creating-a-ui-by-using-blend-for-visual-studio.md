@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9c6f5febdf6ee3aacce0510f315a2f2c7b24bd4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746880"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890138"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 
@@ -39,11 +39,11 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png)|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取] 工具可選取巢狀物件和路徑區段。|![圖說文字 A](../designers/media/b5_label_a.png)|**漸層和筆刷工具**|
-|![](../designers/media/b1_2.png)|**檢視工具**：調整畫板的檢視方式，例如移動瀏覽和縮放。|![圖說文字 B](../designers/media/b5_label_b.png)|**路徑工具**|
-|![](../designers/media/b1_3.png)|**筆刷工具**：處理物件的視覺屬性，例如轉換筆刷、繪製物件，或選取某個物件的屬性以套用至另一個物件。|![圖說文字 C](../designers/media/b5_label_c.png)|**圖形工具**|
-|![](../designers/media/b1_4.png)|**物件工具**：繪製畫板上最常用的物件，例如路徑、圖形、版面配置面板、文字及控制項。|![圖說文字 D](../designers/media/b5_label_d.png)|**版面配置面板**|
-|![](../designers/media/b1_5.png)|**資產工具**：存取 [資產] 面板，以及顯示資產庫中最近使用過的資產。|![圖說文字 E](../designers/media/b5_label_e.png)|**文字控制項**|
+|![選取工具](../designers/media/b1_1.png)|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取] 工具可選取巢狀物件和路徑區段。|![圖說文字 A](../designers/media/b5_label_a.png)|**漸層和筆刷工具**|
+|![檢視工具](../designers/media/b1_2.png)|**檢視工具**：調整畫板的檢視方式，例如移動瀏覽和縮放。|![圖說文字 B](../designers/media/b5_label_b.png)|**路徑工具**|
+|![筆刷工具](../designers/media/b1_3.png)|**筆刷工具**：處理物件的視覺屬性，例如轉換筆刷、繪製物件，或選取某個物件的屬性以套用至另一個物件。|![圖說文字 C](../designers/media/b5_label_c.png)|**圖形工具**|
+|![物件工具](../designers/media/b1_4.png)|**物件工具**：繪製畫板上最常用的物件，例如路徑、圖形、版面配置面板、文字及控制項。|![圖說文字 D](../designers/media/b5_label_d.png)|**版面配置面板**|
+|![資產工具](../designers/media/b1_5.png)|**資產工具**：存取 [資產] 面板，以及顯示資產庫中最近使用過的資產。|![圖說文字 E](../designers/media/b5_label_e.png)|**文字控制項**|
 |||![圖說文字 F](../designers/media/b5_label_f.png)|**通用控制項**|
 
 **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [工具列](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
@@ -57,10 +57,10 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |||
 |-|-|
 |![](../designers/media/b1_1.png)|**搜尋方塊**：在 [搜尋] 方塊中輸入文字，即可篩選資產清單。|
-|![](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式] 檢視與 [清單模式] 檢視。|
-|![](../designers/media/b1_3.png)|**資產分類**：按一下分類或子分類可檢視該分類中的資產清單。|
-|![](../designers/media/b1_4.png)|**樣式**：顯示資源字典中所包含的所有樣式。|
-|![](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
+|![格線模式與清單模式](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式] 檢視與 [清單模式] 檢視。|
+|![資產分類](../designers/media/b1_3.png)|**資產分類**：按一下分類或子分類可檢視該分類中的資產清單。|
+|![樣式](../designers/media/b1_4.png)|**樣式**：顯示資源字典中所包含的所有樣式。|
+|![描述](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>[物件與時間軸] 面板導覽
 
@@ -70,21 +70,21 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**物件檢視**：檢視文件的視覺化樹狀結構。 您可以向下鑽研至不同層級的詳細資料。 您也可以加入圖層，以進一步組織畫板上的物件。 如此一來您就能以群組形式加以鎖定並隱藏。|
-|![](../designers/media/b1_2.png)|**錄製模式指標**：查看時間軸中是否正在錄製屬性變更。|
-|![](../designers/media/b1_3.png)|**分鏡腳本選擇器**：檢視您所建立的分鏡腳本清單。|
-|![](../designers/media/b1_4.png)|**關閉分鏡腳本**：關閉目前的分鏡腳本。|
-|![](../designers/media/b1_5.png)|**分鏡腳本選項**：建立、重複、回復、刪除、重新命名或關閉分鏡腳本。|
-|![](../designers/media/b1_6.png)|**播放控制項**：透過時間軸瀏覽。 您也可以拖曳播放點來瀏覽 (或「快轉」) 時間軸。|
-|![](../designers/media/b1_7.png)|**將範圍傳回**：讓物件檢視範圍回到前一個根物件或前一個範圍。 只有在要修改樣式或範本時才能這麼做。|
-|![](../designers/media/b1_8.png)|**錄製主要畫面格**：錄製目前時間點上所選物件屬性的快照集。|
-|![](../designers/media/b1_9.png)|**貼齊選項**：設定時間軸貼齊、貼齊解析度，以及關閉時間軸貼齊。|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**顯示/隱藏**、**鎖定/解除鎖定**：顯示或隱藏物件檢視的可見性與鎖定選項。|
-|![](../designers/media/b1_11.png)|**時間軸上的播放點位置**：以毫秒為單位顯示目前時間。 您也可以在此欄位中直接輸入時間值，以跳至特定的時間點。 精確度取決於 [貼齊選項] 中設定的貼齊解析度。|
-|![](../designers/media/b1_12.png)|**播放點**：判斷動畫位於哪個時間點。 您可以在時間軸上拖曳播放點來預覽動畫。|
-|![](../designers/media/b1_13.png)|**時間軸上設定的主要畫面格**：變更特定時間點的屬性值。|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**變更物件順序**：設定物件的顯示順序。 按一下此按鈕可在結構檢視中依 Z 順序 (由前至後) 或依標記順序 (物件出現在 **XAML** 檢視中的順序) 來排列物件。|
-|![](../designers/media/b1_15.png)|**時間軸縮放**：設定時間軸的縮放解析度。 放大可讓您更詳細地編輯動畫，而縮小則可顯示更長時間內所發生的概況詳情。 如果放大後無法在所要的時間點上設定主要畫面格，請驗證貼齊解析度是否設定得夠高。|
+|![物件檢視](../designers/media/b1_1.png)|**物件檢視**：檢視文件的視覺化樹狀結構。 您可以向下鑽研至不同層級的詳細資料。 您也可以加入圖層，以進一步組織畫板上的物件。 如此一來您就能以群組形式加以鎖定並隱藏。|
+|![錄製模式指示器](../designers/media/b1_2.png)|**錄製模式指標**：查看時間軸中是否正在錄製屬性變更。|
+|![分鏡腳本選擇器](../designers/media/b1_3.png)|**分鏡腳本選擇器**：檢視您所建立的分鏡腳本清單。|
+|![關閉分鏡腳本](../designers/media/b1_4.png)|**關閉分鏡腳本**：關閉目前的分鏡腳本。|
+|![分鏡腳本選項](../designers/media/b1_5.png)|**分鏡腳本選項**：建立、重複、回復、刪除、重新命名或關閉分鏡腳本。|
+|![播放控制項](../designers/media/b1_6.png)|**播放控制項**：透過時間軸瀏覽。 您也可以拖曳播放點來瀏覽 (或「快轉」) 時間軸。|
+|![將範圍傳回](../designers/media/b1_7.png)|**將範圍傳回**：讓物件檢視範圍回到前一個根物件或前一個範圍。 只有在要修改樣式或範本時才能這麼做。|
+|![錄製主要畫面格](../designers/media/b1_8.png)|**錄製主要畫面格**：錄製目前時間點上所選物件屬性的快照集。|
+|![貼齊選項](../designers/media/b1_9.png)|**貼齊選項**：設定時間軸貼齊、貼齊解析度，以及關閉時間軸貼齊。|
+|![顯示隱藏鎖定解除鎖定](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**顯示/隱藏**、**鎖定/解除鎖定**：顯示或隱藏物件檢視的可見性與鎖定選項。|
+|![時間軸上的播放點位置](../designers/media/b1_11.png)|**時間軸上的播放點位置**：以毫秒為單位顯示目前時間。 您也可以在此欄位中直接輸入時間值，以跳至特定的時間點。 精確度取決於 [貼齊選項] 中設定的貼齊解析度。|
+|![播放點](../designers/media/b1_12.png)|**播放點**：判斷動畫位於哪個時間點。 您可以在時間軸上拖曳播放點來預覽動畫。|
+|![時間軸上設定的主要畫面格](../designers/media/b1_13.png)|**時間軸上設定的主要畫面格**：變更特定時間點的屬性值。|
+|![變更物件順序](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**變更物件順序**：設定物件的顯示順序。 按一下此按鈕可在結構檢視中依 Z 順序 (由前至後) 或依標記順序 (物件出現在 **XAML** 檢視中的順序) 來排列物件。|
+|![時間軸縮放](../designers/media/b1_15.png)|**時間軸縮放**：設定時間軸的縮放解析度。 放大可讓您更詳細地編輯動畫，而縮小則可顯示更長時間內所發生的概況詳情。 如果放大後無法在所要的時間點上設定主要畫面格，請驗證貼齊解析度是否設定得夠高。|
 |![圖說文字 16](../designers/media/b5_label_16.png)|**時間軸組合區域**：檢視時間軸，並拖曳主要畫面格或使用其捷徑功能表以使其來回移動。|
 
 ## <a name="tour-of-the-properties-panel"></a>[屬性] 面板導覽
@@ -93,27 +93,27 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 
 ![屬性面板](../designers/media/blend5_properties_panel.png)
 
-**分類**：展開和摺疊屬性的分類。 按一下 [展開] ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) 和 [摺疊] ![摺疊](../designers/media/b5_collapse_button.png) 即可顯示或隱藏分類詳細資料。
+**分類**：展開和摺疊屬性的分類。 按一下 [展開] ![展開](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png)和 [摺疊] ![摺疊](../designers/media/b5_collapse_button.png) 即可顯示或隱藏分類詳細資料。
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**名稱及類型**：檢視所選物件的圖示、名稱及類型。|
-|![](../designers/media/b1_2.png)|**排列依據**：依名稱、來源或分類的字母順序排列屬性。|
-|![](../designers/media/b1_3.png)|**筆刷屬性**：設定筆刷的視覺屬性，例如 [填滿] 筆刷、[筆觸] 筆刷和 [前景] 筆刷。|
-|![](../designers/media/b1_4.png)|**色彩編輯器**：使用單色和漸層筆刷。|
-|![](../designers/media/b1_5.png)|**色彩選擇器**：選取色彩。|
-|![](../designers/media/b1_6.png)|**色卡**：檢視初始色彩、目前色彩和最後色彩|
-|![](../designers/media/b1_7.png)|**色彩選擇工具**：在螢幕上使用任何元素的色彩。 選取 [單色筆刷] 時可以使用 [色彩選擇工具]。 選取 [漸層筆刷] 時可以使用 [色彩選擇工具]。|
-|![](../designers/media/b1_8.png)|**屬性和事件**：設定屬性或選擇所選元素的事件。|
-|![](../designers/media/b1_9.png)|**搜尋方塊**：搜尋屬性。 在 [搜尋] 方塊中輸入文字，以篩選所顯示的屬性。|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**筆刷編輯器索引標籤**：用來選取筆刷編輯器。 您可以選擇 [無筆刷]、[單色筆刷]、[漸層筆刷]、[拼貼筆刷] 或 [筆刷資源]。|
-|![](../designers/media/b1_11.png)|**色彩資源**：將完全相同的色彩套用到不同的屬性。 [色彩資源] 索引標籤包含 [本機資源] 和 [系統資源]。|
-|![](../designers/media/b1_12.png)|**RGB 色彩空間**：調整 [R]、[G] 或 [B] (紅色、綠色、藍色) 數字編輯器的值來修改色彩。|
-|![](../designers/media/b1_13.png)|**Alpha 色板**：使用 [A] 旁邊的數字編輯器來修改 Alpha 值。|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**將色彩轉換成資源**：將選取的色彩轉換成色彩資源。 當您按一下 [色彩資源] 索引標籤時會顯示色彩資源。|
+|![名稱和類型](../designers/media/b1_1.png)|**名稱及類型**：檢視所選物件的圖示、名稱及類型。|
+|![排列依據](../designers/media/b1_2.png)|**排列依據**：依名稱、來源或分類的字母順序排列屬性。|
+|![筆刷屬性](../designers/media/b1_3.png)|**筆刷屬性**：設定筆刷的視覺屬性，例如 [填滿] 筆刷、[筆觸] 筆刷和 [前景] 筆刷。|
+|![色彩編輯器](../designers/media/b1_4.png)|**色彩編輯器**：使用單色和漸層筆刷。|
+|![色彩選擇器](../designers/media/b1_5.png)|**色彩選擇器**：選取色彩。|
+|![色彩晶片](../designers/media/b1_6.png)|**色卡**：檢視初始色彩、目前色彩和最後色彩|
+|![色彩選擇工具](../designers/media/b1_7.png)|**色彩選擇工具**：在螢幕上使用任何元素的色彩。 選取 [單色筆刷] 時可以使用 [色彩選擇工具]。 選取 [漸層筆刷] 時可以使用 [色彩選擇工具]。|
+|![屬性和事件](../designers/media/b1_8.png)|**屬性和事件**：設定屬性或選擇所選元素的事件。|
+|![搜尋方塊](../designers/media/b1_9.png)|**搜尋方塊**：搜尋屬性。 在 [搜尋] 方塊中輸入文字，以篩選所顯示的屬性。|
+|![筆刷編輯器索引標籤](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**筆刷編輯器索引標籤**：用來選取筆刷編輯器。 您可以選擇 [無筆刷]、[單色筆刷]、[漸層筆刷]、[拼貼筆刷] 或 [筆刷資源]。|
+|![色彩資源](../designers/media/b1_11.png)|**色彩資源**：將完全相同的色彩套用到不同的屬性。 [色彩資源] 索引標籤包含 [本機資源] 和 [系統資源]。|
+|![RGB 色彩空間](../designers/media/b1_12.png)|**RGB 色彩空間**：調整 [R]、[G] 或 [B] (紅色、綠色、藍色) 數字編輯器的值來修改色彩。|
+|![Alpha 色板](../designers/media/b1_13.png)|**Alpha 色板**：使用 [A] 旁邊的數字編輯器來修改 Alpha 值。|
+|![將色彩轉換為資源](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**將色彩轉換成資源**：將選取的色彩轉換成色彩資源。 當您按一下 [色彩資源] 索引標籤時會顯示色彩資源。|
 |![](../designers/media/b1_15.png)|**十六進位值**：檢視所顯示色彩的十六進位值。|
 |![圖說文字 16](../designers/media/b5_label_16.png)|**漸層滑桿**：只有選取漸層筆刷時才會出現。|
-|![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**顯示進階屬性**：檢視較不常用之屬性的分類。|
+|![顯示進階屬性](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**顯示進階屬性**：檢視較不常用之屬性的分類。|
 
 **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [[屬性] 面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 

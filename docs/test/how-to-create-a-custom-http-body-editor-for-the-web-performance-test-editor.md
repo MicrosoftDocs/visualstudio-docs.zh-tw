@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750691"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177044"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
@@ -301,7 +301,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 1.  建立測試專案。
 
-2.  建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL，例如 http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl。
+2.  建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL。
 
 3.  完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容] 或 [二進位內容]。
 

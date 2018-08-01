@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b275a26da94e2d22bd3b347e7671b9fb3f3f333
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f37f4185daff3ef66d9e3192ad315a8db827625
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575302"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081458"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "31575302"
 |---------------|-----------------|
 |`AlwaysCompileMarkupFilesInSeparateDomain`|選擇性的 **Boolean** 參數。<br /><br /> 指定是否在不同的 <xref:System.AppDomain> 中執行工作。 如果此參數傳回 **false**，工作就會在與 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中執行，且執行速度會較快。 如果此參數傳回 **true**，工作就會在與 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 隔離的第二個 <xref:System.AppDomain> 中執行，且執行速度會較慢。|
 |`AssembliesGeneratedDuringBuild`|選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中變更之組件的參考。 例如，Visual Studio 解決方案可能包含一個專案，此專案參考另一個專案的已編譯輸出。 在此情況下，可以將第二個專案的已編譯輸出新增到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 必須包含對組建方案所產生之一組完整組件的參考。|
-|`AssemblyName`|必要的 **String** 參數。<br /><br /> 指定為專案產生之組件的簡短名稱。 例如，如果專案要產生名稱為 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] 可執行檔，則 **AssemblyName** 參數的值會是 **WinExeAssembly**。|
+|`AssemblyName`|必要的 **String** 參數。<br /><br /> 指定為專案產生之組件的簡短名稱。 例如，如果專案要產生名稱為 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] 可執行檔，則 **AssemblyName** 參數的值會是 **WinExeAssembly**。|
 |`GeneratedBaml`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 包含採用 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式的已產生檔案清單。|
 |`KnownReferencePaths`|選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中永不變更之組件的參考。 包括位於 [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)]、位於 [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] 安裝目錄等位置中的組件。|
 |`Language`|必要的 **String** 參數。<br /><br /> 指定編譯器支援的 Managed 語言。 有效的選項為 **C#**、**VB**、**JScript** 及 **C++**。|
@@ -72,11 +72,11 @@ ms.locfileid: "31575302"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
-[工作參考](../msbuild/wpf-msbuild-task-reference.md)  
+[WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild 參考](../msbuild/msbuild-reference.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)  
+[MSBuild 工作參考](../msbuild/msbuild-task-reference.md)  
 [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
 [WPF XAML 瀏覽器應用程式概觀](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

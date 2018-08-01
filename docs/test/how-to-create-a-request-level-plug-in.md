@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ac50f956ed45f42f77638146c1340c0ed90f68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974027"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178370"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "31974027"
 
 您可以使用自訂的 Web 效能測試要求外掛程式搭配您已經記錄的 Web 效能測試。 自訂的 Web 效能測試要求外掛程式讓您可以撰寫極少量的程式碼，即可達成對 Web 效能測試的更高層級控制。 但是，自訂的 Web 效能測試外掛程式也可以與 Web 效能測試程式碼搭配使用。 請參閱[產生和執行自動程式化 Web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)。
 
-## <a name="to-create-a-request-level-plug-in"></a>若要建立要求層級外掛程式
+## <a name="to-create-a-request-level-plug-in"></a>建立要求層級外掛程式
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下專案名稱。 選取 [新增]，然後選擇 [新增專案]。
 
@@ -80,7 +80,7 @@ ms.locfileid: "31974027"
      外掛程式就會新增至 [要求外掛程式] 資料夾，這是 HTTP 要求的子資料夾。
 
     > [!WARNING]
-    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到類似下面的錯誤：
+    > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
     > **要求失敗: \<plug-in> 事件中發生例外狀況: 無法載入檔案或組件 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >

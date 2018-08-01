@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 4：偵錯
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 4，涵蓋如何在偵錯工具中執行 Python 程式碼。
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031978"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057813"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
+# <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
 **上一個步驟：[使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ ms.locfileid: "32031978"
 > [!div class="nextstepaction"]
 > [在 Python 環境中安裝套件](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>繼續探討
+### <a name="go-deeper"></a>深入了解
 
 - [偵錯](debugging-python-in-visual-studio.md)
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)提供 Visual Studio 偵錯功能的完整文件。

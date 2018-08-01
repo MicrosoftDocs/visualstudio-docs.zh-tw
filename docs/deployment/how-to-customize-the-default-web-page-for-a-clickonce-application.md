@@ -1,5 +1,5 @@
 ---
-title: 如何： 自訂 ClickOnce 應用程式的預設 Web 網頁 |Microsoft 文件
+title: 如何： 自訂 ClickOnce 應用程式的預設網頁 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,38 +19,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 743d7f259da4129eda578808d1ce04619104a3f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d64e6432c1bfe696bf3b116aa35b5f4a5c597507
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557667"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153133"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自訂 ClickOnce 應用程式的預設 Web 網頁
-當發行 ClickOnce 應用程式 web，網頁上自動產生及發行以及應用程式。 預設頁面包含的應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。  
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何： 自訂 ClickOnce 應用程式的預設 Web 網頁
+發行 ClickOnce 應用程式到 Web，當網頁自動產生及發行以及應用程式。 預設的網頁包含應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。  
   
 > [!NOTE]
->  您在頁面看到的實際連結取決於檢視的網頁位置的電腦和所包含的必要條件。  
+>  您在頁面看到的實際連結相依於檢視頁面所在的電腦，以及您要納入的必要條件。  
   
- 網頁上的預設名稱是 Publish.htm;您可以變更在名稱**專案設計工具**。 如需詳細資訊，請參閱[How to： 指定 ClickOnce 應用程式的發行頁](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。  
+ 網頁的預設名稱是*Publish.htm*; 您可以變更中的名稱**專案設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。  
   
- Publish.htm Web 網頁會在偵測到較新版本時，才發行。  
+ *Publish.htm*偵測到較新版本時，才發佈網頁。  
   
 > [!NOTE]
->  您對所做變更您**發行**設定不會影響 Publish.htm 頁面上，有一個例外狀況： 如果您新增或移除必要條件最初發行之後的必要條件清單已經不正確。 您必須編輯以反映變更必要條件連結文字。  
+>  您對所做變更您**發佈**設定不會影響*Publish.htm*頁面上，有一個例外狀況： 如果您新增或移除最初發行之後的必要元件，必要條件清單將會已經不正確。 您必須編輯必要條件的連結，以反映所做的變更的文字。  
   
-### <a name="to-customize-the-publish-web-page"></a>若要自訂發行網頁  
+### <a name="to-customize-the-publish-web-page"></a>若要自訂 [發行 Web] 頁面  
   
-1.  發行 ClickOnce 應用程式到 Web 位置。 如需詳細資訊，請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+1.  發行 ClickOnce 應用程式到 Web 的位置。 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
-2.  在 Web 伺服器上，開啟 Publish.htm 檔案在 Visual Web 設計工具或其他 HTML 編輯器中。  
+2.  在 Web 伺服器上，開啟*Publish.htm* Visual Web 設計工具或另一個 HTML 編輯器中的檔案。  
   
-3.  自訂所需的頁面，並將其儲存。  
+3.  自訂所需的頁面，並將它儲存。  
   
-4.  選擇性。 若要防止 Visual Studio 無法覆寫自訂的發行網頁，取消核取**自動產生部署網頁之後, 每個發行**發行選項 對話方塊中。  
+4.  選擇性。 若要防止 Visual Studio 覆寫您自訂的發行的網頁，請取消選取**自動產生部署網頁之後, 每個發行**中**發行選項** 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [如何：指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+ [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何： 指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

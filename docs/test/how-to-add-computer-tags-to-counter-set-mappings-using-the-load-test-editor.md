@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6b14ef4ae42ef978c449f7cb4bafaa08bf8a1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96ce122c78c20b741613ed45820f585236a0383b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968131"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203663"
 ---
-# <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>如何：使用負載測試編輯器將電腦標記加入至計數器集合對應
+# <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>如何：使用負載測試編輯器將電腦標記新增至計數器集合對應
 
 電腦標記可讓您使用容易辨識的名稱來識別電腦。 這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色。 例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。
 
-## <a name="to-add-a-tag-to-a-computer"></a>若要將標記加入至電腦
+## <a name="to-add-a-tag-to-a-computer"></a>將標記加入至電腦
 
 1.  開啟負載測試。
 

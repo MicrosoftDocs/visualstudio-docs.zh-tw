@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752075"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235247"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -38,7 +38,7 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 - **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
-- **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
+- **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 和更早版本**
 
@@ -69,7 +69,7 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 ### <a name="write-test-methods"></a>撰寫測試方法
 
 > [!NOTE]
-> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)。 如需 Boost.Test，請參閱 [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
+> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 如需 Boost.Test，請參閱 [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
 
 測試專案中的 .cpp 檔為您定義虛設常式類別和方法，以示範如何撰寫測試程式碼。 請注意，這些簽章使用 TEST_CLASS 和 TEST_METHOD 巨集，因此可從測試總管視窗探索方法。
 
