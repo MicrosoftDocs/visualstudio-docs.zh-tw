@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118618"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379786"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說： 將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題中所述的專案[逐步解說： 建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -75,7 +75,7 @@ ms.locfileid: "37118618"
   
 1.  選擇 ExpenseReport 專案，，然後在功能表列上選擇 **專案** > **加入新項目**。  
   
-2.  在**範本**窗格中，選擇**應用程式頁面**範本，使用專案項目的預設名稱 (**ApplicaitonPage1.aspx**)，然後選擇 [ **新增**] 按鈕。  
+2.  在**範本**窗格中，選擇**應用程式頁面**範本，使用專案項目的預設名稱 (**ApplicationPage1.aspx**)，然後選擇 [ **新增**] 按鈕。  
   
 3.  在  [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx 的取代`PlaceHolderMain`有下列區段：  
   
