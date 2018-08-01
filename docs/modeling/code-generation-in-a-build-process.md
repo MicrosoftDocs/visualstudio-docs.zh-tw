@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的建置流程中的程式碼產生
+title: 建置流程中的程式碼產生
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9803ad4ddcd1b0e534beae3a0e9601fd8934e216
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382379"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409800"
 ---
 # <a name="code-generation-in-a-build-process"></a>在建置流程中的程式碼產生
 
-[文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解決方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
+[文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的 Visual Studio 方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
 
 根據不同的建置引擎，建置工作可執行的動作會有些差異。 如果當您建置 Visual Studio 中的解決方案時，文字範本可以存取 Visual Studio API (EnvDTE) [hostspecific ="true"](../modeling/t4-template-directive.md)屬性設定。 但當您建置解決方案，從命令列，或當您起始透過 Visual Studio 的伺服器組建時也不會。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
 
@@ -33,27 +33,27 @@ ms.locfileid: "39382379"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-如果[您的組建伺服器](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9)所在的電腦上執行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]是未安裝，請將下列檔案複製到組建電腦從您的開發電腦。 替代的最新的版本號碼 ' *'。
+如果[您的組建伺服器](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 替代的最新的版本號碼 ' *'。
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>若要編輯專案檔
 
@@ -92,7 +92,7 @@ ms.locfileid: "39382379"
 
 其中具有可輸入至專案檔以控制轉換工作的一些屬性：
 
--   在每個組建的開始處執行轉換工作：
+- 在每個組建的開始處執行轉換工作：
 
     ```xml
     <PropertyGroup>
@@ -100,7 +100,7 @@ ms.locfileid: "39382379"
     </PropertyGroup>
     ```
 
--   覆寫唯讀的檔案，因為它們未被簽出：
+- 覆寫唯讀的檔案，因為它們未被簽出：
 
     ```xml
     <PropertyGroup>
@@ -108,7 +108,7 @@ ms.locfileid: "39382379"
     </PropertyGroup>
     ```
 
--   每次轉換每一個範本：
+- 每次轉換每一個範本：
 
     ```xml
     <PropertyGroup>
@@ -118,27 +118,27 @@ ms.locfileid: "39382379"
 
      根據預設，如果範本檔、包含的檔案，或是所有之前已由範本、所使用指示詞處理器讀取的檔案的建立時間較晚，T4 MSBuild 工作會重新產生輸出檔。 請注意，在只比較範本和輸出檔案的日期的情況下，此相依性測試將比在 Visual Studio 中的 Transform All Templates 命令來得更為強大。
 
- 若在專案中僅執行文字轉換，請叫用 TransformAll 工作：
+若在專案中僅執行文字轉換，請叫用 TransformAll 工作：
 
- `msbuild myProject.csproj /t:TransformAll`
+`msbuild myProject.csproj /t:TransformAll`
 
- 轉換特定文字範本：
+轉換特定文字範本：
 
- `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
+`msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
- 您可以在 TransformFile 中使用萬用字元：
+您可以在 TransformFile 中使用萬用字元：
 
- `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
+`msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
 ## <a name="source-control"></a>原始檔控制
 
 與原始檔控制系統的特定內建整合並未提供。 不過，您可以加入自己的擴充功能，例如簽出和簽入產生的檔案。根據預設，文字轉換工作會避免覆寫標記為唯讀的檔案，因此，當遇到這類型檔案時，會將錯誤記錄至 Visual Studio 的錯誤清單，並中斷工作。
 
- 若要指定必須覆寫唯讀檔案，請插入以下屬性：
+若要指定必須覆寫唯讀檔案，請插入以下屬性：
 
- `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
 
- 除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。
+除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。
 
 ## <a name="customize-the-build-process"></a>自訂建置流程
 
@@ -159,9 +159,9 @@ ms.locfileid: "39382379"
 
 在 `AfterTransform` 中，您可以參考檔案清單：
 
--   GeneratedFiles：流程所寫入之檔案的清單。 對於已覆寫現有唯讀檔的檔案而言，%(GeneratedFiles.ReadOnlyFileOverwritten) 將會是 true。 您可以從原始檔控制中簽出這些檔案。
+- GeneratedFiles：流程所寫入之檔案的清單。 對於已覆寫現有唯讀檔的檔案而言，%(GeneratedFiles.ReadOnlyFileOverwritten) 將會是 true。 您可以從原始檔控制中簽出這些檔案。
 
--   NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。
+- NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。
 
 例如，您可以定義工作以檢查 GeneratedFiles。
 
@@ -179,9 +179,9 @@ ms.locfileid: "39382379"
 </ItemGroup>
 ```
 
- 一個可用於重新導向的資料夾為 `$(IntermediateOutputPath).`
+一個可用於重新導向的資料夾為 `$(IntermediateOutputPath).`
 
- 如果您指定輸出檔名，則會優先於範本中輸出指示詞指定的副檔名。
+如果您指定輸出檔名，則會優先於範本中輸出指示詞指定的副檔名。
 
 ```xml
 <ItemGroup>
@@ -193,7 +193,7 @@ ms.locfileid: "39382379"
 </ItemGroup>
 ```
 
- 您也要轉換在 VS 使用 轉換所有檔案，或執行單一檔案產生器的範本時，不建議指定 OutputFileName 和 OutputFilePath。 根據觸發轉換的方法，最後將會產生不同的檔案路徑。 這很容易混淆。
+您也要轉換在 VS 使用 轉換所有檔案，或執行單一檔案產生器的範本時，不建議指定 OutputFileName 和 OutputFilePath。 根據觸發轉換的方法，最後將會產生不同的檔案路徑。 這很容易混淆。
 
 ## <a name="add-reference-and-include-paths"></a>加入參考，並包含路徑
 
@@ -228,7 +228,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
- 在文字範本內，在範本指示詞中設定 `hostspecific`。 使用[參數](../modeling/t4-parameter-directive.md)指示詞取得值：
+在文字範本內，在範本指示詞中設定 `hostspecific`。 使用[參數](../modeling/t4-parameter-directive.md)指示詞取得值：
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -251,9 +251,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ##  <a name="msbuild"></a> 使用組件中的專案屬性和 include 指示詞
 
-Visual Studio 巨集，例如 $ （solutiondir） 不在 MSBuild 中運作。 您可以改用專案屬性。
+Visual Studio 巨集想 **$ （solutiondir)** 在 MSBuild 中無法運作。 您可以改用專案屬性。
 
-編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：
+編輯您 *.csproj*或是 *.vbproj*檔案，以定義專案屬性。 這個範例會定義名為的屬性**myLibFolder**:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -276,27 +276,25 @@ Visual Studio 巨集，例如 $ （solutiondir） 不在 MSBuild 中運作。 �
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>
 ```
 
- 這些指示詞會從 MSBuild 和 Visual Studio 裝載中的 T4parameterValues 取得值。
+這些指示詞會從 MSBuild 和 Visual Studio 裝載中的 T4parameterValues 取得值。
 
 ## <a name="q--a"></a>問與答
 
- **為什麼要轉換組建伺服器中的範本？我已經在 Visual Studio 中的範本之前轉換在簽入我的程式碼。**
+**為什麼要轉換組建伺服器中的範本？我已經在 Visual Studio 中的範本之前轉換在簽入我的程式碼。**
 
- 如果您更新包含的檔案或範本讀取的另一個檔案，Visual Studio 不會自動轉換檔案。 一切正在轉換範本，因為組建的一部分可確保是最新狀態。
+如果您更新包含的檔案或範本讀取的另一個檔案，Visual Studio 不會自動轉換檔案。 一切正在轉換範本，因為組建的一部分可確保是最新狀態。
 
- **其他選項為何有轉換文字範本嗎？**
+**其他選項為何有轉換文字範本嗎？**
 
--   [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可以用於命令指令碼。 在大部分情況下，它是您更輕鬆地使用 MSBuild 項目。
+- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可以用於命令指令碼。 在大部分情況下，它是您更輕鬆地使用 MSBuild 項目。
 
--   [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)由 Visual Studio 轉換。
+- [設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)由 Visual Studio 轉換。
 
--   [執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)轉換您的應用程式在執行階段。
+- [執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)轉換您的應用程式在執行階段。
 
 ## <a name="see-also"></a>另請參閱
 
-- 在 T4 MSbuild 範本中有好的指引：$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
+- 在 T4 MSbuild 範本中沒有正確的指引 *%programfiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)
-- [Oleg Sych： 了解 T4:MSBuild 整合](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
-- [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
