@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 18f528bf30f5d3aeb59a6564ccdef2e53bdc6ccb
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326059"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468640"
 ---
 # <a name="create-sharepoint-solutions"></a>建立 SharePoint 方案
   除了在 SharePoint Designer 中建立 SharePoint 應用程式之外，您也可以在 Visual Studio 中建立 SharePoint 應用程式。 Visual Studio 提供進階偵錯工具、IntelliSense、陳述式完成和專案範本等功能，可加速開發 SharePoint。 Visual Studio 也利用進階 .NET Framework 工具和語言。 您可以使用 Visual Basic 或 Visual C# 開發 SharePoint 專案，並且可以使用 JavaScript 開發 SharePoint 專案的應用程式。  
@@ -34,8 +34,8 @@ ms.locfileid: "36326059"
   
 |||  
 |-|-|  
-|![文件](../sharepoint/media/vs-icon-documentation.gif "文件")|**文件**<br /><br /> -   [開始使用&#40;Visual Studio 中的 SharePoint 程式開發&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [開發 sharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![文件](../sharepoint/media/vs-icon-documentation.gif "文件")|**精選的工作**<br /><br /> -   [逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和 tist](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [如何： 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![文件](../sharepoint/media/vs-icon-documentation.gif "文件")|**文件**<br /><br /> -   [開始使用&#40;Visual Studio 中的 SharePoint 程式開發&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![文件](../sharepoint/media/vs-icon-documentation.gif "文件")|**精選的工作**<br /><br /> -   [逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [如何： 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![逐步解說](../sharepoint/media/vs-icon-walkthroughs.gif "逐步解說")|**逐步解說**<br /><br /> -   [SharePoint 開發的逐步解說](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![程式碼範例](../sharepoint/media/vs-icon-codesamples.gif "程式碼範例")|**程式碼範例**<br /><br /> -   [SharePoint 程式開發範例](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint 開發人員下載](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![定型](../sharepoint/media/vs-icon-training.gif "訓練")|**訓練**<br /><br /> -   [了解 SharePoint 開發](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  
