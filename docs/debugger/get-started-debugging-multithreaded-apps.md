@@ -2,7 +2,7 @@
 title: 了解如何偵錯多執行緒應用程式
 description: 使用 平行堆疊 和 平行監看式的視窗，在 Visual Studio 中偵錯
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204215"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468679"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>開始偵錯在 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
@@ -47,9 +47,9 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  在 **專案類型**s 方塊中，按一下您所選擇的語言： **Visual C#**， **Visual c + +**，或**Visual Basic**。  
+2.  按一下您所選擇的語言： **Visual C#**， **Visual c + +**，或**Visual Basic**。  
   
-3.  在 **範本**方塊中，選擇**主控台應用程式**。  
+3.  底下**Windows 桌面**，選擇**主控台應用程式**。  
   
 4.  在 **名稱**方塊中，輸入名稱 MyThreadWalkthroughApp。  
   
@@ -304,7 +304,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
     現在，所有選取的執行緒會加上旗標。 現在，您可以篩選以顯示已標幟的執行緒。
   
-3.  在 [**平行監看式**] 視窗中，尋找**僅顯示已標幟的執行緒**按鈕![顯示已標幟的執行緒](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。  
+3.  在 [**平行監看式**] 視窗中，尋找**僅顯示已標幟的執行緒** 按鈕![顯示已標幟的執行緒](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。  
   
 4.  按一下 [**僅顯示已標幟的執行緒**] 按鈕。  
   
