@@ -1,7 +1,7 @@
 ---
 title: 偵錯和裝載處理序 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f584eb9217e46215405aa0786e5fa10e6034a9
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088898"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468256"
 ---
 # <a name="debugging-and-the-hosting-process"></a>偵錯和裝載處理序
 Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯工具功能，例如部分信任偵錯和設計階段運算式評估。 如果需要的話可以停用裝載處理序。 下列章節描述使用或不使用裝載處理序進行偵錯之間的一些差異。
+
+> [!NOTE]
+> 在 Visual Studio 2017 中，不再需要使用裝載處理序進行偵錯的選項，並已移除。 如需詳細資訊，請參閱 <<c0> [ 偵錯： Visual Studio 2017 目的是要速度向上您最喜歡的工作](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)。
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信任偵錯和 Click-Once 安全性
  部分信任偵錯需要裝載處理序。 如果您停用裝載處理序，即使在 [專案屬性]  的 [安全性] 頁面上啟用部分信任安全性，部分信任偵錯也無法運作。 如需詳細資訊，請參閱 <<c0> [ 如何： 偵錯部分信任應用程式](../debugger/how-to-debug-a-partial-trust-application.md)。

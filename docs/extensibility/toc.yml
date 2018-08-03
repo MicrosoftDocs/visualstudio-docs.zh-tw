@@ -425,8 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: 逐步解說︰發佈 Visual Studio 延伸模組
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 逐步解說︰透過命令列發佈 Visual Studio 延伸模組
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+    - name: 逐步解說：建立延伸模組組件
+      href: walkthough-create-extension-pack.md
     - name: 將相依性新增至 VSIX 套件
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: VSIX 套件的結構
