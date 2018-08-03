@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056794"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468526"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Form 建立標準的 Windows 應用程式。 您可以完成此逐步解說使用 Visual Basic、 C# 或 c + +。  
@@ -51,27 +51,25 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
 2.  在 [專案類型] 窗格中，開啟**Visual Basic**， **Visual C#**，或**Visual c + +** 節點，然後  
   
-    1.  Visual Basic 或 Visual C#，請選取**Windows**節點，然後選取**Windows Form 應用程式**中**範本**窗格。  
+    1.  Visual Basic 或 Visual C#，請選取**Windows 桌面** > **Windows 表單應用程式**。  
   
-    2.  Visual c + + 中，選取**CLR**節點，然後選取**Windows Form 應用程式**中**範本**窗格...  
+    2.  Visual c + + 中，選取**Windows 桌面應用程式**。  
   
-3.  在 **範本**窗格中，選取**Windows 應用程式**。  
+3.  在 **名稱**方塊中，為專案指定唯一的名稱 (例如 Walkthrough_SimpleDebug)。  
   
-4.  在 **名稱**方塊中，為專案指定唯一的名稱 (例如 Walkthrough_SimpleDebug)。  
-  
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      Visual Studio 會建立新的專案，並在 Windows Form 設計工具中顯示新的表單。 如需詳細資訊，請參閱 < [Windows Form 設計工具](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
-6.  在 **檢視**功能表上，選取**工具箱**。  
+5.  在 **檢視**功能表上，選取**工具箱**。  
   
      [工具箱] 便會開啟。 如需詳細資訊，請參閱[工具箱](../ide/reference/toolbox.md)。  
   
-7.  在 工具箱 中，按一下** 按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。  
+6.  在 工具箱 中，按一下** 按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。  
   
-8.  在 [工具箱] 中，按一下**TextBox**控制項，將控制項拖曳至表單的設計介面。 卸除**TextBox**表單上。  
+7.  在 [工具箱] 中，按一下**TextBox**控制項，將控制項拖曳至表單的設計介面。 卸除**TextBox**表單上。  
   
-9. 表單設計介面上，按兩下按鈕。  
+8. 表單設計介面上，按兩下按鈕。  
   
      這會帶您前往字碼頁。 資料指標應該在`button1_Click`。  
   

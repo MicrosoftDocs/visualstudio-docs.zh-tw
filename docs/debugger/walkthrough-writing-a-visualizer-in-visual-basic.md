@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058694"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468760"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。  
@@ -39,9 +39,9 @@ ms.locfileid: "37058694"
   
 1.  在上**檔案**功能表上，選擇**新增**，按一下 **新專案**。  
   
-2.  在 **新的專案**對話方塊的 **專案類型**s，按一下  **Visual Basic**。  
+2.  在 **新的專案**對話方塊中，選取**Visual Basic**。  
   
-3.  在 **範本**方塊中，按一下**類別庫**。  
+3.  底下 **.NET Standard**，按一下**類別庫**。  
   
 4.  在 **名稱**方塊中，輸入適當的名稱，為類別庫，例如**MyFirstVisualizer**。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "37058694"
   
 1.  在上**檔案**功能表上，按一下**新增**，然後按一下 **新專案**。  
   
-2.  在 **加入新的專案**對話方塊中，於**範本**方塊中，按一下**主控台應用程式**。  
+2.  在 **加入新的專案**對話方塊中，選取**Visual Basic**，然後按一下**主控台應用程式**。  
   
 3.  在 **名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如**MyTestConsole**。  
   
