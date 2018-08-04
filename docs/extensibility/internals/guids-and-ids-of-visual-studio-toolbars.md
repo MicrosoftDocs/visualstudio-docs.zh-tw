@@ -1,5 +1,5 @@
 ---
-title: Guid 和 Id 的 Visual Studio 工具列 |Microsoft 文件
+title: Visual Studio 工具列的 Guid 和 Id |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,27 +19,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133983"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499002"
 ---
-# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具列
-本主題列舉的 GUID 和 ID 值的 Visual Studio 整合式的開發環境 (IDE) 中包含的工具列和包含的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 識別碼和 Guid 的工具列
+本主題列舉的 GUID 和 ID 值會包含在 Visual Studio 整合式的開發環境 (IDE) 中的工具列，而且包含的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
 > [!NOTE]
->  許多的 Visual Studio 工具列不由 Visual Studio 中，而且其 GUID 定義並不是公用的識別碼值。 本主題列出 Visual Studio SDK.vsct 檔案中定義的工具列。  
+>  Visual studio 工具列的許多未定義的 Visual Studio 和其 GUID 和 ID 值不是公用。 本主題列出在 Visual Studio SDK 中定義的工具列 *.vsct*檔案。  
   
- 如需如何使用 IDE.vsct 檔案中定義的物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 如需有關如何使用 IDE 中所定義的物件 *.vsct*檔，請參閱[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- Visual Studio IDE 所提供的預設工具列會使用 GUID `guidSHLMainMenu`，指定，否則使用 guid: id 語法除外。  
+ Visual Studio IDE 所提供的預設工具列會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用`GUID:ID`語法。  
   
 ## <a name="ide-toolbars"></a>IDE 工具列  
- 下列工具列會提供在 Visual Studio IDE。 可以顯示的工具列上選取它們**工具列** 子功能表**工具**功能表。 本節中不包含的工具視窗的工具列。  
+ 下列工具列會提供 Visual Studio IDE。 可以請選取圖形上顯示工具列**工具列**子功能表中的**工具**功能表。 在本節中不包含在工具視窗的工具列。  
   
- 只有群組可以直接從工具列下降。 若要加入群組，設定其父代的 GUID 和 ID 的工具列。 若要將按鈕加入至工具列，設定其父群組工具列上。  
+ 只有群組可以直接從工具列下降。 若要加入群組，設定其父代的 GUID 和 ID 的工具列。 若要加入至工具列的按鈕，設定其父群組工具列上。  
   
 |工具列|識別碼|  
 |-------------|--------|  
@@ -50,7 +50,7 @@ ms.locfileid: "31133983"
 |偵錯位置|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>特殊的工具列  
- 這些工具列會由 Visual Studio IDE 中，但可提供特殊的功能，且未裝載命令群組。  
+ 這些工具列由 Visual Studio IDE 中，但提供的特殊函式，且未裝載命令群組。  
   
 |工具列|識別碼|  
 |-------------|--------|  
@@ -60,19 +60,19 @@ ms.locfileid: "31133983"
 |XML 資料|IDM_VS_TOOL_DATA|  
   
 ## <a name="groups-on-the-ide-toolbars"></a>在 IDE 工具列上的群組  
- 若要將按鈕加入到 [標準] 工具列中，設定下列群組的其中一個為其父系。 群組會依照為父工具列。  
+ 若要將按鈕加入至標準工具列中，設定下列群組的其中一個做為其父系。 為父工具列依排序的群組。  
   
-### <a name="standard-toolbar-groups"></a>[標準] 工具列的群組  
+### <a name="standard-toolbar-groups"></a>標準 工具列中的群組  
   
 |名稱|識別碼|  
 |----------|--------|  
-|儲存檔案/開啟|IDG_VS_TOOLSB_SAVEOPEN|  
+|儲存/開啟|IDG_VS_TOOLSB_SAVEOPEN|  
 |剪下/複製|IDG_VS_TOOLSB_CUTCOPY|  
 |復原/取消復原|IDG_VS_TOOLSB_UNDOREDO|  
 |執行/組建|IDG_VS_TOOLSB_RUNBUILD|  
 |搜尋|IDG_VS_TOOLSB_SEARCH|  
 |Windows|IDG_VS_TOOLSB_WINDOWS|  
-|新的視窗|IDG_VS_TOOLSB_NEWWINDOWS|  
+|新的 windows|IDG_VS_TOOLSB_NEWWINDOWS|  
 |載入/儲存|IDG_VS_WINDOWUI_LOADSAVE|  
 |量測計|IDG_VS_TOOLSB_GAUGE|  
   
@@ -83,7 +83,7 @@ ms.locfileid: "31133983"
 |建置列|IDG_VS_BUILDBAR|  
 |取消|IDG_VS_BUILD_CANCEL|  
   
-### <a name="text-editor-toolbar-groups"></a>文字編輯器 工具列上的群組  
+### <a name="text-editor-toolbar-groups"></a>文字編輯器工具列群組  
   
 |名稱|識別碼|  
 |----------|--------|  
@@ -92,7 +92,7 @@ ms.locfileid: "31133983"
 |註解|IDG_VS_EDITTOOLBAR_COMMENT|  
 |書籤|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-### <a name="debug-toolbar-groups"></a>偵錯 工具列的群組  
+### <a name="debug-toolbar-groups"></a>偵錯工具列群組  
   
 |名稱|識別碼|  
 |----------|--------|  
@@ -107,11 +107,11 @@ ms.locfileid: "31133983"
 |----------|--------|  
 |偵錯位置|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
-## <a name="tool-window-toolbars"></a>工具視窗工具列  
- 工具列會顯示直接在 IDE 中或在工具視窗例如**方案總管 中**。 因為沒有.vsct 檔案中定義工具視窗，工具視窗工具列中沒有已定義父代。 相反地，它們都放在程式碼中。 下表顯示在 ide 中工具視窗顯示的工具列和它們所包含的命令群組。  
+## <a name="tool-window-toolbars"></a>工作視窗工具列  
+ 工具列可以直接在 IDE 中或出現在工具視窗中這類**方案總管 中**。 因為工具視窗中未定義 *.vsct*檔案，工具視窗工具列執行未定義父代。 相反地，它們都放在程式碼中。 下表顯示在 IDE 中，工具視窗會顯示的工具列和其所包含的命令群組。  
   
 > [!NOTE]
->  工具列和群組使用的 GUID `guidSHLMainMenu`，指定，否則使用 guid: id 語法除外。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。  
+>  工具列和群組會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用 guid: id 的語法。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。  
   
 |工具視窗|工具列|群組|  
 |-----------------|-------------|------------|  
@@ -138,6 +138,6 @@ ms.locfileid: "31133983"
 |處理序|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
 ## <a name="see-also"></a>另請參閱  
- [功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
- [新增工具列加入工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [將功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+ [將工具列加入工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
