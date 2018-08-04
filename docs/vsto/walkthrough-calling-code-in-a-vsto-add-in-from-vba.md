@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼 |Microsoft 文件
+title: 逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513617"
 ---
-# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-the-vsto-add-in-project"></a>建立 VSTO 增益集專案  
+## <a name="create-the-vsto-add-in-project"></a>建立 VSTO 增益集專案  
  第一步是建立 Excel 的 VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔，並將 [ExcelImportData]  專案加入 [方案總管] 。  
   
-## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別  
+## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義的類別，您可以公開給其他 Office 方案  
  本逐步解說的目的是為了從 VBA 程式碼在您的 VSTO 增益集中呼叫 `ImportData` 類別的 `AddInUtilities` 方法。 這個方法會將字串寫入至使用中工作表的儲存格 A1。  
   
- 若要將 `AddInUtilities` 類別公開給其他 Office 方案，您必須使該類別成為公用類別，且為 COM 可見。 您也必須公開類別中的 [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) 介面。 下列程序中的程式碼會示範符合這些需求的其中一種方式。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ 若要將 `AddInUtilities` 類別公開給其他 Office 方案，您必須使該類別成為公用類別，且為 COM 可見。 您也必須公開[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)類別中的介面。 下列程序中的程式碼會示範符合這些需求的其中一種方式。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
-#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別  
+### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別  
   
 1.  在 [專案]  功能表上，按一下 [加入類別] 。  
   
@@ -83,12 +84,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     這個程式碼讓 `AddInUtilities` 類別為 COM 可見，並將 `ImportData` 方法加入這個類別。 為了公開 [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) 介面， `AddInUtilities` 類別也會具有 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性，並實作為 COM 可見的介面。  
+     這個程式碼讓 `AddInUtilities` 類別為 COM 可見，並將 `ImportData` 方法加入這個類別。 若要公開[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)介面`AddInUtilities`類別也有<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性，並實作為 COM 可見介面  
   
-## <a name="exposing-the-class-to-other-office-solutions"></a>將類別公開給其他 Office 方案  
+## <a name="expose-the-class-to-other-office-solutions"></a>類別公開給其他 Office 方案  
  若要將 `AddInUtilities` 類別公開給其他 Office 方案，請覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 方法。 在您的覆寫中，傳回 `AddInUtilities` 類別的執行個體。  
   
-#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>將 AddInUtilities 類別公開給其他 Office 方案  
+### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>將 AddInUtilities 類別公開給其他 Office 方案  
   
 1.  展開 [方案總管] 中的 [Excel] 。  
   
@@ -103,19 +104,19 @@ ms.lasthandoff: 04/16/2018
   
      確認方案建置無誤。  
   
-## <a name="testing-the-vsto-add-in"></a>測試 VSTO 增益集  
- 您可以從多種不同類型的 Office 方案呼叫 `AddInUtilities` 類別。 在本逐步解說中，您會在 Excel 活頁簿中使用 VBA 程式碼。 如需您也可以使用之其他類型 Office 方案的詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+## <a name="test-the-vsto-add-in"></a>測試 VSTO 增益集  
+ 您可以從多種不同類型的 Office 方案呼叫 `AddInUtilities` 類別。 在本逐步解說中，您會在 Excel 活頁簿中使用 VBA 程式碼。 如需其他類型 Office 方案，您也可以使用的詳細資訊，請參閱[從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
-#### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
+### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
   
-1.  請按 F5 執行您的專案。  
+1.  按下**F5**執行您的專案。  
   
 2.  在 Excel 中，將現用活頁簿儲存為「Excel 啟用巨集的活頁簿」 (*.xlsm)。 將它儲存在方便取用的位置，例如桌面。  
   
 3.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 [程式碼]  群組中，按一下 [Visual Basic] 。  
   
@@ -125,9 +126,9 @@ ms.lasthandoff: 04/16/2018
   
      `ThisWorkbook` 物件的程式碼檔隨即開啟。  
   
-6.  將下列 VBA 程式碼加入程式碼檔案。 此程式碼會先取得 COMAddIn 物件，代表**ExcelImportData** VSTO 增益集。 然後，程式碼會使用 COMAddIn 物件的物件屬性來呼叫`ImportData`方法。  
+6.  將下列 VBA 程式碼加入程式碼檔案。 此程式碼會先取得 COMAddIn 物件，表示**ExcelImportData** VSTO 增益集。 然後，程式碼會使用 COMAddIn 物件的物件屬性來呼叫`ImportData`方法。  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim addIn As COMAddIn  
         Dim automationObject As Object  
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-7.  按 F5。  
+7.  請按 **F5**。  
   
 8.  請確認新的 **Imported Data** 工作表是否已加入至活頁簿。 此外，請確認儲存格 A1 是否包含字串 **This is my data**。  
   
@@ -146,15 +147,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>後續步驟  
  您可以從下列主題進一步了解 VSTO 增益集的程式設計：  
   
--   使用 `ThisAddIn` 類別來自動化主應用程式，並執行 VSTO 增益集專案中的其他工作。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+-   使用 `ThisAddIn` 類別來自動化主應用程式，並執行 VSTO 增益集專案中的其他工作。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)和[How to： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+-   在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)並[如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
--   在 VSTO 增益集中自訂功能區。 如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)和[How to： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+-   自訂功能區中的 VSTO 增益集。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)並[如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [在 VSTO 增益集中呼叫程式碼，從其他 Office 方案](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
+ [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   

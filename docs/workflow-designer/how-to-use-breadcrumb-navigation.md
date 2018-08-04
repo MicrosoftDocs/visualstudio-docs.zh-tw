@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757615"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512274"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>HOW TO：使用階層連結巡覽
 
@@ -29,7 +29,7 @@ ms.locfileid: "36757615"
 
 ## <a name="using-breadcrumb-navigation"></a>使用階層連結巡覽
 
-1.  按兩下已按下的活動變更根活動的工作流程設計工具的活動。 按下後的活動就會完全於根目錄展開，而且其祖系會顯示於階層連結列。 有時，這會稱為向內切入或向外切出活動。
+1.  按兩下已按下的活動變更根活動的工作流程設計工具的活動。 按下的活動會完全展開根目錄和其祖系會顯示在階層連結列中。 有時，這會稱為向內切入或向外切出活動。
 
 2.  若要巡覽至目前根活動的祖系，請按一下階層連結列上的活動。
 

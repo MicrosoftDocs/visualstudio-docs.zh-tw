@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231489"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512249"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -97,7 +97,8 @@ VSIX 格式所做變更包括：
   * **HKLM\Software\Microsoft\VisualStudio\{版本}**: MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
   * **HKCU\Software\Microsoft\VisualStudio\{版本}**： 來儲存使用者專屬設定 Visual Studio 所建立的登錄機碼。
   * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**： 從一份 Visual Studio HKLM 索引鍵，再加上的登錄機碼合併 *.pkgdef*延伸模組的檔案。
-* 若要減少對登錄的影響，Visual Studio 現在會使用[RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx)將登錄機碼下的私用二進位檔案中的函式 *[VSAPPDATA]\privateregistry.bin*。 只有非常少數的 Visual Studio 特定索引鍵會保留在系統登錄中。
+* 若要減少對登錄的影響，Visual Studio 現在會使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)將登錄機碼下的私用二進位檔案中的函式 *[VSAPPDATA]\privateregistry.bin*。 只有非常少數的 Visual Studio 特定索引鍵會保留在系統登錄中。
+
 * 在 Visual Studio 處理序內執行的現有程式碼不會受到影響。 Visual Studio 會在 HKCU Visual Studio 特定機碼下的所有登錄作業重新都導向的私人登錄。 讀取和寫入登錄中的其他位置將會繼續使用系統登錄。
 * 外部程式碼必須載入，並從這個檔案的 Visual Studio 登錄項目讀取。
 

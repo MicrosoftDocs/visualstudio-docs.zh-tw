@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3082ca9f03ddd56f000fcaea18525c0f61903512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f97de4818e6be66b4ee23d97d8995dfa30533985
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920795"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510500"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 請勿使用弱式密碼編譯演算法
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "31920795"
 
 -   若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。
 
--   SHA1 或 RIPEMD160 雜湊函式，使用在[sha-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)系列 (例如<xref:System.Security.Cryptography.SHA512>， <xref:System.Security.Cryptography.SHA384>， <xref:System.Security.Cryptography.SHA256>)。
+-   SHA1 或 RIPEMD160 雜湊函式，使用中[sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms)系列 (例如<xref:System.Security.Cryptography.SHA512>， <xref:System.Security.Cryptography.SHA384>， <xref:System.Security.Cryptography.SHA256>)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當資料所需的保護層級不需要安全性保證時，隱藏此規則的警告。

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078374"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512954"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何： 發行已啟用視覺化樣式的 WPF 應用程式
 視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](/windows/desktop/Controls/visual-styles-overview)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  在您執行這些步驟之後，您可以移動已發行的檔案到您從中安裝應用程式的終端使用者的位置。 如果您想要經常更新方案，您可以將這些命令移至 指令碼，並執行指令碼每次您發行新版本。  
   
-## <a name="see-also"></a>另請參閱  
- [疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [視覺化樣式的概觀](/windows/desktop/Controls/visual-styles-overview)   
- [啟用視覺化樣式](https://msdn.microsoft.com/library/bb773175.aspx)   
- [命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>另請參閱
+
+-[疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [視覺化樣式的概觀](/windows/desktop/Controls/visual-styles-overview)
+- [啟用視覺化樣式](/windows/desktop/Controls/cookbook-overview)
+- [命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)
