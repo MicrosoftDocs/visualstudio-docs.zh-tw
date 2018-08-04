@@ -1,5 +1,5 @@
 ---
-title: 在舊版語言服務的自訂文件屬性 |Microsoft 文件
+title: 舊版語言服務中的自訂文件屬性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132491"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499080"
 ---
-# <a name="custom-document-properties-in-a-legacy-language-service"></a>在舊版語言服務的自訂文件屬性
-文件屬性可顯示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的來源檔案相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。  
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
+中可顯示文件屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。  
   
 ## <a name="discussion"></a>討論  
- 如果您的語言需要自訂的文件屬性，您必須衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，並在衍生類別中實作必要的屬性。  
+ 如果您的語言需要自訂文件屬性，您必須在衍生類別，以從<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別和衍生類別上實作必要的屬性。  
   
- 此外，文件屬性通常會儲存原始程式檔本身中。 這需要語言服務剖析原始程式檔中顯示的屬性資訊**屬性**視窗，以及更新來源檔案變更的文件屬性時**屬性**視窗。  
+ 此外，文件屬性通常會儲存在原始程式檔本身。 需要剖析原始程式檔中顯示的屬性資訊的語言服務**屬性** 視窗，並更新原始程式檔，當變更中的文件屬性**屬性**視窗。  
   
-## <a name="customizing-the-documentproperties-class"></a>自訂 DocumentProperties 類別  
- 若要支援自訂文件屬性，您必須衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，然後將您需要任意數目的屬性。 您也應該提供組織中的使用者屬性**屬性**視窗顯示中。 如果屬性只有`get`存取子時，它會顯示為以唯讀狀態中**屬性**視窗。 如果屬性同時具有`get`和`set`存取子，屬性也可以在更新**屬性**視窗。  
+## <a name="customize-the-documentproperties-class"></a>自訂 DocumentProperties 類別  
+ 若要支援自訂文件屬性，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，然後將您所需要的屬性。 您也應該提供組織中的使用者屬性**屬性**視窗中顯示。 如果屬性只能具有`get`存取子，就會以唯讀模式中顯示出來**屬性**視窗。 如果屬性同時具有`get`並`set`存取子，屬性也可以在更新**屬性**視窗。  
   
 ### <a name="example"></a>範例  
- 以下是範例類別衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>，顯示兩個屬性，檔案名稱和描述。 更新屬性時，自訂方法上的<xref:Microsoft.VisualStudio.Package.LanguageService>類別呼叫以將屬性寫至原始程式檔。  
+ 以下是範例類別衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>，顯示兩個屬性：`Filename`和`Description`。 更新屬性時，自訂的方法上<xref:Microsoft.VisualStudio.Package.LanguageService>類別呼叫以將屬性寫至原始程式檔。  
   
 ```csharp  
 using System.ComponentModel;  
@@ -123,8 +123,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-the-custom-documentproperties-class"></a>具現化自訂 DocumentProperties 類別  
- 若要具現化您的自訂文件屬性類別，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>方法的版本中<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回的單一執行個體您<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別。  
+## <a name="instantiate-the-custom-documentproperties-class"></a>具現化自訂 DocumentProperties 類別  
+ 若要具現化您的自訂文件屬性類別，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>方法，在您的版本<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回的單一執行個體您<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別。  
   
 ### <a name="example"></a>範例  
   
@@ -151,19 +151,19 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="properties-in-the-source-file"></a>原始程式檔中的屬性  
- 因為文件屬性通常是原始程式檔，值會儲存原始程式檔本身中。 這需要提供支援的語言剖析器或掃描器來定義這些屬性。 例如，XML 文件的內容會儲存在根節點。 根節點上的值會修改時**屬性**視窗值會變更，並在編輯器中更新的根節點。  
+ 由於文件屬性通常特有的原始程式檔，值會儲存原始程式檔本身。 這需要支援的語言剖析器或掃描器來定義這些屬性。 比方說，XML 文件的內容會儲存在根節點上。 上的根節點的值會修改**屬性**視窗值變更，並在編輯器中更新的根節點。  
   
 ### <a name="example"></a>範例  
- 這個範例會儲存"Filename"和 「 描述 」 中的前兩行的原始程式檔，做為內嵌在特殊的註解標頭中的屬性：  
+ 此範例會將屬性儲存`Filename`和`Description`在前兩個原始程式檔行中，內嵌在特殊的註解標頭為：  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- 此範例示範兩種方法來取得和設定從來源檔案的前兩個多行的文件屬性，如何屬性如果在使用者直接修改原始程式檔就會更新所需。 `SetPropertyValue`顯示下面是相同的範例中的方法呼叫其中一個從`TestDocumentProperties`類別中的 < 自訂 DocumentProperties 類別 」 一節所示。  
+ 這個範例示範兩種方法來取得和設定從原始程式檔的前兩行的文件屬性，方式更新屬性，如果使用者直接修改原始程式檔所需。 `SetPropertyValue`方法，顯示下面是相同的範例中呼叫其中一個來自`TestDocumentProperties`類別中所示*自訂 DocumentProperties 類別*一節。  
   
- 這個範例會使用掃描器來判斷前兩行中語彙基元的類型。 這個範例是僅供說明。 這種情況下的更常見方法是剖析成所謂剖析樹狀目錄樹狀結構的每個節點其中包含特定語彙基元的相關資訊的來源檔案。 根節點會包含文件屬性。  
+ 此範例會使用掃描器來判斷前兩行中語彙基元的型別。 這個範例是僅供示範用途。 這種情況的更常見方法是剖析原始程式檔到所謂剖析樹狀結構其中樹狀結構的每個節點都包含特定權杖的相關資訊。 根節點會包含文件屬性。  
   
 ```csharp  
 using System.ComponentModel;  

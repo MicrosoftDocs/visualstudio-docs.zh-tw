@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081679"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499386"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -111,26 +111,6 @@ textDocument/rename | 是
 接下來，瀏覽至建立新的空白 VSIXProject**檔案** > **新專案** > **Visual C#**  >  **擴充性** > **VSIX 專案**:
 
 ![建立 vsix 專案](media/lsp-vsix-project.png)
-
-針對預覽版本中，VS LSP 會支援 VSIX 的形式 ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview))。 延伸模組的開發人員想要建立使用 LSP 語言伺服器擴充功能必須依賴此 VSIX。 因此，若要安裝語言伺服器擴充功能的客戶**必須先安裝語言伺服器通訊協定的用戶端預覽 VSIX。**
-
-若要定義 VSIX 的相依性，開啟您的 VSIX 的 VSIX 資訊清單設計工具 (按兩下*source.extension.vsixmanifest*專案中的檔案) 並瀏覽至**相依性**:
-
-![將參考加入至語言伺服器通訊協定用戶端](media/lsp-reference-lsp-dependency.png)
-
-建立新的相依性，如下所示：
-
-![定義語言伺服器通訊協定用戶端相依性](media/lsp-define-lsp-dependency.png)
-
-* **來源**： 手動定義
-* **名稱**： 語言伺服器通訊協定用戶端預覽
-* **識別項**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **版本範圍**: [1.0,2.0)
-* **解析的相依性有何**： 使用者安裝
-* **下載 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **下載 URL**必須填入讓安裝程式延伸模組的使用者了解如何安裝必要的相依性。
 
 ### <a name="language-server-and-runtime-installation"></a>伺服器和執行階段安裝的語言
 

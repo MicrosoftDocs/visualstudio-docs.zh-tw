@@ -1,5 +1,5 @@
 ---
-title: 檔案狀態碼列舉值 |Microsoft 文件
+title: 檔案狀態碼列舉值 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128162"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498164"
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉值
-`SccStatus`列舉值包含具名常數的值在原始檔控制系統中指定檔案的狀態。 這個列舉型別由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)和`POPLISTFUNC`回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
+`SccStatus`列舉值包含具名的常數值會指定在原始檔控制系統中的檔案的狀態。 這個列舉型別由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)並`POPLISTFUNC`回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,22 +53,22 @@ enum SccStatus {
   
 ## <a name="members"></a>成員  
  SCC_STATUS_INVALID  
- 無法取得狀態。請勿依賴它。  
+ 無法取得狀態;請勿依賴它。  
   
  SCC_STATUS_NOTCONTROLLED  
  檔案不在原始檔控制中。  
   
  SCC_STATUS_CONTROLLED  
- 檔案是在原始檔控制之下。  
+ 檔案是在原始檔控制。  
   
  SCC_STATUS_CHECKEDOUT  
- 簽出目前的使用者在本機磁碟上。  
+ 簽出目前的使用者，在本機磁碟上。  
   
  SCC_STATUS_OUTOTHER  
  檔案是由其他使用者簽出。  
   
  SCC_STATUS_OUTEXCLUSIVE  
- 檔案已獨佔簽出。  
+ 檔案是以獨佔方式簽出。  
   
  SCC_STATUS_OUTMULTIPLE  
  檔案是由一個以上的使用者簽出。  
@@ -80,22 +80,22 @@ enum SccStatus {
  已從專案刪除檔案。  
   
  SCC_STATUS_LOCKED  
- 檔案已鎖定。允許任何多個版本。  
+ 鎖定檔案;允許任何其他版本。  
   
  SCC_STATUS_MERGED  
- 檔案已合併，但尚未固定/驗證。  
+ 檔案已合併，但尚未修正/驗證。  
   
  SCC_STATUS_SHARED  
  在專案之間共用檔案。  
   
  SCC_STATUS_PINNED  
- 共用檔案時，明確的版本。  
+ 明確的版本被共用檔案。  
   
  SCC_STATUS_MODIFIED  
  檔案已修改/中斷/違反。  
   
  SCC_STATUS_OUTBYUSER  
- 檔案是由目前使用者簽出。  
+ 檔案是由目前的使用者簽出。  
   
  SCC_STATUS_NOMERGE  
  檔案永遠不會與合併，並不需要儲存 GET 之前。  

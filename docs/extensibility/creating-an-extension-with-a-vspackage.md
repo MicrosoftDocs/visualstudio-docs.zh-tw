@@ -1,5 +1,5 @@
 ---
-title: 建立 VSPackage 擴充功能 |Microsoft 文件
+title: Creating an Extension with VSPackage |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,35 +11,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 706cdcd26df18af9ccd79b5bf83890c47b1faf57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109447"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500770"
 ---
-# <a name="creating-an-extension-with-a-vspackage"></a>建立 VSPackage 擴充功能
-本逐步解說將示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得 UI Shell 服務才能顯示訊息方塊。  
+# <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立擴充功能
+本逐步解說會示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得，UI Shell 服務以顯示訊息方塊。  
   
 ## <a name="prerequisites"></a>必要條件  
- 啟動 Visual Studio 2015 中，請勿從 「 下載中心 」 未安裝 Visual Studio SDK。 它是包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-vspackage"></a>建立 VSPackage  
+## <a name="create-a-vspackage"></a>建立 VSPackage  
   
-1.  建立 VSIX 專案，名為**FirstPackage**。 您可以找到 VSIX 專案範本，在**新專案**對話方塊底下**Visual C# / 擴充性**。  
+1.  建立 VSIX 專案，名為**FirstPackage**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。  
   
-2.  當專案開啟時，加入名為的 Visual Studio 封裝項目範本**FirstPackage**。 在**方案總管 中**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在**加入新項目**對話方塊中，移至**Visual C# / 擴充性**選取**Visual Studio Package**。 在**名稱**視窗的底部欄位中，將命令檔名稱變更為**FirstPackage.cs**。  
+2.  當專案開啟時，新增名為 Visual Studio 封裝項目範本**FirstPackage**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstPackage.cs*。  
   
 3.  建置此專案並開始偵錯。  
   
-     Visual Studio 的實驗執行個體隨即出現。 如需實驗執行個體的詳細資訊，請參閱[實驗執行個體的](../extensibility/the-experimental-instance.md)。  
+     Visual Studio 的實驗執行個體隨即出現。 如需詳細的實驗執行個體的詳細資訊，請參閱[實驗的執行個體](../extensibility/the-experimental-instance.md)。  
   
-4.  在實驗執行個體中，開啟**工具 / 擴充功能和更新**視窗。 您應該會看到**FirstPackage**這裡擴充功能。 (如果您開啟**擴充功能和更新**在 Visual Studio 工作執行個體，您將不會看到**FirstPackage**)。  
+4.  在實驗執行個體中，開啟**工具** > **擴充功能和更新**視窗。 您應該會看到**FirstPackage**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstPackage**)。  
   
-## <a name="loading-the-vspackage"></a>載入 VSPackage  
- 此時擴充功能無法載入，因為沒有與載入它的項目。 （按一下開啟工具視窗的功能表命令），其 UI 或藉由指定特定 UI 內容中，應該載入 VSPackage 互動時，您通常可以載入擴充功能。 如需載入 Vspackage 和 UI 內容的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。 在此程序，我們將示範如何載入 VSPackage，開啟方案時。  
+## <a name="load-the-vspackage"></a>載入 VSPackage  
+ 此時的延伸模組未載入，因為沒有任何會導致它載入。 互動 （按一下功能表命令，開啟 [工具] 視窗），其 UI 或藉由指定特定的 UI 內容中，應該載入 VSPackage 時，您通常可以載入延伸模組。 如需有關載入 Vspackage 和 UI 內容的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。 此程序，我們將示範如何載入 VSPackage，開啟方案時。  
   
-1.  開啟 FirstPackage.cs 檔案。 尋找 FirstPackage 類別的宣告。 以下列取代現有的屬性：  
+1.  開啟*FirstPackage.cs*檔案。 尋找宣告`FirstPackage`類別。 取代下列項目取代現有的屬性：  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -49,7 +49,7 @@ ms.locfileid: "31109447"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  讓我們加入可讓我們知道已載入 VSPackage 的訊息。 我們使用 VSPackage 的 initialize （） 方法若要這樣做，因為只有之後已設置 VSPackage，您可以取得 Visual Studio 服務。 (如需取得服務的詳細資訊，請參閱[How to： 取得服務](../extensibility/how-to-get-a-service.md)。)FirstPackage initialize （） 方法取代程式碼可取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
+2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage 的`Initialize()`方法來這樣做，因為您可以取得 Visual Studio 服務已設置 VSPackage 時，才。 (如需有關如何取得服務的詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。)取代`Initialize()`方法`FirstPackage`取得的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
   
     ```csharp  
     protected override void Initialize()  
@@ -76,4 +76,4 @@ ms.locfileid: "31109447"
   
 3.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-4.  在實驗執行個體中開啟方案。 您應該會看到訊息方塊，表示**initialize 內第一個套件**。
+4.  在實驗執行個體中開啟方案。 您應該會看到出現訊息方塊，指出**第一個套件內 initialize （)**。

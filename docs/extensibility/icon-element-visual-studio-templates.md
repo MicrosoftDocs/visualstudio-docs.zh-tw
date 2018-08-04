@@ -1,5 +1,5 @@
 ---
-title: 圖示項目 （Visual Studio 範本） |Microsoft 文件
+title: Icon 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129848"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499288"
 ---
-# <a name="icon-element-visual-studio-templates"></a>圖示項目 (Visual Studio 範本)
-指定的路徑和檔名做為圖示時，它會出現在 映像檔的**新專案**或**加入新項目**對話方塊範本。  
+# <a name="icon-element-visual-studio-templates"></a>Icon 元素 （Visual Studio 範本）
+指定的路徑和檔名做為圖示時，就會出現在其中一個映像檔的**新的專案**或**加入新項目**對話方塊中，範本。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -41,35 +41,35 @@ ms.locfileid: "31129848"
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Package`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 封裝的 GUID 識別碼。|  
-|`ID`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 的資源 id。|  
+|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
+|`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
- 需要文字值，除非`Package`和`ID`屬性可用。  
+ 需要的文字值，除非`Package`和`ID`屬性使用。  
   
- 文字提供路徑和檔案的名稱會出現在範本圖示**新專案** 對話方塊。  
+ 文字提供的路徑和檔案名稱會出現在 範本 圖示**新的專案** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
  `Icon` 是 `TemplateData` 的必要子項目。  
   
 ## <a name="example"></a>範例  
- 下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
+ 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -97,4 +97,4 @@ ms.locfileid: "31129848"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+ [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Guid 和 Id 的 Visual Studio 功能表 |Microsoft 文件
+title: Visual Studio 功能表的 Guid 和 Id |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,22 +18,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163f7b81295468a69cfb28959f608a21f94a4a99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134210"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499935"
 ---
-# <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 功能表
-本主題列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
+# <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 識別碼和 Guid 功能表
+這篇文章會列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
- 如需如何使用.vsct 檔案中定義的整合式的開發環境 (IDE) 物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 如需如何使用整合式的開發環境 (IDE) 物件中所定義的詳細資訊 *.vsct*檔，請參閱[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- 功能表和 Visual Studio 功能表列上的群組使用的 GUID `guidSHLMainMenu`。 在功能表列本身的識別碼為`IDM_VS_TOOL_MAINMENU`。  
+ 功能表和 Visual Studio 功能表列上的群組會使用 GUID `guidSHLMainMenu`。 在功能表列本身的 ID 為`IDM_VS_TOOL_MAINMENU`。  
   
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>在 Visual Studio 功能表列上的群組  
- 若要加入功能表的功能表列時，設定其中一個群組做為其父系。  
+ 若要加入功能表的功能表列中，設定其中一個群組作為其父代。  
   
 |群組|識別碼|  
 |-----------|--------|  
@@ -47,7 +47,7 @@ ms.locfileid: "31134210"
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|  
   
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>在 Visual Studio 功能表列上的功能表  
- 將群組新增至現有的 Visual Studio 功能表中，設定下列功能表的其中一個為其父系。 這份清單中不包含子功能表。  
+ 若要將群組新增至現有的 Visual Studio 功能表中，設定下列功能表的其中一個做為其父系。 這份清單中不包含子功能表。  
   
 |功能表|識別碼|  
 |----------|--------|  
@@ -65,7 +65,7 @@ ms.locfileid: "31134210"
 |說明|IDM_VS_MENU_HELP|  
   
 ## <a name="groups-on-visual-studio-menus"></a>在 Visual Studio 功能表上的群組  
- 下列清單顯示下降功能表直接從 Visual Studio 功能表列的群組。 若要設定其中一個群組作為父是最快的方式，將命令新增至 Visual Studio 功能表。 本章節中看不到下降從子功能表的群組。  
+ 下列清單會顯示在 Visual Studio 功能表列直接從功能表下降的群組。 將命令新增至 Visual Studio 功能表的最快方式是其中一個群組設定為父代。 在本節中看不到從子功能表下降的群組。  
   
 ### <a name="file-menu-groups"></a>檔案功能表群組  
   
@@ -79,7 +79,7 @@ ms.locfileid: "31134210"
 |重新命名|IDG_VS_FILE_RENAME|  
 |瀏覽器|IDG_VS_FILE_BROWSER|  
 |的|IDG_VS_FILE_PRINT|  
-|最近使用的|IDG_VS_FILE_MRU|  
+|最常使用|IDG_VS_FILE_MRU|  
 |Move|IDG_VS_FILE_MOVE|  
 |結束|IDG_VS_FILE_EXIT|  
   
@@ -96,7 +96,7 @@ ms.locfileid: "31134210"
 |OLE 指令動詞|IDG_VS_EDIT_OLEVERBS|  
 |命令的格式|IDG_VS_EDIT_COMMANDWELL|  
   
-### <a name="refactor-menu-groups"></a>重構功能表群組  
+### <a name="refactor-menu-groups"></a>重構的功能表群組  
   
 |群組|識別碼|  
 |-----------|--------|  
@@ -111,10 +111,10 @@ ms.locfileid: "31134210"
 |瀏覽器|IDG_VS_VIEW_BROWSER|  
 |定義檢視|IDG_VS_VIEW_DEFINEVIEWS|  
 |Windows|IDG_VS_VIEW_WINDOWS|  
-|架構設計人員 Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
-|組織 Windows|IDG_VS_VIEW_ORG_WINDOWS|  
-|程式碼瀏覽器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
-|Windows 開發人員|IDG_VS_VIEW_DEV_WINDOWS|  
+|架構設計人員的 Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
+|組織的 Windows|IDG_VS_VIEW_ORG_WINDOWS|  
+|程式碼的瀏覽器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
+|開發 Windows|IDG_VS_VIEW_DEV_WINDOWS|  
 |工具列|IDG_VS_VIEW_TOOLBARS|  
 |Symbol|IDG_VS_VIEW_SYMBOLNAVIGATE|  
 |瀏覽|IDG_VS_VIEW_NAVIGATE|  
@@ -131,7 +131,7 @@ ms.locfileid: "31134210"
 |其他新增|IDG_VS_PROJ_MISCADD|  
 |新增|IDG_VS_PROJ_ADD|  
 |資料夾|IDG_VS_PROJ_FOLDER|  
-|Unload/重新載入|IDG_VS_PROJ_UNLOADRELOAD|  
+|卸載/重新載入|IDG_VS_PROJ_UNLOADRELOAD|  
 |參考資料|IDG_VS_PROJ_REFERENCE|  
 |選項|IDG_VS_PROJ_OPTIONS|  
 |設定|IDG_VS_PROJ_SETTINGS|  
@@ -154,16 +154,16 @@ ms.locfileid: "31134210"
 |程式碼片段|IDG_VS_TOOLS_SNIPPETS|  
 |物件的子集|IDG_VS_TOOLS_OBJSUBSET|  
 |選項|IDG_VS_TOOLS_OPTIONS|  
-|其他 2|IDG_VS_TOOLS_OTHER2|  
+|另外 2 個|IDG_VS_TOOLS_OTHER2|  
 |外部工具|IDG_VS_TOOLS_EXT_TOOLS|  
 |外部的自訂項目|IDG_VS_TOOLS_EXT_CUST|  
   
-### <a name="window-menu-groups"></a>視窗功能表的群組  
+### <a name="window-menu-groups"></a>視窗功能表群組  
   
 |群組|識別碼|  
 |-----------|--------|  
 |新增|IDG_VS_WINDOW_NEW|  
-|停駐/關閉|IDG_VS_DOCKCLOSE|  
+|停駐] / [關閉|IDG_VS_DOCKCLOSE|  
 |停駐/隱藏|IDG_VS_DOCKHIDE|  
 |排列|IDG_VS_WINDOW_ARRANGE|  
 |巡覽|IDG_VS_WINDOW_NAVIGATION|  
@@ -178,10 +178,10 @@ ms.locfileid: "31134210"
 |關於|IDG_VS_HELP_ABOUT|  
   
 ## <a name="submenus-of-visual-studio-menus"></a>Visual Studio 功能表的子功能表  
- 下列階層會顯示在 Visual Studio 功能表列上的功能表與相關聯的子功能表。 由於只有群組只能有為其父系的功能表，每一個子功能表必須下降從群組在功能表上，而不是直接從功能表。 如需功能表、 群組和子功能表之間的關聯性的詳細資訊，請參閱[加入功能表的子功能表](../../extensibility/adding-a-submenu-to-a-menu.md)。  
+ 下列階層會顯示在 Visual Studio 功能表列上的功能表與相關聯的子功能表。 只有一組可以有一個功能表做為其父系，因為每一個子功能表必須下降從群組在功能表上，而不是直接從功能表。 如需功能表、 群組和子功能表之間的關聯性的詳細資訊，請參閱[子功能表加入至功能表](../../extensibility/adding-a-submenu-to-a-menu.md)。  
   
 > [!NOTE]
->  在 Visual Studio 功能表列上的功能表名稱不會個別顯示此階層中他們可以從推斷出群組在 ide 中的命名慣例，如下所示： IDG_VS_*功能表名稱*_*的群組名稱*.  
+>  在 Visual Studio 功能表列上的功能表名稱不分別會顯示此階層因為他們可以從推斷在 IDE 中，群組的命名慣例，如下所示： *IDG_VS_\<功能表名稱\>_\<群組名稱\>*。  
   
 |父群組|子功能表|子群組|  
 |------------------|-------------|------------------|  
@@ -216,6 +216,6 @@ ms.locfileid: "31134210"
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|  
   
 ## <a name="see-also"></a>另請參閱  
- [Guid 和 Id 的 Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
- [Guid 和 Id 的 Visual Studio 命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 識別碼和 Guid 的工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
+ [Visual Studio 識別碼和 Guid 的命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
+ [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: Description 項目 （Visual Studio 範本） |Microsoft 文件
+title: Description 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 471633a4c786a879b333a09a4d7975739a56ccfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13a93ce9eb5bca506751e215fe74477839e961d9
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128909"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500796"
 ---
-# <a name="description-element-visual-studio-templates"></a>描述項目 (Visual Studio 範本)
-指定範本描述出現在**新專案**或**加入新項目** 對話方塊。  
+# <a name="description-element-visual-studio-templates"></a>Description 項目 （Visual Studio 範本）
+指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -39,35 +39,35 @@ ms.locfileid: "31128909"
 <Description Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Package`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 封裝的 GUID 識別碼。|  
-|`ID`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 的資源 id。|  
+|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
+|`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
- 需要文字值，除非`Package`和`ID`屬性可用。  
+ 需要的文字值，除非`Package`和`ID`屬性使用。  
   
- 文字會提供範本的描述。  
+ 文字提供範本的描述。  
   
 ## <a name="remarks"></a>備註  
  `Description` 是 `TemplateData` 項目的必要子項目。  
   
 ## <a name="example"></a>範例  
- 下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
+ 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
