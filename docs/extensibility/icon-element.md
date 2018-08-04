@@ -1,5 +1,5 @@
 ---
-title: 圖示項目 |Microsoft 文件
+title: Icon 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dcfec5c89c6bf2b2ae68ea29e18890dc9187e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126868"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497689"
 ---
-# <a name="icon-element"></a>圖示項目
-圖示標記的 guid 屬性是定義點陣圖的 guid。  Id 屬性選取點陣圖區域中的位置。 這是選擇性的項目。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**會隱含。  
+# <a name="icon-element"></a>Icon 元素
+Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣圖區中的位置。 這是選擇性的項目。 如果這個項目不包含值**guidOfficeIcon:msotcidNoIcon**會隱含。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <Icon guid="guidImages" id="bmpPic1" />  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|Guid|必要。 定義點陣圖的 guid。|  
-|id|必要。 點陣圖區域中選取的位置。|  
+|guid|必要。 定義點陣圖的 guid。|  
+|id|必要。 選取的位置中的點陣圖區。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
 |無。|無。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)||  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

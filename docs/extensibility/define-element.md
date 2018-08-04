@@ -1,5 +1,5 @@
 ---
-title: 定義項目 |Microsoft 文件
+title: 定義項目 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126958"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497157"
 ---
 # <a name="define-element"></a>定義項目
-定義的符號名稱和值組。 這個符號可以來評估條件式屬性。 如需詳細資訊，請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參閱[符號項目](../extensibility/symbols-element.md)。  
+定義的符號名稱和值組。 這個符號可以評估的條件式屬性。 如需詳細資訊，請參閱 <<c0> [ 條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參閱[Symbols 元素](../extensibility/symbols-element.md)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,25 +30,25 @@ ms.locfileid: "31126958"
 <Define name="Mode" value="Standard" />  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|name|必要。 符號名稱：<br /><br /> 名稱 ="Mode"|  
-|value|必要。 符號的值：<br /><br /> 值 ="Standard"|  
-|條件|選擇性。 如需詳細資訊，請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|name|必要。 符號名稱：<br /><br /> 名稱 = 「 模式 」|  
+|value|必要。 符號的值：<br /><br /> 值 = 「 標準 」|  
+|條件|選擇性。 如需詳細資訊，請參閱 <<c0> [ 條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供的命令到整合式的開發環境 (IDE) 的所有項目。 例如，功能表項目、 功能表、 工具列和下拉式方塊。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的 VSPackage 提供整合式的開發環境 (IDE) 的所有項目。 例如，功能表項目、 功能表、 工具列和下拉式方塊。|  
   
 ## <a name="example"></a>範例  
   
@@ -58,4 +58,4 @@ ms.locfileid: "31126958"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc2d0accfdae3587d43727ec1e0eda0785510c85
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8dceab38f543c58997092559bf9a840806e9b013
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030425"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498583"
 ---
-# <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
+# <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 
 Visual Studio SDK （軟體開發套件） 是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio 安裝的過程中安裝 Visual Studio SDK
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio 安裝過程中安裝 Visual Studio SDK
 
 若要併入您的 Visual Studio 安裝中的 VS SDK，請安裝**Visual Studio 延伸模組開發**下的工作負載**其他工具組**。 此工作負載會安裝 Visual Studio SDK 及所需的必要條件。 您可以進一步微調安裝選取或取消選取的元件**摘要**檢視。
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>先安裝 Visual Studio 中安裝 Visual Studio SDK
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>安裝 Visual Studio 之後安裝 Visual Studio SDK
 
 若要安裝 Visual Studio SDK，完成您的 Visual Studio 安裝之後，重新執行 Visual Studio 安裝程式，然後選取**Visual Studio 延伸模組開發**工作負載。  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>從方案安裝 Visual Studio SDK
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>從方案安裝 Visual Studio SDK
 
 如果您使用的擴充性專案中開啟的方案，但是未先安裝 VS SDK，您將會提示所**安裝遺漏的功能**對話方塊，即可安裝**Visual Studio 延伸模組開發**工作負載：
 
 ![安裝延伸模組開發](../extensibility/media/install-extension-development.png "安裝延伸模組開發")  
   
-## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK
 
 如有任何 Visual Studio 工作負載或元件，您也可以安裝**Visual Studio 延伸模組開發**工作負載 (識別碼： Microsoft.VisualStudio.Workload.VisualStudioExtension) 從命令列。 請參閱[使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)如需有關適當的命令列參數和判斷工作負載或元件識別碼的一般指示。
   
-請注意，您必須使用符合您已安裝 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您有在電腦上安裝的 Visual Studio Enterprise，您必須執行 Visual Studio Enterprise 安裝程式 (vs_enterprise.exe)。
+請注意，您必須使用符合您已安裝 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您有在電腦上安裝的 Visual Studio Enterprise，您必須執行 Visual Studio Enterprise 安裝程式 (*vs_enterprise.exe*)。
