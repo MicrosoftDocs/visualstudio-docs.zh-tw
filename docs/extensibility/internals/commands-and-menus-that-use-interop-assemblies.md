@@ -1,5 +1,5 @@
 ---
-title: 命令和功能表，使用 Interop 組件 |Microsoft 文件
+title: 使用 Interop 組件的命令和功能表 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,43 +16,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48ee7eb25fa95789076454c849485f4ac1dc384
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135003"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513438"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>命令和使用 Interop 組件的功能表
-使用 interop 組件中實作功能表和工具列命令的 VSPackage 必須：  
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
+使用 Interop 組件中實作功能表和工具列命令的 VSPackage 必須：  
   
--   通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它所支援的命令及是否在目前啟用的整合式的開發環境 (IDE)。  
+-   通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有關其支援的命令和是否在目前啟用的整合式的開發環境 (IDE)。  
   
 -   遵守的規則 （合約） 處理的命令。  
   
--   明確實作使用的命令處理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面。  
+-   明確實作命令處理，使用其中一種<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面。  
   
- 以下描述如何執行這些工作。  
+ 下一節會說明如何執行這些工作。  
   
 ## <a name="in-this-section"></a>本節內容  
  [使用 Interop 組件判斷命令狀態](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- 描述 VSPackage 如何通知 IDE，它支援哪些命令的相關，以及是否在目前啟用。  
+ 描述 VSPackage 如何通知 IDE 在它支援哪些命令的相關，而且是否在目前啟用。  
   
  [Interop 組件中的命令合約](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
- 提供所有的 Vspackage 實作使用 interop 組件的命令所使用的基本命令合約的定義  
+ 提供所有的 Vspackage 實作使用 Interop 組件的命令所使用的基本命令合約的定義。
   
- [實作](../../extensibility/internals/command-implementation.md)  
+ [命令實作](../../extensibility/internals/command-implementation.md)  
  提供 VSPackage 如何實作命令的概觀。  
   
  [註冊 Interop 組件命令處理常式](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- 描述通知 IDE VSPackage 提供的命令處理常式所需的登錄項目。  
+ 說明通知 IDE VSPackage 提供的命令處理常式所需的登錄項目。  
   
 ## <a name="related-sections"></a>相關章節  
- [可用性](../../extensibility/internals/command-availability.md)  
- 描述 IDE 用來判斷可用的 VSPackage 的命令，以及哪些物件會處理它們的準則。  
+ [命令可用性](../../extensibility/internals/command-availability.md)  
+ 描述 IDE 用來判斷哪些 VSPackage 的命令，以及哪些物件會處理它們的準則。  
   
- [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- 提供有關如何建立使用的 UI 詳細資料[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令支援。  
+ [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ 提供有關如何建立會使用 UI 的詳細資料[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令支援。  
   
- [在 VSPackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)  
- 用來與具有正確的命令要求的物件相關聯處理序的概觀。
+ [在 Vspackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)  
+ 用來讓具有正確的命令要求的物件產生關聯的程序的概觀。

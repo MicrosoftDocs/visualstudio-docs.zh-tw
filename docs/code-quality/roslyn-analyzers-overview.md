@@ -13,72 +13,75 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aaa989347744e015b90cca186c6aa9756dfe90fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922293"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511418"
 ---
-# <a name="overview-of-net-compiler-platform-analyzers"></a>.NET 編譯器平台分析器的概觀
+# <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器的概觀
 
-Visual Studio 2017 包含一組內建分析 C# 或 Visual Basic 程式碼，當您輸入的.NET 編譯器平台分析器。 可以安裝其他的分析器做為 Visual Studio 擴充功能，或根據每個專案，以 NuGet 套件。 分析器查看程式碼樣式、 程式碼品質和可維護性、 程式碼設計，以及其他問題。
+Visual Studio 2017 包含一組內建分析 C# 或 Visual Basic 程式碼，當您輸入的.NET Compiler Platform 分析器。 可以安裝其他的分析器為 Visual Studio 延伸模組，或根據每個專案，NuGet 套件的形式。 分析器會尋找在程式碼樣式、 程式碼品質和可維護性、 程式碼設計，以及其他問題。
 
-如果分析器發現規則違規，則會報告在程式碼編輯器中做為*曲線*在違規程式碼，然後在**錯誤清單**。
+如果分析器所找不到規則違規，則會回報兩者都在做為程式碼編輯器*曲線*下方違規的程式碼，然後在**錯誤清單**。
 
-許多分析器規則，或*診斷*，有一個或多個相關聯*程式碼修正*您可以套用到更正問題。 Visual Studio 內建的分析器診斷有相關聯的程式碼修正。 顯示燈泡圖示功能表上，以及其他類型的程式碼修正*快速控制項目*。 這些程式碼修正的相關資訊，請參閱[一般的快速動作](../ide/common-quick-actions.md)。
+許多的分析器規則，或*診斷*，有一或多個相關聯*程式碼修正*，您可以套用修正問題。 內建於 Visual Studio analyzer 診斷有相關聯的程式碼修正。 會顯示燈泡圖示的功能表，以及其他類型的程式碼修正*快速動作*。 這些程式碼修正的相關資訊，請參閱[一般快速動作](../ide/common-quick-actions.md)。
 
-![分析器違規和快速動作程式碼修正](../code-quality/media/built-in-analyzer-code-fix.png)
+![分析器的違規情況並快速動作的程式碼修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
-## <a name="roslyn-analyzers-vs-static-code-analysis"></a>Roslyn 分析器與靜態程式碼分析
+## <a name="roslyn-analyzers-vs-static-code-analysis"></a>與靜態程式碼分析的 Roslyn 分析器
 
-.NET 編譯器平台 ("Roslyn") 分析器最終會取代[靜態程式碼分析](../code-quality/code-analysis-for-managed-code-overview.md)managed 程式碼。 已將靜態程式碼分析規則的許多改寫為 Roslyn 分析器診斷中。
+最終會取代.NET 編譯器平台 ("Roslyn") 的分析器[靜態程式碼分析](../code-quality/code-analysis-for-managed-code-overview.md)managed 程式碼。 已將許多的靜態程式碼分析規則改寫為 Roslyn 分析器診斷中。
 
-靜態程式碼分析規則的違規，像是 Roslyn 分析器違規會出現在**錯誤清單**。 此外，Roslyn 分析器違規也會顯示在程式碼編輯器中，依*曲線*違規的程式碼下。 曲線的色彩取決於[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)的規則。 下列螢幕擷取畫面會顯示三個違規&mdash;一個紅色、 一個綠色和一個灰色：
+Roslyn 分析器違規出現在靜態程式碼分析規則的違規，像是**錯誤清單**。 此外，Roslyn 分析器違規也會出現在程式碼編輯器中，依*曲線*違規的程式碼底下。 曲線的色彩取決於[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)的規則。 下列螢幕擷取畫面顯示三個違規&mdash;一個紅色、 一個綠色和一個灰色：
 
 ![程式碼編輯器中的曲線](media/diagnostics-severity-colors.png)
 
-Roslyn 分析器在建置時，例如如果它已啟用，但也即時當您輸入的靜態程式碼分析，分析程式碼 ！ Roslyn 分析器也可以提供設計階段分析的程式碼檔案不是在編輯器中開啟，如果您啟用[完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)。
+Roslyn 分析器會在建置階段，例如靜態程式碼分析，如果它已啟用，但也您鍵入即時進行分析的程式碼 ！ Roslyn 分析器也可以提供的程式碼檔案不是在編輯器中開啟，如果您啟用的設計階段 analysis[完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)。
 
 > [!NOTE]
-> 建置時間錯誤和警告 Roslyn 分析器從時才會顯示是否分析器會安裝為 NuGet 封裝。
+> 建置時間錯誤和警告的 Roslyn 分析器會顯示只有是否分析器會安裝為 NuGet 套件。
 
-Roslyn 分析器並報告相同類型的問題會執行靜態程式碼分析，不僅能讓您輕鬆地修正下列一個或所有違規，您的檔案或專案中的項目。 這些動作稱為*程式碼修正*。 程式碼修正為 IDE 專用;在 Visual Studio 中，它們會實作為[快速控制項目](../ide/quick-actions.md)。 並非所有的分析器診斷有相關聯的程式碼修正。
+不只執行 Roslyn 分析器會報告相同類型的問題，靜態程式碼分析會執行，但可輕鬆為您修正下列一個或所有檔案或專案中的違規情況的發生次數。 這些動作稱為*程式碼修正*。 程式碼修正是 IDE 專屬;在 Visual Studio 中，它們會實作為[快速動作](../ide/quick-actions.md)。 並非所有的分析器診斷有相關聯的程式碼修正。
 
 > [!NOTE]
-> 功能表選項**分析** > **執行程式碼分析**適用於僅為靜態程式碼分析。 此外，在專案的**程式碼分析**屬性頁**建置時啟用程式碼分析**和**隱藏來自產生的程式碼的結果**核取方塊只適用於靜態程式碼分析。 它們有 Roslyn 分析器不會影響。
+> 功能表選項**分析** > **執行程式碼分析**適用於僅為靜態程式碼分析。 此外，在專案的**程式碼分析**屬性頁上，**建置時啟用程式碼分析**並**隱藏所產生的程式碼的結果**核取方塊只適用於靜態程式碼分析。 它們不影響 Roslyn 分析器。
 
-區分從 Roslyn 分析器違規和靜態程式碼分析中的**錯誤清單**，看看**工具**資料行。 如果工具值符合分析器組件中的其中一個**方案總管 中**，例如**Microsoft.CodeQuality.Analyzers**，違規來自 Roslyn 分析器。 否則，違規源自靜態程式碼分析。
+區分從 Roslyn 分析器的違規和靜態程式碼分析**錯誤清單**，看看**工具**資料行。 如果工具 的值符合中的分析器組件的其中一個**方案總管 中**，例如**Microsoft.CodeQuality.Analyzers**，違規來自 Roslyn 分析器。 否則，違規來自靜態程式碼分析。
 
 ![工具錯誤清單中的資料行](media/code-analysis-tool-in-error-list.png)
 
-## <a name="nuget-package-vs-extension"></a>相對於擴充功能的 NuGet 封裝
+## <a name="nuget-package-versus-vsix-extension"></a>VSIX 擴充功能與 NuGet 套件
 
-分析器可以是.NET 編譯器平台會安裝每個專案透過 NuGet 封裝或 Visual Studio 全為 Visual Studio 擴充功能。 有一些行為差異，這兩種方法之間[安裝分析器](../code-quality/install-roslyn-analyzers.md)。
+.NET compiler Platform 分析器可以是會安裝每個專案透過 NuGet 套件或 Visual Studio 全為 Visual Studio 擴充功能。 有這兩種方法的某些索引鍵的行為差異[安裝分析器](../code-quality/install-roslyn-analyzers.md)。
 
 ### <a name="scope"></a>範圍
 
-如果您安裝 Visual Studio 擴充功能分析器，它們適用於在解決方案層級的 Visual Studio 的所有執行個體。 如果您安裝分析器以 NuGet 套件，這是慣用的方法，僅會套用至安裝 NuGet 封裝的專案。 在小組環境中，安裝 NuGet 封裝為分析器會在的範圍*所有開發人員*該專案上執行的工作。
+如果您安裝分析器做為 Visual Studio 擴充功能時，它們適用於在解決方案層級的 Visual Studio 的所有執行個體。 如果您將分析器安裝為 NuGet 套件，這是慣用的方法，它們只適用於已安裝 NuGet 套件的專案。 範圍中，在小組環境中，會安裝為 NuGet 套件的分析器*所有開發人員*，作用於該專案。
 
 ### <a name="build-errors"></a>建置錯誤
 
-若要在建置階段，包括透過命令列或一部分持續整合 (CI) 組建，強制執行規則安裝分析器以 NuGet 套件。 分析器警告和錯誤不會顯示在組建報告如果您安裝擴充功能分析器。
+若要能夠在建置階段，包括透過命令列，或做為一部分的連續整合 (CI) 組建，強制執行規則安裝 NuGet 套件形式的分析器。 分析器警告和錯誤不會顯示在建置報告，如果您安裝延伸模組的分析器。
 
-下列螢幕擷取畫面顯示建置專案，其中包含的分析器規則違規的命令列組建輸出：
+下列螢幕擷取畫面顯示建置專案，其中包含分析器規則的違規情況的命令列組建輸出：
 
-![MSBuild 輸出規則違規](media/command-line-build-analyzers.png)
+![MSBuild 輸出與規則違規](media/command-line-build-analyzers.png)
 
-### <a name="rule-severity"></a>規則的嚴重性
+### <a name="rule-severity"></a>規則嚴重性
 
-您無法從安裝為 Visual Studio 擴充功能分析器設定規則的嚴重性。 若要設定[規則嚴重性](../code-quality/use-roslyn-analyzers.md#rule-severity)，以 NuGet 套件安裝分析器。
+您無法從已安裝為 Visual Studio 延伸模組的分析器設定規則的嚴重性。 若要設定[規則嚴重性](../code-quality/use-roslyn-analyzers.md#rule-severity)，安裝為 NuGet 套件的分析器。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [安裝 Visual Studio 中的 Roslyn 分析器](../code-quality/install-roslyn-analyzers.md)
-- [在 Visual Studio 中使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)
+> [!div class="nextstepaction"]
+> [在 Visual Studio 中安裝 Roslyn 分析器](../code-quality/install-roslyn-analyzers.md)
+
+> [!div class="nextstepaction"]
+> [在 Visual Studio 中使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中的快速動作](../ide/quick-actions.md)
-- [撰寫您自己 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [撰寫您自己的 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET 編譯器平台 SDK](/dotnet/csharp/roslyn-sdk/)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433164"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510145"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。  
@@ -28,7 +28,7 @@ ms.locfileid: "37433164"
  如果此變異顯現出效能大幅提高，則表示您是使用紋理，而未啟用 MIP 對應，因此未從紋理快取中取得大部分的內容。  
   
 ## <a name="remarks"></a>備註  
- 每次呼叫建立來源紋理的 `ID3D11Device::CreateTexture2D` 時，會強制產生 MIP 對應。 特別是當 `pDesc` 中所傳遞的 D3D11_TEXTUR2D_DESC 物件描述未變更的著色器資源時，會強制產生 MIP 對應；亦即：  
+ 每次呼叫建立來源紋理的 `ID3D11Device::CreateTexture2D` 時，會強制產生 MIP 對應。 在中傳遞的 D3D11_TEXTURE2D_DESC 物件時，具體來說，強制產生 mip 對應`pDesc`描述不會變更的著色器資源; 亦即：  
   
 -   BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
   
