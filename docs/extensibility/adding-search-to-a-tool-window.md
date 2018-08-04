@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152515"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498560"
 ---
 # <a name="add-search-to-a-tool-window"></a>將搜尋新增至 工具視窗
 當您建立或更新您的延伸模組中的工具視窗時，您可以在 Visual Studio 中新增其他地方出現的相同搜尋功能。 這項功能包含下列功能：  
@@ -33,7 +33,7 @@ ms.locfileid: "39152515"
   
 -   篩選搜尋特定欄位或搜尋目標方面的功能。  
   
- 依照本逐步解說中，您將了解如何執行下列工作：  
+依照本逐步解說中，您將了解如何執行下列工作：  
   
 1.  建立 VSPackage 專案。  
   

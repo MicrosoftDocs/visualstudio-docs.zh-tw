@@ -1,5 +1,5 @@
 ---
-title: 就地啟用 |Microsoft 文件
+title: 就地啟用 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131629"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500341"
 ---
-# <a name="in-place-activation"></a>就地啟用
+# <a name="in-place-activation"></a>在就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  
   
-## <a name="support-for-menus-toolbars-and-commands"></a>功能表、工具列和命令的支援  
+## <a name="support-for-menus-toolbars-and-commands"></a>功能表、 工具列和命令的支援  
  Visual Studio 可讓您的編輯器檢視使用 IDE 的功能表和工具列。 這些延伸稱為 *OLE 就地元件*。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>。  
   
  如果您實作 ActiveX 控制項，您可以主控其他內嵌的物件。 如果您實作文件資料物件，視窗框架會限制您使用 ActiveX 控制項的能力。  
@@ -26,18 +26,18 @@ ms.locfileid: "31131629"
 > [!NOTE]
 >  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> 介面允許分開資料和檢視。 不過，Visual Studio 不支援這項功能，而且這些介面只會用來代表文件檢視物件。  
   
- 使用 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務的編輯器，可以藉由呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面的方法來提供功能表、工具列和命令整合；此介面是由 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務所實作。 編輯器也可以提供其他 Visual Studio 功能，例如選取項目追蹤和復原管理。 如需詳細資訊，請參閱[建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
+ 使用 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務的編輯器，可以藉由呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面的方法來提供功能表、工具列和命令整合；此介面是由 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務所實作。 編輯器也可以提供其他 Visual Studio 功能，例如選取項目追蹤和復原管理。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
   
-## <a name="objects-and-interfaces-used"></a>使用的物件與介面  
+## <a name="objects-and-interfaces-used"></a>物件與使用的介面  
  下圖中顯示用來建立就地啟用的物件。  
   
- ![在&#45;放置啟動編輯器](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![在&#45;將啟動編輯器](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 就地啟用編輯器  
   
 > [!NOTE]
->  在此繪圖的物件中，建立標準的編輯器只需要 `CYourEditorFactory` 物件。 如果您要建立自訂編輯器，您不需要實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ，因為您的編輯器可能有自己的私用持續性機制。 如需詳細資訊，請參閱[建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
+>  在此繪圖的物件中，建立標準的編輯器只需要 `CYourEditorFactory` 物件。 如果您要建立自訂編輯器，您不需要實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ，因為您的編輯器可能有自己的私用持續性機制。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
   
- 實作來建立就地啟用編輯器的所有介面，顯示在單一 `CYourEditorDocument` 物件上，但這項組態只支援文件資料的單一檢視。 如需支援文件資料之多個檢視的詳細資訊，請參閱 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
+ 實作來建立就地啟用編輯器的所有介面，顯示在單一 `CYourEditorDocument` 物件上，但這項組態只支援文件資料的單一檢視。 如需有關支援的文件資料的多個檢視的詳細資訊，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。  
   
 |介面|物件的類型|使用|  
 |---------------|--------------------|---------|  

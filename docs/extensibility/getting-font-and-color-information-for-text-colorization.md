@@ -1,5 +1,5 @@
 ---
-title: 取得字型和色彩資訊文字的顏色標示 |Microsoft 文件
+title: 取得字型和色彩資訊文字的顏色標示 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,35 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c86e37d6d7da9da0a6b0978770bf7d7564fa19c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129692"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499695"
 ---
-# <a name="getting-font-and-color-information-for-text-colorization"></a>取得字型和色彩資訊文字的顏色標示
-呈現或彩色的文字顯示在使用者介面 (UI) 項目中的程序取決於專案、 技術和開發人員的喜好設定的類型。 **字型和色彩**屬性頁儲存設定。
+# <a name="get-font-and-color-information-for-text-colorization"></a>取得文字顏色標示的字型和色彩資訊
+呈現，或在使用者介面 (UI) 項目中顯示彩色的文字的程序取決於專案、 技術和開發人員的喜好設定的類型。 **字型和色彩**屬性頁會將設定儲存。
 
  需要顯示彩色的文字的大部分實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>和相關聯的呈現、 擷取和儲存文字顯示設定的介面。
 
 > [!NOTE]
->  自訂核心編輯器時 (其支援**文字 EditorCategory**)，建議您在語言服務使用著色技術。 如需詳細資訊，請參閱[字型和色彩概觀](../extensibility/font-and-color-overview.md)。
+>  當自訂核心編輯器 (支援**文字 EditorCategory**)，建議您在語言服務中使用著色技術。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩概觀](../extensibility/font-and-color-overview.md)。
 
-## <a name="getting-default-font-and-color-information"></a>取得預設字型和色彩資訊
- 所有**字型和色彩**應該中指定的任何視窗，以顯示文字的設定**顯示項目**其中**類別**。 如需詳細資訊，請參閱[字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
+## <a name="get-default-font-and-color-information"></a>取得預設字型和色彩資訊
+ 所有**字型和色彩**應指定設定的任何視窗，以顯示文字**顯示項目**之一**分類**。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
 
-若要以色彩標示，VSPackage 必須取得目前**字型和色彩**設定。 VSPackage 可以取得目前的設定，以下列方式，視其需求而定：
+若要以色彩標示，VSPackage 必須取得目前**字型和色彩**設定。 VSPackage 可以取得目前的設定，以下列方式，根據其需求：
 
--   您可以使用的字型和色彩的持續性機制來擷取預存] 或 [目前狀態。 如需詳細資訊，請參閱[存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。
+-   您可以使用的字型和色彩的持續性機制來擷取預存] 或 [目前狀態。 如需詳細資訊，請參閱 <<c0> [ 預存的存取字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。
 
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面的服務可提供要取得的執行個體的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 也不是字型和色彩提供者。
+-   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面的服務，可提供要取得的執行個體的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 也不是字型和色彩提供者。
 
 -   實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 介面。
 
-為了確保取得輪詢結果的最新狀態，可能很有用使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷更新是否需要在呼叫的方法擷取之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
+若要確保透過輪詢所得到的結果是最新狀態，可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷更新是否需要在呼叫的擷取方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
 
-取得字型和色彩資訊之後，剖析的文字會顯示以識別需要顏色標示的項目。 使用適當的字型和色彩 視窗中顯示的文字。
+取得字型和色彩資訊之後，剖析來識別需要顏色標示的項目要顯示的文字。 使用適當的字型和色彩 視窗中顯示的文字。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -50,4 +50,4 @@ ms.locfileid: "31129692"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [使用字型和文字](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [使用色彩](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI （圖形裝置介面）](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI （繪圖裝置介面）](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

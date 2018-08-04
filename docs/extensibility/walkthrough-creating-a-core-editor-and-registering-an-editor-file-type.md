@@ -1,5 +1,5 @@
 ---
-title: 建立核心編輯器和註冊編輯器檔案類型 |Microsoft 文件
+title: 建立核心編輯器和註冊編輯器檔案類型 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bb9b9443a60e54d875d6e3992a18ac1f0691244
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147405"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498668"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說： 建立核心編輯器和登錄編輯程式檔案類型
-本逐步解說示範如何建立啟動的 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .myext 副檔名的檔案時，核心編輯器會載入。  
+# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說： 建立核心編輯器 」 和 「 登錄編輯程式檔案類型
+本逐步解說示範如何建立啟動 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器時的檔案 *.myext*載入檔案的副檔名。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 封裝專案範本位置  
+## <a name="locations-for-the-visual-studio-package-project-template"></a>在 Visual Studio Package 專案範本位置  
  Visual Studio Package 專案範本位在 [新增專案]  對話方塊的三個不同位置：  
   
-1.  位在 Visual Basic 擴充性下。 專案的預設語言為 Visual Basic。  
+1.  位在 [Visual Basic 擴充性] 下。 專案的預設語言為 Visual Basic。  
   
-2.  位在 C# 擴充性下。 專案的預設語言為 C#。  
+2.  位在 [C# 擴充性] 下。 專案的預設語言為 C#。  
   
-3.  位在其他專案類型擴充性下。 專案的預設語言為 C++。  
+3.  位在 [其他專案類型擴充性] 下。 專案的預設語言為 C++。  
   
 ### <a name="to-create-the-vspackage"></a>若要建立 VSPackage  
   
--   啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]並建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]名為 VSPackage `MyPackage`，如下所述[逐步解說： 建立功能表命令 VSPackage](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
+-   開始[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]並建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]名為 VSPackage `MyPackage`，如中所述[逐步解說： 建立功能表命令 VSPackage](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
   
 ### <a name="to-add-the-editor-factory"></a>若要加入編輯器 factory  
   
-1.  以滑鼠右鍵按一下**MyPackage**專案，指向**新增**，然後按一下 **類別**。  
+1.  以滑鼠右鍵按一下**MyPackage**專案，指向**新增**，然後按一下**類別**。  
   
-2.  在**加入新項目**對話方塊方塊中，請確定**類別**選取範本時，型別`EditorFactory.cs`為名稱，然後按一下**新增**將類別加入您的專案。  
+2.  在 **加入新項目**對話方塊方塊中，請確定**類別**選取範本時，型別`EditorFactory.cs`為名稱，然後按一下**新增**將類別新增至您的專案。  
   
-     應該會自動開啟 EditorFactory.cs 檔案。  
+     *EditorFactory.cs*檔案應該會自動開啟。  
   
-3.  請參考下列組件從您的程式碼。  
+3.  從您的程式碼中參考下列組件。  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -70,9 +70,9 @@ ms.locfileid: "31147405"
   
     ```  
   
-4.  新增的 GUID`EditorFactory`類別藉由新增`Guid`屬性立即在類別宣告之前。  
+4.  新增的 GUID`EditorFactory`類別，新增`Guid`之前的類別宣告的屬性。  
   
-     您可以使用 guidgen.exe 程式在產生新的 GUID[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]命令提示字元，或按一下**建立 GUID**上**工具**功能表。 這裡使用的 GUID 只是舉例;請勿使用您的專案中。  
+     您可以使用來產生新的 GUID *guidgen.exe*程式設計時[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]命令提示字元，或依序按一下**建立 GUID**上**工具**功能表。 此處所使用的 GUID 是只是範例;請勿使用它在您的專案。  
   
     ```vb  
     <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
@@ -82,7 +82,7 @@ ms.locfileid: "31147405"
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  在類別定義中，加入包含父封裝和服務提供者的兩個私用變數。  
+5.  在類別定義中，加入要包含父封裝和服務提供者的兩個私用變數。  
   
     ```vb  
     Class EditorFactory  
@@ -125,9 +125,9 @@ ms.locfileid: "31147405"
   
     ```  
   
-8.  以滑鼠右鍵按一下<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，按一下 **實作介面**，然後按一下 **明確實作介面**。  
+8.  以滑鼠右鍵按一下<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，按一下**實作介面**，然後按一下**明確實作介面**。  
   
-     這會將必須在中實作的四個方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。  
+     這個步驟會加入四個方法必須實作在<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。  
   
 9. 以下列程式碼取代 `IVsEditorFactory.Close` 方法的內容。  
   
@@ -139,7 +139,7 @@ ms.locfileid: "31147405"
     return VSConstants.S_OK;  
     ```  
   
-10. 取代內容`IVsEditorFactory.SetSite`為下列程式碼。  
+10. 內容取代`IVsEditorFactory.SetSite`為下列程式碼。  
   
     ```vb  
     Me.serviceProvider = psp  
@@ -319,22 +319,22 @@ ms.locfileid: "31147405"
   
 13. 編譯專案，並確定沒有任何錯誤。  
   
-### <a name="to-register-the-editor-factory"></a>若要登錄 editor factory  
+### <a name="to-register-the-editor-factory"></a>若要註冊編輯器 factory  
   
-1.  在**方案總管 中**，按兩下 Resources.resx 檔案開啟至字串資料表，在其中的項目**String1 為**選取。  
+1.  在**方案總管 中**，按兩下**Resources.resx**檔案，以開啟到字串資料表，在其中的項目**String1 是**選取。  
   
-2.  變更的識別項名稱`IDS_EDITORNAME`和以文字**MyPackage 編輯器。** 這個字串會顯示為您的編輯器的名稱。  
+2.  變更的識別項的名稱`IDS_EDITORNAME`和以文字**MyPackage 編輯器。** 這個字串會顯示為您的編輯器的名稱。  
   
-3.  開啟 VSPackage.resx 檔案並加入新的字串，將名稱設定為**101**和要值`IDS_EDITORNAME`。 這會將封裝提供的資源 ID，才能存取您剛才建立的字串。  
+3.  開啟**VSPackage.resx**檔案中，加入新字串，將名稱設**101**，並將值設定為`IDS_EDITORNAME`。 此步驟可讓您存取您所建立的字串資源識別碼的套件。  
   
     > [!NOTE]
-    >  如果 VSPackage.resx 檔案包含另一個字串`name`屬性設為**101**，以另一個唯一的、 數字的值，取代及的下列步驟。  
+    >  如果**VSPackage.resx**檔案包含另一個字串`name`屬性設為**101**，取代另一個唯一的數字的值，這裡並在下列步驟。  
   
-4.  在**方案總管 中**，開啟 MyPackagePackage.cs 檔案。  
+4.  在 **方案總管**，開啟**MyPackagePackage.cs**檔案。  
   
-     這是主套件檔案。  
+     這個檔案是主套件檔案。  
   
-5.  之前加入下列使用者屬性`Guid`屬性。  
+5.  之前加入下列的使用者屬性`Guid`屬性。  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -348,9 +348,9 @@ ms.locfileid: "31147405"
           ".myext", 32, NameResourceID = 101)]   
     ```  
   
-     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>屬性關聯.myext 副檔名編輯器 factory，以便在任何時候，在載入延伸模組，會叫用編輯器 factory 的檔案。  
+     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>屬性產生關聯 *.myext*檔案編輯器 factory 的延伸模組，讓任何一次，在載入延伸模組，會叫用編輯器 factory 的檔案。  
   
-6.  加入私用變數，以`MyPackage`類別之前建構函式，, 並提供它的類型`EditorFactory`。  
+6.  加入私用變數，以`MyPackage`類別，建構函式之前，並提供它的類型`EditorFactory`。  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -360,7 +360,7 @@ ms.locfileid: "31147405"
     private EditorFactory editorFactory;  
     ```  
   
-7.  尋找`Initialize`方法 (您可能需要開啟`Package Members`隱藏的區域) 並加入下列程式碼的呼叫後方`base.Initialize()`。  
+7.  尋找`Initialize`方法 (您可能必須開啟`Package Members`隱藏的區域)，並新增下列程式碼呼叫之後`base.Initialize()`。  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -377,25 +377,25 @@ ms.locfileid: "31147405"
   
 8.  編譯程式，並確定沒有任何錯誤。  
   
-     此步驟中的實驗登錄區中登錄 editor factory [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 如果提示您覆寫 resource.h 檔案時，請按一下**確定**。  
+     此步驟中登錄的實驗登錄區中的編輯器 factory [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 如果系統提示您覆寫*resource.h*檔案中，按一下**確定**。  
   
-9. 建立名為 TextFile1.myext 範例檔案。  
+9. 建立名為的範例檔案*TextFile1.myext*。  
   
-10. 按**F5**若要開啟的實驗性執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+10. 按下**F5**若要開啟的實驗性執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-11. 在實驗性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]上**檔案**功能表上，指向**開啟**，然後按一下 **檔案**。  
+11. 在實驗性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，請在**檔案**功能表上，指向**Open** ，然後按一下**檔案**。  
   
-12. 尋找 TextFile1.myext 並按一下**開啟**。  
+12. 尋找**TextFile1.myext** ，然後按一下**開啟**。  
   
      現在應該載入的檔案。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器處理各種不同的文字為基礎的檔案類型和適用於緊密語言服務，以提供一組豐富的功能，例如語法反白顯示，比對括號和 IntelliSense 文字自動完成及成員完成清單。 如果您正在使用以文字為基礎的檔案，您可以使用核心編輯器，以及支援您的特定檔案類型的自訂語言服務。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器處理各種不同的文字為基礎的檔案類型和密切搭配語言服務提供一組豐富的功能，例如語法醒目提示、 括號對稱和 IntelliSense 文字自動完成，並列出成員自動完成。 如果您正在使用以文字為基礎的檔案，您可以使用核心編輯器，以及支援您的特定檔案類型的自訂語言服務。  
   
- VSPackage 可以叫用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器，藉由提供編輯器 factory。 載入與它相關聯的檔案時，會使用這個編輯器 factory。 如果檔案是專案的一部分，然後核心編輯器會自動叫用除非覆寫您的 VSPackage。 不過，如果在專案外載入該檔案，然後核心編輯器必須明確地叫用您的 VSPackage。  
+ VSPackage 可以叫用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器所提供的編輯器 factory。 此編輯器 factory 會使用任何具有與其相關聯的檔案載入的時間。 如果檔案是專案的一部分，核心編輯器會自動叫用，但覆寫 VSPackage。 不過，如果檔案已載入專案外，核心編輯器必須明確地叫用 VSPackage。  
   
  如需有關核心編輯器的詳細資訊，請參閱[核心編輯器內](../extensibility/inside-the-core-editor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [核心編輯器內](../extensibility/inside-the-core-editor.md)   
- [執行個體化使用舊版 API 的核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
+ [在核心編輯器](../extensibility/inside-the-core-editor.md)   
+ [使用舊版 API 具現化核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)

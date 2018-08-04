@@ -1,5 +1,5 @@
 ---
-title: IDE Guid |Microsoft 文件
+title: IDE Guid |Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,16 +13,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130267"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498180"
 ---
-# <a name="ide-guids"></a>IDE 的 Guid
+# <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants>類別發行 Guid 的整合式的開發環境 (IDE) 的某些部分，如下所列在下表中。
+<xref:Microsoft.VisualStudio.VSConstants>類別發行的整合式的開發環境 (IDE) 的某些部分的 Guid 下, 表所示。
 
 ## <a name="core-systems"></a>核心系統
 
@@ -39,7 +39,7 @@ ms.locfileid: "31130267"
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_TextEditorFactory>|8B382828-6202-11d1-8870-0000F87579D2|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsNewProjectPseudoFolder>|DCF2A94A-45B0-11d1-ADBF-00C04FB6BE4C|
 
-## <a name="broadly-visible-components"></a>廣泛可見的元件
+## <a name="broadly-visible-components"></a>大致上可見的元件
 
 |常數|GUID|
 |--------------|----------|
@@ -98,7 +98,7 @@ ms.locfileid: "31130267"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>工作清單 Guid
+## <a name="task-list-guids"></a>工作清單的 Guid
 
 |常數|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ ms.locfileid: "31130267"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>元件選擇器頁面 Guid
+## <a name="component-selector-page-guids"></a>元件選取器頁面 Guid
 
 |常數|GUID|
 |---------------|----------|
@@ -122,7 +122,7 @@ ms.locfileid: "31130267"
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage>|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_SolutionPage>|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>其他介面的 Guid
+## <a name="miscellaneous-shell-guids"></a>其他命令介面的 Guid
 
 |常數|GUID|
 |---------------|----------|
@@ -132,6 +132,6 @@ ms.locfileid: "31130267"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Managed 程式碼中的 COM 常數](../extensibility/com-constants-in-managed-code.md)
+- [在 managed 程式碼的 COM 常數](../extensibility/com-constants-in-managed-code.md)
 - [IDE 常數](../extensibility/ide-constants.md)
-- [用來擴充專案系統的 IDE 定義的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [IDE 定義的命令，來擴充專案 s ystems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -1,5 +1,5 @@
 ---
-title: 消除 ~ SAK 檔案 |Microsoft 文件
+title: 消除 ~ SAK 檔案 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129637"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497946"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
-在原始檔控制外掛程式 API 1.2 ~ SAK 檔案已由功能旗標和偵測原始檔控制外掛程式支援 MSSCCPRJ 檔案，並在共用簽出的新函式取代。  
+在 原始檔控制外掛程式 API 1.2 *~ SAK*功能旗標已取代檔案和新函式來偵測是否原始檔控制外掛程式支援*MSSCCPRJ*檔案和共用簽出。  
   
 ## <a name="sak-files"></a>~ SAK 檔案  
- Visual Studio.NET 2003 中建立暫存檔案前面加上 ~ SAK。 這些檔案可用來判斷是否要支援原始檔控制外掛程式：  
+Visual Studio.NET 2003年建立暫存檔案前面加上 *~ SAK*。 這些檔案用來判斷是否要支援原始檔控制外掛程式：  
   
--   MSSCCPRJ。SCC 檔案。  
+- *MSSCCPRJ.SCC*檔案。  
   
--   多個 （共用） 的簽出。  
-  
- 外掛程式的支援提供的進階函式在原始檔控制外掛程式 API 1.2，IDE 可以偵測到這些功能，而不需要建立透過使用新功能、 旗標和函式，在下列各節詳細的暫存檔案。  
+- 多個 （共用） 的簽出。  
+    
+外掛程式的支援提供的進階函式在原始檔控制外掛程式 API 1.2，IDE 可以偵測到這些功能，而不需要建立暫存檔案，透過使用新功能、 旗標和函式，下列各節中詳述。  
   
 ## <a name="new-capability-flags"></a>新的功能旗標  
  `SCC_CAP_SCCFILE`  
@@ -44,14 +44,14 @@ ms.locfileid: "31129637"
   
  [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
- 如果原始檔控制外掛程式支援多重 （共用） 的簽出，則它會宣告`SCC_CAP_MULTICHECKOUT`功能，而且會實作`SccIsMultiCheckOutEnabled`函式。 在任何原始檔控制專案的簽出作業發生時，會呼叫此函數。  
+ 如果原始檔控制外掛程式支援多重 （共用） 的簽出，則它會宣告`SCC_CAP_MULTICHECKOUT`功能，並實作`SccIsMultiCheckOutEnabled`函式。 在任何原始檔控制專案的簽出作業發生時，會呼叫此函數。  
   
- 如果原始檔控制外掛程式支援建立和使用 MSSCCPRJ。SCC 檔案，則它會宣告`SCC_CAP_SCCFILE`功能，而且會實作[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 呼叫此函式的檔案清單。 此函數會傳回`TRUE/FALSE`每個檔案，表示 Visual Studio 是否應該使用 MSSCCPRJ。它的 SCC 檔案。 如果原始檔控制外掛程式選擇不支援這些新功能和函數，它可以使用下列登錄機碼以停用這些檔案的建立：  
+ 如果原始檔控制外掛程式支援建立和使用*MSSCCPRJ.SCC*檔案，則它會宣告`SCC_CAP_SCCFILE`功能，而且會實作[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 一份檔案，會呼叫此函數。 此函數會傳回`TRUE' or 'FALSE`每個檔案，表示是否應該使用 Visual Studio *MSSCCPRJ.SCC*為它的檔案。 如果原始檔控制外掛程式選擇不支援這些新功能和函式，它可以使用下列登錄機碼來停用這些檔案的建立：  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateTemporaryFilesInSourceControl"= dword: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword: 00000001*  
   
 > [!NOTE]
->  如果這個登錄機碼設定為 dword: 00000000，它相當於索引鍵不存在，要與 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案並不支援共用簽出。  
+>  如果此登錄機碼設為*dword:00000000*，它就相當於索引鍵不存在，正在 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為*dword: 00000001*，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援*MSSCCPRJ.SCC*檔案，並不支援共用簽出。  
   
 ## <a name="see-also"></a>另請參閱  
- [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [原始檔控制外掛程式 API 版本 1.2 中最新消息](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
