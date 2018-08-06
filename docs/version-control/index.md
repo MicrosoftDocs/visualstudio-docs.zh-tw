@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279904"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510818"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
 版本控制系統可協助您追蹤程式碼隨著時間的變更。 當您進行變更時，版本控制系統就會為您的檔案建立快照。 版本控制系統會永久儲存快照，讓您可以在稍後需要時叫用。 Visual Studio 提供 [Git](/vsts/git/index) 與 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/index)。 若要在兩種系統之間下決定，請參閱[為您的專案選擇合適的版本控制](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json)。
 
 ## <a name="git"></a>Git
-Git 是現今最常使用的版本控制系統，並且快速成為版本控制標準。 Git 是分散式版本控制系統，亦即您的本機程式碼複本即是完整的版本控制存放庫。 這些功能完整的本機存放庫可以讓離線或遠端工作變得更容易。 您在本機認可您的工作，然後將存放庫的複本與伺服器上的複本同步。 此種模式與集中式版本控制不同。集中式版本控制的用戶端必須與伺服器同步程式碼，之後才能建立新版本的程式碼。
+Git 是現今最常使用的版本控制系統，並且快速成為版本控制標準。 Git 是分散式版本控制系統，亦即您的本機程式碼複本即是完整的版本控制存放庫。 這些功能完整的本機存放庫讓離線或從遠端工作變得更加容易。 您在本機認可您的工作，然後將存放庫的複本與伺服器上的複本同步。 此種模式與集中式版本控制不同。集中式版本控制的用戶端必須與伺服器同步程式碼，之後才能建立新版本的程式碼。
 
 <ul class="panelContent cardsFTitle">
     <li>
