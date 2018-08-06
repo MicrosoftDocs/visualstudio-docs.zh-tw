@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2be7a0fdb3204647f6874d2dceaa81eb8cac3756
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952270"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566735"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 
-本文說明的元素和圖層模型，您可以瀏覽和使用程式碼更新中的關聯性。 如需從使用者的觀點來看的相依性圖表的詳細資訊，請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)和[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。
+這篇文章描述的項目和關聯性，在圖層模型中，您可以瀏覽和使用程式碼更新。 如需有關從使用者的觀點來看的相依性圖表的詳細資訊，請參閱 <<c0> [ 相依性圖表： 參考](../modeling/layer-diagrams-reference.md)並[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>本主題中所述的模型是在多個一般外觀<xref:Microsoft.VisualStudio.GraphModel>模型。 如果您要撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您要撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>本主題中所述的模型是一個外觀，一般<xref:Microsoft.VisualStudio.GraphModel>模型。 如果您正在撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您正在撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。
 
 ## <a name="transactions"></a>異動
 
-當您更新模型時，請考慮將變更納入`ILinkedUndoTransaction`，將您的變更到一個異動。 如果任何變更失敗時，會回復整個交易。 如果使用者復原的變更，所有會變更復原在一起。
+當您更新模型時，請考慮將變更納入`ILinkedUndoTransaction`，將您的變更到一個異動。 如果任何一種變更失敗時，會回復整個交易。 如果使用者復原的變更，則所有變更都都會復原在一起。
 
-```
+```csharp
 using (ILinkedUndoTransaction t =
         LinkedUndoContext.BeginTransaction("a name"))
 {
@@ -92,13 +92,13 @@ IEnumerable<ILayerComment> comments =
 
 ## <a name="artifact-references"></a>成品參考
 
-成品參考 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) 代表圖層與專案項目 (如檔案、類別或資料夾) 之間的連結。 使用者建立成品建立圖層或從方案總管、 類別檢視或物件瀏覽器拖曳項目拖曳到相依性圖表中加入時。 您可以將任意數目的成品參考連結至圖層。
+成品參考 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) 代表圖層與專案項目 (如檔案、類別或資料夾) 之間的連結。 建立圖層或從方案總管]、 [類別檢視] 或 [物件瀏覽器拖曳項目，拖曳到相依性圖表中加入時，使用者就會建立成品。 您可以將任意數目的成品參考連結至圖層。
 
-[圖層總管] 中的每個資料列都會顯示成品參考。 如需詳細資訊，請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。
+[圖層總管] 中的每個資料列都會顯示成品參考。 如需詳細資訊，請參閱 <<c0> [ 從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。
 
 專注於成品參考的主體類型和方法如下：
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Categories 屬性指出參考哪一種類型的成品 (如類別、可執行檔或組件)。 Categories 屬性決定 Identifier 如何識別目標成品。
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Categories 屬性指出參考哪一種類型的成品 (如類別、可執行檔或組件)。 類別目錄屬性會決定 Identifier 如何識別目標成品。
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> 會透過 <xref:EnvDTE.Project> 或 <xref:EnvDTE.ProjectItem> 建立成品參考。 這是一個非同步作業。 因此，您通常會提供建立完成時呼叫的回呼。
 
@@ -106,13 +106,13 @@ IEnumerable<ILayerComment> comments =
 
 ## <a name="shapes-and-diagrams"></a>圖案和圖表
 
-兩個物件都是用來代表圖層模型中的每個項目：<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>。 `IShape` 代表圖案在圖表上的位置和大小。 在圖層模型中，每個`ILayerElement`有一個`IShape`，和每`IShape`相依性圖表有一個`ILayerElement`。 `IShape` 也用於 UML 模型。 因此，不是每個 `IShape` 都有圖層項目。
+兩個物件都是用來代表圖層模型中的每個項目：<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>。 `IShape` 代表圖案在圖表上的位置和大小。 圖層模型中每個`ILayerElement`有一個`IShape`，而每個`IShape`相依性圖表有一個`ILayerElement`。 `IShape` 也用於 UML 模型。 因此，不是每個 `IShape` 都有圖層項目。
 
 同樣地，<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> 會顯示在一個 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 上。
 
 在自訂命令或手勢處理常式的程式碼中，您可以透過 `DiagramContext` 匯入，取得目前圖表以及目前圖案選取範圍：
 
-```
+```csharp
 public class ... {
 [Import]
     public IDiagramContext DiagramContext { get; set; }

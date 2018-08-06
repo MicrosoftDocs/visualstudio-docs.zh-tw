@@ -12,27 +12,27 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: daa44f17fcf0eb61f5c4ce6c1bfada685a20f45e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951826"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566777"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 
-您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改**剪下**，讓它不包含機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
+您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以在其中修改**剪下**，以便排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
 > [!NOTE]
-> 如果您想要建立您自己的功能表命令，請參閱[如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+> 如果您想要建立您自己的功能表命令，請參閱[如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 ## <a name="what-commands-can-you-modify"></a>您可以修改哪些命令？
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令
 
-1.  在`DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，為分公司的`CommandSet.tt`。
+1.  在 `DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。
 
-2.  此檔案中尋找類別其名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
+2.  尋找類別，此檔案中名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
 
 3.  在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。
 
@@ -55,11 +55,11 @@ ms.locfileid: "31951826"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  在**DslPackage**，建立名為的資料夾**自訂程式碼**。 在這個資料夾中，建立新的類別檔案命名為`CommandSet.cs`。
+2.  在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。
 
 3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如: 
 
-    ```
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
@@ -67,11 +67,11 @@ ms.locfileid: "31951826"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **請注意**如果您使用的類別檔案範本來建立新的檔案，您必須更正命名空間和類別名稱。
+     **請注意**如果您使用類別檔案範本來建立新的檔案時，您必須更正命名空間和類別名稱。
 
 ## <a name="override-the-command-methods"></a>覆寫命令方法
 
-大部分的命令有兩個相關聯的方法： 具有名稱的方法類似`ProcessOnStatus`...判斷命令是否應為可見並已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。
+大多數命令具有兩個相關聯的方法： 具有名稱的方法，例如`ProcessOnStatus`...判斷命令是否應為可見且已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行此命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上
 
@@ -124,9 +124,9 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-如果您的程式碼變更存放區 (例如建立、刪除或更新項目或連結)，您必須在異動內進行。 如需詳細資訊，請參閱[如何建立和更新模型項目](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+如果您的程式碼變更存放區 (例如建立、刪除或更新項目或連結)，您必須在異動內進行。 如需詳細資訊，請參閱 <<c0> [ 如何建立和更新模型項目](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
-### <a name="write-the-code-of-the-methods"></a>撰寫方法的程式碼
+### <a name="write-the-code-of-the-methods"></a>撰寫程式碼的方法
 
 下列程式碼片段在這些方法中通常很有用：
 
@@ -142,7 +142,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 -   `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
 
-如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -152,5 +152,5 @@ protected override void ProcessOnMenuDeleteCommand()
 - [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK-循環圖表範例。廣泛的 DSL 自訂](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [範例程式碼： 循環圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK-電路圖表範例。廣泛的 DSL 自訂](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [程式碼範例： 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

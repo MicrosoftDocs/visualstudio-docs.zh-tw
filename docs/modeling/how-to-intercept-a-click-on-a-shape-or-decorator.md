@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e78438eba52a0e5d5d826ae2fa28503733c7ea3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952296"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567399"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
-下列程序示範如何攔截按一下圖形或圖示裝飾項目。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。
+下列程序示範如何攔截圖案或 decorator 上的圖示。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。
 
-## <a name="to-intercept-clicks-on-shapes"></a>若要攔截在圖形上按下
- 在產生程式碼檔案中，從不同的程式碼檔案中的 Dsl 專案，撰寫圖形類別的部分類別定義。 覆寫`OnDoubleClick()`或其中一個名稱開頭的方法`On...`。 例如: 
+## <a name="to-intercept-clicks-on-shapes"></a>若要攔截在圖形上的點選
+ 在 Dsl 專案中產生的程式碼檔案中，從不同的程式碼檔案寫入 shape 類別的部分類別定義。 覆寫`OnDoubleClick()`或其中一個名稱開頭的方法`On...`。 例如: 
 
-```
+```csharp
 public partial class MyShape // change
   {
     public override void OnDoubleClick(DiagramPointEventArgs e)
@@ -36,22 +36,22 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  設定`e.Handled`至`true`，除非您想要傳遞給包含圖形或圖表的事件。
+>  設定`e.Handled`至`true`，除非您想要傳遞至包含的圖形或圖表的事件。
 
-## <a name="to-intercept-clicks-on-decorators"></a>若要攔截點選裝飾項目
- ImageField 類別，具有 OnDoubleClick 方法的執行個體上執行映像裝飾項目。 如果您撰寫 ImageField 子類別，您可以攔截點選。 欄位會設定 InitializeShapeFields 方法中。 因此，您必須變更您的子類別，而不是一般 ImageField 具現化該方法。 InitializeShapeFields 方法是產生的程式碼的圖案類別中。 如果您設定，您可以覆寫圖形類別其`Generates Double Derived`屬性，如下列程序所述。
+## <a name="to-intercept-clicks-on-decorators"></a>若要攔截的裝飾項目上按下
+ OnDoubleClick 方法的 ImageField 類別的執行個體上執行映像的裝飾項目。 您可以攔截按下滑鼠，如果您要撰寫 ImageField 子類別。 欄位為 InitializeShapeFields 方法中。 因此，您必須變更您的子類別，而不是一般 ImageField 具現化該方法。 InitializeShapeFields 方法是在產生的程式碼的圖形類別。 如果您設定，您可以覆寫 shape 類別其`Generates Double Derived`屬性，如下列程序中所述。
 
- 雖然 InitializeShapeFields 是執行個體方法，它會呼叫一次只為每個類別。 因此，只有一個執行個體 ClickableImageField 存在每個類別，而不在圖表中的每個圖形的一個執行個體中每個欄位。 當使用者按兩下執行個體時，您必須識別哪一個執行個體被叫用，如範例的程式碼所示。
+ 雖然 InitializeShapeFields 是執行個體方法，它會呼叫一次只能針對每個類別。 因此，只有一個執行個體 ClickableImageField 存在每個類別，而不在圖表中的每個圖形的一個執行個體中每個欄位。 當使用者按兩下執行個體時，您必須識別哪一個執行個體已叫用，如範例中的程式碼所示。
 
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>若要攔截按一下圖示裝飾項目
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>若要攔截上的圖示裝飾項目
 
-1.  開啟或建立 DSL 方案。
+1.  開啟或建立的 DSL 方案。
 
-2.  選擇或建立的圖形圖示裝飾項目，並將它對應到網域類別。
+2.  選擇或建立圖案具有圖示裝飾項目，並將它對應至網域類別。
 
-3.  程式碼檔案中的檔案不同`GeneratedCode`資料夾中，建立新的子類別的 ImageField:
+3.  在程式碼檔案中的檔案不同`GeneratedCode`資料夾中，建立新的子類別的 ImageField:
 
-    ```
+    ```csharp
     using Microsoft.VisualStudio.Modeling;
     using Microsoft.VisualStudio.Modeling.Design;
     using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -85,11 +85,11 @@ public partial class MyShape // change
     }
     ```
 
-     您應該設定 Handled 設為 true，如果您不想要傳遞到包含圖形的事件。
+     您應該設定為 true，如果您不想要傳遞給包含的圖形事件的處理。
 
-4.  加入下列的部分類別定義來覆寫中圖形 classs InitializeShapeFields 方法。
+4.  加入下列的部分類別定義來覆寫在圖形 classs InitializeShapeFields 方法。
 
-    ```
+    ```csharp
     public partial class MyShape // change
     {
      protected override void InitializeShapeFields
@@ -118,34 +118,34 @@ public partial class MyShape // change
 
 2.  按兩下圖形的執行個體上的圖示。 測試訊息應該會出現。
 
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>攔截按一下並拖曳 CompartmentShape 清單上
- 下列範例可讓使用者拖曳的方式重新排列區間圖案中的項目。 若要執行此程式碼：
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>攔截按一下和拖曳 CompartmentShape list
+ 下列範例可讓使用者藉由拖曳它們重新排序區間圖形中的項目。 若要執行此程式碼：
 
-1.  使用建立新的 DSL 方案**類別圖表**方案範本。
+1.  使用建立新的 DSL 方案**類別圖表**解決方案範本。
 
-     您也可以使用您自己的方案包含區間圖案。 此程式碼會假設為圖形所代表的模型項目與表示區間清單項目中的項目之間的內嵌關聯性。
+     您也可以使用您自己的方案中，含有區間圖形。 此程式碼會假設是圖形時，所代表的模型項目，以及表示區間清單項目中的元素之間內嵌關聯性。
 
-2.  設定**會產生兩個衍生**區間圖案的屬性。
+2.  設定**產生雙衍生**區間圖形的屬性。
 
 3.  在檔案中加入下列程式碼**Dsl**專案。
 
-4.  調整以符合您自己的 DSL 這個程式碼中的網域類別和圖形名稱。
+4.  調整以符合您自己的 DSL 的這段程式碼中的網域類別和圖形名稱。
 
- 在 [摘要] 程式碼的運作方式如下。 在此範例中，`ClassShape`區間圖案的名稱。
+ 總而言之，程式碼的運作方式，如下所示。 在此範例中，`ClassShape`區間圖形的名稱。
 
--   滑鼠事件處理常式的一組會附加至每一個分隔執行個體中，在建立時。
+-   一組的滑鼠事件處理常式會附加至每個區間的執行個體建立時。
 
 -   `ClassShape.MouseDown`事件會儲存目前的項目。
 
--   當滑鼠移出目前的項目，建立 MouseAction 的執行個體，設定資料指標以及捕捉滑鼠，直到釋放它為止。
+-   當滑鼠移出目前的項目，建立 MouseAction 的執行個體，其設定資料指標，並擷取滑鼠，直到釋放它為止。
 
-     為避免干擾其他滑鼠動作，例如選取項目，文字滑鼠離開原始項目之前，不會建立 MouseAction。
+     若要避免干擾其他的滑鼠動作，例如選取文字的項目，直到滑鼠離開原始項目，才會建立 MouseAction。
 
-     建立 MouseAction 的替代方式是只接聽 MouseUp。 不過，這會無法正常運作如果使用者拖曳外區間之後釋放滑鼠按鈕。 MouseAction 才能夠執行適當的動作，不論其中放開滑鼠。
+     建立 MouseAction 的替代方式是只接聽 MouseUp。 不過，這會無法正常運作如果使用者放開滑鼠之後將它拖曳區間之外。 MouseAction 就能夠執行適當的動作，不論其中放開滑鼠。
 
--   放開滑鼠，MouseAction.MouseUp 重新排列模型項目之間連結的順序。
+-   當已釋放滑鼠時，MouseAction.MouseUp 重新排列模型項目之間連結的順序。
 
--   角色順序的變更就會引發更新顯示的規則。 已定義這項行為，並不需要任何額外的程式碼。
+-   角色順序的變更就會引發更新顯示的規則。 已經定義此行為，並不需要任何額外的程式碼。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

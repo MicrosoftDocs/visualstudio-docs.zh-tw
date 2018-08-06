@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950539"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567265"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
-DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗。
+# <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 
-## <a name="embedding-a-diagram"></a>內嵌圖表
+您可以在 Windows 控制項，就會出現在 Visual Studio 視窗中內嵌 DSL 圖表。
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>若要將內嵌 Windows 控制項的 DSL 圖表
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>DSL 圖表嵌入 Windows 控制項
 
 1.  加入新**使用者控制項**DslPackage 專案的檔案。
 
 2.  將面板控制項新增至使用者控制項。 此面板會包含 DSL 圖表。
 
-     將您需要其他控制項。
+     新增您需要其他控制項。
 
      設定控制項的錨點屬性。
 
-3.  在 方案總管 中，以滑鼠右鍵按一下 使用者控制項檔案，然後按一下**檢視程式碼**。 新增此建構函式和變數的程式碼：
+3.  在 方案總管 中，以滑鼠右鍵按一下 使用者控制項檔案，然後按一下 **檢視程式碼**。 加入程式碼的這個建構函式和變數：
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
-4.  將新檔案加入至 DslPackage 專案中，使用下列內容：
+4.  將新檔案新增至 DslPackage 專案中，使用下列內容：
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
             }
             return container;
     } } } }
-
     ```
 
-5.  若要測試 DSL，請按 f5 鍵，開啟範例模型檔案。 圖表會顯示在控制項內。 [工具箱] 和其他功能可以正常運作。
+5.  若要測試 DSL，請按**F5**並開啟範例模型檔案。 在控制項內顯示圖表。 [工具箱] 和其他功能可以正常運作。
 
-#### <a name="updating-the-form-using-store-events"></a>更新使用儲存事件表單
+## <a name="update-the-form-using-store-events"></a>更新使用市集事件表單
 
-1.  在表單設計工具中，加入**ListBox**名為`listBox1`。 這會在模型中顯示之項目的清單。 它將會保留在模型使用 synchronism*儲存事件*。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1.  在表單設計工具中，加入**ListBox**名為`listBox1`。 這會在模型中顯示的項目清單。 它與模型使用同步處理*儲存事件*。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
 2.  在自訂程式碼檔案中，覆寫進一步 DocView 類別的方法：
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  在使用者控制項背後的程式碼，插入方法，以接聽加入和移除的項目：
+3.  在使用者控制項背後的程式碼，插入方法，以接聽新增和移除的項目：
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,12 +137,11 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  若要測試 DSL，按 f5 鍵在實驗執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，開啟範例模型檔案。
+4.  若要測試 DSL，請按**F5**和在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。
 
-     請注意，清單方塊會顯示在模型中，元素的清單，並確認它正確之後任何的新增或刪除，以及復原與取消復原之後。
+     請注意，清單方塊會顯示在模型中，項目清單，並確認它正確之後任何新增或刪除作業，以及復原與取消復原之後。
 
 ## <a name="see-also"></a>另請參閱
 

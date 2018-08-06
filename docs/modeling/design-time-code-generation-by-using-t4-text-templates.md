@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117689"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567229"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -185,7 +185,7 @@ ms.locfileid: "37117689"
 
 3.  儲存檔案，並檢查產生的檔案，該檔案現在會包含下列程式碼：
 
-    ```
+    ```csharp
     class MyGeneratedClass {
       private int P1 = 0;
       private int P2 = 0;
@@ -303,7 +303,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!NOTE]
 > 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-```
+```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
 <PropertyGroup>
    <TransformOnBuild>true</TransformOnBuild>

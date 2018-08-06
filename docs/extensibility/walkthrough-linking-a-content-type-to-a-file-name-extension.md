@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 將內容類型連結至檔案的副檔名 |Microsoft 文件
+title: 逐步解說： 將內容類型連結至副檔名為 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144891"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566749"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至檔案的副檔名
-您可以定義您自己的內容類型，然後連結它透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能檔案的副檔名。 在某些情況下，檔案名稱的副檔名已經定義語言服務;不過，使用 MEF 您仍必須將它連結至內容類型。  
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至副檔名
+您可以定義您自己的內容類型，並連結到它的副檔名，透過使用編輯器的 Managed Extensibility Framework (MEF) 擴充功能。 在某些情況下，檔案名稱的副檔名已經定義的語言服務。 但是，若要使用它與 MEF，您必須仍將它連結至內容類型。  
   
 ## <a name="prerequisites"></a>必要條件  
- 啟動 Visual Studio 2015 中，請勿從 「 下載中心 」 未安裝 Visual Studio SDK。 它是包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 從 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從下載中心取得。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-mef-project"></a>建立 MEF 專案  
+## <a name="create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名`ContentTypeTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`ContentTypeTest`。  
   
-2.  在**source.extension.vsixmanifest**檔案，請移至**資產**索引標籤，然後設定**類型**欄位設為**Microsoft.VisualStudio.MefComponent**、**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
+2.  在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
   
-## <a name="defining-the-content-type"></a>定義的內容類型  
+## <a name="define-the-content-type"></a>內容類型定義  
   
-1.  將類別檔案並將其命名`FileAndContentTypes`。  
+1.  將類別檔案並將它命名`FileAndContentTypes`。  
   
 2.  加入下列組件的參考：  
   
@@ -44,7 +44,7 @@ ms.locfileid: "31144891"
   
     3.  Microsoft.VisualStudio.CoreUtility  
   
-3.  加入下列`using`指示詞。  
+3.  新增下列`using`指示詞。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -60,7 +60,7 @@ ms.locfileid: "31144891"
     {. . .}  
     ```  
   
-5.  這個類別，在匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名為 「 隱藏 」，並宣告其基底定義為 「 文字 」。  
+5.  在此類別中，匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名為 「 隱藏 」，並宣告其基底定義為"text"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -72,9 +72,9 @@ ms.locfileid: "31144891"
     }  
     ```  
   
-## <a name="linking-a-file-name-extension-to-a-content-type"></a>連結至內容類型的檔案名稱副檔名  
+## <a name="link-a-file-name-extension-to-a-content-type"></a>連結至內容類型的副檔名  
   
--   若要將此內容類型對應至檔案的副檔名，匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>，副檔名為".hid 」 和內容類型 「 隱藏 」。  
+-   若要將這個內容類型對應至檔案的副檔名，匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有延伸模組 *.hid*和內容類型 「 隱藏 」。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -91,11 +91,11 @@ ms.locfileid: "31144891"
     }  
     ```  
   
-## <a name="adding-the-content-type-to-an-editor-export"></a>內容類型加入編輯器匯出  
+## <a name="add-the-content-type-to-an-editor-export"></a>將內容類型加入至編輯器匯出  
   
-1.  建立編輯器延伸模組。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說： 建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說： 建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
-2.  加入您在此程序中定義的類別。  
+2.  新增您在此程序中定義的類別。  
   
 3.  當您匯出延伸模組類別時，新增<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「 隱藏 」 給它的型別。  
   

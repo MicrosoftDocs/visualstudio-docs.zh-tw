@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177097"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566764"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 不變性 API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 可讓程式鎖定部分或完整定義域專屬語言 (DSL) 模型，讓它可以讀取但不是會變更。 無法使用這個唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。
@@ -31,7 +31,7 @@ ms.locfileid: "39177097"
 ## <a name="setting-and-getting-locks"></a>設定和取得鎖定
  您可以在存放區、 磁碟分割或個別項目上設定鎖定。 比方說，這個陳述式將會遭到刪除，防止模型項目，並也會造成無法變更其屬性：
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>鎖定資料分割和存放區
  鎖定也可以套用至資料分割和存放區。 設定磁碟分割的鎖定套用至資料分割中的所有項目。 因此，比方說，下列陳述式會造成資料分割中的所有項目無法被刪除，無論他們自己的鎖定狀態。 不過，其他鎖定這類`Locks.Property`仍然可以在個別的項目上設定：
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>若要定義鎖定原則
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 具有下列定義：
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  例如: 
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>若要讓以服務形式供您的原則
  在您`DslPackage`專案中，加入新的檔案，其中包含類似下列範例的程式碼：
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

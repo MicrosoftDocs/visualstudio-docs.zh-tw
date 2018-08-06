@@ -9,22 +9,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a55cbf2bf8d741594bae273389086e50dcc981
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953127"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566891"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
-當您在圖形中定義的文字裝飾項目時，則為代表 TextField。 有關 TextFields 和其他 ShapeFields 初始化的詳細資訊，請檢查 Dsl\GeneratedCode\Shapes.cs DSL 方案中。
+當您在圖形中定義的文字裝飾項目時，它被以文字欄位。 例如 TextFields 和其他 ShapeFields 初始化的詳細資訊，請在您的 DSL 方案中檢查 Dsl\GeneratedCode\Shapes.cs。
 
- TextField 是管理圖形，例如指派給標籤的空間內的區域的物件。 其中一個 TextField 執行個體共用相同類別的許多圖形之間。 TextField 執行個體不會儲存每個執行個體，分別為標籤的文字： 反而`GetDisplayText(ShapeElement)`方法會採用圖形做為參數，並可以查詢的文字取決於目前的圖形和其模型項目狀態。
+ 文字欄位是物件，該圖形，例如指派給標籤的空間內的區域物件。 其中一個文字欄位的執行個體共用相同類別的許多圖形之間。 文字欄位的執行個體不會儲存每個執行個體，分別為標籤的文字： 反而`GetDisplayText(ShapeElement)`方法會做為參數，圖形，並可以查閱相依於目前的圖形與模型項目狀態的文字。
 
 ## <a name="how-the-appearance-of-a-text-field-is-determined"></a>如何判斷文字欄位的外觀
- `DoPaint()`呼叫方法來顯示欄位在螢幕上。 您可以覆寫預設`DoPaint(),`或者您可以覆寫其所呼叫的方法。 下列的簡化的版本的預設方法，可協助您了解如何覆寫預設行為：
+ `DoPaint()`呼叫方法來顯示欄位在螢幕上。 您可以覆寫預設`DoPaint(),`或者您可以覆寫其所呼叫的方法。 以下的簡化的版本的預設方法可協助您了解如何覆寫預設行為：
 
-```
+```csharp
 // Simplified version:
 public override void DoPaint(DiagramPaintEventArgs e, ShapeElement parentShape)
 {
@@ -83,19 +83,19 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
 ```
 
- 有數個其他成對的`Get`方法和`Default`屬性，例如`DefaultMultipleLine/GetMultipleLine()`。 您可以將值指派給預設屬性，來變更形狀欄位的所有執行個體的值。 若要讓另一個，或依賴的圖形或其模型項目狀態而異一個圖形的執行個體的值，覆寫`Get`方法。
+ 有數個其他組`Get`方法和`Default`屬性，例如`DefaultMultipleLine/GetMultipleLine()`。 您可以將值指派給預設屬性，變更形狀欄位的所有執行個體的值。 若要讓另一個，或依賴的圖形或其模型項目狀態會因一個圖形的執行個體的值，覆寫`Get`方法。
 
 ## <a name="static-customizations"></a>靜態的自訂項目
- 如果您想要變更這個圖形欄位的每個執行個體，請先找出是否可以設定屬性，DSL 定義中。 例如，您可以在 [屬性] 視窗中設定字型的大小和樣式。
+ 如果您想要變更此形狀欄位的每個執行個體，請先找出是否設定屬性，以及在 DSL 定義中。 例如，您可以在 [屬性] 視窗中設定字型的大小和樣式。
 
- 如果沒有，則覆寫`InitializeShapeFields`圖形類別和指派到適當的值的方法`Default...`文字欄位的屬性。
+ 如果沒有，則覆寫`InitializeShapeFields`shape 類別，以及指派值給適當的方法`Default...`文字欄位的屬性。
 
 > [!WARNING]
->  若要覆寫`InitializeShapeFields()`，您必須設定**會產生兩個衍生**圖形類別的屬性`true`DSL 定義中。
+>  若要覆寫`InitializeShapeFields()`，您必須設定**產生雙衍生**屬性的圖形類別`true`DSL 定義中。
 
- 在此範例中，圖形會有將用於使用者註解的文字欄位。 我們想要使用標準註解的字型。 因為標準的字型樣式集中，所以我們可以設定預設字型 id:
+ 在此範例中，圖形會有將用於使用者註解的文字欄位。 我們想要使用標準的註解的字型。 由於這是標準的字型樣式集中，我們可以設定預設字型 id:
 
-```
+```csharp
 
  partial class ExampleShape
 {   protected override void InitializeShapeFields(IList<ShapeField> shapeFields)
@@ -109,16 +109,16 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
 ```
 
-## <a name="dynamic-customizations"></a>動態自訂項目
- 若要讓不同的外觀取決於其模型項目的圖形的狀態，衍生您自己的子類別`TextField`並覆寫一個或多個`Get...`方法。 您也必須覆寫您的形狀 InitializeShapeFields 方法，並且 TextField 的執行個體取代您自己的類別的執行個體。
+## <a name="dynamic-customizations"></a>動態的自訂項目
+ 若要讓不同的外觀取決於狀態的圖形或其模型項目，衍生您自己的子類別的`TextField`，並覆寫一個或多個`Get...`方法。 您也必須覆寫您的形狀 InitializeShapeFields 方法，並取代您自己的類別的執行個體中的文字欄位的執行個體。
 
- 下列範例會使相依於圖形的模型項目的布林值的網域屬性的狀態文字欄位的字型。
+ 下列範例會讓文字欄位的文字取決於圖形的模型項目的布林值的網域屬性的狀態。
 
- 若要執行此程式碼範例，建立新 DSL 的方案使用最少的語言的範本。 加入布林網域屬性`AlternateState`ExampleElement 網域類別。 新增圖示 decorator ExampleShape 類別，並設定其影像點陣圖檔案。 按一下**轉換所有範本**。 在 DSL 專案中，加入新的程式碼檔案，然後插入下列程式碼。
+ 若要執行此程式碼範例，建立新的 DSL 方案，使用 [最小語言] 範本。 將布林值的網域屬性加入`AlternateState`ExampleElement 網域類別。 將圖示裝飾項目加入 ExampleShape 類別，並設定其影像點陣圖檔案。 按一下 **轉換所有範本**。 在 DSL 專案中，加入新的程式碼檔案，並插入下列程式碼。
 
- 若要測試的程式碼，按下 F5，並在偵錯方案中，開啟範例圖表。 圖示的預設狀態應該會出現。 選取圖形，然後在 [屬性] 視窗中將值變更**AlternateState**屬性。 應該變更的項目名稱的字型。
+ 若要測試的程式碼，按下 f5 鍵，並在偵錯方案中，開啟範例圖表。 圖示的預設狀態應該會出現。 選取圖形，然後在 [屬性] 視窗中，將值變更**AlternateState**屬性。 應變更的項目名稱的字型。
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ...
@@ -173,38 +173,38 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="style-sets"></a>樣式設定
- 上述範例顯示如何變更的文字欄位，以及在任何可用的字型。 不過，較佳的方法是將它變更為一組樣式圖案或應用程式相關聯的其中一個。 若要這樣做，您覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A>或 GetTextBrushId()。
+ 上述範例顯示如何變更的文字欄位，以及在任何可用的字型。 不過，較佳的方法是將它變更為其中一組與圖形或應用程式相關聯的樣式。 若要這樣做，您覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A>或 GetTextBrushId()。
 
- 或者，請考慮變更您的形狀的樣式設定，藉由覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>。 這有的字型和筆刷形狀欄位之所有變更的效果。
+ 或者，請考慮變更您的形狀的樣式集，藉由覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>。 這有變更字型和筆刷形狀欄位之所有的效果。
 
-## <a name="customizing-image-fields"></a>自訂影像欄位
- 當您在圖形中，定義影像裝飾項目時，並定義影像圖形時，由 ImageField 管理圖形中的顯示區域。 有關 ImageFields 和其他 ShapeFields 初始化的詳細資訊，請檢查 Dsl\GeneratedCode\Shapes.cs DSL 方案中。
+## <a name="customizing-image-fields"></a>自訂映像欄位
+ 當您在圖形中，定義影像裝飾項目，而且當您定義了影像圖形，其中會顯示在圖形區域都會受到 ImageField。 例如 ImageFields 和其他 ShapeFields 初始化的詳細資訊，請在您的 DSL 方案中檢查 Dsl\GeneratedCode\Shapes.cs。
 
- ImageField 是管理圖形，例如指派給裝飾項目的空間內的區域的物件。 一個 ImageField 執行個體共用相同的圖形類別的許多圖形之間。 ImageField 執行個體不會儲存每個圖形的個別映像： 反而`GetDisplayImage(ShapeElement)`方法會採用圖形做為參數，並可以查詢圖形和其模型項目的目前狀態而定的映像。
+ ImageField 是物件，該圖形，例如指派給裝飾項的空間內的區域物件。 許多相同的圖形類別的形狀之間共用一個 ImageField 執行個體。 ImageField 執行個體不會儲存每個圖形的個別映像： 反而`GetDisplayImage(ShapeElement)`方法會做為參數，圖形，並相依於目前的圖形與模型項目狀態的映像可以查閱。
 
  如果您想特殊的行為，例如變數的映像，您可以建立您自己的類別衍生自 ImageField。
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>若要建立的 ImageField 子類別
 
-1.  設定**會產生兩個衍生**DSL 定義中的父圖案類別的屬性。
+1.  設定**產生雙衍生**DSL 定義中的父圖形類別的屬性。
 
 2.  覆寫`InitializeShapeFields`圖形類別的方法。
 
-    -   在 DSL 專案中，建立新的程式碼檔案，並將寫入圖形類別的部分類別定義。 覆寫的方法定義。
+    -   在 DSL 專案中，建立新的程式碼檔案並寫入 shape 類別的部分類別定義。 覆寫的方法定義。
 
-3.  檢查使用的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。
+3.  檢查的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。
 
-     在您覆寫的方法會呼叫基底方法，然後建立您自己的映像欄位類別的執行個體。 使用此選項可取代中的規則的影像欄位`shapeFields`清單。
+     在您覆寫的方法，呼叫基底方法，然後建立您自己的映像欄位類別的執行個體。 使用此選項可將一般的映像 欄位中取代`shapeFields`清單。
 
 ## <a name="dynamic-icons"></a>動態圖示
- 此範例會將相依於圖形的模型項目的狀態變更的圖示。
+ 此範例會將取決於圖形的模型項目的狀態變更的圖示。
 
 > [!WARNING]
->  這個範例示範如何進行動態影像的裝飾項目。 但如果您只想要根據的模型變數狀態的一或兩個映像之間切換，很容易建立數個影像的裝飾項目，在圖形上的相同位置中找到它們，然後設定 要取決於模型的特定值的可見性篩選變數。 若要設定此篩選器，選取圖形地圖 DSL 定義中，開啟 DSL 詳細資料 視窗中，然後按一下 裝飾項目 索引標籤。
+>  此範例示範如何進行動態影像的裝飾項目。 但如果您只想要根據的模型變數狀態的一或兩個映像之間切換，很容易建立數個影像的裝飾項目，在圖形上，相同的位置找到這些服務，然後設定取決於模型的特定值的可見性篩選變數。 若要設定此篩選器，選取圖形對應 DSL 定義中，開啟 [DSL 詳細資料] 視窗中，然後按一下 [裝飾項目] 索引標籤。
 
- 若要執行此程式碼範例，建立新 DSL 的方案使用最少的語言的範本。 加入布林網域屬性`AlternateState`ExampleElement 網域類別。 新增圖示 decorator ExampleShape 類別，並設定其影像點陣圖檔案。 按一下**轉換所有範本**。 在 DSL 專案中，加入新的程式碼檔案，然後插入下列程式碼。
+ 若要執行此程式碼範例，建立新的 DSL 方案，使用 [最小語言] 範本。 將布林值的網域屬性加入`AlternateState`ExampleElement 網域類別。 將圖示裝飾項目加入 ExampleShape 類別，並設定其影像點陣圖檔案。 按一下 **轉換所有範本**。 在 DSL 專案中，加入新的程式碼檔案，並插入下列程式碼。
 
- 若要測試的程式碼，按下 F5，並在偵錯方案中，開啟範例圖表。 圖示的預設狀態應該會出現。 選取圖形，然後在 [屬性] 視窗中將值變更**AlternateState**屬性。 應該再出現旋轉 90 度，該圖形上透過圖示。
+ 若要測試的程式碼，按下 f5 鍵，並在偵錯方案中，開啟範例圖表。 圖示的預設狀態應該會出現。 選取圖形，然後在 [屬性] 視窗中，將值變更**AlternateState**屬性。 應該再出現旋轉 90 度，該圖形上透過圖示。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

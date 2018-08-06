@@ -9,19 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 189e1020b3e96da4adf88793ba30cc78a25cd263
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381028"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567073"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
+
 您可以使用 Managed Extensibility Framework (MEF) 來擴充您的特定領域語言 (DSL)。 您或其他開發人員能夠撰寫 dsl 的延伸模組，而不需要變更程式碼與 DSL 定義中。 這類延伸包括功能表命令、 拖放處理常式，以及驗證。 使用者將能夠安裝 DSL，然後再選擇性地，安裝延伸模組。
 
- 此外，當您啟用 MEF DSL 中，它可以是您更輕鬆地撰寫您的 DSL 的功能即使它們皆已內建與 DSL。
+此外，當您啟用 MEF DSL 中，它可以是您更輕鬆地撰寫您的 DSL 的功能即使它們皆已內建與 DSL。
 
- 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要啟用以 MEF 擴充您的 DSL
 
@@ -30,7 +31,7 @@ ms.locfileid: "39381028"
      檔案名稱： `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    >  設定在這個檔案是定義於 DslPackage\GeneratedCode\Constants.tt GUID CommandSetId 相同的 GUID
+    > 設定在這個檔案是定義於 DslPackage\GeneratedCode\Constants.tt GUID CommandSetId 相同的 GUID
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -43,30 +44,30 @@ ms.locfileid: "39381028"
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-     檔案名稱： `CommandExtensionRegistrar.tt`
+    檔案名稱： `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-     檔案名稱： `ValidationExtensionEnablement.tt`
+    檔案名稱： `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-     檔案名稱： `ValidationExtensionRegistrar.tt`
+    檔案名稱： `ValidationExtensionRegistrar.tt`
 
-     如果您加入這個檔案，您必須啟用您的 DSL 的驗證使用中的交換器，至少一個**EditorValidation** DSL 總管 中。
+    如果您加入這個檔案，您必須啟用您的 DSL 的驗證使用中的交換器，至少一個**EditorValidation** DSL 總管 中。
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-     檔案名稱： `PackageExtensionEnablement.tt`
+    檔案名稱： `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -82,14 +83,14 @@ ms.locfileid: "39381028"
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-     檔案名稱： `GestureExtensionEnablement.tt`
+    檔案名稱： `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-     檔案名稱： `GestureExtensionController.tt`
+    檔案名稱： `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -98,17 +99,17 @@ ms.locfileid: "39381028"
 
 3.  將下行新增至現有的檔案，稱為**DslPackage\Commands.vsct**:
 
-    ```
+    ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-     在現有插入一行`<Include>`指示詞。
+    在現有插入一行`<Include>`指示詞。
 
-4.  `Open DslDefinition.dsl.`
+4.  開啟*DslDefinition.dsl*。
 
 5.  在 [DSL 總管] 中，選取**於**。
 
-6.  在 [屬性] 視窗中，請確定至少一個屬性名為**使用...** 是`true`。
+6.  在 [屬性] 視窗中，請確定至少一個屬性名為**會使用**是`true`。
 
 7.  在 **方案總管**工具列上，按一下**轉換所有範本**。
 
@@ -116,10 +117,11 @@ ms.locfileid: "39381028"
 
 8.  建置並執行解決方案，以驗證它仍然運作。
 
- 您的 DSL 現在是 MEF 啟用。 您可以將功能表命令、 軌跡處理常式和驗證條件約束撰寫成 MEF 擴充功能中。 您可以在您的 DSL 方案，以及其他自訂程式碼中撰寫這些擴充功能。 此外，您或其他開發人員可以撰寫個別[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充您的 DSL 的延伸模組。
+您的 DSL 現在是 MEF 啟用。 您可以將功能表命令、 軌跡處理常式和驗證條件約束撰寫成 MEF 擴充功能中。 您可以在您的 DSL 方案，以及其他自訂程式碼中撰寫這些擴充功能。 此外，您或其他開發人員可以撰寫擴充您的 DSL 的個別 Visual Studio 擴充功能。
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>建立已啟用 MEF 的 DSL 延伸模組
- 如果您有啟用 MEF 的 DSL，由自己還是他人的存取，您可以為它撰寫延伸模組。 擴充功能可用來加入功能表命令、 軌跡處理常式或驗證條件約束。 若要撰寫這些擴充功能，您使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能 (VSIX) 解決方案。 方案有兩個部分： 建置程式碼組件的類別庫專案和封裝組件的 VSIX 專案。
+
+如果您有啟用 MEF 的 DSL，由自己還是他人的存取，您可以為它撰寫延伸模組。 擴充功能可用來加入功能表命令、 軌跡處理常式或驗證條件約束。 若要製作這些擴充功能，您可以使用 Visual Studio 擴充功能 (VSIX) 方案。 方案有兩個部分： 建置程式碼組件的類別庫專案和封裝組件的 VSIX 專案。
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
 
@@ -161,23 +163,25 @@ ms.locfileid: "39381028"
 
          這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。
 
-9. 檢閱及更新的其他欄位**source.extension.vsixmanifest**。 按一下 **選取版本**，並確認正確[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本設定。
+9. 檢閱及更新的其他欄位**source.extension.vsixmanifest**。 按一下 **選取版本**並確認已設定正確的 Visual Studio 版本。
 
 10. 加入類別庫專案中的程式碼。 使用下一節的範例，做為指南。
 
      您可以新增任意數目的命令、 手勢和驗證類別。
 
-11. 若要測試此擴充功能，請按**F5**。 在實驗執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或開啟 DSL 的範例檔案。
+11. 若要測試此擴充功能，請按**F5**。 在 Visual Studio 的實驗性執行個體，建立或開啟 DSL 的範例檔案。
 
 ## <a name="writing-mef-extensions-for-dsls"></a>撰寫 Dsl MEF 擴充功能
- 您可以撰寫延伸模組組件程式碼專案的另一個 DSL 延伸模組方案。 您也可以在 DslPackage 專案中，使用 MEF，是為了方便撰寫命令、 手勢和驗證程式碼做為 DSL 的一部分。
+
+您可以撰寫延伸模組組件程式碼專案的另一個 DSL 延伸模組方案。 您也可以在 DslPackage 專案中，使用 MEF，是為了方便撰寫命令、 手勢和驗證程式碼做為 DSL 的一部分。
 
 ### <a name="menu-commands"></a>功能表命令
- 若要撰寫功能表命令，定義類別可實作<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>具有名為您的 DSL 中定義屬性類別做為前置詞*您的 Dsl*`CommandExtension`。 您可以撰寫一個以上的功能表命令類別。
 
- `QueryStatus()` 每當使用者以滑鼠右鍵按一下圖表，就會呼叫。 它應該檢查目前的選取範圍，並設定`command.Enabled`表示命令時適用。
+若要撰寫功能表命令，定義類別可實作<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>具有名為您的 DSL 中定義屬性類別做為前置詞*您的 Dsl*`CommandExtension`。 您可以撰寫一個以上的功能表命令類別。
 
-```
+`QueryStatus()` 每當使用者以滑鼠右鍵按一下圖表，就會呼叫。 它應該檢查目前的選取範圍，並設定`command.Enabled`表示命令時適用。
+
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl; // My DSL
@@ -239,16 +243,15 @@ namespace MyMefExtension
     }
   }
 }
-
 ```
 
 ### <a name="gesture-handlers"></a>軌跡處理常式
- 軌跡處理常式可以處理物件的內部或外部，拖曳到圖表上從任何地方， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。
 
- 您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+軌跡處理常式可以處理拖曳至圖表，來源內的任何位置，或在 Visual Studio 外部的物件。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。
 
-```
+您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl;
@@ -316,15 +319,15 @@ namespace MefExtension
     }
   }
 }
-
 ```
 
 ### <a name="validation-constraints"></a>驗證條件約束
- 驗證方法會標示`ValidationExtension`屬性所產生的 DSL 中，與也<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>。 此方法可以出現在屬性未標記的任何類別。
 
- 如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。
+驗證方法會標示`ValidationExtension`屬性所產生的 DSL 中，與也<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>。 此方法可以出現在屬性未標記的任何類別。
 
-```
+如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。
+
+```csharp
 using Company.MyDsl;
 using Company.MyDsl.ExtensionEnablement;
 using Microsoft.VisualStudio.Modeling.Validation;
@@ -369,7 +372,6 @@ namespace MefExtension
           // Element to highlight when user double-clicks error:
           , elementToValidate);
 } } } }
-
 ```
 
 ## <a name="see-also"></a>另請參閱
