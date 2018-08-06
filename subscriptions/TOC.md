@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure 隨用隨付](vs-azure-payg.md)
-### 專業開發
+### [專業開發](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 訓練課程](vs-xamarin.md)
 #### [MSDN Magazine 訂閱](vs-msdn.md)
-### 支援權益
+### [支援權益](technical-support.md)
 #### [Azure 諮詢對談](vs-azure-advisory-chat.md)
 #### [Azure 社群](vs-azure-community.md)
 #### [技術支援](vs-tech-support.md)

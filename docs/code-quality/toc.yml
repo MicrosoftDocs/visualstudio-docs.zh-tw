@@ -28,6 +28,11 @@
   items:
     - name: 受控碼的程式碼分析
       items:
+        - name: 從 FxCop 移轉
+          href: fxcop-analyzers.yml
+          items:
+            - name: 安裝 FxCop 分析器
+              href: install-fxcop-analyzers.md
         - name: 安裝 Roslyn 分析器
           href: install-roslyn-analyzers.md
         - name: 設定與使用 Roslyn 分析器
@@ -43,13 +48,13 @@
         - name: 隱藏警告
           href: in-source-suppression-overview.md
           items:
-            - name: 隱藏所產生程式碼的程式碼分析警告
+            - name: 隱藏所產生之程式碼的程式碼分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: 自訂程式碼分析字典
           href: how-to-customize-the-code-analysis-dictionary.md
-        - name: 匿名方法和程式碼分析
+        - name: 匿名方法與程式碼分析
           href: anonymous-methods-and-code-analysis.md
-        - name: 為受控碼的缺失建立工作項目
+        - name: 為受控碼缺陷建立工作項目
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
     - name: C/C++ 的程式碼分析
       items:
