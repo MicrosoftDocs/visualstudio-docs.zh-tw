@@ -9,54 +9,54 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 53858b110cb16509cd9067368cbd035d7ef40c88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949824"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566547"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
-您可以在任何應用程式開啟 DSL 模型。
+您可以在任何應用程式中開啟 DSL 模型。
 
- 從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]延伸模組，您可以使用 ModelBus 針對此目的。 ModelBus 提供參考模型或在模型中，項目和尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱[整合的模型，使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+ 從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]延伸模組，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目標 Framework
  設定**目標 framework**您的應用程式專案 **.NET Framework 4**。
 
 #### <a name="to-set-the-target-framework"></a>若要設定的目標 framework
 
-1.  開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式要讀取的 DSL 模型專案。
+1.  開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式，您要讀取的 DSL 模型專案。
 
-2.  在**方案總管 中**，以滑鼠右鍵按一下專案，然後按一下**屬性**。
+2.  在 **方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。
 
-3.  在 [專案屬性] 視窗上**應用程式**索引標籤上，設定**目標 framework**欄位設為 **.NET Framework 4**。
+3.  在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4**。
 
 > [!NOTE]
->  若要這樣做，即使您選取，您可能需要 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應該 **.NET Framework 4 Client Profile**。
+>  您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。
 
 ## <a name="references"></a>參考
  您必須將這些參考您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式專案：
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    -   如果您沒有看到這下 **.NET**索引標籤中**加入參考**對話方塊中，按一下 **瀏覽**索引標籤上，瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
+    -   如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
 
--   您 DSL 的組件，您將紙匣 資料夾下找到 DSL 專案。 其名稱通常是在表單： *YourCompany*。*YourProject*`.Dsl.dll`。
+-   您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 格式通常是它的名稱： *YourCompany*。*YourProject*`.Dsl.dll`。
 
-## <a name="important-classes-in-the-dsl"></a>DSL 中重要類別
- 您可以撰寫讀取 DSL 的程式碼之前，您應該知道部分 DSL 所產生之類別的名稱。 DSL 方案中開啟**Dsl**專案，並查看**GeneratedCode**資料夾。 或者，按兩下專案中的 DSL 組件**參考**，並開啟 DSL 命名空間中的**物件瀏覽器**。
+## <a name="important-classes-in-the-dsl"></a>在 DSL 中的重要類別
+ 您可以撰寫會讀取您的 DSL 程式碼之前，您應該知道部分 DSL 產生之類別的名稱。 在 DSL 方案中，開啟**Dsl**專案，並查看**GeneratedCode**資料夾。 或者，按兩下 在您的專案中的 DSL 組件**參考**，然後開啟中的 DSL 命名空間**物件瀏覽器**。
 
- 這些是您應該識別的類別：
+ 以下是您應該識別的類別：
 
--   *YourDslRootClass* -這是根類別中的名稱您`DslDefinition.dsl`。
+-   *YourDslRootClass* -這是中的根類別名稱您`DslDefinition.dsl`。
 
--   *YourDslName* `SerializationHelper` -這個類別定義於`SerializationHelper.cs`DSL 專案中。
+-   *YourDslName* `SerializationHelper` -此類別定義於`SerializationHelper.cs`DSL 專案中。
 
--   *YourDslName* `DomainModel` -這個類別定義於`DomainModel.cs`DSL 專案中。
+-   *YourDslName* `DomainModel` -此類別定義於`DomainModel.cs`DSL 專案中。
 
 ## <a name="reading-from-a-file"></a>從檔案讀取
- 下列範例被設計來讀取的 DSL 的重要類別是，如下所示：
+ 下列範例被設計來讀取的 DSL 中的重要類別，如下所示：
 
 -   FamilyTreeModel
 
@@ -64,9 +64,9 @@ ms.locfileid: "31949824"
 
 -   FamilyTreeDomainModel
 
- 此 DSL 中的其他網域類別的人物是誰。
+ 在此 DSL 的其他網域類別是人員。
 
-```
+```csharp
 using System;
 using Microsoft.VisualStudio.Modeling;
 using Company.FamilyTree; // Your DSL namespace
@@ -102,10 +102,10 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>儲存檔案
- 下列增加至先前的程式碼模型進行變更，並且然後將它儲存至檔案。
+## <a name="saving-to-a-file"></a>正在儲存至檔案
+ 先前的程式碼的下列新增至模型進行變更，然後將它儲存至檔案。
 
-```
+```csharp
 using (Transaction t =
   store.TransactionManager.BeginTransaction("update model"))
 {
