@@ -1,5 +1,5 @@
 ---
-title: VSTextBuffer 物件 |Microsoft 文件
+title: VSTextBuffer 物件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,37 +16,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22e78efc93835aa6b0ac61bfb6cbe59ff0c9d4d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141030"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586298"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
-文字緩衝區物件表示 Unicode 文字，通常與檔案相關聯的資料流。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可以用核心編輯器中，內容之外，如果精靈是。  
+文字緩衝區物件表示 Unicode 文字，也就是通常與檔案相關的資料流。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可用的核心編輯器，如所示，精靈內容之外。  
   
  下表顯示的介面`VSTextBuffer`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|標準 OLE 介面。 主要用來處理在緩衝區中的復原/取消復原。|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|標準 OLE 介面。|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|標準 OLE 介面。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|讓您建立組合動作 （也就是動作會分組在單一復原/取消復原單位）。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|可讓文字緩衝區所管理的文件資料的持續性。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本的服務。許多用戶端使用。|  
+|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|標準的 OLE 介面。 用於處理緩衝區中的復原/取消復原。|  
+|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|標準的 OLE 介面。|  
+|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|標準的 OLE 介面。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|讓您能夠建立化合物動作 （也就是動作會分組放入單一復原/取消復原單位）。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|可讓受管理的文字緩衝的文件資料的持續性。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本的服務;許多用戶端使用。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|用來搜尋一個緩衝區。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|提供讀取和寫入功能使用二維座標。 繼承自 `IVsTextBuffer`。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|提供讀取和寫入使用一維座標的功能。 繼承自 `IVsTextBuffer`。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|提供快速、 在緩衝區中的文字資料流為導向的循序存取。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|提供存取的屬性泛型集合。 名稱或 moniker 時，緩衝區的最重要的屬性。 您可以儲存在緩衝區中，使用此介面的隨機資料，建立 GUID，並使用它做為索引鍵。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|提供存取權之屬性的泛型集合。 名稱或 moniker，緩衝區的最重要的屬性。 您可以儲存在緩衝區中，使用此介面的隨機資料，建立 GUID，並使用它做為索引鍵。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|支援的連接點事件。|  
   
 ## <a name="remarks"></a>備註  
- `VSTextBuffer`通常所找到`QueryInterface`上呼叫`IVsTextBuffer`。 如需詳細資訊，請參閱[文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)。  
+ `VSTextBuffer`通常找到`QueryInterface`上呼叫`IVsTextBuffer`。 如需詳細資訊，請參閱 <<c0> [ 文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [編輯圖表](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

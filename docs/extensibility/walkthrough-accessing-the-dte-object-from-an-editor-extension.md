@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 從編輯器延伸模組存取 DTE 物件 |Microsoft 文件
+title: 逐步解說： 從編輯器擴充功能存取 DTE 物件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b888136f51e7893c6ad44ab888d8079ee92d8edf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139636"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586244"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>逐步解說： 從編輯器延伸模組存取 DTE 物件
-在 Vspackage 中，您可以藉由呼叫取得 DTE 物件<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>DTE 物件的型別方法。 在 Managed Extensibility Framework (MEF) 擴充功能，您可以匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然後呼叫<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>具有一種方法<xref:EnvDTE.DTE>。  
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>逐步解說： 從編輯器擴充功能存取 DTE 物件
+在 Vspackage 中，您可以取得 DTE 物件呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>DTE 物件的型別方法。 在 Managed Extensibility Framework (MEF) 擴充功能，您可以匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然後呼叫<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>具有一種方法<xref:EnvDTE.DTE>。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="getting-the-dte-object"></a>取得 DTE 物件  
   
-#### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>若要從 ServiceProvider 取得 DTE 物件  
+### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>若要從 ServiceProvider 取得 DTE 物件  
   
-1.  C# VSIX 專案建立一個名為`DTETest`。 加入編輯器分類器項目範本並將其命名`DTETest`。 如需詳細資訊，請參閱[編輯器項目範本以建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+1.  建立 C# VSIX 專案，名為`DTETest`。 新增編輯器的分類器項目範本並將它命名`DTETest`。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-2.  加入下列組件參考加入專案：  
+2.  新增下列組件參考加入專案：  
   
     -   EnvDTE  
   
-    -   EnvDTE80  
+    -   [Envdte80]  
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  請移至 DTETest.cs 檔案，並加入下列`using`指示詞：  
+3.  移至*DTETest.cs*檔案，並新增下列`using`指示詞：  
   
     ```csharp  
     using EnvDTE;  
@@ -49,7 +49,7 @@ ms.locfileid: "31139636"
   
     ```  
   
-4.  在`GetDTEProvider`類別中，匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
+4.  在 `GetDTEProvider`類別中，匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
   
     ```csharp  
     [Import]  

@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089366"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586348"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸模組結構描述 2.0 參考
+# <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 可以載入 Visual Studio 2010 中，Visual Studio 2012 或 Visual Studio 2013 格式中的 VSIX 檔案。  
   
 ## <a name="package-manifest-schema"></a>封裝資訊清單結構描述  
- 資訊清單的 XML 檔案的根項目是`<PackageManifest>`，具有單一屬性`Version`，這是資訊清單的格式版本。 如果格式進行重要變更，將會變更的版本格式。 本主題描述資訊清單的格式版本 2.0 中，指定資訊清單中，藉由設定`Version`屬性值，版本 ="2.0"。  
+ 資訊清單的 XML 檔案的根項目是`<PackageManifest>`。 它具有單一屬性`Version`，這是資訊清單的格式版本。 如果格式進行重要變更，則會變更的版本格式。 本文說明資訊清單的格式版本 2.0 中，指定資訊清單中，藉由設定`Version`屬性版本的值 ="2.0"。  
   
 ### <a name="packagemanifest-element"></a>PackageManifest 項目  
  內`<PackageManifest>`根項目，您可以使用下列項目：  
@@ -46,11 +46,11 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 ### <a name="metadata-element"></a>中繼資料元素  
  本節是封裝、 其身分識別，以及廣告資訊的相關中繼資料。 `<Metadata>` 包含下列元素：  
   
--   `<Identity>` -這會定義此套件的識別資訊，並包含下列屬性：  
+-   `<Identity>` -定義此套件的識別資訊，並包含下列屬性：  
   
     -   `Id` -此屬性必須是其作者所選封裝的唯一識別碼。 名稱必須符合規定的 CLR 型別是命名空間的相同方式： Company.Product.Feature.Name。 `Id`屬性會限制為 100 個字元。  
   
-    -   `Version` -這會定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。  
+    -   `Version` -定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。  
   
     -   `Language` -此屬性為預設的語言套件，並對應到此資訊清單中的文字資料。 這個屬性會遵循 CLR 的地區設定的程式碼慣例資源組件，例如： en-us-我們、 en、 fr-fr。 您可以指定`neutral`宣告會在任何版本的 Visual Studio 執行的非語言相關延伸模組。 預設值是 `neutral`。  
   
@@ -95,7 +95,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `AnyAttribute*` -`Installation`元素接受的屬性會公開在做為名稱 / 值組字典的執行階段的開放集合。  
   
--   `<InstallationTarget>` -此項目會控制 VSIX 安裝程式會安裝套件的位置。 如果值`Scope`屬性是 「 ProductExtension"封裝必須為目標 SKU，已安裝的資訊清單檔做為它的內容公告其可用性，可延伸模組的一部分。 `<InstallationTarget>`項目具有下列屬性`Scope`屬性已明確或預設值"ProductExtension 」:  
+-   `<InstallationTarget>` -此項目會控制 VSIX 安裝程式會安裝套件的位置。 如果值`Scope`屬性是 「 ProductExtension"封裝必須為目標的 SKU，已安裝的資訊清單檔做為它的內容公告其可用性，可延伸模組的一部分。 `<InstallationTarget>`項目具有下列屬性`Scope`屬性已明確或預設值"ProductExtension 」:  
   
     -   `Id` -此屬性會識別封裝。  屬性會遵循的命名空間慣例： Company.Product.Feature.Name。 `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：  
   
@@ -132,10 +132,10 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
         > [!IMPORTANT]
         >  2.0 版 VSIX 結構描述的是 Visual Studio 2012 中引進。 若要使用此結構描述您必須將 Visual Studio 2012 或稍後在電腦上安裝和使用是該產品的一部分 VSIXInstaller.exe。 您可以針對舊版的 Visual Studio 與 Visual Studio 2012 或更新版本的 VSIXInstaller，但只能透過使用較新版本的安裝程式。  
   
-    -   `AnyAttribute*` -`<InstallationTarget>`項目允許的屬性會公開在做為名稱 / 值組字典的執行階段的開放集合。  
+    -   `AnyAttribute*` -`<InstallationTarget>`項目可讓在做為名稱 / 值組字典的執行階段會公開屬性的開放集合。  
   
 ### <a name="dependencies-element"></a>相依性項目  
- 這個項目包含此套件會宣告的相依性清單。 如果未指定任何相依性，這些套件 (由其`Id`) 必須是之前已安裝。  
+ 這個項目包含此套件會宣告的相依性清單。 如果未指定任何相依性，這些套件 (由其`Id`) 必須先安裝。  
   
 -   `<Dependency>` 項目-這個子項目具有下列屬性：  
   
@@ -164,7 +164,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Asset>` -此元素包含下列屬性和項目：  
   
-    -   `Type` -這是延伸模組或表示由這個項目內容的型別。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
+    -   `Type` 延伸模組或此元素所代表的內容類型。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -184,9 +184,9 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
     -   `Path` -檔案或資料夾包含資產之套件內的相對路徑。  
     
-    -   `TargetVersion` -指定的資產適用於版本範圍。 用來傳送多個版本的 Visual Studio 的不同版本的資產。 需要 Visual Studio 2017.3 或更新版本，才能產生的影響。
+    -   `TargetVersion` -要套用指定的資產的版本範圍。 用來傳送多個版本的 Visual Studio 的不同版本的資產。 需要 Visual Studio 2017.3 或更新版本，才能產生的影響。
   
-    -   `AnyAttribute*` -屬性會公開在做為名稱 / 值組字典的執行階段開放集合。  
+    -   `AnyAttribute*` -屬性開放集合所公開的執行階段做為名稱 / 值組的字典。  
   
          `<AnyElement>*` -任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。  
   

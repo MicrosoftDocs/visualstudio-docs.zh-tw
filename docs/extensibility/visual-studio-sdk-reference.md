@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK 參考 |Microsoft 文件
+title: Visual Studio SDK 參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,73 +14,73 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 656663c14b4c5b8b77645eb4fc0fd221e1786800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146841"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586804"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
-本節包含使用 Visual Studio SDK 開發人員 Visual Studio 的命名空間、 相關的命名空間和感興趣的其他區域的相關資訊。  
+本節包含 Visual Studio 的命名空間、 相關的命名空間和資訊感興趣的其他區域的開發人員使用 Visual Studio SDK。  
   
 ## <a name="in-this-section"></a>本節內容  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
- 編輯器和語言使用的舊版 interop 介面服務。  
+ 編輯器和語言服務使用舊版 interop 的介面。  
   
  <xref:Microsoft.VisualStudio.Editor>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Language.Intellisense>  
- 使用新的編輯器中 IntelliSense 的類別。  
+ 使用新編輯器中 IntelliSense 的類別。  
   
  <xref:Microsoft.VisualStudio.Language.StandardClassification>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Adornments>  
- 新的編輯器中用來裝飾的類別。  
+ 在新的編輯器中用於裝飾的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Classification>  
- 類別用於分類新的編輯器。  
+ 在新的編輯器中用於分類的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Differencing>  
- 類別的新編輯器中使用的差異。  
+ 差異的新編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Document>  
- 新編輯器中使用的文件的類別。  
+ 新的編輯器中使用的文件的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Editor>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.DragDrop>  
  類別的新編輯器中使用拖放。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Formatting>  
- 類別的新編輯器中使用的格式。  
+ 在新的編輯器中用來格式化的類別。  
   
  <xref:Microsoft.VisualStudio.Text.IncrementalSearch>  
- 累加搜尋新的編輯器中使用的類別。  
+ 在新的編輯器中用於累加搜尋的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Operations>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Outlining>  
- 使用新的編輯器中大綱的類別。  
+ 使用新編輯器中大綱的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Projection>  
- 類別的新編輯器中使用的投影。  
+ 新的編輯器中使用投射的類別。  
   
  <xref:Microsoft.VisualStudio.Text.Tagging>  
- 使用新的編輯器中標記的類別。  
+ 新的編輯器中使用標記的類別。  
   
  <xref:Microsoft.VisualStudio.Utilities>  
- 新的編輯器中使用的類別。  
+ 在新的編輯器中使用的類別。  
   
  <xref:Microsoft.Internal.VisualStudio.PlatformUI>  
  主要僅供 Microsoft 內部使用。  
@@ -98,67 +98,67 @@ ms.locfileid: "31146841"
  使用的 Managed Extensibility Framework (MEF) 在 Visual Studio 中的類別。  
   
  <xref:Microsoft.VisualStudio.Designer.Interfaces>  
- 與 Visual Studio 設計工具搭配使用的介面。  
+ 搭配 Visual Studio 設計工具的介面。  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>  
- 與 Visual Studio 專案設計工具搭配使用的介面。  
+ 搭配 Visual Studio 專案設計工具的介面。  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>  
- 類別，可用來發行應用程式。  
+ 用於發佈的應用程式的類別。  
   
  <xref:Microsoft.VisualStudio.OLE.Interop>  
- Interop 的介面，在 Visual Studio 中用於 OLE 的元件。  
+ 在 Visual Studio 中用於 OLE 元件 interop 的介面。  
   
  <xref:Microsoft.VisualStudio.Package>  
- 使用 Visual Studio managed 語言服務的類別。  
+ 用於受管理的 Visual Studio 語言服務的類別。  
   
  <xref:Microsoft.VisualStudio.PlatformUI>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport>  
  僅供 Microsoft 內部使用。  
   
  <xref:Microsoft.VisualStudio.ProjectAggregator>  
- 使用 Visual Studio 專案的類別。  
+ Visual Studio 專案中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Settings>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell.Design>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell.Design.Serialization>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell.Flavor>  
- 使用 Visual Studio 專案的類別。  
+ Visual Studio 專案中使用的類別。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop>  
  Interop 的介面，用於 Visual Studio shell。  
   
  <xref:Microsoft.VisualStudio.Shell.Settings>  
- 使用 Visual Studio shell 中的類別。  
+ 在 Visual Studio shell 中使用的類別。  
   
  <xref:Microsoft.VisualStudio.VSHelp>  
- 類別，可用來說明。  
+ 如需協助使用的類別。  
   
  <xref:VSLangProj>  
- 使用語言服務專案的類別。  
+ 語言服務專案中使用的類別。  
   
  <xref:XamlGeneratedNamespace>  
  僅供 Microsoft 內部使用。  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces9>  
- 使用 Visual studio 的介面。  
+ Visual Studio 所使用的介面。  
   
  <xref:Microsoft.VisualStudio.WCFReference.Interop>  
- 使用 Windows Communication Framework 的類別。  
+ 用於 Windows Communication Framework 的類別。  
   
  <xref:Microsoft.VisualStudio.TestTools.Vsip>  
  測試工具所使用的類別。  
@@ -221,36 +221,36 @@ ms.locfileid: "31146841"
  使用 C# 和 Visual Basic 的自動化。  
   
  <xref:Microsoft.VisualStudio.Threading>  
- 使用 Visual Studio 執行緒。  
+ 使用 Visual Studio 的執行緒。  
   
- [Microsoft.VisualStudio.ConnectedServices 命名空間](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx)用於 Visual Studio 連接的服務。  
+ [Microsoft.VisualStudio.ConnectedServices 命名空間](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx)用於 Visual Studio 已連接服務。  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)列舉  
  指定 IntelliSense 主機旗標。  
   
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)  
- 提供 Visual Studio 命令表結構描述項目，允許子元素和屬性每個。  
+ 提供的 Visual Studio 命令表結構描述項目，允許的子系項目和屬性每個。  
   
  [Guid 和常數](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
- 提供的 SDK 中使用的 Guid 的清單。  
+ 提供一份在整個 SDK 中使用的 Guid。  
   
  [Managed 程式碼中的 COM 常數](../extensibility/com-constants-in-managed-code.md)  
- 提供識別項的清單使用者介面項目的整個環境 SDK 使用。  
+ 提供整個環境 SDK 使用使用者介面項目識別碼的清單。  
   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)  
- 原始檔控制外掛程式 API 的主題連結。  
+ 原始檔控制外掛程式 api 的主題連結。  
   
  [命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)  
- 討論如何開發人員可以將自動化從命令列的幾項工作的主題連結。  
+ 討論開發人員可以列印文件的自動化，請從命令列的幾項工作的主題連結。  
   
  [錯誤處理和傳回值](../extensibility/error-handling-and-return-values.md)  
- 說明錯誤架構的 Vspackage，這是與其他 Windows 程式設計中的相同。  
+ 說明錯誤架構的 Vspackage，這是與其他 Windows 程式設計中所採用的相同。  
   
  [物件](../extensibility/objects.md)  
- 提供環境中使用的物件的清單。  
+ 提供一份可在環境中的物件。  
   
- [名詞解釋](../extensibility/visual-studio-sdk-glossary.md)  
- 當您正在閱讀的 Visual Studio SDK 文件時，請提供很有幫助的詞彙及其定義使用的清單。  
+ [字彙](../extensibility/visual-studio-sdk-glossary.md)  
+ 當您正在閱讀的 Visual Studio SDK 文件時，請提供一份很有幫助的詞彙和使用其定義。  
   
  <xref:Microsoft.Build.BuildEngine>  
  使用 MSBuild。  
@@ -302,4 +302,4 @@ ms.locfileid: "31146841"
   
 ## <a name="related-sections"></a>相關章節  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
- 包含文件、 範例和程式碼，以協助您開發使用 Visual Studio 整合的產品。
+ 包含文件、 範例和程式碼，以協助您開發與 Visual Studio 整合的產品。
