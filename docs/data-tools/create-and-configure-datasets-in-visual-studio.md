@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756028"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582228"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中建立和設定資料集
 
@@ -72,7 +72,7 @@ ms.locfileid: "36756028"
 
 1.  在按一下資料集節點**方案總管 中**讓 dataset 設計工具成為焦點。
 
-2.  按一下 **資料來源**索引標籤的左邊界的 Visual Studio 中，或輸入`Data Sources`中**快速啟動**。
+2.  按一下 [**資料來源**索引標籤中的 Visual Studio 中或類型的左邊界**資料來源**中**快速啟動**] 方塊中。
 
 3.  以滑鼠右鍵按一下資料集節點，然後選取**使用精靈設定資料來源**。
 

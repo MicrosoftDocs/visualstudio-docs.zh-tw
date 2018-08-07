@@ -16,21 +16,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756395"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582417"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>建立 Windows Form 以搜尋資料
+
 顯示表單上選取的資料是常見的應用程式案例。 例如，您可能想要顯示特定客戶的訂單，或是特定訂單的詳細資料。 在此案例中，使用者將資訊輸入至表單，然後利用使用者的輸入做為參數執行查詢；這就是根據參數型查詢而選取資料。 查詢只會傳回符合使用者輸入之準則的資料。 此逐步解說會示範如何建立會傳回特定城市中客戶的查詢，以及如何修改使用者介面，讓使用者可以輸入城市名稱，然後按下按鈕即可執行查詢。
 
- 使用參數型查詢可讓資料庫在快速篩選記錄時能有最好的表現，進而使應用程式更有效率。 相反地，如果您要求整個資料庫資料表、 透過網路來傳輸它，然後使用應用程式邏輯來尋找您想要的記錄您的應用程式就會變慢且效率不佳。
+使用參數型查詢可讓資料庫在快速篩選記錄時能有最好的表現，進而使應用程式更有效率。 相反地，如果您要求整個資料庫資料表、 透過網路來傳輸它，然後使用應用程式邏輯來尋找您想要的記錄您的應用程式就會變慢且效率不佳。
 
- 您可以加入任何 TableAdapter （和控制項接受參數值，並執行查詢），使用參數化的查詢**搜尋準則產生器** 對話方塊。 選取 [開啟] 對話方塊**加入查詢**命令**資料**功能表 （或任何 TableAdapter 智慧標籤上）。
+您可以加入任何 TableAdapter （和控制項接受參數值，並執行查詢），使用參數化的查詢**搜尋準則產生器** 對話方塊。 選取 [開啟] 對話方塊**加入查詢**命令**資料**功能表 （或任何 TableAdapter 智慧標籤上）。
 
- 這個逐步解說中所述的工作包括：
+這個逐步解說中所述的工作包括：
 
 -   建立新**Windows Forms 應用程式**專案。
 
@@ -65,9 +66,8 @@ ms.locfileid: "36756395"
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
 ## <a name="create-the-windows-forms-application"></a>建立 Windows Forms 應用程式
- 第一個步驟是建立**Windows Forms 應用程式**。 在此步驟中，可以選擇指派至專案的名稱，但您將會賦予它名稱，因為您稍後會將儲存專案。
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>若要建立新的 Windows Forms 應用程式專案
+第一個步驟是建立的 Windows Forms 應用程式。 在此步驟中，可以選擇指派至專案的名稱，但您將會賦予它名稱，因為您稍後會將儲存的專案：
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
@@ -80,9 +80,8 @@ ms.locfileid: "36756395"
      **WindowsSearchForm**建立專案並將其加入至**方案總管 中**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
-這個步驟會建立資料庫，使用的資料來源**資料來源組態**精靈。
 
-#### <a name="to-create-the-data-source"></a>若要建立資料來源
+這個步驟會建立資料庫，使用的資料來源**資料來源組態**精靈：
 
 1.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
@@ -107,9 +106,8 @@ ms.locfileid: "36756395"
      **NorthwindDataSet**新增至您的專案，而**客戶**資料表會出現在**Zdroje dat**視窗。
 
 ## <a name="create-the-form"></a>建立表單
- 您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至表單。
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>在表單上建立資料繫結控制項
+您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至表單：
 
 1.  依序展開**客戶**中的節點**Zdroje dat**視窗。
 
@@ -118,13 +116,12 @@ ms.locfileid: "36756395"
      <xref:System.Windows.Forms.DataGridView> 以及用於巡覽資料錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)，CustomersTableAdapter， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>加入至查詢參數化 （搜尋功能）
- 您可以加入原始的查詢使用 WHERE 子句**搜尋準則產生器** 對話方塊。
 
-#### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>建立參數型查詢及控制項以輸入參數
+您可以加入原始的查詢使用 WHERE 子句**搜尋準則產生器** 對話方塊中：
 
 1.  選取 <xref:System.Windows.Forms.DataGridView>控制項，然後再選擇**加入查詢**上**資料**功能表。
 
-2.  型別`FillByCity`中**新的查詢名稱**上的區域**搜尋準則產生器** 對話方塊。
+2.  型別**FillByCity**中**新的查詢名稱**區域**搜尋準則產生器** 對話方塊。
 
 3.  新增`WHERE City = @City`中的查詢**查詢文字**區域。
 
@@ -138,16 +135,15 @@ ms.locfileid: "36756395"
      ```
 
     > [!NOTE]
-    >  存取與 OLE DB 資料來源使用問號 ('？ ') 代表參數，所以 WHERE 子句看起來會像這樣： `WHERE City = ?`。
+    > 存取與 OLE DB 資料來源使用問號 ('？ ') 代表參數，所以 WHERE 子句看起來會像這樣： `WHERE City = ?`。
 
 4.  按一下 [ **[確定]** 以關閉**搜尋準則產生器**] 對話方塊。
 
      A **FillByCityToolStrip**加入至表單。
 
-## <a name="testing-the-application"></a>測試應用程式
- 執行應用程式會開啟您的表單，並使其準備好要接受做為輸入參數。
+## <a name="test-the-application"></a>測試應用程式
 
-#### <a name="to-test-the-application"></a>若要測試應用程式
+執行應用程式時，會開啟表單，並讓它準備好要接受做為輸入參數：
 
 1.  按 **F5** 執行應用程式。
 
@@ -156,7 +152,8 @@ ms.locfileid: "36756395"
      資料格會填入符合準則的客戶。 在此範例中，資料格只顯示有值的客戶**倫敦**在其**縣 （市)** 資料行。
 
 ## <a name="next-steps"></a>後續步驟
- 視應用程式的需求而定，在建立參數型表單後，您可能會有幾個想要執行的步驟。 一些您可以加強這個逐步解說的部分包括：
+
+視應用程式的需求而定，在建立參數型表單後，您可能會有幾個想要執行的步驟。 一些您可以加強這個逐步解說的部分包括：
 
 -   加入顯示關聯資料的控制項。 如需詳細資訊，請參閱 <<c0> [ 中的資料集的關聯性](relationships-in-datasets.md)。
 

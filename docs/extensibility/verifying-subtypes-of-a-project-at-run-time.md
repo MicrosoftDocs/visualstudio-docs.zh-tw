@@ -1,5 +1,5 @@
 ---
-title: 在執行階段驗證的專案子類型 |Microsoft 文件
+title: 在執行階段驗證的專案子類型 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8898da6850c01c1a248b57b0fbc5f46be2a8ff4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22e3205f3a8bd8ef7ce7e44b775ae1ef5a30cfa5
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136825"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586205"
 ---
-# <a name="verifying-subtypes-of-a-project-at-run-time"></a>在執行階段驗證專案的子類型
-自訂專案子類型而定的 VSPackage 應該包含邏輯，以尋找子類型，讓它可以執行正常失敗子型別是否不存在。 下列程序示範如何確認存在指定的子類型。  
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>在執行階段驗證專案的子類型
+自訂專案子類型而定的 VSPackage 應包含邏輯，以尋找子類型，讓它可以執行正常失敗的子類型是否不存在。 下列程序示範如何確認指定的子類型存在。  
   
-### <a name="to-verify-the-presence-of-a-subtype"></a>若要確認有子型別  
+### <a name="to-verify-the-presence-of-a-subtype"></a>若要確認子型別存在  
   
-1.  從專案和方案物件，以取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>VSPackage 中加入下列程式碼的物件。  
+1.  從專案和方案物件，做為取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>藉由將下列程式碼新增至 VSPackage 的物件。  
   
-    ```  
+    ```csharp  
     EnvDTE.DTE dte;  
     dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
   
@@ -43,24 +43,24 @@ ms.locfileid: "31136825"
   
     ```  
   
-2.  轉換至階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。  
+2.  轉換階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。  
   
-    ```  
+    ```csharp  
     IVsAggregatableProjectCorrected AP;  
     AP = hierarchy as IVsAggregatableProjectCorrected;  
   
     ```  
   
-3.  取得叫用的專案類型的 Guid 清單<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
+3.  取得專案類型 Guid 的清單，藉由叫用<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
   
-    ```  
+    ```csharp  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
 4.  檢查指定的子類型的 GUID 清單。  
   
-    ```  
+    ```csharp  
     // Replace the string "MyGUID" with the GUID of the subtype.  
     string guidMySubtype = "MyGUID";  
     if (projTypeGuids.IndexOf(guidMySubtype) > 0)  
@@ -71,5 +71,5 @@ ms.locfileid: "31136825"
   
 ## <a name="see-also"></a>另請參閱  
  [專案子類型](../extensibility/internals/project-subtypes.md)   
- [專案子類型設計](../extensibility/internals/project-subtypes-design.md)   
- [專案子類型所擴充的屬性和方法](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+ [設計專案子類型](../extensibility/internals/project-subtypes-design.md)   
+ [屬性和專案子類型所擴充的方法](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

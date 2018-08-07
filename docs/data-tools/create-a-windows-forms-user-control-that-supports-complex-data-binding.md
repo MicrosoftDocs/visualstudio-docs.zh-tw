@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0189682576c495d031cf160261e16fd920a1615
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758377"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582313"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結 Windows Forms 使用者控制項
 
@@ -37,7 +37,7 @@ ms.locfileid: "36758377"
 |對顯示資料之清單 (或資料表) 的控制項 (如 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.DataGridView> (這個逐步解說頁面會描述此流程)。|
 |對顯示資料之清單 (或資料表) 但也需要呈現單一資料行或屬性的控制項 (如 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.ComboBox>。 如需詳細資訊，請參閱 <<c0> [ 建立支援查閱資料繫結 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
 
- 這個逐步解說會建立顯示資料表中資料列的複雜控制項。 此範例使用 Northwind 範例資料庫中的 `Customers` 資料表。 複雜使用者控制項將會在自訂控制項的 <xref:System.Windows.Forms.DataGridView> 中顯示 customers 資料表。
+這個逐步解說會建立顯示資料表中資料列的複雜控制項。 此範例使用 Northwind 範例資料庫中的 `Customers` 資料表。 複雜使用者控制項將會在自訂控制項的 <xref:System.Windows.Forms.DataGridView> 中顯示 customers 資料表。
 
 在這個逐步解說期間，您將了解如何：
 
@@ -75,9 +75,7 @@ ms.locfileid: "36758377"
 
 ## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式
 
- 第一個步驟是建立**Windows Forms 應用程式**。
-
-### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案
+第一個步驟是建立**Windows Forms 應用程式**:
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
@@ -91,9 +89,7 @@ ms.locfileid: "36758377"
 
 ## <a name="add-a-user-control-to-the-project"></a>將使用者控制項加入至專案
 
-因為本逐步解說會建立複雜的資料可繫結控制項，從**使用者控制項**，您必須新增**使用者控制**項目加入專案。
-
-### <a name="to-add-a-user-control-to-the-project"></a>將使用者控制項加入至專案
+因為本逐步解說會建立複雜的資料可繫結控制項，從**使用者控制項**，新增**使用者控制**項目加入專案：
 
 1. 從**專案**功能表上，選擇**加入使用者控制項**。
 
@@ -103,17 +99,11 @@ ms.locfileid: "36758377"
 
 ## <a name="design-the-complexdatagridview-control"></a>設計 ComplexDataGridView 控制項
 
-此步驟會將 <xref:System.Windows.Forms.DataGridView> 加入至使用者控制項。
-
-### <a name="to-design-the-complexdatagridview-control"></a>設計 ComplexDataGridView 控制項
-
-- 拖曳<xref:System.Windows.Forms.DataGridView>從**工具箱**拖曳至使用者控制項的設計介面。
+若要新增<xref:System.Windows.Forms.DataGridView>至使用者控制項，拖曳<xref:System.Windows.Forms.DataGridView>從**工具箱**拖曳至使用者控制項的設計介面。
 
 ## <a name="add-the-required-data-binding-attribute"></a>新增必要的資料繫結屬性
 
-針對支援資料繫結的複雜控制項，您可以實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。
-
-### <a name="to-implement-the-complexbindingproperties-attribute"></a>實作 ComplexBindingProperties 屬性
+針對支援資料繫結的複雜控制項，您可以實作<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
 1. 交換器**ComplexDataGridView**程式碼 檢視的控制項。 (在**檢視**功能表上，選取**程式碼**。)
 
@@ -124,11 +114,9 @@ ms.locfileid: "36758377"
 
 1. 從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。
 
-## <a name="creating-a-data-source-from-your-database"></a>從您的資料庫建立資料來源
+## <a name="create-a-data-source-from-your-database"></a>從您的資料庫建立資料來源
 
-此步驟中使用**資料來源組態**精靈來建立資料來源基礎`Customers`Northwind 範例資料庫中的資料表。
-
-### <a name="to-create-the-data-source"></a>若要建立資料來源
+使用**資料來源組態**精靈來建立資料來源基礎`Customers`Northwind 範例資料庫中的資料表：
 
 1.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
@@ -154,9 +142,7 @@ ms.locfileid: "36758377"
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>設定 Customers 資料表使用 ComplexDataGridView 控制項
 
-內**Zdroje dat**  視窗中，您可以設定要在將項目拖曳至表單之前建立的控制項。
-
-### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>設定要繫結至 ComplexDataGridView 控制項的 Customers 資料表
+內**Zdroje dat**  視窗中，您可以設定要在將項目拖曳至表單之前建立的控制項：
 
 1. 開啟**Form1**設計工具中。
 
@@ -170,15 +156,9 @@ ms.locfileid: "36758377"
 
 ## <a name="add-controls-to-the-form"></a>將控制項加入表單
 
-您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至表單。
+您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至表單。 主**客戶**從節點**Zdroje dat**視窗拖曳至表單。 確認**ComplexDataGridView**控制項用來顯示資料表的資料。
 
-### <a name="to-create-data-bound-controls-on-the-form"></a>在表單上建立資料繫結控制項
-
-主**客戶**從節點**Zdroje dat**視窗拖曳至表單。 確認**ComplexDataGridView**控制項用來顯示資料表的資料。
-
-## <a name="running-the-application"></a>執行應用程式
-
-### <a name="to-run-the-application"></a>若要執行應用程式
+## <a name="run-the-application"></a>執行應用程式
 
 按 **F5** 執行應用程式。
 
