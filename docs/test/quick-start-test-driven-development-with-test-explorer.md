@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845752"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382086"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 
@@ -28,10 +28,10 @@ ms.locfileid: "34845752"
 
 -   可在一個視窗中查看需要的所有資訊。
 
-## <a name="using-test-explorer"></a>使用測試總管
+## <a name="use-test-explorer"></a>使用測試總管
  ![顯示 [全部執行] 按鈕的 [單元測試總管]](../test/media/unittestexplorer-beta-.png)
 
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>若要使用測試總管來執行單元測試
+### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用測試總管來執行單元測試
 
 1.  建立使用您選擇的測試架構的單元測試。
 
@@ -39,7 +39,7 @@ ms.locfileid: "34845752"
 
     1.  建立測試專案。
 
-         在 [ **新增專案** ] 對話方塊中，展開 [ **Visual Basic**]、[ **Visual C#**] 或 [ **Visual C++**]，然後選擇 [ **測試**]。
+         在 [新增專案] 對話方塊中，展開 [Visual Basic] > [Visual C#] 或 [Visual C++]，然後選擇 [測試]。
 
          選取 [ **單元測試專案**]。
 
@@ -47,7 +47,7 @@ ms.locfileid: "34845752"
 
 2.  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
-3.  在功能表列上，選擇 [ **測試**]、[ **執行單元測試**]、[ **所有測試**]。
+3.  在功能表列上，選擇 [測試] > [執行單元測試] > [所有測試]。
 
      接著就會建置方案並執行測試。
 
@@ -69,16 +69,16 @@ ms.locfileid: "34845752"
 > 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
 
-##  <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>逐步解說：使用單元測試來開發方法
  本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
-#### <a name="creating-the-test-and-method"></a>建立測試和方法
+### <a name="create-the-test-and-method"></a>建立測試和方法
 
 1.  建立一個 Visual C# 類別庫專案。 這個專案會包含所要提供的程式碼。 在此範例中，它的名稱是 `MyMath`。
 
 2.  建立測試專案。
 
-    -   在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#**]、[ **測試** ]，然後選擇 [ **單元測試專案**]。
+    -   在 [新增專案] 對話方塊中，選擇 [Visual C#] > [測試]，然後選擇 [單元測試專案]。
 
          ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ ms.locfileid: "34845752"
 
 4.  從測試產生方法。
 
-    1.  將游標置於 `Rooter`上，然後在捷徑功能表中選擇 [ **產生**]、[ **新增類型**]。
+    1.  將游標置於 `Rooter` 上，然後在捷徑功能表中選擇 [產生] > [新增類型]。
 
     2.  在 [ **產生新的類型** ] 對話方塊中，將 [ **專案** ] 設為類別庫專案。 在此範例中，它是 `MyMath`。
 
-    3.  將游標置於 `SquareRoot`上，然後在捷徑功能表中選擇 [ **產生**]、[ **方法 Stub**]。
+    3.  將游標置於 `SquareRoot` 上，然後在捷徑功能表中選擇 [產生] > [方法 Stub]。
 
 5.  執行單元測試。
 
-    1.  在 [ **測試** ] 功能表列上，選擇 [ **執行單元測試**]、[ **所有測試**]。
+    1.  在 [測試] 功能表列上，選擇 [執行單元測試] > [所有測試]。
 
          接著就會建置並執行方案。
 
@@ -132,7 +132,7 @@ ms.locfileid: "34845752"
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>在每次變更後讓所有的測試都成功
 
-1.  在 `MyMath\Rooter.cs`中，改良 `SquareRoot`的程式碼：
+1.  在 *MyMath\Rooter.cs* 中，改善 `SquareRoot` 的程式碼：
 
     ```csharp
     public double SquareRoot(double input)

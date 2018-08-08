@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968532"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379285"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>如何：安裝自訂的診斷資料配接器
 
@@ -25,7 +25,7 @@ ms.locfileid: "31968532"
 
  使用下列程序，在適當的位置中安裝您的自訂診斷配接器。 在安裝診斷資料配接器的電腦上，您必須具有其系統管理權限。
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>安裝自訂的診斷資料配接器
+## <a name="install-a-custom-diagnostic-data-adapter"></a>安裝自訂的診斷資料配接器
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>安裝自訂的診斷資料配接器
 
@@ -35,9 +35,9 @@ ms.locfileid: "31968532"
 
      要複製的檔案為：
 
-    -   診斷資料配接器組件 (.dll) (必要項)。
+    -   診斷資料配接器組件 (*.dll*) (必要項)。
 
-    -   配接器的偵錯資料檔案 (.pdb) (選擇性)。
+    -   配接器的偵錯資料檔案 (*.pdb*) (選擇性)。
 
     -   如果具有預設組態設定，則為配接器的組態檔 (`<diagnostic data adapter name>.dll.config`) (選擇性)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "31968532"
 
 2.  若要選取診斷資料配接器以進行測試，您必須先從 Microsoft Test Manager 或 Visual Studio 選取現有的測試設定或建立新的設定，然後在所選測試設定的 [資料和診斷] 索引標籤上，選取診斷資料配接器。
 
-3.  如果您已建立並安裝診斷資料配接器組態編輯器，若要在測試設定中設定診斷資料配接器，請選擇配接器旁的 [設定] 並進行任何變更。 然後選擇 [儲存]。 如需如何為診斷資料收集器建立組態編輯器的詳細資訊，請參閱[如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
+3.  如果您已建立並安裝診斷資料配接器組態編輯器，若要在測試設定中設定診斷資料配接器，請選擇配接器旁的 [設定] 並進行任何變更。 然後選擇 [儲存]。 如需如何為診斷資料收集器建立設定編輯器的詳細資訊，請參閱[如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
 
 4.  如果您從 Microsoft Test Manager 執行測試，您可以在執行測試前將這些測試設定指派給測試計劃，或使用 [以選項執行] 命令來指派測試設定和覆寫測試設定。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 

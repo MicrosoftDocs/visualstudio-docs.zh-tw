@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090045"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388172"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 
@@ -35,19 +35,19 @@ ms.locfileid: "37090045"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，移至 [方案總管]，接著在本教學課程稍早建立的 "LearningDjango" 方案上按一下滑鼠右鍵，然後依序選取 [加入] > [新專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
+1. 在 Visual Studio 中，移至 [方案總管]，接著在本教學課程稍早建立的 **LearningDjango** 方案上按一下滑鼠右鍵，然後依序選取 [新增] > [新增專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
 
-1. 在 [新專案] 對話方塊中，搜尋並選取 [Django Web 專案] 範本，接著呼叫 "DjangoWeb" 專案，然後選取 [確定]。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [Django Web 專案] 範本，接著呼叫 "DjangoWeb" 專案，然後選取 [確定]。
 
-1. 由於該範本再次包含了 `requirements.txt` 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
+1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
 
-1. Visual Studio 設定好虛擬環境後，請遵循所顯示 `readme.html` 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只要以滑鼠右鍵按一下 Visual Studio 專案，並選取 [Python] > [Django 建立進階使用者] 命令，然後遵照提示進行。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
+1. Visual Studio 設定好虛擬環境後，請遵循所顯示 *readme.html* 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只要以滑鼠右鍵按一下 Visual Studio 專案，並選取 [Python] > [Django 建立進階使用者] 命令，然後遵照提示進行。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
 
-1. 您可以在 [方案總管] 中的 "DjangoWeb" 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 您可以在 [方案總管] 中的 **DjangoWeb** 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
     ![方案總管將 DjangoWeb 專案顯示為啟始專案](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 依序選取 [偵錯] > [開始偵錯] (F5)，或使用工具列上的 [Web 伺服器] 按鈕來執行伺服器：
+1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [Web 伺服器] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -61,19 +61,19 @@ ms.locfileid: "37090045"
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始控制項所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 `env`) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
+    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
 
 ### <a name="examine-what-the-template-creates"></a>檢查範本建立的項目
 
 在最通用的情況下，「Django Web 專案」範本會建立以下結構：
 
 - 專案根中的檔案：
-  - `manage.py`：Django 系統管理公用程式。
-  - `db.sqlite3`：預設 SQLite 資料庫。
-  - `requirements.txt`：包含 Django 1.x 的相依性。
-  - `readme.html`：建立專案後，會在 Visual Studio 中顯示的檔案。 如前一節中所述，請遵照此處的指示來建立應用程式的進階使用者 (系統管理員) 帳戶。
-- `app` 資料夾包含所有應用程式檔案，包括檢視、模型、測試、表單、範本和靜態檔案 (請參閱步驟 4-2)。 您通常會重新命名此資料夾，以便使用更特定的應用程式名稱。
-- `DjangoWeb` (Django 專案) 資料夾包含一般的 Django 專案檔案：`__init__.py`、`settings.py`、`urls.py` 和 `wsgi.py`。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 `settings.py`，而且 `urls.py` 也會設定好所有應用程式頁面的路由，包括登入表單。
+  - *manage.py*：Django 系統管理公用程式。
+  - *db.sqlite3*：預設 SQLite 資料庫。
+  - *requirements.txt*：包含 Django 1.x 的相依性。
+  - *readme.html*：建立專案後，會在 Visual Studio 中顯示的檔案。 如前一節中所述，請遵照此處的指示來建立應用程式的進階使用者 (系統管理員) 帳戶。
+- *app* 資料夾包含所有應用程式檔案，包括檢視、模型、測試、表單、範本和靜態檔案 (請參閱步驟 4-2)。 您通常會重新命名此資料夾，以便使用更特定的應用程式名稱。
+- *DjangoWeb* (Django 專案) 資料夾包含一般的 Django 專案檔案：*\_\_init\_\_.py*、*settings.py*、*urls.py* 以及 *wsgi.py*。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 *settings.py*，而且 *urls.py* 也會設定好所有應用程式頁面的路由，包括登入表單。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
@@ -87,7 +87,7 @@ ms.locfileid: "37090045"
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 4-2：了解專案範本所建立的檢視和頁面範本
 
-如同您在執行專案時所見，應用程式包含三個檢視：Home (首頁)、About (關於) 和 Contact (連絡)。 這些檢視的程式碼可在 `app/views` 資料夾中找到。 每個檢視函式單純地使用範本和簡單字典物件的路徑來呼叫 `django.shortcuts.render`。 例如，About (關於) 頁面是由 `about` 函式所處理：
+如同您在執行專案時所見，應用程式包含三個檢視：Home (首頁)、About (關於) 和 Contact (連絡)。 這些檢視的程式碼可在 *app/views* 資料夾中找到。 每個檢視函式單純地使用範本和簡單字典物件的路徑來呼叫 `django.shortcuts.render`。 例如，About (關於) 頁面是由 `about` 函式所處理：
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-範本位於應用程式的 `templates/app` 資料夾 (而且您通常會將 `app` 重新命名為實際應用程式的名稱)。 基底範本 `layout.html` 是最廣泛的範本。 它參考所有必要的靜態檔案 (JavaScript 和 CSS)、定義可供其他頁面複寫且名稱為 "content" (內容) 的區塊，以及提供名為 "scripts" (指令碼) 的區塊。 下列加註的摘錄來自 `layout.html`，顯示了這些特定區域：
+範本位於應用程式的 *templates/app* 資料夾 (而且您通常會將 *app* 重新命名為實際應用程式的名稱)。 基底範本 *layout.html* 是最廣泛的範本。 它參考所有必要的靜態檔案 (JavaScript 和 CSS)、定義可供其他頁面複寫且名稱為 "content" (內容) 的區塊，以及提供名為 "scripts" (指令碼) 的區塊。 下列加註的摘錄來自 *layout.html*，顯示這些特定區域：
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ def about(request):
 </html>
 ```
 
-個別頁面範本 `about.html`、`contact.html` 和 `index.html`，每一個都擴充了基底範本 `layout.html`。 `about.html` 最為簡單，並顯示了 `{% extends %}` 和 `{% block content %}` 標籤：
+個別頁面範本 *about.html*、*contact.html* 和 *index.html*，每個都會擴充基底範本 *layout.html*。 *about.html* 最為簡單，並顯示 `{% extends %}` 和 `{% block content %}` 標籤：
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,9 +159,9 @@ def about(request):
 {% endblock %}
 ```
 
-`index.html` 和 `contact.html` 使用相同的結構，並在 "content" (內容) 區塊中提供較長的內容。
+*index.html* 和 *contact.html* 使用相同的結構，並在 "content" (內容) 區塊中提供較長的內容。
 
-在 `templates/app` 資料夾中還有第四頁 `login.html`，以及 `loginpartial.html`。這些頁面是藉由 `{% include %}` 帶入 `layout.html` 之中。 這些範本檔案會在步驟 5 有關驗證的部分中討論。
+*templates/app* 資料夾中也有第四個頁面 *login.html*，以及 *loginpartial.html*，這是使用 `{% include %}` 帶入到 *layout.html*。 這些範本檔案會在步驟 5 有關驗證的部分中討論。
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>問題：在 Django 頁面範本中，{% block %} 和 {% endblock %} 可以縮排嗎？
 
@@ -169,7 +169,7 @@ def about(request):
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>步驟 4-3：了解範本所建立的 URL 路由
 
-「Django Web 專案」範本所建立的 Django 專案的 `urls.py` 檔案包含下列程式碼：
+「Django Web 專案」範本所建立之 Django 專案的 *urls.py* 檔案包含下列程式碼：
 
 ```python
 from datetime import datetime
@@ -204,7 +204,7 @@ urlpatterns = [
 ]
 ```
 
-前三個 URL 模式直接對應至應用程式 `views.py` 檔案中的 `home`、`contact` 和 `about` 檢視。 另一方面，`^login/$` 和 `^logout$` 模式則使用內建的 Django 檢視，而不使用應用程式定義的檢視。 對 `url` 方法的呼叫也會包含自訂檢視的額外資料。 步驟 5 探索這些呼叫。
+前三個 URL 模式直接對應至應用程式 *views.py* 檔案中的 `home`、`contact` 和 `about` 檢視。 另一方面，`^login/$` 和 `^logout$` 模式則使用內建的 Django 檢視，而不使用應用程式定義的檢視。 對 `url` 方法的呼叫也會包含自訂檢視的額外資料。 步驟 5 探索這些呼叫。
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>問題：在我建立的專案中，為什麼 "about" (關於) URL 模式會使用 '^about'，而不是此處所顯示的 '^about$'？
 

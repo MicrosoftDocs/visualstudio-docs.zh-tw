@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: 了解如何使用系統管理員入口網站管理組織的 Visual Studio 訂用帳戶。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327389"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380814"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 訂用帳戶系統管理員入口網站
 
@@ -25,7 +25,7 @@ ms.locfileid: "36327389"
 - 如果升級訂閱 (在購買「升級」授權之後) 或以較低等級續訂，**也必須更新訂閱者的訂用帳戶等級**。 
 - **請勿讓訂閱者彼此共用訂用帳戶。** 您必須將訂用帳戶指派給使用全部或部分訂用帳戶權益的任一人 (供開發和測試用的軟體、Microsoft Azure、E-learning 等等)。 
 
-## <a name="adminstrator-roles"></a>系統管理員角色
+## <a name="administrator-roles"></a>系統管理員規則
 
 大量授權客戶的新 Visual Studio 訂用帳戶管理入口網站中有兩個不同的角色。 這些角色像是目前 VLSC 中的主要/通知連絡人角色和訂用帳戶管理員角色。 
 

@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30bc5e4d14e09852904ca93087bdd99f6f2443ef
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ef599a67dcb81586bd31fd08836c0a95b812bde1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280685"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251223"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 

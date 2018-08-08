@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064606"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381643"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32064606"
 
 - 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選取 [屬性]
 - 在 [快速啟動] 視窗中，輸入「專案屬性」
-- 在 [方案總管] 視窗中選擇 **Alt**+**Enter**
+- 在 [方案總管] 中選擇 **Alt**+**Enter**
 
 選取 **資源**  索引標籤。您可以在專案尚未包含 *.resx* 檔案的情況下新增該檔案、新增和刪除不同種類的資源，以及修改現有的資源。
 

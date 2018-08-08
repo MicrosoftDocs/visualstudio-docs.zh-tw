@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979044"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379256"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
 
@@ -26,7 +26,7 @@ ms.locfileid: "31979044"
 
  若要編輯測試控制器或測試代理程式的各種逾時設定，請使用下表中的機碼名稱和值修改下列組態檔：
 
--   測試控制器：QTController.exe.config
+-   測試控制器：*QTController.exe.config*
 
     |機碼名稱|描述|值|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ ms.locfileid: "31979044"
     |AgentInitializeTimeout|在中止測試回合之前，等候所有代理程式及其資料收集器於測試回合開始時初始化的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設值："120" (2 分鐘)。|
     |AgentCleanupTimeout|在完成測試回合之前等候所有代理程式及其資料收集器清除的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設值："120" (2 分鐘)。|
 
--   測試代理程式：QTAgentService.exe.config
+-   測試代理程式：*QTAgentService.exe.config*
 
     |機碼名稱|描述|值|
     |--------------|-----------------|-----------|
@@ -44,9 +44,9 @@ ms.locfileid: "31979044"
     |StopTestRunCallTimeoutInSeconds|等候呼叫停止測試回合的秒數。|"n" 秒。 預設值："120" (2 分鐘)。|
     |GetCollectorDataTimeout|等候資料收集器的秒數。|"n" 秒。 預設值："300" (5 分鐘)。|
 
-## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>若要指定測試控制器的代理程式逾時選項
+## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定測試控制器的代理程式逾時選項
 
-1. 開啟位於 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中的 QTCcontroller.exe.config XML 組態檔。
+1. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中的 *QTCcontroller.exe.config* XML 組態檔。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -78,9 +78,9 @@ ms.locfileid: "31979044"
     </appSettings>
     ```
 
-## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>若要指定測試代理程式的代理程式逾時選項
+## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>指定測試代理程式的代理程式逾時選項
 
-1. 開啟位於 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中的 QTAgentService.exe.config XML 組態檔。
+1. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中的 *QTAgentService.exe.config* XML 組態檔。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -116,6 +116,6 @@ ms.locfileid: "31979044"
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
-- [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：將測試控制器或測試代理程式繫結至網路介面卡](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

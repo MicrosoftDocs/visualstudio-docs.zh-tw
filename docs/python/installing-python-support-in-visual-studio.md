@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae4dd83f5618ed908dee666f04c580f8c3161cbf
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058681"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341548"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -26,9 +26,9 @@ ms.locfileid: "37058681"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
 
-針對 Visual Studio 2015 和更早版本，也需要另外安裝您所選的 [Python 解譯器](installing-python-interpreters.md) (Python 3.5 和更早版本；不支援 3.6 且會產生「不支援的 Python 3.6 版」訊息)。 相同的頁面也會包含將現有 Python 解譯器新增至 Visual Studio 2017 的指示。
+針對 Visual Studio 2015 和更早版本，也需要另外安裝您所選的 [Python 解譯器](installing-python-interpreters.md) (Python 3.5 和更早版本；不支援 3.6 且會產生 [不支援的 Python 3.6 版] 訊息)。 相同的頁面也會包含將現有 Python 解譯器新增至 Visual Studio 2017 的指示。
 
-在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 Alt-I 開啟 Python Interactive 視窗，並輸入 `2+2`。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
+在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 **Alt**+**I** 並輸入 `2+2`開啟 [Python 互動式] 視窗。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
 
 > [!Tip]
 > Python 工作負載包含很有用的 Cookiecutter 擴充功能，能提供探索範本、輸入範本選項，以及建立專案及檔案的圖形化使用者介面。 如需詳細資料，請參閱[使用 Cookiecutter](using-python-cookiecutter-templates.md)。
@@ -62,13 +62,13 @@ ms.locfileid: "37058681"
     | 選項 | 描述 |
     | --- | --- |
     | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應項選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境](managing-python-environments-in-visual-studio.md)。 |
-    | Cookiecutter 範本支援 | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
-    | Python Web 支援 | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
-    | Python IoT 支援 | 使用 Python 支援 Windows IoT Core 開發。 |
-    | Python 原生開發工具 | 安裝 C++ 編譯器和其他必要元件，以開發 Python 的原生延伸模組。 請參閱[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)。 同時也請安裝 [使用 C++ 的桌面開發] 工作負載，以取得完整的 C++ 支援。 |
-    | Azure 雲端服務核心工具 | 提供 Python 中 Azure Cloud Services 之開發人員的其他支援。 請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。 |
+    | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
+    | **Python Web 支援** | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
+    | **Python IoT 支援** | 使用 Python 支援 Windows IoT Core 開發。 |
+    | **Python 原生開發工具** | 安裝 C++ 編譯器和其他必要元件，以開發 Python 的原生延伸模組。 請參閱[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)。 同時也請安裝 [使用 C++ 的桌面開發] 工作負載，以取得完整的 C++ 支援。 |
+    | **Azure 雲端服務核心工具** | 提供 Python 中 Azure Cloud Services 之開發人員的其他支援。 請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。 |
 
-1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有 Visual Studio 的更新時，[修改] 按鈕會變更為 [更新]。 (修改選項接著就會出現在下拉式功能表上)。您也可以搜尋 "Visual Studio"，以從 Windows [開始] 功能表啟動 Visual Studio 和安裝程式。
+1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有 Visual Studio 的更新時，[修改] 按鈕會變更為 [更新]。 ([修改] 選項接著就會出現在下拉式功能表上)。您也可以搜尋 "Visual Studio"，以從 Windows [開始] 功能表啟動 Visual Studio 和安裝程式。
 
     ![從安裝程式啟動、修改或解除安裝 Visual Studio](media/installation-vs-launch.png)
 
@@ -80,9 +80,9 @@ ms.locfileid: "37058681"
 
 如果您在於 Visual Studio 中安裝或執行 Python 時發生問題，請嘗試下列操作：
 
-- 使用 Python CLI (也就是從命令提示字元執行 `python.exe`) 來判斷是否會發生相同錯誤。
-- 使用 [Visual Studio 安裝程式中的修復選項](../install/repair-visual-studio.md)。
-- 透過 Windows 中的 [設定] > [應用程式與功能]來修復或重新安裝 Python。
+- 使用 Python CLI (也就是從命令提示字元執行 *python.exe*) 來判斷是否會發生相同錯誤。
+- 使用 Visual Studio 安裝程式中的 [[修復]](../install/repair-visual-studio.md) 選項。
+- 透過 Windows 中的 [設定] > [應用程式與功能] 來修復或重新安裝 Python。
 
 **範例錯誤**：無法啟動互動式處理序: System.ComponentModel.Win32Exception (0x80004005): 在 Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() 發生未知的錯誤 (0xc0000135)。
 
@@ -112,16 +112,16 @@ ms.locfileid: "37058681"
 
 根據預設，系統會為電腦上的所有使用者安裝 Python 支援。
 
-針對 Visual Studio 2017，Python 工作負載會安裝在 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python`，其中 &lt;VS_edition&gt; 將會是 Community、Professional 或 Enterprise。
+針對 Visual Studio 2017，Python 工作負載會安裝在 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*，其中 &lt;VS_edition&gt; 是 Community、Professional 或 Enterprise。
 
 針對 Visual Studio 2015 和更早版本，安裝路徑如下：
 
 - 32 位元：
-  - 路徑：`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路徑的登錄位置：`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - 路徑：*%Program Files(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>*
+  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 - 64 位元︰
-  - 路徑：`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路徑的登錄位置：`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - 路徑：*%Program Files%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>*
+  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 
 其中：
 
@@ -134,6 +134,5 @@ ms.locfileid: "37058681"
 
 ### <a name="user-specific-installations-15-and-earlier"></a>使用者特定安裝 (1.5 和更早版本)
 
-適用於 Visual Studio 1.5 和更早版本的 Python 工具，僅允許針對目前的使用者進行安裝，此情況下的安裝路徑為 `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`，其中 &lt;VS_ver&gt; 和 &lt;PTVS_ver&gt; 的狀況與上述相同。
+適用於 Visual Studio 1.5 和更早版本的 Python 工具，僅允許針對目前的使用者進行安裝，此情況下的安裝路徑為 *%LocalAppData%\Microsoft\VisualStudio\\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>*，其中 &lt;VS_ver&gt; 和 &lt;PTVS_ver&gt; 的狀況與上述相同。
 
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

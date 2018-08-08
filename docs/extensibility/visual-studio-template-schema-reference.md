@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 範本結構描述參考 |Microsoft 文件
+title: Visual Studio 範本結構描述參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,28 +15,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571516"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586335"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 範本結構描述參考
-本節包含 .vstemplate 檔案中 XML 項目的相關資訊，這些是用來儲存專案範本、項目範本和入門套件中繼資料的檔案。
+此章節包含的 XML 項目中的相關資訊 *.vstemplate*檔，亦即儲存專案範本、 項目範本和入門套件的中繼資料的檔案。
 
- 您可以使用 vstemplate.xsd 驗證自訂 .vstemplate 檔。 這個檔案位於...\\ *Visual Studio 安裝資料夾*\Xml\Schemas\1033\vstemplate.xsd。
+ 您可以使用*vstemplate.xsd*若要驗證自訂 *.vstemplate*檔案。 此檔案位於 *...\\ \<Visual Studio 安裝資料夾 > \Xml\Schemas\1033\vstemplate.xsd*。
 
 |元素|子元素|屬性|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|
 |[Assembly （範本）](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly （精靈副檔名）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|
-|[設定成 CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名稱<br /><br /> 值|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名稱<br /><br /> 值|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[描述](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> 識別碼|

@@ -11,12 +11,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: f0c4193d68eabd5a5427629cb9a4c7a3be18db3c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924267"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251916"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 
@@ -30,7 +30,7 @@ ms.locfileid: "37924267"
 
     -   **若要在 Mac 上直接執行 Xamarin Studio：** Xamarin Studio 是 Xamarin 的開發環境，可使用 C# 建置 Android、iOS 和 Windows 應用程式。  若要取得 Xamarin Studio 的快速概觀，請參閱 [Xamarin Studio 概觀](https://xamarin.com/studio) (xamarin.com)。
 
-    -   **如果您已在 Mac 上設定 Parallels 或 VMWare：** 在 Parallels 或 VMWare 內搭配 Visual Studio 2017 和 Xamarin 執行 Windows。  在這項設定中，Xamarin 是 Visual Studio 隨附安裝的擴充功能，可讓您使用 Visual Studio 做為開發環境，以使用 C# 建置 Android、iOS 和 Windows 應用程式。  請注意，您可以參加 Visual Studio Developer Essentials 計畫，以免費取得 3 個月的 Parallels 訂閱。 請參閱 [Microsoft Visual Studio Dev Essentials 將包含 Parallels Desktop Pro 和 Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Parallels 部落格)。
+    -   **如果您已在 Mac 上設定 Parallels 或 VMWare：** 在 Parallels 或 VMWare 內搭配 Visual Studio 2017 和 Xamarin 執行 Windows。  在這項設定中，Xamarin 是 Visual Studio 隨附安裝的擴充功能，可讓您使用 Visual Studio 做為開發環境，以使用 C# 建置 Android、iOS 和 Windows 應用程式。  請注意，您可以參加 Visual Studio Developer Essentials 計畫，以免費取得 3 個月的 Parallels 訂閱。 請參閱 [Microsoft Visual Studio Dev Essentials will include Parallels Desktop Pro and Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Microsoft Visual Studio Dev Essentials 將包含 Parallels Desktop Pro 和 Parallels Access) (Parallels 部落格)。
 
 本主題提供這些需求的指示。  在安裝程序執行期間，您可以檢閱[了解 Xamarin 的行動裝置開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)主題，以閱讀並留意必要的背景資料。
 
@@ -40,7 +40,7 @@ ms.locfileid: "37924267"
 
 2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode。
 
-3.  遵循 [安裝和設定 Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) 上的指示，下載並安裝 Xamarin。
+3.  遵循[安裝及設定 Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) 上的指示，下載及安裝 Xamarin。
 
 4.  當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請遵循[使用 XMA 連線到 Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。
 
@@ -78,7 +78,7 @@ ms.locfileid: "37924267"
 
 **Android**
 
-1.  遵循 [建立 Android 專案](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com) 上的指示，驗證 Android 專案的建立作業。
+1.  遵循[建立 Android 專案](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com) 上的指示，驗證 Android 專案的建立作業。
 
 2.  透過 [Android Player > 與 Xamarin Studio 整合文件 (英文)](https://developer.xamarin.com/guides/android/getting_started/installation/android-player/#Integration_with_Xamarin_Studio) (xamarin.com)，來驗證 Android 模擬器中的偵錯作業。
 
@@ -106,7 +106,7 @@ ms.locfileid: "37924267"
 
 **iOS**
 
-1.  請確定您的 Mac 在網路上可用並已和 Visual Studio 配對，如[連線至 Mac (英文)](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (xamarin.com) 中所述。
+1.  請確定您的 Mac 在網路上可用並已和 Visual Studio 配對，如[連線到 Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (xamarin.com) 中所述。
 
 2.  遵循 [建立 iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com) 上的指示，驗證 iOS 專案的建立作業。
 

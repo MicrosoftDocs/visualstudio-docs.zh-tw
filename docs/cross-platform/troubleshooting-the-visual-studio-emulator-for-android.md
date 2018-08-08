@@ -10,14 +10,14 @@ ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2997f5f7daf04bbde467ff40c26103a0310720c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070008"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251825"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
+# <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>針對 Visual Studio 的 Android 模擬器進行疑難排解
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。  
   
 > [!WARNING]
@@ -62,7 +62,7 @@ ms.locfileid: "31070008"
 ##  <a name="BeforeYouStart"></a> 開始之前  
  開始進行疑難排解之前，檢閱下列主題可能會很有幫助：  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a> 無法安裝模擬器  
  若您沒有安裝 Hyper-V，在嘗試安裝模擬器時，會看到下列訊息。 您必須有支援 HyperV 的電腦，並已加以啟用。  
@@ -72,7 +72,7 @@ ms.locfileid: "31070008"
 > [!NOTE]
 >  此訊息對 Visual Studio Emulator for Android 及 Windows Phone 模擬器皆適用。 Windows 8.1 和 Windows 10 都支援模擬器。  
   
- 若您看到此訊息，請檢查 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) 以查看您是否可以執行模擬器。  
+ 若您看到此訊息，請檢查 [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) 以查看您是否可以執行模擬器。  
   
 ##  <a name="DomainNetwork"></a> 無法連接到網域或公司網路上的網路目的地  
  Visual Studio Emulator for Android 以具有自己的 IP 位址的個別裝置形式出現在網路上。 該模擬器未加入 Windows 網域，並且不會與主機電腦共用網域或工作群組認證。  
@@ -179,7 +179,7 @@ ms.locfileid: "31070008"
   
     6.  確定您執行的是 Windows 8 Professional (含) 以後版本 (不支援 Windows Server 2008)。 支援 Windows Server 2012，但您必須啟用 [桌面體驗]。  
   
-     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要執行這個動作，請開啟事件檢視器 (開始鍵 + R，接著輸入 `eventvwr`)，並選取 [Windows 記錄] 、[系統] 。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] 。 請查看錯誤，以協助找出根本原因。  
+     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要執行這個動作，請開啟事件檢視器 (**開始鍵**+**R**，接著鍵入 `eventvwr`)，然後選取 [Windows 記錄]、[系統]。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] 。 請查看錯誤，以協助找出根本原因。  
   
      如果您的處理器符合最低需求，但 Hypervisor 仍然失敗，建議您了解電腦是否有可用的 BIOS 升級。 如果有，而且您選擇升級，則當您升級 BIOS 時，請務必遵守製造商的所有注意事項 (例如，確保 BIOS 韌體升級不會因電源中斷而中斷，這可能會永久損毀 BIOS)。  
   
@@ -193,7 +193,7 @@ ms.locfileid: "31070008"
   
      下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。  
   
-     其中一個 **因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：  
+     其中一個「因應措施」，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：  
   
     -   防毒應用程式 (連接到網路堆疊)  
   
@@ -261,7 +261,7 @@ ms.locfileid: "31070008"
   
 -   從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ，以開啟登錄編輯程式。  
   
--   巡覽至左側資料夾樹狀目錄中的 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
+-   巡覽至左側資料夾樹狀目錄中的 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools*。  
   
 -   修改 [路徑]  登錄變數，以符合您的 Android SDK 路徑。  
   

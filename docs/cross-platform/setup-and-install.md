@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924365"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251188"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 
@@ -44,7 +44,7 @@ ms.locfileid: "37924365"
 
 ### <a name="for-targeting-ios"></a>以 iOS 為目標
 
-在 Windows 電腦上，若要以 iOS 模擬器和裝置為目標，則也需要連上網路且執行 macOS 10.12 或更新版本的 Mac 或 Mac mini，以及 Xcode 8.3。 如需詳細必要條件，請參閱[設定與安裝 Visual Studio for Mac](/visualstudio/mac/installation)。
+在 Windows 電腦上，若要以 iOS 模擬器和裝置為目標，則也需要連上網路且執行 macOS 10.12 或更新版本的 Mac 或 Mac mini，以及 Xcode 8.3。 如需詳細需求，請參閱[設定與安裝 Visual Studio for Mac](/visualstudio/mac/installation)。
 
 <a name="windows" />
 
@@ -84,7 +84,7 @@ ms.locfileid: "37924365"
 
 1.  如果您還沒有 Apple 識別碼，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple 識別碼。 必須使用此 Apple ID 來安裝和登入 Xcode。
 
-2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) \(英文\) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) \(apple.com\) \(英文\) 中所述以新增您的 Apple ID。
+2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述以新增您的 Apple ID。
 
 3.  按照[設定與安裝 Visual Studio for Mac](/visualstudio/mac/installation) 中的指示下載並安裝 Visual Studio for Mac。
 

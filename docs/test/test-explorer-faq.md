@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303279"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382405"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -41,21 +41,21 @@ ms.locfileid: "36303279"
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3.我的專案已經無法使用以組件為基礎的探索。 如何再將它開啟？
 
-  前往 [工具] > [選項] > [測試] 並選取 [Additionally discover tests from built assemblies after builds] \(在建置後從建置的組件額外探索測試\) 方塊。
+  移至 [工具] > [選項] > [測試]，然後核取 [在組建之後，另外從建置的組件中探索測試] 的方塊。
 
   ![以組件為基礎的選項](media/testex-toolsoptions.png)
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4.現在當我打字時，測試會顯示在測試總管中，而不需要建置我的專案。 哪些方面受到變更？
 
-  此功能稱為[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824) \(英文\)。 它使用 Roslyn 分析器來探索測試並即時填入測試總管，因此不需要建置您的專案。 如需有關動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱常見問題集 #1。
+  此功能稱為[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)。 它使用 Roslyn 分析器來探索測試並即時填入測試總管，因此不需要建置您的專案。 如需有關動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱常見問題集 #1。
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5.哪些程式設計語言和測試架構可以使用「即時測試探索」？
 
-  [即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824) \(英文\) 乃是以 Roslyn 編譯器建置，因此只適用於受控語言 (C# 和 Visual Basic)。 目前，「即時測試探索」只適用於 xUnit、NUnit 和 MSTest 架構。
+  [即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)乃是以 Roslyn 編譯器建置，因此只適用於受控語言 (C# 和 Visual Basic)。 目前，「即時測試探索」只適用於 xUnit、NUnit 和 MSTest 架構。
 
 ### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6.如何開啟測試總管的記錄？
 
-  瀏覽至 [工具] > [選項] > [測試] 並於該處尋找 [記錄] 區段。
+  巡覽至 [工具] > [選項] > [測試] 並於該處尋找 [記錄] 區段。
 
 ### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7.為什麼我在部署應用程式前無法探索到 UWP 專案中的測試？
 
@@ -81,7 +81,7 @@ ms.locfileid: "36303279"
 
 ### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>如何開啟功能旗標以試用新的測試功能？
 
-功能旗標是用來將產品的實驗性或未完成的部分，遞送給想在功能正式推出前提供意見反應的熱衷使用者。 它們可能會造成 IDE 體驗不穩定。 建議您僅在處於虛擬環境等安全開發環境時使用這些項目。 功能旗標一律是「自行承擔使用風險」的設定。 您可以使用 [Feature Flags 延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension)，或開發人員命令提示字元來開啟實驗性功能。
+功能旗標是用來將產品的實驗性或未完成的部分，遞送給想在功能正式推出前提供意見反應的熱衷使用者。 它們可能會造成 IDE 體驗不穩定。 建議您僅在處於虛擬環境等安全開發環境時使用這些項目。 功能旗標一律是「自行承擔使用風險」的設定。 您可以使用 [Feature Flags 延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension)，或透過開發人員命令提示字元來開啟實驗性功能。
 
 ![Feature Flag 延伸模組](media/testex-featureflag.png)
 
@@ -97,6 +97,6 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 ## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
-- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Create and run unit tests for existing code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) (針對現有的程式碼建立和執行單元測試)
 - [對程式碼進行單元測試](unit-test-your-code.md)
-- [即時單元測試常見問題集](live-unit-testing-faq.md)
+- [Live Unit Testing 常見問題集](live-unit-testing-faq.md)

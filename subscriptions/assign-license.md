@@ -9,18 +9,18 @@ description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178396"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251701"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
 身為 Visual Studio 訂用帳戶系統管理員，您可以使用系統管理員入口網站，將訂用帳戶指派給個別使用者和使用者群組。
 
-若為使用者群組，您可以一次指派一個訂用帳戶給他們，或者使用 [大量新增] 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。 
+若為使用者群組，您可以一次指派一個訂用帳戶給他們，或者使用 [大量新增] 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。
 
 ## <a name="individual-assignments"></a>個人工作分派
 
@@ -32,7 +32,7 @@ ms.locfileid: "39178396"
 
    ![新增一位訂閱者](media\add-single-subscriber.png)
 
-3. 將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件。 
+3. 將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件。
 
    ![新增新的通知電子郵件地址](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "39178396"
 
   ![下載 Excel 範本以上傳多位訂閱者](media\download-template-upload-subscribers.png)
 
-  >![NOTE] 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
+   > ![NOTE] 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
 1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 ([參考] 是選擇性欄位。)完成之後，請將檔案儲存在本機。
 

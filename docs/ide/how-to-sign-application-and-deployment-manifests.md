@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951722"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381943"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
 
@@ -41,7 +41,7 @@ ms.locfileid: "31951722"
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用憑證簽署應用程式和部署資訊清單
 
-1.  前往 [專案屬性] 視窗 (以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在**方案總管**視窗內按 **Alt**+**Enter**)。 在 [簽署] 索引標籤上，選取 [簽署 ClickOnce 資訊清單] 核取方塊。
+1.  移至 [專案屬性] 視窗 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在 [方案總管] 中按 **Alt**+**Enter**)。 在 [簽署] 索引標籤上，選取 [簽署 ClickOnce 資訊清單] 核取方塊。
 
 2.  按一下 [從存放區選取] 按鈕。
 

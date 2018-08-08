@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180637"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382366"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -75,7 +75,7 @@ ms.locfileid: "39180637"
 
 ## <a name="store-performance-data"></a>儲存效能資料
 
-在負載測試回合期間，會收集效能計數器資料，並將資料儲存在「負載測試結果存放庫」中。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+在負載測試回合期間，會收集效能計數器資料，並將資料儲存在「負載測試結果儲存機制」中。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
 ## <a name="about-threshold-rules"></a>關於臨界值規則
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968190"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379653"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "31968190"
 
 ## <a name="related-tasks"></a>相關工作
 
-相關的屬性為 [計時詳細資料] 儲存區。 如需詳細資訊，請參閱[如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)。
+相關的屬性為 [計時詳細資料儲存區]。 如需詳細資料，請參閱[如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)。
 
 ## <a name="see-also"></a>另請參閱
 

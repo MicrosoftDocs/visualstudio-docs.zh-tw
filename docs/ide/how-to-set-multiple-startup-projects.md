@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942737"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379422"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：設定多個啟動專案
 
@@ -25,7 +25,7 @@ Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 ## <a name="to-set-multiple-startup-projects"></a>設定多個啟動專案
 
-1.  在**方案總管**中，選取方案 (最上層節點)。
+1.  在 [方案總管] 中，選取方案 (最上層節點)。
 
 2.  選擇方案節點的內容 (以滑鼠右鍵按一下) 功能表，然後選擇 [屬性]。 [方案屬性頁] 對話方塊隨即出現。
 
@@ -35,6 +35,6 @@ Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 ## <a name="see-also"></a>另請參閱
 
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建立解決方案及專案](../ide/creating-solutions-and-projects.md)
 - [管理專案及解決方案屬性](../ide/managing-project-and-solution-properties.md)

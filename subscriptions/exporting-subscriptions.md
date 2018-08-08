@@ -9,12 +9,12 @@ description: 了解如何匯出訂閱者清單和其訂閱指派的詳細資料�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4e1a20307eea40a1ed9ba9662bd9d25086489374
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326263"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379465"
 ---
 # <a name="exporting-subscription-information"></a>匯出訂用帳戶資訊
 

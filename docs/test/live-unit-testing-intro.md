@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280272"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379877"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 簡介
 
@@ -27,7 +27,7 @@ Live Unit Testing 是 Visual Studio 2017 15.3 版所提供的技術，可在您�
 
 - 指出您的單元測試是否足以涵蓋您的程式碼，以及顯示單元測試未涵蓋的程式碼。 Live Unit Testing 會以圖形方式即時說明程式碼涵蓋範圍，讓您可以一眼看到有多少測試涵蓋每個程式碼行以及任何單元測試都未涵蓋的程式碼行。
 
-如果您的方案包含一或多個單元測試專案，則可以從頂層 Visual Studio 功能表中選取 [測試]、[Live Unit Testing]、[啟動]，來啟用 Live Unit Testing。
+如果您的方案包含一或多個單元測試專案，則可以從最上層 Visual Studio 功能表中選取 [測試] > [Live Unit Testing] > [啟動]，來啟用 Live Unit Testing。
 
 深入了解 Live Unit Testing：
 

@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4cea1296c58bdf1bad79ca2d1af697969b56cdbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 571cc9048b9f932c0ff344637c144d0a6d649887
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924718"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388393"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
 npm 可讓您安裝和管理要在 Node.js 應用程式中使用的套件。 如果您不熟悉 npm，而且想要深入了解，請移至 [npm 文件](https://docs.npmjs.com/)。
 
-Visual Studio 可讓您輕鬆地與 npm 互動，並透過 UI 或直接使用 or 來發出 npm 命令。 您可以使用下列方法：
+Visual Studio 可讓您輕鬆地與 npm 互動，並透過 UI 或直接發出 npm 命令。 您可以使用下列方法：
 * [從 [方案總管] 安裝套件](#npmInstallWindow)
 * [從 [方案總管] 管理已安裝的套件](#solutionExplorer)
 * [在 Node.js 互動式視窗中使用 `.npm` 命令](#interactive)

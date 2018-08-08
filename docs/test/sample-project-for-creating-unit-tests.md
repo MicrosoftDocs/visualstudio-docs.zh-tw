@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704599"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379770"
 ---
 # <a name="sample-code-for-testing"></a>用於測試的範例程式碼
 
@@ -27,7 +27,7 @@ ms.locfileid: "33704599"
 下列逐步解說中會使用此程式碼：
 
 - [針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。
-- [使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 MSTest.exe 命令列公用程式來執行測試及檢視結果。
+- [使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 *MSTest.exe* 命令列公用程式來執行測試及檢視結果。
 
 ## <a name="sample-code"></a>範例程式碼
 

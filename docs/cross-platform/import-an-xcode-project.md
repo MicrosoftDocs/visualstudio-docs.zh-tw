@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066934"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251558"
 ---
 # <a name="import-an-xcode-project"></a>匯入 XCode 專案
 適用於跨平台行動裝置開發的 Microsoft Visual C++ 內含將您的 XCode 專案移至 Visual Studio 的支援，您可以在其中建立跨平台的程式庫，並與其他專案共用程式碼。 [從 XCode 匯入] 精靈可簡化下列流程：在 XCode 目標中匯入專案，並分割 C++ 程式碼，以用來做為靜態程式庫或共用程式碼專案。 您可以在 Visual Studio 中管理 iOS 特有的程式碼，但仍能使用 XCode 來執行分鏡腳本和組建。 如需如何輕鬆地在 Visual Studio 和 XCode 之間來回移動程式碼的相關資訊，請參閱＜在 XCode 和 Visual Studio之間移動變更＞。  
   
-## <a name="using-the-import-from-xcode-wizard"></a>使用 [從 XCode 匯入] 精靈  
+## <a name="use-the-import-from-xcode-wizard"></a>使用從 XCode 匯入精靈  
  本主題示範如何將 XCode 專案移到 Visual Studio，以利用共用程式碼和跨平台解決方案。 必要條件是您必須先將 Mac 與 Visual studio 配對，才能匯入、匯出和建置專案。 如需如何設定配對的相關指示，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 您也必須透過網路共用您的 XCode 專案，或將它移至 Visual Studio 電腦以使用 [從 XCode 匯入] 精靈。  
   
 #### <a name="import-from-xcode"></a>從 XCode 匯入  
@@ -29,7 +29,7 @@ ms.locfileid: "31066934"
   
      ![選擇要匯入的 XCode 目標專案](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  在 [選擇專案] 窗格中，選擇 [瀏覽] 按鈕來選取 XCode.pbxproj 檔案。 在 [選取 XCode 專案檔] 對話方塊中瀏覽至專案檔，然後選擇 [開啟]。  
+2.  在 [選擇專案] 窗格中，選擇 [瀏覽] 按鈕來選取 XCode *.pbxproj* 檔案。 在 [選取 XCode 專案檔] 對話方塊中瀏覽至專案檔，然後選擇 [開啟]。  
   
      ![在 [選取 Xcode 專案檔] 對話方塊中選取專案檔](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -75,4 +75,4 @@ ms.locfileid: "31066934"
   
      若要使用精靈設定來匯入 XCode 專案，請選擇 [匯入]。  
   
- [從 XCode 匯入] 精靈會在 Visual Studio 中建立專案，以對應到選取的 XCode 專案目標。 系統會將可與其他 C++ 專案共用的程式碼分割成不同的共用程式碼和靜態程式庫專案。 其餘的程式碼則會放在 iOS 程式庫和應用程式專案中，而這類專案是可透過 Visual Studio 從遠端建置的專案。 如需在 Visual Studio 和 XCode 之間移動程式碼的詳細資訊，請參閱[同步處理 XCode 和 Visual Studio 之間的變更](../cross-platform/sync-changes-between-xcode-and-visual-studio.md)。
+ [從 XCode 匯入] 精靈會在 Visual Studio 中建立專案，以對應到選取的 XCode 專案目標。 系統會將可與其他 C++ 專案共用的程式碼分割成不同的共用程式碼和靜態程式庫專案。 其餘的程式碼則會放在 iOS 程式庫和應用程式專案中，而這類專案是可透過 Visual Studio 從遠端建置的專案。 如需在 Visual Studio 和 XCode 之間移動程式碼的詳細資訊，請參閱[同步 XCode 和 Visual Studio 之間的變更](../cross-platform/sync-changes-between-xcode-and-visual-studio.md)。

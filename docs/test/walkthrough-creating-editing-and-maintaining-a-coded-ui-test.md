@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751646"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382392"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 
@@ -36,9 +36,9 @@ ms.locfileid: "34751646"
 
 6.  指定要儲存專案的資料夾。 在 [位置] 文字方塊中輸入資料夾的名稱。
 
-7.  選擇 [ **確定**]。
+7.  選擇 [確定] 。
 
-     WPF Designer for Visual Studio 隨即開啟，並顯示專案的 MainWindow。
+     [WPF Designer for Visual Studio] 隨即開啟，並顯示專案的 MainWindow。
 
 8.  如果目前未開啟工具箱，請開啟它。 選擇 [檢視] 功能表，然後選擇 [工具箱]。
 
@@ -54,7 +54,7 @@ ms.locfileid: "34751646"
 
 13. 按兩下按鈕控制項以加入 Click 事件處理常式。
 
-     MainWindow.xmal.cs 會顯示在 [程式碼編輯器] 中，而且游標位於新的 button1_Click 方法。
+     *MainWindow.xmal.cs* 會顯示在 [程式碼編輯器] 中，而且游標位於新的 button1_Click 方法。
 
 14. 在 MainWindow 類別的頂端，加入一個委派。 這個委派將用於進度列。 若要加入委派，請加入下列程式碼：
 
@@ -314,7 +314,7 @@ ms.locfileid: "34751646"
 
 10. 在 [方案總管] 中，開啟 *UIMap.Designer.cs* 檔案。
 
-11. 在 UIMap.Designer.cs 檔案中，找出 **UIStartButton1** 屬性。 請注意，`SearchProperties` 已設定為 `"buttonA"`：
+11. 在 *UIMap.Designer.cs* 檔案中，找出 **UIStartButton1** 屬性。 請注意，`SearchProperties` 已設定為 `"buttonA"`：
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ ms.locfileid: "34751646"
             }
     ```
 
-     您現在可以修改自動程式碼 UI 測試來使用新對應的控制項。 如先前的程序所述，如果要在自動程式碼 UI 測試中覆寫任何方法或屬性，必須在 UIMap.cs 檔案中這麼做。
+     您現在可以修改自動程式碼 UI 測試來使用新對應的控制項。 如先前的程序所述，如果要在自動程式化 UI 測試中覆寫任何方法或屬性，必須在 *UIMap.cs* 檔案中這麼做。
 
 12. 在 *UIMap.cs* 檔案中，新增建構函式並指定 `UIStartButton` 屬性的 `SearchProperties` 屬性，以使用值為 `"buttonA":` 的 `AutomationID` 屬性
 
@@ -366,5 +366,5 @@ ms.locfileid: "34751646"
 ## <a name="see-also"></a>另請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

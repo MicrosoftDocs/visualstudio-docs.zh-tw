@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178487"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380801"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的 Test Controller 和 Test Agent 需求
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 
 許多測試類型 (包括單元、Web 效能、負載和手動測試) 都已經整合至 Visual Studio 中。 Visual Studio 可讓 Visual Studio 應用程式生命週期管理使用者使用測試控制器以及一或多個代理程式，在遠端電腦上執行測試。 請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "39178487"
 
 ## <a name="monitor-agent-resources"></a>監視代理程式資源
 
-您可以監視代理程式電腦來判定它們的資源需求，方法為觀察在測試期間執行和縮放的 **QTAgent\*.exe** 處理序。 QTAgent*.exe 處理序上最常見的瓶頸為 CPU 使用率。 如果 CPU 使用率持續保持在九十幾，則表示代理程式的負載相當重。 次常見的瓶頸為記憶體使用量。 針對需求測試，監視這些資源有助於判定是否應增加電腦資源，或是以不同方式分散測試。
+您可以監視代理程式電腦來判定它們的資源需求，方法為觀察在測試期間執行和縮放的 *QTAgent\*.exe* 處理序。 *QTAgent\*.exe* 處理序上最常見的瓶頸為 CPU 使用率。 如果 CPU 使用率持續保持在九十幾，則表示代理程式的負載相當重。 次常見的瓶頸為記憶體使用量。 針對需求測試，監視這些資源有助於判定是否應增加電腦資源，或是以不同方式分散測試。
 
 ## <a name="see-also"></a>另請參閱
 

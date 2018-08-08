@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117587"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382577"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 
@@ -65,7 +65,7 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="BKMK_Creating_a_data_source"></a> 建立資料來源
+##  <a name="create-a-data-source"></a>建立資料來源
  若要測試 `AddIntegers` 方法，請建立一個資料來源，其中會指定參數的值範圍，以及您預期將傳回的總和。 在範例中，我們將建立名為 `MathsData` 的 SQL 壓縮資料庫，和名為 `AddIntegersData` 的資料表，其中包含下列資料行名稱和值
 
 |FirstNumber|SecondNumber|Sum|
@@ -74,7 +74,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> 將 TestContext 加入測試類別
+##  <a name="add-a-testcontext-to-the-test-class"></a>將 TestContext 新增至測試類別
  單元測試架構會建立 `TestContext` 物件來儲存資料驅動型測試的資料來源資訊。 架構接著會設定此物件作為我們建立的 `TestContext` 屬性值。
 
 ```csharp
@@ -88,7 +88,7 @@ public TestContext TestContext
 
  在測試方法中，您可以透過 `TestContext` 的 `DataRow` 索引子屬性來存取資料。
 
-##  <a name="BKMK_Writing_the_test_method"></a> 撰寫測試方法
+##  <a name="write-the-test-method"></a>撰寫測試方法
  `AddIntegers` 的測試方法相當簡單。 針對資料來源中的每個資料列，請使用 **FirstNumber** 和 **SecondNumber** 資料行值作為參數呼叫 `AddIntegers`，並針對 **Sum** 資料行值驗證傳回值：
 
 ```csharp
@@ -124,9 +124,9 @@ DataSource 屬性有三個建構函式。
 [DataSource(dataSourceSettingName)]
 ```
 
- 具有一個參數的建構函式在方案中使用 app.config 檔案中儲存的連接資訊。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
+ 具有一個參數的建構函式在解決方案中使用 *app.config* 檔案中儲存的連線資訊。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
 
- 使用 app.config 檔案可讓您變更資料來源的位置，而不用變更單元測試本身。 如需如何建立和使用 app.config 檔案的資訊，請參閱[逐步解說：使用組態檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ 使用 *app.config* 檔案可讓您變更資料來源的位置，而不用變更單元測試本身。 如需如何建立和使用 *app.config* 檔案的資訊，請參閱[逐步解說：使用組態檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -145,19 +145,19 @@ DataSource 屬性有三個建構函式。
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> 使用 TestContext.DataRow 存取資料 
+###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> 使用 TestContext.DataRow 存取資料
  若要存取 `AddIntegersData` 資料表中的資料，您要使用 `TestContext.DataRow` 索引子。 `DataRow` 是 <xref:System.Data.DataRow> 物件，因此請透過索引或資料行名稱來擷取資料行值。 因為值會以物件傳回，請將它們轉換為適當類型：
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> 執行測試和檢視結果
+##  <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
  當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管] 視窗中的 [未執行的測試] 群組。 當您執行、撰寫及重新執行測試時，[測試總管] 會將結果顯示在 [失敗的測試]、[通過的測試] 和 [未執行的測試] 等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
 
  [測試總管] 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管] 視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
 
- 如果您執行範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，且測試方法會移動到 [失敗的測試] 中。如果任何來自資料來源的反覆執行方法失敗，資料驅動型測試就會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+ 如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
 
  當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。
 
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
-- [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [使用適用於受控程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

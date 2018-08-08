@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757834"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251675"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 
@@ -33,7 +33,7 @@ ms.locfileid: "36757834"
 
 1.  [在 Visual Studio 中使用 Xamarin 建置行動應用程式](https://visualstudio.microsoft.com/xamarin/) (visualstudio.com) 提供了 Xamarin 主要特性的簡短概要。
 
-2.  Xamarin 推廣人員 James Montemagno 的[使用 C# 和 Visual Studio 建置跨平台行動應用程式](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9，15 分 16 秒)。 前三分鐘是 Xamarin 概觀，後面接著程式碼示範。
+2.  Xamarin 推廣人員 James Montemagno 的 [Build cross-platform mobile apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (使用 C# 和 Visual Studio 建置跨平台行動應用程式) (Channel9，15 分 16 秒)。 前三分鐘是 Xamarin 概觀，後面接著程式碼示範。
 
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>基本概念：Visual Studio 和 Xamarin 環境概觀
 
@@ -92,7 +92,7 @@ Xamarin.Forms 提供一組通用的 API，可讓您在 .NET Standard 程式庫�
 
 4.  (選擇性) 請參閱[裝置類別](/xamarin/xamarin-forms/platform/device/)文件中有關使用 `OnPlatform` 進行自訂的範例
 
-5.  (選擇性) Jason Smith (MSDN Magazine) 的 [跨平台 - 跨行動平台與 Xamarin.Forms 共用 UI 程式碼](https://msdn.microsoft.com/magazine/dn904669.aspx) 概述 Xamarin.Forms 中的不同自訂選項，其詳細資訊則包含在[自訂轉譯器](/xamarin/xamarin-forms/app-fundamentals/custom-renderer/)中。
+5.  (選擇性) Jason Smith (MSDN Magazine) 的 [Cross-platform - Share UI code across mobile platforms with Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) (跨平台 - 跨行動平台與 Xamarin.Forms 共用 UI 程式碼) 概述 Xamarin.Forms 中的不同自訂選項，其詳細資訊則包含在[自訂轉譯器](/xamarin/xamarin-forms/app-fundamentals/custom-renderer/)中。
 
 ## <a name="deeper-dive-debugging-with-emulators"></a>深入探討：使用模擬器偵錯
 
@@ -102,19 +102,19 @@ Xamarin.Forms 提供一組通用的 API，可讓您在 .NET Standard 程式庫�
 
 ### <a name="microsofts-android-emulator"></a>Microsoft 的 Android 模擬器
 
-建議您使用 Microsoft [Visual Studio 的 Android 模擬器](visual-studio-emulator-for-android.md)，這會隨 Visual Studio 一起安裝。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。
+建議您使用 Microsoft [Visual Studio 的 Android 模擬器](visual-studio-emulator-for-android.md)，這會隨 Visual Studio 一起安裝。  [Visual Studio emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Visual Studio 的 Android 模擬器) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。
 
 ### <a name="apples-ios-simulator"></a>Apple 的 iOS 模擬器
 
 若要深入了解，請閱讀 [iOS 模擬器使用者入門](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。
 
-### <a name="microsofts-windows-phone-emulator"></a>Microsoft 的 Windows Phone 模擬器。
+### <a name="microsofts-windows-phone-emulator"></a>Microsoft 的 Windows Phone 模擬器
 
 若要深入了解，請參閱[使用適用於 Windows 10 行動裝置版的 Microsoft 模擬器來進行測試](/windows/uwp/debug-test-perf/test-with-the-emulator)。
 
 <a name="components" />
 
-## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components
+## <a name="deeper-dive-xamarin-components"></a>深入探索：Xamarin 元件
 
 *10 分鐘*
 

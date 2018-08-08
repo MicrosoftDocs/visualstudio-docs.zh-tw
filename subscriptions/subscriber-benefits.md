@@ -9,12 +9,12 @@ description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283259"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381542"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
@@ -26,7 +26,7 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](vs-ide-benefit.md)、[Visual Studio Team Services](vs-vsts.md) 和 [Azure](vs-azure.md) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
 
 ## <a name="professional-development"></a>專業開發
-為了協助您持續增強技能集，並跟上最新的技術，我們提供一些來自業界先驅的最佳線上訓練課程的存取權。 所提供絕佳內容的範例包括：
+為了協助您持續增強技能，並跟上最新的技術，我們提供一些來自業界先驅的最佳線上訓練課程的存取權。 所提供絕佳內容的範例包括：
 - 由 Opsgility 提供的 Azure App Insights 和 Azure Cosmos DB
 - 由 Xamarin University 提供的跨平台行動裝置應用程式開發人員
 - 由 Pluralsight 提供的適用於 .Net 開發人員的 Microsoft Azure 與其他絕佳內容
@@ -37,7 +37,7 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 ## <a name="support"></a>支援
 身為 Visual Studio 訂閱者，您也擁有各種類型支援的存取權，以防您有疑問或需要技術協助。
 - 付費訂用帳戶包含解決在開發/測試環境中執行的工具與應用程式相關問題的專業技術支援事件存取權。
-- 需要技術文件或產品資訊嗎？  立即從服務台交談服務取得支援。
+- 需要技術文件或產品資訊嗎？  立即從服務台交談服務取得協助。
 - 從「優先支援論壇」中社群的成員取得協助。  如果社群成員無法回答您的問題，Microsoft 的專家會提供解答。
 - 對 Azure 有任何疑問嗎？  請查看 Azure 社群和 Azure Advisor 交談服務。
 

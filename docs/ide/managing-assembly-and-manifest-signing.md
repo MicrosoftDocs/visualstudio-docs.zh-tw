@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844422"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379562"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -59,7 +59,7 @@ ms.locfileid: "34844422"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件
 
-使用專案 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點 ，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在 [方案總管] 視窗中按 **Alt**+**Enter**)。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
+使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在 [方案總管] 中按 **Alt**+**Enter**)。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
 
 指定金鑰檔。 如果您選擇建立新的金鑰檔，新的金鑰檔一律會使用 *.pfx* 格式建立。 您需要新檔案的名稱和密碼。
 

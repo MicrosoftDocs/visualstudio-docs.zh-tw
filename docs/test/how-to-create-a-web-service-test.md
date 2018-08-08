@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180070"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380664"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
@@ -37,7 +37,7 @@ ms.locfileid: "39180070"
 
 3.  在新要求的 [Url] 屬性中，鍵入 Web 服務的名稱，例如 **http://localhost/storecsvs/InstantOrder.asmx**。
 
-4.  開啟瀏覽器的不同工作階段，並在 [位址] 工具列中輸入 .asmx 頁面的 URL。 請選取要測試的方法，並檢查 SOAP 訊息， 它包含 `SOAPAction`。
+4.  開啟瀏覽器的不同工作階段，並在 [位址] 工具列中鍵入 *.asmx* 頁面的 URL。 請選取要測試的方法，並檢查 SOAP 訊息， 它包含 `SOAPAction`。
 
 5.  在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下要求，然後選取 [新增標頭] 新增新的標頭。 在 [名稱] 屬性中，鍵入 `SOAPAction`。 在 [值] 屬性中，鍵入您在 `SOAPAction` 中所看到的值，例如 `"http://tempuri.org/CheckStatus"`。
 
@@ -60,7 +60,7 @@ ms.locfileid: "39180070"
      </soap:Envelope>
      ```
 
-9. 返回 [Web 效能測試編輯器]，然後選擇 [字串內容] 屬性中的省略符號 (…)。 將剪貼簿的內容貼到屬性中。
+9. 返回 [Web 效能測試編輯器]，然後選擇 [字串內容] 屬性中的省略符號 **(…)**。 將剪貼簿的內容貼到屬性中。
 
 10. 為了讓測試通過，您必須以有效的值取代 XML 中任何的預留位置值。 在先前的範例中，您可能取代 `string` 的兩個執行個體 (Instance) 和一個 `int`。 這個 Web 服務作業只有在存有編排順序的已註冊使用者時才會完成。
 

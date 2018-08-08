@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179732"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381116"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -28,11 +28,11 @@ ms.locfileid: "39179732"
 
 針對負載測試專案，您也可以從 [負載測試] 功能表中選擇 [管理測試控制器]。
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>將測試代理程式新增至測試控制器
+## <a name="add-a-test-agent-to-a-test-controller"></a>將測試代理程式加入至測試控制器
 
 您可能想要將測試代理程式加入至其他測試控制器，或者可能必須將測試代理程式加入至您剛剛安裝的測試控制器。
 
-### <a name="to-add-a-test-agent-to-a-test-controller"></a>將測試代理程式加入至測試控制器
+### <a name="to-add-a-test-agent-to-a-test-controller"></a>若要將測試代理程式加入至測試控制器
 
 1. 選擇 [開始] > [Test Agent 組態工具]。
 
@@ -102,7 +102,7 @@ ms.locfileid: "39179732"
 > [!NOTE]
 > 若代理程式已在控制器中註冊為實驗室環境的一部分，則無法使用此程序加以移除。 您必須先使用 Microsoft Test Manager 移除環境，才能從控制器中移除這類代理程式。
 
-### <a name="to-remove-a-test-agent-from-a-test-controller"></a>從測試控制器移除測試代理程式
+### <a name="to-remove-a-test-agent-from-a-test-controller"></a>若要從測試控制器移除測試代理程式
 
 1. 如果測試控制器未向 Team 專案註冊，請遵循下列步驟進行。
 
@@ -132,7 +132,7 @@ ms.locfileid: "39179732"
 
 您可以透過使用下列程序，變更測試代理程式的狀態及其他設定。
 
-### <a name="to-change-the-settings-of-a-test-agent"></a>變更測試代理程式的設定
+### <a name="to-change-the-settings-of-a-test-agent"></a>若要變更測試代理程式的設定
 
 > [!NOTE]
 > 如果測試代理程式註冊至已向 Team 專案註冊的測試控制器，請變更 Microsoft Test Manager 中的設定。
@@ -160,7 +160,7 @@ ms.locfileid: "39179732"
 (選擇性) 若要變更測試代理程式的狀態，請選取清單中的代理程式，然後根據代理程式的目前狀態從可用選項中選取動作。
 
 > [!NOTE]
-> 如果您的測試代理程式以處理序的方式執行，則您可從測試代理程式安裝所在電腦上執行的告知區域圖示中，管理測試代理程式的狀態。 如此便會顯示測試代理程式的狀態。 您可以使用此工具啟動、停止或重新啟動以處理序方式執行的代理程式。 若要將測試代理程式作為處理序啟動 (如果尚未執行)，請依序選擇 [開始]、[所有程式]、[Microsoft Visual Studio] 和 [Microsoft Visual Studio Test Agent]。 如此便會加入告知區域圖示。
+> 如果您的測試代理程式以處理序的方式執行，則您可從測試代理程式安裝所在電腦上執行的告知區域圖示中，管理測試代理程式的狀態。 如此便會顯示測試代理程式的狀態。 您可以使用此工具啟動、停止或重新啟動以處理序方式執行的代理程式。 若要將測試代理程式作為處理序啟動 (如果尚未執行)，請依序選擇 [開始] > [所有程式] > [Microsoft Visual Studio] > [Microsoft Visual Studio Test Agent]。 如此便會加入告知區域圖示。
 
 ## <a name="configure-a-test-controller"></a>設定測試控制器
 
@@ -171,7 +171,7 @@ ms.locfileid: "39179732"
 > [!NOTE]
 > 如果您從具有現有環境的 Team 專案集合解除測試控制器的註冊，則即使您移動該 Team 專案集合，並對其重新註冊測試控制器，該環境仍會存在。
 
-### <a name="to-configure-a-test-controller"></a>設定測試控制器
+### <a name="to-configure-a-test-controller"></a>若要設定測試控制器
 
 1. 若要執行工具以便隨時重新設定測試控制器，請依序選擇 [開始] > [所有程式] >  [Microsoft Visual Studio] > [Microsoft Visual Studio Test Controller 組態工具]。
 
@@ -217,15 +217,15 @@ ms.locfileid: "39179732"
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>從延遲簽署組件中載入測試
 
-測試控制器和測試代理程式只能載入屬於強式簽署的組件或未簽署組件的測試組件。 有些測試組件為延遲簽署，因為它們對於應用程式必須具有實際執行組件的存取權。 不過，這些組件不是強式簽署，因為它們只是測試組件而且未發佈。 因為這些組件是延遲簽署所以無法載入，因此您必須在即將載入組件的所有電腦中 (包括測試控制器電腦)，針對這些組件停用強式名稱驗證。 若要停用延遲簽署驗證，請使用 sn.exe。 也可能必須併入延遲簽署組件 (會要求略過其強式名稱驗證) 的公開金鑰語彙基元。
+測試控制器和測試代理程式只能載入屬於強式簽署的組件或未簽署組件的測試組件。 有些測試組件為延遲簽署，因為它們對於應用程式必須具有實際執行組件的存取權。 不過，這些組件不是強式簽署，因為它們只是測試組件而且未發佈。 因為這些組件是延遲簽署所以無法載入，因此您必須在即將載入組件的所有電腦中 (包括測試控制器電腦)，針對這些組件停用強式名稱驗證。 若要停用延遲簽署驗證，請使用 *sn.exe*。 也可能必須併入延遲簽署組件 (會要求略過其強式名稱驗證) 的公開金鑰語彙基元。
 
-請使用 Sn.exe (強式名稱工具)，以停用延遲簽署驗證。
+請使用 *Sn.exe* (強式名稱工具)，以停用延遲簽署驗證。
 
 這將在您執行命令的電腦上，僅針對指定的組件停用強式名稱驗證。 您必須具有足夠權限才能執行此作業。
 
-在測試回合完成後，請使用 SN.exe 命令重新啟用延遲簽署驗證。
+在測試回合完成後，請使用 *SN.exe* 命令重新啟用延遲簽署驗證。
 
-停用與重新啟用簽署驗證的建議作法是在指令碼中使用 SN.exe 命令。 您可以在安裝指令碼中停用驗證，在清除指令碼中重新啟用驗證。
+停用與重新啟用簽署驗證的建議做法是在指令碼中使用 *SN.exe* 命令。 您可以在安裝指令碼中停用驗證，在清除指令碼中重新啟用驗證。
 
 ## <a name="see-also"></a>另請參閱
 
