@@ -1,5 +1,5 @@
 ---
-title: 保存的專案項目屬性 |Microsoft 文件
+title: 保存專案項目的屬性 |Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b0bc529e01d8ef34b6959b98d773857000ec1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138050"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639346"
 ---
-# <a name="persisting-the-property-of-a-project-item"></a>保存專案項目的屬性
-若要保存您加入專案項目，例如作者的原始程式檔的屬性。 您可以將屬性儲存在專案檔。
+# <a name="persist-the-property-of-a-project-item"></a>保存專案項目的屬性
+若要保存的屬性，您將新增至專案項目，例如來源檔案的作者。 您可以將屬性儲存在專案檔來執行這項操作。
 
- 屬性保存在專案檔的第一個步驟是取得做為專案的階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。 您可以取得此介面，使用自動化，或使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦您取得的介面，您可以使用它來判斷目前選取的專案項目。 專案項目 ID 之後，您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以加入屬性。
+ 保存的屬性，在專案檔中的第一個步驟是取得做為專案的階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。 您可以取得此介面，使用自動化，或使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦您取得的介面，您可以使用它來判斷目前選取的專案項目。 一旦您有專案項目識別碼時，您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以新增屬性。
 
- 在下列程序中，您將保存 VsPkg.cs 屬性`Author`值`Tom`專案檔中。
+ 在下列程序中，您將保存*VsPkg.cs*屬性`Author`具有值`Tom`專案檔中。
 
-### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>若要取得 DTE 物件的專案階層
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>若要取得 DTE 物件的專案階層
 
-1.  將下列程式碼加入至您的 VSPackage:
+1.  下列程式碼加入 VSPackage 中：
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,9 +41,9 @@ ms.locfileid: "31138050"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>保存與 DTE 物件的專案項目屬性
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>保存專案項目屬性，與 DTE 物件
 
-1.  將下列程式碼加入至先前的程序中的方法中指定的程式碼：
+1.  先前的程序中的方法所提供的程式碼中加入下列程式碼：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,9 +58,9 @@ ms.locfileid: "31138050"
     }
     ```
 
-### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>若要取得使用 IVsMonitorSelection 專案階層架構
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>若要取得使用 IVsMonitorSelection 專案階層架構
 
-1.  將下列程式碼加入至您的 VSPackage:
+1.  下列程式碼加入 VSPackage 中：
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,11 +102,9 @@ ms.locfileid: "31138050"
     }
     ```
 
-2.
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>若要保存選取的專案項目屬性，指定的專案階層架構
 
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>將選取的專案項目屬性保存，指定專案階層架構
-
-1.  將下列程式碼加入至先前的程序中的方法中指定的程式碼：
+1.  先前的程序中的方法所提供的程式碼中加入下列程式碼：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -117,18 +115,18 @@ ms.locfileid: "31138050"
     }
     ```
 
-### <a name="to-verify-that-the-property-is-persisted"></a>若要確認此屬性會保存
+## <a name="to-verify-that-the-property-is-persisted"></a>若要確認屬性會保存
 
-1.  啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]再開啟或建立的方案。
+1.  啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然後開啟或建立解決方案。
 
 2.  選取的專案項目中的 VsPkg.cs**方案總管 中**。
 
-3.  使用中斷點或另外判斷已載入 VSPackage 和 SetItemAttribute 執行。
+3.  使用中斷點或另外判斷會載入 VSPackage 和 SetItemAttribute 執行。
 
     > [!NOTE]
-    > 您可以自動載入 VSPackage UI 內容中<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 如需詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。
+    > 您可以自動載入 VSPackage 中的 UI 內容<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。
 
-4.  關閉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然後在 [記事本] 中開啟專案檔。 您應該會看到\<作者 > 標記值 Tom，如下：
+4.  關閉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然後在記事本中開啟專案檔。 您應該會看到\<作者 > 標記 Tom 的值，如下所示：
 
     ```xml
     <Compile Include="VsPkg.cs">

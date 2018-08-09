@@ -1,5 +1,5 @@
 ---
-title: 如何： 引發事件，當編輯器失去焦點時 |Microsoft 文件
+title: 如何： 引發事件當編輯器失去焦點時 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbdcf30443bc548fd8d182db301cbc7119d8ceae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127033"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639652"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件，當編輯器失去焦點時
-有時則需要知道當編輯器失去焦點視窗框架上。 例如，您可能需要擷取從程式碼視窗的程式碼編輯器不會再著重於它之後。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件當編輯器失去焦點時
+有時候就必須知道當編輯器失去焦點，視窗框架上。 比方說，您可能需要擷取從程式碼視窗的程式碼之後，編輯器不再將焦點放在其上。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>引發事件以回應編輯器失去焦點  
+## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>引發事件以回應編輯器失去焦點  
   
-1.  監視選取的事件取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>物件從<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
+1.  取得監視選取的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>物件從<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
   
 2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>，並提供您<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>物件。  
   
@@ -35,4 +35,4 @@ ms.locfileid: "31127033"
   
     1.  您所需的視窗框架。  
   
-    2.  在您的程式失去該視窗框架選取範圍點。
+    2.  在您的程式遺失選取範圍至該視窗框架的點。

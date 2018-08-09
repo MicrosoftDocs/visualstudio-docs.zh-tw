@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750990"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381966"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -46,7 +46,7 @@ ms.locfileid: "34750990"
 5.  (選擇性) 若要指定針對失敗和成功的測試儲存螢幕和聲音錄製，請選取 [如果測試案例成功即儲存錄製] 旁的核取方塊。
 
     > [!WARNING]
-    > 如果您選取 [如果測試案例成功即儲存錄製]，錄製內容會與測試結果一併儲存，並且使用伺服器上的儲存空間。 您可以使用 Test Attachment Cleaner 工具清除這些附件。
+    > 如果您選取 [如果測試案例成功即儲存錄製]，錄製內容會與測試結果一併儲存，並且使用伺服器上的儲存空間。 您可以使用 **Test Attachment Cleaner** 工具清除這些附件。
 
 6.  在 [螢幕錄製品質] 底下，設定下列下拉式清單選項：
 

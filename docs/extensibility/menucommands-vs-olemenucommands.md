@@ -1,5 +1,5 @@
 ---
-title: MenuCommand 對比OleMenuCommands |Microsoft 文件
+title: MenuCommand 對比OleMenuCommands |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 47ec8bd549f8f5093a7035f37ad728c1e245e3b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2567b0a5a5db1d57abba8c00255f1598f0ac9bad
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147186"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637795"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
-您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
+您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
   
- VSPackage 會提供給 IDE 的命令必須顯示並啟用，使用者才能使用它們。 使用 Visual Studio Package 專案範本建立在 .vsct 檔案中建立命令，它們預設會顯示並啟用。 設定一些命令旗標，例如 `DynamicItemStart`，可以變更預設行為。 可見性、啟用的狀態，以及命令的其他屬性，也可以在執行階段的程式碼中藉由存取與命令相關聯的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件來變更。  
+ VSPackage 會提供給 IDE 的命令必須顯示並啟用，使用者才能使用它們。 命令中的建立時 *.vsct*檔案藉由使用 Visual Studio Package 專案範本，它們會顯示並依預設啟用。 設定一些命令旗標，例如 `DynamicItemStart`，可以變更預設行為。 可見性、啟用的狀態，以及命令的其他屬性，也可以在執行階段的程式碼中藉由存取與命令相關聯的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件來變更。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-## <a name="template-locations-for-the-visual-studio-package-template"></a>Visual Studio Package 範本的範本位置  
- 您可以在下列位置找到 Visual Studio Package 範本：[Visual Basic]/[ **擴充性** ]、[C#]/[ **擴充性**] 或 [其他專案類型]/[ **擴充性**] 下的 [ **新增專案**] 對話方塊。  
+## <a name="template-locations-for-the-visual-studio-package-template"></a>Visual Studio package 範本的範本位置  
+ 您可以找到 Visual Studio Package 範本**新的專案**下方的對話方塊**Visual Basic** > **擴充性** >  **C#** > **擴充性**，或**其他專案類型** > **擴充性**。  
   
-## <a name="creating-a-command"></a>建立命令  
- 所有命令、命令群組、功能表、工具列和工具視窗定義在 .vsct 檔案中。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+## <a name="create-a-command"></a>建立命令  
+ 所有命令、 命令群組、 功能表、 工具列和工具視窗中所都定義 *.vsct*檔案。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
- 如果您使用封裝範本建立 VSPackage，請選取 [ **功能表命令** ] 來建立 .vsct 檔並定義預設的功能表命令。 如需詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+ 如果您要使用封裝範本建立 VSPackage，請選取**功能表命令**來建立 *.vsct*檔案，並定義預設的功能表命令。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-#### <a name="to-add-a-command-to-the-ide"></a>將命令加入 IDE  
+### <a name="to-add-a-command-to-the-ide"></a>將命令加入 IDE  
   
-1.  開啟 .vsct 檔案。  
+1.  開啟 *.vsct*檔案。  
   
 2.  在 `Symbols` 區段中，尋找包含群組和命令的 [GuidSymbol](../extensibility/guidsymbol-element.md) 項目。  
   
@@ -75,11 +75,11 @@ ms.locfileid: "31147186"
   
          省略 `priority` 屬性會將其值設定為 0。  
   
-    3.  設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 [Button Element](../extensibility/button-element.md)。  
+    3.  設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 < [Button 元素](../extensibility/button-element.md)。  
   
 5.  在按鈕定義中，建立包含 [ButtonText](../extensibility/strings-element.md) 項目的 [字串](../extensibility/buttontext-element.md) 項目，以包含顯示在 IDE 中的功能表名稱，並建立 [CommandName](../extensibility/commandname-element.md) 項目，以包含用於存取 [ **命令** ] 視窗之功能表的命令名稱。  
   
-     如果按鈕文字字串包含 '&' 字元，使用者可以按 ALT 鍵及 '&' 後面緊接的字元來開啟功能表。  
+     如果按鈕文字字串包含 '&' 字元，使用者可以藉由按下開啟功能表**Alt**再緊接在後面的字元加上 '&'。  
   
      加入 `Tooltip` 項目會使得包含的文字在使用者將滑鼠指標停留在按鈕上時顯示。  
   
@@ -120,11 +120,11 @@ ms.locfileid: "31147186"
   
          建立多個有相同 GUID:ID 但有不同父代的命令位置，會使功能表出現在多個位置。 如需詳細資訊，請參閱 [CommandPlacements](../extensibility/commandplacements-element.md) 項目。  
   
-     如需命令群組與父代的詳細資訊，請參閱[建立可重複使用群組的按鈕](../extensibility/creating-reusable-groups-of-buttons.md)。  
+     如需有關命令群組與父代的詳細資訊，請參閱[建立可重複使用的按鈕群組](../extensibility/creating-reusable-groups-of-buttons.md)。  
   
  此時，命令會顯示在 IDE 中，但沒有任何功能。 如果命令由封裝範本所建立，依預設它會有 顯示訊息的 Click 處理常式。  
   
-## <a name="handling-the-new-command"></a>處理新的命令  
+## <a name="handle-the-new-command"></a>處理新的命令  
  Managed 程式碼的大部分命令可以由 Managed 封裝架構 (MPF) 來處理，方法是產生命令與 <xref:System.ComponentModel.Design.MenuCommand> 物件或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件的關聯，並實作其事件處理常式。  
   
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理命令的程式碼，您必須實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面和其方法。 兩個最重要的方法是 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>。  
@@ -172,7 +172,7 @@ ms.locfileid: "31147186"
   
 6.  實作處理命令的方法。  
   
-#### <a name="to-implement-querystatus"></a>實作 QueryStatus  
+### <a name="to-implement-querystatus"></a>實作 QueryStatus  
   
 1.  QueryStatus 事件會在顯示命令之前發生。 這可讓該命令的屬性，在使用者看到之前便在事件處理常式中設定。 只有加入為 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件的命令可以存取此方法。  
   
@@ -198,14 +198,14 @@ ms.locfileid: "31147186"
   
  MPF 會自動處理不受支援或未知的群組案例。 除非已使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 方法將命令加入 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> ，否則不支援命令。  
   
-### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>使用 IOleCommandTarget 介面處理命令  
+### <a name="handle-commands-by-using-the-iolecommandtarget-interface"></a>使用 IOleCommandTarget 介面處理命令  
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面的程式碼，VSPackage 必須同時實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 介面的 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 方法。 如果 VSPackage 實作專案階層架構，則應該改為實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 介面的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 方法。  
   
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法都是設計來接收單一命令集 `GUID` 和命令 ID 的陣列作為輸入。 我們建議 VSPackage 在單一呼叫中完全支援這個多 ID 的概念。 不過，只要未從其他 VSPackage 呼叫 VSPackage，您就可以假設命令陣列只包含一個命令 ID，因為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法會按照妥善定義的順序執行。 如需有關路由的詳細資訊，請參閱[中 Vspackage 的命令路由](../extensibility/internals/command-routing-in-vspackages.md)。  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法都是設計來接收單一命令集 `GUID` 和命令 ID 的陣列作為輸入。 我們建議 VSPackage 在單一呼叫中完全支援這個多 ID 的概念。 不過，只要未從其他 VSPackage 呼叫 VSPackage，您就可以假設命令陣列只包含一個命令 ID，因為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法會按照妥善定義的順序執行。 如需有關路由的詳細資訊，請參閱 < [Vspackage 的命令路由](../extensibility/internals/command-routing-in-vspackages.md)。  
   
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理命令的程式碼，您必須在 VSPackage 中實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法來處理命令，如下所示。  
   
-##### <a name="to-implement-the-querystatus-method"></a>實作 QueryStatus 方法  
+#### <a name="to-implement-the-querystatus-method"></a>實作 QueryStatus 方法  
   
 1.  針對有效的命令傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
@@ -247,13 +247,13 @@ ms.locfileid: "31147186"
   
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法的 VSPackage 實作還必須傳回特定的錯誤碼，根據是否支援該命令和是否已成功處理命令而定。  
   
-##### <a name="to-implement-the-exec-method"></a>實作 Exec 方法  
+#### <a name="to-implement-the-exec-method"></a>實作 Exec 方法  
   
 -   如果命令 `GUID` 不明，會傳回 `OLECMDERR_E_UNKNOWNGROUP`。  
   
 -   如果 `GUID` 已知但命令 ID 不明時，會傳回 `OLECMDERR_E_NOTSUPPORTED`。  
   
--   如果 `GUID` 和命令 ID 符合 .vsct 檔中的命令所使用的 GUID:ID 配對，會執行與命令相關聯的程式碼並傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
+-   如果`GUID`和命令 ID 符合使用中的命令 guid: id 配對 *.vsct*檔案中，執行命令，並傳回相關聯的程式碼<xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)   

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180369"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379815"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180369"
 
 -   Visual Studio 企業版
 
- 當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
+ 當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
  為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。
 
@@ -46,11 +46,11 @@ ms.locfileid: "39180369"
 
 -   從應用程式的多點存取的獨立一組控制項，例如具有數頁作業的精靈。 如果精靈的每一頁都特別複雜，您可以為每一頁各建立一個 UI 對應。
 
-## <a name="adding-multiple-ui-maps"></a>加入多個 UI 對應
+## <a name="add-multiple-ui-maps"></a>加入多個 UI 對應
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>將 UI 對應加入至自動程式化 UI 測試專案
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>將 UI 對應加入至自動程式化 UI 測試專案
 
-1.  在方案總管的自動程式碼 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式碼 UI 測試專案檔、指向 [新增]，然後選擇 [新增資料夾]。 例如，您可以將它命名為 `UIMaps`。
+1.  在 [方案總管] 的自動程式化 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式化 UI 測試專案檔、指向 [新增]，然後選擇 [新增資料夾]。 例如，您可以將它命名為 `UIMaps`。
 
      新資料夾隨即顯示在自動程式化 UI 測試專案底下。
 
@@ -75,7 +75,7 @@ ms.locfileid: "39180369"
 
 7.  繼續建立 UI 對應。 錄製動作和判斷提示，將它們群組在每個元件的方法中，然後產生程式碼。
 
- 在許多情況下，應用程式的最上層視窗對所有精靈、表單和頁面會保持固定。 雖然每個 UI 對應都有最上層視窗的類別，但所有對應可能都會參考應用程式所有元件執行所在的同一個最上層視窗。 自動程式碼 UI 測試會以階層方式由上而下，從最上層視窗開始搜尋控制項，因此在複雜應用程式中，實際的最上層視窗可能會重複出現在每個 UI 對應中。 如果實際的最上層視窗會重複，當該視窗變更時可能會需要多個修改。 當您在 UI 對應之間切換時，這可能會造成效能問題。
+ 在許多情況下，應用程式的最上層視窗對所有精靈、表單和頁面會保持固定。 雖然每個 UI 對應都有最上層視窗的類別，但所有對應可能都會參考應用程式所有元件執行所在的同一個最上層視窗。 自動程式化 UI 測試會以階層方式由上而下，從最上層視窗開始搜尋控制項，因此在複雜應用程式中，實際的最上層視窗可能會重複出現在每個 UI 對應中。 如果實際的最上層視窗會重複，當該視窗變更時可能會需要多個修改。 當您在 UI 對應之間切換時，這可能會造成效能問題。
 
  若要將這個影響降至最低，可以使用 `CopyFrom()` 方法，以確保該 UI 對應中新的最上層視窗與主要最上層視窗相同。
 

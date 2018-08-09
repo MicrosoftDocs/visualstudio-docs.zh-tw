@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283122"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341672"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 

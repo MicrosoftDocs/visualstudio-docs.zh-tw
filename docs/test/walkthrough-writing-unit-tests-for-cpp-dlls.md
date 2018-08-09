@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751828"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382725"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 
@@ -38,9 +38,9 @@ ms.locfileid: "34751828"
 
 ##  <a name="create_test_project"></a> 建立原生單元測試專案
 
-1.  在 [檔案]  功能表上，選擇 [新增] | [專案]。
+1.  在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-     在對話方塊中，展開 [已安裝] | [範本] | [Visual C++] | [測試]。
+     在對話方塊中，依序展開 [已安裝] > [範本] > [Visual C++] > [測試]。
 
      選擇 [原生單元測試專案] 範本，或您偏好的任何已安裝架構。 如果您選擇其他範本 (例如 Google Test 或 Boost.Test)，基本原則相同，但有些細節則不同。
 
@@ -75,7 +75,7 @@ ms.locfileid: "34751828"
 
          請注意， `Assert` 類別提供數個靜態方法，可讓您在測試方法中用來驗證結果。
 
-    2.  在 [測試] 功能表上，選擇 [執行] | [所有測試]。
+    2.  在 [測試] 功能表上，選擇 [執行] > [所有測試]。
 
          測試會開始建置及執行。
 
@@ -99,13 +99,13 @@ ms.locfileid: "34751828"
 
      ![已選取 [DLL] 和 [匯出符號] 的 C++ 專案精靈設定](../test/media/utecpp06.png)
 
-3.  在主體 .h 檔案中宣告匯出的函式：
+3.  在主體 *.h* 檔案中宣告匯出的函式：
 
      ![新的 DLL 程式碼專案以及包含 API 巨集的 .h 檔案](../test/media/utecpp07.png)
 
      宣告子 `__declspec(dllexport)` 會使類別的 public 和 protected 成員顯示在 DLL 外部。 如需詳細資訊，請參閱 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)。
 
-4.  在主體 .cpp 檔案中，加入函式的最小主體：
+4.  在主體 *.cpp* 檔案中，新增函式的最小主體：
 
     ```cpp
         // Find the square root of a number.
@@ -119,7 +119,7 @@ ms.locfileid: "34751828"
 
 1.  將 DLL 專案加入測試專案的專案參考中：
 
-    1.  開啟測試專案的屬性，然後選擇 [通用屬性] 、[架構和參考] 。
+    1.  開啟測試專案的屬性，然後選擇 [通用屬性] > [架構和參考]。
 
          ![C++ 專案屬性 | 架構和參考](../test/media/utecpp08.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "34751828"
 
          ![C++ 專案屬性 | 新增參考](../test/media/utecpp09.png)
 
-2.  在主體單元測試 .cpp 檔案中，加入 DLL 程式碼的 .h 檔案：
+2.  在主體單元測試 *.cpp* 檔案中，新增 DLL 程式碼的 *.h* 檔案：
 
     ```cpp
     #include "..\RootFinder\RootFinder.h"
@@ -159,7 +159,7 @@ ms.locfileid: "34751828"
 
      新測試會出現在 [測試總管] 中。
 
-5.  在 [測試總管] 中，選擇 [ **全部執行**]。
+5.  在 [測試總管] 中，選擇 [全部執行]。
 
      ![[單元測試總管] &#45;「基本測試」成功](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ ms.locfileid: "34751828"
     >
     > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
 
-2.  建置方案，然後在 [測試總管] 中選擇 [全部執行] 。
+2.  建置解決方案，然後在 [測試總管] 中選擇 [全部執行]。
 
      新的測試失敗。
 
@@ -214,7 +214,7 @@ ms.locfileid: "34751828"
     }
     ```
 
-4.  建置方案，然後在 [測試總管] 中選擇 [全部執行] 。
+4.  建置方案，然後在 [測試總管] 中選擇 [全部執行]。
 
      這兩個測試都通過。
 
@@ -302,7 +302,7 @@ ms.locfileid: "34751828"
 
 1.  簡化 SquareRoot 函式中的主要計算：
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -329,8 +329,8 @@ ms.locfileid: "34751828"
 
 ## <a name="see-also"></a>另請參閱
 
-- [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
-- [偵錯機器碼](../debugger/debugging-native-code.md)
+- [將單元測試新增至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
+- [對機器碼進行偵錯](../debugger/debugging-native-code.md)
 - [逐步解說：建立和使用動態連結程式庫 (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [匯入和匯出](/cpp/build/importing-and-exporting)
+- [匯入及匯出](/cpp/build/importing-and-exporting)

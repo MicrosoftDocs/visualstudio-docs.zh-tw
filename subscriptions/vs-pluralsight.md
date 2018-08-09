@@ -9,12 +9,12 @@ description: 了解有關隨附於 Visual Studio 訂用帳戶的 Pluralsight 訓
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 242a8a5521d53e631e69036a94434f892fb2e19c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281176"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380788"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -84,7 +84,7 @@ ms.locfileid: "36281176"
 | Visual Studio Enterprise (NFR<sup>1</sup>) | 計畫                                       | 無法使用                                  |NA|
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Partner (MVP)、Region Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine。*
 
-<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，就無法重設。如需詳細資訊，請參閱下面的常見問題集。在 Pluralsight 訂用帳戶過期之後，您就有資格收到三個研究領域中其中一個研究領域的 50 個所選取 Pluralsight 課程的 12 個月存取權。*
+<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，就無法重設。如需詳細資訊，請參閱下面的常見問題集。在 Pluralsight 訂用帳戶過期之後，您就有資格收到三個研究領域中其中一個研究領域的 50 個所選取 Pluralsight 課程的 12 個月存取權。
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
@@ -105,7 +105,7 @@ ms.locfileid: "36281176"
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>問：當我的 Pluralsight 訂用帳戶到期時會發生什麼事？
 答：當您的 Pluralsight 免費訂用帳戶結束時，您有兩種選項：
-- 您會取得三個主要區域其中之一中有限的一組 50 堂課程免費的 12 個月存取 (檢查[合格表](#eligibility)資料表查看您的訂用帳戶是否符合資格)，包括：雲端上的應用程式開發；AI、機器學習和資料；以及雲端中的 DevOps。 查看來自 Pluralsight 的電子郵件，以索取到期之後的免費存取。 您可以在每個部分的程式庫下查看可用的[課程清單](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)。
+- 您會取得三個主要區域其中之一中有限的一組 50 堂課程免費的 12 個月存取 (檢查[資格表格](#eligibility)查看您的訂用帳戶是否符合資格)，包括：雲端上的應用程式開發；AI、機器學習服務和資料；以及雲端中的 DevOps。 查看來自 Pluralsight 的電子郵件，以索取到期之後的免費存取。 您可以在每個部分的程式庫下查看可用的[課程清單](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)。
 - 您可以選擇直接從 Pluralsight 以 10% 折扣購買訂用帳戶，這可讓您存取其完整的課程類別目錄。  請連絡 [Pluralsight](http://www.pluralsight.com) 以了解完整詳細資料。
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>問：我的公司透過 Enterprise 合約更新其 Visual Studio 訂用帳戶。 Pluralsight 權益是否會重設？

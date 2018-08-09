@@ -1,5 +1,5 @@
 ---
-title: 新增或變更的行為，與編輯器介面卡 |Microsoft 文件
+title: 新增或變更的行為，與編輯器的介面卡 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,49 +13,49 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22028b1b2725f184c3d5748f2885a17d4bff0c60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148658"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639230"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器介面卡
-如果您要更新舊版的 Visual Studio 核心編輯器中，針對所撰寫的程式碼，而且您打算使用編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列中的編輯器配接器行為的差異相對於前一個核心編輯器中。  
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器的介面卡
+如果您要更新舊版的 Visual Studio 核心編輯器中，針對已撰寫的程式碼，而且您想要使用的編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列差異編輯器配接器的行為相對於前一個核心編輯器中。  
   
 ## <a name="features"></a>功能  
   
-#### <a name="using-setsite"></a>使用 SetSite()  
- 您必須呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A>共同建立文字緩衝區，文字檢視和程式碼視窗，然後再執行其他任何作業在其上的時。 不過，這不需要，如果您使用<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>建立它們，因為這項服務的 create （） 方法本身呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>。  
+### <a name="use-setsite"></a>使用 SetSite()  
+ 您必須呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A>當共同文字緩衝區，文字檢視，並執行在其上的任何其他作業之前，程式碼視窗。 不過，這並非必要，如果您使用<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>來建立它們，因為此服務`Create()`本身的方法呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>。  
   
-#### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>在您自己的內容中裝載必須搭配和 IVsTextView  
- 您可以同時裝載<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>您自己使用 Win32 模式或 WPF 模式的內容中。 不過，您應該記住有兩種模式的一些差異。  
+### <a name="host-ivscodewindow-and-ivstextview-in-your-own-content"></a>在您自己的內容中裝載 IVsCodeWindow 和 IVsTextView  
+ 您可同時裝載<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>自己使用 Win32 模式或 WPF 模式的內容中。 不過，您應該記住，有兩種模式的一些差異。  
   
-##### <a name="using-win32-and-wpf-versions-of-ivscodewindow"></a>使用 Win32 和 WPF 必須搭配版本  
- 程式碼編輯器 視窗衍生自<xref:Microsoft.VisualStudio.Shell.WindowPane>，它會實作較舊的 Win32<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面以及新的 WPF<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>介面。 您可以使用<xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A>方法來建立 HWND 型裝載環境中，或<xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A>方法來建立 WPF 裝載環境。 基礎編輯器一定會使用 WPF 中，但您可以建立適合您的裝載需求，如果您要直接將您自己的內容內嵌此視窗窗格的視窗窗格的類型。  
+#### <a name="use-win32-and-wpf-versions-of-ivscodewindow"></a>使用 Win32 和 WPF IVsCodeWindow 版本  
+ 程式碼編輯器 視窗衍生自<xref:Microsoft.VisualStudio.Shell.WindowPane>，它會實作較舊的 Win32<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面以及新的 WPF<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>介面。 您可以使用<xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A>方法用來建立 HWND 型裝載環境中，或<xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A>方法用來建立 WPF 裝載環境。 基礎編輯器一律會使用 WPF，但您可以建立適合您的裝載需求，如果您要直接將您自己的內容中內嵌此窗格的 [視窗] 窗格的種類。  
   
-##### <a name="using-win32-and-wpf-versions-of-ivstextview"></a>使用 Win32 和 WPF IVsTextView 版本  
- 您可以設定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>Win32 模式或 WPF 模式。  
+#### <a name="use-win32-and-wpf-versions-of-ivstextview"></a>使用 Win32 和 WPF IVsTextView 版本  
+ 您可以設定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>Win32 模式 」 或 「 WPF 的模式。  
   
- 當編輯器 factory 建立文字檢視中，依預設，位於 HWND，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>傳回 HWND。 您不應該使用此模式中內嵌的 WPF 控制項的編輯器。  
+ 當編輯器 factory 建立文字檢視中，依預設，它裝載在 HWND，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>傳回 HWND。 您不應該使用此模式中將 WPF 控制項內的編輯器。  
   
- 若要設定 WPF 模式文字檢視，您必須呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A>並傳入<xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3>中初始化的其中一個旗標為`InitView`參數。 您可以取得<xref:System.Windows.FrameworkElement>藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A>。  
+ 若要設定 WPF 模式的文字檢視，您必須呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A>，並傳入<xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3>因為其中一個初始設定旗標在`InitView`參數。 您可以取得<xref:System.Windows.FrameworkElement>藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A>。  
   
- WPF 模式不同於 Win32 模式有兩種。 首先，[文字] 檢視可以裝載 WPF 內容中。 您可以存取 [WPF] 窗格中，透過將轉型<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>至<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>。 第二個，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>仍會傳回 HWND，但此 HWND 可以只能用來檢查它的位置，並將焦點設在其上。 您必須使用這個 HWND 回應 WM_PAINT 訊息時，因為它不會影響編輯器如何繪製視窗。 這個 HWND 存在於只為了轉換至新的編輯器程式碼透過介面卡。 強烈建議，您不應該使用`VIF_NO_HWND_SUPPORT`如果您的元件需要運作，因為從傳回的 HWND 中限制 HWND`GetWindowHandle`而在此模式中。  
+ WPF 模式與兩種方式的 Win32 模式不同。 首先，[文字] 檢視可以裝載 WPF 內容中。 您可以轉型，以存取 [WPF] 窗格<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>要<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>。 第二個，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>仍然的傳回 HWND，但此 HWND 可只能用來檢查它的位置，並將焦點設定在其上。 您必須使用此 HWND 回應 WM_PAINT 訊息時，因為它不會影響編輯器如何繪製視窗。 只是要協助自己轉換到新的編輯器程式碼透過介面卡有此 HWND。 強烈建議，您不應該使用`VIF_NO_HWND_SUPPORT`如果您的元件需要運作，由於限制傳回的 HWND HWND`GetWindowHandle`當您在此模式。  
   
-#### <a name="passing-arrays-as-parameters-in-native-code"></a>傳遞陣列當做原生程式碼中的參數  
- 有許多在舊版的應用程式開發介面編輯器中的方法都有包含計數和陣列的參數。 範例如下：  
+#### <a name="pass-arrays-as-parameters-in-native-code"></a>將陣列當做參數傳遞原生程式碼  
+ 有許多 API，舊版編輯器中的方法都有包含陣列和其計數的參數。 範例如下：  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.RemoveViewOnlyMarkerTypes%2A>  
   
- 如果您在原生程式碼中呼叫這些方法，您必須一次傳遞中只有一個項目。 如果您將多個項目中，呼叫會遭到拒絕，因為主要的 interop 實作發生問題。  
+ 如果您在原生程式碼中呼叫這些方法，您必須傳入一次只有一個項目。 如果您傳遞一個以上的項目中，呼叫將會遭到拒絕，因為主要的 interop 實作有問題。  
   
- 問題是更複雜的方法如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A>。 每次呼叫此方法時，它會清除先前略過的標記類型清單，所以不可能只是要呼叫這個方法三次包含三種不同的標記類型。 呼叫這個方法只能在 managed 程式碼中是唯一的補救方法。  
+ 問題在於這類更複雜方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A>。 每次呼叫此方法時，它會清除先前忽略的標記類型清單，因此它不可能只是為了呼叫這個方法三次，包含三種不同的標記類型。 唯一的補救方法是呼叫這個方法只能在 managed 程式碼中。  
   
 #### <a name="threading"></a>執行緒  
- 您永遠應該從 UI 執行緒呼叫緩衝區配接器。 緩衝區配接器是受管理的物件，這表示它從呼叫 managed 程式碼將會略過 COM 封送處理，而且您的呼叫將不會自動封送處理至 UI 執行緒。  如果您從背景執行緒呼叫緩衝區配接器，您必須使用<xref:System.Windows.Threading.Dispatcher.Invoke%2A>或類似的方法。  
+ 您應該一律呼叫緩衝區配接器，從 UI 執行緒。 緩衝區配接器是一個受管理的物件，表示成它從 managed 程式碼的呼叫將會略過 COM 封送處理，而且您的呼叫將不會自動封送處理至 UI 執行緒。  如果您從背景執行緒呼叫緩衝區配接器，您必須使用<xref:System.Windows.Threading.Dispatcher.Invoke%2A>或類似的方法。  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer 方法  
  所有 LockBuffer() 方法已被都取代。 範例如下：  
@@ -67,7 +67,7 @@ ms.locfileid: "31148658"
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.LockBuffer%2A>  
   
 #### <a name="commit-events"></a>認可事件  
- 認可不支援的事件。 呼叫的方法，則建議為這些事件會導致方法傳回失敗碼。  
+ 認可不支援事件。 建議的方法呼叫這些事件會導致方法傳回失敗碼。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>  
   
@@ -76,15 +76,15 @@ ms.locfileid: "31148658"
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUndoRedoClusterWithCommitEvents>  
   
 #### <a name="texteditorevents"></a>TextEditorEvents  
- <xref:EnvDTE.TextEditorEvents> Commit （） 上不會再引發。 相反地，則引發在每次文字變更。  
+ <xref:EnvDTE.TextEditorEvents>上 commit （） 不會再引發。 而是會在每次文字變更。  
   
 #### <a name="text-markers"></a>文字標記  
- 您必須呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A>上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>物件時，您將它們移除。 在舊版中，您只需要到發行的標記。  
+ 您必須呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A>上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>物件時將它們移除。 在舊版中，您只需要到版本標記。  
   
 #### <a name="line-numbers"></a>行號  
- 各種不同的方法上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>、 行號對應至基礎緩衝區行號、 不限行號納入大綱和自動換行，如 Visual Studio 2008 所示。  
+ 上的方法有許多<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>、 對應至基礎緩衝區行號的行號、 不行號大綱和自動換行，與 Visual Studio 2008 中的該係數。  
   
- 受影響的方法包括的下列 （清單未全部列出）：  
+ 受影響的方法包括 （清單未全部列出）：  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
@@ -111,26 +111,26 @@ ms.locfileid: "31148658"
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>大綱  
- 用戶端的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會看到只使用加入這些大綱區域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 它們不會看到特定區域，因為它們不會加入到編輯器介面卡。 同樣地，這些用戶端不會看到大綱區域新增的語言 （包括 C# 和 c + +），會使用新的編輯器程式碼，而不是編輯器介面卡。  
+ 用戶端<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>將會看到只有那些使用新增的大綱區域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 因為它們不會新增透過編輯器配接器，它們不會看到臨機操作的區域。 同樣地，這些用戶端將不會看到大綱區域新增的語言 （包括 C# 和 c + +），使用新的編輯器程式碼，而不是編輯器介面卡。  
   
-#### <a name="line-heights"></a>行高度  
- 在新的編輯器中，文字線條可以具有不同的高度，根據字型大小和可能會移動相對於其他行線條的線條可能轉換。 例如，由方法傳回的行高<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>是使用套用沒有列轉換的預設字型大小線條的高度。 這個高度可能也不一定能反映實際檢視中的資料行的高度。  
+#### <a name="line-heights"></a>線條高度  
+ 在新的編輯器中，文字行可以有不同的高度，根據字型大小和可能的線條轉換，可能會移動相對於其他行的行。 例如，由方法傳回的行高<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>套用的任何行 」 轉換中使用的預設字型大小之線條的高度。 此高度可能，也不一定能反映實際的檢視中的資料行的高度。  
   
-#### <a name="eventing-and-undo"></a>事件處理和復原  
- 在新的編輯器中，檢視會繼續執行作業，例如轉譯和持續，引發事件，即使已開啟的復原叢集。 此行為是不同於舊版的檢視，並未執行這些作業在關閉之前的復原叢集。  
+#### <a name="eventing-and-undo"></a>事件記錄和復原  
+ 在新的編輯器中，檢視會繼續執行作業，例如轉譯和持續地引發事件。 作業繼續進行甚至復原叢集時開啟。 此行為是不同於舊版的檢視，並未執行這些作業在關閉之前的復原叢集。  
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法將會失敗，如果您要傳入的類別未實作 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支援自訂 Win32 描繪快顯。  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法將會失敗，如果您在不實作的類別中傳遞<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支援主控描繪快顯的自訂 Win32。  
   
 #### <a name="smarttags"></a>智慧標籤  
- 沒有配接器支援的智慧標籤，以建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>介面。  
+ 智慧標籤，以建立任何配接器支援<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>介面。  
   
 #### <a name="dte"></a>DTE  
  <xref:EnvDTE80.IncrementalSearch> 未實作。  
   
 ## <a name="unimplemented-methods"></a>未實作的方法  
- 文字緩衝區配接器、 文字檢視配接器，以及文字層配接器並未實作一些方法。  
+ 某些方法尚未實作文字緩衝區配接器、 文字檢視配接器，以及文字層配接器。  
   
 |介面|未實作|  
 |---------------|---------------------|  
@@ -144,5 +144,5 @@ ms.locfileid: "31148658"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.InvokeInsertionUI%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetHoverWaitTimer%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetViewClassID%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> 被實作的介面卡，但忽略大綱 ui。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> 被實作的介面卡，但忽略大綱 ui。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> 實作的介面卡，但忽略大綱的 ui。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> 實作的介面卡，但忽略大綱的 ui。|

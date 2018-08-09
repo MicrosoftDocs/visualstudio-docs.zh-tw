@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750918"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382317"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>如何：指定圖形計數器的繪圖選項
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>如何：指定圖表計數器的繪圖選項
 
 [繪圖選項] 對話方塊可讓您變更圖形上所繪製計數器的色彩和線條樣式。 您也可以將範圍固定為特定值，或將範圍設定為根據取樣資料自動調整。
 
@@ -25,11 +25,11 @@ ms.locfileid: "34750918"
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>若要指定圖形的繪圖選項
 
-1.  在 [負載測試分析器] 中，選擇 [負載測試] 工具列上的 [圖形]。
+1.  在 [負載測試分析器] 中，選擇工具列上的 [圖表]。
 
-     這樣會在 [圖形] 檢視中顯示負載測試結果。
+     這會在 [圖表] 檢視中顯示負載測試結果。
 
-2.  在圖例或圖形中，以滑鼠右鍵按一下您想要變更繪圖選項之效能計數器的資料列或目前的繪製線條，然後選取 [繪圖選項]。
+2.  在圖例或圖表中，以滑鼠右鍵按一下您要變更繪圖選項之效能計數器的資料列或目前的繪製線條，然後選取 [繪圖選項]。
 
      [繪圖選項] 對話方塊隨即顯示。
 
@@ -51,6 +51,5 @@ ms.locfileid: "34750918"
 
 ## <a name="see-also"></a>另請參閱
 
-- [在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)

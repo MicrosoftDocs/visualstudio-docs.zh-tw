@@ -12,14 +12,14 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31062520"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251175"
 ---
-# <a name="programming-with-unity-and-azure"></a>使用 Unity 與 Azure 進行程式設計
+# <a name="program-with-unity-and-azure"></a>使用 Unity 與 Azure 設計程式
 
 Azure 提供可調整規模的解決方案，將遙測和其他遊戲資料儲存在雲端。 Unity 2017 推出之後，Unity 針對 .NET 4.6 所推出的實驗性支援，讓使用者可以透過 Azure .NET SDK 來輕鬆進行 Azure 整合。
 

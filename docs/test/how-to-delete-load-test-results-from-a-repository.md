@@ -15,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178861"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381813"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：從存放庫中刪除負載測試結果
 
-當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果存放庫中。 負載測試結果存放庫含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
  您可以使用 [開啟和管理負載測試結果] 對話方塊，在負載測試編輯器中管理負載測試結果。 您可以開啟、匯入、匯出及移除負載測試結果。
 
-## <a name="to-delete-results-from-a-repository"></a>從存放庫刪除結果
+## <a name="to-delete-results-from-a-repository"></a>若要從儲存機制刪除結果
 
 1.  從 Web 效能和負載測試專案中，開啟負載測試。
 
@@ -42,11 +42,11 @@ ms.locfileid: "39178861"
 
      如果有可用的負載測試結果，它們會出現在 [負載測試結果] 清單中。 資料行包括 [時間]、[持續期間]、[使用者]、[結果]、[測試] 和 [描述]。 [測試] 包含測試的名稱，而 [描述] 則包含執行測試之前所新增的選擇性描述。 [描述] 資料行顯示的是在此測試結果之 [分析註解] 中輸入的簡短描述。
 
-5.  在 [負載測試結果] 清單中，選擇一個結果。 您可以使用 Shift 鍵和 (或) Ctrl 鍵來選取多個結果。
+5.  在 [負載測試結果] 清單中，選擇一個結果。 您可以使用 **Shift** 鍵和 (或) **Ctrl** 鍵來選取多個結果。
 
 6.  選擇 [移除]。
 
-     結果隨即從存放庫中移除。
+     結果隨即從儲存機制中移除。
 
     > [!NOTE]
     > 移除結果之後，[開啟和管理負載測試結果] 對話方塊仍會繼續保持開啟。
@@ -54,6 +54,6 @@ ms.locfileid: "39178861"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：從存放庫匯出負載測試結果](../test/how-to-export-load-test-results-from-a-repository.md)
-- [管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [如何：將負載測試結果匯入至存放庫](../test/how-to-import-load-test-results-into-a-repository.md)

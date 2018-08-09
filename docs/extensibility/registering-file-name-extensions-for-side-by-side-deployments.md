@@ -1,5 +1,5 @@
 ---
-title: 註冊檔案名稱的副檔名來並行部署 |Microsoft 文件
+title: 註冊副檔名，並排顯示部署 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7d7307ef12184dcbfc29254ec5cbae9ff55bb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1aa553b5370f637f5a779bbdff432319ce3e0bf4
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136306"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638475"
 ---
-# <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>註冊檔案名稱擴充功能-並存部署
-並行的環境中部署的 Vspackage，您必須註冊檔案關聯的正確版本的檔案名稱副檔名[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 除非您使用版本特定檔案的副檔名，註冊可讓使用者開啟您的專案和專案項目檔中的適當版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>註冊並排顯示部署的檔案名稱副檔名
+適用於並排顯示環境中部署的 Vspackage，您必須註冊檔案相關聯的正確版本的檔案名稱副檔名[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 除非您使用版本特定檔案的副檔名，註冊可讓使用者開啟您的專案和專案項目檔中的適當版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
 ## <a name="in-this-section"></a>本節內容  
  [關於副檔名](../extensibility/about-file-name-extensions.md)  
  討論如何註冊副檔名的檔案。  
   
- [指定適用於副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
- 提供如何註冊應用程式，可以開啟、 編輯和等等，特定副檔名的相關資訊。  
+ [指定檔案名稱副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
+ 提供有關如何註冊應用程式，可以開啟、 編輯和等等，特定副檔名的資訊。  
   
- [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)  
+ [註冊副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)  
  討論如何註冊動詞命令。  
   
- [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)  
- 討論如何處理的並行安裝所在的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該被叫用以開啟檔案。  
+ [管理並排顯示檔案關聯](../extensibility/managing-side-by-side-file-associations.md)  
+ 討論如何處理在其中的並排顯示安裝特定版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該叫用它來開啟檔案。  
   
 ## <a name="related-sections"></a>相關章節  
- [支援多個 Visual Studio 版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- 描述相關的多個版本問題[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和 VSPackage 在開發和部署給使用者。
+ [支援多個版本的 Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
+ 說明多個版本的相關問題[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和 VSPackage 開發及部署給使用者時。

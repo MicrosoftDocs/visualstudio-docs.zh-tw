@@ -10,12 +10,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: df43b6aca056967910c234b55cee97d4d37b4549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86859abc73cfabe0994c7628de13e281b58e05ed
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31059374"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252390"
 ---
 # <a name="c-cross-platform-property-page-reference"></a>C++ 跨平台屬性頁參考
 

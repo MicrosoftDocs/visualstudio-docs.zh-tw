@@ -1,5 +1,5 @@
 ---
-title: 如何： 清除復原堆疊 |Microsoft 文件
+title: 如何： 清除復原堆疊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126499"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639467"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>如何： 清除復原堆疊
-下列的下列程序說明如何清除復原堆疊。  
+下列程序說明如何清除復原堆疊。  
   
-### <a name="to-clear-the-undo-stack"></a>若要清除復原堆疊  
+## <a name="to-clear-the-undo-stack"></a>若要清除復原堆疊  
   
-1.  若要清除復原堆疊使用[IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799)方法。 此動作的範例如下：  
+1.  若要清除復原堆疊使用[IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799)方法。 這個範例如下：  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057950"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341234"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -54,8 +54,7 @@ pip install azure
 
 - [儲存體單元測試 (英文)](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [服務匯流排單元測試 (英文)](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
-- [服務管理單元測試 (英文)](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [資源管理單元測試 (英文)](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
+- [服務管理單元測試](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
 
 ## <a name="support"></a>支援
 

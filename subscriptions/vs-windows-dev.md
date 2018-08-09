@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297553"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382447"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 
@@ -24,7 +24,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 
 若要使用 Windows 開發人員帳戶，您必須設定帳戶，或使用現有的帳戶登入。
 
-建議您建立「私人」瀏覽器視窗來處理此程序。  例如，在 Google Chrome 中，建立新的 "incongnito" 視窗。  在 Internet Explorer 中，建立新的 "InPRivate" 視窗。
+建議您建立「私人」瀏覽器視窗來處理此程序。  例如，在 Google Chrome 中，建立新的 "incongnito" 視窗。  在 Internet Explorer 中，建立新的 "InPrivate" 視窗。
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175929"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380560"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
@@ -68,21 +68,21 @@ ms.locfileid: "39175929"
 
 整體結果區段包含測試的摘要結果，包括每秒的要求數、已失敗的要求總數、平均回應時間，以及平均頁面時間。
 
-## <a name="key-statistic-top-5-slowest-pages"></a>基本統計資料: 前 5 名最慢的頁面
+## <a name="key-statistic-top-5-slowest-pages"></a>基本統計資料：前 5 名最慢的頁面
 
 最慢的頁面區段包含負載測試中前 5 名最慢的頁面， 並顯示每個頁面的 URL 和平均頁面載入時間。 這些頁面是依遞減順序列出。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 [95% 頁面時間 (秒)] 的百分位數會報告 95% 頁面的完成時間都不超過這段時間 (以秒為單位)。
 
-## <a name="key-statistic-top-5-slowest-tests"></a>基本統計資料: 前 5 名最慢的測試
+## <a name="key-statistic-top-5-slowest-tests"></a>基本統計資料：前 5 名最慢的測試
 
 最慢的測試區段包含負載測試中前 5 名最慢的測試， 並顯示每一項測試的測試名稱和平均測試時間。 這些測試是依遞減順序列出。 您可以選擇測試的名稱開啟 [測試] 資料表，並查看該測試的其他詳細資料。 如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 [95% 測試時間 (秒)] 的百分位數會報告 95% 測試的完成時間都不超過這段時間 (以秒為單位)。
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>基本統計資料: 前 5 名最慢的 SQL 作業
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>基本統計資料：前 5 名最慢的 SQL 作業
 
-如果在負載測試中啟用了 SQL 追蹤，最慢的查詢區段就會包含負載測試中前 5 名最慢的查詢， 並顯示每一項測試的作業名稱和持續時間。 持續時間的顯示單位是微秒 (SQL Server 2005) 或毫秒 (SQL Server 2000 和更早的版本)。 這些測試是按照持續時間依遞減順序列。 您可以選擇作業的名稱開啟 [SQL 追蹤] 資料表，並查看該項作業的其他詳細資料。 如需詳細資訊，請參閱 [SQL 追蹤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。
+如果在負載測試中啟用了 SQL 追蹤，最慢的查詢區段就會包含負載測試中前 5 名最慢的查詢， 並顯示每一項測試的作業名稱和持續時間。 持續時間的顯示單位是微秒 (SQL Server 2005) 或毫秒 (SQL Server 2000 和更早版本)。 這些測試是按照持續時間依遞減順序列。 您可以選擇作業的名稱開啟 [SQL 追蹤] 資料表，並查看該項作業的其他詳細資料。 如需詳細資訊，請參閱 [SQL 追蹤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。
 
 ## <a name="test-results"></a>測試結果
 
@@ -132,7 +132,7 @@ ms.locfileid: "39175929"
 > [!NOTE]
 > 選擇區段標題左側的箭號，就可以摺疊或展開此區段。
 
-## <a name="printing-a-summary"></a>列印摘要
+## <a name="print-a-summary"></a>列印摘要
 
 在負載測試摘要的捷徑功能表中選擇 [列印]，就可以列印摘要。 如果想先預覽列印，請在摘要的捷徑功能表上選擇 [預覽列印]。 您也可以直接從預覽畫面列印摘要。
 

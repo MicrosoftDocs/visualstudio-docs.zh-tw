@@ -14,14 +14,14 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751711"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380479"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP 應用程式的單元測試
 
 Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試的支援。 它包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試專案範本。
 
@@ -56,9 +56,9 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 *Package.appxmanifest* 檔案並選擇 [開啟]。
 
-     資訊清單設計工具隨即顯示，可供編輯。
+     [資訊清單設計工具] 隨即顯示，可供編輯。
 
-2.  在資訊清單設計工具中，選擇 [ **功能** ] 索引標籤。
+2.  在 [資訊清單設計工具] 中，選擇 [功能] 索引標籤。
 
 3.  在 [ **功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。
 
@@ -102,11 +102,11 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
     >
     > ![[單元測試總管] &#45; 單元測試操作功能表](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    單元測試隨即執行。 完成時，[測試總管] 會顯示測試狀態、耗用時間並提供來源連結。
+    單元測試隨即執行。 完成時，[測試總管] 會顯示測試狀態、已耗用時間並提供來源連結。
 
     ![單元測試總管 &#45; 測試完成](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 Visual Studio 測試 UWP App](../test/testing-store-apps-with-visual-studio.md)
+- [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)
 - [建置並測試 UWP 應用程式](/vsts/build-release/apps/windows/universal?tabs=vsts)

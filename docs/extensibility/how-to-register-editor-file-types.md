@@ -1,5 +1,5 @@
 ---
-title: 如何： 註冊編輯器檔案類型 |Microsoft 文件
+title: 如何： 登錄編輯程式檔案類型 |Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac67139de317c15d4e85be43f7dace132373257
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129166"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638426"
 ---
-# <a name="how-to-register-editor-file-types"></a>如何： 註冊編輯器檔案類型
-登錄編輯程式檔案類型的最簡單方式是使用屬性的一部分提供的登錄屬性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的封裝原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，您也可以寫入登錄指令碼會註冊您的編輯器和相關聯的延伸模組。
+# <a name="how-to-register-editor-file-types"></a>如何： 登錄編輯程式檔案類型
+登錄編輯程式檔案類型的最簡單方式是使用隨附的登錄屬性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的套件，以原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，您也可以撰寫會註冊您的編輯器和相關聯的延伸模組的登錄指令碼。
 
 ## <a name="registration-using-mpf-classes"></a>註冊使用 MPF 類別
 
-#### <a name="to-register-editor-file-types-using-mpf-classes"></a>若要註冊使用 MPF 類別編輯器檔案類型
+### <a name="to-register-editor-file-types-using-mpf-classes"></a>若要登錄編輯程式檔案類型，使用 MPF 類別
 
-1.  提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>以適當的參數編輯器 VSPackage 的類別中的類別。
+1.  提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>以適當的參數，讓您的編輯器，VSPackage 的類別中的類別。
 
     ```
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
@@ -35,17 +35,17 @@ ms.locfileid: "31129166"
          NameResourceID = 106)]
     ```
 
-     其中"。範例 」 是此編輯器中，針對已註冊的延伸模組，且"32"其優先權層級。
+     其中 *。範例*是此編輯器中，已註冊的延伸模組和"32"是它的優先順序等級。
 
-     `projectGuid`中定義的其他檔案類型的 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>。 提供的其他檔案類型，如此所產生的檔案不在建置程序的一部分。
+     `projectGuid`中定義的其他檔案類型的 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>。 提供的其他檔案類型，以便所產生的檔案不會在建置程序的一部分。
 
-     `TemplateDir` 表示包含隨附於受管理的基本編輯器範例的範本檔案的資料夾。
+     *TemplateDir*代表包含範本檔案所包含的受管理的基本編輯器範例的資料夾。
 
-     `NameResourceID` 定義於 Resources.h BasicEditorUI 專案檔，並找出以"My Editor"編輯器。
+     `NameResourceID` 定義於*Resources.h* BasicEditorUI 專案中，檔案，並識別為 「 My 編輯器 」 編輯器。
 
 2.  覆寫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。
 
-     在您實作<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法，請呼叫<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法，然後傳遞做為您的編輯器 factory 的執行個體，則以下所示。
+     在您實作<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，呼叫<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法並傳遞做為編輯器 factory 的執行個體，則以下所示。
 
     ```csharp
     protected override void Initialize()
@@ -59,18 +59,18 @@ ms.locfileid: "31129166"
     }
     ```
 
-     此步驟中登錄 editor factory 和編輯器的副檔名。
+     此步驟中註冊編輯器 factory 及編輯器的副檔名。
 
 3.  取消登錄編輯器 factory。
 
-     處置 VSPackage 時，會自動解除登錄編輯器 factory。 如果編輯器 factory 物件實作<xref:System.IDisposable>介面，其`Dispose`方法呼叫之後處理站已移除註冊使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+     處置 VSPackage 時，會自動解除登錄編輯器 factory。 如果編輯器 factory 物件會實作<xref:System.IDisposable>介面，其`Dispose`方法呼叫之後的處理站已移除註冊使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="registration-using-a-registry-script"></a>使用登錄指令碼的註冊
- 登錄 editor factory 與檔案類型，原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]完成寫入 windows 登錄中，使用登錄指令碼，如下列所示。
+ 在原生註冊 editor factory 與檔案類型[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]完成寫入 windows 登錄中，使用登錄指令碼，如下列所示。
 
 ### <a name="to-register-editor-file-types-using-a-registry-script"></a>若要註冊使用登錄指令碼編輯器的檔案類型
 
-1.  登錄指令碼中定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組和編輯器延伸模組的優先順序：
+1.  在您登錄指令碼中，定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組及編輯器擴充功能的優先權：
 
     ```
           NoRemove Editors     {         %GUID_BscEditorFactory% = s 'RTF Editor'         {             val Package = s '%CLSID_Package%'             val DisplayName = s 'An RTF Editor'             val ExcludeDefTextEditor = d 1             val AcceptBinaryFiles = d 0
@@ -89,13 +89,13 @@ ms.locfileid: "31129166"
     }
     ```
 
-     編輯器檔案延伸模組在此範例中被視為 「.rtf"，且 「 50"其優先權。 BscEdit 範例專案的 Resource.h 檔案中定義的 GUID 字串。
+     編輯器檔案延伸模組，在此範例中便會被視為 *.rtf*和它的優先順序是"50"。 中所定義的 GUID 字串*Resource.h* BscEdit 範例專案檔案。
 
-2.  將 VSPackage 登錄。
+2.  註冊 VSPackage。
 
-3.  登錄 editor factory。
+3.  登錄編輯器 factory。
 
-     在登錄編輯器 factory<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>實作。
+     編輯器 factory 會在中註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>實作。
 
     ```cpp
     // create editor factory.
@@ -126,4 +126,4 @@ ms.locfileid: "31129166"
     }
     ```
 
-     BscEdit 專案的 Resource.h 檔案中定義的 GUID 字串。
+     中所定義的 GUID 字串*Resource.h* BscEdit 專案檔案。

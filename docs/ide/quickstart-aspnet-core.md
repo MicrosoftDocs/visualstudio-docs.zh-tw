@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232189"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380612"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 使用方式簡介中，您將會使用 ASP.NET 專案範本與e C# 程式設計語言建立簡單的 "Hello World" 應用程式。
+在這個 5-10 分鐘的 Visual Studio 使用方式簡介中，您將會使用 ASP.NET 專案範本與 C# 程式設計語言建立簡單的 "Hello World" Web 應用程式。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
@@ -41,13 +41,14 @@ ms.locfileid: "39232189"
 
    > [!NOTE]
    > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
-   >![從 [新增專案] 對話方塊開啟 Visual Studio 安裝程式](../ide/media/open-visual-studio-installer.png)
+   >
+   > ![從 [新增專案] 對話方塊開啟 Visual Studio 安裝程式](../ide/media/open-visual-studio-installer.png)
    >
    > Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
    >
    > ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
    >
-   >(您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
+   > (您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
 
 1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，確認上方的下拉式功能表出現 [ASP.NET Core 2.0]。 接著，選擇 [Web 應用程式]，然後選擇 [確定]。
 
@@ -55,7 +56,7 @@ ms.locfileid: "39232189"
 
 Visual Studio 隨即開啟您的專案檔。
 
-## <a name="create-the-application"></a>建立應用程式
+## <a name="create-the-app"></a>建立應用程式
 
 1. 在 [方案總管] 中，展開 [頁面] 資料夾，然後選擇 **About.cshtml**。
 
@@ -85,7 +86,7 @@ Visual Studio 隨即開啟您的專案檔。
 
    ![變更 Visual Studio 編輯器中應用程式描述區域的預設訊息文字](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-application"></a>執行應用程式
+## <a name="run-the-app"></a>執行應用程式
 
 1. 按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 

@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978245"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381712"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -51,7 +51,7 @@ ms.locfileid: "38978245"
 > - 如果使用未受控碼 (機器碼)，請使用偵錯組建
 > - 請務必為每個組件產生 .pdb (符號) 檔。
 
-如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。 。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。
+如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。
 
 ## <a name="report-in-blocks-or-lines"></a>區塊或行報告
 
@@ -71,13 +71,13 @@ ms.locfileid: "38978245"
 
 -   **若要檢視先前的結果集**，請從下拉式功能表中選取它。 當您開啟新的方案時，功能表會顯示暫存清單。
 
--   **若要檢視上一個工作階段的結果**，請選擇 [匯入程式碼涵蓋範圍結果]，瀏覽至方案中的 [TestResults] 資料夾，然後匯入 .coverage 檔案。
+-   **若要檢視上一個工作階段的結果**，請選擇 [匯入程式碼涵蓋範圍結果]，巡覽至方案中的 **TestResults** 資料夾，然後匯入 *.coverage* 檔案。
 
-    如果在產生 .coverage 檔案之後變更過原始程式碼，涵蓋範圍著色可能會不正確。
+    如果在產生 *.coverage* 檔案之後變更過原始程式碼，涵蓋範圍著色可能會不正確。
 
--   **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]。 這樣會產生一個易讀的 .coveragexml 檔案，您可以使用其他工具處理這個檔案，也可以透過郵件傳送該檔案。
+-   **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]。 這樣會產生一個易讀的 *.coveragexml* 檔案，您可以使用其他工具處理這個檔案，也可以透過郵件輕鬆傳送該檔案。
 
--   **若要將結果傳送給他人**，請傳送 .coverage 檔案或匯出的 .coveragexml 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。
+-   **若要將結果傳送給他人**，請傳送 *.coverage* 檔案或匯出的 *.coveragexml* 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。
 
 ## <a name="merge-results-from-different-runs"></a>合併不同回合的結果
 
@@ -245,15 +245,15 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ### <a name="include-or-exclude-additional-elements"></a>包含或排除其他項目
 
-程式碼涵蓋範圍分析只能對載入的組件或與 .dll 或 .exe 檔案位於同一個目錄中的 .pdb 檔案執行。 因此，在某些情況下，您可以藉由取得包含適當 .pdb 檔案的複本來擴充所包含的組件集。
+程式碼涵蓋範圍分析只能對載入的組件或與 *.dll* 或 *.exe* 檔案位於同一個目錄中的 *.pdb* 檔案執行。 因此，在某些情況下，您可以藉由取得包含適當 *.pdb* 檔案的複本來擴充所包含的組件集。
 
-您可以撰寫 .runsettings 檔案進一步控制執行程式碼範圍分析時選取的組件和項目。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+您可以撰寫 *.runsettings* 檔案進一步控制執行程式碼涵蓋範圍分析時選取的組件和項目。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>在組建服務中分析程式碼涵蓋範圍
 
 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在建置流程中執行測試](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務上分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。
 
-1. 在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。
+1. 在 [Team Explorer] 中開啟 [組建]，然後新增或編輯組建定義。
 
 2. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 將 [回合設定檔的類型] 設為 [已啟用程式碼涵蓋範圍]。
 
@@ -287,5 +287,5 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="see-also"></a>另請參閱
 
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
-- [疑難排解程式碼涵蓋範圍](../test/troubleshooting-code-coverage.md)
+- [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)

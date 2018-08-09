@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751029"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380521"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 CTest
 
-根據預設，CMake (包括 CTest) 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的元件。 如果您需要將它安裝在您的電腦上，請開啟 Visual Studio 安裝程式，按一下 [修改] 按鈕，並在工作負載元件清單下查看[適用於 Visual C++ 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
+根據預設，CMake (包括 CTest) 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的元件。 如果您需要將它安裝在您的電腦上，請開啟 Visual Studio 安裝程式，按一下 [修改] 按鈕，並在工作負載元件清單下查看 [Visual C++ CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
 
 ## <a name="to-write-tests"></a>撰寫測試
 
-Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此，您會像是在任何 CMake 環境中一樣，撰寫並設定 CTest 測試。 如需在 Visual Studio 中使用 CMake 的詳細資訊，請參閱[適用於 Visual C++ 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
+Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此，您會像是在任何 CMake 環境中一樣，撰寫並設定 CTest 測試。 如需在 Visual Studio 中使用 CMake 的詳細資訊，請參閱 [Visual C++ CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>執行測試 (Visual Studio 2017 15.6 版)
 
@@ -36,7 +36,7 @@ Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此�
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>執行測試 (Visual Studio 2017 15.5 版)
 
-在 **Visual Studio 2017 15.5 版**中，CTest 目前尚未與 [測試總管] 整合。 您可以從 CMake 主功能表執行測試，或從**方案總管**中 **CMakeLists.txt** 檔案的操作功能表執行測試。 測試結果會被導向至 Visual Studio 的 [輸出視窗]。
+在 **Visual Studio 2017 15.5 版**中，CTest 目前尚未與 [測試總管] 整合。 您可以從 CMake 主功能表執行測試，或從**方案總管**中 *CMakeLists.txt* 檔案的操作功能表執行測試。 測試結果會被導向至 Visual Studio 的 [輸出視窗]。
 
 ![在 VS2017 15.5 中執行 CTest 測試](media/cpp-cmake-run-tests.png)
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942243"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379685"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
 
@@ -28,7 +28,7 @@ ms.locfileid: "31942243"
 
 ## <a name="change-the-build-output-directory"></a>變更組建輸出目錄
 
-1.  在功能表列上，依序選擇 [專案] > **[應用程式名稱>屬性]\<**。 您也可以在 [ **方案總管** ] 中的專案節點上按一下滑鼠右鍵，並選取 [ **屬性**]。
+1.  在功能表列上，依序選擇 [專案] > **[應用程式名稱>屬性]\<**。 您也可以在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取 [屬性]。
 
 2.  如果您有 Visual Basic 專案，請選取 [ **編譯** ] 索引標籤。如果您有 C# 專案，請選取 [建置] 索引標籤。如果您的 C++ 專案或 JavaScript 專案，選取 [ **一般** ] 索引標籤。
 
@@ -43,4 +43,4 @@ ms.locfileid: "31942243"
 
 - [專案設計工具、建置頁面 (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [一般屬性頁面 (專案)](/cpp/ide/general-property-page-project)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

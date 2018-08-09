@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
-ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
+ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847748"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251136"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
-[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，搜尋 "Django"，然後從 [空白 Django Web 專案]、[Django Web 專案] 和 [投票 Django Web 專案] 中選取。 如需所有範本的逐步解說，請參閱學習 [Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
+[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，搜尋 "Django"，然後從 [空白 Django Web 專案]、[Django Web 專案] 和 [投票 Django Web 專案] 範本中選取。 如需所有範本的逐步解說，請參閱[學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
 
 Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
@@ -42,13 +42,13 @@ Visual Studio 也針對 Django 專案提供完整的[偵錯支援](debugging-pyt
 
 ![中斷點](media/template-django-debugging.png)
 
-Django 專案一般是透過其 `manage.py` 檔案進行管理，而此檔案是 Visual Studio 所遵循的假設。 如果您停止使用該檔案作為進入點，則會中斷專案檔。 在該情況下，您需要[從現有檔案重新建立專案](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)，而不要將它標示為 Django 專案。
+Django 專案一般是透過其 *manage.py* 檔案進行管理，而此檔案是 Visual Studio 所遵循的假設。 如果您停止使用該檔案作為進入點，則會中斷專案檔。 在該情況下，您需要[從現有檔案重新建立專案](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files)，而不要將它標示為 Django 專案。
 
 ## <a name="django-management-console"></a>Django 管理主控台
 
-Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命令，或是以滑鼠右鍵按一下方案總管中的專案。
+Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命令，或是以滑鼠右鍵按一下 [方案總管] 中的專案。
 
-- **開啟 Django 殼層**：在您的應用程式內容中開啟可讓您操作模型的殼層
+- **開啟 Django 殼層**：在您的應用程式內容中開啟可讓您操作模型的殼層：
 
     ![主控台](media/template-django-console-shell.png)
 
@@ -56,15 +56,15 @@ Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命
 
     ![主控台](media/template-django-console-sync-db.png)
 
-- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 `settings.py` 中的 `STATIC_ROOT` 所指定的路徑。 當您[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) 時，系統會自動收集靜態檔案作為發佈作業的一部分。
+- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 *settings.py* 中的 `STATIC_ROOT` 所指定的路徑。 當您[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) 時，系統會自動收集靜態檔案作為發佈作業的一部分。
 
     ![主控台](media/template-django-console-collect-static.png)
 
-- **驗證**：執行 `manage.py validate`，這會報告由 `settings.py` 中的 `INSTALLED_APPS` 所指定之已安裝模組中的所有驗證錯誤：
+- **驗證**：執行 `manage.py validate`，這會報告由 *settings.py* 中的 `INSTALLED_APPS` 所指定之已安裝模型中的所有驗證錯誤：
 
     ![主控台](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>另請參閱
 
 - [學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)
-- [發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

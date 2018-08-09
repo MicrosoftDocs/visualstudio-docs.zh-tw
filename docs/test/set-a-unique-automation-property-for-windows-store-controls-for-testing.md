@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692352"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382735"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 
@@ -48,13 +48,13 @@ ms.locfileid: "34692352"
 
 在 XAML 中，將控制項的 **AutomationProperties.Name** 明確設定為 **ButtonY**。
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>指派唯一的名稱
 
-在 Blend for Visual Studio 中，您可以選取選項，將唯一名稱指派給互動式元素，例如按鈕、清單方塊、下拉式方塊和文字方塊。 這樣能提供控制項之 **AutomationProperties.Name** 的唯一值。
+在 Blend for Visual Studio 中，您可以選取選項，將唯一名稱指派給互動式項目，例如按鈕、清單方塊、下拉式方塊和文字方塊，這讓控制項具有 **AutomationProperties.Name** 的唯一值。
 
 若要將唯一名稱指派給現有的控制項，請選取 [工具] > [命名互動式元素]。
 
@@ -149,7 +149,7 @@ public override string ToString()
 
 ### <a name="dynamic-controls"></a>動態控制項
 
-如果您的控制項是從程式碼動態建立，而不是靜態建立或透過 XAML 檔案中的範本建立，則必須設定控制項的 **Content** 或 **Name** 屬性。 如此可確保每個動態控制項都具有唯一自動化屬性。 例如，如果您有必須在選取清單項目時顯示的核取方塊，則可以設定這些屬性，如下所示︰
+如果您的控制項是從程式碼動態建立，而不是靜態建立或透過 XAML 檔案中的範本建立，則必須設定控制項的 **Content** 或 **Name** 屬性。 此動作可確保每個動態控制項都具有唯一自動化屬性。 例如，如果您有必須在選取清單項目時顯示的核取方塊，則可以設定這些屬性，如下所示︰
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)
@@ -165,4 +165,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用程式碼 UI 測試來測試 UWP 應用程式](../test/test-uwp-app-with-coded-ui-test.md)
+- [使用自動程式化 UI 測試來測試 UWP 應用程式](../test/test-uwp-app-with-coded-ui-test.md)

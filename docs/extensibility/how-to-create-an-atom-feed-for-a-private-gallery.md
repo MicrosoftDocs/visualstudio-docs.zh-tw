@@ -1,5 +1,5 @@
 ---
-title: 如何： 建立的 Atom 摘要私用組件庫 |Microsoft 文件
+title: 如何： 建立的 Atom 摘要私用組件庫 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127473"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638488"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 建立的 Atom 摘要私用組件庫
-您可以建立 Atom (RSS) 摘要到內部網路位置，其中包含延伸模組，並加入至摘要**擴充功能和更新**作為私用組件庫。 如需詳細資訊，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 建立私用組件庫摘要的 Atom
+您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱 <<c0> [ 私用主機庫](../extensibility/private-galleries.md)。  
   
-## <a name="creating-an-atom-feed"></a>建立 Atom 摘要  
- 若要建立的 Atom 摘要作為私用組件庫，您先收集您的擴充功能 （.vsix 檔案） 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您還需要下列資源：  
+## <a name="create-an-atom-feed"></a>建立 Atom 摘要  
+ 若要建立的 Atom 摘要為私用組件庫，您先收集您的擴充功能 (*.vsix*檔案) 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您也需要下列資源：  
   
--   讓擴充功能作為私用組件庫中可 atom.xml 檔案。 如需有關如何連接至 atom.xml 檔案資訊**擴充功能和更新**，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
+-   *Atom.xml*為私用組件庫提供延伸模組的檔案。 如需有關如何連接資訊*atom.xml*的檔案**擴充功能和更新**，請參閱[私用主機庫](../extensibility/private-galleries.md)。  
   
--   包含擷取自擴充功能 （例如，螢幕擷取畫面） 任何映像檔案的資料夾。 Atom.xml 檔案包含這些影像的相對連結而會出現在**擴充功能和更新**。  
+-   包含任何擴充功能 （例如，螢幕擷取畫面） 從擷取的映像檔案的資料夾。 *Atom.xml*檔案會包含這些影像的相對連結，以便在有提供**擴充功能和更新**。  
   
- 例如，假設您已收集的下列兩個延伸到至資料夾：  
+ 例如，假設您已收集下列兩個延伸模組到到資料夾：  
   
--   Template_Wizard_239.vsix，也就是空的 VSIX 專案範本。  
+-   *Template_Wizard_239.vsix*，這是空的 VSIX 專案範本。  
   
--   SelectionHighlight.vsix，這是一個工具，可反白顯示選取的字的所有執行個體。  
+-   *SelectionHighlight.vsix*，這是以反白顯示選取的字的所有執行個體的工具。  
   
- Atom.xml 檔案的內容會類似下列的範例如下：  
+ 內容*atom.xml*檔案就會類似下列的範例：  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   
@@ -73,7 +73,7 @@ ms.locfileid: "31127473"
 </feed>
 ```  
   
- 請注意兩個連結標記是指產生影像的資料夾中的螢幕擷取畫面。  
+ 請注意兩個連結標記是指產生資料夾中的映像的螢幕擷取畫面。  
   
 ## <a name="see-also"></a>另請參閱  
  [私用組件庫](../extensibility/private-galleries.md)

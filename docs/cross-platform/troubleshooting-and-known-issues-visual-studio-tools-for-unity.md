@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153900"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251571"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "39153900"
 
 剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法為偵錯工具中斷該執行緒 (或網域重新載入)，因此會停止回應。
 
-針對 FMOD，有下列因應措施：您可以傳遞 FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE 初始化[旗標](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)以停用非同步處理，並在主執行緒上執行所有處理。
+針對 FMOD，有下列因應措施：您可以傳遞 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[旗標](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)以停用非同步處理，並在主執行緒上執行所有處理。
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不相容專案
 
@@ -114,7 +114,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 - 逐步執行和跳離方法有時運作異常，尤其是在 iterator 或 switch 陳述式內。
 
-## <a name="reporting-errors"></a>報告錯誤
+## <a name="report-errors"></a>報告錯誤
 
  當您遇到損毀、凍結或其他錯誤時，請傳送錯誤報告，以協助我們改善 Visual Studio Tools for Unity 的品質。 這可協助我們調查並修正 Visual Studio Tools for Unity 的問題。 感謝您！
 

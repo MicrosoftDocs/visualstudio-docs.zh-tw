@@ -11,19 +11,19 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056907"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341593"
 ---
-# <a name="formatting-python-code"></a>格式化 Python 程式碼
+# <a name="format-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
 
-- 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 Ctrl+E、F。
-- 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 Ctrl+E、D。
+- 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 **Ctrl**+**E** > **F**。
+- 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 **Ctrl**+**E** > **D**。
 
 選項是透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式] 及其巢狀索引標籤來設定。 您需要選取 [顯示所有設定] 來使這些選項出現：
 
@@ -31,7 +31,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 格式選項預設會設定成符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
 
-此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表中，如後續小節中所述。
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]](#fill-comment-paragraph-command) 命令新增至 [編輯] > [進階] 功能表中，如後續小節中所述。
 
 ## <a name="spacing"></a>間距
 
@@ -110,7 +110,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="fill-comment-paragraph-command"></a>填滿註解段落命令
 
-[編輯] > [進階] > [填滿註解段落] (Ctrl+E、Ctrl+P) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
+[編輯] > [進階] > [填滿註解段落] (**Ctrl**+**E** > **P**) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
 
 例如: 
 

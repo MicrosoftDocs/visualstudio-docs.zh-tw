@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978293"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380224"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 

@@ -1,5 +1,5 @@
 ---
-title: 字串長度限制 |Microsoft 文件
+title: 字串長度限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56a76e84c27684d422b6554b22c75d945df4e928
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136454"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638530"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度限制
-原始檔控制外掛程式 API 限制使用不同的函式中之字串的長度。  
+原始檔控制外掛程式 API 限制各種函式中使用的字串的長度。  
   
 ## <a name="string-length-values"></a>字串長度值  
   
@@ -33,7 +33,7 @@ ms.locfileid: "31136454"
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  長度不包括結尾的`null`。 其他以 「 _SIZE"尾碼而不是"_LEN"常數就是包含空間終止`null`。  
+>  長度不包含終止`null`。 其他常數"大小 _s"後置詞，而不是"_LEN 」 並包含終止的空間`null`。  
   
 |常數|值|  
 |--------------|-----------|  

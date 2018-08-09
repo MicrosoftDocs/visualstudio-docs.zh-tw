@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382675"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
-這個逐步解說會示範如何使用 *app.config* 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：
+這個逐步解說會示範如何使用 *app.config* 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 *app.config* 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：
 
-- 建立 app.config 檔案。
+- 建立 *app.config* 檔案。
 
 - 定義自訂組態區段。
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>在專案中新增 app.config 檔案
 
-1. 如果您的測試專案中已經有 app.config 檔案，請移至[定義自訂組態區段](#DefineCustomConfigurationSection)。
+1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
 
 2. 在 [方案總管] 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
 
@@ -53,13 +54,13 @@ ms.lasthandoff: 05/03/2018
 
 3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
 
-##  <a name="DefineCustomConfigurationSection"></a> 定義自訂組態區段
+##  <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 
 檢查 *app.config* 檔案。 這個檔案至少會包含 XML 宣告和一個根項目。
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要將自訂組態區段加入 app.config 檔案
 
-1. app.config 的根項目應該是 **configuration** 項目。 在 **configuration** 項目內建立 **configSections** 項目。 **configSections** 應該是 *app.config* 檔案中的第一個項目。
+1. *app.config* 的根項目應該是 **configuration** 項目。 在 **configuration** 項目內建立 **configSections** 項目。 **configSections** 應該是 *app.config* 檔案中的第一個項目。
 
 2. 在 **configSections** 項目內建立 **section** 項目。
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/03/2018
 
 **section** 項目應該看起來像這樣：
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 05/03/2018
 
 在第二個 **add** 項目中建立下列屬性和值，以連線至 Microsoft Excel 試算表：
 
-|||
+|屬性|值|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ ms.lasthandoff: 05/03/2018
 
 **connectionStrings** 項目應該看起來像這樣：
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ ms.lasthandoff: 05/03/2018
 
 在第二個 **add** 項目中建立下列屬性和值，以供 Microsoft Excel 資料來源使用：
 
-|||
+|屬性|值|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>使用 app.config 中所定義的資料來源建立單元測試
 
-現在 app.config 檔案已經定義完成，您將建立單元測試，此單位測試會使用 app.config 檔案中所定義之資料來源中的資料。 在這個章節中，您將執行下列項目：
+現在 *app.config* 檔案已經定義完成，您將建立單元測試，此單位測試會使用 *app.config* 檔案中所定義之資料來源中的資料。 在這個章節中，您將執行下列項目：
 
-- 建立在 app.config 檔案中找到的資料來源。
+- 建立在 *app.config* 檔案中找到的資料來源。
 
 - 使用兩個測試方法中的資料來源，它們會比較每個資料來源中的值。
 
@@ -261,7 +262,7 @@ ms.lasthandoff: 05/03/2018
     }
     ```
 
-3. 檢查 DataSource 屬性。 請注意 app.config 檔案的設定名稱。
+3. 檢查 DataSource 屬性。 請注意 *app.config* 檔案的設定名稱。
 
 4. 建置您的方案，然後執行 MyTestMethod 和 MyTestMethod2 測試。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176976"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380888"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
@@ -48,9 +48,9 @@ ms.locfileid: "39176976"
 
  如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
 
-##  <a name="CreateAdapter"></a> 建立和安裝診斷資料配接器
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>若要建立和安裝診斷資料配接器
 
 1.  建立新的類別庫。
 
@@ -224,7 +224,7 @@ ms.locfileid: "39176976"
 
      如果您想要使用自己的編輯器收集要在測試設定中使用的資料，請參閱[如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
 
-11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 `App.config` 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
+11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 *App.config* 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
 
     > [!NOTE]
     > 如果您不需要為診斷資料配接器設定任何資訊，則不需要建立組態檔。
@@ -255,7 +255,7 @@ ms.locfileid: "39176976"
     > [!NOTE]
     > 預設組態項目可以包含您需要的任何資料。 如果使用者未在測試設定中設定診斷資料配接器，則在診斷資料配接器執行時預設資料會傳遞給它。 由於您加入至 `<DefaultConfigurations>` 區段的 XML 不可能是宣告之結構描述的一部分，因此您可以忽略它產生的任何 XML 錯誤。
     >
-    > 下列路徑中會有其他組態檔範例，取決於您的安裝目錄：**Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors**。
+    > 下列路徑中會有其他組態檔範例，取決於您的安裝目錄：*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
 
      如需如何設定測試設定以便在執行測試時使用環境的詳細資訊，請參閱[在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
 

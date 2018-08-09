@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20eb70b6c3c6308e41599e65a4b00a3e4043e8d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1596c96662870118b8fa721f89b8a9ef1c6b831f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973600"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381529"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：指定步驟負載模式的逐步遞增時間屬性
 
@@ -47,7 +47,7 @@ ms.locfileid: "31973600"
 
 [逐步遞增時間] 屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。 在此範例中，使用者負載會在 20 秒的期間內從 100 位增加至 200 位使用者 (每秒增加 5 位使用者)。
 
-## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>若要編輯步驟負載模式的逐步遞增時間屬性
+## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>編輯步驟負載模式的逐步遞增時間屬性
 
 1.  開啟負載測試。
 

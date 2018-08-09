@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281792"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251877"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 

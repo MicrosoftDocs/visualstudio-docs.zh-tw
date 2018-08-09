@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5dc8ccda83f700538ae84dd565fcdd299d7d1331
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889992"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381689"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 
@@ -50,7 +50,7 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 
 - **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和喜好設定。 請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
-- **常見的 [方案總管]：** [方案總管] 會提供您的專案和其檔案的組織化檢視，而且也已準備好存取與其相關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
+- **常見的 [方案總管]：**[方案總管] 會提供您的專案和其檔案的組織化檢視，而且也已準備好存取與其相關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
 
 - **Team Explorer：** 您可以使用 [Team Explorer] 管理您具有 GIT 或 TFS 儲存機制的專案，有助於團隊共同作業。 請參閱 [在 Team Explorer 中工作](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
 

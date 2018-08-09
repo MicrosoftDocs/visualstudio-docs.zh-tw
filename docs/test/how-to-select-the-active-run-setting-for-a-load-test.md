@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977602"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381907"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：選取負載測試的使用中回合設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "38977602"
 
 如果您的負載測試在 [回合設定] 資料夾下只有一個回合設定節點，該節點則一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以在執行負載測試時選取其中一個使用。 請參閱[如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
-在 [負載測試編輯器] 中，現用回合設定可由 "[Active]" 後置字元加以辨識。
+在 [負載測試編輯器] 中，使用中的回合設定可由 "[Active]" 後置字元加以辨識。
 
 ## <a name="select-the-active-run-setting"></a>選取使用中的回合設定
 
@@ -53,7 +53,7 @@ ms.locfileid: "38977602"
 
 **Set Test.UseRunSetting=PreProdEnvironment**
 
-然後執行測試：
+若要執行測試：
 
 **mstest /testcontainer:loadtest1.loadtest**
 

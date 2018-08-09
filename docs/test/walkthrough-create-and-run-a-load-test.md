@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178445"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381012"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 
@@ -25,7 +25,7 @@ ms.locfileid: "39178445"
 
 本逐步解說會引導您使用 Visual Studio Enterprise 建立及執行負載測試。 負載測試是 Web 效能測試和單元測試的容器。 負載測試是利用 [新增負載測試精靈] 所建立。
 
-負載測試也會公開 (Expose) 許多執行階段屬性，您可以修改這些屬性，以產生需要的負載模擬。 在這個逐步解說中，您會使用 [新負載測試精靈] 將單元測試加入至負載測試。
+負載測試也會公開 (Expose) 許多執行階段屬性，您可以修改這些屬性，以產生需要的負載模擬。 在這個逐步解說中，您會使用 [新增負載測試精靈] 將單元測試加入至負載測試。
 
 在這個逐步解說中，您將完成下列工作：
 
@@ -35,11 +35,11 @@ ms.locfileid: "39178445"
 
 -   執行負載測試。
 
--   執行[逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中的步驟，以建立簡單的 C# 類別庫，其中包含有單元測試的 Web 效能和負載測試專案。
+-   執行[逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中的步驟，以建立簡單的 C# 類別庫，其中包含有一些單元測試的 Web 效能和負載測試專案。
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>使用新增負載測試精靈建立包含單元測試的負載測試
 
-### <a name="to-start-the-new-load-test-wizard"></a>啟動新增負載測試精靈
+### <a name="to-start-the-new-load-test-wizard"></a>若要啟動新增負載測試精靈
 
 1.  開啟您在[逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中建立的 Bank 方案。
 
@@ -47,7 +47,7 @@ ms.locfileid: "39178445"
 
      [加入新的專案] 對話方塊隨即顯示。
 
-3.  在 [新增新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [確定] 。
+3.  在 [加入新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [確定] 。
 
      BankLoadTest Web 效能和負載測試專案會加入至方案。
 
@@ -59,17 +59,17 @@ ms.locfileid: "39178445"
 
 7.  選擇 [下一步]。
 
-### <a name="to-edit-settings-for-load-test-scenario"></a>編輯負載測試情節的設定
+### <a name="to-edit-settings-for-load-test-scenario"></a>若要編輯負載測試情節的設定
 
 1.  在 [輸入負載測試情節的名稱] 文字方塊中，鍵入 **ScenarioSample**。
 
-     「情節」是一個分組機制。 它是由一組測試和在負載之下執行這些測試的屬性所構成。
+     「情節」是一個群組機制。 它是由一組測試和在負載之下執行這些測試的屬性所構成。
 
 2.  將 [時間特性考慮] 設為 [`Use normal distribution centered on recorded think times`]。 考慮時間代表使用者從網頁移到下一頁之前的暫停時間。
 
 1.  完成時，請選擇 [下一步]。
 
-### <a name="to-edit-load-pattern-setting-for-test-scenario"></a>編輯測試情節的負載模式設定
+### <a name="to-edit-load-pattern-setting-for-test-scenario"></a>若要編輯測試情節的負載模式設定
 
 1.  選擇 [逐步執行負載]。
 
@@ -86,33 +86,33 @@ ms.locfileid: "39178445"
 
 6.  選擇 [下一步]。
 
-### <a name="to-select-test-mix-model-for-the-scenario"></a>選取情節的測試混合模型
+### <a name="to-select-test-mix-model-for-the-scenario"></a>若要選取情節的測試混合模型
 
 1.  在 [如何將測試混合模組化] 下方，選取 [按總測試數]。
 
 2.  選擇 [下一步]。
 
-### <a name="to-add-unit-tests-to-the-scenario"></a>將單元測試加入至情節
+### <a name="to-add-unit-tests-to-the-scenario"></a>若要將單元測試加入至情節
 
 1.  下一個步驟是 [將測試新增至負載測試情節，並且編輯測試混合]。
 
 2.  選擇 [新增] 選取測試。
 
-3.  選擇 [可用的測試] 窗格中所列的 CreditTest 單元測試，這個窗格會列出此 Web 效能和負載測試專案中所有的 Web 效能測試與單元測試。
+3.  選擇 [可用的測試] 窗格中所列的 **CreditTest** 單元測試，這個窗格會列出此 Web 效能和負載測試專案中所有的 Web 效能測試與單元測試。
 
-4.  選擇箭號，將 CreditTest 單元測試新增至 [選取的測試] 窗格。
+4.  選擇箭號，將 **CreditTest** 單元測試新增至 [選取的測試] 窗格。
 
-5.  針對 DebitTest 和 FreezeAccountTest 單元測試重複步驟 3 和 4。
+5.  針對 **DebitTest** 和 **FreezeAccountTest** 單元測試重複步驟 3 和 4。
 
 6.  在加完這三個單元測試後，選擇 [確定]。
 
      就可以看到測試混合。
 
-7.  將 CreditTest 的分佈下方的滑桿略往右移，以調整測試分佈。 留意到其餘滑桿會自動往左移，而分佈會維持在 100%。
+7.  將 **CreditTest** 的 [分佈] 下方的滑桿略往右移，以調整測試分佈。 留意到其餘滑桿會自動往左移，而分佈會維持在 100%。
 
 8.  選擇 [下一步]。
 
-### <a name="to-select-network-mix-for-test-scenario"></a>選取測試情節的網路混合
+### <a name="to-select-network-mix-for-test-scenario"></a>若要選取測試情節的網路混合
 
 1.  選取要加入網路頻寬混合的 LAN 連線類型。
 
@@ -120,13 +120,13 @@ ms.locfileid: "39178445"
 
 2.  選擇 [下一步]。
 
-### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>指定要在負載測試執行期間以計數器集合監視的電腦
+### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>若要指定要在負載測試執行期間以計數器集合監視的電腦
 
 1.  選擇 [下一步]。
 
      如需計數器集合的詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
-### <a name="to-edit-run-setting-for-load-test"></a>編輯負載測試的回合設定
+### <a name="to-edit-run-setting-for-load-test"></a>若要編輯負載測試的回合設定
 
 1.  選取 [負載測試持續期間]，然後將 [執行持續期間] 設為 2 分鐘，以便替負載測試進行「煙霧測試」(Smoke Test)。
 
@@ -134,10 +134,10 @@ ms.locfileid: "39178445"
 
 2.  選擇 [完成]。 您的負載測試會在 [負載測試編輯器] 中開啟。
 
-## <a name="running-the-load-test"></a>執行負載測試
+## <a name="run-the-load-test"></a>執行負載測試
  建立好負載測試之後，請執行此測試，以檢視銀行應用程式對負載模擬的反應。 負載測試執行時，您會看到 [負載測試分析器] 視窗。
 
-### <a name="to-run-the-load-test"></a>執行負載測試
+### <a name="to-run-the-load-test"></a>若要執行負載測試
 
 1.  在 [負載測試編輯器] 中開啟負載測試後，選擇工具列上綠色的 [執行測試] 按鈕。 您的負載測試便會開始執行。
 

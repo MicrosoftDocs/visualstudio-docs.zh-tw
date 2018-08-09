@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7fee836c8259aac267bd1b3da39bf254c8cdcc63
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117397"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380726"
 ---
 # <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
 
-本主題說明如何在 UWP 應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。
+本文說明如何在 UWP 應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。
 
-本主題示範如何使用單元測試做為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。
+本文示範如何使用單元測試作為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。
 
-本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 DLL 建立個別方案。
+本文還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 DLL 建立個別方案。
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>建立方案和單元測試專案
 
@@ -32,7 +32,7 @@ ms.locfileid: "37117397"
 
 3. 將專案命名為 `Maths`，並確認已選取 [為方案建立目錄]。
 
-4. 在方案總管中選擇方案名稱，並從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。
+4. 在 [方案總管] 中選擇方案名稱，並從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。
 
 5. 在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C#]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "37117397"
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>驗證測試總管中執行的測試
 
-1. 在 **UnitTest1.cs** 檔案的 TestMethod1 中插入一些測試程式碼：
+1. 在 *UnitTest1.cs* 檔案的 TestMethod1 中插入一些測試程式碼：
 
    ```csharp
    [TestMethod]
@@ -90,7 +90,7 @@ ms.locfileid: "37117397"
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>將 Rooter 類別新增至 Maths 專案
 
-1. 在方案總管中，選擇 **Maths** 專案名稱。 從捷徑功能表中選擇 [新增]，然後選擇 [類別]。
+1. 在 [方案總管] 中，選擇 **Maths** 專案名稱。 從捷徑功能表中選擇 [新增]，然後選擇 [類別]。
 
 2. 將類別檔案命名為 *Rooter.cs*。
 
@@ -150,7 +150,7 @@ ms.locfileid: "37117397"
 
    新測試會出現在 [測試總管] 的 [未執行的測試] 節點中。
 
-5. 在 [測試總管] 中，選擇 [ **全部執行**]。
+5. 在 [測試總管] 中，選擇 [全部執行]。
 
    ![基本測試成功](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -180,7 +180,7 @@ ms.locfileid: "37117397"
    >
    > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
 
-2. 在 [測試總管] 中，選擇 [ **全部執行**]。
+2. 在 [測試總管] 中，選擇 [全部執行]。
 
 3. 測試失敗。
 
