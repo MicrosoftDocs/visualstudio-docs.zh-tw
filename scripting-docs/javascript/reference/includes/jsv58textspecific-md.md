@@ -1,1 +1,0 @@
-Internet Explorer 8 標準模式
