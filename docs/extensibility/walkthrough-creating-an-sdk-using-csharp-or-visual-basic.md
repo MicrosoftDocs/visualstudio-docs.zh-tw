@@ -166,7 +166,7 @@ ms.locfileid: "39497871"
   
 6.  在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
   
-     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟http://www.msdn.microsoft.com，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
+     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 http://www.msdn.microsoft.com，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
   
 7.  在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
   
