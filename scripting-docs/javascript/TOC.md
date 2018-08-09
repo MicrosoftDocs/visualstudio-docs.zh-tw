@@ -1,5 +1,0 @@
-# [JavaScript 語言參考](javascript-language-reference.md)
-# [JavaScript 的新功能](what-s-new-in-javascript.md)
-# [Visual Studio 2017 中的 JavaScript](javascript-in-vs-2017.md)
-# [JavaScript 參考](reference/TOC.md)
-## [條件式編譯](advanced/TOC.md)

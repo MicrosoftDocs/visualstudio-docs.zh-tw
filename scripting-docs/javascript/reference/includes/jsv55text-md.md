@@ -1,1 +1,0 @@
-Internet Explorer 6 以前的 Internet Explorer
