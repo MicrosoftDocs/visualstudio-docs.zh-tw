@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName 項目 （Visual Studio 範本） |Microsoft 文件
+title: ProvideDefaultName 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454372"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636008"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 (Visual Studio 範本)
-指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統會產生在範本的預設名稱**加入新項目**或**新專案** 對話方塊。  
+# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 （Visual Studio 範本）
+指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統會產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,39 +31,39 @@ ms.locfileid: "34454372"
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <ProvideDefaultName> true/false </ProvideDefaultName>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須`true`或`false`，指出是否要預設為產生的名稱中的範本**加入新項目**或**新專案** 對話方塊。  
+ 文字必須是`true`或`false`，指出是否要產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
  `ProvideDefaultName` 是選擇性項目。 預設值是 `true`。  
   
- 如果`ProvideDefaultName`項目是`false`、**名稱**方塊**加入新項目**和**新專案**對話方塊包含值`<Enter_name>`。  
+ 如果`ProvideDefaultName`項目是`false`，則**名稱**的方塊**加入新項目**並**新專案**對話方塊會包含值`<Enter_name>`。  
   
- 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)來指定專案的預設名稱，或項目中的項目**加入新項目**和**新專案**對話方塊。 當值`ProvideDefaultName`項目是`true`，省略`DefaultName`專案項目範本的名稱，也就是從值對話方塊方塊中填入[名稱](../extensibility/name-element-visual-studio-templates.md)項目。
+ 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)來指定專案的預設名稱，或項目中的項目**加入新項目**並**新專案**對話方塊。 時的值`ProvideDefaultName`項目`true`，省略`DefaultName`專案項目範本的名稱，也就是從值對話方塊方塊中填入[名稱](../extensibility/name-element-visual-studio-templates.md)項目。
   
 ## <a name="example"></a>範例  
- 下列程式碼範例會設定`ProvideDefaultName`元素`false`。  
+ 下列程式碼範例會設定`ProvideDefaultName`項目`false`。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,4 +83,4 @@ ms.locfileid: "34454372"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+ [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

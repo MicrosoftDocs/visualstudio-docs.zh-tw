@@ -1,5 +1,5 @@
 ---
-title: 當地語系化 功能表命令 |Microsoft 文件
+title: 將功能表命令當地語系化 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,38 +18,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4fd8f2b42464b31c71b2983dd3e5c66f4a03351
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142704"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638026"
 ---
-# <a name="localizing-menu-commands"></a>當地語系化 功能表命令
-您可以提供當地語系化的文字的功能表和工具列命令藉由建立當地語系化的.vsct 檔案，並為您的 VSPackage，然後更新專案檔的變更當地語系化的.resx 檔。  
+# <a name="localize-menu-commands"></a>將功能表命令當地語系化
+您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。  
   
  如需如何當地語系化安裝體驗的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)。  
   
-## <a name="localizing-command-names"></a>當地語系化的命令名稱  
- 在 Vspackage 中，功能表命令和工具列按鈕會定義在.vsct 檔案中。  
+## <a name="localize-command-names"></a>命令名稱當地語系化  
+ 在 Vspackage 中，功能表命令和工具列按鈕中定義 *.vsct*檔案。  
   
-1.  在**方案總管 中**，變更從.vsct 檔的名稱*filename*.vsct 來*filename*.en US.vsct。  
+1.  在 [**方案總管] 中**，變更的名稱 *.vsct*檔案從*filename.vsct*至*filename.en US.vsct*。  
   
-2.  建立一份*filename*.en-US.vsct 每個當地語系化語言。  
+2.  建立一份*filename.en US.vsct*每個當地語系化語言。  
   
-     命名每個複本*filename*。*地區設定*.vsct，其中*地區設定*是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱[microsoft 指派的地區設定識別碼](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
+     命名每個複本*檔案名稱。 {地區設定}.vsct*，其中 *{地區設定}* 是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱 < [Microsoft 指派的地區設定識別碼](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
   
-     這些*filename*。*地區設定*.vsct 檔會包含當地語系化的功能表文字，為您的封裝。  
+     這些*檔案名稱。Locale.vsct*檔會包含當地語系化的功能表文字，為您的封裝。  
   
-3.  開啟每一個*filename*。*地區設定*.vsct 檔的文字當地語系化。  
+3.  開啟每一個*檔案名稱。Locale.vsct*當地語系化文字的檔案。  
   
-    1.  修改[ButtonText](../extensibility/buttontext-element.md)為適合特定語言值的元素。  
+    1.  修改[ButtonText](../extensibility/buttontext-element.md)值為適用於特定語言的元素。  
   
-    2.  如果您將會提供當地語系化的圖示，修改[點陣圖](../extensibility/bitmap-element.md)值指向的目標檔案。  
+    2.  如果您將會提供當地語系化的圖示，修改[點陣圖](../extensibility/bitmap-element.md)值以指向目標檔案。  
   
-     下列範例會顯示英文和西班牙文按鈕文字，以開啟 家庭樹狀結構總管工具視窗命令。  
+     下列範例會顯示英文和西班牙文按鈕文字，以開啟家譜 Explorer 工具視窗命令。  
   
-     [FamilyTree.en US.vsct]  
+     [*FamilyTree.en US.vsct*]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -62,7 +62,7 @@ ms.locfileid: "31142704"
     </Button>  
     ```  
   
-     [FamilyTree.es ES.vsct]  
+     [*FamilyTree.es ES.vsct*]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -76,24 +76,24 @@ ms.locfileid: "31142704"
   
     ```  
   
-## <a name="localizing-other-text-resources"></a>當地語系化文字中的其他資源  
- 命令名稱以外的文字資源的資源 (.resx) 檔中定義。  
+## <a name="localize-other-text-resources"></a>當地語系化的文字中的其他資源  
+ 文字命令名稱以外的資源定義中資源 (*.resx*) 檔案。  
   
-1.  重新命名 VSPackage.en US.resx VSPackage.resx。  
+1.  重新命名*VSPackage.resx*要*VSPackage.en US.resx*。  
   
-2.  請針對每個當地語系化的語言 VSPackage.en US.resx 檔案的副本。  
+2.  建立一份*VSPackage.en US.resx*檔案，每個當地語系化語言。  
   
-     每個複本 VSPackage 的名稱。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
+     命名每個複本*VSPackage。 {地區設定}.resx*，其中 *{地區設定}* 是特定文化特性名稱。  
   
-3.  重新命名 Resources.en US.resx Resources.resx。  
+3.  重新命名*Resources.resx*要*Resources.en-us.resx*。  
   
-4.  請針對每個當地語系化的語言 Resources.en US.resx 檔案的副本。  
+4.  建立一份*Resources.en-us.resx*檔案，每個當地語系化語言。  
   
-     命名每個複本的資源。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
+     命名每個複本*資源。 {地區設定}.resx*，其中 *{地區設定}* 是特定文化特性名稱。  
   
-5.  開啟每個.resx 檔案修改適合特定語言和文化特性的字串值。 下列範例會顯示當地語系化的資源定義工具視窗的標題列。  
+5.  開啟每一個 *.resx*檔案修改的字串值為適合特定語言和文化特性。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。  
   
-     [Resources.en US.resx]  
+     [*Resources.en-us.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -101,7 +101,7 @@ ms.locfileid: "31142704"
     </data>  
     ```  
   
-     [Resources.es ES.resx]  
+     [*Resources.es-ES.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -110,10 +110,10 @@ ms.locfileid: "31142704"
   
     ```  
   
-## <a name="incorporating-localized-resources-into-the-project"></a>併入專案中當地語系化的資源  
- 您必須修改 assemblyinfo.cs 檔案和專案檔案即可將當地語系化的資源。  
+## <a name="incorporate-localized-resources-into-the-project"></a>併入專案中當地語系化的資源  
+ 您必須修改*assemblyinfo.cs*檔案和專案檔案，來將當地語系化的資源。  
   
-1.  從**屬性**節點**方案總管 中**，在編輯器中開啟 assemblyinfo.cs 或 assemblyinfo.vb。  
+1.  從**屬性**中的節點**方案總管**，開啟*assemblyinfo.cs*或是*assemblyinfo.vb*在編輯器中。  
   
 2.  新增下列項目。  
   
@@ -127,9 +127,9 @@ ms.locfileid: "31142704"
   
 4.  在編輯器中開啟專案檔。  
   
-5.  找出`ItemGroup`包含項目`EmbeddedResource`項目。  
+5.  找出`ItemGroup`包含的項目`EmbeddedResource`項目。  
   
-6.  在`EmbeddedResource`VSPackage.en US.resx，會呼叫的項目取代`ManifestResourceName`具有項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。  
+6.  在`EmbeddedResource`呼叫的項目*VSPackage.en US.resx*，取代`ManifestResourceName`項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -138,9 +138,9 @@ ms.locfileid: "31142704"
     </EmbeddedResource>  
     ```  
   
-7.  針對每個當地語系化的語言複製`EmbeddedResource`VsPackage.en 美式和集合的項目**Include**屬性和**LogicalName**複製到目標地區設定，如下列所示的項目範例。  
+7.  針對每個當地語系化的語言，複製`EmbeddedResource`項目`VsPackage.en-US`，並將**Include**屬性和**LogicalName**的複製到目標地區設定，如下列所示的項目範例。  
   
-8.  每個當地語系化`VSCTCompile`項目，加入`ResourceName`指向項目的`Menus.ctmenu`，如下列範例所示。  
+8.  每個當地語系化`VSCTCompile`項目，新增`ResourceName`指向的項目`Menus.ctmenu`，如下列範例所示。  
   
     ```xml  
     <ItemGroup>  
@@ -154,9 +154,9 @@ ms.locfileid: "31142704"
   
 10. 建置專案。  
   
-     這樣會建立主要組件，以及每種語言的資源組件。 當地語系化的部署程序的資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)  
+     這會建立主要組件，並針對每種語言的資源組件。 如需部署程序的當地語系化資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
- [MenuCommand 對比OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
+ [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   
+ [Menucommand 對比OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

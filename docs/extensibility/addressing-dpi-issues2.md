@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154326"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638661"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  請參閱<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>MSDN 上的文件。  
   
- 下表顯示範例的影像應該如何縮放以相對應的 DPI 縮放係數。 映像，以綠色代表我們的最佳做法是從 Visual Studio 2013 （100-200%的 DPI 縮放比例）：  
+ 下表顯示範例的影像應該如何縮放以相對應的 DPI 縮放係數。 橘色中簡述的映像表示自 （100-200%的 DPI 縮放比例） 的 Visual Studio 2013 起我們最佳做法：  
   
  ![DPI 縮放問題](../extensibility/media/dpi-issues-scaling.png "DPI 縮放問題")  
   

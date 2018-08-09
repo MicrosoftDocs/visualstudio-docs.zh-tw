@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton 項目 （Visual Studio 範本） |Microsoft 文件
+title: EnableLocationBrowseButton 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126841"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639535"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 項目 (Visual Studio 範本)
-指定是否**瀏覽**按鈕位於**新專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。  
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素 （Visual Studio 範本）
+指定是否**瀏覽** 按鈕位於**新的專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -35,30 +35,30 @@ ms.locfileid: "31126841"
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是`true`或`false`，指出是否顯示**瀏覽**按鈕**新專案** 對話方塊。  
+ 文字必須是`true`或`false`，指出是否要顯示**瀏覽**按鈕**新專案** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `EnableLocationBrowseButton` 是選擇性項目。 預設值是`true`，用來顯示**瀏覽**按鈕**新專案** 對話方塊。  
+ `EnableLocationBrowseButton` 是選擇性項目。 預設值是`true`，以顯示**瀏覽**按鈕**新專案** 對話方塊。  
   
- 在**新專案**對話方塊中，**位置**文字方塊中指定儲存新專案的目錄。 **瀏覽**按鈕可協助您修改這個目錄顯示**專案位置**對話方塊，可讓您輕鬆地巡覽至其他目錄，可從您的電腦，並然後選擇它以儲存新專案的目錄。  
+ 在 [**新的專案**] 對話方塊中，**位置**文字方塊指定儲存新專案的目錄。 **瀏覽** 按鈕可協助您修改所顯示的這個目錄**專案位置**對話方塊中，可讓您輕鬆地瀏覽至不同的目錄，可從您的電腦，以及然後選擇它做為儲存新的專案目錄。  
   
 ## <a name="example"></a>範例  
  下列範例說明的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  

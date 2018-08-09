@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC |Microsoft 文件
+title: POPDIRLISTFUNC |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e59c509bee1e9d9e84b4499bf3419bc129aadfa
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142182"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636911"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄以及 （選擇性） 若要找出哪些是原始檔控制下的檔案名稱的集合。  
+這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄，以及 （選擇性） 若要了解它們在原始檔控制下的檔案名稱的集合。  
   
- `POPDIRLISTFUNC`僅適用於這些目錄和檔案名稱應該會呼叫回呼 (在清單中指定給`SccPopulateDirList`函式)，實際上是在原始檔控制。  
+ `POPDIRLISTFUNC`應該呼叫回呼，僅適用於這些目錄和檔案名稱 (在清單中指定給`SccPopulateDirList`函式)，實際上是在原始檔控制。  
   
 ## <a name="signature"></a>簽章  
   
@@ -39,10 +39,10 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>參數  
  pvCallerData  
- [in]提供給使用者值[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)。  
+ [in]若要指定的使用者值[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)。  
   
  bFolder  
- [in]`TRUE`如果中的名稱`lpDirectoryOrFileName`為目錄，否則為名稱為檔案名稱。  
+ [in]`TRUE`如果中的名稱`lpDirectoryOrFileName`是一個目錄中; 否則為名稱是檔名。  
   
  lpDirectoryOrFileName  
  [in]完整的本機路徑是在原始程式碼控制之下的目錄或檔案名稱。  
@@ -54,10 +54,10 @@ typedef BOOL (*POPDIRLISTFUNC)(
 |-----------|-----------------|  
 |SCC_OK|繼續處理。|  
 |SCC_I_OPERATIONCANCELED|停止處理。|  
-|SCC_E_xxx|適當的原始檔控制的任何錯誤，應該停止處理。|  
+|SCC_E_xxx|任何適當的原始檔控制錯誤應該停止處理。|  
   
 ## <a name="remarks"></a>備註  
- 如果`fOptions`參數`SccPopulateDirList`函式包含`SCC_PDL_INCLUDEFILES`旗標，清單可能包含檔案名稱，以及目錄名稱。  
+ 如果`fOptions`的參數`SccPopulateDirList`函式包含`SCC_PDL_INCLUDEFILES`旗標，則檔案名稱，以及目錄名稱，可能會包含清單。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
