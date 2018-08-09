@@ -298,7 +298,7 @@ ms.locfileid: "37118633"
   
      SharePoint 自訂精靈 隨即出現。  
   
-10. 底下**位置**，選擇** 清單編輯**選項按鈕。  
+10. 底下**位置**，選擇**清單編輯**選項按鈕。  
   
 11. 在 **群組識別碼**清單中，選擇**Communications**。  
   
@@ -327,7 +327,7 @@ ms.locfileid: "37118633"
   
      **清單設定**頁面隨即出現。  
   
-4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
+4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  

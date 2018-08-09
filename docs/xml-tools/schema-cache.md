@@ -28,20 +28,20 @@ XML 編輯器也可以尋找位於方案中的結構描述，結構描述中所�
 |Filename|描述|
 |--------------|-----------------|
 |*catalog.xsd*|XML 編輯器結構描述目錄檔案的結構描述。 如需結構描述目錄的詳細資訊，請參閱下方。|
-|*DotNetConfig.xsd*|Web.Config 檔案的結構描述 」http://schemas.microsoft.com/.NETConfiguration/v2.0"。|
-|*msbuild.xsd*|MSBuild make 檔中，結構描述 」http://schemas.microsoft.com/developer/msbuild/2003"。|
+|*DotNetConfig.xsd*|Web.Config 檔案的結構描述 」 http://schemas.microsoft.com/.NETConfiguration/v2.0"。|
+|*msbuild.xsd*|MSBuild make 檔中，結構描述 」 “http://schemas.microsoft.com/developer/msbuild/2003" 。|
 |*msdata.xsd*|<xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。|
 |*msxsl.xsd*|Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。|
 |*SnippetFormat.xsd*|程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%InstallDir%\VC#\Expansions*。|
-|*Soap1.1.xsd*|簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述http://schemas.xmlsoap.org/soap/envelope/。|
+|*Soap1.1.xsd*|簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述 http://schemas.xmlsoap.org/soap/envelope/ 。|
 |*Soap1.2.xsd*|簡易物件存取通訊協定 1.2 的結構描述。|
-|*SiteMapSchema.xsd*|ASP.NET sitemap XML 檔案的結構描述 」http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|
+|*SiteMapSchema.xsd*|ASP.NET sitemap XML 檔案的結構描述 」 http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|
 |*wsdl.xsd*|結構描述的 Web 服務描述語言， http://schemas.xmlsoap.org/wsdl/。|
-|*xenc.xsd*|XML 加密的結構描述http://www.w3.org/2000/09/xmldsig#。|
-|*xhtml.xsd*|XHTML 的結構描述http://www.w3.org/1999/xhtml。|
-|*xlink.xsd*|XLink1.0，結構描述http://www.w3.org/1999/xlink。|
-|*xml.xsd*|架構中描述的 xml: space 及 xml: lang 屬性http://www.w3.org/XML/1998/namespace。|
-|*xmlsig.xsd*|XML 數位簽章的結構描述http://www.w3.org/2000/09/xmldsig#。|
+|*xenc.xsd*|XML 加密的結構描述 http://www.w3.org/2000/09/xmldsig# 。|
+|*xhtml.xsd*|XHTML 的結構描述 http://www.w3.org/1999/xhtml 。|
+|*xlink.xsd*|XLink1.0，結構描述 http://www.w3.org/1999/xlink 。|
+|*xml.xsd*|架構中描述的 xml: space 及 xml: lang 屬性 http://www.w3.org/XML/1998/namespace 。|
+|*xmlsig.xsd*|XML 數位簽章的結構描述 http://www.w3.org/2000/09/xmldsig# 。|
 |*xsdschema.xsd*|架構中描述的 XSD 本身當中， http://www.w3.org/2001/XMLSchema。|
 |*xslt.xsd*|轉換的 XML 結構描述， http://www.w3.org/1999/XSL/Transform。|
 
