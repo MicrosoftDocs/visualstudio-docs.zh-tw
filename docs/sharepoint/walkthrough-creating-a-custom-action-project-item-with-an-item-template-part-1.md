@@ -430,7 +430,7 @@ ms.locfileid: "37118641"
     > [!NOTE]  
     >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。  
   
-4.  上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉網頁瀏覽器。  
+4.  上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉網頁瀏覽器。  
   
 ## <a name="clean-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  

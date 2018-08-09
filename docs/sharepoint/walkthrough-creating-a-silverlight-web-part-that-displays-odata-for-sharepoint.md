@@ -80,7 +80,7 @@ ms.locfileid: "37118762"
   
 3.  在位址方塊中的**加入服務參考**對話方塊方塊中，輸入您的 SharePoint 網站的 URL，例如**http://MySPSite**，然後選擇**移** 按鈕。  
   
-     當 Silverlight 會尋找 SharePoint OData 服務 ListData.svc 時，它會將位址取代與完整的服務 URL 中。 此範例中，如http://myserver會變成http://myserver/_vti_bin/ListData.svc。  
+     當 Silverlight 會尋找 SharePoint OData 服務 ListData.svc 時，它會將位址取代與完整的服務 URL 中。 此範例中，如 http://myserver 會變成 http://myserver/_vti_bin/ListData.svc 。  
   
 4.  選擇**確定**按鈕以新增服務參考加入專案中，並使用預設服務名稱 ServiceReference1。  
   
@@ -219,13 +219,13 @@ ms.locfileid: "37118762"
   
 4.  在網頁設計工具上**編輯工具**索引標籤上，選擇**插入**。  
   
-5.  在索引標籤功能表列上選擇  **Web 組件**。  
+5.  在索引標籤功能表列上選擇 **Web 組件**。  
   
 6.  在 **分類**方塊中，選擇**自訂**資料夾。  
   
 7.  在  **Web 組件**清單中，選擇 Silverlight web 組件，然後選擇**新增**按鈕，將 web 組件加入至設計工具。  
   
-8.  您已新增的所有對您想要的網頁之後，請選擇** 頁面**索引標籤，然後選擇**儲存並關閉**工具列上的按鈕。  
+8.  您已新增的所有對您想要的網頁之後，請選擇**頁面**索引標籤，然後選擇**儲存並關閉**工具列上的按鈕。  
   
      Silverlight web 組件應該現在會顯示從 SharePoint 網站的公告資料。 根據預設，頁面會儲存在 SharePoint 網站頁面清單中。  
   
