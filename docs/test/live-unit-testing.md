@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382008"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586452"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing
 
@@ -102,7 +102,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 - **選項**，這會開啟[設定 Live Unit Testing](#configure-live-unit-testing) 一節所述的 [選項] 對話方塊。
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在鍵入期間於編輯器中檢視涵蓋範圍的視覺效果
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在鍵入期間於編輯器中檢視涵蓋範圍的視覺效果
 
 一旦啟用之後，Live Unit Testing 就會更新 Visual Studio 編輯器中的每個程式碼行，以顯示單元測試是否會涵蓋您撰寫的程式碼，以及涵蓋該程式碼的測試是否順利通過。  下圖顯示顯示具有通過及失敗測試的程式碼行，以及不受測試涵蓋的程式碼行。 僅由通過的測試所涵蓋的程式碼行會以綠色的 "✓" 裝飾，由一或多個失敗測試所涵蓋的程式碼行會以紅色的 "x" 裝飾，而沒有由任何測試所涵蓋的程式碼行則會以藍色的 "➖" 裝飾。
 
@@ -114,7 +114,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 ## <a name="get-information-on-successful-or-failed-tests"></a>取得成功或失敗測試的相關資訊
 
-藉由將滑鼠暫留在程式碼視窗中的成功或失敗符號上方，您就能看到已針對該行做出多少測試。 如果您按一下該符號，就能看見個別測試的狀態，如下圖所示：
+透過將滑鼠暫留在程式碼視窗中的成功或失敗符號上方，您就能看到已針對該行做出多少測試。 如果您按一下該符號，就能看見個別測試的狀態，如下圖所示：
 
   ![Image](./media/lut-failedinfo.png)
 
@@ -155,7 +155,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing 與大型方案
 
-如果您的方案具有 10 個或更多的專案，當啟動 Live Unit Testing 而其中並沒有保留資料，或從最上層 Visual Studio 功能表選取 [測試] > [Live Unit Testing] > [重設清除] 選項時，Visual Studio 會顯示下列對話方塊，以警告在大型專案中動態執行大量測試可能會嚴重影響效能。 如果您選取 [確定]，Live Unit Testing 會執行方案中的所有測試。 如果您選取 [取消]，便可以選取要執行的測試。 如需執行這項操作的資訊，請參閱下面的[包含和排除測試專案與測試方法](#include-and-exclude-test-projects-and-test-methods)一節。
+如果您的方案具有 10 個或更多的專案，當啟動 Live Unit Testing 而其中並沒有保留資料，或從最上層 Visual Studio 功能表選取 [測試] > [Live Unit Testing] > [重設清除] 選項時，Visual Studio 會顯示下列對話方塊，以警告在大型專案中動態執行大量測試可能會嚴重影響效能。 如果您選取 [確定]，Live Unit Testing 會執行方案中的所有測試。 如果您選取 [取消]，便可以選取要執行的測試。 如需執行此操作的資訊，請參閱下面的[包含和排除測試專案與測試方法](#include-and-exclude-test-projects-and-test-methods)一節。
 
  ![針對大型專案的 Live Unit Testing 對話方塊](media/lut-large-project.png)
 
@@ -186,8 +186,8 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼測試工具](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Live Unit Testing 部落格](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing 常見問題集](live-unit-testing-faq.md)
-[Channel 9 影片：Live Unit Testing in Visual Studio 2017 (Visual Studio 2017 中的 Live Unit Testing)](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [程式碼測試工具](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Live Unit Testing 部落格](https://go.microsoft.com/fwlink/?linkid=842514) \(英文\)
+- [即時單元測試常見問題集](live-unit-testing-faq.md)
+- [Channel 9 影片：Visual Studio 2017 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105) \(英文\)
 

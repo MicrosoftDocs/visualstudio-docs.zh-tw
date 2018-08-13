@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341879"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511648"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
-IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會重新調整正式測試輸入參數 **I**. **q** 上的述詞 **q: I -> {true, false}**，代表 IntelliTest 已觀察到的行為集合。 一開始 **q := false**，因為尚未觀察到任何項目。
+IntelliTest 會透過分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會重新調整正式測試輸入參數 **I**. **q** 上的述詞 **q: I -> {true, false}**，代表 IntelliTest 已觀察到的行為集合。 一開始 **q := false**，因為尚未觀察到任何項目。
 
 迴圈的步驟如下：
 

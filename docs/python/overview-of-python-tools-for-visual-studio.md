@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175362"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468773"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -47,13 +47,13 @@ Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>豐富的編輯功能、IntelliSense 及程式碼理解
 
-Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理和類型提示。 Visual Studio 也提供獨一無二的功能，例如類別檢視、[移至 定義]、[尋找所有參考] 及程式碼片段。 與[互動式視窗](#interactive-window)的整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
+Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理和類型提示。 Visual Studio 也提供獨一無二的功能，例如類別檢視、「移至定義」、「尋找所有參考」與程式碼片段。 與[互動式視窗](#interactive-window)的直接整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
 
 ![Visual Studio 中 Python 程式碼的程式碼完成](media/code-editing-completions-simple.png)
 
 如需詳細資訊：
 
-- 應面 (2 分 30 秒)：[編輯 Python 程式碼](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- 影片 (2 分 30 秒)：[編輯 Python 程式碼](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - 文件：[編輯 Python 程式碼](editing-python-code-in-visual-studio.md)
 - 文件：[格式化程式碼](formatting-python-code.md)
 - 文件：[重構程式碼](refactoring-python-code.md)
@@ -66,9 +66,9 @@ Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、�
 
 ![Visual Studio 中的 Python 互動式視窗](media/interactive-window.png)
 
-Visual Studio 也提供 Python 程式碼編輯器與互動式視窗之間的緊密整合。 **Ctrl+Enter** 鍵盤快速鍵可方便您將編輯器中目前的程式碼行 (或程式碼區塊) 傳送至互動式視窗，然後移至下一行 (或區塊)。 **Ctrl+Enter** 可讓您輕鬆逐步執行程式碼，而無須執行偵錯工具。 您也可以使用相同的按鍵將選取的程式碼傳送至互動式視窗，以及輕鬆地將程式碼從互動式視窗貼到編輯器中。 這些功能一起搭配可讓您在互動式視窗中發展出某個程式碼區段的詳細資料，然後在編輯器中輕鬆地將結果儲存在檔案中。
+Visual Studio 也提供 Python 程式碼編輯器與**互動式**視窗之間的緊密整合。 **Ctrl**+**Enter** 鍵盤快速鍵可方便您將編輯器中目前的程式碼行 (或程式碼區塊) 傳送至**互動式**視窗，然後移至下一行 (或區塊)。 **Ctrl**+**Enter** 可讓您輕鬆逐步執行程式碼，而不需要執行偵錯工具。 您也可以使用相同的按鍵將選取的程式碼傳送到**互動式**視窗，以及輕鬆地將程式碼從**互動式**視窗貼到編輯器中。 這些功能一起搭配可讓您在**互動式**視窗中發展出某個程式碼區段的詳細資料，然後在編輯器中輕鬆地將結果儲存在檔案中。
 
-Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 及 Windows Presentation Foundation (WPF)。
+Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 與 Windows Presentation Foundation (WPF)。
 
 如需詳細資訊：
 
@@ -104,7 +104,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 如需詳細資訊：
 
 - 影片 (3 分 32 秒)：[對 Python 進行偵錯](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- 文件：[對 Python 進行偵錯](debugging-python-in-visual-studio.md)
+- 文件：[針對 Python 程式碼進行偵錯](debugging-python-in-visual-studio.md)
 - 文件：[Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - 文件：[對 Linux 進行遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
 - 文件：[對 Azure 進行遠端偵錯](debugging-remote-python-code-on-azure.md)
@@ -134,9 +134,9 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 - 文件：[適用於 Python 的單元測試工具](unit-testing-python-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[對您的程式碼進行單元測試](../test/unit-test-your-code.md)。
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>發佈至 Azure 和適用於 Python 的 Azure SDK
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>發佈至 Azure 和適用於 Python 的 Azure SDK
 
-Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發佈至 Azure。 Visual Studio 包含適用於動態和靜態內容的必要 `web.config` 項目範本。 Python 工作負載也包含「適用於 Python 的 Azure SDK」，此 SDK 可簡化從 Windows、Mac OS X 及 Linux 應用程式使用 Azure 服務的流程。
+Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發佈至 Azure。 Visual Studio 包含適用於動態和靜態內容的必要 *web.config* 項目範本。 Python 工作負載也包含「適用於 Python 的 Azure SDK」，此 SDK 可簡化從 Windows、Mac OS X 及 Linux 應用程式使用 Azure 服務的流程。
 
 ![在 Visual Studio 中將 Python 應用程式發佈至 Azure](media/azure-publish-dialog.png)
 
@@ -163,7 +163,7 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 
 **問：Python 專案是否能產生獨立的可執行檔？**
 
-答： 一般來說，Python 是解譯的語言，並包含可在適當 Python 支援環境 (例如 Visual Studio 和網頁伺服器) 中視需要執行的程式碼。 目前，Visual Studio 本身不提供用來建立獨立可執行檔的工具，因為獨立可執行檔基本上表示內嵌 Python 解譯器的程式。 不過，若要建立可執行檔，Python 社群中提供多種方式，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 可內嵌的 Zip 檔案](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)部落格文章中所述。
+答： 一般來說，Python 是解譯的語言，並包含可在適當 Python 支援環境 (例如 Visual Studio 和網頁伺服器) 中視需要執行的程式碼。 目前，Visual Studio 本身不提供用來建立獨立可執行檔的工具，因為獨立可執行檔基本上表示內嵌 Python 解譯器的程式。 不過，若要建立可執行檔，Python 社群中提供多種方式，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 的可內嵌 Zip 檔案](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)部落格文章中所述。
 
 ## <a name="features-matrix"></a>功能對照表
 
@@ -264,7 +264,7 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 | 偵錯 - 附加至編輯 | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | 混合模式偵錯 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 | 遠端偵錯 (Windows、Mac OS X、Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| 偵錯互動式視窗 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+| 針對互動式視窗進行偵錯 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
 <a name="matrix-profiling"></a>
@@ -301,4 +301,4 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 
 - [WFastCGI bridge between IIS and Python](https://pypi.org/p/wfastcgi) (IIS 與 Python 之間的 WFastCGI 橋接) (pypi.org)
 - [Microsoft Virtual Academy 上的免費 Python 課程](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions at Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions) (Microsoft Virtual Academy 的前幾個 Python 問題)
+- [Microsoft Virtual Academy 的前幾個 Python 問題](https://aka.ms/mva-top-python-questions)

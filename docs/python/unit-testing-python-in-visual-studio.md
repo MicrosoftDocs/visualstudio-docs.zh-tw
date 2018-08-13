@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef5a936de8013f2ea0426d95def96a0871839e6a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056419"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586426"
 ---
-# <a name="setting-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
+# <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 
 單元測試是測試應用程式中其他程式碼單元 (通常是隔離的函數、類別等) 的程式碼片段。 應用程式通過所有單元測試之後，您至少可以確定其低階功能皆能正確運作。
 
@@ -30,13 +30,13 @@ ms.locfileid: "37056419"
 |---|---|
 | ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [ 觀看有關 Python 中單元測試的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) \(英文\) (2 分 31 秒)。 |
 
-## <a name="discovering-and-viewing-tests"></a>探索及檢視測試
+## <a name="discover-and-view-tests"></a>探索及檢視測試
 
 依照慣例，Visual Studio 會將測試辨識為名稱以 `test` 開頭的方法。 若要查看此行為，請執行下列步驟：
 
-1. 開啟在 Visual Studio 中載入的 [Python 專案](managing-python-projects-in-visual-studio.md)，以滑鼠右鍵按一下專案，選取[新增] > [新增項目...]，然後選取 [Python 單元測試]，再選取 [新增]。
+1. 開啟在 Visual Studio 中載入的 [Python 專案](managing-python-projects-in-visual-studio.md)，以滑鼠右鍵按一下專案，選取 [新增] > [新增項目]，然後選取 [Python 單元測試]，再選取 [新增]。
 
-1. 此動作會建立 `test1.py` 檔案，其中的程式碼會匯入標準 `unittest` 模組、從 `unittest.TestCase` 衍生測試類別，並在直接執行指令碼的情況下叫用 `unittest.main()`：
+1. 此動作會建立 *test1.py* 檔案，其中會具有會匯入標準 `unittest` 模組，從 `unittest.TestCase` 衍生測試類別，並在您直接執行指令碼的情況下叫用 `unittest.main()` 的程式碼：
 
     ```python
     import unittest
@@ -49,9 +49,9 @@ ms.locfileid: "37056419"
         unittest.main()
     ```
 
-1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟測試總管。
+1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟 [測試總管]。
 
-1. 測試總管會搜尋要進行測試的專案，並將它們顯示如下。 按兩下測試會開啟其原始程式檔。
+1. [測試總管] 會搜尋要進行測試的專案，並將它們顯示如下。 按兩下測試會開啟其原始程式檔。
 
     ![[測試總管] 顯示預設的 test_A](media/unit-test-A.png)
 
@@ -59,16 +59,16 @@ ms.locfileid: "37056419"
 
     ![[測試總管] 的 [群組依據] 工具列功能表](media/unit-test-group-menu.png)
 
-1. 您也可以在搜尋欄位中輸入文字，以依據名稱來篩選測試。
+1. 您也可以在 [搜尋] 欄位中輸入文字，以依據名稱來篩選測試。
 
 如需 `unittest` 模組以及撰寫測試的詳細資訊，請參閱 [Python 2.7 文件](https://docs.python.org/2/library/unittest.html) 或 [Python 3.4 文件](https://docs.python.org/3/library/unittest.html) (python.org)。
 
-## <a name="running-tests"></a>執行測試
+## <a name="run-tests"></a>執行測試
 
 在 [測試總管] 中有多種方式可以執行測試：
 
 - [全部執行] 會執行所有顯示的測試 (視篩選條件而定)。
-- [執行...] 功能表提供您以群組執行失敗、通過或無法執行之測試的命令。
+- [執行] 功能表提供您以群組執行失敗、通過或無法執行之測試的命令。
 - 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]。
 
 測試會在背景執行，且 [測試總管] 會在每個測試完成時更新其狀態：
@@ -83,7 +83,7 @@ ms.locfileid: "37056419"
 
     ![test_A 失敗且含原因](media/unit-test-A-fail-reason.png)
 
-## <a name="debugging-tests"></a>偵錯測試
+## <a name="debug-tests"></a>針對測試進行偵錯
 
 因為單元測試是程式碼片段，所以它們和其他程式碼一樣會有錯誤，並在某些情況下需要以偵錯工具執行。 在偵錯工具中，您可以設定中斷點、檢視變數，以及逐步檢視程式碼。 Visual Studio 也提供診斷工具以進行單元測試。
 
@@ -98,4 +98,4 @@ ms.locfileid: "37056419"
 - 當開始偵錯時，Visual Studio 會看似啟動並停止偵錯，然後再次啟動。 這是預期的行為。
 - 針對多個測試所進行的偵錯都會獨立執行，這會中斷偵錯工作階段。
 - 當進行偵錯時，Visual Studio 會間歇性地無法啟動測試。 一般來說，再次嘗試對測試進行偵錯會成功。
-- 進行偵錯時，可以離開測試進入 `unittest` 實作。 一般來說，下一個步驟會執行至程式的結尾，並停止偵錯。
+- 進行偵錯時，可以離開測試進入 `unittest` 實作。 一般而言，下一個步驟會執行至程式的結尾，並停止偵錯。

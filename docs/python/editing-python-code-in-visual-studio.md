@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341829"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500117"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
 開發人員大部分的時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。
 
-編輯器也與 Visual Studio 中的 [互動式] 視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)。
+編輯器也與 Visual Studio 中的 [互動式] 視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)。
 
 |   |   |
 |---|---|

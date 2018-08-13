@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572972"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468206"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
+
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
   
  本逐步解說中的步驟一般適用於 C/C++ 應用程式。 針對每一種語言，您必須適當地設定建置環境。  
@@ -50,7 +51,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- 您可以在命令列關閉資料收集，而不使用 API 呼叫。 下列步驟假設您的命令列建置環境設定成執行分析工具和您的開發工具。 這包含 VSInstr 和 VSPerfCmd 所需的設定。 請參閱＜命令列分析工具＞。  
+ 您可以在命令列關閉資料收集，而不使用 API 呼叫。 下列步驟假設您的命令列建置環境設定成執行分析工具和您的開發工具。 這包含 VSInstr 和 VSPerfCmd 所需的設定。 請參閱[命令列分析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)。  
   
 ## <a name="limit-data-collection-using-profiler-apis"></a>使用分析工具 API 限制資料收集  
   
@@ -69,47 +70,51 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
@@ -144,19 +149,19 @@ DataCollection.CurrentId);
   
 2.  若要分析 Managed 應用程式，請鍵入下列命令，以設定適當的環境變數：  
   
-     **VsPefCLREnv /traceon**  
+     **VsPerfCLREnv /traceon**  
   
-3.  鍵入下列命令：**VSInstr \<檔案名稱>.exe**  
+3.  輸入下列命令：**VSInstr \<檔案名稱>.exe**  
   
-4.  鍵入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**  
+4.  輸入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**  
   
-5.  鍵入下列命令：**VSPerfCmd /globaloff**  
+5.  輸入下列命令： **VSPerfCmd /globaloff**  
   
 6.  執行程式。  
   
-7.  鍵入下列命令：**VSPerfCmd /shutdown**  
+7.  輸入下列命令：**VSPerfCmd /shutdown**  
   
-8.  鍵入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**  
+8.  輸入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**  
   
      在目前目錄中，會使用產生的效能資料來建立 .*csv* 檔案。  
   

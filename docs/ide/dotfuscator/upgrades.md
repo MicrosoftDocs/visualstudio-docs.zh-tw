@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704570"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468539"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升級 Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Dotfuscator Community Edition 提供基本層級的保護，而 **_PreEmptive Pr
   * 額外的[應用程式防禦行為][check-actions]。
   * 能夠在應用程式生命週期結束期限之前提供一段警告期間。
   * 能夠在生命週期結束警告期間或在期限之後通知應用程式程式碼。
-  * 遙測加密。
-* 應用程式監視
-  * 能夠收集和儲存在暫時性網路中斷期間收集到的資訊。
-  * 能夠收集個人識別資訊。
-  * 不限次數地使用[功能追蹤][features]。
-  * 能夠追蹤您的程式碼所攔截和擲回的例外狀況，以及未處理的例外狀況。
-  * 能夠追蹤 `.dll` 組件中的例外狀況。
-  * 遙測加密。
 
 Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適合需要持續支援、維護和產品更新的企業開發人員。
 此外，Dotfuscator Professional 提供與 Visual Studio 的緊密整合，並針對商業用途授權。
@@ -88,7 +80,6 @@ Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適�
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

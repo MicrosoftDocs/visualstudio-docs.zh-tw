@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05cf2d99f88fcf6d43674d837d62f2e6053470a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950461"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510997"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -28,7 +28,7 @@ ms.locfileid: "31950461"
 
 **時機：** 您有只要放在區域變數中便可在稍後輕鬆重複使用的程式碼。
 
-**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好是只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
+**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
 
 ## <a name="how-to"></a>操作說明
 

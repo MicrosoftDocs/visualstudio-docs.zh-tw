@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079144"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511231"
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
 
@@ -157,14 +157,21 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 ## <a name="next-steps"></a>後續步驟
 
-您已經完成這個 Visual Studio 編輯器快速入門。 接下來，您可以嘗試一些其他 Visual Studio 開發環境快速入門，例如[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)或[快速入門：將 Visual Studio 個人化](../ide/quickstart-personalize-the-ide.md)，也可以查看其他[巡覽程式碼](../ide/navigating-code.md)的方式，或了解我們所查看功能之詳細資訊的連結。 否則，高興撰寫程式碼！
+您已經完成這個 Visual Studio 編輯器快速入門。 接著，您可以嘗試一些其他 Visual Studio 開發環境快速入門。
+
+> [!div class="nextstepaction"]
+> [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [快速入門：將 Visual Studio 個人化](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
-- [快速入門：將 Visual Studio 個人化](../ide/quickstart-personalize-the-ide.md)
-- [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
 - [程式碼片段](../ide/code-snippets.md)
+- [巡覽程式碼](../ide/navigating-code.md)
 - [大綱](../ide/outlining.md)
 - [移至定義和查看定義](../ide/go-to-and-peek-definition.md)
 - [重構](../ide/refactoring-in-visual-studio.md)

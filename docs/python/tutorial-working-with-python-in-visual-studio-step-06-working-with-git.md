@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056491"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511323"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 
@@ -32,7 +32,7 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
     ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗。 (您隨時可以使用 [檢視] > [Team Explorer] 功能表命令開啟該視窗。)視窗有三個主要窗格，您可以使用 **Team Explorer** 標題上的下拉式清單在之間切換。 提供發行作業的 [同步] 窗格，也會在您選取 [推送] 控制項 (向上箭頭圖示) 時出現：
+1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗 (您隨時可以使用 [檢視] > [Team Explorer] 功能表命令開啟該視窗)。視窗有三個主要窗格，您可以使用 **Team Explorer** 標題上的下拉式清單在之間切換。 提供發行作業的 [同步] 窗格，也會在您選取 [推送] 控制項 (向上箭頭圖示) 時出現：
 
     ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
@@ -48,9 +48,9 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
     ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
 
-1. 選取具有存放庫名稱 (先前影像中的 "CosineWave") 的 Git 控制項，[Team Explorer] 會顯示 [連線] 介面，可讓您快速地完全切換至另一個存放庫。
+1. 選取具有存放庫名稱 (先前影像中的 **CosineWave**) 的 Git 控制項，[Team Explorer] 會顯示 [連線] 介面，可讓您快速地完全切換至另一個存放庫。
 
-1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取 [Team Explorer] 中的下拉式標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的提取與擷取命令。
+1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取 [Team Explorer] 中的下拉式標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的**提取**與**擷取**命令。
 
 ## <a name="go-deeper"></a>深入了解
 
@@ -64,14 +64,14 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
 - 建立專案，以及檢視專案內容。
 - 使用程式碼編輯器，並執行專案。
-- 使用互動式視窗來開發新的程式碼，並輕鬆地將該程式碼複製至編輯器。
+- 使用**互動式**視窗來開發新的程式碼，並輕鬆地將該程式碼複製至編輯器。
 - 在 Visual Studio 偵錯工具中執行已完成的程式。
-- 安裝套件以及管理 Python 環境
-- 使用 Git 存放庫中的程式碼
+- 安裝套件以及管理 Python 環境。
+- 使用 Git 存放庫中的程式碼。
 
-在這裡，瀏覽概念和作法指南，包含下列文章：
+在這裡，探索概念和作法指南，包含下列文章：
 
 - [建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)
-- [發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [程式碼剖析](profiling-python-code-in-visual-studio.md)
 - [單元測試](unit-testing-python-in-visual-studio.md)

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425153"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469148"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
@@ -34,8 +34,7 @@ ms.locfileid: "32425153"
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -53,9 +52,9 @@ ms.locfileid: "32425153"
 
 1.  在 Visual Studio 中建立新的 XML 檔案，並新增上面所示的範本。
 
-2.  在 **Title** 項目中，填入程式碼片段標題，例如 "Hello World VB"。
+2.  在 Title 項目中，填入程式碼片段標題，例如 "Hello World VB"。
 
-3.  在 **Code** 項目的 **Languages** 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
+3.  在 **Code** 元素的 **Languages** 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
 
 4.  例如，在 **Code** 項目的 **CDATA** 區段中新增一些程式碼：
 
@@ -191,7 +190,7 @@ ms.locfileid: "32425153"
     </Imports>
     ```
 
-4.  若要宣告 SQL 連接字串的常值取代，請在 **Snippet** 項目下新增 **Declarations** 項目，並在其中新增具有取代識別碼、工具提示和預設值之子項目的 **Literal** 項目：
+4.  若要宣告 SQL 連接字串的常值取代，請在 **Snippet** 元素下新增 **Declarations** 元素，並在其中新增具有取代識別碼、工具提示和預設值之子元素的 **Literal** 元素：
 
     ```xml
     <Declarations>

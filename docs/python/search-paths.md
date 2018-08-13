@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118235"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586413"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -30,15 +30,15 @@ ms.locfileid: "37118235"
 
 因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查那些位置中的程式庫，並視需要為它們建置 IntelliSense 資料庫 (Visual Studio 2017 15.5 版及較早版本；視程式庫的數目而定，建構資料庫可能需要一些時間)。
 
-若要新增搜尋路徑，請在 [方案總管] 中的 [Search Paths (搜尋路徑)] 項目上按一下滑鼠右鍵、選取 [Add Folder to Search Path (將資料夾新增到搜尋路徑)]，然後選取要包含的資料夾。 這個路徑會用於與該專案關聯的所有環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
+若要新增搜尋路徑，請在 [方案總管] 中的 [搜尋路徑] 項目上按一下滑鼠右鍵、選取 [ 將資料夾新增至搜尋路徑]，然後選取要包含的資料夾。 這個路徑會用於與該專案關聯的所有環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
 
-您也可以新增副檔名為 `.zip` 或 `.egg` 的檔案作為搜尋路徑，方法是選取 [Add Zip Archive to Search Path (將 Zip 封存新增到搜尋路徑)]。與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
+您也可以新增副檔名為 *.zip* 或 *.egg* 的檔案作為搜尋路徑，方法是選取 [ Zip 封存新增至搜尋路徑]。 與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
 
 如果您固定使用相同的搜尋路徑且內容不常變更，則將它安裝到您的站台套件資料夾中可能會較有效率。 搜尋路徑接著會被分析並儲存在 IntelliSense 資料庫中、一律會與其預期的環境建立關聯，而且不需要將搜尋路徑新增至每個專案。
 
-## <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
-- [將 requirements.txt 用於相依性](managing-required-packages-with-requirements-txt.md)
+- [為相依性使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
 - [Python 環境視窗參考](python-environments-window-tab-reference.md)

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382655"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469135"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -79,6 +79,8 @@ ms.locfileid: "39382655"
 
 1. 確認 [關於] 頁面包含更新的文字。
 
+1. 關閉網頁瀏覽器。
+
 恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE (整合式開發環境)。
 
 ## <a name="next-steps"></a>後續步驟
@@ -87,9 +89,6 @@ ms.locfileid: "39382655"
 
 > [!div class="nextstepaction"]
 > [Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>另請參閱
 

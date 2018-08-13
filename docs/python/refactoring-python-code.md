@@ -1,6 +1,6 @@
 ---
 title: 重構 Python 程式碼
-description: 如何藉由重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，以輕鬆地在 Visual Studio 中重構 Python 程式碼。
+description: 如何透過重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，以輕鬆地在 Visual Studio 中重構 Python 程式碼。
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056536"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586361"
 ---
-# <a name="refactoring-python-code"></a>重構 Python 程式碼
+# <a name="refactor-python-code"></a>重構 Python 程式碼
 
 Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命令︰
 
@@ -27,11 +27,9 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 - [加入匯入](#add-import)提供智慧標籤以加入遺漏的匯入
 - [移除未使用的匯入](#remove-unused-imports)會移除未使用的匯入
 
-<a name="rename-variable"</a>
-
 ## <a name="rename"></a>重新命名
 
-1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]，或將插入點放在該識別項中並選取 [編輯] > [重構] > [重新命名...] 功能表命令 (F2)。
+1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]，或將插入點放在該識別項中並選取 [編輯] > [重構] > [重新命名] 功能表命令 (**F2**)。
 1. 在出現的 [重新命名] 對話方塊中，輸入識別項的新名稱並選取 [確定]：
 
   ![[重新命名] 的新識別項名稱提示](media/code-refactor-rename-1.png)
@@ -45,7 +43,7 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 ## <a name="extract-method"></a>擷取方法
 
 1. 選取要擷取到另一個方法的程式碼或運算式。
-1. 選取 [編輯] > [重構] > [擷取方法...] 功能表命令，或輸入 Ctrl-R、M。
+1. 選取 [編輯] > [重構] > [擷取方法] 功能表命令，或輸入 **Ctrl**+**R** > **M**。
 1. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
 
   ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)
@@ -69,8 +67,6 @@ Visual Studio 會嘗試篩選出未實際定義於模組中的成員，例如已
 同樣地，Visual Studio 會篩選從其他模組或內建命名空間匯入的函式。 例如，如果模組從 `sys` 模組匯入 `settrace` 函式，則理論上您可以從該模組將它匯入。 但最好直接使用 `import settrace from sys`，Visual Studio 才會具體提供該陳述式。
 
 最後，如果某項目正常情況下會被排除，但卻具有其他會包含的值 (例如，因為已在模組中指派名稱的值)，Visual Studio 仍會排除匯入。 此行為假設不應該匯出值，因為它定義在另一個模組中，因此其他的指派可能是空的值，也不會匯出。
-
-<a name="remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>移除未使用的匯入
 

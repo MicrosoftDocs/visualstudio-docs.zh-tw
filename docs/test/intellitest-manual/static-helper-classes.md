@@ -11,21 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815895"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511063"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
 IntelliTest 提供一組靜態的協助程式類別，可以在撰寫[參數化單元測試](test-generation.md#parameterized-unit-testing)時使用：
 
-* [PexAssume](#pexassume)：用來在輸入上定義假設，對於篩選不想要的輸入很有幫助。
-* [PexAssert](#pexassert)：當您的測試架構不提供時，可使用的簡易判斷提示類別。
+* [PexAssume](#pexassume)：用來在輸入上定義假設，對於篩選不想要的輸入很有幫助
+* [PexAssert](#pexassert)：當您的測試架構不提供時，可使用的簡易判斷提示類別
 * [PexChoose](#pexchoose)：IntelliTest 管理的其他測試輸入資料流
-* [PexObserve](#pexobserve)：記錄具體值，並選擇性地在產生的程式碼中驗證它們。
+* [PexObserve](#pexobserve)：記錄具體值，並選擇性地在產生的程式碼中驗證它們
 
 某些類別可讓您與 IntelliTest 推理引擎在低層級進行互動：
 
@@ -61,7 +61,7 @@ public void TestSomething(int i, int j) {
 
 不同之處是失敗的 **PexAssume** 導致沒有測試案例。 如果是 **if** 陳述式，IntelliTest 會另外產生測試案例，以涵蓋 **if** 陳述式的 **then** 分支。
 
-**PexAssume** 也包含如字串、陣列和集合上的假設的特定巢狀類別。
+**PexAssume** 也包含如字串、陣列和集合上的假設的特殊化巢狀類別。
 
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert

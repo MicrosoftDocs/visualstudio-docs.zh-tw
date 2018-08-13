@@ -1,17 +1,17 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: 指令碼 | Microsoft Docs
-ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+title: JavaScript | Microsoft Docs
+ms.openlocfilehash: 45b67c450b8165808ca8a1042e21d9c5e0b54c84
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
-ms.locfileid: "29989209"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008534"
 ---
-# <a name="scripting-technologies"></a>指令碼技術
+# <a name="javascript-technologies-in-visual-studio"></a>Visual Studio 中的 JavaScript 技術
 
-此頁面會提供 JavaScript、TypeScript、ECMAScript 參考文件的連結，以及可讓您使用這些語言撰寫應用程式之 Visual Studio 技術的連結。
+此頁面提供 JavaScript 與 TypeScript 型文件連結，讓您使用這些語言以 Visual Studio 撰寫應用程式。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -44,42 +44,6 @@ ms.locfileid: "29989209"
                     </div>
                     <div class="cardText">
                         <h3>開始使用通用 Windows App (UWP)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="http://www.typescriptlang.org/docs/tutorial.html">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_TS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>了解 TypeScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>了解 JavaScript</h3>
                     </div>
                 </div>
             </div>
@@ -140,60 +104,6 @@ ms.locfileid: "29989209"
         </div>
         </a>
     </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>了解 JavaScript 執行階段裝載</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="https://docs.microsoft.com/scripting/winscript/windows-script-interfaces">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Windows 指令碼的介面 (封存)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://msdn.microsoft.com/library/d1et7k7c(v=vs.84).aspx">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>JScript 與 VBScript (封存)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
 </ul>
 
 <hr>
@@ -201,7 +111,7 @@ ms.locfileid: "29989209"
 
 <p><ul class="panelContent cardsW">
     <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -214,12 +124,51 @@ ms.locfileid: "29989209"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
+        <a href="http://www.typescriptlang.org/docs/tutorial.html">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>TypeScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-edge/hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>JavaScript 執行階段裝載</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/fdee6589(v%3dvs.94)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Windows 指令碼的介面 (封存)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c(v%3dvs.84)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>JScript 與 VBScript (封存)</h3>
                     </div>
                 </div>
             </div>

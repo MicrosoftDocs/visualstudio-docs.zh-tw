@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078221"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512557"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
@@ -97,11 +97,19 @@ Visual Studio 2017 使用者介面的預設色彩佈景主題為 [藍色]。 讓
 
 我們已探索在 Visual Studio 中自訂色彩的幾種方式。 希望您繼續探索 [選項] 對話方塊中的其他自訂選項，以真正打造屬於您自己的 Visual Studio。
 
+## <a name="next-steps"></a>後續步驟
+
+> [!div class="nextstepaction"]
+> [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
-- [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
-- [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
 - [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
 - [自訂編輯器](../ide/customizing-the-editor.md)
 - [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
