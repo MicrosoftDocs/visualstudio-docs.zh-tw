@@ -151,9 +151,9 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 
 1. 當瀏覽器開啟時，您可能會看到下列訊息：「發生內部伺服器錯誤，無法顯示此網頁。」 此訊息表示您在伺服器上的 Python 環境未完全設定，在此情況下，請執行下列步驟：
 
-    a. 再次參閱[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md)，確定您已安裝適當的 Python 網站延伸模組。
+    a. 再次參閱[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md)，確定您已安裝適當的 Python 網站擴充功能。
 
-    b. 再次檢查 `web.config` 檔案中的 Python 解譯器路徑。 該路徑必須完全符合您所選擇的網站延伸模組安裝位置。
+    b. 再次檢查 `web.config` 檔案中的 Python 解譯器路徑。 該路徑必須完全符合您所選擇的網站擴充功能安裝位置。
 
     c.  使用 Kudu 主控台，升級應用程式 `requirements.txt` 檔案中列出的任何套件：瀏覽至 `web.config` 中使用的相同 Python 資料夾 (例如 `/home/python361x64`)，然後按照 [Kudu 主控台](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)一節所述，執行下列命令：
 
