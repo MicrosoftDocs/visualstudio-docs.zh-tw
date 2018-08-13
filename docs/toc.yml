@@ -483,71 +483,73 @@
           items:
             - name: '使用 C# 或 Visual Basic 建立 WPF 應用程式'
               href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
-            - name: '教學課程 1：建立圖片檢視器 (C#)'
-              href: ide/tutorial-1-create-a-picture-viewer.md
+            - name: Windows Forms 應用程式教學課程
               items:
-                - name: 步驟 1：建立 Windows Form 應用程式專案
-                  href: ide/step-1-create-a-windows-forms-application-project.md
-                - name: 步驟 2：執行您的程式
-                  href: ide/step-2-run-your-program.md
-                - name: 步驟 3：設定您的表單屬性
-                  href: ide/step-3-set-your-form-properties.md
-                - name: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
-                  href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                - name: 步驟 5：將控制項加入至您的表單
-                  href: ide/step-5-add-controls-to-your-form.md
-                - name: 步驟 6：命名您的按鈕控制項
-                  href: ide/step-6-name-your-button-controls.md
-                - name: 步驟 7：將對話方塊元件加入至您的表單
-                  href: ide/step-7-add-dialog-components-to-your-form.md
-                - name: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
-                  href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                - name: 步驟 9：檢閱、註解和測試您的程式碼
-                  href: ide/step-9-review-comment-and-test-your-code.md
-                - name: 步驟 10：撰寫其他按鈕和核取方塊的程式碼
-                  href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                - name: 步驟 11：執行您的程式並嘗試其他功能
-                  href: ide/step-11-run-your-program-and-try-other-features.md
-            - name: '教學課程 2：建立計時數學測驗 (C#)'
-              href: ide/tutorial-2-create-a-timed-math-quiz.md
-              items:
-                - name: 步驟 1：建立專案並將標籤加入至表單
-                  href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                - name: 步驟 2：建立隨機加法問題
-                  href: ide/step-2-create-a-random-addition-problem.md
-                - name: 步驟 3：加入倒數計時器
-                  href: ide/step-3-add-a-countdown-timer.md
-                - name: 步驟 4：加入 CheckTheAnswer() 方法
-                  href: ide/step-4-add-the-checktheanswer-parens-method.md
-                - name: 步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式
-                  href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                - name: 步驟 6：加入減法問題
-                  href: ide/step-6-add-a-subtraction-problem.md
-                - name: 步驟 7：加入乘法和除法問題
-                  href: ide/step-7-add-multiplication-and-division-problems.md
-                - name: 步驟 8：自訂測驗
-                  href: ide/step-8-customize-the-quiz.md
-            - name: '教學課程 3：建立配對遊戲 (C#)'
-              href: ide/tutorial-3-create-a-matching-game.md
-            - name: 步驟 1：建立專案並將資料表加入至表單
-              href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-              items:
-                - name: 步驟 2：加入隨機物件和圖示清單
-                  href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                - name: 步驟 3：將隨機圖示指派給每個標籤
-                  href: ide/step-3-assign-a-random-icon-to-each-label.md
-                - name: 步驟 4：將 Click 事件處理常式加入至每個標籤
-                  href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                - name: 步驟 5：加入標籤參考
-                  href: ide/step-5-add-label-references.md
-                - name: 步驟 6：加入計時器
-                  href: ide/step-6-add-a-timer.md
-                - name: 步驟 7：讓配對保持可見
-                  href: ide/step-7-keep-pairs-visible.md
-                - name: 步驟 8：加入方法以驗證玩家是否贏了
-                  href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                - name: 步驟 9：嘗試其他功能
-                  href: ide/step-9-try-other-features.md
+                - name: '教學課程 1：建立圖片檢視器 (C#)'
+                  href: ide/tutorial-1-create-a-picture-viewer.md
+                  items:
+                    - name: 步驟 1：建立 Windows Form 應用程式專案
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: 步驟 2：執行您的程式
+                      href: ide/step-2-run-your-program.md
+                    - name: 步驟 3：設定您的表單屬性
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: 步驟 5：將控制項加入至您的表單
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: 步驟 6：命名您的按鈕控制項
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: 步驟 7：將對話方塊元件加入至您的表單
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: 步驟 9：檢閱、註解和測試您的程式碼
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: 步驟 10：撰寫其他按鈕和核取方塊的程式碼
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: 步驟 11：執行您的程式並嘗試其他功能
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: '教學課程 2：建立計時數學測驗 (C#)'
+                  href: ide/tutorial-2-create-a-timed-math-quiz.md
+                  items:
+                    - name: 步驟 1：建立專案並將標籤加入至表單
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: 步驟 2：建立隨機加法問題
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: 步驟 3：加入倒數計時器
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: 步驟 4：加入 CheckTheAnswer() 方法
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: 步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: 步驟 6：加入減法問題
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: 步驟 7：加入乘法和除法問題
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: 步驟 8：自訂測驗
+                      href: ide/step-8-customize-the-quiz.md
+                - name: '教學課程 3：建立配對遊戲 (C#)'
+                  href: ide/tutorial-3-create-a-matching-game.md
+                  items:
+                    - name: 步驟 1：建立專案並將資料表加入至表單
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: 步驟 2：加入隨機物件和圖示清單
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: 步驟 3：將隨機圖示指派給每個標籤
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: 步驟 4：將 Click 事件處理常式加入至每個標籤
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: 步驟 5：加入標籤參考
+                      href: ide/step-5-add-label-references.md
+                    - name: 步驟 6：加入計時器
+                      href: ide/step-6-add-a-timer.md
+                    - name: 步驟 7：讓配對保持可見
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: 步驟 8：加入方法以驗證玩家是否贏了
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: 步驟 9：嘗試其他功能
+                      href: ide/step-9-try-other-features.md
     - name: 存取資料...
       href: data-tools/accessing-data-in-visual-studio.md
     - name: 設計使用者介面...
@@ -660,9 +662,9 @@
     - name: 全球化和當地語系化應用程式
       href: ide/globalizing-and-localizing-applications.md
       items:
-        - name: 以 .NET Framework 為基礎的國際應用程式簡介
+        - name: 國際化 .NET Framework 應用程式簡介
           href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-        - name: 當地語系化應用程式
+        - name: 將應用程式當地語系化
           href: ide/localizing-applications.md
           items:
             - name: 階層式組織當地語系化的資源
@@ -673,12 +675,12 @@
               href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
             - name: 當地語系化的中性資源語言
               href: ide/neutral-resources-languages-for-localization.md
-        - name: 全球化應用程式
+        - name: 將應用程式全球化
           href: ide/globalizing-applications.md
           items:
             - name: 全域 Windows Form 和 Web Form 的文化特性特定類別
               href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-        - name: 使用雙向語言建立應用程式
+        - name: 以雙向語言建立應用程式
           href: ide/creating-applications-in-bi-directional-languages.md
 - name: 參考資料
   items:

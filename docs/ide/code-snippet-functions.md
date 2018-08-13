@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917962"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512131"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
-有三個函式可用來與 C# 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](../ide/code-snippets-schema-reference.md#function) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
+有三個函式可用來與 C# 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](../ide/code-snippets-schema-reference.md#function-element) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
 ## <a name="functions"></a>函式
 
@@ -31,9 +31,9 @@ ms.locfileid: "31917962"
 
 |功能|描述|語言|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
+|`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|
+|`SimpleTypeName(` `TypeName` `)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|C#|
 
 ## <a name="example"></a>範例
 
@@ -159,5 +159,5 @@ ms.locfileid: "31917962"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Function 項目](../ide/code-snippets-schema-reference.md#function)
+- [Function 項目](../ide/code-snippets-schema-reference.md#function-element)
 - [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

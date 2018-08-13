@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748227"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513396"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -37,26 +37,26 @@ C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字
 
 - 擴充方法
 
-C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱[篩選後的完成清單](#filtered-completion-lists)。
+C# 中的自動完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱[篩選後的完成清單](#filtered-completion-lists)。
 
-## <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段
+### <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段
 
-C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。 如需 C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。
+C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut-element)的程式碼片段。 如需 C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。
 
-## <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字
+### <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字
 
 C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](/dotnet/csharp/language-reference/keywords/index)。
 
-## <a name="extension-methods-in-completion-lists"></a>完成清單中的擴充方法
+### <a name="extension-methods-in-completion-lists"></a>完成清單中的擴充方法
 
 C# 的完成清單包含範圍內的擴充方法。
 
 > [!NOTE]
 > 完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。
 
-擴充方法與執行個體方法使用不同的圖示。 如需清單圖示的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。
+擴充方法與執行個體方法使用不同的圖示。 如需清單圖示參考指南，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。
 
-## <a name="filtered-completion-lists"></a>篩選後的自動完成清單
+### <a name="filtered-completion-lists"></a>篩選後的自動完成清單
 
 IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。 C# 會篩選針對下列項目所顯示的完成清單：
 
@@ -78,13 +78,17 @@ IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移�
 
 - **參數說明**會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。
 
-## <a name="most-recently-used-members"></a>最近使用的成員
+### <a name="most-recently-used-members"></a>最近使用的成員
 
-IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員] 清單時，最近使用過的成員就會顯示在頂端。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。
+IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員清單] 時，最近使用過的成員就會顯示在頂端。 會在每個 Visual Studio 工作階段之間，清除最近使用過的成員記錄。
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-當您鍵入 [override](/dotnet/csharp/language-reference/keywords/override)，然後按下**空格鍵**時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。
+當您鍵入 [override](/dotnet/csharp/language-reference/keywords/override)，然後按下**空格鍵**時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回型別，可提示 IntelliSense 僅顯示會傳回相同型別的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。
+
+### <a name="ai-enhanced-intellisense"></a>由 AI 增強的 IntelliSense
+
+您可以安裝適用於 Visual Studio 的實驗性 [IntelliCode 延伸模組](/visualstudio/intellicode/intellicode-visual-studio)，它提供由人工智慧增強的 IntelliSense 自動完成清單。 此延伸模組可預測要使用哪個最可能正確的 API，而不僅僅是按字母順序排列來呈現成員清單。 它會使用您目前的程式碼內容和模式，以提供動態清單。
 
 ## <a name="automatic-code-generation"></a>自動產生程式碼
 
@@ -104,15 +108,15 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ### <a name="implement-interface"></a>實作介面
 
-在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中鍵入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中鍵入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名下，方法宣告會帶有介面的名稱。 在隱含命名下，方法宣告不會指出其所屬介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
-實作介面將會產生最少數目的滿足介面之方法虛設常式。 如果基礎類別實作部分的介面，則不會重新產生這些虛設常式。
+實作介面將會產生滿足介面所需之方法虛設常式的數目下限。 如果基底類別實作部分的介面，則不會重新產生那些虛設常式。
 
 ### <a name="implement-abstract-base-class"></a>實作抽象基底類別
 
 在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作] 燈泡。 燈泡提供您自動實作基底類別方法的選項。
 
-[實作抽象基底類別] 功能所產生的方法虛設常式是由定義在 *MethodStub.snippet* 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
+「實作抽象基底類別」 功能所產生的方法虛設常式是由定義在 *MethodStub.snippet* 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
 ### <a name="generate-from-usage"></a>使用時產生
 

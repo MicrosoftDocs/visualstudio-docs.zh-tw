@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177863"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469063"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -109,7 +109,7 @@ ms.locfileid: "39177863"
 
 ## <a name="use-a-different-unit-test-framework"></a>使用不同的單元測試架構
 
-您可以使用協力廠商測試架構 (例如 Boost、Google 及 nUnit)，在 Visual Studio 中執行單元測試。 請使用該架構的外掛程式，讓 Visual Studio 的測試執行者可以使用該架構。
+您可以使用協力廠商測試架構 (例如 Boost、Google 與 NUnit)，在 Visual Studio 中執行單元測試。 請使用該架構的外掛程式，讓 Visual Studio 的測試執行者可以使用該架構。
 
 以下是啟用協力廠商測試架構的步驟：
 

@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 07/26/2018
+ms.date: 08/02/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: ef91eb98d2926d6a107b9abdbc3a362a94ddb840
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276425"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499028"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 
@@ -25,6 +25,8 @@ ms.locfileid: "39276425"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.6 | 發行 | 2018 年 8 月 2 日 | 15.7.27703.2047 |
+| 15.0.16 | 發行 | 2018 年 8 月 2 日 | 15.0.26228.48 |
 | 15.8.0 Preview 5 | 預覽 | 2018 年 7 月 26 日 | 15.8.27924.0 |
 | 15.8.0 Preview 4 | 預覽 | 2018 年 7 月 10 日 | 15.8.27906.1 |
 | 15.7.5 | 發行 | 2018 年 7 月 10 日 | 15.7.27703.2042 |

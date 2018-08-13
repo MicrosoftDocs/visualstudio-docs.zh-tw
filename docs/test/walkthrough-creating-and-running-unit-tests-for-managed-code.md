@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380859"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469109"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
 
@@ -210,7 +210,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ### <a name="analyze-the-test-results"></a>分析測試結果
 
-測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但實際上它增加了提領的金額。
+測試結果會包含說明失敗的訊息。 如果是 `AreEqual` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但它增加了提領的金額。
 
 單元測試發現了一個錯誤：提領的金額應該從帳戶餘額「減去」，但卻被「加入」至帳戶餘額。
 

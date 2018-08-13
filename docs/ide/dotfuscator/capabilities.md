@@ -18,19 +18,19 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a087af554ab62a77562dcdf449a18e807f9d17fe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 44c99fd2a35ffbdb1db07ed1a63613dbe79dd61e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704443"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468176"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
 本頁的重點在於描述 Dotfuscator Community Edition (Dotfuscator CE) 的功能，並提供可透過[升級][upgrades]使用之進階選項的一些參考資訊。
 
 Dotfuscator 是 .NET 應用程式的「建置後」系統。
-透過 Dotfuscator CE，Visual Studio 使用者可以[混淆組件][obfuscation]，並將[主動防禦][checks]和[分析追蹤][analytics]插入應用程式，Dotfuscator 完全不需要存取原始程式碼。
+透過 Dotfuscator CE，Visual Studio 使用者可以[混淆組件][obfuscation]，並將[主動防禦評估][checks]插入應用程式，Dotfuscator 完全不需要存取原始程式碼。
 Dotfuscator 採用多種方法來保護您的應用程式，並建立多層保護策略。
 
 Dotfuscator CE 支援各種 .NET 組件和應用程式類型，包括[通用 Windows 平台 (UWP)][uwp] 和 [Xamarin][xamarin]。
@@ -55,17 +55,9 @@ Dotfuscator 可將[反偵錯行為][debug]插入您的應用程式，對此進�
 
 Dotfuscator CE 可將[應用程式驗證程式碼][checks]插入您的組件，包括[反竄改][tamper]、[反偵錯][debug]和[防裝置破解][root]措施。
 如果偵測到無效的應用程式狀態，驗證程式碼可[要求應用程式程式碼適當地解決此情況][check-app]。
-或者，如果您不想要撰寫程式碼來處理應用程式使用不當的情況，Dotfuscator 也可以插入[遙測報告][check-telemetry]和[回應][check-action]行為，而不需要對您的原始程式碼進行任何修改。
+或者，如果您不想要撰寫程式碼來處理應用程式使用不當的情況，Dotfuscator 也可以插入[回應][check-action]行為，而不需要對您的原始程式碼進行任何修改。
 
 許多相同的方法也可用來強制執行評估或試用版軟體的[生命週期結束期限][shelflife]。
-
-## <a name="application-monitoring"></a>應用程式監視
-
-開發應用程式時，請務必了解使用者的行為模式，包括搶鮮版 (Beta) 測試人員和舊版使用者。
-應用程式分析可讓您追蹤應用程式的使用頻率及使用情況，包括客戶體驗到哪些錯誤。
-
-Dotfuscator CE 可將[例外狀況追蹤][exceptions]、[工作階段追蹤][sessions]和[功能追蹤][features]程式碼插入您的應用程式。
-此處理過的應用程式會在執行時，將分析資料傳輸至所設定的 [PreEmptive Analytics 端點][endpoints]。
 
 ## <a name="see-also"></a>請參閱
 
@@ -82,9 +74,6 @@ Dotfuscator CE 可將[例外狀況追蹤][exceptions]、[工作階段追蹤][ses
 [obfuscation]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
 [renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[analytics]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
-[endpoints]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
-
 [checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
 [check-app]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
 [check-action]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#action
@@ -93,9 +82,5 @@ Dotfuscator CE 可將[例外狀況追蹤][exceptions]、[工作階段追蹤][ses
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
-[check-telemetry]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html

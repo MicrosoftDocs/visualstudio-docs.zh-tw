@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251799"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586543"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -70,7 +70,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 ## <a name="install-project-requirements"></a>安裝專案需求
 
-從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
+從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
 
 ![安裝專案範本所需之封裝的對話方塊](media/template-web-requirements-txt-wizard.png)
 

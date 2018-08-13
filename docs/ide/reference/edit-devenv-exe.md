@@ -6,19 +6,19 @@ ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /edit switch
-- /Edit Devenv swtich
+- /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c5aeffae35a4202577cf8065b76b1968616355
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c8ee96ef2cd8713b592eabef11942e895bd93534
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704287"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510126"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 在現有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 執行個體中開啟指定的檔案。

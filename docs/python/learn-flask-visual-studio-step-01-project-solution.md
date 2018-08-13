@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dd6208c690190db3d50f35d661d6e2b53157aeee
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388263"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586400"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -66,7 +66,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
     ![提示指出專案需要外部套件](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
-1. 選取 [我將自行安裝] 選項。 您很快便會建立虛擬環境，以確定它已從原始檔控制中排除。 (環境隨時可以從 *requirements.txt* 建立)。
+1. 選取 [我將自行安裝] 選項。 您很快便會建立虛擬環境，以確定它已從原始檔控制中排除。 (環境隨時可以從 *requirements.txt* 建立。)
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步驟 1-2：檢查 Git 控制項並發佈至遠端存放庫
 
@@ -85,7 +85,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
     ![顯示 [變更] 頁面的 [Team Explorer] 視窗](media/flask/step01-team-explorer-changes.png)
 
-1. 在 Visual Studio 狀態列上，選取未推送認可按鈕 (具有 **2** 的向上箭頭)，以在 [Team Explorer] 中開啟 [同步處理] 頁面。 因為您只有本機存放庫，該頁面會提供簡單的選項，以將存放庫發佈至不同的遠端存放庫。
+1. 在 Visual Studio 狀態列上，選取未推送認可按鈕 (具有 **2** 的向上箭頭)，以在 Team Explorer 中開啟 [同步處理] 頁面。 因為您只有本機存放庫，該頁面會提供簡單的選項，以將存放庫發佈至不同的遠端存放庫。
 
     ![[Team Explorer] 視窗顯示可用於原始檔控制的 Git 存放庫選項](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 1. 隨著您逐步完成本教學課程，請建立定期使用 Visual Studio 中的控制項來認可並推送變更的習慣。 本教學課程會合適的時機點提醒您。
 
 > [!Tip]
-> 若要在 [Team Explorer] 內快速瀏覽，請選取標題 (在上面影像中標為 [變更] 或 [推送]) 以查看可用頁面的快顯功能表。
+> 若要在 Team Explorer 內快速瀏覽，請選取標題 (在上面影像中標為 [變更] 或 [推送]) 以查看可用頁面的快顯功能表。
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>問題：從專案一開始就使用原始檔控制會有哪些優點？
 
@@ -128,7 +128,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 1. 在出現提示時同意賦與系統管理員權限，然後在 Visual Studio 下載並安裝套件時耐心等待幾分鐘，這對於 Flask 及其相依性來說，意謂著會在超過 100 個子資料夾中擴增數千個檔案。 您可以在 Visual Studio 的 [輸出] 視窗中查看進度。 您可在等候期間思考下方的＜問題＞小節。 您也可以在 [Flask 安裝](http://flask.pocoo.org/docs/1.0/installation/#installation) \(英文\) 頁面 (flask.pcocoo.org) 上查看 Flask 相依性的描述。
 
-1. 在 Visual Studio Git 控制項 (位於狀態列) 上，選取變更指標 (顯示 **99&#42;**)，這會在 [Team Explorer] 中開啟 [變更] 頁面。
+1. 在 Visual Studio Git 控制項 (位於狀態列) 上，選取變更指標 (顯示 **99&#42;**)，這會在 Team Explorer 中開啟 [變更] 頁面。
 
     建立虛擬環境帶來了數千個變更，但是並不需要將其中任何一個變更包含在原始檔控制中，因為您 (或複製專案的任何其他人) 隨時可從 *requirements.txt* 重新建立環境。
 
@@ -142,11 +142,11 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>問題：為什麼我要建立虛擬環境？
 
-答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>問題：我要如何移除已認可至原始檔控制的虛擬環境？
 
-回答：首先，請編輯 *.gitignore* 檔案以將該資料夾排除：在結尾尋找註解為 `# Python Tools for Visual Studio (PTVS)` 的區段，然後為虛擬環境資料夾新增一行，例如 `/BasicProject/env`。 (因為 Visual Studio 不會在 [方案總管] 中顯示該檔案，請使用 [檔案] > [開啟] > [檔案] 功能表命令來直接開啟該檔案。 您也可以從 [Team Explorer] 開啟該檔案：在 [設定] 頁面上，選取 [存放庫設定]，移至 [忽略屬性檔案] 區段，然後選取 **.gitignore** 旁邊的 [編輯] 連結)。
+回答：首先，請編輯 *.gitignore* 檔案以將該資料夾排除：在結尾尋找註解為 `# Python Tools for Visual Studio (PTVS)` 的區段，然後為虛擬環境資料夾新增一行，例如 `/BasicProject/env`。 (因為 Visual Studio 不會在 [方案總管] 中顯示該檔案，請使用 [檔案] > [開啟] > [檔案] 功能表命令來直接開啟該檔案。 您也可以從 Team Explorer 開啟該檔案：在 [設定] 頁面上，選取 [存放庫設定]，移至 [忽略屬性檔案] 區段，然後選取 **.gitignore** 旁邊的 [編輯] 連結。)
 
 再來，請開啟命令視窗，巡覽至包含虛擬環境資料夾 (例如 *env*) 的資料夾 (例如 *BasicProject*)，然後執行 `git rm -r env`。 接著，從命令列 (`git commit -m 'Remove venv'`) 認可那些變更，或是從 [Team Explorer] 的 [變更] 頁面認可它們。
 

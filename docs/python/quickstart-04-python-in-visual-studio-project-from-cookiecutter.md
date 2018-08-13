@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: daaeefc8dcefecf035a70989d206564ca84bf198
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 7df6010043d1a88e08494d53ccd9eeb152899d28
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956941"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510380"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 
@@ -26,19 +26,19 @@ ms.locfileid: "33956941"
 
 1. 啟動 Visual Studio。
 
-1. 選取 [檔案] > [新增] > [從 Cookiecutter]。此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。 
+1. 選取 [檔案] > [新增] > [從 Cookiecutter]。 此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。 
 
     ![從 Cookiecutter 範本新增專案](media/projects-from-cookiecutter1.png)
 
-1. 已選取 "Microsoft/python-sklearn-classifier-cookiecutter" 範本，然後選取 [下一步]  (第一次使用 Cookiecutter 時，處理序可能需要幾分鐘的時間)。
+1. 已選取 [Microsoft/python-sklearn-classifier-cookiecutter] 範本，然後選取 [下一步]。 (第一次使用 Cookiecutter 時，處理序可能需要幾分鐘的時間)。
 
 1. 在下一個步驟中，於 [CREATE 至] 欄位中設定新專案的位置，然後選取 [建立]。
 
     ![使用 Cookiecutter 的第二個步驟，設定專案屬性](media/projects-from-cookiecutter2.png)
 
-1. 處理序完成時，您看到「已成功建立檔案」訊息。 選取 [在方案總管中開啟] 命令以開啟專案。
+1. 程序完成時，您看到「已成功建立檔案」訊息。 選取 [在方案總管中開啟] 命令以開啟專案。
 
-1. 按 Ctrl + F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
+1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
 
     ![python-sklearn-classifier-cookiecutter 範本專案的輸出](media/projects-from-cookiecutter4.png)
 
@@ -50,6 +50,6 @@ ms.locfileid: "33956941"
 ## <a name="see-also"></a>另請參閱
 
 - [使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)
-- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
-- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)
+- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)

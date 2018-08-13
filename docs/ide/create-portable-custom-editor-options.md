@@ -1,6 +1,6 @@
 ---
 title: 在 VisualStudio 中使用 EditorConfig 設定
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117559"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469050"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -81,9 +81,15 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.or
    csharp_new_line_before_open_brace = methods
    ```
 
-或者，您也可以安裝 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)。 安裝此延伸模組之後，只要在解決方案節點、專案節點，或方案總管中的任何資料夾上，按一下滑鼠右鍵或從操作功能表選擇 [新增] > [.editorconfig 檔案] 即可。
+### <a name="other-ways-to-add-an-editorconfig-file"></a>新增 EditorConfig 檔案的其他方式
 
-![新增具有延伸模組的 .editorconfig 檔案](media/editorconfig-extension-add.png)
+將 EditorConfig 檔案新資到您專案的方式有數種：
+
+- 安裝 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) \(英文\) 以更輕鬆地將空白的 *.editorconfig* 檔案新增到您的專案。 安裝此延伸模組之後，只要在方案節點、專案節點或 [方案總管] 中的任何資料夾上，按一下滑鼠右鍵或從快顯功能表選擇 [加入] > [.editorconfig 檔案]。 此延伸模組也會改善 *.editorconfig* 檔案編輯體驗。
+
+   ![新增具有延伸模組的 .editorconfig 檔案](media/editorconfig-extension-add.png)
+
+- 嘗試 [適用於 Visual Studio 的 IntelliCode 延伸模組](/visualstudio/intellicode/intellicode-visual-studio)。 此實驗性延伸模組會從現有的程式碼推斷您的程式碼樣式，然後使用已定義的程式碼樣式喜好設定來建立非空白的 *.editorconfig* 檔案。
 
 ## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
 

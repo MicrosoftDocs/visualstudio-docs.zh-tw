@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251929"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498963"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -62,7 +62,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 > [!Note]
 > Python 中的一些中斷點可能會令已使用其他程式設計語言的開發人員感到意外。 在 Python 中，整個檔案就是可執行程式碼，因此 Python 會在載入檔案來處理任何最上層類別或函式定義時執行檔案。 如果已設定中斷點，您可以透過類別宣告發現偵錯工具中斷方式。 這種行為正確，不過有時會很令人意外。
 
-您可以自訂觸發中斷點的條件，例如僅在變數設為特定值或值範圍時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中這項功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)。
+您可以自訂觸發中斷點的條件，例如僅在變數設為特定值或值範圍時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中此功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)。
 
 設定條件時，您也可以設定 [動作 (Action)] 並建立要記錄至輸出視窗的訊息，或選擇自動繼續執行。 記錄訊息會建立所謂的「追蹤點」，而不直接將記錄碼新增到您的應用程式︰
 
@@ -155,9 +155,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | **解譯器路徑** | 覆寫與目前環境相關聯的路徑。 使用非標準解譯器啟動您的指令碼時，此值會很有用。 |
 | **環境變數** | 在這個多行文字方塊中，新增 \<NAME>=\<VALUE> 格式的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以使用它來手動覆寫那些其他變數中的任一項。 |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>[即時運算 (Immediate)] 和 [互動式 (Interactive)] 視窗
+## <a name="immediate-and-interactive-windows"></a>即時運算視窗和互動式視窗
 
 偵錯工作階段期間有兩個可用的互動式視窗︰標準的 Visual Studio [即時運算] 視窗，以及 [Python 互動式偵錯] 視窗。
 
@@ -203,9 +201,9 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | Python 版本 | 與實驗性偵錯工具相容 |
 | --- | --- |
 | 2.6 | 否 |
-| 2.7 | [是] |
+| 2.7 | 是 |
 | 3.1 至 3.4 | 否 |
-| 3.5 和更新版本 | [是] |
+| 3.5 和更新版本 | 是 |
 | IronPython | 否 |
 
 如果您嘗試在不相容的環境中使用實驗性偵錯工具，Visual Studio 會顯示錯誤 **「偵錯工具與此環境不相容」**：

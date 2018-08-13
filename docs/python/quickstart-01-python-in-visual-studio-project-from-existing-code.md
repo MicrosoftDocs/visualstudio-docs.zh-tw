@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781613"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511597"
 ---
-# <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：在 Visual Studio 中從現有程式碼建立 Python 專案
+# <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：從現有程式碼建立 Python 專案
 
 [在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以輕鬆地將現有 Python 程式碼帶入 Visual Studio 專案。
 
@@ -27,7 +27,7 @@ ms.locfileid: "38781613"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. 如有需要，請按 Ctrl+F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。
+如有需要，請按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -36,6 +36,6 @@ ms.locfileid: "38781613"
 
 ## <a name="see-also"></a>另請參閱
 
-- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
-- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)
+- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)

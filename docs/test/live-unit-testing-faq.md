@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382600"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586508"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -77,13 +77,13 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 - 您的方案中應該至少要有一個專案含有參考 xUnit、NUnit 或 MSTest 測試架構的 NuGet 參考或直接參考。 此專案應該也要參考對應的 Visual Studio 測試配接器 NuGet 封裝。 Visual Studio 測試配接器也可以透過 *.runsettings* 檔案來參考。 *.runsettings* 檔案必須具有類似下列範例的項目：
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>為什麼您將 Visual Studio 專案中參考的測試配接器升級到支援版本之後，Live Unit Testing 顯示不正確的涵蓋範圍？
 
@@ -268,4 +268,4 @@ Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配�
 
 ## <a name="see-also"></a>另請參閱
 
-[即時單元測試](live-unit-testing.md)
+- [即時單元測試](live-unit-testing.md)

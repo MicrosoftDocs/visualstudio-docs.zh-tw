@@ -49,10 +49,10 @@
                   href: direct-selection-tool-modifier-keys-in-blend.md
             - name: 適用於 Blend 的協助工具產品和服務
               href: accessibility-products-and-services-blend.md
-    - name: 開始使用 WPF
+    - name: Windows Presentation Foundation (WPF)
       href: getting-started-with-wpf.md
       items:
-        - name: WPF 簡介
+        - name: WPF 概觀
           href: introduction-to-wpf.md
         - name: 使用 LINQ to XML 進行 WPF 資料繫結
           href: wpf-data-binding-with-linq-to-xml-overview.md
@@ -80,18 +80,18 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (XElement 動態屬性)
                       href: xml-xelement-dynamic-property.md
-            - name: 範例
-              href: wpf-data-binding-using-linq-to-xml-example.md
-              items:
-                - name: 建置並執行 LinqToXmlDataBinding 範例
-                  href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                - name: 逐步解說：LINQ to XML 資料繫結
-                  href: walkthrough-linqtoxmldatabinding-example.md
+                - name: 範例
+                  href: wpf-data-binding-using-linq-to-xml-example.md
                   items:
-                    - name: L2DBForm.xaml 原始程式碼
-                      href: l2dbform-xaml-source-code.md
-                    - name: L2DBForm.xaml.cs 原始程式碼
-                      href: l2dbform-xaml-cs-source-code.md
+                    - name: 建置並執行 LinqToXmlDataBinding 範例
+                      href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                    - name: 逐步解說：LINQ to XML 資料繫結
+                      href: walkthrough-linqtoxmldatabinding-example.md
+                      items:
+                        - name: L2DBForm.xaml 原始程式碼
+                          href: l2dbform-xaml-source-code.md
+                        - name: L2DBForm.xaml.cs 原始程式碼
+                          href: l2dbform-xaml-cs-source-code.md
     - name: 使用 3D 資產來打造遊戲和應用程式
       href: working-with-3-d-assets-for-games-and-apps.md
       items:

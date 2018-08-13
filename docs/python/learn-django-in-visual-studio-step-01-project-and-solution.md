@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388159"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586572"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -147,7 +147,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>問題：為什麼我要建立虛擬環境？
 
-答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>問題：我要如何移除已認可至原始檔控制的虛擬環境？
 

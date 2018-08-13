@@ -575,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: 用法警告
           href: usage-warnings.md
           items:

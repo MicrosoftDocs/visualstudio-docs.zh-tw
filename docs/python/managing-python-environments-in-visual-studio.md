@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341865"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586571"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -46,7 +46,7 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 由於安裝到全域環境中的套件可供使用該環境的所有專案使用，因此當兩個專案所需的套件不相容，或所需的是相同套件的不同版本時，就可能發生衝突。 虛擬環境會使用全域環境的解譯器和標準程式庫，但是在隔離的資料夾中自行保有套件存放區，藉此避免類似的衝突。
 
-在 Visual Studio 中，您可以針對特定專案建立一個虛擬環境，它會儲存在專案的子資料夾中。 Visual Studio 提供的命令可從虛擬環境產生 *requirements.txt* 檔案，方便您在其他電腦上重新建立環境。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+在 Visual Studio 中，您可以針對特定專案建立一個虛擬環境，它會儲存在專案的子資料夾中。 Visual Studio 提供的命令可從虛擬環境產生 *requirements.txt* 檔案，方便您在其他電腦上重新建立環境。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="conda-environments"></a>Conda 環境
 

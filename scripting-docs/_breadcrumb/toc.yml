@@ -9,13 +9,7 @@
         - name: JavaScript
           tocHref: /scripting/javascript/
           topicHref: /scripting/javascript/javascript-language-reference
-          items:
-            - name: 進階
-              tocHref: /scripting/javascript/advanced/
-              topicHref: /scripting/javascript/advanced/advanced-javascript
-            - name: 參考資料
-              tocHref: /scripting/javascript/reference/
-              topicHref: /scripting/javascript/reference/javascript-reference
+          items: null
         - name: Windows 指令碼介面
           tocHref: /scripting/winscript/
           topicHref: /scripting/winscript/windows-scripting-interfaces
@@ -26,6 +20,3 @@
         - name: JavaScript 執行階段裝載
           tocHref: /scripting/chakra-hosting/
           topicHref: /scripting/chakra-hosting/javascript-runtime-hosting
-        - name: Windows 執行階段
-          tocHref: /scripting/jswinrt/
-          topicHref: /scripting/jswinrt/using-the-windows-runtime-in-javascript

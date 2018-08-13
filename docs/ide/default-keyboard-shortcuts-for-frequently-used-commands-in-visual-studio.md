@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917995"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512544"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 
@@ -40,7 +40,7 @@ ms.locfileid: "31917995"
 |Debug.BreakAll|**Ctrl+Alt+Break** [全域]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [全域]|
 |Debug.Exceptions|**Ctrl+Alt+E** [全域]|
-|Debug.QuickWatch|**Ctrl+Alt+Q** [全域]<br /><br /> 或 **Shift+F9** [全域]|
+|Debug.QuickWatch|**Ctrl+Alt+Q** [全域]<br /><br /> 或**Shift+F9** [全域]|
 |Debug.Restart|**Ctrl+Shift+F5** [全域]|
 |Debug.RunToCursor|**Ctrl+F10** [全域]|
 |Debug.SetNextStatement|**Ctrl+Shift+F10** [全域]|
@@ -57,11 +57,11 @@ ms.locfileid: "31917995"
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**Enter** [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br /> 或 **Shift+Enter** [文字編輯器]|
-|Edit.CollapsetoDefinitions|**Ctrl+M**、**Ctrl+O** [文字編輯器]|
+|Edit.CollapseToDefinitions|**Ctrl+M**、**Ctrl+O** [文字編輯器]|
 |Edit.CommentSelection|**Ctrl+K**、**Ctrl+C** [文字編輯器]|
 |Edit.CompleteWord|**Alt+向右鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+空格鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+K**、**W** [工作流程設計工具]<br /><br /> 或 **Ctrl+K、Ctrl+W** [工作流程設計工具]|
 |Edit.Copy|**Ctrl+C** [全域]<br /><br /> 或 **Ctrl+Insert** [全域]|
-|Edit.Cut|**Ctrl+X** [全域]<br /><br /> 或 **Shift+Delete** [全域]|
+|Edit.Cut|**Ctrl+X** [全域]<br /><br /> 或**Shift+Delete** [全域]|
 |Edit.Delete|**Delete** [全域、Team Explorer]<br /><br /> 或 **Shift+Delete** [循序圖、UML 活動圖、分層圖]<br /><br /> 或 **Ctrl+Delete** [類別圖表]|
 |Edit.Find|**Ctrl+F** [全域]|
 |Edit.FindAllReferences|**Shift+F12** [全域]|
@@ -84,7 +84,7 @@ ms.locfileid: "31917995"
 |Edit.NavigateTo|**Ctrl+,** [全域]|
 |Edit.OpenFile|**Ctrl+Shift+G** [全域]|
 |Edit.OvertypeMode|**Insert** [文字編輯器]|
-|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br /> 或 **Ctrl+K、P** [工作流程設計工具]|
+|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或**Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br /> 或**Ctrl+K、P** [工作流程設計工具]|
 |Edit.Paste|**Ctrl+V** [全域]<br /><br /> 或 **Shift+Insert** [全域]|
 |Edit.PeekDefinition|**Alt+F12** [文字編輯器]|
 |Edit.Redo|**Ctrl+Y** [全域]<br /><br /> 或 **Shift+Alt+退格鍵** [全域]<br /><br /> 或 **Ctrl+Shift+Z** [全域]|
