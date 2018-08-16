@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586543"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638709"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -88,7 +88,7 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 
 在 [偵錯] 群組中：
 
-- **搜尋路徑**、**指令碼引數**、**解譯器引數**和**解譯器路徑**：這些選項與[一般偵錯](debugging-python-in-visual-studio.md)所使用的相同
+- **搜尋路徑**、**指令碼引數**、**解譯器引數**及**解譯器路徑**：這些選項與[標準偵錯](debugging-python-in-visual-studio.md)的選項相同。
 - **啟動 URL**：指定在瀏覽器中開啟的 URL。 預設值為 `localhost`。
 - **連接埠號碼**：在未於 URL 中指定連接埠的情況下，要使用的連接埠 (Visual Studio 預設會自動選取一個)。 此設定可讓您覆寫 `SERVER_PORT` 環境變數的預設值，該預設值是範本用來設定本機偵錯伺服器要接聽的連接埠。
 

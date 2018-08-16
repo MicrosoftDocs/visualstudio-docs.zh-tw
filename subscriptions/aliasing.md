@@ -9,12 +9,12 @@ description: 登入可能會因為使用別名或易記名稱而失敗
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327059"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637678"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -50,11 +50,14 @@ ms.locfileid: "36327059"
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
 2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
 
-    ![[訂用帳戶] 功能表](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
 
-    ![選取合約](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![選取合約](_img/vlsc/vlsc-agreement.png)
 
 4. 按一下 [指派訂用帳戶]。
 5. 選取想要的 [訂用帳戶層級]。

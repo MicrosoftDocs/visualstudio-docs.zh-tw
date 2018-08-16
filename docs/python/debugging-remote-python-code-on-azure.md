@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341783"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008615"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>對 Azure 上的 Python 程式碼進行遠端偵錯
 
@@ -48,7 +48,7 @@ Visual Studio 可能會直接提供您一連串的指示來直接附加，如以
 
 ![判斷 Azure App Service 中的偵錯工具端點](media/azure-remote-debugging-secret.png)
 
-您現在需要的 URL 為以下格式：`wss://<secret>@<site_name>.azurewebsites.net/ptvsd`，您要以特定的值取代字串中的 &lt;secret&gt; 和 &lt;site_name&gt;。
+現在，您的 URL 格式必須是 `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`，其中的 &lt;secret&gt; 與 &lt;site_name&gt; 必須以您所指定的值取代。
 
 若要附加偵錯工具，請選取 [偵錯] > [附加至處理序]，選取 [傳輸] 下拉式清單中的 [Python 遠端偵錯]，在 [限定詞文字方塊] 中輸入該 URL，然後按 **Enter** 鍵。 如果 Visual Studio 可以成功連線至 App Service，它會在清單中顯示一個 Python 處理序。 依序選取該處理序、[附加 (Attach)] 以開始偵錯︰
 

@@ -9,12 +9,12 @@ description: 了解訂用帳戶系統管理員的責任。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862994"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638094"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
 身為系統管理員，您可以管理組織的訂用帳戶。  系統管理員角色也有責任確保訂用帳戶根據授權條款進行管理。 本文章概述系統管理員角色的責任、權益和限制。
@@ -64,6 +64,7 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 
 ## <a name="track-user-assignment-and-process-orders"></a>追蹤使用者指派和處理訂單
 Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Microsoft 產品和服務合約中所述的時間表，追蹤 Visual Studio 使用量，並處理任何使用量增加而產生的訂單。 新的 Visual Studio 訂用帳戶系統管理入口網站提供可顯示可用和已使用之授權的實用追蹤器，進而簡化了此作業。
+
 ### <a name="high-water-mark-of-usage"></a>使用量的上限標準
 **在下列情況下，貴公司購買 Visual Studio 訂用帳戶的義務會立即生效：**
 - 已將授權指派給使用者。

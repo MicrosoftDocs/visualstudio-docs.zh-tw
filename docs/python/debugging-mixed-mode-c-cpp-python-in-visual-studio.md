@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 899720242910b97bf4ffd9fc4a847b6902b7574a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341731"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008430"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -77,7 +77,7 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 針對所有舊版的 Visual Studio，只能在於 Visual Studio 中啟動 Python 專案時啟用直接混合模式偵錯，因為 C/C++ 專案只能使用原生偵錯工具。 不過，您可以分別附加偵錯工具：
 
-1. 啟動 C++ 專案但不進行偵錯 ([偵錯] > [啟動但不偵錯] 或 **Ctrl**+**F5**)。
+1. 啟動 C++ 專案，但不執行偵錯 ([偵錯]  >  [啟動但不偵錯] 或按 **Ctrl**+**F5**)。
 1. 選取 [偵錯] > [附加至處理序]。 在出現的對話方塊中，選取適當的處理序，然後使用 [選取] 按鈕來開啟 [選取程式碼類型] 對話方塊，在其中您可以選取 [Python]：
 
     ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)

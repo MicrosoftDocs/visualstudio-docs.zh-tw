@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3358d23c7c4f3fd2ad7f6beffb6a035b6c810d38
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747974"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008238"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
+
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：
 
 -   在 <xref:System.Collections.Generic.List%601> 物件中儲存物件 (例如圖示)。
@@ -31,18 +32,18 @@ ms.locfileid: "34747974"
 
 -   讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。
 
- 當您完成此教學課程時，您的程式看起來類似下列圖片。
+當您完成此教學課程時，您的程式看起來類似下圖所示：
 
- ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png) 您在本教學課程中建立的遊戲
+![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
- 若要下載這個範例的完整版，請參閱[完整的配對遊戲教學課程範例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) \(英文\)。
+若要下載這個範例的完整版，請參閱[完整的配對遊戲教學課程範例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) \(英文\)。
 
 > [!NOTE]
->  在本教學課程中，Visual C# 和 Visual Basic 都會涵蓋在內，所以請將焦點放在您正在使用的程式語言專屬資訊。
+> 在本教學課程中，Visual C# 和 Visual Basic 都會涵蓋在內，所以請將焦點放在您正在使用的程式語言專屬資訊。
 
- 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 此外，其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 若要深入了解 Visual C# 中的程式設計，請參閱 [Visual C# 基礎：徹底初學者開發](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) \(英文\)。
+如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 此外，其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 若要深入了解 Visual C# 中的程式設計，請參閱 [Visual C# 基礎：徹底初學者開發](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) \(英文\)。
 
 ## <a name="related-topics"></a>相關主題
 

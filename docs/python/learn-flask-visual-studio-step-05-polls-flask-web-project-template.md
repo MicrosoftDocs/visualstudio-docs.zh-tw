@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388289"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637613"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -24,7 +24,7 @@ ms.locfileid: "39388289"
 
 在了解 Visual Studio 的「Flask Web 專案」範本之後，您現在可以研究一下第三個 Flask 範本「投票 Flask Web 專案」，此專案以相同的程式碼基底為基礎。
 
-在這個步驟中，您將了解如何：
+您可以由此步驟學習到如何：
 
 > [!div class="checklist"]
 > - 從範本建立專案並將資料庫初始化 (步驟 5-1)
@@ -40,7 +40,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Flask Web 專案] 範本，將專案命名為 "FlaskPolls"，然後選取 [確定]。
 
-1. 與 Visual Studio 中的其他專案範本一樣，「投票 Flask Web 專案」範本也包含一個 *requirements.txt* 檔案，Visual Studio 提示會詢問您要將這些相依性安裝到何處。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。 (此範本除了需要 azure-storage 和 pymongo 套件之外，也需要 Flask；「投票 Flask/Jade Web 專案」還需要 pyjade)。
+1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值  (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
 
 1. 將 **FlaskPolls** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管] 中該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 

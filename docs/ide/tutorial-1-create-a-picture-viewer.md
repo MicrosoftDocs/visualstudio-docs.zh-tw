@@ -11,15 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7051997550709790d2c12f8f8f9332f67fe6abd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748123"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008677"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
-在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 您也會開始撰寫程式碼。 您將學習如何：
+
+在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將學習如何使用 **Windows Form 設計工具**拖曳表單上的控制項 (例如按鈕與圖片方塊)、設定其屬性，以及如何使用容器順暢地調整表單大小。 您也會開始撰寫程式碼。 您將學習如何：
 
 -   建立新的專案。
 
@@ -35,22 +36,22 @@ ms.locfileid: "34748123"
 
 -   撰寫事件處理常式方法。
 
- 完成時，您的程式看起來類似下列圖片。
+完成後的程式類似下圖所示：
 
- ![您在本教學課程中建立的圖片](../ide/media/express_pictureviewerdone.png) 您在本教學課程中建立的圖片
+![您在本教學課程中建立的圖片](../ide/media/express_pictureviewerdone.png)
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
- 若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。
+若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[如何：使用 Visual Basic 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何：使用 C# 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。
+![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[如何：使用 Visual Basic 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何：使用 C# 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。
 
 > [!NOTE]
->  這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
+> 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
 >
->  若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。
+> 若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。
 >
->  如果您想了解如何撰寫 Visual C# 或 Visual Basic UWP 應用程式，請參閱[建置 UWP 應用程式](https://developer.microsoft.com/windows/apps)。
+> 如果您想了解如何撰寫 Visual C# 或 Visual Basic UWP 應用程式，請參閱[建置 UWP 應用程式](https://developer.microsoft.com/windows/apps)。
 
 ## <a name="related-topics"></a>相關主題
 
