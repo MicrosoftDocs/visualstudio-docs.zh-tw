@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749553"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008443"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式
 
@@ -48,7 +48,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 1. 選取 [確定]。
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱[適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。下列項目會在 **方案總管**中出現：
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
 
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../ide/media/exploreide-hellowpfappfiles.png)
 

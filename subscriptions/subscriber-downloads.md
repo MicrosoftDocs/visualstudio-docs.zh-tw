@@ -9,12 +9,12 @@ description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326341"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637733"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -41,26 +41,26 @@ ms.locfileid: "36326341"
 [下載](https://my.visualstudio.com/downloads/featured)頁面只會顯示您的訂用帳戶所包含的下載。  如果您有多個訂用帳戶或方案成員資格，就會顯示您持有的**最高訂用帳戶**的下載，即使您目前使用不同的訂用帳戶檢視。  例如，如果您有 Visual Studio Professional 訂用帳戶和 Visual Studio Dev Essentials 成員資格，它們與同一登入識別碼建立關聯，即使您目前是以 Dev Essentials 權益檢視，顯示的下載項目也會是 Professional 層級訂用帳戶所包含的項目。
 
 當您瀏覽[下載](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)頁面時，您會看到依產品類型分組陳列的熱門下載。  您可以選取顯示的其中一項熱門下載，或使用頁面頂端的搜尋列搜尋任何產品。
-
-![訂閱者下載頁面](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![訂閱者下載頁面](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 例如，如果您從 [開發人員工具] 清單中選擇 **Visual Studio 2017**，就會看到可用的 Visual Studio 2017 下載清單。
-
-![Visual Studio 2017 下載](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 下載](_img\subscriber-downloads\vs2017-new-UI.png)
 
 您可以使用所提供的下拉式功能表，輕鬆地選取您的架構、語言和檔案類型。 選擇您慣用的選項，然後按一下 [下載] 開始下載產品。
 
 ### <a name="displaying-download-details"></a>顯示下載詳細資料
 
 按一下產品名稱或 [資訊] 連結即會顯示該下載的詳細資料，並可存取產品的版本資訊。
-
-![Visual Studio 2017 Pro 下載詳細資料](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 下載詳細資料](_img\subscriber-downloads\vs2017-pro-details.png)
 
 在詳細資料窗格中，您也可以按一下 [金鑰] 索引標籤來查看產品金鑰的狀態。
-
-![Visual Studio 2017 Pro 產品金鑰](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 產品金鑰](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>取得產品金鑰
 若要取得用於下載的產品金鑰，您可以按一下標示為 [Get Key (取得金鑰)] 的藍色金鑰；如果您已在檢視詳細資料窗格，請在 [金鑰] 索引標籤上按一下 [Claim key (索取金鑰)]。
-
-![Visual Studio 2017 Pro 索取產品金鑰](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 索取產品金鑰](_img\subscriber-downloads\vs2017-pro-claim-keys.png)

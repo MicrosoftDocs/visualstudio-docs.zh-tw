@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512079"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639428"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 Python
 
@@ -36,7 +36,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
 ## <a name="step-1-create-a-new-python-project"></a>步驟 1：建立新的 Python 專案
 
-「專案」是 Visual Studio 如何管理合併使用以產生單一應用程式的所有檔案 (包含原始程式碼、資源、組態等等)。 專案會正式制定並維護所有專案檔案之間的關聯性，以及多個專案之間共用的外部資源之間的關聯性。 因此，專案可讓您應用程式的展開和成長比只管理特定資料夾、指令碼、文字檔甚至您自己的考量中的專案關聯性更為簡單。
+「專案」是 Visual Studio 如何管理合併使用以產生單一應用程式的所有檔案 (包含原始程式碼、資源、組態等等)。 專案會正式制定並維護所有專案檔案之間的關聯性，以及多個專案之間共用的外部資源之間的關聯性。 因此，相較於過去只在特定資料夾、指令碼、文字檔中管理專案的關聯性，專案讓應用程式的擴充及成長變得更為容易，在心情上更為輕鬆。
 
 在本教學課程中，您會從包含單一空白程式碼檔案的簡單專案開始。
 

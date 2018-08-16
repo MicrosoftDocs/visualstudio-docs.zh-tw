@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b190e43be87f5436741106eb1df8884f37322a00
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152597"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637652"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 工作
 判斷相依於指定組件的所有組件 (包含第二階與第 `n` 階的相依)。  
@@ -63,7 +63,7 @@ ms.locfileid: "39152597"
 |`LatestTargetFrameworkDirectories`|選擇性的 `String[]` 參數。<br /><br /> 指定目錄的清單，這些目錄包含電腦上可作為目標之最新版架構的可轉散發清單。 若未設定，則會使用為指定的目標架構識別碼而安裝在電腦上的最高架構。|  
 |`ProfileName`|選擇性的 `String` 參數。<br /><br /> -   指定要作為目標之 Framework 設定檔的名稱。 例如，用戶端、Web 或網路。|  
 |`RelatedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 包含相關的檔案，例如具有相同基底名稱作為參考的 XML 和 *.pdb* 檔案。<br /><br /> 這個參數中列出的檔案可選擇性包含下列項目中繼資料：<br /><br /> -   `Primary`： `Boolean` 值。 如果為 `true`，則會使用 `Assemblies` 參數。 預設值為 `false`。<br />-   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。|  
-|`ResolvedDependencyFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 包含相依性的第 *n*階路徑。 此參數不包括第一順序主要參考，其包含在 `ResolvedFiles` 參數中。<br /><br /> 這個參數中的項目可選擇性包含下列項目中繼資料：<br /><br /> -   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。<br />-   `FusionName`： `String` 值。 指定此相依性的名稱。<br />-   `ResolvedFrom`： `String` 值。 SpecAssemblyFoldersBaseifies 是此檔案從該處解析的常值搜尋路徑。|  
+|`ResolvedDependencyFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 包含相依性的第 *n*階路徑。 此參數不包括第一順序主要參考，其包含在 `ResolvedFiles` 參數中。<br /><br /> 這個參數中的項目可選擇性包含下列項目中繼資料：<br /><br /> -   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。<br />-   `FusionName`： `String` 值。 指定此相依性的名稱。<br />-   `ResolvedFrom`： `String` 值。 指定解析此檔案的來源常值搜尋路徑。|  
 |`ResolvedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 包含所有解析為完整路徑的主要參考清單。<br /><br /> 這個參數中的項目可選擇性包含下列項目中繼資料：<br /><br /> -   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。<br />-   `FusionName`： `String` 值。 指定此相依性的名稱。<br />-   `ResolvedFrom`： `String` 值。 指定解析此檔案的來源常值搜尋路徑。|  
 |`SatelliteFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 指定找到的任何附屬檔案。 如果讓此項目可以存在的參考或相依性為 CopyLocal = true，則這些檔案會是 CopyLocal = true。<br /><br /> 這個參數中的項目可選擇性包含下列項目中繼資料：<br /><br /> -   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。 如果讓此項目可以存在的參考或相依性具有值為 `true` 的 `CopyLocal` ，則此值為 `true`。<br />-   `DestinationSubDirectory`： `String` 值。 指定要將此項目複製到其中的相對目的地目錄。|  
 |`ScatterFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 包含與其中一個指定之組件相關聯的散佈檔案。<br /><br /> 這個參數中的項目可選擇性包含下列項目中繼資料：<br /><br /> -   `CopyLocal`： `Boolean` 值。 表示是否將指定的參考複製到輸出目錄中。|  

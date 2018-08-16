@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341593"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008664"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
@@ -45,41 +45,41 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 類別定義選項 | 已核取 | 已清除 |
 | --- | --- | --- | 
-| 在類別宣告的名稱與基底清單之間插入空格 | `class X (object): pass` | `class X(object): pass` | 
-| 在基底清單括號內插入空格 | `class X( object ): pass` | `class X(object): pass` |
-| 在空白基底清單括號內插入空格 | `class X( ): pass` | `class X(): pass` |
+| **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` | 
+| **在基底清單括號內插入空格** | `class X( object ): pass` | `class X(object): pass` |
+| **在空白基底清單括號內插入空格** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | 函式定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在函式宣告的名稱和參數清單之間插入空格 | `def X (): pass` | `def X(): pass` | 
-| 在參數清單括號內插入空格 | `def X( a, b ): pass` | `def X(a, b): pass` |
-| 在空白的參數清單括號內插入空格 | `def X( ): pass` | `def X(): pass` |
-| 在預設參數值的 '=' 前後插入空格 | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| 在傳回註解運算子前後插入空格 | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` | 
+| **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **在空白的參數清單括號內插入空格** | `def X( ): pass` | `def X(): pass` |
+| **在預設參數值的 '=' 前後插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **在傳回註解運算子前後插入空格** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | 運算子選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在二元運算子前後插入空格 | `a + b` | `a+b` |
-| 在指派前後插入空格 | `a = b` | `a=b` |
+| **在二元運算子前後插入空格** | `a + b` | `a+b` |
+| **在指派前後插入空格** | `a = b` | `a=b` |
 
 <br/>
 
 | 運算式間距選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在函式呼叫的名稱和引數清單之間插入空格 | `X ()` | `X()` |
-| 在空的引數清單括號內插入空格 | `X( )` | `X()` |
-| 在引數清單括號內插入空格 | `X( a, b )` | `X(a, b)` |
-| 在運算式的括號內插入空格 | `( a )` | `(a)` |
-| 在空白元組括號內插入空格 | `( )` | `()` |
-| 在元組括號內插入空格 | `( a, b )` | `(a, b)` |
-| 在空的方括號中插入空格 | `[ ]` | `[]` |
-| 在清單的方括號內插入空格 | `[ a, b ]` | `[a, b]` |
-| 在左方括號前面插入空格 | `x [i]` | `x[i]` |
-| 在方括號中插入空格 | `x[ i ]` | `x[i]` |
+| **在函式呼叫的名稱與引數清單之間插入空格** | `X ()` | `X()` |
+| **在空白引數清單括號內插入空格** | `X( )` | `X()` |
+| **在引數清單括號內插入空格** | `X( a, b )` | `X(a, b)` |
+| **在運算式的括號內插入空格** | `( a )` | `(a)` |
+| **在空白元組括號內插入空格** | `( )` | `()` |
+| **在元組括號內插入空格** | `( a, b )` | `(a, b)` |
+| **在空白方括號中插入空格** | `[ ]` | `[]` |
+| **在清單的方括號內插入空格** | `[ a, b ]` | `[a, b]` |
+| **在左方括號前插入空格** | `x [i]` | `x[i]` |
+| **在方括號內插入空格** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
-| 將匯入的模組放在新行 | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| 移除不必要的分號 | `x = 42;` | `x = 42` |
-| 將多個陳述式放在新行 | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **將匯入的模組置於新行** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **移除不必要的分號** | `x = 42;` | `x = 42` |
+| **將多個陳述式置於新行** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>換行
 

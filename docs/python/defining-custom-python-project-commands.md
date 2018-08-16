@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341260"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008319"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
-在使用 Python 專案的過程中，您可能發現常常需要切換到命令視窗來執行特定指令碼或模組、PIP 命令或其他任意工具。 若要改善工作流程，您可以在 Python 專案操作功能表的 [Python] 子功能表新增自訂命令。 這些命令可以在主控台視窗或 Visual Studio 輸出視窗中執行。 您也可以使用規則運算式來指示 Visual Studio 如何從命令的輸出剖析錯誤與警告。
+在使用 Python 專案的過程中，您可能發現常常需要切換到命令視窗來執行特定指令碼或模組、PIP 命令或其他任意工具。 若要改善工作流程，您可以在 Python 專案操作功能表的 [Python] 子功能表新增自訂命令。 這些命令可以在主控台視窗或 Visual Studio 的 [輸出] 視窗中執行。 您也可以使用規則運算式來指示 Visual Studio 如何從命令的輸出剖析錯誤與警告。
 
 根據預設，功能表只會包含一個 [執行 PyLint] 命令：
 

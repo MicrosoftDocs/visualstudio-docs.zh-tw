@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388133"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637639"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
@@ -24,10 +24,10 @@ ms.locfileid: "39388133"
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的精簡 Flask 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
-在這個步驟中，您將了解如何：
+您可以由此步驟學習到如何：
 
 > [!div class="checklist"]
-> - 使用 Visual Studio 項目範本，以方便的現成程式碼來快速建立不同類型的新檔案 (步驟 3-1)
+> - 使用 Visual Studio 項目範本，為可重複使用的程式碼 (步驟 3-1) 新增不同類型的檔案
 > - 從程式碼提供靜態檔案 (步驟 3-2，選擇性)
 > - 將額外頁面加入應用程式 (步驟 3-3)
 > - 使用範本繼承，以建立跨頁面使用的標題和瀏覽列 (步驟 3-4)
@@ -89,7 +89,7 @@ ms.locfileid: "39388133"
 
 ### <a name="serve-a-static-file-from-code"></a>從程式碼提供靜態檔案
 
-Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼呼叫此函式來參考專案 *static* 資料夾內的任何檔案。 下列程序會建立一個傳回靜態資料檔的簡單 API 端點。
+Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼呼叫此函式來參考專案 *static* 資料夾內的任何檔案。 下列程序會建立一個簡單的 API 端點，傳回靜態資料檔案。
 
 1. 如果您尚未建立 *static* 資料夾，請建立此資料夾：在 [方案總管] 中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
 
@@ -115,7 +115,7 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
 
-回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾中。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
+回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>問題：如何處理 API 中的 URL 變數和查詢參數？
 
@@ -188,7 +188,7 @@ Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範�
 
 在這兩種情況下，`<template_path>` 是相對於應用程式的 *templates* 資料夾 (也允許 `../` 或 `./`)。
 
-基底範本使用 `{% block <block_name> %}` 和 `{% endblock %}` 來描述「區塊」。 如果參考範本接著使用具有相同區塊名稱的標籤，則其區塊內容將覆寫基底範本的區塊內容。
+基底範本使用 `{% block <block_name> %}` 和 `{% endblock %}` 來描述「區塊」。 若之後參考範本再對同一個區塊名稱使用標籤，其區塊內容將會覆寫基底範本的區塊內容。
 
 下列步驟將示範繼承：
 

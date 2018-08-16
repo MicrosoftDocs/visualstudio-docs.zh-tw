@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063722"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638351"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>將方法設為非同步
 
-在方法內使用 `await` 或 `Await` 關鍵字時，方法本身應該會標記 `async` 或 `Async` 關鍵字。  不過，若情況不是這樣，就會顯示快速動作，讓您可以將方法設為非同步。 使用 [快速動作] 功能表的 [將方法/函式設為非同步] 選項。
+在方法內使用 `await` 或 `Await` 關鍵字時，方法本身應該會標記 `async` 或 `Async` 關鍵字。  但情況若非如此，將會顯示快速動作，讓您可以將方法設為非同步。 使用 [快速動作] 功能表的 [將方法/函式設為非同步] 選項。
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>移除不必要的 using/Import
 
-**移除不必要的 using/Import** 快速動作將會移除目前檔案中任何未使用的 `using` 和 `Import` 陳述式。  當您選取此項目時，將會立即移除未使用的命名空間匯入。
+**移除不必要的 Using/Import** 快速動作會移除目前檔案中，所有未使用的 `using` 及 `Import` 陳述式。  當您選取此項目時，將會移除未使用的命名空間匯入。
 
 |  適用語言 |  支援版本 |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ End Function
 
 ### <a name="remove-unnecessary-cast"></a>移除不必要的 Cast
 
-如果您將類型轉型為不需要轉型的另一種類型，**移除不必要的 Cast** 快速動作項目將會移除您程式碼中的 Cast。
+若將類型轉型成不需 Cast 的另一種類型，**移除不必要的 Cast** 快速動作項目將會移除不必要的 Cast。
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>使用推斷名稱
 
-這些快速動作會指出使用者何時可在匿名型別中使用推斷成員名稱或 C# 7.1 的推斷元組項目名稱。
+此快速動作會指出程式碼何時可以簡化成只在匿名類型中使用推斷的成員名稱，或在元組中使用推斷的的項目名稱。
 
 ```csharp
 // Before
@@ -897,7 +897,7 @@ var tuple = (age, name);
 
 ### <a name="deconstruct-tuple-declaration"></a>解構元組宣告
 
-這個快速動作可讓您解構元組變數宣告。
+此快速動作可解構元組變數宣告。
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>將方法設為同步
 
-在方法上使用 `async` 或 `Async` 關鍵字時，在該方法中的某處也應該要使用 `await` 或 `Await` 關鍵字。  若並非如此，就會顯示快速動作，讓您可以移除 `async` 或 `Async` 關鍵字和變更傳回型別，以便將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步] 選項。
+當在方法中使用 `async` 或 `Async` 關鍵字時，也同時會在該方法中使用 `await` 或 `Await` 關鍵字。  但情況若非如此，將會顯示快速動作，讓您可以藉由移除 `async` 或 `Async` 關鍵字及變更傳回型別的方式，將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步] 選項。
 
 ```csharp
 // Before

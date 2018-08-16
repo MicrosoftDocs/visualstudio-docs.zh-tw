@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512812"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636820"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
@@ -37,7 +37,7 @@ ms.locfileid: "39512812"
 1. 在 [本機 Git 存放庫] 下，選取 [複製] 命令，然後在 URL 欄位中輸入 `https://github.com/gregmalcolm/python_koans`，輸入所複製檔案的資料夾，然後選取 [複製] 按鈕。
 
     > [!Tip]
-    > 您在 Team Explorer 中指定的資料夾是和用來接收所複製檔案之資料夾完全相同的資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用存放庫的名稱來建立子資料夾。
+    > 您在 **Team Explorer** 中指定的資料夾，就是用以接收複製檔案的資料夾。 這與 `git clone` 命令不同，不會在 **Team Explorer** 中建立複製品時，自動使用存放庫名稱建立子資料夾。
 
 1. 當複製完成時，存放庫名稱就會出現在 [本機 Git 存放庫] 清單中。 按兩下該名稱，即可瀏覽至 **Team Explorer** 中的存放庫儀表板。
 

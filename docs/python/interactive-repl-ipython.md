@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341503"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008212"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
@@ -81,7 +81,7 @@ IPython 模式的 Visual Studio [互動式] 視窗，是個進階但容易使用
 
 IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](http://ipython.org/documentation.html)。
 
-## <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另請參閱
 
 - 若要輕鬆使用 Jupyter，且不需安裝，請嘗試免費的 [Azure Notebooks 託管服務](https://notebooks.azure.com/)，可讓您保留並與其他人共用您的筆記。
 
