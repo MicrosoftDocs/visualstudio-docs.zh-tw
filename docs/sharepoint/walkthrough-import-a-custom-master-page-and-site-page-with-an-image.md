@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3fb68b4a84c6771c9430f2e8974ee485462b8563
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ea327f48bb1a1b04aa4b20601b8bdb3f7dfbb847
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945841"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634676"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說： 匯入自訂主版頁面和網站頁面的映像
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面及擁有影像的網站頁面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -39,7 +39,7 @@ ms.locfileid: "37945841"
 ## <a name="prerequisites"></a>必要條件  
  您必須擁有下列元件，才能完成此逐步解說：  
   
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。  
   
 -   Visual Studio。  
   

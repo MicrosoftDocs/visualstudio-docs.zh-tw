@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327316"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634718"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供可協助您建立自訂工作流程，管理文件和 SharePoint 網站的清單項目生命週期的工具。 提供的項目包括設計工具、一組活動控制項，以及必要的組件參考。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也包含**SharePoint 自訂精靈**協助建立及設定工作流程。
 
- 如需建立 SharePoint 專案中的必要條件清單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，請參閱 <<c2> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 如需有關 SharePoint 的詳細資訊，請參閱 < [Microsoft SharePoint 產品和技術](http://go.microsoft.com/fwlink/?LinkId=178470)。
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供可協助您建立自訂工作流程，管理文件和 SharePoint 網站的清單項目生命週期的工具。 提供的項目包括設計工具、一組活動控制項，以及必要的組件參考。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也包含**SharePoint 自訂精靈**協助建立及設定工作流程。
+
+如需有關 SharePoint 的詳細資訊，請參閱 < [Microsoft SharePoint 產品和技術](http://go.microsoft.com/fwlink/?LinkId=178470)。
 
 ## <a name="workflows-in-sharepoint"></a>在 SharePoint 中的工作流程
  當您新增至 SharePoint 文件庫或清單的工作流程時，您就會強制執行商務程序的程式庫或清單中的所有項目上。 工作流程會描述系統或使用者則必須在每個項目，例如傳送要編輯，然後檢閱的項目執行的動作。 這些動作，稱為*活動*，是工作流程的建置組塊。

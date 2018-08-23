@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468724"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623762"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 進行偵錯
 
@@ -31,7 +31,7 @@ ms.locfileid: "39468724"
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
 
-雖然示範應用程式是 C# 和 c + + 的功能都適用於 Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面是在 C#。
+雖然示範應用程式是 C# 和 c + + 的功能都適用於 Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面是在 C#。 若要 C# 和 c + + 範例程式碼之間切換，請使用頁面的右上角的語言篩選條件。
 
 在本教學課程中，您將進行下列作業：
 

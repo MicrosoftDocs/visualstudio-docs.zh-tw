@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aee7c1bf7a7a8d71d02da7bab270c4df1a4a52ab
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118638"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635022"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說： 建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。  
@@ -45,7 +45,7 @@ ms.locfileid: "37118638"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Windows、 SharePoint 和 Visual Studio 版本。
   
 -   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**建立 VSIX 封裝，來部署擴充功能 SDK 中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   

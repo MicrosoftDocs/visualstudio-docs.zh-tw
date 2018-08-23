@@ -1,5 +1,5 @@
 ---
-title: CA3147： 標記 ValidateAntiForgeryToken 動詞命令處理常式
+title: CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008694"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623740"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147： 標記 ValidateAntiForgeryToken 動詞命令處理常式
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40008694"
 
 ## <a name="cause"></a>原因
 
-ASP.NET MVC 控制器動作方法不與標示<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>，或指定的 HTTP 指令動詞，例如屬性<xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName>或<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>。
+ASP.NET MVC 控制器動作方法不與標示[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))，或指定的 HTTP 指令動詞，例如屬性[HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118))或[AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -37,17 +37,17 @@ ASP.NET MVC 控制器動作方法不與標示<xref:Microsoft.AspNetCore.Mvc.Vali
 
 此規則會檢查該 ASP.NET MVC 控制器動作方法可能是：
 
-- 有<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute>並指定允許的 HTTP 動詞命令，不包括 HTTP GET。
+- 已[ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29)並指定允許的 HTTP 動詞命令，不包括 HTTP GET。
 
 - 指定 HTTP GET 為允許的動詞命令。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 適用於 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並不會有潛在危險的副作用，新增<xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute>方法。
+- 適用於 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並不會有潛在危險的副作用，新增[HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29)方法。
 
    如果您有 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並具有例如修改機密資料可能會造成損害的副作用，您的應用程式是容易遭受跨網站偽造要求攻擊。  您必須重新設計應用程式，因此只有 HTTP POST、 PUT 或 DELETE 要求執行敏感性作業。
 
-- 適用於 ASP.NET MVC 控制器動作處理 HTTP POST、 PUT 或 DELETE 要求，新增<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute>並指定允許的 HTTP 動詞命令的屬性 (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>， <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>， <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>，或<xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>)。 此外，您需要呼叫<xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType>從您的 MVC 檢視或 Razor 網頁。 如需範例，請參閱[檢查編輯方法與編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
+- 適用於 ASP.NET MVC 控制器動作處理 HTTP POST、 PUT 或 DELETE 要求，新增[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))並指定允許的 HTTP 動詞命令的屬性 ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29))。 此外，您必須呼叫[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29)從您的 MVC 檢視或 Razor 網頁的方法。 如需範例，請參閱[檢查編輯方法與編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

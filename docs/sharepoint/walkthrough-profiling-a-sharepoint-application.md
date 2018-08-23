@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c52fdfd2a4598c63073476ae6b0ce3ee96bd94a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118758"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634702"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說： 剖析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您尋找並消除成本最高 （最慢執行） 專案的一部分，也稱為*最忙碌路徑*。  
@@ -43,7 +43,7 @@ ms.locfileid: "37118758"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Microsoft Windows 和 SharePoint 版本。
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   

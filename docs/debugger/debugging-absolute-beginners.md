@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131865"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623711"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>如何偵錯適用於徹底初學者
 
@@ -25,7 +25,7 @@ ms.locfileid: "39131865"
 
 偵錯工具中，不幸的是，不可以在我們的程式碼中神奇地顯示所有問題或是"bug"的項目。 *偵錯*方法來執行您的程式碼逐步偵錯工具在像是 Visual Studio 中，若要尋找您所做的程式設計錯誤的精確點。 然後了解您需要在您的程式碼中進行哪些修正及偵錯工具通常可讓您進行因應暫時變更，因此您可以繼續執行程式。
 
-有效地使用偵錯工具也會需要時間和深入了解，練習的技能，不過最後是每位軟體開發人員重要的工作。 在本文中，然後，我們導入的核心原則之一偵錯並提供可協助您開始的秘訣。
+有效地使用偵錯工具，也是需要時間和了解的做法，但終究是重要的工作，每位軟體開發人員的技能。 在本文中，然後，我們導入的核心原則之一偵錯並提供可協助您開始的秘訣。
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>釐清問題，問問自己適當的問題
 
@@ -45,7 +45,7 @@ ms.locfileid: "39131865"
 
 * 您是否使用正確的 API （也就是正確的物件、 函式、 方法或屬性）？ 您使用的 API 可能會執行您認為它。 （您檢查偵錯工具中的 API 呼叫之後，修正它可能需要某趟車程支付的說明文件，以協助找出正確的 API）。
 
-* 您已正確地使用 API 嗎？ 或許您會使用 API 的權限，但並未正確地使用它。
+* 您已正確地使用 API 嗎？ 或許您會使用 API 的權限，但未使用正確的方式。
 
 * 您的程式碼是否包含任何錯字？ 有些打錯字，像是簡單的拼字錯誤的變數名稱，很難看到，尤其是當使用語言並不需要使用這些宣告的變數。
 
@@ -228,7 +228,7 @@ ms.locfileid: "39131865"
 
 1. 按一下 [**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯] 工具列按鈕 (**Ctrl** + **Shift**  +  **F5**)。
 
-    應用程式會在您設定的中斷點暫停。 黃色 hightlighting 表示偵錯工具暫停的地方 （黃色的一行程式碼尚未執行）。
+    應用程式會在您設定的中斷點暫停。 黃色反白顯示表示偵錯工具已暫停的地方 （黃色的一行程式碼尚未執行）。
 
 1. 將滑鼠停留`GalaxyType`變數以扳手圖示左邊，右邊，然後展開`theGalaxy.GalaxyType`。 您會看到`GalaxyType`包含的屬性`MyGType`，且屬性值設定為`Spiral`。
 
@@ -303,7 +303,7 @@ ms.locfileid: "39131865"
 
     您查看程式碼，請參閱中的錯字`case 'l'`陳述式。 它應該是`case 'I'`。
 
-1. 按一下 程式碼中`case 'l'`，並將它取代為 ' case 'I'。
+1. 按一下 程式碼中`case 'l'`並將它取代為`case 'I'`。
 
 1. 移除您的中斷點，然後按一下**重新啟動**按鈕以重新啟動應用程式。
 

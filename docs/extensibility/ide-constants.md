@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498989"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635128"
 ---
 # <a name="ide-constants"></a>IDE 常數
 
@@ -54,30 +54,30 @@ ms.locfileid: "39498989"
 |值|描述|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|傳回非同步行為介面的常數時在該物件中已忙碌|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 」 不相容的文件資料 」。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 無法載入套件 」。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|錯誤的特定 HRESULT[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和，以指出 「 專案已經存在 」。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 專案組態失敗。 」|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 專案未載入。 」|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 方案已經開啟。 」|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 解決方案未開啟。 」|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|錯誤是 Visual Studio 的 「 不相容的文件資料 」 特定的 HRESULT。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|錯誤 HRESULT 的特定 Visual Studio，並指出 「 無法載入套件 」。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|錯誤 HRESULT 的特定 Visual Studio，並指出 「 專案已經存在 」。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|錯誤 HRESULT 專屬於 Visual Studio，並指出 「 專案組態失敗。 」|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|錯誤 HRESULT 的特定 Visual Studio，並指出 「 專案未載入。 」|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|錯誤 HRESULT 的特定 Visual Studio，並指出 「 已開啟解決方案。 」|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|錯誤 HRESULT 專屬於 Visual Studio，並指出 「 無法開啟解決方案。 」|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|傳回由參數指定的陣列，從組建介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput>介面，但在實作僅適用於方法的所有輸出。|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法會傳回此值，如果文件的格式，不能在編輯器中開啟。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|HRESULT 值，指出使用者叫用中的 [上一頁] 按鈕[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]精靈。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|HRESULT 值，指出使用者叫用 Visual Studio 精靈中的 [上一頁] 按鈕。|
 
 ## <a name="visual-studio-constants"></a>Visual Studio 常數
 
 |值|描述|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|錯誤的特定 HRESULT [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，並指出 「 專案轉送 」。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|一個常數，代表特定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"工具箱標記 」。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|常數，旨在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]廣播通知訊息透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>方法表示強制回應性的開頭。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|常數，旨在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]廣播通知訊息透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>表示強制回應性的結尾的方法。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|常數，旨在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]廣播通知訊息透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>指出已變更的命令列計量的方法。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|一個常數，代表特定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]表示尚未設定 cookie。|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|A[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]代表專案項目不存在的項目識別項。 沒有目前的選取項目時，會使用此值。|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]項目識別項，其代表專案階層的根，並可用來識別整個階層中的，而不是單一項目。|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|A[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]表示目前選取的項目或項目，它可以包含階層的根項目識別碼。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|錯誤 HRESULT 的特定 Visual Studio，並指出 「 專案轉送 」。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|常數，它是特定 Visual studio 的 「 工具箱標記 」。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|廣播透過通知訊息是特定 Visual studio 的常數<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>方法表示強制回應性的開頭。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|廣播透過通知訊息是特定 Visual studio 的常數<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>表示強制回應性的結尾的方法。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|廣播透過通知訊息是特定 Visual studio 的常數<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>指出已變更的命令列計量的方法。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|常數，表示未設定 cookie 的 Visual Studio 特定的。|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|代表專案項目不存在的 Visual Studio 項目識別碼。 沒有目前的選取項目時，會使用此值。|
+|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Visual Studio 項目識別項，其代表專案階層的根，並可用來識別整個階層中的，而不是單一項目。|
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Visual Studio 項目識別項，表示目前選取的項目或項目，它可以包含階層的根。|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  描述 IDE 的哪些元件只是已選取，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>呼叫，例如。

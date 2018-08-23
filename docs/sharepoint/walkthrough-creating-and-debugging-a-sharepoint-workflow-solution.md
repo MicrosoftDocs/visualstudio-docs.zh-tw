@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118621"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626484"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說： 建立和偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫，以判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。  
@@ -47,7 +47,7 @@ ms.locfileid: "37118621"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的 Microsoft Windows 和 SharePoint 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Microsoft Windows 和 SharePoint 版本。  
   
 -   Visual Studio。  
   
