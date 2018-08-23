@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118620"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635537"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說： 使用商務資料在 SharePoint 中建立外部清單
 
@@ -49,7 +49,7 @@ ms.locfileid: "37118620"
 
 您需要下列元件才能完成此逐步解說：
 
-- 支援的 Windows 和 SharePoint 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支援的 Windows 和 SharePoint 版本。
 
 - AdventureWorks 範例資料庫的存取。 如需如何安裝 AdventureWorks 資料庫的詳細資訊，請參閱[SQL Server 範例資料庫](http://go.microsoft.com/fwlink/?LinkID=117483)。
 
