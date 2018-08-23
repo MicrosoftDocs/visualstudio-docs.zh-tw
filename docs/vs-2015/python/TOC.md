@@ -1,0 +1,7 @@
+# [Python](getting-started-with-python.md)
+## [PTVS 快速入門：設定 Visual Studio](getting-started-with-ptvs-setting-up-visual-studio.md)
+## [開始使用 PTVS：開始撰寫程式碼 (專案)](getting-started-with-ptvs-start-coding-projects.md)
+## [PTVS 快速入門：編輯程式碼](getting-started-with-ptvs-editing-code.md)
+## [PTVS 快速入門：偵錯](getting-started-with-ptvs-debugging.md)
+## [PTVS 快速入門：互動式 Python](getting-started-with-ptvs-interactive-python.md)
+## [開始使用 PTVS：在 Azure 建置網站](getting-started-with-ptvs-building-a-website-in-azure.md)
