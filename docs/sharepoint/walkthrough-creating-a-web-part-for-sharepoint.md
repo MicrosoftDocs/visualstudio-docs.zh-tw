@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118622"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635404"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說： 建立 SharePoint web 組件
 
@@ -49,7 +49,7 @@ Web 組件會顯示資料格線中的員工。 使用者指定的檔案，其中
 
 ## <a name="prerequisites"></a>必要條件
 
-- 支援的 Microsoft Windows 和 SharePoint 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支援的 Microsoft Windows 和 SharePoint 版本。
 
 - Visual Studio 2017 或版本的 Visual Studio Application Lifecycle Management (ALM)。
 
