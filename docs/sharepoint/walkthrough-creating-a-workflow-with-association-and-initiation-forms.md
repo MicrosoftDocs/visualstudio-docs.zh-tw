@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118775"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635677"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說： 使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 來啟動工作流程時先到 SharePoint 系統管理員 （關聯表單），相關聯的 ASPX 形式。  
@@ -62,7 +62,7 @@ ms.locfileid: "37118775"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。  
   
 -   Visual Studio。  
   
