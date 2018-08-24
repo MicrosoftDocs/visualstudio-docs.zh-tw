@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 文件 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 13b3dbbc5c5307d7a98bfdf9bd8900436daee2b1
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449061"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635180"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -75,6 +75,158 @@ ms.locfileid: "34449061"
     <div class="container">
         <h1>Visual Studio 文件</h1>
         <ul class="pivots">
+            <li>
+                <li>
+                <a href="#get-started">開始使用</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>了解如何使用 Visual Studio</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />開始引導式導覽</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />撰寫和編輯程式碼</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />建置程式碼</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="" />為程式碼偵錯</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />測試程式碼</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="" />在本機或雲端中存取資料</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>開始進行教學課程</h3>
+                                                <h4>選擇程式設計語言</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">                                                    <li>
+                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>趕時間嗎？ 嘗試 5 分鐘快速入門</h3>
+                                                <h4>以您選擇的語言建置 "Hello, World"。</h4>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>或選擇您要開發的項目</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Windows 通用應用程式</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Windows 傳統型應用程式</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="">
+行動應用程式</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="">
+Unity 遊戲</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt="">
+使用 ASP.NET Core 開發 Web 應用程式</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
             <li>
                 <a href="#features">工作</a>
                 <ul id="features">
@@ -285,6 +437,25 @@ ms.locfileid: "34449061"
                                                 <div class="cardText">
                                                     <h3>共同作業</h3>
                                                     <p>在共同作業的即時環境中，共用、編輯和偵錯程式碼。 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>使用容器來開發</h3>
+                                                    <p>使用容器來隔離模組化元件，並改善延展性。</p>
                                                 </div>
                                             </div>
                                         </div>
