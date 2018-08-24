@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235046"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586856"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 
@@ -42,16 +42,17 @@ ms.locfileid: "36235046"
 5.  如果您要測試的程式碼在另一個位置，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)了解加入參考的相關資訊。
 
 ## <a name="next-steps"></a>後續步驟
- **撰寫單元測試**
 
  查看下列其中一個小節：
 
--   [對程式碼進行單元測試](../test/unit-test-your-code.md)
+**撰寫單元測試**
 
--   [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
+- [對程式碼進行單元測試](../test/unit-test-your-code.md)
 
--   [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
- **執行單元測試**
+- [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**執行單元測試**
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)

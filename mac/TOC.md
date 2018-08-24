@@ -21,6 +21,7 @@
 ## [管理專案中的參考](managing-references-in-a-project.md)
 ### [逐步解說 - 包括專案的 NuGet 套件](nuget-walkthrough.md)
 ## [管理應用程式資源](managing-app-resources.md)
+## [如何：開啟多個解決方案或執行個體](open-multiple-solutions.md)
 
 # [原始檔編輯器](source-editor.md)
 ## [重構](refactoring.md)
@@ -61,6 +62,7 @@
 ## [Unity 遊戲開發](unity-tools.md)
 ### [安裝](setup-vsmac-tools-unity.md)
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
+### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [協助工具選項](accessibility.md)
 

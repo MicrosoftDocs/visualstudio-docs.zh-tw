@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac 簡介
 description: 本文介紹 Mac 版 Visual Studio 的功能
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889881"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42625887"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a4a9b99da94ef754906b095f99fa812c7474103
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9e9471d3ddfe61e200bc3aefc3d20ed2013120ce
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117663"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382134"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 
@@ -44,7 +44,7 @@ AppointmentsWebPart 會讓您檢視和管理約會的 SharePoint 清單。
 
 -   `GetAppointmentsForToday` 方法會傳回今天約會的詳細資料。
 
-##  <a name="BKMK_Converting_an_existing_test"></a> 轉換現有測試
+##  <a name="convert-an-existing-test"></a>轉換現有的測試
 
 在 SharePoint 元件中方法的一般測試，此測試方法會在 SharePoint Foundation 中建立暫存網站，並將 SharePoint 元件加入受測程式碼所需的網站。 此測試方法接著會建立該元件的執行個體並加以執行。 在測試結束時，會終止此站台。
 
@@ -155,11 +155,11 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
-當測試方法執行時，此模擬器執行階段會呼叫 Microsoft Fakes，將程式碼動態插入至 SharePoint 方法，藉此將對這些方法的呼叫轉向至 Microsoft.SharePoint.Fakes.dll 中宣告的委派。 Microsoft.SharePoint.Emulators.dll 會實作模擬方法的委派，仔細模仿實際的 SharePoint 行為。 當測試方法或受測元件呼叫 SharePoint 方法時，產生的行為是模擬的行為。
+當測試方法執行時，此模擬器執行階段會呼叫 Microsoft Fakes，將程式碼動態插入至 SharePoint 方法，藉此將對這些方法的呼叫轉向至 *Microsoft.SharePoint.Fakes.dll* 中宣告的委派。 *Microsoft.SharePoint.Emulators.dll* 會實作模擬方法的委派，仔細模仿實際的 SharePoint 行為。 當測試方法或受測元件呼叫 SharePoint 方法時，產生的行為是模擬的行為。
 
 ![模擬器執行流程](../test/media/ut_emulators_flowchart.png)
 
-##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> 建立兩用類別和方法
+##  <a name="create-dual-use-classes-and-methods"></a>建立兩用類別和方法
 
 若要建立方法，同時用於真正 SharePoint 應用程式開發介面的整合測試與使用模擬器的隔離單元測試，請使用多載建構函式 `SharePointEmulationScope(EmulationMode)` 包裝測試方法程式碼。 `EmulationMode` 列舉的兩個值指定此範圍是否使用模擬器 (`EmulationMode.Enabled`) 或者此範圍是否使用 SharePoint 應用程式開發介面 (`EmulationMode.Passthrough`)。
 
@@ -194,7 +194,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
-## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>使用 TestInitialize 和 TestCleanup 屬性建立兩用測試類別
+## <a name="use-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>使用 TestInitialize 和 TestCleanup 屬性建立兩用測試類別
 
 如果您使用 `SharePointEmulationScope` 執行類別中的所有或大部分測試，就可以利用類別層級技術設定模擬模式。
 
@@ -259,7 +259,7 @@ namspace MySPAppTests
 }
 ```
 
-##  <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> 處理非模擬的 SharePoint 方法
+##  <a name="handle-non-emulated-sharepoint-methods"></a>處理非模擬的 SharePoint 方法
 
 並非所有的 SharePoint 類型都是模擬的，而且在某些模擬類型中的方法並非都是模擬的。 如果正在進行測試的程式碼呼叫未模擬的 SharePoint 方法，則此方法會擲回 `NotSupportedException` 例外狀況。 當例外狀況發生時，您要加入此 SharePoint 方法的 Fakes 填充碼。
 
@@ -267,11 +267,11 @@ namspace MySPAppTests
 
 若要明確呼叫 Microsoft Fakes 填充碼：
 
-1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 Microsoft.SharePoint.fakes 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。
+1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 *Microsoft.SharePoint.fakes* 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。
 
      ![方案總管中的 Fakes 資料夾](../test/media/ut_emulators_fakesfilefolder.png)
 
-2.  在您安裝 Microsoft SharePoint 模擬器套件之後，以及如果您編輯了 Microsoft.SharePoint.Fakes 檔案，請重建此測試專案至少一次。 建置此專案會在磁碟上專案根資料夾中建立 **FakesAssembly** 資料夾並予以填入。
+2.  在您安裝 Microsoft SharePoint 模擬器套件之後，以及如果您編輯了 *Microsoft.SharePoint.Fakes* 檔案，請重建此測試專案至少一次。 建置此專案會在磁碟上專案根資料夾中建立 **FakesAssembly** 資料夾並予以填入。
 
      ![FakesAssembly 資料夾](../test/media/ut_emulators_fakesassemblyfolder.png)
 
@@ -347,7 +347,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
 在此方法中，我們先測試模擬是否已啟用。 如果已啟用，則我們會為 `SPList` 清單建立 Fakes 填充碼物件，然後建立方法並將它指派給其 `GetItemsSPQuery` 委派。 此委派會使用 Fakes `Bind` 方法，將正確的清單項目加入傳回給呼叫端的 `ShimSPListItemCollection`。
 
-##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 從頭開始撰寫模擬測試和摘要
+##  <a name="write-emulation-tests-from-scratch-and-a-summary"></a>從頭開始撰寫模擬測試和摘要
 
 雖然先前章節描述的建立模擬和兩用測試的技術假設您要轉換現有的測試，但您也可以使用這些技術從頭開始撰寫測試。 下列清單摘要說明這些技術：
 

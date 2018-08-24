@@ -1,5 +1,5 @@
 ---
-title: VSIX 語言套件 2.0 結構描述參考 |Microsoft 文件
+title: VSIX 語言套件結構描述 2.0 參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/26/2017
 ms.technology:
@@ -16,39 +16,39 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139649"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586218"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件 2.0 結構描述參考
+# <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件結構描述 2.0 參考
 
-VSIX 語言組件的結構描述提供 VSIX 套件的當地語系化的安裝的資訊。 此結構描述的 2.0 版支援額外的當地語系化項目。
+VSIX 語言套件結構描述會提供 VSIX 封裝當地語系化的安裝資訊。 此結構描述的 2.0 版支援其他當地語系化的項目。
 
-## <a name="language-pack-schema"></a>語言組件的結構描述
+## <a name="language-pack-schema"></a>語言套件結構描述
 
-語言組件檔案的根項目是`<PackageLanguagePackManifest>`，使用的屬性`Version`，這是語言組件格式的版本。 本主題描述的語言組件格式，藉由設定資訊清單中指定的 2.0 版`Version`屬性的值`Version="2.0.0"`。 根項目包含一個子`<Metadata>`項目。
+語言組件檔案的根項目是`<PackageLanguagePackManifest>`，屬性為`Version`，這是語言組件格式的版本。 這篇文章描述的語言組件格式，藉由設定資訊清單中所指定的 2.0 版`Version`屬性的值`Version="2.0.0"`。 根項目包含一個子`<Metadata>`項目。
 
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 項目
 
-內`<PackageLanguagePackManifest>`項目必須存在下列項目：
+內`<PackageLanguagePackManifest>`下列項目必須存在的項目：
 |標題|描述|
 |-----------|-----------------|
-|`<Metadata>`| 所有當地語系化的封裝中繼資料包含的項目
+|`<Metadata>`| 所有當地語系化的套件中繼資料包含的項目
 
 ### <a name="metadata-element"></a>中繼資料元素
 
-內`<Metadata>`元素可以具有下列元素：
+內`<Metadata>`項目可以有下列項目：
 |標題|描述|
 |-----------|-----------------|
-|`<DisplayName>`|安裝擴充功能的當地語系化的名稱|
-|`<Description>`|若要安裝擴充功能的當地語系化的說明|
-|`<License>`| 擴充功能的授權的當地語系化版本的路徑|
-|`<MoreInfo>`| 當地語系化延伸模組的相關資訊的連結|
+|`<DisplayName>`|安裝延伸模組的當地語系化的名稱|
+|`<Description>`|安裝延伸模組的當地語系化的描述|
+|`<License>`| 延伸模組授權的當地語系化版本的路徑|
+|`<MoreInfo>`| 有關擴充功能的當地語系化資訊的連結|
 |`<ReleaseNotes>`| 路徑或通往當地語系化版本的版本資訊|
-|`<Icon>`| 當地語系化版本的擴充功能圖示的路徑|
+|`<Icon>`| 當地語系化版本的擴充功能圖示路徑|
 
 ### <a name="sample-manifest"></a>範例資訊清單
 
@@ -71,5 +71,5 @@ VSIX 語言組件的結構描述提供 VSIX 套件的當地語系化的安裝的
 |標題|描述|
 |-----------|-----------------|
 |[將 VSIX 封裝當地語系化](../extensibility/localizing-vsix-packages.md)|示範如何提供當地語系化的安裝支援 VSIX 套件。|
-|[VSIX 擴充功能結構描述 2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 資訊清單描述可讓使用來安裝的 Visual Studio 擴充功能之.vsix 部署檔案內容**擴充功能和更新** 對話方塊。|
-|[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)|示範如何使用**擴充功能和更新**對話方塊，即可安裝、 移除、 啟用以及停用擴充功能。|
+|[VSIX 延伸結構描述 2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 資訊清單描述的內容 *.vsix*部署檔案。 部署檔案可讓您使用安裝 Visual Studio 擴充功能**擴充功能和更新** 對話方塊。|
+|[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)|示範如何使用**擴充功能和更新**對話方塊，即可安裝、 移除、 啟動及停用延伸模組。|

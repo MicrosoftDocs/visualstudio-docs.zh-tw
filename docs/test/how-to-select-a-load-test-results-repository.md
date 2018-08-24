@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751997"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379575"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果儲存機制
+# <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果存放庫
 
 您不必侷限於本機結果存放區。 負載測試通常會在遠端代理程式電腦集合上執行。 代理程式加上控制器能夠產生比任何單一電腦更接近的模擬負載。 如需詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "34751997"
 
      ![負載測試結果存放區連接屬性](../test/media/loadtestconnectionproperties.png) 負載測試結果存放區連接屬性
 
-3.  在 [負載測試結果存放區] 中，按一下 (…) 以顯示 [連接屬性] 對話方塊。
+3.  在 [負載測試結果存放區] 中，按一下 **(…)** 以顯示 [連接屬性] 對話方塊。
 
 4.  在 [伺服器名稱] 中，鍵入先前執行 `LoadTest` 指令碼所在之伺服器的名稱。
 

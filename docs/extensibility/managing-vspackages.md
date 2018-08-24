@@ -1,5 +1,5 @@
 ---
-title: 管理 Vspackage |Microsoft 文件
+title: 管理 Vspackage |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140130"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639553"
 ---
-# <a name="managing-vspackages"></a>管理 Vspackage
-在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本的註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的位元，以管理您的封裝。  
+# <a name="manage-vspackages"></a>管理 Vspackage
+在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的資訊，以管理您的封裝。  
   
-## <a name="using-the-experimental-instance"></a>使用實驗性執行個體  
- 若要了解有關實驗執行個體的詳細資訊，請參閱[實驗執行個體的](../extensibility/the-experimental-instance.md)。  
+## <a name="use-the-experimental-instance"></a>使用實驗性執行個體  
+ 若要深入了解實驗執行個體，請參閱[實驗的執行個體](../extensibility/the-experimental-instance.md)。  
   
-## <a name="registering-and-unregistering-vspackages"></a>註冊和取消登錄 Vspackage  
- 若要了解如何註冊及取消註冊 Vspackage 和其他類型的擴充功能，請參閱[註冊和取消登錄 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
+## <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage  
+ 若要了解如何註冊和取消註冊 Vspackage 和其他類型的擴充功能，請參閱[註冊和取消註冊 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
-## <a name="loading-a-vspackage"></a>載入 VSPackage  
- Vspackage 可以將 autoload 設定某一特定 CMDUICONTEXT GUID 已開啟。 如需詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。  
+## <a name="load-a-vspackage"></a>載入 VSPackage  
+ Vspackage 可以自動載入 CMDUICONTEXT GUID 開啟某一特定設定。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>若要載入 Vspackage 在背景中的使用 AsyncPackage  
- AsyncPackage 類別可讓 Visual Studio 中更好的 UI 回應性的背景執行緒上載入的封裝。 如需詳細資訊，請參閱[How to： 在背景中載入 vspackage 使用 AsyncPackage](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>使用 AsyncPackage 載入 Vspackage 在背景中  
+ `AsyncPackage`類別可讓您更好的 UI 回應性，在 Visual Studio 中的背景執行緒上的封裝載入。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 AsyncPackage 載入 Vspackage 在背景中](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
   
-## <a name="rule-based-ui-context-for-extensions"></a>延伸模組的規則為基礎的 UI 內容  
- 以規則為基礎的 UI 內容可讓您定義的精確條件，程式就會啟動 UI 內容和相關聯的 Vspackage 載入的延伸模組作者。 如需詳細資訊，請參閱[How to： 使用規則為基礎的 Visual Studio 擴充功能的 UI 內容](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
+## <a name="rule-based-ui-context-for-extensions"></a>將 UI 內容規則為基礎的擴充功能  
+ 以規則為基礎的 UI 內容可讓延伸模組作者定義用以啟動 UI 內容，以及相關聯的 Vspackage 載入的精確條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 Visual Studio 擴充功能的規則為基礎的 UI 內容](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
   
-## <a name="diagnosing-extension-performance"></a>診斷延伸模組的效能  
-擴充功能可能會影響啟動及方案負載的效能。 了解 Visual Studio 擴充功能影響計算的方式以及它可以分析方式在本機以測試擴充功能可能會顯示為效能，從而影響擴充功能。 如需詳細資訊，請參閱[如何： 診斷延伸模組效能](how-to-diagnose-extension-performance.md)。 
+## <a name="diagnose-extension-performance"></a>診斷延伸模組的效能  
+延伸模組可能會影響啟動和方案載入效能。 了解 Visual Studio 擴充功能影響的計算方式，以及如何進行分析在本機測試如果擴充功能可能會顯示為效能影響擴充功能。 如需詳細資訊，請參閱 <<c0> [ 如何： 診斷延伸模組效能](how-to-diagnose-extension-performance.md)。 
   
-## <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage  
- 了解 Vspackage 不會載入或發生錯誤的疑難排解的技術：[疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)  
+## <a name="troubleshoot-vspackages"></a>針對 Vspackage 進行疑難排解  
+ 了解針對 Vspackage 未載入或發生錯誤進行疑難排解的技術：[疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

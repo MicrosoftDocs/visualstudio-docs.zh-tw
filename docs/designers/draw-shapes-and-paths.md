@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923945"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513089"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
+
 在 XAML 設計工具中，「圖形」(Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
 
- 圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)。
-
- **本主題內容：**
-
--   [繪製圖形](#Shape)
-
--   [繪製路徑](#Path)
-
--   [將圖形轉換成路徑](#Convert)
-
--   [合併路徑](#Combine)
-
--   [建立複合路徑](#Compound)
-
--   [建立裁剪路徑](#Clipping)
+圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)。
 
 ##  <a name="Shape"></a> 繪製圖形
  您可以在 [資產]  面板中找到許多圖形。

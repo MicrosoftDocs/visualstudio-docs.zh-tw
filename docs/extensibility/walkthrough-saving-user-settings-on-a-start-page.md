@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 在 [開始] 頁面上儲存使用者設定 |Microsoft 文件
+title: 逐步解說： 在 [開始] 頁面上儲存使用者設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,62 +11,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea4d4a07ed9f61f20ca2b3f79b99d3a2ebfa0b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146087"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566713"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說： 在 [開始] 頁面上儲存使用者設定
-您可以保存使用者設定起始頁。 依循這個逐步解說，您可以建立將設定儲存至登錄中，當使用者按一下按鈕時，並接著會擷取該設定，每次在開始頁面載入的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設起始頁 XAML 會呼叫該控制項，您不必修改本身的起始頁。  
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說： 在 [開始] 頁面上儲存使用者設定
+您可以保存您的起始頁的使用者設定。 依照本逐步解說中，您可以建立將設定儲存至登錄中，當使用者按一下按鈕，並接著會擷取該設定，每次載入起始頁的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設啟動頁面 XAML 呼叫該控制項，您不需要修改 [啟動] 頁面本身。  
   
- 具現化這個逐步解說中設定存放區是的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>介面，來讀取和寫入下列登錄位置呼叫時： HKCU\Software\Microsoft\VisualStudio\14.0\\ *CollectionName*  
+ 在此逐步解說中具現化的設定存放區是的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>介面，它會讀取並寫入下列登錄位置，當呼叫它： **HKCU\Software\Microsoft\VisualStudio\14.0\\\<集合名稱 >**  
   
- 當執行它時，Visual Studio 的實驗執行個體中時，設定存放區來讀取和寫入 HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName。*  
+ 當執行它時，Visual Studio 的實驗執行個體中時，設定存放區讀取並寫入**HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<集合名稱 >。**  
   
- 如需如何保存設定的詳細資訊，請參閱[擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)。  
+ 如需如何保存設定的詳細資訊，請參閱[Extending User Settings and 選項](../extensibility/extending-user-settings-and-options.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
   
 > [!NOTE]
->  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+>  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
 >   
->  您可以使用，下載起始頁專案範本**擴充管理員**。  
+>  您可以使用，以下載起始頁專案範本**延伸模組管理員**。  
   
 ## <a name="setting-up-the-project"></a>設定專案  
   
-#### <a name="to-configure-the-project-for-this-walkthrough"></a>若要設定此逐步解說專案  
+### <a name="to-configure-the-project-for-this-walkthrough"></a>若要設定專案以進行本逐步解說  
   
-1.  建立起始頁專案中所述[建立自訂起始頁](creating-a-custom-start-page.md)。 將專案命名**SaveMySettings**。  
+1.  建立起始頁專案中所述[建立自訂起始頁](creating-a-custom-start-page.md)。 將專案命名為**SaveMySettings**。  
   
-2.  在**方案總管 中**，加入下列組件參考加入 StartPageControl 專案：  
+2.  在 [**方案總管] 中**，加入下列組件參考加入 StartPageControl 專案：  
   
     -   EnvDTE  
   
-    -   EnvDTE80  
+    -   [Envdte80]  
   
     -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  開啟 MyControl.xaml。  
+3.  開啟*MyControl.xaml*。  
   
-4.  從 [XAML] 窗格，在最上層<xref:System.Windows.Controls.UserControl>元素定義，加入下列事件宣告的命名空間宣告之後。  
+4.  從 [XAML] 窗格中，在最上層<xref:System.Windows.Controls.UserControl>項目定義中，加入下列事件宣告的命名空間宣告之後。  
   
-    ```  
+    ```xml 
     Loaded="OnLoaded"  
     ```  
   
-5.  在 設計 窗格中，按一下 控制項的主要區域，然後按 DELETE 鍵。  
+5.  在 [設計] 窗格中，按一下主要區域的控制項，然後按**刪除**。  
   
-     這會移除<xref:System.Windows.Controls.Border>項目及所有內容中，且只有最上層的分葉<xref:System.Windows.Controls.Grid>項目。  
+     這個步驟會移除<xref:System.Windows.Controls.Border>項目，並在其中的所有項目，並將只傳回前保留在層級<xref:System.Windows.Controls.Grid>項目。  
   
-6.  從**工具箱**，拖曳<xref:System.Windows.Controls.StackPanel>控制項至格線。  
+6.  從**工具箱**，拖曳<xref:System.Windows.Controls.StackPanel>方格控制項。  
   
-7.  現在將<xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.TextBox>，並按鈕<xref:System.Windows.Controls.StackPanel>。  
+7.  現在將拖曳<xref:System.Windows.Controls.TextBlock>，則<xref:System.Windows.Controls.TextBox>，和一個按鈕<xref:System.Windows.Controls.StackPanel>。  
   
-8.  新增**X:name**屬性<xref:System.Windows.Controls.TextBox>，和`Click`事件<xref:System.Windows.Controls.Button>，如下列範例所示。  
+8.  新增**X:name**屬性<xref:System.Windows.Controls.TextBox>，以及`Click`事件<xref:System.Windows.Controls.Button>，如下列範例所示。  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -76,19 +76,19 @@ ms.locfileid: "31146087"
     </StackPanel>  
     ```  
   
-## <a name="implementing-the-user-control"></a>實作使用者控制項  
+## <a name="implement-the-user-control"></a>實作使用者控制項  
   
-#### <a name="to-implement-the-user-control"></a>若要實作使用者控制項  
+### <a name="to-implement-the-user-control"></a>若要實作使用者控制項  
   
-1.  在 [XAML] 窗格中，以滑鼠右鍵按一下`Click`屬性<xref:System.Windows.Controls.Button>項目，然後再按一下**巡覽至事件處理常式**。  
+1.  在 [XAML] 窗格中，以滑鼠右鍵按一下`Click`的屬性<xref:System.Windows.Controls.Button>項目，然後再按一下**巡覽至事件處理常式**。  
   
-     這會開啟 MyControl.xaml.cs，並建立虛設常式的處理常式`Button_Click`事件。  
+     此步驟會開啟*MyControl.xaml.cs*，並建立虛設常式的處理常式`Button_Click`事件。  
   
-2.  加入下列`using`檔案最上方的陳述式。  
+2.  新增下列`using`至檔案頂端的陳述式。  
   
      [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]  
   
-3.  加入私用`SettingsStore`屬性，如下列範例所示。  
+3.  新增私用`SettingsStore`屬性，如下列範例所示。  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -120,9 +120,9 @@ ms.locfileid: "31146087"
     }  
     ```  
   
-     這個屬性會先取得參考<xref:EnvDTE80.DTE2>介面，其中包含從 Automation 物件模型，<xref:System.Windows.FrameworkElement.DataContext%2A>的使用者控制項，然後再使用來取得執行個體的 DTE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>介面。 然後它會使用該執行個體傳回目前的使用者設定。  
+     這個屬性會先取得的參考<xref:EnvDTE80.DTE2>介面，其中包含自動化物件模型中，從<xref:System.Windows.FrameworkElement.DataContext%2A>的使用者控制項，然後再使用來取得執行個體的 DTE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>介面。 然後它會使用該執行個體傳回目前的使用者設定。  
   
-4.  填寫`Button_Click`事件，如下所示。  
+4.  填寫`Button_Click`，如下所示的事件。  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -137,9 +137,9 @@ ms.locfileid: "31146087"
     }  
     ```  
   
-     這會將文字方塊的內容寫入"MySetting 」 中的欄位"MySettings 」 集合在登錄中。 如果集合不存在，則會建立它。  
+     這會將文字方塊的內容寫入登錄中的"MySettings 」 集合中的"MySetting 」 欄位。 如果集合不存在，它會建立它。  
   
-5.  加入下列處理常式`OnLoaded`使用者控制項的事件。  
+5.  新增下列處理常式`OnLoaded`使用者控制項的事件。  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -151,56 +151,56 @@ ms.locfileid: "31146087"
     }  
     ```  
   
-     這會將文字方塊的文字"MySetting 」 的目前值。  
+     此程式碼會設定文字方塊的文字，"MySetting 」 的目前值。  
   
 6.  建置使用者控制項。  
   
-7.  在**方案總管 中**，開啟 source.extension.vsixmanifest。  
+7.  在 **方案總管**，開啟*source.extension.vsixmanifest*。  
   
-8.  在資訊清單編輯器中，設定**產品名稱**至**儲存我的設定起始頁**。  
+8.  在資訊清單編輯器中，設定**Product Name**要**儲存我的設定起始頁**。  
   
-     這會設定起始頁的名稱，所以才會出現在**自訂起始頁**清單中**選項** 對話方塊。  
+     這項功能設定的 入門 頁面的名稱，才會出現在所顯示的原狀**自訂起始頁**列入**選項** 對話方塊。  
   
-9. 建置 StartPage.xaml。  
+9. 建置*StartPage.xaml*。  
   
-## <a name="testing-the-control"></a>測試控制項  
+## <a name="test-the-control"></a>測試控制項  
   
-#### <a name="to-test-the-user-control"></a>若要測試的使用者控制項  
+### <a name="to-test-the-user-control"></a>若要測試的使用者控制項  
   
-1.  按 F5。  
+1.  請按 **F5**。  
   
      Visual Studio 的實驗執行個體隨即開啟。  
   
-2.  在實驗執行個體，在**工具**功能表上，按一下 **選項**。  
+2.  在實驗執行個體，在**工具**功能表上，按一下**選項**。  
   
-3.  在**環境**] 節點，按一下 [**啟動**，然後在**自訂起始頁**清單中，選取 **[安裝擴充功能] 儲存我的設定啟動頁面**.  
+3.  在**環境**節點中，按一下**啟動**，然後在**自訂起始頁**清單中，選取 **[安裝延伸模組] 儲存我的設定開始頁面**.  
   
      按一下 [確定 **Deploying Office Solutions**]。  
   
-4.  如果它已開啟，然後在關閉起始頁**檢視**功能表上，按一下 **起始頁**。  
+4.  如果已開啟，然後在關閉 [入門] 頁面**檢視**功能表上，按一下**起始頁**。  
   
-5.  在 [開始] 頁面中，按一下 [ **MyControl** ] 索引標籤。  
+5.  在 [啟動] 頁面中，按一下 [ **MyControl** ] 索引標籤。  
   
-6.  在文字方塊中，輸入**Cat**，然後按一下 **儲存我的設定**。  
+6.  在 [文字] 方塊中，鍵入**Cat**，然後按一下**儲存我的設定**。  
   
-7.  關閉 [開始] 頁面，然後再次開啟。  
+7.  關閉 [入門] 頁面，然後再重新開啟它。  
   
-     在文字方塊中，應該會顯示"Cat"這個字。  
+     "Cat"這個字應該會顯示在文字方塊中。  
   
-8.  "Cat"這個字取代成"Dog"這個字。 請勿按下按鈕。  
+8.  文字"Cat"取代成"Dog"這個字。 請勿按的按鈕。  
   
-9. 關閉 [開始] 頁面，然後再次開啟。  
+9. 關閉 [入門] 頁面，然後再重新開啟它。  
   
-     Word"dog 四"應該顯示在文字方塊中，即使未儲存的設定。 這是因為 Visual Studio 會將工具視窗保留在記憶體中，即使它們已關閉，直到關閉 Visual Studio 本身。  
+     即使您沒有儲存設定因為 Visual Studio 會將工具視窗保留在記憶體中，即使它們已關閉，直到關閉 Visual Studio 本身時，"Dog"這個字應該會顯示在文字方塊中。  
   
 10. 關閉 Visual Studio 的實驗執行個體。  
   
-11. 按 F5 以重新開啟實驗執行個體。  
+11. 按下**F5**重新開啟實驗的執行個體。  
   
-12. 在文字方塊中，應該會顯示"Cat"這個字。  
+12. "Cat"這個字應該會顯示在文字方塊中。  
   
 ## <a name="next-steps"></a>後續步驟  
- 您可以修改這個使用者控制項，以儲存並擷取任何數目的自訂設定來取得及設定使用不同的值，從不同的事件處理常式`SettingsStore`屬性。 只要您使用不同`propertyName`參數，每次呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>，值不會覆寫彼此的登錄中。  
+ 您可以修改這個使用者控制項，來儲存和擷取任意數目的自訂設定來取得及設定使用不同的值，從不同的事件處理常式`SettingsStore`屬性。 只要您使用不同`propertyName`每次呼叫的參數<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>，值不會覆寫另一個登錄中。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     

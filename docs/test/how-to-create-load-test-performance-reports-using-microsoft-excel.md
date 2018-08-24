@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179004"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380752"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報表
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報告
 
 您可以根據兩個或多個測試結果，產生 Microsoft Excel 負載測試報告。 共有兩種負載測試報告可供使用：
 
@@ -36,18 +36,18 @@ ms.locfileid: "39179004"
  此外，也能和專案關係人共用 Excel 活頁簿，因此專案關係人不必連接至資料庫就能查看報告。
 
 > [!NOTE]
-> 您可以共用 Excel 活頁簿，不過只有電腦上已安裝 Visual Studio 的使用者能夠修改任何試算表。 其他使用者不會在 Office 功能區中看見 [負載測試報告]，但是可以檢視活頁簿。
+> 您可以共用 Excel 活頁簿，不過只有電腦上已安裝 Visual Studio 的使用者能夠修改任何試算表。 其他使用者不會在 [Office] 功能區中看見 [負載測試報告]，但是可以檢視活頁簿。
 
  下圖是顯示異動 (更新購物車) 速度下降和 (% Processor) 計數器變差之相關性的報告範例。 這指出應用程式的程式碼可能出現問題，而不是資料庫或網路問題，而且是使用 ASP.NET 分析工具診斷的絕佳候選對象。
 
  ![應用程式程式碼中的潛在問題](../test/media/lt_excel.png)
 
- 產生 Excel 報表的方法包括：在 [負載測試分析器] 中使用工具列的 [建立 Excel 報表] 按鈕，以及在 Excel 中使用 Office 功能區的 [負載測試] 索引標籤中的 [負載測試報告] 選項。
+ 產生 Excel 報表的方法包括：在 [負載測試分析器] 中使用工具列的 [建立 Excel 報表] 按鈕，或在 Excel 中使用 [Office] 功能區的 [負載測試] 索引標籤中的 [負載測試報告] 選項。
 
 > [!NOTE]
 > 如果您將註解加入至負載測試，這些註解就會顯示在 Excel 報表中。 如需詳細資訊，請參閱[如何：在分析已完成的負載測試時新增註解](../test/how-to-add-comments-on-a-completed-load-test.md)。
 
-## <a name="to-generate-load-test-comparison-reports-using-excel"></a>使用 Excel 產生負載測試比較報告
+## <a name="to-generate-load-test-comparison-reports-using-excel"></a>若要使用 Excel 產生負載測試比較報告
 
 1.  在產生報告前，首先您必須執行負載測試。
 
@@ -62,7 +62,7 @@ ms.locfileid: "39179004"
 
      -或-
 
-    1.  開啟 Microsoft Excel，選取 Office 功能區中的 [負載測試] 索引標籤，然後選擇 [負載測試報告]。
+    1.  開啟 Microsoft Excel，選取 [Office] 功能區中的 [負載測試] 索引標籤，然後選擇 [負載測試報告]。
 
          [產生負載測試報告精靈] 隨即出現。
 
@@ -102,7 +102,7 @@ ms.locfileid: "39179004"
     > [!TIP]
     > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報告中：目標和報告名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
 
-## <a name="to-generate-load-test-trend-reports-using-excel"></a>使用 Excel 產生負載測試趨勢報告
+## <a name="to-generate-load-test-trend-reports-using-excel"></a>若要使用 Excel 產生負載測試趨勢報告
 
 1.  在產生報告前，您必須先執行負載測試。
 
@@ -117,7 +117,7 @@ ms.locfileid: "39179004"
 
      -或-
 
-    1.  開啟 Microsoft Excel，選取 Office 功能區中的 [負載測試] 索引標籤，然後選擇 [負載測試報告]。
+    1.  開啟 Microsoft Excel，選取 [Office] 功能區中的 [負載測試] 索引標籤，然後選擇 [負載測試報告]。
 
          [產生負載測試報告精靈] 隨即出現。
 

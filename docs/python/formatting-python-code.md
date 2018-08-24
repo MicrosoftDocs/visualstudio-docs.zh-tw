@@ -11,19 +11,19 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056907"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008664"
 ---
-# <a name="formatting-python-code"></a>格式化 Python 程式碼
+# <a name="format-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
 
-- 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 Ctrl+E、F。
-- 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 Ctrl+E、D。
+- 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 **Ctrl**+**E** > **F**。
+- 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 **Ctrl**+**E** > **D**。
 
 選項是透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式] 及其巢狀索引標籤來設定。 您需要選取 [顯示所有設定] 來使這些選項出現：
 
@@ -31,7 +31,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 格式選項預設會設定成符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
 
-此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表中，如後續小節中所述。
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]](#fill-comment-paragraph-command) 命令新增至 [編輯] > [進階] 功能表中，如後續小節中所述。
 
 ## <a name="spacing"></a>間距
 
@@ -45,41 +45,41 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 類別定義選項 | 已核取 | 已清除 |
 | --- | --- | --- | 
-| 在類別宣告的名稱與基底清單之間插入空格 | `class X (object): pass` | `class X(object): pass` | 
-| 在基底清單括號內插入空格 | `class X( object ): pass` | `class X(object): pass` |
-| 在空白基底清單括號內插入空格 | `class X( ): pass` | `class X(): pass` |
+| **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` | 
+| **在基底清單括號內插入空格** | `class X( object ): pass` | `class X(object): pass` |
+| **在空白基底清單括號內插入空格** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | 函式定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在函式宣告的名稱和參數清單之間插入空格 | `def X (): pass` | `def X(): pass` | 
-| 在參數清單括號內插入空格 | `def X( a, b ): pass` | `def X(a, b): pass` |
-| 在空白的參數清單括號內插入空格 | `def X( ): pass` | `def X(): pass` |
-| 在預設參數值的 '=' 前後插入空格 | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| 在傳回註解運算子前後插入空格 | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` | 
+| **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **在空白的參數清單括號內插入空格** | `def X( ): pass` | `def X(): pass` |
+| **在預設參數值的 '=' 前後插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **在傳回註解運算子前後插入空格** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | 運算子選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在二元運算子前後插入空格 | `a + b` | `a+b` |
-| 在指派前後插入空格 | `a = b` | `a=b` |
+| **在二元運算子前後插入空格** | `a + b` | `a+b` |
+| **在指派前後插入空格** | `a = b` | `a=b` |
 
 <br/>
 
 | 運算式間距選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| 在函式呼叫的名稱和引數清單之間插入空格 | `X ()` | `X()` |
-| 在空的引數清單括號內插入空格 | `X( )` | `X()` |
-| 在引數清單括號內插入空格 | `X( a, b )` | `X(a, b)` |
-| 在運算式的括號內插入空格 | `( a )` | `(a)` |
-| 在空白元組括號內插入空格 | `( )` | `()` |
-| 在元組括號內插入空格 | `( a, b )` | `(a, b)` |
-| 在空的方括號中插入空格 | `[ ]` | `[]` |
-| 在清單的方括號內插入空格 | `[ a, b ]` | `[a, b]` |
-| 在左方括號前面插入空格 | `x [i]` | `x[i]` |
-| 在方括號中插入空格 | `x[ i ]` | `x[i]` |
+| **在函式呼叫的名稱與引數清單之間插入空格** | `X ()` | `X()` |
+| **在空白引數清單括號內插入空格** | `X( )` | `X()` |
+| **在引數清單括號內插入空格** | `X( a, b )` | `X(a, b)` |
+| **在運算式的括號內插入空格** | `( a )` | `(a)` |
+| **在空白元組括號內插入空格** | `( )` | `()` |
+| **在元組括號內插入空格** | `( a, b )` | `(a, b)` |
+| **在空白方括號中插入空格** | `[ ]` | `[]` |
+| **在清單的方括號內插入空格** | `[ a, b ]` | `[a, b]` |
+| **在左方括號前插入空格** | `x [i]` | `x[i]` |
+| **在方括號內插入空格** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
-| 將匯入的模組放在新行 | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| 移除不必要的分號 | `x = 42;` | `x = 42` |
-| 將多個陳述式放在新行 | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **將匯入的模組置於新行** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **移除不必要的分號** | `x = 42;` | `x = 42` |
+| **將多個陳述式置於新行** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>換行
 
@@ -110,7 +110,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="fill-comment-paragraph-command"></a>填滿註解段落命令
 
-[編輯] > [進階] > [填滿註解段落] (Ctrl+E、Ctrl+P) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
+[編輯] > [進階] > [填滿註解段落] (**Ctrl**+**E** > **P**) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
 
 例如: 
 

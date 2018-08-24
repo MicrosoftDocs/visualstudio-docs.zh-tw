@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924456"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512625"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本紋理
 本文件將示範如何使用影像編輯器來建立基本材質。
@@ -54,7 +54,7 @@ ms.locfileid: "37924456"
 5.  在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 **Shift** 鍵並選擇影像中的任意點。 使用 **Shift** 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。
 
     > [!IMPORTANT]
-    >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。
+    > 此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。
 
 6.  在 [影像編輯器] 工具列上，選擇 [橢圓形] 工具。
 
@@ -69,13 +69,13 @@ ms.locfileid: "37924456"
 11. 使用 [橢圓形] 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 您在繪製時按住 **Shift** 鍵，可以更輕鬆地繪製圓形。
 
     > [!NOTE]
-    >  目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 狀態列。
+    > 目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 狀態列。
 
 12. 變更背景色彩。 將 [R] 設定為 `44`、[G] 設為 `165`、[B] 設為 `211`，並將 [A] 設為 `255`。
 
 13. 繪製另一個從像素座標 `(64, 64)` 到像素座標 `(448, 448)` 的圓形。
 
-14. 將背景色彩變更，回到完全不透明的白色。 將 [R]、[G]、[B] 及 [A] 設定為 `255`。
+14. 將背景色彩變更回完全不透明的白色。 將 [R]、[G]、[B] 及 [A] 設定為 `255`。
 
 15. 繪製另一個從像素座標 `(128, 128)` 到像素座標 `(384, 384)` 的圓形。
 

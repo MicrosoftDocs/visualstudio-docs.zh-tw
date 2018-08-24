@@ -1,5 +1,5 @@
 ---
-title: 圖形框架驗證 |Microsoft 文件
+title: 圖形畫面格驗證 |Microsoft Docs
 ms.custom: ''
 ms.date: 03/02/2017
 ms.technology: vs-ide-debug
@@ -12,26 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473955"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511291"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
-<!-- VERSIONLESS -->
-Visual Studio 2017 和更佳的支援**框架驗證**工具。  驗證框架視窗會顯示錯誤和警告相關聯的事件清單。  若要檢視此視窗，請選取**檢視 > 框架驗證**功能表。
+<!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
 
 ![框架驗證](media/gfx_diag_frame_validation.png)
 
-按一下**執行驗證**在起始分析左上角的按鈕。  可能需要幾分鐘才能完成根據畫面格的複雜度。  會出現如下的組合來自兩個來源的資料： 訊息該 D3D 本身發出時[SDK 層](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx)已啟用，並收集追蹤工具自己的內部狀態的資料。 完成後，您會看到數個資料行：
+按一下 **執行驗證**在起始分析左上角的按鈕。  可能需要幾分鐘才能完成，視框架的複雜度而定。  會出現下面是結合來自兩個來源的資料： 訊息的 D3D 本身會時發出[SDK 層](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)啟用時，和收集自追蹤工具自己的內部狀態的資料。 完成後，您會看到多個資料行：
 
 **資料行**|**描述**
 ---|---
-事件 ID | 對應中的項目 ID[事件清單](graphics-event-list.md)視窗。
+事件 ID | 這會對應到中的項目 ID[事件清單](graphics-event-list.md)視窗。
 嚴重性 | 損毀、 錯誤、 警告、 資訊或訊息。
-分類 | 應用程式定義的其他、 初始化、 清除、 編譯、 狀態建立、 狀態設定、 取得狀態、 執行、 資源管理、 著色器的備援性，以及未使用。
+分類 | 應用程式定義的其他、 初始化、 清理、 編譯、 狀態建立、 狀態設定、 狀態開始，執行、 資源操作、 著色器、 重複、 也未使用。
 訊息 | 與事件相關聯的訊息。
 Event - 事件 | 相關聯的錯誤或警告事件。
 

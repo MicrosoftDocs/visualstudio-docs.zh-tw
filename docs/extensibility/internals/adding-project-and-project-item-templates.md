@@ -1,5 +1,5 @@
 ---
-title: 加入專案和專案項目範本 |Microsoft 文件
+title: 加入專案和專案項目範本 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,53 +14,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94d521d288b470db56736668f11d47dab71d2533
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128742"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499630"
 ---
-# <a name="adding-project-and-project-item-templates"></a>加入專案和專案項目範本
-當您建立您自己的專案類型時，您必須提供支援加入新的專案和專案項目使用標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 對話方塊。 下列主題討論不同技術可加入的專案和專案項目。  
+# <a name="add-project-and-project-item-templates"></a>將專案和專案項目範本
+當您建立您自己的專案類型時，您必須提供支援加入新的專案和專案項目使用標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 對話方塊。 下列主題討論不同的技術，讓您新增的專案和專案項目。  
   
 ## <a name="in-this-section"></a>本節內容  
  [專案內容](../../extensibility/internals/project-context.md)  
- 說明此專案提供大部分的什麼瓿環境中的內容資訊。  
+ 說明專案提供大部分的什麼瓿在環境中的內容資訊。  
   
  [專案優先順序](../../extensibility/internals/project-priority.md)  
- 說明專案項目通常是一個專案的成員，才能避免模稜兩可的專案用來開啟項目。  
+ 說明專案項目通常是一個專案的成員，才能避免模稜兩可，哪些專案用來開啟項目。  
   
  [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)  
- 提供專案扮演判斷的編輯器開啟專案項目時所要使用兩種可用來開啟檔案的專案和角色中的編輯器類型資訊。  
+ 提供專案扮演判斷哪一個編輯器，開啟專案項目時所要使用的兩種可用來在專案和角色中開啟檔案的編輯器類型的資訊。  
   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)  
  說明發生的狀況時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]建立專案。  
   
- [將項目新增至加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)  
- 說明的程序加入項目至**加入新項目** 對話方塊。  
+ [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)  
+ 說明的程序新增項目**加入新項目** 對話方塊。  
   
- [將目錄新增至新增專案對話方塊](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)  
+ [將目錄新增至方塊中的 [新增專案] 對話方塊](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)  
  提供註冊新的目錄，其中包含 VSPackage 所提供的自訂範本的範例。  
   
- [將目錄新增至加入新項目對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)  
- 提供的註冊一組新的目錄範例**加入新項目** 對話方塊。  
+ [將目錄新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)  
+ 提供的範例註冊一組新的目錄**加入新項目** 對話方塊。  
   
- [用來擴充專案系統的 IDE 定義的命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- 列出不同擴充專案系統使用的命令項目類型。  
+ [IDE 定義的命令，來擴充專案系統](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
+ 列出不同類型的擴充專案系統使用的命令項目。  
   
- [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)  
- 列出的物件，可用來擴充項 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案系統。  
+ [Catid 通常用來擴充專案的物件](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)  
+ 列出可用來擴充的物件 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案系統。  
   
 ## <a name="related-sections"></a>相關章節  
- [如何︰開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
- 提供逐步指示，開啟內容本質上並繫結至特定的編輯器，專案項目。  
+ [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
+ 提供逐步指示，開啟本質繫結至特定的編輯器專案項目。  
   
- [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
+ [如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
  提供逐步指示，開啟標準編輯器。  
   
  [專案子類型](../../extensibility/internals/project-subtypes.md)  
- 提供專案子類型概念性主題的連結。 專案子類型延伸現有[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案。  
+ 提供專案子類型概念性主題的連結。 專案子類型會延伸現有[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案。  
   
  [專案類型](../../extensibility/internals/project-types.md)  
  提供額外的主題提供有關如何設計新的專案類型的資訊連結。

@@ -1,5 +1,5 @@
 ---
-title: 參考項目 （Visual Studio 範本） |Microsoft 文件
+title: 參考項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136493"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639158"
 ---
-# <a name="references-element-visual-studio-templates"></a>參考項目 (Visual Studio 範本)
-將範本加入至專案的組件參考的群組。  
+# <a name="references-element-visual-studio-templates"></a>References 項目 （Visual Studio 範本）
+群組的範本加入至專案的組件參考。  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -32,7 +32,7 @@ ms.locfileid: "31136493"
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <References>  
     <Reference>... </Reference>  
     <Reference>... </Reference>  
@@ -40,33 +40,33 @@ ms.locfileid: "31136493"
 </References>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  下列章節將說明屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定項目加入專案時要加入的組件參考。 必須有一個或多個`Reference`中的項目`References`項目。|  
+|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定項目加入專案時要加入的組件參考。 必須有一或多個`Reference`中的項目`References`項目。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定範本的內容。|  
   
 ## <a name="remarks"></a>備註  
  `References` 是 `TemplateContent` 的選擇性子項目。  
   
- `Reference`和`References`元素只用於.vstemplate 檔案中所`Type`屬性值為`Item`。  
+ `Reference`並`References`項目僅適用於在 *.vstemplate*檔案具有`Type`屬性值`Item`。  
   
 ## <a name="example"></a>範例  
- 下列範例說明`TemplateContent`項目範本的元素。 這段 XML 會加入 System.dll 和 System.Data.dll 組件的參考。  
+ 下列範例說明`TemplateContent`的項目範本的項目。 這段 XML 會將參考加入*System.dll*並*System.Data.dll*組件。  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  

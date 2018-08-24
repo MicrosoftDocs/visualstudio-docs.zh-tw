@@ -12,14 +12,14 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974776"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586486"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新功能
+# <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 的新功能
 
 本主題列出從 Visual Studio 2017 15.3 版開始，各版 Visual Studio 中新增至 Live Unit Testing 的新功能。 如需如何使用 Live Unit Testing 的概觀，請參閱 [Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "31974776"
 
 - **可靠性和效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。  
 
-- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除) 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)。 已移除 [測試]、[Live Unit Testing] 功能表上的 [Reset clean] (全新重設) 選項。 現在依序選取 [工具]、[選項]、[Live Unit Testing] 和 [Delete Persisted Data] (刪除持續性資料) 即可予以存取。
+- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除) 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)。 已移除 [測試] > [Live Unit Testing] 功能表上的 [Reset clean] \(全新重設\) 選項。 現在選取 [工具] > [選項] > [Live Unit Testing]，然後選取 [Delete Persisted Data] \(刪除持續性資料\) 即可予以存取。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Live Unit Testing for Visual Studio 2017 15.3 版的新功能
 
@@ -65,6 +65,6 @@ ms.locfileid: "31974776"
    - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>另請參閱
-[Live Unit Testing 簡介](live-unit-testing-intro.md)   
-[Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)
+- [Live Unit Testing 簡介](live-unit-testing-intro.md)   
+- [Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)
 

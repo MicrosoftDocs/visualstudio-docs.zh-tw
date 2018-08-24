@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion 項目 （Visual Studio 範本） |Microsoft 文件
+title: MaxFrameworkVersion 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bc28fcc35a4a59852ef6864886acff4dc87ef60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12433fd96aee78c0f8f9ead3b531ae11b1d28f17
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139873"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636356"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 項目 (Visual Studio 範本)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素 （Visual Studio 範本）
 
-指定範本所需的.NET Framework 的最新版本。 它會判斷在可用的最大值**目標 Framework 版本**下拉式清單中的**新專案**對話方塊。 為了讓使用者可以選取 framework 版本，您也必須指定[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)做為範本的最小.NET Framework 版本。
+指定最大值範本所需的.NET framework 版本。 它會判斷提供的最大值**目標 Framework 版本**下拉式清單中的**新的專案**對話方塊。 為了讓使用者可以選取 framework 版本，您也必須指定[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)範本的最小.NET Framework 版本。
 
 > [!IMPORTANT]
-> 從 Visual Studio 2017 版本 15.6，**目標 Framework 版本**下拉式清單中不再顯示範本中的篩選**範本**區段**新的專案**對話方塊。 相反地，**目標 Framework 版本**下拉式清單中做為架構的選擇器選取的範本。
+> 開始在 Visual Studio 2017 版本 15.6、visual**目標 Framework 版本**下拉式清單中不再顯示範本中的篩選條件**範本**一節**新專案**  對話方塊。 相反地，**目標 Framework 版本**下拉式清單中的函式做為所選範本的架構選擇器。
 
  \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
 
@@ -36,25 +36,25 @@ ms.locfileid: "31139873"
 <MaxFrameworkVersion> ... </MaxFrameworkVersion>
 ```
 
-## <a name="attributes-and-elements"></a>屬性和項目
- 下列各節描述屬性、子項目和父項目。
+## <a name="attributes-and-elements"></a>屬性和元素
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
  無。
 
-### <a name="parent-elements"></a>父項目
+### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義要如何顯示在**新專案**或**加入新項目** 對話方塊。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，以及定義如何顯示在**新的專案**或**加入新項目** 對話方塊。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是最高的版本號碼的.NET Framework 所允許的範本。
+ 此文字必須是範本所允許的.NET framework 的最高版本號碼。
 
 ## <a name="remarks"></a>備註
 
@@ -62,7 +62,7 @@ ms.locfileid: "31139873"
 
 ## <a name="example"></a>範例
 
-下列範例說明標準的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]類別樣板。
+下列範例說明一種標準的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]類別樣板。
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,7 +82,7 @@ ms.locfileid: "31139873"
 </VSTemplate>
 ```
 
-在此範例中，最大版本的.NET Framework 所需的範本，以表示`MaxFrameworkVersion`，是 4.7.1。 使用此範本建立的專案可以 4.7.1 到.NET Framework 版本為目標。
+在此範例中，最大版本的.NET Framework 所需的範本，以表示`MaxFrameworkVersion`，是 4.7.1。 使用此範本所建立的專案可以到 4.7.1 的.NET Framework 版本為目標。
 
 ## <a name="see-also"></a>另請參閱
 

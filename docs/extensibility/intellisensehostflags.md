@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags |Microsoft 文件
+title: IntelliSenseHostFlags |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a096e79a64168f74150103a5f3ba3a8683fe184e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 582dc76bfd8b76ffa4d3664ab3e28f95fe2cef50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126749"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500010"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主機旗標。  
@@ -39,15 +39,15 @@ enum IntellisenseHostFlags
 };  
 ```  
   
-#### <a name="parameters"></a>參數  
+### <a name="parameters"></a>參數  
   
 |成員|描述|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|  
 |`IHF_NOSEPARATESUBJECT`|沒有主旨文字。 內容緩衝區包含 IntelliSense 目標 (表示`!IHF_READONLYCONTEXT`)。|  
-|`IHF_SINGLELINESUBJECT`|主旨文字不是多-列功能。|  
+|`IHF_SINGLELINESUBJECT`|無法多-列支援的主旨文字。|  
 |`IHF_FORCECOMMITTOCONTEXT`|與 `CanCommitIntoReadOnlyBuffer` 相同。|  
-|`IHF_OVERTYPE`|編輯 （在主旨或內容） 應該在取代模式中執行。|  
+|`IHF_OVERTYPE`|編輯 （在主旨或內容） 應該在取代模式中。|  
   
 ## <a name="requirements"></a>需求  
  SingleFileeditor.idl  

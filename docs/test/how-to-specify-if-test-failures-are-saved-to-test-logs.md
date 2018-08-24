@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184fbab591698404bde4593f4ad7b61fa1815ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969676"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381449"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
 
@@ -38,7 +38,7 @@ ms.locfileid: "31969676"
 
      回合設定分類和屬性會顯示在 [屬性] 視窗中。
 
-4.  在 [測試失敗時儲存記錄檔] 屬性中，選取 [True] 或 [False] 以指定情節中的測試失敗時，是否要儲存測試記錄檔。
+4.  在 [測試失敗時儲存記錄檔] 屬性中，選取 [True] 或 [False] 以指定情節中的測試失敗時，是否要儲存測試記錄。
 
      屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。
 
@@ -48,6 +48,5 @@ ms.locfileid: "31969676"
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)
-- [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)
 - [如何：指定儲存測試記錄的頻率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

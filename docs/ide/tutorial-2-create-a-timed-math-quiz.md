@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747876"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008391"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
+
 在本教學課程中，您將會建置一項測驗，在測驗中，受測者必須在指定的時間內回答四個隨機的算術問題。 您將學習如何：
 
 -   使用 <xref:System.Random> 類別產生隨機數字。
@@ -29,16 +30,16 @@ ms.locfileid: "34747876"
 
 -   在程式碼中執行基本的算術運算。
 
- 完成時，您的測驗看起來會像下圖一樣，但數字不同。
+完成後的測驗看起來如下圖所示，只有數字會不相同：
 
- ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png) 您在本教學課程中建立的測驗
+![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
- 若要下載完整版的測驗，請參閱[完整的數學測驗教學課程範例](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) \(英文\)。
+若要下載完整版的測驗，請參閱[完整的數學測驗教學課程範例](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) \(英文\)。
 
 > [!NOTE]
->  本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
+> 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
 
 ## <a name="related-topics"></a>相關主題
 

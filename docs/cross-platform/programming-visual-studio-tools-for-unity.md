@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d70a2fe335b89d18e31128fa284d44d74130c127
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48a557addca76c4be56b19890e9abdf8c9eca38d
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060113"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252436"
 ---
-# <a name="programming-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 程式設計
+# <a name="program-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 設計程式
 在本節中，您將找到使用 Visual Studio Tools for Unity 應用程式開發介面的範例。
 
 ## <a name="examples"></a>範例

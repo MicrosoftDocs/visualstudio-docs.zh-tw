@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058746"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513542"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
@@ -41,7 +41,7 @@ ms.locfileid: "37058746"
 
 下列清單描述 Visual Studio 2017 對使用舊版建立之專案的支援。
 
-如果您看不到此處列出的應有專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](https://msdn.microsoft.com/library/hh266747.aspx)，使用本頁底部的 [Give documentation feedback] (提供書面意見反應) 選項，提供您專案的詳細資料。 (如果您想要得到回覆，請使用文件意見反應，而不是匿名的「本頁對您有幫助嗎？」 控制項。)
+如果您看不到此處列出的應有專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，使用本頁底部的 [Give documentation feedback] (提供書面意見反應) 選項，提供您專案的詳細資料。 (如果您想要得到回覆，請使用文件意見反應，而不是匿名的「本頁對您有幫助嗎？」 控制項。)
 
 | 專案類型 | 支援 |
 | --- | --- |

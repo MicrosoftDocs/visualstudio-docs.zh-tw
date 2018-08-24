@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 841606c8b0f39f730d78a53ccaa8e1de96feb109
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058460"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586443"
 ---
-# <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
+# <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017，並可在舊版的 Visual Studio 中獨立安裝。
 
@@ -32,16 +32,16 @@ Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anac
 
 Cookiecutter 的使用程序包含瀏覽和選取範本、將其複製到本機電腦、設定選項，然後從該範本建立程式碼，如下列各節所述。
 
-### <a name="browsing-templates"></a>瀏覽範本
+### <a name="browse-templates"></a>瀏覽範本
 
 Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
 | 群組 | 描述 |
 | --- | --- |
-| 已安裝 | 已安裝到本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 `~/.cookiecutters` 的子資料夾。 您可以藉由按下 **Del** 來刪除選取的已安裝範本。 |
-| 建議 | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
-| GitHub | Cookiecutter 關鍵字的 GitHub 搜尋結果。 從 GitHub 傳回的結果會經過重新編頁，如果還有其他結果，[載入更多 (Load More)] 會出現在清單的結尾。 |
-| 自訂 | 在搜尋方塊中輸入自訂位置時，它會顯示在此群組。 您可以輸入 GitHub 存放庫的完整路徑，或輸入本機磁碟上的資料夾完整路徑。 |
+| **已安裝** | 已安裝到本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 *~/.cookiecutters* 的子資料夾。 您可以透過按下 **Delete** 來刪除選取的已安裝範本。 |
+| **建議** | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
+| **GitHub** | Cookiecutter 關鍵字的 GitHub 搜尋結果。 從 GitHub 傳回的結果會經過重新編頁，如果還有其他結果，[載入更多 (Load More)] 會出現在清單的結尾。 |
+| **自訂** | 在搜尋方塊中輸入自訂位置時，它會顯示在此群組。 您可以輸入 GitHub 存放庫的完整路徑，或輸入本機磁碟上的資料夾完整路徑。 |
 
 ### <a name="cloning"></a>複製
 
@@ -52,9 +52,9 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 如果您從 [已安裝] 群組選取範本，或在搜尋方塊中輸入自訂資料夾路徑並選取該範本，Visual Studio 會載入該範本而不複製。
 
 > [!Important]
-> Cookiecutter 範本會複製到單一資料夾 `~/.cookiecutters` 之下。 每個子資料夾會以 Git 存放庫的名稱命名，不包括 GitHub 使用者名稱。 如果您複製不同作者但名稱相同的不同範本，可能會發生衝突。 在此情況下，Cookiecutter 會禁止您以名稱相同的不同範本覆寫現有的範本。 若要安裝其他範本，您必須先刪除現有的範本。
+> Cookiecutter 範本會複製到單一資料夾 *~/.cookiecutters* 之下。 每個子資料夾會以 Git 存放庫的名稱命名，不包括 GitHub 使用者名稱。 如果您複製不同作者但名稱相同的不同範本，可能會發生衝突。 在此情況下，Cookiecutter 會禁止您以名稱相同的不同範本覆寫現有的範本。 若要安裝其他範本，您必須先刪除現有的範本。
 
-### <a name="setting-template-options"></a>設定範本選項
+### <a name="set-template-options"></a>設定範本選項
 
 在本機安裝範本之後，Cookiecutter 會顯示選項頁面，您可在該處指定您希望 Cookiecutter 於何處產生檔案及其他選項︰
 
@@ -82,10 +82,10 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 
 | 選項 | 描述 |
 | --- | --- |
-| 建議的摘要 URL | 建議的範本摘要的位置。 它可以是 URL 或本機檔案的路徑。 將 URL 留白，會使用 Microsoft 組織的預設摘要。 摘要提供簡單的範本位置清單 (以新行區隔)。 若要要求變更已組織的摘要，請針對 [GitHub 上的來源 (英文)](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) 提出提取要求。 |
-| 顯示說明 | 控制 Cookiecutter 視窗頂端的說明資訊列的可見性。 |
+| **建議的摘要 URL** | 建議的範本摘要的位置。 它可以是 URL 或本機檔案的路徑。 將 URL 留白，會使用 Microsoft 組織的預設摘要。 摘要提供簡單的範本位置清單 (以新行區隔)。 若要要求變更已組織的摘要，請針對 [GitHub 上的來源 (英文)](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) 提出提取要求。 |
+| **顯示說明** | 控制 Cookiecutter 視窗頂端的說明資訊列的可見性。 |
 
-## <a name="optimizing-cookiecutter-templates-for-visual-studio"></a>最佳化 Visual Studio 的 Cookiecutter 範本
+## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>最佳化 Visual Studio 的 Cookiecutter 範本
 
 如需撰寫 Cookiecutter 範本的基本概念，請參閱 [Cookiecutter 文件](https://cookiecutter.readthedocs.io/en/latest/first_steps.html)。 Visual Studio 的 Cookiecutter 延伸模組支援為 Cookiecutter v1.4 建立的範本。
 
@@ -94,14 +94,14 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 - 字串：變數名稱的標籤、可輸入值的文字方塊，以及顯示預設值的浮水印。 文字方塊上的工具提示會顯示預設值。
 - 清單：變數名稱的標籤、可選取值的下拉式方塊。 下拉式方塊上的工具提示會顯示預設值。
 
-藉由在 Visual Studio 特定 (且由 Cookiecutter CLI 忽略) 的 `cookiecutter.json` 檔案中指定額外的中繼資料，可針對此轉譯做改善。 所有屬性都是選擇性的︰
+透過在 Visual Studio 特定 (且由 Cookiecutter CLI 忽略) 的 *cookiecutter.json* 檔案中指定額外的中繼資料，可針對此轉譯做改善。 所有屬性都是選擇性的︰
 
 | 屬性 | 描述 |
 | --- | --- |
 | ThisAddIn | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
 | 描述 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
 | URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
-| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`︰標準文字方塊，字串的預設值。</li><li>`list`︰標準下拉式方塊，清單的預設值。</li><li>`yesno`︰可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`︰包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
+| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`︰標準文字方塊，字串的預設值。</li><li>`list`︰標準下拉式方塊，清單的預設值。</li><li>`yesno`︰可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`︰包含 [**...**] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 
 範例：
 
@@ -130,13 +130,13 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 }
 ```
 
-### <a name="running-visual-studio-tasks"></a>執行 Visual Studio 工作
+### <a name="run-visual-studio-tasks"></a>執行 Visual Studio 工作
 
 Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能，可在產生檔案之後執行任意 Python 程式碼。 雖然有彈性，卻不能輕鬆存取 Visual Studio。
 
 例如，您可能想在 Visual Studio 編輯器或其網頁瀏覽器中開啟檔案，或是觸發會提示使用者建立虛擬環境並安裝套件需求的 Visual Studio UI。
 
-針對這些情況，Visual Studio 會在 `cookiecutter.json` 中尋找擴充的中繼資料，該中繼資料描述在使用者於 [方案總管] 開啟產生的檔案後或檔案加入現有的專案後要執行的命令 (同樣地，使用者可以透過清除範本選項中的 [完成時執行其他工作]，選擇不要執行工作)。
+針對這些情況，Visual Studio 會在 *cookiecutter.json* 中尋找擴充的中繼資料，該中繼資料描述在使用者於 [方案總管] 開啟產生的檔案後或檔案加入現有的專案後要執行的命令 (同樣地，使用者可以透過清除範本選項中的 [完成時執行其他工作]，選擇不要執行工作)。
 
 範例：
 
@@ -157,7 +157,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 ]
 ```
 
-命令是依名稱指定，而且應使用非當地語系化 (英文) 名稱在 Visual Studio 的當地語系化安裝上操作。 您可以在 Visual Studio 命令視窗中測試和探索命令名稱。
+命令是依名稱指定，而且應使用非當地語系化 (英文) 名稱在 Visual Studio 的當地語系化安裝上操作。 您可以在 Visual Studio [命令] 視窗中測試和探索命令名稱。
 
 如果您想傳遞單一引數，請將其指定為字串，如上一個範例所示。
 
@@ -188,13 +188,13 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 引數可以參考其他 Cookiecutter 變數。 在上述範例中，內部的 `_output_folder_path` 變數用以組成所產生檔案的絕對路徑。
 
-請注意，只有在加入檔案到現有專案時，`Python.InstallProjectRequirements` 命令才有效。 此限制的存在，是因為命令是由方案總管中的 Python 專案處理，而在方案總管的 [資料夾檢視] 中沒有可接收訊息的專案。 我們希望未來的版本中能解除這項限制 (並在整體上提供更好的 [資料夾檢視] 支援)。
+請注意，只有在加入檔案到現有專案時，`Python.InstallProjectRequirements` 命令才有效。 此限制的存在，是因為命令是由 [方案總管] 中的 Python 專案處理，而在 [方案總管] - [資料夾檢視] 中沒有可接收訊息的專案。 我們希望未來的版本中能解除此限制 (並在整體上提供更好的 [資料夾檢視] 支援)。
 
 ## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="error-loading-template"></a>載入範本時發生錯誤
 
-有些範本可能在其 `cookiecutter.json` 中使用無效的資料類型，例如布林值。 選取範本資訊窗格中的 [問題] 連結，將這類執行個體報告給範本作者。
+有些範本可能在其 *cookiecutter.json* 中使用無效的資料類型，例如布林值。 選取範本資訊窗格中的 [問題] 連結，將這類執行個體報告給範本作者。
 
 ### <a name="hook-script-failed"></a>Hook 指令碼失敗
 
@@ -202,7 +202,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows 上不支援 Hook 指令碼
 
-如果後置指令碼為 `.sh`，它可能未與您 Windows 電腦上的應用程式建立關聯。 您可能會看到 Windows 對話方塊，要求您在 Windows 市集尋找相容的應用程式。
+如果後置指令碼為 *.sh*，它可能未與您 Windows 電腦上的應用程式建立關聯。 您可能會看到 Windows 對話方塊，要求您在 Windows 市集尋找相容的應用程式。
 
 ### <a name="templates-with-known-issues"></a>含有已知問題的範本
 
@@ -213,7 +213,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 載入失敗：
 
-- **chrisdev/wagtail-cookiecutter-foundation** (在 cookiecutter.json 中使用布林值型別)
+- **chrisdev/wagtail-cookiecutter-foundation** (在 *cookiecutter.json* 中使用布林值型別)
 - **quintoandar/cookiecutter-android** (沒有範本資料夾)
 
 執行失敗：

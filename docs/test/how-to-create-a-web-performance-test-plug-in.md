@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178357"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380162"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
 
@@ -35,7 +35,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 1.  開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 
-2.  在 [方案總管] 中，以滑鼠右鍵按一下方案、選取 [新增]，然後選擇 [新增專案]。
+2.  在 [方案總管] 中，以滑鼠右鍵按一下方案並選取 [新增]，然後選擇 [新增專案]。
 
      [新增專案] 對話方塊隨即顯示。
 
@@ -57,7 +57,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 11. 選擇 [確定] 。
 
-     [Microsoft.VisualStudio.QualityTools.WebTestFramework] 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
 12. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增 Web 效能測試外掛程式的負載測試，然後選取 [新增參考]。
 

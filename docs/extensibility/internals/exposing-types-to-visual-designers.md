@@ -1,5 +1,5 @@
 ---
-title: 若要公開的視覺化設計工具的類型 |Microsoft 文件
+title: 將類型公開至視覺化設計工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,36 +15,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ca4b0ae279cc58945c864167d3068dd3d9b3a51
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135970"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497485"
 ---
-# <a name="exposing-types-to-visual-designers"></a>若要公開的視覺化設計工具的類型
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考加上其相依性） 的一組完整的相依性的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂的工具所產生的檔案中定義的型別。  
+# <a name="expose-types-to-visual-designers"></a>公開至視覺化設計工具的型別
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考，加上其相依性） 的完整相依性集合的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂工具所產生的檔案中定義的類型。  
   
- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案系統支援透過暫存可攜式存取產生的類別和類型的可執行檔 (暫存 PEs)。 自訂工具產生的任何檔案可以編譯至暫存組件，能夠從這些組件載入及公開給設計工具類型。 每個自訂工具的輸出會先編譯成個別的 temporary PE，並成功或失敗的此暫存編譯僅取決於可以編譯所產生的檔案。 即使整個，可能無法建置專案，個別暫存 PEs 可能仍是提供給設計工具。  
+ [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案系統會提供支援透過暫存可攜式存取產生的類別和類型的可執行檔 (暫存 PEs)。 自訂工具產生的任何檔案可以編譯成暫存組件，如此才能從這些組件載入並且公開至設計工具型別。 每個自訂工具的輸出會編譯成個別的 temporary PE，並成功或失敗的這個暫存編譯僅取決於可以編譯所產生的檔案。 即使整個，可能無法建置專案，個別的暫存 PEs 可能仍然可以設計工具。  
   
- 專案系統會提供完整支援變更追蹤輸出檔的自訂工具，前提是這些變更將會執行自訂工具的結果。 每次執行自訂工具時，會產生新的 temporary PE，並適當的通知傳送給設計工具。  
+ 專案系統的變更追蹤輸出檔的自訂工具，提供完整支援，前提是這些變更是執行自訂工具的結果。 每次執行自訂工具時，會產生新的 temporary PE，並適當的通知傳送給設計工具。  
   
 > [!NOTE]
->  臨時程式可執行檔的產生的檔案會在幕後，因為任何錯誤會不報告給使用者，如果編譯會失敗。  
+>  臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。  
   
- 善用暫時的 PE 支援的自訂工具必須遵循下列規則：  
+ 利用暫時的 PE 支援的自訂工具必須遵循下列規則：  
   
--   `GeneratesDesignTimeSource` 必須設定為 1 的登錄中。  
+-   **GeneratesDesignTimeSource**必須在登錄中設定為 1。  
   
-     沒有程式可執行檔編譯發生未進行此設定。  
+     不程式可執行檔會進行編譯而不需要這項設定。  
   
--   產生的程式碼必須在相同的通用專案設定的語言。  
+-   產生的程式碼必須位於相同的通用專案設定的語言。  
   
-     無論做為要求的擴充功能中報告的自訂工具編譯 temporary PE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提`GeneratesDesignTimeSource`登錄中設定為 1。 擴充功能不需要是.vb、.cs 或.jsl;它可以是任何擴充功能。  
+     不論什麼自訂工具會回報為要求的擴充功能，在編譯 temporary PE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提**GeneratesDesignTimeSource**在登錄中設定為 1。 延伸模組不一定要 *.vb*， *.cs*，或 *.jsl*; 它可以是任何擴充功能。  
   
--   自訂工具產生的程式碼必須是有效的和它必須編譯時間在它自己使用只有參考專案中有一組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>執行完成。  
+-   自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。  
   
-     Temporary PE 編譯時，只提供給編譯器的原始程式檔時自訂工具輸出。 因此，使用 temporary PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
+     Temporary PE 編譯時，只提供給編譯器的原始程式檔就會是自訂工具輸出。 因此，使用暫存的 PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
   
 ## <a name="see-also"></a>另請參閱  
  [BuildManager 物件簡介](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   

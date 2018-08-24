@@ -1,6 +1,6 @@
 ---
-title: 隱藏在 Visual Studio 中的程式碼分析警告
-ms.date: 01/29/2018
+title: 隱藏程式碼分析警告
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117780"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513042"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
 它通常是用於指出警告不適用。 這表示小組成員檢閱的程式碼，而且可以隱藏警告。 來源隱藏項目 (ISS) 使用<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性隱藏警告。 屬性可以放接近產生警告的程式碼片段。 您可以加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性至原始程式檔中輸入，或者您可以使用捷徑功能表上的警告中**錯誤清單**自動將它加入。
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才是隨附於您的 managed 程式碼組件的 IL 中繼資料的條件式屬性。
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性是在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才會包含您的 managed 程式碼組件的 IL 中繼資料中的條件式屬性。
 
 在 C + + /cli CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
 
@@ -35,7 +35,9 @@ ms.locfileid: "37117780"
 > 您不應該在發行組建中，使用在原始程式檔的隱藏項目，以避免不小心傳送來源在隱藏項目中繼資料。 此外，在原始程式檔隱藏項目處理成本，因為您的應用程式的效能可能會降低。
 
 > [!NOTE]
-> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨與程式碼分析警告的數量非常龐大。 如果您尚未準備好，修正警告，而且想要暫時關閉程式碼分析，開啟專案屬性頁 (**專案** > **\<專案 > 屬性**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同且較小的規則集至對程式碼執行。 請記住要關閉重新開啟當您準備好，修正警告的程式碼分析。
+> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨大量程式碼分析警告。 來自這些警告[Roslyn 分析器](roslyn-analyzers-overview.md)。 如果您尚未準備好，修正警告，您就可以隱藏所有人都選擇**分析** > **執行程式碼分析和隱藏作用中問題**。
+>
+> ![執行程式碼分析並隱藏在 Visual Studio 中的問題](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 屬性的屬性包括：
 
-- **規則類別**-規則定義所在的類別。 如需程式碼分析規則類別的詳細資訊，請參閱[Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。
+- **類別目錄**-規則定義所在的類別。 如需程式碼分析規則類別的詳細資訊，請參閱[Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。
 
-- **規則 Id** -規則的識別碼。 支援包括同時短期和長期的規則識別項的名稱。 簡短名稱是 CAXXXX;CAXXXX:FriendlyTypeName 長的名稱。
+- **CheckId** -規則的識別碼。 支援包括同時短期和長期的規則識別項的名稱。 簡短名稱是 CAXXXX;CAXXXX:FriendlyTypeName 長的名稱。
 
 - **理由**-用來記錄原因隱藏訊息的文字。
 
-- **訊息識別碼**-每個訊息發生問題的唯一識別碼。
+- **MessageId** -每個訊息發生問題的唯一識別碼。
 
 - **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：
 

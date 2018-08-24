@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d0b1307d86b32f1def3c4474e1ca25959915c0
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056442"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636248"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 實作尋找和取代機制
 

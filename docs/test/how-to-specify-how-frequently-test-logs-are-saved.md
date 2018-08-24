@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966650"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381930"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定儲存測試記錄的頻率
 
@@ -25,7 +25,7 @@ ms.locfileid: "31966650"
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-您可以使用 [負載測試編輯器] 變更 [屬性] 視窗中的 [已完成之測試的儲存記錄檔頻率] 屬性，以指定在負載測試中儲存測試記錄檔的頻率。
+您可以使用 [負載測試編輯器] 變更 [屬性] 視窗中的 [已完成之測試的儲存記錄檔頻率] 屬性，以指定在負載測試中儲存測試記錄的頻率。
 
 ## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>若要指定負載測試中儲存測試記錄檔的頻率
 
@@ -33,7 +33,7 @@ ms.locfileid: "31966650"
 
      [負載測試編輯器] 隨即出現。 其中會顯示負載測試樹狀目錄。
 
-2.  在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇您要對其指定測試記錄檔儲存頻率的回合設定節點。
+2.  在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇您要對其指定測試記錄儲存頻率的回合設定節點。
 
 3.  在 [檢視] 功能表上，選取 [屬性視窗]。
 
@@ -52,6 +52,5 @@ ms.locfileid: "31966650"
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)
-- [編輯負載測試情節](../test/edit-load-test-scenarios.md)
-- [如何：指定測試失敗是否會儲存至測試記錄檔](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
+- [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
 - [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)

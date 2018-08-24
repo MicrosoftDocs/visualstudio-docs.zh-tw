@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977111"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380766"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>建立診斷資料配接器的範例專案
 
@@ -324,7 +324,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ```
 
-## <a name="compiling-the-code"></a>編譯程式碼
+## <a name="compile-the-code"></a>編譯程式碼
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>建立此診斷配接器的程式碼專案
 
@@ -364,7 +364,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 8.  將本文件前段所列的診斷資料配接器類別，複製到您類別庫的類別中。 儲存此類別。
 
-9. 若要將使用者控制項新增至專案，以滑鼠右鍵按一下 [方案總管] 中的 [MyDataCollector] 專案，指向 [新增]，然後選擇 [使用者控制項]。 選擇 [新增]。
+9. 若要將使用者控制項新增至專案，以滑鼠右鍵按一下 [方案總管] 中的 **MyDataCollector** 專案，指向 [新增]，然後選擇 [使用者控制項]。 選擇 [新增]。
 
 10. 使用工具列，將標籤新增至使用者控制項，然後將 [Text] 屬性變更為 [檔案名稱:]。
 
@@ -375,11 +375,11 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
     > [!NOTE]
     > 根據預設，使用者控制項的名稱是 UserControl1。 請確定使用者控制項類別程式碼使用的是您的使用者控制項名稱。
 
-13. 若要建立組態檔，以滑鼠右鍵按一下 [方案總管] 中的方案，指向 [新增]，然後選擇 [新增項目]。 選擇以選取 [應用程式組態檔]，然後選擇 [新增]。 隨即將名為 **App.config** 的檔案新增至您的方案中。
+13. 若要建立組態檔，以滑鼠右鍵按一下 [方案總管] 中的方案，指向 [新增]，然後選擇 [新增項目]。 選擇以選取 [應用程式組態檔]，然後選擇 [新增]。 隨即將名為 *App.config* 的檔案新增至您的方案中。
 
 14. 將先前提供之範例中的 XML 複製到 XML 檔中。 儲存檔案。
 
-15. 建置方案，然後將建置的組件和 `App.config` 檔案複製到 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* 目錄中。
+15. 建置方案，然後將建置的組件和 *App.config* 檔案複製到 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* 目錄中。
 
 16. 建立使用此自訂資料診斷配接器的測試設定。 設定用以收集現存檔案的測試設定。
 

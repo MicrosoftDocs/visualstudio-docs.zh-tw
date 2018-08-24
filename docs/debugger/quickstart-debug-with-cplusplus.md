@@ -1,8 +1,8 @@
 ---
 title: 偵錯 c + +
-description: 偵錯原生程式碼使用 Visual Studio 偵錯工具
+description: 使用 Visual Studio 偵錯工具的原生程式碼進行偵錯
 ms.custom: mvc
-ms.date: 03/18/2018
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1027e5f737bf3fc75b33c47578ae0cc107a1fb7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926320"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639772"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門： 偵錯 c + + 使用 Visual Studio 偵錯工具
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>使用 c + + 使用 Visual Studio 偵錯工具的快速入門： 偵錯
 
-Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供了解一些基本功能的快速方法。
+Visual Studio 偵錯工具提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供了解一些基本功能的快速方法。
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
@@ -30,9 +30,9 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 2. 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。
 
-    如果您沒有看到**Windows 主控台應用程式**專案範本，請按一下**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案** 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**的 c + + 桌面應用程式開發**工作負載，然後選擇 **修改**。
+    如果您沒有看到**Windows 主控台應用程式**專案範本，請按一下 [**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案**] 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**使用 c + + 的桌面開發**工作負載，然後選擇**修改**。
 
-3. 輸入的名稱，例如**MyDbgApp**按一下**確定**。
+3. 輸入名稱，例如**MyDbgApp**然後按一下**確定**。
 
     Visual Studio 會建立專案。
 
@@ -76,38 +76,38 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 ## <a name="set-a-breakpoint"></a>設定中斷點
 
-A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程式碼，讓您可以查看變數的值或記憶體，或正在執行的程式碼分支是否的行為。 這是在偵錯最基本的功能。
+A*中斷點*會指示 Visual Studio 應暫止您的執行中的標記程式碼，使您可以看看變數的值或記憶體，或正在執行的程式碼分支是否的行為。 這是在偵錯最基本的功能。
 
-1. 若要設定中斷點，請按一下左邊的裝訂邊中`doWork`函式呼叫 (或是選取該行程式碼，然後按**F9**)。
+1. 若要設定中斷點，按一下左邊的裝訂邊`doWork`函式呼叫 (或選取一行程式碼，然後按**F9**)。
 
     ![設定中斷點](../debugger/media/dbg-qs-set-breakpoint.png "設定中斷點")
 
-2. 現在按**F5** (或選擇**偵錯 > 開始偵錯**)。
+2. 現在，按下**F5** (或選擇**偵錯 > 啟動偵錯**)。
 
     ![叫用中斷點](../debugger/media/dbg-qs-hit-breakpoint.png "叫用中斷點")
 
-    偵錯工具暫停，您用來設定中斷點。 暫停偵錯工具和應用程式執行的所在的陳述式會以黃色箭號。 線條`doWork`函式呼叫尚未執行。
+    您用來設定中斷點的偵錯工具暫停。 暫停偵錯工具和應用程式執行所在的陳述式會以黃色箭號。 該程式行使用`doWork`函式呼叫尚未執行。
 
     > [!TIP]
-    > 如果您有在迴圈或遞迴時，中斷點，或如果您有很多經常逐步執行的中斷點使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)以確定程式碼只在符合特定條件時暫停。 條件式中斷點可以節省時間，而且也可做讓更容易偵錯難以重現的問題。
+    > 如果您有以迴圈或遞迴時，中斷點，或如果您有許多的中斷點，您經常逐步執行，使用[條件式中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)藉此確定只在符合特定條件時，會暫停您的程式碼。 條件式中斷點省時又還能夠更輕鬆地偵錯難以重現的問題。
 
     當您嘗試偵錯記憶體相關的失敗，c + + 中，您也可以使用中斷點來檢查位址值 （尋找 NULL） 和參考計數。 
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-有不同的命令，以指示偵錯工具繼續。 我們會顯示新功能 Visual Studio 2017 的有用的程式碼瀏覽命令。
+有不同的命令，以指示以繼續偵錯工具。 我們會示範 Visual Studio 2017 的新實用的程式碼巡覽命令。
 
-當在中斷點暫停時，將滑鼠停留在陳述式`c1.push_back(20)`直到綠色**按一下執行**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")隨即出現，並再按下**按一下執行** 按鈕。
+當在中斷點暫停時，將滑鼠移至陳述式`c1.push_back(20)`直到綠色**執行至點選** 按鈕![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")隨即出現，並再按下**執行至點選** 按鈕。
 
-![按一下 執行](../debugger/media/dbg-qs-run-to-click.png "執行，按一下")
+![按一下 執行](../debugger/media/dbg-qs-run-to-click.png "執行 按一下")
 
-在應用程式繼續執行時，呼叫`doWork`，並在您按下按鈕的程式碼行上暫停。
+在應用程式繼續執行，呼叫`doWork`，並在您所按按鈕的程式碼行上暫停。
 
-常見的鍵盤命令用來逐步執行程式碼包含**F10**和**F11**。 深入了解的詳細指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
+通用的鍵盤命令，可用來逐步執行程式碼包含**F10**並**F11**。 如需詳細的深入指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>檢查資料提示方塊中的變數
 
-1. 目前這一行 （標示黃色執行指標） 的程式碼，將滑鼠停留在`c1`物件，使用滑鼠來顯示資料提示方塊。
+1. 在目前這一行程式碼 （黃色執行指標為標記），滑鼠停留`c1`物件，使用滑鼠來顯示資料提示方塊。
 
     ![檢視資料提示方塊](../debugger/media/dbg-qs-data-tip.png "檢視資料提示方塊")
 
@@ -115,25 +115,25 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
 
 2. 展開以查看目前的屬性值的資料提示方塊`c1`物件。
 
-3. 如果您想要固定 datatip，讓您可以繼續以查看值`c1`時執行程式碼時，按一下 小釘選圖示。 （您可以到方便的位置移動固定資料提示方塊）。
+3. 如果您想要固定 datatip，讓您可以繼續以查看值`c1`時執行程式碼時，按一下 小釘選圖示。 （您可以移動固定資料提示方塊到方便存取的位置）。
 
-## <a name="edit-code-and-continue-debugging"></a>編輯程式碼，然後繼續偵錯
+## <a name="edit-code-and-continue-debugging"></a>編輯程式碼並繼續偵錯
 
-如果您找出您想要測試在您的程式碼執行偵錯工作階段時變更，您可以執行。
+如果您找出您想要測試您的程式碼，在 偵錯工作階段中的變更，您可以這麼做，太。
 
 1. 按一下第二個執行個體`c2.front()`並變更`c2.front()`至`c2.back()`。
 
-2. 按**F10** (或**偵錯 > 不進入函式**) 數次前進偵錯工具並執行已編輯的程式碼。
+2. 按下**F10** (或**偵錯 > 不進入函式**) 數次才能進入偵錯工具，並執行已編輯的程式碼。
 
     ![編輯後繼續](../debugger/media/dbg-qs-edit-and-continue.gif "編輯後繼續")
 
-    **F10**進階偵錯工具的其中一個陳述式，在一段期間，但步驟於函式，而不是逐步執行到它們 （仍執行您略過的程式碼）。
+    **F10**前進一次，但步驟的偵錯工具的其中一個陳述式而不函式，而不是逐步執行它們 （您略過的程式碼仍會執行）。
 
-如需詳細資訊和功能限制上使用 編輯後繼續，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+如需使用 編輯後繼續以及功能限制的詳細資訊，請參閱 <<c0> [ 編輯後繼續](../debugger/edit-and-continue.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您學到如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 您可能想要取得的高階偵錯工具功能，以及詳細資訊連結。
+在本教學課程中，您已了解如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 若要高階查看偵錯工具功能，以及其他更多資訊的連結。
 
 > [!div class="nextstepaction"]
 > [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

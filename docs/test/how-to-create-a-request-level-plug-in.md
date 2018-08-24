@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178370"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382031"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 
@@ -28,9 +28,9 @@ ms.locfileid: "39178370"
 
 您可以使用自訂的 Web 效能測試要求外掛程式搭配您已經記錄的 Web 效能測試。 自訂的 Web 效能測試要求外掛程式讓您可以撰寫極少量的程式碼，即可達成對 Web 效能測試的更高層級控制。 但是，自訂的 Web 效能測試外掛程式也可以與 Web 效能測試程式碼搭配使用。 請參閱[產生和執行自動程式化 Web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)。
 
-## <a name="to-create-a-request-level-plug-in"></a>建立要求層級外掛程式
+## <a name="to-create-a-request-level-plug-in"></a>若要建立要求層級外掛程式
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案名稱。 選取 [新增]，然後選擇 [新增專案]。
+1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選取 [新增]，然後選擇 [新增專案]。
 
      [新增專案] 對話方塊隨即顯示。
 
@@ -48,9 +48,9 @@ ms.locfileid: "39178370"
 
 6.  選擇 [.NET] 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]
 
-     [Microsoft.VisualStudio.QualityTools.WebTestFramework] 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-7.  在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，這個專案包含您要加入 Web 效能測試要求測試外掛程式的負載測試。 選取 [新增參考]。
+7.  在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增 Web 效能測試要求測試外掛程式的負載測試。 選取 [新增參考]。
 
      [新增參考] 對話方塊隨即顯示。
 

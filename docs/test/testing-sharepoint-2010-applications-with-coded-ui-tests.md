@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177505"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379708"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "39177505"
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>建立 SharePoint 應用程式的自動程式化 UI 測試
 
-為您的 SharePoint 應用程式[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 [Web 編輯] 介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
+為您的 SharePoint 應用程式[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 [Web 編輯] 介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
 
 ![SharePoint 網頁組件](../test/media/cuit_sharepoint.png)
 
@@ -94,8 +94,8 @@ uiGridKeyboardInputEdit.Text=value;
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](../sharepoint/create-sharepoint-solutions.md)
-- [Verifying and Debugging SharePoint Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
-- [Building and Debugging SharePoint Solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Profiling the Performance of SharePoint Applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

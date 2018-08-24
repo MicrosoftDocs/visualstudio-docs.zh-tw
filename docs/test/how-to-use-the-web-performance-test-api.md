@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175791"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382301"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "39175791"
 
  您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱[如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md) 和[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
-## <a name="to-use-the-webtesting-namespace"></a>使用 WebTesting 命名空間
+## <a name="to-use-the-webtesting-namespace"></a>若要使用 WebTesting 命名空間
 
 1.  開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 

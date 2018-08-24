@@ -1,5 +1,5 @@
 ---
-title: 使用，並設定 Visual Studio 中的 Roslyn 分析器
+title: 使用，並設定 Roslyn 分析器
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204150"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512167"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
 
@@ -141,6 +141,31 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>命令列使用方式
+
+當您建置您的專案，在命令列時，組建輸出中會出現規則違規，如果符合下列條件：
+
+- 分析器會安裝為 Nuget 套件，而不是 VSIX 擴充功能。
+
+- 在專案的程式碼中違反一或多個規則。
+
+- [嚴重性](#rule-severity)違反規則的設定為**警告**，在此情況下違規不會造成建置失敗，或**錯誤**，違反在此情況下會造成建置失敗。
+
+是否會顯示規則的違規，就不會影響組建輸出的詳細資訊。 即使**安靜**詳細等級，出現在組建輸出的規則違規。
+
+> [!TIP]
+> 如果您已經習慣從命令列中，不論是透過執行靜態程式碼分析*FxCopCmd.exe*或透過與 msbuild **RunCodeAnalysis**旗標的以下是如何執行該作業使用 Roslyn 分析器。
+
+若要查看在命令列分析器違規，當您建置使用 msbuild 的專案時，執行如下命令：
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+下圖顯示建置專案，其中包含分析器規則的違規情況的命令列組建輸出：
+
+![MSBuild 輸出與規則違規](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>另請參閱
 

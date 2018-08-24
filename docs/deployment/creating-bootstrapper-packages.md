@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078438"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512180"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
 安裝程式是一般的安裝程式可設定來偵測及安裝可轉散發元件，例如 Windows Installer (*.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  每個可轉散發元件或必要條件中，出現在**必要條件**對 ClickOnce 的對話方塊是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。 
@@ -86,10 +86,10 @@ ms.locfileid: "39078438"
 |--------------|-----------------|  
 |ApplicationName|應用程式的名稱。|  
 |ProcessorArchitecture|可執行檔之目標平台的處理器和每個字組的位元。 包括下列值：<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98 或 Windows ME 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
-|[Versionnt>](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer 組件 (msi.dll) 會在安裝期間執行的版本。|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|如果使用者具有系統管理員權限，則會設定這個屬性。 值為 true 或 false。|  
+|[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95、Windows 98 或 Windows ME 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
+|[Versionnt>](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows Installer 組件 (msi.dll) 會在安裝期間執行的版本。|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|如果使用者具有系統管理員權限，則會設定這個屬性。 值為 true 或 false。|  
 |InstallMode|安裝模式指出需要從中安裝元件的位置。 包括下列值：<br /><br /> 從廠商的網站安裝-HomeSite-必要條件。<br />從您所選擇的位置安裝-SpecificSite-必要條件。<br />從應用程式的相同位置安裝-SameSite-必要條件。|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>從應用程式安裝的個別可轉散發套件  

@@ -1,5 +1,5 @@
 ---
-title: RequiredPlatformVersion 項目 （Visual Studio 範本） |Microsoft 文件
+title: RequiredPlatformVersion 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136168"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635949"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 項目 (Visual Studio 樣板)
-指定的專案範本需要正常運作的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。  
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素 （Visual Studio 範本）
+指定的專案範本正常運作所需的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。  
   
- `RequiredPlatformVersion`直接與作業系統的版本進行比較的值。 如果`RequiredPlatformVersion`高於作業系統版本中，範本不會出現在**新專案** 對話方塊。 若要指定的範本[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高版本，將`RequiredPlatformVersion`6.2.0 至。 若要指定的範本[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高版本，將 RequiredPlatformVersion 至 6.3.0。  
+ `RequiredPlatformVersion`值會直接與作業系統的版本。 如果`RequiredPlatformVersion`高於作業系統的版本，不會顯示範本，這是在**新的專案** 對話方塊。 若要指定的範本[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高版本，設定`RequiredPlatformVersion`6.2.0 到。 若要指定的範本[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高版本，設定`RequiredPlatformVersion`至 6.3.0。  
   
- 指定範本`RequiredPlatformVersion`= 8 都與先前的客戶相容[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]範本。  
+ 指定的範本`RequiredPlatformVersion`= 8 都與先前的客戶相容[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]範本。  
   
  VSTemplate  
 TemplateData  
@@ -36,18 +36,18 @@ RequiredPlatformVersion
 <RequiredPlatformVersion> OperatingSystem </RequiredPlatformVersion>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  無。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|指定專案範本的目標平台。|  
   
@@ -74,6 +74,6 @@ RequiredPlatformVersion
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [TargetPlatformName 項目 （Visual Studio 範本）](../extensibility/targetplatformname-element-visual-studio-templates.md)   
+ [TargetPlatformName 元素 （Visual Studio 範本）](../extensibility/targetplatformname-element-visual-studio-templates.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

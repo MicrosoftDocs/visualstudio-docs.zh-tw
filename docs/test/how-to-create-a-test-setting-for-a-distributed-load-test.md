@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180304"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381064"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 
@@ -41,7 +41,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
 ## <a name="create-a-test-setting-for-a-distributed-load-test"></a>建立分散式負載測試的測試設定
 
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>加入分散式負載測試的測試設定
+### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>若要加入分散式負載測試的測試設定
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 [方案項目]，指向 [新增]，然後選擇 [新增項目]。
 
@@ -103,7 +103,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
      在 [屬性名稱] 中鍵入名稱，並且在 [屬性值] 中鍵入值，然後選擇 [確定]。 盡可能多地加入您需要的屬性。
 
-     例如，您可以加入名為 "RAM > 16GB" 且值為 "True" 或 "False" 的屬性，以便篩選具備 16 GB 以上記憶體的測試代理程式電腦。 若要將相同的屬性套用至一個或多個測試代理程式，請使用 [管理測試控制器] 對話方塊。 如需詳細資訊，請參閱[使用 Visual Studio 管理測試控制器和測試代理程式](../test/manage-test-controllers-and-test-agents.md)。
+     例如，您可以加入名為 "RAM > 16GB" 且值為 "True" 或 "False" 的屬性，以便篩選具備 16 GB 以上記憶體的測試代理程式電腦。 若要將相同的屬性套用至一或多個測試代理程式，請使用 [管理測試控制器] 對話方塊。 如需詳細資訊，請參閱[使用 Visual Studio 管理測試控制器和測試代理程式](../test/manage-test-controllers-and-test-agents.md)。
 
 17. 選擇 [資料和診斷]。
 
@@ -126,7 +126,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     |診斷資料配接器|在負載測試中使用|相關主題|
     |-----------------------------|-------------------------|----------------------|
     |**用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy：** 此 Proxy 可讓您針對 IntelliTrace 和測試影響診斷資料配接器，收集從用戶端到網頁伺服器之 HTTP 呼叫的相關資訊。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 除非您有特定需要，必須收集測試代理程式電腦的系統資訊，否則不要包含此配接器。 **注意：** 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集大量資料而發生問題。 <br /><br /> 使用負載測試不會收集測試影響資料。||
-    |**IntelliTrace：** 您可以設定以記錄檔儲存的特定診斷追蹤資訊。 記錄檔具有 .tdlog 副檔名。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷追蹤的記錄檔會自動附加至此 Bug 中。 記錄檔中收集的資料可縮短重現及診斷程式碼錯誤所需的時間，進而提高偵錯的效能。 使用這個記錄檔，就可以在另一部電腦上重新建立本機工作階段。 這樣可降低無法重現 Bug 的風險。<br /><br /> 如需詳細資訊，請參閱[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![重要圖示](../test/media/vc364f3.gif)<br /><br /> 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集和記錄大量資料而發生問題。 您應該僅在執行時間短，且不會使用許多測試代理程式的負載測試中嘗試使用 IntelliTrace 配接器。|[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**IntelliTrace：** 您可以設定以記錄檔儲存的特定診斷追蹤資訊。 記錄檔具有 *.tdlog* 副檔名。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷追蹤的記錄檔會自動附加至此 Bug 中。 記錄檔中收集的資料可縮短重現及診斷程式碼錯誤所需的時間，進而提高偵錯的效能。 使用這個記錄檔，就可以在另一部電腦上重新建立本機工作階段。 這樣可降低無法重現 Bug 的風險。<br /><br /> 如需詳細資訊，請參閱[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![重要圖示](../test/media/vc364f3.gif)<br /><br /> 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集和記錄大量資料而發生問題。 您應該僅在執行時間短，且不會使用許多測試代理程式的負載測試中嘗試使用 IntelliTrace 配接器。|[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET 分析工具：** 您可以建立包含 ASP.NET 分析的測試設定，以收集 ASP.NET Web 應用程式的效能資料。|ASP.NET 分析工具診斷資料配接器會分析 Internet Information Services (IIS) 處理序，因此不會針對開發網頁伺服器執行。 若要在負載測試中分析網站，您必須在 IIS 執行所在的電腦上安裝測試代理程式。 測試代理程式不會產生負荷，而是只進行收集的代理程式。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|[如何：使用測試設定來設定 ASP.NET 分析工具以進行負載測試](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**事件記錄檔：** 您可以設定測試設定來包含事件記錄檔收集 (該事件記錄檔收集是包含在測試結果中)。||[如何：使用測試設定來設定事件記錄檔收集](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
     |**網路模擬：** 您可以使用測試設定指定要對測試加上人為的網路負載。 網路模擬可藉由模擬特定網路連線速度 (如撥號連線)，對電腦的對外通訊產生影響。 **注意：** 網路模擬無法用以增加網路連線速度。|負載測試會忽略網路模擬配接器。 因為負載測試會改用負載測試情節的網路混合中指定的設定。<br /><br /> 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
@@ -185,9 +185,9 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     > [!NOTE]
     > 如果您必須變更測試設定，請選擇 [測試]，然後選擇 [編輯測試設定] 並指向您建立的測試設定。
 
-### <a name="to-remove-a-test-settings-from-your-solution"></a>從您的方案移除測試設定
+### <a name="to-remove-a-test-settings-from-your-solution"></a>若要從您的方案移除測試設定
 
-在 [方案總管] 中的 [方案項目] 下，以滑鼠右鍵按一下您所要移除的測試設定，再選擇 [移除]。
+在 [方案總管] 中的 [方案項目] 下，以滑鼠右鍵按一下您所要移除的測試設定，然後選擇 [移除]。
 
 這個測試設定檔案就會從您的方案移除。 這項變更會反映至 [測試] 功能表上的 [選取現用測試設定] 和 [編輯測試設定] 選項的選擇清單。
 

@@ -1,5 +1,5 @@
 ---
-title: 圖形框架分析 |Microsoft 文件
+title: 圖形畫面格分析 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/09/2017
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479649"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512053"
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -28,23 +28,23 @@ ms.locfileid: "31479649"
   
 -   畫面格分析可以產生下列項目的效能資訊：硬體組態，以及未擷取其中之資訊的裝置。  
   
--   畫面格分析可以從先前擷取的資訊產生新的效能摘要 — 例如，當 GPU 驅動程式會最佳化或公開其他偵錯功能。  
+-   畫面格分析可以從先前擷取的資訊產生新的效能摘要 — 比方說，當 GPU 驅動程式已最佳化或公開其他偵錯功能。  
   
  除了這些優點之外，畫面格分析也可以變更播放期間的畫面格呈現方式，以顯示那些變更可能會如何影響應用程式呈現資訊的相關資訊。 您可以使用此資訊決定可能的最佳化策略，而不需要全部加以實作，然後自行擷取和比較所有結果。  
   
  雖然畫面格分析主要是協助您達到更快的呈現效能，但是同樣地也可協助您針對指定效能目標達到更佳的視覺品質，或減少 GPU 耗電。  
   
- 若要查看畫面格分析可以執行您的應用程式的示範，您可以觀看[Visual Studio 圖形畫面格分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 上的視訊。  
+ 若要查看畫面格分析可以執行您的應用程式的示範，您可以觀看[Visual Studio 圖形畫面格分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 影片。  
   
 ## <a name="using-frame-analysis"></a>使用畫面格分析  
- 在您使用畫面格分析之前，必須從執行中的應用程式擷取圖形資訊，就像使用任何其他圖形分析器工具一樣。 然後，在圖形記錄文件 (.vsglog) 視窗中，選擇 [**畫面格分析**] 索引標籤。  
+ 在您使用畫面格分析之前，必須從執行中的應用程式擷取圖形資訊，就像使用任何其他圖形分析器工具一樣。 然後，在圖形記錄文件 (.vsglog) 視窗中，選擇**畫面格分析** 索引標籤。  
   
  ![選取 [畫面格分析] 索引標籤](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")  
   
  分析完成之後，會顯示結果。 [畫面格分析] 索引標籤上方會顯示時間軸和摘要表格。 下方會顯示詳細資料表格。 如果在播放期間產生錯誤或警告，則會在時間軸上方彙總它們；從此時開始，您可以跟著連結來深入了解錯誤和警告。  
   
 ### <a name="interpreting-results"></a>解譯結果  
- 透過解譯每個變異的結果，您可以推斷關於應用程式的呈現效能與行為的實用資訊。 如需轉譯變異的詳細資訊，請參閱[變異](#Variants)本文稍後。  
+ 透過解譯每個變異的結果，您可以推斷關於應用程式的呈現效能與行為的實用資訊。 如需呈現變異的詳細資訊，請參閱[變體](#Variants)本文稍後。  
   
  部分結果直接指出變異對呈現效能的影響：  
   
@@ -64,7 +64,7 @@ ms.locfileid: "31479649"
   
 -   如果二分之一/四分之一紋理維度變異顯示重大效能提高，則您的紋理可能佔用太多記憶體、耗用太多頻寬，或無效率地使用紋理快取。 如果此變異未顯示效能變更，則您可能使用較大且較精細的紋理，而且沒有花費效能成本。  
   
- 硬體計數器可用時，您可以使用它們來收集應用程式的呈現效能為何不佳的極詳細資訊。 所有功能層級 9.2 及以上的裝置支援深度阻擋查詢 (**像素為單位 occluded**計數器) 和時間戳記。 可能還有其他硬體計數器可用，視 GPU 製造商是否在其驅動程式中實作硬體計數器並將其公開而定。 您可以使用這些計數器，確認摘要表格中所顯示結果的精確原因，例如，您可以檢查深度測試所阻擋像素的百分比，判斷過度繪製是否為因素。  
+ 硬體計數器可用時，您可以使用它們來收集應用程式的呈現效能為何不佳的極詳細資訊。 所有的功能層級 9.2 及以上裝置都支援深度阻擋查詢 (**阻擋的像素**計數器) 和時間戳記。 可能還有其他硬體計數器可用，視 GPU 製造商是否在其驅動程式中實作硬體計數器並將其公開而定。 您可以使用這些計數器，確認摘要表格中所顯示結果的精確原因，例如，您可以檢查深度測試所阻擋像素的百分比，判斷過度繪製是否為因素。  
   
 ### <a name="timeline-and-summary-table"></a>時間軸和摘要表格  
  預設會顯示 [時間軸] 和 [摘要] 表格，並摺疊其他區段。  
@@ -79,7 +79,7 @@ ms.locfileid: "31479649"
 #### <a name="table"></a>資料表  
  時間軸下方數字的表格，會針對與應用程式的預設呈現相關的每個繪製呼叫，顯示每個呈現變異的相對效能。 每個資料行都會顯示不同的呈現變異，而且每個資料列都代表可以在最左邊資料行中識別的不同繪製呼叫；您可以從這裡取得 [圖形事件清單] 視窗中事件的連結。  
   
- ![摘要資料表會顯示不同的變數。] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![摘要資料表會顯示不同的變化。] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  [摘要] 表格最左邊的第二個資料行顯示應用程式的基準呈現時間，也就是應用程式的預設呈現完成繪製呼叫所需的時間長度。 其餘資料行會以 [基準] 的百分比，顯示每個呈現變異的相對效能，這樣可以更容易看到效能是否獲得改善。 大於 100% 的百分比，所需的時間會多於 [基準] (即效能下降)，而小於 100% 的百分比，所需的時間較少 (即效能上升)。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "31479649"
 #### <a name="hot-draw-calls"></a>「熱門」繪製呼叫  
  為了使人注意到耗用較大比例的整體呈現時間的繪製呼叫，或是因為可避免的原因而異常緩慢的繪製呼叫，會在 [基準] 計時比畫面格中所有繪製呼叫的平均 [基準] 計時高於一個標準差時，將含有這些「熱門」繪製呼叫的資料列加上紅色陰影。  
   
- ![這個 DrawIndexed 呼叫具有作用及原始的變數。] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![這個 DrawIndexed 呼叫具有熱門和冷門的變體。] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>統計顯著性  
  為了使人注意到具有最高關聯性的呈現變異，畫面格分析會判斷每個呈現變異的統計顯著性，並將最顯著的呈現變異顯示為粗體。 它會將可改善效能的呈現變異顯示為綠色，並將可讓效能下降的呈現變異顯示為紅色。 它會將沒有統計顯著性的結果顯示為標準類型。  
@@ -103,7 +103,7 @@ ms.locfileid: "31479649"
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>不支援硬體計數器的平台  
  大部分的平台都未完整支援硬體 GPU 計數器，包括 Intel、AMD 和 nVidia 目前提供的所有 GPU。 沒有要收集的硬體計數器時，只會顯示一個 [詳細資料] 表格，而此表格包含所有變異的平均絕對計時。  
   
- ![詳細資料資料表和部分播放變數。] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![在詳細資料資料表和部分播放變數。] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>支援硬體計數器的平台  
  在支援硬體 GPU 計數器的平台上 (例如，nVidia T40 SOC 和所有 Qualcomm SOC)，會顯示數個 [詳細資料] 表格，即一個變異一個 [詳細資料] 表格。 會針對每個呈現變異收集每個可用硬體計數器，並將其顯示在其專屬 [詳細資料] 表格中。  
@@ -145,7 +145,7 @@ ms.locfileid: "31479649"
 ### <a name="gpu-counters"></a>GPU 計數器  
  GPU 硬體計數器支援會因硬體而異。  
   
- 因為 Intel、AMD 或 nVidia 目前提供的電腦 GPU 無法可靠地支援 GPU 硬體計數器，所以畫面格分析不會收集其計數器。 不過，畫面格分析並收集來自下列的 GPU 可靠支援它們的硬體計數器：  
+ 因為 Intel、AMD 或 nVidia 目前提供的電腦 GPU 無法可靠地支援 GPU 硬體計數器，所以畫面格分析不會收集其計數器。 不過，畫面格分析並收集從下列的 GPU，可靠地支援它們的硬體計數器：  
   
 -   nVidia T40 (Tegra4)
   
@@ -161,7 +161,7 @@ ms.locfileid: "31479649"
  在圖形分析器中，如果您播放的圖形記錄檔所使用的功能層級高於播放電腦所支援的功能層級，則會自動回到 WARP。 在畫面格分析中，則明確地不會回到 WARP，且會產生錯誤；WARP 適用於檢查 Direct3D 應用程式的正確性，但不適用於檢查其效能。  
   
 > [!NOTE]
->  但是記住功能層級問題仍然十分重要，這使您可以在不同的硬體組態和裝置上，擷取和播放圖形記錄檔。 可以只要記錄檔未包含 Api 或使用播放電腦不支援的功能層級來播放圖形記錄檔。  
+>  但是記住功能層級問題仍然十分重要，這使您可以在不同的硬體組態和裝置上，擷取和播放圖形記錄檔。 圖形記錄檔可以播放只要記錄檔未包含 Api 或使用播放電腦不支援的功能層級。  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 和以下版本  
  如果您的應用程式呼叫 Direct3D 10 API，則畫面格分析將無法辨識或分析它們，即使其他圖形分析器工具可以辨識到和使用它們也是一樣。
@@ -170,25 +170,25 @@ ms.locfileid: "31479649"
 >  這只適用於您正在使用的 Direct3D API 呼叫，而非功能層級。
 
 ### <a name="warp"></a>WARP  
- 畫面格分析的目的是用來分析和改善實際硬體的呈現效能。 不禁止在 WARP 裝置上執行畫面格分析，但通常不值得追求因為 CPU 上執行的 WARP 會比甚至支援最少的現代 Gpu 慢，而且 WARP 效能有極大差異的特定 CPU上正在執行。  
+ 畫面格分析的目的是用來分析和改善實際硬體的呈現效能。 不禁止在 WARP 裝置上執行畫面格分析，但它通常不值得進行因為是在高端 CPU 上執行的 WARP 會比甚至功能最少的現代 Gpu 慢，而且 WARP 效能有極大差異的特定 CPU它在上執行。  
   
-##  <a name="Variants"></a> 變異  
- 每個畫面格分析對畫面格呈現在播放期間的方式的變更稱為*variant*。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
+##  <a name="Variants"></a> 變化  
+ 每個畫面格分析對畫面格在播放期間呈現的方式的變更就所謂*variant*。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
   
 |變異|描述|  
 |-------------|-----------------|  
-|**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱[1x1 Viewport 大小變異](1x1-viewport-size-variant.md)|  
+|**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱[1x1 檢視區大小變異](1x1-viewport-size-variant.md)|  
 |**0 msaa**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**2x MSAA**|啟用所有呈現目標上的 2x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**4x MSAA**|啟用所有呈現目標上的 4x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
-|**點紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_POINT` (點紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**雙線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (雙線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**三線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (三線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**非等向性紋理篩選**|若要設定的篩選模式`DXD11_FILTER_ANISOTROPIC`和`MaxAnisotropy`至`16`(16 x 非等向性紋理篩選) 所有適當紋理樣本。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**點紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_POINT` (點紋理篩選)。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**雙線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (雙線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**三線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (三線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**非等向性紋理篩選**|若要設定的篩選模式`DXD11_FILTER_ANISOTROPIC`並`MaxAnisotropy`到`16`(16 x 非等向性紋理篩選) 所有適當紋理樣本。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**16bpp 呈現目標格式**|將所有呈現目標和背景緩衝區的像素格式設定為 `DXGI_FORMAT_B5G6R5_UNORM` (16bpp、565 格式)。<br /><br /> 如需詳細資訊，請參閱[16bpp 呈現目標格式變異](16bpp-render-target-format-variant.md)|  
-|**Mip 對應產生**|在非呈現目標的所有紋理上啟用 MIP 對應。<br /><br /> 如需詳細資訊，請參閱[mip-map 產生變異](mip-map-generation-variant.md)。|  
-|**二分之一紋理維度**|將非呈現目標之所有紋理上的紋理維度，減少為其在每個維度中之原始大小的一半。 例如，256x128 紋理會減少為 128x64 個材質。<br /><br /> 如需詳細資訊，請參閱[半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)。|  
-|**四分之一紋理維度**|將非呈現目標之所有紋理上的紋理維度減少為其在每個維度中之原始大小的四分之一。 例如，256x128 紋理會減少為 64x32 個材質。<br /><br /> 如需詳細資訊，請參閱[半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)。|  
-|**BC 紋理壓縮**|在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的所有紋理上啟用區塊壓縮。 B8G8R8X8 格式變異是使用 BC1 進行壓縮；B8G8R8A8 和 R8G8B8A8 格式變異則是使用 BC3 進行壓縮。<br /><br /> 如需詳細資訊，請參閱[BC 紋理壓縮變異](bc-texture-compression-variant.md)。|  
+|**產生 Mip 對應**|在非呈現目標的所有紋理上啟用 MIP 對應。<br /><br /> 如需詳細資訊，請參閱 < [mip-map 產生變異](mip-map-generation-variant.md)。|  
+|**二分之一紋理維度**|將非呈現目標之所有紋理上的紋理維度，減少為其在每個維度中之原始大小的一半。 例如，256x128 紋理會減少為 128x64 個材質。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)。|  
+|**四分之一紋理維度**|將非呈現目標之所有紋理上的紋理維度減少為其在每個維度中之原始大小的四分之一。 例如，256x128 紋理會減少為 64x32 個材質。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)。|  
+|**BC 紋理壓縮**|在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的所有紋理上啟用區塊壓縮。 B8G8R8X8 格式變異是使用 BC1 進行壓縮；B8G8R8A8 和 R8G8B8A8 格式變異則是使用 BC3 進行壓縮。<br /><br /> 如需詳細資訊，請參閱 < [BC 紋理壓縮變異](bc-texture-compression-variant.md)。|  
   
  大部分變異的結果都是規定好的：「將紋理大小減少為一半會加快 25%」或「啟用 2x MSAA 只會慢 2%」。 其他變異可能需要更多解譯，例如，如果將檢視區維度變更為 1x1 的變異顯示較大的效能提高，則可能表示呈現的瓶頸是低填充率；或者，如果效能未明顯變更，則可能表示呈現的瓶頸是端點處理。

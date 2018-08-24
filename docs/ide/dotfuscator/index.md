@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704392"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468192"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,7 +43,7 @@ Dotfuscator 可以[混淆][obfuscation]您的 .NET 組件來阻礙還原工程�
 
 「保護應用程式的完整性」也相當重要。
 除了還原工程之外，惡意執行者也可能嘗試製作盜版應用程式、改變應用程式在執行階段的行為，或是操控資料。
-Dotfuscator 可以在您的應用程式中插入[偵測、回報及回應未經授權使用][checks] (包括竄改、第三方偵錯以及破解裝置) 的能力。
+Dotfuscator 可以在您的應用程式中插入[偵測及回應未經授權之使用者][checks]的功能，包括竄改、第三方偵錯與已破解 (Root) 的裝置。
 
 如需 Dotfuscator 如何整合到安全軟體開發週期的詳細資訊，請參閱 PreEmptive Solutions 的 [SDL 應用程式保護頁面][sdl-protection]。
 
@@ -56,12 +56,10 @@ Dotfuscator CE 針對開發人員、架構設計人員和測試人員提供多�
 Dotfuscator CE 中包含的 [.NET Obfuscation][obfuscation] 及其他[應用程式保護][app-protection]功能的範例為：
 
 * *[重新命名][renaming]* 識別項，使對編譯過的組件進行還原工程更困難。
-* *[反竄改][tamper]* 會偵測遭竄改應用程式的執行、傳輸事件警示，以及終止遭竄改的工作階段。
-* *[反偵錯][debug]* 會偵測附加以執行應用程式的偵錯工具、傳輸事件警示，以及終止受偵錯的工作階段。
-* *[防裝置破解][root]* 可偵測應用程式是否正在已被破解的 Android 裝置上執行，然後在這些裝置上終止工作階段。
-* *[應用程式到期行為][shelflife]* 會針對「壽命結束」日期進行編碼、在應用程式於到期日之後執行時傳輸警示，以及終止到期的應用程式工作階段。
-* *[例外狀況追蹤][exceptions]* 會監視發生在應用程式中的未處理例外狀況。
-* *[工作階段][sessions]與[功能][features]使用情況追蹤*，會判斷已執行的應用程式、應用程式的版本，以及在應用程式中使用的功能。
+* *[反竄改][tamper]* 會偵測遭竄改應用程式的執行，以及終止或回應遭竄改的工作階段。
+* *[反偵錯][debug]* 會偵測附加以執行應用程式的偵錯工具，以及終止或回應受偵錯的工作階段。
+* *[防裝置破解][root]* 可偵測應用程式是否正在已被破解的 Android 裝置上執行，然後在這些裝置上終止或回應工作階段。
+* *[應用程式到期行為][shelflife]*，它會編碼「生命結束」日期並終止已到期的應用程式工作階段。
 
 如需這些功能的詳細資料，包括如何將它們整合到您的應用程式保護策略，請參閱[功能頁面][capabilities]。
 
@@ -107,9 +105,5 @@ Dotfuscator CE 提供現成的基本保護。
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

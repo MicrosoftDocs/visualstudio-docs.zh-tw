@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234669"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513370"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 這篇文章包含 Visual Studio 說明檢視器整合者的下列工作：  
@@ -820,7 +820,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 12. 在 Contoso IDE 中，選擇 F1 鍵，以測試 F1 功能。  
   
 ### <a name="additional-resources"></a>其他資源  
-針對執行階段 API，請參閱[Windows 說明 API](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)。  
+針對執行階段 API，請參閱[Windows 說明 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。  
   
 如需有關如何運用說明 API 的詳細資訊，請參閱[說明檢視器程式碼範例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   

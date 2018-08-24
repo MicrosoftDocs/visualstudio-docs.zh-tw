@@ -1,5 +1,5 @@
 ---
-title: 撰寫的 Windows Installer 封裝 |Microsoft 文件
+title: 撰寫的 Windows Installer 套件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edb0a1d385129600372fc26693aec729751a768c
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127919"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512864"
 ---
-# <a name="authoring-a-windows-installer-package"></a>撰寫的 Windows Installer 封裝
-資料磁碟機的 Windows Installer 模型。 不用撰寫程序的指令碼，將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。  
+# <a name="author-a-windows-installer-package"></a>撰寫的 Windows Installer 套件
+資料磁碟機的 Windows 安裝程式的模型。 而非撰寫程序的指令碼，以將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。  
   
 ## <a name="database-entries"></a>資料庫項目  
- 若要安裝 VSPackage，Windows Installer 套件必須包含資料庫項目，以執行下列工作：  
+若要安裝 VSPackage，Windows 安裝程式套件必須包含資料庫項目，以執行下列工作：  
   
--   搜尋來尋找舊版系統[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage 支援 （使用 Windows Installer 表格包含 AppSearch、 CompLocator、 RegLocator、 DrLocator，以及簽章）。  
+- 搜尋系統以找出的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage 支援 （使用 Windows Installer 的資料表，包括 AppSearch、 CompLocator、 RegLocator、 DrLocator，以及簽章）。  
   
--   如果不支援的版本，請取消安裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]安裝或如果 （使用 LaunchCondition 資料表） 不符合另一個系統需求的 VSPackage。  
+- 如果沒有支援的版本，請取消安裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]安裝則 VSPackage 的其他系統需求不相符 （使用 LaunchCondition 資料表）。  
   
--   安裝 VSPackage 和相依的檔案 （使用目錄、 元件和檔案表格）。  
+- 安裝 VSPackage 和相依的檔案 （使用 directory、 元件和檔案資料表）。  
   
--   新增適當的資訊，vspackage 登錄 （使用登錄資料表）。  
+- 新增適當的資訊，vspackage 登錄 （Registry 資料表）。  
   
--   整合在 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由呼叫**devenv.exe /setup** （使用 CustomAction 資料表）。  
+- 整合在 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由呼叫**devenv.exe /setup** （使用 CustomAction 資料表）。  
   
- 如需詳細資訊，請參閱[Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
+如需詳細資訊，請參閱 < [Windows Installer](/windows/desktop/Msi/windows-installer-portal)。
   
 ## <a name="setup-tools"></a>安裝程式工具  
- 許多協力廠商安裝程式工具提供用於 Windows Installer 封裝的開發環境。 兩個免費工具，如下所示：  
+有各式各樣的協力廠商安裝程式工具會提供 Windows Installer 封裝的開發環境。 會有下列的免費工具：  
   
--   InstallShield 限量版  
+- InstallShield 限量版  
   
-     您可以透過 Visual Studio 取得 InstallShield 的受限的版本**新專案**對話方塊。 展開**其他專案類型**，然後選取 **安裝和部署**。 選取的 InstallShield 範本。  
+   您可以透過 Visual Studio 中取得的精簡的版本的 InstallShield**新的專案**對話方塊。 依序展開**其他專案類型**，然後選取**安裝和部署**。 選取 InstallShield 範本。  
   
--   Windows Installer XML Toolset  
+- Windows Installer XML 工具組  
   
-     工具組會建置 XML 來源檔案從 Windows Installer 封裝。 工具組是 Microsoft 的開放原始碼專案。 您可以下載的原始程式碼和可執行檔從[ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix)。  
+   Windows Installer XML (WiX) 工具組建置 XML 原始程式檔的 Windows Installer 封裝。 WiX 工具組是 Microsoft 的開放原始碼專案。 您可以下載原始程式碼和可執行檔[Wix 工具組](http://sourceforge.net/projects/wix)。  
   
- 適用於整合到商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
+   適用於整合的商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]利用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+ [使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

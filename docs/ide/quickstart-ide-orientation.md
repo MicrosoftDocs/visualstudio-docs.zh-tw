@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388185"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513269"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -104,12 +104,16 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 我們已經介紹 Visual Studio 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 
-- 在 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)中進行更深入的 Visual Studio 導覽，甚至嘗試一些偵錯工作
+> [!div class="nextstepaction"]
+> [快速入門：將 IDE 個人化](../ide/quickstart-personalize-the-ide.md)
 
-- 請瀏覽 VS 文件中的**一般使用者介面項目**一節，其中會進一步討論[錯誤清單](../ide/reference/error-list-window.md)、[輸出視窗](../ide/reference/output-window.md)、[屬性視窗](../ide/reference/properties-window.md)和[選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)等視窗
+> [!div class="nextstepaction"]
+> [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門：將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
-- [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
-- [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+- [Visual Studio IDE 預覽](../ide/visual-studio-ide.md)
+- [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)

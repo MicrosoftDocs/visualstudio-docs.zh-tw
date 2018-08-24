@@ -1,5 +1,5 @@
 ---
-title: 檢查 [自動變數] 和 [區域變數] 視窗中的變數 |Microsoft 文件
+title: 檢查變數中的 [自動變數] 和 [區域變數] Windows |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454634"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626466"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗
-**自動變數**視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > [自動變數]**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > [區域變數]**) 會相當實用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是在不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查變數中的 [自動變數] 和 [區域變數] 在 Visual Studio 中的 Windows
+**自動變數** 視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > 自動變數**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > 區域變數**) 卻相當有用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是以不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
   
 如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看 [自動變數] 和 [區域變數] 視窗中的物件  
-陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 [[區域變數]](/dotnet/api/system.io.filestream) 視窗中的 **FileStream** 物件範例：  
+陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是範例<xref:System.IO.FileStream?displayProperty=fullName>中的物件**區域變數**視窗：  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -132,7 +132,7 @@ private static int subtractVars(int i, int j)
 -   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
   
 ## <a name="changing-the-window-context"></a>變更視窗內容  
-您可以使用**偵錯位置**工具列選取想要的函式、 執行緒或處理程序，變更在變數視窗的內容。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置] )。 當叫用中斷點時，執行會停止，而且您可以查看偵錯位置工具列，即下圖的底端列。
+您可以使用**偵錯位置**工具列選取想要的函式、 執行緒或處理程序，變更 [變數] 視窗的內容。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置] )。 當叫用中斷點時，會停止執行，您可以看到偵錯位置工具列，也就是下圖底部的資料列。
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

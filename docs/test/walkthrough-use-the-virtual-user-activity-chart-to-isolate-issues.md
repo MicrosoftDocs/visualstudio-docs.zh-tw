@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179826"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382206"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來隔離問題
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來找出問題
 
 在此逐步解說中，您將了解如何使用「虛擬使用者活動圖」找出執行負載測試之個別虛擬使用者所發生的錯誤。
 
- 虛擬使用者活動圖可讓您虛擬化與負載測試相關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 虛擬使用者活動圖會顯示每一個虛擬使用者在測試期間的行為。 這樣可讓您藉由查看使用者活動模式、負載模式來找出效能問題、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 虛擬使用者活動圖只有在負載測試完成執行之後才能使用。
+虛擬使用者活動圖可讓您虛擬化與負載測試相關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 虛擬使用者活動圖會顯示每一個虛擬使用者在測試期間的行為。 這樣可讓您藉由查看使用者活動模式、負載模式來找出效能問題、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 虛擬使用者活動圖只有在負載測試完成執行之後才能使用。
 
- 在這個逐步解說中，您將完成下列工作：
+在這個逐步解說中，您將完成下列工作：
 
 -   了解如何使用下列與「虛擬使用者活動圖」相關聯的工具：
 
@@ -34,7 +34,7 @@ ms.locfileid: "39179826"
 
 -   使用 [虛擬使用者活動圖] 分析特定虛擬使用者所發生的錯誤，並且檢視有問題的錯誤類型詳細資料。
 
- 如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
+如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -52,22 +52,21 @@ ms.locfileid: "39179826"
 
 1.  啟動 Visual Studio。
 
-2.  開啟包含 LoadTest1.loadtest 的 ColorWebApp 方案。 此負載測試是執行本主題開頭必要條件章節中所列三個逐步解說的步驟所產生。
+2.  開啟包含 *LoadTest1.loadtest* 的 **ColorWebApp** 方案。 此負載測試是執行本主題開頭必要條件章節中所列三個逐步解說的步驟所產生。
 
-     此逐步解說中的其餘步驟假設 Web 應用程式的名稱是 ColorWebApp、Web 效能測試的名稱是 ColorWebAppTest.webtest，以及負載測試的名稱是 LoadTest1.loadtest。
+     此逐步解說中的其餘步驟假設 Web 應用程式的名稱是 ColorWebApp、Web 效能測試的名稱是 *ColorWebAppTest.webtest*，以及負載測試的名稱是 *LoadTest1.loadtest*。
 
 ## <a name="run-the-load-test"></a>執行負載測試
- 執行負載測試以收集虛擬使用者活動資料。
 
-### <a name="run-the-load-test-to-collect-virtual-user-activity-data"></a>執行負載測試以收集虛擬使用者活動資料
+執行負載測試以收集虛擬使用者活動資料。
 
 -   在 [負載測試編輯器] 中，選擇工具列上的 [執行] 按鈕。 LoadTest1 便會開始執行。
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>在虛擬使用者活動圖中找出問題
 
-執行負載測試並且收集虛擬使用者活動資料之後，您可以在虛擬使用者活動圖中使用 [負載測試分析器] 的 [詳細資料] 檢視，檢視負載測試結果中的資料。 此外，您還可以使用虛擬使用者活動圖，協助您找出負載測試中的效能問題。
+執行負載測試並且收集虛擬使用者活動資料之後，您可以在 [虛擬使用者活動圖] 中使用 [負載測試分析器] 的 [詳細資料] 檢視，檢視負載測試結果中的資料。 此外，您還可以使用 [虛擬使用者活動圖]，協助您找出負載測試中的效能問題。
 
-### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>在負載測試結果中使用虛擬使用者活動圖
+### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>若要在負載測試結果中使用虛擬使用者活動圖
 
 1.  在負載測試完成執行之後，[負載測試分析器] 中會顯示負載測試結果的 [摘要] 頁面。 選擇工具列上的 [圖形] 按鈕。
 
@@ -76,7 +75,7 @@ ms.locfileid: "39179826"
 2.  在 [頁面回應時間] 圖形上，於其中一個臨界值違規圖示附近按一下滑鼠右鍵，然後選取 [移至使用者詳細資料]。
 
     > [!NOTE]
-    > 您也可以使用 [負載測試編輯器] 工具列中的 [詳細資料] 按鈕，開啟使用者活動圖。 不過，如果您使用 [移至使用者詳細資料] 選項，虛擬使用者活動圖會自動放大您在圖形中以滑鼠右鍵按一下的測試部分。
+    > 您也可以使用 [負載測試編輯器] 工具列中的 [詳細資料] 按鈕，開啟使用者活動圖。 不過，如果您使用 [移至使用者詳細資料] 選項，[虛擬使用者活動圖] 會自動放大您在圖表中以滑鼠右鍵按一下的測試部分。
 
      在顯示的 [詳細資料] 檢視中，[虛擬使用者活動圖] 的焦點會在發生臨界值違規的時段上。
 
@@ -88,7 +87,7 @@ ms.locfileid: "39179826"
 
 5.  在 [篩選結果] 面板中，清除 [顯示成功的結果] 和 [HttpError] 核取方塊，但保留選取 [ValidationRuleError] 核取方塊。
 
-     [虛擬使用者活動圖] 只會顯示在 Red.aspx 頁面上停留超過 3 秒的虛擬使用者，如在先前逐步解說中設定的臨界值違規所指定。
+     [虛擬使用者活動圖] 只會顯示在 *Red.aspx* 頁面上停留超過 3 秒的虛擬使用者，如在先前逐步解說中設定的閾值違規所指定。
 
 6.  將滑鼠指標停留在代表發生臨界值違規之驗證規則錯誤的虛擬使用者的水平線上。
 

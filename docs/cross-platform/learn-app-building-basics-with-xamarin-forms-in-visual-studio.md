@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924420"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251851"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 
@@ -118,7 +118,7 @@ ms.locfileid: "37924420"
 
 1.  以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。在 [加入新項目]  對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
 
-2.  以下列程式碼取代整個 **Weather.cs** 的內容：
+2.  以下列程式碼取代整個 *Weather.cs* 的內容：
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Xamarin.Forms 可讓您實作 .NET Standard 程式庫中的共用 UI 程式碼�
     }
     ```
 
-4.  若要在應用程式啟動時開啟 **WeatherPage** 作為第一個畫面，請以下列程式碼取代 **App.xaml.cs** 中的預設建構函式：
+4.  若要在應用程式啟動時開啟 **WeatherPage** 作為第一個畫面，請以下列程式碼取代 *App.xaml.cs* 中的預設建構函式：
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Xamarin.Forms 可針對每個平台呈現原生的 UI 控制項，讓您的應�
 
      雖然此處未示範，但您可以在 XAML 檔案中使用 `OnPlatform` 標記來選取目前執行應用程式平台專屬的屬性值 (請參閱[基本 XAML 語法](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/))。在程式碼後置檔案中，您可以藉由將 [`Device.RuntimePlatform`](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) 屬性與 [`Device`](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) 類別中所定義名為 [`Device.iOS`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/)、[`Device.Android`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/) 及 [`Device.UWP`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/) 的常數做比較，來判斷目前執行應用程式的平台。
 
-2.  在 **WeatherPage.xaml.cs** 中，以下列程式碼取代 `GetWeatherBtn_Clicked` 事件處理常式。 此程式碼會確認輸入欄位中有郵遞區號，然後針對該郵遞區號擷取資料。 接著，它會將整個頁面的繫結內容設定成產生的 `Weather` 執行個體。 此程式碼最後會將按鈕文字設定成「再次搜尋」來作為結束。 UI 中的每個標籤都會繫結至 `Weather` 類別的屬性。 當您將畫面的繫結內容設定為 `Weather` 執行個體時，這些標籤會自動更新。
+2.  在 *WeatherPage.xaml.cs* 中，以下列程式碼取代 `GetWeatherBtn_Clicked` 事件處理常式。 此程式碼會確認輸入欄位中有郵遞區號，然後針對該郵遞區號擷取資料。 接著，它會將整個頁面的繫結內容設定成產生的 `Weather` 執行個體。 此程式碼最後會將按鈕文字設定成「再次搜尋」來作為結束。 UI 中的每個標籤都會繫結至 `Weather` 類別的屬性。 當您將畫面的繫結內容設定為 `Weather` 執行個體時，這些標籤會自動更新。
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

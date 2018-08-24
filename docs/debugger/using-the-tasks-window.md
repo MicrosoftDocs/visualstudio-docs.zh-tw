@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179992"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512287"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 
@@ -52,7 +52,7 @@ ms.locfileid: "39179992"
 |**旗標**|顯示已加上旗標的工作，並可讓您為工作加上或取消旗標。|
 |**圖示**|黃色箭號表示目前工作。 目前工作是目前執行緒上的最上方工作。<br /><br /> 白色箭號表示最新的工作，即叫用偵錯工具時的最新工作。<br /><br /> 暫停圖示表示已由使用者凍結的工作。 在清單中，於工作上按一下滑鼠右鍵，就可以凍結和解除凍結工作。|
 |**ID**|由系統提供給工作的號碼。 在機器碼中，這是工作的位址。|
-|**Status**|工作目前狀態 （已排程、 作用中、 已封鎖、 死結、 等待，或已完成）。 已排程工作是尚未執行的工作，因此，還沒有呼叫堆疊、指派的執行緒或相關資訊。<br /><br /> 使用中工作是在進入偵錯工具之前正在執行程式碼的工作。<br /><br /> 正在等待或封鎖的工作就是被封鎖，因為它正在等候事件收到訊號、 鎖定被釋放或另一個工作完成。<br /><br /> 死結工作是其執行緒與另一個執行緒產生死結的等待中工作。<br /><br /> 將滑鼠停留**狀態**死結或等待的工作，才能查看區塊的詳細資訊的儲存格。 **警告：** **工作**視窗會報告死結只針對遭到封鎖的工作，會使用支援的 Wait Chain Traversal (WCT) 同步處理原始物件。 例如，對於死結<xref:System.Threading.Tasks.Task>物件，使用了 WCT，偵錯工具會報告**正在等待中-死結**。 死結工作是由並行執行階段，不使用 WCT，偵錯工具會回報**等候**。 如需 WCT 的詳細資訊，請參閱[Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)。|
+|**Status**|工作目前狀態 （已排程、 作用中、 已封鎖、 死結、 等待，或已完成）。 已排程工作是尚未執行的工作，因此，還沒有呼叫堆疊、指派的執行緒或相關資訊。<br /><br /> 使用中工作是在進入偵錯工具之前正在執行程式碼的工作。<br /><br /> 正在等待或封鎖的工作就是被封鎖，因為它正在等候事件收到訊號、 鎖定被釋放或另一個工作完成。<br /><br /> 死結工作是其執行緒與另一個執行緒產生死結的等待中工作。<br /><br /> 將滑鼠停留**狀態**死結或等待的工作，才能查看區塊的詳細資訊的儲存格。 **警告：** **工作**視窗會報告死結只針對遭到封鎖的工作，會使用支援的 Wait Chain Traversal (WCT) 同步處理原始物件。 例如，對於死結<xref:System.Threading.Tasks.Task>物件，使用了 WCT，偵錯工具會報告**正在等待中-死結**。 死結工作是由並行執行階段，不使用 WCT，偵錯工具會回報**等候**。 如需 WCT 的詳細資訊，請參閱[Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal)。|
 |**開始時間**|工作變成使用中的時間。|
 |**持續期間**|工作已處於使用中狀態的秒數。|
 |**完成時間**|工作已完成的時間。|

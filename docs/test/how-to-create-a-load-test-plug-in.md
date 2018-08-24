@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179675"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380534"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 
 您可以建立負載測試外掛程式，以便在執行負載測試的不同時刻執行。 您可以建立外掛程式，以擴充或修改負載測試的內建功能。 例如，您可以撰寫負載測試外掛程式，以便在執行負載測試時，設定或修改負載測試模式。 若要這麼做，就必須建立繼承自 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的類別。 這個類別必須實作此介面的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 方法。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>。
 
 > [!NOTE]
-> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
+> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>使用 Visual C# 建立負載測試外掛程式
 
@@ -60,15 +60,15 @@ ms.locfileid: "39179675"
 
      **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-13. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [加入參考]。
+13. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [新增參考]。
 
-14. [加入參考] 對話方塊隨即顯示。
+14. [新增參考] 對話方塊隨即顯示。
 
 15. 選擇 [專案] 索引標籤，然後選取 [類別庫專案]。
 
 16. 選擇 [確定] 。
 
-17. 在 [程式碼編輯器] 中，加入 `using` 命名空間的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 陳述式。
+17. 在 [程式碼編輯器] 中，加入 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間的 `using` 陳述式。
 
 18. 實作在類別庫專案中所建立之類別的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面。 如需範例實作，請參閱下列的＜範例＞一節。
 

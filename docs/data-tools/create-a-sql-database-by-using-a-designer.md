@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756151"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582368"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中新增資料表
+
 您可以使用 Visual Studio 建立和更新 SQL Server Express LocalDB 中的本機資料庫檔案。 您也可以藉由執行 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。 在本主題中，我們將建立 *.mdf*檔案，並使用資料表設計工具中新增資料表和索引鍵。
 
 ## <a name="prerequisites"></a>必要條件
+
 若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇**工作負載** 索引標籤。底下**Web 和雲端**，選擇**資料儲存和處理**。 選擇**修改**按鈕以新增至 Visual Studio 的工作負載。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>建立專案和本機資料庫檔案
 
-### <a name="to-create-a-project-and-a-database-file"></a>若要建立專案和資料庫檔案
-1.  建立 Windows Forms 專案，稱為`SampleDatabaseWalkthrough`。
+1.  建立 Windows Forms 專案，稱為**SampleDatabaseWalkthrough**。
 
 2.  在功能表列上選取**專案** > **加入新項目**。
 
@@ -41,6 +42,7 @@ ms.locfileid: "36756151"
 4.  為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。
 
 ### <a name="to-add-a-data-source"></a>加入資料來源
+
 5.  如果**資料來源** 視窗未開啟，請開啟所選取**Shift**+**Alt**+**D**索引鍵或在功能表列中，選取**檢視** > **其他 Windows** > **Zdroje dat**。
 
 6.  在 **資料來源**視窗中，選取**加入新的資料來源**連結。
@@ -58,6 +60,7 @@ ms.locfileid: "36756151"
 11. 一**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]。
 
 ### <a name="to-view-properties-of-the-data-connection"></a>若要檢視的資料連接屬性
+
 您可以檢視連接字串*SampleDatabase.mdf*開啟資料連接的 [屬性] 視窗的檔案：
 
 -   在 Visual Studio 中，選取**檢視** > **SQL Server 物件總管**如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點，開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
@@ -65,9 +68,11 @@ ms.locfileid: "36756151"
 -   或者，您可以選取**檢視** > **伺服器總管**，如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點。 開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用資料表設計工具中建立資料表和索引鍵
+
 在本節中，您將建立兩個資料表、 主索引鍵中每個資料表及少數資料列的範例資料。 您也會建立外部索引鍵來指定如何將一個資料表中的記錄對應到其他資料表中的記錄。
 
 ### <a name="to-create-the-customers-table"></a>若要建立 Customers 資料表
+
 1.  中**伺服器總管**或**SQL Server 物件總管**，展開**資料連接** 節點，然後展開**SampleDatabase.mdf**節點。
 
 2.  開啟捷徑功能表**資料表**，然後選取**加入新的資料表**。
@@ -104,6 +109,7 @@ ms.locfileid: "36756151"
     您所做的變更會儲存到本機資料庫檔案中。
 
 ### <a name="to-create-the-orders-table"></a>若要建立 Orders 資料表
+
 1.  加入另一個資料表，然後為下表中的每個項目加入一個資料列：
 
     |資料行名稱|資料類型|允許 Null|
@@ -128,11 +134,12 @@ ms.locfileid: "36756151"
     您所做的變更會儲存到本機資料庫檔案中。
 
 ### <a name="to-create-a-foreign-key"></a>若要建立外部索引鍵
+
 1.  在方格右側的 [內容] 窗格，開啟捷徑功能表**外部索引鍵**，然後選取**加入新的外部索引鍵**，如下圖所示。
 
      ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png)
 
-2.  在出現的文字方塊中，將**ToTable**使用`Customers`。
+2.  在出現的文字方塊中，將**ToTable**具有**客戶**。
 
 3.  在 [T-SQL] 窗格中，更新最後一行以符合下面範例：
 
@@ -147,8 +154,6 @@ ms.locfileid: "36756151"
     您所做的變更會儲存到本機資料庫檔案中。
 
 ## <a name="populate-the-tables-with-data"></a>填入資料表的資料
-
-### <a name="to-populate-the-tables-with-data"></a>若要將資料填入資料表
 
 1.  在 **伺服器總管**或**SQL Server 物件總管**，展開範例資料庫的節點。
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233486"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380640"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -26,13 +26,13 @@ ms.locfileid: "36233486"
 
 - 您可以在本機電腦上的 Visual Studio 執行以特定版本 .NET Framework 為目標的單元測試。
 
-- 您可以從命令提示字元使用 MSTest.exe 執行以特定版本 .NET Framework 為目標的單元測試。
+- 您可以從命令提示字元使用 *MSTest.exe* 執行以特定版本 .NET Framework 為目標的單元測試。
 
 - 您可以於建置過程中在組建代理程式上執行單元測試。
 
 **測試 SharePoint 應用程式**
 
-以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 如需如何使用 Visual Studio 開發 SharePoint 應用程式的詳細資訊，請參閱[建立 SharePoint 解決方案](../sharepoint/create-sharepoint-solutions.md)、[建置和偵錯 SharePoint 解決方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)及[驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
+以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 如需如何使用 Visual Studio 開發 SharePoint 應用程式的詳細資訊，請參閱[建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)、[建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)及[驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
 
 **限制**
 
@@ -103,9 +103,9 @@ ms.locfileid: "36233486"
 
 4.  在 [方案總管] 中，從新的 Visual C++ 測試專案選擇 [卸載專案]。
 
-5.  在 [方案總管] 中，選擇卸載的 Visual C++ 測試專案，然後選擇 [編輯] \< 專案名稱 > [.vcxproj]。
+5.  在 [方案總管] 中，選擇卸載的 Visual C++ 測試專案，然後選擇 [編輯 \<專案名稱>.vcxproj]。
 
-     .vcxproj 檔案會在編輯器中開啟。
+     *.vcxproj* 檔案會在編輯器中開啟。
 
 6.  將標籤為 `"Globals"` 的 `PropertyGroup` 中的 `TargetFrameworkVersion` 設定為版本 3.5 或更新版本。 您不應指定用戶端版本：
 
@@ -120,7 +120,7 @@ ms.locfileid: "36233486"
       </PropertyGroup>
     ```
 
-7.  儲存並關閉 .vcxproj 檔案。
+7.  儲存並關閉 *.vcxproj* 檔案。
 
 8.  在 [方案總管] 中，從新的 Visual C++ 測試專案的捷徑功能表選取 [重新載入專案]。
 

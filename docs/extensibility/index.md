@@ -8,12 +8,12 @@ title: Visual Studio 擴充性文件 | Microsoft Docs
 description: 深入了解 Visual Studio 擴充性。
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
-ms.locfileid: "27246543"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500293"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio 擴充性文件
 

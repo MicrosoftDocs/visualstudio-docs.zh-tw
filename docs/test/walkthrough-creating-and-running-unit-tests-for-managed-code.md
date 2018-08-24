@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978150"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469109"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. 在 [檔案] 功能表上，選取 [新增] > [新增專案]。
 
-2. 在 [新增專案] 對話方塊中，依序展開 [ **已安裝的**]、[ **Visual C#**]，然後選擇 [ **測試**]。
+2. 在 [新增專案] 對話方塊中，依序展開 [已安裝的]、[Visual C#]，然後選擇 [測試]。
 
 3. 在範本清單中選擇 [ **單元測試專案**]。
 
@@ -96,7 +96,7 @@ public void Debit(double amount)
 
    在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從操作功能表選擇 [新增參考]。
 
-6. 在 [參考管理員] 對話方塊中，展開 [ **方案** ]，然後檢查 [ **Bank** ] 項目。
+6. 在 [參考管理員] 對話方塊中，展開 [方案]，然後檢查 [Bank] 項目。
 
 ## <a name="create-the-test-class"></a>建立測試類別
 
@@ -210,7 +210,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ### <a name="analyze-the-test-results"></a>分析測試結果
 
-測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但實際上它增加了提領的金額。
+測試結果會包含說明失敗的訊息。 如果是 `AreEqual` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但它增加了提領的金額。
 
 單元測試發現了一個錯誤：提領的金額應該從帳戶餘額「減去」，但卻被「加入」至帳戶餘額。
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新執行測試
 
-在 [測試總管] 中，選擇 [ **全部執行** ] 以重新執行測試。 紅色/綠色狀態列會轉成綠色，表示通過測試，且測試會移至 [成功的測試] 群組。
+在 [測試總管] 中，選擇 [全部執行] 以重新執行測試。 紅色/綠色狀態列會轉成綠色，表示通過測試，且測試會移至 [成功的測試] 群組。
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>使用單元測試改善您的程式碼
 

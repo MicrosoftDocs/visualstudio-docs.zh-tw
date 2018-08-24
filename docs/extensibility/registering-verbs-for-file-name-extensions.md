@@ -1,5 +1,5 @@
 ---
-title: 註冊副檔名的指令動詞 |Microsoft 文件
+title: 註冊副檔名的動詞命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692b94cc9bba5bf200d71f4356bef849ec2f3aae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138102"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639723"
 ---
-# <a name="registering-verbs-for-file-name-extensions"></a>註冊副檔名的指令動詞
-與應用程式的檔案名稱副檔名關聯通常會有發生於使用者按兩下檔案時的慣用的動作。 這建議動作連結至一個動詞命令，例如開啟時，都會對應至動作。  
+# <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞命令
+與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  
   
- 您可以註冊使用位於的殼層金鑰在 HKEY_CLASSES_ROOT 是擴充功能的程式設計識別項 (ProgID) 相關聯的動詞命令\\*progid*\shell。 如需詳細資訊，請參閱[檔案類型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
+ 您可以註冊擴充功能使用 Shell 機碼位於與的程式設計識別項 (ProgID) 相關聯的動詞**HKEY_CLASSES_ROOT\{progid} \shell**。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
   
-## <a name="registering-standard-verbs"></a>註冊標準動詞命令  
- 作業系統辨識出下列的標準動詞命令：  
+## <a name="register-standard-verbs"></a>註冊標準動詞命令  
+ 作業系統可辨識下列的標準動詞命令：  
   
 -   開啟  
   
@@ -38,12 +38,12 @@ ms.locfileid: "31138102"
   
 -   預覽  
   
- 可能的話，註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 如果沒有開啟檔案並編輯檔案清楚的差異，請使用編輯動詞命令。 例如，開啟.htm 檔案會顯示它在瀏覽器，而編輯.htm 檔案啟動 HTML 編輯器。 標準指令動詞會當地語系化的作業系統地區設定。  
+ 可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟 *.htm*檔案顯示在瀏覽器中，而編輯 *.htm*檔案啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
   
 > [!NOTE]
->  註冊標準動詞命令時, 未設定開啟索引鍵的預設值。 預設值包含在功能表上的顯示字串。 作業系統會提供這個標準指令動詞的字串。  
+>  註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  
   
- 專案檔應該要啟動的新執行個體註冊[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]當使用者在開啟檔案。 下列範例說明標準動詞註冊[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案。  
+ 專案檔應該要啟動的新執行個體註冊[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]當使用者在開啟的檔案。 下列範例說明的標準動詞註冊[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案。  
   
 ```  
 [HKEY_CLASSES_ROOT\.csproj]  
@@ -74,7 +74,7 @@ ms.locfileid: "31138102"
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- 若要開啟現有的執行個體中的檔案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，註冊 DDEEXEC 索引鍵。 下列範例說明標準動詞註冊[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].cs 檔案中。  
+ 若要在現有的執行個體中開啟檔案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，註冊 DDEEXEC 金鑰。 下列範例說明的標準動詞註冊[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs*檔案。  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ ms.locfileid: "31138102"
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>設定預設的動詞命令  
- 預設動作是使用者按兩下 Windows 檔案總管 中的檔案時所執行的動作。 預設的動詞命令為動詞命令指定的預設值為 HKEY_CLASSES_ROOT\\*progid*\Shell 索引鍵。 如果未不指定任何值，這個預設動作是 HKEY_CLASSES_ROOT 中指定的第一個指令動詞\\*progid*\Shell 索引鍵清單。  
+## <a name="set-the-default-verb"></a>設定預設的動詞命令  
+ 預設的動詞命令是使用者按兩下 Windows 檔案總管中的檔案時所執行的動作。 預設的動詞命令是指定為預設值的指令動詞**HKEY_CLASSES_ROOT\\*progid*\Shell**索引鍵。 如果未不指定任何值，預設的動詞命令是在指定的第一個指令動詞**HKEY_CLASSES_ROOT\\*progid*\Shell**索引鍵清單。  
   
 > [!NOTE]
->  如果您想要變更預設的並存部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
+>  如果您想要變更預設的並排顯示部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
   
 ## <a name="see-also"></a>另請參閱  
- [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)
+ [管理並排顯示檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

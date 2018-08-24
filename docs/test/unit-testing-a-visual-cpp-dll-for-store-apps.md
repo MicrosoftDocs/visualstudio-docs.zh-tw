@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117624"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380508"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何測試 Visual C++ DLL
 
@@ -75,7 +75,7 @@ ms.locfileid: "37117624"
 
 2.  在 [新增專案] 對話方塊中，選擇 [DLL (UWP 應用程式)]。
 
-3.  將下列程式碼新增至 **RooterLib.h** 檔案：
+3.  將下列程式碼新增至 *RooterLib.h* 檔案：
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,7 +103,7 @@ ms.locfileid: "37117624"
 
 4.  將 ROOTERLIB_EXPORTS 符號加入命令列。
 
-    1.  在 [方案總管] 中，選擇 [RooterLib] 專案，然後從捷徑功能表選擇 [屬性]。
+    1.  在 [方案總管] 中，選擇 **RooterLib** 專案，然後從捷徑功能表選擇 [屬性]。
 
          ![加入前置處理器符號定義](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
@@ -111,7 +111,7 @@ ms.locfileid: "37117624"
 
     3.  從 [前置處理器定義] 清單選擇 [\<編輯...>]，然後在 [前置處理器定義] 對話方塊中加入 `ROOTERLIB_EXPORTS`。
 
-5.  加入已宣告函式的最低限度實作。 開啟 **RooterLib.cpp** 並新增下列程式碼︰
+5.  加入已宣告函式的最低限度實作。 開啟 *RooterLib.cpp* 並新增下列程式碼︰
 
     ```cpp
     // constructor
@@ -131,7 +131,7 @@ ms.locfileid: "37117624"
 
 1.  將 RooterLib 加入 RooterLibTests 專案。
 
-    1.  在 [方案總管] 中，選擇 [RooterLibTests] 專案，然後在捷徑功能表上選擇 [參考]。
+    1.  在 [方案總管] 中，選擇 **RooterLibTests** 專案，然後在捷徑功能表上選擇 [參考]。
 
     2.  在 [RooterLib 專案屬性] 對話方塊中，展開 [通用屬性]，然後選擇 [架構和參考]。
 
@@ -139,9 +139,9 @@ ms.locfileid: "37117624"
 
     4.  在 [加入參考] 對話方塊中，展開 [方案]，然後選擇 [專案]。 然後選取 [RouterLib] 項目。
 
-2.  在 **unittest1.cpp** 中包含 RooterLib 標頭檔。
+2.  在 *unittest1.cpp* 中包含 RooterLib 標頭檔。
 
-    1.  開啟 **unittest1.cpp**。
+    1.  開啟 *unittest1.cpp*。
 
     2.  將這個程式碼加入 `#include "CppUnitTest.h"` 行的下方：
 
@@ -149,7 +149,7 @@ ms.locfileid: "37117624"
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  加入使用已匯入函式的測試。 將下列程式碼加入至 **unittest1.cpp**：
+3.  加入使用已匯入函式的測試。 將下列程式碼加入至 *unittest1.cpp*：
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -174,7 +174,7 @@ ms.locfileid: "37117624"
 
      新測試會出現在 [測試總管] 的 [未執行的測試] 節點中。
 
-5.  在 [測試總管] 中，選擇 [ **全部執行**]。
+5.  在 [測試總管] 中，選擇 [全部執行]。
 
      ![基本測試成功](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ ms.locfileid: "37117624"
     >
     > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
 
-2.  在 [測試總管] 中，選擇 [ **全部執行**]。
+2.  在 [測試總管] 中，選擇 [全部執行]。
 
 3.  測試失敗。
 
@@ -212,7 +212,7 @@ ms.locfileid: "37117624"
     > [!TIP]
     > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
 
-4.  透過測試強化程式碼，讓新的測試都成功。 將下列內容加入至 **RooterLib.cpp**：
+4.  透過測試強化程式碼，讓新的測試都成功。 將下列內容加入至 *RooterLib.cpp*：
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ ms.locfileid: "37117624"
 
     ```
 
-5.  建置方案，然後在 [測試總管] 中選擇 [全部執行] 。
+5.  建置方案，然後在 [測試總管] 中選擇 [全部執行]。
 
      這兩個測試都通過。
 
@@ -243,7 +243,7 @@ ms.locfileid: "37117624"
 
 ##  <a name="Debug_a_failing_test"></a> 對失敗的測試進行偵錯
 
-1.  將另一個測試加入至 **unittest1.cpp**：
+1.  將另一個測試加入至 *unittest1.cpp*：
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,7 +275,7 @@ ms.locfileid: "37117624"
 
     ```
 
-2.  在 [測試總管] 中，選擇 [ **全部執行**]。
+2.  在 [測試總管] 中，選擇 [全部執行]。
 
      測試失敗。 在 [測試總管] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。
 
@@ -289,7 +289,7 @@ ms.locfileid: "37117624"
 
          當在中斷點停止執行時，逐步執行程式碼。
 
-    3.  將程式碼加入至 **RooterLib.cpp** 以攔截例外狀況︰
+    3.  將程式碼加入至 *RooterLib.cpp* 以攔截例外狀況︰
 
         ```cpp
         #include <stdexcept>

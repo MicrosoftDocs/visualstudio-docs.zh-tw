@@ -1,5 +1,5 @@
 ---
-title: 將目錄加入至新的 [專案] 對話方塊 |Microsoft 文件
+title: 將目錄新增至新的 [專案] 對話方塊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128071"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500783"
 ---
-# <a name="adding-directories-to-the-new-project-dialog-box"></a>將目錄加入至新的 [專案] 對話方塊
-當您建立新的專案類型時，您也可以註冊新的目錄中**新專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也就是節點。 在範例中，會註冊 VSPackage CLSID_Package 所公開的範本。 如此一來，左邊**新專案**對話方塊提供 [加入] 節點，取決於 Folder_Label_ResID 資源的名稱。 此資源是從 VSPackage 附屬 DLL 載入。  
+# <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增至 [新增專案] 對話方塊
+當您建立新的專案類型時，您也可以註冊新的目錄中**新的專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也稱為節點。 在範例中，VSPackage，所公開的範本*CLSID_Package*，註冊。 如此一來，左邊**新的專案**對話方塊會提供加入的節點名稱，取決於*Folder_Label_ResID*資源。 此資源會從 VSPackage 附屬 DLL 載入。  
   
- **資料夾**值代表的資料夾 Folder_Label_ResID 節點會顯示在其下的 GUID。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。  
+ **資料夾**的值代表所在資料夾的 GUID *Folder_Label_ResID*節點會顯示。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。  
   
- TemplatesDir 值會指定包含的專案範本之目錄的完整路徑。 這些檔案可以是.vsz 檔案或要複製的典型的範本檔案。  
+ `TemplatesDir`值會指定包含專案範本的目錄的完整路徑。 這些檔案可以是 *.vsz*檔案或要複製的一般範本檔案。  
   
- 如果您指定 TemplatesLocalizedSubDir，它必須是命名的子目錄 TemplatesDir 保存當地語系化之範本字串的資源識別碼。 因為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入字串資源的附屬 DLL 如果有的話，每個附屬 DLL 可包含不同的子目錄名稱。 SortPriority 值指定排序的優先順序。  
+ 如果您指定`TemplatesLocalizedSubDir`，它必須是字串，可命名的子目錄的資源識別碼`TemplatesDir`保存當地語系化的範本。 因為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入字串資源的附屬 DLL 如果您沒有帳戶，每個附屬 DLL 可包含不同的子目錄名稱。 `SortPriority`值指定排序的優先順序。  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -50,5 +50,5 @@ NoRemove NewProjectTemplates
   
 ## <a name="see-also"></a>另請參閱  
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
- [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [將目錄新增至加入新項目對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [將目錄新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

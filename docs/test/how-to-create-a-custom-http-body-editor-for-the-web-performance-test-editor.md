@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177044"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380651"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
@@ -44,12 +44,12 @@ ms.locfileid: "39177044"
 
 3.  在範本的清單中，選取 [Windows Form 控制項程式庫]。
 
-4.  在 [名稱] 文字方塊中鍵入名稱，例如 `MessageEditors`，然後選擇 [確定]。
+4.  在 [名稱] 文字方塊中鍵入名稱 (例如 `MessageEditors`)，然後選擇 [確定]。
 
     > [!NOTE]
     > 此範例使用 MessageEditors。
 
-     專案會加入至新的方案中，而且設計工具中會出現名為 UserControl1.cs 的 <xref:System.Windows.Forms.UserControl>。
+     專案會加入至新的方案中，而且設計工具中會出現名為 *UserControl1.cs* 的 <xref:System.Windows.Forms.UserControl>。
 
 5.  從 [工具箱] 的 [通用控制項] 分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
 
@@ -121,7 +121,7 @@ ms.locfileid: "39177044"
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>在 Windows 控制項程式庫專案中加入類別
+## <a name="add-a-class-to-the-windows-control-library-project"></a>在 Windows 控制項程式庫專案中加入類別
 
 將類別加入至專案。 它會用來實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 介面。
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面程式碼
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，並選取 [新增新項目]。
+1.  在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，然後選取 [新增新項目]。
 
 2.  隨即顯示 [ 新增項目] 對話方塊。
 
@@ -289,7 +289,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
     > [!NOTE]
     > 關閉 Visual Studio 可確保在您嘗試複製 *.dll* 檔之前，這個檔案不會遭到鎖定。
 
-3.  從您專案的 *bin\debug* 資料夾將產生的 *.dll* 檔 (例如 *MessageEditors.dll*) 複製到 %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins。
+3.  從您專案的 *bin\debug* 資料夾將產生的 *.dll* 檔 (例如 *MessageEditors.dll*) 複製到 *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*。
 
 4.  開啟 Visual Studio。
 
@@ -305,7 +305,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 3.  完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容] 或 [二進位內容]。
 
-4.  在 [屬性] 視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 (…)。
+4.  在 [屬性] 視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 **(…)**。
 
      [編輯 HTTP 內容資料] 對話方塊隨即顯示。
 

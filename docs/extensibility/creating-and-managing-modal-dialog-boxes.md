@@ -1,5 +1,5 @@
 ---
-title: 建立和管理的強制回應對話方塊 |Microsoft 文件
+title: 建立和管理強制回應對話方塊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,48 +13,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b1e39e4479b0b6b909c625e1e8b6ad19955d30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102196"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498745"
 ---
-# <a name="creating-and-managing-modal-dialog-boxes"></a>建立和管理的強制回應對話方塊
-當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，對話方塊中的父視窗已停用，然後關閉對話方塊後重新啟用父視窗。 如果不這麼做，您可能會收到錯誤:"Microsoft Visual Studio 無法關閉，因為強制回應對話方塊為作用中。 關閉 active 對話方塊，然後再試一次。 」  
+# <a name="create-and-manage-modal-dialog-boxes"></a>建立和管理強制回應對話方塊
+當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤： *Microsoft Visual Studio 由於強制回應對話方塊正在使用，所以無法關閉。請關閉使用中的對話方塊，然後重試。*  
   
- 有兩種方式，執行這項處理。 建議的方式，如果您有 WPF 對話方塊中，是從它衍生<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然後呼叫<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>以顯示對話方塊。 如果您這樣做，您不需要管理父視窗的強制回應狀態。  
+ 有兩種執行此動作。 建議的方式，如果您有 [WPF] 對話方塊中，是從它衍生出來<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然後呼叫<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>顯示對話方塊。 如果您這麼做，您不需要管理父視窗的強制回應狀態。  
   
- 如果您的對話方塊不是 WPF 中，或某些其他原因，您不能衍生您的對話方塊類別從<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，那麼您必須藉由呼叫發生在對話方塊的 父<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A>自行並管理強制回應狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A>方法0 (false)，才會顯示對話方塊，並關閉對話方塊後呼叫一次且參數為 1 (true) 方法的參數。  
+ 如果您的對話方塊中不是 WPF，或某些其他原因，您不能衍生您的對話方塊類別從<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，則您必須呼叫來取得對話方塊中的父代<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A>並自行管理強制回應狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A>方法顯示對話方塊，並關閉對話方塊後呼叫一次與參數 1 (true) 方法前 0 (false) 的參數。  
   
-## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>建立對話方塊衍生自 DialogWindow  
+## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>建立衍生自 DialogWindow 對話方塊  
   
-1.  建立 VSIX 專案，名為**OpenDialogTest**加入名為功能表命令和**OpenDialog**。 如需如何執行這項操作的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1.  建立 VSIX 專案，名為**OpenDialogTest** ，並新增名為的功能表命令**OpenDialog**。 如需如何執行這項操作的詳細資訊，請參閱[建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-2.  若要使用<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>類別，則必須加入下列組件的參考 (在的 [架構] 索引標籤中**加入參考**對話方塊):  
+2.  若要使用<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>類別，您必須加入下列組件的參考 (在的 [Framework] 索引標籤中**加入參考**對話方塊):  
   
-    -   PresentationCore  
+    -   *PresentationCore*  
   
-    -   PresentationFramework  
+    -   *PresentationFramework*  
   
-    -   WindowsBase  
+    -   *WindowsBase*  
   
-    -   System.Xaml  
+    -   *System.Xaml*  
   
-3.  在 OpenDialog.cs，加入下列`using`陳述式：  
+3.  在  *OpenDialog.cs*，新增下列`using`陳述式：  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  宣告類別，名為**TestDialogWindow**衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4.  宣告類別，名為`TestDialogWindow`衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  若要能夠最小化和最大化 對話方塊，設定<xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A>和<xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A>為 true:  
+5.  若要能夠降至最低，並最大化 對話方塊中，設定<xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A>和<xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A>設為 true:  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -64,34 +64,34 @@ ms.locfileid: "31102196"
     }  
     ```  
   
-6.  在**OpenDialog.ShowMessageBox**方法時，現有的程式碼替換成下列：  
+6.  在 `OpenDialog.ShowMessageBox`方法，以下列內容取代現有的程式碼：  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  建置並執行應用程式。 Visual Studio 的實驗執行個體應該會出現。 在**工具**的實驗執行個體 功能表中您應該會看到名為命令**叫用 OpenDialog**。 當您按一下這個命令時，您應該會看到對話方塊視窗。 您應該能夠降至最低，並將視窗最大化。  
+7.  建置並執行應用程式。 Visual Studio 的實驗執行個體應該會出現。 在 **工具**的實驗執行個體的功能表您應該會看到名為的命令**叫用 OpenDialog**。 當您按一下此命令時，您應該會看到 [對話方塊] 視窗。 您應該能夠降至最低，並將視窗最大化。  
   
-## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>建立和管理不是衍生自 DialogWindow 對話方塊  
+## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>建立和管理對話方塊中，不是衍生自 DialogWindow  
   
-1.  您可以使用此程序， **OpenDialogTest**您在具有相同的組件參考的上一個程序中建立的方案。  
+1.  此程序中，您可以使用**OpenDialogTest**您在具有相同的組件參考的上一個程序中建立的方案。  
   
-2.  加入下列`using`宣告：  
+2.  新增下列`using`宣告：  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  建立一個名為**TestDialogWindow2**衍生自<xref:System.Windows.Window>:  
+3.  建立一個名為`TestDialogWindow2`衍生自<xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  將參考加入私用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4.  加入私用參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
@@ -106,7 +106,7 @@ ms.locfileid: "31102196"
     }  
     ```  
   
-6.  在**OpenDialog.ShowMessageBox**方法時，現有的程式碼替換成下列：  
+6.  在 `OpenDialog.ShowMessageBox`方法，以下列內容取代現有的程式碼：  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -128,4 +128,4 @@ ms.locfileid: "31102196"
     }  
     ```  
   
-7.  建置並執行應用程式。 在**工具**功能表您應該會看到名為命令**叫用 OpenDialog**。 當您按一下這個命令時，您應該會看到對話方塊視窗。
+7.  建置並執行應用程式。 在 [**工具**] 功能表您應該會看到名為的命令**叫用 OpenDialog**。 當您按一下此命令時，您應該會看到 [對話方塊] 視窗。

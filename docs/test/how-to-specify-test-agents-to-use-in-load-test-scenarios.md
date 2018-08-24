@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968491"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381465"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要用於負載測試情節的測試代理程式
 
@@ -28,12 +28,12 @@ ms.locfileid: "31968491"
 > [!NOTE]
 > 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-指定代理程式的方式，是在 [負載測試編輯器] 中變更 [屬性] 視窗內的 [要使用的代理程式] 屬性。
+指定代理程式的方式，是在 [負載測試編輯器] 中變更 [屬性] 視窗中的 [要使用的代理程式] 屬性。
 
 如果您是要從遠端使用控制器和代理程式執行負載測試，可以指定想要情節使用的代理程式。 例如，您可以指定特定一組代理程式，以便在分析效能趨勢時維持一致性。 另外，代理程式也可以分散在不同的地理位置，讓代理程式執行的指令碼更親近於代理程式所在地。
 
 > [!TIP]
-> 另一個可用的選項是使用網路模擬來模擬慢速網路，而不是實際將代理程式放在遠端網站。 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)和[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+> 另一個可用的選項是使用網路模擬來模擬慢速網路，而不是實際將代理程式放在遠端網站。 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
 如需詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
 

@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977787"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382330"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -35,7 +35,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  和 [未執行的測試] 預設群組中的結果。 您可以變更測試總管群組測試的方式。
 
-您可以從測試總管工具列上執行許多尋找、組織並執行測試工作的功能。
+您可以從 [測試總管] 工具列，執行尋找、組織及執行測試等許多工作。
 
 ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
-執行測試時，測試總管視窗頂端會動畫呈現成功/失敗列。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。
+執行測試時，[測試總管] 視窗頂端會動畫呈現**成功/失敗列**。 測試回合結束時，如果所有測試皆成功，**成功/失敗列**會變成綠色；如果有任何一個測試失敗，則會變成紅色。
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
 |按鈕|描述|
 |-|-|
-|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]  ，然後選擇測試總管工具列上的 [建置之後執行測試]  。|
+|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
 
 ## <a name="view-test-results"></a>檢視測試結果
 
@@ -127,7 +127,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 您可以使用測試總管篩選條件，以在檢視和執行的專案中限制測試方法。
 
-當您在 [測試總管] 的搜尋方塊鍵入字串並選擇 ENTER 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。
+當您在 [測試總管] 的搜尋方塊鍵入字串並選擇 **Enter** 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。
 
 若要依據不同準則篩選：
 
@@ -166,11 +166,11 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  ![選擇播放清單](../test/media/ute_playlist.png)
 
- **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在內容功能表上，選擇 [加入至播放清單] 、[新增播放清單] 。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
+ **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在操作功能表上，選擇 [加入至播放清單] > [新增播放清單]。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
 
  **若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在內容功能表上，選擇 [加入至播放清單] ，然後選擇要加入測試的播放清單。
 
- **若要開啟播放清單**，請選取 Visual Studio 功能表上的 [測試]、[播放清單]，然後從最近使用過的播放清單的清單中選擇，或選取 [開啟播放清單] 指定播放清單的名稱和位置。
+ **若要開啟播放清單**，請選擇 Visual Studio 功能表上的 [測試] > [播放清單]，然後從最近使用過的播放清單的清單中選擇，或選擇 [開啟播放清單] 指定播放清單的名稱和位置。
 
  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -187,11 +187,11 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。
 
- 如需偵錯工具的詳細資訊，請參閱 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
+ 如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 
- 若要診斷測試方法為何花費太多時間，請在測試總管中選取該方法，然後選取操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
+ 若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析單元測試程式碼涵蓋範圍
 
@@ -217,8 +217,8 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 |常見命令| 鍵盤快速鍵|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|Ctrl+R、Ctrl+T|
-|TestExplorer.RunAllTestsInContext|Ctrl+R、T|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**、**Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**、**T**|
 
 > [!NOTE]
 > 您不能在抽象類別中執行測試，因為測試只定義於抽象類別，而不會具現化。 若要在抽象類別執行測試，請建立衍生自抽象類別的類別。

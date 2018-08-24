@@ -1,5 +1,5 @@
 ---
-title: PreviewImage 項目 （Visual Studio 範本） |Microsoft 文件
+title: PreviewImage 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136802"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638973"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 項目 (Visual Studio 範本)
-指定的預覽影像，做為檔案名稱，將會出現在 [預覽影像的**新專案**或**加入新項目**] 對話方塊。  
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 （Visual Studio 範本）
+指定的預覽影像，做為檔案名稱，會出現在 [預覽映像**新的專案**或是**加入新項目**] 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -34,20 +34,20 @@ ms.locfileid: "31136802"
 <PreviewImage>"filename"</PreviewImage>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和元素  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義要如何顯示在**新專案**或**加入新項目** 對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，以及定義如何顯示在**新的專案**或**加入新項目** 對話方塊。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  

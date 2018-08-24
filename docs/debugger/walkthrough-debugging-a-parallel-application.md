@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177301"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468786"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說： 偵錯在 Visual Studio 中的平行應用程式
 本逐步解說示範如何使用**平行工作**並**平行堆疊**視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 程式碼中斷之後，本逐步解說會示範如何使用**平行工作**並**平行堆疊**視窗來檢查。  
@@ -65,9 +65,9 @@ ms.locfileid: "39177301"
   
 1.  在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。  
   
-2.  在 **已安裝的範本** 窗格中，選取 Visual C#、 Visual Basic 或 Visual c + +。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]。  
+2.  選取  **Visual C#**， **Visual Basic**，或**Visual c + +**。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]。  
   
-3.  選取 **主控台應用程式**，然後按一下**確定**。 保留偵錯組態，這是預設值。  
+3.  底下**Windows 桌面**，選擇**主控台應用程式**，然後按一下 **確定**。 保留偵錯組態，這是預設值。  
   
 4.  在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "39177301"
   
      請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您想要查看哪些框架呼叫 s.l 和它呼叫哪些框架，請按一下**切換方法檢視**工具列上的按鈕。 下圖顯示的方法檢視**平行堆疊**視窗。  
   
-     ![[平行堆疊] 視窗中的方法檢視](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![[平行堆疊] 視窗中的 方法檢視](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
      請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 按一下 [**切換方法檢視**] 按鈕以結束這個模式。  
   

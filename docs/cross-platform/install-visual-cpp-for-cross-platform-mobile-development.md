@@ -12,16 +12,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281093"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251903"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 
-您可以使用 Visual Studio 中的 C++ 來建置 Windows 傳統型應用程式、通用 Windows 平台 (UWP) 應用程式、Linux 應用程式，現在還可以建立適用於 Android 和 iOS 的應用程式。 「使用 C++ 進行行動開發」工作負載是 Visual Studio 中一組可安裝的元件，其中包括了跨平台 iOS、Android 及 UWP Visual Studio 範本。 它會安裝快速入門所需的跨平台工具和 SDK，讓您無須自行尋找、下載及設定它們。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯及測試跨平台專案。 本主題描述如何安裝使用 Visual Studio 以 C++ 開發跨平台應用程式時，所需的工具和協力廠商軟體。 如需相關概觀，請參閱 [Visual C++ 跨平台行動裝置應用程式](https://go.microsoft.com/fwlink/p/?LinkId=536383) \(英文\)
+您可以使用 Visual Studio 中的 C++ 來建置 Windows 傳統型應用程式、通用 Windows 平台 (UWP) 應用程式、Linux 應用程式，現在還可以建立適用於 Android 和 iOS 的應用程式。 「使用 C++ 進行行動開發」工作負載是 Visual Studio 中一組可安裝的元件，其中包括了跨平台 iOS、Android 及 UWP Visual Studio 範本。 它會安裝快速入門所需的跨平台工具和 SDK，讓您無須自行尋找、下載及設定它們。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯及測試跨平台專案。 本主題描述如何安裝使用 Visual Studio 以 C++ 開發跨平台應用程式時，所需的工具和協力廠商軟體。 如需相關概觀，請參閱 [Visual C++ 跨平台行動開發](https://go.microsoft.com/fwlink/p/?LinkId=536383)
 
 ## <a name="requirements"></a>需求
 
@@ -105,7 +105,7 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-您可以使用「適用於跨平台行動裝置應用程式開發的 Visual C++」來針對 iOS 程式碼進行編輯、偵錯並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制的緣故，必須從遠端在 Mac 上建置程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定遠端代理程式。 如需詳細的安裝指示、必要條件及組態選項，請參閱 [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md)。 如果您不是針對  iOS 進行建置，可以略過此步驟。
+您可以使用「適用於跨平台行動裝置應用程式開發的 Visual C++」來針對 iOS 程式碼進行編輯、偵錯並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制的緣故，必須從遠端在 Mac 上建置程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定遠端代理程式。 如需詳細的安裝指示、必要條件及設定選項，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 如果您不是針對  iOS 進行建置，可以略過此步驟。
 
 ## <a name="install-or-update-dependencies-manually"></a>手動安裝或更新相依項目
 
@@ -118,11 +118,11 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
 - [Java SE 開發套件](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   依預設，安裝程式會將 Java 工具放在 C:\Program Files (x86)\Java。
+   根據預設，安裝程式會將 Java 工具放在 *C:\Program Files (x86)\Java*。
 
 - [Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
-   在安裝期間，請依照建議更新 API。 確定至少已安裝 Android 5.0 Lollipop (API 層級 21) 的 SDK。 依預設，安裝程式會將 Android SDK 放在 C:\Program Files (x86)\Android\android-sdk。
+   在安裝期間，請依照建議更新 API。 確定至少已安裝 Android 5.0 Lollipop (API 層級 21) 的 SDK。 根據預設，安裝程式會將 Android SDK 放在 *C:\Program Files (x86)\Android\android-sdk*。
 
    您可以在 Android SDK 目錄重新執行 SDK Manager 應用程式來更新 SDK，並安裝選擇性工具和其他 API 層級。 除非您使用 [以系統管理員身分執行]  執行 SDK Manager 應用程式，否則可能無法安裝更新。 如果您有建置 Android 應用程式的問題，請檢查 SDK Manager 以確認已安裝的 SDK 是否有更新。
 
@@ -130,11 +130,11 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
 - [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   根據預設，安裝程式會將 Android NDK 放在 C:\ProgramData\Microsoft\AndroidNDK。 您可以重新下載並安裝 Android NDK，以更新 NDK 安裝。
+   根據預設，安裝程式會將 Android NDK 放在 *C:\ProgramData\Microsoft\AndroidNDK*。 您可以重新下載並安裝 Android NDK，以更新 NDK 安裝。
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   依預設，安裝程式會將 Apache Ant 放在 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps 中。
+   根據預設，安裝程式會將 Apache Ant 放在 *C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps*。
 
 - [Android 版 Microsoft Visual Studio 模擬器](https://aka.ms/vscomemudownload)
 
@@ -154,7 +154,7 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
 1. 選擇 [確定]  ，儲存自訂工具資料夾的位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定工具以使用 iOS 進行建置](install-and-configure-tools-to-build-using-ios.md)
 - [Visual C++ 跨平台行動開發](https://go.microsoft.com/fwlink/p/?LinkId=536383)

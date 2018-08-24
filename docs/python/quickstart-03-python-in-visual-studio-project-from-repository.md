@@ -11,18 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e183833222f64a24a2d523e32f624ed24c54bc58
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056704"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636820"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
 [在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
 
+## <a name="install-the-github-extension-for-visual-studio"></a>安裝適用於 Visual Studio Code 的 GitHub 延伸模組 \(英文\)。
+
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
+
+## <a name="work-with-github-in-visual-studio"></a>在 Visual Studio 中使用 GitHub
 
 1. 啟動 Visual Studio。
 
@@ -33,7 +37,7 @@ ms.locfileid: "37056704"
 1. 在 [本機 Git 存放庫] 下，選取 [複製] 命令，然後在 URL 欄位中輸入 `https://github.com/gregmalcolm/python_koans`，輸入所複製檔案的資料夾，然後選取 [複製] 按鈕。
 
     > [!Tip]
-    > 您在 Team Explorer 中指定的資料夾是和用來接收所複製檔案之資料夾完全相同的資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用存放庫的名稱來建立子資料夾。
+    > 您在 **Team Explorer** 中指定的資料夾，就是用以接收複製檔案的資料夾。 這與 `git clone` 命令不同，不會在 **Team Explorer** 中建立複製品時，自動使用存放庫名稱建立子資料夾。
 
 1. 當複製完成時，存放庫名稱就會出現在 [本機 Git 存放庫] 清單中。 按兩下該名稱，即可瀏覽至 **Team Explorer** 中的存放庫儀表板。
 
@@ -41,23 +45,23 @@ ms.locfileid: "37056704"
 
     ![從複製品建立新專案的 Team Explorer 視窗](media/team-explorer-new-project.png)
 
-1. 在出現的 [新增專案] 對話方塊中，瀏覽至 Python 語言 (或搜尋 "Python")，選取 [從現有 Python 程式碼]，並指定專案名稱，再將 [位置] 設定為與存放庫相同的資料夾，然後選取 [確定]。 在出現的精靈中，選取 [完成]。
+1. 在出現的 [新增專案] 對話方塊中，瀏覽至 [Python] 語言 (或搜尋 "Python")，選取 [從現有 Python 程式碼]，並指定專案名稱，再將 [位置] 設定為與存放庫相同的資料夾，然後選取 [確定]。 在出現的精靈中，選取 [完成]。
 
-1. 從功能表中選取 [檢視] > 方案總管。
+1. 從功能表中選取 [檢視] > [方案總管]。
 
-1. 在 [方案總管] 中，展開 `python3` 節點，並以滑鼠右鍵按一下 `contemplate_koans.py`，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
+1. 在 [方案總管] 中，展開 **python3** 節點，並以滑鼠右鍵按一下 **contemplate_koans.py**，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
 
-1. 從功能表中選取 [專案] > [Koans 屬性]，選取 [一般] 索引標籤，然後將 [工作目錄] 設定為 "python3"。 因為 Visual Studio 預設會將工作目錄設定為專案根目錄，而非啟動檔案的位置 (`python3\contemplate_koans.py`，而您也可以在專案屬性中看到它)，所以這是必要步驟。 程式碼會在工作資料夾中尋找 `koans.txt` 檔案。因此，如果未變更此值，就會出現執行階段錯誤。
+1. 從功能表中選取 [專案] > [Koans 屬性]，選取 [一般] 索引標籤，然後將 [工作目錄] 設定為 "python3"。 因為 Visual Studio 預設會將工作目錄設定為專案根目錄，而非啟動檔案的位置 (*python3\contemplate_koans.py*，而您也可以在專案屬性中看到它)，所以這是必要步驟。 程式碼會在工作資料夾中尋找 *koans.txt* 檔案。因此，如果未變更此值，就會出現執行階段錯誤。
 
     ![設定 Python 專案的工作目錄](media/projects-set-working-directory.png)
 
-1. 按 Ctrl + F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到 `koans.txt` 的 `FileNotFoundError`，請重新檢查上一個步驟中所述的工作目錄設定。
+1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到 *koans.txt* 的 **FileNotFoundError**，請重新檢查上一個步驟中所述的工作目錄設定。
 
-1. 程式順利執行時，會在 `python3/koans/about_asserts.py` 的第 17 行顯示判斷提示錯誤。 這是故意的：程式設計成讓您更正所有故意性錯誤來教導 Python。 (在 Python Koans 所產生的 [Ruby Koans](http://rubykoans.com/) 上可以找到詳細資料)。
+1. 程式順利執行時，會在 *python3/koans/about_asserts.py* 的第 17 行顯示判斷提示錯誤。 這是故意的：程式設計成讓您更正所有故意性錯誤來教導 Python。 (在 Python Koans 所產生的 [Ruby Koans](http://rubykoans.com/) 上可以找到詳細資料)。
 
     ![Python Koans 程式中的第一個輸出](media/koans-output.png)
 
-1. 開啟 `python3/koans/about_asserts.py`，方法是在方案總管中巡覽到它，並按兩下檔案。 請注意，根據預設，在編輯器中看不到行號。 若要變更這個作業，請選取 [工具] > [選項]，並選取對話方塊底部的 [顯示所有設定]，再巡覽至 [文字編輯器] > [Python] > [一般]，然後選取 [行號]：
+1. 開啟 *python3/koans/about_asserts.py*，方法是在 [方案總管] 中巡覽到它，並按兩下該檔案。 請注意，根據預設，在編輯器中看不到行號。 若要變更此項目，請選取 [工具] > [選項]，並選取對話方塊底部的 [顯示所有設定]，再巡覽至 [文字編輯器] > [Python] > [一般]，然後選取 [行號]：
 
     ![開啟 Python 檔案的行號](media/options-general-line-numbers.png)
 
@@ -79,6 +83,6 @@ ms.locfileid: "37056704"
 
 ## <a name="see-also"></a>另請參閱
 
-- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
-- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)
+- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)

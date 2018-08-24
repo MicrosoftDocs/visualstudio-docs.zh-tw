@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978345"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008456"
 ---
-# <a name="introduction-to-wpf"></a>WPF 簡介
+# <a name="wpf-overview"></a>WPF 概觀
 
 Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之使用者介面的 Windows 桌面用戶端應用程式。
 
- ![Contoso Healthcare UI 範例](../designers/media/wpfintrofigure24.png)
+![Contoso Healthcare UI 範例](../designers/media/wpfintrofigure24.png)
 
- WPF 的核心是與解析度無關並以向量為基礎的轉譯引擎，其建置目的是為了利用現代化圖形硬體。 WPF 利用一組完整的應用程式開發功能來擴充核心，包括 Extensible Application Markup Language (XAML)、控制項、資料繫結、版面配置、2D 和 3D 圖形、動畫、樣式、範本、文件、媒體、文字，以及印刷樣式。 WPF 隨附於 .NET Framework，因此您可以建置納入 .NET Framework 類別庫之其他項目的應用程式。
+WPF 的核心是與解析度無關並以向量為基礎的轉譯引擎，其建置目的是為了利用現代化圖形硬體。 WPF 利用一組完整的應用程式開發功能來擴充核心，包括 Extensible Application Markup Language (XAML)、控制項、資料繫結、版面配置、2D 和 3D 圖形、動畫、樣式、範本、文件、媒體、文字，以及印刷樣式。 WPF 隨附於 .NET Framework，因此您可以建置納入 .NET Framework 類別庫之其他項目的應用程式。
 
- 本概觀適用於初學者，內容涵蓋 WPF 的主要功能和概念。
+本概觀適用於初學者，內容涵蓋 WPF 的主要功能和概念。
 
 ## <a name="program-with-wpf"></a>使用 WPF 的程式
 
@@ -50,7 +50,7 @@ WPF 可讓您使用「標記」和「程式碼後置」來開發應用程式，�
 
 XAML 是以宣告方式來實作應用程式外觀的 XML 標記語言。 您通常可以使用它來建立視窗、對話方塊、頁面和使用者控制項，並填入控制項、圖案和圖形。
 
- 下列範例使用 XAML 來實作包含單一按鈕的視窗外觀。
+下列範例使用 XAML 來實作包含單一按鈕的視窗外觀。
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML 是以宣告方式來實作應用程式外觀的 XML 標記語言。 您通
 </Window>
 ```
 
- 具體而言，這個 XAML 會分別使用 `Window` 和 `Button` 項目來定義一個視窗和一個按鈕。 每個項目都會透過屬性進行設定，例如 `Window` 項目的 `Title` 屬性可指定視窗的標題列文字。 在執行階段，WPF 會將標記中定義的項目和屬性轉換成 WPF 類別的執行個體。 例如， `Window` 項目會轉換成 <xref:System.Windows.Window> 類別的執行個體，其 <xref:System.Windows.Window.Title%2A> 屬性即為 `Title` 屬性的值。
+具體而言，這個 XAML 會分別使用 `Window` 和 `Button` 項目來定義一個視窗和一個按鈕。 每個項目都會透過屬性進行設定，例如 `Window` 項目的 `Title` 屬性可指定視窗的標題列文字。 在執行階段，WPF 會將標記中定義的項目和屬性轉換成 WPF 類別的執行個體。 例如， `Window` 項目會轉換成 <xref:System.Windows.Window> 類別的執行個體，其 <xref:System.Windows.Window.Title%2A> 屬性即為 `Title` 屬性的值。
 
- 下圖顯示上述範例中 XAML 所定義的使用者介面 (UI)。
+下圖顯示上述範例中 XAML 所定義的使用者介面 (UI)。
 
- ![包含按鈕的視窗](../designers/media/wpfintrofigure10.png)
+![包含按鈕的視窗](../designers/media/wpfintrofigure10.png)
 
- 由於 XAML 是以 XML 為基礎，您以此撰寫的 UI 會組合成巢狀項目階層架構，稱為 [項目樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 項目樹狀結構提供一個邏輯和直覺方式來建立及管理 UI。
+由於 XAML 是以 XML 為基礎，您以此撰寫的 UI 會組合成巢狀項目階層架構，稱為 [項目樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 項目樹狀結構提供一個邏輯和直覺方式來建立及管理 UI。
 
 ### <a name="code-behind"></a>程式碼後置
 
@@ -639,18 +639,18 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 下列範例示範衍生自 <xref:System.Windows.Controls.UserControl>的自訂數值上下按鈕控制項。
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- 下一個範例說明將使用者控制項併入 <xref:System.Windows.Window>所需的 XAML。
+下一個範例說明將使用者控制項併入 <xref:System.Windows.Window>所需的 XAML。
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- 下圖顯示 `NumericUpDown` 中所裝載的 <xref:System.Windows.Window>控制項。
+下圖顯示 `NumericUpDown` 中所裝載的 <xref:System.Windows.Window>控制項。
 
- ![自訂 UserControl](../designers/media/wpfintrofigure3.png)
+![自訂 UserControl](../designers/media/wpfintrofigure3.png)
 
 如需自訂控制項的詳細資訊，請參閱[控制項撰寫概觀](/dotnet/framework/wpf/controls/control-authoring-overview)。
 

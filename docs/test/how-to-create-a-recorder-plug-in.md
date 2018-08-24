@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176209"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382061"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 Web 效能測試錄製器工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器] 工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
 
 錄製器外掛程式可讓您執行自己的自訂動態參數相互關聯。 利用內建的相互關聯功能，Web 效能測試會在完成時偵測 Web 錄製中的動態參數，或者當您使用 [Web 效能測試編輯器] 工具列上的 [將動態參數升至 Web 測試參數] 時偵測動態參數。 不過，內建偵測功能不一定會找到所有動態參數。 例如，它找不到通常在 5 到 30 分鐘之內就會變更值的工作階段 ID。 因此，您必須手動執行相互關聯程序。
 
@@ -29,9 +29,9 @@ ms.locfileid: "39176209"
 
 下列程序描述如何建立錄製器外掛程式的基本程式碼、部署外掛程式，以及執行外掛程式。 程序後面的範例程式碼示範如何使用 Visual C# 建立自訂動態參數相互關聯錄製器外掛程式。
 
-## <a name="creating-a-recorder-plug-in"></a>建立錄製器外掛程式
+## <a name="create-a-recorder-plug-in"></a>建立錄製器外掛程式
 
-### <a name="to-create-a-recorder-plug-in"></a>建立錄製器外掛程式
+### <a name="to-create-a-recorder-plug-in"></a>若要建立錄製器外掛程式
 
 1.  開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
 
@@ -89,14 +89,14 @@ ms.locfileid: "39176209"
 
 在編譯錄製器外掛程式之後，您需要在下列兩個位置的其中一個放置產生的 DLL 檔案：
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<版本>\WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<版本**>\WebTestPlugins*
 
 > [!WARNING]
 > 將錄製器外掛程式複製到這兩個位置之一後，您必須重新啟動 Visual Studio，以便註冊錄製器外掛程式。
 
-### <a name="to-execute-the-recorder-plug-in"></a>執行錄製器外掛程式
+### <a name="to-execute-the-recorder-plug-in"></a>若要執行錄製器外掛程式
 
 1.  建立新的 Web 效能測試。
 

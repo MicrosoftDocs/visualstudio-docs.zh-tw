@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13d3c9db34824808cf5e02fbe7fb1af3911dfd0f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118633"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635196"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  
@@ -44,7 +44,7 @@ ms.locfileid: "37118633"
   
  您還需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Windows、 SharePoint 和 Visual Studio 版本。
   
 -   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
@@ -327,7 +327,7 @@ ms.locfileid: "37118633"
   
      **清單設定**頁面隨即出現。  
   
-4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
+4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  

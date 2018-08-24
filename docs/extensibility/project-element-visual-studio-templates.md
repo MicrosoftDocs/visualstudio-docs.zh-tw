@@ -1,5 +1,5 @@
 ---
-title: 專案項目 （Visual Studio 範本） |Microsoft 文件
+title: 專案項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139259"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639135"
 ---
-# <a name="project-element-visual-studio-templates"></a>專案項目 (Visual Studio 範本)
+# <a name="project-element-visual-studio-templates"></a>專案項目 （Visual Studio 範本）
 指定要加入至專案目錄的檔案。  
   
  \<VSTemplate >  
@@ -42,42 +42,42 @@ ms.locfileid: "31139259"
 </Project>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  下列章節將說明屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`File`|必要屬性。<br /><br /> 指定範本的.zip 檔案中的專案檔的名稱。|  
+|`File`|必要屬性。<br /><br /> 在範本中指定的專案檔名稱 *.zip*檔案。|  
 |`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定專案檔是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
 |`TargetFileName`|選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案檔的名稱。|  
-|`IgnoreProjectParameter`|選擇性屬性。<br /><br /> 指定是否應該將專案加入至目前的方案。 如果自訂的參數的值"$*myCustomParameter*$」 存在專案已在參數取代檔案中，建立，但不是會加入做為目前開啟的方案的一部分。|  
+|`IgnoreProjectParameter`|選擇性屬性。<br /><br /> 指定專案是否應新增至目前的方案。 如果自訂參數的值"$*myCustomParameter*$」 存在專案是在參數取代檔案中，建立，但未加入目前開啟的方案的一部分。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|  
 |[專案項目](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要項目。|  
   
 ## <a name="remarks"></a>備註  
  `Project` 是 `TemplateContent` 的選擇性子項目。  
   
- `Project`元素是用來指定專案，並因此，這只適用於專案範本。  
+ `Project`項目是用來指定專案，因此，僅在專案範本中無效。  
   
  `Project` 項目可以有[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)子系項目或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子系項目，但兩者的混合`Folder`和`ProjectItem`子系項目。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動重新命名專案檔案名稱中的使用者輸入的名稱為基礎**新專案** 對話方塊。 使用`TargetFileName`屬性如果您想要提供使用範本建立的專案檔的替代檔案名稱。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動重新命名使用者所輸入的名稱為基礎的專案檔名**新的專案** 對話方塊。 使用`TargetFileName`屬性如果您想要提供使用範本建立的專案檔的替代檔案名稱。  
   
 ## <a name="example"></a>範例  
- 下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
+ 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -107,4 +107,4 @@ ms.locfileid: "31139259"
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)   
- [Folder 元素 (Visual Studio 專案範本)](../extensibility/folder-element-visual-studio-project-templates.md)
+ [Folder 元素 （Visual Studio 專案範本）](../extensibility/folder-element-visual-studio-project-templates.md)

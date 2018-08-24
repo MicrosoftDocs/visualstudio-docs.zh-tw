@@ -9,12 +9,12 @@ description: 了解系統管理員如何刪除訂閱指派
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e345b5e46317f039cdb01afa50e158e7122ded21
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: eab809dfd4a04ed0bb6cfe4f1e0b371050521424
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325410"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636885"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 
@@ -22,4 +22,5 @@ ms.locfileid: "36325410"
 1.  按一下您想要移除的訂閱者名稱。 若要選取移除多名訂閱者，請按住 **CTRL** 鍵，然後按一下您想要移除的每名訂閱者，或按下 **CTRL + A** 選取移除所有訂閱者。 下圖顯示已選取三名訂閱者。
 2.  若要刪除選取的訂閱者，請按一下 [刪除]。 
 3.  當出現確認刪除的訊息時，請按一下 [確定]。 
-    ![刪除訂閱者](_img\delete-license\delete-subscribers.png)
+    > [!div class="mx-imgBorder"]
+    > ![刪除訂閱者](_img\delete-license\delete-subscribers.png)

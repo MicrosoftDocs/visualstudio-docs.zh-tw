@@ -1,5 +1,5 @@
 ---
-title: 開始使用來源控制 Vspackage |Microsoft 文件
+title: 開始使用原始檔控制 Vspackage |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b1eed41a96285acc5436bf5e0c37fcb7ae2ff0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d5ecf02822ee0e96ffff7a4835c7ef10c06b86
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133413"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497401"
 ---
-# <a name="getting-started-with-source-control-vspackages"></a>開始使用來源控制 Vspackage
-原始檔控制 VSPackage 是更進階的替代方案加入原始檔控制外掛程式。 (請參閱[建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)如需詳細資訊，在原始檔控制外掛程式。)原始檔控制 VSPackage 可讓原始檔控制模型、 功能和使用者介面 (UI) 的完整控制權，便可整合到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為 VSPackage 的環境。  
+# <a name="get-started-with-source-control-vspackages"></a>開始使用原始檔控制 Vspackage
+原始檔控制 VSPackage 是更進階的替代方案，以原始檔控制外掛程式。 如需原始檔控制外掛程式的詳細資訊，請參閱 [建立原始檔控制外掛程式] (../../ extensibility/internals/creating-a-source-control-plug-in.md。 原始檔控制 VSPackage 可讓原始檔控制模型、 功能和使用者介面 (UI) 的完整控制權，且它整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為 VSPackage 的環境。  
   
 ## <a name="in-this-section"></a>本節內容  
- [決定是否要實作原始檔控制 VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)  
- 說明 原始檔控制方案的選擇，並提供廣泛的指導方針選擇適當的整合路徑。  
+ [判斷是否要實作原始檔控制 VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)  
+ 說明原始檔控制解決方案的選擇，並提供廣泛的指導方針選擇適當的整合路徑。  
   
 ## <a name="related-sections"></a>相關章節  
- [原始檔控制的新功能](../../extensibility/internals/what-s-new-in-source-control.md)  
- 描述與原始檔控制使用 Vspackage 的新功能。  
+ [原始檔控制中最新消息](../../extensibility/internals/what-s-new-in-source-control.md)  
+ 說明使用原始檔控制 Vspackage 的新功能。  
   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- 討論如何建立了原始檔控制不只提供原始檔控制功能，但可以用來自訂的 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。
+ 討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但可以用來自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。

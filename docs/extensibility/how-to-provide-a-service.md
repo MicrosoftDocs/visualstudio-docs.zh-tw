@@ -1,5 +1,5 @@
 ---
-title: 如何： 提供服務 |Microsoft 文件
+title: 如何： 提供的服務 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d16085bc6cbc7f01a991a1eca731b8abed2b0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129452"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639584"
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
-VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須使用 Visual Studio 註冊服務，然後加入服務。  
+VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。  
   
- <xref:Microsoft.VisualStudio.Shell.Package>類別會同時實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer> 包含回呼方法，提供要求的服務。  
+ <xref:Microsoft.VisualStudio.Shell.Package>類別會實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer> 包含隨需提供服務的回呼方法。  
   
- 如需服務的詳細資訊，請參閱[服務 Essentials](../extensibility/internals/service-essentials.md) 。  
+ 如需有關服務的詳細資訊，請參閱 <<c0> [ 服務 essentials](../extensibility/internals/service-essentials.md) 。  
   
 > [!NOTE]
->  將要卸載 VSPackage 時，Visual Studio 會等到所有 VSPackage 提供的服務要求已都傳送。 不允許新的要求，這些服務。 您不應該明確地呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法撤銷服務，當卸載。  
+>  即將卸載 VSPackage 時，Visual Studio 會等候直到已傳遞 VSPackage 提供的服務的所有要求。 它不允許這些服務的新要求。 您應該明確地呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>卸載時，撤銷服務的方法。  
   
-#### <a name="implementing-a-service"></a>實作服務  
+## <a name="implement-a-service"></a>實作服務  
   
-1.  建立 VSIX 專案 (**檔案 > 新增 > 專案 > Visual C# > 擴充性 > VSIX 專案**)。  
+1.  建立 VSIX 專案 (**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **VSIX 專案**)。  
   
-2.  加入專案中的 VSPackage。 選取專案節點中的**方案總管 中**按一下**新增 > 新的項目 > Visual C# 項目 > 擴充性 > Visual Studio Package**。  
+2.  加入專案中的 VSPackage。 選取專案節點，在**方案總管**，按一下 **新增** > **新項目** > **Visual C# 項目**  > **擴充性** > **Visual Studio 套件**。  
   
-3.  若要實作的服務，您必須建立三種類型：  
+3.  若要實作服務，您需要建立三種類型：  
   
-    -   這個介面會描述服務。 許多這些介面是空的也就是說，它們有沒有任何方法。  
+    -   描述服務的介面。 許多這些介面是空的也就是說，它們有沒有任何方法。  
   
-    -   這個介面會描述服務介面。 這個介面包含要實作的方法。  
+    -   描述服務介面的介面。 這個介面包含要實作的方法。  
   
     -   實作服務和服務介面的類別。  
   
-     下列範例顯示三種類型的基本實作。 服務類別的建構函式必須設定的服務提供者。  
+     下列範例顯示三種類型的基本實作。 服務類別的建構函式必須設定服務提供者。  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -77,9 +77,9 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
   
     ```  
   
-### <a name="registering-a-service"></a>註冊服務  
+### <a name="register-a-service"></a>註冊服務  
   
-1.  若要註冊的服務，將<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：  
+1.  若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -89,14 +89,14 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
     {. . . }  
     ```  
   
-     這個屬性會註冊`SMyService`與 Visual Studio。  
+     這個屬性會註冊`SMyService`使用 Visual Studio。  
   
     > [!NOTE]
-    >  若要註冊的服務，另一個服務取代為相同的名稱，請使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 請注意在允許的服務只能有一個覆寫。  
+    >  若要註冊以相同的名稱取代另一個服務的服務，使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 請注意在允許的服務只有一個覆寫。  
   
-### <a name="adding-a-service"></a>新增服務  
+### <a name="add-a-service"></a>新增服務  
   
-1.  VSPackage 初始設定式中加入服務，並加入回呼方法，以建立服務。 以下是對進行變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
+1.  VSPackage 初始設定式中新增服務以及建立服務的回呼方法。 以下是要對變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
   
     ```csharp  
     protected override void Initialize()  
@@ -108,7 +108,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
     }  
     ```  
   
-2.  實作的回呼方法應該建立並傳回服務，或如果無法建立，則為 null。  
+2.  實作回呼方法，應該建立並傳回服務，或如果無法建立，則為 null。  
   
     ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -120,9 +120,9 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
     ```  
   
     > [!NOTE]
-    >  Visual Studio 可以拒絕的要求提供服務。 如果另一個 VSPackage 已經提供服務，它可以這麼做。  
+    >  Visual Studio 可以拒絕的要求提供服務。 如果另一個 VSPackage 已提供服務，它可以這麼做。  
   
-3.  現在您可以取得服務，並使用它的方法。 下列範例會示範服務使用初始設定式，但您可以取得任意處您想要使用服務的服務。  
+3.  現在您可以取得服務，並使用它的方法。 下列範例示範使用初始設定式中的服務，但您可以取得任何地方您要使用服務的服務。  
   
     ```csharp  
     protected override void Initialize()  
@@ -143,5 +143,5 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
- [使用並提供服務](../extensibility/using-and-providing-services.md)   
+ [使用，並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

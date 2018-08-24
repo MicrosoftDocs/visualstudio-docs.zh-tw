@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232386"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381077"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
@@ -70,13 +70,13 @@ ms.locfileid: "39232386"
 
     按一下 [確定] 之後，**WeatherApp** 方案就會包含一個名為 **WeatherApp**的單一專案。
 
-2.  如果您想要以 iOS 作為目標，請將 iOS 專案新增至方案中。 在 [方案總管] 中的方案名稱上按一下滑鼠右鍵，然後選取 [新增] 和 [新增專案]。  在 [新增專案] 對話方塊中，從左邊選取 [Visual C#]，然後選取 [iOS] 和 [通用]。 (如果找不到，您可能必須安裝 Xamarin 或啟用 Visual Studio 2017 功能，請參閱[設定和安裝](../cross-platform/setup-and-install.md))。在範本清單中，選取 [單一檢視應用程式 (iOS)]。 將它命名為 **WeatherApp.iOS**。
+2.  如果您想要以 iOS 作為目標，請將 iOS 專案新增至方案中。 在 [方案總管] 中，以滑鼠右鍵按一下方案名稱，然後選取 [新增] 和 [新增專案]。  在 [新增專案] 對話方塊中，從左邊選取 [Visual C#]，然後選取 [iOS] 和 [通用]。 (如果找不到，您可能必須安裝 Xamarin 或啟用 Visual Studio 2017 功能，請參閱[設定和安裝](../cross-platform/setup-and-install.md))。在範本清單中，選取 [單一檢視應用程式 (iOS)]。 將它命名為 **WeatherApp.iOS**。
 
 3.  如果您想要以 Android 作為目標，請將 Android 專案新增至方案中。 在 [新增專案] 對話方塊中，從左邊選取 [Visual C#]，然後選取 [Android]。 在範本清單中，選取 [空白應用程式 (Android)]。 將它命名為 **WeatherApp.Android**。
 
 4. 如果您想要以「通用 Windows 平台」作為目標，請在 [新增專案] 對話方塊中，從左邊選取 [Visual C#] 和 [Windows 通用]。 在範本清單中，選取 [空白應用程式 (通用 Windows)]，然後將它命名為 **WeatherApp.UWP**。
 
-5. 針對每個應用程式專案 (iOS、Android 及 UWP)，在 [方案總管] 中的 [參考] 區段上按一下滑鼠右鍵，然後選取 [加入參考]。 在 [參考管理員] 對話方塊中，從左邊選取 [專案] 和 [方案]。 您將會看到方案中所有專案的清單，但不包括您正在管理參考的專案：
+5. 針對每個應用程式專案 (iOS、Android 及 UWP)，在 [方案總管] 中，以滑鼠應鍵按一下 [參考] 區段，然後選取 [新增參考]。 在 [參考管理員] 對話方塊中，從左邊選取 [專案] 和 [方案]。 您將會看到方案中所有專案的清單，但不包括您正在管理參考的專案：
 
    ![設定對 .NET Standard 專案的參考](../cross-platform/media/cross-plat-xamarin-build-3.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "39232386"
 
 6. 將 **Newtonsoft.Json** NuGet 套件新增至 .NET Standard 專案，您將使用此專案來處理從天氣資料服務擷取的資訊：
 
-    -   在 [方案總管] 中的 [WeatherApp] 專案上按一下滑鼠右鍵，然後選取 [管理 NuGet 套件]。
+    -   在 [方案總管] 中，以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [管理 NuGet 套件...]。
 
          在 [NuGet] 視窗中，選取 [瀏覽] 索引標籤，然後搜尋 **Newtonsoft**。
 
@@ -260,7 +260,7 @@ ms.locfileid: "39232386"
     >
     >  此外，直接在網路上搜尋常被導向至 [http://stackoverflow.com/](http://stackoverflow.com/) 上的頁面；在其中，其他人已使用了相同的屬性。
 
-     基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此元素的程式碼：
+     基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此項目的程式碼：
 
     ```xml
     <TextView
@@ -659,7 +659,7 @@ private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>執行應用程式並觀察其結果
 
-1.  在 [方案總管] 中，將 [WeatherApp.UWP] 專案設定為啟始專案。
+1.  在 [方案總管] 中，將 **WeatherApp.UWP** 專案設定為啟始專案。
 
 2.  在 [方案平台] 下拉式方塊中，選取 [x86]，然後選取 [本機電腦]，以將應用程式部署至 Windows 10 Desktop。
 

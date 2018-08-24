@@ -1,7 +1,7 @@
 ---
 title: 偵錯工具設定和準備 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151570"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468295"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  
@@ -50,9 +50,6 @@ ms.locfileid: "39151570"
   
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)  
  描述如何偵錯 64 位元應用程式。  
-  
- [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)  
- 描述裝載處理序的不同層面。  
   
  [如何：指定偵錯的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何設定登錄機碼以向偵錯工具表示使用何版本。  
