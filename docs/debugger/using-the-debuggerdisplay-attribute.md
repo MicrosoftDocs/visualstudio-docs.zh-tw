@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057579"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635521"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
-[DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
+<xref:System.Diagnostics.DebuggerDisplayAttribute>控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
   
  `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。  
   

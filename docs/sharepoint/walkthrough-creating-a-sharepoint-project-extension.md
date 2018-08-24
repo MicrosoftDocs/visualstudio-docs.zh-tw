@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 407936d68310a675aebe1c7ea712f46aea45e807
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118799"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635612"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說： 建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -46,7 +46,7 @@ ms.locfileid: "37118799"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、 SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、 SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**中的範本[!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)]建立 VSIX 封裝，來部署專案的屬性延伸模組。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   

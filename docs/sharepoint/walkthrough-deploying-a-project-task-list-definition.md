@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 80b9cfee3aed4043b8327898ad8c57a55f254c28
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118609"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626453"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說： 部署專案工作清單定義
 
@@ -32,7 +32,7 @@ ms.locfileid: "37118609"
 
 ## <a name="prerequisites"></a>必要條件
 
-- 支援的 Microsoft Windows 和 SharePoint 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支援的 Microsoft Windows 和 SharePoint 版本。
 
 - Visual Studio 2017 或版本的 Visual Studio Application Lifecycle Management (ALM)。
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118613"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635228"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說： 建立適用於 SharePoint 的 web 組件，使用設計工具
 
@@ -46,7 +46,7 @@ ms.locfileid: "37118613"
 
 您需要下列元件才能完成此逐步解說：
 
-- 支援的 Windows 和 SharePoint 版本。 請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支援的 Windows 和 SharePoint 版本。
 
 ## <a name="create-a-web-part-project"></a>建立網頁組件專案
 

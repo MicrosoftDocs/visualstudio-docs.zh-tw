@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851821"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627337"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否只使用 Just My Code，Visual Studio 中的使用者程式碼偵錯
 您可以設定 Visual Studio 自動不進入系統、 架構和其他非使用者呼叫，並摺疊這些呼叫，在 [呼叫堆疊] 視窗中。 啟用或停用此行為的功能稱為*Just My Code*。 本主題描述如何在 C#、 Visual Basic、 c + + 和 JavaScript 專案中使用 Just My Code。
@@ -67,7 +67,9 @@ ms.locfileid: "34851821"
 ##  <a name="BKMK_C___Just_My_Code"></a> C + + Just My Code  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> 使用者和非使用者程式碼  
- 因為逐步執行行為獨立於呼叫堆疊行為，所以 C++ Just My Code 不同於 .NET Framework 和 JavaScript Just My Code。  
+因為逐步執行行為獨立於呼叫堆疊行為，所以 C++ Just My Code 不同於 .NET Framework 和 JavaScript Just My Code。  
+
+從 Visual Studio 2017 15.8 開始，您可以指定是否要為 c + + 使用啟用 Just My Code**工具** > **選項** > **偵錯** > **一般** > **啟用 Just My Code** （它預設啟用）。 這相當於使用[/JMC （只 my code 偵錯）](/cpp/build/reference/jmc)編譯器參數。
   
  **呼叫堆疊**  
   
@@ -88,7 +90,7 @@ ms.locfileid: "34851821"
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 逐步執行行為  
  當您**逐步執行**(鍵盤快速鍵： F11) 從使用者程式碼的非使用者程式碼、 偵錯工具不進入程式碼至下一行使用者程式碼。 當您**跳離函式**(鍵盤： Shift + F11)，偵錯工具執行至下一行使用者程式碼。 如果不遇到任何使用者程式碼時，則會繼續執行直到應用程式就會結束，叫用中斷點時，或發生例外狀況。  
   
- 如果偵錯工具在非使用者程式碼內中斷 (例如，如果有個 [全部中斷] 命令於非使用者程式碼停止)，則在非使用者程式碼繼續逐步執行。  
+ 如果偵錯工具在非使用者程式碼內中斷 (例如，如果有個 [全部中斷] 命令於非使用者程式碼停止)，則在非使用者程式碼繼續逐步執行。
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> 例外狀況行為  
  當偵錯工具叫用例外狀況時，它會停止的例外狀況，而不論其是否在使用者或非使用者程式碼。 **User-unhandled**中的選項**例外狀況**對話方塊都會被忽略。  

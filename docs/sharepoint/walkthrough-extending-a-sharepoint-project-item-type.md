@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7d0604e0e80fcb0fa14c65bd57669f60e68fd11
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118261"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626142"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說： 擴充 SharePoint 專案項目類型
   您可以使用**Business Data Connectivity 模型**專案項目，在 SharePoint 中建立的商務資料連接 (BDC) 服務的模型。 根據預設，當您建立模型時使用這個專案項目中，模型中的資料不是顯示給使用者。 您也必須在 SharePoint 中，讓使用者可以檢視的資料建立外部清單。  
@@ -42,7 +42,7 @@ ms.locfileid: "37118261"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
   
 -   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
