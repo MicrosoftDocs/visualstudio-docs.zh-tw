@@ -51,9 +51,9 @@ ms.locfileid: "39154381"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和 proxy 驗證  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Windows 整合式的 proxy 驗證從.NET Framework 3.5 開始提供支援。 需要任何特定的 machine.config 指示詞不。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 其他的驗證通訊協定，例如基本或摘要式不提供支援。  
   
- 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱http://go.microsoft.com/fwlink/?LinkId=158730。  
+ 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkId=158730。  
   
- 如需詳細資訊，請參閱 < [ \<defaultProxy > 項目 （網路設定）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
+ 如需詳細資訊，請參閱 <[\<defaultProxy > 項目 （網路設定）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce 和 Web 瀏覽器相容性  
  目前，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安裝使用 Internet Explorer 開啟部署資訊清單的 URL 時，才啟動。 只有當 Internet Explorer 設定為預設網頁瀏覽器，將會成功啟動其 URL 從另一個應用程式，例如 Microsoft Office Outlook、 啟動部署。  
