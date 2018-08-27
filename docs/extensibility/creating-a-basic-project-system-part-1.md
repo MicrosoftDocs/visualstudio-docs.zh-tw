@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232253"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902395"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。  
@@ -61,7 +61,7 @@ ms.locfileid: "39232253"
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
- 您也必須下載的原始程式碼[專案的 Managed Package Framework](http://mpfproj12.codeplex.com/)。 將檔案解壓縮至您要建立此解決方案可存取的位置。  
+ 您也必須下載的原始程式碼[專案的 Managed Package Framework](https://github.com/tunnelvisionlabs/MPFProj10)。 將檔案解壓縮至您要建立此解決方案可存取的位置。  
   
 ## <a name="create-a-basic-project-type"></a>建立基本專案類型  
  建立名為 C# VSIX 專案**SimpleProject**。 (**檔案** > **新** > **專案**，然後**Visual C#**  >  **擴充性** > **VSIX 專案**)。 加入 Visual Studio Package 專案項目範本 (在**方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**，然後移至**擴充性** > **Visual Studio 套件**)。 將檔案命名*SimpleProjectPackage*。  
