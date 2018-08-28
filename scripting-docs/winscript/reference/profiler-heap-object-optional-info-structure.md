@@ -1,5 +1,5 @@
 ---
-title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO 結構 |Microsoft 文件
+title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO 結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52e231484b48bf2741281644c746b448fd6f657b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 08/27/2018
 ms.locfileid: "24734028"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>PROFILER_HEAP_OBJECT_OPTIONAL_INFO 結構
@@ -33,13 +33,13 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
 |成員|類型|描述|  
 |------------|----------|-----------------|  
 |資訊類型|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE 列舉](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|選擇性的資訊類型。|  
-|原型|[PROFILER_HEAP_OBJECT_ID 類型](../../winscript/reference/profiler-heap-object-id-type.md)|堆積物件之原型的物件識別碼。|  
+|原型|[PROFILER_HEAP_OBJECT_ID 類型](../../winscript/reference/profiler-heap-object-id-type.md)|堆積物件的原型物件的識別碼。|  
 |functionName|LPCWSTR|堆積物件的函式名稱。|  
 |elementAttributesSize|UINT|堆積物件的項目屬性的大小。|  
 |elementTextChildrenSize|UINT|堆積物件的文字子系的大小。|  
 |scopeList|[PROFILER_HEAP_OBJECT_SCOPE_LIST 結構](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|堆積物件的範圍清單。|  
 |internalProperty|[PROFILER_HEAP_OBJECT_RELATIONSHIP 結構](../../winscript/reference/profiler-heap-object-relationship-structure.md)|堆積物件的內部屬性。|  
 |namePropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件的名稱屬性的清單。|  
-|indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件索引屬性的清單。|  
+|indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件的索引屬性的清單。|  
 |relationshipList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件的關聯性清單。|  
-|事件清單|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件事件的清單。|
+|事件清單|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 結構](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|堆積物件的事件清單。|
