@@ -1,5 +1,5 @@
 ---
-title: 使用 MSBuild |Microsoft 文件
+title: 使用 MSBuild |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,31 +15,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4115d6f1b368734631acf3ee4395d71dbe418c07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f27d3c5c7465314a7e9005972dec1349c1b9d89f
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141447"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902227"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
-MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的完整描述可建置、 建置工作，與組建組態的專案項目。  
+MSBuild 會提供定義完善且可延伸的 XML 格式，來建立專案檔案的完整描述來建置、 建置工作，以及組建組態的專案項目。  
   
 ## <a name="general-msbuild-considerations"></a>一般 MSBuild 考量  
- MSBuild 專案檔，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].csproj 和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].vbproj 檔案包含在建置時，會使用，但也可以包含在設計階段使用的資料的資料。 建置時間資料會儲存使用 MSBuild 基本項目，包括[item 項目 (MSBuild)](../../msbuild/item-element-msbuild.md)和[屬性項目 (MSBuild)](../../msbuild/property-element-msbuild.md)。 設計階段資料，這是特定專案類型，以及任何相關的專案子類型的資料，會儲存在保留給它的任意 XML。  
+ MSBuild 專案檔，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].csproj 和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].vbproj 檔案，包含資料，會使用在建置階段，但也可以包含在設計階段使用的資料。 建置階段資料會儲存使用 MSBuild 基本項目，包括[項目的項目 (MSBuild)](../../msbuild/item-element-msbuild.md)並[Property 項目 (MSBuild)](../../msbuild/property-element-msbuild.md)。 設計階段資料，也就是特定專案類型，以及任何相關的專案子類型的資料，會儲存在為其保留的自由格式 XML。  
   
- MSBuild 並沒有原生支援的組態物件，只針對指定的特定組態中的資料提供條件式屬性。 例如:   
+ MSBuild 沒有組態物件的原生支援，但未提供條件式屬性指定的特定組態中的資料。 例如:   
   
 ```xml  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- 如需條件式屬性的詳細資訊，請參閱[條件式建構](../../msbuild/msbuild-conditional-constructs.md)。  
+ 如需有關條件式屬性的詳細資訊，請參閱 <<c0> [ 條件式建構](../../msbuild/msbuild-conditional-constructs.md)。  
   
-### <a name="extending-msbuild-for-your-project-type"></a>適用於您的專案類型擴充 MSBuild  
- MSBuild 介面和應用程式開發介面是未來的版本中可能會變更[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 因此，最好使用 managed 的封裝架構 (MPF) 類別，因為它們提供防護的變更。  
+### <a name="extending-msbuild-for-your-project-type"></a>適用於您的專案類型擴充的 MSBuild  
+ MSBuild 介面和 Api 會在未來的版本中有所變更[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 因此，最好使用 managed 的封裝架構 (MPF) 類別，因為它們提供防護的變更。  
   
- Managed Package Framework 的專案 (MPFProj) 提供建立和管理新的專案系統的 helper 類別。 您可以找到來源的程式碼與編譯指示[專案的 Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
+ Managed Package Framework 中的專案 (MPFProj) 提供用於建立和管理新的專案系統的協助程式類別。 您可以找到來源的程式碼和編譯指示[專案-Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。  
   
  特定專案的 MPF 類別如下所示：  
   
@@ -54,7 +54,7 @@ MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的
  `Microsoft.VisualStudio.Package.ProjectElement` 類別是 MSBuild 項目包裝函式。  
   
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與MSBuild 工作  
- 單一檔案產生器是可存取在執行階段，但 MSBuild 工作可用來在設計階段和建置時間。 最大的彈性，因此，使用 MSBuild 工作來轉換，並產生程式碼。 如需詳細資訊，請參閱[自訂工具](../../extensibility/internals/custom-tools.md)。  
+ 單一檔案產生器是可存取在設計階段，但可以使用 MSBuild 工作，在設計階段和建置時間。 最大的彈性，因此，使用 MSBuild 工作來轉換及產生程式碼。 如需詳細資訊，請參閱 <<c0> [ 自訂工具](../../extensibility/internals/custom-tools.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../../msbuild/msbuild-reference.md)   
