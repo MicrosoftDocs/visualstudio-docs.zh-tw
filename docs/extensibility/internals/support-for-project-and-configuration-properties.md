@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f137f5044c24ec9a187868c273b1dd752cd86a5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513093"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902619"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 **屬性** 視窗中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可以顯示專案和設定的屬性。 使用者可設定您的應用程式的屬性，您可以將屬性頁提供您自己的專案類型中。  
   
  藉由選取中的專案節點**方案總管**，然後按一下**屬性**上**專案** 功能表中，您可以開啟包含專案和設定的對話方塊屬性。 在 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]並[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，和專案類型衍生自這些語言的索引標籤式頁面中會出現此對話方塊[一般、 環境、 選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)。 如需詳細資訊，請參閱 <<c0> [ 不在組建中： 逐步解說： 公開專案和組態屬性 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
   
- Managed Package Framework 中的專案 (MPFProj) 提供用於建立和管理新的專案系統的協助程式類別。 您可以找到來源的程式碼和編譯指示[專案-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
+ Managed Package Framework 中的專案 (MPFProj) 提供用於建立和管理新的專案系統的協助程式類別。 您可以找到來源的程式碼和編譯指示[專案-Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>持續性的專案和組態屬性  
  專案和設定的屬性會保存在專案檔具有任何副檔名與專案類型關聯，例如、.csproj、.vbproj、 和.myproj。 語言專案通常會使用範本檔案來產生專案檔。 不過，有很多種實際專案類型和範本建立關聯。 如需詳細資訊，請參閱[範本目錄描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
@@ -84,7 +84,7 @@ ms.locfileid: "39513093"
  <xref:System.ComponentModel.CategoryAttribute>， <xref:System.ComponentModel.DisplayNameAttribute>，和<xref:System.ComponentModel.DescriptionAttribute>屬性會決定配置、 標記和一般屬性頁面中的專案和設定屬性的描述。 這些屬性決定的類別，分別顯示名稱和描述的選項。  
   
 > [!NOTE]
->  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
+>  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。  
   
  請考慮下列程式碼片段：  
   
