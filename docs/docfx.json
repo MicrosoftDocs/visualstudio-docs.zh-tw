@@ -74,7 +74,6 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
       "extendBreadcrumb": "true",
-      "bilingual_type": "hover over", 
       "ROBOTS": "INDEX,FOLLOW",
       "author": "erickson-doug",
       "ms.author": "douge",
