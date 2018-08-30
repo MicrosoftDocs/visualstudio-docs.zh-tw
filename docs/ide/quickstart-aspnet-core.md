@@ -1,6 +1,6 @@
 ---
 title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
-description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
+description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
 ms.custom: mvc
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: db8dc29af0ccd77d2a0e201056012c726854f85c
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468974"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054353"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
