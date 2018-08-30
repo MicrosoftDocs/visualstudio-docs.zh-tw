@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978407"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901481"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -219,6 +219,7 @@ ms.locfileid: "38978407"
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 若要使用測試回合參數，請在您的測試類別中新增私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 屬性。
@@ -234,12 +235,12 @@ public void HomePageTest()
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
-|組態|預設|值|
+|Configuration|預設|值|
 |-------------------|-------------|------------|
 |**ForcedLegacyMode**|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
