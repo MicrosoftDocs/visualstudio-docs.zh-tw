@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 70147dac62ad0aaa59a1c6823b321afe54b2d3a7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280438"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139120"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -34,6 +34,8 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>選項 1 - 從配置資料夾手動安裝憑證
 
 當您建立網路配置時，會將必要的憑證下載至 Certificates 資料夾。 您接著可以按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]，以手動安裝憑證。 如果要求您輸入密碼，請保留空白。
+
+**更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，您透過能以滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證] 並按一下 [憑證管理員] 中的適當按鈕，以手動安裝憑證。
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>選項 2 - 在企業環境中散發受信任的根憑證
 
@@ -60,6 +62,15 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   **更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，使用下列命令建立批次檔：
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
 
 3. 將批次檔部署至用戶端。 此命令應該從提升權限的程序執行。
 
@@ -82,6 +93,8 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
         * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
     * 根憑證：**Microsoft 根憑證授權單位**
         * 必要。 此憑證隨附於執行 Windows 7 或更新版本的系統。
+
+**更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>為何不會自動安裝來自 Certificates 資料夾的憑證？
 
@@ -113,16 +126,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 在您安裝憑證之後，可以使用＜建立 Visual Studio 的網路安裝＞頁面之[從網路安裝部署](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation)一節中的指示，繼續部署 Visual Studio。
 
-## <a name="get-support"></a>取得支援
-
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
-
-以下是一些支援選項：
-
-* 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
-* 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
-* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
