@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33998183"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901294"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 
@@ -59,11 +59,14 @@ ms.locfileid: "33998183"
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>根據現有類型新增類別圖表
 
-在**方案總管**中，開啟類別檔案操作功能表，然後選擇 [檢視類別圖表]。
+在 [方案總管] 中，開啟類別檔案的快顯功能表 (以滑鼠右鍵按一下)，然後選擇 [檢視類別圖表]。
 
 -或-
 
 在 [類別檢視] 中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]。
+
+> [!TIP]
+> 如果未開啟 [類別檢視]，請從 [檢視] 功能表開啟 [類別檢視]。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在類別圖表中顯示完整專案的內容
 
