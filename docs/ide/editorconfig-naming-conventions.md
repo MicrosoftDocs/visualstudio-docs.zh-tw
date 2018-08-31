@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926479"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627239"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -46,6 +46,7 @@ ms.locfileid: "31926479"
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \*(請使用此值來指定所有符號)
+- namespace
 - Class - 類別
 - struct
 - interface
@@ -56,6 +57,9 @@ ms.locfileid: "31926479"
 - Event - 事件
 - Delegate - 委派
 - 參數
+- type_parameter
+- 本機
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>符號的存取層級
 
@@ -71,6 +75,7 @@ ms.locfileid: "31926479"
 - private
 - protected
 - protected\_internal 或 protected_friend
+- 本機
 
 > [!NOTE]
 > 如果存取範圍不適用於您設定為目標的符號，則請勿將存取層級指定為命名慣例的一部分。 例如，參數沒有存取層級。 如果您為參數命名慣例指定存取層級，命名規則將不會正確運作。

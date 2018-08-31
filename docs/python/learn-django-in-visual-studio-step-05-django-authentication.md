@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 5
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是 [Django Web 專案] 範本所提供的驗證功能。
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388367"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626933"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 

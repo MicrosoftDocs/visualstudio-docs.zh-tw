@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468773"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627207"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -84,7 +84,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 �
 
 專案和項目範本可將設定不同類型專案和檔案的流程自動化，不僅可節省您寶貴的時間，還能讓您不必再管理錯綜複雜又容易出錯的細節。 Visual Studio 提供適用於 Web、Azure、資料科學、主控台及其他類型專案的範本，還提供適用於檔案的範本，例如 Python 類別、單元測試、Azure Web 設定、HTML 及甚至是 Django 應用程式。
 
-[![Visual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Visual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 如需詳細資訊：
 
@@ -114,7 +114,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 分析功能會探索您應用程式中的時間使用情況。 Visual Studio 支援使用 CPython 型解譯器來進行分析，並且包含了可比較不同分析執行回合之間效能的功能。
 
-[![Python 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png)
+[![Python 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 如需詳細資訊：
 

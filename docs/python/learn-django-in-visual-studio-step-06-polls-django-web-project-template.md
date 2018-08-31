@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 6
 description: 以 Django Visual Studio 專案做背景，逐步解說 Django 的基礎知識，我們將重點介紹 Polls Django Web 專案的各項功能，例如自訂管理功能。
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388211"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627283"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
