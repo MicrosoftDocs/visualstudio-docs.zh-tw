@@ -117,6 +117,8 @@ items:
     href: ide/quickstart-nodejs.md
   - name: C#：建立 Web 應用程式
     href: ide/quickstart-aspnet-core.md
+  - name: F#：建立 Web 服務
+    href: ide/quickstart-fsharp.md
   - name: C#：建立 UWP 應用程式
     href: ide/quickstart-uwp-csharp.md
   - name: Visual Basic：建立主控台應用程式
@@ -1065,9 +1067,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 3acec9b666af0777740ecbe483af6ec726b716d3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bc5dc1f9c447fd9183aeacbc14fa19376df87816
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42625895"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224484"
