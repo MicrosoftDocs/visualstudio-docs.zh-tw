@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844387"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627311"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -34,7 +34,6 @@ ms.locfileid: "34844387"
 |----------|----------|--------------------------|
 |安裝|安裝 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../ide/install-and-manage-local-content.md)|
-|應用程式類型|開發適用於 SharePoint 的解決方案。|[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
