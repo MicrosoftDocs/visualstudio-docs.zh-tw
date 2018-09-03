@@ -49,6 +49,7 @@
 ##### [VLSC 管理移轉常見問題集](vlsc-admin-faq.md)
 ##### 協助組織上線
 ###### [移轉後上線](post-migration-onboarding.md)
+###### [Open 和 Open License 移轉](open-migration.md)
 ###### [上線電子郵件通訊](volume-license-onboarding-email.md)
 ###### [尋找您的 PCN](find-pcn.md)
 ###### [尋找您的主要連絡人](find-primary-contact.md)
