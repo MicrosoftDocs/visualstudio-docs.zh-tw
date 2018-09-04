@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca29232acae2b67d4e2b04c96bd1dde5e595b83f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2d9542e14f41722a2f339bfac5c3353dc2e89263
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118734"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635462"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說： 從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -41,7 +41,7 @@ ms.locfileid: "37118734"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。  
   
 -   Visual Studio。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "37118734"
   
 7.  在 [**標題**方塊中，輸入**站台資料行測試 2**; 在**URL 名稱**方塊中，輸入**columntest2**; 其他設定保留其預設值值，然後選擇**建立**] 按鈕。  
   
-8.  瀏覽回到第一個子網站，http://*SystemName*/columntest1/default.aspx。  
+8.  瀏覽回到第一個子網站， http://*SystemName*/columntest1/default.aspx 。  
   
 9. 上**站台動作**功能表上，選擇**站台設定**以顯示 [站台設定] 頁面。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "37118734"
   
 #### <a name="to-import-a-wsp-file"></a>若要匯入.wsp 檔案  
   
-1.  在 [ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
+1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
   
 2.  依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
   

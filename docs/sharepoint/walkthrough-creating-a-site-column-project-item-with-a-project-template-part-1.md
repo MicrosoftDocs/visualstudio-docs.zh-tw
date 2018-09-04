@@ -434,7 +434,7 @@ ms.locfileid: "42626240"
   
     -   新增`ProjectItem`filethat 每個元素的包含在每個專案執行個體。  
   
-    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005」。 其他專案檔案，在此解決方案使用 「http://schemas.microsoft.com/developer/msbuild/2003"命名空間。 因此，會產生 XML 結構描述的警告訊息，但您可以忽略這些在本逐步解說。  
+    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005」。 其他專案檔案，在此解決方案使用 "http://schemas.microsoft.com/developer/msbuild/2003" 命名空間。 因此，會產生 XML 結構描述的警告訊息，但您可以忽略這些在本逐步解說。  
   
      如需有關的內容 *.vstemplate*檔，請參閱[Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。  
   
