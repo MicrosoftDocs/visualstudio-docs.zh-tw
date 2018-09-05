@@ -1,16 +1,16 @@
 ---
 title: 管理專案中的參考
 description: 本文描述如何在 Visual Studio for Mac 中管理專案參考
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 82875955e861ec25e1444874afaa8b7f2e807fa7
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453947"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223974"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 

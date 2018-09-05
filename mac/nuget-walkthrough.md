@@ -1,16 +1,16 @@
 ---
 title: 在專案中包含 NuGet 套件
 description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 2bdff15b101b9a9c916c8ba98cfd4964ca0f3189
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380936"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223920"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 

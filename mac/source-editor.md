@@ -1,16 +1,16 @@
 ---
 title: 原始檔編輯器
 description: 使用 Visual Studio for Mac 中的原始檔編輯器
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: a8a545bafc0d25b6fc5a54affb9ff07d724fc492
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 566a776b64cf649443292e1f11efa5a43c539357
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379409"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224297"
 ---
 # <a name="source-editor"></a>原始檔編輯器
 

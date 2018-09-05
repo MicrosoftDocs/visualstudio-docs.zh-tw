@@ -1,16 +1,16 @@
 ---
 title: 使用 Subversion
 description: 在 Visual Studio for Mac 中使用 Subversion。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 9514db72dd72e616f45670ffdf8c0b468bfb81cc
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454250"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224403"
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 

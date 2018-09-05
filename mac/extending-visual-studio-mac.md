@@ -1,17 +1,17 @@
 ---
 title: 擴充 Visual Studio for Mac
 description: Visual Studio for Mac 的特性與功能可以使用稱為延伸模組套件的模組來擴充。 本指南的第一個部分會建立簡單的 Visual Studio for Mac 延伸模組套件，在文件中插入日期和時間。 本指南的第二個部分則介紹延伸模組套件系統的基本概念，和形成 Visual Studio for Mac 基礎的一些核心應用程式開發介面。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178256"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224958"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -56,7 +56,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 ## <a name="extensions-and-extension-points"></a>延伸模組和擴充點
 
-擴充點是一個預留位置，其定義資料結構 (類型)，而延伸模組則定義符合特定擴充點指定之結構的資料。 擴充點在其宣告中指定可以接受的延伸模組類型。 延伸模組是使用型類型稱或延伸模組路徑來宣告。 如需如何建立所需擴充點的更深入說明，請參閱[擴充點參考](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots)。
+擴充點是一個預留位置，其定義資料結構 (類型)，而延伸模組則定義符合特定擴充點指定之結構的資料。 擴充點在其宣告中指定可以接受的延伸模組類型。 延伸模組是使用型類型稱或延伸模組路徑來宣告。 如需如何建立所需擴充點的更深入說明，請參閱[擴充點參考](https://github.com/mono/mono-addins/wiki/Extension-Points)。
 
 延伸模組/擴充點的架構讓 Visual Studio for Mac 的開發能維持快速且模組化。 
 

@@ -1,16 +1,16 @@
 ---
 title: 建置動作
 description: 本文描述各種可用於 C# 專案的建置動作
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 6ef2cc3347480fceab23df12e53be65dd5432183
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865002"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224439"
 ---
 # <a name="build-actions"></a>建置動作
 

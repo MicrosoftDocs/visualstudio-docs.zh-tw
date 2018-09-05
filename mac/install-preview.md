@@ -1,18 +1,18 @@
 ---
 title: 安裝預覽版本
 description: 更新 Visual Studio for Mac 以及存取預覽版本的指示。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 557e37899afcc78d45d4bceb4d8de27f545ebb69
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453851"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224053"
 ---
 # <a name="installing-preview-releases"></a>安裝預覽版本
 

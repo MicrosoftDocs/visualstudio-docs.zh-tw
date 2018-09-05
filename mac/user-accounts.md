@@ -1,16 +1,16 @@
 ---
 title: 使用者帳戶
 description: 登入 Visual Studio for Mac 並在 Visual Studio for Mac 中啟用訂閱的相關資訊
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: c5f829a9b2f828e4f7b2ef0cf1a410a607bf86b9
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8ae291054a08a8835d7bf3d1d1df77c1c6eb8519
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884381"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224244"
 ---
 # <a name="user-accounts"></a>使用者帳戶
 
