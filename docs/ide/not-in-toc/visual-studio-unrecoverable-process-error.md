@@ -13,13 +13,13 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "36325698"
 ---
-# Visual Studio 無法復原的程序錯誤
+# <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
 
 Visual Studio 2017 會使用多個跨處理序的程序執行所需的背景工作，例如即時的單元測試、程式碼分析器等等。 這些處理序會跨處理序執行，以保障 Visual Studio 效能優勢 (例如，在執行長時間且需要大量資源的工作時，確保 Visual Studio 得以快速回應)。 此外，由於 Visual Studio 是 32 位元處理序，跨處理序執行程序時，可讓需耗費大量記憶體的工作擁有較充沛的記憶體運作空間。
 
@@ -29,7 +29,7 @@ Visual Studio 2017 會使用多個跨處理序的程序執行所需的背景工�
 
 如果您看到此訊息，應該儲存工作，然後關閉並重新啟動 Visual Studio。
 
-## 處理序清單
+## <a name="list-of-processes"></a>處理序清單
 
 以下是 Visual Studio 所使用之跨處理序的處理序清單。 此清單包含特定工作流程或情節中啟動的處理序；因此，在大部分情況下，它們不會全部同時執行。
 
