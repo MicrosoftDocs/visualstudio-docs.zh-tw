@@ -1,17 +1,17 @@
 ---
 title: 偵錯 - 資料視覺效果
 description: 偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5ee16324a312eca79de2f3b356a5f3be941f5e7b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33868416"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224352"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 

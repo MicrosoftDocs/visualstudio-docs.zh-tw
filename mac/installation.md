@@ -1,17 +1,17 @@
 ---
 title: 安裝 Visual Studio for Mac
 description: 如何安裝 Visual Studio for Mac 和跨平台開發所需之其他元件的指示。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280490"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224270"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>設定與安裝 Visual Studio for Mac
 

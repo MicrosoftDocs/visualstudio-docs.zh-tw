@@ -9,12 +9,12 @@ description: 了解如何使用系統管理員入口網站管理組織的 Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380814"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289508"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 訂用帳戶系統管理員入口網站
 
@@ -68,9 +68,11 @@ ms.locfileid: "39380814"
 - 選擇性欄位，用於登入通訊以外的其他電子郵件地址。 
 
 在此頁面的左側，您可以看到已購買、指派，及貴組織每份合約仍然可用的訂用帳戶授權數目等其他資訊。
-    ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>了解 [詳細資料] 頁面
 如需目前檢視的合約詳細資訊，請選取 [詳細資料] 索引標籤。它會顯示合約狀態、購買帳戶、組織詳細資料、主要連絡人 (VLSC)、超級管理員 (如有) 和其他相關資訊。
-    ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
 

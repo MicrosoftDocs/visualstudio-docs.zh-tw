@@ -1,16 +1,16 @@
 ---
 title: 註解
 description: 本文描述如何使用 Visual Studio for Mac 原始檔編輯器中的註解
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 4a7dfd0daaddad9f91d461689a0174469dd253c2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 28c02f7f6347da67133a82c1d0aa71d44a4309d2
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865383"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224167"
 ---
 # <a name="comments"></a>註解
 

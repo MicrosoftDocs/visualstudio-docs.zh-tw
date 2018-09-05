@@ -1,16 +1,16 @@
 ---
 title: 了解組建組態
 description: 本文描述 Visual Studio for Mac 中的各種組建組態
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: fb1db4325aef6c5328646a5ad1123c88aa751481
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957875"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224057"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
