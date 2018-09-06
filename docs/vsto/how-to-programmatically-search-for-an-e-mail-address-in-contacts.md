@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式在連絡人電子郵件地址搜尋 |Microsoft 文件
+title: 如何： 以程式設計方式在連絡人電子郵件地址搜尋
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16b79f5f14f1e0d8c5c82a00f5f2ccf2412b991b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7b9c4c7d02f3cd1564e6733c46cb821eade7f54
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671722"
 ---
-# <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>如何：以程式設計方式在連絡人中搜尋電子郵件地址
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何： 以程式設計方式在連絡人電子郵件地址搜尋
   本範例會在 [連絡人] 資料夾中，搜尋其電子郵件地址中有網域名稱 **example.com** 的連絡人。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example"></a>範例  
  [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>編譯程式碼  
+## <a name="compile-the-code"></a>編譯程式碼  
  這個範例需要：  
   
 -   其電子郵件地址中有網域名稱 **example.com** (例如 `somebody@example.com`)，並具有名字和姓氏的連絡人。  
@@ -40,6 +41,6 @@ ms.lasthandoff: 04/16/2018
  [使用連絡人項目](../vsto/working-with-contact-items.md)   
  [如何： 以程式設計方式傳送電子郵件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [如何： 以程式設計方式存取 Outlook 連絡人](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [如何：以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+ [如何： 以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

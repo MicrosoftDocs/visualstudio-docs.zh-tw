@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式隱藏工作表 |Microsoft 文件
+title: 如何： 以程式設計方式隱藏工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,35 +16,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c66e787d8e1e660f320ab390787c7ebf13d3ef7f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a60a0189af5608496e1f0f415a2d668e896af8e3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671686"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>如何：以程式設計方式隱藏工作表
+# <a name="how-to-programmatically-hide-worksheets"></a>如何： 以程式設計方式隱藏工作表
   您可以顯示或隱藏活頁簿中的任何工作表。 若要隱藏工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-the-worksheet-host-item"></a>使用工作表主項目  
+## <a name="use-the-worksheet-host-item"></a>使用工作表主項目  
  如果在文件層級自訂的設計階段即已加入工作表，請使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> 屬性隱藏指定的工作表。  
   
-#### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>使用工作表主項目隱藏工作表  
+### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>使用工作表主項目隱藏工作表  
   
 1.  將 <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> 主項目的 `Sheet1` 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合  
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合  
  在下列情況中，透過 Microsoft Office Excel 的 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取工作表：  
   
--   您要隱藏 VSTO 增益集的工作表。  
+-   您想要隱藏工作表中的 VSTO 增益集。  
   
 -   您想要隱藏的工作表，是在文件層級自訂的執行階段建立的。  
   
-#### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合隱藏工作表  
+### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合隱藏工作表  
   
 1.  將工作表的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。  
   
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式從活頁簿刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以程式設計方式移動工作表中的活頁簿](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何： 以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
  [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)  

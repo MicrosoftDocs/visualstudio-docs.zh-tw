@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式保護工作表 |Microsoft 文件
+title: 如何： 以程式設計方式保護工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23e0706f7436355e2308fbde8d945968da5348c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671714"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>如何：以程式設計方式保護工作表
+# <a name="how-to-programmatically-protect-worksheets"></a>如何： 以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,33 +35,33 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  您無法將 Windows Form 控制項加入受保護的工作表區域。  
   
-## <a name="using-the-designer"></a>使用設計工具  
+## <a name="use-the-designer"></a>使用設計工具  
   
-#### <a name="to-protect-a-worksheet-in-the-designer"></a>若要用設計工具保護工作表  
+### <a name="to-protect-a-worksheet-in-the-designer"></a>若要用設計工具保護工作表  
   
-1.  在**變更**群組**檢閱**索引標籤上，按一下 **保護工作表**。  
+1.  在 **變更**的群組**檢閱**索引標籤上，按一下 **保護工作表**。  
   
      **保護工作表** 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。  
   
  您也可以允許使用者在受保護的工作表中編輯特定的範圍。  
   
-#### <a name="to-allow-editing-in-specific-ranges"></a>若要允許在特定範圍中進行編輯  
+### <a name="to-allow-editing-in-specific-ranges"></a>若要允許在特定範圍中進行編輯  
   
-1.  在**變更**群組**檢閱**索引標籤上，按一下 **允許使用者編輯範圍**。  
+1.  在 **變更**的群組**檢閱**索引標籤上，按一下 **允許使用者編輯範圍**。  
   
      **允許使用者編輯範圍** 對話方塊隨即出現。 您可以指定需要使用密碼才能解除鎖定的範圍，以及不需要密碼就可以編輯範圍的使用者。  
   
-## <a name="using-code-at-run-time"></a>在執行階段使用程式碼  
+## <a name="use-code-at-runtime"></a>在執行階段使用程式碼  
  下列程式碼會設定密碼 (使用變數 getPasswordFromUser，它含有從使用者取得的密碼)，並且只允許排序。  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>若要在文件層級自訂中使用程式碼保護工作表  
+### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>若要在文件層級自訂中使用程式碼保護工作表  
   
 1.  呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> 方法。 這個範例會假設您是使用名為 `Sheet1`的工作表。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>若要在 VSTO 增益集中使用程式碼保護工作表  
+### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>若要在 VSTO 增益集中使用程式碼保護工作表  
   
 1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> 方法。  
   

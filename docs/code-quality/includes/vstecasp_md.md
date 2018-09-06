@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 901c9e77aa94a2e18e8200b7a62c269d53e2363c
-ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2018
+ms.lasthandoff: 09/06/2018
 ms.locfileid: "38809629"
 ---
 ASP.NET

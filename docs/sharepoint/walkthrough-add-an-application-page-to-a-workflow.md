@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625996"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774584"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說： 將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題中所述的專案[逐步解說： 建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -337,7 +337,7 @@ ms.locfileid: "42625996"
 
 14. 重複步驟 11 – 13 與共用文件清單中的其他文件。 （文件的確切數目並不重要）。
 
-15. 顯示報表摘要的應用程式頁面隨即在瀏覽器開啟下列 URL: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**。
+15. 顯示報表摘要的應用程式頁面隨即在瀏覽器開啟下列 URL: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      費用報表的 [摘要] 頁面會列出所有的經費支出報表已超過已配置的數量、 數量超過它和所有報表的總金額。
 

@@ -33,11 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 933e53876108f4e8ee4260ae4ac4fdf41f8bbf01
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671715"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
   當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
@@ -51,11 +52,11 @@ ms.lasthandoff: 05/22/2018
   
 -   Word 文件或範本專案中的 `ThisDocument` 類別。 您可以使用 `Globals.ThisDocument` 屬性來存取這個物件。  
   
--   VSTO 增益集專案中的 `ThisAddIn` 類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
+-   `ThisAddIn` VSTO 增益集專案中的類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
   
--   專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱[存取在執行階段的功能區](../vsto/accessing-the-ribbon-at-run-time.md)。  
+-   專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱 <<c0> [ 存取在執行階段功能區](../vsto/accessing-the-ribbon-at-run-time.md)。  
   
--   Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱[存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)。  
+-   Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱 <<c0> [ 存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)。  
   
 -   Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：  
   
@@ -73,16 +74,16 @@ ms.lasthandoff: 05/22/2018
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
 ## <a name="initialize-the-globals-class"></a>初始化 Globals 類別  
- 嘗試在文件或 VSTO 增益集完全初始化之前使用 `Globals` 類別的程式碼，可能會擲回執行階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。  
+ 嘗試使用的程式碼`Globals`類別的文件或 VSTO 增益集初始化之前可能會擲回執行的階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。  
   
 > [!NOTE]  
 >  雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示如果您建立的使用者控制項會在使用者控制項類別中使用 `Globals` 類別的某個屬性，您必須先檢查該屬性是否傳回 **null** ，再嘗試使用傳回的物件。  
   
 ## <a name="see-also"></a>另請參閱  
- [存取在執行階段的功能區](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)   
  [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [Document 主項目](../vsto/document-host-item.md)   
+ [文件主項目](../vsto/document-host-item.md)   
  [Workbook 主項目](../vsto/workbook-host-item.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)  

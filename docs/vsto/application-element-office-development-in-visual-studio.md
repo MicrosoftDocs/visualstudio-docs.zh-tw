@@ -1,5 +1,5 @@
 ---
-title: '&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671711"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。  
   
 ## <a name="syntax-for-document-level-customizations"></a>文件層級自訂的語法  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/27/2018
   
 ## <a name="syntax-for-application-level-add-ins"></a>應用程式層級增益集的語法  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/27/2018
  `application` 項目具有下列項目。  
   
 ### <a name="customization"></a>自訂  
- 角色`customization`中的項目`vstov3`命名空間中定義[&#60;自訂&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
+ 所扮演的角色`customization`中的項目`vstov3`中所定義的命名空間[&#60;自訂&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

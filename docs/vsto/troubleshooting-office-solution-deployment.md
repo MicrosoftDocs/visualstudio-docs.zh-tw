@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008697"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774649"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。  
@@ -63,7 +63,7 @@ ms.locfileid: "40008697"
  您可以將 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主要 interop 組件加入安裝套件當做與 Office 解決方案一起部署的必要條件。 如需有關如何安裝主要 interop 組件的資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)並[如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>發行使用 'Localhost' 會導致安裝問題  
- 當您使用 「http://localhost"做為文件層級解決方案的發佈或安裝位置**發行精靈**不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
+ 當您使用 「 http://localhost"做為文件層級解決方案的發佈或安裝位置**發行精靈**不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>已載入，而不是更新的組件快取的組件  
  當專案輸出路徑位於網路檔案共用時、組件以強式名稱簽署時，以及自訂的組件版本未改變時，Fusion (.NET Framework 組件載入器) 會載入組件的快取複本。 如果您更新的組件符合這些條件，因為已載入了快取的複本，所以下次執行專案時，更新就不會出現。  
@@ -72,7 +72,7 @@ ms.locfileid: "40008697"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下載組件，不載入快取複本  
   
-1.  在功能表列上選擇 **專案**，* 專案名稱 ***屬性**。  
+1.  在功能表列上選擇 **專案**， _ProjectName_**屬性**。  
   
 2.  在 [應用程式]  頁面上選擇 [組件資訊] 。  
   

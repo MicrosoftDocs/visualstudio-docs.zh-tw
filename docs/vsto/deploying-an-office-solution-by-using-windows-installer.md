@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382613"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775710"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]以了解如何為 Office 方案建立 Windows Installer。  
@@ -309,7 +309,7 @@ ms.locfileid: "39382613"
   
 2. 在 [ **專案助理** ] 頁面底部，選擇 [ **Application Registry** ] 按鈕，如下圖所示。  
   
-   ![Application Registry 按鈕。](../vsto/media/installshield-applicationregistry.gif "Application Registry 按鈕。")  
+   ![[Application Registry] 按鈕。](../vsto/media/installshield-applicationregistry.gif "Application Registry 按鈕。")  
   
    [ **Application Registry** ] 頁面隨即出現。  
   
@@ -526,7 +526,7 @@ ms.locfileid: "39382613"
   
 9. 在功能表列上選擇 **建置** > **建置 OfficeAddInSetup**。  
   
-   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置： _OfficeAddInSetupProjectRoot_ **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>另請參閱  
