@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326861"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774912"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署適用於 Visual Studio 中 SharePoint 工具擴充功能
 
@@ -134,7 +134,7 @@ ms.locfileid: "36326861"
 
 6.  在 **方案總管**，開啟專案範本或項目範本專案的捷徑功能表，然後選擇**卸載專案**。
 
-7.  同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯***YourTemplateProjectName***.csproj**或是**編輯***YourTemplateProjectName***。vbproj**。
+7.  同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯**_YourTemplateProjectName_**.csproj**或是**編輯**_YourTemplateProjectName_**.vbproj**。
 
 8.  找出下列`VSTemplate`專案檔中的項目。
 

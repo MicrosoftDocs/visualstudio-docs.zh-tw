@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155093"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774803"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何： 設定 ClickOnce 信任提示行為
 您可以設定 ClickOnce 信任提示，來控制，是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 WPF 瀏覽器的使用者。應用程式和 Office 方案。 您可以設定每位使用者的電腦上的登錄機碼設定信任提示。  
@@ -59,11 +59,11 @@ ms.locfileid: "39155093"
   
     1.  按一下 **開始**，然後按一下**執行**。  
   
-    2.  在 **開放**方塊中，輸入`regedit32`，然後按一下**確定**。  
+    2.  在 **開放**方塊中，輸入`regedit`，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "39155093"
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel** 
   
      如果索引鍵不存在，請加以建立。  
   

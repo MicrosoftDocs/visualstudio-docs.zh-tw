@@ -9,28 +9,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f4051f0771d4343ee09593a2e9674fa904a5f85
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953303"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775909"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
-您可以移轉專案定義及使用以網域特定語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]可散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
+您可以移轉專案定義及使用特定領域語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版本中的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]所散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
 
- 會提供移轉工具的一部分[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]。 此工具將轉換[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案和方案，使用或定義 DSL 工具。
+ 移轉工具提供做為一部分[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]。 此工具會將轉換[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案和方案使用，或定義 DSL 的工具。
 
- 您必須明確地執行 「 移轉工具： 它無法自動啟動時開啟的方案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在這個路徑可以找到的工具和詳細的指引文件：
+ 您必須明確執行移轉工具： 它會不自動啟動時開啟的方案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 可以找到詳細的指引 > 文件與工具，在此路徑：
 
  **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-## <a name="before-you-migrate-your-dsl-projects"></a>您之前移轉 DSL 專案
- 移轉工具修改[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案檔 (**.csproj**) 和方案檔 (**.sln**)。
+## <a name="before-you-migrate-your-dsl-projects"></a>將 DSL 專案的移轉之前
+ 移轉工具會修改[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案檔 (**.csproj**) 和方案檔 (**.sln**)。
 
 #### <a name="to-prepare-projects-for-migration"></a>若要準備移轉專案。
 
--   請確定 **.csproj**和 **.sln**可以寫入檔案。 如果它們是在原始檔控制，請確定已簽出。
+-   請確定 **.csproj**並 **.sln**可以寫入檔案。 如果它們是在原始檔控制，請確定已簽出。
 
 -   建立一份您想要移轉的資料夾。
 
@@ -40,43 +40,43 @@ ms.locfileid: "31953303"
 
 1.  啟動 DSL 移轉工具。
 
-    -   您可以按兩下 Windows 檔案總管 （或檔案總管） 中的工具，或從命令提示字元啟動工具。 此工具是在這個位置：
+    -   您可以按兩下 Windows 檔案總管 （或檔案總管） 中的工具，或從命令提示字元啟動此工具。 此工具會在這個位置：
 
          **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2.  選擇包含方案和您想要轉換的專案的資料夾。
 
-    -   在工具，最上方的方塊中輸入路徑，或按一下**瀏覽**。
+    -   在頂端的工具，方塊中輸入的路徑，或按一下**瀏覽**。
 
-     移轉工具顯示樹狀結構的定義，或使用 Dsl 的專案。 樹狀目錄中包含的所有專案，使用**Microsoft.VisualStudio.Modeling.Sdk**或**TextTemplating**組件。
+     移轉工具顯示的樹狀結構的定義，或使用 Dsl 的專案。 樹狀結構包含使用每個專案**Microsoft.VisualStudio.Modeling.Sdk**或是**無法使用 TextTemplating**組件。
 
-3.  檢閱樹狀目錄中的專案，並取消核取您不想要轉換的專案。
+3.  檢閱樹狀目錄中的專案，並取消選取不想要轉換的專案。
 
-    -   選取專案或解決方案，以查看此工具將進行變更的清單。
+    -   選取專案或解決方案，以查看變更，讓此工具的清單。
 
         > [!NOTE]
-        >  顯示資料夾名稱旁的核取方塊會有任何作用。 您必須展開資料夾，以檢查專案和方案。
+        >  顯示資料夾名稱旁邊的核取方塊會有任何作用。 您必須展開要檢查專案和方案的資料夾。
 
 4.  轉換專案。
 
-    1.  按一下**轉換**。
+    1.  按一下 **轉換**。
 
-         每個專案檔轉換時，一份之前*專案 * * *.csproj** 會另存為*專案 * * *.vs2008.csproj**
+         每個專案檔轉換時，一份之前_專案_**.csproj**會另存為_專案_**。 vs2008.csproj**
 
-         每個複本*方案 * * *.sln** 會另存為*方案 * * *.vs2008.sln**
+         每一份_解決方案_**.sln**會另存為_解決方案_**。 vs2008.sln**
 
-    2.  調查所報告的任何失敗的轉換。
+    2.  調查會報告任何失敗的轉換。
 
-         失敗會回報文字視窗中。 此外，樹狀檢視會顯示紅色旗標，無法轉換每個節點上。 您可以按一下節點以取得該失敗的詳細資訊。
+         在文字視窗中，會報告失敗。 此外，[樹狀] 檢視會顯示紅色旗標，無法轉換每個節點上。 您可以按一下節點以取得有關該失敗的詳細資訊。
 
-5.  **轉換所有範本**方案中包含已成功轉換專案。
+5.  **轉換所有範本**解決方案中包含已成功轉換專案。
 
     1.  開啟的方案。
 
-    2.  按一下**轉換所有範本**方案總管 中的標頭中的按鈕。
+    2.  按一下 [**轉換所有範本**方案總管] 中的標頭中的按鈕。
 
         > [!NOTE]
-        >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱[如何自動化轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+        >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
 
 6.  更新已轉換的專案中自訂程式碼。
 

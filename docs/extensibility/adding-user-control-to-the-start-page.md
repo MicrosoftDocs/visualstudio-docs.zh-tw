@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152954"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775822"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項加入至 [入門] 頁面
 本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 此範例會將使用者控制項新增至方案、 建置使用者控制項，並再參考從 開始 頁面的 建置的組件 *.xaml*檔案。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。  
@@ -177,7 +177,7 @@ ms.locfileid: "39152954"
   
 1.  將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\* 資料夾。  
   
-2.  如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在 * Visual Studio 安裝資料夾 ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
   
 3.  在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
   

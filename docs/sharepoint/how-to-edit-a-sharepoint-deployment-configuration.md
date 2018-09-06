@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118630"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774790"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何： 編輯 SharePoint 部署組態
   您可以建立部署組態，或修改現有的部署組態。 比方說，您無法執行單一的步驟，或變更的部署程序中的步驟順序。 您可能想要建立或修改部署組態，因為無法變更內建和以程式設計方式加入組態。  
@@ -33,7 +33,7 @@ ms.locfileid: "37118630"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>若要建立 SharePoint 部署組態  
   
-1.  在 **方案總管**，選擇 SharePoint 專案，然後在功能表列上選擇 **專案**，* 專案名稱 ***屬性**。  
+1.  在 **方案總管**，選擇 SharePoint 專案，然後在功能表列上選擇 **專案**， _ProjectName_**屬性**。  
   
 2.  在 [ **SharePoint**索引標籤上，選擇**新增**] 按鈕。  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式建立 Word 表格 |Microsoft 文件
+title: 如何： 以程式設計方式建立 Word 表格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f77b6ee70d56c12b6c1a6b9c88de36a9adb7d92e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d545b82c913573a5fbfb8d9397efa9ca672e1896
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671719"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>如何：以程式設計方式建立 Word 表格
+# <a name="how-to-programmatically-create-word-tables"></a>如何： 以程式設計方式建立 Word 表格
   <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 及 <xref:Microsoft.Office.Interop.Word.Range> 類別的成員，表示您可以在其中任何一個內容中建立資料表。 您使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，加入指定範圍的表格。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="creating-tables-in-document-level-customizations"></a>在文件層級自訂中建立表格  
+## <a name="create-tables-in-document-level-customizations"></a>在文件層級自訂中建立資料表  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>在文件中加入簡單的表格  
+### <a name="to-add-a-table-to-a-document"></a>若要將資料表加入至文件  
   
 -   使用 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，在文件開頭加入包含三列四行的表格。  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
  當您建立表格時，表格會自動加入 <xref:Microsoft.Office.Tools.Word.Document> 主項目的 <xref:Microsoft.Office.Interop.Word.Tables> 集合。 您可以利用下列程式碼中所示的 <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> 屬性，依表格的項目編號來參考表格。  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>依項目編號參考表格  
+### <a name="to-refer-to-a-table-by-item-number"></a>依項目編號參考表格  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> 屬性，並提供您要參考之表格的項目編號。  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
  每個 <xref:Microsoft.Office.Interop.Word.Table> 物件都有 <xref:Microsoft.Office.Interop.Word.Table.Range%2A> 屬性可以讓您設定的格式化屬性。  
   
-#### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格  
+### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
   
-## <a name="creating-tables-in-vsto-add-ins"></a>在 VSTO 增益集中建立表格  
+## <a name="create-tables-in-vsto-add-ins"></a>建立 VSTO 增益集的資料表  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>在文件中加入簡單的表格  
+### <a name="to-add-a-table-to-a-document"></a>若要將資料表加入至文件  
   
 -   使用 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，在文件開頭加入包含三列四行的表格。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
  當您建立表格時，表格會自動加入 <xref:Microsoft.Office.Interop.Word.Document> 的 <xref:Microsoft.Office.Interop.Word.Tables> 集合中。 您可以利用下列程式碼中所示的 <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> 屬性，依表格的項目編號來參考表格。  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>依項目編號參考表格  
+### <a name="to-refer-to-a-table-by-item-number"></a>依項目編號參考表格  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> 屬性，並提供您要參考之表格的項目編號。  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/16/2018
   
  每個 <xref:Microsoft.Office.Interop.Word.Table> 物件都有 <xref:Microsoft.Office.Interop.Word.Table.Range%2A> 屬性可以讓您設定的格式化屬性。  
   
-#### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格  
+### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [如何： 以程式設計方式將資料列和資料行加入至 Word 表格](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [如何： 以程式設計方式填入 Word 表格的文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
+ [如何： 以程式設計方式填入 Word 表格文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   
