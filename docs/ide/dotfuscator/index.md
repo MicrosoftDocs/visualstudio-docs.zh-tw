@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468192"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775431"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -49,7 +49,7 @@ Dotfuscator 可以在您的應用程式中插入[偵測及回應未經授權之�
 
 ## <a name="about-dotfuscator-ce"></a>關於 Dotfuscator CE
 
-您的 Microsoft Visual Studio 2017 包含一份 ***PreEmptive Protection - Dotfuscator* Community Edition**，又稱為 Dotfuscator CE，可免費供個人使用。
+您的 Microsoft Visual Studio 2017 包含一份 **_PreEmptive Protection - Dotfuscator_ Community Edition**，又稱為 Dotfuscator CE，可免費供個人使用。
 如需安裝隨附於 Visual Studio 2017 的 Dotfuscator CE 版本的詳細資訊，請參閱[安裝頁面][install]。
 
 Dotfuscator CE 針對開發人員、架構設計人員和測試人員提供多種[軟體保護及強化][software-protection]服務。
