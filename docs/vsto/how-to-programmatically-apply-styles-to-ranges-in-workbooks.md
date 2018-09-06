@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式將樣式套用至活頁簿中的範圍 |Microsoft 文件
+title: 如何： 以程式設計方式將樣式套用至活頁簿中的範圍
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671190"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以程式設計方式將樣式套用至活頁簿中的範圍
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何： 以程式設計方式將樣式套用至活頁簿中的範圍
   您可以將具名樣式套用至活頁簿中的區域。 Excel 提供多個預先定義的樣式。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  [儲存格格式]  對話方塊會顯示格式化儲存格可使用的所有選項，而且每個選項都可從程式碼取得。 若要在 Excel 中顯示這個對話方塊，請按一下 [格式]  功能表上的 [儲存格]  。  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>將樣式套用至文件層級自訂中的具名範圍  
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>將樣式套用至文件層級自訂中的具名範圍  
   
 1.  建立新的樣式，並設定其屬性。  
   
@@ -42,14 +43,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>從文件層級自訂中的具名範圍清除樣式  
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>從文件層級自訂中的具名範圍清除樣式  
   
 1.  將內文樣式套用至範圍。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>將樣式套用到 VSTO 增益集中的具名範圍  
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>將樣式套用到 VSTO 增益集中的具名範圍  
   
 1.  建立新的樣式，並設定其屬性。  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>從 VSTO 增益集中的具名範圍清除樣式  
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>若要從在 VSTO 增益集中的具名範圍清除樣式  
   
 1.  將內文樣式套用至範圍。  
   

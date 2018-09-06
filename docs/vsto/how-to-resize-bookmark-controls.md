@@ -1,5 +1,5 @@
 ---
-title: 如何： 調整書籤控制項的大小 |Microsoft 文件
+title: 如何： 調整書籤控制項的大小
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f740f1a56842107dff010872e532bbfc9baeec7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670851"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>如何：調整書籤控制項的大小
+# <a name="how-to-resize-bookmark-controls"></a>如何： 調整書籤控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -41,13 +42,13 @@ ms.lasthandoff: 04/16/2018
   
      如果要大幅變更書籤的大小或位置，則適合這種方法。  
   
- 在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱 [如何：將書籤控制項加入至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+ 在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="changing-the-start-and-end-properties"></a>變更 Start 和 End 屬性  
+## <a name="change-the-start-and-end-properties"></a>變更 start 和 end 屬性  
   
-#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段調整書籤大小  
+### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段調整書籤大小  
   
 1.  選取 [屬性]  視窗中的書籤。  
   
@@ -55,9 +56,9 @@ ms.lasthandoff: 04/16/2018
   
 3.  增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 屬性的值。  
   
-#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>在文件層級專案中，於執行階段調整書籤大小  
+### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>若要調整大小在執行階段的文件層級專案中的書籤  
   
-1.  修改您在執行階段或設計階段建立之 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 屬性。  
+1.  修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段，或在設計階段。  
   
      下列程式碼範例會將五個字元加入名為 `SampleBookmark`的書籤開頭。 這段程式碼假設書籤之前的文字至少有五個字元。  
   
@@ -69,19 +70,19 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]  
   
-#### <a name="to-resize-a-bookmark-in-an-vsto-add-in-project-at-run-time"></a>在 VSTO 增益集專案中，於執行階段調整書籤大小  
+### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>若要調整大小的 VSTO 增益集專案，在執行階段中的書籤  
   
-1.  修改您在執行階段建立之 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 屬性。  
+1.  修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段。  
   
      下列程式碼範例會建立在使用中文件第一個段落中包含文字的 <xref:Microsoft.Office.Tools.Word.Bookmark> ，然後再從 <xref:Microsoft.Office.Tools.Word.Bookmark>的開頭和結尾移除五個字元。  
   
      [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]
      [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]  
   
-## <a name="recreating-the-bookmark"></a>重新建立書籤  
+## <a name="recreate-the-bookmark"></a>重新建立書籤  
  您可以透過加入與現有書籤同名但大小不同的新書籤，來調整文件層級專案中的書籤大小。  
   
-#### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段重新建立書籤  
+### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段重新建立書籤  
   
 1.  選取要包含在新 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的文字。  
   
@@ -90,8 +91,8 @@ ms.lasthandoff: 04/16/2018
 3.  在 [書籤]  對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] 。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：將書籤控制項加入至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
+ [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [如何： 調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   

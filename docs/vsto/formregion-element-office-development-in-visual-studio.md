@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671511"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `formRegion` 命名空間的 `vstov4` 項目會識別與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。  
+  `formRegion`項目`vstov4`命名空間識別與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。  
   
 ## <a name="syntax"></a>語法  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/22/2018
 |`name`|必要。 識別與表單區域相關聯的表單。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明使用 `formRegion` 所部署之 Outlook VSTO 增益集的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 有三個訊息類別與這個表單區域相關聯。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明使用 `formRegion` 所部署之 Outlook VSTO 增益集的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 有三個訊息類別與這個表單區域相關聯。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ```xml  
 <vstov4:formRegion  

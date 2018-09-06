@@ -1,5 +1,5 @@
 ---
-title: 偵錯 Visual Studio 中的多執行緒應用程式 |Microsoft 文件
+title: 在 Visual Studio 中的多執行緒應用程式進行偵錯 |Microsoft Docs
 ms.custom: ''
 ms.date: 09/05/2017
 ms.technology: vs-ide-debug
@@ -23,39 +23,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd789bf9b820e13a265cceffbf3c6000ab4f0331
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671558"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
   
 具有多個處理器、多重核心處理器或超執行緒處理器的電腦，可以同時執行多個執行緒。 多個執行緒的平行處理可以大幅改進程式效能，但由於帶來了追蹤多個執行緒的需要，也可能會增加偵錯的困難度。  
   
-除此之外，多執行緒也帶來一些新類型的潛在錯誤。 舉例來說，常常有兩個以上的執行緒必須存取相同資源，但同時間只有一個執行緒能夠安全存取該資源。 所以某些形式的互斥是必要的，才能確保同時間只有一個執行緒在存取該資源。 如果執行互斥的方式不正確，就可以建立*死結*沒有執行緒能夠在其中執行的條件。 在偵錯時死結可能會是個特別難處理的問題。
+除此之外，多執行緒也帶來一些新類型的潛在錯誤。 舉例來說，常常有兩個以上的執行緒必須存取相同資源，但同時間只有一個執行緒能夠安全存取該資源。 所以某些形式的互斥是必要的，才能確保同時間只有一個執行緒在存取該資源。 如果執行互斥的方式不正確，就可以建立*死結*條件沒有任何執行緒可以執行的位置。 在偵錯時死結可能會是個特別難處理的問題。
 
 Visual Studio 會提供不同的工具，以用於偵錯多執行緒應用程式。
 
-- 執行緒偵錯執行緒的主要工具是**執行緒**視窗中，來源視窗中的執行緒標記**平行堆疊**視窗中，**平行監看式**視窗中，並**偵錯位置**工具列。 若要了解**執行緒**視窗和**偵錯位置**工具列上，請參閱[逐步解說： 使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**平行堆疊**和**平行監看式**windows，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題示範如何使用執行緒標記。
+- 偵錯執行緒的主要工具是以執行緒而言，**執行緒**視窗中，在來源視窗中的執行緒標記**平行堆疊**視窗中，**平行監看式** 視窗中，並**偵錯位置**工具列。 若要了解**執行緒**視窗和**偵錯位置**工具列，請參閱[逐步解說： 使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**平行堆疊**並**平行監看式**windows，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題示範如何使用執行緒標記。
   
-- 使用之程式碼[工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)，偵錯的主要工具是**平行堆疊**視窗中， **平行監看式**視窗中，而**工作**視窗 (**工作**視窗也支援 JavaScript)。 若要開始使用，請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)和[逐步解說： 偵錯 c + + AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
+- 使用程式碼[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)，偵錯的主要工具是**平行堆疊**視窗中， **平行監看式** 視窗中，而**工作**視窗 (**工作**視窗也支援 JavaScript)。 若要開始，請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)並[逐步解說： 偵錯 c + + AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
-- 主要工具是偵錯 gpu 執行緒， **GPU 執行緒**視窗。 請參閱[How to： 使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)。  
+- 偵錯 GPU 上的執行緒的主要工具是**GPU 執行緒**視窗。 請參閱[如何： 使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)。  
 
-- 針對處理程序的主要工具是**附加至處理序**對話方塊中，**處理程序**視窗中，而**偵錯位置**工具列。  
+- 處理程序的主要工具是**附加至處理序** 對話方塊中，**處理程序**視窗中，而**偵錯位置**工具列。  
   
-Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行緒應用程式進行偵錯時非常實用。 您可以使用中斷點條件和篩選條件，將中斷點放置在個別執行緒上。 請參閱[使用中斷點](../debugger/using-breakpoints.md)。 
+Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行緒應用程式進行偵錯時非常實用。 若要將中斷點放在個別執行緒上，您可以使用中斷點條件和篩選。 請參閱[使用中斷點](../debugger/using-breakpoints.md)。 
   
 偵錯具有使用者介面的多執行緒應用程式可能會特別地困難。 在這種情況下，您可以考慮在第二部電腦上執行該應用程式，並使用遠端偵錯。 如需資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
 ## <a name="in-this-section"></a>本節內容
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。  
- 執行緒偵錯功能，並強調的功能的導覽**平行堆疊**視窗和**平行監看式**視窗。
+ 執行緒偵錯功能，著重在功能導覽**平行堆疊**視窗和**平行監看式**視窗。
 
  [執行緒和處理序偵錯工具](../debugger/debug-threads-and-processes.md)  
- 列出的執行緒和處理序偵錯工具的功能。  
+ 列出執行緒和處理序偵錯工具的功能。  
   
  [偵錯多重處理序](../debugger/debug-multiple-processes.md)  
  說明如何偵錯多重處理序
@@ -64,7 +65,7 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  逐步解說，示範如何使用**執行緒**視窗和**偵錯位置**工具列。 
 
  [逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 逐步解說，示範如何使用**平行堆疊**和**工作**windows。  
+ 逐步解說，示範如何使用**平行堆疊**並**工作**windows。  
   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  切換偵錯內容到另一個執行緒的三種方式。  
@@ -79,15 +80,15 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  在偵錯原生執行緒時非常好用的簡單技巧。 
 
  [如何：在機器碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- 為執行緒檢視中的名稱以方便**執行緒**視窗。  
+ 命名您的執行緒在中檢視**執行緒**視窗。  
   
  [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- 為執行緒檢視中的名稱以方便**執行緒**視窗。 
+ 命名您的執行緒在中檢視**執行緒**視窗。 
   
 ## <a name="related-sections"></a>相關章節  
  [使用中斷點](../debugger/using-breakpoints.md)
 
- - 當您想要偵錯個別執行緒時，請使用中斷點條件或篩選。  
+ - 當您想要偵錯個別的執行緒，請使用中斷點條件或篩選。  
   
  - 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。  
   
@@ -97,7 +98,7 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  [元件中的多執行緒](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 元件中使用多執行緒處理。  
   
- [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
+ [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
  提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
   
 ## <a name="see-also"></a>另請參閱  

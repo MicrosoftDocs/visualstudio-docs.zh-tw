@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式列印工作表 |Microsoft 文件
+title: 如何： 以程式設計方式列印工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d9bd4d28afb1eca2ff07a8847081864c7af5744
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b17ae36702ec1e0af677ad516d29c6139c6acd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670858"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>如何：以程式設計方式列印工作表
+# <a name="how-to-programmatically-print-worksheets"></a>如何： 以程式設計方式列印工作表
   您可以列印活頁簿中的任何工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="printing-a-worksheet-in-a-document-level-customization"></a>列印文件層級自訂的工作表  
+## <a name="print-a-worksheet-in-a-document-level-customization"></a>列印文件層級自訂中的工作表  
   
-#### <a name="to-print-a-worksheet"></a>列印工作表  
+### <a name="to-print-a-worksheet"></a>列印工作表  
   
 1.  呼叫 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
   
@@ -39,16 +40,16 @@ ms.lasthandoff: 04/16/2018
   
  <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。 下列程式碼假設您有名為 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
   
-#### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
+### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
   
 1.  呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]  
   
-## <a name="printing-a-worksheet-in-a-vsto-add-in"></a>列印 VSTO 增益集的工作表  
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>列印工作表中的 VSTO 增益集  
   
-#### <a name="to-print-a-worksheet"></a>列印工作表  
+### <a name="to-print-a-worksheet"></a>列印工作表  
   
 1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
  <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。  
   
-#### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
+### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
   
 1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法。  
   

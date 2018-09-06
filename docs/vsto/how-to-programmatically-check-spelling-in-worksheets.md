@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式檢查工作表拼字 |Microsoft 文件
+title: 如何： 以程式設計方式檢查工作表拼字
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,25 +18,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 874a85063dae34f0fd650149583bade40ca60d29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671127"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何：以程式設計方式在工作表中檢查拼字
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何： 以程式設計方式檢查工作表拼字
   您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查]  對話方塊就會自動出現。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>在文件層級自訂中檢查工作表的拼字  
+## <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>在文件層級自訂中檢查工作表的拼字  
   
 1.  呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
      [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-an-vsto-add-in"></a>在 VSTO 增益集的工作表中檢查拼字  
+## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>若要在 VSTO 增益集的工作表中檢查拼字  
   
 1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> 方法。  
   
