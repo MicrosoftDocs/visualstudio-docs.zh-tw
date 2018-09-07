@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 4
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，尤其是 Django Web 專案範本提供的功能。
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388172"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626521"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 
@@ -47,7 +47,7 @@ ms.locfileid: "39388172"
 
     ![方案總管將 DjangoWeb 專案顯示為啟始專案](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [Web 伺服器] 按鈕來執行伺服器：
+1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 

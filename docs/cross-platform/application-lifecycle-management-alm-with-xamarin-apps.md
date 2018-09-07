@@ -1,7 +1,6 @@
 ---
 title: 應用程式生命週期管理 (ALM) 與 Xamarin 應用程式 | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231852"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634937"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
+# <a name="devops-with-xamarin-apps"></a>使用 Xamarin 應用程式進行 DevOps
 
 Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android、iOS 及 Windows 的跨平台行動裝置應用程式。 Xamarin 讓大部分的程式碼可在平台之間共用，只有極低比例的程式碼需要在特定平台上運作。 如需 Xamarin 本身的詳細資訊，請參閱 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。
 
-開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。
+開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 營運) 的活動橫跨了應用程式的整個生命週期，包含規劃和追蹤進度、設計和實作程式碼、管理原始程式碼存放庫、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。
 
-Visual Studio 以及 Visual Studio Team Services 和 Team Foundation Server 會一同提供各種 DevOps 功能，也稱為「應用程式生命週期管理」或 ALM。 其中有許多功能完全適用於跨平台專案。
+Visual Studio 與 Visual Studio Team Services 和 Team Foundation Server 合力提供各式各樣的 DevOps 功能。 其中有許多功能完全適用於跨平台專案。 這對 Xamarin 應用程式更是如此，因為這些應用程式使用 C# 和 .NET 來建置，也就是某些 DevOps 工具用以建置的途徑。 其他工具需要與建置和執行階段環境緊密整合。 因為 Xamarin 應用程式在非 Windows 平台上執行，並使用 .NET 的 Mono 實作，所以 Xamarin 會對某些特殊需求提供工具。
 
-這對 Xamarin 應用程式更是如此，因為它們是使用 C# 和 .NET 所建置，並在其周圍建置一些 ALM 工具。 其他工具需要與建置和執行階段環境緊密整合。 因為 Xamarin 應用程式在非 Windows 平台上執行，並使用 .NET 的 Mono 實作，所以 Xamarin 會對某些特殊需求提供工具。
-
-下列表格列出您可以預期哪些 Visual Studio ALM 功能可與 Xamarin 專案搭配良好，哪些功能則有限制。 請參閱連結文件以取得這項功能的詳細資訊。
+下表會區分 Visual Studio 中可與 Xamarin 專案順利搭配的 DevOps 功能，以及有其限制的功能。 請參閱連結文件以取得這項功能的詳細資訊。
 
 ## <a name="agile-tools"></a>Agile 工具
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469050"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626856"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -23,7 +23,7 @@ ms.locfileid: "39469050"
 許多程式碼編輯器和 IDE，包括 Visual Studio，都支援 EditorConfig 設定。 它是隨附於程式碼的可攜式元件，甚至可以強制規範 Visual Studio 之外的編碼樣式。
 
 > [!NOTE]
-> 當您在 Visual Studio 中將 EditorConfig 新增到專案時，除非您設定文件的格式 ([編輯] > [進階] > [格式化文件] 或 **Ctrl**+**K**、**Ctrl**+**D**)，否則現有程式碼的格式設定不會變更。 但是，新的程式碼會依照 EditorConfig 的設定進行設定格式。
+> 當您在 Visual Studio 中將 EditorConfig 新增到專案時，除非您將文件格式化 ([編輯] > [進階] > [將文件格式化] 或在預設設定檔中按 **Ctrl**+**K**、**Ctrl**+**D**)，否則現有程式碼的格式設定不會變更。 但是，新的程式碼會依照 EditorConfig 的設定進行設定格式。 您可在 [[格式化](reference/options-text-editor-csharp-formatting.md#format-document-settings)] 選項頁面定義您希望**將文件格式化**套用哪些 EditorConfig 設定。
 
 ## <a name="coding-consistency"></a>程式碼撰寫的一致性
 

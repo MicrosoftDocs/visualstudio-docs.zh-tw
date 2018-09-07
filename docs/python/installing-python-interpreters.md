@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 72cb3872462d4e70cdab7510385a5e903af3f7f5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341842"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626932"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
@@ -34,7 +34,7 @@ Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-st
 
 | 解譯器 | 描述 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](http://ipython.org/) 的互通性。 另請參閱：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (我應該使用 Python 2 還是 Python 3？) 請注意，Visual Studio 2015 及更早版本不支援 Python 3.6，因此可能會出現 [不支援 python 3.6 版] 的錯誤。 請改用 Python 3.5 或更早版本。 |
+| [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](http://ipython.org/) 的互通性。 另請參閱：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (我應該使用 Python 2 還是 Python 3？) 請注意，Visual Studio 2015 及更舊版本不支援 Python 3.6+，因此可能會出現**不支援 python 3.6 版**這樣的錯誤。 請改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 |
 | [Anaconda](https://www.continuum.io) | 由 Python 提供技術支援的開放式資料科學平台，它包含最新版的 CPython 和大多數難以安裝的套件。 如果您無法決定要使用哪一個解譯器，建議您使用此解譯器。 |
 | [PyPy](http://www.pypy.org/) | Python 的高效能追蹤 JIT 實作，適合用來處理長時間執行的程式，以及您找出效能問題但找不到其他解決方案的情況。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |

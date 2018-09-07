@@ -1,6 +1,6 @@
 ---
-title: 尋找和取代文字
-ms.date: 05/07/2018
+title: 尋找和取代文字，及多重游標選取
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106748"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627241"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
-您可以在 Visual Studio 編輯器中使用[尋找和取代](#find-and-replace-control)或[檔案中尋找/取代](#find-in-files-and-replace-in-files)來尋找和使用文字。
+您可以在 Visual Studio 編輯器中使用[尋找和取代](#find-and-replace-control)或[檔案中尋找/取代](#find-replace-in-files)來尋找和使用文字。 Visual Studio 2017 15.8 中有一項新功能，讓您可以使用「[多重游標選取](#multi-caret-selection)」，來尋找和取代模式的「某些」執行個體。
 
 > [!TIP]
 > 如果您要重新命名程式碼符號 (例如變數和方法)，比起使用尋找和取代，最好是*[重構](../ide/reference/rename.md)* 它們。 重構是智慧型功能，可了解範圍，而尋找和取代則會盲目地取代所有執行個體。
@@ -58,7 +58,7 @@ ms.locfileid: "33106748"
 
 [尋找和取代] 控制項會出現在程式碼編輯器視窗的右上角。 [尋找和取代] 控制項會立即反白顯示目前文件中每個出現的指定搜尋字串。 您可以選擇搜尋控制項上的 [找下一個] 按鈕或 [找上一個] 按鈕，以從第一個出現位置巡覽至另一個出現位置。
 
-![尋找和取代控制項](media/find-and-replace-box.png)
+![Visual Studio 中的尋找和取代](media/find-and-replace-box.png)
 
 您可以選擇 [尋找] 文字方塊旁的按鈕，以存取取代選項。 若要一次執行一個取代，請選擇 [取代] 文字方塊旁的 [取代下一個] 按鈕。 若要取代所有相符項目，請選擇 [全部取代] 按鈕。
 
@@ -74,7 +74,7 @@ ms.locfileid: "33106748"
 
 [檔案中尋找/取代] 的運作方式與 [尋找和取代] 控制項類似，不同之處在於您可以定義搜尋範圍。 您不只可以在編輯器中搜尋目前開啟的檔案，還可以搜尋所有開啟的文件、整個方案、目前專案以及選取的資料夾集。 您也可以依副檔名進行搜尋。 若要存取 [檔案中尋找/取代] 對話方塊，請選取 [編輯] 功能表上的 [尋找和取代] 或按 **Ctrl+Shift+F**。
 
-![檔案中尋找對話方塊](media/find-in-files-box.png)
+![Visual Studio 中的檔案中尋找](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>尋找結果
 
@@ -90,6 +90,41 @@ ms.locfileid: "33106748"
 ### <a name="create-custom-component-sets"></a>建立自訂元件集
 
 您可以選擇 [查詢] 方塊旁的 [編輯自訂元件集] 按鈕，將元件集定義為搜尋範圍。 您可以指定已安裝的 .NET 或 COM 元件、解決方案中所含的 Visual Studio 專案，或者任何組件或類型庫 (*.dll*、*.tlb*、*.olb*、*.exe* 或 *.ocx*)。 若要搜尋參考，請選取 [查詢參考] 方塊。
+
+## <a name="multi-caret-selection"></a>多重游標選取
+
+**Visual Studio 2017 15.8 版的新功能**
+
+使用「多重游標選取」，同時對兩處以上進行相同的編輯。 舉例來說，您可以同時在多個位置插入相同的文字或修改現有文字。
+
+在下列螢幕擷取畫面中，在三個位置選取了 `-0000`；如果使用者按下 **Delete**，這三個選取範圍都會刪除：
+
+![Visual Studio 中的 XML 檔案多重游標選取](media/multi-caret-selection.png)
+
+若要選取多個游標，請像平常一樣按一下或選取第一個文字，然後在您於其他每個位置按一下或選取文字時，按著 **Alt**。 您也可以自動將相符的文字新增為其他選取項範圍，或選取文字方塊，在每一行以同樣方式編輯。
+
+> [!TIP]
+> 若您已在 [工具] > 選項 中選擇 **Alt** 作為按一下滑鼠「移至定義」的輔助按鍵，就會停用多重游標選取。
+
+### <a name="commands"></a>命令
+
+使用下列按鍵與動作可執行多重游標選取行為：
+
+|快速鍵|動作|
+|-|-|
+|**Ctrl**+**Alt** + 按一下|新增第二個游標|
+|**Ctrl**+**Alt** + 按兩下|新增第二個文字選取範圍|
+|**Ctrl**+**Alt** + 按一下 + 拖曳|新增第二個選取範圍|
+|**Shift**+**Alt**+**.**|將下一個相符文字新增為選取範圍|
+|**Ctrl**+**Shift**+**Alt**+**,**|將所有相符的文字新增為選取範圍|
+|**Shift**+**Alt**+**,**|移除最後一個選取項目|
+|**Ctrl**+**Shift**+**Alt**+**.**|跳過下一個相符的項目|
+|**Alt** + 按一下|新增方塊選取範圍|
+|**Esc** 或按一下|清除所有選取範圍|
+
+有些命令也可在 [編輯] 功能表取得，在 [多重游標]下：
+
+![Visual Studio 中的多重游標飛出功能表](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>另請參閱
 

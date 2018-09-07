@@ -2,7 +2,7 @@
 title: 分析 CPU 使用量資料 (C++)
 description: 使用 CPU 使用量診斷工具在 C++ 中測量應用程式效能
 ms.custom: ''
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627000"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -27,17 +28,21 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量] 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
 
+Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>建立專案
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 2. 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。
 
+    如果您沒有看到 [Windows 主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
 3. 鍵入 **Diagnostics_Get_Started_Native** 這類名稱，然後按一下 [確定]。
 
     Visual Studio 會建立專案。
 
-4. 在 MyDbgApp.cpp 中，將下列程式碼
+4. 在 *MyDbgApp.cpp* 中，將下列程式碼
 
     ```c++
     int main()
@@ -110,7 +115,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料 
+## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
   
 1.  首先，在 `main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
@@ -125,9 +130,9 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
   
-3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
+3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  按一下 [偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+4.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
      應用程式完成載入時，會出現 [診斷工具] 的 [摘要] 檢視。
 
@@ -149,7 +154,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
      此時，您可以開始分析資料。
 
-## <a name="Step2"></a> 步驟 2：分析 CPU 使用量資料
+## <a name="step-2-analyze-cpu-usage-data"></a>步驟 2：分析 CPU 使用量資料
 
 建議您先檢查 [CPU 使用量] 下方的函式清單、識別執行最多工作的函式，仔細觀察每一項，接著開始分析您的資料。
 
@@ -181,7 +186,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 - 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
  [Visual Studio 中的分析](../profiling/index.md)  
- [分析功能導覽](../profiling/profiling-feature-tour.md)
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)

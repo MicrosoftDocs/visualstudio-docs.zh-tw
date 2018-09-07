@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268265"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626776"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無論是否含偵錯工具皆可執行 (例如：[CPU 使用量] 和 [記憶體使用量])。 非偵錯工具效能工具適用於針對「版本」設定執行，而偵錯工具整合工具適用於針對「偵錯」設定執行。  
+
+您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>不論有無偵錯工具，我都應該執行此工具嗎？  
  偵錯工具整合的效能工具，可讓您執行很多非偵錯工具無法達成的工作，例如設定中斷點和檢查變數值。 非偵錯工具提供更貼近使用者眼中所見的已發行應用程式體驗。  

@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251877"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635599"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -36,7 +36,7 @@ ms.locfileid: "39251877"
 |[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[了解 Visual Studio 中的 Xamarin](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Xamarin 行動應用程式開發文件](/xamarin/) |
-|[應用程式生命週期管理 (ALM) 與 Xamarin 應用程式](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[使用 Xamarin 應用程式進行 DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[了解 Visual Studio 的通用 Windows app](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 與 C# 之間的相似性](http://aka.ms/scposter) (download.microsoft.com)|
 

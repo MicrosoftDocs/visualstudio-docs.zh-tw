@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627065"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/27/2018
 R 和 Python 是兩個用於資料科學的主要指令碼語言。 這兩種語言都很容易了解，而且多種套件生態系統都予以支援。 這些套件處理各種案例 (例如資料取得、清理、模型訓練、部署和繪製)。 F# 也是一種功能強大的功能優先 .NET 語言，適合各種資料處理工作。
 
 <!--Note link on the image because this one is large -->
-[![含 R、Python 和 F# 的 Visual Studio 螢幕擷取畫面](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![含 R、Python 和 F# 的 Visual Studio 螢幕擷取畫面](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>工作負載選項
 
@@ -75,7 +76,7 @@ SQL Server 支援使用 R 和 Python，以直接在 SQL Server 內執行進階�
 
 如需詳細資訊：
 
-- [使用 SQL Server 和 R](../rtvs/sql-server.md)
+- [使用 SQL Server 和 R](integrating-sql-server-with-r.md)
 - [SQL Server 2016 中使用 R 的資料庫中進階分析 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/) \(英文\)
 - [SQL Server 2017 中的 Python：增強式資料庫中機器學習 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/) \(英文\)
 
@@ -88,4 +89,4 @@ Azure SDK for Python 可讓您更輕鬆地從 Windows、Mac 和 Linux 上所執�
 Azure Notebooks (目前為預覽版本) 可在 Microsoft Azure 上免費線上存取雲端中執行的 Jupyter Notebooks。 此服務會在 Python、R 和 F# 中包含範例筆記本，協助您開始使用。 請瀏覽 [notebooks.azure.com](https://notebooks.azure.com/)。
 
 <!--Note link on the image because this one is large -->
-[![含 R 樣本簡介的 Azure Notebooks 螢幕擷取畫面](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![含 R 樣本簡介的 Azure Notebooks 螢幕擷取畫面](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

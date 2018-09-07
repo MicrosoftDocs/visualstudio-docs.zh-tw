@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f297b9202dabfcfe40ea63b187bc914e187b974f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758991"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626555"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 使用 [應用程式時間軸]  程式碼剖析工具來找出並修正 XAML 應用程式中的應用程式互動相關效能問題。 此工具可透過提供應用程式資源耗用量的詳細檢視，來協助改善 XAML 應用程式的效能。 您可以分析應用程式準備 UI 框架 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。  
@@ -97,7 +97,7 @@ ms.locfileid: "36758991"
 |||  
 |-|-|  
 |**正在剖析**|剖析 XAML 檔案和建立物件所花費的時間。<br /><br /> 展開 [時間軸詳細資料]  中的 [剖析]  節點會顯示剖析為根事件結果之所有 XAML 檔案的相依性鏈結。 這可讓您識別效能敏感情節中不必要的檔案剖析和物件建立作業，並排除這些作業以取得最佳化。|  
-|**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 這可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件可準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate 和 ArrangeOverride 所花的時間)，並建置參與配置傳遞的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以將配置傳遞最佳化。|  
+|**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 這可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 所花的時間)，並建置參與配置傳遞的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以將配置傳遞最佳化。|  
 |**轉譯**|將 XAML 項目繪製到螢幕所花費的時間。|  
 |**I/0**|從本機磁碟或網路資源 (透過 [Microsoft Windows 網際網路 (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)存取) 擷取資料所花費的時間。|  
 |**應用程式程式碼**|執行與剖析或配置不相關的應用程式 (使用者) 程式碼所花費的時間。|  

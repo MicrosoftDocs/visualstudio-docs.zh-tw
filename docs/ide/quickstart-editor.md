@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中編輯簡介
+title: 編輯簡介
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511231"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626805"
 ---
-# <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
+# <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 10 分鐘的 Visual Studio 程式碼編輯器簡介中，我們會將程式碼新增至檔案，以了解 Visual Studio 讓撰寫、導覽和了解程式碼更加輕鬆的一些方式。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
-本快速入門假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 建立主控台應用程式。
+本文假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 建立主控台應用程式。
 
 ## <a name="create-a-new-code-file"></a>建立新的程式碼檔
 
@@ -157,16 +157,8 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 ## <a name="next-steps"></a>後續步驟
 
-您已經完成這個 Visual Studio 編輯器快速入門。 接著，您可以嘗試一些其他 Visual Studio 開發環境快速入門。
-
 > [!div class="nextstepaction"]
-> [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [快速入門：將 Visual Studio 個人化](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+> [了解專案與解決方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 

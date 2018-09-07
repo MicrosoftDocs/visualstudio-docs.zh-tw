@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283454"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627206"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 
@@ -51,7 +51,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
 |||
 |-|-|
-|格式化文件|設定程式碼適當的行縮排，並移動大括號以分隔文件中的行。|
+|[將文件格式化](code-styles-and-quick-actions.md#format-document-command)|設定程式碼適當的行縮排，並移動大括號以分隔文件中的行。|
 |格式化選取範圍|設定程式碼適當的行縮排，並移動大括號以分隔選取範圍中的行。|
 |選取範圍空白鍵轉定位鍵|將前置空格變更至適當的定位點。|
 |選取範圍定位鍵轉空白鍵|將前置定位點變更為空格。 如果您要將檔案中所有空格轉換為定位點 (或轉換所有定位點為空格)，可以使用 `Edit.ConvertSpacesToTabs` 及 `Edit.ConvertTabsToSpaces` comm及s. 在 Visual Studio 功能表中看不到這些命令，但可以透過 [快速存取] 視窗或命令視窗加以呼叫。|
