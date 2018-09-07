@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276802"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626657"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,9 +34,9 @@ ms.locfileid: "39276802"
 
 | 發行版本                                              | 版本                     |     產品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新 (15.7 版)                    |    Enterprise、Community     |      15.7.5 版     |
+| Visual Studio 2017：最新 (15.8 版)                    |    Enterprise、Community     |      15.8.0 版     |
 | Visual Studio 2017：最新預覽 (15.8 版 Preview 5) |    Enterprise、Community     |      15.8.5 版     |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.15 版    |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.17 版    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版  |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期) |
 

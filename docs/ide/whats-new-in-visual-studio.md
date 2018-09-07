@@ -2,7 +2,7 @@
 title: Visual Studio 2017 的新功能
 description: 深入了解 Visual Studio 2017 中的新功能。
 ms.custom: ''
-ms.date: 05/09/2018
+ms.date: 08/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282969"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755505"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
-**已針對 [15.7 版本](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)更新**
+**已針對 [15.8 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)更新**
 
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
@@ -36,7 +36,7 @@ ms.locfileid: "36282969"
 * **[效能和生產力](#performance-and-productivity)**。 我們已經著重於新的和現代的行動、雲端和桌面開發功能。 而且，我們也已改善整體擷取、效能和一般開發人員生產力體驗。 與以前相比，Visual Studio 的啟動速度、回應速度都變得更快，且使用的記憶體也更少。
 * **[利用 Azure 進行雲端應用程式開發](#cloud-app-development-with-azure)**。 一套內建的 Azure 工具套件，可讓您輕鬆建立由 Microsoft Azure 提供技術的雲端優先應用程式。 Visual Studio 可讓您在 Azure 上輕鬆設定、建置、偵錯、封裝及部署應用程式與服務。
 * **[Windows 應用程式開發](#windows-app-development)**。 在 Visual Studio 2017 中，您可以使用 UWP 範本建立適用於所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的單一專案。 然後，您可以產生應用程式套件，並從 Visual Studio 提交給 Microsoft Store，以將您的應用程式提供給客戶。
-* **[行動應用程式開發](#mobile-app-development)**。 在 Visual Studio 2017 中，您可以透過 Xamarin 快速創新並獲得結果，它使用一個核心程式碼基底和一組技術來統一您的多平台行動需求。 利用您現有的小組、技術投資及 C# 程式碼即可撰寫行動應用程式，讓您不僅能夠提前還能以低於預算的方式，提供消費者等級的體驗。 您可以加速行動應用程式生命週期的每個步驟，以提供世界級的消費者體驗，或是提供生產力應用程式組合來提升工作人員能力。
+* **[行動應用程式開發](#mobile-app-development)**。 在 Visual Studio 2017 中，您可以透過 Xamarin 快速創新並獲得結果，它使用一個核心程式碼基底和一組技術來統一您的多平台行動需求。 利用您現有的小組、技術投資及 C# 程式碼即可撰寫行動應用程式，讓您不僅能夠提前還能以低於預算的方式，提供消費者等級的體驗。 您可以加速行動應用程式生命週期的每個步驟，以提供世界級的消費者體驗，或是提供生產力應用程式組合來提升工作人員能力。 (還有 **15.8 的新功能**：使用 Hyper-V 的行動應用程式開發人員，現在能夠使用快速的 Android 模擬器，其一律支援最新的 Android API、使用現成可用的 Google Play Services，並支援 Android 模擬器的所有功能，包括相機、地理位置及 Quick Boot。)
 * **[跨平台開發](#cross-platform-development)**。 將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫 (**15.3 的新功能**：取得 .NET Core 2.0 SDK 的並存支援)。
 * **[遊戲開發](#games-development)**。 透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含 Unity ShaderLab 著色器語言的語法著色、更佳的偵錯工具視覺化，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。
 * **[AI 開發](#ai-development)**。 有了 Visual Studio Tools for AI (**15.5 的新功能**)，您就可以使用 Visual Studio 的生產力功能，來加速 AI 創新。 建置、測試及部署與 Azure Machine Learning 緊密整合的深度學習/AI 解決方案，以取得強大的測試功能，例如將資料準備和模型定型作業明確提交至不同的計算目標。 此外，Visual Studio Tools for AI 也提供自訂計量和執行歷程記錄追蹤的支援，以便進行資料科學重現與稽核。
@@ -134,6 +134,18 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence: Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
+
+#### <a name="multi-caret-editing"></a>多重游標編輯
+
+**15.8 中的新功能**：現在要在一個檔案中編輯多個位置，是輕而易舉的事。 一開始，先在一個檔案中的多個位置建立插入點和選取範圍。 接著使用多重游標編輯功能，同時對兩處以上進行相同的編輯。
+
+如需詳細資訊，請參閱[尋找和取代文字](finding-and-replacing-text.md)頁面的[多重游標選取](finding-and-replacing-text.md#multi-caret-selection)章節。
+
+#### <a name="keep-keybinding-profiles-consistent"></a>讓按鍵繫結關係設定檔保持一致
+
+**15.8 中的新功能**：現在，您可以透過兩個新的鍵盤設定檔：Visual Studio Code 和 ReSharper (Visual Studio)，在工具之間保持一致的按鍵繫結關係。 您可以在 [工具] > [選項] > [一般] > [鍵盤] 和頂端下拉式功能表下，找到這些結構描述。
+
+  ![Visual Studio Code 和 ReSharper 的新按鍵繫結關係設定檔](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
 #### <a name="use-new-refactorings"></a>使用新的重構
 
@@ -278,6 +290,20 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 **15.4 的新功能**：Xamarin Live 能讓開發人員直接在 iOS 和 Android 裝置上持續部署、測試及偵錯他們的應用程式。 下載 Xamarin Live Player 後 &mdash;可從 App Store 或 Google Play 取得&mdash;，您就可以配對裝置和 Visual Studio，並改革建置行動應用程式的方式。 這項功能現在已包含在 Visual Studio 中，於 [工具] > [選項] > [Xamarin] > [其他] > [啟用 Xamarin Live Player] 啟用。
 
 ![Xamarin Live Player 配對、部署和即時編輯模式的動畫](../ide/media/xamarinliveplayer.gif)
+
+### <a name="support-for-google-android-emulator"></a>Google Android Emulator 的支援
+
+**15.8 中的新功能**：當您使用 Hyper-V 時，現在可與其他以 Hyper-V 為基礎的技術 (例如 Hyper-V 虛擬機器、Docker 工具、HoloLens 模擬器等) 並行使用 Google 的 Android Emulator。 (此功能需要 Windows 10 2018 年 4 月更新或較新版本。)
+
+![使用 Hyper-V 技術的 Google Android Emulator](../ide/media/xamarin-hyperv-android-emulator.png)
+
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer 分割檢視編輯器
+
+也是 **15.8 中的新功能**：我們對 Xamarin.Android 的設計工具體驗進行了大幅改進。 其中一個亮點是新的分割檢視編輯器，可讓您同時建立、編輯及預覽版面配置。
+
+![Xamarin.Android Designer 分割檢視編輯器](../ide/media/android-designer-split-view.png)
+
+如需詳細資訊，請參閱[硬體加速以提升模擬器效能](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 應用程式中心
 

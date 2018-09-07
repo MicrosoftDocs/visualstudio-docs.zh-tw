@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233083"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626968"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 
@@ -54,7 +54,7 @@ ms.locfileid: "39233083"
 
   ![選取 Android 版 Visual Studio 模擬器作為偵錯目標](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin 驗證 3")
 
-  如需更詳細的資訊，請參閱 [Visual Studio 的 Android 模擬器簡介](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) \(英文\) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱[針對 Android 版 Visual Studio 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android] > [Android 模擬器管理員]，為模擬器建立新的裝置設定檔。
+  如需詳細資訊，請參閱 Microsoft DevOps 部落格上的 [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) (Visual Studio 的 Android 模擬器簡介)。 若在讓模擬器運作時發生問題，請參閱[針對 Android 版 Visual Studio 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android] > [Android 模擬器管理員]，為模擬器建立新的裝置設定檔。
 
 3. 按 **F5** 來編譯程式並部署至 Android 裝置或模擬器。
 

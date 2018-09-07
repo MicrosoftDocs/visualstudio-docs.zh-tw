@@ -1,7 +1,6 @@
 ---
-title: 應用程式生命週期管理 (ALM) (含 Unity 應用程式) | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+title: 應用程式生命週期管理 (ALM) 與 Unity 應用程式 | Microsoft Docs
+ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
@@ -10,20 +9,20 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232328"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634614"
 ---
-# <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
+# <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
 
-開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。
+開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 營運) 的活動橫跨了應用程式的整個生命週期，包含規劃和追蹤進度、設計和實作程式碼、管理原始程式碼存放庫、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。
 
- Visual Studio 以及 Visual Studio Team Services 和 Team Foundation Server 會一同提供各種 DevOps 功能，也稱為「應用程式生命週期管理」或 ALM。 其中許多項目都適用於跨平台專案 (包括使用 Unity 所建立的遊戲和沈浸式圖形化應用程式)，特別是使用 C# 做為指令碼語言時。 不過，因為 Unity 有其專屬開發環境和執行階段引擎，所以許多 ALM 功能不適用，如同其在 Visual Studio 中所建置的其他類型專案中亦不適用。
+Visual Studio 與 Visual Studio Team Services 和 Team Foundation Server 合力提供各式各樣的 DevOps 功能。 其中許多功能適用於跨平台專案，包括使用 Unity 建立的遊戲和沈浸式圖形化應用程式，尤其是在使用 C# 作為指令碼語言時。 不過，由於 Unity 有其專屬的開發環境和執行階段引擎，因此有幾種 DevOps 功能對於在 Visual Studio 中建置的別種專案並不適用。
 
- 下表說明使用 Unity 時 Visual Studio ALM 功能是否適用。 請參閱連結文件以取得這項功能的詳細資訊。
+下表區別在使用 Unity 時，Visual Studio 中的 DevOps 功能適用與不適用的情形。 請參閱連結文件以取得這項功能的詳細資訊。
 
 ## <a name="agile-tools"></a>Agile 工具
 
@@ -66,26 +65,27 @@ ms.locfileid: "39232328"
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|[是]||
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|[是]||
 
- 使用 Unity 的版本控制特殊考量：
+使用 Unity 的版本控制特殊考量：
 
-1.  Unity 會追蹤單一不透明程式庫 (預設為隱藏) 中遊戲資產的中繼資料。 若要保持檔案與中繼資料同步，則需要顯示中繼資料，並將它儲存在更容易管理的區塊中。 如需詳細資訊，請參閱[搭配 Unity 使用外部版本控制系統 (英文)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity 文件)。
+1. Unity 會追蹤單一不透明程式庫 (預設為隱藏) 中遊戲資產的中繼資料。 若要保持檔案與中繼資料同步，則需要顯示中繼資料，並將它儲存在更容易管理的區塊中。 如需詳細資訊，請參閱[搭配 Unity 使用外部版本控制系統 (英文)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity 文件)。
 
-2.  並非 Unity 專案中的所有檔案和資料夾都適用於原始檔控制 (上面的連結中也會予以描述)。 應該加入 Assets 和 ProjectSettings 資料夾，但不應該加入 Library 和 Temp 資料夾。 如需其他不會進入原始檔控制的已產生檔案清單，請參閱 StackOverflow 上的討論[如何使用 Git 進行 Unity3D 原始檔控制？(英文)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)。 許多開發人員也已個別針對這個主題撰寫部落格。
+2. 並非 Unity 專案中的所有檔案和資料夾都適用於原始檔控制 (上面的連結中也會予以描述)。 應該加入 Assets 和 ProjectSettings 資料夾，但不應該加入 Library 和 Temp 資料夾。 如需其他不會進入原始檔控制的已產生檔案清單，請參閱 StackOverflow 上的討論[如何使用 Git 進行 Unity3D 原始檔控制？(英文)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)。 許多開發人員也已個別針對這個主題撰寫部落格。
 
-3.  Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
+3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
 ## <a name="build"></a>組建
- 參考連結︰**[建置和發行](/vsts/build-release/index)**
+
+參考連結︰**[建置和發行](/vsts/build-release/index)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |內部部署 TFS 伺服器|可能|Unity 專案是透過 Unity 環境而非透過 Visual Studio 組建系統所建置 (Visual Studio Tools for Unity 內的建置將會編譯指令碼，而不會產生可執行檔)。 可能會[從命令列建置 Unity 專案](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity 文件)，因此，可能會在 TFS 伺服器上設定 MSBuild 處理序來執行適當的 Unity 命令，但前提是要將 Unity 安裝於該電腦上。<br /><br /> Unity 也提供 [Unity 雲端組建 (英文)](https://build.cloud.unity3d.com/landing/)，其會監視 Git 或 SVN 儲存機制，並執行定期建置。 它目前並未使用 Team Foundation 版本控制或 Visual Studio Team Services。|
-|連結至 Visual Studio Team Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Visual Studio Team Services 觸發的組建使用內部部署的 TFS 電腦。  相關指示，請參閱[建置和發行代理程式](/vsts/build-release/concepts/agents/agents)。|
+|連結至 Visual Studio Team Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Visual Studio Team Services 觸發的組建使用內部部署的 TFS 電腦。 相關指示，請參閱[建置和發行代理程式](/vsts/build-release/concepts/agents/agents)。|
 |Visual Studio Team Services 的裝載控制器服務|否|目前不支援 Unity 組建。|
 |具有預先定義和後置指令碼的組建定義|[是]|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|
 |包括閘道簽入的連續整合|[是]|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|
 
-## <a name="testing"></a>測試
+## <a name="test"></a>測試
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
@@ -116,7 +116,7 @@ ms.locfileid: "39232328"
 |-------------|--------------------------|-------------------------|
 |管理發行處理序|[是]||
 |部署至伺服器以便透過指令碼進行側面載入|[是]||
-|上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|
+|上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。 請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視
 

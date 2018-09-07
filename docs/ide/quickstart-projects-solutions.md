@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的專案和解決方案簡介
+title: 專案和解決方案簡介
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512300"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626520"
 ---
-# <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
+# <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
-在這個 10 分鐘的快速入門中，我們將探討在 Visual Studio 中建立「方案」和「專案」的意義。 方案是用來組織一或多個相關程式碼專案的容器，例如類別庫和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
+在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 方案是用來組織一或多個相關程式碼專案的容器，例如類別庫和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
@@ -176,19 +176,9 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 
 如果您想要確認單元測試是否正常運作，請從功能表列中選擇 [測試] > [執行] > [所有測試]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
 
-恭喜您完成此快速入門！ 接下來，您可能想要探索一些其他 Visual Studio 快速入門，或深入了解如何[建立專案和解決方案](../ide/creating-solutions-and-projects.md)。
-
-> [!div class="nextstepaction"]
-> [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [快速入門：將 Visual Studio 個人化](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>另請參閱
 
+- [建立專案和解決方案](../ide/creating-solutions-and-projects.md)
 - [管理專案及解決方案屬性](../ide/managing-project-and-solution-properties.md)
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

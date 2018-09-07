@@ -1,21 +1,20 @@
 ---
-title: Visual Studio 效能祕訣和訣竅
-ms.date: 08/31/2017
+title: 改善效能的祕訣
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433531"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627035"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -40,7 +39,13 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
 1. 在 [專案與解決方案] > [一般] 頁面上，選取 [在解決方案載入時重新開啟文件]。
 
-若您停用自動檔案還原，則可以使用[移至](../ide/go-to.md)快速瀏覽到您要開啟的檔案。 選取 [編輯] > [移至] > [移至全部]，或按 **Ctrl**+**T**。
+若您停用自動檔案還原，則可以使用其中一個[移至](../ide/go-to.md)命令，快速瀏覽到您要開啟的檔案：
+
+- 若是一般**移至**功能，請選取 [編輯] > [移至] > [移至全部]，或按 **Ctrl**+**T**。
+
+- 在 Visual Studio 2017 15.8 版及更新版本中，您可以跳到解決方案中最後編輯的位置，方法是使用 [編輯] > [移至] > [移至最後編輯位置]，或按 **Ctrl**+**Shift**+**Backspace**。
+
+- 在 Visual Studio 2017 15.8 版及最新版本中，請使用 [移至最近使用的檔案] 查看最近在解決方案中瀏覽的檔案清單。 選取 [編輯] > [移至] > [移至最近使用的檔案]，或按 **Ctrl**+**1**、**Ctrl**+**R**。
 
 ## <a name="configure-debugging-options"></a>設定偵錯選項
 
