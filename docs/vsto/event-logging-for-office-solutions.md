@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671107"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/22/2018
 ## <a name="read-the-event-log"></a>讀取事件記錄檔  
  開啟 [事件檢視器]  並篩選出您要查看的事件。  
   
-### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>在 Windows Server 2003 和 Windows XP 中讀取事件記錄檔  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>若要讀取事件記錄檔，在 Windows Server 2003 和 Windows XP  
   
 1.  在 [控制台] 中，開啟 [系統管理工具] 。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
   
 7.  按一下 [確定]  以查看篩選過的檢視。  
   
-#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>在 Windows 7、Windows Vista 和 Windows Server 2008 中讀取事件記錄檔  
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要讀取事件記錄檔，在 Windows 7、 Windows Vista 和 Windows Server 2008  
   
 1.  在 [控制台] 中，開啟 [系統管理工具] 。  
   
@@ -76,15 +77,15 @@ ms.lasthandoff: 05/22/2018
   
  解除安裝 Office 方案之後，例外狀況訊息仍會保留在事件記錄檔中。  
   
- 若要顯示或執行 Office 方案時，記錄例外狀況訊息，請參閱[偵錯 Office 專案](../vsto/debugging-office-projects.md)和[偵錯 Office 專案](../vsto/debugging-office-projects.md)。  
+ 若要顯示或記錄例外狀況訊息，在執行 Office 方案時，請參閱[偵錯 Office 專案](../vsto/debugging-office-projects.md)並[偵錯 Office 專案](../vsto/debugging-office-projects.md)。  
   
 ### <a name="localization"></a>當地語系化  
- 例外狀況訊息語言取決於 Visual Studio Tools for Office Runtime 語言。 例如，如果使用者電腦安裝了日文語言套件，則會用日文將例外狀況訊息寫入事件記錄檔。  
+ 例外狀況訊息語言取決於 Visual Studio Tools for Office Runtime 語言。 比方說，如果終端使用者電腦安裝了日文語言套件，例外狀況訊息會寫入事件記錄檔，日文。  
   
 ## <a name="disable-the-event-logger"></a>停用事件記錄器  
  當您安裝或解除安裝 Office 方案時，預設會啟用事件記錄器。 您可以將 VSTO_EVENTLOGDISABLED 環境變數設定為 "1" (一)，以停用事件記錄器。  
   
-### <a name="to-disable-the-event-log"></a>停用事件記錄檔  
+### <a name="to-disable-the-event-log"></a>若要停用事件記錄檔  
   
 1.  在 [控制台] 中，開啟 [系統] 。  
   
@@ -100,6 +101,6 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
- [疑難排解 Office 方案部署](../vsto/troubleshooting-office-solution-deployment.md)  
+ [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

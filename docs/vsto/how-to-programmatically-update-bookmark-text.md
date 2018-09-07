@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式更新書籤文字 |Microsoft 文件
+title: 如何： 以程式設計方式更新書籤文字
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d041ff303a27d4eefee4f36776d5c5eda7c16b32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670882"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>如何：以程式設計方式更新書籤文字
-  您可以在 Microsoft Office Word 文件的預留位置書籤中插入文字，以便稍後擷取文字，或取代書籤中的文字。 如果開發的是文件層級自訂，您也可以更新繫結至資料的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項文字。 如需詳細資訊，請參閱[資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+# <a name="how-to-programmatically-update-bookmark-text"></a>如何： 以程式設計方式更新書籤文字
+  您可以在 Microsoft Office Word 文件的預留位置書籤中插入文字，以便稍後擷取文字，或取代書籤中的文字。 如果開發的是文件層級自訂，您也可以更新繫結至資料的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項文字。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
@@ -32,17 +33,17 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項。  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項透過啟用資料繫結和公開事件，擴充原生 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件。 如需主控制項的詳細資訊，請參閱 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
+     <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項透過啟用資料繫結和公開事件，擴充原生 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件。 如需主控制項的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
   
 -   原生 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件。  
   
      <xref:Microsoft.Office.Interop.Word.Bookmark> 物件沒有事件或資料繫結功能。  
   
- 當您指派文字到書籤時，<xref:Microsoft.Office.Interop.Word.Bookmark> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 的行為不同。 如需詳細資訊，請參閱 [Bookmark Control](../vsto/bookmark-control.md)。  
+ 當您指派文字到書籤時，<xref:Microsoft.Office.Interop.Word.Bookmark> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 的行為不同。 如需詳細資訊，請參閱 <<c0> [ 書籤控制項](../vsto/bookmark-control.md)。  
   
-## <a name="using-host-controls"></a>使用主控制項  
+## <a name="use-host-controls"></a>使用主控制項  
   
-#### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>使用書籤控制項更新書籤內容  
+### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>使用書籤控制項更新書籤內容  
   
 1.  建立採用 `bookmark` 引數作為書籤名稱，並採用 `newText` 引數作為要指派給 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 屬性之字串的程序。  
   
@@ -52,14 +53,14 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]  
   
-2.  指派*newText*字串至<xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>屬性<xref:Microsoft.Office.Tools.Word.Bookmark>。  
+2.  指派*newText*字串<xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>屬性<xref:Microsoft.Office.Tools.Word.Bookmark>。  
   
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]  
   
-## <a name="using-word-objects"></a>使用 Word 物件  
+## <a name="use-word-objects"></a>使用 Word 物件  
   
-#### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>使用 Word 書籤物件更新書籤內容  
+### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>使用 Word 書籤物件更新書籤內容  
   
 1.  建立以 `bookmark` 引數作為 <xref:Microsoft.Office.Interop.Word.Bookmark> 的名稱，並以 `newText` 引數作為要指派給 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性之字串的程序。  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]  
   
-2.  指派*newText*字串至<xref:Microsoft.Office.Interop.Word.Range.Text%2A>屬性會自動刪除書籤的書籤。 然後重新將書籤加入 <xref:Microsoft.Office.Interop.Word.Bookmarks> 集合。  
+2.  指派*newText*字串<xref:Microsoft.Office.Interop.Word.Range.Text%2A>屬性會自動刪除書籤的書籤。 然後重新將書籤加入 <xref:Microsoft.Office.Interop.Word.Bookmarks> 集合。  
   
      下列程式碼範例可用於文件層級自訂。  
   

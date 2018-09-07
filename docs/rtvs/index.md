@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667011"
 ---
-# <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
+# <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
 R 專供統計運算與圖形設計之用，是高可延伸性的語言及環境。 它是依據 GNU General Public License 免費散發、享有堅強的社群支援，且以能夠產生出版物水平的繪圖 (包括數學符號和公式) 而聞名。 您可以透過 [r-project.org (英文)](https://www.r-project.org/about.html) 和[簡介 R (英文)](https://cran.r-project.org/doc/manuals/r-release/R-intro.html) 深入了解 R。
 
@@ -28,7 +29,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 在 Visual Studio 中體驗 R：
 
 - [安裝 R 工具](installing-r-tools-for-visual-studio.md)。
-- 請遵循[開始使用](getting-started-with-r.md)指南，同時參閱[範例](getting-started-samples.md)和[取得協助](getting-started-help.md)文章。
+- 請遵循[快速入門](getting-started-with-r.md)指南、[範例](getting-started-samples.md)及[取得說明](getting-started-help.md)等文章中的指示作業。
 
 然後遵循下列連結以深入了解 R 的相關功能，以及 Visual Studio 本身的一般功能。
 
@@ -52,8 +53,8 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
-1. **GitHub 問題**：連絡 RTVS 小組的最佳方式，是[在 GitHub 上提出問題 (英文)](https://github.com/Microsoft/RTVS/issues)，或使用 [R 工具] > [意見反應] 功能表。
+1. **GitHub Issues**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]  >  [意見反應] 功能表。
 
-1. **傳送笑臉 / 苦臉**：[R 工具] > [意見反應] 功能表可快速傳送意見反應，並附加 RTVS 記錄檔以協助診斷您的問題。 (記錄會寫入 `%temp%/RTVSlogs.zip`，以防您要分別傳送它們)。若是透過 [說明] > [意見反應] > [設定] 功能表命令，或是於安裝期間退出 Visual Studio 遙測，即會停用記錄。
+1. **傳送笑臉/苦臉**：[R 工具]  >  [意見反應] 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式  (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]  >  [意見反應]  >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
 
 1. **電子郵件**：您可以透過 *rtvsuserfeedback (at) microsoft.com*，將意見反應直接傳送給小組。

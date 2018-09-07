@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 運用自訂工作窗格應用程式自動化
+title: 逐步解說： 將自動化的自訂工作窗格應用程式
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7af399ca55c1fc2355da508662fe67314a519070
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768075"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670911"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>逐步解說： 運用自訂工作窗格應用程式自動化
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>逐步解說： 將自動化的自訂工作窗格應用程式
   此逐步解說示範如何建立會自動化 PowerPoint 的自訂工作窗格。 自訂工作窗格會在使用者按一下自訂工作窗格上的 <xref:System.Windows.Forms.MonthCalendar> 控制項時，將日期插入投影片。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -53,11 +53,11 @@ ms.locfileid: "34768075"
 -   Microsoft PowerPoint 2010 或 [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)]。  
   
 ## <a name="create-the-add-in-project"></a>建立增益集專案  
- 第一個步驟是建立 PowerPoint 的 VSTO 增益集專案。  
+ 第一個步驟是建立 powerpoint 的 VSTO 增益集專案。  
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  使用 [PowerPoint 增益集] 專案範本建立名為 **MyAddIn**的 PowerPoint VSTO 增益集專案。 如需詳細資訊，請參閱[How to： 在 Visual Studio 建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 [PowerPoint 增益集] 專案範本建立名為 **MyAddIn**的 PowerPoint VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **MyAddIn** 專案加入 [方案總管] 。  
   
@@ -121,12 +121,12 @@ ms.locfileid: "34768075"
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
   
-## <a name="test-the-add-in"></a>測試增益集  
+## <a name="test-the-add-in"></a>測試的增益集  
  當您執行專案時，PowerPoint 會開啟且 VSTO 增益集會顯示自訂工作窗格。 請按一下 <xref:System.Windows.Forms.MonthCalendar> 控制項來測試程式碼。  
   
 ### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
   
-1.  按**F5**執行您的專案。  
+1.  按下**F5**執行您的專案。  
   
 2.  確認自訂工作窗格已顯示。  
   
@@ -137,16 +137,16 @@ ms.locfileid: "34768075"
 ## <a name="next-steps"></a>後續步驟  
  您可以透過下列主題，進一步了解如何建立自訂工作窗格：  
   
--   在 VSTO 增益集中為不同應用程式建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
+-   建立自訂工作窗格中的 VSTO 增益集不同的應用程式。 如需支援自訂工作窗格應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱[逐步解說： 使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+-   建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
--   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱[逐步解說： 在 Outlook 中顯示的電子郵件訊息的自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+-   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 Outlook 中顯示與電子郵件訊息的自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂工作窗格](../vsto/custom-task-panes.md)   
- [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [如何： 將自訂工作窗格新增至應用程式](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [逐步解說： 與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [逐步解說： 在 Outlook 中顯示電子郵件訊息的自訂工作的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [逐步解說： 在 Outlook 中顯示自訂工作窗格與電子郵件訊息](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

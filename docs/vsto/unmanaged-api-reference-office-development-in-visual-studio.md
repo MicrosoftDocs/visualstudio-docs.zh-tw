@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97388073d63b25bb17a7f49f4e2c5fb96bf2f572
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767893"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671087"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Unmanaged 的 API 參考 （在 Visual Studio 中的 Office 程式開發）
-  從 2007 Microsoft Office system 開始，Office 應用程式使用[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)介面呼叫的 VSTO 增益集載入器元件隨附於[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 這個元件可用來協助您載入 VSTO 增益集。您可以實作這個介面，來建立自己的 VSTO 增益集載入器元件。  
+  從 2007 Microsoft Office system 開始，Office 應用程式使用[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)介面呼叫 VSTO 增益集載入器元件隨附[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 此元件用來載入 managed VSTO 增益集。您可以實作這個介面，來建立自己的 VSTO 增益集載入器元件。  
   
 > [!NOTE]  
->  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
+>  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。  
   
 ## <a name="in-this-section"></a>本節內容  
  [IManagedAddin 介面](../vsto/imanagedaddin-interface.md)  

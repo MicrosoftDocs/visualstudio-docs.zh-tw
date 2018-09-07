@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5af88022529263446c82fc27aee9d781d7da945f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671354"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何： 將 ListObject 控制項加入工作表
-  您可以加入<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入 Microsoft Office Excel 工作表在設計階段和執行階段在文件層級專案中。  
+  您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 您也可以加入<xref:Microsoft.Office.Tools.Excel.ListObject>在執行階段，在 VSTO 增益集專案中的控制項。  
+ 您也可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>在 VSTO 增益集專案中的執行階段的控制項。  
   
  本主題說明下列工作：  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/25/2018
   
 -   [在 VSTO 增益集專案中的執行階段加入 ListObject 控制項](#runtimeaddin)  
   
- 如需有關<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
+ 如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
   
 ##  <a name="designtime"></a> 在設計階段加入 ListObject 控制項  
  有幾種方式可在文件層級專案中，於設計階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表：在 Excel 中、透過 Visual Studio 的 [工具箱] ，以及透過 [資料來源]  視窗。  
@@ -62,14 +63,14 @@ ms.lasthandoff: 05/25/2018
   
 #### <a name="to-use-the-data-sources-window"></a>使用資料來源視窗  
   
-1.  開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱[加入新連接](../data-tools/add-new-connections.md)。  
+1.  開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。  
   
 2.  將資料表從 [資料來源]  視窗拖曳至您的工作表。  
   
-     繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱[資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
+     繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱 <<c0> [ 資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
 ##  <a name="runtimedoclevel"></a> 在文件層級專案中的執行階段加入 ListObject 控制項  
- 您可以加入<xref:Microsoft.Office.Tools.Excel.ListObject>在執行階段動態控制項。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>在執行階段動態控制項。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
 ##  <a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行階段加入 ListObject 控制項  
- 您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入任何開啟中的工作表。 當工作表儲存並關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱[擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入任何開啟中的工作表。 當工作表儲存並關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]  
   
 ## <a name="see-also"></a>另請參閱  
- [擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [ListObject 控制項](../vsto/listobject-control.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式建立範圍時排除段落標記 |Microsoft 文件
+title: 如何： 以程式設計方式建立範圍時排除段落標記
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670834"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以程式設計方式在建立範圍時排除段落標記
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何： 以程式設計方式建立範圍時排除段落標記
   每當您根據段落建立 <xref:Microsoft.Office.Interop.Word.Range> 物件時，所有的非列印字元 (如段落標記) 都會包含在範圍中。 您可以將文字從來源段落插入目的段落。 如果您不想將目的段落分割成個別段落，則必須先移除來源段落的段落標記。 此外，因為段落格式化資訊儲存在段落標記內，所以在將範圍插入現有段落時，您可能不想包含該資訊。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  下列範例程序會宣告兩個字串變數，擷取現用文件的第一段和第二段內容，然後交換它們的內容。 下列範例示範使用 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法，從範圍移除段落標記，並在段落內插入文字。  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>若要在插入文字時控制段落結構  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>若要在插入文字時控制段落結構  
   
 1.  針對第一和第二個段落建立兩個範圍變數，然後使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性擷取其內容。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
      這兩個範圍的原始內容都儲存為字串，所以您可以將文件還原成原始狀態。  
   
-8.  使用 `firstRange` 方法移動一個字元位置，以重新調整 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> ，讓它包含段落標記。  
+8.  重新調整`firstRange`若要使用包含段落標記<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>一個字元位置的方法。  
   
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>若要在文件層級自訂中插入文字時控制段落結構  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>若要在文件層級自訂中插入文字時控制段落結構  
   
 1.  下列範例顯示文件層級自訂的完整方法。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>若要在 VSTO 增益集中插入文字時控制段落結構  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>若要在 VSTO 增益集中插入文字時控制段落結構  
   
 1.  下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。  
   
@@ -121,8 +122,8 @@ ms.lasthandoff: 04/16/2018
  [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [如何： 以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [如何： 以程式設計方式在 Word 中重設範圍的文件](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何： 以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

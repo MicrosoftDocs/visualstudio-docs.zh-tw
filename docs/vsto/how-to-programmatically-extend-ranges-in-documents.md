@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式擴充文件中的範圍 |Microsoft 文件
+title: 如何： 以程式設計方式擴充文件中的範圍
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68c5e2811f437a01e171e33f9802503cf4d24922
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671067"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以程式設計方式在文件中擴充範圍
-  在您定義 Microsoft Office Word 文件中的 <xref:Microsoft.Office.Interop.Word.Range> 物件之後，可以使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法來變更其起始點和結束點。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>和<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>方法採用相同的兩個引數，*單元*和*計數*。 *計數*引數是要移動的單位數和*單元*引數可以是下列其中一種<xref:Microsoft.Office.Interop.Word.WdUnits>值：  
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何： 在文件中以程式設計方式擴充範圍
+  在您定義 Microsoft Office Word 文件中的 <xref:Microsoft.Office.Interop.Word.Range> 物件之後，可以使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法來變更其起始點和結束點。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>並<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>方法會採用相同的兩個引數，*單元*並*計數*。 *計數*引數是要移動的單位數和*單元*引數可以是下列其中一種<xref:Microsoft.Office.Interop.Word.WdUnits>值：  
   
 -   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
@@ -49,9 +50,9 @@ ms.lasthandoff: 04/16/2018
   
  下列範例會定義一個七個字元的範圍， 然後將範圍的起始位置移到原始起始位置之後的七個字元處。 由於範圍的結束位置也是在起始位置之後的七個字元處，結果會使範圍包含零個字元。 程式碼接著會將結束位置移到目前結束位置之後的七個字元處。  
   
-### <a name="to-extend-a-range"></a>擴充範圍  
+## <a name="to-extend-a-range"></a>擴充範圍  
   
-1.  定義字元範圍。 如需詳細資訊，請參閱[How to： 以程式設計方式定義和選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
+1.  定義字元範圍。 如需詳細資訊，請參閱 <<c0> [ 如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
   
      下列程式碼範例可用於文件層級自訂。  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-code"></a>文件層級自訂程式碼  
   
-#### <a name="to-extend-a-range-in-a-document-level-customization"></a>擴充文件層級自訂中的範圍  
+### <a name="to-extend-a-range-in-a-document-level-customization"></a>擴充文件層級自訂中的範圍  
   
 1.  下列範例顯示文件層級自訂的完整程式碼。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-code"></a>VSTO 增益集程式碼  
   
-#### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>擴充應用程式層級 VSTO 增益集中的範圍  
+### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>擴充應用程式層級 VSTO 增益集中的範圍  
   
 1.  下列範例顯示 VSTO 增益集的完整程式碼。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式在 Word 中重設範圍的文件](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何： 以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [如何： 以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式擷取開頭和結尾字元範圍中](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [如何：以程式設計方式在建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
+ [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何： 以程式設計方式擷取範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [如何： 以程式設計方式建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
   

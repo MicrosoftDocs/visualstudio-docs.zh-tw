@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式重複使用文件中找到的項目 |Microsoft 文件
+title: 如何： 以程式設計方式在文件中找到項目執行迴圈
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 660434790ab4bf3073a00f2ec7ab9db737381707
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ff9a85319ac35e051b41ff65ab5b027dc226f44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671404"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以程式設計方式在文件中找到的項目之間執行迴圈
-  <xref:Microsoft.Office.Interop.Word.Find>類別具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>屬性，它會傳回**true**每當找到搜尋的項目。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。  
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何： 以程式設計方式在文件中找到項目執行迴圈
+  <xref:Microsoft.Office.Interop.Word.Find>類別具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>屬性，會傳回 **，則為 true**每當找到搜尋的項目。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-loop-through-found-items"></a>在找到的項目之間執行迴圈  
+## <a name="to-loop-through-found-items"></a>在找到的項目之間執行迴圈  
   
 1.  宣告 <xref:Microsoft.Office.Interop.Word.Range> 物件。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
-#### <a name="to-loop-through-items-in-a-document-level-customization"></a>在文件層級自訂的項目間執行迴圈  
+### <a name="to-loop-through-items-in-a-document-level-customization"></a>在文件層級自訂的項目間執行迴圈  
   
 1.  下列範例顯示文件層級自訂的完整程式碼。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
-#### <a name="to-loop-through-items-in-an-vsto-add-in"></a>在 VSTO 增益集的項目間執行迴圈  
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>若要在 VSTO 增益集中的項目執行迴圈  
   
 1.  下列範例顯示 VSTO 增益集的完整程式碼。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。  
   
@@ -73,10 +74,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式搜尋和取代文件中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何： 以程式設計方式搜尋和取代文件中的 rext](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
  [如何： 以程式設計方式在 Word 中設定搜尋選項](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式搜尋後還原選取](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何： 以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

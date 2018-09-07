@@ -1,5 +1,5 @@
 ---
-title: 發行頁、 專案設計工具 （Visual Studio 中的 Office 程式開發）
+title: 發行 Page，Project Designer （Visual Studio 中的 Office 程式開發）
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692840"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671071"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行頁、 專案設計工具 （Visual Studio 中的 Office 程式開發）
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行 Page，Project Designer （Visual Studio 中的 Office 程式開發）
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  
   
- 若要存取此頁面，選取的專案中**方案總管 中**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。  
+ 若要存取此頁面，選取 [] 中的專案**方案總管**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。  
   
 > [!NOTE]  
->  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+>  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置 (網站、FTP 伺服器或檔案路徑)**  
@@ -40,22 +40,22 @@ ms.locfileid: "34692840"
   
  發行資料夾位置是 Visual Studio 從組建複製資訊清單、組件及其他檔案等方案檔的目的地目錄。 您必須具有這個目錄的寫入權限。  
   
- 選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 這個路徑可以是本機 (*c:\foldername\publishfolder*)、 相對 (*發行\\*)，或完整的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。  
+ 選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 路徑可以是本機 (*c:\foldername\publishfolder*)，相對於 (*發佈\\*)，或完整限定的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。  
   
- 根據預設，發行位置是*http://localhost/projectname/* 如果您有安裝了 IIS，或*發行\\*目錄，如果您不需要安裝 IIS。  
+ 根據預設，發行位置是*http://localhost/projectname/* 如果您有安裝了 IIS，則*發行\\*目錄，如果您不需要安裝 IIS。  
   
  **安裝資料夾 URL**  
  選擇性。  
   
  安裝資料夾 URL 是使用者將從中安裝自訂的目錄。 它也是方案將會用來檢查更新的路徑。 路徑可以與發行資料夾位置相同，但這並非必要條件。  
   
- 選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 這個路徑可以是本機 (*c:\foldername\publishfolder*)、 相對 (*發行\\*)，或完整的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。 所有的 HTTP/HTTPS 位置都必須以 US-ASCII 字元建立。 不支援 Unicode 字元。  
+ 選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 路徑可以是本機 (*c:\foldername\publishfolder*)，相對於 (*發佈\\*)，或完整限定的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。 所有的 HTTP/HTTPS 位置都必須以 US-ASCII 字元建立。 不支援 Unicode 字元。  
   
  如果已設定安裝路徑，自訂檔案必須位於該位置，使用者才能安裝自訂。 只有在知道最終部署位置時，才應該設定位置。  
   
  如果安裝檔案位於相對於文件或安裝程式的位置，例如使用 CD 選項，請將這個方塊保留空白。  
   
- 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱[如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+ 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
  **必要條件**  
  必要條件可包含在安裝程式中，或視需要於安裝期間下載。  
@@ -97,8 +97,7 @@ ms.locfileid: "34692840"
   
     -   視需要載入：指定只有在應用程式需要時才載入 VSTO 增益集，例如當使用者按一下使用 VSTO 增益集功能的 UI 項目時。  
   
- **發行語言**  
- 這個選項會設定 Microsoft 軟體授權條款的語言，並將語言套件包含在必要條件清單中。 它不會影響自訂的語言。 安裝程式中的語言取決於 Visual Studio 已安裝的語言。  
+ **發行語言**這個選項設定的語言的 Microsoft 軟體授權條款，並將語言套件包含在必要條件清單中。 它不會影響自訂的語言。 安裝程式中的語言取決於 Visual Studio 已安裝的語言。  
   
  如需有關如何變更**發行語言**，請參閱[如何： 變更 ClickOnce 應用程式的發行語言](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application)。  
   
@@ -114,6 +113,6 @@ ms.locfileid: "34692840"
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Office 方案的部署必要條件](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Office 方案的部署必要條件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

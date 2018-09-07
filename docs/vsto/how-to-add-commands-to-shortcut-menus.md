@@ -1,5 +1,5 @@
 ---
-title: 如何： 將命令加入到捷徑功能表
+title: 如何： 將命令加入至捷徑功能表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671355"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 將命令加入到捷徑功能表
-  本主題示範如何使用 VSTO 增益集將命令加入 Office 應用程式的捷徑功能表中。  
+# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 將命令加入至捷徑功能表
+  本主題示範如何使用 VSTO 增益集將命令加入 Office 應用程式中的捷徑功能表。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>將命令加入 Office 的捷徑功能表  
   
-1.  將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱[How to： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In  
+1.  將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In  
   
 2.  在方案總管中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/25/2018
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  在方案總管 中選取功能區 XML 檔案。 根據預設，功能區 XML 檔名為*Ribbon1.xml*。  
+5.  在方案總管 中選取功能區 XML 檔案。 根據預設，名為功能區 XML 檔案*Ribbon1.xml*。  
   
 6.  在功能表列上依序選擇 [檢視] > [程式碼]。  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
   
 7.  在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。  
   
-     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整清單的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔： Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔： Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 05/25/2018
   
 8.  在方案總管 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。  
   
-9. 針對您想要處理的每個控制項，將回呼方法加入 `Ribbon1` 類別。  
+9. 將回呼方法加入`Ribbon1`您想要處理的每個控制項的類別。  
   
      下列回呼方法會處理 [My Button]  按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。  
   
@@ -85,5 +86,5 @@ ms.lasthandoff: 05/25/2018
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [逐步解說： 建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
- [自訂 Office 2010 中的內容功能表](http://go.microsoft.com/fwlink/?LinkId=182186)  
+ [自訂 Office 2010 中的操作功能表](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

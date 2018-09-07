@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 512952a27e2b1c22df256e36f8cbea59f04a3295
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ee297628e64d61e108483565613951d0b490a8b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692827"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671397"
 ---
 # <a name="program-document-level-customizations"></a>程式文件層級自訂
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：  
@@ -54,9 +54,9 @@ ms.locfileid: "34692827"
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 在文件層級專案中撰寫程式碼時，某些方面會與 Visual Studio 中其他類型的專案不同。 其中有許多差異的原因來自於將 Office 物件模型公開給 Managed 程式碼的方式。 如需詳細資訊，請參閱[Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)。  
+ 在文件層級專案中撰寫程式碼時，某些方面會與 Visual Studio 中其他類型的專案不同。 其中有許多差異的原因來自於將 Office 物件模型公開給 Managed 程式碼的方式。 如需詳細資訊，請參閱 <<c0> [ 撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。  
   
- 一般您可以使用 Visual Studio 中的 Office 開發工具建立文件層級自訂和其他類型方案的相關資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+ 一般 Visual Studio 中使用的 Office 開發工具，您可以建立文件層級自訂和其他類型方案的相關資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>在文件層級專案中使用產生的類別  
  當您建立文件層級專案時，Visual Studio 會自動在專案中產生類別，供您開始撰寫程式碼。 Visual Studio 會針對 Word 和 Excel 產生不同的類別：  
@@ -73,7 +73,7 @@ ms.locfileid: "34692827"
   
     -   `Sheet3`  
   
- 產生的類別包含會在開啟或關閉文件時呼叫的事件處理常式。 若要在開啟文件時執行程式碼，請將程式碼加入 `Startup` 事件處理常式。 若要在文件關閉之際執行程式碼，請將程式碼加入 `Shutdown` 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+ 產生的類別包含會在開啟或關閉文件時呼叫的事件處理常式。 若要在開啟文件時執行程式碼，請將程式碼加入 `Startup` 事件處理常式。 若要在文件關閉之際執行程式碼，請將程式碼加入 `Shutdown` 事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。  
   
 ### <a name="understand-the-design-of-the-generated-classes"></a>了解產生的類別設計  
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]為目標的專案中， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的主項目類型是介面，因此，產生的類別無法從中衍生實作。 相反地，產生的類別會改從下列基底類別衍生大部分的成員：  
@@ -111,64 +111,64 @@ Globals.ThisDocument.Save();
   
  因為 `ThisDocument` 類別會從 <xref:Microsoft.Office.Tools.Word.Document> 主項目取得大部分成員，所以這個程式碼中呼叫的 `Save` 方法實際上是 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 主項目的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 這個方法對應至 Word 物件模型中 <xref:Microsoft.Office.Interop.Word._Document.Save%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Document> 方法。  
   
- 如需有關如何使用 Word 和 Excel 物件模型的詳細資訊，請參閱[Word 物件模型概觀](../vsto/word-object-model-overview.md)和[Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
+ 如需使用 Word 和 Excel 物件模型的詳細資訊，請參閱[Word 物件模型概觀](../vsto/word-object-model-overview.md)並[Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
- 如需有關`Globals`物件，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 如需詳細資訊`Globals`物件，請參閱 <<c2> [ 全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="add-controls-to-documents"></a>將控制項加入文件  
  若要自訂文件的 UI，您可以將 Windows Forms 控制項或 *「主控制項」* (host control) 加入文件介面。 藉由結合不同組的控制項並撰寫程式碼，您可以將控制項繫結至資料、從使用者收集資訊，以及回應使用者動作。  
   
  主控制項是一種會擴充 Word 和 Excel 物件模型中某些物件的類別。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject> 主控制項會提供 Excel 中 <xref:Microsoft.Office.Interop.Excel.ListObject> 的所有功能。 但是， <xref:Microsoft.Office.Tools.Excel.ListObject> 主控制項還多了一些事件和資料繫結功能。  
   
- 如需詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)和[Windows form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)並[Windows forms 上的控制項 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ## <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂  
  您可以在屬於文件層級自訂一部分的文件中使用 VBA 程式碼。 您可以從自訂組件呼叫文件中的 VBA 程式碼，也可以將專案設定為允許文件中的 VBA 程式碼呼叫自訂組件中的程式碼。  
   
- 如需詳細資訊，請參閱[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
   
 ## <a name="manage-documents-on-a-server"></a>管理伺服器上的文件  
  您可以在未安裝 Microsoft Office Word 或 Microsoft Office Excel 的伺服器上管理文件層級自訂的數個不同層面。 例如，您可以存取及修改文件之資料快取中的資料。 您也可以管理與文件相關聯的自訂組件。 例如，您可以用程式設計的方式從文件中移除組件，讓文件不再執行程式碼，或者用程式設計的方式將組件附加至文件。  
   
- 如需詳細資訊，請參閱[使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
   
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>自訂 Microsoft Office 應用程式的使用者介面  
  您可以使用文件層級自訂，透過下列方式自訂 Word 和 Excel 的 UI：  
   
 -   將主控制項或 Windows Forms 控制項加入文件介面。  
   
-     如需詳細資訊，請參閱[使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)，[使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows Form 控制項在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+     如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)，[使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 -   在文件中加入執行窗格。  
   
-     如需詳細資訊，請參閱[執行窗格概觀](../vsto/actions-pane-overview.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。  
   
 -   在功能區中新增自訂索引標籤。  
   
-     如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。  
   
 -   將自訂群組新增至功能區上的內建索引標籤。  
   
-     如需詳細資訊，請參閱[How to： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)。  
   
- 如需有關自訂的 Microsoft Office 應用程式 UI 的詳細資訊，請參閱[Office UI 自訂](../vsto/office-ui-customization.md)。  
+ 如需有關如何自訂 UI 的 Microsoft Office 應用程式的詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。  
   
-## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>取得從原生 Office 物件，在文件層級自訂中的擴充的物件  
+## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>取得與文件層級自訂中的原生 Office 物件的擴充的物件  
  Office 事件的多數事件處理常式都會接收代表引發事件之活頁簿、工作表或文件的原生 Office 物件。 某些情況下，您可能只有在文件層級自訂的活頁簿或文件引發事件時，才想要執行一些程式碼。 例如，使用 Excel 的文件層級自訂時，您可能想要在使用者啟動自訂活頁簿內其中一個工作表時執行一些程式碼，但不要在使用者啟動某個恰巧同時開啟之其他活頁簿內的工作表時執行程式碼。  
   
  當您有原生 Office 物件時，可以測試該物件是否已擴充成為文件層級自訂中的 *「主項目」* (host item) 或 *「主控制項」* (host control)。 主項目和主控制項是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供的類型，這些類型可將功能加入原本就存在於 Word 或 Excel 物件模型的物件，稱為 *「原生 Office 物件」*(native Office object)。 通常，主項目和主控制項也稱為 *「擴充物件」*(extended object)。 如需主項目和主控制項的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
   
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>了解 GetVstoObject 和 HasVstoObject 方法  
- 若要測試的原生 Office 物件，使用`HasVstoObject`和`GetVstoObject`您的專案中的方法：  
+ 若要測試的原生 Office 物件，使用`HasVstoObject`和`GetVstoObject`專案中的方法：  
   
--   使用`HasVstoObject`方法，如果您想要判斷原生 Office 物件是否具有在自訂中的擴充的物件。 如果原生 Office 物件具有擴充物件，這個方法會傳回 **true** 否則傳回 **false** 。  
+-   使用`HasVstoObject`方法，如果您想要判斷原生 Office 物件是否具有在您的自訂擴充的物件。 如果原生 Office 物件具有擴充物件，這個方法會傳回 **true** 否則傳回 **false** 。  
   
--   使用`GetVstoObject`方法，如果您想要取得原生 Office 物件擴充的物件。 如果指定的原生 Office 物件具有擴充物件，這個方法會傳回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 物件。 否則，`GetVstoObject`傳回**null**。 例如，`GetVstoObject`方法會傳回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文件專案中文件的基礎物件。  
+-   使用`GetVstoObject`方法，如果您想要取得原生 Office 物件擴充的物件。 如果指定的原生 Office 物件具有擴充物件，這個方法會傳回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 物件。 否則，請`GetVstoObject`會傳回**null**。 例如，`GetVstoObject`方法會傳回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文件專案中文件的基礎物件。  
   
- 在文件層級專案中，您無法使用`GetVstoObject`方法來建立新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>主項目，在執行階段。 您只能使用這個方法來存取在設計階段產生於專案中的現有主項目。 如果您想要在執行階段建立新的主項目，您必須開發 VSTO 增益集專案。 如需詳細資訊，請參閱[主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)和[擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在文件層級專案中，您無法使用`GetVstoObject`方法用來建立新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>主項目，在執行階段。 您只能使用這個方法來存取在設計階段產生於專案中的現有主項目。 如果您想要在執行階段建立新的主項目，您必須開發 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)並[擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
- 若要呼叫`HasVstoObject`和`GetVstoObject`方法，請使用`Globals.Factory.GetVstoObject`或`Globals.Factory.HasVstoObject`方法，並傳入原生 Word 或 Excel 物件 (例如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 您想要測試。  
+ 呼叫`HasVstoObject`並`GetVstoObject`方法，請使用`Globals.Factory.GetVstoObject`或`Globals.Factory.HasVstoObject`方法，並傳入的原生 Word 或 Excel 物件 (例如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 您想要測試。  
   
 ## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   

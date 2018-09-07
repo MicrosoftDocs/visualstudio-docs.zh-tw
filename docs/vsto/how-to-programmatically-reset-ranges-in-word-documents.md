@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式在 Word 中重設範圍的文件 |Microsoft 文件
+title: 如何： 以程式設計方式重設 Word 文件中的範圍
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed267f4ed2211f2dda69b620aec9fdadbe5a76c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0da42b0e6ad6f8761e474292532728beb3987c57
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671158"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何：以程式設計方式在 Word 文件中重設範圍
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何： 以程式設計方式重設 Word 文件中的範圍
   使用 <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 方法，可以調整 Microsoft Office Word 文件中現有範圍的大小。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-reset-an-existing-range"></a>若要重設現有範圍  
+## <a name="to-reset-an-existing-range"></a>若要重設現有範圍  
   
 1.  以文件中前七個字元的開頭設定初始範圍。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
-#### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>若要重設文件層級自訂中的現有範圍  
+### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>若要重設文件層級自訂中的現有範圍  
   
 1.  下列範例顯示文件層級自訂的完整範例。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。  
   
@@ -57,17 +58,17 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
-#### <a name="to-reset-an-existing-range-in-an-vsto-add-in"></a>若要重設 VSTO 增益集中的現有範圍  
+### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>若要重設現有範圍中的 VSTO 增益集  
   
-1.  下列範例顯示 VSTO 增益集的完整範例。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。  
+1.  下列範例會顯示完整的範例，VSTO 增益集。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]  
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式擷取開頭和結尾字元範圍中](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [如何：以程式設計方式摺疊文件的範圍或選取的範圍](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
+ [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何： 以程式設計方式擷取範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [如何： 以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
   
   

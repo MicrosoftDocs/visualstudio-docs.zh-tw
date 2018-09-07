@@ -27,11 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5bc53512a93ad2af9fa30562e54a8419c70c813
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c61e155cd1dc70a747c6161de3aeb0fd57752816
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671103"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。  
@@ -71,7 +72,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```  
   
 > [!NOTE]  
->  如需有關使用全域資訊`missing`變數來取代選用參數在 Visual C# 中，請參閱[Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)。  
+>  如需使用全域`missing`變數來取代選用參數在 Visual C# 中，請參閱[撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。  
   
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>在文件層級自訂，從 VBA 呼叫程式碼  
  您可以設定 Word 或 Excel 的文件層級專案，讓文件中的 Visual Basic for Applications (VBA) 程式碼可以呼叫自訂組件中的程式碼。 這在下列案例中很有用：  
@@ -80,7 +81,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   您想要，藉由在文件中撰寫 VBA 程式碼，讓您在文件層級自訂中開發的服務，能供可以存取服務的使用者使用。  
   
- Visual Studio 中的 Office 開發工具為 VSTO 增益集提供類似的功能。如果您正在開發 VSTO 增益集，可以從其他 Microsoft Office 方案，在 VSTO 增益集中呼叫程式碼。 如需詳細資訊，請參閱[從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ Visual Studio 中的 Office 開發工具為 VSTO 增益集提供類似的功能。如果您正在開發 VSTO 增益集，可以從其他 Microsoft Office 方案，在 VSTO 增益集中呼叫程式碼。 如需詳細資訊，請參閱 <<c0> [ 從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 > [!NOTE]  
 >  這項功能無法用於 Word 範本專案。 它只能在 Word 文件、Excel 活頁簿或 Excel 範本專案中使用。  
@@ -117,29 +118,29 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
     3.  將專案中任何主項目類別的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**。 這樣會將自訂組件的類型程式庫內嵌至組件，並將類型程式庫的參考加入文件中的 VBA 專案。  
   
- 如需詳細指示，請參閱[如何： 公開給 VBA 的程式碼，在 Visual Basic 專案中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)和[如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
+ 如需詳細指示，請參閱 <<c0> [ 如何： 公開給 VBA 的程式碼，在 Visual Basic 專案](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)並[如何： 公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。</c0>  
   
- **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性都只在設計階段的 [屬性]  視窗使用，不能用在執行階段。 若要檢視屬性，請在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟主項目的設計工具。 如需設定這些屬性時，Visual Studio 會執行之特定工作的詳細資訊，請參閱[主機項目屬性執行的工作](#PropertyTasks)。  
+ **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性都只在設計階段的 [屬性]  視窗使用，不能用在執行階段。 若要檢視屬性，請在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟主項目的設計工具。 如需有關設定這些屬性時，Visual Studio 會執行特定工作的詳細資訊，請參閱[主機項目屬性執行的工作](#PropertyTasks)。  
   
 > [!NOTE]  
 >  如果活頁簿或文件尚未包含 VBA 程式碼，或文件中的 VBA 程式碼不受信任而無法執行，當您將 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**時會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。  
   
-## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>VBA 程式碼中使用成員呼叫自訂組件  
+## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>若要呼叫自訂組件，VBA 程式碼中使用成員  
  在您設定專案以讓 VBA 程式碼呼叫自訂組件之後，Visual Studio 會將下列成員加入文件中的 VBA 專案：  
   
 -   對於所有的專案，Visual Studio 會加入名為 `GetManagedClass`的全域方法。  
   
--   如[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]專案，您將公開成員主機的項目所使用的類別**EnableVbaCallers**屬性，Visual Studio 也會加入名為的屬性`CallVSTOAssembly`至`ThisDocument`， `ThisWorkbook`， `Sheet1`， `Sheet2`，或`Sheet3`模組中的 VBA 專案。  
+-   針對[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]專案，您可以在其中公開成員主機的項目所使用的類別**EnableVbaCallers**屬性，Visual Studio 也會加入一個名為屬性`CallVSTOAssembly`來`ThisDocument`， `ThisWorkbook`， `Sheet1`， `Sheet2`，或`Sheet3`模組中的 VBA 專案。  
   
  您可以使用 `CallVSTOAssembly` 屬性或 `GetManagedClass` 方法來存取您公開給專案中之類別的公用成員。  
   
 > [!NOTE]  
->  在您開發並部署方案時，有幾份不同的文件可以讓您加入 VBA 程式碼。 如需詳細資訊，請參閱[文件的指導方針加入 VBA 程式碼](#Guidelines)。  
+>  在您開發並部署方案時，有幾份不同的文件可以讓您加入 VBA 程式碼。 如需詳細資訊，請參閱 <<c0> [ 指導方針將 VBA 程式碼加入文件](#Guidelines)。  
   
 ### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>在 Visual Basic 專案中使用 CallVSTOAssembly 屬性  
  使用 `CallVSTOAssembly` 屬性來存取您加入主項目類別的公用成員。 例如，下列 VBA 巨集會呼叫名為 `MyVSTOMethod` 的方法，它定義於 Excel 活頁簿專案中的 `Sheet1` 類別。  
   
-```  
+```vb
 Sub MyMacro()  
     Sheet1.CallVSTOAssembly.MyVSTOMethod()  
 End Sub  
@@ -149,7 +150,7 @@ End Sub
   
  `CallVSTOAssembly` 屬性具有類似下列程式碼的宣告。 此程式碼假設您已在名為 `Sheet1` 的 Excel 活頁簿專案中，將 `ExcelWorkbook1` 主項目類別公開給 VBA。  
   
-```  
+```vb 
 Property Get CallVSTOAssembly() As ExcelWorkbook1.Sheet1  
     Set CallVSTOAssembly = GetManagedClass(Me)  
 End Property  
@@ -160,7 +161,7 @@ End Property
   
  例如，下列 VBA 巨集會呼叫名為 `MyVSTOMethod` 的方法，它定義於名為 `Sheet1` 的 Excel 活頁簿專案中的 `ExcelWorkbook1`主項目類別。  
   
-```  
+```vb
 Sub CallVSTOMethod  
     Dim VSTOSheet1 As ExcelWorkbook1.Sheet1  
     Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -170,13 +171,13 @@ End Sub
   
  `GetManagedClass` 方法具有下列宣告。  
   
-```  
+```vb
 GetManagedClass(pdispInteropObject Object) As Object  
 ```  
   
  此方法會傳回代表您公開給 VBA 之類別的物件。 傳回物件的成員和方法參數會出現在 IntelliSense 中。  
   
-##  <a name="Guidelines"></a> VBA 程式碼加入文件的指導方針  
+##  <a name="Guidelines"></a> 將 VBA 程式碼加入至文件的指導方針  
  有數份不同的文件，您可以在其中加入呼叫文件層級自訂的 VBA 程式碼。  
   
  當您開發並測試方案時，可以在文件中撰寫 VBA 程式碼，當您在 Visual Studio 中偵錯或執行您的專案時就會開啟此文件 (也就是在組建輸出資料夾中的文件)。 不過，您加入此文件的任何 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。  
@@ -193,15 +194,15 @@ GetManagedClass(pdispInteropObject Object) As Object
 > [!CAUTION]  
 >  如果您加入在文件開啟時執行的 VBA 程式碼，在少數情況下這段程式碼可能會損毀文件或導致它無法在設計工具中開啟。  
   
-### <a name="in-the-publish-or-installation-folder"></a>發行或安裝資料夾中  
+### <a name="in-the-publish-or-installation-folder"></a>在發行] 或 [安裝資料夾中  
  在某些情況下，可能適合將 VBA 程式碼加入至發行或安裝資料夾中的文件。 例如，如果 VBA 程式碼是由不同開發人員在未安裝 Visual Studio 的電腦上撰寫並測試，您可能會選擇這個選項。  
   
  如果使用者直接從發行資料夾安裝方案，每次發行方案時您都必須將 VBA 程式碼加入文件。 當您發行方案時，Visual Studio 會覆寫發行位置中的文件。  
   
  如果使用者從不同於發行資料夾的安裝資料夾安裝方案，您就不用每次發行方案時都將 VBA 程式碼加入文件。 準備好將發行更新從發行資料夾移到安裝資料夾時，請將所有檔案複製到文件以外的安裝資料夾。  
   
-### <a name="on-the-end-user-computer"></a>終端使用者電腦上  
- 如果使用者是呼叫您在文件層級自訂中提供之服務的 VBA 開發人員，您可以告訴他們如何在他們的文件複本中使用 `CallVSTOAssembly` 屬性或 `GetManagedClass` 方法呼叫您的程式碼。 當您發行更新至方案時，不會覆寫使用者電腦上的文件中的 VBA 程式碼，因為發行的更新不會修改文件。  
+### <a name="on-the-end-user-computer"></a>在使用者電腦上  
+ 如果使用者是呼叫您在文件層級自訂中提供之服務的 VBA 開發人員，您可以告訴他們如何在他們的文件複本中使用 `CallVSTOAssembly` 屬性或 `GetManagedClass` 方法呼叫您的程式碼。 當您發行更新至方案時，終端使用者電腦上的文件中的 VBA 程式碼不會覆寫時，因為不會修改文件發行的更新。  
   
 ##  <a name="PropertyTasks"></a> 主機項目屬性執行的工作  
  當您使用 **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性時，Visual Studio 會執行不同的工作集。  
@@ -247,17 +248,17 @@ GetManagedClass(pdispInteropObject Object) As Object
 |錯誤|建議|  
 |-----------|----------------|  
 |設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出文件不包含 VBA 專案，或是您的權限不足，無法存取文件中的 VBA 專案。|請確定專案中的文件包含至少一個 VBA 巨集、VBA 專案擁有足夠的信任可以執行，而且 VBA 專案未受到密碼保護。|  
-|設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Runtime.InteropServices.GuidAttribute> 宣告遺漏或已損毀。|請確認<xref:System.Runtime.InteropServices.GuidAttribute>宣告位於*AssemblyInfo.cs*或*AssemblyInfo.vb*檔案在專案中，和此屬性設為有效的 GUID。|  
-|設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Reflection.AssemblyVersionAttribute> 所指定版本號碼無效。|請確認<xref:System.Reflection.AssemblyVersionAttribute>中的宣告*AssemblyInfo.cs*或*AssemblyInfo.vb*專案中的檔案設定為有效的組件版本號碼。 如需組件版本號碼的相關資訊，請參閱 <xref:System.Reflection.AssemblyVersionAttribute> 類別。|  
+|設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Runtime.InteropServices.GuidAttribute> 宣告遺漏或已損毀。|請確認<xref:System.Runtime.InteropServices.GuidAttribute>宣告位於*AssemblyInfo.cs*或是*AssemblyInfo.vb*檔案在專案中，和此屬性設為有效的 GUID。|  
+|設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Reflection.AssemblyVersionAttribute> 所指定版本號碼無效。|請確認<xref:System.Reflection.AssemblyVersionAttribute>中的宣告*AssemblyInfo.cs*或是*AssemblyInfo.vb*專案中的檔案設定為有效的組件版本號碼。 如需組件版本號碼的相關資訊，請參閱 <xref:System.Reflection.AssemblyVersionAttribute> 類別。|  
 |重新命名自訂組件之後，呼叫自訂組件的 VBA 程式碼會停止運作。|如果您在將自訂組件名稱公開給 VBA 程式碼之後才變更它，文件中的 VBA 專案與自訂組件之間的連結已中斷。 若要修正此問題，請將專案中的 **ReferenceFromVbaAssembly** 屬性變更為 **False** ，然後再變回 **True**，最後將 VBA 程式碼中的任何舊組件名稱參考取代為新的組件名稱。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 公開給 VBA 的程式碼，在 Visual Basic 專案中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案中](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [如何： 公開給 VBA 的程式碼，在 Visual Basic 專案](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [如何： 公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [逐步解說： 從 Visual C 中的 VBA 呼叫程式碼&#35;專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
- [相較的 Visual Studio 中的 VBA 和 Office 方案](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
+ [比較 Visual Studio 中的 VBA 和 Office 方案](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)  
   
   
