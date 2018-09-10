@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512249"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280567"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -73,7 +73,7 @@ VSIX 格式所做變更包括：
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    在執行階段，Visual Studio pkgdef 子系統會合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
+    在執行階段，Visual Studio pkgdef 子系統會合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
 
 ### <a name="reacting-to-this-breaking-change"></a>回應這項重大變更
 
@@ -87,7 +87,7 @@ VSIX 格式所做變更包括：
 
 ### <a name="global-com-registration"></a>全域 COM 註冊
 
-* 過去，Visual Studio 安裝 HKEY_CLASSES_ROOT 和 HKEY_LOCAL_MACHINE 登錄區，以支援原生 COM 註冊許多的登錄機碼。 若要消除這種影響，Visual Studio 現在會使用[COM 元件的免註冊啟用](https://msdn.microsoft.com/en-us/library/ms973913.aspx)。
+* 過去，Visual Studio 安裝 HKEY_CLASSES_ROOT 和 HKEY_LOCAL_MACHINE 登錄區，以支援原生 COM 註冊許多的登錄機碼。 若要消除這種影響，Visual Studio 現在會使用[COM 元件的免註冊啟用](https://msdn.microsoft.com/library/ms973913.aspx)。
 * 如此一來，大部分的 TLB / OLB / 不再根據預設，Visual Studio 安裝在 %programfiles (x86) %\Common Files\Microsoft Shared\MSEnv 的 DLL 檔案。 與 Visual Studio 主機處理序所使用的對應免註冊 COM 資訊清單，這些檔案現在會安裝 [INSTALLDIR] 底下。
 * 如此一來，依賴全域 Visual Studio COM 介面的 COM 註冊的外部程式碼將不再會尋找這些註冊。 在 Visual Studio 處理序內執行的程式碼看不到的差異。
 
@@ -106,5 +106,5 @@ VSIX 格式所做變更包括：
 
 * 外部程式碼應該轉換成的 COM 元件，也使用免註冊啟用。
 * 外部元件可以找到 Visual Studio 位置[只要遵循這裡的指引](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)。
-* 我們建議使用的外部元件[外部 Settings Manager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx)而不是直接向 Visual Studio 登錄機碼的讀取/寫入。
+* 我們建議使用的外部元件[外部 Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager)而不是直接向 Visual Studio 登錄機碼的讀取/寫入。
 * 請檢查您的延伸模組所使用的元件是否已實作註冊的另一種技術。 比方說，可能可以利用新的偵錯工具擴充功能[msvsmon JSON 檔案 COM 註冊](migrate-debugger-COM-registration.md)。

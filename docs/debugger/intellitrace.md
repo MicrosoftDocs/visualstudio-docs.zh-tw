@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623812"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280775"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -46,7 +46,7 @@ ms.locfileid: "42623812"
 |||
 |-|-|
 |**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)<br />- [使用 IntelliTrace 倒退檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)|
-|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
 |**從已部署應用程式收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**從開始偵錯的 IntelliTrace 記錄檔 （.iTrace 檔案）。**|- [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - 您的應用程式在測試電腦上當機，但在開發電腦上卻執行得很順利。
 
-     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)並[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
+     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)並[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
 - 在部署的應用程式中發生 Bug 或當機。
 
@@ -175,7 +175,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 根據預設，IntelliTrace 只會針對選取的 IntelliTrace 事件收集資料。 根據程式碼的結構和組織，這不一定會讓您的應用程式變慢。 例如，如果 IntelliTrace 時常記錄某個事件，這可能會讓應用程式變慢。 它也可能會讓您考慮重構應用程式。
 
-收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更.iTrace 檔案的大小上限，請前往**工具**，**選項**， **IntelliTrace**，**進階**。
+收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更.iTrace 檔案的大小上限，請前往**工具**，**選項**， **IntelliTrace**，**進階**。 
 
 ## <a name="in-this-section"></a>本節內容
 

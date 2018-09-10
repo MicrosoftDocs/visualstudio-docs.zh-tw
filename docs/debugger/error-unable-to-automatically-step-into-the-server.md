@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 無法自動逐步執行至伺服器 |Microsoft 文件
+title: 錯誤： 無法自動逐步執行至伺服器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8c79669da0e20bc7376d68c4ea782d280eb6df3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b9e7b3c45e49425c07c545f2a04673887fc8cac7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471654"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278669"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>錯誤：無法自動逐步執行至伺服器
 這個錯誤顯示為：  
   
  無法自動逐步執行至伺服器。 執行遠端程序之前，未通知偵錯工具。  
   
- 當您嘗試逐步執行 Web 服務 (請參閱 [逐步執行 XML Web Service](http://msdn.microsoft.com/en-us/8e67de38-bf5f-41cc-a457-1b88ce63d764)) 時，可能會發生這個錯誤。 一旦沒有正確設定 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ，便可能會發生這個錯誤。  
+ 當您嘗試逐步執行 web 服務時，會發生此錯誤 (請參閱[逐步執行 XML Web Service](https://msdn.microsoft.com/library/8e67de38-bf5f-41cc-a457-1b88ce63d764))。 一旦沒有正確設定 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ，便可能會發生這個錯誤。  
   
  可能的原因包括：  
   

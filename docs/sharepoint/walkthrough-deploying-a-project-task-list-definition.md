@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80b9cfee3aed4043b8327898ad8c57a55f254c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626453"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280359"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說： 部署專案工作清單定義
 
@@ -34,7 +34,7 @@ ms.locfileid: "42626453"
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
-- Visual Studio 2017 或版本的 Visual Studio Application Lifecycle Management (ALM)。
+- Visual Studio 2017 或 Azure 的 DevOps 服務。
 
 ## <a name="create-a-sharepoint-list"></a>建立 SharePoint 清單
 

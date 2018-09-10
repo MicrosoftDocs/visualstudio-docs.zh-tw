@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512053"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280075"
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -34,7 +34,7 @@ ms.locfileid: "39512053"
   
  雖然畫面格分析主要是協助您達到更快的呈現效能，但是同樣地也可協助您針對指定效能目標達到更佳的視覺品質，或減少 GPU 耗電。  
   
- 若要查看畫面格分析可以執行您的應用程式的示範，您可以觀看[Visual Studio 圖形畫面格分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 影片。  
+ 若要查看畫面格分析可以執行您的應用程式的示範，您可以觀看[Visual Studio 圖形畫面格分析](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 影片。  
   
 ## <a name="using-frame-analysis"></a>使用畫面格分析  
  在您使用畫面格分析之前，必須從執行中的應用程式擷取圖形資訊，就像使用任何其他圖形分析器工具一樣。 然後，在圖形記錄文件 (.vsglog) 視窗中，選擇**畫面格分析** 索引標籤。  
@@ -72,14 +72,14 @@ ms.locfileid: "39512053"
 #### <a name="timeline"></a>時間軸  
  時間軸會顯示彼此相對之繪製呼叫計時的概觀。 因為較大的長條對應較長的繪製時間，所以您可以使用它來快速找出畫面格中最耗費資源的繪製呼叫。 擷取的畫面格包含極大數目的繪製呼叫時，會將多個繪製呼叫合併為一個長條，且長條的長度為其繪製呼叫的總和。  
   
- ![時間軸會顯示繪製&#45;呼叫成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![時間軸會顯示繪製&#45;呼叫成本。](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  您可以將指標放在某個長條上方，以查看該長條所對應的繪製呼叫事件。 選取長條時，會讓事件清單與該事件同步。  
   
 #### <a name="table"></a>資料表  
  時間軸下方數字的表格，會針對與應用程式的預設呈現相關的每個繪製呼叫，顯示每個呈現變異的相對效能。 每個資料行都會顯示不同的呈現變異，而且每個資料列都代表可以在最左邊資料行中識別的不同繪製呼叫；您可以從這裡取得 [圖形事件清單] 視窗中事件的連結。  
   
- ![摘要資料表會顯示不同的變化。] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![摘要資料表會顯示不同的變化。](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  [摘要] 表格最左邊的第二個資料行顯示應用程式的基準呈現時間，也就是應用程式的預設呈現完成繪製呼叫所需的時間長度。 其餘資料行會以 [基準] 的百分比，顯示每個呈現變異的相對效能，這樣可以更容易看到效能是否獲得改善。 大於 100% 的百分比，所需的時間會多於 [基準] (即效能下降)，而小於 100% 的百分比，所需的時間較少 (即效能上升)。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "39512053"
 #### <a name="hot-draw-calls"></a>「熱門」繪製呼叫  
  為了使人注意到耗用較大比例的整體呈現時間的繪製呼叫，或是因為可避免的原因而異常緩慢的繪製呼叫，會在 [基準] 計時比畫面格中所有繪製呼叫的平均 [基準] 計時高於一個標準差時，將含有這些「熱門」繪製呼叫的資料列加上紅色陰影。  
   
- ![這個 DrawIndexed 呼叫具有熱門和冷門的變體。] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![這個 DrawIndexed 呼叫具有熱門和冷門的變體。](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>統計顯著性  
  為了使人注意到具有最高關聯性的呈現變異，畫面格分析會判斷每個呈現變異的統計顯著性，並將最顯著的呈現變異顯示為粗體。 它會將可改善效能的呈現變異顯示為綠色，並將可讓效能下降的呈現變異顯示為紅色。 它會將沒有統計顯著性的結果顯示為標準類型。  
@@ -103,12 +103,12 @@ ms.locfileid: "39512053"
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>不支援硬體計數器的平台  
  大部分的平台都未完整支援硬體 GPU 計數器，包括 Intel、AMD 和 nVidia 目前提供的所有 GPU。 沒有要收集的硬體計數器時，只會顯示一個 [詳細資料] 表格，而此表格包含所有變異的平均絕對計時。  
   
- ![在詳細資料資料表和部分播放變數。] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![在詳細資料資料表和部分播放變數。](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>支援硬體計數器的平台  
  在支援硬體 GPU 計數器的平台上 (例如，nVidia T40 SOC 和所有 Qualcomm SOC)，會顯示數個 [詳細資料] 表格，即一個變異一個 [詳細資料] 表格。 會針對每個呈現變異收集每個可用硬體計數器，並將其顯示在其專屬 [詳細資料] 表格中。  
   
- ![支援時，會顯示硬體計數器。] (media/pix_frame.png "pix_frame")  
+ ![支援時，會顯示硬體計數器。](media/pix_frame.png "pix_frame")  
   
  硬體計數器資訊為每個繪製呼叫的特定硬體平台行為，提供非常詳細的檢視，這有助於極精確地識別效能瓶頸的原因。  
   

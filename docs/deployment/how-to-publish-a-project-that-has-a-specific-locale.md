@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080795"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281971"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何： 發行具有特定地區設定的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。  
@@ -165,6 +165,6 @@ ms.locfileid: "39080795"
   
 ## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [巨集的開發環境](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [巨集總管 視窗](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [如何： 編輯，並以程式設計方式建立巨集](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [巨集的開發環境](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [巨集總管 視窗](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [如何： 編輯，並以程式設計方式建立巨集](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

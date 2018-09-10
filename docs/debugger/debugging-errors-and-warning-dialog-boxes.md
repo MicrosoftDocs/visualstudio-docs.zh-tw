@@ -1,5 +1,5 @@
 ---
-title: 偵錯錯誤和警告對話方塊 |Microsoft 文件
+title: 偵錯錯誤和警告對話方塊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472198"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279044"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。  
@@ -46,15 +46,15 @@ ms.locfileid: "31472198"
   
  [Microsoft Visual Studio 偵錯工具 (擲回例外狀況) 對話方塊](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [沒有適用於目前的 [位置] 對話方塊的原始程式碼](../debugger/no-source-available.md)  
+ [沒有原始程式碼可供目前的 [位置] 對話方塊](../debugger/no-source-available.md)  
   
- [沒有符號資訊對話方塊](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [沒有符號資訊 對話方塊](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [解決語意模糊對話方塊](../debugger/resolve-ambiguity-dialog-box.md)  
   
  [過時程式碼警告對話方塊](../debugger/stale-code-warning-dialog-box.md)  
   
- [無法連接至電腦](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
+ [無法連接到電腦](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
  [錯誤：無法進行偵錯，系統中已啟動一個核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
@@ -63,9 +63,9 @@ ms.locfileid: "31472198"
   
  [遠端偵錯錯誤](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [附加錯誤](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [附加錯誤](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [SQL 偵錯安裝程式疑難排解](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [疑難排解 SQL 偵錯設定](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
  [偵錯 Visual c + + 常見問題集](../debugger/debugging-native-code-faqs.md)  
   

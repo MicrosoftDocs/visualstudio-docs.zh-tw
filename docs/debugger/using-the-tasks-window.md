@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512287"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280879"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 
-**任務**視窗類似於**執行緒**視窗中，差別在於前者顯示的資訊關於<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。
+**任務**視窗類似於**執行緒**視窗中，差別在於前者顯示的資訊關於<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10))而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。
 
 在 managed 程式碼，您可以使用**工作**當您使用的視窗<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件或使用**await**並**非同步**關鍵字 (**Await**並**非同步**在 visual Basic 中)。 如需在 managed 程式碼中的工作的詳細資訊，請參閱[平行程式設計](/dotnet/standard/parallel-programming/index)。
 
 在原生程式碼，您可以使用**任務**視窗中，當您使用[工作群組](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[平行演算法](/cpp/parallel/concrt/parallel-algorithms)，[非同步代理程式](/cpp/parallel/concrt/asynchronous-agents)，及[輕量型工作](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。 如需有關原生程式碼中的工作的詳細資訊，請參閱[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。
 
-在 JavaScript 中，您可以使用 [工作] 視窗時您正在使用 promise`.then`程式碼。 請參閱[JavaScript (UWP app) 中的非同步程式設計](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。
+在 JavaScript 中，您可以使用 [工作] 視窗時您正在使用 promise`.then`程式碼。 請參閱[JavaScript (UWP app) 中的非同步程式設計](/previous-versions/windows/apps/hh700330(v=win.10))如需詳細資訊。
 
 您可以使用**任務**只要您進入偵錯工具 視窗。 您可以在存取它**偵錯**功能表中的按一下**Windows** ，然後按一下**工作**。 如下圖所示**任務**視窗處於預設模式。
 

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231222"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279111"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 初步了解在 Visual Studio 中的部署
 
@@ -114,7 +114,7 @@ ms.locfileid: "39231222"
 
 ## <a name="devops-deployment"></a>DevOps 部署
 
-在小組環境中，您可以使用 Visual Studio Team Services (VSTS)，以啟用持續部署您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建置和發行](/vsts/build-release/index)並[部署至 Azure](/vsts/deploy-azure/index)。
+在小組環境中，您可以使用 Azure 管線，以啟用持續部署您的應用程式。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index)並[部署至 Azure](/azure/devops/deploy-azure/index)。
 
 ## <a name="deployment-for-other-app-types"></a>部署其他應用程式類型
 
@@ -122,7 +122,7 @@ ms.locfileid: "39231222"
 | --- | --- | --- |
 | **Office 應用程式** | 您可以從 Visual Studio 的 office 發行增益集。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 或 OData 服務**  | 其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發及部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch 在 Visual Studio 2017 中，已不再支援，但仍然能夠從 Visual Studio 2015 和更早版本。 | [部署 LightSwitch 應用程式](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch 在 Visual Studio 2017 中，已不再支援，但仍然能夠從 Visual Studio 2015 和更早版本。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
 
 ## <a name="next-steps"></a>後續步驟
 

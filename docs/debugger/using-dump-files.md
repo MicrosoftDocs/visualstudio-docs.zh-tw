@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755881"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281022"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用 Visual Studio 中使用傾印檔案
 使用或不含堆積; 傾印檔案建立傾印檔案;開啟傾印檔案;尋找二進位檔、 pdb 的、 和傾印檔案的原始程式檔。
@@ -55,7 +55,7 @@ ms.locfileid: "36755881"
 
 -   Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 Visual Studio 也可以對來自 ARM 裝置之 Managed 應用程式的應用程式傾印檔案進行偵錯，不過只能使用原生偵錯工具。
 
--   若要偵錯[核心模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，下載是一部分的 Windows 偵錯工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
+-   若要偵錯[核心模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)傾印檔案，下載是一部分的 Windows 偵錯工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
 
 -   Visual Studio 無法偵錯傾印檔案儲存在較舊的傾印格式，稱為[完整使用者模式傾印](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 請注意，完整使用者模式傾印與含有堆積的傾印並不相同。
 
@@ -114,5 +114,5 @@ ms.locfileid: "36755881"
 ## <a name="see-also"></a>另請參閱
 
 - [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -1,5 +1,5 @@
 ---
-title: 不正確的字元範圍設定 (JavaScript) |Microsoft 文件
+title: 不正確的字元範圍設定 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632998"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282809"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>不正確的字元集範圍 (JavaScript)
-您嘗試使用無效的字元設定的範圍建立規則運算式。 字元集必須在範圍內從單一字元，例如 a 到 z 或 0-9;您不能包含字元類別，例如 \w 字元集中。 也必須在範圍中的第一個字元前面範圍的第二個字元。 例如：  
+您嘗試使用無效的字元設定的範圍建立規則運算式。 字元集的範圍必須從單一字元，例如 a-z 或 0-9;您不能包含字元類別，例如 \w 中的字元。 也必須在範圍中的第一個字元前面的範圍中，第二個字元。 例如:   
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   使用只能有單一字元，來撰寫規則運算式字元設定，並確定它們依正確順序。  
+-   若要撰寫您的規則運算式的字元集，並確定在正確的順序也就是使用只能有單一字元。  
   
 ## <a name="see-also"></a>另請參閱  
  [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [規則運算式語法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

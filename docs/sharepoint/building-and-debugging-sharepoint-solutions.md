@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326110"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283531"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>建置和偵錯 SharePoint 方案
   一般情況下，建置和偵錯 SharePoint 方案等同於建置和偵錯其他類型的專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本節主題會說明兩者之間的差異。  
@@ -44,8 +44,8 @@ ms.locfileid: "36326110"
 ## <a name="debug-and-test-sharepoint-solutions"></a>偵錯及測試 SharePoint 方案
  偵錯前,[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]複本 *.wsp*封裝到 SharePoint 伺服器，啟動站台和 Web 範圍的功能，並在某些情況下，會啟動專案。 在某些情況下，您可能需要手動開啟專案。 如需詳細資訊，請參閱 <<c0> [ 疑難排解 SharePoint 解決方案](../sharepoint/troubleshooting-sharepoint-solutions.md)並[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>偵錯並使用 ALM 功能驗證 SharePoint 方案
- Visual Studio ALM 功能 (例如單元測試和 IntelliTrace) 可讓您更精確地找出 SharePoint 方案中的問題。 程式碼剖析可讓您尋找及識別 SharePoint 方案中的效能問題區域。 如需詳細資訊，請參閱 <<c0> [ 驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)並[效能 SharePoint 應用程式程式碼剖析](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)。  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>偵錯，並使用 Azure DevOps 服務功能，以驗證 SharePoint 方案
+ 單元測試和 IntelliTrace 等的 azure DevOps 服務功能可讓您更精確地找出 SharePoint 方案中的問題。 程式碼剖析可讓您尋找及識別 SharePoint 方案中的效能問題區域。 如需詳細資訊，請參閱 <<c0> [ 驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)並[效能 SharePoint 應用程式程式碼剖析](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)。  
   
 ## <a name="security-during-the-build-process"></a>建置程序期間的安全性
  封裝或部署 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]必須將檔案複製到 SharePoint 伺服器的權限。 您必須執行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提升權限的程序，以及您的使用者帳戶必須是 SharePoint 伺服器上的網站集合管理員。 此外，您必須指定您的專案是否為沙箱化方案 」 或 「 伺服器陣列方案。 如需詳細資訊，請參閱 < [Differences Between Sandboxed and Farm 解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  

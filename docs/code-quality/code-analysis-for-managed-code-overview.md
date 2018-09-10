@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131878"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279086"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Managed 程式碼的程式碼分析概觀
 
@@ -71,14 +71,14 @@ Public class MyClass
 
 - 最新的組建的一部分執行的程式碼分析。
 
-您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用的 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
+您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
 
 ## <a name="team-build-integration"></a>Team build 整合
 
-您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 <<c0> [ 建置及發行 (VSTS)](/vsts/build-release/index)。
+您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [Roslyn 分析器的概觀](../code-quality/roslyn-analyzers-overview.md)
 - [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

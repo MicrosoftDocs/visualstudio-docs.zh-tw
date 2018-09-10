@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077561"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282263"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和技術來部署 Windows Form、 WPF 和主控台應用程式。  
@@ -40,5 +40,5 @@ ms.locfileid: "39077561"
 |[下載組件隨選與 ClickOnce 部署 API 使用設計工具](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 逐步解說](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio 逐步解說](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio samples](../ide/visual-studio-samples.md) (Visual Studio 範例)

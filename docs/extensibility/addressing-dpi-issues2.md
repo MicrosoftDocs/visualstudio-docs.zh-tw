@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638661"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281165"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>啟用以 WebOC 的 HDPI 支援  
  根據預設，HDPI 偵測和支援功能，請勿啟用 WebOC 控制項 （例如在 WPF 中或 IWebBrowser2 介面 WebBrowser 控制項）。 結果會是內嵌的控制項與太小而高解析度的顯示器上顯示內容。 以下說明如何啟用特定 web WebOC 執行個體的高 DPI 支援。  
   
- 實作 IDocHostUIHandler 介面 (請參閱 MSDN 文章[IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx)介面):  
+ 實作 IDocHostUIHandler 介面 (請參閱 MSDN 文章[IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- （選擇性） 實作 ICustomDoc 介面 (請參閱 MSDN 文章[ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx)介面):  
+ （選擇性） 實作 ICustomDoc 介面 (請參閱 MSDN 文章[ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

@@ -1,5 +1,5 @@
 ---
-title: 如何觸發暫止、 繼續及背景事件 UWP 應用程式進行偵錯時 |Microsoft 文件
+title: 如何觸發暫止、 繼續及背景事件偵錯 UWP 應用程式時 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 00e448da2f5a23c2f6aebf6e163181080949129a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481225"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280008"
 ---
-# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
+# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件偵錯在 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
   
  本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 (即使您的應用程式並未執行也無妨)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。  
   
- 程序生命週期管理和背景工作的詳細資訊請參閱[正在啟動，繼續執行，並多工](/windows/uwp/launch-resume/index)。  
+ 如需處理程序生命週期管理和背景工作的詳細資訊，請參閱[Launching，resuming，與多工](/windows/uwp/launch-resume/index)。  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 觸發處理程序生命週期管理事件  
  當使用者切換離開您的應用程式，或當 Windows 進入低電力狀態時，Windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「 **暫停** 」狀態繼續時，它會進入「 **執行中** 」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。  
@@ -48,7 +48,7 @@ ms.locfileid: "31481225"
      請注意，[ **暫停和終止** ] 會關閉應用程式並結束偵錯工作階段。  
   
 ##  <a name="BKMK_Trigger_background_tasks"></a> 觸發背景工作  
- 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱 [Supporting your app with background tasks](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)。  
+ 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱[支援您的應用程式使用背景工作](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
  您可以從偵錯工具觸發事件，啟動應用程式的背景工作。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "31481225"
   
 2.  開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。  
   
-     針對 c + + 和 JavaScript 專案中，展開**組態屬性**，然後選擇 **偵錯**。  
+     若是 c + + 和 JavaScript 專案中，依序展開**組態屬性**，然後選擇**偵錯**。  
   
 3.  執行下列任一步驟：  
   
@@ -94,18 +94,18 @@ ms.locfileid: "31481225"
      ![暫停、 繼續、 結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作  
- 使用**偵錯已安裝的應用程式套件**載入偵錯工具已安裝的應用程式 對話方塊。 比方說，您可能已從 Microsoft 市集安裝的應用程式進行偵錯或有原始程式檔，應用程式中，但沒有應用程式的 Visual Studio 專案時，偵錯應用程式。 **偵錯已安裝的應用程式套件**對話方塊可讓您在 Visual Studio 電腦或遠端裝置，或是將設定成偵錯模式執行，而不是啟動應用程式的偵錯模式中啟動應用程式。 如需詳細資訊，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
+ 使用**偵錯 Installed App Package**載入偵錯工具已安裝的應用程式 對話方塊。 比方說，您可能會從 Microsoft Store 安裝應用程式進行偵錯，或偵錯應用程式，當您有原始程式檔的應用程式，但不是應用程式的 Visual Studio 專案。 **偵錯 Installed App Package**對話方塊可讓您在 Visual Studio 電腦上，或在遠端裝置上，或若要設定應用程式，以在偵錯模式中執行，但不是加以啟動的偵錯模式中啟動應用程式。 如需詳細資訊，請參閱 <<c0> [ 偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
   
  將應用程式載入至偵錯工具後，您就能使用上述任何程序。  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 診斷背景工作啟用錯誤  
- Windows 事件檢視器中背景基礎結構的診斷記錄包含詳細的資訊，您可以用來診斷和疑難排解背景工作錯誤。 若要檢視記錄檔：  
+ 診斷記錄 Windows 事件檢視器中的背景基礎結構會包含您可用來診斷和疑難排解背景工作錯誤的詳細的資訊。 若要檢視記錄檔：  
   
 1.  開啟 [事件檢視器] 應用程式。  
   
 2.  在 [ **動作** ] 窗格中，選擇 [ **檢視** ]，並確定已勾選 [ **顯示分析與偵錯記錄檔** ]。  
   
-3.  在**事件檢視器 （本機）** 樹狀目錄中，展開節點**Applications and Services Logs** > **Microsoft** > **Windows**  >  **BackgroundTasksInfrastructure**。  
+3.  在 **事件檢視器 （本機）** 樹狀目錄中，展開節點**Applications and Services Logs** > **Microsoft** > **Windows**  >  **BackgroundTasksInfrastructure**。  
   
 4.  選擇 [ **診斷** ] 記錄檔。  
   

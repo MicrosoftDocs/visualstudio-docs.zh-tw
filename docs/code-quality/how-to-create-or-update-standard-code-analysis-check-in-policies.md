@@ -13,39 +13,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870482"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283232"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
-您可以要求中的所有程式碼專案的 team 專案執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析可以改善已簽入程式碼基底程式碼的品質。
+您可以要求 Azure DevOps 專案中的所有程式碼專案上執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析，可以改善簽入程式碼基底的程式碼的品質。
 
 > [!NOTE]
 > 只有當您使用 Team Foundation Server 時，才使用這項功能。
 
-程式碼分析簽入原則在 team 專案設定中設定，並套用至每一個 team 專案中的程式碼專案。 程式碼分析回合的程式碼專案的專案 (.xxproj) 檔中的程式碼專案設定。 在本機電腦上執行的程式碼分析回合。 Team 專案設定中的規則時啟用程式碼分析簽入原則、 其上次的編輯之後必須編譯要簽入程式碼專案中的檔案和包含執行的程式碼分析，至少必須在電腦上執行，c已進行 hanges。
+程式碼分析簽入原則套用至每個程式碼專案，並設定專案設定。 程式碼分析回合設定的程式碼專案的專案 (.xxproj) 檔案中的程式碼專案。 在本機電腦上執行程式碼分析回合。 將專案設定中的規則時啟用程式碼分析簽入原則、 其上次的編輯之後必須編譯要簽入程式碼專案中的檔案和包含執行的程式碼分析，至少必須執行的電腦上，變更已進行 s。
 
-- Managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含程式碼分析規則的子集。
+- 對於 managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含的程式碼分析規則子集。
 
-- C/c + + 程式碼，在 Visual Studio 2017 15.6 及更早版本，簽入原則要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用個別的程式碼專案，在您的 team 專案中的特定規則。 在 15.7 和更新版本，您可以使用 **/analyze: ruleset**來指定要執行哪些規則。 如需詳細資訊，請參閱[使用規則集指定要執行的 c + + 規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
+- 對於 C/c + + 程式碼，在 Visual Studio 2017 15.6 版及更早版本，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 Azure DevOps 專案中的個別程式碼專案的特定規則。 15.7 中和更新版本中，您可以使用 **/analyze: ruleset**指定要執行哪些規則。 如需詳細資訊，請參閱 <<c0> [ 使用規則集來指定要執行的 c + + 規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
 
-指定 managed 程式碼簽入原則之後，小組成員可以同步處理程式碼專案的 team 專案的原則設定的程式碼分析設定。
+指定 managed 程式碼簽入原則之後，小組成員可以同步處理他們的 Azure DevOps 專案原則設定的程式碼專案的程式碼分析設定。
 
 ## <a name="to-open-the-check-in-policy-editor"></a>若要開啟簽入原則編輯器
 
-1. 在 Team Explorer 中 team 專案名稱上按一下滑鼠右鍵，指向**Team 專案設定**，然後按一下 **原始檔控制**。
+1. 在 Team Explorer 中，以滑鼠右鍵按一下專案名稱，指向**專案設定**，然後按一下**原始檔控制**。
 
-1. 在**原始檔控制**對話方塊中，選取**簽入原則** 索引標籤。
+1. 在 [**原始檔控制**對話方塊中，選取**簽入原則**] 索引標籤。
 
 1. 執行下列任一步驟：
 
-    - 按一下**新增**，建立新的簽入原則。
+    - 按一下 **新增**，建立新的簽入原則。
 
-    - 按兩下現有**程式碼分析**中的項目**原則類型**變更原則的清單。
+    - 按兩下現有**程式碼分析**中的項目**原則類型**清單來變更原則。
 
 ## <a name="to-set-policy-options"></a>若要設定原則選項
 
@@ -53,21 +53,21 @@ ms.locfileid: "33870482"
 
 |選項|描述|
 |------------|-----------------|
-|**強制執行簽入以僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可確保分析的所有程式碼都是方案的一部分。|
+|**強制執行簽入使其僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可保證方案的一部分的所有程式碼會進行分析。|
 |**強制執行 C/c + + 程式碼分析 (/analyze)**|需要所有的 C 或 c + + 專案，以建置 / analyze 編譯器選項，簽入之前執行程式碼分析。|
-|**針對 Managed 程式碼強制執行程式碼分析**|需要所有的 managed 的專案執行程式碼分析，並建置簽入之前。|
+|**針對 Managed 程式碼強制執行程式碼分析**|需要所有的 managed 的專案執行程式碼分析，以及建置簽入之前。|
 
-## <a name="to-specify-a-managed-rule-set"></a>若要指定受管理的規則集
+## <a name="to-specify-a-managed-rule-set"></a>若要指定受管理的規則設定
 
 從**執行此規則集**清單中，使用下列方法之一：
 
 - 選取 Microsoft 標準規則集。
 
-- 選取自訂規則集，即可**\<選取規則集從原始檔控制...>**。 然後，輸入原始檔控制瀏覽器中的規則集的版本控制路徑。 版本控制路徑的語法如下：
+- 選取 自訂規則集，即可**\<選取規則集從原始檔控制...>**。 然後，輸入原始檔控制瀏覽器中的規則集的版本控制路徑。 版本控制路徑的語法是：
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-如需有關如何建立及實作自訂簽入原則規則設定，請參閱[Managed 程式碼的實作自訂簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
+如需有關如何建立及實作自訂簽入原則規則集，請參閱[針對 Managed 程式碼的自訂實作簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 
