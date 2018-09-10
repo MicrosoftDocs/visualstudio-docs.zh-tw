@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118050"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282337"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析 SharePoint 應用程式的效能
 
@@ -65,7 +65,7 @@ Web 效能測試會模擬使用者可能會如何互動的 SharePoint 應用程�
 |標題|描述|
 |-----------|-----------------|
 |[逐步解說： 剖析 SharePoint 應用程式](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|示範如何在 SharePoint 應用程式上執行取樣分析。|
-|[在發行前對您的應用程式執行效能測試](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|描述如何建立負載測試，可協助您進行壓力測試 SharePoint 應用程式。|
+|[在發行前對您的應用程式執行效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|描述如何建立負載測試，可協助您進行壓力測試 SharePoint 應用程式。|
 |[對程式碼進行單元測試](/visualstudio/test/unit-test-your-code)|描述如何使用單元測試程式碼中找出邏輯錯誤。|
 |[使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|說明如何測試 SharePoint 應用程式的使用者介面。|
 

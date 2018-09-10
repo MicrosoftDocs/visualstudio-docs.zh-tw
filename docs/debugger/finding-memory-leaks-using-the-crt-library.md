@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057209"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281100"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 記憶體流失 (定義是無法正確解除配置先前配置的記憶體) 是 C/C++ 應用程式中最不易察覺和難以偵測的錯誤之一。 一開始可能只有少許記憶體流失而未察覺，但隨著時間經過，累積的記憶體流失可能愈來愈多而造成一些症狀，包括應用程式效能降低，甚至是因記憶體不足而沒有反應。 情況更嚴重者，發生記憶體流失的應用程式會因為耗盡所有可用的記憶體而造成其他應用程式也沒有反應，以致於難以判斷到底哪一個應用程式才是禍首。 即使看似無害的記憶體流失也可能是其他問題的根源，而應該解決。  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   記憶體配置編號，在此範例中為 `18`  
   
--   [區塊類型](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)，在此範例中為 `normal` 。  
+-   [區塊類型](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97)，這是`normal`在此範例中。  
   
 -   十六進位記憶體位置，在此範例中為 `0x00780E80` 。  
   

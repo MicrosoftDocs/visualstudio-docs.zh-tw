@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 9964621c216d058581d9298956ba90ac6cdbef86
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058031"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280788"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：偵錯高效能叢集
 在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 如需一般的遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
  當您在高效能叢集上偵錯時，可以使用所有可用於遠端偵錯的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯視窗和技術。 但是，因為是由遠端偵錯，所以無法使用外部主控台視窗。  
   
- **執行緒**視窗和**處理序**視窗時進行偵錯平行應用程式特別有用。 如需如何使用這些視窗的秘訣，請參閱 <<c0> [ 如何： 使用處理序視窗](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)並[逐步解說： 使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。  
+ **執行緒**視窗和**處理序**視窗時進行偵錯平行應用程式特別有用。 如需如何使用這些視窗的秘訣，請參閱 <<c0> [ 如何： 使用處理序視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))並[逐步解說： 使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。  
   
  下列程序顯示在高效能叢集上偵錯時特別有用的一些技術。  
   
@@ -101,7 +101,7 @@ ms.locfileid: "37058031"
 ## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)   
- [如何： 使用處理序視窗](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [如何： 使用處理序視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)   
- [執行緒和處理序](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [執行緒和處理序](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
  [使用中斷點](../debugger/using-breakpoints.md)

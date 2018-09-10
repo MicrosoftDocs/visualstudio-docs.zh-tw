@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499386"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283453"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -230,7 +230,7 @@ namespace MockLanguageExtension
 
 ### <a name="mef"></a>MEF
 
-Visual Studio 會使用[MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) 來管理其擴充性點。 [匯出](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx)屬性會指出 Visual studio，這個類別應該挑選擴充點，並在適當的時間載入。
+Visual Studio 會使用[MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) 來管理其擴充性點。 [匯出](/dotnet/api/system.componentmodel.composition.exportattribute)屬性會指出 Visual studio，這個類別應該挑選擴充點，並在適當的時間載入。
 
 若要使用 MEF，您也必須定義 MEF 為 VSIX 資訊清單中的資產。
 

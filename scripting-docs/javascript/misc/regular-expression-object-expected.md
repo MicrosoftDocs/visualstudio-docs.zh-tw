@@ -1,5 +1,5 @@
 ---
-title: 必須是規則運算式物件 |Microsoft 文件
+title: 必須是規則運算式物件 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a5a0f3cb3b86e2e01d522f85d0dae23e9c9d3ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632778"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280308"
 ---
 # <a name="regular-expression-object-expected"></a>必須是規則運算式物件
-您嘗試叫用**RegExp.prototype.toString**或**RegExp.prototype.valueOf**方法以外的類型的物件上`RegExp`。 這種類型的引動過程的物件必須屬於型別`RegExp`。  
+您嘗試叫用**RegExp.prototype.toString**或是**RegExp.prototype.valueOf**以外的類型的物件上的方法`RegExp`。 這種類型的引動過程的物件必須是型別`RegExp`。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   只能叫用**RegExp.prototype.toString**或**RegExp.prototype.valueOf**類型的物件上的方法`RegExp`。  
+-   只能叫用**RegExp.prototype.toString**或是**RegExp.prototype.valueOf**類型的物件上的方法`RegExp`。  
   
 ## <a name="see-also"></a>另請參閱  
  [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [規則運算式語法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

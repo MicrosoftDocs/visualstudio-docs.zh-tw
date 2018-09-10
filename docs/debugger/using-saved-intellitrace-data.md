@@ -1,5 +1,5 @@
 ---
-title: 使用儲存的 IntelliTrace 資料 |Microsoft 文件
+title: 使用儲存的 IntelliTrace 資料 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19bc4c0fd91284a5dd4da4a50bba5f2778904a28
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479594"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280061"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。  
   
  請確定您已符合下列條件：  
   
--   配對應用程式程式碼的原始程式檔和符號檔 (.pdb)。 否則，Visual Studio 無法解析來源位置並會顯示「找不到符號」的訊息。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)和[部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。  
+-   配對應用程式程式碼的原始程式檔和符號檔 (.pdb)。 否則，Visual Studio 無法解析來源位置並會顯示「找不到符號」的訊息。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)並[於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。  
   
 -   在開發電腦或另一部要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)  
   
@@ -38,8 +38,8 @@ ms.locfileid: "31479594"
     |**來源**|**請參閱**|  
     |----------------|-------------|  
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
-    |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
-    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
+    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> 請您指定選項。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "31479594"
   
 |**區段**|**包含**|**資料收集來源**|  
 |-----------------|------------------|---------------------------|  
-|[效能違規](#Performance)|具有超過所設定臨界值之函式呼叫的效能事件|Microsoft 監視代理程式，可能是獨立收集器或搭配 System Center 2012 R2 Operations Manager ASP.NET web 應用程式裝載於 IIS 上|  
+|[效能違規](#Performance)|具有超過所設定臨界值之函式呼叫的效能事件|Microsoft 監視代理程式，可能是獨立收集器或搭配 System Center 2012 R2 Operations Manager 在 IIS 上裝載的 ASP.NET web 應用程式|  
 |[例外狀況資料](#ExceptionData)|例外狀況，其中包含每個例外狀況的完整呼叫堆疊|所有來源|  
 |[分析](#Analysis)|僅適用於 SharePoint 2010 和 SharePoint 2013 應用程式。 診斷 IntelliTrace 和 SharePoint 事件，例如偵錯工具事件、ULS 事件、未處理的例外狀況，以及 Microsoft Monitoring Agent 所記錄的其他資料。|Microsoft 監視代理程式，可能是獨立收集器或搭配 System Center 2012 R2 Operations Manager|  
 |[系統資訊](#SystemInfo)|主機系統的設定和規格|所有來源|  
@@ -120,7 +120,7 @@ ms.locfileid: "31479594"
   
      如果該方法是位於您的應用程式程式碼中，Visual Studio 就會移至該方法。  
   
-     ![從效能事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![移至應用程式程式碼在效能事件](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。  
   
@@ -137,7 +137,7 @@ ms.locfileid: "31479594"
   
      如果例外狀況是發生在您的應用程式程式碼中，Visual Studio 會移至發生例外狀況的位置。  
   
-     ![從例外狀況事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![移至應用程式程式碼在例外狀況事件](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "31479594"
   
      ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- 如需逐步解說，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄中，看到的資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+ 如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ###  <a name="ThreadsList"></a> 執行緒清單  
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。  
@@ -258,14 +258,14 @@ ms.locfileid: "31479594"
 |----------------|-------------------|  
 |**模組名稱**|模組檔案名稱|  
 |**模組路徑**|載入模組的磁碟位置|  
-|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱 [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470)。|  
+|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱[尋找符號 (.pdb) 檔和原始程式檔](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。|  
   
 ### <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？  
  [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
- [在手動測試中收集更多診斷資料](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
+ [在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
@@ -273,4 +273,4 @@ ms.locfileid: "31479594"
  [Visual Studio 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>指引  
- [測試 for Continuous Delivery with Visual Studio 2012-第 6 章： 測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Testing for Continuous Delivery with Visual Studio 2012-第 6 章： 測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

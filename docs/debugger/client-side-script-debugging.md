@@ -1,5 +1,5 @@
 ---
-title: 用戶端指令碼偵錯 |Microsoft 文件
+title: 用戶端指令碼偵錯 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464806"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283108"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  
   
 ## <a name="opening-script-documents"></a>開啟指令碼文件  
-您可以查看清單中的伺服器端和用戶端指令碼文件的**方案總管 中**檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
+您可以查看伺服器端和用戶端指令碼中的文件的清單**方案總管 中**檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>中斷點對應  
  在 Visual Studio 中，您無法直接對伺服器端程式碼進行偵錯，但是可以在伺服器端檔案內設定中斷點。 Visual Studio 會自動將中斷點對應至用戶端檔案內對應的位置，並且在用戶端程式碼中建立對應的中斷點。  
@@ -59,11 +59,11 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="debugging-ajax-script-applications"></a>偵錯 AJAX 指令碼應用程式  
  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯技術的詳細資訊，請參閱  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
+ [偵錯和 Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)   
- [變數視窗](../debugger/debugger-windows.md)   
+ [變數的 Windows](../debugger/debugger-windows.md)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
- [偵錯和追蹤 Ajax 應用程式概觀](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [偵錯和 Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

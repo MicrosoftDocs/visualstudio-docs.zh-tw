@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling |Microsoft 文件
+title: IActiveScriptProfilerControl::StartProfiling |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724868"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281711"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-啟動指令碼引擎上的分析。 指令碼引擎建立的分析工具物件執行個體，藉由呼叫[CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec)。  
+啟動指令碼引擎上進行分析。 指令碼引擎會建立分析工具物件的執行個體呼叫[CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,10 +37,10 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>參數  
  `clsidProfilerObject`  
- [in]類別要建立的程式碼剖析工具物件的識別項 (CLSID)。  
+ [in]類別會建立分析工具物件的識別項 (CLSID)。  
   
  `dwEventMask`  
- [in]4 位元組位元遮罩，指定的事件類型。 中所定義之位元[PROFILER_EVENT_MASK 列舉](../../winscript/reference/profiler-event-mask-enumeration.md)。  
+ [in]4 位元組的位元遮罩，指定的事件類型。 中所定義的位元[PROFILER_EVENT_MASK 列舉](../../winscript/reference/profiler-event-mask-enumeration.md)。  
   
  `dwContext`  
  [in]4 位元組值傳遞至分析工具物件。  

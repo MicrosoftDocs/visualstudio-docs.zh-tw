@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671558"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279540"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
@@ -95,7 +95,7 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  [執行緒處理](/dotnet/standard/threading/index)  
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
   
- [元件中的多執行緒](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [元件中的多執行緒](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 元件中使用多執行緒處理。  
   
  [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

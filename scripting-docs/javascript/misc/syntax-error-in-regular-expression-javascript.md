@@ -1,5 +1,5 @@
 ---
-title: 規則運算式 (JavaScript) 中的語法錯誤 |Microsoft 文件
+title: 語法錯誤規則運算式 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,12 +20,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23492c5a5066bf3430430b544b97ee765d26512b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632918"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280373"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>規則運算式中的語法錯誤 (JavaScript)
 搜尋字串的結構，違反了一個或多個的文法規則[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]規則運算式。  
@@ -36,5 +36,5 @@ ms.locfileid: "24632918"
   
 ## <a name="see-also"></a>另請參閱  
  [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [規則運算式語法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile 方法 (規則運算式)](../../javascript/reference/compile-method-regular-expression-javascript.md)

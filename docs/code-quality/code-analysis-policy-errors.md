@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278916"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 如果程式碼分析原則不符合在簽入時，就會發生下列錯誤：
 
  **一或多個專案的程式碼分析設定與不相容的程式碼分析原則。**
 
- 簽入至 team 專案的原始檔控制的程式碼分析需求不符合一或多個程式碼專案。 此錯誤可能被因一或多個下列條件：
+ 簽入至原始檔控制專案的程式碼分析需求不符合一或多個程式碼專案。 此錯誤可能被因一或多個下列條件：
 
 1.  所有的方案中專案的組建上未啟用程式碼分析。
 
-2.  本機設定 Visual Studio 中的專案有較不嚴格的規則**動作**設定的 team 專案的規則，例如設定規則，設定為比**動作**=**錯誤**在伺服器上有其**動作**設定為**警告**或是**無**規則集 Visual Studio 中正在執行中)。
+2.  本機設定 Visual Studio 中的專案有較不嚴格的規則**動作**設定專案的規則，例如設定規則，設定為比**動作**=**錯誤**在伺服器上有其**動作**設定為**警告**或是**無**規則集 Visual Studio 中正在執行中)。
 
-3.  設定 Visual Studio 中所指定的規則不包含的所有規則規則集指定的程式碼分析簽入原則中的 team 專案中所指定。
+3.  設定 Visual Studio 中所指定的規則不包含的所有規則規則集指定的程式碼分析簽入原則中的專案中所指定。
 
  **程式碼分析原則失敗。在專案中有錯誤{0}或組建不是最新狀態。**
 

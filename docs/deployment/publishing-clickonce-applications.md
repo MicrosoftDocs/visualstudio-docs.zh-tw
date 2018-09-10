@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c6f931af213ff7ce97ec77c2b742d6767cf733
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079242"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279809"
 ---
 # <a name="publish-clickonce-applications"></a>發行 ClickOnce 應用程式
 首次發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，可以使用 [發行精靈] 來設定發行屬性。 這個精靈僅提供少數屬性；所有其他屬性都設為其預設值。  
@@ -98,7 +98,7 @@ ms.locfileid: "39079242"
 |[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|  
 |[逐步解說： 手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|  
 |[如何： 將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)|說明如何藉由變更發佈適用於 64 位元處理器**目標 CPU**或是**平台目標**專案中的屬性。|  
-|[逐步解說： 啟用 ClickOnce 應用程式，在多個.NET Framework 版本上執行](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|  
+|[逐步解說： 啟用 ClickOnce 應用程式，在多個.NET Framework 版本上執行](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|  
 |[逐步解說： 建立 ClickOnce 應用程式的自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|  
 |[如何： 發行已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|  
   

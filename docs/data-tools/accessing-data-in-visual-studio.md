@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283467"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280593"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -83,7 +83,7 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 ### <a name="data-providers"></a>資料提供者
 
-要在 ADO.NET 中的資料庫，它必須能夠自訂*ADO.NET 資料提供者*或其他必須公開 （expose） 的 ODBC 或 OLE DB 介面。 Microsoft 提供[ADO.NET 資料提供者清單](https://msdn.microsoft.com/data/dd363565)SQL Server 產品，以及 ODBC 和 OLE DB 提供者。
+要在 ADO.NET 中的資料庫，它必須能夠自訂*ADO.NET 資料提供者*或其他必須公開 （expose） 的 ODBC 或 OLE DB 介面。 Microsoft 提供[ADO.NET 資料提供者清單](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview)SQL Server 產品，以及 ODBC 和 OLE DB 提供者。
 
 ### <a name="data-modeling"></a>資料模型化
 
@@ -99,7 +99,7 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 ## <a name="native-c"></a>原生 C++
 
-連接到 SQL Server 的 c + + 應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結的伺服器，則是必要的 OLE DB 和，您會使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱 < [Visual c + + 中的資料存取](/cpp/data/data-access-in-cpp)。
+連接到 SQL Server 的 c + + 應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結的伺服器，則是必要的 OLE DB 和，您會使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以使用來存取其他資料庫[ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱 < [Visual c + + 中的資料存取](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服務的 c + + 程式可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
@@ -133,7 +133,7 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;描述 ADO.NET 架構以及如何使用 ADO.NET 類別來管理應用程式資料並與其互動的資料來源和 XML。
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;說明如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
+[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;說明如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
 
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;說明如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 

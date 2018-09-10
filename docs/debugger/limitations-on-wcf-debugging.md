@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058519"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280646"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 您可以使用三種方式開始對 WCF 服務進行偵錯：  
@@ -63,7 +63,7 @@ ms.locfileid: "37058519"
   
 -   服務必須是您要偵錯之 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案的一部分。  
   
--   服務必須已裝載。 服務可以是網站專案 (檔案系統和 HTTP)、Web 應用程式專案 (檔案系統和 HTTP)，或 WCF 服務庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
+-   服務必須已裝載。 它可能是網站專案 （檔案系統和 HTTP）、 Web 應用程式專案 （檔案系統和 HTTP） 或 WCF 服務程式庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
   
 -   服務必須從 WCF 用戶端叫用。  
   

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f961229e60cb291efdd7630f9df10e162c2f17b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8026bb0cc85ef71766ab5c2538a3d6476d871cb8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153838"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280714"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何： 包含 ClickOnce 應用程式的必要條件
 在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式，並選擇**從我的應用程式的相同位置下載必要條件**，會發生錯誤，如果安裝程式套件不在**封裝**資料夾。  
   
 > [!NOTE]
->  若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
+>  若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](/dotnet/framework/deployment/deployment-guide-for-developers)。  
   
 ##  <a name="Package"></a> 若要使用 Package.xml 加入安裝程式套件  
   
