@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfaf36da772165a4f35e984dff117c6ec41ca60f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3829ba95f9c8885088487e62c9e5e0f2e29a7bb5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150947"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283986"
 ---
 # <a name="debugging-preparation-console-projects"></a>偵錯準備：主控台專案
-準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，並[偵錯準備： Windows Forms 應用程式 (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
+準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，並[偵錯準備： Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
   
 -   C# 主控台應用程式  
   
