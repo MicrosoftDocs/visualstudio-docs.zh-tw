@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623664"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283615"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
@@ -42,7 +42,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 
 ## <a name="see-also"></a>另請參閱
 
-- [測試應用程式](/vsts/test/overview?view=vsts)
+- [測試應用程式](/azure/devops/test/overview?view=vsts)
 - [模型使用者需求](../modeling/model-user-requirements.md)
 - [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)
 

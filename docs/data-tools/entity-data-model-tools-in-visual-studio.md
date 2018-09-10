@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3209a79b0358471977a0e58e8ab5d8d7e5c08e07
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755364"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284031"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。
@@ -39,9 +39,9 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
     > [!NOTE]
     >  從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
 
-工具會產生或修改 *.edmx*檔案。 這 *.edmx*檔案包含描述概念模型、 儲存模型，以及它們之間的對應的資訊。 如需詳細資訊，請參閱 < [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。
+工具會產生或修改 *.edmx*檔案。 這 *.edmx*檔案包含描述概念模型、 儲存模型，以及它們之間的對應的資訊。 如需詳細資訊，請參閱 < [EDMX](https://docs.microsoft.com/ef/ef6/)。
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)幫助您建置使用 Entity Data Model 的應用程式。 Power 工具可以產生概念模型、 驗證現有模型、 產生含有以概念模型中，為基礎的物件類別的原始程式碼檔案和產生原始程式檔，包含將模型產生的檢視。 如需詳細資訊，請參閱 < [Pre-Generated 對應檢視](https://msdn.microsoft.com/data/dn469601.aspx)。
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)幫助您建置使用 Entity Data Model 的應用程式。 Power 工具可以產生概念模型、 驗證現有模型、 產生含有以概念模型中，為基礎的物件類別的原始程式碼檔案和產生原始程式檔，包含將模型產生的檢視。 如需詳細資訊，請參閱 < [Pre-Generated 對應檢視](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)。
 
 ## <a name="related-topics"></a>相關主題
 
@@ -49,7 +49,7 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 |-----------|-----------------|
 |[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。|
 |[實體資料模型](/dotnet/framework/data/adonet/entity-data-model)|提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。|
-|[Entity Framework (EF) 文件）](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|提供影片、 教學課程中，並可協助您充分利用 Entity Framework 的進階文件的索引。|
+|[Entity Framework (EF) 文件）](https://docs.microsoft.com/ef/ef6/get-started)|提供影片、 教學課程中，並可協助您充分利用 Entity Framework 的進階文件的索引。|
 |[ASP.NET 5 應用程式到新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用 Entity Framework 7 以建立新的 ASP.NET 5 應用程式。|
 
 ## <a name="see-also"></a>另請參閱

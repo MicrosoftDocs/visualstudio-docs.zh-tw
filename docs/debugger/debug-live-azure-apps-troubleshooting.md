@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152005"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284103"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>針對快照集偵錯在 Visual Studio 中的疑難排解和已知問題
 
@@ -42,7 +42,7 @@ ms.locfileid: "39152005"
 
 - 按一下 **變更符號設定...** 此頁面上的連結。 在 **偵錯 > 符號**設定，將符號快取目錄。 重新啟動設定符號路徑之後，快照集偵錯。
 
-   符號或在專案中可用的.pdb 檔案必須符合您的 App Service 部署。 大部分的部署 (透過 Visual Studio、 VSTS 或 Kudu，搭配 CI/CD 部署等) 會將沿著您符號檔發行至您的 App Service。 設定符號快取目錄，可讓 Visual Studio 來使用這些符號。
+   符號或在專案中可用的.pdb 檔案必須符合您的 App Service 部署。 大部分的部署 (透過 Visual Studio，搭配 Azure 管線或 Kudu，CI/CD 部署等) 會將沿著您符號檔發行至您的 App Service。 設定符號快取目錄，可讓 Visual Studio 來使用這些符號。
 
    ![符號設定](../debugger/media/snapshot-troubleshooting-symbol-settings.png "符號設定")
 
