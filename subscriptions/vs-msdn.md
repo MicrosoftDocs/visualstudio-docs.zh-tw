@@ -9,12 +9,12 @@ description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280301"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289341"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
 
@@ -33,17 +33,17 @@ ms.locfileid: "36280301"
 ### <a name="printed-edition"></a>列印版
 1.  若要開始接收您的 MSDN Magazine 訂用帳戶，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2.  在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 MSDN Magazine 訂用帳戶磚上的 [訂閱]。 (按一下磚右下角的 [!] 以存取數位版。)
-
-    ![MSDN Magazine 權益磚](_img\vs-msdn\vs-msdn-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN Magazine 權益磚](_img\vs-msdn\vs-msdn-tile.png)
 
 
 3.  在 [MSDN Magazine] 頁面上，選擇您慣用的訂用帳戶類型。  不論您居住在哪裏，都可以選擇免費的數位版本。  美國居民可以免費使用印出的版本。  印出的版本若傳送到非美國地址，則需要運費。
-
-    ![MSDN Magazine 權益訂用帳戶](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN Magazine 權益訂用帳戶](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
 4.  提供要求的連絡資訊，然後按一下 [提交]   (所選取雜誌的版本會出現在 [Magazine Subscription] (雜誌訂用帳戶) 區段中。  如果您已選擇印出的版本，則第一個選項是 [Yes!I want to receive 1 year (12 issues) of MSDN Magazine for FREE] (是! 我要免費接收 1 年 (12 個問題) 的 MSDN Magazine))。
-
-    ![MSDN Magazine 權益設定檔](_img\vs-msdn\vs-msdn-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN Magazine 權益設定檔](_img\vs-msdn\vs-msdn-profile.png)
 
 5.  這樣就全部完成了。  根據您選擇的雜誌版本，請使用具有下個版本之最新線上版本的連結，開始接收印出的雜誌或電子郵件。  敬祝您使用愉快！
 

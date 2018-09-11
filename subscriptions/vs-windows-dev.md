@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382447"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289416"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 
@@ -29,12 +29,12 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [工具] 區段找到 [Windows 開發人員帳戶] 磚，並按一下權益磚底部的 [取得代碼] 連結。  [Copy the code to your clipboard] (將程式碼複製至剪貼簿)，然後按一下 [啟用]。
-
-    ![Windows 開發人員權益磚](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 開發人員權益磚](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 網站上，您可以開始註冊程序。  按一下 [註冊] 繼續。
-
-    ![Windows 開發人員權益註冊](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 開發人員權益註冊](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. 登入訂用帳戶。  如果您有多個帳戶，請選擇與您 Enterprise 訂用帳戶建立關聯的帳戶。
 4. 在下一頁上，選取您居住的國家或地區公司所在位置，然後按一下 [下一步]。
@@ -43,8 +43,8 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 7. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]。
 8. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]。
 9. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按 [ **下一步**]。
-
-    ![Windows 開發人員權益註冊](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 開發人員權益註冊](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [完成]。
 11. 按一下 [移至儀表板] 開始使用 Windows 開發人員帳戶！

@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶所含的 Opsgility 訓�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380306"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289495"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Opsgility 權益
 
@@ -26,17 +26,17 @@ ms.locfileid: "39380306"
 2.  在 [權益] 頁面的 [工具] 區段中找到 [Opsgility] 磚，並按一下權益磚底部的 [啟用] 連結。
 
 3.  若要使用 Opsgility 權益，請按一下權益磚底部的 [Get Code] (取得代碼) 連結。   您會收到已成功擷取優待券代碼的通知。  按一下 [啟用] 繼續。
-
-    ![Opsgility 權益磚](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 權益磚](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  會將您重新導向至 [Visual Studio Enterprise 的 Opsgility 線上訓練](https://www.opsgility.com/vse)登陸頁面   (您可能有機會開始與支援專家的聊天工作階段。  如果您不想要開始聊天，則可以將該視窗最小化)。填入要求的連絡資訊，然後按一下 [註冊]。
-
-    ![Opsgility 權益登陸頁面](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 權益登陸頁面](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  這樣就全部完成了！  您已準備好開始學習。  為了協助您開始進行，頁面左邊會提供建議的學習途徑清單。  敬祝您使用愉快！
-
-    ![Opsgility 權益首頁](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 權益首頁](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |

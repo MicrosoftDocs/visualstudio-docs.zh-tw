@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280299"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289427"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -25,40 +25,40 @@ ms.locfileid: "36280299"
 1.  若要啟用 WhiteSource Bolt 優點，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼] 連結。
-
-    ![WhiteSource 權益磚](_img\vs-whitesource\vs-whitesource-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益磚](_img\vs-whitesource\vs-whitesource-tile.png)
 
 2.  您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]。
-
-    ![WhiteSource 權益程式碼 ](_img\vs-whitesource\vs-whitesource-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益程式碼](_img\vs-whitesource\vs-whitesource-code.png)
 
 3.  在 WhiteSource 網頁上，按一下 [啟用] 按鈕，或向下捲動至頁面的 [啟用您的帳戶] 區段。
-
-    ![WhiteSource 權益啟用](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益啟用](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
 4.  在頁面的 [啟用您的帳戶] 區段中，將會引導您完成四個步驟：
 
     - 從 Microsoft Visual Studio Marketplace 中，[安裝](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 延伸模組。 如果您沒有權限可以安裝延伸模組，請參閱[安裝 VSTS 的免費延伸模組](/vsts/marketplace/install-vsts-extension?view=vsts)。
 
     如果您要使用 VSTS，請按一下綠色 [安裝] 按鈕，或 Team Foundation Server 的 [下載] 按鈕。  在此範例中，我們將使用 VSTS。
-
-    ![WhiteSource 權益安裝延伸模組](_img\vs-whitesource\vs-whitesource-download-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益安裝延伸模組](_img\vs-whitesource\vs-whitesource-download-install.png)
 
     - 接下來，選取您想要使用的 VSTS 帳戶，然後按一下 [確認]   (如果您尚未設定 VSTS，請前往[權益](https://my.visualstudio.com/benefits)頁面，然後啟用 VSTS 權益)。
-
-    ![WhiteSource 權益確認帳戶](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益確認帳戶](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
     - 您會收到延伸模組已安裝並可供使用的確認。  按一下 [開始使用]，返回 WhiteSource Bolt 頁面並繼續。
-
-    ![WhiteSource 權益安裝完成](_img\vs-whitesource\vs-whitesource-install-complete.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益安裝完成](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
 5.  開啟 Visual Studio Team Services (VSTS) 專案儀表板，並按一下 [Build & Releas (建置和發行)] 功能表，然後選擇 [WhiteSource Bolt]。
-
-    ![WhiteSource 權益新增延伸模組](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益新增延伸模組](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
 6. 從 WhiteSource Bolt 權益磚貼上啟用代碼，然後按一下 [啟用]。 每個啟用代碼都只能用來啟用一個專案。
-
-    ![WhiteSource 權益啟用碼](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 權益啟用碼](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
 7.  您的啟用現在已完成，而且您的訂用帳戶目前還有 180 天。
 

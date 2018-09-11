@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282534"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289546"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -29,16 +29,16 @@ App Center 是應用程式的任務控制機制。
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]。
-
-    ![VS App Center 圖格](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 磚](_img/vs-app-center/vs-app-center-tile.png)
 
 3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶] 以繼續。
-
-    ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. 這樣就全部完成了。  只要按一下 [新增組織] 或 [新增應用程式] 就可以開始！
-
-    ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |

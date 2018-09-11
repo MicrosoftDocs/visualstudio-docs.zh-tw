@@ -9,18 +9,18 @@ description: 了解 Visual Studio 訂用帳戶中所含的優先支援權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567151"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289494"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的優先支援
 
 「優先支援」權益可讓您存取各種支援社群論壇，並在其中搜尋現有的文章或問新問題。  若社群未在兩天內回應您的問題，Microsoft 的支援小組會提供回覆。
 
-具有所選 Visual Studio 訂用帳戶的訂閱者符合透過涵蓋各種主題之大量論壇接收優先支援的資格。
+具有所選 Visual Studio 訂用帳戶的訂閱者符合透過涵蓋各種主題之大量論壇接收優先支援的資格。  按一下下面任何連結，直接前往該論壇。  
 
 ## <a name="included-forums"></a>包含的論壇
 
@@ -74,7 +74,7 @@ ms.locfileid: "39567151"
 
    - [ClickOnce 與設定及部署專案](http://social.msdn.microsoft.com/Forums/en-US/winformssetup/threads)
 
-   - [Windows Forms 設計工具](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
+   - [Windows Form 設計工具](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
 
    - [Windows Forms 範例應用程式](http://social.msdn.microsoft.com/Forums/en-US/winformsapplications/threads)
 
@@ -231,11 +231,11 @@ ms.locfileid: "39567151"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含       |  是          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 包含                                                            |是 |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 包含                                                            |是 |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 包含                                                            |是 |
-| Visual Studio Dev Essentials | NA  | 包含                                                            |是 |
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含       |  [是]          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 包含                                                            |[是] |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 包含                                                            |[是] |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 包含                                                            |[是] |
+| Visual Studio Dev Essentials | NA  | 包含                                                            |[是] |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Visual Studio Industry Partner (VSIP)、Imagine。排除：Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Partner (MVP)、Region Director (RD)。*

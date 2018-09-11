@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139084"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289276"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 
@@ -150,7 +150,6 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio 2017](install-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
-* [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
+* [更新 Visual Studio for Mac](/visualstudio/mac/update)

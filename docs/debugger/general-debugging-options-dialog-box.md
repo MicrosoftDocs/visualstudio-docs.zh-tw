@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626110"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280633"
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 **工具 > 選項 > 偵錯 > 一般**頁面可讓您在本文中設定所述的選項。
@@ -72,7 +72,7 @@ ms.locfileid: "42626110"
   
 - **在變數視窗 （C# 和僅限 JavaScript） 中的物件上呼叫字串轉換函式**評估變數視窗中的物件時，會執行隱含的字串轉換呼叫。 結果會顯示為字串，而不是類型名稱。 只適用於偵錯 C# 程式碼時。 DebuggerDisplay 屬性可能會覆寫此設定 (請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md))。  
   
-**啟用來源伺服器支援**會告訴 Visual Studio debugger 從實作 SrcSrv 的來源伺服器取得來源檔案 (`srcsrv.dll`) 通訊協定。 Team Foundation Server 和 Windows 偵錯工具這兩個來源伺服器會實作通訊協定。 如需 SrcSrv 設定的詳細資訊，請參閱[SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx)文件。 此外，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+**啟用來源伺服器支援**會告訴 Visual Studio debugger 從實作 SrcSrv 的來源伺服器取得來源檔案 (`srcsrv.dll`) 通訊協定。 Team Foundation Server 和 Windows 偵錯工具這兩個來源伺服器會實作通訊協定。 如需 SrcSrv 設定的詳細資訊，請參閱[SrcSrv](/windows-hardware/drivers/debugger/srcsrv)文件。 此外，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
 > [!IMPORTANT]
 > 因為閱讀 *.pdb*檔案可以執行任意程式碼檔案中，請確定您信任的伺服器。  

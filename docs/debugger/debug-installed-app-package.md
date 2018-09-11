@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059240"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279550"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式封裝在 Visual Studio (UWP)
 
@@ -37,7 +37,7 @@ ms.locfileid: "37059240"
 * HoloLens
 * IoT
 
-如需這些功能的詳細資訊，請參閱部落格文章上的更新[偵錯已安裝的應用程式套件](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)並在 post[建置通用 Windows App (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
+如需這些功能的詳細資訊，請參閱部落格文章上的更新[偵錯已安裝的應用程式套件](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)並在 post[建置通用 Windows App (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
 ## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>已安裝的應用程式套件或在本機電腦或裝置上執行的應用程式進行偵錯
 

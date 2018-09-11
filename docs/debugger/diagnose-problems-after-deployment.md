@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058005"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280200"
 ---
 # <a name="diagnose-problems-after-deployment"></a>於部署後診斷問題
 若要在部署後使用 IntelliTrace 診斷 ASP.NET Web App 中的問題，請包含組建資訊和版本，讓 Visual Studio 自動找出偵錯 IntelliTrace 記錄檔所需的正確原始程式檔和符號檔案。  
@@ -41,11 +41,11 @@ ms.locfileid: "37058005"
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- 設定組建定義，將原始檔、組建和符號的位置加入至建置資訊清單 (BuildInfo.config 檔案)。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
+ 設定您組建管線，以將您的來源、 組建和符號位置加入至建置資訊清單 （BuildInfo.config 檔案）。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
   
-1.  如果您已經有組建定義，使用 ASP.NET Core (.NET Framework) 範本，您可以[編輯組建定義或建立新的組建定義。](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  如果您已經使用 ASP.NET Core (.NET Framework) 範本建置管線，您可以[編輯您組建管線或建立新的組建管線。](/azure/devops/pipelines/get-started-designer)
   
-     ![檢視組建定義 TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![檢視組建在 TFS 2017 中的管線](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  如果您建立新的範本，請選擇 [ASP.NET Core (.NET Framework)] 範本。 
   
@@ -55,9 +55,9 @@ ms.locfileid: "37058005"
   
      如果您使用自訂範本，請確定該範本含有索引來源的活動。 稍後您將加入 MSBuild 引數以指定儲存符號檔案的位置。
   
-     ![設定組建定義 TFS 2017 中的符號路徑](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![設定組建管線 TFS 2017 中的符號路徑](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     如需有關符號的詳細資訊，請參閱[發行符號資料](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     如需有關符號的詳細資訊，請參閱[發行符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)。  
   
 4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：  
   
@@ -70,11 +70,11 @@ ms.locfileid: "37058005"
     移至[步驟 2： 您的應用程式發行](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- 設定組建定義，將原始檔、組建和符號的位置加入至建置資訊清單 (BuildInfo.config 檔案)。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。  
+ 設定您組建管線，以將您的來源、 組建和符號位置加入至建置資訊清單 （BuildInfo.config 檔案）。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。  
 
-1.  [編輯組建定義或建立新的組建定義。](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [編輯您組建管線或建立新的組建管線。](/azure/devops/pipelines/get-started-designer)  
 
-     ![檢視組建定義 TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![檢視組建的 TFS 2013 中的管線](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  選擇預設範本 (TfvcTemplate.12.xaml) 或您自己的自訂範本。  
 
@@ -84,9 +84,9 @@ ms.locfileid: "37058005"
 
      如果您使用自訂範本，請確定該範本含有索引來源的活動。 稍後您將加入 MSBuild 引數以指定儲存符號檔案的位置。  
 
-     ![設定組建定義 TFS 2013 中的符號路徑](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![設定組建管線 TFS 2013 中的符號路徑](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     如需有關符號的詳細資訊，請參閱[發行符號資料](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     如需有關符號的詳細資訊，請參閱[發行符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)。  
 
 4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：  
 
@@ -119,11 +119,11 @@ ms.locfileid: "37058005"
 
 1.  在 Team Foundation Build Server 上安裝 Visual Studio 2013 (任一版)。  
 
-2.  在您的組建定義中，指定儲存符號的位置，以便自動建立來源的索引。  
+2.  在您組建管線中，指定儲存符號，以便您的來源會自動編製索引的位置。  
 
      如果您使用自訂範本，請確定該範本含有編製來源索引的活動。  
 
-3.  將這些 MSBuild 引數加入組建定義：  
+3.  將這些 MSBuild 引數新增至您組建管線中：  
 
     -   **/p:VisualStudioVersion = 12.0**  
 
@@ -176,7 +176,7 @@ ms.locfileid: "37058005"
  **/p: buildsymbolstorepath =**\<*符號的路徑*>  
 
 ##  <a name="DeployRelease"></a> 步驟 2： 發行您的應用程式  
- 如果使用在建置流程中建立的 [Web.Deploy 套件](http://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
+ 如果您使用[Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx)建置流程，來部署您的應用程式中建立、 建置資訊清單會自動重新命名，從 「*ProjectName*。BuildInfo.config"為"BuildInfo.config"並將其放在相同的資料夾中您 web 伺服器上的應用程式的 Web.config 檔案。  
 
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
 
@@ -234,7 +234,7 @@ ms.locfileid: "37058005"
 
      ![移至應用程式程式碼在效能事件](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。 [什麼是所有其他事件和 IntelliTrace 記錄檔中的資訊？](../debugger/using-saved-intellitrace-data.md)[我可以從這裡來做什麼？](#WhatElse)[效能事件的詳細資訊？](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。 [什麼是所有其他事件和 IntelliTrace 記錄檔中的資訊？](../debugger/using-saved-intellitrace-data.md)[我可以從這裡來做什麼？](#WhatElse)[效能事件的詳細資訊？](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>診斷例外狀況  
 
@@ -336,7 +336,7 @@ ms.locfileid: "37058005"
 
      您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：  
 
-    -   **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱[使用組建編號提供有意義的名稱給已完成的組建](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+    -   **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱[使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options)。  
 
     -   **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。  
 
@@ -396,9 +396,9 @@ ms.locfileid: "37058005"
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> 問： 什麼是工作區？  
- **答：** 您[工作區會儲存一份來源](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，您可以開發及個別測試之前您簽入您的工作。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
+ **答：** 您[工作區會儲存一份來源](/azure/devops/repos/tfvc/create-work-workspaces)，您可以開發及個別測試之前您簽入您的工作。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
 
 ####  <a name="UntrustedSymbols"></a> 問： 為什麼取得此訊息不受信任的符號相關？  
- ![使用不受信任的符號路徑進行偵錯嗎？] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![使用不受信任的符號路徑進行偵錯嗎？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **答：** 時，會出現此訊息在建置資訊清單檔案中的符號路徑 (\<*ProjectName*>。信任的符號路徑清單中，不包含 BuildInfo.config)。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。
