@@ -1,15 +1,16 @@
 ---
 title: 自訂 IDE
 description: Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本主題探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 9c1376f54c03f7705caea86ce4843acf3ad1666e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 9f33892dc4caef726763c6ab7513ac1e44e7e47e
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223962"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
@@ -25,7 +26,7 @@ Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠�
 
 ## <a name="localization"></a>當地語系化
 
-Visual Studio for Mac 以下列 13 種語言進行當地語系化，使它可供更多開發人員存取：
+Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供更多開發人員存取：
 
 * 簡體中文 - 中國
 * 繁體中文 - 台灣
@@ -36,6 +37,7 @@ Visual Studio for Mac 以下列 13 種語言進行當地語系化，使它可供
 * 義大利文
 * 日文
 * 韓文
+* 波蘭文
 * 葡萄牙文 - 巴西
 * 俄文
 * 西班牙文

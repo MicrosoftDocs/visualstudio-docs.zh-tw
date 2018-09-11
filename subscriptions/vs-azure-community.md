@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280373"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289290"
 ---
 # <a name="azure-community"></a>Azure 社群
 
@@ -37,16 +37,16 @@ ms.locfileid: "36280373"
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助] 連結。
-
-   ![[Azure 社群] 圖格](_img/vs-azure-community/vs-azure-community-tile.png)
+    > [!div class="mx-imgBorder"]
+    >![Azure 社群磚](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. 您將會看到可用論壇清單。  只要按一下您要的論壇。
-
-   ![Azure 社群論壇](_img/vs-azure-community/vs-azure-community-forums.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 社群論壇](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4.  在論壇內，您可以檢視主題與回應、搜尋您問題的解答，以及張貼新問題。
-
-   ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>資格
 Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：

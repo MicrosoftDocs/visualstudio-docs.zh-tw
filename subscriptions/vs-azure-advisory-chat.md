@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280799"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289464"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
@@ -25,16 +25,16 @@ ms.locfileid: "36280799"
 使用「Azure 諮詢對談」非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 找到 [支援] 區段中的 [Azure 諮詢對談] 圖格，然後按一下 [立即對話]。
-
-    ![[Azure 諮詢對談] 圖格](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 諮詢對談磚](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. 您將會看到一個通知，說明除了帳戶、計費與訂用帳戶問題之外，服務目前只提供英文。  按一下 [ **繼續**]。
-
-    ![[Azure 諮詢對談] 免責聲明](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 諮詢對談免責聲明](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. 這樣就全部完成了。  對談視窗隨即開啟，而且您將會看到可讓您知道您在佇列中之位置的狀態。  下一個有空的專家將會回應您的對談。
-
-    ![Azure 諮詢對談](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 諮詢對談](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>資格
 

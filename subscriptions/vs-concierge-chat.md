@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281871"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289364"
 ---
 # <a name="concierge-chat"></a>指引對談
 
@@ -27,16 +27,16 @@ ms.locfileid: "36281871"
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]。
-
-    ![[指引對談] 圖格](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![[指引對談] 磚](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. 按一下 [ **繼續**]。
 
 4. 對談視窗隨即開啟，而且您將會看到顯示您在佇列中之位置的服務台。
 
 5. 當有專員有空時，對談就會開始。
-
-    ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > [!div class="mx-imgBorder"]
+    > ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
