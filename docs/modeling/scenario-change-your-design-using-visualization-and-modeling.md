@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280220"
+ms.locfileid: "44321160"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -244,7 +244,7 @@ Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用
 
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Azure 的管線](/azure/devops/pipelines/index)
+- [Azure 的管線](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>更新的系統使用視覺化和模型化
 

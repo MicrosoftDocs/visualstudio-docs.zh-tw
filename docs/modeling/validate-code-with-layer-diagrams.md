@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280684"
+ms.locfileid: "44321121"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -218,7 +218,7 @@ ms.locfileid: "44280684"
 
  如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的詳細資訊，請參閱：
 
--   [Azure 的管線](/azure/devops/pipelines/index)
+-   [Azure 的管線](/azure/devops/pipelines/index?view=vsts)
 
 -   [使用預設範本建置程序](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

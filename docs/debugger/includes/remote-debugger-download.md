@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 491b01d87e4f1a9980143e9ffcc501b3cda7c922
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a9867acf2a0877322b85d25c3af781ccfdd3f58c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39189468"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44343215"
 ---
 1.  裝置或伺服器機器，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的遠端工具版本。
 
@@ -21,8 +21,8 @@ ms.locfileid: "39189468"
     |-|-|-|
     |Visual Studio 2017 （最新版）|[遠端工具](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|最新版的遠端工具適用於所有的 Visual Studio 2017 版本。 一律下載符合您裝置的作業系統 (x，x86、 x64、 或 ARM64） 的版本。 在 Windows 伺服器上，請參閱[解除封鎖檔案下載](../../debugger/remote-debugging-unblock-file-download.md)下載的遠端工具的說明。|
     |Visual Studio 2015|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 遠端工具都是從 My.VisualStudio.com。 如果出現提示，請加入免費[Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)程式或使用您的 Visual Studio 訂用帳戶識別碼。 登入。 在 Windows 伺服器上，請參閱[解除封鎖檔案下載](../../debugger/remote-debugging-unblock-file-download.md)下載的遠端工具的說明。|
-    |Visual Studio 2013|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2013 文件中的頁面|
-    |Visual Studio 2012|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2012 文件中的頁面|
+    |Visual Studio 2013|[遠端工具](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#Installing_the_Remote_Tools)|下載 Visual Studio 2013 文件中的頁面|
+    |Visual Studio 2012|[遠端工具](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2012 文件中的頁面|
 
 2.  在下載頁面上，選擇符合您作業系統 （x86、 x64、 ARM、 或 ARM64） 的工具版本，並下載遠端工具。
 
