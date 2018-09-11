@@ -1,5 +1,5 @@
 ---
-title: 在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft 文件
+title: 在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -18,26 +18,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b5673a2ab191f71b9aec14f08c5adfc65883ff24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281438"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
   
- Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立應用程式。  
+ Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 支援這些功能的 UWP 應用程式以及使用 Visual Studio Tools for Apache Cordova 建立的應用程式。  
   
  使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
   
- 如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗和設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)和[偵錯 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InspectingDOM"></a> 檢查 Llive DOM  
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
   
 > [!TIP]
->  若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
+>  若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
  您可將 DOM 總管用於：  
   
@@ -47,7 +47,7 @@ ms.locfileid: "31479116"
   
 -   檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。  
   
- 偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 UWP 應用程式也支援**事件**和**變更**索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
+ 偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 UWP 應用程式也支援**事件**並**變更**索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
 >  如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
@@ -59,13 +59,13 @@ ms.locfileid: "31479116"
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>藉由檢查 Live DOM 偵錯  
   
-1.  Visual Studio 中建立新的方案，藉由選擇**檔案** > **新專案**。  
+1.  在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
   
-2.  選擇**JavaScript** > **Windows 通用**，然後選擇  **WinJS 應用程式**。  
+2.  選擇**JavaScript** > **Windows Universal**，然後選擇**WinJS 應用程式**。  
   
 3.  輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
   
-4.  在 index.html 的 BODY 項目，加入下列程式碼：  
+4.  在 index.html 的本文項目，新增此程式碼：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -146,25 +146,25 @@ ms.locfileid: "31479116"
   
      ![顯示預期的結果的 FlipView 應用程式](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  選擇**本機**旁的下拉式清單**開始偵錯**按鈕**偵錯**工具列：  
+7.  選擇**本機電腦**下拉式清單中下一步**開始偵錯**按鈕**偵錯**工具列：  
   
      ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  選擇 [JavaScript] **Emulator 8.1 WVGA 4 英吋 512MB** > **模擬器**，或按 F5，以偵錯模式執行您的應用程式。  
   
-     執行應用程式，不過您會看到主要是空白畫面，因為樣式有幾個 bug 中。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
+     執行應用程式，不過您會看到主要是空白畫面，因為樣式有幾個 bug。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
   
 10. 切換至 Visual Studio 並選擇 [ **DOM 總管** ] 索引標籤。  
   
     > [!TIP]
     >  您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
   
-11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 （向右鍵可讓您檢視項目的子系）。  
+11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 （向右鍵可讓您檢視的項目子系。）  
   
      ![DOM 總管](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  您也可以選取在 [JavaScript 主控台] 視窗的左下角的 DIV 項目，輸入`select(fView)`在 >> 輸入提示字元，然後按 enter。  
+    >  您也可以選取 [JavaScript 主控台] 視窗左上角的 DIV 項目，輸入`select(fView)`在 >> 輸入提示字元，並按 enter。  
   
      在 [DOM 總管] 視窗右邊索引標籤上的值會自動更新，以反映 DOM 總管中的目前項目。  
   
@@ -172,7 +172,7 @@ ms.locfileid: "31479116"
   
      這個索引標籤顯示所選 DOM 項目之每個屬性的計算值 (或終值)。  
   
-13. 開啟高度 CSS 規則。 請注意，有內嵌樣式設定為 100px，這與設定為 100%的高度值不一致`#fView`CSS 選取器。 `#fView` 選取器的 Strikethrough 文字指出內嵌樣式的優先順序高於此樣式。  
+13. 開啟高度 CSS 規則。 請注意，有內嵌樣式設定為 100px，這與為 100%的高度值不一致`#fView`CSS 選取器。 `#fView` 選取器的 Strikethrough 文字指出內嵌樣式的優先順序高於此樣式。  
   
      下圖顯示 [計算]  索引標籤。  
   
@@ -180,16 +180,16 @@ ms.locfileid: "31479116"
   
 14. 在主要 [DOM 總管] 視窗中，按兩下 `fView` DIV 元素的高度和寬度內嵌樣式。 您現在可以在這裡編輯值。 在這個案例中，我們要完全移除它們。  
   
-15. 在主視窗中，按兩下`width: 100px;height: 100px;`，按**刪除**索引鍵，然後按下**Enter**。 您按下 Enter 之後，新值會立即反映在應用程式時，即使尚未停止偵錯工作階段。  
+15. 在主視窗中，按兩下`width: 100px;height: 100px;`，按下**刪除**鍵，，然後按**Enter**。 如果要在按下 Enter 之後，會立即反映新的值在應用程式，即使尚未停止偵錯工作階段。  
   
     > [!IMPORTANT]
-    >  您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)和[偵錯使用 DOM 總管 的版面配置](../debugger/debug-layout-using-dom-explorer.md)。  
+    >  您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱 <<c0> [ 使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)並[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)。  
   
-16. 藉由選取它，或是使用 Alt + Tab，切換至應用程式。  
+16. 選取它，或使用 Alt + Tab，切換至應用程式。  
   
      現在 `FlipView` 控制項看起來比 [模擬器] 或 [Phone 模擬器] 的螢幕還大。 這不是預期的結果。 若要調查，請切換回 Visual Studio。  
   
-17. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍然顯示值為 100%，如預期的 CSS，但計算的值卻等於應用程式的螢幕高度 (例如 800px 667.67 p x 或其他值)，這是不是我們想要為此應用程式。 若要調查，接下來的步驟我們移除高度和寬度`fView`DIV 項目。  
+17. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 項目仍然顯示值為 100%，如預期般的 css，但計算的值會等於應用程式的螢幕高度 (例如 800px 667.67 p x 或其他值)，這是不是我們想要為此應用程式。 若要調查，在下一個步驟中我們會移除的高度和寬度`fView`DIV 項目。  
   
 18. 在 [樣式]  索引標籤中，取消核取 `#fView` CSS 選取器的高度和寬度屬性。  
   
@@ -199,13 +199,13 @@ ms.locfileid: "31479116"
   
      狀況隨即有所改善。 不過，仍有另外一個問題待修正，邊界太大。  
   
-20. 若要調查，切換至 Visual Studio 並選擇**配置**索引標籤，查看項目的方塊模型。  
+20. 若要調查，切換至 Visual Studio，然後選擇**版面配置**索引標籤，查看項目的方塊模型。  
   
-     在**配置**索引標籤上，您會看到下列訊息：  
+     在 **版面配置**索引標籤上，您會看到下列訊息：  
   
-    -   255px (Offset) 和 255px (Margin) 或類似的值，根據裝置解析度而定。 
+    -   255px (Offset) 和 255px (Margin) 或類似的值，視您的裝置解析度而定。 
   
-     下圖顯示如何**配置**標籤看起來，如果您使用模擬器與 100px 位移和邊界)。  
+     下圖顯示如何**版面配置** 索引標籤看起來，如果您使用模擬器搭配 100px 位移和邊界)。  
   
      ![DOM 總管配置 索引標籤](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -225,7 +225,7 @@ ms.locfileid: "31479116"
   
 2.  開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
   
-3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣：![重新整理 Windows 應用程式按鈕](../debugger/media/js_refresh.png "JS_Refresh")。  
+3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣︰![重新整理 Windows 應用程式 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。  
   
      應用程式頁面會重新載入，模擬器或 Phone 模擬器會回到前景。  
   
@@ -242,7 +242,7 @@ ms.locfileid: "31479116"
   
  當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
   
- ![在 [DOM 總管] 中選取項目 按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+ ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
  按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
   
@@ -262,4 +262,4 @@ ms.locfileid: "31479116"
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
  [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [產品支援和協助工具](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
