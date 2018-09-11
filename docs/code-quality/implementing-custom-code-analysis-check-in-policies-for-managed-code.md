@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281451"
+ms.locfileid: "44321095"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -60,7 +60,7 @@ ms.locfileid: "44281451"
 
 1. 在 **原始檔控制總管**，以滑鼠右鍵按一下新的資料夾，然後按一下**新增至資料夾的項目**。
 
-     如需詳細資訊，請參閱 < [Git 和 Azure 儲存機制](/azure/devops/repos/git/overview)。
+     如需詳細資訊，請參閱 < [Git 和 Azure 儲存機制](/azure/devops/repos/git/overview?view=vsts)。
 
 2. 按一下此規則設定您所建立的檔案，然後按一下**完成**。
 

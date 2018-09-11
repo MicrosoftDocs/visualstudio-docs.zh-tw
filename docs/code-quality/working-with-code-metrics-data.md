@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284129"
+ms.locfileid: "44321251"
 ---
 # <a name="using-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
@@ -102,9 +102,9 @@ ms.locfileid: "44284129"
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>建立工作項目，根據程式碼度量結果
 
-您可以建立[Azure 面板](/azure/devops/boards/index)為基礎的工作項目導致**程式碼度量結果**視窗。 建立工作項目時，Visual Studio 會自動輸入其中一個職銜**標題**下方的欄位和程式碼度量資料**歷程記錄** 索引標籤。
+您可以建立[Azure 面板](/azure/devops/boards/index?view=vsts)為基礎的工作項目導致**程式碼度量結果**視窗。 建立工作項目時，Visual Studio 會自動輸入其中一個職銜**標題**下方的欄位和程式碼度量資料**歷程記錄** 索引標籤。
 
-如需有關 Azure 版工作項目，請參閱 <<c0> [ 的工作項目](/azure/devops/boards/work-items/index)。
+如需有關 Azure 版工作項目，請參閱 <<c0> [ 的工作項目](/azure/devops/boards/work-items/index?view=vsts)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279086"
+ms.locfileid: "44320809"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Managed 程式碼的程式碼分析概觀
 
@@ -75,7 +75,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>Team build 整合
 
-您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index)。
+您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>另請參閱
 
