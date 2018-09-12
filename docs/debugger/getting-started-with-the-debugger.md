@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623762"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384223"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 進行偵錯
 
@@ -31,7 +31,7 @@ ms.locfileid: "42623762"
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
 
-雖然示範應用程式是 C# 和 c + + 的功能都適用於 Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面是在 C#。 若要 C# 和 c + + 範例程式碼之間切換，請使用頁面的右上角的語言篩選條件。
+雖然示範應用程式是 C# 和 c + + 的功能都適用於 Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面是在 C#。 若要切換的 C# 和 c + + 範例程式碼，在本文中，使用右上方的此頁面上的語言篩選條件。
 
 在本教學課程中，您將進行下列作業：
 
@@ -286,9 +286,9 @@ ms.locfileid: "42623762"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點並開始偵錯工具
 
-1. 在 `foreach`迴圈`Main`函式 (`for` c + + 中的迴圈`main`函式)，程式碼的第一行的左邊的界，即可設定中斷點。
+1. 在 `foreach`迴圈`Main`函式 (`for` c + + 中的迴圈`main`函式)，下列程式碼行的左邊的界，即可設定中斷點：
 
-    ![設定中斷點](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (或者， `shape->Draw()` c + +)
 
     紅色圓圈會出現您用來設定中斷點。
 
@@ -296,7 +296,7 @@ ms.locfileid: "42623762"
 
 6. 按下**F5**或**開始偵錯**按鈕，應用程式會啟動並偵錯工具執行的程式碼行，您在其中設定中斷點。
 
-    ![叫用中斷點](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![設定和叫用中斷點](../debugger/media/get-started-set-breakpoint.gif)
 
     黃色箭號表示陳述式的偵錯工具暫停時，這也會在相同的點 （此陳述式尚未執行） 的暫停應用程式執行。
 
@@ -308,9 +308,7 @@ ms.locfileid: "42623762"
 
 大部分，我們會使用的鍵盤快速鍵在這裡，因為它是一個好的方法，以取得快速在偵錯工具 （對等命令例如功能表命令會顯示在括號內） 中執行您的應用程式。
 
-1. 按下**F11** (或選擇**偵錯 > 逐步**) （數次以 C# 中) 的一次直到您暫停在`shape.Draw`方法呼叫中`Main`方法 (`shape->Draw` c + + 中)。
-
-1. 按下**F11**同樣地，前進至程式碼的`Rectangle`類別。
+1. 在暫停期間`shape.Draw`方法呼叫中`Main`方法 (`shape->Draw` c + + 中)，按下**F11** (或選擇**偵錯 > 逐步執行**) 前進至程式碼的`Rectangle`類別。
 
      ![使用 F11 來逐步執行程式碼](../debugger/media/get-started-f11.png "F11 逐步執行")
 
@@ -364,19 +362,19 @@ ms.locfileid: "42623762"
 
 當您按下**重新啟動**，節省時間與停止應用程式，並重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點暫停。
 
-偵錯工具停在您設定的中斷點，在`foreach`迴圈 (`for` c + + 中的迴圈)。
+偵錯工具停在您設定的中斷點，在`shape.Draw()`方法 (`shape->Draw()` c + + 中)。
 
 ## <a name="inspect-variables-with-data-tips"></a>檢查資料提示中使用的變數
 
 功能可讓您檢查變數是其中一個最實用的功能，在偵錯工具，而且有不同的方式來進行。 通常，當您嘗試偵錯問題時，會嘗試找出是否變數會儲存您希望他們能夠在特定時間的值。
 
-1. 在暫停期間`foreach`迴圈 (`for`迴圈在 c + +)，按下**F11**之後。
-
-1. 將滑鼠停留`shapes`物件，而且您會看到預設屬性值，`Count`屬性。
+1. 在暫停期間`shape.Draw()`方法 (`shape->Draw()` c + + 中)，將滑鼠停留`shapes`物件，而且您會看到預設屬性值，`Count`屬性。
 
 1. 依序展開`shapes`物件，以檢視所有內容，例如陣列的第一個索引`[0]`，其具有值為`Rectangle`(C#) 或記憶體位址 （c + +）。
 
-     ![檢視資料提示](../debugger/media/get-started-data-tip.png "檢視資料提示方塊")
+     ![檢視資料提示](../debugger/media/get-started-data-tip.gif "檢視資料提示方塊")
+
+    您可以進一步展開物件，若要檢視其屬性，例如`Height`矩形的屬性。
 
     通常，偵錯時，您希望能很快地檢查屬性值的物件，而且資料提示很適合用來執行它。
 
