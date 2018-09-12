@@ -1,10 +1,9 @@
 ---
-title: 使用移至命令來尋找程式碼
-ms.date: 09/26/2017
+title: 移至檔案、移至符號、移至行
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447189"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627181"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 
@@ -56,12 +55,13 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：
 
 前置詞 | 圖示 | 快速鍵 | 描述
-:----: | ---- | -------- | ---
-\#     | ![符號圖示](media/gotoall_symbolicon.png) | **Ctrl**+**1**、**Ctrl**+**S** | 移至指定的符號
-f      | ![檔案圖示](media/gotoall_fileicon.png)     | **Ctrl**+**1**、**Ctrl**+**F** | 移至指定的檔案
-m      | ![成員圖示](media/gotoall_membericon.png) | **Ctrl**+**1**、**Ctrl**+**M** | 移至指定的成員
-t      | ![類型圖示](media/gotoall_typeicon.png)     | **Ctrl**+**1**、**Ctrl**+**T** | 移至指定的類型
-:      | ![行圖示](media/gotoall_lineicon.png)     | **Ctrl**+**G**         | 移至指定的行號
+:-: | - | - | -
+:| ![行圖示](media/gotoall-line-icon.png) | **Ctrl**+**G**         | 移至指定的行號
+f| ![檔案圖示](media/gotoall-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**F** | 移至指定的檔案
+r| ![最近使用的檔案圖示](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**R** | 移至指定的最近瀏覽檔案
+t| ![類型圖示](media/gotoall-types-icon.png) | **Ctrl**+**1**、**Ctrl**+**T** | 移至指定的類型
+m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl**+**1**、**Ctrl**+**M** | 移至指定的成員
+\#| ![符號圖示](media/gotoall-symbols-icon.png) | **Ctrl**+**1**、**Ctrl**+**S** | 移至指定的符號
 
 ### <a name="filter-to-a-specific-location"></a>篩選至特定位置
 

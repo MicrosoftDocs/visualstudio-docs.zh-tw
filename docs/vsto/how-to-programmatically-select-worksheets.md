@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式選取工作表 |Microsoft 文件
+title: 如何： 以程式設計方式選取工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,33 +16,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5d0862f83d77365e07df1e61b7063a9e5ecd4f37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671758"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>如何：以程式設計方式選取工作表
+# <a name="how-to-programmatically-select-worksheets"></a>如何： 以程式設計方式選取工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法會選取指定的物件，將使用者選取的項目移到新物件。 如果您要將焦點置於這個物件而不變更使用者的選取範圍，請使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 如果要選取 VSTO 增益集中的現有工作表，或者該工作表是在執行階段於文件層級自訂中所建立，則您必須使用 Excel 活頁簿的 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取該工作表，否則就要直接存取 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
+ 如果您想要選取現有的工作表中的 VSTO 增益集，或如果工作表建立在執行階段在文件層級自訂中，您必須存取透過 Excel<xref:Microsoft.Office.Interop.Excel.Sheets>集合之 Excel 活頁簿中; 否則您可以存取<xref:Microsoft.Office.Tools.Excel.Worksheet>直接主項目。  
   
-## <a name="using-the-worksheet-host-item"></a>使用工作表主項目  
- 文件層級自訂時，加入下列程式碼加入**Sheet1.vb**或**Sheet1.cs**。  
+## <a name="use-the-worksheet-host-item"></a>使用工作表主項目  
+ 文件層級自訂中，新增下列程式碼*Sheet1.vb*或是*Sheet1.cs*。  
   
-#### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>使用主項目選取活頁簿中的第一個工作表  
+### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>使用主項目選取活頁簿中的第一個工作表  
   
 1.  呼叫 <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 的 `Sheet1` 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合  
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合  
  請使用 Excel <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取工作表。  
   
-#### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的 Sheets 集合選取活頁簿中的第一份工作表  
+### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的 Sheets 集合選取活頁簿中的第一份工作表  
   
 1.  請呼叫 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> 方法，選取現用活頁簿中的第一份工作表。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [如何： 以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)   
- [如何： 以程式設計方式從活頁簿刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
  [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
  [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   

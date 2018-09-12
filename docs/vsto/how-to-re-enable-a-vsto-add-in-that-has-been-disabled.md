@@ -1,5 +1,5 @@
 ---
-title: 如何： 重新啟用已停用的 VSTO 增益集 |Microsoft 文件
+title: 如何： 重新啟用 VSTO 增益集已停用
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,25 +19,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25344d23e0c9f1d6d237d008b0f6b18372490d04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671493"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新啟用已停用的 VSTO 增益集
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何： 重新啟用 VSTO 增益集已停用
   Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 如果應用程式在您嘗試進行偵錯時並未載入 VSTO 增益集，表示應用程式可能已經強制停用或非強制停用 VSTO 增益集。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
 ## <a name="hard-disabled-vsto-add-ins"></a>強制停用 VSTO 增益集  
- 當 VSTO 增益集導致應用程式意外關閉時，可能發生強制停用。 在開發電腦上，如果您在 VSTO 增益集中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時停止偵錯工具，也可能發生這種情形。  
+ 當 VSTO 增益集導致應用程式意外關閉時，可以發生強制停用。 在開發電腦上，如果您在 VSTO 增益集中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時停止偵錯工具，也可能發生這種情形。  
   
-#### <a name="to-re-enable-a-vsto-add-in"></a>若要重新啟用 VSTO 增益集  
+### <a name="to-re-enable-a-vsto-add-in"></a>若要重新啟用 VSTO 增益集  
   
 1.  在應用程式中，按一下 [檔案]  索引標籤。  
   
-2.  按一下*ApplicationName* **選項** 按鈕。  
+2.  按一下 [ *ApplicationName* **選項**] 按鈕。  
   
 3.  在分類窗格中，按一下 [增益集] 。  
   
@@ -51,17 +52,17 @@ ms.lasthandoff: 04/16/2018
   
 7.  按一下 [ **關閉**]。  
   
-## <a name="soft-disabled-vsto-add-ins"></a>非強制停用 VSTO 增益集  
+## <a name="soft-disabled-vsto-add-ins"></a>強制停用 VSTO 增益集  
  當 VSTO 增益集產生的錯誤不會導致應用程式意外關閉時，可能會發生非強制停用。 例如，如果在 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時擲回未處理的例外狀況，應用程式可能會非強制停用 VSTO 增益集。  
   
 > [!NOTE]  
 >  當您重新啟用非強制停用的 VSTO 增益集時，應用程式會立即嘗試載入 VSTO 增益集。 如果未修正當初造成應用程式非強制停用 VSTO 增益集的問題，則應用程式會再次非強制停用 VSTO 增益集。  
   
-#### <a name="to-re-enable-an-vsto-add-in"></a>若要重新啟用 VSTO 增益集  
+### <a name="to-re-enable-a-vsto-add-in"></a>若要重新啟用 VSTO 增益集  
   
 1.  在應用程式中，按一下 [檔案]  索引標籤。  
   
-2.  按一下*ApplicationName* **選項** 按鈕。  
+2.  按一下 [ *ApplicationName* **選項**] 按鈕。  
   
 3.  在分類窗格中，按一下 [增益集] 。  
   
@@ -78,6 +79,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [偵錯 Office 專案](../vsto/debugging-office-projects.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
+ [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
   
   

@@ -2,7 +2,7 @@
 title: 分析 CPU 使用量資料 (受控碼)
 description: 在 C++ 和 Visual Basic 中使用 CPU 使用量診斷工具測量應用程式效能
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206819"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626651"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
 
@@ -26,11 +26,15 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量] 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
 
+Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>建立專案
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 2. 在 [Visual C#] 或 [Visual Basic] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+
+    如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
 3. 鍵入 **MyProfilerApp** 這類名稱，然後按一下 [確定]。
 

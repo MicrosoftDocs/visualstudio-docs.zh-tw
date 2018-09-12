@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b978ef47db6b8803b7730aef14173c3eb19b16e8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670886"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `formRegions` 命名空間的 `vstov4` 項目包含與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。  
+  `formRegions`項目`vstov4`命名空間包含與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,12 +46,12 @@ ms.lasthandoff: 05/22/2018
  `formRegions` 項目具有下列項目。  
   
 ### <a name="formregion"></a>formRegion  
- 包含表單區域的 Outlook VSTO 增益集需要。 `formRegion`定義元素[ &#60;formRegion&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)。  
+ 包含表單區域的 Outlook VSTO 增益集需要。 `formRegion`項目定義在[ &#60;formRegion&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)。  
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `formRegions` 所部署之應用程式層級 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明使用 `formRegions` 所部署之應用程式層級 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   

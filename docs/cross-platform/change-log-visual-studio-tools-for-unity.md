@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381051"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42627104"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
 
+## <a name="3804"></a>3.8.0.4
+ 發行於 2018 年 8 月 14 日
+ 
+### <a name="new-features"></a>新功能
+
+-   **評估：**
+
+    -   新增指標值的支援。
+    
+    -   新增泛型方法的支援。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   有多個已變更專案的智慧重新載入。
+
+## <a name="3803"></a>3.8.0.3
+ 2018 年 7 月 24 日發行
+ 
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **Project Generation:**
+
+    -   針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
+
+## <a name="3802"></a>3.8.0.2
+ 發行於 2018 年 7 月 7 日
+ 
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **Project Generation:**
+
+    -   Unity 效能 Bug 的暫時性因應措施：在產生專案時，會快取 MonoIslands。
+    
+## <a name="3801"></a>3.8.0.1
+ 2018 年 7 月 26 日發行
+ 
+### <a name="new-features"></a>新功能
+
+-   **偵錯：**
+
+    -   新增 UserLog 和 UserBreak 命令的支援。
+    
+    -   新增延遲類型載入支援 (最適用於網路負載和偵錯工具回應延遲)。
+       
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **評估：**
+
+    -   改進二元運算子運算式估算與方法搜尋。
+
+## <a name="3800"></a>3.8.0.0
+ 發行於 2018 年 5 月 30 日
+ 
+### <a name="new-features"></a>新功能
+
+-   **偵錯：**
+
+    -   新增在非同步建構中顯示變數的支援。
+    
+    -   新增在設定終端點時處理巢狀型別的支援，以避免編譯器建構出現警告。
+    
+-   **整合：**
+
+    -   新增著色器的 TextMate 文法支援 (著色器程式碼上色不再需要 C++ 工作負載)。
+    
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **Project Generation:**
+
+    -   在使用新 Unity 執行階段時，不會再將可攜式 pdb 轉換成 mdb。
+
 ## <a name="3701"></a>3.7.0.1
- 發行日期：2018 年 5 月 7 日
+ 發行於 2018 年 5 月 7 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -30,7 +103,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正使用實驗性組建時的相依性問題。
 
 ## <a name="3700"></a>3.7.0.0
- 發行日期：2018 年 5 月 7 日
+ 發行於 2018 年 5 月 7 日
 
 ### <a name="new-features"></a>新功能
 
@@ -59,7 +132,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   產生時排除套件管理員編譯單位。
 
 ## <a name="3605"></a>3.6.0.5
- 發行日期：2018 年 3 月 13 日
+ 發行於 2018 年 3 月 13 日
 
 ### <a name="new-features"></a>新功能
 
@@ -78,7 +151,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正設定下一個陳述式。
 
 ## <a name="3604"></a>3.6.0.4
- 發行日期：2018 年 3 月 5 日
+ 2018 年 3 月 5 日發行
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -91,7 +164,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正 2018.1 的時間問題和外掛程式啟用問題。
 
 ## <a name="3603"></a>3.6.0.3
- 發行日期：2018 年 2 月 23 日
+ 發行於 2018 年 2 月 23 日
 
 ### <a name="new-features"></a>新功能
 
@@ -110,7 +183,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正在 Usercode 外擲回例外狀況的中斷問題。
 
 ## <a name="3602"></a>3.6.0.2
- 發行日期：2018 年 2 月 7 日
+ 發行於 2018 年 2 月 7 日
 
 ### <a name="new-features"></a>新功能
 
@@ -125,7 +198,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   只針對外部變更重新載入專案 (搭配節流)。
 
 ## <a name="3601"></a>3.6.0.1
- 發行日期：2018 年 1 月 24 日
+ 2018 年 1 月 24 日發行
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -136,7 +209,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正在嘗試變更陣列大小期間，間接呼叫 EditorPrefs.GetBool 對檢查的影響。
 
 ## <a name="3600"></a>3.6.0.0
- 發行日期：2018 年 1 月 10 日
+ 發行於 2018 年 1 月 10 日
 
 ### <a name="new-features"></a>新功能
 
@@ -171,7 +244,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   再插入方法之前先重新整理 Roslyn 內容。
 
 ## <a name="3503"></a>3.5.0.3
- 發行日期：2018 年 1 月 9 日
+ 發行於 2018 年 1 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -180,7 +253,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   修正自動化 pdb 對 mdb 的偵錯符號轉換。
 
 ## <a name="3502"></a>3.5.0.2
- 發行日期：2017-12-04
+ 發行於 2017 年 12 月 4 日
 
 ### <a name="new-features"></a>新功能
 
@@ -213,7 +286,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   因為預設值現在是 'true'，所以請不要強制執行 AllowAttachedDebuggingOfEditor Unity 旗標。
 
 ## <a name="3402"></a>3.4.0.2
- 發行日期：2017 年 9 月 19 日
+ 發行於 2017 年 9 月 19 日
 
 ### <a name="new-features"></a>新功能
 
@@ -244,7 +317,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   修正 4.6 API 層級的 Microsoft.CSharp 參考。
 
 ## <a name="3302"></a>3.3.0.2
- 發行日期：2017 年 8 月 15 日
+ 發行於 2017 年 8 月 15 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -253,7 +326,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正 Unity 5.5 和舊版本上 Visual Studio 解決方案的產生。
 
 ## <a name="3300"></a>3.3.0.0
- 發行日期：2017 年 8 月 14 日
+ 發行於 2017 年 8 月 14 日
 
 ### <a name="new-features"></a>新功能
 
@@ -282,7 +355,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   修正具有 API 層級的定義。
 
 ## <a name="3200"></a>3.2.0.0
- 發行日期：2017 年 5 月 10 日
+ 發行於 2017 年 5 月 10 日
 
 ### <a name="new-features"></a>新功能
 
@@ -299,7 +372,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   修正 Unity 訊息的閃爍。
 
 ## <a name="3100"></a>3.1.0.0
- 發行日期：2017 年 4 月 7 日
+ 發行於 2017 年 4 月 7 日
 
 ### <a name="new-features"></a>新功能
 
@@ -328,12 +401,12 @@ Visual Studio Tools for Unity 變更記錄。
     -   已移除組件版本的後續處理步驟。
 
 ## <a name="3001"></a>3.0.0.1
- 發行日期：2017 年 3 月 7 日
+ 發行於 2017 年 3 月 7 日
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>此版本包括 2.8.x 系列開始導入的所有新功能和錯誤修正。
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 Preview 3
- 發行日期：2017 年 1 月 25 日
+ 發行於 2017 年 1 月 25 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -342,7 +415,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正參考了外掛程式專案兩次的迴歸，第一次是將其當成二進位 DLL，接著則是當成專案參考。
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 Preview 2
- 發行日期：2017 年 1 月 23 日
+ 發行於 2017 年 1 月 23 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -369,7 +442,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已切換至 https，以將目標設為遠端 Unity 文件。
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 Preview
- 發行日期：2016 年 11 月 17 日
+ 發行於 2016 年 11 月 17 日
 
 ### <a name="new-features"></a>新功能
 
@@ -436,7 +509,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正在搭配 Web 編譯的檔案名稱編譯指令碼時無法編譯的 Bug。
 
 ## <a name="2300"></a>2.3.0.0
- 發行日期：2016 年 7 月 14 日
+ 發行於 2016 年 7 月 14 日
 
 ### <a name="new-features"></a>新功能
 
@@ -471,7 +544,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正數個運算式評估問題。
 
 ## <a name="2200"></a>2.2.0.0
- 發行日期：2016 年 2 月 4 日
+ 發行於 2016 年 2 月 4 日
 
 ### <a name="new-features"></a>新功能
 
@@ -518,7 +591,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正針對多個不同版本的 Visual Studio 安裝同一個版本的 VSTU 時，解除安裝 VSTU 的問題。 例如，同時安裝 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 時。
 
 ## <a name="2100"></a>2.1.0.0
- 發行日期：2015 年 9 月 8 日
+ 發行於 2015 年 9 月 8 日
 
 ### <a name="new-features"></a>新功能
 
@@ -539,7 +612,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   已修正在 Visual Studio 2015 的叫用次數中斷點。
 
 ## <a name="2000"></a>2.0.0.0
- 發行日期：2015 年 7 月 20 日
+ 發行於 2015 年 7 月 20 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -574,7 +647,7 @@ Visual Studio Tools for Unity 變更記錄。
     -   已修正空白陣列的檢查。
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
- 發行日期：2015 年 4 月 2 日
+ 發行於 2015 年 4 月 2 日
 
 ### <a name="new-features"></a>新功能
 
@@ -663,7 +736,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   **UI：** 內容功能表和圖示支援 Visual Studio 佈景主題。
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
- 發行日期：2014 年 11 月 12 日
+ 發行於 2014 年 11 月 12 日
 
 ### <a name="new-features"></a>新功能
 
@@ -702,7 +775,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   如果沒有必要，請不要註冊記錄回呼。
 
 ## <a name="1920"></a>1.9.2.0
- 發行日期：2014 年 10 月 9 日
+ 發行於 2014 年 10 月 9 日
 
 ### <a name="new-features"></a>新功能
 
@@ -725,7 +798,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正副檔名篩選是空的時，便在專案檔中包含所有資產的 Bug。
 
 ## <a name="1910"></a>1.9.1.0
- 發行日期：2014 年 9 月 22 日
+ 發行於 2014 年 9 月 22 日
 
 ### <a name="new-features"></a>新功能
 
@@ -770,7 +843,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正在 64 位元版本的 Unity 中使用 VSTU 開啟指令碼的作業。
 
 ## <a name="1900"></a>1.9.0.0
- 發行日期：2014 年 7 月 29 日
+ 發行於 2014 年 7 月 29 日
 
 ### <a name="new-features"></a>新功能
 
@@ -818,7 +891,7 @@ Visual Studio Tools for Unity 變更記錄。
 >  C# 一直是 Unity 生態系統的主流語言 (新範例資產使用 C#、Unity 文件預設為 C#)，我們移除了對 UnityScript 和 Boo 的基本支援，以改進將焦點放在 C# 的體驗。 因此，VSTU 方案現在只使用 C#，載入更快。
 
 ## <a name="1820"></a>1.8.2.0
- 發行日期：2014 年 1 月 7 日
+ 發行於 2014 年 1 月 7 日
 
 ### <a name="new-features"></a>新功能
 
@@ -845,7 +918,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   避免特定版本產生的組件不同步時所發生的 Unity 損毀。
 
 ## <a name="1810"></a>1.8.1.0
- 發行日期：2013 年 11 月 21 日
+ 發行於 2013 年 11 月 21 日
 
 ### <a name="new-features"></a>新功能
 
@@ -878,7 +951,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正從 Unity 開啟指令碼不會與 Unity 4.2 (含) 以後版本的 ALT+TAB 鍵順序混淆。
 
 ## <a name="1800"></a>1.8.0.0
- 發行日期：2013 年 9 月 24 日
+ 發行於 2013 年 9 月 24 日
 
 ### <a name="new-features"></a>新功能
 
@@ -919,7 +992,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正在本機檢視中變更布林值的作業。
 
 ## <a name="1220"></a>1.2.2.0
- 發行日期：2013 年 7 月 9 日
+ 發行於 2013 年 7 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -942,7 +1015,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正 Unity 4.2 Beta 組件的處理。
 
 ## <a name="1210"></a>1.2.1.0
- 發行日期：2013 年 4 月 9 日
+ 發行於 2013 年 4 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -955,7 +1028,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正某些外部 DLL 中的中斷點繫結。
 
 ## <a name="1200"></a>1.2.0.0
- 發行日期：2013 年 3 月 25 日
+ 發行於 2013 年 3 月 25 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1022,10 +1095,10 @@ Visual Studio Tools for Unity 變更記錄。
 -   已修正 Bug UVS-11：協同程式中的區域變數。
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - 搶鮮版 (Beta)
- 發行日期：2014 年 10 月 9 日
+ 發行於 2013 年 3 月 9 日
 
 ## <a name="10130"></a>1.0.13.0
- 發行日期：2013 年 1 月 21 日
+ 發行於 2013 年 1 月 21 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1048,7 +1121,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正從 Unity 傳送至 UnityVS 的長訊息處理。 之前，長訊息可能會損毀 UnityVS 的傳訊部分。 因此，UnityVS 有時不會從 Unity 開啟檔案。
 
 ## <a name="10120"></a>1.0.12.0
- 發行日期：2013 年 1 月 3 日
+ 發行於 2013 年 1 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1067,7 +1140,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正使用者程式碼無法參與記錄回呼處理常式的應用程式開發介面問題。
 
 ## <a name="10110"></a>1.0.11.0
- 發行日期：2012 年 11 月 28 日
+ 發行於 2012 年 11 月 28 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1098,7 +1171,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正無法在 Visual Studio 的狀態列中插入圖示時發生損毀的問題。
 
 ## <a name="10100"></a>1.0.10.0
- 發行日期：2012 年 10 月 9 日
+ 發行於 2012 年 10 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1111,7 +1184,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正從 Unity 擷取組件的方式，以避免鎖定檔案並造成 Unity 建置流程混淆。
 
 ## <a name="1090"></a>1.0.9.0
- 發行日期：2012 年 10 月 3 日
+ 發行於 2012 年 10 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1130,7 +1203,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   已修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
 
 ## <a name="1080"></a>1.0.8.0
- 發行日期：2012 年 9 月 26 日
+ 發行於 2012 年 9 月 26 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1141,7 +1214,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正在 Visual Studio 2010 上註冊 UnityVS 的方式。
 
 ## <a name="1070"></a>1.0.7.0
- 發行日期：2012 年 9 月 14 日
+ 發行於 2012 年 9 月 14 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1157,10 +1230,10 @@ Visual Studio Tools for Unity 變更記錄。
 >  由於支援 Visual Studio 2012，我們必須重新命名一些檔案及移動其他一些檔案。 匯入 Unity 的 UnityVS 套件現在命名為 UnityVS 2010 或 UnityVS 2012，分別代表 Visual Studio 2010 和 Visual Studio 2012。 這個版本也需要重新產生 UnityVS 專案檔。
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - 內部組建
- 發行日期：2012 年 9 月 12 日
+ 發行於 2012 年 9 月 12 日
 
 ## <a name="1050"></a>1.0.5.0
- 發行日期：2012 年 9 月 10 日
+ 發行於 2012 年 9 月 10 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1169,7 +1242,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正 Unity 連接到 Asset 伺服器時的 Unity 執行個體偵測。 這會觸發失敗，以從 Unity 開啟檔案，並自動連接到 Visual Studio 偵錯工具。
 
 ## <a name="1040"></a>1.0.4.0
- 發行日期：2012 年 9 月 5 日
+ 發行於 2012 年 9 月 5 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1182,7 +1255,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正 Unity 內的方法或屬性擲回之例外狀況造成偵錯時所發生的 UnityVS 損毀。
 
 ## <a name="1030"></a>1.0.3.0
- 發行日期：2012 年 9 月 4 日
+ 發行於 2012 年 9 月 4 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1197,7 +1270,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正我們的自訂狀態列所造成的隨機 VS 損毀。
 
 ## <a name="1020"></a>1.0.2.0
- 發行日期：2012 年 8 月 30 日
+ 發行於 2012 年 8 月 30 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -1208,7 +1281,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正從 Unity (使用 Unity 4 b7) 擷取指令碼組件之方式的 Bug。
 
 ## <a name="1010"></a>1.0.1.0
- 發行日期：2012 年 8 月 28 日
+ 發行於 2012 年 8 月 28 日
 
 ### <a name="new-features"></a>新功能
 
@@ -1225,4 +1298,4 @@ Visual Studio Tools for Unity 變更記錄。
 -   修正 UnityScript 和 Boo 的 [Asset] 資料夾內的 DLL 完成。
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - 初始版本
- 發行日期：2012 年 8 月 22 日
+ 發行於 2012 年 8 月 22 日

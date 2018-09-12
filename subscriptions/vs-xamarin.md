@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281140"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289477"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Xamarin University 訓練課程權益
 
@@ -28,12 +28,12 @@ Visual Studio Dev Essentials 成員具有建立免費帳戶的資格，此帳戶
 ## <a name="activation-steps"></a>啟用步驟
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2.  在 [Professional Development] \(專業開發\) 區段中找出 [Xamarin University Training] \(Xamarin University 訓練\) 磚，然後按一下權益磚左下角的 [Activate] \(啟用\) 連結。
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 訓練權益磚](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  系統會將您重新導向到標題為 "Xamarin University Mobile Training for Microsoft Visual Studio" (適用於 Microsoft Visual Studio 的 Xamarin University 行動裝置應用程式訓練) 的 Xamarin University 網頁。  按一下 [Activate My Subscription Now] \(立即啟用我的訂閱\)。
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![立即啟用我的訂用帳戶](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > 視您的螢幕解析度和縮放層級而定，您可能需要向下捲動，才能看到 [Activate My Subscription Now] \(立即啟用我的訂閱\) 按鈕。
@@ -47,24 +47,24 @@ Visual Studio Dev Essentials 成員具有建立免費帳戶的資格，此帳戶
     > 5. 重新啟用 Xamarin University 訓練權益。
 
 4.  您會看到一個登入頁面，當中會顯示一則 Xamarin 最近已改用 Microsoft 驗證的通知。  按一下 [Connect with Microsoft] \(與 Microsoft 連線\)。
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![與 Microsoft 交流](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. 接著，系統會要求您授與 Xamarin University 的權限，以將您登入並存取您的電子郵件地址和基本設定檔。  按一下 [Yes] \(是\) 以繼續操作。 如果想要的話，您可以稍後變更應用程式權限。
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![核准存取權](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > 由於必須登入才能使用 Xamarin University 權益，因此按一下 [No] \(否\) 將會讓您返回上一頁，而無法繼續移至訓練。
 
 
 6. 您會看到有關新帳戶的歡迎訊息。  按一下 [Start Learning] \(開始學習\)。
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![歡迎訊息](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. 就這麼容易！  您會看到 Xamarin University 入口網站，並已經做好開始學習的準備。
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 入口網站](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |

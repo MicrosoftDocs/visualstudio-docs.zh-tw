@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623622"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321160"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -83,10 +83,10 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 ||**使用者需求模型化**|**商務程序模型化**|**系統架構與設計**|**程式碼視覺化與探索**|**驗證**|
 |------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
-|領域特定語言 (DSL) 圖表|[是]|是|[是]|||
-|相依性圖表中，圖層驗證|||[是]|是|[是]|
-|Code Map|||[是]|是|[是]|
-|類別設計工具 (以程式碼為基礎)||||[是]||
+|領域特定語言 (DSL) 圖表|是|是|是|||
+|相依性圖表中，圖層驗證|||是|是|是|
+|Code Map|||是|是|是|
+|類別設計工具 (以程式碼為基礎)||||是||
 
 若要繪製相依性圖表，您必須建立模型專案，作為現有方案或新的一部分。 這些圖表必須在模型專案中建立。
 相依性圖表中的項目位於模型專案中，但它們不會儲存在一般模型。 由程式碼建立的 Code Map 與 .NET 類別圖表則位在模型專案之外。
@@ -216,9 +216,9 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 請參閱：
 
-- [使用 Visual Studio Team Services 或 Team Foundation Server 來追蹤工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [關於敏捷式工具及敏捷式專案管理](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [圖表、 儀表板和 widget (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [圖表、 儀表板和 widget （Azure DevOps 服務）](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [使用 Project 建立您的待處理項目和工作](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用
 
 請參閱：
 
-- [測試應用程式](/vsts/test/overview?view=vsts)
+- [測試應用程式](/azure/devops/test/overview?view=vsts)
 
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [建置及發行](/vsts/build-release/index)
+- [Azure 的管線](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>更新的系統使用視覺化和模型化
 
@@ -377,8 +377,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - *「相依性」* (Dependency) 表示若變更某個分類器的定義，可能會變更另一個分類器的定義。
 
-- *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。 
-  *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。
+- *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。 *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。
 
      若要建立這些關聯性，請使用 [繼承]  工具。 另外，實現可以用 *「棒棒糖符號」*(Lollipop) 表示。
 

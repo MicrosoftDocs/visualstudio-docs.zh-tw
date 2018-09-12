@@ -1,5 +1,5 @@
 ---
-title: 如何： 將 ListObject 欄對應到資料 |Microsoft 文件
+title: 如何： 對應 ListObject 資料行的資料
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,57 +16,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 370f82c6a167a9747a3a41ac3720bc4f679fb8d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671494"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>如何：將 ListObject 欄對應到資料
+# <a name="how-to-map-listobject-columns-to-data"></a>如何： 對應 ListObject 資料行的資料
   當您將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項繫結到 <xref:System.Data.DataTable>時，您可能不想在清單中顯示所有資料行，或可能有某些資料行未繫結至資料。 當您呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法時，您可以對應想要顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 的資料行。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 建立清單連接至 SharePoint 清單的 excel？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何： 建立 Excel 連接到 SharePoint 清單中的清單？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
   
-## <a name="mapping-columns"></a>對應資料行  
+## <a name="map-columns"></a>將資料行對應  
   
-#### <a name="to-map-a-data-table-to-columns-in-a-list"></a>對應資料表和清單中的資料行  
+### <a name="to-map-a-data-table-to-columns-in-a-list"></a>對應資料表和清單中的資料行  
   
 1.  在類別層級建立 <xref:System.Data.DataTable> 。  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]  
   
-2.  將範例資料行和資料加入 `Startup` 類別的 `Sheet1` 事件處理常式 (文件層級專案) 或 `ThisAddIn` 類別 (VSTO 增益集專案)。  
+2.  新增範例資料行和資料`Startup`事件處理常式`Sheet1`類別 （在文件層級專案中） 或`ThisAddIn`類別 （在 VSTO 增益集專案中）。  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]  
   
-3.  呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法並按應用的順序傳入資料行名稱。 清單物件會繫結至新建立的 <xref:System.Data.DataTable>，但清單物件中的資料行順序會和 <xref:System.Data.DataTable>顯示的順序不同。  
+3.  呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法並按應用的順序傳入資料行名稱。 將繫結的清單物件來新建<xref:System.Data.DataTable>，但它們在出現的順序不同的清單物件中的資料行的順序<xref:System.Data.DataTable>。  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]  
   
-## <a name="specifying-unmapped-columns"></a>指定未對應的資料行  
+## <a name="specify-unmapped-columns"></a>指定未對應的資料行  
  當您將資料行對應至 <xref:System.Data.DataTable>時，您也可以透過傳入空字串，指定某些資料行不應該繫結至資料。 不繫結至資料的新資料行，就會加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。  
   
-#### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>對應 ListObject 資料行時指定未對應的資料行  
+### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>對應 ListObject 資料行時指定未對應的資料行  
   
 1.  呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法並按應用的順序傳入資料行名稱。 使用空字串表示該處加入了未對應的資料行，本例為介於標題資料行和姓氏資料行之間。  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]  
   
-## <a name="compiling-the-code"></a>編譯程式碼  
+## <a name="compile-the-code"></a>編譯程式碼  
  這個程式碼範例假設在這個程式碼出現的工作表中已有名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `list1` 。  
   
 ## <a name="see-also"></a>另請參閱  
- [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
- [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 填入 ListObject 控制項的資料](../vsto/how-to-fill-listobject-controls-with-data.md)   
- [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
+ [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [如何： 填滿 ListObject 控制項的資料](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控制項](../vsto/listobject-control.md)  
   
   

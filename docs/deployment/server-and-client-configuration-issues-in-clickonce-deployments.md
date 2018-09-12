@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154381"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282608"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。  
@@ -41,7 +41,7 @@ ms.locfileid: "39154381"
   
 -   *使用.deploy* 
   
- 不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
+ 不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
   
  您必須設定 *.manifest*， *.application*，並 *.deploy*，例如，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，或如果您是使用另一部 Web 伺服器 (例如 Apache)。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "39154381"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和 proxy 驗證  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Windows 整合式的 proxy 驗證從.NET Framework 3.5 開始提供支援。 需要任何特定的 machine.config 指示詞不。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 其他的驗證通訊協定，例如基本或摘要式不提供支援。  
   
- 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱http://go.microsoft.com/fwlink/?LinkId=158730。  
+ 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkId=158730。  
   
  如需詳細資訊，請參閱 < [ \<defaultProxy > 項目 （網路設定）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
   

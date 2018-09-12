@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cd201a1b0a68f958cafca80fd156a5eb9ca8120
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d3869a9d3350daac8b08398ed5afaab0729a05c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231629"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278877"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 命令的類型與實際配置的檔案。 命令可能會包含功能表項目、 功能表、 工具列和下拉式方塊。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
@@ -64,7 +64,7 @@ CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 
 |[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|選擇性。 決定命令和工具列的靜態可見。|  
 |[KeyBindings 元素](../extensibility/keybindings-element.md)|選擇性。 如果有任何命令，請指定的快速鍵組合。|  
 |[UsedCommands 元素](../extensibility/usedcommands-element.md)|選擇性。 可讓 VSPackage 也可以選擇性地實作自己的版本，其他 Vspackage 原本支援的功能。|  
-|[Symbols 元素](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|選擇性。 包含的所有符號資料-Guid、 識別碼和其他等等-編譯器。|  
+|[Symbols 元素](https://www.microsoft.com/download/details.aspx?id=55984)|選擇性。 包含的所有符號資料-Guid、 識別碼和其他等等-編譯器。|  
   
 ### <a name="parent-elements"></a>父元素  
   

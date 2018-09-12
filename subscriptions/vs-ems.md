@@ -9,16 +9,19 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281647"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289353"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
 Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobility + Security (EMS)。  使用 EMS 保護和管理身分識別、裝置、應用程式和資料 - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security.
+
+> [!NOTE]
+> 如果您透過大量授權購買多年訂用帳戶，則目前只有第一年才提供 EMS 權益。  
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -27,24 +30,24 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
-
-    ![EMS 權益磚](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益磚](_img\vs-ems\vs-ems-tile.png)
 
 2.  在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。
-
-    ![EMS 權益建立帳戶](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益建立帳戶](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. 建立您的使用者識別碼和密碼。  按一下 [Create my account] (建立我的帳戶) 繼續。
-
-    ![EMS 權益建立使用者識別碼](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益建立使用者識別碼](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  接下來，透過電話或簡訊，提供電話號碼來接收驗證碼。  輸入代碼，然後按一下 [下一步]。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益驗證](_img\vs-ems\vs-ems-robot-cropped.png)
 
-    ![EMS 權益驗證](_img\vs-ems\vs-ems-robot-cropped.png)
-
-5.  下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...]。
-
-    ![EMS 權益已建立帳戶](_img\vs-ems\vs-ems-save-info-cropped.png)
+5.  下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...]
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益已建立帳戶](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  EMS 需要存取 Microsoft [Azure 入口網站](https://azure.microsoft.com)。  遵循 EMS 登陸頁面上的三個步驟來啟用您的 Azure 訂用帳戶、新增使用者，以及設定 EMS。
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c91ec9343aeb8b20d6140135becd6905c85adda
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758174"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321264"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 如果您從未撰寫過 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**此頁面是否有幫助？** 螢幕的底部)，要求提供您想要。
@@ -76,7 +76,7 @@ ms.locfileid: "36758174"
 
 -   基本 Vspackage: [Creating an Extension with VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 專案範本：[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md) 
+-   VSIX 專案範本：[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何取得我看起來像是 Visual Studio 的擴充功能？
  設計您的延伸模組的使用者介面時，取得絕佳的祕訣[Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
@@ -87,4 +87,4 @@ ms.locfileid: "36758174"
 ## <a name="how-can-i-distribute-my-extension"></a>我要如何散發 my 擴充功能？
  您可以在另一部電腦上安裝擴充功能，或將它傳送給您的朋友為.vsix 檔案，按兩下安裝。 您可以深入了解在 VSIX 封裝[傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。
 
- 您也可以發佈您的延伸模組，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 封裝至 Marketplace 延伸模組的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需有關您要如何在 Marketplace 上發佈的詳細資訊，請參閱 <<c0> [ 產品和 Visual Studio 擴充功能](/vsts/integrate/ide/extensions/overview)。
+ 您也可以發佈您的延伸模組，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 封裝至 Marketplace 延伸模組的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需有關您要如何在 Marketplace 上發佈的詳細資訊，請參閱 <<c0> [ 產品和 Visual Studio 擴充功能](/azure/devops/extend/overview?view=vsts)。

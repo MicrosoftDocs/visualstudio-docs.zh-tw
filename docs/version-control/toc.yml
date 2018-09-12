@@ -1,89 +1,96 @@
+items:
 - name: 版本控制
   href: /visualstudio/version-control/index
 - name: 總覽
   items:
-    - name: 了解 Git
-      href: /vsts/git/tutorial/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 選擇合適的版本控制
-      href: /vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: 了解 Git
+    href: /azure/devops/repos/git/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 選擇合適的版本控制
+    href: /azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 快速入門
   items:
-    - name: 建立 Git 存放庫 - Web
-      href: /vsts/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 建立 Git 存放庫 - CLI
-      href: /vsts/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 在 Git 中共用程式碼
-      href: /vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 將存放庫匯入 VSTS Git 存放庫
-      href: /vsts/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 在 TFVC 中共用程式碼
-      href: /vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: 建立 Git 存放庫 - Web
+    href: /azure/devops/repos/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 建立 Git 存放庫 - CLI
+    href: /azure/devops/repos/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 在 Git 中共用程式碼
+    href: /azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 將存放庫匯入 Azure Repos
+    href: /azure/devops/repos/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 在 TFVC 中共用程式碼
+    href: /azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 教學課程
   items:
-    - name: Git
-      href: /vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-      items:
-        - name: 建立新的存放庫
-          href: /vsts/git/tutorial/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 編輯現有的存放庫
-          href: /vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用認可來儲存工作
-          href: /vsts/git/tutorial/commits?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 在分支中建立工作
-          href: /vsts/git/tutorial/branches?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用推送來共用程式碼
-          href: /vsts/git/tutorial/pushing?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用擷取與提取來更新程式碼
-          href: /vsts/git/tutorial/pulling?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用提取要求來檢閱程式碼
-          href: /vsts/git/tutorial/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用重訂基底來套用變更
-          href: /vsts/git/tutorial/rebase?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 使用揀選來複製變更
-          href: /vsts/git/tutorial/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 解決合併衝突
-          href: /vsts/git/tutorial/merging?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 復原變更
-          href: /vsts/git/tutorial/undo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 忽略檔案
-          href: /vsts/git/tutorial/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: 檢閱歷程記錄
-          href: /vsts/git/tutorial/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: TFVC
-      items:
-        - name: 逐步解說：修正錯誤 (bug)，並讓程式碼供人檢閱
-          href: /vsts/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Visual Studio：檢閱程式碼
-          href: /vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Git
+    href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    items:
+    - name: 建立新的存放庫
+      href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 編輯現有的存放庫
+      href: /azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用認可來儲存工作
+      href: /azure/devops/repos/git/commits?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 在分支中建立工作
+      href: /azure/devops/repos/git/branches?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用推送來共用程式碼
+      href: /azure/devops/repos/git/pushing?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用擷取與提取來更新程式碼
+      href: /azure/devops/repos/git/pulling?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用提取要求來檢閱程式碼
+      href: /azure/devops/repos/git/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用重訂基底來套用變更
+      href: /azure/devops/repos/git/rebase?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 使用揀選來複製變更
+      href: /azure/devops/repos/git/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 解決合併衝突
+      href: /azure/devops/repos/git/merging?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 復原變更
+      href: /azure/devops/repos/git/undo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 忽略檔案
+      href: /azure/devops/repos/git/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 檢閱歷程記錄
+      href: /azure/devops/repos/git/review-history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: TFVC
+    items:
+    - name: 逐步解說：修正錯誤 (bug)，並讓程式碼供人檢閱
+      href: /azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Visual Studio：檢閱程式碼
+      href: /azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 概念
   items:
-    - name: Git 的歷程記錄
-      href: /vsts/git/concepts/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 歷程記錄簡化
-      href: /vsts/git/concepts/history-simplification?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 分支組織
-      href: /vsts/git/concepts/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 派生
-      href: /vsts/git/concepts/forks?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 驗證
-      href: /vsts/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 了解 Git 中的日期
-      href: /vsts/git/concepts/git-dates?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 了解 Git 中的名稱
-      href: /vsts/git/concepts/git-names?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Git 的歷程記錄
+    href: /azure/devops/repos/git/history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 歷程記錄簡化
+    href: /azure/devops/articles/git-log-history-simplification?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 分支組織
+    href: /azure/devops/repos/git/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 派生
+    href: /azure/devops/repos/git/forks?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 驗證
+    href: /azure/devops/repos/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 了解 Git 中的日期
+    href: /azure/devops/repos/git/git-dates?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 了解 Git 中的名稱
+    href: /azure/devops/repos/git/git-names?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 作法指南
   items:
-    - name: 使用 SSH 進行驗證
-      href: /vsts/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 使用 Git 認證管理員進行驗證
-      href: /vsts/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: 使用 SSH 進行驗證
+    href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 使用 Git 認證管理員進行驗證
+    href: /azure/devops/repos/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 參考資料
   items:
-    - name: 命令參考資料
-      href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: 常見問題集
-      href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: 命令參考資料
+    href: /azure/devops/repos/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: 常見問題集
+    href: /azure/devops/repos/git/howto?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 資源
   items:
-    - name: 什麼是 Git
-      href: /azure/devops/git/what-is-git
+  - name: 什麼是 Git
+    href: /azure/devops/repos/get-started/what-is-repos#git
+ms.openlocfilehash: 9b2a5968cba8e1aefa09d7e10b9a5c0e2632f96f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279410"

@@ -17,7 +17,7 @@
 ## 使用訂閱者權益
 ### 工具
 #### [Visual Studio IDE ](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps Services](vs-azure-devops.md)
 #### [Azure 點數](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -49,6 +49,7 @@
 ##### [VLSC 管理移轉常見問題集](vlsc-admin-faq.md)
 ##### 協助組織上線
 ###### [移轉後上線](post-migration-onboarding.md)
+###### [Open 和 Open License 移轉](open-migration.md)
 ###### [上線電子郵件通訊](volume-license-onboarding-email.md)
 ###### [尋找您的 PCN](find-pcn.md)
 ###### [尋找您的主要連絡人](find-primary-contact.md)

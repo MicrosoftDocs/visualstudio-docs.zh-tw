@@ -1,5 +1,5 @@
 ---
-title: 如何： 讀取和寫入文件屬性 |Microsoft 文件
+title: 如何： 讀取和寫入文件屬性
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671675"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>如何：從文件屬性中讀取及寫入
+# <a name="how-to-read-from-and-write-to-document-properties"></a>如何： 讀取和寫入文件屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 存取和 Microsoft Word 中操作自訂文件屬性？](http://go.microsoft.com/fwlink/?LinkId=136772)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何： 存取和操作 Microsoft Word 中的自訂文件屬性？](http://go.microsoft.com/fwlink/?LinkId=136772)。  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>設定 Excel 的文件屬性  
+## <a name="set-document-properties-in-excel"></a>在 Excel 中的設定文件屬性  
  若要處理 Excel 的內建屬性，請使用下列屬性:  
   
 -   在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 類別的 `ThisWorkbook` 屬性。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  下列程式碼範例說明如何變更文件層級專案的內建 **Revision Number** 屬性。  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>變更 Excel 的修訂編號屬性  
+### <a name="to-change-the-revision-number-property-in-excel"></a>變更 Excel 的修訂編號屬性  
   
 1.  將內建的文件屬性指派給變數。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>設定 Word 的文件屬性  
+## <a name="set-document-properties-in-word"></a>在 Word 中的設定文件屬性  
  若要處理 Word 的內建屬性，請使用下列屬性:  
   
 -   在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 類別的 `ThisDocument` 屬性。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
  下列程式碼範例說明如何變更文件層級專案的內建 **Subject** 屬性。  
   
-#### <a name="to-change-the-subject-property"></a>變更主旨屬性  
+### <a name="to-change-the-subject-property"></a>變更主旨屬性  
   
 1.  將內建的文件屬性指派給變數。  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  雖然您處理的是 Word 和 Excel 及其物件，但 Microsoft Office 仍會提供可用的內建文件屬性清單。 嘗試存取未定義的屬性會引發例外狀況。  
   
 ## <a name="see-also"></a>另請參閱  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
- [如何：建立及修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
+ [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
+ [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

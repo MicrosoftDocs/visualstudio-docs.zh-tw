@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式使用 Word 對話方塊在隱藏模式中的 |Microsoft 文件
+title: 如何： 以程式設計方式使用 Word 對話方塊，在隱藏模式中
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,26 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b9d9b49783e3070e91291460e3f4aa7a4667620
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671389"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以程式設計方式在隱藏模式中使用 Word 對話方塊
-  您可以藉由叫用 Microsoft Office Word 中的內建對話方塊，而不會向使用者顯示這些執行複雜的作業，包含一個方法呼叫。 您可以使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>物件而不需呼叫<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。  
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何： 以程式設計方式使用 Word 對話方塊，在隱藏模式中
+  您可以藉由叫用 Microsoft Office Word 中的內建對話方塊，而不向使用者顯示這些執行複雜的作業，其中一種方法的呼叫取代。 您可以使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>物件，而不需呼叫<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="examples"></a>範例  
- 下列程式碼範例示範如何使用**版面** 對話方塊中設定多個頁面上設定屬性，不需要使用者輸入的隱藏模式。 這些範例使用<xref:Microsoft.Office.Interop.Word.Dialog>物件來設定自訂頁面大小。 為晚期繫結的屬性可用之特定設定的 版面設定，例如邊界、 下邊界和等等，<xref:Microsoft.Office.Interop.Word.Dialog>物件。 Word 在執行階段以動態方式建立這些屬性。  
+ 下列程式碼範例示範如何使用**版面** 對話方塊中，將多個頁面版面設定屬性設定不需要使用者輸入的隱藏模式。 範例會使用<xref:Microsoft.Office.Interop.Word.Dialog>物件來設定自訂的頁面大小。 上邊界、 下邊界，並依此類推，例如版面設定的特定設定是晚期繫結屬性的<xref:Microsoft.Office.Interop.Word.Dialog>物件。 以單字來在執行階段以動態方式建立這些屬性。  
   
- 下列範例示範如何在 Visual Basic 專案中執行此工作其中**Option Strict**是 off 和 Visual C# 專案中目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 在這些專案中，您可以在 Visual Basic 和 Visual C# 編譯器使用晚期繫結功能。 若要使用此範例中，執行從`ThisDocument`或`ThisAddIn`專案中的類別。  
+ 下列範例示範如何在 Visual Basic 專案中執行這項工作中何處**Option Strict**是關閉，而在 Visual C# 專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 在這些專案中，您可以在 Visual Basic 和 Visual C# 編譯器使用晚期繫結功能。 若要使用此範例中，執行從`ThisDocument`或`ThisAddIn`專案中的類別。  
   
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
  [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]  
   
- 下列範例示範如何在 Visual Basic 專案中執行此工作其中**Option Strict**上。 在這些專案中，您必須使用反映來存取晚期繫結屬性。 若要使用此範例中，執行從`ThisDocument`或`ThisAddIn`專案中的類別。  
+ 下列範例示範如何在 Visual Basic 專案中執行這項工作中何處**Option Strict**上。 在這些專案中，您必須使用反映來存取晚期繫結屬性。 若要使用此範例中，執行從`ThisDocument`或`ThisAddIn`專案中的類別。  
   
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   

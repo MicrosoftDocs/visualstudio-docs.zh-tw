@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381168"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627238"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio 概觀
+# <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。
 
-本文著重在 Visual Studio 2017 for Windows。 文中將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
+這篇概觀文章著重在 Visual Studio 2017 for Windows。 文中將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 
@@ -256,21 +256,32 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    整個 IDE 的色彩佈景主題會變更為 [深色]。
 
-   ![深色佈景主題的 VS](media/quickstart-personalize-dark-theme.png)
+   ![深色佈景主題的 Visual Studio](media/quickstart-personalize-dark-theme.png)
 
 若要了解您可以個人化 IDE 的其他方式，請參閱[個人化 Visual Studio](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="next-steps"></a>後續步驟
 
-您是否想要建立適用於 Android 或 iOS 手機的應用程式？ 或想要建立 3D 遊戲或具備雲端功能的應用程式？ 若要了解 Visual Studio 的這些及其他功能，請參閱 [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)。
+遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 
-如果只是想要立即開始撰寫程式碼，請從目錄選擇其中一個快速入門主題，例如[建立您的第一個 ASP.NET Core Web 應用程式](quickstart-aspnet-core.md)。
+- 在[了解如何使用程式碼編輯器](quickstart-editor.md)中認識程式碼編輯器
 
-您也可以查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)上可用的免費 Visual Studio 課程。
+- 在[了解專案和解決方案](quickstart-projects-solutions.md)中了解 Visual Studio 如何安排程式碼
+
+若您已準備好深入程式碼的世界，下一步就是開始下列其中一個語言專屬的快速入門：
+
+- [使用 Visual Studio 建立您的第一個 Python Web 應用程式](quickstart-python.md)
+
+- [使用 Visual Studio 建立您的第一個 C# Web 應用程式](quickstart-aspnet-core.md)
+
+- [使用 Visual Studio 建立您的第一個 Node.js Web 應用程式](quickstart-nodejs.md)
+
+- [Visual Studio 中的 C++ 使用者入門](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>另請參閱
 
-* [更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- 探索[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
+- 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
+- 前往 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 看看免費的 Visual Studio 課程
+- 在 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)，下載 Visual Studio

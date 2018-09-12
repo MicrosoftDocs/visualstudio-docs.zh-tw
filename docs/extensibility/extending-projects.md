@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639122"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902815"
 ---
 # <a name="extend-projects"></a>擴充專案
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署單位的方式。 您可以找到有關中專案的詳細資訊[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
   
- 您可以建立您自己的專案類型使用 Visual Studio SDK 和 Managed Package Framework 中的專案，您可以在下載[專案的 Managed Package Framework](http://mpfproj12.codeplex.com/)。 若要了解如何實作自訂專案，請參閱[產生新專案： 在幕後，第一部](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)並[產生新專案： 在幕後，第二部](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 您可以建立您自己的專案類型使用 Visual Studio SDK 和 Managed Package Framework 中的專案，您可以在下載[專案的 Managed Package Framework](https://github.com/tunnelvisionlabs/MPFProj10)。 若要了解如何實作自訂專案，請參閱[產生新專案： 在幕後，第一部](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)並[產生新專案： 在幕後，第二部](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  在本節中的主題描述如何建立自訂專案以及如何管理不同類型的 Visual Studio 方案。  
   

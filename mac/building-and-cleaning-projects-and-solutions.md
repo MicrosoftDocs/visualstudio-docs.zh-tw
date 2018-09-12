@@ -1,16 +1,16 @@
 ---
 title: 在 Visual Studio for Mac 中建置和清除專案與方案
 description: 本文說明如何在 Visual Studio for Mac 中建置專案
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876926"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224263"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>建置和清除專案與方案
 

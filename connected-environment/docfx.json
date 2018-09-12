@@ -39,7 +39,9 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.zh-tw",
       "feedback_product_url": "https://aka.ms/vsce-product-survey",
       "breadcrumb_path": "/visualstudio/connected-environment/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "ROBOTS":  "NOINDEX,NOFOLLOW",
+      "titleSuffix": "Visual Studio Connected Environment"
     },
     "fileMetadata": {},
     "template": [],

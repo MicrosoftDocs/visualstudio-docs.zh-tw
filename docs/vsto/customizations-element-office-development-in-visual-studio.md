@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670830"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/17/2018
  `customizations` 項目具有下列子項目。  
   
 ### <a name="customization"></a>自訂  
- 必要。 `customization`中的項目`vstov4`命名空間中定義[&#60;自訂&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
+ 必要。 `customization`中的項目`vstov4`中所定義的命名空間[&#60;自訂&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文件層級自訂範例  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 05/17/2018
  下列程式碼範例說明文件層級自訂的 `customizations` 項目。  
   
 > [!NOTE]  
->  這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+>  此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
@@ -86,10 +87,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customizations>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>VSTO 增益集的範例  
+## <a name="example-of-a-vsto-add-in"></a>VSTO 增益集的範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明 VSTO 增益集的 `customizations` 項目。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明`customizations`VSTO 增益集的項目。 這是包含表單區域的 Outlook VSTO 增益集。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   

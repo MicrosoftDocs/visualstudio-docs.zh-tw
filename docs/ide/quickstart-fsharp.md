@@ -1,0 +1,81 @@
+---
+title: 快速入門：以 F# 建立 ASP.NET Core Web 服務
+description: 了解如何在 Visual Studio 中以 F# 逐步建立 ASP.NET Core Web 服務。
+ms.date: 08/24/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
+ms.topic: quickstart
+author: cartermp
+ms.author: phcart
+manager: andrehal
+dev_langs:
+- FSharp
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224778"
+---
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F# 建立您的第一個 ASP.NET Core Web 服務
+
+在 Visual Studio 中 F# 的這個 5-10 分鐘簡介中，您將建立 F# ASP.NET Core Web 應用程式。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+
+## <a name="create-a-project"></a>建立專案
+
+首先，您將建立 ASP.NET Core Web API 專案。 在新增任何項目之前，專案類型隨附的範本檔案可構成功能性 Web 服務！
+
+1. 開啟 Visual Studio 2017。
+
+2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual F#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。
+
+     如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+
+     ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
+
+4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
+
+## <a name="explore-the-ide"></a>探索 IDE
+
+1. 在方案總管工具列中，展開 [Controllers] 資料夾，然後選擇 [ValuesController.fs] 以在編輯器中予以開啟。
+
+   ![F# Web API 專案中展開 Controllers 資料夾的方案總管](../ide/media/hello-world-fs-sln-explorer.png)
+
+2. 接下來，將 `Get()` 成員修改如下：
+
+   ```fsharp
+   [<HttpGet>]
+   member this.Get() =
+       let values = [|"Hello"; "World"; "First F#/ASP.NET Core web API!"|]
+       ActionResult<string[]>(values)
+   ```
+
+程式碼十分簡單。 F# 值陣列繫結至 `values` 名稱，然後傳遞至 ASP.NET Core MVC 架構作為 `ActionResult`。 ASP.NET Core 會負責為您處理其餘作業。
+
+它在編輯器中應該看起來如下：
+
+![已修改的 Get 成員](../ide/media/hello-world-fs-get-member.png)
+
+## <a name="run-the-application"></a>執行應用程式
+
+1. 按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
+
+2. 此頁面應該瀏覽至 `/api/values` 路由，但如果不存在，則請將 `https://localhost:44396/api/values` 輸入瀏覽器中。
+
+網頁瀏覽器現在會顯示符合您先前鍵入內容的 JSON。
+
+## <a name="next-steps"></a>後續步驟
+
+恭喜您完成此快速入門！ 我們希望您更了解 F#、ASP.NET Core 和 Visual Studio IDE。 若要查看公用伺服器上執行的應用程式，請選取下列按鈕。
+
+> [!div class="nextstepaction"]
+> [將應用程式部署至 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+
+若要深入了解 F#，請參閱正式 [F# 指南](/dotnet/fsharp/index)。

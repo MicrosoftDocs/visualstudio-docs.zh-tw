@@ -33,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692609"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671074"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：  
@@ -47,14 +47,14 @@ ms.locfileid: "34692609"
   
 -   [VSTO 增益集](#AppLevel)  
   
- 這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+ 如需這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  Office 專案範本位於 [ **新增專案** ] 對話方塊之 [ **Visual C#** ] 和 [ **Visual Basic** ] 語言節點的 [ **Office** ] 節點底下。 每個範本都會根據目標應用程式產生具有適當組態的專案，包括組件參考和偵錯設定。  
   
- 每個專案都會提供檔案和程式碼，協助您建立特定類型的方案。 針對每個專案產生的程式碼都包含開機和關機事件處理常式。 您可以在這些事件處理常式中加入程式碼，以在載入方案時將方案初始化，並在卸載方案時將方案清除。 如需詳細資訊，請參閱[Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)和[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+ 每個專案都會提供檔案和程式碼，協助您建立特定類型的方案。 針對每個專案產生的程式碼都包含開機和關機事件處理常式。 您可以在這些事件處理常式中加入程式碼，以在載入方案時將方案初始化，並在卸載方案時將方案清除。 如需詳細資訊，請參閱 < [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)並[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
   
 > [!NOTE]  
->  特定 Visual Studio 版本隨附 Office 開發工具。 如需詳細資訊，請參閱[設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
+>  特定 Visual Studio 版本隨附 Office 開發工具。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
   
 ##  <a name="DocLevel"></a> 文件層級自訂  
  [ **新增專案** ] 對話方塊中的 [ **Office** ] 節點提供下列專案範本，讓您開始建立 Word 和 Excel 文件層級的自訂：  
@@ -92,7 +92,7 @@ ms.locfileid: "34692609"
   
 -   [逐步解說： 建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [逐步解說： 建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [逐步解說： 建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> VSTO 增益集  
  [新增專案]  對話方塊中的 [Office/SharePoint]  節點提供下列專案範本，讓您開始建立 VSTO 增益集。  
@@ -129,21 +129,21 @@ ms.locfileid: "34692609"
   
  如需開始使用這些專案類型的詳細資訊，請參閱下列主題：  
   
--   [VSTO 增益集進行程式設計快速入門](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [撰寫 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
+-   [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
   
--   [逐步解說： 建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [逐步解說： 建立第一個 VSTO 增益集的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
 -   [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [逐步解說： 建立第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
 -   [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>文件和範本方案比較  
+## <a name="document-vs-template-solutions"></a>文件與範本方案的比較  
  設計 Word 文件或 Excel 活頁簿適用的方案時，必須決定向使用者提供這份文件的最佳方式。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -166,15 +166,15 @@ ms.locfileid: "34692609"
 ## <a name="word-templates"></a>Word 範本  
  如果 Microsoft Office Word 範本具有 Managed 程式碼擴充，當範本是以全域範本的形式附加，或是從 Word 的 [啟動] 目錄載入時，便不會呼叫專案組件。 此外，文件也無法辨識屬於 Office 方案一部分的範本格式。  
   
-## <a name="excel-add-ins-xla-files"></a>Excel 增益集 (.xla 檔)  
- 目前沒有可建立 Excel VSTO 增益集 (.xla 檔案) 的 Office 專案。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果將具有 managed 程式碼擴充，為活頁簿**Microsoft Office Excel 增益集 (\*.xla)** 檔案中，您可以選取在**增益集**套用至另一個活頁簿的對話方塊。 在某些情況下，套用 VSTO 增益集以後，程式碼會在目標活頁簿中執行，但是目前並不支援這樣使用 Office 方案。  
+## <a name="excel-add-ins-xla-files"></a>Excel 增益集 （.xla 檔案）  
+ 沒有用於建立 Excel VSTO 增益集的 Office 專案 (*.xla*檔案)。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果您儲存活頁簿具有 managed 程式碼延伸模組，作為**Microsoft Office Excel 增益集 (\*.xla)** 檔案中，您可以選取在**增益集**對話方塊中，要套用至另一個活頁簿。 在某些情況下，您的程式碼會執行在目標活頁簿之後，套用 VSTO 增益集時，但不是支援這樣使用 Office 方案。  
   
 ## <a name="see-also"></a>另請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [開始使用 Word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [VSTO 增益集進行程式設計快速入門](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [開始使用 word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

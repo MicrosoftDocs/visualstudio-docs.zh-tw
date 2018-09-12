@@ -29,25 +29,22 @@
       }
     ],
     "overwrite": [],
-   "externalReference": [],
+    "externalReference": [],
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.zh-tw",
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
-      "bilingual_type": "hover over",
             "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
-            "bilingual_type": "hover over",
-             "ms.author": "",
+            "ms.author": "",
             "manager": "ghogen",
             "ms.date": "3/7/2017",
             "ms.topic": "article",
             "audience": "developer",
             "ms.reviewer": "",
             "searchScope": ["Scripting"],
-            "hideScope": true,
-      "uhfHeaderId": "MSDocsHeader-VisualStudio"
+            "hideScope": true
     },
     "fileMetadata": {},
     "template": [],

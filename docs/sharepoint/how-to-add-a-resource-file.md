@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756567"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774644"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何： 加入資源檔
   方案節點，然後在 [方案總管] 中的功能節點的捷徑功能表上，是將資源檔的命令。 如需詳細資訊，請參閱 <<c0> [ 當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
@@ -41,7 +41,7 @@ ms.locfileid: "36756567"
   
 4.  在 **加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。  
   
-     這個步驟會將全域資源檔加入至您的方案格式，也就是資源 * x ***。*** 文化特性 ***。** resx，例如*Resource1.en US.resx*。  
+     這個步驟會全域資源檔加入至您的方案中的格式，Resource_x_**。**_文化特性_**。** resx，例如*Resource1.en US.resx*。  
   
 5.  當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36756567"
   
 2.  在**方案總管 中**，開啟下的功能名稱的捷徑功能表**功能**節點，然後選擇**加入功能資源**。  
   
-     這個步驟會加入資源檔格式，功能 * ResourceFileName ***。*** 文化特性 ***。** resx，例如*Feature1.en US.resx*。  
+     這個步驟會加入資源檔格式的功能_ResourceFileName_**。**_文化特性_**.resx**，例如*Feature1.en US.resx*。  
   
 3.  當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。  
   

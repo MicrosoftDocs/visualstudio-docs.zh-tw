@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513269"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626697"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -105,15 +105,13 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 我們已經介紹 Visual Studio 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 
 > [!div class="nextstepaction"]
-> [快速入門：將 IDE 個人化](../ide/quickstart-personalize-the-ide.md)
+> [了解程式碼編輯器](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+> [了解專案與解決方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 預覽](../ide/visual-studio-ide.md)
-- [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)
+- [Visual Studio 2017 的其他功能](../ide/advanced-feature-overview.md)
+- [變更佈景主題與字型色彩](../ide/quickstart-personalize-the-ide.md)

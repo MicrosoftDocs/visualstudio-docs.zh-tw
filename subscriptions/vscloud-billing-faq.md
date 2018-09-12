@@ -9,12 +9,12 @@ description: 雲端訂用帳戶帳單問題。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303318"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289291"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 
@@ -26,9 +26,9 @@ ms.locfileid: "36303318"
 答：不行。 所有的 Visual Studio 雲端訂閱都必須使用 Azure 訂用帳戶購買。 (請把它想像為您的 Azure 計費帳戶。)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>問：什麼類型的 Azure 訂用帳戶可以用來購買 Visual Studio 雲端訂閱？
-答：幾乎所有的 Azure 訂用帳戶都可以使用，我們支援連接到您 [Enterprise 合約 (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) 的 Azure 訂用帳戶、雲端解決方案提供者 (CSP) 設定的 Azure 訂用帳戶、透過 Microsoft Open License 經銷商設定的 Azure 訂用帳戶、預付型方案 Azure 訂用帳戶，您甚至可以使用 Visual Studio 訂閱者設定為訂閱者權益的 Azure 訂用帳戶購買 (但您不可以使用您每月的點數支付更多的 Visual Studio 訂用帳戶)。
+答：可以使用大部分 Azure 訂用帳戶；我們支援連線至 [Enterprise 合約 (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) 的 Azure 訂用帳戶、雲端解決方案提供者 (CSP) 所設定的 Azure 訂用帳戶、透過 Microsoft Open License 轉銷商所設定的 Azure 訂用帳戶，以及隨用隨付 Azure 訂用帳戶。
 
-唯一明顯排除在外的，是您不可以使用 [Azure 免費試用](https://azure.microsoft.com/pricing/free-trial/)。
+無法使用某些類型的 Azure 訂用帳戶 (包括 [Azure 免費試用](https://azure.microsoft.com/pricing/free-trial/) 以及併入為 Visual Studio 訂用帳戶中訂閱者權益的訂用帳戶)。
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>問：我必須購買其他 Azure 服務嗎？
 答：完全不用。 如果您只想要透過 Azure 購買 Visual Studio 雲端訂閱，您可以就這麼做。

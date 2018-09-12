@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008404"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280034"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -255,7 +255,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 延伸模組
 
-先前，您可以編寫 [IntelliSense 延伸模組](https://msdn.microsoft.com/en-us/library/hh874692.aspx)，以讓您新增協力廠商程式庫的自訂完成結果。
+先前，您可以編寫 [IntelliSense 延伸模組](https://msdn.microsoft.com/library/hh874692.aspx)，以讓您新增協力廠商程式庫的自訂完成結果。
 這些延伸模組的撰寫相當困難，而且安裝和參考它們十分麻煩，因此新語言服務往後將不支援這些檔案。
 撰寫 TypeScript 定義檔來提供與舊 `.intellisense.js` 延伸模組相同的 IntelliSense 優點，是較簡單的替代方法。
 您可以在[這裡](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)深入了解宣告 (`.d.ts`) 檔案編寫。

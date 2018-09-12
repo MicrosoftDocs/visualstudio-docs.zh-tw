@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21a7d1a9ef072f13d53698a7fc09a83d7041e1bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280477"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289381"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
@@ -24,24 +24,24 @@ ms.locfileid: "36280477"
 ## <a name="activation-steps"></a>啟用步驟
 1.  若要使用 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2.  在 [工具] 區段找到 [MODERNRequirements4TFS] 磚，並按一下權益磚左下角的 [取得代碼] 連結。
-
-    ![ModernRequirements 權益磚](_img\vs-modernreq\vs-modernreq-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 權益磚](_img\vs-modernreq\vs-modernreq-tile.png)
 
 2.  您會收到已成功擷取代碼的通知。  按一下 [啟用]。
 
 3.  系統會將您重新導向至 ModernRequirements 網站以建立您的帳戶，並下載軟體。  在登陸頁面上，提供要求的連絡資訊，然後按一下 [Get License Key and Download] (取得授權金鑰並下載)。
-
-    ![ModernRequirements 登陸頁面](_img\vs-modernreq\vs-modernreq-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 登陸頁面](_img\vs-modernreq\vs-modernreq-landing.png)
 
 
 4.  下一頁會包含您的授權金鑰。  請檢閱頁面上所提供安裝的相關資訊，然後按一下頁面中間的藍色 [To download the software please click here]　(若要下載軟體請，按一下這裡) 連結。
-
-    ![ModernRequirements 授權金鑰](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 授權金鑰](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
 
 
 5.  在 [下載] 頁面上，您可以選擇安裝 MODERNRequirements 套件，或從 SMARTOffice4TFS 套件安裝個別模組。  您適用的選項取決於您的喜好設定，以及您已安裝的 TFS 版本。  請務必熟悉頁面上的資訊，以協助您選取正確的產品版本。
-
-    ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  在此範例中，我們將選擇 SMARTOffice4TFS。  下載對話方塊將會出現，並提供三個選項來下載並儲存 .zip 檔案。  我們將選擇 [儲存]，以在電腦的 [下載] 資料夾中儲存套件複本。
 
@@ -57,7 +57,8 @@ ms.locfileid: "36280477"
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
-    ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
 11. 以滑鼠右鍵按一下資料夾，然後選擇 [Extract All] (全部解壓縮)。  指定您要在其中解壓縮檔案的位置，然後按一下 [Extract ] (解壓縮)。
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586556"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626705"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -48,7 +48,7 @@ ms.locfileid: "39586556"
 
 1. 在 Visual Studio 中建立新的 Python 專案，方法是選取 [檔案] > [新增] > [專案]。 搜尋 Python、選取 [Python 應用程式] 範本、提供適合的名稱和位置，並選取 [確定]。
 
-1. 使用 C++ 需要您使用 32 位元 Python 解譯器 (建議使用 Python 3.6)。 在 Visual Studio 的 [方案總管] 視窗中，展開專案節點，然後展開 [Python 環境] 節點。 如果您看到預設值是 32 位元環境 (粗體或標示為 [全域預設值])，請依照[針對專案選取 Python 環境](selecting-a-python-environment-for-a-project.md)上的指示進行。 如果您還未安裝 32 位元解譯器，請參閱[安裝 Python 解譯器](installing-python-interpreters.md)。
+1. 使用 C++ 需要您使用 32 位元 Python 解譯器 (建議使用 Python 3.6 或更新版本)。 在 Visual Studio 的 [方案總管] 視窗中，展開專案節點，然後展開 [Python 環境] 節點。 如果您看到預設值是 32 位元環境 (粗體或標示為 [全域預設值])，請依照[針對專案選取 Python 環境](selecting-a-python-environment-for-a-project.md)上的指示進行。 如果您還未安裝 32 位元解譯器，請參閱[安裝 Python 解譯器](installing-python-interpreters.md)。
 
 1. 在專案的 *.py* 檔案中，貼上下列程式碼，以為雙曲線正切函數的計算進行基準測試 (實作時不使用數學程式庫，以方便比較)。 您可以隨意以手動方式輸入程式碼，來體驗一些 [Python 編輯功能](editing-python-code-in-visual-studio.md)。
 
@@ -290,7 +290,7 @@ ms.locfileid: "39586556"
 
 ## <a name="debug-the-c-code"></a>偵錯 C++ 程式碼
 
-Visual Studio 可支援同時針對 Python 與 C++ 程式碼進行偵錯。
+Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下 Python 專案、依序選取 [屬性]、[偵錯] 索引標籤，然後選取 [偵錯] > [啟用機器碼偵錯] 選項。
 

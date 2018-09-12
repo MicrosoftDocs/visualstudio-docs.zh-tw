@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468269"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626707"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 生產力指南
 
@@ -46,12 +46,12 @@ ms.locfileid: "39468269"
 | **Ctrl**+**.** (在 C# 設定檔中為 **Alt**+**Enter**) | 快速動作及重構 | 查看您游標位置或選取的程式碼有哪些程式碼修正、程式碼產生動作、重構或其他快速動作可供使用 |
 | **Ctrl**+**D** | 重複行 | 複製游標所在行的程式碼 (適用於 **Visual Studio 2017 15.6 版**和更新版本) |
 | **Shift**+**Alt**+**+**/**-** | 展開/折疊選取項目 | 展開或折疊編輯器中的前選取項目 (適用於 **Visual Studio 2017 15.5 版**和更新版本) |
-| **Shift** + **Alt** + **Ins** | 插入下一個相符的插入點 | 在下一個符合目前選取項目的位置，新增選取項目及插入點 (在 **Visual Studio 2017 版本 15.8** 及最新版本中提供) |
+| **Ctrl** + **Alt** + **.** | 插入下一個相符的插入點 | 在下一個符合目前選取項目的位置，新增選取項目及插入點 (在 **Visual Studio 2017 版本 15.8** 及最新版本中提供) |
 | **Ctrl**+**Q** | 快速啟動 | 搜尋所有 Visual Studio 設定 |
 | **F5** | 開始偵錯 | 開始偵錯應用程式 |
 | **Ctrl**+**F5** | 執行而不偵錯 | 在本機執行應用程式而不偵錯 |
-| **Ctrl**+**K**、**D** (預設設定檔) 或 **Ctrl**+**E**、**D** (C# 設定檔) | 格式化文件 | 根據您的新行字元、間距和縮排設定，來清除您檔案中的格式違規 |
-| **Ctrl**+**\\**、**E** (預設設定檔) 或 **Ctrl**+**W**、**E** (C# 設定檔) | 檢視錯誤清單 | 查看您文件、專案或方案中的所有錯誤 |
+| **Ctrl**+**K**、**D** (預設設定檔) 或 **Ctrl**+**E**、**D** (C# 設定檔) | [將文件格式化](code-styles-and-quick-actions.md#format-document-command) | 根據您的新行字元、間距和縮排設定，來清除您檔案中的格式違規 |
+| **Ctrl**+**\\**、**Ctrl**+**E** (預設設定檔) 或 **Ctrl**+**W**、**E** (C# 設定檔) | 檢視錯誤清單 | 查看您文件、專案或方案中的所有錯誤 |
 | **Alt** + **PgUp/PgDn** | 前往上一個/下一個問題 | 跳到文件中的上一個/下一個錯誤、警告、建議 (在 **Visual Studio 2017 版本 15.8** 及最新版本中提供) |
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "39468269"
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要快速瀏覽至檔案或型別的方法
 
-Visual Studio 2017 有一個稱為 [移至全部] (**Ctrl**+**T**) 的功能。 [移至全部] 可讓您快速跳到任何檔案、型別、成員或符號宣告。
+Visual Studio 2017 有一項稱為 [移至全部] (**Ctrl**+**T**) 的功能。 [移至全部] 可讓您快速跳到任何檔案、型別、成員或符號宣告。
 
 - 變更此搜尋列的位置，或使用**齒輪**圖示關閉「即時瀏覽預覽」。
 - 使用我們的查詢語法 (例如，"t mytype") 來篩選結果。 您也可以將搜尋範圍僅限於目前的文件。
@@ -133,7 +133,7 @@ Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底�
 
 我們已在 Visual Studio 2017 中加入大量的新偵錯功能：
 
-- 「執行至點選位置」可允許您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
+- 「執行至點選處」可允許您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
 - 新的「例外狀況協助程式」會將最重要的資訊 (例如 NullReferenceException 中哪個變數為 'null') 放置在對話方塊的最上層。
 - [倒退](../debugger/how-to-use-intellitrace-step-back.md)偵錯讓您可以回溯到前面的中斷點或步驟，以檢視應用程式過去的狀態。
 - [快照集偵錯](/azure/application-insights/app-insights-snapshot-debugger)可讓您調查即時 Web 應用程式在例外狀況擲回時的狀態 (必須在 Azure 上)。

@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/02/2018
+ms.date: 08/28/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 0fa9a32bbd03a21e6bc9629f89f9c43d7d376052
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499028"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224994"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 
@@ -25,6 +25,12 @@ ms.locfileid: "39499028"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.2 | 發行 | 2018 年 8 月 28 日 | 15.8.28010.2016 |
+| 15.0.18 | 發行 | 2018 年 8 月 28 日 | 15.0.26228.52 |
+| 15.9.0 Preview 1 | 預覽 | 2018 年 8 月 20 日 | 15.9.28016.0 |
+| 15.8.1 | 發行 | 2018 年 8 月 17 日 | 15.8.28010.2003 |
+| 15.8.0 | 發行 | 2018 年 8 月 14 日 | 15.8.28010.0 |
+| 15.0.17 | 發行 | 2018 年 8 月 14 日 | 15.0.26228.49 |
 | 15.7.6 | 發行 | 2018 年 8 月 2 日 | 15.7.27703.2047 |
 | 15.0.16 | 發行 | 2018 年 8 月 2 日 | 15.0.26228.48 |
 | 15.8.0 Preview 5 | 預覽 | 2018 年 7 月 26 日 | 15.8.27924.0 |
@@ -140,16 +146,7 @@ ms.locfileid: "39499028"
 | 15.1 Preview 1 | 預覽 | 2017 年 3 月 7 日 | 15.0.26304.0 |
 | 15.0.0 | 發行 | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
-## <a name="get-support"></a>取得支援
-
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://visualstudio.microsoft.com/vs/support/#talktous) \(英文\)。
-
-以下是一些支援選項：
-
-* 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
-* 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
-* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 

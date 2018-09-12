@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty::GetProperty |Microsoft 文件
+title: IActiveScriptProperty::GetProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d55fb2d816931a74827d318e13860b3f97f0fd23
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7cd5c7ac948a9001688de69f9db9ee31624ca33d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726048"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284138"
 ---
 # <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
 取得參數所指定的屬性。  
@@ -57,8 +57,8 @@ HRESULT GetProperty(
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|會強制將整數模式，而不是浮動點模式中的指令碼引擎。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|可讓指令碼引擎要被取代的字串比較函式。|  
-|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|通知其他指令碼引擎存在參與為全域物件的指令碼引擎。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]來選取一組支援的語言功能的指令碼引擎。 支援的語言功能的預設集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎就相當於出現在 5.7 版的語言功能集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|會通知任何其他指令碼引擎有貢獻到全域物件的指令碼引擎。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]來選取一組都必須支援的語言功能的指令碼引擎。 所支援的語言功能的預設集合[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎就相當於出現在 5.7 版的語言功能集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。|  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -67,14 +67,14 @@ HRESULT GetProperty(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
- 主機可以使用 SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION 屬性，來通知其他指令碼引擎存在參與為全域物件的指令碼引擎。 例如，Internet Explorer 可以通知[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]僅包含所呈現頁面的引擎[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼。 因此，只有[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎可以將新屬性加入至全域物件的視窗，並沒有要執行相同的 Visual Basic Scripting Edition (VBScript) 引擎。 引擎可以忽略此旗標，或可以使用它來最佳化的新成員加入至全域物件管理。  
+ 主應用程式可以使用 SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION 屬性，以通知任何其他指令碼引擎有貢獻到全域物件的指令碼引擎。 例如，Internet Explorer 可以通知使用者[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]僅包含所呈現頁面的引擎[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼。 因此，只有[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎可以將新屬性加入至全域物件的視窗，並沒有 Visual Basic Scripting Edition (VBScript) 引擎來執行相同的動作。 引擎可以忽略此旗標，或可以使用它來最佳化會新增至全域物件的新成員的管理。  
   
- 主機可以選擇的語言功能集使用 SCRIPTPROP_INVOKEVERSIONING 屬性時，支援[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎已啟動。 如果這個屬性設為 1 (SCRIPTLANGUAGEVERSION_5_7)，可用的語言功能都一樣出現在新版 5.7[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。 如果它設定為 2 (SCRIPTLANGUAGEVERSION_5_8)，可用的語言功能則是出現在 5.7 版以及 5.8 版本中所加入的功能。 根據預設，這個屬性會設定為 0 (SCRIPTLANGUAGEVERSION_DEFAULT)，除非主機支援不同的預設行為，這是相當於出現在 5.7，版的語言功能集。 比方說，Internet Explorer 8 opts 到[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]5.8 版本所支援的語言功能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Internet Explorer 8 的文件模式是 「 Internet Explorer 8 標準 」 模式時，預設的指令碼引擎。  
+ 主應用程式可以使用 SCRIPTPROP_INVOKEVERSIONING 屬性選取一組要的語言功能時，支援[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎已啟動。 如果這個屬性設定為 1 (SCRIPTLANGUAGEVERSION_5_7)，可用的語言功能會出現在 5.7 版的這些相同[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。 如果它設定為 2 (SCRIPTLANGUAGEVERSION_5_8)，可用的語言功能是出現在 5.7 版的 5.8 版中新增功能。 根據預設，這個屬性會設定為 0 (SCRIPTLANGUAGEVERSION_DEFAULT)，除非主機支援不同的預設行為，這是相當於出現在 5.7，版的語言功能集。 比方說，Internet Explorer 8 選擇加入[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]5.8 的版本所支援的語言功能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Internet Explorer 8 的文件模式是 「 Internet Explorer 8 標準 」 模式時，預設的指令碼引擎。  
   
 ## <a name="see-also"></a>另請參閱  
- [定義文件相容性](http://msdn.microsoft.com/library/cc288325)   
+ [定義文件相容性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
  [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [版本資訊](../../javascript/reference/javascript-version-information.md)

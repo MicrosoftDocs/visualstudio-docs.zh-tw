@@ -1,5 +1,5 @@
 ---
-title: Office 程式開發範例 |Microsoft 文件
+title: Office 程式開發範例
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571413"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671372"
 ---
 # <a name="office-development-samples"></a>Office 程式開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。  
@@ -45,6 +45,6 @@ ms.locfileid: "34571413"
   
 ## <a name="see-also"></a>另請參閱  
  [MSDN 開發人員範例： 透過程式碼範例學習](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)  
+ [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)  
   
   

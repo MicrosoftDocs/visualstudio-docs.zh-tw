@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f1344b69aaf098f766aeafddfd23cea84d1a981
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671171"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customization` 命名空間的 `vstov4` 項目描述特定的 Office 方案。 文件層級自訂與 VSTO 增益集的子項目不同。  
@@ -65,18 +66,18 @@ ms.lasthandoff: 05/17/2018
  `customization` 項目具有下列子項目。  
   
 #### <a name="document"></a>文件  
- `document`中的項目`vstov4`命名空間中定義[&#60;文件&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/document-element-office-development-in-visual-studio.md)。  
+ `document`中的項目`vstov4`中所定義的命名空間[&#60;文件&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/document-element-office-development-in-visual-studio.md)。  
   
 ### <a name="vsto-add-ins"></a>VSTO 增益集  
  `customization` 項目具有下列子項目。  
   
 #### <a name="appaddin"></a>appAddin  
- `appAddin`中的項目`vstov4`命名空間中定義[ &#60;appAddin&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)。  
+ `appAddin`中的項目`vstov4`中所定義的命名空間[ &#60;appAddin&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文件層級自訂範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例可說明文件層級自訂的 `customization` 項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例可說明文件層級自訂的 `customization` 項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
@@ -87,10 +88,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customization>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>VSTO 增益集的範例  
+## <a name="example-of-a-vsto-add-in"></a>VSTO 增益集的範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明 VSTO 增益集的 `customization` 項目。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明`customization`VSTO 增益集的項目。 這是包含表單區域的 Outlook VSTO 增益集。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   

@@ -1,7 +1,7 @@
 ---
 title: 對 Python 程式碼進行偵錯
 description: 在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498963"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627037"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -62,7 +62,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 > [!Note]
 > Python 中的一些中斷點可能會令已使用其他程式設計語言的開發人員感到意外。 在 Python 中，整個檔案就是可執行程式碼，因此 Python 會在載入檔案來處理任何最上層類別或函式定義時執行檔案。 如果已設定中斷點，您可以透過類別宣告發現偵錯工具中斷方式。 這種行為正確，不過有時會很令人意外。
 
-您可以自訂觸發中斷點的條件，例如僅在變數設為特定值或值範圍時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中此功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)。
+您可以自訂觸發中斷點的條件，例如僅在變數設為特定值或值範圍時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中這項功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)。
 
 設定條件時，您也可以設定 [動作 (Action)] 並建立要記錄至輸出視窗的訊息，或選擇自動繼續執行。 記錄訊息會建立所謂的「追蹤點」，而不直接將記錄碼新增到您的應用程式︰
 
@@ -80,7 +80,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 | **跳離函式** | **Shift**+**F11** | 執行程式碼直到目前的函式結束，然後逐步執行呼叫的陳述式。  當您不需要對目前函式的其餘部分進行偵錯時，此命令非常有用。 |
 | **執行至游標處** | **Ctrl**+**F10** | 執行程式碼直到編輯器中插入點 (Caret) 的位置。 此命令可讓您輕鬆略過不需偵錯的程式碼區段。 |
 | **設定下一個陳述式** | **Ctrl**+**Shift**+**F10** | 將程式碼中目前的執行點變更為插入點 (Caret) 的位置。 此命令可讓您略過特定的程式碼區段而不執行，例如當您知道程式碼有錯誤或是會產生不想要的副作用時。 |
-| **顯示下一個陳述式** | **Alt**+**Num**+**&#42;**| 返回下一個將執行的陳述式。 如果您在程式碼中四處尋找卻不記得偵錯工具停止的位置時，此命令很有用。 |
+| **顯示下一個陳述式** | **Alt**+**Num** **&#42;**| 返回下一個將執行的陳述式。 如果您在程式碼中四處尋找卻不記得偵錯工具停止的位置時，此命令很有用。 |
 
 ### <a name="inspect-and-modify-values"></a>檢查和修改值
 
@@ -149,11 +149,11 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 | 選項 | 描述 |
 | --- | --- |
-| **搜尋路徑** | 這些值符合在 [方案總管] 中專案的 [搜尋路徑] 節點所顯示的內容。 您可以在此處修改此值，但使用 [方案總管] 會比較容易，因為可讓您瀏覽資料夾並自動將路徑轉換成相對格式。 |
+| **搜尋路徑** | 這些值符合在**方案總管**中，專案 [搜尋路徑] 節點所顯示的內容。 您可以在此處修改此值，但使用 [方案總管] 會比較容易，因為可讓您瀏覽資料夾並自動將路徑轉換成相對格式。 |
 | **指令碼引數** | 這些引數會新增至用來啟動指令碼的命令，顯示在您的指令碼檔案名稱之後。 此處的第一個項目以 `sys.argv[1]` 的格式提供給您的指令碼，第二個項目則是 `sys.argv[2]`，依此類推。 |
 | **解譯器引數** | 這些引數會新增至指令碼名稱之前的啟動器命令列。 此處常見的引數包括控制警告的 `-W ...`，稍微最佳化程式的 `-O` 和使用未緩衝處理之 IO 的 `-u`。 IronPython 使用者可能會使用此欄位傳遞 `-X` 選項，例如 `-X:Frames` 或 `-X:MTA`。 |
 | **解譯器路徑** | 覆寫與目前環境相關聯的路徑。 使用非標準解譯器啟動您的指令碼時，此值會很有用。 |
-| **環境變數** | 在這個多行文字方塊中，新增 \<NAME>=\<VALUE> 格式的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以使用它來手動覆寫那些其他變數中的任一項。 |
+| **環境變數** | 在這個多行文字方塊中，新增 \<NAME>=\<VALUE> 格式的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以用來手動覆寫那些其他變數中的任一項。 |
 
 ## <a name="immediate-and-interactive-windows"></a>即時運算視窗和互動式視窗
 
@@ -192,48 +192,44 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 ![[偵錯互動式視窗 (Debug Interactive Window)] 選項](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>使用實驗性偵錯工具
+<a name="use-the-experimental-debugger"></a>
 
-從 Visual Studio 2017 預覽 4.0 開始，您可以選擇使用「實驗性偵錯工具」，其以 ptvsd 版本 4.1+ 為基礎。 若要選擇該工具，請選取 [工具] > [選項] 功能表命令，然後巡覽至 [選項] 對話方塊中的 [Python] > [實驗性]，然後選取 [使用實驗性偵錯工具]。
+## <a name="use-the-legacy-debugger"></a>使用舊版偵錯工具
 
-實驗性偵錯工具僅與有限的 Python 環境相容，如下表所述：
+Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的偵錯工具。 這個版本的 ptvsd 與 Python 2.7 及 Python 3.5+ 相容。 如果您使用的是 Python 2.6、3.1 到 3.4 或 IronPython，Visual Studio 會顯示**偵錯工具不支援此 Python 環境**的錯誤：
 
-| Python 版本 | 與實驗性偵錯工具相容 |
-| --- | --- |
-| 2.6 | 否 |
-| 2.7 | 是 |
-| 3.1 至 3.4 | 否 |
-| 3.5 和更新版本 | 是 |
-| IronPython | 否 |
+![使用偵錯工具時，偵錯工具不支援此 Python 環境的錯誤](media/debugging-experimental-incompatible-error.png)
 
-如果您嘗試在不相容的環境中使用實驗性偵錯工具，Visual Studio 會顯示錯誤 **「偵錯工具與此環境不相容」**：
+在這些情況下，您必須使用舊版偵錯工具 (即為Visual Studio 2017 15.7 及更舊版本中的預設)。 選取 [工具] > [選項] 功能表命令，瀏覽到 [Python] > [偵錯]，然後選取 [使用舊版偵錯工具] 選項。
 
-![當您使用實驗性偵錯工具時，偵錯工具與此環境不相容的錯誤](media/debugging-experimental-incompatible-error.png)
+若您已在目前環境中安裝舊版 ptvsd (例如較舊的 4.0.x 版，或遠端偵錯所需的 3.x 版)，Visual Studio 可能會顯示錯誤或警告。
 
-選取 [停用實驗性偵錯工具] 命令，該命令會清除 [使用實驗性偵錯工具] 選項。
+當您已安裝 ptvsd 3.x 版時，會顯示**無法載入偵錯工具套件**的錯誤：
 
-> [!Note]
-> Python 3.3 和 3.4 目前不會顯示該警告。
+![使用偵錯工具時，無法載入偵錯工具套件的錯誤](media/debugging-experimental-version-error.png)
 
-如果您已在目前的環境中安裝較舊版的 ptvsd (例如遠端偵錯所需較舊的 4.0.x 版或 3.x 版)，Visual Studio 會顯示錯誤 **「無法載入偵錯工具套件」** 或警告 **「偵錯工具套件已過期」**：
+在這種情況下，選取 [使用舊版偵錯工具] 以設定 [使用舊版偵錯工具] 選項，然後重新啟動偵錯工具。
 
-![當您使用實驗性偵錯工具時，無法載入偵錯工具套件的錯誤](media/debugging-experimental-version-error.png)
+當您已安裝較早的 ptvsd 4.x 版時，會顯示**偵錯工具套件已過時**的警告：
 
-![當您使用實驗性偵錯工具時，偵錯工具套件已過期的錯誤](media/debugging-experimental-version-warning.png)
-
-若要管理您 ptvsd 的安裝，請使用 [Python 環境] 視窗中的 [套件] 索引標籤或透過命令列使用下列命令：
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![使用偵錯工具時，偵錯工具套件已過時的警告](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > 雖然您可以選擇忽略某些 ptvsd 版本的警告，但 Visual Studio 可能無法正常運作。
+
+管理您的 ptvsd 安裝：
+
+1. 瀏覽到 [Python 環境] 視窗中的 [套件] 索引標籤。
+
+1. 在搜尋方塊中輸入 "ptvsd"，然後檢查已安裝的 ptvsd 版本：
+
+    ![在 [Python 環境] 視窗中檢查 ptvsd 版本](media/debugging-experimental-check-ptvsd.png)
+
+1. 如果版本低於 4.1.1a9 (隨附於 Visual Studio 的版本)，請選取套件右側的 **X** 以將舊版解除安裝。 Visual Studio 就會使用其隨附的版本。 (您也可以使用 `pip uninstall ptvsd` 從 PowerShell 解除安裝。)
+
+1. 或者，您可以將 ptvsd 套件更新為其最新版本。 在搜尋方塊中輸入 `ptvsd --upgrade -pre`，然後選取 [執行命令: pip install ptvsd --upgrade -pre]。 (您也可以從 PowerShell 使用相同的命令。)
+
+    ![在 [Python 環境] 視窗中提供升級命令](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>另請參閱
 

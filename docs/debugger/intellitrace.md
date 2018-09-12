@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623812"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321015"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ ms.locfileid: "42623812"
 
 - 記錄特定事件
 
-     檢查相關的程式碼，會出現在的資料**區域變數**期間偵錯工具事件和函式呼叫資訊 視窗
+   檢查相關的程式碼，會出現在的資料**區域變數**期間偵錯工具事件和函式呼叫資訊 視窗
 
 - 偵錯難以重現或在部署中所發生的錯誤
 
@@ -46,7 +46,7 @@ ms.locfileid: "42623812"
 |||
 |-|-|
 |**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)<br />- [使用 IntelliTrace 倒退檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)|
-|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**從已部署應用程式收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**從開始偵錯的 IntelliTrace 記錄檔 （.iTrace 檔案）。**|- [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - 您的應用程式在測試電腦上當機，但在開發電腦上卻執行得很順利。
 
-     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)並[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
+     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)並[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
 - 在部署的應用程式中發生 Bug 或當機。
 
@@ -129,9 +129,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **.NET framework 事件**
 
-     根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如: 
-
-    - 如果是選取核取方塊事件，IntelliTrace 會收集核取方塊的狀態和文字。
+   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 比方說，ror 選取核取方塊事件，IntelliTrace 會收集核取方塊狀態和文字。
 
 - **SharePoint 2010 和 SharePoint 2013 應用程式事件**
 
@@ -180,7 +178,9 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 ## <a name="in-this-section"></a>本節內容
 
 [IntelliTrace 功能](../debugger/intellitrace-features.md)
+
 [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)
+
 [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>部落格

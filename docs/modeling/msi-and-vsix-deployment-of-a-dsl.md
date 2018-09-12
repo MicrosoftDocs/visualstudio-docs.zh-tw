@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566534"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774774"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以安裝特定領域語言，在您自己的電腦或其他電腦上。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已必須安裝在目標電腦上。
@@ -36,7 +36,7 @@ ms.locfileid: "39566534"
 
     1.  在 **方案總管**，以滑鼠右鍵按一下**DslPackage**專案，然後再按一下**在 Windows 檔案總管中開啟資料夾**。
 
-    2.  找出檔案**筒\\\*\\***YourProject***。DslPackage.vsix**
+    2.  找出檔案**筒\\\*\\**_YourProject_**。DslPackage.vsix**
 
 2.  複製 **.vsix**檔案至您要安裝 DSL 的目標電腦。 這可以是您自己的電腦或另一部電腦。
 

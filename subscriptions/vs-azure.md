@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379732"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289352"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -53,21 +53,22 @@ ms.locfileid: "39379732"
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用] 連結。
-
-    ![Azure 磚](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 磚](_img\vs-azure\vs-azure-tile.png)
 
 3.  填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]：
-
-    ![Azure 註冊](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 註冊](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  您的帳戶就緒時，可以選擇 Azure 支援方案 (個別銷售)，或開始使用您的 Azure 訂用帳戶。
-
-    ![Azure 準備就緒](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 準備就緒](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  將會載入「Azure 儀表板」，而且在您第一次使用時可以選擇加入導覽。  本導覽包含一系列的螢幕提示，指出如何完成各種工作，並找到相關資訊。  完成或關閉導覽將會顯示「Azure 儀表板」。
 
 6.  將 [Azure 入口網站](https://portal.azure.com)加上書籤，方便您在未來進行存取。
-![Azure 儀表板](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 儀表板](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>常見問題集
 

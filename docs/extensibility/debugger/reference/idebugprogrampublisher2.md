@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 |Microsoft 文件
+title: IDebugProgramPublisher2 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f927a3215a415745c2e9004573810101c229ab5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e085cc144c35c59a50ec7c46f8087ccbae46fcd7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119555"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283245"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-這個介面可讓偵錯引擎 (DE) 或自訂連接埠供應商註冊進行偵錯的程式。  
+此介面可讓偵錯引擎 (DE) 或自訂的連接埠提供者註冊進行偵錯的程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,11 +31,11 @@ ms.locfileid: "31119555"
 IDebugProgramPublisher2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- Visual Studio 實作此介面，以便註冊才能讓變更可見的偵錯可跨多個處理序偵錯的程式。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ Visual Studio 會實作這個介面來註冊，才能顯示偵錯可跨多個處理序偵錯的程式。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫 COM 的`CoCreateInstance`函式與`CLSID_ProgramPublisher`取得此介面 （請參閱範例）。 DE 或自訂連接埠供應商使用此介面來註冊程式節點代表偵錯的程式。  
+ 呼叫 COM 的`CoCreateInstance`函式搭配`CLSID_ProgramPublisher`來取得這個介面 （請參閱範例）。 DE 或自訂的連接埠提供者會使用此介面，以註冊計劃的節點，代表正在偵錯程式。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法：  
@@ -43,13 +43,13 @@ IDebugProgramPublisher2 : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|讓程式節點使用 DEs 和工作階段偵錯管理員 (SDM)。|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式 節點，所以已無法再使用。|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式 節點，使它已無法再使用。|  
 |[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|讓程式使用 DEs 和 SDM。|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，因此已無法再使用。|  
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，表示偵錯工具已存在。|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，讓它不再提供。|  
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，指出偵錯工具會出現。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面提供的程式和程式的節點 （也就是 「 發行 」 它們） DEs 和工作階段的偵錯管理員 (SDM) 所使用。 若要存取已發行的程式和程式節點時，使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。 這是 Visual Studio 可辨識的偵錯程式的唯一方式。  
+ 這個介面提供程式和程式節點 （也就是"「 會加以發佈） 使用 DEs 和工作階段的偵錯管理員 (SDM)。 若要存取已發佈的程式和程式節點，請使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。 這是 Visual Studio 可以辨識程式正在偵錯的唯一方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
@@ -59,7 +59,7 @@ IDebugProgramPublisher2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
- 這個範例示範如何具現化程式發行者及註冊程式節點。 這取自教學課程中，[發佈程式節點](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
+ 此範例示範如何具現化程式發行者及註冊程式 節點。 這取自教學課程中，[發佈程式節點](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
   
 ```cpp  
 // This is how m_srpProgramPublisher is defined in the class definition:  

@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946922"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279241"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 
@@ -64,7 +64,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
         </a>
     </li>
     <li>
-        <a href="/vsts/">
+        <a href="/azure/devops/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -74,7 +74,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Team Services</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
             </div>
         </div>
         </a>
-    </li>   
+    </li>
 </ul>
 
 ---
@@ -158,7 +158,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
                             <li>Team Foundation Server 及 TFS CAL</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -174,11 +174,11 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 開發人員訂閱</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows 開發人員帳戶</a></li>
                             <li>PowerBI Pro</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 專業技術援事件</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure 諮詢對談</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure 社群</a></li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>

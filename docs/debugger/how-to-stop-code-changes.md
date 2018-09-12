@@ -1,5 +1,5 @@
 ---
-title: 如何： 停止程式碼變更 |Microsoft 文件
+title: 如何： 停止程式碼變更 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481940"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282363"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
@@ -42,4 +42,4 @@ ms.locfileid: "31481940"
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)   
- [編輯後繼續、 偵錯、 選項對話方塊](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)

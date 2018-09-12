@@ -1,16 +1,16 @@
 ---
 title: 登入 Visual Studio for Mac
 description: 如何登入 Visual Studio for Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 066f91db52a60cd524df3c3d5328acd45b11443c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a568ab0f49e3b6e0b92ecd97040ad8fe1d71ac7d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995802"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224131"
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 

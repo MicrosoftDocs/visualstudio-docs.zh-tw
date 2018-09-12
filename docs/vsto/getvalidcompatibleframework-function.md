@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7df1e2d197147399fd6492222978dcf748a4bb2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 18ef1d61d0e203744cc6436d884c37339a4a1ef0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670798"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 函式
-  這個 API 支援 Office 基礎結構，並不適合直接從您的程式碼使用。  
+  此 API 支援 Office 基礎結構，但不適合直接從您的程式碼使用。  
   
 ## <a name="syntax"></a>語法  
   
-```c  
+```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
@@ -38,6 +39,6 @@ HRESULT WINAPI GetValidCompatibleFramework(
 |*pbstrValidFrameworkTag*|請勿使用。|  
   
 ## <a name="return-value"></a>傳回值  
- 如果函式成功，它會傳回**S_OK**。 如果函式失敗，它會傳回錯誤碼。  
+ 如果此函數就會成功，它會傳回**S_OK**。 如果函式失敗，它會傳回錯誤碼。  
   
   

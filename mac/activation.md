@@ -1,16 +1,16 @@
 ---
 title: 啟用 Visual Studio for Mac 的訂閱
 description: 本文章說明如何使用您的 Microsoft 帳戶來啟用您的訂用帳戶，並解除 Visual Studio for Mac 中功能的鎖定
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 6117d4e32e20972130eb733fb70bc6c0145bc2ea
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283298"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223917"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 

@@ -18,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4935d0256eb1a5aab57f24a884232e9d97b29c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693152"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671401"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 自訂逐步解說
   下列逐步解說示範使用文件層級自訂和 VSTO 增益集來自訂 Microsoft Office 應用程式使用者介面 (UI) 的方法。  
   
 ## <a name="actions-pane-walkthroughs"></a>執行窗格逐步解說  
- [逐步解說： 將文字插入文件從執行窗格](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [逐步解說： 從 [動作] 窗格中的文件中插入文字](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  示範如何在 Word 文件中建立執行窗格。 執行窗格包含會將使用者輸入傳送至文件的兩個控制項。  
   
  [逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
@@ -39,13 +39,13 @@ ms.locfileid: "34693152"
  描述如何將繫結至資料來源的控制項新增至 Excel 中的執行窗格。  
   
 ## <a name="custom-task-pane-walkthroughs"></a>自訂工作窗格逐步解說  
- [逐步解說： 運用自訂工作窗格應用程式自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [逐步解說： 將自動化的自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
  示範如何建立包含控制項的自訂工作窗格，其中的控制項會在使用者按一下時自動化主應用程式。  
   
  [逐步解說： 與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  示範如何建立使用者按一下功能區上的切換按鈕以隱藏或顯示的自訂工作窗格。  
   
- [逐步解說： 在 Outlook 中顯示電子郵件訊息的自訂工作的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [逐步解說： 在 Outlook 中顯示自訂工作窗格與電子郵件訊息](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
  示範如何顯示自訂工作窗格的唯一執行個體，內含已在 Outlook 中建立或開啟的每一則電子郵件訊息。  
   
 ## <a name="ribbon-walkthroughs"></a>功能區逐步解說  
@@ -65,15 +65,15 @@ ms.locfileid: "34693152"
  [逐步解說： 變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  示範如何使用文件層級自訂中的核取方塊，變更 Word 文件中的格式。  
   
- [逐步解說： 使用按鈕在文件中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [逐步解說： 使用按鈕文件中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  示範如何在 Word 文件上使用按鈕和文字方塊。  
   
- [逐步解說： 更新使用選項按鈕在文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [逐步解說： 更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  示範如何使用文件層級自訂中的選項按鈕，在 Word 文件中變更圖表樣式。  
   
-## <a name="controls-on-excel-worksheets"></a>Excel 工作表上的控制項  
+## <a name="controls-on-excel-worksheets"></a>Excel 工作表的控制項  
  [逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
- 示範如何使用 VSTO 增益集，將控制項加入工作表。  
+ 示範如何使用 VSTO 增益集，將控制項新增至工作表。  
   
  [逐步解說： 變更工作表的格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  示範在 Excel 工作表上使用核取方塊變更格式的基本概念。  
@@ -81,16 +81,16 @@ ms.locfileid: "34693152"
  [逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  示範在 Excel 工作表上使用按鈕和文字方塊的基本概念。  
   
- [逐步解說： 更新使用選項按鈕在工作表中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [逐步解說： 更新工作表使用選項按鈕中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  說明在 Excel 工作表上使用選項按鈕變更圖表樣式的基本概念。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
- [Excel 用法逐步解說](../vsto/walkthroughs-using-excel.md)   
+ [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office 方案逐步解說中的資料](../vsto/data-in-office-solutions-walkthroughs.md)   
  [安全性和部署的逐步解說](../vsto/security-and-deployment-walkthroughs.md)   
- [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)   
+ [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   
   

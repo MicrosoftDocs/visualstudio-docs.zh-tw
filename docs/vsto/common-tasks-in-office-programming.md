@@ -1,5 +1,5 @@
 ---
-title: Office 程式設計的一般工作
+title: 在 Office 程式設計中的一般工作
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670871"
 ---
-# <a name="common-tasks-in-office-programming"></a>Office 程式設計的一般工作
+# <a name="common-tasks-in-office-programming"></a>在 Office 程式設計中的一般工作
   本主題旨在協助您找出下列類別之使用 Visual Studio 進行 Office 方案程式設計的相關常見問題解答。  
   
 -   [安裝和一般工作](#projects)  
@@ -46,17 +47,17 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
--   [如何： 升級 Office 方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)。  
+-   [如何： 升級 Office 方案](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
   
 -   [如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 -   [如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
--   [如何： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+-   [如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
--   [如何： 開啟 Office 方案，但不執行程式碼](../vsto/how-to-open-office-solutions-without-running-code.md)。  
+-   [如何： 開啟的 Office 方案，而不需執行的程式碼](../vsto/how-to-open-office-solutions-without-running-code.md)。  
   
--   [如何： 設定組態資訊之 Office 方案的](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)。  
+-   [如何： 設定 Office 方案的組態資訊](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)。  
   
 -   [如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
@@ -84,9 +85,9 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="task-panes-in-vsto-add-ins"></a>在 VSTO 增益集的工作窗格  
   
--   [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+-   [如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
-### <a name="ribbon-customizations"></a>功能區自訂  
+### <a name="ribbon-customizations"></a>功能區自訂項目  
   
 -   [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
@@ -94,9 +95,9 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)。  
   
--   [如何： 將控制項加入 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)。  
+-   [如何： 將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)。  
   
--   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [如何：將功能區設計工具的功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="outlook-form-regions"></a>Outlook 表單區域  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="custom-menus"></a>自訂功能表  
   
--   [如何： 將命令加入至快顯功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
+-   [如何： 將命令加入至捷徑功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
 ##  <a name="excel"></a> Excel 自動化工作  
   
@@ -132,15 +133,15 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)。  
   
--   [如何： 以程式設計方式變更工作表包含選取儲存格的資料列中的格式化](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)。  
+-   [如何： 以程式設計方式變更包含選取儲存格的工作表列格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)。  
   
--   [如何： 以程式設計方式搜尋工作表範圍中的文字](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)。  
+-   [如何： 以程式設計方式在工作表範圍中的文字搜尋](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)。  
   
 -   [如何： 以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)。  
   
 -   [如何： 以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)。  
   
--   [如何： 以程式設計的方式排序工作表中的資料](../vsto/how-to-programmatically-sort-data-in-worksheets.md)。  
+-   [如何： 以程式設計方式排序工作表中的資料](../vsto/how-to-programmatically-sort-data-in-worksheets.md)。  
   
 ##  <a name="word"></a> Word 自動化工作  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)。  
   
--   [如何： 以程式設計方式定義和選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
+-   [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
   
 -   [如何： 以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)。  
   
@@ -180,31 +181,31 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)。  
   
--   [如何： 從資料庫的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+-   [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
--   [如何： 從服務的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)。  
+-   [如何： 擴展的資料服務文件](../vsto/how-to-populate-documents-with-data-from-services.md)。  
   
--   [如何： 從物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)。  
+-   [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)。  
   
--   [如何： 從資料庫的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+-   [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
--   [如何： 從服務的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)。  
+-   [如何： 擴展的資料服務文件](../vsto/how-to-populate-documents-with-data-from-services.md)。  
   
 -   [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 ### <a name="cached-data-in-document-level-solutions"></a>在文件層級方案中的快取的資料  
   
--   [如何： 快取資料以供離線或伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   [如何： 快取資料以供使用，離線或在伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
--   [如何： 以程式設計方式快取中的 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)。  
+-   [如何： 以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)。  
   
 -   [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)。  
   
 ### <a name="custom-xml-data"></a>自訂 XML 資料  
   
--   [如何： 將自訂 XML 組件加入至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)。  
+-   [如何： 將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)。  
   
--   [如何： 使用 VSTO 增益集將自訂 XML 組件加入文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。  
+-   [如何： 使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。  
   
 ##  <a name="server"></a> 伺服器端文件管理工作  
   
@@ -218,22 +219,22 @@ ms.lasthandoff: 05/17/2018
   
 ##  <a name="deployment"></a> 部署工作  
   
--   [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+-   [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
--   [如何： 使用 ClickOnce 將文件層級 Office 方案發行至 SharePoint 伺服器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
--   [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)。  
+-   [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
   
--   [如何： 安裝必要條件來執行 Office 方案的終端使用者電腦上](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+-   [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
--   [如何： 準備 IIS 來部署 Office 方案的](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
+-   [如何： 準備 IIS 來部署 Office 方案](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
   
--   [如何： 部署 Office 方案的更新](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
+-   [如何： 更新部署 Office 方案](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
   
--   [如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+-   [如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
 ## <a name="see-also"></a>另請參閱  
- [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
   

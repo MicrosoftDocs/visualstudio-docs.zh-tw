@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d34c03d74aae6ba1fb82e7357b6159b261cc2ad
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1f6f40946e8548f833b9a96c92335c7ebb42704f
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118635"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626240"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說： 使用專案範本，第 1 部分中建立網站資料行專案項目
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後再將它們關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後會建立專案範本，可用來建立新的專案，其中包含網站資料行專案項目。  
@@ -46,7 +46,7 @@ ms.locfileid: "37118635"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援版本的 Microsoft Windows、 SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援版本的 Microsoft Windows、 SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 -   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
@@ -434,7 +434,7 @@ ms.locfileid: "37118635"
   
     -   新增`ProjectItem`filethat 每個元素的包含在每個專案執行個體。  
   
-    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005」。 其他專案檔案，在此解決方案使用 「http://schemas.microsoft.com/developer/msbuild/2003"命名空間。 因此，會產生 XML 結構描述的警告訊息，但您可以忽略這些在本逐步解說。  
+    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005」。 其他專案檔案，在此解決方案使用 "http://schemas.microsoft.com/developer/msbuild/2003" 命名空間。 因此，會產生 XML 結構描述的警告訊息，但您可以忽略這些在本逐步解說。  
   
      如需有關的內容 *.vstemplate*檔，請參閱[Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。  
   

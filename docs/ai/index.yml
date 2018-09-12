@@ -1,0 +1,49 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 74548e58da6430888387e300974f4e48d1138c07
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "44134006"
+documentType: LandingData
+title: Visual Studio Tools for AI
+metadata:
+  document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
+  title: Visual Studio Tools for AI | Microsoft Docs
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-ai-tools
+  author: lisawong19
+  ms.author: liwong
+  manager: routlaw
+  ms.topic: landing-page
+  ms.date: 10-25-2017
+abstract:
+  description: Visual Studio Tools for AI 是整合式開發環境，可用來建置、測試和部署深度學習解決方案。 透過我們的快速入門、教學課程和範例來了解如何使用 AI Tools。
+sections:
+- title: 5 分鐘快速入門
+  items:
+  - type: paragraph
+    text: 了解如何使用以下項目執行深層學習解決方案：
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: media/Tensorflow_logo.png
+      text: TensorFlow 與 Python
+      href: tensorflow-local.md
+- title: 逐步教學課程
+  items:
+  - type: paragraph
+    text: 了解如何建置深層學習解決方案：
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="/visualstudio/ai/tensorflow-vm">在雲端中定型 TensorFlow 模型</a>
+- title: 範例
+  items:
+  - type: list
+    style: unordered
+    className: spaced noBullet
+    items:
+    - html: <a href="https://github.com/Microsoft/samples-for-ai">範例存放庫</a>
+    - html: <a href="https://gallery.cortanaintelligence.com/projects">Machine Learning 資源庫</a>

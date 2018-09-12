@@ -9,26 +9,26 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280873"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138939"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 
-Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應用程式的開發。 Visual Studio 可以自動建立設定即程式碼所需的檔案來支援 Kubernetes 部署，例如 Dockerfile 和 Helm 圖表。 此外，您可以從 Visual Studio 發佈直接加入 Azure Kubernetes Service (AKS) 叢集。
+Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應用程式的開發。 Visual Studio 可以自動建立設定即程式碼所需的檔案來支援 Kubernetes 部署，例如 Dockerfile 和 Helm 圖表。 您可以偵錯您的程式碼，在即時 Azure Kubernetes Service (AKS) 叢集中使用 Azure 開發人員的空間，或直接發行至 AKS 叢集中從 Visual Studio 內。
 
 ## <a name="prerequisites"></a>必要條件
 
 若要利用這項新功能，您將需要：
 
-- 最新的預覽版[Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) Azure 開發工作負載。
+- 最新版[Visual Studio 2017](https://visualstudio.microsoft.com/download)具有*ASP.NET 和 web 開發*工作負載。
 
 - [適用於 Visual Studio 的 Kubernetes 工具](https://aka.ms/get-vsk8stools)、 提供個別下載。
 
-- [適用於 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)開發工作站上安裝 （也就是您執行 Visual Studio）
+- [適用於 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)開發工作站上安裝 （也就是您執行 Visual Studio），如果您想要建置 Docker 映像，在本機執行的 Docker 容器進行偵錯或發行至 AKS。
 
 - 如果您想要從 Visual Studio 發佈至 AKS:
 
@@ -74,7 +74,7 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
 - Helm 圖表，以及*圖表*資料夾。 這些 yaml 檔案是由應用程式，您可以將它部署到 Kubernetes 使用 Helm 圖表所組成。 如需有關 Helm 的詳細資訊，請參閱[ https://www.helm.sh ](https://www.helm.sh)。
 
-- *azds.yaml*。 這包含適用於 Azure 開發人員的空間，新的服務，提供快速的反覆式偵錯體驗，Azure Kubernetes 服務中的設定。 此檔案目前未使用，但 Azure 開發人員的空間保留供日後使用。
+- *azds.yaml*。 這包含適用於 Azure 開發人員空間，提供快速的反覆式偵錯體驗，Azure Kubernetes 服務中的設定。 如需詳細資訊，請參閱[Azure 開發人員空間 > 文件](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)。
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>發佈至 Azure Kubernetes Service (AKS)
 

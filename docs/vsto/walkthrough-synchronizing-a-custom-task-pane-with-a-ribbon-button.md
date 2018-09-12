@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 使用功能區按鈕同步處理自訂工作窗格 |Microsoft 文件
+title: 逐步解說： 與功能區按鈕同步處理自訂工作窗格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -26,14 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671396"
 ---
-# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>逐步解說：使用功能區按鈕同步處理自訂工作窗格
-  這項逐步解說示範如何建立使用者按一下功能區上的切換按鈕以隱藏或顯示的自訂工作窗格。 您應該一律建立使用者介面 (UI) 元素，例如按鈕，讓使用者按一下即可顯示或隱藏自訂工作窗格；因為 Microsoft Office 應用程式不提供使用者顯示或隱藏自訂工作窗格的預設方式。  
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>逐步解說： 與功能區按鈕同步處理自訂工作窗格
+  本逐步解說示範如何建立自訂工作窗格的使用者可以隱藏或顯示按一下功能區上的切換按鈕。 您應該一律建立使用者介面 (UI) 元素，例如按鈕，讓使用者按一下即可顯示或隱藏自訂工作窗格；因為 Microsoft Office 應用程式不提供使用者顯示或隱藏自訂工作窗格的預設方式。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -57,19 +58,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel 或 Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]。  
   
-## <a name="creating-the-add-in-project"></a>建立增益集專案  
- 在這個步驟中，您會建立 Excel VSTO 增益集專案。  
+## <a name="create-the-add-in-project"></a>建立增益集專案  
+ 在此步驟中，您將建立適用於 Excel 的 VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  使用 Excel 增益集專案範本建立名為 **SynchronizeTaskPaneAndRibbon**的 Excel 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 Excel 增益集專案範本建立名為 **SynchronizeTaskPaneAndRibbon**的 Excel 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **SynchronizeTaskPaneAndRibbon** 專案加入 [方案總管] 。  
   
-## <a name="adding-a-toggle-button-to-the-ribbon"></a>在功能區加入切換按鈕  
- 其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 為讓使用者能夠控制自訂工作窗格，您可以加入會顯示和隱藏工作窗格的功能區切換按鈕。 若要建立切換按鈕，請將 [功能區 (視覺化設計工具)]  項目加入專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。 如需詳細資訊，請參閱 [Ribbon Designer](../vsto/ribbon-designer.md)。  
+## <a name="add-a-toggle-button-to-the-ribbon"></a>在功能區加入切換按鈕  
+ 其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 為讓使用者能夠控制自訂工作窗格，您可以加入會顯示和隱藏工作窗格的功能區切換按鈕。 若要建立切換按鈕，請將 [功能區 (視覺化設計工具)]  項目加入專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。 如需詳細資訊，請參閱 <<c0> [ 功能區設計工具](../vsto/ribbon-designer.md)。  
   
-#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>在功能區加入切換按鈕  
+### <a name="to-add-a-toggle-button-to-the-ribbon"></a>若要加入至功能區切換按鈕  
   
 1.  在 [專案]  功能表中，按一下 [加入新項目] 。  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」 。  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
  自訂工作窗格沒有視覺化的設計工具，但是您可以根據需要設計使用者控制項的版面配置。 稍後在本逐步解說中，您會在自訂工作窗格中加入使用者控制項。  
   
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
+### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
   
 1.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。  
   
@@ -102,10 +103,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  從 [工具箱]  的 [通用控制項] 索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。  
   
-## <a name="creating-the-custom-task-pane"></a>建立自訂工作窗格  
- 若要在 VSTO 增益集啟動時建立自訂工作窗格，請在 VSTO 增益集的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式中，將使用者控制項加入工作窗格。 自訂工作窗格預設不顯示。 稍後在本逐步解說中，您將加入在使用者按一下您在功能區加入的切換按鈕時，會顯示或隱藏工作窗格的程式碼。  
+## <a name="create-the-custom-task-pane"></a>建立自訂工作窗格  
+ 若要在 VSTO 增益集啟動時建立自訂工作窗格，請在 VSTO 增益集的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式中，將使用者控制項加入工作窗格。 自訂工作窗格預設不顯示。 稍後在本逐步解說中，您將加入程式碼，會顯示或隱藏工作窗格，當使用者按一下您加入至功能區的切換按鈕。  
   
-#### <a name="to-create-the-custom-task-pane"></a>建立自訂工作窗格  
+### <a name="to-create-the-custom-task-pane"></a>建立自訂工作窗格  
   
 1.  展開 [方案總管] 中的 [Excel] 。  
   
@@ -131,30 +132,30 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
   
-## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>使用切換按鈕隱藏和顯示自訂工作窗格  
+## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>隱藏和顯示自訂工作窗格使用切換按鈕  
  最後一個步驟是加入在使用者按一下功能區的切換按鈕時，顯示或隱藏自訂工作窗格的程式碼。  
   
-#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>使用切換按鈕顯示和隱藏自訂工作窗格  
+### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>使用切換按鈕顯示和隱藏自訂工作窗格  
   
 1.  在功能區設計工具中，按兩下 [顯示工作窗格]  切換按鈕。  
   
-     Visual Studio 會自動產生名為 `toggleButton1_Click`的事件處理常式，以處理切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 也會在程式碼編輯器中開啟 **MyRibbon.cs** 或 **MyRibbon.vb** 檔案。  
+     Visual Studio 會自動產生名為 `toggleButton1_Click`的事件處理常式，以處理切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 也會開啟*MyRibbon.cs*或是*MyRibbon.vb*檔案在程式碼編輯器。  
   
 2.  以下列程式碼取代 `toggleButton1_Click` 事件處理常式。 當使用者按一下切換按鈕時，這段程式碼會顯示或隱藏自訂工作窗格，取決於按下或不按切換按鈕。  
   
      [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
   
-## <a name="testing-the-add-in"></a>測試增益集  
- 當您執行專案時，Excel 會開啟但不顯示自訂工作窗格。 按一下功能區的切換按鈕以測試程式碼。  
+## <a name="test-the-add-in"></a>測試的增益集  
+ 當您執行專案時，Excel 會開啟但不顯示自訂工作窗格。 按一下要測試的程式碼的功能區上的切換按鈕。  
   
-#### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
+### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
   
-1.  請按 F5 執行您的專案。  
+1.  按下**F5**執行您的專案。  
   
-     確認 Excel 開啟，而且 [增益集]  索引標籤出現在功能區上。  
+     確認 Excel 開啟，而**增益集**索引標籤會出現在功能區上。  
   
-2.  按一下功能區的 [增益集]  索引標籤。  
+2.  按一下 **增益集**功能區上的索引標籤。  
   
 3.  在 [工作窗格管理員]  群組中，按一下 [顯示工作窗格]  切換按鈕。  
   
@@ -167,17 +168,17 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>後續步驟  
  您可以透過下列主題，進一步了解如何建立自訂工作窗格：  
   
--   在 VSTO 增益集中為不同應用程式建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
+-   建立自訂工作窗格中的 VSTO 增益集不同的應用程式。 如需支援自訂工作窗格應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   運用自訂工作窗格自動化應用程式。 如需詳細資訊，請參閱 [逐步解說：運用自訂工作窗格自動化應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
+-   運用自訂工作窗格自動化應用程式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 運用自訂工作窗格應用程式的自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱 [逐步解說：在 Outlook 中的電子郵件訊息顯示自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+-   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 Outlook 中顯示與電子郵件訊息的自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂工作窗格](../vsto/custom-task-panes.md)   
- [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [逐步解說： 自動化從自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [逐步解說： 在 Outlook 中顯示電子郵件訊息的自訂工作的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [如何： 將自訂工作窗格新增至應用程式](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [逐步解說： 將自動化的自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [逐步解說： 在 Outlook 中顯示自訂工作窗格與電子郵件訊息](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [功能區概觀](../vsto/ribbon-overview.md)  
   
   

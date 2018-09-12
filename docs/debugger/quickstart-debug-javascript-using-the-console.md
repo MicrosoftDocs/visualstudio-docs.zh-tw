@@ -1,5 +1,5 @@
 ---
-title: 使用主控台偵錯 JavaScript |Microsoft 文件
+title: 使用主控台偵錯 JavaScript |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478300"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280827"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
   
- 您可以使用 JavaScript 主控台視窗進行互動，並且使用 JavaScript 建置的 UWP 應用程式進行偵錯。 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式都支援這些功能。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 您可以使用 [JavaScript 主控台] 視窗進行互動，並且使用 JavaScript 建置的 UWP 應用程式進行偵錯。 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式支援這些功能。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  [JavaScript 主控台] 視窗可讓您：  
   
@@ -45,23 +45,23 @@ ms.locfileid: "31478300"
 > [!TIP]
 >  如果 [JavaScript 主控台] 視窗已關閉，選擇**偵錯**> **Windows** > **JavaScript 主控台**即可重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
- 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 以及設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[偵錯 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯  
  下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。  
   
 > [!NOTE]
->  以範例應用程式是 UWP 應用程式。 不過，此處所述的主控台功能也適用於使用 Apache Cordova Visual Studio Tools 所建立的 App。  
+>  範例應用程式是 UWP 應用程式。 不過，此處所述的主控台功能也適用於使用 Apache Cordova Visual Studio Tools 所建立的 App。  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>在 FlipView App 中為 JavaScript 程式碼偵錯  
   
-1.  Visual Studio 中建立新的方案，藉由選擇**檔案** > **新專案**。  
+1.  在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
   
-2.  選擇**JavaScript** > **Windows 通用**，然後選擇  **WinJS 應用程式**。  
+2.  選擇**JavaScript** > **Windows Universal**，然後選擇**WinJS 應用程式**。  
   
 3.  輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
   
-4.  在 index.html 的 BODY 項目，請將現有的 HTML 程式碼取代這段程式碼：  
+4.  在 index.html 的本文項目，取代此程式碼中的現有的 HTML 程式碼：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -137,7 +137,7 @@ ms.locfileid: "31478300"
     })();  
     ```  
   
-7.  如果尚未選取偵錯目標，選擇**本機**旁的下拉式清單**裝置**按鈕**偵錯**工具列：  
+7.  如果尚未選取偵錯目標，選擇**本機電腦**下拉式清單中下一步**裝置**按鈕**偵錯**工具列：  
   
      ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -145,7 +145,7 @@ ms.locfileid: "31478300"
   
      App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。  
   
-9. 與`FlipView`應用程式執行時，型別`Data.items`主控台視窗輸入提示下 (旁">>"符號) 然後按 Enter。  
+9. 與`FlipView`應用程式執行時，型別`Data.items`於主控台視窗輸入提示 (旁">>"符號) 然後按 Enter。  
   
      `items` 物件的視覺化檢視便會出現在主控台視窗中。 這表示 `items` 物件已具現化，且可在目前的指令碼內容中使用。 在主控台視窗中，您可以按一下物件的每個節點以檢視屬性值 (或使用方向鍵)。 這表示 `items._data` 物件已具現化，且可在目前的指令碼內容中使用。 預設影像 (logo.png) 仍存在於物件中，但遺失影像與預期影像顛倒。  
   
@@ -181,17 +181,17 @@ ms.locfileid: "31478300"
   
 13. 選擇綠色箭頭符號以執行指令碼。  
   
-14. 按下 Ctrl + Alt + M，將主控台輸入提示切換至單行模式，然後選擇**清除輸入**（紅色"X"） 刪除輸入提示中的程式碼。  
+14. 按 Ctrl + Alt + M，主控台輸入提示字元切換至單行模式，然後選擇**清除輸入**（紅色"X"） 刪除輸入提示中的程式碼。  
   
 15. 在提示字元中輸入 `Data.items.length = 3` ，然後按 Enter。 這會從資料中移除多餘的項目。  
   
-16. 同樣地，請查看應用程式，您會看到正確的影像位於正確上`FlipView`頁面。  
+16. 同樣地，檢查應用程式，而且您會看到正確的影像是在正確`FlipView`頁面。  
   
 17. 在 [DOM 總管] 中，您可以看到更新的 DIV 項目，而且您可以巡覽至樹狀子目錄，以尋找預期的 IMG 項目。  
   
 18. 依序選擇 [偵錯]  > **Stop ging** 或按 Shift+F5 停止偵錯，接著修正原始程式碼。  
   
-     如需完整 default.html 頁面包含更正後範例程式碼，請參閱[偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)。  
+     完整 default.html 頁面包含更正的範例程式碼，請參閱[偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)。  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 互動式偵錯和中斷模式  
  您可以在使用 JavaScript 偵錯工具 (如 [JavaScript 主控台] 視窗) 的同時，使用中斷點並逐步執行程式碼。 在偵錯工具中執行的程式遇到中斷點時，偵錯工具會暫時停止執行程式。 當執行暫停時，您的程式會從執行模式切換到中斷模式。 您可以隨時繼續執行。  
@@ -200,9 +200,9 @@ ms.locfileid: "31478300"
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>設定中斷點並為 App 偵錯  
   
-1.  中的 default.html 檔案`FlipView`您先前建立的開啟捷徑功能表的應用程式`updateImages()`函式，，然後選擇 **中斷點** > **插入中斷點**.  
+1.  在 default.html 檔案中`FlipView`應用程式，以您先前建立的開啟捷徑功能表`updateImages()`函式，然後再選擇**中斷點** > **插入中斷點**.  
   
-2.  選擇**本機**下拉式清單中下一步**開始偵錯**按鈕**偵錯**工具列。  
+2.  選擇**本機電腦**下拉式清單中下一步**開始偵錯**按鈕**偵錯**工具列。  
   
 3.  依序選擇 [JavaScript]  > **Start ging**，或按 F5。  
   
@@ -218,7 +218,7 @@ ms.locfileid: "31478300"
   
      下圖會顯示目前的主控台視窗。  
   
-     ![JavaScript 主控台視窗中顯示視覺化檢視](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
+     ![JavaScript 主控台視窗顯示視覺化檢視](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
   
 6.  將函式的一行從輸出視窗複製到輸入提示中，並將索引值變更為 3：  
   
@@ -258,4 +258,4 @@ ms.locfileid: "31478300"
  [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
- [產品支援和協助工具](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [產品支援和協助工具](https://visualstudio.microsoft.com/vs/support/)
