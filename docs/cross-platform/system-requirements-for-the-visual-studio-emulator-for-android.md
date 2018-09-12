@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251539"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279397"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
 Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 8 及更新版本的虛擬化技術) 上執行。 若要執行模擬器，您的電腦必須符合執行 Hyper-V 的需求 (如本主題所述)。  
@@ -117,7 +117,7 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
   
 |需求|如何檢查和啟用此需求|  
 |-----------------|----------------------------------------------|  
-|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx)所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理]  服務的狀態。|  
+|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理]  服務的狀態。|  
 |必須執行 Hyper-V。|如需管理服務的詳細資訊，請參閱下列主題：<br /><br /> -   [啟動、停止、暫停、繼續或重新啟動服務](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [設定如何啟動服務](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  您必須是本機 Hyper-V Administrators 群組的成員。  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380493"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320952"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -59,7 +59,7 @@ ms.locfileid: "39380493"
 
    [新增負載測試精靈] 隨即開啟。
 
-1. 選取 [內部部署負載測試] 選項，然後選擇 [下一步]。 您可以在[這裡](/vsts/load-test/get-started-simple-cloud-load-test)深入了解雲端式負載測試。
+1. 選取 [內部部署負載測試] 選項，然後選擇 [下一步]。 您可以在[這裡](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)深入了解雲端式負載測試。
 
    ![新增負載測試精靈 - 第一頁](media/load-test-wizard-page-1.png)
 

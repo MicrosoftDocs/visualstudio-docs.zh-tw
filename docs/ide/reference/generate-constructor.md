@@ -4,17 +4,17 @@ ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 091caf9db4152b7c349fdf717d97639b360bb602
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513020"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124979"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
