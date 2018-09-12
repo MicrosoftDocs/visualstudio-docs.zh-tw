@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 文件 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
-ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: cfbfa4d355466e429831e4c07e2e74c72b6876ed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225106"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281113"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -353,7 +353,7 @@ Unity 遊戲</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -372,7 +372,7 @@ Unity 遊戲</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -383,7 +383,7 @@ Unity 遊戲</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>持續建置應用程式並將它發行至雲端，並透過 VSTS 實作敏捷式做法。</p>
+                                                    <p>利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。</p>
                                                 </div>
                                             </div>
                                         </div>
