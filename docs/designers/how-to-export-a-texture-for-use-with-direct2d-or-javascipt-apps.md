@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924036"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278805"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用
 「影像內容管線」能夠產生可與 Direct2D 的內部轉譯慣例相容的材質。 這種類型的紋理適合在使用 Direct2D 的應用程式中使用，以及在使用 JavaScript 建立的 UWP 應用程式中使用。
@@ -53,7 +53,7 @@ ms.locfileid: "37924036"
 
 2.  設定材質檔案，以便供「影像內容管線」處理。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 
-3.  將輸出格式設定為其中一種區塊壓縮格式。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [壓縮] 屬性設定為 [BC3_UNORM 壓縮 (/compress:BC3_UNORM)]。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需不同 BC 格式的詳細資訊，請參閱 [Block compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx) (區塊壓縮 (Direct3D 10))。
+3.  將輸出格式設定為其中一種區塊壓縮格式。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [壓縮] 屬性設定為 [BC3_UNORM 壓縮 (/compress:BC3_UNORM)]。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需不同 BC 格式的詳細資訊，請參閱 [Block compression (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) (區塊壓縮 (Direct3D 10))。
 
     > [!NOTE]
     >  指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式] 屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」。 一般而言，您不會想要壓縮工作格式。

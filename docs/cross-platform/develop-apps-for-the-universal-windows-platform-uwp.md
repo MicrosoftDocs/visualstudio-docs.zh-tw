@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251533"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280801"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 通用 Windows 平台和單一 Windows 核心可讓您在任何 Windows 10 裝置上執行相同的應用程式 (包括手機和桌上型電腦)。 您可以使用 Visual Studio 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。
@@ -47,7 +47,7 @@ ms.locfileid: "39251533"
 安裝這個軟體之後，您需要啟用 Windows 10 裝置以進行開發。 請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。 您不再需要取得每部 Windows 10 裝置的開發人員授權。
 
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式
-從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 請參閱[建立您的第一個應用程式](/windows/uwp/get-started/your-first-app)，或觀看 [Tools for Windows 10 Overview](http://channel9.msdn.com/Series/ConnectOn-Demand/229) (Windows 10 工具概觀) 影片。
+從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 請參閱[建立您的第一個應用程式](/windows/uwp/get-started/your-first-app)，或觀看 [Tools for Windows 10 Overview](https://channel9.msdn.com/Series/ConnectOn-Demand/229) (Windows 10 工具概觀) 影片。
 
 如果您已使用 Visual Studio 2015 建立現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式，則需要移轉這些應用程式，以使用最新版的通用 Windows 平台。 請參閱[從 Windows 執行階段 8 移至 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
