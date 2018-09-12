@@ -5,12 +5,12 @@ title: Visual Studio 文件 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690594"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44339667"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +42,7 @@ ms.locfileid: "34690594"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,7 +52,7 @@ ms.locfileid: "34690594"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>透過敏捷式專案工具和報告來提升團隊的生產力。 使用新式 CI/CD 工具從原始檔控制建置、測試並部署專案。</p>
                                                 </div>
                                             </div>
@@ -61,7 +61,7 @@ ms.locfileid: "34690594"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                <a href="/tfs/" title="Team Foundation Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -118,7 +118,7 @@ ms.locfileid: "34690594"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio 應用程式中心">
+                                <a href="/appcenter/" title="Visual Studio 應用程式中心">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -137,7 +137,7 @@ ms.locfileid: "34690594"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio 應用程式中心">
+                                <a href="/visualstudio/subscriptions/" title="Visual Studio 訂閱">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
