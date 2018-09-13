@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 3
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是示範如何提供靜態檔案、將頁面新增至應用程式，以及使用範本繼承
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637639"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775752"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
@@ -24,7 +24,7 @@ ms.locfileid: "39637639"
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的精簡 Flask 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
-您可以由此步驟學習到如何：
+在這個步驟中，您將了解如何：
 
 > [!div class="checklist"]
 > - 使用 Visual Studio 項目範本，為可重複使用的程式碼 (步驟 3-1) 新增不同類型的檔案

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225080"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384288"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -69,7 +69,7 @@ ms.locfileid: "43225080"
 
   如果您收到 [使用者帳戶控制] 通知，請按一下 [是]。
 
-2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://go.microsoft.com/fwlink/?LinkID=824704)。 按一下 [ **繼續**]。
+2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 按一下 [ **繼續**]。
 
    ![授權條款和隱私權聲明](media/vs2017-privacy-and-license-terms.PNG "Microsoft 授權條款和隱私權聲明")
 
@@ -138,7 +138,7 @@ ms.locfileid: "43225080"
    例如，若要[建置 C++ 應用程式](../ide/getting-started-with-cpp-in-visual-studio.md)，請按一下 [已安裝]，展開 [Visual C++]，然後選取您要建置的 C++ 專案類型。 <br><br>
    若要[建置 C# 應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，請按一下 [已安裝]，展開 [Visual C#]，然後選取您要建置的 C# 專案類型。
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 4
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「Flask Web 專案」和「Flask/Jade Web 專案」範本所提供的功能。
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388146"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775954"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -45,7 +45,7 @@ ms.locfileid: "39388146"
 
     ![將 FlaskWeb 專案顯示為啟始專案的 [方案總管]](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [Web 伺服器] 按鈕來執行伺服器：
+1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/flask/run-web-server-toolbar-button.png)
 
@@ -102,7 +102,7 @@ def about():
 
 `home` 和 `contact` 函式幾乎相同，具有相同裝飾項目和些微不同的引數。
 
-範本會位於應用程式的 *templates* 資料夾中。 基底範本 *layout.html* 是最廣泛的範本。 它參考所有必要的靜態檔案 (JavaScript 和 CSS)、定義可供其他頁面複寫且名稱為 "content" (內容) 的區塊，以及提供名為 "scripts" (指令碼) 的區塊。 下列加註的摘錄來自 *layout.html*，顯示了這些特定區域：
+範本會位於應用程式的 *templates* 資料夾中。 基底範本 *layout.html* 是最廣泛的範本。 它參考所有必要的靜態檔案 (JavaScript 和 CSS)、定義可供其他頁面複寫且名稱為 "content" (內容) 的區塊，以及提供名為 "scripts" (指令碼) 的區塊。 下列加註的摘錄來自 *layout.html*，顯示這些特定區域：
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ def about():
 </html>
 ```
 
-個別頁面範本 *about.html*、*contact.html* 和 *index.html*，每個都會擴充基底範本 *layout.html*。 *about.html* 最為簡單，並顯示了 `{% extends %}` 和 `{% block content %}` 標籤：
+個別頁面範本 *about.html*、*contact.html* 和 *index.html*，每個都會擴充基底範本 *layout.html*。 *about.html* 最為簡單，並顯示 `{% extends %}` 和 `{% block content %}` 標籤：
 
 ```html
 {% extends "app/layout.html" %}

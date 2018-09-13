@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382418"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283325"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 
@@ -37,6 +37,6 @@ ms.locfileid: "39382418"
 |**在負載測試回合設定中指定測試反覆項目計數：** 您可以透過設定 [測試反覆項目] 屬性，指定要在所有負載測試情節中執行所有 Web 效能測試和單元測試的次數。|-   [如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**指定負載測試回合設定的採樣速率：** 您可以透過設定 [採樣速率] 屬性，指定負載測試收集效能計數器資料的頻率。|-   [如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**指定計時詳細資料儲存區選項：** 您可以透過設定 [計時詳細資料儲存區] 屬性，指定負載測試詳細資料的儲存方式。|-   [如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**指定測試資源保留期間：** 藉由設定 [資源保留時間] 屬性，在指定的期間內保留測試資源，以加速測試 > 修正 > 重新測試的週期。|-   [保留資源以加速負載測試](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**指定測試資源保留期間：** 藉由設定 [資源保留時間] 屬性，在指定的期間內保留測試資源，以加速測試 > 修正 > 重新測試的週期。|-   [保留資源以加速負載測試](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**使用內容參數：** 您可以使用內容參數將字串參數化。 例如，如果您的負載測試含有使用參數型網頁伺服器的 Web 效能測試，您就可以將內容參數新增至對應不同伺服器的回合設定。|-   [如何：將內容參數新增至回合設定](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**設定測試記錄屬性：** 您可以設定系統將資料寫入與負載測試回合設定建立關聯之記錄檔的頻率。 當您要執行大型或複雜的負載測試時，這個屬性可能很重要，因為記錄檔可能會變成數個 GB。<br /><br /> 您也可以將記錄檔設定為在負載測試失敗時自動儲存，以便協助偵錯和分析應用程式。|-   [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)|

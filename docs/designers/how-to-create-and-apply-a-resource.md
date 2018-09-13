@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923996"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282784"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
-XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。
+XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。
 
- 每當您從現有的屬性 ([Style](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 或 `ControlTemplate`) 建立新資源時，[建立資源] 對話方塊都可讓您定義應用程式層級、文件層級或元素層級的資源。 這些層級會決定您可以使用資源的位置。 例如，如果您在項目層級定義資源，該資源只能套用至用來建立資源的項目。 您也可以選擇將資源儲存在資源字典中，資源字典是您可以在其他專案中重複使用的個別檔案。
+ 每當您從現有的屬性 ([Style](/uwp/api/Windows.UI.Xaml.Style) 或 `ControlTemplate`) 建立新資源時，[建立資源] 對話方塊都可讓您定義應用程式層級、文件層級或元素層級的資源。 這些層級會決定您可以使用資源的位置。 例如，如果您在項目層級定義資源，該資源只能套用至用來建立資源的項目。 您也可以選擇將資源儲存在資源字典中，資源字典是您可以在其他專案中重複使用的個別檔案。
 
 ### <a name="to-create-a-new-resource"></a>建立新資源
 

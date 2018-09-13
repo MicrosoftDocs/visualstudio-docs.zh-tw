@@ -1,10 +1,10 @@
 ---
 ms.topic: include
 ms.openlocfilehash: ff6523d33e29f4fcc6fd02c08e0a35ac00892829
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/07/2018
 ms.locfileid: "39638387"
 ---
 ### <a name="create-a-project-using-django-20"></a>使用 Django 2.0 建立專案

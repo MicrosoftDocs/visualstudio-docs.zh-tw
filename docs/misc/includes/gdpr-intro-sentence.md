@@ -6,10 +6,10 @@ ms.topic: include
 author: eross-msft
 ms.author: lizross
 ms.openlocfilehash: 6a06dd660e768a830bc6ab0bfff16d36297f20df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 09/07/2018
 ms.locfileid: "34469124"
 ---
 > [!NOTE]

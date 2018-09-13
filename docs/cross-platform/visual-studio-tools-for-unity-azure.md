@@ -6,18 +6,18 @@ ms.reviewer: crdun
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd97ae354dffab29831289be0e5391bd7c967fb
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251175"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776076"
 ---
 # <a name="program-with-unity-and-azure"></a>使用 Unity 與 Azure 設計程式
 

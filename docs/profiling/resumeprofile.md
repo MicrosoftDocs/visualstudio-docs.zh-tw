@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1572f1473e2da8f84887b6571755dc259e19762b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668388"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法會遞減指定分析層級的暫止/繼續計數器。  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  當開始/停止狀態以及暫止/繼續狀態都是 ON 時，層級的分析狀態就會是 ON。 針對要分析的執行緒，其全域、處理序和執行緒層級狀態都必須為 ON。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>函式資訊  
- 標頭：在 VSPerf.h 中宣告  
+ 標頭：在 *VSPerf.h* 中宣告  
   
- 匯入程式庫：VSPerf.lib  
+ 匯入程式庫：*VSPerf.lib*  
   
 ## <a name="example"></a>範例  
  下面範例示範 ResumeProfile 函式。 這個範例假設已對 [PROFILE_CURRENTID](../profiling/profile-currentid.md) 識別出的相同執行緒或處理序呼叫 SuspendProfile 方法。  
@@ -103,5 +104,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

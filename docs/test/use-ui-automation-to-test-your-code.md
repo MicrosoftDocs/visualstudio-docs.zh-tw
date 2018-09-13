@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381155"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321199"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -35,7 +35,7 @@ ms.locfileid: "39381155"
 
 建立自動程式化 UI 測試十分簡單。 您只需在「自動程式化 UI 測試產生器」於背景執行時，手動執行測試即可。 您也可以指定特定欄位中應該出現的值。 「自動程式化 UI 測試產生器」會錄製您的動作，然後從這些動作產生程式碼。 建立測試之後，即可使用特殊編輯器來編輯該測試，以讓您修改動作的順序。
 
-或者，如果您在 Microsoft 測試管理員中錄製測試案例，則可以透過該測試案例產生程式碼。 如需詳細資訊，請參閱[記錄和播放手動測試](/vsts/test/mtm/record-play-back-manual-tests)。
+或者，如果您在 Microsoft 測試管理員中錄製測試案例，則可以透過該測試案例產生程式碼。 如需詳細資訊，請參閱[記錄和播放手動測試](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)。
 
 即使您的主要技能是測試而非編寫程式碼，特製化「自動程式化 UI 測試產生器」和編輯器也可讓您輕鬆建立和編輯自動程式化 UI 測試。 但是，如果您是開發人員，而且想要使用更進階的方式擴充測試，請讓程式碼更具結構性，以直接複製和調整。 例如，您可能錄製一個在網站上購買某項東西的測試，接著編輯產生的程式碼以加入購買許多項目的迴圈。
 
@@ -441,7 +441,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 
-- [在建置流程中執行測試](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [在建置流程中執行測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [擴充自動程式化 UI 測試和動作記錄](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-自動程式化 UI 測試經常用來自動化手動測試。 如需手動測試的詳細資訊，請參閱[使用 Microsoft Test Manager 執行手動測試](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager)。 如需自動化測試的詳細資訊，請參閱 [Visual Studio 中的測試工具](../test/improve-code-quality.md)。
+自動程式化 UI 測試經常用來自動化手動測試。 如需手動測試的詳細資訊，請參閱[使用 Microsoft Test Manager 執行手動測試](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts)。 如需自動化測試的詳細資訊，請參閱 [Visual Studio 中的測試工具](../test/improve-code-quality.md)。
 
 ## <a name="see-also"></a>另請參閱
 

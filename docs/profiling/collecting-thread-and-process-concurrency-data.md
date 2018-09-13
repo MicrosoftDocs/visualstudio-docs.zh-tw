@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548330"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775544"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 
@@ -31,7 +31,7 @@ Visual Studio 分析工具的並行分析方法可讓您收集資源爭用資料
 
 ## <a name="common-tasks"></a>一般工作
 
-您可以在效能工作階段的 [效能工作階段屬性頁] 對話方塊中指定其他選項。 若要開啟此對話方塊：
+您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：
 
 - 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。
 

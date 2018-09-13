@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889963"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283687"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的 Windows 和 Web 應用程式。 您可以從 [工具箱]  拖曳控制項並在 [屬性]  視窗中設定屬性，藉此建立應用程式的使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
@@ -41,7 +41,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **對齊線**：對齊線是當控制項邊緣對齊時，或文字基線對齊時顯示為紅色虛線的「對齊界限」。 只有在啟用 [貼齊至對齊線]  時才會顯示對齊界限。
 
- **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
+ **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](/uwp/api/Windows.UI.Xaml.Controls.Grid) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
 
  **格線提示**：格線提示會顯示為格線滑軌上已附加垂直或水平線的三角形。 當您拖曳格線提示時，相鄰欄或列的寬度或高度會在您移動滑鼠時更新。
 
@@ -49,7 +49,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **調整控點大小**：調整控點大小會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需在 [設計] 檢視中操作控制項的詳細資訊，請參閱[在 XAML 設計工具中使用項目](../designers/working-with-elements-in-xaml-designer.md)。
 
- **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [[版面配置]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 底下的 **Margin** 屬性設定控制項的邊界。
+ **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [[版面配置]](/uwp/api/windows.ui.xaml.frameworkelement.margin) 底下的 **Margin** 屬性設定控制項的邊界。
 
  **邊界提示**：您可以使用邊界裝飾項來變更項目相對於其版面配置容器的邊界。 當邊界裝飾項呈開啟狀態時，則未設定邊界且邊界裝飾項會顯示中斷的鏈結。 如果未設定邊界，則在執行階段調整版面配置容器的大小時，項目的位置維持不變。 當邊界裝飾項呈關閉狀態時，邊界裝飾項會顯示不中斷的鏈結，而且在執行階段調整版面配置容器的大小時，項目會隨著邊界移動 (邊界會保持固定)。
 

@@ -1,7 +1,7 @@
 ---
 title: Python 專案的項目範本
 description: Python 專案項目範本的參考清單可在 Visual Studio 中透過 [加入] > [新項目] 對話方塊取得。
-ms.date: 04/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008290"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776031"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 
@@ -52,7 +52,7 @@ Python 專案中的項目範本可透過 [專案] > [加入新項目] 功能表�
 >
 > ![正在變更發佈設定](media/template-web-publish-config.png)
 
-### <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [管理 Python 專案 - 專案範本](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python Web 專案範本](python-web-application-project-templates.md)
