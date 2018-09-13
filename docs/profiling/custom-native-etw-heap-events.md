@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749456"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668308"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
-Visual Studio 包含各種[分析與診斷工具](../profiling/profiling-tools.md)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
+Visual Studio 包含各種[分析與診斷工具](../profiling/profiling-feature-tour.md)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
 
 在許多情況下，您可能想要使用自訂的堆積，以避免來自標準堆積的配置負荷。  比方說，您可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)，將大量記憶體配置在應用程式或遊戲開頭，接著在該清單內管理自己的區塊。  在此案例中，記憶體分析工具只會查看該初始配置，而不會查看您在記憶體區塊內完成的自訂管理。  不過，使用自訂原生堆積 ETW 提供者時，您就可以讓工具了解您在標準堆積以外進行的任何配置。
 
@@ -155,8 +155,8 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](../profiling/memory-usage.md)文件，以了解相關說明。
 
 > [!TIP]
-> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯]>[效能分析工具] 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯]>[視窗]>[顯示診斷工具] 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
+> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>另請參閱
-[分析工具](../profiling/profiling-tools.md)  
+[初步認識分析工具](../profiling/profiling-feature-tour.md)  
 [記憶體使用量](../profiling/memory-usage.md)

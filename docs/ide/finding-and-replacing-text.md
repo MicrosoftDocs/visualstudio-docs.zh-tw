@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627241"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384236"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
-您可以在 Visual Studio 編輯器中使用[尋找和取代](#find-and-replace-control)或[檔案中尋找/取代](#find-replace-in-files)來尋找和使用文字。 Visual Studio 2017 15.8 中有一項新功能，讓您可以使用「[多重游標選取](#multi-caret-selection)」，來尋找和取代模式的「某些」執行個體。
+您可以在 Visual Studio 編輯器中使用[尋找和取代](#find-and-replace-control)或[檔案中尋找/取代](#find-in-files-and-replace-in-files)來尋找和使用文字。 Visual Studio 2017 15.8 中有一項新功能，讓您可以使用「[多重游標選取](#multi-caret-selection)」，來尋找和取代模式的「某些」執行個體。
 
 > [!TIP]
 > 如果您要重新命名程式碼符號 (例如變數和方法)，比起使用尋找和取代，最好是*[重構](../ide/reference/rename.md)* 它們。 重構是智慧型功能，可了解範圍，而尋找和取代則會盲目地取代所有執行個體。

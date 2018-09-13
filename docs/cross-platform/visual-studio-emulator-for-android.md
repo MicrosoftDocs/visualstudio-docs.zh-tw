@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233148"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283662"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -84,7 +84,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
  一旦您安裝好目標設定檔集合，即可按綠色的 [播放] 按鈕，直接從管理員啟動這些新的設定檔。 這些設定檔也會出現在任何 Visual Studio 跨平台行動專案類型中的 [偵錯目標] 下拉式功能表中。  
   
 ##  <a name="FeaturesTest"></a> 您可以在模擬器中測試的功能  
- 如需可在模擬器中測試之功能的詳細資訊，請參閱此[部落格文章](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) \(英文\)。  
+ 如需可在模擬器中測試之功能的詳細資訊，請參閱此[部落格文章](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) \(英文\)。  
   
 ##  <a name="FeaturesNonTest"></a> 您無法在模擬器中測試的功能  
  下列清單描述您**無法**在模擬器中測試的 Android 平台功能。 您必須在實體裝置上測試這些功能。  
@@ -106,4 +106,4 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

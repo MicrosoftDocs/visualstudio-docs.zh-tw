@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511687"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384119"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
@@ -38,7 +38,7 @@ Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正�
 
 ### <a name="step-2---check-with-the-developer-community"></a>步驟 2 - 查看開發人員社群
 
-在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html) \(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方式。
+在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方式。
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 3 - 刪除 Visual Studio 安裝程式目錄，以修正升級問題
 
@@ -56,7 +56,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 在某些情況下 (例如與損毀的檔案相關的問題)，則必須逐一查看問題。 為了幫助我們幫助您，請執行下列動作：
 
-1. 收集您的安裝記錄檔。 如需詳細資訊，請參閱[如何取得 Visual Studio 安裝記錄檔](#how-to-get-the-visual-studio-installation-logs)。
+1. 收集您的安裝記錄檔。 如需詳細資訊，請參閱[如何取得 Visual Studio 安裝記錄檔](#how-to-get-visual-studio-installation-logs)。
 2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題] 以開啟「Visual Studio 意見反應」工具。
 ![您可以使用 Tab 鍵移至 [提供意見反應] 按鈕以開啟意見反應工具](media/report-a-problem.png)
 3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步] 以移至 [附件] 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 `%TEMP%\vslogs.zip`)。
@@ -78,7 +78,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 下表列出從本機配置進行安裝時的已知問題與一些可能有幫助的因應措施。
 
-| 問題       | 項目                   | 解決方式 |
+| 問題       | 項目                   | 方案 |
 | ----------- | ---------------------- | -------- |
 | 使用者沒有檔案的存取權。 | 權限 (ACL) | 請務必在您共用離線安裝「之前」調整權限 (ACL)，讓它們將「讀取權」授與其他使用者。 |
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
