@@ -16,42 +16,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918460"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550676"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811：避免使用未呼叫的私用程式碼
 |||
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|分類|Microsoft.Performance|
-|中斷變更|非中斷|
+|類別|Microsoft.Performance|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 私用或內部 （組件層級） 成員並沒有呼叫端組件中，common language runtime 不會叫用而不會透過委派叫用。 此規則不會檢查下列成員：
+ 私用或內部 （組件層級） 成員的組件中沒有呼叫端、 common language runtime 中，不會叫用和委派不會叫用。 此規則不會檢查下列成員：
 
--   明確介面成員。
+- 明確介面成員。
 
--   靜態建構函式。
+- 靜態建構函式。
 
--   序列化建構函式。
+- 序列化建構函式。
 
--   標記為<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>。
+- 標記為<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>。
 
--   會覆寫的成員。
+- 會覆寫的成員。
 
 ## <a name="rule-description"></a>規則描述
- 此規則可報告的進入點會在發生的誤判不會目前識別規則邏輯。 此外，編譯器可能會發出 noncallable 的程式碼的組件。
+ 此規則可以報告如果進入點，在出現的誤判不會目前識別規則邏輯。 此外，編譯器可能會發出 noncallable 的程式碼的組件。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，移除 noncallable 或程式碼加入程式碼呼叫它。
+ 若要修正此規則的違規情形，移除 noncallable 的程式碼，或加入程式碼呼叫它。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告。
+ 它可安全地隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

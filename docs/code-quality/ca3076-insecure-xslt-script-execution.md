@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919839"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546388"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076：不安全的 XSLT 指令碼執行
 
@@ -22,16 +22,16 @@ ms.locfileid: "31919839"
 |-|-|
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
 
-如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。 如需詳細資訊，請參閱[XSLT 安全性 Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)。
+如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。 如需詳細資訊，請參閱 < [XSLT 安全性 Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)。
 
 ## <a name="rule-description"></a>規則描述
 
-**XSLT**是全球資訊網協會 (W3C) 標準，來轉換 XML 資料。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
+**XSLT**是 World Wide Web Consortium (W3C) 標準，來轉換 XML 資料。 XSLT 通常用來寫入 XML 將資料轉換成其他格式，例如 HTML、 固定長度的文字，以逗號分隔的文字或使用不同的 XML 格式的樣式表。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
 若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
 
@@ -47,7 +47,7 @@ ms.locfileid: "31919839"
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>違規&mdash;使用 XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>使用 XsltSettings.TrustedXslt 的違規
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>方案&mdash;使用 XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>使用 XsltSettings.Default 解決方案
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>違規&mdash;文件不會停用的函式和指令碼執行
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>違規&mdash;文件未停用的函式和指令碼執行
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>另請參閱
 
-[XSLT 安全性考量 （.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT 安全性考量 （.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)

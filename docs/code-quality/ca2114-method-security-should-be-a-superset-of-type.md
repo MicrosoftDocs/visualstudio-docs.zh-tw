@@ -16,49 +16,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d2fc6fb60dd837dd93de1db2758ee0e2c216850
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 66fe0031380139c55942a1a47f71066a327d5e24
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914948"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551421"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114：方法安全性應該是類型的超集
+
 |||
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 型別具有宣告式安全性，而且其中一個方法具有相同的安全性動作的宣告式安全性及安全性動作不是[連結要求](/dotnet/framework/misc/link-demands)，並沒有權限的子集這種型別所檢查的權限。檢查此方法。
+ 型別具有宣告式安全性與其中一個方法已宣告式安全性是否相同的安全性動作，且安全性動作不可[連結要求](/dotnet/framework/misc/link-demands)，並沒有權限的子集這種型別所檢查的權限。檢查方法。
 
 ## <a name="rule-description"></a>規則描述
- 方法不應該都相同的動作方法層級和類型層級宣告式安全性。 不會合併兩個檢查;只有方法層級需求會套用。 例如，如果型別要求權限`X`，其中一個方法會要求權限和`Y`，程式碼沒有擁有的權限`X`執行方法。
+ 方法不應該已經在兩個相同的動作方法層級和類型層級宣告式安全性。 不會合併兩個檢查;套用方法層級需求。 例如，如果型別要求的權限`X`，和其中一個方法會要求權限`Y`，不需要具有權限的程式碼`X`執行方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 檢閱您的程式碼，請確定這兩個動作所需。 如果這兩個動作是必要的請確定方法層級的動作，包含指定型別層級的安全性。 例如，如果型別要求權限`X`，而且它的方法也必須要求權限`Y`，方法應該明確地要求`X`和`Y`。
+ 檢閱您的程式碼，藉此確定這兩個動作所需。 如果這兩個動作是必要的請確定方法層級的動作，包含指定型別層級的安全性。 比方說，如果您的型別會要求權限`X`，而且它的方法也必須要求權限`Y`，此方法應該明確地要求`X`和`Y`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果此方法不需要類型所指定的安全性。 不過，這不是一般的案例，而且可能表示需要謹慎設計檢閱。
+ 它可安全地隱藏此規則的警告，如果方法不需要指定類型的安全性。 不過，這不是一般的案例，並可能表示需要謹慎設計檢閱。
 
-## <a name="example"></a>範例
- 下列範例會使用環境的權限示範違反此規則的資訊。 在此範例中，應用程式程式碼會建立安全類型的執行個體之前拒絕類型所需的權限。 在真實世界威脅的情況下，應用程式需要另一種方式取得物件的執行個體。
+## <a name="example-1"></a>範例 1
 
- 在下列範例中，程式庫會要求寫入權限類型，並讀取權限的方法。
+下列範例會使用環境的權限，來示範違反此規則的危險性。 在此範例中，應用程式程式碼會建立安全類型的執行個體之前拒絕類型所需的權限。 在真實世界的威脅的案例中，應用程式需要另一種方式取得物件的執行個體。
 
- [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
+在下列範例中，程式庫會要求寫入類型的權限和讀取權限的方法。
 
-## <a name="example"></a>範例
- 下列應用程式程式碼示範的程式庫的弱點可能會透過呼叫方法，即使它不符合類型層級安全性需求。
+[!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
- [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+## <a name="example-2"></a>範例 2
 
- 此範例會產生下列輸出。
+下列應用程式程式碼示範的程式庫的弱點可能會藉由呼叫的方法，即使它不符合類型層級安全性需求。
 
- **[所有的權限]個人資訊： 6/16/1964年 12:00:00 AM**
- **[寫入使用權限 （型別所要求）] 的個人資訊： 6/16/1964年 12:00:00 AM**
- **[沒有讀取權限 （所要求的方法）] 無法存取個人資訊： 要求失敗。**
+[!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+
+這個範例會產生下列輸出：
+
+```txt
+[All permissions] Personal information: 6/16/1964 12:00:00 AM
+[No write permission (demanded by type)] Personal information: 6/16/1964 12:00:00 AM
+[No read permission (demanded by method)] Could not access personal information: Request failed.
+```
+
 ## <a name="see-also"></a>另請參閱
- [安全編碼方針](/dotnet/standard/security/secure-coding-guidelines)[連結要求](/dotnet/framework/misc/link-demands)[資料與模型化](/dotnet/framework/data/index)
+
+- [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)
+- [連結要求](/dotnet/framework/misc/link-demands)
+- [資料與模型化](/dotnet/framework/data/index)

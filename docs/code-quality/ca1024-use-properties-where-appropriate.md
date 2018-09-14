@@ -14,59 +14,68 @@ ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f27aebba0bd8a126928e01f13c65bec3381742
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5677604505bf21b8f14a2f3ef6ca1341fc9ff191
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899068"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551671"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，不是陣列。
+
+公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，這個值不是陣列。
 
 ## <a name="rule-description"></a>規則描述
- 在大部分情況下，內容表示資料，方法會執行動作。 屬性存取欄位，使其更容易使用類似。 方法是成為屬性，如果其中一種情形存在的良好候選項目：
 
--   不接受引數，並傳回物件的狀態資訊。
+在大部分情況下，屬性代表資料，方法執行動作。 屬性與欄位類似，讓它們可使用的工作變得更容易存取。 方法是成為屬性，若符合下列條件之一，則的良好候選項目：
 
--   接受單一引數來設定物件狀態的某些部分。
+- 不接受引數，並傳回物件的狀態資訊。
 
- 屬性應有的行為如同這些欄位。如果方法無法處理，它應該不會變更的屬性。 方法會比在下列情況中的屬性：
+- 接受單一引數來設定物件狀態的某些部分。
 
--   此方法會執行耗時的作業。 這個方法是設定或取得欄位的值所需的時間比感覺。
+屬性應該如同它們是欄位，如果方法無法處理，它應該不會變更的屬性。 方法是優於在下列情況中的屬性：
 
--   此方法會執行轉換。 存取欄位不會傳回儲存的資料轉換的版本。
+- 這個方法會執行耗時的作業。 此方法為感覺比所需的設定或取得欄位的值時間。
 
--   Get 方法有副作用。 擷取欄位的值不會產生任何副作用。
+- 這個方法會執行轉換。 存取欄位不會傳回轉換的版本，它會將儲存的資料。
 
--   執行的順序很重要。 設定欄位的值不會依賴其他作業的相符項目。
+- Get 方法具有可預見的副作用。 擷取欄位的值不會產生任何副作用。
 
--   連續兩次呼叫方法會建立不同的結果。
+- 執行的順序很重要。 設定欄位的值不需要其他作業一次。
 
--   方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
+- 連續兩次呼叫方法時，會建立不同的結果。
 
--   方法會傳回陣列。
+- 方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
+
+- 方法會傳回陣列。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將方法變更為屬性。
+
+若要修正此規則的違規情形，請將方法變更為屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果方法符合至少其中一個先前所列的準則，則隱藏此規則的警告。
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>偵錯工具中控制屬性展開
- 程式設計人員請避免使用屬性的其中一個原因是因為不想要偵錯工具自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但它可能實際上沒有任何副作用。
+如果方法會符合至少其中一個先前所列的準則，則隱藏此規則的警告。
 
- 您可以避免在偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例會示範這個屬性套用至執行個體屬性。
+## <a name="controlling-property-expansion-in-the-debugger"></a>控制偵錯工具中的屬性擴充
+
+程式設計師可讓您避免使用屬性的其中一個原因是因為不想偵錯工具自動展開。 例如，配置大型物件或呼叫 P/Invoke，可能會牽涉到的屬性，但它可能實際上沒有任何可預見的副作用。
+
+您可以防止偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例示範套用至執行個體屬性的這個屬性。
 
 ```vb
 Imports System
@@ -92,8 +101,7 @@ End Namespace
 ```
 
 ```csharp
-
-      using System;
+using System;
 using System.Diagnostics;
 
 namespace Microsoft.Samples
@@ -109,13 +117,14 @@ namespace Microsoft.Samples
             {
                 // Allocate large object
                 // [...]
-
+            }
         }
     }
 }
 ```
 
 ## <a name="example"></a>範例
- 下列範例包含數種方法，應該轉換成屬性，以及數個應該就不會報告它們行為不像欄位。
 
- [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]
+下列範例包含數種方法，應該轉換成屬性，以及數個，應該不是因為它們不行為與欄位一樣。
+
+[!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

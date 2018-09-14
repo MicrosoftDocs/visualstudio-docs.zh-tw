@@ -1,5 +1,5 @@
 ---
-title: 'CA1401: P 叫用不應該為可見'
+title: CA1401：P/Invokes 不應該為可見
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,28 +14,32 @@ ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c2aaadb0570e47e5ef41614925c20f8dc30f1620
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c1d4d9cc5e1550dee87609e5ef0e99dcd9d0cf5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900600"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548618"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401：P/Invokes 不應該為可見的
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|分類|Microsoft.Interoperability|
+|類別|Microsoft.Interoperability|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法中的公用型別具有<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性 (也是由實作`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 公用或受保護的方法，公用型別中具有<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性 (也實作`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ## <a name="rule-description"></a>規則描述
- 方法是，標示<xref:System.Runtime.InteropServices.DllImportAttribute>屬性 (或您可以使用定義的方法`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 用於存取 unmanaged 程式碼的平台叫用服務。 但不得公開 (Expose) 此類方法。 私用或內部，請保留這些方法，您確定您的程式庫無法用於安全性破壞所允許的存取權，他們無法呼叫 unmanaged Api 的呼叫端。
+ 方法標記著<xref:System.Runtime.InteropServices.DllImportAttribute>屬性 (或使用所定義的方法`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 使用平台叫用服務來存取 unmanaged 程式碼。 但不得公開 (Expose) 此類方法。 私用或內部，請保留這些方法，您要確定您的程式庫不能用來允許呼叫端存取未受管理的 Api，它們無法呼叫破壞安全性項目。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，變更方法的存取層級。

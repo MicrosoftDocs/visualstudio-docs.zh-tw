@@ -16,44 +16,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902012"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550995"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010：集合應該實作泛型介面
 |||
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|分類|Microsoft.Design|
-|中斷變更|非中斷|
+|類別|Microsoft.Design|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 外部可見的型別會實作<xref:System.Collections.IEnumerable?displayProperty=fullName>介面，但未實作<xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>介面和包含組件目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。 此規則會忽略實作的型別<xref:System.Collections.IDictionary?displayProperty=fullName>。
+ 外部可見的型別會實作<xref:System.Collections.IEnumerable?displayProperty=fullName>介面，但不會實作<xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>介面，而且包含的組件目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。 此規則會忽略實作的型別<xref:System.Collections.IDictionary?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>規則描述
- 若要放寬集合的可用性，請實作其中一個泛型集合介面。 集合可以用來填入泛型集合類型，如下所示：
+ 若要放寬集合的可用性，請實作其中一個泛型集合介面。 之後可以使用集合填入泛型集合類型，如下所示：
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請實作下列的泛型集合介面的其中一個：
+ 若要修正此規則的違規情形，請實作其中一個下列的泛型集合介面：
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 安全地隱藏的警告，這項規則。不過，集合中會有更多限制的使用。
+ 安全地隱藏的警告，這項規則;不過，集合會有更多限制的使用。
 
 ## <a name="example-violation"></a>範例違規
 
@@ -64,12 +64,12 @@ ms.locfileid: "31902012"
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>註解
- 若要修正這種違規的違規情形，您應該實作泛型介面，或變更的基底類別的型別，已實作這兩個泛型和非泛型介面，例如`Collection<T>`類別。
+ 若要修正此違規的違規情形，您應該實作泛型介面，或變更的基底類別的型別，已實作這兩個泛型和非泛型介面，例如`Collection<T>`類別。
 
-## <a name="fix-by-base-class-change"></a>修正變更基底類別
+## <a name="fix-by-base-class-change"></a>修正基底類別變更
 
 ### <a name="description"></a>描述
- 下列範例會藉由變更非泛型集合的基底類別修正違規`CollectionBase`至泛型類別`Collection<T>`(`Collection(Of T)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 類別。
+ 下列範例會藉由變更集合的基底類別的非泛型修正違規`CollectionBase`泛型類別`Collection<T>`(`Collection(Of T)`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 類別。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
@@ -77,10 +77,10 @@ ms.locfileid: "31902012"
 ### <a name="comments"></a>註解
  變更已發行的類別的基底類別會被視為現有消費者的中斷變更。
 
-## <a name="fix-by-interface-implementation"></a>修正介面實作
+## <a name="fix-by-interface-implementation"></a>介面實作來修正
 
 ### <a name="description"></a>描述
- 下列範例會藉由實作這些泛型介面修正違規： `IEnumerable<T>`， `ICollection<T>`，和`IList<T>`(`IEnumerable(Of T)`， `ICollection(Of T)`，和`IList(Of T)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 下列範例會藉由實作這些泛型介面修正違規： `IEnumerable<T>`， `ICollection<T>`，並`IList<T>`(`IEnumerable(Of T)`， `ICollection(Of T)`，和`IList(Of T)`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]

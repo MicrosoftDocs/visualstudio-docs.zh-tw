@@ -16,39 +16,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914780"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550605"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 命名空間、 型別或 viritual 或介面成員的名稱符合程式語言中的保留的關鍵字。
+ 命名空間、 類型或 viritual 或介面成員的名稱符合保留的關鍵字，以程式設計的語言。
 
 ## <a name="rule-description"></a>規則描述
- 命名空間、 類型、 識別碼和虛擬和介面成員不應該符合 common language runtime 為目標的語言所定義的關鍵字。 根據所使用的語言和關鍵字，編譯器錯誤模稜兩可以對程式庫難以使用。
+ 命名空間、 類型識別項和虛擬和介面成員不應該符合 common language runtime 為目標的語言所定義的關鍵字。 根據所使用的語言和關鍵字，編譯器錯誤和模稜兩可會讓程式庫難以使用。
 
- 此規則會檢查對下列語言的關鍵字：
+ 此規則會檢查針對下列語言版本的關鍵字：
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- 不區分大小寫用於[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]關鍵字，且區分大小寫比較用於其他語言。
+ 不區分大小寫的比較來[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]關鍵字和區分大小寫比較，用於其他語言。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 關鍵字的清單中選取名稱，不會出現。
+ 名稱，不會出現在清單中選取的關鍵字。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您相信識別項不會混淆的 API，使用者和程式庫是可用於所有可用的語言中，您可以隱藏此規則的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 如果您說服識別碼不會混淆的 API，使用者和程式庫是使用中的所有可用語言，您可以隱藏此規則的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。

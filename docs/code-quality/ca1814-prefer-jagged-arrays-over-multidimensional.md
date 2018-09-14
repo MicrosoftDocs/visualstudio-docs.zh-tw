@@ -14,37 +14,41 @@ ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcf3cc6167cc98cb61380aa1ac54af5a291eb09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915740"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551885"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814：建議使用不規則陣列取代多維陣列
+
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|分類|Microsoft.Performance|
+|類別|Microsoft.Performance|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 成員宣告為多維度陣列。
+ 成員宣告為多維陣列。
 
 ## <a name="rule-description"></a>規則描述
  不規則陣列是一種陣列，其元素也是陣列。 組成元素的陣列大小可以不相同，對於某些資料集而言較不會浪費空間。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將多維陣列的內容變更為不規則的陣列。
+ 若要修正此規則的違規情形，將多維陣列的內容變更為不規則陣列。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果多維度陣列不會浪費空間，請隱藏此規則的警告。
+ 此規則的警告如果隱藏多維陣列不會浪費空間。
 
 ## <a name="example"></a>範例
- 下列範例顯示不規則和多維度陣列的宣告。
+ 下列範例示範宣告不規則陣列和多維度陣列。
 
  [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

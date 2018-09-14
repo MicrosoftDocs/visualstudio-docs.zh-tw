@@ -14,30 +14,34 @@ ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b6502647644b59291b9d27ccf633d089d7110
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918591"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549673"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：屬性名稱不能和其中有 get 的方法名稱相符
+
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的成員名稱開頭為 'Get'，否則符合名稱的公用或受保護的屬性。 例如，此型別包含名為 'GetColor' 和名為 'Color' 屬性的方法違反此規則。
+ 公用或受保護的成員名稱開頭為 'Get'，否則需符合公用或受保護的屬性名稱。 比方說，此型別包含名為 'GetColor' 和名為 'Color' 屬性的方法違反此規則。
 
 ## <a name="rule-description"></a>規則描述
  Get 方法和屬性應該清楚區別其功能的名稱。
 
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要學習新的軟體程式庫，而且會增加的程式庫由具備專業知識在開發 managed 程式碼開發的客戶信心的時間。
+ 命名慣例提供了通用程式庫 common language runtime 為目標。 這種一致性可減少所需了解新的軟體程式庫，並讓程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶深信的時間。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  變更名稱，使它不符合加上 'Get' 方法的名稱。
@@ -46,10 +50,10 @@ ms.locfileid: "31918591"
  請勿隱藏此規則的警告。
 
 > [!NOTE]
->  如果 Get 方法因實作 IExtenderProvider 介面，可能會排除這個警告。
+> 如果因為實作 IExtenderProvider 介面的 Get 方法，可能會排除這個警告。
 
 ## <a name="example"></a>範例
- 下列範例包含的方法和違反此規則的屬性。
+ 下列範例包含方法和違反此規則的屬性。
 
  [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
  [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
