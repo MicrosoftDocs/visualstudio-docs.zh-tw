@@ -16,45 +16,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd90414e101c03bae1d3d74f1be4f538cacfce2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed69ba759d63ba27114bc097ac1fd9ccbe424edd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900613"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547734"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：必須在 Comparable 類型中覆寫方法
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
-|分類|Microsoft.Design|
-|中斷變更|非中斷|
+|類別|Microsoft.Design|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 公用或受保護的型別會實作<xref:System.IComparable?displayProperty=fullName>介面，並不會覆寫<xref:System.Object.Equals%2A?displayProperty=fullName>或沒有多載是否相等，不等、 小於或大於的語言特定比較運算子。 此規則不會報告違規情形，如果型別繼承介面的實作。
+ 公用或受保護的型別會實作<xref:System.IComparable?displayProperty=fullName>介面，並不會覆寫<xref:System.Object.Equals%2A?displayProperty=fullName>或沒有多載等號比較，是否不相等，語言特定比較運算子比較不-，或大於-比。 如果型別繼承介面的實作，此規則就不會報告違規情形。
 
 ## <a name="rule-description"></a>規則描述
- 定義自訂排序順序的型別會實作<xref:System.IComparable>介面。 <xref:System.IComparable.CompareTo%2A>方法會傳回整數值，指出兩個型別執行個體的正確的排序次序。 此規則會識別類型設定排序順序。這表示，一般意義等號比較、 不等、 小於或大於不適用。 當您提供的實作<xref:System.IComparable>，您通常必須也覆寫<xref:System.Object.Equals%2A>，使它傳回一致的有效值<xref:System.IComparable.CompareTo%2A>。 如果您覆寫<xref:System.Object.Equals%2A>及在撰寫程式碼中支援運算子多載的語言，您也應該提供一致的運算子<xref:System.Object.Equals%2A>。
+
+定義自訂的排序順序的型別會實作<xref:System.IComparable>介面。 <xref:System.IComparable.CompareTo%2A>方法會傳回整數值，指出兩個型別執行個體的正確的排序次序。 此規則會識別設定的排序順序的類型。 設定排序順序表示的相等的一般意義，不相等，-和更新版本-不套用。 當您提供的實作<xref:System.IComparable>，您通常必須也會覆寫<xref:System.Object.Equals%2A>使其傳回值，都必須配合<xref:System.IComparable.CompareTo%2A>。 如果您覆寫<xref:System.Object.Equals%2A>撰寫的程式碼和語言支援運算子多載，您也應該提供一致的運算子<xref:System.Object.Equals%2A>。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請覆寫<xref:System.Object.Equals%2A>。 如果您的程式語言支援運算子多載，提供下列運算子：
 
--   op_Equality
+若要修正此規則的違規情形，覆寫<xref:System.Object.Equals%2A>。 如果您的程式語言支援運算子多載，提供下列運算子：
 
--   op_Inequality
+- op_Equality
 
--   op_LessThan
+- op_Inequality
 
--   op_GreaterThan
+- op_LessThan
 
- 在 C# 中，用來代表這些運算子的語彙基元如下: = =、 ！ =、 \<，和 >。
+- op_GreaterThan
+
+在 C# 中，用來表示這些運算子的語彙基元如下所示：
+
+```csharp
+==
+!=
+<
+>
+```
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是安全違規因遺漏的運算子和您的程式語言不支援運算子多載，在本例中的使用 Visual Basic 時隱藏此規則的警告。 它也是安全地隱藏此規則的警告時引發的等號比較運算子以外 op_Equality，如果您決定實作運算子的應用程式內容中毫無意義。 不過，您應一律透過 op_Equality，如果您覆寫 Object.Equals = = 運算子。
+ 它可安全地隱藏規則 ca1036 必須時違規因遺漏運算子和您的程式語言不支援運算子多載，在此情況下，使用 Visual Basic 的警告。 它也是安全地隱藏這項規則的警告時它就會引發在等號比較運算子以外 op_Equality，如果您判斷實作運算子，在您的應用程式內容中毫無意義。 不過，您應該一律透過 op_Equality 與 = = 運算子，如果您覆寫 Object.Equals。
 
 ## <a name="example"></a>範例
- 下列範例包含正確實作的型別<xref:System.IComparable>。 程式碼註解會識別方法以滿足與相關的各種規則<xref:System.Object.Equals%2A>和<xref:System.IComparable>介面。
+ 下列範例包含的類型，會正確地實作<xref:System.IComparable>。 程式碼註解指出方法以滿足相關的各種規則<xref:System.Object.Equals%2A>而<xref:System.IComparable>介面。
 
  [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
@@ -64,4 +74,7 @@ ms.locfileid: "31900613"
  [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName> [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.IComparable?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

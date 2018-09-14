@@ -16,29 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915958"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550501"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|分類|Microsoft.Mobility|
+|類別|Microsoft.Mobility|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 此規則會發生於處理序會設定為`ProcessPriorityClass.Idle`。
+ 處理程序設定為時，就會發生這項規則`ProcessPriorityClass.Idle`。
 
 ## <a name="rule-description"></a>規則描述
- 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`原本是閒置時，因而阻礙待命時，會佔用 CPU。
+ 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`會佔用 CPU，它會處於閒置狀態，並因而阻礙待命時。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要設定處理程序`ProcessPriorityClass.BelowNormal`。
+ 設定處理程序為`ProcessPriorityClass.BelowNormal`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 閒置處理序優先權，且可以安全地忽略行動考量時，才應該隱藏此規則。
+ 閒置處理序優先權，而且可以安全地忽略行動力考量時，才應該隱藏此規則。

@@ -1,5 +1,5 @@
 ---
-title: Ca2101： 必須指定 P Invoke 字串引數的封送處理
+title: CA2101：必須指定 P/Invoke 字串引數的封送處理
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,28 +16,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918853"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548309"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101：必須指定 P/Invoke 字串引數的封送處理
 |||
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|分類|Microsoft.Globalization|
-|中斷變更|非中斷|
+|類別|Microsoft.Globalization|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
  平台叫用成員允許部分信任呼叫端，具有字串參數，並不會不明確封送處理字串。
 
 ## <a name="rule-description"></a>規則描述
- 當您將從 Unicode 轉換為 ANSI 時，很可能不是所有的 Unicode 字元，可以將特定的 ANSI 字碼頁中表示。 *自動調整的對應*嘗試解決這個問題的替代字元，無法表示的字元。 使用此功能可能會造成潛在的安全性弱點，因為您無法控制會選擇的字元。 例如，惡意程式碼可以刻意建立 Unicode 字串，包含特定字碼頁中找不到這類轉換成檔案系統中的特殊字元的字元 '..' 或 '/'。 請注意安全性檢查的特殊字元經常發生之前將字串轉換為 ANSI。
+ 當您將從 Unicode 轉換成 ANSI 時，很可能並非所有的 Unicode 字元，可以表示特定的 ANSI 字碼頁中。 *自動調整的對應*嘗試替代字元，無法表示的字元來解決此問題。 使用此功能可能會造成潛在的安全性弱點，因為您無法控制所選的字元。 例如，惡意程式碼會刻意建立包含特定的字碼頁中找不到這類轉換為檔案系統的特殊字元的字元的 Unicode 字串 '..' 或 '/'。 也請注意安全性檢查的特殊字元需經常發生之前的字串轉換為 ANSI。
 
- 自動調整的對應是 unmanaged 轉換到 Mb WChar 的預設值。 除非您明確停用自動調整的對應，您的程式碼可能包含利用的安全性弱點，因為此問題。
+ 自動調整的對應是未受管理的轉換，Mb 的 WChar 的預設值。 除非您明確停用自動調整的對應，您的程式碼可能包含可利用來攻擊的安全性弱點，因為此問題。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，明確封送處理字串資料類型。
@@ -46,6 +46,6 @@ ms.locfileid: "31918853"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範的方法違反此規則，然後示範如何修正違規。
+ 下列範例示範的方法，違反這項規則，然後顯示如何修正違規。
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

@@ -1,5 +1,5 @@
 ---
-title: 'CA1901: P Invoke 宣告應該是可攜式'
+title: CA1901：P/Invoke 宣告應該為可移植
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,33 +16,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915017"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550631"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 宣告應該是可移植的
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|分類|Microsoft.Portability|
-|中斷變更|中斷-如果是在組件外部可見的 P/Invoke。 非中斷-如果 P/Invoke 不是組件外部可見。|
+|類別|Microsoft.Portability|
+|中斷變更|中斷-如果 P/Invoke 是組件外部可見。 非中斷-如果 P/Invoke 不是組件外部可見。|
 
 ## <a name="cause"></a>原因
- 此規則會評估每個參數的大小和 P/Invoke 的傳回值，並確認封送處理至 unmanaged 程式碼，在 32 位元和 64 位元平台上時其大小正確。 最常見違反此規則是傳遞固定大小的整數，其中是必要的平台而定，指標大小的變數。
+ 此規則會評估每個參數的大小和 P/Invoke 的傳回值，並確認其大小，封送處理至 unmanaged 程式碼在 32 位元和 64 位元平台上時正確無誤。 此規則的最常見的違規是傳遞其中一個平台相依，指標大小的變數是必要的固定大小的整數。
 
 ## <a name="rule-description"></a>規則描述
- 下列案例中擇一違反此規則就會發生：
+ 下列案例其中一種方法違反此規則就會發生：
 
--   傳回值或參數型別為固定大小的整數時應該類型為`IntPtr`。
+- 傳回值或參數的型別為固定大小的整數時應該鍵入為`IntPtr`。
 
--   傳回值或參數類型為`IntPtr`當它輸入應該為固定大小的整數。
+- 傳回值或參數的型別為`IntPtr`時它應該鍵入為固定大小的整數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 您可以使用，以修正此違規`IntPtr`或`UIntPtr`來代表控制代碼，而不是`Int32`或`UInt32`。
+ 您可以使用，以修正此違規`IntPtr`或是`UIntPtr`來表示控制代碼，而不是`Int32`或`UInt32`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您不應該隱藏這個警告。
@@ -59,7 +59,7 @@ internal class NativeMethods
 }
 ```
 
- 在此範例中，`nIconIndex`參數宣告為`IntPtr`，這是 4 個位元組的 32 位元平台和寬的 64 位元平台上為 8 個位元組寬。 在 unmanaged 後面宣告中，您可以看到`nIconIndex`是 4 位元組不帶正負號的整數，在所有平台上。
+ 在此範例中，`nIconIndex`參數宣告為`IntPtr`，這是 4 個位元組寬的 32 位元平台和 8 個位元組寬的 64 位元平台上。 在 unmanaged 宣告接下來，您可以看到`nIconIndex`是 4 位元組不帶正負號的整數，在所有平台上。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>範例
- 若要修正的違規情形，變更宣告所示：
+ 若要修正此違規情形，請將宣告變更如下：
 
 ```csharp
 internal class NativeMethods{

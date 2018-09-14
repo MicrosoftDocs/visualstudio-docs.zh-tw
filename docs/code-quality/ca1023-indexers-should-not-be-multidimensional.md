@@ -14,37 +14,42 @@ ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3864cbef5a5ba6c013d05112af46d641aa3c1634
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31895974"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547693"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：不應該使用多維索引子
+
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的類型包含公用或受保護的索引子使用一個以上的索引。
+ 公用或受保護的類型包含公用或受保護的索引子，會使用一個以上的索引。
 
 ## <a name="rule-description"></a>規則描述
- 索引子，也就是索引屬性，應使用單一索引。 多維索引子會大幅降低程式庫的可用性。 如果設計需要多個索引，請考慮是否型別所代表的邏輯資料存放區。 否則，請使用方法。
+ 索引子，也就是索引的屬性，應該使用單一索引。 多維索引子可以大幅降低程式庫的可用性。 如果設計需要多個索引，請重新考慮類型是否表示的邏輯資料存放區。 否則，請使用方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更為使用單獨的整數或字串索引設計或使用的方法而不是索引子。
+ 若要修正此規則的違規情形，變更設計，以使用獨立的整數或字串的索引，或使用的方法，而不是索引子。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 隱藏此規則的警告，只有在仔細地考量需要非標準的索引子之後。
+ 隱藏這項規則只有在仔細地考量需要非標準的索引子之後的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示型別， `DayOfWeek03`，與違反規則的多維索引子。 索引子被視為一種轉換，因此更適當地公開為方法。 中的類型經過重新設計`RedesignedDayOfWeek03`以符合下列規則。
+ 下列範例示範一個型別， `DayOfWeek03`，違反規則多維索引子。 索引子可以視為一種轉換，因此更適當地公開為方法。 型別在重新設計`RedesignedDayOfWeek03`來滿足的規則。
 
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]

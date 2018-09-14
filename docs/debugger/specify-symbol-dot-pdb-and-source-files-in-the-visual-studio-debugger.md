@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281724"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552093"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 程式資料庫 (.pdb) 檔案，也稱為符號檔，對應您建立類別、 方法和您的專案中的已編譯可執行檔中所使用的識別項的其他程式碼的原始程式碼中的識別碼。 .pdb 檔案也會將原始程式碼中的陳述式對應至可執行檔中的執行指令。 偵錯工具會使用這項資訊來判斷兩個關鍵資訊：
@@ -49,7 +49,7 @@ ms.locfileid: "44281724"
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具，符號檔的搜尋？ 
   
-1.  DLL 或可執行檔內部指定的位置  
+1.  DLL 或可執行檔內部指定的位置   
   
      (根據預設，如果您在電腦上建立了 DLL 或可執行檔，連結器就會將相關聯之 .pdb 檔案的完整路徑和檔案名稱放置在該 DLL 或可執行檔內。 偵錯工具會先查看符號檔是否在 DLL 或可執行檔內部指定的位置。 這種方式很有用，讓您始終有符號可供電腦上編譯的程式碼使用)。  
   
@@ -215,7 +215,7 @@ ms.locfileid: "44281724"
 4.  模組之 .pdb 的來源資訊。 這可以是模組建置時原始程式檔的位置，也可以是呼叫來源伺服器的命令。  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 尋找並載入原始程式檔和未 Source/No 載入符號頁面  
- 當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果在您執行其中一個選項後找到 .pdb，而且偵錯工具能夠使用符號檔中的資訊擷取原始程式檔，則會顯示來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。  
+ 當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果您執行其中一個選項，且偵錯工具可以擷取原始程式檔使用的符號檔中的資訊後找到.pdb，就會顯示的來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 將原始程式檔搜尋路徑加入至方案  
  您可以指定要搜尋原始程式檔的網路或本機目錄。  

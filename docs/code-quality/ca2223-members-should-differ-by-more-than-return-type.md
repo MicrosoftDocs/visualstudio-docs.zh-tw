@@ -1,5 +1,5 @@
 ---
-title: CA2223：成員不應該只有在傳回型別上不同
+title: CA2223：成員不應該只有在傳回類型上不同
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,38 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aaa7671f1aa110edd42897111e746e62eab8048
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922466"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549822"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223：成員不應該只有在傳回型別上不同
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223：成員不應該只有在傳回類型上不同
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  兩個公用或受保護的成員具有除了傳回型別之外完全相同的簽章。
 
 ## <a name="rule-description"></a>規則描述
- 雖然通用語言執行平台允許使用傳回型別區分其他部分相同的成員，這項功能不在 Common Language Specification，也不是.NET 程式語言共通功能。 當成員只有不同的傳回型別時，開發人員和開發工具可能不正確區分它們。
+ 雖然通用語言執行平台允許使用傳回的型別區分其他完全相同的成員，這項功能不在 Common Language Specification，也不是.NET 程式設計語言的常見功能。 當成員只有不同傳回型別時，開發人員和開發工具可能不正確區別。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請變更之成員的設計，以便只根據其名稱和參數類型或不公開的成員。
+ 若要修正此規則的違規情形，請變更成員的設計，讓它們都是唯一只根據其名稱與參數類型，或不公開的成員。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例中，Microsoft intermediate language (MSIL)，顯示違反此規則的類型。 請注意，不能使用 C# 或 Visual Basic 違反此規則。
+ 下列範例中，在 Microsoft intermediate language (MSIL)，顯示違反此規則的型別。 請注意，不能使用 C# 或 Visual Basic 違反此規則。
 
 ```
-
 .namespace UsageLibrary
 {
   .class public auto ansi beforefieldinit ReturnTypeTest
@@ -94,5 +94,4 @@ ms.locfileid: "31922466"
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```

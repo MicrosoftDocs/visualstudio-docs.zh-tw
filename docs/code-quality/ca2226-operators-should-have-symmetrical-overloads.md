@@ -16,34 +16,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920624"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549767"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：運算子應該有對稱的多載
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  類型實作等號比較運算子或不等比較運算子，但未實作相反的運算子。
 
 ## <a name="rule-description"></a>規則描述
- 沒有任何情況下，其中相等或不等會套用到執行個體的型別，且相反的運算子未定義。 型別通常會實作不等比較運算子所傳回的等號比較運算子的相反的值。
+ 沒有其中相等或不等比較是適用於類型的執行個體，而相反的運算子是未定義的情況。 通常，型別會實作不等比較運算子所傳回的等號比較運算子的相反的值。
 
- C# 編譯器會發出錯誤，而此規則的違規。
+ C# 編譯器會發出這項規則的違規錯誤。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作等號和不等比較運算子，或移除存在於其中一個。
+ 若要修正此規則的違規情形，實作相等和不等比較運算子，或移除的存在。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 您的型別將無法運作的一致方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 請勿隱藏此規則的警告。 您的型別不適用於與一致的方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

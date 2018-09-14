@@ -16,37 +16,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c1a622519e08d4b56fdd8e6811ec039f9d3871
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b81ac3fcedf4f09c37bbe3aeeb6b7d2b572af8ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896178"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550670"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033：介面方法應該要可以由子類型呼叫
 |||
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
-|分類|Microsoft.Design|
-|中斷變更|非中斷|
+|類別|Microsoft.Design|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
  非密封外部可見的類型會提供公用介面的明確方法實作，但未提供同名的替代外部可見方法。
 
 ## <a name="rule-description"></a>規則描述
- 請考慮明確實作的公用介面方法的基底類型。 衍生自基底類型的型別可以存取繼承的介面方法，只能透過目前的執行個體的參考 (`this` C# 中)，會轉換成介面。 如果重新衍生的類型 （明確） 實作繼承的介面方法，可以再存取基底實作。 透過目前的執行個體參考的呼叫將會叫用的衍生的實作。這會導致遞迴和最終的堆疊溢位。
+ 請考慮明確地實作公用介面方法的基底類型。 衍生自基底類型的類型可以存取繼承的介面方法，只能透過目前的執行個體的參考 (`this` C# 中)，這會轉換至介面。 如果衍生的類型 （明確） 實作繼承的介面方法，可以再存取的基底實作。 透過目前的執行個體參考的呼叫將會叫用衍生的實作;這會導致遞迴和最終的堆疊溢位。
 
- 此規則不會報告的明確實作違反<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>外部可見時`Close()`或`System.IDisposable.Dispose(Boolean)`方法提供。
+ 此規則不會報告的明確實作違反<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>時是外部可見`Close()`或`System.IDisposable.Dispose(Boolean)`方法提供。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作新的方法來公開相同的功能，而且衍生的類型可以看到或 nonexplicit 實作變更。 如果一項重大變更是接受的替代方法是讓密封類型。
+ 若要修正此規則的違規情形，實作新的方法，公開 （expose） 相同的功能，並為衍生的類型可以看到或變更 nonexplicit 的實作。 如果一項重大變更是可接受的替代方法是讓密封類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果外部可見的方法具有相同的功能，但是明確實作的方法不同的名稱。
+ 它可安全地隱藏此規則的警告，外部可見的方法是否具有相同的功能，但明確實作的方法不同的名稱。
 
 ## <a name="example"></a>範例
- 下列範例顯示型別， `ViolatingBase`，違反此規則，並為型別， `FixedBase`，它會顯示發生違規的修正。
+ 下列範例顯示的型別`ViolatingBase`，會違反此規則，並為型別， `FixedBase`，它會顯示違規的修正。
 
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 

@@ -16,37 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7688910275414f1421fe81dffc5bc3efcd1d93
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a08d15ec491bb78c2d9398c8e689015c9523a3c1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916370"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546820"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111：指標不應該為可見的
+
 |||
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的<xref:System.IntPtr?displayProperty=fullName>或<xref:System.UIntPtr?displayProperty=fullName>欄位不是唯讀的。
+ 公用或受保護<xref:System.IntPtr?displayProperty=fullName>或<xref:System.UIntPtr?displayProperty=fullName>欄位不是唯讀的。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.IntPtr> 和<xref:System.UIntPtr>是用來存取 unmanaged 的記憶體指標類型。 如果指標不是私用、 內部或唯讀狀態，惡意程式碼就可以變更指標時，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗的值。
+ <xref:System.IntPtr> 和<xref:System.UIntPtr>是用來存取 unmanaged 的記憶體的指標類型。 如果指標不是私用、 內部或唯讀的惡意程式碼就可以變更指標，可能會允許存取記憶體中的任意位置，或造成應用程式或系統失敗的值。
 
  如果您想要包含指標欄位的型別安全存取，請參閱[CA2112： 受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 藉由唯讀、 內部或私人保護指標。
+ 保護，以便唯讀、 內部或私人的指標。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果您不會依賴指標的值，則隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列程式碼顯示違反和滿足規則的指標。 請注意非私用指標也違反規則[CA1051： 不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+ 下列程式碼顯示違反及符合規則的指標。 請注意，非私用指標也違反規則[CA1051： 不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
@@ -56,4 +57,6 @@ ms.locfileid: "31916370"
  [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>
+
+- <xref:System.IntPtr?displayProperty=fullName>
+- <xref:System.UIntPtr?displayProperty=fullName>

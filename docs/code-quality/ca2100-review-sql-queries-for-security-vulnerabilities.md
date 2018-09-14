@@ -15,46 +15,52 @@ ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: be39489c30de235248b9e3f2770811fc190ac5a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918109"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551463"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：必須檢視 SQL 查詢中是否有安全性弱點
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
-|分類|Microsoft.Security|
-|中斷變更|非中斷|
+|類別|Microsoft.Security|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 方法會設定<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>屬性，方法是使用建置的字串引數之方法的字串。
+ 方法會設定<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>所使用的字串，內建字串引數之方法的屬性。
 
 ## <a name="rule-description"></a>規則描述
- 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 資料隱碼攻擊中，惡意使用者所提供的輸入會改變查詢的設計嘗試損毀或未經授權存取基礎資料庫中。 典型的技術包括資料隱碼的單引號 （或單引號），這是 SQL 的常值字串分隔符號。兩個連字號，這表示 SQL 註解。和分號，這表示，新的命令如下所示。 如果使用者輸入必須是查詢的一部份，下列程式碼，使用其中一個的順序列出的有效性，以減少攻擊的風險。
 
--   使用預存程序。
+這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 資料隱碼攻擊，惡意使用者所提供的改變查詢的設計嘗試損毀或未經授權存取基礎資料庫中的輸入。 典型的技術包括資料隱碼攻擊的單引號或縮寫符號，也就是 SQL 常值字串分隔符號中;兩個連字號，這表示 SQL 註解;和分號，這表示，新的命令如下所示。 如果使用者輸入必須是查詢的一部份，下列程式碼，使用其中一個列出的有效性，為了降低攻擊風險。
 
--   使用參數化的命令字串。
+- 使用預存程序。
 
--   建置命令字串之前，請驗證使用者輸入的類型和內容。
+- 使用參數化的命令的字串。
 
- 下列[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]型別會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，將屬性設定為字串引數。
+- 建置命令字串之前，請驗證使用者輸入的類型和內容。
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+下列[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]型別會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
- 請注意，在明確或隱含使用 ToString 方法的型別時，違反這項規則來建構查詢字串。 下列為範例。
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+
+請注意，在明確或隱含使用 ToString 方法的型別時，違反此規則來建構查詢字串。 下列為範例。
 
 ```
 int x = 10;
@@ -63,7 +69,7 @@ string query = "SELECT TOP " + x.ToString() + " FROM Table";
 
  因為惡意使用者可以覆寫 tostring （） 方法違反此規則。
 
- 違反規則，也會隱含地使用 ToString 時。
+ 也會隱含地使用 ToString 時，會違反規則。
 
 ```
 int x = 10;
@@ -71,13 +77,13 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，使用參數化的查詢。
+ 若要修正此規則的違規情形，請使用參數化的查詢。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果命令文字不包含任何使用者輸入。
+ 它可安全地隱藏此規則的警告，如果命令文字不包含任何使用者輸入。
 
 ## <a name="example"></a>範例
- 下列範例會示範一種方法， `UnsafeQuery`，違反規則和方法， `SaferQuery`，使用參數化的命令字串符合規則。
+ 下列範例示範的方法中， `UnsafeQuery`，，違反規則和方法， `SaferQuery`，使用參數化的命令字串符合規則。
 
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

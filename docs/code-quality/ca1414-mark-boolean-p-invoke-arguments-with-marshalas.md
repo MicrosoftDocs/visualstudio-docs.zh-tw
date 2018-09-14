@@ -1,5 +1,5 @@
 ---
-title: CA1414： 標記布林值 P 叫用引數以 MarshalAs
+title: CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,48 +14,56 @@ ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 19536941f0b4b3d96255cb9eb323bea5d4e899bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5936c07646201ab3988dd7cc792f758ed698063
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916197"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548957"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
+
 |||
 |-|-|
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
-|分類|Microsoft.Interoperability|
+|類別|Microsoft.Interoperability|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 平台叫用方法宣告中包含<xref:System.Boolean?displayProperty=fullName>參數或傳回值，但<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName>屬性不會套用至參數或傳回值。
+ 平台叫用方法宣告包含<xref:System.Boolean?displayProperty=fullName>參數或傳回值，但<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName>屬性不會套用至參數或傳回值。
 
 ## <a name="rule-description"></a>規則描述
- 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用於 managed 和 unmanaged 程式碼之間轉換資料類型的封送處理行為。 許多的簡單資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一表示法，而且不需要其封送處理行為的規格，則 common language runtime 會自動提供正確的行為。
+ 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用來轉換資料類型，managed 和 unmanaged 程式碼之間封送處理行為。 許多簡單的資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一的表示法，並不需要指定其封送處理行為; common language runtime 會自動提供正確的行為。
 
- <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設封送處理行為的<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，但不適合所有情況。 應該決定，對應到適當的布林值表示所需的 unmanaged 方法<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，它一律是 4 個位元組。 UnmanagedType.U1 適用於 c + +`bool`或其他 1 個位元組類型。
+ <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設值封送處理行為<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，也就是不適合所有情況。 Unmanaged 方法需要布林值表示應該決定，並對應到適當<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，這一律是 4 個位元組。 應該使用 c + + 的 UnmanagedType.U1`bool`或其他 1 個位元組類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，套用<xref:System.Runtime.InteropServices.MarshalAsAttribute>至<xref:System.Boolean>參數或傳回值。 屬性的值設定為適當<xref:System.Runtime.InteropServices.UnmanagedType>。
+ 若要修正此規則的違規情形，套用<xref:System.Runtime.InteropServices.MarshalAsAttribute>至<xref:System.Boolean>參數或傳回值。 將屬性的值設定為適當<xref:System.Runtime.InteropServices.UnmanagedType>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 即使封送處理行為的預設值是適當時，程式碼更容易維護時明確指定的行為。
+ 請勿隱藏此規則的警告。 即使封送處理行為的預設值是適當，程式碼時的行為已明確指定時，更輕鬆地可保留。
 
 ## <a name="example"></a>範例
- 下列範例示範兩個平台叫用方法標示為適當的<xref:System.Runtime.InteropServices.MarshalAsAttribute>屬性。
+
+下列範例所示的平台叫用會標有適當的方法<xref:System.Runtime.InteropServices.MarshalAsAttribute>屬性。
 
  [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CSharp/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cs)]
  [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/VisualBasic/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.vb)]
  [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CPP/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cpp)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1901: P/Invoke 宣告應該為可移植](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+ [CA1901：P/Invoke 宣告應該為可移植](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [Ca2101： 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101：指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)
+
+- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>
+- [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

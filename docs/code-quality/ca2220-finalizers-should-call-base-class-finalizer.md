@@ -16,37 +16,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4fc620e55c2f8d5e32e2f2faa94a31d5fe271e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c814324ac21017acf6a0182f7807b0a0878c8aca
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922954"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551203"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：完成項應該呼叫基底類別完成項
+
 |||
 |-|-|
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 覆寫的型別<xref:System.Object.Finalize%2A?displayProperty=fullName>不會呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。
+
+一種類型，會覆寫<xref:System.Object.Finalize%2A?displayProperty=fullName>不會呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。
 
 ## <a name="rule-description"></a>規則描述
- 最終化必須透過繼承階層架構 (Inheritance Hierarchy) 進行傳播。 若要確保這種情況，類型必須呼叫其基底類別<xref:System.Object.Finalize%2A>方法從其本身內<xref:System.Object.Finalize%2A>方法。 C# 編譯器會自動新增呼叫基底類別完成項。
+
+最終化必須透過繼承階層架構 (Inheritance Hierarchy) 進行傳播。 若要確保此行為，類型必須呼叫其基底類別<xref:System.Object.Finalize%2A>方法內自己<xref:System.Object.Finalize%2A>方法。 C# 編譯器會自動新增至基底類別完成項呼叫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，呼叫基底型別<xref:System.Object.Finalize%2A>方法，從您<xref:System.Object.Finalize%2A>方法。
+
+若要修正此規則的違規情形，呼叫基底型別的<xref:System.Object.Finalize%2A>方法，從您<xref:System.Object.Finalize%2A>方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 某些以 common language runtime 為目標的編譯器插入的 Microsoft intermediate language (MSIL) 中呼叫基底類型完成項。 如果此規則的警告報告時，編譯器不會插入該呼叫，您必須將它加入您的程式碼。
+
+請勿隱藏此規則的警告。 某些以 common language runtime 為目標的編譯器插入的 Microsoft intermediate language (MSIL) 的基底型別的完成項呼叫。 如果報告此規則的警告，編譯器不會插入呼叫，以及您必須將它加入您的程式碼。
 
 ## <a name="example"></a>範例
- 下列 Visual Basic 範例顯示型別`TypeB`正確呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
+下列 Visual Basic 範例會顯示為型別`TypeB`正確呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。
+
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
 
 ## <a name="see-also"></a>另請參閱
- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -14,37 +14,41 @@ ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d3e40c73a02c43ecfb13eda0abcfabcb0d3ad5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919865"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548578"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239：必須為選擇性欄位提供還原序列化方法
+
 |||
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 類型具有標示為欄位<xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>屬性和型別不提供還原序列化事件處理方法。
+ 型別具有欄位標記為<xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>屬性和型別不會提供還原序列化事件處理常式方法。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性沒有任何作用，進行序列化時，會序列化以屬性標記的欄位。 不過，欄位會忽略在還原序列化，並會保留它的型別相關聯的預設值。 還原序列化事件處理常式應該要在還原序列化程序期間設定欄位宣告。
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性不會影響序列化; 序列化以屬性標記的欄位。 不過，欄位會在還原序列化則會忽略，且會保留它的型別相關聯的預設值。 還原序列化事件處理常式應該要在還原序列化程序期間設定欄位宣告。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，新增還原序列化事件處理方法的類型。
+ 若要修正此規則的違規情形，請新增還原序列化事件處理常式類型的方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果在還原序列化程序期間，應該忽略欄位。
+ 它會安全地隱藏此規則的警告，如果在還原序列化程序期間，應該忽略欄位。
 
 ## <a name="example"></a>範例
- 下列範例顯示具有選擇性欄位和還原序列化事件的型別處理方法。
+ 下列範例顯示具有選擇性的欄位和還原序列化事件的型別處理方法。
 
  [!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]
  [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]

@@ -16,31 +16,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e3d513188093a29aa9f7bb1c9f83b9c70e54d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc6d8b78ff1b00d1c5e5a6c6a597855243ea12fb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915309"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550715"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713：事件不應有 before 或 after 前置字元
 |||
 |-|-|
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 事件的名稱啟動與 'Before' 或 'After'。
+ 事件名稱開頭 'Before' 或 'After'。
 
 ## <a name="rule-description"></a>規則描述
- 事件名稱應該要引發事件的動作描述。 若要命名在特定序列 (Sequence) 中引發的相關事件，請使用現在式或過去式表示動作序列相對的位置。 例如，當命名的一組事件引發時關閉資源時，您可能會為它命名 '關閉' 和 'Closed'，而不是 'BeforeClose' 和 'AfterClose'。
+ 事件名稱應該要描述引發事件的動作。 若要命名在特定序列 (Sequence) 中引發的相關事件，請使用現在式或過去式表示動作序列相對的位置。 比方說，當命名一組事件引發時關閉資源時，您可能會為它命名 '關閉' 和 'Closed'，而不是 'BeforeClose' 和 'AfterClose'。
 
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。
+ 命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 事件名稱，從移除前置字元，請考慮變更要使用現在式或過去式動詞命令的名稱。
+ 移除事件名稱的前置詞，請考慮變更要使用現在式或過去式動詞命令的名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

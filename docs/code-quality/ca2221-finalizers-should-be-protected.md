@@ -16,35 +16,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917865"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551281"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221：完成項應該受到保護
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會實作完成項不會指定系列 （受保護） 的存取。
+ 公用類型會實作完成項，不會指定系列 （受保護） 的存取。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行的 C#、 Visual Basic 和 Visual c + + 編譯器。
+ 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行 C#、 Visual Basic 和 Visual c + + 編譯器。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更系列可以存取的完成項。
+ 若要修正此規則的違規情形，變更系列存取完成項。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 此規則不能違反任何高層級的.NET 語言。如果您要撰寫的 Microsoft Intermediate Language，它可以是違反了。
+ 無法以任何高層級的.NET 語言; 違反此規則如果您正在撰寫 Microsoft Intermediate Language，它可以是違反了。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,4 +81,5 @@ ms.locfileid: "31917865"
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)
