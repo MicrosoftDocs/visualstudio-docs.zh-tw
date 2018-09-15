@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552093"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612736"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 程式資料庫 (.pdb) 檔案，也稱為符號檔，對應您建立類別、 方法和您的專案中的已編譯可執行檔中所使用的識別項的其他程式碼的原始程式碼中的識別碼。 .pdb 檔案也會將原始程式碼中的陳述式對應至可執行檔中的執行指令。 偵錯工具會使用這項資訊來判斷兩個關鍵資訊：
@@ -45,11 +45,15 @@ ms.locfileid: "45552093"
 符號檔也包含原始程式檔的原始位置，以及選擇性地包含可從中擷取原始程式檔的來源伺服器位置。
   
 > [!TIP]
-> 如果您想要偵錯專案的原始程式碼之外的程式碼，例如 Windows 程式碼或協力廠商程式碼專案呼叫，您必須指定.pdb （以及 （選擇性） 外部的程式碼的原始程式檔） 的位置，而且這些檔案必須完全符合 t 的組建他的可執行檔。  
+> 如果您想要偵錯專案的原始程式碼之外的程式碼，例如 Windows 程式碼或協力廠商程式碼專案呼叫，您必須指定.pdb （以及 （選擇性） 外部的程式碼的原始程式檔） 的位置，而且這些檔案必須完全符合 t 的組建他的可執行檔。 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>如何管理偵錯時的符號檔？ 
+
+**模組**視窗可以告訴您哪些程式碼模組中偵錯工具會視為使用者程式碼，或我的程式碼和符號載入模組的狀態。 您也可以使用這個視窗來偵錯時載入的符號。 如需詳細資訊，請參閱 <<c0> [ 更熟悉的偵錯工具附加至您的應用程式的方式](../debugger/debugger-tips-and-tricks.md#modules_window)。
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具，符號檔的搜尋？ 
   
-1.  DLL 或可執行檔內部指定的位置   
+1.  DLL 或可執行檔內部指定的位置  
   
      (根據預設，如果您在電腦上建立了 DLL 或可執行檔，連結器就會將相關聯之 .pdb 檔案的完整路徑和檔案名稱放置在該 DLL 或可執行檔內。 偵錯工具會先查看符號檔是否在 DLL 或可執行檔內部指定的位置。 這種方式很有用，讓您始終有符號可供電腦上編譯的程式碼使用)。  
   

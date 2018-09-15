@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384223"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612684"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 進行偵錯
 
@@ -444,4 +444,4 @@ ms.locfileid: "44384223"
 在本教學課程中，您已了解如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 若要高階查看偵錯工具功能，以及其他更多資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [偵錯工具祕訣與技巧](../debugger/debugger-tips-and-tricks.md)
