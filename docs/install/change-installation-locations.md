@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87698421c4992d0349e04740c120d491aa54fcc3
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a8b3ce1b0b0bc646f6a4d28031be51920da776cd
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138962"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995903"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>變更 Visual Studio 2017 中的安裝位置
 

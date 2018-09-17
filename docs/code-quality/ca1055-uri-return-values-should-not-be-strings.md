@@ -14,37 +14,42 @@ ms.assetid: 40e39873-7872-4988-8195-9eb0ade9ece0
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dafaccd310d2122c4e00c12e73675ef1778d25b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1189552960ac57aebc37373e2a6d32249faf12dd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902291"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548292"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055：URI 傳回值不應該為字串
+
 |||
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法名稱包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"，而且方法會傳回字串。
+ 方法的名稱包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"，而方法會傳回字串。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會分割成語彙基元 Pascal 大小寫慣例為基礎的方法名稱，並檢查每個語彙基元是否等於"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果沒有相符項目，此規則假設方法會傳回統一資源識別元 (URI)。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全的方式提供這些服務。
+ 此規則會將方法名稱分割為 pascal 命名法大小寫慣例為基礎的權杖，並檢查每個語彙基元是否等於"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果沒有相符項目，此規則假設方法會傳回統一資源識別元 (URI)。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別會提供這些服務安全的方式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將傳回類型變更為<xref:System.Uri>。
+ 若要修正此規則的違規情形，將變更傳回型別，以<xref:System.Uri>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果傳回的值不代表 URI。
+ 它會安全地隱藏此規則的警告，如果傳回的值不代表 URI。
 
 ## <a name="example"></a>範例
- 下列範例顯示型別， `ErrorProne`，違反這項規則，以及類型， `SaferWay`，符合此規則。
+ 下列範例顯示的型別`ErrorProne`，，違反這項規則和一個型別， `SaferWay`，符合規則。
 
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]

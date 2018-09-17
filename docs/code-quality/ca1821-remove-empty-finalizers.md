@@ -15,34 +15,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f24b0f4c6358da459525288a2812446c1c73f3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915228"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549634"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821：必須移除空的完成項
 |||
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
-|分類|Microsoft.Performance|
-|中斷變更|非中斷|
+|類別|Microsoft.Performance|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 類型會實作是空的、 只基底類型完成項，會呼叫或僅有條件發出方法呼叫完成項。
+ 型別實作完成項是空的、 呼叫只有基底類型完成項，或僅有條件地發出方法呼叫。
 
 ## <a name="rule-description"></a>規則描述
- 請盡可能避免使用完成項，因為追蹤物件存留期 (Lifetime) 時將會產生額外的效能負荷。 它會收集物件前，記憶體回收行程會執行完成項。 這表示兩個集合都需要回收物件。 空的完成項會造成這種額外負荷，而沒有任何好處。
+ 請盡可能避免使用完成項，因為追蹤物件存留期 (Lifetime) 時將會產生額外的效能負荷。 它會收集物件之前，記憶體回收行程會執行完成項。 這表示兩個集合都需要回收物件。 空的完成項會產生此額外負荷，而沒有任何好處。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 移除空的完成項。 如果需要偵錯的完成項，括住整個完成項中的`#if DEBUG / #endif`指示詞。
+ 移除空的完成項。 如果需要進行偵錯完成項，括住整個的完成項中`#if DEBUG / #endif`指示詞。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的訊息。 若要隱藏最終處理的失敗會降低效能，並不提供任何好處。
+ 請勿隱藏這項規則的訊息。 若要隱藏最終處理失敗會降低效能，並不提供任何好處。
 
 ## <a name="example"></a>範例
- 下列範例會顯示空白完成項應該移除、 完成項應該包含在`#if DEBUG / #endif`指示詞和使用完成項`#if DEBUG / #endif`指示詞正確。
+ 下列範例顯示空的完成項，應該移除、 完成項，應該括住`#if DEBUG / #endif`指示詞，並使用完成項`#if DEBUG / #endif`指示詞正確。
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

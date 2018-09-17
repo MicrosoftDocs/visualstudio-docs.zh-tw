@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548631"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775202"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 
@@ -53,7 +53,7 @@ Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資
 
 ## <a name="common-tasks"></a>一般工作
 
-您可以在效能工作階段的 [效能工作階段屬性頁] 對話方塊中指定其他選項。 若要開啟此對話方塊：
+您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：
 
 - 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。
 

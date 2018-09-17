@@ -14,14 +14,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8393123f34bf8c33e6a65f26944640b500334dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be9d4e0e251d0e84627b04ccdd5bd4842d2a0e8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900874"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546859"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 
@@ -29,18 +32,18 @@ ms.locfileid: "31900874"
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
 
-外部可見的方法會對其中一個參考引數不需驗證該引數是否`null`(`Nothing`在 Visual Basic 中)。
+外部可見方法其中一個參考引數而不需要確認該引數是否已取值`null`(`Nothing` Visual Basic 中)。
 
 ## <a name="rule-description"></a>規則描述
 
-所有傳遞至外部可見方法的參考引數應經過`null`。 如果可行，會擲回<xref:System.ArgumentNullException>引數是當`null`。
+所有的參考引數傳遞至外部可見方法應針對檢查`null`。 如果適當的話，會擲回<xref:System.ArgumentNullException>引數時`null`。
 
-如果可以從未知的組件呼叫方法，因為它宣告為公用或受保護，您應該驗證方法的所有參數。 如果方法設計成只能由已知的組件呼叫中，您應該將方法設為內部，並套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性設定為包含方法的組件。
+如果可以從未知的組件呼叫的方法，因為它宣告為公用或受保護，您應該驗證方法的所有參數。 如果方法設計成只能呼叫已知的組件中，您應該將方法設為內部，並套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性包含方法的組件。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -48,11 +51,11 @@ ms.locfileid: "31900874"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果您確定取值的參數已由另一個函式中的方法呼叫驗證，您可以隱藏此規則的警告。
+如果您確定函式中的另一個方法呼叫通過已取值的參數，您可以隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反規則的方法和滿足規則的方法。
+下列範例顯示違反規則方法，並符合規則的方法。
 
  ```csharp
  using System;
@@ -122,9 +125,9 @@ End Namespace
 
 ## <a name="example"></a>範例
 
-填入欄位或屬性所參考物件的複製建構函式也可能會違反 CA1062 規則。 因為複製的物件傳遞至複製建構函式可能會發生違規`null`(`Nothing`在 Visual Basic 中)。 若要解決此違規情形，使用靜態 (在 Visual Basic 中的是 Shared) 方法來檢查複製的物件不是 null。
+填入欄位或屬性所參考物件的複製建構函式也可能會違反 CA1062 規則。 因為複製的物件傳遞給複製建構函式可能會發生的違規`null`(`Nothing` Visual Basic 中)。 若要解決此違規情形，使用靜態的 (在 Visual Basic 中的是 Shared) 方法來檢查複製的物件不是 null。
 
-在下列`Person`類別範例`other`物件傳遞至`Person`複製建構函式可能`null`。
+在下列`Person`類別的範例`other`物件傳遞給`Person`複製建構函式可能`null`。
 
 ```csharp
 public class Person
@@ -149,7 +152,7 @@ public class Person
 
 ## <a name="example"></a>範例
 
-以下修訂`Person`範例中，`other`物件傳遞至複製建構函式，會先檢查中的 null`PassThroughNonNull`方法。
+下列已修訂`Person`範例中，`other`物件傳遞給複製建構函式會先檢查中的 null`PassThroughNonNull`方法。
 
 ```csharp
 public class Person

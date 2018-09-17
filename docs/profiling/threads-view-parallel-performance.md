@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573163"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668344"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [執行緒檢視] 是 [並行視覺化檢視] 中最詳細且功能最豐富的檢視 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  

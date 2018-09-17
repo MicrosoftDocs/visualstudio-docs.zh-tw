@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572341"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668365"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>針對效能工具問題進行疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：  
   
--   [程式碼剖析工具沒有收集到任何資料](#NoDataCollected)  
+-   [程式碼剖析工具沒有收集到任何資料](#no-data-is-collected-by-the-profiling-tools)  
   
--   [效能檢視和報表將函式名稱顯示為數字](#NoSymbols)  
+-   [效能檢視和報表將函式名稱顯示為數字](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>程式碼剖析工具沒有收集到任何資料  
  在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出] 視窗或命令視窗中收到下列警告：  

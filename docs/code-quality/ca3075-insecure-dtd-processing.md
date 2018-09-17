@@ -10,62 +10,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 821a2a3f50f94808482d50a8e1e36feefb184173
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922425"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546781"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  如果您使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。
 
 ## <a name="rule-description"></a>規則描述
- A*文件類型定義 (DTD)* 所定義 XML 剖析器可以判斷文件中，有效性的兩種方式之一是[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
+ A*文件類型定義 (DTD)* 是下列其中一種 XML 剖析器用來判斷文件有效性所定義[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
 
--   <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
+- <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
 
--   XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。
+- XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。
 
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 Parse。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 剖析。
 
--   使用 <xref:System.Xml.XmlResolver> 來處理未受信任的輸入，而不是 <xref:System.Xml.XmlSecureResolver> 。
+- 使用 <xref:System.Xml.XmlResolver> 來處理未受信任的輸入，而不是 <xref:System.Xml.XmlSecureResolver> 。
 
--   XmlReader。<xref:System.Xml.XmlReader.Create%2A> 方法會叫用不安全<xref:System.Xml.XmlReaderSettings>執行個體或所有執行個體。
+- XmlReader。<xref:System.Xml.XmlReader.Create%2A> 方法會叫用不安全<xref:System.Xml.XmlReaderSettings>執行個體或完全沒有執行個體。
 
--   <xref:System.Xml.XmlReader> 會透過不安全的預設值或值。
+- <xref:System.Xml.XmlReader> 建立不安全的預設值或值。
 
  上述每個案例皆會造成一樣的結果：如果內容是來自處理 XML 之電腦的檔案系統或網路共用，這些內容就會公開給攻擊者，而被用來當做 DoS 向量。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
--   妥善捕捉並處理所有 XmlTextReader 例外狀況，以避免路徑資訊外洩。
+- 可以攔截並處理所有 XmlTextReader 例外狀況，正確地以避免路徑資訊外洩。
 
--   使用 <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
+- 使用 <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
 
--   藉由將 <xref:System.Xml.XmlReader> 屬性設為 <xref:System.Xml.XmlResolver> null **，來禁止**開啟外部資源。
+- 藉由將 <xref:System.Xml.XmlReader> 屬性設為 <xref:System.Xml.XmlResolver> null **，來禁止**開啟外部資源。
 
--   請確認 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 屬性是從受信任的來源位置指派。
+- 請確認 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 屬性是從受信任的來源位置指派。
 
  .NET 3.5 和更早的版本
 
--   如果您正在處理不受信任的來源，請將 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** 以停用 DTD 處理。
+- 如果您正在處理不受信任的來源，請將 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** 以停用 DTD 處理。
 
--   XmlTextReader 類別具有完全信任的繼承要求。
+- XmlTextReader 類別具有完全信任的繼承要求。
 
  .NET 4 和更新版本
 
--   請避免啟用 DtdProcessing，如果您正在處理未受信任來源，藉由設定<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>屬性**禁止**或**忽略**。
+- 避免啟用 DtdProcessing，如果您正在處理不受信任的來源，藉由設定<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>屬性，以**禁止**或是**忽略**。
 
--   請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。
+- 請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。
 
 > [!NOTE]
 >  此規則可能會在一些有效的 XmlSecureResolver 執行個體上出現誤判報告。 我們會努力在 2016 年中旬前解決此問題。

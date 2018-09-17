@@ -16,47 +16,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ed7050ff7b804d3224390393c3c860bc25c30
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d76a0ecf6a2eeac677475eb25efe495129c213
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916034"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548513"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：必須檢查實值類型上的宣告式安全性
+
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 在公用或受保護的實值類型受到[資料與模型化](/dotnet/framework/data/index)或[連結要求](/dotnet/framework/misc/link-demands)。
+
+公用或受保護的實值型別會受到[資料與模型化](/dotnet/framework/data/index)或是[連結要求](/dotnet/framework/misc/link-demands)。
 
 ## <a name="rule-description"></a>規則描述
- 配置及其他建構函式執行之前，由其預設建構函式初始化實值類型。 如果實值類型受到 Demand 或 LinkDemand，而且呼叫端沒有滿足安全性檢查，任何建構函式以外的權限預設值將會失敗，並將擲回安全性例外狀況。 實值型別不會取消配置。它會處於其預設建構函式所設定的狀態。 請勿假設呼叫端傳遞實值類型的執行個體具有建立或存取執行個體的權限。
+
+配置及其他建構函式執行之前，其預設建構函式來初始化實值型別。 如果實值型別會受到 Demand 或 LinkDemand 的比較，而且呼叫端沒有滿足安全性檢查，而任何建構函式以外的權限預設值將會失敗，並將擲回安全性例外狀況。 實值型別不會取消配置;它會處於其預設建構函式所設定的狀態。 請勿假設呼叫端傳遞實值型別的執行個體具有建立或存取執行個體的權限。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 您無法修正此規則的違規情形，除非您移除安全性檢查從型別，並使用方法層級安全性檢查其所在位置。 請注意，違規修正這種方式將不會防止呼叫者以取得實值類型的執行個體的權限不足。 您必須確定執行個體的值類型，在其預設狀態下，不會公開機密資訊，也不能有害的方式。
+
+除非您從類型 中移除安全性檢查，並使用方法層級安全性檢查在其位置中，您無法修正此規則的違規情形。 以這種方式修正違規無法防止具有足夠的權限，無法取得實值型別的執行個體的呼叫端。 您必須確保執行個體的值型別，在其預設狀態下，不會公開機密資訊，且不能用於有害的方式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果任何呼叫端可以取得其預設狀態中之值型別的執行個體，而不造成安全性威脅，您可以隱藏此規則的警告。
 
-## <a name="example"></a>範例
- 下列範例會示範包含違反此規則的實值類型的程式庫。 請注意，`StructureManager`類型假設傳遞實值類型的執行個體的呼叫端若要建立或存取執行個體的權限。
+如果任何呼叫端可以取得實值型別，其預設狀態中的執行個體，而不造成安全性威脅，您可以隱藏此規則的警告。
 
- [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
+## <a name="example-1"></a>範例 1
 
-## <a name="example"></a>範例
- 下列應用程式示範媒體櫃中的弱點。
+下列範例示範包含違反這項規則實值型別程式庫。 `StructureManager`類型會假設呼叫端傳遞實值型別的執行個體具有建立或存取執行個體的權限。
 
- [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+[!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
- 此範例會產生下列輸出。
+## <a name="example-2"></a>範例 2
 
- **結構的自訂建構函式： 要求失敗。** 
-**新值 SecuredTypeStructure 100 100**
-**新值 SecuredTypeStructure 200 200**
+下列應用程式示範程式庫的弱點。
+
+[!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+
+這個範例會產生下列輸出：
+
+```txt
+Structure custom constructor: Request failed.
+New values SecuredTypeStructure 100 100
+New values SecuredTypeStructure 200 200
+```
+
 ## <a name="see-also"></a>另請參閱
- [連結要求](/dotnet/framework/misc/link-demands)[資料與模型化](/dotnet/framework/data/index)
+
+- [連結要求](/dotnet/framework/misc/link-demands)
+- [資料與模型化](/dotnet/framework/data/index)

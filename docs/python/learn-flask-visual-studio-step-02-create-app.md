@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 2
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是建立應用程式及使用檢視與範本的步驟。
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9900fd69cf51ca97d9cb9c6be8bbbe6bba22971
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388328"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776151"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -97,7 +97,7 @@ ms.locfileid: "39388328"
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/flask/step02-source-control-changes-button.png)
 
-1. 在 [Team Explorer] 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]。 當認可完成時，您會看到下列訊息：**認可於本機建立的 \<雜湊>。同步以將您的變更與伺服器共用。.** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 [Team Explorer] 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]。 當認可完成時，您會看到下列訊息：**認可於本機建立的 \<雜湊>。同步以將您的變更與伺服器共用。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/flask/step02-source-control-push-to-remote.png)
 

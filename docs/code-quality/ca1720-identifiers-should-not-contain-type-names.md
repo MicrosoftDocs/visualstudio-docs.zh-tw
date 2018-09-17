@@ -16,116 +16,117 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915625"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548799"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見成員中的參數名稱包含資料類型名稱。
+ 外部可見成員中的參數名稱包含的資料型別名稱。
 
  -或-
 
- 外部可見成員的名稱包含語言特定的資料型別名稱。
+ 外部可見成員的名稱包含語言特定資料型別名稱。
 
 ## <a name="rule-description"></a>規則描述
- 參數和成員的名稱最好用於傳達其意義說明其預期要由開發工具提供的類型。 名稱的成員，如果必須使用資料型別名稱，會使用與語言無關的名稱而不是特定語言。 比方說，而不是 C# 類型名稱 'int'，使用的語言無關的資料型別名稱，Int32。
+ 參數和成員的名稱最好用於傳達其意義說明其預期由開發工具所提供的類型。 名稱的成員，如果必須使用資料型別名稱，而不是特定語言使用的語言無關的名稱。 比方說，而不是 C# 型別名稱 'int'，使用的語言無關的資料型別名稱，Int32。
 
- 每個離散的權杖參數或成員的名稱不區分大小寫的方式被檢查對下列語言專屬的資料類型名稱：
+ 每個離散的權杖參數或成員的名稱已針對下列語言專屬的資料型別名稱，不區分大小寫的方式：
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   整數
+- 整數
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   不帶正負號
+- 不帶正負號
 
--   簽署人
+- 簽署人
 
--   浮動
+- 浮動
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- 此外，參數的名稱也會簽對下列語言無關的資料類型名稱不區分大小寫的方式：
+此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
 
--   Object
+- 物件
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   Ptr
+- ptr
 
--   Pointer
+- Pointer
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- Decimal
 
--   Guid
+- Guid
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  **如果針對參數引發：**
@@ -134,10 +135,10 @@ ms.locfileid: "31915625"
 
  **如果成員針對引發：**
 
- 取代進一步描述其意義、 語言無關的同等權限或更泛型的詞彙如 'value' 的詞彙中的成員名稱的語言特定的資料類型識別項。
+ 語言特定資料型別識別項，該成員的名稱取代為一個詞彙，進一步說明其意義、 語言獨立對等項目或更泛型的詞彙如 'value'。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 可能適合使用偶爾使用的類型為基礎的參數和成員的名稱。 不過，進行新開發，已知位置，您應該隱藏此規則的警告發生的狀況。 具有先前隨附的程式庫，您可能要隱藏此規則的警告。
+ 偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 對於有舊版隨附的程式庫，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

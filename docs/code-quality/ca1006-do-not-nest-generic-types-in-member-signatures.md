@@ -14,37 +14,41 @@ ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6303cf96e3e8f6c4c0920336602cdbb76cc400a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5f7021de24ec9b0a6d7c31d53893528790f2cf2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901158"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548859"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中巢狀化泛型類型
+
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見成員的簽章含有巢狀的型別引數。
+ 外部可見的成員都有包含巢狀的型別引數的簽章。
 
 ## <a name="rule-description"></a>規則描述
- 巢狀類型引數就是也是泛型類型的類型引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。
+ 巢狀類型引數就是也是泛型類型的類型引數。 若要呼叫其簽章含有巢狀類型引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更設計，以移除巢狀型別引數。
+ 若要修正此規則的違規情形，變更設計以移除巢狀型別引數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 提供了易於了解和使用的語法中的泛型減少的時間，需要了解並增加新的媒體櫃的採用率。
+ 請勿隱藏此規則的警告。 提供了容易了解和使用的語法中的泛型減少時間，才能了解，並增加新的程式庫的採用率。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的方法，才能呼叫違規方法的語法。
+ 下列範例顯示違反規則方法，並呼叫違規的方法所需的語法。
 
  [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
  [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]

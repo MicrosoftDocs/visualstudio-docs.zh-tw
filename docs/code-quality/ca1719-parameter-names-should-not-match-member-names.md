@@ -16,32 +16,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915332"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546885"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：參數名稱不應符合成員名稱
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|
 |CheckId|CA1719|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見成員的名稱比對，在不區分大小寫比較，其中一個參數的名稱。
+ 外部可見成員的名稱中不區分大小寫的比較，其中一個參數的名稱比對。
 
 ## <a name="rule-description"></a>規則描述
  參數名稱應該要能傳達參數的意義，而成員名稱應該要能傳達成員的意義。 兩者相同屬罕見的設計。 如果將參數命名為與成員名稱相同的名稱，則不僅會不容易了解，也會讓程式庫難以使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 選取 不符合成員名稱的參數名稱。
+ 選取的成員名稱不相符的參數名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 進行新開發，已知情況下會發生您必須在此隱藏此規則的警告。 傳送文件庫，您可能要隱藏此規則的警告。
+ 新的開發，沒有已知的情況下會發生您必須在其中隱藏此規則的警告。 針對隨附的程式庫，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

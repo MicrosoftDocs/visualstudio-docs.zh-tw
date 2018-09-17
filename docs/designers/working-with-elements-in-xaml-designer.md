@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078923"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279657"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 您可以在 XAML 中、在程式碼中或使用 XAML 設計工具，將項目 (控制項、版面配置和圖形) 加入應用程式。 本主題說明如何在 Visual Studio 或 Blend for Visual Studio 中，使用 XAML 設計工具來處理項目。
 
 ## <a name="adding-an-element-to-a-layout"></a>將項目加入版面配置
- 「版面配置」是調整 UI 項目大小以及定位項目的程序。 若要定位視覺效果項目，您必須將它們放在版面配置 [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx)。 `Panel` 有一個子屬性，這個屬性是 [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) 類型的集合。 您可以使用各種 `Panel` 子項目 (例如 [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx)、[StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) 和 [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)) 作為版面配置容器，並在頁面上定位和排列項目。
+ 「版面配置」是調整 UI 項目大小以及定位項目的程序。 若要定位視覺效果項目，您必須將它們放在版面配置 [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel)。 `Panel` 有一個子屬性，這個屬性是 [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 類型的集合。 您可以使用各種 `Panel` 子項目 (例如 [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas)、[StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid)) 作為版面配置容器，並在頁面上定位和排列項目。
 
  根據預設，`Grid` 面板可做為頁面或表單中的最上層版面配置容器。 您可以加入版面配置面板、控制項，或最上層頁面配置中的其他項目。
 
@@ -33,7 +33,7 @@ ms.locfileid: "39078923"
 
     -   將項目從 [工具箱] 拖曳至畫板。
 
-    -   在 [工具箱] 中，選取其中一個繪圖工具 (例如 [Ellipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) 或 [Rectangle](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx))，然後在使用中面板中繪製項目。
+    -   在 [工具箱] 中，選取其中一個繪圖工具 (例如 [Ellipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) 或 [Rectangle](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle))，然後在使用中面板中繪製項目。
 
 ## <a name="changing-the-layering-order-of-elements"></a>變更項目的圖層順序
  如果 XAML 設計工具的畫板上有兩個項目，其中一個項目會出現在圖層順序中另一個項目的上層。 [文件大綱] 視窗的項目清單底端是最上層項目 (設定項目的 **ZIndex** 屬性時除外)。 當您將項目插入頁面、表單或版面配置容器時，項目會自動放在作用中容器項目內其他項目的上層。 若要變更項目的順序，您可以使用 [順序] 命令，或在 [文件大綱] 視窗中拖曳物件樹狀結構中的項目。

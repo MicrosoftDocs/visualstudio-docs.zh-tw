@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6689e6f0be6db4b14f03006d1aa784ae70642ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 681b2916ef6e6e5c90d98b7a88874a7fb0166549
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915691"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546703"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131：安全性關鍵類型可能未參與類型等價
 |||
 |-|-|
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |CheckId|CA2131|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型會參與類型等價或類型本身，或標示的成員或欄位型別的<xref:System.Security.SecurityCriticalAttribute>屬性。
+ 類型會參與類型等價和或類型本身，或標示的成員或欄位的型別，<xref:System.Security.SecurityCriticalAttribute>屬性。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會引發任何關鍵的類型或包含參與類型等價之關鍵方法或欄位的類型。 當 CLR 偵測到這類類型時，它便無法載入它與<xref:System.TypeLoadException>在執行階段。 通常，只有在使用者手動實作類型等價，而不是依賴 tlbimp 和編譯器進行類型等價時，就會引發這項規則。
+ 此規則會引發任何關鍵的類型或包含參與類型等價之關鍵方法或欄位的類型。 當 CLR 偵測到這種類型時，它便無法載入與<xref:System.TypeLoadException>在執行階段。 通常，只有在使用者手動實作類型等價，而不是依賴 tlbimp 和編譯器進行類型等價時，就會引發這項規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請移除 SecurityCritical 屬性。
@@ -40,9 +40,9 @@ ms.locfileid: "31915691"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範介面、 方法，並會導致引發此規則的欄位。
+ 下列範例示範介面、 方法以及會導致引發此規則的欄位。
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 
 ## <a name="see-also"></a>另請參閱
- [安全性透明的程式碼，層級 2](/dotnet/framework/misc/security-transparent-code-level-2)
+ [安全性透明程式碼，層級 2](/dotnet/framework/misc/security-transparent-code-level-2)

@@ -16,49 +16,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aa6fe4cf38d89e76fc7151f493aac414179064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923373"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551934"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：屬性字串常值必須正確剖析
+
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 屬性的字串常值參數不正確剖析的 URL、 GUID 或版本中。
+ 屬性的字串常值參數不會正確剖析 URL、 GUID 或版本。
 
 ## <a name="rule-description"></a>規則描述
- 因為屬性衍生自<xref:System.Attribute?displayProperty=fullName>，屬性用在編譯時期，只有常值可以傳遞至其建構函式。 必須代表 Url、 Guid 和版本的屬性參數類型不可以是<xref:System.Uri?displayProperty=fullName>， <xref:System.Guid?displayProperty=fullName>，和<xref:System.Version?displayProperty=fullName>，因為無法以常數表示這些類型。 相反地，必須透過字串表示。
+ 因為屬性衍生自<xref:System.Attribute?displayProperty=fullName>，屬性用在編譯時期，只有常值可以傳遞至其建構函式。 必須在 Url、 Guid、 和版本所代表的屬性參數類型不可以是<xref:System.Uri?displayProperty=fullName>， <xref:System.Guid?displayProperty=fullName>，和<xref:System.Version?displayProperty=fullName>，因為這些類型無法表示為常數。 相反地，必須以字串表示。
 
- 參數的型別為字串，所以，無法在編譯時期傳遞格式不正確的參數。
+ 因為參數類型為字串，就可以在編譯時期，無法傳遞的格式不正確的參數。
 
- 此規則會使用命名的啟發學習法來尋找代表統一資源識別元 (URI)、 全域唯一識別碼 (GUID) 或版本的參數，並確認傳遞的值正確。
+ 此規則，找出代表統一資源識別元 (URI)、 全域唯一識別碼 (GUID) 或版本中，參數會使用命名的啟發學習法，並確認傳遞的值正確無誤。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  將參數字串變更為格式正確的 URL、 GUID 或版本。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告，如果參數不代表 URL、 GUID 或版本。
+ 它可安全地隱藏此規則的警告，如果參數不代表 URL、 GUID 或版本。
 
 ## <a name="example"></a>範例
  下列範例顯示 AssemblyFileVersionAttribute 違反此規則的程式碼。
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- 此規則會觸發如下：
+ 此規則會觸發下列參數：
 
--   包含 'version' 而且無法剖析為 System.Version 的參數。
+- 參數會包含 'version'，而且無法剖析為 System.Version。
 
--   無法剖析為 System.Guid 以及包含 'guid' 的參數。
+- 參數會包含 [guid]，而且無法剖析為 System.Guid。
 
--   包含 'uri'、 'urn' 或 'url'，無法剖析為 System.Uri 參數。
+- 參數會包含 'uri'、 'urn' 或 'url'，而且無法剖析為 System.Uri。
 
 ## <a name="see-also"></a>另請參閱
- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+
+- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -14,38 +14,42 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a26c2b941289ed7a83e66e1677db172660d270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920251"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549322"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：請正確實作序列化方法
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|分類|Microsoft.Usage|
-|中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果不是組件外部可見方法。|
+|類別|Microsoft.Usage|
+|中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果方法不是組件外部可見。|
 
 ## <a name="cause"></a>原因
- 處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。
+ 處理序列化事件的方法沒有正確的簽章、傳回類型或可視性。
 
 ## <a name="rule-description"></a>規則描述
  方法所套用下列序列化事件屬性的其中一個指定的序列化事件處理常式：
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- 序列化事件處理常式會接受一個參數的型別<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>，則傳回`void`，而且有`private`可見性。
+ 序列化事件處理常式會接受單一參數型別的<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>、 return `void`，而且有`private`可見性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請更正簽章、 傳回型別或序列化的事件處理常式的可見性。
@@ -54,7 +58,7 @@ ms.locfileid: "31920251"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示正確宣告的序列化事件處理常式。
+ 下列範例會示範正確宣告的序列化事件處理常式。
 
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]

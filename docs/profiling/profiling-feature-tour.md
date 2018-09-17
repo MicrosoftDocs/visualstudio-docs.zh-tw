@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626733"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320835"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -156,7 +156,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是| 
-|[CPU 使用量](../profiling/cpu-usage.md)|是 (請參閱「注意」)|是|是 (請參閱「注意」)|
+|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
 |[GPU 使用量](../debugger/gpu-usage.md)|是|是|no| 
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|

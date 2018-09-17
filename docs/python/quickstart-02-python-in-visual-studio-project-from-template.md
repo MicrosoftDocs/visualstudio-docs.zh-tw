@@ -1,7 +1,7 @@
 ---
 title: 快速入門 - 使用範本建立 Python 專案
 description: 在此快速入門中，您可以使用基本 Flask 應用程式的內建範本來建立 Python 的 Visual Studio 專案。
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586482"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995998"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
@@ -76,8 +76,7 @@ ms.locfileid: "39586482"
 
 1. 選取 [偵錯] > [啟動但不偵錯] 以執行應用程式並將瀏覽器開啟到 `localhost:5555`。
 
-
-  **問題：Visual Studio 還提供其他哪些 Python 範本？**
+**問題：Visual Studio 還提供其他哪些 Python 範本？**
 
 **解答**：安裝 Python 工作負載後，Visual Studio 提供各種不同的專案範本，包括可用於 [Flask、Bottle 及 Django Web 架構](../python/python-web-application-project-templates.md)、Azure 雲端服務、不同機器學習案例，甚至還有範本可從包含 Python 應用程式的現有資料夾結構建立專案。 您可以透過 [檔案] > [新增] > [專案] 對話方塊選取 [Python] 語言節點與其子節點，來存取這些範本。
 

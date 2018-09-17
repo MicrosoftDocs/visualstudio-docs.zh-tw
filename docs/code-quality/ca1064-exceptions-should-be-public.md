@@ -16,36 +16,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b60127eee3ea333e324c656961eaf383a6ef409f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6a47334da2879760142dd925917339a011890554
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898557"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547941"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：例外狀況必須是公用
 |||
 |-|-|
 |TypeName|ExceptionsShouldBePublic|
 |CheckId|CA1064|
-|分類|Microsoft.Design|
+|類別|Microsoft.Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  非公用例外狀況直接衍生自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。
 
 ## <a name="rule-description"></a>規則描述
- 只有在它自己的內部範圍內顯示內部例外狀況。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>，外部的程式碼就沒有足夠的資訊可以知道該如何處理例外狀況。
+ 內部例外狀況只會顯示在它自己的內部範圍的。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>，外部程式碼不會知道該如何處理例外狀況的足夠資訊。
 
- 但是，如果程式碼可於稍後當做基底的內部例外狀況的公用例外狀況，它是合理假設在進一步的程式碼時將能夠做到智慧型與基底例外狀況。 公用例外狀況將會在提供的方式<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。
+ 但是，如果程式碼具有公用的例外狀況，稍後會做為基底內部例外狀況，是合理假設程式碼進一步放大都能夠進行智慧型與基底例外狀況。 公用例外狀況會有詳細的資訊，藉由提供比<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  將例外狀況設為公用，或衍生不是公用例外狀況的內部例外狀況<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您確定在所有情況下，會在它自己的內部範圍內攔截到的私用例外狀況，則隱藏此規則的訊息。
+ 如果您確定在所有情況下，將會在它自己內部的範圍內攔截到私用的例外狀況，則隱藏此規則的訊息。
 
 ## <a name="example"></a>範例
- 因為例外狀況類別直接衍生自例外狀況，而且是內部的第一個範例方法 FirstCustomException 引發此規則。 此規則不會引發 SecondCustomException 類別上，因為雖然直接從例外狀況也衍生類別，類別宣告為公用。 第三個類別也不會引發此規則因為它不是直接從<xref:System.Exception?displayProperty=fullName>， <xref:System.SystemException?displayProperty=fullName>，或<xref:System.ApplicationException?displayProperty=fullName>。
+ 因為例外狀況類別直接衍生自例外狀況，而且內部的第一個範例方法，FirstCustomException 會引發此規則。 此規則不會引發 SecondCustomException 類別上，因為雖然此類別也直接衍生自例外狀況，該類別已宣告為公用。 第三個類別也不會引發此規則因為它不是直接從衍生<xref:System.Exception?displayProperty=fullName>， <xref:System.SystemException?displayProperty=fullName>，或<xref:System.ApplicationException?displayProperty=fullName>。
 
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

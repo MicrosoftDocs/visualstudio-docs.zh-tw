@@ -16,34 +16,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e00c0e7eaf3b88588f0914d78a23db40082d63f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76b946e5fc5216d11eee98ceb8cc7eeb13ff186b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915727"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545644"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714：旗標列舉應該使用複數名稱
 |||
 |-|-|
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用列舉型別的<xref:System.FlagsAttribute?displayProperty=fullName>其名稱結尾不是和中的 '。
+ 公用列舉型別有<xref:System.FlagsAttribute?displayProperty=fullName>和其名稱結尾不 in'。
 
 ## <a name="rule-description"></a>規則描述
- 與標記的型別<xref:System.FlagsAttribute>為複數，因為此屬性會指出，可以指定多個值的名稱。 例如，定義一周天數的列舉可能被適用於應用程式中您可以在此指定多天。 這個列舉型別應該具有<xref:System.FlagsAttribute>和天' 呼叫。 類似的列舉型別，可讓某一天指定沒有屬性，且可能 ' day '。
+ 類型標記為<xref:System.FlagsAttribute>是複數，因為此屬性會指出，可以指定多個值的名稱。 比方說，定義一周天數列舉可能被適用於應用程式中，您可以指定多天。 這個列舉型別應該有<xref:System.FlagsAttribute>而且無法在 '天' 呼叫。 類似的列舉型別，允許只指定一天不會有屬性，並可能是 ' day '。
 
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。
+ 命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 讓列舉型別的名稱複數單字，或移除<xref:System.FlagsAttribute>屬性如果不能同時指定多個列舉值。
+ 複數的單字，讓列舉型別的名稱，或移除<xref:System.FlagsAttribute>屬性如果不能同時指定多個列舉值。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是以隱藏違規情形，如果名稱為複數的字，但結尾不是安全的 '。 比方說，如果先前已詳述於多天列舉已命名為 'DaysOfTheWeek'，這會違反此規則，但不是其對應方式的邏輯。 這類違規應該計數器。
+ 它可安全地隱藏違規情形，如果名稱是複數的字，但不結束中的 '。 比方說，如果先前所述的數日列舉型別已命名為 'DaysOfTheWeek'，這會違反此規則，但不是其意圖的邏輯。 應該隱藏此違規情況。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
@@ -51,4 +51,6 @@ ms.locfileid: "31915727"
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.FlagsAttribute?displayProperty=fullName> [列舉設計](/dotnet/standard/design-guidelines/enum)
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [列舉設計](/dotnet/standard/design-guidelines/enum)

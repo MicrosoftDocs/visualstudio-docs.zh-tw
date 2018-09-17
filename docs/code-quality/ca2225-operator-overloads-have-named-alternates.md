@@ -16,40 +16,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924670"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550303"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225：運算子多載必須有具名的替代方法
 |||
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  偵測到運算子多載，且找不到預期的具名替代方法。
 
 ## <a name="rule-description"></a>規則描述
- 運算子多載可讓您使用符號來表示類型的計算。 例如，新增多載加號 （+） 的型別通常必須命名為 'Add' 的替代成員。 具名的替代成員存取運算子，與相同的功能，並提供的開發人員程式在語言不支援多載的運算子。
+ 運算子多載可讓使用符號來表示型別的計算。 比方說，多載加號 （+） 來加入型別通常必須命名為 'Add' 的替代成員。 具名的替代成員可存取運算子，與相同的功能，並可供開發人員並不支援多載的運算子的語言設計程式。
 
  此規則會檢查下表中列出的運算子。
 
 |C#|Visual Basic|C++|替代名稱|
 |---------|------------------|-----------|--------------------|
-|+ （二進位）|+|+ （二進位）|新增|
-|+=|+=|+=|新增|
+|+ （二進位）|+|+ （二進位）|加入|
+|+=|+=|+=|加入|
 |&|及|&|BitwiseAnd|
 |&=|和 =|&=|BitwiseAnd|
 |&#124;|或|&#124;|BitwiseOr|
 |&#124;=|或 =|&#124;=|BitwiseOr|
 |--|N/A|--|遞減|
-|/|/|/|分割|
-|/=|/=|/=|分割|
+|/|/|/|Divide|
+|/=|/=|/=|Divide|
 |==|=|==|等於|
 |^|Xor|^|Xor|
 |^=|Xor =|^=|Xor|
@@ -57,8 +57,8 @@ ms.locfileid: "31924670"
 |>=|>=|>=|比較|
 |++|N/A|++|遞增|
 |<>|!=|等於|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|Shift|
+|<<=|<<=|<<=|Shift|
 |<|<|<|比較|
 |<=|<=|\<=|比較|
 |&&|N/A|&&|LogicalAnd|
@@ -69,29 +69,29 @@ ms.locfileid: "31924670"
 |* （二進位）|*|*|乘法|
 |*=|N/A|*=|乘法|
 |~|not|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|N/A|>>=|RightShift|
+|>>|>>|>>|右 Shift|
+=|N/A|>>=|右 Shift|
 |-（二進位）|-（二進位）|-（二進位）|差集|
 |-=|N/A|-=|差集|
 |true|IsTrue|N/A|IsTrue （屬性）|
 |-（一元）|N/A|-|變換正負號|
-|+ （一元）|N/A|+|加號|
-|False|IsFalse|False|IsTrue （屬性）|
+|+ （一元）|N/A|+|plus|
+|false|IsFalse|False|IsTrue （屬性）|
 
  N/A = = 無法多載，以選取的語言。
 
- 此規則也會檢查型別中隱含和明確的轉型運算子 (`SomeType`) 藉由檢查方法，名為`ToSomeType`和`FromSomeType`。
+ 此規則也會檢查型別中的隱含和明確轉換運算子 (`SomeType`) 方法，名為檢查`ToSomeType`和`FromSomeType`。
 
- 在 C# 中，多載二元運算子，對應的指派運算子，如果有的話，時，也隱含多載。
+ 在 C# 中，當多載二元運算子時，對應的指派運算子，如果有的話，也是隱含地多載。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，運算子; 實作替代方法它使用建議的替代名稱命名。
+ 若要修正此規則的違規情形，請為運算子; 中實作的替代方法名稱為其建議的替代名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告，如果您要實作共用程式庫。 應用程式可以忽略這個規則的警告。
+ 如果您要實作共用的程式庫，則請勿隱藏此規則的警告。 應用程式可以忽略這個規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會定義違反此規則的結構。 若要更正此範例中，新增公用`Add(int x, int y)`結構的方法。
+ 下列範例會定義結構，其違反此規則。 若要更正此範例，請新增 公用`Add(int x, int y)`結構的方法。
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 

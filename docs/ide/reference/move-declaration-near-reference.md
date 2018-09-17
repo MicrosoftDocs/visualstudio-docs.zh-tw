@@ -4,19 +4,19 @@ ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e98f7b7e9df0a1df3482257c70a661aa22d5980a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc6ee94cbebb1cb35dd524017f22bd8ab3812468
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949263"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124953"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>將宣告移到靠近參考的位置重構
 

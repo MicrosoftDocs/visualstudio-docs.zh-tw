@@ -16,23 +16,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918490"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549394"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免包含未使用的私用欄位
 |||
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
-|分類|Microsoft.Performance|
-|中斷變更|非中斷|
+|類別|Microsoft.Performance|
+|中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 此規則會報告在您的程式碼中的私用欄位存在，但不是由任何程式碼路徑時。
+ 此規則會報告當您的程式碼中的私用欄位存在，但不是會使用任何程式碼路徑。
 
 ## <a name="rule-description"></a>規則描述
  偵測到似乎不能在組件內存取的私用欄位。
@@ -41,7 +41,7 @@ ms.locfileid: "31918490"
  若要修正此規則的違規情形，移除欄位，或加入程式碼使用它。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可以安全地隱藏此規則的警告。
+ 它可安全地隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

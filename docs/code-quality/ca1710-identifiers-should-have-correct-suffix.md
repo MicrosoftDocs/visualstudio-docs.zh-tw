@@ -16,36 +16,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e36fef8745e4068a8dd4ad9281a69aa653ed73
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917148"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549880"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710：識別項應該使用正確的後置字元
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|分類|Microsoft.Naming|
+|類別|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 識別項並沒有正確的後置詞。
+
+識別項並沒有正確的後置詞。
 
 ## <a name="rule-description"></a>規則描述
- 依照慣例，擴充特定基底類型或實作特定介面或衍生自這些類型，類型的名稱會具有與基底類型或介面相關聯的後置字元。
 
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。
+依照慣例的類型，擴充特定基底類型或實作特定介面或從這些型別，衍生的型別名稱會具有與基底類型或介面相關聯的後置字元。
 
- 下表列出具有相關聯的後置字元的介面與基底型別。
+命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+
+下表列出具有相關聯的後置詞的介面與基底型別。
 
 |基底型別/介面|尾碼|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|屬性|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
-|<xref:System.Exception?displayProperty=fullName>|例外|
+|<xref:System.Exception?displayProperty=fullName>|例外狀況|
 |<xref:System.Collections.ICollection?displayProperty=fullName>|集合|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|字典|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|集合|
@@ -60,36 +63,41 @@ ms.locfileid: "31917148"
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|條件|
 |事件處理常式委派。|事件處理常式|
 
- 型別都會實作<xref:System.Collections.ICollection>而產生的型別之資料結構，例如字典、 堆疊或佇列，可提供有意義的預定使用方式的相關資訊之型別的名稱。
+型別都會實作<xref:System.Collections.ICollection>而產生的類型的資料結構，例如字典、 堆疊或佇列，可提供之型別的預定的使用方式的有意義資訊的名稱。
 
- 型別都會實作<xref:System.Collections.ICollection>且特定的項目集合的名稱會以 'Collection' 這個字結尾。 例如，集合<xref:System.Collections.Queue>物件會具有名稱 'QueueCollection'。 'Collection' 後置詞表示集合的成員可以在使用列舉`foreach`(`For Each`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 陳述式。
+型別都會實作<xref:System.Collections.ICollection>和一組特定的項目有 'Collection' 這個字結尾的名稱。 比方說，許多<xref:System.Collections.Queue>物件會具有 'QueueCollection' 的名稱。 'Collection' 後置詞表示集合的成員，可以透過列舉`foreach`(`For Each`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 陳述式。
 
- 型別都會實作<xref:System.Collections.IDictionary>名稱以 「 字典 」 這個字結尾，即使類型也會實作<xref:System.Collections.IEnumerable>或<xref:System.Collections.ICollection>。 'Collection' 和 '字典' 後置詞命名慣例可讓使用者可以區別下列兩個列舉模式。
+型別都會實作<xref:System.Collections.IDictionary>具有名稱結尾為 「 字典 」 這個字，即使該型別也實作<xref:System.Collections.IEnumerable>或<xref:System.Collections.ICollection>。 'Collection' 和 '字典' 後置詞命名慣例可讓使用者能夠區別下列兩個列舉模式。
 
- 類型 'Collection' 後置詞，請遵循此列舉模式。
+具有 'collection' 的型別會遵循這個列舉型別模式。
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
- 類型 '字典' 後置詞，請遵循此列舉模式。
+以 「 字典 」 字尾的型別會遵循這個列舉型別模式。
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
- A<xref:System.Data.DataSet>物件組成的集合<xref:System.Data.DataTable>組成的集合的物件<xref:System.Data.DataColumn?displayProperty=fullName>和<xref:System.Data.DataRow?displayProperty=fullName>物件，和其他項目。 實作這些集合<xref:System.Collections.ICollection>透過基底<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>類別。
+A<xref:System.Data.DataSet>物件所組成的集合<xref:System.Data.DataTable>組成的集合的物件<xref:System.Data.DataColumn?displayProperty=fullName>和<xref:System.Data.DataRow?displayProperty=fullName>物件，其他項目。 這些集合會實作<xref:System.Collections.ICollection>透過基底<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>類別。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 重新命名類型，使它的後置字元以正確的詞彙。
+
+因此，它會加上正確的詞彙，請重新命名類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏該類型時，可能會擴充，或將保留任意各種項目的一組通用的資料結構，請使用 'Collection' 後置詞的警告。 在此情況下，提供有關實作、 效能或資料結構中的其他特性有意義資訊的名稱可能有意義 (例如，BinaryTree)。 在其中的型別代表特定的型別 (例如，StringCollection) 集合的情況下，請勿隱藏此規則的警告因為後置詞表示型別可以使用列舉`foreach`陳述式。
 
- 對於其他後置字元，請勿隱藏此規則的警告。 後置詞可讓要盡相符的型別名稱的預定使用方式。
+它可安全地隱藏警告，如果類型是一種通用的資料結構，可能會擴充，或將保留任意一組的各種不同的項目，請使用 ' collection '。 在此情況下，提供有意義的資訊有關實作、 效能或資料結構中的其他特性的名稱可能意義 (比方說，BinaryTree)。 在其中的型別代表特定的型別 (例如 StringCollection) 集合的情況下，請勿隱藏此規則的警告，可以藉由使用列舉類型的後置詞表示因為`foreach`陳述式。
+
+對於其他後置字元，請勿隱藏此規則的警告。 後置詞允許的用途是明顯的是從型別名稱。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+
+[CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>另請參閱
- [屬性](/dotnet/standard/design-guidelines/attributes)[處理和引發事件](/dotnet/standard/events/index)
+
+- [屬性](/dotnet/standard/design-guidelines/attributes)
+- [處理和引發事件](/dotnet/standard/events/index)

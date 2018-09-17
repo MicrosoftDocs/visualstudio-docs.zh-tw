@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 663b2e18eb71cb627bd521df0de6bc21c95cef05
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179572"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320745"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -29,7 +29,7 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
 ## <a name="generate-a-coded-web-performance-test"></a>產生 Web 效能測試程式碼
 
-1.  如果您尚未建立 Web 效能測試，請參閱[錄製 Web 效能測試](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
+1.  如果您尚未建立 Web 效能測試，請參閱[錄製 Web 效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts)。
 
 2.  產生程式碼測試。
 
@@ -84,7 +84,7 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
 ## <a name="qa"></a>問與答
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我是否可以同時執行多個測試？
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
  **答：** 是，請使用 [方案總管] 中的操作功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281724"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612736"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 程式資料庫 (.pdb) 檔案，也稱為符號檔，對應您建立類別、 方法和您的專案中的已編譯可執行檔中所使用的識別項的其他程式碼的原始程式碼中的識別碼。 .pdb 檔案也會將原始程式碼中的陳述式對應至可執行檔中的執行指令。 偵錯工具會使用這項資訊來判斷兩個關鍵資訊：
@@ -45,7 +45,11 @@ ms.locfileid: "44281724"
 符號檔也包含原始程式檔的原始位置，以及選擇性地包含可從中擷取原始程式檔的來源伺服器位置。
   
 > [!TIP]
-> 如果您想要偵錯專案的原始程式碼之外的程式碼，例如 Windows 程式碼或協力廠商程式碼專案呼叫，您必須指定.pdb （以及 （選擇性） 外部的程式碼的原始程式檔） 的位置，而且這些檔案必須完全符合 t 的組建他的可執行檔。  
+> 如果您想要偵錯專案的原始程式碼之外的程式碼，例如 Windows 程式碼或協力廠商程式碼專案呼叫，您必須指定.pdb （以及 （選擇性） 外部的程式碼的原始程式檔） 的位置，而且這些檔案必須完全符合 t 的組建他的可執行檔。 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>如何管理偵錯時的符號檔？ 
+
+**模組**視窗可以告訴您哪些程式碼模組中偵錯工具會視為使用者程式碼，或我的程式碼和符號載入模組的狀態。 您也可以使用這個視窗來偵錯時載入的符號。 如需詳細資訊，請參閱 <<c0> [ 更熟悉的偵錯工具附加至您的應用程式的方式](../debugger/debugger-tips-and-tricks.md#modules_window)。
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具，符號檔的搜尋？ 
   
@@ -215,7 +219,7 @@ ms.locfileid: "44281724"
 4.  模組之 .pdb 的來源資訊。 這可以是模組建置時原始程式檔的位置，也可以是呼叫來源伺服器的命令。  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 尋找並載入原始程式檔和未 Source/No 載入符號頁面  
- 當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果在您執行其中一個選項後找到 .pdb，而且偵錯工具能夠使用符號檔中的資訊擷取原始程式檔，則會顯示來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。  
+ 當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果您執行其中一個選項，且偵錯工具可以擷取原始程式檔使用的符號檔中的資訊後找到.pdb，就會顯示的來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 將原始程式檔搜尋路徑加入至方案  
  您可以指定要搜尋原始程式檔的網路或本機目錄。  

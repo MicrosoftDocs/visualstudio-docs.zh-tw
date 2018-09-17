@@ -16,42 +16,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be4efbd197a8146789b9646f6b5c467cc42815b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 143a094375871bf8073999f89d7fac5d6df01b4f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920481"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551856"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213：可處置的欄位應該受到處置
+
 |||
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
-|分類|Microsoft.Usage|
+|類別|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 實作的型別<xref:System.IDisposable?displayProperty=fullName>宣告了也實作之類型的欄位<xref:System.IDisposable>。 <xref:System.IDisposable.Dispose%2A>欄位方法不由呼叫<xref:System.IDisposable.Dispose%2A>宣告型別的方法。
+ 型別可實作<xref:System.IDisposable?displayProperty=fullName>宣告的型別，也會實作的欄位<xref:System.IDisposable>。 <xref:System.IDisposable.Dispose%2A>欄位的方法不由呼叫<xref:System.IDisposable.Dispose%2A>宣告型別的方法。
 
 ## <a name="rule-description"></a>規則描述
- 型別會負責處理這些項目及其所有 unmanaged 資源;這是藉由實作<xref:System.IDisposable>。 此規則會檢查以查看是否可處置的類型`T`宣告欄位`F`也就是可處置的類型執行個體`FT`。 每個欄位`F`，此規則會嘗試找出呼叫`FT.Dispose`。 此規則會搜尋呼叫的方法`T.Dispose`，和一個較低的層級 (呼叫的方法呼叫的方法`FT.Dispose`)。
+ 類型會負責處置所有 unmanaged 資源;這可以藉由實作<xref:System.IDisposable>。 此規則會檢查以查看是否可處置型別`T`宣告欄位`F`也就是可處置型別的執行個體`FT`。 每個欄位`F`，此規則會嘗試找出呼叫`FT.Dispose`。 此規則會搜尋呼叫的方法`T.Dispose`，和一個較低的層級 (藉由呼叫的方法所呼叫的方法`FT.Dispose`)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，呼叫<xref:System.IDisposable.Dispose%2A>實作之類型的欄位上<xref:System.IDisposable>如果您是負責配置及釋放 unmanaged 的資源保留的欄位。
+ 若要修正此規則的違規情形，呼叫<xref:System.IDisposable.Dispose%2A>之實作類型的欄位上<xref:System.IDisposable>如果您是負責配置和釋放 unmanaged 的資源保留的欄位。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 安全地隱藏此規則的警告，如果您就要負責無法釋放資源保留的欄位，或呼叫<xref:System.IDisposable.Dispose%2A>比這個規則會檢查更深入的呼叫層級，就會發生。
+ 安全地隱藏此規則的警告，如果您不負任何責任的釋放資源保留 欄位中，或呼叫<xref:System.IDisposable.Dispose%2A>比規則檢查更深入的呼叫層級，就會發生。
 
 ## <a name="example"></a>範例
- 下列範例顯示型別`TypeA`實作<xref:System.IDisposable>(`FT` previosu 討論中)。
+ 下列範例顯示型別`TypeA`可實<xref:System.IDisposable>(`FT` previosu 討論區中)。
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
 ## <a name="example"></a>範例
- 下列範例顯示型別`TypeB`，藉由宣告欄位違反此規則`aFieldOfADisposableType`(`F`在先前的討論內容) 做為可處置的類型 (`TypeA`) 並不會呼叫<xref:System.IDisposable.Dispose%2A>欄位上。 `TypeB` 對應至`T`中先前的討論。
+ 下列範例顯示型別`TypeB`，藉由宣告欄位違反這項規則`aFieldOfADisposableType`(`F`先前的討論中) 做為可處置的類型 (`TypeA`) 並不會呼叫<xref:System.IDisposable.Dispose%2A>欄位上。 `TypeB` 對應至`T`中先前的討論。
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.IDisposable?displayProperty=fullName> [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)
