@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008430"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552080"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -104,7 +104,7 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="step-between-python-and-native-code"></a>在 Python 和機器碼之間逐步執行
 
-使用 [逐步執行] (**F11**) 或 [跳離] (**Shift**+**F11**) 命令時，混合模式偵錯工具可正確處理程式碼類型之間的變更。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](http://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
+使用 [逐步執行] (**F11**) 或 [跳離] (**Shift**+**F11**) 命令時，混合模式偵錯工具可正確處理程式碼類型之間的變更。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](https://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
 
 ### <a name="pyobject-values-view-in-native-code"></a>原生程式碼中的 PyObject 值檢視
 
@@ -137,7 +137,7 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 不過，針對 Python 2.x，每個物件類型通常會將其標頭宣告為內嵌欄位的集合，而且自訂的撰寫類型和 C/C++ 程式碼中類型系統層級的 `PyObject` 之間沒有關聯。 若要啟用這種自訂類型的 [Python 檢視] 節點，請編輯 [Python 工具安裝目錄](installing-python-support-in-visual-studio.md#install-locations)中的 *PythonDkm.natvis* 檔案，然後直接在 C 結構或 C++ 類別的 XML 中新增另一個元素。
 
-有一個替代 (也是更好) 的選項是依循 [PEP 3123 (英文)](http://www.python.org/dev/peps/pep-3123/) 並使用明確的 `PyObject ob_base;` 欄位 (而非`PyObject_HEAD`)，然而基於回溯相容性的理由，不一定總是可行。
+有一個替代 (也是更好) 的選項是依循 [PEP 3123 (英文)](https://www.python.org/dev/peps/pep-3123/) 並使用明確的 `PyObject ob_base;` 欄位 (而非`PyObject_HEAD`)，然而基於回溯相容性的理由，不一定總是可行。
 
 ### <a name="native-values-view-in-python-code"></a>Python 程式碼中的原生值檢視
 
