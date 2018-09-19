@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552485"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135655"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
-*Visual c + + 專案系統*正由.vcxproj 檔案。 它根據[Visual Studio 通用專案系統 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，並提供其他 c + + 特定的擴充性點的新工具組，建置架構及平台為目標的輕鬆整合。 
+*Visual c + + 專案系統*用於.vcxproj 檔案。 它根據[Visual Studio 通用專案系統 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，並提供其他 c + + 特定的擴充性點的新工具組，建置架構及平台為目標的輕鬆整合。 
 
 ## <a name="c-msbuild-targets-structure"></a>C + + MSBuild 目標結構
 
@@ -227,13 +227,13 @@ C + + 建置具有三個主要的步驟，由下列目標：
 </Target>
 ```
 
-`ClCompile` 而且其他建置工具專屬目標會定義為 Microsoft.CppBuild.targets 中的空目標：
+`ClCompile` 與特定工具的目標定義中的空目標為其他組建*Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-因為`ClCompile`為空的目標，在 定義目標*Microsoft.CppBuild.targets*，除非將它覆寫的工具組，會執行任何實際的建置動作。 工具組的目標可以覆寫`ClCompile`目標，也就是它們可以包含另一個`ClCompile`之後匯入定義*Microsoft.CppBuild.targets*: 
+因為`ClCompile`目標是空的就會覆寫的工具組，除非不實際組建執行任何動作。 工具組的目標可以覆寫`ClCompile`目標，也就是它們可以包含另一個`ClCompile`之後匯入定義*Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ C + + 建置具有三個主要的步驟，由下列目標：
 </Target>
 ```
 
-儘管其名稱如此`ClCompile`，建立 Visual Studio 實作跨平台支援之前`ClCompile`目標不必呼叫 CL.exe。 它也可以使用適當的 MSBuild 工作，呼叫 Clang、 gcc 或其他編譯器。
+儘管其名稱，建立 Visual Studio 實作跨平台支援之前，`ClCompile`目標不必呼叫 CL.exe。 它也可以使用適當的 MSBuild 工作，呼叫 Clang、 gcc 或其他編譯器。
 
 `ClCompile`目標不應該有任何相依性，除了`SelectClCompile`目標所需的單一檔案的編譯命令，以在 IDE 中工作。
 
@@ -289,7 +289,7 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 1. 如果您想要更佳的工作效能，或只是需要更複雜的功能，使用一般的 MSBuild[工作撰寫](../msbuild/task-writing.md)程序。
 
-   如果並非所有的輸入和輸出的工具 工具命令列上為中列出`CL`， `MIDL`，並`RC`情況下，以及如果您想要自動輸入和輸出檔案追蹤和.tlog 檔案建立時，衍生您的工作，從`TrackedVCToolTask`。
+   如果並非所有的輸入和輸出的工具 工具命令列上為中列出`CL`， `MIDL`，和`RC`情況下，以及如果您想自動輸入和輸出檔案追蹤和.tlog 檔案建立時，會將您的工作源自`Microsoft.Build.CPPTasks.TrackedVCToolTask`類別。 目前，雖然沒有基底的文件[ToolTask](/dotnet/api/microsoft.build.utilities.tooltask)類別中，沒有任何範例或文件的詳細資料`TrackedVCToolTask`類別。 這會特別感興趣的是，如果您的語音要求上新增[developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html)。
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>累加建置和更新狀態檢查
 
@@ -428,7 +428,7 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的專案擴充性
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的 visual c + + 專案擴充性
 
 Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，並使用其擴充性點。 不過，專案階層架構實作是特定 Visual c + +，而且不會根據 CPS，階層擴充性受限於專案項目。
 
@@ -656,6 +656,6 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和 Visual c + + 專案系統所使用的 Api。 CPS 如何使用 MEF 的概觀，請參閱[MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和 Visual c + + 專案系統所使用的 Api。 CPS 如何使用 MEF 的概觀，請參閱[CPS 和 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem MEF 概觀](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
 您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/ide/working-with-project-properties)。
