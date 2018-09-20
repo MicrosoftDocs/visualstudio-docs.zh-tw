@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957673f9e6701cc2148f6b29cb8e39fcfb8579e1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3faf3e42442db03bbb40bbc3e726b909956d4187
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251604"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370859"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "39251604"
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  提供當 DE 呼叫運算式評估工具 (EE) 時所傳遞的引數。  
   
- [MyCEE 範例](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [MyCEE 範例](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)  
  示範建立 MyC 語言的運算式評估工具的其中一個實作方法。  
   
 ## <a name="see-also"></a>另請參閱  

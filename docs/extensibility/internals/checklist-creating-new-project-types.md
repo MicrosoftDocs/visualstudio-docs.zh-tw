@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511661"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370571"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單： 建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引：  
@@ -36,7 +36,7 @@ ms.locfileid: "39511661"
   
     -   Project factory，來管理建立新的專案，並開啟現有專案。 如需詳細資訊，請參閱 <<c0> [ 使用 project factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。  
   
-    -   專案階層架構和命令處理。 如需詳細資訊，請參閱 <<c0> [ 使用 HierUtil7 專案類別以實作專案類型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)，[專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)，和[Menucommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。  
+    -   專案階層架構和命令處理。 如需詳細資訊，請參閱 <<c0> [ 使用 HierUtil7 專案類別以實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)，[專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)，和[Menucommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。  
   
     -   專案項目管理，包括加入您的專案**新的專案** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)並[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   

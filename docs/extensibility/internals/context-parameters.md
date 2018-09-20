@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512261"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370987"
 ---
 # <a name="context-parameters"></a>內容參數
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，您可以加入至精靈**新增專案**，**加入新項目**，或**加入子專案**對話方塊。 加入的精靈都位於**檔案** 功能表或以滑鼠右鍵按一下專案，以在**方案總管 中**。 IDE 會將內容參數傳遞至精靈的實作。 IDE 呼叫精靈時，內容參數會定義專案的狀態。  
@@ -67,4 +67,4 @@ ms.locfileid: "39512261"
  [自訂參數](../../extensibility/internals/custom-parameters.md)   
  [精靈](../../extensibility/internals/wizards.md)   
  [精靈 (.vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [啟動精靈的內容參數](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [啟動精靈的內容參數](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321121"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371058"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -52,16 +52,14 @@ ms.locfileid: "44321121"
 
 -   Visual Studio
 
--   在您的 Team Foundation Build 伺服器的 Visual Studio 使用 Team Foundation Build 自動驗證程式碼
-
 -   具有相依性圖表的模型專案的方案。 此相依性圖表必須連結到您想要驗證的 C# 或 Visual Basic 專案中的成品。 請參閱[從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。
 
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
- 您可以驗證程式碼以手動方式從 Visual Studio 中開啟的相依性圖表，或從命令提示字元。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
+您可以驗證程式碼以手動方式從 Visual Studio 中開啟的相依性圖表，或從命令提示字元。 您也會自動驗證程式碼，執行本機組建或 Azure 管線組建時。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 > [!IMPORTANT]
->  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。
+> 如果您想要執行使用 Team Foundation Server 的圖層驗證，則您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。
 
 -   [項目是否支援驗證](#SupportsValidation)
 
@@ -182,51 +180,32 @@ ms.locfileid: "44321121"
 |隱藏所有隱藏的錯誤**錯誤清單**視窗|以滑鼠右鍵按一下任何一處**錯誤清單** 視窗中，指向**管理驗證錯誤**，然後按一下**隱藏所有隱藏的錯誤**。|
 
 ##  <a name="ValidateAuto"></a> 自動驗證程式碼
- 您可以在每次執行本機組建時執行圖層驗證。 如果您的小組使用 Team Foundation Build，可以閘道簽入來執行圖層驗證，其中您可以藉由建立自訂 MSBuild 工作來指定，以及使用組建報告收集驗證錯誤。 若要建立閘道的簽入組建，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
+
+您可以在每次執行本機組建時執行圖層驗證。 如果您的小組會使用 Azure DevOps，您可以執行閘道簽入，藉由建立自訂的 MSBuild 工作和使用組建報告收集驗證錯誤，您可以指定圖層驗證。 若要建立閘道的簽入組建，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本機組建執行期間自動驗證程式碼
 
--   使用文字編輯器來開啟模型專案 (.modelproj) 檔案，然後加入下列屬性：
+使用文字編輯器來開啟模型專案 (.modelproj) 檔案，然後加入下列屬性：
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \-或-
+\-或-
 
 1.  在 **方案總管**，以滑鼠右鍵按一下模型專案包含相依性圖表或圖表，然後按一下**屬性**。
 
 2.  在 **屬性**視窗中，將模型專案的**驗證架構**屬性設**True**。
 
-     這會將模型專案納入驗證程序中。
+    這會將模型專案納入驗證程序中。
 
 3.  在 [**方案總管] 中**，按一下您想要用於驗證的相依性圖表 (.layerdiagram) 檔案。
 
 4.  中**屬性** 視窗中，請確定圖表**建置動作**屬性設定為**Validate**。
 
-     這會將相依性圖表納入驗證程序。
+    這會將相依性圖表納入驗證程序。
 
- 若要管理 [錯誤清單] 視窗中的錯誤，請參閱[管理驗證錯誤](#ManageErrors)。
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>在 Team Foundation Build 執行期間自動驗證程式碼
-
-1.  在  **Team Explorer**，按兩下組建定義之後，，然後按一下**程序**。
-
-2.  底下**建置流程參數**，展開**編譯**，然後輸入下列**MSBuild 引數**參數：
-
-     `/p:ValidateArchitecture=true`
-
- 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的詳細資訊，請參閱：
-
--   [Azure 的管線](/azure/devops/pipelines/index?view=vsts)
-
--   [使用預設範本建置程序](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [修改根據 UpgradeTemplate.xaml 的舊版建置](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [自訂建置流程範本](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [執行中組建的監視進度](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+若要管理 [錯誤清單] 視窗中的錯誤，請參閱[管理驗證錯誤](#ManageErrors)。
 
 ##  <a name="TroubleshootingValidation"></a> 針對圖層驗證問題進行疑難排解
  下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。

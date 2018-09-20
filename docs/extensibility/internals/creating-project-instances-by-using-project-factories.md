@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498905"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370714"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用 project factory 建立專案執行個體
 專案中的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*project factory*建立專案物件的執行個體。 專案的處理站是類似於標準的 class factory cocreatable COM 物件。 不過，不 cocreatable; 專案物件它們只能使用 project factory 建立。  
@@ -28,7 +28,7 @@ ms.locfileid: "39498905"
   
  您可以實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>中您的專案中的類別介面。 一般而言，它位於自己的模組。  
   
- 如需實作的範例`IVsProjectFactory`介面，請參閱 < *PrjFac.cpp*，其包含在[基本專案](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)範例目錄。  
+ 如需實作的範例`IVsProjectFactory`介面，請參閱 < *PrjFac.cpp*，其包含在[基本專案](https://www.microsoft.com/download/details.aspx?id=55984)範例目錄。  
   
  專案，支援彙總的擁有者必須保存在其專案檔中的擁有者金鑰。 當<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>專案呼叫方法，是將它與擁有者索引鍵，擁有的專案會將其擁有者索引鍵轉換成 GUID 然後呼叫專案 factory`CreateProject`要實際建立此專案處理站的方法。  
   

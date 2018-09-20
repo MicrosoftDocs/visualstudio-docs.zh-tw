@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497845"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370584"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 
@@ -26,13 +26,13 @@ ms.locfileid: "39497845"
 
 [新增程式碼修正的逐步解說： 分析師問題提供使用者修正](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[簡介和真實世界分析器的逐步解說的討論](http://channel9.msdn.com/events/Build/2015/3-725)
+[簡介和真實世界分析器的逐步解說的討論](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[真實世界的 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，您也可以觀看為[討論](http://channel9.msdn.com/events/Build/2015/3-725)
+[真實世界的 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，您也可以觀看為[討論](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [在 github 上的數個範例分組為三種類型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[簡介與教學課程的幾個分析器的討論](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[簡介與教學課程的幾個分析器的討論](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>另請參閱
 
