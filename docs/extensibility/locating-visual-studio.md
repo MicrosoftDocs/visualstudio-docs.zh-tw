@@ -12,12 +12,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45eab0ff3dc1c5a0799e3db35b612a3ee3741db7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637584"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495384"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
@@ -44,4 +44,4 @@ ms.locfileid: "39637584"
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 2017 安裝程式的變更](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)
+* [Visual Studio 2017 安裝程式的變更](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)

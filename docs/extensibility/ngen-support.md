@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639486"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495475"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支援
 
@@ -26,7 +26,7 @@ ms.locfileid: "39639486"
 
 >原生映像產生器 (*Ngen.exe*) 是一種工具，可改善 managed 應用程式的效能。 *Ngen.exe*建立原生映像，這是包含已編譯的處理器特定機器碼，檔案並將它們安裝至本機電腦的原生映像快取。 執行階段就可以從快取中使用原生映像，而不是使用 Just-In-Time (JIT) 編譯器來編譯原始組件。
 >
->從[Ngen.exe （原生映像產生器）](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>從[Ngen.exe （原生映像產生器）](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 為了 「 ngen"的組件，VSIX 必須安裝 「 每個執行個體每台電腦 」。 這可藉由檢查的 [所有使用者] 核取方塊來啟用`extension.vsixmanifest`設計工具：
 
@@ -41,7 +41,7 @@ ms.locfileid: "39639486"
 1. **Ngen** （布林值）-如果為 true，Visual Studio 安裝程式會 「 ngen"組件。
 2. **Ngen 應用程式**（字串）-Ngen 提供使用的應用程式的機會*app.config*檔案以解析組件相依性。 此值應該設定為應用程式其*app.config*您想要使用 （相對於 Visual Studio 安裝目錄中）。
 3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c。 X64 d。 全部
-4. **Ngen 優先順序**（1 到 3 之間的整數）-Ngen 優先權層級已記錄在[Ngen.exe 優先權等級](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3)。
+4. **Ngen 優先順序**（1 到 3 之間的整數）-Ngen 優先權層級已記錄在[Ngen.exe 優先權等級](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 以下就來看看**屬性**作用中的視窗：
 

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef69ac45a090aa4395aa15d1395cff1665255b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639109"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495267"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署擴充功能
 您無法使用的 Windows Installer 套件 (MSI) 來部署的 VSIX 封裝。 不過，您可以擷取 MSI 部署的 VSIX 套件的內容。 本文件說明如何準備其預設輸出會包含在安裝專案中的 VSIX 套件的專案。  
@@ -58,5 +58,5 @@ ms.locfileid: "39639109"
 5.  安裝程式專案中加入其餘的檔案。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio installer 部署](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [逐步解說： 建立自訂動作](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Visual Studio installer 部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [逐步解說： 建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

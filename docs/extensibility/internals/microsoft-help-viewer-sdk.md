@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513370"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495995"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 這篇文章包含 Visual Studio 說明檢視器整合者的下列工作：  
@@ -822,13 +822,13 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 ### <a name="additional-resources"></a>其他資源  
 針對執行階段 API，請參閱[Windows 說明 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。  
   
-如需有關如何運用說明 API 的詳細資訊，請參閱[說明檢視器程式碼範例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+如需有關如何運用說明 API 的詳細資訊，請參閱[說明檢視器程式碼範例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 若要提供這些元件的相關意見反應，請使用[Microsoft Connect](http://connect.microsoft.com/)。  
   
 請提出功能建議[Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-若要取得其他說明，請嘗試[MSDN 開發人員文件和說明系統論壇](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+若要取得其他說明，請嘗試[MSDN 開發人員文件和說明系統論壇](https://social.msdn.microsoft.com/Forums)  
   
 更新的重大問題，請參閱[說明檢視器讀我檔案](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

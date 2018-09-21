@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638026"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495449"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。  
@@ -37,7 +37,7 @@ ms.locfileid: "39638026"
   
 2.  建立一份*filename.en US.vsct*每個當地語系化語言。  
   
-     命名每個複本*檔案名稱。 {地區設定}.vsct*，其中 *{地區設定}* 是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱 < [Microsoft 指派的地區設定識別碼](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
+     命名每個複本*檔案名稱。 {地區設定}.vsct*，其中 *{地區設定}* 是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱 < [Microsoft 指派的地區設定識別碼](/windows/uwp/publish/supported-languages)。  
   
      這些*檔案名稱。Locale.vsct*檔會包含當地語系化的功能表文字，為您的封裝。  
   

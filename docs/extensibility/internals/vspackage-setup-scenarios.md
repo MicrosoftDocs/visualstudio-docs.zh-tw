@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510662"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495930"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 
@@ -31,7 +31,7 @@ ms.locfileid: "39510662"
 
 ### <a name="make-your-components-independent"></a>使您的元件不受影響
 
-一旦您找出並填入一個元件，將指派`GUID`，部署元件，您無法變更其組合。 如果您變更元件的組合，產生的元件必須具有新的新元件`GUID`。 根據這些事實，最大的版本控制彈性也同樣適藉由每個元件的獨立、 獨立地單位。 如需規則來控管元件的詳細資訊，請參閱[變更元件的程式碼](/windows/desktop/Msi/changing-the-component-code)並[發生什麼情況元件規則都會中斷，？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)。
+一旦您找出並填入一個元件，將指派`GUID`，部署元件，您無法變更其組合。 如果您變更元件的組合，產生的元件必須具有新的新元件`GUID`。 根據這些事實，最大的版本控制彈性也同樣適藉由每個元件的獨立、 獨立地單位。 如需規則來控管元件的詳細資訊，請參閱[變更元件的程式碼](/windows/desktop/Msi/changing-the-component-code)並[發生什麼情況元件規則都會中斷，？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)。
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>不要混合使用共用和私用元件中的資源
 
@@ -77,7 +77,7 @@ ms.locfileid: "39510662"
 
 ![VS 並存的 VS 套件更新安裝程式](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-如需有關部署的並排顯示組件的詳細資訊，請參閱[簡化部署和使用.NET Framework 解決 DLL Hell](http://msdn.microsoft.com/library/ms973843.aspx)。
+如需有關部署的並排顯示組件的詳細資訊，請參閱[簡化部署和使用.NET Framework 解決 DLL Hell](https://msdn.microsoft.com/library/ms973843.aspx)。
 
 ## <a name="see-also"></a>另請參閱
 

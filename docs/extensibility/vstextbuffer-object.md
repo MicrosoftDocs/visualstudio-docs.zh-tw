@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586298"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495345"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 文字緩衝區物件表示 Unicode 文字，也就是通常與檔案相關的資料流。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可用的核心編輯器，如所示，精靈內容之外。  
@@ -30,9 +30,9 @@ ms.locfileid: "39586298"
   
 |方法|描述|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|標準的 OLE 介面。 用於處理緩衝區中的復原/取消復原。|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|標準的 OLE 介面。|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|標準的 OLE 介面。|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|標準的 OLE 介面。 用於處理緩衝區中的復原/取消復原。|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|標準的 OLE 介面。|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|讓您能夠建立化合物動作 （也就是動作會分組放入單一復原/取消復原單位）。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|可讓受管理的文字緩衝的文件資料的持續性。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本的服務;許多用戶端使用。|  
@@ -49,4 +49,4 @@ ms.locfileid: "39586298"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [圖形編輯](https://www.microsoft.com/download/details.aspx?id=55984)

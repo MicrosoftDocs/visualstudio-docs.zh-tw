@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace |Microsoft Docs
 ms.custom: ''
-ms.date: 07/18/2017
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321015"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496008"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ ms.locfileid: "44321015"
 
 |||
 |-|-|
-|**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)<br />- [使用 IntelliTrace 倒退檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)|
+|**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [使用 IntelliTrace 倒退檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)<br />- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)|
 |**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**從已部署應用程式收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**從開始偵錯的 IntelliTrace 記錄檔 （.iTrace 檔案）。**|- [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|
@@ -54,9 +54,9 @@ ms.locfileid: "44321015"
 
 |||
 |-|-|
-|**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支援**|-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClicent 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />-F # 實驗基礎的應用程式<br />支援僅適用於事件的 UWP 應用程式|
-|**不支援**|-C + +、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|
+|**完整的支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
+|**有限的支援**|-目標檢視快照集使用 IntelliTrace 倒退的 Windows 支援原生的應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClicent 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />-F # 實驗基礎的應用程式<br />支援僅適用於事件的 UWP 應用程式|
+|**不支援**|-其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|
 
 > [!NOTE]
 > 如果您想要偵錯已執行的處理序，您可以只收集 IntelliTrace 事件 （沒有呼叫資訊）。 您可以附加至只在本機電腦上的 32 位元或 64 位元處理序。 不會收集您附加至處理序之前發生的事件。

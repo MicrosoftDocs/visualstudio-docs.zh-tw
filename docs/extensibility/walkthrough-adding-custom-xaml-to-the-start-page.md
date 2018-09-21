@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a462501637fab8ea916dd5488b0796351164d5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500705"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495618"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說： 將自訂的 XAML 加入至 [開始] 頁面
 本逐步解說示範如何建立自訂 Visual Studio 起始頁包含網頁瀏覽器。  
@@ -93,4 +93,4 @@ ms.locfileid: "39500705"
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
- [WPF 控制項](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
+ [WPF 控制項](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
