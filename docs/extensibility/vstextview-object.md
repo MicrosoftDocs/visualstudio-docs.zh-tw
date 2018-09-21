@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc6691e1b9cd4bd778f70e9b8f4acee3d16601c0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d5b0b6e640f4fef6cf9508747cff010ff5b5ad6c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586843"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495410"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 文字檢視是一個可讓使用者檢視和編輯文字緩衝的 Unicode 文字的視窗。 基本上，檢視是大部分使用者做為編輯器的指。 因為檢視以各種文字層級 （自動換行、 大綱文字等等） 分隔的緩衝區，檢視不會保證是確切的緩衝區中的文字。 如需文字檢視的詳細資訊，請參閱[使用舊版 API 存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -30,7 +30,7 @@ ms.locfileid: "39586843"
   
 |介面|描述|  
 |---------------|-----------------|  
-|[IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071)|標準的 OLE 介面。|  
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|標準的 OLE 介面。|  
@@ -41,6 +41,6 @@ ms.locfileid: "39586843"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|從不同的執行緒中執行檢視上的作業。|  
   
 ## <a name="see-also"></a>另請參閱  
- [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [圖形編輯](https://www.microsoft.com/download/details.aspx?id=55984)   
  [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)   
  [使用舊版 API 的存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

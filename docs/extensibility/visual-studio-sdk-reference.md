@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586804"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495683"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含 Visual Studio 的命名空間、 相關的命名空間和資訊感興趣的其他區域的開發人員使用 Visual Studio SDK。  
@@ -223,7 +223,7 @@ ms.locfileid: "39586804"
  <xref:Microsoft.VisualStudio.Threading>  
  使用 Visual Studio 的執行緒。  
   
- [Microsoft.VisualStudio.ConnectedServices 命名空間](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx)用於 Visual Studio 已連接服務。  
+ [Microsoft.VisualStudio.ConnectedServices 命名空間](/dotnet/api/microsoft.visualstudio.connectedservices)用於 Visual Studio 已連接服務。  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)列舉  
  指定 IntelliSense 主機旗標。  
@@ -231,7 +231,7 @@ ms.locfileid: "39586804"
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)  
  提供的 Visual Studio 命令表結構描述項目，允許的子系項目和屬性每個。  
   
- [Guid 和常數](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID 和常數](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  提供一份在整個 SDK 中使用的 Guid。  
   
  [Managed 程式碼中的 COM 常數](../extensibility/com-constants-in-managed-code.md)  

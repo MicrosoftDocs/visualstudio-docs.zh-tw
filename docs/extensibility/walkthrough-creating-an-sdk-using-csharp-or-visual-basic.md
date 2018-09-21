@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497871"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495943"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic SDK
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
@@ -93,7 +93,7 @@ ms.locfileid: "39497871"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ ms.locfileid: "39497871"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ ms.locfileid: "39497871"
   
 6.  在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
   
-     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 http://www.msdn.microsoft.com ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
+     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 https://msdn.microsoft.com/ ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
   
 7.  在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
   
@@ -243,5 +243,5 @@ ms.locfileid: "39497871"
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [逐步解說： 建立使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [逐步解說： 建立使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

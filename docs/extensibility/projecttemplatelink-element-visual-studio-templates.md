@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3e539824c815d62d8cf3350b4d823314996677
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636408"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495969"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 項目 （Visual Studio 範本）
 指定的路徑 *.vstemplate*多專案範本中的某個專案的檔案。  
@@ -53,7 +53,7 @@ ms.locfileid: "39636408"
 |屬性|描述|  
 |---------------|-----------------|  
 |`ProjectName`|選擇性屬性。<br /><br /> 指定多專案範本中每一個別專案的名稱。 **新的專案**對話方塊無法指派給個別專案的名稱。|  
-|`CopyParameters`|可將主群組範本中的所有變數複製到每一個連結的範本。<br /><br /> 在連結之範本中的參數會有前置詞 `"$ext_*$"`。 例如，如果在父群組範本參數`$projectname$`具有值**ExampleProject1**，當連結的範本取得輪到它執行，它會取得參數`$ext_projectname$`，這是一份`$projectname$`從父群組範本的參數。<br /><br /> 這樣可讓連結的範本共用某些只有在父群組範本中才方便建立的通用參數。<br /><br /> 這個屬性是選擇性的，如果未包含，則它會自動預設為 `false`。<br /><br /> 已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的產品版本，請參閱[參考組件提供在 Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
+|`CopyParameters`|可將主群組範本中的所有變數複製到每一個連結的範本。<br /><br /> 在連結之範本中的參數會有前置詞 `"$ext_*$"`。 例如，如果在父群組範本參數`$projectname$`具有值**ExampleProject1**，當連結的範本取得輪到它執行，它會取得參數`$ext_projectname$`，這是一份`$projectname$`從父群組範本的參數。<br /><br /> 這樣可讓連結的範本共用某些只有在父群組範本中才方便建立的通用參數。<br /><br /> 這個屬性是選擇性的，如果未包含，則它會自動預設為 `false`。<br /><br /> 已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的產品版本，請參閱[參考組件提供在 Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
   
 ### <a name="child-elements"></a>子元素  
  無。  
