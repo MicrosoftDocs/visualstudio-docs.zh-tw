@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496008"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542451"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ ms.locfileid: "46496008"
 
 |||
 |-|-|
-|**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [使用 IntelliTrace 倒退檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)<br />- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)|
+|**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|- [檢查先前使用 IntelliTrace 的應用程式狀態](../debugger/view-historical-application-state.md)<br />- [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程偵錯](../debugger/historical-debugging.md)|
 |**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|- [收集更多診斷資料，在手動測試中](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**從已部署應用程式收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**從開始偵錯的 IntelliTrace 記錄檔 （.iTrace 檔案）。**|- [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 您可以設定 IntelliTrace 以擷取快照集在每個中斷點和偵錯工具逐步執行事件。 IntelliTrace 會記錄完整的應用程式的狀態，在每個快照集可讓您檢視複雜變數，並評估運算式。
 
-請參閱[檢視快照集使用 IntelliTrace 倒退](../debugger/how-to-use-intellitrace-step-back.md)。
+請參閱[檢查先前的應用程式狀態，使用 IntelliTrace](../debugger/view-historical-application-state.md)。
 
 **收集函式呼叫資訊**
 
