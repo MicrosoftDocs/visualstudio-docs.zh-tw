@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433450"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542427"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>偵錯工具中最新消息 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "37433450"
 
     ![逐步執行向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步返回] 和 [向前按鈕")
 
-    如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
+    如需詳細資訊，請參閱 <<c0> [ 檢查先前的應用程式狀態，使用 IntelliTrace](../debugger/view-historical-application-state.md)頁面。
 
 - **例外狀況協助程式**取代例外狀況助理，並會出現在非強制回應對話方塊中，發生錯誤。 **例外狀況協助程式**提供更快速存取任何內部例外狀況，偵錯工具 （如果有的話），額外的分析和立即存取**例外狀況設定**例外狀況。 也可以將例外狀況協助程式拖曳至浮動的檢視，如果它會封鎖您需要查看的項目。
 

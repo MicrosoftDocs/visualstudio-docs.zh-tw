@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320731"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542503"
 ---
-# <a name="diagnose-problems-after-deployment"></a>於部署後診斷問題
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>部署後，使用 IntelliTrace 診斷問題
 
 若要在部署後使用 IntelliTrace 診斷 ASP.NET Web App 中的問題，請包含組建資訊和版本，讓 Visual Studio 自動找出偵錯 IntelliTrace 記錄檔所需的正確原始程式檔和符號檔案。
 
@@ -27,48 +27,27 @@ ms.locfileid: "44320731"
 
  **您將需要：**
 
--   Visual Studio 2017，Visual Studio 2015 或 Team Foundation Server 2017、 2015年、 2013年、 2012年或 2010，以將您的組建設定
+-   Visual Studio、 Azure DevOps 或 Team Foundation Server 2017、 2015年、 2013年、 2012年或 2010，以將您的組建設定
 
 -   Microsoft Monitoring Agent，以監視 App 及記錄診斷資料
 
 -   Visual Studio Enterprise (但不是 Professional 或 Community 版本)，用以搭配 IntelliTrace 檢閱診斷資料及偵錯程式碼
 
 ##  <a name="SetUpBuild"></a> 步驟 1： 包含建置資訊和版本
- 設定建置流程以建立 Web 專案的建置資訊清單 (BuildInfo.config 檔案)，並在發行時包含此資訊清單。 此資訊清單包含有關專案、原始檔控制及用於建立特定組建之建置系統的資訊。 在您開啟 IntelliTrace 記錄檔之後，此資訊可協助 Visual Studio 找到相符的原始檔和符號，以檢閱記錄的事件。
+ 將您的建置流程建立建置資訊清單 (*BuildInfo.config*檔案) 為您的 web 專案，並包含您的版本，此資訊清單。 此資訊清單包含有關專案、原始檔控制及用於建立特定組建之建置系統的資訊。 在您開啟 IntelliTrace 記錄檔之後，此資訊可協助 Visual Studio 找到相符的原始檔和符號，以檢閱記錄的事件。
 
 ###  <a name="AutomatedBuild"></a> 建立使用 Team Foundation Server 的自動化建置的組建資訊清單
 
  不論使用 Team Foundation 版本控制或 Git，請遵循下列步驟。
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps 和 Team Foundation Server 2017
 
- 設定您組建管線，以將您的來源、 組建和符號位置加入至建置資訊清單 （BuildInfo.config 檔案）。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
+Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，，然後移除。 若要在部署後，偵錯 ASP.NET web 應用程式，請使用其中一種下列方法：
 
-1.  如果您已經使用 ASP.NET Core (.NET Framework) 範本建置管線，您可以[編輯您組建管線或建立新的組建管線。](/azure/devops/pipelines/get-started-designer?view=vsts)
+* 部署至 Azure，使用[Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)。
 
-     ![檢視組建在 TFS 2017 中的管線](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* 如果您要使用 IntelliTrace，在 Visual Studio 中開啟專案，並比對的組建從載入的符號檔。 您可以載入符號檔，從**模組** 視窗或藉由設定中的符號**工具** > **選項** > **偵錯**  > **符號**。
 
-2.  如果您建立新的範本，請選擇 [ASP.NET Core (.NET Framework)] 範本。
-
-     ![選擇建置流程範本&#45;TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  指定儲存符號 (PDB) 檔案的位置，以便自動編製原始檔的索引。
-
-     如果您使用自訂範本，請確定該範本含有索引來源的活動。 稍後您將加入 MSBuild 引數以指定儲存符號檔案的位置。
-
-     ![設定組建管線 TFS 2017 中的符號路徑](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     如需有關符號的詳細資訊，請參閱[發行符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
-
-4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     只要能夠存取您的 Web 伺服器，任何人都可以在建置資訊清單中看到這些位置。 確定來源伺服器是安全的。
-
-6.  執行新組建。
-
-    移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  設定您組建管線，以將您的來源、 組建和符號位置加入至建置資訊清單 （BuildInfo.config 檔案）。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
