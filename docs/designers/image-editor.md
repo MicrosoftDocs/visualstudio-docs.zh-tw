@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627281"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029117"
 ---
 # <a name="image-editor"></a>影像編輯器
 
@@ -53,8 +53,6 @@ ms.locfileid: "42627281"
    > 如果在 [新增項目] 對話方塊中沒有看到 [圖形] 分類，您可能需要安裝**影像和 3D 模型編輯器**元件。 關閉對話方塊，然後從功能表列中選取 [工具] > [Get Tools and Features] \(取得工具與功能) 來開啟 **Visual Studio 安裝程式**。 選取 [個別元件] 索引標籤，然後選取 [遊戲與圖形] 分類下的**影像和 3D 模型編輯器**元件。 選取 [修改]。
    >
    > ![影像與 3D 模型編輯器](media/image-3d-model-editors-component.png)
-   >
-   > 如已安裝**影像和 3D 模型編輯器**元件，但仍看不到 [圖形] 範本分類；請注意，只有某些特定專案類型才會顯示此分類，例如主控台應用程式。
 
    如需如何根據需求選擇檔案格式的相關資訊，請參閱[選擇影像格式](#choose-the-image-format)。
 

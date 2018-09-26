@@ -10,7 +10,7 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f85f2fed84dd8579295c0124adb43ee395166204
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125063"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496047"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 

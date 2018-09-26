@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
-author: charlespetzold
-ms.author: chape
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6cc569c2e58ef29f9e9372acad30c0c2df96466c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251851"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495956"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 
