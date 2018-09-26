@@ -1,7 +1,7 @@
 ---
 title: 使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176437"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168392"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動 Visual Studio 外部執行的應用程式中發生的例外狀況或損毀時。 這可讓您測試您的應用程式，若未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
@@ -48,6 +48,8 @@ ms.locfileid: "39176437"
 4.  在 **啟用的 Just-In-Time 偵錯這些程式碼類型**方塊中，選取或清除相關的程式類型：**受控**，**原生**，或**指令碼**.
 
 5.  按一下 [確定 **Deploying Office Solutions**]。
+
+    如果您啟用的時間只需偵錯工具，但您看不到它在應用程式當機或例外狀況，請參閱 <<c0> [ 恰好時間偵錯錯誤](#jit_errors)。
 
 即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  您可以開始在此時偵錯。 如果這是實際的應用程式時，您必須了解為什麼程式碼會擲回例外狀況。
 
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time 偵錯的錯誤
- 如果您沒有看到 [] 對話方塊中，程式損毀時，這可能因為電腦上的 Windows 錯誤報告設定。 如需詳細資訊，請參閱[。WER 設定](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started)。
+## <a name="jit_errors"></a> 在 Just-in-time 偵錯錯誤
+ 如果您沒有看到 [] 對話方塊中，程式損毀，而且需要啟用此功能時，這可能因為電腦上的 Windows 錯誤報告設定。 請務必新增**已停用**下列登錄機碼值，並將值設為 1:
 
- 您可能會看見下列與 Just-in-Time 偵錯相關的錯誤訊息。
+* HKLM\Software\Microsoft\Windows\Windows 錯誤報告
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告
+ 
+如需有關這些設定的詳細資訊，請參閱[。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
 
--   **無法附加到損毀處理序。指定的程式不是 Windows 或 MS-DOS 程式。**
+此外，您可能會看到下列錯誤訊息與 Just In Time 相關聯的偵錯。
 
-     當您嘗試附加至另一個使用者身分執行處理序時，就會發生此錯誤。
+- **無法附加到損毀處理序。指定的程式不是 Windows 或 MS-DOS 程式。**
 
-     若要解決這個問題，請啟動 Visual Studio 中，開啟**připojit k procesu**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。
+    當您嘗試附加至另一個使用者身分執行處理序時，就會發生此錯誤。
 
--   **無法啟動偵錯工具，因為沒有使用者登入。**
+    若要解決這個問題，請啟動 Visual Studio 中，開啟**připojit k procesu**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。
 
-     當 Just-In-Time 偵錯嘗試在沒有使用者登入主控台的電腦上啟動 Visual Studio 時，就會發生此錯誤。 因為沒有使用者登入，所以沒有使用者工作階段可顯示 [Just-In-Time 偵錯] 對話方塊。
+- **無法啟動偵錯工具，因為沒有使用者登入。**
 
-     若要修正這個問題，請登入該電腦。
+    當 Just-In-Time 偵錯嘗試在沒有使用者登入主控台的電腦上啟動 Visual Studio 時，就會發生此錯誤。 因為沒有使用者登入，所以沒有使用者工作階段可顯示 [Just-In-Time 偵錯] 對話方塊。
 
--   **未註冊的類別。**
+    若要修正這個問題，請登入該電腦。
 
-     這個錯誤表示偵錯工具嘗試建立的 COM 類別尚未登錄，可能是因為安裝問題所致。
+- **未註冊的類別。**
 
-     若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。
+    這個錯誤表示偵錯工具嘗試建立的 COM 類別尚未登錄，可能是因為安裝問題所致。
+
+    若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。
 
 ## <a name="see-also"></a>另請參閱
  [偵錯工具安全性](../debugger/debugger-security.md)[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)[只要時間，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
