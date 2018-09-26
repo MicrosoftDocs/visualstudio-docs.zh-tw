@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
-author: charlespetzold
-ms.author: chape
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: e46da7cf39ad816f70454983c56dd5751981f741
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42626968"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495751"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 

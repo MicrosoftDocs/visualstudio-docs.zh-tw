@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638709"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029023"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -44,7 +44,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 | --- | --- |
 | **空白 Bottle Web 專案** | 在 *app.py* 中產生精簡應用程式，並包含 `/` 的首頁，以及使用非常短的內嵌頁面範本來回應 `<name>` 的 `/hello/<name>` 頁面。 |
 | **空白 Django Web 專案** | 產生具核心 Django 網站架構，但不含 Django 應用程式的 Django 網站。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| **空白 Flask Web 專案** | 產生一個精簡應用程式，其中含有 `/` 的單一 "Hello World!" 頁面。 此應用程式類似按照[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../ide/quickstart-python.md?context=visualstudio/python/default)中詳細步驟操作的結果。 另請參閱[學習 Flask 步驟 1](learn-flask-visual-studio-step-01-project-solution.md)。
+| **空白 Flask Web 專案** | 產生一個精簡應用程式，其中含有 `/` 的單一 "Hello World!" 頁面。 此應用程式類似按照[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)中詳細步驟操作的結果。 另請參閱[學習 Flask 步驟 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 群組
 

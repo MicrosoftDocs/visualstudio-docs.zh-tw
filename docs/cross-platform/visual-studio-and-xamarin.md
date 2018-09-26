@@ -5,17 +5,17 @@ ms.date: 03/30/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
-author: charlespetzold
-ms.author: chape
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: ef599a67dcb81586bd31fd08836c0a95b812bde1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: caf1ea462cc69366f11e4768003707e9cc263327
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251223"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495735"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 

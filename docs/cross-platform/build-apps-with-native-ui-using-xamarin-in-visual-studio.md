@@ -5,17 +5,17 @@ ms.date: 03/30/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-author: charlespetzold
-ms.author: chape
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b68dd62de137e3c9427715c647ba4a53f07bd281
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381077"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496151"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
