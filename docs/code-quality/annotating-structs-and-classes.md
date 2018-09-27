@@ -19,29 +19,30 @@ f1_keywords:
 - _Field_size_bytes_full_
 - _Field_size_full_
 - _Field_size_full_opt_
+- _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 076631860035e41451741d49843d9282ec4c15f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31894344"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228821"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。
 
-## <a name="struct-and-class-annotations"></a>結構和類別的附註
+## <a name="struct-and-class-annotations"></a>結構和類別的註解
 
 -   `_Field_range_(low, high)`
 
      欄位是在範圍中 （含） 從`low`至`high`。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
 
--   `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`
+-   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。
 
@@ -49,15 +50,17 @@ ms.locfileid: "31894344"
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。
 
--   `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)``_Field_size_bytes_full_opt_(size)`
+-   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
+
+-   `_Field_z_`
+
+     具有 null 結尾字串的欄位。
 
 -   `_Struct_size_bytes_(size)`
 
-     具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
-
-     套用至結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如: 
+     適用於結構或類別的宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如: 
 
     ```cpp
 
