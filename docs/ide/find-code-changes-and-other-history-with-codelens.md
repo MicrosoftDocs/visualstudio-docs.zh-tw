@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054474"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384197"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -64,9 +64,9 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 - Visual Studio Enterprise 或 Visual Studio Professional
 
-- Team Foundation Server 2013 或更新版本、Visual Studio Team Services 或 Git
+- Team Foundation Server 2013 或更新版本、Azure DevOps Services 或 Git
 
-- [商務用 Skype](/skypeforbusiness/) 或 Lync 2010 或更新版本，以從程式碼編輯器連絡您的小組
+- [商務用 Skype](/skypeforbusiness/)，以從程式碼編輯器與您的小組連絡
 
 針對 Team Foundation 版本控制 (TFVC) 或 Git 儲存的 C# 或 Visual Basic 程式碼，您將在類別與方法層級取得 CodeLens 詳細資訊 (「程式碼項目層級」指標)。 如果您的 Git 儲存機制裝載在 TfGit 中，您也會取得 TFS 工作項目的連結。
 
@@ -80,7 +80,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 程式碼項目層級指標可讓您查看哪些人變更了您的程式碼，以及他們進行了哪些變更。 程式碼項目層級指標適用於 C# 和 Visual Basic 程式碼。
 
-當您使用 Team Foundation Server 或 Visual Studio Team Services 中的 Team Foundation 版本控制 (TFVC) 時，這就是您所看到的樣子：
+當您使用 Team Foundation Server 或 Azure DevOps Services 中的 Team Foundation 版本控制 (TFVC) 時，您會看到：
 
 ![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 - 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/tfs/server/ref/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
 
-- 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 確認您擁有[小組成員權限](/vsts/work/scale/multiple-teams)。
+- 唯有當工作項目連結到程式碼，且您擁有開啟工作項目連結的權限時，才會出現與 DevOps 相關的指標。 確認您擁有[小組成員權限](/azure/devops/organizations/security/view-permissions?view=vsts)。
 
 - 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 (**Ctrl**+**Shift**+**B**)。
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>問：為什麼看不到認可的工作項目詳細資料？
 
-**答：** 因為 CodeLens 在 TFS 中找不到工作項目，所以可能會發生這種情況。 請確認您已連接至具有那些工作項目的 Team 專案，以及您具有查看那些工作項目的權限。 如果認可描述具有 TFS 中工作項目 ID 的不正確資訊，則工作項目也可能不會顯示。
+**答：** 發生這種情況的原因可能是 CodeLens 在 Azure Boards 或 TFS 中找不到工作項目。 請確認您已連線到具有那些工作項目的專案，而且您具有查看那些工作項目的權限。 如果認可描述具有 Azure Boards 或 TFS 中工作項目 ID 的錯誤資訊，工作項目詳細資料也可能不會顯示。
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>問：為何看不到 Skype 指標？
 
@@ -295,7 +295,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 4. 按 **Tab** 鍵移至 [顯示設定:] 清單，然後按**向下鍵**選取 [CodeLens]。
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問：我可以移動 CodeLens 平視顯示窗嗎？
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問： 是否可以移動 CodeLens`head`的顯示器？
 
 **答：** 可以，選擇![固定圖示](../ide/media/codelensdockwindow.png)可將 CodeLens 固定為視窗。
 
@@ -315,7 +315,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
      ![[重新整理 CodeLens 小組指標] 功能表項目](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **測試**：[尋找您程式碼的單元測試](#Find-unit-tests-for-your-code)，以重新整理**測試**指標。
+- **測試**：[尋找您程式碼的單元測試](#associated-unit-tests)，以重新整理**測試**指標。
 
 ### <a name="q-whats-local-version"></a>問：什麼是「本機版本」？
 

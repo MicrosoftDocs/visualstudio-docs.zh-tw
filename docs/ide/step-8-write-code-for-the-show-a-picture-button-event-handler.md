@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9bc3e5b0c3a61e911f7e49395f940ac07e2548
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7f1763f7688dcb74781688e31af856fe531e69c8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748600"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384132"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 在這個步驟中，您會將 [顯示圖片] 按鈕變成如下的運作方式：
@@ -27,7 +27,7 @@ ms.locfileid: "34748600"
 
  IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 **Tab** 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205215) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205203)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱 [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4)。 這部影片使用舊版 Visual Studio，因此有一些功能表命令和其他使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>為顯示圖片按鈕事件處理常式撰寫程式碼
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948739"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384249"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 
@@ -55,7 +55,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 
  Microsoft 提供一系列逐步教學課程，提供在您的電腦上調整協助工具選項和設定的詳細程序。 這項資訊以逐步方式呈現，以便您可以了解如何使用滑鼠、鍵盤或兩者的組合。
 
- 若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站。
+ 若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站。
 
 ### <a name="assistive-technology-products-for-windows"></a>適用於 Windows 的輔助技術產品
 
@@ -65,15 +65,15 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 
 ##  <a name="altfortmats"></a> 替代格式的文件
 
- 如果您閱讀或處理印刷資料時有困難，可以取得許多以更方便之格式提供的 Microsoft 產品文件。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上，檢視無障礙產品文件的索引。
+如果您閱讀或處理印刷資料時有困難，可以取得許多以更方便之格式提供的 Microsoft 產品文件。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上，檢視無障礙產品文件的索引。
 
- 此外，您可以從 Recording for the Blind & Dyslexic, Inc (RFB&D) 取得其他 Microsoft 出版品。 RFB&D 會將這些文件發佈給其發佈服務的已註冊合格成員。 如需 Microsoft 產品文件和 Microsoft Press 書籍可用性的相關資訊，請連絡：
+此外，您可以從 Learning Ally 取得其他 Microsoft 出版物。 Learning Ally 會將這些文件發佈給其發佈服務中已註冊的合格成員。 如需 Microsoft 產品文件和 Microsoft Press 書籍可用性的相關資訊，請連絡：
 
-|Recording for the Blind & Dyslexic, Inc.|
+|Learning Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 美國境內電話：(800) 221-4792<br /><br /> 美國和加拿大以外地區的電話：(609) 452-0606<br /><br /> 傳真：(609) 987-8116<br /><br /> Recording for the Blind & Dyslexic 網站：[http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally 網站：[http://www.learningally.org](http://www.learningally.org/)。|
 
- 網址可能有所變更，因此您可能會無法連線至這裡所提到的網站。
+網址可能有所變更，因此您可能會無法連線至這裡所提到的網站。
 
 ##  <a name="hearing"></a> 聽障人士客戶服務
 
