@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384184"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029104"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
-**已針對 [15.8 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)更新**
+**已針對 [15.8 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
 
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
@@ -42,7 +42,7 @@ ms.locfileid: "44384184"
 * **[AI 開發](#ai-development)**。 有了 Visual Studio Tools for AI，您就可以使用 Visual Studio 的生產力功能來加速 AI 的創新。 建置、測試及部署與 Azure Machine Learning 無縫整合的深度學習/AI 解決方案，以獲得強固的測試功能。
 
 > [!NOTE]
-> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[目前版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)。 如需預覽未來推出的供應項目，請參閱[預覽版本資訊](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)。
+> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[目前版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)。 如需預覽未來推出的供應項目，請參閱[預覽版本資訊](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)。
 
 以下是一些最值得注意的 Visual Studio 2017 改善和新功能的詳細資訊。
 
@@ -50,7 +50,7 @@ ms.locfileid: "44384184"
 
 ### <a name="a-new-setup-experience"></a>新的安裝經驗
 
-[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[查看 Visual Studio 系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[查看 Visual Studio 系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安裝所需的功能。 而且，它也會完全進行解除安裝。
 
@@ -381,7 +381,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 2017 版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Visual Studio 2017 版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](/dotnet/csharp/whats-new)
 * [Team Foundation Server 的新功能](/tfs/server/whats-new?view=vsts)
