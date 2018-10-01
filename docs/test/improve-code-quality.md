@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180109"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321056"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 
@@ -42,8 +42,7 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 
 ## <a name="related-scenarios"></a>相關案例
 
-* [探勘和手動測試 (VSTS)](/vsts/manual-test/)
-* [負載測試 (VSTS)](/vsts/load-test/index)
-* [連續測試 (VSTS)](/vsts/build-release/test/index)
-* [Team Services 與 TFS 的 DevOps 概觀 (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [探勘和手動測試 (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [負載測試 (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [連續測試 (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [程式碼分析工具](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

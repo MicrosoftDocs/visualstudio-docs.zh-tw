@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380888"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321186"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
@@ -257,7 +257,7 @@ ms.locfileid: "39380888"
     >
     > 下列路徑中會有其他組態檔範例，取決於您的安裝目錄：*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
 
-     如需如何設定測試設定以便在執行測試時使用環境的詳細資訊，請參閱[在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+     如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
      如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
@@ -265,7 +265,7 @@ ms.locfileid: "39380888"
 
 13. 如需安裝自訂編輯器的資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
 
-14. 如需如何設定測試設定以便在執行測試時使用環境的詳細資訊，請參閱[在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
 15. 若要選取診斷資料配接器，您必須先從 Microsoft Test Manager 或 Visual Studio 選取現有的測試設定或建立新的測試設定。 配接器會顯示在測試設定的 [資料和診斷] 索引標籤上，並使用您指派給類別的易記名稱。
 
@@ -285,6 +285,6 @@ ms.locfileid: "39380888"
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
-- [在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [測試時收集診斷資料 (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

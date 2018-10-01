@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065061"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321277"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的鍵盤快速鍵
 
@@ -126,6 +126,6 @@ ms.locfileid: "32065061"
 
 ## <a name="see-also"></a>另請參閱
 
-- [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
-- [鍵盤快速鍵 (VSTS 和 TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+- [鍵盤快速鍵 (Azure DevOps Services 和 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
 - [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
