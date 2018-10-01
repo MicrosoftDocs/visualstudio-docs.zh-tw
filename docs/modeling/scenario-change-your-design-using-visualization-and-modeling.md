@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321160"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371091"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -182,7 +182,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
  **相依性圖表**
 
-若要確定與設計衝突執行程式碼開發期間發生，是執行上的相依性驗證組建的小組使用 Team Foundation Build。 它們也可以建立自訂的 MSBuild 工作，以要求簽入作業的相依性驗證。 他們會使用組建報告來收集驗證錯誤。
+若要確定與設計衝突沒有在程式碼開發期間，相依性驗證組建，小組會使用 Azure DevOps 上執行。 它們也可以建立自訂的 MSBuild 工作，以要求簽入作業的相依性驗證。 他們會使用組建報告來收集驗證錯誤。
 
 請參閱：
 
@@ -234,7 +234,7 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用，所以 Lucerne 可重複使用。 Lucerne 也可以根據這些測試進行建置，並加入新測試以涵蓋新功能。 同時也會使用 Visual Studio 執行手動測試。
 
-若要確定程式碼符合設計，小組會設定其組建以包含相依性驗證的 Team Foundation build。 如果發生任何衝突，則會產生包含詳細資料的報表。
+若要確定程式碼符合設計，小組會設定其組建以包含相依性驗證的 Azure DevOps 中。 如果發生任何衝突，則會產生包含詳細資料的報表。
 
 請參閱：
 

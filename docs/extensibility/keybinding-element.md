@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639320"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495293"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。  
@@ -42,9 +42,9 @@ ms.locfileid: "39639320"
 |guid|必要。|  
 |id|必要。|  
 |編輯器|必要。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍值是"guidVSStd97 」。|  
-|key1|必要。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx)。|  
+|key1|必要。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|  
 |mod1|選擇性。 任何組合**Ctrl**， **Alt**，並**Shift**以空格分隔的。|  
-|key2|選擇性。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx)。|  
+|key2|選擇性。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|  
 |mod2|選擇性。 任何組合**Ctrl**， **Alt**，並**Shift**以空格分隔的。|  
 |模擬器|選擇性。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  

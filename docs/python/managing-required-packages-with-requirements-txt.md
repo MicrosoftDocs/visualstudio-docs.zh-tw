@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468241"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548786"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
-如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](python-azure-cloud-service-project-template.md)，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
+如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](python-azure-cloud-service-project-template.md)，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (透過在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 *requirements.txt* 提供了專屬支援：
 
 - 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管] 中的 [Python 環境] 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]：
 
-    ![從 requirements.txt 安裝](media/environments-requirements-txt-install.png)
+    ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments-requirements-txt-install.png)
 
 - 若您已在環境中安裝所有必要套件，可以在 [方案總管] 中的環境上按一下滑鼠右鍵，然後選取 [產生 requirements.txt] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
@@ -38,7 +38,7 @@ ms.locfileid: "39468241"
 
 由於 *requirements.txt* 檔案的用意是要固定住環境的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性並將 `--find-links <path>` 選項新增到您的 *requirements.txt*：
+如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性並將 `--find-links <path>` 選項新增到您的 *requirements.txt*：
 
 ```output
 C:\Project>pip wheel azure

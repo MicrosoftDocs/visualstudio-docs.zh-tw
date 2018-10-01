@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499695"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370662"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>取得文字顏色標示的字型和色彩資訊
 呈現，或在使用者介面 (UI) 項目中顯示彩色的文字的程序取決於專案、 技術和開發人員的喜好設定的類型。 **字型和色彩**屬性頁會將設定儲存。
@@ -50,4 +50,4 @@ ms.locfileid: "39499695"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [使用字型和文字](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [使用色彩](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI （繪圖裝置介面）](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI （繪圖裝置介面）](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)

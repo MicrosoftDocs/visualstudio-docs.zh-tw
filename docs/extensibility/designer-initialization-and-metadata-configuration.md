@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637051"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370545"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具的初始設定和中繼資料組態
 操作的中繼資料和篩選器相關聯的屬性使用設計工具或設計工具元件提供一個機制，來定義特定的設計工具所使用的工具來處理不同的應用程式<xref:System.Type>物件 （例如資料結構類別或圖形化的實體），當設計工具可用，而且 Visual Studio IDE 的設定以支援設計工具的方式 (如執行個體這**工具箱**分類或索引標籤可供使用)。  
@@ -100,4 +100,4 @@ ms.locfileid: "39637051"
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [擴充 dDesign 階段支援](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [擴充設計階段支援](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

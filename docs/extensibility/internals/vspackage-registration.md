@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513157"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495280"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它們已安裝，且應該會載入。 此程序，即可將資訊寫入登錄中。 這是典型的工作，安裝程式。  
@@ -60,4 +60,4 @@ Vspackage 必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
 ## <a name="see-also"></a>另請參閱  
  [Windows 安裝程式](/windows/desktop/Msi/windows-installer-portal)   
- [受管理的套件註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [受管理的套件註冊](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

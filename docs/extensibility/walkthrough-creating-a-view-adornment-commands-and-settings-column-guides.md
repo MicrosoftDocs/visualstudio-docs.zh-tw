@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499987"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496099"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （分欄輔助線）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。 這篇文章會示範如何開始使用熱門的擴充功能，分欄輔助線。 分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。 具體來說，格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。  
@@ -35,7 +35,7 @@ ms.locfileid: "39499987"
   
 -   新增支援叫用的命令，從 Visual Studio 命令視窗  
   
- 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+ 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
  **請注意**： 在此逐步解說中，您必須將大量的程式碼貼入 Visual Studio 擴充功能範本所產生的一些檔案。 但是，很快就本逐步解說會參考和其他擴充功能範例的 github 上已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>完成的程式碼專案  
  即將發生的 Visual Studio 擴充性範例 github 專案，而且已完成的專案會有。 這篇文章將會更新指向那里當發生這種情況。 已完成的範例專案可能會有不同的 guid，並會有不同的點陣圖寬帶命令圖示。  
   
- 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+ 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在編輯器內](../extensibility/inside-the-editor.md)   

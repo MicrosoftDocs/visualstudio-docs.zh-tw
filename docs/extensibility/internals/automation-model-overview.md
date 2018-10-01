@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8d6f5844f47e867d7c0442c9bb86e3722b40b27
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 661c870b19760b8a91c0e9e9e162076c641864a3
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498009"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370690"
 ---
 # <a name="automation-model-overview"></a>Automation 模型概觀
 Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或延伸的物件。 增益集是應用程式可以在 Visual Studio 環境的操作和自動化一般工作。 Visual Studio 擴充功能可以建立自訂的 Visual Studio 元件，或新增功能的標準元件，例如文字編輯器。  
@@ -29,7 +29,7 @@ Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或
   
  ![Visual Studio automation 物件圖表](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
   
- 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 環境](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)。  
+ 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 環境](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)。  
   
  環境會提供不同功能區域中的模型。 比方說，是程式碼模型的各種您可能會發現程式碼中的項目。 沒有文件模型的各種文件項目。 一個區域中，[專案] 區域中，是 VSPackage 提供者的特別感興趣。 您可能會想要參與 automation 模型中相同的方式為您新的專案類型[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]參與 automation 模型。 處理程序中所述[提供適用於 Vspackage 的自動化](../../extensibility/internals/providing-automation-for-vspackages.md)。  
   
@@ -44,7 +44,7 @@ Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或
 -   組建  
 
   
-如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。  
+如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](../extensibility-in-visual-studio.md)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 建立增益集](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [如何： 建立增益集](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

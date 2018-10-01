@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07c50d383539082ea841ace38e1fce28bcac3c2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3f9272728f79e402800c56f6e8c9ce0fc008e3ad
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252475"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370861"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>擴充偵錯工具的藍圖
 這份文件提供用於擴充的指南和參考資訊[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]偵錯工具與[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
@@ -46,7 +46,7 @@ ms.locfileid: "39252475"
   
      [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [教學課程： 建置使用 ATL COM 偵錯引擎](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [教學課程： 建置使用 ATL COM 偵錯引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [實作連接埠提供者](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

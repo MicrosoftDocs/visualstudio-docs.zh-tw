@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276464"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370922"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 偵錯工具擴充性
 Visual Studio 包含具全面互動性的來源的程式碼偵錯工具，提供功能強大且容易使用的工具來追蹤您的程式中的 bug。 偵錯工具會有完整支援 Visual Basic、 C#、 C/c + + 和 JavaScript。 不過，透過[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，也就是可從[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)，其他程式設計語言可支援在相同的豐富功能的偵錯工具中。  
@@ -28,7 +28,7 @@ Visual Studio 包含具全面互動性的來源的程式碼偵錯工具，提供
   
  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]包含所有的完整參考[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]建立新的裝置所需的項目。 此外，還有範例和可幫助您入門的教學課程。  
   
- 偵錯支援的語言專案系統的完整範例，請參閱 < [IronPython 範例](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
+ 偵錯支援的語言專案系統的完整範例，請參閱 < [IronPython 範例](https://www.microsoft.com/download/details.aspx?id=55984)。  
   
  下列各節說明如何使用偵錯工具來擴充[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
   

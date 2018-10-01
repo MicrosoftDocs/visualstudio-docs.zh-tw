@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289515"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701763"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -32,12 +32,13 @@ ms.locfileid: "43289515"
 3.  若要完成此程序，您必須提供代表：
     - 您用於登入訂用帳戶的電子郵件地址
     - 可在 [[訂閱](https://my.visualstudio.com/subscriptions)] 索引標籤上找到的訂用帳戶識別碼。
+
     > [!div class="mx-imgBorder"]
     > ![技術支援權益尋找訂用帳戶識別碼](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > 若要使用英文以外語言啟用您的支援帳戶，請從[此清單](https://support.microsoft.com/help/14084/activate-support-contract)選擇您的國家/地區。   
+> [!NOTE]
+> 若要使用英文以外語言啟用您的支援帳戶，請從[此清單](https://support.microsoft.com/help/14084/activate-support-contract)選擇您的國家/地區。   
 
 
 ## <a name="how-to-submit-an-incident"></a>如何提交事件

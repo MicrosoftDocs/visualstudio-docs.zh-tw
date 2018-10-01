@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433544"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542412"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>搶先了解 Visual Studio 偵錯工具
 
@@ -211,7 +211,7 @@ F10 進階偵錯工具，而不需要逐步執行函式或方法，應用程式�
 
 ![逐步執行向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步返回] 和 [向前按鈕")
 
-如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
+如需詳細資訊，請參閱 <<c0> [ 檢查先前的應用程式狀態，使用 IntelliTrace](../debugger/view-historical-application-state.md)頁面。
 
 ## <a name="next-steps"></a>後續步驟
 

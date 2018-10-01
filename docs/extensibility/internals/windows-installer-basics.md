@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513422"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495540"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的軟體產品執行這些工作單位，稱為 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來設定使用 Windows 安裝程式的基本單位。  
@@ -75,4 +75,4 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
 -   沒有建立版本的資源應該曾經出貨中一個以上的 WIC。  
   
 ## <a name="see-also"></a>另請參閱  
- [元件規則已中斷，會發生什麼事？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [元件規則已中斷，會發生什麼事？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

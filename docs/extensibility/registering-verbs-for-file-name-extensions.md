@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639723"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495254"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞命令
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  
   
- 您可以註冊擴充功能使用 Shell 機碼位於與的程式設計識別項 (ProgID) 相關聯的動詞**HKEY_CLASSES_ROOT\{progid} \shell**。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
+ 您可以註冊擴充功能使用 Shell 機碼位於與的程式設計識別項 (ProgID) 相關聯的動詞**HKEY_CLASSES_ROOT\{progid} \shell**。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](/windows/desktop/shell/fa-file-types)。  
   
 ## <a name="register-standard-verbs"></a>註冊標準動詞命令  
  作業系統可辨識下列的標準動詞命令：  
   
 -   開啟  
   
--   Edit  
+-   編輯  
   
 -   播放  
   
