@@ -1,0 +1,43 @@
+---
+title: Transaction 活動設計工具 |Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: .net-framework-4.6
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: reference
+ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
+caps.latest.revision: 6
+author: gewarren
+ms.author: gewarren
+manager: erikre
+ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47486435"
+---
+# <a name="transaction-activity-designers"></a>Transaction 活動設計工具
+[異動] 設計工具會用來建立及設定異動式活動，例如補償及確認。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  
+  
+## <a name="in-this-section"></a>本節內容  
+ [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)  
+ 用來建立及設定 <xref:System.Activities.Statements.CancellationScope> 活動。  
+  
+ [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)  
+ 用來建立及設定 <xref:System.Activities.Statements.CompensableActivity> 活動。  
+  
+ [Compensate](../workflow-designer/compensate-activity-designer.md)  
+ 用來建立及設定 <xref:System.Activities.Statements.Compensate> 活動。  
+  
+ [Confirm](../workflow-designer/confirm-activity-designer.md)  
+ 用來建立及設定 <xref:System.Activities.Statements.Confirm> 活動。  
+  
+ [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)  
+ 用來建立及設定 <xref:System.Activities.Statements.TransactionScope> 活動。  
+  
+## <a name="reference"></a>參考資料  
+  
+## <a name="related-sections"></a>相關章節
