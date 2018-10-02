@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371091"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860507"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -112,7 +112,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 - [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 某些版本的 Visual Studio 支援的視覺效果和模型化的相依性驗證和 code map 的唯讀版本。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+> 某些版本的 Visual Studio 支援的視覺效果和模型化的相依性驗證和 code map 的唯讀版本。 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>了解並傳達系統的相關資訊
 
@@ -169,12 +169,12 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 |------------------|-------------------|
 |*以程式碼為基礎的類別圖表*<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別。|
 
-###  <a name="ValidatingCode"></a> 保留程式碼與設計一致
+### <a name="ValidatingCode"></a> 保留程式碼與設計一致
  Dinner Now 必須確定已更新的程式碼與設計保持一致。 他們建立相依性圖表，描述系統中的層級的功能，請指定允許與這些圖層的方式，以及關聯的方案成品之間的相依性。
 
 |**圖表**|**描述**|
 |-----------------|-------------------|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表的組織，並將對應中的成品[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解決方案，以抽象群組，稱為*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會組織，並將對應至擷取群組，稱為 Visual Studio 方案中的成品*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|
 
  例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
 
@@ -224,7 +224,7 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 ### <a name="TestValidateCheckInCode"></a> 測試、 驗證和簽入程式碼
 
-當小組完成每項工作時，他們會將程式碼簽入至 Team Foundation 版本控制，如果忘了這麼做，則會收到 Team Foundation Server 的提醒。 Team Foundation Server 接受簽入之前，小組會執行單元測試和相依性驗證，以確認針對測試案例及設計的程式碼。 他們使用 Team Foundation Server 來執行組建、 自動化的單元測試，並定期驗證相依性。 此行為有助於確定程式碼符合下列準則：
+當小組完成每項工作時，它們會其程式碼簽入原始檔控制，並從 Team Foundation Server，收到提醒，如果他們忘記的話。 Team Foundation Server 接受簽入之前，小組會執行單元測試和相依性驗證，以確認針對測試案例及設計的程式碼。 他們使用 Team Foundation Server 來執行組建、 自動化的單元測試，並定期驗證相依性。 此行為有助於確定程式碼符合下列準則：
 
 - 這麼做確實有成效。
 

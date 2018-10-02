@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566579"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859792"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 
@@ -30,7 +30,7 @@ System.Xml 命名空間提供各種工具來載入 XML 文件，然後在記憶�
 在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。
 
 > [!NOTE]
-> [隨附的應用程式](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
+> 應用程式[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)，這是隨附於 Visual Studio 中，可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
 
 以下是範例檔案：
 
@@ -142,7 +142,7 @@ namespace MyProject
 
 3.  在檔案的範本指示詞中，將 `hostspecific` 屬性變更為 `true`。
 
-     這項變更可讓範本程式碼存取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 服務。
+     這項變更可讓範本程式碼，以取得 Visual Studio 服務的存取權。
 
 4.  在輸出指示詞中，將擴充屬性變更為 ".cs"，讓範本產生 C# 檔案。 在 Visual Basic 專案中，您會將它變更 ".vb"。
 
@@ -272,7 +272,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>存取 Visual Studio API
 
-設定 `hostspecific` 指示詞的 `<#@template#>` 屬性，可讓範本存取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API。 範本可以使用此項目來取得專案檔的位置，以避免在範本程式碼中使用絕對檔案路徑。
+設定`hostspecific`屬性的`<#@template#>`指示詞可讓範本存取 Visual Studio API。 範本可以使用此項目來取得專案檔的位置，以避免在範本程式碼中使用絕對檔案路徑。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

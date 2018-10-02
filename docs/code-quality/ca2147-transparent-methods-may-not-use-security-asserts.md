@@ -17,19 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549786"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859532"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明的方法不可以使用安全性判斷提示
 |||
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -40,7 +40,7 @@ ms.locfileid: "45549786"
 
  在執行階段，進行任何呼叫<xref:System.Security.CodeAccessPermission.Assert%2A>從 transparent 程式碼會導致<xref:System.InvalidOperationException>擲回。 這可能會發生在兩個 100%透明的組件，以及在混合透明/關鍵組件其中方法或類型宣告為透明，但包含宣告式或必要的判斷提示中。
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 導入了一個功能稱為*透明度*。 透明或重要，可以是個別的方法、 欄位、 介面、 類別和類型。
+ .NET Framework 2.0 引進了一個功能稱為*透明度*。 透明或重要，可以是個別的方法、 欄位、 介面、 類別和類型。
 
  若要提高安全性權限不允許 transparent 程式碼。 因此，任何權限授與或它的要求會自動透過程式碼傳遞至呼叫端或主機的應用程式定義域。 提升權限的範例包括判斷提示、 Linkdemand、 SuppressUnmanagedCode，和`unsafe`程式碼。
 
