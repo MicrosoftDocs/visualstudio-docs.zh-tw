@@ -16,26 +16,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550108"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859324"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
 |||
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|
 |CheckId|CA2107|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  方法包含指定的 PermitOnly 或 Deny 安全性動作的安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由具備進階的知識的人的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只能由有.NET Framework 安全性的進階的知識的人員。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
 
  拒絕會改變以回應安全性需求，就會發生堆疊查核行程的預設行為。 它可讓您指定必須不被拒絕的方法，不論實際的權限，呼叫堆疊中的呼叫端的持續期間授與的權限。 如果堆疊查核行程偵測到的方法，受到拒絕，而且如果要求的權限包含在拒絕的權限時，堆疊查核行程失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限的權限。 如果堆疊查核行程偵測受到 PermitOnly 方法和要求的權限不會納入 PermitOnly 所指定的權限，就會失敗的堆疊查核行程。
 

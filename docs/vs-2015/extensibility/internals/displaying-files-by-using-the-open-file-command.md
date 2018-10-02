@@ -1,0 +1,68 @@
+---
+title: 使用 開啟檔案命令顯示檔案 |Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- project types, supporting Open File command
+- Open File command
+- persistence, supporting Open File command
+ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
+caps.latest.revision: 14
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 139eb83f2260c44a3e0f8c50868d42aca8160694
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47499276"
+---
+# <a name="displaying-files-by-using-the-open-file-command"></a>使用開啟檔案命令顯示檔案
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+本主題的最新的版本可從[使用 開啟檔案命令顯示檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-file-command)。  
+  
+下列步驟描述 IDE 如何處理**開啟的檔案**命令，其位於**檔案**功能表中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。  
+  
+ 當使用者按一下**開啟的檔案**命令**檔案**功能表上，並選取 [從檔案**開啟檔案**] 對話方塊中，下列程序就會發生。  
+  
+1.  使用執行中的文件表格，IDE 就會判斷檔案是否已在專案中開啟。  
+  
+    -   如果檔案開啟時，IDE 會 resurfaces 視窗。  
+  
+    -   如果檔案未開啟，IDE 就會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>來查詢每個專案，以判斷哪個專案可以開啟檔案。  
+  
+        > [!NOTE]
+        >  在您專案實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供優先順序值，指出您的專案會開啟檔案的層級。 中提供優先順序值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別。  
+  
+2.  每個專案以表示重要性的優先順序層級這會造成正在開啟檔案的專案。  
+  
+3.  IDE 會使用下列準則來判斷哪一個專案開啟的檔案：  
+  
+    -   具有最高的優先順序 (DP_Intrinsic) 會回應專案開啟的檔案。 如果多個專案會回應此優先順序，以回應的第一個專案開啟的檔案。  
+  
+    -   如果沒有專案回應，具有最高的優先順序 (DP_Intrinsic)，但使用的相同且較低優先權的所有專案回應，使用中的專案就會開啟檔案。 如果沒有任何專案是使用中，回應的第一個專案開啟的檔案。  
+  
+    -   如果沒有任何專案宣告檔案 (DP_Unsupported) 的擁有權，則其他檔案專案開啟的檔案。  
+  
+         如果建立在專案一律會回應該值 DP_CanAddAsExternal 其他檔案專案的執行個體。 這個值表示專案可以開啟檔案。 此專案用來儲存開啟的檔案不在任何其他專案中。 在此專案中的項目清單不會保存;此專案會顯示在**方案總管 中**它在使用時才開啟檔案。  
+  
+         其他檔案專案並不表示它可以開啟檔案，方法是，如果尚未建立的專案執行個體。 在此情況下，IDE 會建立其他檔案專案的執行個體，並告知專案，以開啟該檔案。  
+  
+4.  IDE 判斷哪一個專案開啟的檔案，因為它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>該專案的方法。  
+  
+5.  專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)並[如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
+  
+## <a name="see-also"></a>另請參閱  
+ [使用 [開啟] 命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
+ [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
+ [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
+

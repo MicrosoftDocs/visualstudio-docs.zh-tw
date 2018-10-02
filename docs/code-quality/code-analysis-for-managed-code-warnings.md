@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600b5c7822232581cd01bd9bbf7616f4d1e9bb7c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919891"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859064"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。
@@ -46,17 +46,17 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
 
 |||
 |-|-|
-|[依據 checkid 列出警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|依據 CheckId 列出警告|
+|[依 CheckId 分類的警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|依據 CheckId 列出警告|
 |[加密警告](../code-quality/cryptography-warnings.md)|此警告透過正確使用加密來支援更安全的程式庫與應用程式。|
-|[設計警告](../code-quality/design-warnings.md)|此警告支援 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 設計方針所指定的正確程式庫設計。|
+|[設計警告](../code-quality/design-warnings.md)|此警告支援.NET Framework 設計方針所指定的正確程式庫設計。|
 |[全球化警告](../code-quality/globalization-warnings.md)|此警告支援全球化程式庫與應用程式。|
 |[互通性警告](../code-quality/interoperability-warnings.md)|此警告支援與 COM 用戶端互動。|
 |[維護性警告](../code-quality/maintainability-warnings.md)|此警告支援程式庫與應用程式維護。|
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|此警告支援有效率的用電量。|
-|[命名警告](../code-quality/naming-warnings.md)|此警告支援遵循 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 設計方針的命名慣例。|
+|[命名警告](../code-quality/naming-warnings.md)|此警告支援遵循.NET Framework 設計方針的命名慣例。|
 |[效能警告](../code-quality/performance-warnings.md)|此警告支援高效能程式庫與應用程式。|
 |[Portability Warnings](../code-quality/portability-warnings.md)|此警告跨平台支援可攜性。|
 |[可靠性警告](../code-quality/reliability-warnings.md)|此警告支援程式庫與應用程式的可靠性，例如記憶體與執行緒的正確用法。|
 |[安全性警告](../code-quality/security-warnings.md)|此警告支援更安全的程式庫與應用程式。|
-|[用法警告](../code-quality/usage-warnings.md)|此警告支援 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]的適當用法。|
+|[用法警告](../code-quality/usage-warnings.md)|支援的.NET framework 的適當使用方式的警告。|
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|若程式碼分析原則在簽入時不符合，會發生此錯誤。|

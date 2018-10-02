@@ -12,26 +12,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e4546c75f424f5091a22e9acd6cceb72f5d8038c
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 87d9f5f489bffcc624ff758c89e5d3a230a68d01
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567086"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859337"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 
-*文字範本轉換*流程採用*文字範本*做為輸入並產生文字檔做為輸出的檔案。 您可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充功能，或從執行於已安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之電腦的獨立應用程式中，呼叫文字轉換引擎。 不過，您必須提供*文字範本化主機*。 這個類別會將範本連接至環境、尋找資源 (例如組件和 Include 檔)，以及處理輸出和錯誤訊息。
+*文字範本轉換*流程採用*文字範本*做為輸入並產生文字檔做為輸出的檔案。 從 Visual Studio 擴充功能，或從 Visual Studio 安裝在電腦上執行的獨立應用程式，您可以呼叫文字轉換引擎。 不過，您必須提供*文字範本化主機*。 這個類別會將範本連接至環境、尋找資源 (例如組件和 Include 檔)，以及處理輸出和錯誤訊息。
 
 > [!TIP]
-> 如果您要撰寫將執行於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的封裝或擴充功能，請考慮使用文字範本化服務，而不是撰寫自己的主應用程式。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+> 如果您正在撰寫的封裝或執行 Visual Studio 中的延伸模組，請考慮使用文字範本化服務，而不需要撰寫自己的主機。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 > [!NOTE]
-> 不建議您在伺服器應用程式中使用文字範本轉換。 除非在單一執行緒中，否則也不建議您使用文字範本轉換。 這是因為文字範本化引擎會重複使用單一 AppDomain 來轉譯、編譯和執行範本。 轉譯過的程式碼並不是安全執行緒。 引擎是專門用來循序處理檔案，就像在設計階段於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中一樣。
+> 不建議您在伺服器應用程式中使用文字範本轉換。 除非在單一執行緒中，否則也不建議您使用文字範本轉換。 這是因為文字範本化引擎會重複使用單一 AppDomain 來轉譯、編譯和執行範本。 轉譯過的程式碼並不是安全執行緒。 引擎被設計來循序處理檔案，因為它們是在 Visual Studio 專案中，在設計階段。
 >
 > 對於執行階段應用程式，請考慮使用前置處理過的文字範本： 請參閱[執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-如果應用程式使用一組在編譯階段固定不變的範本，則使用「前置處理過的範本」會比較簡單。 如果應用程式是在沒有安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的電腦上執行，您也可以這個處理方法。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+如果應用程式使用一組在編譯階段固定不變的範本，則使用「前置處理過的範本」會比較簡單。 如果您的應用程式會在其未安裝 Visual Studio 的電腦上執行，您也可以使用該方法。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 ## <a name="execute-a-text-template-in-your-application"></a>在您的應用程式中執行文字範本
 
@@ -53,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 定義於**Microsoft.VisualStudio.TextTemplating。\*。0.log dll**，並<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定義**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0.log dll**。
 
 ## <a name="in-this-section"></a>本節內容
- [逐步解說： 建立自訂的文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字範本主應用程式，可讓文字範本功能可供外部使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+ [逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字範本主機，讓 Visual Studio 之外，您可以使用文字範本功能。
 
 ## <a name="reference"></a>參考資料
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

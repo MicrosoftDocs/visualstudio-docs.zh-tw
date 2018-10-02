@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ea0b136659b57b8430a355b4e231423c5e55b2b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8af5f4496356b3fa349b514a4158149d6a96d684
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946097"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858982"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 文字範本 API 參考
 
@@ -24,6 +24,6 @@ ms.locfileid: "31946097"
 
 |命名空間|用途|
 |---------------|-------------|
-|<xref:Microsoft.VisualStudio.TextTemplating>|包含類別，文字範本轉換功能。 文字範本轉換引擎整合至 Visual Studio 中，並將文字範本檔轉換成產生的文字輸出檔案。|
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|提供文字轉換功能至 UML 模型和特定領域語言，例如存取相關[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus。|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|提供存取中的文字範本化服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。|
+|<xref:Microsoft.VisualStudio.TextTemplating>|包含類別，文字範本轉換功能。 文字範本轉換引擎已整合至 Visual Studio 中，並將文字範本檔案轉換成產生的文字輸出檔案。|
+|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|提供文字與 UML 模型和特定領域語言，例如 Visual Studio ModelBus 存取相關的轉換功能。|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|提供在 Visual Studio 中的文字範本化服務的存取。|

@@ -1,0 +1,160 @@
+---
+title: CA1720： 識別項不可以包含類型名稱 |Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
+ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
+caps.latest.revision: 17
+author: gewarren
+ms.author: gewarren
+manager: wpickett
+ms.openlocfilehash: 60b7bbb0852544f7e2c5267daf0d9fdf1e1214cb
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "47500714"
+---
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+本主題的最新的版本可從[CA1720： 識別項不應包含類型名稱](https://docs.microsoft.com/visualstudio/code-quality/ca1720-identifiers-should-not-contain-type-names)。
+
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotContainTypeNames|
+|CheckId|CA1720|
+|分類|Microsoft.Naming|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 外部可見成員中的參數名稱包含的資料型別名稱。
+
+ -或-
+
+ 外部可見成員的名稱包含語言特定資料型別名稱。
+
+## <a name="rule-description"></a>規則描述
+ 參數和成員的名稱最好用於傳達其意義說明其預期由開發工具所提供的類型。 名稱的成員，如果必須使用資料型別名稱，而不是特定語言使用的語言無關的名稱。 比方說，而不是 C# 型別名稱 'int'，使用的語言無關的資料型別名稱，Int32。
+
+ 每個離散的權杖參數或成員的名稱已針對下列語言專屬的資料型別名稱，不區分大小寫的方式：
+
+-   Bool
+
+-   WChar
+
+-   Int8
+
+-   UInt8
+
+-   Short
+
+-   UShort
+
+-   Int
+
+-   UInt
+
+-   整數
+
+-   UInteger
+
+-   Long
+
+-   ULong
+
+-   不帶正負號
+
+-   簽署人
+
+-   浮動
+
+-   float32
+
+-   float64
+
+ 此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
+
+-   Object
+
+-   obj
+
+-   Boolean
+
+-   Char
+
+-   String
+
+-   SByte
+
+-   Byte
+
+-   UByte
+
+-   Int16
+
+-   UInt16
+
+-   Int32
+
+-   UInt32
+
+-   Int64
+
+-   UInt64
+
+-   IntPtr
+
+-   ptr
+
+-   Pointer
+
+-   UInptr
+
+-   UPtr
+
+-   UPointer
+
+-   Single
+
+-   Double
+
+-   Decimal
+
+-   Guid
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ **如果針對參數引發：**
+
+ 進一步描述其意義的詞彙或更泛型的詞彙如 'value' 取代參數名稱的資料類型識別項。
+
+ **如果成員針對引發：**
+
+ 語言特定資料型別識別項，該成員的名稱取代為一個詞彙，進一步說明其意義、 語言獨立對等項目或更泛型的詞彙如 'value'。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 對於有舊版隨附的程式庫，您可能必須隱藏此規則的警告。
+
+## <a name="related-rules"></a>相關的規則
+ [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
+ [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+ [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+
+ [CA1719：參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+
+
+
