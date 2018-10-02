@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511807"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860494"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
-當使用者儲存執行個體，或*模型*，在特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或更新的 XML 檔案。 可以重新載入檔案，才能重新建立存放區中的模型。
+當使用者儲存執行個體，或*模型*，Visual Studio 中的特定領域語言 (DSL)，建立或更新的 XML 檔案。 可以重新載入檔案，才能重新建立存放區中的模型。
 
 您可以藉由調整下的設定自訂的序列化配置**Xml 序列化行為**DSL 總管 中。 沒有下的一個節點**Xml 序列化行為**的每個網域類別、 屬性和關聯性。 關聯性位於其來源類別。 另外還有對應至圖形、 連接器和圖表類別的節點。
 
