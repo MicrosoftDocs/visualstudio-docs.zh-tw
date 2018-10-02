@@ -198,9 +198,9 @@ ms.locfileid: "42626933"
 
 1. 當您全部完成時，請停止伺服器，並再次將變更認可至原始檔控制。
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 項目中出現的 {% crsf_token %} 標籤有什麼用途？
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 項目中出現的 {% csrf_token %} 標籤有什麼用途？
 
-回答：`{% crsf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (crsf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) \(英文\) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
+回答：`{% csrf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) \(英文\) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 
 ## <a name="next-steps"></a>後續步驟
 
