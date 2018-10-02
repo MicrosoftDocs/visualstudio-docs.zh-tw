@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566547"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860416"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 您可以在任何應用程式中開啟 DSL 模型。
 
- 從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]延伸模組，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+ 從 Visual Studio 擴充功能，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目標 Framework
  設定**目標 framework**您的應用程式專案 **.NET Framework 4**。
 
 #### <a name="to-set-the-target-framework"></a>若要設定的目標 framework
 
-1.  開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式，您要讀取的 DSL 模型專案。
+1.  開啟您要讀取的 DSL 模型的應用程式的 Visual Studio 專案。
 
 2.  在 **方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。
 
@@ -36,7 +36,7 @@ ms.locfileid: "39566547"
 >  您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。
 
 ## <a name="references"></a>參考
- 您必須將這些參考您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式專案：
+ 您必須將這些應用程式 Visual Studio 專案的參考：
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

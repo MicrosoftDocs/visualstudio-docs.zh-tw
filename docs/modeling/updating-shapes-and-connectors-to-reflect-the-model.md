@@ -9,44 +9,44 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 313ae439ffa934341f4a911ebaab1874141547d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e436999b16a89f4956f0fef48a8878a7f609d1f9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950409"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860039"
 ---
-# <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新圖形和連接器，以反映模型
+# <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新圖形和接點來反映模型
 
-以網域特定語言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以進行反映基礎模型的狀態圖形的外觀。
+在 Visual Studio 中的特定領域語言，就能夠反映基礎模型的狀態圖形的外觀。
 
-本主題中的程式碼範例應該加入至`.cs`檔案中您`Dsl`專案。 您需要在每個檔案的這些陳述式：
+本主題中的程式碼範例應新增至`.cs`檔案中您`Dsl`專案。 您需要在每個檔案中的這些陳述式：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性以控制的裝飾項目的可見性
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性來控制的裝飾項目可見性
 
-您可以控制裝飾項目的可見的性，而不需要撰寫程式碼中，藉由設定 DSL 定義中的圖形和領域類別之間的對應。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。
+您可以控制裝飾項目可見的性，而不需要撰寫程式碼中，藉由設定 DSL 定義中的圖形與領域類別之間的對應。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。
 
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將公開為屬性的色彩和樣式圖形
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將公開為屬性的色彩和樣式的圖形
 
-DSL 定義中，以滑鼠右鍵按一下圖形類別，並指向**新增公開**，然後按一下其中一個項目例如**填滿色彩**。
+在 DSL 定義中，以滑鼠右鍵按一下圖形類別，指向**加入已公開**，然後按一下其中一個項目這類**填滿色彩**。
 
-圖形現在有網域屬性，您可以在程式碼中或以使用者設定。 例如，若要設定該命令或規則的程式碼中，您可以撰寫：
+圖形現在具有程式碼中，或以使用者身分，您可以設定的網域屬性。 例如，若要設定它的命令或規則的程式碼中，您可以撰寫：
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-如果您想要讓屬性變數只能在程式控制權，而不是由使用者，選取新的網域屬性例如**填滿色彩**DSL 定義圖表中。 然後，在 [屬性] 視窗中，將**是可瀏覽**至`false`或設定**是 UI Readonly**至`true`。
+如果您想要將屬性有更多的變數只在程式控制下，而不是由使用者，選取新的網域屬性這類**填滿色彩**DSL 定義圖表中。 然後，在 [屬性] 視窗中，將**Is Browsable**要`false`或設定**是 UI Readonly**至`true`。
 
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定義變更規則，使色彩、 樣式或位置取決於模型項目屬性
- 您可以定義規則，更新的外觀取決於模型的其他部分的圖形。 例如，您可以定義變更規則更新相依於模型項目的屬性及其圖案的色彩將模型項目上。 如需有關變更規則的詳細資訊，請參閱[規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定義變更的規則，才能使色彩、 樣式或位置取決於模型項目屬性
+ 您可以定義規則，以更新的外觀取決於模型的其他部分的圖形。 例如，您可以定義變更規則上模型項目，以更新相依於模型項目的屬性及其圖案的色彩。 如需變更規則的詳細資訊，請參閱[規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 
- 您應該只可以更新存放區中，內進行維護的內容，因為規則不會叫用復原命令執行時使用規則。 這不包括某些圖形的功能，例如大小和形狀的可見性。 若要更新圖形的這些功能，請參閱[更新非存放區圖形功能](#OnAssociatedProperty)。
+ 您應該使用規則來更新屬性，在存放區 內進行維護，因為規則不會叫用執行 復原 命令時。 這不包括一些圖形化的功能，例如大小和形狀的可見性。 若要更新圖形的這些功能，請參閱[圖形化更新非存放區功能](#OnAssociatedProperty)。
 
- 下列範例假設您有公開`FillColor`做為網域屬性，如前一節中所述。
+ 下列範例假設您有公開`FillColor`做為網域屬性，如上一節所述。
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -87,7 +87,7 @@ DSL 定義中，以滑鼠右鍵按一下圖形類別，並指向**新增公開**
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化圖形的屬性
 
-若要設定圖形的屬性，當它是第一個建立、 覆寫`OnChildConfigured()`圖表類別的部分定義中。 DSL 定義中，以指定圖表類別，且產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如: 
+若要設定圖案的屬性，第一次時，建立覆寫`OnChildConfigured()`圖表類別的部分定義中。 在 DSL 定義中，指定圖表類別與產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如: 
 
 ```csharp
 partial class MyLanguageDiagram
@@ -110,13 +110,13 @@ partial class MyLanguageDiagram
 
 ```
 
-同時針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。
+針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。
 
-##  <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith
+## <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith
 
-某些功能的圖形，例如是否具有陰影或連接器的箭頭樣式沒有公開的功能，做為網域屬性的內建方法。  這類功能的變更並不在交易系統的控制權。 因此，不將其更新適當使用規則，因為規則不會叫用使用者對執行 [復原] 命令時。
+圖形，例如是否有陰影或連接器的箭頭樣式的某些功能沒有任何內建的方法，公開為網域屬性的功能。  這類功能的變更不在交易系統的控制之下。 因此，不適當更新這些使用規則，因為規則不會叫用使用者執行 [復原] 命令時。
 
-相反地，您可以藉由更新這類功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式是連接器所顯示的關聯性中的網域屬性值所控制：
+相反地，您可以更新這類功能，使用<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式會受到網域屬性的連接器顯示在關係性中的值：
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -157,6 +157,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` 應該呼叫一次針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中的任何圖形都呈現屬性的模型項目。
+`AssociateValueWith()` 應該呼叫一次，針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中呈現該屬性的模型項目中的任何圖形。
 
-不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次只能針對每個圖形 」 類別。
+您不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次，針對每個圖形類別。

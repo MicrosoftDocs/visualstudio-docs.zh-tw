@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567164"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859298"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
-您可以在您的特定領域語言 (DSL) 中自訂的外觀和行為的 [屬性] 視窗，在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定義中，您可以定義網域內容上每個網域類別。 根據預設，當您選取的類別，在圖表上或在 [模型總管] 中，執行個體時每個網域屬性列在 [屬性] 視窗中。 這可讓您查看和編輯屬性的值網域，即使您尚未對應它們在圖表上的形狀欄位。
+您可以在您的特定領域語言 (DSL)，Visual Studio 中自訂的外觀和行為的 [屬性] 視窗。 在 DSL 定義中，您可以定義網域內容上每個網域類別。 根據預設，當您選取的類別，在圖表上或在 [模型總管] 中，執行個體時每個網域屬性列在 [屬性] 視窗中。 這可讓您查看和編輯屬性的值網域，即使您尚未對應它們在圖表上的形狀欄位。
 
 ## <a name="names-descriptions-and-categories"></a>名稱、 描述和類別
  **名稱和顯示名稱**。 在網域屬性的定義中，屬性的顯示名稱會出現在 [屬性] 視窗中的執行階段的名稱。 相反地，當您撰寫程式碼來更新屬性時，會使用的名稱。 名稱必須是正確的 CLR 英數字元名稱，但顯示名稱可以包含空格。

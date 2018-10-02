@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b666a4870cccdd653ad77dc50a9096f1da17723d
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: aba2064ddac03f4370028a928469c7d2acee4850
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623691"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857934"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 
 此架構工具指引 》 是關於使用 Visual Studio 2010 中的模型工具的實用指南的可下載的套件。 它會顯示如何整合的方式，使用所有的模型化工具的高階檢視，並討論最常見的案例，使用這些工具。
 
-內容已由[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ALM Rangers，具有成員的特殊群組[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產品小組]、 [Microsoft 服務，Microsoft 最有價值專家 (Mvp) 和[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]社群潛在客戶。
+Visual Studio ALM Rangers，從 Visual Studio 產品小組、 Microsoft 服務、 Microsoft 最有價值專家 (Mvp) 和潛在客戶的 Visual Studio 社群成員的特殊群組已建立的內容。

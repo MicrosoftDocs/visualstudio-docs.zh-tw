@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612710"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860390"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本會包含"\<html >...」 和所有其他標準部分 HTML 網頁。 插入範本中所*控制區塊*，這是一個片段的程式碼。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。
 
-###  <a name="Include"></a> 包括程式碼和文字
+### <a name="Include"></a> 包括程式碼和文字
  `include` 指示詞會插入另一個範本檔中的文字。 例如，此指示詞會插入 `test.txt` 的內容。
 
 ```
@@ -275,7 +275,7 @@ Content of MyFile.txt is:
 |----------|-----------|
 |撰寫範本。|[撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |使用程式碼來產生文字。|[文字範本結構](../modeling/writing-a-t4-text-template.md)|
-|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部執行文字產生。|[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)|
+|在 Visual Studio 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|執行 Visual Studio 外部產生的文字。|[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)|
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|

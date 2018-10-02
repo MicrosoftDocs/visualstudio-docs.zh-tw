@@ -15,21 +15,21 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c7a8d83b36e913467f6c4c62a8452d8d5f15fe6d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3b70cdb92a6b8c4cacfddbc8e4d978845210c6ba
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977198"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859129"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說： 建立自訂文字範本主應用程式
+# <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
-A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*需要的檔案或組件可從主機要求的資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
+A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
 
-您可以撰寫自訂主機如果您想要使用*文字範本轉換*功能從外部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或如果您想要將這個功能整合到自訂工具。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。
+您可以撰寫自訂主應用程式如果您想要使用*文字範本轉換*從 Visual Studio 外部，或如果您想要將該功能整合到自訂工具的功能。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。
 
 > [!WARNING]
-> 如果您要撰寫 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充功能或封裝，請考慮使用文字範本化服務，而不是建立自己的主應用程式。 如需詳細資訊，請參閱[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+> 如果您正在撰寫的 Visual Studio 擴充功能或封裝，請考慮使用文字範本化服務，而不建立您自己的主機。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 這個逐步解說將說明下列工作：
 
@@ -45,7 +45,7 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
 
 -   Visual Studio SDK
 
-## <a name="create-a-custom-text-template-host"></a>建立自訂文字範本主應用程式
+## <a name="create-a-custom-text-template-host"></a>建立自訂文字範本主機
 
 在本逐步解說中，您將會在可從命令列呼叫執行的應用程式 (Application) 中建立自訂主應用程式 (Custom Host)。 此應用程式會接受文字範本檔做為引數、讀取範本、呼叫引擎以轉換範本，然後在命令提示字元視窗中顯示發生的任何錯誤。
 
@@ -716,9 +716,9 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
     End Namespace
     ```
 
-4.  如[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在**啟始物件**清單中，按一下**CustomHost.Program**。
+4.  針對[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。
 
-5.  在**檔案**功能表上，按一下 **全部儲存**。
+5.  在 **檔案**功能表上，按一下**全部儲存**。
 
 6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -728,7 +728,7 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式
 
-1.  建立文字檔案，並將其命名`TestTemplate.tt`。
+1.  建立文字檔案，並將它命名`TestTemplate.tt`。
 
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。
 
@@ -788,7 +788,7 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 不要輸入位置，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。
+    > 而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。
 
 3.  輸入空格。
 
@@ -799,11 +799,11 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > 不要輸入位置，您可以瀏覽至 testtemplate.tt 中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。
+    > 而不是輸入位址，您可以瀏覽至 testtemplate.tt 中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。
 
      自訂主應用程式隨即執行並完成文字範本轉換流程。
 
-5.  在**Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。
+5.  在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。
 
      該資料夾也會包含 TestTemplate1.txt 檔。
 
@@ -821,7 +821,7 @@ A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行�
 
 ## <a name="next-steps"></a>後續步驟
 
-在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說： 連接到產生指示詞處理器的主機](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
+在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

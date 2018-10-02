@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549767"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860325"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：運算子應該有對稱的多載
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -43,7 +43,7 @@ ms.locfileid: "45549767"
  若要修正此規則的違規情形，實作相等和不等比較運算子，或移除的存在。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 您的型別不適用於與一致的方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 請勿隱藏此規則的警告。 您的型別與.NET Framework 一致的方式，將無法運作。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
