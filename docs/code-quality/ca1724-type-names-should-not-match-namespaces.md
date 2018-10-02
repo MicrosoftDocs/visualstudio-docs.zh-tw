@@ -1,6 +1,6 @@
 ---
 title: CA1724：類型名稱不應該和命名空間相符
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,29 +16,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547564"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860260"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724：類型名稱不應該和命名空間相符
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724： 類型名稱不應該符合命名空間
+
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型名稱符合[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]不區分大小寫的比較中的命名空間名稱。
+
+型別名稱比對一或多個外部可見的類型參考的命名空間名稱。 名稱比較不區分大小寫。
 
 ## <a name="rule-description"></a>規則描述
- 類型名稱不得符合 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Class Library 中定義的命名空間名稱。 違反此規則會降低程式庫的可用性。
+
+使用者建立的型別名稱應該不相符參考具有外部可見類型的命名空間的名稱。 違反此規則可能會降低您的程式庫的可用性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 選取名稱不相符的型別名稱[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]類別程式庫命名空間。
+
+重新命名此類型，使它不符合為具有外部可見類型的參考命名空間的名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 新的開發，沒有已知的情況下會發生您必須在其中隱藏此規則的警告。 隱藏警告之前，請仔細考慮如何將程式庫的使用者可能會比對名稱所混淆。 針對隨附的程式庫，您可能必須隱藏此規則的警告。
+
+新的開發，沒有已知的情況下會發生您必須在其中隱藏此規則的警告。 隱藏警告之前，請仔細考慮如何將程式庫的使用者可能會比對名稱所混淆。 針對隨附的程式庫，您可能必須隱藏此規則的警告。

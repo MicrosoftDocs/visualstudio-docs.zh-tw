@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176072"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860364"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 
@@ -68,19 +68,19 @@ ms.locfileid: "39176072"
 
 ## <a name="test-and-deployment"></a>測試和部署
 
-若要測試本主題中的任何延伸模組，建置並執行方案。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本例中，開啟 DSL 方案。 編輯 DslDefinition 圖表。 可以看到延伸模組行為。
+若要測試本主題中的任何延伸模組，建置並執行方案。 Visual Studio 的實驗執行個體隨即開啟。 在本例中，開啟 DSL 方案。 編輯 DslDefinition 圖表。 可以看到延伸模組行為。
 
-若要將延伸模組部署到主要[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他電腦，請遵循下列步驟：
+若要為主要的 Visual Studio 中，以及其他電腦，請部署延伸模組，請遵循下列步驟：
 
 1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix
 
 2.  這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]延伸模組管理員 隨即開啟，確認已安裝擴充功能。
+     若要確認延伸模組已安裝 Visual Studio 延伸模組管理員隨即開啟。
 
 若要解除安裝擴充功能，請遵循下列步驟：
 
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]上**工具**功能表上，按一下**延伸模組管理員**。
+1.  在 Visual Studio 中，在**工具**功能表上，按一下**延伸模組管理員**。
 
 2.  選取擴充功能，並將它刪除。
 
