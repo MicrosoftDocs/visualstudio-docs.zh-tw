@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546245"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859480"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用非密封屬性
 
@@ -32,7 +32,7 @@ ms.locfileid: "45546245"
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -41,7 +41,7 @@ ms.locfileid: "45546245"
 
 ## <a name="rule-description"></a>規則描述
 
-[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Class Library 會提供擷取自訂屬性的方法。 根據預設，這些方法會搜尋屬性繼承階層架構。 比方說，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜尋指定的屬性型別或任何延伸指定的屬性類型的屬性類型。 密封屬性排除整個繼承階層架構中，搜尋，並可改善效能。
+.NET Framework 類別庫會提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 比方說，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜尋指定的屬性型別或任何延伸指定的屬性類型的屬性類型。 密封屬性排除整個繼承階層架構中，搜尋，並可改善效能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
