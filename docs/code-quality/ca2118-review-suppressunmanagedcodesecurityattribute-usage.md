@@ -1,5 +1,5 @@
 ---
-title: CA2118：必須檢視 SuppressUnmanagedCodeSecurityAttribute 使用方法
+title: CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,20 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549850"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859701"
 ---
-# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：必須檢視 SuppressUnmanagedCodeSecurityAttribute 使用方法
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 
 |||
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |CheckId|CA2118|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -40,7 +40,7 @@ ms.locfileid: "45549850"
 
  這個屬性主要是用於增加效能，不過，效能提升會伴隨顯著的安全性風險。 如果您將屬性放在呼叫原生方法的公用成員上時，在呼叫堆疊 （非立即呼叫端） 的呼叫端不需要執行 unmanaged 程式碼的 unmanaged 程式碼權限。 根據公用成員的動作和輸入的處理，它可能會允許不受信任的呼叫端來存取一般限制為可信任的程式碼的功能。
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]依賴安全性檢查，以防止呼叫端目前的處理序位址空間直接存取。 因為這個屬性會略過正常的安全性，您的程式碼會造成嚴重的威脅，如果它可以用來讀取或寫入至處理序的記憶體。 請注意，風險不限於方法，刻意提供存取權來處理記憶體中;它也是出現在任何情況下，其中惡意程式碼能夠存取的任務，比方說，藉由提供令人驚訝、 格式不正確，或無效的輸入。
+ .NET Framework 依賴安全性檢查，以防止呼叫端目前的處理序位址空間直接存取。 因為這個屬性會略過正常的安全性，您的程式碼會造成嚴重的威脅，如果它可以用來讀取或寫入至處理序的記憶體。 請注意，風險不限於方法，刻意提供存取權來處理記憶體中;它也是出現在任何情況下，其中惡意程式碼能夠存取的任務，比方說，藉由提供令人驚訝、 格式不正確，或無效的輸入。
 
  預設的安全性原則不授與 unmanaged 程式碼的權限的組件除非它從本機電腦執行或的下列群組的成員：
 

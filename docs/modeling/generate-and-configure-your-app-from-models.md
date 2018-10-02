@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176807"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858494"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -22,7 +22,7 @@ ms.locfileid: "39176807"
  模型在呈現需求方面比程式碼更為直接。 直接從模型中衍生應用程式的行為，會比更新程式碼更能快速並可靠地回應變更的需求。 雖然需要進行一些初始工作才能設定衍生，但是如果您預期需求會變更，或打算進行產品的數個變化，則會傳回這項投資。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼
- 產生程式碼的最簡單方式是使用文字範本。 您可以在同一個產生的程式碼[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中保留模型的方案。 如需詳細資訊，請參閱:
+ 產生程式碼的最簡單方式是使用文字範本。 您可以在相同的 Visual Studio 方案中保留模型產生程式碼。 如需詳細資訊，請參閱:
 
 -   [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

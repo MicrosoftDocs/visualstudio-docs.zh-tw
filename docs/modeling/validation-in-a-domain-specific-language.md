@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381855"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860130"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>發生變更時執行驗證
  如果您要確保在模型無效時立即警告使用者，您可以定義執行驗證的存放區事件。 如需存放區事件的詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了驗證程式碼中，自訂程式碼將檔案新增至您**DslPackage**專案，其內容類似下列的範例。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 錯誤清單中顯示驗證錯誤。
+ 除了驗證程式碼中，自訂程式碼將檔案新增至您**DslPackage**專案，其內容類似下列的範例。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會顯示驗證錯誤，在 Visual Studio 錯誤清單。
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  在影響連結或項目的復原或取消復原作業之後，也會呼叫處理常式。
 
-##  <a name="custom"></a> 自訂驗證分類
+## <a name="custom"></a> 自訂驗證分類
  除了標準驗證分類 (例如功能表和開啟) 之外，您還可以定義自己的分類。 您可以從程式碼叫用這些分類。 使用者無法直接叫用這些分類。
 
  自訂分類的一般用法是，定義一個分類以測試模型是否滿足特定工具的前置條件。
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> 驗證的替代方法
+## <a name="alternatives"></a> 驗證的替代方法
  驗證條件約束會報告錯誤，但不會變更模型。 如果您想避免模型無效，可以使用其他方法。
 
  但是，不建議使用這些方法。 通常比較好的做法是，讓使用者決定如何修正無效的模型。

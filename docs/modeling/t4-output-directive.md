@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953532"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860195"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文字範本中，`output` 指示詞用來定義轉換檔案的副檔名和編碼。
+在 Visual Studio 文字範本中，`output`指示詞用來定義檔案的副檔名和編碼轉換檔案。
 
- 例如，如果您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案包含名為的範本檔**MyTemplate.tt**其中包含下列指示詞：
+ 例如，如果您的 Visual Studio 專案包含名為範本檔**MyTemplate.tt**其中包含下列指示詞：
 
  `<#@output extension=".cs"#>`
 
- 然後[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會產生名為**MyTemplate.cs**
+ Visual Studio 會產生名為的檔案，然後**MyTemplate.cs**
 
- 在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱[執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 ## <a name="using-the-output-directive"></a>使用輸出指示詞
 
@@ -49,9 +49,9 @@ ms.locfileid: "31953532"
 
  `<#@ output extension=".vb" #>`
 
- 可接受的值： 任何有效的檔案名稱副檔名。
+ 可接受的值： 任何有效的檔案名稱的副檔名。
 
-## <a name="encoding-attribute"></a>編碼屬性
+## <a name="encoding-attribute"></a>編碼方式屬性
  指定要在產生輸出檔案時使用的編碼。 例如：
 
  `<#@ output encoding="utf-8"#>`

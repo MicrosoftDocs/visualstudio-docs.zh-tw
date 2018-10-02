@@ -13,17 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946477"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858520"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
-在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。
+在 Visual Studio 中，您可以儲存模型圖表在唯讀模式的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。
 
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>將圖表或部分圖表複製到另一個應用程式
 
@@ -35,11 +35,11 @@ ms.locfileid: "31946477"
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>將模型圖表儲存為 XML 文件規格 (.xps) 檔案
 
-1.  在**檔案**功能表上，按一下 [**列印**開啟**列印**] 對話方塊。
+1.  在上**檔案**功能表上，按一下**列印**以開啟**列印** 對話方塊。
 
-2.  在**名稱**清單中，選取**Microsoft XPS Document Writer**，然後按一下 **確定**。
+2.  在 **名稱**清單中，選取**Microsoft XPS Document Writer**，然後按一下**確定**。
 
-3.  在**將檔案儲存為**對話方塊中的，以將檔案**XPS 文件 (\*.xps)** 檔案。
+3.  在 **將檔案儲存為**對話方塊中，將檔案儲存為**XPS 文件 (\*.xps)** 檔案。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4cbff52a5b5b5ef5fc46ef0b2f93926f097485
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5d04668ef21ea469e1dbb42cea6c8a8b5b7f18f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550884"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858396"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410：應該符合 COM 註冊方法
 
@@ -32,14 +32,14 @@ ms.locfileid: "45550884"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
  型別宣告以標記的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>屬性，但不宣告的方法，以標記<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>屬性，反之亦然。
 
 ## <a name="rule-description"></a>規則描述
- 若要建立的元件物件模型 (COM) 用戶端[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]型別，必須先註冊型別。 如果有的話，會以標記的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>期間註冊程序來執行使用者指定的程式碼會呼叫屬性。 對應的方法會標示為<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>屬性會取消註冊程序期間呼叫的註冊方法的作業。
+ 元件物件模型 (COM) 用戶端可以建立.NET Framework 型別，必須先註冊型別。 如果有的話，會以標記的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>期間註冊程序來執行使用者指定的程式碼會呼叫屬性。 對應的方法會標示為<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>屬性會取消註冊程序期間呼叫的註冊方法的作業。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入相對應的登錄或取消登錄方法。

@@ -11,22 +11,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 004a6b75bb66ebf3c1797abac9c1cc6f7faa6eb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948190"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858856"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio 版本支援的視覺效果&amp;Modeling SDK
-以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
+以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
 
 ## <a name="authoring-edition"></a>撰寫版本
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
 
@@ -44,8 +44,8 @@ ms.locfileid: "31948190"
 -   Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
->  若要讓 DSL 殼層產品上執行，您必須設定**支援 VS Edition**中延伸模組資訊清單的欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+>  若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

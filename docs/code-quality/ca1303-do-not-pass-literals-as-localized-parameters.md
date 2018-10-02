@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546755"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859402"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303：不要將常值當做已當地語系化的參數傳遞
 
@@ -34,11 +34,11 @@ ms.locfileid: "45546755"
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|類別|Microsoft.Globalization|
+|分類|Microsoft.Globalization|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 方法將字串常值做為參數的建構函式或方法中的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]類別庫及字串應該可以當地語系化。
+ 方法將字串常值做為參數的建構函式或.NET Framework 類別庫中的方法，該字串應該是可當地語系化。
 
  字串常值當做值傳遞至參數或屬性，且在一或多個下列情況下，則為 true 時，會引發此警告：
 

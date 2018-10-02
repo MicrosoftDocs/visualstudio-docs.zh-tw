@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512466"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860435"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。
 
-##  <a name="ToolboxDef"></a> 工具箱 中的定義方式
+## <a name="ToolboxDef"></a> 工具箱 中的定義方式
  在 [DSL 總管] 中，展開 [編輯器] 節點和下方節點。 一般而言，您會看到類似如下的階層架構：
 
 ```
@@ -77,11 +77,11 @@ Editor
 
      **連接工具：** 設定**連接產生器**工具的其中一個項目下拉式清單中所提供的屬性。 當您將連接線對應至網域關聯性時，會自動建立連接產生器。 如果您最近剛建立連接線，通常會選取相關聯的連接產生器。
 
-5.  若要測試 DSL，請按 F5 鍵或 CTRL+F5，然後在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體中開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
+5.  若要測試 DSL，請按下 F5 或 CTRL + f5 鍵，並在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
-     如果工具未出現，請停止實驗 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**建置**功能表上，按一下 **重建方案**。 然後再測試一次 DSL。
+     如果此工具不會出現，請停止實驗性 Visual Studio。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在 **建置**功能表上，按一下**重建方案**。 然後再測試一次 DSL。
 
-##  <a name="customizing"></a> 自訂項目工具
+## <a name="customizing"></a> 自訂項目工具
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：
 
 -   定義其他類別的 Element Merge 指示詞，讓這些類別接受這個類別的新執行個體，並讓這些類別在建立新項目時建立其他連結。 例如，您可以允許使用者將一個註解拖曳到另一個項目上，藉此建立兩者之間的參考連結。
@@ -92,7 +92,7 @@ Editor
 
 -   撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱 <<c0> [ 建立群組的項目從工具](#groups)。
 
-##  <a name="groups"></a> 從工具建立項目群組
+## <a name="groups"></a> 從工具建立項目群組
  每個項目工具包含該工具應建立的項目原型。 根據預設，每個項目工具會建立一個項目，但也可能透過一個工具來建立一組相關的物件。 若要執行這項操作，您可以使用內含相關項目的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 來初始化工具。
 
  下列範例取自內含電晶體類型的 DSL。 每個電晶體有三個具名端子。 電晶體的項目工具會儲存內含四個模型項目和三個關聯性連結的原型。 當使用者將工具拖曳至圖表上時，原型會具現化並連結至模型根。
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> 自訂連接工具
+## <a name="connections"></a> 自訂連接工具
  您通常會在建立新的連接線類別時，建立項目工具。 或者，您可以允許由兩個端點類型來決定關聯性類型，藉此多載一個工具。 例如，您可以定義一個連接工具，該工具可建立人與人的關聯性，以及人與鄉鎮的關聯性。
 
  連接工具會叫用連接產生器。 使用連接產生器可指定使用者在產生的設計工具中連結項目的方式。 連接產生器指定可連結的項目，以及在項目之間建立的連結類型。
