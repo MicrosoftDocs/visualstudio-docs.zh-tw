@@ -1,0 +1,46 @@
+---
+title: 將功能表和工具列命令最佳化 |Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- commands [Visual Studio], menus
+- commands [Visual Studio], toolbars
+- menus [Visual Studio SDK], commands
+- menu commands, implementing
+- toolbars [Visual Studio], commands
+ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
+caps.latest.revision: 9
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5e9ba18b203a7ccd7fa6384bf4f23cb888286035
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47497230"
+---
+# <a name="optimizing-menu-and-toolbar-commands"></a>將功能表和工具列命令最佳化
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+本主題的最新的版本可從[最佳化的功能表和工具列命令](https://docs.microsoft.com/visualstudio/extensibility/internals/optimizing-menu-and-toolbar-commands)。  
+  
+Vspackage 和其對應的命令，以新增[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可能會造成太過擁擠的 UI。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供方法來協助減少 UI 命令產生混淆。  
+  
+## <a name="in-this-section"></a>本節內容  
+ [提供可用的命令](../../extensibility/internals/making-commands-available.md)  
+ 提供一般指導方針降至最低的過度擁擠[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]UI，當您將加入 Vspackage。  
+  
+ [放置方針](../../extensibility/internals/command-placement-guidelines.md)  
+ 實作 VSPackage 的命令集的大小根據提供的特定指導方針。  
+  
+## <a name="related-sections"></a>相關章節  
+ [命令、功能表及工具列](../../extensibility/internals/commands-menus-and-toolbars.md)  
+ 說明如何建立包含功能表、工具列和命令下拉式方塊的 UI。
+
