@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542593"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243948"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>檢查先前使用 IntelliTrace 倒退，Visual Studio 中的應用程式狀態
 
@@ -105,7 +105,9 @@ IntelliTrace 事件模式讓您啟動偵錯工具步驟及中斷點上的歷程�
 ## <a name="known-issues"></a>已知問題  
 * 如果您的 Windows 10 Fall Creators Update (RS3)，比舊的 Windows 版本上使用 IntelliTrace 事件與快照集模式，而且應用程式的偵錯平台目標設定為 x86，IntelliTrace 不會快照集。
 
-    因應措施：
+    因應措施︰
+    * 如果您是在 Windows 10 年度更新 (RS1) 且 10.0.14393.2273，版本若低於[安裝 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
+    * 如果您是在 Windows 10 Creators Update (RS2) 上且 10.0.15063.1112，版本若低於[安裝 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
     * 安裝或升級至 Windows 10 Fall Creators Update (RS3)。 
     * 或者： 
         1. 從 Visual Studio 安裝程式安裝適用於桌上型電腦 (x86、x64) 的 VC++ 2015.3 v140 工具組。

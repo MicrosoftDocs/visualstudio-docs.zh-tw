@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811911"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244106"
 ---
 1. 如果您想要使用 Visual Studio 中的 Web Deploy 部署您的應用程式，請在伺服器上安裝最新版的 Web Deploy。
 
