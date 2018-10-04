@@ -225,109 +225,109 @@ items:
   - name: Visual Studio 範本結構描述參考
     href: visual-studio-template-schema-reference.md
     items:
-    - name: AppliesTo 項目 (Visual Studio 樣板)
+    - name: AppliesTo 元素 (Visual Studio 樣板)
       href: appliesto-element-visual-studio-templates.md
-    - name: Assembly 項目 (Visual Studio 範本)
+    - name: Assembly 元素 (Visual Studio 範本)
       href: assembly-element-visual-studio-templates.md
-    - name: 組件項目 (Visual Studio 範本精靈擴充)
+    - name: 組件元素 (Visual Studio 範本精靈擴充)
       href: assembly-element-visual-studio-template-wizard-extension.md
     - name: BuildProjectOnLoad (Visual Studio 樣板)
       href: buildprojectonload-visual-studio-templates.md
     - name: CreateInPlace (Visual Studio 範本)
       href: createinplace-visual-studio-templates.md
-    - name: CreateNewFolder 項目 (Visual Studio 範本)
+    - name: CreateNewFolder 元素 (Visual Studio 範本)
       href: createnewfolder-element-visual-studio-templates.md
-    - name: CustomDataSignature 項目 (Visual Studio 範本)
+    - name: CustomDataSignature 元素 (Visual Studio 範本)
       href: customdatasignature-element-visual-studio-templates.md
-    - name: CustomParameter 項目 (Visual Studio 範本)
+    - name: CustomParameter 元素 (Visual Studio 範本)
       href: customparameter-element-visual-studio-templates.md
-    - name: CustomParameters 項目 (Visual Studio 範本)
+    - name: CustomParameters 元素 (Visual Studio 範本)
       href: customparameters-element-visual-studio-templates.md
-    - name: DefaultName 項目 (Visual Studio 範本)
+    - name: DefaultName 元素 (Visual Studio 範本)
       href: defaultname-element-visual-studio-templates.md
-    - name: 描述項目 (Visual Studio 範本)
+    - name: 描述元素 (Visual Studio 範本)
       href: description-element-visual-studio-templates.md
-    - name: EnableEditOfLocationField 項目 (Visual Studio 範本)
+    - name: EnableEditOfLocationField 元素 (Visual Studio 範本)
       href: enableeditoflocationfield-element-visual-studio-templates.md
-    - name: EnableLocationBrowseButton 項目 (Visual Studio 範本)
+    - name: EnableLocationBrowseButton 元素 (Visual Studio 範本)
       href: enablelocationbrowsebutton-element-visual-studio-templates.md
-    - name: 資料夾項目 (Visual Studio 專案範本)
+    - name: 資料夾元素 (Visual Studio 專案範本)
       href: folder-element-visual-studio-project-templates.md
-    - name: FullClassName 項目 (Visual Studio 範本精靈擴充)
+    - name: FullClassName 元素 (Visual Studio 範本精靈擴充)
       href: fullclassname-element-visual-studio-template-wizard-extension.md
-    - name: 隱藏項目 (Visual Studio 範本)
+    - name: 隱藏元素 (Visual Studio 範本)
       href: hidden-element-visual-studio-templates.md
-    - name: 圖示項目 (Visual Studio 範本)
+    - name: 圖示元素 (Visual Studio 範本)
       href: icon-element-visual-studio-templates.md
-    - name: LocationField 項目 (Visual Studio 專案範本)
+    - name: LocationField 元素 (Visual Studio 專案範本)
       href: locationfield-element-visual-studio-project-templates.md
-    - name: LocationFieldMRUPrefix 項目 (Visual Studio 範本)
+    - name: LocationFieldMRUPrefix 元素 (Visual Studio 範本)
       href: locationfieldmruprefix-element-visual-studio-templates.md
-    - name: MaxFrameworkVersion 項目 (Visual Studio 範本)
+    - name: MaxFrameworkVersion 元素 (Visual Studio 範本)
       href: maxframeworkversion-element-visual-studio-templates.md
-    - name: 名稱項目 (Visual Studio 範本)
+    - name: 名稱元素 (Visual Studio 範本)
       href: name-element-visual-studio-templates.md
     - name: NumberOfParentCategoriesToRollUp (Visual Studio 範本)
       href: numberofparentcategoriestorollup-visual-studio-templates.md
-    - name: PreviewImage 項目 (Visual Studio 範本)
+    - name: PreviewImage 元素 (Visual Studio 範本)
       href: previewimage-element-visual-studio-templates.md
-    - name: 專案項目 (Visual Studio 範本)
+    - name: 專案元素 (Visual Studio 範本)
       href: project-element-visual-studio-templates.md
-    - name: ProjectCollection 項目 (Visual Studio 範本)
+    - name: ProjectCollection 元素 (Visual Studio 範本)
       href: projectcollection-element-visual-studio-templates.md
-    - name: ProjectItem 項目 (Visual Studio 專案範本)
+    - name: ProjectItem 元素 (Visual Studio 專案範本)
       href: projectitem-element-visual-studio-project-templates.md
-    - name: ProjectItem 項目 (Visual Studio 項目範本)
+    - name: ProjectItem 元素 (Visual Studio 項目範本)
       href: projectitem-element-visual-studio-item-templates.md
-    - name: ProjectSubType 項目 (Visual Studio 範本)
+    - name: ProjectSubType 元素 (Visual Studio 範本)
       href: projectsubtype-element-visual-studio-templates.md
-    - name: ProjectTemplateLink 項目 (Visual Studio 範本)
+    - name: ProjectTemplateLink 元素 (Visual Studio 範本)
       href: projecttemplatelink-element-visual-studio-templates.md
-    - name: ProjectType 項目 (Visual Studio 範本)
+    - name: ProjectType 元素 (Visual Studio 範本)
       href: projecttype-element-visual-studio-templates.md
-    - name: PromptForSaveOnCreation 項目 (Visual Studio 範本)
+    - name: PromptForSaveOnCreation 元素 (Visual Studio 範本)
       href: promptforsaveoncreation-element-visual-studio-templates.md
-    - name: ProvideDefaultName 項目 (Visual Studio 範本)
+    - name: ProvideDefaultName 元素 (Visual Studio 範本)
       href: providedefaultname-element-visual-studio-templates.md
-    - name: 參考項目 (Visual Studio 範本)
+    - name: 參考元素 (Visual Studio 範本)
       href: reference-element-visual-studio-templates.md
-    - name: 參考項目 (Visual Studio 範本)
+    - name: 參考元素 (Visual Studio 範本)
       href: references-element-visual-studio-templates.md
-    - name: RequiredFrameworkVersion 項目 (Visual Studio 範本)
+    - name: RequiredFrameworkVersion 元素 (Visual Studio 範本)
       href: requiredframeworkversion-element-visual-studio-templates.md
     - name: ShowByDefault (Visual Studio 範本)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder 元素 (Visual Studio 範本)
       href: solutionfolder-element-visual-studio-templates.md
-    - name: SortOrder 項目 (Visual Studio 範本)
+    - name: SortOrder 元素 (Visual Studio 範本)
       href: sortorder-element-visual-studio-templates.md
-    - name: SupportsCodeSeparation 項目 (Visual Studio 範本)
+    - name: SupportsCodeSeparation 元素 (Visual Studio 範本)
       href: supportscodeseparation-element-visual-studio-templates.md
-    - name: SupportsLanguageDropDown 項目 (Visual Studio 範本)
+    - name: SupportsLanguageDropDown 元素 (Visual Studio 範本)
       href: supportslanguagedropdown-element-visual-studio-templates.md
-    - name: SupportsMasterPage 項目 (Visual Studio 範本)
+    - name: SupportsMasterPage 元素 (Visual Studio 範本)
       href: supportsmasterpage-element-visual-studio-templates.md
-    - name: TemplateContent 項目 (Visual Studio 範本)
+    - name: TemplateContent 元素 (Visual Studio 範本)
       href: templatecontent-element-visual-studio-templates.md
-    - name: TemplateData 項目 (Visual Studio 範本)
+    - name: TemplateData 元素 (Visual Studio 範本)
       href: templatedata-element-visual-studio-templates.md
-    - name: TemplateGroupID 項目 (Visual Studio 範本)
+    - name: TemplateGroupID 元素 (Visual Studio 範本)
       href: templategroupid-element-visual-studio-templates.md
-    - name: TemplateID 項目 (Visual Studio 範本)
+    - name: TemplateID 元素 (Visual Studio 範本)
       href: templateid-element-visual-studio-templates.md
-    - name: VSTemplate 項目 (Visual Studio 範本)
+    - name: VSTemplate 元素 (Visual Studio 範本)
       href: vstemplate-element-visual-studio-templates.md
-    - name: WizardData 項目 (Visual Studio 範本)
+    - name: WizardData 元素 (Visual Studio 範本)
       href: wizarddata-element-visual-studio-templates.md
-    - name: WizardExtension 項目 (Visual Studio 範本)
+    - name: WizardExtension 元素 (Visual Studio 範本)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload 項目 (Visual Studio 樣板)
+    - name: BuildProjectOnload 元素 (Visual Studio 樣板)
       href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion 項目 (Visual Studio 樣板)
+    - name: RequiredPlatformVersion 元素 (Visual Studio 樣板)
       href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference 項目 (Visual Studio 樣板)
+    - name: SDKReference 元素 (Visual Studio 樣板)
       href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName 項目 (Visual Studio 樣板)
+    - name: TargetPlatformName 元素 (Visual Studio 樣板)
       href: targetplatformname-element-visual-studio-templates.md
   - name: Visual Studio 範本資訊清單結構描述參考
     href: visual-studio-template-manifest-schema-reference.md
@@ -377,6 +377,8 @@ items:
       href: deploying-custom-start-pages.md
   - name: 使用活動記錄
     href: how-to-use-the-activity-log.md
+- name: Visual Studio C++ 專案擴充性
+  href: visual-cpp-project-extensibility.md
 - name: Visual Studio 使用者體驗方針
   href: ux-guidelines/toc.yml
 - name: 處理 DPI 問題
@@ -489,82 +491,82 @@ items:
   - name: VSCT XML 結構描述參考
     href: vsct-xml-schema-reference.md
     items:
-    - name: CommandTable 項目
+    - name: CommandTable 元素
       href: commandtable-element.md
-    - name: Extern 項目
+    - name: Extern 元素
       href: extern-element.md
-    - name: Include 項目
+    - name: Include 元素
       href: include-element.md
-    - name: Define 項目
+    - name: Define 元素
       href: define-element.md
-    - name: Commands 項目
+    - name: Commands 元素
       href: commands-element.md
       items:
-      - name: Menus 項目
+      - name: Menus 元素
         href: menus-element.md
         items:
-        - name: Menu 項目
+        - name: Menu 元素
           href: menu-element.md
-      - name: Groups 項目
+      - name: Groups 元素
         href: groups-element.md
         items:
-        - name: Group 項目
+        - name: Group 元素
           href: group-element.md
-      - name: Buttons 項目
+      - name: Buttons 元素
         href: buttons-element.md
         items:
-        - name: Button 項目
+        - name: Button 元素
           href: button-element.md
-      - name: Bitmaps 項目
+      - name: Bitmaps 元素
         href: bitmaps-element.md
         items:
-        - name: Bitmap 項目
+        - name: Bitmap 元素
           href: bitmap-element.md
-      - name: Combos 項目
+      - name: Combos 元素
         href: combos-element.md
         items:
-        - name: Combo 項目
+        - name: Combo 元素
           href: combo-element.md
-    - name: CommandPlacements 項目
+    - name: CommandPlacements 元素
       href: commandplacements-element.md
       items:
-      - name: CommandPlacement 項目
+      - name: CommandPlacement 元素
         href: commandplacement-element.md
-    - name: VisibilityConstraints 項目
+    - name: VisibilityConstraints 元素
       href: visibilityconstraints-element.md
       items:
-      - name: VisibilityItem 項目
+      - name: VisibilityItem 元素
         href: visibilityitem-element.md
-    - name: KeyBindings 項目
+    - name: KeyBindings 元素
       href: keybindings-element.md
       items:
-      - name: KeyBinding 項目
+      - name: KeyBinding 元素
         href: keybinding-element.md
-    - name: UsedCommands 項目
+    - name: UsedCommands 元素
       href: usedcommands-element.md
       items:
-      - name: UsedCommand 項目
+      - name: UsedCommand 元素
         href: usedcommand-element.md
-    - name: Parent 項目
+    - name: Parent 元素
       href: parent-element.md
-    - name: Icon 項目
+    - name: Icon 元素
       href: icon-element.md
-    - name: Strings 項目
+    - name: Strings 元素
       href: strings-element.md
       items:
-      - name: ButtonText 項目
+      - name: ButtonText 元素
         href: buttontext-element.md
-      - name: CommandName 項目
+      - name: CommandName 元素
         href: commandname-element.md
-    - name: Command Flag 項目
+    - name: Command Flag 元素
       href: command-flag-element.md
-    - name: Symbols 項目
+    - name: Symbols 元素
       href: symbols-element.md
       items:
-      - name: GuidSymbol 項目
+      - name: GuidSymbol 元素
         href: guidsymbol-element.md
         items:
-        - name: IDSymbol 項目
+        - name: IDSymbol 元素
           href: idsymbol-element.md
     - name: VSCT XML 結構描述條件式屬性
       href: vsct-xml-schema-conditional-attributes.md
@@ -739,9 +741,9 @@ items:
     href: getting-started-with-roslyn-analyzers.md
   - name: 適用於 ImmutableArray 的 Roslyn 分析器和程式碼感知程式庫
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
-ms.openlocfilehash: 1adef789188d8baa10159abd423f172a1a72f1d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dab44719b4dc2a697ef5d20c4f00f7a315193eee
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634650"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550657"
