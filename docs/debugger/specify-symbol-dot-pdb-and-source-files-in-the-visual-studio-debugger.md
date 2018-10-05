@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612736"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788028"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 程式資料庫 (.pdb) 檔案，也稱為符號檔，對應您建立類別、 方法和您的專案中的已編譯可執行檔中所使用的識別項的其他程式碼的原始程式碼中的識別碼。 .pdb 檔案也會將原始程式碼中的陳述式對應至可執行檔中的執行指令。 偵錯工具會使用這項資訊來判斷兩個關鍵資訊：
@@ -175,35 +175,35 @@ ms.locfileid: "45612736"
 |**永遠自動載入**|將符號檔加入至偵錯工具自動載入的檔案清單。|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> 設定符號檔的編譯器選項  
- 當您從 VS IDE 建置專案並使用標準 [ **偵錯** ] 組建組態時，C++ 和 Managed 編譯器會為您的程式碼建立適當的符號檔。 您也可以在命令列上設定編譯器選項，以便建立符號檔。  
+當您從 VS IDE 建置專案並使用標準 [ **偵錯** ] 組建組態時，C++ 和 Managed 編譯器會為您的程式碼建立適當的符號檔。 您也可以在命令列上設定編譯器選項，以便建立符號檔。  
   
- **C++ 選項**  
+**C++ 選項**  
   
- 程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您使用 [/ZI 或 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 建置時，會建立 .pdb 檔 (適用於 C/C++)。  
+程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您使用 [/ZI 或 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 建置時，會建立 .pdb 檔 (適用於 C/C++)。  
   
- 在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]中， [/Fd](/cpp/build/reference/fd-program-database-file-name) 選項會為編譯器所建立的 .pdb 檔命名。 當您使用精靈在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中建立專案時，就會設定 **/Fd** 選項以建立名為 *project*.pdb 的 .pdb 檔案。  
+在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]中， [/Fd](/cpp/build/reference/fd-program-database-file-name) 選項會為編譯器所建立的 .pdb 檔命名。 當您使用精靈在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中建立專案時，就會設定 **/Fd** 選項以建立名為 *project*.pdb 的 .pdb 檔案。  
   
- 如果您在使用 Makefile 建置 C/C++ 應用程式時，指定了 **/ZI** 或 **/Zi** ，但沒有指定 **/Fd**，那麼您在最後會得到兩個 .pdb 檔：  
+如果您在使用 Makefile 建置 C/C++ 應用程式時，指定了 **/ZI** 或 **/Zi** ，但沒有指定 **/Fd**，那麼您在最後會得到兩個 .pdb 檔：  
   
--   VC*x*.pdb，其中 *x* 代表 Visual C++ 的版本，例如 VC11.pdb。 這個檔案會儲存各個 OBJ 檔的所有偵錯資訊，且其所在位置與專案 Makefile 的目錄位置相同。  
+* VC*x*.pdb，其中 *x* 代表 Visual C++ 的版本，例如 VC11.pdb。 這個檔案會儲存各個 OBJ 檔的所有偵錯資訊，且其所在位置與專案 Makefile 的目錄位置相同。  
   
--   project.pdb：這個檔案會儲存 .exe 檔的所有偵錯資訊。 若是 C/C++，偵錯資訊會位於 \debug 子目錄中。  
+* project.pdb：這個檔案會儲存 .exe 檔的所有偵錯資訊。 若是 C/C++，偵錯資訊會位於 \debug 子目錄中。  
   
- 每次建立 OBJ 檔時，C/C++ 編譯器會將偵錯資訊合併到 VC*x*.pdb。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如，函式定義)。 因此，即使每個原始程式檔包含了常見的標頭檔這類\<windows.h >，這些標頭檔的 typedef 也會只儲存一次，而不會出現在每個 OBJ 檔。  
+每次建立 OBJ 檔時，C/C++ 編譯器會將偵錯資訊合併到 VC*x*.pdb。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如，函式定義)。 因此，即使每個原始程式檔包含了常見的標頭檔這類\<windows.h >，這些標頭檔的 typedef 也會只儲存一次，而不會出現在每個 OBJ 檔。  
   
- 連結器會建立包含專案 EXE 檔之偵錯資訊的 project.pdb。 這個 project.pdb 包含了完整的偵錯資訊，包括函式原型，而不僅是在 VC*x*.pdb 找到的類型資訊。 這兩種 .pdb 檔都允許累加式更新。 連結器也會將路徑嵌入其建立的 .exe 或 .dll 檔中的 .pdb 檔。  
+連結器會建立包含專案 EXE 檔之偵錯資訊的 project.pdb。 這個 project.pdb 包含了完整的偵錯資訊，包括函式原型，而不僅是在 VC*x*.pdb 找到的類型資訊。 這兩種 .pdb 檔都允許累加式更新。 連結器也會將路徑嵌入其建立的 .exe 或 .dll 檔中的 .pdb 檔。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具會使用 EXE 或 DLL 檔中的 .pdb 檔路徑找出 project.pdb 檔。 如果偵錯工具在該位置找不到 .pdb 檔案，或是路徑無效 (例如，專案已移至另一部電腦)，偵錯工具就會搜尋包含 EXE 的路徑，也就是 [ **選項** ] 對話方塊 ([**偵錯** ] 資料夾，[ **符號** ] 節點) 中指定的符號路徑。 偵錯工具不會載入與進行偵錯之可執行檔不相符的 .pdb 檔。 如果偵錯工具找不到 .pdb 檔案，[ **尋找符號** ] 對話方塊即會出現，可讓您搜尋符號或將額外的位置加入搜尋路徑。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具會使用 EXE 或 DLL 檔中的 .pdb 檔路徑找出 project.pdb 檔。 如果偵錯工具在該位置找不到 .pdb 檔案，或是路徑無效 (例如，專案已移至另一部電腦)，偵錯工具就會搜尋包含 EXE 的路徑，也就是 [ **選項** ] 對話方塊 ([**偵錯** ] 資料夾，[ **符號** ] 節點) 中指定的符號路徑。 偵錯工具不會載入與進行偵錯之可執行檔不相符的 .pdb 檔。 如果偵錯工具找不到 .pdb 檔案，[ **尋找符號** ] 對話方塊即會出現，可讓您搜尋符號或將額外的位置加入搜尋路徑。  
   
- **.NET Framework 選項**  
+**.NET Framework 選項**  
   
- 程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您利用 **/debug**進行建置時，會建立一個 .pdb 檔。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用 **/debug:pdbonly** 進行建置則會產生 .pdb 檔案，但是不會產生 `DebuggableAttribute` 通知 JIT 編譯器有可用的偵錯資訊。 如果您要為發行組建 (Release Build) 產生 .pdb 檔案，但不希望是可偵錯的，請使用 **/debug:pdbonly** 。 如需詳細資訊，請參閱 [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
+程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您利用 **/debug**進行建置時，會建立一個 .pdb 檔。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用 **/debug:pdbonly** 進行建置則會產生 .pdb 檔案，但是不會產生 `DebuggableAttribute` 通知 JIT 編譯器有可用的偵錯資訊。 如果您要為發行組建 (Release Build) 產生 .pdb 檔案，但不希望是可偵錯的，請使用 **/debug:pdbonly** 。 如需詳細資訊，請參閱 [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具會使用 EXE 或 DLL 檔中的 .pdb 檔路徑找出 project.pdb 檔。 如果偵錯工具在該位置找不到 .pdb 檔，或是路徑無效，偵錯工具就會搜尋包含 EXE 的路徑，然後再搜尋 [ **選項** ] 對話方塊中指定的符號路徑。 此路徑通常是 [ **符號** ] 節點中的 [ **偵錯** ] 資料夾。 偵錯工具不會載入與進行偵錯之可執行檔不相符的 .pdb 檔。 如果偵錯工具找不到 .pdb 檔案，[ **尋找符號** ] 對話方塊即會出現，可讓您搜尋符號或將額外的位置加入搜尋路徑。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具會使用 EXE 或 DLL 檔中的 .pdb 檔路徑找出 project.pdb 檔。 如果偵錯工具在該位置找不到 .pdb 檔，或是路徑無效，偵錯工具就會搜尋包含 EXE 的路徑，然後再搜尋 [ **選項** ] 對話方塊中指定的符號路徑。 此路徑通常是 [ **符號** ] 節點中的 [ **偵錯** ] 資料夾。 偵錯工具不會載入與進行偵錯之可執行檔不相符的 .pdb 檔。 如果偵錯工具找不到 .pdb 檔案，[ **尋找符號** ] 對話方塊即會出現，可讓您搜尋符號或將額外的位置加入搜尋路徑。  
   
- **Web 應用程式**  
+**Web 應用程式**  
   
- 應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 ASP.NET 產生動態產生之檔案的符號，並使偵錯工具附加到 ASP.NET 應用程式。 Visual Studio 時自動設定這個在開始偵錯，如果您的 Web 專案範本建立您的專案。  
+應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 ASP.NET 產生動態產生之檔案的符號，並使偵錯工具附加到 ASP.NET 應用程式。 Visual Studio 時自動設定這個在開始偵錯，如果您的 Web 專案範本建立您的專案。  
   
 ##  <a name="BKMK_Find_source_files"></a> 尋找原始程式檔  
   
