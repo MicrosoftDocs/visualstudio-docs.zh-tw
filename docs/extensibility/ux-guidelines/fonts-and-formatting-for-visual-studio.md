@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511988"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863994"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   預設高度行距和填補，應該遵循粗體環境字型的文字。  
   
 ## <a name="see-also"></a>另請參閱  
- [MSDN： 字型 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN： 使用者介面文字 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN： 字型 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN： 使用者介面文字 (Windows)](/windows/desktop/uxguide/text-ui)

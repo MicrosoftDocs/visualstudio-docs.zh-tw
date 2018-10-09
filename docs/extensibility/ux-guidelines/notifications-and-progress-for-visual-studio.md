@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512235"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863944"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系統  
@@ -213,7 +213,7 @@ ms.locfileid: "39512235"
  微調按鈕 （也稱為 「 進度環 」） 是主要是使用與內容相關的 UI 不確定的進度指示器。 接近其相關的內容，例如文字分類標頭、 訊息、 或控制項中顯示微調按鈕。  
   
 ##### <a name="cursor-feedback"></a>資料指標的意見反應  
- 對於需要 2 到 7 秒的作業，提供資料指標的意見反應。 一般而言，這表示使用由作業系統提供將等待游標。 如需指引，請參閱 MSDN 文章[Cursors.Wait 屬性](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx)。  
+ 對於需要 2 到 7 秒的作業，提供資料指標的意見反應。 一般而言，這表示使用由作業系統提供將等待游標。 如需指引，請參閱 MSDN 文章[Cursors.Wait 屬性](/dotnet/api/system.windows.input.cursors.wait)。  
   
 #### <a name="progress-indicator-locations"></a>進度指標位置  
   

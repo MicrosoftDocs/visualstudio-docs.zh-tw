@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082122"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863884"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說： 發行的 Visual Studio 擴充功能，透過命令列
 
-本逐步解說示範如何將 Visual Studio 延伸模組發佈至 Visual Studio Marketplace 使用命令列。 當您新增您的延伸模組至 Marketplace 時，開發人員可以使用**擴充功能和更新**對話方塊，即可瀏覽是否那里新的和更新的延伸模組。
+本逐步解說示範如何將 Visual Studio 延伸模組發佈至 Visual Studio Marketplace 使用命令列。 當您新增您的延伸模組至 Marketplace 時，開發人員可以使用[**擴充功能和更新**](../ide/finding-and-using-visual-studio-extensions.md)對話方塊，即可瀏覽是否那里新的和更新的延伸模組。
 
 VsixPublisher.exe 是發佈至 Marketplace 的 Visual Studio 擴充功能的命令列工具。 它可以存取的 ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe。 用於此工具的命令是：**發佈**， **createPublisher**， **deletePublisher**， **deleteExtension**， **登入**，**登出**。
 
