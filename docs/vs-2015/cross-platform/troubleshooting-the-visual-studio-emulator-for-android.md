@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 469ce43d35d0fdf282a164596fa4cd48eb442534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8f6d371bea8927c272f97dccd1c8d033635616a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500553"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880056"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ ms.locfileid: "47500553"
   
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")  
   
-     若設定不正確，且您正使用 Windows 10，您可以嘗試 [使用 netcfg –d 命令重新安裝網路裝置](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (第 6 章節)。  
+     若設定不正確，且您正使用 Windows 10，您可以嘗試 [使用 netcfg –d 命令重新安裝網路裝置](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (第 6 章節)。  
   
 -   如果這些步驟都無法解決問題，請參閱 [Emulator fails to start (first use)](#NoStart) ，以取得可能干擾模擬器之協力廠商軟體的詳細資訊。  
   

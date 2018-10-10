@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588605"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879292"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "47588605"
 本主題描述如何透過「[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具」命令列工具，使用檢測分析方法來收集動態編譯之 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的詳細 .NET 記憶體配置和物件存留期資料。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用的程式碼剖析工具命令列工具，您必須將工具路徑加入至 [命令提示字元] 視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
  若要從 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式收集效能資料，您需修改目標應用程式的 web.config 檔案來啟用 [VSInstr.exe](../profiling/vsinstr.md) 工具，以檢測動態編譯的應用程式檔案。 您接著使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具來設定裝載 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的伺服器，並設定適當的環境變數來啟用 .NET 記憶體分析，然後重新啟動電腦。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "47588605"
     |選項|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序之帳戶的選用網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理序，就需要這個選項。 名稱會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄中。|  
-    |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在工作階段識別碼資料行中，在 Windows 工作管理員 的 處理序 索引標籤。 **/crosssession** 可縮寫成 **/CS**。|  
+    |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|啟動分析工具，但暫停資料收集。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 以繼續程式碼剖析。|  
     |[/counter](../profiling/counter.md) **:** `Config`|從 `Config` 中指定的處理器效能計數器收集資訊。 計數器資訊會新增至在每個分析事件收集的資料。|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  

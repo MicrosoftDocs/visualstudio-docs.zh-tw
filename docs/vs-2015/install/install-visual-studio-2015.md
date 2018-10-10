@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487193"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880121"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,11 +131,11 @@ ms.locfileid: "47487193"
 3.  選擇 [下一步] ，然後依照其餘指示進行。  
   
 ##  <a name="helpContent"></a> 安裝離線說明內容  
- 安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之後，您可以下載其他的說明內容，以便可以離線使用。  
+ 安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]之後，您可以下載其他的說明內容，以便可以離線使用。  
   
 #### <a name="to-install-or-uninstall-help-content"></a>安裝或解除安裝說明內容  
   
-1.  在 [ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ] 功能表列上，選擇**幫助**，**新增和移除說明內容**。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能表列上，依序選擇 [說明] 、[加入和移除說明內容] 。  
   
 2.  在 [Microsoft 說明檢視器]  的 [管理內容] 索引標籤上，選取適用於您說明內容的安裝來源。  
   
@@ -203,7 +203,7 @@ ms.locfileid: "47487193"
 |-----------|-----------------|  
 |[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)|描述如何安裝 Visual Studio，當您未連線到網際網路。
 |[並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供如何在同一部電腦上安裝多個 Visual Studio 版本的相關資訊。|  
-|[使用命令列參數來安裝 Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|列出當您從命令提示字元安裝 Visual Studio 時，您可以使用命令列參數。|  
+|[使用命令列參數來安裝 Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|列出當您從命令提示字元安裝 Visual Studio 時，您可以使用命令列參數。|  
 |[解除安裝 Visual Studio](../install/uninstall-visual-studio.md)|描述如何解除安裝 Visual Studio。|  
 |[Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)|提供 Visual Studio 部署選項的相關資訊。|  
 |[Visual Studio 影像庫](../designers/the-visual-studio-image-library.md)|提供如何安裝可在 Visual Studio 應用程式中使用之圖形的相關資訊。|  

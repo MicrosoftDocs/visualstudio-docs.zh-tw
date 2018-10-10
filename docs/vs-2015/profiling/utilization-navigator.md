@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 503d48a470a8865f0d6a56e5872c3f1af2e60193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484706"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879722"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "47484706"
   
  以下是您可以用使用率導覽來顯示時間範圍的操控方式：  
   
--   您可以左右拖曳 thumb 來移動瀏覽。 (鍵盤︰將焦點移至 thumb，然後按向左鍵或向右鍵。)  
+-   您可以左右拖曳 Thumb 來移動瀏覽。 (鍵盤︰將焦點移至 thumb，然後按向左鍵或向右鍵。)  
   
 -   您可以拖曳其中一個控點來變更間隔的範圍。 (鍵盤︰將焦點移至控點，然後按向右鍵或向左鍵。)  
   

@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491550"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880465"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
  執行模擬器時，如果您還不是 Hyper-V Administrators 群組的成員，則系統會提示您加入該群組 (對話方塊指的是 Windows Phone 模擬器)。 加入此群組需要有系統管理員權限。  
   
 > [!IMPORTANT]
->  加入此群組之後，請登出或重新開機，以讓變更生效。  
+> 加入此群組之後，請登出或重新開機，以讓變更生效。  
   
  ![加入 Hyper&#45;V 系統管理員安全性群組](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- 若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。 如需詳細資訊，請參閱 [將使用者帳戶加入群組](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7)。 (此 Windows 7 主題也適用於 Windows 8)。  
-  
+ 若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。
+ 
 ##  <a name="BootableVHD"></a> 不支援從可開機的 VHD 執行模擬器  
  如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 無法啟動模擬器時，您會看到下列訊息：應用程式部署失敗。 請重試。  
   

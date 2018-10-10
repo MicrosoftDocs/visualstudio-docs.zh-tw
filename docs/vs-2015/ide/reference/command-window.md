@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 26fe3a9b99e1e437fd1b9007587fac97e6ae7adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f3c89e0bb6539cb4fb37293fe556451042127b4
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488904"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880704"
 ---
 # <a name="command-window"></a>命令視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

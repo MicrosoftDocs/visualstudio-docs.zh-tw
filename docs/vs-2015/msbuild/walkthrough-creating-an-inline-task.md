@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d5931d0871b0a240b0702d865787171b9acf759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487818"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880990"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>逐步解說：建立內嵌工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   
 1.  在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。  
   
-2.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `InlineTasks`。 輸入方案的「位置」，例如 `D:\`。 確認 [為方案建立目錄] 已選取、[加入至原始檔控制] 已清除，且 [方案名稱] 為 `InlineTasks`。  
+2.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的「位置」，例如 `D:\`。 確認 [為方案建立目錄] 已選取、[加入至原始檔控制] 已清除，且 [方案名稱] 為 `InlineTasks`。  
   
      按一下 [確定] 以建立專案檔。  
   

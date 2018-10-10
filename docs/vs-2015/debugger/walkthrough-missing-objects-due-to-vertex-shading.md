@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491522"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879813"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題的最新的版本可從[逐步解說： 遺漏物件因為頂點陰影](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading)。  
   
-本逐步解說示範如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
+本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
   
  本逐步解說將說明下列工作：  
   
@@ -50,7 +50,7 @@ ms.locfileid: "47491522"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，載入圖形記錄，其中包含表現出遺漏物件的畫面格。 新的圖形記錄索引標籤會出現在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄，其中包含表現出遺漏物件的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中隨即顯示新的圖形記錄索引標籤。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
   
 2.  在 [畫面格清單] 中，選取示範未顯示物件的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情況下，圖形記錄索引標籤與下列類似：  
   
@@ -116,7 +116,7 @@ ms.locfileid: "47491522"
     > [!TIP]
     >  如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
   
- 在您找到填入常數緩衝區的位置，並發現其值來自於變數 `m_marbleConstantBufferData`之後，下一個步驟就是查明 `m_marbleConstantBufferData.projection` 成員設定為全部為零的位置。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
+ 您發現常數緩衝區是否填入其中的位置，而發現其值來自於變數之後`m_marbleConstantBufferData`下, 一步是找出從何處`m_marbleConstantBufferData.projection`成員設定為全部為零。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在應用程式原始程式碼中尋找設定 projection 成員的位置  
   

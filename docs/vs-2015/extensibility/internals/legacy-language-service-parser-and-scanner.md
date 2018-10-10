@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492099"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880231"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>比對括號剖析  
  這個範例示範用於比對使用者輸入了右大括號控制流程。 在此程序，用於顏色標示的掃描器也會判斷的權杖和權杖是否觸發比對括號作業類型。 如果找到觸發程序，則<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>呼叫方法來尋找相符的大括號。 最後，會反白顯示兩個大括號。  
   
- 即使大括號會在觸發程序的名稱，並剖析的原因，此程序並不限於使用實際的大括號。 支援的字元指定為相符配對的任何一對。 範例包括 （和）\<和 >，以及 [和]。  
+ 即使大括號會在觸發程序的名稱，並剖析的原因，此程序並不限於使用實際的大括號。 支援的字元指定為一組相符的任何一對。 範例包括 （和）\<和 >，以及 [和]。  
   
  假設語言服務支援對稱的括號。  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500410"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880886"
 ---
 # <a name="troubleshooting-service-references"></a>服務參考的疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ ms.locfileid: "47500410"
 ## <a name="error-debugging-service-code"></a>錯誤偵錯服務程式碼
  當您從用戶端程式碼逐步執行 WCF 服務的程式碼時，您可能會收到與符號遺失相關的錯誤。 服務方案的一部分，已被移動，或從解決方案移除時，可能發生這項目。
 
- 當您第一次新增屬於目前方案的 WCF 服務的參考時，之間服務專案和服務用戶端專案加入明確組建相依性。 這可確保用戶端一律會存取最新的服務二進位檔，這是特別重要案例，例如從用戶端程式碼逐步執行服務程式碼進行偵錯。
+ 當您第一次新增屬於目前方案的 WCF 服務的參考時，之間服務專案和服務用戶端專案加入明確組建相依性。 這樣可保證，用戶端一律會存取最新的服務二進位檔，這是特別重要案例，例如從用戶端程式碼逐步執行服務程式碼進行偵錯。
 
- 如果從方案移除服務專案，此明確組建相依性將會失效。 Visual Studio 無法再保證，服務就會重建專案，必要時。
+ 如果從方案移除服務專案，此明確組建相依性將會失效。 Visual Studio 無法再保證，服務就會重建專案為必要。
 
  若要修正這個錯誤，您必須以手動方式重新建置服務專案：
 

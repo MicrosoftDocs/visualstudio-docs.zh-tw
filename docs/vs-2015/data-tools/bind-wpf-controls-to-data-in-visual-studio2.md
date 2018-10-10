@@ -25,17 +25,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b6a7e624298ae3766f67a1bd49760b9b5e066bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486477"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880951"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
   
 您可以建立資料繫結[!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]使用的控制項**Zdroje dat**視窗。 首先，新增 資料來源，以便**Zdroje dat**視窗。 然後，將項目從**資料來源** 視窗來**WPF 設計工具**。  
   

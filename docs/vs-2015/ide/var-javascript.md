@@ -17,17 +17,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 717b97fa0778a513ace2fa485bc464cc7c379659
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d66c6a001d077fc68e99e479ac3352c8113f0c4e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498479"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880392"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
   
 指定變數的文件資訊。  
   

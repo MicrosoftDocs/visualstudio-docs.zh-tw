@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a22eb5467533b83116055f0fbd301f4619255711
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93bdbac30421d17c203d202f0ef01b05686903e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484716"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879723"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ TEST_METHOD(Method1)
 ###  <a name="BKMK_Search_and_filter_the_test_list"></a> 搜尋和篩選測試清單  
  您可以使用測試總管篩選條件，以在檢視和執行的專案中限制測試方法。  
   
- 當您在測試總管的搜尋方塊輸入字串並選擇 ENTER 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。  
+ 當您在 [測試總管] 的搜尋方塊鍵入字串並選擇 ENTER 時，會將測試清單篩選為只顯示包含該字串之完整名稱的測試。  
   
  若要依據不同準則篩選：  
   
