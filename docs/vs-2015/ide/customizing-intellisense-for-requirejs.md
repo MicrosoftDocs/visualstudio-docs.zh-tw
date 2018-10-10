@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbc4d9b85a3eb8e0fe5f3a890a76bae4695912e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484955"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880665"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>為 RequireJS 自訂 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
   
 從 Visual Studio 2013 Update 4 開始，提供對熱門 RequireJS JavaScript 檔案和模組化載入器的支援。 RequireJS 可讓您更輕鬆地定義程式碼模組之間的相依性，並只在需要時才以動態方式載入模組。 撰寫使用 RequireJS 的 JavaScript 程式碼時，會提供 IntelliSense 的模組建議，您可以從模組定義參考這些建議，或從程式碼內使用 `require()` 呼叫參考這些建議。  
   

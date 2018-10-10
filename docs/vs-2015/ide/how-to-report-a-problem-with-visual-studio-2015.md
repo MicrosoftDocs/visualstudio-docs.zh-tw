@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbbd84fb72c2d25c30b3012d3dfcb381dcc35050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e8a8c69b0536891737741125f0313f953b421e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485082"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880626"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 如何回報 Visual Studio 2017 中的問題](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)。
+如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 如何回報 Visual Studio 2017 中的問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)。
 
 如果您遇到 Visual Studio 2015 的問題，我們想要了解它，以便我們可以診斷並修正此問題。  透過使用 [回報問題]  工具，您可以收集問題的詳細資訊，並只需按幾下按鈕即可將其傳送給 Microsoft。  
   

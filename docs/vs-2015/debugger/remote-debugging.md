@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498005"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880717"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "47498005"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>若要下載並安裝遠端工具
   
-1.  裝置或伺服器的機器上您想要偵錯 （而不是執行 Visual Studio 的電腦），取得正確版本的遠端工具。
+1.  裝置或伺服器機器，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的遠端工具版本。
 
     |版本|連結|注意|
     |-|-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "47498005"
     > [!IMPORTANT]
     >  我們建議您安裝最新的遠端工具版本符合您的 Visual Studio 版本。 不建議使用不相符的版本。  
     >   
-    >  此外，您必須安裝具有相同的架構做為您想要將它安裝所在的作業系統的遠端工具。 換句話說，如果您想要的 32 位元應用程式上進行偵錯遠端電腦執行 64 位元作業系統，您必須在遠端電腦上安裝 64 位元版本的遠端工具。  
+    >  此外，您必須安裝具有相同的架構做為您想要將它安裝所在的作業系統的遠端工具。 換句話說，如果您想要偵錯遠端電腦執行 64 位元作業系統上的 32 位元應用程式，您就必須在遠端電腦上安裝 64 位元版本的遠端工具。  
   
 3.  當您完成下載可執行檔時，請遵循指示，在遠端電腦上安裝應用程式。 請參閱[安裝指示](#bkmk_setup)
 
@@ -286,7 +286,7 @@ ms.locfileid: "47498005"
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯  
  您應該能夠使用您在 Visual Studio 電腦產生的符號偵錯程式碼。 當您使用本機符號時，遠端偵錯工具的效能會更好。  如果您必須使用遠端符號，就必須告訴 [遠端偵錯監視] 在遠端電腦上尋找符號。  
   
- 從 Visual Studio 2013 Update 2 開始，您可以使用下列的 msvsmon 命令列參數來使用 managed 程式碼的遠端符號： `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ 從 Visual Studio 2013 Update 2 開始，您可以使用下列的 msvsmon 命令列參數，以便在 Managed 程式碼中使用遠端符號：`Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  如需詳細資訊，請參閱遠端偵錯的說明 (請按**F1**中的遠端偵錯工具 視窗中或按一下**協助 / 使用量**)。 您可以找到更多資訊[.NET 遠端符號載入變更 Visual Studio 2012 和 2013年中](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ ms.locfileid: "47498005"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

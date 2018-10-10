@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498409"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879196"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 < [Visual Studio 2017 系統管理員指南](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide)。
+如需 Visual Studio 2017 最新文件，請參閱 < [Visual Studio 2017 系統管理員指南](/visualstudio/install/visual-studio-administrator-guide)。
 
 只要每部目標電腦符合，您可以在網路上部署 Visual Studio 2015[最小安裝需求](http://www.microsoft.com/visualstudio/eng/products/2013-editions)。 您可以使用 /layout 參數執行安裝檔案，來建立網路共用 (述[建立離線安裝 Visual Studio 的](../install/create-an-offline-installation-of-visual-studio.md)頁面)，然後將它從本機電腦，複製到網路共用。 如果您使用 ISO，您就可以掛接 ISO 並共用它或將 ISO 複製到網路共用。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "47498409"
 ## <a name="controlling-what-is-installed"></a>控制安裝哪些元件  
  如果您想要控制您的使用者可以安裝的元件，有兩個選項：系統管理員檔案安裝和命令列選項。 如果您的目標是限制使用者可以從 Visual Studio 安裝程式經驗選擇的內容，請選取系統管理員檔案安裝。 如果您想要建立初始設定，但允許使用者選擇他們自己的 Visual Studio 安裝程式經驗，請選取命令列參數。  
   
- 如需有關系統管理員檔案經驗的詳細資訊，請參閱 <<c0> [ 如何： 建立和執行自動安裝的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)和[How to： 部署 Visual Studio時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  如需有關命令列控制項的詳細資訊，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
+ 如需系統管理員檔案經驗的詳細資訊，請參閱 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 和 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  如需有關命令列控制項的詳細資訊，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
   
 ## <a name="specifying-customer-feedback-settings"></a>指定客戶回函設定  
  根據預設，Visual Studio 的安裝已啟用客戶回函。 您可以設定 Visual Studio 來將下列登錄機碼的值變更為字串 "0"，在個別電腦上停用客戶回函。  

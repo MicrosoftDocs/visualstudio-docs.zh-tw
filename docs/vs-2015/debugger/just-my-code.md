@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500262"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879976"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ ms.locfileid: "47500262"
 |-|-|  
 |**MyCode**|您所擁有並控制的使用者程式碼。|  
 |**LibraryCode**|來自您正常使用且應用程式為正確運作所依賴的程式庫之非使用者程式碼 (例如 WinJS 或 jQuery)。|  
-|**UnrelatedCode**|可在應用程式執行的非使用者程式碼，不過您並不擁有該程式碼，而且您的應用程式之正確運作並不依賴它 (例如，顯示廣告的廣告SDK)。 在 Windows 市集專案中，也會將從 HTTP 或 HTTPS URI 載入至您應用程式的所有程式碼視為 UnrelatedCode。|  
+|**UnrelatedCode**|無法執行您的應用程式，但是您的非使用者程式碼並不擁有和您的應用程式並不依賴它運作正確 （例如，顯示廣告的廣告 SDK）。 在 Windows 市集專案中，也會將從 HTTP 或 HTTPS URI 載入至您應用程式的所有程式碼視為 UnrelatedCode。|  
   
  JavaScript 偵錯工具會自動將這些程式碼類型分類：  
   

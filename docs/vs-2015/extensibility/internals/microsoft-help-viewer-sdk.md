@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497788"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881146"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -360,7 +360,7 @@ some F# code
 |屬性 （HTML 表示）|描述|  
 |--------------------------------------|-----------------|  
 |\< 中繼 name="Microsoft.Help.Locale"內容 ="[語言代碼]"/ >|本主題的地區設定。 如果此標記用在主題中，必須一次使用，而且它必須插入上述任何其他的 Microsoft 說明標記。 如果未使用此標記，本主題的內文會使用斷詞工具所關聯的產品地區設定中，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 ISOC RFC 4646 符合此標記。 若要確保 Microsoft 技術能夠正常運作，使用此屬性而不是一般的 [語言] 屬性。|  
-|\< 中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ >|本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 這個主題會顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。|  
+|\< 中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ >|本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 主題是顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。|  
 |\< 標題 > [標題] \< /標題 >|指定本主題的標題。 此標記為必要項，並必須用於主題的一次。 如果本主題的本文不包含標題\<d i v > 區段中，這個標題會顯示主題中，並在目錄中。|  
 |\< 中繼名稱 ="Microsoft.Help.Keywords 」 內容 ="[aKeywordPhrase]"/ >|指定連結的說明檢視器的 [索引] 窗格中顯示的文字。 按一下連結時，即會顯示主題。您可以指定多個索引關鍵字的主題，或如果您不想要顯示在索引中此主題的連結，您可以省略此標記。 "K"關鍵字，從早期版本的說明可以轉換成這個屬性。|  
 |\< 中繼 name="Microsoft.Help.Id"內容 ="[TopicID]"/ >|設定本主題的識別碼。 此標記為必要項，並必須用於主題的一次。 識別碼必須是唯一的目錄中有相同的地區設定的主題。 在另一個主題中，您可以建立本主題的連結，使用此識別碼。|  

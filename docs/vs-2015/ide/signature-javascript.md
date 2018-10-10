@@ -17,17 +17,17 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b6172609b68e1800dd71b9367d93a52596e88cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d33728cfe6a05ef55f416aae3e4e4abed0ac5c5
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484732"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880767"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;簽章&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
   
 一組相關的項目函式或方法，以提供多載函式的文件的等級而定。  
   

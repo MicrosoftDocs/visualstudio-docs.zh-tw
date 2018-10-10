@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500455"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879768"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "47500455"
   
  為了讓 CRT 功能正常運作， `#include` 陳述式必須遵循此處的順序。  
   
- 包含 crtdbg.h maps`malloc`而[免費](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8)為其偵錯版本中，函式[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)和`free`，可追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。  
+ 加入 crtdbg.h 會將 `malloc` 和 [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函式對應至其偵錯版本 ( [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`)，這些偵錯版本的函式會追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。  
   
  `#define` 陳述式會將 CRT 堆積函式的基底版本對應到偵錯版本。 如果省略 `#define` 陳述式，記憶體流失傾印就不會提供那麼詳細的資料。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "47500455"
 _CrtDumpMemoryLeaks();  
 ```  
   
- 如果您的應用程式有多個結束，您不需要以手動方式以撥打[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)在每個結束點。 只要在應用程式開頭加上 `_CrtSetDbgFlag` 呼叫，就會自動在每個結束點呼叫 `_CrtDumpMemoryLeaks` 。 您必須設定兩個位元欄位，如下所示：  
+ 如果您的應用程式有多個結束點，您不需要在每個結束點手動加上 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 呼叫。 只要在應用程式開頭加上 `_CrtSetDbgFlag` 呼叫，就會自動在每個結束點呼叫 `_CrtDumpMemoryLeaks` 。 您必須設定兩個位元欄位，如下所示：  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>解讀記憶體流失報告  
- 如果您的應用程式不會定義`_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)會顯示記憶體流失報告看起來像這樣：  
+ 如果您的應用程式未定義 `_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 會顯示類似如下的記憶體流失報告：  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Object dump complete.
   
 2.  當應用程式在中斷點中斷時，[監看式]  視窗隨即出現。  
   
-3.  在 [監看式]  視窗的 [名稱] `_crtBreakAlloc`**欄中輸入** 。  
+3.  在 **監看式**視窗中，輸入`_crtBreakAlloc`中**名稱**資料行。  
   
      如果您使用 CRT 程式庫 (/MD 選項) 的多執行緒 DLL 版本，請包含內容運算子： `{,,ucrtbased.dll}_crtBreakAlloc`  
   

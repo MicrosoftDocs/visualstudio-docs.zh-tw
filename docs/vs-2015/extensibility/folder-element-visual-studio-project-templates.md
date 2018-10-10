@@ -17,12 +17,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9827186ad2e7310f2a7554c8d830518f9979411
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496977"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878871"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>資料夾項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "47496977"
 ## <a name="remarks"></a>備註  
  `Folder` 是選擇性的子系的`Project`。  
   
- 您可以使用任何下列方法，將專案項目組織成在範本中的資料夾：  
+ 您可以使用下列方法之一，將專案項目組織成在範本中的資料夾：  
   
 -   在範本.zip 檔案中包含的資料夾，並將其加入.vstemplate 檔案中的專案，藉由指定的路徑中的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如:   
   

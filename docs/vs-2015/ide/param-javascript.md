@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20a0f38abd5f1b7479129b8f30f4ae5620f2561f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9594fee9fe94387ddc0e4da07611344d40e5ee1e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489750"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880731"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
   
 在函式或方法指定為參數的文件資訊。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "47489750"
  必要。 參數名稱。  
   
  `type`  
- 選擇性。 參數的資料型別。 類型可以是下列其中一項：  
+ 選擇性。 參數的資料類型。 類型可以是下列其中一項：  
   
 -   ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
   

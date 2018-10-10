@@ -15,12 +15,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 628e4128877eb6872dd8d6af6fd0902b4e10bb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487674"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880691"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ End Property
   
             //These are the errors that occur during processing. The engine passes   
             //the errors to the host, and the host can decide how to display them,  
-            //for example the the host can display the errors in the UI  
+            //for example the host can display the errors in the UI  
             //or write them to a file.  
             //---------------------------------------------------------------------  
             private CompilerErrorCollection errorsValue;  
@@ -396,7 +396,7 @@ End Property
   
             'These are the errors that occur during processing. The engine passes   
             'the errors to the host, and the host can decide how to display them,  
-            'for example the the host can display the errors in the UI  
+            'for example the host can display the errors in the UI  
             'or write them to a file.  
             '---------------------------------------------------------------------  
             Private errorsValue As CompilerErrorCollection  
@@ -613,7 +613,7 @@ End Property
   
 4.  針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomDP 屬性**。 在 **應用程式**索引標籤中，於**根命名空間**，刪除預設值， `CustomDP`。  
   
-5.  在 **檔案**功能表上，按一下**全部儲存**。  
+5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
@@ -837,7 +837,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  在這個範本中，`Processor` 參數的值為 `CustomDirectiveProcessor`。 `Processor` 參數的值必須與處理器之登錄機碼的名稱相符。  
   
-5.  在 **檔案**功能表上，按一下**全部儲存**。  
+5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 #### <a name="to-test-the-directive-processor"></a>若要測試指示詞處理器  
   

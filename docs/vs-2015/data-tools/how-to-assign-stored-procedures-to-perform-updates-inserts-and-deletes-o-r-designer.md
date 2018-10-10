@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492367"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878950"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "47492367"
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 會自動針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>設定實體類別的更新行為  
- 利用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別中的資料變更來更新資料庫 (插入、更新和刪除) 的邏輯，預設是由 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 執行階段所提供。 執行階段會根據資料表的結構描述 (資料行和主索引鍵資訊)，建立預設的 Insert、Update 和 Delete 命令。 當不需要的預設行為時，您可以設定更新行為，指派特定的預存程序來執行所需的插入、 更新和刪除作業來操作您的資料表中的資料。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 最後，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。  
+ 利用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別中的資料變更來更新資料庫 (插入、更新和刪除) 的邏輯，預設是由 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 執行階段所提供。 執行階段會建立預設資料表 （資料行和主索引鍵資訊） 的結構描述為基礎的 Insert、 Update 和 Delete 命令。 當不需要的預設行為時，您可以設定更新行為，指派特定的預存程序來執行所需的插入、 更新和刪除作業來操作您的資料表中的資料。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 最後，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

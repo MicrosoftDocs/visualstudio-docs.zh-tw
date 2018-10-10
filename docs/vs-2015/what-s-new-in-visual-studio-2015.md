@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491037"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880366"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "47491037"
   
  本頁的重點在於說明自 Visual Studio 2013 RTM 以後新增的一些最重要功能，包括其中一個 Visual Studio 2013 更新第一次引進的功能。 如需 Visual Studio 2015 新功能的完整清單，請參閱 [版本資訊](https://www.visualstudio.com/news/vs2015-vs)。  
   
- 若要深入了解許多的改進功能與 Visual Studio ALM 的新功能，請參閱[Visual Studio 2015 中 Application Lifecycle Management 的最新消息](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)。  
+ 如需 Visual Studio ALM 中許多增強功能和新功能的詳細資訊，請參閱 [Visual Studio 2015 中 Application Lifecycle Management 的新功能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)。  
   
 ## <a name="a-new-setup-experience"></a>新的安裝經驗  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
@@ -43,7 +43,7 @@ ms.locfileid: "47491037"
 ## <a name="sign-in-across-multiple-accounts"></a>跨多個帳戶登入  
  Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [[加入已連接服務]](http://msdn.microsoft.com/office/aa905340.aspx) 對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](https://developer.salesforce.com/) 和 **Saleforce.com 開發人員** 帳戶。  
   
- 您可以前往或使用新的帳戶管理員，加入多個使用者帳戶在 Visual Studio 中使用。 如此一來，您便能夠在要連線到服務或存取線上資源時，隨時切換帳戶。 Visual Studio 會記住您加入的帳戶，因此您可以從任何 Visual Studio 或 Blend 執行個體使用這些帳戶。 Visual Studio 也將隨您的個人化帳戶漫遊帳戶清單 (不過我們不會漫遊您的重要認證)，因此您可以在其他裝置上快速開始使用其中一個帳戶。 您也可以隨時從 [帳戶設定] 對話方塊中移除這些帳戶。 若要開始，請參閱[使用多個使用者帳戶](./ide/work-with-multiple-user-accounts.md)。  
+ 您可以前往或使用新的帳戶管理員，加入多個使用者帳戶在 Visual Studio 中使用。 如此一來，您便能夠在要連線到服務或存取線上資源時，隨時切換帳戶。 Visual Studio 會記住您加入的帳戶，因此您可以從任何 Visual Studio 或 Blend 執行個體使用這些帳戶。 Visual Studio 也將隨您的個人化帳戶漫遊帳戶清單 (不過我們不會漫遊您的重要認證)，因此您可以在其他裝置上快速開始使用其中一個帳戶。 您也可以隨時從 [帳戶設定] 對話方塊中移除這些帳戶。 若要開始使用，請參閱 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。  
   
  ![帳戶管理員](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
@@ -53,7 +53,7 @@ ms.locfileid: "47491037"
  此外，對於傳統桌面應用程式的支援也比過去更好，無論在語言、程式庫及工具上，都有多項的改進。  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>搭配使用 C# 和適用於 Visual Studio 的 Xamarin 的跨平台行動應用程式  
- Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Visual Studio 2015 中已包括 Xamarin 的入門版本。 若要開始，請參閱[建置應用程式具有原生 UI，使用 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。  
+ Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Xamarin 的入門版本會包含在 Visual Studio 2015。 若要開始，請參閱[建置應用程式具有原生 UI，使用 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>搭配使用 HTML/JavaScript 撰寫的跨平台行動應用程式與 Apache Cordova  
  Visual Studio Tools for Apache Cordova 是 Microsoft 與開放原始碼 Apache Cordova 社群密切合作的結果。 這些工具允許使用 HTML、CSS 和 JavaScript (或 Typescript) 進行跨平台行動開發。 您只須使用一組程式碼，就能執行目標平台為 Android、iOS 和 Windows 的開發工作，同時使用 Visual Studio IDE 所提供的豐富功能，包括 JavaScript IntelliSense、DOM 總管、JavaScript 主控台、中斷點、監看功能、區域變數、Just My Code 等等。  透過 Visual Studio Tools for Apache Cordova，您的應用程式可以透過提供一般 JavaScript API 的外掛程式，存取所有平台上的原生裝置功能。 若要開始，請參閱[開始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。  
@@ -103,7 +103,7 @@ ms.locfileid: "47491037"
  ![裝置預覽功能表](./ide/media/vs2015-device-preview.png "vs2015_device_preview")  
   
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷  
- 自 Visual Studio 2013 之後，Visual Studio 圖形診斷已經加入許多新功能 (包括畫面格分析，Windows Phone 支援、著色器編輯和套用，以及命令列擷取工具)。 它也已加入對 DirectX12 應用程式進行偵錯的支援。 如需詳細資訊，請參閱 < [Visual Studio 圖形診斷](./debugger/visual-studio-graphics-diagnostics.md)。  
+ 自 Visual Studio 2013 之後，Visual Studio 圖形診斷已經加入許多新功能 (包括畫面格分析，Windows Phone 支援、著色器編輯和套用，以及命令列擷取工具)。 它也已加入對 DirectX12 應用程式進行偵錯的支援。 如需詳細資訊，請參閱 [Visual Studio 圖形診斷](./debugger/visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="connect-to-services"></a>連接至服務  
  Visual Studio 2015 讓您的應用程式比過去更容易連接至服務。  新的 [加入已連接服務精靈] 可設定您的專案、加入必要的驗證支援，並下載必要的 NuGet 套件，以協助您快速順利地開始編寫服務的程式碼。 [加入已連接服務精靈] 也與新的帳戶管理員整合，因此更容易使用多個使用者帳戶和訂用帳戶。 在 Visual Studio 2015 中，對下列服務提供現成的支援 (假設您擁有帳戶)：  
@@ -137,7 +137,7 @@ ms.locfileid: "47491037"
 -   **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。  
   
 ## <a name="debugging-and-diagnostics"></a>偵錯和診斷  
- 如需在偵錯最新消息，請參閱[What's New for Visual Studio 2015 中偵錯工具](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。  
+ 如需偵錯新功能的相關資訊，請參閱 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。  
   
  在診斷中的新功能相關資訊，請參閱[What's New in 程式碼剖析工具](./profiling/what-s-new-in-profiling-tools.md)。  
   
@@ -147,7 +147,7 @@ ms.locfileid: "47491037"
  效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。  
   
 ### <a name="error-list"></a>錯誤清單  
- 錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 <<c0> [ 錯誤清單視窗](./ide/reference/error-list-window.md)。  
+ 錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 [Error List Window](./ide/reference/error-list-window.md)。  
   
 ### <a name="gpu-usage-tool"></a>GPU 使用量工具  
  GPU 使用量工具可協助您收集和分析 DirectX 應用程式和遊戲中的 GPU 使用量資料，並對效能瓶頸源自於 CPU 或 GPU 進行疑難排解。 若要開始使用此工具，請參閱 [Visual C++ 小組部落格文章](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)。  
@@ -163,7 +163,7 @@ ms.locfileid: "47491037"
  Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵組合、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以輸入"sync"存取您的設定，在**快速啟動**，或瀏覽至**工具 > 選項 > 環境 > 同步處理設定**。  
   
 ### <a name="automatic-extension-updates"></a>自動擴充功能更新  
- 現在，如果您已安裝的 Visual Studio 擴充功能在 Visual Studio 組件庫上有新版本時，即可自動更新。 請參閱[尋找及使用 Visual Studio 擴充功能](./ide/finding-and-using-visual-studio-extensions.md)如需有關如何自訂擴充功能自動更新。  
+ 現在，如果您已安裝的 Visual Studio 擴充功能在 Visual Studio 組件庫上有新版本時，即可自動更新。 如需如何自訂擴充功能自動更新的詳細資訊，請參閱 [尋找及使用 Visual Studio 擴充功能](./ide/finding-and-using-visual-studio-extensions.md) 。  
   
 ### <a name="title-case-menus"></a>字首大寫的功能表  
  我們重視您的意見反應。 Visual Studio 功能表再一次預設為字首大寫。 不過，如果您偏好全部大寫樣式，您可以將它在啟動時設定，或在**工具 > 選項 > 一般**屬性頁：  
@@ -176,7 +176,7 @@ ms.locfileid: "47491037"
  ![觸控支援編輯器](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")  
   
 ### <a name="custom-layouts"></a>自訂配置  
- 您可以建立存放區並漫遊自訂視窗配置。 例如，您可以為桌上型電腦定義一種偏好配置，再為筆記型電腦或小型螢幕裝置定義另外一種偏好配置。 或者，您也可以針對 UI 專案偏好使用某個配置，並針對資料庫專案偏好使用另一個配置。 按鍵組合可讓您快速切換配置。 當您登入時，可在任何 Visual Studio 執行個體上使用這些配置。 如需詳細資訊，請參閱 <<c0> [ 建立自訂視窗版面配置](./misc/create-custom-window-layouts.md)。  
+ 您可以建立存放區並漫遊自訂視窗配置。 例如，您可以為桌上型電腦定義一種偏好配置，再為筆記型電腦或小型螢幕裝置定義另外一種偏好配置。 或者，您也可以針對 UI 專案偏好使用某個配置，並針對資料庫專案偏好使用另一個配置。 按鍵組合可讓您快速切換配置。 當您登入時，可在任何 Visual Studio 執行個體上使用這些配置。 如需詳細資訊，請參閱 [建立自訂視窗配置](./misc/create-custom-window-layouts.md)。  
   
  ![Visual Studio Custom Layout 功能表項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")  
   
@@ -200,7 +200,7 @@ ms.locfileid: "47491037"
   
 -   尋找影響您程式碼之其他分支的變更。  
   
- 請參閱[CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
+ 請參閱 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>設計和模型工具 (僅限 Enterprise 版本)  
  **Code map 和相依性圖形**  
@@ -233,7 +233,7 @@ ms.locfileid: "47491037"
   
 -   **從類別檢視和物件瀏覽器建立圖表**。 將檔案和組件從類別檢視和物件瀏覽器拖放到新的或現有的對應中。  
   
- 請參閱[對應方案之間的相依性](./modeling/map-dependencies-across-your-solutions.md)。  
+ 請參閱 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
   
  **在此版本中其他設計和模型變更：**  
   
@@ -244,7 +244,7 @@ ms.locfileid: "47491037"
 -   **架構總管**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 擴充性工具  
- 現在，您可以更輕鬆地安裝 Visual Studio 擴充性工具 (VS SDK 和範本)，因為這些工具已在安裝期間隨附為選用的元件。  擴充性工具可讓開發人員撰寫擴充功能，以自訂功能並將其加入 Visual Studio。 如需有關 Visual Studio 擴充性的詳細資訊，請參閱[Visual Studio SDK](./extensibility/visual-studio-sdk.md)  
+ 現在，您可以更輕鬆地安裝 Visual Studio 擴充性工具 (VS SDK 和範本)，因為這些工具已在安裝期間隨附為選用的元件。  擴充性工具可讓開發人員撰寫擴充功能，以自訂功能並將其加入 Visual Studio。 如需 Visual Studio 擴充性的詳細資訊，請參閱 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)。  
   
  如果您想要在自訂安裝中包含擴充性工具，可在 [功能 / 通用工具 / Visual Studio 擴充性工具] 下方找到。  您也可以開啟 [新增專案]  對話方塊，並選取 [Visual C# / 擴充性]  項目底下方的 [安裝 Visual Studio 擴充性工具] ，以在稍後安裝擴充性工具。  
   
@@ -280,4 +280,4 @@ ms.locfileid: "47491037"
 * [建立自訂視窗配置](./misc/create-custom-window-layouts.md)   
 * [執行燈泡提示的快速動作](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [Visual Studio 2015 中 Application Lifecycle Management 的最新消息](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Visual Studio 2017 的新功能](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Visual Studio 2017 的新功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487075"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881133"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>為 Windows 市集應用程式，在 Visual Studio 偵錯工作階段中控制市集應用程式的執行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ ms.locfileid: "47487075"
   
     -   [匿名函式] 會顯示 `module` 函式中執行暫止的程式行。 這是呼叫堆疊的頂端。  
   
-4.  **逐步執行函式以到達範例 5_d 函式。** 選擇  on the  (鍵盤： **F11**) 來執行呼叫路徑中的呼叫，直到您到達範例 5_d 函式的進入點。 請注意，當函式每一次呼叫函式時，呼叫函式的行號會被儲存，被呼叫的函式會放在堆疊的頂端。 呼叫函式的行號是其暫止執行的點。 黃色箭號會指向目前正在執行的函式。  
+4.  **逐步執行函式以到達範例 5_d 函式。** 選擇**逐步**上**偵錯**功能表 (鍵盤： **F11**) 來執行呼叫路徑中的呼叫，直到您到達範例 5_d 函式的進入點。 請注意，當函式每一次呼叫函式時，呼叫函式的行號會被儲存，被呼叫的函式會放在堆疊的頂端。 呼叫函式的行號是其暫止執行的點。 黃色箭號會指向目前正在執行的函式。  
   
      ![呼叫堆疊 視窗](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   
