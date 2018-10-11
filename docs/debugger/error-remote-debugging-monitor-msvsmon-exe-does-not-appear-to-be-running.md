@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0a235062b24ab940057a020ce3f9e20ceaebaa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279579"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074113"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。 必須安裝 Visual Studio 遠端偵錯監視，才能執行遠端偵錯。 如需下載和設定遠端偵錯工具的資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
@@ -38,13 +38,13 @@ ms.locfileid: "44279579"
  下列章節會列出一些之所以可能收到這則訊息的其他原因，以及修正問題的可行作法。  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>找不到遠端電腦  
- 請嘗試 [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) 遠端電腦。 如果它不回覆 ping，則遠端工具，將無法連接連接。 請嘗試重新啟動遠端電腦，另確定它的網路設定正確。  
+ 請嘗試 [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) 遠端電腦。 如果它不回覆 ping，則遠端工具，將無法連接連接。 請嘗試重新啟動遠端電腦，另確定它的網路設定正確。  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>遠端偵錯工具的版本不符 Visual Studio 的版本  
  您在本機執行的 Visual Studio 版本必須符合遠端電腦執行的遠端偵錯監視版本。 若要修正這個問題，請下載並安裝相符的遠端偵錯監視版本。 請移至 [下載中心](http://www.microsoft.com/en-us/download) ，尋找正確的遠端偵錯工具版本。  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本機和遠端電腦的驗證模式不同  
- 本機和遠端電腦必須使用相同的驗證模式。 若要修正此問題，請確定兩部電腦使用相同的驗證模式。 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](https://technet.microsoft.com/en-us/library/hh831472.aspx)。  
+ 本機和遠端電腦必須使用相同的驗證模式。 若要修正此問題，請確定兩部電腦使用相同的驗證模式。 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>遠端偵錯工具在不同的使用者帳戶下執行  
  您可以使用下列方式的其中之一解決這個問題：  

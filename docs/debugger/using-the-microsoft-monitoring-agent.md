@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb09bd5080e82a80659905eb3db1d9dbc78dd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280333"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073658"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
-您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與整合[Application Insights](/azure/application-insights/)並[System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
+您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/application-insights/) 和 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
   
 > [!NOTE]
 >  您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
- 如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱 [整合 Operations Manager 與開發程序](http://technet.microsoft.com/library/jj614609.aspx) 和 [使用 Microsoft Monitoring Agent 監視](http://technet.microsoft.com/en-us/library/dn465153.aspx)。  
+ 如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱 [整合 Operations Manager 與開發程序](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 和 [使用 Microsoft Monitoring Agent 監視](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))。  
   
  開始之前，請確認您的來源和符號和已建置及部署的程式碼相符。 這可協助您在開始偵錯和瀏覽 IntelliTrace 記錄檔中的診斷事件時，直接跳到應用程式程式碼。 [設定組建](../debugger/diagnose-problems-after-deployment.md) ，讓 Visual Studio 可以自動尋找並開啟和已部署的程式碼相符的來源。  
   
@@ -34,13 +34,13 @@ ms.locfileid: "44280333"
 3.  [步驟 3：儲存記錄的事件](#SaveEvents)  
   
 ##  <a name="SetUpMonitoring"></a> 步驟 1：設定 Microsoft Monitoring Agent  
- 在網頁伺服器上設定獨立代理程式，以執行本機監視，而不需要變更應用程式。 如果您使用 System Center 2012，請參閱 [安裝 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx)。  
+ 在網頁伺服器上設定獨立代理程式，以執行本機監視，而不需要變更應用程式。 如果您使用 System Center 2012，請參閱 [安裝 Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12))。  
   
 ###  <a name="SetUpStandaloneMMA"></a> 設定獨立代理程式  
   
 1.  請確認：  
   
-    -   網頁伺服器執行 [Internet Information Services (IIS) 的支援版本](http://technet.microsoft.com/en-us/library/dn465154.aspx)。  
+    -   網頁伺服器執行 [Internet Information Services (IIS) 的支援版本](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12))。  
   
     -   您的網頁伺服器具有 .NET Framework 3.5、4 或 4.5。  
   
