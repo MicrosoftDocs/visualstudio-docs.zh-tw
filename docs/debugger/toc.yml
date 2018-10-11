@@ -149,7 +149,7 @@ items:
           href: how-to-write-a-run-time-error-reporting-function.md
         - name: 不使用 C 執行階段程式庫進行執行階段檢查
           href: using-run-time-checks-without-the-c-run-time-library.md
-    - name: 在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
+    - name: 在偵錯工具中指定符號 (.pdb) 與來源檔案
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: 對使用者程式碼進行偵錯
       href: just-my-code.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cb173613401aead56eb9cd3730385a3db4de53c3
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 54fa8b8653abd4e69a115dc50d287f3e182fc53a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443567"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880736"
