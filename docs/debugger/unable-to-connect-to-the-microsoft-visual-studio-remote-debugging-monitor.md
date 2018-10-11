@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058707"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073931"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因為遠端偵錯監視未正確設定遠端電腦上或遠端電腦因為網路問題或防火牆存在而無法存取，可能會發生此訊息。
@@ -116,7 +116,7 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 如果您無法連線使用的遠端電腦名稱，請嘗試改為使用的 IP 位址。 您可以使用`ipconfig`取得 IPv4 位址在遠端電腦上的命令列。 如果您使用主機檔案，請確認已正確設定。
 
-如果失敗，請確認遠端電腦是透過網路存取 ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx)遠端電腦)。 不支援透過網際網路的遠端偵錯，除非在一些 Microsoft Azure 」 案例。
+如果失敗，請確認遠端電腦是透過網路存取 ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10))遠端電腦)。 不支援透過網際網路的遠端偵錯，除非在一些 Microsoft Azure 」 案例。
   
 ### <a name="server_incorrect"></a> 伺服器名稱不正確，或第三方軟體干擾遠端偵錯工具
 
@@ -153,7 +153,7 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本機和遠端電腦的驗證模式不同  
  本機和遠端電腦必須使用相同的驗證模式。 若要修正此問題，請確定兩部電腦使用相同的驗證模式。 您可以變更驗證模式。 在 遠端偵錯工具 視窗中，移至**工具 > 選項** 對話方塊。
   
- 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](https://technet.microsoft.com/en-us/library/hh831472.aspx)。   
+ 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>防毒軟體封鎖連線  
  Windows 防毒軟體允許遠端偵錯工具連接，但某些協力廠商的防毒軟體可能會封鎖它們。 請檢查防毒軟體文件以了解如何允許這些連線。  
@@ -168,4 +168,4 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
  若要取得更多的遠端偵錯工具的說明，請開啟 遠端偵錯工具的 說明 頁面 (**協助 > 使用量**遠端偵錯工具中)。
   
 ## <a name="see-also"></a>另請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

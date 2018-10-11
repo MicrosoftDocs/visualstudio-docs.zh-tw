@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671534"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074048"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何： 在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -157,7 +157,7 @@ ms.locfileid: "35671534"
   
     -   您要建立 Word 範本專案為基礎 *.dotx*檔案。 您必須將專案資料夾加入信任位置的清單，才能執行和偵錯專案。  
   
-     如需有關如何將文件新增至信任位置的詳細資訊，請參閱 Microsoft Office Online 網站[建立、 移除或變更檔案的信任位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+     如需有關如何將文件新增至信任位置的詳細資訊，請參閱 Microsoft Office Online 網站[建立、 移除或變更檔案的信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
