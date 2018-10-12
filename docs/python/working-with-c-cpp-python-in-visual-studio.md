@@ -1,7 +1,7 @@
 ---
 title: 使用 C++ 和 Python
-description: 使用 Visual Studio 建立適用於 Python 的 C++ 延伸模組的逐步解說，包括混合模式偵錯。
-ms.date: 06/27/2018
+description: 使用 Visual Studio、CPython 和 PyBind11 建立適用於 Python 的 C++ 延伸模組逐步解說，包括混合模式偵錯。
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626705"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995972"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -28,7 +28,12 @@ ms.locfileid: "42626705"
 
 本文會逐步建置適用於 CPython 的 C++ 延伸模組，計算雙曲線正切函數，並從 Python 程式碼呼叫它。 常式先以 Python 實作，以示範用 C++ 實作相同常式時的相對效能改善。
 
-這裡採用的方法是針對標準 CPython 延伸模組，如 [Python 文件](https://docs.python.org/3/c-api/)中所述。 此方法與其他方法之間的比較，描述於本文結尾的[替代方法](#alternative-approaches)。
+本文也會示範兩種方式，讓 Python 可使用 C++：
+
+- 標準 CPython 延伸模組，如 [Python 文件](https://docs.python.org/3/c-api/)中所述
+- [PyBind11](https://github.com/pybind/pybind11)，針對 C++ 11 建議使用，因為其單純性。
+
+這些方法與其他方法之間的比較，描述於本文結尾的[替代方法](#alternative-approaches)中。
 
 您可於 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub) 找到此逐步解說的完整範例。
 
@@ -72,15 +77,6 @@ ms.locfileid: "42626705"
         tanh_x = sinh(x) / cosh(x)
         return tanh_x
 
-    def sequence_tanh(data):
-        '''Applies the hyperbolic tangent function to map all values in
-        the sequence to a value between -1.0 and 1.0.
-        '''
-        result = []
-        for x in data:
-            result.append(tanh(x))
-        return result
-
     def test(fn, name):
         start = perf_counter()
         result = fn(DATA)
@@ -93,18 +89,21 @@ ms.locfileid: "42626705"
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
 
-        test(sequence_tanh, 'sequence_tanh')
-
-        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
+        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. 使用 [偵錯] > [啟動但不偵錯] (**Ctrl**+**F5**) 執行程式來查看結果。 您可以調整 `COUNT` 變數，以變更基準測試的執行花費時間。 基於本逐步解說的目的，請將計數設定為讓每個基準測試只花約兩秒的時間。
+1. 使用 [偵錯] > [啟動但不偵錯] (**Ctrl**+**F5**) 執行程式來查看結果。 您可以調整 `COUNT` 變數，以變更基準測試的執行花費時間。 基於本逐步解說的目的，請將計數設定為讓基準測試只花約兩秒的時間。
 
-## <a name="create-the-core-c-project"></a>建立核心 C++ 專案
+> [!TIP]
+> 執行基準測試時，請一律使用 [偵錯] > [啟動但不偵錯]，以避免在 Visual Studio 偵錯工具中執行程式碼時所造成的負擔。
+
+## <a name="create-the-core-c-projects"></a>建立核心 C++ 專案
+
+請遵循本節中的指示，建立名為 "superfastcode" 和 "superfastcode2" 的兩個相同 C++ 專案。 稍後您將在每個專案中使用不同的方法，將 C++ 程式碼向 Python 公開。
 
 1. 以滑鼠右鍵按一下 [方案總管] 中的方案，然後選取 [加入] > [新增專案]。 Visual Studio 解決方案可同時包含 Python 與 C++ 專案 (這是使用 Visual Studio for Python 的好處之一)。
 
-1. 搜尋 "C++"、選取 [空專案]、指定名稱 (本文使用 "superfastcode")，然後選取 [確定]。
+1. 搜尋 "C++"、選取 [空專案]、指定名稱 "superfastcode" (針對第二個專案指定 "superfastcode2")，然後選取 [確定]。
 
     > [!Tip]
     > 在 Visual Studio 2017 中安裝 **Python 原生開發工具**後，您便可從 [Python 延伸模組] 範本著手，其已包含此處所述的大多數功能。 不過，在此逐步解說中，從空白專案開始將逐步示範如何建置延伸模組。 只要您了解了程序，此範本就能在您撰寫自己的延伸模組時為您節省時間。
@@ -163,15 +162,21 @@ ms.locfileid: "42626705"
 
 1. 重新建置 C++ 專案，確認您的程式碼正確。
 
-## <a name="convert-the-c-project-to-an-extension-for-python"></a>將 C++ 專案轉換成適用於 Python 的延伸模組
+1. 如果您尚未這麼做，請重複上述步驟，以建立名為 "superfastcode2" 且具有相同內容的第二個專案。
+
+## <a name="convert-the-c-projects-to-extensions-for-python"></a>將 C++ 專案轉換成適用於 Python 的延伸模組
 
 若要讓 C++ DLL 成為適用於 Python 的延伸模組，您要先修改匯出的方法以和 Python 類型互動。 然後，新增匯出模組的函式，以及模組方法的定義。
+
+下列各節說明如何使用 CPython 延伸模組和 PyBind11 執行這些步驟。
+
+### <a name="cpython-extensions"></a>CPython 延伸模組
 
 如需在本節中為 Python 3.x 所顯示之項目的詳細資訊，請參閱 [Python/C API 參考手冊](https://docs.python.org/3/c-api/index.html)，特別是 python.org 上的[模組物件](https://docs.python.org/3/c-api/module.html) (請記得在右上角的下拉式控制項選取您的 Python 版本，以檢視正確的文件)。
 
 如果您正在使用 Python 2.7，請改為參閱 python.org 的[使用 C 或 C++ 延伸 Python 2.7](https://docs.python.org/2.7/extending/extending.html) 和[將延伸模組移植到 Python 3](https://docs.python.org/2.7/howto/cporting.html)。
 
-1. 在 C++ 檔案中，在頂端包含 *Python.h*：
+1. 在 *module.cpp* 頂端，包含 *Python.h*：
 
     ```cpp
     #include <Python.h>
@@ -220,20 +225,59 @@ ms.locfileid: "42626705"
     }
     ```
 
-1. 將目標組態設定為 [發行]，並重新建置 C++ 專案以驗證您的程式碼。 如果發生錯誤，請檢查下列情況：
-    - 找不到 *Python.h* (「E1696：無法開啟來源檔案 "Python.h"」/或「C1083：無法開啟 include 檔案："Python.h"：沒有這種檔案或目錄」)，請驗證專案屬性中 [C/C++] > [一般] > [其他 Include 目錄] 的路徑指向您 Python 安裝的 *include* 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-project)下的步驟 6。
-    - 找不到 Python 程式庫：確認專案屬性中 [連結器] > [一般] > [其他程式庫目錄] 的路徑指向您的 Python 安裝 *libs* 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-project)下的步驟 6。
-    - 與目標架構相關的連結器錯誤：變更 C++ 目標的專案結構使符合您的 Python 安裝結構。 例如，如果您的 C++ 專案以 x64 為目標，但是您的 Python 安裝為 x86，請將 C++ 專案變更為以 x86 為目標。
+1. 將目標組態設定為 [發行]，並重新建置 C++ 專案以驗證您的程式碼。 如果您遇到錯誤，請參閱下列[疑難排解](#troubleshooting)一節。
+
+### <a name="pybind11"></a>PyBind11
+
+如果您已完成上一節中的步驟，您肯定注意到您使用了許多樣板程式碼，來建立 C++ 程式碼的必要模組結構。 PyBind11 透過 C++ 標頭檔的巨集簡化此程序，該巨集能以少上許多的程式碼達到相同的結果。 如需本節中所示內容的背景，請參閱 [PyBind11 基本知識](https://github.com/pybind/pybind11/blob/master/docs/basics.rst) (github.com)。
+
+1. 使用 pip 安裝 PyBind11：`pip install pybind11` 或 `py -m pip install pybind11`。
+
+1. 在 *module.cpp* 頂端，包含 *pybind11.h*：
+
+    ```cpp
+    #include <pybind11/pybind11.h>
+    ```
+
+1. 在 *module.cpp* 底部，使用 `PYBIND11_MODULE` 巨集來定義 C++ 函式的進入點：
+
+    ```cpp
+    namespace py = pybind11;
+
+    PYBIND11_MODULE(superfastcode2, m) {
+        m.def("fast_tanh2", &tanh_impl, R"pbdoc(
+            Compute a hyperbolic tangent of a single argument expressed in radians.
+        )pbdoc");
+
+    #ifdef VERSION_INFO
+        m.attr("__version__") = VERSION_INFO;
+    #else
+        m.attr("__version__") = "dev";
+    #endif
+    }
+    ```
+
+1. 將目標組態設定為 [發行]，並建置 C++ 專案以驗證您的程式碼。 如果您遇到錯誤，請參閱下一節的疑難排解內容。
+
+### <a name="troubleshooting"></a>疑難排解
+
+C++ 模組可能因為下列原因而無法編譯：
+
+- 找不到 *Python.h* (「E1696：無法開啟來源檔案 "Python.h"」/或「C1083：無法開啟 include 檔案："Python.h"：沒有這種檔案或目錄」)，請驗證專案屬性中 [C/C++] > [一般] > [其他 Include 目錄] 的路徑指向您 Python 安裝的 *include* 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-project)下的步驟 6。
+
+- 找不到 Python 程式庫：確認專案屬性中 [連結器] > [一般] > [其他程式庫目錄] 的路徑指向您的 Python 安裝 *libs* 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-project)下的步驟 6。
+
+- 與目標架構相關的連結器錯誤：變更 C++ 目標的專案結構使符合您的 Python 安裝結構。 例如，如果您的 C++ 專案以 x64 為目標，但是您的 Python 安裝為 x86，請將 C++ 專案變更為以 x86 為目標。
 
 ## <a name="test-the-code-and-compare-the-results"></a>測試程式碼，並比較結果
 
-現在您已將 DLL 結構化成為 Python 延伸模組，您可以從 Python 專案參考它、匯入模組，並使用其方法。
+現在您已將 DLL 結構化成為 Python 延伸模組，您可以從 Python 專案參考它們、匯入模組，並使用其方法。
 
 ### <a name="make-the-dll-available-to-python"></a>讓 Python 使用 DLL
 
 有兩種方式，可讓 Python 使用 DLL。
 
-如果 Python 專案和 C++ 專案都在相同的解決方案中，第一種方法就會起作用。 請移至 [方案總管]，以滑鼠右鍵按一下 Python 專案的 [參考] 節點，然後選取 [加入參考]。 在出現的對話方塊中，依序選取 [專案] 索引標籤、[superfastcode] 專案 (或您使用的任何名稱) 和 [確定]。
+如果 Python 專案和 C++ 專案都在相同的解決方案中，第一種方法就會起作用。 請移至 [方案總管]，以滑鼠右鍵按一下 Python 專案的 [參考] 節點，然後選取 [加入參考]。 在出現的對話方塊中，依序選取 [專案] 索引標籤、[superfastcode] 和 [superfastcode2] 專案，然後按一下 [確定]。
 
 ![將參考新增至 superfastcode 專案](media/cpp-add-reference.png)
 
@@ -241,7 +285,9 @@ ms.locfileid: "42626705"
 
 1. 如果您使用 Visual Studio 2017，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 此步驟之所以必要，是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 來建置，因此在透過此處所述方法建置延伸模組時，Python 預期要能使用這些工具 。 (請注意，您可能需要安裝 32 位元版本的 Python 並將 DLL 的目標設成 Win32 而不是 x64。)
 
-1. 以滑鼠右鍵按一下您的 C++ 專案，建立名為 *setup.py* 的檔案，然後選取 [新增] > [新增項目]。 接著，選取 [C++ 檔案 (.cpp)]，將檔案命名為 `setup.py`，並選取 [確定] (使用 *.py* 副檔名命名檔案時，即可讓 Visual Studio 將其辨識為 Python，即使使用 C++ 檔案範本亦同)。 當檔案出現在編輯器中時，將下列程式碼貼入其中︰
+1. 以滑鼠右鍵按一下 C++ 專案、建立名為 *setup.py* 的檔案，然後選取 [新增] > [新增項目]。 接著，選取 [C++ 檔案 (.cpp)]，將檔案命名為 `setup.py`，並選取 [確定] (使用 *.py* 副檔名命名檔案時，即可讓 Visual Studio 將其辨識為 Python，即使使用 C++ 檔案範本亦同)。 當檔案出現在編輯器中時，以適合延伸模組方法的方式，將下列程式碼貼入檔案中︰
+
+    **CPython 延伸模組 (superfastcode 專案)：**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -256,41 +302,78 @@ ms.locfileid: "42626705"
 
     如需此指令碼的文件，請參閱[建置 C 和 C++ 延伸模組](https://docs.python.org/3/extending/building.html) (python.org)。
 
+    **PyBind11 (superfastcode2 專案)：**
+
+    ```python
+    import os, sys
+
+    from distutils.core import setup, Extension
+    from distutils import sysconfig
+
+    cpp_args = ['-std=c++11', '-stdlib=libc++', '-mmacosx-version-min=10.7']
+
+    sfc_module = Extension(
+        'superfastcode2', sources = ['module.cpp'],
+        include_dirs=['pybind11/include'],
+        language='c++',
+        extra_compile_args = cpp_args,
+        )
+
+    setup(
+        name = 'superfastcode2',
+        version = '1.0',    
+        description = 'Python package with superfastcode2 C++ extension (PyBind11)',
+        ext_modules = [sfc_module],
+    )
+    ```
+
 1. 從命令列使用 *setup.py* 程式碼時，其會指示 Python 使用 Visual Studio 2015 C++ 工具組建置延伸模組。 開啟提升權限的命令提示字元、巡覽至包含 C++ 專案的資料夾 (即包含 *setup.py* 的資料夾)，然後輸入下列命令︰
 
     ```command
     pip install .
     ```
 
+    或：
+
+    ```command
+    py -m pip install .
+    ```
+
 ### <a name="call-the-dll-from-python"></a>從 Python 呼叫 DLL
 
-完成上述其中一個方法之後，您即可從 Python 程式碼呼叫 `fast_tanh` 函式，並將它的效能與 Python 實作進行比較：
+您已如上一節中所述，讓 DLL 可供 Python 使用之後，您現在可以從 Python 程式碼呼叫 `superfastcode.fast_tanh` 和 `superfastcode2.fast_tanh2` 函式，並比較其效能與 Python 實作：
 
-1. 在您的 *.py* 檔案中新增下列幾行，呼叫從 DLL 匯出的 `fast_tanh` 方法，並顯示其輸出。
+1. 在您的 *.py* 檔案中新增下列幾行，呼叫從 DLL 匯出的方法，並顯示其輸出：
 
     ```python
     from superfastcode import fast_tanh
-    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
+    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d] (CPython C++ extension)')
+
+    from superfastcode2 import fast_tanh2
+    test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. 執行 Python 程式 ([偵錯] > > [啟動但不偵錯] 或 **Ctrl**+**F5**)，觀察 C++ 常式執行的速度比 Python 實作快 5 到 20 倍。 一般輸出會以下列形式呈現：
+1. 執行 Python 程式 ([偵錯] > [啟動但不偵錯] 或 **Ctrl**+**F5**)，觀察 C++ 常式執行的速度比 Python 實作快大約五到二十倍。 一般輸出會以下列形式呈現：
 
     ```output
     Running benchmarks with COUNT = 500000
-    sequence_tanh took 1.542 seconds
+    [tanh(x) for x in d] (Python implementation) took 0.758 seconds
 
-    [tanh(x) for x in d] took 1.087 seconds
+    [fast_tanh(x) for x in d] (CPython C++ extension) took 0.076 seconds
 
-    [fast_tanh(x) for x in d] took 0.158 seconds
+    [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
     如果已停用 [啟動但不偵錯] 命令，請以滑鼠右鍵按一下 [方案總管] 中的 Python 專案，然後選取 [設定為啟始專案]。
 
 1. 您可以嘗試增加 `COUNT` 變數，讓差異更加明顯。 此外，C++ 模組的**偵錯**組建執行速度比**發行**組建慢，因為**偵錯**組建的最佳化程度比較低，且包含各種錯誤檢查。 您可以自行切換這些組態以進行比較。
 
+> [!NOTE]
+> 在輸出中，您可以看到 PyBind11 延伸模組速度不如 CPython 延伸模組，雖然仍明顯比直接的 Python 實作快。 差異是由於 PyBind11 為了大幅簡化 C++ 介面所造成每次呼叫時的少量額外負荷。 這個每次呼叫時的差異實際上很微不足道：因為測試程式碼會呼叫延伸模組函式 500,000 次，所以您在這裡看到的結果大幅增強了該額外負荷！ C++ 函式通常會比此處使用的一般 `fast_tanh[2]` 方法多做許多工作，在此情況下，額外負荷並不重要。 不過，如果您實作可能每秒呼叫數千次的方法，使用 CPython 方法可能導致效能比 PyBind11 更佳。
+
 ## <a name="debug-the-c-code"></a>偵錯 C++ 程式碼
 
-Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。
+Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。 本節將逐步引導完成使用 **superfastcode** 專案的程序；其步驟與 **superfastcode2** 專案的步驟相同。
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下 Python 專案、依序選取 [屬性]、[偵錯] 索引標籤，然後選取 [偵錯] > [啟用機器碼偵錯] 選項。
 
@@ -313,12 +396,12 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。
 
 ## <a name="alternative-approaches"></a>替代方法
 
-有各種方式可以建立 Python 延伸模組，如下表所述。 CPython 的第一個項目已經在本文中討論過。
+有各種方式可以建立 Python 延伸模組，如下表所述。 CPython 及 PyBind11 的前兩個項目已在本文中討論。
 
 | 方法 | 年分 | 代表使用者 | 正面意見 | 反面意見 |
 | --- | --- | --- | --- | --- |
 | 適用於 CPython 的 C/C++ 延伸模組 | 1991 | 標準程式庫 | [大量文件與教學課程](https://docs.python.org/3/c-api/)。 完全控制。 | 編譯、可攜性、參考管理。 高度 C 知識。 |
-| [pybind11](https://github.com/pybind/pybind11) (建議用於 C++) | 2015 |  | 輕量型、僅限標頭的程式庫，適合建立現有 C++ 程式碼的 Python 繫結。 低相依性。 PyPy 相容性。 | 較新穎、較不成熟。 大量使用 C++11 功能。 支援編譯器的簡短清單 (包含 Visual Studio)。 |
+| [PyBind11](https://github.com/pybind/pybind11) (建議用於 C++) | 2015 |  | 輕量型、僅限標頭的程式庫，適合建立現有 C++ 程式碼的 Python 繫結。 低相依性。 PyPy 相容性。 | 較新穎、較不成熟。 大量使用 C++11 功能。 支援編譯器的簡短清單 (包含 Visual Studio)。 |
 | Cython (建議用於 C) | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 類似 Python。 高度成熟。 高效能。 | 編譯、新的語法和新的工具鏈。 |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 幾乎可搭配每種 C++ 編譯器使用。 | 大型且複雜的程式庫套件，包含許多舊型編譯器的因應措施。 |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 不需編譯、廣泛可用。 | 存取與變更 C 結構麻煩又容易出錯。 |

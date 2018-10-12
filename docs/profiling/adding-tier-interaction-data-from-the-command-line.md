@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548657"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775029"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "34548657"
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%***\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs_profiler_***\<平台>***_***\<語言>***.exe** 檔案複製並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，複製 **vs_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 **TIP 報告**
 

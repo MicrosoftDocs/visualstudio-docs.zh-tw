@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511323"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278722"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 
 **上一個步驟：[安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，提供與本機 Git 存放庫和遠端儲存庫的直接整合。 這項整合包含複製存放庫、認可變更，以及管理分支。
+Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Git 存放庫和遠端儲存庫的直接整合。 這項整合包含複製存放庫、認可變更，以及管理分支。
 
 本文提供為現有專案建立本機 Git 存放庫的基本概觀，以及讓您熟悉一些 Visual Studio 的 Git 相關功能。
 
@@ -32,7 +32,7 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
     ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗 (您隨時可以使用 [檢視] > [Team Explorer] 功能表命令開啟該視窗)。視窗有三個主要窗格，您可以使用 **Team Explorer** 標題上的下拉式清單在之間切換。 提供發行作業的 [同步] 窗格，也會在您選取 [推送] 控制項 (向上箭頭圖示) 時出現：
+1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗。 (您隨時可以使用 [檢視] > [Team Explorer] 功能表命令開啟該視窗)。視窗有三個主要窗格，您可以使用 **Team Explorer** 標題上的下拉式清單在之間切換。 提供發行作業的 [同步] 窗格，也會在您選取 [推送] 控制項 (向上箭頭圖示) 時出現：
 
     ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
@@ -56,7 +56,7 @@ Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，�
 
 如需從遠端 Git 存放庫建立專案的簡短逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
-如需包括處理合併衝突、檢閱含有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 VSTS 使用者入門](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
+如需包括處理合併衝突、檢閱具有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 Azure Repos 使用者入門](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
 
 ## <a name="tutorial-review"></a>教學課程檢閱
 

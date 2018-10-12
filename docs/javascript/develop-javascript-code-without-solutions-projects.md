@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924738"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774597"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
@@ -58,3 +58,27 @@ Visual Studio 2017 引進了[不使用專案或方案開發程式碼](../ide/dev
 
 > [!NOTE]
 > 您可以在 [tsconfig.json TypeScript 手冊頁面](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)中找到 *tsconfig.json* 的詳細資訊。
+
+## <a name="unit-tests"></a>單元測試
+您可以藉由在 *package.json* 指定測試根，在 Visual Studio 中啟用單元測試整合：
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+測試執行器會列舉在本機上已安裝的套件，以判斷要使用哪個測試架構。
+如果無法辨識任何支援的架構，測試執行器會預設為 *ExportRunner*。 其他支援的架構包括：
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+開啟 [測試總管] (選擇 [測試] > [Windows] > [測試總管]) 之後，Visual Studio 會探索並顯示測試。
+
+> [!NOTE]
+> 測試執行器只會列舉測試根目錄中的 JavaScript 檔案，如果您的應用程式以 TypeScript 撰寫，您需要先建置它們。

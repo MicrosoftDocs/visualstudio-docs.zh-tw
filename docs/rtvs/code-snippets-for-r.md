@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0ce8e2ea6ec0cb0d2d70cfab36687f108dd73e82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667726"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
 在 Visual Studio 中的程式碼片段提供捷徑，以便快速地插入任意長度的程式碼區塊，協助您避免一再重新輸入類似的程式碼。 Visual Studio R 工具 (RTVS) 將數十個有用的 R 程式碼片段新增至 Visual Studio 的集合。
 
-若要插入程式碼片段，請輸入程式碼片段的縮寫名稱 (提供 IntelliSense)，然後按 Tab 鍵插入。
+若要插入程式碼片段，請鍵入程式碼片段的縮寫名稱 (提供 IntelliSense)，然後按 **Tab** 鍵插入。
 
 一些簡單的範例︰
 
@@ -31,9 +32,9 @@ ms.lasthandoff: 04/19/2018
 
 ![使用程式碼片段將呼叫插入 read.csv 的動畫](media/code-snippet-expansion.gif)
 
-在此情況下，當您輸入 `readc` 時，IntelliSense 會顯示完成清單。 在下拉式清單中選取該完成，然後按 Tab 鍵即可選取 `readc`，再次按 Tab 鍵則會展開程式碼片段。 (基於這個理由，程式碼片段展開經常被視為「鍵入程式碼片段，並按 TAB 鍵兩次」)。 在大部分情況下，第一次按 Tab 鍵會完成 IntelliSense 選取範圍，而第二次按 Tab 鍵則會觸發展開。
+在此情況下，當您輸入 `readc` 時，IntelliSense 會顯示完成清單。 在下拉式清單中選取該完成，然後按 **Tab** 鍵即可選取 `readc`，再次按 **Tab** 鍵則會展開程式碼片段。 (基於這個理由，程式碼片段展開經常被視為「鍵入程式碼片段，並按 TAB 鍵兩次」)。 在大部分情況下，第一次按 Tab 鍵會完成 IntelliSense 選取範圍，而第二次按 Tab 鍵則會觸發展開。
 
-若要查看所有可用的片段，請開啟 [工具] > [程式碼片段管理員] 對話方塊 (Ctrl + K、B)，然後針對 [語言] 選取 [R]。 展開群組，然後選取個別的程式碼片段，即可看到描述和快顯文字︰
+若要查看所有可用的片段，請開啟 [工具] > [程式碼片段管理員] 對話方塊 (**Ctrl**+**K**、**B**)，然後針對 [語言] 選取 [R]。 展開群組，然後選取個別的程式碼片段，即可看到描述和快顯文字︰
 
 ![R 的 [程式碼片段] 對話方塊](media/code-snippet-dialog.png)
 

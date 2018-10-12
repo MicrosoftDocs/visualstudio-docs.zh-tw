@@ -11,11 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: ec988b9739dfbec60fe19b41145ae0de1b3d3f77
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667921"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
 1. 提供登入認證。 使用者名稱必須加上 `<<unix>>\` 的前置詞，如 `<<unix>>\ruser1` (所有連線到 Linux 遠端電腦的連線都必須如此)。
 1. 若您使用的是自我簽署的憑證，您可能會看見警告訊息。 訊息會提供修正警告的指示。
 
-## <a name="setting-up-remote-r-service"></a>設定遠端 R 服務
+## <a name="set-up-remote-r-service"></a>設定遠端 R 服務
 
 本節將描述下列選項：
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/19/2018
     sudo systemctl start rtvsd
     ```
 
-1. 設定 SSL 憑證 (生產環境下將需要此憑證)。 根據預設，rtvs-daemon 會使用由 `ssl-cert` 套件產生的 `ssl-cert-snakeoil.pem` 及 `ssl-cert-snakeoil.pem`。 在安裝期間，它們會合併成 `ssl-cert-snakeoil.pfx`。 針對生產環境目的，請使用由您系統管理員提供的 SSL 憑證。 您可以藉由在 `/etc/rtvs/rtvsd.config.json` 中提供 `.pfx` 檔案及選擇性的匯入密碼來設定 SSL 憑證。
+1. 設定 SSL 憑證 (生產環境下將需要此憑證)。 根據預設，rtvs-daemon 會使用由 `ssl-cert` 套件產生的 `ssl-cert-snakeoil.pem` 及 `ssl-cert-snakeoil.pem`。 在安裝期間，它們會合併成 `ssl-cert-snakeoil.pfx`。 針對生產環境目的，請使用由您系統管理員提供的 SSL 憑證。 您可以藉由在 */etc/rtvs/rtvsd.config.json* 中提供 *.pfx* 檔案及選擇性匯入密碼來設定 SSL 憑證。
 
 1. (選擇性) 檢查服務是否已在執行：
 
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/19/2018
 
 #### <a name="configure-the-vm"></a>設定 VM
 
-1. 在 VM 的 [網路] 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (`/etc/rtvs/rtvsd.config.json`) 中變更設定。
+1. 在 VM 的 [網路] 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (*/etc/rtvs/rtvsd.config.json*) 中變更設定。
 1. (選擇性) 設定 DNS 名稱；您也可以使用 IP 位址。
 1. 使用 SSH 用戶端 (例如適用於 Windows 的 PuTTY) 連線到 VM。
 1. 遵循上述適用於[實體 Ubuntu 電腦](#physical-ubuntu-computer)的指示。
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/19/2018
     docker run -p 5444:5444 myrimage rtvsd
     ```
 
-1. 若要連線至來自 RTVS 的容器，請使用 `https://localhost:5444` 作為路徑、`<<unix>>\ruser1` 作為使用者名稱、`foobar` 作為密碼。 若容器正在遠端電腦上執行，請使用 `https://remote-host-name:5444` 作為路徑。 您可以藉由更新 `/etc/rtvs/rtvsd.config.json` 來變更連接埠。
+1. 若要連線至來自 RTVS 的容器，請使用 `https://localhost:5444` 作為路徑、`<<unix>>\ruser1` 作為使用者名稱、`foobar` 作為密碼。 若容器正在遠端電腦上執行，請使用 `https://remote-host-name:5444` 作為路徑。 藉由更新 */etc/rtvs/rtvsd.config.json*，可以變更連接埠。
 
 ### <a name="container-running-on-azure-container-instances"></a>在 Azure 容器執行個體上執行的容器
 

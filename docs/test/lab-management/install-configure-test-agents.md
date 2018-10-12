@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204202"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320627"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
-針對使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 VSTS 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 VSTS 或 TFS 中執行建置和發行工作流程的持續測試。
+針對使用 Visual Studio 和 Azure Test Plans 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 Azure Test Plans 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 Azure Test Plans 或 TFS 中執行建置和發行工作流程的持續測試。
 
 建議您也可考慮使用[建置或發行管理](use-build-or-rm-instead-of-lab-management.md)是否更為適合，而不是 Lab Management。
 
@@ -58,13 +58,13 @@ ms.locfileid: "39204202"
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>從 Visual Studio 2013 測試代理程式升級
 
-建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建定義中的「部署測試代理程式」工作，以下載並在電腦上安裝測試代理程式。
+建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建管線中的「部署測試代理程式」工作來下載並在電腦上安裝測試代理程式。
 
-下表顯示 Agents for Visual Studio 2013 支援的案例，以及 Team Foundation Server (TFS) 2015 和 VSTS 的替代方案：
+下表顯示 Agents for Visual Studio 2013 支援的案例，以及 Team Foundation Server (TFS) 2015 和 Test Plans 的替代方案：
 
-| Agents for Visual Studio 2013 所支援的案例 | TFS 和 VSTS 中的替代方案 |
+| Agents for Visual Studio 2013 所支援的案例 | TFS 和 Azure Test Plans 中的替代方案 |
 | --- | --- |
-| Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建定義](/vsts/build-release/) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
+| Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建管線](/azure/devops/pipelines/index?view=vsts) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
 | 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller 和 Test Agents 2013 Update 5 在內部部署執行負載測試。 |
 | 使用實驗室環境從 Microsoft Test Manager 進行的自動化測試遠端執行 | 此案例目前沒有替代方案。 建議您在組建和發行定義 (而非 XAML 組建) 中使用「執行功能測試」工作，以從遠端執行測試。 |
-| 在 Visual Studio 中執行遠端測試的開發人員 | 不再受支援。 |
+| 在 Visual Studio 中執行遠端測試的開發人員 | 不再支援此屬性。 |

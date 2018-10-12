@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Feedback Client 2017 工作負載和元件識別碼
-description: 使用 Visual Studio 工作負載和元件識別碼針對 Visual Studio Team Services 或 Team Foundation Server 提供豐富的意見反應
+description: 使用 Visual Studio 工作負載和元件識別碼針對 Azure DevOps Services 或 Team Foundation Server 提供豐富的意見反應
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138775"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281555"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 元件目錄
 
@@ -43,7 +43,7 @@ ms.locfileid: "43138775"
 
 **識別碼：** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**描述：** 意見反應用戶端可讓專案關係人針對 Visual Studio Team Services 或 Team Foundation Server 提供豐富的意見反應。
+**描述：** 意見反應用戶端可讓專案關係人針對 Azure DevOps Services 或 Team Foundation Server 提供豐富的意見反應。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321199"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371078"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -437,7 +437,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="whats-next"></a>後續步驟
 
-**執行自動程式化 UI 測試的其他選項：** 您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您也可以從 Microsoft Test Manager，或從 Team Foundation Build 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
+**執行自動程式化 UI 測試的其他選項：** 您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您可以從 Microsoft Test Manager 或使用 Azure Pipelines 來執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 

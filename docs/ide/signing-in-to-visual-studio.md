@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282223"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284181"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -36,9 +36,9 @@ ms.locfileid: "36282223"
 
 - **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。
 
-- **使用與 MSDN 或 Visual Studio Team Services 訂閱關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- **使用與 Visual Studio 訂用帳戶或 Azure DevOps Services 建立關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
-- 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連接到 Azure 和 Visual Studio Team Services 等服務**。
+- 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure 和 Azure DevOps Services 等服務**。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登入 Visual Studio
 

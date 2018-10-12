@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069d5fa2f4f4b67e8095593a03d9a37d085195a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8ad5cc6dc41fb3c9b481eef717ccc3ad07b5e2e9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780687"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。
 
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 從 Visual Studio IDE 收集 UWP App 資料
+## <a name="collect-data-on-uwp-apps-from-the-visual-studio-ide"></a>從 Visual Studio IDE 收集 UWP App 資料
 
 當您分析以 JavaScript 和 HTML 5 撰寫的 UWP App 時，要收集 JavaScript 程式碼的檢測資料。 當您分析以 Visual C++、Visual C# 或 Visual Basic 撰寫的 UWP App 或元件時，要收集機器碼和 Managed 程式碼的取樣資料。 您可以在本機或遠端電腦上剖析應用程式的程式碼。
 
@@ -40,19 +41,19 @@ ms.lasthandoff: 04/19/2018
 
 - [在本機電腦上執行 UWP App](../debugger/run-windows-store-apps-on-the-local-machine.md)
 - [在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)
-- [分析工具](profiling-tools.md)
+- [初步認識分析工具](profiling-feature-tour.md)
 - [JavaScript 記憶體](../profiling/javascript-memory.md)
 - [在本機電腦上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
 - [在遠端裝置上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
 - [分析 UWP App 中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料
 
 Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 階層互動分析 (TIP) 不支援使用取樣方法。
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料
 
 使用取樣方法剖析 Windows 8 桌面應用程式或 Windows Server 2012 應用程式時，不支援這些程式碼剖析功能和選項：
 
@@ -60,7 +61,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 - 取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。
 
-## <a name="BKMK_Profiling_from_the_command_line"></a> 從命令列進行程式碼剖析
+## <a name="profile-from-the-command-line"></a>從命令列分析
 
 您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：
 
@@ -75,7 +76,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 - 從 [MSDN 網站](http://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。
 
-- 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。
+- 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。
 
 > [!NOTE]
 > 若要收集 TIP 程式碼剖析資料，您必須從遠端電腦的 Visual Studio 電腦安裝獨立分析工具。
@@ -88,7 +89,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 - 取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。
 
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集階層互動 (TIP) 資料
+## <a name="collect-tier-interaction-tip-data"></a>收集階層互動 (TIP) 資料
 
 階層互動分析提供透過 ADO.NET 服務與資料庫通訊之多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。
 
@@ -110,7 +111,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%***\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs_profiler_***\<平台>***_***\<語言>***.exe** 檔案複製並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾中，複製 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。
 

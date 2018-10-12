@@ -1,5 +1,5 @@
 ---
-title: 如何購買 Visual Studio Enterprise 和 Visual Studio Professional 雲端訂用帳戶
+title: 如何購買 Visual Studio 雲端訂閱
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -9,12 +9,12 @@ description: 每月或每年租 Visual Studio Professional 或 Visual Studio Ent
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 878a335f5b576ee3ccf439b35e8a8adc861a9864
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289393"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495657"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -25,6 +25,9 @@ ms.locfileid: "43289393"
 ## <a name="before-you-start"></a>開始之前
 
 *   若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
+
+## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>誰可以購買 Visual Studio 雲端訂閱？
+擁有 Azure 訂用帳戶的[擁有者或參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買雲端訂閱。  
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 

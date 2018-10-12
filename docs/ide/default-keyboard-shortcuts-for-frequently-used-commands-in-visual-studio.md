@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512544"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370974"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 
@@ -150,7 +150,7 @@ ms.locfileid: "39512544"
 |View.ObjectBrowser|**Ctrl+Alt+J** [全域]|
 |View.Output|**Ctrl+Alt+O** [全域]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer、Team Foundation Build 詳細資料編輯器]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl+Alt+S** [全域]|
 |View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> 或 **Shift+Alt+F10** [全域、HTML 編輯器設計檢視]|
 |View.SolutionExplorer|**Ctrl+Alt+L** [全域]|

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573176"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668389"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -41,7 +41,7 @@ ms.locfileid: "34573176"
 ## <a name="create-and-run-a-performance-session"></a>建立和執行效能工作階段  
  若要取得您要分析的資料，您必須先建立效能工作階段，然後再執行工作階段。 [效能精靈] 可讓您進行這兩項工作。  
   
- 如果您不是在對 Windows 傳統型應用程式或 ASP.NET 應用程式進行程式碼剖析，您必須使用其他的程式碼剖析工具。 請參閱[初步認識分析工具](../profiling/profiling-tools.md)。  
+ 如果您不是在對 Windows 傳統型應用程式或 ASP.NET 應用程式進行程式碼剖析，您必須使用其他的程式碼剖析工具。 請參閱[初步認識分析工具](../profiling/profiling-feature-tour.md)。  
   
 #### <a name="to-create-and-run-a-performance-session"></a>建立和執行效能工作階段  
   
@@ -129,4 +129,4 @@ ms.locfileid: "34573176"
  [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [概觀](../profiling/overviews-performance-tools.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
- [分析功能導覽](../profiling/profiling-feature-tour.md)
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586571"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320822"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -38,7 +38,7 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 ### <a name="global-environments"></a>全域環境
 
-每個 Python 安裝 (例如，Python 2.7、Python 3.6、Anaconda 4.4.0 等，請參閱[安裝 Python 解譯器](installing-python-interpreters.md)) 都維持自己的全域環境。 每個環境是由特定的 Python 解譯器、其標準程式庫和一組預先安裝的套件所組成。 將套件安裝到全域環境中，可將套件提供給使用該環境的所有專案使用。 如果環境位在檔案系統的受保護區域中 (例如 *c:\program files* 內)，則安裝套件需要系統管理員權限。
+每個 Python 安裝 (例如，Python 2.7、Python 3.6、Python 3.7、Anaconda 4.4.0 等，請參閱[安裝 Python 解譯器](installing-python-interpreters.md)) 會維持自己的全域環境。 每個環境是由特定的 Python 解譯器、其標準程式庫和一組預先安裝的套件所組成。 將套件安裝到全域環境中，可將套件提供給使用該環境的所有專案使用。 如果環境位在檔案系統的受保護區域中 (例如 *c:\program files* 內)，則安裝套件需要系統管理員權限。
 
 全域環境可提供給電腦上的所有專案使用。 在 Visual Studio 中，您選取一個全域環境做為預設環境。除非您特別針對某個專案選擇不同的環境，否則所有專案都會使用預設環境。 如需詳細資訊，請參閱[選取專案的環境](selecting-a-python-environment-for-a-project.md)。
 
@@ -76,6 +76,9 @@ conda info
 Visual Studio 2017 15.7 版和更新版本會自動偵測 Conda 環境，並在 [Python 環境] 視窗中顯示它們，如下一節所述。
 
 ## <a name="the-python-environments-window"></a>[Python 環境] 視窗
+
+> [!Note]
+> 本節中所顯示的螢幕擷取畫面代表 Visual Studio 15.8。 視您的 Visual studio 版本而定，您可能會看到略為不同的 UI。
 
 Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開啟視窗，可以使用下列方法之一：
 

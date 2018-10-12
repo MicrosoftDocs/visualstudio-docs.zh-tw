@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 1
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識。
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586400"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283414"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -95,7 +95,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
     ![用於推入至現有遠端存放庫的 [Team Explorer] 視窗](media/flask/step01-push-to-github.png)
 
-    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Visual Studio Team Services] 選項可讓您直接在 Visual Studio 內建立存放庫。
+    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Azure DevOps] 選項可讓您直接在 Visual Studio 內建立存放庫。
 
 1. 隨著您逐步完成本教學課程，請建立定期使用 Visual Studio 中的控制項來認可並推送變更的習慣。 本教學課程會合適的時機點提醒您。
 

@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289290"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283726"
 ---
 # <a name="azure-community"></a>Azure 社群
 
@@ -68,4 +68,4 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 -  如需其他 Azure 社群資源，請瀏覽 Azure 社群[支援頁面](https://azure.microsoft.com/support/forums/)。
 -  [Azure 文件](/azure/)。
 -  需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

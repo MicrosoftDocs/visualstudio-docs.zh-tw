@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8aac613f4fe8a93ebd31127e26bcd92218b6300
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748240"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775847"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 如果讓圖示在每個遊戲的相同儲存格中顯示，這樣就不夠有挑戰性。 若要避免此情形，請使用 `AssignIconsToSquares()` 方法，在表單上將圖示隨機指派給 Label 控制項。
@@ -49,7 +49,7 @@ ms.locfileid: "34748240"
 
      請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具？](http://msdn.microsoft.com/vstudio/ee672313.aspx)\(英文\) 或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
-3.  若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 **Form1***建構函式* 中，將陳述式新增至 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](http://msdn.microsoft.com/library/ace5hbzh.aspx)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](http://msdn.microsoft.com/library/2z08e49e.aspx)。
+3.  若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 **Form1**「建構函式」中，將陳述式新增至 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](http://msdn.microsoft.com/library/ace5hbzh.aspx)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](http://msdn.microsoft.com/library/2z08e49e.aspx)。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

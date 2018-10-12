@@ -15,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179238"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283206"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 
-您可以建立自己的擷取規則。 若要執行此作業，可以從擷取規則類別中衍生自己的規則。 擷取規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 基底類別。
+您可以建立自己的擷取規則。 若要執行這項操作，可以從擷取規則類別中衍生自己的規則。 擷取規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 基底類別。
 
 > [!NOTE]
 > 您也可以建立自訂驗證規則。 如需詳細資訊，請參閱[為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)。
 
-## <a name="to-create-a-custom-extraction-rule"></a>建立自訂擷取規則
+## <a name="to-create-a-custom-extraction-rule"></a>若要建立自訂擷取規則
 
 1.  開啟包含 Web 效能測試的測試專案。
 
@@ -44,7 +44,7 @@ ms.locfileid: "39179238"
 
 5.  (選擇性) 建立新的「類別庫」專案。
 
-6.  (選擇性) 在測試專案中，加入包含自訂擷取規則之類別庫專案的參考。
+6.  (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
 
 7.  在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
 

@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708770"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283518"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中複製 Python 程式碼存放庫
 
@@ -17,9 +17,9 @@ ms.locfileid: "29708770"
 
 2. 啟動 Visual Studio。
 
-3. 選取 [檢視] > [Team Explorer...] 以開啟 **Team Explorer** 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。
+3. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure DevOps，或是複製存放庫。
 
-    ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media\create-project-repo\team-explorer.png)
+    ![顯示 Azure DevOps 和 GitHub 並複製存放庫的 Team Explorer 視窗](media\create-project-repo\team-explorer.png)
 
 4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
 

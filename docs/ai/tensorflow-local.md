@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c8c5e06b5d7345a5234e4c4adb04283528f301
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379510"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281737"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 

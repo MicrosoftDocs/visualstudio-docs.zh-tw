@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279970"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -104,7 +104,7 @@ ms.locfileid: "39381116"
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>若要從測試控制器移除測試代理程式
 
-1. 如果測試控制器未向 Team 專案註冊，請遵循下列步驟進行。
+1. 如果測試控制器未向專案註冊，請遵循下列步驟進行。
 
     1. 從 Visual Studio 中，開啟測試專案的測試設定檔，選擇 [角色]，然後從 [控制器] 欄位的下拉式清單中選擇 [管理測試控制器]。
 
@@ -117,7 +117,7 @@ ms.locfileid: "39381116"
         > [!NOTE]
         > 移除測試代理程式只會解除它與測試控制器的關聯。 若要完全解除安裝測試代理程式，請使用測試代理程式電腦上 [控制台] 中的 [程式和功能]。
 
-2. 如果測試控制器已向 Team 專案註冊，請使用 Microsoft Test Manager 移除代理程式。
+2. 如果測試控制器已向專案註冊，請使用 Microsoft Test Manager 移除代理程式。
 
 ## <a name="change-the-settings-for-a-test-agent"></a>變更測試代理程式的設定
 
@@ -135,7 +135,7 @@ ms.locfileid: "39381116"
 ### <a name="to-change-the-settings-of-a-test-agent"></a>若要變更測試代理程式的設定
 
 > [!NOTE]
-> 如果測試代理程式註冊至已向 Team 專案註冊的測試控制器，請變更 Microsoft Test Manager 中的設定。
+> 如果測試代理程式註冊至已向專案註冊的測試控制器，請變更 Microsoft Test Manager 中的設定。
 
 1. 若要為負載測試設定和監視測試控制器與任何已註冊的代理程式，請選擇 Visual Studio 中的 [負載測試] 功能表，然後選擇 [管理測試控制器]。 針對其他的任何測試，在 Visual Studio 中開啟測試專案的測試設定檔，選擇 [角色]，然後從 [控制器] 欄位的下拉式清單中選擇 [管理測試控制器]。
 
@@ -153,7 +153,7 @@ ms.locfileid: "39381116"
 |-------------------------|-----------------|
 |**加權**|當您以不同的效能層級使用測試代理程式時，是用以分散負載。 例如，加權值 100 之測試代理程式所接收的負載，是加權值 50 之測試代理程式的兩倍。|
 |**IP 切換**|用來設定 IP 切換。 IP 切換可讓測試代理程式利用某個 IP 位址的範圍，將要求傳送至伺服器。 這會模擬來自不同用戶端電腦的呼叫。<br /><br /> 若您的測試負載會存取 Web 伺服陣列，「IP 切換」便很重要。 大多數的負載平衡器會使用用戶端的 IP 位址，將用戶端導引到特定的 Web 伺服器。 如果所有的要求似乎都來自單一用戶端，負載平衡器將不會平衡負載。 若要在 Web 伺服陣列中獲得較佳的負載平衡，確定讓要求都來自某一範圍的 IP 位址。 **注意：** 您可以指定網路介面卡，或是使用 [(全未指派)] 自動選取目前未使用的網路介面卡。 <br /><br /> 若要使用 IP 切換功能，Visual Studio Test Agent 服務必須以該代理程式電腦之 Administrators 群組中的使用者身分來執行。 在代理程式安裝期間選取此使用者，透過修改服務屬性然後重新啟動服務可對其進行變更。<br /><br /> 若要驗證 IP 切換是否正確運作，請啟用 Web 伺服器上的 IIS 記錄，並使用 IIS 記錄功能來驗證要求是否都來自您所設定的 IP 位址。|
-|**屬性**|可以在測試代理程式選取項目中使用的名稱/值對集合。 例如，測試可能必須在特殊作業系統上執行。 您可以在測試設定檔的 [角色] 索引標籤中新增屬性，這些屬性可以用來選取具有相符屬性的測試代理程式。 如果您要在多部電腦上執行測試，請在設定為執行測試的測試設定角色中建立屬性，然後在該角色中所要使用的每個測試代理程式上設定相符的屬性。 **注意：** 這項設定只適用於已在未向 Team 專案註冊的測試控制器中註冊的測試代理程式，因為這些屬性只在 Visual Studio 的測試設定中使用。|
+|**屬性**|可以在測試代理程式選取項目中使用的名稱/值對集合。 例如，測試可能必須在特殊作業系統上執行。 您可以在測試設定檔的 [角色] 索引標籤中新增屬性，這些屬性可以用來選取具有相符屬性的測試代理程式。 如果您要在多部電腦上執行測試，請在設定為執行測試的測試設定角色中建立屬性，然後在該角色中所要使用的每個測試代理程式上設定相符的屬性。 **注意：** 這項設定只適用於已在測試控制器中註冊 (但未向專案註冊) 的測試代理程式，因為這些屬性只在 Visual Studio 的測試設定中使用。|
 
 測試代理程式權重和測試代理程式屬性變更會立即生效，但不會影響到正在執行的測試。 而「IP 位址範圍」會在測試控制器重新啟動之後生效。
 
@@ -164,12 +164,12 @@ ms.locfileid: "39381116"
 
 ## <a name="configure-a-test-controller"></a>設定測試控制器
 
-若要設定測試控制器，您必須使用 [Team Test Controller 組態工具]。 當您設定測試控制器時，可以向其他 Team 專案集合註冊測試控制器，或者從 Team 專案集合解除測試控制器的註冊。
+若要設定測試控制器，您必須使用 [Team Test Controller 組態工具]。 當您設定測試控制器時，可以向其他專案集合註冊測試控制器，或者從專案集合解除測試控制器的註冊。
 
-如果您要向 Team Foundation Server 專案集合註冊測試控制器，則您用於測試控制器服務的帳戶必須是 Team 專案集合之 Project Collection Test Service Accounts 群組的成員，或者您用來執行 Test Controller 組態工具的帳戶必須是 Project Collection Administrator。
+如果您要向 Team Foundation Server 專案集合註冊測試控制器，則您用於測試控制器服務的帳戶必須是專案集合的 Project Collection Test Service Accounts 群組成員，或者您用來執行 Test Controller 組態工具的帳戶必須是 Project Collection Administrator。
 
 > [!NOTE]
-> 如果您從具有現有環境的 Team 專案集合解除測試控制器的註冊，則即使您移動該 Team 專案集合，並對其重新註冊測試控制器，該環境仍會存在。
+> 如果您從具有現有環境的專案集合解除測試控制器註冊，則即使您移動該專案集合，並對其重新註冊測試控制器，該環境仍會存在。
 
 ### <a name="to-configure-a-test-controller"></a>若要設定測試控制器
 
@@ -182,7 +182,7 @@ ms.locfileid: "39381116"
     > [!NOTE]
     > 使用者帳戶不支援 Null 密碼。
 
-4. (選擇性) 如果您不想將測試控制器與實驗室環境搭配使用，而僅想要從 Visual Studio 執行測試，請清除 [向 Team 專案集合註冊]。
+4. (選擇性) 如果您不想將測試控制器與實驗室環境搭配使用，而僅想要從 Visual Studio 執行測試，請清除 [向專案集合註冊]。
 
 5. (選擇性) 若要設定您的測試控制器以用於負載測試，請選取 [設定以進行負載測試]。 然後在 [在下列 SQL Server 執行個體中建立負載測試結果資料庫] 中鍵入您的 SQL Server 執行個體。
 

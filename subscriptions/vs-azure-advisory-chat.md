@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289464"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278890"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
@@ -56,4 +56,4 @@ ms.locfileid: "43289464"
 
 ## <a name="support-resources"></a>支援資源
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

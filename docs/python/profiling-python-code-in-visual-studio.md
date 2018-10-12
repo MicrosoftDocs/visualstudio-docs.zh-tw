@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468812"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551750"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 
-您可在使用 CPython 型解譯器時分析 Python 應用程式 (請參閱[功能矩陣：分析](overview-of-python-tools-for-visual-studio.md#matrix-profiling)以了解此功能在不同版本 Visual Studio 中的可用性)。
+您可在使用 CPython 型解譯器時分析 Python 應用程式。 (請參閱[功能矩陣：分析](overview-of-python-tools-for-visual-studio.md#matrix-profiling)以了解這項功能在不同版本 Visual Studio 中的可用性。)
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython 型解譯器的分析
 
@@ -37,7 +37,7 @@ ms.locfileid: "39468812"
 | ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 分析的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) (3 分 00 秒)。|
 
 > [!Note]
-> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [\[提供產品意見反應\] 按鈕](#feedback)。
+> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [[產品意見反應] 按鈕](#feedback)。
 
 ## <a name="profiling-for-ironpython"></a>針對 IronPython 的分析
 
@@ -45,4 +45,4 @@ ms.locfileid: "39468812"
 
 請改為直接將 *ipy.exe* 作為目標應用程式啟動來使用 Visual Studio .NET 分析工具，並使用適當的引數來啟動您的啟動指令碼。 將 `-X:Debug` 包含在命令列中，以確保可偵錯與分析您的所有 Python 程式碼。 此引數會產生包含在 IronPython 執行階段及您程式碼上所花費時間的效能報告。 您的程式碼是以損害名稱來識別。
 
-此外，IronPython 本身也有一些內建的分析功能，但它目前並沒有良好的視覺化檢視。 請參閱 [IronPython 分析工具 (英文)](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (MSDN 部落格) 來查看可用內容。
+此外，IronPython 本身也有一些內建的分析功能，但它目前並沒有良好的視覺化檢視。 請參閱 [IronPython 分析工具 (英文)](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (MSDN 部落格) 來查看可用內容。

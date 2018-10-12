@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289353"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283284"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
@@ -71,4 +71,4 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 -  需要使用 EMS 的說明嗎？  請參閱線上 [EMS 文件](/enterprise-mobility-security/)。
 -  如需任何 EMS 元件的技術支援，請前往 https://support.microsoft.com/allproducts 並選取產品。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

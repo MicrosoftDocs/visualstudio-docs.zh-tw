@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98b56eece1a51db94482a0a58d54ca877e47e0c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668372"
 ---
 # <a name="summary-view---net-memory-data"></a>摘要檢視 - .NET 記憶體資料
 [摘要] 檢視顯示有關在程式碼剖析執行時，配置最多記憶體的 .NET 函式和類型資訊，以及建立次數最多的類型資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 04/19/2018
 |**名稱**|型別的名稱。|  
 |**執行個體 %**|在程式碼剖析執行時建立為此類型執行個體的 .NET 物件總數百分比。|  
   
-## <a name="see-also"></a>請參閱  
- [摘要檢視](../profiling/summary-view-sampling-data.md)   
- [摘要檢視](../profiling/summary-view-instrumentation-data.md)
+## <a name="see-also"></a>另請參閱  
+ [摘要檢視 - 取樣資料](../profiling/summary-view-sampling-data.md)   
+ [摘要檢視 - 檢測資料](../profiling/summary-view-instrumentation-data.md)

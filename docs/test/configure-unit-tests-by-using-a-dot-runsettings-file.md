@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901481"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280281"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "42901481"
 
 ## <a name="specify-a-run-settings-file"></a>指定回合設定檔
 
-您可以使用回合設定檔案來設定從[命令列](vstest-console-options.md)、在 IDE 中，或使用 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的[組建工作流程](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
+您可以使用回合設定檔案來設定從[命令列](vstest-console-options.md)、在 IDE 中，或使用 Azure Test Plans 或 Team Foundation Server (TFS) 之[組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定回合設定檔
 
@@ -256,4 +256,4 @@ public void HomePageTest()
 ## <a name="see-also"></a>另請參閱
 
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 測試工作 (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251714"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283329"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -188,7 +188,7 @@ ms.locfileid: "39251714"
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
-1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)。
+1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
 
      ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -217,6 +217,6 @@ ms.locfileid: "39251714"
 |開啟 MonoBehavior 精靈|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |開啟 Unity Project Explorer|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
 |存取 Unity 文件|**Ctrl**+**Alt**+**M、Ctrl**+**H**|**Help.UnityAPIReference**|
-|附加至 Unity 偵錯工具 (播放器或編輯器)|***無預設值***|**Debug.AttachUnityDebugger**|
+|附加至 Unity 偵錯工具 (播放器或編輯器)|**無預設值**|**Debug.AttachUnityDebugger**|
 
  如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

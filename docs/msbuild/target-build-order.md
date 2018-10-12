@@ -1,7 +1,7 @@
 ---
 title: 目標建置順序 | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178952"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774941"
 ---
 # <a name="target-build-order"></a>目標組建順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
@@ -114,7 +114,7 @@ ms.locfileid: "39178952"
 
     列出 `BeforeTargets` 或 `AfterTargets` 中之條件式目標的目標，仍然會以指定的順序執行
   
-4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
+4.  執行或略過目標之前，如果它的 `Condition` 屬性不存在，或未評估為 `false`，則會執行其 `DependsOnTargets` 目標。  
   
 5.  執行或略過目標之前，就會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
   

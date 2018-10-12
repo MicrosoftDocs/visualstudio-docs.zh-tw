@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289416"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279319"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 
@@ -68,4 +68,4 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 * 需要使用 Windows 開發人員帳戶的說明嗎？  請參閱 [Windows 開發人員中心](https://developer.microsoft.com/windows)的[支援](https://developer.microsoft.com/windows/support)資源。
 * [Windows 開發](/windows/)
 * 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
-* 是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+* 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

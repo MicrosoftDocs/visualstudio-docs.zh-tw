@@ -9,12 +9,12 @@ description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 Linked
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bb3611b485bd36b1268f12ca06b29d8962eab8ae
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289466"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278800"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -116,4 +116,4 @@ ms.locfileid: "43289466"
     - 有關[使用 LinkedIn Learning](https://www.linkedin.com/help/learning) 的說明。
     - 有關 [LinkedIn](https://www.linkedin.com/help/linkedin) 一般問題 (例如建立帳戶與設定檔，以及管理您的網路) 的說明。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
