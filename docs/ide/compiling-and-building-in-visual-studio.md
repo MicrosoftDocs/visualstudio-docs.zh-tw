@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341672"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279072"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
@@ -28,7 +28,7 @@ ms.locfileid: "39341672"
 
 成功的組建在本質上驗證了應用程式的原始程式碼包含正確的語法，而且所有對程式庫、組件及其他元件的靜態參考均已解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.md)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
-Visual Studio 產品系列中，您可採用三種方式建置應用程式：Visual Studio IDE、MSBuild 命令列工具和 Visual Studio Team Services 上的 Team Foundation Build：
+您可以使用下列任一種方法來建置應用程式：Visual Studio IDE、MSBuild 命令列工具、Team Foundation Build 和 Azure DevOps Services：
 
 | 建置方法 | 優點 |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ Visual Studio 產品系列中，您可採用三種方式建置應用程式：Vis
 | MSBuild 命令列| - 無須安裝 Visual Studio 即可建置專案。<br />- 對所有專案類型執行多處理器建置。<br />- 自訂建置系統大部分的區域。|
 | Team Foundation Build | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
-本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需其他方法的詳細資訊，請分別參閱 [MSBuild](../msbuild/msbuild.md) 和[持續整合及部署](/vsts/pipelines/index?view=vsts)。
+本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需其他方法的詳細資訊，請分別參閱 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="overview-of-building-from-the-ide"></a>從 IDE 建置的概觀
 

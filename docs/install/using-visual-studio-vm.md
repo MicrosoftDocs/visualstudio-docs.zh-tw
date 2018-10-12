@@ -1,7 +1,7 @@
 ---
 title: 在 Azure 虛擬機器上使用 Visual Studio
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 07/10/2018
+ms.date: 09/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 5061265467f7fab653e3266d5c25ccf0c9ef43da
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626657"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550290"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,9 +34,9 @@ ms.locfileid: "42626657"
 
 | 發行版本                                              | 版本                     |     產品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新 (15.8 版)                    |    Enterprise、Community     |      15.8.0 版     |
-| Visual Studio 2017：最新預覽 (15.8 版 Preview 5) |    Enterprise、Community     |      15.8.5 版     |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.17 版    |
+| Visual Studio 2017：最新 (15.8 版)                    |    Enterprise、Community     |      15.8.4 版     |
+| Visual Studio 2017：最新預覽 (15.9 版 Preview 2) |    Enterprise、Community     |      15.9 版       |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.18 版    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版  |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期) |
 

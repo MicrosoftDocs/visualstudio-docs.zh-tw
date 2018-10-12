@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5d6afa4cfdf3891089461eec97e1af764329362e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668302"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** 命令列工具可讓您進行 ASP.Net 網站分析，而不需要設定環境變數或重新啟動您的電腦。 當您進行 ASP.NET 網站分析且不需要 **VSPerfCmd** 提供的額外功能時，請使用 **VSPerfASPNetCmd.exe** 而非 [VSPerfCmd](../profiling/vsperfcmd.md)。 如需 **VSPerfASPNetCmd** 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。 當您使用獨立分析工具來進行 ASP.NET 網站分析時，**VSPerfASPNetCmd** 是慣用的命令列工具。  
@@ -33,9 +34,9 @@ ms.lasthandoff: 05/22/2018
 |**/Trace** 或 **/t**|使用檢測方法進行網站分析。 /Trace 無法搭配 **/Sample** 使用。|  
 |**/Memory**[**:**`Type`] 或 **/m**[**:**{**a**&#124;**l**}]|分析記憶體配置，以及選擇性地分析物件存留期 (記憶體回收)。 **/Memory** 可以搭配取樣或檢測方法使用。<br /><br /> *Type* 可以是下列其中之一：<br /><br /> -   **allocation** (或 **a**) 只會收集記憶體配置資料。<br />-   **lifetime** (或 **l**) 會收集記憶體配置和物件存留期資料。<br /><br /> `Type` 預設為 **allocation**。|  
 |**/Tip** 或 **/i**|將詳細 ASP.NET 要求和 ADO.NET 呼叫資訊加入至分析資料。 **/Tip** 可以搭配取樣或檢測方法使用，且可與 **/Memory** 選項一起使用。|  
-|**/Output:** `File` 或 **/o:**`File`|指定分析資料 (.vsp) 檔案的路徑與檔案名稱。|  
+|**/Output:** `File` 或 **/o:**`File`|指定分析資料 (*.vsp*) 檔案的路徑與檔案名稱。|  
 |**/NoWait** 或 **/n**|立即傳回命令提示字元，以便在 [命令提示字元] 視窗中使用其他命令。 您必須在個別的命令列上輸入 **VSPerfASPNETCmd /Shutdown** 以關閉分析。|  
-|**/PackSymbols**[:{**on**&#124;**off**} 或 **/p**[:{**on**&#124;**off**}|在分析資料 (.vsp) 檔案中內嵌符號 (函式與參數名稱等)。|  
+|**/PackSymbols**[:{**on**&#124;**off**} 或 **/p**[:{**on**&#124;**off**}|在分析資料 (*.vsp*) 檔案中內嵌符號 (函式與參數名稱等)。|  
 |**/Shutdown:** `Website` 或 **/d:**`Website`|關閉分析。 在使用 **/NoWait** 選項啟動分析之後，或者分析工具非預期地結束時，作為命令列上的唯一選項使用。 指定您在原始 **VSPerfASPNETCmd** 命令中使用的相同 URL。|  
 |`Website`|要分析之網站的 URL。|  
   

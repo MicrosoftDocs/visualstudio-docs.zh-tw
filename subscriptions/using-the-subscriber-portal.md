@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b06e56116c9cfee203dd74337aefe4551375792d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282388"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279358"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用訂閱者入口網站 - my.<span></span>visualstudio<span></span>.com
 
@@ -28,7 +28,7 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 包含在您訂閱中的工具和服務，都會在 [權益] 頁面上以「磚」的形式顯示。  訂閱並不一定會包含全部的權益。 磚會分組為三個類別：[工具]、[專業開發] 及 [支援]。  如果您正在使用 Visual Studio Dev Essentials，您也會看到名為 [精選] 的類別，其中可能會包含來自其他三個類別的特定權益。
 
 ### <a name="tools"></a>工具
-您可以在 [工具] 類別找到核心開發工具，例如 Visual Studio IDE、Visual Studio Team Services，以及由我們的合作夥伴所提供的工具。  您也會看到 Azure 和 Visual Studio App Center 等服務。
+您可以在 [工具] 類別找到核心開發工具，例如 Visual Studio IDE、Azure DevOps Services，以及由我們合作夥伴所提供的工具。  您也會看到 Azure 和 Visual Studio App Center 等服務。
 
 ### <a name="professional-development"></a>專業開發
 此類別所包含的權益，包括來自 Microsoft 及合作夥伴的線上訓練，以及 MSDN 雜誌的訂閱，全都是為了要協助您提升開發技巧，並取得有關程式碼的最新資訊。
@@ -45,7 +45,7 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 造訪 [產品金鑰] 頁面以取得安裝及啟動產品的金鑰，以及查看您已取得的金鑰。  您甚至可以匯出所有金鑰的清單，以另外妥善保存。
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[訂閱](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-[訂閱] 頁面可讓您查看自己所擁有的訂閱、在訂閱之間切換、更新訂閱，以及啟動新的訂閱。 您也可以將使用 Microsoft 帳戶存取的訂閱，和已經與現有 Visual Studio IDE、Visual Studio Team Services 或 Azure 資源相關聯的替代帳戶關聯在一起。
+[訂閱] 頁面可讓您查看自己所擁有的訂閱、在訂閱之間切換、更新訂閱，以及啟動新的訂閱。 您也可以將使用 Microsoft 帳戶存取的訂用帳戶，和已經與現有 Visual Studio IDE、Azure DevOps Services 或 Azure 資源相關聯的替代帳戶建立關聯。
 
 ## <a name="support"></a>支援
 
@@ -53,4 +53,4 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/) \(英文\)
 
-是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  [Marketplace] 可協助使用者尋找擴充功能、工具與服務，以進一步改進 Visual Studio Team Services、Team Foundation Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
+是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  [Marketplace] 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps Services、Team Foundation Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。

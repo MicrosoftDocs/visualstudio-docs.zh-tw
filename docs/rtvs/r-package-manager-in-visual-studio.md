@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666510"
 ---
 # <a name="package-manager"></a>套件管理員
 
-Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 若要開啟它，請選取 [R 工具] > [Windows] > [套件]，或按 Ctrl+7。
+Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 若要開啟它，請選取 [R 工具] > [Windows] > [套件]，或按 **Ctrl**+**7**。
 
 套件管理員有三個索引標籤。 每個索引標籤都會在左側顯示相關套件清單，並在右側顯示所選取套件的特定詳細資料，包括套件的版本、描述、授權、安裝位置以及其他相關資訊的連結。 右上方的搜尋方塊可讓您篩選清單。
 
@@ -41,5 +42,5 @@ Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 �
 
 套件會安裝到下列位置：
 
-- RTVS 隨附的核心套件會安裝在 `C:\Program Files\Microsoft\R Client\R_SERVER\library`
-- 其他套件會安裝到 `%userprofile%\Documents\R\win-library\3.3`
+- RTVS 隨附的核心套件會安裝在 *C:\Program Files\Microsoft\R Client\R_SERVER\library*
+- 其他套件會安裝到 *%userprofile%\Documents\R\win-library\3.3*

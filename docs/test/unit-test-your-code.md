@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380354"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320900"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -49,8 +49,8 @@ ms.locfileid: "39380354"
 |**對 C++ 程式碼進行單元測試**|-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**隔離單元測試**|-   [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用程式碼涵蓋範圍來識別測試專案程式碼的哪個部分：** 了解 Visual Studio 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**使用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試新增至其中，以便找出應用程式中的效能與壓力問題。|-   [負載測試 (VSTS 和 TFS)](/vsts/load-test/)|
-|**設立品質閘門：** 您可以建立品質閘門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [簽入原則 (VSTS)](/vsts/tfvc/add-check-policies)|
+|**使用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試新增至其中，以便找出應用程式中的效能與壓力問題。|-   [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**設定品質閘門：** 您可以建立品質閘門，確定程式碼在簽入或合併前都必須先經過測試，以確保程式碼的品質。|-   [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**設定測試選項：** 例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 參考文件

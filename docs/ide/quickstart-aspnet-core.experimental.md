@@ -2,7 +2,7 @@
 title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135592"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028932"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -39,9 +39,9 @@ ms.locfileid: "46135592"
 
 1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，確認上方的下拉式功能表出現 [ASP.NET Core 2.0]。 接著，選擇 [Web 應用程式]，然後選擇 [確定]。
 
-  ![檢視示範如何在 Visual Studio 中建立 C# ASP.NET Core 專案的動畫 .gif 檔案](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![檢視示範如何在 Visual Studio 中建立 C# ASP.NET Core 專案的動畫 .gif 檔案](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Visual Studio 隨即開啟您的專案檔。
+   Visual Studio 隨即開啟您的專案檔。
 
    > [!NOTE]
    > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
@@ -58,13 +58,15 @@ ms.locfileid: "46135592"
 
 接下來，您會建立並執行 "Hello World" Web 應用程式。 方式如下：
 
-1. 在 [方案總管] 中，展開 [頁面] 資料夾，然後選擇 **About.cshtml**。
+1. 在 Visual Studio 的 [方案總管] 中，展開 [Pages] 資料夾。 然後，選擇 [About.cshtml]。
 
-   此檔案對應至 Web 應用程式中名為 [關於] 的頁面。
+   ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   該檔案是對應到 Web 應用程式 (在網頁瀏覽器中執行) 中名為 [關於] 的頁面。
 
    ![Web 應用程式中的 [關於] 頁面](../ide/media/csharp-aspnet-about-page.png)
 
-1. 將 [其他資訊] 文字變更為 "**Hello World!**"。
+1. 在 Visual Studio 程式碼編輯器中，將 "additional information" 文字變更為 "**Hello World!**"。
 
 1. 在 [方案總管] 中，展開 [About.cshtml]，然後選擇 **About.cshtml.cs**。
 
@@ -72,12 +74,12 @@ ms.locfileid: "46135592"
 
 1. 選擇 [IIS Express] 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
-  ![檢視示範如何在 Visual Studio 中建立並執行 C# ASP.NET Core Web 應用程式的動畫 .gif 檔案](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![檢視示範如何在 Visual Studio 中建立並執行 C# ASP.NET Core Web 應用程式的動畫 .gif 檔案](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > 如果您收到錯誤訊息指出「無法連接到網頁伺服器 'IIS Express'」，請關閉 Visual Studio，然後使用右鍵或操作功能表中的 [以系統管理員身分執行] 選項來開啟它。 接著，再次執行應用程式。
 
-1. 確認 [關於] 頁面包含更新的文字。
+1. 在網頁瀏覽器中，確認 [關於] 頁面包含更新的文字。
 
 1. 關閉網頁瀏覽器。
 

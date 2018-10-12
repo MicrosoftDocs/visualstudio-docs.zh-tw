@@ -1,7 +1,7 @@
 ---
 title: 快速入門 - 複製 Python 程式碼存放庫
 description: 在此快速入門中，您可以使用 Visual Studio Team Explorer 複製 Python Koans 存放庫，以在 Visual Studio 中建立 Python 專案。
-ms.date: 06/26/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636820"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281685"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
@@ -30,9 +30,9 @@ ms.locfileid: "39636820"
 
 1. 啟動 Visual Studio。
 
-1. 選取 [檢視] > [Team Explorer] 以開啟 **Team Explorer** 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。 (如果您沒看到如下所示的 [連線] 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
+1. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure Repos，或是複製存放庫。 (如果您沒看到如下所示的 [連線] 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
 
-    ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media/team-explorer.png)
+    ![顯示 Azure Repos、GitHub 和複製存放庫的 Team Explorer 視窗](media/team-explorer.png)
 
 1. 在 [本機 Git 存放庫] 下，選取 [複製] 命令，然後在 URL 欄位中輸入 `https://github.com/gregmalcolm/python_koans`，輸入所複製檔案的資料夾，然後選取 [複製] 按鈕。
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668484"
 ---
 # <a name="start"></a>啟動
-**Start** 選項是一個 VSPerfCmd.exe 選項，可將分析工具初始化為指定的程式碼剖析方法。  
+**Start** 選項是一個 *VSPerfCmd.exe* 選項，可將分析工具初始化為指定的分析方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -65,15 +66,15 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  將分析工具關閉。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何使用 VSPerfCmd.exe **Start** 選項來初始化分析工具。  
+ 下列範例示範如何使用 *VSPerfCmd.exe* **Start** 選項來初始化分析工具。  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [分析服務](../profiling/command-line-profiling-of-services.md)

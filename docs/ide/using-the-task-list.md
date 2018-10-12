@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336067"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612697"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -65,9 +65,9 @@ ms.locfileid: "34336067"
 
 ### <a name="custom-tokens"></a>自訂權杖
 
-根據預設，Visual Studio 會包含下列語彙基元：`HACK`、`TODO`、`UNDONE`及 `NOTE`。 它們不區分大小寫。
+根據預設，Visual Studio 會包含下列語彙基元：`HACK`、`TODO`、`UNDONE`及 `UnresolvedMergeConflict`。 它們不區分大小寫。 您也可以建立自己的自訂語彙基元。
 
-您也可以建立自己的自訂語彙基元。 建立自訂語彙基元：
+建立自訂語彙基元：
 
 1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。
 
@@ -77,9 +77,11 @@ ms.locfileid: "34336067"
 
    ![Visual Studio 工作清單](../ide/media/vs2015_task_list_options.png)
 
-3. 在 [語彙基元]  分類的 [名稱] 文字方塊中，輸入您的語彙基元名稱，例如 **BUG**。
+3. 在 [名稱] 文字方塊中輸入您的權杖名稱，例如 **BUG**。
 
-4. 在 [ **優先權** ] 下拉式清單中，選擇新語彙基元的預設優先權。 選擇 [ **加入** ] 按鈕。
+4. 在 [ **優先權** ] 下拉式清單中，選擇新語彙基元的預設優先權。
+
+5. 選擇 [新增]。
 
 ### <a name="c-todo-comments"></a>C++ TODO 註解
 

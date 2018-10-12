@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138418"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280580"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -119,7 +119,7 @@ ms.locfileid: "43138418"
 |Azure 串流分析 <br><br>HDInsight | Management.azure.com |https|443 |用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
 | 封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有對特定建置工作案例 (例如：NuGet 工具安裝程式、Node 工具安裝程式)，或在您想要讓摘要使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用來與 VSTS 連線 |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用來與 Azure DevOps Services 連線 |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解

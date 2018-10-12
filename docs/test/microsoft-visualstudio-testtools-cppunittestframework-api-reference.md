@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381982"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280918"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。
 
- 標頭檔位於 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include** 資料夾。
+ 標頭檔位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 資料夾。
 
- Lib 檔案位於 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib** 資料夾。
+ Lib 檔案位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 資料夾。
 
 標頭和 lib 路徑會自動在原生測試專案中設定。
 

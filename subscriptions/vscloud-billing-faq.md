@@ -9,12 +9,12 @@ description: 雲端訂用帳戶帳單問題。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289291"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283297"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 
@@ -92,7 +92,7 @@ ms.locfileid: "43289291"
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>問：雲端訂閱的年度訂閱和月租方案有何差異？
 
-答：雲端訂閱月租方案包含 Visual Studio 和 VSTS 和 TFS 的使用。 年度雲端訂閱除此之外還包含訂閱者權益，包括使用 Windows 和其他 Microsoft 軟體來安裝和執行開發與測試，以及用於實驗 Azure 服務和執行雲端開發和測試、訓練、支援和其他更多作業的每月 Azure 點數。
+答：雲端訂閱月租方案包含 Visual Studio 和 Azure DevOps Services 和 TFS 的使用。 年度雲端訂閱除此之外還包含訂閱者權益，包括使用 Windows 和其他 Microsoft 軟體來安裝和執行開發與測試，以及用於實驗 Azure 服務和執行雲端開發和測試、訓練、支援和其他更多作業的每月 Azure 點數。
 [比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>問：如果購買 Visual Studio 雲端訂閱是否可以取得新版本的 Visual Studio？

@@ -9,16 +9,16 @@ description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289381"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279020"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
-選取的 Visual Studio 訂用帳戶包含 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 的六個月訂用帳戶。  MODERNRequirements 的 SmartOffice4TFS 透過以 Microsoft Word 為基礎的報表，以及快速、簡化的 RTF 撰寫，擴充 TFS 或 Visual Studio Team Services 的功能。  ModernRequirements4TFS 則提供工作項目基準化和 HTML5 模擬功能。
+選取的 Visual Studio 訂用帳戶包含 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 的六個月訂用帳戶。  MODERNRequirements 的 SmartOffice4TFS 透過以 Microsoft Word 為基礎的報表，以及快速、簡化的 RTF 撰寫，擴充 TFS 或 Azure DevOps Services 的功能。  ModernRequirements4TFS 則提供工作項目基準化和 HTML5 模擬功能。
 
 
 ## <a name="activation-steps"></a>啟用步驟
@@ -101,4 +101,4 @@ ms.locfileid: "43289381"
 ## <a name="support-resources"></a>支援資源
 -  需要 ModernRequirements 的產品說明嗎？  請瀏覽 https://www.modernrequirements.com/support-2/。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

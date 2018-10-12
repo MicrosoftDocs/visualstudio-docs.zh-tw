@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054552"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775100"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054552"
 
   建置專案，然後確定已在 [工具] > [選項] > [測試] 中開啟以組件為基礎的探索。
 
-  [即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是以來源為基礎的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段定義。 這些測試需要建置才能正確地被探索。 在 15.6 預覽中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 此設定表示當您在編輯時，即時測試探索會盡可能探索更多測試，而以組件為基礎的探索允許動態定義的測試在建置之後顯示。 即時測試探索改善了回應性，但仍然可讓您在建置之後取得完整且正確的結果。
+  [即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是以來源為基礎的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 這些測試需要建置才能正確地被探索。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能探索更多測試，而以組件為基礎的探索允許動態定義的測試在建置之後顯示。 即時測試探索改善了回應性，但仍然可讓您在建置之後取得完整且正確的結果。
 
 ## <a name="test-explorer--plus-symbol"></a>測試總管 '+' (加號) 符號
 **顯示在測試總管最上面一行的 '+' (加號) 符號代表什麼？**
@@ -83,7 +83,7 @@ ms.locfileid: "43054552"
 ## <a name="search-by-file-path"></a>依檔案路徑搜尋
 **在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。**
 
-已在 Visual Studio 2017 的 15.7 版 Preview 3 將 [測試總管] 搜尋方塊中的檔案路徑篩選條件移除。 此功能的使用量低，而且排除此功能，[測試總管] 可以更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
+已在 Visual Studio 2017 的 15.7 版 Preview 3 將 [測試總管] 搜尋方塊中的檔案路徑篩選條件移除。 此功能的使用量低，而且排除這項功能，[測試總管] 可以更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="test-adapter-nuget-reference"></a>測試配接器 NuGet 參考
 **在 Visual Studio 2017 15.8 版中， 已探索到我的註冊，但不會執行。**
@@ -93,6 +93,31 @@ ms.locfileid: "43054552"
 **測試專案t {} 未參考任何 .NET NuGet 配接器。這個專案的測試探索或執行會無法執行。建議您在解決方案中的每個 .NET 測試專案參考 NuGet 測試配接器。**
 
 專案必須使用測試配接器 NuGet 套件，而非使用測試配接器延伸模組。 使用持續整合時，這可以大幅改善效能並降低發生的問題數。 在[版本資訊](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension)深入了解 .NET 測試配接器延伸模組淘汰。
+
+> [!NOTE]
+> 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具] > [選項] > [測試]。 
+
+  ![工具選項中的 [測試總管] 配接器行為](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>找不到 UWP TestContainer
+**我的 UWP 測試無法在 Visual Studio 2017 15.7 版及更新版本中執行。**
+
+最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出] > [測試] 中看到下列錯誤：
+
+**System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+  
+修正方法：
+- 將您的測試專案建置屬性更新如下：
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- 將 TestPlatform SDK 版本更新如下：
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>使用功能旗標
 **如何開啟功能旗標以試用新的測試功能？**

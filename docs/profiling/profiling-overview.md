@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668461"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio 中的分析概觀
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>後續步驟
 
-* [分析功能導覽](../profiling/profiling-feature-tour.md)，以了解測量應用程式效能的多種不同方式。
+* [首先參閱分析工具](../profiling/profiling-feature-tour.md)，以了解測量應用程式效能的多種不同方式。
 
 * [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 
