@@ -25,6 +25,7 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Windows 開發人員帳戶](vs-windows-dev.md)
 #### [Office 365 開發人員訂閱](vs-office-dev.md)
+#### [Office 365 訂閱](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure 隨用隨付](vs-azure-payg.md)
