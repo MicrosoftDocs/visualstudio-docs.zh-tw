@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPortSuppliers2::Reset |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f69cbacf-da9d-4b22-b8a2-abd9b8c131f2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46870ea4b105d6db42be0feaf693027bc15df7c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0f90e954f22d3284505dda9e97b969ef981444a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487536"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303403"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugPortSuppliers2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugportsuppliers2-reset)。  
-  
 將列舉重設第一個項目。  
   
 ## <a name="syntax"></a>語法  

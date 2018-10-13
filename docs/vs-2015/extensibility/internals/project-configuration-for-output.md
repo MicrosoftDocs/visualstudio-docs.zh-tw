@@ -1,7 +1,7 @@
 ---
 title: 專案組態輸出 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304118"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[輸出的專案組態](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output)。  
-  
 每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置程序。 這些輸出項目都是私用使用者，並可以放在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。  
   
  輸出項目可透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2>方法和列舉使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>方法。 當您想要輸出項目分組時，您的專案應該也會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>介面。  

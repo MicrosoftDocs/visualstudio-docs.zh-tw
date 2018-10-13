@@ -1,7 +1,7 @@
 ---
 title: PROGRAM_DESTROY_FLAGS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c82229526123386f752d723dc432b6e91bba71ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1c32ef0e56871cb2db48d769c9d4c82c9aad076
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294238"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[PROGRAM_DESTROY_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/program-destroy-flags)。  
-  
 有效的列舉程式的值會終結旗標。  
   
 ## <a name="syntax"></a>語法  

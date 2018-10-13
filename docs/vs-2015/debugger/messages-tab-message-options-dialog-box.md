@@ -1,7 +1,7 @@
 ---
 title: 訊息索引標籤中，訊息選項對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8048c63ed9b9f049ed171002dfcc612fc9361569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298541"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[訊息索引標籤中，訊息選項對話方塊](https://docs.microsoft.com/visualstudio/debugger/messages-tab-message-options-dialog-box)。  
-  
 使用**訊息**索引標籤，選取 [到] 清單中的哪些訊息類型[訊息檢視](../debugger/messages-view.md)，並指定訊息的搜尋準則。 若要顯示[訊息選項對話方塊](../debugger/message-options-dialog-box.md)，選擇**記錄檔訊息**從**Spy**功能表。  
   
  一般而言，您先選取**訊息群組**，然後選取 個別調整選取項目**訊息，以檢視**。 **所有** 按鈕會選取所有的訊息類型，而**無** 按鈕會清除所有型別。  

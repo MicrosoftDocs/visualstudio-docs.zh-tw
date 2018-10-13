@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 分析 C-C + + 程式碼的缺失 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c944a50330f458240b3da2fea8952abb5b8f02b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5c2f6bfeabb80c03b1940ada2f57abbefb60173
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272638"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 分析 C/c + + 程式碼的缺失](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-c-cpp-code-for-defects)。  
-  
 本逐步解說示範如何使用 C/c + + 程式碼的程式碼分析工具分析 C/c + + 程式碼有潛在的程式碼缺失。  
   
  在本逐步解說中，您逐步完成程序使用程式碼分析來分析您的 C/c + + 程式碼有潛在的程式碼缺失。  

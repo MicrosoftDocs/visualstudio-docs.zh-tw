@@ -1,7 +1,7 @@
 ---
 title: CvInitProvider 函式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a65df9e9ccc61aec0a96f5f467962d46eb88b78c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa41b1cbbba6e88a86ae5af0c471d5f6627dcca2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276207"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CvInitProvider 函式](https://docs.microsoft.com/visualstudio/profiling/cvinitprovider-function)。  
-  
 初始化標記提供者。 必須在其他並行視覺化檢視 SDK 函式之前呼叫。  
   
 ## <a name="syntax"></a>語法  

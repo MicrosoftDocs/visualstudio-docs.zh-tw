@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定偵錯.NET Framework 版本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272957"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定偵錯的 .NET Framework 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定.NET Framework 版本的偵錯](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging)。  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 偵錯工具支援偵錯舊版 Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 以及最新的版本。 如果您從 Visual Studio 中啟動應用程式，偵錯工具一定可以識別正確的版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]應用程式進行偵錯。 如果已在執行應用程式，並使用**附加至**，偵錯工具不一定能夠識別舊版[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 如果發生這種情況，就會出現錯誤訊息：  
   
  偵錯工具對於應用程式所要使用的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本做了不正確的假設。  

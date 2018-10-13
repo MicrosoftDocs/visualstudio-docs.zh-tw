@@ -1,7 +1,7 @@
 ---
 title: 使用自訂主機處理文字範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303455"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[藉由使用自訂主機處理文字範本](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host)。  
-  
 *文字範本轉換*流程採用*文字範本*做為輸入並產生文字檔做為輸出的檔案。 您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能，或從執行於已安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之電腦的獨立應用程式中，呼叫文字轉換引擎。 不過，您必須提供*文字範本化主機*。 這個類別會將範本連接至環境、尋找資源 (例如組件和 Include 檔)，以及處理輸出和錯誤訊息。  
   
 > [!TIP]

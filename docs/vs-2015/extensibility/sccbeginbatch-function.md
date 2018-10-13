@@ -1,7 +1,7 @@
 ---
 title: SccBeginBatch 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e62074fa30d68e4cd283fb431f0ae64cff957ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50fa6d14507a9af98d9ca303bc7bf9dbbf93ab6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283448"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccBeginBatch 函式](https://docs.microsoft.com/visualstudio/extensibility/sccbeginbatch-function)。  
-  
 此函式會啟動批次一連串的原始檔控制作業。 [SccEndBatch](../extensibility/sccendbatch-function.md)將被呼叫來結束批次。 這些批次可能不是巢狀。  
   
 ## <a name="syntax"></a>語法  

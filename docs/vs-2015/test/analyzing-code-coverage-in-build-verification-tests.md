@@ -1,7 +1,7 @@
 ---
 title: 分析組建驗證測試中的程式碼涵蓋範圍 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0cbcf51d6b7eb3229366216a86d191d5946f30f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 530ccfb44cc93ebcc5777cc1bdc8ecc038076c62
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284774"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>分析組建驗證測試中的程式碼涵蓋範圍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[分析組建驗證測試中的程式碼涵蓋範圍](https://docs.microsoft.com/visualstudio/test/analyzing-code-coverage-in-build-verification-tests)。  
-  
 在 Microsoft Visual Studio 的程式碼涵蓋範圍分析顯示您有多少程式碼由自動化的測試執行。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
  當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在組建流程中執行測試](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於分析組建服務的程式碼涵蓋範圍可以針對整個專案的涵蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  

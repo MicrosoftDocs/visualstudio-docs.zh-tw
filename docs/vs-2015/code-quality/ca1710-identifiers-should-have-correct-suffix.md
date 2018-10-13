@@ -1,7 +1,7 @@
 ---
 title: ： Ca1710 識別項應該正確的後置詞 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7e9288e5d487adbc454ca6874a5cf6784c0ee960
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 45687b8997f66002a3ae7ae4e94a4d81c63320c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305396"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710：識別項應該使用正確的後置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1710： 識別項應該使用正確的後置詞](https://docs.microsoft.com/visualstudio/code-quality/ca1710-identifiers-should-have-correct-suffix)。
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|

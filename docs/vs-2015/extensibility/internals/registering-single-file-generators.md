@@ -1,7 +1,7 @@
 ---
 title: 註冊單一檔案產生器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d500227f60552fea171b038523808e4409cf9c33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303559"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註冊單一檔案產生器](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-single-file-generators)。  
-  
 若要提供自訂的工具[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您必須註冊因此[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可以加以具現化，並與特定專案類型關聯。  
   
 ### <a name="to-register-a-custom-tool"></a>若要註冊自訂的工具  

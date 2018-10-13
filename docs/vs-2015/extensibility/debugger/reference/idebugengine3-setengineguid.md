@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3::SetEngineGuid |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fee1271fd67e5a8aef0bdd7c44813bff59238ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5507cdac8934426aef277c56635e3d378b25e4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284345"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngine3::SetEngineGuid](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine3-setengineguid)。  
-  
 這個方法會設定偵錯引擎 (DE) `GUID`。  
   
 ## <a name="syntax"></a>語法  

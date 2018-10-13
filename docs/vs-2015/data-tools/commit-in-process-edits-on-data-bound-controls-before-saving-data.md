@@ -1,7 +1,7 @@
 ---
 title: 儲存資料前先認可資料繫結控制項上的同處理序編輯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd56f9acfce7933d0bc89e7e86eb8083b9b1f867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296025"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[儲存資料前先認可資料繫結控制項上的同處理序編輯](https://docs.microsoft.com/visualstudio/data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data)。  
-  
   
 當您編輯資料繫結控制項中的值，使用者必須瀏覽已更新的值認可到基礎資料來源控制項繫結至目前的資料錄。 當您拖曳項目從[資料來源 視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖曳至表單，您卸除第一個項目會產生程式碼插入**儲存**按鈕的 click 事件的<xref:System.Windows.Forms.BindingNavigator>。 此程式碼會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的<xref:System.Windows.Forms.BindingSource>。 因此，呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法會產生只會針對第一個<xref:System.Windows.Forms.BindingSource>加入至表單。  
   

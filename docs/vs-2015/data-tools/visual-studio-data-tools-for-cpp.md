@@ -1,7 +1,7 @@
 ---
 title: C + + 的 visual Studio 資料工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306185"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C + + 的 visual Studio 資料工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[c + + 的 Visual Studio data tools](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp)。  
-  
   
 當您存取資料來源時，原生 c + + 通常可以提供最快的效能。 不過，不是因為它是.NET 應用程式的豐富工具在 Visual Studio 中的 c + + 應用程式的資料。 比方說，不能使用資料來源視窗，拖放到 c + + 設計介面上的資料來源。 如果您需要物件關聯式層次，您必須自行撰寫，或使用協力廠商產品。  這也適用於資料繫結功能，雖然使用 Microsoft Foundation Class 程式庫的應用程式可以使用一些資料庫類別，以及文件和檢視儲存在記憶體中的資料，並顯示給使用者。 如需詳細資訊，請參閱 < [Visual c + + 中的資料存取](https://msdn.microsoft.com/library/7wtdsdkh.aspx)。  
   

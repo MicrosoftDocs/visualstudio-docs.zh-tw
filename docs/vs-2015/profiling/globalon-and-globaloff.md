@@ -1,7 +1,7 @@
 ---
 title: GlobalOn 和 GlobalOff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d80ff0f0e7177c95eb7d1c4607004bf7f70b7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301128"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[GlobalOn 和 GlobalOff](https://docs.microsoft.com/visualstudio/profiling/globalon-and-globaloff)。  
-  
 VSPerfCmd.exe **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列程式碼剖析工作階段中的所有處理序和執行緒進行程式碼剖析。  
   
  您可以在 VSPerfCmd.exe 命令列中僅指定 **GlobalOn** 和 **GlobalOff** 選項，或您可以將它們納入也包含 **Start**、**Launch** 或 **Attach** 選項的命令列中。  

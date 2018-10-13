@@ -1,7 +1,7 @@
 ---
 title: 如何：收集 CPU 計數器資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f7c9f88dbbc3d7d2022736528f2b35fa3a325b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299867"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 收集 CPU 計數器資料](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-cpu-counter-data)。  
-  
 CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明當您使用檢測分析方法時要如何收集事件計數器資料。  
   
  **需求**  

@@ -1,7 +1,7 @@
 ---
 title: 使用 LINQ to XML 進行 WPF 資料繫結範例 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60a981b4ea2e2cbf6f71b9a845170ac67c218999
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c86dcc5e75474c6e0539b9d47f1b9ad11592de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288037"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>使用 LINQ to XML 的 WPF 資料繫結範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WPF 資料繫結使用 LINQ to XML 範例](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example)。  
-  
 本節提供 Windows Presentation Foundation (WPF) 範例，將使用者介面元件繫結到內嵌的 XML 資料來源。 此範例 (及包含此範例的 Visual Studio 專案) 的名稱為 *LinqToXmlDataBinding*。  
   
 ## <a name="in-this-section"></a>本節內容  

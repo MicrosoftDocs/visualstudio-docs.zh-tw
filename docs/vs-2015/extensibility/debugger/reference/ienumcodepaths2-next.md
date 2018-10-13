@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::Next |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be59bce9d915c52c137b51516e70886b7f888c6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3374710f1f76ae5736358ab45c28a99db0f32441
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303767"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumCodePaths2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-next)。  
-  
 從列舉中傳回下的一個項目集。  
   
 ## <a name="syntax"></a>語法  

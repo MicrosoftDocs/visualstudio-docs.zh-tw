@@ -1,7 +1,7 @@
 ---
 title: 如何： 針對服務進行疑難排解 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0cbad73fe5be46c7371356a0a3746b7e58315ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279028"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 針對服務進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 疑難排解服務](https://docs.microsoft.com/visualstudio/extensibility/how-to-troubleshoot-services)。  
-  
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  
   
 -   服務未向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  

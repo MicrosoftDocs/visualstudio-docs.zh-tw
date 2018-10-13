@@ -1,7 +1,7 @@
 ---
 title: 使用舊版 API 來自訂程式碼的 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299984"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用舊版 API 的自訂程式碼 Windows](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api)。  
-  
 程式碼視窗會支援一或多個文字檢視的文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  
   
  程式碼視窗所控制的語言服務，而且每個語言服務可以提供它自己的程式碼視窗管理員。 這可讓語言服務，讓它自己的裝飾加入程式碼視窗中，例如波浪線、 顏色標示、 等等。 如需如何建立核心視窗的詳細資訊，請參閱[具現化核心編輯器使用舊版 API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)。  

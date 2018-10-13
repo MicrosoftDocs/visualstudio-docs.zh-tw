@@ -1,7 +1,7 @@
 ---
 title: 自訂編輯器中的語法著色 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a2165d51f77103ad7f6e69a20b5b73ef04429db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62fd407bdb377c490d26287701cf989a64484773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305691"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中的語法著色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂編輯器中著色的語法](https://docs.microsoft.com/visualstudio/extensibility/syntax-coloring-in-custom-editors)。  
-  
 Visual Studio 環境 SDK 編輯器，包括核心編輯器中，找出特定的語法項目，並顯示，且指定的色彩，給定文件檢視使用的語言服務。  
   
 ## <a name="colorization-requirements"></a>顏色標示需求  

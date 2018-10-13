@@ -1,7 +1,7 @@
 ---
 title: 擴充輸出視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 127ea733594f9ed4b7da38719f517f9edc1fcef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0608d8f6c4c9d9c0ae1454110e6db212f16bfe9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300543"
 ---
 # <a name="extending-the-output-window"></a>延伸輸出視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充輸出視窗](https://docs.microsoft.com/visualstudio/extensibility/extending-the-output-window)。  
-  
 **輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，哪一個專案中進行通訊的組建中，相關訊息並**一般**，在其中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。  
   
  您可以控制**輸出**視窗中直接透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面，提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服務，請定義用來建立、 擷取和終結方法**輸出**視窗窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面會定義用於顯示窗格、 隱藏窗格，以及管理其文字的方法。 控制另一種**輸出** 視窗是透過<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio Automation 物件模型中的物件。 這些物件會封裝幾乎所有的功能<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 颾魤 ㄛ<xref:EnvDTE.OutputWindow>並<xref:EnvDTE.OutputWindowPane>物件加入一些較高層級的功能，讓您更輕鬆地列舉**輸出**視窗窗格以及從窗格擷取文字。  

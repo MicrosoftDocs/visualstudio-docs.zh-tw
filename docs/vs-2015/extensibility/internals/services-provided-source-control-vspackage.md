@@ -1,7 +1,7 @@
 ---
 title: 提供的服務 (原始檔控制 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aff288f68f32d3850cfa92d5999febd1c65572e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee980b74415d906a5c48cfd5ad1e20e7b5544320
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273373"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供的服務 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[提供的服務 (原始檔控制 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/services-provided-source-control-vspackage)。  
-  
 服務是透過此功能會共用 Vspackage 之間，以及 Visual Studio 整合式的開發環境 (IDE) 和其已安裝的 Vspackage 之間的主要機制。 如需詳細的服務和其重要性，Visual Studio IDE 中的詳細說明，請參閱[使用和提供服務](../../extensibility/using-and-providing-services.md)。  
   
 ## <a name="the-source-control-service"></a>原始檔控制服務  

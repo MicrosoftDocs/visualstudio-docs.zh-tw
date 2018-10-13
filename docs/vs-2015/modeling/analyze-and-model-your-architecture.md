@@ -1,14 +1,14 @@
 ---
 title: 分析並製作架構模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278352"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[進行分析並製作架構模型](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture)。  
-  
 您可以使用 Visual Studio Architecture and Modeling Tools 設計應用程式並建立應用程式模型，確保您的應用程式符合使用者需求。 使用 Visual Studio 視覺化程式碼的架構、行為和關聯性，讓您可以更輕鬆地了解現有的程式碼。  
   
  請在開發過程中，於整個應用程式生命週期的不同詳細資料層級建立模型。 您可以將模型項目連結至 Team Foundation Server 工作項目和開發計劃，來追蹤需求、工作、測試案例、Bug 和其他與模型相關聯的工作。 請參閱[案例： 使用視覺化和模型變更設計](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)。  

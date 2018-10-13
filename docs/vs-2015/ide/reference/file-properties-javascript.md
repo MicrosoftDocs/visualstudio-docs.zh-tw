@@ -1,7 +1,7 @@
 ---
 title: JavaScript、檔案屬性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3f9dcef138bdb9e0452eb1b739dca652d0844d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286282"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檔案屬性，而 JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/file-properties-javascript)。  
-  
   
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。  
   

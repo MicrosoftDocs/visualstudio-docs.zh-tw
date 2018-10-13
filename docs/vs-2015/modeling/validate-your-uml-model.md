@@ -1,7 +1,7 @@
 ---
 title: 驗證 UML 模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292691"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[驗證 UML 模型](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model)。  
-  
 您可以在 Visual Studio 中繪製的一些 UML 模型可能會在您的專案中被視為無效。 例如，您可能需要使用案例一律必須連結到具有生命線的循序圖，而生命線代表使用案例的執行者。 您可以安裝或定義*條件約束*，協助您的小組，以符合這類的需求。 當使用者儲存或開啟模型時，可以套用條件約束，也可以用功能表命令來叫用條件約束。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 沒有提供條件約束，因為它們取決於您的小組如何解譯和使用 UML 模型。 但是，您可以定義自己的條件約束，以及安裝其他使用者所定義的條件約束。 若要了解如何定義條件約束，並封裝它們以進行發佈，請參閱[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)。  

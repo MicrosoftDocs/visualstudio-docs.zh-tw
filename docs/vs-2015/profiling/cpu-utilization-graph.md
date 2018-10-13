@@ -1,7 +1,7 @@
 ---
 title: CPU 使用率圖形 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: defa2f16a18c97a10f74e8d351152442ccc0907f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc7dace6156cbb0909c2a54294a82f848fcb5b5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292217"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CPU 使用率圖形](https://docs.microsoft.com/visualstudio/profiling/cpu-utilization-graph)。  
-  
 CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X 軸代表追蹤的持續時間，而 y 軸代表系統上的邏輯核心數目。 圖形不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在某個指定期間各以 50% 的產能執行，則此檢視會顯示共使用一個邏輯核心。  
   
 ## <a name="cpu-utilization-graph-colors"></a>CPU 使用率圖形色彩  

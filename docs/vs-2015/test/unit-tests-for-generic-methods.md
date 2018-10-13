@@ -1,7 +1,7 @@
 ---
 title: 泛型方法的單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 19e17718cdee01b4fec4b126072126d4ff9ee281
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295785"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[泛型方法的單元測試](https://docs.microsoft.com/visualstudio/test/unit-tests-for-generic-methods)。  
-  
 您可以產生泛型方法的單元測試，就像您為其他方法所進行的測試一樣，如同[如何：建立及執行單元測試](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束  
