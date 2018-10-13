@@ -1,7 +1,7 @@
 ---
 title: 在遠端電腦上的執行 Windows 市集應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289571"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在遠端電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在遠端電腦上的執行 Windows 市集應用程式](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine)。  
-  
 僅適用於 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
  Visual Studio 遠端工具應用程式可讓您從執行 Visual Studio 的第二部電腦，執行、偵錯、程式碼剖析及測試在一個裝置上執行的 Windows 市集應用程式。 當 Visual Studio 電腦不支援 Windows 市集應用程式專屬功能 (如觸控、地理位置和實體方向) 時，在遠端裝置上執行就特別有效。 本主題說明設定和啟動遠端工作階段的程序。  

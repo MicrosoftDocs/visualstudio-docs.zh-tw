@@ -1,7 +1,7 @@
 ---
 title: 開啟和儲存專案項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1013253f39dec2b3d0a97f1bc4b8deb2dca913a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a642d2cffe66a4ed5ddc68db75368e1d2e71fbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283565"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開啟和儲存專案項目](https://docs.microsoft.com/visualstudio/extensibility/internals/opening-and-saving-project-items)。  
-  
 當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 下列主題討論不同的方法，來開啟和儲存檔案。  
   
 ## <a name="in-this-section"></a>本節內容  

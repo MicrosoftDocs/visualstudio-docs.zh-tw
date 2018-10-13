@@ -1,7 +1,7 @@
 ---
 title: 'Idiasectioncontrib:: Get_notcached |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08a9058f60b2a6bc30e4e10fdbc63e443ae84a24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c3aa636cff96e6055cae20d9cdb42091ac8004f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284540"
 ---
 # <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasectioncontrib:: Get_notcached](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-notcached)。  
-  
 擷取旗標，指出是否無法快取一節。  
   
 ## <a name="syntax"></a>語法  

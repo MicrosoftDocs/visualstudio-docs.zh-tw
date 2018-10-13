@@ -1,7 +1,7 @@
 ---
 title: 以特定的 .NET Framework 版本為目標 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277923"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>以特定的 .NET Framework 版本為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[特定的.NET Framework 版本為目標](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version)。  
-  
 在 Visual Studio 中，您可以指定要讓專案使用的目標 .NET Framework 版本或設定檔。 如果應用程式會在另一部電腦上執行，則該應用程式的目標 Framework 版本必須與該電腦上安裝的 Framework 版本相容。  
   
  本節的主題說明如何在專案中，以特定的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本為目標。  

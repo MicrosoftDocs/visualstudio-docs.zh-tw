@@ -1,7 +1,7 @@
 ---
 title: ASP.NET 偵錯： 系統需求 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485344"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286477"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ASP.NET 偵錯： 系統需求](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements)。  
+本主題描述 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 偵錯情節的軟體和安全性需求：  
   
-本主題說明的軟體和安全性需求[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]偵錯情節：  
-  
--   本機偵錯：[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 應用程式會在同一部電腦上執行。 這個情節有兩種版本：  
+-   本機偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 應用程式會在同一部電腦上執行。 這個情節有兩種版本：  
   
     -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於檔案系統上。  
   
@@ -47,7 +45,7 @@ ms.locfileid: "47485344"
 ## <a name="security-requirements"></a>安全性需求  
  若要進行遠端偵錯，本機和遠端電腦都必須在網域設定或工作群組設定中。  
   
- 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序進行偵錯，您必須具有對該處理序進行偵錯的權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]應用程式以執行**ASPNET**使用者。 如果背景工作處理序是以 **ASPNET**或 **NETWORK SERVICE**身分執行，則您必須具有 Administrator 權限才能對它進行偵錯。  
+ 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序進行偵錯，您必須具有對該處理序進行偵錯的權限。 根據預設， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式會以 **ASPNET** 使用者的身分執行。 如果背景工作處理序是以 **ASPNET**或 **NETWORK SERVICE**身分執行，則您必須具有 Administrator 權限才能對它進行偵錯。  
   
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   

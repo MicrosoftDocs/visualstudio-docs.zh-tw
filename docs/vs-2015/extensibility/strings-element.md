@@ -1,7 +1,7 @@
 ---
 title: 字串項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12e6b1cbc12e7b0deff97a239db08977ac38144c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280939"
 ---
 # <a name="strings-element"></a>Strings 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Strings 元素](https://docs.microsoft.com/visualstudio/extensibility/strings-element)。  
-  
 字串項目必須包含至少一個**ButtonText**子項目。 所有其他子項目是選擇性的。 無效的 XML 字元，例如 '&' 和 '<' 必須編碼為實體 ('&amp;'和'&lt;' 等)。  
   
  連字號文字字串中的指定命令的鍵盤快速鍵。  

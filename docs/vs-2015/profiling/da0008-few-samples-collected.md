@@ -1,7 +1,7 @@
 ---
 title: DA0008：收集的樣本少 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 205bedf2baa7c9fa1e1c5f40ccbaa4041427074b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e294c03f958259f26938865a3e26c6fb7669d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500409"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289805"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的樣本少
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0008： 收集的樣本少](https://docs.microsoft.com/visualstudio/profiling/da0008-few-samples-collected)。  
-  
 規則 Id |DA0008 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  

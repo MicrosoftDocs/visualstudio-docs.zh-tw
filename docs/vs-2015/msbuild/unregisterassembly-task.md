@@ -1,7 +1,7 @@
 ---
 title: UnregisterAssembly 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,20 +24,18 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d363d56b6b4cfd9b8112729a3434fa517d8f519d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298606"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UnregisterAssembly 工作](https://docs.microsoft.com/visualstudio/msbuild/unregisterassembly-task)。  
   
-  
-針對 COM Interop 用途將指定的組件取消註冊。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
+針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `UnregisterAssembly` 工作的參數。  

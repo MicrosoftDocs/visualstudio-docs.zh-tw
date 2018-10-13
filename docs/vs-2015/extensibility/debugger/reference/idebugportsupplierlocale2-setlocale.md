@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierLocale2::SetLocale |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a43fe4473cdfb47c5fd8c8435c3e3a7e136c335
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf335154763a0a5020ce7088b3d3cb4d42e9f0e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259958"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortSupplierLocale2::SetLocale](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierlocale2-setlocale)。  
-  
 設定連接埠提供者的地區設定。  
   
 ## <a name="syntax"></a>語法  

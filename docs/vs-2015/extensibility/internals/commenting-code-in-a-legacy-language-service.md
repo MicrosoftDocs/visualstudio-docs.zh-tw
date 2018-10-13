@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中的註解程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3314d27ce81e48237fa69b332b203d557d0a11d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291898"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼設為註解
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務中的 註解程式碼](https://docs.microsoft.com/visualstudio/extensibility/internals/commenting-code-in-a-legacy-language-service)。  
-  
 程式設計語言通常能用來標註或註解的程式碼。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。  
   
  Managed 的封裝架構 (MPF) 類別會提供註解和取消註解選取的文字支援。  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立工作流程主控台應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251663"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>HOW TO：建立工作流程主控台應用程式
 [!INCLUDE[wf](../includes/wf-md.md)] 可讓您建立執行系統或人工處理序的工作流程。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會提供建立這些工作流程的設計介面。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 可用來從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立工作流程，或者可以整合到重新裝載設計工具的其他應用程式中。  

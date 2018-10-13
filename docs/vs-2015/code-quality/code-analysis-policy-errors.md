@@ -1,7 +1,7 @@
 ---
 title: 程式碼分析原則錯誤 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff0e93d7259217cec67ab1ecd52073860089eaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8e429c7f8ee54ab2c7f0bad08129542d4ce87d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286373"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼分析原則錯誤](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-policy-errors)。  
-  
 如果程式碼分析原則不符合在簽入時，就會發生下列錯誤：  
   
  **一或多個專案的程式碼分析設定與不相容的程式碼分析原則。**  

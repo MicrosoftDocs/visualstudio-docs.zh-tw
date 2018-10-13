@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineCreateEvent2::GetEngine |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 671869814f5fa9219b005a1eb7c10f8dc8bbdf7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b48835b748f66558a34de119db694cdef64a856
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297878"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngineCreateEvent2::GetEngine](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginecreateevent2-getengine)。  
-  
 擷取物件，表示新建立的偵錯引擎 (DE)。  
   
 ## <a name="syntax"></a>語法  

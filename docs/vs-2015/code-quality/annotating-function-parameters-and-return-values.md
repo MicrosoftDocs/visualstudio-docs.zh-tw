@@ -1,7 +1,7 @@
 ---
 title: 註釋函式參數和傳回值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297163"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[標註函式參數和傳回值](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values)。  
-  
 這篇文章說明簡單的函式參數的註解的一般用法： 純量和結構和類別的指標，及各種緩衝區。  這篇文章也會顯示註釋的常見使用模式。 與功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>指標參數  

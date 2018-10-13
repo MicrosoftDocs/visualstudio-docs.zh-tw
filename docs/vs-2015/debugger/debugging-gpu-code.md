@@ -1,7 +1,7 @@
 ---
 title: 偵錯 GPU 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279262"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 GPU 程式碼](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code)。  
-  
 您可以對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。 在 Visual Studio 中的 GPU 偵錯支援包括競爭偵測、啟動處理序和附加至處理序，以及整合到偵錯視窗中。  
   
 ## <a name="supported-platforms"></a>支援的平台  
@@ -70,7 +68,7 @@ ms.locfileid: "47496455"
 -   [如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>資料同步處理的例外狀況  
- 偵錯工具可能在執行期間識別出幾個資料同步處理的情況。 當偵測到某種情況時，偵錯工具就會進入中斷模式。 有兩個選項 —**中斷**或是**繼續**。 藉由使用**例外狀況** 對話方塊中，您可以設定是否要偵錯工具會偵測這些條件，並也哪些情況中斷。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)。 您也可以使用**選項**對話方塊來指定偵錯工具應該忽略例外狀況，是否寫入的資料不會變更資料的值。 如需詳細資訊，請參閱 < [General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+ 偵錯工具可能在執行期間識別出幾個資料同步處理的情況。 當偵測到某種情況時，偵錯工具就會進入中斷模式。 有兩個選項 —**中斷**或是**繼續**。 藉由使用**例外狀況** 對話方塊中，您可以設定是否要偵錯工具會偵測這些條件，並也哪些情況中斷。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)。 您也可以使用**選項**對話方塊來指定偵錯工具應該忽略例外狀況，是否寫入的資料不會變更資料的值。 如需詳細資訊，請參閱 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 ## <a name="troubleshooting"></a>疑難排解  
   

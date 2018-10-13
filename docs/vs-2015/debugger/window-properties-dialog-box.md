@@ -1,7 +1,7 @@
 ---
 title: 視窗屬性對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4606972db64fe0e89cd0585b85353bfe0e2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eee934eb2a0b1fa04a85dc77735e3d92dcbff80e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288011"
 ---
 # <a name="window-properties-dialog-box"></a>視窗屬性對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[視窗中 [屬性] 對話方塊](https://docs.microsoft.com/visualstudio/debugger/window-properties-dialog-box)。  
-  
 若要深入了解特定的視窗中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。  
   
 ## <a name="in-this-section"></a>本節內容  

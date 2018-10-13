@@ -1,7 +1,7 @@
 ---
 title: T4 參數指示詞 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00403f562771498a86c24e8433769ab7a44ec890
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294550"
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[T4 參數指示詞](https://docs.microsoft.com/visualstudio/modeling/t4-parameter-directive)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文字範本`parameter`指示詞會宣告在您的範本程式碼會從外部內容從傳入的值初始化的屬性。 如果您撰寫程式碼叫用的文字轉換，您可以設定這些值。  
   
 ## <a name="using-the-parameter-directive"></a>使用參數指示詞  

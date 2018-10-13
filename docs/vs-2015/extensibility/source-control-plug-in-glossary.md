@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制外掛程式字彙表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69bb35df7f03294e0ece6c7a7d4306d8cdf4f03b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fabf99b4402fe8c8a2792b90f966e3ddaee4aeeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282161"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制外掛程式字彙](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-glossary)。  
-  
 下列實用的詞彙和定義相關的原始檔控制外掛程式 SDK 文件。  
   
 ## <a name="definitions"></a>定義  

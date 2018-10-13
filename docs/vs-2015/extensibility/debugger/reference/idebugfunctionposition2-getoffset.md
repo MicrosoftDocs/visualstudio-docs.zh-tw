@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetOffset |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cdfcaa8302d2c9d72ad0d0156a07a06f9e4bdf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a4ecfcae2d564f47767a21dd013899ede4276f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295395"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugFunctionPosition2::GetOffset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionposition2-getoffset)。  
-  
 擷取函式的來源文件中的位置。  
   
 ## <a name="syntax"></a>語法  

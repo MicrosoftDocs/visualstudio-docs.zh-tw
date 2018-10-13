@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立產品資訊清單 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b9eda8832f2cff1e6b05fa050bf4bf1e42f26a38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270084"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：建立產品資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[How to: Create a Product Manifest](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-product-manifest)。  
-  
 若要部署您的應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 封裝資訊清單包含您的套件的當地語系化特定層面。 這包括字串、 使用者授權合約和語言套件。  
   
  如需有關產品資訊清單的詳細資訊，請參閱[How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)。  

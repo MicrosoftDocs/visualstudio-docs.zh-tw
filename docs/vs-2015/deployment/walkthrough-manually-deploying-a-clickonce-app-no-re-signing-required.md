@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252989"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 手動部署 ClickOnce 應用程式，而無須重新簽署和該會保留商標資訊](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information)。  
-  
 當您建立[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式並再將它提供給客戶發行並部署，客戶有以往都會需要更新部署資訊清單，並重新簽署資訊清單。 同時，仍然是慣用的方法，在大部分情況下，.NET Framework 3.5 可讓您建立[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]客戶可以部署而不需要重新產生新的部署資訊清單的部署。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式的測試和實際執行伺服器，而不需要 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
   
  當您建立[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，然後將它交給客戶來發佈和部署，應用程式可以使用客戶的商標或保留您的品牌。 比方說，如果應用程式是單一的專屬應用程式，您可能想要保留您的品牌。 如果應用程式高度自訂的每個客戶中，您可能想要使用客戶的商標。 .NET Framework 3.5 可讓您保留您的品牌、 發行者資訊和安全性簽章，當您為組織部署的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 ClickOnce 應用程式供其他人部署](../deployment/creating-clickonce-applications-for-others-to-deploy.md)。  

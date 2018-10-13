@@ -1,7 +1,7 @@
 ---
 title: 專案類型架構 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 714212e75375409564106930e4ff89482095799a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994ccaff3bebfddb20c7de4dba550d1154699485
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277845"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案類型架構](https://docs.microsoft.com/visualstudio/extensibility/internals/project-types-architecture)。  
-  
 本章節包含在專案類型架構的詳細的資訊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 ## <a name="in-this-section"></a>本節內容  

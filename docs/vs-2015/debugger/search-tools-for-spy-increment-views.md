@@ -1,7 +1,7 @@
 ---
 title: Spy + + 檢視中搜尋工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b19a12397d42d44e3d7fb7cf1a5dd87700a07465
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e85abd53bd7f9c133115c562f9d3d291c60ae27e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285190"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 檢視的搜尋工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Spy + + 檢視的搜尋工具](https://docs.microsoft.com/visualstudio/debugger/search-tools-for-spy-increment-views)。  
-  
 您可以使用這些對話方塊來指定 Spy + + 檢視視窗會顯示哪些資料：  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 元件管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280328"
 ---
 # <a name="component-management"></a>元件管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[元件管理](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management)。  
-  
 Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來使用 Windows 安裝程式的安裝程式的基本單位。  
   
  雖然您可以使用數個產品建立 VSPackage 的安裝程式，在本文中會假設使用的 Windows Installer (.msi) 檔案。 在建立您的安裝程式時，您必須在這樣隨時都正確的參考計數才會正確地管理檔案部署。 因此，不同版本的產品不會干擾或彼此無法在混合的安裝和解除安裝案例。  

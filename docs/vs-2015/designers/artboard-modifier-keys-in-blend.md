@@ -1,7 +1,7 @@
 ---
 title: Blend 中的畫板輔助按鍵 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278183"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Blend 中的畫板輔助按鍵](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend)。  
-  
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。  
   
 |若要執行這項操作|請執行|  

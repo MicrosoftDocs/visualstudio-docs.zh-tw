@@ -1,7 +1,7 @@
 ---
 title: 支援原始檔控制 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279574"
 ---
 # <a name="supporting-source-control"></a>支援原始檔控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[支援原始檔控制](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援檔案簽出、 簽入，並為您的專案或編輯器的其他原始檔控制作業。 原始檔控制用戶端，作為[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設計成與原始檔控制封裝時，這類互動[!INCLUDE[vsvss](../../includes/vsvss-md.md)]，可保存、 版本控制，與以動態方式定義的一組檔案的控制等機能。  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 如何回報 Visual Studio 2015 的問題 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80e8a8c69b0536891737741125f0313f953b421e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290390"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

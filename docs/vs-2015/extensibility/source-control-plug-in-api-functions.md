@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制外掛程式 API 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293024"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制外掛程式 API 函式](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions)。  
-  
 原始檔控制外掛程式 API 提供下列函式，必須實作的原始檔控制外掛程式根據此 API。 每個函式和語意的簽章相關聯的位元旗標，並在此參考中有詳細說明其他參數。  
   
 ## <a name="initialization-and-housekeeping-functions"></a>初始設定和維護函式  

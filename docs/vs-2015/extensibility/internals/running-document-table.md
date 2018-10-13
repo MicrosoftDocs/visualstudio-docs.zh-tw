@@ -1,7 +1,7 @@
 ---
 title: 執行文件資料表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293068"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行文件表格](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table)。  
-  
 IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 此清單包含所有開啟的文件在記憶體中，不論是否目前正在編輯這些文件。 文件是會保留，包括檔案的專案或主要專案檔 （例如.vcxproj 檔案） 中的任何項目。  
   
 ## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 附加至文件資料的檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 423634a98b09af8d549442cb8f24964228496227
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cbba98f26417d7f980734fc1a948b10d54f2437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292873"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何： 將檢視附加至文件資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 附加至文件資料的檢視](https://docs.microsoft.com/visualstudio/extensibility/how-to-attach-views-to-document-data)。  
-  
 如果您有新的文件檢視，您可以將它附加至現有的文件資料物件。  
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>若要判斷是否您可以將檢視附加至現有的文件資料物件  

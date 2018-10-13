@@ -1,7 +1,7 @@
 ---
 title: 管理 Vspackage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 349dc380e23e5f76ad32631384bc4db8fceeff00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b68ad8fb8ce32c2a4a1210d38fb458518d28435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296344"
 ---
 # <a name="managing-vspackages"></a>管理 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理 Vspackage](https://docs.microsoft.com/visualstudio/extensibility/managing-vspackages)。  
-  
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的資訊，以管理您的封裝。  
   
 ## <a name="using-the-experimental-instance"></a>使用實驗性執行個體  

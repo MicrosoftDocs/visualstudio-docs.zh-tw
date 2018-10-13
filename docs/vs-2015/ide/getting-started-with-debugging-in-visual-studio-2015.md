@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Visual Studio 2015 中偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec46ba094ccafbb06ec64e181d4a64906feaa205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281446"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Getting Started with Visual Studio 偵錯](https://docs.microsoft.com/visualstudio/ide/getting-started-with-debugging-in-visual-studio)。  
-  
 Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 在本主題中，可了解如何開始使用最基本的偵錯 UI 功能。  
   
  注意：更進階的功能和特定平台或特定功能的主題連結位在此頁面底部。  

@@ -1,7 +1,7 @@
 ---
 title: 保存專案項目的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285099"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>保存專案項目的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[保存專案項目的屬性](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item)。  
-  
 若要保存的屬性，您將新增至專案項目，例如來源檔案的作者。 您可以將屬性儲存在專案檔來執行這項操作。  
   
  保存的屬性，在專案檔中的第一個步驟是取得做為專案的階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。 您可以取得此介面，使用自動化，或使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦您取得的介面，您可以使用它來判斷目前選取的專案項目。 一旦您有專案項目識別碼時，您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以新增屬性。  

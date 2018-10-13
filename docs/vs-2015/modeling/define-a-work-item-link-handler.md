@@ -1,7 +1,7 @@
 ---
 title: 定義工作項目連結處理常式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290416"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義工作項目連結處理常式](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler)。  
-  
 您可以建立 Visual Studio 整合擴充功能，當使用者建立或刪除 UML 模型項目和工作項目之間的連結時做出回應。 例如，當使用者選擇將新的工作項目連結至模型項目，您的程式碼可以從模型中的值初始化工作項目的欄位。  
   
 ## <a name="set-up-a-uml-extension-solution"></a>設定 UML 擴充功能方案  
@@ -167,7 +165,7 @@ namespace WorkItems
   
      **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟或建立模型專案，並開啟或建立模型圖表。  
+2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
 3.  建立模型項目，例如 UML 類別，並設定其名稱。  
   

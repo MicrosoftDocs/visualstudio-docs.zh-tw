@@ -1,7 +1,7 @@
 ---
 title: 偵錯準備： ASP.NET Web 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491536"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292886"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>偵錯準備：ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯準備： ASP.NET Web 應用程式](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications)。  
-  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]網站範本會建立 Web Form 應用程式。 當您使用這種範本建立網站時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立偵錯的預設設定。 在 [**專案屬性**] 對話方塊中，您可以指定您是否想要為起始頁的 Web 網頁。 當您啟動偵錯[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]網站上使用這些預設設定，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]啟動 Internet Explorer，並附加偵錯工具[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]背景工作處理序 （aspnet_wp.exe 或 w3wp.exe）。 如需詳細資訊，請參閱 <<c0> [ 系統需求](../debugger/aspnet-debugging-system-requirements.md)。  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]網站範本會建立 Web Form 應用程式。 當您使用這種範本建立網站時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立偵錯的預設設定。 在 [**專案屬性**] 對話方塊中，您可以指定您是否想要為起始頁的 Web 網頁。 當您啟動偵錯[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]網站上使用這些預設設定，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]啟動 Internet Explorer，並附加偵錯工具[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]背景工作處理序 （aspnet_wp.exe 或 w3wp.exe）。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
 ### <a name="to-create-a-web-forms-application"></a>若要建立 Web Form 網頁  
   

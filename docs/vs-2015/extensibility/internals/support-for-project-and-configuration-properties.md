@@ -1,7 +1,7 @@
 ---
 title: 支援專案和組態屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294342"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[支援的專案和組態屬性](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties)。  
-  
 **屬性** 視窗中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 可以顯示專案和設定的屬性。 使用者可設定您的應用程式的屬性，您可以將屬性頁提供您自己的專案類型中。  
   
  藉由選取中的專案節點**方案總管**，然後按一下**屬性**上**專案** 功能表中，您可以開啟包含專案和設定的對話方塊屬性。 在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]並[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和專案類型衍生自這些語言的索引標籤式頁面中會出現此對話方塊[一般、 環境、 選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)。 如需詳細資訊，請參閱 <<c0> [ 不在組建中： 逐步解說： 公開專案和組態屬性 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  

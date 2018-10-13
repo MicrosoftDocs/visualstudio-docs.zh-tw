@@ -1,7 +1,7 @@
 ---
 title: 尋找及使用 Visual Studio 延伸模組 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e05d9cf092d3f6cca3d7ef674c3f2bf137a0896f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268166"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>尋找及使用 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[尋找及使用 Visual Studio 擴充功能](https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions)。  
-  
 Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並提供全新或改良的 Visual Studio 功能。 您可以在這裡找到有關 Visual Studio 擴充功能的詳細資訊： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
  您可以使用 [ **擴充功能和更新** ] 對話方塊來安裝 Visual Studio 擴充功能和來自網站及其他位置的範例，然後啟用、停用、更新或將它們解除安裝。 ([工具/擴充功能和更新]，或在 [快速啟動]  視窗中輸入 **擴充功能** )。 對話方塊也會顯示已安裝的範例和擴充功能的更新。 您也可以從網站下載擴充功能，或從其他開發人員取得。  

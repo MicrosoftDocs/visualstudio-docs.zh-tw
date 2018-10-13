@@ -1,7 +1,7 @@
 ---
 title: 如何： 將執行緒加上旗標和取消 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289129"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：將執行緒加上旗標和取消旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 旗標和取消旗標的執行緒](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads)。  
-  
 您可以加上旗標的執行緒，您想要特別注意的標記中的圖示**執行緒**，**平行堆疊**，**平行監看式**，和**GPU執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。  
   
  已標幟的執行緒也會收到中的特殊待遇**執行緒**上列出**偵錯位置**工具列。 這份清單可以顯示所有執行緒，也可以僅顯示已加上旗標的執行緒。 當執行緒，加上旗標**執行緒**清單會自動切換成只顯示已標幟的執行緒，但您也可以將它切換回到顯示所有執行緒，視需要。  

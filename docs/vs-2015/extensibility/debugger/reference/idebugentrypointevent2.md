@@ -1,7 +1,7 @@
 ---
 title: IDebugEntryPointEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c823ef8266f54a9d97bf9311083d77ae170f067
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a3b7c05b8898971d43520b7138e5b7c4e146b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284280"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEntryPointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugentrypointevent2)。  
-  
 偵錯引擎 (DE) 執行使用者程式碼的第一個指令程式時，將此介面傳送工作階段的偵錯管理員 (SDM)。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: CA1052： 靜態預留位置類型應該為密封 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a912276f2f4008d1bea95027a5f2a1b67ff83e55
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 86e4185218591e1b967d8b2afeab11e91e2327c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278716"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：靜態預留位置類型應該為密封的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1052： 靜態預留位置類型應該為密封](https://docs.microsoft.com/visualstudio/code-quality/ca1052-static-holder-types-should-be-sealed)。
-
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|

@@ -1,7 +1,7 @@
 ---
 title: 記憶體 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297189"
 ---
 # <a name="memory-windows"></a>記憶體視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[變數在偵錯工具中檢視記憶體](https://docs.microsoft.com/visualstudio/debugger/memory-windows)。  
-  
 **記憶體**視窗可讓您檢視您的應用程式所使用的記憶體空間。 **監看式** 視窗中，**快速監看式** 對話方塊中，**自動變數**視窗中，並**區域變數**視窗會顯示的變數，也就是內容儲存在記憶體中的特定位置。 但是**記憶體**視窗會顯示整體概觀。 這類檢視對於檢查無法適當地顯示在其他視窗的大批資料 (例如，緩衝區或很大的字串) 來說極為方便。 不過，**記憶體**視窗並不限於顯示資料。 它還會顯示記憶體空間內的所有內容，不管這些內容是資料、程式碼，或是未指派之記憶體內的無意義資料。  
   
  **記憶體** 視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點。 **記憶體**視窗不是用於指令碼或 SQL，這些語言都無法辨識記憶體的概念。  

@@ -1,7 +1,7 @@
 ---
 title: 如何：指定建置事件 (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297287"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定建置事件 (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp)。  
-  
 使用建置事件指定要在建置開始之前，或建置完成之後執行的命令。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。  
   
  建置專案時，建置前事件會新增至名為 PreBuildEvent.bat 的檔案，而建置後事件會新增至名為 PostBuildEvent.bat 的檔案。 如果您想要確保錯誤檢查，請將您自己的錯誤檢查命令新增至建置步驟。  

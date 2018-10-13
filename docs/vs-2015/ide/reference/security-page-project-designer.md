@@ -1,7 +1,7 @@
 ---
 title: 安全性頁面、專案設計工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb9047f0fb3ebf3eb582220ec91d08612b8b9bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267809"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安全性 Page，Project Designer](https://docs.microsoft.com/visualstudio/ide/reference/security-page-project-designer)。  
-  
   
 [專案設計工具] 的 [安全性] 頁面是用於設定使用 [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)] 部署所部署之應用程式的程式碼存取安全性設定。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
   

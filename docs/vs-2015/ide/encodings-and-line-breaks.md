@@ -1,7 +1,7 @@
 ---
 title: 編碼與分行符號 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fd03dba0dfb13723fcb44d489a7b850aebeb1e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284982"
 ---
 # <a name="encodings-and-line-breaks"></a>編碼與分行符號
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編碼與分行符號](https://docs.microsoft.com/visualstudio/ide/encodings-and-line-breaks)。  
-  
 在 Visual Studio 中，您可以使用 [檔案]/[進階儲存選項] 設定，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。  
   
 > [!NOTE]

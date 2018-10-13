@@ -1,7 +1,7 @@
 ---
 title: 用戶端指令碼偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288024"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[用戶端指令碼偵錯](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging)。  
-  
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  
   
 ## <a name="opening-script-documents"></a>開啟指令碼文件  
@@ -67,14 +65,14 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="debugging-ajax-script-applications"></a>偵錯 AJAX 指令碼應用程式  
  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯技術的詳細資訊，請參閱  
   
- [偵錯和 Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)   
  [變數的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
- [偵錯和 Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
 
 
 

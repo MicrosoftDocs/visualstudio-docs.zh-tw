@@ -1,7 +1,7 @@
 ---
 title: 管理並排顯示檔案的關聯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253977"
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理並存的檔案關聯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理並排顯示的檔案關聯](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations)。  
-  
 如果 VSPackage 提供的檔案關聯，您必須決定如何處理在其中的並排顯示安裝特定版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應該叫用它來開啟檔案。 不相容的檔案格式複合問題。  
   
  使用者期望的產品，為相容於舊版本中，使現有的檔案可以載入新版本中，而不會遺失資料的新版本。 在理想情況下，VSPackage 可載入和儲存的舊版檔案格式。 如果不是，則為 true，則您應該提供升級至新版本的 VSPackage 的檔案格式。 這種方法的缺點是舊版本中，無法開啟已升級的檔案。  

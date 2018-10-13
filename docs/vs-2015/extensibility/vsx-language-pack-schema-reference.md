@@ -1,7 +1,7 @@
 ---
 title: VSX 語言套件結構描述參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1d85b136ffc66a2c96fb1e04d6cb999111eff6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94fd3b17f282050a96abee50ad20437ae00cf047
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258451"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>VSX 語言套件結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSX 語言套件結構描述參考](https://docs.microsoft.com/visualstudio/extensibility/vsx-language-pack-schema-reference)。  
-  
 VSX 語言套件結構描述會提供 VSIX 封裝當地語系化的安裝資訊。  
   
 ## <a name="in-this-section"></a>本節內容  

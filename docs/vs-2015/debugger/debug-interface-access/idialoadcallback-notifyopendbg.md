@@ -1,7 +1,7 @@
 ---
 title: 'Idialoadcallback:: Notifyopendbg |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b28b6a6ce52fa278ce19f6cdc9ec4346770b6a3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a799fcadace012834f389c236be4ff01b1367ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259697"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idialoadcallback:: Notifyopendbg](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback-notifyopendbg)。  
-  
 在開啟候選.dbg 檔案時呼叫。  
   
 ## <a name="syntax"></a>語法  

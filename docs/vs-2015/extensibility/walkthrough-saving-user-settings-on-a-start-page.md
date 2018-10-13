@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 在 [開始] 頁面上儲存使用者設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283649"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說︰將使用者設定儲存於起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 在 [開始] 頁面上儲存使用者設定](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page)。  
-  
 您可以保存使用者設定起始頁。 依照本逐步解說中，您可以建立將設定儲存至登錄中，當使用者按一下按鈕，並接著會擷取該設定，每次載入起始頁的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設啟動頁面 XAML 呼叫該控制項，您不必修改 [啟動] 頁面本身。  
   
  在此逐步解說中具現化的設定存放區是的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>介面，它會讀取並寫入下列登錄位置，當呼叫它： HKCU\Software\Microsoft\VisualStudio\14.0\\ *集合名稱*  

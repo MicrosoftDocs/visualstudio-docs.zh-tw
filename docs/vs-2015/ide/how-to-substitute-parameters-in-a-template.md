@@ -1,7 +1,7 @@
 ---
 title: 如何：替代範本中的參數 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7e3fea66b23d86378ff4afb81a7d4f46f5090d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279736"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代樣板中的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 替代範本中的參數](https://docs.microsoft.com/visualstudio/ide/how-to-substitute-parameters-in-a-template)。  
-  
 根據範本建立檔案時，您可以取代範本參數 (例如類別名稱和命名空間)。 如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  
   
 ## <a name="procedure"></a>程序  

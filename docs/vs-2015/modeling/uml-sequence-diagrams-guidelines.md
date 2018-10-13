@@ -1,7 +1,7 @@
 ---
 title: UML 循序圖： 方針 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278673"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 循序圖： 方針](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines)。  
-  
 在 Visual Studio 中，您可以繪製*循序圖*顯示互動。 互動是類別、元件、子系統或行動之一般執行個體間的一連串訊息。  
   
  UML 循序圖是 UML 模型的一部分，而且只存在於 UML 模型專案內。 若要建立 UML 循序圖中，在**架構**功能表上，按一下**新增 UML 或分層圖**。 深入了解[UML 循序圖項目](../modeling/uml-sequence-diagrams-reference.md)或是[UML 模型圖](../modeling/edit-uml-models-and-diagrams.md)一般。 如需影片示範，請參閱 <<c0> [ 使用 (2010) 的循序圖草擬互動](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)。  

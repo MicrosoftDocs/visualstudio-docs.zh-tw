@@ -1,7 +1,7 @@
 ---
 title: 專案和方案檔類型 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 748590118220c47a6d217156e1130417485aa885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283029"
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案和方案檔類型](https://docs.microsoft.com/visualstudio/ide/reference/project-and-solution-file-types)。  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援許多檔案類型。 在特定的安裝中，已安裝的元件決定可支援的檔案類型。 本主題列出在某些一般安裝中支援的方案和專案檔類型。 如需其他檔案類型的詳細資訊，請使用每種類型的副檔名進行搜尋。  
   

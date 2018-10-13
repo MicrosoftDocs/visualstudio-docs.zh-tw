@@ -1,7 +1,7 @@
 ---
 title: 自訂工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278404"
 ---
 # <a name="custom-tools"></a>自訂工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂工具](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools)。  
-  
 *自訂工具*可讓您在專案中的項目相關聯的工具，並執行該工具，每次您儲存檔案。 某些自訂的工具，有時稱為*單一檔案產生器*，常用來實作轉譯器產生程式碼從資料，反之亦然。 例如，建立單一檔案產生器[!INCLUDE[csprcs](../../includes/csprcs-md.md)]和[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]超出.settings 和.resx 檔的原始程式碼。 產生的原始程式碼提供強型別存取.settings 和.resx 檔案中的資料。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]和[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]專案類型支援的自訂工具;[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案類型不這麼做。 您自己的專案類型也可以支援自訂的工具。  
   
  自訂工具是已註冊的元件，可實作`IVsSingleFileGenerator`介面。  
@@ -63,5 +61,5 @@ ms.locfileid: "47489122"
   
 ## <a name="related-sections"></a>相關章節  
  [擴充專案](../../extensibility/extending-projects.md)  
- 描述如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。
+ 描述如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。
 

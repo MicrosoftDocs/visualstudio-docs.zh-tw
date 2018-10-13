@@ -1,7 +1,7 @@
 ---
 title: WriteLine 活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f1085c7a8989ebfdecdf0e9782afeeaf1e9b4400
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fa22ecee8bf365b02dcce9e4bc5607bb3a9838b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280958"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活動設計工具
 **WriteLine**活動設計工具會用來建立及設定<xref:System.Activities.Statements.WriteLine>活動。  

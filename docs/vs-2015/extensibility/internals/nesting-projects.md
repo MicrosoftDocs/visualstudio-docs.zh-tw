@@ -1,7 +1,7 @@
 ---
 title: 巢狀專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a454877a5cb7638edaff8263b6505de16ee9c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294251"
 ---
 # <a name="nesting-projects"></a>巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[巢狀專案](https://docs.microsoft.com/visualstudio/extensibility/internals/nesting-projects)。  
-  
 企業應用程式開發人員使用您的 VS 套件可以方便地分組類似類型的專案在一起[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]利用*專案的巢狀結構*。 例如，Enterprise 範本專案會使用巢狀的群組專案的專案成類別目錄。 商業外觀專案、 Web UI 專案等等，則會在一個類別一起分組。  
   
  在此案例中，沒有任何限制的開發人員可以巢狀處理每個父專案底下的專案數目雖然開發人員可以透過程式設計方式提供限制。 這種類型的群組也可以設定為遞迴的在此情況下相同的型別，做為子專案的專案可以巢狀在要成為子系，也就是父系的子專案的子專案的子系。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：我的第一個 WPF 桌面應用程式2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47588977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289911"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 我第一個 WPF 桌面應用程式 2](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2)。  
-  
 name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 桌面應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。  
   
 ##  <a name="Create_The_Application_Code_Files"></a> 建立應用程式專案  

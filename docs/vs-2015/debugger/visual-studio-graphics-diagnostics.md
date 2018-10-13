@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 圖形診斷 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294199"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 圖形診斷](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)。  
-  
 Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。  
   
  圖形診斷工作流程會開始擷取您應用程式如何使用 Direct3D 的一筆記錄 (執行時為即時)，以立即分析、共用或儲存其行為以供稍後使用。 擷取工作階段可以啟動和控制，以手動方式從 Visual Studio 或命令列擷取工具**dxcap.exe**。 也可以使用圖形診斷擷取 API，透過程式設計方式起始和控制擷取工作階段。  
@@ -47,7 +45,7 @@ Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的�
  [快速入門](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  在本節中，您將學習如何安裝 Visual Studio 圖形診斷，以及如何開始搭配使用圖形診斷與 Direct3D 應用程式。  
   
- [擷取圖形資訊](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  若要使用圖形診斷檢查您應用程式中的呈現問題，請先記錄有關應用程式如何使用 DirectX 的資訊。 在錄製工作階段中，為您的應用程式會正常執行，您*擷取*（也就是選取），您感興趣的框架。 擷取包含如何呈現畫面格的詳細資訊。 您可以將擷取到的資訊儲存為圖形記錄文件，以供稍後再檢查，或與您小組的其他成員共用。  
   
  [GPU 使用量](../debugger/gpu-usage.md)  

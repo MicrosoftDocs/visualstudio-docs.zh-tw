@@ -1,7 +1,7 @@
 ---
 title: 命令放置指導方針 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81c40e2ee18f828ad379cdaabc40854fb87ccfb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf6c047e649f1615cbb15704621d3c0a8eafaf2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284878"
 ---
 # <a name="command-placement-guidelines"></a>命令放置方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令放置指導方針](https://docs.microsoft.com/visualstudio/extensibility/internals/command-placement-guidelines)。  
-  
 Visual Studio 整合式的開發環境 (IDE) 中的定位命令的最佳作法是根據命令集的大小而有所不同。 命令所定義，且位於根據.vsct 檔案中的資訊。  
   
 ## <a name="best-practices-for-all-command-sets"></a>所有的命令集的最佳作法  

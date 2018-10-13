@@ -1,7 +1,7 @@
 ---
 title: 部署應用程式、 服務和元件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ff481212fbf70aa151e710ced517c6101b185ae4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acc3383b2d76361c8e6994641770513c4e552b8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276755"
 ---
 # <a name="deploying-applications-services-and-components"></a>部署應用程式、服務和元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

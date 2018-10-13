@@ -1,7 +1,7 @@
 ---
 title: -Log (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfd6d9ac2493e4caca95538140fb9af78db8e074
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e3c8ee5d8c0bc5d68159fe0b40f22dda74f564f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292028"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[-記錄檔 (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/log-devenv-exe)。  
-  
   
 將所有活動記錄至記錄檔中，以進行疑難排解。 在您至少呼叫 `devenv /log` 一次之後這個檔案才會出現。 根據預設，此記錄檔為：  
   

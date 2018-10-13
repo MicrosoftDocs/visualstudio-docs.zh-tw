@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::GetCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd71a3c54ea070ee88374cce3fdfc80e3c7a57fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce9d2e183becd0a52cb24c4a62d4eca48616c2e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281291"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumCodePaths2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-getcount)。  
-  
 列舉中傳回的項目數。  
   
 ## <a name="syntax"></a>語法  

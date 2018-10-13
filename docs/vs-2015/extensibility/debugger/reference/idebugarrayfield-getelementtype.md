@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayField::GetElementType |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae308366c9a782c453402f5e04eebe5c6a4a5dd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13a813354364847c67aeff30cdae783a50e450ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281862"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugArrayField::GetElementType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugarrayfield-getelementtype)。  
-  
 取得項目的型別陣列中。  
   
 ## <a name="syntax"></a>語法  

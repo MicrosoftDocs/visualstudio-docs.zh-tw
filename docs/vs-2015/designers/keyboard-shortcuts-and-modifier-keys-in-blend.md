@@ -1,7 +1,7 @@
 ---
 title: Blend 中的鍵盤快速鍵和輔助按鍵 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283890"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[鍵盤快速鍵和輔助按鍵在 Blend 中的](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend)。  
-  
 鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動作縮減為單一鍵盤快速鍵，以加速您的作業。 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中鍵盤快速鍵可分為下列兩種分類：  
   
 -   **便捷鍵**：按下鍵盤上的特定按鍵，您即可使用便捷鍵存取功能表命令或對話方塊中的區域。 便捷鍵可透過目前選取之命令或對話方塊中的底線來識別。  

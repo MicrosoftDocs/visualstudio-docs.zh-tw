@@ -1,7 +1,7 @@
 ---
 title: 如何： 對 Managed 程式碼手動執行程式碼分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 554d7cfb0d69bccf389bd996f6b72416f9a42f18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 476298b1baf900b708d50b0c7f5824433af7cc55
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285632"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：對 Managed 程式碼手動執行程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

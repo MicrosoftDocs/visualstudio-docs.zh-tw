@@ -1,7 +1,7 @@
 ---
 title: 設定基數命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99b5623fff4e2919bb34bc7dd4ba60d14ba93077
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0df00cf4c1d1264692be5ab5313eb9f03920b3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296123"
 ---
 # <a name="set-radix-command"></a>設定基數命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定基數命令](https://docs.microsoft.com/visualstudio/ide/reference/set-radix-command)。  
-  
   
 設定或傳回用來顯示整數值的數值基底。  
   
@@ -55,7 +53,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

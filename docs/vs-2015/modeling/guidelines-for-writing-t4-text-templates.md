@@ -1,7 +1,7 @@
 ---
 title: 撰寫 T4 文字範本的指導方針 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5e9d2bfcd0e036f3775de768edff320dfcf44066
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272229"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[撰寫 T4 文字範本的指導方針](https://docs.microsoft.com/visualstudio/modeling/guidelines-for-writing-t4-text-templates)。  
-  
 下列一般指導方針可能很有用，如果您要產生程式碼或其他應用程式資源中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 它們不被固定的規則。  
   
 ## <a name="guidelines-for-design-time-t4-templates"></a>設計階段 T4 範本的指導方針  

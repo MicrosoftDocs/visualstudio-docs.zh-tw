@@ -1,7 +1,7 @@
 ---
 title: IDebugWindowsComputerPort2::GetComputerInfo |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67bf884882aff5f3d0e2ef4940646e8e4eaabab4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67107c00a2788d09101c1502c13844db52bea7ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289667"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugWindowsComputerPort2::GetComputerInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo)。  
-  
 擷取電腦的相關資訊的偵錯工具中執行。  
   
 ## <a name="syntax"></a>語法  

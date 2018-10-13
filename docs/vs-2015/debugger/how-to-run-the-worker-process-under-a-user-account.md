@@ -1,7 +1,7 @@
 ---
 title: 如何： 執行背景工作處理序，使用者帳戶 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280184"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 執行背景工作處理序在使用者帳戶](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account)。  
-  
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
   
 ## <a name="procedure"></a>程序  
@@ -49,7 +47,7 @@ ms.locfileid: "47487393"
   
 3.  儲存 machine.config 檔。  
   
-4.  在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)] 中，預設是安裝 IIS 6.0。 對應的背景工作處理序是 w3wp.exe。若要以 aspnet_wp.exe 做為背景工作處理序在 IIS 6.0 模式中執行，您必須執行下列步驟：  
+4.  在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]中，預設是安裝 IIS 6.0。 對應的背景工作處理序是 w3wp.exe。若要以 aspnet_wp.exe 做為背景工作處理序在 IIS 6.0 模式中執行，您必須執行下列步驟：  
   
     1.  依序按一下 [ **開始**]、[ **系統管理工具** ]，然後選擇 [ **網際網路資訊服務**]。  
   
@@ -73,7 +71,7 @@ ms.locfileid: "47487393"
     net start w3svc  
     ```  
   
-6.  找出 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files] 資料夾，然後選擇**屬性**快顯功能表。  
+6.  找出 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性]  。  
   
 7.  在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。  
   

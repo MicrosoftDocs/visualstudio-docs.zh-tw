@@ -1,7 +1,7 @@
 ---
 title: SetThreadCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6d9e8e107d4935b8de659dc40f60ccaa7831def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a22e9819435114186e7b2d9afec02736f686537d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280731"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SetThreadCount](https://docs.microsoft.com/visualstudio/msbuild/setthreadcount)。  
-  
   
 設定全域執行緒計數，並將該計數指派給目前的執行緒。  
   
@@ -44,7 +42,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```  
   
 #### <a name="parameters"></a>參數  
- [輸入] `threadCount`  
+ [in] `threadCount`  
  要使用的執行緒數目。  
   
 ## <a name="return-value"></a>傳回值  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 以程式設計方式擷取圖形資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298151"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 擷取圖形資訊以程式設計的方式](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically)。  
-  
 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。  
   
  在下列這類情況下，程式設計擷取十分有用：  
@@ -113,7 +111,7 @@ ms.locfileid: "47486958"
     ```  
   
     > [!NOTE]
-    >  如果`DXGIGetDebugInterface1`會傳回`E_NOINTERFACE`(`error: E_NOINTERFACE No such interface supported`)，請確定圖形診斷下執行應用程式 (按 Alt + F5 鍵在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])。  
+    >  如果在 `DXGIGetDebugInterface1` 傳回 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)，請確定應用程式是在圖形診斷下執行 ( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt+F5)。  
   
 ### <a name="capturing-graphics-information"></a>擷取圖形資訊  
  現在，您具有有效的 `IDXGraphicsAnalysis` 介面，可以使用 `BeginCapture` 和 `EndCapture` 來擷取圖形資訊。  
@@ -154,7 +152,7 @@ ms.locfileid: "47486958"
   
  若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](http://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
   
- 或者，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會安裝必要元件來執行 32 位元應用程式的遠端擷取。  
+ 或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會安裝必要元件來執行 32 位元應用程式的遠端擷取。  
   
 > [!NOTE]
 >  因為 ARM 裝置的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不支援大部分的 Windows 桌面應用程式 (包括 [!INCLUDE[win8](../includes/win8-md.md)])，所以搭配程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具，是在 ARM 裝置上擷取圖形診斷的唯一方式。  
@@ -207,7 +205,7 @@ ms.locfileid: "47486958"
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說： 擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
- [擷取圖形資訊](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令列擷取工具](../debugger/command-line-capture-tool.md)
 
 
