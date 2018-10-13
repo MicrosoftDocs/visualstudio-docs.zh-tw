@@ -1,7 +1,7 @@
 ---
 title: 函式 （偵錯介面存取 SDK） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746034fb646abf5c3bc4acad0fc865a8551c3778
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06c7ea8f89d333cb3ba32d2db214aaf291b4485a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272983"
 ---
 # <a name="function-debug-interface-access-sdk"></a>函式 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[函式 (偵錯介面存取 SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/function-debug-interface-access-sdk)。  
-  
 每個函式識別`SymTagFunction`符號。  
   
 ## <a name="properties"></a>屬性  

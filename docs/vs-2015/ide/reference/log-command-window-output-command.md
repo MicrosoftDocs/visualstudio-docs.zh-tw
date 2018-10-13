@@ -1,7 +1,7 @@
 ---
 title: 記錄命令視窗輸出命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f6cdef31ec8988612815a76c30198e97ddf4c26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48c61177f80be00532347d3c49173aae54c7109
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266392"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[記錄命令視窗輸出命令](https://docs.microsoft.com/visualstudio/ide/reference/log-command-window-output-command)。  
-  
   
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。  
   
@@ -83,7 +81,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

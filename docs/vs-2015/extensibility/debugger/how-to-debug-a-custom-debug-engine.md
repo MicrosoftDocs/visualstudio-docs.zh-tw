@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯自訂的偵錯引擎 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247230"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：對自訂的偵錯引擎進行偵錯
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[How To： 偵錯自訂偵錯引擎](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine)。  
-  
 從專案類型會啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示控制下的執行個體啟動時 DE[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]控制的專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]無法偵錯 DE。 下面是可讓您偵錯您的自訂裝置的步驟。  
   
 > [!NOTE]

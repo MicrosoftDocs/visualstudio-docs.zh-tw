@@ -1,7 +1,7 @@
 ---
 title: 無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293b9b86f4da5f5fe91b93362322bccf17629b03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9acf56e852d800de6201fa343e9c2e145f0c0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248077"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;](https://docs.microsoft.com/visualstudio/data-tools/could-not-retrieve-schema-information-for-database-object-object-name)。  
-  
   
 中的物件時，通常會出現此訊息**伺服器總管/資料庫總管**是複製到剪貼簿 從資料庫刪除，再貼上至設計工具。 因為資料庫物件不再存在，所以會出現這則訊息。  
   

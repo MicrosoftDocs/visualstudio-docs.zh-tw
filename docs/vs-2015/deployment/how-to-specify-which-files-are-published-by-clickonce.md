@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定哪些檔案由 ClickOnce 發行 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268316"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定哪些檔案是由 ClickOnce 發行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定的檔案是由 ClickOnce 發行](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce)。  
-  
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]隨應用程式會部署專案中的應用程式中，所有非程式碼檔案。 在某些情況下，您可能不想要或需要發行特定檔案，或您可能想要安裝特定條件為基礎的檔案。 Visual Studio 提供的功能來排除檔案、 將檔案標示為資料檔案或必要條件，以及建立的條件式安裝的檔案群組。  
   
  檔案[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]中管理應用程式**應用程式檔案**對話方塊中，從可存取**發行**頁面**專案設計工具**。  

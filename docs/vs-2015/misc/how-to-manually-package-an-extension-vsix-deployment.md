@@ -1,7 +1,7 @@
 ---
 title: 如何： 手動封裝擴充功能 （VSIX 部署） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,26 +12,26 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: 16803e9019928da5676850899025b190df08a30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269283"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手動封裝擴充功能 (VSIX 部署)
-您可以建立 VSIX 封裝，來包裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]部署的延伸模組。 建立封裝的方法有三種：  
+您可以建立 VSIX 封裝，來包裝進行部署的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能。 建立封裝的方法有三種：  
   
--   使用其中一個擴充性範本中包含建立 VSIX 封裝專案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]SDK。 這對大多數的情況下是最簡單的選項。  
+-   使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 隨附的其中一個擴充性範本，來建立 VSIX 封裝專案。 這對大多數的情況下是最簡單的選項。  
   
--   將擴充功能專案的輸出包裝在空白[VSIX 專案](../extensibility/vsix-project-template.md)。 建議將這個選項用於範本、不支援的組件和自訂類型。  
+-   將擴充功能專案的輸出包裝在空白 [VSIX 專案](../extensibility/vsix-project-template.md)中。 建議將這個選項用於範本、不支援的組件和自訂類型。  
   
 -   手動建立 VSIX 封裝。 只有在另兩個選項都無法使用時，才建議使用這個選項。  
   
  本文件描述第三個選項。  
   
 ## <a name="creating-a-vsix-package"></a>建立 VSIX 封裝  
- 若要手動封裝擴充功能，請將 extension.manifest 檔案和 [Content_Types].xml 檔案加入擴充功能專案中，並將它們與組建輸出一起放在壓縮檔中，並重新命名壓縮檔，使其具有 .vsix 副檔名。 封裝的擴充功能必須是支援的型別[VSIX 結構描述](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+ 若要手動封裝擴充功能，請將 extension.manifest 檔案和 [Content_Types].xml 檔案加入擴充功能專案中，並將它們與組建輸出一起放在壓縮檔中，並重新命名壓縮檔，使其具有 .vsix 副檔名。 要封裝的擴充功能必須是 [VSIX 結構描述](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)所支援的類型。  
   
 > [!NOTE]
 >  VSIX 封裝中的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
@@ -42,7 +42,7 @@ ms.locfileid: "47486090"
   
 2.  建立 XML 檔案，並將它命名為 `extension.vsixmanifest`。  
   
-3.  根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 < [PackageManifest 項目 （根項目、 VSX 結構描述）](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
+3.  根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 [PackageManifest 項目 (根項目、VSX 結構描述)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
   
 4.  建立第二個 XML 檔案，並將它命名為 `[Content_Types].xml`。  
   

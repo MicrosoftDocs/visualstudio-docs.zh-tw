@@ -1,7 +1,7 @@
 ---
 title: 偵錯 DLL 專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,25 +24,23 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e124c4c9c24ad298c2528f2901d5aa1d52d54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267380"
 ---
 # <a name="debugging-dll-projects"></a>偵錯 DLL 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 DLL 專案](https://docs.microsoft.com/visualstudio/debugger/debugging-dll-projects)。  
-  
 下列範本會建立 DLL：  
   
 -   (C++、C# 和 Visual Basic) 類別庫  
   
 -   (C++、C# 和 Visual Basic)：Windows Form 控制項程式庫  
   
-     Windows 控制項程式庫的偵錯方式與偵錯類別庫專案的方式相似。 在大多數的情況，您會從另一個專案呼叫 Windows 控制項。 當您偵錯呼叫專案時，您可以逐步執行您的 Windows 控制項的程式碼、設定中斷點，和執行其他偵錯工作。 如需詳細資訊，請參閱 < [Windows Forms 控制項](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
+     Windows 控制項程式庫的偵錯方式與偵錯類別庫專案的方式相似。 在大多數的情況，您會從另一個專案呼叫 Windows 控制項。 當您偵錯呼叫專案時，您可以逐步執行您的 Windows 控制項的程式碼、設定中斷點，和執行其他偵錯工作。 如需詳細資訊，請參閱 [Windows Form 控制項](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
   
 -   (C# 和 Visual Basic)：Web 控制項程式庫  
   
@@ -83,16 +81,16 @@ ms.locfileid: "47491200"
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  無論您如何啟動偵錯，確定要先建置 DLL 的偵錯版本，並且確定該偵錯版本是位於應用程式預期可找到的位置。 這似乎是顯而易見的事情，但是如果您忘記這個步驟，應用程式可能會尋找到 DLL 的其他版本並且載入。 程式將會繼續執行，而您會懷疑為何一直沒遇到中斷點。 您可以在偵錯時開啟偵錯工具的 [ **模組** ] 視窗，驗證您的程式載入了哪些 DLL。 [ **模組** ] 視窗會列出正在偵錯的處理序中所載入的每個 DLL 或 EXE。 如需詳細資訊，請參閱 [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md)。  
   
- 若要將偵錯工具附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以加入您的程式碼會自動由連結[/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)連結器選項。  
+ 若要將偵錯工具附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。  
   
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
  呼叫 DLL 的呼叫應用程式可以用 Managed 程式碼或機器碼撰寫。 如果您的 Managed DLL 是由機器碼呼叫，而您要偵錯 Managed 程式碼和機器碼，則 Managed 偵錯工具和原生偵錯工具皆必須啟用。 您可以選取這**\<專案 > 屬性頁**對話方塊或視窗。 不同的做法是取決於您是由 DLL 專案啟動偵錯，或者由呼叫應用程式專案啟動偵錯。 如需詳細資訊，請參閱 [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)。  
   
 ##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Changing Default Configurations  
- 當您以專案範本建立主控台應用程式專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，並[如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
+ 當您以專案範本建立主控台應用程式專案時， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，並[如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to Debug the DLL  
- 本節中的每一個專案都會建立 DLL。 您無法直接執行 DLL，它必須由應用程式進行呼叫 (通常是 EXE)。 如需詳細資訊，請參閱 < [Creating and Managing Visual c + + Projects](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)。 呼叫的應用程式可能符合下列其中一項準則：  
+ 本節中的每一個專案都會建立 DLL。 您無法直接執行 DLL，它必須由應用程式進行呼叫 (通常是 EXE)。 如需詳細資訊，請參閱 [Creating and Managing Visual C++ Projects](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)。 呼叫的應用程式可能符合下列其中一項準則：  
   
 -   一個應用程式，在相同的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中建置於另一個包含該類別庫的專案。  
   
@@ -111,12 +109,12 @@ ms.locfileid: "47491200"
   
 -   您可以從 DLL 專案對呼叫的應用程式進行偵錯。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
   
--   您可以從偵錯[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**即時運算**視窗。 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
+-   您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
   
  在您啟動偵錯呼叫的應用程式之前，您通常要在類別庫裡設定中斷點。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 遇到中斷點時，您可以逐步執行程式碼，觀察每行的動作，直到您分辨出問題的所在。 如需詳細資訊，請參閱 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
- 若要偵錯網頁的控制項，請建立嵌入該控制項的 [[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]] 頁面 (如果這樣的頁面不存在)。 然後您可以在這個網頁和控制項程式碼中放置中斷點。 接下來由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 叫用這個網頁。  
+ 若要偵錯網頁的控制項，請建立嵌入該控制項的 [ [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ] 頁面 (如果這樣的頁面不存在)。 然後您可以在這個網頁和控制項程式碼中放置中斷點。 接下來由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]叫用這個網頁。  
   
  在呼叫的應用程式啟動偵錯之前，您通常要在 DLL 裡設定中斷點。 遇到中斷點時，您可以逐步執行程式碼，觀察每行的動作，直到您分辨出問題的所在。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   

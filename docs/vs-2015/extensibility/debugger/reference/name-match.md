@@ -1,7 +1,7 @@
 ---
 title: NAME_MATCH |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f863af0e5285e8ec193d359bd266bc4bd5f8d157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc955631712dc02f78d920987f1ffb89c836b24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496582"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252573"
 ---
 # <a name="namematch"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[NAME_MATCH](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/name-match)。  
-  
 選取 比對名稱的大小寫選項。  
   
 ## <a name="syntax"></a>語法  

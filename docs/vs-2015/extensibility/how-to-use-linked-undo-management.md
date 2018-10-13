@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用連結的復原管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e64d65376a85b9cbc9af525117e017c56f7b851
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ce5cb31e2ac3d7014dec30e71a1dc08b122a330
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229121"
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用連結的復原管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用連結復原管理](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-linked-undo-management)。  
-  
 連結的復原可讓使用者同時復原所做的相同編輯多個檔案中。 比方說，跨多個程式檔，例如標頭檔和 Visual c + + 檔案，同時的文字變更為連結的復原交易。 連結的復原功能內建於復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 連結的復原會實作可以連結在一起，以視為單一復原單元的個別復原堆疊為父系復原單位。 使用連結的復原的程序會在下一節中詳細說明。  
   
 ### <a name="to-use-linked-undo"></a>若要使用連結的復原  

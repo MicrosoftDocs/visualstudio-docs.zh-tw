@@ -1,7 +1,7 @@
 ---
 title: 效能工作階段概觀 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242810"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[效能工作階段概觀](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview)。  
-  
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具可協助您識別原始程式碼中的效能問題，並比較可行解決方法的效能。 程式碼剖析工具精靈和預設值可讓您立即洞悉許多效能問題。 程式碼剖析工具的功能和選項使您能夠精準控制程式碼剖析的處理程序。 這項控制包括精確指出程式碼區段、收集區塊層級的執行時間資訊，以及在您的資料中加入其他的處理器和系統效能資料。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：找出效能問題 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3227329f972dcb8d3aba4380ca816f137ef06f6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274478"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 找出效能問題](https://docs.microsoft.com/visualstudio/profiling/walkthrough-identifying-performance-problems)。  
-  
 本逐步解說將示範如何剖析應用程式以找出效能問題。  
   
  在這個逐步解說中，您會逐步分析受管理的應用程式，並使用取樣和檢測來隔離並識別應用程式中的效能問題。  

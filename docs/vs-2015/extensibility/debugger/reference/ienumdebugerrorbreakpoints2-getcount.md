@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugErrorBreakpoints2::GetCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f5c37ed51e296c83680f91da6ecaa422ec83792
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc5467d6b3450007cc0805fc9f055524a5918837
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260113"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugErrorBreakpoints2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount)。  
-  
 列舉中傳回的項目數。  
   
 ## <a name="syntax"></a>語法  

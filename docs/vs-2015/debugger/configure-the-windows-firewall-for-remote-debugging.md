@@ -1,7 +1,7 @@
 ---
 title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273880"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定 Windows 防火牆進行遠端偵錯](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging)。  
-  
 本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ ms.locfileid: "47485128"
 8.  您應該會在 [輸入規則]  或 [輸出規則]  清單中看到您的新規則。  
   
 ## <a name="see-also"></a>另請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

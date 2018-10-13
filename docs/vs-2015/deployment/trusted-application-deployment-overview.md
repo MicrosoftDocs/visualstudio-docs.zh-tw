@@ -1,7 +1,7 @@
 ---
 title: 受信任的應用程式部署概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: afcfc0d2a494b27359de041b13a8e9595ede1bc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215913"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Trusted Application Deployment Overview](https://docs.microsoft.com/visualstudio/deployment/trusted-application-deployment-overview)。  
-  
 本主題提供如何部署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
   
- 信任的應用程式部署 ([!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署技術的一部分)，可讓各種規模的組織以更安全的方式授與 Managed 應用程式的其他權限，而不需要進行使用者提示。 使用信任的應用程式部署，組織可以只設定用戶端電腦的信任發行者清單，這些發行者是使用 Authenticode 憑證來識別。 此後，由其中一個信任發行者簽署的任何 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，會收到較高的信任層級。  
+ 信任的應用程式部署 ( [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署技術的一部分)，可讓各種規模的組織以更安全的方式授與 Managed 應用程式的其他權限，而不需要進行使用者提示。 使用信任的應用程式部署，組織可以只設定用戶端電腦的信任發行者清單，這些發行者是使用 Authenticode 憑證來識別。 此後，由其中一個信任發行者簽署的任何 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，會收到較高的信任層級。  
   
 > [!NOTE]
 >  信任的應用程式部署需要對使用者電腦進行一次性的組態。 在 Managed 桌面環境中，可以使用全域原則來執行此組態。 如果您的應用程式不想要使用這種方式，請改用權限提高。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
@@ -90,12 +88,12 @@ ms.locfileid: "47487705"
 -   CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以開啟將程式變成[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]使用應用程式**發佈**命令，在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 或者，您可以使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 隨附的工具，產生 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱 <<c2> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱 <<c2> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
- 信任的應用程式部署是 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 所特有，並且僅能與 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式搭配使用。  
+ 信任的應用程式部署是 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式搭配使用。  
   
 ### <a name="sign-the-deployment"></a>簽署部署  
- 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 您也可以使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案設計工具 視窗中，不過，若要提供由 CA 所提供的憑證。  另請參閱 [如何：使用發行精靈發行 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) 或 [如何：使用發行精靈發行 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
+ 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱 [如何：使用發行精靈發行 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) 或 [如何：使用發行精靈發行 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
   
 > [!CAUTION]
 >  我們不建議使用測試憑證來部署應用程式。  

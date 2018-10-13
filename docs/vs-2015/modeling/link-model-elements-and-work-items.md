@@ -1,7 +1,7 @@
 ---
 title: 連結模型項目和工作項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 603438fda4c2f883376292b68896309a4e669be5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263915"
 ---
 # <a name="link-model-elements-and-work-items"></a>連結模型項目和工作項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[連結模型項目和工作項目](https://docs.microsoft.com/visualstudio/modeling/link-model-elements-and-work-items)。  
-  
 透過連結 Visual Studio 中的模型項目與 Team Foundation Server 或 Visual Studio Team Services 中的工作項目來追蹤工作、測試案例、Bug、需求，問題及其他與您的模型相關的工作。 附加文件至連結的工作項目，使工作項目與模型項目相關聯。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -145,7 +143,7 @@ ms.locfileid: "47497762"
 1.  在 **Team Explorer**中，確定您已經連接到模型項目連結至工作項目所在的 Team 專案。  
   
     > [!NOTE]
-    >  您只能使用 Team Explorer 檢視連結的模型項目，不能使用 Team Web Access 檢視。 確定您的工作區已對應至包含模型圖表或項目的模型專案。 如果您沒有工作區，則必須建立一個。 請參閱[疑難排解](#Troubleshooting)並[建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
+    >  您只能使用 Team Explorer 檢視連結的模型項目，不能使用 Team Web Access 檢視。 確定您的工作區已對應至包含模型圖表或項目的模型專案。 如果您沒有工作區，則必須建立一個。 請參閱 [疑難排解](#Troubleshooting) 和 [建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
   
 2.  開啟工作項目，選擇 [ **連結**]。 在 [ **模型連結**] 底下，開啟所連結模型項目的捷徑功能表。 選擇 [ **開啟連結項目**]。  
   
@@ -173,7 +171,7 @@ ms.locfileid: "47497762"
   
 |**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
-|找不到您要連結的模型項目。|此項目可能在 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中模型專案的圖表上。 您可能沒有對應至此圖表的工作區。|請將您的工作區對應至模型專案和圖表。 如果您沒有工作區，您必須建立一個。<br /><br /> 針對這個問題所出現的錯誤訊息包含了您可以用來對應工作區的路徑。<br /><br /> 請參閱[建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
+|找不到您要連結的模型項目。|此項目可能在 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中模型專案的圖表上。 您可能沒有對應至此圖表的工作區。|請將您的工作區對應至模型專案和圖表。 如果您沒有工作區，您必須建立一個。<br /><br /> 針對這個問題所出現的錯誤訊息包含了您可以用來對應工作區的路徑。<br /><br /> 請參閱 [建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
 |找不到所連結的模型項目。|連結項目可能在已經移動、重新命名或刪除的圖表上。|1.在工作項目中，刪除與模型項目的連結。<br />2.建立從工作項目到模型項目的新連結。|  
 |工作項目的連結沒有您預期的連結模型項目。|只有當連結從工作項目中建立時，工作項目才會顯示連結的圖層項目。 如果您的團隊未使用 [!INCLUDE[esprscc](../includes/esprscc-md.md)]，圖表的本機路徑將會用來建立連結。 如果模型專案和它的圖表在 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中，則可以存取專案的所有團隊成員都可以檢視工作項目中的連結項目。|嘗試重新整理工作項目。|  
 |從工作項目刪除模型項目的連結時，並不會刪除從模型項目連結至工作項目的連結。||從模型項目開始刪除工作項目的連結。|  

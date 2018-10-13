@@ -1,7 +1,7 @@
 ---
 title: 行為錯誤之多執行緒應用程式的一般模式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91a8ba5e4cecddd4acc047d891b491dac963044b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846c756511bc10a3d019294a16ba2d2e98fb37a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244110"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Poorly-Behaved 多執行緒應用程式的常見模式](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications)。  
-  
 「並行視覺化檢視」可協助開發人員以視覺化方式檢視多執行緒應用程式的行為。 此工具包含行為錯誤之多執行緒應用程式的一般模式陳列庫。 陳列庫包含許多透過工具顯示出，典型而可辨識的視覺模式，以及每個模式所代表的行為說明、該行為的可能結果，以及解決的最常見方法。  
   
 ## <a name="lock-contention-and-serialized-execution"></a>鎖定爭用和序列化執行  

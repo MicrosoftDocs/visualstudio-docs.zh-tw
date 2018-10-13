@@ -1,7 +1,7 @@
 ---
 title: 實作語法著色 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259245"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[實作語法著色](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring)。  
-  
 當語言服務會提供語法顏色標示時、 剖析器將一行文字轉換成陣列的可設定色彩的項目，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應該會傳回屬於可設定色彩的項目清單的語彙基元型別。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 根據色彩標示器物件指派給適當的語彙基元型別屬性的程式碼 視窗中顯示每個可設定色彩的項目。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 未指定剖析器介面，和剖析器實作是完全由您決定。 不過，Visual Studio 語言套件專案提供預設的剖析器實作。 Managed 程式碼，managed 的封裝架構 (MPF) 提供了完整支援以色彩標示文字。  

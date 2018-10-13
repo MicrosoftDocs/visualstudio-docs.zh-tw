@@ -1,7 +1,7 @@
 ---
 title: 如何：從命令提示字元建立分析工具比較報表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b4599c8e3b3a65bdcca4519a6beaa2e1364e96
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2d3a36ac7a64c9e84b712bc0e7536f284375912c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258454"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>如何：從命令提示字元建立程式碼剖析工具比較報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 從命令提示字元建立 Profiler 比較報表](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt)。  
-  
 您可以產生 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具報表，以比較兩個分析資料 (.VSP 或 .VSPS) 檔案的效能資料。 這份報表會顯示兩個分析工作階段所發生的差異、效能衰退和改善。 報表中的值呈現與您所指定之第一個檔案的基準線的差異或變更。 這項差異的計算是透過判斷舊值 (即基準值) 與新分析中結果值之間的差異。 分析工具資料的比較可以根據程式碼中的函式、應用程式中的模組、程式行、指令指標 (IP) 及型別。  
   
  若要列出比較類別和欄位的識別碼，請鍵入下列命令列：  

@@ -1,7 +1,7 @@
 ---
 title: 特定領域語言中的驗證 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ba087620d926c651be18c8993d992d3bc498952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263636"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義域專屬語言中的驗證](https://docs.microsoft.com/visualstudio/modeling/validation-in-a-domain-specific-language)。  
-  
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。  
   
  您可以在儲存模型，它會開啟，以及使用者明確執行時執行驗證條件約束**驗證**功能表命令。 您也可以在程式控制下執行驗證。 例如，您可以執行驗證，以回應屬性值或關聯性的變更。  

@@ -1,7 +1,7 @@
 ---
 title: SDKReference 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f9b9469079e8832f424e43bf643d866981c652b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aaf5b34239b62d685422834d80f001e2e0450c0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246060"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SDKReference 項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/sdkreference-element-visual-studio-templates)。  
-  
 指定項目範本使用 SDK 參考。  
   
 ## <a name="syntax"></a>語法  

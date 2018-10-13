@@ -1,7 +1,7 @@
 ---
 title: 工具視窗中顯示組態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ff1e5b95b684c347ee1885d5dfddeb5eebb5a82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a76f446721ee640de306aabb36ecea71a702fb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271956"
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[工具視窗中顯示組態](https://docs.microsoft.com/visualstudio/extensibility/tool-window-display-configuration)。  
-  
 當向 VSPackage 註冊工具視窗、 預設位置、 大小、 停駐樣式，以及其他的可見性資訊，被指定選擇性的值。 如需有關工具視窗中註冊的詳細資訊，請參閱[工具 Windows 登錄中](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>視窗顯示資訊  

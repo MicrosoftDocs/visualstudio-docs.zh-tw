@@ -1,7 +1,7 @@
 ---
 title: '&lt;摘要&gt;(JavaScript) |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6b4808112e746e30f0e40d4626f546c3f99b193
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8ee08ed1e2a5feb1f5a87f7d6337a4b5f1e47a22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252404"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;摘要&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
-  
 指定函式或方法的描述。  
   
 ## <a name="syntax"></a>語法  

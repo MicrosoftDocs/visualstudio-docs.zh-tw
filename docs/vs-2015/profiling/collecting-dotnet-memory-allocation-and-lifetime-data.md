@@ -1,7 +1,7 @@
 ---
 title: 收集 .NET 記憶體配置和存留期資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245553"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[收集.NET 記憶體配置和存留期資料](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-memory-allocation-and-lifetime-data)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具支援收集 .NET 記憶體配置和物件存留期資料，這些資料可協助您偵測應用程式中與記憶體相關的效能問題。  
   
 -   與 .NET 記憶體配置相關的資料包括所配置的 .NET Framework 記憶體物件的大小與數目。  

@@ -1,7 +1,7 @@
 ---
 title: Send 活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 95aa5a3bd0cefae930d2eb0023b6ddd7afbe14e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d0bfb5d760d21f832523231b4984362ba2eb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272684"
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 **傳送**活動設計工具會用來建立及設定<xref:System.ServiceModel.Activities.Send>活動。  

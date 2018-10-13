@@ -1,7 +1,7 @@
 ---
 title: ResolveManifestFiles 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,20 +22,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b459ef08b9375fc246d51a161601879a26b61afa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1cf9a786a439010d6219200098dea802e0dae0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251925"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ResolveManifestFiles 工作](https://docs.microsoft.com/visualstudio/msbuild/resolvemanifestfiles-task)。  
   
-  
-將建置流程中的下列項目解析為檔案，以產生資訊清單：建置的項目、相依性、附屬項目、內容、偵錯符號和文件。  
+在建置流程中將下列項目解析為檔案，以產生資訊清單：建置的項目、相依性、附屬項目、內容、偵錯符號和文件。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `ResolveManifestFiles` 工作的參數。  

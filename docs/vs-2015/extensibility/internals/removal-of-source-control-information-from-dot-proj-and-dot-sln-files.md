@@ -1,7 +1,7 @@
 ---
 title: 從原始檔控制資訊移除。Proj 和。Sln 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c6709d7808eba229455805ecb2b4a8d0c8af525
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a68818ca17cef59ce80c0a232ab067a4b2e1bc2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263825"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>從 .Proj 和 .Sln 檔案移除原始檔控制資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新版本位於[移除的原始檔控制資訊從。Proj 和。Sln 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files)。  
-  
 原始檔控制外掛程式 API SCC 1.2 版中的資訊會儲存在 MSSCCPRJ。SCC 檔案。 MSSCCPRJ 的優點。SCC 檔案是，SCC 資訊是不在來源-控制，例如它位於.proj 和.sln 檔案。  
   
 ## <a name="version-12-changes"></a>1.2 版的變更  

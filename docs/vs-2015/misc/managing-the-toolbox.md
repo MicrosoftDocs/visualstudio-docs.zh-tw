@@ -1,7 +1,7 @@
 ---
 title: 管理 [工具箱] |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254406"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]可讓 VSPackage，例如編輯器或設計工具中，若要管理的成員資格和外觀**工具箱**。  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 可讓 VSPackage (例如編輯器或設計工具) 管理 [工具箱] 的成員資格和外觀。  
   
- 此外，[工具箱]  本身可以使用自動化進行管理。 如需有關如何透過自動化管理工具箱的詳細資訊，請參閱 < [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
+ 此外，[工具箱]  本身可以使用自動化進行管理。 如需透過自動化管理工具箱的詳細資訊，請參閱 [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
   
 ## <a name="automatic-toolbox-tab-selection"></a>自動工具箱索引標籤選取  
  只有特定 [工具箱]  索引標籤或類別才能根據編輯器或設計工具目前哪個為使用中而自動成為使用中。 例如，如果已啟動表單設計工具，您可能會想要選取 [所有 Windows Forms]  索引標籤。  
   
  這項支援僅限於需要執行下列動作的編輯器和設計工具：  
   
-1.  實作 Factory 物件，以提供編輯器或設計工具的執行個體。 如需有關如何實作設計工具或編輯器 factory 物件的詳細資訊，請參閱 <<c0> [ 編輯器 Factory](../extensibility/editor-factories.md)。  
+1.  實作 Factory 物件，以提供編輯器或設計工具的執行個體。 如需實作設計工具或編輯器 Factory 物件的詳細資訊，請參閱 [Editor Factories](../extensibility/editor-factories.md)。  
   
 2.  註冊 [工具箱] 索引標籤，而這個索引標籤會在編輯器或設計工具存在時自動啟動。  
   
 ## <a name="controlling-the-toolbox"></a>控制工具箱  
- 補充自動化支援[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供下列介面讓 VSPackages 更好的控制方式**工具箱**管理。  
+ 補充自動化支援， [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 提供下列介面讓 VSPackages 可更進一步地控制 [工具箱]  的管理方式。  
   
 |介面|描述|  
 |---------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "47484985"
   
 -   使用 <xref:System.Drawing.Design.IToolboxService> 時，是由實作者負責管理當地語系化資訊 (例如類別名稱)。  
   
- 使用設定機制，讓使用者可以透過 IDE [工具]  功能表上的 [匯入/匯出設定]  命令來儲存使用者所存取的 [工具箱]  設定。 如需有關如何使用設定的詳細資訊，請參閱 < [Extending User Settings and 選項](../extensibility/extending-user-settings-and-options.md)。  
+ 使用設定機制，讓使用者可以透過 IDE [工具]  功能表上的 [匯入/匯出設定]  命令來儲存使用者所存取的 [工具箱]  設定。 如需如何使用設定的詳細資訊，請參閱 [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充工具箱](../misc/extending-the-toolbox.md)

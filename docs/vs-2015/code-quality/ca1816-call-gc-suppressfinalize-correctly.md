@@ -1,7 +1,7 @@
 ---
 title: CA1816： 呼叫 GC。SuppressFinalize 正確 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e8c5123cc67dd6de273b9740a0a7dd4d7824eb10
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 85e4a3f5d4f1fc3f326b79ec26d95a66c75b431d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213244"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正確呼叫 GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新版本位於[CA1816： 呼叫的 GC。SuppressFinalize 正確](https://docs.microsoft.com/visualstudio/code-quality/ca1816-call-gc-suppressfinalize-correctly)。
-
 |||
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|

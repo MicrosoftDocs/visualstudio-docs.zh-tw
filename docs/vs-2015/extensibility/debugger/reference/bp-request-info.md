@@ -1,7 +1,7 @@
 ---
 title: BP_REQUEST_INFO |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41a134c70c94c6c7fa826cf952c2444b7128fbb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab2783e7099c70cfab729649a23622335a52b489
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488848"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269772"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BP_REQUEST_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-request-info)。  
-  
 包含中斷點的實作所需的資訊。  
   
 ## <a name="syntax"></a>語法  

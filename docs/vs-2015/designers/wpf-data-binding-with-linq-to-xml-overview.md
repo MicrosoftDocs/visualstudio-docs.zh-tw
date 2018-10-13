@@ -1,7 +1,7 @@
 ---
 title: 使用 LINQ to XML 進行 WPF 資料繫結概觀 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584645062920143787c599c317a9ca93dd7da2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247269"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WPF 資料繫結與 LINQ to XML 概觀](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)。  
-  
 這個主題說明 <xref:System.Xml.Linq> 命名空間中的動態資料繫結功能。 這些功能在 Windows Presentation Foundation (WPF) 中可以當做使用者介面 (UI) 項目的資料來源使用。  
   
 ## <a name="xaml-and-linq-to-xml"></a>XAML 和 LINQ to XML  

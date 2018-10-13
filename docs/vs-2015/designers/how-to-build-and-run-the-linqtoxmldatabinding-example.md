@@ -1,7 +1,7 @@
 ---
 title: 如何：建置並執行 LinqToXmlDataBinding 範例 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63b82af28599683f739c98314a9d4f71ad474a25
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e299000cd8477ccc36829e806072cb25e115f8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237909"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：建置並執行 LinqToXmlDataBinding 範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建置並執行 LinqToXmlDataBinding 範例](https://docs.microsoft.com/visualstudio/designers/how-to-build-and-run-the-linqtoxmldatabinding-example)。  
-  
 這個主題顯示如何建立與建置 LinqToXmlDataBinding Visual Studio 專案，以及如何執行所產生的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 範例程式。  
   
  如需有關使用 Visual Studio 建立專案的詳細資訊，請參閱 [Visual Studio 應用程式開發](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)。  

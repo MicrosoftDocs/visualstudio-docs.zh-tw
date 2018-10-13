@@ -1,7 +1,7 @@
 ---
 title: 磁碟作業報告 (執行緒檢視) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe16116131c1ed6d0233abbd2e0480946b5a5423
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f121b8939ff55c9274cd04560ae7d507e22fde5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245150"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[磁碟作業報告 （執行緒檢視）](https://docs.microsoft.com/visualstudio/profiling/disk-operations-report-threads-view)。  
-  
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。  
   
  代表在目前可見的時間範圍中正在進行程式碼剖析的處理序所發生每次磁碟存取，都會報告這項資訊︰  

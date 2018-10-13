@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立 LINQ to SQL 類別對應至資料表和檢視 （O-R 設計工具） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269529"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何： 建立 LINQ to SQL 類別對應至資料表和檢視 （O/R 設計工具）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[如何： 建立的 LINQ to SQL 類別對應至資料表和檢視 （O-R 設計工具）](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer)。
-
 LINQ to SQL 類別對應至資料庫資料表和檢視表稱為*實體類別*。 實體類別對應至記錄，而實體類別的個別屬性對應至組成記錄的個別資料行。 建立實體類別為基礎的資料庫資料表或檢視表拖曳資料表或檢視表，從**伺服器總管**/**資料庫總管**拖曳至[LINQ to SQL 中的工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]產生的類別，並套用特定 [！要啟用 LINQ to SQL 屬性 [！LINQ to SQL 功能 (資料通訊和編輯功能<xref:System.Data.Linq.DataContext>)。 如需詳細資訊 [！LINQ to SQL 類別，請參閱[LINQ to SQL 物件模型](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)。
 
 > [!NOTE]

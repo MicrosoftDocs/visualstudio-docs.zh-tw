@@ -1,7 +1,7 @@
 ---
 title: 編輯器 Factory |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246898"
 ---
 # <a name="editor-factories"></a>編輯器 Factory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯器 Factory](https://docs.microsoft.com/visualstudio/extensibility/editor-factories)。  
-  
 編輯器 factory 建立編輯器的物件，並將它們放在視窗框架內，又稱為實體的檢視。 它會建立文件資料及建立編輯器和設計工具所需的文件檢視物件。 編輯器 factory，才能建立 Visual Studio 核心編輯器和任何標準的編輯器。 也可以使用編輯器 factory 來建立自訂編輯器。  
   
  您會藉由實作建立編輯器 factory<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。 下列範例說明如何實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>建立編輯器 factory:  

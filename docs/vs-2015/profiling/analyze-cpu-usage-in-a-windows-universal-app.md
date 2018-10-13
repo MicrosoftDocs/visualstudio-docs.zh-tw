@@ -1,7 +1,7 @@
 ---
 title: 分析 Windows 通用 App 中的 CPU 使用量 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250714"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[通用 Windows 應用程式中分析 CPU 使用量](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量]  工具顯示 CPU 花時間執行程式碼的地方。 若要聚焦於特定情況，CPU 使用率可以執行與[XAML UI 回應性](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)工具[能源消耗](../profiling/analyze-energy-use-in-store-apps.md)工具或在單一診斷工作階段。  

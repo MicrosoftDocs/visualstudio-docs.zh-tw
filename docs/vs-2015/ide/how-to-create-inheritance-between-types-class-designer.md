@@ -1,7 +1,7 @@
 ---
 title: 如何：建立類型之間的繼承 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd1b47ca4be4b68c1ddf3d4b75fcdfd25407705c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257773"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：建立類型之間的繼承 (類別設計工具) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立類型之間的繼承 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/how-to-create-inheritance-between-types-class-designer)。  
-  
 若要使用 [類別設計工具] 在類別圖上建立兩個類型之間的繼承關係，請將基底類型連接至其衍生類型或其他類型。 您可以建立兩個類別之間的繼承關係、一個類別和一個介面之間的繼承關係，或兩個介面之間的繼承關係。  
   
 ### <a name="to-create-an-inheritance-between-types"></a>建立兩個類型之間的繼承  

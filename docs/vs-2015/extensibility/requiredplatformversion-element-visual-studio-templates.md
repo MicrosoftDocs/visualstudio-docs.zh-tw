@@ -1,7 +1,7 @@
 ---
 title: RequiredPlatformVersion 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fb35bfefeb7722c3ec488a1f9caf63cd49202dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b3ca2e03b79f2cb1fcdcc738a88e3945d95972f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276051"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[RequiredPlatformVersion 元素 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/requiredplatformversion-element-visual-studio-templates)。  
-  
 指定的專案範本正常運作所需的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式。  
   
  `RequiredPlatformVersion`值會直接與作業系統的版本。 如果`RequiredPlatformVersion`高於作業系統的版本，不會顯示範本，這是在**新的專案** 對話方塊。 若要指定的範本[!INCLUDE[win8](../includes/win8-md.md)]或更高版本，設定`RequiredPlatformVersion`6.2.0 到。 若要指定的範本[!INCLUDE[win81](../includes/win81-md.md)]或更高版本，設定 RequiredPlatformVersion 至 6.3.0。  
@@ -64,7 +62,7 @@ RequiredPlatformVersion
  此文字會指定範本所需的最低作業系統版本。  
   
 ## <a name="example"></a>範例  
- 這個範例會指定專案範本的目標[!INCLUDE[win8](../includes/win8-md.md)]或更新版本。  
+ 這個範例會指定專案範本以 [!INCLUDE[win8](../includes/win8-md.md)] 或更新版本為目標。  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  

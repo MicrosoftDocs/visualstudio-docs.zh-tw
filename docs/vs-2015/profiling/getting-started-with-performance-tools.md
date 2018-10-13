@@ -1,7 +1,7 @@
 ---
 title: 效能工具入門 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249480"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[效能工具入門](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools)。  
-  
 本節提供當您使用 Visual Studio 效能工具來收集、檢視和分析程式碼效能時將運用之概念和工作的概觀。  
   
  這些工具提供數種方式供您收集和分析效能資料。 但在許多情況下，開始的最佳方式是使用 [效能精靈] 的預設設定，它可讓您收集應用程式統計資料，協助您找出程式碼中的效能問題。  

@@ -1,7 +1,7 @@
 ---
 title: 將功能表加入至 Visual Studio 功能表列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b7b1be3a931b3ac47aa575e64795dd020af66d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d35b9247af4e1fe9c870650fc33f2071ba0999f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275232"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 功能表列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將功能表加入至 Visual Studio 功能表列](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-to-the-visual-studio-menu-bar)。  
-  
 本逐步解說示範如何將 Visual Studio 整合式的開發環境 (IDE) 的功能表列中的功能表。 IDE 的功能表列包含功能表分類，例如**檔案**，**編輯**，**檢視**，**視窗**，以及**協助**.  
   
  之前的 Visual Studio 功能表列中加入新的功能表，請考慮您的命令是否應該置於現有的功能表。 如需有關命令位置的詳細資訊，請參閱[功能表和命令適用於 Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。  

@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadNameChangedEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4302c618bed7d7ae7fc7cd751d48a354d7acc65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e91770bfefa235a990bfef5a69592aaa99f0000c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244526"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugThreadNameChangedEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthreadnamechangedevent2)。  
-  
 這個介面是由偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 變更時傳送執行緒名稱進行偵錯的程式中。  
   
 ## <a name="syntax"></a>語法  

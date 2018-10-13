@@ -1,7 +1,7 @@
 ---
 title: 呼叫端-被呼叫端檢視 - .NET 記憶體檢測資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273828"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫端-被呼叫端檢視-.NET 記憶體檢測資料](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data)。  
-  
 使用檢測方法收集之 .NET 記憶體分析資料的 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的配置和計時資料。 [呼叫端/被呼叫端] 檢視包含三個方格。  
   
  **目前的函式**會顯示在中間方格中，顯示所選取函式的記憶體分析資訊。 這些值包括對函式的所有取樣呼叫。  

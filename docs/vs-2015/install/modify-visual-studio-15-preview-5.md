@@ -1,7 +1,7 @@
 ---
 title: 修改 Visual Studio 2017 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 84aa7227af44d66cf461cd88f7faca5e9290bb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e854f73d0a19a3dd7523f3db1a0c5558e364d8fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263878"
 ---
 # <a name="modify-visual-studio-2017"></a>修改 Visual Studio 2017
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

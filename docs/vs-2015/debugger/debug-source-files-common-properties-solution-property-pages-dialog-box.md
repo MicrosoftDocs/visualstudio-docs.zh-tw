@@ -1,7 +1,7 @@
 ---
 title: 偵錯來源檔案、 通用屬性、 方案屬性頁對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94306c44b8a19d1fbf924fe361d317dd911110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e2dcac4c105753febc86d3bec6e5dc0035e268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253808"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>方案屬性頁對話方塊、通用屬性、偵錯原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯原始程式檔，通用屬性、 方案屬性頁對話方塊](https://docs.microsoft.com/visualstudio/debugger/debug-source-files-common-properties-solution-property-pages-dialog-box)。  
-  
 此屬性頁可指定對方案進行偵錯時，偵錯工具將於何處尋找原始程式檔。  
   
  若要存取**偵錯原始程式檔**屬性頁上，以滑鼠右鍵按一下您的方案中**方案總管** ，然後選取**屬性**從捷徑功能表。 依序展開**通用屬性**資料夾，然後按一下**偵錯原始程式檔**頁面。  

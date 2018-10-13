@@ -1,7 +1,7 @@
 ---
 title: 所需的連接埠供應商介面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 960cd5668fe49ba50e79f036848948ec8e0bbfc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251b5c9d96ac7d0e82705c81b1b568e2d85b88f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248180"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要的連接埠提供者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[需要的連接埠供應商介面](https://docs.microsoft.com/visualstudio/extensibility/debugger/required-port-supplier-interfaces)。  
-  
 連接埠提供者必須實作[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
  由於連接埠提供者會提供連接埠，它也必須實作它們。 因此，它必須實作下列介面：  

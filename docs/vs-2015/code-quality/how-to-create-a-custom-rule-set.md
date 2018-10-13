@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立自訂規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255498"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：建立自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立自訂規則集](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set)。  
-  
 在  [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]， [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]，並[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 若要建立自訂規則集、 開啟一個或更標準的規則集規則集編輯器中。 您接著可以新增或移除特定規則，您可以變更程式碼分析會判斷已違反規則時所發生的動作。  
   
  若要建立新的自訂規則集，您將使用新的檔案名稱儲存。 自訂規則集會自動指派至專案。  

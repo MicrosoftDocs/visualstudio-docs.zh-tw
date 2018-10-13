@@ -1,7 +1,7 @@
 ---
 title: 效能總管 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248478"
 ---
 # <a name="performance-explorer"></a>效能總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[效能總管](https://docs.microsoft.com/visualstudio/profiling/performance-explorer)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具可讓開發人員測量、評估和標定程式碼中與效能有關的問題。 這些工具已經完全整合到 IDE，藉此提供順暢無礙又平易近人的使用者體驗。  
   
  分析應用程式相當簡單。 您可以從建立新的效能工作階段開始。 在 Visual Studio Team System Development Edition 中，您可以使用 [效能工作階段精靈] 建立新的效能工作階段。 在效能工作階段結束後，在分析期間收集的資料會儲存在 .vsp 檔中。 您可以在 IDE 中檢視 .vsp 檔。 還有幾種報告檢視，可協助您從蒐集的資料中視覺化及偵測效能問題。  

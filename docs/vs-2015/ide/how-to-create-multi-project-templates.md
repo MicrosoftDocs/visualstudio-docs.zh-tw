@@ -1,7 +1,7 @@
 ---
 title: 如何：建立多專案範本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce7147df5b15dd6aaa639c27b2d2ffbc0b3d3152
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256564"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立多專案範本](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-project-templates)。  
-  
 多專案範本是做為兩個以上專案的容器使用。 從 [新增專案] 對話方塊建立，根據多專案範本的專案時，範本中的每個專案都會新增至解決方案。  
   
  多專案範本必須包含下列項目，且壓縮成 .zip 檔案：  

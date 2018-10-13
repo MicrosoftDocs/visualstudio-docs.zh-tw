@@ -1,7 +1,7 @@
 ---
 title: 安裝資料庫系統、 工具和範例 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244279"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>安裝資料庫系統、 工具和範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安裝資料庫系統、 工具和範例](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples)。  
-  
   
 Visual Studio 本身不包含任何資料庫系統，除了它會在內部使用。 若要開發 Visual Studio 中連接資料的應用程式，您通常安裝在您的本機開發電腦上的 資料庫系統，然後部署應用程式和資料庫到生產環境時，他們就可以。 可從.NET 應用程式，並會顯示在 Visual Studio 資料工具視窗的資料庫系統，它必須能夠為 ADO.NET 資料提供者。 如果您打算在.NET 應用程式中使用實體資料模型，提供者必須特別支援 Entity Framework。     許多提供者會提供透過 NuGet 套件管理員，或透過 Visual Studio 組件庫。  
   

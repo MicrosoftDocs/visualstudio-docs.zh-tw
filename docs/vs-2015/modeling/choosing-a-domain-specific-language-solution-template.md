@@ -1,7 +1,7 @@
 ---
 title: 選擇特定領域語言方案範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268479"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選擇特定領域語言方案範本](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template)。  
-  
 若要建立特定領域語言方案，選擇其中一個特定領域語言設計工具精靈 中提供的解決方案範本。 藉由選擇最接近的語言，您想要建立的範本，您可以減少的修改，您必須先啟動解決方案。  
   
  下列解決方案範本可在特定領域語言設計工具精靈。  

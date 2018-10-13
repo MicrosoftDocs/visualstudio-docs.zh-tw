@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 取得一份已安裝的程式碼片段 （舊版實作） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb5aea9af28ec455688176fa1d0f3a4e45acc038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2074000e2e77f842f63e1cb00e2fa7c25f42836b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248130"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說︰取得已安裝程式碼片段 (舊版實作) 的清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[取得的安裝程式碼片段 （舊版）](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation)。  
-  
 程式碼片段是一種程式碼，可以插入來源緩衝區 （可讓選擇的一份已安裝的程式碼片段） 的功能表命令或藉由從 IntelliSense 完成清單中選取的程式碼片段捷徑。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法會取得所有的程式碼片段，針對特定語言的 GUID。 這些程式碼片段的捷徑可以插入的 IntelliSense 完成清單。  

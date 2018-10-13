@@ -1,7 +1,7 @@
 ---
 title: CA1824： 以 NeutralResourcesLanguageAttribute 的組件必須標記 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d433208e9bb63d770feb00f7f659c9e469a0c4e9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 20bfe8456e6047192f15f4473df5366fd0d9fba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275141"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：以 NeutralResourcesLanguageAttribute 標記組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1824： 以 NeutralResourcesLanguageAttribute 標記組件](https://docs.microsoft.com/visualstudio/code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute)。
-
 |||
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|

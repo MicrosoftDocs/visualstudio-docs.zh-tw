@@ -1,7 +1,7 @@
 ---
 title: CA2142： 透明程式碼應該不使用 Linkdemand 加以保護 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 744ca0b6b988591b646c66d349cc39649d323116
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 79441a1aaa37e0df564f9021d5106dae1bf8329e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232449"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142：透明程式碼不可以使用 LinkDemand 加以保護
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2142： 透明程式碼不應該使用 Linkdemand 加以保護](https://docs.microsoft.com/visualstudio/code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands)。
-
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|

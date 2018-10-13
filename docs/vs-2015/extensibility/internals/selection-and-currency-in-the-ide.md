@@ -1,7 +1,7 @@
 ---
 title: 選取項目及在 IDE 中的貨幣 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87796930b8b1f76e7601bfd2dbffdddcf8d32da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270919"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選取項目及在 IDE 中的貨幣](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-and-currency-in-the-ide)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會維護使用選取之使用者的相關資訊目前選取的物件*內容*。 使用選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  
   
 -   傳播 ide Vspackage 的貨幣資訊。  

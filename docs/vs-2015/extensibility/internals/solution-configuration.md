@@ -1,7 +1,7 @@
 ---
 title: 方案組態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245789"
 ---
 # <a name="solution-configuration"></a>方案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[方案組態](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration)。  
-  
 方案組態儲存方案層級屬性。 這些指示的行為**開始**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案已透過設定的組建。 環境被設計來建置和執行時，最佳化解決方案，而不是專案中。  
   
  標準的 Visual Studio 工具列包含 [開始] 按鈕和方案組態下拉式清單右邊的 [開始] 按鈕。 這份清單可讓使用者選擇在按下 F5 時要啟動的組態，建立自己的方案組態，或編輯現有的組態。  

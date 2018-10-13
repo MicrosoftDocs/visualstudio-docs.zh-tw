@@ -1,7 +1,7 @@
 ---
 title: 如何：從組建中排除專案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f0db1294bd7df2451c4ec496dc5064b122b73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496575"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242849"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 從組建排除的專案](https://docs.microsoft.com/visualstudio/ide/how-to-exclude-projects-from-a-build)。  
-  
 您可以建置方案，而不建置它所包含的所有專案。 例如，您可能會排除會中斷組建的專案。 然後您可以在調查和處理這些問題之後才建置專案。  
   
  您可以利用下列方式排除專案：  

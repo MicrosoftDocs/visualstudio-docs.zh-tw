@@ -1,7 +1,7 @@
 ---
 title: 控制執行市集應用程式在 Visual Studio 偵錯工作階段的 Windows 市集應用程式 (JavaScript) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275518"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>為 Windows 市集應用程式，在 Visual Studio 偵錯工作階段中控制市集應用程式的執行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[控制在 Windows 市集應用程式 (JavaScript) 的 Visual Studio 偵錯工作階段中的市集應用程式執行](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript)。  
-  
 本快速入門示範如何在 Visual Studio 偵錯工具中巡覽，以及如何檢視工作階段中的程式狀態。  
   
  本快速入門適用於不熟悉使用 Visual Studio 偵錯的開發人員，以及想要深入了解在 Visual Studio 偵錯工作階段中巡覽的開發人員。 它不會教導偵錯本身的藝術。 範例程式碼中的函式被設計為只示範本主題中所描述的偵錯步驟。 函式不會採用應用程式或函式設計的最佳作法。 事實上，您很快就會發現這些函式與應用程式本身根本沒有太大功用。  

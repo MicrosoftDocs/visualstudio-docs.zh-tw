@@ -1,7 +1,7 @@
 ---
 title: 如何： 控制訊息檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30b70831e5244763d11731f03e42bf6945a7c3fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb5e3bf1e4f40f01a93a5f9a8de73523d41eaab2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246973"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 控制訊息檢視](https://docs.microsoft.com/visualstudio/debugger/how-to-control-messages-view)。  
-  
 使用 Spy + + 中，您有相當大的控制權的內容[訊息檢視](../debugger/messages-view.md)視窗。 您可以[啟動和停止](../debugger/how-to-start-and-stop-the-message-log-display.md)顯示訊息在任何時間，而且您可以指定：  
   
 -   您想要看到何種訊息類型。  

@@ -1,7 +1,7 @@
 ---
 title: Domain-specific Language Tools 概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 694ebbc73b531f4fab1c8b2f9621e14f4145bd70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273256"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Domain-specific Language Tools 概觀](https://docs.microsoft.com/visualstudio/modeling/overview-of-domain-specific-language-tools)。  
-  
 特定領域語言工具 （DSL 工具），裝載在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可讓您設計特定領域語言，並接著產生所有使用者必須具備才能建立模型為基礎之語言的項目。  
   
  DSL 工具包含下列工具：  

@@ -1,7 +1,7 @@
 ---
 title: 交換器&lt;T&gt;活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3b7ae322bbdb4d93106c468409cab77127e5eb0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244760"
 ---
 # <a name="switchlttgt-activity-designer"></a>交換器&lt;T&gt;活動設計工具
 <xref:System.Activities.Statements.Switch%601> 活動會評估指定的運算式，並且從關聯索引鍵符合求值結果的活動集合中執行該活動。  

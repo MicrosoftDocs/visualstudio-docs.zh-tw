@@ -1,7 +1,7 @@
 ---
 title: 模型編輯器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264029"
 ---
 # <a name="model-editor"></a>模型編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[模型編輯器](https://docs.microsoft.com/visualstudio/designers/model-editor)。  
-  
 本文件說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型編輯器來檢視、建立和修改 3D 模型。  
   
  您可以使用模型編輯器從頭開始建立基本的 3D 模型，也可以檢視和修改更複雜的 3D 模型 (使用完整功能 3D 模型化工具建立的)。 模型編輯器支援數個用在 DirectX 應用程式開發的 3D 模型格式。  
@@ -317,7 +315,7 @@ ms.locfileid: "47499681"
 |標題|描述|  
 |-----------|-----------------|  
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供可用來與圖形資產 (例如紋理及影像、立體模型和著色器效果) 搭配工作之 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具的概觀。|  
-|[影像編輯器](../designers/image-editor.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 影像編輯器來處理紋理和影像。|  
+|[Image Editor](../designers/image-editor.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 影像編輯器來處理紋理和影像。|  
 |[著色器設計工具](../designers/shader-designer.md)|說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具，搭配著色器一起運作。|
 
 

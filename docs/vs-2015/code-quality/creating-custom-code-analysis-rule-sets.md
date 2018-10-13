@@ -1,7 +1,7 @@
 ---
 title: 建立自訂程式碼分析規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273581"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>建立自訂程式碼分析規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立自訂程式碼分析規則集](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets)。  
-  
 您套用至 managed 程式碼專案的程式碼分析規則所指定規則集，其中包含一或多個規則。 Microsoft 標準規則集提供依函式和深度的規則的群組。 例如，Microsoft 基本設計方針規則和 Microsoft 擴充設計方針規則包含將焦點放在使用性和可維護性問題，已新增強調擴充規則集中的命名規則的規則。  
   
  您也可以建立自訂規則集，結合了兩個或更多標準規則集，或所指定規則中一個或多個標準的規則集。 您儲存自訂的規則設定為.ruleset 檔案，並在多個程式碼專案中指定。  

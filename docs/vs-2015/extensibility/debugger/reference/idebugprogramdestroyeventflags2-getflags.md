@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEventFlags2::GetFlags |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c63e11a9185ccfbf67fe97a38c541d9e299d8b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff21ebb00cb7618063c7438e48b4be7a960b86b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266756"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramDestroyEventFlags2::GetFlags](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags)。  
-  
 擷取程式終結旗標。  
   
 ## <a name="syntax"></a>語法  

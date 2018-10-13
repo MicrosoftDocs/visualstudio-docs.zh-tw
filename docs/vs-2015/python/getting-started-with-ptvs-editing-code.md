@@ -1,7 +1,7 @@
 ---
 title: Ptvs 快速入門： 編輯程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f70e551fd44c18c9dbfc37437703ca092e982d6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0a84523a2d828e696fb50f641f392ab7bbd39f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265781"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>PTVS 快速入門：編輯程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

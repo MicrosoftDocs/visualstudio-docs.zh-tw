@@ -1,7 +1,7 @@
 ---
 title: 擴充 Isolated 的 Shell |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec39a36c3f600905543e2d58db7228324f63d97e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8efac8c7b203c16febef4c43e8428ae34da618a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267341"
 ---
 # <a name="extending-the-isolated-shell"></a>擴充 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充 Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/extending-the-isolated-shell)。  
-  
 您可以擴充 Visual Studio 隔離 shell 藉由將 VSPackage、 Managed Extensibility Framework (MEF) 元件的組件或泛型的 VSIX 專案新增至您的獨立的 shell 應用程式。  
   
 > [!NOTE]

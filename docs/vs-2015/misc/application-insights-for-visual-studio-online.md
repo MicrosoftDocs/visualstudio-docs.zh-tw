@@ -1,7 +1,7 @@
 ---
 title: Application Insights for Visual Studio Online |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: f6446eebf22027c16d1976773a49564712f6bd58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfec9896f9fd9c4307d501bd601094069b3e152f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245820"
 ---
 # <a name="application-insights-for-visual-studio-online"></a>Application Insights for Visual Studio Online
 *Application Insights 處於預覽狀態。*  

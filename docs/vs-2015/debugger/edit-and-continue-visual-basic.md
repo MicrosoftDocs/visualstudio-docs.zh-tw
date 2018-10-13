@@ -1,7 +1,7 @@
 ---
 title: 編輯後繼續 (Visual Basic) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487544"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265091"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯後繼續 (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic)。  
-  
 「編輯後繼續」是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 偵錯的一個功能，當程式碼在中斷模式中執行時，這項功能可讓您變更程式碼。 套用程式碼編輯之後，您可以繼續以新的編輯執行程式碼，並查看其效果。  
   
  只要進入中斷模式，隨時都可以使用編輯後繼續功能。 在中斷模式中，指令指標 (來源視窗中的黃色箭頭) 會指向接下來要執行的那一行，並且指標將位於方法或屬性主體內的可執行陳述式上。 在中斷模式中，您可以對可執行陳述式進行各種變更，該變更將被加入基礎專案中。 但是在中斷模式中，通常不允許您變更宣告陳述式，例如公用方法、公用欄位或類別宣告。  

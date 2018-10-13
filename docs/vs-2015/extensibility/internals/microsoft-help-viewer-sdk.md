@@ -1,7 +1,7 @@
 ---
 title: Microsoft 說明檢視器 SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 19ef7da357cf4b920dc6aca563fcdf6d68f69077
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267614"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Microsoft Help Viewer SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/microsoft-help-viewer-sdk)。  
-  
 這篇文章包含 Visual Studio 說明檢視器整合者的下列工作：  
   
 -   建立主題 （F1 支援）  

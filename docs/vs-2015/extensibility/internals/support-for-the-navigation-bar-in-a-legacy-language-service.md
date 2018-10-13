@@ -1,7 +1,7 @@
 ---
 title: 在舊版語言服務中的導覽列的支援 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e62ac19a42877c1c7c995ffd3d416b5225514b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267367"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[支援在舊版語言服務中的導覽列](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service)。  
-  
 導覽列頂端的 [編輯器] 檢視會顯示檔案中的類型和成員。 左側下拉式清單中，會顯示類型和成員會顯示在右側下拉式清單。 當使用者選取的型別時，插入號會放在類型的第一行中。 當使用者選取的成員時，則會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。  
   
 ## <a name="displaying-and-updating-the-navigation-bar"></a>顯示和更新的導覽列  

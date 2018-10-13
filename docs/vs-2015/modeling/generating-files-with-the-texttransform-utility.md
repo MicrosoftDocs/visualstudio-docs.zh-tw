@@ -1,7 +1,7 @@
 ---
 title: 使用 TextTransform 公用程式產生檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 069f7f5ef2c579c10c1ee7c19989c79ce3ad63bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227444"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[產生的檔案，使用 TextTransform 公用程式](https://docs.microsoft.com/visualstudio/modeling/generating-files-with-the-texttransform-utility)。  
-  
 TextTransform.exe 是命令列工具，可用來轉換文字範本。 當您呼叫 TextTransform.exe 時，您可以指定文字範本檔案的名稱做為引數。 TextTransform.exe 呼叫文字轉換引擎，並處理文字範本。 TextTransform.exe 通常會從指令碼呼叫。 不過，它通常不需要，因為在 Visual Studio 中或在建置流程中，您可以執行文字轉換。  
   
 > [!NOTE]

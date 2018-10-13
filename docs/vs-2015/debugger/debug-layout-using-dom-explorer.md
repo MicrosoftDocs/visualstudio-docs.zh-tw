@@ -1,7 +1,7 @@
 ---
 title: 使用 DOM 總管偵錯配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272608"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 總管偵錯配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 DOM 總管偵錯配置](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  **版面配置** 索引標籤的 [DOM 總管] 中顯示[CSS 方塊模型](http://go.microsoft.com/fwlink/?LinkID=238778)中選取的項目[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式、 Windows Phone 市集應用程式或使用 Visual Studio Tools for Apache Cordova 建立應用程式。 您可以使用此方塊模型的視覺表示方式，辨識和修改可影響項目外觀且與配置有關的值。  

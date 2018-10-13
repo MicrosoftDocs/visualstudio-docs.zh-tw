@@ -1,7 +1,7 @@
 ---
 title: COM 和 ActiveX 進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e874daab692c918a39980d207ccea7a88f50f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fca2af4745ffa932431d65771ae6c4e1761199d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246918"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[COM 和 ActiveX 進行偵錯](https://docs.microsoft.com/visualstudio/debugger/com-and-activex-debugging)。  
-  
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。  
   
 ## <a name="in-this-section"></a>本節內容  

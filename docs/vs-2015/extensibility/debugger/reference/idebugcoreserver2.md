@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 895196e529fa23b3972e74a20f6a5a489942472d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98d25bb44c678d7c81ab421d3ef5fd2b4aa2e246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276454"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugCoreServer2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver2)。  
-  
 此介面用來代表，並從網路上的機器上的伺服器取得資訊。  
   
 ## <a name="syntax"></a>語法  

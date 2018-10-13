@@ -1,7 +1,7 @@
 ---
 title: 使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250532"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[撰寫的單元測試 C/c + + 的 Microsoft 單元測試架構的 c + +](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)。  
-  
 在 Visual Studio 中，您可以為以 C++ 撰寫的 Unmanaged 程式碼建立單元測試。 Unmanaged 程式碼有時是指原生程式碼。  
   
  下列程序包含可協助您開始進行的重要資訊。 後續章節提供的逐步解說將詳細說明這些步驟。  

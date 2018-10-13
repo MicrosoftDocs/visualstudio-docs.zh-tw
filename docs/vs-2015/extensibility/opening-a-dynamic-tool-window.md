@@ -1,7 +1,7 @@
 ---
 title: 開啟動態工具視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71740aebb7b27bf4bd44302c23eeab10e5442996
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d45f1514b34e69b0b93fb7932b85a5b656f4c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263584"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>開啟動態工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開啟動態工具視窗](https://docs.microsoft.com/visualstudio/extensibility/opening-a-dynamic-tool-window)。  
-  
 從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有些時候，不過，您可能需要特定的 UI 內容套用，而關閉時的 UI 內容不再適用時，便會開啟工具視窗。 這類的工具視窗呼叫*動態*或是*自動顯示*。  
   
 > [!NOTE]

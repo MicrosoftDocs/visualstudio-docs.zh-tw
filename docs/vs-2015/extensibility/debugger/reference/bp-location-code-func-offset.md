@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FUNC_OFFSET |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b68f01e73703e16aba6daf05df449c17a2662c14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e095e4ac6c4972780df145b3c2706055ef4f439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260776"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BP_LOCATION_CODE_FUNC_OFFSET](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-code-func-offset)。  
-  
 描述程式碼中的函式的中斷點的位移的位置。  
   
 ## <a name="syntax"></a>語法  

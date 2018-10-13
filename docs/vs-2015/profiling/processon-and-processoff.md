@@ -1,7 +1,7 @@
 ---
 title: ProcessOn 和 ProcessOff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2d33a6d0e333600c31e540f03d6140853e796d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255072"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ProcessOn 和 ProcessOff](https://docs.microsoft.com/visualstudio/profiling/processon-and-processoff)。  
-  
 VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續分析命令列分析工作階段中指定的處理序。 **ProcessOff** 會停止分析處理序，**ProcessOn** 則開始分析處理序。  
   
  在大部分的情況下，您可以將 **ProcessOn** 或 **ProcessOff** 指定為 VSPerfCmd.exe 命令列的唯一選項，但它們也可以和 **GlobalOn**、**GlobalOff**、**ThreadOn** 及 **ThreadOff** 子命令合併使用。  

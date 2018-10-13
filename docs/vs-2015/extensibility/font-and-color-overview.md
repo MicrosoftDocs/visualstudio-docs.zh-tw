@@ -1,7 +1,7 @@
 ---
 title: 字型和色彩概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4321619f249a992d9cdd044f621a21d85a6c380
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9fdc81a3fddd4458a54d35c9e5a1b943726b101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245189"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[字型和色彩概觀](https://docs.microsoft.com/visualstudio/extensibility/font-and-color-overview)。  
-  
 本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 它也會介紹的概念類別和顯示項目，並說明如何在 Vspackage 和核心編輯器使用文字屬性。  
   
 ## <a name="the-fonts-and-colors-property-page"></a>字型和色彩屬性頁面  

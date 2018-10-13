@@ -1,7 +1,7 @@
 ---
 title: 將 Visual Studio 命令加入至起始頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3625f64686265123cd0b7e6f432db47cd978ae3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a301357765f85d80afb71985d51044227204997
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256234"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入 Visual Studio 命令，以起始頁](https://docs.microsoft.com/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page)。  
-  
 當您建立自訂起始頁時，您可以加入 Visual Studio 命令。 本文件討論繫結至在 [開始] 頁面的 XAML 物件的 Visual Studio 命令的不同方式。  
   
  如需 XAML 中命令的詳細資訊，請參閱[命令概觀](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  

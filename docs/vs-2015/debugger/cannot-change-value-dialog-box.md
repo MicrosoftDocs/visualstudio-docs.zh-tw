@@ -1,7 +1,7 @@
 ---
 title: 無法變更值對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a464be8e52a96da027e26ae48c5efb73ca2b5bf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cde574c1148af649fe421313cb943e1cebb1e221
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254718"
 ---
 # <a name="cannot-change-value-dialog-box"></a>無法變更值對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[無法變更值對話方塊](https://docs.microsoft.com/visualstudio/debugger/cannot-change-value-dialog-box)。  
-  
 錯誤  
  `The value of this variable cannot be changed` &#124;`The name` *名稱* `does not exist in the current context` &#124; *各種其他訊息*  
   

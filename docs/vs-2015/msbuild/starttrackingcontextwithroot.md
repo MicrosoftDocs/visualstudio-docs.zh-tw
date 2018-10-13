@@ -1,7 +1,7 @@
 ---
 title: StartTrackingContextWithRoot | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2c713b9f2b285bee56303b7d2142837d9afc62b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f93a82aea513eec6417b61c009ec239989f2d0c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269698"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[StartTrackingContextWithRoot](https://docs.microsoft.com/visualstudio/msbuild/starttrackingcontextwithroot)。  
-  
   
 使用指定根標記的回應檔啟動追蹤內容。  
   
@@ -44,13 +42,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```  
   
 #### <a name="parameters"></a>參數  
- [輸入] `intermediateDirectory`  
+ [in] `intermediateDirectory`  
  儲存追蹤記錄的目錄。  
   
- [輸入] `taskName`  
+ [in] `taskName`  
  找到追蹤內容。 這個名稱是用來建立記錄檔的名稱。  
   
- [輸入] `rootMarkerResponseFile`  
+ [in] `rootMarkerResponseFile`  
  包含根標記的回應檔路徑名稱。 根名稱是用來將內容所有的追蹤集合在一起。  
   
 ## <a name="return-value"></a>傳回值  

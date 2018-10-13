@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 184cab04a4eaca2bf444bd31d6c97a3e6f0f7685
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c855ae853ff9479ac9d156c4580e1c3ce7e85cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242734"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugSettingsCallback2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2)。  
-  
 啟用偵錯引擎讀取計量設定從遠端。  
   
 ## <a name="syntax"></a>語法  

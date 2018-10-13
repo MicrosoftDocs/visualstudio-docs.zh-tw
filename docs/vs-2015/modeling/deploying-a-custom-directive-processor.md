@@ -1,7 +1,7 @@
 ---
 title: 部署自訂指示詞處理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251949"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[部署自訂指示詞處理器](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor)。  
-  
 若要在任何電腦上的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用自訂指示詞處理器，您必須透過本主題中所述的其中一個方法進行註冊。  
   
  可供選擇的方法為：  
@@ -159,7 +157,7 @@ ms.locfileid: "47486826"
   
  確認 .pkgdef 檔是否出現在組建資料夾中，這個資料夾通常是 bin\Debug 或 bin\Release。 如果沒有出現，請使用文字編輯器開啟 .csproj 檔，並移除下列節點：`<GeneratePkgDefFile>false</GeneratePkgDefFile>`。  
   
- 如需詳細資訊，請參閱 < [Vspackage](../extensibility/internals/vspackages.md)。  
+ 如需詳細資訊，請參閱 [VSPackages](../extensibility/internals/vspackages.md)。  
   
 ## <a name="setting-a-registry-key"></a>設定登錄機碼  
  除非不得已，否則不建議使用這個方法來安裝自訂指示詞處理器。 它無法提供啟用和停用指示詞處理器的便利方式，也無法提供散發指示詞處理器給其他使用者的方法。  

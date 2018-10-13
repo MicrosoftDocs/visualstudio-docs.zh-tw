@@ -1,7 +1,7 @@
 ---
 title: 直接附加至程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab866d46e99c6cdee8300bc194468b115ab59e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30805988b00fa2c25057f75ebdc3b6359444ab5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265925"
 ---
 # <a name="attaching-directly-to-a-program"></a>直接附加至程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[連結直接到程式](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-directly-to-a-program)。  
-  
 想要偵錯程式已在通常執行的處理序中的使用者，請遵循此程序：  
   
 1.  在 IDE 中，選擇**偵錯的處理程序**命令**工具**功能表。  

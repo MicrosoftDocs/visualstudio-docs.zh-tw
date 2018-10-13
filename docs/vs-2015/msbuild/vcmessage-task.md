@@ -1,7 +1,7 @@
 ---
 title: VCMessage 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d667c53e00e7b92d133c260b5c3cc471a64f355b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f592160aae4fc1382b36c7331175eb6ab20d3fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243928"
 ---
 # <a name="vcmessage-task"></a>VCMessage 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VCMessage 工作](https://docs.microsoft.com/visualstudio/msbuild/vcmessage-task)。  
-  
   
 在組建期間記錄警告和錯誤訊息。  
   

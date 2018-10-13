@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯 COM 伺服器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79e9ffce5e7cd77acb4784fd2d26b268efad7b3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f728762022fc51efcfafb49755894be1086f5b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266925"
 ---
 # <a name="how-to-debug-com-servers"></a>如何：偵錯 COM 伺服器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 偵錯 COM 伺服器](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-com-servers)。  
-  
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  
   
  如果您沒有或不想使用容器應用程式的偵錯資訊，即可採用三步驟的處理方式，開始偵錯伺服器應用程式。  
