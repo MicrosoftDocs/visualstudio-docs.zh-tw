@@ -1,7 +1,7 @@
 ---
 title: Flowchart 活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1fb9c6493390b0f489b2afaf27dc0293748c70a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226235"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 <xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 <xref:System.Activities.Statements.Flowchart> 可以利用程式碼或使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 製作。 這個主題提供 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 體驗的說明文件。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 工作流程活動設計工具可供開發人員以自然的方式製作工作流程。  

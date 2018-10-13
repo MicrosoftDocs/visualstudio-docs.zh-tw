@@ -1,7 +1,7 @@
 ---
 title: 安裝與管理本機內容 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193832"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安裝和管理本機內容](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content)。  
-  
 藉由使用 Microsoft Help Viewer，您可以加入、移除、更新和移動安裝於您電腦上的說明內容，以符合您的軟體開發需求。  
   
  若要管理本機電腦上的內容，您必須以具有系統管理權限的帳戶登入。 此外，如果您在企業環境中使用，可能會無法管理本機內容，因為系統管理員可能會為您的組織做決策。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  

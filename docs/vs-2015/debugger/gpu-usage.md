@@ -1,7 +1,7 @@
 ---
 title: GPU 使用量 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a917f8c9b775a8dbd85554bd703aaa9e1ad10f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194116"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[GPU 使用量](https://docs.microsoft.com/visualstudio/profiling/gpu-usage)。  
-  
 使用「Visual Studio 效能及診斷中樞」中的「GPU 使用量」工具，適當地了解 Direct3D 應用程式的高階硬體使用率。 您可以使用它來判斷您應用程式的效能是 CPU-bound 還是 GPU-bound，並深入了解如何更有效地使用平台的硬體。 GPU 使用量支援使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的應用程式；它不支援其他圖形 API (例如 Direct2D 或 OpenGL)。  
   
  這是 [GPU 使用量報告] 視窗：  

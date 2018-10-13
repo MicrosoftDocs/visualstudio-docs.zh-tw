@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a915458c00e75f6acb62434e184170420d15aad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fa2bc4ecf31588f9f56082f2ce465cb9690908
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214317"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CONTEXT_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/context-info)。  
-  
 此結構描述的記憶體內容或程式碼內容。  
   
 ## <a name="syntax"></a>語法  

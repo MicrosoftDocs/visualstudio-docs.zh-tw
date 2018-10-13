@@ -1,7 +1,7 @@
 ---
 title: 資源爭用資料檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5434c2ba1f841c28a3aefbc8febc07c1eccd1b96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c24c74ce976dbc571dd4b5410196f2d01782eba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231825"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[資源爭用資料檢視](https://docs.microsoft.com/visualstudio/profiling/resource-contention-data-views)。  
-  
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。  
   
 ## <a name="in-this-section"></a>本節內容  

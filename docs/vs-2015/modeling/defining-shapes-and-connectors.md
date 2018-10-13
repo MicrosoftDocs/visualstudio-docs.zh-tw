@@ -1,7 +1,7 @@
 ---
 title: 定義圖案和接點 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee16ff9dcca787fdf35101aff69348ccea42cfcf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244604"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義圖案和接點](https://docs.microsoft.com/visualstudio/modeling/defining-shapes-and-connectors)。  
-  
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。  
   
 ##  <a name="shapeTypes"></a> 基本類型的圖案和接點  

@@ -1,7 +1,7 @@
 ---
 title: MenuCommand 對比OleMenuCommands |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: b60f56c0622750751848e0d6492c4235c9458e9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193579"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -149,7 +149,7 @@ ms.locfileid: "47486730"
   
      <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
-     封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。  
+     封裝範本所建立的命令，依預設會在封裝類別的 `Initialize()` 方法中，傳遞到 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件。  
   
 4.  <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   

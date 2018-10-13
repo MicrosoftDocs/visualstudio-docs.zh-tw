@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯 ASP.NET 例外狀況 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178525"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 偵錯 ASP.NET 例外狀況](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions)。  
-  
 偵錯例外狀況是很重要的一部分，開發強固的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]應用程式。 如何偵錯例外狀況的一般資訊位於[偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)。  
   
  若要偵錯未處理的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]例外狀況，您必須確定偵錯工具停止它們。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行階段擁有最上層例外狀況處理常式。 因此，偵錯工具預設為絕不會在未處理的例外狀況中斷。 若要擲回例外狀況時，偵錯工具中斷，您必須選取**例外狀況時中斷： 擲回**設定在該特定例外狀況**例外狀況** 對話方塊。  

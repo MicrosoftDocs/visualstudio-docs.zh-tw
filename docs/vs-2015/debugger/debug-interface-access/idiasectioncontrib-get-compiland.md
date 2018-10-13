@@ -1,7 +1,7 @@
 ---
 title: 'Idiasectioncontrib:: Get_compiland |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e76fea45f5f18e4ab7b93daa40ab73bec431ea88
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7264614cf538cec59d513aa9e1caf0a4e2ef609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241562"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasectioncontrib:: Get_compiland](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-compiland)。  
-  
 擷取提供這一節的編譯模組符號的參考。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: UsedCommand 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78ab46c4524bb25563d407514aa0590e75feffaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: abcc3117b46cca424388b849f9baf26d79ca270e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194634"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UsedCommand 元素](https://docs.microsoft.com/visualstudio/extensibility/usedcommand-element)。  
-  
 可讓 VSPackage 也可以存取另一個.vsct 檔案中定義的命令。 例如，如果您的 VSPackage 會使用標準**複製**命令，可定義[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]shell 中，您可以將命令加入功能表或工具列而不需要重新實作它。  
   
 ## <a name="syntax"></a>語法  

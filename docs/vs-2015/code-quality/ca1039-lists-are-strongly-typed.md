@@ -1,7 +1,7 @@
 ---
 title: CA1039： 清單為強型別 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e20be039d2b743fecf15d855bc5f32fd65a75ce9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1f2e9bd676c1786efe3cebd34bc3eeb3d0c4e778
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221564"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039：清單為強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1039： 清單為強類型](https://docs.microsoft.com/visualstudio/code-quality/ca1039-lists-are-strongly-typed)。
-
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|

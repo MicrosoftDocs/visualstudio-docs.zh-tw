@@ -1,7 +1,7 @@
 ---
 title: JIT 最佳化和偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201976"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[JIT 最佳化和偵錯](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging)。  
-  
 當您偵錯 managed 應用程式，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]依預設會隱藏在 just-in-time (JIT) 程式碼的最佳化。 隱藏 JIT 最佳化表示您是在偵錯非最佳化的程式碼。 因為沒有最佳化，所以程式碼的執行速度較慢，但是您的偵錯經驗會更完整。 偵錯最佳化的程式碼更為困難，建議您只有在遇到發生於最佳化程式碼中的錯誤，又無法在非最佳化版本中重現錯誤時，才偵錯最佳化的程式碼。  
   
  在控制 JIT 最佳化[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]所**隱藏 JIT 最佳化模組載入**選項。 您可以找到此選項**一般**頁面**偵錯**節點中的**選項** 對話方塊。  

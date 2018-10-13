@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 使用圖形診斷來偵錯計算著色器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250142"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷來偵錯計算著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用圖形診斷來偵錯計算著色器](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader)。  
-  
 本逐步解說示範如何使用 Visual Studio 圖形診斷工具來調查產生不正確結果的計算著色器。  
   
  本逐步解說將說明下列工作：  
@@ -41,7 +39,7 @@ ms.locfileid: "47499116"
   
  ![模擬的流體的行為不正確。](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- 如需有關如何擷取圖形記錄檔中的圖形問題的資訊，請參閱 <<c0> [ 擷取圖形資訊](../debugger/capturing-graphics-information.md)。  
+ 如需如何擷取圖形記錄檔中圖形問題的資訊，請參閱 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)。  
   
 ## <a name="investigation"></a>調查  
  若要載入圖形記錄檔，以檢查所擷取的畫面格，您可以使用圖形診斷工具。  

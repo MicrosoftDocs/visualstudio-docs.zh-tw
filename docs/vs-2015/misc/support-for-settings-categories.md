@@ -1,7 +1,7 @@
 ---
 title: 設定類別的支援 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: douge
-ms.openlocfilehash: 474537895af5c51c7abd7439b58f8ef5994bdc11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244929"
 ---
 # <a name="support-for-settings-categories"></a>設定類別的支援
-設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在 [工具]  功能表上，按一下 [匯入和匯出設定]  啟動 [匯入和匯出設定精靈] 。 此精靈提供三個選項︰匯出、匯入或重設您的設定。 選取 [匯出]，例如開啟精靈的 [選擇要匯出的設定]  頁面。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "47490263"
 -   您可以使用 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 來連接這兩者。  
   
 ## <a name="support-for-settings-categories"></a>設定類別的支援  
- <xref:Microsoft.VisualStudio.Shell.Package> 類別 (class) 支援建立類別 (category)。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別 (class) 會實作類別 (category)。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 的預設實作會將其公用屬性當成類別提供給使用者。 如需詳細資訊，請參閱 < [Creating a Settings Category](../extensibility/creating-a-settings-category.md)。  
+ <xref:Microsoft.VisualStudio.Shell.Package> 類別 (class) 支援建立類別 (category)。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別 (class) 會實作類別 (category)。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 的預設實作會將其公用屬性當成類別提供給使用者。 如需詳細資訊，請參閱 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)。  
   
  <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別會實作 <xref:Microsoft.VisualStudio.Shell.IProfileManager>，以提供選項頁面和使用者設定的持續性。 <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> 和 <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> 方法會將設定持續保存至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分別提供為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> 的 .vssettings 檔案。 <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> 方法會將設定重設為其預設值。  
   

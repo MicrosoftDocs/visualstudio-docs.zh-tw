@@ -1,7 +1,7 @@
 ---
 title: 建立專案類型的時機 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c99aed424094d21fa1cd84163d5ee36f206fa19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98dd3f0058e2dacd1a6ab8ed3fc048dfd2e6397e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245397"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立的專案類型的時機](https://docs.microsoft.com/visualstudio/extensibility/internals/when-to-create-project-types)。  
-  
 建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]自訂項目。 下列指導方針可協助您判斷新的專案類型是否需要針對您的案例。  
   
 ## <a name="create-a-new-project-type"></a>建立新的專案類型  

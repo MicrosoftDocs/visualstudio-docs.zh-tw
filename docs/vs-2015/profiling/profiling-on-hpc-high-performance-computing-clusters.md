@@ -1,7 +1,7 @@
 ---
 title: 在 HPC (高效能運算) 叢集上進行程式碼剖析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c67732552239f995b5edd6a328ae1de4fa379e3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178941"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼剖析 HPC （高效能運算） 叢集上](https://docs.microsoft.com/visualstudio/profiling/profiling-on-hpc-high-performance-computing-clusters)。  
-  
 您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。  
   
 ## <a name="prerequisites"></a>必要條件  

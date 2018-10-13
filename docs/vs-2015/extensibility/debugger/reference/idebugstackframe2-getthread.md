@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetThread |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 691ef48d45f2b4f812cb75f7879f2d151d3f0ff7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 995387a07c18dc631542e06c6d3f0aa63eacd612
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178096"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugStackFrame2::GetThread](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getthread)。  
-  
 取得與堆疊框架相關聯的執行緒。  
   
 ## <a name="syntax"></a>語法  

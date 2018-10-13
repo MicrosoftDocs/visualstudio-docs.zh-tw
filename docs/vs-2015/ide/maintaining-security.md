@@ -1,7 +1,7 @@
 ---
 title: 維護安全性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230792"
 ---
 # <a name="maintaining-security"></a>維護安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[維護安全性](https://docs.microsoft.com/visualstudio/ide/maintaining-security)。  
-  
 常有人說，安全性的代價就是長期的警覺， 儘管您在應用程式的設計和開發過程中已經對安全性投注極大的心力，仍應該假設部署之後會產生安全性問題。 藉由稽核應用程式和分析事件記錄檔的方式，您可能會發現一些之前隱藏的問題。  
   
  此外，您不僅必須對自己的應用程式保持警覺心，也必須對執行應用程式的平台和應用程式相依的其他產品，注意其當前的安全性威脅和問題。  

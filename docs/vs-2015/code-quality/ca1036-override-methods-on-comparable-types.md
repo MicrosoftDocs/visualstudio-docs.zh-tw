@@ -1,7 +1,7 @@
 ---
 title: Ca1036： 必須覆寫在 comparable 類型的方法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 906ee4c3e5300f04b5627c7b3aa19ba7950f3239
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202822"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：必須在 Comparable 類型中覆寫方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[ca1036 必須： 在 comparable 類型覆寫方法](https://docs.microsoft.com/visualstudio/code-quality/ca1036-override-methods-on-comparable-types)。
-
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolsForAcceleratorPointerTag |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a97f24807bd069f9d0c352838ac1d098be7f0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 683aa776dd1a69fddebcc45cd32a4eafe6e27dd8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250155"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaSession::findSymbolsForAcceleratorPointerTag](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag)。  
-  
 父項加速器虛設常式的函式中傳回指定的標記值會對應到變數的符號的列舉。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 巡覽及更新程式碼中的圖層模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214920"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[瀏覽和更新圖層的程式碼中的模型](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code)。  
-  
 本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需有關從使用者的觀點來看的分層圖的詳細資訊，請參閱[分層圖： 參考](../modeling/layer-diagrams-reference.md)並[分層圖： 方針](../modeling/layer-diagrams-guidelines.md)。  
   
  本主題所述的 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> 模型是較為一般 <xref:Microsoft.VisualStudio.GraphModel> 模型的正面。 如果您正在撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您正在撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。  

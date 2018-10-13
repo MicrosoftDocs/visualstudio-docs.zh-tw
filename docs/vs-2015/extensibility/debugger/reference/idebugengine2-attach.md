@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::Attach |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e84c532c0e0733e8fcd832c494564019f755e3c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa03f59945b1e51d0c86aee48dde27d0fa4b326b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177082"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngine2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-attach)。  
-  
 將偵錯引擎 (DE) 附加至程式或程式。 執行同處理序以 SDM DE 時，由工作階段的偵錯管理員 (SDM) 呼叫。  
   
 ## <a name="syntax"></a>語法  

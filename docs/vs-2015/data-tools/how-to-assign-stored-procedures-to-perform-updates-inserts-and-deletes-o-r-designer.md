@@ -1,7 +1,7 @@
 ---
 title: 如何： 指派預存程序來執行更新、 插入和刪除 （O-R 設計工具） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232709"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指派預存程序來執行更新、 插入和刪除 （O-R 設計工具）](https://docs.microsoft.com/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)。  
-  
   
 預存程序 (Stored Procedure) 可以加入至 O/R 設計工具，而且可以當成一般 <xref:System.Data.Linq.DataContext> 方法來執行。 它們也可用來覆寫預設值[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]執行插入、 更新和刪除時的變更儲存至資料庫的實體類別的執行階段行為 (例如，在呼叫時，才<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。  
   

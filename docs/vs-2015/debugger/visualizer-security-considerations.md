@@ -1,7 +1,7 @@
 ---
 title: 視覺化檢視安全性考量 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f041aa4506906291f429e8825ca42b7ea30f14c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45eb2f245e55f178d1c488c1269388851741de39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237116"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[視覺化檢視安全性考量](https://docs.microsoft.com/visualstudio/debugger/visualizer-security-considerations)。  
-  
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。  
   
  偵錯工具視覺化檢視需要比部分信任應用程式所允許還要大的權限。 當您在部分信任的程式碼中被停止時，視覺化檢視將不會載入。 若要使用視覺化檢視進行偵錯，您必須以完全信任方式執行程式碼。  

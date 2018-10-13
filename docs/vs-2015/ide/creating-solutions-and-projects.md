@@ -1,7 +1,7 @@
 ---
 title: 建立方案與專案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248530"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立方案和專案](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)。  
-  
 專案是邏輯容器，以儲存建置您應用程式所需的所有檔案。 選擇主要功能表中的 [檔案] &#124; [新增] &#124; [專案] 來建立專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立一個包含該專案的方案。 您接著可以視需要將更多新的或現有專案加入方案。 您可以從現有的程式碼檔案建立專案，而且您可以建立暫存專案 (僅限 .NET)，當專案完成後，將刪除暫存專案。  
   
 > [!NOTE]

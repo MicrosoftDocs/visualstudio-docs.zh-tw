@@ -1,7 +1,7 @@
 ---
 title: 註釋函式行為 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234386"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[標註函式行為](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior)。  
-  
 除了標註[函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)，您可以標註整體函式的屬性。  
   
 ## <a name="function-annotations"></a>函式註釋  
@@ -61,7 +59,7 @@ ms.locfileid: "47491328"
 |`_Always_(anno_list)`|相當於 `anno_list _On_failure_(anno_list)`，也就是說，無論函式是否成功，都會套用 `anno_list` 中的註釋。|  
 |`_On_failure_(anno_list)`|只有在同時使用 `_Success_` 標註函式時才使用，無論是明確使用，或是在 typedef 上透過 `_Return_type_success_` 隱含使用。 當 `_On_failure_` 註釋出現在函式參數或傳回值上時，在 `anno_list` (anno) 中每個註釋的行為就如同撰寫成 `_When_(!expr, anno)` 的程式碼，其中 `expr` 是所需 `_Success_` 註釋的參數。 這表示，對所有後置條件的 `_Success_` 的隱含用法不適用於 `_On_failure_`。|  
 |`_Return_type_success_(expr)`|可套用至 typedef。 指出傳回該類型且未明確擁有 `_Success_` 的所有函式，都會標註為如同擁有 `_Success_(expr)`。 `_Return_type_success_` 無法在函式或函式指標 typedef 上使用。|  
-|`_Success_(expr)`|`expr` 是產生右值的運算式。 當 `_Success_` 註釋出現在函式宣告或定義上時，函式上和後置條件中每個註釋 (`anno`) 的行為就如同撰寫為 `_When_(expr, anno)` 程式碼一樣。 `_Success_` 註釋只能在函式上使用，而不能在其參數或傳回類型上使用。 函式上最多只能有一個 `_Success_` 註釋，而且不能在任何 `_When_`、`_At_` 或 `_Group_` 中。 如需詳細資訊，請參閱 <<c0> [ 指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
+|`_Success_(expr)`|`expr` 是產生右值的運算式。 當 `_Success_` 註釋出現在函式宣告或定義上時，函式上和後置條件中每個註釋 (`anno`) 的行為就如同撰寫為 `_When_(expr, anno)` 程式碼一樣。 `_Success_` 註釋只能在函式上使用，而不能在其參數或傳回型別上使用。 函式上最多只能有一個 `_Success_` 註釋，而且不能在任何 `_When_`、`_At_` 或 `_Group_` 中。 如需詳細資訊，請參閱 <<c0> [ 指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 檢查 IIS 屬性設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46daaa21a75e221a3174092032c3b7b99dee7d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38e647c25268b8d7c9e55fe1ee30f933a66f9f72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236141"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 確認 IIS 屬性設定](https://docs.microsoft.com/visualstudio/debugger/how-to-verify-iis-property-settings)。  
-  
 您可以使用 IIS 系統管理工具設定 Web 應用程式的屬性。 必須正確設定這些屬性才能順利執行應用程式，因此驗證這些設定通常都是疑難排解的必要步驟。  
   
 > [!NOTE]

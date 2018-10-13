@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEx2::GetProgram |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f220ba4d6858c053e70bd5620cff41b49f7578ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 122964c05eb9ec0a5e5f1f103badb6a74f336eb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171466"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortEx2::GetProgram](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportex2-getprogram)。  
-  
 取得與程式節點相關聯的程式。  
   
 ## <a name="syntax"></a>語法  

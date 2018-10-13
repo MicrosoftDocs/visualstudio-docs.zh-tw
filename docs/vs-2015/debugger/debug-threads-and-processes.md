@@ -1,7 +1,7 @@
 ---
 title: 偵錯執行緒和處理程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191486"
 ---
 # <a name="debug-threads-and-processes"></a>偵錯執行緒和處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯執行緒和處理序](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes)。  
-  
 執行緒 * 並*處理序*是電腦科學中相關的概念。 兩者都代表必須以特定順序執行的指令序列。 但是，不同執行緒或處理序中的指令能夠平行執行。  
   
  處理序存在於作業系統中，並對應至所謂的程式或應用程式。 從另一方面來說，執行緒存在於處理序中。 基於這個理由，執行緒有時候稱為*輕量級程序*。 每個處理序是由一或多個執行緒組成。  

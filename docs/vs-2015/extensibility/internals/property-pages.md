@@ -1,7 +1,7 @@
 ---
 title: 屬性頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 544f69a8cfa90c7977a2861452fa47a570eb0bbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181061"
 ---
 # <a name="property-pages"></a>屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性頁](https://docs.microsoft.com/visualstudio/extensibility/internals/property-pages)。  
-  
 使用者可以檢視和變更使用屬性頁的專案組態相關和-獨立屬性。 A**屬性頁**中已啟用 按鈕**屬性**視窗或 方案總管 工具列上的物件可提供所選物件的屬性頁面檢視。 屬性頁所建立的環境，並可供方案和專案。 它們，不過，也可以是可進行的專案項目使用的組態相關的屬性。 當專案中的檔案需要不同的編譯器參數設定，才能正確建置時，可能會使用這項功能。  
   
 ## <a name="using-property-pages"></a>使用屬性頁  

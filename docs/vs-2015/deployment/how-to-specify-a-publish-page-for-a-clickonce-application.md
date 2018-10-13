@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定 ClickOnce 應用程式的發行頁面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c1aeb81c6430e8ee4719565dd52c7e404c860939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196686"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 應用程式的發行頁面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定 ClickOnce 應用程式的 [發行] 頁面](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-publish-page-for-a-clickonce-application)。  
-  
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式中，預設 Web 網頁 (publish.htm) 會產生並發佈以及應用程式。 此頁面包含的應用程式、 安裝應用程式和/或任何必要條件，連結和說明主題描述的連結名稱[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。 **發行頁**專案的屬性可讓您指定網頁的名稱您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
   
  一旦發佈頁面中有指定下, 一次發佈時，會將它複製到發行位置;它不會覆寫您在重新發佈。 如果您想要自訂頁面的外觀，您可以不必擔心會遺失您的變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 ClickOnce 預設 Web 網頁](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  

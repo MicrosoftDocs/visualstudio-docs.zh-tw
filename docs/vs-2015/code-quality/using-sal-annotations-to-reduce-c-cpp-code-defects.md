@@ -1,7 +1,7 @@
 ---
 title: 使用 SAL 註釋減少 C-C + + 程式碼缺失 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207008"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 SAL 註釋減少 C/c + + 程式碼缺失](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)。  
-  
 SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用來源的程式碼註解，您可以讓其目的後置您的程式碼明確。 這些註解也會啟用透過來分析您的程式碼更精確地說，少了許多誤判和誤否定的自動化的靜態分析工具。  
   
  文件的本節文章討論 SAL 的層面，提供 SAL 的語法，參考並提供其用法範例。  

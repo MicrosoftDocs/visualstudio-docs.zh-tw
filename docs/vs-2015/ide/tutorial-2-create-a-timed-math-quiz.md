@@ -1,7 +1,7 @@
 ---
 title: 教學課程 2：建立計時的數學測驗 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ec4c1bd1c01229ab0c8f32a78e2b7483a1efc06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205064"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[教學課程 2： 建立計時的數學測驗](https://docs.microsoft.com/visualstudio/ide/tutorial-2-create-a-timed-math-quiz)。  
-  
 在本教學課程中，您將會建置一項測驗，在測驗中，受測者必須在指定的時間內回答四個隨機的算術問題。 您將學習如何：  
   
 -   使用 `Random` 類別產生隨機數字。  

@@ -1,7 +1,7 @@
 ---
 title: 建立支援查閱資料繫結 Windows Forms 使用者控制項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8bdf410875bcc37766d4ce9bca27bec6564ce01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231651"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結 Windows Forms 使用者控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[資料繫結-Windows Form 控制項中使用查閱資料表 |Microsoft Docs](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding)。  
-  
   
 在 Windows Form 上顯示資料，您可以選擇從現有的控制項**工具箱**，或者也可以編寫自訂控制項，如果您的應用程式需要無法使用標準控制項中的功能。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項可以包含三個可繫結至資料的屬性。 這類控制項類似 <xref:System.Windows.Forms.ComboBox>。  
   

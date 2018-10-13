@@ -1,7 +1,7 @@
 ---
 title: 使用 XML 資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b86ba9a44efc4f0cf8dc9c23e0c0b5d833015bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233465"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 XML 資料](https://docs.microsoft.com/visualstudio/xml-tools/working-with-xml-data)。  
-  
   
 對於在 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 中處理資料的方式，XML 及其相關技術扮演很重要的角色。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。  
   

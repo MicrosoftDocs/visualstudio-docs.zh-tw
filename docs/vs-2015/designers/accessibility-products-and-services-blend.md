@@ -1,7 +1,7 @@
 ---
 title: 協助工具產品和服務 (Blend) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197817"
 ---
 # <a name="accessibility-products-and-services-blend"></a>協助工具產品和服務 (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[協助工具產品和服務 (Blend)](https://docs.microsoft.com/visualstudio/designers/accessibility-products-and-services-blend)。  
-  
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列章節提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：  
   
 -   ＜Windows 協助工具功能＞  

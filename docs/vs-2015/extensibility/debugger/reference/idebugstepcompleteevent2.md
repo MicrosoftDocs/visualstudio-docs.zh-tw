@@ -1,7 +1,7 @@
 ---
 title: IDebugStepCompleteEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a12dafa55996b19ca859433176cc6fd7ab2bc509
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a082227fc89cb5670b29788ca12a887b7c07d233
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221620"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugStepCompleteEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstepcompleteevent2)。  
-  
 這個介面是由偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 完成時傳送正在偵錯程式逐步執行、 不進入，函式或步驟，以非正規的原始碼或陳述式或指令。  
   
 ## <a name="syntax"></a>語法  

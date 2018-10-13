@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio 提高產能的秘訣 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173325"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[適用於 Visual Studio 提高產能秘訣](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio)。  
-  
 遵循下列提示，您可以在 Visual Studio 中更快速、有效率地撰寫、巡覽及偵錯程式碼。 如需常用鍵盤快速鍵的詳細資訊，請參閱[秘訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)。 如需更完整的清單，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
   
  本主題包含下列章節：  

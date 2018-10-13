@@ -1,7 +1,7 @@
 ---
 title: CPU 使用量 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a8bd6cb34bf125ada7a880ca2802802fbcc579d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208687"
 ---
 # <a name="cpu-usage"></a>CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中分析 CPU 使用量](https://docs.microsoft.com/visualstudio/profiling/cpu-usage)。  
-  
 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 「CPU 使用量」工具顯示 CPU 花時間執行 Visual C++、Visual C#/Visual Basic 和 JavaScript 程式碼的地方。  
   
  從 Visual Studio 2015 Update 1 開始，您不需要離開偵錯工具，就可以看到依函式的 CPU 使用量明細。 您可以偵錯時開啟和關閉 CPU 程式碼剖析，並檢視執行停止時的結果，例如中斷點。 如需詳細資訊，請參閱 [在 Visual Studio 2015 的偵錯工具中分析 CPU](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx)。  

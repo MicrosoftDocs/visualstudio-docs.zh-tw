@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 下載組件隨選與 ClickOnce 部署 API |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b5779ee2c1cd57d08627038ab7b65cc760afb5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199130"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依 ClickOnce 部署 API 的要求下載組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 依需求以 ClickOnce 部署 API 下載的組件](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api)。  
-  
 根據預設，所有組件包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將標示為 「 選用 」，應用程式中的某些組件，以及如何下載它們使用中的類別<xref:System.Deployment.Application>common language runtime (CLR) 要求它們時的命名空間。  
   
 > [!NOTE]

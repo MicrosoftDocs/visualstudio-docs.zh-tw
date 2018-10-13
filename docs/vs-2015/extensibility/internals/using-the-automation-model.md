@@ -1,7 +1,7 @@
 ---
 title: 使用 Automation 模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da79ac654f37b8f9fd9ceaa1eac3df09204f7196
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51579a61cad76cd3164a8ddce739511e7a81d622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203173"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Automation 模型](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-automation-model)。  
-  
 您已經連接 VSPackage 自動化之後，您可以藉由呼叫取得的屬性和方法<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>物件，並傳遞字串，表示您想要擷取的物件。  
   
 ## <a name="obtaining-project-objects"></a>取得專案物件  

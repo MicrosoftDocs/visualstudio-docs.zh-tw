@@ -1,7 +1,7 @@
 ---
 title: 使用率導覽 |Microsoft 文件
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238585"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用率導覽](https://docs.microsoft.com/visualstudio/profiling/utilization-navigator)。  
-  
 您可以使用並行視覺化檢視中的使用率導覽，選取追蹤中的一段時間。 並行視覺化檢視會顯示目標處理序在一段時間內的 CPU 核心使用率。 這可讓您更輕鬆地檢查 CPU 使用率模式，也可讓您比較使用率資料與其他檢視中的資料。 使用率導覽會出現在並行視覺化檢視中的每個檢視頂端。 下圖顯示使用率導覽。  
   
  ![顯示所選時間範圍的使用率導覽](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  

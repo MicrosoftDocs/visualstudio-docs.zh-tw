@@ -1,7 +1,7 @@
 ---
 title: LINQ to SQL 工具，在 Visual 2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195373"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具，在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[LINQ to SQL 工具，在 Visual 2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)。  
-  
   
 LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 其運作方式也在基本案例中，並會繼續支援在 Visual Studio 中，但不再進行開發。 使用 LINQ to SQL 時維護舊版的應用程式已使用它，或使用 SQL Server，而且不需要多重資料表對應的簡單應用程式中。 一般情況下，新的應用程式在需要物件關聯式對應程式層時，應該使用 Entity Framework。  
   
