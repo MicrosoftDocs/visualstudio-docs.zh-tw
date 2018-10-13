@@ -1,7 +1,7 @@
 ---
 title: 擴充 JavaScript IntelliSense |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214249"
 ---
 # <a name="extending-javascript-intellisense"></a>擴充 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
-  
 JavaScript IntelliSense 擴充性功能可讓您自訂在協力廠商程式庫的 JavaScript 編輯器中 IntelliSense 結果。 這可以改善開發人員使用這些程式庫的體驗。  
   
  JavaScript 語言服務會提供 IntelliSense 功能新增至專案的第三方 JavaScript 程式庫。 對於大部分的程式庫，提供陳述式完成自動語言服務。 下圖顯示陳述式完成的範例：  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_isltcg |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7651de9c8ed743ecdb9b75a129dd387640890f7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b1fa0148d3ba6e1de26c2c2629561e63d48777e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300829"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_isltcg](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isltcg)。  
-  
 擷取指定的旗標是否[編譯模組](../../debugger/debug-interface-access/compiland.md)已與連結器參數連結[/LTCG （連結時間程式碼產生）](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)，這可以協助整個程式最佳化。 這個參數只適用於 managed 程式碼。  
   
 ## <a name="syntax"></a>語法  

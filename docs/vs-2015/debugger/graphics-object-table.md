@@ -1,7 +1,7 @@
 ---
 title: 圖形物件表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219516"
 ---
 # <a name="graphics-object-table"></a>圖形物件表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[圖形物件表](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table)。  
-  
 Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您遊戲或應用程式之畫面格的 Direct3D 物件。  
   
  這是 [物件表]：  

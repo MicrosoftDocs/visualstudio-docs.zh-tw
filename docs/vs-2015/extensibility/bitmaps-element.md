@@ -1,7 +1,7 @@
 ---
 title: Bitmaps 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb0e241b3767e8c730438ca29b6874d1a385ef2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43e9644550fc20735e60be5ab74ed0e0a5e94b8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239515"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Bitmaps 元素](https://docs.microsoft.com/visualstudio/extensibility/bitmaps-element)。  
-  
 群組[點陣圖項目](../extensibility/bitmap-element.md)項目。  
   
 ## <a name="syntax"></a>語法  

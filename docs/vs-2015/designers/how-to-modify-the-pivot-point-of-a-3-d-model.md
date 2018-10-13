@@ -1,7 +1,7 @@
 ---
 title: 如何：修改 3D 模型的樞紐分析點 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19864f98df2b10d06362969d82752b68b6ba26c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300387"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改 3D 模型的樞紐分析點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 修改 3d 模型的樞紐點](https://docs.microsoft.com/visualstudio/designers/how-to-modify-the-pivot-point-of-a-3-d-model)。  
-  
 本文件將示範如何使用模型編輯器來修改 3D 模型的「樞紐分析點」。 樞紐分析點是空間中的點，定義物件在旋轉和縮放時的數學中心。  
   
  本文件示範下列活動︰  

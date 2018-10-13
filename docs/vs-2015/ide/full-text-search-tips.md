@@ -1,7 +1,7 @@
 ---
 title: 全文檢索搜尋提示 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f5fe5e4d4e1f5e1c071bd4da89588022bde9831
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303429"
 ---
 # <a name="full-text-search-tips"></a>全文檢索搜尋提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[全文檢索搜尋提示](https://docs.microsoft.com/visualstudio/ide/full-text-search-tips)。  
-  
 在 [說明] 中尋找資訊的其中一個更有效方法是執行全文檢索搜尋。 若要縮小並自訂您的結果，您必須了解語法對查詢有何影響。 本主題提供秘訣、程序和詳細的語法資訊，以協助您更精心製作查詢。  
   
 ## <a name="full-text-search-tips"></a>全文檢索搜尋提示  

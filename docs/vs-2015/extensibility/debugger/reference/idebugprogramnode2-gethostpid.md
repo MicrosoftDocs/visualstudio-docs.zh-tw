@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostPid |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec016aeada3ff9a67f5b32adeb66f11b12928f07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40344e715a1811249ef58ed319b4afae40a46a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289629"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramNode2::GetHostPid](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-gethostpid)。  
-  
 取得裝載程式的處理序的系統處理序識別碼。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 當地語系化 ClickOnce 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261465"
 ---
 # <a name="localizing-clickonce-applications"></a>當地語系化 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[當地語系化 ClickOnce 應用程式](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications)。  
-  
 當地語系化是讓應用程式適合特定文化特性的程序， 這個程序包括將使用者介面 (UI) 文字翻譯成特定地區的語言、使用正確的日期和貨幣格式、調整表單上控制項的大小，以及視需要將控制項左右反轉。  
   
  將應用程式當地語系化時，會為應用程式建立一個或多個附屬組件， 每個組件都包含指定之文化特性特有的 UI 字串、影像和其他資源  (應用程式的主要可執行檔包含應用程式預設的文化特性字串)。  

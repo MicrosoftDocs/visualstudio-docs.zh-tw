@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1bf0581ac11e97bf5543c0d17e8f665091babbd7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291235"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-cppunittestframework)。  
-  
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。  
   
  標頭檔位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 資料夾。  

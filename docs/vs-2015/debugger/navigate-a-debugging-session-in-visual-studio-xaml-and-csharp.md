@@ -1,7 +1,7 @@
 ---
 title: 巡覽偵錯工作階段在 Visual Studio （Xaml 和 C#） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492240"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306302"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中巡覽偵錯工作階段 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[巡覽 （Xaml 和 C#） 的 Visual Studio 中偵錯工作階段](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp)。  
-  
 本快速入門示範如何巡覽 Visual Studio 偵錯工作階段，以及如何檢視與變更工作階段中的程式狀態。  
   
  本快速入門適用於不熟悉使用 Visual Studio 偵錯的開發人員，以及想要深入了解在 Visual Studio 偵錯工作階段中巡覽的開發人員。 它不會教導偵錯本身的藝術。 範例程式碼中的方法僅針對示範本主題中所述的偵錯程序而設計。 這些方法不會採用應用程式或函式設計的最佳作法。 事實上，您很快就會發現這些方法與應用程式本身根本沒有太大功用。  

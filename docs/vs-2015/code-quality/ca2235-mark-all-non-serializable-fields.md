@@ -1,7 +1,7 @@
 ---
 title: Ca2235： 必須標記所有不可序列化的欄位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 025ee336052bdad010b55e1ba804b2bd37c7e0d7
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 128b70c2fc05634c9da49dfe4ae449344e9c20be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305262"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235：必須標記所有不可序列化的欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[ca2235 必須： 標記所有不可序列化的欄位](https://docs.microsoft.com/visualstudio/code-quality/ca2235-mark-all-non-serializable-fields)。
-
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|

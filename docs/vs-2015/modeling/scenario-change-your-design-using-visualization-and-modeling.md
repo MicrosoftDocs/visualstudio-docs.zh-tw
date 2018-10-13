@@ -1,14 +1,14 @@
 ---
 title: 情節： 變更您的設計使用視覺化和模型化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,18 +22,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303039"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[案例： 使用視覺化和模型變更設計](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling)。  
-  
 請使用 Visual Studio 中的視覺化與模型工具，確定您的軟體系統符合使用者的需求。 請使用像是整合模組化語言 (UML) 圖表、Code Map、分層圖與類別圖表等工具，以進行下列項目：  
   
  若要查看支援各項工具的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -292,7 +290,7 @@ ms.locfileid: "47492443"
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|*分層圖*<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖： 參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 分層圖會組織，並將對應中的成品[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解決方案，以抽象群組，稱為*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|  
+|*分層圖*<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖： 參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 分層圖會組織 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的成品並將其對應到稱為 *「圖層」*(Layer) 的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|  
   
  例如，下列分層圖會描述圖層間的相依性，以及與每個圖層相關聯的成品數目。  
   
@@ -306,7 +304,7 @@ ms.locfileid: "47492443"
   
 -   [定義建置流程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+-   [使用閘道簽入建置流程來驗證變更](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
 -   [自訂建置流程範本](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
@@ -343,11 +341,11 @@ ms.locfileid: "47492443"
   
  請參閱：  
   
--   [使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+-   [使用 Visual Studio Team Services 或 Team Foundation Server 來追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 -   [連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)  
   
--   [圖表、 儀表板和 Visual Studio ALM 的報表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+-   [Visual Studio ALM 的圖表、儀表板和報表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
 -   [使用 Project 建立您的待處理項目和工作](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
@@ -650,7 +648,7 @@ ms.locfileid: "47492443"
   
      若要快速取得已編譯程式碼的概觀，請建立空白的 Code Map，然後將組件檔或二進位檔拖曳到地圖介面上。  
   
--   若要探索特定程式碼或方案項目，請使用 [方案總管] 來選取想要視覺化的項目及關聯性。 然後您可以產生新地圖，或將所選項目加入現有地圖中。 請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
+-   若要探索特定程式碼或方案項目，請使用 [方案總管] 來選取想要視覺化的項目及關聯性。 然後您可以產生新地圖，或將所選項目加入現有地圖中。 請參閱 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
   
 -   為了協助您探索地圖，請重新整理配置，以便其符合您要執行的工作種類。  
   

@@ -1,7 +1,7 @@
 ---
 title: 建立應用程式模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301895"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立應用程式模型](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app)。  
-  
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。 例如，您可以使用整合模組化語言 (UML) 之使用案例圖、活動圖、類別圖和循序圖描述和溝通使用者需求。 若要描述和溝通系統的功能，您可以使用 UML 元件圖、類別圖、活動圖和循序圖。  
   
  請參閱[Channel 9 影片： 透過模型改善結構](http://go.microsoft.com/fwlink/?LinkID=252078)。  

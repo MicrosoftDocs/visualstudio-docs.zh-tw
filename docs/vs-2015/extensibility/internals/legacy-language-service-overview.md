@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aa3fdcbdb40dca34e17b675478b23d1fd2eef6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f5a060776126756b104b7f24c7b216ac881d1b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302701"
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務概觀](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-overview)。  
-  
 語言服務提供可讓您實作特定的編輯器支援[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]功能。 Managed Package Framework (MPF) 語言服務類別提供常用的功能和部分支援其他功能的完整支援。  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>MPF 完全支援的功能  

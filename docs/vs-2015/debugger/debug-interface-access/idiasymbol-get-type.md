@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_type |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 240be23528bc648fe3bfe2f4715aae96fcbcd6d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a391148ab61c5f1e2975064e6651bf74f2a89e10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180475"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_type](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-type)。  
-  
 擷取代表這個符號的類型的符號。  
   
 ## <a name="syntax"></a>語法  

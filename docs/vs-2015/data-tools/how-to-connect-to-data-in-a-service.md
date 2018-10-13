@@ -1,7 +1,7 @@
 ---
 title: 如何： 連接到服務中的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303e41c5d194fbb1c03e35dd37990f8b63dedf4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301791"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：連接至服務中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 連接到服務中的資料](https://docs.microsoft.com/visualstudio/data-tools/how-to-connect-to-data-in-a-service)。  
-  
   
 連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然後選取**服務**上**選擇資料來源類型**頁面。  
   

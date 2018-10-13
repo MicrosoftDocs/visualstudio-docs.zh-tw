@@ -1,7 +1,7 @@
 ---
 title: .NET 記憶體資料檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a0e14489319f16a10671c6df5ca6d4b046cd26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a3734552871d171ff592640f131b4257421a4b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292275"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[.NET 記憶體資料檢視](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-data-views)。  
-  
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。  
   
 ## <a name="in-this-section"></a>本節內容  

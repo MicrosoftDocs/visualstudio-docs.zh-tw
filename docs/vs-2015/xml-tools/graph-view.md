@@ -1,7 +1,7 @@
 ---
 title: 圖形檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92192e36cc0acd33734974a2ddf723df7dfbc55a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298528"
 ---
 # <a name="graph-view"></a>圖形檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[圖表檢視](https://docs.microsoft.com/visualstudio/xml-tools/graph-view)。  
-  
   
 圖表檢視會以圖形表示全域結構描述節點以及節點之間的關聯性。 請注意，圖表檢視無法讓您在設計介面上改變結構描述集的配置。 圖表檢視還包含 XML 結構描述設計工具工具列和階層連結列。  
   

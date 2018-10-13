@@ -1,7 +1,7 @@
 ---
 title: 如何：變更編輯器中的文字大小寫 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f673f42d26b82602deedde0d5ceec01a81adf3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee4765914c1b7e5756a7f4acb907d6d9e29d3653
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304144"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：變更編輯器中的文字大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 在編輯器中變更文字大小寫](https://docs.microsoft.com/visualstudio/ide/how-to-change-text-case-in-the-editor)。  
-  
 您可以使用功能表命令或鍵盤快速鍵，將所選取文字的大小寫轉換成全部大寫或全部小寫。  
   
 > [!NOTE]

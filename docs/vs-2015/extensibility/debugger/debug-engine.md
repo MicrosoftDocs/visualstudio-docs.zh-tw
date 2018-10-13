@@ -1,7 +1,7 @@
 ---
 title: 偵錯引擎 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282681"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯引擎](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine)。  
-  
 偵錯引擎 (DE) 適用於解譯器或作業系統，來提供偵錯的服務，例如執行控制、 中斷點、 和運算式評估。 DE 負責監視正在偵錯程式的狀態。 若要執行達到此目的，DE 會使用任何方法會為它提供的支援的執行階段，是否執行階段所提供的 cpu，或從 Api。  
   
  例如，common language runtime (CLR) 會提供機制來監視正在執行的程式，透過 ICorDebugXXX 介面。 支援 CLR DE 會使用適當的 ICorDebugXXX 介面，來追蹤正在偵錯 managed 程式碼程式。 然後通訊狀態的任何變更工作階段的偵錯管理員 (SDM)，將這類資訊轉送給[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  

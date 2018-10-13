@@ -1,7 +1,7 @@
 ---
 title: 在 Blend 中修改物件的樣式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240146"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[修改在 Blend 中的物件的樣式](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend)。  
-  
 若要自訂物件，最簡單的方式就是在 [屬性] 窗格中設定屬性。  
   
  如果您要重複使用設定或多組設定，請建立可重複使用的資源。 這可以是「樣式」、「範本」，或一些簡單項目，例如自訂色彩。 您也可以依控制項的狀態讓控制項以不同的方式出現。 例如，按鈕會在使用者按一下時變成綠色。  

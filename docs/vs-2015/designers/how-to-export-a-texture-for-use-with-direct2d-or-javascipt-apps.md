@@ -1,7 +1,7 @@
 ---
 title: 如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b064620174a3a64194eee3ae18bffbe330ece13b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186286"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 匯出材質以搭配 Direct2D 或 Javascipt 應用程式](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps)。  
-  
 「影像內容管線」能夠產生可與 Direct2D 的內部轉譯慣例相容的材質。 這種類型的材質適合在使用 Direct2D 的應用程式中使用，以及在使用 JavaScript 建立的 Windows 市集應用程式中使用。  
   
  本文件示範下列活動︰  

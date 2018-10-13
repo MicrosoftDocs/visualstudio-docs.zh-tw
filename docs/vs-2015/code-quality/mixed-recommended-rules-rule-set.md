@@ -1,7 +1,7 @@
 ---
 title: 混合建議規則規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299399"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[混合建議規則規則集](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set)。  
-  
 Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的 c + + 專案中最常見且關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。 此規則被設計來與 Visual Studio Professional 版及更新版本設定。  
   
 |規則|描述|  

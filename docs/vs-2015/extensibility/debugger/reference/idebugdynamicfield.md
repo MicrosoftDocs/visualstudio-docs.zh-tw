@@ -1,7 +1,7 @@
 ---
 title: IDebugDynamicField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e975940947b68fdce34bd7d1e2e289c85914c44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42f2cb6d6560488d344d48ec7cb5fd707578adc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180891"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDynamicField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdynamicfield)。  
-  
 此介面代表變數的類型。  
   
 ## <a name="syntax"></a>語法  

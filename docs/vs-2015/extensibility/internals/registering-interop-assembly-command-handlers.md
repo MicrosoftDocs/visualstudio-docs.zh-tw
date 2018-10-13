@@ -1,7 +1,7 @@
 ---
 title: 註冊 Interop 組件命令處理常式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234961"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註冊的 Interop 組件命令處理常式](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers)。  
-  
 VSPackage 必須向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。  
   
- 您可以更新登錄，手動編輯，或使用登錄器 (.rgs) 檔案。 如需詳細資訊，請參閱 < [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
+ 您可以更新登錄，手動編輯，或使用登錄器 (.rgs) 檔案。 如需詳細資訊，請參閱 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
   
  Managed Package Framework (MPF) 提供這項功能透過<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>類別。  
   
