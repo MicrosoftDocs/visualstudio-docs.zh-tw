@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中的資料應用程式的概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fae912d438be42e874dd539ea78853c9039ebc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6473608bb781ed9a9ca2e11b473e15e596be1db5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232793"
 ---
 # <a name="overview-of-data-applications-in-visual-studio"></a>Visual Studio 資料應用程式的概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

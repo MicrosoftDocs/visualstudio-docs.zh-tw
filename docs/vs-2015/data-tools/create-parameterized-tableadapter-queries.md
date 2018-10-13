@@ -1,7 +1,7 @@
 ---
 title: 建立參數型的 TableAdapter 查詢 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35a2f0c498d6f4239568d4719b2581fdc2f321ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225249"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立參數型 TableAdapter 查詢](https://docs.microsoft.com/visualstudio/data-tools/create-parameterized-tableadapter-queries)。  
-  
   
 參數型查詢會傳回符合查詢中 WHERE 子句條件的資料。 例如，您可以將 `WHERE City = @City` 加入至傳回客戶清單的 SQL 陳述式結尾，以參數化客戶清單，使其只顯示特定城市的客戶。  
   

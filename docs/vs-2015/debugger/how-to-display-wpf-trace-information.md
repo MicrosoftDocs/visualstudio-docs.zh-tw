@@ -1,7 +1,7 @@
 ---
 title: 如何： 顯示 WPF 追蹤資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07cdebcc636f768c7caf2437af55f20283db7b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec7a25cc9a9b72af9a659ee0f958607c750905fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239456"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：顯示 WPF 追蹤資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 顯示 WPF 追蹤資訊](https://docs.microsoft.com/visualstudio/debugger/how-to-display-wpf-trace-information)。  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 可以從 WPF 應用程式接收偵錯追蹤資訊，並將該資訊顯示在**輸出**視窗。 若要顯示偵錯追蹤資訊，必須啟用 WPF 追蹤。  
   
  您可以在 App.Config 檔中啟用 WPF 追蹤功能，或是使用 <xref:System.Diagnostics.PresentationTraceSources> 類別以程式設計的方式加以啟用。 若要啟用 WPF 追蹤更簡單的方法是使用**選項**視窗。 不支援使用 Web 應用程式的 WPF 追蹤。  

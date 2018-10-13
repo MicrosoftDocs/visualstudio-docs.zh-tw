@@ -1,7 +1,7 @@
 ---
 title: 將類型公開至視覺化設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242004"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[公開至視覺化設計工具的型別](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考，加上其相依性） 的完整相依性集合的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂工具所產生的檔案中定義的類型。  
   
  [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]和[!INCLUDE[csprcs](../../includes/csprcs-md.md)]專案系統會提供支援透過暫存可攜式存取產生的類別和類型的可執行檔 (暫存 PEs)。 自訂工具產生的任何檔案可以編譯成暫存組件，如此才能從這些組件載入並且公開至設計工具型別。 每個自訂工具的輸出會編譯成個別的 temporary PE，並成功或失敗的這個暫存編譯僅取決於可以編譯所產生的檔案。 即使整個，可能無法建置專案，個別的暫存 PEs 可能仍然可以設計工具。  

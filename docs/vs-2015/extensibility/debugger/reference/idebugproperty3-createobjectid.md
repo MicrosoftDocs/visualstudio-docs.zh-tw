@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::CreateObjectID |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5b7ca39a36bafe2ebba838c7f6d03f89e2f8132
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 623e3a597e7bc5eb4f4850fd4c1bb74074f79820
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232579"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProperty3::CreateObjectID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty3-createobjectid)。  
-  
 建立此屬性以確保它是唯一的所有其他屬性的唯一識別碼。  
   
 ## <a name="syntax"></a>語法  

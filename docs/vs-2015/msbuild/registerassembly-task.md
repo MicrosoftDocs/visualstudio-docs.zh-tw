@@ -1,7 +1,7 @@
 ---
 title: RegisterAssembly 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5bbca089b15979df11c4eda73a46c6a6436b53d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ca8def8de6a290822a6736f70a401ed7e0cf9bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230239"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[RegisterAssembly 工作](https://docs.microsoft.com/visualstudio/msbuild/registerassembly-task)。  
-  
   
 讀取所指定組件內的中繼資料，並將必要的項目加入至登錄，這樣可讓 COM 用戶端順利地建立 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類別。 此工作的行為和 [Regasm.exe (組件登錄工具)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb) 很類似，但不是完全相同。  
   

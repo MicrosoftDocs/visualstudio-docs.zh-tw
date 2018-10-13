@@ -1,7 +1,7 @@
 ---
 title: 評估陳述式命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d569033193997135d9d0bc990ab7b9a9ef815f8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3e50b519b162201d741f2460a8e9dbbe675c16e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230317"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[評估陳述式命令](https://docs.microsoft.com/visualstudio/ide/reference/evaluate-statement-command)。  
-  
   
 評估並顯示指定的陳述式。  
   
@@ -74,7 +72,7 @@ Debug.EvaluateStatement text
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

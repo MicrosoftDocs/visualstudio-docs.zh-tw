@@ -1,7 +1,7 @@
 ---
 title: 開始開發 Visual Studio 擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 441abc9254fac5b70270fc622740d03ecc43d512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224155"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開始開發 Visual Studio 擴充功能](https://docs.microsoft.com/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)。  
-  
 如果您從未撰寫過 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**此頁面是否有幫助？** 螢幕的底部)，要求提供您想要。  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>我需要哪些軟體開發的 Visual Studio 延伸模組？  

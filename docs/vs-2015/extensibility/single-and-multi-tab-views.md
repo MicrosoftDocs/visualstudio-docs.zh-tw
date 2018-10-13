@@ -1,7 +1,7 @@
 ---
 title: 單一和多重索引標籤的檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235998"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[單一和多重索引標籤檢視](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views)。  
-  
 編輯器可以建立不同類型的檢視。 其中一個範例的程式碼編輯器 視窗，另一個是表單設計工具。  
   
  多個索引標籤的檢視是具有多個索引標籤的檢視。 例如，HTML 編輯器有兩個索引標籤底部：**設計**並**來源**，每個邏輯檢視。 [設計] 檢視會顯示呈現的網頁，而另一個則顯示包含網頁的 HTML。  

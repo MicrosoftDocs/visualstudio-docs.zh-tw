@@ -1,7 +1,7 @@
 ---
 title: 規則傳播模型內的變更 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222712"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[規則傳播變更內模型](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model)。  
-  
 您可以建立存放區的規則，以將變更傳播從一個項目到另一個在 Visualization and Modeling SDK (VMSDK)。 存放區中的任何項目變更時發生，來執行，只有認可的最外層的交易時，通常被排定規則。 有不同類型的不同類型的事件，例如加入項目，或刪除它的規則。 您可以將規則附加至特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保當模型變更時，會更新圖表。 您可以自訂特定領域語言，藉由新增您自己的規則。  
   
  規則存放區會特別有用，如內存放區 – 也就是變更傳播變更至模型項目、 關聯性、 圖形或連接器和其網域屬性。 當使用者叫用復原或取消復原命令時，不會執行規則。 相反地，交易管理員可確保存放內容會還原到正確的狀態。 如果您想要將變更傳播到外部存放區的資源，使用儲存的事件。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  

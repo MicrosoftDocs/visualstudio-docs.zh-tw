@@ -1,7 +1,7 @@
 ---
 title: Windows Forms 控制項繫結至資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f454e1eb6e754327a50b22a4aefdc5e4afa0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237467"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>將 Windows Forms 控制項繫結至資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[繫結 Windows Form 控制項加入資料](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data)。  
-  
   
 您可以將物件從資料來源繫結至控制項**Zdroje dat**視窗拖曳至 Windows 表單或表單上的現有控制項。 您拖曳項目之前，您可以設定您想要繫結至控制項的型別。 根據您選擇本身，或個別資料行的資料表會顯示不同的值。  您也可以設定自訂值。 [詳細資料] 資料表，表示每個資料行繫結不同的控制項。  
   

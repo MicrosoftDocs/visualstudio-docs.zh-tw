@@ -1,7 +1,7 @@
 ---
 title: XML 結構描述設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcf60a61cb6311e7794abe2961cdf1f319bde7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489573"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233259"
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[XML 結構描述設計工具工作](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-tasks)。  
-  
   
 本章節描述如何使用 XML 結構描述設計工具完成一般工作。  
   

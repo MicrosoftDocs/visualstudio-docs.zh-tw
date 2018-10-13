@@ -1,7 +1,7 @@
 ---
 title: 選取內容物件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a74e86cb050dcbc1262bd3bf060f76b8bbc38f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228653"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選取內容物件](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-context-objects)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 來判斷應該顯示在 IDE 中使用全域選取範圍內容物件。 在 IDE 中的每個視窗都可以有它自己的選取範圍的內容物件推送至全域範圍內容。 該視窗具有焦點時，IDE 會更新全域選取範圍內容從視窗的值。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
   
  每個視窗框架或在 IDE 中的站台有一個稱為服務<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 VSPackage，在視窗框架中設置所建立的物件必須呼叫`QueryService`方法來取得變數的指標，<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>介面。  

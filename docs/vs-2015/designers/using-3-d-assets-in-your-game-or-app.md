@@ -1,7 +1,7 @@
 ---
 title: 在遊戲或應用程式中使用 3D 資產 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226302"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[您的遊戲或應用程式中使用 3d 資產](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app)。  
-  
 本文描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 處理 3-D 資產，並將它們包括在您的組建中。  
   
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用工具建立 3-D 資產之後，下一步是在您的應用程式中使用它們。 但是，您的資產必須先轉換為 DirectX 可以了解的格式，才能使用它們。 為了協助您轉換資產，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供它可產生之每種資產類型的組建自訂。 若要在組建中包括資產，您只需要設定專案使用組建自訂、將資產加入至專案，以及設定資產使用正確的組建自訂。 之後，您可以將資產載入至應用程式，並建立和填寫 DirectX 資源來使用它們，就像在任何其他 DirectX 應用程式中一樣。  

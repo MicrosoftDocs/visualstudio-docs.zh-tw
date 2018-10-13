@@ -1,7 +1,7 @@
 ---
 title: 如何： 提供展開大綱的支援，在舊版語言服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239528"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 提供展開大綱的支援，在舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[語言服務中提供 「 大綱支援](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service)。  
-  
 有兩個選項用於擴充大綱的支援，您只能支援的語言**摺疊至定義**命令。 您可以將控制編輯器的大綱區域，並將用戶端控制的大綱區域。  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>新增控制編輯器的大綱區域  

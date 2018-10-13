@@ -1,7 +1,7 @@
 ---
 title: 從特定領域語言產生程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fbe7e40a277174eb556a61b50eb88279adebfb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231994"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[特定領域語言產生程式碼](https://docs.microsoft.com/visualstudio/modeling/generating-code-from-a-domain-specific-language)。  
-  
 Microsoft[!INCLUDE[dsl](../includes/dsl-md.md)]提供功能強大的方式，從模型中表示的資料產生程式碼、 文件、 組態檔和其他成品。 使用[!INCLUDE[dsl](../includes/dsl-md.md)]，您可以建立一組類別，代表您的資料，您可以撰寫文字範本中的類別名稱和屬性會反映該資料。  
   
  例如，Fabrikam 有客戶名稱和電子郵件地址的 XML 檔案。 開發人員建立客戶的類別，具有屬性名稱和電子郵件模型。 他們撰寫來處理資料，包括 HTML 網頁的過程中產生的所有客戶資料表的這個片段的數個文字範本：  

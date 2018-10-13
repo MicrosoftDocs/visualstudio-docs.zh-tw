@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e0df86a61e490ec98759b2c66458a781f6cbaf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10b29141d35601b8bff899bcb56e919e4844a3cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227262"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[FIELD_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-info)。  
-  
 此結構描述的本機變數、 參數或其他欄位。  
   
 ## <a name="syntax"></a>語法  

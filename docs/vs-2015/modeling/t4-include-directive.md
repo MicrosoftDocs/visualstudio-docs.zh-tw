@@ -1,7 +1,7 @@
 ---
 title: T4 包含指示詞 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233983"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[T4 包含指示詞](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文字範本中，您可以使用 `<#@include#>` 指示詞來納入另一個檔案的文字。 您可以將 `include` 指示詞放在文字範本中第一個 `<#+ ... #>` 類別功能區塊之前的任何位置。 被納入的檔案也包含 `include` 指示詞和其他指示詞。 如此可讓您在範本之間共用範本程式碼和重複使用文字。  
   
 ## <a name="using-include-directives"></a>使用包含指示詞  

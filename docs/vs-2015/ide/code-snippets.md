@@ -1,7 +1,7 @@
 ---
 title: 程式碼片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29087da38fe7c89936e3823b43e591116396e432
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242164"
 ---
 # <a name="code-snippets"></a>程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼片段](https://docs.microsoft.com/visualstudio/ide/code-snippets)。  
-  
 程式碼片段是可重複使用的程式碼之小型區塊，可以使用操作功能表命令或快速鍵的組合在程式碼檔案中插入。 它們通常包含常用的程式碼區塊，例如 try-finally 或 if-else 區塊，但是它們可以用來插入整個類別或方法。  
   
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>擴充程式碼片段和範圍陳述式程式碼片段  

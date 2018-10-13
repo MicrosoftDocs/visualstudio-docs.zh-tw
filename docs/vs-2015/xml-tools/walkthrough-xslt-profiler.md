@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： XSLT Profiler |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a52682dbbec3f4e1cdc50027ca365cd9a1ca44b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229446"
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： XSLT Profiler](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-xslt-profiler)。  
-  
   
 XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估並解決 XSLT 程式碼中與效能相關的問題。 XSLT 分析工具包含 XSL 和 XSLT 樣式表最佳化的實用提示。 就需要最大效能的 XSLT 應用程式而言，此工具是非常基本的。  
   

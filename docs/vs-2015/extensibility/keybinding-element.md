@@ -1,7 +1,7 @@
 ---
 title: 按鍵繫結關係項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500562"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231812"
 ---
 # <a name="keybinding-element"></a>KeyBinding 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[KeyBinding 元素](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element)。  
-  
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。  
   
  命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例是 CTRL + S**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例是 CTRL + K、 CTRL + K，若要設定書籤。  

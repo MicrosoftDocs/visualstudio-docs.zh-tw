@@ -1,7 +1,7 @@
 ---
 title: 錯誤清單視窗 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7bb3d50a68ca7e6908a89d1fd680377b77c9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232280"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤清單視窗](https://docs.microsoft.com/visualstudio/ide/reference/error-list-window)。  
-  
   
 附註]
 >  錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  

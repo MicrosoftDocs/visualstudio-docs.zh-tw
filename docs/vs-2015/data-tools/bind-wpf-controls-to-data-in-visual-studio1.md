@@ -1,7 +1,7 @@
 ---
 title: 將 WPF 控制項繫結至 Visual Studio1 中的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f07087ce1f7637e63bd2d99aeb2cb125265a2d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237012"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[繫結 WPF 控制項新增至 Visual Studio-第 1 部分中的資料 |Microsoft Docs](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-data-in-visual-studio)。  
-  
   
 您可以透過將資料繫結至 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 控制項，對應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至[!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 本主題描述可用來建立資料繫結 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 應用程式的一些最常用工作、工具和類別。  
   

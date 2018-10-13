@@ -1,7 +1,7 @@
 ---
 title: 判斷專案的預設命名空間 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: 27919985c09356764533e736899dc6a7cb5d0090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487182"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223323"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>判斷專案的預設命名空間
 針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]的話`CustomToolNamespace`上的輸入檔的值設定屬性`CustomToolNamespace`會變成傳遞至預設命名空間參數的值<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法。 否則，請`wszDefaultNamespace`參數傳遞至`Generate`會一律等於根命名空間。 如需有關命名空間的詳細資訊，請參閱 <<c0> [ 命名空間關鍵字](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b)。  

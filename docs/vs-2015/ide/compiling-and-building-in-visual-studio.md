@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中編譯與建置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229225"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 在編譯和建置](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio)。  
-  
 您可以在開發週期期間，經常地使用 Visual Studio 來建置應用程式，並建立組件和可執行程式。 藉由經常建置程式碼，您可以更早識別編譯時期錯誤，例如錯誤的語法、拼錯的關鍵字和類型不相符。 您也可以藉由經常建置和執行程式碼的偵錯版本，偵測並修正執行階段錯誤，例如邏輯錯誤和語意錯誤。  
   
  當您完整地開發並充分偵錯專案或方案時，就可以將其元件編譯在發行組建中。 根據預設，發行組建已最佳化，並設計成更小且執行速度比偵錯版本快。 如需詳細資訊，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。  
@@ -39,7 +37,7 @@ ms.locfileid: "47500563"
 |建置方法|優點|如需詳細資訊|  
 |------------------|--------------|--------------------------|  
 |使用 IDE|- 您可以更輕鬆地立即建立和執行組建。<br />- 您可以針對 C++ 和 C# 專案執行多處理器組建。<br />- 您可以自訂建置系統的某些層面。|[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|  
-|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[ MSBuild](../msbuild/msbuild.md)|  
+|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[MSBuild](../msbuild/msbuild.md)|  
 |使用 Team Foundation Build|-  您可以自動化您的建置流程。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 您也可以在共用的組置伺服器上建置專案，而不是在開發電腦上建置。<br />- 您可以快速指定您想要建置的程式碼、想要執行的測試，和其他常見的選項。<br />- 您可以修改建置工作流程，並視需要建立建置活動執行深入自訂的工作。|[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
   
 ## <a name="building-from-the-ide"></a>從 IDE 建置  

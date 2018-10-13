@@ -1,7 +1,7 @@
 ---
 title: 使用舊版 API 自訂編輯器控制項及功能表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5a4e5acc7dfc3db2eefad146db24849f1c3b36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2038d3e084778a6df6c765be5fbff9e7d53a1f90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240486"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項及功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂編輯器控制項及功能表使用舊版 API](https://docs.microsoft.com/visualstudio/extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api)。  
-  
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 在本節中的頁面詳細說明如何使用這些功能。  
   
 ## <a name="in-this-section"></a>本節內容  

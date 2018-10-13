@@ -1,7 +1,7 @@
 ---
 title: 延遲載入文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240912"
 ---
 # <a name="delayed-document-loading"></a>已延遲載入文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[延遲載入文件](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading)。  
-  
 當使用者重新開啟 Visual Studio 方案時，大部分的相關聯的文件並不會立即載入。 在初始化暫止狀態下，建立文件視窗框架和預留位置文件 （稱為虛設常式框架） 會放在執行文件表格 」 (RDT)。  
   
  您的延伸模組可能會導致不必要地載入，藉由查詢文件中的項目，然後才載入的專案文件。 適用於 Visual Studio 可能增加整體的記憶體耗用量。  

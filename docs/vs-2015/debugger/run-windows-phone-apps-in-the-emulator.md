@@ -1,7 +1,7 @@
 ---
 title: 在模擬器中執行 Windows Phone 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eefe7d8f2dd6e94b0081f10e32703d1f2f8958a1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237064"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

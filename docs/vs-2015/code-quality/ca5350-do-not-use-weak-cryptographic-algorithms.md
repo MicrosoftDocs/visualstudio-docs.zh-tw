@@ -1,7 +1,7 @@
 ---
 title: CA5350： 請勿使用弱式密碼編譯演算法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8321d94bbdcc66bb8e7405f2f3188ba3eeaaabd8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234218"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 請勿使用弱式密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

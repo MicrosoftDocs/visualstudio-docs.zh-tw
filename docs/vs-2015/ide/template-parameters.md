@@ -1,7 +1,7 @@
 ---
 title: 範本參數 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238897"
 ---
 # <a name="template-parameters"></a>範本參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[範本參數](https://docs.microsoft.com/visualstudio/ide/template-parameters)。  
-  
 透過使用範本中的參數，您可以在範本具現化時取代範本機碼部分的值，例如類別名稱和命名空間。 當使用者按一下 [新增專案] 或 [新增項目] 對話方塊中的 [確定] 時，在背景執行的範本精靈即會取代這些參數。  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>宣告和啟用範本參數  

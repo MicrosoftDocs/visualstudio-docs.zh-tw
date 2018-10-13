@@ -1,7 +1,7 @@
 ---
 title: 佈景主題，工作流程設計工具、 選項對話方塊 （舊版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 12d7155d41bd22832dc40526258911f844f59f40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bbf3b934a58aed06f95ee567795d71adfaf71b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229875"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>選項對話方塊、工作流程設計工具、佈景主題 (舊版)
 本主題描述如何使用**佈景主題，工作流程設計工具，選項**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

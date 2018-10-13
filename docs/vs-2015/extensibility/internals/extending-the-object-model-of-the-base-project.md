@@ -1,7 +1,7 @@
 ---
 title: 擴充的基底的專案物件模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9a5494ad888da9707af0d8af40dc5ea3d242b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5c70ce13341eeb4a522c16fe336d5f644f830b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228719"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>擴充基底專案的物件模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充物件模型的基底專案](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-the-object-model-of-the-base-project)。  
-  
 專案子類型可能會擴充自動化物件模型的基底的專案，在下列位置：  
   
 -   Project.Extender ("\<ProjectSubtypeName >") – 這可讓專案子類型，提供物件以自訂的方法，從<xref:EnvDTE.Project>。 專案子類型可以使用 Automation 擴充項，來公開`Project`物件。 <xref:EnvDTE80.IInternalExtenderProvider>主要專案子類型的彙總工具上實作的介面應該提供其物件`VSHPROPID_ExtObjectCATID`從<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2>(對應至`itemid`VSITEMID_ROOT 的值從`VSITEMID`) CATID。  

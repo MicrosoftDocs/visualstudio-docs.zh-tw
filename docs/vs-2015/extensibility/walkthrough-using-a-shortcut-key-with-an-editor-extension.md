@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 搭配編輯器擴充功能使用攠摝坫 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8497b4b8192c4ad888c850b9ec2ab37c89f334
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232410"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說︰搭配編輯器延伸模組使用快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說︰ 搭配編輯器擴充功能使用攠摝坫](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension)。  
-  
 您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說會示範如何使用快速鍵將文字檢視的檢視裝飾。 本逐步解說根據檢視區 adornment 編輯器範本，並可讓您使用新增 adornment + 字元。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -34,7 +32,7 @@ ms.locfileid: "47485244"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF)  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`KeyBindingTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `KeyBindingTest`。  
   
 2.  編輯器文字裝飾項目範本加入專案並將它命名`KeyBindingTest`。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -57,7 +55,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>定義命令篩選  
  命令篩選器是實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，藉由執行個體化 adornment 處理命令。  
   
-1.  將類別檔案並將它命名`KeyBindingCommandFilter`。  
+1.  加入類別檔案，並將它命名為 `KeyBindingCommandFilter`。  
   
 2.  使用陳述式加入下列程式碼。  
   

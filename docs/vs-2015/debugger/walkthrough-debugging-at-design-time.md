@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 偵錯在設計階段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63fca37bbb55f99ecb99a18596c128451bd807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227225"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 在設計階段偵錯](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-at-design-time)。  
-  
 您可以使用 Visual Studio **Immediate**視窗，以在您的應用程式未在執行時執行函式或副程式。 如果函式或副程式含有中斷點，Visual Studio 會中斷執行的適當位置。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能稱為設計階段偵錯。  
   
  下列程序示範如何使用這項功能。  
