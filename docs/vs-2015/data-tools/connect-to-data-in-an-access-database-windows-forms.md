@@ -1,7 +1,7 @@
 ---
 title: 連接到 Access 資料庫 (Windows Form) 中的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ddab545909730a4fe7f94adf59c6cee74c86409
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207346"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連接到 Access 資料庫 (Windows Form) 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[連接至 Access 資料庫 (Windows Form) 中的資料](https://docs.microsoft.com/visualstudio/data-tools/connect-to-data-in-an-access-database-windows-forms)。  
-  
   
 您可以使用 Visual Studio 連線至 Access 資料庫 （.mdf 檔案或.accdb 檔案）。 定義連接之後，資料會出現在**Zdroje dat**視窗。 您可以從這個視窗將資料表或檢視表拖曳至表單上。 如果您想要了解如何在 Visual Studio 中的專案系統管理這些本機資料庫檔案，請參閱 <<c0> [ 如何： 在您的專案中的管理本機資料檔](../data-tools/how-to-manage-local-data-files-in-your-project.md)。  
   

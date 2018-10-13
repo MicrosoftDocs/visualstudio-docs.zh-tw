@@ -1,7 +1,7 @@
 ---
 title: 在 偵錯工具中檢視資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204356"
 ---
 # <a name="viewing-data-in-the-debugger"></a>在偵錯工具中檢視資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯工具中的 檢視資料](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger)。  
-  
 各種由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具所提供的工具，都可用來檢查和修改您的程式狀態。 這些工具大多數只能在中斷模式下運作。  
   
 ## <a name="datatips"></a>資料提示方塊  

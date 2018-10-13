@@ -1,7 +1,7 @@
 ---
 title: UML 使用案例圖： 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256304"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML 使用案例圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 使用案例圖： 參考](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference)。  
-  
 在 Visual Studio 中，*使用案例圖*摘要說明哪些人使用您的應用程式或系統，以及他們可以使用它做什麼。 若要建立 UML 使用案例圖表，在**架構**功能表上，按一下**新增 UML 或分層圖**。  
   
  使用案例圖可當做使用者需求描述的焦點。 它會描述需求、使用者和主要元件之間的關聯性。 它不會詳細描述需求；這些可以在個別的圖表或文件中描述，而這些圖表或文件可以連結到各個使用案例。 如需使用案例圖可協助您了解、 討論和溝通使用者需求的資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  

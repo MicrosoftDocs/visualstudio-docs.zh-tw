@@ -1,7 +1,7 @@
 ---
 title: Shell 命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7b3b8d5e2e86dd613d16c1bcec8d6819765eeb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242212"
 ---
 # <a name="shell-command"></a>Shell 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Shell 命令](https://docs.microsoft.com/visualstudio/ide/reference/shell-command)。  
-  
   
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 內啟動可執行程式。  
   
@@ -95,7 +93,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [命令視窗](../../ide/reference/command-window.md)   
  [輸出視窗](../../ide/reference/output-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

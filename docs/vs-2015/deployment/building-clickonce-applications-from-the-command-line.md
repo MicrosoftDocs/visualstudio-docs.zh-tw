@@ -1,7 +1,7 @@
 ---
 title: 建置 ClickOnce 應用程式，從命令列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271022"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[從命令列建置 ClickOnce 應用程式](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line)。  
-  
 在  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]只有另一部電腦上[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在中央的組建實驗室，或使用進階指令碼撰寫技巧，建置專案本身的範圍之外。  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 來重現 ClickOnce 應用程式部署  
@@ -75,7 +73,7 @@ ms.locfileid: "47497826"
   
 2.  從 Windows**開始**功能表上，按一下**所有程式**，然後**Microsoft Visual Studio**，然後**Visual Studio Tools**，則**Visual Studio 命令提示字元**。 這應該會在目前使用者的根資料夾中開啟命令提示字元。  
   
-3.  在  **Visual Studio 命令提示字元**，將目前的目錄變更為您上方建置的專案的位置。 例如，輸入`chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
+3.  在  **Visual Studio 命令提示字元**，將目前的目錄變更為您上方建置的專案的位置。 例如，輸入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
   
 4.  若要移除現有的檔案中產生"來建立和發佈[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]專案中，「 型別`rmdir /s publish`。  
   

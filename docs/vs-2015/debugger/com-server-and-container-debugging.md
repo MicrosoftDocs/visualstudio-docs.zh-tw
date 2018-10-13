@@ -1,7 +1,7 @@
 ---
 title: COM 伺服器和容器偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263045"
 ---
 # <a name="com-server-and-container-debugging"></a>COM 伺服器和容器偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[COM 伺服器和容器偵錯](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging)。  
-  
 COM 應用程式可以在程式設計人員直接控制之外執行許多工作。 DLL 之間的通訊、物件的使用次數和剪貼簿作業只是您可能碰到預期外行為的一小部分而已。 發生這種狀況時，第一步驟便是追蹤搜尋問題的來源。  
   
  Visual Studio 偵錯工具可支援逐步跨越 (Step Across) 和逐步執行容器和伺服器。 這包括可支援逐步跨越遠端程序呼叫 (RPC)。  

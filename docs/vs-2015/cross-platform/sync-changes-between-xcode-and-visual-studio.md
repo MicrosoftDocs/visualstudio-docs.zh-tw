@@ -1,7 +1,7 @@
 ---
 title: 同步處理 XCode 和 Visual Studio 之間的變更 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: a18d21dc20d6bb8a8346013130bea15f094b5fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0135aa1b2a23beb0ce9781fe07403a7ddc43acb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268225"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>同步處理 XCode 和 Visual Studio 之間的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[同步處理變更之間 XCode 和 Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/sync-changes-between-xcode-and-visual-studio)。  
-  
   
 適用於行動裝置開發的 Microsoft Visual C++ 元件，包含可在您的電腦與 Mac 之間同步處理工作的遠端功能。 當您將 Visual Studio 和 Mac 電腦配對之後，Visual Studio 中就會提供適用於 iOS 應用程式專案的新選項，讓您可用來在 XCode 中開啟專案、在 XCode 和 Visual Studio 之間移動程式碼，以及清除暫存的 XCode 專案目錄。  
   

@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS90 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ab44d09b969d36699be2e5ce593d96db4d366af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b52db3e6612e733649f4fb5d88b1e26c027f5fed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256161"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[EVALFLAGS90](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/evalflags90)。  
-  
 列舉有效的控制運算式評估的旗標值。 這個列舉型別會擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。  
   
 ## <a name="syntax"></a>語法  

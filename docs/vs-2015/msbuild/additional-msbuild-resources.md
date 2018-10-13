@@ -1,7 +1,7 @@
 ---
 title: 其他 MSBuild 資源 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -604,18 +604,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6bb77f0d43b129b84bb63cc96ef59988dc13ac6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 935d73f8dd1a5c1dedb3fb4d1e7a727d19e5d10b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222738"
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[其他 MSBuild 資源](https://docs.microsoft.com/visualstudio/msbuild/additional-msbuild-resources)。  
-  
   
 如果您嘗試解決問題，但在文件中找不到所需的資訊，則可以參閱知識庫文章、開發人員社群或產品支援等其他資源。  
   

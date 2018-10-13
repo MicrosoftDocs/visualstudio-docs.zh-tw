@@ -1,7 +1,7 @@
 ---
 title: SDK 協助程式進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010827bc484ceed7c24c12759a2d6e610abad95e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4b058b4e3f831f4d8eddcbd816e4e35dbd83803
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232853"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[進行偵錯的 SDK 協助程式](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/sdk-helpers-for-debugging)。  
-  
 這些函式和宣告是實作 c + + 中的 偵錯引擎、 運算式評估工具和符號提供者的全域 helper 函式。  
   
 > [!NOTE]

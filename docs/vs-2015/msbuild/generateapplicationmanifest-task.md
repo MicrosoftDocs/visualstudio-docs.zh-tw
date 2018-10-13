@@ -1,7 +1,7 @@
 ---
 title: GenerateApplicationManifest 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0533e5ca79bf9d2cb49149ecc80ac58c911d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245566"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[GenerateApplicationManifest 工作](https://docs.microsoft.com/visualstudio/msbuild/generateapplicationmanifest-task)。  
-  
   
 產生 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
   

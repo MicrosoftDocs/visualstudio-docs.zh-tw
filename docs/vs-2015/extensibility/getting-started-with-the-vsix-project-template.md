@@ -1,7 +1,7 @@
 ---
 title: 開始使用 VSIX 專案範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c123359cfc00906c1fdf6c7285310e387783b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfb70a3ae8321f1c1d0d04299919c82fe9ee2198
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223518"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開始使用 VSIX 專案範本](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-the-vsix-project-template)。  
-  
 若要建立擴充功能或封裝部署的現有擴充功能，您可以使用 [VSIX 專案] 範本。 VSIX 專案範本有 Visual Basic 和 Visual C# 版本，並已安裝 Visual Studio SDK 的一部分。  
   
  VSIX 專案範本只是由 source.extension.vsixmanifest 檔案中，其中包含延伸的相關資訊和附隨的資產所組成。  

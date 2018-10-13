@@ -1,7 +1,7 @@
 ---
 title: 使用者的意見反應 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3462edb539822cd856cd7281566674b4ed0c4def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb2942d0449e69ef25e26e6194d67bc7b0484e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263827"
 ---
 # <a name="feedback-to-the-user"></a>使用者的意見反應
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用者的意見反應](https://docs.microsoft.com/visualstudio/extensibility/internals/feedback-to-the-user)。  
-  
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 中，有關可用的功能以使用者的目前選取範圍和全域選取範圍內容為基礎的視覺化回饋。 下表列出可在不同的選取項目內容中的功能。  
   
 |選取項目內容|可用的功能|  

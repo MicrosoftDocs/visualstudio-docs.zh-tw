@@ -1,7 +1,7 @@
 ---
 title: 封裝的 Visual Studio 功能的 Guid |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f56f0356-f3ac-48bc-9674-94259e29a4df
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb8263c3f36e4633cdc81b179f10587a3bfa0e8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ccac7110c5be5fcb0a7f846ca2756ecc334d767
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233267"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Visual Studio 功能的封裝 Guid
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[封裝的 Guid 的 Visual Studio 功能](https://docs.microsoft.com/visualstudio/extensibility/package-guids-of-visual-studio-features)。  
-  
 您可以使用下列 Guid 獨立的 shell 應用程式的.pkgundef 檔案中，從應用程式中排除特定的封裝。  
   
 ## <a name="package-guids"></a>套件 Guid  

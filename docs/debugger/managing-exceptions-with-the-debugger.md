@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio 偵錯工具管理例外狀況 |Microsoft Docs
 ms.custom: ''
-ms.date: 04/05/2017
+ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -34,167 +34,197 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c514458d6b7e8cfd4837ca907d14055af8a624ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203940"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
-例外狀況是程式執行時發生之錯誤狀態的指示。 中斷，哪個例外狀況 （或例外狀況的集合），您可以告知偵錯工具和您想在此時偵錯工具中斷 （偵錯工具中斷時，它會顯示您已在擲回例外狀況）。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。 
+例外狀況是程式執行時發生之錯誤狀態的指示。 哪些例外狀況或中斷，例外狀況的集合，您可以告知偵錯工具，此時您想要中斷偵錯工具。 當偵錯工具中斷時，它會顯示您已在擲回例外狀況。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。
 
-您可以並應該提供回應的最重要的例外狀況的處理常式，但請務必了解如何設定偵錯工具一定中斷某些例外狀況的執行。
-  
-發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 在下列情況下，它可能會中斷執行：  
-  
--   當例外狀況已擲回且未處理。  
-  
--   當偵錯工具設定為在叫用任何處理常式之前中斷執行。  
-  
--   如果您已將[Just My Code](../debugger/just-my-code.md)，而且偵錯工具已設定為任何使用者程式碼中未處理的例外狀況中斷。  
-  
+提供回應最重要的例外狀況的處理常式。 也了解如何設定偵錯工具一定中斷執行，某些例外狀況。
+
+偵錯工具時發生例外狀況時，將例外狀況訊息寫入**輸出**視窗。 它可能會中斷執行，在下列情況下，當：
+
+- 例外狀況會擲回未處理。
+- 偵錯工具會設定為在叫用任何處理常式之前中斷執行。
+- 您已設定[Just My Code](../debugger/just-my-code.md)，而且偵錯工具已設定為任何使用者程式碼中未處理的例外狀況中斷。
+
 > [!NOTE]
->  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
-  
+> ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非**Just My Code**已開啟。 如需範例，請參閱[告知偵錯工具在使用者未處理的例外狀況繼續](#BKMK_UserUnhandled)如下。
+
+<!-- Two consecutive notes are intentional here...-->
+
 > [!NOTE]
->  在 Visual Basic 應用程式偵錯工具會管理所有錯誤當成例外狀況，即使使用 On Error 類型錯誤處理常式。    
-  
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>告知偵錯工具中斷擲回例外狀況時  
-偵錯工具可以在擲回例外狀況的位置中斷執行，讓您可以在叫用處理常式之前有機會檢查例外狀況。  
-  
-在 [**例外狀況設定**] 視窗 (**偵錯 > Windows > 例外狀況設定**)，展開某個例外狀況分類的節點 (比方說， **Common Language Runtime 例外**，表示.NET 例外狀況)，然後選取核取方塊，該類別內的特定例外狀況 (例如**System.AccessViolationException**)。 您也可以選取例外狀況的整個類別。  
-  
-![核取了 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+> 在 Visual Basic 應用程式偵錯工具會管理所有錯誤當成例外狀況，即使使用 On Error 類型錯誤處理常式。
+
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>告知偵錯工具中斷擲回例外狀況時
+
+偵錯工具可以在例外狀況擲回位置，中斷執行，因此您可能會在叫用處理常式之前，檢查例外狀況。
+
+在 **例外狀況設定**視窗 (**偵錯 > Windows > 例外狀況設定**)，展開節點類別的例外狀況，例如**Common Language Runtime 例外狀況**. 然後選取核取方塊，該類別中，內的特定例外狀況，例如**System.AccessViolationException**。 您也可以選取例外狀況的整個類別。
+
+![核取了 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
-> 您可以使用 [例外狀況設定]  工具列中的 [搜尋]  視窗，尋找特定的例外狀況，或使用搜尋來篩選特定命名空間 (例如 [System.IO] )。
-  
-如果您選取中的例外狀況**例外狀況設定** 視窗中，偵錯工具執行會中斷任何擲回例外狀況是，不論它是在處理或未處理的位置。 此時該例外狀況稱為第一個可能發生的例外狀況。 例如，以下是幾個情節：  
-  
-*  在下列 C# 主控台應用程式中，Main 方法會在 **try/catch** 區塊內部擲回 `try/catch` ：  
-  
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
-  
-     當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] **try/catch** 中核取了 [AccessViolationException] ，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
-  
-    ```cmd
-    caught exception  
-    goodbye  
-    ```  
-  
-     但它不會顯示 `here` 行。  
-  
-*  C# 主控台應用程式會參考具有兩種方法，方法會擲回例外狀況，並加以處理和擲回相同的例外狀況，而且不會加以處理的第二個方法的類別的類別程式庫：  
-  
-    ```csharp 
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
-  
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
-  
-     以下是主控台應用程式的 main （） 方法：  
-  
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
-  
-     如果您有**AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在中斷`throw`兩者中**Throwunhandledexception （)** 並**Throwunhandledexception**。  
-  
- 如果您想要將例外狀況設定還原為預設值，您可以按一下工具列上的 [還原]  按鈕：  
-  
- ![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
-  
-##  <a name="BKMK_UserUnhandled"></a> 告訴使用者未處理的例外狀況繼續偵錯工具  
- 如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
-  
-1.  在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
-  
-2.  您應該會看到名為 [其他動作] 的第二個資料行。 這個資料行會在特定的例外狀況顯示 [當使用者程式碼中未處理時繼續]  ，這表示如果在使用者程式碼中未處理例外狀況，但會在外部程式碼中處理，則偵錯工具不會中斷。  
-  
-3.  您可以針對特定的例外狀況 (選取此例外狀況，以滑鼠右鍵按一下，並選取/取消選取 [當使用者程式碼中未處理時繼續] )，或整個例外狀況分類 (例如，所有 Common Language Runtime 例外狀況)，來變更此設定。  
-  
- 例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](http://www.asp.net/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
-  
- ![使用者將會中斷&#45;例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
-  
-## <a name="add-and-delete-exceptions"></a>新增及刪除例外狀況  
- 您可以新增及刪除例外狀況。 您可以從任何類別目錄刪除任何類型的例外狀況，方法是選取此例外狀況，並按下 [例外狀況設定]  工具列上的 [刪除]  按鈕 (減號)，或以滑鼠右鍵按一下此例外狀況，然後從內容功能表選取 [刪除]  。 刪除例外狀況和未核取例外狀況有相同的效果，也就是偵錯工具並不會在其擲回時中斷。  
-  
- 若要加入例外狀況：在 [例外狀況設定]  視窗中，選取其中一個例外狀況類別 (例如，[Common Language Runtime] )，然後按一下 [新增]  按鈕。 輸入例外狀況的名稱 (例如 [])。 此例外狀況隨即加入清單 (依字母順序)，且會自動核取。  
-  
- 如果您想要將例外狀況加入 [GPU 記憶體存取例外狀況]、[JavaScript 執行階段例外狀況] 或 [Win32 例外狀況] 類別，您需要包含此錯誤碼和描述。  
-  
+> 您可以使用，以尋找特定的例外狀況**搜尋**中的視窗**例外狀況設定**工具列上或使用搜尋來篩選特定命名空間 (例如**System.IO**)。
+
+如果您選取中的例外狀況**例外狀況設定** 視窗中，偵錯工具會中斷執行每當擲回例外狀況是，不論是否處理它。 現在該例外狀況稱為第一次出現的例外狀況。 例如，以下是幾個情節：
+
+- 下列 C# 主控台應用程式，在 Main 方法會擲回**AccessViolationException**內`try/catch`區塊。
+
+  ```csharp
+  static void Main(string[] args)
+  {
+      try
+      {
+          throw new AccessViolationException();
+          Console.WriteLine("here");
+      }
+      catch (Exception e)
+      {
+          Console.WriteLine("caught exception");
+      }
+      Console.WriteLine("goodbye");
+  }
+  ```
+
+  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`當您在偵錯工具中執行此程式碼行。 然後，您可以繼續執行。 主控台應該會顯示這兩行：
+
+  ```cmd
+  caught exception
+  goodbye
+  ```
+
+  但不會顯示`here`列。
+
+- C# 主控台應用程式參考類別庫有兩種方法的類別。 其中一種方法會擲回例外狀況，並處理它，而第二個方法會擲回相同的例外狀況，但不會加以處理。
+
+  ```csharp
+  public class Class1
+  {
+      public void ThrowHandledException()
+      {
+          try
+          {
+              throw new AccessViolationException();
+          }
+          catch (AccessViolationException ave)
+          {
+              Console.WriteLine("caught exception" + ave.Message);
+          }
+      }
+
+      public void ThrowUnhandledException()
+      {
+          throw new AccessViolationException();
+      }
+  }
+  ```
+
+  以下是主控台應用程式的 main （） 方法：
+
+  ```csharp
+  static void Main(string[] args)
+  {
+      Class1 class1 = new Class1();
+      class1.ThrowHandledException();
+      class1.ThrowUnhandledException();
+  }
+  ```
+
+  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception （)** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
+
+若要將例外狀況設定還原為預設值，請選擇**將清單還原為預設設定**按鈕：
+
+![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
+
+## <a name="BKMK_UserUnhandled"></a>告訴使用者未處理的例外狀況繼續偵錯工具
+
+如果您正在偵錯使用.NET 或 JavaScript 程式碼[Just My Code](../debugger/just-my-code.md)，您可以告知偵錯工具，以避免中斷使用者程式碼中未處理，但其他地方處理的例外狀況。
+
+1. 在 [**例外狀況設定**] 視窗中，以滑鼠右鍵按一下資料行標籤，開啟捷徑功能表，然後按**顯示的資料行 > 其他動作**。 (如果您已關閉**Just My Code**，您不會看到此命令。)第三個資料行名為**其他動作**隨即出現。
+
+   ![其他動作 資料行](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+
+   顯示的例外狀況**當使用者程式碼中未處理時繼續**本專欄中，在偵錯工具會繼續如果使用者程式碼中未處理例外狀況，但會在外部處理。
+
+2. 若要變更此設定特定的例外狀況，請選取例外狀況，以顯示捷徑功能表，以滑鼠右鍵按一下並選取**未處理時繼續使用者程式碼中**。 您可能也變更整個例外狀況，例如整個 Common Language Runtime 例外狀況分類的設定）。
+
+   ![* * 時，繼續在使用者程式碼 * * 設定中未處理](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+
+例如，ASP.NET web 應用程式處理的例外狀況將它們轉換成 HTTP 500 狀態碼 ([ASP.NET Web API 中處理的例外狀況](http://www.asp.net/web-api/overview/error-handling/exception-handling))，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：
+
+![使用者將會中斷&#45;未處理例外狀況](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
+
+## <a name="add-and-delete-exceptions"></a>新增及刪除例外狀況
+
+您可以新增及刪除例外狀況。 若要刪除的例外狀況類型類別目錄，選取 例外狀況，然後選擇**從清單中刪除選取的例外狀況**上的按鈕 （減號）**例外狀況設定**工具列。 或者您可以以滑鼠右鍵按一下 例外狀況，然後選取**刪除**從捷徑功能表。 刪除例外狀況有相同的效果為未核取，也就是它擲回時，不會中斷偵錯工具。
+
+若要新增例外狀況：
+
+1. 在 [**例外狀況設定**] 視窗中，選取其中一個例外狀況類別 (例如**Common Language Runtime**)。
+
+2. 選擇**例外狀況新增至選取的分類**（加號） 按鈕。
+
+   ![* * 選取的類別目錄 按鈕以新增例外狀況](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+
+3. 輸入例外狀況的名稱 (例如**System.UriTemplateMatchException**)。
+
+   ![輸入例外狀況名稱](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
+
+   例外狀況會新增至清單 （依字母順序），並會自動核取。
+
+若要加入的 GPU 記憶體存取例外狀況、 JavaScript 執行階段例外狀況或 Win32 例外狀況類別的例外狀況，包括錯誤碼和描述。
+
 > [!TIP]
->  請檢查您的拼字！ **例外狀況設定**視窗並不會檢查加入的例外狀況是否存在。 因此，如果您鍵入**Sytem.UriTemplateMatchException**，您會得到的項目，針對該例外狀況 (而非**System.UriTemplateMatchException**)。  
-  
- 例外狀況設定會保存在方案的.suo 檔案中，因此可套用至特定的解決方案。 您無法跨解決方案，以重複使用特定的例外狀況設定。 此時，會保存已加入的例外狀況；但已刪除的例外狀況除外。 換句話說，您可以加入例外狀況，關閉並重新開啟方案，然後該例外狀況仍不會消失。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。  
-  
- [例外狀況設定]  視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] 。 也就是說，如果您已經建立這類例外狀況：  
-  
-```csharp  
-public class GenericException<T> : Exception  
-{  
-    public GenericException() : base("This is a generic exception.")  
-    {  
-    }  
-}  
-```  
-  
- 您可以將此例外狀況加入 [例外狀況設定]  ，如下所示：  
-  
- ![加入泛型例外狀況](../debugger/media/addgenericexception.png "AddGenericException")  
+> 請檢查您的拼字！ **例外狀況設定**視窗並不會檢查加入的例外狀況是否存在。 因此，如果您鍵入**Sytem.UriTemplateMatchException**，您會得到的項目，針對該例外狀況 (而非**System.UriTemplateMatchException**)。
+
+例外狀況設定會保存在方案的.suo 檔案中，因此可套用至特定的解決方案。 您無法跨解決方案，以重複使用特定的例外狀況設定。 現在會保存已加入的例外狀況;不是 已刪除的例外狀況。 您可能會加入例外狀況，關閉並重新開啟方案，以及例外狀況仍會發生。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。
+
+[例外狀況設定]  視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] 。 也就是說，如果您已建立此程式碼類似的例外狀況：
+
+```csharp
+public class GenericException<T> : Exception
+{
+    public GenericException() : base("This is a generic exception.")
+    {
+    }
+}
+```
+
+您可以加入的例外狀況**例外狀況設定**使用上一個程序：
+
+![加入泛型例外狀況](../debugger/media/addgenericexception.png "AddGenericException")
 
 ## <a name="add-conditions-to-an-exception"></a>將條件加入至例外狀況
 
-您可以設定條件中的例外狀況**例外狀況設定** 對話方塊。 目前支援的條件包括要包含或排除例外狀況的模組名稱。 藉由設定模組名稱做為條件，您可以選擇只在特定的程式碼模組，例外狀況中斷，或您可以避免在特定的模組。
+使用**例外狀況設定**視窗來設定條件的例外狀況。 目前支援的條件包括要包含或排除例外狀況的模組名稱。 藉由設定模組名稱做為條件，您可以選擇只在特定的程式碼模組上例外狀況中斷。 您也可以選擇以避免在特定的模組。
 
 > [!NOTE]
-> 將條件加入至例外狀況的新功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> 將條件加入至例外狀況的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
-若要新增條件式的例外狀況，請選擇**編輯條件**例外狀況設定] 對話方塊中的圖示方塊或以滑鼠右鍵按一下 [例外狀況，然後選擇**編輯條件**。
+若要新增條件式的例外狀況：
 
-![在例外狀況的條件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
-  
-## <a name="see-also"></a>另請參閱  
- [例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)   
- [如何： 在例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
- [使用執行階段檢查時不使用 C 執行階段程式庫](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
+1. 選擇**編輯條件**按鈕在例外狀況設定] 視窗中，或以滑鼠右鍵按一下 [例外狀況，然後選擇**編輯條件**。
+
+   ![例外狀況的條件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+
+2. 若要加入例外狀況需要額外的條件，請選取**加入條件**對每個新的條件。 會顯示其他條件線。
+
+   ![例外狀況的額外條件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
+
+3. 每個條件列，請輸入名稱的模組，並變更比較運算子清單，來**Equals**或是**Not Equals**。 您可以指定萬用字元 (**\***) 指定多個模組的名稱。
+
+4. 如果您要刪除條件，請選擇**X**條件列的結尾。
+
+## <a name="see-also"></a>另請參閱
+
+[於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
+[如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+[如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)<br/>
+[不使用 C 執行階段程式庫中使用執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[教學課程： 了解如何使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)

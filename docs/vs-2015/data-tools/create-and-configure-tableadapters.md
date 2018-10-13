@@ -1,7 +1,7 @@
 ---
 title: 建立和設定 Tableadapter |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199247"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立和設定 Tableadapter](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters)。  
-  
   
 Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連接到資料庫、 執行的查詢或預存程序，並傳回新的資料資料表，或將現有的填滿<xref:System.Data.DataTable>使用傳回的資料。 Tableadapter 也可以從您的應用程式回到資料庫傳送更新的資料。  
   

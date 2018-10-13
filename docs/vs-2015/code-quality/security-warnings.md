@@ -1,7 +1,7 @@
 ---
 title: 安全性警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e906143b384a36dd34a5f487f6785705bdc2ab33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3015e1d01407120aef30b25aea4dbc8e0c6c7fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187596"
 ---
 # <a name="security-warnings"></a>安全性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安全性警告](https://docs.microsoft.com/visualstudio/code-quality/security-warnings)。  
-  
 支援更安全之程式庫和應用程式的安全性警告。 這些警告有助於防止在程式中出現安全性問題。 如果停用這些警告中的任一個，則您應該清楚地在程式碼中標示理由，同時也要通知指定的安全主管有關您的開發專案。  
   
 ## <a name="in-this-section"></a>本節內容  
@@ -88,7 +86,7 @@ ms.locfileid: "47499308"
 |[CA2149：透明方法不可以呼叫機器碼](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|任何直接呼叫機器碼的透明方法都會引發此規則，例如透過 P/Invoke。 違反此規則會導致層級 2 透明度模型出現 MethodAccessException，而在層級 1 透明度模型會出現對 UnmanagedCode 的完整要求。|  
 |[CA2151：具有關鍵類型的欄位應為安全性關鍵](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|若要使用安全性關鍵類型，參考該類型的程式碼必須是安全性關鍵或安全性安全關鍵。 即使是間接參考也是如此。 因此，使用安全性透明或安全性安全關鍵欄位容易發生錯誤，因為透明程式碼仍然無法存取該欄位。|  
 |[CA5122 P-Invoke 宣告不應為安全關鍵](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。|  
-|[CA2153：避免處理損毀狀態例外狀況](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指出記憶體損毀存在於您的程序。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|  
+|[CA2153：避免處理損毀狀態例外狀況](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|  
 |[CA3075：不安全的 DTD 處理](../code-quality/ca3075-insecure-dtd-processing.md)|如果您使用不安全的 DTDProcessing 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。|  
 |[CA3076：不安全的 XSLT 指令碼執行](../code-quality/ca3076-insecure-xslt-script-execution.md)|如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。|  
 |[CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 DtdProcessing。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。|

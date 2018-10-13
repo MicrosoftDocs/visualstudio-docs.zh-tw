@@ -1,7 +1,7 @@
 ---
 title: CA3075： 不安全 DTD 處理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201574"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA3075： 不安全 DTD 處理](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing)。
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -36,7 +33,7 @@ ms.locfileid: "47588116"
  如果您使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。
 
 ## <a name="rule-description"></a>規則描述
- A[文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx)是下列其中一種 XML 剖析器用來判斷文件有效性所定義[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋屬性和執行個體不受信任的資料已接受的警告開發人員潛在[資訊洩漏](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c)威脅，這可能會導致[阻絕服務 (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600)攻擊。 下列情況會觸發此規則：
+ [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
 -   <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
 
@@ -70,7 +67,7 @@ ms.locfileid: "47588116"
 
  .NET 4 和更新版本
 
--   避免啟用 DtdProcessing，如果您正在處理不受信任的來源 DtdProcessing 屬性設定為[Prohibit 或 Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+-   如果您正在處理不受信任的來源，請將 DtdProcessing 屬性設為 [Prohibit 或 Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)以避免啟用 DtdProcessing。
 
 -   請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。
 

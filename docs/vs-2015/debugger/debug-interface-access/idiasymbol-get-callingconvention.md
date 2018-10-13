@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_callingconvention |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60d84759c91b9435b34fe5ce32d8b7579e507ad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69c07d961dde6150d492fc4aab8f21ed5d41b811
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189484"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_callingconvention](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-callingconvention)。  
-  
 傳回方法，呼叫慣例的指標。  
   
 ## <a name="syntax"></a>語法  

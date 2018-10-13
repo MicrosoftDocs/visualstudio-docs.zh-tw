@@ -1,7 +1,7 @@
 ---
 title: 新增和移除屬性頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221984"
 ---
 # <a name="adding-and-removing-property-pages"></a>新增和移除屬性頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入和移除屬性頁](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages)。  
-  
 專案設計工具提供管理專案屬性、 設定和中的資源的集中式的位置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式開發環境 (IDE)，並包含在右側窗格，並可透過左側索引標籤的數目。 專案設計工具窗格 （通常稱為屬性頁） 會因專案類型和語言。 專案設計工具可以使用來存取**屬性**命令**專案**功能表。  
   
  專案子類型經常需要在專案設計工具中顯示其他的屬性頁。 同樣地，某些專案子類型可能需要移除的內建屬性頁。 若要執行其中一項，您的專案子類型必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面，並覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法。 藉由覆寫這個方法，並使用`propId`參數，其中包含的其中一個值<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>列舉型別，您可以篩選、 新增或移除專案屬性。 例如，您可能需要將頁面新增至組態相依屬性頁。 若要這樣做，您需要篩選組態相依屬性頁，然後將新的頁面新增至現有的清單。  

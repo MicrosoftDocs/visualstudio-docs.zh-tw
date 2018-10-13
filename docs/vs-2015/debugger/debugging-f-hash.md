@@ -1,7 +1,7 @@
 ---
 title: '偵錯 F # |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5790b81eedb1a1bb9dc65b7ce053089c3bc1470
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd722e40a0579181e3c361706f0775aaf350c341
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209569"
 ---
 # <a name="debugging-f"></a>偵錯 F# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 F #](https://docs.microsoft.com/visualstudio/debugger/debugging-f-hash)。  
-  
 除了下列幾點差異，偵錯 F# 的方式與偵錯任何 Managed 語言非常類似：  
   
 -   **自動變數**視窗不會顯示 F # 變數。  

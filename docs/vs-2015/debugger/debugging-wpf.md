@@ -1,7 +1,7 @@
 ---
 title: 偵錯 WPF |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce2a30c1197abb323a60db3939d70dc3eec4fd37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c182c95ec8fe888dcea50925b06f0da40bb61e87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212091"
 ---
 # <a name="debugging-wpf"></a>偵錯 WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 WPF](https://docs.microsoft.com/visualstudio/debugger/debugging-wpf)。  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 提供了額外的功能，可讓 WPF 應用程式偵錯變得更輕鬆。  
   
 ## <a name="related-topics"></a>相關主題  

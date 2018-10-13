@@ -1,7 +1,7 @@
 ---
 title: 為 RequireJS 自訂 IntelliSense |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246710"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>為 RequireJS 自訂 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
-  
 從 Visual Studio 2013 Update 4 開始，提供對熱門 RequireJS JavaScript 檔案和模組化載入器的支援。 RequireJS 可讓您更輕鬆地定義程式碼模組之間的相依性，並只在需要時才以動態方式載入模組。 撰寫使用 RequireJS 的 JavaScript 程式碼時，會提供 IntelliSense 的模組建議，您可以從模組定義參考這些建議，或從程式碼內使用 `require()` 呼叫參考這些建議。  
   
  根據預設，Visual Studio 支援非常基本的組態，以支援 RequireJS，但常見的作法是設定您自己的自訂組態設定 (亦即定義程式庫的別名)。 本主題說明您可以自訂 Visual Studio 的不同方式，以使用專案的唯一設定。  

@@ -1,7 +1,7 @@
 ---
 title: 選項對話方塊、環境、快速啟動 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bf2e22db54e064de6716d4ca1325a9e5435318f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269057"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[快速、 環境、 啟動選項 對話方塊中](https://docs.microsoft.com/visualstudio/ide/reference/quick-launch-environment-options-dialog-box)。  
-  
   
 您可以使用 [快速啟動] 快速搜尋選項、範本、功能表這類 IDE 資產，並對其執行動作。 但無法使用 [快速啟動] 來搜尋程式碼和符號。 [快速啟動] 搜尋方塊位於功能表列的右上角，而且選擇 Ctrl+Q 鍵即可存取。 只要在方塊中輸入搜尋字串即可。 若要搜尋包含 @ 的字串，請使用 ”@@”。  
   
@@ -44,10 +42,10 @@ ms.locfileid: "47485216"
   
 |分類|快速鍵|快速鍵描述|  
 |--------------|--------------|--------------------------|  
-|最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|  
-|Menus|@menu<br /><br /> 例如：`@menu font`|限制搜尋功能表項目。|  
-|選項|@opt<br /><br /> 例如：`@opt font`|限制搜尋 [選項] 對話方塊中的設定。|  
-|文件|@doc<br /><br /> 例如：`@doc font`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|  
+|最近使用|@mru<br /><br /> 例如： `@mru font` |最多顯示您 [最近用過的函式] 的五個項目。|  
+|Menus|@menu<br /><br /> 例如： `@menu font` |限制搜尋功能表項目。|  
+|選項|@opt<br /><br /> 例如： `@opt font` |限制搜尋 [選項] 對話方塊中的設定。|  
+|文件|@doc<br /><br /> 例如： `@doc font` |限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|  
   
 > [!NOTE]
 >  您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。  

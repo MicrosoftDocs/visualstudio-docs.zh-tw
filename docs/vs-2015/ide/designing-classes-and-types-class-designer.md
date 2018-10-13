@@ -1,7 +1,7 @@
 ---
 title: 設計類別和類型 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9225a20e8e7834832a7b152c7770cf58eb94b64f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7fbefeef4a5993daeaf79088da7bd861505421c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265742"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>設計類別和類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設計類別和類型 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/designing-classes-and-types-class-designer)。  
-  
 使用 [類別設計工具]，您不能只視覺化類別和類型，還能設計它們。 下列各主題描述如何執行這項作業。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 編輯後繼續錯誤訊息對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6252fbaf67a9a5b4173c0fee3f65607e9cc462
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227229"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>編輯後繼續錯誤訊息對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯後繼續錯誤訊息對話方塊](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box)。  
-  
 支援編輯後繼續 的語言中的偵錯時，會出現此對話方塊，但**編輯後繼續**不適用於您所做的程式碼變更的類型。 方塊內的錯誤訊息會提供更詳細的說明。 出現這個對話方塊的可能原因包括：  
   
 -   您嘗試在已啟用 Unmanaged 偵錯時編輯 Managed 程式碼。 [編輯後繼續] 不會處理混合模式偵錯。  

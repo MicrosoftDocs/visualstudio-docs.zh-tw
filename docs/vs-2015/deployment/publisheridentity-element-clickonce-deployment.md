@@ -1,7 +1,7 @@
 ---
 title: '&lt;publisherIdentity&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4c11e8ed9a3e0b4341708fc849462fbc476dc395
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d25b9ff6c4d8a3eb43d18d5c9849ba7199ffe79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226937"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;publisherIdentity&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/publisheridentity-element-clickonce-deployment)。  
-  
 包含簽署此部署資訊清單之發行者的資訊。  
   
 ## <a name="syntax"></a>語法  

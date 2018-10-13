@@ -1,7 +1,7 @@
 ---
 title: 如何：散發程式碼片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487302"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185701"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 散發程式碼片段](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets)。  
-  
 您可以使用程式碼片段管理員，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 使用者可以安裝的 Visual Studio 擴充功能中包含您的程式碼片段檔案。  
   
  若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 尋找符合您 Visual Studio 安裝的 vssdk 版本[Visual Studio 2015 下載](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)。  

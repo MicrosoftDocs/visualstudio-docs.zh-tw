@@ -1,7 +1,7 @@
 ---
 title: 原始檔中隱藏項目概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209036"
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在來源隱藏項目概觀](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview)。  
-  
 在原始程式檔隱藏項目是隱藏或忽略 managed 程式碼中的程式碼分析違規加上能夠**SuppressMessage**屬性會造成違規的程式碼區段。 **SuppressMessage**屬性是在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才會包含您的 managed 程式碼組件的 IL 中繼資料中的條件式屬性。  
   
  在 C++/CLI 中，若要加入此屬性，請在標頭檔中使用 CA_SUPPRESS_MESSAGE 或 CA_GLOBAL_SUPPRESS_MESSAGE 巨集。  

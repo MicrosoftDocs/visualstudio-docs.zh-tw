@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 發行 Visual Studio 擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,18 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66f6c6e4f59f271999294991dc66f71f16cf4a2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d92bf805aba9b3d168f3f8d5bc3af84dfff423f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204057"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說︰發佈 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **請注意**: Visual Studio 組件庫已取代為 Visual Studio Marketplace。 請參閱本主題的詳細資料的最新版本。
 
-本主題的最新的版本可從[逐步解說： 發行 Visual Studio 擴充功能](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension)。  
   
 本逐步解說會示範如何將 Visual Studio 延伸模組發佈至 Visual Studio 組件庫。 當您新增您的延伸模組資源庫時，開發人員可以使用**擴充功能和更新**瀏覽是否那里新的和更新擴充功能。  
   

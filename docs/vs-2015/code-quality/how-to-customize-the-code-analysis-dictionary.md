@@ -1,7 +1,7 @@
 ---
 title: 如何： 自訂程式碼分析字典 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227907"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 自訂程式碼分析字典](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary)。  
-  
 若要檢查拼字、 文法的情況下，與其他命名慣例中的錯誤程式碼中的識別項程式碼分析會使用的內建字典[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]指導方針。 您可以建立自訂字典的 Xml 檔案，來新增、 移除或修改詞彙、 縮寫，以及內建的字典的縮略字。  
   
  例如，假設您的程式碼包含名為類別**DoorKnokker**。 程式碼分析會視為兩個單字的複合的名稱：**門**並**knokker**。 然後，它就會引發警告， **knokker**拼法不正確。 若要強制可辨識的拼字檢查程式碼分析，您可以新增一詞**knokker**至自訂字典。  

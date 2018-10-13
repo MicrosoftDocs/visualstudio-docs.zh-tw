@@ -1,7 +1,7 @@
 ---
 title: 如何： 巡覽及更新圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: b691be5c6ae21ceaf1f2764257eccfa293e94504
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c61936ccf35ef2d4a9a6e4e5d62bf654c8be61d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221438"
 ---
 # <a name="how-to-navigate-and-update-a-diagram"></a>如何：巡覽及更新圖表
 這個主題已與其他內容合併。 請前往[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。

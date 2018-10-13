@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK 字彙表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 453826081ae3d0b747d948212e713dd672550b31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20310605ed73247958287903a8eb3926ee55ba1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225546"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio SDK 字彙表](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-glossary)。  
-  
 這份字彙表提供所用的詞彙定義[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]文件。  
   
 ## <a name="terms"></a>詞彙  

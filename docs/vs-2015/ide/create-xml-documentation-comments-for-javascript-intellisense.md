@@ -1,7 +1,7 @@
 ---
 title: 建立 JavaScript IntelliSense 的 XML 文件註解 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220554"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 XML 文件註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
-  
 *XML 文件註解*是 JavaScript 的註解，您將新增至指令碼，以提供程式碼項目，例如函式、 欄位和變數的相關資訊。 在 Visual Studio 中，這些文字描述會顯示與 IntelliSense，當您參考指令碼函式。  
   
  本主題提供基本教學課程中使用 XML 文件註解。 如需使用其他項目，例如[ \<var >](../ide/var-javascript.md)並[\<值 >](../ide/value-javascript.md)，和其他程式碼範例，請參閱[XML 文件註解](../ide/xml-documentation-comments-javascript.md). 如需這類提供 IntelliSense 資訊的非同步回呼`Promise`，請參閱 < [\<傳回 >](../ide/returns-javascript.md)。  

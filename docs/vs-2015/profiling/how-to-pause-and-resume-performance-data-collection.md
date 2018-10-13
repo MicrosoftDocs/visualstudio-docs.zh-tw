@@ -1,7 +1,7 @@
 ---
 title: 如何︰暫停和繼續效能資料收集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205617"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 暫停和繼續效能資料收集](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection)。  
-  
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  
   
  控制資料收集可以讓您縮減分析資料檔案的大小，而且可以只收集自己有興趣的作業資料。 您可以在效能工作階段中重複暫停及繼續剖析程式碼。  

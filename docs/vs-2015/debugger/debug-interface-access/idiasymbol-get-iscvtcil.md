@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_iscvtcil |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41db1bb8488165cb25d84b92bb940bbe152804d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f42f3634810c625ba0617d1a04146672280f915e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184934"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_iscvtcil](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-iscvtcil)。  
-  
 擷取旗標，指出是否將模組已從通用中間語言 (CIL) 模組轉換為原生模組。  
   
 ## <a name="syntax"></a>語法  

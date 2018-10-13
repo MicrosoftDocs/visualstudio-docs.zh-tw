@@ -1,7 +1,7 @@
 ---
 title: 方案使用者選項 (。Suo) 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186786"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新版本位於[方案使用者選項 (。Suo) 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file)。  
-  
 方案使用者選項 (.suo) 檔案包含每個使用者方案的選項。 此檔案應該不會簽入原始程式碼控制項中。  
   
  方案使用者選項 (.suo) 檔案是結構化儲存體或複合式的以二進位格式儲存的檔案。 您要將用來識別.suo 檔案中的資訊的索引鍵的資料流的名稱儲存到資料流的使用者資訊。 方案使用者選項檔用來儲存使用者喜好設定，並會在 Visual Studio 會儲存方案時自動建立。  

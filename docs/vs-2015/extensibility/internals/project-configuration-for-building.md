@@ -1,7 +1,7 @@
 ---
 title: 專案建置的組態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221113"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建置的專案組態](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building)。  
-  
 給定方案的方案組態的清單是由 [方案組態] 對話方塊中管理。  
   
  使用者可以建立額外的方案組態，各有自己唯一的名稱。 當使用者建立新的方案組態時，IDE 會預設為對應的組態名稱，在偵錯的專案中，如果不有任何對應的名稱。 使用者可以變更選取項目，以符合特定需求，如有必要。 唯一的例外狀況，此行為時，專案支援的組態，以符合新的方案組態的名稱。 例如，假設解決方案包含 Project1 和 Project2。 Project1 有偵錯、 零售版和 MyConfig1 的專案組態。 Project2 有偵錯、 零售版和 MyConfig2 的專案組態。  

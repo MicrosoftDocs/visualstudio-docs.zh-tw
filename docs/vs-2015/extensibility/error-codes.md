@@ -1,7 +1,7 @@
 ---
 title: 錯誤代碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bd6fd1eb6966b23912e0181ee147a4e8715b4ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220d53db343a90f6e19e0f365c621cbf55186a8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189978"
 ---
 # <a name="error-codes"></a>錯誤碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤碼](https://docs.microsoft.com/visualstudio/extensibility/error-codes)。  
-  
 原始檔控制外掛程式 API 函式會傳回錯誤，它應該是其中一個下列的錯誤代碼。 所有的錯誤是負數，警告或參考用錯誤代碼為正數，並成功則為 0。  
   
 |錯誤碼|值|描述|  

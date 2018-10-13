@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：尋找記憶體流失 (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234191"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體遺漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 找出記憶體流失 (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  本逐步解說將帶領您使用 JavaScript 記憶體分析器找出並修正簡單的記憶體問題。 您可以在 Visual Studio 中使用 JavaScript 記憶體分析器來分析使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式。 在這個案例中，您建立的應用程式在記憶體內以不正確的方式保留 DOM 項目，而不是以這些項目在建立時的相同速度來處理這些項目。  

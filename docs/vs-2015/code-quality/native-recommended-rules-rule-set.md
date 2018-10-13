@@ -1,7 +1,7 @@
 ---
 title: 原生建議規則規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345acf57686f57c79aa0d40ed5fdbf288475b156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbdb356a47e398bfa7b3417c876b5a1f5027543d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200666"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原生建議規則規則集](https://docs.microsoft.com/visualstudio/code-quality/native-recommended-rules-rule-set)。  
-  
 原生建議規則的重點的最重要且常見的問題，您的原生程式碼，包括潛在的安全性漏洞和應用程式損毀。  您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  此規則可配合使用 Visual Studio Professional edition 和更新版本。  
   
 |規則|描述|  

@@ -1,7 +1,7 @@
 ---
 title: 編輯後繼續對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3e2dc09bdd40902f934e6f29067f4cb88cbbe48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250467"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯後繼續對話方塊](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box)。  
-  
 僅限機器碼） 偵錯時編輯程式碼時，會出現此對話方塊並**編輯後繼續**辨識它可以套用程式碼變更。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續](../debugger/edit-and-continue.md)。  
   
  **不要再顯示此對話方塊一次**  

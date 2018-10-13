@@ -1,7 +1,7 @@
 ---
 title: 屬性的作業，在 UML 類別圖 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207021"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 類別圖上作業的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性的作業，在 UML 類別圖](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams)。  
-  
 您可以在 UML 類別圖中，新增*作業*加入類別和介面。 作業是一個方法或函式，可由類別或介面的執行個體所執行。  
   
  若要加入作業，以滑鼠右鍵按一下類別或介面，指向**新增**，然後按一下**作業**。  
