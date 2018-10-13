@@ -1,7 +1,7 @@
 ---
 title: 步驟 1：建立專案並將資料表新增至表單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204460"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表加入至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 1： 建立專案，並將資料表加入至您的表單](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form)。  
-  
 建立配對遊戲的第一個步驟就是建立專案並將資料表加入至您的表單。 資料表可協助依 4x4 格線對齊圖示。 您也可以設定多個屬性來強化遊戲面板的外觀。  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>若要建立專案並將資料表加入至表單  

@@ -1,7 +1,7 @@
 ---
 title: 視窗搜尋對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179968"
 ---
 # <a name="window-search-dialog-box"></a>視窗搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[視窗搜尋對話方塊](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box)。  
-  
 使用此對話方塊，即可尋找並選取特定的視窗中的節點[Windows 檢視](../debugger/windows-view.md)。 若要顯示此對話方塊中，將焦點移至 Windows 的 [檢視] 視窗。 然後選擇**尋找視窗**從**搜尋**功能表。  
   
  您可以使用**搜尋工具**選取視窗中，也可以輸入的視窗控制代碼，或識別在視窗的標題和類別。  

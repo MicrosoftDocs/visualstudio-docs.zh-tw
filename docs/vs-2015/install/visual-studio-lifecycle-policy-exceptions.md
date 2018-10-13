@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 週期原則例外 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 13b9bf54f22d7cf6604b5e8a4304a4e0223a6dab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3094e18798fa987390fce3ee64d0a6da2fe0a9ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196114"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 週期原則例外
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

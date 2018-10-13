@@ -1,7 +1,7 @@
 ---
 title: 撰寫的 Windows Installer 套件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9b56ea9120e3cbee18d8018420a94748dc52eec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198272"
 ---
 # <a name="authoring-a-windows-installer-package"></a>編寫 Windows Installer 套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[撰寫的 Windows Installer 封裝](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-a-windows-installer-package)。  
-  
 資料磁碟機的 Windows 安裝程式的模型。 而非撰寫程序的指令碼，以將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。  
   
 ## <a name="database-entries"></a>資料庫項目  

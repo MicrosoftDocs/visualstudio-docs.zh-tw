@@ -1,7 +1,7 @@
 ---
 title: 公開專案物件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210792"
 ---
 # <a name="exposing-project-objects"></a>公開專案物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[公開專案物件](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects)。  
-  
 自訂專案類型可提供 automation 物件，以便使用自動化介面專案的存取權。 預期每個專案類型提供的標準<xref:EnvDTE.Project>自動化物件，從存取<xref:EnvDTE.Solution>，其中包含已經在 IDE 中開啟的所有專案集合。 在專案中的每個項目應該由<xref:EnvDTE.ProjectItem>物件使用存取<xref:EnvDTE.Project.ProjectItems>。 除了這些標準 automation 物件，可以選擇專案的方案專案特定的自動化物件。  
   
  您可以建立自訂的根層級自動化物件，您可以存取晚期繫結從根 DTE 物件使用`DTE.<customeObjectName>`或`DTE.GetObject(“<customObjectName>”)`。 例如，Visual c + + 會建立名為"VCProjects 」，您可以使用 DTE 對其進行存取的 c + + 專案特定的專案集合。VCProjects 或 DTE。GetObject("VCProjects")。 您也可以建立 Project.Object，也就是唯一的專案類型中 Project.CodeModel，可以查詢其最高衍生性的物件，而會公開 ProjectItem.Object 和 ProjectItem.FileCodeModel 專案，項目。  

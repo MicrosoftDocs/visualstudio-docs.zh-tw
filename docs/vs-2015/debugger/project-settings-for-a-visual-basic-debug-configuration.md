@@ -1,7 +1,7 @@
 ---
 title: Visual Basic 偵錯組態的專案設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af9d9976c6aa6743cfda4c69d3b2f8d958ab03bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3bcc3b6090efb16d74485bf8e7747d7cc8ee7b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188665"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Basic 偵錯組態的專案設定](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-visual-basic-debug-configuration)。  
-  
 您可以變更的專案設定[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]中的偵錯組態**屬性頁**視窗中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示與偵錯工具相關的設定中的位置**屬性頁**視窗。  
   
 > [!WARNING]

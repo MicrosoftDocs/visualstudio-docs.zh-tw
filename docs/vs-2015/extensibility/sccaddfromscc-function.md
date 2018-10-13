@@ -1,7 +1,7 @@
 ---
 title: SccAddFromScc 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1dd8ee409fd1facae82a8b8c6eeb418a68b4a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 759bc4d64419959812a07bac90bceb940dea4391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220710"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccAddFromScc 函式](https://docs.microsoft.com/visualstudio/extensibility/sccaddfromscc-function)。  
-  
 此函數可讓使用者瀏覽已在原始檔控制系統中的檔案，並接著讓這些檔案的部分目前的專案。 比方說，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。  
   
 ## <a name="syntax"></a>語法  

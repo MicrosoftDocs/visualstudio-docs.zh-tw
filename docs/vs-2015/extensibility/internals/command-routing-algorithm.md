@@ -1,7 +1,7 @@
 ---
 title: 命令路由演算法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2136bbff40a24b1b376d5d737367630256230c35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23975d0ae73edd3bb411334e034672a6b5f0e477
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209309"
 ---
 # <a name="command-routing-algorithm"></a>路由傳送命令的演算法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令路由演算法](https://docs.microsoft.com/visualstudio/extensibility/internals/command-routing-algorithm)。  
-  
 在 Visual Studio 中許多不同的元件會處理命令。 命令會從最內側的內容中，根據目前的選取範圍，路由傳送到最外層的 （也稱為全域） 內容。 如需詳細資訊，請參閱 <<c0> [ 可用性](../../extensibility/internals/command-availability.md)。  
   
 ## <a name="order-of-command-resolution"></a>命令解析順序  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_frontendbuild |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b0642634d597e3c249809ae6e7ad147d833c2bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1369c96ba4e36a7765bbacba6dd6c8763482960b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208880"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_frontendbuild](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-frontendbuild)。  
-  
 擷取後端的組建編號。  
   
 ## <a name="syntax"></a>語法  

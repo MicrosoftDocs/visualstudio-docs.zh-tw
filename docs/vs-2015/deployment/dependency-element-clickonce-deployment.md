@@ -1,7 +1,7 @@
 ---
 title: '&lt;相依性&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214915"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;相依性&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment)。  
-  
 識別要安裝，應用程式的版本和應用程式資訊清單的位置。  
   
 ## <a name="syntax"></a>語法  
@@ -92,7 +90,7 @@ ms.locfileid: "47490874"
 |---------------|-----------------|  
 |`preRequisite`|選擇性。 指定這個組件應該已經存在於 GAC。 有效值為 `true` 和 `false`。 如果`true`，和指定的組件不存在於 GAC、 應用程式無法執行。|  
 |`visible`|選擇性。 識別最上層應用程式身分識別，包括其相依性。 在內部使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]來管理應用程式存放區和啟用。|  
-|`dependencyType`|必要。 此相依性和應用程式之間的關係。 有效值為：<br /><br /> -   `install`。 元件代表目前的應用程式是個別安裝。<br />-   `preRequisite`。 目前的應用程式需要的元件。|  
+|`dependencyType`|必要。 此相依性和應用程式之間的關係。 有效值為：<br /><br /> -   `install`. 元件代表目前的應用程式是個別安裝。<br />-   `preRequisite`. 目前的應用程式需要的元件。|  
 |`codebase`|選擇性。 應用程式資訊清單的完整路徑。|  
 |`size`|選擇性。 應用程式資訊清單，以位元組為單位的大小。|  
   
@@ -109,12 +107,12 @@ ms.locfileid: "47490874"
 |`type`|選擇性。 針對回溯相容性 Windows-並存安裝技術。 唯一允許的值是`win32`。|  
   
 ## <a name="hash"></a>雜湊  
- `hash`項目是選用的子系`file`項目。 `hash`項目沒有任何屬性。  
+ `hash`項目是選用的子系`file`項目。 `hash` 項目沒有任何屬性。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使用應用程式中的所有檔案的演算法雜湊做為安全性檢查，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms`項目沒有任何屬性。  
+ `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms` 項目沒有任何屬性。  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
  `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 下表顯示的屬性`dsig:Transform`項目。  
@@ -131,7 +129,7 @@ ms.locfileid: "47490874"
 |`Algorithm`|用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
- `dsig:DigestValue`項目是必要的子系`hash`項目。 `dsig:DigestValue`項目沒有任何屬性。 它的值是計算的雜湊指定的檔案。  
+ `dsig:DigestValue`項目是必要的子系`hash`項目。 `dsig:DigestValue` 項目沒有任何屬性。 它的值是計算的雜湊指定的檔案。  
   
 ## <a name="remarks"></a>備註  
  部署資訊清單通常會有單一`assemblyIdentity`可識別的名稱和版本的應用程式資訊清單的項目。  

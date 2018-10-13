@@ -1,7 +1,7 @@
 ---
 title: 範例 Excel 擴充功能：Element 類別 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0babaf7e387f9255dc8a60958483ba9db66cc879
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179292"
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[範例 Excel 延伸模組： Element 類別](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-element-classes)。  
-  
 延伸模組會使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 並代表 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 中 Worksheet 控制項和 Cell 控制項的類別。  
   
  這個擴充功能的基底項目是 `ExcelElement`。 `ExcelWorksheetElement` 類別和 `ExcelCellElement` 類別都繼承自該項目  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立 XML 程式碼片段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ed45a3cf0be913158ffa3cd82c243fc37aca8ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203927"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立 XML 片段](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-xml-snippets)。  
-  
   
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。  
   

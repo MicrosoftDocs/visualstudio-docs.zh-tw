@@ -1,7 +1,7 @@
 ---
 title: 在程式碼中設定書籤 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 989333e23310009a4b3282fb4520395a32d6b270
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219748"
 ---
 # <a name="setting-bookmarks-in-code"></a>在程式碼中設定書籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼中設定書籤](https://docs.microsoft.com/visualstudio/ide/setting-bookmarks-in-code)。  
-  
 您可以使用書籤來標記程式碼行，讓您可以快速地返回到指定位置，以及在位置之間前後移動。  
   
  書籤命令和圖示可以在兩個位置上使用：書籤視窗 ([檢視]/[書籤] 視窗) 和文字編輯器工具列。  

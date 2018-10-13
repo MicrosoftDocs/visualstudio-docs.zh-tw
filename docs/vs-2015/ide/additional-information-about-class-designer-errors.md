@@ -1,7 +1,7 @@
 ---
 title: 類別設計工具錯誤的其他資訊 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e343ed5453a5751bcbd491bc7e94a8491c1f88c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188522"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>類別設計工具錯誤的其他相關資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[額外的資訊關於類別設計工具錯誤](https://docs.microsoft.com/visualstudio/ide/additional-information-about-class-designer-errors)。  
-  
 類別設計工具不會追蹤原始程式檔的位置，因此，修改您的專案結構或移動專案中的原始程式檔，可能會導致類別設計工具遺失類型的追蹤，特別是 typedef、基底類別或關聯類型的來源類型。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。  
   
  您可以在下列資源中找到其他錯誤和警告的協助：  

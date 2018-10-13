@@ -1,7 +1,7 @@
 ---
 title: UML 元件圖： 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206735"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML 元件圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 元件圖： 參考](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference)。  
-  
 在 Visual Studio 中，*元件圖*顯示軟體系統的設計的部分。 元件圖可協助您視覺化系統和服務行為的高階結構，而這些部分是透過介面來提供和取用。 若要建立 UML 元件圖，在**架構**功能表上，按一下**新增 UML 或分層圖**。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

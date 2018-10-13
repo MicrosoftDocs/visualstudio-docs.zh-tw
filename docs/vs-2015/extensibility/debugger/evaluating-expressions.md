@@ -1,7 +1,7 @@
 ---
 title: 評估運算式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aae7193c6840d389f7990f155fecb0149edc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213677"
 ---
 # <a name="evaluating-expressions"></a>評估運算式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[評估的運算式](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions)。  
-  
 從 [自動變數]，監看式、 快速監看式或即時運算視窗中向下傳遞的字串，會建立運算式。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 此字串會顯示在對應的 IDE 視窗。  
   
 ## <a name="implementation"></a>實作  

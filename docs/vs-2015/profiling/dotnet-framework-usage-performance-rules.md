@@ -1,7 +1,7 @@
 ---
 title: .NET Framework 使用效能規則 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ddb790042e263b3d2eb8a9d7db3f73cd023db79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f1fee0c059189c2a120dfb83556ec94f119a2f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197622"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[.NET Framework 使用效能規則](https://docs.microsoft.com/visualstudio/profiling/dotnet-framework-usage-performance-rules)。  
-  
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。  
   
 |||  

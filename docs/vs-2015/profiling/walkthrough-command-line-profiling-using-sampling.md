@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用取樣進行命令列剖析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703faf6ca5cd50fc340ecf81dec1c7c619d3bfa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cec9ac0038c84e267d046d35e5d65cc83d9c35c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203212"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 命令列程式碼剖析使用取樣](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-sampling)。  
-  
 本逐步解說將示範如何使用命令列工具和取樣來剖析應用程式，以識別效能問題。  
   
  在這個逐步解說中，您將使用命令列工具來逐步剖析受管理的應用程式，並使用取樣以隔離並識別應用程式中的效能問題。  

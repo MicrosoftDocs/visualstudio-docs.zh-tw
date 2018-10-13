@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessSecurity |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c3cfa0d8ef0f43b21ec2057b71b688b2d3ecb66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906ed7f26ac5b50fbd0b349d66570a0626b799ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189549"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcessSecurity](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocesssecurity)。  
-  
 `IDebugProcessSecurity` 是由警告使用者，附加至處理序是不安全的連接埠提供者實作。  
   
 ## <a name="syntax"></a>語法  

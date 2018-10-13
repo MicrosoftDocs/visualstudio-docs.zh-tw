@@ -1,7 +1,7 @@
 ---
 title: 如何： 實作巢狀的專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173572"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 實作巢狀專案](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects)。  
-  
 當您建立巢狀的專案類型，有幾個額外步驟必須實作。 父專案會採用一些相同的方案具有及其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個必須在解決方案，以及若要建立巢狀專案的階層的父專案所引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。  
   
 ### <a name="to-create-nested-projects"></a>若要建立巢狀的專案  

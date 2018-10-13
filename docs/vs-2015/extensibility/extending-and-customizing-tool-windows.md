@@ -1,7 +1,7 @@
 ---
 title: 擴充和自訂工具 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199936"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>延伸和自訂工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[延伸和自訂工具 Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows)。  
-  
 Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件視窗和對話方塊視窗。 屬性 視窗、 輸出 視窗中，等工作清單 視窗中，其他視窗是工具視窗的類型。  
   
 ## <a name="tool-windows"></a>工具視窗  
@@ -43,7 +41,7 @@ Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件
   
  在文件框架中，可以停駐、浮動或標籤工具視窗。 工具視窗框架是由 IDE 所提供，並可用來控制大小、位置、停駐狀態和其他持續性屬性。 工具視窗窗格會顯示內容。 只有在第一次開啟工具視窗時，才會套用預設大小和位置；之後，就會持續保存工具視窗狀態。  
   
- 工具視窗窗格可以裝載 WPF 使用者控制項，並支援工具列。 您可以覆寫<xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>屬性來傳回裝載之控制項的控制代碼。  
+ 工具視窗窗格可以裝載 WPF 使用者控制項，並支援工具列。 您可以覆寫 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 屬性來傳回所裝載控制項的控制代碼。  
   
  您可以將許多不同的功能加入工具視窗。 例如，您可以在其中加入工具列：[新增至工具視窗的工具列](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快顯功能表：[加入工具視窗中的捷徑功能表](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 您可以將搜尋控制項，可讓您搜尋工具視窗內的項目：[加入至工具視窗的搜尋](../extensibility/adding-search-to-a-tool-window.md)。  
   

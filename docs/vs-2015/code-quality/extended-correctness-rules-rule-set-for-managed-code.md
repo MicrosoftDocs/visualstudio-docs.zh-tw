@@ -1,7 +1,7 @@
 ---
 title: 擴充的正確性規則規則集為 managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187419"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[managed 程式碼的擴充正確性規則規則集](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code)。  
-  
 Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用錯誤報告的程式碼分析。 額外的重點會放在特定的案例，例如 COM 互通性和行動應用程式。 您應該考慮包含這個規則集如果任一這些案例適用於您的專案或您的專案中找出其他問題。  
   
  Microsoft 擴充正確性規則規則集包含在 Microsoft 基本正確性規則規則集的規則。 基本正確性規則包括 Microsoft 最小建議規則規則中設定的規則。 如需詳細資訊，請參閱[managed 程式碼的基本正確性規則規則集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

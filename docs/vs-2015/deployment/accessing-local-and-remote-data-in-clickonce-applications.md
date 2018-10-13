@@ -1,7 +1,7 @@
 ---
 title: 存取 ClickOnce 應用程式中的本機和遠端資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218832"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[存取本機和 ClickOnce 應用程式中的遠端資料](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
-  
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。  
   
 ## <a name="local-data"></a>本機資料  
@@ -75,7 +73,7 @@ ms.locfileid: "47499621"
 #### <a name="data-directory-and-application-versions"></a>資料目錄和應用程式版本  
  應用程式的每個版本都有自己的資料目錄，並與其他版本隔離。 不論在部署中是否包含任何資料檔，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 都會建立此目錄，以便讓應用程式在執行階段有位置建立新的資料檔。 在安裝應用程式的新版本時，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 將會從上一版的資料目錄中，將所有的現有資料檔都複製到新版的資料目錄。不論這些資料包含在原始部署中，或是由應用程式建立都是如此。  
   
- 如果資料檔在應用程式的舊版中，具有和新版不同的雜湊值，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 就會以伺服器的新版取代檔案的較舊版本。 而且，如果舊版應用程式所建立的檔案，和新版部署所包含的檔案具有相同名稱，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 就會以新的檔案覆寫舊版的檔案。 在這兩種情況下，舊檔都會包含在資料目錄內名為 `.pre`的子目錄中，如此應用程式就仍然能為移轉目的存取舊的資料。  
+ 如果資料檔在應用程式的舊版中，具有和新版不同的雜湊值，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 就會以伺服器的新版取代檔案的較舊版本。 而且，如果舊版應用程式所建立的檔案，和新版部署所包含的檔案具有相同名稱， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 就會以新的檔案覆寫舊版的檔案。 在這兩種情況下，舊檔都會包含在資料目錄內名為 `.pre`的子目錄中，如此應用程式就仍然能為移轉目的存取舊的資料。  
   
  如果您需要進行更精細的資料移轉，可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署 API 來執行自訂移轉，以便從舊的資料目錄移轉到新的資料目錄。 您必須使用 <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>來測試可用的下載程式、使用 <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> 或 <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>下載更新，並在更新完成之後自己執行任何自訂的資料移轉工作。  
   
@@ -84,7 +82,7 @@ ms.locfileid: "47499621"
   
  隔離儲存區適用於 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的所有版本。 此外，隔離儲存區也適用於部分信任的應用程式，而不需要授與額外的權限。 如果應用程式必須以部分信任執行，並且必須維護應用程式特定資料，您就應該使用隔離儲存。  
   
- 如需詳細資訊，請參閱 <<c0> [ 隔離儲存區](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
+ 如需詳細資訊，請參閱 [隔離儲存區](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
   
 ### <a name="other-local-files"></a>其他本機檔案  
  如果應用程式必須處理或儲存使用者資料 (例如報表、影像、音樂等等)，應用程式就需要 <xref:System.Security.Permissions.FileIOPermission> ，才能對本機檔案系統讀取和寫入資料。  
@@ -93,7 +91,7 @@ ms.locfileid: "47499621"
  有些時候，應用程式很可能必須從遠端網站擷取資訊，像是客戶資料或市場資訊。 本節會討論擷取遠端資料最常見的技巧。  
   
 ### <a name="accessing-files-by-using-http"></a>使用 HTTP 存取檔案  
- 您可以使用 <xref:System.Net.WebClient> 命名空間中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 類別，從 Web 伺服器存取資料。 資料可以是靜態檔案，或是傳回未經處理文字或 XML 資料的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您的資料是 XML 格式，擷取資料的最快方法，就是使用 <xref:System.Xml.XmlDocument> 類別，此類別的 <xref:System.Xml.XmlDocument.Load%2A> 方法採用 URL 做為引數。 如需範例，請參閱[XML 文件讀入 DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
+ 您可以使用 <xref:System.Net.WebClient> 命名空間中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 類別，從 Web 伺服器存取資料。 資料可以是靜態檔案，或是傳回未經處理文字或 XML 資料的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您的資料是 XML 格式，擷取資料的最快方法，就是使用 <xref:System.Xml.XmlDocument> 類別，此類別的 <xref:System.Xml.XmlDocument.Load%2A> 方法採用 URL 做為引數。 如需範例，請參閱 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
   
  如果應用程式會透過 HTTP 存取遠端資料，您就必須考慮安全性的問題。 根據預設，您當初部署應用程式的方式，可能會限制 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式對網路資源的存取。 套用這些限制主要是為了防止惡意程式存取有權限的遠端資料，或是利用使用者的電腦來攻擊網路上的其他電腦。  
   
@@ -105,7 +103,7 @@ ms.locfileid: "47499621"
 |檔案共用安裝|無法存取任何 Web 伺服器|  
 |CD-ROM 安裝|可以存取任何 Web 伺服器|  
   
- 如果 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式由於安全性限制而無法存取 Web 伺服器，此應用程式就必須為該網站判斷提示 <xref:System.Net.WebPermission>。 如需增加安全性權限的詳細資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，請參閱 <<c2> [ 保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
+ 如果 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式由於安全性限制而無法存取 Web 伺服器，此應用程式就必須為該網站判斷提示 <xref:System.Net.WebPermission> 。 如需增加安全性權限的詳細資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，請參閱 <<c2> [ 保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>透過 XML Web Service 存取資料  
  如果您將資料公開為 XML Web Service，就可以使用 XML Web Service Proxy 來存取資料， 此 Proxy 是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 所建立的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類別。 XML Web Service 的作業 (例如擷取客戶、下訂單等等)，都會公開為 Proxy 上的方法。 這讓 Web 服務比未經處理的文字或 XML 檔案更加容易使用。  

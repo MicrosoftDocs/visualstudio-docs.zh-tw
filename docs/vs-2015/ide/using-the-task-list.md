@@ -1,7 +1,7 @@
 ---
 title: 使用工作清單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f58dd84be73541a3a830c16ff629424830dce488
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172025"
 ---
 # <a name="using-the-task-list"></a>使用工作清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 工作清單](https://docs.microsoft.com/visualstudio/ide/using-the-task-list)。  
-  
 使用 [工作清單]  追蹤使用 `TODO` 和 `HACK`等語彙基元或自訂語彙基元的程式碼註解，以及管理會引導您直接移至程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。  
   
  本主題內容：  

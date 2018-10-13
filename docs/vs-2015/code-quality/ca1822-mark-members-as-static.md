@@ -1,7 +1,7 @@
 ---
 title: CA1822： 將成員標記為靜態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f483a483d7f2f6b53f781a158c12f7661a3923f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183491"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822：將成員標記為靜態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 寫入使用者設定存放區 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fc5f38f8831dec53b907d83571574742f3d491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90d34ebf751ee62fd7779a92214f42779cf84b59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202042"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[寫入使用者設定存放區](https://docs.microsoft.com/visualstudio/extensibility/writing-to-the-user-settings-store)。  
-  
 使用者設定為可寫入的設定，在像是**工具 / 選項**對話方塊中，屬性 視窗中，然後某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些來儲存少量資料。 本逐步解說示範如何將 「 記事本 」 加入 Visual Studio 是以外部工具讀取和寫入使用者設定存放區。  
   
 ### <a name="backing-up-your-user-settings"></a>備份您的使用者設定  

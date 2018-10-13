@@ -1,7 +1,7 @@
 ---
 title: 擴充的設計方針規則規則集為 managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207814"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充設計方針規則規則集為 managed 程式碼](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code)。  
-  
 若要最大化的可用性和可維護性問題所報告的基本設計方針規則擴充了 Microsoft 擴充設計方針規則規則集。 額外特別強調命名方針。 您應該考慮包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行最高的標準，來撰寫容易維護的程式碼。  
   
  擴充設計方針規則包含所有 Microsoft 基本設計方針規則。 基本設計方針規則包含所有 Microsoft 最小建議規則。 如需詳細資訊，請參閱 < [managed 程式碼的基本設計方針規則規則集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

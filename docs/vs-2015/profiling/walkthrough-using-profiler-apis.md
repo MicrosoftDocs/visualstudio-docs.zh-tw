@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用分析工具 API | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7eb2d4c3acfc8f2a98de1364b1f98aa451abaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172532"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用 Profiler Api](https://docs.microsoft.com/visualstudio/profiling/walkthrough-using-profiler-apis)。  
-  
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
   
  本逐步解說中的步驟一般適用於 C/C++ 應用程式。 針對每一種語言，您必須適當地設定建置環境。  

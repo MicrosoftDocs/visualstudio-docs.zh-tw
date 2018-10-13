@@ -1,7 +1,7 @@
 ---
 title: 定義套件和命名空間 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4d45d5aab1326fd2ee4be0c0b27be5c4ea526a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219410"
 ---
 # <a name="define-packages-and-namespaces"></a>定義套件和命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義套件和命名空間](https://docs.microsoft.com/visualstudio/modeling/define-packages-and-namespaces)。  
-  
 在 Visual Studio 中，*封裝*是 UML 項目，例如類別、 使用案例和元件定義的容器。 套件也可以包含其他套件。  
   
  在 [UML 模型總管] 中，套件內的所有定義都是套件下的巢狀套件。 UML 模型是一種套件，並形成樹狀結構的根目錄。  

@@ -1,7 +1,7 @@
 ---
 title: 擴充使用者設定和選項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84bfc4f7aaf8065fe6776cd0e058c79730674e29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: defc56dc9ebe924a4aee660c1d73072a2c3df7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177628"
 ---
 # <a name="extending-user-settings-and-options"></a>延伸使用者設定和選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Extending User Settings and 選項](https://docs.microsoft.com/visualstudio/extensibility/extending-user-settings-and-options)。  
-  
 在 Visual Studio 中，有兩種主要的方式來維護使用者喜好設定。 **工具 / 選項**頁面可讓使用者設定自己的值為許多不同類型的一般和特定語言的設定。 使用者設定可讓使用者指定一般的 Visual Studio 組態屬性。 更多選項 頁面的詳細資訊，請參閱[選項和選項頁](../extensibility/internals/options-and-options-pages.md)。 如需有關使用者設定的詳細資訊，請參閱[支援的使用者設定](../extensibility/internals/support-for-user-settings.md)。  
   
  [建立選項頁](../extensibility/creating-an-options-page.md)  

@@ -1,7 +1,7 @@
 ---
 title: 結構描述快取 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 429dae6fdcd57da4d1d4db85df15966c20cc2aa5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a60d73463acd094ac92839f15110a7ce9811e39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195165"
 ---
 # <a name="schema-cache"></a>結構描述快取
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[結構描述快取](https://docs.microsoft.com/visualstudio/xml-tools/schema-cache)。  
-  
   
 XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。  
   

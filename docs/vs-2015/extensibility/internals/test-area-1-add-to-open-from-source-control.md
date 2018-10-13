@@ -1,7 +1,7 @@
 ---
 title: 測試區域 1： 從原始檔控制新增至開啟 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06cf33af8d642e9bee5e72306620449458258d43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4a79bc38227728a5881c973ed26baa375d082ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178915"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1： 新增 / 開啟從原始檔控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試區域 1： 從原始檔控制新增至開啟](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-1-add-to-open-from-source-control)。  
-  
 此原始檔控制外掛程式測試區域涵蓋如何將方案或專案原始檔控制之下，並擷取從原始檔控制。  
   
 ## <a name="command-menu-access"></a>命令功能表存取  

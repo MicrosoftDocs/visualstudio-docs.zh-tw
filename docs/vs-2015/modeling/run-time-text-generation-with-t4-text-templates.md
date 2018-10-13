@@ -1,7 +1,7 @@
 ---
 title: 使用 T4 文字範本產生執行階段文字 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214743"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行階段使用 T4 文字範本產生文字](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates)。  
-  
 您也可以使用在您的應用程式在執行階段產生文字字串[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]執行階段文字範本。 執行應用程式的電腦不必具有[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 執行階段範本有時稱為 「 前置處理過的文字範本 」 因為在編譯時期，範本會產生在執行階段執行的程式碼。  
   
  每個範本是文字的混合，因為它會出現在產生的字串，以及的程式碼片段。 程式片段提供值的字串，變動的組件，並控制條件式和重複的組件。  

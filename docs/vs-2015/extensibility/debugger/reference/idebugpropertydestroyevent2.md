@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyDestroyEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03fb25ce69d1d8176fd9788a0d291edaff81e11d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74d44dc0eff15a3cb6aa60c742113811972dd890
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188626"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPropertyDestroyEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpropertydestroyevent2)。  
-  
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 與特定文件相關聯的屬性時即將終結。  
   
 ## <a name="syntax"></a>語法  

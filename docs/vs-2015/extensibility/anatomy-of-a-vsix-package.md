@@ -1,7 +1,7 @@
 ---
 title: VSIX 封裝的結構 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181453"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 套件的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSIX 封裝的結構](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package)。  
-  
 VSIX 封裝是.vsix 檔案，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 會使用分類，並安裝擴充功能的中繼資料。 該中繼資料包含在 VSIX 資訊清單和 [Content_Types].xml 檔案中。 VSIX 封裝也可能包含一或多個 Extension.vsixlangpack 檔，以提供當地語系化的安裝程式文字，而且可能包含其他的 VSIX 套件，以安裝相依項目。  
   
  VSIX 套件格式會遵循開放封裝慣例 (OPC) 標準。 套件包含二進位檔和支援檔案，以及 [Content_Types].xml 檔案和.vsix 資訊清單檔案。 一個 VSIX 封裝可能包含多個專案或甚至是多個套件有自己的資訊清單的輸出。  

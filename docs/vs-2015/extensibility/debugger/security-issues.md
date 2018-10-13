@@ -1,7 +1,7 @@
 ---
 title: 安全性問題 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0459f7e91fbced71dda0bb401ffe056b5cd49f52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219371"
 ---
 # <a name="security-issues"></a>安全性問題
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安全性問題](https://docs.microsoft.com/visualstudio/extensibility/debugger/security-issues)。  
-  
 若要偵錯使用 Visual Studio 的程式，所需的權限僅限於都相同的開發人員必須執行的程式。 這包括大部分的情況下 （牽涉到其他服務，例如網際網路資訊服務，某些情況下可能需要較高層級的權限） 的遠端偵錯。  
   
  當 Visual Studio 執行時，處理序偵錯管理員 (PDM) 會在本機電腦上追蹤偵錯處理序。 遠端電腦上，開發人員來處理遠端偵錯，並提供 PDM 所啟動程式，稱為 msvsmon.exe。 （請注意 msvsmon.exe 並不是服務，而且必須以手動方式啟動，才能啟用該電腦上的遠端偵錯）。當 Visual Studio （或 msvsmon.exe） 未執行時，會追蹤沒有任何處理序偵錯。  

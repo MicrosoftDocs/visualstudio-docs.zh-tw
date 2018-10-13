@@ -1,7 +1,7 @@
 ---
 title: 如何： 逐步執行 WCF 服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b779c8bc2e6da3975f1f70265482c706c9141375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 205dc10829227d2bb2f151687d7b4d4defbe03fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184947"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：逐步執行 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 逐步執行 WCF 服務](https://docs.microsoft.com/visualstudio/debugger/how-to-step-into-wcf-services)。  
-  
 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，您可以逐步執行 WCF 服務。 如果 WCF 服務與用戶端都位於相同的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，您就可以執行到達 WCF 服務內部的中斷點。  
   
  您必須在 app.config 或 Web.config 檔案內啟用偵錯，才能使用逐步執行。 如需如何啟用偵錯並逐步執行 WCF 服務的限制，請參閱 < [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)。  

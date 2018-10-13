@@ -1,7 +1,7 @@
 ---
 title: 將專案升級 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74ec29dbc4aae393d9ee09fa6a9de273369ce7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31f380c7de629a9f0a60d842fce38f0e960158df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177645"
 ---
 # <a name="upgrading-projects"></a>升級專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[升級專案](https://docs.microsoft.com/visualstudio/extensibility/internals/upgrading-projects)。  
-  
 從舊版變更專案模型[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]到下一個可能需要專案和方案，會升級，使它們可以較新版本上執行。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]提供可用來實作您自己的專案中的升級支援的介面。  
   
 ## <a name="upgrade-strategies"></a>升級策略  

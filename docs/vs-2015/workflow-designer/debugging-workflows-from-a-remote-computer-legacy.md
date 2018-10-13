@@ -1,7 +1,7 @@
 ---
 title: 偵錯工作流程，從遠端電腦 （舊版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 458f5d2a8d2be83f465f9b96ac9ff9dd1eca2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b3627b6d62b1f4d237c2f2013d332be56b58fc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191575"
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>從遠端電腦偵錯工作流程 (舊版)
 本主題描述如何偵錯使用舊版 [!INCLUDE[wf](../includes/wf-md.md)] 所建置的遠端舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式。 當您的應用程式需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

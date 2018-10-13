@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetSize |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eca039c28f59997baa3652638aba5039da7e9856
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce78a5dc8e6a2e8d53306aca537a76ee260d8823
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172480"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProperty2::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getsize)。  
-  
 取得大小，以位元組為單位的屬性值。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 56e76bc74470ccc5efda4482435f73344f85224a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03b8892eb78184aab237f926e20bfef59418e532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213612"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[了解 Visual Studio 中的 Xamarin.Forms 應用程式建置基本概念](https://docs.microsoft.com/visualstudio/cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio)。  
-  
   
 在您完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說會示範如何建立 Xamarin.Forms 基本應用程式 (如下所示)。 使用 Xamarin.Forms 時，您可以一次將所有 UI 程式碼寫入可攜式類別庫 (PCL)。 接著，Xamarin 即可針對 iOS、Android 和 Windows 平台自動呈現原生 UI 控制項。 我們建議您使用這種方法：只有使用支援所有目標平台的 .NET API，PCL 選項才能達到最佳支援效果，此外 Xamarin.Forms 亦可讓您跨平台共用 UI 程式碼。  
   

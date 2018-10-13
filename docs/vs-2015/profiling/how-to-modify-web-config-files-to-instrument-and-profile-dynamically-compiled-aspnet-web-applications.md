@@ -1,7 +1,7 @@
 ---
 title: 如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176302"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications)。  
-  
 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。  
   
  本主題說明如何修改 web.config 組態檔，以啟用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的檢測和程式碼剖析。  
@@ -148,7 +146,7 @@ ms.locfileid: "47497433"
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**值**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  加入另一個 **add** 項目做為 **appSettings** 項目的子系。  
   
@@ -157,7 +155,7 @@ ms.locfileid: "47497433"
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**值**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` 是程式碼剖析工具可執行檔的路徑。 如果 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 是安裝到預設位置，則此值將是 **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   

@@ -1,7 +1,7 @@
 ---
 title: 內建函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174482"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[內建函式](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions)。  
-  
 SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用的話)，例如 ++、-- 和函式呼叫在這個內容中全都有副作用。  不過，SAL 提供一些類似的函式物件和一些可以用於 SAL 運算式的保留的符號。 這些指*內建函式*。  
   
 ## <a name="general-purpose"></a>一般用途  
@@ -44,7 +42,7 @@ SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用�
 |`_Inexpressible_(expr)`|表示緩衝區的大小太複雜而無法使用註釋運算式表示的情況，例如，透過掃描輸入資料集，然後計算所選取成員的方式計算。|  
 |`_Nullterm_length_(param)`|`param` 已達緩衝區，但不包括 null 結束字元的項目數。 您可能會套用至任何非彙總、 非 void 類型的緩衝區。|  
 |`_Old_(expr)`|在前置條件下進行評估時，`_Old_` 會傳回輸入值 `expr`。  在後置條件下進行評估時，它會傳回值 `expr`，因為它已在前置條件下進行評估。|  
-|`_Param_(n)`|`n`個參數的函式，從 1 到計算`n`，和`n`是常值的整數常數。 如果參數的名稱，就有一個此註解等同於依名稱存取的參數。 **注意︰** `n`可能會參考省略符號，定義，或可用函式原型中不使用名稱的位置參數。  |  
+|`_Param_(n)`|`n`個參數的函式，從 1 到計算`n`，和`n`是常值的整數常數。 如果參數的名稱，就有一個此註解等同於依名稱存取的參數。 **注意︰** `n`可能會參考省略符號，定義，或可用函式原型中不使用名稱的位置參數。|  
 |`return`|C/c + + 保留關鍵字`return`可以用於 SAL 運算式來表示函式的傳回值。  值只能在後置狀態下使用，因此在前置狀態下使用就是語法錯誤。|  
   
 ## <a name="string-specific"></a>特定的字串  

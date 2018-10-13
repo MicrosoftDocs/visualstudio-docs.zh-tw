@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::EnumProcesses |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5535bf60c9faad84bc146dca9d2af5324ba953b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e299ef6c9ed185dc1ba8e525700b2c643a3345d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216250"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPort2::EnumProcesses](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-enumprocesses)。  
-  
 傳回一份連接埠上執行的所有處理程序。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: Creating an Extension with 功能表命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c042dc1793add386cd91c66659ad7fd703e5580d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174625"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立具有功能表命令的擴充](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-menu-command)。  
-  
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
   
 ## <a name="prerequisites"></a>必要條件  

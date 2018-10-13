@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的方案和專案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211142"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中方案和專案](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio)。  
-  
 當您在 Visual Studio 中建立 App、應用程式、網站、Web 應用程式、指令碼、外掛程式等項目時，您必須開始一個「專案」 。 在邏輯方面而言，專案包含所有原始程式碼檔案、圖示、影像、資料檔案以及其他會編譯到可執行程式或網站的項目，或是執行編譯所需的項目。  專案也包含所有編譯器設定與其他組態檔，這些是您的程式將與其通訊的各種服務或元件所需的項目。  
   
  就字面上的意義而言，專案是 XML 檔案 (*.vbproj、\*.csproj、\*.vcxproj)，它定義虛擬資料夾階層，以及其中包含之所有項目的路徑與所有建置設定。 在 Visual Studio 中，[方案總管] 會使用專案檔來顯示專案內容與設定。 當您編譯專案時，MSBuild 引擎會使用專案檔來建立可執行檔。 您也可以自訂專案來產生其他類型的輸出。  

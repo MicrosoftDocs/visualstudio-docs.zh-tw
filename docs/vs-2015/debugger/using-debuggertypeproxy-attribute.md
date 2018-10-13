@@ -1,7 +1,7 @@
 ---
 title: 使用 DebuggerTypeProxy 屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa4b5d363366f61b9001a3ac7f476804c0c2de19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0014ec8677cf8b437780ab23fdd521f3ec5f938
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196310"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 DebuggerTypeProxy 屬性](https://docs.microsoft.com/visualstudio/debugger/using-debuggertypeproxy-attribute)。  
-  
 DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & c e autoUpgrade = True) 會指定 proxy，或偵錯工具視窗中顯示的替代品，並且變更類型的方式。 當您檢視有 proxy 的變數時，proxy 會替代中的原始型別**顯示**。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。  
   
  這個屬性可以套用至：  
@@ -62,7 +60,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  `Namespace.TypeName<,>`  
   
- 如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷類型參數。  
+ 如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。  
   
  如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，區段 20.5.2 開啟和封閉類型。  
   

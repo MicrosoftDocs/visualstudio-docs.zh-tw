@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中驗證中斷點 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3fbfd2ca8ec3377d8c7d97e38fb4669a2d2042b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2739bfd8807552653e7bb302e5e5efad2835529b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216836"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務中的 驗證中斷點](https://docs.microsoft.com/visualstudio/extensibility/internals/validating-breakpoints-in-a-legacy-language-service)。  
-  
 中斷點會指出以偵錯工具正在執行時，應該在特定時間點停止程式執行。 使用者可以將中斷點放在原始程式檔，任何行，因為編輯器並不知道什麼可替代中斷點的有效位置。 啟動偵錯工具時，所有標記的中斷點 （稱為暫止中斷點） 繫結至執行中的程式中的適當位置。 在相同的時間驗證中斷點，以確保它們可以將有效的程式碼位置來標示。 例如，註解上的中斷點無效，因為在原始程式碼中該位置沒有程式碼。 偵錯工具會停用無效的中斷點。  
   
  語言服務知道所顯示的原始程式碼，因為它可以在偵錯工具啟動前驗證中斷點。 您可以覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法來傳回指定中斷點的有效位置的範圍。 仍在啟動偵錯工具時，但是無效的中斷點會通知使用者而不需等待偵錯工具載入時，會驗證中斷點位置。  

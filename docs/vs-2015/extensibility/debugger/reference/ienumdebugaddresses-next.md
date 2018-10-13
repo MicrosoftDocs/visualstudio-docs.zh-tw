@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::Next |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11dba9c16b8f97c2ec9a1620ca8fd004833c6028
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd662333bb6bc8ac2f7ce04cae0a871fdc6ca661
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190979"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugAddresses::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-next)。  
-  
 這個方法會傳回下的一個項目集的列舉型別。  
   
 ## <a name="syntax"></a>語法  

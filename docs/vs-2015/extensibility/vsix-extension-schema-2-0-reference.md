@@ -1,7 +1,7 @@
 ---
 title: VSIX 延伸結構描述 2.0 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 420f2bfff3a379eab818e2313953769b4c26f009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181203"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸模組結構描述 2.0 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSIX 延伸結構描述 2.0 參考](https://docs.microsoft.com/visualstudio/extensibility/vsix-extension-schema-2-0-reference)。  
-  
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。  
   
 > [!IMPORTANT]
@@ -47,7 +45,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Assets>` -本章節包含的所有包含此套件中的資產。 本節中，沒有此套件不會出現任何內容。  
   
--   `<AnyElement>*` -資訊清單的結構描述是有足夠的彈性，以允許任何其他項目。 資訊清單的載入器無法辨識的任何子項目會擴充管理員 API 中公開為額外的 XmlElement 物件。 使用這些子元素，VSIX 擴充功能可以在 Visual Studio 中執行的程式碼可以存取在執行階段之資訊清單檔案中定義其他資料。 請參閱<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A>和<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
+-   `<AnyElement>*` -資訊清單的結構描述是有足夠的彈性，以允許任何其他項目。 資訊清單的載入器無法辨識的任何子項目會擴充管理員 API 中公開為額外的 XmlElement 物件。 使用這些子元素，VSIX 擴充功能可以在 Visual Studio 中執行的程式碼可以存取在執行階段之資訊清單檔案中定義其他資料。 請參閱 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
   
 ### <a name="metadata-element"></a>中繼資料元素  
  本節是封裝、 其身分識別，以及廣告資訊的相關中繼資料。 `<Metadata>` 包含下列元素：  

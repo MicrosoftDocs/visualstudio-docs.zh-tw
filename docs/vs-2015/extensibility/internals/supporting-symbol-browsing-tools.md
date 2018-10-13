@@ -1,7 +1,7 @@
 ---
 title: 支援符號瀏覽工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c406cdf7b975e37522bccc0d45687593b1a35ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187313"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[支援符號瀏覽工具](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools)。  
-  
 **物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**並**尋找符號結果**工具提供符號瀏覽 Visual Studio 中的功能。 這些工具顯示的符號的階層式樹狀結構檢視，並顯示在樹狀目錄中的符號之間的關聯性。 符號可能代表命名空間、 物件、 類別、 類別成員和各種元件中包含其他語言項目。 這些元件包括 Visual Studio 專案中，外部[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]元件和型別 (.tlb) 程式庫。 如需詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。  
   
 ## <a name="symbol-browsing-libraries"></a>符號瀏覽程式庫  

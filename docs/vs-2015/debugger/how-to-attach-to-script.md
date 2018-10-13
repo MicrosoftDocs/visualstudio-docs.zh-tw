@@ -1,7 +1,7 @@
 ---
 title: 如何： 附加至指令碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18f9ec77b990113cc039142f6bfe51058d532408
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209686"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加至指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 附加至指令碼](https://docs.microsoft.com/visualstudio/debugger/how-to-attach-to-script)。  
-  
 這個主題說明如何以手動方式將 Visual Studio 偵錯工具附加至指令碼檔以便進行偵錯。  
   
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  

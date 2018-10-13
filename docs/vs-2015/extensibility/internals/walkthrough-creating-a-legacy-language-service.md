@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 建立舊版語言服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6097177f1287b96914ccb872afa952e5fe3f4682
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 996806b1a15d6e7b45204a954c58b153e33a4be4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220047"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 建立舊版語言服務](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-creating-a-legacy-language-service)。  
-  
 使用 managed 的封裝架構 (MPF) 語言類別實作中的語言服務[!INCLUDE[csprcs](../../includes/csprcs-md.md)]很簡單。 您需要 VSPackage 也可以裝載語言服務、 語言服務本身，以及您的語言剖析器。  
   
 ## <a name="prerequisites"></a>必要條件  

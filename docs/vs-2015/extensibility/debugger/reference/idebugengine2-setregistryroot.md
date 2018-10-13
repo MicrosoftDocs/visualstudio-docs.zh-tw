@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetRegistryRoot |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bb1eef7f2cc3b43e5771f96094db58a20490677
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 36d65fb11ea27e44b4680f7e5a23e1427a6abeee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210687"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngine2::SetRegistryRoot](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-setregistryroot)。  
-  
 設定偵錯引擎 (DE) 的登錄根目錄。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 建立原始檔控制外掛程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9e9687459759e6b04938adfc8695322288f48d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 963e721c2718b3b7cc4786f7a5dd3d5cde38910c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197063"
 ---
 # <a name="creating-a-source-control-plug-in"></a>建立原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立原始檔控制外掛程式](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-a-source-control-plug-in)。  
-  
 Visual Studio SDK 提供的資源，可讓您將加入原始檔控制項功能，以[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 它可讓您使用這份文件中所述的原始檔控制外掛程式 API 使用任何符合的外掛程式 DLL。  
   
 ## <a name="in-this-section"></a>本節內容  

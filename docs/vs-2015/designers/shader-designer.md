@@ -1,7 +1,7 @@
 ---
 title: 著色器設計工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182790"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[著色器設計工具](https://docs.microsoft.com/visualstudio/designers/shader-designer)。  
-  
 本文件說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具來建立、修改和匯出稱為「著色器」的自訂視覺效果。  
   
  即使您不知道 HLSL 程式設計，也能使用著色器設計工具建立遊戲或應用程式的自訂視覺效果。 若要在著色器設計工具中建立著色器，只要配置為圖形即可；也就是說，您要加入代表資料和作業的設計介面「節點」，然後彼此連接以定義作業如何處理資料。 在每個作業節點，提供到該點為止的效果預覽，讓您將結果視覺化。 朝最後節點流經各節點的資料，代表著色器的輸出。  

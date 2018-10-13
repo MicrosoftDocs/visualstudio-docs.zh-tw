@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPortSuppliers2::GetCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce7eee0713d2b9b425ff2f8d3f7925e736bb3e12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47a8582a69ca508bde1527cc074c9e1096461974
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186539"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugPortSuppliers2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugportsuppliers2-getcount)。  
-  
 列舉中傳回的項目數。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 在模型圖上定義功能表命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193150"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在模型圖上定義功能表命令](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram)。  
-  
 在 Visual Studio 中，您可以定義 UML 圖表之捷徑功能表上的額外功能表項目。 您可以控制是否在圖表上任何項目的捷徑功能表上顯示和啟用功能表命令，而且您可以撰寫在使用者選擇功能表項目時所執行的程式碼。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -72,7 +70,7 @@ ms.locfileid: "47588732"
   
     |參考資料|這可讓您執行|  
     |---------------|--------------------------------|  
-    |System.ComponentModel.Composition|定義所使用的元件[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。|  
+    |System.ComponentModel.Composition|使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定義元件。|  
     |Microsoft.VisualStudio.Uml.Interfaces|讀取和變更模型項目的屬性。|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|建立模型項目、修改圖表上的圖形。|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|定義模型事件處理常式。<br /><br /> 將一系列的變更封裝至您的模型。 如需詳細資訊，請參閱 <<c0> [ 藉由使用異動連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。|  
@@ -223,15 +221,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
+     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
   
     -   您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。  
   
-    -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定中的字串**啟動外部程式**欄位是完整路徑名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常是：  
+    -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟或建立模型專案，並開啟或建立模型圖表。 使用圖表，而圖表屬於功能表命令類別之屬性中所列的其中一種類型。  
+2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。 使用圖表，而圖表屬於功能表命令類別之屬性中所列的其中一種類型。  
   
 3.  開啟圖表上任何位置的捷徑功能表。 您的命令應該會出現在功能表中。  
   
@@ -246,7 +244,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
     -   您正在使用的模型圖類型 (UML 類別、順序等) 會列為下列其中一個功能表命令類別屬性： `[ClassDesignerExtension]`、 `[SequenceDesignerExtension]` 等。  
   
 ##  <a name="Installing"></a> 安裝及解除安裝擴充功能  
- 您可以在自己的電腦和其他電腦上都安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
+ 您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
   
 #### <a name="to-install-an-extension"></a>安裝擴充功能  
   
@@ -279,7 +277,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
  *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="MenuExample"></a> 範例  
- 下列範例顯示功能表命令的程式碼，以在類別圖表上交換兩個項目的名稱。 此程式碼必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能專案中進行建置和安裝 (如先前章節所述)。  
+ 下列範例顯示功能表命令的程式碼，以在類別圖表上交換兩個項目的名稱。 這段程式碼必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能專案中進行建置和安裝 (如先前章節所述)。  
   
 ```  
 using System.Collections.Generic; // for IEnumerable  

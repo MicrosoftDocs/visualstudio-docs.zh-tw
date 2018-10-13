@@ -1,7 +1,7 @@
 ---
 title: Managed Extensibility Framework，在編輯器中的 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c27b710e6d01c6aa378b00ef4c3b40afb12b14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215666"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯器中的 Managed Extensibility Framework](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)。  
-  
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建置。 您可以建置自己的 MEF 元件來擴充編輯器 中，和您的程式碼可以使用編輯器元件以及。  
   
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Managed 的 Extensibility Framework 概觀  

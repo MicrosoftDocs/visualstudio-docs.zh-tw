@@ -1,7 +1,7 @@
 ---
 title: 如何：手動建立網站範本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d84a71d54f178574e7aba719f4189b35312ec03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220866"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：以手動方式建立網站範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 手動建立網站範本](https://docs.microsoft.com/visualstudio/ide/how-to-manually-create-web-templates)。  
-  
 建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。  
   
 > [!NOTE]

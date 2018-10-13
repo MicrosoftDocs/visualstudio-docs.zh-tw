@@ -1,7 +1,7 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d80e08a198b954e4530e7c39b2741eb955552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176693"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 工作](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)。  
-  
   
 組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
   

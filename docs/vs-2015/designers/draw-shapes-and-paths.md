@@ -1,7 +1,7 @@
 ---
 title: 繪製圖形與路徑 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188184"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[繪製圖案與路徑](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths)。  
-  
 在 XAML 設計工具中， *「圖形」* (Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。  
   
  圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)。  

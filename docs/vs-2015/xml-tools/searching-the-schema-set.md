@@ -1,7 +1,7 @@
 ---
 title: 搜尋結構描述集合 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6ce05cbaf203649ce62d13285f7304c04be6497
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204200"
 ---
 # <a name="searching-the-schema-set"></a>搜尋結構描述集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[搜尋結構描述集](https://docs.microsoft.com/visualstudio/xml-tools/searching-the-schema-set)。  
-  
   
 XML 結構描述總管可讓您以下列方式搜尋結構描述集：  
   

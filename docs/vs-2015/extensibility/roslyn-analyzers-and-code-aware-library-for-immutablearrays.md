@@ -1,7 +1,7 @@
 ---
 title: Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173351"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用於 ImmutableArray 的 Roslyn 分析器和程式碼感知程式庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays)。  
-  
 [.NET 編譯器平台](https://github.com/dotnet/roslyn)("Roslyn") 可協助您建置程式碼感知程式庫。  程式碼感知程式庫會提供您可以使用的功能和工具 （Roslyn 分析器），可協助您使用程式庫，以最佳方式，或避免發生錯誤。  本主題說明如何建置來攔截最常見錯誤時使用的真實世界 Roslyn 分析器[NIB： 不可變集合](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet 套件。  此範例也會示範如何提供分析器所找到的程式碼問題的程式碼修正。  使用者會看到 Visual Studio 燈泡 UI 中的程式碼修正，並可以自動套用修正程式碼。  
   
 ## <a name="getting-started"></a>快速入門  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasectioncontrib:: Get_length |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe7eb1a654190603d84e62ff79c92936806c0e4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25765d8238464d599833462561d35ff105ce5de0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207359"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasectioncontrib:: Get_length](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-length)。  
-  
 擷取區段中的位元組的數目。  
   
 ## <a name="syntax"></a>語法  

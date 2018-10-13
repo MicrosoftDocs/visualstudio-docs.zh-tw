@@ -1,7 +1,7 @@
 ---
 title: 使用使用者介面自動化來測試您的程式碼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 92668aad54a032ccdbda2242ffcd132b356ea331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f98a3b2883f4b0e6e3ade0c0ca8f39f4d7efdf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221724"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 UI 自動化來測試程式碼](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code)。  
-  
 驅動應用程式通過其使用者介面 (UI) 的自動化測試稱為「自動程式化 UI 測試」(CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。  
   
  如下圖所示，一般的開發體驗可能是一開始您只是建置應用程式 (F5) 並按一下 UI 控制項確認所有項目都正確運作。 然後，您可能決定建立自動程式碼測試，因此不需要繼續手動測試應用程式。 根據您應用程式中測試的特定功能，您可以撰寫程式碼來進行功能測試或者也許包括 UI 層級測試的整合測試。 如果您只想要直接存取某個商務邏輯，則可以編寫單元測試。 不過，在特定情況下，也可能對測試您應用程式中的各種 UI 控制項有所助益。 自動程式化 UI 測試可以自動化初始 (F5) 情節，確認程式碼變換不會影響您應用程式的功能。  
@@ -500,7 +498,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [升級 Visual Studio 2010 的自動程式化 UI 測試](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
- [從現有的動作記錄產生自動程式化 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+ [從現有的動作記錄產生自動程式碼 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
 
 
 

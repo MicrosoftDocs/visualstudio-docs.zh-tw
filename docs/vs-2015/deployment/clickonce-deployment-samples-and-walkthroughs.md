@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 部署範例和逐步解說 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7d83d296ff0d5a8578f75487e6bb1863eb33e993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207216"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 部署範例和逐步解說](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)。  
-  
 本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和技術來部署 Windows Form、 WPF 和主控台應用程式。  
   
  範例程式碼是為了提供指示，，因此不應用於已部署的解決方案，而不需要修改。 特別是，安全性必須納入大於的考量。  

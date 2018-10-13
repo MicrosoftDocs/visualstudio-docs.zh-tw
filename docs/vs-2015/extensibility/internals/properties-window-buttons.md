@@ -1,7 +1,7 @@
 ---
 title: 屬性視窗的按鈕 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176796"
 ---
 # <a name="properties-window-buttons"></a>屬性視窗的按鈕
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性視窗的按鈕](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons)。  
-  
 根據開發語言和產品類型，顯示特定按鈕的工具列上的預設**屬性**視窗。 在所有情況下，**分類**， **Alphabetized**，**屬性**，以及**屬性頁**顯示按鈕。 在 Visual C# 和 Visual Basic**事件**按鈕也會顯示。 在特定 Visual c + + 專案中， **VC + + 訊息**並**VC 會覆寫**顯示按鈕。 其他按鈕可能會顯示其他專案類型。 如需中的按鈕**屬性** 視窗中，請參閱[屬性 視窗](../../ide/reference/properties-window.md)。  
   
 ## <a name="implementation-of-properties-window-buttons"></a>實作的屬性視窗的按鈕  

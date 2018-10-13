@@ -1,7 +1,7 @@
 ---
 title: 使用工作流程設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 74e193af384d91816dc2e26d11194d1632d8672b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124df9e4f4728af8621685a3c285b50bf064f14a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184141"
 ---
 # <a name="using-the-workflow-designer"></a>使用工作流程設計工具
 本節詳述如何使用內建的設計工具，以及多個活動設計工具裝載的運算式編輯器，建立新的活動與工作流程專案。  

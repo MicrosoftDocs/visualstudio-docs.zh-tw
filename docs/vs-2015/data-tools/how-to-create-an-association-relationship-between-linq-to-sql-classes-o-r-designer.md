@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立 LINQ to SQL 類別 （O-R 設計工具） 之間的關聯 （關聯性） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,25 +12,23 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14b60094150467aeda7641d018e06db15e7bda03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209361"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯 （關聯性）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立 LINQ to SQL 類別 （O-R 設計工具） 之間的關聯 （關聯性）](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer)。  
-  
   
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以建立使用的實體類別之間的關聯**關聯編輯器** 對話方塊。  
   
  您使用時必須選取父類別和子類別**關聯編輯器**對話方塊，即可建立關聯。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 例如，如果要建立與 Northwind 的 Customers 和 Orders 資料表對應的實體類別，則 Customer 類別會是父類別，而 Order 類別會是子類別。  
   
 > [!NOTE]
->  當您將資料表從**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，會自動建立根據現有的關聯在資料庫中的外部索引鍵關聯性。  
+>  當您將資料表從**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)]([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，會自動建立根據現有的關聯在資料庫中的外部索引鍵關聯性。  
   
  當您在 O/R 設計工具中選取的關聯時，會建立關聯之後，有一些可設定的屬性，在**屬性**視窗。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。  
   

@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制 VSPackage 架構 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190459"
 ---
 # <a name="source-control-vspackage-architecture"></a>原始檔控制 VSPackage 架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制 VSPackage 架構](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture)。  
-  
 原始檔控制封裝是使用 VSPackage 的服務會[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 所提供。 原始檔控制套件提供原始檔控制服務的功能。 此外，原始檔控制封裝是一個更靈活的替代方式，比原始檔控制整合到原始檔控制外掛程式[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
  原始檔控制外掛程式實作原始檔控制外掛程式 API 會遵守嚴格的合約。 比方說，外掛程式無法取代預設[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用者介面 (UI)。 此外，原始檔控制外掛程式 API 不會啟用外掛程式，以實作自己的原始檔控制模型。 不過，原始檔控制封裝，克服了這兩個這些限制。 原始檔控制封裝具有完整控制權的原始檔控制體驗[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用者。 此外，原始檔控制封裝可使用它自己的原始檔控制模型和邏輯，而且它可以定義所有原始檔控制相關的使用者介面。  

@@ -1,7 +1,7 @@
 ---
 title: 如何解除鎖定 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1da2baf294035563da3f4bf2b915cc02b8496a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198857"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解除鎖定 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何解除鎖定 Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio)。  
-  
 您最多可以免費評估 Visual Studio 30 天。 當您登入 IDE 時，您可以將試用期延長 90 天。 若要繼續使用 Visual Studio，您可以透過下列方式解除鎖定 IDE：  
   
 1.  使用線上訂閱。  

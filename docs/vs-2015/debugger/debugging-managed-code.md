@@ -1,7 +1,7 @@
 ---
 title: 偵錯 Managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211584"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 Managed 程式碼](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code)。  
-  
 本節針對 Managed 應用程式或是以 Common Language Runtime 為目標的程式語言 (例如 Visual Basic、C# 和 C++) 所撰寫的應用程式，說明常見的偵錯問題和技術。 本文所說明的技術屬於高階技術。 如需詳細資訊，請參閱 <<c0> [ 使用偵錯工具](../debugger/debugger-basics.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
@@ -56,7 +54,7 @@ ms.locfileid: "47499659"
  [偵錯 OnStart 方法](../debugger/how-to-debug-the-onstart-method.md)  
  提供程式碼範例，讓您可以偵錯 Managed Windows 服務的 `OnStart` 方法。 若要偵錯 Windows 服務的 `OnStart` 方法，您必須加入幾行程式碼模擬該服務。  
   
- [混合模式偵錯](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  說明偵錯混合模式應用程式的方法。 也就是結合機器碼和 Managed 程式碼的任何應用程式。  
   
  [錯誤：無法進行偵錯，系統中已啟動核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  

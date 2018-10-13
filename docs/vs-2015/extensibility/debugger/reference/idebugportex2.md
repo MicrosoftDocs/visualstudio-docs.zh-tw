@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEx2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091cad434d4674e568afa5cf09eb05d8cb729735
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8036061f51a63079b43f04abe64564ed141fee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212814"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortEx2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportex2)。  
-  
 此介面可讓偵錯管理員 (SDM) 控制項，程式和連接埠上執行的處理序的工作階段。  
   
 ## <a name="syntax"></a>語法  

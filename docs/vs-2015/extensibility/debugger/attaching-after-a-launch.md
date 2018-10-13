@@ -1,7 +1,7 @@
 ---
 title: 在啟動後附加 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874d9034abed93ab504730c628833d4d60f02452
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddc66b7037c05458062a87eb8ddd757e32c91590
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193852"
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[附加之後啟動](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-after-a-launch)。  
-  
 已啟動程式後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。  
   
 ## <a name="design-decisions"></a>設計決策  
