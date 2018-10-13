@@ -1,7 +1,7 @@
 ---
 title: 程式碼度量值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7b14dd65be49fdc6f7da8de6c605683dd7089410
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0c22a6659105a3d00f5c73cd880a33d357e216e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183452"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼度量值](https://docs.microsoft.com/visualstudio/code-quality/code-metrics-values)。  
-  
 程式碼度量資訊是一組軟體測量數據，可以讓開發人員更深入了解他們正在開發的程式碼。 利用程式碼度量，開發人員可以了解哪些類型和/或方法應該修改或進行更徹底的測試。 開發團隊可以找出潛在的風險、 了解專案的目前狀態和追蹤軟體開發過程的進度。  
   
 ## <a name="software-measurements"></a>軟體的度量  

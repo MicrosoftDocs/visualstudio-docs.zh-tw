@@ -1,7 +1,7 @@
 ---
 title: IDebugEnumField::GetUnderlyingSymbol |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 986032f7c4a3c26b361aab9b10e17e3b9045a49f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61278472b1436cb48e4b022da984a1f8b1276d73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180761"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEnumField::GetUnderlyingSymbol](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol)。  
-  
 這個方法會傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示列舉型別的名稱。  
   
 ## <a name="syntax"></a>語法  

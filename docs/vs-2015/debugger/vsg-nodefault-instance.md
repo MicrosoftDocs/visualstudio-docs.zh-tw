@@ -1,7 +1,7 @@
 ---
 title: VSG_NODEFAULT_INSTANCE |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fad6992daf5e8175089ba8f24a4189ad1957ba7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e582c8093b08c6b23b428415edade7db4ac22b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178829"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSG_NODEFAULT_INSTANCE](https://docs.microsoft.com/visualstudio/debugger/graphics/vsg-nodefault-instance)。  
-  
 預設執行個體是否定義出現[VsgDbg 類別](../debugger/vsgdbg-class.md)類別，以提供的程式設計擷取介面 — 提供。  
   
 ## <a name="syntax"></a>語法  

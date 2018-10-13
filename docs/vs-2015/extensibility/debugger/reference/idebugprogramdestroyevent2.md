@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550c48b7d234cb2cf4afe8d2e4f3b3d9e69f791e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8789236d620877e377a67e3ec435b0be135d870f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177316"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramDestroyEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramdestroyevent2)。  
-  
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 當程式執行到完成。  
   
 ## <a name="syntax"></a>語法  

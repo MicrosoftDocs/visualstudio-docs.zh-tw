@@ -1,7 +1,7 @@
 ---
 title: 自訂及擴充特定領域語言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180683"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂及擴充特定領域語言](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language)。  
-  
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：  
   
 1.  定義特定領域語言 (DSL) 使用 DSL 定義圖。 您可以使用圖表標記法、 可讀取的 XML 格式和產生程式碼和其他成品所需的基本工具，快速建立 DSL。  
