@@ -1,7 +1,7 @@
 ---
 title: 使用 CRT 程式庫尋找記憶體遺漏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198077"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 CRT 尋找記憶體流失的程式庫](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library)。  
-  
 記憶體流失 (定義是無法正確解除配置先前配置的記憶體) 是 C/C++ 應用程式中最不易察覺和難以偵測的錯誤之一。 一開始可能只有少許記憶體流失而未察覺，但隨著時間經過，累積的記憶體流失可能愈來愈多而造成一些症狀，包括應用程式效能降低，甚至是因記憶體不足而沒有反應。 情況更嚴重者，發生記憶體流失的應用程式會因為耗盡所有可用的記憶體而造成其他應用程式也沒有反應，以致於難以判斷到底哪一個應用程式才是禍首。 即使看似無害的記憶體流失也可能是其他問題的根源，而應該解決。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具和 C 執行階段 (CRT) 程式庫提供一種偵測和辨識記憶體流失的方法。  

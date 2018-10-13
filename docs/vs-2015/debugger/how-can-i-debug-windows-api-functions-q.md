@@ -1,7 +1,7 @@
 ---
 title: 如何偵錯 Windows API 函式？ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6b0f06ddaadef8f462b59c9f445a0ae02d0123e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09885a056f075a771fd034830ce15a516d2520f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176703"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何才能偵錯 Windows API 函式？](https://docs.microsoft.com/visualstudio/debugger/how-can-i-debug-windows-api-functions-q)。  
-  
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。  
   
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>若要在含載入之 NT 符號的 Windows API 函式上設定中斷點  

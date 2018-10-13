@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定 Visual Studio 複製檔案的位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 52f19317bbfad963dd5bc4dc3e540640f9234c12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188652"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 複製檔案的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定 Visual Studio 複製檔案的位置](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-where-visual-studio-copies-the-files)。  
-  
 當您使用 ClickOnce 發行應用程式時，`Publish Location`屬性會指定放置應用程式檔案和資訊清單的位置。 這可以是檔案路徑或 FTP 伺服器的路徑。  
   
  您可以指定`Publish Location`上的屬性**發佈**頁面**專案設計工具**，或使用 [發行精靈]。 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  

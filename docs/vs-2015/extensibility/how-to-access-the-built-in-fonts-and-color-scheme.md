@@ -1,7 +1,7 @@
 ---
 title: 如何： 存取的內建的字型和色彩配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bde4bb7bf0e6fc9b5dafdc444507e985a756c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178694"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 存取的內建的字型和色彩配置](https://docs.microsoft.com/visualstudio/extensibility/how-to-access-the-built-in-fonts-and-color-scheme)。  
-  
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。  
   
  若要使用的內建的字型和色彩配置，VSPackage 必須：  

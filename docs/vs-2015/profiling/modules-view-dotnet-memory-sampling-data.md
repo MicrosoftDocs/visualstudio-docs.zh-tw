@@ -1,7 +1,7 @@
 ---
 title: 模組檢視 - .NET 記憶體取樣資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185380"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[模組檢視-.NET 記憶體取樣資料](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data)。  
-  
 使用取樣方法收集的 .NET 記憶體檢測資料模組檢視，會將記憶體資料依據分析執行中所執行的模組來分類。 每個模組都是階層式樹狀結構的根。 模組的函式列在模組節點之下。  
   
  配置記憶體之陳述式的原始程式檔行號會列在函式節點下，且執行配置之指示的位址會列在行節點下。 程式行資料和指令資料的內含與專屬值一律相同。  

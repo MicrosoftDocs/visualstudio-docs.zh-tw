@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的 Android 模擬器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ed701537501c5acfe77d9d3469dbcc64208c85a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196377"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio Emulator for Android](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-emulator-for-android)。  
-  
   
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。  
   

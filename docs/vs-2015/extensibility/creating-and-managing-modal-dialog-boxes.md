@@ -1,7 +1,7 @@
 ---
 title: 建立和管理強制回應對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49db22686481abd824b94178c854d681a1373db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177251"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>建立和管理強制回應對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立和管理強制回應對話方塊](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。  
-  
 當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤:"Microsoft Visual Studio 由於無法關閉強制回應對話方塊正在使用中。 關閉使用中的對話方塊，然後再試一次。 」  
   
  有兩種執行此動作。 建議的方式，如果您有 [WPF] 對話方塊中，是從它衍生出來<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然後呼叫<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>顯示對話方塊。 如果您這麼做，您不需要管理父視窗的強制回應狀態。  

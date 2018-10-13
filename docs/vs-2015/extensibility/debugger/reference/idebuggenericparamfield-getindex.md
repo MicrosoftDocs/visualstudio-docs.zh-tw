@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetIndex |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1866d75ec2a9cd78edfbbd31395a9c773ce69fc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd4874e338118a912ba4288cb0dd2c5489ed67b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180020"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugGenericParamField::GetIndex](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericparamfield-getindex)。  
-  
 擷取此泛型參數的索引。  
   
 ## <a name="syntax"></a>語法  

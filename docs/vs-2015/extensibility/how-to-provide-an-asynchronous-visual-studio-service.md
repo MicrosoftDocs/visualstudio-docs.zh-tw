@@ -1,7 +1,7 @@
 ---
 title: 如何： 提供非同步的 Visual Studio 服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a58d249c68a0b28158edb92428d1470973cc094
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185663"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供非同步的 Visual Studio 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 提供非同步的 Visual Studio 服務](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-an-asynchronous-visual-studio-service)。  
-  
 如果您想要取得服務，而不會封鎖 UI 執行緒，您應該建立非同步的服務，並在背景執行緒上的將封裝載入。 基於此目的，您可以使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務  
   
  提供同步的 Visual Studio 服務的相關資訊，請參閱[如何： 提供服務](../extensibility/how-to-provide-a-service.md)。  

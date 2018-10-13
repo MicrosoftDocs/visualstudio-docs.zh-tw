@@ -1,7 +1,7 @@
 ---
 title: 編輯器匯入 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171871"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯器匯入](https://docs.microsoft.com/visualstudio/extensibility/editor-imports)。  
-  
 您可以匯入幾個的編輯器服務、 處理站和代理程式，為您的擴充功能提供核心編輯器的不同類型的存取。 例如，您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>提供您<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>指定的內容類型。 （這個巡覽可讓您執行不同種類的搜尋文字的緩衝區上）。  
   
  若要使用的編輯器匯入，您它匯入為欄位或屬性的匯出 Managed Extensibility Framework 元件組件的類別。  

@@ -1,7 +1,7 @@
 ---
 title: 步驟 4：新增 CheckTheAnswer() 方法 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9aa6c85776606c45590521113c322f9709cd561
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf3f58e9d597af067db9e5d3037a78572a1528ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181105"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 4： 新增 checktheanswer （） 方法](https://docs.microsoft.com/visualstudio/ide/step-4-add-the-checktheanswer-parens-method)。  
-  
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 > [!NOTE]
