@@ -1,7 +1,7 @@
 ---
 title: 選擇 ClickOnce 更新策略 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a4db43fd289aab969ec2d4c4031cdfbe1a3a18ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191343"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選擇 ClickOnce 更新策略](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-update-strategy)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以提供應用程式自動更新。 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式會定期讀取它的部署資訊清單檔，以查看是否有可用的應用程式的更新。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。  
   
  設計 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，您必須決定應用程式要使用哪一種策略來查看可用的更新。 您有三種基本的策略可以使用：在應用程式啟動時檢查更新、在應用程式啟動後檢查更新 (在背景執行緒中執行)，或提供更新的使用者介面。  

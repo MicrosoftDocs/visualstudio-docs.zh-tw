@@ -1,7 +1,7 @@
 ---
 title: 在模擬器中的執行 Windows 市集應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190719"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在模擬器中的執行 Windows 市集應用程式](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator)。  
-  
 Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程式，可以模擬 Windows 市集應用程式。 您可以在開發電腦上執行應用程式，並模擬常見的觸控和旋轉事件。 您也可以選擇要模擬的實體螢幕大小和解析度，以及模擬網路連接屬性。  
   
  模擬器為您提供設計、開發、偵錯與測試 Windows 市集應用程式的環境。 不過，在您將應用程式發行至 Windows 市集之前，請先在實際裝置上測試您的應用程式。  
@@ -104,7 +102,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
  螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉換為已選取裝置大小和解析度的座標。  
   
 > [!NOTE]
->  您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 <<c0> [ 回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
+>  您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 擷取應用程式的螢幕擷取畫面以提交至 Windows 市集  
  當您提交應用程式至 Windows 應用程式市集時，必須包含該應用程式的螢幕擷取畫面。  
@@ -119,9 +117,9 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
      ![螢幕擷取畫面設定操作功能表](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性  
- 您可以藉由維護網路連接成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) Api 可讓您回應[NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx)並[TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx)登入的事件。 請參閱 [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 您可以藉由維護網路連接成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 可讓您回應簽署的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
- 若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過公開的網路內容[ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx)所傳回的物件[Connectionprofile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ 若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 傳回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)物件所公開之網路屬性。  
   
  若要模擬網路屬性：  
   
@@ -131,15 +129,15 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
      清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
   
-3.  為模擬的網路輸入 [ **設定檔名稱** ]。 我們建議使用唯一的名稱可用來識別此模擬中的[ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx)屬性[ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx)物件。  
+3.  為模擬的網路輸入 [ **設定檔名稱** ]。 建議您使用不重複的名稱，以便在 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 物件的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 屬性中，能識別此模擬。  
   
-4.  選取  [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx)值的設定檔**網路成本類型**清單。  
+4.  從 [網路成本類型] [](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 清單中，為設定檔選取 **NetworkCostType** 值。  
   
-5.  從**的資料限制狀態旗標** 清單中，您可以設定[ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx)屬性或有[OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)屬性設為 true，或者您也可以選擇**低於資料限制**將這兩個值設定為 false。  
+5.  從 [資料限制狀態旗標]  清單中，可以將 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 屬性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)屬性設定為 true，也可以選擇 [低於資料限制]  ，將兩個值皆設定為 false。  
   
-6.  從**漫遊狀態**清單中，設定[漫遊](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx)屬性。  
+6.  從 [漫遊狀態]  清單，設定 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 屬性。  
   
-7.  選擇**設定屬性**來模擬網路屬性，透過觸發前景[NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx)事件和背景[Networkstatechange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx)型別的**Systemtrigger**。  
+7.  選擇 [設定屬性]  ，透過觸發前景 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 類型的背景 **SystemTrigger**來模擬網路屬性。  
   
  **管理網路連接的詳細資訊**  
   

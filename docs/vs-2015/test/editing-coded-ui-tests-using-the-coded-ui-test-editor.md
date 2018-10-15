@@ -1,7 +1,7 @@
 ---
 title: 使用自動程式碼 UI 測試編輯器來編輯自動程式碼 UI 測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2d43cef0a6603b1085306a64bb385a520f2b5637
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242719"
 ---
-# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式碼 UI 測試編輯器，編輯自動程式碼 UI 測試
+# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用自動程式化 UI 測試編輯器編輯自動程式化 UI 測試](https://docs.microsoft.com/visualstudio/test/editing-coded-ui-tests-using-the-coded-ui-test-editor)。  
-  
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。  
   
  **需求**  
@@ -82,7 +80,7 @@ ms.locfileid: "47489262"
   
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。  
   
- 例如，是否伺服器無法使用，而且您有與您的 Web 瀏覽器相關聯 UI 動作，說明**移至網頁 'http://Contoso1/default.aspx'**，您可以將 URL 變更為`‘ http://Contoso2/default.aspx’`。  
+ 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `‘ http://Contoso2/default.aspx’`。  
   
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 編輯控制項屬性  

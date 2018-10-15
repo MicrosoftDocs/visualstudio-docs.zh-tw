@@ -1,7 +1,7 @@
 ---
 title: DA0023：高 GC CPU 時間 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cdb5e3ea9e01e6444cf05709138984091c36a6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 999b82029893e3c27eeb7648e601c1b403e1213f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209725"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0023： 高 GC CPU 時間](https://docs.microsoft.com/visualstudio/profiling/da0023-high-gc-cpu-time)。  
-  
 規則 Id |DA0023 |  
 |類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  

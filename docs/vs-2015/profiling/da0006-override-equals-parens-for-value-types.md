@@ -1,7 +1,7 @@
 ---
 title: DA0006：覆寫實值型別的 Equals() | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4e7535775946c99d6b176f36ca10288a8bc9da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2e09783d5961172033a82e8be8285d9398992ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285411"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0006： 覆寫 equals （) 實值型別](https://docs.microsoft.com/visualstudio/profiling/da0006-override-equals-parens-for-value-types)。  
-  
 規則 Id |DA0006 |  
 |類別目錄 |.NET Framework 使用方式 |  
 |分析方法 |取樣 |  

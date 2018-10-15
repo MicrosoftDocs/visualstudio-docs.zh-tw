@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 和應用程式設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176972"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 和應用程式設定](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings)。  
-  
 Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件會描述應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何移轉設定，當使用者升級至下一個版本。  
   
  下列資訊僅適用於預設應用程式設定提供者，<xref:System.Configuration.LocalFileSettingsProvider>類別。 如果您提供自訂提供者時，它會儲存其資料的方式，以及如何升級設定版本之間，會決定該提供者。 如需有關應用程式設定提供者的詳細資訊，請參閱 <<c0> [ 應用程式設定架構](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)。  
