@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用建置或發行管理進行自動化測試
+title: 使用建置或發行管理進行自動化的測試
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320614"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135595"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build and Release Management 而非 Lab Management 進行自動化測試
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 而非 Lab Management 進行自動化測試
 
 如果您使用 Microsoft Test Manager (MTM) 和 Lab Management 進行自動化測試，或建置-部署-測試自動化，本主題會說明如何使用 Team Foundation Server (TFS) 和 Azure Test Plans 中的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能來達到相同的目標。
 
@@ -64,7 +64,7 @@ MTM 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測
 | 連接到電腦。 | 在環境檢視器中開啟實驗室環境。 | 直接使用 SCVMM 管理主控台連線至虛擬機器。 或者，使用虛擬機器的 IP 位址或 DNS 名稱，開啟遠端桌面工作階段。 |
 | 接受環境檢查點，或將環境還原到乾淨的檢查點。 | 在環境檢視器中開啟實驗室環境。 選取接受檢查點的選項，或還原到上一個檢查點。 | 直接使用 SCVMM 管理主控台，在虛擬機器上執行這些作業。 或者，將這些步驟執行為大型自動化過程的一部分，包括在版本定義中屬於環境的 [SCVMM 整合延伸模組](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)檢查點工作。 |
 
-## <a name="creation-of-network-isolated-environments"></a>建立網路隔離環境
+## <a name="create-network-isolated-environments"></a>建立網路隔離環境
 
 網路隔離的實驗室環境是可以安全複製，卻不會造成網路衝突的 SCVMM 虛擬機器群組。 在 MTM 中使用一連串指示即可完成這項作業：使用一組網路介面卡在私人網路中設定虛擬機器，然後用另一組網路介面卡在公用網路中設定虛擬機器。
 
