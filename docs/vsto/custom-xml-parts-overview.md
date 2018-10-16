@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670823"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324999"
 ---
 # <a name="custom-xml-parts-overview"></a>自訂 XML 組件概觀
   您可以將 XML 資料嵌入某些 Microsoft Office 應用程式的文件中。 當您將 XML 資料嵌入文件時，該資料就稱為*自訂 XML 組件*。  
@@ -76,7 +76,7 @@ ms.locfileid: "35670823"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>修改 XML 組件，但不會啟動 Office 應用程式  
  您可以在未啟動 Excel、PowerPoint 或 Word 的情況下，加入或修改自訂 XML 組件。 如果您想要在尚未安裝 Microsoft Office 應用程式的電腦 (例如伺服器) 上處理文件中的 XML 資料，則這種做法會很實用。  
   
- 若要在不啟動 Microsoft Office 的情況下加入自訂 XML 組件，請使用 Open XML SDK 中的類別。 這些類別是專為存取 Office 文件特有的 Open XML 內容而設計。 例如，若要將自訂 XML 組件新增至 Excel 活頁簿中，您使用[AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a)方法[Addnewpart<t>](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2)物件。 如需詳細資訊，請參閱 < [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab)。  
+ 若要在不啟動 Microsoft Office 的情況下加入自訂 XML 組件，請使用 Open XML SDK 中的類別。 這些類別是專為存取 Office 文件特有的 Open XML 內容而設計。 例如，若要將自訂 XML 組件新增至 Excel 活頁簿中，您使用[AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx)方法[Addnewpart<t>](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx)物件。 如需詳細資訊，請參閱 < [Open XML SDK](/office/open-xml/open-xml-sdk)。  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>將自訂 XML 組件繫結至 Word 內容控制項  
  您可以將 Word 方案中的內容控制項繫結至自訂 XML 組件中的項目。 當內容控制項繫結至自訂 XML 組件時，自訂 XML 組件中的資料會顯示在內容控制項的使用者介面 (UI) 中。 如果使用者編輯控制項中的文字，對應的 XML 項目就會自動更新。 同樣地，如果自訂 XML 組件中的項目值變更，繫結至該 XML 項目的內容控制項就會顯示新的資料。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)。  
