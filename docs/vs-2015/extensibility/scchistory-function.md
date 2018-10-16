@@ -1,7 +1,7 @@
 ---
 title: SccHistory 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3a01e3d854b2527a38595509699aa94a222a9ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b1301fd8103abe1d4f616938e1370121baf0de0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181638"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccHistory 函式](https://docs.microsoft.com/visualstudio/extensibility/scchistory-function)。  
-  
 此函式會顯示指定的檔案歷程記錄。  
   
 ## <a name="syntax"></a>語法  

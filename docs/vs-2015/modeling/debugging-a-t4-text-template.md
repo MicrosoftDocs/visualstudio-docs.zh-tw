@@ -1,7 +1,7 @@
 ---
 title: 偵錯 T4 文字範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298905"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 T4 文字範本](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template)。  
-  
 您可以在文字範本中設定中斷點。 若要偵錯設計階段文字範本，請儲存文字範本檔案，，然後選擇**偵錯 T4 範本**快顯功能表的 [方案總管] 中的檔案。 若要偵錯執行階段文字範本，只是偵錯它所屬的應用程式。  
   
  若要偵錯文字範本，您應該了解範本轉換程序的步驟。 不同類型的錯誤會發生在每個步驟。 步驟如下所示。  

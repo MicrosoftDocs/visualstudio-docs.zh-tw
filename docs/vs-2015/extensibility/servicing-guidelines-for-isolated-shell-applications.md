@@ -1,7 +1,7 @@
 ---
 title: 服務的指導方針獨立模式 Shell 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208386"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Isolated 的 Shell 應用程式的服務方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[獨立 Shell 應用程式服務方針](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications)。  
-  
 當您發佈 Visual Studio isolated shell 應用程式時，您必須能夠在安裝之後，您的應用程式提供軟體更新。 若要這樣做，您必須使用 Microsoft Installer (MSI) 檔案來安裝您的應用程式。 這種安裝可讓 Microsoft 可轉散發 web 所提供的軟體更新下載，並由您的客戶不需要自訂的介入。  
   
 ## <a name="servicing-requirements"></a>服務的需求  

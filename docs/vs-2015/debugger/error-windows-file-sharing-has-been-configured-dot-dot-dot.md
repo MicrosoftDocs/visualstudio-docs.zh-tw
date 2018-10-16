@@ -1,7 +1,7 @@
 ---
 title: 錯誤： Windows 檔案共用已設定...|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fc4d3fb02b1c7c9d5003f82fbe42be73c93d6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 579234bd705975876e9adebd4a784f0af6c01375
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298209"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[錯誤： Windows 檔案共用已設定...](https://docs.microsoft.com/visualstudio/debugger/error-windows-file-sharing-has-been-configured-dot-dot-dot).  
-  
 已設定 Windows 檔案共用，這樣您將使用不同的使用者名稱連接到遠端電腦。 這與遠端偵錯不相容  
   
  目前的檔案共用組態已設定為使用不同的使用者名稱連接到遠端電腦。 在此案例中無法使用遠端偵錯。  

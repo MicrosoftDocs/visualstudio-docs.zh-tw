@@ -1,7 +1,7 @@
 ---
 title: 如何： 從 XML 結構描述產生的 XML 程式碼片段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2583513acde49736358c9a1df97af74c950ad51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210732"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 產生的 XML 程式碼片段從 XML 結構描述](https://docs.microsoft.com/visualstudio/xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema)。  
-  
   
 XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案且定位在項目名稱旁邊時，可以按 TAB 鍵，將從該項目之結構描述資訊產生的 XML 資料填入項目。  
   

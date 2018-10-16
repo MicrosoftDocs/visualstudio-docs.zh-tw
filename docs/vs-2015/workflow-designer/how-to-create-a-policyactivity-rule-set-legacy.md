@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立 PolicyActivity 規則集 （舊版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e0ecab43d582f0901374fd5b1807c54bc8fcf03c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194619"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>HOW TO：建立 PolicyActivity 規則集 (舊版)
 本主題描述當使用以 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 時，如何建立原則活動規則集。  

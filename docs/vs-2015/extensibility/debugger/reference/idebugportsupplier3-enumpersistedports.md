@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier3::EnumPersistedPorts |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f821c72259a77618c6cd83fe6df84837e21a6db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d77f11665fdca0b3fa75cbf93c9ab28c76f5044d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210728"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortSupplier3::EnumPersistedPorts](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier3-enumpersistedports)。  
-  
 這個方法會擷取物件，可讓持續性的連接埠清單的列舉型別。  
   
 ## <a name="syntax"></a>語法  

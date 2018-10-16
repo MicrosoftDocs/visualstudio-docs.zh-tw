@@ -1,7 +1,7 @@
 ---
 title: 如何︰設定權限 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187539"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 設定權限](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions)。  
-  
 本主題說明電腦的系統管理員如何將程式碼剖析所需的安全性權限，授與在該電腦上沒有系統管理員權限的使用者或群組。  
   
  基本的安全性原則就是，應用程式應該以不超過所需的權限來執行。 此原則也適用於使用者。 如果使用者不必是 Administrators 群組的成員，只要登入身分是 Users 群組的成員就可以正常工作，那麼就不應該授與他們系統管理員權限。 第一個程序，「建立具有使用者權限的使用者」，說明如何建立身分為 Users 群組成員的使用者帳號。  

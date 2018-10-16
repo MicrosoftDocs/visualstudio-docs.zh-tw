@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 使用文字範本產生程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229368"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用文字範本產生的程式碼](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates)。  
-  
 程式碼產生可讓您產生強類型的程式碼，而且可以在來源模型變更時輕鬆地進行變更。 這與撰寫可接受組態檔的完全泛型程式的替代技術相反，它更具彈性，但不容易讀取和變更程式碼，也不會有這樣的良好效能。 本逐步解說示範這項優點。  
   
 ## <a name="typed-code-for-reading-xml"></a>讀取 XML 的類型程式碼  

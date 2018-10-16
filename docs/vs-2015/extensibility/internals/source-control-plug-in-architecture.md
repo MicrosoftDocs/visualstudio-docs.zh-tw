@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制外掛程式架構 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282343"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制外掛程式架構](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture)。  
-  
 您可以加入至原始檔控制支援[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由實作和附加的原始檔控制外掛程式的整合式的開發環境 (IDE)。 IDE 會連接到原始檔控制外掛程式，透過定義完善的原始檔控制外掛程式 API。 IDE 會提供工具列和功能表命令所組成的使用者介面 (UI)，以顯示原始檔控制系統的版本控制功能。 原始檔控制外掛程式會實作原始檔控制功能。  
   
 ## <a name="source-control-plug-in-resources"></a>原始檔控制外掛程式資源  

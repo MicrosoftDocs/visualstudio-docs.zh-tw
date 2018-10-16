@@ -1,7 +1,7 @@
 ---
 title: 偵錯工具專案設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5530d4cbdbb4f9a28f7b6b92dd487d598349019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2336002552c2fa0772941d4812914b4756ebd40b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195555"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯工具專案設定](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings)。  
-  
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。  
   
  本節說明可以使用的選項，以及設定這些選項的方式。  
@@ -58,7 +56,7 @@ ms.locfileid: "47488346"
  在 [ **屬性頁** ] 對話方塊中，列出 Web 專案可用的屬性。  
   
  [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- 列出中可用的屬性**屬性頁**對話方塊的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]專案。  
+ 在 [ **屬性頁** ] 對話方塊中，列出 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案可用的屬性。  
   
 ## <a name="related-sections"></a>相關章節  
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

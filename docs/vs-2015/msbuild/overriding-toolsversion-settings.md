@@ -1,7 +1,7 @@
 ---
 title: 覆寫 ToolsVersion 設定 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 243c85e6b342cbe1bf922b20420034050f94f193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a4e3485b09780490a9d589766eeed85e6b84e28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277715"
 ---
 # <a name="overriding-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[覆寫 ToolsVersion 設定](https://docs.microsoft.com/visualstudio/msbuild/overriding-toolsversion-settings)。  
-  
   
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  
   

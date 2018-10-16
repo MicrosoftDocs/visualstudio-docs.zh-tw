@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpointResolution2::GetBreakpointType |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 401a111c2fe184c10756a75363745ee72161a0bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591b7ac6601a26f402320d24743d90e8e61b6bf2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263037"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugErrorBreakpointResolution2::GetBreakpointType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype)。  
-  
 取得中斷點類型。  
   
 ## <a name="syntax"></a>語法  

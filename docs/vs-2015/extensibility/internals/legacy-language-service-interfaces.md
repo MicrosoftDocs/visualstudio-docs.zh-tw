@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務介面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249206"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務介面](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces)。  
-  
 針對任何特定的程式設計語言，可以有只有一個執行個體的語言服務一次。 不過，單一語言服務可以提供多個編輯器。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 不會將語言服務關聯與任何特定的編輯器。 因此，當您要求的語言服務作業時，您必須做為參數來識別適當的編輯器。  

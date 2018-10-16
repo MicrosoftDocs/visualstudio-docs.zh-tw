@@ -1,7 +1,7 @@
 ---
 title: 在 WPF 應用程式中顯示相關的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4068bcbf3ead7114013b93f02a784d682e5b4d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174137"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF 應用程式中顯示相關的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WPF 應用程式中顯示相關的資料](https://docs.microsoft.com/visualstudio/data-tools/display-related-data-in-wpf-applications)。  
-  
   
 在某些應用程式中，您可能想要使用來自多個資料表或在父子式關聯性彼此相關的實體的資料。 例如，您可能想要顯示一個方格，其中會顯示從客戶`Customers`資料表。 當使用者選取特定的客戶時，另一部的方格會顯示該客戶的相關訂單`Orders`資料表。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令列將分析工具附加至 .NET 服務以收集記憶體資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f380d84e5dd662008e233b7c7854d44d9b1e270
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 91f0568c2ed300a65b4506d4b9f7d62459ad7247
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306679"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用命令列附加至.NET 服務以收集記憶體資料的 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  
   
 > [!NOTE]

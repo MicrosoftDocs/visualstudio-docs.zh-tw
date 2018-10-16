@@ -1,7 +1,7 @@
 ---
 title: 將控制項繫結至圖片從資料庫 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,24 +26,22 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab997b01c0155b48cb9dd3033e5bbfd4724d7ba6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189497"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫將控制項繫結至圖片
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[控制項繫結至圖片從資料庫](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-pictures-from-a-database)。  
-  
   
 您可以使用**Zdroje dat**視窗，以在資料庫中的影像繫結至您的應用程式中的控制項。 比方說，您可以繫結至映像<xref:System.Windows.Controls.Image>控制 WPF 應用程式中，或為<xref:System.Windows.Forms.PictureBox>Windows Forms 應用程式中的控制項。  
   
  在資料庫中的圖片，通常會儲存為位元組陣列。 中的項目**資料來源**會儲存為位元組陣列有輸入其控制項的視窗設**無**預設情況下，因為位元組陣列可以包含簡單的可執行檔的位元組陣列中的任何項目大型的應用程式。 若要建立資料繫結控制項中的位元組陣列項目的**Zdroje dat**代表影像的視窗中，您必須選取要建立的控制項。  
   
- 下列程序假設**Zdroje dat**視窗已填入項目繫結至您的映像。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料庫中的資料](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+ 下列程序假設**Zdroje dat**視窗已填入項目繫結至您的映像。 如需詳細資訊，請參閱 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
   
 ### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>在資料庫中將圖片繫結至控制項  
   

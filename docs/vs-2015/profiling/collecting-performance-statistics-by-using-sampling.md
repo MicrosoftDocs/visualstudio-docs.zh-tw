@@ -1,7 +1,7 @@
 ---
 title: 使用取樣收集效能統計資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223689"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[藉由使用取樣收集效能統計資料](https://docs.microsoft.com/visualstudio/profiling/collecting-performance-statistics-by-using-sampling)。  
-  
 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具的取樣方法預設會收集每 10,000,000 個處理器循環 (在 1 GHz 電腦上大約是每隔百分之一秒) 的分析資訊。 取樣方法可用來尋找處理器使用率的問題，建議用來調查大多數效能問題。  
   
  **需求**  

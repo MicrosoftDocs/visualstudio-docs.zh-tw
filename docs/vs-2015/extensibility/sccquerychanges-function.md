@@ -1,7 +1,7 @@
 ---
 title: SccQueryChanges 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95f1e5a21ba74779080c601acd42d5deedb75d7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18ca895c991e94e8525593e6651824aa61a37ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227990"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccQueryChanges 函式](https://docs.microsoft.com/visualstudio/extensibility/sccquerychanges-function)。  
-  
 此函式會列舉指定的檔案，提供透過回呼函式的每個檔案的名稱變更的相關資訊清單。  
   
 ## <a name="syntax"></a>語法  

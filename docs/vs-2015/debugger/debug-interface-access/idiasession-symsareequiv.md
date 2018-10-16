@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Symsareequiv |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08b091bfca65c2713f822e50a2bcacb5ac3df587
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 936097cf16e8f933cda2289cb0b6131eb0e8a3c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266002"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasession:: Symsareequiv](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-symsareequiv)。  
-  
 檢查兩個符號是否相等。  
   
 ## <a name="syntax"></a>語法  

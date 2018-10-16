@@ -1,7 +1,7 @@
 ---
 title: 如何：選擇取樣事件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228409"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 選擇取樣事件](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events)。  
-  
 根據預設，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具收集效能資料的間隔，是分析程序使用的處理器週期數。 一個間隔的預設週期數是 10,000,000，在 1 GH 電腦上約為 0.01 秒。 您可以變更間隔中的週期數，而且可以變更取樣事件。 下列是可用的取樣事件︰  
   
 -   時脈週期 - 針對 CPU-bound 問題。  

@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::Attach |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6bd544b6805d7000263124a971f4e2a75ae7e95f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dccdd97d6f287eb8e7791017dae534c9067f181
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281888"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcessEx2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocessex2-attach)。  
-  
 這個方法會通知程序工作階段現在正在偵錯程序。  
   
 ## <a name="syntax"></a>語法  

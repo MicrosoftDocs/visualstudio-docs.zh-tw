@@ -1,7 +1,7 @@
 ---
 title: '錯誤: Kerberos 驗證失敗，|Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed475ecf2ac0bd62dd710832540d599cb367aedc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1fbea1d9279bb85c82a534873941f74ac7586e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293198"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： Kerberos 驗證失敗](https://docs.microsoft.com/visualstudio/debugger/error-kerberos-authentication-failed)。  
-  
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：  
   
 ```  
@@ -71,7 +69,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

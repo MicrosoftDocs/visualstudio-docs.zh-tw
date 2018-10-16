@@ -1,7 +1,7 @@
 ---
 title: DA0002：遺漏 VSPerfCorProf.dll | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c43143fae898b5a8177d4710bd335e2b8919f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86f4738d72cc386e6285dfa96a7f42e906a9a5cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242485"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：遺漏 VSPerfCorProf.dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0002： 遺漏 VSPerfCorProf.dll](https://docs.microsoft.com/visualstudio/profiling/da0002-vsperfcorprof-dll-is-missing)。  
-  
 規則 Id |DA0002 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |使用 VSPerfCmd 和 VSPerfASPNETCmd 命令列工具進行分析 |  

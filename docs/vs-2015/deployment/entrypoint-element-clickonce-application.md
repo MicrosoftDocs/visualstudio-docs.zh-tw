@@ -1,7 +1,7 @@
 ---
 title: '&lt;entryPoint&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255307"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;entryPoint&gt;項目 （ClickOnce 應用程式）](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application)。  
-  
 識別應該是組件時執行這[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]用戶端電腦上執行應用程式。  
   
 ## <a name="syntax"></a>語法  
@@ -61,15 +59,15 @@ ms.locfileid: "47499406"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `entryPoint` 為必要元素，位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 只能有一個`entryPoint`應用程式資訊清單中所定義的項目。  
+ `entryPoint` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 只能有一個`entryPoint`應用程式資訊清單中所定義的項目。  
   
- `entryPoint`項目具有下列屬性。  
+ `entryPoint` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`name`|選擇性。 此值不使用.NET Framework。|  
   
- `entryPoint`具有下列項目。  
+ `entryPoint` 具有下列項目。  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  必要。 所扮演的角色`assemblyIdentity`和其屬性定義於[\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
@@ -122,7 +120,7 @@ ms.locfileid: "47499406"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

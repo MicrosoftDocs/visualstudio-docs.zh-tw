@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_isaggregated |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 072158226e31c80839f5734adf384a65308c67a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a85131308e4a798b5f849d6ce0f7c1de54dae37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285391"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_isaggregated](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isaggregated)。  
-  
 擷取指定資料符號是否為彙總或符號; 集合的一部分的旗標編譯器會視為個別的實體的彙總的符號，但它們其實是單一的較大符號的一部分。  
   
 ## <a name="syntax"></a>語法  

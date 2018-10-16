@@ -1,7 +1,7 @@
 ---
 title: 什麼是 Visual Studio 2015 中偵錯工具的新功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188613"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Visual Studio 2015 中偵錯工具的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[What's New for 偵錯工具](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio)。  
-  
 如需 Visual Studio 2015 Update 1 偵錯和診斷之全部新功能的詳細資訊，請參閱 [Visual Studio 2015 Update 1 版本資訊](https://www.visualstudio.com/news/vs2015-update1-vs#debug)。  
   
  如需 Visual Studio 2015 RTM 偵錯和診斷之全部新功能的詳細資訊，請參閱 [Visual Studio 2015 版本資訊](https://www.visualstudio.com/news/vs2015-vs#debug)。  
@@ -43,7 +41,7 @@ ms.locfileid: "47588904"
 ## <a name="visual-studio-2015-update-1-changes"></a>Visual Studio 2015 Update 1 的變更  
  C++ [編輯及繼續] 支援更多功能。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。  
   
- 為偵錯 Visual C++ 存取違規，新的例外狀況對話方塊會指定造成例外狀況的指標。 如需詳細資訊，請參閱[如何 Debug an Access Violation？](../debugger/how-can-i-debug-an-access-violation-q.md)和[Visual Studio 2015 Update 1 偵錯 c + + 存取違規改良](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ 為偵錯 Visual C++ 存取違規，新的例外狀況對話方塊會指定造成例外狀況的指標。 如需詳細資訊，請參閱 [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) 和 [Visual Studio 2015 Update 1 中的偵錯 C++ 存取違規改良](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Visual Studio 2015 RTM 偵錯工具 UI 和熱鍵的變更  
  在 [例外狀況] 和 [中斷點]  UI 中有幾項重大 UI 變更。  

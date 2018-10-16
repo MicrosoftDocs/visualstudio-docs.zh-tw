@@ -1,7 +1,7 @@
 ---
 title: 如何：指定要啟動的二進位檔 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec65dd3a5bcc812ff2f7c42ae4cbbba6080664db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95539f978121dd5fb366776321498d33ac1ee92a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490966"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194333"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定要啟動的二進位檔](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-the-binary-to-start)。  
-  
 若要剖析二進位檔 (如 DLL)，您必須在 [\<目標> 屬性頁] 對話方塊中輸入資訊。 這項資訊會指示 DLL 專案可以在何處找到呼叫的應用程式。  
   
  **需求**  

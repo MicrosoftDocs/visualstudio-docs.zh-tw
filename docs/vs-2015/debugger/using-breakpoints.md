@@ -1,14 +1,14 @@
 ---
 title: 使用中斷點 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304885"
 ---
 # <a name="using-breakpoints"></a>使用中斷點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[使用中斷點](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)。 
-
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。
   
 ##  <a name="BKMK_Overview"></a> 在原始程式碼中設定函式中斷點  
@@ -175,7 +172,7 @@ ms.locfileid: "47491740"
  這個條件可以是偵錯工具所能辨識的任何有效運算式。 如需有效運算式的詳細資訊，請參閱 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在中斷點條件中使用物件 ID (C# 和 F#)  
- 有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C# 和 F # 中，您可以建立的特定執行個體的物件識別碼[參考的型別](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47)在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
+ 有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C# 和 F# 中，您可以針對 [參考類型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定執行個體建立物件 ID，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
   
 1.  當物件已建立一段時間之後，於程式碼中設定中斷點。  
   

@@ -1,7 +1,7 @@
 ---
 title: 了解組建組態 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304131"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[了解組建組態](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations)。  
-  
 您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，依序選擇 [建置]、[組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。  
   
 > [!NOTE]

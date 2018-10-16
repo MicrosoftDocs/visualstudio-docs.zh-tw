@@ -1,7 +1,7 @@
 ---
 title: 工作撰寫 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab2b612ec64cfb2f818d40181d3e89e0c77ac058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254887"
 ---
 # <a name="task-writing"></a>工作撰寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[工作撰寫](https://docs.microsoft.com/visualstudio/msbuild/task-writing)。  
-  
   
 提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的工作程式庫詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   

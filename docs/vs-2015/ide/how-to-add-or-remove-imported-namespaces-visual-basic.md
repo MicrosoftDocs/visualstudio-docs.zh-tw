@@ -1,7 +1,7 @@
 ---
 title: 如何：新增或移除匯入的命名空間 (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70f5187300c3c7d661055f78911bdedb926fdc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196390"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：加入或移除匯入的命名空間 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 加入或移除已匯入命名空間 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-imported-namespaces-visual-basic)。  
-  
 匯入命名空間可讓您在程式碼中使用該命名空間中的項目，而不需要完全符合項目。 例如，如果您想要存取 `System.Messaging.MessageQueue` 類別中的 `Create` 方法，則可以匯入 `System.Messaging` 命名空間，而且只將程式碼中您需要的項目參照為 `MessageQueue.Create`。  
   
  匯入的命名空間是在 [專案設計工具] 的 [參考] 頁面上進行管理。 您在此對話方塊中所指定的匯入會直接傳遞至編譯器 (`/imports`)，並套用至您專案中的所有檔案。 使用 `Imports` 陳述式，以在單一原始程式碼檔中使用命名空間。  

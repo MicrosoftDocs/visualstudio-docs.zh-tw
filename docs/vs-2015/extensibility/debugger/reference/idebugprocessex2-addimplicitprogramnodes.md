@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::AddImplicitProgramNodes |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2552731cf9150e4e86a7ef4bf6d927aaac33cc7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34c533a2bc20e0e32c981208ce95917ec9e6473e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297020"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcessEx2::AddImplicitProgramNodes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes)。  
-  
 這個方法會將每個偵錯引擎 (DE) 指定的程式 節點。  
   
 ## <a name="syntax"></a>語法  

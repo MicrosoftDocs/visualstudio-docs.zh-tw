@@ -1,7 +1,7 @@
 ---
 title: C + + 判斷提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267681"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[C/c + + 判斷提示](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions)。  
-  
 判斷提示陳述式會指定您預期要在程式中的某一點，則為 true 的條件。 如果該條件不成立，判斷提示失敗，將會中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。  
   
  Visual c + + 支援下列建構為基礎的判斷提示陳述式：  

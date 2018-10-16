@@ -1,14 +1,14 @@
 ---
 title: Format Specifiers in c + + |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -33,19 +33,17 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d495fff6848a8d62be5a4471ee6a036cf9054fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249817"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[c + + 中的格式規範](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp)。  
-  
-您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。  
+您可以使用格式規範變更在 [監看式]  視窗中顯示值的格式。  
   
  您也可以在 [即時運算]  視窗、[命令]  視窗，甚至來源視窗中使用格式規範。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip (資料提示方塊)。 DataTip 顯示會反映格式規範。  
   

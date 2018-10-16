@@ -1,7 +1,7 @@
 ---
 title: 命令旗標項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bec5b38550209764bf4b770fef96735235ec3819
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e1e5f4c5bf236ec1c38f6a0a5314eb278a59f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272190"
 ---
 # <a name="command-flag-element"></a>Command Flag 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Command Flag 元素](https://docs.microsoft.com/visualstudio/extensibility/command-flag-element)。  
-  
 修改其父項目。  
   
 ## <a name="syntax"></a>語法  

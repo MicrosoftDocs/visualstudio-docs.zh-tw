@@ -1,7 +1,7 @@
 ---
 title: 並行視覺化檢視命令列公用程式 (CVCollectionCmd) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8b872cf09a4b8ead730f13335fa8e2b7db43186a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262323"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[並行視覺化檢視命令列公用程式 (CVCollectionCmd)](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd)。  
-  
 您可以使用並行視覺化檢視命令列公用程式 (CVCollectionCmd.exe) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
   
 > [!NOTE]

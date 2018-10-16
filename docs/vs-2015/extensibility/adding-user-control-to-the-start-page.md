@@ -1,7 +1,7 @@
 ---
 title: 將使用者控制項加入至起始頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259983"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[新增至 [入門] 頁面的使用者控制項](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page)。  
-  
 本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 範例會將使用者控制項加入方案中，建置使用者控制項，然後參考起始頁.xaml 檔建置的組件。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。  
   
  您可以使用相同的程序加入任何可以呼叫從.xaml 檔案的組件。  

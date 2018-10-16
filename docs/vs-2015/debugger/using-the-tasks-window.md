@@ -1,7 +1,7 @@
 ---
 title: 使用工作視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226196"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 [工作] 視窗](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window)。  
-  
 **任務**視窗類似於**執行緒**視窗中，差別在於前者顯示的資訊關於<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 請參閱[JavaScript （Windows 市集應用程式） 中的非同步程式設計](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。  
   
  在 managed 程式碼，您可以使用**工作**當您使用的視窗<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件或使用**await**並**非同步**關鍵字 (**Await**並**非同步**在 visual Basic 中)。 如需在 managed 程式碼中的工作的詳細資訊，請參閱[平行程式設計](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)。  

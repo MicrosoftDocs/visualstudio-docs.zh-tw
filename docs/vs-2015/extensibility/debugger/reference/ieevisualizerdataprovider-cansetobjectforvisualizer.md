@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::CanSetObjectForVisualizer |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78755870d1ca224b882ed944a5670d537b298602
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce20a254f0db65dc93d54af5fc8ecc49f926532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300647"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEEVisualizerDataProvider::CanSetObjectForVisualizer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer)。  
-  
 這個方法會判斷是否視覺化檢視可以更新它所代表的資料物件。  
   
 ## <a name="syntax"></a>語法  

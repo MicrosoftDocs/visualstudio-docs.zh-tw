@@ -1,7 +1,7 @@
 ---
 title: 命令設計 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252458"
 ---
 # <a name="command-design"></a>命令設計
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令設計](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design)。  
-  
 當您將命令加入 VSPackage 時，您必須指定所要出現，時，它的方式處理。  
   
 ## <a name="defining-commands"></a>定義命令  
- 若要定義新的命令，Visual Studio Command Table (.vsct) 檔案在專案中包含 VSPackage。 如果您已經使用 Visual Studio Package 範本建立 VSPackage，專案會包含其中一個檔案。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+ 若要定義新的命令，Visual Studio Command Table (.vsct) 檔案在專案中包含 VSPackage。 如果您已經使用 Visual Studio Package 範本建立 VSPackage，專案會包含其中一個檔案。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
  Visual Studio 合併所有.vsct 檔案中找到，讓它可以顯示的命令。 因為這些檔案是二進位 VSPackage 有所區別，所以 Visual Studio 並沒有載入的封裝，若要尋找的命令。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   

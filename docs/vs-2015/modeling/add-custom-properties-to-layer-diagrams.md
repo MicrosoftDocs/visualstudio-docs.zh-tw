@@ -1,7 +1,7 @@
 ---
 title: 將自訂屬性加入分層圖 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235153"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>將自訂屬性加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將自訂屬性加入至相依性圖表](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams)。  
-  
 當您撰寫分層圖的延伸模組程式碼時，可以在分層圖上儲存任何項目的值。 當分層圖儲存並重新開啟時，值會保存下來。 您也可以讓這些屬性會出現在**屬性**視窗，讓使用者能夠查看和編輯它們。 例如，您可以讓使用者為每個圖層指定規則運算式，並且撰寫驗證程式碼驗證每個圖層中類別的名稱符合使用者指定的模式。  
   
 ## <a name="properties-not-visible-to-the-user"></a>使用者看不見的屬性  

@@ -1,7 +1,7 @@
 ---
 title: WizardExtension 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b8a9a788fb2c229791e0ca099e307e6279fd3e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72b701b0b44071ad792fa2da744dc766092331db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276155"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WizardExtension 項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。  
-  
 包含自訂範本精靈 的註冊項目。  
   
  \<VSTemplate >  

@@ -1,7 +1,7 @@
 ---
 title: Dia2dump.cpp 原始程式檔 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 084095c8f116e998205a69cc8a1996bc974b0cfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847d0396a3c3703cbc039808c48eb8ebffcdc37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204811"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Dia2dump.cpp 原始程式檔
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Dia2dump.cpp 原始程式檔](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-cpp-source-file)。  
-  
 下列的 Dia2dump.cpp 原始碼顯示.pdb 檔案的內容。 使用此原始程式碼[Dia2dump 範例](../../debugger/debug-interface-access/dia2dump-sample.md)。  
   
 ```  

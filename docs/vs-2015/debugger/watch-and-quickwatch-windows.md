@@ -1,7 +1,7 @@
 ---
 title: 監看式及快速監看式 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173624"
 ---
 # <a name="watch-and-quickwatch-windows"></a>監看式及快速監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 中的變數設定監看式](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows)。  
-  
 您可以使用**監看式**(**偵錯 / Windows / 監看式 / 監看 （1、 2、 3、 4）**) 和**快速監看式**(以滑鼠右鍵按一下變數 /**偵錯 / 快速監看式**) 要監看變數和運算式，偵錯工作階段的 windows。  其差異在於 [監看式]  視窗可以顯示數個變數，而 [快速監看式]  視窗一次僅可顯示單一變數。  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用 [快速監看式] 觀察單一變數  

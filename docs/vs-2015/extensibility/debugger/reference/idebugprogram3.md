@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram3 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8fd061a8321fffa30befcfc9290e6819d96d90fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ea0f1412ca45ae59ea50555d70a7130b2e99f42
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295434"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgram3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram3)。  
-  
 此介面代表一個程式正在執行的處理序中，擴充[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)藉由提供執行緒資訊。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 開啟方案命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c2c93f44ba7c801b31390c411da1d16c1645bf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15c51e341761ad34241f1230f797896ce8dc2e9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186398"
 ---
 # <a name="open-solution-command"></a>開啟方案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開啟 [方案] 命令](https://docs.microsoft.com/visualstudio/ide/reference/open-solution-command)。  
-  
   
 關閉任何其他開啟的方案，以開啟現有方案。  
   
@@ -60,7 +58,7 @@ File.OpenSolution filename
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

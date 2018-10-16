@@ -1,7 +1,7 @@
 ---
 title: L2DBForm.xaml.cs 原始程式碼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 741c91f290b7e509110c0320013965f8cf9bef0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180598"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[L2DBForm.xaml.cs 原始程式碼](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-cs-source-code)。  
-  
 本主題包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。 此檔案中所包含的 L2XDBForm 部分類別可分為三個邏輯區段：資料成員、`OnRemove` 以及 `OnAddBook` 按鈕 Click 事件處理常式。  
   
 ## <a name="data-members"></a>資料成員  

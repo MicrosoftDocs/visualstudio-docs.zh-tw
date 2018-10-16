@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中對市集應用程式執行單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: f7ae0de7e5acd62930b20dd9795d7c76f79599e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cba96af95aaab2416d12a3791df2165f2f8d4102
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228503"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>在 Visual Studio 中對市集應用程式執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 執行市集應用程式的單元測試](https://docs.microsoft.com/visualstudio/test/run-unit-tests-for-store-apps-in-visual-studio)。  
-  
 本主題說明如何使用 Microsoft Visual Studio 的 [測試總管] 執行單元測試。  
   
 > [!NOTE]

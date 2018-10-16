@@ -1,7 +1,7 @@
 ---
 title: 0 的 x-2 x-4 的 msaa 變異 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97203b9ecc44e5aa487f7fad35b47e050ce50766
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251175"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[0 x-2 x-4 x MSAA 變異](https://docs.microsoft.com/visualstudio/debugger/graphics/0x-2x-4x-msaa-variants)。  
-  
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。  
   
 ## <a name="interpretation"></a>解譯  

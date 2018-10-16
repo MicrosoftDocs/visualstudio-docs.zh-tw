@@ -1,7 +1,7 @@
 ---
 title: 共用使用 DSL 程式庫之間的類別 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4ec7820be2cc4f308582e71f3ba64ded5c296e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241512"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[之間使用 DSL 程式庫的共用類別](https://docs.microsoft.com/visualstudio/modeling/sharing-classes-between-dsls-by-using-a-dsl-library)。  
-  
 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK，您可以建立不完整的 DSL 定義，您可以匯入至另一個 DSL。 這可讓您建構的類似模型的通用部分。  
   
 ## <a name="creating-and-using-dsl-libraries"></a>建立和使用 DSL 程式庫  

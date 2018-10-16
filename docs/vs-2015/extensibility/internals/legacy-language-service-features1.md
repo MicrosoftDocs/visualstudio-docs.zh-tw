@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務功能 1 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185381"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務功能 1](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1)。  
-  
 Managed 的封裝架構 (MPF) 語言服務可支援一或多個[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]功能，例如語法醒目提示、 IntelliSense 和中斷點驗證。 獨立於其他實作每個功能，但所有需要剖析器和語法反白顯示，除了需要掃描程式掃描程式。  
   
 ## <a name="in-this-section"></a>本節內容  

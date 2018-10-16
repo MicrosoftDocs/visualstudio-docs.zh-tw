@@ -1,7 +1,7 @@
 ---
 title: 使用設定存放區 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b106604455814e8d8ed13a6c6e1eb3a2d8196b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273360"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 「 設定存放區](https://docs.microsoft.com/visualstudio/extensibility/using-the-settings-store)。  
-  
 有兩種類型的設定存放區：  
   
 -   組態設定，也就是唯讀的 Visual Studio 和 VSPackage 設定。 Visual Studio 會將所有已知的.pkgdef 檔案中的設定合併到此存放區。  

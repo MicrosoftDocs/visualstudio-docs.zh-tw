@@ -1,7 +1,7 @@
 ---
 title: 如何： 在訊息檢視中的訊息搜尋 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 984c3f0dc9b61059b53a7caf5a859d3413c99e62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c609e927244f0d0c297bdebedab451a6af59bd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232871"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 在訊息檢視中的訊息搜尋](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-message-in-messages-view)。  
-  
 您可以使用其控制代碼、 類型或訊息識別碼，做為搜尋準則來搜尋特定訊息在訊息檢視中。 其中任何一個，或組合，會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>若要搜尋在訊息檢視中的訊息  

@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 設計工具中將物件組織在版面配置容器中 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219553"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將物件組織在版面配置容器，在 XAML 設計工具中](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer)。  
-  
 想像一下您想讓物件 (例如影像、按鈕和視訊等物件) 出現在頁面的什麼地方。 或許您想讓物件出現在資料列和資料行中、在垂直或水平的單一行中，或在固定位置中。  
   
  在利用此機會思考頁面可能會如何出現之後，請選擇版面配置面板。 所有頁面都會以此開始，因為您需要一些項目來加入物件。 根據預設，它是**格線**但您可以加以變更。  
@@ -109,7 +107,7 @@ ms.locfileid: "47488557"
   
 -   [Border](#Border)  
   
--   [Popup](#Popup)  
+-   [快顯](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

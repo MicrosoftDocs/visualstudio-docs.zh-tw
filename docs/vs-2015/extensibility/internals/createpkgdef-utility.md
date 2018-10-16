@@ -1,7 +1,7 @@
 ---
 title: CreatePkgDef 公用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec77937e18ab437107b0e9d269fb4b5c7c8e2381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63334ba9d454407bb93a87bf89b12cb472184d58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181593"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CreatePkgDef 公用程式](https://docs.microsoft.com/visualstudio/extensibility/internals/createpkgdef-utility)。  
-  
 採用 Visual Studio 延伸模組做為參數的.dll 檔案，並建立.pkgdef 檔案隨附此.dll 檔。 .Pkgdef 檔案包含會否則寫入系統登錄時已安裝的延伸模組的所有資訊。  
   
 > [!NOTE]

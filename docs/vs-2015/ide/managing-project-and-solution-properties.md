@@ -1,7 +1,7 @@
 ---
 title: 管理專案和方案屬性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca50ff8128782bda1841120996f3f3dda6d4ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290546"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理專案和方案屬性](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties)。  
-  
 專案具有控管編譯、偵錯、測試和部署各個層面的屬性。 有些屬性是所有專案類型通用的，有些則是特定語言或平台特有的。 在方案總管的專案節點上按一下滑鼠右鍵並選擇 [屬性]，或在功能表列 [快速啟動] 的搜尋方塊中鍵入屬性，即可存取專案屬性。  
   
  ![專案操作功能表](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")  

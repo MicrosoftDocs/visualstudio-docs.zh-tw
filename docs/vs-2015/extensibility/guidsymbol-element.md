@@ -1,7 +1,7 @@
 ---
 title: GuidSymbol 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e6e5bab37e9a0b9f0ffdf03778532d9657539c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0e72dd75f8487cb01438291070b5608eb7c9935
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181749"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[GuidSymbol 元素](https://docs.microsoft.com/visualstudio/extensibility/guidsymbol-element)。  
-  
 `GuidSymbol`項目包含 guid: id 配對，表示功能表、 群組或命令的 GUID。 識別碼是來自`IDSymbol`中的項目`GuidSymbol`項目。 `GuidSymbol`項目具有`name`提供的 GUID，包含此功能的易記名稱的屬性`value`屬性。  
   
 ## <a name="syntax"></a>語法  

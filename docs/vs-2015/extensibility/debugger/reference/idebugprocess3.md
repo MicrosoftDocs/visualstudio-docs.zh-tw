@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab646482762d9175a682b55691d012b2facef5f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5392329892c564608ab9649e29f1ff2bd2b1044
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269703"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcess3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3)。  
-  
 這個介面會表示執行中處理序和其程式。 這個介面是否存在，在數種方法來取代[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可讓控制程序中的所有程式。  
   
 > [!NOTE]

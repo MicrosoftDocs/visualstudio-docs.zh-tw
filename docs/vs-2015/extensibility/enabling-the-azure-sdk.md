@@ -1,7 +1,7 @@
 ---
 title: 啟用 Azure SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c02c258abafb004f7c59e74d8248c43af5f06d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9539565cef0ac4dd718134f2f33a9f5fea3322c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262517"
 ---
 # <a name="enabling-the-azure-sdk"></a>啟用 Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

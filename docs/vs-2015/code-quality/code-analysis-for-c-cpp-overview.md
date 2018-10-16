@@ -1,7 +1,7 @@
 ---
 title: 程式碼分析，如 C + + 的概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6764e39d55ebe2ce11776035f25d6fdf69be081
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42de573efcc44437eddf0e7d098681d05c094131
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222036"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼分析 C/c + + 概觀](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-overview)。  
-  
 C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相關資訊提供給開發人員。 這個工具所報告的常見程式碼撰寫錯誤包括緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。  
   
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合  

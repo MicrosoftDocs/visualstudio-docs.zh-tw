@@ -1,7 +1,7 @@
 ---
 title: 偵錯準備： Windows Forms 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7f362db7c0ba56db2b5b5f2362ea7755e3076a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262154"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯準備： Windows Forms 應用程式](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-windows-forms-applications)。  
-  
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 可以變更這些設定，在**\<專案名稱 > 屬性頁** 對話方塊 (**我的專案**Visual Basic 中)。  
@@ -54,7 +52,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
 |-----------------------|-----------------|  
 |**啟動動作**|-設定為**入門專案**大部分的情況。 設定為**啟動外部程式**如果您想要啟動可執行檔的另一個您啟動偵錯時 （通常適用於偵錯 Dll）。|  
   
- 您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內部偵錯 Windows Form 應用程式，或附加至正在執行的應用程式進行偵錯。 如需附加的詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+ 您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內部偵錯 Windows Forms 應用程式，或附加至正在執行的應用程式進行偵錯。 如需附加的詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>若要偵錯 C#、F# 或 Visual Basic Windows Forms 應用程式  
   

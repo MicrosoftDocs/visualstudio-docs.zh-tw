@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfb5a4fbd1c1e3b164b3e690da07136099711607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d1fcdb6df958a62ed23b3bc7e812e1f4a7e15f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218773"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcess2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2)。  
-  
 此介面代表的連接埠上執行的程序。 如果連接埠的本機連接埠，然後`IDebugProcess2`通常代表實體的程序，在本機電腦上。  
   
 ## <a name="syntax"></a>語法  

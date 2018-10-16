@@ -1,7 +1,7 @@
 ---
 title: 偵錯應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38f4e65040c9a4ab0afb5217a0b83ccffd894929
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c45ef73b4fe448d64a23292c83de8f01e0b6f339
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281693"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯應用程式](https://docs.microsoft.com/visualstudio/debugger/debugging-applications)。  
-  
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。  
   
 ## <a name="debugging-for-different-types-of-applications"></a>對不同類型的應用程式進行偵錯  

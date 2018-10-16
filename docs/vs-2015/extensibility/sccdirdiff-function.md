@@ -1,7 +1,7 @@
 ---
 title: SccDirDiff 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38730348fcafbbed9a3284f79e14fade2efb70ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2700bd452ec20aa8bf05bf5ec6bde51922356cca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491573"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218331"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccDirDiff 函式](https://docs.microsoft.com/visualstudio/extensibility/sccdirdiff-function)。  
-  
 此函式會顯示目前的本機目錄上的用戶端磁碟和對應的專案，原始檔控制下的差異。  
   
 ## <a name="syntax"></a>語法  

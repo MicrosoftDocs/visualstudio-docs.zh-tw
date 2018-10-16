@@ -1,7 +1,7 @@
 ---
 title: Icon 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66c5ea847d348c86c5de5bde611bfbfbdcb963c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31a6e0cf18422118c184f290fc8200d9c9263356
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186669"
 ---
 # <a name="icon-element"></a>Icon 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Icon 元素](https://docs.microsoft.com/visualstudio/extensibility/icon-element)。  
-  
 Guid 屬性的圖示標記會定義點陣圖的 guid。  Id 屬性選取點陣圖區中的位置。 這是選擇性的項目。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**會隱含。  
   
 ## <a name="syntax"></a>語法  

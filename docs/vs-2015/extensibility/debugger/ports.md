@@ -1,7 +1,7 @@
 ---
 title: 連接埠 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbc8778af1cbc82b4f9e7f577a95123a1c1f5843
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f637c348295e709698d710016c80aa717613a068
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281758"
 ---
 # <a name="ports"></a>連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[連接埠](https://docs.microsoft.com/visualstudio/extensibility/debugger/ports)。  
-  
 偵錯工具就架構而言，**連接埠**:  
   
 -   在伺服器上執行的一組處理序的容器。 例如，連接埠可能代表 Windows CE 架構裝置的序列纜線或網路上的非 DCOM 機器的連線。 一個特殊的連接埠，稱為本機連接埠，包含本機電腦上執行的所有處理程序。  

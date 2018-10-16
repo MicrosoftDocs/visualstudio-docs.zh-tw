@@ -1,7 +1,7 @@
 ---
 title: 管理通用 Windows 專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aedd9a3d85af50924a0371d3d1d4c26da3d4daac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252807"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理通用 Windows 專案](https://docs.microsoft.com/visualstudio/extensibility/managing-universal-windows-projects)。  
-  
 通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1，讓開發人員可以使用兩種平台的程式碼和其他資產為目標的應用程式。 共用程式碼和資源會保留在共用的專案，而平台特定程式碼和資源會保留在不同的專案，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱[通用 Windows 應用程式](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理專案的 visual Studio 擴充功能應該要知道通用 Windows 應用程式專案具有不同於單一平台應用程式的結構。 本逐步解說會示範如何瀏覽共用的專案和管理共用的項目。  
   
 ## <a name="prerequisites"></a>必要條件  

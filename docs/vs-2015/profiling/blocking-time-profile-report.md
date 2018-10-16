@@ -1,7 +1,7 @@
 ---
 title: 封鎖時間分析報表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180800"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[封鎖時間分析報表](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report)。  
-  
 分析報表提供每個封鎖類別 (例如 "I/O" 或「同步處理」) 特定之呼叫堆疊的彙總封鎖時間資料 。 先佔報表列出先佔用目前處理序的處理序，以及先佔執行個體的數目。 為建置封鎖分析報表，此工具會收集封鎖的 API 呼叫，並將它們累積成呼叫堆疊的樹狀目錄。 這些報表中所顯示的資料會依據目前的時間範圍、隱藏的執行緒以及下列兩個可套用的篩選而不同︰  
   
 -   如果已選取 Just My Code，只會顯示有使用者程式碼的堆疊框架，再加上使用者程式碼下方的一個層級。  

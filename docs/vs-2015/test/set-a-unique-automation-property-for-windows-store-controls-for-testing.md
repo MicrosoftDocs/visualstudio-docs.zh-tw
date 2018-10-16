@@ -1,7 +1,7 @@
 ---
 title: 為用於測試的 Windows 市集控制項設定唯一自動化屬性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238871"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>為用於測試的 Windows 市集控制項設定唯一自動化屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[為測試設定唯一自動化屬性的 Windows 市集控制項](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing)。  
-  
 如果您想要執行 XAML Windows 市集應用程式的自動程式碼 UI 測試，則必須具有可識別每個控制項的唯一自動化屬性。  
   
  您可以根據應用程式中的 XAML 控制項類型來指派唯一自動化屬性。 以下是在下列情況中指派這個唯一自動化屬性的方法︰  

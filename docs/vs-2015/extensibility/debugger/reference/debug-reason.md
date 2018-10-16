@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 883630e7c9e00a58eac143a6cde7ee40109bb4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 859e9de55a81208054140c2b4d26d1929b24d4c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306393"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DEBUG_REASON](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-reason)。  
-  
 指定處理序已啟動偵錯，原因。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: CA2147： 透明方法不可以使用安全性判斷提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29681e6b43b3c8e71f10393cbaec715c33a89a93
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 5a4ee4ff34cba8473d15269bd22b3af1b5f55aab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251091"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明的方法不可以使用安全性判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2147： 透明方法不可以使用安全性判斷提示](https://docs.microsoft.com/visualstudio/code-quality/ca2147-transparent-methods-may-not-use-security-asserts)。
-
 |||
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|

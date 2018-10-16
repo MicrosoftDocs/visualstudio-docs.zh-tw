@@ -1,7 +1,7 @@
 ---
 title: 使用舊版 API 存取的文字緩衝 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277208"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取的文字緩衝區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用舊版 API 存取文字緩衝區](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api)。  
-  
 負責管理文字資料流和檔案持續性的文字。 雖然緩衝區可以讀取或寫入其他格式中，使用 Unicode 來執行所有一般的通訊緩衝區。 在舊版的 Api 中，文字緩衝區可以使用一段或二維的座標系統識別緩衝區中的字元位置。  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>一個和兩個維度座標系統  

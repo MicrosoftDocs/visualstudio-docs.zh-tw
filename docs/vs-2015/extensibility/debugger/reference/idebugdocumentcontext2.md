@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9051790d0db88002a23905cf7ae6320a140e5869
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 291da198bb28ba302d16e279cbb93da5c42b0a05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250116"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDocumentContext2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2)。  
-  
 此介面代表來源檔案的文件中的位置。  
   
 ## <a name="syntax"></a>語法  

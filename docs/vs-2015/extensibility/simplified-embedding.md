@@ -1,7 +1,7 @@
 ---
 title: 簡化嵌入 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de1ef1b6538c010a1428dfa54ea4296a870d7ad5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3919e64e9ce8a3e343a9ebba997a178f4f4230e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257500"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[簡化內嵌](https://docs.microsoft.com/visualstudio/extensibility/simplified-embedding)。  
-  
 當其文件檢視物件的父系 （也就是與之前的子系） 簡化內嵌在編輯器中啟用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗命令。 簡化的內嵌編輯器無法裝載作用中的控制項。 用來建立編輯器來簡化內嵌的物件會在下圖中顯示。  
   
  ![簡化的嵌入編輯器圖形](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  

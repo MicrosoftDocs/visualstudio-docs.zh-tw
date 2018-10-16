@@ -1,7 +1,7 @@
 ---
 title: 在模型圖上定義軌跡處理常式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248072"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在模型圖上定義軌跡處理常式](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram)。  
-  
 在 Visual Studio 中，您可以定義當使用者按兩下，或將項目拖曳至 UML 圖表時會執行的命令。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。  
   
  如果您要拖曳的圖表類型及項目類型已有內建行為，您可能無法加入或覆寫這個行為。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -244,15 +242,15 @@ ms.locfileid: "47588692"
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
+     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
   
     -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
-    -   在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在專案屬性編輯器中，選擇 [偵錯]  索引標籤。請確定中的字串**啟動外部程式**欄位是完整路徑名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常是：  
+    -   在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在專案屬性編輯器中，選擇 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟或建立模型專案，並開啟或建立模型圖表。 使用屬於軌跡處理常式類別的屬性中所列類型之一的圖表。  
+2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。 使用屬於軌跡處理常式類別的屬性中所列類型之一的圖表。  
   
 3.  按兩下圖表上的任何地方。 應該會呼叫您的按兩下處理常式。  
   
@@ -327,7 +325,7 @@ ms.locfileid: "47588692"
      如果您的來源物件是從 UML 模型總管 或從另一個 UML 圖表拖曳的 UML 項目，請參閱[從 IDataObject 取得 UML 模型項目](../modeling/get-uml-model-elements-from-idataobject.md)。  
   
 ### <a name="writing-the-code-of-the-methods"></a>撰寫方法的程式碼  
- 如需有關如何撰寫程式碼來讀取和更新模型的詳細資訊，請參閱[使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)。  
+ 如需有關如何撰寫程式碼來讀取和更新模型的詳細資訊，請參閱 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)。  
   
  如需在拖曳作業中存取模型資訊，請參閱[從 IDataObject 取得 UML 模型項目](../modeling/get-uml-model-elements-from-idataobject.md)。  
   
@@ -354,7 +352,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
  如需詳細資訊，請參閱 <<c0> [ 巡覽 UML 模型](../modeling/navigate-the-uml-model.md)。  
   
 ##  <a name="Installing"></a> 安裝及解除安裝擴充功能  
- 您可以在自己的電腦和其他電腦上都安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
+ 您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
   
 #### <a name="to-install-an-extension"></a>安裝擴充功能  
   

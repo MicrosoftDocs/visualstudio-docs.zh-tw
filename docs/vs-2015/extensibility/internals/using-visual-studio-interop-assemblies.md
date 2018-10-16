@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio Interop 組件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,42 +17,40 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195621"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Visual Studio Interop 組件](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies)。  
-  
 Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，提供 Visual Studio 擴充性。 有一些直接的 COM 介面和其 interop 版本之間的差異。 比方說，Hresult 通常統稱為 int 值，和需要處理例外狀況，以相同的方式和參數 (尤其是 out 參數） 的處理方式不同。  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>處理從 COM 傳回給 Managed 程式碼的 HRESULT  
- 當您透過 Managed 程式碼呼叫 COM 介面時，請檢查 HRESULT 值，並視需要擲回例外狀況。 <xref:Microsoft.VisualStudio.ErrorHandler>類別包含<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>方法，就會擲回 COM 例外狀況的 HRESULT 值而定，傳遞給它。  
+ 當您透過 Managed 程式碼呼叫 COM 介面時，請檢查 HRESULT 值，並視需要擲回例外狀況。 <xref:Microsoft.VisualStudio.ErrorHandler> 類別包含會擲回 COM 例外狀況的 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 方法 (視傳遞給它的 HRESULT 值而定)。  
   
- 根據預設，<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>傳遞的值小於零的 HRESULT 時擲回例外狀況。 在這類 Hresult 是可接受的值，應該擲回任何例外狀況的情況下，其他 HRESULT 的值應該傳遞至<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>則在測試值之後。 如果正在測試的 HRESULT 符合明確傳遞至任何 HRESULT 值<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>，會擲回任何例外狀況。  
+ 根據預設，<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 只要傳遞的 HRESULT 值小於零就會擲回例外狀況。 如果這類 HRESULT 是可接受值，而且不應該擲回任何例外狀況，則在測試值之後，應該會將其他 HRESULT 的值傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。 如果正在測試的 HRESULT 符合明確傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 的任何 HRESULT 值，則不會擲回任何例外狀況。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants>類別包含常數常見 hresults，例如<xref:Microsoft.VisualStudio.VSConstants.S_OK>並<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 也會提供<xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A>和<xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>方法，這會對應到在 COM 中的 SUCCEEDED 和 FAILED 巨集  
+>  <xref:Microsoft.VisualStudio.VSConstants>類別包含常數常見 hresults，例如<xref:Microsoft.VisualStudio.VSConstants.S_OK>並<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 也提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，而這些方法會對應至 COM 中的 SUCCEEDED 和 FAILED 巨集。  
   
- 例如，請考慮下列的函式呼叫，在其中<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>是可接受的傳回值，但任何其他的 HRESULT 錯誤小於零代表。  
+ 例如，請考慮下列的函式呼叫，其中，<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> 是可接受的傳回值，但任何其他小於零的 HRESULT 都代表發生錯誤。  
   
  [!code-csharp[VSSDKHRESULTInformation#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#1)]
  [!code-vb[VSSDKHRESULTInformation#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#1)]  
   
- 如果有多個可接受的傳回值，其他的 HRESULT 值只是附加至清單的呼叫中<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。  
+ 如果有多個可接受的傳回值，則在 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 呼叫中只能將其他 HRESULT 值附加至清單。  
   
  [!code-csharp[VSSDKHRESULTInformation#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#2)]
  [!code-vb[VSSDKHRESULTInformation#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#2)]  
   
 ## <a name="returning-hresults-to-com-from-managed-code"></a>透過 Managed 程式碼將 HRESULT 傳回給 COM  
- 如果沒有發生例外狀況，管理程式碼傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>COM 函式呼叫它。 COM Interop 支援透過 Managed 程式碼進行強類型處理的常見例外狀況。 例如，收到無法接受的方法`null`引數會擲回<xref:System.ArgumentNullException>。  
+ 如果未發生例外狀況，則 Managed 程式碼會將 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 傳回給已呼叫它的 COM 函式。 COM Interop 支援透過 Managed 程式碼進行強類型處理的常見例外狀況。 例如，收到無法接受 `null` 引數的方法會擲回 <xref:System.ArgumentNullException>  
   
- 如果您不確定哪個例外狀況擲回，但您知道 HRESULT 您想要傳回至 COM，您可以使用<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>方法會擲回適當的例外狀況。 這甚至適用於非標準的錯誤，例如<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>。 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 嘗試將對應的 HRESULT 會傳遞給它設為強類型例外狀況。 如果失敗，則會改為擲回一般 COM 例外狀況。 最後結果是，HRESULT 您傳遞給<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>從 managed 程式碼傳回給呼叫它的 COM 函式。  
+ 如果您不確定會擲回哪個例外狀況，但知道您想要傳回給 COM 的 HRESULT，則可以使用 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 方法擲回適當的例外狀況。 這甚至適用於非標準錯誤 (例如，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>)。 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 會嘗試將傳遞給它的 HRESULT 對應至強類型例外狀況。 如果失敗，則會改為擲回一般 COM 例外狀況。 最後結果是您透過 Managed 程式碼傳遞給 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 的 HRESULT 會傳回給呼叫它的 COM 函式。  
   
 > [!NOTE]
 >  例外狀況會危害效能並用來指出異常程式狀況。 經常發生的狀況應該透過內嵌方式處理，而不是擲回例外狀況。  

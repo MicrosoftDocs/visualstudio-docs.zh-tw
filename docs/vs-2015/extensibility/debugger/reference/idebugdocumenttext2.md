@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7856512e4dc8b5bb7dfe82c82ce51af23d3959a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3548c80b3db2515c9c90f0eb03fc244301da8818
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218214"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDocumentText2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttext2)。  
-  
 此介面代表文字文件。  
   
 ## <a name="syntax"></a>語法  

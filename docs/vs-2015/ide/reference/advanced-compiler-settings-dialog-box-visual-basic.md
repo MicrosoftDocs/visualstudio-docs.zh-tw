@@ -1,7 +1,7 @@
 ---
 title: 進階編譯器設定對話方塊 (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 683bf50a62b29369bd70394a6001d255e3e4f29b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261582"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[進階編譯器設定對話方塊 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)。  
-  
   
 使用 [專案設計工具] 的 [進階編譯器設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 Visual Basic 專案。  
   

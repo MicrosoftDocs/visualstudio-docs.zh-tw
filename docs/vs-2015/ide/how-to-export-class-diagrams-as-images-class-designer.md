@@ -1,7 +1,7 @@
 ---
 title: 如何：將類別圖表匯出為影像 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b16e8d580d80a6113e123a09292eafbcf32911c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd4e306f2dc8dcb31766f78c644769087eba9819
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240522"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>如何：將類別圖表匯出為影像 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 類別圖表匯出為影像 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/how-to-export-class-diagrams-as-images-class-designer)。  
-  
 若要匯出從專案程式碼所建立的類別圖，請將該圖儲存為影像。 若要改為匯出 UML 類別圖表，請參閱[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)。  
   
 1.  開啟您的類別圖 (.cd) 檔案。  

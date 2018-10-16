@@ -1,7 +1,7 @@
 ---
 title: 如何：檢視、儲存和設定組建記錄檔 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d30e2b571e0a46afa10c8100085e6c23513159e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207398"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢閱、儲存和設定建置記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢視、 儲存和設定組建記錄檔](https://docs.microsoft.com/visualstudio/ide/how-to-view-save-and-configure-build-log-files)。  
-  
 在 Visual Studio IDE 中建置專案之後，您可以在 [輸出] 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 對於 C++ 專案，您也可以在自動建立和儲存的 .txt 檔案中，檢視相同的資訊。 對於受控碼專案，您可以將 [輸出] 視窗的資訊複製並貼至 .txt 檔案，然後自行儲存它。 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。  
   
  如果您使用 MSBuild 建置任何種類的專案，您可以建立 .txt 檔案以儲存組建資訊。 如需記錄的詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。  

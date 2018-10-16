@@ -1,7 +1,7 @@
 ---
 title: 變更命令的外觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d707451b71efdd41a470c2e1e54353e2fdfe4f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294719"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>變更命令的外觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令的外觀會變更](https://docs.microsoft.com/visualstudio/extensibility/changing-the-appearance-of-a-command)。  
-  
 您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。  
   
  若要變更命令的外觀，執行下列其中一個動作：  

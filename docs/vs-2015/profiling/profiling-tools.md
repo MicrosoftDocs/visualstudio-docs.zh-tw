@@ -1,7 +1,7 @@
 ---
 title: 分析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244033"
 ---
 # <a name="profiling-tools"></a>程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中的分析](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour)。  
-  
 程式碼剖析和診斷工具可協助您診斷記憶體和 CPU 使用量，以及其他應用程式層級的問題。 利用這些工具，您可以隨著您在偵錯工具中執行應用程式時間而累積資料 (例如變數值、函式呼叫和事件)。 您可以在執行程式碼時檢視應用程式在不同時間點的狀態。  
   
  查看底部的摘要，了解哪些工具可供您的專案類型使用 (例如，桌面、UWP、ASP.NET)。  
@@ -48,7 +46,7 @@ ms.locfileid: "47488895"
 ## <a name="cpu-usage"></a>CPU 使用量  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- [CPU 使用量]  工具顯示 CPU 花時間執行 C++、C#/VB 和 JavaScript 程式碼的地方。  您可以使用這項工具搭配桌面和 Windows 通用應用程式，也可以搭配 Azure App Service 應用程式。 **CPU 使用量** 工具可以在您執行偵錯時從 [診斷工具]  視窗執行 ([偵錯] / [視窗] / [顯示診斷工具]) 或在偵錯工具之外執行 ([偵錯] / [效能分析工具...])。請參閱[CPU 使用量](../profiling/cpu-usage.md)如需詳細資訊。  
+ [CPU 使用量]  工具顯示 CPU 花時間執行 C++、C#/VB 和 JavaScript 程式碼的地方。  您可以使用這項工具搭配桌面和 Windows 通用應用程式，也可以搭配 Azure App Service 應用程式。 **CPU 使用量** 工具可以在您執行偵錯時從 [診斷工具]  視窗執行 ([偵錯] / [視窗] / [顯示診斷工具]) 或在偵錯工具之外執行 ([偵錯] / [效能分析工具...])。如需不同方法的詳細資訊，請參閱 [CPU 使用量](../profiling/cpu-usage.md) 。  
   
 ## <a name="performance-explorer"></a>效能總管  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

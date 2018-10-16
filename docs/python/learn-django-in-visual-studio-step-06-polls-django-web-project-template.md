@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281061"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548227"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
@@ -118,7 +118,7 @@ Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一
 
 欄位類型的完整清單是 `CharField` (有限文字) `TextField` (無限文字)、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey` 和 `ManyToMany`。 每個欄位都會採用一些屬性，例如 `max_length`。 `blank=True` 屬性表示欄位是選擇性的。`null=true` 表示值是選擇性的。 另外還有一個 `choices` 屬性，它會將值限制為資料值/顯示值 tuple 陣列中旳值。 (請參閱 Django 文件中的[模型欄位參考](https://docs.djangoproject.com/en/2.0/ref/models/fields/))。
 
-您可以使用 [SQLite 瀏覽器](http://sqlitebrowser.org/)此類的工具來檢查專案中的 *db.sqlite3* 檔案，即可確認資料庫倒底儲存什麼樣的內容。 在資料庫中，您會看到外部索引鍵欄位，例如 Choice 模型中的 `poll`，是儲存為 `poll_id`；Django 會自動處理這種對應關係。
+您可以使用 [SQLite 瀏覽器](https://sqlitebrowser.org/)此類的工具來檢查專案中的 *db.sqlite3* 檔案，即可確認資料庫倒底儲存什麼樣的內容。 在資料庫中，您會看到外部索引鍵欄位，例如 Choice 模型中的 `poll`，是儲存為 `poll_id`；Django 會自動處理這種對應關係。
 
 一般來說，使用 Django 操作您的資料庫時，表示您的模型也是被獨佔操作，因此 Django 可以代表您來管理基礎資料庫。
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-要想查看效果，先執行這個應用程式，確定沒有任何投票存在。 接著瀏覽 "/seed" URL，當應用程式返回首頁時，您應該會看到投票了。 同樣地，您可以使用 [SQLite 瀏覽器](http://sqlitebrowser.org/)此類的工具，隨意檢查原始的 *db.sqlite3* 檔案。
+要想查看效果，先執行這個應用程式，確定沒有任何投票存在。 接著瀏覽 "/seed" URL，當應用程式返回首頁時，您應該會看到投票了。 同樣地，您可以使用 [SQLite 瀏覽器](https://sqlitebrowser.org/)此類的工具，隨意檢查原始的 *db.sqlite3* 檔案。
 
 ![自帶種子資料庫的「投票 Django Web 專案」應用程式](media/django/step06-app-with-seeded-database.png)
 

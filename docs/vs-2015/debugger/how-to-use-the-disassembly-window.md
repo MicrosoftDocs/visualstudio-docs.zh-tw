@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用反組譯碼視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287751"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>如何：使用反組譯碼視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 中偵錯工具中檢視反組譯碼](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window)。  
-  
 這項功能才會提供啟用位址層級偵錯**選項** 對話方塊中，**偵錯**節點。 它並不能用來偵錯指令碼或 SQL。  
   
  **反組譯碼**視窗會顯示對應到編譯器所建立之指令的組件程式碼。 如果您正在偵錯 Managed 程式碼，這些組譯碼 (Assembly) 指令相當於 Just-in-Time (JIT) 編譯器所建立的機器碼，而非 Visual Studio 編譯器所產生的 Microsoft Intermediate Language (MSIL)。  

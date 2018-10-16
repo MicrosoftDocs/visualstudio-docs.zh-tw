@@ -1,7 +1,7 @@
 ---
 title: 步驟 6：新增減法問題 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38b4d8f373d6a3c5069cc2b8f8fe4591ccfa0bcc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229238"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 6： 新增減法問題](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-subtraction-problem)。  
-  
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：  
   
 -   儲存減法的值。  

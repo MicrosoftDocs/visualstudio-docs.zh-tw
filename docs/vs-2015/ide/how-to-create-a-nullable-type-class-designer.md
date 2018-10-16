@@ -1,7 +1,7 @@
 ---
 title: 如何：建立可為 Null 的類型 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179422"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：建立可為 Null 的類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立可為 Null 的型別 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer)。  
-  
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。  
   
  「可為 Null 的型別」是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，您可將 -2147483648 到 2147483647 的任何值或 null 值指派給可為 Null 的 `Int32` (亦表示為Nullable\<Int32>)。 您可將 `True`、`False` 或 null 值 (完全沒有值) 指派給 Nullable\<bool>。  

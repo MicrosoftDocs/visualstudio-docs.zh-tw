@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制整合概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8fc2368fd2da031342cf76ab7ba9abb85e6f4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224181"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制整合概觀](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview)。  
-  
 本節將比較兩種方式，將整合到 Visual Studio 原始檔控制原始檔控制外掛程式和 VSPackage 所提供的原始檔控制解決方案，並反白顯示新的原始檔控制功能。 Visual Studio 可讓手動切換原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動以解決方案為基礎的切換。  
   
 ## <a name="source-control-integration"></a>原始檔控制整合  

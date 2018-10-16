@@ -1,7 +1,7 @@
 ---
 title: MFC 偵錯技術 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4828b7b5ee5d0812c8a9b1afa2ff2def783c3d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303910"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MFC 偵錯技術](https://docs.microsoft.com/visualstudio/debugger/mfc-debugging-techniques)。  
-  
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
   
 ##  <a name="BKMK_In_this_topic"></a>本主題內容  
@@ -72,7 +70,7 @@ ms.locfileid: "47497556"
     -   [以選取的模組之偵錯資訊來建置 MFC 應用程式](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC 提供了一個特殊[AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30)硬式編碼的中斷點，在原始程式碼中的函式：  
+ MFC 提供了一個特殊的 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 函式，可在原始程式碼中直接撰寫 (硬式編碼) 中斷點：  
   
 ```  
 AfxDebugBreak( );  
@@ -92,7 +90,7 @@ _asm int 3
  [本主題內容](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> TRACE 巨集  
- 在 偵錯工具中顯示程式的訊息[輸出視窗](../ide/reference/output-window.md)，您可以使用[ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e)巨集或 MFC[追蹤](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f)巨集。 像 [判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。  
+ 若要在偵錯工具 [輸出視窗](../ide/reference/output-window.md)裡顯示程式的訊息，您可以使用 [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) 巨集或 MFC [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 巨集。 像 [判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。  
   
  下列範例顯示一些您可以使用 **TRACE** 巨集的方式。 就像 `printf`一樣， **TRACE** 巨集可以處理許多引數。  
   
@@ -120,7 +118,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- 如需詳細資訊**追蹤**巨集，請參閱[診斷服務](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)。  
+ 如需 **TRACE** 巨集的詳細資訊，請參閱 [診斷服務](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
@@ -128,7 +126,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC 提供類別和函式來偵測已配置但從未解除配置的記憶體。  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置  
- 在 MFC 中，您可以使用巨集[DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d)代替**新**運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。  
+ 在 MFC 裡，您可以使用 [DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。  
   
  如果您不要以 `DEBUG_NEW` 取代 **new**來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：  
   
@@ -147,17 +145,17 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **若要啟用或停用記憶體診斷**  
   
--   呼叫全域函式[AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db)啟用或停用診斷記憶體配置器。 因為記憶體診斷在偵錯程式庫中預設是啟用的，通常您會使用這個函式將它們暫時地關閉，以增加程式執行速度和減少診斷輸出。  
+-   呼叫全域函式 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 來啟用或停用診斷記憶體配置器 (Allocator)。 因為記憶體診斷在偵錯程式庫中預設是啟用的，通常您會使用這個函式將它們暫時地關閉，以增加程式執行速度和減少診斷輸出。  
   
  **若要選取具 afxMemDF 的特定記憶體診斷功能**  
   
--   如果您想要更精確地控制記憶體診斷功能，您可以選擇性地將各個記憶體診斷功能開啟和關閉設定 MFC 全域變數的值[afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。  
+-   如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。  
   
     |值|描述|  
     |-----------|-----------------|  
     |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|  
     |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|  
-    |**checkAlwaysMemDF**|呼叫[AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28)每次配置或釋放記憶體。|  
+    |**checkAlwaysMemDF**|每一次記憶體配置或釋放時都會呼叫 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 。|  
   
      這些值可以藉由執行邏輯 OR 操作用於結合，如下所示：  
   
@@ -169,11 +167,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
   
-1.  建立[CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2)物件，然後呼叫[cmemorystate:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)成員函式。 這會建立第一個記憶體快照。  
+1.  建立 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成員函式。 這會建立第一個記憶體快照。  
   
 2.  程式執行記憶體配置和解除配置操作之後，會建立另一個 `CMemoryState` 物件並且呼叫此物件的 `Checkpoint` 。 這會取得記憶體使用的第二個快照。  
   
-3.  建立第三個`CMemoryState`物件並呼叫其[cmemorystate:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c)成員函式，做為引數提供兩個先前`CMemoryState`物件。 如果兩種記憶體狀態之間有差異， `Difference` 函式會傳回非零值。 這表示有些記憶體區塊沒有解除配置。  
+3.  建立第三個 `CMemoryState` 物件並呼叫其 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 成員函式，會提供兩個先前的 `CMemoryState` 物件作為引數。 如果兩種記憶體狀態之間有差異， `Difference` 函式會傳回非零值。 這表示有些記憶體區塊沒有解除配置。  
   
      這個範例會顯示程式碼看起來的樣子：  
   
@@ -198,14 +196,14 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     請注意，記憶體檢查陳述式會括住`#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif**區塊，使得它們只會中編譯程式的偵錯版本。  
+     請注意，記憶體檢查陳述式會以 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 區塊括住，因此它們只會在程式的偵錯版本中編譯。  
   
-     既然您已經知道有記憶體流失存在，您可以使用另一個成員函式， [cmemorystate:: Dumpstatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d)幫助您找到它。  
+     您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 幫助您尋找流失的記憶體。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 檢視記憶體統計資料  
- [Cmemorystate:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c)函式會查看兩個記憶體狀態物件，並偵測任何沒有從開頭和結尾狀態之間的堆積解除配置的物件。 在擷取記憶體快照並比較這些之後使用`CMemoryState::Difference`，您可以呼叫[cmemorystate:: Dumpstatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d)取得尚未解除配置物件的相關資訊。  
+ [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 函式會查看兩個記憶體狀態物件，並偵測開頭和結尾狀態之間任何沒有從堆積解除配置的物件。 在您已擷取記憶體快照並使用 `CMemoryState::Difference`比較這些快照之後，您可以呼叫 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 取得沒有解除配置之物件的詳細資訊。  
   
  參考下列範例：  
   
@@ -240,10 +238,10 @@ Total allocations: 67 bytes
  [本主題內容](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印  
- 在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 傾印所有物件配置自上次[cmemorystate:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
+ 在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
   
 > [!NOTE]
->  您可以使用 MFC 物件傾印之前，您必須[啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)。  
+>  您必須先 [啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)，才能使用 MFC 物件傾印。  
   
 > [!NOTE]
 >  MFC 會在程式結束時自動傾印所有的流失物件，因此您不需要建立程式碼來傾印這個時候的物件。  
@@ -281,7 +279,7 @@ Phone #: 581-0215
   
  您可以將全域變數 `_afxBreakAlloc` 設定為顯示在括號裡的數字，將中斷點設於特定記憶體配置上。 如果您重新執行該程式，則當此配置發生時，偵錯工具會中斷執行。 然後您可以查看呼叫堆疊來檢視程式如何到達此點。  
   
- C 執行階段程式庫有類似的函式[_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1)，您可以使用 C 執行階段配置。  
+ C 執行階段程式庫中類似的函式是 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1)，其可用於 C 執行階段配置。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
@@ -312,7 +310,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` 建構函式 (Constructor) 需要三個 `char`指標的引數 (用來初始化 `CString` 成員變數)。 在記憶體傾印裡，您可以看到 `CPerson` 物件和三個非物件區塊 (3、4 和 5)。 這些物件會儲存 `CString` 成員變數字元，且在不會在叫用 (Invoke) `CPerson` 物件解構函式 (Destructor) 刪除。  
   
- 區塊編號 2 是 `CPerson` 物件本身。 `$51A4` 代表區塊的位址且後面跟著物件，因為它所輸出的內容`CPerson`::`Dump`呼叫時[DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)。  
+ 區塊編號 2 是 `CPerson` 物件本身。 `$51A4` 代表區塊的位址且後面跟著物件的內容 (由 `CPerson`DumpAllObjectsSince`Dump` 呼叫時，由 [::](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)所輸出)。  
   
  您可以由區塊編號 1 的順序號碼和大小猜想出它與 `CString` 框架變數相關，這些資訊符合 `CString` 框架變數裡的字元數字。 框架上配置的變數在框架超過範圍 (Scope) 時會自動解除配置。  
   
@@ -369,9 +367,9 @@ Phone #: 581-0215
  [本主題內容](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
- 當您衍生的類別[CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)，您可以覆寫`Dump`成員函式，以提供其他資訊，當您使用[DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)來傾印物件至[輸出視窗](../ide/reference/output-window.md)。  
+ 當您從 [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)衍生類別時，您可在使用 `Dump` DumpAllObjectsSince [來傾印物件至](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 輸出視窗 [時，覆寫](../ide/reference/output-window.md)成員函式以提供額外的資訊。  
   
- `Dump`函式會寫入的文字表示物件的成員變數傾印內容 ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。  
+ `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。  
   
  當您覆寫 `Dump` 函式時，您應該先呼叫 `Dump` 的基底類別版本來傾印基底類別物件的內容。 接著輸出衍生類別中每個成員變數的文字說明和值。  
   
@@ -489,7 +487,7 @@ pMyPerson->Dump( afxDump );
   
 7.  從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   
- 除了本主題所說明的技巧以外，您可以使用外部 Makefile 來定義每個檔案的個別選項。 在此情況下，若要連結 MFC 偵錯程式庫，您必須定義[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)每個模組的旗標。 如果您要使用 MFC 發行程式庫，您必須定義 NDEBUG。 如需有關如何撰寫外部 makefile 的詳細資訊，請參閱 < [NMAKE 參考](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)。  
+ 除了本主題所說明的技巧以外，您可以使用外部 Makefile 來定義每個檔案的個別選項。 在此情況中，若要連結 MFC 偵錯程式庫，您必須定義每個模組的 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 旗標。 如果您要使用 MFC 發行程式庫，您必須定義 NDEBUG。 如需撰寫外部 Makefile 的詳細資訊，請參閱 [NMAKE 參考](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)。  
   
  [本主題內容](#BKMK_In_this_topic)  
   

@@ -1,7 +1,7 @@
 ---
 title: 命令可用性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9933975b005241e89444c47a96b80bf0e43bfbcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfaff5de68bd9d81b6cba6a03a4acec4ad1f0959
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182646"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令可用性](https://docs.microsoft.com/visualstudio/extensibility/internals/command-availability)。  
-  
 Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案、 目前的編輯器、 已載入，Vspackage 和整合式的開發環境 (IDE) 的其他層面，可以變更內容。  
   
 ## <a name="command-contexts"></a>命令內容  

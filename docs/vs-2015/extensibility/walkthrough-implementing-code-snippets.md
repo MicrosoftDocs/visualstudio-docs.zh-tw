@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 實作程式碼片段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287153"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說︰實作程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 實作程式碼片段](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets)。  
-  
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  
   
  程式碼片段是程式碼或其他可以納入檔案中的文字片段。 若要檢視所有已註冊的特定程式設計語言，在程式碼片段**工具**功能表上，按一下**程式碼片段管理員**。 若要插入程式碼片段在檔案中，以滑鼠右鍵按一下您想要的程式碼片段中，按一下**插入程式碼片段**或**環繞**，找出您想，程式碼的片段，，然後按兩下它。 按 TAB 或 SHIFT + TAB，修改程式碼片段的相關部分，然後按下 ENTER 或 esc 鍵，以接受它。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  

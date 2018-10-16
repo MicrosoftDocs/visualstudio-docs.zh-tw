@@ -1,7 +1,7 @@
 ---
 title: 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,19 +21,17 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 808e6a8d6264f616eec7716ddeb173bfccb906bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278924"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 在線上 ClickOnce 應用程式中擷取查詢字串資訊](https://docs.microsoft.com/visualstudio/deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application)。  
-  
-*「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 `servername` 且名為 `WindowsApp1` 的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
+*「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
   
@@ -71,14 +69,14 @@ ms.locfileid: "47500615"
     MageUI  
     ```  
   
-2.  從**檔案**功能表上，選取**開啟**，然後開啟部署資訊清單您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，也就是檔案結尾`.application`延伸模組。  
+2.  從 [檔案]  功能表中，選取 [開啟] ，然後開啟您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。  
   
 3.  選取左導覽視窗中的 [部署選項]  面板，然後選取 [允許傳遞 URL 參數至應用程式]  核取方塊。  
   
 4.  從 [檔案]  功能表中，選取 [儲存] 。  
   
 > [!NOTE]
->  或者，您可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性] 、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單] 即可找到此核取方塊。  
+>  或者，您可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性] 、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單] 即可找到此核取方塊。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
  當您使用查詢字串參數時，必須仔細考慮要如何安裝和啟用應用程式。 如果您的應用程式設定成從 Web 或網路共用安裝在使用者的電腦上，則使用者可能只會透過 URL 啟用應用程式一次。 之後，使用者通常會使用 [開始]  功能表中的捷徑來啟用您的應用程式。 因此，保證您的應用程式只會在其存留期間接收到查詢字串引數一次。 如果您選擇將這些引數儲存在使用者的電腦上供日後使用，則必須負責以安全的方式儲存它們。  
@@ -86,7 +84,7 @@ ms.locfileid: "47500615"
  如果您的應用程式只能在線上時使用，則一律會透過 URL 予以啟用。 不過，如果查詢字串參數遺失或損毀，則即使在此情況下，您的應用程式還是必須寫入才能正常運作。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需有關查詢字串安全性的詳細資訊，請參閱 < [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+ 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

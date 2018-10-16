@@ -1,7 +1,7 @@
 ---
 title: 使用規則集來指定要執行的 c + + 規則 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9466bf421ca5844d3d7083528fb1a27e3c488937
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230871"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行的 C++ 規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用規則集來指定要執行的 c + + 規則](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。  
-  
 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]並[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 若要建立自訂的 c + + 規則集，C/c + + 專案必須在 Visual Studio IDE 中開啟。 然後規則集編輯器中開啟的標準規則集，然後新增或移除特定規則及選擇性變更 程式碼分析會判斷已違反規則時所發生的動作之後。  
   
  若要建立新的自訂規則集，您將使用新的檔案名稱儲存。 自訂規則集會自動指派至專案。  

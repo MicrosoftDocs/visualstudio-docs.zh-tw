@@ -1,7 +1,7 @@
 ---
 title: 函式檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205604"
 ---
 # <a name="functions-view"></a>函式檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[函式 檢視](https://docs.microsoft.com/visualstudio/profiling/functions-view)。  
-  
 [函式] 檢視會列出分析期間呼叫的函式。  
   
  預設會依名稱列出函式。 若要依模組檢視函式，請以滑鼠右鍵按一下 [函式檢視] 視窗，然後選取 [在模組檢視中顯示]。 這將會顯示 [模組] 檢視。  

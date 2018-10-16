@@ -1,7 +1,7 @@
 ---
 title: 在 UML 擴充功能上執行單元測試 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,23 +12,21 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205060"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 擴充功能上執行單元測試](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions)。  
-  
 為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 歸納起來：  
   
 -   [設定 VSIX 擴充功能的單元測試](#Host)  
   
-     使用 VS IDE 主機介面卡執行測試。 在每種測試方法的前面加上 `[HostType("VS IDE")]`。 當您執行測試時，此主機介面卡會啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+     使用 VS IDE 主機介面卡執行測試。 在每種測試方法的前面加上 `[HostType("VS IDE")]`。 當您執行測試時，這個主機介面卡會啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
 -   [存取 DTE 和 ModelStore](#DTE)  
   
@@ -51,7 +49,7 @@ ms.locfileid: "47490488"
  您可以在程式碼範例庫的 [UML - 使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)中找到進行過單元測試的 UML 擴充功能範例。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47490488"
      這樣可確定測試將在 Visual Studio 的試驗執行個體中執行。  
   
 ##  <a name="DTE"></a> 存取 DTE 和 ModelStore  
- 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如:   
+ 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如:   
   
 ```csharp  
 using EnvDTE;  

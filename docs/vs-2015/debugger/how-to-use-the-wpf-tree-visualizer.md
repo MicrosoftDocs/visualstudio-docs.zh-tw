@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 WPF 樹狀架構視覺化檢閱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e99bdaac9feb343c594e808433d686e5d607b45
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c8eb0bae29db30c5ba3a305707d886b01b5c34d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188328"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 樹狀架構視覺化檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用 WPF 樹狀架構視覺化檢閱](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-wpf-tree-visualizer)。  
-  
 您可以使用 [WPF 樹狀架構視覺化檢閱] 瀏覽 WPF 物件的視覺化樹狀，以及檢閱該樹狀內含物件的 WPF 相依性屬性。 如需視覺化樹狀結構的詳細資訊，請參閱[WPF 中的樹狀結構](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)。 如需有關相依性屬性的詳細資訊，請參閱 <<c0> [ 相依性屬性概觀](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
   
  當您開啟 WPF 樹狀架構視覺化檢視時，您會看到兩個窗格：**視覺化樹狀結構**左邊並**的屬性**_名稱_**:** _型別_右邊的窗格。 選取中的任何物件**視覺化樹狀結構**窗格中，而**的屬性**_名稱_**:**_類型_窗格自動更新以顯示該物件的屬性。  

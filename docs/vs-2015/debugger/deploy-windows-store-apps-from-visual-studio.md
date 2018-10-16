@@ -1,7 +1,7 @@
 ---
 title: 部署 Windows 市集應用程式，從 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196101"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>從 Visual Studio 部署 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[部署 Windows 市集應用程式，從 Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio)。  
-  
 僅適用於 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
  Visual Studio 部署功能會在目標裝置上建置和註冊使用 Visual Studio 建立的 Windows 市集應用程式。 應用程式的確切註冊方式取決於目標裝置是本機還是遠端：  
@@ -112,7 +110,7 @@ ms.locfileid: "47489365"
  您可以在啟始專案的 [偵錯] 屬性頁上設定下列部署選項。  
   
  **允許網路回送**  
- 基於安全性考量，不允許以標準模式安裝的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，對其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 之前，您應該在沒有豁免的情況下測試您的應用程式。  
+ 基於安全性考量，不允許以標準模式安裝的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，對其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。  
   
  移除應用程式中的網路回送豁免：  
   

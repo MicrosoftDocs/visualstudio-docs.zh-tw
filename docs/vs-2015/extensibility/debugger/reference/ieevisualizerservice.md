@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerService |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76e0ea47c1bfaea9bac96b3faacc3a01403f829d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7d36820cc127e4fb6367336926fb9c4236193
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228744"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEEVisualizerService](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerservice)。  
-  
 > [!IMPORTANT]
 >  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   

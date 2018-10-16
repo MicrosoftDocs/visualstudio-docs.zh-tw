@@ -1,7 +1,7 @@
 ---
 title: 測試區域 4︰ 簽入 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 740ddbfbc24dacaa23200cac1632bf3cf4aef828
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca7336686fae4c62a274779ea1ad8b13fcb84ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285008"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4︰簽入
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試區域 4： 簽入](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-4-check-in)。  
-  
 此原始檔控制外掛程式的測試區域涵蓋版本存放區，以透過傳送更新的項目**簽入**命令。  
   
 ## <a name="command-menu-access"></a>命令功能表存取  

@@ -1,7 +1,7 @@
 ---
 title: 管理部署的專案組態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54ed242f0992e84a43315579c8af4017de21ef8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc39271d235db9351edf4307c838519ce89748be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230449"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理部署的專案組態](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-managing-deployment)。  
-  
 部署是指實際將從建置程序的輸出項目移至 偵錯和安裝的預期位置。 比方說，Web 應用程式可能會在本機電腦上建置，然後放在伺服器上。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援兩種方式可以在部署中牽涉到專案：  

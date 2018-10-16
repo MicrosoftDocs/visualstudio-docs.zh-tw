@@ -1,7 +1,7 @@
 ---
 title: 如何：使用類別設計工具建立類型 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7671b1336b0b722f02cc100c7055fef817cb582
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175028"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用類別設計工具建立類型](https://docs.microsoft.com/visualstudio/ide/how-to-create-types-by-using-class-designer)。  
-  
 若要為 Visual C# .NET 和 Visual Basic .NET 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型 (類別設計工具)](../ide/how-to-view-existing-types-class-designer.md)。  
   
 -   [建立新的類型](#CreateType)  

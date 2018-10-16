@@ -1,7 +1,7 @@
 ---
 title: 混合程式碼和遺失的資訊，在呼叫堆疊視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c91b2e49dc94057ab7929380ad1b819cd01731d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212208"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](https://docs.microsoft.com/visualstudio/debugger/mixed-code-and-missing-information-in-the-call-stack-window)。  
-  
 因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫 managed 程式碼時，您可能會發現下列不一致的地方**呼叫堆疊**視窗：  
   
 -   正上方的 managed 程式碼的原生框架可能遺漏**呼叫堆疊**視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 原生框架遺失於呼叫堆疊視窗時跳離 Managed 程式碼](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)。  

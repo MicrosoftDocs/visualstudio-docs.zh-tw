@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 整合 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49afd0b0f613e2617c7533f85e4f6efdd2db7e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294849"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 整合 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/visual-studio-integration-msbuild)。  
-  
   
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
   

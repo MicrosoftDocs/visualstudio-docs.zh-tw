@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f27c10b9f1c17bcd6fb62479368197901ac97e4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aed363d7f3571fa26d291858ce63ba654afaec1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186221"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugComPlusSymbolProvider2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider2)。  
-  
 代表 COM + 符號提供者特有的 managed 程式碼的方法，並延伸**IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)。  
   
 ## <a name="syntax"></a>語法  

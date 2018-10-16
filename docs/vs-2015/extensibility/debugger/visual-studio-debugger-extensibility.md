@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 偵錯工具擴充性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212611"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 偵錯工具的擴充性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 偵錯工具擴充性](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility)。  
-  
 Visual Studio 包含具全面互動性的來源的程式碼偵錯工具，提供功能強大且容易使用的工具來追蹤您的程式中的 bug。 偵錯工具會有完整支援 Visual Basic、 C#、 C/c + + 和 JavaScript。 不過，透過[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，也就是可從[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)、 其他程式設計語言可支援在相同的豐富功能的偵錯工具中。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具，在開啟，正在進行偵錯的語言專屬的偵錯元件是常見的前端 （也就是使用者介面）。 新的語言，取得所需的所有支援的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具是建立必要的後端元件，例如偵錯引擎 (DE)。 這是 where[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]傳入。  

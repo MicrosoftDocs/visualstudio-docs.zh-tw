@@ -1,7 +1,7 @@
 ---
 title: 空間索引標籤，處理序屬性對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78f65edeec910bd0667bfc369ff1d4cbddb54813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03b73263f6db5e702a44b8854517ec5ee132b561
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259918"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、空間索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[空間索引標籤，處理序屬性對話方塊](https://docs.microsoft.com/visualstudio/debugger/space-tab-process-properties-dialog-box)。  
-  
 使用**空間**檢查處理序的位址空間 索引標籤。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。  
   
  下列設定位於**空間** 索引標籤：  

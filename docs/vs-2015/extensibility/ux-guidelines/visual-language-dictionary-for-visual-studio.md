@@ -1,7 +1,7 @@
 ---
 title: 適用於 Visual Studio 的視覺化語言字典 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267627"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>適用於 Visual Studio 的視覺化語言字典
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[適用於 Visual Studio 的視覺化語言字典](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio)。  
-  
 Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖形的建置組塊的概念。 在設計新的圖示時，使用此字典來識別您想要傳遞自己的映像中的概念。  
   
  **一般指導方針**  
@@ -102,7 +100,7 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 |**取消**與 「 清除 」 和 「 刪除 」 相同|![取消圖示](../../extensibility/ux-guidelines/media/vld-c-cancel.png "VLD_C_Cancel")|![取消建置圖示](../../extensibility/ux-guidelines/media/vld-c-cancel-cancelbuild.png "VLD_C_Cancel_CancelBuild")取消建置|  
 |**擷取**|![擷取圖示](../../extensibility/ux-guidelines/media/vld-c-capture.png "VLD_C_Capture")|![擷取畫面格圖示](../../extensibility/ux-guidelines/media/vld-c-capture-captureframe.png "VLD_C_Capture_CaptureFrame")擷取框架![完整螢幕擷取畫面圖示](../../extensibility/ux-guidelines/media/vld-c-capture-fullscreenshot.png "VLD_C_Capture_FullScreenshot")完整螢幕擷取畫面![開始擷取圖形診斷圖示](../../extensibility/ux-guidelines/media/vld-c-capture-startcapturinggraphicdiagnostics.png "VLD_C_Capture_StartCapturingGraphicDiagnostics")開始擷取圖形診斷|  
 |**CD**|![CD 圖示](../../extensibility/ux-guidelines/media/vld-c-cd.png "VLD_C_CD")|![光碟機圖示](../../extensibility/ux-guidelines/media/vld-c-cd-cddrive.png "VLD_C_CD_CDDrive") CD 光碟機|  
-|**憑證**|![憑證圖示](../../extensibility/ux-guidelines/media/vld-c-certificate.png "VLD_C_Certificate")|![憑證錯誤圖示](../../extensibility/ux-guidelines/media/vld-c-certificate-certificateerror.png "VLD_C_Certificate_CertificateError")憑證錯誤![憑證警告圖示](../../extensibility/ux-guidelines/media/vld-c-certificate-certificatewarning.png "VLD_C_Certificate_CertificateWarning")憑證警告|  
+|**[MSSQLSERVER 的通訊協定內容]**|![憑證圖示](../../extensibility/ux-guidelines/media/vld-c-certificate.png "VLD_C_Certificate")|![憑證錯誤圖示](../../extensibility/ux-guidelines/media/vld-c-certificate-certificateerror.png "VLD_C_Certificate_CertificateError")憑證錯誤![憑證警告圖示](../../extensibility/ux-guidelines/media/vld-c-certificate-certificatewarning.png "VLD_C_Certificate_CertificateWarning")憑證警告|  
 |**變更集**|![變更集圖示](../../extensibility/ux-guidelines/media/vld-c-changeset.png "VLD_C_Changeset")|![群組變更集圖示](../../extensibility/ux-guidelines/media/vld-c-changeset-groupchangesets.png "VLD_C_Changeset_GroupChangesets")群組的變更集![新變更集圖示](../../extensibility/ux-guidelines/media/vld-c-changeset-newchangeset.png "VLD_C_Changeset_NewChangeset")新的變更集|  
 |**選擇切換**|![選擇切換圖示](../../extensibility/ux-guidelines/media/vld-c-choicetoggle.png "VLD_C_ChoiceToggle")|![核取方塊欄位資料行圖示](../../extensibility/ux-guidelines/media/vld-c-choicetoggle-checkboxfieldcolumn.png "VLD_C_ChoiceToggle_CheckboxFieldColumn")  核取方塊欄位資料行![核取方塊清單圖示](../../extensibility/ux-guidelines/media/vld-c-choicetoggle-checkboxlist.png "VLD_C_ChoiceToggle_CheckboxList")核取方塊清單|  
 |**類別**|![類別圖示](../../extensibility/ux-guidelines/media/vld-c-class.png "VLD_C_Class")|![加入類別圖示](../../extensibility/ux-guidelines/media/vld-c-class-addclass.png "VLD_C_Class_AddClass")加入類別![類別詳細資料工具視窗圖示](../../extensibility/ux-guidelines/media/vld-c-class-classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")類別詳細資料工具視窗|  
@@ -181,7 +179,7 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 |**財務**|![財務圖示](../../extensibility/ux-guidelines/media/vld-c-finance.png "VLD_C_Finance")|![貨幣編輯器圖示](../../extensibility/ux-guidelines/media/vld-c-finance-moneyeditor.png "VLD_C_Finance_MoneyEditor")金錢編輯器|  
 |**加上旗標**|![標有旗標的圖示](../../extensibility/ux-guidelines/media/vld-c-flagged.png "VLD_C_Flagged")|![旗標的執行緒加上旗標圖示](../../extensibility/ux-guidelines/media/vld-c-flagged-flagthreadflagged.png "VLD_C_Flagged_FlagThreadFlagged")旗標加上旗標的執行緒![旗標的執行緒不會標示圖示](../../extensibility/ux-guidelines/media/vld-c-flagged-flagthreadnotflagged.png "VLD_C_Flagged_FlagThreadNotFlagged")旗標不加上旗標的執行緒![僅顯示已標幟的執行緒圖示](../../extensibility/ux-guidelines/media/vld-c-flagged-showonlyflaggedthreads.png "VLD_C_Flagged_ShowOnlyFlaggedThreads")僅顯示已標幟的執行緒|  
 |**流程**|![Flow 圖示](../../extensibility/ux-guidelines/media/vld-c-flow.png "VLD_C_Flow")||  
-|[資料夾]|![資料夾圖示](../../extensibility/ux-guidelines/media/vld-c-folder.png "VLD_C_Folder")|![文件庫圖示](../../extensibility/ux-guidelines/media/vld-c-folder-documentslibrary.png "VLD_C_Folder_DocumentsLibrary")文件庫![尋找在 [檔案] 圖示](../../extensibility/ux-guidelines/media/vld-c-folder-findinfiles.png "VLD_C_Folder_FindInFiles") 檔案中尋找![資料夾開啟圖示](../../extensibility/ux-guidelines/media/vld-c-folder-folderopen.png "VLD_C_Folder_FolderOpen")資料夾開啟![連結資料夾開啟圖示](../../extensibility/ux-guidelines/media/vld-c-folder-linkedfolderopen.png "VLD_C_Folder_LinkedFolderOpen")連結開啟資料夾|  
+|**資料夾**|![資料夾圖示](../../extensibility/ux-guidelines/media/vld-c-folder.png "VLD_C_Folder")|![文件庫圖示](../../extensibility/ux-guidelines/media/vld-c-folder-documentslibrary.png "VLD_C_Folder_DocumentsLibrary")文件庫![尋找在 [檔案] 圖示](../../extensibility/ux-guidelines/media/vld-c-folder-findinfiles.png "VLD_C_Folder_FindInFiles") 檔案中尋找![資料夾開啟圖示](../../extensibility/ux-guidelines/media/vld-c-folder-folderopen.png "VLD_C_Folder_FolderOpen")資料夾開啟![連結資料夾開啟圖示](../../extensibility/ux-guidelines/media/vld-c-folder-linkedfolderopen.png "VLD_C_Folder_LinkedFolderOpen")連結開啟資料夾|  
 |**字型**|![字型圖示](../../extensibility/ux-guidelines/media/vld-c-font.png "VLD_C_Font")|![字型色彩圖示](../../extensibility/ux-guidelines/media/vld-c-font-fontcolor.png "VLD_C_Font_FontColor")字型色彩![字型大小圖示](../../extensibility/ux-guidelines/media/vld-c-font-fontsize.png "VLD_C_Font_FontSize")字型大小![細明體圖示](../../extensibility/ux-guidelines/media/vld-c-font-serif.png "VLD_C_Font_Serif")細明體|  
 |**Frame**|![畫面格圖示](../../extensibility/ux-guidelines/media/vld-c-frame.png "VLD_C_Frame")||  
 |**Friend**|![好友圖示](../../extensibility/ux-guidelines/media/vld-c-friend.png "VLD_C_Friend")||  

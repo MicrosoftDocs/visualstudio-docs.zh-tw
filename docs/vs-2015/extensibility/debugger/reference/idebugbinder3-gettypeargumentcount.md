@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetTypeArgumentCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adeb207f0063d39144b076a195641de192967187
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 548122d108753dcd5c8dec7b79eae34397b20a1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228770"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugBinder3::GetTypeArgumentCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder3-gettypeargumentcount)。  
-  
 這個方法會傳回與這個物件相關聯的引數類型的數目。  
   
 ## <a name="syntax"></a>語法  

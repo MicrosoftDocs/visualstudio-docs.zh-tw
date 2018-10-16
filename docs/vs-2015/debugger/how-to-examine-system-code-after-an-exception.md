@@ -1,7 +1,7 @@
 ---
 title: 如何： 在例外狀況後檢查系統程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c66e77a2e5cc7596bb8473678b84f962453df41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91b0f0ba806868420b56f59d1b3f6de99a87886b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255771"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>如何：在發生例外狀況後檢查系統程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢查系統程式碼之後例外狀況](https://docs.microsoft.com/visualstudio/debugger/how-to-examine-system-code-after-an-exception)。  
-  
 發生例外狀況 (Exception) 時，您可能必須檢查系統呼叫內部的程式碼，判斷造成例外狀況的原因。 下列程序說明如果您沒有載入系統程式碼的符號，或是在已經啟用 Just My Code 的情況下，如何執行這項工作。  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>若要在發生例外狀況後檢查系統程式碼  

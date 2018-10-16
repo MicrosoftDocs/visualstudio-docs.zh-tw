@@ -1,7 +1,7 @@
 ---
 title: 適用於 Visual Studio 的版面配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25ba43a08bc2c886302894d891800ac1db87a18a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254747"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Layout for Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/layout-for-visual-studio)。  
-  
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  
   
 ##  <a name="BKMK_UtilityDialogLayout"></a> 公用程式的對話方塊版面配置  

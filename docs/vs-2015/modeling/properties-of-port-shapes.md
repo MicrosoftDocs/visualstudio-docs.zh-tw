@@ -1,7 +1,7 @@
 ---
 title: 通訊埠圖案的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eedc86aaa0c711ee847f82bf008164d2f003bb3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcb6ad091d0b65e5b368f5822659a909e9f4c42a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290702"
 ---
 # <a name="properties-of-port-shapes"></a>通訊埠圖案的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性的通訊埠圖案](https://docs.microsoft.com/visualstudio/modeling/properties-of-port-shapes)。  
-  
 您可以使用連接埠圖形來表示產生的設計工具中的網域類別。  
   
  如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  

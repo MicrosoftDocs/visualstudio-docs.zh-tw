@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_compilergenerated |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e5201bbdf001fd5ff6d5171f43ea72a3e019ab4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1af2e571b7aec216ff5bbbe95aff17d293e6e70b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217109"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_compilergenerated](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-compilergenerated)。  
-  
 擷取指出編譯器是否產生符號的旗標。  
   
 ## <a name="syntax"></a>語法  

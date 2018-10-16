@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_guid |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ee041dfe1f1878180d444b9199be03016088f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 097d3e0261ffb219530e79e9384f01e377742ba6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488340"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184128"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_guid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-guid)。  
-  
 擷取符號的全域唯一識別碼 (GUID)。  
   
 ## <a name="syntax"></a>語法  

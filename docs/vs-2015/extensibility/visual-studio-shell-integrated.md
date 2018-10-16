@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Shell （整合模式） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e5247261a94b04e1730398f0d8c751ff1a020d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60456a99023067e76a4396cb18990b9d0f900920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296436"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （整合模式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

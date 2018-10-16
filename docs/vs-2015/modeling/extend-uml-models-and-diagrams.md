@@ -1,7 +1,7 @@
 ---
 title: 擴充 UML 模型和圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179123"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>擴充 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充 UML 模型和圖表](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams)。  
-  
-本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看哪些版本的 Visual Studio 支援每個模型類型和工具，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看支援各種模型類型和工具的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  在下列範例案例中，Fabrikam 設計並安裝了機場行李處理系統。 機場專案之間在基本設備與控制的軟體上有許多共通點。 但是其中也有些大相逕庭之處，例如輸送帶的配置、登機報到櫃檯、儲物箱和其他處理行李的設備。  
   
@@ -122,7 +120,7 @@ ms.locfileid: "47484989"
 |------------------|---------------|  
 |**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： UML 工具和擴充性](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML 搭配 Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>另請參閱  

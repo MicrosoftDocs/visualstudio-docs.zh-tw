@@ -1,7 +1,7 @@
 ---
 title: GenerateResource 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60160cf2d22756904dab4b3b0317bd67c84f4ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212494"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[GenerateResource 工作](https://docs.microsoft.com/visualstudio/msbuild/generateresource-task)。  
-  
   
 在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)。  
   

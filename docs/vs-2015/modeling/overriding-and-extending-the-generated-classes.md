@@ -1,7 +1,7 @@
 ---
 title: 覆寫及擴充產生的類別 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268162"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[覆寫及擴充產生的類別](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes)。  
-  
 您的 DSL 定義是，您可以在其建置一組強大的工具以特定領域語言為基礎的平台。 許多擴充功能和採用可覆寫及擴充從 DSL 定義產生的類別。 這些類別包括不只是您在 DSL 定義圖表中，明確定義網域類別，但其他類別，定義工具箱、 總管、 序列化和等等。  
   
 ## <a name="extensibility-mechanisms"></a>擴充性機制  

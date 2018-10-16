@@ -1,7 +1,7 @@
 ---
 title: 如何： 存取及限制目前的選取範圍 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187567"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 存取及限制目前的選取範圍](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection)。  
-  
 當您撰寫您的網域特定語言的命令或軌跡處理常式時，您可以判斷哪些使用者以滑鼠右鍵按一下的項目。 您也可以防止某些圖形或欄位被選取。 例如，您可以排列，當使用者按一下圖示裝飾項目，包含它的形狀會改為選取。 限制這種方式中的選取範圍減少，您必須撰寫處理常式。 它也會讓您更輕鬆的使用者，可以按一下任何位置中的圖形而不需要避免裝飾項目。  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>從命令處理常式存取目前的選取範圍  

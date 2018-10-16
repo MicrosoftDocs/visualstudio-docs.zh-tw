@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::Execute |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e727d58c9287077364b851f5ade18f89eebd248
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2c7c26ed08a5c0770eafd1f49916676a432c1ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191499"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcess3::Execute](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-execute)。  
-  
 會繼續執行此程序，從停止的狀態。 在清除任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。  
   
 > [!NOTE]

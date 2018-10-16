@@ -1,7 +1,7 @@
 ---
 title: 報告巨集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224376"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[報告巨集](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting)。  
-  
 您可以使用 **_RPTn**，並 **_RPTFn** CRTDBG 中定義的巨集。H，來取代使用`printf`陳述式中的偵錯。 這些巨集會自動地消失在您的發行組建 **_DEBUG**未定義，因此不需要括住在 **#ifdef**s。  
   
 |巨集|描述|  

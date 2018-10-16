@@ -1,7 +1,7 @@
 ---
 title: MSBuild 專案檔中保存的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187683"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 專案檔中的保存資料](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file)。  
-  
 專案子類型可能需要將子類型特定的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔案持續性，以符合下列需求：  
   
 1.  保存資料做為建置專案的一部分。 (如需有關 Microsoft Build Engine 的詳細資訊，請參閱[MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)可以與組建相關的資訊：  

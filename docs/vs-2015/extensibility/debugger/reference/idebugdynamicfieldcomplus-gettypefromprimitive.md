@@ -1,7 +1,7 @@
 ---
 title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 594c8da09d3848ca809b70d271904e5af34de8b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f8ce700b48579e885b1e8c9c22899efb2c8627
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223388"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive)。  
-  
 擷取給定其基本類型的類型。  
   
 ## <a name="syntax"></a>語法  

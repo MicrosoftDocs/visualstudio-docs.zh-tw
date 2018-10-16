@@ -1,7 +1,7 @@
 ---
 title: 使用設計工具建立 SQL database |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220746"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用設計工具建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用設計工具建立 SQL database](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer)。  
-  
   
 您可以查看基本工作，例如加入資料表和資料行，以定義可以使用 Visual Studio 來建立和更新 SQL Server Express LocalDB 中的本機資料庫檔案。 當您完成本逐步解說之後，您可以使用本機資料庫做為其他逐步解說的起點，探索更多進階的功能。  
   

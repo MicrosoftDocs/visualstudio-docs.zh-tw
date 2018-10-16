@@ -1,7 +1,7 @@
 ---
 title: 程式碼產生和 T4 文字範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229816"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼產生和 T4 文字範本](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates)。  
-  
-在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，則*T4 文字範本*混合了文字區塊及可產生文字檔案的控制邏輯。 控制邏輯撰寫的程式碼片段[!INCLUDE[csprcs](../includes/csprcs-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 在 Visual Studio 2015 Update 2 (含) 以後版本中，您可以在 T4 範本指示詞中使用 C# 6.0 版功能。 產生的檔案可以是任何類型的文字，例如網頁、資源檔或任何語言的原始程式碼。  
+在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中， *「T4 文字範本」* (T4 text template) 混合了文字區塊及可產生文字檔案的控制邏輯。 控制邏輯是由 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]撰寫的程式碼片段。 在 Visual Studio 2015 Update 2 (含) 以後版本中，您可以在 T4 範本指示詞中使用 C# 6.0 版功能。 產生的檔案可以是任何類型的文字，例如網頁、資源檔或任何語言的原始程式碼。  
   
  T4 文字範本有兩種：  
   
@@ -58,14 +56,14 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- 不需要在電腦上執行您的應用程式，可以[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安裝。  
+ 應用程式可以在未安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上執行。  
   
  若要建立執行階段範本，請將 [前置處理過的文字範本]  檔案加入專案中。 此外，您也可以加入純文字檔，並將其 [自訂工具]  屬性設定為 [TextTemplatingFilePreprocessor] 。  
   
  如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。 如需詳細的範本語法的詳細資訊，請參閱[撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
- **設計階段 T4 文字範本**以執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以定義來源程式碼的一部分及應用程式的其他資源。  
- 您通常會使用幾個範本讀取單一輸入檔案或資料庫中的資料，然後產生部分 `.cs`、 `.vb`或其他原始程式檔。 每個範本都會產生一個檔案， 它們會執行內[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
+ **設計階段 T4 文字範本** 會在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中執行，以定義原始程式碼的一部分及應用程式的其他資源。  
+ 您通常會使用幾個範本讀取單一輸入檔案或資料庫中的資料，然後產生部分 `.cs`、 `.vb`或其他原始程式檔。 每個範本都會產生一個檔案， 並且在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]中執行。  
   
  例如，輸入資料可以是組態資料的 XML 檔案。 每當您在開發期間編輯 XML 檔案時，文字範本就會重新產生應用程式程式碼的一部分。 其中一個範本可能類似下列範例：  
   
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  從模型產生程式碼和其他資源，可讓您藉由更新模型，來更新您的應用程式。  
   
  [建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)  
- 如果您已安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Visualization and Modeling SDK，您可以確保產生的軟體會在模型中保留最新的變更。  
+ 如果您已安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK，即可確保產生的軟體具有模型中的最新變更。  
   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)  
  文字範本檔案的語法。  

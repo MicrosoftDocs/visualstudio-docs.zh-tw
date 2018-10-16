@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::GetCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f4def3d2-7cc9-4cd2-9649-3b7e00a76220
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 855893d156d5fd443bf7f2067e1623d1ed501754
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5a501df87adc4312e4644e2c763407f83652ac8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220905"
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugModules2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2-getcount)。  
-  
 列舉中傳回的項目數。  
   
 ## <a name="syntax"></a>語法  

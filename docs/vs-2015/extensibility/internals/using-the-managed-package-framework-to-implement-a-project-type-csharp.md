@@ -1,7 +1,7 @@
 ---
 title: 使用 Managed 的 Package Framework 實作專案類型 (C#) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72d2ce8d817ab0d01a1a54f5e001165cd943c478
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: faedd7d5630205679c851ab5f9d6b46bbe25e3ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213729"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Managed Package Framework 專案類型 (C#)](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp)。  
-  
 Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承自實作您自己的專案類型。 MPF 實作許多介面的 Visual Studio 必須是專案類型提供，讓您自由地專注於實作您的專案類型的特定項目。  
   
 ## <a name="using-the-mpf-project-source-code"></a>使用 MPF 專案原始程式碼  

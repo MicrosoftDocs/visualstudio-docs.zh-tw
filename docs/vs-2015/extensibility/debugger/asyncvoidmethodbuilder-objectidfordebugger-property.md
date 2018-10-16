@@ -1,7 +1,7 @@
 ---
 title: AsyncVoidMethodBuilder.ObjectIdForDebugger 屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba9dd5465501b2d48d88a6411da7692e603eb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e646b4044b77cdf62b0abbc2ae6dea008fed554
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208232"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[AsyncVoidMethodBuilder.ObjectIdForDebugger 屬性](https://docs.microsoft.com/visualstudio/extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property)。  
-  
 取得物件，可用來唯一識別這個產生器偵錯工具。  
   
- **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll 中)  
   

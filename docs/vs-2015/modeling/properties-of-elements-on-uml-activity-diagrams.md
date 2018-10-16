@@ -1,7 +1,7 @@
 ---
 title: UML 活動圖表元素的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269975"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>UML 活動圖表中的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 活動圖表上的項目屬性](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams)。  
-  
 在 UML 活動圖表上，每個項目都具有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]

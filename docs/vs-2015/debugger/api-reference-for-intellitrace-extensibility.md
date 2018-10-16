@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 擴充性的 API 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2956378c8da8d9488ad74db58ce54614411c34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0506044893049c54ff76ebc39e79d84629b51724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295083"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IntelliTrace 擴充性的 API 參考](https://docs.microsoft.com/visualstudio/debugger/api-reference-for-intellitrace-extensibility)。  
-  
 使用本節中的資訊，您可以使用 IntelliTrace 擴充性 API 來讀取及解碼應用程式中的 .itrace 檔案。  
   
 ## <a name="in-this-section"></a>本節內容  

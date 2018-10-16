@@ -1,7 +1,7 @@
 ---
 title: 使用分析工具命令列收集獨立應用程式的 .NET Framework 記憶體資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fb43237b030cb5c8d4dea040b5f9fc480bc7fe9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 069d930a4670cac87e31720a38afc6c857769909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193073"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集獨立應用程式的 .NET Framework 記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[獨立應用程式使用 Profiler 命令列收集.NET Framework 記憶體資料](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line)。  
-  
 本節說明從命令列使用取樣方法收集 .NET 用戶端 (獨立) 應用程式之記憶體配置和物件存留期資料的程序和選項。  
   
 ## <a name="common-tasks"></a>一般工作  

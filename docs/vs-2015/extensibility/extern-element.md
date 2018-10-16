@@ -1,7 +1,7 @@
 ---
 title: Extern 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dce51835164424272874b42b6073131607c7272
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc1b406fa0675a481b538446f9c4bf0716475872
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171875"
 ---
 # <a name="extern-element"></a>Extern 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Extern 元素](https://docs.microsoft.com/visualstudio/extensibility/extern-element)。  
-  
 Extern 元素會參考在編譯時期合併使用.vsct 檔的任何外部標頭 (.h) 檔案。 要合併的檔案必須位於 Include 路徑指定給 VSCT 編譯器，或是參照[包含的項目](../extensibility/include-element.md)。 檔案可能是其他.vsct 檔案或 c + + 標頭檔。  
   
  標頭檔中的定義的格式必須是"#define [符號] [Value]"的值可能是另一個符號，如果先前已定義。 定義可用於條件陳述式的命令項目。 將捨棄任何並未實際使用的符號。  

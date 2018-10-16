@@ -1,7 +1,7 @@
 ---
 title: ShowByDefault （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063836d07931456d99bce31c793866e7d5421c91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9144992e2c6f76970e070ecc929d98a39375c1bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299633"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ShowByDefault （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/showbydefault-visual-studio-templates)。  
-  
 如果`false`，指定範本只會顯示在指定[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)。  
   
  \<VSTemplate >  

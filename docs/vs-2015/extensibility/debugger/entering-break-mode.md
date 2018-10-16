@@ -1,7 +1,7 @@
 ---
 title: 進入中斷模式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25adcc12e6d474899165c1a486fd550f34dd99a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4fe6dc7e2739e9f41e43e0f90ec9257c18b9fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233658"
 ---
 # <a name="entering-break-mode"></a>進入中斷模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[進入中斷模式](https://docs.microsoft.com/visualstudio/extensibility/debugger/entering-break-mode)。  
-  
 以下說明逐步執行函式、 執行中，有資料指標的原始碼的行，或執行至中斷點之後遇到中斷點時所發生的程序。  
   
 ## <a name="break-mode-process"></a>中斷模式處理序  

@@ -1,7 +1,7 @@
 ---
 title: 物件存留期檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202848"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[物件存留期檢視](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view)。  
-  
 在 [效能工作階段] 屬性頁上核取 [Also collect .NET object lifetime data (同時收集 .NET 物件存留期的資料)] 時，可以使用 [物件存留期] 檢視。  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的記憶體回收行程可管理應用程式的記憶體配置和釋放。 為了要最佳化記憶體回收行程的效能，Managed 堆積分成三個層代 (Generation)：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存至世代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。  

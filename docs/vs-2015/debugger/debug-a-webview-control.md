@@ -1,7 +1,7 @@
 ---
 title: 偵錯 WebView 控制項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6b75f9dadbe1223c41989ff148028a355157bff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb004576546fd028b97fa3ebb2b68ad8f4ee2f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189835"
 ---
 # <a name="debug-a-webview-control"></a>偵錯 WebView 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 WebView 控制項](https://docs.microsoft.com/visualstudio/debugger/debug-a-webview-control)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  若要在 Windows 執行階段應用程式中檢查及偵錯 `WebView` 控制項，您可以設定 Visual Studio 在您啟動應用程式時附加指令碼偵錯工具。 從 Visual Studio 2013 Update 2 開始，您有兩種方法可以使用偵錯工具與 `WebView` 控制項互動：  

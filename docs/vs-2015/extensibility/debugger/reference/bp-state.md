@@ -1,7 +1,7 @@
 ---
 title: BP_STATE |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6fc9cdcdedb9b733da27489232558f394879cc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8973bf18fdcf81d174216568b753cdd805f483bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288713"
 ---
 # <a name="bpstate"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BP_STATE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-state)。  
-  
 指定的繫結中斷點存在，也會指定是否已啟用。  
   
 ## <a name="syntax"></a>語法  

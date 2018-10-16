@@ -1,7 +1,7 @@
 ---
 title: 錯誤： TRANSACT-SQL 執行未經偵錯即結束 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7de8aaba3abf4ef7c767ed549b5454b1599e808d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241666"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： TRANSACT-SQL 執行未經偵錯即結束](https://docs.microsoft.com/visualstudio/debugger/error-transact-sql-execution-ended-without-debugging)。  
-  
 當您嘗試偵錯 Transact-SQL 或 SQLCLR 程序，而且偵錯工作沒有從 SQL Server 接收偵錯訊息時，便會發生這個錯誤。  
   
  這可能是因為網路問題或 SQL Server 上的問題，不過最有可能是使用權限的問題。  
@@ -60,7 +58,7 @@ ms.locfileid: "47499392"
  [設定 SQL 偵錯](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
  [如何： 設定 SQL Server 權限偵錯](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

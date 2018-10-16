@@ -1,7 +1,7 @@
 ---
 title: 定義鎖定原則來建立唯讀區 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231409"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義鎖定原則來建立唯讀區段](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments)。  
-  
 不變性 API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 可讓程式鎖定部分或完整定義域專屬語言 (DSL) 模型，讓它可以讀取但不是會變更。 無法使用這個唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。  
   
  此外，身為作者的 DSL，您可以定義*鎖定原則。* 鎖定的原則會定義哪些鎖定是允許、 不允許，或強制。 比方說，當您發行 DSL，您可以建議第三方開發人員擴充新的命令。 不過，您也可以使用 鎖定原則，防止它們改變模型的指定組件的唯讀狀態。  

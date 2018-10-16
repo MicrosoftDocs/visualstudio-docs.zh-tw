@@ -1,7 +1,7 @@
 ---
 title: 編輯 XSLT 樣式表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc7cb28171711de757708b80f6a2745c1187151b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dd25a531682c74284a74f065dc729f37ac7fb1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286997"
 ---
 # <a name="editing-xslt-style-sheets"></a>編輯 XSLT 樣式表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯 XSLT 樣式表](https://docs.microsoft.com/visualstudio/xml-tools/editing-xslt-style-sheets)。  
-  
   
 XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器功能，如 IntelliSense、大綱、XML 片段等。 此外，還有可讓您在 XSLT 中更輕鬆地進行開發的新功能。  
   

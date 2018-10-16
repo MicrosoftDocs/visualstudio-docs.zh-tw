@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中的比對的大括號 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3a2267805681b092c7a48537e72e5f0ca0b3ecb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7742b54b69cea8d1f814a4ac4fd8cc190dfe2b99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265053"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的括號對稱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務中的大括號比對](https://docs.microsoft.com/visualstudio/extensibility/internals/brace-matching-in-a-legacy-language-service)。  
-  
 大括號比對，可協助開發人員追蹤發生在一起，例如括號和大括號所需要的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  
   
  您可以比對兩個或三個共同發生的項目，稱為組和三合一。 三合一是共同發生的三個元素的集合。 比方說，在 C# 中，`foreach`陳述式構成三重物件:"`foreach()`"，"`{`"，和 「`}`"。 輸入右括號時，會反白顯示三個項目。  

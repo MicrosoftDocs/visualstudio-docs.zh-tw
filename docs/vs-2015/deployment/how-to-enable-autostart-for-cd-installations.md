@@ -1,7 +1,7 @@
 ---
 title: 如何： 啟用 CD 安裝的 AutoStart |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7a0f7228e4340763104f38dc56e5e8603ed85408
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273139"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>如何：啟用 CD 安裝的 AutoStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 啟用 CD 安裝的 AutoStart](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-autostart-for-cd-installations)。  
-  
 部署時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]透過卸除式媒體例如 CD-ROM 或 DVD-ROM 的應用程式，您可以讓`AutoStart`以便[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]插入媒體時，將會自動啟動應用程式。  
   
  `AutoStart` 您可以上啟用**發佈**頁面**專案設計工具**。  

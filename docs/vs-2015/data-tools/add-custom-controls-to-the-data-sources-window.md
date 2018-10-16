@@ -1,7 +1,7 @@
 ---
 title: 將自訂控制項加入至資料來源視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183634"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將自訂控制項加入至資料來源視窗](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window)。  
-  
   
 當您拖曳的項目**Zdroje dat**至設計介面，以建立資料繫結控制項的視窗，您可以選取您所建立的控制項型別。 在視窗中的每個項目具有會顯示您可以選擇從控制項下拉式清單。 一組控制項與每個項目相關聯取決於項目的資料型別。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
   

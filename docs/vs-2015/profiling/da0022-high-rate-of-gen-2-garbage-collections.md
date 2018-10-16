@@ -1,7 +1,7 @@
 ---
 title: DA0022：高比率的 Gen 2 記憶體回收 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a6eb6c7bb95357bfbcfd25f9741316f59835aeb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 270f2b90894c1dc7ede8f45c34c1e4c542fae56a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200391"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022：高比率的 Gen 2 記憶體回收
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0022： 高比率的 Gen 2 記憶體回收](https://docs.microsoft.com/visualstudio/profiling/da0022-high-rate-of-gen-2-garbage-collections)。  
-  
 規則 Id |DA0022 |  
 |類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  

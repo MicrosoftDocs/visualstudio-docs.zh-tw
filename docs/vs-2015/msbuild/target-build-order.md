@@ -1,7 +1,7 @@
 ---
 title: 目標建置順序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e17a0556e7ab5cef2d600327af5a6e3b24f15b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241236"
 ---
 # <a name="target-build-order"></a>目標建置順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[目標建置順序](https://docs.microsoft.com/visualstudio/msbuild/target-build-order)。  
-  
   
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   

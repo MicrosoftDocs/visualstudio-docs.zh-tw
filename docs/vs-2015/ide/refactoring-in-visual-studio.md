@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中重構 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4af183871634a4008d48226b171383e8e87ae88
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303793"
 ---
 # <a name="refactoring-in-visual-studio"></a>在 Visual Studio 中重構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中的程式碼產生](https://docs.microsoft.com/visualstudio/ide/code-generation-in-visual-studio)。  
-  
 重構是修改程式碼的流程，以使其更容易維護、了解和擴充，但不會變更其行為。 某些常見的「重構」包含：  
   
 1.  將長函式分割成較小的函式  

@@ -1,7 +1,7 @@
 ---
 title: 實作自訂類別和顯示項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218669"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[實作的自訂類別和顯示項目](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items)。  
-  
 VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 透過自訂類別和顯示項目。  
   
  自訂類別和顯示項目位於**字型和色彩**屬性頁。 若要開啟 **字型和色彩** 屬性頁面上**工具**功能表上，按一下 **選項**。 依序展開**環境**，然後按一下**字型和色彩**。  

@@ -1,7 +1,7 @@
 ---
 title: 工具箱、資料索引標籤 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b844e3c9caf20cf0fff873c6485b8324a8dbe26b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307647"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[工具箱、 資料 索引標籤](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-data-tab)。  
-  
   
 顯示您可以新增至表單和元件的資料物件。 當您建立具有相關聯設計工具的專案時，會顯示 [工具箱] 的 [資料] 索引標籤。 [工具箱] 預設會出現在 Visual Studio 整合式開發環境中；如果您需要顯示 [工具箱]，請從 [檢視] 功能表中選取 [工具箱]。  
   

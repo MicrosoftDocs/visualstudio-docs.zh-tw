@@ -1,7 +1,7 @@
 ---
 title: Just My Code |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273932"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Just My Code](https://docs.microsoft.com/visualstudio/debugger/just-my-code)。  
-  
 使用 .NET Framework 語言的開發人員皆熟悉 Just My Code 偵錯工具功能，此功能於系統、架構以及其他非使用者呼叫逐步執行，並在 [呼叫堆疊] 視窗中摺疊這些呼叫。 Just My Code 已延伸到 JavaScript 和 C++ 語言。 本主題描述在 .NET Framework 專案、原生 C++ 專案以及 JavaScript 專案中使用 Just My Code 的細節。  
   
 ##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 啟用或停用 Just My Code  

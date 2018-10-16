@@ -1,7 +1,7 @@
 ---
 title: AsyncTaskMethodBuilder 結構-內部成員 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b17ebde347d2558c8d18277d5c49d066243034
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4f0c8cc8e011edb6f69b274816d295046bc76da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210752"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 結構 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[AsyncTaskMethodBuilder 結構-內部成員](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-structure-internal-members)。  
-  
 本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>參考主題。  
   
- **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll 中)  
   

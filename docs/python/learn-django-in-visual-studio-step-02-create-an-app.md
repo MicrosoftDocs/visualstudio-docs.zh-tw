@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995959"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547928"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 如果您不在規則運算式中使用尾端的 $ (如同 `^home`)，URL 模型將會符合以 "home" 開頭的*任何* URL，例如 "home"、"homework"、"homestead" 及 "home192837"。
 
-若要使用不同的規則運算式進行實驗，請嘗試使用如 [pythex.org](http://www.pythex.org) \(英文\) 的 [regex101.com](https://regex101.com) \(英文\) 等線上工具。
+若要使用不同的規則運算式進行實驗，請嘗試使用如 [pythex.org](https://www.pythex.org) \(英文\) 的 [regex101.com](https://regex101.com) \(英文\) 等線上工具。
 
 ## <a name="step-2-3-render-a-view-using-html"></a>步驟 2-3：使用 HTML 轉譯檢視
 

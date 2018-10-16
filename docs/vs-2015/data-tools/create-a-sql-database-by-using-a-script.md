@@ -1,7 +1,7 @@
 ---
 title: 使用指令碼中建立 SQL database |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9a2e3fdeccf8e3b094bd5fb1519d740cee7ce41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266587"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>使用指令碼中建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用指令碼中建立 SQL database](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-script)。  
-  
   
 在本逐步解說中，您可以使用 Visual Studio 建立一個小型資料庫，其中包含的範例程式碼[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。  
   

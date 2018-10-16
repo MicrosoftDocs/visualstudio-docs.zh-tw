@@ -1,7 +1,7 @@
 ---
 title: 執行緒詳細資料檢視 - 爭用資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dd4ed90a30146a75132fcf0954b7b50fba87a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275531"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行緒詳細資料檢視-爭用資料](https://docs.microsoft.com/visualstudio/profiling/thread-details-view-contention-data)。  
-  
 執行緒詳細資料檢視會在時間軸圖形顯示因爭用資源，而在程式碼剖析執行選取的執行緒中造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制該執行緒暫停執行而發生封鎖事件。  
   
  此檢視會在執行緒的水平時間軸上，以橫條表示執行緒的執行時間軸，並以直條表示封鎖事件。 如有必要，您可以放大時間軸的某區段來檢視個別事件。 若要檢視造成該事件的函式執行路徑，請按一下事件列。 該函式隨即出現在 [呼叫堆疊] 視窗中。 當函式的原始程式碼可供使用時，您可以按一下函式名稱，在 Visual Studio IDE 中編輯原始程式檔。  

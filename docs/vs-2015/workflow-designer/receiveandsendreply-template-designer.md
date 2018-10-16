@@ -1,7 +1,7 @@
 ---
 title: ReceiveAndSendReply 範本設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 098df3cd22736ce5a187ca9988be6906c81a3fb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6536ea4053e889e45fa85d2230a73c446bd1feea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302987"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 樣板設計工具
 **ReceiveAndSendReply**範本用來建立一對預先設定<xref:System.ServiceModel.Activities.Receive>並<xref:System.ServiceModel.Activities.SendReply>內的活動<xref:System.Activities.Statements.Sequence>一部分的要求/回應訊息交換相互關聯的活動在伺服器上的模式。  

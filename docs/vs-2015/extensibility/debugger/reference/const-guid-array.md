@@ -1,7 +1,7 @@
 ---
 title: CONST_GUID_ARRAY |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73bf618000deba98523918003214717f77a6a360
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0494d7136e2f00264fca9caca9b507ebf59fef8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295752"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CONST_GUID_ARRAY](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/const-guid-array)。  
-  
 結構，可保存一份`GUID`s。  
   
 ## <a name="syntax"></a>語法  

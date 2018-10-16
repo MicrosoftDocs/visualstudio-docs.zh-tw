@@ -1,7 +1,7 @@
 ---
 title: 設定要從資料來源視窗拖曳時要建立的控制項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d869f226206923a6e45646611b715786bfc5995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489604"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293679"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定要從資料來源視窗拖曳時要建立的控制項](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window)。  
-  
   
 您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 在每個項目**Zdroje dat**視窗已將它拖曳至設計工具時，會建立一個預設控制項。 不過，您可以選擇建立不同的控制項。  
   

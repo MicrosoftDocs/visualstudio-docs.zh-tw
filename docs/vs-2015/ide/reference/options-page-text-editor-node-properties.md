@@ -1,7 +1,7 @@
 ---
 title: 文字編輯器節點屬性、選項頁 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 945b1b41abf44c8525677bfb332afdf9f6f7788f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241900"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選項頁，文字編輯器節點屬性](https://docs.microsoft.com/visualstudio/ide/reference/options-page-text-editor-node-properties)。  
-  
   
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
   

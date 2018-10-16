@@ -1,14 +1,14 @@
 ---
 title: 遠端偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -24,18 +24,16 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306523"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[遠端偵錯](https://docs.microsoft.com/visualstudio/debugger/remote-debugging)。  
-  
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。  若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。  
   
  這裡的資訊適用於 Windows 桌面應用程式和 ASP.NET 應用程式。  如需遠端偵錯 Windows 市集應用程式和 Azure 的應用程式的資訊，請參閱[對 Windows 市集和 Azure 應用程式遠端偵錯](#bkmk_winstoreAzure)。  

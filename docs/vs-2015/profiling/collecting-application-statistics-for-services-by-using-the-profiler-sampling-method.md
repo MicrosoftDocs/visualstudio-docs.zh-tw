@@ -1,7 +1,7 @@
 ---
 title: 使用分析工具取樣方法收集服務的應用程式統計資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02936803b969c3e73410608ed0c5bf35c44db91b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a847777ad3d5b12162eedc8e998098ad20926a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295551"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用程式碼剖析工具取樣方法收集服務的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[服務使用 Profiler 取樣方法收集應用程式統計資料](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method)。  
-  
 本節說明從命令列使用取樣方法收集 Windows 服務之效能統計資料的程序和選項。  
   
 > [!NOTE]

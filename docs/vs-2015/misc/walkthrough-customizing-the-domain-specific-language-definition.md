@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 自訂特定領域語言定義 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 0d43ee116b690fcb9cf0ab92e3f7b0c91a3d5c3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 949a491666797508c96ecab440467b16f16ab481
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292769"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>逐步解說：自訂特定領域語言定義
 本內容已過時。 請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。

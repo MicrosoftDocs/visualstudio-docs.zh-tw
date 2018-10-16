@@ -1,7 +1,7 @@
 ---
 title: IDebugModule2::ReloadSymbols_Deprecated |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a8c42ddcde84524819f2c8f828fa72c8617d423
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53dfbc71239eacba447a36cf95430e5c5da461a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214418"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugModule2::ReloadSymbols_Deprecated](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated)。  
-  
 已過時。 請勿使用。 重新載入此模組的符號。  
   
 ## <a name="syntax"></a>語法  

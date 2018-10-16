@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::EnumCustomAttributes |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c516d85a11e6d4e85cf86cf56f740e2f2bf7cf84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b889c21c5822761fe32cacaf725ddba4812dc2f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213456"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugCustomAttributeQuery2::EnumCustomAttributes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes)。  
-  
 取得附加至這個欄位的所有自訂屬性的列舉值。  
   
 ## <a name="syntax"></a>語法  

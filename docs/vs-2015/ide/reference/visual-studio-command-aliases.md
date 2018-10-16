@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 命令別名 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62811b3ac422efe91778695ba20e3fad01f6eb37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240431"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 命令別名](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-command-aliases)。  
-  
   
 別名提供一種在 [尋找/命令] 方塊或 [命令] 視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案] 對話方塊。  
   

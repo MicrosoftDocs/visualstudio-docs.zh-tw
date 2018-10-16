@@ -1,7 +1,7 @@
 ---
 title: 色彩和樣式設定適用於 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 355df1e0b0697470637f4bf79ad0eea15c4cd7c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267406"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[色彩和樣式設定適用於 Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/colors-and-styling-for-visual-studio)。  
-  
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的色彩  
  在 Visual Studio 中，會使用主要是當做通訊工具，而不只是裝飾的色彩。 最少使用的色彩，並保留您想要的情況下：  
   

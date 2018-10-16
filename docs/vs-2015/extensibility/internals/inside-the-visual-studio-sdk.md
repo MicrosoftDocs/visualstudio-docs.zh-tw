@@ -1,7 +1,7 @@
 ---
 title: 深入探索 Visual Studio SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214704"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk)。  
-  
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。  
   
 ## <a name="extensibility-architecture"></a>擴充性架構  
@@ -38,7 +36,7 @@ ms.locfileid: "47487301"
 Visual Studio 架構一般化的檢視  
   
 ## <a name="vspackages"></a>VSPackages  
- VSPackage 是使用 UI 項目、服務、專案、編輯器和設計工具來構成和擴充 Visual Studio 的軟體模組。 Vspackage 是 Visual Studio 的中央架構單位。 如需詳細資訊，請參閱 < [Vspackage](../../extensibility/internals/vspackages.md)。  
+ VSPackage 是使用 UI 項目、服務、專案、編輯器和設計工具來構成和擴充 Visual Studio 的軟體模組。 Vspackage 是 Visual Studio 的中央架構單位。 如需詳細資訊，請參閱 [VSPackages](../../extensibility/internals/vspackages.md)。  
   
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Visual Studio shell 提供的基本功能，並支援其元件的 Vspackage 和 MEF 擴充功能之間的跨通訊。 如需詳細資訊，請參閱 < [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。  

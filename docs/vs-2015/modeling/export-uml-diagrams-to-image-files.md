@@ -1,7 +1,7 @@
 ---
 title: 將 UML 圖表匯出至影像檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228354"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>將 UML 圖表匯出至影像檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[映像檔案的匯出 UML 圖表](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files)。  
-  
 您可以匯出 UML 文件從[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]到受程式控制的映像。 例如，您可能想要在文件自動產生程序進行時執行此作業。  
   
  如果您想要手動將文件匯出到影像，您可以複製圖表中的圖形並貼到其他程式，例如 Word。 您也可以將文件列印成 XPS 格式。 如需詳細資訊，請參閱 <<c0> [ 將圖表匯出為影像](../modeling/export-diagrams-as-images.md)。  

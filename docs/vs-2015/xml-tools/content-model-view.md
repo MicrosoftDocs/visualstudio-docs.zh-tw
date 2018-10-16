@@ -1,7 +1,7 @@
 ---
 title: 內容模型檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2e73749e76d4449acc2a3debbec6ba8de416dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274400"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[內容模型檢視](https://docs.microsoft.com/visualstudio/xml-tools/content-model-view)。  
-  
   
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型檢視包含兩個面板：**工作區**包含中的節點清單的面板[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)，和設計介面，您可以在這裡看到的內容模型的結構描述在 選取的節點**工作區**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。  
   

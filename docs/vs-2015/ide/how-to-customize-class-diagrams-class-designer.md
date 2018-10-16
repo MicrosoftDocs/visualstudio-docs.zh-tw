@@ -1,7 +1,7 @@
 ---
 title: 如何：自訂類別圖表 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296175"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>如何：自訂類別圖表 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 自訂類別圖表 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer)。  
-  
 您可以變更類別圖顯示資訊的方式， 也可以在設計介面上自訂整個圖表或個別類型。  
   
  例如，您可以調整整個類別圖的縮放比例、變更個別類型成員的群組和排序方式、隱藏或顯示關聯性，以及將個別或多組類型移至圖表的任何位置。  

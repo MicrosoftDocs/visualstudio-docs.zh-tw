@@ -1,7 +1,7 @@
 ---
 title: 如何：顯示以逗號分隔的項目清單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62fbbfd7df89eee06f476a496b5a7c020c0ff211
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9de7655335d2937a31cc2d63f5220fbf5415745
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195867"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 顯示項目以逗號分隔清單](https://docs.microsoft.com/visualstudio/msbuild/how-to-display-an-item-list-separated-with-commas)。  
-  
   
 在使用 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 中列出的項目時，建議您以易於閱讀的方式顯示這些項目清單中的內容。 否則，您可能必須進行以特殊分隔符號字串分隔項目清單的工作。 在這兩種情況下，您都可以為項目清單指定分隔符號字串。  
   

@@ -1,7 +1,7 @@
 ---
 title: 網域關聯性的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ff37703643dc9d1c795fe10b5f24154ee46174af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48af74aa470f195c1cfbd49ffbabb37e2461251d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263727"
 ---
 # <a name="properties-of-domain-relationships"></a>網域關聯性的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性的網域關聯性](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-relationships)。  
-  
 下表中的屬性會與網域關聯性相關聯。 網域關聯性的相關資訊，請參閱[了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
 |屬性|描述|預設|  

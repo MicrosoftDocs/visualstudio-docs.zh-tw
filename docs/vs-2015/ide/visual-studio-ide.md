@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292782"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[Visual Studio IDE 文件](https://docs.microsoft.com/visualstudio/ide/index)。
-
 Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃階段到 UI 設計、撰寫程式碼、測試、偵錯、分析程式碼品質和效能，部署給客戶以及收集使用量遙測。 這些工具的設計目的是要盡可能地緊密整合，而且全部都可透過 Visual Studio 整合式開發環境 (IDE) 公開。
 
 您可以使用 Visual Studio 來建立許多種類的應用程式，從簡單的市集應用程式和行動用戶端的遊戲，到能讓企業和資料中心營運的大型、複雜的系統。 您可以建立：
@@ -36,9 +33,9 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
 - 遊戲及圖形密集應用程式的各種 Windows 裝置，包括 Xbox 在內使用 DirectX。
 
-根據預設，Visual Studio 提供對於 C#、C 及 C++、JavaScript、F# 和 Visual Basic 的支援。 Visual Studio 的運作方式，並搭配 Unity 這類第三方應用程式整合[Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)延伸模組，並透過 Apache Cordova [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). 您可以建立執行特定工作的自訂工具來自行擴充 Visual Studio。
+根據預設，Visual Studio 提供對於 C#、C 及 C++、JavaScript、F# 和 Visual Basic 的支援。 Visual Studio 透過 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 延伸模組和 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)分別與 Unity 及 Apache Cordova 等協力廠商應用程式密切合作及整合。 您可以建立執行特定工作的自訂工具來自行擴充 Visual Studio。
 
-如果您未曾使用過 Visual Studio 之前，了解基本概念，和我們[Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md)教學課程和逐步解說。
+如果您未曾使用過 Visual Studio，請使用我們的 [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) 教學課程和逐步解說，了解其基本概念。
 
 如果您想要了解 Visual Studio 2015 中的新功能，請參閱[What's New in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)。
 
@@ -55,20 +52,20 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 ### <a name="signing-in"></a>登入
  當您第一次啟動 Visual Studio 時，可以使用您的 Microsoft 帳戶或是工作或學校帳戶登入。 登入即可跨多個裝置同步處理您的視窗配置等設定，並自動連接到您可能需要的服務，例如 Azure 訂用帳戶和 Visual Studio Team Services。 如果您有以訂用帳戶為基礎的授權，您必須定期登入 Visual Studio 以保持最新的授權權杖。 如果您有產品金鑰的授權就不必登入，但這樣做可以更方便地以 Azure、Office 365 和 Salesforce.com 連接到 Visual Studio Team Services 和您的帳戶。 如需詳細資訊，請參閱[登入 Visual Studio](../ide/signing-in-to-visual-studio.md)。
 
- 如果您有多個 Visual Studio Team Services 帳戶、Azure 帳戶或 MSDN 訂閱，您只需登入一次，就可以加以連結，以及存取所有帳戶中的資源和服務。 如需詳細資訊，請參閱[使用多個使用者帳戶](../ide/work-with-multiple-user-accounts.md)。
+ 如果您有多個 Visual Studio Team Services 帳戶、Azure 帳戶或 MSDN 訂閱，您只需登入一次，就可以加以連結，以及存取所有帳戶中的資源和服務。 如需詳細資訊，請參閱 [Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md)。
 
 ### <a name="staying-up-to-date"></a>保持最新狀態
  當 Visual Studio 或任何已安裝相關元件的更新可供使用時，標題列右上角中的通知圖示會告知您。 您可選擇是否要關閉這些通知或採取行動。 如需詳細資訊，請參閱 [Visual Studio 通知](../ide/visual-studio-notifications.md)。
 
 ### <a name="finding-things-and-getting-help"></a>尋找資訊及取得協助
- [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)如下所示的視窗可快速尋找 Visual Studio 命令、 工具及功能，然後當您不知道鍵盤快速鍵或功能表位置時，依此類推。 只要輸入您要尋找的項目，[快速啟動] 就會給您該項目的連結。
+ 當您不知道鍵盤快速鍵或功能表位置時，如下所示的 [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md) 視窗可快速尋找 Visual Studio 命令、工具及功能等。 只要輸入您要尋找的項目，[快速啟動] 就會給您該項目的連結。
 
  !['new project' 的快速啟動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
  MSDN 是提供技術文件的 Microsoft 網站；您目前就正在 MSDN 上閱讀這個頁面！ 在 Visual Studio 中，您可以按 **F1** 鍵，移至使用中視窗的 MSDN 說明頁面。 您也可以在程式碼編輯器中按 **F1** 鍵，移至目前插入號位置的應用程式開發介面或關鍵字之 MSDN 說明頁面。 例如，在 C# 檔案中，將插入號在某處，或只在結尾`System.String`宣告，然後按**F1**移至 MSDN 說明頁面<xref:System.String>。
 
 ### <a name="giving-feedback"></a>提供意見反應
- 不管何時，只要您願意，就能很簡單地在 Visual Studio 上給我們意見反應。 按一下 **QuickLaunch** 旁邊標題列的意見反應圖示，然後按一下 [回報問題]  或 [提供建議] 。 Visual Studio 的發行前版本還有 [為此產品評分]  選項。 我們會查看所有意見，並用來改善產品。 如需詳細資訊，請參閱[告訴我們](../ide/talk-to-us.md)。
+ 不管何時，只要您願意，就能很簡單地在 Visual Studio 上給我們意見反應。 按一下 **QuickLaunch** 旁邊標題列的意見反應圖示，然後按一下 [回報問題]  或 [提供建議] 。 Visual Studio 的發行前版本還有 [為此產品評分]  選項。 我們會查看所有意見，並用來改善產品。 如需詳細資訊，請參閱 [Talk to Us](../ide/talk-to-us.md)。
 
 ### <a name="personalizing-the-ide"></a>個人化 IDE
  您可以自訂視窗配置以符合您的開發樣式。 您隨時都可以停駐、浮動或隱藏任何視窗，也可在全螢幕模式中執行編輯器。 您可以建立並儲存多個自訂視窗配置，這些只會顯示您所需特定內容的視窗。 例如，您可以建立全螢幕的配置，這樣一來您看到的就是所有程式碼編輯器。 而且，您可以建立不同的版面配置，來進行偵錯和小組作業。 如需詳細資訊，請參閱[自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)。
@@ -94,7 +91,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
  ![Visual Studio [新增專案] 對話方塊](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>設計使用者介面
- 設計工具是直覺式的工具，讓您建立使用者介面而無須撰寫程式碼。 您可以將 UI 控制項，例如清單方塊、 行事曆以及按鈕等，從[工具箱](../ide/reference/toolbox.md)拖曳至設計介面，表示視窗或對話方塊方塊的視窗。 您可以調整大小，並重新排列項目，而不需要撰寫任何程式碼。 設計工具包含於任何具有使用者介面的專案類型。
+ 設計工具是直覺式的工具，讓您建立使用者介面而無須撰寫程式碼。 您可以將 UI 控制項，例如清單方塊、行事曆以及按鈕等，從 [Toolbox](../ide/reference/toolbox.md) 視窗拖曳到代表視窗或對話方塊的設計介面上。 您可以調整大小，並重新排列項目，而不需要撰寫任何程式碼。 設計工具包含於任何具有使用者介面的專案類型。
 
  如果您的專案具有以 XAML 為基礎的使用者介面，則預設設計工具是 Blend for Visual Studio，這是一種相當成熟的圖形工具，可以與 Visual Studio 緊密合作。
 
@@ -119,7 +116,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 這些功能會因語言而異，且您不必使用任何語言 (請在 [快速啟動] 中輸入 "Editor") 來開啟或關閉功能：下列為某些常見的產能功能：
 
-1.  [重構](../ide/refactoring-in-visual-studio.md)包含作業，例如智慧型重新命名變數，移動到個別函式、 將程式碼移到其他位置、 重新排序函式參數，以及多個選取行程式碼。
+1.  [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 
 2.  *IntelliSense* 為一種涵蓋一組常用功能的概括性術語，會直接在編輯器中顯示有關您程式碼的類型資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您無需在個別的 [說明] 視窗中查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md)、[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下圖顯示一些可用的 IntelliSense 功能：
 
@@ -131,7 +128,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
 4.  [書籤](../ide/setting-bookmarks-in-code.md)可讓您於正在處理的檔案中快速巡覽至特定一行。
 
-5.  您可以在文字編輯器操作功能表中叫用[呼叫階層](../ide/reference/call-hierarchy.md)視窗以顯示方法，這些方法會呼叫插入號下面的方法，或是由其所呼叫。
+5.  您可以在文字編輯器操作功能表中，叫用 [Call Hierarchy](../ide/reference/call-hierarchy.md) 視窗以顯示方法，這些方法會呼叫插入號下面的方法，或是由其所呼叫。
 
 6.  [] 可讓您尋找程式碼、已連結的 Bug、工作項目、程式碼檢閱和單元測試的參考和變更，而不需離開編輯器。 如需詳細資訊，請參閱[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
@@ -158,9 +155,9 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  偵錯工具本身會有多個視窗，可讓您檢視和管理本機變數、呼叫堆疊和執行階段環境的其他方面。 您可以在 [偵錯]  功能表找到這些視窗。
 
- [即時運算視窗](../ide/reference/immediate-window.md)可讓您輸入運算式，並立即查看其結果。
+ [Immediate Window](../ide/reference/immediate-window.md) 可讓您輸入運算式，並立即查看其結果。
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 視窗會記錄執行中 .NET 程式的每個方法呼叫和其他事件，它可以幫助您快速找出問題的來源。
+ [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 視窗會記錄執行中的 .NET 程式之每個方法呼叫和其他事件，它可以幫助您快速找出問題的來源。
 
  如需詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
 
@@ -170,10 +167,10 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
  ![單元測試總管](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>分析程式碼品質和效能
- Visual Studio 包含靜態和執行階段分析的強大工具。 靜態分析工具可協助您識別設計、全球化、互通性、效能、安全性和其他類別的潛在錯誤。 效能測試或程式碼剖析需要測量您程式的執行方式。 您可從 [分析]  功能表存取這些工具。 如需詳細資訊，請參閱[使用 Visual Studio 診斷工具改善品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
+ Visual Studio 包含靜態和執行階段分析的強大工具。 靜態分析工具可協助您識別設計、全球化、互通性、效能、安全性和其他類別的潛在錯誤。 效能測試或程式碼剖析需要測量您程式的執行方式。 您可從 [分析]  功能表存取這些工具。 如需詳細資訊，請參閱 [使用 Visual Studio 診斷工具改善品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>連接至雲端服務和資料庫
- [伺服器總管](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)Visual Studio 視窗中的會顯示在管理您個人化帳戶 （您用以登入），包括 SQL Server 執行個體，Azure、 Salesforce.com、 Office 365 的所有帳戶中的資源和網站。
+ Visual Studio 中的 [伺服器總管](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 視窗會顯示您個人化帳戶 (您用以登入的帳戶) 所管理之所有帳戶中的資源，包含 SQL Server 執行個體、Azure、Salesforce.com、Office 365 及網站。
 
  ![伺服器總管](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -184,15 +181,15 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
  ![SQL Server 物件總管](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
 
 ## <a name="deploying-your-finished-application"></a>部署已完成的應用程式
- 當您的應用程式準備好要部署給客戶時，Visual Studio 會提供工具來部署，無論您要部署至 Windows 市集、Sharepoint 網站，或是透過 InstallShield 或 Windows Installer 技術部署。 這可透過所有 IDE 存取。 如需詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
+ 當您的應用程式準備好要部署給客戶時，Visual Studio 會提供工具來部署，無論您要部署至 Windows 市集、Sharepoint 網站，或是透過 InstallShield 或 Windows Installer 技術部署。 這可透過所有 IDE 存取。 如需詳細資訊，請參閱 [部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
 
 ## <a name="architecture-and-modeling-tools-enterprise-only"></a>Architecture and Modeling Tools (僅限 Enterprise 版)
- 您可以使用 Visual Studio 架構與模型化工具來設計您的應用程式並加以模型化。 這些工具可協助您視覺化程式碼的結構、行為和關聯性。 您可在整個應用程式生命週期的不同細節層次建立模型，做為開發程序的一部分。 您可以連結至 Team Foundation Server 工作項目和開發計畫，來追蹤需求、工作、測試案例、Bug 和其他與模型相關聯的工作。 如需詳細資訊，請參閱[設計和模型化應用程式](../modeling/analyze-and-model-your-architecture.md)。
+ 您可以使用 Visual Studio 架構與模型化工具來設計您的應用程式並加以模型化。 這些工具可協助您視覺化程式碼的結構、行為和關聯性。 您可在整個應用程式生命週期的不同細節層次建立模型，做為開發程序的一部分。 您可以連結至 Team Foundation Server 工作項目和開發計畫，來追蹤需求、工作、測試案例、Bug 和其他與模型相關聯的工作。 如需詳細資訊，請參閱 [設計和模型化應用程式](../modeling/analyze-and-model-your-architecture.md)。
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>透過 Visual Studio SDK 擴充 Visual Studio
- Visual Studio 是可擴充的平台。 Visual Studio 擴充功能是可和 IDE 整合的自訂工具。 您可以新增協力廠商擴充功能，或建立您自己的擴充功能。 如需詳細資訊，請參閱 <<c0> [ 開發 Visual Studio 擴充功能](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)。
+ Visual Studio 是可擴充的平台。 Visual Studio 擴充功能是可和 IDE 整合的自訂工具。 您可以新增協力廠商擴充功能，或建立您自己的擴充功能。 如需詳細資訊，請參閱 [開發 Visual Studio 擴充功能](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)。
 
- [Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)是任何人撰寫 Visual Studio 延伸模組不可或缺的參考。 這些特定平台指導方針包括設計對話方塊、字型、色彩、圖示、常見控制項和其他互動模式的詳細資訊，可讓您的新功能與 Visual Studio 緊密整合。
+ [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) 對於 Visual Studio 延伸模組的任何撰寫者而言都是基本參考。 這些特定平台指導方針包括設計對話方塊、字型、色彩、圖示、常見控制項和其他互動模式的詳細資訊，可讓您的新功能與 Visual Studio 緊密整合。
 
 ## <a name="in-this-guide"></a>在本指南中
 

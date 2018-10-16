@@ -1,14 +1,14 @@
 ---
 title: 在您的開發程序中使用模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285996"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在開發程序中使用模型](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process)。  
-  
 在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片： 透過模型改善結構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
   
  若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -141,7 +139,7 @@ ms.locfileid: "47490829"
 |------------------|---------------|  
 |**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 影片： 如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML 搭配 Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>另請參閱  

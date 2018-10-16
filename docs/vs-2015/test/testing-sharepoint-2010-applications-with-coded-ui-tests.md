@@ -1,7 +1,7 @@
 ---
 title: 使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 63e4a776ccd7f818502586cf6bcca5294e6b0e58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 346362a6812882bd795b6180ac735e51f13e3530
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303754"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試 SharePoint 2010 應用程式使用自動程式化 UI 測試](https://docs.microsoft.com/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)。  
-  
 在 SharePoint 應用程式中包含自動程式碼 UI 測試，可讓您驗證整個應用程式 (包括其 UI 控制項) 是否正常運作。 自動程式碼 UI 測試也可以驗證使用者介面中的值和邏輯。  
   
  **需求**  

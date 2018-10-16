@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenEx |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e53b0e79e39d2ff543f31525b8d9b1bad4a6a2f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb907df34b0781fbe54f8e463e735208dafcb6ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174443"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaSymbol::findChildrenEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenex)。  
-  
 擷取之符號的子系。 會傳回本機符號包含即時範圍資訊，如果程式以最佳化編譯上。  
   
 ## <a name="syntax"></a>語法  

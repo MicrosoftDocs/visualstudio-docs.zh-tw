@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7554bf39960a55a566b366abc328f54199bd4367
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260178"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk)。  
-  
 Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Studio 的新功能。 您可以散發給其他使用者，以及 Visual Studio 組件庫延伸模組。 下列是一些可擴充 Visual Studio 的方法：  
   
 -   將命令、 按鈕、 功能表和其他 UI 項目加入 IDE  

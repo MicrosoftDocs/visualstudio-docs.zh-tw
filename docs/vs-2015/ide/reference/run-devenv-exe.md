@@ -1,7 +1,7 @@
 ---
 title: -Run (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98ec2d8be12b8d0dbf9f3283b31c62d90d55e7b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fb26412d6abb2c438088bf42bef620d5c8bb2d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257539"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[-執行 (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/run-devenv-exe)。  
-  
   
 編譯並執行指定的專案或方案。  
   

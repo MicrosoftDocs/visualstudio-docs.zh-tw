@@ -1,7 +1,7 @@
 ---
 title: Value (XAttribute 動態屬性) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af8f122bfbf2ce37b161afb5f0665a9677ef2f3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd9ea1fa163980a39bcd9981b9e1d757d72fcb6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229147"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動態屬性)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Value （XAttribute 動態屬性）](https://docs.microsoft.com/visualstudio/designers/value-xattribute-dynamic-property)。  
-  
 取得或設定 XML 屬性的值。  
   
 ## <a name="syntax"></a>語法  

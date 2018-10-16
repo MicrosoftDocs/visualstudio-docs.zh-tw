@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 ClickOnce 應用程式安裝必要條件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 31319b0d04ff68649996ca374e3961d8fa67c833
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196283"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：使用 ClickOnce 應用程式安裝必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用 ClickOnce 應用程式的安裝必要條件](https://docs.microsoft.com/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application)。  
-  
 所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式需要它們才能執行，在電腦上安裝正確版本的.NET framework; 許多應用程式以及其他必要條件。 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式中，您可以選擇一組與您的應用程式一起封裝的必要元件。 在安裝期間，會檢查以判斷它是否已經存在; 每個必要條件如果在安裝之前未將已安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
   
  而不是封裝和發行必要條件，您也可以指定元件的下載位置。 比方說，而不是包含每個應用程式，您將發行的必要條件，您可以使用集中式的檔案共用或包含的所有必要條件的安裝程式的 Web 位置，在安裝時，將下載的元件和安裝從該位置。  

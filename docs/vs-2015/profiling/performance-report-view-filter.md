@@ -1,7 +1,7 @@
 ---
 title: 效能報告檢視篩選條件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1568ec12a635014239a1533bf00df09a1e63ac14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63855aeb4b4e2d48db045354b0134056684dedf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228164"
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[效能報告檢視篩選](https://docs.microsoft.com/visualstudio/profiling/performance-report-view-filter)。  
-  
 [程式碼剖析工具報告檢視篩選條件] 視窗位於 [效能報告] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
   
  您可以修改每個篩選條件子句來限定結果。 篩選條件產生器中包含下列資料行。  

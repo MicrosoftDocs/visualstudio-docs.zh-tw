@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_inlspec |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc76fb517c6cc75c6117d8dc7cd95bd377b34f87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300c0697af2249e3353f32645cf89f405c9dbf7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190953"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_inlspec](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-inlspec)。  
-  
 此函式會擷取旗標，指出是否函式已標記為內嵌 (使用其中一種[inline、 __inline、 \__forceinline](../../misc/inline-inline-forceinline.md)屬性)。  
   
 ## <a name="syntax"></a>語法  

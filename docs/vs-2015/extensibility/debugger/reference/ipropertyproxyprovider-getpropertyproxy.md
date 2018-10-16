@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyProvider::GetPropertyProxy |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9478f9da9c54b950db77d442c1ab6cc4f72b7047
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ffd570f07061c0e9f6cd67f4472076f5d686b7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250246"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IPropertyProxyProvider::GetPropertyProxy](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy)。  
-  
 擷取的屬性 proxy 介面做為指定之 proxy 識別碼。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224545"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc)。  
-  
 此回呼會提供給[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 而且由原始檔控制外掛程式用來更新檔案或目錄的清單 (也提供給`SccPopulateList`函式)。  
   
  當使用者選擇**取得**命令在 IDE 中，IDE 會顯示清單方塊的使用者可以取得的所有檔案。 不幸的是，IDE 不知道使用者可能會收到; 的所有檔案的確切清單只有外掛程式都具有這份清單。 如果其他使用者將檔案新增至原始程式碼控制項專案中，這些檔案應該會出現在清單中，但在 IDE 不知道它們。 IDE 會建置它認為使用者可以取得檔案的清單。 向使用者顯示此清單之前，它會呼叫[SccPopulateList](../extensibility/sccpopulatelist-function.md) `,`讓原始檔控制外掛程式機會加入，並從清單中刪除檔案。  

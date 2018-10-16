@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用暫存器視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238962"
 ---
 # <a name="how-to-use-the-registers-window"></a>如何：使用暫存器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 中偵錯工具中的 檢視暫存器值](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window)。  
-  
 暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點，**一般**類別目錄。  
   
  **註冊**視窗會顯示暫存器內容。 如果您保留**註冊**視窗開啟，當您逐步執行程式，您可以看到您的程式碼執行時暫存器值的變更。 最近變更過的值以紅色顯示。 您可以編輯暫存器值。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯暫存器值](../debugger/how-to-edit-a-register-value.md)。  

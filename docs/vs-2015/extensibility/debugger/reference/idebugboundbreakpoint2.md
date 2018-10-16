@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ac6400c9a56ba0b24ee1b6f5342e8ed2038deea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43d7bd42e025ef5ee36fca51f9a7b78ece94f130
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304522"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugBoundBreakpoint2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2)。  
-  
 這個介面表示繫結至程式碼位置的中斷點。  
   
 ## <a name="syntax"></a>語法  

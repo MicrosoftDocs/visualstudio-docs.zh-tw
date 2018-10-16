@@ -1,7 +1,7 @@
 ---
 title: 如何： 提供的服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18cb5c28ab70b652b860d76fc6b7ad92e7262bf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265001"
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 提供服務](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-a-service)。  
-  
 VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。  
   
  <xref:Microsoft.VisualStudio.Shell.Package>類別會實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer> 包含隨需提供服務的回呼方法。  

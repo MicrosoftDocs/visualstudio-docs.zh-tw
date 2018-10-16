@@ -1,7 +1,7 @@
 ---
 title: 符號和符號標記 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04dfbe961b122ded6ddb5ff19d70091ba6c408c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189783"
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[符號和符號標記](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbols-and-symbol-tags)。  
-  
 偵錯資訊編譯的程式儲存在程式資料庫 (.pdb) 檔案，做為可使用偵錯介面存取 (DIA) SDK Api 的符號。 所有的符號[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)並[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)屬性。 `symTag`所定義的屬性會指出符號種類[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 `symIndexId`屬性是`DWORD`包含符號的每個執行個體的唯一識別項的值。  
   
  符號也會有屬性可指定的其他資訊的符號，以及參考其他符號，最常[idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)或[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). 當您查詢包含參考的屬性時，做為傳回參考[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 這類屬性會一律搭配使用另一個屬性相同的名稱，但後面加上具有 「 識別碼 」，例如[idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)並[idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)。 中的資料表[符號位置](../../debugger/debug-interface-access/symbol-locations.md)，[語彙階層的符號類型](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)，並[類別階層架構的符號類型](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)不同種類的每個說明屬性的符號。 這些屬性可能的相關資訊或其他符號的參考。 因為`*Id`屬性都只是數值的序數識別項，其相關的屬性，它們會省略進一步討論。 其參考只在所需的參數說明。  

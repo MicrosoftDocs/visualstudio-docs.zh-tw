@@ -1,7 +1,7 @@
 ---
 title: 就地啟用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232189"
 ---
 # <a name="in-place-activation"></a>在就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  
@@ -51,7 +51,7 @@ ms.locfileid: "47492220"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|檢視|內嵌的物件提供基本功能給其容器並與其通訊的主要方式。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|檢視|管理就地物件的啟用和停用，並判斷應該可看見就地物件的多少部分。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|檢視|在就地物件、相關應用程式最外層框架視窗和包含內嵌物件之應用程式的文件視窗之間，提供直接的通訊通道。|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|檢視|實作 ActiveX 物件。 請注意，方法<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>和`T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView`，個別的文件資料和檢視不會在 IDE 中。|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|檢視|實作 ActiveX 物件。 請注意，IDE 中不使用分開文件資料和檢視的 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 和 `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` 方法。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|檢視/資料|可讓文件資料物件或文件檢視物件參與命令處理，或兩者皆可參與。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|檢視|啟用狀態列更新。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|檢視|啟用將項目加入工具箱。|  

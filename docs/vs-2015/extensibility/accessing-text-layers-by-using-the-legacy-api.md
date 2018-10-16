@@ -1,7 +1,7 @@
 ---
 title: 使用舊版 API 存取文字圖層 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfc9cd494f308244791b82f3f001e2bd54f71204
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4f60a5b385ee24f2855e67e92f8a563d2603be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183530"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用舊版 API 存取文字層](https://docs.microsoft.com/visualstudio/extensibility/accessing-text-layers-by-using-the-legacy-api)。  
-  
 文字層通常會封裝在某種程度的文字版面配置。 比方說，「 函式-一次 「 圖層會隱藏文字之前和之後包含文字插入點 （caret) 的函式。  
   
  文字層位於緩衝區和檢視之間，它會修改此檢視會看到緩衝區的內容的方式。  

@@ -1,7 +1,7 @@
 ---
 title: Shell （獨立模式或整合式） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 364a45ea3ae66e3ba8962bfce1487cc04ba35397
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266119"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （獨立模式或整合）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Shell （獨立模式或整合式驗證）](https://docs.microsoft.com/visualstudio/extensibility/shell-isolated-or-integrated)。  
-  
 您可以建立自己的 Visual Studio 為基礎應用程式中整合或隔離模式。 在 整合模式中，許多 Visual Studio 功能可除了您的應用程式。 在隔離模式中，您可以選擇您想要散發和您自己的擴充功能的 Visual Studio 功能的子集。  
   
 ## <a name="integrated-mode"></a>整合式的模式  

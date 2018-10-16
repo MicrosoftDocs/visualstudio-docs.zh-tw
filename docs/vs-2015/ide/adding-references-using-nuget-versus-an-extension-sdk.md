@@ -1,7 +1,7 @@
 ---
 title: 使用 NuGet 和延伸模組 SDK 兩種方式新增參考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54197aa4f8074c206e05e41d2b70d81a76c38f1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500043"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235803"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入使用 NuGet 與擴充功能 SDK 參考](https://docs.microsoft.com/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)。  
-  
 您可以使用 Visual Studio 的 NuGet 延伸模組或軟體開發套件 (SDK)，提供套件以在 Visual Studio 專案內使用。 藉由描述這兩個機制之間的差異與相似之處，本主題可以協助您選擇適合您工作的機制。  
   
 -   NuGet 是開放原始碼套件管理系統，可簡化程式庫併入專案方案的程序。 如需詳細資訊，請參閱 [NuGet 概觀](http://go.microsoft.com/fwlink/?LinkId=254877)。  

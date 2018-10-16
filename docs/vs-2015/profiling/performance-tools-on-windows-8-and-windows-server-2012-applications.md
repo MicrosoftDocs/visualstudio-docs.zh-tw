@@ -1,7 +1,7 @@
 ---
 title: Windows 8 和 Windows Server 2012 應用程式的效能工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195516"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Windows 8 和 Windows Server 2012 應用程式的效能工具](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications)。  
-  
 Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 Windows 市集應用程式也需要新的資料收集技術。 本主題描述 Windows 8 和 Windows Server 2012 平台上的效能工具變更。  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  **在遠端電腦上收集 TIP 資料**  
   
- 若要在遠端電腦上收集階層互動資料，您必須複製**vs\_profiler\_**_\<平台 >_ **\_**_\<語言 >_**.exe**檔案 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**資料夾，Visual Studio 的電腦，以在遠端電腦，並將它安裝。 您無法使用中的程式碼剖析工具[Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下載套件。  
+ 若要在遠端電腦上收集階層互動資料，您必須複製**vs\_profiler\_**_\<平台 >_ **\_**_\<語言 >_**.exe**檔案 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**資料夾，Visual Studio 的電腦，以在遠端電腦，並將它安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
  您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。  
   

@@ -1,7 +1,7 @@
 ---
 title: 範本目錄描述 (。Vsdir) 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201969"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新版本位於[範本目錄描述 (。Vsdir) 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files)。  
-  
 範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。  
   
  資料夾 （子目錄），到.vsdir 檔案，而且.vsdir 檔案本身中所參考的檔案都位於相同的目錄。 當 IDE 執行精靈，或顯示資料夾或檔案中的**新的專案**或是**加入新項目**對話方塊方塊中，IDE 會檢查包含執行的檔案，以決定是否.vsdir 檔案的目錄存在。 如果找到.vsdir 檔案時，IDE 會讀取以判斷其中是否包含執行或顯示資料夾或檔案的項目。 如果找到項目，則 IDE 會在精靈的執行或顯示的內容中使用的資訊。  

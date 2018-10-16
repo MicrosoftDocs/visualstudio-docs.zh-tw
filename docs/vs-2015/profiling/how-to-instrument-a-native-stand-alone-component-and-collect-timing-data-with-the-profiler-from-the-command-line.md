@@ -1,7 +1,7 @@
 ---
 title: 如何：從命令列使用分析工具以檢測原生獨立元件並收集計時資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 566bd0c6455ef00a7629be34890b5613c381d4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80a58cd6427f6f59629abf591141b2af036bb345
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278170"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：從命令列使用程式碼剖析工具以檢測原生獨立元件並收集計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢測原生獨立元件並收集計時資料，使用 Profiler 從命令列](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測原生元件，例如 C++ .exe 或 .dll 檔案，並收集詳細的計時資料。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 步驟 2：新增隨機物件和圖示清單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1dbe540a9fb0c9128e2813064228a98a3bece74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226651"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：加入隨機物件和圖示清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 2： 新增隨機物件和圖示清單](https://docs.microsoft.com/visualstudio/ide/step-2-add-a-random-object-and-a-list-of-icons)。  
-  
 在這個步驟中，您會為遊戲建立一組配對符號。 每個符號會加入至表單上 TableLayoutPanel 中的兩個隨機儲存格。 若要這麼做，您必須使用兩個 `new` 陳述式來建立兩個物件。 第一個是 `Random` 物件，就像是您用於數學測驗遊戲中的物件。 該物件在這個程式碼中會用來隨機選擇 TableLayoutPanel 中的儲存格。 第二個物件 (您可能不熟悉) 是一個 `List` 物件，用來儲存隨機選擇的符號。  
   
 ### <a name="to-add-a-random-object-and-a-list-of-icons"></a>若要加入隨機物件和圖示清單  

@@ -1,7 +1,7 @@
 ---
 title: 訊息標記 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2487466518622ebd1b2a52c4e4697be23a40d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269942"
 ---
 # <a name="message-markers"></a>訊息標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[訊息標記](https://docs.microsoft.com/visualstudio/profiling/message-markers)。  
-  
 訊息標記表示記錄檔輸出。 訊息是由特定執行緒在特定時間發出的字串。 您可以將訊息匯出成文字檔，以便與其他工具搭配使用。 您可以將指標放在並行視覺化檢視中的訊息上，以檢視訊息字串。 您可以檢視在[標記報告](../profiling/markers-report.md)中檢視所有訊息標記。  下圖顯示訊息標記。  
   
 ## <a name="message-aggregation-markers"></a>訊息彙總標記  

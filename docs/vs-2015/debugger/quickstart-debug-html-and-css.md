@@ -1,7 +1,7 @@
 ---
 title: 快速入門： 偵錯 HTML 和 CSS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225481"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[快速入門： 偵錯 HTML 和 CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
- Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]，Windows Phone 市集應用程式，並使用 Visual Studio Tools for Apache Cordova 建立的應用程式  
+ Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]、Windows Phone 市集應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式  
   
  使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。  
   
@@ -197,7 +195,7 @@ ms.locfileid: "47500016"
      ![DOM 總管](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  您也可以選取 [JavaScript 主控台] 視窗左上角的 DIV 項目，輸入`select(fView)`在 >> 輸入提示字元，並按 enter。  
+    >  您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下輸入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  
   
      在 [DOM 總管] 視窗右邊索引標籤上的值會自動更新，以反映 DOM 總管中的目前項目。  
   
@@ -295,13 +293,13 @@ ms.locfileid: "47500016"
 ##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台都支援 Visual Studio Tools for JavaScript、DOM 總管和 [JavaScript 主控台] 視窗：  
   
--   使用 JavaScript 和 HTML 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集 App  
+-   使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  
   
 -   在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
   
--   在 [!INCLUDE[win8](../includes/win8-md.md)] 上執行的 Internet Explorer 10  
+-   在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
- 移[此處](http://go.microsoft.com/fwlink/?LinkID=232448)下載[!INCLUDE[win8](../includes/win8-md.md)]和 Visual Studio。  
+ 移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
   
 ## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ ms.locfileid: "47500016"
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [產品支援和協助工具](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

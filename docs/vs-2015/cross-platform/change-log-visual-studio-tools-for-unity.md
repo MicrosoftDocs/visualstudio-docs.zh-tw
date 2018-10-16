@@ -1,7 +1,7 @@
 ---
 title: 變更記錄 (Visual Studio Tools for Unity) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f4bec82e3e00a7b7e308bf0170ecb0fee01e2176
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7c9573860d62dfeddff57f2483cdc0639b7a7c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304989"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[變更記錄檔 (Visual Studio Tools for Unity)](https://docs.microsoft.com/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity)。  
-  
   
 Visual Studio Tools for Unity 變更記錄。  
   

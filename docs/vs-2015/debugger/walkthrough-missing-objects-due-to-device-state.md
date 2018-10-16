@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 遺漏的物件因裝置狀態而 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280835"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 遺漏物件到期的裝置狀態](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state)。  
-  
-本逐步解說示範如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]圖形診斷來調查因為遺漏的物件設定不正確的裝置狀態。  
+本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷來調查因為裝置狀態設定不正確而遺漏的物件。  
   
  本逐步解說示範如何：  
   
@@ -45,14 +43,14 @@ ms.locfileid: "47497492"
   
  ![前修正問題的應用程式](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- 如需有關如何擷取圖形記錄檔中的圖形問題的資訊，請參閱 <<c0> [ 擷取圖形資訊](../debugger/capturing-graphics-information.md)。  
+ 如需如何擷取圖形記錄檔中圖形問題的資訊，請參閱 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)。  
   
 ## <a name="investigation"></a>調查  
  透過使用圖形診斷工具，您可以載入圖形記錄，以檢查測試期間所擷取的畫面格。  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，載入圖形記錄，其中包含表現出遺漏模型的畫面格。 新的 [圖形診斷] 索引標籤會出現在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄檔，其中包含表現出遺漏模型的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中會出現新的 [圖形診斷] 索引標籤。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
   
 2.  在 [畫面格清單] 中，選取示範未顯示模型的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情況下，圖形記錄索引標籤與下列類似：  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47497492"
   
 1.  開啟 [圖形物件表]  視窗。 在 [圖形診斷]  工具列上，選擇 [物件表] 。  
   
-2.  在 [圖形物件表]  中找出 [D3D10 裝置] 物件，然後開啟 [D3D10 裝置]  物件。 新**d3d10 裝置** 索引標籤中開啟[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 若要讓這項工作更容易進行，您可以依 [類型]  排序 [圖形物件表] ：  
+2.  在 [圖形物件表]  中找出 [D3D10 裝置] 物件，然後開啟 [D3D10 裝置]  物件。 新的 [d3d10 裝置]  索引標籤隨即在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟。 若要讓這項工作更容易進行，您可以依 [類型]  排序 [圖形物件表] ：  
   
      ![圖形物件表] 和 [相關的裝置狀態](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

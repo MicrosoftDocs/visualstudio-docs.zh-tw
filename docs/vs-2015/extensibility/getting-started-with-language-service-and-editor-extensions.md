@@ -1,7 +1,7 @@
 ---
 title: Getting Started with 語言服務及編輯器擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227002"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Getting Started with 語言服務及編輯器擴充功能](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions)。  
-  
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。  
   
  若要開始撰寫編輯器延伸模組，使用已安裝 Visual Studio SDK 的一部分的編輯器專案範本。 Visual Studio SDK 是可下載的工具，可讓您更輕鬆地使用 Vspackage，或使用 Managed Extensibility Framework (MEF) 開發 Visual Studio 擴充功能，一組。  

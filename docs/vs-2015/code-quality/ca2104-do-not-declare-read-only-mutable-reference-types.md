@@ -1,7 +1,7 @@
 ---
 title: CA2104： 不要宣告唯讀的可變動參考類型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4c94ae65f22051c51dc16c678177a13ed75095c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f8e8ce2c8c6ac780dc3233fdac5c668576ac7b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279340"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要宣告唯讀的可變動參考類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2104： 不要宣告唯讀的可變動參考類型](https://docs.microsoft.com/visualstudio/code-quality/ca2104-do-not-declare-read-only-mutable-reference-types)。
-
 |||
 |-|-|
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|

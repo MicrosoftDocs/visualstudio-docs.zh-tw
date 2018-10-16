@@ -1,7 +1,7 @@
 ---
 title: 使用 SuppressMessage 屬性隱藏警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205955"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>使用 SuppressMessage 屬性隱藏警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 SuppressMessage 屬性所隱藏的警告](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute)。  
-  
 通常很有用來表示這項警告是 nonapplicable 讓小組成員知道程式碼檢閱，並且被判定，應該隱藏警告。 在 原始檔 (ISS) 可讓開發人員將會隱藏警告，以產生警告的位置接近的屬性。 您可以 ISS 屬性直接加入原始程式檔，或者您可以使用中的捷徑功能表[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]IDE。  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 教學課程 3：建立配對遊戲 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00484f4cefe196cc26dcb13aadb882c23f1f9e71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259088"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[教學課程 3： 建立配對遊戲](https://docs.microsoft.com/visualstudio/ide/tutorial-3-create-a-matching-game)。  
-  
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：  
   
 -   在 `List` 物件中儲存物件 (例如圖示)。  

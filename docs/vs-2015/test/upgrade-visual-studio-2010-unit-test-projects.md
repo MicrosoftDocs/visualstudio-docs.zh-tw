@@ -1,7 +1,7 @@
 ---
 title: 升級 Visual Studio 2010 單元測試專案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e06a58e6015a99db83bf729d16196551c5126d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 114a34f09e2693edd9aa1c30b74891a84790578b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273477"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>升級 Visual Studio 2010 單元測試專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

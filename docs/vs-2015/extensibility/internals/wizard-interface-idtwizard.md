@@ -1,7 +1,7 @@
 ---
 title: 精靈介面 (IDTWizard) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb811f0ea6ae3d1be01b5d00f6359503d8f0d581
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f50dc747e04e909644a6b74f2f4af0d7551248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266850"
 ---
 # <a name="wizard-interface-idtwizard"></a>精靈介面 (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[精靈介面 (IDTWizard)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-interface-idtwizard)。  
-  
 整合式的開發環境 (IDE) 使用<xref:EnvDTE.IDTWizard>與精靈通訊的介面。 精靈必須實作這個介面，才能安裝在 IDE 中。  
   
  <xref:EnvDTE.IDTWizard.Execute%2A>方法是相關聯的唯一方法<xref:EnvDTE.IDTWizard>介面。 精靈會實作這個方法，IDE 會在介面上呼叫方法。 下列範例會顯示方法的簽章。  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiainjectedsource:: Get_filename |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 253457d8f4b49faf73b7552a2f6d32142aa217b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3659cf8b57d94a2d9829c614c9c430e19756863
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203030"
 ---
 # <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiainjectedsource:: Get_filename](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-filename)。  
-  
 擷取來源檔案名稱。  
   
 ## <a name="syntax"></a>語法  

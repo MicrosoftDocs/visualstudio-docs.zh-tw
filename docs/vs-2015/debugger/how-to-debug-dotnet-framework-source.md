@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯.NET Framework 原始檔 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240613"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：偵錯 .NET Framework 原始檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 偵錯的.NET Framework 原始碼](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source)。  
-  
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]偵錯。 若要偵錯[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源，您必須具有存取權的程式碼偵錯符號。 您也必須啟用逐步執行到[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源。  
   
  您可以讓[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]逐步執行和下載中的符號**選項** 對話方塊。 啟用符號下載時，您可以選擇立即下載符號，或是只啟用稍後下載的選項。 如果您沒有立即下載符號，便會在下次開始偵錯應用程式時下載符號。 您也可以進行手動下載從**模組** 視窗或**呼叫堆疊**視窗。  

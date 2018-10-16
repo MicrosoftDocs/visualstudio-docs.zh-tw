@@ -1,7 +1,7 @@
 ---
 title: 在 Blend 中的 XAML 進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179877"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Blend 中的偵錯 XAML](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend)。  
-  
 您可以使用 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，任何錯誤都會顯示在**結果**面板。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果您需要更多工作空間，您可以隱藏**結果**按 F12 的面板。  
   
 ## <a name="syntax-errors"></a>語法錯誤  

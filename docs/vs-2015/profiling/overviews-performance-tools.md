@@ -1,7 +1,7 @@
 ---
 title: 概觀 (效能工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bea4bba1314c6363308cf36b0eb075e256ddd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 679f85dc565ba55631bf6ef9877803ca407e9f85
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226261"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[概觀 （效能工具）](https://docs.microsoft.com/visualstudio/profiling/overviews-performance-tools)。  
-  
 本節提供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。  
   
 ## <a name="in-this-section"></a>本節內容  

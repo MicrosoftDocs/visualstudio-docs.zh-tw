@@ -1,7 +1,7 @@
 ---
 title: 安全性、 版本設定和 ClickOnce 部署中的資訊清單問題 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1274a636dd49a2ade1f21941d24817a0d54d49c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289220"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安全性、 版本設定和 ClickOnce 部署中的資訊清單問題](https://docs.microsoft.com/visualstudio/deployment/security-versioning-and-manifest-issues-in-clickonce-deployments)。  
-  
 有各種不同的問題[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安全性、 應用程式版本和資訊清單的語法和語意，可能會導致[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署不成功。  
   
 ## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce 和 Windows Vista 使用者帳戶控制  

@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetType |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af38649a08bc58ae23360110f9b28e23507aa877
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4c0209830694cc6256974e8f6a66f0b67eb4803
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176393"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugField::GetType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-gettype)。  
-  
 這個方法會取得欄位的型別。  
   
 ## <a name="syntax"></a>語法  

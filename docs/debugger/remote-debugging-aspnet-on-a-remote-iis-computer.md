@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d9515d208f2ab4bb8c429d5063e5134676c71c24
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785953"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101065"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
@@ -147,12 +147,7 @@ ms.locfileid: "38785953"
 
 在本教學課程中，我們會使用 Visual Studio 2017。
 
-如果您無法開啟遠端偵錯工具下載頁面，請參閱[解除封鎖檔案下載](../debugger/remote-debugging.md#unblock_msvsmon)取得協助。
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> 在某些情況下，它可以是最有效率，若要從檔案共用執行遠端偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 從檔案共用執行遠端偵錯工具](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
 ## <a name="BKMK_setup"></a> 設定 Windows Server 上的遠端偵錯工具
 

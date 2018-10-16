@@ -1,7 +1,7 @@
 ---
 title: 可執行檔進行偵錯工作階段 對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31190bf669d11929aed8127d8433d86c8fc75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d1279ba5b3ed79c4115143a72e4543bbd6c123d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189822"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>偵錯工作階段的可執行檔對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯工作階段 對話方塊中的可執行檔](https://docs.microsoft.com/visualstudio/debugger/executable-for-debugging-session-dialog-box)。  
-  
 當您嘗試對未指定任何可執行檔的 DLL 進行偵錯時，就會出現這個對話方塊。 Visual Studio 無法直接啟動 DLL。 它會改為啟動指定的可執行檔。 您可以對可執行檔呼叫的 DLL 進行偵錯。  
   
  **可執行檔名稱**  

@@ -1,7 +1,7 @@
 ---
 title: 如何：使用不同選項來建置相同的原始程式檔 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55133fcd8126a5f77a670742b84ff83d9662520c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243915"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建置使用不同的選項相同的原始程式檔](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-the-same-source-files-with-different-options)。  
-  
   
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
   
@@ -194,7 +192,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[ MSBuild](msbuild.md)  
+[MSBuild](msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)

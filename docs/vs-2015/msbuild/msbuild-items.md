@@ -1,7 +1,7 @@
 ---
 title: MSBuild 項目 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229355"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 項目](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items)。  
-  
   
 MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
   

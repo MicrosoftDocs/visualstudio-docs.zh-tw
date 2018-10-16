@@ -1,14 +1,14 @@
 ---
 title: '[自動變數] 和 [區域變數] Windows |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191317"
 ---
 # <a name="autos-and-locals-windows"></a>[自動變數] 和 [區域變數] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檢查變數，在 Visual Studio 中偵錯工具中](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)。  
-  
 [自動變數]  視窗 (偵錯時， **CTRL+ALT+V、A**，或 [偵錯] / [視窗] / [自動變數] ) 和 [區域變數]  視窗 (偵錯時， **CTRL+ALT+V、L**，或 [偵錯] / [視窗] / [區域變數] ) 相當適合用來在您偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱 [自動變數] 視窗中出現哪些變數？下面。  
   
  如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  

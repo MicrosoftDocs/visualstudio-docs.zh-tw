@@ -1,7 +1,7 @@
 ---
 title: 如何...使用文字範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231500"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何...使用文字範本](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates)。  
-  
 中的文字範本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供有用的方式來產生任何種類的文字。 您可以使用文字範本產生的文字，在執行階段為您的應用程式的一部分，並在設計階段，來產生一些您的專案程式碼。 本主題摘要說明最常詢問"How do I...？ 」 問題。  
   
  本主題中，會加上項目符號的多個答案是替代的建議。  

@@ -1,7 +1,7 @@
 ---
 title: 偵錯和裝載處理序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cc008f12f4312df2d63f019a0d33a7b727e5ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3643e8a6c7bcb97d032771b4f98cbd926d9fd5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249486"
 ---
 # <a name="debugging-and-the-hosting-process"></a>偵錯和裝載處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯和裝載處理序](https://docs.microsoft.com/visualstudio/debugger/debugging-and-the-hosting-process)。  
-  
 Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯工具功能，例如部分信任偵錯和設計階段運算式評估。 如果需要的話可以停用裝載處理序。 如需詳細資訊，請參閱 [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)。 下列章節描述使用或不使用裝載處理序進行偵錯之間的一些差異。  
   
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信任偵錯和 Click-Once 安全性  
@@ -46,7 +44,7 @@ Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯
  `AppDomain.CurrentDomain.FriendlyName` 會根據是否啟用裝載處理序傳回不同的結果。 如果在啟用裝載處理序的情況下呼叫 `AppDomain.CurrentDomain.FriendlyName` ，它會傳回 *app_name*`.vhost.exe`。 如果在停用裝載處理序的情況下呼叫，它會傳回 *app_name*`.exe`。  
   
 ## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly().FullName 差異  
- `Assembly.GetCallingAssembly().FullName` 會根據是否啟用裝載處理序傳回不同的結果。 如果在啟用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName` ，它會傳回 `mscorlib`。 如果在停用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName` ，其會傳回應用程式名稱。  
+ `Assembly.GetCallingAssembly().FullName` 會根據是否啟用裝載處理序傳回不同的結果。 如果在啟用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName`，它會傳回 `mscorlib`。 如果在停用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName` ，其會傳回應用程式名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   

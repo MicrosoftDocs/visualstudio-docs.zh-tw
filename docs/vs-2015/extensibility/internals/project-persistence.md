@@ -1,7 +1,7 @@
 ---
 title: 專案持續性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5c44fde30720fe17f4b9f3a5d679750ccb78ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177096"
 ---
 # <a name="project-persistence"></a>專案持續性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案持續性](https://docs.microsoft.com/visualstudio/extensibility/internals/project-persistence)。  
-  
 持續性是重要的設計考量，為您的專案。 大部分的專案使用的專案項目代表檔案;[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]也支援其中的資料為非檔案型的專案。 這兩個專案和專案檔案所擁有的檔案必須被 persisted。 IDE 會指示專案，以儲存本身或專案項目。  
   
  專案範本會傳遞至 project factory。 範本應該支援所有的專案項目，根據特定專案類型的需求的初始化。 這些範本稍後會儲存為專案檔，IDE 中透過此解決方案所管理。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)並[解決方案](../../extensibility/internals/solutions.md)。  

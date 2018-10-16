@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定使用者將從安裝的位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 68f50fe847d1432292491cd2970c7897eb1388da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 113356a664d94fdd2e8d3e53fae6025d8ef22e60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213001"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定位置讓終端使用者從此處執行安裝作業
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定位置所在的終端使用者會安裝從](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-the-location-where-end-users-will-install-from)。  
-  
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，下載並安裝應用程式使用者的位置不一定是一開始發行應用程式的位置。 例如，在某些組織中開發人員可能會發行至預備伺服器，應用程式，然後以系統管理員會移至 Web 伺服器應用程式。  
   
  在此情況下，您可以使用`Installation URL`屬性來指定使用者要前往下載應用程式的 Web 伺服器。 這是必要的因此，應用程式資訊清單會知道要尋找更新。  

@@ -1,7 +1,7 @@
 ---
 title: CA1050： 宣告命名空間中的型別 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ef0559cc727e7ffd667ee72ebe241a958fa57450
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 5b6f8acdae5e3b95218cd5e22446b8bacfe5a92f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277260"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1050： 在命名空間中的型別宣告](https://docs.microsoft.com/visualstudio/code-quality/ca1050-declare-types-in-namespaces)。
-
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|

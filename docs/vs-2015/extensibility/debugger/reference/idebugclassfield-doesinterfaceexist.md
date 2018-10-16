@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::DoesInterfaceExist |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af7c4db5d7515d9de49ab8ffda40acfda521a5df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1abefe68c29b2062eea5e88874563e0e0d02d843
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290834"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugClassField::DoesInterfaceExist](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugclassfield-doesinterfaceexist)。  
-  
 決定是否特定介面會定義在類別中。  
   
 ## <a name="syntax"></a>語法  

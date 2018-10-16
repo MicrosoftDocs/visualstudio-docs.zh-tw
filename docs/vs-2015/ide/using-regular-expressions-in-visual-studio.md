@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中使用規則運算式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,15 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c74ed503b13e9f5efab3e6bf0df2fab75d34e7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4edf0add3e29dd7fe4156a220fe0edc60e47f117
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285463"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[在 Visual Studio 中使用規則運算式](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio)。
-
 Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在 [尋找和取代] 視窗中使用自訂的規則運算式語法。 如需如何將一些常用的自訂規則運算式符號轉換成該 .NET 版本之說明，請參閱 [Visual Studio Regular Expression Conversions](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) (Visual Studio 規則運算式轉換)。

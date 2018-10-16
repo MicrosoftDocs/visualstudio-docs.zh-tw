@@ -1,7 +1,7 @@
 ---
 title: 如何： 更新資料庫中的記錄 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 73ca33f9fb30a178addab6dee136d3b441bd81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199510"
 ---
 # <a name="how-to-update-records-in-a-database"></a>如何：更新資料庫中的資料錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

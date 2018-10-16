@@ -1,7 +1,7 @@
 ---
 title: 步驟 7：將對話方塊元件新增至您的表單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192942"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件加入至您的表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 7： 將對話方塊元件新增至您的表單](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form)。  
-  
 若要讓程式開啟圖片檔並選擇背景色彩，請在這個步驟中，將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。  
   
  元件在某些方面就像控制項一樣。 您可以使用 [工具箱] 將元件新增至表單，並使用 [屬性] 視窗設定該元件的屬性。 但與控制項不同，將元件加入至表單並不會加入可讓使用者在表單上看見的項目。 相反地，只會提供可讓您透過程式碼來觸發的某些行為。 它是一個可開啟 [開啟檔案] 對話方塊的元件。  

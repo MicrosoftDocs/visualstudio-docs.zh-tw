@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierDescription2::GetDescription |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b50a469680d1263c57321d2649501e129d3d02
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a37f6e4603dd18c75dbf6b7977995656f8a444ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270799"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortSupplierDescription2::GetDescription](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierdescription2-getdescription)。  
-  
 擷取連接埠提供者的描述和描述中繼資料。  
   
 ## <a name="syntax"></a>語法  

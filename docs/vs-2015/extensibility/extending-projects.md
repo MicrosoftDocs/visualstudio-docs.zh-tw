@@ -1,7 +1,7 @@
 ---
 title: 擴充專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 007e92833d8bf0ee3b1ae81e2e13fed2b08e903c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d16cf3886fb8b60cf642a3b669b22ac07838a3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175158"
 ---
 # <a name="extending-projects"></a>延伸專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充專案](https://docs.microsoft.com/visualstudio/extensibility/extending-projects)。  
-  
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署單位的方式。 您可以找到有關中專案的詳細資訊[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
   
  您可以建立您自己的專案類型使用 Visual Studio SDK 和 Managed Package Framework 中的專案，您可以在下載[專案的 Managed Package Framework](http://mpfproj12.codeplex.com/)。 若要了解如何實作自訂專案，請參閱[產生新專案： Under the Hood、 第一段](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)並[產生新專案： Under the Hood、 第二段](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  

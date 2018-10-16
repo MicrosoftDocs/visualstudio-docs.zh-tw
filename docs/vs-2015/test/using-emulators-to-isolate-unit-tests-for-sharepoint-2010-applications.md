@@ -1,7 +1,7 @@
 ---
 title: 使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,24 +13,22 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178304"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications)。  
-  
 Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 Microsoft SharePoint 2010 應用程式的隔離單元測試。 模擬器會使用來自 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 隔離架構的[填充碼](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)建立輕量型記憶體內部物件，用於模仿 SharePoint 應用程式開發介面最常見的物件和方法。 沒有模擬 SharePoint 方法或要變更模擬器的預設行為時，則可以建立 Fakes 填充碼提供您想要的結果。  
   
  現有的測試方法和類別可以輕鬆轉換成在模擬器內容中執行。 這項功能可讓您建立兩用測試。 兩用測試可在針對真正的 SharePoint 應用程式開發介面之整合測試與使用模擬器的隔離單元測試之間切換。  
   
 ##  <a name="BKMK_In_this_topic"></a>本主題內容  
- [Requirements](#BKMK_Requirements)  
+ [需求](#BKMK_Requirements)  
   
  [AppointmentsWebPart 範例](#BKMK_The_AppointmentsWebPart_example)  
   

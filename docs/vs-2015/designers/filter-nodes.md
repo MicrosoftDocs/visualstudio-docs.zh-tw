@@ -1,7 +1,7 @@
 ---
 title: 篩選節點 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2789676505588c2041abfd876a228fc456ee3607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8046fcbeebe2af0c6c7ebb725ffe4ed6cfa263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178577"
 ---
 # <a name="filter-nodes"></a>篩選節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[篩選節點](https://docs.microsoft.com/visualstudio/designers/filter-nodes)。  
-  
 在著色器設計工具中，篩選節點會將色彩或材質範例等輸入轉換為象徵性的色彩值。 這些象徵性的色彩值通常會在進行非相片品質的轉譯時使用，或當成其他視覺效果中的元件使用。  
   
 ## <a name="filter-node-reference"></a>篩選節點參考  

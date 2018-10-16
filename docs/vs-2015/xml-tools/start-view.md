@@ -1,7 +1,7 @@
 ---
 title: 啟動檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c85849089351f016b43988f3bf778cd66ed9a166
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234243"
 ---
 # <a name="start-view"></a>開始檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[開始檢視](https://docs.microsoft.com/visualstudio/xml-tools/start-view)。  
-  
   
 開始檢視是 XML 結構描述 (XSD) 設計工具的啟動點。 當您建立新 XSD 檔案時，您將先看到開始檢視。  
   

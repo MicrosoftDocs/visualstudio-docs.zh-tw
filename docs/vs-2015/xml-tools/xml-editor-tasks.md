@@ -1,7 +1,7 @@
 ---
 title: XML 編輯器工作 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a6053732a067aa76b5b632c7a9197e5f4f75957
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241185"
 ---
 # <a name="xml-editor-tasks"></a>XML 編輯器工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[XML 編輯器工作](https://docs.microsoft.com/visualstudio/xml-tools/xml-editor-tasks)。  
-  
   
 本節描述如何使用 XML 編輯器完成一般工作。  
   

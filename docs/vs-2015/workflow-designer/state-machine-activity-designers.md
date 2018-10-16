@@ -1,7 +1,7 @@
 ---
 title: 狀態機器活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5b9da275c3c4c679fcc6de08f5611b2a594bd8bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245514"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包括一些在建構工作流程時可以使用的活動設計工具。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。  

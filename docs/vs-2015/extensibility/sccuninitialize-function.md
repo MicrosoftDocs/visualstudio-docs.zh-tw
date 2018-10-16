@@ -1,7 +1,7 @@
 ---
 title: SccUninitialize 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cec726eaad2e69ea3adfc850df452c2a06f8059
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4682d5d92349db85969f7477a36628ec621ca1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282915"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccUninitialize 函式](https://docs.microsoft.com/visualstudio/extensibility/sccuninitialize-function)。  
-  
 此函式會清除任何配置或開啟先前呼叫所建立的連線[SccInitialize](../extensibility/sccinitialize-function.md)準備關閉原始檔控制外掛程式。  
   
 ## <a name="syntax"></a>語法  

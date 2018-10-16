@@ -1,7 +1,7 @@
 ---
 title: 如何： 啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235933"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>如何：啟用 ASP.NET 應用程式的偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 啟用 ASP.NET 應用程式的偵錯](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)。  
-  
 若要啟用偵錯，您必須先在 **專案屬性** 頁面以及應用程式的 web.config 檔案中啟用它。  
   
 > [!NOTE]  

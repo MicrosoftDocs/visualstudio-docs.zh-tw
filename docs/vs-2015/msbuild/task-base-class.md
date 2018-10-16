@@ -1,7 +1,7 @@
 ---
 title: 工作基底類別 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b2b269d718871c58cb082ce09ed50ce70736b55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea6d06cfdab170ee4a654039b1d374ec9ce336af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255967"
 ---
 # <a name="task-base-class"></a>工作基底類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Task 基底類別](https://docs.microsoft.com/visualstudio/msbuild/task-base-class)。  
-  
   
 許多工作最終繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此類別會將數個參數新增至從中衍生它們的工作。 本文件會列出這些參數。  
   

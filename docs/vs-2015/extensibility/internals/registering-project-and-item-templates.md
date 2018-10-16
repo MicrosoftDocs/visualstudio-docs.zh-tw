@@ -1,7 +1,7 @@
 ---
 title: 註冊專案和項目範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306809"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註冊專案和項目範本](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates)。  
-  
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。  
   
  如需有關範本的詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  

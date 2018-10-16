@@ -1,7 +1,7 @@
 ---
 title: 使用 ADO.NET 建立簡單資料應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204304"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 ADO.NET 建立簡單資料應用程式](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet)。  
-  
   
 建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。  
   
@@ -221,7 +219,7 @@ ms.locfileid: "47490933"
   
     |註解|描述|  
     |-------------|-----------------|  
-    |Util-1|新增`System.Configuration`命名空間。|  
+    |Util-1|加入 `System.Configuration` 命名空間。|  
     |Util-2|定義變數 `returnValue`，並將它初始化為 `null` (C#) 或 `Nothing` (Visual Basic)。|  
     |Util-3|即使您輸入`connString`中的連接字串的名稱作為**屬性**視窗中，您必須指定`"SimpleDataApp.Properties.Settings.connString"`(C#) 或`"SimpleDataApp.My.MySettings.connString"`(Visual Basic) 程式碼中。|  
   

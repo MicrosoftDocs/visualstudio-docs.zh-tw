@@ -1,7 +1,7 @@
 ---
 title: 如何： 停用 ClickOnce 應用程式的 URL 啟動 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ad43abbafe1d5f70bb2de748154a0066aa3d8927
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47fc07ade4529ab99a4c687ea62791ec083d2d0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273323"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>如何：停用 ClickOnce 應用程式的 URL 啟動過程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 停用 URL 啟用的 ClickOnce 應用程式](https://docs.microsoft.com/visualstudio/deployment/how-to-disable-url-activation-of-clickonce-applications)。  
-  
 一般而言，從 Web 伺服器安裝 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式後，其將立即自動啟動。 基於安全性理由，您可能決定要停用此行為，並告知使用者啟動應用程式**啟動**功能表改。 下列程序描述如何停用 URL 啟用。  
   
  這項技術僅適用於安裝在使用者電腦上的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，其來自 Web 伺服器。 此技術不得用於僅限線上使用的應用程式，其只能使用 URL 啟動。 如需有關線上專用和已安裝的應用程式之間的差異的詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  

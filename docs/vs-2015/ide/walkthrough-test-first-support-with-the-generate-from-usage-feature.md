@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：以使用時產生功能支援測試優先 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232839"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能支援測試優先
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用產生的功能支援測試優先](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature)。  
-  
 本主題示範如何使用支援「測試優先」開發的[使用時產生](../misc/generate-from-usage.md)功能。  
   
  *「測試先行」開發方式* (Test-first development) 這種軟體設計方法，要先根據產品規格撰寫單元測試，再撰寫測試成功所需要的原始程式碼。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 支援「測試先行」開發方式的做法是，當您第一次在測試案例中參考類型和成員，在它們被定義之前，以原始程式碼產生新的類型和成員。  

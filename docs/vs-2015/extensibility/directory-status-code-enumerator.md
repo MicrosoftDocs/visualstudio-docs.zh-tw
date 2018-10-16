@@ -1,7 +1,7 @@
 ---
 title: 目錄狀態碼列舉值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24f6dde65def4569eb8163d281f872011be0275c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264063"
 ---
 # <a name="directory-status-code-enumerator"></a>目錄狀態碼列舉值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[目錄狀態碼列舉程式](https://docs.microsoft.com/visualstudio/extensibility/directory-status-code-enumerator)。  
-  
 `SccDirStatus`列舉值包含具名的常數值會指定在原始檔控制系統中的目錄的狀態。 這個列舉型別由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 這是在原始檔控制外掛程式 API 1.2 版中引進。  
   
 ## <a name="syntax"></a>語法  

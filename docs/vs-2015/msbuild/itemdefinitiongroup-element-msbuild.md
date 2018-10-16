@@ -1,7 +1,7 @@
 ---
 title: ItemDefinitionGroup 元素 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fbb9e018968c8336c098f36991ee92651c85fd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 534bad91ad4b909d798def84630cf54b64cd6ccf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306048"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ItemDefinitionGroup 項目 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/itemdefinitiongroup-element-msbuild)。  
-  
   
 `ItemDefinitionGroup` 元素可讓您定義一組項目定義，這些項目定義預設為套用至專案中所有項目的中繼資料值。 ItemDefinitionGroup 可取代使用 [CreateItem 工作](../msbuild/createitem-task.md)和 [CreateProperty 工作](../msbuild/createproperty-task.md)的需求。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetBackingFieldForProperty |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b29b6eb411c511612b60faf271d23decd7370c12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10f6c5b8a3da4539bfbe2efce23bd29a10f257ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283552"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugObject2::GetBackingFieldForProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty)。  
-  
 取得變數的欄位 （如果有的話），可能會支援這個物件所表示的屬性。  
   
 ## <a name="syntax"></a>語法  

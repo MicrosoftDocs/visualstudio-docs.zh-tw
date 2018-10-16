@@ -1,7 +1,7 @@
 ---
 title: Detach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56ad870d4638607ad03b60b33bb7d648dbbca424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbc4f3372c82a760a7445cbe5ad780fe5f7ccc49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196543"
 ---
 # <a name="detach"></a>中斷連結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[卸離](https://docs.microsoft.com/visualstudio/profiling/detach)。  
-  
 VSPerfCmd.exe **Detach** 選項會中斷分析工具與所指定處理序或所有處理序的連線。 必須已使用取樣方法初始化分析。  
   
  使用 **Detach**可以中斷使用 **Launch** 或 **Attach** 選項所啟動的分析。 使用後續的 **Attach** 命令，可以重新附加分析工具。  

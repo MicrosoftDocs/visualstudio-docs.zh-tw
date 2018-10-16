@@ -1,7 +1,7 @@
 ---
 title: 安裝 Isolated 的 Shell 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7b1ba12f39accf863b051ec7096ee835a03ff64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257344"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安裝獨立 Shell 應用程式](https://docs.microsoft.com/visualstudio/extensibility/installing-an-isolated-shell-application)。  
-  
 若要安裝的殼層應用程式中，您必須執行下列步驟。  
   
 -   準備您的解決方案。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用組態檔定義資料來源 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bd09cdd068adba49147222cc7458afe77c61e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253002"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用組態檔定義資料來源](https://docs.microsoft.com/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source)。  
-  
 這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
   
 -   建立 app.config 檔案。  

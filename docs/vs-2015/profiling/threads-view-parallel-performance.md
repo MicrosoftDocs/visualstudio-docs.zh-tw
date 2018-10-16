@@ -1,7 +1,7 @@
 ---
 title: 執行緒檢視 (平行處理效能) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300244"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行緒檢視 （平行處理效能）](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance)。  
-  
 執行緒檢視是並行視覺化檢視中最詳細且功能豐富的檢視。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
   
  在設定檔分析期間，並行視覺化檢視會檢查每個應用程式執行緒的所有作業系統內容切換事件。 發生內容切換的原因有很多，例如：  

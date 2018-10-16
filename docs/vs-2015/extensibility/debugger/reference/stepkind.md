@@ -1,7 +1,7 @@
 ---
 title: STEPKIND |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8d07f3d77d1f5f2c5deb8fcec75c6f4fac1fdf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1a09f27f44254e7f3930f00efa3921faae710a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178512"
 ---
 # <a name="stepkind"></a>STEPKIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[STEPKIND](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/stepkind)。  
-  
 指定用於逐步執行步驟種類。  
   
 ## <a name="syntax"></a>語法  

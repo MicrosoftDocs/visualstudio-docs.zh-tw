@@ -1,7 +1,7 @@
 ---
 title: InstallShield 限量版 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 016833993251916804c5949559fb9646e6130879
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482b06a079346e91a91708d32733754a3f98a3db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189659"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield 限量版
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[InstallShield Limited Edition](https://docs.microsoft.com/visualstudio/deployment/installshield-limited-edition)。  
-  
 您可以使用 InstallShield Limited Edition 建立安裝程式檔案，然後散發給使用者，讓使用者不需要連線至網路，即可安裝桌面應用程式或元件。 Visual Studio Professional 和 Enterprise 版本的使用者可免費使用 InstallShield Limited Edition。 它取代了 Visual Studio 不再支援的 Windows Installer 技術。 您也可以使用需要網路連線的 ClickOnce，來散發應用程式和元件。 請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
 > [!NOTE]

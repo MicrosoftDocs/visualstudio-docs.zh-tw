@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 多目標概觀 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277065"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 多目標概觀](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview)。  
-  
 在這個版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您可以指定應用程式所需的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 因此，如果您要使用這個版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 繼續開發您在舊版中開始的專案，您不必變更 Framework 目標。 您也可以建立包含以不同 Framework 版本為目標之專案的方案。 Framework 目標也有助於確保應用程式只使用指定的 Framework 版本中可供使用的功能。  
   
 > [!TIP]

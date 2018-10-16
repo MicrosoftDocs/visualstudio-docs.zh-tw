@@ -1,7 +1,7 @@
 ---
 title: 了解取樣資料值 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60087d2788cd4b46b77d670cf430bf0e0198b6f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221386"
 ---
 # <a name="understanding-sampling-data-values"></a>認識取樣資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[了解取樣資料值](https://docs.microsoft.com/visualstudio/profiling/understanding-sampling-data-values)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具的「取樣」分析方法會依設定的間隔來中斷電腦處理器，並收集函式呼叫堆疊。 「呼叫堆疊」是一個動態結構，其中儲存在處理器上執行的函式相關資訊。  
   
  **需求**  

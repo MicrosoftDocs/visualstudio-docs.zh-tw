@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 使用者經驗指導方針 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5773bdbd493b29281d148066306daf5ad9d2d2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171999"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 使用者經驗指導方針](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines)。  
-  
 Visual Studio 使用者經驗指導方針適用於 Visual studio 中設計的新功能的任何人。 這些指導方針包含常見的使用者模型和互動模式的相關資訊，好讓新的使用者介面 (UI) 的設計工具可以建立會順暢且一致的開發環境內的使用者體驗。  
   
  開發軟體的 Microsoft 產品的方式了解 Windows 所提供的指引。 有三個重要的資源，要注意的：  

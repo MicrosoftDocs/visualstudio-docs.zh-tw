@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 下載需求以 ClickOnce 部署 API 的附屬組件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,29 +27,27 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dfd9b73b7cd12108f86f566eb8d1d4a1c3823f4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306328"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依 ClickOnce 部署 API 的要求下載附屬組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 依需求以 ClickOnce 部署 API 下載附屬組件](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api)。  
-  
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。  
   
  中所述[當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)，您可以包含在相同的多個文化特性的多個附屬組件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 預設會下載您部署中所有的附屬組件到用戶端電腦，儘管單一用戶可能只需要一個附屬組件。  
   
- 本逐步解說示範如何標示您的附屬組件為選擇性，並僅下載用戶端電腦目前文化特性所需要的附屬組件。 下列程序使用的工具可在 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 取得。 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行這個工作。  另請參閱 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) 或 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 本逐步解說示範如何標示您的附屬組件為選擇性，並僅下載用戶端電腦目前文化特性所需要的附屬組件。 下列程序使用的工具可在 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 取得。 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]執行這個工作。  另請參閱 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) 或 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 > [!NOTE]
 >  為了測試用途，下列程式碼範例以程式設計的方式設定文化特性為 `ja-JP`。 如需為生產環境調整程式碼的相關資訊，請參閱本主題＜後續步驟＞一節。  
   
 ## <a name="prerequisites"></a>必要條件  
- 本主題假設您知道如何使用 Visual Studio 將當地語系化的資源新增至您的應用程式。 如需詳細指示，請參閱 <<c0> [ 逐步解說： 當地語系化 Windows Forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)。  
+ 本主題假設您知道如何使用 Visual Studio 將當地語系化的資源新增至您的應用程式。 如需詳細指示，請參閱 [逐步解說：當地語系化 Windows Forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)。  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>隨需下載附屬組件  
   

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK 中公開事件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5b68428d419b3608781ee9525ae107a7239b53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195568"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[公開的事件，在 Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-events-in-the-visual-studio-sdk)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 可讓您使用自動化來源事件。 我們建議您來源專案和專案項目的事件。  
   
  從自動化取用者會擷取事件<xref:EnvDTE.DTEClass.Events%2A>物件或<xref:EnvDTE.DTEClass.GetObject%2A>(「 EventObjectName")。 環境呼叫`IDispatch::Invoke`利用`DISPATCH_METHOD`或`DISPATCH_PROPERTYGET`旗標，以傳回事件。  

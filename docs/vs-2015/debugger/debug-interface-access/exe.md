@@ -1,7 +1,7 @@
 ---
 title: Exe |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b72a1bb8448373d090f6c71e97c7c53933f7c544
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdfa22db349718a217017684f9c816d7bba436a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291497"
 ---
 # <a name="exe"></a>Exe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Exe](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/exe)。  
-  
 Exe 是唯一的符號沒有語彙或類別父代，，因為其代表全域範圍的.exe 或.dll 檔案。 沒有與只有一個符號`SymTagExe`標記每個檔案。 [Idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)方法傳回的符號。  
   
 ## <a name="properties"></a>屬性  

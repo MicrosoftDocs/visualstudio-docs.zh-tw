@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierLocale2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1afac07a30b026fda824284f201b86b95709f2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fb4b37aa8ef2fb7f62fc03e344d12f542f437e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295566"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPortSupplierLocale2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierlocale2)。  
-  
 提供連接埠提供者的地區設定支援。  
   
 ## <a name="syntax"></a>語法  

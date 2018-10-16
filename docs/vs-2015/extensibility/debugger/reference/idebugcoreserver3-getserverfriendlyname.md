@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetServerFriendlyName |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59f30cae879b1769e120fcdc2852a75f88f2f2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fda52055d2cd082f49cba9b3ba696d4edf1c948b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253380"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugCoreServer3::GetServerFriendlyName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname)。  
-  
 擷取伺服器的易記名稱。  
   
 ## <a name="syntax"></a>語法  

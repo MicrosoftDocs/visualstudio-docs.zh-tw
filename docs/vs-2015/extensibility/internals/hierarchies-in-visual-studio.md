@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中的階層 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250649"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 中的階層](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會顯示與專案*階層*。 在 IDE 中，階層是樹狀結構的節點，其中每個節點都有一組相關聯的屬性。 A*專案階層架構*是保留的專案項目，這些項目的關聯性，和的項目相關聯的屬性和命令的容器。  
   
  在  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您使用階層介面，來管理專案階層<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面將重新導向來自專案項目叫用適當的階層架構視窗中，而不是標準的命令處理常式的命令。  

@@ -1,7 +1,7 @@
 ---
 title: 測試區域 2： 取得從原始檔控制 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d30b4a246085fe3a1339e057e516a9a727af1cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284176"
 ---
 # <a name="test-area-2-get-from-source-control"></a>測試區域 2︰從原始檔控制中取得
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試區域 2： 從原始檔控制取得](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control)。  
-  
 此測試區域涵蓋測試案例，透過 Get 命令的版本存放區擷取項目。 這些測試案例可以套用至這兩個本機和 Web 專案。  
   
 ## <a name="command-menu-access"></a>命令功能表存取  

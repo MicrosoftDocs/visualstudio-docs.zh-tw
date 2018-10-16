@@ -1,7 +1,7 @@
 ---
 title: IDebugPointerField::GetDereferencedField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 730f869613341b3733bff47a3bdcb066e987f9a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc1b9ada31fb9d59c4078558a77258ee944b2b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241393"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPointerField::GetDereferencedField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpointerfield-getdereferencedfield)。  
-  
 這個方法會傳回這個指標物件所指向的物件型別。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 啟用和停用編輯後繼續 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a9ec8b8e25da6edb36e1983e45f7bb78251208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212815"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：啟用和停用編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 啟用和停用編輯後繼續](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)。  
-  
 您可以停用或啟用編輯後繼續中的**選項**在設計階段的對話方塊。 但是在進行偵錯時，無法變更這項設定。  
   
  [編輯後繼續] 只能用於偵錯組建中。 在原生 C++ 中，[編輯後繼續] 必須使用 /INCREMENTAL 選項。  

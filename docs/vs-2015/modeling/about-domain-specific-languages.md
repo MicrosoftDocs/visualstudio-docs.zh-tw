@@ -1,7 +1,7 @@
 ---
 title: 關於特定領域語言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175262"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義域專屬語言相關](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages)。  
-  
 不同於一般用途的程式語言，例如 C# 或 UML，定義域專屬語言 (DSL) 被設計來表達工作的特定問題空間或網域中的陳述式。  
   
  已知的 Dsl 包含規則運算式和 SQL。 每個 DSL 是王道比一般用途的語言來描述文字字串或資料庫，但更糟的作業描述自己的範圍以外的想法。 個別的產業也有自己的 Dsl。 比方說，在電信業中，呼叫的描述語言都廣泛利用通話，在指定狀態的順序，並在空中旅遊業 DSL 用來描述航班預約的標準。  

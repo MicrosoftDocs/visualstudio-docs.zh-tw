@@ -1,7 +1,7 @@
 ---
 title: 執行緒屬性對話方塊、 一般索引標籤 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307699"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行緒屬性對話方塊、 一般索引標籤](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box)。  
-  
 使用此對話方塊中，若要深入了解特定的執行緒。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開一則訊息。 在樹狀目錄中，選取執行緒的任何節點，然後選擇**屬性**從**檢視**功能表。  
   
  **Thread Properties**  對話方塊包含一個窗格中，**一般** 索引標籤。可用的設定如下：  

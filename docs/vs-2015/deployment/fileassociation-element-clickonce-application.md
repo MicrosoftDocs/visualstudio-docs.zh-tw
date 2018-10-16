@@ -1,7 +1,7 @@
 ---
 title: '&lt;fileAssociation&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a3589387b00eb1ade9c9b60b0845bc2421b3486
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234451"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;fileAssociation&gt;項目 （ClickOnce 應用程式）](https://docs.microsoft.com/visualstudio/deployment/fileassociation-element-clickonce-application)。  
-  
 識別要與應用程式相關聯的副檔名。  
   
 ## <a name="syntax"></a>語法  
@@ -89,7 +87,7 @@ ms.locfileid: "47485097"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

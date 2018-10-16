@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用物件管理員註冊程式庫 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91b03bdf1287c66d86de9e5cd037d6a779a52bad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 204291cae617c704943889b8b88c590145935db3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174703"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 使用物件管理員註冊程式庫
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用物件管理員註冊程式庫](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-register-a-library-with-the-object-manager)。  
-  
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，讓您檢視在您的專案或外部元件的符號。 這些符號包括命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，並公開 （expose） 才能[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員，以填入資料的工具。  
   
  物件管理員會追蹤的所有可用媒體櫃。 每個程式庫必須向 object manager 之後，才提供符號瀏覽工具的符號。  

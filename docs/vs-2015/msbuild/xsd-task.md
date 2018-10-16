@@ -1,7 +1,7 @@
 ---
 title: XSD 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f5a6bf91c6e9218593031ff15f2b31822ea5fa1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd1aed6537d4fb49bafa34ce09dcb191c9475357
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182633"
 ---
 # <a name="xsd-task"></a>XSD 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[XSD 工作](https://docs.microsoft.com/visualstudio/msbuild/xsd-task)。  
-  
   
 包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。  
   

@@ -1,7 +1,7 @@
 ---
 title: 使用分析工具命令列收集獨立應用程式的應用程式統計資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b07f38d3051e6912e6496d082d20219b308b8c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e93a7042917daaabdd789c6990c5530b25e66fcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305834"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集獨立應用程式的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[收集獨立應用程式使用 Profiler 命令列應用程式統計資料](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line)。  
-  
 本節說明從命令列使用取樣方法收集用戶端 (獨立) 應用程式之效能統計資料的程序和選項。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 符號項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d36bcf22d012d4543267d1b57d41567baf3e85b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b436f200d6d3a1ef668967cf5dbb9cd934699976
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283630"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Symbols 元素](https://docs.microsoft.com/visualstudio/extensibility/symbols-element)。  
-  
 定義 Guid 和 Id，可供其他 VSCT 項目。 Unmanaged 程式碼，這項資訊通常來自所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼會使用項目的子項目符號來定義這項資訊。  
   
  如果您從現有的.cto 檔建立.vsct 檔，就會產生符號做為符號項目的子系。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  

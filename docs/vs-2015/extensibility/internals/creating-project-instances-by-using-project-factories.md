@@ -1,7 +1,7 @@
 ---
 title: 使用 Project Factory 建立專案執行個體 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288336"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用專案 Factory 建立專案執行個體
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立專案執行個體所使用 Project Factory](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories)。  
-  
 專案中的型別[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用*project factory*建立專案物件的執行個體。 專案的處理站是類似於標準的 class factory cocreatable COM 物件。 不過，專案物件不是 cocreatable： 只可以建立使用 project factory。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 呼叫 project factory 實作 VSPackage 中，當使用者載入現有的專案，或建立新的專案中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 新的專案物件會提供 IDE，具有足夠的資訊填入 [方案總管] 中。 新的專案物件也會提供必要的介面以支援由 IDE 所起始的所有相關 UI 動作。  

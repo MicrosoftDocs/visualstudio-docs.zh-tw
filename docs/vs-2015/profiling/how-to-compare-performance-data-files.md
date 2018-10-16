@@ -1,7 +1,7 @@
 ---
 title: 如何：比較效能資料檔案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0574c518342ea24ad2bd3aaf4fd3df9a4ee34a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a4860296945c623052efd6c5817215401210783
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190563"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 比較效能資料檔案](https://docs.microsoft.com/visualstudio/profiling/how-to-compare-performance-data-files)。  
-  
 您可以透過建立比較 (「差異」) 報告或檢視，來比較兩個不同的程式碼剖析工具資料檔案 (.vsp 或 .vsps) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  
   
  差異報告提供資料的資料表檢視。 資料表提供差異或相對於基準的變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 偵錯多執行緒應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186195"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>逐步解說：偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯多執行緒的應用程式，使用 [執行緒] 視窗](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window)。  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 提供改良**執行緒**視窗和其他使用者介面改進，可讓您更輕鬆地偵錯多執行緒應用程式。 只需花幾分鐘完成這份逐步解說，您便能更熟悉對多執行緒應用程式偵錯時的新介面功能。  
   
  開始本逐步解說之前，您需要一個多執行緒應用程式。 請依照下列步驟建立專案。  
@@ -56,7 +54,7 @@ ms.locfileid: "47496572"
   
 6.  刪除出現在原始程式檔中的程式碼，並取代範例程式碼，會出現在 「 建立執行緒 > 主題的章節[建立的執行緒和開始時間傳遞資料](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
-7.  在 **檔案**功能表上，按一下**全部儲存**。  
+7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 #### <a name="to-begin-the-walkthrough"></a>若要開始逐步解說  
   

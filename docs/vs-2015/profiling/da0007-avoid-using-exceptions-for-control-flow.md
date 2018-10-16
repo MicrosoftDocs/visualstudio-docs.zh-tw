@@ -1,7 +1,7 @@
 ---
 title: DA0007：避免使用例外狀況控制流程 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c4136df5f9a881a9c1df1234395d569d169d147
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11f4f88a14739231556af7d6368671282582f559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227509"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0007： 避免使用例外狀況進行控制流程](https://docs.microsoft.com/visualstudio/profiling/da0007-avoid-using-exceptions-for-control-flow)。  
-  
 規則 Id |DA0007 |  
 |類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  

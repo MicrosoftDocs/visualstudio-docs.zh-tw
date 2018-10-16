@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 使用者開發入門 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261504"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)。  
-  
 歡迎使用 Visual Studio！ 當您 [下載](http://www.visualstudio.com/community) 產品後，這些頁面將能協助您開始撰寫程式碼。  
   
 -   **[製作 Web 應用程式](https://www.visualstudio.com/features/modern-web-tooling-vs)：** 用以建立及部署現代化 Web 應用程式的工具。  
@@ -40,7 +38,7 @@ ms.locfileid: "47491654"
   
 -   **[使用 C# 或 Visual Basic (Xamarin) 製作跨平台行動應用程式](../cross-platform/visual-studio-and-xamarin.md)**：開始使用 Visual Studio 和 Xamarin 工具來建立行動應用程式，從一個共用的程式碼基底即可在 Android、iOS 和通用 Windows 平台上執行。  
   
-     載入範例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (原生 UI) 或[Xamarin Forms Todo 範例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共用 UI） &#124;[進行教學課程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;[瀏覽文件](https://msdn.microsoft.com/library/mt299001.aspx) &#124;[觀看影片                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     載入範例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (原生 UI) 或[Xamarin Forms Todo 範例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共用 UI） &#124;[進行教學課程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;[瀏覽文件](https://msdn.microsoft.com/library/mt299001.aspx) &#124;[觀看影片](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[使用 C++ 製作原生跨平台應用程式和程式庫](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** 前往此處，開始建立可在 Android、iOS 和通用 Windows 平台上執行的 C++ 應用程式和程式庫。  
   

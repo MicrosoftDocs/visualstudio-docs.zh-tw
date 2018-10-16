@@ -1,7 +1,7 @@
 ---
 title: 專案內容 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 280864c69e75d37c73095320787d74e61a93ab38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24db09c97b499ee10aaf5d84fa1d8eb328042a3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203316"
 ---
 # <a name="project-context"></a>專案內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案內容](https://docs.microsoft.com/visualstudio/extensibility/internals/project-context)。  
-  
 當使用者加入，或適用於專案和專案項目時，則 IDE 會使用專案內容的概念來判斷應該執行各種作業。  
   
  一般而言，檔案是藉由選取的使用者明確建立標準專案物件**新的專案**命令或可選取**開啟專案**命令**檔案**功能表。 在這些情況下，建立和開啟專案的內容中的檔案和專案類型可定義進行編輯文件的內容。  

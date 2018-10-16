@@ -1,7 +1,7 @@
 ---
 title: 專案設計工具、偵錯頁面 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfe8539d7b15af1faa22911b69686cf9243db418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271358"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案設計工具、 偵錯頁面](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer)。  
-  
   
 > [!WARNING]
 >  本主題不適用於 Windows 市集應用程式。 請參閱 Windows 開發人員中心的[開始偵錯工作階段 (VB、C#、C++ 和 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。  

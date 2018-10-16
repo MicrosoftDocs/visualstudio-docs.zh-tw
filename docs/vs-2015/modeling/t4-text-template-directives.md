@@ -1,7 +1,7 @@
 ---
 title: T4 文字範本指示詞 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e079b21c3a85f883351808b8defda6d0d68619f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302168"
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[T4 文字範本指示詞](https://docs.microsoft.com/visualstudio/modeling/t4-text-template-directives)。  
-  
 指示詞會提供指令給文字範本轉換引擎。  
   
  指示詞的語法如下：  

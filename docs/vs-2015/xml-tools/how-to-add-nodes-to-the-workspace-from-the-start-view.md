@@ -1,7 +1,7 @@
 ---
 title: 如何： 將節點從開始檢視加入至工作區 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 47c3c1cd98549ee0fff78459ad50a0ab307f404d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2ee6b3112fdc7f11c53aad1a9cc45b2dd9d2193
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306289"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>HOW TO：將節點從開始檢視加入至工作空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 新增節點至工作區從開始檢視](https://docs.microsoft.com/visualstudio/xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view)。  
-  
   
 本主題描述如何將全域節點加入[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)從[開始檢視](../xml-tools/start-view.md)。  
   

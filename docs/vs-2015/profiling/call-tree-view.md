@@ -1,7 +1,7 @@
 ---
 title: 呼叫樹狀圖檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225442"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫樹狀圖檢視](https://docs.microsoft.com/visualstudio/profiling/call-tree-view)。  
-  
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。  
   
  [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示效能資源使用最多的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。  

@@ -1,7 +1,7 @@
 ---
 title: 專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ade0234423c907c675bc1dd53e3436dfa38ca26e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb67c01732f5347e13c09146379d2b79298d198d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236050"
 ---
 # <a name="projects"></a>專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案](https://docs.microsoft.com/visualstudio/extensibility/internals/projects)。  
-  
 在 Visual Studio 中，專案是容器，開發人員用來組織原始程式碼檔和其他資源，會出現在**方案總管 中**。 一般而言，專案會儲存原始程式檔和資源，例如點陣圖檔案的參考的檔案 （例如，C# 專案的.csproj 檔案）。 可讓您組織、 建置、 偵錯及部署來源的程式碼的專案，請參考 Web 服務、 資料庫和其他資源。 Vspackage 可以擴充 Visual Studio 專案系統，三種主要方式：*專案類型*，*專案子類型*，並*自訂工具*。  
   
 ## <a name="in-this-section"></a>本節內容  

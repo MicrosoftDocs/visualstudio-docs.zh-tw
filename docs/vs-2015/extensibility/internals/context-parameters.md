@@ -1,7 +1,7 @@
 ---
 title: 內容參數 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c890a1ffa91d4e6017411e99b4845304a2399279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238078"
 ---
 # <a name="context-parameters"></a>內容參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[內容參數](https://docs.microsoft.com/visualstudio/extensibility/internals/context-parameters)。  
-  
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE)，您可以加入至精靈**新增專案**，**加入新項目**，或**加入子專案**對話方塊。 加入的精靈都位於**檔案** 功能表或以滑鼠右鍵按一下專案，以在**方案總管 中**。 IDE 會將內容參數傳遞至精靈的實作。 IDE 呼叫精靈時，內容參數會定義專案的狀態。  
   
  在 IDE 啟動精靈，藉由設定<xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION>IDE 的呼叫中的旗標<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A>專案的方法。 設定時，專案必須造成`IVsExtensibility::RunWizardFile`方法，以利用已註冊的精靈名稱或 GUID 和其他 IDE 傳遞給它的內容參數來執行。  

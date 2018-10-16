@@ -1,7 +1,7 @@
 ---
 title: 使用 MSBuild 取得組建記錄檔 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6d3981b2c671eda2a121f698835dd7932894bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176003"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 MSBuild 取得組建記錄檔](https://docs.microsoft.com/visualstudio/msbuild/obtaining-build-logs-with-msbuild)。  
-  
   
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   

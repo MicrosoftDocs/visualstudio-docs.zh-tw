@@ -1,7 +1,7 @@
 ---
 title: 管理模型與版本控制下的圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187547"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>在版本控制下管理模型與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理模型與版本控制下的圖表](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control)。  
-  
-使用來管理不同版本的模型專案和圖表，包含 code map （.dgml 檔案），[使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); 可與內部部署 Team Foundation Server，或在雲端中使用視覺效果Studio Team Services。  
+藉助 [使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)，管理不同版本的模型專案和圖表，包含 Code Map (.dgml 檔案)；可搭配內部部署的 Team Foundation Server 或搭配 Visual Studio Team Services 在雲端使用。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!IMPORTANT]
->  當有多位使用者進行同一個模型專案時，請務必特別注意。 了解如何[組織中型或大型專案中的模型](../modeling/structure-your-modeling-solution.md)。  
+>  當有多位使用者進行同一個模型專案時，請務必特別注意。 了解如何 [組織中型或大型專案中的模型](../modeling/structure-your-modeling-solution.md)。  
   
 ##  <a name="ModelingProjects"></a> 模型專案中的檔案  
  模型專案上可以有多位使用者同時執行工作 (假設這些使用者處理不同的檔案)。  
@@ -66,7 +64,7 @@ ms.locfileid: "47498895"
   
 -   為幫助您追蹤套件，請重新命名此套件檔以反映實際的套件名稱。  
   
--   中[!INCLUDE[esprscc](../includes/esprscc-md.md)]，一律會執行**簽入**並**Get Latest Version**上完成的模型專案中，永遠不會在個別檔案上的作業。  
+-   在 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中，請務必在完整的模型專案上執行 [簽入]  和 [取得最新的版本]  作業，絕不要在個別檔案上執行。  
   
 -   務必先立即執行 [取得]  作業，再接著簽入模型專案。  
   
@@ -82,7 +80,7 @@ ms.locfileid: "47498895"
   
 -   變更跨套件範圍的關聯性屬性。  
   
--   若要深入了解 [簽出] 鎖定，請參閱[簽出和編輯檔案](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
+-   如需了解「簽出」鎖定，請參閱 [簽出和編輯檔案](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>在專案資料夾中移入或移出圖表檔  
   
@@ -102,7 +100,7 @@ ms.locfileid: "47498895"
     >  您無法將此檔案移至不同的專案。  
   
 ##  <a name="Merging"></a> 合併模型檔和圖表中的變更  
- 多位使用者同時處理模型之後，[!INCLUDE[esprscc](../includes/esprscc-md.md)] 將提示您合併模型檔案中的變更。 依循前面幾節中所述之方法處理不同的專案，將可避免大部分的合併。 通常剩餘的衝突可安全無虞地自動合併。 下列變更應該很容易上手：  
+ 多位使用者同時處理模型之後， [!INCLUDE[esprscc](../includes/esprscc-md.md)] 將提示您合併模型檔案中的變更。 依循前面幾節中所述之方法處理不同的專案，將可避免大部分的合併。 通常剩餘的衝突可安全無虞地自動合併。 下列變更應該很容易上手：  
   
 -   生命線的類型。 當您將生命線加入互動 (順序圖表) 時，除非您是從現有的類型建立生命線，否則其類型會儲存到根模型中。  
   

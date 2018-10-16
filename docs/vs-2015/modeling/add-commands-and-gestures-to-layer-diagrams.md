@@ -1,7 +1,7 @@
 ---
 title: 將命令和軌跡加入分層圖 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223208"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>將命令和軌跡加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[相依性圖表中加入命令和軌跡](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams)。  
-  
 您可以在 Visual Studio 的分層圖上定義內容功能表命令和軌跡處理常式。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。  
   
  您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義單一 VSIX，其中包含圖層指令、定義域專屬的語言以及 UML 圖表的命令。  
@@ -60,7 +58,7 @@ ms.locfileid: "47490944"
   
      [定義軌跡處理常式](#gesture)  
   
-6.  主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案**bin\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+6.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX  
  如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。 如需其他類型的模型擴充功能資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -111,7 +109,7 @@ ms.locfileid: "47490944"
   
 2.  若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此執行個體中，建立或開啟分層圖。  
   
-3.  若要安裝 VSIX 中的主要執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
+3.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **.vsix\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   

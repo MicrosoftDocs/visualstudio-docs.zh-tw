@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中的大綱和隱藏文字 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586c5d818c54894eea89149cab04b2481aaa9ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5de1a4cdf7d3b8ecd2cc1421e1647580ecb99c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232514"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>舊版語言服務中的大綱和隱藏文字
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[大綱和隱藏舊版語言服務中的文字](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service)。  
-  
 大綱，讓能夠摺疊成單一行的文字行的順序。 例如，c + + 中的所有方法可以摺都疊成一行，顯示方法簽章。 隱藏的文字是可顯示或隱藏的文字行的順序。  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說︰LinqToXmlDataBinding 範例 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 723f6b121d844fa5a8e504e8106fdcfc6c58f012
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182281"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>逐步解說：LinqToXmlDataBinding 範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： LinqToXmlDataBinding 範例](https://docs.microsoft.com/visualstudio/designers/walkthrough-linqtoxmldatabinding-example)。  
-  
 此逐步解說描述 LinqToXmlDataBinding 範例，並說明其兩個主要原始程式檔 (L2DBForm.xaml 和 L2DBForm.xaml.cs) 一些更有趣的內容。  
   
 ## <a name="prerequisites"></a>必要條件  

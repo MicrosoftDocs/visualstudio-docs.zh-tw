@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的跨平台行動裝置應用程式開發 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 68ecf06ba6a2bdb40355ab645ea35774c8b73c09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194099"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中的跨平台行動開發](https://docs.microsoft.com/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio)。  
-  
   
 您可以使用 Visual Studio 建置 Android、iOS 和 Windows 裝置的應用程式。  設計應用程式時，請使用 Visual Studio 中的工具，輕鬆地加入已連線的服務，例如 Office 365、Azure App Service 和 Application Insights。  
   
@@ -62,7 +60,7 @@ ms.locfileid: "47486632"
 |[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|  
   
 ###  <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底  
- 您可以使用 C# 或 F # (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2015、選取安裝程式中的 [自訂] 選項，然後選取 [跨平台行動開發] > [C#/.NET (Xamarin)] 下方的方塊。 您也可以開始使用 [Xamarin 安裝程式 (英文)](https://www.xamarin.com/download)，需要此安裝程式，才能安裝適用於 Visual Studio 2013 的 Xamarin。  
+ 您可以使用 C# 或 F# (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2015、選取安裝程式中的 [自訂] 選項，然後選取 [跨平台行動開發] > [C#/.NET (Xamarin)] 下方的方塊。 您也可以開始使用 [Xamarin 安裝程式 (英文)](https://www.xamarin.com/download)，需要此安裝程式，才能安裝適用於 Visual Studio 2013 的 Xamarin。  
   
  如果您已經安裝 Visual Studio 2015，請從[控制台] > [程式和功能] 中執行安裝程式，然後針對 Xamarin 選取上述的同一個 [自訂] 選項。  
   

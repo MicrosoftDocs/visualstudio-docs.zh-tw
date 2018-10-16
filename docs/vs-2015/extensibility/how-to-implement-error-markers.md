@@ -1,7 +1,7 @@
 ---
 title: 如何： 實作錯誤標記 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b09696cb8419fe763e62047ff179cb6f6338f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242953"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 實作錯誤標記](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-error-markers)。  
-  
 錯誤標記 （或紅色的波浪底線） 是最困難的文字編輯器自訂項目，來實作。 不過，它們提供給使用者的 VSPackage 的好處遠超過為他們提供的成本。 錯誤標記稍微標記您的語言剖析器認為正確曲線或波浪式紅色底線的文字。 此指標會以視覺化方式顯示不正確的程式碼，以協助程式設計人員。  
   
  您可以使用文字標記來實作紅色的波浪底線。 因此，語言服務加入紅色波浪底線文字緩衝區作為背景通過 」，在閒置時間，或在背景執行緒中。  

@@ -1,7 +1,7 @@
 ---
 title: 一或多個選取的項目包含設計工具不支援的資料類型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6acf9d49d2deae1c46466f5bd39d1385fa8c32e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 640dd69990e3c659efe98ef5e73ae83098c58c1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176969"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一個或多個選取的項目包含設計工具不支援的資料類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[一個或多個選取的項目包含設計工具不支援的資料類型](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer)。  
-  
   
 從一或多個項目拖曳**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]包含不支援的資料型別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]（比方說，[CLR 使用者定義型別](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2))。  
   

@@ -1,7 +1,7 @@
 ---
 title: 程式碼編輯器中檢視資料提示中的資料值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273919"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在程式碼編輯器的資料提示中檢視資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼編輯器中檢視資料提示中的資料值](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor)。  
-  
 資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。  
   
  在  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]，DataTips 可以固定至原始程式檔，在特定位置，或它們可以漂浮在所有[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]windows。  

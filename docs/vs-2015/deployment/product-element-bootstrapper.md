@@ -1,7 +1,7 @@
 ---
 title: '&lt;產品&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0936024609bffcdefbae76515f25ac0ffb02885d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a8f210ffcd327d8d5d6d3e456b3b9588ef72ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261671"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;產品&gt;項目 （啟動載入器）](https://docs.microsoft.com/visualstudio/deployment/product-element-bootstrapper)。  
-  
 `Product`項目是最上層 XML 元素內的產品檔案。  
   
 ## <a name="syntax"></a>語法  

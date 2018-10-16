@@ -1,7 +1,7 @@
 ---
 title: 藉由編輯 DGML 檔案自訂 code map |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c7e54e874edefb47295b0d907d2aea681841a0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181944"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

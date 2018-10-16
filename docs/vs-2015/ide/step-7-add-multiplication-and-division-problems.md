@@ -1,7 +1,7 @@
 ---
 title: 步驟 7：新增乘法和除法問題 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83c85dfdca66e9df3634f84795042b331bf3f760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c0c2b069ebb75cbe4547528317544172b1d7ae2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195152"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 7： 新增乘法和除法問題](https://docs.microsoft.com/visualstudio/ide/step-7-add-multiplication-and-division-problems)。  
-  
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。  
   
 ### <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題  

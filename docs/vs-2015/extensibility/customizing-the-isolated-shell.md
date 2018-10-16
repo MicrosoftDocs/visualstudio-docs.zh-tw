@@ -1,7 +1,7 @@
 ---
 title: 自訂 Isolated 的 Shell |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61cd1d84978baa6f8deb08b2a2cc9327dad543c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3804ded3106c68c1298063b38fb3d384685a18a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175548"
 ---
 # <a name="customizing-the-isolated-shell"></a>自訂 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂 Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)。  
-  
 藉由變更 Visual Studio 使用者介面的不同層面，以及限制的命令和特製化的應用程式包含的功能，您可以自訂您的 Visual Studio isolated shell 應用程式。  
   
 ## <a name="using-the-applicationpkgdef-file"></a>使用 Application.pkgdef 檔案  

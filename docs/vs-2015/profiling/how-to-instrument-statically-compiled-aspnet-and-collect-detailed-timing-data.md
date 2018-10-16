@@ -1,7 +1,7 @@
 ---
 title: 操作說明：使用命令列以分析工具檢測靜態編譯的 ASP.NET Web 應用程式並收集詳細計時資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2822768cc78d5cc6f4d31d63c9545d482b0b342
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2cc991bc212615dd141daba01d015e6c5441a697
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294589"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具檢測靜態編譯的 ASP.NET Web 應用程式並收集詳細計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用命令列檢測靜態編譯的 ASP.NET Web 應用程式和使用 Profiler 收集詳細計時資料](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具檢測先行編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 元件或網站，並收集詳細的計時資料。  
   
 > [!NOTE]

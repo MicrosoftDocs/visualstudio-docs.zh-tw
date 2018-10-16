@@ -1,7 +1,7 @@
 ---
 title: MSBuild .Targets 檔案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93207bb46b8294fe0b4fb3d93416e2fdabe61273
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bec05a2947bad76b0be4e7cf339bbef98a27644e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274231"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[MSBuild。目標檔案](https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 內含數個 .targets 檔案，其中包含適用於通用案例的項目、屬性、目標和工作。 這些檔案會自動匯入大部分的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案檔，以簡化維護和可讀性。  
   
@@ -55,6 +53,6 @@ ms.locfileid: "47500143"
 ## <a name="see-also"></a>另請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
- [ MSBuild](msbuild.md)
+ [MSBuild](msbuild.md)
 
 

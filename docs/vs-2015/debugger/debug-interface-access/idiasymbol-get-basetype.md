@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_basetype |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b001c2a72d4f9633d497cd40df9af70048d6c04a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e359bdd2e97a3c1b31986a8ef7455590b5b2335e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221958"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_basetype](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-basetype)。  
-  
 擷取這個符號的基礎類型 *。*  
   
 ## <a name="syntax"></a>語法  

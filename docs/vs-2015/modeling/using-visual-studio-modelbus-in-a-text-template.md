@@ -1,7 +1,7 @@
 ---
 title: 使用文字範本中的 Visual Studio ModelBus |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189393"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文字範本中使用 Visual Studio ModelBus](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template)。  
-  
 如果您撰寫文字範本，以讀取模型，其中包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 參考，您可能想要解決存取目標模型的參考。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):  
   
 -   是一個參考目標 DSL 必須具有已設定為從文字範本存取的 ModelBus 配接器。 您也會從其他程式碼存取 DSL，重新設定配接器需要除了標準的 ModelBus 配接器。  

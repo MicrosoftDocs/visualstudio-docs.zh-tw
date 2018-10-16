@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296441"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[在 Visual Studio 中偵錯](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour)。
-
 Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出問題。 偵錯工具可以與所有 Visual Studio 程式設計語言及其相關程式庫搭配使用。 透過偵錯工具，您可以中斷程式執行，以檢查程式碼、檢查與編輯變數、檢視暫存器、查看由原始程式碼所建立的指令，以及檢視應用程式所使用的記憶體空間。  
   
  如需在 Visual Studio 中偵錯和診斷的快速簡介，請參閱 [偵錯、設定檔和診斷](https://www.visualstudio.com/features/debugging-and-diagnostics-vs)。  

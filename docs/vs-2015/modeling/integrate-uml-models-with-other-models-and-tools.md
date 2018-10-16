@@ -1,7 +1,7 @@
 ---
 title: 整合 UML 模型與其他模型和工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f2ebc4bc6a0ee1610079018ded21760e48336824
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85ad2e150880042125782349120d271ff2b7d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290286"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>整合 UML 模型與其他模型及工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[整合 UML 模型與其他模型及工具](https://docs.microsoft.com/visualstudio/modeling/integrate-uml-models-with-other-models-and-tools)。  
-  
 UML 模型可以與其他模型及網域指定的語言整合。  
   
  您可以藉由撰寫擴充功能程式碼以執行不同函式，來使用下列方式整合模型：  

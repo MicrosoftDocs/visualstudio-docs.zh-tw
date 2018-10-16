@@ -1,7 +1,7 @@
 ---
 title: IDebugField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26bcd1d2a85e547aa733c6a8e7d906a822d0fdc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5984e372574ddb104e90415870d3d79020066e3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218279"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield)。  
-  
 這個介面表示的欄位，也就是符號或類型的描述。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 連接至本機資料庫檔案 (Windows Form) 中的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9b2d17c5ed86e37d3c674ef9238702cd8557a90f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71898c88a8d7a1d4a119a7e7a932e295ae12eb34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176159"
 ---
 # <a name="walkthrough-connecting-to-data-in-a-local-database-file-windows-forms"></a>逐步解說：連接至本機資料庫檔案中的資料 (Windows Form)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

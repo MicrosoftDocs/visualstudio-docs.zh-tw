@@ -1,7 +1,7 @@
 ---
 title: 'CA3077: API 設計、 XML 文件和 XML 文字讀取器中的不安全處理 |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 175d655c2283dfe764564d42b6893b12d1f09e22
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e70b31b86d8eb19f2d6dd437feea34a499ed7747
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233529"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA3077： 設計、 XML 文件和 XML 文字讀取器中的不安全處理](https://docs.microsoft.com/visualstudio/code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader)。
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
@@ -36,7 +33,7 @@ ms.locfileid: "47588384"
  針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。
 
 ## <a name="rule-description"></a>規則描述
- A[文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx)是下列其中一種 XML 剖析器用來判斷文件有效性所定義[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋屬性和執行個體不受信任的資料已接受的警告開發人員潛在[資訊洩漏](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c)威脅，這可能會導致[阻絕服務 (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600)攻擊。 下列情況會觸發此規則：
+ [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
 -   <xref:System.Xml.XmlDocument> 或<xref:System.Xml.XmlTextReader>類別針對 DTD 處理會使用預設解析程式的值。
 

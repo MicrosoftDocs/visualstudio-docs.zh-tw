@@ -1,7 +1,7 @@
 ---
 title: SccDiff 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bacfa40d04a897d73213c833e41c199f88981c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a98f35e2829bc2eb84b9604e6b16a7b4f3f9ade
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242797"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccDiff 函式](https://docs.microsoft.com/visualstudio/extensibility/sccdiff-function)。  
-  
 此函式會顯示 （或選擇性地只會檢查） 目前的檔案 （位於本機磁碟上） 和最後一個簽入版本之間的差異，即可在來源控制系統。  
   
 ## <a name="syntax"></a>語法  

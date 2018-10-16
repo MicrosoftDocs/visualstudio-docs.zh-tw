@@ -1,7 +1,7 @@
 ---
 title: 從 UML 類別圖產生程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222829"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>從 UML 類別圖產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[從 UML 類別圖產生程式碼](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams)。  
-  
 若要從 Visual Studio 中的 UML 類別圖產生 Visual C#.NET 程式碼，請使用**產生的程式碼**命令。 根據預設，命令會針對您選取的每一個 UML 類型來產生 C# 類型。 您可以修改或複製產生程式碼的文字範本來修改及擴充此行為。 您可以針對模型內的不同封裝中所包含的類型來指定不同的行為。  
   
  **產生的程式碼**命令是特別適合從使用者選取的項目，產生程式碼並產生一個檔案的每個 UML 類別或其他項目。 例如，此螢幕擷取畫面顯示從兩個 UML 類別產生的兩個 C# 檔案。  
@@ -173,9 +171,9 @@ ms.locfileid: "47485015"
     |------------------|---------------------|  
     |名稱|這個繫結的名稱。 若要覆寫從包含的封裝或模型繼承的繫結，請使用與您想要覆寫的繫結相同的名稱。|  
     |覆寫|若為 true，則會覆寫任何現有的程式碼。|  
-    |目標名稱|產生的檔案名稱。<br /><br /> 您可以將運算式插入這個字串這類`{Name}`或`{Owner.Name}`。 例如，您可以撰寫： `{Owner.Name}_{Name}`。 在模型項目上評估此運算式。 它可以使用項目的屬性，但不能使用方法。 若要尋找可以使用哪些屬性，看看中的型別屬性**Microsoft.VisualStudio.Uml。\***. **重要事項︰** `{Name}`或是`{Owner.Name}`只在**目標名稱**屬性。   若要變更產生之類別的名稱，您必須修改此範本。 如需詳細資訊，請參閱 <<c0> [ 撰寫文字範本](#writing)。|  
+    |目標名稱|產生的檔案名稱。<br /><br /> 您可以將運算式插入這個字串這類`{Name}`或`{Owner.Name}`。 例如，您可以撰寫： `{Owner.Name}_{Name}`。 在模型項目上評估此運算式。 它可以使用項目的屬性，但不能使用方法。 若要尋找可以使用哪些屬性，看看中的型別屬性**Microsoft.VisualStudio.Uml。\***. **重要事項︰** `{Name}`或是`{Owner.Name}`只在**目標名稱**屬性。 若要變更產生之類別的名稱，您必須修改此範本。 如需詳細資訊，請參閱 <<c0> [ 撰寫文字範本](#writing)。|  
     |專案路徑|指定將包含轉換輸出檔案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案路徑。 使用具類型的值來建立新的專案。 選擇省略符號按鈕 (**[...]**) 來選取現有的專案。<br /><br /> 將會建立新的專案 (如果不存在)。 這會是 C# 類別庫專案。<br /><br /> 若要這麼做，您必須直接輸入專案。 您可以包含環境變數巨集，例如 %ProgramFiles% or %LocalAppData%。|  
-    |目標目錄|產生目標檔案的資料夾。 此路徑相對於專案資料夾。<br /><br /> 您可以使用 `{PackageStructure}` 運算式插入路徑，此路徑會對應到包含的封裝名稱。 預設值是 `\GeneratedCode\{PackageStructure}`。 您也可以包含環境變數，例如 %TEMP% 或 %HomePath%。 **重要事項︰** `{PackageStructure}`只在**目標目錄**屬性。  |  
+    |目標目錄|產生目標檔案的資料夾。 此路徑相對於專案資料夾。<br /><br /> 您可以使用 `{PackageStructure}` 運算式插入路徑，此路徑會對應到包含的封裝名稱。 預設值是 `\GeneratedCode\{PackageStructure}`。 您也可以包含環境變數，例如 %TEMP% 或 %HomePath%。 **重要事項︰** `{PackageStructure}`只在**目標目錄**屬性。|  
     |範本檔路徑。|將要執行轉換的範本。<br /><br /> 您可以使用提供的範本，或建立自己的範本。 您可以在下列位置找到提供的範本：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  您可以將不限數目的繫結附加至項目中。  

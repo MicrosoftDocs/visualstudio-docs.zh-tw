@@ -1,7 +1,7 @@
 ---
 title: HTML UI 回應性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486344"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269096"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UWP 應用程式中的分析 HTML UI 回應性](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness)。  
-  
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供 Windows 市集應用程式使用。  
   
  UI 回應性分析工具可協助您隔離問題，如 UI 回應性問題，或者平台的副作用，發生時通常伴有下列徵兆：  

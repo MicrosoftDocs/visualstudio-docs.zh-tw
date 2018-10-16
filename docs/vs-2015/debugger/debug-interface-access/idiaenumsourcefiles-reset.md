@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsourcefiles:: Reset |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20f6bd49ff4e1a10d51e9296da094412521fa9f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 973861096d35655c0bf3dc8f8eefa8fe9c41a85c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281038"
 ---
 # <a name="idiaenumsourcefilesreset"></a>IDiaEnumSourceFiles::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiaenumsourcefiles:: Reset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsourcefiles-reset)。  
-  
 將列舉型別序列重設到開頭。  
   
 ## <a name="syntax"></a>語法  

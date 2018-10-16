@@ -1,7 +1,7 @@
 ---
 title: 疑難排解 ClickOnce 部署 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7ece1315bf95e5b24c0f689796752a5cde100654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284748"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>疑難排解 ClickOnce 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 部署進行疑難排解](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments)。  
-  
 本主題將協助您診斷及解決常見的問題與[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。  
   
  在大部分情況下，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式會下載到使用者的電腦，並執行而不需要任何問題。 有一些情況下，Web 伺服器或應用程式組態問題可能會造成未預期的問題。  
@@ -60,7 +58,7 @@ ms.locfileid: "47488899"
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

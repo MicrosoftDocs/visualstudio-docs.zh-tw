@@ -1,7 +1,7 @@
 ---
 title: 從命令列加入階層互動資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228408"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[從命令列加入階層互動資料](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line)。  
-  
 在與一或多個資料庫通訊的多階層應用程式函式中，階層互動分析提供會同步 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 呼叫執行時間的額外資訊。  
   
  **Windows 8 和 Windows Server 2012**  
@@ -41,7 +39,7 @@ ms.locfileid: "47588869"
   
  **在遠端電腦上收集 TIP 資料**  
   
- 若要在遠端電腦上收集階層互動資料，您必須複製**vs\_profiler\_**_\<平台 >_ **\_**_\<語言 >_**.exe**檔案 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**資料夾，Visual Studio 的電腦，以在遠端電腦，並將它安裝。 您無法使用中的程式碼剖析工具[Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下載套件。  
+ 若要在遠端電腦上收集階層互動資料，您必須複製**vs\_profiler\_**_\<平台 >_ **\_**_\<語言 >_**.exe**檔案 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**資料夾，Visual Studio 的電腦，以在遠端電腦，並將它安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
  **TIP 報告**  
   

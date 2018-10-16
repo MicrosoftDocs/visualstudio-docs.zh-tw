@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 和 Xamarin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a45ce4e6f319dffbb59f8f2040ad815f0e01e71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199566"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 和 Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-and-xamarin)。  
-  
   
 Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，以在平台之間重複使用 75% 到將近 100% 的程式碼。 使用 Xamarin 和 C# 撰寫的應用程式可完整存取基礎平台 API，而且能夠建置原生使用者介面，並編譯為平台專用的封裝，因此不會對執行階段效能造成太大的影響。 (注意︰Xamarin 也支援 F#，但本文將只著重在 C#。 目前不支援 Visual Basic。)  
   

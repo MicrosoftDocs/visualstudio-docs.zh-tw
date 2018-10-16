@@ -1,7 +1,7 @@
 ---
 title: 參考 （程式設計擷取） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230343"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[參考 （程式設計擷取）](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture)。  
-  
 透過程式設計擷取應用程式開發介面，圖形診斷支援以程式設計方式控制其擷取功能。 您可以使用這個應用程式開發介面，在圖形診斷抬頭顯示器 (HUD) 切換並加入訊息、初始化和建立圖形記錄檔，以及擷取圖形資訊。  
   
 ## <a name="programmatic-capture-apis"></a>程式設計擷取應用程式開發介面  
@@ -48,7 +46,7 @@ ms.locfileid: "47491834"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[擷取圖形資訊](../debugger/capturing-graphics-information.md)|示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來診斷轉譯問題。|  
+|[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來診斷轉譯問題。|  
 |[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|示範圖形診斷如何協助您偵錯 DirectX 遊戲和應用程式的轉譯錯誤。|
 
 

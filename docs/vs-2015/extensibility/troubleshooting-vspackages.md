@@ -1,7 +1,7 @@
 ---
 title: 針對 Vspackage 進行疑難排解 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f7706a2c7bf579148b71d31fab6b172db378564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225559"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[疑難排解 Vspackage](https://docs.microsoft.com/visualstudio/extensibility/troubleshooting-vspackages)。  
-  
 以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。  
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>若要疑難排解的 VSPackage，啟動時，防止 Visual Studio  

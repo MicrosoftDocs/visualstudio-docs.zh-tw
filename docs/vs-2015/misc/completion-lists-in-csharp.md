@@ -1,7 +1,7 @@
 ---
 title: 在 C# 的完成清單 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: BillWagner
 ms.author: billchi
 manager: douge
-ms.openlocfilehash: f76cbca7ba16de4f80de3769b63f7381476a16d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de5b6596a7a487dbc4ea1b6c0d16b137b209e8b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200041"
 ---
 # <a name="completion-lists-in-c"></a>C# 中的完成清單 #
 本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  

@@ -1,7 +1,7 @@
 ---
 title: 用於建立單元測試的範例專案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 846783e398fc07ef4ddfff4ea1bca05f840bca81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248582"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[用於建立單元測試的範例專案](https://docs.microsoft.com/visualstudio/test/sample-project-for-creating-unit-tests)。  
-  
 所提供的這個範例程式碼可用於下列逐步解說：  
   
 -   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。  

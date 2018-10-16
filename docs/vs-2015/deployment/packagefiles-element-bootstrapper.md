@@ -1,7 +1,7 @@
 ---
 title: '&lt;請為 PackageFiles&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a82d60cd3bee12dcba9798826d03bd7aea7612be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302779"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;PackageFiles&gt;項目 （啟動載入器）](https://docs.microsoft.com/visualstudio/deployment/packagefiles-element-bootstrapper)。  
-  
 `PackageFiles`項目包含`PackageFile`項目，定義執行的安裝套件`Command`項目。  
   
 ## <a name="syntax"></a>語法  
@@ -52,7 +50,7 @@ ms.locfileid: "47487422"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `PackageFiles`項目具有下列屬性。  
+ `PackageFiles` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  

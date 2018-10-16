@@ -1,7 +1,7 @@
 ---
 title: 提供復原支援人員以設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267354"
 ---
 # <a name="supplying-undo-support-to-designers"></a>為設計工具提供復原支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[提供復原支援加入至設計工具](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers)。  
-  
 設計工具，例如編輯器，通常需要支援復原作業，以便修改程式碼項目時，使用者可以反轉其最近的變更。  
   
  在 Visual Studio 中實作的大部分設計工具有自動環境所提供的復原支援。  

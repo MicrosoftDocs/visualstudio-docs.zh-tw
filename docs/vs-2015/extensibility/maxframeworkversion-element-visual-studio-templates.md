@@ -1,7 +1,7 @@
 ---
 title: MaxFrameworkVersion 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be6bf858130310f3b7a13078482746edf74a65a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b12af3d2b0c455ae321b3329b1f90d2ab35fb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276818"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MaxFrameworkVersion 元素 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/maxframeworkversion-element-visual-studio-templates)。  
-  
 指定最大值範本所需的.NET framework 版本。 它會判斷範本是否會顯示在**範本**一節**新增專案**對話方塊中，根據值中選取**目標 Framework 版本**  方塊**加入新的專案** 對話方塊。  
   
  \<VSTemplate >  

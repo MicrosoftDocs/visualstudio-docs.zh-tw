@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278547"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IntelliTrace 功能](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features)。  
-  
 您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要照常開始偵錯-根據預設，已開啟 IntelliTrace 和 IntelliTrace 所記錄在新的資訊請參閱 <<c0>  **診斷工具**下方視窗**事件** 索引標籤。選取事件，然後按一下**啟用歷程偵錯**以查看呼叫堆疊和區域變數記錄此事件。  
   
  如需逐步說明，請參閱 <<c0> [ 逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。  

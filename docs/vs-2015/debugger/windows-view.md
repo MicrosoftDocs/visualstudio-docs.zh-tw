@@ -1,7 +1,7 @@
 ---
 title: Windows 檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261698"
 ---
 # <a name="windows-view"></a>視窗檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Windows 檢視](https://docs.microsoft.com/visualstudio/debugger/windows-view)。  
-  
 當您第一次開啟 Spy + + 時，Windows 檢視會顯示在系統中的所有視窗和控制項的樹狀結構。 會顯示視窗控制代碼和類別名稱。 目前的桌面視窗位於樹狀結構的最上層。 所有其他視窗在桌面的子系，並列出根據標準的視窗階層。 同層級視窗會出現在 expansible 父母下方縮排的清單中。  
   
  下圖顯示典型的 Spy + + Windows 檢視與展開的最上層節點。  

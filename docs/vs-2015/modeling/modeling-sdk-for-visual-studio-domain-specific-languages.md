@@ -1,7 +1,7 @@
 ---
 title: Modeling SDK for Visual Studio-特定領域語言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f41594e1a39046e82cd7280c5569edbbeb65eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224727"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Modeling SDK for Visual Studio-特定領域語言](https://docs.microsoft.com/visualstudio/modeling/modeling-sdk-for-visual-studio-domain-specific-languages)。  
-  
 使用 Modeling SDK for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK)，您可以建立功能強大的模型為基礎的開發工具，您可以整合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 例如，UML 工具就是使用 MSDK 建立。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  
   
  MSDK 的核心就是模型定義，您可建立模型定義代表商業領域的概念。 您可以在模型四周放置各種不同的工具，例如圖表檢視、產生程式碼和其他成品的功能、轉換模型的命令，以及與 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的程式碼和其他物件互動的功能。 當您開發模型時，可以將它與其他模型和工具組合成強大的工具組，做為開發工作的重心。  

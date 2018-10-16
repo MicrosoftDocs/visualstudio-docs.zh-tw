@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 圖形診斷概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2321e590591d6c3d80b41c58147820cf0248f403
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285736"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[的 Visual Studio 圖形診斷概觀](https://docs.microsoft.com/visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics)。  
-  
 Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用圖形診斷偵錯轉譯問題  

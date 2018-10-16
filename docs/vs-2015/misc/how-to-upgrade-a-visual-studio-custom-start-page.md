@@ -1,7 +1,7 @@
 ---
 title: 如何： 升級 Visual Studio 自訂起始頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: 2b41e92cd086d908f0a2fa0e6e9c4f99a1e24cc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f8c24de646c610a6924c57b0e6993d0787c4033
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192072"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>如何：升級 Visual Studio 自訂起始頁
 依照下列步驟，即可將 Visual Studio 2010 或 Visual Studio 2012 自訂起始頁升級成 Visual Studio 2015。  

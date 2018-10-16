@@ -1,7 +1,7 @@
 ---
 title: 什麼&#39;在 Visual Studio 中設計的新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204278"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[功能&#39;在 Visual Studio 中設計的新](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio)。
-
 這個版本的 Visual Studio 包括下列改進，協助您進一步了解和設計程式碼。
 
  **Code map 和相依性圖形**
@@ -62,7 +59,7 @@ ms.locfileid: "47859103"
 
 -   **從類別檢視和物件瀏覽器建立圖表**。 將檔案和組件從類別檢視和物件瀏覽器拖放到新的或現有的對應中。
 
- 請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。
+ 請參閱 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。
 
  **在此版本中其他設計和模型變更：**
 

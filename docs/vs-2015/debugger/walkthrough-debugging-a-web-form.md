@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 偵錯 Web Form |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,22 +28,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275128"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 偵錯 Web Form](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form)。  
-  
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式 (也稱為 Web Form)。 它示範如何啟動及停止執行、 設定中斷點，以及檢查中的變數**監看式**視窗。  
   
 > [!NOTE]
->  若要完成本逐步解說，您在伺服器電腦中必須具有系統管理員權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序 aspnet_wp.exe 或 w3wp.exe 會做為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序執行。 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 進行偵錯，您必須在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行的電腦上具有系統管理員權限。 如需詳細資訊，請參閱 <<c0> [ 系統需求](../debugger/aspnet-debugging-system-requirements.md)。  
+>  若要完成本逐步解說，您在伺服器電腦中必須具有系統管理員權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序 aspnet_wp.exe 或 w3wp.exe 會做為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序執行。 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 進行偵錯，您必須在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行的電腦上具有系統管理員權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   

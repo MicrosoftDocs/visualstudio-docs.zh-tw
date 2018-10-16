@@ -1,7 +1,7 @@
 ---
 title: 停止在 Visual Basic 中的陳述式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fcb4e3018dad53ef869748a4394363dba78f71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45752b6b33a68e785dd9de028bd5c3de2930e964
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261907"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 陳述式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[停止在 Visual Basic 中的陳述式](https://docs.microsoft.com/visualstudio/debugger/stop-statements-in-visual-basic)。  
-  
 Visual Basic 的 Stop 陳述式提供了設定中斷點的程式設計替代方式。 當偵錯工具碰到 Stop 陳述式時，它會中斷程式的執行 (進入中斷模式)。 C# 程式設計人員使用 System.Diagnostics.Debugger.Break 的呼叫，可以達到相同的效果。  
   
  您可編輯原始程式碼來設定或移除 Stop 陳述式。 您無法像處理中斷點一樣，使用偵錯工具的命令來設定或清除 Stop 陳述式。  

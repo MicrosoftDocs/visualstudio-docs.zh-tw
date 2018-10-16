@@ -1,7 +1,7 @@
 ---
 title: 執行分析報表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e13e18857ce67bc5d333fb2d91b2df97fdc08d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb4b84193f341163dc0a39ded71781cc678c7650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192656"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行分析報表](https://docs.microsoft.com/visualstudio/profiling/execution-profile-report)。  
-  
 執行分析報表是傳統的取樣分析。 當執行緒在邏輯核心上執行時，約每毫秒會擷取一次樣本，並行視覺化檢視會透過自動分頁累積的樣本堆疊集來建立典型的呼叫樹狀圖。 目前的時間範圍、隱藏的執行緒及下列可套用的篩選都可能影響此資料表中的資料︰  
   
 -   如果已選取 Just My Code，只會顯示有使用者程式碼的堆疊框架，再加上使用者程式碼下方的一個層級。  

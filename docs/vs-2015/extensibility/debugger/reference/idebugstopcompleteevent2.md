@@ -1,7 +1,7 @@
 ---
 title: IDebugStopCompleteEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ff3e89f4-61bb-489d-901c-447260100218
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f880888ab675fc7923b50e3b1fbce144f8108abd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e30b59968fb8eca14d462ce34d12378132771b68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195204"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugStopCompleteEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstopcompleteevent2)。  
-  
 偵錯引擎 (DE) 在程式停止時，可以傳送這個選擇性事件工作階段的偵錯管理員 (SDM)。  
   
 ## <a name="syntax"></a>語法  

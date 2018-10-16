@@ -1,7 +1,7 @@
 ---
 title: BP_RES_DATA_FLAGS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5377478021c9c69a7a7e912163c091849df796c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 189b1b8c4e597af6e1bd0a63824e53059a27c125
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201626"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BP_RES_DATA_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-res-data-flags)。  
-  
 指定是否要模擬資料中斷點或實作中的硬體。  
   
 ## <a name="syntax"></a>語法  

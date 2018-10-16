@@ -1,7 +1,7 @@
 ---
 title: 實驗執行個體 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d819be41806e075de23dbfb5b5b3cded5bbeb40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 212fc490c26ab66284cf7bdfa4e51946c817266d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220437"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[實驗的執行個體](https://docs.microsoft.com/visualstudio/extensibility/the-experimental-instance)。  
-  
 為了確保您的 Visual Studio 開發環境，從未經測試的應用程式可能會變更，請 VSSDK 提供實驗性的空間，可供您實驗。 像往常一樣，使用 Visual Studio 開發新的應用程式，但您使用此實驗的執行個體執行。  
   
  VSIX 封裝每個應用程式會啟動偵錯模式中的 Visual Studio 實驗執行個體。  

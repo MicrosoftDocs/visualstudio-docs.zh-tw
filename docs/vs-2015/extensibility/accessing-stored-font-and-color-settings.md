@@ -1,7 +1,7 @@
 ---
 title: 存取預存的字型和色彩設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3387c5e611ad12ce81347e51893e8459ecd9a3c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191395"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[存取儲存的字型和色彩設定](https://docs.microsoft.com/visualstudio/extensibility/accessing-stored-font-and-color-settings)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面來存取這些設定。  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要起始狀態的持續性的字型和色彩  

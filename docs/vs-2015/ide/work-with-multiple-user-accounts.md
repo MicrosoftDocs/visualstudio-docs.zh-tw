@@ -1,7 +1,7 @@
 ---
 title: 使用多個使用者帳戶
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176263"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用多個使用者帳戶](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts)。  
-  
 如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 Visual Studio 2015 RTM 之後，Azure、Application Insights、Team Foundation Server 和 Office 365 服務即可支援經簡化的登入體驗。 日後也可能會提供其他服務。  
   
  在同一部電腦上加入多個帳戶之後，如果您於另一部電腦上登入 Visual Studio，該組帳戶會隨您漫遊。 請務必注意，雖然帳戶名稱可以漫遊，但認證卻非如此。 因此，當您於新電腦上第一次嘗試使用其他帳戶的資源時，系統會提示您輸入該帳戶的認證。  

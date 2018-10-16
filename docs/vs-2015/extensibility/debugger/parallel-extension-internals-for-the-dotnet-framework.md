@@ -1,7 +1,7 @@
 ---
 title: 適用於.NET Framework 進行平行擴充內部資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16ce4309cc8951d068b3d048e6bfac9ae863cd89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c6a6c0444da1200e5cd28a0a4c97a74587acefa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239956"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework 適用的平行延伸模組內部資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[平行擴充內部資訊適用於.NET Framework](https://docs.microsoft.com/visualstudio/extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework)。  
-  
 本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的 parallel extensions 到.NET Framework 偵錯工具。  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 專案子類型的初始化順序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b69dc5bea8ffc6e8248e777990653ed24097a30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224077"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[初始設定順序的專案子類型](https://docs.microsoft.com/visualstudio/extensibility/internals/initialization-sequence-of-project-subtypes)。  
-  
 環境呼叫的基底的 project factory 實作以建構專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 環境可讓您決定專案檔案的副檔名的專案類型 GUID 清單不是空白時，就會啟動專案子類型的建構。 此專案副檔名和專案 GUID 指定專案是否[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]專案類型。 比方說，.vbproj 副檔名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 識別[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]專案。  
   
 ## <a name="environments-initialization-of-project-subtypes"></a>專案子類型的環境的初始設定  

@@ -1,7 +1,7 @@
 ---
 title: 重構類別和類型 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207957"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>重構類別和類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[重構類別和類型 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer)。  
-  
 當您重構程式碼時，可以變更其內部結構以及設計其物件的方式，而不是其外部行為，使其更容易了解、維護且更有效率。 使用類別設計工具和 [類別細節] 視窗可讓您在 Visual Studio 專案中重構 Visual C# .NET、Visual Basic .NET 或 C++ 程式碼時，減少必須執行的工作以及引入 bug 的機會。  
   
 > [!NOTE]

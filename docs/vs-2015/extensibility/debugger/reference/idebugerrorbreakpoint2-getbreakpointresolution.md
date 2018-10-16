@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpoint2::GetBreakpointResolution |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a71a6355c21074eacd90c1800498da7ff950e3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9eab46e7482b2c0032d1a2604554770910a60fa3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306445"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugErrorBreakpoint2::GetBreakpointResolution](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution)。  
-  
 取得描述錯誤的中斷點錯誤解決方式。  
   
 ## <a name="syntax"></a>語法  

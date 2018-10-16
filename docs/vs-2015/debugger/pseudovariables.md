@@ -1,7 +1,7 @@
 ---
 title: 虛擬變數 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6c4f7240e32cd70a31ef90a2c890420bf1b336
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 028ca4630ca2e07b8f522d3cb630305d0e3ae5d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281784"
 ---
 # <a name="pseudovariables"></a>虛擬變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[虛擬變數](https://docs.microsoft.com/visualstudio/debugger/pseudovariables)。  
-  
 虛擬變數是用來顯示變數視窗中的特定資訊的詞彙或有**快速監看式** 對話方塊。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。  
   
 ## <a name="example"></a>範例  

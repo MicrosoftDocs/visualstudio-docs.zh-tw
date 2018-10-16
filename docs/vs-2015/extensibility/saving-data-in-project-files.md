@@ -1,7 +1,7 @@
 ---
 title: 將資料儲存在專案檔 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adecbedc7f8a7ca90c88548b4b4ab6f7b826f2ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274439"
 ---
 # <a name="saving-data-in-project-files"></a>將資料儲存於專案檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將資料儲存在專案檔中](https://docs.microsoft.com/visualstudio/extensibility/saving-data-in-project-files)。  
-  
 專案子類型可以儲存並擷取專案檔中的子型別特定資料。 Managed Package Framework (MPF) 提供兩個介面，以完成這項工作：  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面允許存取屬性值從**MSBuild**專案檔的區段。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>可由任何使用者呼叫，只要載入或儲存使用者必須建立相關的資料。  

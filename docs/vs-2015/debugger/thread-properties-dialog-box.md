@@ -1,7 +1,7 @@
 ---
 title: 執行緒屬性對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00cf70e0373f6791397234d9a5a329e57a5d46ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37eee1a82fab77238b992ee391a782c5af34d7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271696"
 ---
 # <a name="thread-properties-dialog-box"></a>執行緒屬性對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[執行緒屬性對話方塊](https://docs.microsoft.com/visualstudio/debugger/thread-properties-dialog-box)。  
-  
 使用這個對話方塊方塊中進一步了解特定的執行緒。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開一則訊息。 在樹狀目錄中，選取執行緒的任何節點，然後選擇**屬性**從**檢視**功能表。  
   
  **一般** 索引標籤會顯示 唯一 索引標籤。 在 Windows 98 和 Windows 95 作業系統上會顯示此索引標籤的修改的版本。  

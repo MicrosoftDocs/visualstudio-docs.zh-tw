@@ -1,7 +1,7 @@
 ---
 title: 如何： 同步處理程式碼專案規則集，與 Team 專案簽入原則 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263116"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用 Team 專案簽入原則同步處理程式碼專案規則集](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy)。  
-  
 您可以同步至 team 專案簽入原則的程式碼專案的程式碼分析設定藉由指定規則集，其中包含最少的規則集簽入原則中指定的規則。 您的名稱和位置的規則集簽入原則，就會通知您的開發人員潛在客戶。 您可以使用下列選項之一，確保專案的程式碼分析會使用一組正確的規則：  
   
 -   簽入原則會使用其中一個 Microsoft 內建規則集，如果開啟的程式碼專案的 屬性 對話方塊中，顯示程式碼分析 頁面中，並選取規則集的程式碼專案設定的程式碼分析 頁面上。 Microsoft 標準規則集隨 Visual Studio 自動安裝設定為唯讀，並不應編輯。 如果不編輯規則集，保證中的原則和本機規則集的規則比對。  

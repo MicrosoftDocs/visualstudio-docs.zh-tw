@@ -1,7 +1,7 @@
 ---
 title: 結構和等位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c4a5b371d52a249dafd4b13844e3ef3c6c5dff3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 374ee61c65da830b85a8983e61939c25c2296718
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227106"
 ---
 # <a name="structures-and-unions"></a>Structures and Unions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[結構和等位](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/structures-and-unions)。  
-  
 以下是結構和等位在 Visual Studio 偵錯 SDK 中。  
   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)  

@@ -1,7 +1,7 @@
 ---
 title: 程式碼分析，Managed 程式碼警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278904"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼分析 Managed 程式碼警告](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings)。  
-  
 Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。  
   
  下表顯示針對每個警告所提供的資訊類型。  
@@ -56,17 +54,17 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
 |-|-|  
 |[依 CheckId 分類的警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|依據 CheckId 列出警告|  
 |[加密警告](../code-quality/cryptography-warnings.md)|此警告透過正確使用加密來支援更安全的程式庫與應用程式。|  
-|[設計警告](../code-quality/design-warnings.md)|此警告支援所指定的正確程式庫設計[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]設計指導方針。|  
+|[設計警告](../code-quality/design-warnings.md)|此警告支援 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 設計方針所指定的正確程式庫設計。|  
 |[全球化警告](../code-quality/globalization-warnings.md)|此警告支援全球化程式庫與應用程式。|  
 |[互通性警告](../code-quality/interoperability-warnings.md)|此警告支援與 COM 用戶端互動。|  
 |[維護性警告](../code-quality/maintainability-warnings.md)|此警告支援程式庫與應用程式維護。|  
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|此警告支援有效率的用電量。|  
-|[命名警告](../code-quality/naming-warnings.md)|此警告支援遵循的命名慣例[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]設計指導方針。|  
+|[命名警告](../code-quality/naming-warnings.md)|此警告支援遵循 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 設計方針的命名慣例。|  
 |[效能警告](../code-quality/performance-warnings.md)|此警告支援高效能程式庫與應用程式。|  
 |[Portability Warnings](../code-quality/portability-warnings.md)|此警告跨平台支援可攜性。|  
 |[可靠性警告](../code-quality/reliability-warnings.md)|此警告支援程式庫與應用程式的可靠性，例如記憶體與執行緒的正確用法。|  
 |[安全性警告](../code-quality/security-warnings.md)|此警告支援更安全的程式庫與應用程式。|  
-|[用法警告](../code-quality/usage-warnings.md)|此警告支援的適當用法[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。|  
+|[用法警告](../code-quality/usage-warnings.md)|此警告支援 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的適當用法。|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|若程式碼分析原則在簽入時不符合，會發生此錯誤。|
 
 

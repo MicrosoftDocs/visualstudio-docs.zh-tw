@@ -1,7 +1,7 @@
 ---
 title: 自訂複製行為 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 58d96fd67189db7f3984ff1f82537d11306bfb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286464"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂複製行為](https://docs.microsoft.com/visualstudio/modeling/customizing-copy-behavior)。  
-  
 在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。  
   
 ## <a name="standard-copy-and-paste-behavior"></a>標準複製和貼上行為  

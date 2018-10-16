@@ -1,7 +1,7 @@
 ---
 title: 建立基本的專案系統，第 2 部分 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880197"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236635"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立基本專案系統，第 2 部分](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2)。  
-  
 在此系列中，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本的專案系統。 本逐步解說建立基本專案系統上加上 Visual Studio 範本、 屬性頁和其他功能。 您必須先完成第一個逐步解說，才能啟動它。  
   
  本逐步解說將說明如何建立具有專案檔案名稱副檔名.myproj 的專案類型。 若要完成本逐步解說，您不必建立您自己的語言，因為現有的 Visual C# 專案系統會藉助本逐步解說。  

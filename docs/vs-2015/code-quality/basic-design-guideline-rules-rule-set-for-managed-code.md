@@ -1,7 +1,7 @@
 ---
 title: 基本設計方針規則規則集為 managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184713"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[managed 程式碼的基本設計方針規則規則集](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code)。  
-  
 您可以使用 Microsoft 基本設計方針規則規則集將焦點放在讓您更輕鬆地了解和使用程式碼。 您應該包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行容易維護的程式碼的最佳作法。  
   
  基本設計方針規則納入 Microsoft 最小 Recommeded 規則規則集的所有規則。 如需最小規則的清單，請參閱 < [managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)。  

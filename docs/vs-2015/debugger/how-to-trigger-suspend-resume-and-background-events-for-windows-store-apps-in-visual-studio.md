@@ -1,7 +1,7 @@
 ---
 title: 如何觸發暫止、 繼續及背景事件，在 Visual Studio 中的 Windows 市集應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214756"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>如何在 Visual Studio 中為 Windows 市集應用程式觸發、暫停和繼續事件，以及讓事件成為背景事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何觸發暫止、 繼續及背景事件，在 Visual Studio 中的 Windows 市集應用程式](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)。  
-  
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
   
  本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 (即使您的應用程式並未執行也無妨)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。  
@@ -135,7 +133,7 @@ ms.locfileid: "47496896"
  [使用 Visual Studio 測試市集應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [應用程式生命週期](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [啟動、 繼續及多工作業](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
 
 
 

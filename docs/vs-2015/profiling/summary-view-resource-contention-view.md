@@ -1,7 +1,7 @@
 ---
 title: 摘要檢視 - 資源爭用檢視 | Microsoft Docs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf83509cd56343001a94da619b9246464ed75bdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7cf00fbb7237194b88edc9e748abfa06483a44a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229745"
 ---
 # <a name="summary-view---resource-contention-view"></a>摘要檢視 - 資源爭用檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[摘要檢視-資源爭用檢視](https://docs.microsoft.com/visualstudio/profiling/summary-view-resource-contention-view)。  
-  
 [摘要] 檢視顯示因在等候資源存取權而暫停應用程式中執行緒或處理序的事件相關資訊。  
   
  如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  

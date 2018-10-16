@@ -1,7 +1,7 @@
 ---
 title: 使用 [開啟] 命令顯示檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83160c6a55f73dc1dc81c602260ffa53830b3e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60098a53b23641152bc90125608e839e0308931d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263246"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>使用開啟方式命令顯示檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 [開啟方式] 命令顯示檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-with-command)。  
-  
 專案可以要求以顯示 IDE**開啟** 對話方塊。 此要求會提示使用者開啟標準編輯器選取的檔案。 下列步驟說明此程序。  
   
 1.  此專案會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>，指定的值是針對 OSE_UseOpenWithDialog`OSEOpenDocEditor`參數。  

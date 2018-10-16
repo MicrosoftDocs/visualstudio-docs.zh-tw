@@ -1,7 +1,7 @@
 ---
 title: 一或多個選取的資料庫物件傳回不符合目標類別的結構描述的結構描述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 516d7c30345b66fe2c57879db5ff6ab1f38fdd4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f59583c1ab8bd38c1e1fb3207970ac9478d498
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272671"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[一個或多個選取的資料庫物件傳回不符合目標類別的結構描述的結構描述](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class)。  
-  
   
 一個或多個選取的資料庫物件傳回的結構描述與目標資料類別的結構描述不相符。 未加入任何項目到此設計工具。  
   

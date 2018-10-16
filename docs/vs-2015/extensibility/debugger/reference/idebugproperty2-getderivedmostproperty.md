@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetDerivedMostProperty |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32581e352b3f3862da326638e1645c2ad117f5ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10329615daa57df1879715bae2c7a1a61f88848a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296305"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProperty2::GetDerivedMostProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getderivedmostproperty)。  
-  
 取得屬性的最具衍生性屬性。  
   
 ## <a name="syntax"></a>語法  

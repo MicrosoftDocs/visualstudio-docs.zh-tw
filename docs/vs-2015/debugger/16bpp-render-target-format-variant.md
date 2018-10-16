@@ -1,7 +1,7 @@
 ---
 title: 16bpp 呈現目標格式變異 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbf7ee89e18fdea39c88f35e3adf146db53a87dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e235fbca747cf8e7a78c7923bd2a0985cbdffc34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300324"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[16bpp 呈現目標格式變異](https://docs.microsoft.com/visualstudio/debugger/graphics/16bpp-render-target-format-variant)。  
-  
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。  
   
 ## <a name="interpretation"></a>解譯  

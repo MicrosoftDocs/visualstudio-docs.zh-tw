@@ -1,7 +1,7 @@
 ---
 title: 設計和檢視類別與類型 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191616"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>設計和檢視類別與類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設計和檢視類別與類型](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types)。  
-  
 在 Visual Studio 中，使用類別設計工具來設計、視覺化及重構程式碼中的類別和其他類型。 使用類別圖表來建立和編輯 Visual C# .NET、Visual Basic .NET 或 C++ 專案中的類別、進一步了解您的專案結構，或重新組織您的程式碼。  
   
  以下是您可以使用類別圖表來執行之工作的相關資訊：  

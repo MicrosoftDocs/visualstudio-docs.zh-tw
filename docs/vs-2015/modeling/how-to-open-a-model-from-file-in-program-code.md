@@ -1,7 +1,7 @@
 ---
 title: 如何： 從程式碼中的檔案中開啟模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0884148a6e3f390654842b5e35a9e53643ea17d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190498"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 從程式碼中的檔案中開啟模型](https://docs.microsoft.com/visualstudio/modeling/how-to-open-a-model-from-file-in-program-code)。  
-  
 您可以在任何應用程式中開啟 DSL 模型。  
   
  從[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。  

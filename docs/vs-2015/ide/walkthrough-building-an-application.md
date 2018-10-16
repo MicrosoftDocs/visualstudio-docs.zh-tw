@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：建置應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 442472bcad12fe42382bc8e76a668eda1705e549
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c9c4ba3367fb852420185ac8e978f138544d785
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300517"
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 建置應用程式](https://docs.microsoft.com/visualstudio/ide/walkthrough-building-an-application)。  
-  
 藉由完成本逐步解說，您將更熟悉使用 Visual Studio 建置應用程式時可設定的幾個選項。 您將針對一個範例應用程式建立自訂組建組態、隱藏特定警告訊息、增加建置輸出資訊，以及執行其他工作。  
   
  此主題包括下列章節：  

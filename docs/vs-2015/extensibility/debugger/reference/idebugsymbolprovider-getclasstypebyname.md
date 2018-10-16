@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetClassTypeByName |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fbf0f2e31581a86cdf717bd78011911b3845877
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7389e26de3f9f0a3defc511285ff048d2aa55e4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236414"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugSymbolProvider::GetClassTypeByName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname)。  
-  
 這個方法會取得代表完整的類別名稱的類別欄位型別。  
   
 ## <a name="syntax"></a>語法  

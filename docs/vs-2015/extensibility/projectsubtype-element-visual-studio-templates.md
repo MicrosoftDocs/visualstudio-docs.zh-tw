@@ -1,7 +1,7 @@
 ---
 title: ProjectSubType 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3b51174948104dd8e5bf67d90f967f028cc6773
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259311"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ProjectSubType 項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/projectsubtype-element-visual-studio-templates)。  
-  
 將範本分類的子類別目錄中指定的值為`ProjectType`項目。  
   
  \<VSTemplate >  

@@ -1,7 +1,7 @@
 ---
 title: 使用規則集分組程式碼分析規則 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220580"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用規則集分組程式碼分析規則](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules)。  
-  
 當您設定中的程式碼分析[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]， [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]，或[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以從 Microsoft 內建清單中選擇*規則集*。 規則集是找出目標的問題及特定條件的程式碼分析規則的邏輯群組。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或您可以套用包含只有最小建議規則規則集。 您也可以套用的規則集包含所有規則。  
   
  您可以自訂規則集新增或刪除規則，或變更規則才會出現在**錯誤清單**為警告或錯誤視窗。 自訂的規則集可滿足您特定的開發環境的需求。 當您自訂規則集時，[規則集] 頁面會提供搜尋和篩選工具，可協助您在程序。  

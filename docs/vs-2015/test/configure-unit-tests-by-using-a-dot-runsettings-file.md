@@ -1,7 +1,7 @@
 ---
 title: 使用 .runsettings 檔案設定單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255615"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用.runsettings 檔案設定單元測試](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)。  
-  
 您可以使用 *.runsettings 檔案設定 Visual Studio 中的單元測試。 (檔案名稱並不重要，但前提是您使用副檔名 '.runsettings'。) 例如，您可以變更執行測試的 .NET Framework、傳遞測試結果的所在目錄，以及測試回合期間所收集的資料。  
   
  如果您不想要執行任何特殊組態，則不需要 *.runsettings 檔案。 最常見做法是自訂[程式碼涵蓋範圍](../test/customizing-code-coverage-analysis.md)。  

@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279163"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542347"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279163"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 權益安裝延伸模組](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 接下來，選取您希望使用的 Azure DevOps Services 組織，然後按一下 [確認]。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
+    - 接下來，選取您希望使用的 Azure DevOps 組織，然後按一下 [確認]。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 權益確認帳戶](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ ms.locfileid: "44279163"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 權益安裝完成](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  開啟您的 Azure DevOps Services 專案儀表板，按一下 [Azure Pipelines] 功能表，然後選擇 [WhiteSource Bolt]。
+5.  開啟您的 Azure DevOps 專案儀表板，按一下 [Azure Pipelines] 功能表，然後選擇 [WhiteSource Bolt]。
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 權益新增延伸模組](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

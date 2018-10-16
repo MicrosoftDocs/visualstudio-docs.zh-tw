@@ -1,7 +1,7 @@
 ---
 title: 如何：安裝獨立分析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c0b9048d54af3fdc6910803a3d82d8b33700d0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f42732471ae71ddf0b748c562feabd7b6d3da49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263532"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 安裝獨立 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-install-the-stand-alone-profiler)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的 Web 伺服器上安裝開發環境。  
   
 > [!NOTE]

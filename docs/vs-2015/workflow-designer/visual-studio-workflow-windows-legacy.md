@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 工作流程 Windows （舊版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: bd54e54965a6a6b936b24e1ca13151e3754d9390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273165"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流程視窗 (舊版)
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 可用來以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。 舊版設計工具是一種視覺化設計工具，可用來建立工作流程。 您可以將活動從**工具箱**設計介面，並那里設定它們。 當此介面為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 編輯器視窗時，會佔用其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 編輯器視窗使用的主視窗區域。 工作流程的名稱會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗標題列中。  

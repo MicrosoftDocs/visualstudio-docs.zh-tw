@@ -1,7 +1,7 @@
 ---
 title: MarkProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4a5882ea5edd1f8432bf67197ec016c3ce5a81f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2f4daa0635582ccf57c4be001a90bfee4329992
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248829"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MarkProfile](https://docs.microsoft.com/visualstudio/profiling/markprofile)。  
-  
 `MarkProfile` 方法會在 .vsp 檔案中插入分析標記。 包含 `MarkProfile` 函式之執行緒的分析必須設定為 ON，才能插入標記。  
   
 ## <a name="syntax"></a>語法  

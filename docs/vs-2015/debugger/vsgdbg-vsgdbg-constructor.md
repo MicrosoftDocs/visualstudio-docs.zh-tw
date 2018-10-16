@@ -1,7 +1,7 @@
 ---
 title: 'Vsgdbg:: Vsgdbg （建構函式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a35443dbf4fc413908c61e989d2138122c0991
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a3188116e3b0316ccb6f3892bdd12d7e7ee2677
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251806"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[vsgdbg:: Vsgdbg （建構函式）](https://docs.microsoft.com/visualstudio/debugger/graphics/vsgdbg-vsgdbg-constructor)。  
-  
 建構的執行個體`VsgDbg`不論是否正在準備圖形診斷，以主動擷取和記錄的圖形資訊預設會根據指定的布林值參數的應用程式元件的類別。  
   
 ## <a name="syntax"></a>語法  

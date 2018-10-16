@@ -1,7 +1,7 @@
 ---
 title: UNMANAGED_ADDRESS_PHYSICAL |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ef8af0712e9e5bf5939f3d4a32a17fd77769006
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 561eda4cd7680340c1141334c5e057604ccb69e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208282"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UNMANAGED_ADDRESS_PHYSICAL](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/unmanaged-address-physical)。  
-  
 此結構表示的實體位址。  
   
 ## <a name="syntax"></a>語法  

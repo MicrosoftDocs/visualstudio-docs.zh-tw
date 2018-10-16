@@ -1,7 +1,7 @@
 ---
 title: 組態選項的概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294290"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[組態選項概觀](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview)。  
-  
 中的專案[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是一組具名屬性、 通常編譯器參數和檔案位置的描述組建類型。 根據預設，新的方案包含兩個組態偵錯和發行。 使用預設值，或修改以符合您特定的解決方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果沒有可用的只有一個組態，該組態會對應到所有的方案組態。  
   
  組態通常包含兩個部分： 平台設定與組態名稱 （例如偵錯或發行）。 組態的平台名稱識別作業系統平台的組態的目標，例如 API 設定的環境。 使用者的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]無法建立平台，他們必須從選取項目選擇的專案，可讓 VSPackage。 當使用者安裝 VSPackage，建立的封裝開發期間傳遞平台可能會出現任何所需的平台名稱為基礎的封裝建立者所設定的任何條件。 然後，使用者可以選取從可透過 VSPackage 時的屬性頁會具現化的平台的清單。  

@@ -1,7 +1,7 @@
 ---
 title: T4 輸出指示詞 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0eaa2d8e3fc257e14e04bad3cac706b8a3bc92a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198519"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[T4 輸出指示詞](https://docs.microsoft.com/visualstudio/modeling/t4-output-directive)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 文字範本中，`output` 指示詞用來定義轉換檔案的副檔名和編碼。  
   
  例如，如果您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案包含名為範本檔**MyTemplate.tt**其中包含下列指示詞：  

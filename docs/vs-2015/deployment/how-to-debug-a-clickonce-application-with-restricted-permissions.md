@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯 ClickOnce 應用程式，以限制權限 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7733eeefc758f5e5cd6940108ef6ade645893407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01cf2be1bef794f5aeb74b86d041408fa40ce4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209530"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：以限制使用權限偵錯 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 偵錯 ClickOnce 應用程式，以限制使用權限](https://docs.microsoft.com/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions)。  
-  
 身為開發人員，您很可能正在以完全信任權限來執行開發電腦，因此在偵錯 ClickOnce 應用程式時，不會看到使用者以受限權限執行時可能看到的相同安全性例外狀況。  
   
  為了攔截這些例外狀況，您需要使用與終端使用者相同的權限來進行應用程式的偵錯。 權限受限制情況的偵錯可在 [專案設計工具]  的 [安全性] 頁面上啟用。  

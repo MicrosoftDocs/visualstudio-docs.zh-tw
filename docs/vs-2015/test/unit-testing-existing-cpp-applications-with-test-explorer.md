@@ -1,7 +1,7 @@
 ---
 title: 使用測試總管針對現有 C++ 應用程式執行單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172454"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>使用測試總管針對現有 C++ 應用程式執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[單元測試現有的 c + + 應用程式使用測試總管](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer)。  
-  
 我們建議在變更現有的應用程式之前，您要確定它能夠良好地涵蓋單元測試。 這會讓您對於變更不會產生 Bug 有信心。 如果應用程式尚未具有單元測試，您可以使用本主題中所示範的技術來加入單元測試。 本主題說明如何為現有的 Visual C++ 程式碼加入單元測試，從決定如何測試程式碼開始，然後建立、撰寫測試，最後則執行測試。  
   
 ## <a name="deciding-how-to-test-your-code"></a>決定如何測試程式碼  

@@ -1,7 +1,7 @@
 ---
 title: 應用程式屬性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f56ede85ffe643b995e3c7b51327693c8ef8847
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209010"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[應用程式屬性](https://docs.microsoft.com/visualstudio/ide/application-properties)。  
-  
 您可以在 [專案設計工具] 的 [應用程式] 窗格中，設定 Visual Basic、C# 和 F# 應用程式的一般應用程式屬性 (例如應用程式類型、啟動物件和組件資訊)。  
   
  下列工作可以在 [應用程式] 窗格中完成：  
@@ -64,7 +62,7 @@ ms.locfileid: "47485062"
  [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
+ [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [專案設計工具簡介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

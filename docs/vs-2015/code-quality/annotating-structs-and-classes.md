@@ -1,7 +1,7 @@
 ---
 title: 註釋結構和類別 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ed559321bb63d5f9871193f312356466756429
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3d20769215058cca6e30955ae37ad2a78b6bc7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287452"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註釋結構和類別](https://docs.microsoft.com/visualstudio/code-quality/annotating-structs-and-classes)。  
-  
 您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。  
   
 ## <a name="struct-and-class-annotations"></a>結構和類別的註解  

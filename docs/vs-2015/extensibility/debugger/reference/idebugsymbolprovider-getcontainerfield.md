@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetContainerField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 294448cb176922596fe5c2170d433e13dc938c45
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14e5041081a82de5192c7d19317c9cc11dbfd6ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261751"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugSymbolProvider::GetContainerField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield)。  
-  
 這個方法會取得包含偵錯位址的欄位。  
   
 ## <a name="syntax"></a>語法  

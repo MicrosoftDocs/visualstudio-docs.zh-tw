@@ -1,7 +1,7 @@
 ---
 title: 延伸標記 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee6943210a4a333625e524afe020e9994824daee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7abd22757b202e902cce9056df578944c58ff4b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204336"
 ---
 # <a name="span-markers"></a>延伸標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Span 標記](https://docs.microsoft.com/visualstudio/profiling/span-markers)。  
-  
 延伸標記表示有意義的應用程式階段。 例如，您可以使用延伸範圍，表示其間正在處理特定工作項目的時間間隔。 其長度代表對應的應用程式階段持續時間。 下圖顯示並行視覺化檢視中的延伸範圍︰  
   
  ![並行視覺化檢視中的延伸標記](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  

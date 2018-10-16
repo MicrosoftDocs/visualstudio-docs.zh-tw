@@ -1,7 +1,7 @@
 ---
 title: 格式、XAML、文字編輯器、選項 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bf43a9c13b273339d58f376b684a94444861d4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0cf67db7d7109003c3befa5c5e263190f0258965
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265950"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選項、 文字編輯器、 XAML、 格式](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-xaml-formatting)。  
-  
   
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。  
   

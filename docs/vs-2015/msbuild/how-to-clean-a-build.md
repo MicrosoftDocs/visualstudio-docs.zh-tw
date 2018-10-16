@@ -1,7 +1,7 @@
 ---
 title: 如何：清除組建 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67c0515ff86f0a6a02b15df382249aeacb5fda39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229667"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 清除組建](https://docs.microsoft.com/visualstudio/msbuild/how-to-clean-a-build)。  
-  
   
 當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   

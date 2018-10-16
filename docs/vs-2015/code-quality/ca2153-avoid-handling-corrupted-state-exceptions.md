@@ -1,7 +1,7 @@
 ---
 title: CA2153： 避免處理損毀狀態例外狀況 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff16046a115a7a21939ef33fa06f6a81ec56921c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3f6ac08b9e71dcd9d1a84cb770e4774a7b914132
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297982"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2153： 避免處理損毀狀態例外狀況](https://docs.microsoft.com/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions)。
-
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
@@ -33,10 +30,10 @@ ms.locfileid: "47588400"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- [損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指出記憶體損毀存在於您的程序。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。
+ [損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。
 
 ## <a name="rule-description"></a>規則描述
- CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的案例中，如果以適當的 `HandleProcessCorruptedStateExceptions` 屬性標示方法，一般的處理常式只會攔截例外狀況。 根據預設， [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx)將 Cse 不叫用 catch 處理常式。
+ CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的案例中，如果以適當的 `HandleProcessCorruptedStateExceptions` 屬性標示方法，一般的處理常式只會攔截例外狀況。 [通用語言執行平台 (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) 預設 CSE 不叫用 catch 處理常式。
 
  允許處理序損毀卻不攔截這類例外狀況，是最安全的選項，因為就算是記錄程式碼都會允許攻擊者攻擊記憶體損毀錯誤。
 
@@ -45,7 +42,7 @@ ms.locfileid: "47588400"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要處理這種警告，您應該執行下列其中一項：
 
- 1. 移除`HandleProcessCorruptedStateExceptions`屬性。 這會還原到預設的執行階段行為，不將 CSE 傳遞至 catch 處理常式。
+ 1. 移除 `HandleProcessCorruptedStateExceptions` 屬性。 這會還原到預設的執行階段行為，不將 CSE 傳遞至 catch 處理常式。
 
  2. 移除一般 catch 處理常式，而非移除攔截特定例外狀況類型的處理常式。  這可能包括假設處理常式程式碼可以安全處理它們的 CSE (非常罕見)。
 

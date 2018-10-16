@@ -1,7 +1,7 @@
 ---
 title: 如何：在 MSBuild 中逸出特殊字元 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a900ebe49e95b512c0f53a5542f0ba8ee238a83f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8346d44b16e9ada275541a23c4bf080ef1f0f54a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230167"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 在 MSBuild 中逸出特殊字元](https://docs.microsoft.com/visualstudio/msbuild/how-to-escape-special-characters-in-msbuild)。  
-  
   
 某些字元在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔中具有特殊意義。 這些字元範例包括分號 (;) 和星號 (*)。 如需這些特殊字元的完整清單，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
   

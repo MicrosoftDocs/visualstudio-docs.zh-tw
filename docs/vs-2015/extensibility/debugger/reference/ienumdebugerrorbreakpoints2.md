@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugErrorBreakpoints2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9ffe2d65f2a087d0b65cc4f122d446b0704924f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7fa1baa90a02c901f484eb79e69ab8f18a68e65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209192"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugErrorBreakpoints2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugerrorbreakpoints2)。  
-  
 此介面列舉暫止中斷點相關聯的錯誤中斷點。  
   
 ## <a name="syntax"></a>語法  

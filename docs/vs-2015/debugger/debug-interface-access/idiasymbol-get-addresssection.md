@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_addresssection |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1b0b71f904757684772895b9f0dd5a9cffc277a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccf331ff282c2a53853cacadb2433f6b4412074a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484847"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206761"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_addresssection](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-addresssection)。  
-  
 擷取位址位置中區段的一部分。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsStatic`。  
   
 ## <a name="syntax"></a>語法  

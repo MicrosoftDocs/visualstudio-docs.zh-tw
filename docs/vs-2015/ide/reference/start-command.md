@@ -1,7 +1,7 @@
 ---
 title: Start 命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e70a682d9b9ef67e9f0372173c3396a0706cd2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3b2f482fb33664796a4e6fe451a6a2917e9592f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247697"
 ---
 # <a name="start-command"></a>Start 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Start 命令](https://docs.microsoft.com/visualstudio/ide/reference/start-command)。  
-  
   
 開始偵錯啟始專案。  
   
@@ -58,7 +56,7 @@ Debug.Start [address]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

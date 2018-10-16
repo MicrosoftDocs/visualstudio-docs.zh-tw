@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：改善 UI 回應性 (HTML) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258306"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>逐步解說：改善 UI 回應性 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 改善 UI 回應性 (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html)。  
-  
 本逐步解說將帶領您使用 [HTML UI 回應性分析工具](../profiling/html-ui-responsiveness.md)找出並修正效能問題。 您可以在 Visual Studio 中使用此分析工具來分析使用 JavaScript 建置的 Windows 通用應用程式及 Windows 市集應用程式。 在這個案例中，您將建立極常更新 DOM 項目的效能測試應用程式，並且使用分析工具找出並修正問題。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>建立及執行效能測試應用程式  

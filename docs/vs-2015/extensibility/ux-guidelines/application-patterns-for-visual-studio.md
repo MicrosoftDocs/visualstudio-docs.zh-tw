@@ -1,7 +1,7 @@
 ---
 title: 適用於 Visual Studio 的應用程式模式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3993b8ba5b98a034cb2e18c9bb019e55bfb56eb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192532"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[適用於 Visual Studio 的應用程式模式](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/application-patterns-for-visual-studio)。  
-  
 ##  <a name="BKMK_WindowInteractions"></a> 視窗的互動  
   
 ### <a name="overview"></a>總覽  

@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::EnumInterfacesImplemented |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c21a20fc832a42baa7386f50289d8297a3e34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b63cea0485ad01b0b3c0812a04eee54c08cd55f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258072"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugClassField::EnumInterfacesImplemented](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented)。  
-  
 建立這個類別所實作之介面的列舉值。  
   
 ## <a name="syntax"></a>語法  

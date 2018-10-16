@@ -1,7 +1,7 @@
 ---
 title: 核心編輯器內 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2d9ec83c700f9166dc6b73860547bcacd265a15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc91a228fd788074a543678b281288e043f9385c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227721"
 ---
 # <a name="inside-the-core-editor"></a>在核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[內核心編輯器](https://docs.microsoft.com/visualstudio/extensibility/inside-the-core-editor)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器是一份數個元件可讓您修改及查詢文字的資訊。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會透過編輯器配接器進行路由。 不過，它會建議您調整您的自訂 API 的新編輯器。  
   
  下列區域為核心編輯器的一些重要特性：  

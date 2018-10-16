@@ -1,7 +1,7 @@
 ---
 title: (VB、 C#、 c + + 和 XAML） 的 Visual Studio 中啟動的市集應用程式的偵錯工作階段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80394d5a778ec4202a41e30d895280f75aaa61a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b87c4ab58c103d1ccbcf20b8b49b64d9f1aec85e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241289"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (VB、C#、C++ 和 XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[(VB、 C#、 c + + 和 XAML） 的 Visual Studio 中啟動的市集應用程式的偵錯工作階段](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  本主題說明如何對於以 XAML 和 Visual  C++、Visual  C# 或 Visual  Basic撰寫的市集應用程式，開始偵錯工作階段。 要對應用程式進行偵錯，必須設定偵錯工作階段並選擇應用程式的啟動方式。  
@@ -137,7 +135,7 @@ ms.locfileid: "47499264"
 |||  
 |-|-|  
 |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱[本機電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|  
-|**模擬器**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
+|**模擬器**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
 |**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
   
  如果您選擇 [ **遠端電腦**]，請透過下列其中一種方法指定遠端電腦的名稱或 IP 位址：  
@@ -266,7 +264,7 @@ ms.locfileid: "47499264"
     |||  
     |-|-|  
     |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱[本機電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|  
-    |**模擬器**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
+    |**模擬器**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
     |**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
   
 3.  從 [ **已安裝的應用程式套件** ] 清單中選擇應用程式。  
@@ -278,9 +276,9 @@ ms.locfileid: "47499264"
  當您按一下 [ **開始**] 時，就會啟動應用程式或是將其設定成以偵錯模式執行。  
   
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 將偵錯工具附加至執行中的應用程式  
- 若要將偵錯工具附加至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式，您必須使用 [Debuggable Package 管理員] 將應用程式設定成以偵錯模式執行。 [Debuggable Package 管理員] 會隨 Visual Studio 遠端工具一起安裝。  
+ 若要將偵錯工具附加至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，您必須使用 [Debuggable Package 管理員] 將應用程式設定成以偵錯模式執行。 [Debuggable Package 管理員] 會隨 Visual Studio 遠端工具一起安裝。  
   
- 當您需要偵錯已安裝的應用程式 (例如從 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 安裝的應用程式) 時，將偵錯工具附加至應用程式將有所幫助。 當您具有應用程式的原始程式檔，但沒有應用程式的 Visual Studio 專案時，就必須進行附加。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。  
+ 當您需要偵錯已安裝的應用程式 (例如從 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]安裝的應用程式) 時，將偵錯工具附加至應用程式將有所幫助。 當您具有應用程式的原始程式檔，但沒有應用程式的 Visual Studio 專案時，就必須進行附加。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。  
   
  要將偵錯工具附加至應用程式，必須執行下列步驟：  
   

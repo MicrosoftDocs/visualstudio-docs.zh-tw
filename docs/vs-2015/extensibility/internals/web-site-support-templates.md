@@ -1,7 +1,7 @@
 ---
 title: 支援的網站範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f062390fbf0aa47021dbec8ed7939d440333950f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18d6fe0574782a6d04adb49787ac2f49f649314
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233564"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[網站支援範本](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-templates)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 網站專案和項目範本會提供可重複使用且可自訂的網站專案和項目虛設常式，並不需要從頭開始建立新的網站專案和項目，來加速開發程序。 如需詳細資訊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。  
   
 ## <a name="project-template-folder"></a>專案範本資料夾  

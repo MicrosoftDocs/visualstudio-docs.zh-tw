@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetCodeContext |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93d66159-a41d-49ef-982f-91bb4d073b74
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3641d2387162227a21dea918048388904c387af7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a729ab327e70909b38fe0726d438734ccc1a5e2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250519"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugStackFrame2::GetCodeContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getcodecontext)。  
-  
 取得此堆疊框架的程式碼內容。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 方案 (。Sln) 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737186560f6e1cde0fc35d16dab35fb146685fbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173676"
 ---
 # <a name="solution-sln-file"></a>方案檔 (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新版本位於[解決方案 (。Sln) 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-dot-sln-file)。  
-  
 方案是組織專案在 Visual Studio 中的結構。 解決方案會保留在以文字為基礎 (共用） 的.sln 和.suo （二進位、 使用者特定的解決方案選項） 檔案中的專案的狀態資訊。 如需.suo 檔案的詳細資訊，請參閱[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
   
  如果結果中而非.sln 檔案參考載入 VSPackage 時，環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>.sln 檔案中讀取。  

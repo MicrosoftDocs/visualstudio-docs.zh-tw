@@ -1,14 +1,14 @@
 ---
 title: Getting Started with Visual C# 和 Visual Basic |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
 - Visual Basic tutorial
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d526da8cb5013de7f56d5cc43b8ee2ec52014b47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253769"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Getting Started with Visual C# 和 Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)。  
-  
 不論您是剛接觸 Visual C# 或 Microsoft Visual Basic，都要從這裡開始學習。 「使用者入門說明」是一系列連續性的課程，將帶領您熟悉 Visual C# 和 Visual Basic。 盡情享受樂趣，並撰寫出一些了不起的軟體！  
   
  若要了解 Visual C++，請參閱 [Visual C++ 資源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  

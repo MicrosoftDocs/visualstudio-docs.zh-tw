@@ -1,7 +1,7 @@
 ---
 title: 服務 Essentials |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 497f894f1ae8eef6c58ffeea542128105a51336b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178125"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[服務的基本資訊](https://docs.microsoft.com/visualstudio/extensibility/internals/service-essentials)。  
-  
 服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
  例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  

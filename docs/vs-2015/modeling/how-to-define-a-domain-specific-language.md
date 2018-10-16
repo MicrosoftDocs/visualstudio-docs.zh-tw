@@ -1,7 +1,7 @@
 ---
 title: 如何定義特定領域語言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295174"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何定義特定領域語言](https://docs.microsoft.com/visualstudio/modeling/how-to-define-a-domain-specific-language)。  
-  
 若要定義網域指定的語言 (DSL)，請從範本建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。  
   
  如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -242,7 +240,7 @@ ms.locfileid: "47588809"
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定義在圖表上顯示為圖形的項目類別  
   
-1.  **定義和測試網域類別中所述**[定義網域類別](#classes) **。**   
+1.  **定義和測試網域類別中所述**[定義網域類別](#classes) **。**  
   
     -   類別的父系應為根類別。 也就是說，根類別與新網域類別之間應該有內嵌關聯性。  
   

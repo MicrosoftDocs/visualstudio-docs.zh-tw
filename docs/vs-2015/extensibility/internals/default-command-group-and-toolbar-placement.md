@@ -1,7 +1,7 @@
 ---
 title: 預設命令、 群組及工具列位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c6007cd9502d5b1e10aa0fc90181f405189889a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb7144842cba237a11d94435f56782a8d2de90b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195737"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設的命令、群組及工具列放置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[預設的命令、 群組及工具列位置](https://docs.microsoft.com/visualstudio/extensibility/internals/default-command-group-and-toolbar-placement)。  
-  
 如需產品的一致性和穩定性，UI 預設會顯示特定命令群組，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]提供命令和命令群組的定義。 Vspackage 也可以使用標準命令和命令群組。  
   
  預設命令群組分成三個類別： IDE 命令、 產品命令和編輯器命令。  

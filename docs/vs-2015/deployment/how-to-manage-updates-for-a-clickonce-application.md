@@ -1,7 +1,7 @@
 ---
 title: 如何： 管理 ClickOnce 應用程式的更新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 32a221b994bba78f70d70c758ae6c7f58f0668bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272463"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 應用程式中的更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 管理 ClickOnce 應用程式的更新](https://docs.microsoft.com/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有更多的彈性，指定何時和如何執行更新檢查、 更新是否為必要項目，以及應用程式應該檢查更新。  
   
  您可以設定應用程式的應用程式啟動後檢查更新會自動在應用程式啟動之前，或設定的間隔。 此外，您也可以指定最小必要的版本;也就是說，如果使用者的版本低於所需的版本，已安裝更新。  

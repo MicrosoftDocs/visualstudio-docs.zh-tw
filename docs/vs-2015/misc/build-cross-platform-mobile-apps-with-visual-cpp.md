@@ -1,7 +1,7 @@
 ---
 title: 建置 Visual c + + 的跨平台行動應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: dfb8924c40a33abe817f9546ae5ec87192b84836
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260168"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>建置 Visual c + + 的跨平台行動應用程式
 您可以使用 Visual C++ for Cross-Platform Mobile Development 為 Android、iOS 和 Windows 裝置建置跨平台程式碼。 這是 Visual Studio 2015 中可用的選擇性功能，可以使用 Visual C++ 進行 iOS、Android 和 Windows 的跨平台程式碼開發。  

@@ -1,7 +1,7 @@
 ---
 title: 從 IDE 中啟動組建 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc5d8220f0b4bab5cac8e04c248f9fab4d815a85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c741b8dfd0607de41ca7b53bdd88244ae3957a9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230382"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[中啟動組建從 IDE](https://docs.microsoft.com/visualstudio/msbuild/starting-a-build-from-within-the-ide)。  
-  
   
 自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本主題說明上述情況的原因，並概述相關程序。  
   

@@ -1,7 +1,7 @@
 ---
 title: 自訂文字和影像欄位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271124"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂文字和影像欄位](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields)。  
-  
 當您在圖形中定義的文字裝飾項目時，它被以文字欄位。 例如 TextFields 和其他 ShapeFields 初始化的詳細資訊，請在您的 DSL 方案中檢查 Dsl\GeneratedCode\Shapes.cs。  
   
  文字欄位是物件，該圖形，例如指派給標籤的空間內的區域物件。 其中一個文字欄位的執行個體共用相同類別的許多圖形之間。 文字欄位的執行個體不會儲存每個執行個體，分別為標籤的文字： 反而`GetDisplayText(ShapeElement)`方法會做為參數，圖形，並可以查閱相依於目前的圖形與模型項目狀態的文字。  

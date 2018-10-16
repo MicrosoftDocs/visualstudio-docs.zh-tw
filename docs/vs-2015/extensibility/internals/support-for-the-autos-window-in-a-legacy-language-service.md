@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中的 [自動變數] 視窗的支援 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d9266ce81da0819bbf0f17c06409afcb02083f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05a3181206f9e73ffe7800a581fc93c3712c4afa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283617"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中對自動變數視窗的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務中的 [自動變數] 視窗支援](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service)。  
-  
 **自動變數**視窗會顯示運算式，例如變數和正在偵錯程式暫停 （可能是因為中斷點或例外狀況） 時，會在範圍內的參數。 運算式可以包含變數，本機或全域和已變更的區域範圍中的參數。 **自動變數**視窗也可以包含類別、 結構或其他類型的具現化。 運算式評估工具可以評估的任何項目可能顯示在**自動變數**視窗。  
   
  Managed 的 package framework (MPF) 不提供直接的支援，如**自動變數**視窗。 不過，如果您覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法中，您可以傳回的運算式，以顯示在清單 **[自動變數]** 視窗。  

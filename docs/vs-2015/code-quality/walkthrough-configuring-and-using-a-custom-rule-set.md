@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 設定及使用自訂規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221633"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 設定及使用自訂規則集](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set)。  
-  
 本逐步解說示範如何使用已設定為使用自訂的程式碼分析工具*規則集*類別庫。 您可以選取與您指定您的解決方案，或者您可以選取的專案類型替代的規則集要滿足特定需求，例如掃描舊版程式碼可以在不中斷的方式中修正的問題相關的規則集。 在任一情況下，規則集也可以自訂來微調它們以您的專案需求。  
   
  在本逐步解說中，您會逐步執行這些程序：  

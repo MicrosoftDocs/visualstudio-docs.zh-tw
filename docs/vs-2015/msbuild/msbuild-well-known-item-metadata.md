@@ -1,7 +1,7 @@
 ---
 title: MSBuild 已知的項目中繼資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02464cd6c7116da988903d8a8f19f36c900595f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8d83c6eaf441b72bc3774f4117653826da47613
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234048"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 已知的項目中繼資料](https://docs.microsoft.com/visualstudio/msbuild/msbuild-well-known-item-metadata)。  
-  
   
 下表說明在建立期間指派給每個項目的中繼資料。 每個範例都使用了下列項目宣告，以在專案中包含 `C:\MyProject\Source\Program.cs` 檔案。  
   

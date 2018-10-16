@@ -1,7 +1,7 @@
 ---
 title: 如何建立和套用資源 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236505"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何建立和套用資源](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource)。  
-  
 XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。  
   
  每當您從現有的屬性 ([Style](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 或 `ControlTemplate`) 建立新資源時，[建立資源] 對話方塊都可讓您定義應用程式層級、文件層級或元素層級的資源。 這些層級會決定您可以使用資源的位置。 例如，如果您在項目層級定義資源，該資源只能套用至用來建立資源的項目。 您也可以選擇將資源儲存在資源字典中，資源字典是您可以在其他專案中重複使用的個別檔案。  

@@ -1,7 +1,7 @@
 ---
 title: 控制圖示或 Decorator 的可視性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207853"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[控制圖示或 Decorator 的可視性](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator)。  
-  
 A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文字行。 您可以進行裝飾項目會顯示，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可能有不同的圖示會出現取決於該人員的性別，子系數目等等。  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 decorator 的可視性  

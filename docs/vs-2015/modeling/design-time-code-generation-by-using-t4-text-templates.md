@@ -1,7 +1,7 @@
 ---
 title: 使用 T4 文字範本在設計階段的程式碼產生 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268329"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 T4 文字範本在設計階段的程式碼產生](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates)。  
-  
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是含有您應用程式需求重要資訊的檔案或資料庫。  
   
  例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您使用者的需求變更時，很容易就可以與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。  

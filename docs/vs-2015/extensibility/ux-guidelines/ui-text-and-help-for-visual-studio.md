@@ -1,7 +1,7 @@
 ---
 title: UI 文字和適用於 Visual Studio 的協助 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3e8f7541c83372c0d822c3db4bc0e20b3af1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303810"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UI 文字與說明適用於 Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ui-text-and-help-for-visual-studio)。  
-  
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
  可理解的文字是有效的 UI 很重要的。 軟體使用者傾向於讀取標籤第一次，也就是那些最容易完成手邊的工作。 靜態文字會讀取較少的頻率。 規劃使用者啟動其工作的工作階段與整個視窗中，後面接著讀取此大致順序 UI 的快速掃描：  
   

@@ -1,7 +1,7 @@
 ---
 title: 提供 XML 程式碼註解 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185454"
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 程式碼註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[提供的 XML 程式碼註解](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments)。  
-  
 您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。  
   
  如需撰寫 Visual Basic 中的程式碼的詳細資訊，請參閱[如何： 建立 XML 文件](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  

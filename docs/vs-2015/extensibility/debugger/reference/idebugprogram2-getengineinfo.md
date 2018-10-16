@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetEngineInfo |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e242a0d2fa414e4f735d5964d65308a68b58d774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86def91e6b771d5574ff904467e05b5c37f8b5f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187480"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgram2::GetEngineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getengineinfo)。  
-  
 取得名稱和執行此程式的偵錯引擎 (DE) 的 GUID。  
   
 ## <a name="syntax"></a>語法  

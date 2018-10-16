@@ -1,7 +1,7 @@
 ---
 title: 檢查清單： 建立新的專案類型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285983"
 ---
 # <a name="checklist-creating-new-project-types"></a>檢查清單︰建立新的專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檢查清單： 建立新的專案類型](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types)。  
-  
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指南。  
   
 1.  設計新的專案類型的功能。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
@@ -58,7 +56,7 @@ ms.locfileid: "47485552"
   
     -   物件或衍生自類別`IDispatch`，其可供自動化。  
   
-    -   XML 命令表 (.vsct) 檔案。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+    -   XML 命令表 (.vsct) 檔案。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
 6.  測試、 偵錯，並啟動您的專案類型。  
   

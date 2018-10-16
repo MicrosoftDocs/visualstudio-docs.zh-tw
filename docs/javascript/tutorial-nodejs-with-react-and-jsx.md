@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124998"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548201"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -312,9 +312,11 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 ## <a name="run-the-app"></a>執行應用程式
 
-1. 請確定已選取 Chrome 作為目前的偵錯目標。
+1. 選取 Chrome 作為目前偵錯目標。
 
     ![選取 Chrome 作為偵錯目標](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 
 1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯]) 或綠色箭號按鈕。
 
@@ -361,6 +363,8 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 切換至 Visual Studio，然後在 *app-bundle.js* 程式碼的 `render()` 函式中設定中斷點，如下圖所示：
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    若要尋找 *app-bundle.js* 中的 `render()` 函式，請使用 **Ctrl**+**F** ([編輯] > 尋找和取代 > [快速尋找])。
 
 1. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl**+**F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
 

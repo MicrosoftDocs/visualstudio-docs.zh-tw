@@ -1,7 +1,7 @@
 ---
 title: 更新使用者介面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181036"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[更新使用者介面](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface)。  
-  
 實作的命令之後，您可以新增程式碼以更新使用者介面與您的新命令的狀態。  
   
  在典型的 Win32 應用程式中，會持續輪詢命令集，使用者可以檢視它們時，您可以調整個別命令的狀態。 不過，因為[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]shell 可以託管無限的數量的 Vspackage，廣泛的輪詢，可能會降低回應能力，尤其在 managed 程式碼與 COM 之間的 interop 組件輪詢  

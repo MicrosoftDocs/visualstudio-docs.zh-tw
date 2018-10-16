@@ -1,7 +1,7 @@
 ---
 title: 符號位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dffab87abed5bb8187a5340955dea84f77ccab8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88d8fd37babea18aa385598cad12436b414f5ff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284631"
 ---
 # <a name="symbol-locations"></a>符號位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[符號位置](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbol-locations)。  
-  
 大部分的符號的影像檔中有定義的位置。 符號的位置指定其值介於[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉型別。 符號可能支援其他的屬性，根據其位置。  
   
  下表顯示最常使用的位置類型和其額外的屬性。  

@@ -1,7 +1,7 @@
 ---
 title: 應用程式生命週期管理 (ALM) 與 Unity 應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 23e501554bf5a8502cc8ac5a271c0a803ad25808
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 997533d55274ef23966a3b229886f67023d20bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247022"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Application Lifecycle Management (ALM) 與 Unity 應用程式](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-unity-apps)。  
-  
   
 開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動橫跨整個應用程式生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行建置、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。  
   

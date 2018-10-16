@@ -1,7 +1,7 @@
 ---
 title: 尋找 CodeLens 的程式碼變更和其他記錄 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25aa0b7f87d769d463f97f272f2a64eaa2fcfbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224954"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[尋找程式碼變更和其他記錄 CodeLens](https://docs.microsoft.com/visualstudio/ide/find-code-changes-and-other-history-with-codelens)。  
-  
 當您了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 尋找程式碼參考、程式碼的變更、已連結的 Bug、工作項目、程式碼檢閱和單元測試。  
   
 > [!NOTE]

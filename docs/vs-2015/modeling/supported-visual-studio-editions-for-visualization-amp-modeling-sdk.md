@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 版本支援的視覺效果&amp;Modeling SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ebfedef5231234ab6c9d0e1319cd6d427a832bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee0e8021c68e16409bb1c107920cd802e06ee165
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227048"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio 版本支援的視覺效果&amp;Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[視覺效果支援 Visual Studio Editions &amp; Modeling SDK](https://docs.microsoft.com/visualstudio/modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk)。  
-  
 以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../includes/dsl-md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。  
   
 ## <a name="authoring-edition"></a>撰寫版本  

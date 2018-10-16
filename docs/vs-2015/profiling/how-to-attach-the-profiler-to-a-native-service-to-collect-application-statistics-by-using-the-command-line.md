@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令列將分析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca35c58c25ca989bba65a315a1cfd05f05e20fc0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: fbbf8dcdd476c60f83cf2fdb73b503506c429a79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306016"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用命令列附加至原生服務以收集應用程式統計資料的 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 原生服務，並使用取樣方法收集效能統計資料。  
   
 > [!NOTE]

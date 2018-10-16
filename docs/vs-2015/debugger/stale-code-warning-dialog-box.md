@@ -1,7 +1,7 @@
 ---
 title: 過時的程式碼警告對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e57eb23dc98cee800a2f25b685b001d3232d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93d9b6900ed3e1331f61495e4e80b96d446d410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179617"
 ---
 # <a name="stale-code-warning-dialog-box"></a>過時程式碼警告對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[過時的程式碼警告對話方塊](https://docs.microsoft.com/visualstudio/debugger/stale-code-warning-dialog-box)。  
-  
 會出現此對話方塊後變更為原生程式碼**編輯後繼續**無法立即套用。 因此，現在目前堆疊框架中的某些機器碼已過期，也就是過時了。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用過時程式碼](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)。  
   
  **不要再顯示此對話方塊**  

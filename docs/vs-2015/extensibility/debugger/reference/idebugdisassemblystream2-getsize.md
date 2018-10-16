@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetSize |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d91f08406bac9800fe716fc123495ae74418bfef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c84da36c0692a5fb9b82da71e22ae58cee62fbdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257370"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDisassemblyStream2::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-getsize)。  
-  
 指示這個反組譯碼資料流中取得的大小。  
   
 ## <a name="syntax"></a>語法  

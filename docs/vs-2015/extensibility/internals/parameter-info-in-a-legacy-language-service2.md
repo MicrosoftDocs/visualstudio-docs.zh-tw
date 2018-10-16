@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務 2 中的參數資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200027"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務 2 中的參數資訊](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2)。  
-  
 IntelliSense 的 參數資訊就是當使用者輸入的參數清單時，會顯示方法的簽章的工具提示開始字元 （通常是左括號） 的方法參數清單。 在輸入每個參數及參數分隔符號 （通常為逗號） 型別時，工具提示會更新以顯示下一個參數以粗體顯示。  
   
  Managed 的封裝架構 (MPF) 類別提供管理參數資訊工具提示的支援。 參數會啟動，參數接下來，而且參數結尾字元，而且必須提供的方法簽章和其相關聯的參數清單，就必須偵測剖析器。  

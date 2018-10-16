@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用中斷點與 XSLT |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30ddb1fa8d56a55c5fc7a9811e4c836cabe4da0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233450"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：搭配使用中斷點與 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

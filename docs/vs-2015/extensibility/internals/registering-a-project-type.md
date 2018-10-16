@@ -1,7 +1,7 @@
 ---
 title: 註冊專案類型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499595"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271774"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註冊專案類型](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type)。  
-  
 當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案中建立這些登錄項目。  
   
  在下列範例中，從登錄的陳述式提供預設路徑和資料如果適用的話，後面的資料表包含每個陳述式的登錄指令碼中的項目。 資料表提供的指令碼項目和陳述式的其他資訊。  

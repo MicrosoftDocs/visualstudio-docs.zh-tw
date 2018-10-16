@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 建立基本獨立 Shell 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68b4fb6f7bb07cbb25d2fa8552e92875c5c242bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199533"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本的 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 建立基本獨立 Shell 應用程式](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-basic-isolated-shell-application)。  
-  
 本逐步解說示範如何建立獨立模式的 shell 解決方案、 自訂 [關於說明] 工具視窗中，並建立安裝程式來安裝獨立模式的 shell。  
   
 ## <a name="prerequisites"></a>必要條件  

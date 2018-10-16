@@ -1,7 +1,7 @@
 ---
 title: IDebugDocument2::GetDocumentClassID |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b744e9fa21bf7ead25df4099411c7f2bf4ccebaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2fbe958655f4102606c7fbe4b40b228f726f8dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305665"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDocument2::GetDocumentClassID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocument2-getdocumentclassid)。  
-  
 取得文件的類別識別項。  
   
 ## <a name="syntax"></a>語法  

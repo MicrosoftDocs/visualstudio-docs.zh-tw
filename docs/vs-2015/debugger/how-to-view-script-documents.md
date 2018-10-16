@@ -1,7 +1,7 @@
 ---
 title: 如何： 檢視指令碼文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc24c5e9c2332516cbf939e14581a2df7bea44eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f32fc5537fae9483401ac479eb4585d1e19108
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230503"
 ---
 # <a name="how-to-view-script-documents"></a>如何：檢視指令碼文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[How to: View Script Documents](https://docs.microsoft.com/visualstudio/debugger/how-to-view-script-documents)。  
-  
 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中。 [指令碼總管] 視窗通常會隱藏起來，因此用戶端指令碼的存在不一定那麼明顯。  
   
  在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中，而 [方案總管] 預設為可見狀態。 今後將不再有 [指令碼總管] 視窗。  

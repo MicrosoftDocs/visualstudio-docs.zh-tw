@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_typeids |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f932e5d5d2323be84163422c4f007ad60ccd90b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 560c462948dd35fba56f1c4c0a07764f5c72c76c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236453"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_typeids](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-typeids)。  
-  
 擷取這個符號的編譯器特定的型別識別項值的陣列。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorEvent2::GetErrorMessage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 516119fbe944b0aeeaa50516cf76a7745a5343f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fb5e3f2f048221b127286eecc0494ed5c648006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179006"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugErrorEvent2::GetErrorMessage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugerrorevent2-geterrormessage)。  
-  
 傳回可讓人類看得懂的錯誤訊息建構的資訊。  
   
 ## <a name="syntax"></a>語法  

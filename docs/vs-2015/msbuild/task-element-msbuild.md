@@ -1,7 +1,7 @@
 ---
 title: Task 元素 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acfac627ffbfa858a955913c2ba40c34367eaef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d9d616e9b3520d3592f3e34a5aa3b95a2c5f722
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304196"
 ---
 # <a name="task-element-msbuild"></a>Task 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Task 項目 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/task-element-msbuild)。  
-  
   
 建立並執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作的執行個體。 元素名稱取決於所建立之工作的名稱。  
   
@@ -65,7 +63,7 @@ ms.locfileid: "47492420"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[Output](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|  
+|[輸出](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|  
   
 ### <a name="parent-elements"></a>父項目  
   

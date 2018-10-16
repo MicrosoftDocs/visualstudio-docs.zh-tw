@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280619"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542373"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何：解除鎖定 Visual Studio
 
@@ -27,14 +27,14 @@ ms.locfileid: "44280619"
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>使用線上訂閱解除鎖定 Visual Studio
 
-使用與 Microsoft 帳戶、公司或學校帳戶相關聯的 Visual Studio 訂用帳戶或 Azure DevOps Services 組織來解除鎖定 Visual Studio：
+使用與 Microsoft 帳戶、公司或學校帳戶建立關聯的 Visual Studio 訂用帳戶或 Azure DevOps 組織來解除鎖定 Visual Studio：
 
 1. 按一下 IDE 右上角的 [登入] 按鈕 (或移至 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [登入] 按鈕)。
 
-1. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 會尋找與您帳戶相關聯的 Visual Studio 訂用帳戶或 Azure DevOps Services 組織。
+1. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 會尋找與您帳戶建立關聯的 Visual Studio 訂用帳戶或 Azure DevOps 組織。
 
 > [!IMPORTANT]
-> 當您從 [Team Explorer] 工具視窗連線到 Azure DevOps Services 組織時，Visual Studio 會自動尋找相關聯的線上訂用帳戶。 當您連線到 Azure DevOps Services 組織時，您可以使用 Microsoft 帳戶和公司或學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
+> 當您從 [Team Explorer] 工具視窗連線到 Azure DevOps 組織時，Visual Studio 會自動尋找相關聯的線上訂用帳戶。 當您連線到 Azure DevOps 組織時，您可以使用 Microsoft 帳戶和公司或學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 

@@ -1,7 +1,7 @@
 ---
 title: IDebugExtendedField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ace5f36ccebc5861c7fe31bba9be41b35a8fdcf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ea56b3998cb6647e42ae9f24b64f9715010750b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299971"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugExtendedField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugextendedfield)。  
-  
 擴充欄位，可支援 managed 程式碼的泛型的類型。  
   
 ## <a name="syntax"></a>語法  

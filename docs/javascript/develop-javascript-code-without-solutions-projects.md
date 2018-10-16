@@ -2,7 +2,7 @@
 title: 不使用方案或專案在 Visual Studio 中撰寫 JavaScript 程式碼
 description: Visual Studio 提供建立程式碼的支援，而無需依賴專案檔或方案檔
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774597"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168327"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
@@ -28,7 +28,7 @@ Visual Studio 2017 引進了[不使用專案或方案開發程式碼](../ide/dev
 若要開始使用，請從您開啟 Visual Studio 時顯示的起始頁中選取 [開啟資料夾]，也可以從工具列中選取 [檔案] > [開啟] > 資料夾。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
 
 > [!IMPORTANT]
-> 本文中所述的許多功能 (包括 npm 整合) 都需要 Visual Studio 2017 15.8 版 Preview 3。
+> 本文中所述的許多功能 (包括 npm 整合) 都需要 Visual Studio 2017 15.8 版。
 
 ## <a name="npm-integration"></a>npm 整合
 

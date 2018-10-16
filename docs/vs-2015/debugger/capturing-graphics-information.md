@@ -1,7 +1,7 @@
 ---
 title: 擷取圖形資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c3adcfb4da1ddfba51c162fd541bda302bd2d86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289376"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擷取圖形資訊](https://docs.microsoft.com/visualstudio/debugger/graphics/capturing-graphics-information)。  
-  
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。  
   
 ## <a name="capturing-graphics-information"></a>擷取圖形資訊  

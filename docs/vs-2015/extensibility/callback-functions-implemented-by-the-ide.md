@@ -1,7 +1,7 @@
 ---
 title: IDE 所實作的回呼函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2293640ebb0cc788d104f02f790c32bb47ced6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84533d95eb6bc0f6433d0b021d429c13e504c13d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212780"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDE 所實作的回呼函式](https://docs.microsoft.com/visualstudio/extensibility/callback-functions-implemented-by-the-ide)。  
-  
 若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。  
   
  Scc.h 為必要的標頭檔案。 預設位置是 \Program Files\VSIP 8.0\EnvSDK\common\inc\\。 它也會處於 \Program Files\VSIP 8.0\MSSCCI 在有原始檔控制外掛程式範例的 VSIP 資料夾\\。  

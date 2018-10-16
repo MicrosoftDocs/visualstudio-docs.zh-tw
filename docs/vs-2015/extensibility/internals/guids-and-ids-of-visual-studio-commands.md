@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 命令的 Guid 和 Id |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc949b400cc5c6a6efe231dff8f0ae17155ef6e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302441"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Guid 和 Id 的 Visual Studio 命令](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-commands)。  
-  
 已安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 Visual Studio 整合式的開發環境 (IDE) 中包含的命令 GUID 和 ID 值。 如需詳細資訊，請參閱 < [IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
  如需如何使用.vsct 檔案中定義的 IDE 物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  

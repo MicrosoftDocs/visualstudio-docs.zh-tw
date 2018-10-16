@@ -1,7 +1,7 @@
 ---
 title: 檔案追蹤 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40598ba8fbe693d44ee49228a36be75a9e851eea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 179124c09e0846cbbf649a819bd8c954b5a72e7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228185"
 ---
 # <a name="file-tracking"></a>檔案追蹤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檔案追蹤](https://docs.microsoft.com/visualstudio/msbuild/file-tracking)。  
-  
   
 檔案追蹤會記錄對 Windows 檔案系統處理序及其子處理序的呼叫。 呼叫下列函式，程式可以控制此記錄開啟和關閉的時間，並指定要使用的記錄檔。  
   

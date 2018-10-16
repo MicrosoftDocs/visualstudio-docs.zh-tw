@@ -1,7 +1,7 @@
 ---
 title: 呼叫樹狀結構檢視 - .NET 記憶體檢測資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7192ebc341c471cf164ca3f54bcbbd15c9224d11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af70592ef3d0c9365732c9964872b03fa4328a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205149"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫樹狀圖檢視-.NET 記憶體檢測資料](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-instrumentation-data)。  
-  
 使用檢測方法收集的 .NET 記憶體配置分析資料的 [呼叫樹狀結構] 檢視，會顯示在分析應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及 .NET 記憶體和函式的計時資料。  
   
  [呼叫樹狀圖] 檢視中的值，適用於呼叫樹狀圖中父函式所呼叫的函式執行個體。 百分比值的計算方式是比較函式執行個體值與分析執行中的總配置數目或大小。  

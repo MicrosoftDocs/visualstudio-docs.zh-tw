@@ -1,7 +1,7 @@
 ---
 title: 從命令列使用程式碼剖析方法收集效能資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cfb82c00c0a20c490aa3b5e5a9f78bf2384a40c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c86132b2ad4677733eebbb50c78f185ff0c9871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175361"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>從命令列使用程式碼剖析方法收集效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用程式碼剖析方法收集效能資料從命令列](https://docs.microsoft.com/visualstudio/profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line)。  
-  
 您選擇的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具命令列工具與選項，取決於像是您要進行程式碼剖析的應用程式類型、您想要使用的程式碼剖析方法以及目標應用程式是否以原生或 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 程式碼撰寫等因素。  
   
  本主題根據您選擇的程式碼剖析方法來組織命令列程序性主題。  

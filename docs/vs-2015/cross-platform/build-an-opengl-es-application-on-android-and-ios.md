@@ -1,7 +1,7 @@
 ---
 title: 在 Android 和 iOS 上建置 OpenGL ES 應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 499349b6599eed9c4677d9b667c044efae2dec18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1679884d79ee6c3e81af847a68338a93876c03d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193969"
 ---
-# <a name="build-an-opengl-es-application-on-android-and-ios"></a>在 Android 和 iOS 上建置 OpenGL ES 應用程式
+# <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Android 和 iOS 上建置 OpenGL ES 應用程式](https://docs.microsoft.com/visualstudio/cross-platform/build-an-opengl-es-application-on-android-and-ios)。  
-  
   
 當您安裝適用於跨平台行動裝置開發的 Visual C++ 選項時，您可以為 iOS 應用程式和 Android 應用程式，建立共用通用程式碼的 Visual Studio 方案和專案。 本主題引導您完成可建立一個簡單的 iOS 應用程式和一個 Android Native Activity 應用程式的方案範本。 這兩個應用程式有通用的 C++ 程式碼，該程式碼使用 OpenGL ES 在每個平台上顯示相同的動畫旋轉立方體。 OpenGL ES (適用於內嵌系統的 OpenGL 或 GLES) 是受到許多行動裝置支援的 2D 和 3D 圖形 API。  
   

@@ -1,7 +1,7 @@
 ---
 title: '&lt;trustInfo&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dd14e5bf24262d7f6c16245c74d093ca556cc2fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175561"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;trustInfo&gt;項目 （ClickOnce 應用程式）](https://docs.microsoft.com/visualstudio/deployment/trustinfo-element-clickonce-application)。  
-  
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。  
   
 ## <a name="syntax"></a>語法  
@@ -279,7 +277,7 @@ ms.locfileid: "47489976"
   
 ## <a name="see-also"></a>另請參閱  
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

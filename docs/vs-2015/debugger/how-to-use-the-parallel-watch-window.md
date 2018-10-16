@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用平行監看式視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88c4efe15e2afd3f4158b93cf8701109cd3902b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249427"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>如何：使用平行監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[平行執行緒中的變數上設定監看式](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-parallel-watch-window)。  
-  
 在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行所示**平行監看式**視窗：  
   
 -   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  

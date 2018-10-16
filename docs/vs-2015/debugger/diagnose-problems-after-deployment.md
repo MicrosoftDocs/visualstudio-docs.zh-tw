@@ -1,7 +1,7 @@
 ---
 title: 在部署後診斷問題 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270591"
 ---
 # <a name="diagnose-problems-after-deployment"></a>於部署後診斷問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在部署後診斷問題](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment)。  
-  
 若要在部署後使用 IntelliTrace 診斷 ASP.NET Web App 中的問題，請包含組建資訊和版本，讓 Visual Studio 自動找出偵錯 IntelliTrace 記錄檔所需的正確原始程式檔和符號檔案。  
   
  如果使用 Microsoft Monitoring Agent 來控制 IntelliTrace，您也需要在 Web 伺服器上設定應用程式效能監視。 此功能會記錄 App 執行時的診斷事件，並將這些事件儲存至 IntelliTrace 記錄檔。 您可以接著在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中檢視這些事件、移至發生事件的程式碼、檢視當時記錄的值，以及前後移動瀏覽執行的程式碼。 在您找到並修正問題之後，請重複建置、發行和監視發行的循環，以更早、更快解決未來可能發生的問題。  
@@ -63,7 +61,7 @@ ms.locfileid: "47486795"
   
      ![設定組建定義 TFS 2013 中的符號路徑](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     如需有關符號的詳細資訊，請參閱[發行符號資料](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     如需更多關於符號的資訊，請參閱 [發佈符號資料](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
 4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：  
   
@@ -156,7 +154,7 @@ ms.locfileid: "47486795"
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
   
 ## <a name="step-3-monitor-your-app"></a>步驟 3：監視 App  
- 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱[監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+ 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱 [監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
 ##  <a name="InvestigateEvents"></a> 步驟 4： 找出問題  
  您需要在開發電腦或其他電腦上安裝 Visual Studio Enterprise，才能檢閱記錄的事件並使用 IntelliTrace 偵錯程式碼。 您也可以使用 CodeLens、偵錯工具對應和 Code Map 等工具協助診斷問題。  
@@ -227,7 +225,7 @@ ms.locfileid: "47486795"
   
 ###  <a name="WhatElse"></a> 還有什麼可以如何處理？  
   
--   [取得此程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 尋找此程式碼的參考、其變更記錄、相關的 Bug、工作項目、程式碼檢閱或單元測試 - 只要使用編輯器中的 CodeLens 指標，就不需要離開編輯器。  
+-   [取得有關這個程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 尋找此程式碼的參考、其變更記錄、相關的 Bug、工作項目、程式碼檢閱或單元測試 - 只要使用編輯器中的 CodeLens 指標，就不需要離開編輯器。  
   
      ![CodeLens&#45;檢視參考此程式碼](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
@@ -311,7 +309,7 @@ ms.locfileid: "47486795"
   
      您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：  
   
-    -   **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱[使用組建編號提供有意義的名稱給已完成的組建](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+    -   **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
     -   **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。  
   
@@ -371,7 +369,7 @@ ms.locfileid: "47486795"
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 ####  <a name="WhatWorkspace"></a> 問： 什麼是工作區？  
- **答：** 您[工作區會儲存一份來源](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，您可以開發及個別測試之前您簽入您的工作。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
+ **答：** 您的 [工作區用於儲存來源的複本](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
   
 ####  <a name="UntrustedSymbols"></a> 問： 為什麼取得此訊息不受信任的符號相關？  
  ![使用不受信任的符號路徑進行偵錯嗎？](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

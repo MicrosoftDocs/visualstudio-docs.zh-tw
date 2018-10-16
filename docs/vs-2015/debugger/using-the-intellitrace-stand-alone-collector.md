@@ -1,7 +1,7 @@
 ---
 title: 使用 IntelliTrace 獨立收集器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490510"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267471"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 IntelliTrace 獨立收集器](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。  
-  
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。  
   
  觀看 IntelliTrace 實際操作： [收集和分析生產環境中的 IntelliTrace 資料以進行偵錯 (Channel 9 影片)](http://go.microsoft.com/fwlink/?LinkID=251851)  
@@ -390,7 +388,7 @@ ms.locfileid: "47490510"
   
 -   從 偵錯在 Visual Studio Enterprise 中的工作階段的 IntelliTrace，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
--   從 Microsoft Test Manager 中的測試工作階段，請參閱[如何： 收集 IntelliTrace 資料以協助偵錯的困難問題](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。  
+-   從 Microsoft Test Manager 中的測試工作階段，請參閱 [如何：收集 IntelliTrace 資料以協助偵錯困難的問題](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。  
   
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？  
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)  

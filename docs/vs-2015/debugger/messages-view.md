@@ -1,7 +1,7 @@
 ---
 title: 訊息檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182087"
 ---
 # <a name="messages-view"></a>訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[訊息檢視](https://docs.microsoft.com/visualstudio/debugger/messages-view)。  
-  
 每個視窗都具有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送給特定的處理程序或特別適用於擷取視窗初始化訊息的執行緒所擁有的所有視窗的訊息。  
   
  一般的 [訊息] 檢視視窗會出現下方。 請注意，第一個資料行包含視窗控制代碼，而第二個資料行包含訊息碼 (中所述[訊息碼](../debugger/message-codes.md))。 已解碼的訊息參數和傳回值會在右邊。  

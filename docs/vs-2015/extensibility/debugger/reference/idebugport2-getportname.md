@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetPortName |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9748dd309b4714dff0ece0d3a079d18ce256c613
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1787cabbf991b05fde5ee5c93558d8f1c293fc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276480"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugPort2::GetPortName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-getportname)。  
-  
 取得的連接埠名稱。  
   
 ## <a name="syntax"></a>語法  

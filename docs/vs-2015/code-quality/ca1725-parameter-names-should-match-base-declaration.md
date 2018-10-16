@@ -1,7 +1,7 @@
 ---
 title: CA1725： 參數名稱應該符合基底宣告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 20a7e5f0239d572ec1867ffdac80f116cfd8360a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a7ee2253d01f219bb427d3b23d67112c13c71a86
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206891"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725：參數名稱應該符合基底宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1725： 參數名稱應該符合基底宣告](https://docs.microsoft.com/visualstudio/code-quality/ca1725-parameter-names-should-match-base-declaration)。
-
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|

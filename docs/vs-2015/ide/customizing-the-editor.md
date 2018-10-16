@@ -1,7 +1,7 @@
 ---
 title: 自訂編輯器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259312"
 ---
 # <a name="customizing-the-editor"></a>自訂編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[來自訂編輯器](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor)。  
-  
 您可以自訂格式設定、索引標籤、字型和色彩、IntelliSense，以及編輯器的許多其他功能，並透過變更選項指定一般或特定語言編輯器。 如需這些選項的詳細資訊，請參閱[文字編輯器選項對話方塊](../ide/reference/text-editor-options-dialog-box.md)或在 [QuickLaunch] 中鍵入 `Editor`。 您也可以變更編輯器視窗的顯示方式。  
   
 ## <a name="in-this-section"></a>本節內容  

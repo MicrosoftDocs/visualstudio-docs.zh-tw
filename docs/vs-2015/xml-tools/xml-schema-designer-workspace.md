@@ -1,7 +1,7 @@
 ---
 title: XML 結構描述設計工具工作區 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240951"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 結構描述設計工具工作空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[XML 結構描述設計工具工作空間](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace)。  
-  
   
 XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可協助您瀏覽 XML 結構描述。 除了[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋，XSD 設計工具提供可讓您瀏覽 XSD 結構描述更詳細的三個檢視。 開始檢視是 XSD 設計工具的啟動點，您可以從開始檢視巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資訊。 圖表檢視可讓您查看結構描述集的概觀，以及結構描述節點之間的關聯性。 內容模型檢視提供區域和全域結構描述節點詳細資訊的圖形表示，包括簡單和複雜型別、項目、群組、屬性和屬性群組。  
   

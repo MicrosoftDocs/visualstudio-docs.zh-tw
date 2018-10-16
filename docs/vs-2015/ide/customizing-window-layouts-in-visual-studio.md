@@ -1,7 +1,7 @@
 ---
 title: 自訂 Visual Studio 中的視窗版面配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7f581c920a0f42105c1409e320b941a12dbc5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218812"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂視窗版面配置，在 Visual Studio 中的](https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio)。  
-  
 在 Visual Studio 中，您可自訂視窗的位置、大小和行為，以建立最適合各種開發工作流程的視窗版面配置。 IDE 會記住您自訂的版面配置。 例如，若您變更 [方案總管]  的固定位置，然後再關閉 Visual Studio，則下次啟動時即使您在另一台電腦上操作，[方案總管]  亦會固定於相同位置。 您亦可命名和儲存自訂配置，然後使用單一命令切換各個配置。 例如，您可以建立一個編輯配置和一個偵錯配置，然後使用 [視窗] &#124; [套用視窗配置] 功能表命令在兩者間切換。  
   
 ## <a name="kinds-of-windows"></a>視窗種類  

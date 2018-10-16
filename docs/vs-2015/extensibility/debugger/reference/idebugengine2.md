@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b3b6f9ba7a88d1babc60a092e4703b99d20b64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4c868b9cda8d74a1d2cc243768737b1b75565e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188311"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngine2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2)。  
-  
 這個介面會表示偵錯引擎 (DE)。 它用來管理各方面的偵錯工作階段中，從建立中斷點，設定及清除例外狀況。  
   
 ## <a name="syntax"></a>語法  

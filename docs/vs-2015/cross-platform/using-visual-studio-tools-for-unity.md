@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio Tools for Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199208"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Visual 的 Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity)。  
-  
   
 在本節中，您將了解如何使用 Visual Studio Tools for Unity 的整合和產能功能，以及如何針對 Unity 開發使用 Visual Studio 偵錯工具。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47588788"
 |開啟 Quick MonoBehavior 精靈|**Ctrl+Shift+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |開啟 Unity Project Explorer|**Alt+Shift+E**|**View.UnityProjectExplorer**|  
 |存取 Unity 文件|**Ctrl+Alt+M、Ctrl+H**|**Help.UnityAPIReference**|  
-|附加至 Unity 偵錯工具 (播放器或編輯器)|**_沒有預設值_**|**Debug.AttachUnityDebugger**|  
+|附加至 Unity 偵錯工具 (播放器或編輯器)|**無預設值**|**Debug.AttachUnityDebugger**|  
   
  如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](https://msdn.microsoft.com/library/5zwses53.aspx)。  
   

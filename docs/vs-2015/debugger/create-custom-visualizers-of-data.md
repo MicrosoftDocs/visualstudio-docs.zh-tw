@@ -1,7 +1,7 @@
 ---
 title: 建立資料的自訂視覺化檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217629"
 ---
 # <a name="create-custom-visualizers-of-data"></a>建立資料的自訂視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立自訂視覺化檢視資料的](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)。  
-  
 視覺化檢視是元件[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]偵錯工具使用者介面。 A*視覺化檢視*建立對話方塊或其他介面來顯示變數或物件的方式，是適用於其資料類型。 例如，HTML 視覺化檢視會解譯 HTML 字串，並在瀏覽視窗中顯示出現的結果，而點陣圖視覺化檢視會解譯點陣圖結構，並顯示其所代表的圖形。 除了檢視資料外，有些視覺化檢視也能讓您修改資料。  
   
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 偵錯工具包含六個標準視覺化檢視。 這些是文字、 HTML、 XML 及 JSON 視覺化檢視，當然也作用於字串物件;WPF 樹狀架構視覺化檢視，來顯示 WPF 物件視覺化樹狀結構; 屬性和資料集視覺化檢視，這適用於資料集、 DataView 和 DataTable 物件。 額外的視覺化檢視未來可能可以從 Microsoft Corporation 下載，且可從協力廠商和社群取得。 此外，您可以自行撰寫視覺化檢視，並將它們安裝至 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 偵錯工具中。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e14944157a14be4a5e06c26464a4de2cdb2bff1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247204"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms)。  
-  
   
 本逐步解說示範如何建立簡單的 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 服務、予以測試，然後從 Windows Form 應用程式加以存取。  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionContext2::ParseText |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9658d2962d99d6fbb72b0df813e1c3bd420c46cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 707c8dd7d6e690c621c9c6c00db61be8dc291095
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214951"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugExpressionContext2::ParseText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressioncontext2-parsetext)。  
-  
 剖析文字格式，供稍後評估的運算式。  
   
 ## <a name="syntax"></a>語法  

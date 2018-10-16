@@ -1,7 +1,7 @@
 ---
 title: 所有規則都規則集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67acfe8c77159bb491cc44da8adb86d5c2271d80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2afe335fe77293cc690dcd6ea5a2cf491281dbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233489"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[所有規則都規則集](https://docs.microsoft.com/visualstudio/code-quality/all-rules-rule-set)。  
-  
 所有規則規則集包含的所有原生和 managed 程式碼的規則。 規則集包含下列主題中所描述的所有規則：  
   
 1.  [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)  

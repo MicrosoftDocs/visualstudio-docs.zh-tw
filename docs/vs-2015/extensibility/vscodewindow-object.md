@@ -1,7 +1,7 @@
 ---
 title: VSCodeWindow 物件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17dd907bf041f37c4273548f0793b26625a34e3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12752b015bc8e3f69002fd8732622fc11eface65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259372"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSCodeWindow 物件](https://docs.microsoft.com/visualstudio/extensibility/vscodewindow-object)。  
-  
 程式碼視窗是一種特殊的文件視窗，通常可以包含一或多個文字檢視，<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>物件。  
   
  在架構上，程式碼視窗會在視窗框架內的文件視窗。 在功能上，程式碼視窗只是文件視窗以及額外的功能。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。 如需詳細資訊，請參閱 <<c0> [ 使用舊版 API 的自訂程式碼 Windows](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  

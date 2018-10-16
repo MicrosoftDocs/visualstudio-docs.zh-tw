@@ -1,7 +1,7 @@
 ---
 title: IDebugEventCallback2::Event |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cddaa351ed406299d5ddf1247025f5d442fb3d3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64bd10dffeee90bc1f74e120eee1d831659390df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246972"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEventCallback2::Event](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugeventcallback2-event)。  
-  
 傳送通知的偵錯事件。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 擴充方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4b9c2733a63e054037fde230dd67204cb427b33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 439ea435805b1b4c235874a09bb6835e58f15a05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252716"
 ---
 # <a name="extending-solutions"></a>延伸方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充解決方案](https://docs.microsoft.com/visualstudio/extensibility/extending-solutions)。  
-  
 解決方案是建立應用程式一起運作的一或多個專案的群組。  
   
 ## <a name="in-this-section"></a>本節內容  

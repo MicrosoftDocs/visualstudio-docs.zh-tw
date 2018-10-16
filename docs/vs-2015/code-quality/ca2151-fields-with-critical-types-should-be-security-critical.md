@@ -1,7 +1,7 @@
 ---
 title: CA2151： 具有關鍵類型的欄位應為安全性關鍵 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,15 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2ce99a404dacdbcc82c628f8f682c53883948ff
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e2627c13f496623d281ed5e3c486592b2a4de6e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47588952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253515"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有關鍵類型的欄位應為安全性關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2151： 具有關鍵類型的欄位應為安全性關鍵](https://docs.microsoft.com/visualstudio/code-quality/ca2151-fields-with-critical-types-should-be-security-critical)。
-
 |||
 |-|-|
 |TypeName||

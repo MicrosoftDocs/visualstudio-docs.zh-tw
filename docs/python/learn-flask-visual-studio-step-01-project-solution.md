@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283414"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029062"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -36,7 +36,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 在這些步驟的整個過程中，您會建立包含三個個別專案的單一 Visual Studio 解決方案。 您會使用 Visual Studio 隨附的不同 Flask 專案範本來建立專案。 透過將專案保留在同一個解決方案中，可讓您輕鬆地來回切換，比較不同的檔案。
 
 > [!Note]
-> 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?context=visualstudio/python/default)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
+> 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
 ## <a name="prerequisites"></a>必要條件
 

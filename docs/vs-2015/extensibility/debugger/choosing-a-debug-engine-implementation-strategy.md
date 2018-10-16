@@ -1,7 +1,7 @@
 ---
 title: 選擇 偵錯引擎的實作策略 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a9e449fddad18c3ff0e95786ab852745407e6a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 662102fbf74d9721fc8a93d85f5f8e694fba7ccd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212364"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>選擇偵錯引擎的實作策略
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選擇 偵錯引擎的實作策略](https://docs.microsoft.com/visualstudio/extensibility/debugger/choosing-a-debug-engine-implementation-strategy)。  
-  
 您可以使用執行階段架構來判斷您偵錯引擎 (DE) 的實作策略。 偵錯引擎可能會建立同處理序程式偵錯，內含於 Visual Studio 工作階段偵錯管理員 (SDM) 或外處理到這兩者。 下列指導方針應可協助您選擇下列三個策略。  
   
 ## <a name="guidelines"></a>方針  

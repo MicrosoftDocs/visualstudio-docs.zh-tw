@@ -1,7 +1,7 @@
 ---
 title: 加入功能表中的子功能表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d34c0402eeb963cfb49ab3a890a97e77b625a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199117"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>將子功能表新增至功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[子功能表加入功能表](https://docs.microsoft.com/visualstudio/extensibility/adding-a-submenu-to-a-menu)。  
-  
 本逐步解說是根據在示範[將功能表加入至 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)示範如何以新增至子功能表**TestMenu**功能表。  
   
  子功能表時出現在另一個功能表中的次要功能表。 可以由其名稱後面的箭號識別子功能表。 按一下名稱，會導致子功能表和它要顯示的命令。  

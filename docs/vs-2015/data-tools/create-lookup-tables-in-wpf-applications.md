@@ -1,7 +1,7 @@
 ---
 title: 在 WPF 應用程式中建立查閱資料表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303338"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WPF 應用程式中建立查閱資料表](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications)。  
-  
   
 詞彙*查閱資料表*(有時也稱為*查閱繫結*) 描述會顯示資訊從一個資料表，根據另一個資料表中的外部索引鍵欄位值的控制項。 您可以藉由拖曳父資料表的主要節點建立查閱資料表或物件**Zdroje dat**視窗拖曳至已繫結至資料行或屬性相關的子資料表中的控制項。  
   
@@ -46,7 +44,7 @@ ms.locfileid: "47488226"
   
 1.  將下列一種類型的相關資料的資料來源新增至您的專案：  
   
-    -   資料集或實體資料模型。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料庫中的資料](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+    -   資料集或實體資料模型。 如需詳細資訊，請參閱 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
   
     -   WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   

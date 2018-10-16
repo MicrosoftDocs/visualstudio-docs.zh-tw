@@ -1,7 +1,7 @@
 ---
 title: 部署圖層模型擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5d581ca67a2d3fde5b7acab5937d1aedf88cfa4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291849"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[部署圖層模型擴充功能](https://docs.microsoft.com/visualstudio/modeling/deploy-a-layer-model-extension)。  
-  
 其他 Visual Studio 使用者可以安裝您使用 Visual Studio 建立的圖層模型擴充功能。  
   
 ## <a name="installing-your-extension"></a>安裝您的擴充功能  

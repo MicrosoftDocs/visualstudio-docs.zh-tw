@@ -1,7 +1,7 @@
 ---
 title: IDebugContainerField |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a911fe64f397a3a671787db00877a07f5ed1ccaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49eadec53bd100b4413748be8a77cdf47996f369
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280393"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugContainerField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcontainerfield)。  
-  
 這個介面會表示符號或其他符號或類型的容器型別。  
   
 ## <a name="syntax"></a>語法  

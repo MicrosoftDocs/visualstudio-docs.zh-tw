@@ -1,7 +1,7 @@
 ---
 title: 使用偵錯工具管理例外狀況 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285918"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Visual Studio 偵錯工具管理例外狀況](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger)。  
-  
 例外狀況是程式執行時發生之錯誤狀態的指示。 您可以也應該提供可對最重要例外狀況回應的處理常式，但請務必了解如何設定偵錯工具以針對您想要查看的例外狀況來中斷。  
   
  發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 在下列情況下，它可能會中斷執行：  
@@ -58,7 +56,7 @@ ms.locfileid: "47490501"
   
 -   當偵錯工具設定為在叫用任何處理常式之前就已擲回例外狀況時，立即中斷執行。  
   
--   如果您已將[Just My Code](../debugger/just-my-code.md)，而偵錯工具會設定為任何使用者程式碼中未處理的例外狀況中斷。  
+-   如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
   
 > [!NOTE]
 >  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  

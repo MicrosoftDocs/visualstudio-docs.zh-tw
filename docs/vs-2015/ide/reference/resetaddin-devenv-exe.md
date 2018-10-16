@@ -1,7 +1,7 @@
 ---
 title: -ResetAddin (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f306e6952b5cf0d41901b85e554cfc3f444dbb00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df5fe62efd783551a483853543ddb30312e64c65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213664"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[-ResetAddin (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/resetaddin-devenv-exe)。  
-  
   
 移除與所指定增益集相關聯的命令和命令 UI。  
   

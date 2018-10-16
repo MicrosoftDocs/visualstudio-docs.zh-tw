@@ -1,7 +1,7 @@
 ---
 title: 如何：參考專案檔的名稱或位置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834622204249eac33bae6e67dc51f4ff98a9135
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc4da4df18c2a214372ec6ea67865c10c507677e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296006"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 參考的名稱或專案檔的位置](https://docs.microsoft.com/visualstudio/msbuild/how-to-reference-the-name-or-location-of-the-project-file)。  
-  
   
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
@@ -84,7 +82,7 @@ ms.locfileid: "47496566"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[ MSBuild](msbuild.md)  
+[MSBuild](msbuild.md)  
  [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
 
 

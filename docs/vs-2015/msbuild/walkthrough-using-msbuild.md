@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用 MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dc173f438af65d6952d0d5df8adecd56530c801
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266691"
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用 MSBuild](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild)。  
-  
   
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：  
   
@@ -48,7 +46,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
+3.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
   
      按一下 [確定] 以建立專案檔。  
   

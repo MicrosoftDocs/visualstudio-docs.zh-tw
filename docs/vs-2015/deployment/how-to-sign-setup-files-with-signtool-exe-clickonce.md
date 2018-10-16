@@ -1,7 +1,7 @@
 ---
 title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ad234b1c21030032428265e9c03528a165cba8c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179305"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用 SignTool.exe (ClickOnce) 簽署安裝程式檔案](https://docs.microsoft.com/visualstudio/deployment/how-to-sign-setup-files-with-signtool-exe-clickonce)。  
-  
 您可以使用 SignTool.exe 簽署安裝程式 (setup.exe)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  
   
  根據預設，ClickOnce 具有已簽署的資訊清單和已簽署的安裝程式。 不過，如果您稍後要變更安裝程式的參數，就必須在稍後簽署安裝程式。 如果在簽署安裝程式之後變更參數，簽章會損毀。  

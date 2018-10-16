@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f59c551e335d013f6fb004ece1f6a107a5b8de33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c0cebe240956cda7c32aa7326382cc216debcf2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243668"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[CONNECTION_PROTOCOL](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/connection-protocol)。  
-  
 表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
   
 ## <a name="syntax"></a>語法  

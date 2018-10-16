@@ -1,7 +1,7 @@
 ---
 title: 屬性函式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cde6aaaef0f5db8c346194eb0b757b15726edef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed1496eb5519b315d2a52e500cb9cfd916fa248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250506"
 ---
 # <a name="property-functions"></a>屬性函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性函式](https://docs.microsoft.com/visualstudio/msbuild/property-functions)。  
-  
   
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。  
   

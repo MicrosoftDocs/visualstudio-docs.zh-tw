@@ -1,7 +1,7 @@
 ---
 title: 命令 Interop 組件中的合約 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a5e2a7abb298aa43aefbf3f04c048c5928bd555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ce0eecd5bb231af12d4007f02e729560970453
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303013"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 組件中的命令合約
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Interop 組件中的命令合約](https://docs.microsoft.com/visualstudio/extensibility/internals/command-contracts-in-interop-assemblies)。  
-  
 處理命令，透過的基本合約<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面是環境呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法以判斷是否支援該命令，如果支援，以判斷其狀態和文字。 接著，環境會呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法來執行命令。  
   
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法會處理相同的所有命令。 其他的通訊，如有必要 （例如，使用下拉式清單中），由呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>搭配適當參數的方法。 這些參數的解譯取決於指定的命令。  

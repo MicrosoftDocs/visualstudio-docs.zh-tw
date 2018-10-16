@@ -1,7 +1,7 @@
 ---
 title: 步驟 2：執行您的程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3312f5017344e4a4710a330750c86727d097c15c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242186"
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行您的程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 2： 執行您的程式](https://docs.microsoft.com/visualstudio/ide/step-2-run-your-program)。  
-  
 當您建立新的方案時，實際上就是建置要執行的程式。 它現在還沒有其他功能，只是顯示空白視窗，標題列中顯示 **Form1**。 但它真的可以執行，因為您即將進一步了解其做法。  
   
  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或 [教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  

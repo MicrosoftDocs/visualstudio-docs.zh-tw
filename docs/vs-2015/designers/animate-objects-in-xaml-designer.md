@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 設計工具中製作物件動畫 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 481ba0f156f6ea6cc43d9df19eedcb84ab864cbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230076"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[以動畫顯示 XAML 設計工具中的物件](https://docs.microsoft.com/visualstudio/designers/animate-objects-in-xaml-designer)。  
-  
 您可以建立可移動物件或讓物件淡入和淡出的簡短動畫。  
   
  若要開始使用，請建立 *「分鏡腳本」*(storyboard)。 分鏡腳本包含一個或多個 *「時間軸」*(timeline)。 設定時間軸上的 *「主要畫面格」* (keyframe) 以標示屬性變更。 然後在執行動畫時，Blend 會在指定時段上插補屬性變更。 結果是平順地轉場。 您可以製作物件所屬任何屬性的動畫，包括非視覺屬性。  

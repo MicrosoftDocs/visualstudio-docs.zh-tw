@@ -1,7 +1,7 @@
 ---
 title: 進階建置設定對話方塊 (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a793d20a8d8e0a2773756da32ea252ef200e36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca6c3c588b6434479e0ff44de4910cdc0a56be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187170"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[進階建置設定對話方塊 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/advanced-build-settings-dialog-box-csharp)。  
-  
   
 您可以使用 [專案設計工具] 的 [進階建置設定] 對話方塊，來指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案。  
   

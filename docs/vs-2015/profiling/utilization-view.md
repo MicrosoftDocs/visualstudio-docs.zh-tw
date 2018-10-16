@@ -1,7 +1,7 @@
 ---
 title: 使用率檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22aa839347a6f9ba99926ad90939f3b93d5c40be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d97037974c4a416a7d558f7eee85c3b835db8698
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198727"
 ---
 # <a name="utilization-view"></a>使用率檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用率檢視](https://docs.microsoft.com/visualstudio/profiling/utilization-view)。  
-  
 [使用率檢視] 顯示目前處理序使用的 CPU、GPU 及其他系統資源的相關資訊。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。  
   
  ![CPU 使用率檢視](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  

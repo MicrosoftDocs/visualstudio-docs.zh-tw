@@ -1,7 +1,7 @@
 ---
 title: 錯誤： 非驗證防火牆 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca0d4421cb8b8b5e720ca079547f13ec75e3705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8907dac5310e2f70ff5a7053cc564e72b0b2cd98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186039"
 ---
 # <a name="error-firewall-no-authentication"></a>錯誤：非驗證防火牆
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： 防火牆不需要驗證](https://docs.microsoft.com/visualstudio/debugger/error-firewall-no-authentication)。  
-  
 遠端機器上的網際網路連線防火牆並未設定允許遠端偵錯。 針對使用 `No Authentication` 的遠端偵錯，msvsmon.exe 必須加入至例外狀況清單。 可能也必須開啟某些 IPSEC 通訊埠。  
   
 > [!NOTE]

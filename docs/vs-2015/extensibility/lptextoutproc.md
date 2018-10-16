@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266940"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc)。  
-  
 當使用者執行從原始檔控制作業，在整合式的開發環境 (IDE) 內時，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 此外掛程式可以針對此目的顯示自己的訊息方塊。 不過，進行更多的無縫整合，外掛程式可以傳遞字串給 IDE，然後顯示其原生方法來顯示狀態資訊。 這個機制是`LPTEXTOUTPROC`函式指標。 IDE 會實作此函式 （在下面詳細說明） 來顯示錯誤和狀態。  
   
  IDE 會傳遞至原始檔控制外掛程式函式指標，此函式，當成`lpTextOutProc`參數，呼叫時[SccOpenProject](../extensibility/sccopenproject-function.md)。 SCC 作業期間，例如，如果呼叫的中間[SccGet](../extensibility/sccget-function.md)牽涉到許多檔案，此外掛程式可以呼叫`LPTEXTOUTPROC`函式，定期傳遞要顯示的字串。 IDE 可能會在狀態列上，在 [輸出] 視窗中，或在個別的訊息方塊中，視需要顯示這些字串。 （選擇性） 在 IDE 可能是能夠顯示與特定訊息**取消** 按鈕。 這可讓使用者取消作業，並提供 IDE 能夠將此資訊傳回給外掛程式。  

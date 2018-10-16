@@ -1,7 +1,7 @@
 ---
 title: 疑難排解例外狀況： System.ServiceModel.Security.MessageSecurityException |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241224"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
@@ -37,7 +37,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
  **解決使用 ASP.Net 程式開發伺服器時的 NTLM 驗證問題。**  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器通常會關閉 Windows NT 挑戰/回應 (NTLM) 安全性，以允許匿名存取。 根據預設，在執行終端機服務工作階段或使用遠端連接時，會啟用 NTLM 安全性。 啟用 NTLM 時，所有 localhost 要求都是針對啟動 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器的使用者或處理序的認證而驗證 (Validate) 的。 這樣會降低安全性威脅。 然而，WCF 也會執行自己的驗證 (Authentication)，且不允許系統管理員以外的帳戶使用 WCF 服務。  
   
- 如果遠端使用者可能執行的網站使用[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]程式開發伺服器同時也使用 Web 服務或 WCF 服務，您可以建立自訂服務繫結或關閉 NTLM 安全性。  
+ 如果遠端使用者可能會透過使用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器執行網站，同時也會使用 Web 服務或 WCF 服務，您可以建立自訂服務繫結或是關閉 NTLM 安全性。  
   
 > [!IMPORTANT]
 >  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  

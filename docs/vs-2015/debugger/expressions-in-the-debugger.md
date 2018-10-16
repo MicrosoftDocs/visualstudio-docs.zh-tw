@@ -1,14 +1,14 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,24 +32,22 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289324"
 ---
 # <a name="expressions-in-the-debugger"></a>偵錯工具中的運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯工具中的運算式](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger)。  
-  
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。  
   
  下列章節會提供有關不同語言之運算式的詳細資料。  
   
 ## <a name="f-expressions-are-not-supported"></a>不支援 F# 運算式  
- 無法辨識 F # 運算式。 如果您正在偵錯 F # 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F # 使用單一 `=`。  
+ 無法辨識 F# 運算式。 如果您正在偵錯 F# 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F# 使用單一 `=`。  
   
 ## <a name="c-expressions"></a>C++ 運算式  
  如需 C++ 中，在運算式中使用內容運算子的相關資訊，請參閱 [Context Operator (C++)](../debugger/context-operator-cpp.md)。  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
- 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當物件實作<xref:System.Dynamic.IDynamicMetaObjectProvider>評估監看式視窗中，節點會加入 動態檢視。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
+ 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
   
  以下是不支援的動態物件功能：  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
- 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當物件實作<xref:System.Dynamic.IDynamicMetaObjectProvider>評估監看式視窗中，節點會加入 動態檢視。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
+ 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
   
  以下是不支援的動態物件功能：  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>另請參閱  
  [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
- [內容運算子 （c + +）](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)
 

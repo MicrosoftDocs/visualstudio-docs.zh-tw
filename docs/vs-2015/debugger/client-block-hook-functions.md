@@ -1,7 +1,7 @@
 ---
 title: 用戶端區塊攔截函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bbfb24566a59047e47090f92a040c3c2fe8a12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b3200f93d5dd969687411f04ddca481ca099e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250681"
 ---
 # <a name="client-block-hook-functions"></a>用戶端區塊攔截函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[用戶端區塊攔截函式](https://docs.microsoft.com/visualstudio/debugger/client-block-hook-functions)。  
-  
 如果您要驗證或報告儲存在 `_CLIENT_BLOCK` 區塊裡的資料內容，您可以撰寫符合這個目的的函式。 您所撰寫的函式，必須與下列在 CRTDBG.H 裡定義的原型類似：  
   
 ```  

@@ -1,7 +1,7 @@
 ---
 title: 工具在登錄中的 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e0d3b3a1d7a91e8d4d7f8fc80e57434df3d4c62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f3ea7aa24a6c049b5cee6e130dee839952bef2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266849"
 ---
 # <a name="tool-windows-in-the-registry"></a>在登錄中的工具 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在登錄中的工具 Windows](https://docs.microsoft.com/visualstudio/extensibility/tool-windows-in-the-registry)。  
-  
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]做為工具視窗提供者。 使用 Visual Studio Package 範本所建立的工具視窗會依預設此進行。 工具視窗提供者都有系統的登錄機碼指定可見性屬性，例如工具視窗的預設大小和位置，做為工具視窗窗格中，並停駐樣式的視窗的 GUID。  
   
  在開發期間，受管理的工具視窗提供者會透過將屬性加入至原始程式碼，並在產生的組件上執行 RegPkg.exe 公用程式註冊工具視窗。 如需詳細資訊，請參閱 <<c0> [ 註冊的工具視窗](../extensibility/registering-a-tool-window.md)。  

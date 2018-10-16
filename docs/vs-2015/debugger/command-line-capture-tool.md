@@ -1,7 +1,7 @@
 ---
 title: 命令列擷取工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2c646af7102bd6a5017b1afb522448d4e6b1d8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210537"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令列擷取工具](https://docs.microsoft.com/visualstudio/debugger/graphics/command-line-capture-tool)。  
-  
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。  
   
 ## <a name="syntax"></a>語法  

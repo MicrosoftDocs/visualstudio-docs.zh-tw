@@ -1,7 +1,7 @@
 ---
 title: 設定目前處理序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5281d1c0d926d8d6acdedf323649216c74a4cab9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0baea39c341e8034ff222de32548d0518f115e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246658"
 ---
 # <a name="set-current-process"></a>設定目前處理序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定目前的處理序](https://docs.microsoft.com/visualstudio/ide/reference/set-current-process)。  
-  
   
 將指定的處理序設為偵錯工具中的使用中處理序。  
   
@@ -54,7 +52,7 @@ Debug.SetCurrentProcess index
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

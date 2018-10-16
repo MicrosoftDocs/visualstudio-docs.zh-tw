@@ -1,7 +1,7 @@
 ---
 title: 選項對話方塊、環境、文件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bdb4133e25e4b10933d901a7e607cd03113702ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246203"
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[選項對話方塊、 環境、 文件](https://docs.microsoft.com/visualstudio/ide/reference/documents-environment-options-dialog-box)。  
-  
   
 使用 [選項] 對話方塊的這個頁面，即可控制整合式開發環境 (IDE) 中的文件顯示，以及管理文件和檔案的外部變更。 按一下 [工具] 功能表上的 [選項]，然後選取 [環境] 節點中的 [文件]，即可存取此對話方塊。 如果 [文件] 未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   

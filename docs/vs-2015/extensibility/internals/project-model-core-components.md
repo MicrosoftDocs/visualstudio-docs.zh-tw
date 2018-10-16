@@ -1,7 +1,7 @@
 ---
 title: 專案模型的核心元件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283331"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案模型的核心元件](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components)。  
-  
 下表會探討專案模型。 這些表格會顯示在模型中的介面和特定物件相關聯的服務中所識別的服務與介面的簡短描述。 此外，資料表將詳細說明其他在專案建立及維護，根據您的特定專案類型的需求中是選擇性的介面。  
   
  如需詳細資訊，請參閱 <<c0> [ 支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。  

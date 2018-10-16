@@ -1,7 +1,7 @@
 ---
 title: 步驟 8：自訂測驗 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e630a3d065e196d33919045316fad27c912750
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260139"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 8： 自訂測驗](https://docs.microsoft.com/visualstudio/ide/step-8-customize-the-quiz)。  
-  
 在本教學課程的最後一部分，您將探索一些方法來自訂測驗，以及延伸您已經學習過的內容。 例如，請了解程式如何建立答案絕不是分數的隨機除法問題。 若要深入了解，請將 `timeLabel` 控制項轉換為不同的色彩，並提供受測者的提示。  
   
 ### <a name="to-customize-the-quiz"></a>自訂測驗  

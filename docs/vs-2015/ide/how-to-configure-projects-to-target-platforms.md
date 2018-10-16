@@ -1,7 +1,7 @@
 ---
 title: 如何：將專案設定成以平台為目標 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a79b32583b130b62dc9946acd71776ac67159817
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294511"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[How to: Configure Projects to 目標平台](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-platforms)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>利用組態管理員設定平台的目標  

@@ -1,7 +1,7 @@
 ---
 title: 使用案例圖中的 UML 項目屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd23baadfca51bf669336ab96bf00ee5d4594a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a498b31b6b0585285868d4a6668825db6543aced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491608"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251130"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>UML 使用案例圖上的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性中的項目 UML 使用案例圖](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-use-case-diagrams)。  
-  
 在 UML 使用案例圖中，圖表上的每個項目都會有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]

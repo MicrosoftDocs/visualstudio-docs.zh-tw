@@ -1,7 +1,7 @@
 ---
 title: 針對分層圖擴充功能進行疑難排解 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250064"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>分層圖擴充功能疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[相依性圖表的擴充功能疑難排解](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams)。  
-  
 本主題說明當您建立圖層模型擴充功能時可能遇到的一些問題。  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>當我按下 F5 偵錯擴充功能時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗執行個體的分層圖上沒有出現我的命令、軌跡處理常式、驗證擴充功能或自訂屬性。  

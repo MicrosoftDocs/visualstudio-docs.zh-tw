@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 顯示成對大括弧 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247828"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>逐步解說︰顯示成對括弧
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 顯示比對括號](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces)。  
-  
 您可以實作語言為基礎的功能，例如由定義要比對，在大括的號和時插入號是其中一個大括號，然後將文字標記標記新增至對稱的括號比對的大括號。 您可以定義大括號內容中的一種語言，或您可以定義您自己的檔案名稱擴充功能和內容類型，並將標籤套用到只是該類型，或您可以將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -36,7 +34,7 @@ ms.locfileid: "47485400"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立編輯器分類器專案。 將方案命名為`BraceMatchingTest`。  
+1.  建立編輯器分類器專案。 將方案命名為 `BraceMatchingTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   

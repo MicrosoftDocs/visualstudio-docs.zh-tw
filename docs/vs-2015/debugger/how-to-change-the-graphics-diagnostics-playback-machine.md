@@ -1,7 +1,7 @@
 ---
 title: 如何： 變更圖形診斷播放電腦 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33d2acc46cbf92c9b2bbd699903ad3169661a54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 327dd9c14c4bbfe2b5c37cbe26823d8bd02c76ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274465"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：變更圖形診斷播放電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 變更圖形診斷播放電腦](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine)。  
-  
 您可以播放圖形資訊使用本機電腦，或使用遠端電腦或裝置。  
   
 ## <a name="choosing-a-playback-machine"></a>選擇播放電腦  

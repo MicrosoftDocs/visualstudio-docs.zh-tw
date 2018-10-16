@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立的 Atom 摘要私用組件庫 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6d46129a77d0d6e0b764f2921dce77014b865f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260034"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 建立的 Atom 摘要私用組件庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立私用組件庫的 Atom 摘要](https://docs.microsoft.com/visualstudio/extensibility/how-to-create-an-atom-feed-for-a-private-gallery)。  
-  
 您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
   
 ## <a name="creating-an-atom-feed"></a>建立 Atom 摘要  

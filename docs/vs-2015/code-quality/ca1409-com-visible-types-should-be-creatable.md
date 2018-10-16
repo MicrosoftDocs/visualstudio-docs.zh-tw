@@ -1,7 +1,7 @@
 ---
 title: 'CA1409: Com 可見類型應該是可建立 |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a9b946fc68774d33bc17a37dafc5366d6532f745
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 2aa50d16f0661b3c4baa40fae24fbee24f6fa7bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200313"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409：COM 可見類型應該是可建立的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1409: Com 可見類型應該是可建立](https://docs.microsoft.com/visualstudio/code-quality/ca1409-com-visible-types-should-be-creatable)。
-
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|

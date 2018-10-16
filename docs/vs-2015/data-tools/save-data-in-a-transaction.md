@@ -1,7 +1,7 @@
 ---
 title: 儲存異動中的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208895"
 ---
 # <a name="save-data-in-a-transaction"></a>儲存異動中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將資料儲存在交易中](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction)。  
-  
   
 本逐步解說示範如何將資料儲存在交易中，使用<xref:System.Transactions>命名空間。 此範例使用 Northwind 範例資料庫中的 `Customers` 和 `Orders` 資料表。  
   
@@ -99,7 +97,7 @@ ms.locfileid: "47489578"
      <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。 [OrdersTableAdapter](../data-tools/tableadapter-overview.md)和<xref:System.Windows.Forms.BindingSource>會出現在元件匣。  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>加入 System.Transactions 組件的參考  
- 交易會使用 <xref:System.Transactions> 命名空間。 預設不會加入 system.transactions 組件的專案參考，所以您必須手動加入。  
+ 異動會使用 <xref:System.Transactions> 命名空間。 預設不會加入 system.transactions 組件的專案參考，所以您必須手動加入。  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>加入 System.Transactions DLL 檔案的參考  
   

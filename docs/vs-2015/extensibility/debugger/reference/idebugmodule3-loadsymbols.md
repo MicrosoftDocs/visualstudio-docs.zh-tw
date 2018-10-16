@@ -1,7 +1,7 @@
 ---
 title: IDebugModule3::LoadSymbols |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f88ff4356b4292cf5b0bec3f066497a7a314b117
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c9eb4a3ec14b2af59ba5fb8a9983a97bd980a6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257032"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugModule3::LoadSymbols](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmodule3-loadsymbols)。  
-  
 載入目前模組的符號。  
   
 ## <a name="syntax"></a>語法  

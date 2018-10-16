@@ -1,7 +1,7 @@
 ---
 title: CA1065： 不要引發例外狀況中的非預期的位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 93be7e14bd095fb7f25c7dcce90eba3d724b05f0
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284683"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1065： 不要引發例外狀況中的非預期的位置](https://docs.microsoft.com/visualstudio/code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations)。
-
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|

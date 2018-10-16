@@ -1,7 +1,7 @@
 ---
 title: 與 VSTU 共用 Unity 記錄回呼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 8e1e0f2062195830443a169c67d9b75d2b1915ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e309f7d7340eb73de587c7a5f569377354dbab9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186858"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>與 VSTU 共用 Unity 記錄回呼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[與 VSTU 共用 Unity 記錄回呼](https://docs.microsoft.com/visualstudio/cross-platform/share-the-unity-log-callback-with-vstu)。  
-  
   
 Visual Studio Tools for Unity 使用 Unity 註冊記錄回呼，以便將其主控台串流至 Visual Studio。 如果您的編輯器指令碼也使用 Unity 註冊記錄回呼，VSTU 回呼可能會與您的回呼相衝突。 若要避免這種可能性，請使用 `VisualStudioIntegration.LogCallback` 事件來與 VSTU 合作。  
   

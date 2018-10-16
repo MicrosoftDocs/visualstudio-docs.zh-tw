@@ -1,7 +1,7 @@
 ---
 title: 呼叫端-被呼叫端檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a28f0184d126781c43540d447cd75cd905e15d40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e2eaae167f1d11097db8a27c355ea190ac5564a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200274"
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫端-被呼叫端檢視](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view)。  
-  
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格：  
   
  **目前的函式**會顯示在中間方格中，顯示所選取函式的分析資訊。 值包含在分析執行中所收集的所有函式呼叫。  

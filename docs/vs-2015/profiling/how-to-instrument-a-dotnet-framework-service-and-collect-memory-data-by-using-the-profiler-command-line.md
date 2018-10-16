@@ -1,7 +1,7 @@
 ---
 title: 如何：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc463439259ac5eaabe0d0fe29e3afbde9352b3a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e95af5e44e0d073e16f735d69b83bd2f6c834366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227691"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢測.NET Framework 服務並收集記憶體資料使用 Profiler 命令列](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集記憶體使用量資料。 您可以收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
   
 > [!NOTE]

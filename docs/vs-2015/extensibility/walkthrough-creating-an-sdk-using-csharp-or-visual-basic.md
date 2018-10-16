@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 建立使用 C# 或 Visual Basic SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d870be666efd0457ed472fb065642db456459b97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215601"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說︰使用 C# 或 Visual Basic 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 使用 C# 或 Visual Basic 建立 SDK](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic)。  
-  
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
   
 -   [若要建立 SimpleMath Windows 執行階段元件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  

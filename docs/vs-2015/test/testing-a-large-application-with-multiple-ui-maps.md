@@ -1,7 +1,7 @@
 ---
 title: 測試含有多個 UI 對應的大型應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 40dae630f39597549f27c0aa77685d00e5ddd7ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b8b18c93e96e9b7fddeafc06df970e541f84d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291924"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試含有多個 UI 對應的大型應用程式](https://docs.microsoft.com/visualstudio/test/testing-a-large-application-with-multiple-ui-maps)。  
-  
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。  
   
  **需求**  

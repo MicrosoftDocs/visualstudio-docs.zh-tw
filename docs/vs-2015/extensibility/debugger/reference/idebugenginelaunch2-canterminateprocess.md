@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2::CanTerminateProcess |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5a855da8be95f85abe2f13f32ea6b33228c05dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6ef229d14a878b1535dac5de6f50f3951ec0681
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172961"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEngineLaunch2::CanTerminateProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess)。  
-  
 決定是否會終止處理程序。  
   
 ## <a name="syntax"></a>語法  

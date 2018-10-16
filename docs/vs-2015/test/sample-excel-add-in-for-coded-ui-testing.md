@@ -1,7 +1,7 @@
 ---
 title: 自動程式化 UI 測試的範例 Excel 增益集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f0b4211b51940564041fab5777d6594168e1329
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290676"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>自動程式化 UI 測試的範例 Excel 增益集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[範例 Excel 增益集的自動程式化 UI 測試](https://docs.microsoft.com/visualstudio/test/sample-excel-add-in-for-coded-ui-testing)。  
-  
 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的此範例增益集是特別設計來支援 Excel 工作表的自動程式碼 UI 測試，在 Visual Studio 企業版中記錄及執行 增益集是使用 Visual Studio Tools for Office 所建立的。  
   
  如需如何建立 Excel 增益集的詳細資訊，請參閱[逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)，或在 MSDN 中搜尋「Excel 增益集」。  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild 目標 Framework 和目標平台 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e699096af425897e3bd3c724b483cc3fea2ffb29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239131"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 目標 Framework 和目標平台](https://docs.microsoft.com/visualstudio/msbuild/msbuild-target-framework-and-target-platform)。  
-  
   
 您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 (“x86”) 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。  
   

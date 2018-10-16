@@ -1,7 +1,7 @@
 ---
 title: 如何： 更新現有的範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c5d091e58904cae058c5a2a5ade1b8ceec4c738
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242277"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 更新現有的範本](https://docs.microsoft.com/visualstudio/ide/how-to-update-existing-templates)。  
-  
 在建立範本並將檔案壓縮成 .zip 檔之後，您可能想要修改範本。 若要執行此動作，您可以手動變更範本中的檔案，或從以範本為基礎的專案中匯出新範本。  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>使用匯出範本精靈更新現有範本  

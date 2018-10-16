@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279683"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612658"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -54,6 +54,10 @@ ms.locfileid: "44279683"
 |**/ListSettingsProviders**|列出已安裝的測試設定提供者。|
 |**/Blame**|在執行測試時追蹤測試，如果測試主機處理序損毀，則會以其執行順序發出測試名稱，最多包含損毀時執行的特定測試。 此輸出可讓您更輕鬆地找出有問題的測試，並進一步診斷。 [詳細資訊](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)。|
 |**/Diag:[*file name*]**|將診斷追蹤記錄寫入至指定的檔案。|
+|**/ResultsDirectory:[*path*]**|如果測試結果目錄不存在，則會在指定的路徑中建立該目錄。<br />範例：`/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|父處理序的處理序識別碼，該父處理序負責啟動目前處理序。|
+|**/Port:[*port*]**|通訊端連線和接收事件訊息的連接埠。|
+|**/Collect:[*dataCollector friendlyName*]**|測試回合啟用資料收集器。 [詳細資訊](https://aka.ms/vstest-collect)。|
 
 > [!TIP]
 > 選項和值不區分大小寫。

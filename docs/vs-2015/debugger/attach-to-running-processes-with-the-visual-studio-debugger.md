@@ -1,7 +1,7 @@
 ---
 title: 附加至執行程序中使用 Visual Studio 偵錯工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d0f92e857122b0fe23f5f1afe80b4d86f8b8af7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176770"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ ms.locfileid: "47497438"
 
 ## <a name="additional-info"></a>其他資訊
 
-偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可以在 [偵錯位置]  工具列或 [處理序]  視窗中設定使用中的程式。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定目前的處理序](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
+偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可以在 [偵錯位置]  工具列或 [處理序]  視窗中設定使用中的程式。 如需詳細資訊，請參閱 [如何：設定目前的處理序](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
   
 如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
   
-在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序]  清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序]  清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，來解決這個問題。 如果這些解決方法都沒有效，第三個方法就是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId* 以連結至流程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](http://go.microsoft.com/fwlink/?LinkId=168279)來下載並安裝 Debugging Tools for Windows。
+在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序]  清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序]  清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，來解決這個問題。 如果這些解決方法都沒有效，第三個方法就是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId* 以連結至流程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](http://go.microsoft.com/fwlink/?LinkId=168279)來下載並安裝 Debugging Tools for Windows。
 
 ## <a name="BKMK_Scenarios"></a> 常見的偵錯案例
 
@@ -138,10 +138,10 @@ ms.locfileid: "47497438"
 |您未從 Visual Studio 啟動的 Windows 通用 (UWP)、 OneCore、 HoloLens、 或 IoT 應用程式進行偵錯|偵錯已安裝的應用程式套件|N/A|使用**偵錯 / 其他偵錯目標] / [偵錯已安裝應用程式封裝**而不是**附加至處理序**|
   
 > [!WARNING]
->  若要附加至以 JavaScript 撰寫的 Windows 通用應用程式，您必須先啟用應用程式的偵錯功能。 請參閱[附加偵錯工具](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger)Windows 開發人員中心。  
+>  若要附加至以 JavaScript 撰寫的 Windows 通用應用程式，您必須先啟用應用程式的偵錯功能。 請參閱 Windows 開發人員中心的 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 。  
   
 > [!NOTE]
->  偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以加入您的程式碼會自動由連結[/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)連結器選項。
+>  偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。
 
 ## <a name="what-debugger-features-can-i-use"></a>可以使用哪些偵錯工具功能？
 
@@ -183,7 +183,7 @@ ms.locfileid: "47497438"
 ## <a name="see-also"></a>另請參閱  
  [偵錯多個處理序](../debugger/debug-multiple-processes.md)   
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用異動更新模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236856"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用異動更新模型](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model)。  
-  
 交易確認至存放區所做的變更會被視為一個群組。 分組的變更可以認可或回復，當做單一單位。  
   
  每當您的程式碼可修改、 新增，或刪除的存放區中的任何項目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Visualization and Modeling SDK，它必須在交易內進行。 必須有使用中的執行個體<xref:Microsoft.VisualStudio.Modeling.Transaction>變更發生時，以存放區相關聯。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 在 C# 中撰寫視覺化檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 871856c38b40d38892b6236fa02b63f47b62d112
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd8c12e415b37f04635327d195ef0f96649a2894
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199182"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C# 中撰寫視覺化檢視 #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 在 C# 中撰寫視覺化檢視](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)。  
-  
 本逐步解說示範如何使用 C# 撰寫簡單的視覺化檢視。 您將在本逐步解說建立視覺化檢視會顯示字串，使用 Windows form 訊息方塊的內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視，其他資料類型時，所必須遵循的基本步驟。  
   
 > [!NOTE]
@@ -150,7 +148,7 @@ ms.locfileid: "47498763"
   
 2.  在 **建置**功能表上，選擇**建置 MyFirstVisualizer**。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。  
   
- 這時，您的第一個視覺化檢視已完成。 如果您正確遵循這些步驟的話，應該能夠建置視覺化檢視，並將它安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。 但是，在將視覺化檢視安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之前，應該先進行測試以確定它能正確執行。 現在，您將建立 Test Harness 來執行這個視覺化檢視，而不將它安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。  
+ 這時，您的第一個視覺化檢視已完成。 如果您正確遵循這些步驟的話，應該能夠建置視覺化檢視，並將它安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。 但是，在將視覺化檢視安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之前，應該先進行測試以確定它能正確執行。 現在，您將建立 Test Harness 來執行這個視覺化檢閱，而不將它安裝至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。  
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>若要加入顯示視覺化檢視測試方法  
   
@@ -229,7 +227,7 @@ ms.locfileid: "47498763"
   
  恭喜您！ 您已完成建置和測試第一個視覺化檢視。  
   
- 如果您想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用視覺化檢視，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢視。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。  
+ 如果您想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。  
   
 ## <a name="using-the-visualizer-item-template"></a>使用視覺化檢視項目範本  
  到目前為止，本逐步解說示範了如何以手動方式建立視覺化檢視。 這是學習練習。 既然您已經知道簡單的視覺化檢視的運作方式，是建立一個更簡單的方法： 使用視覺化檢視項目範本。  

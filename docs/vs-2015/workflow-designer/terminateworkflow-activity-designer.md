@@ -1,7 +1,7 @@
 ---
 title: TerminateWorkflow 活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a00677390967f0cc0cff8a04b33895d7c88588f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67681982c9c8d77df77242be5c07679f3b0d24ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225702"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活動設計工具
 **TerminateWorkflow**活動設計工具會用來建立及設定<xref:System.Activities.Statements.TerminateWorkflow>活動。  

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugThreads2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a86c322ed2fa1ac750171116a0a11c9b2b4d99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff3103d122063277b2f935d2cb6f30353434ae6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269083"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugThreads2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugthreads2)。  
-  
 此介面會列舉在目前的偵錯工作階段中執行的執行緒。  
   
 ## <a name="syntax"></a>語法  

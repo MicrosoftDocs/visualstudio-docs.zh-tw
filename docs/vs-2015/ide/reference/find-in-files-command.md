@@ -1,7 +1,7 @@
 ---
 title: 檔案中尋找命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a05aec2867d050e7b9a1a49705a7882b396892f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a278bb50af4488e9e627e884b20332717d6d0f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256720"
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檔案中尋找命令](https://docs.microsoft.com/visualstudio/ide/reference/find-in-files-command)。  
-  
   
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。  
   

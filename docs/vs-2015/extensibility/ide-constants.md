@@ -1,7 +1,7 @@
 ---
 title: IDE 常數 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1a791dd1190bc083d2be398d88722daa227cf12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44058a483e4181b7f1918b63c844b2bb4345c89c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236427"
 ---
 # <a name="ide-constants"></a>IDE 常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDE 常數](https://docs.microsoft.com/visualstudio/extensibility/ide-constants)。  
-  
 <xref:Microsoft.VisualStudio.VSConstants>類別提供特定的整合式的開發環境 (IDE) 和先前定義只在標頭檔中的常數。  
   
 ## <a name="logical-and-physical-views"></a>邏輯與實體的檢視  

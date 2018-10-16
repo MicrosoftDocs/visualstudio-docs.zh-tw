@@ -1,7 +1,7 @@
 ---
 title: 建立和使用程式碼分析簽入原則 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238351"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>建立和使用程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立和使用程式碼分析簽入原則](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies)。  
-  
 當您使用 Team Foundation 版本控制 (TFVC) 時，您可以建立.NET Framework 和原生 （C/c + +） 程式碼專案的 team 專案中的程式碼分析簽入原則。 您可以使用程式碼分析簽入原則來控制及改善簽入程式碼基底的程式碼品質。  
   
  當本機組建是最新狀態，並已執行的最新的來源檔案的程式碼分析時，就會通過此原則。 最少的程式碼專案中已啟用程式碼分析規則都必須包含相同的 team 專案簽入原則中所定義的規則。 在被指定為 Team 專案設定中的錯誤的規則也必須指定為程式碼專案中的錯誤  
@@ -51,7 +49,7 @@ ms.locfileid: "47486654"
  說明如何將字組和語彙基元新增至字典中的程式碼分析命名規則所參考。  
   
 ## <a name="related-sections"></a>相關章節  
- [設立並嚴守品質閘門](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [品質嚴格把關](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [使用 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
 

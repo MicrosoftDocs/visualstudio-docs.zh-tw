@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用檢測進行命令列剖析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38702e7f296640ff43caeb18380aad95636df30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4362db36cb4b4695b667fc680dad58ce4092eced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177995"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>逐步解說：使用檢測進行命令列剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 命令列程式碼剖析使用的檢測](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-instrumentation)。  
-  
 本逐步解說將引導您分析一個 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 獨立應用程式，以使用「程式碼剖析工具」的檢測方法來收集計時和呼叫計數的詳細資料。 在這個逐步解說中，您將完成下列工作：  
   
 -   使用 [VSInstr](../profiling/vsinstr.md) 命令列工具來產生檢測二進位檔。  

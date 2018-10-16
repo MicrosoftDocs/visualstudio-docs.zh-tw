@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947d06bed7d645f7ad587382ed954a4f8ccd72f3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b30557dedfc2d8d979ecdb952875fbf74a2f9d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269533"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用命令列啟動 Profiler 和收集應用程式統計資料的獨立應用程式](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line)。  
-  
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具命令列工具啟動獨立的 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Continue |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e545e69cf05f5d40555e31546ec8d92d8d7f6e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4429e4ba9d60dfa8db78ba38257a93b4c14c87e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226222"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgram2::Continue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-continue)。  
-  
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  
   
 > [!NOTE]

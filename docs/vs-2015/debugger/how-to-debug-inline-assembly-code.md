@@ -1,7 +1,7 @@
 ---
 title: 如何： 偵錯內嵌組譯碼的程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a5ed1031a687754c85248394eb14598cbf2c54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ed7aeb167b962b33819e3e07aca513c5b0bf832
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285346"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>如何：偵錯內嵌組譯程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 偵錯內嵌組譯碼](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-inline-assembly-code)。  
-  
 附註]
 >  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   

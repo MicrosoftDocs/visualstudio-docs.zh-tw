@@ -1,7 +1,7 @@
 ---
 title: 視覺化及檢視資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202770"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覺化及檢視資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[視覺化及檢視資料](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data)。  
-  
 類型視覺化檢視和自訂檢視器中的開發人員快速有意義的方式呈現的資料。 運算式評估工具 (EE) 可支援第三方類型視覺化檢視，以及提供它自己的自訂檢視器。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 決定多少類型視覺化檢視和自訂檢視器會與物件的型別相關聯藉由呼叫[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)方法。 如果沒有至少一個類型的視覺化檢視或自訂檢視器，Visual Studio 會呼叫[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法來擷取這些視覺化檢視和檢視器的清單 (事實上，一份`CLSID`實作的 s視覺化檢視和檢視器） 並將它們呈現給使用者。  

@@ -1,7 +1,7 @@
 ---
 title: 如何︰指定 .NET Framework 執行階段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25d7d9e63f5ab5581960f08d32f920b24f2f9906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2508d9b0a7ab1c2511dd1bbe2a46ea486ce86a32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189276"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何︰指定 .NET Framework 執行階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 指定.NET Framework 執行階段](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-the-dotnet-framework-runtime)。  
-  
 使用 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 版本，應用程式就可以由使用不同版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 執行階段所建置的模組組成。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具預設會對應用程式所載入的第一個執行階段進行程式碼剖析。 當您以程式碼剖析工具啟動應用程式時，以及當您將程式碼剖析工具附加至已在執行的應用程式時，都可以指定要進行程式碼剖析的執行階段。  
   
  **需求**  

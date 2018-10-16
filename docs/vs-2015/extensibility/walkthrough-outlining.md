@@ -1,7 +1,7 @@
 ---
 title: 逐步解說︰ 大綱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181970"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說︰大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說︰ 大綱](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining)。  
-  
 您可以實作語言為基礎的功能，例如藉由定義的類型，您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並區定義套用至該類型，或您可以將區域定義套用至現有的內容類型 （例如 「 文字 」）。 本逐步解說示範如何定義及顯示大綱區域。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -36,7 +34,7 @@ ms.locfileid: "47492291"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 VSIX 專案。 將方案命名為`OutlineRegionTest`。  
+1.  建立 VSIX 專案。 將方案命名為 `OutlineRegionTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -49,7 +47,7 @@ ms.locfileid: "47492291"
   
 #### <a name="to-implement-an-outlining-tagger"></a>若要實作大綱的標記者  
   
-1.  將類別檔案並將它命名`OutliningTagger`。  
+1.  加入類別檔案，並將它命名為 `OutliningTagger`。  
   
 2.  匯入下列命名空間。  
   

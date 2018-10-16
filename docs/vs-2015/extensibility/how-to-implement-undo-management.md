@@ -1,7 +1,7 @@
 ---
 title: 如何： 實作復原管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246281"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 實作復原管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 實作復原管理](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management)。  
-  
 用於復原管理的主要介面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，這由環境實作。 若要支援復原管理，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。  
   
  實作復原管理的方式，需視您的編輯器是否支援多個檢視的方法而有所不同。 下列各節會詳細說明每個實作的程序。  

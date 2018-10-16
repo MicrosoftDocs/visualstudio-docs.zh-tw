@@ -1,7 +1,7 @@
 ---
 title: 階層和選取 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6bac5e0635b97c191a2261c25143aaf2fd2b4d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 236ac170967800320afcddb6a4d837356bc8f16a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172766"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[階層和選取範圍](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-and-selection)。  
-  
 當您自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您應該了解如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]處理階層，例如專案，以及如何使用選取範圍內容來決定向使用者顯示的內容。 本章節將討論的概念[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]階層和選取範圍。  
   
 ## <a name="in-this-section"></a>本節內容  

@@ -1,7 +1,7 @@
 ---
 title: 選項對話方塊、環境、尋找和取代 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 295891e6995ed30ab6fe9404c1ea14fd1bccbc58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c60e89624c1245415ee887e44ad8d7df24bf8d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250616"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>選項對話方塊、環境、尋找和取代
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[尋找和取代 環境，Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/find-and-replace-environment-options-dialog-box)。  
-  
   
 使用 [選項] 對話方塊的這個頁面，即可控制訊息方塊以及尋找和取代作業的其他層面。 從 [工具] 功能表中按一下 [選項]，並展開 [環境]，然後按一下 [尋找和取代]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   

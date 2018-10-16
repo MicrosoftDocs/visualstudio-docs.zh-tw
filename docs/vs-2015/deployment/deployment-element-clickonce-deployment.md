@@ -1,7 +1,7 @@
 ---
 title: '&lt;部署&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231539"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;部署&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment)。  
-  
 識別用於更新部署及公開至系統的屬性。  
   
 ## <a name="syntax"></a>語法  
@@ -68,7 +66,7 @@ ms.locfileid: "47491745"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `deployment` 為必要元素，位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 項目具有下列屬性。  
+ `deployment` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -81,12 +79,12 @@ ms.locfileid: "47491745"
  `deployment`元素也包含下列子元素。  
   
 ## <a name="subscription"></a>訂用帳戶  
- 選擇性。 包含`update`項目。 `subscription`項目沒有任何屬性。 如果`subscription`項目不存在，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式永遠不會掃描是否有更新。 如果`install`的屬性`deployment`項目是`false`，則`subscription`項目會被忽略，因為[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會一律從網路啟動的應用程式使用最新版本。  
+ 選擇性。 包含`update`項目。 `subscription` 項目沒有任何屬性。 如果`subscription`項目不存在，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式永遠不會掃描是否有更新。 如果`install`的屬性`deployment`項目是`false`，則`subscription`項目會被忽略，因為[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會一律從網路啟動的應用程式使用最新版本。  
   
 ## <a name="update"></a>更新  
  必要。 這是元素的子系`subscription`項目和包含`beforeApplicationStartup`或`expiration`項目。 `beforeApplicationStartup` 和`expiration`不可同時指定相同的部署資訊清單中。  
   
- `update`項目沒有任何屬性。  
+ `update` 項目沒有任何屬性。  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  選擇性。 這是元素的子系`update`項目並沒有任何屬性。 當`beforeApplicationStartup`項目存在，應用程式將會封鎖[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]檢查更新，如果用戶端在線上。 如果這個項目不存在，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會先掃描是否有指定的值為基礎的更新`expiration`項目。 `beforeApplicationStartup` 和`expiration`不可同時指定相同的部署資訊清單中。  

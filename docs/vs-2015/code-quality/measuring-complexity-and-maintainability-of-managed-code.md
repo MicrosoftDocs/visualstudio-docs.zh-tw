@@ -1,7 +1,7 @@
 ---
 title: 測量的複雜度與可維護性 Managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214216"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>測量 Managed 程式碼的複雜度和維護性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測量的複雜性和可維護性的 Managed 程式碼](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code)。  
-  
 現代軟體應用程式的複雜度也會增加可靠且易於維護，使程式碼的困難度。 近年來，許多軟體度量，也稱為程式碼度量，已開發出可協助開發人員了解他們的程式碼需要重做或增加測試的位置。  
   
  開發人員可以使用[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]產生測量的複雜性和可維護性 managed 程式碼的程式碼度量資料。 整個解決方案或單一專案，可以產生程式碼度量資料。  

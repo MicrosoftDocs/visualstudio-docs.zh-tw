@@ -1,7 +1,7 @@
 ---
 title: 命令列程式碼剖析工具參考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c27c0fddcf77fcbdf3e71c30be2d50a6a43d760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01d37fe9dad323aa1ea78e6464e8f4b10fe65ed3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194008"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令列程式碼剖析工具參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令列程式碼剖析工具參考](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-tools-reference)。  
-  
 命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。  
   
 ## <a name="in-this-section"></a>本節內容  

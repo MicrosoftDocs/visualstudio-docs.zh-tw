@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Web 應用程式的命令列分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dd299aac87a03009e39034a3e5282777419506c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3942744df8708ff7932dc663b1c4a55ec2dad471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257916"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令列程式碼剖析的 ASP.NET Web 應用程式](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-aspnet-web-applications)。  
-  
 本節說明從命令列使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式之效能資料的程序和選項。  
   
 > [!NOTE]

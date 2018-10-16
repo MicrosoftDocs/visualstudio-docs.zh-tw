@@ -1,7 +1,7 @@
 ---
 title: 步驟 7：讓配對保持可見 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e47b2308c085e9fd30cc18bc3afd45584e29274c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189003"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 7： 讓配對保持可見](https://docs.microsoft.com/visualstudio/ide/step-7-keep-pairs-visible)。  
-  
 只要玩家僅選擇不相符的圖示配對，遊戲都可以運作良好。 但是，請考慮當玩家選擇相符的配對時會發生的情況。 遊戲不用藉由啟動計時器使圖示消失 (使用 `Start()` 方法)，而是應該本身進行重設，如此它就不會再使用 `firstClicked` 和 `secondClicked` 參考變數來追蹤任何標籤，但不需要重設已選擇之兩個標籤的色彩。  
   
 ### <a name="to-keep-pairs-visible"></a>若要讓配對保持可見  

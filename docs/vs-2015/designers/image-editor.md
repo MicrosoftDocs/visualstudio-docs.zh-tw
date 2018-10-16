@@ -1,7 +1,7 @@
 ---
 title: 影像編輯器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185766"
 ---
 # <a name="image-editor"></a>影像編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[影像編輯器](https://docs.microsoft.com/visualstudio/designers/image-editor)。  
-  
 本文件說明如何使用「[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 影像編輯器」來檢視及修改材質和影像資源。  
   
  您可以使用「影像編輯器」處理在 DirectX 應用程式開發中使用的豐富材質和影像格式類型，這包括支援常用的影像檔案格式和色彩編碼、Alpha 色板和 MIP 對應之類的功能，以及 DirectX 支援的許多高度壓縮、硬體加速材質格式。  

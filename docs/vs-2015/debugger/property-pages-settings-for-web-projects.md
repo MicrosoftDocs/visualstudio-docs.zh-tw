@@ -1,7 +1,7 @@
 ---
 title: Web 專案的屬性頁設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 579872bab86e0cd8f127a7222c7fbc9b823e1a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a472e134869ff48a21480ede42f330d968262d38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179981"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Web 專案的屬性頁設定](https://docs.microsoft.com/visualstudio/debugger/property-pages-settings-for-web-projects)。  
-  
 您可以變更網站偵錯組態中的屬性設定**屬性頁** 對話方塊中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示與偵錯工具相關的設定中的位置**屬性頁** 對話方塊。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>組態屬性資料夾 (起始選項分類)  

@@ -1,7 +1,7 @@
 ---
 title: 針對市集應用程式的 Visual C++ DLL 進行單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244357"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>對市集應用程式的 Visual C++ DLL 進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[市集應用程式的 Visual c + + DLL 單元測試](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps)。  
-  
 本主題說明如何建立 Windows 市集應用程式的 C++ DLL 單元測試。透過實作概算指定數字的平方根函式，RooterLib DLL 示範了微積分極限理論的模糊記憶。 接著可將這個 DLL 包含在 Windows 市集應用程式中，以向使用者顯示可利用數學完成的有趣運算。  
   
  本主題示範如何使用單元測試做為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。  

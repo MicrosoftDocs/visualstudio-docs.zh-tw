@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 偵錯因著色而產生的錯誤 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210167"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：偵錯因著色而產生的顯示錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 偵錯呈現錯誤因為陰影](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading)。  
-  
-本逐步解說示範如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]圖形診斷來調查因為著色器錯誤而著色不正確的物件。  
+本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷來調查因為著色器錯誤而著色不正確的物件。  
   
  本逐步解說示範如何：  
   
@@ -48,7 +46,7 @@ ms.locfileid: "47497559"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，載入圖形記錄，其中包含表現出遺漏模型的畫面格。 新的圖形記錄文件視窗會出現在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄，其中包含表現出遺漏模型的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中隨即顯示新的圖形記錄文件視窗。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
   
 2.  在 [畫面格清單] 中，選取物件在其中沒有正確外觀的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情節中，圖形記錄文件視窗如下所示：  
   
@@ -92,7 +90,7 @@ ms.locfileid: "47497559"
   
 2.  找出端點著色器的輸出結構，這是像素著色器的輸入。 在此情節中，此結構的名稱是 `output`。 檢查端點著色器程式碼並發現 `color` 結構的 `output` 成員已明確設定為完全不透明的黑色，這可能是因為某人的偵錯工作所造成。  
   
-3.  確認絕不會從輸入結構複製 color 成員。 由於在傳回 `output.color` 結構之前， `output` 的值已設定為完全不透明的黑色，因此建議您確定 `output` 的值在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color`設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
+3.  確認絕不會從輸入結構複製 color 成員。 由於在傳回 `output.color` 結構之前， `output` 的值已設定為完全不透明的黑色，因此建議您確定 `output` 的值在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color` 設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
   
      !["Output.color"的值為黑色。](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   

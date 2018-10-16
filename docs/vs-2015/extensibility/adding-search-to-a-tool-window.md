@@ -1,7 +1,7 @@
 ---
 title: 將搜尋新增至 工具視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bdee40e2af2e09844314cd1727f480b3cd33462
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206917"
 ---
 # <a name="adding-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入至工具視窗的搜尋](https://docs.microsoft.com/visualstudio/extensibility/adding-search-to-a-tool-window)。  
-  
 當您建立或更新您的延伸模組中的工具視窗時，您可以在 Visual Studio 中新增其他地方出現的相同搜尋功能。 這項功能包含下列功能：  
   
 -   一定會位於工具列的自訂區域中 [搜尋] 方塊中。  
@@ -57,7 +55,7 @@ ms.locfileid: "47499833"
   
 ## <a name="to-create-a-vsix-project"></a>建立 VSIX 專案  
   
-1.  建立 VSIX 專案，名為`TestToolWindowSearch`名為工具視窗**TestSearch**。 如果您需要執行此動作的說明，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+1.  建立 VSIX 專案，名為`TestToolWindowSearch`名為工具視窗**TestSearch**。 如果您需要協助來執行這項作業，請參閱 [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="to-create-a-tool-window"></a>若要建立工具視窗  
   

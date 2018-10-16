@@ -1,7 +1,7 @@
 ---
 title: 將圖表匯出為影像 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d29905f63cb9438800b4e3911b3f9ffae5c7d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ab54543b2f79728f91d530439b6d8474d158347
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266016"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將圖表匯出為影像](https://docs.microsoft.com/visualstudio/modeling/export-diagrams-as-images)。  
-  
 在 Visual Studio 中，您可以儲存模型圖表在唯讀模式的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

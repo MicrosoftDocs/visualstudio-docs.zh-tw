@@ -1,7 +1,7 @@
 ---
 title: 從命令列使用程式碼剖析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298385"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>從命令列使用程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼剖析工具從命令列使用](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line)。  
-  
 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具的命令列工具，在命令提示字元分析應用程式，並使用批次檔和指令碼將程式碼剖析自動化。 您也可以在命令提示字元產生報告檔。 您可以使用輕量型獨立分析工具，在未安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的的電腦上收集資料。  
   
 > [!NOTE]

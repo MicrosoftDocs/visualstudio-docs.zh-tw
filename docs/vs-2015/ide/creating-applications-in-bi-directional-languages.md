@@ -1,7 +1,7 @@
 ---
 title: 使用雙向語言建立應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfab15635f8bfc14e0c102dd881e9f90556fe451
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248491"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ed1634a722dd1b144cb3c134d55cf414b108a9d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f16de9e692a3119bc0cb93dda8694e5338eb9fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302805"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramProvider2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramprovider2)。  
-  
 這個已註冊的介面可讓偵錯工作階段管理員 (SDM) 取得的是 「 發行 」 透過程式的相關資訊[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)介面。  
   
 ## <a name="syntax"></a>語法  

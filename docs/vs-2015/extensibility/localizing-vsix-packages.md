@@ -1,7 +1,7 @@
 ---
 title: 將 VSIX 封裝當地語系化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad0b3307e4b0e5358bd04d4990d0012685300d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49ec131e4fa5ec635fa63763ccac9493134e2f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292899"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[當地語系化 VSIX 封裝](https://docs.microsoft.com/visualstudio/extensibility/localizing-vsix-packages)。  
-  
 您可以將 VSIX 封裝當地語系化藉由建立每個目標語言的 Extension.vsixlangpack 檔案並再將它們放入正確的資料夾。 安裝當地語系化的套件時，延伸模組的當地語系化的名稱會顯示與當地語系化的描述。 如果您提供當地語系化的授權檔案或指向當地語系化資訊的 URL，也會顯示它們。  
   
  如果內容 VSIX 封裝包含 VSPackage 將功能表命令或其他 UI，請參閱[當地語系化功能表命令](../extensibility/localizing-menu-commands.md)如需當地語系化新的 UI 項目。  

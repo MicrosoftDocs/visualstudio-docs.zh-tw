@@ -1,7 +1,7 @@
 ---
 title: 分層圖： 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248309"
 ---
 # <a name="layer-diagrams-reference"></a>圖層圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[相依性圖表： 參考](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference)。  
-  
 在 Visual Studio 中，您可以使用*分層圖*以視覺化方式檢視您的系統高階邏輯結構。 圖層圖表在您的系統中的實體成品組織成邏輯的抽象群組，稱為*層*。 您可以使用圖層來說明成品或系統主要元件所執行的主要工作。 每個圖層也可以包含巢狀圖層以描述更詳細的工作。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

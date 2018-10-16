@@ -1,7 +1,7 @@
 ---
 title: 新增 最近使用的子功能表清單 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223727"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[子功能表中加入最最近使用清單](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu)。  
-  
 本逐步解說是根據在示範[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。  
   
  動態功能表清單開始功能表上的預留位置。 每一次，就會顯示功能表，Visual Studio 整合式的開發環境 (IDE) 會要求應該在將預留位置顯示的所有命令的 VSPackage。 動態清單可以出現在功能表上的任何位置。 不過，動態清單會通常儲存，並顯示自己本身全部放在子功能表上，或在功能表的底端。 藉由使用這些設計模式，您可以啟用動態清單的命令來進行擴大和縮減而不會影響其他命令功能表上的位置。 在此逐步解說中，動態的 MRU 清單會顯示在現有的子功能表，以換行分隔的子功能表的其餘部分的底部。  

@@ -1,7 +1,7 @@
 ---
 title: 適用於 Visual Studio 的 UX 基本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a5f59dcb99c149e860244cde5f7dc0a30822578
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303307"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[適用於 Visual Studio 的 UX 基本](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ux-essentials-for-visual-studio)。  
-  
 ## <a name="best-practices"></a>最佳作法  
   
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.是 Visual Studio 環境內保持一致。  

@@ -1,7 +1,7 @@
 ---
 title: AddToCollection&lt;T&gt;活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 061a289a7faa9d2ef90a11750f87118570cf247d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 009f9f90c5cd22e5cf0da4240d008ce3dc1bb4ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304419"
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt;活動設計工具
 **AddToCollection\<T >** 活動設計工具會用來建立及設定<xref:System.Activities.Statements.AddToCollection%601>活動。  

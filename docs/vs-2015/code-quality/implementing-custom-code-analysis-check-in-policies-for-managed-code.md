@@ -1,7 +1,7 @@
 ---
 title: 實作自訂程式碼分析簽入原則，針對 Managed 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268966"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[實作的自訂程式碼分析簽入原則的 Managed 程式碼](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code)。  
-  
 簽入原則會指定一組 team 專案的成員必須在原始程式檔之前執行的規則的程式碼分析簽入版本控制。 Microsoft 提供一組標準*規則集*該群組的程式碼分析規則到功能區域。 *自訂簽入原則的規則集*指定一組專屬於 team 專案的程式碼分析規則。 規則集儲存在.ruleset 檔案。  
   
  簽入原則會在 team 專案層級設定，並指定版本的控制項樹狀結構中的.ruleset 檔案的位置。 沒有任何限制小組原則自訂規則集的版本控制位置。  

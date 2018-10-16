@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ffb3ef65e10776230dc9896bf6dccbe4a813f9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6dd0f165a2e4b250c3920b11f053d3c566468b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306472"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProperty3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty3)。  
-  
 此介面可讓您：  
   
 -   擷取與屬性相關聯的任意長度字串。  

@@ -1,7 +1,7 @@
 ---
 title: 指令指標 (IP) 檢視 - 爭用資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 080e71b12bd41d4649556541326480cf018a2b5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ee819050d4945b3043409d71a591a1cff31fd5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284319"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>指令指標 (IP) 檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[指令指標 (Ip) 檢視-爭用資料](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view-contention-data)。  
-  
 爭用資料的 IP檢視會列出遭到封鎖而不可在程式碼剖析執行時執行的組件指令。  
   
  下表說明指令指標檢視中各資料行的值。  

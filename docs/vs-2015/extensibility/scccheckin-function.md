@@ -1,7 +1,7 @@
 ---
 title: SccCheckin 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27d2f5fc2bec3f7e082593e3adcd65a0407f0bc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e36885749a732051cb03b60bd4a5faf6b71310d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189071"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccCheckin 函式](https://docs.microsoft.com/visualstudio/extensibility/scccheckin-function)。  
-  
 此函式會檢查在先前會在簽出原始檔控制系統，儲存所做的變更和建立的新版本的檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。  
   
 ## <a name="syntax"></a>語法  

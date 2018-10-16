@@ -1,7 +1,7 @@
 ---
 title: DslDefinition.dsl 檔 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306116"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DslDefinition.dsl 檔](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file)。  
-  
 本主題說明的 Dsl 專案中的 DslDefinition.dsl 檔的結構[!INCLUDE[dsl](../includes/dsl-md.md)]解決方案，以定義*定義域專屬語言*。 DslDefinition.dsl 檔中描述的類別和關聯性的特定領域語言，以及圖表、 圖形、 連接器、 序列化格式，並**工具箱**的特定領域語言及其編輯工具。 在網域指定的語言方案中，會根據 DslDefinition.dsl 檔中的資訊產生定義那些工具的程式碼。  
   
  一般而言，您會使用*定義域專屬語言設計工具*編輯 DslDefinition.dsl 檔。 不過，其未經處理格式為 XML，因此可以在 XML 編輯器中開啟 DslDefinition.dsl 檔。 了解該檔案包含什麼資訊以及它如何編排以進行偵錯和擴充，可能會對您非常有用。  

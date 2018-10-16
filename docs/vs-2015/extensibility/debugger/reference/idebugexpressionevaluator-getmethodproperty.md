@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator::GetMethodProperty |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: def1f66be288574dc27af3b4685a008eb0c14ee3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0548cab6892ffc6f6b2db81122b76dfe6642301e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242966"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugExpressionEvaluator::GetMethodProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty)。  
-  
 這個方法會取得屬性的物件，其中包含 區域變數、 引數和 其他屬性的方法。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說︰ 顯示簽章說明 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247919"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>逐步解說︰顯示簽章說明
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 顯示簽章說明](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help)。  
-  
 簽章說明 (也稱為*參數資訊*) 方法的簽章顯示工具提示中，當使用者輸入的參數清單開始字元 （通常是左括號）。 依照所輸入的參數和參數分隔符號 （通常為逗號），工具提示會更新以顯示下一個參數以粗體顯示。 您可以定義簽章說明中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並顯示只是該類型的簽章說明或您可以顯示其簽章說明現有的內容類型 (例如，"text")。 本逐步解說示範如何以顯示簽章說明 「 文字 」 內容類型。  
   
  簽章說明通常會觸發輸入特定的字元，例如，"("（左括號），以及輸入另一個字元，例如已解除 」) 」 （右括號）。 IntelliSense 功能所觸發的輸入字元可以使用來實作命令處理常式的按鍵輸入 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面) 和實作的處理常式提供者<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>介面。 若要建立簽章說明來源，也就是加入簽章說明中的簽章的清單，實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>介面和實作的來源提供者<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>介面。 提供者是 Managed Extensibility Framework (MEF) 元件組件，而且會負責將匯出的來源和控制器類別及匯入服務和代理程式，比方說， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，可以讓您在文字緩衝區中，瀏覽，<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>，此觸發程序的簽章說明工作階段。  
@@ -40,7 +38,7 @@ ms.locfileid: "47488543"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`SignatureHelpTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `SignatureHelpTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -63,7 +61,7 @@ ms.locfileid: "47488543"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>若要實作的簽章說明的簽章和參數  
   
-1.  將類別檔案並將它命名`SignatureHelpSource`。  
+1.  加入類別檔案，並將它命名為 `SignatureHelpSource`。  
   
 2.  新增下列匯入。  
   

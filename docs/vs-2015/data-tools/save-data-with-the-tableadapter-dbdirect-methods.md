@@ -1,7 +1,7 @@
 ---
 title: 使用 TableAdapter DBDirect 方法儲存的資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69839a8f54b35bd932296b0dbd0126af3ac58ba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220806"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 TableAdapter DBDirect 方法儲存資料](https://docs.microsoft.com/visualstudio/data-tools/save-data-with-the-tableadapter-dbdirect-methods)。  
-  
   
 本逐步解說提供使用 TableAdapter 的 DBDirect 方法，直接對資料庫執行 SQL 陳述式的詳細的指示。 TableAdapter 的 DBDirect 方法提供嚴格控制您的資料庫更新。 您可以使用它們來執行特定 SQL 陳述式和預存程序的呼叫個別`Insert`， `Update`，並`Delete`方法，視您的應用程式 (而不是多載`Update`方法，以執行更新INSERT 和 DELETE 陳述式，全都在一個呼叫中的)。  
   

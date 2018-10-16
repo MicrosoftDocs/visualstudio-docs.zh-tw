@@ -1,7 +1,7 @@
 ---
 title: 將功能表控制器加入至工具列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231175"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將功能表控制器加入至工具列](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar)。  
-  
 本逐步解說是根據[新增至工具視窗的工具列](../extensibility/adding-a-toolbar-to-a-tool-window.md)逐步解說，並示範如何將功能表控制器加入至 [工具] 視窗工具列。 如下所示的步驟也可以套用到在中建立的工具列[新增工具列](../extensibility/adding-a-toolbar.md)逐步解說。  
   
  功能表控制器是分割控制項。 功能表控制器的左下的方顯示上次使用的命令，並可以按一下它會執行它。 右側功能表控制器是箭號，按一下時，會開啟額外的命令清單。 當您按一下在清單中，執行命令的命令，而它會取代左側的功能表控制站上的命令。 如此一來，功能表控制器運作像命令按鈕，一律會顯示上次使用的命令，從清單中。  

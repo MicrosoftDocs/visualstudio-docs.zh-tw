@@ -1,7 +1,7 @@
 ---
 title: 將功能表命令當地語系化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce3cbbf101e357f761ffaf256d0b130a0c005fdb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197700"
 ---
 # <a name="localizing-menu-commands"></a>將功能表命令當地語系化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[當地語系化功能表命令](https://docs.microsoft.com/visualstudio/extensibility/localizing-menu-commands)。  
-  
 您可以提供當地語系化的文字之功能表和工具列命令藉由建立當地語系化的.vsct 檔案和當地語系化的.resx 檔案的 VSPackage，然後更新專案檔才能將變更。  
   
  如需如何當地語系化安裝體驗的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)。  

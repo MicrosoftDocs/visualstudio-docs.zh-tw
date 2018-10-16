@@ -1,7 +1,7 @@
 ---
 title: 自訂刪除行為 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202757"
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂刪除行為](https://docs.microsoft.com/visualstudio/modeling/customizing-deletion-behavior)。  
-  
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這種行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。  
   
  本主題包含下列章節：  

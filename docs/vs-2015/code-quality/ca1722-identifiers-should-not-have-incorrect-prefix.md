@@ -1,7 +1,7 @@
 ---
 title: CA1722： 識別項名稱不可以使用正確的前置字元 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83843a7713adf3d0c3680470df05bb378c797d38
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 305e0f251ee64165a9a25481aa6c45299d888b33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215588"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：識別項不應使用不正確的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1722： 識別項不應該有不正確的前置詞](https://docs.microsoft.com/visualstudio/code-quality/ca1722-identifiers-should-not-have-incorrect-prefix)。
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|

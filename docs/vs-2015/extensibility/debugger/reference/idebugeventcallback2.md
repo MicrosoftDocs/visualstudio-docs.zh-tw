@@ -1,7 +1,7 @@
 ---
 title: IDebugEventCallback2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a140d5f0ecc2b250a8db4a2b78bfcc6544afd728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5517050ffba73ae495300a5d32d40fd8dbc7c57c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226248"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugEventCallback2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugeventcallback2)。  
-  
 這個介面用於偵錯引擎 (DE) 傳送偵錯事件工作階段的偵錯管理員 (SDM)。  
   
 ## <a name="syntax"></a>語法  

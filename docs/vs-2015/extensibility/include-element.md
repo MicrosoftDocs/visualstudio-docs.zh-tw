@@ -1,7 +1,7 @@
 ---
 title: 包含項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dd762d9232443230dae29e94efd78f2e67d66f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fdc57962b101b864370e2a70fdc6327ef7e6110
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302324"
 ---
 # <a name="include-element"></a>Include 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[包含的項目](https://docs.microsoft.com/visualstudio/extensibility/include-element)。  
-  
 Include 項目指定可找到的檔案上提供包含可插入至目前檔案的路徑。  所有符號和定義型別都會編譯結果的一部分。  
   
 ## <a name="syntax"></a>語法  

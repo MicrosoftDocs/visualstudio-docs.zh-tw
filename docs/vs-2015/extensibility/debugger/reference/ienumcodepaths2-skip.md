@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::Skip |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4a082e573df3c668143cd6d58887ff9cf61171
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b98688d49b8d6a4b84c085403be8d2396ebd8a54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296409"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumCodePaths2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-skip)。  
-  
 略過指定的元素數目。  
   
 ## <a name="syntax"></a>語法  

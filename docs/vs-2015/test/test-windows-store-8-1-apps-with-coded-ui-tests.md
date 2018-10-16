@@ -1,7 +1,7 @@
 ---
 title: 使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 市集應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e61c03b8f991fe462c0170db8a72d52056ea2906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175782"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[測試 Windows UWP 和 8.1 市集應用程式，使用自動程式化 UI 測試](https://docs.microsoft.com/visualstudio/test/test-windows-store-8-1-apps-with-coded-ui-tests)。  
-  
 使用此逐步解說建立 UWP 應用程式和 XAML 市集 8.1 應用程式的 UI 測試。
   
 ## <a name="create-a-simple-windows-store-app"></a>建立簡單 Windows 市集應用程式  

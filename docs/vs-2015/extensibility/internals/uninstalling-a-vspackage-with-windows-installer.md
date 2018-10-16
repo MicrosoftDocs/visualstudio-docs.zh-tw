@@ -1,7 +1,7 @@
 ---
 title: 解除安裝 Windows Installer VSPackage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24931206b6956d77414a2885758645db71e3cfff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a00f2b9bd39d25510860d1d8da0484910b8991a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283027"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[解除安裝 VSPackage 與 Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/uninstalling-a-vspackage-with-windows-installer)。  
-  
 大部分的情況下，Windows 安裝程式也可以解除安裝 VSPackage 只藉由 「 復原 」 一樣安裝 VSPackage。 自訂動作所述[命令，必須是執行之後安裝](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必須也解除安裝後執行。 Devenv.exe 呼叫發生之前進行安裝和解除安裝的 installfinalize 發生標準動作，因為 CustomAction 和 InstallExecuteSequence 資料表項目會提供這兩種情況。  
   
 > [!NOTE]

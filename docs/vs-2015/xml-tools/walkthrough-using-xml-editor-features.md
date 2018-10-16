@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 使用 XML 編輯器功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b88e916680b7a9a2098060bca10f6bc1dd139da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252280"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

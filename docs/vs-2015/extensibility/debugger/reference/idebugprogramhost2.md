@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramHost2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd8e0b54765f20dce21eae135b0942547f967836
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c374e298bd6523def8677ed46ef7aa5bb4efefba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235413"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramHost2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramhost2)。  
-  
 這個介面會提供有關計劃的主機 （處理序） 資訊。  
   
 ## <a name="syntax"></a>語法  

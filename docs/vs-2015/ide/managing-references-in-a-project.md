@@ -1,7 +1,7 @@
 ---
 title: 管理專案中的參考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa9b96370d6b0e1b39b414eeee737a32bfefcd34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195594"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "47499326"
 >  在 Visual Studio 中，所有專案都包含 `System.Core`的隱含參考，即使 `System.Core` 已從參考清單中移除也一樣。  
   
 ## <a name="references-to-shared-components-at-run-time"></a>在執行階段參考共用元件  
- 在執行階段，元件必須在 輸出路徑的專案或[Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC)。 如果專案包含不在這些位置其中之一的物件參考，您必須在建置專案時，將參考複製至專案的輸出路徑。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性表示是否要進行此複製。 如果值為 **True**，則當您建置專案時，會將參考複製至專案目錄。 如果值為 **False**，則不會複製參考。  
+ 在執行階段中，元件必須位於專案的輸出路徑或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果專案包含不在這些位置其中之一的物件參考，您必須在建置專案時，將參考複製至專案的輸出路徑。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性表示是否要進行此複製。 如果值為 **True**，則當您建置專案時，會將參考複製至專案目錄。 如果值為 **False**，則不會複製參考。  
   
  如果您部署的應用程式中包含在 GAC 中已註冊自訂元件的參考，則不論 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 設定為何，該元件都不會隨著應用程式一起部署。 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您可以在參考上設定 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性以確保組件已部署。 現在，您必須手動將組件加入 \Bin 資料夾。 這會使所有自訂程式碼受到監督，降低您在不熟悉的情況下發行自訂程式碼的風險。  
   
@@ -124,5 +124,5 @@ ms.locfileid: "47499326"
 ## <a name="see-also"></a>另請參閱  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [如何：使用參考管理員新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1a26e3a119f89f89ea71997b1463bc8d3fa8daf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b6ddc1d0e8e3a3caaee89547874e9e38115a17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194684"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](https://docs.microsoft.com/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)。  
-  
   
 Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]觀點來看。 如需完整的文件，請參閱[WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。  
   

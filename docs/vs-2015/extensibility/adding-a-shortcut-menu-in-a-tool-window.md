@@ -1,7 +1,7 @@
 ---
 title: 加入工具視窗中的捷徑功能表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217980"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增捷徑功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入工具視窗中的捷徑功能表](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window)。  
-  
 本逐步解說會置於工具視窗中的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 快顯功能表上的命令行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，在.vsct 檔案中指定它，並顯示以回應滑鼠的按一下滑鼠右鍵。  
   
  工具視窗包含 WPF 使用者控制項中自訂工具視窗類別繼承自<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>。  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 Visual Studio 擴充功能的規則為基礎的 UI 內容 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194697"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用規則式 Visual Studio 擴充功能的 UI 內容](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions)。  
-  
 Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不是非常細微精密，不離開延伸模組作者任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
   
  載入封裝可能會造成效能影響，比在需要更快載入它們並非最佳的作法。 Visual Studio 2015 導入規則型 UI 內容，一種機制，讓延伸模組作者可以定義在其下啟動 UI 內容，以及相關聯的 Vspackage 載入的精確條件的概念。  

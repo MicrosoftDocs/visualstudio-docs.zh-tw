@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76860054976ef0b2734871fb91e006a0b65e86fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4cc349fa5909575121231f949d04a65f9c1cf2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180007"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BP_LOCATION_CODE_ADDRESS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-code-address)。  
-  
 描述在程式碼中的位址中斷點的位置。  
   
 ## <a name="syntax"></a>語法  

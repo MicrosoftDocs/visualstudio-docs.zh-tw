@@ -1,7 +1,7 @@
 ---
 title: 建立您自己的起始頁 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: 87195c318f6bdc04dc0cfde54c35577142661224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232072"
 ---
 # <a name="creating-your-own-start-page"></a>建立您自己的起始頁
 您可以使用起始頁專案範本或建立空白起始頁，來建立自訂起始頁。  
@@ -61,7 +61,7 @@ ms.locfileid: "47485113"
   
 2.  開啟 StartPage.xaml。  
   
-3.  移除所有頁面內容，讓外部 xml 項目和包含格線<xref:System.Windows.Controls.Grid>項目，使您的.xaml 檔案類似下列的範例。  
+3.  移除所有頁面內容，僅保留外部 XML 項目和包含格線 <xref:System.Windows.Controls.Grid> 項目，因此您的 .xaml 檔案會與下列範例類似。  
   
     ```xaml
        <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -102,7 +102,7 @@ ms.locfileid: "47485113"
   
      運作中起始頁隨即顯示。 您必須關閉實驗執行個體，並重新複製任何變更的檔案，然後重新開啟實驗執行個體以查看新的變更。  
   
- 將 .vsix 檔案從 bin\debug 目錄上傳至 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847) 網站，或上傳至另一個網站或內部網路共用，即可共用自訂起始頁。 如需詳細資訊，請參閱 < [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+ 將 .vsix 檔案從 bin\debug 目錄上傳至 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847) 網站，或上傳至另一個網站或內部網路共用，即可共用自訂起始頁。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   

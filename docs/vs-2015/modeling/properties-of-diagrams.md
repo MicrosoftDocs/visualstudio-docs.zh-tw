@@ -1,7 +1,7 @@
 ---
 title: 圖表的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 43d5804f1a80b2616e209c47e594b29ad84911a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9db932bb5e19cdc10dde3cd8330c4a57208a0c2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280900"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[屬性的圖表](https://docs.microsoft.com/visualstudio/modeling/properties-of-diagrams)。  
-  
 您可以設定指定如何圖表會顯示在產生的設計工具中的屬性。 例如，您可以指定文字的預設色彩在圖表中。  
   
  如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  

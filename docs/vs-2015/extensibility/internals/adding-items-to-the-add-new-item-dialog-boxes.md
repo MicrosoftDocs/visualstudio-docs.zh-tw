@@ -1,7 +1,7 @@
 ---
 title: 新增項目加入新項目對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 641c593a0c8f957982801824bd4f81bd62b904d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223088"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>將項目新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將項目加入 [加入新項目] 對話方塊](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes)。  
-  
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列的登錄項目所示，AddItemTemplates 區段包含可在哪些項目中的目錄的名稱與路徑**加入新項目**放 對話方塊。  
   
 > [!NOTE]

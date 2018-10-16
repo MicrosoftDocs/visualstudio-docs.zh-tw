@@ -1,7 +1,7 @@
 ---
 title: 步驟 6：命名您的按鈕控制項 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d77cc0b6ef7dbafde3d484a4f9ffe1560be121f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e02c240f8e4146ce1c87fd1d90c30eb7787cef5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303780"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 6： 命名您的按鈕控制項](https://docs.microsoft.com/visualstudio/ide/step-6-name-your-button-controls)。  
-  
 表單上只有一個 PictureBox。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 CheckBox，名為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。  
   
 > [!NOTE]

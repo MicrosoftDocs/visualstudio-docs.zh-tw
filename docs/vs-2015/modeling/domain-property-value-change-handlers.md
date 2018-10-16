@@ -1,7 +1,7 @@
 ---
 title: 網域屬性值變更處理常式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0ae2a18c5378b8270ff653bd4016f61ab2cf4544
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232722"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

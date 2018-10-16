@@ -1,7 +1,7 @@
 ---
 title: 自訂使用者介面 (原始檔控制 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303942"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂使用者介面 (原始檔控制 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage)。  
-  
 VSPackage 透過 Visual Studio Command Table (.vsct) 檔案中宣告它的功能表項目和其預設狀態。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會顯示在其預設狀態中的功能表項目直到載入 VSPackage。 接著，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。  
   
  VSPackage 可以設定登錄機碼，以便根據命令使用者介面 (UI) 內容可以自動載入 VSPackage，雖然通常原始檔控制 VSPackage 應而不只切換到特定的 UI 內容，是視需要載入。 如需有關 AutoLoadPackages 登錄機碼的詳細資訊，請參閱[管理 Vspackage](../../extensibility/managing-vspackages.md)。  

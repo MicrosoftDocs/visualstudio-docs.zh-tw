@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields::GetCount |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 768aef20f89866d90fd71d2c13c559b19920279a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 756cc6dc2142a858227b69505a8a31770fa38a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213820"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugFields::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugfields-getcount)。  
-  
 這個方法會傳回在列舉中的項目數。  
   
 ## <a name="syntax"></a>語法  

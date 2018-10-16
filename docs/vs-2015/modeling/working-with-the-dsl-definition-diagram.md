@@ -1,7 +1,7 @@
 ---
 title: 使用 DSL 定義圖 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0874d5eff99b7e37807daee7115e66740d2661d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208581"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 DSL 定義圖表](https://docs.microsoft.com/visualstudio/modeling/working-with-the-dsl-definition-diagram)。  
-  
 圖表[!INCLUDE[dsl](../includes/dsl-md.md)]定義是定義特定領域語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。  
   
 ## <a name="the-layout-of-the-diagram"></a>圖表配置  

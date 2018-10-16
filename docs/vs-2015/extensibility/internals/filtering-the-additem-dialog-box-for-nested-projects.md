@@ -1,7 +1,7 @@
 ---
 title: 篩選巢狀專案的 AddItem 對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c007a2aa0895460f539acb50f49844f8ec158fa7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e331d070d72e06834403d35b5223257beeb27e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269655"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>篩選巢狀專案的 AddItem 對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[篩選巢狀專案的 AddItem 對話方塊](https://docs.microsoft.com/visualstudio/extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects)。  
-  
 當您顯示**AddItem**巢狀的專案時，父專案的對話方塊可以控制哪些項目會顯示在對話方塊中。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>介面可讓您篩選會在節點**AddItem**  對話方塊。 當子專案不會顯示**AddItem**  對話方塊中，可以實作父系`IVsFilterAddProjectItemDlg`介面和篩選器會顯示子系的專案中的項目。  

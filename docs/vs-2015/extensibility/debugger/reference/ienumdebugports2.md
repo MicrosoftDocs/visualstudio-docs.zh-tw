@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ff7eac1da5cba43bf93a352e571c7a1f912932b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45f295b5de5c87143c36603ba288a470f2fd2cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223532"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugPorts2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugports2)。  
-  
 此介面列舉電腦或連接埠的供應商的連接的埠。  
   
 ## <a name="syntax"></a>語法  

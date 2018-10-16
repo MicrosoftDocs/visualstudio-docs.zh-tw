@@ -1,7 +1,7 @@
 ---
 title: 如何： 新增 ClickOnce 應用程式的用戶端電腦信任的發行者 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: fb888e95bb27ce41945f8d50e6a0ed0e763df133
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 956690a89425f55de01afe84f4f3e2f9b2c71bd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302571"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 新增 ClickOnce 應用程式的用戶端電腦受信任的發行者](https://docs.microsoft.com/visualstudio/deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications)。  
-  
 您可以使用信任的應用程式部署來設定用戶端電腦，以較高的信任等級執行 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，而不提示使用者。 下列程序示範如何使用命令列工具 CertMgr.exe 將發行者的憑證新增至用戶端電腦上的受信任發行者存放區。  
   
  您使用的命令會根據發行憑證的憑證授權單位 (CA) 是否為用戶端信任的根而略有不同。 如果 Windows 用戶端電腦是網域的一部分，則會以清單形式包含視為受信任根的 CA。 系統管理員通常會設定此清單。 如果您的憑證是由其中一個受信任根所發出，或由鏈結至其中一個受信任根的 CA 所發出，則可以將憑證新增至用戶端的受信任根存放區。 另一方面，如果您的憑證不是由其中一個受信任根所發出，則必須將憑證新增至用戶端的受信任根存放區和受信任發行者存放區。  
@@ -76,7 +74,7 @@ ms.locfileid: "47497744"
  [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何： 加入用戶端電腦中的受信任的發行者，ClickOnce 應用程式](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何： 重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
  [如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
 

@@ -1,7 +1,7 @@
 ---
 title: 了解 DSL 程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d92a14466b7ca915b70bd0cad096266160e5994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251156"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[了解 DSL 程式碼](https://docs.microsoft.com/visualstudio/modeling/understanding-the-dsl-code)。  
-  
 網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。  
   
 ## <a name="the-example-solution-component-diagrams"></a>範例方案：元件圖表  

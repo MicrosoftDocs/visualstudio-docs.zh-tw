@@ -1,7 +1,7 @@
 ---
 title: 逐步解說︰ 顯示 QuickInfo 工具提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237649"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說︰顯示 QuickInfo 工具提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說︰ 顯示 QuickInfo 工具提示](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips)。  
-  
 QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用者將指標移方法名稱。 您可以實作語言為基礎的功能，例如 QuickInfo 定義您要提供 QuickInfo 描述的識別碼，然後再建立要顯示的內容中的工具提示。 您可以定義 QuickInfo 中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並顯示 QuickInfo，只要該類型，或對於現有的內容類型 （例如 「 文字 」），您可以顯示 QuickInfo。 本逐步解說示範如何顯示 QuickInfo"text"的內容類型。  
   
  QuickInfo 範例中的，在此逐步解說會顯示工具提示，當使用者將指標移方法名稱。 這項設計會要求您實作這些四個介面：  
@@ -50,7 +48,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`QuickInfoTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `QuickInfoTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -61,7 +59,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
   
 #### <a name="to-implement-the-quickinfo-source"></a>若要實作 QuickInfo 來源  
   
-1.  將類別檔案並將它命名`TestQuickInfoSource`。  
+1.  加入類別檔案，並將它命名為 `TestQuickInfoSource`。  
   
 2.  加入 Microsoft.VisualStudio.Language.IntelliSense 的參考。  
   
@@ -160,7 +158,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  匯入<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>做為屬性。  
+2.  匯入 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 作為屬性。  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

@@ -1,7 +1,7 @@
 ---
 title: 列出暫存器命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9ff1287bb4c92d074c0a0e123d48ddb7e61cc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195412"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[列出暫存器命令](https://docs.microsoft.com/visualstudio/ide/reference/list-registers-command)。  
-  
   
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。  
   
