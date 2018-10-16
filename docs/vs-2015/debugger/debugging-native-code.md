@@ -1,7 +1,7 @@
 ---
 title: 偵錯原生程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a4c8d5c19ea397f8fc23a962a045645740a1164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e04540f1ed9def4e1c292a165982bf53f9439096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217655"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯原生程式碼](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code)。  
-  
 本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 偵錯工具藍圖](../debugger/debugger-basics.md)。  
   
 ## <a name="in-this-section"></a>本節內容  

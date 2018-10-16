@@ -1,7 +1,7 @@
 ---
 title: EndTrackingContext | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6dab6e52140c3d485ee3cc0f9b62d0e7f69d5c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43c871099370b1a3b94ff855f4ee4834b9627d20
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306575"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[EndTrackingContext](https://docs.microsoft.com/visualstudio/msbuild/endtrackingcontext)。  
-  
   
 結束目前追蹤內容。  
   

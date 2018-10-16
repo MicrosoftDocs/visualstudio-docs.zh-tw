@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 秘訣和訣竅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 353ab484ae10070abe80270ec2dd210d355310a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30412c96ee0acf23e74125151b5d7d3050ab9af7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237480"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[的 Visual Studio 秘訣和訣竅](https://docs.microsoft.com/visualstudio/ide/tips-and-tricks-for-visual-studio)。  
-  
 您可以使用本主題的捷徑，更輕鬆地在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中巡覽。 如需一般資訊，請參閱 [\<PAVEOVER> Visual Studio 中的鍵盤快速鍵](http://msdn.microsoft.com/en-us/2e15e27f-296b-4e9c-91e6-d91ea0110a67)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。  
   
 -   [視窗管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)  

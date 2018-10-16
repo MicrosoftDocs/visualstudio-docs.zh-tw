@@ -1,7 +1,7 @@
 ---
 title: '&lt;InstallChecks&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c4f5dde151993e7844cd9295d7aa16f7fd73327b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2d004d02ce886095d73004ee9b282d7d24ab9cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217200"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;InstallChecks&gt;項目 （啟動載入器）](https://docs.microsoft.com/visualstudio/deployment/installchecks-element-bootstrapper)。  
-  
 `InstallChecks`項目支援啟動各種測試，以確定所有的應用程式的適當必要條件都已安裝在本機電腦。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 實作連接埠提供者 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d14c2642d30ee46df0cd1b766540ae0b135e4d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180748"
 ---
 # <a name="implementing-a-port-supplier"></a>實作連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[實作連接埠供應商](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-a-port-supplier)。  
-  
 連接埠提供者會提供工作階段的偵錯管理員 (SDM) 的要求上的連接埠。 連接埠提供者必須對非 DCOM 機器偵錯時，或當新的裝置必須支援實作。 比方說，若要提供對手機偵錯，您可以實作連接埠提供者，提供行動電話 （或許是藉由連線到 IR 或儲存格連接），並列舉的處理程序和手機上執行的程式的連接埠。  
   
  對於以 Windows 為基礎的電腦 （包括遠端偵錯） 上的偵錯程式，Visual Studio 會提供原生和 Common Language Runtime (CLR) 處理程序的連接埠提供者，這樣就不需要在這些情況下實作您自己的連接埠提供者。  

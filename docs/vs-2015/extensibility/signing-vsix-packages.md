@@ -1,7 +1,7 @@
 ---
 title: 簽署 VSIX 封裝 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f25ce39fe1c96d0e45b89fdd6114ce6984be2d16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263873"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[簽署 VSIX 封裝](https://docs.microsoft.com/visualstudio/extensibility/signing-vsix-packages)。  
-  
 延伸模組組件不需要經過簽署才能在 Visual Studio 中，可以執行，但最好這麼做。  
   
  如果您想要保護您的延伸模組，並確定未遭到竄改，您可以加入 VSIX 封裝來數位簽章。 當已簽署 VSIX 時，VSIX 安裝程式會顯示一則訊息指出它已簽署，再加上簽章本身的相關詳細資訊。 如果有已修改的 VSIX 內容，尚未重新簽署 VSIX，VSIX 安裝程式將會顯示簽章無效。 安裝並不會停止，但會警告使用者。  

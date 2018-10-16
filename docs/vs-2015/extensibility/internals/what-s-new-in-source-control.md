@@ -1,7 +1,7 @@
 ---
 title: 什麼&#39;原始檔控制的新功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217032"
 ---
 # <a name="what39s-new-in-source-control"></a>什麼&#39;原始檔控制的新功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[功能&#39;新原始檔控制中的 s](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control)。  
-  
 在 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]您可以藉由實作原始檔控制 VSPackage 提供深入的整合式原始檔控制解決方案。 本節說明的原始檔控制 Vspackage 功能，並提供實作步驟的概觀。  
   
 ## <a name="the-source-control-vspackage"></a>原始檔控制 VSPackage  

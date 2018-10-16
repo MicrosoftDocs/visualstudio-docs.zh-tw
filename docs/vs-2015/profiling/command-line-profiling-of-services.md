@@ -1,7 +1,7 @@
 ---
 title: 服務的命令列分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc44d7f9ea822dfb7c5d68e6769e36a0ff9aeae4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86613c66cf7c52419d75a858d7ad7d7fbcf6a83d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178775"
 ---
 # <a name="command-line-profiling-of-services"></a>服務的命令列程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[服務命令列程式碼剖析](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-services)。  
-  
 本節說明從命令列使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具收集 Windows 服務之效能資料的程序和選項。  
   
 > [!NOTE]
@@ -48,7 +46,7 @@ ms.locfileid: "47488435"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**分析獨立 (用戶端) 應用程式**|-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+|**分析獨立 (用戶端) 應用程式**|-   [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
 |**分析 ASP.NET 應用程式**|-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 
 

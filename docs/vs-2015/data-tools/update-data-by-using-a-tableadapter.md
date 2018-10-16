@@ -1,7 +1,7 @@
 ---
 title: 使用 TableAdapter 更新資料 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dfeced126cfa80d28ad1e3245486c63101e6e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237272"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 TableAdapter 更新資料](https://docs.microsoft.com/visualstudio/data-tools/update-data-by-using-a-tableadapter)。  
-  
   
 在資料集中的資料已修改且驗證之後，您可以將更新的資料傳送回 databaseby 呼叫`Update`方法[TableAdapter](../data-tools/tableadapter-overview.md)。 `Update`方法會更新單一資料表，並執行正確的命令 （INSERT、 UPDATE 或 DELETE） 根據<xref:System.Data.DataRow.RowState%2A>的資料表中每個資料列。 當資料集有相關的資料表時，則 Visual Studio 會產生 TableAdapterManager 類別，您用來進行更新。 TableAdapterManager 類別可確保以正確的順序，根據資料庫所定義的外部索引鍵條件約束會進行更新。 當您使用資料繫結控制項時，資料繫結架構會建立呼叫 tableAdapterManager TableAdapterManager 類別成員變數。 如需詳細資訊，請參閱 <<c0> [ 階層式更新概觀](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)。  
   

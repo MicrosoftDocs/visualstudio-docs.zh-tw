@@ -1,7 +1,7 @@
 ---
 title: '&lt;描述&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 473ebf814ab65c34ee99cab0cf2cc239e0d013eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ddba6356ab051dbad27e55eefd53a517b47a21a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224766"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;描述&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;描述&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/description-element-clickonce-deployment)。  
-  
 識別用來建立 shell 的存在的應用程式資訊和**新增或移除程式**控制台 中的項目。  
   
 ## <a name="syntax"></a>語法  
@@ -49,7 +47,7 @@ ms.locfileid: "47484963"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `description` 為必要元素，位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它包含沒有子項目，並具有下列屬性。  
+ `description` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它包含沒有子項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  

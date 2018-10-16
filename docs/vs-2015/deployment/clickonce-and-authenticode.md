@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 和 Authenticode |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289480"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 和 Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode)。  
-  
-Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署與驗證的應用程式發行者真偽的數位簽章的應用程式程式碼。 使用 Authenticode 部署應用程式，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。  
+Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署與驗證的應用程式發行者真偽的數位簽章的應用程式程式碼。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。  
   
  下列各節說明 Authenticode 使用的不同數位簽章類型、如何使用憑證授權單位 (CA) 驗證憑證、憑證的時間戳記角色，以及憑證可用的儲存方法。  
   
 ## <a name="authenticode-and-code-signing"></a>Authenticode 與程式碼簽署  
  *數位憑證* 是包含密碼編譯公用/私密金鑰組的檔案，以及描述憑證發行對象與憑證發行單位的發行者中繼資料。  
   
- Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 如果您嘗試登入[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式與另一種憑證，例如數位電子郵件憑證，它將無法運作。 如需詳細資訊，請參閱 [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(程式碼簽署簡介)。  
+ Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 若嘗試使用另一種憑證類型簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，例如數位電子郵件憑證，它會無法運作。 如需詳細資訊，請參閱 [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(程式碼簽署簡介)。  
   
  有三種方法可以取得程式碼簽署憑證︰  
   
@@ -76,7 +74,7 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
   
 ### <a name="storing-certificates"></a>儲存憑證  
   
--   您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署的 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
+-   您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

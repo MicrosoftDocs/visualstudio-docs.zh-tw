@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 應用程式資訊清單 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 28d96d1edaba18b6b6c171139db116ad7f8b49bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289584"
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Ndptecclick](https://docs.microsoft.com/visualstudio/deployment/clickonce-application-manifest)。  
-  
 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單是 XML 檔案，描述應用程式部署使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單有下列項目和屬性。  
@@ -44,7 +42,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單�
 |[\<trustInfo > 項目](../deployment/trustinfo-element-clickonce-application.md)|識別應用程式安全性需求。|無|  
 |[\<進入點 > 項目](../deployment/entrypoint-element-clickonce-application.md)|必要。 識別應用程式程式碼進入點。|`name`|  
 |[\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md)|必要。 識別執行應用程式所需的每個相依性。 選擇性地識別需要預先安裝的組件。|無|  
-|[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)|選擇性。 識別應用程式所使用的每個非組件檔案。 可以包含與檔案相關聯的元件物件模型 (COM) 隔離資料。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<file> 元素](../deployment/file-element-clickonce-application.md)|選擇性。 識別應用程式所使用的每個非組件檔案。 可以包含與檔案相關聯的元件物件模型 (COM) 隔離資料。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)|選擇性。 識別要與應用程式相關聯的副檔名。|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>備註  

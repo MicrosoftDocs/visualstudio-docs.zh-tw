@@ -1,7 +1,7 @@
 ---
 title: 如何： 設定 ClickOnce 發行版本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d832f28ddbd12bd72d018c841cf114ddae709e38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3965e9600fa3ef6a091ae8e32439e8e4f420668
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271709"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>如何：設定 ClickOnce 發行版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 設定 ClickOnce 發行版本](https://docs.microsoft.com/visualstudio/deployment/how-to-set-the-clickonce-publish-version)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version`屬性會決定是否要發行的應用程式將會被視為更新。 每個階段的版本會遞增，將更新的形式發行應用程式。  
   
  `Publish Version`上設定屬性**發佈**頁面**專案設計工具**。  

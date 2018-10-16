@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 將內容類型連結至副檔名為 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261725"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說︰將內容類型連結至副檔名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 將內容類型連結至副檔名為](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension)。  
-  
 您可以定義您自己的內容類型，並連結到它的副檔名，透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能。 在某些情況下，檔案名稱的副檔名已經定義的語言服務;不過，以搭配 MEF 您仍然必須連結到內容類型。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -34,13 +32,13 @@ ms.locfileid: "47500461"
   
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`ContentTypeTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ContentTypeTest`。  
   
 2.  在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
   
 ## <a name="defining-the-content-type"></a>定義內容類型  
   
-1.  將類別檔案並將它命名`FileAndContentTypes`。  
+1.  加入類別檔案，並將它命名為 `FileAndContentTypes`。  
   
 2.  加入下列組件的參考：  
   

@@ -1,7 +1,7 @@
 ---
 title: 快速入門： 使用偵錯 JavaScript 主控台 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205513"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[快速入門： 使用主控台偵錯 JavaScript](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  您可以使用 [JavaScript 主控台] 視窗進行互動，並且為使用 JavaScript 建置的市集 App 偵錯。 這些功能支援 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] App、Windows Phone 市集 App 和使用 Visual Studio Tools for Apache Cordova 所建立的 App。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
@@ -176,7 +174,7 @@ ms.locfileid: "47487669"
   
      也請注意， `items._data` 物件中的項目數會比預期多很多。  
   
-10. 在提示字元中輸入 `Data.items.push` 並按下 Enter。 主控台視窗便會顯示在 [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] 專案檔中實作之 `push` 函式的視覺化檢視。 在此 App 中，我們將使用 `push` 加入正確的項目。 使用 IntelliSense 進行一些調查之後，就會發現我們應該使用 `setAt` 取代預設影像。  
+10. 在提示字元中輸入 `Data.items.push` 並按下 Enter。 主控台視窗便會顯示在 `push` 專案檔中實作之 [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] 函式的視覺化檢視。 在此 App 中，我們將使用 `push` 加入正確的項目。 使用 IntelliSense 進行一些調查之後，就會發現我們應該使用 `setAt` 取代預設影像。  
   
 11. 若要在不停止偵錯工作階段的情況下以互動方式修正這個問題，請開啟 default.js，然後從 `updateImages` 函式選取以下程式碼：  
   
@@ -280,11 +278,11 @@ ms.locfileid: "47487669"
   
 -   在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
   
--   在 [!INCLUDE[win8](../includes/win8-md.md)] 上執行的 Internet Explorer 10  
+-   在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
 ## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   

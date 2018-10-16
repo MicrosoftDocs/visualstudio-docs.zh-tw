@@ -1,7 +1,7 @@
 ---
 title: 以 UML 順序圖表說明具有片段的控制流程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260217"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>以 UML 循序圖說明具有片段的控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[描述控制流程，以在 UML 循序圖上的片段](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams)。  
-  
 在 UML 循序圖中， *「合併片段」* (combined fragment) 可讓您顯示迴圈、分支，與其他替代方案。  
   
  合併片段包含一或多個 *「互動運算元」*(interaction operand)，而這每一個都含括一或多個訊息、互動使用或合併片段。  
   
 > [!NOTE]
->  本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+>  本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![合併片段有兩個互動運算元](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

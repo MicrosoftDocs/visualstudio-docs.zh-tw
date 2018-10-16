@@ -1,7 +1,7 @@
 ---
 title: 如何：建立基本材質 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fd26ddef0e4076603ef22589bcbd59e472bf9d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292795"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立基本材質](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-texture)。  
-  
 本文件將示範如何使用影像編輯器來建立基本材質。  
   
  本文件示範下列活動︰  
@@ -98,7 +96,7 @@ ms.locfileid: "47490668"
  下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [影像編輯器](../designers/image-editor.md)
+ [Image Editor](../designers/image-editor.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 升級自訂專案與項目範本，適用於 Visual Studio"15"|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221152"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>適用於 Visual Studio"15"升級自訂專案與項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[升級自訂專案與項目範本，適用於 Visual Studio ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017)。  
-  
 從 Visual Studio"15"Preview 4 中，Visual Studio 會變更其探索已安裝的.vsix 或.msi 的專案和項目範本的方式。 如果您擁有使用自訂專案或項目範本的延伸模組，您需要更新您的擴充功能。 本主題說明您必須。  
   
  這項變更會影響 Visual Studio"15"。 它不會影響舊版的 Visual Studio。  

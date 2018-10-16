@@ -1,7 +1,7 @@
 ---
 title: 選項對話方塊、環境、同步設定 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 41212c96fbbc1847a272635275f83482b6f58856
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48aafd74eeec50fd55ec6ef364b01be806951897
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261452"
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>選項對話方塊、環境、同步設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[同步處理、 環境、 設定 [選項] 對話方塊](https://docs.microsoft.com/visualstudio/ide/reference/synchronized-settings-environment-options-dialog-box)。  
-  
   
 您可以使用這個頁面，指定是否要在多部電腦之間同步 (漫遊) 您的設定。 如需詳細資訊，請參閱[同步設定](../../ide/synchronized-settings-in-visual-studio.md)。  
   

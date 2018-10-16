@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立和執行自動的安裝的 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173845"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "47497441"
      安裝也失敗，如果路徑中的資料夾名稱包含內嵌的空白字元 (例如，「\\\\*ServerName*\IDE install"或\\ \\ *ServerName*\Visual studio\\)。  
   
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>以自動模式部署 Visual Studio  
- 若要以自動模式部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，您必須修改 AdminDeployment.xml 檔案。 若要這樣做，您必須先建立 AdminDeployment.xml 檔案使用`/CreateAdminFile` *\<檔案位置 >* 命令列參數。 如果您將檔案放在 *磁碟機*:\IDEinstall\packages 目錄，即可使用此檔案將 Visual Studio 部署推送至您的網路或提取至安裝中。 AdminDeployment.xml 檔案對於作業系統、架構、Visual Studio 版本或作業系統語言不是唯一的。  
+ 若要以自動模式部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，您必須修改 AdminDeployment.xml 檔案。 若要這樣做，您必須先建立 AdminDeployment.xml 檔案使用`/CreateAdminFile` *\<檔案位置 >* 命令列參數。 如果您將檔案放在 *磁碟機*:\IDEinstall\packages 目錄，即可使用此檔案將 Visual Studio 部署推送至您的網路或提取至安裝中。 AdminDeployment.xml 檔案對於作業系統、架構、Visual Studio 版本或作業系統語言不是唯一的。  
   
 > [!CAUTION]
 >  有時，無法安裝 AdminDeployment.xml 檔案中列為選取的項目。 若要解決這個問題，請將標記為 “Selected="是"” 的項目放在 AdminDeployment.xml 檔案的 **結尾處** 。  
@@ -60,7 +60,7 @@ ms.locfileid: "47497441"
 >  執行這項作業的另一個方法，就是省略父代的選擇性子系，換言之，不包括任何 “Selected=”否”” 的項目；但是您仍然必須將所有 “Selected=”是”” 的項目放在 AdminDeployment.xml 檔案的結尾處。  
   
 > [!IMPORTANT]
->  進行安裝時，電腦可能會自動重新啟動一次或多次。 重新啟動之後，您必須使用在執行安裝且電腦重新啟動前所用的相同使用者登入帳戶來重新登入。 您可以在執行自動安裝之前先安裝必要條件元件，即可避免自動重新啟動。 如需詳細資訊，請參閱 < 避免重新啟動期間設定 > 一節[Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)。  
+>  進行安裝時，電腦可能會自動重新啟動一次或多次。 重新啟動之後，您必須使用在執行安裝且電腦重新啟動前所用的相同使用者登入帳戶來重新登入。 您可以在執行自動安裝之前先安裝必要條件元件，即可避免自動重新啟動。 如需詳細資訊，請參閱 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中的＜避免設定期間重新啟動＞一節。  
   
  AdminDeployment 檔案結構描述包含下列項目：  
   
@@ -93,7 +93,7 @@ ms.locfileid: "47497441"
   
 -   開啟**開始**功能表上，選擇**執行**，然後輸入\\ \\ *ServerName*\IDEinstall\vs_*產品*.exe /adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
   
-     例如，您可以指定下列命令列： `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+     例如，您可以指定下列命令列：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>讓用戶端以預先定義的設定手動安裝 Visual Studio  
   
@@ -111,7 +111,7 @@ ms.locfileid: "47497441"
   
 -   開啟 [控制台] ，然後選擇 [程式和功能] 。  
   
--   選擇[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然後選擇**變更**。  
+-   選擇 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然後選擇 [變更] 。  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>在 Visual Studio 安裝之後變更在用戶端電腦上的 AdminDeployment 設定  
   
@@ -123,7 +123,7 @@ ms.locfileid: "47497441"
   
      AdditionalParametersAsNeeded  
   
-     例如，您可以指定下列命令列： `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+     例如，您可以指定下列命令列：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
  安裝 Visual Studio 之後，Repair 是預設參數。 如果您已更新的 /AdminFile 使用之修復 Visual Studio，您將會覆寫目前的系統管理員部署設定與更新後的 AdminDeployment.xml 檔案會叫用。  
   
@@ -170,7 +170,7 @@ ms.locfileid: "47497441"
         4.  最新的更新應該會出現在 [功能] 頁面上。 選取您想要安裝，請按一下的功能**下一步**，然後按一下**更新**安裝更新和新功能。  
   
 ## <a name="registering-the-product"></a>正在登錄產品  
- 安裝完成之後，即可從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內註冊您的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 複本。  
+ 安裝完成之後，即可從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內註冊您的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]複本。  
   
 #### <a name="to-register"></a>註冊  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何：從命令列篩選報表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14be02ecf293cfb141b671917a715c8013009d2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a93e1bb2e1d3a65d82a4a0ac54e903ee20553d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290143"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>如何：從命令列篩選報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 篩選報表，從命令列](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-reports-from-the-command-line)。  
-  
 使用 **VSPerfReport** 命令的選項，即可將報表篩選到分析資料檔案的特定時間區段，或將資料限制到一或多個處理序或執行緒。 如需此命令的詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 |選項|描述|  

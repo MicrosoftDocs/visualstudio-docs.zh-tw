@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetPhysicalProcessId |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce1142bc7fbf5bab715c0e9386bce232c69be814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70f2ff2c166a2c3f340796350722d76583ea4be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263272"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcess2::GetPhysicalProcessId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getphysicalprocessid)。  
-  
 取得系統處理序識別碼。  
   
 ## <a name="syntax"></a>語法  

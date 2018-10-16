@@ -1,7 +1,7 @@
 ---
 title: 行動性警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 804c10b83f0fd648b11d0d50b9315225a6441ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73864234604f22ec15340740442505fec3e078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270071"
 ---
 # <a name="mobility-warnings"></a>行動性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[行動性警告](https://docs.microsoft.com/visualstudio/code-quality/mobility-warnings)。  
-  
 行動性警告支援有效率的用電量。  
   
 ## <a name="in-this-section"></a>本節內容  

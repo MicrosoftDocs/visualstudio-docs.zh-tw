@@ -1,7 +1,7 @@
 ---
 title: 共用色彩 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299334"
 ---
 # <a name="shared-colors"></a>共用色彩
 在此插入簡介。  

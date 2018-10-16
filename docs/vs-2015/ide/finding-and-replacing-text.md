@@ -1,7 +1,7 @@
 ---
 title: 尋找和取代文字 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273438"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Finding and Replacing Text](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text)。  
-  
 在 Visual Studio 程式碼編輯器以及特定以文字為基礎的輸出視窗 (例如 [尋找結果] 視窗) 中，您可以使用 [尋找和取代] 控制項或 [檔案中尋找/取代] 來尋找和取代文字。 您也可以在某些設計工具視窗 (例如 XAML 設計工具和 Windows Forms 設計工具) 以及工具視窗中進行搜尋和取代。  
   
  您可以將搜尋範圍設為目前文件、目前方案或一組自訂的資料夾。 您也可以指定一組副檔名來搜尋多個檔案。 您可以使用 .NET 規則運算式來自訂搜尋語法。  

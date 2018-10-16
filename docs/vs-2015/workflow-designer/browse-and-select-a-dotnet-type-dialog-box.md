@@ -1,7 +1,7 @@
 ---
 title: 瀏覽並選取.NET 類型對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9347ee1d06e07f983b023e0bb67f1147b91e9adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192527"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 在 [**屬性**] 視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**Vyhledat Typy...** 從清單中的資料型別，是**瀏覽並選取.NET 型別**對話方塊 （簡稱為 「 型別瀏覽器 」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢閱中選擇型別。  

@@ -1,7 +1,7 @@
 ---
 title: 偵錯基本概念： 暫存器視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 201f9b1401889aacfbf748962d472cb4323ec0bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa204726632f55ad6aa1b79e0b9d071864a5dcaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488250"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210297"
 ---
 # <a name="debugging-basics-registers-window"></a>偵錯基本概念：暫存器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯基本概念： 暫存器視窗](https://docs.microsoft.com/visualstudio/debugger/debugging-basics-registers-window)。  
-  
 **註冊** 視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點。  
   
  暫存器是處理器 (CPU) 中的特殊位置，用來儲存處理器正在使用中的小型資料。 編譯或解譯原始程式碼將會根據需要，產生可將資料從記憶體移到暫存器，以及從暫存器移回記憶體的指示。 和存取記憶體內的資料相比，存取暫存器資料的速度非常快，因此允許處理器將資料留在暫存器內並重複存取的程式碼在執行方面，會比需要處理器經常載入與卸載暫存器的程式碼快很多。 為了讓編譯器可以更容易將資料保存於暫存器內，並執行其他的最佳化處理，您應該避免使用全域變數，盡可能使用區域變數。 用這種方式撰寫的程式碼，通常都會具有良好的參考位置。 使用某些語言時 (例如，C/C++)，程式設計人員可宣告一個暫存器變數 (Register Variable)，要求編譯器盡量將該變數保留在暫存器內。 如需詳細資訊，請參閱 < [Register 關鍵字](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)。  

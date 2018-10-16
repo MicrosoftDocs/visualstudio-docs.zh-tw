@@ -1,7 +1,7 @@
 ---
 title: 新增項目命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f380a11440ed413871d2c80603148aa7cc77390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240223"
 ---
 # <a name="add-new-item-command"></a>加入新項目命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入新項目命令](https://docs.microsoft.com/visualstudio/ide/reference/add-new-item-command)。  
-  
   
 將新的方案項目，例如 .htm、.css、.txt 或框架組新增至目前的方案，並開啟它。  
   
@@ -78,7 +76,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

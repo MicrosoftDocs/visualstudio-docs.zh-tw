@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadCreateEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd3f3a95c6c3fcc08fadc3ff796e7bd8e099ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b975e1749a79cf90c1bcf5b18118dffd43c7607
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497587"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186782"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugThreadCreateEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthreadcreateevent2)。  
-  
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時進行偵錯程式中會建立一個執行緒。  
   
 ## <a name="syntax"></a>語法  

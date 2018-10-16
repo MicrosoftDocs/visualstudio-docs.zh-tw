@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 以 Dataset 設計工具建立 DataTable |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 832dba200fca438d000bae101381389ea20cfb17
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f0f31528239794b9c7a3b4a4bf98542ed4bbcf2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488240"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299958"
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立 DataTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "47488240"
   
 2.  命名的資料行`SongID`。  
   
-3.  在 **屬性**視窗中，將<xref:System.Data.DataColumn.DataType%2A>屬性設<xref:System.Int16?displayProperty=fullName>。  
+3.  在 [屬性]  視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。  
   
 4.  重複此程序，並新增下列資料行：  
   
@@ -119,7 +119,7 @@ ms.locfileid: "47488240"
   
 #### <a name="to-save-the-datatablewalkthrough-project"></a>若要儲存 DataTableWalkthrough 專案  
   
--   在 **檔案**功能表上，按一下**全部儲存**。  
+-   按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 ## <a name="next-steps"></a>後續步驟  
  既然您已建立資料表，您可能想要執行下列動作之一：  

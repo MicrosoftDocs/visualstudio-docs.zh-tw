@@ -1,7 +1,7 @@
 ---
 title: 在 Just-in-time 偵錯在 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294043"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio 中的 Just-In-Time 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio Just-In-Time 偵錯](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio)。  
-  
 在 Just-in-time 偵錯 Visual Studio 會自動啟動 Visual Studio 外部執行的應用程式中發生的例外狀況或損毀時。 這可讓您測試您的應用程式，若未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
 
 在 Just-in-time 偵錯適用於 Windows 桌面應用程式。 不適用於 Windows 通用應用程式，並不適用於裝載在原生應用程式，例如視覺化檢視中的 managed 程式碼。

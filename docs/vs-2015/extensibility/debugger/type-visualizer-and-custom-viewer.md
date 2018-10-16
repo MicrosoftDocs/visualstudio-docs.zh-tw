@@ -1,7 +1,7 @@
 ---
 title: 類型視覺化檢視和自訂檢視器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201886"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>類型視覺化檢視和自訂檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[類型的視覺化檢視和自訂檢視器](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer)。  
-  
 類型視覺化檢視是以非常特定的格式顯示一段資料的元件。 這種格式是完全由實作者的視覺化檢視、 使用者或視覺化檢視的第三方供應商。  
   
  自訂檢視器是以非常特定的格式顯示資料片段的自訂運算式評估工具的一部分。 此格式會完全由實作者的自訂檢視器中，這表示的格式是由實作者的運算式評估工具 (EE)。  

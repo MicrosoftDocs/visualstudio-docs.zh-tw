@@ -1,7 +1,7 @@
 ---
 title: Web 專案的基本資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3ec8de19f1546941d3e96c8c2cebebad408c9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b30dd0616fcf2f59044a782bf8611ef2fa946f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188731"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Web 專案的基本資訊](https://docs.microsoft.com/visualstudio/extensibility/internals/web-project-essentials)。  
-  
 Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧型 Web 網頁的 Web 應用程式。 智慧型的網頁上具有呈現網頁上，依需求的伺服器端程式碼。  
   
  使用傳統的程式設計語言，例如[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]，您可以建立智慧型 Web 頁面，來收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。  

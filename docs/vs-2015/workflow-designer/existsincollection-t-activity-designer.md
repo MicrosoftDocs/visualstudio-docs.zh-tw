@@ -1,7 +1,7 @@
 ---
 title: ExistsInCollection&lt;T&gt;活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5c8fec33a7233960f1b90d5d4a644c8887b0f2b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa4de7e599e2707e1b949536c1d94e32e3eb33e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177719"
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt;活動設計工具
 **ExistsInCollection\<T >** 活動設計工具會用來建立及設定<xref:System.Activities.Statements.ExistsInCollection%601>活動。  

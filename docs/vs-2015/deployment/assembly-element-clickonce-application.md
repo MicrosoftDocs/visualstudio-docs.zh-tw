@@ -1,7 +1,7 @@
 ---
 title: '&lt;組件&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: edd968ffb6f2b0422e54bc6d456c1090d189fcc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44437c0ff78c5f957a0d774530e8911513ba0fd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191772"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;組件&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;組件&gt;項目 （ClickOnce 應用程式）](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-application)。  
-  
 應用程式資訊清單最上層項目。  
   
 ## <a name="syntax"></a>語法  
@@ -56,7 +54,7 @@ ms.locfileid: "47491936"
   
  組件的子項目也必須是這些命名空間，繼承或標記。  
   
- `assembly`項目具有下列屬性。  
+ `assembly` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  

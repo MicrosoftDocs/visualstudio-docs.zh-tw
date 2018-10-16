@@ -1,7 +1,7 @@
 ---
 title: 運算式評估工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8856284869a256f9be08931b36db644621a3202d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c65705cd38ef202d06e6461f59e5b4e5ae5c9a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225286"
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[運算式評估工具](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluator)。  
-  
 運算式評估工具 (EE) 檢查來剖析，並在執行階段評估變數和運算式語言的語法，讓 IDE 處於中斷模式時，使用者可以檢視。  
   
 ## <a name="using-expression-evaluators"></a>使用運算式評估工具  

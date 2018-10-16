@@ -1,7 +1,7 @@
 ---
 title: 協助工具秘訣和訣竅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241016"
 ---
 # <a name="accessibility-tips-and-tricks"></a>協助工具秘訣和訣竅
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[協助工具祕訣和訣竅](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks)。  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 包括內建協助工具功能，可讓您透過鍵盤輕鬆工作，以及使用螢幕助讀程式或其他輔助技術裝置。 本主題包括針對協助工具最佳化 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的一些建議，以及一些實用快速鍵組合。  
   

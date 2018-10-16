@@ -1,7 +1,7 @@
 ---
 title: 尋找資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 354edababb1dab3e85310650d17f14e06cbaa4dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9f25c8aab422cb98e61b36143b5255bfbd3f10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492048"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243616"
 ---
 # <a name="locate-information"></a>尋找資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

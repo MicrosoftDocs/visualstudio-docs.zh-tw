@@ -1,7 +1,7 @@
 ---
 title: '&lt;組件&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 96978ec8329ddf31b2cc641bf02d2b38a9e98f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259944"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;組件&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-deployment)。  
-  
 部署資訊清單最上層項目。  
   
 ## <a name="syntax"></a>語法  
@@ -48,7 +46,7 @@ ms.locfileid: "47487423"
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `assembly`元素是根項目，且需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間： `urn:schemas-microsoft-com:asm.v1`， `urn:schemas-microsoft-com:asm.v2`，和`http://www.w3.org/2000/09/xmldsig#`。 組件的子項目也必須是這些命名空間，繼承或標記。  
   
- `assembly`項目具有下列屬性。  
+ `assembly` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  

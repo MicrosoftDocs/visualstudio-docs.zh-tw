@@ -1,7 +1,7 @@
 ---
 title: 什麼&#39;Visual Studio 2015 的新功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226162"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]

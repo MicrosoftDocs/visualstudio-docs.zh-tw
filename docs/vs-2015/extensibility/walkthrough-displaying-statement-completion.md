@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 顯示陳述式完成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280577"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>逐步解說：顯示陳述式完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 顯示陳述式完成](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion)。  
-  
 您可以定義您要提供完成的識別碼，並接著觸發完成工作階段，以實作語言為基礎的陳述式完成。 您可以定義的語言服務內容中的陳述式完成、 定義您自己的副檔名和內容類型，然後顯示 完成，只要該類型，或現有的內容類型為完成的觸發程序 — 比方說，「 純文字 」。 本逐步解說示範如何觸發 「 純文字 」 內容類型，也就是文字檔案的內容類型的陳述式完成。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  
   
  完成陳述式通常會觸發輸入某些字元，例如，藉由輸入的識別碼，例如 「 使用 」 開頭。 它通常是藉由按下空格鍵、 Tab 或 Enter 鍵，以認可的選取項目關閉。 您可以實作所觸發的輸入字元的按鍵輸入使用的命令處理常式的 intellisense (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面) 和實作的處理常式提供者<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>介面。 若要建立完成來源時，也就是參與完成識別碼的清單，實作<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>介面和完成來源提供者 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>介面)。 提供者是 Managed Extensibility Framework (MEF) 元件組件。 他們會負責將匯出的來源和控制器類別，以及匯入服務和代理程式 — 例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，可讓文字緩衝區中，瀏覽和<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>，此觸發程序完成的工作階段。  
@@ -40,7 +38,7 @@ ms.locfileid: "47500123"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`CompletionTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `CompletionTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -65,7 +63,7 @@ ms.locfileid: "47500123"
   
 #### <a name="to-implement-the-completion-source"></a>若要實作完成來源  
   
-1.  將類別檔案並將它命名`TestCompletionSource`。  
+1.  加入類別檔案，並將它命名為 `TestCompletionSource`。  
   
 2.  新增這些匯入：  
   

@@ -1,7 +1,7 @@
 ---
 title: 在 Vspackage 中安全性的最佳作法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e294995a25b0369ab839680a97fe670f9a99508d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80c27618582f42f1647e49cbf3f64d6b493dfd8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203589"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackage 中安全性的最佳做法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Vspackage 中安全性的最佳做法](https://docs.microsoft.com/visualstudio/extensibility/internals/best-practices-for-security-in-vspackages)。  
-  
 若要安裝[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]您在電腦上，您必須執行系統管理認證的內容中。 安全性和部署的基本單位[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]應用程式[Vspackage](../../extensibility/internals/vspackages.md)。 必須使用註冊 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，也需要系統管理認證。  
   
  系統管理員具有完整權限以寫入登錄和檔案系統，並執行任何程式碼。 您必須具有這些權限，來開發、 部署，或安裝 VSPackage。  

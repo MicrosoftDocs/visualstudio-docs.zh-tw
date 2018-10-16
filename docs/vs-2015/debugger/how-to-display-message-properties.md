@@ -1,7 +1,7 @@
 ---
 title: 如何： 顯示訊息屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a276c518cf28ab98ab1e548e49db7ff713070d73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a58396756456d025f978ca101076c921d4d2772
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237129"
 ---
 # <a name="how-to-display-message-properties"></a>如何：顯示訊息屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 顯示訊息屬性](https://docs.microsoft.com/visualstudio/debugger/how-to-display-message-properties)。  
-  
 若要深入了解中所列的訊息[訊息檢視](../debugger/messages-view.md)，使用[訊息內容 對話方塊](../debugger/message-properties-dialog-box.md)。  
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>若要開啟 [訊息屬性] 對話方塊  

@@ -1,7 +1,7 @@
 ---
 title: 自訂項目工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 91866f93f5a5a10f3a4295c21ee5e2046853ff4c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220502"
 ---
 # <a name="customizing-element-tools"></a>自訂項目工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂項目工具](https://docs.microsoft.com/visualstudio/modeling/customizing-element-tools)。  
-  
 某些在 DSL 定義中，在中，您可以表示單一的概念為一組項目。 比方說，如果您建立的模型，其中一個元件都有一組固定的連接埠，您一定想要在其父元件的相同時間建立的連接埠。 因此，您必須自訂項目建立工具，因此它會建立一組項目，而不是其中一個。 若要這麼做，您可以自訂初始化項目建立工具的方式。  
   
  此外，您也可以覆寫工具拖曳到圖表或項目時，會發生什麼事。  

@@ -1,7 +1,7 @@
 ---
 title: 建立 Windows Forms 工具箱控制項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294212"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立 Windows Forms 工具箱控制項](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control)。  
-  
 Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK) 可讓您建立的控制項，會自動新增至**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -67,7 +65,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
     |`Button1`|**Text**|重設|  
   
 ### <a name="coding-the-user-control"></a>編碼使用者控制項  
- `Counter` 控制項會公開遞增計數器的方法、計數器每次遞增所引發的事件、 `Reset` 按鈕、儲存目前計數的三個屬性、顯示文字，以及要顯示或隱藏 `Reset` 按鈕。 `ProvideToolboxControl`屬性會決定在何處**工具箱**`Counter`控制項就會出現。  
+ `Counter` 控制項會公開遞增計數器的方法、計數器每次遞增所引發的事件、 `Reset` 按鈕、儲存目前計數的三個屬性、顯示文字，以及要顯示或隱藏 `Reset` 按鈕。 `ProvideToolboxControl` 屬性會決定 [工具箱]  顯示 `Counter` 控制項的位置。  
   
 ##### <a name="to-code-the-user-control"></a>使用者控制項的程式碼  
   
@@ -145,7 +143,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```  
   
-8.  類別定義正上方中`ProvideToolboxControl`屬性宣告中，從第一個參數的值變更`"MyWinFormsControl.Counter"`至`"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
+8.  在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
   
      下列範例會顯示 `ProvideToolboxControl` 屬性和調整過的類別定義。  
   

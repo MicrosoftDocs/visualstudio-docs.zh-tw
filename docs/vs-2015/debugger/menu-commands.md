@@ -1,7 +1,7 @@
 ---
 title: 功能表命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb0c10af095e0829cbeaddf11b194b3bd29a1c62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 327d54933e3fd3709603191db4fdfab0bae757e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177460"
 ---
 # <a name="menu-commands"></a>功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[功能表命令](https://docs.microsoft.com/visualstudio/debugger/menu-commands)。  
-  
 在本節中的 [說明] 主題會列出可以使用 Spy + + 功能表上的命令。  
   
 ## <a name="in-this-section"></a>本節內容  

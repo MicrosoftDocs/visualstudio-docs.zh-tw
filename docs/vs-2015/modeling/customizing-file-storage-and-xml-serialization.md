@@ -1,7 +1,7 @@
 ---
 title: 自訂檔案儲存體和 XML 序列化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183012"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂檔案儲存體和 XML 序列化](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization)。  
-  
 當使用者儲存執行個體，或*模型*，在特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，建立或更新的 XML 檔案。 可以重新載入檔案，才能重新建立存放區中的模型。  
   
  您可以藉由調整下的設定自訂的序列化配置**Xml 序列化行為**DSL 總管 中。 沒有下的一個節點**Xml 序列化行為**的每個網域類別、 屬性和關聯性。 關聯性位於其來源類別。 另外還有對應至圖形、 連接器和圖表類別的節點。  

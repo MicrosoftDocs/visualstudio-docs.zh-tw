@@ -1,7 +1,7 @@
 ---
 title: CA1719： 參數名稱應該符合成員名稱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7a80b173cb17f5ce8f946ad2adb32cde43159141
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 13a6326391e543ef8220725ae982b8cfa75abb1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216687"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：參數名稱不應符合成員名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1719： 參數名稱不應該和成員名稱相符](https://docs.microsoft.com/visualstudio/code-quality/ca1719-parameter-names-should-not-match-member-names)。
-
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|

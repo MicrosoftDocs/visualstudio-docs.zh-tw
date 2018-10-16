@@ -1,7 +1,7 @@
 ---
 title: 函式檢視 - 爭用資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1250dfc781b57f3b289cbafc9d386b27b669ddf7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661700a9faba7886294db904d8676277dd0501d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214574"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[函式檢視-爭用資料](https://docs.microsoft.com/visualstudio/profiling/functions-view-contention-data)。  
-  
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  
   
  下表說明分析資料檔 [函式] 檢視顯示的值，此檔案是使用並行方法收集。  

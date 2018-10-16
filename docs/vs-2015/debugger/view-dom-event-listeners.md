@@ -1,7 +1,7 @@
 ---
 title: 檢視 DOM 事件接聽程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223297"
 ---
 # <a name="view-dom-event-listeners"></a>檢視 DOM 事件接聽程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[檢視 DOM 事件接聽程式](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  **事件**DOM 總管 索引標籤會顯示與 DOM 項目相關聯的事件。 中的每個最上層節點**事件**索引標籤各代表具有有效訂閱者的事件。 這個最上層節點包含表示特定事件之已登錄事件接聽程式的子節點。 除了檢視事件接聽程式，您還可以使用這個索引標籤巡覽至 JavaScript 程式碼中事件接聽程式的位置。 本主題中的資訊適用於使用 HTML 和 JavaScript 的市集應用程式。  
@@ -62,7 +60,7 @@ ms.locfileid: "47486142"
   
 6.  在 [DOM 總管] 中，選擇右上角的 `Find`。  
   
-7.  型別`ListView`，然後按 Enter 鍵。  
+7.  輸入 `ListView`，然後按 Enter。  
   
 8.  如果有必要，請選擇**下一步**按鈕來尋找`DIV`項目，表示`ListView`控制項 (這個項目具有`data-win-control`的值`WinJS.UI.ListView`)。  
   

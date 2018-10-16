@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetFunctionName |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e281e0e3087c6b88f7cfbf47b08cfa2ec8224aea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4373c64650679ff29fff35671901842a05852948
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200872"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugFunctionPosition2::GetFunctionName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionposition2-getfunctionname)。  
-  
 取得此位置指向函式的名稱。  
   
 ## <a name="syntax"></a>語法  

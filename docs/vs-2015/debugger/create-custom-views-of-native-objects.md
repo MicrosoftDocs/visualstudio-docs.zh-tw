@@ -1,7 +1,7 @@
 ---
 title: 建立原生物件的自訂檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236531"
 ---
 # <a name="create-custom-views-of-native-objects"></a>建立原生物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立原生物件的自訂檢視](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects)。  
-  
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數視窗 (例如 [監看式] 、[區域變數] 和[資料提示]  視窗) 中顯示原生類型的方式。  
   
  Natvis 會取代舊版 Visual Studio 使用的 **autoexp.dat** 檔案，並提供 XML 語法、更佳診斷、版本設定和多重檔案支援。  
@@ -356,7 +354,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 -   如果指定下方沒有子節點的 `Expand` 節點，則類型在偵錯工具視窗中不是可展開的。  
   
 ####  <a name="BKMK_Item_expansion"></a> Item 展開  
- `Item` 項目是用於 `Expand` 節點的最基本和最常用的項目。 `Item` 定義單一子項目。 例如，假設您有 `CRect` 類別，其包含做為其欄位的 `top`、 `left`、 `right`和 `bottom` ，以及下列視覺化項目：  
+ `Item` 項目是用於 `Expand` 節點的最基本和最常用的項目。 `Item` 定義單一子項目。 例如，假設您有 `CRect` 類別，其包含做為其欄位的 `top`、`left`、`right` 和 `bottom`，以及下列視覺化項目：  
   
 ```xml  
 <Type Name="CRect">  

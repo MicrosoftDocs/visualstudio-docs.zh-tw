@@ -1,14 +1,14 @@
 ---
 title: 使用偵錯工具巡覽程式碼 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186156"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用偵錯工具巡覽程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 中偵錯工具巡覽程式碼](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)。  
-  
 熟悉命令和快速鍵中偵錯工具巡覽程式碼，可就變得更快速且輕易地尋找和解決您的應用程式中的問題。 當您瀏覽程式碼偵錯工具中的時，您可以[檢查您的應用程式的狀態](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables)或深入了解其執行流程。  
   
 ## <a name="start-debugging"></a>開始偵錯  

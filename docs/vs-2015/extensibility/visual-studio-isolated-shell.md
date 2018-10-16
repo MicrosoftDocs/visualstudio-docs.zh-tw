@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 獨立模式 Shell |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286061"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 獨立模式 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell)。  
-  
 Visual Studio 獨立模式 shell 可讓您建立獨立的應用程式可執行並排顯示與其他版本的 Visual Studio。 就用主要是用來裝載專門的工具，可以使用 Visual Studio 服務，但也有自訂的外觀及商標。 Visual Studio 功能和功能表命令群組可以輕鬆地開啟和關閉。 應用程式標題、 應用程式圖示和啟動顯示畫面都開放完全自訂。 如需可自訂的功能，請參閱[自訂 Isolated Shell](../extensibility/customizing-the-isolated-shell.md)。  
   
  若要使用的獨立的 shell 專案，您必須安裝 Visual Studio SDK。 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

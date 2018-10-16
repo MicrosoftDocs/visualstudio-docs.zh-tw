@@ -1,7 +1,7 @@
 ---
 title: 如何： 檢視 Managed 程式碼的缺失 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9de19a3d371a832ad8d8fa52d7bb2bd9b06363e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f0dff4744e3c77ed94afe78396008a3de7646c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239417"
 ---
 # <a name="how-to-view-managed-code-defects"></a>如何：檢視 Managed 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢視 Managed 程式碼缺失](https://docs.microsoft.com/visualstudio/code-quality/how-to-view-managed-code-defects)。  
-  
 在 [程式碼分析錯誤、 警告和訊息會報告程式碼分析] 視窗中。 當您執行程式碼分析專案或方案時，會自動出現 [程式碼分析] 視窗。  
   
  在 [程式碼分析] 視窗中，您可以：  

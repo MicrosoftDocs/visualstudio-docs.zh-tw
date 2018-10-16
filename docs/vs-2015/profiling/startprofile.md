@@ -1,7 +1,7 @@
 ---
 title: StartProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8755dcf0b392d17234a3f1224a04de4603840fc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06bc362a2e1b3a5f574d3926e26680a7d98b9ec7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244071"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[StartProfile](https://docs.microsoft.com/visualstudio/profiling/startprofile)。  
-  
 `StartProfile` 函式會將所指定分析層級的計數器設定為 1 (開啟)。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中的偵錯市集應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219137"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>在 Visual Studio 中偵錯市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Studio 中的偵錯市集應用程式](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio)。  
-  
 Visual Studio 偵錯工具讓您能控制程式的執行，以及檢查其狀態。 您可以使用偵錯工具，找出 Windows 市集應用程式的缺失原因，以及了解您應用程式的確切工作情形。 當您在偵錯工具裡暫停 (中斷) 執行時，Visual Studio 會顯示包含執行中程式碼的原始程式檔，並反白顯示執行中的陳述式。 您可以查看變數的值、執行中函式的呼叫堆疊，以及程式狀態的其他層面。 您可以一次一個陳述式地繼續執行 (逐步執行) 程式，查看陳述式如何變更程式的值。 在以 JavaScript 撰寫的應用程式中，您可以檢查和操作頁面的 DOM。  
   
 ## <a name="in-this-section"></a>本節內容  

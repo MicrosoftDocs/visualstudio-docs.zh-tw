@@ -1,7 +1,7 @@
 ---
 title: 執行燈泡提示的快速動作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294563"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>執行燈泡提示的快速動作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](/visualstudio/)。  
-  
 燈泡是 Visual Studio 2015 中新的提升生產力功能。 這些圖示出現在 Visual Studio 編輯器中，您可以按一下來執行重構修正錯誤等快速動作。 燈泡會將錯誤修正和重構協助帶到單一焦點中，通常就在您正在輸入的字行上。  
   
  ![小燈泡圖示](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  

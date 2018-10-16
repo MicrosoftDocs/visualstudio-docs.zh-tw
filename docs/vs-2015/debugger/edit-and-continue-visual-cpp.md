@@ -1,7 +1,7 @@
 ---
 title: 編輯後繼續 （Visual c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255073"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯後繼續 （Visual c + +）](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp)。  
-  
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援的程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)如編輯後繼續的限制的相關資訊。  
   
  從 Visual Studio 2015 Update 1 開始，您現在可以使用 編輯後繼續在 Windows 市集 c + + 應用程式和 DirectX 應用程式，因為它現在支援 **/ZI**編譯器參數和 **/bigobj**切換。 您也可以使用編譯的二進位檔使用 編輯後繼續 **/FASTLINK**切換。  

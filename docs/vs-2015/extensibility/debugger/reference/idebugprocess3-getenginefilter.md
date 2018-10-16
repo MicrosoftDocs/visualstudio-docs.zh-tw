@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::GetEngineFilter |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e7e2a2d8bcd6280483ef13009f8fcf0db1fdcc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bc5cfd7c5d5e7529d545790a9aab413c0021beb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287772"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProcess3::GetEngineFilter](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-getenginefilter)。  
-  
 擷取可用的偵錯引擎的唯一識別碼的陣列。  
   
 ## <a name="syntax"></a>語法  

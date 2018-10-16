@@ -1,7 +1,7 @@
 ---
 title: 在程式碼和文字編輯器中撰寫程式碼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220528"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[程式碼和文字編輯器中撰寫程式碼](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)。
-
 Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管理程式碼。 您可以使用大綱，展開及摺疊程式碼的不同區塊。 您可以使用 IntelliSense、[物件瀏覽器] 及呼叫階層，進一步了解您正在使用的程式碼。 您可以使用像是 [巡覽至] 、[移至定義] 及 [尋找所有參考] 的功能，巡覽您的程式碼。 您可以將程式碼片段插入程式碼區塊，並使用像是 [從使用量產生] 的功能來產生程式碼。 如果您從未使用過 Visual Studio 2015 編輯器，請參閱 [編輯程式碼](https://www.visualstudio.com/features/ide-vs) ，以取得快速概觀。  
 
  檢視程式碼有許多不同的方法。 若要查看方案的類別檢視，您可以開啟 [類別檢視]  視窗或展開類別檔案下之方案總管  中的節點。  
@@ -130,7 +127,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
  ![[向前巡覽] 及 [向後巡覽] 按鈕](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- 您也可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，當您在捲軸上向上及向下移動游標時，可以預覽程式碼。如需詳細資訊，請參閱[如何：自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。  
+ 您也可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，當您在捲軸上向上及向下移動游標時，可以預覽程式碼。如需詳細資訊，請參閱 [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。  
 
  下列命令是程式碼專屬的巡覽方法：  
 

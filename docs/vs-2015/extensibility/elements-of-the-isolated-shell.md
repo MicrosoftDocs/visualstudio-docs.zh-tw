@@ -1,7 +1,7 @@
 ---
 title: Isolated Shell 的項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246047"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Isolated Shell 的項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Isolated Shell 的項目](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell)。  
-  
 您可以修改登錄設定、 執行階段設定和您的獨立的 shell 應用程式，其.vsct、.pkgdef、 and.pkgundef 檔案的應用程式進入點。  
   
 ## <a name="registry-settings"></a>登錄設定  

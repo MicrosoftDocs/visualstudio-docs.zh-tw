@@ -1,7 +1,7 @@
 ---
 title: 關於副檔名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8a299d7b2470b16761e4a418e0717a91c2929e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4278e27b4070ad3330b488cb8b426ffbd6484b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279808"
 ---
 # <a name="about-file-name-extensions"></a>關於副檔名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[有關的檔案名稱副檔名](https://docs.microsoft.com/visualstudio/extensibility/about-file-name-extensions)。  
-  
 當您註冊 VSPackage 的副檔名時，您將它產生關聯的版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這是重要如果多個版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安裝在電腦上。  
   
  預設值的相關聯的程式設計識別項 (ProgID) 所指向的 HKEY_CLASSES_ROOT 機碼下註冊 Vspackage 的檔案副檔名。  

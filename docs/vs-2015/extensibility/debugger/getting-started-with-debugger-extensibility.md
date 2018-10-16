@@ -1,7 +1,7 @@
 ---
 title: 開始使用偵錯工具擴充性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304965"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>偵錯工具擴充性的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Getting Started with 偵錯工具擴充性](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility)。  
-  
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]提供的資訊，您必須建立和自訂用於偵錯程式中的偵錯工具元件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 偵錯已新增衍生自測試執行前一個廣泛的使用性改進[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具。 您可以使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯逐步執行的多語言應用程式，或您可以在即時偵錯應用程式和多國語言的解決方案時編輯變數的實作。  

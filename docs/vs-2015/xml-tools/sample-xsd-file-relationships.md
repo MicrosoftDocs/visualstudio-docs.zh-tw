@@ -1,7 +1,7 @@
 ---
 title: 範例 XSD 檔： 關聯性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 304cc9d25f99071e13fd8cae104b09a0836a3224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42dbe702c1b6841dd834af28e02737c00aed6595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295707"
 ---
 # <a name="sample-xsd-file-relationships"></a>範例 XSD 檔：關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[範例 XSD 檔： 關聯性](https://docs.microsoft.com/visualstudio/xml-tools/sample-xsd-file-relationships)。  
-  
   
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是附帶註釋和文件的採購單結構描述。  
   

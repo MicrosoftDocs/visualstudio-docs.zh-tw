@@ -1,7 +1,7 @@
 ---
 title: Spy + + 說明的著作權注意事項 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5040f4918f140435665e24db8e57e6fbd759551e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa95cd2500cf2bc228f5787d77490f0cbfc5fd4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487294"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201535"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Spy + + 說明的著作權注意事項](https://docs.microsoft.com/visualstudio/debugger/copyright-notice-for-spy-increment-help)。  
-  
 本文中的資訊可能不經通知即予以變更。 除非另有說明，否則本文範例中所使用的公司、名稱和資料均為虛構。 非經 Microsoft Corporation 的書面許可，不得將本文的任何部分以任何形式或任何方式 (電子或機械式) 重製或傳輸以用於任何用途。  
   
  © 1993-2010 Microsoft Corporation. 著作權所有，並保留一切權利。  

@@ -1,7 +1,7 @@
 ---
 title: 函式檢視 - 取樣資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3813c306c2240e7b9db0e8e3d5cbf5929cf0cf91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d478c00ef95644cd484c418dec92318dd1f5611
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304157"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[函式檢視-取樣資料](https://docs.microsoft.com/visualstudio/profiling/functions-view-sampling-data)。  
-  
 取樣方法的函式報表檢視會列出程式碼剖析執行期間取樣的函式。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 如何： 檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ecb3ba8e0fd05e0fb0cd79cde32abe235af743e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a380d549fa10c3229601a1a9541679c7e3ac1e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282187"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 檢查是否有應用程式更新以程式設計方式使用 ClickOnce 部署 API](https://docs.microsoft.com/visualstudio/deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api)。  
-  
 ClickOnce 提供兩種方式可在部署之後，更新的應用程式。 在第一個方法中，您可以設定 ClickOnce 部署，自動檢查更新，在特定時間間隔。 在第二個方法中，您可以撰寫程式碼使用<xref:System.Deployment.Application.ApplicationDeployment>檢查是否有更新的類別，根據事件，例如使用者的要求。  
   
  下列程序示範一些程式碼執行以程式設計方式更新，並也會說明如何設定 ClickOnce 部署以啟用程式設計方式更新檢查。  

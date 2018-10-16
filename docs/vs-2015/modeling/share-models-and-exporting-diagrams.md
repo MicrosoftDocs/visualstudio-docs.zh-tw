@@ -1,7 +1,7 @@
 ---
 title: 共用模型及匯出圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e450216d25c4e7991bd0bc27fcc64feb81a2919a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4f25931b1374042a09fd130731c83f8813353a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254367"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[共用模型及匯出圖表](https://docs.microsoft.com/visualstudio/modeling/share-models-and-exporting-diagrams)。  
-  
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

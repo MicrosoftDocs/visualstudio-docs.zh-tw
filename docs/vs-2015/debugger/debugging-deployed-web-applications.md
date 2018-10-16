@@ -1,7 +1,7 @@
 ---
 title: 偵錯已部署的 Web 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 896cec857b38dd5fb0d7119aed06ca08d2df1e35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9aefdb6fca70eae0343a5f7fffde661b5a7be1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276311"
 ---
 # <a name="debugging-deployed-web-applications"></a>偵錯已部署的 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯部署 Web 應用程式](https://docs.microsoft.com/visualstudio/debugger/debugging-deployed-web-applications)。  
-  
 如果您必須對實際執行伺服器 (Production Server) 上執行的 Web 應用程式偵錯，則應該謹慎執行這個動作。 例如，若您附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序來偵錯，並遇到中斷點，則背景處理工作序中的所有 Managed 程式碼都會中止。 中止背景工作處理序中所有 Managed 程式碼可能會使伺服器上所有使用者的作業停止。 在實際執行伺服器上偵錯之前，請務必考慮對實際執行工作的可能影響。  
   
  若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯已部署的應用程式，您必須附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序，並且確定偵錯工具可以存取應用程式的符號。 您還必須找出並開啟應用程式的原始程式檔 (Source File)。 如需詳細資訊，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，[如何： 尋找 ASP.NET 處理序名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)，並[系統需求](../debugger/aspnet-debugging-system-requirements.md)。  

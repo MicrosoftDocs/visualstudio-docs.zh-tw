@@ -1,7 +1,7 @@
 ---
 title: '&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c5abcc6e7c4308cf0d60c78cd4ef0f052403bb1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176581"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ &lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment)。  
-  
 識別安裝及執行此應用程式所需的 .NET Framework 版本。  
   
 > [!NOTE]

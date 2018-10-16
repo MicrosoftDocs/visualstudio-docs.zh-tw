@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 自訂文字檢視 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39dca1309adeef8270ae7bb716c4274874451b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199039"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>逐步解說︰自訂文字檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 自訂文字檢視](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-customizing-the-text-view)。  
-  
 您可以自訂文字檢視，方法是修改任何它的編輯器格式對應中的下列屬性：  
   
 -   指示區邊界  
@@ -46,7 +44,7 @@ ms.locfileid: "47487140"
   
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`ViewPropertyTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ViewPropertyTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -54,7 +52,7 @@ ms.locfileid: "47487140"
   
 ## <a name="defining-the-content-type"></a>定義內容類型  
   
-1.  將類別檔案並將它命名`ViewPropertyModifier`。  
+1.  加入類別檔案，並將它命名為 `ViewPropertyModifier`。  
   
 2.  新增下列`using`指示詞：  
   

@@ -1,7 +1,7 @@
 ---
 title: 中所使用的替代字串。Pkgdef 和。Pkgundef 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24996e4e32ab86af46fce5280947719f906ffc3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175288"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>中所使用的替代字串。Pkgdef 和。Pkgundef 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[中使用的替代字串。Pkgdef 和。Pkgundef 檔案](https://docs.microsoft.com/visualstudio/extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files)。  
-  
 您可以使用替代下列字串在.pkgdef 和.pkgundef 檔案，您可以為您的 Visual Studio 定義獨立 shell 應用程式。  
   
 ## <a name="substitution-strings"></a>替代字串  

@@ -1,7 +1,7 @@
 ---
 title: VSTemplate 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad2fb7a9af5e15d00b05f4a4c6cf99f3929e31e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2477381333683b7ada89a84a3e8d79edf3f7fed9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255829"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[VSTemplate 項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/vstemplate-element-visual-studio-templates)。  
-  
 包含有關專案範本、 項目範本或入門套件的所有中繼資料。  
   
 ## <a name="syntax"></a>語法  

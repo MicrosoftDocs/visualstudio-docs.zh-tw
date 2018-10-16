@@ -1,7 +1,7 @@
 ---
 title: 如何： 隱藏檔案變更通知 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257513"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 隱藏檔案變更通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 隱藏的檔案變更告知](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications)。  
-  
 當已變更之實體的檔案，表示文字緩衝區時，對話方塊會顯示與訊息**您要儲存下列項目的變更嗎？** 這就是檔案變更通知。 如果檔案要許多變更，不過，不斷地顯示此對話方塊中可能很快就會造成困擾。  
   
  您以程式設計的方式可以抑制此對話方塊中，使用下列程序。 如此一來，您可以重新載入檔案立即而不需要提示使用者每次儲存變更。  

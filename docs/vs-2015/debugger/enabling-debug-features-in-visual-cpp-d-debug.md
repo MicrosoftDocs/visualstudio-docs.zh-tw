@@ -1,7 +1,7 @@
 ---
 title: 啟用偵錯 Visual c + + 中的功能 (-D_DEBUG) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67de755105f30ee4a88daeef26bc29bc9841ae39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 452cf6ac386affb886e9a318e8686eea85e59d66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237142"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>啟用 Visual C++ 的偵錯功能 (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[啟用偵錯 Visual c + + 功能 (-D_DEBUG)](https://docs.microsoft.com/visualstudio/debugger/enabling-debug-features-in-visual-cpp-d-debug)。  
-  
 在  [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，偵錯功能，例如當您編譯您的程式使用的符號時，會啟用判斷提示 **_DEBUG**定義。 您可以定義 **_DEBUG**中有兩種：  
   
 -   指定 **#define _DEBUG**您在原始程式碼中，或  

@@ -1,7 +1,7 @@
 ---
 title: 提供給加入新項目對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5fcbac8b9e26bcca5a588846c14972156761d5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7e9ce7df2adc05468a27de5f4eaac52c68a07e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215887"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>參與新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[參與加入新項目對話方塊](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)。  
-  
 專案子類型可以提供完整的新目錄的項目**加入新項目**對話方塊中，藉由註冊**加入項目**下的 範本`Projects`登錄子機碼。  
   
 ## <a name="registering-add-new-item-templates"></a>註冊加入新項目範本  

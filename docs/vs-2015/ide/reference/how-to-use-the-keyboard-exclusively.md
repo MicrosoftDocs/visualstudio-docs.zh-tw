@@ -1,7 +1,7 @@
 ---
 title: 如何：以獨佔模式使用鍵盤 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f1ca0ccf38911c8614bf1429c6f658bb9c957c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238517"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用專門鍵盤](https://docs.microsoft.com/visualstudio/ide/reference/how-to-use-the-keyboard-exclusively)。  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多預設快速鍵組合，讓您在整合式開發環境 (IDE) 內輕鬆巡覽和撰寫程式碼。 如需 Visual Studio 中使用的快速鍵完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。  
   

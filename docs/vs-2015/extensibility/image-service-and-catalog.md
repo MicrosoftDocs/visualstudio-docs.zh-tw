@@ -1,7 +1,7 @@
 ---
 title: 影像服務 」 和 「 類別目錄 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265209"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[映像服務與資料庫目錄](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog)。  
-  
 此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。  
   
  Visual Studio 2015 中導入的映像服務可讓開發人員快速在裝置和使用者的輸入選取的佈景主題來顯示影像，包括正確的佈景主題，它們會顯示內容的最佳映像。 採用映像服務能讓您避免與相關資產維護、 HDPI 調整及佈景主題的主要難題。  

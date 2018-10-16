@@ -1,7 +1,7 @@
 ---
 title: 使用特定領域語言總管 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 92816fe7b0b5c8f23e7ecb3f830d3bd590c8b44f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6a1f4d9ef5e34b85aafbe7bacb14df85d29ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210583"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用網域指定的語言總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用特定領域語言總管](https://docs.microsoft.com/visualstudio/modeling/working-with-the-domain-specific-language-explorer)。  
-  
 **DSL explorer**樹狀檢視中顯示多種資訊。 更多的 DSL 總管 中的項目大部分的詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
   
  它具有下列節點：  

@@ -1,7 +1,7 @@
 ---
 title: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,15 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ef2c5f81f868f2b5d7eac68030b842bd1c45067c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216641"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests)。
-
 單元測試架構支援 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的單元測試。 當您撰寫單元測試程式碼時，請使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 命名空間中的類別和成員。 當您從頭開始撰寫單元測試，或正在調整從您正在測試的程式碼所產生的單元測試時，您可以使用它們。
 
 ## <a name="groups-of-elements"></a>項目群組

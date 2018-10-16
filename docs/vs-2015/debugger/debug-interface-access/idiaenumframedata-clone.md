@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumframedata:: Clone |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b658e0cf6d2d92df19d57051611e0ebb86663a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ec31ff57edd238bd92c78655709cea9088d512
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232761"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiaenumframedata:: Clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-clone)。  
-  
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
   
 ## <a name="syntax"></a>語法  

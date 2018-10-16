@@ -1,7 +1,7 @@
 ---
 title: CA2202： 不要處置物件多次 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c71f7338ee8dc7a5c7dbdeb6c560cd59abc4197
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 0744e8a9b7807330b64b1a0bcbc370b038c05526
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222564"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202：不要多次處置物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2202： 不要多次處置物件](https://docs.microsoft.com/visualstudio/code-quality/ca2202-do-not-dispose-objects-multiple-times)。
-
 |||
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|

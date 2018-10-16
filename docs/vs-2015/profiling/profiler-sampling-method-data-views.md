@@ -1,7 +1,7 @@
 ---
 title: 分析工具取樣方法資料檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9ce2916705a50f01c781696770f78d4f5dff1e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f1ce001a1f5ee53c75001bb909d04eaa3d9222c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302129"
 ---
 # <a name="profiler-sampling-method-data-views"></a>程式碼剖析工具取樣方法資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Profiler 取樣方法資料檢視](https://docs.microsoft.com/visualstudio/profiling/profiler-sampling-method-data-views)。  
-  
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。  
   
 > [!NOTE]

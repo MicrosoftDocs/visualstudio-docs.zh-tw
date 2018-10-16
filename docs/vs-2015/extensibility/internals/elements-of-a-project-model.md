@@ -1,7 +1,7 @@
 ---
 title: 專案模型的項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3c26bb501e28c324233e4991fc8023b2adcdcf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248556"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案模型的項目](https://docs.microsoft.com/visualstudio/extensibility/internals/elements-of-a-project-model)。  
-  
 介面和實作中的所有專案的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]共用基本結構： 您的專案類型的專案模型。 在您專案的模型，也就是您正在開發的 VSPackage，您可以建立符合您的設計決策，且 IDE 所提供的通用功能搭配運作的物件。 雖然您可以控制如何保存專案項目，例如，您無法控制通知檔案必須 persisted。 當使用者將焦點放在開啟的專案項目，並選擇**儲存**上**檔案**功能表[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]功能表列中，您的專案型別程式碼必須攔截從 IDE 命令、 保留檔案，並將通知傳送回 IDE 會不會再變更的檔案。  
   
  VSPackage 會提供 IDE 介面的存取權的服務透過 IDE 與互動。 比方說，透過特定的服務，您監視和路由命令，並提供選取之項目的專案中的內容資訊。 Vspackage 所需所有通用的 IDE 功能是由服務提供。 如需有關服務的詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../../extensibility/how-to-get-a-service.md)。  

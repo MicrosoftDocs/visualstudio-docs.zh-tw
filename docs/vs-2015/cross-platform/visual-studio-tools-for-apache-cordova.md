@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Apache Cordova | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 0fa1fb1490b26b4cc2cd10f5ac0b26a2f3233cc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33dd9ece0e7c2574aceec9fc2f6fe0c8ebf29d7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236102"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

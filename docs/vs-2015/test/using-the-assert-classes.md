@@ -1,7 +1,7 @@
 ---
 title: 使用 Assert 類別 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdea144a28e971d99ea8528b66e0bce1164035
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6775f7ea22bab5d210eb4e2993e81bd4a9587560
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208308"
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 Assert 類別](https://docs.microsoft.com/visualstudio/test/using-the-assert-classes)。  
-  
 使用 UnitTestingFramework 命名空間的 Assert 類別來驗證特定功能。 單元測試方法會執行開發程式碼中方法的程式碼，但是只有在加入 Assert 陳述式時，才會報告程式碼行為的正確性。  
   
 ## <a name="kinds-of-asserts"></a>Assert 的類型  

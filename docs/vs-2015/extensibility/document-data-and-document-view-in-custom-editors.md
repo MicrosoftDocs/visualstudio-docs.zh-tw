@@ -1,7 +1,7 @@
 ---
 title: 在自訂編輯器中檢視的文件資料和文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206904"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的文件資料和文件檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文件資料和自訂編輯器中的文件檢視](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors)。  
-  
 自訂編輯器是由兩個部分所組成： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件代表要顯示的文字資料，而文件檢視物件 （或 「 檢視 」） 表示要在其中顯示文件資料物件的一或多個視窗。  
   
 ## <a name="document-data-object"></a>文件資料物件  

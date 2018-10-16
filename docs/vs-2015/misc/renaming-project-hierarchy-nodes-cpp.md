@@ -1,7 +1,7 @@
 ---
 title: 重新命名專案階層節點 （c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 57e647f2926452fe32b4d3975b0cd151d0fc9823
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b86096834b2a841b3fe35e1045bc3897bb7667f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203758"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>重新命名專案階層節點 (C++)
 您可以使用 unmanaged c + + 的 HierUtil7 專案架構，以重新命名專案資料夾的階層節點。 如需詳細資訊，請參閱 < [HierUtil7 範例](http://msdn.microsoft.com/en-us/29c15184-a70c-4813-86c2-fb1d47442d11)。  

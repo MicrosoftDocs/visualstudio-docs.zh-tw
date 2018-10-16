@@ -1,7 +1,7 @@
 ---
 title: 藉由修改 Isolated 的 Shell。Pkgdef 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291456"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>藉由修改 Isolated 的 Shell。Pkgdef 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[修改隔離 Shell 所使用。Pkgdef 檔案](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)。  
-  
 .Pkgdef 檔支援可供您自訂 isolated 的 shell 應用程式的設定。 它會指定應用程式的電腦上安裝並啟動應用程式時，Visual Studio shell 所參考之時所建立的值。 依據適用的登錄機碼的檔案中組織的設定。  
   
 > [!WARNING]
@@ -73,10 +71,10 @@ ms.locfileid: "47491614"
 |AppLocalizationPackage|字串|VSPackage，其中包含應用程式的 UI 附屬組件的 GUID。 此 VSPackage 包含.vsct 檔的編譯的版本，而且可以包含其他當地語系化的字串。 可以啟用或停用變更 UI 專案.vsct 檔案中的設定的功能集和功能表命令群組。<br /><br /> 預設值是"{*vsUiPackageGuid*}"，其中*vsUiPackageGuid*是指派給應用程式 UI 套件的 GUID。|  
 |應用程式名稱|字串|應用程式的名稱。 名稱會出現在應用程式視窗的標題列。<br /><br /> 預設值是應用程式方案檔的名稱。|  
 |CommandLineLogo|字串|在主控台視窗中執行的應用程式時的橫幅文字。 此設定會影響僅支援命令列建置作業的應用程式。<br /><br /> 預設值是"*companyName * * solutionName* 1.0 版。"，其中*companyName*是提供安裝 Windows 時，該公司的名稱和*solutionName*是應用程式方案檔的名稱。|  
-|DefaultDebugEngine|字串|預設 GUID 偵錯引擎以使用應用程式。<br /><br /> 注意： 空的 GUID （全部為零） 表示應用程式不會指定預設偵錯引擎。 這可讓偵錯工具，以選取要使用的偵錯引擎。<br /><br /> 預設值為 "{00000000-0000-0000-0000-000000000000}"。|  
+|DefaultDebugEngine|字串|預設 GUID 偵錯引擎以使用應用程式。<br /><br /> 注意： 空的 GUID （全部為零） 表示應用程式不會指定預設偵錯引擎。 這可讓偵錯工具，以選取要使用的偵錯引擎。<br /><br /> 預設值為 " {00000000-0000-0000-0000-000000000000} "。|  
 |DefaultHomePage|字串|預設首頁 URL 的內部網頁瀏覽器視窗。<br /><br /> 如果**首頁**選項是用於應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱 <<c0> [ 網頁瀏覽器，環境中，[選項] 對話方塊](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是已安裝 Windows 時所提供的公司的 URL。|  
 |DefaultProjectsLocation|字串|預設專案資料夾的完整路徑。 例如，套用至物件的<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 專案位置**選項是用於應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱 < [NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。<br /><br /> 預設值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是應用程式方案檔的名稱。|  
-|DefaultSearchPage|字串|預設搜尋網頁 URL 的內部網頁瀏覽器視窗。<br /><br /> 如果**搜尋頁面**選項是用於應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱 <<c0> [ 網頁瀏覽器，環境中，[選項] 對話方塊](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值為 "http://search.live.com"。|  
+|DefaultSearchPage|字串|預設搜尋網頁 URL 的內部網頁瀏覽器視窗。<br /><br /> 如果**搜尋頁面**選項是用於應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱 <<c0> [ 網頁瀏覽器，環境中，[選項] 對話方塊](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值為 " http://search.live.com "。|  
 |DefaultUserFilesFolderRoot|字串|使用者 資料夾中，相對於目前的使用者名稱的 我的文件資料夾。<br /><br /> 預設值是應用程式方案檔的名稱。|  
 |DisableOutputWindow|dword|表示為已停用，isolated 的 shell 是否應該將 [輸出] 視窗。<br /><br /> 如果此值設定為，則為 true，Visual Studio 不會顯示中的方案組建管理員輸出**輸出**視窗，並會隱藏**建置開始時顯示輸出視窗**中的核取方塊**專案和方案**中的類別目錄**選項** 對話方塊。<br /><br /> 預設值為 false。|  
 |HideMiscellaneousFilesByDefault|dword|True 會隱藏**其他檔案**資料夾中的預設**方案總管 中**; 否則為 false。<br /><br /> 如果**方案總管 中的顯示其他檔案**選項是用於應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱 <<c0> [ 選項對話方塊、 環境、 文件](../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 預設值為 false。|  

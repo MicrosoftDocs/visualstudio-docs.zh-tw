@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 建立檢視裝飾、 命令和設定 （分欄輔助線） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94ed4de4820aca9d88b9c589e2fe5a15a51842e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265090"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說︰建立檢視裝飾、命令和設定 (分欄輔助線)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立檢視裝飾、 命令和設定](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides)。  
-  
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。  本主題說明如何開始使用熱門的擴充功能，分欄輔助線。  分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。  特別的格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。  
   
  在此逐步解說中，您將：  

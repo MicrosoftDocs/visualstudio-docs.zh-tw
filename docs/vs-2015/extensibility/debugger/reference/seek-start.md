@@ -1,7 +1,7 @@
 ---
 title: SEEK_START |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7306703d96fd89e3b639de9557c1799e9ca3d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5640b935463b1ae11e9c4a2af521d53b1fcd5d53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203979"
 ---
 # <a name="seekstart"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SEEK_START](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/seek-start)。  
-  
 指定要啟動的反組譯碼資料流中搜尋的位置。  
   
 ## <a name="syntax"></a>語法  

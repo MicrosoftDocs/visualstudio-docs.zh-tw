@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67bea9c931cc702c2f79d1a94b3ae33511518e07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 814bf0b43d217f3309e50c54db70bef850e6ed50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257578"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugCustomViewer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomviewer)。  
-  
 此介面可讓運算式評估工具 (EE) 中是必要的任何格式顯示屬性的值。  
   
 ## <a name="syntax"></a>語法  

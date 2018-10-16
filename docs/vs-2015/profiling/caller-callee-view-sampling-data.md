@@ -1,7 +1,7 @@
 ---
 title: 呼叫端 - 被呼叫端檢視 - 取樣資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ed2f99527b8c1f5f38cbbcfd72ee32ad9912fd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a8933eb0adc6322b2da6b1e16400769a5ea22c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192596"
 ---
 # <a name="caller--callee-view---sampling-data"></a>呼叫端 / 被呼叫端檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫端-被呼叫端檢視-取樣資料](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-sampling-data)。  
-  
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。  
   
  **目前的函式**會顯示在中間方格中，顯示所選取函式的分析資訊。 這些值包括對函式的所有取樣呼叫。  

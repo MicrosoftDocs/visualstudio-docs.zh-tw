@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774685"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549307"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -99,7 +99,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 1. 在 [連線目標] 欄位 (舊版為 [限定詞]) 中，輸入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是將 `enable_attach` 傳入 Python 程式碼的字串，`<ip_address>` 是遠端電腦的明確位址或名稱 (如 myvm.cloudapp.net)，而 `:5678` 是遠端偵錯的連接埠號碼。
 
     > [!Warning]
-    > 如果透過公用網際網路連線，您應該改用 `tcps`，並遵循下列指示[使用 SSL 保護偵錯工具連線](#securing-the-debugger-connection-with-ssl)。
+    > 如果透過公用網際網路連線，您應該改用 `tcps`，並遵循下列指示[使用 SSL 保護偵錯工具連線](#secure-the-debugger-connection-with-ssl)。
 
 1. 按 **Enter** 鍵，即可填入該電腦上可用的 ptvsd 處理序清單：
 
@@ -148,7 +148,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 
     當 openssl 出現提示時，請依據您用以連接的項目，在 [一般名稱] 中使用主機名稱或 IP 位址 
 
-    (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
+    (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
 
 1. 在程式碼中，使用檔名作為值，將 `enable_attach` 的呼叫修改為包含 `certfile` 和 `keyfile` 引數 (這些引數與標準 `ssl.wrap_socket` Python 函式具有相同的意義)：
 

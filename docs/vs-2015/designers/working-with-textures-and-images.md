@@ -1,7 +1,7 @@
 ---
 title: 使用紋理和影像 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485555"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250493"
 ---
 # <a name="working-with-textures-and-images"></a>使用紋理和影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用紋理和影像](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images)。  
-  
 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的影像編輯器來建立和修改紋理和影像。 影像編輯器支援豐富的紋理和影像格式，如同在 DirectX 應用程式開發中所使用的一樣。  
   
 > [!NOTE]
@@ -56,7 +54,7 @@ ms.locfileid: "47485555"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[影像編輯器](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|  
+|[Image Editor](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|  
 |[影像編輯器範例](../designers/image-editor-examples.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|
 
 

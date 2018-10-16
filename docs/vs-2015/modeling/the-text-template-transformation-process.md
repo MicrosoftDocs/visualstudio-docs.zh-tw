@@ -1,7 +1,7 @@
 ---
 title: 文字範本轉換流程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203771"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文字範本轉換流程](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process)。  
-  
 文字範本轉換流程會做為輸入的文字範本檔案，並產生新的文字檔，做為輸出。 例如，您可以使用文字範本產生 Visual Basic 或 C# 程式碼，或您可以產生一份 HTML 報告。  
   
  三個元件參與 「 此程序： 引擎、 主機和指示詞處理器。 此引擎會控制此程序;它與主應用程式和指示詞處理器，以產生輸出檔案互動。 主機提供的環境，例如尋找檔案和組件的任何互動。 指示詞處理器加入功能，例如從 XML 檔案或資料庫讀取資料。  

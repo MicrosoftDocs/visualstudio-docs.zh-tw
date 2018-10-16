@@ -1,7 +1,7 @@
 ---
 title: 應用程式部署必要條件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217928"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[應用程式部署必要條件](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites)。  
-  
 為了確保應用程式順利安裝及執行，您必須先確認目標電腦上已安裝與應用程式相依的所有元件。 例如，使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立的大多數應用程式都與 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 具相依性；在安裝應用程式之前，目的地電腦上必須存在正確的 Common Language Runtime 版本。  
   
  您可以選取這些先決條件**Prerequisites Dialog Box**和安裝.NET Framework，以及其他可轉散發套件安裝的一部分。 這種做法就所謂*啟動程序*。 下一步[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生 Windows 可執行程式，也就是名為 Setup.exe*啟動載入器*。 啟動載入器負責在應用程式執行前安裝這些必要條件。 如需有關如何選取這些必要條件的詳細資訊，請參閱 < [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  

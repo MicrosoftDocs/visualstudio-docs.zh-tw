@@ -1,7 +1,7 @@
 ---
 title: 使用舊版 API 提供的語言服務內容 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72bcd275fab0ae8380167dbbc8a9fae21c28a36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195724"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[藉由使用舊版 API 提供語言服務內容](https://docs.microsoft.com/visualstudio/extensibility/providing-a-language-service-context-by-using-the-legacy-api)。  
-  
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。  
   
  如需有關如何提供連接到您自己的編輯器語言服務內容的詳細資訊，請參閱[如何： 將內容提供編輯器](../extensibility/how-to-provide-context-for-editors.md)。  

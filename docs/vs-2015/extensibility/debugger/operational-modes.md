@@ -1,7 +1,7 @@
 ---
 title: 作業模式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b23ba695b02a0332ad40a2c51047336903255a13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298827"
 ---
 # <a name="operational-modes"></a>作業模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[作業模式](https://docs.microsoft.com/visualstudio/extensibility/debugger/operational-modes)。  
-  
 有三種模式，在其中 IDE 可以操作，如下所示：  
   
 -   [設計模式](#vsconoperationalmodesanchor1)  

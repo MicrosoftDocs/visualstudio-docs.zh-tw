@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194710"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense)。  
-  
 IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快速地撰寫程式碼，並減少錯誤。 當您在 JavaScript 編輯器中使用用戶端指令碼時，IntelliSense 會根據目前的內容列出可用的物件、函式、屬性及參數。 您可以從 IntelliSense 提供的快顯清單選取程式碼撰寫選項，以完成程式碼。  
   
  IntelliSense 可讓您更輕鬆地完成下列工作：  

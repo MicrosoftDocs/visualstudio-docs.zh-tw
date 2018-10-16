@@ -1,7 +1,7 @@
 ---
 title: 錯誤： 評估函式&#39;函式&#39;逾時，需要以不安全的方式中止 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78d4b8f433c925521a978ab5c3a5076f329c407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5505597c156302f0799667a45239935914fa2fa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255279"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤： 評估函式&#39;函式&#39;已逾時及所需的不安全的方法中止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： 評估函式&#39;函式&#39;已逾時及所需的不安全的方式會中止](https://docs.microsoft.com/visualstudio/debugger/error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way)。  
-  
 完整訊息文字： 評估函式 'function' 已逾時及所需的不安全的方法中止。 這可能已損毀目標處理序。 
 
 若要讓您更輕鬆地檢查.NET 物件的狀態，偵錯工具會自動強制執行額外的程式碼 （通常是屬性 getter 方法和 ToString 函式） 偵錯的處理序。 在大部分的所有情況下，這些函式會快速完成，並進行偵錯更容易。 不過，偵錯工具不會在沙箱中執行應用程式。 如此一來，屬性 getter 或停止回應的原生函式所呼叫的 ToString 方法可能會導致長的逾時，可能無法復原。 如果您遇到此錯誤訊息發生這種情況。

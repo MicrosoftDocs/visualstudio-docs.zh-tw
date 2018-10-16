@@ -1,7 +1,7 @@
 ---
 title: 藉由修改 Isolated 的 Shell。Vsct 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0606d28f151f0d9c85980121e3129bd9204c61b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67955586333cf665b7cffd5039ef2f6e051834a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259996"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>藉由修改 Isolated 的 Shell。Vsct 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本位於[修改隔離 Shell 所使用。Vsct 檔案](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file)。  
-  
 在 UI 專案，Visual Studio 隔離的 shell 專案包含可讓您指定哪些應用程式群組和個別的命令可在應用程式在.vsct 檔。 以下是未修改的.vsct 檔案的摘錄。  
   
 ```  

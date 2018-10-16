@@ -1,7 +1,7 @@
 ---
 title: 對 ASP.NET 負載測試進行程式碼剖析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78825dd76015df73f514e5adb0f3dffb6d60644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8922476ec3db980254a15daab8bc67d16d4e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271917"
 ---
 # <a name="profiling-aspnet-load-tests"></a>對 ASP.NET 負載測試進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[程式碼剖析 ASP.NET 負載測試](https://docs.microsoft.com/visualstudio/profiling/profiling-aspnet-load-tests)。  
-  
 您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：  
   
  [(NIB) 如何︰從 Web 效能測試編輯器在 Web 應用程式執行效能工作階段 ((NIB) How to: Run a Performance Session on a Web Application from the Web Performance Test Editor)](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  

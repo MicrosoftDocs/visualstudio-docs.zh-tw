@@ -1,7 +1,7 @@
 ---
 title: 如何： 強制可維護的程式碼的程式碼分析簽入原則 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174847"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：以程式碼分析簽入原則強制程式碼的可維護性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用程式碼分析簽入原則強制執行維護程式碼](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy)。  
-  
 開發人員可以使用程式碼度量資訊工具來測量的複雜度和維護的程式碼，但它們無法簽入原則的一部分叫用程式碼度量資訊。 不過，小組可以啟用驗證它們的程式碼的程式碼度量標準合規性和強制透過簽入原則規則的程式碼分析規則。 如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。  
   
  繼承深度、 類別結合程度、 可維護性指數和複雜度規則來強制執行容易維護的程式碼，透過程式碼分析簽入原則，可以讓開發人員。 全部四個欄位，這些規則的程式碼分析原則編輯器中，找到 [可維護性規則] 類別下。  

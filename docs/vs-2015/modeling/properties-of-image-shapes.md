@@ -1,7 +1,7 @@
 ---
 title: 影像圖案的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 395d042bd5152d741d5188ed87faec801cd17cb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304092"
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[影像圖案的屬性](https://docs.microsoft.com/visualstudio/modeling/properties-of-image-shapes)。  
-  
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 藉由設定定義了影像圖形`Image`類別的屬性以預先定義的映像檔案。 支援下列格式：  
   
 -   .gif  

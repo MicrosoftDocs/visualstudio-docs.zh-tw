@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostMachineName_V7 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2caab5eaa587274896015434abbda5d993569f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a84963032e23bec740f639b5aef27277a24095d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194638"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugProgramNode2::GetHostMachineName_V7](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-gethostmachinename-v7)。  
-  
 已被取代。 請勿使用。  
   
 ## <a name="syntax"></a>語法  

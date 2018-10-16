@@ -1,7 +1,7 @@
 ---
 title: 快速入門： C-c + + 程式碼分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241770"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[快速入門： C/c + + 的程式碼分析](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp)。  
-  
 您可以在 C 或 C++ 程式碼上定期執行程式碼分析，以改善您的應用程式品質。 這可協助您尋找常見的問題、良好的程式設計作法違規狀況，或偵測難以透過測試發現的缺失。 程式碼分析警告不同於編譯器錯誤和警告，因為程式碼分析會搜尋有效、但仍可能為您或使用您程式碼的其他人產生問題的特定程式碼模式。  
   
 ## <a name="in-this-topic"></a>本主題內容  

@@ -1,7 +1,7 @@
 ---
 title: 使用傾印檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,12 +30,12 @@ caps.latest.revision: 56
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47a11dc5d10f7f75d839587346a654b4d6ed349a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bdf517e94fe829d92ab95826899008323e1e3cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232254"
 ---
 # <a name="using-dump-files"></a>使用傾印檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

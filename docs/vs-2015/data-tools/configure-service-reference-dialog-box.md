@@ -1,7 +1,7 @@
 ---
 title: 設定服務參考對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60a1c7a057495b89aa8923d424fb09d9ecb1c232
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24da338378739afca6ad228582a29069aebde9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266970"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定服務參考對話方塊](https://docs.microsoft.com/visualstudio/data-tools/configure-service-reference-dialog-box)。  
-  
   
 **設定服務參考** 對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服務。  
   

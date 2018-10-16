@@ -1,7 +1,7 @@
 ---
 title: Ptvs 快速入門： 互動式 Python |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2afee96ebe1b10e8d8777a6a2d6045c506bb2ea7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d9438d7d80480349dd53384c2538742a22b4d36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183907"
 ---
 # <a name="getting-started-with-ptvs-interactive-python"></a>PTVS 快速入門：互動式 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

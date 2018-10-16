@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 建立邊界字符 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270994"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>逐步解說：建立邊界字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 建立邊界圖像](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph)。  
-  
 您可以使用自訂編輯器擴充功能，來自訂編輯器邊界的外觀。 本逐步解說會將自訂圖像 （glyph） 放在指示區邊界中，每當"todo"這個字出現在程式碼註解。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -34,7 +32,7 @@ ms.locfileid: "47490057"
   
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`TodoGlyphTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `TodoGlyphTest`。  
   
 2.  新增編輯器的分類器專案項目。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -45,7 +43,7 @@ ms.locfileid: "47490057"
   
 #### <a name="to-define-the-glyph"></a>若要定義圖像 （glyph）  
   
-1.  將類別檔案並將它命名`TodoGlyphFactory`。  
+1.  加入類別檔案，並將它命名為 `TodoGlyphFactory`。  
   
 2.  新增下列使用宣告。  
   

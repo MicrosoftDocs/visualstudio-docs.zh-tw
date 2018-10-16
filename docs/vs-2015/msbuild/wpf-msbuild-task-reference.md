@@ -1,7 +1,7 @@
 ---
 title: WPF MSBuild 工作參考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3423d08777cc19a29fcb145e4394866ce445aec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185467"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[WPF MSBuild 工作參考](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-task-reference)。  
-  
   
 Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engine (MSBuild) 增加一組建置工作，包括編譯標記和處理資源的工作。  
   
@@ -68,7 +66,7 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
  建置 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  
   
 ## <a name="see-also"></a>另請參閱  
- [ MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+ [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31f1972302b26ff746da8543f251fda14979073c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c816e11189490480cb7f82a241947083ed3068d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302040"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaLineNumber](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber)。  
-  
 描述對應到來源檔案行號的位元組的映像文字區塊的程序的存取資訊。  
   
 ## <a name="syntax"></a>語法  

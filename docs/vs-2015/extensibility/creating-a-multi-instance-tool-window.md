@@ -1,7 +1,7 @@
 ---
 title: 建立多個執行個體工具視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286360"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>建立多執行個體工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立多個執行個體工具視窗](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window)。  
-  
 您可以程式設計的工具視窗，讓多個執行個體可以同時開啟。 根據預設，工具視窗可以有開啟的只有一個執行個體。  
   
  當您使用多重執行個體工具視窗時，您可以顯示在相同的時間資訊的數個相關的來源。 例如，您可以將多行放<xref:System.Windows.Forms.TextBox>控制的多重執行個體工具視窗中，以便在程式設計的工作階段期間會同時提供數個程式碼片段。 也比方說，您可以將放<xref:System.Windows.Forms.DataGrid>控制項和下拉式清單方塊的多重執行個體工具視窗中，如此可以同時追蹤多個即時資料來源。  

@@ -1,7 +1,7 @@
 ---
 title: 使用 ClickOnce 部署 COM 元件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246840"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 ClickOnce 部署 COM 元件](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce)。  
-  
 部署舊版的 COM 元件一直是困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用之間重疊的應用程式。 這種情況通常不是問題在.NET Framework 應用程式中的因為都是完全隔離的應用程式或元件並排顯示相容。 Visual Studio 可讓您部署隔離的 COM 元件，在 Windows XP 或更高版本的作業系統上。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供簡單而安全的機制，可部署您的.NET 應用程式。 不過，如果您的應用程式會使用傳統的 COM 元件，您必須採取額外的步驟，才能將其部署。 本主題描述如何部署隔離的 COM 元件，並參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
@@ -69,7 +67,7 @@ ms.locfileid: "47487644"
   
 1.  從使用 Visual Basic 6.0**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱] 方塊中，輸入 `VB6Hello`。  
+2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱]  方塊中，輸入 `VB6Hello`。  
   
     > [!NOTE]
     >  只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
@@ -95,7 +93,7 @@ ms.locfileid: "47487644"
   
 1.  使用 Visual Basic 中，從**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱] 方塊中，輸入 `RegFreeComDemo`。  
+2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱]  方塊中，輸入 `RegFreeComDemo`。  
   
 3.  在 **方案總管 中**，按一下**顯示所有檔案** 按鈕以顯示專案參考。  
   

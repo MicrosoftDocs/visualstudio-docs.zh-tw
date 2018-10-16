@@ -1,7 +1,7 @@
 ---
 title: 編輯 UML 模型和圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0620f0a1212d7abd864a9428492d95067098ef16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245814"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>編輯 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[編輯 UML 模型和圖表](https://docs.microsoft.com/visualstudio/modeling/edit-uml-models-and-diagrams)。  
-  
 您可以透過數種不同類型之圖表所提供的檢視來建立和編輯 UML 模型。 這些圖表在您的系統上提供不同的觀點，協助您了解並討論其設計和需求的不同層面。 Visual Studio 提供其中五個最常用的 UML 圖表類型的範本。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

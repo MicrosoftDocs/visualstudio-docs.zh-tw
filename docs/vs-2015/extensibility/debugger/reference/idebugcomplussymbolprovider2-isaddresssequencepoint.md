@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23b51caa70052a8d535287769924e84d386fa60b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e75090ced6adfa016c385f1af914823f3327d5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258982"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugComPlusSymbolProvider2::IsAddressSequencePoint](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint)。  
-  
 判斷指定的偵錯位址為序列點。  
   
 ## <a name="syntax"></a>語法  

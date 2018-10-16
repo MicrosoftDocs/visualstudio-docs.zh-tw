@@ -1,7 +1,7 @@
 ---
 title: CA2224： 多載等號比較運算子的覆寫 equals |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd7acd4b99d3278d75aa3721137511857e04fe7c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 64b5c7113b5616733b6528cf0790f25211e18f6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192865"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224：多載等號比較運算子時必須一併覆寫 Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2224： 多載等號比較運算子的覆寫 equals](https://docs.microsoft.com/visualstudio/code-quality/ca2224-override-equals-on-overloading-operator-equals)。
-
 |||
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|

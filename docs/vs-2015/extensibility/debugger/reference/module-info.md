@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95972779db412ad87883fbb3ba5d4fbbc1ee1cc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13b5d725f846fbe266fe35e37df70dcfa4912862
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198259"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MODULE_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/module-info)。  
-  
 描述特定模組 （DLL、 EXE 或組件）。  
   
 ## <a name="syntax"></a>語法  

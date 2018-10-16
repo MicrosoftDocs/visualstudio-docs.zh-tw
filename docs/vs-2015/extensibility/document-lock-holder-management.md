@@ -1,7 +1,7 @@
 ---
 title: 文件鎖定持有者管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296721"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文件鎖定持有者管理](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management)。  
-  
 執行文件資料表 (RDT) 會維持開啟的文件和它們所擁有的任何編輯鎖定計數。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件上。 這項功能常用的設計工具，可修改的圖形化使用者介面的多個檔案。  
   
 ## <a name="document-lock-holder-scenarios"></a>文件鎖定持有者案例  

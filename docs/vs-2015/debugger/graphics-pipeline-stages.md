@@ -1,7 +1,7 @@
 ---
 title: 圖形管線階段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eda25bb46a9920b8662e8af8b2e4c08da04c3781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267458"
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[圖形管線階段](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pipeline-stages)。  
-  
 [圖形管線階段] 視窗可協助您了解如何透過 Direct3D 圖形管線各階段轉換個別繪製呼叫。  
   
  這是 [管線階段] 視窗：  

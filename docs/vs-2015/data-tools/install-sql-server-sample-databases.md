@@ -1,7 +1,7 @@
 ---
 title: 安裝 SQL Server 範例資料庫 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a7e82091d93a14e53eed4ee67da086ee1a3c892
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213241"
 ---
 # <a name="install-sql-server-sample-databases"></a>安裝 SQL Server 範例資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[安裝 SQL Server 範例資料庫](https://docs.microsoft.com/visualstudio/data-tools/install-sql-server-sample-databases)。  
-  
   
 範例資料庫適合用來試驗 SQL 和 LINQ 查詢、 資料繫結、 Entity Framework 模型等等。  每個資料庫產品都有它自己的範例資料庫。 Northwind 和 AdventureWorks 是兩個熱門的 SQL Server 範例資料庫。  
   

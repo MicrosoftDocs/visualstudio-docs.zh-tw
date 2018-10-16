@@ -1,7 +1,7 @@
 ---
 title: IDebugFirewallConfigurationCallback2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0827361c-b97c-4851-9898-ab6d88c81811
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d332b7dab143b1fedbbdfc5ac92dc2b123dfe1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadd21622c7db2415d0170d252b3641e8bde927b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206204"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugFirewallConfigurationCallback2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfirewallconfigurationcallback2)。  
-  
 可讓要求則會使用 DCOM 的偵錯引擎[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]UI，請確定防火牆會封鎖遠端偵錯。  
   
 ## <a name="syntax"></a>語法  

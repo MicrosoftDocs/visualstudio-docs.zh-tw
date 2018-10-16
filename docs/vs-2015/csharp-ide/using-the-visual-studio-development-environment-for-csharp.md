@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio 開發環境適用於 C# |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2811fada41293cb64ab223bc0e6f8d387304231
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0205cd546c857b3ad80d89c2520e15759558c75
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194869"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>使用 Visual Studio 開發環境適用於 C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

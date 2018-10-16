@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackframe:: Get_returnaddress |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb45dc01415a85d5eaea0e8015638abe20c9ed55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a24e31e6c45efddeac020f12fe57dbbb9688b619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231071"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiastackframe:: Get_returnaddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-returnaddress)。  
-  
 擷取框架的傳回位址。  
   
 ## <a name="syntax"></a>語法  

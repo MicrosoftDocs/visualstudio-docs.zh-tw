@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 Code Center Premium 來源進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248261"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：以 Code Center Premium 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 使用程式碼 Center Premium 來源進行偵錯](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-with-code-center-premium-source)。  
-  
 利用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 偵錯工具，您可以從 Microsoft MSDN Code Center Premium 對安全共用來源進行偵錯。  
   
  本主題說明在 Visual Studio 中，安裝和偵錯 Code Center Premium 原始程式碼的方法。  

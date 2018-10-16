@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenuminjectedsources:: Skip |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f40930dc3a3197adc6004413a9e8f8a842873cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1a6757a95ab43419746351436123faa7f56e4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173962"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiaenuminjectedsources:: Skip](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenuminjectedsources-skip)。  
-  
 略過指定的數目的列舉型別序列中的插入來源。  
   
 ## <a name="syntax"></a>語法  

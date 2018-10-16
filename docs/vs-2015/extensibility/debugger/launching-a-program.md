@@ -1,7 +1,7 @@
 ---
 title: 啟動程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242542"
 ---
 # <a name="launching-a-program"></a>啟動程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[啟動程式](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program)。  
-  
 想要偵錯程式的使用者可以按 F5 以執行從 IDE 的偵錯工具。 這樣就會開始一系列的最終會導致 IDE 連接到偵錯引擎 (DE)，依序連接，或附加，給程式，如下所示的事件：  
   
 1.  IDE 會先呼叫以取得解決方案的使用中專案的偵錯設定專案套件。 設定包括的起始目錄、 環境變數，在其中執行程式，連接埠，以指定要使用來建立程式，DE。 這些設定會傳遞至偵錯封裝。  

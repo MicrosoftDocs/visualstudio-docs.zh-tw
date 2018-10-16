@@ -1,7 +1,7 @@
 ---
 title: 管理組件和資訊清單簽署 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172740"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理組件和資訊清單簽署](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing)。  
-  
 強式名稱簽署提供軟體元件的全域唯一識別。 強式名稱用以保證組件無法為他人作為詐騙之用，並確保元件的相依性和組態陳述式會對應到正確的元件和元件版本。  
   
  強式名稱是由組件的身分識別 (簡單文字名稱、版本號碼及文化特性資訊)，加上公開金鑰語彙基元和數位簽章所組成。  

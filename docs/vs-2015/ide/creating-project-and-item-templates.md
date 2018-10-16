@@ -1,7 +1,7 @@
 ---
 title: 建立專案和項目範本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e288329637c6a6f421a5b32f19084897a31e5f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255344"
 ---
 # <a name="creating-project-and-item-templates"></a>建立專案和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立專案和項目範本](https://docs.microsoft.com/visualstudio/ide/creating-project-and-item-templates)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本和項目範本提供可重複使用的 Stub，讓使用者有一些基本的程式碼和結構可自行運用。  
   
 ## <a name="visual-studio-templates"></a>Visual Studio 範本  

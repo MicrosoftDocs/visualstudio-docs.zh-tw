@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::Reset |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08395164e24eaff5419628fcc9b59d41f0e73a0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb1218c7ca0432707efe2154226d38d0f6eb2e04
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273451"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumCodePaths2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-reset)。  
-  
 將列舉重設第一個項目。  
   
 ## <a name="syntax"></a>語法  

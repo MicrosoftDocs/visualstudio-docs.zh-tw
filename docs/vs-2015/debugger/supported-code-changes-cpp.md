@@ -1,7 +1,7 @@
 ---
 title: 支援程式碼變更 （c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225351"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[支援的程式碼變更 （c + +）](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp)。  
-  
 Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。  
   
  如需在 Visual Studio 中使用 C++ 的 [編輯後繼續] 的相關資訊，請參閱 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。  
@@ -77,7 +75,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 ##  <a name="BKMK_Unsupported_scenarios"></a> 不支援的情節  
  C/C++ 的 [編輯後繼續] 無法用於下列偵錯案例中：  
   
--   偵錯原生編譯的應用程式[/Zo （增強最佳化偵錯）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   偵錯以 [/Zo (增強最佳化偵錯)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)編譯的原生應用程式  
   
 -   在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，偵錯 Windows 市集應用程式或元件。 從 Visual Studio 2015 Update 1 開始，您可以在 Windows 市集 C++ 應用程式和 DirectX 應用程式中使用 [編輯後繼續]，因為它現在支援 `/ZI` 編譯器參數和  `/bigobj` 參數。 您也可以搭配以 `/FASTLINK` 參數。  
   
@@ -147,7 +145,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 3.  清除 [ **允許先行編譯** ] 核取方塊。  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制  
- [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 < [IDL 屬性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
+ [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 [IDL 屬性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

@@ -1,7 +1,7 @@
 ---
 title: 將目錄新增至新的 [專案] 對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190485"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>將目錄新增至新增專案對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[新增到新的 [專案] 對話方塊中的目錄](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box)。  
-  
 當您建立新的專案類型時，您也可以註冊新的目錄中**新的專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也稱為節點。 在此範例中，會註冊 VSPackage CLSID_Package 所公開的範本。 如此一來，左邊**新的專案**對話方塊會提供新增的節點，取決於 Folder_Label_ResID 資源的名稱。 此資源會從 VSPackage 附屬 DLL 載入。  
   
  **資料夾**值代表 Folder_Label_ResID 節點會顯示在其下的資料夾的 GUID。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。  

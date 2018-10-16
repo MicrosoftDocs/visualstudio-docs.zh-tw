@@ -1,7 +1,7 @@
 ---
 title: 偵錯 CSS 樣式使用 DOM 總管 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220715"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 總管偵錯 CSS 樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 DOM 總管偵錯 CSS 樣式](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer)。  
-  
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  當您偵錯 Windows 市集、Windows Phone 市集應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式時，可以檢視和變更所選 DOM 項目及其子項目的 CSS 規則。  

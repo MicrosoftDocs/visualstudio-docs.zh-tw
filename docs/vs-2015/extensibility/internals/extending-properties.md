@@ -1,7 +1,7 @@
 ---
 title: 擴充屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303702"
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[擴充屬性](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **屬性** 視窗是 COM 和 COM + 元件的通用屬性瀏覽器，並支援所有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]產品。 **屬性** 視窗的運作方式與`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  
   
  **屬性**視窗中，在鍵盤上按 F4 或選取可開啟**屬性視窗**上**檢視**功能表，用來檢視和編輯設定通用的設計階段屬性和所選物件的事件。 方案和專案，與相關聯的組態相關屬性會顯示在[屬性頁](../../extensibility/internals/property-pages.md)。 如需詳細資訊，請參閱 < [NIB： 專案屬性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理設定選項](../../extensibility/internals/managing-configuration-options.md)，並[專案中的項目 NIB： 管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
@@ -96,5 +94,5 @@ ms.locfileid: "47484938"
  說明如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有效率地管理參考、 資料連接、 資料夾和您透過方案和專案的開發工作所需的檔案等項目。  
   
  [擴充 Visual Studio 的其他部分](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 說明如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]服務，以建立比對的其餘的 UI 項目[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。
+ 說明如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 服務建立 UI 項目，比對其餘的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。
 

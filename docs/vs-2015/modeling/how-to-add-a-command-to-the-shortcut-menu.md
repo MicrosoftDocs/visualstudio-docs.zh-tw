@@ -1,7 +1,7 @@
 ---
 title: 如何： 將命令加入至捷徑功能表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ae32e59dafa12e0c9f8695c0010012918f0b89d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246893"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 將命令加入至捷徑功能表](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-command-to-the-shortcut-menu)。  
-  
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。  
   
  總結而言，這些步驟在 DslPackage 專案中執行，步驟如下所示：  
@@ -201,7 +199,7 @@ namespace Company.Language1 /* Make sure this is correct */
  您必須定義兩個方法，一個用來決定內容功能表上何時會顯示命令，另一個用來執行命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。  
   
 ### <a name="define-when-the-command-will-be-visible"></a>定義命令何時可見  
- 對每一個命令定義 `OnStatus...` 方法，決定命令是否將出現在功能表上，以及它是否將被啟用或呈現為灰色。設定 `Visible` 的 `Enabled` 和 `MenuCommand` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。  
+ 對每一個命令定義 `OnStatus...` 方法，決定命令是否將出現在功能表上，以及它是否將被啟用或呈現為灰色。設定 `MenuCommand` 的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。  
   
  在本範例中，只有在使用者選取特定類型的圖形時才可見到命令，且只在至少其中一個所選項目處於特定狀態時才會啟用命令。 此範例是根據「類別圖 DSL」範本，而 ClassShape 和 ModelClass 是在 DSL 中所定義的類型：  
   

@@ -1,7 +1,7 @@
 ---
 title: -Deploy (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4bed834524c159d42b2193857c805fab7628fe0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3883cac01795f4dc5a1e3b0a3d9b58adc176c06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172181"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[-部署 (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/deploy-devenv-exe)。  
-  
   
 在建置或重建之後部署方案。 只適用於 受控碼專案。  
   

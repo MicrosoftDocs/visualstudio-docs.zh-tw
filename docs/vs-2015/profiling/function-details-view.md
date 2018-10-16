@@ -1,7 +1,7 @@
 ---
 title: 函式詳細資料檢視 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b243e6fee02e0d093cac17352803bfd66016bdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181894"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[函式詳細資料檢視](https://docs.microsoft.com/visualstudio/profiling/function-details-view)。  
-  
 [函式詳細資料檢視] 視窗會顯示下列資訊︰  
   
 -   [成本分配] 橫條圖表示您選取的函式與執行所選函式的呼叫函式之間的關聯性，以及所選函式與它所呼叫的函式之間的關聯性。  

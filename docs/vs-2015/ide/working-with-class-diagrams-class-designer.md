@@ -1,7 +1,7 @@
 ---
 title: 使用類別圖表 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306705"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用類別圖表 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用類別圖表 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer)。  
-  
 類別圖表可幫助您了解其他人撰寫 (或是您很久以前撰寫) 之專案的類別結構。 您可以使用這些類別圖表來自訂專案資訊、與其他人共用，以及向其他人展示。  
   
  展示專案資訊的第一個步驟，就是建立可顯示您要展示之內容的類別圖表。 如需詳細資訊，請參閱[檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)。 您可以為一個專案建立多個類別圖表，以用來顯示專案的不同檢視、所選擇的專案類型子集，或所選擇的類型成員子集。  

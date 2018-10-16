@@ -1,7 +1,7 @@
 ---
 title: 更多偵錯功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eb47e75ea0b2e523af99bbc4f3d45e75d578f05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bab0d6d7f0e57186d21d620589a86dc89fa9010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216615"
 ---
 # <a name="more-debugging-features"></a>更多偵錯功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[更多偵錯功能](https://docs.microsoft.com/visualstudio/debugger/more-debugging-features)。  
-  
 本節包含您可與 Visual Studio 偵錯工具並用的其他功能。  
   
  如需讓偵錯更快更簡單的秘訣和訣竅清單，請參閱 [偵錯秘訣和訣竅](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx)。  

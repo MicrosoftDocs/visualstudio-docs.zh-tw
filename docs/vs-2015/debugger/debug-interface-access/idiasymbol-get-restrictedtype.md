@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_restrictedType |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e295729ecae924b3a866ff21b4a349953fb963b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22c418a1cc1cb3ff8db0ed2cd9270c9e43cec94c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261569"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaSymbol::get_restrictedType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-restrictedtype)。  
-  
 指定是否`this`指標會標示為受限制。  
   
 ## <a name="syntax"></a>語法  

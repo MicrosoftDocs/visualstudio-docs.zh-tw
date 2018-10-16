@@ -1,7 +1,7 @@
 ---
 title: 管理方案中的專案載入 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281381"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理方案中的專案載入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理方案中載入專案](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution)。  
-  
 Visual Studio 方案可以包含大量的專案。 Visual Studio 預設會在開啟解決方案時，階段中載入方案中的所有專案，而且不允許使用者存取的任何專案，直到它們全部完成載入。 當專案載入的程序會持續超過兩分鐘時，會顯示進度列，顯示載入的專案數目及專案的總數。 使用者可以同時使用多個專案的方案中工作卸載的專案，但此程序有一些缺點： 已卸載的專案並不是建置為重建方案 命令的一部分，並關閉 IntelliSense 描述的型別和成員專案不會顯示。  
   
  開發人員可以減少方案載入時間，並管理由管理員建立的解決方案載入載入行為的專案。 解決方案負載管理員可以設定不同的專案載入特定專案或專案類型的優先順序、 確定載入專案時，會開始在背景建置之前，延遲背景載入其他背景工作必須等到完成後，和執行其他專案負載的管理工作。  

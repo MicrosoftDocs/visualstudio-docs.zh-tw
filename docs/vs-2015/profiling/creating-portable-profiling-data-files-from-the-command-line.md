@@ -1,7 +1,7 @@
 ---
 title: 從命令列建立可移植的分析資料檔案 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 314dc97e5881949ee69131576932db1865969b2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254685"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的程式碼剖析資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立可移植程式碼剖析資料檔案從命令列](https://docs.microsoft.com/visualstudio/profiling/creating-portable-profiling-data-files-from-the-command-line)。  
-  
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將分析回合的符號內嵌到 .vsp 檔案。  
   
  您也可以建立較小且在 IDE 中更快速載入之預先分析的分析資料 (.vsps) 檔案。  

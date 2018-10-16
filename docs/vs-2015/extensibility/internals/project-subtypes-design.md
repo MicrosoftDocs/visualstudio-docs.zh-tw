@@ -1,7 +1,7 @@
 ---
 title: 專案子類型設計 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243813"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設計專案子類型](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design)。  
-  
 專案子類型可讓 Vspackage 擴充 Microsoft Build Engine (MSBuild) 為基礎的專案。 使用彙總可讓您重複使用的受管理的核心專案系統中實作大量[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]但仍然自訂特定案例的行為。  
   
  下列主題將詳細說明的基本設計和實作專案子類型：  

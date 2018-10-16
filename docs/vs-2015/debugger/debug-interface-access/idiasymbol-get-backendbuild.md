@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_backendbuild |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8c3577d809e28f448f807616852f7baf447705f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c35afdd308990e76436214963ef7d1766aeb15b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193787"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idiasymbol:: Get_backendbuild](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendbuild)。  
-  
 擷取編譯器的後端組建編號。  
   
 ## <a name="syntax"></a>語法  

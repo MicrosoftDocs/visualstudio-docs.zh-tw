@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 擷取圖形資訊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273009"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 擷取圖形資訊](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information)。  
-  
-本逐步解說示範如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]圖形診斷來手動擷取圖形資訊從 Direct3D 應用程式。  
+本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷從 Direct3D 應用程式手動擷取圖形資訊。  
   
  本逐步解說將說明下列工作：  
   
@@ -39,7 +37,7 @@ ms.locfileid: "47486695"
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>允許在載入專案或方案後擷取圖形資訊  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，載入您想要從中擷取圖形資訊之應用程式專案或方案檔。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
   
 2.  在 [圖形診斷] 工具列上，選擇 [開始診斷] 。  
   
@@ -69,7 +67,7 @@ ms.locfileid: "47486695"
 -   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [擷取圖形資訊](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 

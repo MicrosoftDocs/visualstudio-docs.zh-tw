@@ -1,7 +1,7 @@
 ---
 title: '&lt;相依性&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233853"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;相依性&gt;項目 （ClickOnce 應用程式）](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application)。  
-  
 識別平台或組件的相依性所需的應用程式。  
   
 ## <a name="syntax"></a>語法  
@@ -152,29 +150,29 @@ ms.locfileid: "47484885"
 |`language`|選擇性。 識別兩個部分的語言代碼，例如 EN-US，組件。|  
   
 ### <a name="hash"></a>雜湊  
- `hash`項目是選用的子系`assemblyIdentity`項目。 `hash`項目沒有任何屬性。  
+ `hash`項目是選用的子系`assemblyIdentity`項目。 `hash` 項目沒有任何屬性。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 安全性檢查，以使用應用程式中的所有檔案的演算法雜湊，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
   
 ### <a name="dsigtransforms"></a>dsig:Transforms  
- `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms`項目沒有任何屬性。  
+ `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms` 項目沒有任何屬性。  
   
 ### <a name="dsigtransform"></a>dsig:Transform  
- `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 `dsig:Transform`項目具有下列屬性。  
+ `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 `dsig:Transform` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod`項目具有下列屬性。  
+ `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- `dsig:DigestValue`項目是必要的子系`hash`項目。 `dsig:DigestValue`項目沒有任何屬性。 它的值是計算的雜湊指定的檔案。  
+ `dsig:DigestValue`項目是必要的子系`hash`項目。 `dsig:DigestValue` 項目沒有任何屬性。 它的值是計算的雜湊指定的檔案。  
   
 ## <a name="remarks"></a>備註  
  您的應用程式所使用的所有組件必須有對應`dependency`項目。 相依組件不包含必須在全域組件快取中做為平台組件預先安裝的組件。  

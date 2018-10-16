@@ -1,7 +1,7 @@
 ---
 title: 驗證您的 Xamarin 環境 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,20 +10,18 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6c3d629f4b5a634c1dbc2c55f44db1db144e9a81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66428a7f06aee5449191a13e2712ae119daffb0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243487"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[確認您的 Xamarin 環境](https://docs.microsoft.com/visualstudio/cross-platform/verify-your-xamarin-environment)。  
   
-  
-安裝程式完成之後 (請參閱 [Setup and install](../cross-platform/setup-and-install.md))，請花幾分鐘的時間來確認一切就緒，以便體驗 Xamarin 開發。  
+安裝程式完成之後 (請參閱[設定和安裝](../cross-platform/setup-and-install.md))，請花幾分鐘的時間來確認一切就緒，以便體驗 Xamarin 開發。  
   
  完成這些驗證之後，您就能執行下列一或兩個逐步解說：  
   

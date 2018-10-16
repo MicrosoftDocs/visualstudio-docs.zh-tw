@@ -1,7 +1,7 @@
 ---
 title: Elements (XElement 動態屬性) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75cb7f8f6a5259151679ecee84bbeb5db336782f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b65f32cc4146f275ec77a5942bdfef3fcf493b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237285"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動態屬性)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Elements （XElement 動態屬性）](https://docs.microsoft.com/visualstudio/designers/elements-xelement-dynamic-property)。  
-  
 取得用於擷取目前項目 (符合指定的擴充名稱) 之子項目的索引子 (Indexer)。  
   
 ## <a name="syntax"></a>語法  

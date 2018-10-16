@@ -1,7 +1,7 @@
 ---
 title: 使用 開啟檔案命令顯示檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 139eb83f2260c44a3e0f8c50868d42aca8160694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d9b4198a2d88d7a3a71f07a393ed8e4e07df1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177537"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用開啟檔案命令顯示檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 開啟檔案命令顯示檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-file-command)。  
-  
 下列步驟描述 IDE 如何處理**開啟的檔案**命令，其位於**檔案**功能表中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。  
   
  當使用者按一下**開啟的檔案**命令**檔案**功能表上，並選取 [從檔案**開啟檔案**] 對話方塊中，下列程序就會發生。  

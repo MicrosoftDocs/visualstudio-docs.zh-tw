@@ -1,7 +1,7 @@
 ---
 title: 錯誤： IA64 處理混合的模式偵錯不支援 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a23ea4029134d8650acf0f443ee68a3f2ad6325c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1635b6f31685df1dd564de59a7323dc2ba215b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231162"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>錯誤：不支援 IA64 處理序的混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： 不支援混合的模式偵錯，如 IA64 處理](https://docs.microsoft.com/visualstudio/debugger/error-mixed-mode-debugging-for-ia64-processes-is-unsupported)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具不支援對 Itanium 處理序中混合的原生和 Managed 程式碼進行偵錯。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

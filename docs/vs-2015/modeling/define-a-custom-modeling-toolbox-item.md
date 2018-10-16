@@ -1,7 +1,7 @@
 ---
 title: 定義自訂模型工具箱項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252365"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定義自訂模型工具箱項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義自訂模型工具箱項目](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item)。  
-  
 若要讓您根據常用的模式輕鬆建立項目或項目群組，您可以將新工具加入 Visual Studio 中的模型圖表工具箱。 您可以將這些工具箱項目散發給其他 Visual Studio 使用者。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

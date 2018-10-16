@@ -1,7 +1,7 @@
 ---
 title: 如何：還原 C# 重構程式碼片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13867274ace5582b25482868ddd3642426b1f295
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227875"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>如何：還原 C# 重構程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 還原 C# 重構程式碼片段](https://docs.microsoft.com/visualstudio/ide/how-to-restore-csharp-refactoring-snippets)。  
-  
 C# 重構作業需仰賴在下列目錄中找到的程式碼片段：  
   
  <安裝目錄>\Microsoft Visual Studio 14.0\VC#\Snippets\\<語言識別碼>\Refactoring  

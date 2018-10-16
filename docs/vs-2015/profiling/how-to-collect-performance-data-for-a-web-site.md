@@ -1,7 +1,7 @@
 ---
 title: 如何：收集網站的效能資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185895"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 收集網站的效能資料](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site)。  
-  
 您可以使用 [效能精靈] 收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未開啟之 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網站進行程式碼剖析。  
   
 > [!NOTE]
@@ -53,7 +51,7 @@ ms.locfileid: "47499429"
   
 ### <a name="to-profile-a-web-site-project"></a>對網站專案進行程式碼剖析  
   
-1.  在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 中，開啟 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 專案。  
+1.  在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中，開啟 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 專案。  
   
 2.  按一下 [分析]  功能表上的 [啟動效能精靈] 。  
   

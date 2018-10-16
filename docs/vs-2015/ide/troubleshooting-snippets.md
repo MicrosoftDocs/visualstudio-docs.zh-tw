@@ -1,7 +1,7 @@
 ---
 title: 針對程式碼片段進行疑難排解 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6cc8cde833d9580e3fae03df2df11e87eed8cf2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fff2767c962cf6899840e54bff798bae1f9e202
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304807"
 ---
 # <a name="troubleshooting-snippets"></a>疑難排解程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[疑難排解程式碼片段](https://docs.microsoft.com/visualstudio/ide/troubleshooting-snippets)。  
-  
 IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀的程式碼片段檔案或程式碼片段檔案中有錯誤內容。  
   
 ## <a name="common-problems"></a>常見問題  

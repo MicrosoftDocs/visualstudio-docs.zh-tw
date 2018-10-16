@@ -1,7 +1,7 @@
 ---
 title: 在 UML 元件圖上項目的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 832f293e09f14831dc9c0f44833631874d6741bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c77c9e6be69604176c470fa8de9e33a74c05532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291417"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>UML 元件圖中的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 元件圖上項目的屬性](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-component-diagrams)。  
-  
 在 UML 元件圖中，圖表上的每個項目都會有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]

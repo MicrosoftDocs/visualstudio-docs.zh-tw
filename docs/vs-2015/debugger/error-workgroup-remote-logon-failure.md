@@ -1,7 +1,7 @@
 ---
 title: 錯誤： 工作群組遠端登入失敗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46d7043eba9d357f410d1a05655870ef5e1121d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 489fb331f08c95bf26a9b99c1143575aaa44257f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236024"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>錯誤：工作群組遠端登入失敗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： 工作群組遠端登入失敗](https://docs.microsoft.com/visualstudio/debugger/error-workgroup-remote-logon-failure)。  
-  
 這個錯誤為：  
   
  登入失敗：不明的使用者名稱或錯誤密碼  
@@ -91,7 +89,7 @@ ms.locfileid: "47489606"
   
 ## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

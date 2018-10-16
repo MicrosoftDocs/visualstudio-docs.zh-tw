@@ -1,7 +1,7 @@
 ---
 title: 可用服務清單 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248036"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[可用服務清單](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 和 Visual Studio SDK 支援下列服務。 某些套件提供自己此處未列出的服務 — 例如，語言服務並沒有單一服務的 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  
   
  若要取得的主要介面或介面顯示與每個服務使用此處所列，或從其他來源 （例如，語言服務） 取得的服務 Guid。  

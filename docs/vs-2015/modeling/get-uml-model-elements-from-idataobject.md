@@ -1,7 +1,7 @@
 ---
 title: 從 IDataObject 取得 UML 模型項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a69a6f20fdccdce9d8795c68bf0a70c74604428b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07dd0d092883e643e093c27349574a6509cd9dfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199559"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>從 IDataObject 取得 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[從 IDataObject 取得 UML 模型項目](https://docs.microsoft.com/visualstudio/modeling/get-uml-model-elements-from-idataobject)。  
-  
 當使用者從任何來源拖曳項目到圖表中時，拖曳的項目會編碼於 `System.Windows.Forms.IDataObject`。 編碼取決於來源物件的類型。 下列片段示範當來源是 UML 圖表時，如何擷取項目。  
   
 > [!NOTE]

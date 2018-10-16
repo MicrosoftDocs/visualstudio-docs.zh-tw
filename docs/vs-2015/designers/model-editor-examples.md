@@ -1,7 +1,7 @@
 ---
 title: 模型編輯器範例 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 47a6aa501eb24d9df642d50b21411dbeccb932c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5a3fe05877ab4fa28337d45404706e453ceb44e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232788"
 ---
 # <a name="model-editor-examples"></a>模型編輯器範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[模型編輯器範例](https://docs.microsoft.com/visualstudio/designers/model-editor-examples)。  
-  
 文件中的本節包含模型編輯器使用方法的範例。  
   
 ## <a name="related-topics"></a>相關主題  

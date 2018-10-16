@@ -1,7 +1,7 @@
 ---
 title: 針對程式碼涵蓋範圍進行疑難排解 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306043"
 ---
 # <a name="troubleshooting-code-coverage"></a>針對程式碼涵蓋範圍進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[疑難排解程式碼涵蓋範圍](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage)。  
-  
 Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 (.dll 或 .exe 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果] 視窗會顯示類似「產生空白的結果:....」的錯誤。有幾個可能發生這種情況的原因。 本主題有助於解決這些問題。  
   
 ## <a name="what-you-should-see"></a>您應該會看見  

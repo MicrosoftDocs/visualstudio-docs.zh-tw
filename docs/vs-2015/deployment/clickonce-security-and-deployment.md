@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 安全性和部署 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: be076232ee9214ad0039421c7c5610fad3f4c3b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232098"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 安全性和部署](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署可克服在部署中的三個主要問題：  
@@ -107,9 +105,9 @@ ms.locfileid: "47490477"
 |[專案設計工具、發行頁面](../ide/reference/publish-page-project-designer.md)|產生和編輯 Visual Basic 和 Visual C# 應用程式的應用程式和部署資訊清單。|  
 |[Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|產生 Visual Basic、 Visual C# 和 Visual c + + 應用程式的應用程式和部署資訊清單。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。<br /><br /> 可以從批次指令碼和命令提示字元中執行。|  
 |[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|產生和編輯應用程式和部署資訊清單。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。|  
-|[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)|產生應用程式資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 < [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
-|[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)|產生部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 < [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
-|[SignFile 工作](../msbuild/signfile-task.md)|簽署的應用程式和部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 < [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
+|[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)|產生應用程式資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
+|[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)|產生部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
+|[SignFile 工作](../msbuild/signfile-task.md)|簽署的應用程式和部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|開發您自己的應用程式，以產生應用程式和部署資訊清單。|  
   
  下表顯示支援這些瀏覽器中的 ClickOnce 應用程式所需的.NET Framework 版本。  

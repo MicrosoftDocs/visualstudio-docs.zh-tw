@@ -1,7 +1,7 @@
 ---
 title: 建立可重複使用的按鈕群組 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bf0e2f0fd80e5d6cc4dee56b5c7c87dd7cfd8e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b248543fa68e700ab978270c5cdb7bbd908c39d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232960"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立可重複使用群組的按鈕](https://docs.microsoft.com/visualstudio/extensibility/creating-reusable-groups-of-buttons)。  
-  
 命令群組是一律會出現在一起的功能表或工具列的命令集合。 將它指派給不同的父功能表.vsct 檔的 CommandPlacements 區段中，可以重複使用任何命令群組。  
   
  命令群組通常包含按鈕，但也可以包含其他的功能表或下拉式方塊。  

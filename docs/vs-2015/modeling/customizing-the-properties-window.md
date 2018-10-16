@@ -1,7 +1,7 @@
 ---
 title: 自訂屬性視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241731"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂屬性視窗](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window)。  
-  
 您可以在您的特定領域語言 (DSL) 中自訂的外觀和行為的 [屬性] 視窗，在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在 DSL 定義中，您可以定義網域內容上每個網域類別。 根據預設，當您選取的類別，在圖表上或在 [模型總管] 中，執行個體時每個網域屬性列在 [屬性] 視窗中。 這可讓您查看和編輯屬性的值網域，即使您尚未對應它們在圖表上的形狀欄位。  
   
 ## <a name="names-descriptions-and-categories"></a>名稱、 描述和類別  

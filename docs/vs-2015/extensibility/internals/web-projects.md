@@ -1,7 +1,7 @@
 ---
 title: Web 專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307b8a2d9859d3924ae8b6975cd582ba2459c23c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79fd2da19e7fcf77839292a63a9e472dbb2510a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232481"
 ---
 # <a name="web-projects"></a>Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Web 專案](https://docs.microsoft.com/visualstudio/extensibility/internals/web-projects)。  
-  
 Web 專案系統會建立 Web 專案的專案系統。 Web 專案接著會建立 Web 應用程式。 您可以使用傳統的程式設計語言，例如網頁進行程式設計[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]，以收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。 使用相關聯的程式碼的網頁會呼叫智慧的網頁。  
   
 ## <a name="in-this-section"></a>本節內容  

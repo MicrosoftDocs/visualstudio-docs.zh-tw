@@ -1,7 +1,7 @@
 ---
 title: JavaScript 記憶體 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54a05a7a757e4dec026fe889c3ee26730482e64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 531590495cf31f0a173b9dfc1dbc995a9fb73364
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257604"
 ---
 # <a name="javascript-memory"></a>JavaScript 記憶體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UWP 應用程式中分析 JavaScript 記憶體使用量](https://docs.microsoft.com/visualstudio/profiling/javascript-memory)。  
-  
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的市集應用程式中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括 Windows Phone 市集和 Windows 市集的應用程式。  
   
  JavaScript 記憶體分析器可以執行下列項目：  

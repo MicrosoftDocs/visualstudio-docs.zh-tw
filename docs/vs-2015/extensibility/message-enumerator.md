@@ -1,7 +1,7 @@
 ---
 title: 訊息列舉值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285580"
 ---
 # <a name="message-enumerator"></a>訊息列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[訊息的列舉值](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator)。  
-  
 下列旗標會用於`TEXTOUTPROC`函式，也就是 IDE 提供呼叫時的回呼函式[SccOpenProject](../extensibility/sccopenproject-function.md) (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)如回呼的詳細資訊函式）。  
   
  如果 IDE 會要求取消程序，它可能會取消訊息。 在此情況下，原始檔控制外掛程式會使用`SCC_MSG_STARTCANCEL`詢問顯示 IDE**取消** 按鈕。 在此之後，可能會傳送任何一組一般訊息。 如果任何這些傳回`SCC_MSG_RTN_CANCEL`，則外掛程式，則會結束作業，並傳回。 外掛程式也會輪詢`SCC_MSG_DOCANCEL`定期來判斷是否使用者已取消作業。 當所有作業完成都之後，或如果使用者已取消，外掛程式會傳送`SCC_MSG_STOPCANCEL`。 `SCC_MSG_INFO`，SCC_MSG_WARNING，並且 SCC_MSG_ERROR 類型用於捲動訊息清單中顯示的訊息。 `SCC_MSG_STATUS` 是一種特殊類型，指出文字應該出現在狀態列或暫存的顯示區域中。 它不會永久清單中。  

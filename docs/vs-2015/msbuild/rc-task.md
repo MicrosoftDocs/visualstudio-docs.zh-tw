@@ -1,7 +1,7 @@
 ---
 title: RC 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ff118a6d32a182d1060cc051f24352b16037039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259341"
 ---
 # <a name="rc-task"></a>RC 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[RC 工作](https://docs.microsoft.com/visualstudio/msbuild/rc-task)。  
-  
   
 包裝 Microsoft Windows 資源編譯器工具 (rc.exe)。 **RC** 工作會將資料指標、圖示、點陣圖、對話方塊和字型這類資源編譯為資源 (.res) 檔案。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜資源編譯器＞。  
   

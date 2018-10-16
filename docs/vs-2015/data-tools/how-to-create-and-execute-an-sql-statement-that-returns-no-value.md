@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立和執行 SQL 陳述式未傳回值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2dd78fe0144718337fc589e0d8f8948d5353dd6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1768db097d2555726b17862c9c4a4b82a3e2a6a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188600"
 ---
 # <a name="how-to-create-and-execute-an-sql-statement-that-returns-no-value"></a>如何：建立及執行未傳回值的 SQL 陳述式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

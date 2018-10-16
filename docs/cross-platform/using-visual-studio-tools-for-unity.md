@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283329"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496060"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -94,14 +94,6 @@ ms.locfileid: "44283329"
 - 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]。 鍵盤快速鍵：**Alt**+**Shift**+**E**
 
      ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity 錯誤清單
-
- 您可以在 Visual Studio 連接到 Unity 執行個體時，於 Visual Studio 中檢視來自 Unity 主控台的訊息。 其中包括來自 Unity 的錯誤和警告。 這些訊息會顯示在 Visual Studio 的 [錯誤清單] 視窗中；來自 Unity 的錯誤訊息會顯示在 [錯誤] 索引標籤上，警告訊息會顯示在 [警告] 索引標籤上，而其他訊息 (例如使用 Debug.Log Unity API 傳送的訊息) 則會顯示在 [訊息] 索引標籤上。
-
- 若要查看訊息，您的 Unity 專案必須連接到 Visual Studio，如 [Unity 偵錯](#unity-debugging)一節所述。
-
- 如果您不想要在 Visual Studio 的 [錯誤清單] 視窗中看到來自 Unity 的錯誤、警告和訊息，您可以在 [組態] 功能表中予以停用。
 
 ## <a name="unity-debugging"></a>Unity 偵錯
 

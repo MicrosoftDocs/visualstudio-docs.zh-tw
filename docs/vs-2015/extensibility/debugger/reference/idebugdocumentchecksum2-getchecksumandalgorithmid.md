@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a9e92fd73e4d7b47eacc46f7e7e41c9473571d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f20342c6cf1db9cb06466a6d51ea97d303ccdbab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221607"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugDocumentChecksum2::GetChecksumAndAlgorithmId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid)。  
-  
 擷取指定要使用的位元組數目上限的文件的總和檢查碼和演算法識別項。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 將圖示加入至功能表命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184511"
 ---
 # <a name="adding-icons-to-menu-commands"></a>將圖示新增至功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入至功能表命令的圖示](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands)。  
-  
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （以節省空間） 時在功能表上顯示命令通常會出現圖示和文字的命令。  
   
  圖示是 16 像素寬 x 16 像素高，而且可以是 8 位元色彩深度 （256 色） 或 32 位元色彩深度 （全彩）。 32 位元色彩圖示較好。 圖示通常會排列在單一的水平資料列，在單一點陣圖，雖然允許多個點陣圖。 這個點陣圖被宣告以及個別的圖示和點陣圖中，您可以使用.vsct 檔案中。 請參閱參考[Bitmaps 元素](../extensibility/bitmaps-element.md)如需詳細資訊。  

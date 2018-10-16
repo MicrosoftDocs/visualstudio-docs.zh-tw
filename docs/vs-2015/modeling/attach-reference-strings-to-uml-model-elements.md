@@ -1,7 +1,7 @@
 ---
 title: 將參考字串附加至 UML 模型項目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0d917bf0553fbea06c73d3f4ce57f01b3f99a36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243850"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>將參考字串附加至 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將參考字串附加至 UML 模型項目](https://docs.microsoft.com/visualstudio/modeling/attach-reference-strings-to-uml-model-elements)。  
-  
 您可以撰寫程式碼，將任意字串附加至模型項目。 例如，字串可能是 URI、快取的計算結果，或另一個模型項目的 ModelBus 參考。 每個字串都包含在 IReference 物件中。 任何數目的 IReference 物件都可以附加至每個模型項目。  
   
  每個 IReference 物件都具有名稱。 您可以使用這個名稱指示參考值應有的解譯方式。 例如，您可以將名稱設為 "URI"，指示此值應解譯為 URI。 有些預先定義的參考名稱值已為模型工具所用。  

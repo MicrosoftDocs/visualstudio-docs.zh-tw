@@ -1,7 +1,7 @@
 ---
 title: 事件處理常式傳播模型外的變更 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303195"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[事件處理常式傳播變更外部模型](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model)。  
-  
 Visualization and Modeling SDK，在中，您可以定義存放區的事件處理常式，以將變更傳播到外部存放區，例如非存放區變數、 檔案、 模型中其他存放區，或其他資源[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組。 存放區事件處理常式會觸發事件發生在交易結束之後執行。 它們也會在復原或取消復原作業中執行。 因此，不同於存放區規則存放區事件是最適合用來更新值以外的存放區中。 不同於.NET 事件存放區事件處理常式會註冊要接聽的類別： 您沒有註冊個別的處理常式，每個執行個體。 如需如何選擇不同的方式來處理變更的詳細資訊，請參閱[回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
   
  在圖形化介面和其他使用者介面控制項是可由存放區事件的外部資源的範例。  

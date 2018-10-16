@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 遺漏的物件，因為設定不正確的管線 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293523"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 遺漏物件因為設定不正確的管線](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline)。  
-  
-本逐步解說示範如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]圖形診斷工具來調查因為未設定像素著色器而遺失的物件。  
+此逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來調查因為沒有設定像素著色器而遺失的物件。  
   
  本逐步解說將說明下列工作：  
   
@@ -50,7 +48,7 @@ ms.locfileid: "47497086"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，載入圖形記錄文件，其中包含表現出遺漏物件的畫面格。 新的圖形記錄索引標籤會出現在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄文件，其中包含表現出遺漏物件的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中隨即顯示新的圖形記錄檔索引標籤。 此索引標籤的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
   
 2.  在 [畫面格清單] 中，選取示範未顯示物件的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情況下，圖形記錄索引標籤與下列類似：  
   

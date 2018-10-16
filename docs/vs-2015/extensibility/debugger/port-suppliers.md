@@ -1,7 +1,7 @@
 ---
 title: 連接埠供應商 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3be95dfdb84f373730d087e9d6da1096891770af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc9258d8eb3e7b819e068cd246a6dc3d358234d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217616"
 ---
 # <a name="port-suppliers"></a>連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[連接埠供應商](https://docs.microsoft.com/visualstudio/extensibility/debugger/port-suppliers)。  
-  
 偵錯工具就架構而言，**連接埠提供者**:  
   
 -   包含由伺服器，並提供連接埠上對該伺服器的要求。  

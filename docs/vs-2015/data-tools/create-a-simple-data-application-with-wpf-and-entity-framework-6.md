@@ -1,7 +1,7 @@
 ---
 title: 使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0014df0770bb7fdb697ee05d61b1543044988ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299178"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立簡單資料應用程式使用 WPF 和 Entity Framework 6](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6)。  
-  
   
 此逐步解說示範如何在 Visual Studio 中使用 SQL Server LocalDB，Northwind 資料庫中，Entity Framework 6，與 Windows Presentation Foundation 建立基本 「 資料表單 」 應用程式。 它示範如何執行基本的資料繫結，主版詳細資料檢視，而且也有自訂 「 繫結巡覽器 」 的 「 移動下一步 按鈕，"移到上一個，「 「 移至開始時，「 「 移至結尾，」 「 更新 」 和 「 刪除 」。  
   

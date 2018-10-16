@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_FIELD |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a1da6a086200e89c47758e9d561d513c6e15e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8426898b9a7d9d66f7f1bea770c84db6dd05f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227782"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[METADATA_ADDRESS_FIELD](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-address-field)。  
-  
 此結構表示類別或結構的欄位的位址。  
   
 ## <a name="syntax"></a>語法  

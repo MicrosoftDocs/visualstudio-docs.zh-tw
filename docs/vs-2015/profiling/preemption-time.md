@@ -1,7 +1,7 @@
 ---
 title: 先佔時間 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 614b049bf7aa881ce4454d8f832190b0391ff342
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943111386539ddb9ac686b0551dfe176f9e2d320
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194073"
 ---
 # <a name="preemption-time"></a>先佔時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[先佔時間](https://docs.microsoft.com/visualstudio/profiling/preemption-time)。  
-  
 時間軸中的這些區段，會和分類為先佔時間的封鎖時間相關聯。 此分類表示執行緒因為下列原因之一而被切換︰  
   
 -   排程器已使用較高優先順序的執行緒取代它。  

@@ -1,7 +1,7 @@
 ---
 title: 定義與安裝模型擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,22 +15,20 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234399"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義和安裝模型擴充功能](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension)。  
-  
 在 Visual Studio 中，您可以定義模型圖表的擴充功能。 使用這種方式，您可以調整圖表和模型，以符合您自己的需求。 例如，您可以定義功能表命令、UML 設定檔、驗證條件約束和工具箱項目。 您可以在單一擴充功能中定義數個元件。 您也可以使用 [Visual Studio 整合擴充功能 (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780)格式，將這些擴充功能散發給其他 Visual Studio 使用者。 您可以在 Visual Studio 中使用 VSIX 專案建立 VSIX。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47588684"
   
 1.  在  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **偵錯**功能表上，選擇 **開始偵錯**。  
   
-     專案組件和新的 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 執行個體隨即使用實驗模式開啟。  
+     專案組建和新的 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 執行個體隨即使用實驗模式開啟。  
   
     -   或者，您可以選擇 [啟動但不偵錯] 。 這會減少啟動程式所需的時間。  
   

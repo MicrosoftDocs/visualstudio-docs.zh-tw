@@ -1,7 +1,7 @@
 ---
 title: 附加和中斷連結至程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7129fab85d405d941394c02abf79ba29e787f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6915d54dca921f9600a51c3501ed9a4808bca199
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288700"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加至程式及中斷連結程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[附加和中斷連結至程式](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-and-detaching-to-a-program)。  
-  
 附加偵錯工具需要傳送正確的順序，方法和事件，使用適當的屬性。  
   
 ## <a name="sequence-of-methods-and-events"></a>序列的方法和事件  

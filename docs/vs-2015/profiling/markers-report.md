@@ -1,7 +1,7 @@
 ---
 title: 標記報告 |Microsoft 文件
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c8a495135a0a7cf493dfc8a8c407409c37e273e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0bfd7b6ef909415814bb8eff6da24ec8fef33ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242303"
 ---
 # <a name="markers-report"></a>標記報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[標記報告](https://docs.microsoft.com/visualstudio/profiling/markers-report)。  
-  
 標記報告會列出所顯示時間範圍內的標記。  移動瀏覽、縮放或隱藏通道可能會造成標記顯示或消失。 報表包含每個標記的下列資訊：  
   
 -   相對於開始追蹤的開始時間。  

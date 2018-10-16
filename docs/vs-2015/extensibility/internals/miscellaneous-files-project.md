@@ -1,7 +1,7 @@
 ---
 title: 其他檔案專案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdcbe1901deb472969c993b826660d03d12b2cf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dd7ce7dacfaa581d3b3757b33ad0d7af51d264
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258397"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[其他檔案專案](https://docs.microsoft.com/visualstudio/extensibility/internals/miscellaneous-files-project)。  
-  
 當使用者開啟專案項目時，IDE 會指派給其他檔案專案不是成員的方案中的任何專案的任何項目。  
   
  專案會扮演重要的角色，在決定當使用者開啟的專案項目，使用哪一個編輯器。 在設計專案時，可能使用的專案特定的編輯器或標準編輯器開啟特定檔案。  

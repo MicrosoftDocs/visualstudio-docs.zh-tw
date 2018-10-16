@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetAddressesFromContext |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28ba5c25a5e895d9e2eb403f2688961ec8e36edf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51b9259473d186879e6d9961fdedc15b8f22b110
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294277"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugSymbolProvider::GetAddressesFromContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext)。  
-  
 這個方法會將文件內容對應到的偵錯位址陣列。  
   
 ## <a name="syntax"></a>語法  

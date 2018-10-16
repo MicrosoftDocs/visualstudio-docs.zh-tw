@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2::Reset |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af27fc1d8edf12bc06e24cdd5b29c01274e57790
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bae2aba83051dd9832811d2dd6ad6f2858ab47cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274140"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IEnumDebugPrograms2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2-reset)。  
-  
 將列舉重設第一個項目。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 訊息選項對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0960c9fe2454affc38766da42a5035b3d95896d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7824ce5a0e65b762d992392b0d9b0e267d85e236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286516"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[訊息選項對話方塊](https://docs.microsoft.com/visualstudio/debugger/message-options-dialog-box)。  
-  
 使用此對話方塊來選取哪一個訊息會列在[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，選擇**記錄檔訊息**從**Spy**功能表。  
   
 ## <a name="in-this-section"></a>本節內容  

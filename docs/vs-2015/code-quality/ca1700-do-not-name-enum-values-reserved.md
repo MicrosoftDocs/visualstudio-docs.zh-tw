@@ -1,7 +1,7 @@
 ---
 title: CA1700： 不要在列舉值名稱&#39;保留&#39;|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7aaab7f774b274b9e70efac404d1ab4ba3315d93
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204720"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700： 不要在列舉值名稱&#39;保留&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1700： 不要在列舉值名稱&#39;保留&#39;](https://docs.microsoft.com/visualstudio/code-quality/ca1700-do-not-name-enum-values-reserved)。
-
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|

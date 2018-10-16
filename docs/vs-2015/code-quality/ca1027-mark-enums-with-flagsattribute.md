@@ -1,7 +1,7 @@
 ---
 title: ： Ca1027 以 flagsattribute 標記列舉 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cad7b5916b87cd7e1e3fefb27c90672143dbca1c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1edeb5a1bd57b6c607ba804966b490000307d9b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249219"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027：必須以 FlagsAttribute 標記列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1027： 以 FlagsAttribute 標記列舉](https://docs.microsoft.com/visualstudio/code-quality/ca1027-mark-enums-with-flagsattribute)。
-
 |||
 |-|-|
 |TypeName|MarkEnumsWithFlags|

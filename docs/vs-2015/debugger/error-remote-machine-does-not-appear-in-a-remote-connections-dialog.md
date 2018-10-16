@@ -1,7 +1,7 @@
 ---
 title: 錯誤： 遠端電腦不會顯示在 [遠端連線] 對話方塊 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 552be1e38cdb7401af36b287b23091d754c35980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7b849ea60c48bc5127ddd50167415629daec4e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185155"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[錯誤： 遠端電腦未出現在 [遠端連線] 對話方塊](https://docs.microsoft.com/visualstudio/debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog)。  
-  
 如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。  
   
- 如果您使用 managed 相容性模式，請檢查 Visual Studio 2010 文件：[疑難排解遠端偵錯-Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) 。  
+ 如果您使用 Managed 相容性模式，請參閱 Visual Studio 2010 文件： [疑難排解遠端偵錯 - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) 。  
   
 ### <a name="common-causes-for-this-error"></a>這項錯誤的常見原因  
   

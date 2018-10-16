@@ -1,7 +1,7 @@
 ---
 title: 定義 UML 模型的驗證條件約束 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,26 +14,24 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176536"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義 UML 模型的驗證條件約束](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models)。  
-  
 您可以定義驗證條件約束，測試模型是否符合您所指定的條件。 例如，您可以定義條件約束，確保使用者不會建立繼承關聯性的迴圈。 當使用者嘗試開啟或儲存模型時，會叫用該條件約束；該條件約束也可手動叫用。 如果條件約束失敗，您定義的錯誤訊息會加入錯誤視窗。 您可以將這些條件約束封裝成 Visual Studio 整合擴充功能 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780))，然後將它散發給其他的 Visual Studio 使用者。  
   
  您也可以定義條件約束，對照外部資源 (例如資料庫) 來驗證模型。 如果您想要驗證針對分層圖的程式碼，請參閱[分層圖中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
- 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -120,7 +118,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  如果您已經從驗證專案範本使用其特有的 VSIX，建立了驗證類別，就無須執行此程序。  
   
-2.  在驗證類別專案中，將參考加入下列 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 組件：  
+2.  在驗證類別專案中，在下列 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 組件中加入參考：  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -192,15 +190,15 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
+     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
   
     -   您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。  
   
-    -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定中的字串**啟動外部程式**欄位是完整路徑名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常是：  
+    -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟或建立模型專案，並開啟或建立模型圖表。  
+2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
 3.  若要為上節中的範例條件約束設定測試：  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- 請參閱[使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)可用來巡覽和讀取模型之方法與類型相關資訊。  
+ 如需可以用來巡覽和讀取模型之方法與類型的相關資訊，請參閱 [Programming with the UML API](../modeling/programming-with-the-uml-api.md) 。  
   
 ### <a name="about-validation-constraint-methods"></a>關於驗證條件約束方法  
  每個驗證條件約束由下列形式的方法定義：  
@@ -264,13 +262,13 @@ public void ValidateSomething
 |||  
 |-|-|  
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|使用 Managed Extensibility Framework (MEF) 將方法定義為驗證條件約束。|  
-|`[ValidationMethod (ValidationCategories.Menu)]`|指定驗證的執行時機。 使用位元 OR (&#124;) 如果您想要結合多個選項。<br /><br /> `Menu`＝由 [驗證] 功能表叫用。<br /><br /> `Save`＝儲存模型時叫用。<br /><br /> `Open`＝開啟模型時叫用。 `Load`＝儲存模型時叫用，但如有違反，將會警告使用者，其無法重新開啟此模型。 這也會在剖析模型前的載入時呼叫。|  
+|`[ValidationMethod (ValidationCategories.Menu)]`|指定驗證的執行時機。 使用位元 OR (&#124;) 如果您想要結合多個選項。<br /><br /> `Menu` = 由 [驗證] 功能表叫用。<br /><br /> `Save`＝儲存模型時叫用。<br /><br /> `Open`＝開啟模型時叫用。 `Load`＝儲存模型時叫用，但如有違反，將會警告使用者，其無法重新開啟此模型。 這也會在剖析模型前的載入時呼叫。|  
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|以條件約束所要套用的目標項目類型取代第二個參數 `IElement` 。 指定類型的所有項目將會叫用此條件約束方法。<br /><br /> 方法的名稱並不重要。|  
   
  您可以在第二個參數中，以各種不同類型定義所需數量的驗證方法。 叫用驗證時，會對所有符合參數類型的模型項目，呼叫每個驗證方法。  
   
 ### <a name="reporting-validation-errors"></a>報告驗證錯誤  
- 如果要建立錯誤報告，請使用 `ValidationContext`所提供的方法：  
+ 如果要建立錯誤報告，請使用 `ValidationContext` 所提供的方法：  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
@@ -369,7 +367,7 @@ context.LogError(... , usecase);
 |`Context.GetValue<T>()`|取得指定類型的值。|  
   
 ##  <a name="Installing"></a> 安裝及解除安裝擴充功能  
- 您可以在自己的電腦和其他電腦上都安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
+ 您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
   
 #### <a name="to-install-an-extension"></a>安裝擴充功能  
   

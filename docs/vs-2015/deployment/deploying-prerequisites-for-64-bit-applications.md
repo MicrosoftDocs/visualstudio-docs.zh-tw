@@ -1,7 +1,7 @@
 ---
 title: 64 位元應用程式的部署必要條件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0f98a611b382f3884ede2e1e239944b9e584ab77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ac12f6992e32566e95170410b33e626d0bcfa3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286431"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>64 位元應用程式的部署必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[64 位元應用程式的部署必要條件](https://docs.microsoft.com/visualstudio/deployment/deploying-prerequisites-for-64-bit-applications)。  
-  
 ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括**x86**對於 32 位元平台， **x64**機器支援 AMD64 和 EM64T 指令集，並**Itanium** 64 位元 Itanium 處理器。  
   
 ## <a name="prerequisites"></a>必要條件  

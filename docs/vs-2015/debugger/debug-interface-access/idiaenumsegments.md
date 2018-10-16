@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac11baf77acfad0c778ba306de3a85e2b6281c0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 059e6ef635ea48169f75203bbffd6134b35e7b90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216332"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaEnumSegments](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsegments)。  
-  
 列舉各種資料來源中包含的區段。  
   
 ## <a name="syntax"></a>語法  

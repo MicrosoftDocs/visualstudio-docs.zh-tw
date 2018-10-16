@@ -1,7 +1,7 @@
 ---
 title: 定義要擴充 UML 的設定檔 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221256"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[定義要擴充 UML 的設定檔](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml)。  
-  
 您可以定義*UML 設定檔*針對特定用途自訂標準模型項目。 設定檔會定義一或多個*UML 造型*。 造型可用來標記代表特殊種類物件的類型。 造型也可擴充項目的屬性清單。  
   
  數個設定檔會與支援的 Visual Studio 版本一起安裝。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 如需有關這些設定檔，以及有關如何套用造型的詳細資訊，請參閱[來自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。  

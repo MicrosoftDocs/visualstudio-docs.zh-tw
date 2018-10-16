@@ -1,7 +1,7 @@
 ---
 title: 如何： 取得服務 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc21d53df18fe855d0f745fcb4d11708e4ac07b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 426d0b71a23ea53a21b382ec02b8853f9ff2deb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229680"
 ---
 # <a name="how-to-get-a-service"></a>如何： 取得服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 取得服務](https://docs.microsoft.com/visualstudio/extensibility/how-to-get-a-service)。  
-  
 您通常需要取得 Visual Studio 服務，以存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一或多個介面。 您可以從 VSPackage 取得大部分的服務。  
   
  衍生自任何 VSPackage <xref:Microsoft.VisualStudio.Shell.Package> ，具有已正確地設置和可尋求任何全域服務。 因為封裝類別會實作<xref:System.IServiceProvider>，衍生自封裝任何 VSPackage 也是服務提供者。  

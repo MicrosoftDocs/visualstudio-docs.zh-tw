@@ -1,7 +1,7 @@
 ---
 title: 設計可及性應用程式的資源 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4576508ba8864e6fc85d4151f3ae696e39a18c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178278"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設計可及性應用程式的資源](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-designing-accessible-applications)。  
-  
   
 您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 顯示和隱藏暫存器群組 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206488"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：顯示和隱藏暫存器群組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 顯示和隱藏暫存器群組](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups)。  
-  
 **註冊** 視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯** 節點，**一般**類別。  
   
  若要減少雜亂，**註冊**視窗會將暫存器組織成群組。 如果您以滑鼠右鍵按一下**註冊** 視窗中，您會看到一個包含這些群組中，您可以顯示或隱藏按照您喜歡下列程序的快顯功能表。  

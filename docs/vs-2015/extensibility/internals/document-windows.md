@@ -1,7 +1,7 @@
 ---
 title: 文件 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c620de56e3658c3aef33da136930221578b9be4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e4a2a5c502058835d59793d2e22107ff3c07d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488265"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241055"
 ---
 # <a name="document-windows"></a>文件視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文件 Windows](https://docs.microsoft.com/visualstudio/extensibility/internals/document-windows)。  
-  
 在 Visual Studio 中，*文件視窗*是相關聯的多重文件介面 (MDI) 視窗框架的子視窗。 文件視窗通常用於顯示和修改的原始碼或文字，但它們也可以裝載其他功能的類型。 文件視窗：  
   
 -   可以組織 MDI 父項中的另一個水平或垂直索引標籤群組中，以便可以同時檢視多個檔案。  

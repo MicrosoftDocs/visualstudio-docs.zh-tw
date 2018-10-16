@@ -1,31 +1,29 @@
 ---
 title: 遠端偵錯 ASP.NET 在 IIS 7.5 的遠端電腦 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239846"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>遠端偵錯 IIS 的遠端電腦上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在執行 IIS 的遠端電腦上的遠端偵錯 ASP.NET](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)。  
-  
 您可以部署到 Windows Server 電腦與 IIS，ASP.NET Web 應用程式，並將它設定為遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2015 MVC 4.5.2 應用程式、 將它部署至 IIS，並從 Visual Studio 附加遠端偵錯工具。
 
 這些伺服器設定過這些程序：
@@ -38,7 +36,7 @@ ms.locfileid: "47489695"
 
 如需有關如何下載 Windows Server 電腦的遠端偵錯工具的指示，請參閱[遠端偵錯](../debugger/remote-debugging.md)。
 
-若要執行遠端偵錯 ASP.NET 應用程式，您可以系統管理員身分執行遠端偵錯工具應用程式，或做為服務啟動遠端偵錯工具。 有關如何執行遠端偵錯工具，如服務可在詳細資料[遠端偵錯](../debugger/remote-debugging.md)。
+若要執行遠端偵錯 ASP.NET 應用程式，您可以系統管理員身分執行遠端偵錯工具應用程式，或做為服務啟動遠端偵錯工具。 如需如何將遠端偵錯工具做為服務執行的詳細資料，請參閱 [Remote Debugging](../debugger/remote-debugging.md)。
 
 安裝之後，請確定目標電腦上執行遠端偵錯工具。 (如果沒有，請搜尋**遠端偵錯工具**中**開始**功能表。 ) 的遠端偵錯工具視窗看起來像這樣。 （4020 是預設連接埠號碼）
 

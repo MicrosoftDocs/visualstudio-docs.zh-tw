@@ -1,7 +1,7 @@
 ---
 title: 為 Vspackage 提供自動化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96996afb545e34c1de683aceda558481a0a09e81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c527d34abcd8743cd8a521acc6ee372ae04eee6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210414"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Vspackage 提供自動化](https://docs.microsoft.com/visualstudio/extensibility/internals/providing-automation-for-vspackages)。  
-  
 有兩個主要的方式，可讓您的 Vspackage： 藉由實作 VSPackage 特有的物件，並藉由實作標準 automation 物件。 一般而言，這些一起用來擴充 automation 模型的環境。  
   
 ## <a name="vspackage-specific-objects"></a>VSPackage 特有的物件  

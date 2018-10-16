@@ -1,7 +1,7 @@
 ---
 title: 語言服務及核心編輯器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6de7975c085073bf9082f77499a6456b44a55b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a1ccca0b20a681505ef197c4eefad1b3a813af6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218318"
 ---
 # <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[語言服務及核心編輯器](https://docs.microsoft.com/visualstudio/extensibility/language-services-and-the-core-editor)。  
-  
 在 Visual Studio 中的編輯器的常見問題與服務相關聯的語言。 除此之外，語言服務會提供語法著色、 陳述式完成、 IntelliSense 和文字格式設定。  
   
 ## <a name="core-editors-and-document-data-objects"></a>核心編輯器和文件資料物件  

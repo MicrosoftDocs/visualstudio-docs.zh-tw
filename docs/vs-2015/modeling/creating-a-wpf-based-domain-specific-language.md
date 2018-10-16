@@ -1,7 +1,7 @@
 ---
 title: 建立 WPF 架構的特定領域語言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eeb425747bf4c3e7a6d60a196732db207d26f309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d8884aa3e9a3fcbffe6c2bb962f69384b00383d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281082"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>建立 WPF 架構之網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立 WPF-Based Domain-specific Language](https://docs.microsoft.com/visualstudio/modeling/creating-a-wpf-based-domain-specific-language)。  
-  
 您可以建立特定領域語言具有的 WPF 設計工具，而不是圖形化設計工具。  
   
  資訊和範例，這項功能可於 Visual Studio Visualization and Modeling Tools 的網站，位於 [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)  

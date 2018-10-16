@@ -1,7 +1,7 @@
 ---
 title: 提供自訂屬性視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 88ba48a4cf04d0ad5efb59939c57f021926dfd2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186273"
 ---
 # <a name="providing-a-custom-properties-window"></a>提供自訂屬性視窗
 可提供您自己**屬性**視窗中指定的專案系統，而不是擴充**屬性**所提供的視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 最常遇到的案例是當您自行實作設置在視窗框架的物件。  

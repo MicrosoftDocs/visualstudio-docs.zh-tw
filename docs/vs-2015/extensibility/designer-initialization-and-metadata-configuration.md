@@ -1,7 +1,7 @@
 ---
 title: 設計工具初始化和中繼資料組態 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260874"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設計工具初始化和中繼資料組態](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration)。  
-  
 操作的中繼資料和篩選器相關聯的屬性使用設計工具或設計工具元件提供一個機制，來定義特定的設計工具所使用的工具來處理不同的應用程式<xref:System.Type>物件 （例如資料結構類別或圖形化的實體），當設計工具可用，而且 Visual Studio IDE 的設定以支援設計工具的方式 (如執行個體這**工具箱**分類或索引標籤可供使用)。  
   
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供數種機制，以協助設計工具或設計工具元件初始化的控制項和它的中繼資料，VSPackage 所管理。  

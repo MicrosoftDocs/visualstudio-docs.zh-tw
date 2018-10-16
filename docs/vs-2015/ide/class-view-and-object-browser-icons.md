@@ -1,7 +1,7 @@
 ---
 title: 類別檢視和物件瀏覽器圖示 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 853ec238cefd5588096b5bd0318acfba30734e52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279731"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[類別檢視] 和 [物件瀏覽器圖示](https://docs.microsoft.com/visualstudio/ide/class-view-and-object-browser-icons)。  
-  
 類別檢視 * * 和**物件瀏覽器**顯示代表程式碼實體，例如圖示、 命名空間、 類別、 函式和變數。 下表說明並描述圖示。  
   
 |圖示|描述|圖示|描述|  

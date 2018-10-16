@@ -1,7 +1,7 @@
 ---
 title: 編輯後繼續在 Visual Basic 中的不支援的編輯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296318"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic 編輯後繼續中不支援的編輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Basic 編輯後繼續中不支援編輯](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue)。  
-  
 [編輯後繼續] 可讓您在中斷模式停止程式執行、變更執行中的程式碼，然後以新加入的變更繼續執行程式。 通常會禁止影響類別之公用結構的宣告式程式碼編輯，但是允許對類別內的方法、屬性主體或私用宣告進行多項編輯。  
   
  如果您必須進行任何不支援的變更，則必須先停止偵錯，進行變更，然後開始新的偵錯工作階段。  

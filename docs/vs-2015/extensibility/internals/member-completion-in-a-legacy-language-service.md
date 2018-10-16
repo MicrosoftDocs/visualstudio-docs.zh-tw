@@ -1,7 +1,7 @@
 ---
 title: 舊版語言服務中的成員自動完成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240808"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[舊版語言服務中的成員自動完成](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service)。  
-  
 IntelliSense 成員自動完成會顯示一份可能的成員，例如類別、 結構、 列舉型別或命名空間的特定範圍的工具提示。 比方說，在 C# 中，如果使用者輸入"this"，後面接著句號，類別或結構，在目前的範圍內的所有成員的清單會顯示使用者可以從中選取的清單中。  
   
  Managed 的 package framework (MPF) 提供的工具提示和支援管理工具提示; 中的清單它只需要為合作提供出現在清單中的資料剖析器。  

@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制的設計決策 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f43c9d2423e0eaafbdcae41169c47d5fcb01912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e70d1418c88d2671c923a447a0cbccc5f273d92
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259222"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制的設計決策](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-design-decisions)。  
-  
 實作原始檔控制時，下列設計決策應該視為專案。  
   
 ## <a name="will-information-be-shared-or-private"></a>資訊將會是共用或私用嗎？  

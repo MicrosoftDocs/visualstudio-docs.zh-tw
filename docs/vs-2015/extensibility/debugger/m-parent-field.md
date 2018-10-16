@@ -1,7 +1,7 @@
 ---
 title: m_parent 欄位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a69be97b0674ee9ba939405a8daab3407cc1d304
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ed32205961aa7d32ac5ee22cbcb3bf8aa7e866c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188045"
 ---
 # <a name="mparent-field"></a>m_parent 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[m_parent 欄位](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-parent-field)。  
-  
 支援欄位<xref:System.Threading.Tasks.Task?displayProperty=fullName>父屬性。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll 中)  
   

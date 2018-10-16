@@ -1,7 +1,7 @@
 ---
 title: 結構的 [Content_types].xml 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89c5e1bab9f8cbe8cd6e2b980013c6bfdf4bc039
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f89a928af01ad006b2a051c4ff583dcefcb061de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218292"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>結構的 [Content_types].xml 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[的 [Content_types].xml 檔案的結構](https://docs.microsoft.com/visualstudio/extensibility/the-structure-of-the-content-types-dot-xml-file)。  
-  
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 安裝套件，請使用 [Content_Types].xml 檔案，但它不會安裝檔案本身。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: ResolveComReference 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97410c97c1625b4729e035e66d5d943afcd5924a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179357"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ResolveComReference 工作](https://docs.microsoft.com/visualstudio/msbuild/resolvecomreference-task)。  
-  
   
 取得一或多個類型程式庫名稱或 .tlb 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。  
   

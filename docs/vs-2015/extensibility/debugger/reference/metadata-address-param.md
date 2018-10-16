@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_PARAM |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e8cd43ffb8b79d78bc61486f413adbd311f140
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b357ccd81d846acaba907ebbec3c4abf32e4dfad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202965"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[METADATA_ADDRESS_PARAM](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-address-param)。  
-  
 此結構表示的方法或函式的參數。  
   
 ## <a name="syntax"></a>語法  

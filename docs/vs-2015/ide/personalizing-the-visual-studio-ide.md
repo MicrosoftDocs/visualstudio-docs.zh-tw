@@ -1,7 +1,7 @@
 ---
 title: 將 Visual Studio IDE 個人化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219987"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio IDE 個人化](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide)。  
-  
 本節說明如何以各種不同的方法個人化 Visual Studio，以最佳的方式支援您自己的開發樣式與需求。 您可以定義和儲存多個視窗配置，並在其間切換。 例如，您可以定義程式碼撰寫時的版面配置，還有用於偵錯的版面配置。 您可以在每一種語言的程式碼編輯器中，自訂色彩、字型及格式設定。 您能夠在藍色、暗色或亮色環境色彩佈景主題當中選擇，或從 Visual Studio 程式碼庫下載和安裝 Visual Studio 主題編輯器。 許多其他選項也會透過[環境選項對話方塊](../ide/reference/environment-options-dialog-box.md)公開。  
   
  您的設定有許多都能隨著 Visual Studio 執行個體一起漫遊。 如需詳細資訊，請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 設定圖表上的背景影像 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240548"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定圖表上的背景影像](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 中，您可以使用自訂程式碼，為產生的設計工具設定背景影像。  
   
 ## <a name="setting-the-background-image"></a>設定背景影像  
@@ -42,7 +40,7 @@ ms.locfileid: "47488875"
   
 6.  以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。  
   
-7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔**。  
+7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**  
   
 8.  加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。  
   
@@ -52,7 +50,7 @@ ms.locfileid: "47488875"
   
 11. 如果遺漏了 Resources.Designer.cs，按一下 [檔案 Resources.resx 中**方案總管] 中**。  
   
-12. 在 **屬性**視窗中，將`Custom Tool`屬性設`ResXFileCodeGenerator`。  
+12. 在 [屬性]  視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。  
   
 13. 中**方案總管**，以滑鼠右鍵按一下 Dsl 專案，指向**新增**，然後按一下**新資料夾**。  
   

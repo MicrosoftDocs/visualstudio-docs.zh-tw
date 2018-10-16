@@ -1,7 +1,7 @@
 ---
 title: 如何： 建立對應至預存程序和函式 （O-R 設計工具） 的 DataContext 方法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62d250946e634627c16dbd3b56fce370c11e1f3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b1864fa87867d2f48179c5215a18f2897d9883c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196192"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>如何： 建立對應至預存程序和函式 （O/R 設計工具） 的 DataContext 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 對應至預存程序和函式 （O-R 設計工具） 建立 DataContext 方法](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer)。  
-  
   
 預存程序和函式可以加入至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]做為<xref:System.Data.Linq.DataContext>方法。 呼叫方法並傳入所需的參數在資料庫上執行的預存程序或函式，並將資料傳回的傳回型別中<xref:System.Data.Linq.DataContext>方法。 如需詳細資訊<xref:System.Data.Linq.DataContext>方法，請參閱[DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
   

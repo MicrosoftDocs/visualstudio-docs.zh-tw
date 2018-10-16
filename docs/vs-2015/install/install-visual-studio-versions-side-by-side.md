@@ -1,7 +1,7 @@
 ---
 title: 安裝 Visual Studio 版本的並存 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199897"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>安裝 Visual Studio 版本的並存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47498927"
 您可將此版本的 Visual Studio 安裝在已安裝舊版的電腦上。 如果您遇到安裝失敗的情況，您可以使用 [記錄收集工具](http://go.microsoft.com/fwlink/?LinkId=262077) 收集失敗的資訊，讓您可以偵錯問題。  
   
 > [!NOTE]
->  我們建議您安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本已發行的順序。 例如，請先安裝 Visual Studio 2013，再安裝 Visual Studio 2015。  
+>  我們建議您以發行的順序來安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本。 例如，請先安裝 Visual Studio 2013，再安裝 Visual Studio 2015。  
   
  並存安裝多個版本之前，請先檢閱下列狀況：  
   
--   如果您使用 Visual Studio 2015 開啟的方案中建立[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]，您稍後可以開啟並修改方案一次在舊版中的，只要未實作 Visual Studio 2015 特定的任何功能。  
+-   如果您使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的方案，只要未實作 Visual Studio 2015 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。  
   
--   如果您嘗試使用 Visual Studio 2015 開啟的方案中建立[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]或較早的版本中，您可能需要修改專案和檔案，才能使用 Visual Studio 2015 相容。 如需詳細資訊，請參閱 <<c0> [ 移植、 移轉及升級 Visual Studio 專案](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md)頁面。  
+-   如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱 <<c0> [ 移植、 移轉及升級 Visual Studio 專案](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md)頁面。  
   
--   如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以藉由重新對應這些檔案關聯**還原檔案關聯**按鈕**環境**，**一般**頁面[選項](../ide/reference/general-environment-options-dialog-box.md)  對話方塊。  
+-   如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [環境] 的 [一般]  頁面上的 [還原檔案關聯] [](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。  
   
 -   Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=178891) 或軟體發行者重新安裝擴充功能。  
   

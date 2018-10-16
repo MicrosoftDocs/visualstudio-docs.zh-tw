@@ -1,7 +1,7 @@
 ---
 title: Managed 偵錯： 建議的屬性設定 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50fa9b61d017be3e860c10f11688bcd79f252969
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b9c5b317498d9a10c5e111b8bbd4d0a05350d73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288596"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Managed 偵錯：建議的屬性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Managed 偵錯： 建議的屬性設定](https://docs.microsoft.com/visualstudio/debugger/managed-debugging-recommended-property-settings)。  
-  
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。  
   
  下表顯示建議的屬性設定。  

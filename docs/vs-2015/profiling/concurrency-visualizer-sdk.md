@@ -1,7 +1,7 @@
 ---
 title: 並行視覺化檢視 SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bce206e362b64bfd27f90e7f6be11fec0d0de3e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78d848f5d075ed0d5cd835f4af3daf964603c371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207931"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[並行視覺化檢視 SDK](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-sdk)。  
-  
 您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](http://go.microsoft.com/fwlink/?LinkId=235405)。  
   
 ## <a name="properties"></a>屬性  

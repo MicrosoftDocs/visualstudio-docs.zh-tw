@@ -1,7 +1,7 @@
 ---
 title: Description 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90603a46f1cfba140a18a16537a8efbf0de981c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4819ffa95ad2fc347c01457d47422c62deb2fd9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236765"
 ---
 # <a name="description-element-visual-studio-templates"></a>描述項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[描述項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/description-element-visual-studio-templates)。  
-  
 指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。  
   
  \<VSTemplate >  

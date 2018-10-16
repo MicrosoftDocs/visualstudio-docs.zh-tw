@@ -1,7 +1,7 @@
 ---
 title: O-R 設計工具訊息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e7179c4edbd1ead3684307eca84ef19f1e48b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217642"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[O-R 設計工具訊息](https://docs.microsoft.com/visualstudio/data-tools/o-r-designer-messages)。  
-  
   
 本主題列出使用 O/R 設計工具時可能會出現的訊息。  
   

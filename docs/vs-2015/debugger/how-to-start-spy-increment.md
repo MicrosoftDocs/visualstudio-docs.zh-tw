@@ -1,7 +1,7 @@
 ---
 title: 如何： 啟動 Spy + + |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9eb5d8cd8a5ca0ba32f59e483265942379eb3122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b9e68862c8dfc3d608f965cb61ee1e0c1012b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180306"
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 啟動 Spy + +](https://docs.microsoft.com/visualstudio/debugger/how-to-start-spy-increment)。  
-  
 您可以啟動 Spy + + 從 Visual Studio 或命令提示字元。  
   
  當您啟動 Spy + + 中，如果會顯示訊息要求權限對電腦進行變更，請按一下**是**。  

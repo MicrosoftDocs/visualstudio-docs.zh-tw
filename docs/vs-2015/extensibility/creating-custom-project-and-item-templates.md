@@ -1,7 +1,7 @@
 ---
 title: 建立自訂專案與項目範本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304625"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>建立自訂專案和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立自訂專案與項目範本](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates)。  
-  
 Visual Studio SDK 包含專案範本，可建立自訂專案範本和自訂項目範本。 這些範本包含一些常見的參數替代項目，並建置的 zip 檔案。 它們不會自動部署，並不提供在實驗執行個體。 您必須複製 zip 檔案的位置  
   
  範本建立範本可讓您在較大的擴充功能中包含範本。 這可讓您實作在原始程式檔的版本控制和建置成單一 VSIX 套件的一組範本專案。  

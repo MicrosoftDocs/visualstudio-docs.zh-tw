@@ -1,7 +1,7 @@
 ---
 title: 自訂項目建立和移動 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203524"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[自訂項目的建立和移動](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement)。  
-  
 您可以允許的項目拖曳至另一個，從工具箱 中，或是在貼上或移動作業。 您可以移動的項目連結至目標項目中，使用您指定的關聯性。  
   
  項目合併指示詞 (EMD) 可讓您指定一個模型項目時，會發生什麼事*合併*到另一個模型項目。 發生這種情況時：  

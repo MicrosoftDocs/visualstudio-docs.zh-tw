@@ -1,7 +1,7 @@
 ---
 title: '&lt;命令&gt;項目 （啟動載入器） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5802aae6b3476eb9688da484e6ec36b818c2d61a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492043"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276571"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[&lt;命令&gt;項目 （啟動載入器）](https://docs.microsoft.com/visualstudio/deployment/commands-element-bootstrapper)。  
-  
 `Commands`項目實作下方的項目所描述的測試`InstallChecks`項目，並宣告哪些封裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]測試失敗時，應該安裝啟動載入器。  
   
 ## <a name="syntax"></a>語法  

@@ -1,7 +1,7 @@
 ---
 title: 使用 MSBuild |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229329"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild)。  
-  
 MSBuild 會提供定義完善且可延伸的 XML 格式，來建立專案檔案的完整描述來建置、 建置工作，以及組建組態的專案項目。  
   
  以 MSBuild 為基礎的語言專案系統的端對端範例，請參閱 IronPython 範例深入探討[VSSDK 範例](../../misc/vssdk-samples.md)。  

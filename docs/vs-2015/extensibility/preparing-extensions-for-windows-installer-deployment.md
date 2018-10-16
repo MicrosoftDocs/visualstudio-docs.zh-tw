@@ -1,7 +1,7 @@
 ---
 title: 準備 Windows Installer 部署擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83e7d59e17b91e3a47625917de4ec7366f8389d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4483fef9c200f6814c247f14ee956bfef4582e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197921"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>準備適用於 Windows Installer 部署的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[準備擴充功能的 Windows Installer 部署](https://docs.microsoft.com/visualstudio/extensibility/preparing-extensions-for-windows-installer-deployment)。  
-  
 您無法使用的 Windows Installer 套件 (MSI) 來部署的 VSIX 封裝。 不過，您可以擷取 MSI 部署的 VSIX 套件的內容。 本文件說明如何準備其預設輸出會包含在安裝專案中的 VSIX 套件的專案。  
   
 ## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>準備 Windows Installer 部署擴充功能專案  

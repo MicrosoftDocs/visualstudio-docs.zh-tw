@@ -1,7 +1,7 @@
 ---
 title: 將資料擷取至您的應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8d0e2978ae3d318e4da503f8e3f1d161b5c76967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5313fafb2dc1cd101aabce74b7a5210f0300bb14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216420"
 ---
 # <a name="fetching-data-into-your-application"></a>將資料擷取至您的應用程式中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

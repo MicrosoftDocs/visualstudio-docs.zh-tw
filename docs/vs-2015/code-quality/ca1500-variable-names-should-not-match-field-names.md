@@ -1,7 +1,7 @@
 ---
 title: CA1500： 變數名稱不應該符合欄位名稱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fc900de76f0ae31cb3dc770fec681c1b7bed8213
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fdac60aa7b3fb37f45cff7c1c9e5f17920efed18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173936"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 用於疑難排解資料的其他資源存取的錯誤 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -234,18 +234,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3971ac35e308c134fbf0f25fc2ed05e741616e8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263014"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>如需疑難排解資料存取錯誤的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[額外的資源用於疑難排解資料存取錯誤](https://docs.microsoft.com/visualstudio/data-tools/additional-resources-for-troubleshooting-data-access-errors)。  
-  
   
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出的資料與相關的論壇可在 MSDN 上取得。  
   

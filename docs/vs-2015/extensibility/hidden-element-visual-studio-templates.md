@@ -1,7 +1,7 @@
 ---
 title: 隱藏項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee63ae5e1573e86bf3b53e4543cf1398f819f018
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be8ff4e506c03d587f788a1fb7dbefd4efc09365
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263363"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>隱藏項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[隱藏的項目 （Visual Studio 範本）](https://docs.microsoft.com/visualstudio/extensibility/hidden-element-visual-studio-templates)。  
-  
 指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。  
   
  \<VSTemplate >  

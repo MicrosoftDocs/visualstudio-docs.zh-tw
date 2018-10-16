@@ -1,7 +1,7 @@
 ---
 title: MSBuild 轉換 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c2751519372bf4824d74bd40028a057c369233d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223693"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 轉換](https://docs.microsoft.com/visualstudio/msbuild/msbuild-transforms)。  
-  
   
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 如何使用轉換作業以更有效建置專案。  
   

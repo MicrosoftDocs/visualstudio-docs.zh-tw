@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Monitoring Agent |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b85b115d7599cf6762806076494c862a5711bbb3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dcaf561e54f160e19e2c330486179609c810109
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286737"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "47489992"
 > [!NOTE]
 >  您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
- 如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱[整合 Operations Manager 與開發程序](http://technet.microsoft.com/library/jj614609.aspx)並[監視使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。  
+ 如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱 [整合 Operations Manager 與開發程序](http://technet.microsoft.com/library/jj614609.aspx) 和 [使用 Microsoft Monitoring Agent 監視](http://technet.microsoft.com/library/dn465153.aspx)。  
   
  開始之前，請確認您的來源和符號和已建置及部署的程式碼相符。 這可協助您在開始偵錯和瀏覽 IntelliTrace 記錄檔中的診斷事件時，直接跳到應用程式程式碼。 [設定組建](../debugger/diagnose-problems-after-deployment.md) ，讓 Visual Studio 可以自動尋找並開啟和已部署的程式碼相符的來源。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "47489992"
   
 1.  請確認：  
   
-    -   您的 web 伺服器執行[支援的 Internet Information Services (IIS) 版本](http://technet.microsoft.com/library/dn465154.aspx)。  
+    -   網頁伺服器執行 [Internet Information Services (IIS) 的支援版本](http://technet.microsoft.com/library/dn465154.aspx)。  
   
     -   您的網頁伺服器具有 .NET Framework 3.5、4 或 4.5。  
   

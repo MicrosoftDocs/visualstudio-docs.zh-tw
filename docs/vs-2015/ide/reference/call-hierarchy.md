@@ -1,7 +1,7 @@
 ---
 title: 呼叫階層 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260076"
 ---
 # <a name="call-hierarchy"></a>呼叫階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[呼叫階層](https://docs.microsoft.com/visualstudio/ide/reference/call-hierarchy)。  
-  
   
 呼叫階層可藉由顯示與選取的方法、屬性或建構函式的所有呼叫，讓您巡覽您的程式碼。 這可讓您深入了解程式碼的流程，並評估程式碼變更的影響。 您可以檢查數個程式碼階層，以檢視複雜的方法呼叫鏈結及程式碼的其他進入點，讓您探索所有可能的執行路徑。  
   

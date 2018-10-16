@@ -1,7 +1,7 @@
 ---
 title: Help Content Manager 的命令列引數 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5497eaaf74e36997150529f7a962ab02101d1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214691"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[命令列引數的 Help Content Manager](https://docs.microsoft.com/visualstudio/ide/command-line-arguments-for-the-help-content-manager)。  
-  
 您可以使用說明內容管理員 (HlpCtntmgr.exe) 的命令列引數來指定如何部署和管理本機說明內容。 您必須以系統管理員權限來執行命令列工具的指令碼，您無法以服務方式執行這些指令碼。 使用本工具可執行下列工作：  
   
 -   從磁碟或雲端新增或更新本機說明內容。  

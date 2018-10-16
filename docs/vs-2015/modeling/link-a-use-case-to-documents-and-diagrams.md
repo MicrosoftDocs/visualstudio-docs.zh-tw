@@ -1,7 +1,7 @@
 ---
 title: 將使用案例連結到文件與圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232527"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[將使用案例連結到文件與圖表](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams)。  
-  
 您可以將使用案例圖中的使用案例連結至另一個圖表或文件。 例如，您可以將使用案例連結至下列圖表和文件：  
   
 -   循序圖，可顯示如何透過使用者與系統或其主要元件之間的互動來實現使用案例的目標。  

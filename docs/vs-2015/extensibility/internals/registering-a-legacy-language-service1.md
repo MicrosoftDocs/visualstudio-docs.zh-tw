@@ -1,7 +1,7 @@
 ---
 title: 註冊舊版語言服務 1 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230580"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[註冊舊版語言服務 1](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1)。  
-  
 VSPackage 在 managed 的 package framework (MPF) 提供的語言服務 (請參閱[Vspackage](../../extensibility/internals/vspackages.md)) 並已向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由新增登錄機碼和項目。 此登錄程序是在部分是在安裝期間，有一部分是在執行階段中完成。  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>使用屬性來註冊語言服務  

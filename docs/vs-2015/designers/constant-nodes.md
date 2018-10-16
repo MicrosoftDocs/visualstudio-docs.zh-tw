@@ -1,7 +1,7 @@
 ---
 title: 常數節點 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eeeff91d6c30774d89544ab7cfd5c1f5db759620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260059"
 ---
 # <a name="constant-nodes"></a>常數節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[常數節點](https://docs.microsoft.com/visualstudio/designers/constant-nodes)。  
-  
 在著色器設計工具中，常數節點代表像素著色器計算中的常值和插入頂點屬性。 因為是將頂點屬性插入，而使每個像素都不相同，所以每個像素著色器執行個體都會收到不同版本的常數。 這可讓每個像素有獨特的外觀。  
   
 ## <a name="vertex-attribute-interpolation"></a>頂點屬性內插補點  

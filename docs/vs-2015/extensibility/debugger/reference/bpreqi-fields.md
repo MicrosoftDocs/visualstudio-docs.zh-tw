@@ -1,7 +1,7 @@
 ---
 title: BPREQI_FIELDS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4be4e49b79c2b2dc62843e785d1fb38b517f34b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1716dc940ba3f79fbad25b308cc8f373b5229189
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186182"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[BPREQI_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bpreqi-fields)。  
-  
 指定要擷取中斷點要求的相關資訊。  
   
 ## <a name="syntax"></a>語法  

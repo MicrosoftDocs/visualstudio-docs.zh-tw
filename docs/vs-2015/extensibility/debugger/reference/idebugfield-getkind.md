@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetKind |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bdf20ff027253a5d98e6e3e69bbc11897ec4116
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465a4db6c2cdf9474282a9f841e25389d869b637
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212448"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugField::GetKind](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-getkind)。  
-  
 這個方法會取得欄位的類型。  
   
 ## <a name="syntax"></a>語法  

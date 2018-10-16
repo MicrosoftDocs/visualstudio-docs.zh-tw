@@ -1,7 +1,7 @@
 ---
 title: 示範範例 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aca1c819ee413f1bcc2fe81c90233256a12317a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175847"
 ---
 # <a name="demo-sample"></a>示範範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[示範範例](https://docs.microsoft.com/visualstudio/code-quality/demo-sample)。  
-  
 以下程序會示範如何建立的範例[逐步解說： 分析 C/c + + 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 建立程序：  
   
 -   A[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命名 CppDemo 解決方案。  

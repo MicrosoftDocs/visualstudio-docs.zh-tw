@@ -1,7 +1,7 @@
 ---
 title: 原始檔控制 VSPackage 的設計元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efc1133a57db0c179fbac05db9f6472237577e9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8645a853e1be5b3ef43f2e471b2c2a6a0f143d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269329"
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 的設計項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[原始檔控制 VSPackage 的設計元素](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-design-elements)。  
-  
 在本節中的主題說明結構原始檔控制 VSPackage 必須實作的深度整合。 也會列出介面的原始檔控制 VSPackage 的服務可以實作，並從其他介面和服務可以使用原始檔控制 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]元件來支援它的來源控制模型與功能。  
   
 ## <a name="in-this-section"></a>本節內容  

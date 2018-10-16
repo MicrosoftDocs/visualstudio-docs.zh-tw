@@ -1,7 +1,7 @@
 ---
 title: 使用 Windows Presentation Foundation 建立新式桌面應用程式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b33b1c5c6e4af4eaaf01d0315b3df42be4d499d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfc64665c16426725795af2f71d1b98f1810b53e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200696"
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>使用 Windows Presentation Foundation 建立新式桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立新式桌面應用程式使用 Windows Presentation Foundation](https://docs.microsoft.com/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)。  
-  
 Visual Studio 2015 中的 Windows Presentation Foundation (WPF) 為開發人員提供了統一的程式撰寫模型，可在 Windows 上建置新式的企業營運桌面應用程式。  
   
  [WPF 使用者入門](../designers/getting-started-with-wpf.md)  

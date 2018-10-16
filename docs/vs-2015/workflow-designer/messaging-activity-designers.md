@@ -1,7 +1,7 @@
 ---
 title: Messaging 活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6c592c748775361f3ed6a746accd0aa30dcc42af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274751"
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 傳訊活動設計工具會用來建立及設定從 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 應用程式內部傳送與接收 [!INCLUDE[wf](../includes/wf-md.md)] 訊息的傳訊活動。 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 導入五個傳訊活動，而且 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供兩個新的範本設計工具，可用來管理工作流程內的傳訊。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  
@@ -32,7 +32,7 @@ ms.locfileid: "47497176"
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|在 <xref:System.ServiceModel.Activities.Send> 活動內建立一對預先設定的 <xref:System.ServiceModel.Activities.ReceiveReply> 與 <xref:System.Activities.Statements.Sequence> 活動。|  
 |[Send](../workflow-designer/send-activity-designer.md)|建立及設定 <xref:System.ServiceModel.Activities.Send> 活動，該活動會將訊息傳送至服務。|  
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|在 <xref:System.ServiceModel.Activities.Receive> 活動內建立一對預先設定的 <xref:System.ServiceModel.Activities.SendReply> 與 <xref:System.Activities.Statements.Sequence> 活動。|  
-|[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|建立及設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，該活動可讓交易流動至工作流程中。|  
+|[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|建立及設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，該活動可讓異動流動至工作流程中。|  
   
 ## <a name="reference"></a>參考資料  
  <xref:System.Activities.Activity>  

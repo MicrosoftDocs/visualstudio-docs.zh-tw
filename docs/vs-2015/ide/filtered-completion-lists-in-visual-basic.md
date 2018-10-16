@@ -1,7 +1,7 @@
 ---
 title: Visual Basic 中已篩選的完成清單 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 305d7c97de6cb8ccd0a88bc420c86a5f5e98a593
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fa045e85df45772ffc03a1a255f9c5e6ac6ba8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255628"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Visual Basic 中已篩選的完成清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[在 Visual Basic 中篩選後完成清單](https://docs.microsoft.com/visualstudio/ide/filtered-completion-lists-in-visual-basic)。  
-  
 在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用] 索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部] 索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用] 索引標籤上的項目。  
   
 ## <a name="see-also"></a>另請參閱  

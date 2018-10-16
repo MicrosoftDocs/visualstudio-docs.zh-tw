@@ -1,7 +1,7 @@
 ---
 title: 使用類別和其他類型 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198298"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>使用類別和其他類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用類別和其他類型 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer)。  
-  
 當您在 Visual Studio 中使用類別設計工具來建立和編輯類別和類型時，更容易專注在您最關心的類別和類型上。 使用類別圖表可讓您以更視覺化的方式來處理您的 Visual C# .NET、Visual Basic .NET 或 C++ 程式碼。  
   
 ## <a name="in-this-section"></a>本節內容  

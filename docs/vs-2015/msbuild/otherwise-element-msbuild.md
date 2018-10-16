@@ -1,7 +1,7 @@
 ---
 title: Otherwise 項目 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c44365253e1ef85be13f290c1b9fbf0dd890fe1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a84284c1378ba5fd2cd4cf953a6d7e15b4f207e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266353"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Otherwise 項目 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/otherwise-element-msbuild)。  
-  
   
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。  
   

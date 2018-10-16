@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75a5b1ab9979d7d071282ab4d807d89b5e7abb2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b620dfe22c16842b2bc887e669db45c86f6c4948
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277026"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugAddress](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugaddress)。  
-  
 這個介面來表示項目的位址。 它會傳回符號處理常式。  
   
 ## <a name="syntax"></a>語法  

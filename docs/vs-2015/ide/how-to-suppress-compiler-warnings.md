@@ -1,7 +1,7 @@
 ---
 title: 如何：隱藏編譯器警告 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286087"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 隱藏編譯器警告](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings)。  
-  
 您可以指定不想要組建記錄檔包含的一種或多種編譯器警告，來清理組建記錄檔。 例如，您可以使用這項技術，檢閱將組建記錄檔詳細資訊設定為 [一般]、[詳細] 或 [診斷] 時自動產生的一些資訊，而非所有資訊。 如需詳細資訊的詳細資訊，請參閱[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F# 的特定警告  

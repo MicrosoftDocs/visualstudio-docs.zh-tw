@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中對市集應用程式建立及執行單元測試 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249502"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立和執行的單元測試，在 Visual Studio 中對市集應用程式](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)。  
-  
 Visual Studio 2012 Express for Windows 8 單元測試工具的設計支援在軟體開發作法中包含單元測試的開發人員和小組。 單元測試提供一種有效率且可維護的方式，讓開發人員和測試人員尋找 Visual C#、Visual Basic 和 Visual C++ 專案中類別方法的邏輯錯誤。  
   
 > [!NOTE]

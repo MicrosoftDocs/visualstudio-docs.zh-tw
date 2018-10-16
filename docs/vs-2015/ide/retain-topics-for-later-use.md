@@ -1,7 +1,7 @@
 ---
 title: 保留主題供稍後使用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a457a27be79f925039031ebcf2657085ab1b4a5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2df1a95dacf7dc57817a6167cebc48d42d275cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275115"
 ---
 # <a name="retain-topics-for-later-use"></a>保留主題供稍後使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[保留主題供稍後使用](https://docs.microsoft.com/visualstudio/ide/retain-topics-for-later-use)。  
-  
 當您找到一個有用的主題時，可以將它複製並貼入文字檔案、列印或將它儲存為 [我的最愛] 供日後存取。 例如，您可以開啟主題的捷徑功能表並選取 [複製]、[列印]、[預覽列印] 和 [加到我的最愛] 選項，以便保留內容供日後使用。  
   
 ## <a name="using-the-favorites-tab"></a>使用 [我的最愛] 索引標籤  

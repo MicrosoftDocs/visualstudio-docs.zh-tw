@@ -1,7 +1,7 @@
 ---
 title: Ca2107： 必須檢視 deny，和 permit only 的使用方式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a898c16131e38c9958c9808ffd94f9373385ab82
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b317ddb69dea8241ead6bb70d50c3b99d96bd078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178642"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[ca2107 必須： 檢視 deny 和 permit only 的使用方式](https://docs.microsoft.com/visualstudio/code-quality/ca2107-review-deny-and-permit-only-usage)。
-
 |||
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|

@@ -1,7 +1,7 @@
 ---
 title: 偵錯準備： Visual c + + 專案類型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 592232277dd8eda337bf90e6df114c2a03e75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304937"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯準備： Visual c + + 專案類型](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)。  
-  
 本節說明如何對 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案範本所建立的基本專案類型進行偵錯。  
   
  請注意，這些專案類型建立 Dll 為輸出均已分組為[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)因為它們共用通用的功能。  
@@ -109,13 +107,13 @@ ms.locfileid: "47489830"
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)  
  **Windows Forms 應用程式 (.NET)** 範本會建立[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows Forms 應用程式。 如需詳細資訊，請參閱 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中偵錯這種類型的應用程式，與偵錯 Managed Windows Form 應用程式類似。  
+ 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中偵錯這種類型的應用程式，與偵錯 Managed Windows Forms 應用程式類似。  
   
  當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 如果有必要，您可以變更這些設定在**\<專案名稱 > 屬性頁** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
  如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
- 偵錯 Windows Form 應用程式的另一種方法，是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外啟動應用程式並且附加於其上。 如需詳細資訊，請參閱 <<c0> [ 附加到正在執行的程式或多個程式](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+ 偵錯 Windows Forms 應用程式的另一種方法，是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外啟動應用程式並且附加於其上。 如需詳細資訊，請參閱 <<c0> [ 附加到正在執行的程式或多個程式](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
  [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   

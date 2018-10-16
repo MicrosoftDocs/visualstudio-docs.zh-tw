@@ -1,7 +1,7 @@
 ---
 title: 使用存放區檢視進行偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0955cae279ece70498ce05584d6b17d6e254f89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189070"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用存放區檢視進行偵錯](https://docs.microsoft.com/visualstudio/modeling/debugging-by-using-the-store-viewer)。  
-  
 使用儲存的檢視器 中，您可以檢查的狀態*儲存*供[!INCLUDE[dsl](../includes/dsl-md.md)]。 儲存的檢視器會顯示所有的網域模型項目處於為特定的存放區，以及項目屬性和項目之間的連結。  
   
 ## <a name="opening-store-viewer"></a>開啟存放區檢視器  

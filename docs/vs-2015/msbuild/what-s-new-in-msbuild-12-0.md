@@ -1,7 +1,7 @@
 ---
 title: MSBuild 12.0 的新功能 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91ec9044461cf57bba8bb36a0d2e029635155c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f10fa5496795947c041482d5ae5dc7b6112da67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247390"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Visual Studio 2017 文件](https://docs.microsoft.com/visualstudio/)。  
-  
 MSBuild 現在是做為 Visual Studio 的一部分安裝，而非 .NET Framework 的一部分。 目前的 MSBuild 版本號碼為 12.0。 如果您想要個別安裝 MSBuild，請從 [MSBuild 下載](http://go.microsoft.com/fwlink/?LinkId=309745)中下載安裝套件。  
   
 ## <a name="changed-path"></a>已變更路徑  
@@ -49,6 +47,6 @@ MSBuild 現在是做為 Visual Studio 的一部分安裝，而非 .NET Framework
 -   `MSBuildToolsPath` 和 `MSBuildFrameworkToolsPath` 擁有 32 位元對等項目，也就是 `MSBuildToolsPath32` 和 `MSBuildFrameworkToolsPath32`，無論使用的是 32 位元或 64 位元的 MSBuild，一律會指向 32 位元位置。
 
 ## <a name="see-also"></a>另請參閱
-[ MSBuild](msbuild.md)
+[MSBuild](msbuild.md)
 
 

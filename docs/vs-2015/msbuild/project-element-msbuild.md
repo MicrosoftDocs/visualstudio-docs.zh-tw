@@ -1,7 +1,7 @@
 ---
 title: Project 項目 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7d832ba052c557411a3c689f30cf133deb523d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a150e7eba1cc3e432c68154e6167ea88f50e906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227281"
 ---
 # <a name="project-element-msbuild"></a>Project 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[專案項目 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/project-element-msbuild)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。  
   
@@ -90,6 +88,6 @@ ms.locfileid: "47486033"
  [如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [ MSBuild](msbuild.md)
+ [MSBuild](msbuild.md)
 
 

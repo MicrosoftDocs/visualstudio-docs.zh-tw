@@ -1,7 +1,7 @@
 ---
 title: 新增現有項目命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67ee390c55ba9aed0a67990b23d1fd979c1bbc24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c27c548ae4eff4f2087050060f5bcf51d8e86755
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197128"
 ---
 # <a name="add-existing-item-command"></a>加入現有項目命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入現有項目命令](https://docs.microsoft.com/visualstudio/ide/reference/add-existing-item-command)。  
-  
   
 將現有檔案新增至目前的方案，並開啟它。  
   
@@ -68,7 +66,7 @@ File.AddExistingItem filename [/e:editorname]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

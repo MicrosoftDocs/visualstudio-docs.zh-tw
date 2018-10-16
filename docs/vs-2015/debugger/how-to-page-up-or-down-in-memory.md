@@ -1,7 +1,7 @@
 ---
 title: 如何： Page Up 或在記憶體中的向下 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d443955af62f2375357828c0513bbdee289a781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f49664edc622c9944015c4cea9814a7deb2cfe7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292678"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： Page Up 或在記憶體中的向下](https://docs.microsoft.com/visualstudio/debugger/how-to-page-up-or-down-in-memory)。  
-  
 當您檢視中的記憶體內容**記憶體** 視窗或**反組譯碼** 視窗中，您可以使用垂直捲軸上移或下移的記憶體空間中。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  

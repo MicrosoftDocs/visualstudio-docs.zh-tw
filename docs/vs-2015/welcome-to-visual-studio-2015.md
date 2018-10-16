@@ -1,7 +1,7 @@
 ---
 title: 歡迎使用 Visual Studio 2015 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231229"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>歡迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "47492232"
   
  下載免費的 [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) ，馬上開始撰寫程式碼。 如果您要進行跨平台開發，請務必安裝選擇性套件 (您可以從 [其他版本的 Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)獲取更多功能)。  
   
- 您可以直接建立新的專案，並開始撰寫程式碼； 選擇您要建立的應用程式類型； 或者您也可以[瀏覽](./ide/visual-studio-ide.md)的 Visual Studio IDE 以熟悉工具。  
+ 您可以直接建立新的專案，並開始撰寫程式碼； 選擇您要建立的應用程式類型； 也可以 [導覽](./ide/visual-studio-ide.md) Visual Studio IDE 以熟悉工具。  
   
  別忘了探索我們 [程式碼庫](https://code.msdn.microsoft.com/) ，從中尋找可以協助您加快應用程式撰寫速度的範例！  
   
@@ -57,15 +57,15 @@ ms.locfileid: "47492232"
   
  根據您的應用程式需求和想要使用的語言，來選擇所需的工具。  
   
-1.  [適用於 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)： 在 C# 中的所有裝置基底的通用程式碼  
+1.  [Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：所有裝置通用的 C# 程式碼基底  
   
-2.  [使用 Visual Studio Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)： 基底的 HTML、 CSS 和 JavaScript 或 Typescript 的通用程式碼  
+2.  [Apache Cordova 和 Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)：HTML、CSS 和 JavaScript 或 Typescript 的通用程式碼基底  
   
 3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md)： 以 C# 的 2d/3d 遊戲開發  
   
-4.  [C + + for Cross-platform Development](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)： 共用程式碼程式庫和 c + + 中的應用程式  
+4.  [C++ for Cross-Platform Development](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：C++ 的共用程式碼程式庫和應用程式  
   
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android： 偵錯及測試 Android 應用程式不分 IDE  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)：Visual Studio Emulator for Android：不分 IDE，為您的 Android 應用程式執行偵錯及測試  
   
 ## <a name="connect-your-apps-to-services"></a>將您的應用程式連接到服務  
  您可以連接到下列現成服務 (假設每項服務各有一個帳戶)：  
@@ -82,15 +82,15 @@ ms.locfileid: "47492232"
 ## <a name="build-test-and-manage-your-code"></a>建置、測試及管理您的程式碼  
   
 ### <a name="check-in-your-code"></a>簽入您的程式碼  
- 如果您在小組中工作，也需要共用最新版的程式碼，小組中的所有成員才能使用相同的程式碼基底。 Visual Studio 與 Visual Studio Team Services 或 Team Foundation Server 緊密整合，提供 Git 或 TFVC (Team Foundation Version Control) 版本控制。 使用 Visual Studio Team Services 可將程式碼儲存在雲端，而不需要維護本機伺服器。 如果您想要有內部部署伺服器，請使用 Team Foundation Server。 每次建立程式碼專案時，都可以選擇將專案加入版本控制。 了解哪一個版本控制系統最適合您的需求：[使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
+ 如果您在小組中工作，也需要共用最新版的程式碼，小組中的所有成員才能使用相同的程式碼基底。 Visual Studio 與 Visual Studio Team Services 或 Team Foundation Server 緊密整合，提供 Git 或 TFVC (Team Foundation Version Control) 版本控制。 使用 Visual Studio Team Services 可將程式碼儲存在雲端，而不需要維護本機伺服器。 如果您想要有內部部署伺服器，請使用 Team Foundation Server。 每次建立程式碼專案時，都可以選擇將專案加入版本控制。 若要了解哪一個版本控制系統最適合您的需求，請參閱： [使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
   
 ### <a name="build-your-app"></a>建置您的應用程式  
  您可以 [在本機建置應用程式](./ide/compiling-and-building-in-visual-studio.md) ，並確定它是否運作正常。 然後使用 [偵錯工具](./debugger/debugging-in-visual-studio.md) 來修正與您的應用程式相關的任何問題。 您也可以在共用組建伺服器或雲端中建置專案。 自動化建置流程，來建置您的小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。  
   
 ### <a name="test-your-app"></a>測試您的應用程式  
- [建立單元測試](./test/unit-test-your-code.md)以改進您應用程式的品質。 這些測試可以在您每次簽入時執行，以及當做建置的一部分來執行。  
+ [建立單元測試](./test/unit-test-your-code.md) 以改進您應用程式的品質。 這些測試可以在您每次簽入時執行，以及當做建置的一部分來執行。  
   
- 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解[測試應用程式](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。  
+ 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解 [測試應用程式](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。  
   
 ### <a name="deliver-your-teams-code-faster"></a>更快交付小組的程式碼  
  移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與應用程式生命週期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。  

@@ -1,7 +1,7 @@
 ---
 title: 偵錯的 Web 應用程式： 錯誤和疑難排解 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52a1659d77e87ae18354e26fc3f2dbb79b30c218
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d23aad5c4754e9602fda0ec34fb2b5f0a6f704
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297073"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 Web 應用程式： 錯誤和疑難排解](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-errors-and-troubleshooting)。  
-  
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  
   
 -   [疑難排解](../debugger/debugging-web-applications-troubleshooting.md)  

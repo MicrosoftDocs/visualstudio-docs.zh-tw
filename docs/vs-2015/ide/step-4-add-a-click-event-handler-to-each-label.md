@@ -1,7 +1,7 @@
 ---
 title: 步驟 4：將 Click 事件處理常式新增至每個標籤 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252027"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式加入至每個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[步驟 4： 將 Click 事件處理常式新增至每個標籤](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label)。  
-  
 配對遊戲的運作方式如下：  
   
 1.  當玩家選擇其中一個含有隱藏圖示的方形時，則程式會將圖示色彩變更為黑色，以便對玩家顯示圖示。  

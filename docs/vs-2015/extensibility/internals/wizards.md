@@ -1,7 +1,7 @@
 ---
 title: 精靈 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224298"
 ---
 # <a name="wizards"></a>精靈
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[精靈](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards)。  
-  
 建立精靈之後，您通常想要將它新增至[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 已新增的精靈接著會出現在**加入新的專案**或是**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，以滑鼠右鍵按一下中開啟的方案**方案總管 中**，指向**新增**，及然後按一下**新的專案**或是**新項目**。  
   
  精靈可實作於[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，讓使用者從可用的值何時開啟的樹狀檢視中選取**加入新的專案** 對話方塊或**加入新項目** 對話方塊中，或當他們以滑鼠右鍵按一下中的項目**方案總管 中**。  
@@ -61,5 +59,5 @@ ms.locfileid: "47498606"
  說明如何建立精靈。  
   
  [擴充專案](../../extensibility/extending-projects.md)  
- 描述如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。
+ 描述如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。
 

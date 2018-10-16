@@ -1,7 +1,7 @@
 ---
 title: 逐步解說： 將主機連接至產生的指示詞處理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251926"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[逐步解說： 將主機連接至產生的指示詞處理器](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor)。  
-  
 您可以撰寫自己的主機處理文字範本。 基本的自訂主應用程式所示[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。  
   
  在本逐步解說中，您會擴充自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義特定領域語言時，它會產生*指示詞處理器*的領域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，並減少撰寫組件並匯入的範本中的指示詞的範本。  
@@ -232,7 +230,7 @@ ms.locfileid: "47486633"
             }  
     ```  
   
-7.  在 **檔案**功能表上，按一下**全部儲存**。  
+7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   

@@ -1,7 +1,7 @@
 ---
 title: 收集其他效能資料 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4ce6ca9619d60851d03bf5827741f30f3c0f6a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a72898b7880900a9c767ba765dc7fe7da74904fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198714"
 ---
 # <a name="collecting-additional-performance-data"></a>收集其他效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[收集其他效能資料](https://docs.microsoft.com/visualstudio/profiling/collecting-additional-performance-data)。  
-  
 除了使用分析方法所收集的資料之外，[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具還可讓您記錄和檢視其他資料。  
   
 ## <a name="common-tasks"></a>一般工作  

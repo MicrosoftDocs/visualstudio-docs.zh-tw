@@ -1,7 +1,7 @@
 ---
 title: 撰寫。Vsct 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283669"
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-0本主題的最新版本位於[撰寫。Vsct 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files)。  
-  
 本文件說明如何撰寫.vsct 檔加入 Visual Studio 整合式的開發環境 (IDE) 中的功能表項目、 工具列和其他使用者介面 (UI) 項目。 當您將 UI 項目新增至 Visual Studio 封裝 (VSPackage) 已經沒有.vsct 檔，請使用下列步驟。  
   
  對於新專案，我們建議您使用 Visual Studio Package 範本，因為它會產生.vsct 檔，根據您的選擇，已經有必要的項目，功能表命令、 工具視窗，或自訂編輯器。 您可以修改此.vsct 檔案，以符合需求的 VSPackage。 如需如何修改.vsct 檔的詳細資訊，請參閱中的範例[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  

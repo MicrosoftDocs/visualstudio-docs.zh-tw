@@ -1,7 +1,7 @@
 ---
 title: 判斷哪一個編輯器在專案中開啟檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241029"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>決定要開啟專案中檔案的編輯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[判斷哪一個編輯器在專案中開啟檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project)。  
-  
 當使用者開啟檔案，在專案中時，環境會經歷輪詢的程序，最後會開啟適當的編輯器或設計工具，該檔案。 初始環境所採用的程序也適用於標準和自訂編輯器。 輪詢的編輯器，用以開啟檔案時，環境會使用各種不同的準則，VSPackage 必須協調與環境，在此程序。  
   
  比方說，當使用者選取**開放**命令**檔案**功能表，然後選擇`filename`.rtf （或任何其他副檔名為.rtf），環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>每個專案，最後一一巡視所有的專案執行個體，在方案中實作。 專案會傳回一組文件上的宣告識別優先順序的旗標。 使用最高的優先順序，環境會呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>方法。 如需輪詢程序的進一步資訊[加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  

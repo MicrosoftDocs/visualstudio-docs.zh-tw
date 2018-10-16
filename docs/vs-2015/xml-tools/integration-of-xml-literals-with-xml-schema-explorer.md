@@ -1,7 +1,7 @@
 ---
 title: 整合 XML 常值與 XML 結構描述總管 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4089c34ab4ef65f4c0b468000dd06def5af4559e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295876"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>整合 XML 常值與 XML 結構描述總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[整合的 XML 常值與 XML 結構描述總管](https://docs.microsoft.com/visualstudio/xml-tools/integration-of-xml-literals-with-xml-schema-explorer)。  
-  
   
 Visual Basic 支援 XML 常值，這表示您可以直接在 Visual Basic 程式碼將 XML 片段。 如需詳細資訊，請參閱 < [XML 常值概觀](http://go.microsoft.com/fwlink/?LinkId=140325)。  
   

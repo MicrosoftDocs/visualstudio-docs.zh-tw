@@ -1,7 +1,7 @@
 ---
 title: UML 循序圖： 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195126"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML 順序圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[UML 循序圖： 參考](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference)。  
-  
 在 Visual Studio 中，*循序圖*顯示代表一系列訊息執行個體的類別、 元件、 子系統或動作項目之間的互動方式。 在圖表中，時間會往下流動，並顯示從某個參與者到另一個參與者的控制流程。 使用循序圖來視覺化執行個體和事件，而非類別和方法。 多個相同類型的執行個體可以出現在圖表上。 相同的訊息也可以出現多次。  
   
  UML 循序圖是 UML 模型的一部分，而且只存在於 UML 模型專案內。 若要建立 UML 循序圖中，在**架構**功能表上，按一下**新增 UML 或分層圖**。 深入了解如何建立和繪製[UML 循序圖](../modeling/uml-sequence-diagrams-guidelines.md)或是[UML 模型圖](../modeling/edit-uml-models-and-diagrams.md)一般。  

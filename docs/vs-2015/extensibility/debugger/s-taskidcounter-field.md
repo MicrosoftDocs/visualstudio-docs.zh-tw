@@ -1,7 +1,7 @@
 ---
 title: s_taskIdCounter 欄位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57b81567526e83ad12f06fbe8ba28aecc5f0f927
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 597f4b3792322b2e9336e197df8c7c4e658a6a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176913"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[s_taskIdCounter 欄位](https://docs.microsoft.com/visualstudio/extensibility/debugger/s-taskidcounter-field)。  
-  
 下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll 中)  
   

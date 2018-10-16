@@ -1,7 +1,7 @@
 ---
 title: 通知連接埠 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81b27b4da563c01c809203690c05702530f58416
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263545"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[通知連接埠](https://docs.microsoft.com/visualstudio/extensibility/debugger/notifying-the-port)。  
-  
 啟動程式之後, 的連接埠必須會收到通知，，如下所示：  
   
 1.  當連接埠接收新的 [程式] 節點時，它會將程式建立事件送回偵錯工作階段中。 事件會有代表程式的介面。  

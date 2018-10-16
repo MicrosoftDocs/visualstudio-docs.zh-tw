@@ -1,7 +1,7 @@
 ---
 title: Enum （偵錯介面存取 SDK） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18c4868a30a2d363aada73473f7c4a198c76da8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4f198ee07337531fe0e8b6fe4ed40b0eac939d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290689"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[Enum (偵錯介面存取 SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enum-debug-interface-access-sdk)。  
-  
 列舉型別由識別`SymTagEnum`符號。 每個列舉值會顯示為類別子系`SymTagConstant`標記。  
   
 ## <a name="properties"></a>屬性  

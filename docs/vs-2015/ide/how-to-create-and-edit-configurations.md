@@ -1,7 +1,7 @@
 ---
 title: 如何：建立和編輯組態 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6e253bebc5cd56690d8b8251ef7f4d1c4b1fcf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195674"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立和編輯組態](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-edit-configurations)。  
-  
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

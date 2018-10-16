@@ -1,7 +1,7 @@
 ---
 title: 如何：限制檢測特定 DLL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234516"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：限制檢測特定 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 限制檢測特定 Dll](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls)。  
-  
 您可以藉由使用檢測程式碼剖析方法，將程式碼剖析資料的收集限制在應用程式中的一或多個 DLL。 若要對應用程式中的一或多個 DLL 進行程式碼剖析，請建立包含 .dll 檔案做為目標的效能工作階段。 您可以將要進行程式碼剖析的 DLL，指定成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的專案，或是指定成獨立的二進位檔案。  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>限制檢測 Visual Studio 方案中的特定 DLL  

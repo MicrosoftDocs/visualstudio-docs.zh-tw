@@ -1,7 +1,7 @@
 ---
 title: 如何：將類別圖表新增至專案 (類別設計工具) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0264aa4a514b8e508ef9d06ba75f212b629b99c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271384"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>如何：將類別圖表加入至專案 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 將類別圖表新增至專案 （類別設計工具）](https://docs.microsoft.com/visualstudio/ide/how-to-add-class-diagrams-to-projects-class-designer)。  
-  
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 Visual C# .NET、Visual Basic .NET 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。  
   
  您不能從跨多個應用程式共用程式碼的專案建立類別圖。 若要建立 UML 類別圖表，請參閱[建立 UML 模組化專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)。  

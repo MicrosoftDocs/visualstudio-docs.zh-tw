@@ -1,7 +1,7 @@
 ---
 title: 'Idialinenumber:: Get_statement |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1329cfe00bd6af4e93bc4b45c4328232b9c22df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f90cd326adb7f51064c51868651d9f31e8d66ade
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285749"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[idialinenumber:: Get_statement](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-statement)。  
-  
 擷取旗標，指出這個行資訊會描述陳述式，而不是運算式，以原始程式碼的開頭。  
   
 ## <a name="syntax"></a>語法  

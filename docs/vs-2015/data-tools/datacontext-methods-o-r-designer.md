@@ -1,7 +1,7 @@
 ---
 title: DataContext 方法 （O-R 設計工具） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fd44dbfa9a39afafa22965e77ad87f8f243b9ae3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ccf32d4af0bd16032c4601b054be6407071753f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200456"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DataContext 方法 （O-R 設計工具）](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)。  
-  
   
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & c e autoUpgrade = True) 方法 (中的內容[LINQ to SQL 工具，在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) 方法的<xref:System.Data.Linq.DataContext>執行預存的類別程序和函式在資料庫中。  
   

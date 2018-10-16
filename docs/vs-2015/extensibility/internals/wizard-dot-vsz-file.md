@@ -1,7 +1,7 @@
 ---
 title: 精靈 (。在 Vsz) 檔案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197153"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新版本位於[精靈 (。在 Vsz) 檔案](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file)。  
-  
 整合式的開發環境 (IDE) 使用.vsz 檔案以啟動精靈。 這些.vsz 檔案包含 IDE 用來判斷要呼叫哪一個精靈的資訊和要傳遞給精靈的資訊。  
   
  .Vsz 檔案是沒有區段.ini 格式的文字檔案的版本。 Ide 的已知的資訊會儲存在檔案開頭。 這會提供 IDE 呼叫 「 精靈 」 與所要傳遞至 IDE.vsz 檔案中的參數之間的連結。 檔案的其餘部分會提供特定的精靈和，要收集的 IDE，而傳遞至特定的精靈參數。  

@@ -1,7 +1,7 @@
 ---
 title: 例外狀況之後繼續執行 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230122"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[繼續執行之後例外狀況](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception)。  
-  
 當偵錯工具因為例外狀況而中斷執行時，對話方塊隨即出現。 若是 Visual Basic 或 C#，您會看到[例外狀況助理](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)對話方塊中，依預設。 C + +，您會看到較舊**例外狀況** 對話方塊。 如果您使用 Visual Basic 或 C#，但已停用**例外狀況助理**中**選項** 對話方塊中，您會看到**例外狀況** 對話方塊。  
   
  當**例外狀況助理**或是**例外狀況**對話方塊隨即出現，您可以嘗試修正造成例外狀況的問題。  

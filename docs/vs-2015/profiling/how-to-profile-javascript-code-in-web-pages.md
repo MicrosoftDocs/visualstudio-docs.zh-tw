@@ -1,7 +1,7 @@
 ---
 title: 如何：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a54321b835cad9f37983a386c93f46e26bbdd5ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176471"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 在網頁中的設定檔 JavaScript 程式碼](https://docs.microsoft.com/visualstudio/profiling/how-to-profile-javascript-code-in-web-pages)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]程式碼剖析工具可以使用檢測程式碼剖析方法，針對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。  
   
  **需求**  

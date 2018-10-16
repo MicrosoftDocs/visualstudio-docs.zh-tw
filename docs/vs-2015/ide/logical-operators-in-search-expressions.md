@@ -1,7 +1,7 @@
 ---
 title: 搜尋運算式中的邏輯運算子 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf55bbdc025b4aabd13f7ded72c2ea69386a61b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8337c455ac283e7b9abbf70c39493b31c01a7d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212533"
 ---
 # <a name="logical-operators-in-search-expressions"></a>搜尋運算式中的邏輯運算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[搜尋運算式中的邏輯運算子](https://docs.microsoft.com/visualstudio/ide/logical-operators-in-search-expressions)。  
-  
 使用邏輯運算子，即可從較簡單的搜尋運算式建立更複雜的搜尋運算式來精簡搜尋內容。 如下表所示，邏輯運算子指定應該如何在搜尋查詢中合併多個搜尋詞彙。  
   
 > [!IMPORTANT]

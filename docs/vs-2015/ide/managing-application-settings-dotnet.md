@@ -1,7 +1,7 @@
 ---
 title: 管理應用程式設定 (.NET) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47497917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289506"
 ---
 # <a name="managing-application-settings-net"></a>管理應用程式設定 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[管理的應用程式設定 (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)。  
-  
 應用程式設定可讓您動態儲存應用程式資訊。 設定可以讓您在用戶端電腦上儲存不應包含在應用程式程式碼中的資訊 (例如連接字串)、使用者偏好設定和執行階段所需的其他資訊。  
   
  應用程式設定會取代舊版 Visual Studio 中使用的動態屬性。  

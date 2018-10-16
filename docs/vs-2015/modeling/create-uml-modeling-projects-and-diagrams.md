@@ -1,7 +1,7 @@
 ---
 title: 建立 UML 模型專案和圖表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250480"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[建立 UML 模型專案和圖表](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams)。  
-  
 UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提供其中五個最常用的 UML 圖表的範本：活動圖、類別圖、元件圖、循序圖和使用案例圖。 此外，您可以建立圖層圖表，協助您定義系統的結構。  
   
  UML 模型圖表與圖層圖表可以只存在於模型專案內部。 每個模型專案都包含共用的 UML 模型和數個 UML 圖表。 每個圖表都是模型的部分檢視。 UML 模型包含 UML 圖表上的所有元素，而且可以使用 [UML 模型總管] 來檢視。 如需模型及其與圖表關聯性的相關資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。 模型版本控制下的專案的相關資訊，請參閱[管理模型與版本控制下的圖表](../modeling/manage-models-and-diagrams-under-version-control.md)和[建構模型方案](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
   
 -   建立為原始程式碼檢視的類別圖表。 這些與 UML 類別圖表並不相關。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](../ide/designing-and-viewing-classes-and-types.md)。  
   
--   Code Map。 請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
+-   Code Map。 請參閱 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
   
 -   非 UML 圖表或圖層圖表的圖表，例如網域特定語言的圖表。  
   

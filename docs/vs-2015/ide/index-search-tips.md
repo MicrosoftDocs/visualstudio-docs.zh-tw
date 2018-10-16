@@ -1,7 +1,7 @@
 ---
 title: 索引搜尋提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 592a823da1efacd2aa452d5cb470f8d4f0e52bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6183fbf2a7ec7c32282f4dbe6c4a497e5ba3bff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236284"
 ---
 # <a name="index-search-tips"></a>索引搜尋提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[的索引搜尋提示](https://docs.microsoft.com/visualstudio/ide/index-search-tips)。  
-  
 您可以輸入關鍵字來尋找索引的資訊。 本主題建議使用索引來搜尋說明等有用方法。  
   
 ## <a name="index-search-tips"></a>索引搜尋提示  

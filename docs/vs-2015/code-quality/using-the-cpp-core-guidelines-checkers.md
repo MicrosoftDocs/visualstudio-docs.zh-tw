@@ -1,7 +1,7 @@
 ---
 title: 使用 c + + Core Guidelines 檢查工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47485134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194086"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[使用 c + + Core Guidelines 檢查工具](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers)。  
-  
 C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。  Visual Studio 現在支援增益集封裝，建立其他規則的程式碼分析工具，以檢查您的程式碼與 c + + Core Guidelines 的合規性，並提供改善建議。  
   
 ## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 的專案  

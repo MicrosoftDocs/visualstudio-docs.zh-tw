@@ -1,7 +1,7 @@
 ---
 title: CA2243： 屬性字串常值必須正確剖析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6e1e90ccfefad3b73a950849643009a92f074d4f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a139bcb1c87b2cf716212f5608fea74f0bb6255d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47500718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184752"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：屬性字串常值必須正確剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA2243： 屬性字串常值必須正確剖析](https://docs.microsoft.com/visualstudio/code-quality/ca2243-attribute-string-literals-should-parse-correctly)。
-
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|

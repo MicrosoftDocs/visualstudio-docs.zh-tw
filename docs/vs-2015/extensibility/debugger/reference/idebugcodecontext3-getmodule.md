@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3::GetModule |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c775442713f96b5eeba1265331a389a92ff774d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f66a914e1f4c954ca3091da826995416b4660b08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488847"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256265"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDebugCodeContext3::GetModule](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcodecontext3-getmodule)。  
-  
 擷取的偵錯模組介面的參考。  
   
 ## <a name="syntax"></a>語法  

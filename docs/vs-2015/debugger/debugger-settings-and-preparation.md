@@ -1,7 +1,7 @@
 ---
 title: 偵錯工具設定和準備 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42bd81214e013f84b16eaa83d8123a8c09ee38ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79657c6ce53bf1111eec37c1548ea3d4c61d3394
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225312"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯工具設定和準備](https://docs.microsoft.com/visualstudio/debugger/debugger-settings-and-preparation)。  
-  
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  
   
  如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  

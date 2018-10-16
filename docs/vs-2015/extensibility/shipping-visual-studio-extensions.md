@@ -1,7 +1,7 @@
 ---
 title: 推出 Visual Studio 擴充功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260172"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **請注意**: Visual Studio 組件庫已取代為 Visual Studio Marketplace。 請參閱本主題的詳細資料的最新版本。
 
-本主題的最新的版本可從[傳送 Visual Studio 擴充功能](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 與朋友和同事，共用或發佈 Visual Studio 組件庫。 在本節中，我們說明您需要執行以發佈及維護您的延伸模組的所有項目： 使用.vsix 檔案、 發佈、 當地語系化，及更新。  
   

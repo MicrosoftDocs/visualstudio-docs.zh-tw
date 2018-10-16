@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用執行緒視窗 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306250"
 ---
 # <a name="how-to-use-the-threads-window"></a>如何：使用執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯多執行緒的應用程式，使用 [執行緒] 視窗](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window)。  
-  
 在 [**執行緒**] 視窗中，您可以檢查及使用您正在偵錯的應用程式中的執行緒。  
   
  **執行緒**視窗包含的資料表，其中每個資料列會代表您的應用程式中的執行緒。 這份表格預設會列出應用程式中的所有執行緒，但是您可以篩選清單，只顯示您感興趣的執行緒。 每個資料行都會包含不同類型的資訊。 您也可以隱藏部分資料行。 如果您顯示所有資料行，則會從左到右顯示下列資訊：  

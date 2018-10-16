@@ -1,7 +1,7 @@
 ---
 title: 使用異動連結 UML 模型更新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274257"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[藉由使用異動連結 UML 模型更新](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions)。  
-  
-當您定義 UML 設計工具在 Visual Studio 中的延伸模組時，您可以數個變更分組到單一異動，稱為*連結的復原內容*。 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+當您定義 UML 設計工具在 Visual Studio 中的延伸模組時，您可以數個變更分組到單一異動，稱為*連結的復原內容*。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  根據預設，您對模型進行的每項修改都可以由使用者分別復原。 例如，如果您定義功能表命令，其交換兩個 UML 類別的名稱，則使用者可以叫用該命令，然後執行單一復原。 這樣會復原對一個名稱的變更，而不會復原其他名稱的變更，從而使模型處於非預期的狀態。  
   

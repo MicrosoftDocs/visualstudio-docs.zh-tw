@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 參考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,22 +21,20 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c1df60a678cd3d2461a5e14953b663bfbe4d380f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffde39543da20d29994e4efa205e0a7c13e30e79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188283"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 參考](https://docs.microsoft.com/visualstudio/deployment/clickonce-reference)。  
-  
 下列頁面描述用來代表 ClickOnce 應用程式的 XML 檔案的結構。  
   
 ## <a name="in-this-section"></a>本節內容  
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
+ [ndptecclick](../deployment/clickonce-application-manifest.md)  
  列出並描述的元素和屬性組成的應用程式資訊清單。  
   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)  

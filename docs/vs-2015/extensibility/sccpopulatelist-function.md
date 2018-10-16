@@ -1,7 +1,7 @@
 ---
 title: SccPopulateList 函式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e37b011da322639c2393d8fea1fb7eeaefac729
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03fedd4854103186eb9d6f034d11a8e0f8b11c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279561"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[SccPopulateList 函式](https://docs.microsoft.com/visualstudio/extensibility/sccpopulatelist-function)。  
-  
 此函式會更新特定的原始檔控制命令的檔案清單，並提供對指定的所有檔案的原始檔控制狀態。  
   
 ## <a name="syntax"></a>語法  

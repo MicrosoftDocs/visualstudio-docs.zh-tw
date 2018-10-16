@@ -1,7 +1,7 @@
 ---
 title: FormatUrl 工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0dce78ba9e81e5b568557fd963fb7480904ff2da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8355c56365c99a3bc91b3b9afc19ee34b034d367
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47488076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253938"
 ---
 # <a name="formaturl-task"></a>FormatUrl 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[FormatUrl 工作](https://docs.microsoft.com/visualstudio/msbuild/formaturl-task)。  
-  
   
 將 URL 轉換為正確的 URL 格式。  
   

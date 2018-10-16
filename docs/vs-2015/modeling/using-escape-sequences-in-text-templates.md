@@ -1,7 +1,7 @@
 ---
 title: 使用文字範本中的逸出序列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24e2629001d7c426193059175eab64ea0ab8dacf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be273c8cf69094a640ea7210bdbdc50005841a49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296539"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[文字範本中使用 「 逸出序列](https://docs.microsoft.com/visualstudio/modeling/using-escape-sequences-in-text-templates)。  
-  
 您可以使用逸出序列，文字範本產生文字範本標記中，及 （在 C# 僅限程式碼） 來逸出控制字元和引號。  
   
  若要列印至輸出檔的標準程式碼區塊的開盤和收盤標記，逸出標記，如下所示：  

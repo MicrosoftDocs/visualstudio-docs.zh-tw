@@ -1,7 +1,7 @@
 ---
 title: 查詢編輯查詢儲存 (原始檔控制 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172389"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查詢編輯查詢儲存 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[查詢編輯查詢儲存 (原始檔控制 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 編輯器可以廣播查詢編輯查詢儲存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 原始檔控制虛設常式實作 QEQS 服務，使其 QEQS 事件的收件者。 這些事件接著會委派至目前作用中的原始檔控制 VSPackage。 作用中的原始檔控制 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和其方法。 方法的`IVsQueryEditQuerySave2`介面通常只有在第一次，以及在儲存文件之前，編輯的文件之前，立即呼叫。  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave 事件  

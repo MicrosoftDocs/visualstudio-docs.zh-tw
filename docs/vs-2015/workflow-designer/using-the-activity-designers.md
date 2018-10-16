@@ -1,7 +1,7 @@
 ---
 title: 使用活動設計工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47490035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224233"
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包括許多系統供應的活動，在您建構活動與工作流程時，可以使用這些活動。 本節描述系統供應的活動分類與其可用的設計工具。 這些類別內的個別活動與其個別設計工具的主題，均描述這些活動的功能，並提供如何使用活動的指引。  

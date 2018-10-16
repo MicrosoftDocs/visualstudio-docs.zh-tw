@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLines |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c8c251a0d0fc492c212ce3c0a79909f96d6387d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b24725ce85375fb1cb96402c054e6a32c757d5e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47499977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193748"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[IDiaSession::findInlineeLines](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelines)。  
-  
 擷取列舉型別，可讓用戶端來逐一查看所有函式是內嵌的直接或間接由指定之父代符號的行號資訊。  
   
 ## <a name="syntax"></a>語法  

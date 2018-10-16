@@ -1,7 +1,7 @@
 ---
 title: CA1813： 避免使用非密封的屬性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c422e4e261374d591acd0630f428f139b29cfcca
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 743f3e9bb9518f0e06bd77a17eb667bc06556873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202004"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用非密封屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主題的最新的版本可從[CA1813： 避免使用非密封的屬性](https://docs.microsoft.com/visualstudio/code-quality/ca1813-avoid-unsealed-attributes)。
-
 |||
 |-|-|
 |TypeName|AvoidUnsealedAttributes|

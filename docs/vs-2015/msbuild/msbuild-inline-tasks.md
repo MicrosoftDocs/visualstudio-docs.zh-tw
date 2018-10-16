@@ -1,7 +1,7 @@
 ---
 title: MSBuild 內嵌工作 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7030a83203acaae71366f2a196cd3599c25b6072
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "47588973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223453"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[MSBuild 內嵌工作](https://docs.microsoft.com/visualstudio/msbuild/msbuild-inline-tasks)。  
-  
   
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   

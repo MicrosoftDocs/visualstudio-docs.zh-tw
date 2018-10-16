@@ -1,7 +1,7 @@
 ---
 title: DA0003：許多核心樣本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd4412fc120eb0a0fa039ac91bec4da4ba4a6f44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba55e787c3ee07bb94fde325832a2c6b09d8d984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200670"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[DA0003： 許多核心樣本](https://docs.microsoft.com/visualstudio/profiling/da0003-many-kernel-samples)。  
-  
 規則 Id |DA0003 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  

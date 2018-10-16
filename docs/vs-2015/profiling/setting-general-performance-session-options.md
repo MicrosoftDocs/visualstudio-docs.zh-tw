@@ -1,7 +1,7 @@
 ---
 title: 設定一般效能工作階段選項 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47489364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256772"
 ---
 # <a name="setting-general-performance-session-options"></a>設定一般效能工作階段選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[設定一般效能工作階段選項](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options)。  
-  
 您可以在效能工作階段屬性對話方塊的 [一般] 頁面上設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管] 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
   
  **需求**  

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 應用程式的程式碼存取安全性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197973"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[ClickOnce 應用程式的程式碼存取安全性](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications)。  
-  
 ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼存取安全性限制。 因此，您必須了解程式碼存取安全性的含意，並照著撰寫 ClickOnce 應用程式。  
   
  程式碼存取安全性是 .NET Framework 中協助限制程式碼存取受保護資源和作業的一項機制。 您應該設定 ClickOnce 應用程式的程式碼存取安全性權限，以使用適合應用程式安裝程式位置的區域。 在大部分情況下，您可以選擇 [網際網路]  區域以獲得有限的權限集，或 [近端內部網路]  區域以獲得更高的權限集。  
@@ -105,7 +103,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
  [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [專案設計工具、安全性頁面](../ide/reference/security-page-project-designer.md)
 

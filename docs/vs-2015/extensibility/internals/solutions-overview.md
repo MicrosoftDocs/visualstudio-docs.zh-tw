@@ -1,7 +1,7 @@
 ---
 title: 方案概觀 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0512178d3c47853c9eba7c900a57738da6bed05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47487824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292654"
 ---
 # <a name="solutions-overview"></a>方案概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[解決方案概觀](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions-overview)。  
-  
 解決方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個不同的方案檔。 方案 (.sln) 檔案是以文字為基礎和可放置在原始程式碼控制之下，並讓使用者彼此共用。 方案使用者選項 (.suo) 檔案是二進位。 如此一來，.suo 檔案不能放在原始檔控制之下，並包含使用者特定資訊。  
   
  任何的 VSPackage 可以寫入任一類型的方案檔。 由於檔案的情況，有兩個不同的介面實作進行寫入。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>介面會將文字資訊寫入而非.sln 檔案和<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>介面.suo 檔案中寫入二進位資料流。  

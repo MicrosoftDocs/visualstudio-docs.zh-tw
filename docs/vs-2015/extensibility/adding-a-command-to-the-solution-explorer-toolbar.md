@@ -1,7 +1,7 @@
 ---
 title: 將命令加入至 [方案總管] 工具列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254373"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[加入 [方案總管] 工具列命令](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar)。  
-  
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。  
   
  工具列或功能表上的任何命令會呼叫在 Visual Studio 中的按鈕。 按一下按鈕時，會執行的命令處理常式中的程式碼。 通常，相關的命令會群組在一起以形成一個群組。 功能表或工具列做為容器群組。 優先順序會決定以個別的命令群組中會出現在功能表或工具列上的順序。 您可以防止按鈕不會再顯示工具列或功能表上，藉由控制其可見性。 命令中所列`<VisibilityConstraints>`.vsct 檔的區段只會出現在相關聯的內容。 可見性無法套用到群組。  

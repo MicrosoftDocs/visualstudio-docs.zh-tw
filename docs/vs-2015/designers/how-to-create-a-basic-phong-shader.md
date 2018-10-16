@@ -1,7 +1,7 @@
 ---
 title: 如何：建立基本 Phong 著色器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 652d146cbf58dd6f248a8f36e98ea37d23e7c1a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47491086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286490"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[如何： 建立基本 Phong 著色器](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-phong-shader)。  
-  
 本文件將示範如何使用著色器設計工具和有向圖著色器語言 (DGSL) 來建立光源的著色器，實作傳統的 Phong 光源模型。  
   
  本文件示範下列活動︰  

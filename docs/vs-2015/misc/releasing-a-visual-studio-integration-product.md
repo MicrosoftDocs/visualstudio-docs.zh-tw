@@ -1,7 +1,7 @@
 ---
 title: 發行 Visual Studio 整合產品 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: douge
-ms.openlocfilehash: 24f4b4c01dcd00de8a258e90e310dc7e4b98bf11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c571a01aab27e56375d92f9abbced386a12bce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47486253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197492"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>發行 Visual Studio 整合產品
 本節主題顯示如何建置和安裝 VSPackage 以及使用 Visual Studio 整合測試 (VSIT) 來發行 Visual Studio 整合產品。  
@@ -37,4 +37,4 @@ ms.locfileid: "47486253"
   
 ## <a name="related-sections"></a>相關章節  
  [自訂測試使用 Visual Studio SDK](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
- 描述如何使用[!INCLUDE[esprtest](../includes/esprtest-md.md)]套件，以建立、 管理、 編輯和執行測試，並也取得和儲存測試結果。
+ 描述如何使用 [!INCLUDE[esprtest](../includes/esprtest-md.md)] 套件來建立、管理、編輯和執行測試，以及取得和儲存測試結果。
