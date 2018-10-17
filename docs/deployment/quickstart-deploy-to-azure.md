@@ -21,7 +21,7 @@ ms.locfileid: "39341686"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a> 使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service 
 
-您可以使用**發佈**工具，將 ASP.NET、ASP.NET Core、Node.js 與 .NET Core 應用程式發佈到 Azure App Service 或 Azure App Service Linux (使用容器)。針對 Python 應用程式，請依照 [Python-發佈至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 中所述的步驟執行。
+您可以使用**發佈**工具，將 ASP.NET、ASP.NET Core、Node.js 與 .NET Core 應用程式發佈到 Azure App Service 或 Azure App Service Linux (使用容器)。 針對 Python 應用程式，請依照 [Python-發佈至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 中所述的步驟執行。
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "39341686"
 
 ## <a name="next-steps"></a>後續步驟
 
-在此快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔以部署到 Azure。您也可以透過從 Azure App Service 匯入發行設定來設定發行設定檔。
+在此快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔以部署到 Azure。 您也可以透過從 Azure App Service 匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
 > [匯入發佈設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
