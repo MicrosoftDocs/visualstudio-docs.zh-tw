@@ -21,7 +21,7 @@ ms.locfileid: "39341686"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a> 使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service 
 
-您可以使用**發佈**工具，將 ASP.NET、 ASP.NET Core、 Node.js 和.NET Core 應用程式發行至 Azure App Service 或 Azure App Service Linux （使用容器）。 Python 應用程式，請遵循的步驟， [Python-發佈至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)。
+您可以使用**發佈**工具，將 ASP.NET、ASP.NET Core、Node.js 與 .NET Core 應用程式發佈到 Azure App Service 或 Azure App Service Linux (使用容器)。針對 Python 應用程式，請依照 [Python-發佈至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 中所述的步驟執行。
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
@@ -31,17 +31,17 @@ ms.locfileid: "39341686"
 
     ![在 [方案總管] 中的 [專案] 內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇發行")
 
-1. 如果您先前已設定任何發行的設定檔，會顯示**發佈**視窗，在這個情況下，請選取**建立新的設定檔**。
+2. 如果您先前已設定任何發行設定檔，會顯示 [發佈] 窗格，在這個情況下，請選取 [建立新設定檔]。
 
-1. 在 **挑選發行目標** 對話框中，選擇**App Service**。
+3. 在 [挑選發佈目標] 對話方塊方塊中，選擇 [App Service]。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
 
-1. 選取 [發行]。 **建立 App Service**  對話框隨即出現。 登入您 Azure 帳戶，如果有需要，則預設 app service 設定填入的欄位。
+4. 選取 [發行]。[建立 App Service] 對話方塊隨即出現。登入您的 Azure 帳戶，如果有需要，預設 App Service 設定會填入欄位。
 
     ![建立 App Service](../deployment/media/quickstart-publish-settings-app-service.png "建立 Azure App Service")
 
-1. 選取 [建立]。 Visual Studio 部署應用程式至 Azure App Service ，並在瀏覽器中載入 web 應用程式。 專案屬性 **發佈** 頁面會顯示網站 URL 和其他詳細資料。
+5. 選取 [建立]。Visual Studio 會將應用程式部署到 Azure App Service ，而且您的 Web 應用程式會在瀏覽器中載入。專案屬性 [發佈] 頁面會顯示網站 URL 與其他詳細資料。
 
     ![發佈屬性窗格中顯示的設定檔摘要](../deployment/media/quickstart-publish-app-service-summary.png)
 
@@ -50,11 +50,11 @@ ms.locfileid: "39341686"
 在前述步驟中，您可以建立資源群組中的 Azure 資源。 如果您不希望在未來需要這些資源，您可以藉由刪除資源群組中刪除它們。
 從 Azure 入口網站左側功能表中，選取**資源群組**，然後選取**myResourceGroup**。
 在資源群組頁面上，確定列出的資源是您想要刪除的項目。
-選取 **刪除**，輸入 **myResourceGroup** 文字方塊中，然後選取**刪除**。
+選取 [刪除]，在文字方塊中輸入 **myResourceGroup**，然後選取 [刪除]。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔以部署至 Azure。 你也可以透過從 Azure App Service 匯入發佈設定來設定發佈設定檔。
+在此快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔以部署到 Azure。您也可以透過從 Azure App Service 匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
 > [匯入發佈設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
