@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499561"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356752"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組： Hello World
 
-這個 Hello World 範例會引導您完成適用於 Visual Studio 建立您的第一個延伸模組。 本教學課程會示範如何將新的命令加入 Visual Studio。
+這個 Hello World 範例會引導您完成適用於 Visual Studio 建立您的第一個延伸模組。 本教學課程會示範如何將新的命令新增至 Visual Studio。
 
 在過程中，您將了解如何：
 
@@ -35,11 +35,12 @@ ms.locfileid: "39499561"
 
 在開始之前，請確定您已安裝**Visual Studio 延伸模組開發**工作負載包括 VSIX 範本，您將需要和範例程式碼。
 
-注意： 您可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 來建立 Visual Studio 擴充性專案。
+> [!NOTE]
+> 您可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 來建立 Visual Studio 擴充性專案。
 
 ## <a name="create-an-extensibility-project"></a>建立擴充性專案
 
-步驟 1： 從**檔案**功能表上，按一下**新的專案**。 在畫面底部，您可以輸入您專案的名稱。
+步驟 1： 從**檔案**功能表上，按一下**新的專案**。 在畫面底部，輸入您專案的名稱。
 
 步驟 2： 從**範本**功能表上，按一下**Visual C#**，按一下 **擴充性**，然後按一下**VSIX 專案**。
 
@@ -53,15 +54,15 @@ ms.locfileid: "39499561"
 
 步驟 1： 如果您選取資訊清單時，您可以看到哪些選項已變更，例如，中繼資料、 描述和版本。
 
-步驟 2： 以滑鼠右鍵按一下專案 （而非方案）。 在操作功能表中，按一下 **新增**，然後按一下**使用者控制**。
+步驟 2： 以滑鼠右鍵按一下專案 （而非方案）。 在操作功能表中，按一下 **新增**，然後按一下**新項目**。
 
-步驟 3： 請返回**擴充性**區段，然後再按一下**自訂命令**。
+步驟 3： 選取 **擴充性**區段，然後再按一下**自訂命令**。
 
 步驟 4： 在 **名稱**下方欄位中，為它命名，例如*Command.cs*。
 
 ![自訂命令](media/hello-world-custom-command.png)
 
-您的新命令將會列在**方案總管**下方**資源**分支。 這也是您可以在其中找到與您的命令，例如如果您想要修改的映像的 PNG 和 ICO 檔案相關的其他檔案。
+您的新命令列在**方案總管**下方**資源**分支。 這也是您可以在其中找到與您的命令，例如如果您想要修改的映像的 PNG 和 ICO 檔案相關的其他檔案。
 
 ## <a name="modify-the-source-code"></a>修改原始程式碼
 
@@ -116,7 +117,7 @@ ms.locfileid: "39499561"
 
 您現在可以在 Visual Studio 的實驗執行個體中執行的原始程式碼。
 
-步驟 1： 按一下 **啟動**工具列中。 這會建置您的專案，並開始偵錯工具，啟動 Visual Studio 呼叫的新執行個體**實驗執行個體**。
+步驟 1： 按一下 **啟動**工具列中。 這會建置您的專案並開始偵錯工具，啟動 Visual Studio 呼叫的新執行個體**實驗執行個體**。
 
 您會看到字樣**實驗執行個體**Visual Studio 標題列中。
 

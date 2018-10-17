@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701705"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356778"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 
 Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應用程式的開發。 Visual Studio 可以自動建立設定即程式碼所需的檔案來支援 Kubernetes 部署，例如 Dockerfile 和 Helm 圖表。 您可以偵錯您的程式碼，在即時 Azure Kubernetes Service (AKS) 叢集中使用 Azure 開發人員的空間，或直接發行至 AKS 叢集中從 Visual Studio 內。
+
+本教學課程涵蓋使用 Visual Studio 將 Kubernetes 支援新增至專案，並將發行至 AKS。 如果您主要使用感興趣[Azure 開發人員空格](http://aka.ms/get-azds)偵錯和測試您在 AKS 中執行的專案，您可以跳到[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)改。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -28,9 +30,9 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
 - [適用於 Visual Studio 的 Kubernetes 工具](https://aka.ms/get-vsk8stools)、 提供個別下載。
 
-- [適用於 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)開發工作站上安裝 （也就是您執行 Visual Studio），如果您想要建置 Docker 映像，在本機執行的 Docker 容器進行偵錯或發行至 AKS。
+- [適用於 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)開發工作站上安裝 （也就是您執行 Visual Studio），如果您想要建置 Docker 映像，在本機執行的 Docker 容器進行偵錯或發行至 AKS。 (Docker*不*所需的建置和偵錯 AKS 使用 Azure 開發人員空間中的 Docker 容器。)
 
-- 如果您想要從 Visual Studio 發佈至 AKS:
+- 如果您想要從 Visual Studio 發佈至 AKS (*不*AKS 使用 Azure 開發人員空間中的偵錯所需):
 
     1.  [AKS 發佈工具](https://aka.ms/get-vsk8spublish)、 提供個別下載。
 
@@ -78,11 +80,11 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>發佈至 Azure Kubernetes Service (AKS)
 
-使用中的所有這些檔案的位置，您可以撰寫和偵錯您的應用程式程式碼，使用 Visual Studio IDE，就像您永遠有。
+使用中的所有這些檔案的位置，您可以撰寫和偵錯您的應用程式程式碼，使用 Visual Studio IDE，就像您永遠有。 您也可以使用[Azure 開發人員空格](http://aka.ms/get-azds)快速執行並偵錯即時在 AKS 叢集中執行程式碼。 如需詳細資訊，請參閱[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 一旦您的程式碼執行的方式，可以直接從 Visual Studio 發行至 AKS 叢集。
 
-若要這樣做，您需要再次確認您已安裝的所有項目中所述[必要條件](#prerequisities)區段底下的項目發行至 AKS，並透過提供的連結中的命令列步驟執行。 然後，設定將您的容器映像發佈至 Azure Container Registry (ACR) 的發行設定檔。 然後可以提取容器映像從 ACR AKS，並將其部署到叢集。
+若要這樣做，您需要再次確認您已安裝的所有項目中所述[必要條件](#prerequisites)區段底下的項目發行至 AKS，並透過提供的連結中的命令列步驟執行。 然後，設定將您的容器映像發佈至 Azure Container Registry (ACR) 的發行設定檔。 然後可以提取容器映像從 ACR AKS，並將其部署到叢集。
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下您*專案*，然後選擇 **發行**。
 
@@ -119,3 +121,5 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 ## <a name="next-steps"></a>後續步驟
 
 深入了解在 Azure 上的 Kubernetes 開發，請閱讀[AKS 文件](/azure/aks)。
+
+深入了解 Azure 開發人員的空格，請閱讀[Azure 開發人員空間 > 文件](http://aka.ms/get-azds)
