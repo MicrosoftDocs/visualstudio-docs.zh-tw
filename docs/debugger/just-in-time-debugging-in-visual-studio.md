@@ -40,7 +40,7 @@ ms.locfileid: "39179771"
 
     然後重新開啟您在發現錯誤所在的網頁。 如果變更此設定不會解決此問題，請連絡擁有者的 web 應用程式以修正此問題。
 
-3. （visual Studio 使用者）如果您已安裝的 Visual Studio （或如果您有先前安裝，並將其移除），[停用 Just in Time 偵錯](../debugger/debug-using-the-just-in-time-debugger.md)，然後再試一次執行應用程式。
+3. （Visual Studio 使用者）如果您已安裝的 Visual Studio （或如果您有先前安裝，並將其移除），[停用 Just in Time 偵錯](../debugger/debug-using-the-just-in-time-debugger.md)，然後再試一次執行應用程式。
 
     > [!IMPORTANT]
     > 如果您停用 Just in Time 偵錯和應用程式遇到未處理的例外狀況 （錯誤），相反地，您將看到標準錯誤對話方塊中或應用程式會當機或停止回應。 錯誤修正 （由您或應用程式的擁有者） 之前，應用程式將無法正常執行。
