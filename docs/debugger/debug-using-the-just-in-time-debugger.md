@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
 ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/25/2018
 ms.locfileid: "47168392"
@@ -168,7 +168,7 @@ static void Main(string[] args)
 
     當您嘗試附加至另一個使用者身分執行處理序時，就會發生此錯誤。
 
-    若要解決這個問題，請啟動 Visual Studio 中，開啟**připojit k procesu**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。
+    若要解決這個問題，請啟動 Visual Studio 中，開啟**附加至處理序**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。
 
 - **無法啟動偵錯工具，因為沒有使用者登入。**
 
