@@ -136,7 +136,7 @@ ms.locfileid: "49203940"
   }
   ```
 
-  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception （)** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
+  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception()** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
 
 若要將例外狀況設定還原為預設值，請選擇**將清單還原為預設設定**按鈕：
 
