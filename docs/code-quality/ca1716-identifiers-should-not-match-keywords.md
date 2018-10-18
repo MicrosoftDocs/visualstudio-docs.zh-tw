@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550605"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858189"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -51,4 +51,4 @@ ms.locfileid: "45550605"
  名稱，不會出現在清單中選取的關鍵字。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您說服識別碼不會混淆的 API，使用者和程式庫是使用中的所有可用語言，您可以隱藏此規則的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 如果您說服識別碼不會混淆的 API，使用者和程式庫是使用.NET Framework 中的所有可用語言，您可以隱藏此規則的警告。

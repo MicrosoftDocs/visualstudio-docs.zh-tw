@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755933"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860208"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活動設計工具
 
@@ -33,13 +33,13 @@ ms.locfileid: "36755933"
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\>屬性
 
-下表顯示 <xref:System.Activities.Statements.RemoveFromCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
+下表顯示<xref:System.Activities.Statements.RemoveFromCollection%601>內容並描述在設計工具的使用方式：
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 活動可選用的易記名稱。 預設值是 RemoveFromCollection < Int32\>。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要加入的項目**集合\<T >**。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|應該加入項目的集合。 此集合屬於類型**ICollection < TypeArgument\>。** 若要指定集合，請輸入在屬性方格中的 Visual Basic 運算式。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要移除之項目的**集合\<T >**。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|應移除的項目集合。 此集合屬於類型**ICollection < TypeArgument\>。** 若要指定集合，請輸入在屬性方格中的 Visual Basic 運算式。|
 |*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> 所包含項目的 T 型別。 根據預設，這*TypeArgument*類型設定為**Int32**。 若要變更的類型，將變更的值*TypeArgument*下拉式方塊，在屬性方格中。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|指出指定的項目是否可從集合內移除的值。 若要指定繫結至結果的變數，請在屬性方格中輸入變數。|
 

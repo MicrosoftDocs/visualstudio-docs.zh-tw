@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567177"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859948"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，以及從其他工具的連結。 例如，您可以連結定義域專屬語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
+Visual Studio ModelBus 提供方法來建立模型的模型之間，以及從其他工具的連結。 例如，您可以連結定義域專屬語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
 
  ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個參考可以儲存在模型外，例如儲存在另一個模型的項目中。 在此情況下，工具需要取得項目的存取權，模型匯流排基礎結構會載入適當的模型並傳回項目。 如有需要，您可以向使用者顯示模型。 如果無法從先前的位置存取檔案，ModelBus 會請使用者尋找檔案。 如果使用者找到檔案，ModelBus 會修正該檔案的所有參考。
 
 > [!NOTE]
->  在 ModelBus 的目前 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 實作中，連結的模型必須是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目。
+>  在 ModelBus 目前 Visual Studio 實作中，連結的模型必須是相同的 Visual Studio 方案中的項目。
 
  如需其他資訊和範例程式碼，請參閱：
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567177"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> 提供存取權給 DSL
- 您必須定義用於 DSL 的 ModelBusAdapter，才能建立模型或其項目的 ModelBus 參考。 執行這項操作的最簡單方式是使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型匯流排擴充功能，將命令加入至 DSL 設計工具。
+## <a name="provide"></a> 提供存取權給 DSL
+ 您必須定義用於 DSL 的 ModelBusAdapter，才能建立模型或其項目的 ModelBus 參考。 若要這樣做最簡單的方式是使用 Visual Studio 模型匯流排擴充功能，將命令加入至 DSL 設計工具。
 
-###  <a name="expose"></a> 若要公開 （expose） 給模型匯流排 DSL 定義
+### <a name="expose"></a> 若要公開 （expose） 給模型匯流排 DSL 定義
 
 1.  除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567177"
  `ModelBusAdapters\bin\*` 資料夾包含 `Dsl` 專案和 `ModelBusAdapters` 專案建置的組件。 若要從另一個 DSL 參考這個 DSL，您應該匯入這些組件。
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>確定可參考項目
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 配接器預設會使用項目 GUID 來識別項目。 因此，這些 ID 必須保存在模型檔中。
+ Visual Studio ModelBus 配接器使用項目的 guid 來識別它，預設值。 因此，這些 ID 必須保存在模型檔中。
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>確定保存項目 ID
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567177"
 
 -   覆寫 `ResolveElementReference` 以從模型匯流排參考中找到正確項目。
 
-##  <a name="editRef"></a> 從另一個 DSL 存取 DSL
+## <a name="editRef"></a> 從另一個 DSL 存取 DSL
  您可以在 DSL 的網域屬性中儲存模型匯流排參考，以及撰寫自訂程式碼來使用這些參考。 您也可以讓使用者選擇模型檔和模型內的某個項目，藉此建立模型匯流排參考。
 
  若要讓 DSL 使用另一個 DSL 的參考，您應該先將它*消費者*模型匯流排參考。
@@ -140,10 +140,10 @@ ms.locfileid: "39567177"
 
 2.  按 F5 鍵或 CTRL+F5，在實驗模式中執行其中一個 DSL。
 
-3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。
+3.  在 Visual Studio 的實驗執行個體中的偵錯專案，加入每個 DSL 的執行個體的檔案。
 
     > [!NOTE]
-    > 只有在模型是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
+    > Visual Studio ModelBus 只可以解析參考模型的相同 Visual Studio 方案中的項目。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
 
 4.  在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567177"
 ## <a name="creating-references-in-program-code"></a>在程式碼中建立參考
  當您要儲存模型或模型內某個項目的參考時，您可以建立 `ModelBusReference`。 `ModelBusReference` 的類型有兩種：模型參考和項目參考。
 
- 若要建立模型參考，您需要其模型為執行個體之 DSL 的 AdapterManager，以及模型的檔案名稱或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案項目。
+ 若要建立模型的參考，您需要的模型是一個執行個體，和檔案名稱或 Visual Studio 專案項目模型的 DSL 的 AdapterManager。
 
  若要建立項目參考，您需要模型檔的配接器，以及所要參考的項目。
 
 > [!NOTE]
->  透過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus，您可以建立僅針對相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中之項目的參考。
+>  使用 Visual Studio ModelBus，您可以建立項目的參考相同的 Visual Studio 方案中。
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>匯入已公開的 DSL 組件
  在使用專案中，將專案參考加入至 DSL 和已公開 DSL 的 ModelBusAdapter 組件。
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- 以此方式序列化的 MBR 不會影響內容。 如果您使用簡單檔案架構的模型匯流排配接器，MBR 會包含絕對檔案路徑。 這在永遠不會移動執行個體模型檔的情況下便已足夠。 但是，模型檔通常會是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中的項目。 您的使用者必須能夠將整個專案移至檔案系統的不同部分。 使用者也必須能夠控制專案的原始檔，並在不同的電腦上開啟專案。 因此，檔案名稱應相對於包含檔案之專案的位置來進行序列化。
+ 以此方式序列化的 MBR 不會影響內容。 如果您使用簡單檔案架構的模型匯流排配接器，MBR 會包含絕對檔案路徑。 這在永遠不會移動執行個體模型檔的情況下便已足夠。 不過，模型檔通常會在 Visual Studio 專案中的項目。 您的使用者必須能夠將整個專案移至檔案系統的不同部分。 使用者也必須能夠控制專案的原始檔，並在不同的電腦上開啟專案。 因此，檔案名稱應相對於包含檔案之專案的位置來進行序列化。
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>相對於指定的檔案路徑來進行序列化
  A`ModelBusReference`包含`ReferenceContext`，這是您可以在其中儲存資訊，例如檔案路徑相對於應該要加以序列化的字典。

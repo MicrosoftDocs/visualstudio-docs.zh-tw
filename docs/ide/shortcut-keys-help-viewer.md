@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954255"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775215"
 ---
 # <a name="shortcut-keys-help-viewer"></a>快速鍵 (Help Viewer)
 
@@ -61,7 +61,7 @@ ms.locfileid: "31954255"
 |主題|**Ctrl**+**Tab**|從左到右，在索引標籤之間切換。|
 |主題|**Ctrl**+**Shift**+**Tab**|從右到左，在索引標籤之間切換。|
 |主題|**Ctrl**+**W**|關閉目前的索引標籤。|
-|主題|**Ctrl**+***數字***|切換到特定的索引標籤位置 (其中數字介於 1 到 9，可指出序列中的索引標籤)。|
+|主題|**Ctrl**+**_數字_**|切換到特定的索引標籤位置 (其中**數字**介於 1 到 9，可指出序列中的索引標籤)。|
 |主題|**Ctrl**+**Alt**+**F4**|關閉其他內容索引標籤。|
 |主題|**Ctrl**+**Shift**+**加號**|增加 10% 的縮放比例。|
 |主題|**Ctrl**+**減號**|減少 10% 的縮放比例。|

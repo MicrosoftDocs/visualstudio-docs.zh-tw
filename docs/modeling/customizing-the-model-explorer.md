@@ -13,15 +13,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f136f61976c3980f95977e4f93b5c57789235f6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953036"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859896"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
-您可以變更的外觀和行為的 [總管] 中您的網域特定語言設計工具，如下所示：
+您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
 
 -   變更視窗標題。
 
@@ -29,90 +29,90 @@ ms.locfileid: "31953036"
 
 -   變更節點的圖示。
 
--   隱藏節點。
+-   隱藏的節點。
 
 ## <a name="changing-the-window-title"></a>變更視窗標題
- 若要變更 [總管] 中產生的視窗標題，請選取**總管行為**中**DSL 總管**，然後在**屬性**視窗中，將**標題**屬性，以您想要的標題。
+ 若要變更產生的檔案總管的視窗標題，請選取**總管行為**中**DSL 總管**，然後在**屬性**視窗中，將**標題**屬性，以您想要的標題。
 
 ## <a name="changing-the-tab-icon"></a>變更索引標籤圖示
- 若要變更索引標籤圖示的 [總管] 中，使用 16 x 16 像素圖示.bmp 檔案中。 圖示檔案放入 \DslPackage\Resources\ 資料夾，然後變更 檔案名稱以**ModelExplorerToolWindowBitmaps.bmp**。 例如，您可以變更[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]setup.ico 圖示成.bmp 格式檔案，並將它來重新命名**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會顯示這個圖示的檔案總管 索引標籤上一起停駐時**方案總管 中**。
+ 若要變更索引標籤圖示 [總管] 中，使用 16 x 16 像素圖示.bmp 檔案中。 將圖示檔案放在 \DslPackage\Resources\] 資料夾中，然後變更 [檔案名稱以**ModelExplorerToolWindowBitmaps.bmp**。 比方說，您可以在這裡為.bmp 格式變更 Visual Studio setup.ico 圖示檔並重新命名為**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會顯示這個圖示程式總管 中的索引標籤上時一起停駐**方案總管 中**。
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>在 [總管] 節點上設定自訂圖示
- 您可以使用 [總管] 節點設定，在檔案總管中自訂節點。 下列程序示範如何將圖示加入至節點。
+ 您可以自訂在總管中的節點，使用檔案總管 節點設定。 下列程序示範如何將圖示新增至節點。
 
-#### <a name="to-add-an-icon-to-an-explorer-node"></a>若要將圖示加入至 [總管] 節點
+#### <a name="to-add-an-icon-to-an-explorer-node"></a>若要將圖示新增至 [檔案總管] 節點
 
-1.  建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]方案使用的工作流程方案範本。
+1.  建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用工作流程 方案範本的方案。
 
-2.  將包含在 16 x 16 像素圖示.bmp 檔案放**Dsl\Resources**方案中的資料夾。
+2.  將包含 16 x 16 像素圖示在.bmp 檔案放**Dsl\Resources**方案中的資料夾。
 
-3.  在**DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3.  在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
 
-     **ExplorerNodeSettings**節點會出現在**自訂節點設定**節點。
+     **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
 
-4.  選取**ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**執行者**。
+4.  選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**動作項目**。
 
-5.  設定**圖示來顯示**圖示檔案的路徑。
+5.  設定**圖示來顯示**圖示檔的路徑。
 
 6.  轉換所有範本，然後建置並執行方案。
 
-7.  在產生的設計工具中開啟範例圖表。
+7.  在產生的設計工具中，開啟範例圖表。
 
-     [總管] 中應該會顯示三個**執行者**有程式圖示的節點。
+     [總管] 中應該會顯示三個**動作項目**具有圖示的節點。
 
 > [!NOTE]
->  如果您已經設定節點的圖示會顯示在 總管 中產生的任何項目，所有的檔案總管 節點會顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
+>  如果您已將任何項目，會顯示在 [總管] 中產生的節點圖示，檔案總管的所有節點會都顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>變更顯示在 [總管] 節點的名稱
- 您可以變更模型項目的名稱在檔案總管中顯示的方式。 下列程序示範如何顯示名稱**工作**所參考**註解**註解節點中。
+ 您可以變更模型項目的名稱在總管中顯示的方式。 下列程序示範如何顯示名稱**任務**所參考**註解**註解節點中。
 
-#### <a name="to-display-a-property"></a>若要顯示的內容
+#### <a name="to-display-a-property"></a>若要顯示的屬性
 
 1.  開啟您在先前的程序中建立的方案。
 
-2.  請確定**註解**只有單一網域類別參考所設定的屬性名稱 role 的多重性**主旨**至 0..1。 屬性名稱應該就**主旨**，且此關聯性名稱應該會變成**CommentReferencesSubject**。
+2.  請確定**註解**參考只有單一網域類別，藉由設定的屬性名稱的角色多重性**主體**為 0..1。 屬性名稱應該就**主旨**，且關聯性名稱應該會變成**CommentReferencesSubject**。
 
-3.  在**DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3.  在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
 
-     **ExplorerNodeSettings**節點會出現在**自訂節點設定**節點。
+     **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
 
-4.  選取**ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**註解**。
+4.  選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**註解**。
 
 5.  以滑鼠右鍵按一下**註解**節點，然後再按一下**加入新的屬性路徑**。
 
      新的節點會出現名為**屬性顯示**。
 
-6.  選取**屬性顯示**，然後在**屬性**視窗中，按一下 [值] 欄位的**屬性路徑**。 選取**註解**，然後**CommentReferencesSubject**，然後**FlowElement**。 產生的路徑看起來應該像**CommentReferencesSubject.Subject/ ！主旨**。
+6.  選取**屬性顯示**，然後在**屬性**視窗中，按一下 值欄位**屬性路徑**。 選取 **註解**，然後**CommentReferencesSubject**，然後**FlowElement**。 產生的路徑看起來應該像**CommentReferencesSubject.Subject/ ！主旨**。
 
-7.  在 [值] 欄位的**屬性**，選取**名稱**。
+7.  在 值欄位**屬性**，選取**名稱**。
 
 8.  轉換所有範本，然後建置並執行您的方案。
 
-9. 在產生的設計工具中開啟範例圖表。
+9. 在產生的設計工具中，開啟範例圖表。
 
-10. 繪製**註解連接器**註解項目之間和**Task1**在圖表上的項目。
+10. 繪製**註解 Connector**註解項目之間， **Task1**在圖表上的項目。
 
-     總管節點應該會顯示為註解**Task1**。
+     [總管] 節點應該會顯示為註解**Task1**。
 
 ## <a name="hiding-nodes"></a>隱藏節點
- 您可以在檔案總管中隱藏節點加到其路徑**隱藏節點**節點**DSL 總管**。 下列程序示範如何隱藏**註解**節點。
+ 您可以在總管中隱藏節點，加上其路徑**隱藏的節點**節點**DSL explorer**。 下列程序示範如何隱藏**註解**節點。
 
 #### <a name="to-hide-an-explorer-node"></a>若要隱藏 [總管] 節點
 
 1.  開啟您在先前的程序中建立的方案。
 
-2.  在**DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **新增網域路徑**。
+2.  在  **DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **新增網域路徑**。
 
-     A**網域路徑**節點會出現在**隱藏節點**。
+     A**領域路徑**下方的節點會出現**隱藏節點**。
 
-3.  選取**網域路徑**，然後在**屬性**視窗中，按一下 [值] 欄位的**路徑定義**。 選取**FlowGraph**，然後**FlowGraphHasComments**。 產生的路徑看起來應該像**FlowGraphHasComments.Comments**
+3.  選取**領域路徑**，然後在**屬性**視窗中，按一下 值欄位**路徑定義**。 選取  **FlowGraph**，然後**FlowGraphHasComments**。 產生的路徑看起來應該像**FlowGraphHasComments.Comments**
 
 4.  轉換所有範本，然後建置並執行您的方案。
 
-5.  在產生的設計工具中開啟範例圖表。
+5.  在產生的設計工具中，開啟範例圖表。
 
-     總管 中應該只顯示**執行者** 節點，並不應該顯示**註解**節點。
+     [總管] 中應該只會顯示**執行者**節點，而應該不會顯示**註解**節點。
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

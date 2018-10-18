@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668393"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/17/2018
   
  本主題說明如何使用記憶體使用量工具，分析 UWP XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 UWP 應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](../profiling/javascript-memory.md)。  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>啟動記憶體使用量診斷工作階段  
+## <a name="start-a-memory-usage-diagnostic-session"></a>開始記憶體使用量診斷工作階段  
   
 1.  在 Visual Studio 中開啟 C# 通用 Windows 專案。  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/17/2018
   
      ![啟動記憶體使用量診斷工作階段](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a>監控記憶體使用量  
+## <a name="monitor-memory-use"></a>監控記憶體使用量  
  您可以使用 [記憶體使用量] 工具產生詳細報表，用來尋找和修正問題，也可以用來研究您正在積極開發之案例的即時記憶體效果。  
   
  當您開始診斷工作階段時，您的應用程式會啟動，且 [診斷工具] 視窗會顯示應用程式記憶體使用量的時間軸圖形。  
@@ -55,12 +56,12 @@ ms.lasthandoff: 05/17/2018
   
  若要停止監控工作階段而不建立報表，只需關閉診斷視窗。 若要在擷取記憶體快照時產生報表，請選擇 [停止]。  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a>擷取應用程式記憶體狀態的快照  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>擷取應用程式記憶體狀態的快照  
  如果您發現想要調查的記憶體問題，可以在診斷工作階段期間擷取快照，在特定時刻擷取記憶體內的物件。 由於應用程式使用大量且許多類型的物件，您可能會想專注分析單一案例。 在記憶體問題出現之前先取得基準快照、第一次出現問題之後擷取另一張快照，並且如果您能重複案例便再額外擷取一或多張快照，也是不錯的做法。  
   
  若要收集快照，請開始新的診斷工作階段。 想要擷取記憶體資料時，選擇 [擷取快照]。 若要產生報表，請選擇 [停止]。  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a>記憶體使用量概觀頁面  
+##  <a name="memory-usage-overview-page"></a>記憶體使用量概觀頁面  
  停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示概觀報表。  
   
  ![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -68,9 +69,9 @@ ms.lasthandoff: 05/17/2018
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>記憶體使用量快照檢視  
  使用快照檢視可以在新的 Visual Studio 視窗中開啟詳細報表。 有兩種快照檢視：  
   
--   [快照詳細資料報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)會顯示一張快照中的類型和執行個體。  
+-   [快照詳細資料報表](#snapshot-reports)會顯示一張快照中的類型和執行個體。  
   
--   [快照差異 (diff) 報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)會比較兩張快照中的類型和執行個體。  
+-   [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照中的類型和執行個體。  
   
  ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/17/2018
 |![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
 |![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
   
-##  <a name="BKMK_Snapshot_reports"></a>快照報表  
+## <a name="snapshot-reports"></a>快照報表  
  ![記憶體使用量快照報表](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a>快照報表樹狀目錄  
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/17/2018
 ####  <a name="BKMK_Just_My_Code"></a> Just My Code  
  [Just My Code] 篩選條件會隱藏由外部程式碼所產生的大多數執行個體。 外部類型是由作業系統或 Framework 元件所擁有，或者由編輯器產生。  
   
-##  <a name="BKMK_Snapshot_details_reports"></a>快照詳細資料報表  
+## <a name="snapshot-details-reports"></a>快照詳細資料報表  
  您可以使用快照詳細資料報表，專注在診斷工作階段的一張快照。 若要開啟詳細資料報表，請選擇快照檢視中的其中一個連結，如下圖所示。 這兩個連結都會開啟相同報表。唯一的差別在於報表中 [Managed 堆積] 樹狀目錄的起始排序次序。 在兩種情況下，您都能在報表開啟之後變更排序順序。  
   
  ![快照檢視中的快照報表連結](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ ms.lasthandoff: 05/17/2018
 |**大小 (位元組)**|對於類型，此為類型的所有執行個體大小，但排除類型中包含的物件大小。<br /><br /> 對於執行個體，此為物件的大小，但排除物件中包含的物件大小。|  
 |**內含大小 (位元組)**|類型執行個體的大小總計，或是執行個體的大小，且包括所包含物件的大小。|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a>快照差異 (diff) 報表  
+## <a name="snapshot-difference-diff-reports"></a>快照差異 (diff) 報表  
  快照差異 (diff) 報表會顯示主要快照與在它之間立即擷取的快照之間的變更。 若要開啟差異報表，請選擇快照檢視中的其中一個連結，如下圖所示。 這兩個連結都會開啟相同報表。唯一的差別在於報表中 [Managed 堆積] 樹狀目錄的起始排序次序。 您可以在報表開啟之後變更排序順序。  
   
  ![快照檢視中的差異報表連結](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -202,6 +203,6 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>另請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
- [分析功能導覽](../profiling/profiling-feature-tour.md)  
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

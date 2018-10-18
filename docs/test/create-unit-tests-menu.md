@@ -1,22 +1,22 @@
 ---
-title: 在 Visual Studio 中建立單元測試方法虛設常式
+title: 建立單元測試方法虛設常式
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2c8f0f0aeab7256c15c423678de2cdc7e88b1eb2
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078325"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135545"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 

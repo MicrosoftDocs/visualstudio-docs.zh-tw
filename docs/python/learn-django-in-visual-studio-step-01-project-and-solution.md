@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627242"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280164"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -100,7 +100,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
     ![用於推入至現有遠端存放庫的 [Team Explorer] 視窗](media/django/step01-push-to-github.png)
 
-    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Visual Studio Team Services] 選項可讓您直接在 Visual Studio 內建立存放庫。
+    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Azure DevOps] 選項可讓您直接在 Visual Studio 內建立存放庫。
 
 1. 隨著您逐步完成本教學課程，請建立定期使用 Visual Studio 中的控制項來認可並推送變更的習慣。 本教學課程會合適的時機點提醒您。
 

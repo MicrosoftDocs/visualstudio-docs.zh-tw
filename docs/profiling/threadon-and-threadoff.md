@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476673"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668509"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
-只有在使用檢測方法的命令列分析工作階段中，才能使用 VSPerfCmd.exe **ThreadOff** 和 **ThreadOn** 子命令。 **ThreadOff** 和 **ThreadOn** 會暫停和繼續分析指定的執行緒。 **ThreadOff** 會停止分析執行緒，而 **ThreadOn** 會開始分析執行緒。  
+只有在使用檢測方法的命令列分析工作階段中，才能使用 *VSPerfCmd.exe* **ThreadOff** 和 **ThreadOn** 子命令。 **ThreadOff** 和 **ThreadOn** 會暫停和繼續分析指定的執行緒。 **ThreadOff** 會停止分析執行緒，而 **ThreadOn** 會開始分析執行緒。  
   
- 在大部分的情況下，您可以將 **ThreadOn** 或 **ThreadOff** 指定為 VSPerfCmd.exe 命令列的唯一選項，但它們也可以與 **GlobalOn**、**GlobalOff**、**ProcessOn** 和 **ProcessOff** 子命令合併使用。  
+ 在大部分的情況下，您可以將 **ThreadOn** 或 **ThreadOff** 指定為 *VSPerfCmd.exe* 命令列的唯一選項，但它們也可以與 **GlobalOn**、**GlobalOff**、**ProcessOn** 和 **ProcessOff** 子命令合併使用。  
   
  **ThreadOn** 和 **ThreadOff** 子命令可與 **GlobalOn** 和 **GlobalOff** 子命令互動，以控制命令列分析工作階段中所有處理序的資料收集，以及可與 **ProcessOn** 和 **ProcessOff** 子命令互動，以控制所指定處理序的資料收集。  
   
@@ -30,7 +30,7 @@ ms.locfileid: "34476673"
   
 -   **ThreadOn** 可立即將執行緒開始/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
+ 如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289477"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280346"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Xamarin University 訓練課程權益
 
@@ -88,4 +88,4 @@ Visual Studio Dev Essentials 成員具有建立免費帳戶的資格，此帳戶
 ## <a name="support-resources"></a>支援資源
 -  需要有關 Xamarin University 的協助嗎？  您可以在下列位置找到各種支援資源：[https://university.xamarin.com/support](https://university.xamarin.com/support)。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668369"
 ---
 # <a name="perftips"></a>效能提示
 Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工具的 [診斷工具]  幫助您在偵錯時監視及分析應用程式效能。  
   
- 雖然已整合偵錯工具的診斷工具是讓您在開發過程中注意效能問題的好方式，但偵錯工具可以對您的應用程式效能有重大的影響。 若要收集更精確的效能資料，請考慮使用也會在偵錯工具外部執行的 Visual Studio 診斷工具，做為效能調查額外之一部分。 請參閱[使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。  
+ 雖然已整合偵錯工具的診斷工具是讓您在開發過程中注意效能問題的好方式，但偵錯工具可以對您的應用程式效能有重大的影響。 若要收集更精確的效能資料，請考慮使用也會在偵錯工具外部執行的 Visual Studio 診斷工具，做為效能調查額外之一部分。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。  
   
 ## <a name="perftips"></a>效能提示  
  當偵錯工具於中斷點或逐步執行的作業停止執行時，該中斷與上一個中斷點之間經過的時間會在 [編輯器] 視窗中顯示為提示。 如需詳細資訊，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。  
@@ -27,9 +28,9 @@ Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>診斷工具視窗  
- 在 [診斷工具] 視窗中會記錄中斷點和關聯的計時資料  
+ 在 [診斷工具] 視窗中會記錄中斷點和關聯的計時資料。  
   
- 下圖顯示 Visual Studio 2015 Update 1 中的 [診斷工具] 視窗：  
+ 下圖顯示 Visual Studio 2015 Update 1 中的 [診斷工具]  視窗：  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -55,6 +56,6 @@ Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工
   
 2.  核取或清除 [偵錯時啟用診斷工具] 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)

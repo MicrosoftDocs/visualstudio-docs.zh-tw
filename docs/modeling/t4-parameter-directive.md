@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1f12363af0d0b26aa72c5478df5da82c6d4fd02a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5425dc16b40495d1a9ab9010ac90fe6b552d02e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950344"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857998"
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 
-在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字範本`parameter`指示詞會宣告樣板程式碼中初始化自從外部內容傳入值的屬性。 如果您撰寫程式碼會叫用文字轉換，您可以設定這些值。
+在 Visual Studio 文字範本中，`parameter`指示詞會宣告在您的範本程式碼會從外部內容從傳入的值初始化的屬性。 如果您撰寫程式碼叫用的文字轉換，您可以設定這些值。
 
 ## <a name="using-the-parameter-directive"></a>使用參數指示詞
 
@@ -26,11 +26,11 @@ ms.locfileid: "31950344"
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- `parameter`指示詞會宣告樣板程式碼中初始化自從外部內容傳入值的屬性。 如果您撰寫程式碼會叫用文字轉換，您可以設定這些值。 值可以傳遞處於`Session`字典，或在<xref:System.Runtime.Remoting.Messaging.CallContext>。
+ `parameter`指示詞會宣告在您的範本程式碼會從外部內容從傳入的值初始化的屬性。 如果您撰寫程式碼叫用的文字轉換，您可以設定這些值。 值可以傳遞處於`Session`字典，或是在<xref:System.Runtime.Remoting.Messaging.CallContext>。
 
- 您可以宣告任何遠端使用型別參數。 也就是說，必須與宣告的型別<xref:System.SerializableAttribute>，或必須衍生自<xref:System.MarshalByRefObject>。 這可讓的 AppDomain 處理範本時要傳入的參數值。
+ 您可以宣告任何可遠端處理型別參數。 也就是說，必須與宣告的型別<xref:System.SerializableAttribute>，或必須衍生自<xref:System.MarshalByRefObject>。 這可讓的 AppDomain 中的範本會處理傳入的參數值。
 
- 例如，您可以撰寫文字範本具有下列內容：
+ 例如，您可以撰寫文字範本，使用下列內容：
 
 ```
 <#@ template language="C#" #>
@@ -44,7 +44,7 @@ Line <#= i #>
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>將參數值傳遞至範本
- 如果您要撰寫[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能，例如功能表命令或事件處理常式，您可以使用文字範本化服務處理的範本：
+ 如果您正在撰寫 Visual Studio 擴充功能，例如功能表命令或事件處理常式，您可以使用文字範本化服務來處理範本：
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -62,10 +62,10 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 
 ```
 
-## <a name="passing-values-in-the-call-context"></a>傳入呼叫內容的值
- 您可以另外傳遞值中的邏輯資料<xref:System.Runtime.Remoting.Messaging.CallContext>。
+## <a name="passing-values-in-the-call-context"></a>將值傳入呼叫的內容
+ 您可以另外傳遞值中的資料以邏輯<xref:System.Runtime.Remoting.Messaging.CallContext>。
 
- 下列範例會使用這兩種方法來傳遞值：
+ 下列範例會使用這兩種方法，將傳遞值：
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -87,10 +87,10 @@ string result = t4.ProcessTemplate("",
 
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>將值傳遞到執行階段 （前置處理過） 文字範本
- 它通常不需要使用`<#@parameter#>`與執行階段 （前置處理過的） 文字範本指示詞。 相反地，您可以定義其他建構函式或產生之程式碼，您用來傳遞參數值可設定的屬性。 如需詳細資訊，請參閱[執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>將值傳遞給執行階段 （前置處理過） 文字範本
+ 它通常不需要使用`<#@parameter#>`使用執行階段 （前置處理過的） 文字範本指示詞。 相反地，您可以定義額外的建構函式或可設定的屬性所產生的程式碼，您可透過它傳遞參數值。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 不過，如果您想要使用`<#@parameter>`在執行階段範本中，您可以傳遞值至它所使用的工作階段的字典。 例如，假設您已經建立的檔案做為前置處理過的範本，呼叫`PreTextTemplate1`。 您可以使用下列程式碼叫用範本在程式中。
+ 不過，如果您想要使用`<#@parameter>`在執行階段範本中，您可以將值傳遞給它使用工作階段的字典。 例如，假設您已建立的檔案做為前置處理過的範本，稱為`PreTextTemplate1`。 您可以使用下列程式碼叫用範本在您的程式。
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -105,4 +105,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>從 TextTemplate.exe 取得引數
 
 > [!IMPORTANT]
->  `parameter`指示詞不會擷取中設定的值`-a`參數`TextTransform.exe`公用程式。 若要取得這些值，設定`hostSpecific="true"`中`template`指示詞，以及使用`this.Host.ResolveParameterValue("","","argName")`。
+>  `parameter`指示詞不會擷取中設定的值`-a`參數`TextTransform.exe`公用程式。 若要取得這些值，設定`hostSpecific="true"`中`template`指示詞，並使用`this.Host.ResolveParameterValue("","","argName")`。

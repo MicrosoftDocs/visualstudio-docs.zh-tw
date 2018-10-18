@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269085"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857623"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 
@@ -32,20 +32,20 @@ ms.locfileid: "34269085"
 
 這些工具也可協助您更輕鬆地與專案相關人員通訊。
 
-若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看哪些版本的 Visual Studio 支援每項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>請您指定選項。
 
 |||
 |-|-|
-|**了解程式碼以及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。|- [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />- [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**了解程式碼和其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。|- [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />- [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**了解類別結構：**<br /><br /> 從程式碼建立類別圖，將專案中的類別結構視覺化。|[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**會描述高層級的系統設計和驗證此設計的程式碼：**<br /><br /> 藉由建立相依性圖表中說明的高層級的系統設計和預期的相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|- [從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|
+|**描述高階系統設計，並針對這項設計驗證程式碼：**<br /><br /> 藉由建立相依性圖表，描述高階系統設計和其預定的相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|- [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>另請參閱
 
 - [情節：使用視覺化和模型功能變更設計](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
-- [分析架構並模型架構](../modeling/analyze-and-model-your-architecture.md)
+- [分析與模型結構](../modeling/analyze-and-model-your-architecture.md)
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
 

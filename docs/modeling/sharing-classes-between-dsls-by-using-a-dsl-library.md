@@ -9,59 +9,59 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a48ba42982ea8f190fca2e13d714cb99cb01490
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949455"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857972"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
-在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK，您可以建立不完整，您可以匯入另一個 DSL DSL 定義。 這可讓您因素的類似模型的通用部分。
+在 Visual Studio Visualization and Modeling SDK 中，您可以建立不完整的 DSL 定義，您可以匯入至另一個 DSL。 這可讓您建構的類似模型的通用部分。
 
 ## <a name="creating-and-using-dsl-libraries"></a>建立和使用 DSL 程式庫
 
-#### <a name="to-create-a-dsl-library"></a>若要建立 DSL 文件庫
+#### <a name="to-create-a-dsl-library"></a>若要建立的 DSL 程式庫
 
-1.  建立新的 DSL 專案，並選擇 DSL 文件庫方案範本。
+1.  建立新的 DSL 專案，並選擇 [DSL 程式庫] 方案範本。
 
-     單一 DSL 專案將會建立空的模型。
+     單一的 DSL 專案將會建立空白的模型。
 
 2.  您可以加入網域類別、 關聯性、 圖形等等。
 
-     文件庫中的項目沒有形成單一的內嵌樹狀結構。
+     文件庫中的項目沒有以形成單一的內嵌樹狀結構中。
 
-     若要定義匯入工具可以使用的關聯性，建立兩個網域類別並建立它們之間的關聯性。
+     若要定義匯入工具可以使用的關聯性，建立兩個網域類別，並建立其間的關聯性。
 
-     請考慮設定**繼承修飾詞**網域類別，來`Abstract`。
+     請考慮將**繼承修飾詞**的網域類別`Abstract`。
 
-3.  您可以加入您在 DSL 總管 中，例如連接產生器中定義的項目。
+3.  您可以加入您在 [DSL 總管] 中，例如連接產生器中定義的項目。
 
-4.  您可以將需要額外的程式碼，例如驗證條件約束的自訂內容。
+4.  您可以新增自訂需要額外的程式碼，例如驗證條件約束。
 
-5.  按一下**轉換所有範本**。
+5.  按一下 **轉換所有範本**。
 
 6.  建置專案。
 
-7.  當您發佈其他人使用的 DSL 時，您必須提供已編譯的組件 (DLL) 和檔案`DslDefinition.dsl`。 您可以在資料夾下找到編譯的組件 `Dsl\bin\*`
+7.  當您發佈的其他人使用 DSL 時，您必須提供已編譯的組件 (DLL) 和檔案`DslDefinition.dsl`。 您可以在底下的資料夾中找到編譯的組件 `Dsl\bin\*`
 
-#### <a name="to-import-a-dsl-library"></a>若要匯入 DSL 程式庫
+#### <a name="to-import-a-dsl-library"></a>若要匯入的 DSL 程式庫
 
-1.  在另一個 DSL 定義中，在**DSL 總管**，DSL 的根類別上按一下滑鼠右鍵，然後按一下**加入 DslLibrary 匯入**。
+1.  在另一個 DSL 定義中，在**DSL Explorer**，以滑鼠右鍵按一下 DSL 的根類別，然後按一下**加入新的 DslLibrary 匯入**。
 
-2.  在 [屬性] 視窗中，設定**檔案路徑**程式庫。 您可以使用相對或絕對路徑。
+2.  在 [屬性] 視窗中，設定**File-path**程式庫。 您可以使用相對或絕對路徑。
 
-     匯入程式庫會出現在 DSL 總管中，以唯讀模式。
+     匯入程式庫會出現在 [DSL 總管] 中，在唯讀模式。
 
-3.  您可以使用匯入的類別作為基底類別。 在匯入的 DSL，建立網域類別，並在 [屬性] 視窗中，將**基底類別**匯入的類別。
+3.  您可以使用匯入的類別作為基底類別。 在匯入的 DSL 中，建立網域類別，然後在 [屬性] 視窗中，將**基底類別**匯入的類別。
 
 4.  按一下 轉換所有範本。
 
-5.  DSL 專案中加入 DSL 程式庫專案所建置之組件 (DLL) 的參考。
+5.  DSL 程式庫專案所建置的組件 (DLL) 的參考加入至 DSL 專案中。
 
 6.  建置方案。
 
- DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫，其匯入也會自動出現在 DSL 總管 中。
+ DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL 總管] 中。
 
 ## <a name="see-also"></a>另請參閱
 

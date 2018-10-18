@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901481"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495631"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "42901481"
 
 ## <a name="specify-a-run-settings-file"></a>指定回合設定檔
 
-您可以使用回合設定檔案來設定從[命令列](vstest-console-options.md)、在 IDE 中，或使用 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的[組建工作流程](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
+您可以使用回合設定檔案來設定從[命令列](vstest-console-options.md)、在 IDE 中，或使用 Azure Test Plans 或 Team Foundation Server (TFS) 之[組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定回合設定檔
 
@@ -114,8 +114,8 @@ ms.locfileid: "42901481"
         </Configuration>
       </DataCollector>
 
-      <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
+        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       </DataCollector>
 
     </DataCollectors>
@@ -256,4 +256,4 @@ public void HomePageTest()
 ## <a name="see-also"></a>另請參閱
 
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 測試工作 (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

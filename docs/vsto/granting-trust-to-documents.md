@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671731"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073437"
 ---
 # <a name="grant-trust-to-documents"></a>將信任授與文件
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
@@ -33,7 +33,7 @@ ms.locfileid: "35671731"
 ## <a name="trusted-locations"></a>受信任的位置  
  中的應用程式[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和 Office 2010 皆有信任中心，讓使用者可以設定安全性和隱私權設定，例如受信任的位置。 Office 方案，在本機電腦會被視為受信任的位置。 不過，由於系統、每個使用者，以及 Internet Explorer 的暫存資料夾的特定目錄具有較高的風險性，因此可能無法受到信任。  
   
- 如需信任中心的詳細資訊，請參閱[安全性原則和設定 Office 2010 中的](http://go.microsoft.com/fwlink/?LinkId=89202)。 如需如何建立、 管理、 移除及設定信任的資料夾的詳細資訊，請參閱[2007 Office system 中設定受信任的位置和受信任的發行者設定](http://go.microsoft.com/fwlink/?LinkId=89203)和[建立、 移除或變更受信任的檔案位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+ 如需信任中心的詳細資訊，請參閱[安全性原則和設定 Office 2010 中的](http://go.microsoft.com/fwlink/?LinkId=89202)。 如需如何建立、 管理、 移除及設定信任的資料夾的詳細資訊，請參閱[2007 Office system 中設定受信任的位置和受信任的發行者設定](http://go.microsoft.com/fwlink/?LinkId=89203)和[建立、 移除或變更受信任的檔案位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ## <a name="security-considerations-for-office-solutions"></a>Office 方案的安全性考量  
  當您考慮要將資料夾加入信任位置時，有下列幾種安全性考量：  

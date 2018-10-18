@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a62c7dc2d8f0e0e80b3cfd8ba74b968ebd2e116
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 606ba5ebe7c485adb33fbcfa6884ad5e625d821e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668357"
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 04/19/2018
 |**名稱**|函式的名稱。|  
 |**專有時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|  
   
-## <a name="see-also"></a>請參閱  
- [摘要檢視](../profiling/summary-view-sampling-data.md)   
- [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)
+## <a name="see-also"></a>另請參閱  
+ [摘要檢視 - 取樣資料](../profiling/summary-view-sampling-data.md)   
+ [摘要檢視 - .NET 記憶體資料](../profiling/summary-view-dotnet-memory-data.md)

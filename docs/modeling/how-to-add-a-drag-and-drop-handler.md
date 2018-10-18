@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566625"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859194"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 
-您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。
+讓使用者可以將項目拖曳到圖表從其他圖表或 Visual Studio 的其他部分，您可以拖放事件的處理常式新增至您的 DSL。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。
 
 本主題討論源自其他圖表的拖放軌跡。 若為單一圖表內的移動和複製事件，請考慮改為定義 `ElementOperations` 的子類別。 如需詳細資訊，請參閱 <<c0> [ 自訂複製行為](../modeling/customizing-copy-behavior.md)。 您也可以自訂 DSL 定義。
 

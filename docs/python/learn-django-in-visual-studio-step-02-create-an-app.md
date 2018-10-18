@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627243"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547928"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -53,7 +53,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 | **\_\_init\_\_.py** | 此檔案會將應用程式識別為套件。 |
 | **移轉** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 移轉會在步驟 6 中討論；現在，該資料夾只會包含 *\_\_init\_\_.py* 檔案 (表示該資料夾定義自己的 Python 套件)。 |
 | **範本** | Django 頁面範本的資料夾，在與應用程式名稱相符的資料夾內包含單一檔案 *index.html*。 (在 Visual Studio 2017 15.7 與更舊版本中，檔案會直接包含在 *templates* 下，而步驟 2-4 會指示您建立子資料夾。)範本是 HTML 的區塊，檢視可在其中加入資訊，以動態呈現頁面。 頁面範本「變數」(例如 *index.html* 中的 `{{ content }}`) 是動態值的預留位置，如本文稍後所述 (步驟 2)。 Django 應用程式通常會將其範本置於名稱與應用程式名稱相符的子資料夾中，來為範本建立命名空間。 |
-| **admin.py** | 在其中擴充應用程式系統管理介面的 Python 檔案 (請參閱步驟 6)，用來查看和編輯資料庫中的資料。 此檔案一開始只包含陳述式 `from django.contrib import admin`。 根據預設，Django 是透過 Django 專案中的 *settings.py* 檔案來包含標準系統管理介面，您可以藉由取消註解 *urls.py* 中的現有項目來開啟它。 |
+| **admin.py** | 在其中擴充應用程式系統管理介面的 Python 檔案 (請參閱步驟 6)，用來植入和編輯資料庫中的資料。 此檔案一開始只包含陳述式 `from django.contrib import admin`。 根據預設，Django 是透過 Django 專案中的 *settings.py* 檔案來包含標準系統管理介面，您可以藉由取消註解 *urls.py* 中的現有項目來開啟它。 |
 | **apps.py** | Python 檔案，定義應用程式的設定類別 (請參閱本表後面的內容)。 |
 | **models.py** | 模型是由函式識別的資料物件，檢視會透過它和應用程式基礎資料庫互動 (請參閱步驟 6)。 Django 提供資料庫連線層，使應用程式本身不需要處理那些詳細資料。 *models.py* 檔案是建立模型的預設位置，而且一開始只包含陳述式 `from django.db import models`。 |
 | **tests.py** | Python 檔案，包含單元測試的基本結構。 |
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 如果您不在規則運算式中使用尾端的 $ (如同 `^home`)，URL 模型將會符合以 "home" 開頭的*任何* URL，例如 "home"、"homework"、"homestead" 及 "home192837"。
 
-若要使用不同的規則運算式進行實驗，請嘗試使用如 [pythex.org](http://www.pythex.org) \(英文\) 的 [regex101.com](https://regex101.com) \(英文\) 等線上工具。
+若要使用不同的規則運算式進行實驗，請嘗試使用如 [pythex.org](https://www.pythex.org) \(英文\) 的 [regex101.com](https://regex101.com) \(英文\) 等線上工具。
 
 ## <a name="step-2-3-render-a-view-using-html"></a>步驟 2-3：使用 HTML 轉譯檢視
 

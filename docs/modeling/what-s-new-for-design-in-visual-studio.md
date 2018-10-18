@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870958"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857569"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 
-## <a name="live-dependency-validation"></a>即時的相依性驗證
+## <a name="live-dependency-validation"></a>即時相依性驗證
 
-移除不必要的相依性是管理您的技術負債很重要的一部分。 相依性的即時驗證現在包含，提供相關的問題，精確資訊，且完全獲益的錯誤清單，並在編輯器中的新功能。
+移除不必要的相依性是很重要的一部分管理您的技術債務。 相依性的即時驗證現在包含，提供問題的精確資訊，且完全受益於錯誤清單] 和 [編輯器的新功能。
 
-![在動作中的即時的相依性驗證](media/dep-validation-whatsnew-01.png)
+![作用中的即時相依性驗證](media/dep-validation-whatsnew-01.png)
 
-撰寫經驗已進行相依性驗證更容易找到並更容易存取，變更從 「 圖層圖表 」 的術語 「 相依性圖 」 來變更。
+編寫體驗已變更為讓相依性驗證更容易找到和更容易存取，變更從 「 圖層圖表 」 到 「 相依性圖表 」 的術語。
 
-**架構**功能表現在包含要直接建立相依性圖表的命令：
+**架構**功能表現在包含直接建立相依性圖表的命令：
 
-![在 [架構] 功能表上的即時的相依性項目](media/dep-validation-whatsnew-02.png)
+![在 [架構] 功能表上的即時相依性項目](media/dep-validation-whatsnew-02.png)
 
-...且已變更的屬性名稱的相依性圖表中，與它們的描述，在圖層，使其更有意義：
+...並使其更有意義已變更之屬性名稱的相依性圖表，以及其描述中的圖層：
 
-![即時更新的相依性屬性的名稱](media/dep-validation-whatsnew-03.png)
+![即時更新的相依性屬性名稱](media/dep-validation-whatsnew-03.png)
 
-您現在會看到目前方案中的程式碼的分析結果中，立即變更的影響每次您儲存圖表。 您不必再等候完成 「 驗證相依性 」 命令。
+您現在會看到您的變更，立即在方案中目前的程式碼分析結果的影響每次您儲存圖表。 您不必再等候完成 「 相依性驗證 」 命令。
 
-如需詳細資訊，請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
 ## <a name="uml-designers-have-been-removed"></a>已移除 UML 設計工具
 
@@ -48,30 +48,30 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 
 * UML 圖表現在會顯示為 XML 檔案
 * UML 模型總管 不存在
-* 模型的專案的參考不會再用於相依性驗證
-* 在 [方案總管] 的 「 圖層參考 」 節點不會再顯示
-* 不再使用相依性 （圖層） 圖表上的 「 驗證 」 建置動作-已移除建置工作
-* 版本之間的往返，被為了專案結構
-* 您可以仍然開啟、 建立、 編輯和儲存為 XML 的相依性 （圖層） 圖表
-* TFS 工作項目連結至相依性 （圖層） 圖表不是在設計介面上，您可以存取
-* 不再支援 DSL 或圖層從上一頁連結
-* 不再支援 Modeling SDK 中的 UML 擴充性
+* 模型的專案參考不再用於相依性驗證
+* 在 [方案總管] 中的 「 圖層參考 」 節點不會再顯示
+* 相依性 （分層） 圖表上的 [驗證] 建置動作已不再使用-已移除建置工作
+* 專案結構保留在版本之間的來回行程
+* 您可以仍然開啟、 建立、 編輯和儲存為 XML 的相依性 （分層） 圖表
+* TFS 工作項目連結至相依性 （分層） 圖表便無法存取在設計介面上
+* 不再支援後從連結到 DSL 或圖層
+* Modeling SDK 中的 UML 擴充性已不再支援
 
-不過，支援視覺化.NET 和 c + + 程式碼的架構是可透過[code map](map-dependencies-across-your-solutions.md)，和相依性驗證上面所述的重大改良。
+不過，支援視覺化.NET 和 c + + 程式碼的架構是可透過[code map](map-dependencies-across-your-solutions.md)，與上面所述的相依性驗證有長足的改進。
 
-如果您是 UML 設計工具的大量使用者時，您可以繼續使用 Visual Studio 2015 或更早版本，而當您決定針對 UML 需求的替代工具。
+如果您是 UML 設計工具的大量使用者時，您可以繼續使用 Visual Studio 2015 或更早版本，而您決定針對您的 UML 需求的替代工具。
 
-如需詳細資訊，請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Architecture and modeling tools 的版本支援
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Architecture and modeling tools 的版本支援
 
-提供數個版本 visual Studio 2015。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
+Visual Studio 2017 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
-|**功能**|**企業版**|**專業版**|**Community**|**Express**|
-|-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Code Map**|[是]|只支援讀取程式碼對應、 篩選程式碼會將對應，加入新的泛型節點，及從選取範圍建立新的導向圖形。|-|-|
-|**相依性圖表**|[是]|只支援讀取相依性圖表。|只支援讀取相依性圖表。|-|
-|**導向圖形**（DGML 圖表）|[是]|是|[是]|-|
-|**程式碼複製品**|[是]|-|-|-|
+|**功能**|**企業版**|**專業版**|**Community 版本**|
+|-----------------|--------------------|----------------------|-------------------|
+|**Code Map**|是|只支援讀取程式碼對應，對應篩選程式碼，加入新的泛型節點，並從選取範圍建立新的導向圖形。|-|
+|**相依性圖表**|是|只支援讀取相依性圖表。|只支援讀取相依性圖表。|
+|**有向圖形**（DGML 圖表）|是|是|是|
+|**程式碼複製品**|是|-|-|

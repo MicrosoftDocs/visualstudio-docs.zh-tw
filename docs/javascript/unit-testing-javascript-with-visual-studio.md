@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924788"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776089"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js 的單元測試
 
@@ -137,7 +137,7 @@ Test execution time: 1.5731 Seconds
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-此資料夾必須包含具有相同名稱的 JavaScript 檔案，該檔案會匯出下列 2 個函式：
+此資料夾必須包含具有相同名稱的 JavaScript 檔案，該檔案會匯出下列兩個函式：
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ Test execution time: 1.5731 Seconds
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 探索可用的測試架構會在 Visual Studio 啟動時發生。 如果在 Visual Studio 執行時新增架構，請重新啟動 Visual Studio 來偵測此架構。 不過，當您對實作進行變更時，不需要重新啟動。
+
+## <a name="unit-tests-in-other-project-types"></a>其他專案類型中的單元測試
+您並不限於只能在 Node.js 專案中撰寫單元測試。 當您將 TestFramework 和 TestRoot 屬性新增至任何 C# 或 VB 專案時，會列舉那些測試，且您可以使用 [測試總管] 視窗執行它們。
+
+若要啟用此功能，請以滑鼠右鍵按一下 [方案總管] 中的專案節點、選擇 [卸載專案]，然後選擇 [編輯專案]。 然後在專案檔中，將下列兩個項目新增至屬性群組。
+
+> [!NOTE]
+> 請確定您要新增項目的屬性群組不包含指定的條件。
+> 這可能會導致非預期的行為。
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+接下來，將測試新增至您指定的測試根資料夾，它們便可在 [測試總管] 視窗中執行。 如果一開始未出現，您可能需要重新建置專案。
+
+> [!NOTE]
+> 這目前不適用於 .NET Standard 和 .NET Core 專案。

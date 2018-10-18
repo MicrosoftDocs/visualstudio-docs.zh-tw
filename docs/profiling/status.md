@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e39743b8e3e6602961dfec693d5dc92c0ee63
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668364"
 ---
 # <a name="status"></a>狀態
-VSPerfCmd.exe **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。  
+*VSPerfCmd.exe* **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。  
   
- **Status** 選項必須是命令列上指定的唯一選項。 必須先使用 VSPerfCmd.exe **Start** 選項來初始化分析工具，才能顯示任何狀態。  
+ **Status** 選項必須是命令列上指定的唯一選項。 必須先使用 *VSPerfCmd.exe* **Start** 選項來初始化分析工具，才能顯示任何狀態。  
   
 ## <a name="syntax"></a>語法  
   
@@ -71,8 +72,8 @@ VSPerfCmd.exe /Status
  **具有監視器存取權的使用者**  
  列出可存取分析工具的使用者名稱。 使用 VSPerfCmd.exe **Admin** 選項，其他使用者就可以獲授與存取權  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [分析服務](../profiling/command-line-profiling-of-services.md)

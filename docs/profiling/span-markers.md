@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6952408611bfdd59a3d488db2a7f34524588edf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37f2dd735b7deb2d4fed1232c2ba690b26a9fde0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668449"
 ---
 # <a name="span-markers"></a>延伸標記
 延伸標記表示有意義的應用程式階段。 例如，您可以使用延伸範圍，表示其間正在處理特定工作項目的時間間隔。 其長度代表對應的應用程式階段持續時間。 下圖顯示並行視覺化檢視中的延伸範圍︰  
@@ -36,6 +37,6 @@ ms.lasthandoff: 04/19/2018
  ![並行視覺化檢視中的彙總延伸標記](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 延伸彙總標記  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)   
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

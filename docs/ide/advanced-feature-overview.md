@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 79fc62c4b48c6e2ee3ce959082f7f8ba6cb646c7
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282521"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542386"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
-[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)主題提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的人員使用。
+[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的人員使用。
 
 ## <a name="modular-installation"></a>模組安裝
 
@@ -80,7 +80,7 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 [伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需有關使用 [伺服器總管] 的詳細資訊，請參閱[新增連線 (英文)](../data-tools/add-new-connections.md)。
 
-[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及「Azure SQL 資料倉儲」的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及 Azure SQL 資料倉儲的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
 Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management Studio 類似的資料庫物件檢視。 [SQL Server 物件總管] 可讓您執行輕型的資料庫管理和設計工作，包括編輯資料表資料、比較結構描述、直接從 [SQL Server 物件總管] 使用內容功能表來執行查詢等。
 
@@ -100,19 +100,19 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
-您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或是使用 [Visual Studio Team Services (VSTS)](/vsts/index) 來一邊管理整個專案的程式碼，一邊管理錯誤 (bug) 與工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Git 與 Team Services (VSTS) 使用者入門](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
+您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index?view=vsts) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
 
-Visual Studio Team Services 是一項雲端式服務，可用來裝載軟體專案及允許以小組進行共同作業。 VSTS 支援 Git 和 Team Foundation 原始檔控制系統，以及 Scrum、CMMI 和 Agile 開發方法。 Team Foundation 版本控制 (TFVC) 使用單一且集中式伺服器儲存機制來追蹤和版本化檔案。 在其他開發人員取得最新變更的地方，一律將本機變更簽入中央伺服器。
+Azure DevOps Services 是雲端型服務，用於規劃、裝載，自動化和部署軟體以及在小組中共同作業。 Azure DevOps Services 支援 Git repos (分散式版本控制) 和 Team Foundation 版本控制 (集中式版本控制)，以及用於儲存於版本控制系統中程式碼的連續建置和版本 (CI/CD) 管線。 Azure DevOps Services 也支援 Scrum、CMMI 和敏捷式開發方法。
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
-如果您在網路上有 Visual Studio Team Services 帳戶或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連接。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
+如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
 
-下圖顯示裝載於 VSTS 中之方案的 [Team Explorer] 視窗。
+下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer] 視窗。
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-您也可以自動化建置流程，來建置您小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 如需詳細資訊，請參閱[建置及發行 (VSTS 和 TFS)](/vsts/build-release/index)。
+您也可以自動化建置流程，來建置您小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="extend-visual-studio"></a>擴充 Visual Studio
 

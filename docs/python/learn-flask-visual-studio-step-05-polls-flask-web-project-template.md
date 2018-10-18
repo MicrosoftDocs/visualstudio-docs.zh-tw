@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 5
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「投票 Flask Web 專案」和「投票 Flask/Jade Web 專案」範本的功能。
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637613"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280090"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -24,7 +24,7 @@ ms.locfileid: "39637613"
 
 在了解 Visual Studio 的「Flask Web 專案」範本之後，您現在可以研究一下第三個 Flask 範本「投票 Flask Web 專案」，此專案以相同的程式碼基底為基礎。
 
-您可以由此步驟學習到如何：
+在這個步驟中，您將了解如何：
 
 > [!div class="checklist"]
 > - 從範本建立專案並將資料庫初始化 (步驟 5-1)
@@ -40,7 +40,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Flask Web 專案] 範本，將專案命名為 "FlaskPolls"，然後選取 [確定]。
 
-1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值  (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
+1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
 
 1. 將 **FlaskPolls** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管] 中該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
@@ -356,7 +356,7 @@ def results(key):
 
 - 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
 
-- 在 Visual Studio Team Services (VSTS) 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 VSTS、GitHub 或其他位置上)，您可以讓 VSTS 自動執行單元測試做為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 VSTS，此外，與監視 App Insights 方案整合，並關閉與 agile 規劃工具的整個週期。 如需詳細資訊，請參閱:
+- 在 Azure Pipelines 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 Azure Repos、GitHub 或其他位置上)，您可以讓 Azure Test Plans 自動執行單元測試作為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps Services 與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具關閉整個週期。 如需詳細資訊，請參閱:
 
-  - [使用 Azure 的 DevOps 專案來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [使用 Azure DevOps Projects來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [使用 Visual Studio Team Services 在 Azure 中進行 Python 程式設計 (影片，11 分鐘 21 秒)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。

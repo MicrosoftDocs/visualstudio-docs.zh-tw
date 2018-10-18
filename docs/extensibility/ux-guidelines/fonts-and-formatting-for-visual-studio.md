@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273087"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` 會傳回 bool？ （可為 null 的布林值） 與`DialogResult`，這可以在需要時。 如果對話方塊已關閉與傳回的值為 true**確定**。  
   
- 如果您要顯示某些 WPF UI 的對話方塊，並不裝載在它自己`HwndSource`，例如快顯視窗或 WPF 視窗的子視窗 Win32/WinForms 父視窗，您必須設定`FontFamily`和`FontSize`WPF e 的根元素實作。 (Shell 主視窗中，根據設定的屬性，但無法被繼承過去`HWND`)。 此命令介面提供的資源的屬性可以繫結，就像這樣：  
+ 如果您要顯示某些 WPF UI 的對話方塊，並不裝載在它自己`HwndSource`，例如快顯視窗或 WPF 子視窗的 Win32/WinForms 父視窗，您必須設定`FontFamily`和`FontSize`WPF 項目的根項目上。 (Shell 主視窗中，根據設定的屬性，但無法被繼承過去`HWND`)。 此命令介面提供的資源的屬性可以繫結，就像這樣：  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   預設高度行距和填補，應該遵循粗體環境字型的文字。  
   
 ## <a name="see-also"></a>另請參閱  
- [MSDN： 字型 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN： 使用者介面文字 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN： 字型 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN： 使用者介面文字 (Windows)](/windows/desktop/uxguide/text-ui)

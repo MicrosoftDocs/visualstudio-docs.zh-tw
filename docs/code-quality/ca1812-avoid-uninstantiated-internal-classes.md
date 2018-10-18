@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551765"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858999"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免使用未執行個體化的內部類別
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -58,7 +58,7 @@ ms.locfileid: "45551765"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
 
-- 私用建構函式的類型為目標[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]1.0 和 1.1 版。
+- 私用建構函式以.NET Framework 1.0 和 1.1 版為目標的類型。
 
 - `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 

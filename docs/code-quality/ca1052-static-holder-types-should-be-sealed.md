@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550423"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859493"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：靜態預留位置類型應該為密封的
 
@@ -33,7 +33,7 @@ ms.locfileid: "45550423"
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
 |CheckId|CA1052|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -43,7 +43,7 @@ ms.locfileid: "45550423"
  這項規則假設，只包含靜態成員的型別不是繼承，因為類型不提供任何功能，您可以覆寫衍生型別。 不是繼承的型別應該用來標記`sealed`修飾詞，以禁止其使用的基底類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將標記的類型為`sealed`。 如果您的目標[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更新版本，較好的方法是標示的類型為`static`。 如此一來，您可以避免必須宣告私用的建構函式，來防止建立類別。
+ 若要修正此規則的違規情形，將標記的類型為`sealed`。 如果您的目標.NET Framework 2.0 或更新版本，較好的方法來標記的類型為`static`。 如此一來，您可以避免必須宣告私用的建構函式，來防止建立類別。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有型別設計為繼承，則隱藏此規則的警告。 如果沒有`sealed`修飾詞表示型別是有用的基底類型。

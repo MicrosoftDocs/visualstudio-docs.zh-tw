@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567209"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860287"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
-網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
+特定領域語言 (DSL) 方案會產生 API，您可以用來讀取和更新 Visual Studio 中之 DSL 執行個體。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
 
 ## <a name="the-example-solution-component-diagrams"></a>範例方案：元件圖表
  若要建立方案，其為大部分的範例，本主題中的來源，建立從 DSL**元件模型**解決方案範本。 這是您建立新的 DSL 方案時所顯示的其中一個標準範本。
@@ -32,7 +32,7 @@ ms.locfileid: "39567209"
  ![元件和相互連接的通訊埠](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 方案的結構
- **Dsl**專案定義 DSL 的 API。 **DslPackage**專案可讓您定義如何與整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 您也可以加入自己的專案，這些專案也可以包含從模型產生的程式碼。
+ **Dsl**專案定義 DSL 的 API。 **DslPackage**專案可讓您定義如何與 Visual Studio 整合。 您也可以加入自己的專案，這些專案也可以包含從模型產生的程式碼。
 
 ### <a name="the-code-directories"></a>程式碼目錄
  大部分的每個這些專案中的程式碼會產生從**Dsl\DslDefinition.dsl**。 產生的程式碼位於**產生的程式碼**資料夾。 若要查看產生的檔案，請按一下 **[+]** 旁邊的產生 **.tt**檔案。
@@ -53,7 +53,7 @@ ms.locfileid: "39567209"
 
      例如，如果您設定**有自訂建構函式**選項的網域類別，然後建置方案，您會看到錯誤訊息。 當您按兩下其中一個錯誤訊息時，您會看到產生的程式碼中的註解，說明自訂程式碼應提供的項目。
 
--   撰寫您自己的文字範本，以產生應用程式特定的程式碼。 您可以使用包含檔案，以共用許多專案通用的範本組件，也可以建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本，以設定透過您自己的檔案結構初始化的專案。
+-   撰寫您自己的文字範本，以產生應用程式特定的程式碼。 您可以使用包含共用通用於許多專案中，範本組件的檔案，而且您可以建立 Visual Studio 專案範本，以設定以您自己的檔案結構初始化的專案。
 
 ## <a name="generated-files-in-dsl"></a>在 DSL 中產生的檔案
  下列產生的檔案會出現在**Dsl**專案。
@@ -185,10 +185,10 @@ ms.locfileid: "39567209"
 
  透過將項目群組原型安裝到項目工具中，來設定工具箱。 當使用者執行工具時，會將這些原型的複本與目標項目合併。
 
- 您可以覆寫 `CreateElementPrototype()` 定義工具箱項目，以建立數個物件的群組。 例如，您可以定義項目，來表示內含子元件的物件。 變更程式碼之後，請重設 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體以清除工具箱快取。
+ 您可以覆寫 `CreateElementPrototype()` 定義工具箱項目，以建立數個物件的群組。 例如，您可以定義項目，來表示內含子元件的物件。 變更程式碼之後, 重設以清除工具箱快取的 Visual Studio 的實驗執行個體。
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>在 DslPackage 專案中產生的檔案
- DslPackage 會與 DSL 模型結合為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell，以管理視窗、工具箱和功能表命令。 大多數的類別是雙衍生類別，因此您可以覆寫類別的任何方法。
+ DslPackage 會與 DSL 模型結合至 Visual Studio shell 中，管理視窗、 工具箱和功能表命令。 大多數的類別是雙衍生類別，因此您可以覆寫類別的任何方法。
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- 具現化 `DocData` 和 `DocView`。 這個檔案執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在啟動您的 DSL 封裝時用於開啟編輯器的標準介面。 Package.cs 中的 `ProvideEditorFactory` 屬性會參考這個檔案。
+ 具現化 `DocData` 和 `DocView`。 它可滿足的 Visual Studio 會使用您的 DSL 封裝啟動時開啟編輯器的標準介面。 Package.cs 中的 `ProvideEditorFactory` 屬性會參考這個檔案。
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 這個檔案定義 DSL 與 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的整合方式。 封裝類別上的屬性可將 DSL 註冊為具有您的副檔名之檔案的處理常式；定義其工具箱；以及定義如何開啟新視窗。 將第一個 DSL 載入至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 執行個體時，會呼叫 Initialize() 方法一次。
+ 此檔案定義 DSL 如何整合到 Visual Studio。 封裝類別上的屬性可將 DSL 註冊為具有您的副檔名之檔案的處理常式；定義其工具箱；以及定義如何開啟新視窗。 當第一個 DSL 載入至 Visual Studio 執行個體的一次時，會呼叫 initialize （） 方法。
 
  `Source.extension.vsixmanifest`
 

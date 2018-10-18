@@ -9,12 +9,12 @@ description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281026"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283570"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -54,7 +54,7 @@ ms.locfileid: "36281026"
 
 Visual Studio Professional (MPN) 訂閱者也可以下載並使用免費的軟體進行開發，包括 SQL Server Developer Edition。
 
-Visual Studio Professional (MPN) 訂用帳戶不包括 VSTS 權益、每月 Azure 點數、技術支援、訓練，或 Visual Studio 訂用帳戶提供之市售其他訂閱者權益。
+Visual Studio Professional (MPN) 訂用帳戶不包括 Azure DevOps Services 權益、每月 Azure 點數、技術支援、訓練，或 Visual Studio 訂用帳戶提供的市售其他訂閱者權益。
 
 ## <a name="internal-use-only-restriction"></a>僅供內部使用限制
 MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用。 這適用於個別 Visual Studio 訂閱者運用提供的軟體，以及整體的 MPN 軟體授權權益。
@@ -69,5 +69,4 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 
 - [MPN 程式系統管理員指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包括如何將 Visual Studio 訂用帳戶指派給 MPN 員工的說明。
 - [將 Visual Studio 訂用帳戶指派給 MPN 員工](manage-mpn-subscriptions.md)
-- 
-  [使用條款](http://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
+- [使用條款](http://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。

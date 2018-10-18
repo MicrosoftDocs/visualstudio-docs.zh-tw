@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279852"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859779"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
@@ -61,7 +61,7 @@ ms.locfileid: "44279852"
 
 1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
 2.  將需求工作項目連結至模型中的一個或多個使用案例。
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  從測試的觀點，需求模型可以視為測試的縮寫。 因此，務必維護測試與整個專案中模型之間的關聯性。
 
-##  <a name="Attaching"></a> 將測試案例附加至模型項目
+## <a name="Attaching"></a> 將測試案例附加至模型項目
  如果您的專案使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，則可以將測試連結至模型中的項目。 這可讓您快速找出需求中變更所影響的測試，並協助您追蹤已實現需求的範圍。
 
  您可以將測試連結至所有類型的項目。 以下是一些範例：
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
 2.  將需求工作項目連結至模型中的一個或多個項目。
 

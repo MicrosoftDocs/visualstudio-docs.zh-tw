@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567337"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859220"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
 交易確認至存放區所做的變更會被視為一個群組。 分組的變更可以認可或回復，當做單一單位。
 
- 每當您的程式碼可修改、 新增，或刪除的存放區中的任何項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK，它必須在交易內進行。 必須有使用中的執行個體<xref:Microsoft.VisualStudio.Modeling.Transaction>變更發生時，以存放區相關聯。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。
+ 每當您的程式碼會修改、 新增，或刪除 Visual Studio Visualization and Modeling SDK 中的存放區中的任何項目，它必須在交易內進行。 必須有使用中的執行個體<xref:Microsoft.VisualStudio.Modeling.Transaction>變更發生時，以存放區相關聯。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。
 
  交易的機制，可協助您避免不一致的狀態。 如果在交易期間發生錯誤，會回復所有變更。 如果使用者執行復原 命令，每個新的交易將會被視為單一步驟。 使用者無法復原最近的變更，部份，除非您將它們明確放在個別交易中。
 

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283190"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858702"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 建立 code map 以視覺方式追蹤呼叫堆疊，當您偵錯。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
@@ -66,7 +66,7 @@ ms.locfileid: "36283190"
 
  如需命令和使用 code map 時，您可以使用的動作的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
-##  <a name="MapStack"></a> 對應呼叫堆疊
+## <a name="MapStack"></a> 對應呼叫堆疊
 
 1.  開始偵錯。 (鍵盤： **F5**)
 
@@ -80,17 +80,17 @@ ms.locfileid: "36283190"
 
      當您繼續偵錯時，對應會自動更新。 請參閱[以下一個呼叫堆疊更新對應圖](#UpdateMap)。
 
-##  <a name="MakeNotes"></a> 附註解的程式碼
+## <a name="MakeNotes"></a> 附註解的程式碼
  新增註解，以追蹤程式碼中的情況。 若要加入新的一行的註解，請按**Shift + Return**。
 
  ![為 Code Map 上的堆疊呼叫加入註解](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> 下一個呼叫堆疊更新對應圖
+## <a name="UpdateMap"></a> 下一個呼叫堆疊更新對應圖
  執行應用程式到下一個中斷點或逐步執行函式。 對應圖中就會加入新的呼叫堆疊。
 
  ![使用下一個堆疊呼叫來更新 Code Map](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> 將相關程式碼加入至對應
+## <a name="AddRelatedCode"></a> 將相關程式碼加入至對應
  現在您已經有對應-什麼接下來？ 如果您正在使用 C# 或 Visual Basic 中，新增項目，例如欄位、 屬性和其他方法，來追蹤程式碼中的情況。
 
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤： 選取的方法，在地圖，然後按**F12**)
@@ -114,7 +114,7 @@ ms.locfileid: "36283190"
 
  ![堆疊呼叫 Code Map 上使用欄位的方法](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> 使用地圖尋找 bug
+## <a name="FindBugs"></a> 使用地圖尋找 bug
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖程式中的 bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。
 
  因此您在 `clear`、`undo` 和 `Repaint` 方法中設定中斷點、開始偵錯，並建置一個如下所示的對應圖：
@@ -127,7 +127,7 @@ ms.locfileid: "36283190"
 
  ![為 Code Map 上的堆疊呼叫新增方法呼叫](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> 問與答
+## <a name="QA"></a> 問與答
 
 -   **並非所有的呼叫會顯示在地圖上。為什麼？**
 
@@ -159,7 +159,7 @@ ms.locfileid: "36283190"
 
 -   **可以與其他人共用對應嗎？**
 
-     您可以匯出對應圖，傳送給其他人 (如果您有 Microsoft Outlook)，也可以將它儲存到方案中，以便將它簽入 Team Foundation 版本控制。
+     您可以將對應匯出，如果您有 Microsoft Outlook，或將它儲存到您的解決方案，因此您可以將它簽入原始檔控制傳送給其他人。
 
      ![與其他人共用堆疊呼叫 Code Map](../debugger/media/debuggermap_sharewithothers.png)
 

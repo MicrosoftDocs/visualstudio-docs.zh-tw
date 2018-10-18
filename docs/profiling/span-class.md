@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68565e7c5f3a0b7f4aff09ccc3b3223d562d822
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668303"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。  
@@ -42,9 +43,9 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>需求  
- **標頭：** cvmarkersobj.h  
+ **標頭：***cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)

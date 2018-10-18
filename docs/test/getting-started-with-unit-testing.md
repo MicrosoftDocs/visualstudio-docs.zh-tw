@@ -1,22 +1,22 @@
 ---
-title: Visual Studio 中的單元測試使用者入門
+title: 開始使用單元測試
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469063"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370803"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -103,9 +103,7 @@ ms.locfileid: "39469063"
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
-若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。 若要了解做法，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
-
-![使用程式碼涵蓋範圍來決定所測試的程式碼數量](media/codecoverage.png)
+若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範錯誤 (bug)，您的測試應該要使用大部分的程式碼。 若要了解做法，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 ## <a name="use-a-different-unit-test-framework"></a>使用不同的單元測試架構
 

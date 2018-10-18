@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668316"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
-本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供通用 Windows App 使用。  
+本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。  
   
  UI 回應性分析工具可協助您隔離問題，如 UI 回應性問題，或者平台的副作用，發生時通常伴有下列徵兆：  
   
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/14/2018
   
 -   視覺效果更新比預期較不頻繁。 如果 UI 執行緒太忙碌而無法保持順暢的畫面播放速率，就會發生這種情況。 例如，如果 UI 執行緒忙碌，畫面格可能會被捨棄。 某些非 UI 執行緒工作也可能會限制如網路要求、影像解碼和繪製的視覺效果更新頻率 (並非所有繪製都是在 UI 執行緒上執行)。  
   
-##  <a name="RunningProfiler"></a> 執行 HTML UI 回應性工具  
+## <a name="run-the-html-ui-responsiveness-tool"></a>執行 HTML UI 回應性工具  
  在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用 HTML UI 回應性工具。  
   
 1.  如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇部署目標，例如 [本機電腦] 或 [裝置]。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/14/2018
   
 6.  若要停止分析應用程式並檢視分析工具蒐集的資料，請選擇 [ **停止收集**]。  
   
-##  <a name="IsolateAnIssue"></a> 找出問題  
+## <a name="isolate-an-issue"></a>找出問題  
  下列章節提供可協助您找出效能問題的建議。 如需如何利用範例效能測試應用程式來找出效能問題並加以修正的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
   
 ###  <a name="Workflow"></a> 隔絕 UI 回應性問題  
@@ -75,11 +76,11 @@ ms.lasthandoff: 05/14/2018
   
 1.  在 Visual Studio 中開啟應用程式。  
   
-2.  測試您的應用程式是否存在 UI 回應性問題 (按 Ctrl+F5 即可啟動您的應用程式而不偵錯)。  
+2.  測試您的應用程式是否存在 UI 回應性問題 (按 **Ctrl**+**F5** 即可啟動您的應用程式而不偵錯)。  
   
      如果您發現問題，請繼續測試以嘗試縮小發生問題的時間範圍，或者嘗試找出造成行為的觸發程序。  
   
-3.  切換至 Visual Studio (按 Alt+Tab)，然後停止您的應用程式 (Shift+F5)。  
+3.  切換至 Visual Studio (按 **Alt**+**Tab**)，然後停止您的應用程式 (**Shift**+**F5**)。  
   
 4.  選擇性地將使用者標記加入程式碼，請使用 [標記程式碼以供分析](#ProfileMark)。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/14/2018
   
     -   應用程式載入的頁面或 URL 資源，例如 HTML 剖析中事件的指令碼評估。 所提供的檔案名稱或資源。  
   
-    -   下列項目中指定的其他事件： [Profiler event reference](#ProfilerEvents).  
+    -   下列項目中指定的其他事件： [Profiler event reference](#profiler-event-reference).  
   
     > [!TIP]
     >  分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![時間軸詳細資料檢視中的使用者測量事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> 分析資料  
+## <a name="analyze-data"></a>分析資料  
  下列章節提供有助於解譯出現在分析工具的資料相關資訊。  
   
 ###  <a name="Ruler"></a> 檢視診斷工作階段時間軸  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   巡覽事件，當巡覽至其他頁面時發生。 事件的工具提示會顯示目的頁面 URL。  
   
 ###  <a name="CPUUtilization"></a> 檢視 CPU 使用率  
- CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[ **正在載入**]、[ **正在處理指令碼**]、記憶體回收 ([**GC**])、[ **樣式**]、[ **正在轉譯**] 和 [ **影像解碼中**]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#ProfilerEvents) 。  
+ CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[ **正在載入**]、[ **正在處理指令碼**]、記憶體回收 ([**GC**])、[ **樣式**]、[ **正在轉譯**] 和 [ **影像解碼中**]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#profiler-event-reference) 。  
   
  CPU 使用率圖形顯示花在所有應用程式執行緒的時間，將一個或多個 CPU 的 CPU 使用率值合併為單一的百分比值。 當多個 CPU 正在使用中時，CPU 使用率值可能會超過 100%。  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  如果您選取 CPU 使用率和視覺輸送量 (FPS) 圖表中時間軸的一部分，時間軸詳細資料圖表中會顯示所選時段的詳細資訊。  
   
- 時間軸詳細資料圖形的事件會以色彩標示，表示 CPU 使用率圖形中顯示的相同工作分類。 如需事件分類及特定事件的相關資訊，請參閱本主題中的 [Profiler event reference](#ProfilerEvents) 。  
+ 時間軸詳細資料圖形的事件會以色彩標示，表示 CPU 使用率圖形中顯示的相同工作分類。 如需事件分類及特定事件的相關資訊，請參閱本主題中的 [Profiler event reference](#profiler-event-reference) 。  
   
  使用時間軸詳細資料圖形：  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![依畫面格分組的時間軸事件](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> 儲存診斷工作階段  
+## <a name="save-a-diagnostic-session"></a>儲存診斷工作階段  
  在 Visual Studio 中，當您關閉與診斷工作階段相關聯的索引標籤時，可以儲存診斷工作階段。 已儲存的工作階段可以在稍後重新開啟。  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  在 UI 回應性分析工具中，分析工具事件已分類和色彩標示。 這些是事件分類：  
   
 -   **載入中：** 指出當應用程式第一次載入時，花在擷取應用程式資源和剖析 HTML 和 CSS 的時間。 這可能包括網路要求。  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Frame|N/A|對 DOM 所進行的視覺效果變更，會需要重新繪製該頁面上所有受影響的部分。 這是工具產生的事件，可用來分組。|  
 |使用者測量|N/A|已使用 `performance.measure` 方法來測量應用程式專屬的案例。 這是工具產生的事件，可用來分析程式碼。|  
   
-##  <a name="Tips"></a> 其他資訊  
+## <a name="additional-information"></a>其他資訊  
   
 -   請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
@@ -356,5 +357,5 @@ if (performance.mark && performance.measure) {
   
 -   如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
-## <a name="see-also"></a>請參閱  
- [分析工具](../profiling/profiling-tools.md)
+## <a name="see-also"></a>另請參閱  
+ [初步認識分析工具](../profiling/profiling-feature-tour.md)

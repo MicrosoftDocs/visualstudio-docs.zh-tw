@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2821e785d0caf504cd64eb90a6538b1a69e9a26
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978650"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612658"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -46,7 +46,7 @@ ms.locfileid: "38978650"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET Framework 版本。<br />有效值為 Framework35、Framework40、Framework45 和 FrameworkUap10。<br />如果目標 Framework 指定為 **Framework35**，則會在 CLR 4.0 的「相容性模式」中執行測試。<br />範例：`/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[&#124;<Expression\>]。<br />範例：`/TestCaseFilter:"Priority=1"`<br />範例：`/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用方式資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發行到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<team project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<team project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發行到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|
@@ -54,6 +54,10 @@ ms.locfileid: "38978650"
 |**/ListSettingsProviders**|列出已安裝的測試設定提供者。|
 |**/Blame**|在執行測試時追蹤測試，如果測試主機處理序損毀，則會以其執行順序發出測試名稱，最多包含損毀時執行的特定測試。 此輸出可讓您更輕鬆地找出有問題的測試，並進一步診斷。 [詳細資訊](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)。|
 |**/Diag:[*file name*]**|將診斷追蹤記錄寫入至指定的檔案。|
+|**/ResultsDirectory:[*path*]**|如果測試結果目錄不存在，則會在指定的路徑中建立該目錄。<br />範例：`/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|父處理序的處理序識別碼，該父處理序負責啟動目前處理序。|
+|**/Port:[*port*]**|通訊端連線和接收事件訊息的連接埠。|
+|**/Collect:[*dataCollector friendlyName*]**|測試回合啟用資料收集器。 [詳細資訊](https://aka.ms/vstest-collect)。|
 
 > [!TIP]
 > 選項和值不區分大小寫。

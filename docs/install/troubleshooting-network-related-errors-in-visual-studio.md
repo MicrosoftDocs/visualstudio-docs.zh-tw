@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138387"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281087"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -73,7 +73,7 @@ ms.locfileid: "43138387"
 
 ## <a name="error-the-underlying-connection-was-closed"></a>錯誤：「基礎連線已關閉」
 
-如果您在使用防火牆的私人網路中使用 Visual Studio，Visual Studio 可能無法連線到某些網路資源。 這些資源可能包括用於登入和授權的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服務。 如果 Visual Studio 無法連線到這些資源的其中一項，您可能會看到以下錯誤訊息：
+如果您在使用防火牆的私人網路中使用 Visual Studio，Visual Studio 可能無法連線到某些網路資源。 這些資源可能包括用於登入和授權的 Azure DevOps Services、NuGet 和 Azure 服務。 如果 Visual Studio 無法連線到這些資源的其中一項，您可能會看到以下錯誤訊息：
 
   **基礎連線已關閉：傳送時發生未預期的錯誤**
 
@@ -103,7 +103,7 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 
 - cdn.vsassets.io (主機內容傳遞網路 (又稱 CDN) 內容)
 
-- &#42;.gallerycdn.vsassets.io (裝載 VSTS 擴充功能)
+- &#42;.gallerycdn.vsassets.io (裝載 Azure DevOps Services 延伸模組)
 
 - static2.sharepointonline.com (裝載 Visual Studio 用於 Office UI 網狀架構 套件中的資源，例如字型)
 

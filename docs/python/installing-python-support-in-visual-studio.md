@@ -1,7 +1,7 @@
 ---
 title: 安裝 Python 支援
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626734"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168366"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -25,8 +25,6 @@ ms.locfileid: "42626734"
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
-
-若是 Visual Studio 2015 和更舊版本，也需要另外安裝您所選的 [Python 解譯器](installing-python-interpreters.md) (Python 3.5 和更舊版本；不支援 3.6+，並會產生**不支援的 Python 3.6 版**這樣的訊息)。 相同的頁面也會包含將現有 Python 解譯器新增至 Visual Studio 2017 的指示。
 
 在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 **Alt**+**I** 並輸入 `2+2`開啟 [Python 互動式] 視窗。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
 
@@ -96,7 +94,7 @@ ms.locfileid: "42626734"
 
     ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)
 
-1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
+1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 Visual Studio 2015 僅支援 Python 3.5 和更早版本，較新的版本會產生類似「不支援的 Python 3.6 版」的訊息。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 和更早版本
 

@@ -1,26 +1,26 @@
 ---
-title: Visual Studio 中的開發人員測試工具
+title: 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302926"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370636"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
-維護單元測試的程式碼健康狀態。 Visual Studio 提供各種功能強大的工具和技術，供開發人員在測試應用程式時使用：
+維護單元測試的程式碼健康狀態。 Visual Studio 提供各種功能強大的工具和技術，供開發人員在測試應用程式時使用。
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>使用 IntelliTest 避免迴歸並達到程式碼涵蓋範圍
 
@@ -38,16 +38,14 @@ ms.locfileid: "36302926"
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>使用自動程式碼 UI 和 Selenium 執行使用者介面測試
 
-使用最佳品種或社群核准的 UI 測試來測試使用者介面 (UI)。
-自動程式碼 UI 測試提供一種方式，可建立完全自動化的測試來驗證您應用程式之使用者介面的功能和行為。
-它們可以跨各種技術 (包括以 XAML 為基礎的 UWP 應用程式、瀏覽器應用程式和 SharePoint 應用程式) 將 UI 測試自動化。
+使用最佳品種或社群核准的 UI 測試來測試使用者介面 (UI)。 自動程式碼 UI 測試提供一種方式，可建立完全自動化的測試來驗證您應用程式之使用者介面的功能和行為。 它們可以跨各種技術 (包括以 XAML 為基礎的 UWP 應用程式、瀏覽器應用程式和 SharePoint 應用程式) 將 UI 測試自動化。
 
 不論您選擇最佳品種自動程式化 UI 測試還是 Selenium 的一般瀏覽器 UI 測試，Visual Studio 都會提供您需要的所有工具。
 
 ![使用自動程式化 UI 執行 UI 測試](media/devtest-codeduitest.png)
 
 * [使用 UI 自動化來測試您的程式碼](use-ui-automation-to-test-your-code.md)
-* [開始建立、編輯和維護自動程式碼 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [開始建立、編輯和維護自動程式化 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [使用自動程式化 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)
 * [使用自動程式化 UI 測試來測試 SharePoint 應用程式](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction to coded UI tests with Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx) (Visual Studio Enterprise 的自動程式化 UI 測試簡介 (實驗室))
@@ -60,21 +58,19 @@ ms.locfileid: "36302926"
 
 當您使用 [測試總管] 執行測試方法程式時，可以選擇程式碼涵蓋範圍。 結果表會顯示程式碼在每個組件、類別和方法中執行的百分比。 此外，原始檔編輯器會顯示已測試的程式碼。
 
-![使用 Visual Studio Team Services 和 Team Foundation Server 測試](media/devtest-codecoverage.png)
-
 * [使用程式碼涵蓋範圍來決定所測試的程式碼數量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Unit testing, code coverage and code clone analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Visual Studio 的單元測試、程式碼涵蓋範圍和程式碼複製品分析 (實驗室))
 * [自訂程式碼涵蓋範圍分析](customizing-code-coverage-analysis.md)
 
-## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>使用高效能測試總管執行任何架構的單元測試
+## <a name="test-explorer"></a>測試總管
 
-測試總管可協助開發人員建立、管理和充分發揮單元測試的優點。
+[測試總管] 可協助開發人員建立、管理及執行單元測試。
 
 ![Visual Studio 測試總管](media/devtest-testexplorer.png)
 
 * [開始使用單元測試](unit-test-your-code.md)
 * [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)
-* [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
+* [測試清單編輯器常見問題集](test-explorer-faq.md)
 * [安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)
 
 Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力廠商單元測試配接器的機門。 此外，程式碼複製功能透過協助您識別語意類似的程式碼區塊而成為交付高品質軟體的必要項目，而這些區塊可能適用於一般 Bug 修正或重構。
@@ -87,3 +83,4 @@ Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力
 * [Speed up unit test execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (加速 Team Foundation Server 中的單元測試執行)
 * [Parallel and context sensitive unit test execution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/) (平行和內容區分的單元測試執行)
 * [Unit testing, code coverage and code clone analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Visual Studio 的單元測試、程式碼涵蓋範圍和程式碼複製品分析 (實驗室))
+* [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)

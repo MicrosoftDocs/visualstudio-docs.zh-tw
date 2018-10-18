@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178458"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859623"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
-下列一般指導方針可能很有用，如果您要產生程式碼或其他應用程式資源中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它們不被固定的規則。
+下列一般指導方針可能會有幫助，如果您要在 Visual Studio 中產生程式碼或其他應用程式資源。 它們不被固定的規則。
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>設計階段 T4 範本的指導方針
- 設計階段 T4 範本所產生的程式碼的範本程式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在設計階段的專案。 如需詳細資訊，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+ 設計階段 T4 範本是在設計階段產生程式碼在 Visual Studio 專案中的範本。 如需詳細資訊，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
  產生應用程式的變動的層面。
 產生程式碼是最適合用於專案期間，可能會變更，或將應用程式的不同版本之間變更的應用程式的這些層面。 好讓您可以更輕鬆地判斷何者得到產生，則您可以分開的更多的非變異層面這些變動層面。 例如，如果您的應用程式提供的一個網站，個別服務定義一個頁面的瀏覽路徑到另一個邏輯從函式的標準分頁。
 
  將編碼的一或多個來源模型中的變動層面。
-模型是檔案或以取得要產生的程式碼的變動組件的特定值的每個範本讀取的資料庫。 模型可以是資料庫、 您自己的設計、 圖表或定義域專屬語言的 XML 檔案。 通常，一個模型用來產生許多檔案中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 每個檔案是從另一個範本產生。
+模型是檔案或以取得要產生的程式碼的變動組件的特定值的每個範本讀取的資料庫。 模型可以是資料庫、 您自己的設計、 圖表或定義域專屬語言的 XML 檔案。 通常，一個模型用來在 Visual Studio 專案中產生許多檔案。 每個檔案是從另一個範本產生。
 
  您可以使用多個模型專案中。 例如，您可以定義網頁和頁面的版面配置的不同模型之間的巡覽的模型。
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>所有 T4 範本的指導方針
  從文字產生的個別資料收集，請盡量避免混用計算和文字區塊。 在每個文字範本中，使用第一個\<# 程式碼區塊 #> 設定變數，並執行複雜的計算。 從第一個文字區塊的範本或第一個值為\<#+ 類別功能區塊 #>、 避免長的運算式，以及避免迴圈及條件，除非它們包含文字區塊。 這種做法可讓範本更容易閱讀及維護。
 
- 不用`.tt`include 檔案使用不同的檔案名稱副檔名例如`.ttinclude`include 檔。 使用`.tt`只針對您想要的檔案處理，執行階段或設計階段文字範本。 在某些情況下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]辨識`.tt`檔案，並會自動設定其內容以供處理。
+ 不用`.tt`include 檔案使用不同的檔案名稱副檔名例如`.ttinclude`include 檔。 使用`.tt`只針對您想要的檔案處理，執行階段或設計階段文字範本。 在某些情況下，Visual Studio 可以辨識`.tt`檔案，並會自動設定其內容以供處理。
 
  以固定的原型中啟動每個範本。
 撰寫您要產生，請確定它是正確的程式碼或文字的範例。 然後在變更其副檔名為.tt 和以累加方式插入修改內容，請閱讀此模型的程式碼。

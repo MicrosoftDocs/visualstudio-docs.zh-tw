@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6ccdc84a2db30aab2352d65bd716936cb522e6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7fbc3fa747171892066705ddc32a114cb34e1b02
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547590"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858171"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：以 AssemblyVersionAttribute 標記組件
 
@@ -33,7 +33,7 @@ ms.locfileid: "45547590"
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -48,11 +48,11 @@ ms.locfileid: "45547590"
 
 - 版本號碼
 
-- 文化特性
+- culture
 
 - 強式名稱組件的公開金鑰。
 
-[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 會使用版本號碼以便唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
+.NET Framework 使用的版本號碼，來唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入版本號碼組件使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>屬性。 請參閱下列範例。

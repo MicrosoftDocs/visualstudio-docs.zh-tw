@@ -1,7 +1,7 @@
 ---
 title: 字串視覺化檢視中檢視字串 |Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2017
+ms.date: 07/11/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,47 +22,48 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6e4519a85659b36e5cf6baebaadd1d1c626f1a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274309"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字串視覺化檢視中檢視字串
-當您偵錯時，您可以開啟字串視覺化檢視，以檢視字串太長，無法在資料提示或偵錯工具視窗中檢視。 在許多情況下，視覺化檢視，也可協助您識別格式不正確的字串。
 
-標準的內建字串視覺化檢視會包含純文字、 XML、 HTML 和 JSON。 Windows 像一些其他類型設定，例如偵錯工具中顯示的 WPF 物件**自動變數** 視窗中，您也可以開啟視覺化檢視。
+雖然您正在偵錯在 Visual Studio 中，您可以使用內建字串視覺化檢視中檢視字串。 字串視覺化檢視會顯示資料提示或偵錯工具視窗太長的字串。 它也可協助您識別格式不正確的字串。
+
+內建字串視覺化檢視包含純文字、 XML、 HTML 和 JSON 選項。 您也可以從開啟幾個其他類型，例如 WPF 物件視覺化檢視**自動變數**或其他偵錯工具視窗。
 
 ## <a name="open-a-string-visualizer"></a>開啟字串視覺化檢視
 
-若要檢視純文字、 XML、 HTML 或 JSON 字串，請按一下 放大鏡圖示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")將滑鼠移到包含字串值的變數。 您必須先暫停偵錯工具若要查看的放大鏡圖示。
+若要開啟字串視覺化檢視，您必須在偵錯期間將其暫停。 將滑鼠停在具有純文字、 XML、 HTML 或 JSON 字串值，然後選取放大鏡圖示的變數![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。
 
-![開啟字串視覺化檢視](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
+![開啟字串視覺化檢視](../debugger/media/dbg-tips-string-visualizers.png "開啟字串視覺化檢視")
 
-## <a name="view-string-data"></a>檢視字串資料
+## <a name="view-string-visualizer-data"></a>檢視字串視覺化檢視資料
 
-**運算式**字串視覺化檢視中的欄位會在偵錯工具中顯示 「 目前的變數或運算式您暫留。
+在字串視覺化檢視視窗中，**運算式**欄位會顯示變數或運算式，您要將滑鼠停留，而**值**欄位顯示的字串值。 
 
-**值**欄位顯示的字串值。 文字視覺化檢視會顯示純文字。
+空白**值**表示所選的視覺化檢視無法辨識字串。 例如， **XML 視覺化檢視**會顯示空白**值**沒有的 XML 標記的文字字串或 JSON 字串。 
 
-空白**值**指出特定的視覺化檢視無法辨識字串類型。 例如，XML 視覺化檢視會顯示空白**值**適用於簡單的文字字串 （使用任何 XML 標記） 或 JSON 格式化字串。 如果您需要為無法辨識字串在視覺化檢視中，使用 文字視覺化檢視。
+若要檢視所選的視覺化檢視無法辨識的字串，請選擇**文字視覺化檢視**。 **文字視覺化檢視**顯示純文字。
 
 ### <a name="view-json-string-data"></a>檢視 JSON 字串資料
 
-語式正確的 JSON 字串會出現類似下圖中的 JSON 視覺化檢視。 格式不正確的 JSON 可能會顯示錯誤圖示 （或如果無法辨識的空白）。 如果您看到錯誤圖示時，複製並將 JSON 字串貼到 JSON linting 工具這類[JSLint](https://www.jslint.com/)找出 JSON 時發生錯誤。
+語式正確的 JSON 字串看起來會像下圖中的 JSON 視覺化檢視。 格式不正確的 JSON 可能會顯示錯誤圖示 （或如果無法辨識的空白）。 若要識別 JSON 錯誤，將複製並貼在字串 JSON linting 工具這類[JSLint](https://www.jslint.com/)。
 
 ![JSON 字串視覺化檢視](../debugger/media/dbg-tips-string-visualizer-json.png "JSON 字串視覺化檢視")
 
 ### <a name="view-xml-string-data"></a>檢視 XML 的字串資料
 
-語式正確的 XML 字串會出現類似下圖中 XML 視覺化檢視。 格式不正確的 XML 可能會顯示不含 XML 標記 （或如果無法辨識的空白）。
+語式正確的 XML 字串看起來會像下圖中 XML 視覺化檢視。 如果無法辨識的格式不正確的 XML 可能會顯示不含 XML 標記或空白。
 
 ![XML 字串視覺化檢視](../debugger/media/dbg-string-visualizers-xml.png "XML 字串視覺化檢視")
 
 ### <a name="view-html-string-data"></a>檢視 HTML 字串資料
 
-語式正確的 HTML 字串看起來會像您會看到字串，是否要呈現在瀏覽器中，如下圖所示的檢視。 格式不正確的 HTML 可能會顯示為純文字。
+出現的語式正確的 HTML 字串一樣呈現在瀏覽器中，如下圖所示。 格式不正確的 HTML 可能會顯示為純文字。
 
 ![HTML 字串視覺化檢視](../debugger/media/dbg-string-visualizers-html.png "HTML 字串視覺化檢視")
 

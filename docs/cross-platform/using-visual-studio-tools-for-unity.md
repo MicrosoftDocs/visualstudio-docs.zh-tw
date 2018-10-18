@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251714"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496060"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -94,14 +94,6 @@ ms.locfileid: "39251714"
 - 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]。 鍵盤快速鍵：**Alt**+**Shift**+**E**
 
      ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity 錯誤清單
-
- 您可以在 Visual Studio 連接到 Unity 執行個體時，於 Visual Studio 中檢視來自 Unity 主控台的訊息。 其中包括來自 Unity 的錯誤和警告。 這些訊息會顯示在 Visual Studio 的 [錯誤清單] 視窗中；來自 Unity 的錯誤訊息會顯示在 [錯誤] 索引標籤上，警告訊息會顯示在 [警告] 索引標籤上，而其他訊息 (例如使用 Debug.Log Unity API 傳送的訊息) 則會顯示在 [訊息] 索引標籤上。
-
- 若要查看訊息，您的 Unity 專案必須連接到 Visual Studio，如 [Unity 偵錯](#unity-debugging)一節所述。
-
- 如果您不想要在 Visual Studio 的 [錯誤清單] 視窗中看到來自 Unity 的錯誤、警告和訊息，您可以在 [組態] 功能表中予以停用。
 
 ## <a name="unity-debugging"></a>Unity 偵錯
 
@@ -188,7 +180,7 @@ ms.locfileid: "39251714"
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
-1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)。
+1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
 
      ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -217,6 +209,6 @@ ms.locfileid: "39251714"
 |開啟 MonoBehavior 精靈|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |開啟 Unity Project Explorer|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
 |存取 Unity 文件|**Ctrl**+**Alt**+**M、Ctrl**+**H**|**Help.UnityAPIReference**|
-|附加至 Unity 偵錯工具 (播放器或編輯器)|***無預設值***|**Debug.AttachUnityDebugger**|
+|附加至 Unity 偵錯工具 (播放器或編輯器)|**無預設值**|**Debug.AttachUnityDebugger**|
 
  如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

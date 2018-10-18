@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567360"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858870"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 中，您可以使用自訂程式碼，為產生的設計工具設定背景影像。
+在 Visual Studio Visualization and Modeling SDK，您可以使用自訂程式碼產生的設計工具設定背景影像。
 
 ## <a name="setting-the-background-image"></a>設定背景影像
 

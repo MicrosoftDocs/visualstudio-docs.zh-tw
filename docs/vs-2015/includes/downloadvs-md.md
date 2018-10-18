@@ -1,0 +1,1 @@
+[下載 Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=524433) 或 [比較 Visual Studio 版本](https://www.visualstudio.com/vs-2015-product-editions)

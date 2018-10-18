@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 1
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識。
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586400"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029062"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -36,7 +36,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 在這些步驟的整個過程中，您會建立包含三個個別專案的單一 Visual Studio 解決方案。 您會使用 Visual Studio 隨附的不同 Flask 專案範本來建立專案。 透過將專案保留在同一個解決方案中，可讓您輕鬆地來回切換，比較不同的檔案。
 
 > [!Note]
-> 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?context=visualstudio/python/default)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
+> 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -95,7 +95,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
     ![用於推入至現有遠端存放庫的 [Team Explorer] 視窗](media/flask/step01-push-to-github.png)
 
-    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Visual Studio Team Services] 選項可讓您直接在 Visual Studio 內建立存放庫。
+    如果您尚無現有存放庫，[發佈至 GitHub] 與 [推送至 Azure DevOps] 選項可讓您直接在 Visual Studio 內建立存放庫。
 
 1. 隨著您逐步完成本教學課程，請建立定期使用 Visual Studio 中的控制項來認可並推送變更的習慣。 本教學課程會合適的時機點提醒您。
 

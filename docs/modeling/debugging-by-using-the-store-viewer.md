@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567060"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858648"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 使用儲存的檢視器 中，您可以檢查的狀態*儲存*供[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 儲存的檢視器會顯示所有的網域模型項目處於為特定的存放區，以及項目屬性和項目之間的連結。
 
 ## <a name="opening-store-viewer"></a>開啟存放區檢視器
- 如果您正在進行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]實驗性組建，停止於中斷點的程式碼執行個體存放區包含模型資訊的位置。 然後，輸入下列命令中的，開啟存放區檢視**Immediate**視窗：
+ 當您在 Visual Studio 的實驗組建中，停止於中斷點的程式碼存放區的執行個體包含模型資訊的位置。 然後，輸入下列命令中的，開啟存放區檢視**Immediate**視窗：
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

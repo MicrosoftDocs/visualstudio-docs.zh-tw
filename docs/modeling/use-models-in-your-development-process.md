@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623829"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859389"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
@@ -48,7 +48,7 @@ ms.locfileid: "42623829"
 
 ## <a name="use-models-with-other-artifacts"></a>使用模型搭配其他成品
 
-模型本身並非需求規格或架構。 雖然它是用來針對這些事情更清楚地表達某些層面的工具，不過並無法表達軟體設計期間所需的所有概念。 因此，您應該搭配其他通訊方式使用模型，例如 OneNote 頁面或段落、Microsoft Office 文件、[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作項目或專案會議室牆上的自黏便箋。 除了最後一個項目以外，上述所有物件類型都可以連結至該模型的項目部分。
+模型本身並非需求規格或架構。 雖然它是用來針對這些事情更清楚地表達某些層面的工具，不過並無法表達軟體設計期間所需的所有概念。 模型因此應該搭配其他的通訊，例如 OneNote 頁面或段落、 Microsoft Office 文件、 工作項目，在 Team Foundation 中或專案會議室牆上的自黏便箋的方式。 除了最後一個項目以外，上述所有物件類型都可以連結至該模型的項目部分。
 
 通常與模型一起使用的其他規格層面包含下列項目。 根據您的專案規模和樣式，可能會使用其中許多層面，或完全不使用任何層面：
 
@@ -88,7 +88,7 @@ ms.locfileid: "42623829"
 
 - 在每個反覆項目即將結束前，召集需求研討會來詳細定義將於下一個反覆項目中開發的需求或使用者劇本。 邀請可以決定優先順序的使用者和商務專案關係人，以及開發人員和系統測試人員。 提供三個小時來定義 2 週反覆項目的需求。
 
-- 此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出就是反覆項目的待處理項目：也就是，[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的開發工作和 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 中的測試套件之清單。
+- 此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出為反覆項目待辦項目： 也就是在 Team Foundation 和測試套件中的開發工作清單[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]。
 
 - 在此需求研討會中，只在您需要決定此開發工作估計的範圍內討論該設計。 否則，請將討論主題保持在使用者可能會直接體驗的系統行為。 將需求模型與架構模型分開討論。
 
@@ -96,7 +96,7 @@ ms.locfileid: "42623829"
 
 ### <a name="link-model-to-work-items"></a>將模型連結至工作項目
 
-在需求研討會之後，請詳述該需求模型的詳細資料，並且將此模型連結至開發工作。 您可以將 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作項目連結至該模型中的項目，藉以完成此作業。
+在需求研討會之後，請詳述該需求模型的詳細資料，並且將此模型連結至開發工作。 您可以將 Team Foundation 中的工作項目連結至模型中的項目來執行這項操作。
 
 雖然您可以將任何項目連結至工作項目，不過最有用的項目如下所示：
 

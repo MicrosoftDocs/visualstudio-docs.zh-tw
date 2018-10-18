@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552054"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860156"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708：識別項名稱不應該只靠大小寫區別
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -43,7 +43,7 @@ ms.locfileid: "45552054"
  選取 是唯一的它是以不區分大小寫的方式相較於其他識別項的名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 程式庫可能無法使用所有可用的語言中[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 請勿隱藏此規則的警告。 程式庫可能無法使用.NET Framework 中的所有可用語言。
 
 ## <a name="example-of-a-violation"></a>發生違規的範例
  下列範例會示範這項規則的違規情形。

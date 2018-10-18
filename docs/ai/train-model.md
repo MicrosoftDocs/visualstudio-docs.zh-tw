@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379828"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278318"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 
@@ -34,9 +34,9 @@ Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 
 
     ![範例庫](media\train-model\batchai.png)
 
-3. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製儲存機制。
+3. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure DevOps，或是複製存放庫。
 
-    ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media\train-model\team-explorer.png)
+    ![顯示 Azure DevOps 和 GitHub 並複製存放庫的 Team Explorer 視窗](media\train-model\team-explorer.png)
 
 4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
 

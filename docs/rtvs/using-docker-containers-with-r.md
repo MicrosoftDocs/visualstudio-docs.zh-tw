@@ -11,17 +11,18 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667128"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
 
 Visual Studio R 工具 (RTVS) 版本 1.3 以後，與[適用於 Windows 的 Docker](https://www.docker.com/docker-windows) 一同安裝，可支援與 Docker 容器一同使用。
 
-## <a name="creating-a-container"></a>建立容器
+## <a name="create-a-container"></a>建立容器
 
 1. 選取位於 [工作區] 視窗 ([R 工具] > [視窗] > [工作區]) 右邊角落的 [容器] 按鈕。 若您尚未安裝適用於 Windows 的 Docker，視窗會通知您並提供下載連結。 安裝 Docker 可能需要重新啟動電腦。
 
@@ -39,7 +40,7 @@ Visual Studio R 工具 (RTVS) 版本 1.3 以後，與[適用於 Windows 的 Dock
 
     ![顯示已完成容器的 [容器] 視窗](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>連線到容器
+## <a name="connect-to-a-container"></a>連線到容器
 
 1. [工作區] 視窗的 [Local Running Containers] (本機執行容器) 區段會顯示在連接埠 5444 執行 RTVS 精靈的容器。 (請參閱 [Linux 的遠端 R 伺服器](setting-up-remote-r-service-on-linux.md)以取得設定精靈的詳細資料。)
 
@@ -49,7 +50,7 @@ Visual Studio R 工具 (RTVS) 版本 1.3 以後，與[適用於 Windows 的 Dock
 
     ![[工作區] 視窗及為容器開啟的 REPL 視窗](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>使用自訂映像
+## <a name="use-custom-built-images"></a>使用自訂映像
 
 RTVS 會偵測及允許管理使用自訂映像建立的容器，例如下列 Docker 檔案中描述的 microsoft/rtvs 映像。 這裡使用的基礎映像已預先安裝 rtvs-daemon、R 3.4.2，以及常見的 R 套件。 **注意**：請根據您的需要變更此處顯示的使用者名稱及密碼。
 

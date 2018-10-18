@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627283"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548227"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
@@ -118,7 +118,7 @@ Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一
 
 欄位類型的完整清單是 `CharField` (有限文字) `TextField` (無限文字)、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey` 和 `ManyToMany`。 每個欄位都會採用一些屬性，例如 `max_length`。 `blank=True` 屬性表示欄位是選擇性的。`null=true` 表示值是選擇性的。 另外還有一個 `choices` 屬性，它會將值限制為資料值/顯示值 tuple 陣列中旳值。 (請參閱 Django 文件中的[模型欄位參考](https://docs.djangoproject.com/en/2.0/ref/models/fields/))。
 
-您可以使用 [SQLite 瀏覽器](http://sqlitebrowser.org/)此類的工具來檢查專案中的 *db.sqlite3* 檔案，即可確認資料庫倒底儲存什麼樣的內容。 在資料庫中，您會看到外部索引鍵欄位，例如 Choice 模型中的 `poll`，是儲存為 `poll_id`；Django 會自動處理這種對應關係。
+您可以使用 [SQLite 瀏覽器](https://sqlitebrowser.org/)此類的工具來檢查專案中的 *db.sqlite3* 檔案，即可確認資料庫倒底儲存什麼樣的內容。 在資料庫中，您會看到外部索引鍵欄位，例如 Choice 模型中的 `poll`，是儲存為 `poll_id`；Django 會自動處理這種對應關係。
 
 一般來說，使用 Django 操作您的資料庫時，表示您的模型也是被獨佔操作，因此 Django 可以代表您來管理基礎資料庫。
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-要想查看效果，先執行這個應用程式，確定沒有任何投票存在。 接著瀏覽 "/seed" URL，當應用程式返回首頁時，您應該會看到投票了。 同樣地，您可以使用 [SQLite 瀏覽器](http://sqlitebrowser.org/)此類的工具，隨意檢查原始的 *db.sqlite3* 檔案。
+要想查看效果，先執行這個應用程式，確定沒有任何投票存在。 接著瀏覽 "/seed" URL，當應用程式返回首頁時，您應該會看到投票了。 同樣地，您可以使用 [SQLite 瀏覽器](https://sqlitebrowser.org/)此類的工具，隨意檢查原始的 *db.sqlite3* 檔案。
 
 ![自帶種子資料庫的「投票 Django Web 專案」應用程式](media/django/step06-app-with-seeded-database.png)
 
@@ -376,8 +376,8 @@ admin.site.register(Poll, PollAdmin)
 
 - 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來操作 Azure 儲存體服務，例如資料表和 blob。
 
-- 在 Visual Studio Team Services (VSTS) 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 VSTS、GitHub 或其他位置上)，您可以讓 VSTS 自動執行單元測試做為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 VSTS，此外，與監視 App Insights 方案整合，並關閉與 agile 規劃工具的整個週期。 如需詳細資訊，請參閱:
+- 在 Azure Pipelines 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 Azure Repos、GitHub 或其他位置上)，您可以讓 Azure Test Plans 自動執行單元測試作為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps Services 與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具關閉整個週期。 如需詳細資訊，請參閱:
 
-  - [使用 Azure 的 DevOps 專案來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [使用 Azure DevOps Projects來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [使用 Visual Studio Team Services 在 Azure 中進行 Python 程式設計 (影片，11 分鐘 21 秒)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
 

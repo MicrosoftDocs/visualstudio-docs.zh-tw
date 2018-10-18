@@ -1,7 +1,7 @@
 ---
 title: 對遠端 Linux 機器上的 Python 程式碼進行遠端偵錯
 description: 如何使用 Visual Studio 對在遠端 Linux 電腦上執行的 Python 程式碼進行偵錯，包括必要的設定步驟、安全性和疑難排解。
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341659"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549307"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -99,7 +99,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 1. 在 [連線目標] 欄位 (舊版為 [限定詞]) 中，輸入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是將 `enable_attach` 傳入 Python 程式碼的字串，`<ip_address>` 是遠端電腦的明確位址或名稱 (如 myvm.cloudapp.net)，而 `:5678` 是遠端偵錯的連接埠號碼。
 
     > [!Warning]
-    > 如果透過公用網際網路連線，您應該改用 `tcps`，並遵循下列指示[使用 SSL 保護偵錯工具連線](#securing-the-debugger-connection-with-ssl)。
+    > 如果透過公用網際網路連線，您應該改用 `tcps`，並遵循下列指示[使用 SSL 保護偵錯工具連線](#secure-the-debugger-connection-with-ssl)。
 
 1. 按 **Enter** 鍵，即可填入該電腦上可用的 ptvsd 處理序清單：
 
@@ -126,6 +126,9 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 
     | Visual Studio 版本 | Python 工具/ptvsd 版本 |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9 (舊版偵錯工具：3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (舊版偵錯工具：3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |
@@ -145,7 +148,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 
     當 openssl 出現提示時，請依據您用以連接的項目，在 [一般名稱] 中使用主機名稱或 IP 位址 
 
-    (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
+    (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
 
 1. 在程式碼中，使用檔名作為值，將 `enable_attach` 的呼叫修改為包含 `certfile` 和 `keyfile` 引數 (這些引數與標準 `ssl.wrap_socket` Python 函式具有相同的意義)：
 

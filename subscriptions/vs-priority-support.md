@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的優先支援權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289494"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282946"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的優先支援
 
@@ -245,4 +245,4 @@ ms.locfileid: "43289494"
 
 ## <a name="support-resources"></a>支援資源
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+-  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

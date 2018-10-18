@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477479"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668370"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 
@@ -32,8 +32,8 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 |[取樣](#sampling)|收集應用程式所執行的工作相關統計資料。|
 |[檢測](#instrumentation)|收集有關每個函式呼叫的詳細計時資訊。|
 |[並行](#concurrency)|收集有關多執行緒應用程式的詳細資訊。|
-|[.NET 記憶體](#net_memory)|收集有關 .NET 記憶體配置和記憶體回收的詳細資訊。|
-|[階層互動](#tier_interaction)|收集 SqlServer 資料庫的同步 ADO.NET 函式呼叫相關資訊。<br /><br /> 階層互動分析可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。|
+|[.NET 記憶體](#net-memory)|收集有關 .NET 記憶體配置和記憶體回收的詳細資訊。|
+|[階層互動](#tier-interaction)|收集 SqlServer 資料庫的同步 ADO.NET 函式呼叫相關資訊。<br /><br /> 階層互動分析可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。|
 
 藉由使用某些分析方法，您也可以收集其他資料，例如軟體和硬體的效能計數器。 如需詳細資訊，請參閱[收集其他效能資料](../profiling/collecting-additional-performance-data.md)。
 
@@ -134,4 +134,4 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 ## <a name="see-also"></a>另請參閱
 
 [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
-[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
+[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)

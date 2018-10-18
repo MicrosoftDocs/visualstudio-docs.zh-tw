@@ -2,7 +2,7 @@
 title: 建立 Node.js 與 React 應用程式
 description: 在本教學課程中，您會使用適用於 Visual Studio 的 Node.js 工具來建立應用程式
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567138"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548201"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -31,6 +31,30 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 > * 將 React 程式碼新增至您的應用程式
 > * 轉換 JSX
 > * 附加偵錯工具
+
+## <a name="before-you-begin"></a>開始之前
+
+以下快速常見問題集介紹一些重要概念。
+
+### <a name="what-is-nodejs"></a>什麼是 Node.js？
+
+Node.js 是執行 JavaScript 伺服器端的伺服器端 JavaScript 執行階段環境。
+
+### <a name="what-is-npm"></a>什麼是 npm？
+
+npm 是 Node.js 的預設套件管理員。 套件管理員可讓程式設計人員能夠發佈並共用 Node.js 程式庫的原始程式碼，其設計目的是為了簡化程式庫的安裝、更新及解除安裝。
+
+### <a name="what-is-react"></a>什麼是 React？
+
+React 是前端架構，用來建立 UI。
+
+### <a name="what-is-jsx"></a>什麼是 JSX？
+
+JSX 是 JavaScript 語法延伸模組，通常搭配 React 使用以描述 UI 項目。 JSX 程式碼必須轉換為純文字 JavaScript，才可以在瀏覽器中執行。
+
+### <a name="what-is-webpack"></a>什麼是 webpack？
+
+Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它也可以轉換或封裝其他資源和資產。 它經常用來指定編譯器，例如 Babel 或 TypeScript，將 JSX 或 TypeScript 程式碼轉換為純文字 JavaScript。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -62,13 +86,15 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 
     ![[方案總管] 中的 Node.js 專案](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
+    (1) 以**粗體**反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
 
-    * 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
+    (2) 最上層是方案，其名稱預設會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
 
-    * npm 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
+    (3) npm 節點會顯示任何已安裝的 npm 套件。 您可以用滑鼠右鍵按一下 npm 節點，使用對話方塊來搜尋及安裝 npm 套件，或者使用 *package.json* 中的設定來安裝及更新套件，並以滑鼠右鍵按一下 npm 節點中的選項。
 
-    * *server.js* 之類的專案檔會顯示在專案節點下。 *server.js* 是專案啟動檔案。
+    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 如需這個檔案的詳細資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)
+
+    (5) *server.js* 之類的專案檔會顯示在專案節點下。 *server.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]，即可設定啟動檔案。
 
 ## <a name="add-npm-packages"></a>新增 npm 套件
 
@@ -95,22 +121,22 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 
     專案的 *package.json* 檔案會以新的套件資訊 (包括套件版本) 進行更新。
 
-1. 請將下列程式碼貼入 package.json，而不是使用 UI 來搜尋其餘的套件並一次新增一個。 若要這樣做，請以下列程式碼取代 `dependencies` 區段：
+1. 請將下列程式碼貼入 package.json，而不是使用 UI 來搜尋其餘的套件並一次新增一個。 若要這樣做，請新增具有下列程式碼的 `dependencies` 區段：
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    若您的空白本版本中沒有 `dependencies` 區段，您必須新增該區段，而不是取代現有的區段。
+    如果在您的空白範本版本中已經有 `dependencies` 區段，只需將它取代為上述 JSON 程式碼。 如需這個檔案的使用詳細資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)
 
 1. 以滑鼠右鍵按一下專案中的 [npm] 節點，然後選擇 [更新 npm 套件]。
 
@@ -270,7 +296,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 
     ![執行 webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    如果看到任何錯誤，而不是上述的輸出，您必須在應用程式運作之前解決這些錯誤。 如果您的 npm 套件版本與本教學課程中顯示的版本不同，這可能是錯誤的來源。 修正錯誤的其中一種方法是使用先前步驟中所顯示的確切版本。 此外，如果這些套件版本的其中一或多個版本已遭取代而導致錯誤，您可能需要安裝較新的版本來修正錯誤。
+    如果看到任何錯誤，而不是上述的輸出，您必須在應用程式運作之前解決這些錯誤。 如果您的 npm 套件版本與本教學課程中顯示的版本不同，這可能是錯誤的來源。 修正錯誤的其中一種方法是使用先前步驟中所顯示的確切版本。 此外，如果這些套件版本的其中一或多個版本已遭取代而導致錯誤，您可能需要安裝較新的版本來修正錯誤。 如需使用 *package.json*控制 npm 套件版本的資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)。
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選擇 [新增] > [現有資料夾]，然後選擇 *dist* 資料夾，並選擇 [選取資料夾]。
 
@@ -286,9 +312,11 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 
 ## <a name="run-the-app"></a>執行應用程式
 
-1. 請確定已選取 Chrome 作為目前的偵錯目標。
+1. 選取 Chrome 作為目前偵錯目標。
 
     ![選取 Chrome 作為偵錯目標](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 
 1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯]) 或綠色箭號按鈕。
 
@@ -335,6 +363,8 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和�
 1. 切換至 Visual Studio，然後在 *app-bundle.js* 程式碼的 `render()` 函式中設定中斷點，如下圖所示：
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    若要尋找 *app-bundle.js* 中的 `render()` 函式，請使用 **Ctrl**+**F** ([編輯] > 尋找和取代 > [快速尋找])。
 
 1. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl**+**F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
 

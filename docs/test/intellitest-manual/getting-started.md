@@ -1,5 +1,5 @@
 ---
-title: 使用建立單元測試命令來建立單元測試方法虛設常式
+title: IntelliTest 簡介
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 72bba467bae5528333b520bdb40f5f4593982df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 37246d3dc612a44057c21f41145414f60bac0860
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966496"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135469"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>開始使用 Microsoft IntelliTest
 

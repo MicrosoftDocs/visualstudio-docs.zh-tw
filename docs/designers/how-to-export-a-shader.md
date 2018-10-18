@@ -10,32 +10,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924075"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028971"
 ---
 # <a name="how-to-export-a-shader"></a>如何：匯出著色器
-本文件將示範如何使用著色器設計工具匯出有向圖著色器語言 (DGSL) 著色器，以便您在應用程式中使用。
 
- 本文件示範下列活動︰
+本文將示範如何使用 [著色器設計工具] 匯出您可以在應用程式中使用的「有向圖著色器語言」(DGSL) 著色器。
 
--   匯出著色器
+## <a name="export-a-shader"></a>匯出著色器
 
-## <a name="exporting-a-shader"></a>匯出著色器
- 當您使用著色器設計工具建立著色器之後，在您用於應用程式之前，必須以圖形 API 了解的格式將其匯出。 您可以根據不同的需求以不同的方式匯出著色器。
+當您使用著色器設計工具建立著色器之後，在您用於應用程式之前，必須以圖形 API 了解的格式將其匯出。 您可以根據不同的需求以不同的方式匯出著色器。
 
-### <a name="to-export-a-shader"></a>匯出著色器
-
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，開啟 [視覺著色器圖形 (.dgsl)] 檔案。
+1. 在 Visual Studio 中，開啟**視覺著色器圖形 (.dgsl)** 檔案。
 
      如果您沒有可開啟的**視覺著色器圖形 (.dgsl)** 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個檔案。
 
-2.  在 [著色器設計工具] 工具列上，選擇 [進階] > [匯出] > [匯出成]。 [匯出著色器] 對話方塊隨即出現。
+2. 在 [著色器設計工具] 工具列上，選擇 [進階] > [匯出] > [匯出成]。 [匯出著色器] 對話方塊隨即出現。
 
-3.  在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。
+3. 在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。
 
      以下是您可以選擇的格式︰
 
@@ -45,7 +41,7 @@ ms.locfileid: "37924075"
 
      **C++ 標頭 (\*.h)** 將著色器匯出為 C-Style 標頭，其定義包含 HLSL 位元組程式碼的位元組陣列。 此選項會讓您在根據使用者問題來偵錯和修補程式時更加費時，因為必須重新編譯應用程式，才能測試修正。 不過，這個選項可讓著色器在應用程式部署之後就難以 (但無法杜絕) 修改，對想以不必要的方式修改著色器的使用者而言難度最高。
 
-4.  在 [檔案名稱] 下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存] 按鈕。
+4. 在 [檔案名稱] 下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存] 按鈕。
 
 ## <a name="see-also"></a>另請參閱
 

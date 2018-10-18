@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,14 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa29ef14f6fa4c4ff63c0dd697bfa362347e9c9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1538a3c93088cf02bcfb040cfa8a349ef7756eb5
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139189"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028906"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 工作負載和元件識別碼
+
+**已針對 [15.8 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
 
 按一下下表中的版本名稱，以查看使用命令列來安裝 Visual Studio 或是在 VSIX 資訊清單中指定為相依性時，將會需要的可用工作負載和元件識別碼。
 
@@ -33,7 +35,7 @@ ms.locfileid: "43139189"
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | 功能完整的免費 IDE，適用於學生、開放原始碼及個人開發人員 |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | 在不使用 Visual Studio 開發人員工具組的情況下，與 Team Foundation Server 和 Visual Studio Team Services 互動。 |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | 在不使用 Visual Studio 開發人員工具組的情況下，與 Team Foundation Server 和 Azure DevOps Services 互動 |
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | 透過語法感知程式碼編輯、原始程式碼控制以及工作項目管理，建置原生和 Managed 應用程式，例如 WPF、WinForms 和 Win32。 包含 C#、Visual Basic 和 Visual C++ 的支援。 |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools 可讓您建置原生和受管理 MSBuild 型應用程式，而不需要 Visual Studio IDE。 您可以選擇安裝 Visual C++ 編譯器及程式庫、MFC、ATL 以及 C++/CLI 支援。 |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | 支援在遠端執行自動化的測試與負載測試 |
