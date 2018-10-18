@@ -125,7 +125,7 @@ ms.locfileid: "49203940"
   }
   ```
 
-  以下是主控台應用程式的 main （） 方法：
+  以下是主控台應用程式的 main() 方法：
 
   ```csharp
   static void Main(string[] args)
