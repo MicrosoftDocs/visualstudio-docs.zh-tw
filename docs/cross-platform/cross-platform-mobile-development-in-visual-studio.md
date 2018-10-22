@@ -42,7 +42,7 @@ ms.locfileid: "46496138"
 
 ###  <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底
 
- 您可以使用 C# 或 F # (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2017，選取安裝程式中的 [使用 .NET 進行行動裝置開發] 選項。
+ 您可以使用 C# 或 F# (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2017，選取安裝程式中的 [使用 .NET 進行行動裝置開發] 選項。
 
  如果您已經安裝 Visual Studio 2017，請重新執行 [Visual Studio 安裝程式]，並為 Xamarin 選取相同的 [使用 .NET 進行行動裝置開發] 選項 (如上述)。
 
