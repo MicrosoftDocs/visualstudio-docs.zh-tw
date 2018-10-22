@@ -37,7 +37,7 @@ R 和 Python 是兩個用於資料科學的主要指令碼語言。 這兩種語
 
 根據預設，工作負載會安裝下列選項，而您可以在 Visual Studio 安裝程式中工作負載的 [摘要] 區段內對其進行修改：
 
-- F # 語言支援
+- F# 語言支援
 - Python：
   - Python 語言支援
   - [Anaconda3 64 位元](https://www.continuum.io) (包含大量資料科學程式庫和 Python 解譯器的 Python 散發)

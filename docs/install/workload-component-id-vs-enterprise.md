@@ -85,7 +85,7 @@ Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.8.27924.0 |
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 1.10.50912.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
-Microsoft.VisualStudio.Component.FSharp | F # 語言支援 | 15.8.27825.0 | 必要
+Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
@@ -319,7 +319,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 1.
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | Optional
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.FSharp | F # 語言支援 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
@@ -551,7 +551,7 @@ Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 開發工具 | 15.8.279
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 1.10.50912.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
-Microsoft.VisualStudio.Component.FSharp | F # 語言支援 | 15.8.27825.0 | 必要
+Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
@@ -614,7 +614,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.8.27825.0 | 必要
 Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | 必要
 Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 開發工具 | 15.8.27729.1 | 必要
-Microsoft.VisualStudio.Component.FSharp | F # 語言支援 | 15.8.27825.0 | 必要
+Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
 Microsoft.VisualStudio.Component.Merq | 通用的 Xamarin 內部工具 | 15.8.27924.0 | 必要
 Microsoft.VisualStudio.Component.MonoDebugger | Mono 偵錯工具 | 15.0.26720.2 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 15.8.27825.0 | 必要
@@ -672,7 +672,7 @@ Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 開發工具 | 15.8.279
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 1.10.50912.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
-Microsoft.VisualStudio.Component.FSharp | F # 語言支援 | 15.8.27825.0 | 必要
+Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
