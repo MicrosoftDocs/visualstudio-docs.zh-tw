@@ -1,4 +1,4 @@
----
+﻿---
 title: 部署功能導覽
 description: 深入了解部署從 Visual Studio 的應用程式的選項。
 ms.custom: mvc
@@ -26,7 +26,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
 ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
 ms.locfileid: "44320549"
@@ -37,7 +37,7 @@ ms.locfileid: "44320549"
 
 請參閱快速入門和教學課程逐步部署指示。 如需部署選項的概觀，請參閱 <<c0> [ 哪些發佈選項適合我？](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)。
 
-## <a name="deploy-to-local-folder"></a> 部署到本機資料夾
+## <a name="deploy-to-local-folder"></a>部署到本機資料夾
 
 部署至本機資料夾通常用來進行測試，或若要開始另一個工具用於最終部署階段式的部署。
 
