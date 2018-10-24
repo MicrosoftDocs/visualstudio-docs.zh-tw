@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 48bfc0d7df27cd168153172b08b81e217d5e78f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b6d0d37d68951d556cdb575897178bd07a55a6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860834"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044：屬性不應為唯寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|

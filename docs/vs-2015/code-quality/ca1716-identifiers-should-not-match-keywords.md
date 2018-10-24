@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858871"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -44,13 +45,13 @@ ms.locfileid: "49189770"
 
  此規則會檢查針對下列語言版本的關鍵字：
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- 不區分大小寫的比較來[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]關鍵字和區分大小寫比較，用於其他語言。
+  不區分大小寫的比較來[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]關鍵字和區分大小寫比較，用於其他語言。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  名稱，不會出現在清單中選取的關鍵字。

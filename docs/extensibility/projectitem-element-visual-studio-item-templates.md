@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855985"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 （Visual Studio 項目範本）
 指定項目範本中所包含的檔案。  
@@ -51,13 +51,13 @@ ms.locfileid: "39637064"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|---------------|-----------------|  
-|`SubType`|選擇性屬性。<br /><br /> 多檔案項目範本中指定項目子的類型。 這個值用來判斷編輯器，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]將用以開啟項目。|  
-|`CustomTool`|選擇性屬性。<br /><br /> 專案檔中設定項目的自訂工具。|  
-|`ItemType`|選擇性屬性。<br /><br /> 專案檔中設定項目的 ItemType。|  
-|`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
-|`TargetFileName`|選擇性屬性。<br /><br /> 指定從範本建立的項目名稱。 這個屬性可用於建立項目名稱使用參數取代。|  
+| 屬性 | 描述 |
+|---------------------| - |
+| `SubType` | 選擇性屬性。<br /><br /> 多檔案項目範本中指定項目子的類型。 這個值用來判斷編輯器，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]將用以開啟項目。 |
+| `CustomTool` | 選擇性屬性。<br /><br /> 專案檔中設定項目的自訂工具。 |
+| `ItemType` | 選擇性屬性。<br /><br /> 專案檔中設定項目的 ItemType。 |
+| `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。 |
+| `TargetFileName` | 選擇性屬性。<br /><br /> 指定從範本建立的項目名稱。 這個屬性可用於建立項目名稱使用參數取代。 |
   
 ### <a name="child-elements"></a>子元素  
  無。  

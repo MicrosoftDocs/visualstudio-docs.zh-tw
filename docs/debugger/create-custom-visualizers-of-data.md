@@ -1,5 +1,5 @@
 ---
-title: 建立自訂的視覺化檢視的資料 |Microsoft 文件
+title: 建立資料的自訂視覺化檢視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/19/2017
 ms.technology: vs-ide-debug
@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a1602808cb21bd247d2bb1d249ab7ddea81524
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 859bf6493a06663a8977898ffa07d600b826d458
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854308"
 ---
-# <a name="create-custom-visualizers-of-data"></a>建立自訂的視覺化檢視的資料
- 視覺化檢視是元件的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]偵錯工具使用者介面。 A*視覺化檢視*建立對話方塊或另一個介面是適用於其資料類型的方式顯示變數或物件。 例如，HTML 視覺化檢視會解譯 HTML 字串，並在瀏覽視窗中顯示出現的結果，而點陣圖視覺化檢視會解譯點陣圖結構，並顯示其所代表的圖形。 除了檢視資料外，有些視覺化檢視也能讓您修改資料。
+# <a name="create-custom-visualizers-of-data"></a>建立資料的自訂視覺化檢視
+ 視覺化檢視是元件[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]偵錯工具使用者介面。 A*視覺化檢視*建立對話方塊或其他介面來顯示變數或物件的方式，是適用於其資料類型。 例如，HTML 視覺化檢視會解譯 HTML 字串，並在瀏覽視窗中顯示出現的結果，而點陣圖視覺化檢視會解譯點陣圖結構，並顯示其所代表的圖形。 除了檢視資料外，有些視覺化檢視也能讓您修改資料。
 
- [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具包含六個標準視覺化檢視。 這些是文字、 HTML、 XML 及 JSON 視覺化檢視，全部都是用於字串物件。WPF 樹狀架構視覺化檢視，來顯示 WPF 物件視覺化樹狀，屬性和資料集視覺化檢閱則適用於資料集、 DataView 和 DataTable 物件。 額外的視覺化檢視未來可能可以從 Microsoft Corporation 下載，且可從協力廠商和社群取得。 此外，您可以自行撰寫視覺化檢視，並將它們安裝至 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具中。
+ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具包含六個標準視覺化檢視。 這些是文字、 HTML、 XML 及 JSON 視覺化檢視，當然也作用於字串物件;WPF 樹狀架構視覺化檢視，來顯示 WPF 物件視覺化樹狀結構; 屬性和資料集視覺化檢視，這適用於資料集、 DataView 和 DataTable 物件。 額外的視覺化檢視未來可能可以從 Microsoft Corporation 下載，且可從協力廠商和社群取得。 此外，您可以自行撰寫視覺化檢視，並將它們安裝至 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具中。
 
  > [!NOTE]
- > 若要建立原生程式碼的自訂視覺化檢視，請參閱[SQLite 原生偵錯工具視覺化檢視](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)範例。 在 UWP 和 Windows 8.x 應用程式，不支援自訂視覺化檢視。
+ > 若要建立原生程式碼的自訂視覺化檢視，請參閱[SQLite 原生偵錯工具視覺化檢視](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)範例。 UWP 和 Windows 8.x 應用程式，不支援自訂視覺化檢視。
 
- 在偵錯工具中，視覺化檢視會以放大鏡圖示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。 當您看到的放大鏡圖示**DataTip**，在偵錯工具視窗中，例如**監看式**視窗中，或在**快速監看式**對話方塊中，您可以按一下放大鏡，選取適用於資料類型的對應物件的視覺化檢視。
+ 在 偵錯工具中，視覺化檢視由放大鏡圖示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。 當您看到的放大鏡圖示**DataTip**，在偵錯工具視窗中，例如**監看式**視窗中，或在**快速監看式** 對話方塊中，您可以按一下放大鏡，選取適用於資料類型的對應物件的視覺化檢視。
 
 ## <a name="overview-of-custom-visualizers"></a>自訂視覺化檢視的概觀
 
@@ -44,27 +44,27 @@ ms.locfileid: "31464832"
   
  偵錯工具視覺化檢視的架構分為兩部分：  
   
--   *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
+- *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
   
--   *偵錯項目端*Visual Studio 偵錯的程序中執行 (*偵錯項目*)。  
+- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
   
- 您要進行視覺化的資料物件 (例如，String 物件) 會存在於偵錯項目處理序中。 因此，偵錯項目端必須將該資料物件傳送至偵錯工具端，然後偵錯工具端才能使用您建立的使用者介面顯示這個資料物件。  
+  您要進行視覺化的資料物件 (例如，String 物件) 會存在於偵錯項目處理序中。 因此，偵錯項目端必須將該資料物件傳送至偵錯工具端，然後偵錯工具端才能使用您建立的使用者介面顯示這個資料物件。  
   
- 偵錯工具端會收到這個資料物件，若要從以視覺化方式檢視*物件提供者*實作<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>介面。 偵錯項目端會將資料物件，透過傳送*物件來源*，其衍生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 物件提供者也可以將資料送回物件來源，以便您撰寫可編輯和顯示資料的視覺化檢視。 物件提供者可被覆寫，以便與運算式評估工具進行溝通，也就是與物件來源溝通。  
+  偵錯工具端會接收要視覺化從這個資料物件*物件提供者*可實<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>介面。 在偵錯項目端傳送的資料物件，可透過*物件來源*，其係衍生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 物件提供者也可以將資料送回物件來源，以便您撰寫可編輯和顯示資料的視覺化檢視。 物件提供者可被覆寫，以便與運算式評估工具進行溝通，也就是與物件來源溝通。  
   
- 偵錯項目端和偵錯工具端是透過 <xref:System.IO.Stream> 相互溝通。 提供的方法是用來將資料物件序列化至 <xref:System.IO.Stream>，並將 <xref:System.IO.Stream> 還原序列化至資料物件中。  
+  偵錯項目端和偵錯工具端是透過 <xref:System.IO.Stream> 相互溝通。 提供的方法是用來將資料物件序列化至 <xref:System.IO.Stream>，並將 <xref:System.IO.Stream> 還原序列化至資料物件中。  
   
- 偵錯項目端的程式碼是使用 DebuggerVisualizer 屬性 (<xref:System.Diagnostics.DebuggerVisualizerAttribute>) 進行指定。  
+  偵錯項目端的程式碼是使用 DebuggerVisualizer 屬性 (<xref:System.Diagnostics.DebuggerVisualizerAttribute>) 進行指定。  
   
- 若要在偵錯工具端建立視覺化檢視使用者介面，您必須建立繼承自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 的類別，並覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法顯示此介面。  
+  若要在偵錯工具端建立視覺化檢視使用者介面，您必須建立繼承自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 的類別，並覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法顯示此介面。  
   
- 您可以使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>，從您的視覺化檢視顯示 Windows Form、對話方塊和控制項。  
+  您可以使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>，從您的視覺化檢視顯示 Windows Form、對話方塊和控制項。  
   
- 對泛型類型的支援是有限的。 只有在泛型類型是開啟類型時，才能夠為泛型類型目標撰寫視覺化檢視。 這項限制與使用 `DebuggerTypeProxy` 屬性時的限制相同。 如需詳細資訊，請參閱[使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)。  
+  對泛型類型的支援是有限的。 只有在泛型類型是開啟類型時，才能夠為泛型類型目標撰寫視覺化檢視。 這項限制與使用 `DebuggerTypeProxy` 屬性時的限制相同。 如需詳細資訊，請參閱 <<c0> [ 使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)。  
   
- 自訂視覺化檢視會有安全性考量。 請參閱[視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)。  
+  自訂視覺化檢視會有安全性考量。 請參閱[視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)。  
   
- 下列程序提供在建立視覺化檢視時所需的概觀。 如需更詳細的說明，請參閱[逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
+  下列程序提供在建立視覺化檢視時所需的概觀。 如需詳細的說明，請參閱[逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
 ### <a name="to-create-the-debugger-side"></a>若要建立偵錯工具端  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e481d9f4c6f58ae717e2e6ad6d39bbf192ecb83
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8adb02b4fdc17a1abf223cfb5287a36c232db279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859144"
 ---
 # <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

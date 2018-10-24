@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861276"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼定義。 大部分的 DSL 方案中的程式碼會產生這個檔案。
@@ -135,7 +135,7 @@ ms.locfileid: "47860520"
  在圖表上輸入，或修改設定 role 的多重性`Multiplicity`中的屬性**屬性**視窗。 下表描述此屬性的設定。
 
 |多重性類型|描述|
-|-----------------------|-----------------|
+|-|-|
 |0..* （零至多個）|每個網域類別執行個體可以有多個關聯性執行個體或關聯性的任何執行個體。|
 |0..1 （零到一）|每個網域類別執行個體可以有一個以上的執行個體的關聯性或關聯性的任何執行個體。|
 |1..1 （一）|每個網域類別執行個體可以有一個執行個體的關聯性。 您無法從任何角色類別的執行個體來建立此關聯性的多個執行個體。 如果啟用驗證，則當角色類別的任何執行個體不具有關聯性的任何執行個體時，會顯示驗證錯誤。|
