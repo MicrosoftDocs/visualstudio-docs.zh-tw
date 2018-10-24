@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920127"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式： 基底方法中的片段  
  在接下來的範例所使用的模式，請注意下列幾點：  
   
--   基底類別`SharedFragments`定義類別功能區塊內的方法`<#+ ... #>`。  
+- 基底類別`SharedFragments`定義類別功能區塊內的方法`<#+ ... #>`。  
   
--   基底類別會包含任何任意的文字。 相反地，其所有的文字區塊的類別特徵方法內發生。  
+- 基底類別會包含任何任意的文字。 相反地，其所有的文字區塊的類別特徵方法內發生。  
   
--   在衍生的類別叫用中定義的方法`SharedFragments`。  
+- 在衍生的類別叫用中定義的方法`SharedFragments`。  
   
--   應用程式會呼叫`TextTransform()`方法的衍生類別中，但不會轉換的基底類別`SharedFragments`。  
+- 應用程式會呼叫`TextTransform()`方法的衍生類別中，但不會轉換的基底類別`SharedFragments`。  
   
--   基底和衍生的類別是執行階段文字範本： 亦即**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。  
+- 基底和衍生的類別是執行階段文字範本： 亦即**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

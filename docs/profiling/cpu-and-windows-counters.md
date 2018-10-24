@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865917"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 
@@ -93,15 +93,15 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 2. 執行下列任一步驟：
 
-    -   按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。
+   - 按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。
 
-         **注意** 按一下 [取消] 可回到前一個取樣組態。
+      **注意** 按一下 [取消] 可回到前一個取樣組態。
 
      -或-
 
-    -   選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。
+   - 選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。
 
-         **注意** 按一下 [取消] 可回到前一個計數器收集組態。
+      **注意** 按一下 [取消] 可回到前一個計數器收集組態。
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的 Windows 計數器清單
 

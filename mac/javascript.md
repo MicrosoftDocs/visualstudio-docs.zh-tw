@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224169"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881068"
 ---
 # <a name="javascript-support"></a>JavaScript 支援
 
@@ -34,7 +34,7 @@ JavaScript 檔案最常透過 [新增檔案] 對話方塊新增至 ASP.NET Core 
 
 ## <a name="intellisense"></a>Intellisense
 
-Visual Studio for Mac 使用 [Javascript 語言服務](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) 提供 Intellisense，讓您撰寫程式碼時擁有智慧型程式碼完成功能、參數資訊和成員清單。
+Visual Studio for Mac 使用 [Javascript 語言服務](/visualstudio/ide/javascript-intellisense) 提供 Intellisense，讓您撰寫程式碼時擁有智慧型程式碼完成功能、參數資訊和成員清單。
 
 Visual Studio for Mac 中的 Javascript intellisense 可以基於型別推斷、JSDoc 或 Typescript 宣告。
 

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915668"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供非同步的 Visual Studio 服務
 如果您想要取得服務，而不會封鎖 UI 執行緒，您應該建立非同步的服務，並在背景執行緒上的將封裝載入。 基於此目的，您可以使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務。
@@ -104,11 +104,11 @@ ms.locfileid: "39639256"
 ## <a name="register-a-service"></a>註冊服務  
  若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>提供服務的套件。 不同註冊同步服務，您必須確定封裝和服務支援非同步載入：
   
--   您必須新增**AllowsBackgroundLoading = true**欄位設為<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>若要確保可以以非同步方式初始化封裝，如需 PackageRegistrationAttribute 詳細資訊，請參閱[註冊和取消註冊 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
+- 您必須新增**AllowsBackgroundLoading = true**欄位設為<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>若要確保可以以非同步方式初始化封裝，如需 PackageRegistrationAttribute 詳細資訊，請參閱[註冊和取消註冊 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
--   您必須新增**IsAsyncQueryable = true**欄位設為<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>以確保能夠以非同步方式初始化服務執行個體。
+- 您必須新增**IsAsyncQueryable = true**欄位設為<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>以確保能夠以非同步方式初始化服務執行個體。
 
- 以下是範例`AsyncPackage`使用非同步服務註冊：
+  以下是範例`AsyncPackage`使用非同步服務註冊：
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

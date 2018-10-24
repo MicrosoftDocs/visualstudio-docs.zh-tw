@@ -17,12 +17,12 @@ ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8d86fd8bf362bf8b9d82188b5ee570e1fae8e99
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de7be7d125c428494670d88b69bc711171679dc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913952"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912619"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：  
   
--   [了解自訂](#UnderstandingCustomizations)  
+- [了解自訂](#UnderstandingCustomizations)  
   
--   [自訂的元件](#Components)  
+- [自訂的元件](#Components)  
   
--   [自訂如何與 Microsoft Office 應用程式搭配運作](#HowCustomizationsWork)  
+- [自訂如何與 Microsoft Office 應用程式搭配運作](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 如需建立文件層級自訂的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)，[開始word的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)，並[開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
+  如需建立文件層級自訂的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)，[開始word的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)，並[開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
   
 ##  <a name="UnderstandingCustomizations"></a> 了解自訂  
  當您使用 Visual Studio 中的 Office Developer Tools 建置文件層級自訂時，會建立與特定文件相關聯的 Managed 程式碼組件。 文件或活頁簿中若是有連結的組件就稱為具有 Managed 程式碼擴充。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。  
@@ -94,11 +94,11 @@ ms.locfileid: "35671375"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>支援具有.xml 副檔名的 Word 文件  
  文件層級專案範本不允許您建立以下列檔案格式為基礎的專案：  
   
--   Word XML 文件 (*\*xml*)。  
+- Word XML 文件 (*\*xml*)。  
   
--   Word 2003 XML 文件 (*\*xml*)。  
+- Word 2003 XML 文件 (*\*xml*)。  
   
- 如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後, 使用者可以在 Word XML 文件中儲存文件 (*\*xml*) 格式或 Word 2003 XML 文件 (*\*xml*) 格式，而自訂將會繼續如預期般運作。  
+  如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後, 使用者可以在 Word XML 文件中儲存文件 (*\*xml*) 格式或 Word 2003 XML 文件 (*\*xml*) 格式，而自訂將會繼續如預期般運作。  
   
 ##  <a name="Components"></a> 自訂的元件  
  自訂的主要元件是文件和組件。 除了這些元件之外，還有其他數個組件在 Microsoft Office 應用程式探索和載入自訂的方式中扮演重要角色。  
@@ -142,11 +142,11 @@ ms.locfileid: "35671375"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將自訂組件載入至此應用程式定義域中。  
   
-9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫**啟動**自訂組件中的事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)  
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920926"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
@@ -33,13 +33,13 @@ ms.locfileid: "35237223"
   
  可以進行程式碼剖析的處理序，取決於電腦系統管理員所設定的使用者存取權限。 例如，使用者帳戶可能擁有下列任何一項的使用權限：  
   
--   進階程式碼剖析功能 (當系統管理員設定了要啟動的驅動程式和服務時)。  
+- 進階程式碼剖析功能 (當系統管理員設定了要啟動的驅動程式和服務時)。  
   
--   只進行取樣程式碼剖析 (網域使用者)。  
+- 只進行取樣程式碼剖析 (網域使用者)。  
   
--   拒絕任何人存取程式碼剖析。  
+- 拒絕任何人存取程式碼剖析。  
   
- 如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
+  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
   
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  
   

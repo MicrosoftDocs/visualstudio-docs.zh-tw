@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908734"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
 下表列出當您使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。
 
 |若要執行這項操作|請執行|Pointer|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |建立直線線段的起點|按一下以建立新的點|![建立直線線段的起點](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> 畫筆指標|
 |建立曲線線段的起點|按一下以建立新的點，然後拖曳新點以調整正切函數控點，再鬆開滑鼠按鈕。|![建立曲線線段的起點](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> 畫筆指標|
 |在沒有平滑限制的情況下調整最後一個正切函數，可讓您製作出尖角。|按一下以建立新的點，然後按 **Alt** 鍵|![調整沒有平滑限制的最後一個正切函數](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|

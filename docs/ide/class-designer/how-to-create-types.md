@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842257"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 
@@ -71,21 +71,21 @@ ms.locfileid: "33957252"
 
 ##  <a name="CustAttributeType"></a> 將自訂屬性套用類型
 
-1.  在類別圖上按一下類型的圖案。
+1. 在類別圖上按一下類型的圖案。
 
-2.  在 [屬性] 視窗中，按一下類型的 [自訂屬性] 旁邊的省略符號 (…) 按鈕。
+2. 在 [屬性] 視窗中，按一下類型的 [自訂屬性] 旁邊的省略符號 (…) 按鈕。
 
-3.  每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。
+3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。
 
    自訂屬性會套用至類型。
 
 ##  <a name="CustAttributeMember"></a> 將自訂屬性套用至類型成員
 
-1.  在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。
+1. 在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。
 
-2.  在 [屬性] 視窗中，尋找成員的 [自訂屬性] 屬性。
+2. 在 [屬性] 視窗中，尋找成員的 [自訂屬性] 屬性。
 
-3.  每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。
+3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。
 
    自訂屬性會套用至類型。
 

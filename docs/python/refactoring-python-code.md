@@ -1,6 +1,6 @@
 ---
 title: 重構 Python 程式碼
-description: 如何透過重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，以輕鬆地在 Visual Studio 中重構 Python 程式碼。
+description: 如何藉由重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，以輕鬆地在 Visual Studio 中重構 Python 程式碼。
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861575"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼
 
@@ -30,27 +30,27 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 ## <a name="rename"></a>重新命名
 
 1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]，或將插入點放在該識別項中並選取 [編輯] > [重構] > [重新命名] 功能表命令 (**F2**)。
-1. 在出現的 [重新命名] 對話方塊中，輸入識別項的新名稱並選取 [確定]：
+2. 在出現的 [重新命名] 對話方塊中，輸入識別項的新名稱並選取 [確定]：
 
-  ![[重新命名] 的新識別項名稱提示](media/code-refactor-rename-1.png)
+   ![[重新命名] 的新識別項名稱提示](media/code-refactor-rename-1.png)
 
-1. 在下一個對話方塊中，選取您的程式碼中要套用重新命名的檔案和執行個體；選取任一個別的執行個體以預覽特定變更︰
+3. 在下一個對話方塊中，選取您的程式碼中要套用重新命名的檔案和執行個體；選取任一個別的執行個體以預覽特定變更︰
 
-  ![選取套用變更的位置的 [重新命名 (Rename)] 對話方塊](media/code-refactor-rename-2.png)
+   ![選取套用變更的位置的 [重新命名 (Rename)] 對話方塊](media/code-refactor-rename-2.png)
 
-1. 選取 [套用] 以變更您的原始程式碼檔。 (這個動作無法回復。)
+4. 選取 [套用] 以變更您的原始程式碼檔。 (這個動作無法回復。)
 
 ## <a name="extract-method"></a>擷取方法
 
 1. 選取要擷取到另一個方法的程式碼或運算式。
-1. 選取 [編輯] > [重構] > [擷取方法] 功能表命令，或輸入 **Ctrl**+**R** > **M**。
-1. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
+2. 選取 [編輯] > [重構] > [擷取方法] 功能表命令，或輸入 **Ctrl**+**R** > **M**。
+3. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
 
-  ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)
+   ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)
 
-1. 選取 [確定]，就會依此修改程式碼︰
+4. 選取 [確定]，就會依此修改程式碼︰
 
-  ![擷取方法的結果](media/code-refactor-extract-method-2.png)
+   ![擷取方法的結果](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>加入匯入
 

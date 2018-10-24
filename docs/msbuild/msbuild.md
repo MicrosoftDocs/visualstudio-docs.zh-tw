@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876720"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。
@@ -56,7 +56,7 @@ ms.locfileid: "44321238"
  若要在命令提示字元執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，請使用適當的命令列選項，將專案檔傳遞給 *MSBuild.exe*。 命令列選項能讓您設定屬性、執行特定目標，以及設定可控制建置流程的其他選項。 例如，您可以使用下列命令列語法，在 `Configuration` 屬性設為 `Debug` 的情況下建置 *MyProj.proj* 檔案。
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  如需有關 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 命令列選項的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。
@@ -170,19 +170,19 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 
 ## <a name="see-also"></a>另請參閱
 
-|標題|描述|
-|-----------|-----------------|
-|[逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|
-|[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介紹 MSBuild 的建置區塊，以及顯示如何在不關閉 Visual Studio IDE 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。|
-|[MSBuild 概念](../msbuild/msbuild-concepts.md)|呈現 MSBuild 的四個建置組塊：屬性、項目、目標和工作。|
-|[項目](../msbuild/msbuild-items.md)|描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案格式的一般概念，以及項目如何彼此搭配。|
-|[MSBuild 屬性](../msbuild/msbuild-properties.md)|介紹屬性和屬性集合。 屬性是成對的索引鍵/值組，可以用來設定組建 (Build)。|
-|[目標](../msbuild/msbuild-targets.md)|解釋如何以特定順序將各項工作集合在一起成為群組，並能夠在命令列上呼叫建置流程的區段。|
-|[工作](../msbuild/msbuild-tasks.md)|顯示如何建立 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可用來執行原子建置作業的可執行程式碼單元。|
-|[條件](../msbuild/msbuild-conditions.md)|討論如何在 MSBuild 項目中使用 `Condition` 屬性。|
-|[進階概念](../msbuild/msbuild-advanced-concepts.md)|呈現批次處理、執行轉換、多目標、以及其他進階技巧。|
-|[MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)|描述如何記錄建置事件、訊息和錯誤。|
-|[其他資源](../msbuild/additional-msbuild-resources.md)|列出社群和支援資源，以提供 MSBuild 的詳細資訊。|
+| 標題 | 描述 |
+| - | - |
+| [逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 顯示如何僅使用文字編輯器來累加建立基本專案檔。 |
+| [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md) | 介紹 MSBuild 的建置區塊，以及顯示如何在不關閉 Visual Studio IDE 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。 |
+| [MSBuild 概念](../msbuild/msbuild-concepts.md) | 呈現 MSBuild 的四個建置組塊：屬性、項目、目標和工作。 |
+| [項目](../msbuild/msbuild-items.md) | 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案格式的一般概念，以及項目如何彼此搭配。 |
+| [MSBuild 屬性](../msbuild/msbuild-properties.md) | 介紹屬性和屬性集合。 屬性是成對的索引鍵/值組，可以用來設定組建 (Build)。 |
+| [目標](../msbuild/msbuild-targets.md) | 解釋如何以特定順序將各項工作集合在一起成為群組，並能夠在命令列上呼叫建置流程的區段。 |
+| [工作](../msbuild/msbuild-tasks.md) | 顯示如何建立 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可用來執行原子建置作業的可執行程式碼單元。 |
+| [條件](../msbuild/msbuild-conditions.md) | 討論如何在 MSBuild 項目中使用 `Condition` 屬性。 |
+| [進階概念](../msbuild/msbuild-advanced-concepts.md) | 呈現批次處理、執行轉換、多目標、以及其他進階技巧。 |
+| [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md) | 描述如何記錄建置事件、訊息和錯誤。 |
+| [其他資源](../msbuild/additional-msbuild-resources.md) | 列出社群和支援資源，以提供 MSBuild 的詳細資訊。 |
 
 ## <a name="reference"></a>參考資料
  [MSBuild 參考](../msbuild/msbuild-reference.md)：包含參考資訊的主題連結。

@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915013"
 ---
 # <a name="define-packages-and-namespaces"></a>定義套件和命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ ms.locfileid: "49219410"
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>在 UML 模型總管中建立套件  
   
-1.  開啟**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]**。  
+1. 開啟**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]**。  
   
-2.  以滑鼠右鍵按一下您要加入新套件的套件或模型。  
+2. 以滑鼠右鍵按一下您要加入新套件的套件或模型。  
   
-    > [!NOTE]
-    >  您可以讓某個套件成為另一個套件內的巢狀套件。  
+   > [!NOTE]
+   >  您可以讓某個套件成為另一個套件內的巢狀套件。  
   
-3.  指向**新增**，然後按一下**封裝**。  
+3. 指向**新增**，然後按一下**封裝**。  
   
-     新的套件隨即出現在模型中。  
+    新的套件隨即出現在模型中。  
   
-4.  輸入套件的新名稱。  
+4. 輸入套件的新名稱。  
   
- 如果您已在 [UML 模型總管] 中建立套件，則可以將它顯示在 UML 類別圖中。 您也可以在多個 UML 類別圖上顯示套件。  
+   如果您已在 [UML 模型總管] 中建立套件，則可以將它顯示在 UML 類別圖中。 您也可以在多個 UML 類別圖上顯示套件。  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>在 UML 類別圖上顯示現有套件  
   
@@ -103,15 +103,15 @@ ms.locfileid: "49219410"
 ##  <a name="Elements"></a> 建立套件內的模型項目  
  有四種方式可將模型項目放到套件內：  
   
--   將新的項目加入 [UML 模型總管] 中的套件。  
+- 將新的項目加入 [UML 模型總管] 中的套件。  
   
--   將類別和其他類型加入 UML 類別圖中的套件。  
+- 將類別和其他類型加入 UML 類別圖中的套件。  
   
--   設定**LinkedPackage**圖表的屬性，讓圖表上建立新的項目會放在您指定之套件內。 使用這種方式，可以將類別圖、元件圖和使用案例圖連結至套件。  
+- 設定**LinkedPackage**圖表的屬性，讓圖表上建立新的項目會放在您指定之套件內。 使用這種方式，可以將類別圖、元件圖和使用案例圖連結至套件。  
   
--   將項目移入或移出 [UML 模型總管] 中的套件。  
+- 將項目移入或移出 [UML 模型總管] 中的套件。  
   
- 套件中的項目會出現在 [UML 模型總管] 中的套件，而其限定名稱的開頭是套件的限定名稱。 若要查看任何項目的限定的名稱，以滑鼠右鍵按一下項目，然後按一下**屬性**。 **限定名稱**屬性會出現在**屬性**視窗。  
+  套件中的項目會出現在 [UML 模型總管] 中的套件，而其限定名稱的開頭是套件的限定名稱。 若要查看任何項目的限定的名稱，以滑鼠右鍵按一下項目，然後按一下**屬性**。 **限定名稱**屬性會出現在**屬性**視窗。  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>在 UML 模型總管的套件中建立項目  
   

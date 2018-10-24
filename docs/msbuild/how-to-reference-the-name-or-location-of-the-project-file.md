@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911521"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
@@ -33,15 +33,15 @@ ms.locfileid: "39079634"
   
 #### <a name="to-use-the-project-properties"></a>使用專案屬性
   
--   使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如:   
+- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如:   
   
-    ```xml  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```          
+  ```xml  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```          
   
- 使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。  
+  使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。  
   
 > [!NOTE]
 >  您無法在專案檔中重新定義保留的屬性。  
@@ -88,5 +88,5 @@ ms.locfileid: "39079634"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[ MSBuild](../msbuild/msbuild.md)  
+[MSBuild](../msbuild/msbuild.md)  
 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

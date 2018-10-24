@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 2d996d5cd6c6856c5e348d362c442e7c6471ceba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915161"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 
@@ -132,7 +132,6 @@ namespace LinqToXmlDataBinding {
         }
     }
 }
-
 ```
 
 ### <a name="comments"></a>註解

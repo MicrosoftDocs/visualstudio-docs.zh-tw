@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddatafrompdb |Microsoft 文件'
+title: 'Idiadatasource:: Loaddatafrompdb |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1910d54ad1a9d2964869beb4854ea97600569b7c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d1ed1d6edf2fc9ccc30f824cbfdf9ff67f0c2a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918814"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-隨即開啟，並準備做為偵錯資料來源的程式資料庫 (.pdb) 檔案。  
+隨即開啟，並準備做為偵錯資料來源的程式資料庫 (.pdb) 檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,26 +34,26 @@ HRESULT loadDataFromPdb (
   
 #### <a name="parameters"></a>參數  
  pdbPath  
- [in].Pdb 檔案的路徑。  
+ [in].pdb 檔案的路徑。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
   
 |值|描述|  
 |-----------|-----------------|  
-|E_PDB_NOT_FOUND|無法開啟檔案，或判斷檔案是否有無效的格式。|  
-|E_PDB_FORMAT|嘗試存取的檔案已經過時的格式。|  
+|E_PDB_NOT_FOUND|無法開啟檔案，或判斷檔案有無效的格式。|  
+|E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|  
 |E_INVALIDARG|無效的參數。|  
-|E_UNEXPECTED|已備妥資料來源。|  
+|E_UNEXPECTED|資料來源已準備好了。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會直接從.pdb 檔案載入偵錯資料。  
+ 這個方法會載入偵錯資料直接從.pdb 檔案。  
   
- 若要驗證針對特定準則的.pdb 檔，請使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。  
+ 若要驗證對特定準則的.pdb 檔，請使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。  
   
- 若要存取的資料載入程序 （透過回呼機制），請使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
+ 若要存取的資料載入程序 （透過回呼的機制），請使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
- 若要直接從記憶體載入.pdb 檔案，請使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
+ 若要直接從記憶體中載入的.pdb 檔案，請使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
   
 ## <a name="example"></a>範例  
   

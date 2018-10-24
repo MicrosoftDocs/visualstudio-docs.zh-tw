@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: d98c0c14146fe69a04c2ebe3e715fd42167180b8
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849069"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -60,7 +60,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 ## <a name="net-core-support"></a>.NET Core 支援
 **Live Unit Testing 是否可以與 .NET Core 搭配使用？**
 
-是。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。 在 Visual Studio 2017 版本 15.3 中，最近新增 .NET Core 支援。 如果您想要針對 .NET Core 的 Live Unit Testing 支援，請升級至此版本的 Visual Studio。
+可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。 在 Visual Studio 2017 版本 15.3 中，最近新增 .NET Core 支援。 如果您想要針對 .NET Core 的 Live Unit Testing 支援，請升級至此版本的 Visual Studio。
 
 ## <a name="configuration"></a>Configuration
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**

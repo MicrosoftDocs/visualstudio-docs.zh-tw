@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192b78df4f0d1f579fb9a08c913c84e5a1e2fc71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34013c0b896f47e919a105680d18812aaba60dd0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906984"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>當地語系化的中性資源語言
 
@@ -33,7 +33,6 @@ ms.locfileid: "31943289"
 ```vb
 ' Set neutral resources language for assembly.
 <Assembly: NeutralResourcesLanguageAttribute("en")>
-
 ```
 
 ```csharp

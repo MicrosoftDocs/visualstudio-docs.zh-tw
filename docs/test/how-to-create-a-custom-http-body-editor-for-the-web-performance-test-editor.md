@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862459"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
@@ -33,31 +33,31 @@ ms.locfileid: "39380651"
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>使用 Windows 控制項程式庫專案建立使用者控制項
 
-1.  在 Visual Studio 的 [檔案] 功能表中，選擇 [新增]，然後選取 [專案]。
+1. 在 Visual Studio 的 [檔案] 功能表中，選擇 [新增]，然後選取 [專案]。
 
-     [新增專案] 對話方塊隨即出現。
+    [新增專案] 對話方塊隨即出現。
 
-2.  在 [已安裝的範本] 底下依據您的程式設計偏好選取 [Visual Basic] 或 [Visual C#]，然後選取 [Windows]。
+2. 在 [已安裝的範本] 底下依據您的程式設計偏好選取 [Visual Basic] 或 [Visual C#]，然後選取 [Windows]。
 
-    > [!NOTE]
-    > 此範例使用 Visual C#。
+   > [!NOTE]
+   > 此範例使用 Visual C#。
 
-3.  在範本的清單中，選取 [Windows Form 控制項程式庫]。
+3. 在範本的清單中，選取 [Windows Form 控制項程式庫]。
 
-4.  在 [名稱] 文字方塊中鍵入名稱 (例如 `MessageEditors`)，然後選擇 [確定]。
+4. 在 [名稱] 文字方塊中鍵入名稱 (例如 `MessageEditors`)，然後選擇 [確定]。
 
-    > [!NOTE]
-    > 此範例使用 MessageEditors。
+   > [!NOTE]
+   > 此範例使用 MessageEditors。
 
-     專案會加入至新的方案中，而且設計工具中會出現名為 *UserControl1.cs* 的 <xref:System.Windows.Forms.UserControl>。
+    專案會加入至新的方案中，而且設計工具中會出現名為 *UserControl1.cs* 的 <xref:System.Windows.Forms.UserControl>。
 
-5.  從 [工具箱] 的 [通用控制項] 分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
+5. 從 [工具箱] 的 [通用控制項] 分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
 
-6.  選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]。
+6. 選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]。
 
-7.  在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 程式庫] 專案，然後選取 [屬性]。
+7. 在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 程式庫] 專案，然後選取 [屬性]。
 
-8.  在 [屬性] 中，選取 [應用程式] 索引標籤。
+8. 在 [屬性] 中，選取 [應用程式] 索引標籤。
 
 9. 在 [目標 Framework] 下拉式清單中選取 **.NET Framework 4**。
 
@@ -95,9 +95,9 @@ ms.locfileid: "39380651"
 
 18. 加入下列屬性，以便取得並設定 RichTextBox1 中的文字。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 介面將使用 EditString，而 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 將使用 EditByteArray：
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ ms.locfileid: "39380651"
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ ms.locfileid: "39380651"
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>在 Windows 控制項程式庫專案中加入類別
 

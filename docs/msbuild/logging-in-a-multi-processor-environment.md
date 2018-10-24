@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077574"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879248"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了記錄的複雜性。 在單一處理器環境中，記錄器可以透過可預測的循序方式來處理傳入的事件、訊息、警告和錯誤。 不過，在多處理器環境中，來自數個來源的事件可能會同時或不依順序到達。 MSBuild 提供可辨識多處理器的新記錄器，並啟用建立自訂「轉送記錄器」。  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
   
 ### <a name="attaching-a-distributed-logger"></a>附加分散式記錄器  
- 若要在命令列建置上附加分散式記錄器，請使用 `/distributedlogger` (或者，簡稱是 `/dl`) 參數。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器包含兩個記錄類別：轉送記錄器和中央記錄器。 以下是附加分散式記錄器範例：  
+ 若要在命令列建置上附加分散式記錄器，請使用 `-distributedlogger` (或者，簡稱是 `-dl`) 參數。 用於指定記錄器類型和類別名稱的格式與 `-logger` 參數相同，差異在於分散式記錄器包含兩個記錄類別：轉送記錄器和中央記錄器。 以下是附加分散式記錄器範例：  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- 星號 (*) 可分隔 `/dl` 參數中的兩個記錄器名稱。  
+ 星號 (*) 可分隔 `-dl` 參數中的兩個記錄器名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [組建記錄器](../msbuild/build-loggers.md)   

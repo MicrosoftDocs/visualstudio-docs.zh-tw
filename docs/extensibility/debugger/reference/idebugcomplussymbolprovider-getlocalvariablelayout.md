@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout |Microsoft 文件
+title: IDebugComPlusSymbolProvider::GetLocalVariablelayout |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1675fe871849247d2c9f9da2bda3c7445356aaea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a691030ca2113acd0800ee11ca125884a7f4da8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916916"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-擷取的配置的本機變數的一組方法。  
+擷取一組方法的區域變數的配置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -54,19 +54,19 @@ int GetLocalVariablelayout(
  [in]模組的唯一識別碼。  
   
  `cMethods`  
- [in]方法的語彙基元中`rgMethodTokens`陣列。  
+ [in]方法的數字的語彙基元`rgMethodTokens`陣列。  
   
  `rgMethodTokens`  
- [in]方法語彙基元的陣列。  
+ [in]方法的語彙基元的陣列。  
   
  `pStreamLayout`  
- [out]文字資料流，其中包含變數的配置。  
+ [out]包含變數的版面配置的文字資料流。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

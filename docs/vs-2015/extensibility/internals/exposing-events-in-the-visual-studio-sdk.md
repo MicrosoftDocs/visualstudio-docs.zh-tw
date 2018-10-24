@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919880"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195568"
   
  下列程序說明如何傳回 VSPackage 特定事件。  
   
-1.  啟動環境時。  
+1. 啟動環境時。  
   
-2.  它會從登錄中讀取所有的 Vspackage，自動化、 AutomationEvents 和 AutomationProperties 索引鍵下的所有值名稱，並將資料表中的這些名稱。  
+2. 它會從登錄中讀取所有的 Vspackage，自動化、 AutomationEvents 和 AutomationProperties 索引鍵下的所有值名稱，並將資料表中的這些名稱。  
   
-3.  在此範例中，自動化取用者呼叫`DTE.Events.AutomationProjectsEvents`或`DTE.Events.AutomationProjectItemsEvents`。  
+3. 在此範例中，自動化取用者呼叫`DTE.Events.AutomationProjectsEvents`或`DTE.Events.AutomationProjectItemsEvents`。  
   
-4.  環境資料表中尋找的字串參數，並載入對應的 VSPackage。  
+4. 環境資料表中尋找的字串參數，並載入對應的 VSPackage。  
   
-5.  環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法所使用的名稱傳遞的呼叫中; 在此範例中，AutomationProjectsEvents 或 AutomationProjectItemsEvents。  
+5. 環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法所使用的名稱傳遞的呼叫中; 在此範例中，AutomationProjectsEvents 或 AutomationProjectItemsEvents。  
   
-6.  VSPackage 建立根物件，例如具有方法`get_AutomationProjectsEvents`和`get_AutomationProjectItemEvents`，然後傳回該物件的 IDispatch 指標。  
+6. VSPackage 建立根物件，例如具有方法`get_AutomationProjectsEvents`和`get_AutomationProjectItemEvents`，然後傳回該物件的 IDispatch 指標。  
   
-7.  環境呼叫適當的方法，以傳遞至自動化呼叫名稱為基礎。  
+7. 環境呼叫適當的方法，以傳遞至自動化呼叫名稱為基礎。  
   
-8.  `get_`方法會建立另一個 IDispatch 為基礎的事件物件會實作`IConnectionPointContainer`介面和`IConnectionPoint`介面，並傳回 IDispatchpointer 物件。  
+8. `get_`方法會建立另一個 IDispatch 為基礎的事件物件會實作`IConnectionPointContainer`介面和`IConnectionPoint`介面，並傳回 IDispatchpointer 物件。  
   
- 若要使用自動化公開事件，您必須回應<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>和監看式新增至登錄的字串。 在基本專案範例中，字串會是"BscProjectsEvents 」 和 「 BscProjectItemsEvents"。  
+   若要使用自動化公開事件，您必須回應<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>和監看式新增至登錄的字串。 在基本專案範例中，字串會是"BscProjectsEvents 」 和 「 BscProjectItemsEvents"。  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>從基本的專案範例的登錄項目  
  本節說明如何將自動化事件值新增至登錄。  

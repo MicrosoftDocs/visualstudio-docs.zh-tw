@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917696"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  否則為了要讓 <xref:System.Diagnostics.Trace> 方法運作，您程式的原始程式檔頂端就必須要有下列其中一個項目：  
   
--   `#Const TRACE = True` (在 Visual Basic 中)  
+- `#Const TRACE = True` (在 Visual Basic 中)  
   
--   `#define TRACE` (在 Visual C# 和 C++ 中)  
+- `#define TRACE` (在 Visual C# 和 C++ 中)  
   
- 或者，您的程式必須是使用 TRACE 選項所建置：  
+  或者，您的程式必須是使用 TRACE 選項所建置：  
   
--   `/d:TRACE=True` (在 Visual Basic 中)  
+- `/d:TRACE=True` (在 Visual Basic 中)  
   
--   `/d:TRACE` (在 Visual C# 和 C++ 中)  
+- `/d:TRACE` (在 Visual C# 和 C++ 中)  
   
- 如果您需要在 C# 或 Visual Basic 的發行組建中使用 Debug 方法，則必須在發行組態中定義 DEBUG 符號。  
+  如果您需要在 C# 或 Visual Basic 的發行組建中使用 Debug 方法，則必須在發行組態中定義 DEBUG 符號。  
   
- C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用來達到相同的效果<xref:System.Diagnostics.Trace>類別搭配條件式編譯，例如`#ifdef DEBUG`...`#endif`. 您可以定義中的這些符號**\<專案 > 屬性頁** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或是[變更 C 或 c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用來達到相同的效果<xref:System.Diagnostics.Trace>類別搭配條件式編譯，例如`#ifdef DEBUG`...`#endif`. 您可以定義中的這些符號**\<專案 > 屬性頁** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或是[變更 C 或 c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert 引數  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您呼叫<xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>只有一個引數，與`Assert`方法會檢查條件，和如果結果為 false，則會輸出的呼叫堆疊，內容**輸出**視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>：  
