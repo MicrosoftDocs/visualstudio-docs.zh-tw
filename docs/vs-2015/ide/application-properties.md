@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848614"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ ms.locfileid: "49209010"
   
  下列工作可以在 [應用程式] 窗格中完成：  
   
--   指定組件資訊  
+- 指定組件資訊  
   
--   指定應用程式的啟動顯示畫面  
+- 指定應用程式的啟動顯示畫面  
   
--   指定應用程式層級事件  
+- 指定應用程式層級事件  
   
--   變更組件名稱  
+- 變更組件名稱  
   
--   變更應用程式的命名空間  
+- 變更應用程式的命名空間  
   
--   變更應用程式類型  
+- 變更應用程式類型  
   
--   變更應用程式的啟動物件  
+- 變更應用程式的啟動物件  
   
--   指定應用程式圖示  
+- 指定應用程式圖示  
   
--   啟用 Windows XP 視覺化樣式  
+- 啟用 Windows XP 視覺化樣式  
   
--   指定應用程式的執行個體行為  
+- 指定應用程式的執行個體行為  
   
--   啟用自訂使用者驗證  
+- 啟用自訂使用者驗證  
   
--   指定應用程式的關閉行為  
+- 指定應用程式的關閉行為  
   
- 適用於您應用程式的工作取決於所使用的開發語言。  
+  適用於您應用程式的工作取決於所使用的開發語言。  
   
 ## <a name="in-this-section"></a>本節內容  
  [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

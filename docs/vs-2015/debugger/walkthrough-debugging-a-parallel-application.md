@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823654"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>逐步解說：偵錯平行應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ ms.locfileid: "49279769"
   
 #### <a name="to-create-the-sample-project"></a>建立範例專案  
   
-1.  在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。  
+1. 在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。  
   
-2.  在 **已安裝的範本** 窗格中，選取 Visual C#、 Visual Basic 或 Visual c + +。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]。  
+2. 在 **已安裝的範本** 窗格中，選取 Visual C#、 Visual Basic 或 Visual c + +。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]。  
   
-3.  選取 **主控台應用程式**，然後按一下**確定**。 保留偵錯組態，這是預設值。  
+3. 選取 **主控台應用程式**，然後按一下**確定**。 保留偵錯組態，這是預設值。  
   
-4.  在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。  
+4. 在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。  
   
-5.  將所選擇語言的下列程式碼貼到空白程式碼檔案中。  
+5. 將所選擇語言的下列程式碼貼到空白程式碼檔案中。  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+6. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
-2.  在 **建置**功能表上，按一下**重建方案**。  
+7. 在 **建置**功能表上，按一下**重建方案**。  
   
-     請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。  
+    請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>使用平行堆疊視窗：執行緒檢視  
  按一下 [偵錯] 功能表上的 [開始偵錯]。 等待叫用第一個中斷點。  
@@ -153,33 +153,33 @@ ms.locfileid: "49279769"
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>繼續執行至第三個中斷點為止  
   
-1.  若要繼續執行，直到遇到的第三個中斷點，在**偵錯**功能表上，按一下**繼續**。  
+1. 若要繼續執行，直到遇到的第三個中斷點，在**偵錯**功能表上，按一下**繼續**。  
   
-     當多個執行緒在相同方法中但方法不在呼叫堆疊的開頭時，方法會出現在不同方塊中。 位於目前中斷點的例子有 S.L，其中有三個執行緒，且分別出現在三個方塊中。 按兩下 S.L。  
+    當多個執行緒在相同方法中但方法不在呼叫堆疊的開頭時，方法會出現在不同方塊中。 位於目前中斷點的例子有 S.L，其中有三個執行緒，且分別出現在三個方塊中。 按兩下 S.L。  
   
-     ![平行堆疊 視窗中的執行路徑](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![平行堆疊 視窗中的執行路徑](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您想要查看哪些框架呼叫 s.l 和它呼叫哪些框架，請按一下**切換方法檢視**工具列上的按鈕。 下圖顯示的方法檢視**平行堆疊**視窗。  
+    請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您想要查看哪些框架呼叫 s.l 和它呼叫哪些框架，請按一下**切換方法檢視**工具列上的按鈕。 下圖顯示的方法檢視**平行堆疊**視窗。  
   
-     ![[平行堆疊] 視窗中的 方法檢視](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![[平行堆疊] 視窗中的 方法檢視](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 按一下 [**切換方法檢視**] 按鈕以結束這個模式。  
+    請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 按一下 [**切換方法檢視**] 按鈕以結束這個模式。  
   
-     捷徑功能表**平行堆疊**視窗還有下列其他項目。  
+    捷徑功能表**平行堆疊**視窗還有下列其他項目。  
   
-    -   **十六進位顯示**切換十進位和十六進位之間的工具提示中的數字。  
+   - **十六進位顯示**切換十進位和十六進位之間的工具提示中的數字。  
   
-    -   **符號載入資訊**並**符號設定**開啟各自的對話方塊。  
+   - **符號載入資訊**並**符號設定**開啟各自的對話方塊。  
   
-    -   **移至原始程式碼**並**移至反組譯碼**瀏覽在編輯器中選取的方法。  
+   - **移至原始程式碼**並**移至反組譯碼**瀏覽在編輯器中選取的方法。  
   
-    -   **顯示外部程式碼**會顯示所有框架，即使它們不在使用者程式碼。 請試著使用它來查看圖表如何展開來容納其他框架 (這些框架可能會因為您沒有它們的符號而呈現暗灰色)。  
+   - **顯示外部程式碼**會顯示所有框架，即使它們不在使用者程式碼。 請試著使用它來查看圖表如何展開來容納其他框架 (這些框架可能會因為您沒有它們的符號而呈現暗灰色)。  
   
      當您具有大型圖表並逐步執行至下一個中斷點時，您可能會想要讓檢視自動捲動至目前執行緒的作用中堆疊框架，也就是最先叫用中斷點的執行緒。 在 [**平行堆疊**] 視窗中，請確定**自動捲動到目前堆疊框架**工具列上的按鈕是開啟。  
   
      ![在 [平行堆疊] 視窗中的自動捲動](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  您繼續之前，在**平行堆疊**視窗中，捲動到最左邊和最下方。  
+2. 您繼續之前，在**平行堆疊**視窗中，捲動到最左邊和最下方。  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>繼續執行至第四個中斷點為止  
   

@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849043"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 獨立模式 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Visual Studio 獨立模式 shell 可讓您建立獨立的應用程式可執行�
 ## <a name="working-with-the-isolated-shell"></a>使用 獨立模式 shell  
  Visual Studio isolated shell 應用程式具有完整存取權 Visual Studio 服務，並支援特殊的自訂和商標。 有數種方式，您可以自訂 isolated 的 shell 應用程式：  
   
--   您可以使用 Vspackage 和 Managed Extensibility Framework (MEF) 元件組件來擴充 isolated 的 shell 應用程式，就像您其他 Visual Studio 延伸模組中使用它們。 如需詳細資訊，請參閱 <<c0> [ 擴充 Isolated Shell](../extensibility/extending-the-isolated-shell.md)。  
+- 您可以使用 Vspackage 和 Managed Extensibility Framework (MEF) 元件組件來擴充 isolated 的 shell 應用程式，就像您其他 Visual Studio 延伸模組中使用它們。 如需詳細資訊，請參閱 <<c0> [ 擴充 Isolated Shell](../extensibility/extending-the-isolated-shell.md)。  
   
--   若要讓 Visual Studio 功能和功能表命令群組，可以或無法使用，更新.vsct 檔案中的應用程式的使用者介面 (UI) 專案。  
+- 若要讓 Visual Studio 功能和功能表命令群組，可以或無法使用，更新.vsct 檔案中的應用程式的使用者介面 (UI) 專案。  
   
--   若要移除**選項**頁面或應用程式，從其他 Visual Studio shell 元件更新.pkgundef 檔案的應用程式。  
+- 若要移除**選項**頁面或應用程式，從其他 Visual Studio shell 元件更新.pkgundef 檔案的應用程式。  
   
--   若要修改其他方面的外觀或行為的殼層，更新應用程式的.pkgdef 檔。  
+- 若要修改其他方面的外觀或行為的殼層，更新應用程式的.pkgdef 檔。  
   
--   只有當應用程式啟動時，也可以指定殼層的某些層面。 若要這樣做，請更新 appenvstub.dll 開始進入點的呼叫中的參數。  
+- 只有當應用程式啟動時，也可以指定殼層的某些層面。 若要這樣做，請更新 appenvstub.dll 開始進入點的呼叫中的參數。  
   
- 如需您可以自訂的不同元素的詳細資訊，請參閱[Isolated Shell 的項目](../extensibility/elements-of-the-isolated-shell.md)。  
+  如需您可以自訂的不同元素的詳細資訊，請參閱[Isolated Shell 的項目](../extensibility/elements-of-the-isolated-shell.md)。  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Isolated Shell 的標準功能  
  下列功能是標準的 Visual Studio 所有版本。  

@@ -17,12 +17,12 @@ ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80fb398202aacc02ad97ebce294a7fd6d3ccf919
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2a111a27771738076b6118a43fc77cf7ea4b711
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853372"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

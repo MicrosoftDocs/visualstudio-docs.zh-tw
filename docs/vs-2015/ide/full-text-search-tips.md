@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850044"
 ---
 # <a name="full-text-search-tips"></a>全文檢索搜尋提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ ms.locfileid: "49303429"
  如果您指定搜尋字串，其中包含多個單字，例如 "word1 word2"，該字串相當於輸入 "word1 AND word2"，它只會傳回包含搜尋字串中所有個別單字的主題。  
   
 > [!IMPORTANT]
->  1.  不支援片語搜尋。 如果您在搜尋字串中指定多個單字，傳回的主題會包含您指定的所有文字，但不一定是您指定的精確對應片語。  
-> 2.  使用邏輯運算子指定搜尋片語中文字之間的關聯性。 您可以包含邏輯運算子，例如 AND、OR、NOT 和 NEAR，以進一步精簡您的搜尋。 例如，如果您搜尋 "declaring NEAR union"，搜尋結果所包含的主題會包含 "declaring" 和 "union" 等字，且彼此之間相隔不超過幾個字。 如需詳細資訊，請參閱[搜尋運算式中的邏輯運算子](../ide/logical-operators-in-search-expressions.md)。  
+> 1. 不支援片語搜尋。 如果您在搜尋字串中指定多個單字，傳回的主題會包含您指定的所有文字，但不一定是您指定的精確對應片語。  
+>    2.  使用邏輯運算子指定搜尋片語中文字之間的關聯性。 您可以包含邏輯運算子，例如 AND、OR、NOT 和 NEAR，以進一步精簡您的搜尋。 例如，如果您搜尋 "declaring NEAR union"，搜尋結果所包含的主題會包含 "declaring" 和 "union" 等字，且彼此之間相隔不超過幾個字。 如需詳細資訊，請參閱[搜尋運算式中的邏輯運算子](../ide/logical-operators-in-search-expressions.md)。  
   
 ### <a name="filters"></a>篩選條件  
  您可以使用進階搜尋運算子，進一步限制搜尋結果。 說明包含三個類別，可用來篩選全文檢索搜尋的結果︰標題、程式碼和關鍵字。 如需詳細資訊，請參閱[搜尋運算式中的進階搜尋運算子](../ide/advanced-search-operators-in-search-expressions.md)。  

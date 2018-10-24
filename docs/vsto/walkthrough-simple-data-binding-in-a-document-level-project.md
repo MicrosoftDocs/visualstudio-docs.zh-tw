@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cae2ba32be73972e6c716e9100120514a6346cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824371"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說： 在文件層級專案中的簡單資料繫結
   本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。  
@@ -33,13 +33,13 @@ ms.locfileid: "35258136"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Excel 專案的資料來源。  
+- 建立 Excel 專案的資料來源。  
   
--   將控制項加入工作表。  
+- 將控制項加入工作表。  
   
--   捲動資料庫記錄。  
+- 捲動資料庫記錄。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -57,34 +57,34 @@ ms.locfileid: "35258136"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立 Excel 活頁簿專案同名**我的簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 建立 Excel 活頁簿專案同名**我的簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
- Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的簡單資料繫結**專案加入**方案總管 中**。  
+   Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的簡單資料繫結**專案加入**方案總管 中**。  
   
 ## <a name="create-the-data-source"></a>建立資料來源  
  使用 [ **資料來源** ] 視窗將型別資料集加入專案。  
   
 ### <a name="to-create-the-data-source"></a>若要建立資料來源  
   
-1.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
+1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
   
-2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
+2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
   
-3.  選取 [**資料庫**，然後按一下**下一步]**。  
+3. 選取 [**資料庫**，然後按一下**下一步]**。  
   
-4.  選取資料連接至 Northwind 範例 SQL Server 資料庫，或加入新的連接 using**新的連接** 按鈕。  
+4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或加入新的連接 using**新的連接** 按鈕。  
   
-5.  已選取或建立連接之後，請按一下**下一步**。  
+5. 已選取或建立連接之後，請按一下**下一步**。  
   
-6.  清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
+6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
   
-7.  依序展開**資料表**中的節點**資料庫物件**視窗。  
+7. 依序展開**資料表**中的節點**資料庫物件**視窗。  
   
-8.  選取此核取方塊旁**客戶**資料表。  
+8. 選取此核取方塊旁**客戶**資料表。  
   
 9. 按一下 [ **完成**]。  
   
- 精靈會新增**客戶**資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
+   精靈會新增**客戶**資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
   
 ## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表  
  此逐步解說中，您需要兩個已命名的範圍和第一個工作表上的四個按鈕。 首先，新增兩個具名的範圍，從**Zdroje dat**視窗，讓它們自動繫結至資料來源。 接下來，新增按鈕等，從**工具箱**。  
@@ -109,37 +109,37 @@ ms.locfileid: "35258136"
   
 ### <a name="to-add-four-buttons"></a>若要加入四個按鈕  
   
-1.  從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。  
+1. 從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。  
   
-     此欄位稱為`Button1`。  
+    此欄位稱為`Button1`。  
   
-2.  將另外三個按鈕新增至 依此順序中，下列資料格，讓名稱所示：  
+2. 將另外三個按鈕新增至 依此順序中，下列資料格，讓名稱所示：  
   
-    |資料格|(名稱)|  
-    |----------|--------------|  
-    |B3|Button2|  
-    |C3|Button3|  
-    |D3|Button4|  
+   |資料格|(名稱)|  
+   |----------|--------------|  
+   |B3|Button2|  
+   |C3|Button3|  
+   |D3|Button4|  
   
- 下一個步驟是將文字加入至按鈕，並在 C# 中，加入事件處理常式。  
+   下一個步驟是將文字加入至按鈕，並在 C# 中，加入事件處理常式。  
   
 ## <a name="initialize-the-controls"></a>初始化的控制項  
  設定按鈕文字，並新增事件處理常式期間<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件。  
   
 ### <a name="to-initialize-the-controls"></a>若要初始化的控制項  
   
-1.  在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。  
+1. 在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。  
   
-2.  將下列程式碼加入`Sheet1_Startup`方法來設定每個按鈕的文字。  
+2. 將下列程式碼加入`Sheet1_Startup`方法來設定每個按鈕的文字。  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
+    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
+    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。  
+3. 僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
+    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- 現在將新增程式碼來處理<xref:System.Windows.Forms.Control.Click>按鈕的事件，讓使用者可以瀏覽記錄。  
+   現在將新增程式碼來處理<xref:System.Windows.Forms.Control.Click>按鈕的事件，讓使用者可以瀏覽記錄。  
   
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>加入程式碼來啟用捲動記錄  
  將程式碼加入<xref:System.Windows.Forms.Control.Click>記錄之間移動的每個按鈕事件處理常式。  

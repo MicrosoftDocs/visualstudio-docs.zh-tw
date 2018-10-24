@@ -17,12 +17,12 @@ ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 937afe676ffecbada7a21480ceeb5c16d607006d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 564f4bc5d824c2493e84a90fbdf3400b800e5207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850499"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

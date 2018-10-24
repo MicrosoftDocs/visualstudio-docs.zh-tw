@@ -17,12 +17,12 @@ ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8237e9093b700956ddc38ede82b58a9ba0e29f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90c3b3b159b46761d132f3a7ae3926058c0b2936
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851163"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
