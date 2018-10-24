@@ -15,12 +15,12 @@ ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49a31b3b5d3712057bfc2dd8f16074a599a839b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb795eb6af2718d72c61c8e20565d937de45c9b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828216"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

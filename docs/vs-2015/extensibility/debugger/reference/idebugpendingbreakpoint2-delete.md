@@ -18,12 +18,12 @@ ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b77c66a1678f3299a430068f31f98f6d8ab59002
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c665e42c3e10b3cb5964707b77fd3fa2faf0095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813514"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

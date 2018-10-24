@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS |Microsoft 文件
+title: EVALFLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829959"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 指定控制運算式評估的旗標。  
@@ -63,19 +63,19 @@ public enum enum_EVALFLAGS {
  指定中斷點停止。  
   
  EVAL_ALLOWERRORREPORT  
- 指定允許主應用程式報告的錯誤。 主要用於 Internet Explorer 中指令碼中的運算式評估。  
+ 指定允許主應用程式報告的錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。  
   
  EVAL_FUNCTION_AS_ADDRESS  
  要評估做為位址，而不是叫用函式的強制函式。  
   
  EVAL_NOFUNCEVAL  
- 函式可防止在評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 此函式可以正確評估，為位址，但不是能作為值。  
+ 函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。  
   
  EVAL_NOEVENTS  
- 旗標，表示工作階段的偵錯管理員 (SDM) 或 IDE，您不應該傳送之運算式評估期間發生的事件。  
+ 旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。  
   
 ## <a name="remarks"></a>備註  
- 這些旗標會傳遞做為引數[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)和[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。  
+ 這些旗標會傳遞做為引數[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)並[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。  
   
  這些旗標可能會與位元 OR 運算結合。  
   

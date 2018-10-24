@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue |Microsoft 文件
+title: IPerPropertyBrowsing2::SetPredefinedValue |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aed28237fe8e2be5789e062aed01e428ce805790
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac3b2e6cf61bdd6b9587cd390494d4074ce6361d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828984"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
-設定所指定之屬性的值`dispID`。 語彙基元所識別預先定義的值`dwCookie.`  
+設定所指定的屬性值`dispID`。 語彙基元所識別的預先定義的值 `dwCookie.`  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,10 +42,10 @@ HRESULT SetPredefinedValue(
  [in]預先定義的值要設定之屬性的分派識別項。  
   
  `dwCookie`  
- [in]語彙基元識別要設定的值。  
+ [in]語彙基元，可識別要設定的值。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回有效`HRESULT`，通常`S_OK`。  
+ 會傳回有效`HRESULT`，通常是`S_OK`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPerPropertyBrowsing2 介面 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

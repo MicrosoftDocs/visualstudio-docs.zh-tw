@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_compiland |Microsoft 文件'
+title: 'Idiasectioncontrib:: Get_compiland |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd84fb21d31946f29dff63209feb6b95f4a8c52
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd73e97f039202223c7233383c1da586f4548be2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824356"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
-擷取造成本節編譯模組符號的參考。  
+擷取提供這一節的編譯模組符號的參考。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_compiland (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表造成本章節的編譯。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示參與本章節將編譯模組。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   

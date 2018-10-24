@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816348"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "49261036"
 ## <a name="option-attributes-and-layout"></a>選項屬性和版面配置  
  頁面會提供使用者介面 (UI) 決定的選項中的自訂選項頁面的外觀。 版面配置、 標記和描述的一般選項 頁面中的選項是由下列屬性所決定：  
   
--   <xref:System.ComponentModel.CategoryAttribute> 決定選項分類。  
+- <xref:System.ComponentModel.CategoryAttribute> 決定選項分類。  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> 決定選項的顯示名稱。  
+- <xref:System.ComponentModel.DisplayNameAttribute> 決定選項的顯示名稱。  
   
--   <xref:System.ComponentModel.DescriptionAttribute> 決定選項的描述。  
+- <xref:System.ComponentModel.DescriptionAttribute> 決定選項的描述。  
   
-    > [!NOTE]
-    >  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
+  > [!NOTE]
+  >  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
   
- 請考慮下列程式碼片段：  
+  請考慮下列程式碼片段：  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- OptionInteger 選項會顯示為 [選項] 頁面上**整數選項**中**My Options**類別目錄。 如果選取此選項，則描述**我的 [整數] 選項**，會出現在 [描述] 方塊。  
+  OptionInteger 選項會顯示為 [選項] 頁面上**整數選項**中**My Options**類別目錄。 如果選取此選項，則描述**我的 [整數] 選項**，會出現在 [描述] 方塊。  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>從另一個 VSPackage 中存取 [選項] 頁面  
  裝載和管理選項 頁面的 VSPackage 可以透過程式設計方式存取從另一個 VSPackage 使用 automation 模型。 例如，下列程式碼的 VSPackage 會註冊為裝載選項頁面。  

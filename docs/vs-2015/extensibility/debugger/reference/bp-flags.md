@@ -17,12 +17,12 @@ ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 055beb86c0374bacedd5ea2b72ad8463a62f5bb1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a819c822a813cd75ec72ff0883d36f19306d3d72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829946"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

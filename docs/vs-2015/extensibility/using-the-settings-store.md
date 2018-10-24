@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811358"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有兩種類型的設定存放區：  
   
--   組態設定，也就是唯讀的 Visual Studio 和 VSPackage 設定。 Visual Studio 會將所有已知的.pkgdef 檔案中的設定合併到此存放區。  
+- 組態設定，也就是唯讀的 Visual Studio 和 VSPackage 設定。 Visual Studio 會將所有已知的.pkgdef 檔案中的設定合併到此存放區。  
   
--   使用者設定，也就是可寫入的設定，例如在頁面上會顯示**選項** 對話方塊中，屬性頁，以及某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些的少量資料的本機儲存體。  
+- 使用者設定，也就是可寫入的設定，例如在頁面上會顯示**選項** 對話方塊中，屬性頁，以及某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些的少量資料的本機儲存體。  
   
- 本逐步解說示範如何讀取組態設定存放區中的資料。 請參閱[寫入使用者設定存放區](../extensibility/writing-to-the-user-settings-store.md)以了解如何將寫入使用者設定存放區。  
+  本逐步解說示範如何讀取組態設定存放區中的資料。 請參閱[寫入使用者設定存放區](../extensibility/writing-to-the-user-settings-store.md)以了解如何將寫入使用者設定存放區。  
   
 ## <a name="creating-the-example-project"></a>建立範例專案  
  本節說明如何使用示範的功能表命令來建立簡單的延伸模組專案。  
@@ -43,44 +43,44 @@ ms.locfileid: "49273360"
 ## <a name="using-the-configuration-settings-store"></a>使用組態設定存放區  
  本節說明如何偵測並顯示組態設定。  
   
-1.  在 SettingsStorageCommand.cs 檔案中，新增下列 using 陳述式：  
+1. 在 SettingsStorageCommand.cs 檔案中，新增下列 using 陳述式：  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  在  `MenuItemCallback`，移除; 方法的主體，並新增下列行取得組態設定存放區：  
+2. 在  `MenuItemCallback`，移除; 方法的主體，並新增下列行取得組態設定存放區：  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>是一個 managed 的 helper 類別，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>服務。  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>是一個 managed 的 helper 類別，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>服務。  
   
-3.  立即了解是否要安裝 Windows Phone 工具。 程式碼應該如下所示：  
+3. 立即了解是否要安裝 Windows Phone 工具。 程式碼應該如下所示：  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  測試程式碼。 建置此專案並開始偵錯。  
+4. 測試程式碼。 建置此專案並開始偵錯。  
   
-5.  在實驗執行個體，在**工具**功能表上，按一下**叫用 SettingsStoreCommand**。  
+5. 在實驗執行個體，在**工具**功能表上，按一下**叫用 SettingsStoreCommand**。  
   
-     您應該會看到一個訊息方塊，指出**Microsoft Windows Phone 開發人員工具：** 後面 **，則為 True**或是**False**。  
+    您應該會看到一個訊息方塊，指出**Microsoft Windows Phone 開發人員工具：** 後面 **，則為 True**或是**False**。  
   
- Visual Studio 會保留在系統登錄中設定存放區。  
+   Visual Studio 會保留在系統登錄中設定存放區。  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>若要使用登錄編輯程式來確認組態設定  
   

@@ -18,12 +18,12 @@ ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe7f29fabb62b7f7703ad501d332c9d37c1e47b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2e2aa5c464d6bd301dc85124d617cac210e72fee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828191"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

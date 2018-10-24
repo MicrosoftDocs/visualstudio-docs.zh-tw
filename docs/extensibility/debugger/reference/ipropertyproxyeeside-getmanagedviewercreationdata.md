@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft 文件
+title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821366"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-擷取這個屬性類型的檢視器的相關資訊，才能具現化該檢視器。  
+擷取此屬性類型的檢視器的相關資訊，才能具現化該檢視器。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,28 +51,28 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>參數  
  `assemName`  
- [out]傳回擁有此物件的組件的名稱。  
+ [out]傳回保存此物件的組件的名稱。  
   
  `assemBytes`  
- [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含這個物件 （如果不有任何位元組，這是 null 值） 的組件位元組。  
+ [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含這個物件 （如果不可用的任何位元組，這是 null 值） 的組件位元組。  
   
  `assemPdb`  
- [out]傳回`IEEDataStorage`物件包含符號存放區 （如果沒有符號存放區功能，這是 null 值） 這個物件的資訊。  
+ [out]傳回`IEEDataStorage`物件，包含符號儲存這個物件的資訊 （如果不可用的任何符號存放區，這是 null 值）。  
   
  `className`  
  [out]傳回包含此物件的類別名稱。  
   
  `alr`  
- [out]傳回值，從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉，指出組件的位置。  
+ [out]傳回值，以從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉，指出組件的位置。  
   
  `replacementOk`  
- [out]傳回非零值 (`TRUE`) 可以變更此物件的值; 如果零 (`FALSE`) 的物件是否唯讀。  
+ [out]傳回非零值 (`TRUE`)，可以變更這個物件的值; 如果零 (`FALSE`) 的物件是否唯讀。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 類型的視覺化檢視使用這個方法來具現化受管理的檢視器。  
+ 類型視覺化檢視使用這個方法來具現化受管理的檢視器。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

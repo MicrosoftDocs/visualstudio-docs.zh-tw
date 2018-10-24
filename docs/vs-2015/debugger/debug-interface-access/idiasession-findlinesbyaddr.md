@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27d0c5dc86d8f63d41a4cb6b668968345a60f615
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 28c6786f9e204467e95ccb5309822c0249fa0daa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827437"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

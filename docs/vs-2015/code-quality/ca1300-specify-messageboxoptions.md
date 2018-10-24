@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 157cac1ddd200799b0362529c0a434086db77781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d1b5e94ab05a5aca551cf0979aa475824a2e8fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825474"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300：指定 MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|

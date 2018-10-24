@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ec4a248be45489eafcbd208329a52cfc06d8237f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825327"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不應使用預設參數
+
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

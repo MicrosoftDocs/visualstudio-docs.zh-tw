@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs |Microsoft 文件
+title: IDebugSettingsCallback2::EnumEEs |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: add7f9b34119fb11938064598b213e26000ecb1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe4d3d2f2a3d76bbaec8c92c8053bac07e352389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812084"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 列舉可用的運算式評估工具提供的語言和廠商識別碼。  
@@ -48,7 +48,7 @@ public int EnumEEs(
  [in]中的項目數`pceltEEs`緩衝區。  
   
  `rgguidLang`  
- [in、 out]做為程式設計語言的的唯一識別碼。  
+ [in、 out]程式設計語言的唯一識別碼。  
   
  `rgguidVendor`  
  [in、 out]廠商的唯一識別碼。  
@@ -57,7 +57,7 @@ public int EnumEEs(
  [in、 out]運算式評估工具的陣列。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

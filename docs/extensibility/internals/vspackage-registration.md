@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828418"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它們已安裝，且應該會載入。 此程序，即可將資訊寫入登錄中。 這是典型的工作，安裝程式。  
@@ -48,15 +48,15 @@ Vspackage 必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
  好的理論上，同時自我登錄會有讓它更適合使用 VSPackage 安裝的幾個缺點：  
   
--   正確支援安裝、 解除安裝、 安裝復原和解除安裝回復要求您撰寫自我呼叫 RegPkg 註冊每個 managed VSPackage 的四個自訂動作。  
+- 正確支援安裝、 解除安裝、 安裝復原和解除安裝回復要求您撰寫自我呼叫 RegPkg 註冊每個 managed VSPackage 的四個自訂動作。  
   
--   並排顯示支援的方法可能會要求您撰寫 RegSvr32 或 RegPkg 叫用的每個支援版本的四個自訂動作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+- 並排顯示支援的方法可能會要求您撰寫 RegSvr32 或 RegPkg 叫用的每個支援版本的四個自訂動作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   自我登錄模組的安裝無法安全地復原，因為沒有任何方法，告訴自我登錄機碼由其他功能或應用程式。  
+- 自我登錄模組的安裝無法安全地復原，因為沒有任何方法，告訴自我登錄機碼由其他功能或應用程式。  
   
--   自我登錄的 Dll 有時會連結到輔助不存在或版本不正確的 Dll。 相反地，Windows 安裝程式可以登錄 Dll 登錄資料表使用不會相依於系統的目前狀態。  
+- 自我登錄的 Dll 有時會連結到輔助不存在或版本不正確的 Dll。 相反地，Windows 安裝程式可以登錄 Dll 登錄資料表使用不會相依於系統的目前狀態。  
   
--   自我登錄程式碼可以存取網路資源，例如型別程式庫，如果某個元件有同時指定為執行從來源和 SelfReg 表列出會被拒絕。 這會導致系統管理安裝期間失敗元件的安裝。  
+- 自我登錄程式碼可以存取網路資源，例如型別程式庫，如果某個元件有同時指定為執行從來源和 SelfReg 表列出會被拒絕。 這會導致系統管理安裝期間失敗元件的安裝。  
   
 ## <a name="see-also"></a>另請參閱  
  [Windows 安裝程式](/windows/desktop/Msi/windows-installer-portal)   

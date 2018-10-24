@@ -17,12 +17,12 @@ ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3dccdd97d6f287eb8e7791017dae534c9067f181
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 118b86193d9241744d5faae3719ad53a593537f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830531"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

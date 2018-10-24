@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814555"
 ---
 # <a name="debugging-dll-projects"></a>偵錯 DLL 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 下列範本會建立 DLL：  
   
--   (C++、C# 和 Visual Basic) 類別庫  
+- (C++、C# 和 Visual Basic) 類別庫  
   
--   (C++、C# 和 Visual Basic)：Windows Form 控制項程式庫  
+- (C++、C# 和 Visual Basic)：Windows Form 控制項程式庫  
   
-     Windows 控制項程式庫的偵錯方式與偵錯類別庫專案的方式相似。 在大多數的情況，您會從另一個專案呼叫 Windows 控制項。 當您偵錯呼叫專案時，您可以逐步執行您的 Windows 控制項的程式碼、設定中斷點，和執行其他偵錯工作。 如需詳細資訊，請參閱 [Windows Form 控制項](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
+   Windows 控制項程式庫的偵錯方式與偵錯類別庫專案的方式相似。 在大多數的情況，您會從另一個專案呼叫 Windows 控制項。 當您偵錯呼叫專案時，您可以逐步執行您的 Windows 控制項的程式碼、設定中斷點，和執行其他偵錯工作。 如需詳細資訊，請參閱 [Windows Form 控制項](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
   
--   (C# 和 Visual Basic)：Web 控制項程式庫  
+- (C# 和 Visual Basic)：Web 控制項程式庫  
   
-     如需詳細資訊，請參閱 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)。  
+   如需詳細資訊，請參閱 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)。  
   
--   (C++)：MFC ActiveX 控制項和 MFC 智慧型裝置 ActiveX 控制項  
+- (C++)：MFC ActiveX 控制項和 MFC 智慧型裝置 ActiveX 控制項  
   
-     ActiveX 控制項是一種可以透過網際網路下載至用戶端電腦的控制項，並可在網頁上顯示和啟動。  
+   ActiveX 控制項是一種可以透過網際網路下載至用戶端電腦的控制項，並可在網頁上顯示和啟動。  
   
-     偵錯 ActiveX 控制項與偵錯其他種類的控制項相似，因為它們都無法獨立執行，必須嵌入 HTML 網頁中才能執行。 如需詳細資訊，請參閱 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)。  
+   偵錯 ActiveX 控制項與偵錯其他種類的控制項相似，因為它們都無法獨立執行，必須嵌入 HTML 網頁中才能執行。 如需詳細資訊，請參閱 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)。  
   
--   (C++)：MFC 智慧型裝置 DLL  
+- (C++)：MFC 智慧型裝置 DLL  
   
-     如需詳細資訊，請參閱 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)。  
+   如需詳細資訊，請參閱 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)。  
   
- 本章節也包含下列主題的相關資訊：  
+  本章節也包含下列主題的相關資訊：  
   
--   [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
+- [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
+- [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
   
- 本主題包含下列章節，其中提供有關如何準備偵錯類別庫的注意事項：  
+  本主題包含下列章節，其中提供有關如何準備偵錯類別庫的注意事項：  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  無論您如何啟動偵錯，確定要先建置 DLL 的偵錯版本，並且確定該偵錯版本是位於應用程式預期可找到的位置。 這似乎是顯而易見的事情，但是如果您忘記這個步驟，應用程式可能會尋找到 DLL 的其他版本並且載入。 程式將會繼續執行，而您會懷疑為何一直沒遇到中斷點。 您可以在偵錯時開啟偵錯工具的 [ **模組** ] 視窗，驗證您的程式載入了哪些 DLL。 [ **模組** ] 視窗會列出正在偵錯的處理序中所載入的每個 DLL 或 EXE。 如需詳細資訊，請參閱 [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md)。  
@@ -103,15 +103,15 @@ ms.locfileid: "49267380"
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 偵錯呼叫的應用程式  
  若要偵錯 DLL，請由偵錯呼叫的應用程式開炲，通常是 EXE 或 Web 應用程式。 您可以使用幾種方式進行偵錯。  
   
--   如果您有呼叫應用程式的專案，就可以開啟該專案，並且從 [ **偵錯** ] 功能表啟動執行。 如需詳細資訊，請參閱 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)。  
+- 如果您有呼叫應用程式的專案，就可以開啟該專案，並且從 [ **偵錯** ] 功能表啟動執行。 如需詳細資訊，請參閱 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)。  
   
--   如果該呼叫應用程式是已部署在測試或實際執行電腦上的現有程式，而且已經在執行，您可以附加至這個應用程式。 如果該 DLL 是 Internet Explorer 所裝載的控制項，或網頁上的控制項，請使用這個方法。 如需詳細資訊，請參閱 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。  
+- 如果該呼叫應用程式是已部署在測試或實際執行電腦上的現有程式，而且已經在執行，您可以附加至這個應用程式。 如果該 DLL 是 Internet Explorer 所裝載的控制項，或網頁上的控制項，請使用這個方法。 如需詳細資訊，請參閱 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。  
   
--   您可以從 DLL 專案對呼叫的應用程式進行偵錯。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
+- 您可以從 DLL 專案對呼叫的應用程式進行偵錯。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
   
--   您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
+- 您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
   
- 在您啟動偵錯呼叫的應用程式之前，您通常要在類別庫裡設定中斷點。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 遇到中斷點時，您可以逐步執行程式碼，觀察每行的動作，直到您分辨出問題的所在。 如需詳細資訊，請參閱 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。  
+  在您啟動偵錯呼叫的應用程式之前，您通常要在類別庫裡設定中斷點。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 遇到中斷點時，您可以逐步執行程式碼，觀察每行的動作，直到您分辨出問題的所在。 如需詳細資訊，請參閱 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
  若要偵錯網頁的控制項，請建立嵌入該控制項的 [ [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ] 頁面 (如果這樣的頁面不存在)。 然後您可以在這個網頁和控制項程式碼中放置中斷點。 接下來由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]叫用這個網頁。  
