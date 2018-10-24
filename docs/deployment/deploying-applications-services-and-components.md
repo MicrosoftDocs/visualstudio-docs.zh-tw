@@ -26,7 +26,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
 ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/10/2018
 ms.locfileid: "44320549"
@@ -37,7 +37,7 @@ ms.locfileid: "44320549"
 
 請參閱快速入門和教學課程逐步部署指示。 如需部署選項的概觀，請參閱 <<c0> [ 哪些發佈選項適合我？](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)。
 
-## <a name="deploy-to-local-folder"></a>將部署到本機資料夾
+## <a name="deploy-to-local-folder"></a>部署到本機資料夾
 
 部署至本機資料夾通常用來進行測試，或若要開始另一個工具用於最終部署階段式的部署。
 
@@ -62,7 +62,7 @@ ms.locfileid: "44320549"
     如需有關從 Azure App Service 的發行設定檔匯入至 Visual Studio，請參閱[匯入發佈設定，並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
 
     > [!NOTE]
-    > 如果您還沒有 Azure 帳戶，您可以[歡迎現在註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
+    > 如果您還沒有 Azure 帳戶，您可以[在這裡註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>發佈至網路或網路共用部署
 
@@ -114,19 +114,19 @@ ms.locfileid: "44320549"
 
 ## <a name="devops-deployment"></a>DevOps 部署
 
-在小組環境中，您可以使用 Azure 管線，以啟用持續部署您的應用程式。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index?view=vsts)並[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts)。
+在小組環境中，您可以使用 Azure Pipelines，以啟用您應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 與[部署到 Azure](/azure/devops/deploy-azure/index?view=vsts)。
 
 ## <a name="deployment-for-other-app-types"></a>部署其他應用程式類型
 
 | 應用程式類型 | 部署情節 | 連結 |
 | --- | --- | --- |
-| **Office 應用程式** | 您可以從 Visual Studio 的 office 發行增益集。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Office 應用程式** | 您可以從 Visual Studio 發行 Office 增益集。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 或 OData 服務**  | 其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發及部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch 在 Visual Studio 2017 中，已不再支援，但仍然能夠從 Visual Studio 2015 和更早版本。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch 在 Visual Studio 2017 已不再支援，但仍可以從 Visual Studio 2015 和更早版本部署。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您可以採取快速瀏覽不同的應用程式的部署選項。
+在此教學課程中，您快速看了不同應用程式的部署選項。
 
 > [!div class="nextstepaction"]
 > [哪些發佈選項適合我？](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)
