@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889811"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233736"
   
  針對加密演算法：  
   
--   <xref:System.Security.Cryptography.DES> 加密包含小型的金鑰大小，這可能是少於一天的暴力攻擊。  
+- <xref:System.Security.Cryptography.DES> 加密包含小型的金鑰大小，這可能是少於一天的暴力攻擊。  
   
--   <xref:System.Security.Cryptography.RC2> 加密容易受到相關金鑰攻擊，其中，攻擊者會找出所有金鑰值之間的數學關係。  
+- <xref:System.Security.Cryptography.RC2> 加密容易受到相關金鑰攻擊，其中，攻擊者會找出所有金鑰值之間的數學關係。  
   
- 如果在原始程式碼中找到任何上述的密碼編譯函式，並將警告擲回給使用者，則會觸發這個規則。  
+  如果在原始程式碼中找到任何上述的密碼編譯函式，並將警告擲回給使用者，則會觸發這個規則。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  使用密碼編譯較強的選項：  

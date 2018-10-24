@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892086"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 強制可維護的程式碼的程式碼分析簽入原則
 
@@ -47,15 +47,15 @@ Team foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
 2. 選取核取方塊，如下列規則：
 
-    -   繼承深度： **CA1501 AvoidExcessiveInheritance** -臨界值： 警告層級的深度超過 5
+   - 繼承深度： **CA1501 AvoidExcessiveInheritance** -臨界值： 警告層級的深度超過 5
 
-    -   複雜度： **CA1502 AvoidExcessiveComplexity** -臨界值： 超過 25 項警告
+   - 複雜度： **CA1502 AvoidExcessiveComplexity** -臨界值： 超過 25 項警告
 
-    -   可維護性指數： **ca1505 應 AvoidUnmaintainableCode** -臨界值： 警告少於 20
+   - 可維護性指數： **ca1505 應 AvoidUnmaintainableCode** -臨界值： 警告少於 20
 
-    -   結合的類別： **CA1506 AvoidExcessiveClassCoupling** -臨界值： 警告在多個類別的 80 和超過 $30 方法
+   - 結合的類別： **CA1506 AvoidExcessiveClassCoupling** -臨界值： 警告在多個類別的 80 和超過 $30 方法
 
-    此外，如果您想避免成功的組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。
+     此外，如果您想避免成功的組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。
 
 3. 按一下 [確定 **Deploying Office Solutions**]。 新的簽入原則現在適用於未來的簽入。
 

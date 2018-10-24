@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName |Microsoft 文件
+title: IDebugComPlusSymbolProvider2::GetTypesByName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098c04615629b844fae8022058d47455db9cd98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882431"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-擷取指定之名稱的類型。  
+擷取指定其名稱的類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,19 +47,19 @@ int GetTypesByName(
  [in]型別的名稱。  
   
  `nameMatch`  
- [in]選取類型的相符項目，例如，區分大小寫。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。  
+ [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。  
   
  `ppEnum`  
  [out]列舉值，其中包含具有指定名稱的類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 泛型型別，尋找註冊名稱為 '清單\<int >' 或' 清單\<int、 int >' 是 'List'。 如果類型相同的名稱會出現在多個模組，`ppEnum`參數會包含所有複本。 您必須使用[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)和區分根據`guidModule`參數。  
+ 泛型型別，要尋找註冊的名稱為 '清單\<int >' 或' 清單\<int，int >' 是 'List'。 如果類型相同的名稱會出現在多個模組，`ppEnum`參數會包含所有複本。 您必須使用[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) ，並區分根據`guidModule`參數。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

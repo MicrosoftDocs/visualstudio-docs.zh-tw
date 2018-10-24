@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895206"
 ---
 # <a name="vspackage-state"></a>VSPackage 狀態
 許多因素會決定一組持續性的值或狀態的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式。  
   
--   專案沒有專案和設定的屬性。  
+- 專案沒有專案和設定的屬性。  
   
--   解決方案會有的屬性。  
+- 解決方案會有的屬性。  
   
--   使用者設定會決定的大小和位置的文件視窗中，工具視窗、 停駐狀態和鍵盤快速鍵。  
+- 使用者設定會決定的大小和位置的文件視窗中，工具視窗、 停駐狀態和鍵盤快速鍵。  
   
--   應用程式可以有使用者設定的選項。  
+- 應用程式可以有使用者設定的選項。  
   
--   應用程式建立的物件可以有自己的屬性。  
+- 應用程式建立的物件可以有自己的屬性。  
   
- 以下是幾種，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以管理應用程式狀態：  
+  以下是幾種，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以管理應用程式狀態：  
   
--   透過專案和方案屬性頁。  
+- 透過專案和方案屬性頁。  
   
--   透過**匯入和匯出設定精靈**，這可讓使用者將設定移到另一部電腦。  
+- 透過**匯入和匯出設定精靈**，這可讓使用者將設定移到另一部電腦。  
   
--   透過**選項** 對話方塊中，其中包含與應用程式相關的選項。  
+- 透過**選項** 對話方塊中，其中包含與應用程式相關的選項。  
   
--   透過**屬性**視窗中，它會公開物件的屬性。  
+- 透過**屬性**視窗中，它會公開物件的屬性。  
   
--   透過自動化。 應用程式可以存取已公開至自動化的 VSPackage 和物件的屬性。  
+- 透過自動化。 應用程式可以存取已公開至自動化的 VSPackage 和物件的屬性。  
   
- 基礎應用程式的狀態是各種持續性機制，可啟用儲存和還原應用程式狀態。  
+  基礎應用程式的狀態是各種持續性機制，可啟用儲存和還原應用程式狀態。  
   
 ## <a name="in-this-section"></a>本節內容  
  [狀態持續性支援](../misc/support-for-state-persistence.md)  

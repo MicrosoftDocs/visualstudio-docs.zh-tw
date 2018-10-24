@@ -12,36 +12,36 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f6fd04b715e573698719e7a2dc512d0882d10b8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894348"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
 Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(模型化商務網域)。
 
- 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
- 需求模型可協助您：
+需求模型可協助您：
 
--   著重於系統的外部行為，與其內部設計分開。
+- 著重於系統的外部行為，與其內部設計分開。
 
--   使用自然語言，更明確地描述使用者和利害關係人的需求。
+- 使用自然語言，更明確地描述使用者和利害關係人的需求。
 
--   定義使用者、開發人員和測試人員可使用的一致詞彙表。
+- 定義使用者、開發人員和測試人員可使用的一致詞彙表。
 
--   減少需求的缺口和不一致。
+- 減少需求的缺口和不一致。
 
--   減少回應需求變更所需的工作。
+- 減少回應需求變更所需的工作。
 
--   規劃功能的開發順序。
+- 規劃功能的開發順序。
 
--   使用模型作為進行系統測試的基礎，以設定測試與需求之間的清楚關聯性。 需求變更時，此關聯性可協助您正確地更新測試。 這可確保系統符合新的需求。
+- 使用模型作為進行系統測試的基礎，以設定測試與需求之間的清楚關聯性。 需求變更時，此關聯性可協助您正確地更新測試。 這可確保系統符合新的需求。
 
- 如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)。
+如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱 <<c0> [ 在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)。
 
 > [!NOTE]
 > 在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。
@@ -51,31 +51,31 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 您可以建立數個不同的使用者需求檢視。  每個檢視都提供特定類型的資訊。  建立這些檢視時，最好經常切換使用不同的檢視。 您可以從任何檢視開始。
 
 |圖表或文件|需求模型中的描述|區段|
-|-------------------------|-----------------------------------------------|-------------|
+|-|-|-|
 |概念性類別圖|用來描述需求的類型字彙；系統介面上可見的類型。||
 |其他文件或工作項目|效能、安全性、可用性和可靠性準則。|[描述服務需求品質](#QoSRequirements)|
 |其他文件或工作項目|非特定使用案例的特定條件約束和規則|[示範商務規則](#BusinessRules)|
 
- 請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的概觀，請參閱[建立應用程式模型](../modeling/create-models-for-your-app.md)。
+請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的概觀，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。
 
 ##  <a name="BusinessRules"></a> Showing Business Rules
 
 商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
 
- 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態 * * 商務規則*做為與相關概念的類別圖上類別相關聯的註解。 例如: 
+許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如: 
 
- ![附加至 Order 類別之註解的規則。](../modeling/media/uml_reqmcd2.png)
+![附加至 Order 類別之註解的規則。](../modeling/media/uml_reqmcd2.png)
 
- *「動態商務規則」* (dynamic business rules) 限制允許的事件序列。 例如，您可以使用序列或活動圖來示範使用者必須先登入，才能對系統執行其他作業。
+*「動態商務規則」* (dynamic business rules) 限制允許的事件序列。 例如，您可以使用序列或活動圖來示範使用者必須先登入，才能對系統執行其他作業。
 
- 不過，許多動態規則在取代為靜態規則之後會較為有效。 例如，您可以將布林值屬性 'Logged In' 加入概念性類別模型中的類別。 您將 Logged In 加入為登入使用案例中的後置條件，並將它加入為其他大部分使用案例的前置條件。 這種方法可讓您避免定義所有可能的事件序列組合。 需要將新的使用案例加入模型時，它也更有彈性。
+不過，許多動態規則在取代為靜態規則之後會較為有效。 例如，您可以將布林值屬性 'Logged In' 加入概念性類別模型中的類別。 您將 Logged In 加入為登入使用案例中的後置條件，並將它加入為其他大部分使用案例的前置條件。 這種方法可讓您避免定義所有可能的事件序列組合。 需要將新的使用案例加入模型時，它也更有彈性。
 
- 請注意，這裡的選擇是有關如何定義需求，而且這與如何在程式碼中實作需求無關。
+請注意，這裡的選擇是有關如何定義需求，而且這與如何在程式碼中實作需求無關。
 
- 下列主題提供詳細資訊：
+下列主題提供詳細資訊：
 
 |深入了解|讀取|
-|--------------------|----------|
+|-|-|
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
@@ -96,7 +96,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 如果餐廳刪除「菜單項目」(Menu Item) 時，客人正在點餐，則會以紅色顯示參照該「菜單項目」(Menu Item) 的任何「訂單項目」(Order Item)。
 
-請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)以了解如何開發的程式碼遵守服務需求品質。
+請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)以了解如何開發遵守服務需求品質的程式碼。
 
 ## <a name="see-also"></a>另請參閱
 

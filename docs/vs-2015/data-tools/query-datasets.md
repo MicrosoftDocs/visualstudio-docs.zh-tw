@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890565"
 ---
 # <a name="query-datasets"></a>查詢資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49219293"
   
  下列程式碼範例示範如何瀏覽向上和向下中具類型資料集的關聯性。 程式碼範例使用具類型<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 並已產生`FindBy` *PrimaryKey* (`FindByCustomerID`) 方法，以找出所需的資料列，並傳回相關的記錄。 範例正確編譯和執行只有當您擁有：  
   
--   名為資料集的執行個體`NorthwindDataSet`與`Customers`資料表。  
+- 名為資料集的執行個體`NorthwindDataSet`與`Customers`資料表。  
   
--   `Orders`資料表。  
+- `Orders`資料表。  
   
--   名為的關聯性`FK_Orders_Customers`與可用的兩個資料表相關的程式碼範圍  
+- 名為的關聯性`FK_Orders_Customers`與可用的兩個資料表相關的程式碼範圍  
   
- 此外，這兩個資料表需要填滿要傳回的任何記錄的資料。  
+  此外，這兩個資料表需要填滿要傳回的任何記錄的資料。  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>傳回子系的已選取的父記錄的記錄  
   

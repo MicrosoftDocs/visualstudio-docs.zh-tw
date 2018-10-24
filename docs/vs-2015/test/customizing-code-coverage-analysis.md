@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890162"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ ms.locfileid: "49281745"
   
  在自訂程式碼涵蓋範圍行為之前，請考慮某些替代作法：  
   
--   *我想要從程式碼涵蓋範圍結果中排除測試程式碼，並只包含應用程式程式碼。*  
+- *我想要從程式碼涵蓋範圍結果中排除測試程式碼，並只包含應用程式程式碼。*  
   
-     在測試類別中加入 `ExcludeFromCodeCoverage Attribute`。  
+   在測試類別中加入 `ExcludeFromCodeCoverage Attribute`。  
   
--   *我想要包含不屬於我方案的組件。*  
+- *我想要包含不屬於我方案的組件。*  
   
-     取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案所在的資料夾。  
+   取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案所在的資料夾。  
   
- 若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試] 功能表上依序選擇 [測試設定] 和 [選取測試設定] 檔案。 本主題的其餘部分將深入說明此程序。  
+  若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試] 功能表上依序選擇 [測試設定] 和 [選取測試設定] 檔案。 本主題的其餘部分將深入說明此程序。  
   
 ## <a name="the-runsettings-file"></a>.runsettings 檔案  
  .runsettings 檔案中會指定進階的程式碼涵蓋範圍設定。 這是單元測試工具所使用的組態檔。 我們建議您複製[本主題結尾處的範例](#sample)，然後根據您自己的需求進行編輯。  
   
--   *我在 Visual Studio 2010 中使用的 .testsettings 檔案有何問題？*  
+- *我在 Visual Studio 2010 中使用的 .testsettings 檔案有何問題？*  
   
-     Visual Studio 2010 中的 .testsettings 檔案只適用於 MSTest 架構的單元測試。 在 Visual Studio 2012 中，測試工具不僅適用於 MSTest，也適用於 NUnit 和 xUnit.net 之類的其他架構。 .testsettings 檔案不適用於這些架構。 .runsettings 檔案的作用是以能夠適用於所有測試架構的方式自訂測試工具。  
+   Visual Studio 2010 中的 .testsettings 檔案只適用於 MSTest 架構的單元測試。 在 Visual Studio 2012 中，測試工具不僅適用於 MSTest，也適用於 NUnit 和 xUnit.net 之類的其他架構。 .testsettings 檔案不適用於這些架構。 .runsettings 檔案的作用是以能夠適用於所有測試架構的方式自訂測試工具。  
   
- 若要自訂程式碼涵蓋範圍，您必須在方案中加入 .runsettings 檔案：  
+  若要自訂程式碼涵蓋範圍，您必須在方案中加入 .runsettings 檔案：  
   
-1.  新增 .xml 檔案，作為副檔名是 `.runsettings` 的方案項目：  
+1. 新增 .xml 檔案，作為副檔名是 `.runsettings` 的方案項目：  
   
-     在方案總管中，於方案的捷徑功能表上，依序選擇 [新增] 和 [新增項目]，然後選取 [XML 檔]。 儲存檔案，而檔案具有 `CodeCoverage.runsettings` 這類名稱結尾。  
+    在方案總管中，於方案的捷徑功能表上，依序選擇 [新增] 和 [新增項目]，然後選取 [XML 檔]。 儲存檔案，而檔案具有 `CodeCoverage.runsettings` 這類名稱結尾。  
   
-2.  加入本主題結尾處範例中的內容，然後依照下列各節的說明並根據您自己的需求進行自訂。  
+2. 加入本主題結尾處範例中的內容，然後依照下列各節的說明並根據您自己的需求進行自訂。  
   
-3.  在 [測試] 功能表上，依序選擇 [測試設定] 和 [選取測試設定檔]，然後選取檔案。  
+3. 在 [測試] 功能表上，依序選擇 [測試設定] 和 [選取測試設定檔]，然後選取檔案。  
   
-4.  現在，當您執行 [分析程式碼涵蓋範圍] 時，這個 `.runsettings` 檔案就會控制其行為。 不要忘記您必須再次執行程式碼涵蓋範圍：當您執行測試或更新程式碼時，並不會自動隱藏之前的涵蓋範圍結果及程式碼著色。  
+4. 現在，當您執行 [分析程式碼涵蓋範圍] 時，這個 `.runsettings` 檔案就會控制其行為。 不要忘記您必須再次執行程式碼涵蓋範圍：當您執行測試或更新程式碼時，並不會自動隱藏之前的涵蓋範圍結果及程式碼著色。  
   
-5.  若要開啟和關閉自訂設定，請取消選取或選取 [測試]、[測試設定] 功能表中的檔案。  
+5. 若要開啟和關閉自訂設定，請取消選取或選取 [測試]、[測試設定] 功能表中的檔案。  
   
- ![具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+   ![具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
- 您可以在同一個 .runsettings 檔案中設定單元測試的其他設定。 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
+   您可以在同一個 .runsettings 檔案中設定單元測試的其他設定。 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
   
 ### <a name="specifying-symbol-search-paths"></a>指定符號搜尋路徑  
  程式碼涵蓋範圍要求必須要有組件的符號 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 但是在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。  
@@ -106,21 +106,21 @@ ms.locfileid: "49281745"
 ### <a name="regular-expressions"></a>規則運算式  
  包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式和萬用字元不同。 特別之處在於：  
   
-1.  **\.\*** 比對任何字元的字串  
+1. **\.\\*** 比對任何字元的字串  
   
-2.  **\\.** 會比對點 "."  
+2. **\\.** 會比對點 "."  
   
-3.  **\\(\\)** 會比對括弧 "(  )"  
+3. **\\(\\)** 會比對括弧 "(  )"  
   
-4.  **\\\\** 會比對檔案路徑分隔符號 "\\"  
+4. **\\\\** 會比對檔案路徑分隔符號 "\\"  
   
-5.  **^** 會比對字串的開頭  
+5. **^** 會比對字串的開頭  
   
-6.  **$** 會比對字串的結尾  
+6. **$** 會比對字串的結尾  
   
- 所有相符項目皆不區分大小寫。  
+   所有相符項目皆不區分大小寫。  
   
- 例如：  
+   例如：  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ ms.locfileid: "49281745"
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包含或排除項目的其他方法  
  如需範例，請參閱[本主題結尾處的範例](#sample)。  
   
--   `ModulePath` – 組件檔案路徑指定的組件。  
+- `ModulePath` – 組件檔案路徑指定的組件。  
   
--   `CompanyName` – 會依 Company 屬性比對組件。  
+- `CompanyName` – 會依 Company 屬性比對組件。  
   
--   `PublicKeyToken` – 會依公開金鑰語彙基元比對已簽署的組件。 舉例來說，若要比對所有 Visual Studio 元件和副檔名，請使用 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`。  
+- `PublicKeyToken` – 會依公開金鑰語彙基元比對已簽署的組件。 舉例來說，若要比對所有 Visual Studio 元件和副檔名，請使用 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`。  
   
--   `Source` – 依原始檔案路徑名稱的定義方式比對項目。  
+- `Source` – 依原始檔案路徑名稱的定義方式比對項目。  
   
--   `Attribute` – 比對附加特定屬性的項目。 指定屬性的完整名稱，包括名稱結尾的「屬性」。  
+- `Attribute` – 比對附加特定屬性的項目。 指定屬性的完整名稱，包括名稱結尾的「屬性」。  
   
--   `Function` – 依完整名稱比對程序、函式或方法。  
+- `Function` – 依完整名稱比對程序、函式或方法。  
   
- **比對函式名稱**  
+  **比對函式名稱**  
   
- 您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：  
+  您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：  
   
--   C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++：`Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++：`Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ ms.locfileid: "49281745"
   
  ![在組建定義中指定回合設定](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
-1.  請務必簽入您的 .runsettings 檔案。  
+1. 請務必簽入您的 .runsettings 檔案。  
   
-2.  在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
+2. 在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
   
-3.  在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
+3. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
   
-    -   *但是會出現 **[測試組件]** 而非 **[測試來源]**。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
+   - <em>但是**測試組件</em>* 而不會出現**測試來源**。當我嘗試設定 [回合設定]** 欄位時，我只能選取 .testsettings 檔案。*  
   
-         在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
+      在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
   
- 結果會顯示在組建報告的摘要區段。  
+   結果會顯示在組建報告的摘要區段。  
   
 ##  <a name="sample"></a> 範例 .runsettings 檔案  
  複製此程式碼並根據您自己的需求進行編輯。 這是預設的 .runsettings 檔案。  

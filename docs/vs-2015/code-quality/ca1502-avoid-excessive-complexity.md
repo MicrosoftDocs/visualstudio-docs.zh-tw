@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890578"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259073"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>循環複雜度的計算方式
  循環複雜度計算方式是將 1 所示：
 
--   分支數 (例如`if`， `while`，和`do`)
+- 分支數 (例如`if`， `while`，和`do`)
 
--   數目`case`中的陳述式 `switch`
+- 數目`case`中的陳述式 `switch`
 
- 下列範例顯示具有不同的循環複雜度的方法。
+  下列範例顯示具有不同的循環複雜度的方法。
 
 ## <a name="example"></a>範例
  **1 的循環複雜度**

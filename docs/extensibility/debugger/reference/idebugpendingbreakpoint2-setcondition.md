@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition |Microsoft 文件
+title: IDebugPendingBreakpoint2::SetCondition |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc50ad1d763f196944e6246f891c5b4ed3893da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf6e77292543fe9eebd8f08cf2fd25ef48c7e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886613"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-設定或變更暫止中斷點具有相關聯的條件。  
+設定或變更暫止中斷點相關聯的條件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,10 +45,10 @@ int SetCondition(
  [in]A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，指定要設定的條件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 暫止中斷點先前關聯的任何條件將會遺失。 若要設定其條件中指定的值稱為 「 暫止中斷點，從這個繫結的所有中斷點`bpCondition`參數。  
+ 將會遺失任何先前關聯暫止中斷點的條件。 若要設定其條件中指定的值稱為 「 暫止的中斷點，從這個繫結的所有中斷點`bpCondition`參數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

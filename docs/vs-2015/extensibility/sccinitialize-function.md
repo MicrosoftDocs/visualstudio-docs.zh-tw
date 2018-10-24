@@ -17,12 +17,12 @@ ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e69bd30ad535dbc2d0af239fbb3f632f6bd49130
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a04e03775e9f2a642b5cda5d01aae77afab7368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891215"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
