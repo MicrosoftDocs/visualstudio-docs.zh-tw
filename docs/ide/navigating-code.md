@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894465"
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 
@@ -65,10 +65,10 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 
 在解決方案中尋找選取項目的所有參考。 您可以使用它來檢查大型重構可能的副作用，並驗證「無作用」程式碼。 按 **F8** 在結果之間移動。 如需詳細資訊，請參閱[在程式碼中尋找參考](finding-references.md)。
 
-輸入        | 功能
+輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Shift**+**F12**
-**滑鼠**    | 從操作功能表選取 [尋找所有參考]
+**滑鼠** | 從操作功能表選取 [尋找所有參考]
 
 ## <a name="reference-highlighting"></a>反白顯示參考
 
@@ -104,37 +104,37 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 
 [移至定義] 會帶您到所選項目的定義。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
 
-輸入        | 功能
+輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至定義] 或按 **Ctrl**，再按一下類型名稱 (Visual Studio 2017 15.4 版的新功能)
+**滑鼠** | 以滑鼠右鍵按一下類型名稱，然後選取 [移至定義] 或按 **Ctrl**，再按一下類型名稱 (Visual Studio 2017 15.4 版的新功能)
 
 ## <a name="peek-definition"></a>查看定義
 
 [查看定義] 會在視窗中顯示所選項目的定義，您不用離開目前所在程式碼編輯器的位置。 如需詳細資訊，請參閱[如何：使用查看定義來檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)以及[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
 
-輸入        | 功能
+輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Alt**+**F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [查看定義] 或按 **Ctrl**，再按一下類型名稱 (如已勾選 [在預覽檢視中開啟定義] 選項)
+**滑鼠** | 以滑鼠右鍵按一下類型名稱，然後選取 [查看定義] 或按 **Ctrl**，再按一下類型名稱 (如已勾選 [在預覽檢視中開啟定義] 選項)
 
 ## <a name="go-to-implementation"></a>移至實作
 
 使用 [前往實作] 從基底類別或類型巡覽至其實作。 如果有多個實作，您會看到它們列在 [尋找符號結果] 視窗中︰
 
-輸入        | 功能
+輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Ctrl**+**F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至實作]
+**滑鼠** | 以滑鼠右鍵按一下類型名稱，然後選取 [移至實作]
 
 ## <a name="call-hierarchy"></a>呼叫階層
 
 您可以在[呼叫階層視窗](../ide/reference/call-hierarchy.md)中檢視對方法的呼叫和來自方法的呼叫：
 
-輸入        | 功能
+輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Ctrl**+**K**、**Ctrl**+**T**
-**滑鼠**    | 以滑鼠右鍵按一下成員名稱，然後選取 [檢視呼叫階層]
+**滑鼠** | 以滑鼠右鍵按一下成員名稱，然後選取 [檢視呼叫階層]
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>下一個方法和上一個方法命令 (Visual Basic)
 

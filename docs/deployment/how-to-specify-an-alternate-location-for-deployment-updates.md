@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902460"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何： 指定部署更新的替代位置
 您可以安裝您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式一開始是從光碟或檔案共用，但應用程式必須檢查是否有定期更新，在網站上。 讓您的應用程式可以在其初始安裝後從 Web 自行更新，您可以在您的部署資訊清單中指定更新的替代位置。  
@@ -46,16 +46,16 @@ ms.locfileid: "39079868"
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>使用 Mage.exe，以指定更新的替代位置  
   
-1.  開啟 [.NET Framework 命令提示字元]。  
+1. 開啟 [.NET Framework 命令提示字元]。  
   
-2.  設定使用下列命令更新的位置。 在此範例中， *HelloWorld.exe.application*是通往您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單，其一律.application 副檔名，和*http://adatum.com/Update/Path*是 URL 該[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會檢查應用程式更新。  
+2. 設定使用下列命令更新的位置。 在此範例中， *HelloWorld.exe.application*是通往您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單，其一律.application 副檔名，和*<http://adatum.com/Update/Path>* 是 URL 該[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會檢查應用程式更新。  
   
-     **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
+    **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
   
-3.  儲存檔案。  
+3. 儲存檔案。  
   
-    > [!NOTE]
-    >  您現在需要重新簽署的檔案*Mage.exe*。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+   > [!NOTE]
+   >  您現在需要重新簽署的檔案*Mage.exe*。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果您從離線媒體例如 CD、 安裝應用程式，而且電腦已上線，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所指定的 URL 會先檢查`<deploymentProvider>`以判斷是否更新位置包含較新版的部署資訊清單中的標記應用程式。 若是如此，請[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會從初始的安裝目錄，直接從該處，應用程式而不是安裝和 common language runtime (CLR) 會決定您的應用程式信任層級使用`<deploymentProvider>`。 如果電腦處於離線狀態，或`<deploymentProvider>`無法連線，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安裝 CD，與 CLR 授與信任的安裝點為基礎，進行 CD 安裝，這表示您的應用程式收到的完全信任。 所有後續的更新將會繼承該信任層級。  

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON |Microsoft 文件
+title: BP_UNBOUND_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65398ac0c4bde18dc772d75ceea203bdbfe3b189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904215"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-提供中斷點已解除繫結的原因。  
+提供中斷點已繫結的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,13 +51,13 @@ public enum enum_BP_UNBOUND_REASON {
  未知的原因。  
   
  BPUR_CODE_UNLOADED  
- 包含中斷點的程式碼已經卸載。  
+ 包含中斷點的程式碼已卸載。  
   
  BPUR_BREAKPOINT_REBIND  
- 中斷點具有已不再重新繫結至不同的位置。 這可以編輯之後，就可能發生，並繼續作業，中斷點就會移，或時的中斷點繫結至已不再有效的路徑與檔案。  
+ 中斷點具有已重新繫結至不同的位置中。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。  
   
  BPUR_ BREAKPOINT_ERROR  
- 中斷點會判斷它繫結之後會產生錯誤。 此時若要管理中斷點條件不再有效。  
+ 中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。  
   
 ## <a name="remarks"></a>備註  
  所傳回[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。  

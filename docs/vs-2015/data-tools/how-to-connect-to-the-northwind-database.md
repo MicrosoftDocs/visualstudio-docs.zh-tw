@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897626"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>如何：連接到 Northwind 資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ ms.locfileid: "49191122"
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>建立與 Northwind 資料庫的資料連接 (SQL Server)  
   
-1.  在 **檢視**功能表上，選擇**伺服器總管**/**資料庫總管**。  
+1. 在 **檢視**功能表上，選擇**伺服器總管**/**資料庫總管**。  
   
-2.  在 **伺服器總管**/**資料庫總管**，開啟捷徑功能表**資料連接**，然後選擇 **加入連接**.  
+2. 在 **伺服器總管**/**資料庫總管**，開啟捷徑功能表**資料連接**，然後選擇 **加入連接**.  
   
-     選擇之後**加入連接**，可以是**選擇資料來源**對話方塊或**加入連接**對話方塊會隨即出現。  
+    選擇之後**加入連接**，可以是**選擇資料來源**對話方塊或**加入連接**對話方塊會隨即出現。  
   
-3.  如果**選擇資料來源** 對話方塊出現時，選取**Microsoft SQL Server**，然後選擇**確定**。  
+3. 如果**選擇資料來源** 對話方塊出現時，選取**Microsoft SQL Server**，然後選擇**確定**。  
   
-     如果**加入連接** 對話方塊隨即出現並**資料來源**不**Microsoft SQL Server (SqlClient)**，選擇**變更**按鈕，開啟**變更資料來源**對話方塊中，選取**Microsoft SQL Server**，然後選擇**確定**  按鈕。  
+    如果**加入連接** 對話方塊隨即出現並**資料來源**不**Microsoft SQL Server (SqlClient)**，選擇**變更**按鈕，開啟**變更資料來源**對話方塊中，選取**Microsoft SQL Server**，然後選擇**確定**  按鈕。  
   
-4.  在 **伺服器名稱**清單中，指定 Northwind 資料庫所在伺服器的名稱。  
+4. 在 **伺服器名稱**清單中，指定 Northwind 資料庫所在伺服器的名稱。  
   
-5.  根據您的 SQL Server 和 Northwind 資料庫版本需求，選擇**使用 Windows 驗證**，或選擇**使用 SQL Server 驗證**，然後輸入使用者名稱和若要執行 SQL Server 的電腦登入的密碼。  
+5. 根據您的 SQL Server 和 Northwind 資料庫版本需求，選擇**使用 Windows 驗證**，或選擇**使用 SQL Server 驗證**，然後輸入使用者名稱和若要執行 SQL Server 的電腦登入的密碼。  
   
-6.  選擇 Northwind 資料庫中的**選取或輸入資料庫名稱**清單。  
+6. 選擇 Northwind 資料庫中的**選取或輸入資料庫名稱**清單。  
   
-7.  選擇**測試連接**來確認與 Northwind 資料庫的連線能力。  
+7. 選擇**測試連接**來確認與 Northwind 資料庫的連線能力。  
   
-8.  選擇 [確定] 。  
+8. 選擇 [確定] 。  
   
-     資料連接到 Northwind 資料庫加入至**伺服器總管**/**資料庫總管**。  
+    資料連接到 Northwind 資料庫加入至**伺服器總管**/**資料庫總管**。  
   
- 除了連接至 SQL Server 資料庫的遠端執行個體之外，您也可以直接連接至含有資料庫的實際檔案。 這可讓您將資料庫檔案直接加入至可將它們部署為應用程式一部分的專案。 目前支援下列本機資料庫檔案： SQL Server Compact 資料庫檔案 (.sdf)、[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]和 SQL Server Express 資料庫檔案 (.mdf) 和 Microsoft Access 資料庫檔案 （.mdb 或.accdb）。  
+   除了連接至 SQL Server 資料庫的遠端執行個體之外，您也可以直接連接至含有資料庫的實際檔案。 這可讓您將資料庫檔案直接加入至可將它們部署為應用程式一部分的專案。 目前支援下列本機資料庫檔案： SQL Server Compact 資料庫檔案 (.sdf)、[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]和 SQL Server Express 資料庫檔案 (.mdf) 和 Microsoft Access 資料庫檔案 （.mdb 或.accdb）。  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>建立與 Northwind 資料庫的資料連接 (SQL Server 資料庫檔案 (.mdf))  
   

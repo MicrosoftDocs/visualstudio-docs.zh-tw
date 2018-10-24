@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::GetSize |Microsoft 文件
+title: IDebugMemoryBytes2::GetSize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fce2d9beecb6c2a51d64e229dcf386795ab55f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b0d6c40c9b73ce14d06ce59f9506ce13550d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898118"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 擷取的大小，以位元組為單位所表示的記憶體[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件。  
@@ -42,10 +42,10 @@ int GetSize(
   
 #### <a name="parameters"></a>參數  
  `pqwSize`  
- [out]傳回的大小，以位元組為單位的記憶體空間。  
+ [out]傳回大小，以位元組為單位的記憶體空間。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

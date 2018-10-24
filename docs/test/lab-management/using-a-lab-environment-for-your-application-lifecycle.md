@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837109"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -36,9 +36,9 @@ ms.locfileid: "44321173"
 |![雲端實驗室環境](../media/topology_cloud.png)| 此實驗室環境提供與_伺服器拓樸_類似的功能和特性，但移除在本機環境中執行實體或虛擬機器的需求，這樣可減少安裝時間、簡化維護工作，並將成本降至最低。 在 Microsoft Azure 這樣的雲端環境中，設定多個網站和虛擬機器，加上自訂的網路，快速且容易。|
 |![用戶端實驗室環境](../media/topology_clientserver.png)| 此實驗室環境具有「用戶端伺服器拓撲」，這種拓撲經常用來測試有伺服器和用戶端元件的應用程式。 在用戶端/伺服器拓撲中，用來測試應用程式的所有用戶端和伺服器電腦都在您的實驗室環境中。 當您使用此拓撲時，可以從影響測試的每台電腦收集測試資料。|
 
-|   |   |
+| | |
 |---|---|
-|  ![影片的電影攝影機圖示](../../install/media/video-icon.png)  |    [觀看影片](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) \(英文\) 了解如何管理實驗室環境以供測試之用。 |
+| ![影片的電影攝影機圖示](../../install/media/video-icon.png) | [觀看影片](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) \(英文\) 了解如何管理實驗室環境以供測試之用。 |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>使用雲端搭配 Azure Pipelines 或 Team Foundation Server 的建置和發行
 
@@ -95,7 +95,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 標準環境和 SCVMM 環境支援許多相同的功能。 但是有一些重大差異要考慮。 下表比較標準環境和 SCVMM 環境中可用的功能。
 
 |功能|SCVMM 環境|標準環境|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**測試**|||
 |執行手動測試|支援|支援|
 |執行自動程式碼 UI 及其他自動化測試|支援|支援|
@@ -117,7 +117,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 以下是在您繼續之前應該熟悉的一些其他概念：
 
 |詞彙|描述|
-|----------|-----------------|
+|-|-----------------|
 |實驗室中心|建立和管理實驗室環境所在的 Microsoft Test Manager 區域。|
 |Azure DevOps 專案實驗室|實驗室環境的集合已設定，讓您能連接到這些環境並執行它們的虛擬機器。|
 |Azure DevOps 專案程式庫|預存虛擬機器、範本及預存實驗室環境的封存，已匯入您專案的主機群組中。 您可以將程式庫中的項目與 SCVMM 環境搭配使用，但無法直接將它們加入標準環境。 您無法執行程式庫中的項目，而是要使用它們來部署新的環境。|

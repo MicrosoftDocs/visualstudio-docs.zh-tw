@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c218dd9a7ee3266de2cf9e07933ed69aa23e73e7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 722277e65a30d8c40cc245123120650108ebc560
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831454"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的用量高
+
 |||  
 |-|-|  
 |規則 ID|DA0013|  
@@ -33,14 +34,14 @@ ms.locfileid: "34749878"
 |分析方法|取樣|  
 |訊息|考慮減少使用 String.Split 和 String.Substring 函式。|  
 |規則型別|警告|  
-  
+
 ## <a name="cause"></a>原因  
  呼叫 System.String.Split 或 System.String.Substring 方法是分析資料的重要部分。 如果您要測試某個子字串是否存在字串中，請考慮使用 System.String.IndexOf 或 System.String.IndexOfAny。  
-  
+
 ## <a name="rule-description"></a>規則描述  
  Split 方法會在 String 物件上運作，並傳回包含原始子字串之 String 的新陣列。 函式會為傳回的陣列物件配置記憶體，並為它找到的每個陣列元素配置新的 String 物件。 同樣地，Substr 方法會在 String 物件上運作，並傳回相當於所要求之子字串的新 String。  
-  
+
  如果在應用程式中管理記憶體配置很重要，請考慮使用 String.Split 和 String.Substr 方法的替代方案。 例如，您可以使用 IndexOf 或 IndexOfAny 方法在字元 String 內尋找特定子字串，而不需建立新的 String 類別執行個體。  
-  
+
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，巡覽至取樣分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 檢查呼叫函式，找出最常使用 System.String.Split 或 System.String.Substr 方法的程式區段。 可能的話，請使用 IndexOf 或 IndexOfAny 方法在字元 String 字串內尋找特定子字串，而不需建立新的 String 類別執行個體。

@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899236"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。  
-  
+
 ## <a name="syntax"></a>語法  
-  
+
 ```xml  
 <Package  
     Culture  
@@ -75,7 +75,7 @@ ms.locfileid: "39080782"
             SearchDepth  
         />  
     </InstallChecks>  
-  
+
     <Commands  
         Reboot  
     >  
@@ -111,7 +111,7 @@ ms.locfileid: "39080782"
             </ExitCodes>  
         </Command>  
     </Commands>  
-  
+
     <PackageFiles  
         CopyAllComponents  
     >  
@@ -122,14 +122,14 @@ ms.locfileid: "39080782"
             PublicKey  
         />  
     </PackageFiles>  
-  
+
     <Strings>  
         <String  
             Name  
         >  
         </String>  
     </Strings>  
-  
+
     <Schedules>  
         <Schedule  
             Name  
@@ -141,33 +141,34 @@ ms.locfileid: "39080782"
     </Schedules>  
 </Package>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `Package`是必要元素。 它具有下列屬性。  
-  
-|屬性|描述|  
-|---------------|-----------------|  
-|`Culture`|必要。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。|  
-|`Name`|必要。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。|  
-|`LicenseAgreement`|選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 (*.txt*) 或豐富文字格式。 (*.rtf*)|  
-  
+
+
+| 屬性 | 描述 |
+|--------------------| - |
+| `Culture` | 必要。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。 |
+| `Name` | 必要。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。 |
+| `LicenseAgreement` | 選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 (*.txt*) 或豐富文字格式。 (*.rtf*) |
+
 ## <a name="example"></a>範例  
  下列程式碼範例會顯示完整的封裝檔案轉散發[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
-  
+
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
-  
+
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
   Name="DisplayName"  
   Culture="Culture"  
   LicenseAgreement="eula.rtf"  
 >  
-  
+
     <PackageFiles>  
         <PackageFile Name="eula.rtf"/>  
     </PackageFiles>  
-  
+
     <!-- Defines a localizable string table for error messages-->  
     <Strings>  
         <String Name="DisplayName">.NET Framework 2.0</String>  
@@ -185,9 +186,9 @@ ms.locfileid: "39080782"
         <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
         <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
     </Strings>  
-  
+
 </Package>  
 ```  
-  
+
 ## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

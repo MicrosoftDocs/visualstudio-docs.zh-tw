@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_basetype |Microsoft 文件'
+title: 'Idiasymbol:: Get_basetype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080c8872682f9c255eda77449cb24dd703cd9583
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901784"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-擷取這個符號的基底類型 *。*  
+擷取這個符號的基礎類型<em>。</em>  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_baseType (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回值，從[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)指定符號的基底類型的列舉。  
+ [out]傳回值，以從[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)指定符號的基底類型的列舉類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是使用符號。  
+>  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 符號的基本類型可以決定先取得符號的類型，然後訊問所傳回的基底類型的類型。 請注意一些符號可能沒有基底類型 — 例如，結構的名稱。  
+ 符號的基本類型可以先取得符號的類型，和接著詢問傳回基底型別的型別來判斷。 請注意一些符號可能不會有基底類型 — 例如，結構的名稱。  
   
 ## <a name="example"></a>範例  
   

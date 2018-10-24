@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896220"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 時，您可以在圖形化工作流程上設定中斷點，就像利用 Visual Basic 或 C# 程式碼設定一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
@@ -26,10 +26,10 @@ ms.locfileid: "49199806"
   
 > [!NOTE]
 >  不支援在已叫用的工作流程上設定中斷點。  
-  
+> 
 > [!WARNING]
->  請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列**啟用 Just My Code （僅限 Managed）** 未選取選項。  
-  
+>  請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列<strong>啟用 Just My Code （僅限 Managed）</strong>未選取選項。  
+> 
 > [!WARNING]
 >  如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。  
   
