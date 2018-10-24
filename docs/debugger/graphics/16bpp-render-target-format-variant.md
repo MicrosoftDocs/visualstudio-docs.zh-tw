@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832884"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 轉譯目標格式變異
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。  
@@ -43,9 +43,9 @@ ms.locfileid: "37433324"
 2. 複製到交換鏈結四分之一轉譯目標繪製使用呈現目標做為來源紋理的全螢幕四組數字。
 3. 交換鏈結上呼叫 Present。
 
- 如果這項策略可儲存更多的頻寬，非供將呈現目標複製到交換鏈結的四分之一，會改善呈現效能。
+   如果這項策略可儲存更多的頻寬，非供將呈現目標複製到交換鏈結的四分之一，會改善呈現效能。
 
- 使用並排的呈現技術的 GPU 架構可以使用 16 bpp 畫面格緩衝區格式，以查看效能優勢明顯。 這項改進是因為較大部份的畫面格緩衝區可容納每個並排的本機畫面格緩衝區快取中。 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。  
+   使用並排的呈現技術的 GPU 架構可以使用 16 bpp 畫面格緩衝區格式，以查看效能優勢明顯。 這項改進是因為較大部份的畫面格緩衝區可容納每個並排的本機畫面格緩衝區快取中。 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。  
   
 ## <a name="remarks"></a>備註  
  每次呼叫可建立呈現目標的 `ID3D11Device::CreateTexture2D` 時，都會將呈現目標格式重設為 DXGI_FORMAT_B5G6R5_UNORM。 特別是 pDesc 中所傳遞的 D3D11_TEXTURE2D_DESC 物件描述呈現目標時，會覆寫此格式；亦即：  

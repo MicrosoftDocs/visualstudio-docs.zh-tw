@@ -17,12 +17,12 @@ ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c696e112b42e8211842c2bbb78ad15ef629cebe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2143fe5c0e2dea6a706d0e1b662b959af4c60d3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835152"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

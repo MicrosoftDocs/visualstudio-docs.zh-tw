@@ -16,12 +16,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8ca8cd0fdb112214cd2d0f5088bf745c2643570
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827307"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,14 +65,14 @@ ms.locfileid: "49294342"
   
  `SettingsPage`類別和`Microsoft.VisualStudio.Package.ProjectNode`類別會提供這些方法來保存專案和設定的屬性：  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保存專案屬性。  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保存專案屬性。  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。  
   
-    > [!NOTE]
-    >  實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。  
+  > [!NOTE]
+  >  實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。  
   
- 此類別衍生自`SettingsPage`必須實作`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`以保留的專案檔的專案] 或 [組態屬性。  
+  此類別衍生自`SettingsPage`必須實作`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`以保留的專案檔的專案] 或 [組態屬性。  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute 和登錄路徑  
  類別衍生自`SettingsPage`專為在 Vspackage 之間共用。 若要可讓 VSPackage 也可以建立一個衍生自類別`SettingsPage`，新增`Microsoft.VisualStudio.Shell.ProvideObjectAttribute`類別，衍生自`Microsoft.VisualStudio.Shell.Package`。  

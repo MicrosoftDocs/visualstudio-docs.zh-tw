@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825617"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：尋找 ASP.NET 處理序的名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要附加至執行中的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式，您必須知道 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序的名稱：  
   
--   如果您執行的是 IIS 6.0 或 IIS 7.0，則名稱是 w3wp.exe。  
+- 如果您執行的是 IIS 6.0 或 IIS 7.0，則名稱是 w3wp.exe。  
   
--   如果您執行的是 IIS 的先前版本，則名稱是 aspnet_wp.exe。  
+- 如果您執行的是 IIS 的先前版本，則名稱是 aspnet_wp.exe。  
   
- 使用所建置之應用程式[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]或更新版本中，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]程式碼可以位於檔案系統，並在 WebDev.WebServer.exe 測試伺服器下執行。 在此情況下，您需要附加至 WebDev.WebServer.exe，而非 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序。 本案例僅適用於本機偵錯。  
+  使用所建置之應用程式[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]或更新版本中，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]程式碼可以位於檔案系統，並在 WebDev.WebServer.exe 測試伺服器下執行。 在此情況下，您需要附加至 WebDev.WebServer.exe，而非 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序。 本案例僅適用於本機偵錯。  
   
- 舊版 ASP 應用程式會在它們以同處理序 (In-Process) 方式執行時，於 IIS 處理序 inetinfo.exe 中執行。  
+  舊版 ASP 應用程式會在它們以同處理序 (In-Process) 方式執行時，於 IIS 處理序 inetinfo.exe 中執行。  
   
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  

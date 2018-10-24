@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind |Microsoft 文件
+title: IDebugField::GetKind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45a11810143a8cbd8e15b2fdfd3480f84e576fa8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ac82c39ac4f49a90593411b26684a8d8e52f31f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829725"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 這個方法會取得欄位的類型。  
@@ -41,10 +41,10 @@ int GetKind(
   
 #### <a name="parameters"></a>參數  
  `pdwKind`  
- [out]傳回的欄位類型的組合為[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數。  
+ [out]傳回的欄位類型為的組合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

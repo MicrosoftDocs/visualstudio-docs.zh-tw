@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833514"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49246893"
   
  總結而言，這些步驟在 DslPackage 專案中執行，步驟如下所示：  
   
-1.  [宣告在 Commands.vsct 中命令](#VSCT)  
+1. [宣告在 Commands.vsct 中命令](#VSCT)  
   
-2.  [更新套件的版本號碼，在 Package.tt 中](#version)。 每當變更 Commands.vsct 時都必須這麼做  
+2. [更新套件的版本號碼，在 Package.tt 中](#version)。 每當變更 Commands.vsct 時都必須這麼做  
   
-3.  [在 CommandSet 類別中撰寫方法](#CommandSet)來使命令可見以及定義您想要執行的命令。  
+3. [在 CommandSet 類別中撰寫方法](#CommandSet)來使命令可見以及定義您想要執行的命令。  
   
- 如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
+   如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
 > [!NOTE]
 >  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
@@ -45,15 +45,15 @@ ms.locfileid: "49246893"
   
  在下列情況下，請使用本主題中的方法：  
   
-1.  您想要在功能表上定義功能表命令，而不是以滑鼠右鍵按一下捷徑功能表。  
+1. 您想要在功能表上定義功能表命令，而不是以滑鼠右鍵按一下捷徑功能表。  
   
-2.  您想要在功能表中定義特定的命令群組。  
+2. 您想要在功能表中定義特定的命令群組。  
   
-3.  您不要讓他人以自己的命令擴充 DSL。  
+3. 您不要讓他人以自己的命令擴充 DSL。  
   
-4.  您只要定義一個命令。  
+4. 您只要定義一個命令。  
   
- 否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
+   否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
 ##  <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令  
  功能表命令在 DslPackage\Commands.vsct 中宣告。 這些定義指定功能表項目的標籤以及它們在功能表上的顯示位置。  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  以下片段在 OnStatus 方法中通常很有用：  
   
--   `this.CurrentSelection`. 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
+- `this.CurrentSelection`. 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
   
--   `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
+- `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - 使用者未選取多個物件  
+- `this.IsSingleSelection()` - 使用者未選取多個物件  
   
--   `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表  
+- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表  
   
--   `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。  
+- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。  
   
- 如同一般方針，使 `Visible` 屬性相依於選取的項目，並使 `Enabled` 屬性相依於所選項目的狀態。  
+  如同一般方針，使 `Visible` 屬性相依於選取的項目，並使 `Enabled` 屬性相依於所選項目的狀態。  
   
- OnStatus 方法不應變更市集的狀態。  
+  OnStatus 方法不應變更市集的狀態。  
   
 ### <a name="define-what-the-command-does"></a>定義命令執行的動作  
  對每一個命令定義 `OnMenu...` 方法，執行使用者按一下功能表命令時的必要動作。  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>疑難排解  
  **命令未出現在功能表中：**  
   
--   命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+- 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
--   請確定實驗範例具有此 DSL 的正確副檔名。 若要檢查副檔名，請在 Visual Studio 的主要執行個體中開啟 DslDefinition.dsl。 然後在 DSL Explorer 中，以滑鼠右鍵按一下 [編輯器] 節點，然後按一下 [屬性]。 在 [屬性] 視窗中，檢查 FileExtension 屬性。  
+- 請確定實驗範例具有此 DSL 的正確副檔名。 若要檢查副檔名，請在 Visual Studio 的主要執行個體中開啟 DslDefinition.dsl。 然後在 DSL Explorer 中，以滑鼠右鍵按一下 [編輯器] 節點，然後按一下 [屬性]。 在 [屬性] 視窗中，檢查 FileExtension 屬性。  
   
--   您是否[遞增套件版本號碼](#version)？  
+- 您是否[遞增套件版本號碼](#version)？  
   
--   在 OnStatus 方法的開頭設定中斷點。 在圖表的任何部分上按一下滑鼠右鍵時，它應該會中斷。  
+- 在 OnStatus 方法的開頭設定中斷點。 在圖表的任何部分上按一下滑鼠右鍵時，它應該會中斷。  
   
-     **未呼叫 OnStatus 方法**:  
+   **未呼叫 OnStatus 方法**:  
   
-    -   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
+  -   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
   
-    -   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
+  -   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
   
-    -   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
+  -   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
   
--   逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。  
+- 逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。  
   
- **此時會出現錯誤的功能表文字，或是命令出現在錯誤的位置**:  
+  **此時會出現錯誤的功能表文字，或是命令出現在錯誤的位置**:  
   
--   請確定 GUID 和 ID 的組合對此命令是唯一的。  
+- 請確定 GUID 和 ID 的組合對此命令是唯一的。  
   
--   確定已解除安裝舊版套件。  
+- 確定已解除安裝舊版套件。  
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

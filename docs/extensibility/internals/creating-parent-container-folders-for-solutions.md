@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830687"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>建立父容器之資料夾的解決方案
 在原始檔控制外掛程式 API 版本 1.2，使用者可以指定方案中的所有 web 專案的單一根來源控制目的地。 此單一根稱為超級統一的根 (SUR)。  
@@ -50,7 +50,7 @@ ms.locfileid: "39498866"
 在  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，建議 SUR 資料夾的名稱是不含副檔名的方案名稱相同。 下表摘要說明兩種版本的行為。  
   
 |功能|原始檔控制外掛程式 API 版本 1.1|原始檔控制外掛程式 API 版本 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |將解決方案新增至 SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |將專案加入原始檔控制的方案|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **注意：** Visual Studio 假設解決方案的直接子系 SUR.|  
   
