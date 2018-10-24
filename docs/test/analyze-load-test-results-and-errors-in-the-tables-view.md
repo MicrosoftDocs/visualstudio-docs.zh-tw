@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928668"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -51,7 +51,7 @@ ms.locfileid: "39179657"
  下列表格列出可用於分析負載測試回合的資料表。
 
 |資料表名稱|描述|
-|----------------|-----------------|
+|-|-|
 |錯誤|顯示負載測試回合期間發生的錯誤清單。 如需詳細資訊，請參閱本主題中的[錯誤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)和[分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|
 |頁面|顯示負載測試回合期間存取的頁面清單。 本資料表中的部分資料只有在負載測試完成後才可用。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |要求|顯示負載測試期間所發佈個別要求的詳細資料。 這包含所有 HTTP 要求，以及相依要求 (例如影像)。 如需詳細資訊，請參閱本主題中的[要求資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
@@ -73,7 +73,7 @@ ms.locfileid: "39179657"
  下表列出 [要求] 資料表中的資料行：
 
 |資料行|描述|預設為可見|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**要求**|要求的 URL。 例如：*home.html* 或 *orange-arrow.gif*。|[是]|
 |**案例**|情節的名稱。|[是]|
 |**測試**|測試的名稱。|[是]|
@@ -95,7 +95,7 @@ ms.locfileid: "39179657"
  下表列出 [測試] 資料表中的資料行。
 
 |資料行|描述|預設為可見|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**測試**|測試的名稱。|[是]|
 |**案例**|情節的名稱。|[是]|
 |**總計**|情節中測試執行的總次數。 這包含測試成功和失敗的次數。|[是]|
@@ -119,7 +119,7 @@ ms.locfileid: "39179657"
 > 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資料，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 |資料行|描述|可見 (不含計時詳細資料)|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**異動**|異動的名稱。|[是]|
 |**案例**|情節的名稱。|[是]|
 |**測試**|測試的名稱。|[是]|
@@ -145,7 +145,7 @@ ms.locfileid: "39179657"
  錯誤資料表包含下列資料行：
 
 |資料行|描述|預設為可見|
-|------------|-----------------|------------------------|
+|-|-|-|
 |類型|錯誤的類型。 例如，HttpError。|[是]|
 |子類型|錯誤的子類型。 例如，LoadTestException。|[是]|
 |計數|負載測試期間發生此類型錯誤的數量。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，檢視個別錯誤的清單。|[是]|
@@ -163,7 +163,7 @@ ms.locfileid: "39179657"
 [負載測試錯誤] 資料表包含下列資料行：
 
 |資料行|描述|
-|------------|-----------------|
+|-|-|
 |**時間**|負載測試期間發生錯誤的時間。|
 |**代理程式**|發生錯誤之代理程式電腦的名稱。 這在您使用測試控制器和測試代理程式執行負載測試時相當重要。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|
 |**測試**|發生錯誤之 Web 效能測試的名稱。|
@@ -218,7 +218,7 @@ ms.locfileid: "39179657"
 
 在資料表檢視中，您一次最多可以檢視四份資料表 (在資料表不重疊的情況下)。
 
-### <a name="to-tile-tables"></a>並排顯示資料表
+### <a name="to-tile-tables"></a>若要並排顯示資料表
 
 1. 在 [負載測試分析器] 工具列上，選擇 [資料表]。
 
@@ -245,5 +245,5 @@ ms.locfileid: "39179657"
 - [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)

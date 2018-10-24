@@ -17,12 +17,12 @@ ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e76df14ae072315a0885271cec383522213fd39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35ddf670fde7d5940bdbd4018a0b578f867de0f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932633"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d60cd58015ef3306c3dbfbc3b9fd9333e077d1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9287ccac278e1d020d7068f594063c60c3e9f629
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931658"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

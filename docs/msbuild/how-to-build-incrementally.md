@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932425"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -29,15 +29,15 @@ ms.locfileid: "39178965"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
--   使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
+- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 *hello.exe* 檔案新，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會執行目標，否則將會予以略過︰  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 *hello.exe* 檔案新，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會執行目標，否則將會予以略過︰  
   
 ```xml  
 <Target Name="Build"   

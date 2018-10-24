@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_objectfilename |Microsoft 文件'
+title: 'Idiainjectedsource:: Get_objectfilename |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75dd11bde98d345d88b700aef6f4c86d80133714
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b3bb9297ab7a572572a35df3521236267ebd87e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932522"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
-取得物件的檔案名稱的已編譯的來源。  
+擷取來源已編譯的物件檔案名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_objectFilename (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回的已編譯的來源物件的檔案名稱。  
+ [out]傳回來源已編譯的物件檔案名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

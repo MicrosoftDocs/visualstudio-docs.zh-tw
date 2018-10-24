@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5323b956bfade255dce8d1e5f554b87b267bbe5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9af5968892637f00d9076d42a21de7d632576cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929292"
 ---
 # <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

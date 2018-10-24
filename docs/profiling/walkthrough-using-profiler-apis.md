@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928057"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和檢視資料  
   
-1.  開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析] 功能表上，指向 [分析工具]，然後選取 [新增效能工作階段]。  
+1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析] 功能表上，指向 [分析工具]，然後選取 [新增效能工作階段]。  
   
-2.  在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。  
+2. 在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。  
   
-3.  在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。  
+3. 在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。  
   
-4.  按一下 [啟動並啟用分析]。  
+4. 按一下 [啟動並啟用分析]。  
   
-     分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。  
+    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。  
   
-5.  開啟產生的效能報表檔案。  
+5. 開啟產生的效能報表檔案。  
   
- 根據預設，啟動分析工具時，分析工具將會收集全域層級的資料。 程式開頭的下列程式碼會關閉全域分析。  
+   根據預設，啟動分析工具時，分析工具將會收集全域層級的資料。 程式開頭的下列程式碼會關閉全域分析。  
   
 ```csharp  
 DataCollection.StopProfile(  

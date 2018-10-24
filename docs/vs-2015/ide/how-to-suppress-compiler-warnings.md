@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932308"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ ms.locfileid: "49286087"
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>隱藏 Visual Basic 的特定警告  
   
-1.  在方案總管中，選擇您想要隱藏警告的專案。  
+1. 在方案總管中，選擇您想要隱藏警告的專案。  
   
-2.  在功能表列上，依序選擇 [專案] 和 [卸載專案]。  
+2. 在功能表列上，依序選擇 [專案] 和 [卸載專案]。  
   
-3.  在方案總管中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_**.vbproj**]。  
+3. 在方案總管中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_**.vbproj**]。  
   
-     該專案檔會在程式碼編輯器中開啟。  
+    該專案檔會在程式碼編輯器中開啟。  
   
-4.  在用來建置的組建組態中，找到 `<NoWarn></NoWarn>` 項目。  
+4. 在用來建置的組建組態中，找到 `<NoWarn></NoWarn>` 項目。  
   
-     下列範例示範粗體 `<NoWarn></NoWarn>` 項目代表 x86 平台上的偵錯組建組態︰  
+    下列範例示範粗體 `<NoWarn></NoWarn>` 項目代表 x86 平台上的偵錯組建組態︰  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  新增一個或多個警告編號作為 `<NoWarn>` 項目的值。 如果您指定多個警告編號，則請以逗號予以分隔，如下列範例所示。  
+5. 新增一個或多個警告編號作為 `<NoWarn>` 項目的值。 如果您指定多個警告編號，則請以逗號予以分隔，如下列範例所示。  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  將變更儲存至 .vbproj 檔案。  
+6. 將變更儲存至 .vbproj 檔案。  
   
-7.  在功能表列上，依序選擇 [專案] 和 [重新載入專案]。  
+7. 在功能表列上，依序選擇 [專案] 和 [重新載入專案]。  
   
-8.  在功能表列上，依序選擇 [建置] 和 [重建方案]。  
+8. 在功能表列上，依序選擇 [建置] 和 [重建方案]。  
   
-     [輸出] 視窗不會再顯示您所指定的警告。  
+    [輸出] 視窗不會再顯示您所指定的警告。  
   
- 如需詳細資訊，請參閱 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。  
+   如需詳細資訊，請參閱 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)   

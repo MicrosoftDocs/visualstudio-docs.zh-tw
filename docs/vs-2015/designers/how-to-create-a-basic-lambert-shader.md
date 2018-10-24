@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8706e596946c7231e501c59536a4d79253c0337f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929721"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "49274335"
   
 #### <a name="to-create-a-lambert-shader"></a>建立 Lambert 著色器  
   
-1.  建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。  
+1. 建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。  
   
-2.  中斷 [點色彩]節點和 [完稿色彩]節點的連接。 選擇 [點色彩] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 保持連接 [Alpha] 端點。  
+2. 中斷 [點色彩]節點和 [完稿色彩]節點的連接。 選擇 [點色彩] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 保持連接 [Alpha] 端點。  
   
-3.  將 [Lambert] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [Lambert]，並將其移至設計介面。 Lambert 節點會根據環境和擴散光源參數，來計算像素的總擴散色彩比重。  
+3. 將 [Lambert] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [Lambert]，並將其移至設計介面。 Lambert 節點會根據環境和擴散光源參數，來計算像素的總擴散色彩比重。  
   
-4.  將 [點色彩] 節點連接到 [Lambert] 節點。 在 [選取] 模式中，將 [點色彩] 節點的 [RGB] 端點移至 [Lambert] 節點的 [擴散色彩] 端點。 此連接會將像素的插入擴散色彩提供給 Lambert 節點。  
+4. 將 [點色彩] 節點連接到 [Lambert] 節點。 在 [選取] 模式中，將 [點色彩] 節點的 [RGB] 端點移至 [Lambert] 節點的 [擴散色彩] 端點。 此連接會將像素的插入擴散色彩提供給 Lambert 節點。  
   
-5.  將計算後的色彩值連接到完稿色彩。 將 [Lambert] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
+5. 將計算後的色彩值連接到完稿色彩。 將 [Lambert] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
   
- 下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
+   下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
   
 > [!NOTE]
 >  為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  

@@ -13,12 +13,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934297"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,37 +69,37 @@ ms.locfileid: "49175782"
 
 [如何建立通用 Windows 平台 (UWP) 應用程式的自動程式碼 UI 測試？](#uwpapps)
   
-1.  為 Windows 市集應用程式建立新的自動程式碼 UI 測試專案。  
+1. 為 Windows 市集應用程式建立新的自動程式碼 UI 測試專案。  
   
-     ![新增自動程式化 UI 測試專案 &#40;Windows 市集應用程式&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")  
+    ![新增自動程式化 UI 測試專案 &#40;Windows 市集應用程式&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")  
   
-2.  選擇使用交叉線工具編輯 UI 對應。  
+2. 選擇使用交叉線工具編輯 UI 對應。  
   
-     ![選擇 [編輯 UI 對應或新增判斷提示]](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
+    ![選擇 [編輯 UI 對應或新增判斷提示]](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
   
-3.  使用自動程式碼 UI 測試產生器中的交叉線工具選取應用程式磚，以滑鼠右鍵按一下 [AutomationId]  ，然後選擇 [將值複製到剪貼簿] 。 剪貼簿中的值稍後將會用來撰寫可啟動應用程式進行測試的動作。  
+3. 使用自動程式碼 UI 測試產生器中的交叉線工具選取應用程式磚，以滑鼠右鍵按一下 [AutomationId]  ，然後選擇 [將值複製到剪貼簿] 。 剪貼簿中的值稍後將會用來撰寫可啟動應用程式進行測試的動作。  
   
-     ![將 AutomationId 複製到剪貼簿](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
+    ![將 AutomationId 複製到剪貼簿](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
   
-4.  在執行中 Windows 市集應用程式中，使用交叉線工具選取按鈕控制項和文字方塊控制項。 加入每個控制項之後，請選擇 [自動程式碼 UI 測試產生器] 工具列中的 [將控制項加入至 UI 控制項對應]  按鈕。  
+4. 在執行中 Windows 市集應用程式中，使用交叉線工具選取按鈕控制項和文字方塊控制項。 加入每個控制項之後，請選擇 [自動程式碼 UI 測試產生器] 工具列中的 [將控制項加入至 UI 控制項對應]  按鈕。  
   
-     ![將控制項加入至 UI 對應](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")  
+    ![將控制項加入至 UI 對應](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")  
   
-5.  選擇 [自動程式碼 UI 測試產生器] 工具列中的 [產生程式碼]  按鈕，然後選擇 [產生]  建立 UI 控制項對應變更的程式碼。  
+5. 選擇 [自動程式碼 UI 測試產生器] 工具列中的 [產生程式碼]  按鈕，然後選擇 [產生]  建立 UI 控制項對應變更的程式碼。  
   
-     ![產生 UI 對應的程式碼](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")  
+    ![產生 UI 對應的程式碼](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")  
   
-6.  選擇此按鈕，以在文字方塊中設定值。  
+6. 選擇此按鈕，以在文字方塊中設定值。  
   
-     ![按一下按鈕控制項以設定文字方塊值](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")  
+    ![按一下按鈕控制項以設定文字方塊值](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")  
   
-7.  使用交叉線工具選取文字方塊控制項，然後選取 **Text** 屬性。  
+7. 使用交叉線工具選取文字方塊控制項，然後選取 **Text** 屬性。  
   
-     ![選取 Text 屬性](../test/media/cuit-windowsstoreapp-selecttextproperty.png "CUIT_WindowsStoreApp_SelectTextProperty")  
+    ![選取 Text 屬性](../test/media/cuit-windowsstoreapp-selecttextproperty.png "CUIT_WindowsStoreApp_SelectTextProperty")  
   
-8.  加入判斷提示。 測試將使用此判斷提示來驗證值是否正確。  
+8. 加入判斷提示。 測試將使用此判斷提示來驗證值是否正確。  
   
-     ![使用交叉線工具選擇文字方塊並加入判斷提示](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")  
+    ![使用交叉線工具選擇文字方塊並加入判斷提示](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")  
   
 9. 加入並產生判斷提示的程式碼。  
   
@@ -217,37 +217,37 @@ ms.locfileid: "49175782"
   
 11. 在方案總管中，開啟 CodedUITest1.cs 或 CodedUITest1.vb 檔案。 您現在可以將程式碼加入至 CodedUTTestMethod1 方法，因為動作需要使用已加入至 UIMap 的控制項執行測試：  
   
-    1.  使用您先前複製到 [剪貼簿] 的 AutomationId 屬性，啟動 Windows 市集應用程式：  
+    1. 使用您先前複製到 [剪貼簿] 的 AutomationId 屬性，啟動 Windows 市集應用程式：  
   
-        ```csharp  
-        XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
-        ```  
+       ```csharp  
+       XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
+       ```  
   
-        ```vb  
-        XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  加入手勢，以點選按鈕控制項：  
+    2. 加入手勢，以點選按鈕控制項：  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
+       ```  
   
-    3.  確認已自動產生的 assert 方法呼叫是在啟動應用程式之後進行，並點選按鈕上的手勢：  
+    3. 確認已自動產生的 assert 方法呼叫是在啟動應用程式之後進行，並點選按鈕上的手勢：  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     加入程式碼之後，CodedUITestMethod1 測試方法應該顯示如下：  
+       加入程式碼之後，CodedUITestMethod1 測試方法應該顯示如下：  
   
     ```csharp  
     [TestMethod]  
@@ -312,19 +312,19 @@ ms.locfileid: "49175782"
      **答**：不可以，自動程式碼 UI 測試專案範本僅適用於 Windows 8.1 和 Windows 10。 若要建立通用 Windows 平台 (UWP) 應用程式的自動化，您需要 Windows 10。  
 
 <a name="uwpapps"></a>
--   **問：如何建立通用 Windows 平台 (UWP) App 的自動程式化 UI 測試？**  
+- **問：如何建立通用 Windows 平台 (UWP) App 的自動程式化 UI 測試？**  
   
-     **答**：您可以根據要測試 UWP 應用程式的平台，使用下列其中一種方式來建立自動程式碼 UI 測試專案：  
+   **答**：您可以根據要測試 UWP 應用程式的平台，使用下列其中一種方式來建立自動程式碼 UI 測試專案：  
   
-    -   在本機電腦上執行的 UWP 應用程式將會當做市集應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows]  節點。  
+  - 在本機電腦上執行的 UWP 應用程式將會當做市集應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows]  節點。  
   
-    -   在行動裝置或模擬器上執行的 UWP 應用程式將會當做 Phone 應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows Phone)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows Phone]  節點。  
+  - 在行動裝置或模擬器上執行的 UWP 應用程式將會當做 Phone 應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows Phone)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows Phone]  節點。  
   
-     建立專案之後，撰寫測試的作業會與之前相同。  
+    建立專案之後，撰寫測試的作業會與之前相同。  
   
--   **問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？**  
+- **問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？**  
   
-     **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
+   **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   

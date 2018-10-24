@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931112"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何： 使用 XML 常值中的 XML 結構描述設計工具
 
@@ -43,35 +43,35 @@ ms.locfileid: "39379505"
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>根據專案中包含的 XSD 檔案，加入含有 XML 常值的 Visual Basic 程式碼
 
-1.  中的程式碼取代*Module1.vb*為下列程式碼的檔案：
+1. 中的程式碼取代*Module1.vb*為下列程式碼的檔案：
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
 
    Module Module1
-       Sub Main()
+      Sub Main()
 
-           Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
-                                <ns:ShipTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:ShipTo>
-                                <ns:BillTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:BillTo>
-                            </ns:PurchaseOrder>
+          Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                               <ns:ShipTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:ShipTo>
+                               <ns:BillTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:BillTo>
+                           </ns:PurchaseOrder>
 
-       End Sub
+      End Sub
    End Module
    ```
 
-2.  以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取**在結構描述總管中顯示**。
+2. 以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取**在結構描述總管中顯示**。
 
-     **XML 結構描述總管**與 XML 常值 XML 結構描述集合相關聯的 Visual Basic 檔案並排顯示。
+    **XML 結構描述總管**與 XML 常值 XML 結構描述集合相關聯的 Visual Basic 檔案並排顯示。

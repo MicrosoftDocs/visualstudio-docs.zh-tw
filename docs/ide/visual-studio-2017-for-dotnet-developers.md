@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928343"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 生產力指南
 
@@ -57,7 +57,7 @@ ms.locfileid: "46495787"
 > [!NOTE]
 > 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請將按鍵繫結關係還原為 Visual Studio 的預設，方法是前往 [工具] > [匯入和匯出設定] > [重設所有設定] 或 [工具] > [選項] > [鍵盤] > [重設]。
 
-您可在[我們的文件](..\ide\tips-and-tricks-for-visual-studio.md)中深入了解 Visual Studio 的鍵盤快速鍵與命令。
+您可在[我們的文件](../ide/tips-and-tricks-for-visual-studio.md)中深入了解 Visual Studio 的鍵盤快速鍵與命令。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要快速瀏覽至檔案或型別的方法
 
@@ -161,7 +161,7 @@ Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底�
 | 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼] |
 | 完成/建議模式 | 變更 IntelliSense 中的完成行為 -- 具有 IntelliJ 背景的開發人員傾向於在這裡變更預設值 | [功能表] > [編輯] > [IntelliSense] > [切換完成模式] |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄 | [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens] |
-| [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板作為虛設常式 |  鍵入程式碼片段名稱並按兩次 **Tab** 鍵。 |
+| [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板作為虛設常式 | 鍵入程式碼片段名稱並按兩次 **Tab** 鍵。 |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>遺漏功能造成生產力或效能不佳？
 
