@@ -21,12 +21,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831571"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：在 ClickOnce 部署中指定個別必要條件的支援 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

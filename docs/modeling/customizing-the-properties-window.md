@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813892"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 您可以在您的特定領域語言 (DSL)，Visual Studio 中自訂的外觀和行為的 [屬性] 視窗。 在 DSL 定義中，您可以定義網域內容上每個網域類別。 根據預設，當您選取的類別，在圖表上或在 [模型總管] 中，執行個體時每個網域屬性列在 [屬性] 視窗中。 這可讓您查看和編輯屬性的值網域，即使您尚未對應它們在圖表上的形狀欄位。
@@ -28,11 +28,11 @@ ms.locfileid: "47859298"
 
  **描述**。 網域屬性的描述會出現在兩個地方：
 
--   當使用者選取的屬性中的 [屬性] 視窗的底部。 您可以使用它來向使用者解釋屬性所代表的意義。
+- 當使用者選取的屬性中的 [屬性] 視窗的底部。 您可以使用它來向使用者解釋屬性所代表的意義。
 
--   在產生的程式碼。 如果您使用的文件功能來擷取 API 文件時，它會顯示為 API 中的這個屬性的描述。
+- 在產生的程式碼。 如果您使用的文件功能來擷取 API 文件時，它會顯示為 API 中的這個屬性的描述。
 
- **分類**. 類別是中 [屬性] 視窗的標題。
+  **分類**. 類別是中 [屬性] 視窗的標題。
 
 ## <a name="exposing-style-features"></a>公開的樣式功能
  可以表示的某些圖形化元素動態功能或*公開*為網域屬性。 使用者可以更新已在這種方式公開的功能，可以更輕鬆地更新程式碼。
@@ -67,67 +67,67 @@ ms.locfileid: "47859298"
 
 ##### <a name="to-forward-a-property-from-another-element"></a>若要從另一個項目將屬性
 
-1.  建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]方案，其中包含至少兩個類別，以在此範例中稱為**活頁簿**並**作者**。 應該有的其中一種之間的關聯性**活頁簿**並**作者**。
+1. 建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]方案，其中包含至少兩個類別，以在此範例中稱為**活頁簿**並**作者**。 應該有的其中一種之間的關聯性**活頁簿**並**作者**。
 
-     來源 role 的多重性 (職務**活頁簿**側邊) 應該是 0..1 或 1..1，因此，每個**活頁簿**有**作者**。
+    來源 role 的多重性 (職務**活頁簿**側邊) 應該是 0..1 或 1..1，因此，每個**活頁簿**有**作者**。
 
-2.  在  **DSL 總管**，以滑鼠右鍵按一下**活頁簿**網域類別，然後按一下 **加入新 {0} DomainTypeDescriptor**。
+2. 在  **DSL 總管**，以滑鼠右鍵按一下**活頁簿**網域類別，然後按一下 **加入新 {0} DomainTypeDescriptor**。
 
-     名為的節點**路徑的自訂屬性描述元**下方將會出現**自訂類型描述元**節點。
+    名為的節點**路徑的自訂屬性描述元**下方將會出現**自訂類型描述元**節點。
 
-3.  以滑鼠右鍵按一下**自訂類型描述元**節點，然後再按一下**新增新的 PropertyPath**。
+3. 以滑鼠右鍵按一下**自訂類型描述元**節點，然後再按一下**新增新的 PropertyPath**。
 
-     新的屬性路徑之下**路徑的自訂屬性描述元**節點。
+    新的屬性路徑之下**路徑的自訂屬性描述元**節點。
 
-4.  選取新的屬性路徑，然後在**屬性**視窗中，將**屬性的路徑**至適當的模型項目的路徑。
+4. 選取新的屬性路徑，然後在**屬性**視窗中，將**屬性的路徑**至適當的模型項目的路徑。
 
-     按一下此屬性右邊的向下箭號，您可以編輯樹狀檢視中的路徑。 如需網域路徑的詳細資訊，請參閱 <<c0> [ 網域路徑語法](../modeling/domain-path-syntax.md)。 當您完成編輯它時，路徑看起來應該像**BookReferencesAuthor.Author/ ！作者**。
+    按一下此屬性右邊的向下箭號，您可以編輯樹狀檢視中的路徑。 如需網域路徑的詳細資訊，請參閱 <<c0> [ 網域路徑語法](../modeling/domain-path-syntax.md)。 當您完成編輯它時，路徑看起來應該像**BookReferencesAuthor.Author/ ！作者**。
 
-5.  設定**屬性**要**名稱**網域屬性**作者**。
+5. 設定**屬性**要**名稱**網域屬性**作者**。
 
-6.  設定**顯示名稱**要**撰寫名稱**。
+6. 設定**顯示名稱**要**撰寫名稱**。
 
-7.  轉換所有範本、 建置和執行 DSL。
+7. 轉換所有範本、 建置和執行 DSL。
 
-8.  在模型圖中，建立一本書，作者，並將它們連結使用的參考關聯性。 選取的書籍項目，並在 [屬性] 視窗應該會看到作者名稱以及活頁簿內容。 變更連結的作者、 名稱或將活頁簿連結至不同的作者，並觀察一書的作者名稱已變更。
+8. 在模型圖中，建立一本書，作者，並將它們連結使用的參考關聯性。 選取的書籍項目，並在 [屬性] 視窗應該會看到作者名稱以及活頁簿內容。 變更連結的作者、 名稱或將活頁簿連結至不同的作者，並觀察一書的作者名稱已變更。
 
 ## <a name="custom-property-editors"></a>自訂屬性編輯器
  [屬性] 視窗會提供適當的預設編輯體驗每個網域屬性的型別。 例如，列舉型別，使用者會看到下拉式清單中，然後針對數值的屬性，使用者可以輸入數字。 這只適用於內建類型。 如果您指定外部類型時，使用者將能夠看到屬性的值，但無法編輯它。
 
  不過，您可以指定下列的編輯器和型別：
 
-1.  使用與標準類型的另一個編輯器。 例如，您可以指定為字串屬性的檔案路徑編輯器。
+1. 使用與標準類型的另一個編輯器。 例如，您可以指定為字串屬性的檔案路徑編輯器。
 
-2.  網域屬性和它的編輯器外部類型。
+2. 網域屬性和它的編輯器外部類型。
 
-3.  .NET 編輯器，例如檔案路徑編輯器中，或者您可以建立您自己的自訂屬性編輯器。
+3. .NET 編輯器，例如檔案路徑編輯器中，或者您可以建立您自己的自訂屬性編輯器。
 
-     外部類型和類型，例如都有一個預設編輯器的字串之間轉換。
+    外部類型和類型，例如都有一個預設編輯器的字串之間轉換。
 
- 在 DSL 中，*外部類型*是不是其中一個簡單的型別 （例如布林值或 Int32） 或字串的任何類型。
+   在 DSL 中，*外部類型*是不是其中一個簡單的型別 （例如布林值或 Int32） 或字串的任何類型。
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>若要定義具有外部類型的網域屬性
 
-1.  在 **方案總管**，將參考加入組件 (DLL) 中包含外部型別， **Dsl**專案。
+1. 在 **方案總管**，將參考加入組件 (DLL) 中包含外部型別， **Dsl**專案。
 
-     .NET 組件或您所提供的組件，可以使用組件。
+    .NET 組件或您所提供的組件，可以使用組件。
 
-2.  將類型新增至**網域類型**清單，除非您已經完成此動作。
+2. 將類型新增至**網域類型**清單，除非您已經完成此動作。
 
-    1.  開啟 DslDefinition.dsl，然後在**DSL Explorer**，以滑鼠右鍵按一下根節點，然後按一下 **加入新的外部類型**。
+   1.  開啟 DslDefinition.dsl，然後在**DSL Explorer**，以滑鼠右鍵按一下根節點，然後按一下 **加入新的外部類型**。
 
-         新的項目之下**網域類型**節點。
+        新的項目之下**網域類型**節點。
 
-        > [!WARNING]
-        >  功能表項目不是 DSL 的根節點上**網域類型**節點。
+       > [!WARNING]
+       >  功能表項目不是 DSL 的根節點上**網域類型**節點。
 
-    2.  在 [屬性] 視窗中設定的名稱和新類型的命名空間。
+   2.  在 [屬性] 視窗中設定的名稱和新類型的命名空間。
 
-3.  將加入網域類別的網域屬性，以一般方式。
+3. 將加入網域類別的網域屬性，以一般方式。
 
-     在 屬性 視窗中，從下拉式清單中選取 外部類型**型別**欄位。
+    在 屬性 視窗中，從下拉式清單中選取 外部類型**型別**欄位。
 
- 在這個階段，使用者可以檢視屬性的值，但他們無法編輯它。 顯示的值取自`ToString()`函式。 您可以撰寫程式碼中的命令或規則，例如設定屬性的值。
+   在這個階段，使用者可以檢視屬性的值，但他們無法編輯它。 顯示的值取自`ToString()`函式。 您可以撰寫程式碼中的命令或規則，例如設定屬性的值。
 
 ### <a name="setting-a-property-editor"></a>設定屬性編輯器
  CLR 將屬性新增至網域屬性，以下列形式：
@@ -136,7 +136,6 @@ ms.locfileid: "47859298"
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  您也可以使用在屬性上設定屬性**自訂屬性**屬性 視窗中的項目。
@@ -173,11 +172,11 @@ ms.locfileid: "47859298"
 
  您所撰寫的類別是衍生自定義編輯器<xref:System.Drawing.Design.UITypeEditor>。 您的類別必須覆寫：
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>與使用者互動，並更新屬性值。
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>與使用者互動，並更新屬性值。
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定您的編輯器會開啟一個對話方塊，或提供下拉式選單。
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定您的編輯器會開啟一個對話方塊，或提供下拉式選單。
 
- 您也可以提供屬性的值，將會顯示在屬性方格中的圖形表示。 若要這樣做，請覆寫`GetPaintValueSupported`，和`PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。
+  您也可以提供屬性的值，將會顯示在屬性方格中的圖形表示。 若要這樣做，請覆寫`GetPaintValueSupported`，和`PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。
 
 > [!NOTE]
 >  在不同的程式碼檔案中加入程式碼**Dsl**專案。
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  若要使用此編輯器，將**自訂屬性**的網域屬性：
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  定義衍生自 <xref:System.ComponentModel.TypeConverter> 的類別。 中的個別檔案中加入程式碼**Dsl**專案。 例如: 
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>另請參閱

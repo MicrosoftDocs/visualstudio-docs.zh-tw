@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850525"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改 3D 模型的樞紐分析點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,22 +37,22 @@ ms.locfileid: "49300387"
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>修改 3D 模型的樞紐分析點  
   
-1.  開始使用像是[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述的現有 3D 模型。  
+1. 開始使用像是[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述的現有 3D 模型。  
   
-2.  進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。  
+2. 進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。  
   
-3.  修改物件的樞紐分析點。 在 [選取] 模式中，選取該物件，然後在 [模型檢視器] 工具列上，選擇 [平移] 工具。 設計介面上隨即出現代表樞紐分析點的方塊。 移動該方塊以修改物件的樞紐分析點。  
+3. 修改物件的樞紐分析點。 在 [選取] 模式中，選取該物件，然後在 [模型檢視器] 工具列上，選擇 [平移] 工具。 設計介面上隨即出現代表樞紐分析點的方塊。 移動該方塊以修改物件的樞紐分析點。  
   
-     您可以透過移動方塊，在 3D 空間中移動樞紐分析點。 若要沿著某一座標軸平移樞紐分析點，請移動對應至該軸的箭頭。 方塊和箭頭會變成黃色，指出受到平移影響的座標軸。  
+    您可以透過移動方塊，在 3D 空間中移動樞紐分析點。 若要沿著某一座標軸平移樞紐分析點，請移動對應至該軸的箭頭。 方塊和箭頭會變成黃色，指出受到平移影響的座標軸。  
   
-     您也可以使用 [屬性] 視窗中的 [ 在空間中移動樞紐位置] 屬性，來指定樞紐分析點。  
+    您也可以使用 [屬性] 視窗中的 [ 在空間中移動樞紐位置] 屬性，來指定樞紐分析點。  
   
-    > [!TIP]
-    >  您可以旋轉物件來檢視新樞紐分析點的效果。 若要加以旋轉，請使用 [旋轉] 工具或修改 [旋轉] 屬性。  
+   > [!TIP]
+   >  您可以旋轉物件來檢視新樞紐分析點的效果。 若要加以旋轉，請使用 [旋轉] 工具或修改 [旋轉] 屬性。  
   
- 以下模型具有已修改的樞紐點：  
+   以下模型具有已修改的樞紐點：  
   
- ![具有已修改樞紐點的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
+   ![具有已修改樞紐點的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)   

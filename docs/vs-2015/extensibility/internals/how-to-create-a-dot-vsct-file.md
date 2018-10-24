@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847838"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何： 建立。Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有數種方式可建立 XML 型 Visual Studio Command Table (.vsct) 組態檔。  
   
--   您可以建立新的 VSPackage 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]封裝範本。  
+- 您可以建立新的 VSPackage 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]封裝範本。  
   
--   您可以使用以 XML 為基礎的命令資料表設定編譯器 Vsct.exe，從現有的.ctc 檔產生的檔案。  
+- 您可以使用以 XML 為基礎的命令資料表設定編譯器 Vsct.exe，從現有的.ctc 檔產生的檔案。  
   
--   您可以使用 Vsct.exe 從現有的.cto 檔產生.vsct 檔。  
+- 您可以使用 Vsct.exe 從現有的.cto 檔產生.vsct 檔。  
   
--   您可以手動建立新的.vsct 檔。  
+- 您可以手動建立新的.vsct 檔。  
   
- 本主題說明如何以手動方式建立新的.vsct 檔。  
+  本主題說明如何以手動方式建立新的.vsct 檔。  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>若要手動建立新的.vsct 檔  
   
