@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE |Microsoft 文件
+title: BP_PASSCOUNT_STYLE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b238012a844016324bbdee4df3cc167051815f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f382c83813eb794fc48e33310ba8381030b424fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846118"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-指定會引發中斷點的中斷點傳遞計數相關聯的條件。  
+指定會導致引發中斷點的中斷點傳遞計數相關聯的條件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -57,10 +57,10 @@ public enum enum_BP_PASSCOUNT_STYLE {
  將中斷點傳遞計數樣式設定為等於或大於。 中斷點叫用次數等於或大於傳遞計數時，就會引發中斷點。  
   
  BP_PASSCOUNT_MOD  
- 指定模數通過計數。 例如，如果類型是傳遞計數`BP_PASSCOUNT_MOD`和傳遞計數值為 4，每次叫用的次數是 4 的倍數中斷點引發。  
+ 指定模數傳遞計數。 比方說，如果傳遞計數為型別的`BP_PASSCOUNT_MOD`和傳遞計數值為 4，每次叫用的次數是 4 的倍數，中斷點會引發。  
   
 ## <a name="remarks"></a>備註  
- 用於`stylePassCount`隸屬[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，這又是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 用於`stylePassCount`隸屬[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，這又是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

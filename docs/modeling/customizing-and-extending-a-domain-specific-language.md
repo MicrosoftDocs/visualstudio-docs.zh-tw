@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816693"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：
@@ -35,7 +35,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義�
 ## <a name="customShapes"></a> 這一節
 
 |若要達成此效果|請參閱本主題|
-|----------------------------|-------------------------|
+|-|-|
 |允許使用者設定圖形的色彩和樣式屬性。|以滑鼠右鍵按一下圖形或連接器的類別，指向**加入已公開**，並按一下的項目。<br /><br /> 請參閱[自訂圖表上的展示](../modeling/customizing-presentation-on-the-diagram.md)。|
 |不同類別的模型項目看起來類似上圖中，共用的屬性，例如初始的高度和寬度、 色彩、 工具提示的。|使用圖形或連接器類別之間的繼承。 在衍生的圖形與衍生的網域類別之間的對應會繼承父代的對應詳細資料。<br /><br /> 或者，您也可以將不同的網域類別對應至相同的圖形類別。|
 |不同的圖形內容會顯示模型項目的類別。|將一個以上的 shape 類別對應至相同的網域類別。 當您建置方案時，請遵循錯誤報表，並提供要求的程式碼，來決定要使用何種圖形。|

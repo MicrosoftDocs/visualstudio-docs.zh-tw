@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818324"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49205513"
   
  [JavaScript 主控台] 視窗可讓您：  
   
--   將物件、值和訊息從您的 App 傳送至主控台視窗。  
+- 將物件、值和訊息從您的 App 傳送至主控台視窗。  
   
--   在執行中的 App 中檢視和修改本機和全域變數的值。  
+- 在執行中的 App 中檢視和修改本機和全域變數的值。  
   
--   檢視物件視覺化檢視。  
+- 檢視物件視覺化檢視。  
   
--   執行在目前的指令碼內容中執行的 JavaScript 程式碼。  
+- 執行在目前的指令碼內容中執行的 JavaScript 程式碼。  
   
--   檢視 JavaScript 錯誤和例外狀況，以及文件物件模型 (DOM) 和 Windows 執行階段例外狀況。  
+- 檢視 JavaScript 錯誤和例外狀況，以及文件物件模型 (DOM) 和 Windows 執行階段例外狀況。  
   
--   執行其他工作，例如清除畫面。 如需命令的完整清單，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
+- 執行其他工作，例如清除畫面。 如需命令的完整清單，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
- 本主題內容：  
+  本主題內容：  
   
--   [使用 JavaScript 主控台視窗進行偵錯](#InteractiveConsole)  
+- [使用 JavaScript 主控台視窗進行偵錯](#InteractiveConsole)  
   
--   [互動式偵錯和中斷模式](#InteractiveDebuggingBreakMode)  
+- [互動式偵錯和中斷模式](#InteractiveDebuggingBreakMode)  
   
--   [JavaScript 主控台視窗中的單行模式和多行模式](#SinglelineMultilineMode)  
+- [JavaScript 主控台視窗中的單行模式和多行模式](#SinglelineMultilineMode)  
   
--   [切換指令碼執行內容](#Switching)  
+- [切換指令碼執行內容](#Switching)  
   
 > [!TIP]
 >  如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] > >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  

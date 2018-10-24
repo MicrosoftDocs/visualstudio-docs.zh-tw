@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827726"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  在 DebuggerDisplay 中使用運算式可能導致下列問題：  
   
--   評估運算式是偵錯工具中最昂貴的作業，而且每次顯示運算式時都會進行評估。 這可能會在逐步執行程式碼時導致效能問題。 例如，若集合或清單中的元素數目很大，則用於顯示其中值的複雜運算式執行速度可能會非常慢。  
+- 評估運算式是偵錯工具中最昂貴的作業，而且每次顯示運算式時都會進行評估。 這可能會在逐步執行程式碼時導致效能問題。 例如，若集合或清單中的元素數目很大，則用於顯示其中值的複雜運算式執行速度可能會非常慢。  
   
--   運算式是由使用目前堆疊框架語言的運算式評估工具進行評估，而不是由撰寫運算式之語言的評估工具進行評估。 這種情況可能會在語言不同時導致無法預測的結果。  
+- 運算式是由使用目前堆疊框架語言的運算式評估工具進行評估，而不是由撰寫運算式之語言的評估工具進行評估。 這種情況可能會在語言不同時導致無法預測的結果。  
   
--   評估運算式可能會變更應用程式的狀態。 例如，設定屬性值的運算式會改變執行程式碼中的屬性值。  
+- 評估運算式可能會變更應用程式的狀態。 例如，設定屬性值的運算式會改變執行程式碼中的屬性值。  
   
- 減少運算式評估可能出現之問題的其中一種方法，是建立私用屬性來執行作業並傳回字串。 這樣 DebuggerDisplay 屬性就可以顯示該私用屬性的值。 下列範例將實作這個模式：  
+  減少運算式評估可能出現之問題的其中一種方法，是建立私用屬性來執行作業並傳回字串。 這樣 DebuggerDisplay 屬性就可以顯示該私用屬性的值。 下列範例將實作這個模式：  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

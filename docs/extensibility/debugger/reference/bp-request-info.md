@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO |Microsoft 文件
+title: BP_REQUEST_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877765"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 包含中斷點的實作所需的資訊。  
@@ -65,33 +65,33 @@ public struct BP_REQUEST_INFO {
  語言 GUID。  
   
  `bpLocation`  
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定的中斷點位置類型。  
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定之中斷點位置的類型。  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示應用程式中的中斷點，就會發生。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點發生的應用程式。  
   
  `bstrProgramName`  
  中斷點會發生在應用程式的名稱。  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生在哪個執行緒。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。  
   
  `bstrThreadName`  
- 中斷點發生在哪個執行緒的名稱。  
+ 中斷點會發生執行緒的名稱。  
   
  `bpCondition`  
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構描述的條件下會引發中斷點。  
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，描述在其下會引發中斷點的條件。  
   
  `bpPassCount`  
- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的行程計數資訊。  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的傳遞計數資訊。  
   
  `dwFlags`  
- 從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定為要求的中斷點的旗標的列舉。  
+ 從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定要求之中斷點的旗標的列舉型別。  
   
 ## <a name="remarks"></a>備註  
- 這個結構由[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)方法。  
+ 此結構由[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)方法。  
   
- 如果您需要取得偵錯引擎廠商 GUID，中斷點條件約束或追蹤點，請參閱[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 如果您需要取得偵錯引擎廠商的 GUID，中斷點條件約束或追蹤點，請參閱[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

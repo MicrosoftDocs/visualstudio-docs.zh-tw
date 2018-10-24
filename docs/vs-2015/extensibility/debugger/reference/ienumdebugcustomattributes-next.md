@@ -17,12 +17,12 @@ ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bce9927b0ef51b361947ae4f8ec9e947098da321
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34b37e4213e5072497dc0d9f0de3eda97dc7e034
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879736"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

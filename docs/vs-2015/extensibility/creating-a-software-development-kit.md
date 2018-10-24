@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851991"
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49268344"
   
  有兩種類型的 Sdk:  
   
--   平台 Sdk 的開發平台的應用程式的必要元件。 例如， [!INCLUDE[win81](../includes/win81-md.md)] SDK，才能開發[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式。  
+- 平台 Sdk 的開發平台的應用程式的必要元件。 例如， [!INCLUDE[win81](../includes/win81-md.md)] SDK，才能開發[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式。  
   
--   擴充功能 Sdk 是選擇性的元件擴充的平台，但不是開發應用程式，該平台的必要項目。  
+- 擴充功能 Sdk 是選擇性的元件擴充的平台，但不是開發應用程式，該平台的必要項目。  
   
- 下列各節說明一般的基礎結構的 Sdk 以及如何建立平台 SDK 和擴充功能 SDK。  
+  下列各節說明一般的基礎結構的 Sdk 以及如何建立平台 SDK 和擴充功能 SDK。  
   
--   [平台 Sdk](#PlatformSDKs)  
+- [平台 Sdk](#PlatformSDKs)  
   
--   [擴充功能 Sdk](#ExtensionSDKs)  
+- [擴充功能 Sdk](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> 平台 Sdk  
  平台 Sdk，才能開發平台的應用程式。 例如， [!INCLUDE[win81](../includes/win81-md.md)] SDK，才能開發的應用程式[!INCLUDE[win81](../includes/win81-md.md)]。  

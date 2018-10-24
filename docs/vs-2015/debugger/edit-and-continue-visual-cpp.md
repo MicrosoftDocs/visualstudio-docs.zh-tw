@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10bf586f24479bd1f531c5a55ab89f644bbcadee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872872"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "49255073"
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 啟用或停用編輯後繼續  
  如果您不希望在目前的偵錯工作階段中套用正在編輯的程式碼內容，您可能需要停用 [編輯後繼續] 的自動引動過程。 您也可以重新啟用自動的 [編輯後繼續]。  
   
-1.  在 [ **工具** ] 功能表上選擇 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。  
   
-2.  在 [選項]  對話方塊中，選取 [偵錯/一般] 。  
+2. 在 [選項]  對話方塊中，選取 [偵錯/一般] 。  
   
-3.  在 [編輯後繼續]  群組中，選取或清除 [啟用原生編輯後繼續]  核取方塊。  
+3. 在 [編輯後繼續]  群組中，選取或清除 [啟用原生編輯後繼續]  核取方塊。  
   
- 修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 即使在進行偵錯時，也可以變更設定。 如果您從命令列或 makefile 建置應用程式，但是在 Visual Studio 環境中進行偵錯，只要您設定了 **/ZI** 選項，就仍然可以使用 [編輯後繼續]。  
+   修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 即使在進行偵錯時，也可以變更設定。 如果您從命令列或 makefile 建置應用程式，但是在 Visual Studio 環境中進行偵錯，只要您設定了 **/ZI** 選項，就仍然可以使用 [編輯後繼續]。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何明確套用程式碼變更  
  在 Visual C++ 中，[編輯後繼續] 會以兩種方式套用程式碼變更。 當您選擇執行命令時，會隱含地套用程式碼變更，而您使用 [ **套用程式碼變更** ] 命令時，則會明確套用程式碼變更。  
@@ -66,11 +66,11 @@ ms.locfileid: "49255073"
   
  若要停止套用程式碼變更：  
   
--   在 [偵錯]  功能表上，選擇 [停止套用程式碼變更] 。  
+- 在 [偵錯]  功能表上，選擇 [停止套用程式碼變更] 。  
   
- 只有套用程式碼變更時，才能看見這個功能表項目。  
+  只有套用程式碼變更時，才能看見這個功能表項目。  
   
- 如果您選擇此選項，就無法認可任何的程式碼變更。  
+  如果您選擇此選項，就無法認可任何的程式碼變更。  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重設執行點  
  某些程式碼變更會在 [編輯後繼續] 套用該變更時，造成執行點移至新位置。 [編輯後繼續] 會盡量精確地放置執行點，但有時結果未必完全正確。  

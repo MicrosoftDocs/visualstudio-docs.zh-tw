@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833001"
 ---
 # <a name="making-custom-projects-version-aware"></a>讓自訂專案成為版本感知
 在自訂專案系統中，您可以允許在多個版本的 Visual Studio 中載入該類型的專案。 您也可以防止舊版本的 Visual Studio 中載入該類型的專案。 您也可以讓該專案能夠向較新版本識別自己，以防專案需要修復、轉換或取代。  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  如果這個方法將 `pUpgradeRequired` 設為 TRUE，並傳回 `S_OK`，結果會視為「升級」，且彷彿方式已將升級旗標設為值 `VSPUVF_PROJECT_ONEWAYUPGRADE`，如本主題稍後所述。 使用此較舊方法支援下列傳回值，但只有在 `pUpgradeRequired` 設為 TRUE 時：  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_SAFEREPAIR`，如本主題稍後所述。  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_SAFEREPAIR`，如本主題稍後所述。  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_UNSAFEREPAIR`，如本主題稍後所述。  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_UNSAFEREPAIR`，如本主題稍後所述。  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_ONEWAYUPGRADE`，如本主題稍後所述。  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. 這個傳回值會將 `pUpgradeRequired` 值轉譯為 TRUE，相當於 `VSPUVF_PROJECT_ONEWAYUPGRADE`，如本主題稍後所述。  
   
- `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新實作能更精確地指定移轉類型。  
+   `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新實作能更精確地指定移轉類型。  
   
 > [!NOTE]
 >  您可以快取 `UpgradeProject_CheckOnly` 方法的相容性檢查結果，以便也可供後續呼叫 `CreateProject`時使用。  

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 99cbbb2a2c67ec077fec8554694cba58fc37bd59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844493"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

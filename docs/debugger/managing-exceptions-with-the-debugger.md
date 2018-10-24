@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881686"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
@@ -217,7 +217,7 @@ public class GenericException<T> : Exception
 
    ![例外狀況的額外條件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 每個條件列，請輸入名稱的模組，並變更比較運算子清單，來**Equals**或是**Not Equals**。 您可以指定萬用字元 (**\***) 指定多個模組的名稱。
+3. 每個條件列，請輸入名稱的模組，並變更比較運算子清單，來**Equals**或是**Not Equals**。 您可以指定萬用字元 (* *\\* * *) 指定多個模組的名稱。
 
 4. 如果您要刪除條件，請選擇**X**條件列的結尾。
 

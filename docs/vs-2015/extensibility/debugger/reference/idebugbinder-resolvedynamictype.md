@@ -17,12 +17,12 @@ ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e77e632d9999c68c820c36f63614f114f7a1ca3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aba881add351defb2c7061b99d62ec8c99b5ff51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833365"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

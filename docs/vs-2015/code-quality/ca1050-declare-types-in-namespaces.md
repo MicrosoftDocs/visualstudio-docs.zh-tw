@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5b6f8acdae5e3b95218cd5e22446b8bacfe5a92f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc8e574c94bf5b9e5d58899526b1b791006cd30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878592"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|

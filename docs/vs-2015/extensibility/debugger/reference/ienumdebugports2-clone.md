@@ -17,12 +17,12 @@ ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a05fdada31c9c3c3200aec7f171733c94c62879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6407653940c358ee90341dc0e958862dc1ada1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842244"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

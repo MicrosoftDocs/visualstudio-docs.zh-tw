@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_type |Microsoft 文件'
+title: 'Idiaframedata:: Get_type |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95262fb5cc9afce25e9f4120b981543939e5be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834587"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-擷取特定編譯器的框架類型。  
+擷取編緝器特定畫面格型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回值，從[StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)列舉，指出特定編譯器的框架類型。  
+ [out]傳回值，以從[StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)列舉，指出編譯器特定畫面格型別。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

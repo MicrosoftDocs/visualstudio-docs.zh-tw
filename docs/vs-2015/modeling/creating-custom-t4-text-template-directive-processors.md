@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852737"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "49176926"
   
  最重要`DirectiveProcessor`必須實作的方法如下所示。  
   
--   `bool IsDirectiveSupported(string directiveName)` -傳回`true`如果指示詞處理器可以處理具名指示詞。  
+- `bool IsDirectiveSupported(string directiveName)` -傳回`true`如果指示詞處理器可以處理具名指示詞。  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會呼叫這個方法，每個項目範本中的指示詞。 結果應該儲存您的處理器。  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會呼叫這個方法，每個項目範本中的指示詞。 結果應該儲存您的處理器。  
   
- 所有呼叫 ProcessDirective() 之後範本化引擎會呼叫這些方法：  
+  所有呼叫 ProcessDirective() 之後範本化引擎會呼叫這些方法：  
   
--   `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的組件名稱。  
+- `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的組件名稱。  
   
--   `string[] GetImportsForProcessingRun()` -傳回可用的命名空間中的範本程式碼。  
+- `string[] GetImportsForProcessingRun()` -傳回可用的命名空間中的範本程式碼。  
   
--   `string GetClassCodeForProcessingRun()` -傳回方法、 屬性和範本程式碼可以使用其他宣告的程式的碼。 若要這樣做最簡單的方式是建置包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您可以為 CodeDom 樹狀結構建構陳述式，然後傳回 序列化範本所使用的語言中的樹狀結構的結果。  
+- `string GetClassCodeForProcessingRun()` -傳回方法、 屬性和範本程式碼可以使用其他宣告的程式的碼。 若要這樣做最簡單的方式是建置包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您可以為 CodeDom 樹狀結構建構陳述式，然後傳回 序列化範本所使用的語言中的樹狀結構的結果。  
   
--   如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
+- 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)  

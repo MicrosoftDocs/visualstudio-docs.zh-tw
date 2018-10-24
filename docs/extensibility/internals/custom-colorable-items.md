@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6025a7f0eb472444ba92346cecf2bc4686bf2eef
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878793"
 ---
 # <a name="custom-colorable-items"></a>自訂色彩的項目
 您可以覆寫型別的清單標示色彩，例如關鍵字和註解，以及在您的語言服務中實作自訂色彩的項目。  
@@ -41,31 +41,31 @@ ms.locfileid: "39499844"
   
 ## <a name="implement-custom-colorable-items"></a>實作自訂色彩的項目  
   
-1.  定義項目必須以色彩標示您的語言，例如關鍵字、 運算子和識別碼。  
+1. 定義項目必須以色彩標示您的語言，例如關鍵字、 運算子和識別碼。  
   
-2.  建立這些色彩的項目列舉型別。  
+2. 建立這些色彩的項目列舉型別。  
   
-3.  建立從剖析器或掃描器的列舉值傳回的權杖類型的關聯。  
+3. 建立從剖析器或掃描器的列舉值傳回的權杖類型的關聯。  
   
-     例如，值，表示語彙基元的型別可能是自訂色彩的項目列舉中的相同值。  
+    例如，值，表示語彙基元的型別可能是自訂色彩的項目列舉中的相同值。  
   
-4.  在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法中的您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>物件中填入從剖析器或掃描器所傳回的語彙基元型別來對應您自訂色彩的項目列舉值的屬性清單。  
+4. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法中的您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>物件中填入從剖析器或掃描器所傳回的語彙基元型別來對應您自訂色彩的項目列舉值的屬性清單。  
   
-5.  在相同的類別可實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面，請實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>介面和其兩個方法，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>。  
+5. 在相同的類別可實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面，請實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>介面和其兩個方法，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>。  
   
-6.  實作 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 介面。  
+6. 實作 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 介面。  
   
-7.  如果您想要支援 24 位元或高的色彩值，也會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面。  
+7. 如果您想要支援 24 位元或高的色彩值，也會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面。  
   
-8.  在您的語言服務物件，會建立清單，其中包含您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>物件，一個用於您的剖析器或掃描器可以識別每個可設定色彩的項目。  
+8. 在您的語言服務物件，會建立清單，其中包含您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>物件，一個用於您的剖析器或掃描器可以識別每個可設定色彩的項目。  
   
-     您可以使用自訂色彩的項目列舉中的對應值，以存取清單中的每個項目。 使用做為索引的列舉值清單。 在清單中的第一個項目永遠不會被存取時，因為它會對應至預設的文字樣式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]永遠會處理本身。 您可以彌補這一點您清單的開頭插入的預留位置色彩的項目。  
+    您可以使用自訂色彩的項目列舉中的對應值，以存取清單中的每個項目。 使用做為索引的列舉值清單。 在清單中的第一個項目永遠不會被存取時，因為它會對應至預設的文字樣式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]永遠會處理本身。 您可以彌補這一點您清單的開頭插入的預留位置色彩的項目。  
   
 9. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>方法，傳回您自訂色彩的項目清單中的項目數目。  
   
 10. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法，傳回要求的色彩項目，從您的清單。  
   
- 如需如何實作的範例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>並<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。  
+    如需如何實作的範例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>並<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。  
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務的模型](../../extensibility/internals/model-of-a-legacy-language-service.md)   

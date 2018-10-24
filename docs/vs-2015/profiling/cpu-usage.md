@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876512"
 ---
 # <a name="cpu-usage"></a>CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ ms.locfileid: "49208687"
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
   
-1.  在 Visual Studio 中，將方案組態設定為 [發行] 並選擇部署目標。  
+1. 在 Visual Studio 中，將方案組態設定為 [發行] 並選擇部署目標。  
   
-     ![選取版本和本機電腦](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![選取版本和本機電腦](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   在 [發行] 模式中執行應用程式，可讓您更清楚地檢視應用程式的實際效能。  
+   -   在 [發行] 模式中執行應用程式，可讓您更清楚地檢視應用程式的實際效能。  
   
-    -   在本機電腦上執行應用程式最適合重現已安裝應用程式的執行。  
+   -   在本機電腦上執行應用程式最適合重現已安裝應用程式的執行。  
   
-    -   如果您從遠端裝置收集資料，請在裝置上直接執行應用程式，而不是使用遠端桌面連接。  
+   -   如果您從遠端裝置收集資料，請在裝置上直接執行應用程式，而不是使用遠端桌面連接。  
   
-    -   對於 Windows Phone 應用程式，直接從 [裝置] 收集資料會提供最精確的資料。  
+   -   對於 Windows Phone 應用程式，直接從 [裝置] 收集資料會提供最精確的資料。  
   
-2.  在 [偵錯] 功能表上選擇 [效能分析工具]。  
+2. 在 [偵錯] 功能表上選擇 [效能分析工具]。  
   
-3.  選擇 [CPU 使用量] ，然後選擇 [啟動]。  
+3. 選擇 [CPU 使用量] ，然後選擇 [啟動]。  
   
-     ![選擇 CPU 使用量](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![選擇 CPU 使用量](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  當應用程式啟動時，按一下 [取得最大數目]。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
+4. 當應用程式啟動時，按一下 [取得最大數目]。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
   
-5.  第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
+5. 第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
   
- ![停止 CpuUsage 資料收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 資料收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具會分析資料，以及顯示報告。  
+   CPU 使用量工具會分析資料，以及顯示報告。  
   
- ![CpuUsage 報表](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 報表](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量報告  
   

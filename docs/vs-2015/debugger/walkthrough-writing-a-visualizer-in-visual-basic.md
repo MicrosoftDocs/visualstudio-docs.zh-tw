@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e08059c18a7b5c1fff74539f4ba497c319838371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881920"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "49266678"
   
 #### <a name="to-create-a-class-library-project"></a>若要建立類別庫專案  
   
-1.  在上**檔案**功能表上，選擇**新增**，按一下 **新專案**。  
+1. 在上**檔案**功能表上，選擇**新增**，按一下 **新專案**。  
   
-2.  在 **新的專案**對話方塊的 **專案類型**s，按一下  **Visual Basic**。  
+2. 在 **新的專案**對話方塊的 **專案類型**s，按一下  **Visual Basic**。  
   
-3.  在 **範本**方塊中，按一下**類別庫**。  
+3. 在 **範本**方塊中，按一下**類別庫**。  
   
-4.  在 **名稱**方塊中，輸入適當的名稱，為類別庫，例如**MyFirstVisualizer**。  
+4. 在 **名稱**方塊中，輸入適當的名稱，為類別庫，例如**MyFirstVisualizer**。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定 **Deploying Office Solutions**]。  
   
- 建立類別庫之後，必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用這個位置中定義的類別。 但請先為專案提供一個有意義的名稱。  
+   建立類別庫之後，必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用這個位置中定義的類別。 但請先為專案提供一個有意義的名稱。  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>若要重新命名 Class1.vb 和加入 Microsoft.VisualStudio.DebuggerVisualizers  
   
@@ -81,32 +81,32 @@ ms.locfileid: "49266678"
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>若要繼承自 DialogDebuggerVisualizer  
   
-1.  在 DebuggerSide.vb 中，移至下列程式碼行：  
+1. 在 DebuggerSide.vb 中，移至下列程式碼行：  
   
-    ```  
-    Public Class DebuggerSide  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   ```  
   
-2.  編輯程式碼使其看來如下所示：  
+2. 編輯程式碼使其看來如下所示：  
   
-    ```  
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- `DialogDebuggerVisualizer` 含有一個您必須覆寫的抽象方法 `Show`。  
+   `DialogDebuggerVisualizer` 含有一個您必須覆寫的抽象方法 `Show`。  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>若要覆寫 DialogDebuggerVisualizer.Show 方法  
   
--   在 `public class DebuggerSide` 中加入下列方法：  
+- 在 `public class DebuggerSide` 中加入下列方法：  
   
-    ```  
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```  
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- `Show` 方法中包含實際建立視覺化檢視對話方塊 (或其他使用者介面) 的程式碼，並會在偵錯工具中顯示已傳遞至視覺化檢視的資訊。 您必須加入該程式碼，以建立對話方塊並顯示資訊。 在本逐步解說中，您將使用 Windows Form 訊息方塊進行上述動作。 首先，您必須加入 `Imports` 的參考和 <xref:System.Windows.Forms> 陳述式。  
+  `Show` 方法中包含實際建立視覺化檢視對話方塊 (或其他使用者介面) 的程式碼，並會在偵錯工具中顯示已傳遞至視覺化檢視的資訊。 您必須加入該程式碼，以建立對話方塊並顯示資訊。 在本逐步解說中，您將使用 Windows Form 訊息方塊進行上述動作。 首先，您必須加入 `Imports` 的參考和 <xref:System.Windows.Forms> 陳述式。  
   
 #### <a name="to-add-systemwindowsforms"></a>若要加入 System.Windows.Forms  
   
@@ -155,30 +155,30 @@ ms.locfileid: "49266678"
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>若要加入顯示視覺化檢視的測試方法  
   
-1.  將下列方法加入至 `public DebuggerSide` 類別：  
+1. 將下列方法加入至 `public DebuggerSide` 類別：  
   
-    ```  
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```  
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  在 **建置**功能表上，按一下**建置 MyFirstVisualizer**。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。  
+2. 在 **建置**功能表上，按一下**建置 MyFirstVisualizer**。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。  
   
- 接下來，您必須建立可執行的專案，以呼叫視覺化檢視的 DLL。 為簡單起見請使用主控台應用程式專案。  
+   接下來，您必須建立可執行的專案，以呼叫視覺化檢視的 DLL。 為簡單起見請使用主控台應用程式專案。  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案  
   
-1.  在上**檔案**功能表上，按一下**新增**，然後按一下 **新專案**。  
+1. 在上**檔案**功能表上，按一下**新增**，然後按一下 **新專案**。  
   
-2.  在 **加入新的專案**對話方塊中，於**範本**方塊中，按一下**主控台應用程式**。  
+2. 在 **加入新的專案**對話方塊中，於**範本**方塊中，按一下**主控台應用程式**。  
   
-3.  在 **名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如**MyTestConsole**。  
+3. 在 **名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如**MyTestConsole**。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定 **Deploying Office Solutions**]。  
   
- 此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。  
+   此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>若要將必要參考加入至 MyTestConsole  
   
@@ -199,38 +199,38 @@ ms.locfileid: "49266678"
   
 #### <a name="to-add-code-to-mytestconsole"></a>若要將程式碼加入至 MyTestConsole  
   
-1.  在 **方案總管 中**，以滑鼠右鍵按一下**Program.vb**，捷徑功能表上，按一下 **重新命名**。  
+1. 在 **方案總管 中**，以滑鼠右鍵按一下**Program.vb**，捷徑功能表上，按一下 **重新命名**。  
   
-2.  編輯 Module1.vb 中的名稱，為適當，例如**TestConsole.vb**。  
+2. 編輯 Module1.vb 中的名稱，為適當，例如**TestConsole.vb**。  
   
-     請注意，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動變更 TestConsole.vb 中的類別宣告，以符合新的檔案名稱。  
+    請注意，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動變更 TestConsole.vb 中的類別宣告，以符合新的檔案名稱。  
   
-3.  在 Testconsole.vb。 vb，新增下列`Imports`陳述式：  
+3. 在 Testconsole.vb。 vb，新增下列`Imports`陳述式：  
   
-    ```  
-    Imports MyFirstVisualizer  
-    ```  
+   ```  
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  在 `Main` 方法中，加入下列程式碼：  
+4. 在 `Main` 方法中，加入下列程式碼：  
   
-    ```  
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```  
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- 現在，您已經準備好可以測試第一個視覺化檢視。  
+   現在，您已經準備好可以測試第一個視覺化檢視。  
   
 #### <a name="to-test-the-visualizer"></a>若要測試視覺化檢視  
   
-1.  在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole**，捷徑功能表上，按一下 **設定為啟始專案**。  
+1. 在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole**，捷徑功能表上，按一下 **設定為啟始專案**。  
   
-2.  在 **偵錯**功能表上，按一下**開始**。  
+2. 在 **偵錯**功能表上，按一下**開始**。  
   
-     這時會啟動主控台應用程式。 視覺化檢視隨即出現，顯示字串 "Hello, World"。  
+    這時會啟動主控台應用程式。 視覺化檢視隨即出現，顯示字串 "Hello, World"。  
   
- 恭喜您！ 您已完成建置和測試第一個視覺化檢視。  
+   恭喜您！ 您已完成建置和測試第一個視覺化檢視。  
   
- 如果您想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。  
+   如果您想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
