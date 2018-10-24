@@ -1,4 +1,4 @@
----
+﻿---
 title: 部署功能導覽
 description: 深入了解部署從 Visual Studio 的應用程式的選項。
 ms.custom: mvc
@@ -114,7 +114,7 @@ ms.locfileid: "44320549"
 
 ## <a name="devops-deployment"></a>DevOps 部署
 
-在小組環境中，您可以使用 Azure Pipelines，以啟用您應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 與[部署到 Azure](/azure/devops/deploy-azure/index?view=vsts)。
+在小組環境中，您可以使用 Azure Pipelines，以啟用您應用程式的持續部署。如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 與[部署到 Azure](/azure/devops/deploy-azure/index?view=vsts)。
 
 ## <a name="deployment-for-other-app-types"></a>部署其他應用程式類型
 
