@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b17ae36702ec1e0af677ad516d29c6139c6acd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876635"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>如何： 以程式設計方式列印工作表
   您可以列印活頁簿中的任何工作表。  
@@ -33,12 +33,12 @@ ms.locfileid: "35670858"
   
 ### <a name="to-print-a-worksheet"></a>列印工作表  
   
-1.  呼叫 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
+1. 呼叫 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
-     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
+    [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]  
   
- <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。 下列程式碼假設您有名為 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。 下列程式碼假設您有名為 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
   
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
   
@@ -51,12 +51,12 @@ ms.locfileid: "35670858"
   
 ### <a name="to-print-a-worksheet"></a>列印工作表  
   
-1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
+1. 呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> 方法，要求兩個複本，以及在列印前先預覽文件。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]  
+    [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
+    [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]  
   
- <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。  
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法可讓您顯示在指定的物件**預覽列印**視窗。  
   
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面  
   

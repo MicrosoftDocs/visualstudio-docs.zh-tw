@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshape |Microsoft 文件'
+title: 'Idiasymbol:: Get_virtualtableshape |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0a7d238b72ea6f3137aad9b5d5ff8a31659f8e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 48c5bc66938d6139eaacf23c5f269c507800d68f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871845"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
-擷取的符號介面之類型的使用者定義類型的虛擬資料表。  
+擷取使用者自訂類型的虛擬資料表之型別的符號介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,10 +37,10 @@ HRESULT get_virtualTableShape (
  [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示使用者定義類型的虛擬資料表。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

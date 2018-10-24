@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877487"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49176302"
   
  web.config 檔的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式並對其進行程式碼剖析，您必須加入或修改下列項目：  
   
--   **configuration/runtime/assemblyBinding/dependentAssembly** 項目，識別控制程式碼剖析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 組件。 **dependentAssembly** 項目包含兩個子項目：**assemblyIdentity** 和 **codeBase**。  
+- **configuration/runtime/assemblyBinding/dependentAssembly** 項目，識別控制程式碼剖析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 組件。 **dependentAssembly** 項目包含兩個子項目：**assemblyIdentity** 和 **codeBase**。  
   
--   **configuration/system.web/compilation** 項目，識別目標組件的分析工具後續處理編譯步驟。  
+- **configuration/system.web/compilation** 項目，識別目標組件的分析工具後續處理編譯步驟。  
   
--   兩個 **add** 項目，識別加入至 **configuration/appSettings** 區段之程式碼剖析工具的位置。  
+- 兩個 **add** 項目，識別加入至 **configuration/appSettings** 區段之程式碼剖析工具的位置。  
   
- 建議您建立原始 web.config 檔的複本，以便用來還原應用程式的組態。  
+  建議您建立原始 web.config 檔的複本，以便用來還原應用程式的組態。  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>加入 ASPNetHelper 組件做為 configuration/runtime/assemblyBinding/dependentAssembly 項目  
   

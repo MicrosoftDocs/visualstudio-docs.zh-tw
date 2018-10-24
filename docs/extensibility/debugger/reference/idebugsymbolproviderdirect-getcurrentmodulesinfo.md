@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo |Microsoft 文件
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37e6922a81889c4350ec92ded3ad4497ccff789d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af5954fb8cd527af526702d8e290c879caa04f46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875849"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 擷取符號群組中的模組的相關資訊。  
@@ -51,19 +51,19 @@ int GetCurrentModulesInfo(
  [in]中的模組數目`ppGuids`陣列。  
   
  `ppGuids`  
- [in]陣列，其中包含之模組的唯一識別碼。  
+ [in]陣列，其中包含模組的唯一識別碼。  
   
  `pADIds`  
  [in]針對應用程式定義域的識別項。  
   
  `pCurrentState`  
- [in]符號群組的目前狀態。  
+ [in]目前的符號群組的狀態。  
   
  `ppCDModItfs`  
- [out]傳回包含符號群組中的模組的物件。  
+ [out]傳回物件，包含符號群組中的模組。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

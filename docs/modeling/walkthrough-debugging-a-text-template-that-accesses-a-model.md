@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836433"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或新增特定領域語言方案中的文字範本時，您可能會發生錯誤時，引擎會將轉換原始程式碼或編譯產生的程式碼時的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。
@@ -25,15 +25,15 @@ ms.locfileid: "39382535"
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
  在此程序中，您可以建立具有下列特性的特定領域語言解決方案：
 
--   名稱： DebuggingTestLanguage
+- 名稱： DebuggingTestLanguage
 
--   解決方案範本： 最小語言
+- 解決方案範本： 最小語言
 
--   副檔名：.ddd
+- 副檔名：.ddd
 
--   公司名稱： Fabrikam
+- 公司名稱： Fabrikam
 
- 如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>建立文字範本
  將文字範本加入至您的方案。

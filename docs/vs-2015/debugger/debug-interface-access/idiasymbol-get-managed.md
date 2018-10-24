@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b08e36cdb23c7054777da050b48320903edfa25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 085508743eabfefc24aad23061c460f55eac5e66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872781"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

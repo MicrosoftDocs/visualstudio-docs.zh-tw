@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845261"
 ---
 # <a name="how-to-use-the-imports-designer"></a>HOW TO：使用匯入設計工具
 
@@ -25,13 +25,13 @@ ms.locfileid: "36755858"
 
 匯入設計工具皆可與 UI 變更和儲存工作流程時所做的變更互動。 儲存工作流程時，會自動將命名空間加入匯入設計工具。 這些需求包括下列各項：
 
--   用於變數與引數宣告之任何型別的命名空間。
+- 用於變數與引數宣告之任何型別的命名空間。
 
--   用於運算式之任何型別的命名空間。
+- 用於運算式之任何型別的命名空間。
 
--   用於序列化工作流程的任何其他命名空間 (例如，置放於工作流程之自訂活動所使用的命名空間)。
+- 用於序列化工作流程的任何其他命名空間 (例如，置放於工作流程之自訂活動所使用的命名空間)。
 
- 儲存工作流程時，您可能會注意到，因為前一個清單所描述的邏輯，某些手動刪除的命名空間會自動重新加入至匯入設計工具。
+  儲存工作流程時，您可能會注意到，因為前一個清單所描述的邏輯，某些手動刪除的命名空間會自動重新加入至匯入設計工具。
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>若要將命名空間加入至匯入命名空間的清單
 

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872794"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -24,26 +24,26 @@ ms.locfileid: "47858494"
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼
  產生程式碼的最簡單方式是使用文字範本。 您可以在相同的 Visual Studio 方案中保留模型產生程式碼。 如需詳細資訊，請參閱:
 
--   [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
--   [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
+- [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
 
- 這種方法很容易透過累加方式套用。 從僅適用於特定案例的應用程式開始進行，然後選擇應用程式中想要與模型不同的一些組件。 重新命名這些組件的原始程式檔，讓它們變成文字範本 (.tt) 檔案。 目前，將會透過範本檔案自動產生來源 .cs 檔案，讓應用程式像以前一樣地運作。
+  這種方法很容易透過累加方式套用。 從僅適用於特定案例的應用程式開始進行，然後選擇應用程式中想要與模型不同的一些組件。 重新命名這些組件的原始程式檔，讓它們變成文字範本 (.tt) 檔案。 目前，將會透過範本檔案自動產生來源 .cs 檔案，讓應用程式像以前一樣地運作。
 
- 然後，您可以取得一部分的程式碼，並將它取代為文字範本運算式，而運算式會讀取模型並產生原始程式檔的那個部分。 模型至少有一個值應該產生原始程式檔，讓您可以再次執行應用程式，而且會像以前一樣地運作。 測試不同的模型值之後，即可繼續進行程式碼之另一個組件中的插入範本運算式。
+  然後，您可以取得一部分的程式碼，並將它取代為文字範本運算式，而運算式會讀取模型並產生原始程式檔的那個部分。 模型至少有一個值應該產生原始程式檔，讓您可以再次執行應用程式，而且會像以前一樣地運作。 測試不同的模型值之後，即可繼續進行程式碼之另一個組件中的插入範本運算式。
 
- 這種累加方法表示產生程式碼通常是一種低風險方式。 所產生應用程式的執行效能通常會像手動撰寫的版本一樣好。
+  這種累加方法表示產生程式碼通常是一種低風險方式。 所產生應用程式的執行效能通常會像手動撰寫的版本一樣好。
 
- 不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。
+  不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。
 
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式
  如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計您的應用程式以讀取模型，並會隨之改變其行為。 如需詳細資訊，請參閱:
 
--   [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- 這種方法也可以透過累加方式套用，但是開始時還需要進行其他工作。 您需要撰寫可讀取模型的程式碼，以及設定一個允許變動組件存取其值的架構。 將變動組件設為一般的成本高於程式碼產生。
+  這種方法也可以透過累加方式套用，但是開始時還需要進行其他工作。 您需要撰寫可讀取模型的程式碼，以及設定一個允許變動組件存取其值的架構。 將變動組件設為一般的成本高於程式碼產生。
 
- 一般應用程式的執行效能通常不像其特定對應項目一樣好。 如果效能十分重要，則您的專案計劃應該包含這項風險的評估。
+  一般應用程式的執行效能通常不像其特定對應項目一樣好。 如果效能十分重要，則您的專案計劃應該包含這項風險的評估。
 
 ## <a name="developing-a-derived-application"></a>開發衍生的應用程式
  您可能會發現下列一般方針十分有用。

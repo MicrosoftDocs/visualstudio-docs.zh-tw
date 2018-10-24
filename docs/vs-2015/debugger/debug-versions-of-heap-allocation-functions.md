@@ -30,12 +30,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d61d56800a69e0d651df6dd82043d0bb17f05e94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a6bf3976138f385f103c6d046e2b71133a8795d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874994"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
   
  然而，您可能要明確地呼叫 `_malloc_dbg`。 明確地呼叫 `_malloc_dbg` 會多出下列一些優點：  
   
--   追蹤 `_CLIENT_BLOCK` 類型配置。  
+- 追蹤 `_CLIENT_BLOCK` 類型配置。  
   
--   儲存發生配置要求位置的原始程式檔和行號。  
+- 儲存發生配置要求位置的原始程式檔和行號。  
   
- 如果您不想要轉換您`malloc`呼叫`_malloc_dbg`，您可以藉由定義取得來源檔案資訊[_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，這會讓前置處理器直接對應到所有呼叫`malloc`至`_malloc_dbg`而不是依賴周圍的包裝函式`malloc`。  
+  如果您不想要轉換您`malloc`呼叫`_malloc_dbg`，您可以藉由定義取得來源檔案資訊[_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，這會讓前置處理器直接對應到所有呼叫`malloc`至`_malloc_dbg`而不是依賴周圍的包裝函式`malloc`。  
   
- 若要追蹤用戶端區塊裡不同類型的配置，您必須直接呼叫 `_malloc_dbg` 並且將 `blockType` 參數設為 `_CLIENT_BLOCK`。  
+  若要追蹤用戶端區塊裡不同類型的配置，您必須直接呼叫 `_malloc_dbg` 並且將 `blockType` 參數設為 `_CLIENT_BLOCK`。  
   
- 未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)會忽略，而來源相關的檔案資訊未提供配置要求。 因為 `malloc` 沒有區塊型別參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。  
+  未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)會忽略，而來源相關的檔案資訊未提供配置要求。 因為 `malloc` 沒有區塊型別參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

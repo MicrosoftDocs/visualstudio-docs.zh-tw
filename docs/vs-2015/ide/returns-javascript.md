@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e56a1ba624603e69c07f769706b02a1e46927699
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5896c35c53feedb2f253bd86691f2fbf6793099e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875706"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;傳回&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,41 +44,41 @@ ms.locfileid: "49302636"
  `type`  
  選擇性。 傳回值的資料型別。 類型可以是下列其中一項：  
   
--   ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
+- ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
   
--   DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
+- DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
   
--   JavaScript 建構函式的函式。  
+- JavaScript 建構函式的函式。  
   
- `integer`  
- 選擇性。 如果`type`是`Number`，指定傳回的值是否為整數。 設定為`true`表示傳回的值是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `integer`  
+  選擇性。 如果`type`是`Number`，指定傳回的值是否為整數。 設定為`true`表示傳回的值是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `domElement`  
- 選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性會指定所記錄的傳回值是否是 DOM 項目。 設定為`true`以指定的傳回值是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會記載的傳回值視為`HTMLElement`執行陳述式完成時。  
+  `domElement`  
+  選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性會指定所記錄的傳回值是否是 DOM 項目。 設定為`true`以指定的傳回值是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會記載的傳回值視為`HTMLElement`執行陳述式完成時。  
   
- `mayBeNull`  
- 選擇性。 指定是否記錄傳回值可以設定為 null。 設定為`true`表示，傳回的值可以設定為 null，否則設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `mayBeNull`  
+  選擇性。 指定是否記錄傳回值可以設定為 null。 設定為`true`表示，傳回的值可以設定為 null，否則設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementType`  
- 選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
+  `elementType`  
+  選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
   
- `elementInteger`  
- 選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementInteger`  
+  選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementDomElement`  
- 選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
+  `elementDomElement`  
+  選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
   
- `elementMayBeNull`  
- 選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementMayBeNull`  
+  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `locid`  
- 選擇性。 如需傳回值的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
+  `locid`  
+  選擇性。 如需傳回值的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
   
- `value`  
- 選擇性。 指定應由 IntelliSense 用於評估，而不是函式程式碼本身的程式碼。 例如，您可以使用這個屬性提供 IntelliSense 的非同步回呼，例如`Promise`。 使用`value`屬性搭配`<returns>`項目可以改善 IntelliSense 效能，藉由略過執行冗長的程式碼。  
+  `value`  
+  選擇性。 指定應由 IntelliSense 用於評估，而不是函式程式碼本身的程式碼。 例如，您可以使用這個屬性提供 IntelliSense 的非同步回呼，例如`Promise`。 使用`value`屬性搭配`<returns>`項目可以改善 IntelliSense 效能，藉由略過執行冗長的程式碼。  
   
- `description`  
- 選擇性。 傳回值的描述。  
+  `description`  
+  選擇性。 傳回值的描述。  
   
 ## <a name="remarks"></a>備註  
  `<returns>`項目必須放在任何陳述式之前的函式主體。  

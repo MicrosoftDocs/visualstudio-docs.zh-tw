@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba8ef8cc0b75ed70ea6e98be2a4bac3e041e1d8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ed145c1b3a3ddf6b0308c8862ee0f15e7637c990
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879086"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407：避免在 COM 可見類型中使用靜態成員
+
 |||
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

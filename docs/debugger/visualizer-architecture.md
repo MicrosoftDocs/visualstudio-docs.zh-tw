@@ -1,5 +1,5 @@
 ---
-title: 視覺化檢視架構 |Microsoft 文件
+title: 視覺化檢視架構 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836602"
 ---
 # <a name="visualizer-architecture"></a>視覺化檢視架構
 偵錯工具視覺化檢視的架構分為兩部分：  
   
--   *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
+- *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
   
--   *偵錯項目端*Visual Studio 偵錯的程序中執行 (*偵錯項目*)。  
+- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
   
- 視覺化檢視是可讓偵錯工具顯示偵錯工具元件 (*視覺化*) 中有意義、 容易了解表單的資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
+  視覺化檢視是可讓偵錯工具顯示的偵錯工具元件 (*視覺化*) 中有意義、 容易了解表單的資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
   
- 要視覺化的資料物件位於您正在偵錯的程序 (*偵錯項目*程序)。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
+  要視覺化的資料物件位於您正在偵錯的程序 (*偵錯項目*程序)。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
   
 |偵錯工具處理序|偵錯項目處理序|  
 |----------------------|----------------------|  
 |偵錯工具使用者介面 (資料提示方塊、監看式視窗、快速監看式)|要視覺化的資料物件|  
   
- 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構分為兩個部分：*偵錯工具端*程式碼和*偵錯項目端*程式碼。  
+ 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構是由兩個部分所組成：*偵錯工具端*程式碼並*偵錯項目端*程式碼。  
   
  偵錯工具端程式碼會建立自己的使用者介面，供您從偵錯工具介面 (例如，資料提示方塊、監看式視窗或快速監看式) 中叫用。 建立視覺化檢視介面是使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 類別和 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 介面。 DialogDebuggerVisualizer 和 IDialogVisualizerService 跟所有視覺化檢視 API 一樣位於 <xref:Microsoft.VisualStudio.DebuggerVisualizers> 命名空間中。  
   

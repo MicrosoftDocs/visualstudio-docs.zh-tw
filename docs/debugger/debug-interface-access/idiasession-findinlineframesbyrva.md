@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByRVA |Microsoft 文件
+title: IDiaSession::findInlineFramesByRVA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0669d99cfc7ea1aa345a651692641a4bd2ac8d2a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ebb32b9b22de8d4092c53f56accf1d953bbc94a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876876"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-擷取列舉，可讓用戶端來逐一查看所有指定相對虛擬位址 (RVA) 上的內嵌框架。  
+擷取列舉型別，可讓用戶端來逐一查看所有內嵌上的框架指定相對虛擬位址 (RVA)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,16 +33,16 @@ HRESULT findInlineFramesByRVA (
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]`IDiaSymbol`表示父物件。  
+ [in]`IDiaSymbol`物件表示父代。  
   
  `rva`  
- [in]指定的位址為 RVA。  
+ [in]RVA 為指定的位址。  
   
  `ppResult`  
  [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

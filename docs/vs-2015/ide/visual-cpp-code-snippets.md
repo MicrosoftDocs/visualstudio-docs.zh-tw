@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861356"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "49242758"
 ## <a name="inserting-a-code-snippet"></a>插入程式碼片段  
  若要插入程式碼片段，請開啟 C++ 程式碼檔 (.cpp 或 .h)，在該檔案內部任意處按一下，然後執行下列其中一項動作：  
   
--   按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]  
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]  
   
--   在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]  
+- 在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]  
   
--   使用快速鍵：**CTRL + K + X**  
+- 使用快速鍵：**CTRL + K + X**  
   
- 您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：  
+  您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ ms.locfileid: "49242758"
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>使用程式碼片段圍繞已選取的程式碼  
  若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：  
   
-1.  按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]  
+1. 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]  
   
-2.  在 [編輯/IntelliSense] 功能表中，選取 [範圍陳述式]  
+2. 在 [編輯/IntelliSense] 功能表中，選取 [範圍陳述式]  
   
-3.  使用快速鍵：**CTRL + K + S**  
+3. 使用快速鍵：**CTRL + K + S**  
   
- 選取 [#if]。 您應該會看到類似下面的內容：  
+   選取 [#if]。 您應該會看到類似下面的內容：  
   
 ```cpp  
 #if 0  

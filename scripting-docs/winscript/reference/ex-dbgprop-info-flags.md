@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS |Microsoft 文件
+title: EX_DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878085"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 用來指定`ExtendedDebugPropertyInfo`欄位。  
@@ -42,7 +42,7 @@ enum {
   
 ## <a name="members"></a>成員  
  EX_DBGPROP_INFO_ID  
- 初始化屬性的識別項。  
+ 初始化屬性的識別碼。  
   
  EX_DBGPROP_INFO_NTYPE  
  屬性會初始化型別。  
@@ -54,7 +54,7 @@ enum {
  初始化`plb`欄位。  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- 初始化`pDebugExtProp`包含欄位`IDebugExtendedProperty`介面。  
+ 初始化`pDebugExtProp`欄位包含`IDebugExtendedProperty`介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   

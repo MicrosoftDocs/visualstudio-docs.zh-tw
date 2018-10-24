@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c8eb9e566f4f5916961a95a1c61f8fdcbb689f1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876213"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。  
@@ -33,48 +33,48 @@ ms.locfileid: "46495449"
 ## <a name="localize-command-names"></a>命令名稱當地語系化  
  在 Vspackage 中，功能表命令和工具列按鈕中定義 *.vsct*檔案。  
   
-1.  在 [**方案總管] 中**，變更的名稱 *.vsct*檔案從*filename.vsct*至*filename.en US.vsct*。  
+1. 在 [**方案總管] 中**，變更的名稱 *.vsct*檔案從*filename.vsct*至*filename.en US.vsct*。  
   
-2.  建立一份*filename.en US.vsct*每個當地語系化語言。  
+2. 建立一份*filename.en US.vsct*每個當地語系化語言。  
   
-     命名每個複本*檔案名稱。 {地區設定}.vsct*，其中 *{地區設定}* 是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱 < [Microsoft 指派的地區設定識別碼](/windows/uwp/publish/supported-languages)。  
+    命名每個複本*檔案名稱。 {地區設定}.vsct*，其中 *{地區設定}* 是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱 < [Microsoft 指派的地區設定識別碼](/windows/uwp/publish/supported-languages)。  
   
-     這些*檔案名稱。Locale.vsct*檔會包含當地語系化的功能表文字，為您的封裝。  
+    這些*檔案名稱。Locale.vsct*檔會包含當地語系化的功能表文字，為您的封裝。  
   
-3.  開啟每一個*檔案名稱。Locale.vsct*當地語系化文字的檔案。  
+3. 開啟每一個*檔案名稱。Locale.vsct*當地語系化文字的檔案。  
   
-    1.  修改[ButtonText](../extensibility/buttontext-element.md)值為適用於特定語言的元素。  
+   1. 修改[ButtonText](../extensibility/buttontext-element.md)值為適用於特定語言的元素。  
   
-    2.  如果您將會提供當地語系化的圖示，修改[點陣圖](../extensibility/bitmap-element.md)值以指向目標檔案。  
+   2. 如果您將會提供當地語系化的圖示，修改[點陣圖](../extensibility/bitmap-element.md)值以指向目標檔案。  
   
-     下列範例會顯示英文和西班牙文按鈕文字，以開啟家譜 Explorer 工具視窗命令。  
+      下列範例會顯示英文和西班牙文按鈕文字，以開啟家譜 Explorer 工具視窗命令。  
   
-     [*FamilyTree.en US.vsct*]  
+      [*FamilyTree.en US.vsct*]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [*FamilyTree.es ES.vsct*]  
+    [*FamilyTree.es ES.vsct*]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localize-other-text-resources"></a>當地語系化的文字中的其他資源  
  文字命令名稱以外的資源定義中資源 (*.resx*) 檔案。  

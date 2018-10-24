@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880717"
 ---
 # <a name="encodings-and-line-breaks"></a>編碼與分行符號
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "49284982"
   
  在 Visual Studio 中，會將下列字元解譯為分行符號：  
   
--   CRLF：歸位字元 + 換行字元、Unicode 字元 000D + 000A  
+- CRLF：歸位字元 + 換行字元、Unicode 字元 000D + 000A  
   
--   LF：換行字元、Unicode 字元 000A  
+- LF：換行字元、Unicode 字元 000A  
   
--   NEL：下一行、Unicode 字元 0085  
+- NEL：下一行、Unicode 字元 0085  
   
--   LS：行分隔符號、Unicode 字元 2028  
+- LS：行分隔符號、Unicode 字元 2028  
   
--   PS：段落分隔符號、Unicode 字元 2029  
+- PS：段落分隔符號、Unicode 字元 2029  
   
- 從其他應用程式複製的文字會保留原始編碼和分行符號字元。 例如，當您從 [記事本] 中複製文字，並將它貼到 Visual Studio 中的文字檔，文字的設定會與它在 [記事本] 中的設定相同。  
+  從其他應用程式複製的文字會保留原始編碼和分行符號字元。 例如，當您從 [記事本] 中複製文字，並將它貼到 Visual Studio 中的文字檔，文字的設定會與它在 [記事本] 中的設定相同。  
   
- 當您開啟的檔案包含不同的分行符號字元時，可能會看到一個對話方塊，詢問是否應該正規化不一致的分行符號字元以及要選擇哪一種分行符號類型。
+  當您開啟的檔案包含不同的分行符號字元時，可能會看到一個對話方塊，詢問是否應該正規化不一致的分行符號字元以及要選擇哪一種分行符號類型。
 
 
 

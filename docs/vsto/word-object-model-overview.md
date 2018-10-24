@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878007"
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型概觀
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。  
@@ -53,17 +53,17 @@ ms.locfileid: "35258450"
   
  下列各節簡述最上層物件，以及它們彼此之間的互動方式。 這些物件有五種：  
   
--   Application 物件  
+- Application 物件  
   
--   Document 物件  
+- Document 物件  
   
--   Selection 物件  
+- Selection 物件  
   
--   Range 物件  
+- Range 物件  
   
--   Bookmark 物件  
+- Bookmark 物件  
   
- 除了 Word 物件模型之外，Visual Studio 中的 Office 專案還提供 *「主項目」* (Host Item) 和 *「主控制項」* (Host Control)，以擴充 Word 物件模型中的部分物件。 主項目和主控制項的行為與它們所擴充的 Word 物件相同，但還具有其他功能，例如資料繫結功能和額外事件。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)並[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
+  除了 Word 物件模型之外，Visual Studio 中的 Office 專案還提供 *「主項目」* (Host Item) 和 *「主控制項」* (Host Control)，以擴充 Word 物件模型中的部分物件。 主項目和主控制項的行為與它們所擴充的 Word 物件相同，但還具有其他功能，例如資料繫結功能和額外事件。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)並[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
   
 ### <a name="application-object"></a>Application 物件  
  <xref:Microsoft.Office.Interop.Word.Application> 物件代表 Word 應用程式，而且是所有其他物件的父系。 其成員通常會整體套用至 Word。 您可以使用其屬性和方法控制 Word 環境。  
@@ -90,17 +90,17 @@ ms.locfileid: "35258450"
 ### <a name="range-object"></a>Range 物件  
  <xref:Microsoft.Office.Interop.Word.Range> 物件代表文件中的連續區域，由起始字元位置和結束字元位置所定義。 不限於單一 <xref:Microsoft.Office.Interop.Word.Range> 物件。 在同一份文件中，您可以定義多個 <xref:Microsoft.Office.Interop.Word.Range> 物件。 <xref:Microsoft.Office.Interop.Word.Range> 物件具有下列特性：  
   
--   可由單獨的插入點、文字範圍或整份文件組成。  
+- 可由單獨的插入點、文字範圍或整份文件組成。  
   
--   包括空格等非列印字元，tab 字元和段落標記。  
+- 包括空格等非列印字元，tab 字元和段落標記。  
   
--   可以是目前選取的區域範圍，也可以是目前選取範圍以外的區域。  
+- 可以是目前選取的區域範圍，也可以是目前選取範圍以外的區域。  
   
--   與一定會顯示的選項不同，它不會顯示在文件中。  
+- 與一定會顯示的選項不同，它不會顯示在文件中。  
   
--   不隨文件儲存，僅程式碼執行時才會存在。  
+- 不隨文件儲存，僅程式碼執行時才會存在。  
   
- 當您在範圍結尾插入文字時，Word 會自動擴展範圍以包含插入的文字。  
+  當您在範圍結尾插入文字時，Word 會自動擴展範圍以包含插入的文字。  
   
 ### <a name="content-control-objects"></a>內容控制項物件  
  <xref:Microsoft.Office.Interop.Word.ContentControl> 提供的方法，可讓您控制 Word 文件文字和其他類型內容的輸入和簡報。 <xref:Microsoft.Office.Interop.Word.ContentControl> 可以顯示數種不同型別的 UI，最佳化 Word 文件的運用，例如 RTF 文字控制項、日期選擇器或下拉式方塊。 您也可以使用 <xref:Microsoft.Office.Interop.Word.ContentControl> 防止使用者編輯文件或範本的區段。  
@@ -110,13 +110,13 @@ ms.locfileid: "35258450"
 ### <a name="bookmark-object"></a>Bookmark 物件  
  <xref:Microsoft.Office.Interop.Word.Bookmark> 物件代表文件中的連續區域，具備起始位置和結束位置。 您可以使用書籤在文件中標記位置，或用為文件的文字容器。 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件可由插入點組成，或和整份文件一樣大。 <xref:Microsoft.Office.Interop.Word.Bookmark> 具有下列特性，使其和 <xref:Microsoft.Office.Interop.Word.Range> 物件有所區別：  
   
--   您可以在設計階段命名書籤。  
+- 您可以在設計階段命名書籤。  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark> 物件與文件一起儲存，因此不會在程式碼停止執行或文件關閉刪除。  
+- <xref:Microsoft.Office.Interop.Word.Bookmark> 物件與文件一起儲存，因此不會在程式碼停止執行或文件關閉刪除。  
   
--   將 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 屬性存取 <xref:Microsoft.Office.Interop.Word.View> 屬性設為 **false** 或 **true**。  
+- 將 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 屬性存取 <xref:Microsoft.Office.Interop.Word.View> 屬性設為 **false** 或 **true**。  
   
- Visual Studio 會提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主控制項，藉以擴充 <xref:Microsoft.Office.Tools.Word.Bookmark> 物件。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項行如原生 <xref:Microsoft.Office.Interop.Word.Bookmark>，卻又具有事件和資料繫結功能。 您可以用將資料繫結至 Windows 表單文字方塊控制項的方式，將資料繫結至文件的書籤控制項。 如需詳細資訊，請參閱 <<c0> [ 書籤控制項](../vsto/bookmark-control.md)。  
+  Visual Studio 會提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主控制項，藉以擴充 <xref:Microsoft.Office.Tools.Word.Bookmark> 物件。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項行如原生 <xref:Microsoft.Office.Interop.Word.Bookmark>，卻又具有事件和資料繫結功能。 您可以用將資料繫結至 Windows 表單文字方塊控制項的方式，將資料繫結至文件的書籤控制項。 如需詳細資訊，請參閱 <<c0> [ 書籤控制項](../vsto/bookmark-control.md)。  
   
 ##  <a name="WordOMDocumentation"></a> 使用 Word 物件模型文件  
  如需 Word 物件模型的完整資訊，您可以參閱 Word 主要 Interop 組件 (PIA) 參考和 Visual Basic for Applications (VBA) 物件模型參考。  

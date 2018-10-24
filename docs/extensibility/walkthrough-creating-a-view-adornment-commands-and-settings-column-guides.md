@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7d0605798f5970411fa315d309807dc6f1f7a0cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872352"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （分欄輔助線）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。 這篇文章會示範如何開始使用熱門的擴充功能，分欄輔助線。 分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。 具體來說，格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。  
   
  在本逐步解說中，您：  
   
--   建立 VSIX 專案  
+- 建立 VSIX 專案  
   
--   新增編輯器檢視透過裝飾  
+- 新增編輯器檢視透過裝飾  
   
--   新增對儲存和取得設定 （其中繪製分欄輔助線和色彩） 的支援  
+- 新增對儲存和取得設定 （其中繪製分欄輔助線和色彩） 的支援  
   
--   新增命令 （新增/移除資料行的輔助線，變更其色彩）  
+- 新增命令 （新增/移除資料行的輔助線，變更其色彩）  
   
--   將命令放在 [編輯] 功能表和文字文件內容功能表  
+- 將命令放在 [編輯] 功能表和文字文件內容功能表  
   
--   新增支援叫用的命令，從 Visual Studio 命令視窗  
+- 新增支援叫用的命令，從 Visual Studio 命令視窗  
   
- 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
+  您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
- **請注意**： 在此逐步解說中，您必須將大量的程式碼貼入 Visual Studio 擴充功能範本所產生的一些檔案。 但是，很快就本逐步解說會參考和其他擴充功能範例的 github 上已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。  
+  **請注意**： 在此逐步解說中，您必須將大量的程式碼貼入 Visual Studio 擴充功能範本所產生的一些檔案。 但是，很快就本逐步解說會參考和其他擴充功能範例的 github 上已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。  
   
 ## <a name="get-started"></a>開始使用  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -45,21 +45,21 @@ ms.locfileid: "46496099"
 ## <a name="set-up-the-solution"></a>設定解決方案  
  首先，您建立 VSIX 專案、 新增編輯器檢視透過裝飾，然後再加入命令 （這會加入 VSPackage 也可以擁有命令）。 基本架構如下所示：  
   
--   您有建立文字檢視建立接聽程式`ColumnGuideAdornment`每個檢視的物件。 這個物件接聽檢視變更的相關事件或變更的設定，視引導更新或重新繪製的資料行。  
+- 您有建立文字檢視建立接聽程式`ColumnGuideAdornment`每個檢視的物件。 這個物件接聽檢視變更的相關事件或變更的設定，視引導更新或重新繪製的資料行。  
   
--   沒有`GuidesSettingsManager`可處理從 Visual Studio 設定儲存體讀取和寫入。 Settings manager 也有更新的設定，以支援使用者命令的作業 （加入資料行、 移除資料行、 變更色彩）。  
+- 沒有`GuidesSettingsManager`可處理從 Visual Studio 設定儲存體讀取和寫入。 Settings manager 也有更新的設定，以支援使用者命令的作業 （加入資料行、 移除資料行、 變更色彩）。  
   
--   VSIP 封裝所需，如果您有使用者命令，但它是只將命令實作物件初始化未定案程式碼。  
+- VSIP 封裝所需，如果您有使用者命令，但它是只將命令實作物件初始化未定案程式碼。  
   
--   沒有`ColumnGuideCommands`所執行的使用者物件的命令和命令中所宣告的連結命令處理常式 *.vsct*檔案。  
+- 沒有`ColumnGuideCommands`所執行的使用者物件的命令和命令中所宣告的連結命令處理常式 *.vsct*檔案。  
   
- **VSIX**。 使用**檔案&#124;新的...** 命令來建立專案。 選擇**擴充性**下方的節點**C#** 左側的導覽窗格中，然後選擇  **VSIX 專案**右窗格中。 輸入名稱**ColumnGuides** ，然後選擇**確定**建立專案。  
+  **VSIX**。 使用**檔案&#124;新的...** 命令來建立專案。 選擇**擴充性**下方的節點**C#** 左側的導覽窗格中，然後選擇  **VSIX 專案**右窗格中。 輸入名稱**ColumnGuides** ，然後選擇**確定**建立專案。  
   
- **檢視裝飾**。 在 [方案總管] 中的專案節點上，請按右指標按鈕。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區 Adornment**右窗格中。 輸入名稱**ColumnGuideAdornment**作為項目名稱，然後選擇**新增**將它加入。  
+  **檢視裝飾**。 在 [方案總管] 中的專案節點上，請按右指標按鈕。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區 Adornment**右窗格中。 輸入名稱**ColumnGuideAdornment**作為項目名稱，然後選擇**新增**將它加入。  
   
- 您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案： **ColumnGuideAdornment.cs**並**ColumnGuideAdornmentTextViewCreationListener.cs**。 範本會繪製在檢視上紫色的矩形。 在下列區段中，方法，您可以變更檢視建立接聽程式中的行數，並取代的內容**ColumnGuideAdornment.cs**。  
+  您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案： **ColumnGuideAdornment.cs**並**ColumnGuideAdornmentTextViewCreationListener.cs**。 範本會繪製在檢視上紫色的矩形。 在下列區段中，方法，您可以變更檢視建立接聽程式中的行數，並取代的內容**ColumnGuideAdornment.cs**。  
   
- **命令**。 在 [**方案總管] 中**，按右指標按鈕，在專案節點上。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。 輸入名稱**ColumnGuideCommands**當做項目名稱，然後選擇**新增**。 數個參考，除了新增的命令和封裝也加入**ColumnGuideCommands.cs**， **ColumnGuideCommandsPackage.cs**，和**ColumnGuideCommandsPackage.vsct**. 在下一節中，您會取代定義並實作命令的第一個和最後一個檔案的內容。  
+  **命令**。 在 [**方案總管] 中**，按右指標按鈕，在專案節點上。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。 輸入名稱**ColumnGuideCommands**當做項目名稱，然後選擇**新增**。 數個參考，除了新增的命令和封裝也加入**ColumnGuideCommands.cs**， **ColumnGuideCommandsPackage.cs**，和**ColumnGuideCommandsPackage.vsct**. 在下一節中，您會取代定義並實作命令的第一個和最後一個檔案的內容。  
   
 ## <a name="set-up-the-text-view-creation-listener"></a>設定文字檢視建立接聽程式  
  開啟*ColumnGuideAdornmentTextViewCreationListener.cs*在編輯器中。 Visual Studio 會建立文字檢視時，此程式碼會實作處理常式。 有可控制根據檢視的特性，當呼叫此處理常式的屬性。  

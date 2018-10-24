@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817869"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ ms.locfileid: "49251926"
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>若要使用特定領域語言工具產生的網域模型為基礎的指示詞處理器  
   
-1.  建立特定領域語言解決方案，具有下列特性：  
+1. 建立特定領域語言解決方案，具有下列特性：  
   
-    -   名稱： DSLMinimalTest  
+   - 名稱： DSLMinimalTest  
   
-    -   解決方案範本： 最小語言  
+   - 解決方案範本： 最小語言  
   
-    -   副檔名： 最小值  
+   - 副檔名： 最小值  
   
-    -   公司名稱： Fabrikam  
+   - 公司名稱： Fabrikam  
   
      如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
-2.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-    > [!IMPORTANT]
-    >  此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。  
+   > [!IMPORTANT]
+   >  此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。  
   
-3.  按一下 [偵錯] 功能表上的 [開始偵錯]。  
+3. 按一下 [偵錯] 功能表上的 [開始偵錯]。  
   
-     第二個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]隨即開啟。  
+    第二個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]隨即開啟。  
   
-4.  在實驗組建中，在**方案總管**，按兩下檔案**sample.min**。  
+4. 在實驗組建中，在**方案總管**，按兩下檔案**sample.min**。  
   
-     在設計工具中，開啟檔案。 請注意，此模型有兩個項目，ExampleElement1 ExampleElement2 和它們之間的連結。  
+    在設計工具中，開啟檔案。 請注意，此模型有兩個項目，ExampleElement1 ExampleElement2 和它們之間的連結。  
   
-5.  關閉第二個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+5. 關閉第二個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-6.  儲存方案，然後再關閉 特定領域語言設計工具。  
+6. 儲存方案，然後再關閉 特定領域語言設計工具。  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字範本主機連接至指示詞處理器  
  產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  

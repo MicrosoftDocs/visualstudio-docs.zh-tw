@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b77ab2b9effc305469b3a4e489342f496a89997
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a512288d141823115361bf8eacfd179a74a1da1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876707"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活動設計工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755946"
 下表顯示 <xref:System.Activities.Statements.WriteLine> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，其中一些可以在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 活動的易記名稱。 預設值為 WriteLine。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|要寫入的文字。 若要設定此屬性，輸入 在 Visual Basic 運算式**文字**方塊**WriteLine**活動設計工具上或在屬性方格中。|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> 從中寫入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 預設值為主控台。|
@@ -44,6 +44,6 @@ ms.locfileid: "36755946"
 ## <a name="see-also"></a>另請參閱
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [指派](../workflow-designer/assign-activity-designer.md)
-- [延遲](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

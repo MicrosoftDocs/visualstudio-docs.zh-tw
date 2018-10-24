@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Next |Microsoft 文件
+title: IEnumDebugPropertyInfo::Next |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc1e25a865ab1e21ab011e3a5bd0cc3b74f4abf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9f3fe796a518fd7d40c5b30f5b45f8a7d946686
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873743"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
-擷取指定的數目的`DebugPropertyInfo`列舉順序中的結構。  
+擷取指定的數目的`DebugPropertyInfo`列舉型別序列中的結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,7 +49,7 @@ HRESULT Next (
  [out]傳回的數目`DebugPropertyInfo`實際擷取的結構。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回有效`HRESULT`，通常`S_OK`。  
+ 會傳回有效`HRESULT`，通常是`S_OK`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   

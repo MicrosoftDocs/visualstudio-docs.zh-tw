@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827593"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安裝特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ ms.locfileid: "49289914"
   
 > [!IMPORTANT]
 >  請根據您想要使用的語言，以下列其中一個值取代 "enu"(英文)：  
->   
->  -   chs (中文 (簡體))  
-> -   cht (中文 (繁體))  
-> -   csy (捷克文)  
-> -   deu (德文)  
-> -   esn (西班牙文)  
-> -   fra (法文)  
-> -   ita (義大利文)  
-> -   jpa (日文)  
-> -   kor (韓文)  
-> -   plk (波蘭文)  
-> -   ptb (葡萄牙文)  
-> -   rus (俄文)  
-> -   trk (土耳其文)  
+> 
+> - chs (中文 (簡體))  
+>   -   cht (中文 (繁體))  
+>   -   csy (捷克文)  
+>   -   deu (德文)  
+>   -   esn (西班牙文)  
+>   -   fra (法文)  
+>   -   ita (義大利文)  
+>   -   jpa (日文)  
+>   -   kor (韓文)  
+>   -   plk (波蘭文)  
+>   -   ptb (葡萄牙文)  
+>   -   rus (俄文)  
+>   -   trk (土耳其文)  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)
