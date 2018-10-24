@@ -16,12 +16,12 @@ ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5bb2ed0b869a400629123687451da61a9355daa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 11062696833422e5cef0b91dda90c3c61fd55f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845807"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

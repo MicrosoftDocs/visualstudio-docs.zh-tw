@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetProcessId |Microsoft 文件
+title: IDebugProcess2::GetProcessId |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be43eecb7c9aeb4ab8b61029910aefbaea11ded9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a643e980e0a0d03b6c6d2634890dc5aba61b1f8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869089"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-取得這個處理程序的 GUID。  
+此程序中取得的 GUID。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,10 +41,10 @@ int GetProcessId(
   
 #### <a name="parameters"></a>參數  
  `pguidProcessId`  
- [out]傳回此處理程序的 GUID。  
+ [out]傳回針對此程序的 GUID。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  全域唯一識別碼 (GUID) 會識別此程序，從系統中執行其他處理序。  

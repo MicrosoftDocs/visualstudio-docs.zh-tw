@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863617"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ ms.locfileid: "49221561"
   
  我們建立的 `MyBank` 方案包含兩個專案：  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- 我們第一次在 `Accounts` 專案的設計嘗試包含一個保留帳戶相關基本資訊的類別、一個指定任一種帳戶通用功能 (例如在帳戶的資產中存款和提款) 的介面，以及一個從該介面衍生代表支票帳戶的類別。 一開始我們先在帳戶專案中建立下列原始程式檔：  
+  我們第一次在 `Accounts` 專案的設計嘗試包含一個保留帳戶相關基本資訊的類別、一個指定任一種帳戶通用功能 (例如在帳戶的資產中存款和提款) 的介面，以及一個從該介面衍生代表支票帳戶的類別。 一開始我們先在帳戶專案中建立下列原始程式檔：  
   
--   `AccountInfo.cs` 定義帳戶的基本資訊。  
+- `AccountInfo.cs` 定義帳戶的基本資訊。  
   
--   `IAccount.cs` 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。  
+- `IAccount.cs` 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。  
   
--   `CheckingAccount.cs` 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccounts` 介面。  
+- `CheckingAccount.cs` 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccounts` 介面。  
   
- 我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：  
+  我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **產生單元測試專案和單元測試虛設常式**  
   
-1.  從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試]  。  
+1. 從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試]  。  
   
-     ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。  
+2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。  
   
-     ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。  
+3. 會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。  
   
-     ![隨即建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![隨即建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。  
+4. 現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。  
   
- **手動建立單元測試專案和單元測試**  
+   **手動建立單元測試專案和單元測試**  
   
- 單元測試專案通常會反映單一程式碼專案的結構。 在 MyBank 範例中，您可以將名為 `AccountsTests` 和 `BankDbTests` 的兩個單元測試專案加入 `MyBanks` 方案中。 這些測試專案名稱可隨意命名，不過最好採用標準命名慣例。  
+   單元測試專案通常會反映單一程式碼專案的結構。 在 MyBank 範例中，您可以將名為 `AccountsTests` 和 `BankDbTests` 的兩個單元測試專案加入 `MyBanks` 方案中。 這些測試專案名稱可隨意命名，不過最好採用標準命名慣例。  
   
- **將單元測試專案加入方案：**  
+   **將單元測試專案加入方案：**  
   
-1.  在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]  (鍵盤 Ctrl + Shift + N)。  
+5. 在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]  (鍵盤 Ctrl + Shift + N)。  
   
-2.  在 [新增專案] 對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試] 。  
+6. 在 [新增專案] 對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試] 。  
   
-3.  若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。  
+7. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。  
   
-    > [!WARNING]
-    >  並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。  
+   > [!WARNING]
+   >  並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。  
   
-4.  在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。  
+8. 在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。  
   
-     建立程式碼專案的參考：  
+    建立程式碼專案的參考：  
   
-    1.  在 [方案總管] 中選取專案。  
+   1.  在 [方案總管] 中選取專案。  
   
-    2.  在 [專案]  功能表上，選擇 [加入參考] 。  
+   2.  在 [專案]  功能表上，選擇 [加入參考] 。  
   
-    3.  在 [參考管理員] 對話方塊上，開啟 [方案]  節點，然後選擇 [專案] 。 選取程式碼專案名稱，然後關閉對話方塊。  
+   3.  在 [參考管理員] 對話方塊上，開啟 [方案]  節點，然後選擇 [專案] 。 選取程式碼專案名稱，然後關閉對話方塊。  
   
- 每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：  
+   每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：  
   
 -   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `BankAccount` 類別的單元測試方法。  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  AAA (排列、作用、判斷提示) 模式是為受測方法撰寫單元測試的常見方式。  
   
--   單元測試方法的 [排列]  區段會初始化物件，並為傳遞至受測方法的資料設定值。  
+- 單元測試方法的 [排列]  區段會初始化物件，並為傳遞至受測方法的資料設定值。  
   
--   [作用]  區段會叫用含有所排列參數的受測方法。  
+- [作用]  區段會叫用含有所排列參數的受測方法。  
   
--   [判斷提示]  區段會驗證受測方法的動作是否如預期。  
+- [判斷提示]  區段會驗證受測方法的動作是否如預期。  
   
- 若要測試本例的 `CheckingAccount.Withdraw` 方法，我們可以撰寫兩個測試：一個是驗證方法的標準行為，另一個則是驗證提款金額超過餘額將會失敗。 在 `CheckingAccountTests` 類別中，我們會加入下列方法：  
+  若要測試本例的 `CheckingAccount.Withdraw` 方法，我們可以撰寫兩個測試：一個是驗證方法的標準行為，另一個則是驗證提款金額超過餘額將會失敗。 在 `CheckingAccountTests` 類別中，我們會加入下列方法：  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：  
   
-1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
+1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
   
-    > [!NOTE]
-    >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
+   > [!NOTE]
+   >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
   
-2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯所選測試]  。  
+2. 在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯所選測試]  。  
   
- 進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。  
+   進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。  
   
- **問：如果我使用 TDD，要如何從我的測試產生程式碼？**  
+   **問：如果我使用 TDD，要如何從我的測試產生程式碼？**  
   
- **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型]  ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法]  。  
+   **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型]  ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法]  。  
   
- ![產生方法虛設常式 Intellisense 功能表](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![產生方法虛設常式 Intellisense 功能表](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **問：是否可以建立採用多個資料集作為輸入來執行測試的單元測試？**  
+   **問：是否可以建立採用多個資料集作為輸入來執行測試的單元測試？**  
   
- **答：** 可以。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。  
+   **答：** 可以。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。  
   
 > [!NOTE]
 >  這些程序只適用於透過 Managed 程式碼適用的 Microsoft 單元測試架構所撰寫的測試方法。 如果您使用不同的架構，請參閱架構文件的同等功能。  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：  
   
-1.  *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。  
+1. *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。  
   
-2.  *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。  
+2. *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。  
   
- 在這兩種方法中，您可以對相依性方法使用呼叫所產生的委派，以指定您要讓測試方法執行的行為。  
+   在這兩種方法中，您可以對相依性方法使用呼叫所產生的委派，以指定您要讓測試方法執行的行為。  
   
- 深入了解 [使用 Microsoft Fakes 隔離單元測試方法](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
+   深入了解 [使用 Microsoft Fakes 隔離單元測試方法](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
   
- **問：是否可以使用其他單元測試架構搭配 IntelliTest？**  
+   **問：是否可以使用其他單元測試架構搭配 IntelliTest？**  
   
- **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：  
+   **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：  
   
- ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- 將會使用所選擇的架構來建立您的單元測試虛設常式。
+   將會使用所選擇的架構來建立您的單元測試虛設常式。
 
 
 

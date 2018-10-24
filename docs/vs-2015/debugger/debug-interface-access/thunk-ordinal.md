@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebd1c4c968ce66b8c4c0e56c00c157e475c8db5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8152b22b229e654b17a2f424694283189c95431b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834314"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

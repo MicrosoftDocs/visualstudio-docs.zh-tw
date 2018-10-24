@@ -17,12 +17,12 @@ ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a259ba0be2639d09027ac7fb712ac914ec46f2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4afd84af0ab6d7f801c486dd506ca5d5a10f6909
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867958"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

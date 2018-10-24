@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd77ce3cbb0b262e3ab56fef4f3456fecd3cab28
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830011"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 實作復原管理
 用於復原管理的主要介面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，這由環境實作。 若要支援復原管理，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。  
@@ -43,39 +43,39 @@ ms.locfileid: "39636395"
   
 ### <a name="to-hook-your-undo-manager-into-the-environment"></a>若要將您的復原管理員連結至環境  
   
-1.  呼叫`QueryInterface`傳回的物件上<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>如`IID_IOleUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>。  
+1. 呼叫`QueryInterface`傳回的物件上<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>如`IID_IOleUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>。  
   
-2.  呼叫`QueryInterface`上`IOleUndoManager`如`IID_IOleCommandTarget`。 儲存的指標<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+2. 呼叫`QueryInterface`上`IOleUndoManager`如`IID_IOleCommandTarget`。 儲存的指標<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
-3.  轉送您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>並<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>呼叫預存的`IOleCommandTarget`下列 StandardCommandSet97 命令介面：  
+3. 轉送您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>並<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>呼叫預存的`IOleCommandTarget`下列 StandardCommandSet97 命令介面：  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsChangeTrackingUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
+4. 呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsChangeTrackingUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
   
-     使用指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>，則<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A>方法。  
+    使用指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>，則<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A>方法。  
   
-5.  呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsLinkCapableUndoManager`。  
+5. 呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsLinkCapableUndoManager`。  
   
-6.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A>與文件時，它也應該實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient>介面。 當您的文件關閉時，呼叫`IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`。  
+6. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A>與文件時，它也應該實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient>介面。 當您的文件關閉時，呼叫`IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`。  
   
-7.  當您的文件關閉時，呼叫`QueryInterface`在您的復原經理`IID_IVsLifetimeControlledObject`。  
+7. 當您的文件關閉時，呼叫`QueryInterface`在您的復原經理`IID_IVsLifetimeControlledObject`。  
   
-8.  呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>。  
+8. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>。  
   
 9. 文件變更時，呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>上的管理員`OleUndoUnit`類別。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>方法會保留物件參考，因此通常您在釋放之後<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>。  
   
- `OleUndoManager`類別代表單一復原 stack 執行個體。 因此，為每個受到追蹤的復原或取消復原的資料實體的一個復原管理員物件。  
+   `OleUndoManager`類別代表單一復原 stack 執行個體。 因此，為每個受到追蹤的復原或取消復原的資料實體的一個復原管理員物件。  
   
 > [!NOTE]
 >  文字編輯器是廣泛使用復原管理員物件，就沒有特定的支援的文字編輯器的一般元件。 如果您想要支援多層級復原或取消復原，您可以使用此物件，若要這樣做。  

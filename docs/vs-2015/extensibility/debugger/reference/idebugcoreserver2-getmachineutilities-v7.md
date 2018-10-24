@@ -17,12 +17,12 @@ ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ad2a147aff291feb776d7b61f4e836651ed642fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ecb460a070038d5a107f559e88be38381b11869c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822289"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

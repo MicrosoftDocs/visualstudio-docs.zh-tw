@@ -1,7 +1,7 @@
 ---
-title: 如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +） |Microsoft 文件
+title: 如何： 啟用和停用編輯後繼續 (C#、 VB、 c + +) |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -27,42 +27,35 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9070913d1106eb5e2ca04160ad95c6a6fd46f752
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480449"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382738"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +）
-您可以停用或啟用編輯後繼續中的**選項**在執行階段 對話方塊。 但是在進行偵錯時，無法變更這項設定。  
-  
-[編輯後繼續] 只能用於偵錯組建中。 在原生 C++ 中，[編輯後繼續] 必須使用 /INCREMENTAL 選項。 如需 c + + 中的功能需求的詳細資訊，請參閱此[部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)和[編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
-  
-#### <a name="to-enabledisable-edit-and-continue"></a>若要啟用/停用編輯後繼續   
-  
-1.  如果您是在偵錯工作階段，停止偵錯 (**Shift + F5**)。
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 (C#、 VB、 c + +)
 
-2.  開啟偵錯的 [選項] 頁面 (**工具 > 選項 > 偵錯**)。
+您可以停用或啟用**編輯後繼續**在 Visual Studio**選項**在設計階段的對話方塊。 **編輯後繼續**works 只在偵錯組建。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續](../debugger/edit-and-continue.md)。 
   
-3.  選取**一般**，向下捲動至**編輯後繼續**類別 （右窗格）。  
+原生 c + + 中，**編輯後繼續**需要使用`/INCREMENTAL`選項。 如需有關 c + + 中的功能需求的詳細資訊，請參閱此[部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)並[編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
   
-4.  若要啟用，請選取**啟用編輯後繼續**核取方塊。 若要停用，請清除該核取方塊。  
+**若要啟用或停用編輯後繼續：**  
+  
+1.  如果您是在偵錯工作階段中，停止偵錯 (**偵錯** > **停止偵錯**或是**Shift**+**F5**).
+
+1.  在 **工具** > **選項**> (或**偵錯** > **選項**) >**偵錯** > **一般**，選取**編輯後繼續**右窗格中。  
   
     > [!NOTE]
-    >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱[IntelliTrace](../debugger/intellitrace.md)。
-
-5. （C + +）若要啟用，請選取**啟用原生編輯後繼續**。 若要停用，請清除該核取方塊。
-
-6. （C + +）設定原生程式碼的其他選項。
-
-    - **將變更套用在繼續 （僅限原生）**  
-        當從中斷狀態繼續處理序時，Visual Studio 會自動編譯和套用任何未完成的程式碼變更。 如果未選取，您可以選擇使用 [偵錯] 功能表底下的 [套用程式碼變更] 項目套用變更。  
+    >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 < [IntelliTrace](../debugger/intellitrace.md)。
+    
+1.  針對 c + + 程式碼，請確定**啟用原生編輯後繼續**已選取此項目，並設定其他選項：
+    - **將變更套用在繼續執行 （僅限機器碼）**  
+      
+      如果選取，Visual Studio 會自動編譯，並繼續偵錯從中斷狀態時，會套用程式碼變更。 否則，您可以選擇要套用變更**偵錯** > **套用程式碼變更**。  
+      
+    - **警告出現過時的程式碼 （僅限機器碼）**  
+      
+      如果選取，會提供過時的程式碼的警告。 
   
-    - **警告出現過時的程式碼 （僅限原生）**  
-        取得過時程式碼的警告。 
-  
-7.  按一下 [確定 **Deploying Office Solutions**]。    
-  
-## <a name="see-also"></a>另請參閱  
- [編輯後繼續](../debugger/edit-and-continue.md)
+1.  按一下 [確定 **Deploying Office Solutions**]。    

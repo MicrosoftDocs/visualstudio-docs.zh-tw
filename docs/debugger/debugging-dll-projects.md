@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818662"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>從 Visual Studio 的偵錯 DLL 專案
 下列 Visual Studio 範本會建立 Dll:  
@@ -54,24 +54,24 @@ ms.locfileid: "37057394"
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  本節中的每一個專案都會建立 DLL。 您無法直接執行 DLL，它必須由應用程式進行呼叫 (通常是 EXE)。 如需詳細資訊，請參閱 [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects)。 呼叫的應用程式可能符合下列其中一項準則：  
   
--   一個應用程式，在相同的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中建置於另一個包含該類別庫的專案。  
+- 一個應用程式，在相同的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中建置於另一個包含該類別庫的專案。  
   
--   已部署在測試或實際執行電腦上的現有應用程式。  
+- 已部署在測試或實際執行電腦上的現有應用程式。  
   
--   位於 Web 上並且經由 URL 存取。  
+- 位於 Web 上並且經由 URL 存取。  
   
--   包含嵌入該 DLL 的網頁之 Web 應用程式。  
+- 包含嵌入該 DLL 的網頁之 Web 應用程式。  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 若要偵錯 DLL，請由偵錯呼叫的應用程式開炲，通常是 EXE 或 Web 應用程式。 您可以使用幾種方式進行偵錯。  
   
--   如果您有呼叫應用程式的專案，就可以開啟該專案，並且從 [ **偵錯** ] 功能表啟動執行。 如需詳細資訊，請參閱 <<c0> [ 開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。  
+- 如果您有呼叫應用程式的專案，就可以開啟該專案，並且從 [ **偵錯** ] 功能表啟動執行。 如需詳細資訊，請參閱 <<c0> [ 開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。  
   
--   如果該呼叫應用程式是已部署在測試或實際執行電腦上的現有程式，而且已經在執行，您可以附加至這個應用程式。 如果該 DLL 是 Internet Explorer 所裝載的控制項，或網頁上的控制項，請使用這個方法。 如需詳細資訊，請參閱 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+- 如果該呼叫應用程式是已部署在測試或實際執行電腦上的現有程式，而且已經在執行，您可以附加至這個應用程式。 如果該 DLL 是 Internet Explorer 所裝載的控制項，或網頁上的控制項，請使用這個方法。 如需詳細資訊，請參閱 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
--   您可以從 DLL 專案對呼叫的應用程式進行偵錯。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
+- 您可以從 DLL 專案對呼叫的應用程式進行偵錯。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
   
--   您可以從偵錯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][即時運算視窗](#vxtskdebuggingdllprojectstheimmediatewindow)。 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
+- 您可以從偵錯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][即時運算視窗](#vxtskdebuggingdllprojectstheimmediatewindow)。 在這個情況下，[ **即時運算** ] 視窗扮演應用程式的角色。  
   
 在您啟動偵錯呼叫的應用程式之前，您通常要在類別庫裡設定中斷點。 如需詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)。 遇到中斷點時，您可以逐步執行程式碼，觀察每行的動作，直到您分辨出問題的所在。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具中巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
   
@@ -110,7 +110,7 @@ ms.locfileid: "37057394"
 
 您的專案必須能夠找到 DLL 和用來偵錯的.pdb 檔案。 您可以建立自訂建置工作來複製這些檔案，以**\<專案資料夾 > \Debug**輸出資料夾中，或者您可以將檔案複製到輸出資料夾中以手動方式。
 
-您可以輕鬆在屬性頁中設定的標頭檔和 *.lib 檔案的位置 (以滑鼠右鍵按一下 c + + 專案，然後選擇 **檢視內容**，然後選擇**所有組態**) 而不需要複製其輸出資料夾：
+您可以輕鬆地設定標頭檔的位置和<em>.lib 檔案，在 屬性頁 (c + + 專案上按一下滑鼠右鍵，然後選擇 * * 檢視內容</em><em>，然後選擇 **所有組態</em>*)而不需要將其複製到輸出資料夾：
 
 - C/c + + 資料夾 （一般分類）-指定包含標頭檔中的資料夾**其他 Include 目錄**欄位。
 - 連結器資料夾 （一般分類）-指定包含的.lib 檔案中的資料夾**程式庫的其他目錄**欄位。 

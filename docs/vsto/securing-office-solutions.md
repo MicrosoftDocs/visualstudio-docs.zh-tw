@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846196"
 ---
 # <a name="secure-office-solutions"></a>保護 Office 方案
   Office 方案的安全性模型牽涉到數個技術： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限制的網站區域中的 信任中心。 下列各節說明不同安全性功能的運作方式：  
   
--   [授與信任給 Office 方案](#GrantingTrustToSolutions)  
+- [授與信任給 Office 方案](#GrantingTrustToSolutions)  
   
--   [將信任授與文件](#GrantingTrustToDocuments)  
+- [將信任授與文件](#GrantingTrustToDocuments)  
   
--   [使用 Windows 安裝程式時，將信任授與](#GrantingTrustWindowsInstaller)  
+- [使用 Windows 安裝程式時，將信任授與](#GrantingTrustWindowsInstaller)  
   
--   [指定 Office 方案的安全性考量](#Security)  
+- [指定 Office 方案的安全性考量](#Security)  
   
--   [在開發期間的安全性](#SecurityDuringDeployment)  
+- [在開發期間的安全性](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools for Office 執行階段](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools for Office 執行階段](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> 授與信任給 Office 方案  
  授與信任給 Office 方案表示修改每位終端使用者的安全性原則，以根據下列的辨識項信任 Office 方案：  
   
--   用來簽署部署資訊清單的憑證。  
+- 用來簽署部署資訊清單的憑證。  
   
--   部署資訊清單的 URL。  
+- 部署資訊清單的 URL。  
   
- 如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
   
 ##  <a name="GrantingTrustToDocuments"></a> 將信任授與文件  
  文件層級自訂要求文件必須在指定為信任位置的目錄中。 如需詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。  
@@ -65,11 +65,11 @@ ms.locfileid: "49074061"
 ### <a name="document-level-solutions"></a>文件層級方案  
  如果您正在開發下列類型的專案，文件的完整路徑必須加入至 Microsoft Office 應用程式中的信任位置清單：  
   
--   文件層級解決方案，例如位於網路檔案共用 *\\\servername\sharename*。  
+- 文件層級解決方案，例如位於網路檔案共用 *\\\servername\sharename*。  
   
--   文件層級的解決方案使用的單字 *.doc*或是 *.docm*檔案。  
+- 文件層級的解決方案使用的單字 *.doc*或是 *.docm*檔案。  
   
- 當您將文件位置加入至信任的位置清單中時請包含子目錄，或明確地包含偵錯及建置資料夾。 如需詳細資訊，請參閱 Microsoft Office 線上說明文章[建立、 移除或變更檔案的信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+  當您將文件位置加入至信任的位置清單中時請包含子目錄，或明確地包含偵錯及建置資料夾。 如需詳細資訊，請參閱 Microsoft Office 線上說明文章[建立、 移除或變更檔案的信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ### <a name="temporary-certificates"></a>暫時憑證  
  如果簽章的憑證不存在，Visual Studio 會建立暫時憑證。 您應該只在開發期間使用這個暫時憑證，並購買正式憑證以進行部署。  

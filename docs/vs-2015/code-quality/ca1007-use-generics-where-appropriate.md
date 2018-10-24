@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b6731ab14d977e9c389fb98a9bc0a4072c0ce4bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31f15bfc62943bb71acfba24432560facce9d636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861718"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007：建議在適當時使用泛型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|

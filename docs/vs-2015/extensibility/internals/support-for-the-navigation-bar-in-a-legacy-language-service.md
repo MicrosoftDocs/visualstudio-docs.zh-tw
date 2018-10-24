@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839137"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  選取變更類型下拉式清單中，[成員] 清單必須更新以反映新的類型。 在 [成員] 清單中顯示的內容可以是：  
   
--   目前型別的成員清單。  
+- 目前型別的成員清單。  
   
--   中的所有成員可用的來源檔案，但與不在目前的型別中的所有成員，以灰色文字顯示。 使用者仍然可以選取灰色成員 中，因此可用於快速導覽，但色彩表示它們不是目前所選類型的組件。  
+- 中的所有成員可用的來源檔案，但與不在目前的型別中的所有成員，以灰色文字顯示。 使用者仍然可以選取灰色成員 中，因此可用於快速導覽，但色彩表示它們不是目前所選類型的組件。  
   
- 實作<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法通常會執行下列步驟：  
+  實作<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法通常會執行下列步驟：  
   
 1.  取得原始程式檔的目前宣告的清單。  
   

@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823524"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49287686"
 ## <a name="superior-debugging"></a>高階偵錯  
  不論是獨立執行或是在 Unity Editor 中執行，您都可以將 Visual Studio 的強大偵錯工具連接到 Unity 遊戲，對 C# 指令碼和 DLL 進行偵錯。 您可以使用預期可從 Visual Studio 取得的所有偵錯功能。  
   
--   中斷點，包括條件式中斷點。  
+- 中斷點，包括條件式中斷點。  
   
--   在監看式視窗中評估複雜的運算式。  
+- 在監看式視窗中評估複雜的運算式。  
   
--   檢查及修改變數和引數的值。  
+- 檢查及修改變數和引數的值。  
   
--   向下切入至複雜的物件和資料結構。  
+- 向下切入至複雜的物件和資料結構。  
   
- 您甚至可以在網路上另一部機器正在執行 Unity 遊戲時，對遊戲進行偵錯。  
+  您甚至可以在網路上另一部機器正在執行 Unity 遊戲時，對遊戲進行偵錯。  
   
 ## <a name="productivity"></a>產能  
  除了 Visual Studio 撰寫及重構 C# 程式碼的既有產能之外，Visual Studio Tools for Unity 還提供額外的產能功能給 Unity 開發人員。  

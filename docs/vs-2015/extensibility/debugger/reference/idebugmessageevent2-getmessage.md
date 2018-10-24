@@ -18,12 +18,12 @@ ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 777c5e1198b26c7d4145736caad42c8a52e95d90
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 36b3068c696e08ddc3563f138c6495a77f6ab350
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846014"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7cc0e24255da8c9fdb8ab3e4e49f030d758d11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1032e3db1513f628e540643acf7b1d98f89b5bff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865592"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。  
@@ -39,11 +39,11 @@ ms.locfileid: "44279565"
 ### <a name="managed-debugging-security"></a>Managed 偵錯安全性  
  以下列出幾項適用所有 Managed 偵錯的一般建議：  
   
--   附加至未受信任的使用者處理序時要小心： 當您這樣做，您就會假設它是值得信任。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+- 附加至未受信任的使用者處理序時要小心： 當您這樣做，您就會假設它是值得信任。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
   
--   從網際網路下載專案並載入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。  
+- 從網際網路下載專案並載入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。  
   
- 如需詳細資訊，請參閱 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
+  如需詳細資訊，請參閱 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
   
 ### <a name="remote-debugging-security"></a>遠端偵錯安全性  
  本機偵錯通常比遠端偵錯安全。 遠端偵錯會增加能夠探查的整體表面範圍。  
@@ -59,7 +59,7 @@ ms.locfileid: "44279565"
  如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](../debugger/remote-debugging.md)。  
   
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性  
- 在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 < [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
+ 在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
   
 -   請勿在受到危害的 Web 伺服器上啟用偵錯  
   
@@ -73,14 +73,14 @@ ms.locfileid: "44279565"
 ### <a name="symbols-and-source-code"></a>符號和原始程式碼  
  需要考慮安全性的兩個 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具如下所示：  
   
--   來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。  
+- 符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。  
   
- 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
  [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

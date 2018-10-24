@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823771"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49300504"
   
  除了語法顏色標示和基本陳述式完成之外，Visual Studio 也有一項稱為 [「巡覽至」](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 這項功能可讓您快速搜尋程式碼檔案、檔案路徑和程式碼符號。 Visual Studio 提供下列語言版本的「巡覽至」支援。  
   
--   移至  
+- 移至  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- 所有這些檔案類型都有稍早描述的功能，即使尚未安裝指定語言的支援。 安裝指定語言的特定支援，可提供其他語言支援，例如 IntelliSense 或其他進階的語言功能，例如「燈泡」。  
+  所有這些檔案類型都有稍早描述的功能，即使尚未安裝指定語言的支援。 安裝指定語言的特定支援，可提供其他語言支援，例如 IntelliSense 或其他進階的語言功能，例如「燈泡」。  
   
 ## <a name="adding-support-for-non-supported-languages"></a>為不受支援的語言新增支援  
  Visual Studio 2015 Update 1 及更新版本藉由使用 [TextMate 文法](https://manual.macromates.com/en/language_grammars)，在編輯器中提供語言支援。 如果您慣用的程式設計語言目前在 Visual Studio 編輯器中不受支援，則請先搜尋網頁，該語言的 TextMate 組合可能已經存在。 不過，如果找不到，您可以在 Visual Studio 2015 Update 1 或更新版本中，藉由為語言文法及程式碼片段建立 TextMate 組合模型，自行為其新增支援。  

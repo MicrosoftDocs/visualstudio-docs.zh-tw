@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f4234ac20f9c583d944ba6fdf8e52a6eb0db156
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 828c72224655f404e88ac0913908ef293119ccb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855153"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
 此函式會判斷指定的專案的父專案路徑。 使用者加入原始檔控制的 Visual Studio 專案時，會呼叫此函數。  

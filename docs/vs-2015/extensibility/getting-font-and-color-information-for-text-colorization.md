@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832715"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>取得字型和色彩資訊文字的顏色標示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49274244"
   
  若要以色彩標示，VSPackage 必須取得目前**字型和色彩**設定。 VSPackage 可以完成這項作業以下列方式，根據其需求：  
   
--   您可以使用的字型和色彩的持續性機制來擷取預存] 或 [目前狀態。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
+- 您可以使用的字型和色彩的持續性機制來擷取預存] 或 [目前狀態。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面的服務，提供要取得的執行個體的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 也不是字型和色彩提供者。  
+- 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面的服務，提供要取得的執行個體的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 也不是字型和色彩提供者。  
   
--   實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 介面。  
+- 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 介面。  
   
- 若要確保透過輪詢所得到的結果是最新狀態，可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷更新是否需要在呼叫的擷取方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+  若要確保透過輪詢所得到的結果是最新狀態，可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷更新是否需要在呼叫的擷取方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
   
- 取得字型和色彩資訊之後，剖析來識別需要顏色標示的項目要顯示的文字，然後使用適當的字型和色彩 視窗中顯示文字。  
+  取得字型和色彩資訊之後，剖析來識別需要顏色標示的項目要顯示的文字，然後使用適當的字型和色彩 視窗中顯示文字。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

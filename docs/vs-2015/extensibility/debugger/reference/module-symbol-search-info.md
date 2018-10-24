@@ -17,12 +17,12 @@ ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15fba0bfe451b6616694c197db44f17c14319b53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3b1832f09edb868691d87f5d2fdb55d302b7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863291"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

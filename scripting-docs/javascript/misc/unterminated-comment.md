@@ -1,5 +1,5 @@
 ---
-title: 有未結束的註解 |Microsoft 文件
+title: 未結束的註解 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9fde5d5edd7e81060b088e4940d752aa05e65ded
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868101"
 ---
 # <a name="unterminated-comment"></a>未結束的註解
-您已經開始多行註解區塊中，但未正確地終止它。 開頭為多行註解"/ * 」 組合，並以相反順序的結尾 」\*/ 」 組合。 以下是一個範例：  
+您開始為多行註解區塊，但並未正確地終止它。 開頭為多行註解"/ * 」 組合，並以反向結尾 」\*/ 」 組合。 以下是一個範例：  
   
 ```JavaScript  
 /* This is a comment  
@@ -37,7 +37,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   確定要終止多行註解"* /"。  
+-   確定要終止多行註解 」 * /"。  
   
 ## <a name="see-also"></a>另請參閱  
  [Comment 陳述式](../../javascript/reference/comment-statements-javascript.md)

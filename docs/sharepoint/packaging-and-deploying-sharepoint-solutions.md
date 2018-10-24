@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863265"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 解決方案會使用方案套件 (.wsp) 檔案部署到 SharePoint 伺服器。 若要將您的 SharePoint 專案項目組織成功能，並建立要部署您的 SharePoint 功能的套件，您可以使用 Visual Studio。  
@@ -67,23 +67,23 @@ ms.locfileid: "37118637"
 ### <a name="packaging-explorer"></a>封裝總管  
  若要補充的功能設計工具和封裝設計工具，您可以使用 [封裝總管] 中，將 SharePoint 檔案分組到功能和封裝。 此外，您可以在這裡看到封裝功能，SharePoint 專案的階層式檢視項目和檔案。 [封裝總管] 是工具視窗可供您完成下列工作：  
   
--   開啟 SharePoint 專案項目和檔案。  
+- 開啟 SharePoint 專案項目和檔案。  
   
--   拖放的一項功能的 SharePoint 專案項目到另一個。  
+- 拖放的一項功能的 SharePoint 專案項目到另一個。  
   
--   拖放 SharePoint 專案項目和功能從某個封裝到另一個。  
+- 拖放 SharePoint 專案項目和功能從某個封裝到另一個。  
   
--   將新的功能加入封裝。  
+- 將新的功能加入封裝。  
   
--   開啟功能或封裝的設計工具。  
+- 開啟功能或封裝的設計工具。  
   
--   驗證功能和封裝。  
+- 驗證功能和封裝。  
   
- 在 Visual Studio 中的 SharePoint 開發工具有驗證規則，以協助確保方案套件正確。 此外，規則確認 *.wsp*方案檔案已成功部署，並將 SharePoint 伺服器上啟動。 如需 XML 結構描述的功能，請參閱[功能結構描述](http://go.microsoft.com/fwlink/?LinkID=169192)。  
+  在 Visual Studio 中的 SharePoint 開發工具有驗證規則，以協助確保方案套件正確。 此外，規則確認 *.wsp*方案檔案已成功部署，並將 SharePoint 伺服器上啟動。 如需 XML 結構描述的功能，請參閱[功能結構描述](http://go.microsoft.com/fwlink/?LinkID=169192)。  
   
- 您可以將自訂功能和封裝驗證規則新增至 SharePoint 專案系統。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
+  您可以將自訂功能和封裝驗證規則新增至 SharePoint 專案系統。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
- 如需 [封裝總管] 中的詳細資訊，請參閱[如何： 新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+  如需 [封裝總管] 中的詳細資訊，請參閱[如何： 新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
 ### <a name="solution-explorer"></a>底下提供說明，包括方案總管
  您可以使用 [方案總管] 來瀏覽並開啟 SharePoint 專案的檔案。 在 [方案總管] 中使用操作功能表，以加入功能，功能事件接收器，和功能的資源。 此外，您可以開啟功能設計工具與封裝設計工具，來設定部署套件的功能。  
@@ -100,11 +100,11 @@ ms.locfileid: "37118637"
   
  例如，若要新增 *.xml*檔案至 SharePoint 專案中，執行下列動作之一：  
   
--   專案中加入 SharePoint"版面配置 」 對應資料夾。 這會在建立**方案總管**名為的資料夾**版面配置**具有專案子資料夾。 新增 *.xml*到新的子資料夾。 根據預設，檔案會部署到 SharePoint 檔案系統下 *...\TEMPLATE\LAYOUTS\\\<資料夾名稱 >*。 如需如何新增對應的資料夾資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
+- 專案中加入 SharePoint"版面配置 」 對應資料夾。 這會在建立**方案總管**名為的資料夾**版面配置**具有專案子資料夾。 新增 *.xml*到新的子資料夾。 根據預設，檔案會部署到 SharePoint 檔案系統下 *...\TEMPLATE\LAYOUTS\\\<資料夾名稱 >*。 如需如何新增對應的資料夾資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
   
--   新增 *.xml*檔案的 SharePoint 專案項目中，資料夾，然後變更**部署類型**屬性 *.xml*檔案從**NoDeployment**另一個設定這類**RootFile**或是**ElementFile**。 適當**部署類型**設定取決於檔案和專案。 如需詳細資訊**部署類型**屬性設定，請參閱[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。  
+- 新增 *.xml*檔案的 SharePoint 專案項目中，資料夾，然後變更**部署類型**屬性 *.xml*檔案從**NoDeployment**另一個設定這類**RootFile**或是**ElementFile**。 適當**部署類型**設定取決於檔案和專案。 如需詳細資訊**部署類型**屬性設定，請參閱[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。  
   
- 如果加入的檔案不適用於方案中任何特定專案中，您可以將空白的 SharePoint 專案新增至您的解決方案，並再將其他檔案新增至它。 針對至內容資料庫，特別是將檔案部署至 SharePoint，另一個替代方式是將模組新增至專案，然後將檔案新增至模組。 如需詳細資訊，請參閱 <<c0> [ 使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+  如果加入的檔案不適用於方案中任何特定專案中，您可以將空白的 SharePoint 專案新增至您的解決方案，並再將其他檔案新增至它。 針對至內容資料庫，特別是將檔案部署至 SharePoint，另一個替代方式是將模組新增至專案，然後將檔案新增至模組。 如需詳細資訊，請參閱 <<c0> [ 使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   

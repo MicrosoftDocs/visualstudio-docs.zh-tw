@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834015"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,25 +115,25 @@ ms.locfileid: "49251156"
   
  每個網域類別包含：  
   
--   每個網域屬性的屬性定義和巢狀處理常式類別。 您可以覆寫 OnValueChanging() 和 OnValueChanged()。 如需詳細資訊，請參閱 <<c0> [ 網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。  
+- 每個網域屬性的屬性定義和巢狀處理常式類別。 您可以覆寫 OnValueChanging() 和 OnValueChanged()。 如需詳細資訊，請參閱 <<c0> [ 網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。  
   
-     在範例 DSL 中，`Comment` 類別包含 `Text` 屬性和 `TextPropertyHandler` 處理常式類別。  
+   在範例 DSL 中，`Comment` 類別包含 `Text` 屬性和 `TextPropertyHandler` 處理常式類別。  
   
--   這個網域類別參與之關聯性的存取子屬性。 (角色屬性沒有巢狀類別)。  
+- 這個網域類別參與之關聯性的存取子屬性。 (角色屬性沒有巢狀類別)。  
   
-     在範例 DSL 中，`Comment` 類別具有存取子，可透過內嵌關聯性 `ComponentModelHasComments` 來存取其父模型。  
+   在範例 DSL 中，`Comment` 類別具有存取子，可透過內嵌關聯性 `ComponentModelHasComments` 來存取其父模型。  
   
--   建構函式。 如果您想要覆寫這些，設定**有自訂建構函式**網域類別上。  
+- 建構函式。 如果您想要覆寫這些，設定**有自訂建構函式**網域類別上。  
   
--   項目群組原型 (EGP) 處理常式方法。 這些是如果使用者將所需*合併*（加入） 到此類別的執行個體上的另一個項目。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。  
+- 項目群組原型 (EGP) 處理常式方法。 這些是如果使用者將所需*合併*（加入） 到此類別的執行個體上的另一個項目。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。  
   
-     在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供  
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供  
   
-     「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。  
+   「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。  
   
- `DomainModel.cs`  
+  `DomainModel.cs`  
   
- 表示網域模型的類別。 該類別衍生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。  
+  表示網域模型的類別。 該類別衍生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。  
   
 > [!NOTE]
 >  此類別與模型的根類別不同。  
@@ -166,31 +166,31 @@ ms.locfileid: "49251156"
   
  `SerializationHelper.cs`  
   
--   一個驗證方法，用於確保相同的 Moniker 不會參考兩個項目。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
+- 一個驗證方法，用於確保相同的 Moniker 不會參考兩個項目。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
--   SerializationHelper 類別，提供序列化類別通用的函式。  
+- SerializationHelper 類別，提供序列化類別通用的函式。  
   
- `Serializer.cs`  
+  `Serializer.cs`  
   
- 每個網域類別、關聯性、圖形、連接線、圖表和模型的序列化程式類別。  
+  每個網域類別、關聯性、圖形、連接線、圖表和模型的序列化程式類別。  
   
- [DSL 總管] 下方的設定可以控制許多這些類別的功能**Xml 序列化行為**。  
+  [DSL 總管] 下方的設定可以控制許多這些類別的功能**Xml 序列化行為**。  
   
- `Shapes.cs`  
+  `Shapes.cs`  
   
- 代表 DSL 定義中每一個圖形類別的類別。 這些圖形衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
+  代表 DSL 定義中每一個圖形類別的類別。 這些圖形衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
- 若要覆寫產生的方法，使用您自己的方法，在部分類別中，設定**產生雙衍生**在 DSL 定義中的連接器。 若要取代您自己的程式碼中的建構函式，將**有自訂建構函式**。  
+  若要覆寫產生的方法，使用您自己的方法，在部分類別中，設定**產生雙衍生**在 DSL 定義中的連接器。 若要取代您自己的程式碼中的建構函式，將**有自訂建構函式**。  
   
- 若要將執行階段的色彩和其他一些樣式功能變數，以滑鼠右鍵按一下 DSL 定義圖上的類別，並指向**加入已公開**。  
+  若要將執行階段的色彩和其他一些樣式功能變數，以滑鼠右鍵按一下 DSL 定義圖上的類別，並指向**加入已公開**。  
   
- 若要將其他樣式功能設定為執行階段的變數，請參閱範例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>。  
+  若要將其他樣式功能設定為執行階段的變數，請參閱範例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>。  
   
- `ToolboxHelper.cs`  
+  `ToolboxHelper.cs`  
   
- 透過將項目群組原型安裝到項目工具中，來設定工具箱。 當使用者執行工具時，會將這些原型的複本與目標項目合併。  
+  透過將項目群組原型安裝到項目工具中，來設定工具箱。 當使用者執行工具時，會將這些原型的複本與目標項目合併。  
   
- 您可以覆寫 `CreateElementPrototype()` 定義工具箱項目，以建立數個物件的群組。 例如，您可以定義項目，來表示內含子元件的物件。 變更程式碼之後，請重設 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體以清除工具箱快取。  
+  您可以覆寫 `CreateElementPrototype()` 定義工具箱項目，以建立數個物件的群組。 例如，您可以定義項目，來表示內含子元件的物件。 變更程式碼之後，請重設 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體以清除工具箱快取。  
   
 ## <a name="generated-files-in-the-dslpackage-project"></a>在 DslPackage 專案中產生的檔案  
  DslPackage 會與 DSL 模型結合為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shell，以管理視窗、工具箱和功能表命令。 大多數的類別是雙衍生類別，因此您可以覆寫類別的任何方法。  

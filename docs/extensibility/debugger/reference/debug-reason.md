@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON |Microsoft 文件
+title: DEBUG_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47cfd171d23420396c6d7ab5416db32cc05511f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868361"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-指定處理程序已啟動偵錯的原因。  
+指定處理序已啟動偵錯，原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,19 +50,19 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>參數  
  DEBUG_REASON_ERROR  
- 發生非特定的錯誤 （這用做為預設值條件時沒有其他的理由，調整）。  
+ 發生非特定的錯誤 （這用做預設條件時沒有其他理由調整）。  
   
  DEBUG_REASON_USER_LAUNCHED  
- 在使用者的要求已啟動的處理序。  
+ 在使用者的要求啟動程序。  
   
  DEBUG_REASON_USER_ATTACHED  
- 已執行的處理序已附加至使用者。  
+ 已在執行程序已附加至使用者。  
   
  DEBUG_REASON_AUTO_ATTACHED  
- 處理序已自動附加至其啟動時。  
+ 此程序已自動附加至其啟動時。  
   
  DEBUG_REASON_CAUSALITY  
- 由於已啟動的處理程序*時間恰好*(JIT) 偵錯事件。  
+ 處理序已啟動，因為*Just In Time* (JIT) 偵錯事件。  
   
 ## <a name="remarks"></a>備註  
  傳回從[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。  

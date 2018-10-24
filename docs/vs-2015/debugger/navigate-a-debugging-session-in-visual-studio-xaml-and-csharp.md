@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842635"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中巡覽偵錯工作階段 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ ms.locfileid: "49306302"
   
  當您逐步執行一行程式碼時，偵錯工具會執行下列其中一個動作：  
   
--   如果下一個陳述式不是您方案中某個函式的呼叫，偵錯工具會執行該陳述式、移至下一個陳述式，然後暫停執行。  
+- 如果下一個陳述式不是您方案中某個函式的呼叫，偵錯工具會執行該陳述式、移至下一個陳述式，然後暫停執行。  
   
--   如果該陳述式是您方案中某個函式的呼叫，偵錯工具就會移至已呼叫的函式的進入點，然後暫停執行。  
+- 如果該陳述式是您方案中某個函式的呼叫，偵錯工具就會移至已呼叫的函式的進入點，然後暫停執行。  
   
- 繼續逐步執行 Example1 的陳述式，直到您到達結束點為止。 偵錯工具會反白顯示方法的右大括號。  
+  繼續逐步執行 Example1 的陳述式，直到您到達結束點為止。 偵錯工具會反白顯示方法的右大括號。  
   
- **檢查資料提示中的變數值。** 當您將滑鼠游標停留在變數名稱上時，變數的名稱、值和類型會顯示在資料提示中。  
+  **檢查資料提示中的變數值。** 當您將滑鼠游標停留在變數名稱上時，變數的名稱、值和類型會顯示在資料提示中。  
   
- ![偵錯工具資料提示](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![偵錯工具資料提示](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- 將滑鼠游標停留在變數 `a`上。 注意名稱、值和資料類型。 將滑鼠游標停留在變數 `methodTrack`上。 再次注意名稱、值和資料類型。  
+  將滑鼠游標停留在變數 `a`上。 注意名稱、值和資料類型。 將滑鼠游標停留在變數 `methodTrack`上。 再次注意名稱、值和資料類型。  
   
- **檢查 [區域變數] 視窗中的變數值。** 在上**偵錯**功能表上，指向**Windows**，然後選擇**區域變數**。 (鍵盤：Alt+4)。  
+  **檢查 [區域變數] 視窗中的變數值。** 在上**偵錯**功能表上，指向**Windows**，然後選擇**區域變數**。 (鍵盤：Alt+4)。  
   
- ![[區域變數] 視窗](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![[區域變數] 視窗](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- [區域變數] 視窗是函式的參數和變數的樹狀結構檢視。 物件變數的屬性是物件本身的子節點。 `this` 變數是每個物件方法中，表示物件本身的一個隱藏參數。 在本案例中，它代表 MainPage 類別。 `methodTrack` 是 MainPage 類別的成員，因此，其值和資料類型會列在 `this`下面的那一行中。 展開 [ `this` ] 節點來檢視 `methodTrack` 資訊。  
+  [區域變數] 視窗是函式的參數和變數的樹狀結構檢視。 物件變數的屬性是物件本身的子節點。 `this` 變數是每個物件方法中，表示物件本身的一個隱藏參數。 在本案例中，它代表 MainPage 類別。 `methodTrack` 是 MainPage 類別的成員，因此，其值和資料類型會列在 `this`下面的那一行中。 展開 [ `this` ] 節點來檢視 `methodTrack` 資訊。  
   
- **加入 methodTrack 變數的監看式。** `methodWatch` 變數用於這個整個快速入門中，以顯示範例中呼叫的方法。 若要更輕鬆地檢視變數的值，請將它加入至監看式視窗。 以滑鼠右鍵按一下 [區域變數] 視窗中的變數名稱，然後選擇 [加入監看式] 。  
+  **加入 methodTrack 變數的監看式。** `methodWatch` 變數用於這個整個快速入門中，以顯示範例中呼叫的方法。 若要更輕鬆地檢視變數的值，請將它加入至監看式視窗。 以滑鼠右鍵按一下 [區域變數] 視窗中的變數名稱，然後選擇 [加入監看式] 。  
   
- ![監看式視窗](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![監看式視窗](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- 您可以在監看式視窗中監看多個變數。 每次暫停執行時，都會更新監看的變數的值，例如 [區域變數] 和資料提示視窗中的值。 您也可以將變數從程式碼編輯器加入至監看式視窗。 選取要監看的變數，按一下滑鼠右鍵，然後選擇 [加入監看式] 。  
+  您可以在監看式視窗中監看多個變數。 每次暫停執行時，都會更新監看的變數的值，例如 [區域變數] 和資料提示視窗中的值。 您也可以將變數從程式碼編輯器加入至監看式視窗。 選取要監看的變數，按一下滑鼠右鍵，然後選擇 [加入監看式] 。  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> 逐步執行、不進入和跳離方法  
  相較於逐步執行由父方法呼叫的方法，不進入方法會執行子方法，然後在父方法繼續時，暫停在呼叫中的方法中執行。 當您熟悉方法運作的方式，並確定其執行將不會影響您正在調查的問題時，您可能會不進入方法。  

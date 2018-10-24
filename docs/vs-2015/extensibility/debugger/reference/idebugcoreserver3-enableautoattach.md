@@ -17,12 +17,12 @@ ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bbfea47c85d9cacefdfd8d897d9af4a037bde406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e15d24220e4a646017a7e04cb5a0cfdc03f593eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862719"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

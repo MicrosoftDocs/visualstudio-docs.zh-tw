@@ -17,12 +17,12 @@ ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d4d0c0865ea19ade6a268abfa40327b3714b453
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6fc09534138db7a23693a48ec6f5b96b08ab463
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828477"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f974ab7e12e85ec72ebb310aded986d77e7fcb7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6152f9681208c9621445c184270b6dc3e25520f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858546"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

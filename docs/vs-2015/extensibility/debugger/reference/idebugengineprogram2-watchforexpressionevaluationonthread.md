@@ -17,12 +17,12 @@ ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 119957751baf3c0e07c50fccd7d29f290708d921
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec22d837a27ce30b721f0dcd8ca3229f362a5aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853112"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostName |Microsoft 文件
+title: IDebugProgramNode2::GetHostName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b26d0113e9d627a567a1381ec04eec54b062b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e47b8a18c631fe99b67020a4805d019b29fc234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816772"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 取得裝載程式的處理序名稱。  
@@ -43,16 +43,16 @@ int GetHostName (
   
 #### <a name="parameters"></a>參數  
  `dwHostNameType`  
- [in]中的值[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉，指定要傳回名稱的類型。  
+ [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉，指定要傳回名稱的類型。  
   
  `pbstrHostName`  
- [out]傳回使用裝載處理序名稱。  
+ [out]傳回裝載處理序名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CProgram`公開物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。 此範例中會忽略`dwHostNameType`參數並傳回程式的名稱，如取自模組的檔案路徑的基底名稱。  
+ 下列範例示範如何實作這個方法來簡單`CProgram`公開的物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。 此範例中會忽略`dwHostNameType`參數並傳回程式的名稱，因為從模組的檔案路徑的基底名稱。  
   
 ```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    

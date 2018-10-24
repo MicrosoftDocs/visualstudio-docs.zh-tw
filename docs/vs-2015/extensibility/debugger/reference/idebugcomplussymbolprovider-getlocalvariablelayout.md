@@ -16,12 +16,12 @@ ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6669503218fba34c452e0e32bef88b4f020a021a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e42ab3f90c36b144cb0c650b62c4c236a1aeb1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825513"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

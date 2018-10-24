@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868023"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的程式碼剖析資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ms.locfileid: "49254685"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>將分析回合的符號內嵌到分析資料 (.vsp) 檔案  
   
--   在命令提示字元視窗中，鍵入下列命令：  
+- 在命令提示字元視窗中，鍵入下列命令：  
   
-     \<路徑>**VSPerfReport \<** VSP 檔案> **/PackSymbols**  
+   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/PackSymbols**  
   
-     .vsps 檔案預設會使用 .vsp 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。  
+   .vsps 檔案預設會使用 .vsp 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>建立摘要分析資料檔案  
   
--   在命令提示字元視窗中，鍵入下列命令：  
+- 在命令提示字元視窗中，鍵入下列命令：  
   
-     \<路徑>**VSPerfReport \<** VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]  
+   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]  
   
-     .vsps 檔案預設會使用 .vsp 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。
+   .vsps 檔案預設會使用 .vsp 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。
 
 
 

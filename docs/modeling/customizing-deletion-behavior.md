@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849147"
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這種行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。
@@ -57,19 +57,19 @@ ms.locfileid: "47859805"
 
 #### <a name="to-set-delete-propagation"></a>設定刪除傳播
 
-1.  在 DSL 定義圖上選取*角色*至想要傳播刪除。 該角色由網域關聯性方塊的左側或右側線條所表示。
+1. 在 DSL 定義圖上選取*角色*至想要傳播刪除。 該角色由網域關聯性方塊的左側或右側線條所表示。
 
-     例如，如果您要指定 Album 遭到刪除時，也刪除相關的 Artist，請選取連接到網域類別 Artist 的角色。
+    例如，如果您要指定 Album 遭到刪除時，也刪除相關的 Artist，請選取連接到網域類別 Artist 的角色。
 
-2.  在 [屬性] 視窗中，設定**傳播刪除**屬性。
+2. 在 [屬性] 視窗中，設定**傳播刪除**屬性。
 
-3.  按 F5 並確認：
+3. 按 F5 並確認：
 
-    -   刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。
+   -   刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。
 
-    -   刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。
+   -   刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。
 
- 您也可以查看**傳播刪除**選項**DSL 詳細資料**視窗。 選取網域類別，並在 [DSL 詳細資料] 視窗中，開啟**刪除時的行為**按一下旁邊的視窗按鈕的頁面。 **傳播**選項會顯示每個關聯性的相反角色。 **刪除 Style**資料行會指出是否**傳播**選項的預設值，但它並沒有任何個別的作用。
+   您也可以查看**傳播刪除**選項**DSL 詳細資料**視窗。 選取網域類別，並在 [DSL 詳細資料] 視窗中，開啟**刪除時的行為**按一下旁邊的視窗按鈕的頁面。 **傳播**選項會顯示每個關聯性的相反角色。 **刪除 Style**資料行會指出是否**傳播**選項的預設值，但它並沒有任何個別的作用。
 
 ## <a name="delete-propagation-by-using-program-code"></a>使用程式碼來刪除傳播
  DSL 定義檔案中的選項只能讓您選擇刪除是否傳播至相鄰項目。 若要實作更複雜的刪除傳播配置，可以撰寫程式碼。
@@ -123,7 +123,6 @@ partial class MusicLibDeleteClosure
     }
   }
 }
-
 ```
 
  關閉技術可確認在刪除開始之前就已確定要刪除的項目和連結集。 查核器還會將您的關閉結果與來自模型其他部分的結果結合。
@@ -133,17 +132,17 @@ partial class MusicLibDeleteClosure
 ## <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted
  您可以在網域類別或網域關聯性中覆寫 `OnDeleting()` 或 `OnDeleted()`。
 
-1.  當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。
+1. 當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。
 
-     如果同時刪除數個項目，在執行刪除之前，會針對它們全部呼叫 OnDeleting。
+    如果同時刪除數個項目，在執行刪除之前，會針對它們全部呼叫 OnDeleting。
 
-     `IsDeleting` 為 true。
+    `IsDeleting` 為 true。
 
-2.  刪除該項目時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它會留存在 CLR 堆積中，以便在需要時執行復原，但是它已與其他項目取消連結並從 `store.ElementDirectory` 中遭到移除。 關聯性，該角色仍然參考舊的角色扮演者。`IsDeleted` 是，則為 true。
+2. 刪除該項目時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它會留存在 CLR 堆積中，以便在需要時執行復原，但是它已與其他項目取消連結並從 `store.ElementDirectory` 中遭到移除。 關聯性，該角色仍然參考舊的角色扮演者。`IsDeleted` 是，則為 true。
 
-3.  當使用者在建立項目之後呼叫復原，以及在取消復原中重複提早刪除時，會呼叫 OnDeleting 和 OnDeleted。 請使用 `this.Store.InUndoRedoOrRollback` 以避免在這些情況下更新市集項目。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+3. 當使用者在建立項目之後呼叫復原，以及在取消復原中重複提早刪除時，會呼叫 OnDeleting 和 OnDeleted。 請使用 `this.Store.InUndoRedoOrRollback` 以避免在這些情況下更新市集項目。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
- 例如，下列程式碼會在其最後一個子系 Song 被刪除時刪除 Album：
+   例如，下列程式碼會在其最後一個子系 Song 被刪除時刪除 Album：
 
 ```
 
@@ -164,7 +163,6 @@ partial class AlbumHasSongs
       {
         this.Album.Delete();
 } } } }
-
 ```
 
  從刪除關聯性觸發經常會比從角色項目觸發有用，因為前者在項目被刪除以及關聯性本身被刪除時都適用。 然而，如果是參考關聯性，您可能需要在相關項目被刪除時 (而不是在關聯性本身被刪除時) 傳播刪除。 本範例會在最後一位參與的 Artist 被刪除時刪除 Album，但是它不會在關聯性被刪除時回應：
@@ -192,7 +190,6 @@ partial class Artist
     {
       album.Delete();
 } } }
-
 ```
 
  當您對某個項目執行 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> 時，將會呼叫 OnDeleting 和 OnDeleted。 這些方法都是永遠執行的內嵌-也就是立即之前和之後實際的刪除作業。 如果您的程式碼刪除兩個或多個項目，將會在所有項目上輪流呼叫 OnDeleting 和 OnDeleted。
@@ -247,7 +244,6 @@ public partial class MusicLibDomainModel
     return types.ToArray();
   }
 }
-
 ```
 
 ### <a name="example-deleted-event"></a>Deleted 事件範例
@@ -284,7 +280,6 @@ partial class NestedShapesSampleDocData
     }
   }
 }
-
 ```
 
 ## <a name="unmerge"></a> 取消合併

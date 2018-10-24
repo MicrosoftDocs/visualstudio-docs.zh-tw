@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837553"
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ ms.locfileid: "49202757"
   
 #### <a name="to-set-delete-propagation"></a>設定刪除傳播  
   
-1.  在 DSL 定義圖上選取*角色*至想要傳播刪除。 該角色由網域關聯性方塊的左側或右側線條所表示。  
+1. 在 DSL 定義圖上選取*角色*至想要傳播刪除。 該角色由網域關聯性方塊的左側或右側線條所表示。  
   
-     例如，如果您要指定 Album 遭到刪除時，也刪除相關的 Artist，請選取連接到網域類別 Artist 的角色。  
+    例如，如果您要指定 Album 遭到刪除時，也刪除相關的 Artist，請選取連接到網域類別 Artist 的角色。  
   
-2.  在 [屬性] 視窗中，設定**傳播刪除**屬性。  
+2. 在 [屬性] 視窗中，設定**傳播刪除**屬性。  
   
-3.  按 F5 並確認：  
+3. 按 F5 並確認：  
   
-    -   刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。  
+   -   刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。  
   
-    -   刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。  
+   -   刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。  
   
- 您也可以查看**傳播刪除**選項**DSL 詳細資料**視窗。 選取網域類別，並在 [DSL 詳細資料] 視窗中，開啟**刪除時的行為**按一下旁邊的視窗按鈕的頁面。 **傳播**選項會顯示每個關聯性的相反角色。 **刪除 Style**資料行會指出是否**傳播**選項的預設值，但它並沒有任何個別的作用。  
+   您也可以查看**傳播刪除**選項**DSL 詳細資料**視窗。 選取網域類別，並在 [DSL 詳細資料] 視窗中，開啟**刪除時的行為**按一下旁邊的視窗按鈕的頁面。 **傳播**選項會顯示每個關聯性的相反角色。 **刪除 Style**資料行會指出是否**傳播**選項的預設值，但它並沒有任何個別的作用。  
   
 ## <a name="delete-propagation-by-using-program-code"></a>使用程式碼來刪除傳播  
  DSL 定義檔案中的選項只能讓您選擇刪除是否傳播至相鄰項目。 若要實作更複雜的刪除傳播配置，可以撰寫程式碼。  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
  您可以在網域類別或網域關聯性中覆寫 `OnDeleting()` 或 `OnDeleted()`。  
   
-1.  當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。  
+1. 當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。  
   
-     如果同時刪除數個項目，在執行刪除之前，會針對它們全部呼叫 OnDeleting。  
+    如果同時刪除數個項目，在執行刪除之前，會針對它們全部呼叫 OnDeleting。  
   
-     `IsDeleting` 為 true。  
+    `IsDeleting` 為 true。  
   
-2.  刪除該項目時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它會留存在 CLR 堆積中，以便在需要時執行復原，但是它已與其他項目取消連結並從 `store.ElementDirectory` 中遭到移除。 關聯性，該角色仍然參考舊的角色扮演者。`IsDeleted` 是，則為 true。  
+2. 刪除該項目時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它會留存在 CLR 堆積中，以便在需要時執行復原，但是它已與其他項目取消連結並從 `store.ElementDirectory` 中遭到移除。 關聯性，該角色仍然參考舊的角色扮演者。`IsDeleted` 是，則為 true。  
   
-3.  當使用者在建立項目之後呼叫復原，以及在取消復原中重複提早刪除時，會呼叫 OnDeleting 和 OnDeleted。 請使用 `this.Store.InUndoRedoOrRollback` 以避免在這些情況下更新市集項目。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+3. 當使用者在建立項目之後呼叫復原，以及在取消復原中重複提早刪除時，會呼叫 OnDeleting 和 OnDeleted。 請使用 `this.Store.InUndoRedoOrRollback` 以避免在這些情況下更新市集項目。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
- 例如，下列程式碼會在其最後一個子系 Song 被刪除時刪除 Album：  
+   例如，下列程式碼會在其最後一個子系 Song 被刪除時刪除 Album：  
   
 ```  
   

@@ -17,12 +17,12 @@ ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afafdf2a7a7f92bd7c1ab23a7ebb98f63c5dc846
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5b4e42fc7ac626af5b08a9f131eb8d3331e0ea97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867971"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

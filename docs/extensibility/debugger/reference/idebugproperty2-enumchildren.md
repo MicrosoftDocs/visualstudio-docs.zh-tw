@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren |Microsoft 文件
+title: IDebugProperty2::EnumChildren |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9631ee89dc9d241932b745db4ce094799a899bad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79ac095f5e988b98d55b2837e70a1c0d3832b855
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847028"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 擷取屬性的子系清單。  
@@ -53,28 +53,28 @@ int EnumChildren (
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定在列舉中的哪些欄位[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構會先填入。  
+ [in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構要進行填寫。  
   
  `dwRadix`  
  [in]指定要用於格式化數字的任何資訊的基數。  
   
  `guidFilter`  
- [in]篩選器搭配使用的 GUID`dwAttribFilter`和`pszNameFilter`參數，以選取哪些`DEBUG_PROPERTY_INFO`子系是要列舉。 例如，`guidFilterLocals`篩選器的本機變數。  
+ [in]篩選器搭配使用的 GUID`dwAttribFilter`並`pszNameFilter`參數來選取哪一個`DEBUG_PROPERTY_INFO`子系是要列舉。 比方說，`guidFilterLocals`篩選條件的本機變數。  
   
  `dwAttribFilter`  
- [in]從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)指定的物件，例如列舉類型的列舉型別`DBG_ATTRIB_METHOD`可能是這個屬性的子系的所有方法。 用於搭配`guidFilter`和`pszNameFilter`參數。  
+ [in]從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，指定要列舉，例如物件的類型`DBG_ATTRIB_METHOD`可能是這個屬性的子系的所有方法。 用於搭配`guidFilter`和`pszNameFilter`參數。  
   
  `pszNameFilter`  
- [in]搭配使用的篩選器名稱`guidFilter`和`dwAttribFilter`參數，以選取哪些`DEBUG_PROPERTY_INFO`子系是要列舉。 例如，此參數設定為"MyX 」 篩選條件具有名稱"MyX。 」 的所有子系  
+ [in]搭配使用的篩選器名稱`guidFilter`並`dwAttribFilter`參數來選取哪一個`DEBUG_PROPERTY_INFO`子系是要列舉。 比方說，此參數設定為"MyX 」 篩選條件具有名稱"MyX。 」 的所有子系  
   
  `dwTimeout`  
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期地等待。  
+ [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。  
   
  `ppEnum`  
- [out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含子屬性的清單。  
+ [out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含的子屬性的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

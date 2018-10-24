@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87b755ac0dbe7e10cfe52693840101729ab32069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863499"
 ---
 # <a name="commandtable-element"></a>CommandTable 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ CommandTable 是.vsct 檔的根項目。 這是定義 VSPackage 提供給 IDE �
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|---------------|-----------------|  
-|xmlns|必要。 XML 命名空間：<br /><br /> xmlns ="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable」<br /><br /> xmlns:xs ="http://www.w3.org/2001/XMLSchema」|  
-|語言|選擇性。 [語言] 屬性可以用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定語言，就會使用目前的處理序的語言：<br /><br /> language ="en-我們"|  
+| 屬性 |                                                                                                                   描述                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   必要。 XML 命名空間：<br /><br /> xmlns ="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>」<br /><br /> xmlns:xs ="<http://www.w3.org/2001/XMLSchema>」                                   |
+| 語言  | 選擇性。 [語言] 屬性可以用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定語言，就會使用目前的處理序的語言：<br /><br /> language ="en-我們" |
   
 ### <a name="child-elements"></a>子元素  
   

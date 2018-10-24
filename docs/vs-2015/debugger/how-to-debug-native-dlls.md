@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830596"
 ---
 # <a name="how-to-debug-native-dlls"></a>如何：偵錯原生 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244422"
   
  當您要偵錯一個 DLL 時，您可以從下列地方開始偵錯：  
   
--   從建立會呼叫該 DLL 的可執行檔的專案。  
+- 從建立會呼叫該 DLL 的可執行檔的專案。  
   
- \-或-  
+  \-或-  
   
--   從建立該 DLL 本身的專案。  
+- 從建立該 DLL 本身的專案。  
   
- 如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱 <<c0> [ 中斷點](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+  如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱 <<c0> [ 中斷點](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
- 如果您要從建立該 DLL 的專案開始偵錯，就必須指定您希望用來偵錯該 DLL 的可執行檔。  
+  如果您要從建立該 DLL 的專案開始偵錯，就必須指定您希望用來偵錯該 DLL 的可執行檔。  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>若要指定偵錯工作階段的可執行檔  
   
-1.  在 [**方案總管] 中**，選取建立該 DLL 的專案。  
+1. 在 [**方案總管] 中**，選取建立該 DLL 的專案。  
   
-2.  從**檢視**功能表上，選擇**屬性頁**。  
+2. 從**檢視**功能表上，選擇**屬性頁**。  
   
-3.  在 **屬性頁**對話方塊中，開啟**組態屬性**資料夾，然後選取**偵錯**類別目錄。  
+3. 在 **屬性頁**對話方塊中，開啟**組態屬性**資料夾，然後選取**偵錯**類別目錄。  
   
-4.  在 **命令**方塊中，指定容器的路徑名稱。 例如 C:\Program Files\MyApplication\MYAPP.EXE。  
+4. 在 **命令**方塊中，指定容器的路徑名稱。 例如 C:\Program Files\MyApplication\MYAPP.EXE。  
   
-5.  在 **命令列引數**方塊中，指定任何必要的引數，可執行檔。  
+5. 在 **命令列引數**方塊中，指定任何必要的引數，可執行檔。  
   
- 如果您未指定之可執行檔_專案_**屬性頁** 對話方塊中，[可執行檔進行偵錯工作階段對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)啟動偵錯時出現。  
+   如果您未指定之可執行檔_專案_**屬性頁** 對話方塊中，[可執行檔進行偵錯工作階段對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)啟動偵錯時出現。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

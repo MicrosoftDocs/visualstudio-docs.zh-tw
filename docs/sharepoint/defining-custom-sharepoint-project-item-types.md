@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f32f429186aa0c4a657503ca9744bf570d624f25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869505"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定義自訂 SharePoint 專案項目類型
   當您想要建立新類型的 SharePoint 專案項目，請定義新的 SharePoint 專案項目類型。 例如，Visual Studio 不會包含新增的欄位或自訂動作至 SharePoint 網站的 SharePoint 專案項目。 您可以定義自己的 SharePoint 專案項目建立欄位、 自訂動作或其他類型的 SharePoint 元件的型別。  
@@ -32,11 +32,11 @@ ms.locfileid: "36326162"
   
  當您定義的自訂專案項目類型時，您也可以在專案項目，新增下列功能：  
   
--   快顯功能表項目加入專案項目。 當您開啟快顯功能表中的專案項目時，會出現的功能表項目**方案總管**以滑鼠右鍵按一下專案項目，或選擇它，然後選擇**Shift** + **F10**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 如何： 將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。  
+- 快顯功能表項目加入專案項目。 當您開啟快顯功能表中的專案項目時，會出現的功能表項目**方案總管**以滑鼠右鍵按一下專案項目，或選擇它，然後選擇**Shift** + **F10**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 如何： 將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。  
   
--   將自訂屬性加入專案項目。 屬性會出現在**屬性**視窗中，當您選擇的專案項目時**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
+- 將自訂屬性加入專案項目。 屬性會出現在**屬性**視窗中，當您選擇的專案項目時**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
- 若要啟用其他開發人員在 Visual Studio 中使用您的專案項目，請建立.spdata 檔案，並建立項目範本或專案項目相關聯的專案範本。 如需詳細資訊，請參閱 <<c0> [ 建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
+  若要啟用其他開發人員在 Visual Studio 中使用您的專案項目，請建立.spdata 檔案，並建立項目範本或專案項目相關聯的專案範本。 如需詳細資訊，請參閱 <<c0> [ 建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>了解專案項目類型和專案項目執行個體之間的關聯性
  當您定義 SharePoint 專案項目類型時，Visual Studio 相關聯的類型的專案項目新增至 SharePoint 專案時，就會載入您的延伸模組。 例如，如果您定義新**自訂動作**專案項目類型、 Visual Studio 會載入您的延伸模組，當使用者將**自訂動作**至專案的專案項目。 Visual Studio 會使用您的擴充功能的相同執行個體相關聯的專案項目類型的所有執行個體。 在上述範例中，如果使用者加入第二個**自訂動作**專案項目至專案，您的擴充功能的相同執行個體用來自訂的第二個專案項目。  

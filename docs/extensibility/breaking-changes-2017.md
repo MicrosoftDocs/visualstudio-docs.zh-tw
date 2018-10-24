@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826488"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -59,13 +59,14 @@ VSIX 格式所做變更包括：
 > [INSTALLDIR] 下面是指 Visual Studio 安裝根目錄。 *VSIXInstaller.exe*將會自動填入此項目，但若要撰寫自訂部署程式碼，請閱讀[找出 Visual Studio](locating-visual-studio.md)。
 
 * 只安裝至 GAC 的組件：
-  * 這些組件現在會安裝在 * [INSTALLDIR] \Common7\IDE\*， *[INSTALLDIR] \Common7\IDE\PublicAssemblies*或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
+  * 這些組件現在會安裝下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
+
 * 已安裝到非探查的路徑及 GAC 的組件：
   * 在 GAC 中的複本已從安裝程式移除。
   * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
 
     例如: 
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ VSIX 格式所做變更包括：
   * 您的程式碼都能夠找到 Visual Studio 核心組件。
   * 請考慮使用 *.pkgdef*來指定您的組件的路徑，如有必要的檔案。
 * 如果您的延伸模組在 Visual Studio 處理序之外執行：
-  * 尋找在 Visual Studio 核心組件，請考慮 * [INSTALLDIR] \Common7\IDE\*， *[INSTALLDIR] \Common7\IDE\PublicAssemblies*或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
+  * 尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
 
 ## <a name="change-reduce-registry-impact"></a>變更： 減少登錄的影響
 

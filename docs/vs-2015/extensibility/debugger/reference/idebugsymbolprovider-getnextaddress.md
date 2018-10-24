@@ -17,12 +17,12 @@ ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b67b2b730e55f7521ce5634b66aaaf4b37ad9017
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e98294742fd6c60864bd48266b0075d8d4b9367
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838149"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

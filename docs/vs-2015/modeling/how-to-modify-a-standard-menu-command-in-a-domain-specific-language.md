@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837555"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49302142"
   
  簡而言之，若要修改命令：  
   
-1.  [探索您可以修改命令](#what)。  
+1. [探索您可以修改命令](#what)。  
   
-2.  [建立適當的命令集類別的部分宣告](#extend)。  
+2. [建立適當的命令集類別的部分宣告](#extend)。  
   
-3.  [覆寫 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
+3. [覆寫 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
   
- 本主題說明此程序。  
+   本主題說明此程序。  
   
 > [!NOTE]
 >  如果您想要建立您自己的功能表命令，請參閱[如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>撰寫方法的程式碼  
  下列程式碼片段在這些方法中通常很有用：  
   
--   `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
+- `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
   
--   `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
+- `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - 使用者未選取多個圖形  
+- `this.IsSingleSelection()` - 使用者未選取多個圖形  
   
--   `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表  
+- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表  
   
--   `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。  
+- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。  
   
- 如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+  如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.ComponentModel.Design.MenuCommand>   

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832676"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ ms.locfileid: "49286490"
   
 #### <a name="to-create-a-phong-shader"></a>建立 Phong 著色器  
   
-1.  建立 Lambert 著色器，如[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述。  
+1. 建立 Lambert 著色器，如[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述。  
   
-2.  中斷 [Lambert]節點和 [完稿色彩]節點的連接。 選擇 [Lambert] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。  
+2. 中斷 [Lambert]節點和 [完稿色彩]節點的連接。 選擇 [Lambert] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。  
   
-3.  將 [加入] 節點加入圖形。 在 [工具箱] 的 [數學] 下，選取 [加入]，並將其移至設計介面。  
+3. 將 [加入] 節點加入圖形。 在 [工具箱] 的 [數學] 下，選取 [加入]，並將其移至設計介面。  
   
-4.  將 [反射] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [反射]，並將其移至設計介面。  
+4. 將 [反射] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [反射]，並將其移至設計介面。  
   
-5.  加入反射比重。 將 [反射] 節點的 [輸出] 端點移至 [加入] 節點的 [X] 端點，然後將 [Lambert] 節點的 [輸出] 端點移至 [加入] 節點的 [Y] 端點。 這些連接結合像素的總擴散和反射色彩比重。  
+5. 加入反射比重。 將 [反射] 節點的 [輸出] 端點移至 [加入] 節點的 [X] 端點，然後將 [Lambert] 節點的 [輸出] 端點移至 [加入] 節點的 [Y] 端點。 這些連接結合像素的總擴散和反射色彩比重。  
   
-6.  將計算後的色彩值連接到完稿色彩。 將 [加入] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
+6. 將計算後的色彩值連接到完稿色彩。 將 [加入] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
   
- 下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
+   下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
   
 > [!NOTE]
 >  為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色，並使用 **MaterialSpecular** 和 **MaterialSpecularPower** 參數來指定金屬外觀。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  

@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824499"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將使用案例圖中的使用案例連結至另一個圖表或文件。 例如，您可以將使用案例連結至下列圖表和文件：  
   
--   循序圖，可顯示如何透過使用者與系統或其主要元件之間的互動來實現使用案例的目標。  
+- 循序圖，可顯示如何透過使用者與系統或其主要元件之間的互動來實現使用案例的目標。  
   
--   活動圖，可顯示執行使用案例時，使用者和系統或其主要元件的詳細動作。  
+- 活動圖，可顯示執行使用案例時，使用者和系統或其主要元件的詳細動作。  
   
--   OneNote 頁面或段落，可詳述使用案例。  
+- OneNote 頁面或段落，可詳述使用案例。  
   
--   Word 文件或 PowerPoint 簡報，可詳述使用案例。 您可以將這類文件保留在方案或您的小組可存取的位置中，例如 SharePoint 網站。  
+- Word 文件或 PowerPoint 簡報，可詳述使用案例。 您可以將這類文件保留在方案或您的小組可存取的位置中，例如 SharePoint 網站。  
   
- 若要將使用案例連結至文件，您可以在使用案例圖上建立成品，並將使用案例連接至成品。 您可以在成品的屬性中設定其他圖表或文件的檔案路徑。 按兩下成品時，即會開啟其他圖表或文件。  
+  若要將使用案例連結至文件，您可以在使用案例圖上建立成品，並將使用案例連接至成品。 您可以在成品的屬性中設定其他圖表或文件的檔案路徑。 按兩下成品時，即會開啟其他圖表或文件。  
   
- 您可以將想要數目的成品連線至每個使用案例。 您也可以將成品連結至使用案例圖上其他類型的項目。  
+  您可以將想要數目的成品連線至每個使用案例。 您也可以將成品連結至使用案例圖上其他類型的項目。  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>開啟與成品相關聯的文件  
   

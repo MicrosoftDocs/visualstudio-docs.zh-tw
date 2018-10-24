@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ca6c3c588b6434479e0ff44de4910cdc0a56be0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811967"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,24 +37,24 @@ ms.locfileid: "49187170"
  **語言版本**  
  指定要使用的語言版本。 每個版本的功能集都不同，因此這個選項可用來強制編譯器只允許已實作功能的子集，或只啟用與現有標準相容的功能。 此設定具有下列選項：  
   
--   **ISO-1**  
+- **ISO-1**  
   
-     以 ISO-1 標準功能為目標。  
+   以 ISO-1 標準功能為目標。  
   
--   **default**  
+- **default**  
   
-     以目前版本為目標。  
+   以目前版本為目標。  
   
- 如需詳細資訊，請參閱 [/langversion (C# 編譯器選項)](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94)。  
+  如需詳細資訊，請參閱 [/langversion (C# 編譯器選項)](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94)。  
   
- **報告內部編譯器錯誤**  
- 指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf)。  
+  **報告內部編譯器錯誤**  
+  指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf)。  
   
- **檢查算術溢位/反向溢位**  
- 指定不在 [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 或 [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 關鍵字範圍內，且會產生超出該資料類型範圍之值的整數算術運算式，是否會導致執行階段例外狀況。如需詳細資訊，請參閱 [/checked (C# 編譯器選項)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)。  
+  **檢查算術溢位/反向溢位**  
+  指定不在 [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 或 [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 關鍵字範圍內，且會產生超出該資料類型範圍之值的整數算術運算式，是否會導致執行階段例外狀況。如需詳細資訊，請參閱 [/checked (C# 編譯器選項)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)。  
   
- **不要參考 mscorlib.dll**  
- 指定是否 mscorlib.dll 會匯入至您的程式，定義整個<xref:System>命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
+  **不要參考 mscorlib.dll**  
+  指定是否 mscorlib.dll 會匯入至您的程式，定義整個<xref:System>命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
   
 ## <a name="output"></a>輸出  
  下列選項可讓您指定進階輸出選項。  
@@ -62,25 +62,25 @@ ms.locfileid: "49187170"
  **偵錯資訊**  
  指定編譯器所產生的偵錯資訊類型。 如需如何設定應用程式效能偵錯的資訊，請參閱[使映像偵錯更容易](http://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)。 此設定具有下列選項：  
   
--   **none**  
+- **none**  
   
-     指定不會產生任何偵錯資訊  
+   指定不會產生任何偵錯資訊  
   
--   **full**  
+- **full**  
   
-     允許將偵錯工具附加至執行中的程式。  
+   允許將偵錯工具附加至執行中的程式。  
   
--   **pdbonly**  
+- **pdbonly**  
   
-     讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。  
+   讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。  
   
- 如需詳細資訊，請參閱 [/debug (C# 編譯器選項)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)。  
+  如需詳細資訊，請參閱 [/debug (C# 編譯器選項)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)。  
   
- **檔案對齊**  
- 指定輸出檔案中區段的大小。 有效值為 **512**、**1024**、**2048**、**4096** 和 **8192**。 這些值是以位元組為單位。 每個區段將會對齊界限，而這個界限就是此值的倍數，會影響輸出檔的大小。 如需詳細資訊，請參閱 [/filealign (C# 編譯器選項)](http://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073)。  
+  **檔案對齊**  
+  指定輸出檔案中區段的大小。 有效值為 **512**、**1024**、**2048**、**4096** 和 **8192**。 這些值是以位元組為單位。 每個區段將會對齊界限，而這個界限就是此值的倍數，會影響輸出檔的大小。 如需詳細資訊，請參閱 [/filealign (C# 編譯器選項)](http://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073)。  
   
- **DLL 基底位址**  
- 指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)。  
+  **DLL 基底位址**  
+  指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)。  
   
 ## <a name="see-also"></a>另請參閱  
  [C# 編譯器選項](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
