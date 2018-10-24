@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907140"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ ms.locfileid: "49298944"
   
  套用更新之後，下列 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 自動程式碼 UI 測試工具功能已針對 Windows 8 改進：  
   
--   您可以在執行 Windows 8 的電腦上，針對 Microsoft .NET Framework 4.5 架構的 Windows Presentation Foundation (WPF) 控制項執行自動程式碼 UI 測試。  
+- 您可以在執行 Windows 8 的電腦上，針對 Microsoft .NET Framework 4.5 架構的 Windows Presentation Foundation (WPF) 控制項執行自動程式碼 UI 測試。  
   
--   您可以在執行 Windows 8 的電腦上，針對 64 位元 (x64) Internet Explorer 10 執行自動程式碼 UI 測試。  
+- 您可以在執行 Windows 8 的電腦上，針對 64 位元 (x64) Internet Explorer 10 執行自動程式碼 UI 測試。  
   
- 此更新中修復了下列問題：  
+  此更新中修復了下列問題：  
   
--   **程式碼涵蓋範圍：** 無法開啟由 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 中的 Visual Studio 2012 所建立的程式碼涵蓋範圍檔案 (.coverage)。  
+- **程式碼涵蓋範圍：** 無法開啟由 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 中的 Visual Studio 2012 所建立的程式碼涵蓋範圍檔案 (.coverage)。  
   
--   **受困的測試成品：** 您的小組擁有指派給 Team Foundation Server (TFS) 2010 中無效使用者的測試成品。 例如，使用者已離開公司，但仍有指派給該使用者的測試案例。 您從 TFS 2010 升級為 TFS 2012。 您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 連接至升級的 TFS 伺服器。 您無法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 將測試成品指派給任何 TFS 使用者。  
+- **受困的測試成品：** 您的小組擁有指派給 Team Foundation Server (TFS) 2010 中無效使用者的測試成品。 例如，使用者已離開公司，但仍有指派給該使用者的測試案例。 您從 TFS 2010 升級為 TFS 2012。 您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 連接至升級的 TFS 伺服器。 您無法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 將測試成品指派給任何 TFS 使用者。  
   
--   **負載測試：** 當您在執行 Windows 8 的電腦上執行負載測試，而網路類型並非區域網路 (LAN) 設定檔時，網路模擬器驅動程式會造成作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。  
+- **負載測試：** 當您在執行 Windows 8 的電腦上執行負載測試，而網路類型並非區域網路 (LAN) 設定檔時，網路模擬器驅動程式會造成作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。  
   
 ## <a name="see-also"></a>另請參閱  
  [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

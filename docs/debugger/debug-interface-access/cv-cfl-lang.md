@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG |Microsoft 文件
+title: CV_CFL_LANG |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909904"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
-指定原始程式碼語言的應用程式或連結的模組。  
+指定程式碼的原始語言的應用程式或連結的模組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,34 +50,34 @@ typedef enum CV_CFL_LANG {
   
 ## <a name="elements"></a>項目  
  CV_CFL_C  
- 應用程式語言為 c。  
+ 應用程式語言是 c。  
   
  CV_CFL_CXX  
- 應用程式語言為 c + +。  
+ C + + 應用程式語言。  
   
  CV_CFL_FORTRAN  
- 應用程式語言為 FORTRAN。  
+ FORTRAN 應用程式語言。  
   
  CV_CFL_MASM  
- 應用程式語言為 Microsoft Macro 組件。  
+ Microsoft Macro Assembler 應用程式語言。  
   
  CV_CFL_PASCAL  
- 應用程式的語言是依照 pascal 命名法。  
+ 應用程式語言是依照 pascal 命名法。  
   
  CV_CFL_BASIC  
  應用程式語言為 BASIC。  
   
  CV_CFL_COBOL  
- 應用程式語言為 COBOL。  
+ COBOL 應用程式語言。  
   
  CV_CFL_LINK  
  應用程式是連結器產生的模組。  
   
  CV_CFL_CVTRES  
- 應用程式是使用 CVTRES 工具轉換資源模組。  
+ 應用程式是使用 CVTRES 工具轉換後的資源模組。  
   
  CV_CFL_CVTPGD  
- 應用程式是以 CVTPGD 工具產生的最佳化 POGO 模組。  
+ 應用程式是以 CVTPGD 工具產生的 POGO 最佳化模組。  
   
  CV_CFL_CSHARP  
  應用程式語言為 C#。  
@@ -89,19 +89,19 @@ typedef enum CV_CFL_LANG {
  應用程式語言是中繼語言組件 （也就是 Common Language Runtime (CLR) 組件）。  
   
  CV_CFL_JAVA  
- 應用程式的語言是 Java。  
+ Java 應用程式語言。  
   
  CV_CFL_JSCRIPT  
  應用程式語言為 Jscript。  
   
  CV_CFL_MSIL  
- 應用程式的語言是未知 Microsoft Intermediate Language (MSIL)，可能是使用所造成的[/LTCG （連結時間程式碼產生）](/cpp/build/reference/ltcg-link-time-code-generation)切換。  
+ 應用程式語言是未知 Microsoft Intermediate Language (MSIL)，可能使用的結果[/LTCG （連結時間程式碼產生）](/cpp/build/reference/ltcg-link-time-code-generation)切換。  
   
  CV_CFL_HLSL  
- 應用程式語言為高的層級著色器語言。  
+ 應用程式語言是高的層級著色器語言。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回透過呼叫[idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)方法。  
+ 這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

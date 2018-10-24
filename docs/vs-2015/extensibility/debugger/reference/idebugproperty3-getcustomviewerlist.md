@@ -17,12 +17,12 @@ ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 936d3951bee3fd884aaae5ec39153ee18f5eed83
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 609662ffe4f72c6becad48282ec465c7303d7eac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906490"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

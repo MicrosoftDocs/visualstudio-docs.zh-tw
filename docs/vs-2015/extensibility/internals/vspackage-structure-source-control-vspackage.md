@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906919"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49305028"
   
  VSPackage 語意包括：  
   
--   因為 VSPackage 實作介面 (`IVsPackage`介面)  
+- 因為 VSPackage 實作介面 (`IVsPackage`介面)  
   
--   UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)  
+- UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)  
   
--   使用 VSPackage 註冊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- 使用 VSPackage 註冊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
- 原始檔控制 VSPackage 必須與這些其他[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]實體：  
+  原始檔控制 VSPackage 必須與這些其他[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]實體：  
   
--   專案  
+- 專案  
   
--   編輯器  
+- 編輯器  
   
--   方案  
+- 方案  
   
--   Windows  
+- Windows  
   
--   執行中的文件表格  
+- 執行中的文件表格  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio 環境服務使用  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

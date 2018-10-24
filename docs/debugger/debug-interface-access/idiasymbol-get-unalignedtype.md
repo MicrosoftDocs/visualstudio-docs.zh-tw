@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unalignedtype |Microsoft 文件'
+title: 'Idiasymbol:: Get_unalignedtype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a603fb7df64ace0b5e0c2f99db8a0aac18281430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906763"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
-擷取指定的使用者定義資料類型是否為未配置的旗標。  
+擷取指定使用者定義資料類型是否未對齊的旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_unalignedType (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果使用者定義資料類型是未對齊; 否則會傳回`FALSE`。  
+ [out]會傳回`TRUE`是否在使用者定義資料類型未對齊; 否則傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

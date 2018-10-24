@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909675"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ ms.locfileid: "49172740"
 ## <a name="asset-types-and-signing"></a>資產類型和簽章  
  您可以簽署 .NET 組件和應用程式資訊清單。 這些需求包括下列各項：  
   
--   可執行檔 (.exe)  
+- 可執行檔 (.exe)  
   
--   應用程式資訊清單 (.exe.manifest)  
+- 應用程式資訊清單 (.exe.manifest)  
   
--   部署資訊清單 (.application)  
+- 部署資訊清單 (.application)  
   
--   共用的元件組件 (.dll)  
+- 共用的元件組件 (.dll)  
   
- 您必須登入下列資產類型︰  
+  您必須登入下列資產類型︰  
   
-1.  組件，如果您想要將它們部署到全域組件快取 (GAC)。  
+1. 組件，如果您想要將它們部署到全域組件快取 (GAC)。  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式和部署資訊清單。 Visual Studio 根據預設可簽署這些應用程式。  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式和部署資訊清單。 Visual Studio 根據預設可簽署這些應用程式。  
   
-3.  主要 Interop 組件，用於 COM 互通性。 從 COM 類型程式庫建立主要 Interop 組件時，TLBIMP 公用程式會強制執行強式命名。  
+3. 主要 Interop 組件，用於 COM 互通性。 從 COM 類型程式庫建立主要 Interop 組件時，TLBIMP 公用程式會強制執行強式命名。  
   
- 通常，您不應該簽署可執行檔。 強式名稱元件無法參考與應用程式一起部署的非強式名稱元件。 Visual Studio 不簽署應用程式可執行檔，而是改為簽署應用程式資訊清單，指向弱式命名的可執行檔。 通常，您應該避免簽署應用程式的私用元件，因為簽章會使得相依性更難以管理。  
+   通常，您不應該簽署可執行檔。 強式名稱元件無法參考與應用程式一起部署的非強式名稱元件。 Visual Studio 不簽署應用程式可執行檔，而是改為簽署應用程式資訊清單，指向弱式命名的可執行檔。 通常，您應該避免簽署應用程式的私用元件，因為簽章會使得相依性更難以管理。  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件  
  使用專案 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下方案總管中的專案節點 ，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在方案總管視窗中按 ALT + ENTER)。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。  

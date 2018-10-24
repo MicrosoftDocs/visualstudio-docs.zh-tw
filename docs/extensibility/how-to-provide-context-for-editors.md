@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36ec73ef7b414519f0939c47c167f0e89c1e0941
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908908"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何： 提供的編輯器內容
 編輯器，內容為使用中，只有當編輯器具有焦點或之前焦點已移至 工具視窗焦點時。 您可以提供編輯器的內容，執行下列工作：  
   
-1.  建立內容包。  
+1. 建立內容包。  
   
-2.  選取項目識別項 (SEID) 發佈的內容封包。  
+2. 選取項目識別項 (SEID) 發佈的內容封包。  
   
-3.  維持封包中的內容。  
+3. 維持封包中的內容。  
   
- 這些工作都涵蓋下列程序。 如需有關如何提供內容的詳細資訊，請參閱 <<c0>  **穩固的程式設計**本文稍後。  
+   這些工作都涵蓋下列程序。 如需有關如何提供內容的詳細資訊，請參閱 <<c0>  **穩固的程式設計**本文稍後。  
   
 ## <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>若要建立內容包編輯器或設計工具  
   

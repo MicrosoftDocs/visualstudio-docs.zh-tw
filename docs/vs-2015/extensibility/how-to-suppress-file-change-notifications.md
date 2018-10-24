@@ -15,12 +15,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a17869c8c51f940abc03e3670e20768c61f8bc4f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906503"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 隱藏檔案變更通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

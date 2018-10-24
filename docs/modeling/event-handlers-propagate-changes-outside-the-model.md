@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910624"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 
@@ -173,7 +173,7 @@ private static void AlbumTitleAdjuster(object sender,
 每個事件類型會對應至 Store.EventManagerDirectory 中的集合。 您可以新增或移除事件處理常式在任何時間，但通常會將它們加入文件載入時。
 
 |`EventManagerDirectory` 屬性名稱|執行時|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|建立網域類別、 網域關聯性、 圖形、 連接線或圖表的執行個體。|
 |ElementDeleted|模型項目已從存放區的項目目錄，並不再是來源或目標的任何關聯性。 項目實際上不會從記憶體刪除，但會保留未來的復原時。|
 |ElementEventsBegun|叫用為外部交易的結尾。|
