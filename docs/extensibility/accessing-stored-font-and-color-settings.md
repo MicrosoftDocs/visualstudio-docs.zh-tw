@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910676"
 ---
 # <a name="access-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面來存取這些設定。
@@ -49,17 +49,17 @@ ms.locfileid: "39081640"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字型和色彩的狀態持續性
  保存的字型和色彩牽涉到：
 
--   與儲存在登錄中的設定，同步處理的 IDE 設定。
+- 與儲存在登錄中的設定，同步處理的 IDE 設定。
 
--   傳播登錄修改資訊。
+- 傳播登錄修改資訊。
 
--   設定和擷取儲存在登錄中的設定。
+- 設定和擷取儲存在登錄中的設定。
 
- IDE 設定與同步處理的儲存體設定是透明化的。 基礎的 IDE 會自動寫入更新的設定，如**顯示的項目**至類別的登錄項目。
+  IDE 設定與同步處理的儲存體設定是透明化的。 基礎的 IDE 會自動寫入更新的設定，如**顯示的項目**至類別的登錄項目。
 
- 如果多個的 Vspackage 會共用特定分類，VSPackage 應要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。
+  如果多個的 Vspackage 會共用特定分類，VSPackage 應要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。
 
- 根據預設，不會啟用事件產生。 若要啟用的事件產生時，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 開啟 類別目錄會造成 IDE 呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 實作的方法。
+  根據預設，不會啟用事件產生。 若要啟用的事件產生時，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 開啟 類別目錄會造成 IDE 呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 實作的方法。
 
 > [!NOTE]
 >  透過修改**字型和色彩** 屬性頁產生事件的獨立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷呼叫的方法之前是否需要更新的快取的字型和色彩設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>類別。

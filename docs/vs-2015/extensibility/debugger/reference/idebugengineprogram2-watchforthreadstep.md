@@ -17,12 +17,12 @@ ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0c708e7a8a0ffc9ed18c524fc568341a3b1681e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baab97b35ee19b889ca4db2578e85f8f88f2ed47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907790"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

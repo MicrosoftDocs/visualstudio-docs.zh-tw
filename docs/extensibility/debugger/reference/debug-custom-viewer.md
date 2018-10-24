@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |Microsoft 文件
+title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8bdc7a4ea9ac59ee0956226618402b397844b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908440"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-識別自訂的檢視器的結構，或輸入視覺化檢視。  
+識別自訂檢視器的結構，或輸入視覺化檢視。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,10 +51,10 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>成員  
  dwID  
- 若要區別多個檢視器或其中一個所實作的視覺化檢視的識別碼`GUID`。  
+ 識別碼來區別多個檢視器或藉由將其中一個視覺化檢視`GUID`。  
   
  bstrMenuName  
- 文字會出現在下拉式選單。  
+ 文字會出現在下拉式選單中。  
   
  bstrDescription  
  自訂檢視器或 （必須是 null 的值如果不使用） 的類型視覺化檢視的描述。  
@@ -63,13 +63,13 @@ public struct DEBUG_CUSTOM_VIEWER {
  提供的運算式評估工具的語言。  
   
  guidVendor  
- 廠商提供的運算式評估工具。  
+ 提供的運算式評估工具的廠商。  
   
  bstrMetric  
- 度量的自訂檢視器或類型的視覺化檢視`CLSID`儲存。  
+ 計量在其下的自訂檢視器或類型視覺化檢視`CLSID`儲存。  
   
 ## <a name="remarks"></a>備註  
- 此結構的清單由呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (以及依擴充而[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
+ 此結構的清單由呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (和延伸[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

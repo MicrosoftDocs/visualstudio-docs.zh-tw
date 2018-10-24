@@ -16,12 +16,12 @@ ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9c94ecf2d22439eeeebbfdd4bda26b5a1957947
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc54f565c3f0e964ba14648190b1c4600de9e8d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907335"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

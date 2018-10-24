@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft 文件
+title: IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10a26eca06aed24d53b70cd406fe3f24e2fe898
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905346"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 這個方法會將方法的位置和位移轉換成記憶體位址。  
@@ -52,24 +52,24 @@ int GetMethodLocationProperty(
  [in]方法的位置和位移、 以字串表示。  
   
  `pSymbolProvider`  
- [in]符號提供者以[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
+ [in]符號提供者以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
   
  `pAddress`  
- [in]在方法中，以表示位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。  
+ [in]在方法中，以表示地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。  
   
  `pBinder`  
  [in]繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
   
  `ppProperty`  
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)代表記憶體位址的介面。  
+ [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)代表的記憶體位址的介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳回的位址可以用來設定中斷點，例如。  
+ 傳回的位址可用來設定中斷點，例如使用中。  
   
- 不論名稱為何`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞的不完整的方法名稱。 在此情況下，選取的方法是一個內含`pAddress`。 這個參數的解譯方式，是由運算式評估工具及它所支援的語言實作。  
+ 儘管有此名稱`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞完整的方法名稱。 在此情況下，選取的方法是包圍`pAddress`。 此參數的解譯方式，是由運算式評估工具及它所支援的語言實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

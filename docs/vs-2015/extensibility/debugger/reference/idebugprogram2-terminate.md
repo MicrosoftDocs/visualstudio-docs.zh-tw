@@ -17,12 +17,12 @@ ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d7e43ba54b7efae0d66ace43821e8736663136e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15dcab4ac15a8059d9ca569478957c3a66e277d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906152"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

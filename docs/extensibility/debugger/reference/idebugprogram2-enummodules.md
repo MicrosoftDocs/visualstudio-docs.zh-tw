@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules |Microsoft 文件
+title: IDebugProgram2::EnumModules |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d95deffb687b0d09367e2944bbaff08f3c9b57c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb92fc8657a69fe6b66762f9052af1294d92a7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905996"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。  
@@ -44,10 +44,10 @@ int EnumModules(
  [out]傳回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)物件，其中包含的模組清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 模組 DLL 或組件，而且通常會列在**模組**偵錯視窗。  
+ 模組是一個 DLL 或組件，而且通常會列在**模組**偵錯視窗。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
