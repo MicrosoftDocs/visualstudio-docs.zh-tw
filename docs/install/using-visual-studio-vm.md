@@ -7,7 +7,7 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
-- virtual machine; VM
+- virtual machine
 - installation
 - visual studio
 author: PhilLee-MSFT
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5061265467f7fab653e3266d5c25ccf0c9ef43da
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0aef833e6257b288283644ffdc9ea4458f332b27
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550290"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459812"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 

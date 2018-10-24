@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916996"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863565"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全域 Windows Form 和 Web Form 的文化特性 (Culture) 特定類別
 
@@ -46,7 +46,7 @@ ms.locfileid: "31916996"
 
 ## <a name="using-the-culture-setting"></a>使用文化特性 (Culture) 設定
 
-使用文化特性 (Culture) 設定 (儲存於應用程式或控制台的 [地區選項] 中)，在執行階段判斷文化特性 (Culture) 慣例並據以格式化資訊。 如需設定文化特性 (Culture) 的詳細資訊，請參閱[如何：為 ASP.NET 網頁全球化設定文化特性 (Culture) 和 UI 文化特性 (Culture)](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)。 根據文化特性 (Culture) 設定自動格式化資訊的類別，稱為「文化特性 (Culture) 特定」。 一部分文化特性 (Culture) 特定方法為
+使用文化特性 (Culture) 設定 (儲存於應用程式或控制台的 [地區選項] 中)，在執行階段判斷文化特性 (Culture) 慣例並據以格式化資訊。 如需設定文化特性 (Culture) 的詳細資訊，請參閱[如何：為 ASP.NET 網頁全球化設定文化特性 (Culture) 和 UI 文化特性 (Culture)](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)。 根據文化特性 (Culture) 設定自動格式化資訊的類別，稱為「文化特性 (Culture) 特定」。 一部分文化特性 (Culture) 特定方法為
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>
