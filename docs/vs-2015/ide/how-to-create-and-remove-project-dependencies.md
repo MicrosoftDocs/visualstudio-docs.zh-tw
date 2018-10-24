@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823836"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +37,20 @@ ms.locfileid: "49247677"
   
 ### <a name="to-assign-dependencies-to-projects"></a>指派專案相依性  
   
-1.  在 [方案總管] 中選取專案。  
+1. 在 [方案總管] 中選取專案。  
   
-2.  在 [專案] 功能表上，選擇 [專案相依性]。  
+2. 在 [專案] 功能表上，選擇 [專案相依性]。  
   
-     [專案相依性] 對話方塊隨即開啟。  
+    [專案相依性] 對話方塊隨即開啟。  
   
-    > [!NOTE]
-    >  [專案相依性] 選項只適用於具有多個專案的方案。  
+   > [!NOTE]
+   >  [專案相依性] 選項只適用於具有多個專案的方案。  
   
-3.  在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
+3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
   
-4.  如果任何其他專案必須在此專案之前建置，請在 [相依於] 欄位中，選取該專案的核取方塊。  
+4. 如果任何其他專案必須在此專案之前建置，請在 [相依於] 欄位中，選取該專案的核取方塊。  
   
- 您的方案必須包含一個以上的專案，才可以建立專案相依性。  
+   您的方案必須包含一個以上的專案，才可以建立專案相依性。  
   
 ### <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性  
   

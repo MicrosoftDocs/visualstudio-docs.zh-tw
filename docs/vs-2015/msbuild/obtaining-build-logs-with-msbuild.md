@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811746"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49176003"
 ## <a name="setting-the-level-of-detail"></a>設定詳細層級  
  當您使用 MSBuild 來建置專案，但未指定詳細資料層級時，即會在輸出記錄檔中顯示下列資訊：  
   
--   已分類為高重要性的錯誤、警告和訊息。  
+- 已分類為高重要性的錯誤、警告和訊息。  
   
--   一些狀態事件。  
+- 一些狀態事件。  
   
--   組建摘要。  
+- 組建摘要。  
   
- 使用 **/verbosity** (**/v**) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。  
+  使用 **/verbosity** (**/v**) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。  
   
- 當您將 **/verbosity** 設為 `detailed` 時，建置程序可能會變慢，而當您將 **/verbosity** 設為 `diagnostic` 時，甚至會變得更慢。  
+  當您將 **/verbosity** 設為 `detailed` 時，建置程序可能會變慢，而當您將 **/verbosity** 設為 `diagnostic` 時，甚至會變得更慢。  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

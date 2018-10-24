@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831807"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說： 建立適用於 SharePoint 的 web 組件，使用設計工具
 
@@ -98,9 +98,9 @@ ms.locfileid: "42635228"
 
 1. 請執行下列其中一組步驟：
 
-    - 在設計工具中，按兩下**更新** 按鈕。
+   - 在設計工具中，按兩下**更新** 按鈕。
 
-    - 在 [**屬性**視窗**更新**按鈕，並選擇**事件**] 按鈕。 在 **按一下 **  屬性中，輸入**Button1_Click**，然後選擇 Enter 鍵。
+   - 在 [**屬性**視窗**更新**按鈕，並選擇**事件**] 按鈕。 在 **按一下 **  屬性中，輸入**Button1_Click**，然後選擇 Enter 鍵。
 
      使用者控制項程式碼檔案會在 「 程式碼編輯器 」 中開啟和`Button1_Click`事件處理常式隨即出現。 稍後，您會將程式碼加入這個事件處理常式。
 
@@ -116,11 +116,11 @@ ms.locfileid: "42635228"
 
 4. 取代`Page_Load`方法的`VisualWebPart1`為下列程式碼的類別。 這個程式碼會執行下列工作：
 
-    - 將月份的行事曆檢視加入至使用者控制項。
+   - 將月份的行事曆檢視加入至使用者控制項。
 
-    - 新增站台上的核取方塊，為每個行事曆清單。
+   - 新增站台上的核取方塊，為每個行事曆清單。
 
-    - 行事曆檢視中指定每一種顯示項目的範本。
+   - 行事曆檢視中指定每一種顯示項目的範本。
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

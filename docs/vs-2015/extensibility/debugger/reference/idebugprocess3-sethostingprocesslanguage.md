@@ -17,12 +17,12 @@ ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0d3cad93ea74b4e6ac57a9944855079d6acdf05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d2e80ddf6ccc1b9d90bf85e2915e40adf2b7828
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818220"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

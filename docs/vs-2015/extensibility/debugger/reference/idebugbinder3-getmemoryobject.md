@@ -17,12 +17,12 @@ ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0909998a48de715f85847529d82075a927eb5bb7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ccbded4ef1f8006703afa6bf8d628b701c73588
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821562"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

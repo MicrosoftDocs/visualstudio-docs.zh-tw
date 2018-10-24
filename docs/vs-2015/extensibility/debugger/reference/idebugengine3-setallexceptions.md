@@ -17,12 +17,12 @@ ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e4e616dc4905b60bb28f25b00e5d426bac23358
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 243b34ec96b65058eb1de48967392f0583f7fb1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825461"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

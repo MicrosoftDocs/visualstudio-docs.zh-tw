@@ -16,12 +16,12 @@ ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a2063ec45e7411e958748db6c2710e236a6e643
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 316614d5c7ec46bc76dae05d78429d7f991e32b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827383"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

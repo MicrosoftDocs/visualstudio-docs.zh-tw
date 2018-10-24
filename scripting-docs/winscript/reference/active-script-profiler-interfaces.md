@@ -1,5 +1,5 @@
 ---
-title: 使用中指令碼分析工具的介面 |Microsoft 文件
+title: 動態指令碼 Profiler 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,45 +12,45 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d44edbd0e37ecef3f32f7dc70d55245335bc70e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8532c5f7c490237994332e38b8f6fe97a8235bad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832806"
 ---
 # <a name="active-script-profiler-interfaces"></a>動態指令碼分析工具的介面
-使用中指令碼分析工具的介面可讓您接收從程式碼剖析事件[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎。  
+作用中的指令碼 Profiler 介面可讓您能夠接收從程式碼剖析事件[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎。  
   
- Activprof.h 標頭檔會提供本章節所列的介面。  
+ Activprof.h 標頭檔會提供此節列出的介面。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  下列介面啟用分析：  
   
--   [IActiveScriptProfilerControl 介面](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
+- [IActiveScriptProfilerControl 介面](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
   
--   [IActiveScriptProfilerControl2 介面](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)  
+- [IActiveScriptProfilerControl2 介面](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)  
   
--   [IActiveScriptProfilerControl3 介面](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)  
+- [IActiveScriptProfilerControl3 介面](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)  
   
--   [IActiveScriptProfilerControl5 介面](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)  
+- [IActiveScriptProfilerControl5 介面](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)  
   
--   [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
+- [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
   
--   [IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)  
+- [IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)  
   
--   [IActiveScriptProfilerCallback3 介面](../../winscript/reference/iactivescriptprofilercallback3-interface.md)  
+- [IActiveScriptProfilerCallback3 介面](../../winscript/reference/iactivescriptprofilercallback3-interface.md)  
   
--   [IActiveScriptProfilerHeapEnum 介面](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
+- [IActiveScriptProfilerHeapEnum 介面](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
   
- 下節列出用於分析的列舉型別：  
+  下節列出用於程式碼剖析的列舉型別：  
   
--   [動態指令碼分析工具的常數、列舉和結構](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
+- [動態指令碼分析工具的常數、列舉和結構](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  使用中指令碼分析工具的介面是第一次發行包含 Internet Explorer 8。 `IActiveScriptProfilerControl2`和`IActiveScriptProfilerCallback2`介面第一次釋放與 Internet Explorer 9。 [IActiveScriptProfilerControl3 介面](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)， [IActiveScriptProfilerCallback3 介面](../../winscript/reference/iactivescriptprofilercallback3-interface.md)，和[IActiveScriptProfilerHeapEnum 介面](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)介面都第一次釋放與 Internet Explorer 10。 [IActiveScriptProfilerControl5 介面](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)第一次隨附在 Internet Explorer 11。  
+>  Internet Explorer 8 初次發行時使用中的指令碼 Profiler 介面。 `IActiveScriptProfilerControl2`和`IActiveScriptProfilerCallback2`Internet Explorer 9 初次發行介面。 [IActiveScriptProfilerControl3 介面](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)， [IActiveScriptProfilerCallback3 介面](../../winscript/reference/iactivescriptprofilercallback3-interface.md)，並[IActiveScriptProfilerHeapEnum 介面](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)介面第一次釋放與 Internet Explorer 10。 [IActiveScriptProfilerControl5 介面](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)使用 Internet Explorer 11 首次發行。  
 >   
->  在 Internet Explorer 8 和 Internet Explorer 9 中，只有[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]語言以支援指令碼分析中使用這些介面。  
+>  在 Internet Explorer 8 和 Internet Explorer 9，只有[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]語言以支援指令碼分析會使用這些介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

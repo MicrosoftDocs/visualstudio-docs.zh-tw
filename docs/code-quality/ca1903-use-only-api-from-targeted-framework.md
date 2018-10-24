@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d08cc9d20759796c35f0145e519a27fdb12fdf
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822809"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：只使用來自目標架構的 API
+
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|類別|Microsoft.Portability|
+|分類|Microsoft.Portability|
 |中斷變更|中斷-時引發的外部可見的成員或型別，簽章。<br /><br /> 非分行-時引發的方法主體中。|
 
 ## <a name="cause"></a>原因

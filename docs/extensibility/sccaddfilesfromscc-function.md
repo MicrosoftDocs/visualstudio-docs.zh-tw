@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69262fea4b2d4cc186d6e7137ec505427586778d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b827e1f7e26fb98e9d49de4e9fe2388e46ee07cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831168"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函式
 此函式會將一份檔案從原始檔控制加入至目前開啟的專案。  

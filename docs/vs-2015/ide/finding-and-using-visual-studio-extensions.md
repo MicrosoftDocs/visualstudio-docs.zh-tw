@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831129"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>尋找及使用 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並
 ## <a name="sample-master-copies-and-working-copies"></a>範例主複本與工作複本  
  當您安裝線上範例時，方案會儲存在兩個位置中：  
   
--   工作複本會儲存在您於 [ **新增專案** ] 對話方塊中所指定的位置。  
+- 工作複本會儲存在您於 [ **新增專案** ] 對話方塊中所指定的位置。  
   
--   個別的主複本則會儲存在您的電腦中。  
+- 個別的主複本則會儲存在您的電腦中。  
   
- 您可以使用 [ **擴充功能和更新** ] 對話方塊來執行這些範例相關工作：  
+  您可以使用 [ **擴充功能和更新** ] 對話方塊來執行這些範例相關工作：  
   
--   列出您安裝的範例的主複本。  
+- 列出您安裝的範例的主複本。  
   
--   停用或解除安裝範例的主複本。  
+- 停用或解除安裝範例的主複本。  
   
--   安裝範例套件 (是與某個技術或功能相關的範例集合)。  
+- 安裝範例套件 (是與某個技術或功能相關的範例集合)。  
   
--   安裝個別的線上範例 (您也可以在 [ **新增專案** ] 對話方塊中執行這項作業)。  
+- 安裝個別的線上範例 (您也可以在 [ **新增專案** ] 對話方塊中執行這項作業)。  
   
--   當安裝的範例原始程式碼變更發行時，檢視更新通知。  
+- 當安裝的範例原始程式碼變更發行時，檢視更新通知。  
   
--   當有更新通知時，更新已安裝範例的主複本。  
+- 當有更新通知時，更新已安裝範例的主複本。  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>不使用擴充功能和更新對話方塊安裝擴充功能  
  在 Visual Studio Gallery 以外的位置中，可能也會提供已包裝在 .vsix 檔案中的擴充功能。 雖然 [擴充功能和更新]  對話方塊無法偵測這些檔案，但您可以按兩下該檔案來安裝 .vsix 檔，或選取檔案並按下 Enter 鍵。 接下來只需遵循指示進行。 當擴充功能安裝完成時，您可以使用 [ **擴充功能和更新** ] 對話方塊來啟用、停用或將它解除安裝。  
