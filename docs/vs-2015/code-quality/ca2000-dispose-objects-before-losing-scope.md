@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857857"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：必須在超出範圍前處置物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190875"
   
  在 OpenPort2 方法中，兩個序列連接埠物件會宣告並設定為 null:  
   
--   `tempPort`用來測試方法作業都成功。  
+- `tempPort`用來測試方法作業都成功。  
   
--   `port`它用於方法的傳回值。  
+- `port`它用於方法的傳回值。  
   
- `tempPort`建構，並在中開啟`try`區塊，以及任何其他必要的工作在同一個執行`try`區塊。 在結尾`try`區塊中，開啟的通訊埠指派給`port`會傳回的物件和`tempPort`物件設定為`null`。  
+  `tempPort`建構，並在中開啟`try`區塊，以及任何其他必要的工作在同一個執行`try`區塊。 在結尾`try`區塊中，開啟的通訊埠指派給`port`會傳回的物件和`tempPort`物件設定為`null`。  
   
- `finally`區塊會檢查值`tempPort`。 如果不是 null，此方法中的作業失敗，並`tempPort`關閉以確定會釋放任何資源。 如果方法的作業成功，或如果作業失敗，將會是 null，傳回的連接埠物件將包含開啟的 SerialPort 物件。  
+  `finally`區塊會檢查值`tempPort`。 如果不是 null，此方法中的作業失敗，並`tempPort`關閉以確定會釋放任何資源。 如果方法的作業成功，或如果作業失敗，將會是 null，傳回的連接埠物件將包含開啟的 SerialPort 物件。  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>範例  
  根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器有溢位檢查的所有算術運算子。 因此，任何 Visual Basic 算術運算可能會擲回<xref:System.OverflowException>。 這可能會導致非預期的違規，例如 ca2000 必須在超出規則中。 例如，下列 CreateReader1 函式會產生 ca2000 必須在超出違規，因為 Visual Basic 編譯器發出的溢位檢查可能會擲回例外狀況會導致不是用來處置 StreamReader 加法的指示。  

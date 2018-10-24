@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859664"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行的 C++ 規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "49230871"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>若要從單一的現有規則集建立自訂規則  
   
-1.  在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
+1. 在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
   
-2.  在 **屬性**索引標籤上，選擇**程式碼分析**。  
+2. 在 **屬性**索引標籤上，選擇**程式碼分析**。  
   
-3.  在 **規則集**下拉式清單，請執行下列其中一項：  
+3. 在 **規則集**下拉式清單，請執行下列其中一項：  
   
-    -   選擇您想要自訂的規則集。  
+   - 選擇您想要自訂的規則集。  
   
      \-或-  
   
-    -   選擇**\<瀏覽 >** ，指定現有的規則集不在清單中。  
+   - 選擇**\<瀏覽 >** ，指定現有的規則集不在清單中。  
   
-4.  選擇**開啟**至規則集編輯器中顯示的規則。  
+4. 選擇**開啟**至規則集編輯器中顯示的規則。  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>若要修改規則規則集編輯器中設定  
   

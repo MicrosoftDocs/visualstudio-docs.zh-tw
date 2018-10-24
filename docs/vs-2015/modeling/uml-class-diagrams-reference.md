@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855849"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML 類別圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用�
 ## <a name="reading-class-diagrams"></a>讀取類別圖  
  本節中的表格描述可在 UML 類別圖上看見的項目。 如需這些項目之屬性的詳細資訊，請參閱下列主題：  
   
--   [UML 類別圖表上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [UML 類別圖表上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML 類別圖表上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![三個類別，顯示關聯性和屬性](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![三個類別，顯示關聯性和屬性](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**圖形**|**目**|**描述**|  
-|---------------|-----------------|---------------------|  
-|1|**類別**|共用指定結構和行為特性之物件的定義。 如需詳細資訊，請參閱 < [uml 類型之屬性的類別圖表](../modeling/properties-of-types-on-uml-class-diagrams.md)。|  
-|1|分類器|類別、介面或列舉的一般名稱。 元件、使用案例和行動也屬於分類器。|  
-|2|摺疊/展開控制項|如果您看不見分類器的詳細資料，請按一下分類器左上角的展開器。 您可能還需要按一下每一個區段的 [+]。|  
-|3|**屬性**|附加至每一個分類器執行個體之類型的值。<br /><br /> 若要新增的屬性，按一下**屬性**區段，然後按**ENTER**。 輸入此屬性的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的屬性，在 UML 類別圖](../modeling/properties-of-attributes-on-uml-class-diagrams.md)。|  
-|4|**作業**|分類器的執行個體可執行的方法或函式。 若要新增作業，請按一下**Operations**區段，然後按**ENTER**。 輸入此作業的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的作業，在 UML 類別圖](../modeling/properties-of-operations-on-uml-class-diagrams.md)。|  
-|5|**關聯**|兩個分類器成員之間的關聯性。 如需詳細資訊，請參閱 <<c0> [ 屬性的關聯性，在 UML 類別圖](../modeling/properties-of-associations-on-uml-class-diagrams.md)。|  
-|5a|**彙總**|代表共用擁有權關聯性的關聯。 **彙總**擁有者角色的屬性設定為**共用**。|  
-|5b|**組合**|代表整體與組成部分之間關聯性的關聯。 **彙總**擁有者角色的屬性設定為**複合**。|  
-|6|**關聯名稱**|關聯的名稱。 此名稱可以保持空白。|  
-|7|**角色名稱**|角色的名稱，也就是關聯的一端。 可以用來表示關聯的物件。 在上圖中，對於任何訂單 (Order) `O`，`O.ChosenMenu` 都是其關聯的菜單 (Menu)。<br /><br /> 每一個角色都有自己的屬性，並且列於關聯的屬性下方。|  
-|8|**多重性**|表示這一端有多少物件可以連結到另一端的每一個物件。 在此範例中，每一張訂單都必須剛好連結到一張菜單。<br /><br /> **\*** 表示可將類型的連結數目沒有上限。|  
-|9|**一般化**|*特定*分類器繼承從其定義的一部分*一般*分類器。 一般分類器位於連接器的箭號端。 特定分類器會繼承屬性、關聯和作業。<br /><br /> 使用**繼承**工具來建立兩個分類器之間的一般化。|  
+| **圖形** |       **目**        |                                                                                                                                                             **描述**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |        **類別**         |                                                           共用指定結構和行為特性之物件的定義。 如需詳細資訊，請參閱 < [uml 類型之屬性的類別圖表](../modeling/properties-of-types-on-uml-class-diagrams.md)。                                                            |
+|     1     |        分類器        |                                                                                                             類別、介面或列舉的一般名稱。 元件、使用案例和行動也屬於分類器。                                                                                                             |
+|     2     | 摺疊/展開控制項 |                                                                                         如果您看不見分類器的詳細資料，請按一下分類器左上角的展開器。 您可能還需要按一下每一個區段的 [+]。                                                                                         |
+|     3     |      **屬性**       |   附加至每一個分類器執行個體之類型的值。<br /><br /> 若要新增的屬性，按一下**屬性**區段，然後按**ENTER**。 輸入此屬性的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的屬性，在 UML 類別圖](../modeling/properties-of-attributes-on-uml-class-diagrams.md)。   |
+|     4     |      **作業**       | 分類器的執行個體可執行的方法或函式。 若要新增作業，請按一下**Operations**區段，然後按**ENTER**。 輸入此作業的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的作業，在 UML 類別圖](../modeling/properties-of-operations-on-uml-class-diagrams.md)。 |
+|     5     |     **關聯**      |                                                                  兩個分類器成員之間的關聯性。 如需詳細資訊，請參閱 <<c0> [ 屬性的關聯性，在 UML 類別圖](../modeling/properties-of-associations-on-uml-class-diagrams.md)。                                                                   |
+|    5a     |     **彙總**      |                                                                                                    代表共用擁有權關聯性的關聯。 **彙總**擁有者角色的屬性設定為**共用**。                                                                                                     |
+|    5b     |     **組合**      |                                                                                                      代表整體與組成部分之間關聯性的關聯。 **彙總**擁有者角色的屬性設定為**複合**。                                                                                                      |
+|     6     |   **關聯名稱**   |                                                                                                                                         關聯的名稱。 此名稱可以保持空白。                                                                                                                                          |
+|     7     |      **角色名稱**       |                       角色的名稱，也就是關聯的一端。 可以用來表示關聯的物件。 在上圖中，對於任何訂單 (Order) `O`，`O.ChosenMenu` 都是其關聯的菜單 (Menu)。<br /><br /> 每一個角色都有自己的屬性，並且列於關聯的屬性下方。                       |
+|     8     |     **多重性**     |                                         表示這一端有多少物件可以連結到另一端的每一個物件。 在此範例中，每一張訂單都必須剛好連結到一張菜單。<br /><br /> **\\**\* 表示可將類型的連結數目沒有上限。                                         |
+|     9     |    **一般化**    |  *特定*分類器繼承從其定義的一部分*一般*分類器。 一般分類器位於連接器的箭號端。 特定分類器會繼承屬性、關聯和作業。<br /><br /> 使用**繼承**工具來建立兩個分類器之間的一般化。   |
   
  ![封裝包含介面和列舉](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   
