@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923780"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256980"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後使用每個批次一次執行一個工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。  
   
--   將項目清單分割成批次  
+- 將項目清單分割成批次  
   
--   將數個項目清單分割成批次  
+- 將數個項目清單分割成批次  
   
--   一次批次處理一個項目  
+- 一次批次處理一個項目  
   
--   篩選項目清單  
+- 篩選項目清單  
   
- 如需有關使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 來進行批次處理的詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
+  如需有關使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 來進行批次處理的詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
 ## <a name="dividing-an-item-list-into-batches"></a>將項目清單分割成批次  
  批次處理可讓您根據項目中繼資料，將項目清單分割成不同的批次，然後將每個批次個別傳遞給工作。 這適用於建置附屬組件。  

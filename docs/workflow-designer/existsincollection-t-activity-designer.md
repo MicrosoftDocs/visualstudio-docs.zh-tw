@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853224"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 活動設計工具
 
@@ -38,7 +38,7 @@ ms.locfileid: "47857837"
 下表顯示<xref:System.Activities.Statements.ExistsInCollection%601>內容並描述在設計工具的使用方式：
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 活動的易記名稱。 預設值是 ExistsInCollection < Int32\>。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|要在集合中尋找的項目\<T >。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|集合中要檢查的項目是否存在。 此集合屬於類型**ICollection < TypeArgument\>。** 若要指定集合，請在屬性方格中輸入 Visual Basic 運算式。|

@@ -17,12 +17,12 @@ ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787627ae0bfd5ec682fa7c55f74fb983e937d9da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f5db5c023f5b211a8254460e83869d61c7706e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828852"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

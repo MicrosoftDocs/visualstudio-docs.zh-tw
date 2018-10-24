@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812852"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>做法：在 Visual Studio IDE 中四處移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ ms.locfileid: "49189048"
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>依使用順序移動開啟的檔案  
   
--   若要依最近存取的順序啟動開啟的文件，請按 CTRL + 減號。  
+- 若要依最近存取的順序啟動開啟的文件，請按 CTRL + 減號。  
   
--   若要依相反順序啟動開啟的文件，請按 CTRL + SHIFT + 減號。  
+- 若要依相反順序啟動開啟的文件，請按 CTRL + SHIFT + 減號。  
   
-    > [!NOTE]
-    >  [向後巡覽] 和 [向前巡覽] 位於 [檢視] 功能表中。  
+  > [!NOTE]
+  >  [向後巡覽] 和 [向前巡覽] 位於 [檢視] 功能表中。  
   
- 您亦可使用 [IDE 瀏覽器]、編輯器的 [使用中的檔案] 清單或 [Windows] 對話方塊，切換至編輯器中已開啟的特定檔案而忽略上次存取檔案的時間。  
+  您亦可使用 [IDE 瀏覽器]、編輯器的 [使用中的檔案] 清單或 [Windows] 對話方塊，切換至編輯器中已開啟的特定檔案而忽略上次存取檔案的時間。  
   
- [IDE 瀏覽器] 運作方式十分類似 Windows 應用程式切換器。 其僅可使用快速鍵來存取，而無法透過功能表使用。 您可使用兩個命令存取 [IDE 瀏覽器]\(如下所示)，以依據所需的循環瀏覽順序，循環瀏覽檔案。  
+  [IDE 瀏覽器] 運作方式十分類似 Windows 應用程式切換器。 其僅可使用快速鍵來存取，而無法透過功能表使用。 您可使用兩個命令存取 [IDE 瀏覽器]\(如下所示)，以依據所需的循環瀏覽順序，循環瀏覽檔案。  
   
- ![Visual Studio IDE 導覽器](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Visual Studio IDE 導覽器](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` 可讓您移至最近存取的檔案，並`Window.NextDocumentWindowNav`可讓您依相反順序移動。 「一般開發設定」會將 CTRL + SHIFT + TAB 指派至 `Window.PreviousDocumentWindowNav`，並將 CTRL + TAB 指派至 `Window.NextDocumentWindowNav`。  
+  `Window.PreviousDocumentWindowNav` 可讓您移至最近存取的檔案，並`Window.NextDocumentWindowNav`可讓您依相反順序移動。 「一般開發設定」會將 CTRL + SHIFT + TAB 指派至 `Window.PreviousDocumentWindowNav`，並將 CTRL + TAB 指派至 `Window.NextDocumentWindowNav`。  
   
 > [!NOTE]
 >  若您使用的設定組合尚未將快速鍵組合指派至此命令，您可使用 [選項] 對話方塊的 [鍵盤] 頁面，指派專屬的自訂命令。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  

@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830583"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法的結果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250103"
 ## <a name="cause"></a>原因  
  有數個可能的原因，這個警告：  
   
--   已建立新的物件，但從未使用過。  
+- 已建立新的物件，但從未使用過。  
   
--   呼叫的方法，建立並傳回新字串，以及新字串從未使用過。  
+- 呼叫的方法，建立並傳回新字串，以及新字串從未使用過。  
   
--   COM 或 P/Invoke 方法會傳回 HRESULT 或錯誤碼的程式碼，不會用到。 規則描述  
+- COM 或 P/Invoke 方法會傳回 HRESULT 或錯誤碼的程式碼，不會用到。 規則描述  
   
- 建立不必要的物件和未使用的物件相關聯的記憶體回收集合會降低效能。  
+  建立不必要的物件和未使用的物件相關聯的記憶體回收集合會降低效能。  
   
- 字串是不變，例如 String.ToUpper 方法會傳回字串而非修改字串呼叫方法中的執行個體的新執行個體。  
+  字串是不變，例如 String.ToUpper 方法會傳回字串而非修改字串呼叫方法中的執行個體的新執行個體。  
   
- 忽略 HRESULT 或錯誤碼可能會導致非預期的行為，在錯誤條件或資源不足狀況。  
+  忽略 HRESULT 或錯誤碼可能會導致非預期的行為，在錯誤條件或資源不足狀況。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  如果方法的建立從未使用過的 B 物件的新執行個體，將執行個體做為引數傳遞給另一個方法，或指派給變數的執行個體。 如果不需要建立的物件，將它移除。-或-  

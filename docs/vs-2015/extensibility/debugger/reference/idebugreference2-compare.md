@@ -17,12 +17,12 @@ ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 324b15116cd82ab0be3915a21a3ec018ba08bfbb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee8371217f36229231a54e36c3b1799ba2152170
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925132"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

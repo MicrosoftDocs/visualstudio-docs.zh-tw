@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05fe4ee4394efd0d6784b9ff0dd87eab6f8ecbf1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5bbc06ba777939857876221a2796eef6786ec44c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928005"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並排顯示檔案關聯
 如果 VSPackage 提供的檔案關聯，您必須決定如何處理在其中的並排顯示安裝特定版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該叫用它來開啟檔案。 不相容的檔案格式複合問題。  
@@ -33,46 +33,46 @@ ms.locfileid: "39638771"
 ## <a name="face-the-problem"></a>問題  
  如果您想要使用同一個延伸模組的多個並排顯示 Vspackage，您必須選擇的新版[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]與延伸模組相關聯。 以下是兩個替代方案：  
   
--   開啟檔案中的最新版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用者的電腦上安裝。  
+- 開啟檔案中的最新版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用者的電腦上安裝。  
   
-     在此方法中，您的安裝程式會負責判斷最新版的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]並納入，撰寫的檔案關聯的登錄項目中。 您可以在 Windows Installer 封裝時，包含要設定此屬性，指出最新版的自訂動作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+   在此方法中，您的安裝程式會負責判斷最新版的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]並納入，撰寫的檔案關聯的登錄項目中。 您可以在 Windows Installer 封裝時，包含要設定此屬性，指出最新版的自訂動作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-    > [!NOTE]
-    >  在此情況下，「 最新 」 表示 「 最新支援的版本。 」 這些安裝程式項目將不會自動偵測的後續版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 中的項目[偵測系統需求](../extensibility/internals/detecting-system-requirements.md)然後在[命令，必須是執行安裝後](../extensibility/internals/commands-that-must-be-run-after-installation.md)類似於此處所提供的項目，支援的其他版本所需[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+  > [!NOTE]
+  >  在此情況下，「 最新 」 表示 「 最新支援的版本。 」 這些安裝程式項目將不會自動偵測的後續版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 中的項目[偵測系統需求](../extensibility/internals/detecting-system-requirements.md)然後在[命令，必須是執行安裝後](../extensibility/internals/commands-that-must-be-run-after-installation.md)類似於此處所提供的項目，支援的其他版本所需[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-     下列資料表中的資料列 CustomAction DEVENV_EXE_LATEST 屬性設定 AppSearch 所設定的屬性，並 RegLocator 資料表所述[必須在安裝後執行的命令](../extensibility/internals/commands-that-must-be-run-after-installation.md)。 InstallExecuteSequence 資料表中的資料列來排程執行順序在早期的自訂動作。 條件資料行進行邏輯工作中的值：  
+   下列資料表中的資料列 CustomAction DEVENV_EXE_LATEST 屬性設定 AppSearch 所設定的屬性，並 RegLocator 資料表所述[必須在安裝後執行的命令](../extensibility/internals/commands-that-must-be-run-after-installation.md)。 InstallExecuteSequence 資料表中的資料列來排程執行順序在早期的自訂動作。 條件資料行進行邏輯工作中的值：  
   
-    -   Visual Studio.NET 2002年是最新版本，如果它是僅有的版本。  
+  - Visual Studio.NET 2002年是最新版本，如果它是僅有的版本。  
   
-    -   Visual Studio.NET 2003年是最新版本，只有當存在和[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]不存在。  
+  - Visual Studio.NET 2003年是最新版本，只有當存在和[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]不存在。  
   
-    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如果它是僅有的版本，則是最新版本。  
+  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如果它是僅有的版本，則是最新版本。  
   
-     最終結果是 devenv.exe 的 DEVENV_EXE_LATEST 包含最新版本的路徑。  
+    最終結果是 devenv.exe 的 DEVENV_EXE_LATEST 包含最新版本的路徑。  
   
-    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>判斷最新版本的 Visual Studio 的 CustomAction 資料表資料列  
+  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>判斷最新版本的 Visual Studio 的 CustomAction 資料表資料列  
   
-    |動作|類型|原始程式檔|目標|  
-    |------------|----------|------------|------------|  
-    |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
-    |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
-    |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
+  |動作|類型|原始程式檔|目標|  
+  |------------|----------|------------|------------|  
+  |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
+  |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
+  |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
   
-    ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>判斷最新版本的 Visual Studio 的 InstallExecuteSequence 資料表資料列  
+  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>判斷最新版本的 Visual Studio 的 InstallExecuteSequence 資料表資料列  
   
-    |動作|條件|序列|  
-    |------------|---------------|--------------|  
-    |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 和 NOT （DEVENV_EXE_2003 或 DEVENV_EXE_2005）|410|  
-    |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 和不 DEVENV_EXE_2005|420|  
-    |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
+  |動作|條件|序列|  
+  |------------|---------------|--------------|  
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 和 NOT （DEVENV_EXE_2003 或 DEVENV_EXE_2005）|410|  
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 和不 DEVENV_EXE_2005|420|  
+  |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
-     您可以使用 DEVENV_EXE_LATEST 屬性中的 Windows 安裝程式套件登錄寫入**HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand**索引鍵的預設值，[DEVENV_EXE_LATEST]"%1"  
+   您可以使用 DEVENV_EXE_LATEST 屬性中的 Windows 安裝程式套件登錄寫入**HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand**索引鍵的預設值，[DEVENV_EXE_LATEST]"%1"  
   
--   執行共用的啟動器程式，可讓來自可用 VSPackage 版本的最佳選擇。  
+- 執行共用的啟動器程式，可讓來自可用 VSPackage 版本的最佳選擇。  
   
-     開發人員[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]選擇這個方法來處理複雜需求的方案和專案所產生的許多版本的多個格式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這種方法中，您可以註冊啟動器程式做為延伸模組處理常式。 啟動器會檢查檔案，並決定哪個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和 VSPackage 可以處理該特定的檔案。 比方說，如果使用者開啟 naposledy uložil VSPackage 的特定版本的檔案，啟動器可以啟動該 VSPackage 中的相符版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此外，使用者可以設定永遠啟動的最新版本的啟動程式。 啟動程式也可能會提示使用者進行升級的檔案格式。 如果檔案的格式包含版本號碼，啟動器可以通知使用者，如果檔案格式是從版本晚於一或多個已安裝的 Vspackage。  
+   開發人員[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]選擇這個方法來處理複雜需求的方案和專案所產生的許多版本的多個格式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這種方法中，您可以註冊啟動器程式做為延伸模組處理常式。 啟動器會檢查檔案，並決定哪個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和 VSPackage 可以處理該特定的檔案。 比方說，如果使用者開啟 naposledy uložil VSPackage 的特定版本的檔案，啟動器可以啟動該 VSPackage 中的相符版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此外，使用者可以設定永遠啟動的最新版本的啟動程式。 啟動程式也可能會提示使用者進行升級的檔案格式。 如果檔案的格式包含版本號碼，啟動器可以通知使用者，如果檔案格式是從版本晚於一或多個已安裝的 Vspackage。  
   
-     啟動程式應該在共用的 VSPackage 的所有版本的 Windows 安裝程式元件。 此程序可確保永遠都會安裝最新版本，和所有版本的 VSPackage 會解除都安裝之前，不會移除項目。 如此一來，檔案關聯和啟動程式元件的其他登錄項目會保留即使解除安裝一個版本的 VSPackage。  
+   啟動程式應該在共用的 VSPackage 的所有版本的 Windows 安裝程式元件。 此程序可確保永遠都會安裝最新版本，和所有版本的 VSPackage 會解除都安裝之前，不會移除項目。 如此一來，檔案關聯和啟動程式元件的其他登錄項目會保留即使解除安裝一個版本的 VSPackage。  
   
 ## <a name="uninstall-and-file-associations"></a>解除安裝與檔案關聯  
  解除安裝 VSPackage 可寫入的檔案關聯的登錄項目中移除的檔案關聯。 因此，擴充功能會有任何相關聯的程式。 Windows 安裝程式不會 「 修復 」 安裝 VSPackage 時新增的登錄項目。 以下是一些修正使用者的檔案關聯的方法：  

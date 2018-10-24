@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926185"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -34,7 +34,7 @@ ms.locfileid: "42626028"
  下列章節會提供有關不同語言之運算式的詳細資料。  
   
 ## <a name="f-expressions-are-not-supported"></a>不支援 F# 運算式  
- 無法辨識 F # 運算式。 如果您正在偵錯 F # 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F # 使用單一 `=`。  
+ 無法辨識 F# 運算式。 如果您正在偵錯 F# 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F# 使用單一 `=`。  
   
 ## <a name="c-expressions"></a>C++ 運算式  
  如需 C++ 中，在運算式中使用內容運算子的相關資訊，請參閱 [Context Operator (C++)](../debugger/context-operator-cpp.md)。  
@@ -91,13 +91,13 @@ int main()
   
  偵錯工具內建函式：  
   
--   保證是安全的：執行偵錯工具內建函式不會損毀要進行偵錯的處理序。  
+- 保證是安全的：執行偵錯工具內建函式不會損毀要進行偵錯的處理序。  
   
--   所有運算式中都可使用，即使是在不允許副作用和函式評估的情節中。  
+- 所有運算式中都可使用，即使是在不允許副作用和函式評估的情節中。  
   
--   能夠在無法進行一般函式呼叫的情節中使用，例如對小型傾印進行偵錯。  
+- 能夠在無法進行一般函式呼叫的情節中使用，例如對小型傾印進行偵錯。  
   
- 偵錯工具內建函式還可以讓運算式評估更方便。 例如，在中斷點條件中撰寫 `strncmp(str, "asd")` 比撰寫 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更容易。 )  
+  偵錯工具內建函式還可以讓運算式評估更方便。 例如，在中斷點條件中撰寫 `strncmp(str, "asd")` 比撰寫 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更容易。 )  
   
 |區域|內建函式|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
- 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當物件實作<xref:System.Dynamic.IDynamicMetaObjectProvider>評估監看式視窗中，節點會加入 動態檢視。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
+ 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
   
  以下是不支援的動態物件功能：  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>另請參閱  
  [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
- [內容運算子 （c + +）](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)

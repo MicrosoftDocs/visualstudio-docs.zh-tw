@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915551"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 提供的命令資料表編譯器結構描述項目，允許的子系項目和屬性每個。  
@@ -36,11 +36,11 @@ ms.locfileid: "39586830"
   
  使用符號名稱，必須定義所有的 GUID 和 ID 值。 可能會定義這些名稱，在標頭檔或 VSCT\<符號 > 區段。 符號名稱必須是本機路徑，包含透過\<Include > 項目，或所參考\<Extern > 項目。 符號名稱從檔案匯入標頭中指定\<Extern > 如果它遵循簡單的模式的項目 #define 符號值。 值可以是另一個符號，只要該符號已定義過。 GUID 定義必須遵循 OLE 或 c + + 格式。 識別碼值可能是十進位數字或會加上 0 x 的十六進位數字，下列幾行中所示：  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634 0xe53d、 0x4a2c，{0xad、 0xcb，0x55、 0x14，0x5c、 0x93，0x62，0xc8 建立}}  
+- {0x6d484634 0xe53d、 0x4a2c，{0xad、 0xcb，0x55、 0x14，0x5c、 0x93，0x62，0xc8 建立}}  
   
- 可能會使用 XML 註解，但是反覆存取的圖形化使用者介面 (GUI) 工具可能會捨棄它們。 內容\<註釋 > 項目保證維持不論格式為何。  
+  可能會使用 XML 註解，但是反覆存取的圖形化使用者介面 (GUI) 工具可能會捨棄它們。 內容\<註釋 > 項目保證維持不論格式為何。  
   
 ## <a name="schema-hierarchy"></a>結構描述階層  
  .Vsct 檔案具有下列主要項目。  

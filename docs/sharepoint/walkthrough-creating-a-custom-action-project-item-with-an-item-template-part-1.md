@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878059"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。  
   
  本逐步解說將示範下列工作：  
   
--   建立 Visual Studio 擴充功能定義新類型的自訂動作的 SharePoint 專案項目。 新的專案項目類型會實作數個自訂的功能︰  
+- 建立 Visual Studio 擴充功能定義新類型的自訂動作的 SharePoint 專案項目。 新的專案項目類型會實作數個自訂的功能︰  
   
-    -   做為起點的專案項目，例如在 Visual Studio 中顯示自訂動作的設計工具相關的其他工作的捷徑功能表。  
+  -   做為起點的專案項目，例如在 Visual Studio 中顯示自訂動作的設計工具相關的其他工作的捷徑功能表。  
   
-    -   開發人員變更特定屬性的專案項目和包含它的專案時執行的程式碼。  
+  -   開發人員變更特定屬性的專案項目和包含它的專案時執行的程式碼。  
   
-    -   中的專案項目旁邊會出現自訂圖示**方案總管 中**。  
+  -   中的專案項目旁邊會出現自訂圖示**方案總管 中**。  
   
--   建立 Visual Studio 項目範本的專案項目。  
+- 建立 Visual Studio 項目範本的專案項目。  
   
--   建置 Visual Studio 擴充功能 (VSIX) 封裝來部署專案項目範本和延伸模組組件。  
+- 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署專案項目範本和延伸模組組件。  
   
--   偵錯和測試的專案項目。  
+- 偵錯和測試的專案項目。  
   
- 這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
+  這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
 > [!NOTE]  
 >  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。  
@@ -52,26 +52,26 @@ ms.locfileid: "42635326"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
+- 在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
--   在 Visual Studio 中的項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
+- 在 Visual Studio 中的項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
   
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您需要建立三個專案：  
   
--   VSIX 專案。 此專案建立 VSIX 封裝部署的 SharePoint 專案項目。  
+- VSIX 專案。 此專案建立 VSIX 封裝部署的 SharePoint 專案項目。  
   
--   專案的項目範本。 此專案會建立可用來將 SharePoint 專案項目新增至 SharePoint 專案項目範本。  
+- 專案的項目範本。 此專案會建立可用來將 SharePoint 專案項目新增至 SharePoint 專案項目範本。  
   
--   類別庫專案。 此專案會實作 Visual Studio 擴充功能可定義 SharePoint 專案項目的行為。  
+- 類別庫專案。 此專案會實作 Visual Studio 擴充功能可定義 SharePoint 專案項目的行為。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   

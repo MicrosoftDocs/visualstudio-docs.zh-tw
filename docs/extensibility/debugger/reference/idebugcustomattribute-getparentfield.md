@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField |Microsoft 文件
+title: IDebugCustomAttribute::GetParentField |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e80a29d9d73f26a1394d40cf6625e36b279f53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a0fe53b32b3aa36ae91f024d4764f4f1419a76e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927329"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 取得要附加自訂屬性的欄位。  
@@ -41,13 +41,13 @@ int GetParentField(
   
 #### <a name="parameters"></a>參數  
  `ppField`  
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表要附加自訂屬性的欄位。  
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法在傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位父物件。  
+ 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位的父物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   

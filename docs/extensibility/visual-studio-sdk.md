@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906022"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Studio 的新功能。 您可以散發給其他使用者，以及 Visual Studio Marketplace 延伸模組。 下列是一些可擴充 Visual Studio 的方法：  
   
--   將命令、 按鈕、 功能表和其他 UI 項目加入 IDE  
+- 將命令、 按鈕、 功能表和其他 UI 項目加入 IDE  
   
--   加入新功能的工具視窗  
+- 加入新功能的工具視窗  
   
--   將 IntelliSense 擴充指定的語言，或提供 IntelliSense 對新的程式設計語言  
+- 將 IntelliSense 擴充指定的語言，或提供 IntelliSense 對新的程式設計語言  
   
--   使用燈泡來提供提示與建議，協助開發人員撰寫更好的程式碼  
+- 使用燈泡來提供提示與建議，協助開發人員撰寫更好的程式碼  
   
--   啟用新語言的支援  
+- 啟用新語言的支援  
   
--   加入自訂的專案類型  
+- 加入自訂的專案類型  
   
--   接觸上百萬名開發人員從 Visual Studio marketplace  
+- 接觸上百萬名開發人員從 Visual Studio marketplace  
   
- 如果您從未撰寫過 Visual Studio 擴充功能之前，您應該會發現這些功能以及在詳細資訊[開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
+  如果您從未撰寫過 Visual Studio 擴充功能之前，您應該會發現這些功能以及在詳細資訊[開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
   
 ## <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE  
  Visual Studio SDK 是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
