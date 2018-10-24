@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510997"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854896"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -36,23 +36,23 @@ ms.locfileid: "39510997"
 
    - C#: 
 
-    ![醒目提示的程式碼 C#](media/local-highlight-cs.png)
+       ![醒目提示的程式碼 C#](media/local-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 VB](media/local-highlight-vb.png)
+       ![醒目提示的程式碼 VB](media/local-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
    ![「引進區域」預覽](media/local-preview-cs.png)
 
-1. 從下拉功能表選取 [為 '*expression*' (的所有出現之處) 引進區域]。
+3. 從下拉功能表選取 [為 '*expression*' (的所有出現之處) 引進區域]。
 
    > [!TIP]
    > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
@@ -61,11 +61,11 @@ ms.locfileid: "39510997"
 
    - C#: 
 
-      ![實作介面結果 C#](media/local-result-cs.png)
+       ![實作介面結果 C#](media/local-result-cs.png)
 
    - Visual Basic：
 
-      ![實作介面結果 VB](media/local-result-vb.png)
+       ![實作介面結果 VB](media/local-result-vb.png)
 
    > [!NOTE]
    > 您可以使用 [...所有出現之處...] 功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942370"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義的文字裝飾項目時，它被以文字欄位。 例如 TextFields 和其他 ShapeFields 初始化的詳細資訊，請在您的 DSL 方案中檢查 Dsl\GeneratedCode\Shapes.cs。
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  有數個其他組`Get`方法和`Default`屬性，例如`DefaultMultipleLine/GetMultipleLine()`。 您可以將值指派給預設屬性，變更形狀欄位的所有執行個體的值。 若要讓另一個，或依賴的圖形或其模型項目狀態會因一個圖形的執行個體的值，覆寫`Get`方法。
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>動態的自訂項目
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>樣式設定
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>另請參閱

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Findchildren |Microsoft 文件'
+title: 'Idiasymbol:: Findchildren |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042b02bda59bf064897b0badb24394fc10fb9197
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 107770d880a6ceae9cf58b3c56821c8077dfd272
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941343"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
-擷取符號的子系。  
+擷取之符號的子系。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,19 +37,19 @@ HRESULT findChildren (
   
 #### <a name="parameters"></a>參數  
  `symtag`  
- [in]指定要擷取的子系的符號標記中所定義[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)。 設定為`SymTagNull`要擷取的所有子系。  
+ [in]指定要擷取的子系的符號標記中定義[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)。 若要設定`SymTagNull`要擷取的所有子系。  
   
  `name`  
- [in]指定要擷取的子系的名稱。 設定為`NULL`要擷取的所有子系。  
+ [in]指定要擷取的子系的名稱。 若要設定`NULL`要擷取的所有子系。  
   
  `compareFlags`  
- [in]指定套用至名稱比對的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉型別可以單獨或合併使用。  
+ [in]指定比較選項套用至對應的名稱。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。  
   
  `ppResult`  
- [out]傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)擷取物件，包含子符號清單。  
+ [out]傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)擷取物件，其中包含一份子符號。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`符號的至少一個子系已找到，則會傳回`S_FALSE`如果找不到沒有子系; 否則會傳回錯誤碼。  
+ 會傳回`S_OK`如果找不到，至少一個子系的符號，或是傳回`S_FALSE`如果找不到任何子系; 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  這個方法相當於呼叫[idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)完成這個符號的第一個參數的方法。  

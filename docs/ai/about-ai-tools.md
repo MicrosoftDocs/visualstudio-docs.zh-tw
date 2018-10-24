@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 43411be41acf2e5bd2e40131dd06bf817bf87a38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31046221"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459688"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -28,19 +28,19 @@ Visual Studio Tools for AI 是建置、測試及部署深度學習/ AI 解決方
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>開發、偵錯及部署深度學習模型和 AI 解決方案
 立即使用 Visual Studio 的生產力功能，來加速 AI 創新。 使用內建程式碼編輯器功能，例如語法醒目顯示、IntelliSense 和文字自動格式化。 您可以透過逐步偵錯區域變數和模型，以互動方式來測試您本機環境中的深度學習應用程式。
 
-![深度學習 IDE](media\about\ide.png)
+![深度學習 IDE](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>快速開始使用 Azure Machine Learning 範例庫
 Visual Studio Tools for AI 與 Azure Machine Learning 整合，讓您輕鬆瀏覽使用 CNTK、TensorFlow、MMLSpark 等的實驗範例庫。
 
-![範例總管](media\about\gallery.png)
+![範例總管](media/about/gallery.png)
 
 [深入了解如何從範例庫建立專案](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>將深度學習模型定型及/或推斷擴充到雲端
 此延伸模組可讓您輕鬆定型本機電腦上的模型，或利用我們與 Azure Machine Learning 的整合將作業提交至雲端。 您可以將作業提交至 Spark 叢集、Azure GPU 虛擬機器等不同計算目標
 
-![提交作業](media\about\submitjobs.png)
+![提交作業](media/about/submitjobs.png)
 
 [深入了解雲端中的定型模型](tensorflow-vm.md)
 

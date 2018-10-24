@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach |Microsoft 文件
+title: IDebugProcess2::CanDetach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49cc87352c3869fd8a954457ad14ec1486b4198
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23a4ec112c33100a2eed8e4853f5a6280a741e12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942136"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-決定是否工作階段的偵錯管理員 (SDM) 可以卸離程序。  
+判斷工作階段的偵錯管理員 (SDM) 可以中斷連結程序。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,7 +38,7 @@ int CanDetach();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK.`傳回`S_FALSE`如果偵錯工具無法從處理序中斷連結。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK.`傳回`S_FALSE`如果偵錯工具無法從處理序中斷連結。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   

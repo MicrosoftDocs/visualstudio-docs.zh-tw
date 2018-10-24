@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949304"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
@@ -49,28 +49,28 @@ ms.locfileid: "39381103"
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
 
-     [新增專案] 對話方塊隨即出現。
+    [新增專案] 對話方塊隨即出現。
 
-2.  展開 [已安裝的範本] 底下的 [其他專案類型]，然後選取 [擴充性]。
+2. 展開 [已安裝的範本] 底下的 [其他專案類型]，然後選取 [擴充性]。
 
-3.  在範本的清單中，選取 [Visual Studio 增益集]。
+3. 在範本的清單中，選取 [Visual Studio 增益集]。
 
-4.  在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerAddin**。
+4. 在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerAddin**。
 
-5.  選擇 [確定] 。
+5. 選擇 [確定] 。
 
-     Visual Studio [增益集精靈] 隨即啟動。
+    Visual Studio [增益集精靈] 隨即啟動。
 
-6.  選擇 [下一步]。
+6. 選擇 [下一步]。
 
-7.  在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
+7. 在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
 
-    > [!NOTE]
-    > 本主題將針對範例程式碼使用 Visual C#。
+   > [!NOTE]
+   > 本主題將針對範例程式碼使用 Visual C#。
 
-8.  在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
+8. 在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
 
 9. 選擇 [下一步]。
 
@@ -96,18 +96,18 @@ ms.locfileid: "39381103"
 
      完成下列程序之後，您會將程式碼加入至 *Connect.cs* 檔案，以便建立這個 WebPerfTestResultsViewerAddin 專案所參考的使用者控制項。
 
- 建立增益集之後，您必須先將向 Visual Studio 註冊，才能在 [增益集管理員] 中啟動該增益集。 使用具有 *.addin* 副檔名的 XML 檔，即可完成這項作業。
+    建立增益集之後，您必須先將向 Visual Studio 註冊，才能在 [增益集管理員] 中啟動該增益集。 使用具有 *.addin* 副檔名的 XML 檔，即可完成這項作業。
 
- *.addin* 檔案會描述 Visual Studio 將增益集顯示在 [增益集管理員] 中所需的資訊。 當 Visual Studio 啟動時，它會查看 *.addin* 檔案位置，以尋找可用的 *.addin* 檔案。 如果找到檔案，就會讀取 XML 檔案，並將按一下以啟動增益集時所需的資訊提供給 [增益集管理員]。
+    *.addin* 檔案會描述 Visual Studio 將增益集顯示在 [增益集管理員] 中所需的資訊。 當 Visual Studio 啟動時，它會查看 *.addin* 檔案位置，以尋找可用的 *.addin* 檔案。 如果找到檔案，就會讀取 XML 檔案，並將按一下以啟動增益集時所需的資訊提供給 [增益集管理員]。
 
- 使用 [增益集精靈] 建立增益集時，會自動建立 *.addin* 檔案。
+    使用 [增益集精靈] 建立增益集時，會自動建立 *.addin* 檔案。
 
 ### <a name="add-in-file-locations"></a>增益集檔案位置
 
 [增益集精靈] 會自動建立兩個 *.addin* 檔案的複本，如下所示：
 
 |**.Addin 檔案位置**|**描述**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |根專案資料夾|用來部署增益集專案。 包含在專案中以便輕鬆編輯，而且具有 XCopy 部署方式的本機路徑。|
 |增益集資料夾|用來在偵錯環境中執行增益集。 必須指向目前組建組態的輸出路徑。|
 

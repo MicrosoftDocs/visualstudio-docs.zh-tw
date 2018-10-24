@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918879"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
 Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。  
@@ -28,19 +28,19 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 ## <a name="collect-network-tool-data"></a>收集網路工具資料  
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路] 工具。  
   
-1.  在 Visual Studio 中開啟專案。  
+1. 在 Visual Studio 中開啟專案。  
   
-2.  在功能表上，按一下 [偵錯/效能分析工具]。 選擇 [網路]，然後選擇 [啟動]。  
+2. 在功能表上，按一下 [偵錯/效能分析工具]。 選擇 [網路]，然後選擇 [啟動]。  
   
-3.  網路工具會開始收集您應用程式的 HTTP 流量。  
+3. 網路工具會開始收集您應用程式的 HTTP 流量。  
   
-     執行應用程式時，在左窗格中的摘要檢視會自動顯示擷取的 HTTP 作業清單。 在摘要檢視上選取項目，來檢視在右窗格詳細資料面板中的詳細資訊。  
+    執行應用程式時，在左窗格中的摘要檢視會自動顯示擷取的 HTTP 作業清單。 在摘要檢視上選取項目，來檢視在右窗格詳細資料面板中的詳細資訊。  
   
-4.  選擇 [停止] 以關閉應用程式。  
+4. 選擇 [停止] 以關閉應用程式。  
   
- 報表視窗應該會類似這樣：  
+   報表視窗應該會類似這樣：  
   
- ![[網路] 視窗](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![[網路] 視窗](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>分析資料  
  無論您的應用程式正在執行，或甚至在關閉之後，透過選取任何顯示在摘要檢視上的網路作業，即可分析擷取的 HTTP 流量。  

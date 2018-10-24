@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950972"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>如何：自訂類別圖表 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ ms.locfileid: "49296175"
   
 ##  <a name="DisplayAssociationAndInheritance"></a> 顯示隱藏的關聯性  
   
-1.  在 [類別設計工具] 中，開啟並選取類別圖檔案。  
+1. 在 [類別設計工具] 中，開啟並選取類別圖檔案。  
   
-2.  以滑鼠右鍵按一下含有關聯線或繼承線的類型。  
+2. 以滑鼠右鍵按一下含有關聯線或繼承線的類型。  
   
- 對關聯線按一下 [顯示所有成員]，對繼承線則按一下 [顯示基底類別] 或 [顯示衍生類別]。  
+   對關聯線按一下 [顯示所有成員]，對繼承線則按一下 [顯示基底類別] 或 [顯示衍生類別]。  
   
 ##  <a name="RemoveCodeAndShape"></a> 從類別圖表移除圖形  
  您可以從類別圖移除類型圖形，而不會影響類型的基礎程式碼。 從類別圖移除類型圖案只會影響該圖表：定義類型的基礎程式碼以及顯示類型的其他圖表不受影響。  

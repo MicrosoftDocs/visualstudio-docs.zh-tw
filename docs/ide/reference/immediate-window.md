@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942994"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [即時運算] 視窗用來偵錯和評估運算式、執行陳述式、列印變數值等等。 它可讓您在偵錯期間，輸入開發語言要評估或執行的運算式。 若要顯示 [即時運算] 視中，請開啟專案以進行編輯，然後從 [偵錯] 功能表中選擇 [視窗]，並選取 [即時運算]，或按 CTRL+ALT+I。
@@ -54,27 +54,27 @@ ms.locfileid: "39177694"
 
 #### <a name="to-execute-a-function-at-design-time"></a>在設計階段執行函式
 
-1.  將下列程式碼複製到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 主控台應用程式中：
+1. 將下列程式碼複製到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 主控台應用程式中：
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  在 [偵錯] 功能表上，按一下 [視窗]，然後按一下 [即時運算]。
+2. 在 [偵錯] 功能表上，按一下 [視窗]，然後按一下 [即時運算]。
 
-3.  在 [即時運算] 視窗中鍵入`?MyFunction(2)`，然後按 Enter。
+3. 在 [即時運算] 視窗中鍵入`?MyFunction(2)`，然後按 Enter。
 
-     [即時運算] 視窗將執行 `MyFunction`，並顯示 `4`。
+    [即時運算] 視窗將執行 `MyFunction`，並顯示 `4`。
 
 如果函式或副程式含有中斷點，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱[逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)。
 
@@ -124,12 +124,12 @@ ms.locfileid: "39177694"
 
 2.  以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)
 - [偵錯工具基礎](../../debugger/getting-started-with-the-debugger.md)
 - [逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)

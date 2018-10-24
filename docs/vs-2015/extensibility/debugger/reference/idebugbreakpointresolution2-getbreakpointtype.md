@@ -17,12 +17,12 @@ ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3afe1d78e247fc55e5b6f80c9d5f38be37bc29dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd2e4ef5ef8c5c6dce1a0636bc45229e234f6067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950286"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

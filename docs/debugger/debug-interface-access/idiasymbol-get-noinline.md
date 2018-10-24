@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_noinline |Microsoft 文件'
+title: 'Idiasymbol:: Get_noinline |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3089477e49ad1793bbe5b6aa403bf7a8fef149
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 24864562d11267cfc96bd3b3622864275eaecea2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950104"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-擷取指定函式是否已標示為不內嵌的旗標 (使用[noinline](/cpp/cpp/noinline)屬性)。  
+擷取指定的函式是否已標示為不在內嵌的旗標 (使用[noinline](/cpp/cpp/noinline)屬性)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,20 +34,20 @@ HRESULT get_noInline(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]傳回`TRUE`如果函式`noinline`屬性; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`函式是否`noinline`屬性，否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|版本:|DIA SDK 8.0 版|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

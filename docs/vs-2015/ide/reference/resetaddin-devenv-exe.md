@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df5fe62efd783551a483853543ddb30312e64c65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1b53a30845ca4b20372fb5a6e3552f31f3c1b60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950520"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_libraryname |Microsoft 文件'
+title: 'Idiasymbol:: Get_libraryname |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 631104cb6328b715f18b7afd564a627f275a503d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d290849d4bf0dd07f53f60060623d457e4146de4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951154"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-擷取的文件庫或物件檔案載入物件的檔案名稱。  
+擷取要從中載入物件的文件庫或物件檔案的檔案名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_libraryName (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回文件庫或物件檔案載入物件的檔案名稱。  
+ [out]傳回從中載入物件的文件庫或物件檔案的檔案名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

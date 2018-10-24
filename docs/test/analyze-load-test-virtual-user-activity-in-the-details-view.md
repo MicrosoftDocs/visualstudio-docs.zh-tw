@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ab42b66fca32dc5325ce0cb4d78fbb53df8b90f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840632"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -54,7 +54,7 @@ ms.locfileid: "36233791"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-|
 |**設定負載測試以使用虛擬使用者活動圖：** 您必須先設定負載測試屬性設定，才能執行要檢視其虛擬使用者活動資料的負載測試。|-   [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**執行負載測試：** 建立負載測試並設定為啟用虛擬使用者活動資料收集之後，您必須執行測試，直到測試完成才能檢視 [虛擬使用者活動圖]。||
 |**檢視其中包含虛擬使用者活動資料的負載測試結果：** 建立、設定以及完成執行負載測試之後，您可以使用 [虛擬使用者活動圖] 檢視虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|

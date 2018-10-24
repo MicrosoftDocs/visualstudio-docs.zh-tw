@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949899"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的應用程式層級增益集。 不論開啟哪一份活頁簿，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -32,15 +32,15 @@ ms.locfileid: "38797795"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Excel 的 Excel VSTO 增益集專案。  
+- 建立 Excel 的 Excel VSTO 增益集專案。  
   
--   撰寫可使用 Excel 物件模型的程式碼，儲存活頁簿時便可加入文字。  
+- 撰寫可使用 Excel 物件模型的程式碼，儲存活頁簿時便可加入文字。  
   
--   建置和執行專案來進行測試。  
+- 建置和執行專案來進行測試。  
   
--   清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
+- 清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -78,20 +78,20 @@ ms.locfileid: "38797795"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>將一行文字加入儲存的活頁簿  
   
-1.  在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 新的程式碼會定義 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式，該事件是在儲存活頁簿時所引發的。  
+1. 在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 新的程式碼會定義 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式，該事件是在儲存活頁簿時所引發的。  
   
-     當使用者儲存活頁簿時，事件處理常式會將新文字加入現用工作表開頭。  
+    當使用者儲存活頁簿時，事件處理常式會將新文字加入現用工作表開頭。  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  如果使用的是 C#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這段程式碼是用來連接 `Application_WorkbookBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件。  
+2. 如果使用的是 C#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這段程式碼是用來連接 `Application_WorkbookBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件。  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- 若要在儲存活頁簿時修改活頁簿，前面的程式碼範例可以使用下列物件：  
+   若要在儲存活頁簿時修改活頁簿，前面的程式碼範例可以使用下列物件：  
   
--   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Excel.Application> 物件，此物件代表 Excel 目前的執行個體。  
+-   `ThisAddIn` 類別的 `Application` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Excel.Application> 物件，此物件代表 Excel 目前的執行個體。  
   
 -   <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式的 `Wb` 參數。 `Wb` 參數是 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，此物件代表儲存的活頁簿。 如需詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   

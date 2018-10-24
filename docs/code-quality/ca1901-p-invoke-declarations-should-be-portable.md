@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 94067aad31c25db64d0732ebd67c442fd9466328
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937365"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 宣告應該是可移植的
+
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|類別|Microsoft.Portability|
+|分類|Microsoft.Portability|
 |中斷變更|中斷-如果 P/Invoke 是組件外部可見。 非中斷-如果 P/Invoke 不是組件外部可見。|
 
 ## <a name="cause"></a>原因

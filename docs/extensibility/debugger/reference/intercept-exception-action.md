@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION |Microsoft 文件
+title: INTERCEPT_EXCEPTION_ACTION |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8241ab85ad705200e256b4facccaecd0a50a1de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1249e6b435f7cd396ea7912cb7aebf8d78cf94f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948378"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 指定要攔截例外狀況時所採取的動作。  

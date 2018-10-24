@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS |Microsoft 文件
+title: FIELD_INFO_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74f39ce8e9e350c791371f20b7401d685fb1d18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78ea2148290402f2a8e5c08474de125fc52bca47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936507"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-指定要擷取的相關資訊[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
+指定要擷取其相關資訊[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,23 +52,23 @@ public enum enum_FIELD_INFO_FIELDS {
   
 ## <a name="members"></a>成員  
  FIF_FULLNAME  
- 初始化/使用`bstrFullName`欄位[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構。  
+ 初始化/使用`bstrFullName`欄位中[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構。  
   
  FIF_NAME  
- 初始化/使用`bstrName`欄位`FIELD_INFO`結構。  
+ 初始化/使用`bstrName`欄位中`FIELD_INFO`結構。  
   
  FIF_TYPE  
- 初始化/使用`bstrType`欄位`FIELD_INFO`結構。  
+ 初始化/使用`bstrType`欄位中`FIELD_INFO`結構。  
   
  FIF_MODIFIERS  
- 初始化/使用`bstrModifiers`欄位`FIELD_INFO`結構。  
+ 初始化/使用`bstrModifiers`欄位中`FIELD_INFO`結構。  
   
 ## <a name="remarks"></a>備註  
  這些值也會傳遞做為引數[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)方法，以指定的哪些欄位[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構會進行初始化。  
   
- 這些值也會在`dwFields`隸屬`FIELD_INFO`結構，以指出哪些欄位是使用且有效。  
+ 這些值也會在`dwFields`隸屬`FIELD_INFO`表示哪些欄位已使用且有效的結構。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  

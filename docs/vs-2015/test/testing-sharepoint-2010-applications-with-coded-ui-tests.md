@@ -13,12 +13,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 346362a6812882bd795b6180ac735e51f13e3530
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e450cd333c01e4e2e557013ef106337fe5a80a71
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937274"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,15 +107,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="setting-up-your-machine"></a>設定您的電腦  
   
-1.  確定您已安裝 Visual Studio 2012.1 或更新版本。  
+1. 確定您已安裝 Visual Studio 2012.1 或更新版本。  
   
-2.  安裝 [適用於 Silverlight 的 Microsoft Visual Studio UI 測試外掛程式](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4)。  
+2. 安裝 [適用於 Silverlight 的 Microsoft Visual Studio UI 測試外掛程式](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4)。  
   
-3.  安裝 [Fiddler](http://www.fiddler2.com/fiddler2/)。 這是擷取和記錄 HTTP 流量的簡單工具。  
+3. 安裝 [Fiddler](http://www.fiddler2.com/fiddler2/)。 這是擷取和記錄 HTTP 流量的簡單工具。  
   
-4.  下載 [fiddlerXap 專案](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip)。 將它解壓縮、進行建置，並執行 "CopySLHelper.bat" 指令碼，安裝使用 Fiddler 工具測試 Silverlight Web 組件時所需的協助程式 DLL。  
+4. 下載 [fiddlerXap 專案](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip)。 將它解壓縮、進行建置，並執行 "CopySLHelper.bat" 指令碼，安裝使用 Fiddler 工具測試 Silverlight Web 組件時所需的協助程式 DLL。  
   
- 設定電腦之後，依照下列步驟，開始測試您的 SharePoint 2010 應用程式與 Silverlight Web 組件：  
+   設定電腦之後，依照下列步驟，開始測試您的 SharePoint 2010 應用程式與 Silverlight Web 組件：  
   
 #### <a name="testing-silverlight-web-parts"></a>測試 Silverlight Web 組件  
   

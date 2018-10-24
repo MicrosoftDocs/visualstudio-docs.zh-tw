@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940940"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 有兩種類型的 CPU 計數器事件會發生︰  
+  有兩種類型的 CPU 計數器事件會發生︰  
   
--   Portable Events - 不論特定 CPU 的可收集 CPU 事件。  
+- Portable Events - 不論特定 CPU 的可收集 CPU 事件。  
   
--   Platform Events - 結合到特定 CPU 的 CPU 事件。  
+- Platform Events - 結合到特定 CPU 的 CPU 事件。  
   
- Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。  
+  Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。  
   
- Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰  
+  Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰  
   
--   記憶體事件。  
+- 記憶體事件。  
   
--   前端事件。  
+- 前端事件。  
   
--   分支事件。  
+- 分支事件。  
   
- 在程式碼剖析工具中，收集效能計數器資料的方式有兩種︰  
+  在程式碼剖析工具中，收集效能計數器資料的方式有兩種︰  
   
--   透過檢測分析時，從一或多個計數器收集資料。  
+- 透過檢測分析時，從一或多個計數器收集資料。  
   
--   透過取樣分析時，將計數器事件指定為取樣間隔。 如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)。  
+- 透過取樣分析時，將計數器事件指定為取樣間隔。 如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)。  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>透過檢測分析時收集 CPU 效能計數器資料  
   

@@ -16,12 +16,12 @@ ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6821dbce6a492f5f72e7f319f7a88763636f369f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41cf6174fa4bc7816135056a1f9adb205ff57974
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947885"
 ---
 # <a name="group-element"></a>Group 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

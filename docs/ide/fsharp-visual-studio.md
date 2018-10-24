@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921427"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 進行開發
 
@@ -61,7 +61,7 @@ ms.locfileid: "38993898"
 [專案設計工具] 包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具] 頁面的連結。
 
 |[專案設計工具] 頁面|相關連結|描述|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |應用程式|[專案設計工具、應用程式頁面](reference/application-page-project-designer-csharp.md)|可讓您指定應用程式層級設定和屬性，例如您正在建立程式庫還是可執行檔、應用程式是以哪些 .NET Framework 版本為目標，以及應用程式使用的資源檔儲存所在位置的相關資訊。|
 |組建|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
 |建置事件|[專案設計工具、建置事件頁面](reference/build-events-page-project-designer-csharp.md)|可讓您指定要在編譯前後執行的命令。|
@@ -75,7 +75,7 @@ ms.locfileid: "38993898"
 下表摘要說明 F# 專用的設定：
 
 |[專案設計工具] 頁面|設定|描述|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |組建|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
 |組建|其他旗標|可讓您指定其他編譯器命令列選項。|
 

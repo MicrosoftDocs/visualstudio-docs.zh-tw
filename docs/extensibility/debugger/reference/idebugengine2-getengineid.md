@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID |Microsoft 文件
+title: IDebugEngine2::GetEngineID |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97d5b4ec655838f32ccff7df562ae4f11bdc9a00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd933653613b5819bab229077de0f2f6f6074485
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935896"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得偵錯引擎 (DE) 的 GUID。  
@@ -41,16 +41,16 @@ int GetEngineID(
   
 #### <a name="parameters"></a>參數  
  `pguidEngine`  
- [out]傳回 DE GUID。  
+ [out]傳回 DE 的 GUID。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 典型的 Guid 的一些範例包括`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。 新的偵錯引擎會建立自己的 GUID 來識別。  
+ 典型的 Guid 的一些範例包括`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。 新的偵錯引擎會建立自己的 GUID 識別。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CEngine`實作物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
   
 ```cpp  
 HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
