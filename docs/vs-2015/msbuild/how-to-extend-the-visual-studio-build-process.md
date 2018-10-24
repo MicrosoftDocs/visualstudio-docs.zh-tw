@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899691"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ ms.locfileid: "49191626"
   
 #### <a name="to-override-a-predefined-target"></a>覆寫預先定義的目標  
   
-1.  識別 Microsoft.Common.targets 中您要覆寫的預先定義目標。 如需您可安全覆寫之目標的完整清單，請參閱下表。  
+1. 識別 Microsoft.Common.targets 中您要覆寫的預先定義目標。 如需您可安全覆寫之目標的完整清單，請參閱下表。  
   
-2.  在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如:   
+2. 在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如:   
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  建置專案檔。  
+3. 建置專案檔。  
   
- 下表顯示 Microsoft.Common.targets 中您可安全覆寫的所有目標。  
+   下表顯示 Microsoft.Common.targets 中您可安全覆寫的所有目標。  
   
 |目標名稱|描述|  
 |-----------------|-----------------|  

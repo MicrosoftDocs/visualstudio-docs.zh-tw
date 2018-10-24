@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac8e120880ba33b1479bd43ae43f5449c9e97d1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 10efa25ba2f692e9cf4a9c3588d210d31f9e8065
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901290"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 > [!IMPORTANT]

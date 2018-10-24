@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898053"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>針對 SharePoint 封裝和部署進行疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -59,13 +59,13 @@ ms.locfileid: "37118626"
 ## <a name="differences-between-f5-deployment"></a>F5 部署之間的差異
  當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 SharePoint 專案部署至本機 SharePoint 伺服器來進行測試和偵錯時，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 還會執行一些額外步驟。
 
-1.  部署步驟期間重設「網際網路資訊服務」(IIS)。
+1. 部署步驟期間重設「網際網路資訊服務」(IIS)。
 
-2.  自動關聯工作流程。
+2. 自動關聯工作流程。
 
-3.  根據 [封裝設計工具] 中的階層，設定功能啟動順序。
+3. 根據 [封裝設計工具] 中的階層，設定功能啟動順序。
 
- 您可以新增自訂部署步驟進一步變更**F5**行為。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
+   您可以新增自訂部署步驟進一步變更**F5**行為。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>延遲顯示 SharePoint 頁面時部署視覺 web 組件
  將視覺 Web 組件部署至 [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)]、[!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 或 [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] 上的 Bin 資料夾時，會花費很長時間才會出現 SharePoint 頁面。 如果您變更最上層 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 目錄 (例如，Bin 目錄) 中的任何檔案，則會重新編譯整個 Web 應用程式。 這樣會導致 SharePoint 頁面的呈現存在長達 25 秒的延遲。

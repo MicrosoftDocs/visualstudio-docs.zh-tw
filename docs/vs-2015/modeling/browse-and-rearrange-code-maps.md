@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896832"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ ms.locfileid: "49281433"
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>在現有的程式碼項目之間加入連結  
   
-1.  選取來源程式碼項目。 工具列會出現在程式碼項目的上方。  
+1. 選取來源程式碼項目。 工具列會出現在程式碼項目的上方。  
   
-     ![相依性圖形工具列](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![相依性圖形工具列](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  在工具列上，選擇 第一個圖示，**建立新連結從這個節點至您按一下 下一步 的任何節點**。  
+2. 在工具列上，選擇 第一個圖示，**建立新連結從這個節點至您按一下 下一步 的任何節點**。  
   
-3.  選取目標程式碼項目。 兩個程式碼項目之間會出現連結。  
+3. 選取目標程式碼項目。 兩個程式碼項目之間會出現連結。  
   
- \-或-  
+   \-或-  
   
-1.  在對應上選取來源程式碼項目。  
+4. 在對應上選取來源程式碼項目。  
   
-2.  如已安裝滑鼠，請將滑鼠指標移至對應範圍外。  
+5. 如已安裝滑鼠，請將滑鼠指標移至對應範圍外。  
   
-3.  開啟程式碼項目的捷徑功能表，然後選擇**編輯**，**新增**，**泛型連結**。  
+6. 開啟程式碼項目的捷徑功能表，然後選擇**編輯**，**新增**，**泛型連結**。  
   
-4.  用 Tab 鍵移至並選取連結的目標程式碼項目。  
+7. 用 Tab 鍵移至並選取連結的目標程式碼項目。  
   
-5.  請按 **RETURN**。  
+8. 請按 **RETURN**。  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>在對應上的現有節點中加入註解  

@@ -17,12 +17,12 @@ ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d3045985f6bf85db7243bb08842a670d144f5f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27e19c6d9c73176c1b83b4ed0d1e188f270cc19f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901803"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

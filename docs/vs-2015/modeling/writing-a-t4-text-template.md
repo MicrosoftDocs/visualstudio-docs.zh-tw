@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897793"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49231630"
   
  文字範本是由下列部分組成：  
   
--   **指示詞**-控制範本處理方式的項目。  
+- **指示詞**-控制範本處理方式的項目。  
   
--   **文字區塊**-內容複製到輸出直接。  
+- **文字區塊**-內容複製到輸出直接。  
   
--   **控制區塊**-程式碼，將變數值插入至文字，並控制文字的條件式或重複部分。  
+- **控制區塊**-程式碼，將變數值插入至文字，並控制文字的條件式或重複部分。  
   
- 若要嘗試本主題中的範例，將其複製到範本檔案中所述[使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 編輯範本檔案之後，並儲存它，然後檢查輸出 **.txt**檔案。  
+  若要嘗試本主題中的範例，將其複製到範本檔案中所述[使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 編輯範本檔案之後，並儲存它，然後檢查輸出 **.txt**檔案。  
   
 ## <a name="directives"></a>指示詞  
  文字範本指示詞提供有關如何產生轉換程式碼和輸出檔案之文字範本引擎的一般指示。  

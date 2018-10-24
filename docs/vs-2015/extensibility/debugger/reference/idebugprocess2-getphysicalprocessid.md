@@ -17,12 +17,12 @@ ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70f2ff2c166a2c3f340796350722d76583ea4be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddad54fbba7a27a6aa92b179962097c9c075ea67
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902980"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

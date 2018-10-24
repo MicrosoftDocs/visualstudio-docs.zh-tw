@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a24e31e6c45efddeac020f12fe57dbbb9688b619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b07fd0a949ef3f54deea58f46644e425c0d338c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902278"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

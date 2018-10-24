@@ -17,12 +17,12 @@ ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5640b935463b1ae11e9c4a2af521d53b1fcd5d53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a12e72ea6534bed226ece7aa79788e48813797f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903851"
 ---
 # <a name="seekstart"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f77bfdf2481a779631f2ada9978fd07c75fb89a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97c737399b789693e8b69366c1972a6039ac8474
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904455"
 ---
 # <a name="idiaenumsectioncontribsgetnewenum"></a>IDiaEnumSectionContribs::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

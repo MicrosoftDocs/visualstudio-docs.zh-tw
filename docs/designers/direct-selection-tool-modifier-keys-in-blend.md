@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876226"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
 下表列出您可以用來修改現有路徑圖形的 [直接選取]工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
 
 |若要執行這項操作|請執行|Pointer|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |使路徑上的點顯示正切函數控點|按一下路徑上的點|![使路徑上的點顯示正切函數控點](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移動點的指標|
 |移動路徑上的點|拖曳路徑上的點|![移動路徑上的點](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移動點的指標|
 |使路徑上兩個點之間的線段顯示正切函數控點|按一下路徑上的線段|![使路徑上兩個點之間的線段顯示正切函數控點](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> 移動線段的指標|

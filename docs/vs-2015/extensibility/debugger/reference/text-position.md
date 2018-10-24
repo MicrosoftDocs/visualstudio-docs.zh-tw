@@ -17,12 +17,12 @@ ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60c29e078a42207b8862a4e06dc09b92f86d4989
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f738cf593a210792ae23aa5e5de4ef279a9ee76b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899795"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,25 +57,25 @@ public struct TEXT_POSITION {
   
  會填入這個結構，藉由呼叫下列方法：  
   
--   [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
+- [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
--   [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)  
+- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)  
   
--   [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)  
+- [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)  
   
--   [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
+- [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
   
- 此結構會做為參數傳遞，下列方法：  
+  此結構會做為參數傳遞，下列方法：  
   
--   [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
+- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
   
--   [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)  
+- [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)  
   
--   [onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)  
+- [onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)  
   
--   [onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)  
+- [onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)  
   
--   [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
+- [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

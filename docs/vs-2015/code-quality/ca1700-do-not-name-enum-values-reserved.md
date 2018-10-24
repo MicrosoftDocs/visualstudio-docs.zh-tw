@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897988"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700： 不要在列舉值名稱&#39;保留&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204720"
 
  在少數情況下加入成員的原始成員保留其原始值時，即使是一項重大變更。 主要，新的成員無法傳回從現有的程式碼路徑而不會中斷使用的呼叫端`switch`(`Select`在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 傳回的值，包含整個成員清單，並會在擲回例外狀況的陳述式預設的情況。 次要的問題是，用戶端程式碼可能無法處理，反映方法的行為變更例如<xref:System.Enum.IsDefined%2A?displayProperty=fullName>。 因此，如果新的成員都有要從現有的方法傳回或已知的應用程式不相容，就會發生因為不佳的反映，唯一不中斷的解決方案是：
 
-1.  加入新的列舉，其中包含的原始和新成員。
+1. 加入新的列舉，其中包含的原始和新成員。
 
-2.  標記的原始列舉<xref:System.ObsoleteAttribute?displayProperty=fullName>屬性。
+2. 標記的原始列舉<xref:System.ObsoleteAttribute?displayProperty=fullName>屬性。
 
- 請遵循相同的程序的任何外部可見類型或公開原始列舉的成員。
+   請遵循相同的程序的任何外部可見類型或公開原始列舉的成員。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請移除或重新命名的成員。

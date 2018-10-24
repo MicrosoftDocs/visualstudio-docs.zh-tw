@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8c872df976379a9bd20f28ceb9f4bf3eb376c8e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900458"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：運算子應該有對稱的多載
+
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|

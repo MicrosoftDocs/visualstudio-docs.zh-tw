@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821483"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
@@ -36,15 +36,15 @@ ms.locfileid: "34748188"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>建立 Windows 類別庫專案和測試專案
 
-1.  在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中建立新的 **Windows 類別庫**專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。
+1. 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中建立新的 **Windows 類別庫**專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。
 
-2.  在**方案總管**中，以滑鼠右鍵按一下上方的解決方案，選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊的左窗格中，選擇 [測試]。
+2. 在**方案總管**中，以滑鼠右鍵按一下上方的解決方案，選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊的左窗格中，選擇 [測試]。
 
-3.  在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 `UnitTestProject1`。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
+3. 在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 `UnitTestProject1`。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
 
-     ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png)
+    ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png)
 
-4.  選擇 [確定] 關閉 [新增專案] 對話方塊。
+4. 選擇 [確定] 關閉 [新增專案] 對話方塊。
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>在類別庫專案中新增參考
 
@@ -58,20 +58,20 @@ ms.locfileid: "34748188"
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>從單元測試產生新類別
 
-1.  測試專案包含名為 *UnitTest1* 的檔案。 在**方案總管**中按兩下這個檔案，在程式碼編輯器中開啟它。 已產生測試類別和測試方法。
+1. 測試專案包含名為 *UnitTest1* 的檔案。 在**方案總管**中按兩下這個檔案，在程式碼編輯器中開啟它。 已產生測試類別和測試方法。
 
-2.  找到類別 `UnitTest1` 的宣告，並將它重新命名為 `AutomobileTest`。
+2. 找到類別 `UnitTest1` 的宣告，並將它重新命名為 `AutomobileTest`。
 
- > [!NOTE]
- >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 [IntelliSense] 視窗開啟時，您可以按 **Ctrl**+**Alt**+**空格鍵** 切換完成模式和建議模式。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。
+   > [!NOTE]
+   >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 [IntelliSense] 視窗開啟時，您可以按 **Ctrl**+**Alt**+**空格鍵** 切換完成模式和建議模式。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。
 
-3.  找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)燈泡會出現在左邊界 (僅限 C#) 或波浪線正下方。
+3. 找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)燈泡會出現在左邊界 (僅限 C#) 或波浪線正下方。
 
-     ![Visual Basic 中的快速動作](../ide/media/genclass_underlinevb.png)
+    ![Visual Basic 中的快速動作](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35; 中的快速動作](../ide/media/genclass_underline.png)
+    ![C&#35; 中的快速動作](../ide/media/genclass_underline.png)
 
-4.  選擇或按一下 [快速動作] 燈泡。 您會看到錯誤訊息，說明類型 `Automobile` 未定義。 您也會看到一些解決方案。
+4. 選擇或按一下 [快速動作] 燈泡。 您會看到錯誤訊息，說明類型 `Automobile` 未定義。 您也會看到一些解決方案。
 
 5. 按一下 [產生新的類型] 開啟 [產生類型] 對話方塊。 此對話方塊會提供許多選項，包括在不同的專案中產生類型。
 
@@ -79,9 +79,9 @@ ms.locfileid: "34748188"
 
      ![[產生新的類型] 對話方塊](../ide/media/genotherdialog.png)
 
-6.  按一下 [確定]  關閉對話方塊，並建立新的檔案。
+7. 按一下 [確定]  關閉對話方塊，並建立新的檔案。
 
-7.  在 [方案總管] 的 **GFUDemo_VB** 或 **GFUDemo_CS** 專案節點下，確認是否有新增的 *Automobile.vb* 或 *Automobile.cs* 檔案。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
+8. 在 [方案總管] 的 **GFUDemo_VB** 或 **GFUDemo_CS** 專案節點下，確認是否有新增的 *Automobile.vb* 或 *Automobile.cs* 檔案。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
 
 ### <a name="generate-a-property-stub"></a>產生屬性虛設常式
 假設產品規格規定 `Automobile` 類別有兩個公用屬性，名為 `Model` 和 `TopSpeed`。 這些屬性必須由預設的建構函式以 `"Not specified"` 和 `-1` 的預設值來初始化。 以下的單元測試會驗證預設建構函式是否將屬性設定為正確的預設值。

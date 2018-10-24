@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901316"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>語言服務及編輯器擴充功能入門
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。  
@@ -44,17 +44,17 @@ ms.locfileid: "39498376"
   
  以下是一些基本的編輯器延伸模組類型：  
   
--   邊界和捲軸  
+- 邊界和捲軸  
   
--   Tags  
+- Tags  
   
--   裝飾  
+- 裝飾  
   
--   選項  
+- 選項  
   
--   IntelliSense  
+- IntelliSense  
   
- 如需有關編輯器擴充點的詳細資訊，請參閱[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)。  
+  如需有關編輯器擴充點的詳細資訊，請參閱[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)。  
   
 ## <a name="deploying-editor-extensions"></a>部署的編輯器延伸模組  
  在 Visual Studio 中，您必須部署編輯器擴充功能藉由新增名為的中繼資料檔案*source.extension.vsixmanifest*到解決方案、 建置方案時，，然後再將已知資料夾中的 的副本的二進位檔和資訊清單Visual studio。 資訊清單檔案會定義有關擴充功能 （例如名稱、 作者、 版本和類型的內容） 的基本事項。 如需 VSIX 資訊清單檔案，以及如何部署擴充功能的詳細資訊，請參閱[出貨的 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。  

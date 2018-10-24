@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Clone |Microsoft 文件'
+title: 'Idiaenumsegments:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3198e21440d2fc20898fde83925aaf8ae0e3a3be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b946633c7a999ff0c7b154a02291301efdea512b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905073"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
-建立列舉值，包含目前的列舉值的列舉型別狀態相同。  
+建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>參數  
  ppenum  
- [out]傳回[IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)物件，其中包含列舉值重複。 不會有重複的區段，將列舉值。  
+ [out]傳回[IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)物件，包含列舉值重複。 不重複的區段，將列舉值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

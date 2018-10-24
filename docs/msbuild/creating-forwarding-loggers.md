@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179199"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880970"
 ---
 # <a name="create-forwarding-loggers"></a>建立轉送記錄器
 轉送記錄器可讓您選擇在多處理器系統上建置專案時想要監視的事件，以提高記錄的效率。 啟用轉送記錄器時，您可以防止不必要的事件塞滿中央記錄器，而導致建置時間變慢、記錄空間暴增等問題。  
@@ -35,7 +35,7 @@ ms.locfileid: "39179199"
  在多處理器環境中，可能不會按順序接收事件訊息。 因此，您必須使用轉送記錄器中的事件處理常式來評估事件，並為它編寫程式以決定哪些事件要傳遞到重新導向程式，並轉送給中央記錄器。 若要完成此動作，您可以使用每個訊息附加的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以協助識別您想要轉送的事件，然後將事件的名稱傳遞給 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 類別 (或它的子類別)。 當您使用這個方法時，不需要任何其他特定編碼即可轉送事件。  
   
 ## <a name="specify-a-forwarding-logger"></a>指定轉送記錄器  
- 當轉送記錄器已編譯成組件之後，您必須要求 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在建置期間使用這個組件。 若要執行此工作，請搭配使用 `/FileLogger`、`/FileLoggerParameters` 和 `/DistributedFileLogger` 參數與 MSBuild.exe。 `/FileLogger` 參數會告知 MSBuild.exe 已直接附加記錄器。 `/DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `/FileLoggerParameters` 參數。 如需這些參數與其他 *MSBuild.exe* 參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
+ 當轉送記錄器已編譯成組件之後，您必須要求 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在建置期間使用這個組件。 若要執行此工作，請搭配使用 `-FileLogger`、`-FileLoggerParameters` 和 `-DistributedFileLogger` 參數與 MSBuild.exe。 `-FileLogger` 參數會告知 MSBuild.exe 已直接附加記錄器。 `-DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `-FileLoggerParameters` 參數。 如需這些參數與其他 *MSBuild.exe* 參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
 ## <a name="multi-processor-aware-loggers"></a>能夠辨識多處理器的記錄器  
  當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 如需多處理器建置的詳細資訊，請參閱[在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)。  

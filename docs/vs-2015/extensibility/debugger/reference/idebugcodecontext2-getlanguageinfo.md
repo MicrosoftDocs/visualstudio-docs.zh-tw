@@ -17,12 +17,12 @@ ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 857f63301d30b1174eb706a84d2460f4917c78c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 57fe0111d25a0fd7d3a2ce3d4f3c31cb69f26259
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900952"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
