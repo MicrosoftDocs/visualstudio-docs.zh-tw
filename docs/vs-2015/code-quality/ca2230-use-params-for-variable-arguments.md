@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b591ca9ba3ad56fec5dde1a8df11d7cc4abcecf4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad0f43ac18c39d1dfdf6464e5cd260b669e1a0da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892723"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UseParamsForVariableArguments|

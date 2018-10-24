@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f90cd326adb7f51064c51868651d9f31e8d66ade
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7437ff3a579da9f830541730b73c4c105984ce38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890701"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

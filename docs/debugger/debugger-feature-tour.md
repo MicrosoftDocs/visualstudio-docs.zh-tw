@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882662"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>搶先了解 Visual Studio 偵錯工具
 
@@ -188,7 +188,7 @@ F10 進階偵錯工具，而不需要逐步執行函式或方法，應用程式�
 
 例外狀況協助程式是很棒的功能，可協助您偵錯錯誤。 您也可以執行下列動作檢視錯誤詳細資料，然後從例外狀況協助程式新增監看式。 或者，如果有需要您可以變更條件擲回特定例外狀況。
 
->  [!NOTE]
+> [!NOTE]
 > 例外狀況協助程式取代了例外狀況助理中[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 依序展開**例外狀況設定**節點以查看更多選項如何處理此例外狀況類型，但您不需要變更任何項目針對此教學課程 ！

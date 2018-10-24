@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889785"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>將命令和軌跡加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "49223208"
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能  
   
-1.  使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
+1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
   
-2.  在 [新增專案]  對話方塊的 [模型專案] 底下，選取 [圖層設計工具命令擴充功能]  或 [圖層設計工具軌跡擴充功能] 。  
+2. 在 [新增專案]  對話方塊的 [模型專案] 底下，選取 [圖層設計工具命令擴充功能]  或 [圖層設計工具軌跡擴充功能] 。  
   
-     此範本隨即建立包含小型工作範例的專案。  
+    此範本隨即建立包含小型工作範例的專案。  
   
-3.  若要測試此擴充功能，請按下 **CTRL+F5** 或 **F5**。  
+3. 若要測試此擴充功能，請按下 **CTRL+F5** 或 **F5**。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 在此執行個體中，建立分層圖。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 在此執行個體中，建立分層圖。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
   
-4.  關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+4. 關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-5.  您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：  
+5. 您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：  
   
-     [定義功能表命令](#command)  
+    [定義功能表命令](#command)  
   
-     [定義軌跡處理常式](#gesture)  
+    [定義軌跡處理常式](#gesture)  
   
-6.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+6. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX  
  如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。 如需其他類型的模型擴充功能資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -116,37 +116,37 @@ ms.locfileid: "49223208"
 ##  <a name="command"></a> 定義功能表命令  
  您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：  
   
--   此類別的宣告方式如下：  
+- 此類別的宣告方式如下：  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   此類別的命名空間和名稱並不重要。  
+- 此類別的命名空間和名稱並不重要。  
   
--   實作 `ICommandExtension` 的方法如下：  
+- 實作 `ICommandExtension` 的方法如下：  
   
-    -   `string Text {get;}` - 出現在此功能表中的標籤。  
+  -   `string Text {get;}` - 出現在此功能表中的標籤。  
   
-    -   `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。  
+  -   `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。  
   
-    -   `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。  
+  -   `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。  
   
--   若要判斷目前選取範圍，您可以匯入 `IDiagramContext`：  
+- 若要判斷目前選取範圍，您可以匯入 `IDiagramContext`：  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- 如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
- 若要加入新的命令，請建立包含下列範例的新程式碼檔案。 然後，測試並編輯此檔案。  
+  若要加入新的命令，請建立包含下列範例的新程式碼檔案。 然後，測試並編輯此檔案。  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  請注意下列有關軌跡處理常式的重點：  
   
--   `IGestureExtension` 的成員如下：  
+- `IGestureExtension` 的成員如下：  
   
-     **OnDoubleClick** - 當使用者在圖表上的任何位置按兩下時受呼叫。  
+   **OnDoubleClick** - 當使用者在圖表上的任何位置按兩下時受呼叫。  
   
-     **CanDragDrop** - 當使用者移動滑鼠，同時將項目拖曳至此圖表上時，會重複受到呼叫。 它必須快速運作。  
+   **CanDragDrop** - 當使用者移動滑鼠，同時將項目拖曳至此圖表上時，會重複受到呼叫。 它必須快速運作。  
   
-     **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。  
+   **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。  
   
--   每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：  
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將項目從 [方案總管] 拖曳至分層圖上。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。  
+- 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將項目從 [方案總管] 拖曳至分層圖上。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。  
   
- 如需如何在拖曳到圖表上時，其他項目解碼的詳細資訊，請參閱[在模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。  
+  如需如何在拖曳到圖表上時，其他項目解碼的詳細資訊，請參閱[在模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   

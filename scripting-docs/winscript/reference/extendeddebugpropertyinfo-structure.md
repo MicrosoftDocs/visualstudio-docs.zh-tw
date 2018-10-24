@@ -1,5 +1,5 @@
 ---
-title: ExtendedDebugPropertyInfo 結構 |Microsoft 文件
+title: ExtendedDebugPropertyInfo 結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888901"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 結構
-擴充`DebugPropertyInfo`結構與其他成員，以便歸納擴充的屬性。  
+擴充`DebugPropertyInfo`結構描述的擴充的屬性的其他成員。  
   
 ## <a name="syntax"></a>語法  
   
@@ -55,19 +55,19 @@ typedef struct ExtendedDebugPropertyInfo{
  在內容屬性名稱。  
   
  `bstrType`  
- 屬性類型為格式化的字串。  
+ 為格式化的字串屬性型別。  
   
  `bstrValue`  
- 格式化字串為屬性值。  
+ 為格式化的字串屬性值。  
   
  `bstrFullName`  
  屬性的完整名稱。  
   
  `dwAttrib`  
- 列舉，指定偵錯屬性的屬性旗標。  
+ 列舉型別，指定偵錯屬性的屬性的旗標。  
   
  `pDebugProp`  
- `IDebugProperty`物件對應至這個`ExtendedDebugPropertyInfo`。  
+ `IDebugProperty` 物件對應至這個`ExtendedDebugPropertyInfo`。  
   
  `nDISPID`  
  分派識別碼。  
@@ -76,13 +76,13 @@ typedef struct ExtendedDebugPropertyInfo{
  擴充的屬性的型別。  
   
  `varValue`  
- 如果可以納入 VARIANT 擴充的屬性值。  
+ 如果它可以放入變數擴充的屬性值。  
   
  `plbValue`  
- 屬性值的實際資料位元組。  
+ 屬性值的實際資料的位元組。  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`物件對應至這個`ExtendedDebugPropertyInfo`。  
+ `IDebugExtendedProperty` 物件對應至這個`ExtendedDebugPropertyInfo`。  
   
 ## <a name="see-also"></a>另請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   

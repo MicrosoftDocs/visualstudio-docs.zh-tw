@@ -17,12 +17,12 @@ ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd64e62d6d289862cfbcc305960c3202df5fde8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8811fcdc4caef62cb3973364b4b8b594d83936d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885066"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

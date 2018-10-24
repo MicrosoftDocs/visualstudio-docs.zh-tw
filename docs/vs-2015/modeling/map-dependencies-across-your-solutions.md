@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894023"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ ms.locfileid: "49200768"
   
  **您可以針對這些語言的程式碼對應相依性**：  
   
--   方案或組件 (.dll 或 .exe) 中的 Visual C# .NET 或 Visual Basic .NET  
+- 方案或組件 (.dll 或 .exe) 中的 Visual C# .NET 或 Visual Basic .NET  
   
--   Visual C++ 專案、標頭檔 (.h 或 `#include`) 或二進位檔案中的原生或 Managed C 或 C++ 程式碼  
+- Visual C++ 專案、標頭檔 (.h 或 `#include`) 或二進位檔案中的原生或 Managed C 或 C++ 程式碼  
   
--   由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件  
+- 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件  
   
- **附註：** 針對 C# 或 Visual Basic.NET 以外的專案，啟動 Code Map 或是將項目加入現有的 Code Map 之選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
+  **附註：** 針對 C# 或 Visual Basic.NET 以外的專案，啟動 Code Map 或是將項目加入現有的 Code Map 之選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>查看方案之間的整體相依性  
   
@@ -122,51 +122,51 @@ ms.locfileid: "49200768"
   
 ###  <a name="OverviewSource"></a> 查看方案中的相依性  
   
-1.  在 [架構]  功能表上，選擇 [產生方案的 Code Map] 。  
+1. 在 [架構]  功能表上，選擇 [產生方案的 Code Map] 。  
   
-     ![產生 code map 命令](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![產生 code map 命令](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     即可取得顯示最上層組件和其彙總連結的對應。 彙總連結愈廣，代表的相依性就愈高。  
+    即可取得顯示最上層組件和其彙總連結的對應。 彙總連結愈廣，代表的相依性就愈高。  
   
-2.  使用 Code Map 工具列上的 [圖例]  按鈕以顯示或隱藏專案類型圖示清單 (例如測試、Web 和 Phone 專案)，程式碼項目 (例如類別、方法和屬性)，和關聯性類型 (例如「繼承自」、「實作」，和「呼叫」)。  
+2. 使用 Code Map 工具列上的 [圖例]  按鈕以顯示或隱藏專案類型圖示清單 (例如測試、Web 和 Phone 專案)，程式碼項目 (例如類別、方法和屬性)，和關聯性類型 (例如「繼承自」、「實作」，和「呼叫」)。  
   
-     ![前&#45;的組件層級的相依性圖形](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![前&#45;的組件層級的相依性圖形](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     此範例方案包含方案資料夾 ([測試] 和 [元件] )、測試專案、Web 專案和組件。 所有內含項目關聯性預設會顯示為 *「群組」*(group)，您可將其展開及摺疊。 [外部]  群組中含有在您的方案之外的任何項目，包括平台相依性。 外部組件只會顯示所使用的項目。 根據預設，系統基底類型在對應中會隱藏，以減少雜亂。  
+    此範例方案包含方案資料夾 ([測試] 和 [元件] )、測試專案、Web 專案和組件。 所有內含項目關聯性預設會顯示為 *「群組」*(group)，您可將其展開及摺疊。 [外部]  群組中含有在您的方案之外的任何項目，包括平台相依性。 外部組件只會顯示所使用的項目。 根據預設，系統基底類型在對應中會隱藏，以減少雜亂。  
   
-3.  若要向下切入到對應，請展開代表專案和組件的群組。 您可以藉由按下 **CTRL + A** 選取所有節點，然後從捷徑功能表選擇 [群組] 、[展開]  ，展開所有項目。  
+3. 若要向下切入到對應，請展開代表專案和組件的群組。 您可以藉由按下 **CTRL + A** 選取所有節點，然後從捷徑功能表選擇 [群組] 、[展開]  ，展開所有項目。  
   
-     ![展開所有群組中的 code map](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![展開所有群組中的 code map](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  不過，這可能不適用於大型的方案。 事實上，對於複雜的方案而言，記憶體限制可能會導致您無法展開所有群組。 相反地，若要查看個別節點的內部，請展開它。 將滑鼠指標移至節點上方，然後按一下出現的＞形箭號 (向下箭號)。  
+4. 不過，這可能不適用於大型的方案。 事實上，對於複雜的方案而言，記憶體限制可能會導致您無法展開所有群組。 相反地，若要查看個別節點的內部，請展開它。 將滑鼠指標移至節點上方，然後按一下出現的＞形箭號 (向下箭號)。  
   
-     ![展開節點，以在 code map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![展開節點，以在 code map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     或使用鍵盤選取項目，然後按下加號鍵 (**+**)。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。  
+    或使用鍵盤選取項目，然後按下加號鍵 (**+**)。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。  
   
-    > [!TIP]
-    >  如需詳細資訊，使用程式碼的對應使用滑鼠、 鍵盤及觸控裝置，請參閱[瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。  
+   > [!TIP]
+   >  如需詳細資訊，使用程式碼的對應使用滑鼠、 鍵盤及觸控裝置，請參閱[瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。  
   
-5.  若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選]  ，然後只選取您感興趣的節點和連結類型。 例如，您可以隱藏所有的方案資料夾和組件容器。  
+5. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選]  ，然後只選取您感興趣的節點和連結類型。 例如，您可以隱藏所有的方案資料夾和組件容器。  
   
-     ![篩選容器以精簡對應](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![篩選容器以精簡對應](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     您也可以隱藏或移除對應上的個別群組和項目來簡化對應，而不會影響基礎的方案程式碼。  
+    您也可以隱藏或移除對應上的個別群組和項目來簡化對應，而不會影響基礎的方案程式碼。  
   
-6.  若要查看項目之間的關聯性，請在對應中加以選取。 連結的色彩表示關聯性的類型，如 [圖例]  窗格中所示。  
+6. 若要查看項目之間的關聯性，請在對應中加以選取。 連結的色彩表示關聯性的類型，如 [圖例]  窗格中所示。  
   
-     ![檢視方案之間的相依性](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![檢視方案之間的相依性](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     在此範例中，紫色連結是呼叫、虛線的連結是參考，而淺藍色連結則是欄位存取。 綠色的連結可以是繼承，或者可以是 *「彙總連結」* (aggregate link)，表示多個關聯性類型 (或 *「分類」*(category))。  
+    在此範例中，紫色連結是呼叫、虛線的連結是參考，而淺藍色連結則是欄位存取。 綠色的連結可以是繼承，或者可以是 *「彙總連結」* (aggregate link)，表示多個關聯性類型 (或 *「分類」*(category))。  
   
-    > [!TIP]
-    >  如果看到綠色連結，可能不表示只有繼承關聯性。 也有可能是方法呼叫，但是繼承關聯性將其隱藏。 若要查看特定類型的連結，請使用 [篩選]  窗格中的核取方塊，隱藏您不感興趣的類型。  
+   > [!TIP]
+   >  如果看到綠色連結，可能不表示只有繼承關聯性。 也有可能是方法呼叫，但是繼承關聯性將其隱藏。 若要查看特定類型的連結，請使用 [篩選]  窗格中的核取方塊，隱藏您不感興趣的類型。  
   
-7.  若要取得項目或連結的詳細資訊，請將指標移到頂端，直到出現工具提示。 這會顯示程式碼項目或連結代表的類別分類的詳細資料。  
+7. 若要取得項目或連結的詳細資訊，請將指標移到頂端，直到出現工具提示。 這會顯示程式碼項目或連結代表的類別分類的詳細資料。  
   
-     ![顯示關聯性的類別](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![顯示關聯性的類別](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  若要檢查彙總連結代表的項目和相依性，請先選取連結，然後開啟其捷徑功能表。 選擇 [顯示參與連結]  (或 [在新 Code Map 上顯示參與連結] )。 這會展開在連結兩端的群組，並只顯示參與此連結的項目和相依性。  
+8. 若要檢查彙總連結代表的項目和相依性，請先選取連結，然後開啟其捷徑功能表。 選擇 [顯示參與連結]  (或 [在新 Code Map 上顯示參與連結] )。 這會展開在連結兩端的群組，並只顯示參與此連結的項目和相依性。  
   
 9. 若要將焦點放在對應的特定部分，您可以繼續移除您不感興趣的項目。 例如，若要向下鑽研到類別和成員檢視，只要篩選 [篩選]  窗格中的所有命名空間節點。  
   
@@ -184,7 +184,7 @@ ms.locfileid: "49200768"
   
      ![選取要檢視的關聯性項目](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- 另請參閱：  
+    另請參閱：  
   
 -   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ ms.locfileid: "49200768"
 ###  <a name="Troubleshooting"></a> C 和 C++ 程式碼對應疑難排解  
  C 和 C++ 程式碼不支援下列項目：  
   
--   基底類型不會出現在包含父代階層架構的對應中。  
+- 基底類型不會出現在包含父代階層架構的對應中。  
   
--   大部分的 [顯示]  功能表項目無法供 C 和 C++ 程式碼使用。  
+- 大部分的 [顯示]  功能表項目無法供 C 和 C++ 程式碼使用。  
   
- 建立 C 和 C++ 程式碼的 Code Map 時，可能會發生下列問題：  
+  建立 C 和 C++ 程式碼的 Code Map 時，可能會發生下列問題：  
   
 |**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ ms.locfileid: "49200768"
 ##  <a name="RenderMoreQuickly"></a> 使 Code Map 更快速地轉譯  
  當您第一次產生對應時，Visual Studio 會為所有找到的相依性編製索引。 此程序可能需要一些時間 (尤其是大型方案)，但這可以改善之後的效能。 如果程式碼變更，則 Visual Studio 只會重新編製更新過的程式碼索引。 若要將完成轉譯對應所花費的時間降到最低，請考慮下列各項：  
   
--   [只對應您感興趣的相依性。](#SeeSpecificSource)  
+- [只對應您感興趣的相依性。](#SeeSpecificSource)  
   
--   在您產生整個方案的對應前，請縮小方案範圍。  
+- 在您產生整個方案的對應前，請縮小方案範圍。  
   
--   使用 Code Map 工具列上的 [略過建置]  按鈕，關閉自動建置方案。  
+- 使用 Code Map 工具列上的 [略過建置]  按鈕，關閉自動建置方案。  
   
--   使用 Code Map 工具列上的 [包含父代]  按鈕，關閉自動加入父項目。  
+- 使用 Code Map 工具列上的 [包含父代]  按鈕，關閉自動加入父項目。  
   
--   編輯 Code Map，直接移除您不需要的節點和連結。 變更對應不會影響基礎程式碼。 請參閱 [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+- 編輯 Code Map，直接移除您不需要的節點和連結。 變更對應不會影響基礎程式碼。 請參閱 [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
- ![略過建置] 和 [包含父代按鈕](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![略過建置] 和 [包含父代按鈕](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- 雖然 Visual Studio 可以使用 1 GB 的記憶體來執行，但建議您的電腦至少要有 2 GB 的記憶體，以免在 Visual Studio 建立程式碼索引並產生對應時延遲過於冗長。  
+  雖然 Visual Studio 可以使用 1 GB 的記憶體來執行，但建議您的電腦至少要有 2 GB 的記憶體，以免在 Visual Studio 建立程式碼索引並產生對應時延遲過於冗長。  
   
- 當專案項目的 [複製到輸出目錄]  屬性設定為 [永遠複製] 時，可能需要更多時間從 [方案總管] 中建立對應或將項目加入對應。 這可能會導致累加建置問題，而且會使 Visual Studio 每次都重新建置專案。 若要增加效能，請將這個屬性變更為 **有更新時才複製** 或 `PreserveNewest`。 請參閱 [Incremental Builds](../msbuild/incremental-builds.md)。  
+  當專案項目的 [複製到輸出目錄]  屬性設定為 [永遠複製] 時，可能需要更多時間從 [方案總管] 中建立對應或將項目加入對應。 這可能會導致累加建置問題，而且會使 Visual Studio 每次都重新建置專案。 若要增加效能，請將這個屬性變更為 **有更新時才複製** 或 `PreserveNewest`。 請參閱 [Incremental Builds](../msbuild/incremental-builds.md)。  
   
- 完成的對應只會顯示成功建置之程式碼的相依性。 如果某些元件發生建置錯誤，則對應上會出現這些錯誤。 在根據對應進行架構決策前，請確定元件可實際建置且具有相依性。  
+  完成的對應只會顯示成功建置之程式碼的相依性。 如果某些元件發生建置錯誤，則對應上會出現這些錯誤。 在根據對應進行架構決策前，請確定元件可實際建置且具有相依性。  
   
 ##  <a name="SavingExporting"></a> 共用 Code Map  
   

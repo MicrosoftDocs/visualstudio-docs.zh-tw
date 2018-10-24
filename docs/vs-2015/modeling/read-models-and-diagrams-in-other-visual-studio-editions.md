@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885196"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ ms.locfileid: "49277858"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>您可以在唯讀模式中進行的變更  
  如果您在不支援模型建立的 Visual Studio 版本中開啟模型和其圖表，則無法變更模型。 也就是說，您無法變更圖表或模型總管中所顯示的項目和關聯性。 不過，您可以對圖表的版面配置進行一些變更：  
   
--   重新排列圖表上的圖形和連接器。  
+- 重新排列圖表上的圖形和連接器。  
   
--   展開和摺疊圖形。  
+- 展開和摺疊圖形。  
   
- 您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。  
+  您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。  
   
 ##  <a name="RelatedTopics"></a> 相關的主題  
   

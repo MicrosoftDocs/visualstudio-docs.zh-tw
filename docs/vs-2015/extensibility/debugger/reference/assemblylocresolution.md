@@ -17,12 +17,12 @@ ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd01bbafe21b4a65bfd8e4e4c9b16080210e6a06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5dd26c46e6725ca34f6b1da69127785bf57956b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885005"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

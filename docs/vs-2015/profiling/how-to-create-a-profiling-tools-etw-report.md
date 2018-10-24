@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ccffb796b32313f9b7e48e1a61e5625085d3078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 84556a47fe352054255a331c2e689d519c217f63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891841"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：建立程式碼剖析工具 ETW 報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "49256616"
 > [!NOTE]
 >  您無法在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的介面中顯示 ETW 報告。  
   
--   如需有關如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的介面來收集 ETW 資料的資訊，請參閱[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
+- 如需有關如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的介面來收集 ETW 資料的資訊，請參閱[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
   
--   如需有關如何從命令提示字元收集 ETW 資料的資訊，請參閱 [VSPerfCmd](../profiling/vsperfcmd.md) 和 [Events](../profiling/events-vsperfcmd.md)。  
+- 如需有關如何從命令提示字元收集 ETW 資料的資訊，請參閱 [VSPerfCmd](../profiling/vsperfcmd.md) 和 [Events](../profiling/events-vsperfcmd.md)。  
   
- 您可以使用 **VSReport/summary:etw** 命令來產生 ETW 報告。 包含 ETW 資料的 .etl 必須位於與分析資料檔 (.vsp 或 .vsps) 相同的目錄中。 根據預設，產生報告時，會以逗號分隔值 (.csv) 檔案的形式產生。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
+  您可以使用 **VSReport/summary:etw** 命令來產生 ETW 報告。 包含 ETW 資料的 .etl 必須位於與分析資料檔 (.vsp 或 .vsps) 相同的目錄中。 根據預設，產生報告時，會以逗號分隔值 (.csv) 檔案的形式產生。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ### <a name="to-generate-an-etw-report"></a>產生 ETW 報告  
   

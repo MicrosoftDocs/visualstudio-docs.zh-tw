@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892307"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
 
@@ -70,25 +70,25 @@ ms.locfileid: "42634718"
 
  有兩種活動類型：
 
--   *簡單活動*執行單一工作單位，例如 「 延遲 1 天 」 或 「 啟動 Web 服務 」。
+- *簡單活動*執行單一工作單位，例如 「 延遲 1 天 」 或 「 啟動 Web 服務 」。
 
--   *複合活動*包含其他活動; 例如，條件式活動可能會包含兩個分支。
+- *複合活動*包含其他活動; 例如，條件式活動可能會包含兩個分支。
 
- 這兩種活動類型位於**工具箱**。
+  這兩種活動類型位於**工具箱**。
 
- 活動可以有屬性、 方法和事件。 使用**屬性**視窗來設定活動的屬性。
+  活動可以有屬性、 方法和事件。 使用**屬性**視窗來設定活動的屬性。
 
- 您也可以建立自訂活動。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
+  您也可以建立自訂活動。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
 
- 活動會組織中的下列索引標籤**工具箱**:
+  活動會組織中的下列索引標籤**工具箱**:
 
--   **SharePoint 工作流程**
+- **SharePoint 工作流程**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- 並非所有的核心工作流程活動被支援的 SharePoint。 如需詳細資訊，請參閱 <<c0> [ 工作流程活動的 Windows SharePoint Services 概觀](http://go.microsoft.com/fwlink/?LinkID=156094)。
+  並非所有的核心工作流程活動被支援的 SharePoint。 如需詳細資訊，請參閱 <<c0> [ 工作流程活動的 Windows SharePoint Services 概觀](http://go.microsoft.com/fwlink/?LinkID=156094)。
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流程活動
  **SharePoint 工作流程** 索引標籤包含專用的活動，以用於[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]。 這些活動會簡化，並簡化開發文件生命週期工作流程。 如需詳細資訊中所列之活動的相關**SharePoint 工作流程**索引標籤上，請參閱[工作流程活動的 Windows SharePoint Services 概觀](http://go.microsoft.com/fwlink/?LinkID=156094)。
@@ -111,15 +111,15 @@ ms.locfileid: "42634718"
 
  有四種類型的可用工作流程中的表單：
 
--   關聯
+- 關聯
 
--   起始
+- 起始
 
--   修改
+- 修改
 
--   工作
+- 工作
 
- 其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含關聯和初始表單的項目範本。 舉例*關聯表單*是可讓系統管理員安裝工作流程的其中一個輸入參數與工作流程，例如費用工作流程的消費限制。 舉例*初始表單*是可讓費用工作流程的使用者到工作流程中輸入所花費的金額。 如需這些表單類型的詳細資訊，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
+  其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含關聯和初始表單的項目範本。 舉例*關聯表單*是可讓系統管理員安裝工作流程的其中一個輸入參數與工作流程，例如費用工作流程的消費限制。 舉例*初始表單*是可讓費用工作流程的使用者到工作流程中輸入所花費的金額。 如需這些表單類型的詳細資訊，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
 ### <a name="item-properties"></a>項目屬性
  您也可以使用 SharePoint 文件庫或清單中項目的屬性，從使用者收集資訊。 主要程式碼檔案 （Workflow1.cs 或 Workflow1.vb） 會宣告名為 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 類別的執行個體`workflowProperties`。 使用`workflowProperties`物件來存取文件庫或清單中的程式碼的屬性。 如需範例，請參閱[逐步解說： 建立和偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。

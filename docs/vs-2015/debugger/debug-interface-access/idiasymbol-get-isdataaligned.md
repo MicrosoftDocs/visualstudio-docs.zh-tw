@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06016472ee627134fb5eb328cf82d0c3de1b5365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e01ab9de41bd8ead1348eb58308008e55e6323e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891969"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_isDataAligned(
 >  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 使用非預設資料對齊編譯可執行檔時，會通常會設定這個屬性。 例如，Microsoft c + + 編譯器可以變更使用命令列選項時，資料對齊 /Zp*#*，其中*#* 是位元組值。  
+ 使用非預設資料對齊編譯可執行檔時，會通常會設定這個屬性。 例如，Microsoft c + + 編譯器可以變更使用命令列選項時，資料對齊 /Zp<em>#</em>，其中*#* 是位元組值。  
   
 ## <a name="requirements"></a>需求  
   

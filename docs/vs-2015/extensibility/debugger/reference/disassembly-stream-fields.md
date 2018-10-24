@@ -17,12 +17,12 @@ ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70c763746252bf83b1a64ad7fe0f18d4e76a3880
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d5e4c72c95122692e3cc6ebb226fa5a2cb1f469
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886704"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

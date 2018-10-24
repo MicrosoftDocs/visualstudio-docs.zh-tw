@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 49baf6fe645df35949f47f2796197977d428427e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885963"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219：不要在 exception 子句中引發例外狀況
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷、 中斷|
 
 ## <a name="cause"></a>原因

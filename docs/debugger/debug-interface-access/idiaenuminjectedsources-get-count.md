@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Get_count |Microsoft 文件'
+title: 'Idiaenuminjectedsources:: Get_count |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1357c45c3289c7592071f3a64635f07633f854
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c44b33ead28d27416a4d54fea232a89ef8749020
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888082"
 ---
 # <a name="idiaenuminjectedsourcesgetcount"></a>IDiaEnumInjectedSources::get_Count
 擷取插入來源的數目。  
@@ -34,10 +34,10 @@ HRESULT get_Count (
   
 #### <a name="parameters"></a>參數  
  pRetVal  
- [out]傳回插入來源的數目。  
+ [out]傳回插入的來源數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886457"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
@@ -301,7 +301,7 @@ Moniker 用來代表的模型和圖表檔案的不同部分之間的交互參考
 來源類別節點下找到角色資料節點。
 
 |屬性|描述|
-|--------------|-----------------|
+|-|-|
 |有自訂 Moniker|設定為 true，如果您想要提供自己的程式碼產生及解決周遊此關聯性的 moniker。<br /><br /> 如需詳細指示，請建置方案，，，然後按兩下 錯誤訊息。|
 |網域關聯性|指定要套用這些選項的關係。 唯讀。|
 |省略項目|如果為 true，XML 節點對應至來源角色會省略結構描述。<br /><br /> 如果來源和目標類別之間有一個以上的關聯性，此角色的節點會區分屬於兩個關聯性的連結。 因此，建議您不要設定此選項在此情況下。|

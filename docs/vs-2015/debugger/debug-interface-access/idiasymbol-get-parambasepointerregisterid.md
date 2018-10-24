@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e37459d50dc4c4d6cb77bc27b90c322c35bec66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86ddb9b07acd82787b84768dc36d804e44bc5cc4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886654"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

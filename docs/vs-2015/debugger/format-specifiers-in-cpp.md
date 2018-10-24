@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894049"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49249817"
   
 > [!NOTE]
 >  Visual Studio 原生偵錯工具變更成新的偵錯引擎。 這項變更包括加入一些新的格式規範，以及移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。  
->   
->  -   [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
-> -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
+> 
+> - [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
+>   -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
   
 ## <a name="using-format-specifiers"></a>使用格式規範  
  如果您有下列程式碼：  

@@ -16,39 +16,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888667"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何： 在文件中以程式設計方式擴充範圍
   在您定義 Microsoft Office Word 文件中的 <xref:Microsoft.Office.Interop.Word.Range> 物件之後，可以使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法來變更其起始點和結束點。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>並<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>方法會採用相同的兩個引數，*單元*並*計數*。 *計數*引數是要移動的單位數和*單元*引數可以是下列其中一種<xref:Microsoft.Office.Interop.Word.WdUnits>值：  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 下列範例會定義一個七個字元的範圍， 然後將範圍的起始位置移到原始起始位置之後的七個字元處。 由於範圍的結束位置也是在起始位置之後的七個字元處，結果會使範圍包含零個字元。 程式碼接著會將結束位置移到目前結束位置之後的七個字元處。  
+  下列範例會定義一個七個字元的範圍， 然後將範圍的起始位置移到原始起始位置之後的七個字元處。 由於範圍的結束位置也是在起始位置之後的七個字元處，結果會使範圍包含零個字元。 程式碼接著會將結束位置移到目前結束位置之後的七個字元處。  
   
 ## <a name="to-extend-a-range"></a>擴充範圍  
   

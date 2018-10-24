@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e065a887ea34a124efef13f0f02c3f850e8c32e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 107e42378f5ae2315ed8f7613d941cd318b1420d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894400"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

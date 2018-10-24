@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8903f18a578c9365b34ea420706b4e9f41fd2b1c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890227"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的簡單資料繫結
 
@@ -74,27 +74,27 @@ ms.locfileid: "36758872"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>將具類型資料集加入專案
 
-1.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
+1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
 
-2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
+2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-3.  按一下 [ **資料庫**]，然後按 [ **下一步**]。
+3. 按一下 [ **資料庫**]，然後按 [ **下一步**]。
 
-4.  如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
+4. 如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
 
-     否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+    否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-5.  在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
+5. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
-6.  在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表** ]，然後選取 [ **Customer (SalesLT)**]。
+6. 在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表** ]，然後選取 [ **Customer (SalesLT)**]。
 
-7.  按一下 [ **完成**]。
+7. 按一下 [ **完成**]。
 
-     *AdventureWorksLTDataSet.xsd*檔案新增至**方案總管 中**。 這個檔案會定義下列項目：
+    *AdventureWorksLTDataSet.xsd*檔案新增至**方案總管 中**。 這個檔案會定義下列項目：
 
-    -   具類型資料集，名稱為 `AdventureWorksLTDataSet`。 此資料集代表 AdventureWorksLT 資料庫中 **Customer (SalesLT)** 資料表的內容。
+   - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 此資料集代表 AdventureWorksLT 資料庫中 **Customer (SalesLT)** 資料表的內容。
 
-    -   名為 TableAdapter `CustomerTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+   - 名為 TableAdapter `CustomerTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      您將在本逐步解說稍後用到這兩個物件。
 

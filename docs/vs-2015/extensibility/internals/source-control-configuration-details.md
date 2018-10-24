@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884156"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49297813"
   
  以回應`IVsQueryEditQuerySave2::QueryEditFiles`呼叫時，環境也可以執行下列動作：  
   
--   拒絕對變更的呼叫，編輯器或專案在此情況下必須保持不變 （全新） 狀態。  
+- 拒絕對變更的呼叫，編輯器或專案在此情況下必須保持不變 （全新） 狀態。  
   
--   表示應重新載入文件資料。 針對專案中，環境將會重新載入專案的資料。 編輯器必須重新載入的資料磁碟，透過其<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>實作。 在任一情況下，重新載入資料時，可以變更專案或編輯器中的內容。  
+- 表示應重新載入文件資料。 針對專案中，環境將會重新載入專案的資料。 編輯器必須重新載入的資料磁碟，透過其<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>實作。 在任一情況下，重新載入資料時，可以變更專案或編輯器中的內容。  
   
- 它是複雜且困難的工作，改建適當`IVsQueryEditQuerySave2::QueryEditFiles`到現有的程式碼基底的呼叫。 如此一來，這些呼叫應該在建立專案或編輯器整合。  
+  它是複雜且困難的工作，改建適當`IVsQueryEditQuerySave2::QueryEditFiles`到現有的程式碼基底的呼叫。 如此一來，這些呼叫應該在建立專案或編輯器整合。  
   
 ## <a name="request-permission-to-save-a-file"></a>權限，才能儲存檔案  
  專案或編輯器儲存檔案之前，必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 對於專案檔案，這些呼叫會自動完成此解決方案，知道何時要儲存專案檔。 編輯器會負責進行這些呼叫，除非編輯器實作`IVsPersistDocData2`會使用協助程式函式<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果您的編輯器實作`IVsPersistDocData2`中，如此一來，然後呼叫`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`就自動完成。  

@@ -17,12 +17,12 @@ ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465a4db6c2cdf9474282a9f841e25389d869b637
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ac98ff3d07df0527ff0c262740edf74288ae7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886860"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

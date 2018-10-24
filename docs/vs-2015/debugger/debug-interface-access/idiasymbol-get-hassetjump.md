@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa113d43f848c6f1d953f6f03fef14ebae952dee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff7e899255d4cafc20bd488fa4595f386a6dafdd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886600"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

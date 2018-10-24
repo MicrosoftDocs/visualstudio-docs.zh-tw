@@ -17,12 +17,12 @@ ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c34032efac1d885d767e61ca126eb6e9a6a2bb3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdbd6ec439fc46b0ecab7621d4f793c1b3e33450
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893477"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
