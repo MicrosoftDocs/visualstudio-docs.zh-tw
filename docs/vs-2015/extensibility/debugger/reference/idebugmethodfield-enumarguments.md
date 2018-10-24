@@ -17,12 +17,12 @@ ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db52be9d345009f88981c56d9d329d31264421d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2e016fde472874a902a80e4fe23f45a1cb3e5134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852033"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

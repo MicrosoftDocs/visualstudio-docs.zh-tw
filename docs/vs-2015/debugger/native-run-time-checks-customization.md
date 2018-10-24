@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856596"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您編譯 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  
   
--   若要將執行階段檢查訊息傳送至非預設的檔案或目的端。  
+- 若要將執行階段檢查訊息傳送至非預設的檔案或目的端。  
   
--   若要指定使用協力廠商偵錯工具所出現的執行階段訊息之輸出目的端。  
+- 若要指定使用協力廠商偵錯工具所出現的執行階段訊息之輸出目的端。  
   
--   若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 相反地，它們會顯示**Assert**對話方塊中，針對每個執行階段錯誤。  
+- 若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 相反地，它們會顯示**Assert**對話方塊中，針對每個執行階段錯誤。  
   
- 若要自訂執行階段錯誤檢查，您可以：  
+  若要自訂執行階段錯誤檢查，您可以：  
   
--   撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱 <<c0> [ 如何： 撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
+- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱 <<c0> [ 如何： 撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
   
--   自訂錯誤訊息目的端  
+- 自訂錯誤訊息目的端  
   
--   查詢執行階段錯誤的相關資訊  
+- 查詢執行階段錯誤的相關資訊  
   
 ## <a name="customize-the-error-message-destination"></a>自訂錯誤訊息目的端  
  如果使用 `_CrtDbgReportW` 報告錯誤，您便可以使用 `_CrtSetReportMode` 來指定錯誤訊息目的端。  

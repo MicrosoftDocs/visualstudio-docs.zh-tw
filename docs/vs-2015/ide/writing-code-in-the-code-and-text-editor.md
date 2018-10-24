@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838682"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
  若要隱藏巡覽列，請在 [文字編輯器] 的 [所有語言] 設定中 ([工具]/[選項]/[文字編輯器]/[所有語言]  ，或變更各個語言的設定)，變更 [巡覽列]選項。 您可以巡覽下拉式方塊，如下所示：  
 
--   若要將焦點從程式碼視窗移至巡覽列，請按快速鍵組合 CTRL+F2。  
+- 若要將焦點從程式碼視窗移至巡覽列，請按快速鍵組合 CTRL+F2。  
 
--   若要將焦點從巡覽列回復到程式碼視窗，請按 ESC 鍵。  
+- 若要將焦點從巡覽列回復到程式碼視窗，請按 ESC 鍵。  
 
--   若要將焦點從巡覽列的某個項目移至另一個項目，請按 TAB 鍵。  
+- 若要將焦點從巡覽列的某個項目移至另一個項目，請按 TAB 鍵。  
 
--   若要選取具有焦點的巡覽列項目並返回 IDE，請按 ENTER 鍵  
+- 若要選取具有焦點的巡覽列項目並返回 IDE，請按 ENTER 鍵  
 
--   若要巡覽至類別或類型，請在左側下拉式清單按一下其名稱。  
+- 若要巡覽至類別或類型，請在左側下拉式清單按一下其名稱。  
 
--   若要直接巡覽至類別中的程序，請在右側下拉式清單中按一下程序。  
+- 若要直接巡覽至類別中的程序，請在右側下拉式清單中按一下程序。  
 
- 在部分類別中，定義在目前程式碼檔案外部的成員可能會變成灰色。  
+  在部分類別中，定義在目前程式碼檔案外部的成員可能會變成灰色。  
 
 ## <a name="find-code-using-navigate-to"></a>使用巡覽至來尋找程式碼
 Visual Studio 的 [巡覽至] 命令會執行焦點式的搜尋您的程式碼，可協助您在程式碼檔案、 檔案路徑和程式碼符號中找到指定的項目。 與 [尋找] 或 [檔案中尋找] 這類其他文字搜尋不同，[巡覽至] 會將搜尋範圍限制為實際程式碼存在的區域，例如檔案、表單和程式碼模組。 例如，如果您在整個方案中使用 [尋找] 或 [檔案中尋找] 搜尋 ASP.NET Web 應用程式中的字串，則可能會收到數個相符項目，包括程式碼備註中字串的執行個體。 藉由使用瀏覽至，不過，您可能只取得單一函式，並忽略任何程式碼備註中字串的執行個體。

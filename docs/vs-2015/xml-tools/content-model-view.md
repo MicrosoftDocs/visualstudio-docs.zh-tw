@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860301"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ ms.locfileid: "49274400"
   
  您可以使用下列方式控制縮放：  
   
--   當滑鼠停留在內容模型檢視介面上時，按住 CTRL 同時轉動滑鼠滾輪。  
+- 當滑鼠停留在內容模型檢視介面上時，按住 CTRL 同時轉動滑鼠滾輪。  
   
--   使用滑桿控制項。 滑桿會顯示目前的縮放層級。  
+- 使用滑桿控制項。 滑桿會顯示目前的縮放層級。  
   
- 當您選取縮放滑桿、將滑鼠停留於滑桿上方、或使用 CTRL 搭配滑鼠滾輪進行縮放時，滑桿會呈不透明狀，其他所有時間則呈透明狀。  
+  當您選取縮放滑桿、將滑鼠停留於滑桿上方、或使用 CTRL 搭配滑鼠滾輪進行縮放時，滑桿會呈不透明狀，其他所有時間則呈透明狀。  
   
 ## <a name="xml-editor-integration"></a>XML 編輯器整合  
  您可以使用內容功能表，在 XSD 設計工具和 XML 編輯器之間來回切換。  

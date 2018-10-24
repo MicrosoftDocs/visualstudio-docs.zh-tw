@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837577"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "49306367"
   
  專案程式碼包括：  
   
--   自訂控制項和使用者控制項  
+- 自訂控制項和使用者控制項  
   
--   類別庫  
+- 類別庫  
   
--   值轉換器  
+- 值轉換器  
   
--   標的為從專案程式碼產生之設計階段資料的繫結  
+- 標的為從專案程式碼產生之設計階段資料的繫結  
   
- 當專案程式碼停用後，Visual Studio 會顯示不再提供資料之繫結的預留位置 (如屬性名稱)，或不再執行之控制項的預留位置。  
+  當專案程式碼停用後，Visual Studio 會顯示不再提供資料之繫結的預留位置 (如屬性名稱)，或不再執行之控制項的預留位置。  
   
- ![未處理的例外狀況對話方塊](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![未處理的例外狀況對話方塊](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>判斷專案程式碼是否會造成例外狀況  
   

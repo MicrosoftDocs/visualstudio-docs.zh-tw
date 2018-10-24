@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830947"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,82 +40,82 @@ ms.locfileid: "49231175"
   
 #### <a name="to-create-a-menu-controller"></a>若要建立功能表控制器  
   
-1.  請依照下列所述的程序[新增至工具視窗的工具列](../extensibility/adding-a-toolbar-to-a-tool-window.md)建立工具視窗具有工具列。  
+1. 請依照下列所述的程序[新增至工具視窗的工具列](../extensibility/adding-a-toolbar-to-a-tool-window.md)建立工具視窗具有工具列。  
   
-2.  在 TWTestCommandPackage.vsct，移至的 Symbols 區段。 在名為 GuidSymbol 元素**guidTWTestCommandPackageCmdSet**，宣告您的功能表控制站、 功能表控制站群組中和三個功能表項目。  
+2. 在 TWTestCommandPackage.vsct，移至的 Symbols 區段。 在名為 GuidSymbol 元素**guidTWTestCommandPackageCmdSet**，宣告您的功能表控制站、 功能表控制站群組中和三個功能表項目。  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  在 [功能表] 區段中之後上次的功能表項目，, 定義功能表控制器為功能表。  
+3. 在 [功能表] 區段中之後上次的功能表項目，, 定義功能表控制器為功能表。  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges`和`TextIsAnchorCommand`旗標必須是包含啟用功能表控制站，以反映選取的最後一個命令。  
+    `TextChanges`和`TextIsAnchorCommand`旗標必須是包含啟用功能表控制站，以反映選取的最後一個命令。  
   
-4.  群組中一節，在最後一個群組項目之後加入功能表控制站群組。  
+4. 群組中一節，在最後一個群組項目之後加入功能表控制站群組。  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     藉由設定功能表控制站做為父系，放置在此群組中的任何命令會出現在功能表控制站。 `priority`省略屬性，則可將它設定為預設值為 0，因為它是唯一的群組功能表控制站上。  
+    藉由設定功能表控制站做為父系，放置在此群組中的任何命令會出現在功能表控制站。 `priority`省略屬性，則可將它設定為預設值為 0，因為它是唯一的群組功能表控制站上。  
   
-5.  在 [按鈕] 區段中，最後的按鈕項目之後, 加入按鈕項目為每個功能表項目。  
+5. 在 [按鈕] 區段中，最後的按鈕項目之後, 加入按鈕項目為每個功能表項目。  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  此時，您可以查看功能表控制站。 建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
+6. 此時，您可以查看功能表控制站。 建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
   
-    1.  在 **檢視 / 其他 Windows**功能表中，開啟**測試 ToolWindow**。  
+   1. 在 **檢視 / 其他 Windows**功能表中，開啟**測試 ToolWindow**。  
   
-    2.  功能表控制器會出現在 [工具] 視窗的工具列上。  
+   2. 功能表控制器會出現在 [工具] 視窗的工具列上。  
   
-    3.  按一下右側看到三個可能的命令將功能表控制站上的箭號。  
+   3. 按一下右側看到三個可能的命令將功能表控制站上的箭號。  
   
-     請注意當您按一下命令時，功能表控制器的標題會變更以顯示該命令。 在下一步 區段中，我們將啟用這些命令的程式碼。  
+      請注意當您按一下命令時，功能表控制器的標題會變更以顯示該命令。 在下一步 區段中，我們將啟用這些命令的程式碼。  
   
 ## <a name="implementing-the-menu-controller-commands"></a>實作功能表控制器命令  
   

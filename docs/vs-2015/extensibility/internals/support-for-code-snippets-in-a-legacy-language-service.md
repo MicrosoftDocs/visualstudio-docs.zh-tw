@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847785"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  當語言服務的捷徑名稱，它會呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A>方法，以取得檔案名稱和程式碼片段的標題。 語言服務接著會呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>方法中的<xref:Microsoft.VisualStudio.Package.ExpansionProvider>類別，以插入程式碼片段。 Visual Studio 會呼叫下列方法中指定的順序<xref:Microsoft.VisualStudio.Package.ExpansionProvider>程序期間的插入程式碼片段的類別：  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- 如需有關如何取得一份已安裝的程式碼片段語言服務的詳細資訊，請參閱[逐步解說： 取得清單的安裝程式碼片段 （舊版實作）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
+   如需有關如何取得一份已安裝的程式碼片段語言服務的詳細資訊，請參閱[逐步解說： 取得清單的安裝程式碼片段 （舊版實作）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
   
 ## <a name="implementing-the-expansionfunction-class"></a>實作 ExpansionFunction 類別  
  展開函式是內嵌在程式碼片段範本，並傳回放置在欄位中的一或多個值的具名函式。 為了支援擴充函式語言服務中，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.ExpansionFunction>類別，並實作<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A>方法。 您必須接著覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回您的版本的新具現化<xref:Microsoft.VisualStudio.Package.ExpansionFunction>您支援每個擴充函式的類別。 如果您支援擴充函式的可能值的清單，您也必須覆寫<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A>方法中的<xref:Microsoft.VisualStudio.Package.ExpansionFunction>類別，以傳回這些值的清單。  

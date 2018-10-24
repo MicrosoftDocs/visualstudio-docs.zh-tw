@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855829"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ ms.locfileid: "49292795"
   
 #### <a name="to-create-a-bullseye-target-texture"></a>建立「靶心」目標材質  
   
-1.  建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
+1. 建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
   
-2.  將影像大小設定為 512x512 像素。 在 [屬性] 視窗中，將 [寬度] 和 [高度] 屬性的值設定為 `512`。  
+2. 將影像大小設定為 512x512 像素。 在 [屬性] 視窗中，將 [寬度] 和 [高度] 屬性的值設定為 `512`。  
   
-3.  在 [影像編輯器] 工具列上，選擇 [填滿] 工具。 [屬性] 視窗現在會將 [填滿] 工具的屬性和影像屬性一起顯示。  
+3. 在 [影像編輯器] 工具列上，選擇 [填滿] 工具。 [屬性] 視窗現在會將 [填滿] 工具的屬性和影像屬性一起顯示。  
   
-4.  將前景色彩設為完全透明的黑色。 在 [屬性] 視窗的 [色彩] 屬性群組中，選取 [前景]。 將色彩選擇器旁邊的 [R]、[G]、[B] 及 [A] 屬性值設定為 `0`。  
+4. 將前景色彩設為完全透明的黑色。 在 [屬性] 視窗的 [色彩] 屬性群組中，選取 [前景]。 將色彩選擇器旁邊的 [R]、[G]、[B] 及 [A] 屬性值設定為 `0`。  
   
-5.  在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 Shift 鍵並選擇影像中的任意點。 使用 Shift 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。  
+5. 在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 Shift 鍵並選擇影像中的任意點。 使用 Shift 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。  
   
-    > [!IMPORTANT]
-    >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
+   > [!IMPORTANT]
+   >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
   
-6.  在 [影像編輯器] 工具列上，選擇 [橢圓形] 工具。  
+6. 在 [影像編輯器] 工具列上，選擇 [橢圓形] 工具。  
   
-7.  將前景色彩設為完全不透明的黑色。 將 [R]、[G] 及 [B] 屬性的值設定為 `0`，並將 [A] 屬性的值設定為 `255`。  
+7. 將前景色彩設為完全不透明的黑色。 將 [R]、[G] 及 [B] 屬性的值設定為 `0`，並將 [A] 屬性的值設定為 `255`。  
   
-8.  將背景色彩設為完全不透明的白色。 在 [屬性] 視窗的 [色彩] 屬性群組中，選取 [背景]。 將 [R]、[G]、[B] 及 [A] 屬性的值設定為 `255`。  
+8. 將背景色彩設為完全不透明的白色。 在 [屬性] 視窗的 [色彩] 屬性群組中，選取 [背景]。 將 [R]、[G]、[B] 及 [A] 屬性的值設定為 `255`。  
   
 9. 設定橢圓形外框的寬度。 在 [屬性] 視窗的 [外觀] 屬性群組中，將 [寬度] 屬性的值設定為 `8`。  
   
@@ -89,11 +89,11 @@ ms.locfileid: "49292795"
   
 17. 繪製另一個從像素座標 `(192, 192)` 到像素座標 `(320, 320)` 的圓形。  
   
- 完成「靶心」目標材質。 以下是呈現透明度的最終影像。  
+    完成「靶心」目標材質。 以下是呈現透明度的最終影像。  
   
- ![完整的「靶心」目標材質](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![完整的「靶心」目標材質](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- 下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
+    下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Image Editor](../designers/image-editor.md)

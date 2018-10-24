@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862160"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238517"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用鍵盤將控制項從工具箱新增至設計工具  
   
-1.  在功能表列上，依序選擇 [檢視] 和 [工具箱]。  
+1. 在功能表列上，依序選擇 [檢視] 和 [工具箱]。  
   
-2.  選擇 Ctrl + 向上鍵或 Ctrl + 向下鍵，在目前的工具箱索引標籤的區段之間移動。  
+2. 選擇 Ctrl + 向上鍵或 Ctrl + 向下鍵，在目前的工具箱索引標籤的區段之間移動。  
   
-3.  選擇向上鍵或向下鍵在控制項之間移動。  
+3. 選擇向上鍵或向下鍵在控制項之間移動。  
   
-4.  選取控制項之後，選擇 Enter 鍵。  
+4. 選取控制項之後，選擇 Enter 鍵。  
   
- 控制項會新增至表單或設計工具。  
+   控制項會新增至表單或設計工具。  
   
 ## <a name="dialog-box-options"></a>對話方塊選項  
  您可以使用鍵盤在對話方塊的選項間移動，並變更選項設定。  

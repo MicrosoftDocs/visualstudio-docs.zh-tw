@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811577"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 （在 Visual Studio 中的 Office 程式開發）
   使用**發行精靈**將方案檔複製到指定的位置，建立資訊清單的檔案，並建立安裝程式。  
@@ -41,13 +41,13 @@ ms.locfileid: "35671198"
   
  輸入該位置的磁碟路徑、 檔案共用、 FTP 站台或網站 URL，或按一下**瀏覽**以瀏覽位置 按鈕。 路徑可以是下列格式：  
   
--   相對或絕對路徑在標準 Windows 格式，例如*C:\Deploy\MyApplication*或是*\MyApplication*。  
+- 相對或絕對路徑在標準 Windows 格式，例如*C:\Deploy\MyApplication*或是*\MyApplication*。  
   
--   通用命名慣例 (UNC) 路徑，例如 *\\\ServerName\MyApplication\\*。  
+- 通用命名慣例 (UNC) 路徑，例如 *\\\ServerName\MyApplication\\*。  
   
--   URL 的 web 站台，例如 http://www.microsoft.com/MyApplication。  
+- URL 的 web 站台，例如 http://www.microsoft.com/MyApplication。  
   
- 根據預設，發佈的位置是否*http://localhost/projectname/* 有 IIS 安裝，或如果您這樣做，則為 publish\ 目錄未安裝 IIS。  
+  根據預設，發佈的位置是否*http://localhost/projectname/* 有 IIS 安裝，或如果您這樣做，則為 publish\ 目錄未安裝 IIS。  
   
 > [!NOTE]  
 >  如果目標電腦執行 Windows Vista，則需要有更多的考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 另外，預設位置是永遠*發佈\\*目錄下，不論您是否已安裝 IIS。  

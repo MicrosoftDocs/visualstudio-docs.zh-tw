@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868573"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49304937"
   
  [Win32 專案](#BKMK_Win32_Projects)  
   
--   [若要偵錯 C 或 c + + Win32 應用程式](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [若要偵錯 C 或 c + + Win32 應用程式](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [若要手動設定偵錯組態](#BKMK_To_manually_set_a_Debug_configuration)  
+- [若要手動設定偵錯組態](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Windows Forms 應用程式 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Windows Forms 應用程式 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> 建議的屬性設定  
  在所有 Unmanaged 偵錯情況中，某些屬性必須以相同的方式設定。 下表顯示建議的屬性設定。 此處未列出的設定，可能會因不同的 Unmanaged 專案類型而異。 如需詳細資訊，請參閱[c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ ms.locfileid: "49304937"
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 若要手動設定偵錯組態  
   
-1.  在 **檢視**功能表上，按一下**屬性頁**。  
+1. 在 **檢視**功能表上，按一下**屬性頁**。  
   
-2.  按一下 **組態屬性**節點以開啟它，如果不存在  
+2. 按一下 **組態屬性**節點以開啟它，如果不存在  
   
-3.  選取 **一般**，並將值**輸出**資料列於**偵錯**。  
+3. 選取 **一般**，並將值**輸出**資料列於**偵錯**。  
   
-4.  開啟**C/c + +** 節點，然後選取**一般**。  
+4. 開啟**C/c + +** 節點，然後選取**一般**。  
   
-     在 **偵錯**您指定的偵錯由編譯器所產生的資訊類型的資料列。 您可以選擇的值包括**程式資料庫 (/Zi)** 或是**編輯後繼續 (/ZI) 的程式資料庫**。  
+    在 **偵錯**您指定的偵錯由編譯器所產生的資訊類型的資料列。 您可以選擇的值包括**程式資料庫 (/Zi)** 或是**編輯後繼續 (/ZI) 的程式資料庫**。  
   
-5.  選取 **最佳化**，然後在**最佳化**列中選取**已停用 (/ 0d)** 從下拉式清單。  
+5. 選取 **最佳化**，然後在**最佳化**列中選取**已停用 (/ 0d)** 從下拉式清單。  
   
-     最佳化程式碼較難偵錯，因為產生的指令不能直接對應到您的原始程式碼。 如果您發現程式含有僅出現在最佳化程式碼中的錯誤，您可以啟動這個設定，但是請記住，顯示在 [反組譯碼] 視窗裡的程式碼是由最佳化原始程式碼所產生，可能無法對應至您在原始程式碼視窗所看到的內容。 逐步執行之類的功能，可能無法正確顯示中斷點和執行點。  
+    最佳化程式碼較難偵錯，因為產生的指令不能直接對應到您的原始程式碼。 如果您發現程式含有僅出現在最佳化程式碼中的錯誤，您可以啟動這個設定，但是請記住，顯示在 [反組譯碼] 視窗裡的程式碼是由最佳化原始程式碼所產生，可能無法對應至您在原始程式碼視窗所看到的內容。 逐步執行之類的功能，可能無法正確顯示中斷點和執行點。  
   
-6.  開啟**連結器**節點，然後選取**偵錯**。 在第一個**Generate**列中選取**是 (/debug)** 從下拉式清單。 進行偵錯時，一律要設定這個選項。  
+6. 開啟**連結器**節點，然後選取**偵錯**。 在第一個**Generate**列中選取**是 (/debug)** 從下拉式清單。 進行偵錯時，一律要設定這個選項。  
   
- 如需詳細資訊，請參閱 <<c0> [ c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+   如需詳細資訊，請參閱 <<c0> [ c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
- [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)  
  **Windows Forms 應用程式 (.NET)** 範本會建立[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows Forms 應用程式。 如需詳細資訊，請參閱 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  

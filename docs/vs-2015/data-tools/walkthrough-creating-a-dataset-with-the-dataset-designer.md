@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868257"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49287361"
   
  這個逐步解說中所述的工作包括：  
   
--   建立新**Windows 應用程式**專案。  
+- 建立新**Windows 應用程式**專案。  
   
--   新增空**資料集**項目加入專案。  
+- 新增空**資料集**項目加入專案。  
   
--   建立及設定您的應用程式中的資料來源，建置具有資料集**Dataset 設計工具**。  
+- 建立及設定您的應用程式中的資料來源，建置具有資料集**Dataset 設計工具**。  
   
--   建立 Northwind 資料庫中的連線**伺服器總管**。  
+- 建立 Northwind 資料庫中的連線**伺服器總管**。  
   
--   使用 Tableadapter 建立資料表，在基礎資料庫中資料表的資料集。  
+- 使用 Tableadapter 建立資料表，在基礎資料庫中資料表的資料集。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您需要：  

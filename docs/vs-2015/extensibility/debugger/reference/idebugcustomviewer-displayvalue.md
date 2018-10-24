@@ -17,12 +17,12 @@ ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c653e1c199e1007f62fd423f646042e629a2318
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a96184b993a9ff2350e6424149ee3f585fbd2330
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865020"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ int DisplayValue(
  [in]支援多個類型的自訂檢視器的識別碼。  
   
  `pHostServices`  
- [in]保留。 一律設為 null。  
+ [in] 保留。 一律設為 null。  
   
  `pDebugProperty`  
  [in]介面，可用來擷取要顯示的值。  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869583"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何： 指定 Visual Studio 複製檔案的位置
 當您使用 ClickOnce 發行應用程式時，`Publish Location`屬性會指定放置應用程式檔案和資訊清單的位置。 這可以是檔案路徑或 FTP 伺服器的路徑。  
@@ -34,15 +34,15 @@ ms.locfileid: "39078624"
   
 ### <a name="to-specify-a-publishing-location"></a>指定發行位置  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2. 按一下 [**發佈**] 索引標籤。  
   
-3.  在 **發行位置**欄位中，輸入發行位置，使用下列格式之一：  
+3. 在 **發行位置**欄位中，輸入發行位置，使用下列格式之一：  
   
-    -   若要發行至檔案共用或磁碟路徑，請使用 UNC 路徑中輸入的路徑 (*\\\Server\ApplicationName*) 或檔案路徑 (*C:\Deploy\ApplicationName*)。  
+   - 若要發行至檔案共用或磁碟路徑，請使用 UNC 路徑中輸入的路徑 (*\\\Server\ApplicationName*) 或檔案路徑 (*C:\Deploy\ApplicationName*)。  
   
-    -   若要發行至 FTP 伺服器，請輸入使用之格式的路徑*ftp://ftp.microsoft.com/\<應用程式名稱 >*。  
+   - 若要發行至 FTP 伺服器，請輸入使用之格式的路徑<em>ftp://ftp.microsoft.com/\<應用程式名稱 ></em>。  
   
      請注意，文字必須存在於**發行位置**方塊中才能讓瀏覽 (**...**) 按鈕運作。  
   

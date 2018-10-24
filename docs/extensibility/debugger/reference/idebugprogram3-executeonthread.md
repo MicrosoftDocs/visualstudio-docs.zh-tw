@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram3::ExecuteOnThread |Microsoft 文件
+title: IDebugProgram3::ExecuteOnThread |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aff643014da16ed9644573a77cb8444836d713d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865938"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-執行偵錯工具的程式。 執行緒會傳回給哪一個執行緒執行程式時，正在檢視使用者的偵錯工具資訊。  
+偵錯工具將程式執行。 執行緒會傳回給哪一個執行緒執行程式時，正在檢視使用者的偵錯工具資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,18 +41,18 @@ int ExecuteOnThread(
  [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 有三種不同的方式偵錯工具可以繼續之後停止執行：  
+ 有三種不同的方式偵錯工具可以繼續執行停止後的執行：  
   
--   執行： 取消任何先前的步驟，並執行下一個中斷點為止，依此類推。  
+- 執行： 取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。  
   
--   步驟： 取消任何舊的步驟，並執行，直到新的步驟會完成。  
+- 步驟： 取消任何舊的步驟，並執行，直到新的步驟會完成。  
   
--   繼續： 再次執行，並保持使用中的任何舊的步驟。  
+- 繼續： 再次執行，並讓任何舊的步驟保持在作用中。  
   
- 執行緒傳遞給`ExecuteOnThread`決定哪個步驟取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 執行緒的資訊之後，您只需要取消使用中執行緒上的步驟。  
+  執行緒傳遞給`ExecuteOnThread`決定哪個步驟來取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 了解的執行緒，您只需要取消作用中執行緒上的步驟。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   

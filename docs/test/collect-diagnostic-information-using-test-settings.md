@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865345"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 
@@ -42,7 +42,7 @@ ms.locfileid: "46370753"
 下表提供可以將診斷資料配接器設定為搭配本機或遠端電腦角色使用之各種方式的概觀。
 
 |測試設定中使用的診斷資料配接器|本機電腦的手動測試|自動化測試|手動測試：使用角色集合和環境收集資料|注意|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy：** 此 Proxy 可讓您針對 IntelliTrace 和測試影響診斷資料配接器，收集從用戶端到網頁伺服器之 HTTP 呼叫的相關資訊。|[是]|[是]|[是]|-   僅當已針對用戶端角色選取 IntelliTrace 或測試影響診斷資料配接器時，才使用此項。|
 |**ASP.NET 分析工具：** 您可以建立包含 ASP.NET 分析的測試設定，以收集 ASP.NET Web 應用程式的效能資料。|否|有 (請參閱備註)|否|-   只有當您從 Visual Studio 執行負載測試時，才支援這個診斷資料配接器。|
 |**程式碼涵蓋範圍：** 您可以建立包含程式碼涵蓋範圍資訊的測試設定，用以調查測試所涵蓋的程式碼數量。|否|有 (請參閱備註)|否|-   只有當您在執行測試的電腦上，從 Visual Studio 或 *mstest.exe* 執行自動化測試時，才可以使用程式碼涵蓋範圍。 不支援遠端集合。<br />-   如果您同時設定測試設定來收集 IntelliTrace 資訊，則無法收集程式碼涵蓋範圍資料。 **注意：** 這個診斷資料配接器僅適用於 Visual Studio 測試設定。 它不會用於 Microsoft Test Manager 中的測試設定。 此外，這個配接器是為了提供與 Visual Studio 2010 測試專案的相容性。 **注意：** 為了提供相容性，當使用舊版 MSTest 執行器從 Microsoft Test Manager 或從 Visual Studio 的遠端測試代理程式執行自動化測試時，就會套用程式碼涵蓋範圍。|

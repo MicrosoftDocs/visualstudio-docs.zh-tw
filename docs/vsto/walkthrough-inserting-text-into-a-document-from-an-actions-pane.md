@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862186"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說： 從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。  
@@ -60,17 +60,17 @@ ms.locfileid: "35670895"
   
 ### <a name="to-add-text-to-your-document"></a>將文字加入文件  
   
-1.  輸入下列文字插入 Word 文件：  
+1. 輸入下列文字插入 Word 文件：  
   
-     **2008 年 3 月 21日日**  
+    **2008 年 3 月 21日日**  
   
-     **名稱**  
+    **名稱**  
   
-     **地址**  
+    **地址**  
   
-     **這是基本的動作 窗格，在 Word 中的範例。**  
+    **這是基本的動作 窗格，在 Word 中的範例。**  
   
- 您可以加入<xref:Microsoft.Office.Tools.Word.Bookmark>藉由將它從您的文件的控制項**工具箱**在 Visual Studio 中或使用**書籤**在 Word 中的對話方塊。  
+   您可以加入<xref:Microsoft.Office.Tools.Word.Bookmark>藉由將它從您的文件的控制項**工具箱**在 Visual Studio 中或使用**書籤**在 Word 中的對話方塊。  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>若要加入書籤控制項加入文件  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Clone |Microsoft 文件'
+title: 'Idiaenumdebugstreamdata:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc2fc77cd7a0c71f2b30febea9a1351dd807933
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2bc77d425f71be791bac853b57073a6cb3cc48e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862381"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
 建立包含相同的列舉的序列，做為目前的列舉值的列舉值。  
@@ -34,10 +34,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>參數  
  ppenum  
- [out]傳回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，其中包含重複的偵錯資料流記錄順序。  
+ [out]傳回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，其中包含偵錯資料流記錄的重複的序列。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

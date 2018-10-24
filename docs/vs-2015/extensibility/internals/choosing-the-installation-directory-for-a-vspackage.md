@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843401"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>選擇 VSPackage 的安裝目錄
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)指出登錄項目控制 where[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]實際上會尋找 VSPackage 的附屬 DLL。 不過，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]嘗試載入附屬 DLL 中命名的 LCID 值，以下列順序：  
   
-1.  預設 LCID (VS LCID，例如適用於英文的 \1033)  
+1. 預設 LCID (VS LCID，例如適用於英文的 \1033)  
   
-2.  使用預設的子語言的預設 LCID。  
+2. 使用預設的子語言的預設 LCID。  
   
-3.  系統預設 LCID。  
+3. 系統預設 LCID。  
   
-4.  預設子語言使用系統預設 LCID。  
+4. 預設子語言使用系統預設 LCID。  
   
-5.  美國英文 (。 \1033 或。 \0x409)。  
+5. 美國英文 (。 \1033 或。 \0x409)。  
   
- 如果您的 VSPackage DLL 包含資源，而 SatelliteDll\DllName 登錄項目指向它，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]嘗試載入它們依上述順序。  
+   如果您的 VSPackage DLL 包含資源，而 SatelliteDll\DllName 登錄項目指向它，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]嘗試載入它們依上述順序。  
   
 ## <a name="see-also"></a>另請參閱  
  [共用和建立版本的 Vspackage 之間進行選擇](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

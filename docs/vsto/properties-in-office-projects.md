@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9369a42f1f4a8497df42f940bb8bd23453803a26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862147"
 ---
 # <a name="properties-in-office-projects"></a>Office 專案中的屬性
   在 Visual Studio 中，Office 專案有幾個可用的重要屬性。 這些屬性可於 [屬性]  視窗中取得。  
@@ -34,7 +34,7 @@ ms.locfileid: "34692768"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="namespace-for-host-item"></a>主項目命名空間  
- 使用**主項目命名空間**變更主項目類別的命名空間的屬性 (例如， `ThisAddIn`， `ThisWorkbook`，或`ThisDocument`類別) 在 Visual C# 專案中。 這個屬性會出現在**屬性**視窗的文件層級專案中，選取 文件 節點時 (例如*ExcelWorkbook1.xlsx*或*WordDocument1.docx*) 或 VSTO 增益集專案中 （例如 Excel 或 Word） 中的應用程式節點**方案總管 中**。  
+ 使用**主項目命名空間**屬性來變更主項目類別的命名空間 (例如`ThisAddIn`， `ThisWorkbook`，或`ThisDocument`類別) 視覺效果中C#專案。 此屬性會出現在**屬性**視窗中的文件層級專案，選取 文件 節點時 (例如*ExcelWorkbook1.xlsx*或是*WordDocument1.docx*) 或 VSTO 增益集專案 （例如 Excel 或 Word） 中的應用程式節點**方案總管 中**。  
   
  當您建立 Visual C# Office 專案時，主項目會根據專案名稱獲得命名空間。 建議您使用 [主項目命名空間]  屬性變更命名空間，不要直接編輯程式碼檔案。 當您使用這個屬性時，就會變更產生 (隱藏) 的程式碼檔案中的命名空間，可見的程式碼檔案也一樣。  
   
@@ -43,11 +43,11 @@ ms.locfileid: "34692768"
   
  這個屬性接受布林值：  
   
--   選取 **true** 快取文件中的資料集。  
+- 選取 **true** 快取文件中的資料集。  
   
--   選取 **false** ，如果您不要快取文件中的資料集。  
+- 選取 **false** ，如果您不要快取文件中的資料集。  
   
- 如需有關快取資料的詳細資訊，請參閱[文件層級自訂中快取資料](../vsto/cached-data-in-document-level-customizations.md)。  
+  如需有關快取資料的詳細資訊，請參閱 <<c0> [ 快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)。  
   
 ## <a name="value2"></a>Value2  
  [Value2]  屬性只適用於 Excel 活頁簿或範本專案。 當您選取工作表設計工具上的 **控制項時，它會出現在 [屬性]****視窗的 [Databindings]**<xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性節點下。  

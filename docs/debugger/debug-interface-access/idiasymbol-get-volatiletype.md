@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_volatiletype |Microsoft 文件'
+title: 'Idiasymbol:: Get_volatiletype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a71f65988a140b4fe67ceb6244b5221767bf28b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 02baf9777a1b7cc208903fe5e63a378013b581e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851021"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  
@@ -34,16 +34,16 @@ HRESULT get_volatileType (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果 UDT 會變動，否則會傳回`FALSE`。  
+ [out]會傳回`TRUE`如果 UDT 是變動性; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 在 c + +，UDT 可以標示`volatile`關鍵字，表示其內容不會假設存在一個存取從到下一步。  
+ 可以使用標記在 c + +，UDT`volatile`關鍵字，表示無法從一個存取存到下一個假設其內容。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862966"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services)
 
@@ -27,10 +27,11 @@ ms.locfileid: "37116831"
 
  您可以在 WCF Data Services 應用程式中使用概念模型。 下列主題示範如何查詢透過概念模型的資料。
 
-|主題|描述|
-|-----------|-----------------|
-|[如何： 執行資料服務查詢](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|示範如何查詢資料服務[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]應用程式。|
-|[如何： 投影查詢結果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|示範如何減少透過資料服務查詢傳回的資料量。|
+
+| 主題 | 描述 |
+| - | - |
+| [如何： 執行資料服務查詢](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 示範如何查詢資料服務[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]應用程式。 |
+| [如何： 投影查詢結果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 示範如何減少透過資料服務查詢傳回的資料量。 |
 
  當您使用的概念模型時，您可以定義以符合您的網域中的資料類型無效。 您可以在模型中，定義有效的資料，或您可以將驗證新增至您的實體或資料服務執行的作業。
 

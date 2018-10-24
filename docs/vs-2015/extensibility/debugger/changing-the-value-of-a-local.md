@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdefc93f8d9843ac18a01f52e9c2a36f59ce4ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843640"
 ---
 # <a name="changing-the-value-of-a-local"></a>變更區域變數的值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49226209"
   
  這是變更區域變數的值的程序的概觀：  
   
-1.  使用者輸入新值之後，Visual Studio 會呼叫[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)本機與相關聯的物件。  
+1. 使用者輸入新值之後，Visual Studio 會呼叫[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)本機與相關聯的物件。  
   
-2.  `IDebugProperty2::SetValueAsString` 會執行下列工作：  
+2. `IDebugProperty2::SetValueAsString` 會執行下列工作：  
   
-    1.  會評估要產生值的字串。  
+   1.  會評估要產生值的字串。  
   
-    2.  繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件取得[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
+   2.  繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件取得[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
   
-    3.  將值轉換成一系列的位元組。  
+   3.  將值轉換成一系列的位元組。  
   
-    4.  呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)將放入記憶體的值的位元組，因此正在偵錯程式可以存取它們。  
+   4.  呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)將放入記憶體的值的位元組，因此正在偵錯程式可以存取它們。  
   
-3.  Visual Studio 會重新整理**區域變數**顯示 (請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊)。  
+3. Visual Studio 會重新整理**區域變數**顯示 (請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊)。  
   
- 此程序也會變更變數的值**監看式**視窗，但是它`IDebugProperty2`而非區域變數的值相關聯的物件`IDebugProperty2`本機與相關聯的物件它本身。  
+   此程序也會變更變數的值**監看式**視窗，但是它`IDebugProperty2`而非區域變數的值相關聯的物件`IDebugProperty2`本機與相關聯的物件它本身。  
   
 ## <a name="in-this-section"></a>本節內容  
  [變更值的範例實作](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

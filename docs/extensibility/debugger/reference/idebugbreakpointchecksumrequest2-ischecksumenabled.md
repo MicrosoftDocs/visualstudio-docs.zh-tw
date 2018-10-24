@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled |Microsoft 文件
+title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34afc9af142371537c82effbfb8c636bcba09dbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306a20b3e2f99acd883332b43751f248db2bf5c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863122"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-判斷是否啟用此文件的總和檢查碼。  
+判斷是否啟用這份文件的總和檢查碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,10 +39,10 @@ public int IsChecksumEnabled(
   
 #### <a name="parameters"></a>參數  
  `pfChecksumEnabled`  
- [out]如果已啟用總和檢查碼; 為 true，則傳回反之則傳回 FALSE。  
+ [out]如果啟用總和檢查碼，則為 true，則傳回否則，會傳回 FALSE。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

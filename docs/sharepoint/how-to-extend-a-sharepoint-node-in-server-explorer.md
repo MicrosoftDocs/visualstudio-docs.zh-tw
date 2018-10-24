@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861835"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何： 擴充 SharePoint 節點在 伺服器總管
   您可以擴充節點底下**SharePoint 連線**中的節點**伺服器總管**。 當您想要將新的子節點、 快顯功能表項目或屬性新增至現有的節點時，這非常有用。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
@@ -40,9 +40,9 @@ ms.locfileid: "37118739"
   
 3.  建立實作 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 介面的類別。  
   
-4.  新增<xref:System.ComponentModel.Composition.ExportAttribute>屬性加入該類別。 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>屬性建構函式的型別。  
+4.  將 <xref:System.ComponentModel.Composition.ExportAttribute> 屬性加入該類別。 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>屬性建構函式的型別。  
   
-5.  新增<xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>屬性加入該類別。 這個屬性會指定您想要擴充的節點類型的字串識別碼。  
+5.  將 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 屬性加入該類別。 這個屬性會指定您想要擴充的節點類型的字串識別碼。  
   
      若要指定 Visual Studio 所提供的內建的節點類型，請將其中一個下列的列舉值傳遞至屬性建構函式：  
   
@@ -61,14 +61,14 @@ ms.locfileid: "37118739"
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何建立兩種不同的節點延伸模組：  
   
--   延伸模組，將操作功能表項目加入至 SharePoint 網站節點。 當您按一下的功能表項目時，它會顯示已按下的節點名稱。  
+- 延伸模組，將操作功能表項目加入至 SharePoint 網站節點。 當您按一下的功能表項目時，它會顯示已按下的節點名稱。  
   
--   擴充功能，新增一個名為的自訂屬性**ContosoExampleProperty**到每個節點都代表一個名為欄位**主體**。  
+- 擴充功能，新增一個名為的自訂屬性**ContosoExampleProperty**到每個節點都代表一個名為欄位**主體**。  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- 此延伸模組會將可編輯的字串屬性加入至節點。 您也可以建立自訂的屬性，顯示從 SharePoint 伺服器的唯讀資料。 如需示範如何執行這項操作的範例，請參閱 <<c0> [ 逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
+  此延伸模組會將可編輯的字串屬性加入至節點。 您也可以建立自訂的屬性，顯示從 SharePoint 伺服器的唯讀資料。 如需示範如何執行這項操作的範例，請參閱 <<c0> [ 逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
   
 ## <a name="compile-the-code"></a>編譯程式碼  
  這個範例需要參考下列組件：  

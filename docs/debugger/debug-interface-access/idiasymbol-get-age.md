@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_age |Microsoft 文件'
+title: 'Idiasymbol:: Get_age |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868465"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-擷取.pdb 檔案存在時間的值。  
+擷取的.pdb 檔案的存留期值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_age (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回.pdb 檔案的存在時間的值。  
+ [out]傳回.pdb 檔案的存留期的值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 存在時間不一定會對應到任何已知的時間值。它通常用來判斷是否與對應的.exe 檔案同步處理的.pdb 檔案。  
+ 存留期不一定會對應至任何已知的時間值;它通常用來判斷是否與對應的.exe 檔案不同步的.pdb 檔案。  
   
 ## <a name="requirements"></a>需求  
   

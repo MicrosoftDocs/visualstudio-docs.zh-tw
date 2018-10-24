@@ -17,12 +17,12 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9b6de2b3c3894b6c6807995150707338e0d7162
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f96c61d80470cd9c2973cb25aa5302cedc2c35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851552"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

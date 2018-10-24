@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867067"
 ---
 # <a name="extending-javascript-intellisense"></a>擴充 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  在 延伸模組程式碼，您可以建立下列事件類型的處理常式使用`addEventListener`:  
   
--   `statementcompletion`其中會加入陳述式完成事件處理常式。 陳述式完成提供一份之後輸入特殊字元像是句號 （.），就會出現的特定類型的成員或識別碼的清單會顯示您輸入時，或當您按下 CTRL + J。處理常式會接收事件物件的型別`CompletionEvent`，可支援下列成員：[屬性的項目](#Items)，[目標屬性](#Target)， [targetName 屬性](#TargetName)，並[範圍屬性](#Scope)。  
+- `statementcompletion`其中會加入陳述式完成事件處理常式。 陳述式完成提供一份之後輸入特殊字元像是句號 （.），就會出現的特定類型的成員或識別碼的清單會顯示您輸入時，或當您按下 CTRL + J。處理常式會接收事件物件的型別`CompletionEvent`，可支援下列成員：[屬性的項目](#Items)，[目標屬性](#Target)， [targetName 屬性](#TargetName)，並[範圍屬性](#Scope)。  
   
--   `signaturehelp`其中會加入處理常式，如 IntelliSense 參數資訊。 參數資訊，可讓您的數目、 名稱和所需的函式參數類型的相關資訊。 處理常式會接收事件物件的型別`SignatureHelpEvent`，可支援下列成員：[目標屬性](#Target)， [parentObject 屬性](#ParentObject)， [functionComments 屬性](#FunctionComments)， [functionHelp 屬性](#FunctionHelp)。  
+- `signaturehelp`其中會加入處理常式，如 IntelliSense 參數資訊。 參數資訊，可讓您的數目、 名稱和所需的函式參數類型的相關資訊。 處理常式會接收事件物件的型別`SignatureHelpEvent`，可支援下列成員：[目標屬性](#Target)， [parentObject 屬性](#ParentObject)， [functionComments 屬性](#FunctionComments)， [functionHelp 屬性](#FunctionHelp)。  
   
--   `statementcompletionhint`其中會加入處理常式，如 IntelliSense 快速諮詢。 [快速諮詢] 快顯方塊會顯示程式碼中之識別碼的完整宣告。 處理常式會接收事件物件的型別`CompletionHintEvent`，可支援下列成員： [completionItem 屬性](#CompletionItem)，以及[symbolHelp 屬性](#SymbolHelp)。  
+- `statementcompletionhint`其中會加入處理常式，如 IntelliSense 快速諮詢。 [快速諮詢] 快顯方塊會顯示程式碼中之識別碼的完整宣告。 處理常式會接收事件物件的型別`CompletionHintEvent`，可支援下列成員： [completionItem 屬性](#CompletionItem)，以及[symbolHelp 屬性](#SymbolHelp)。  
   
- 如需範例，顯示 IntelliSense 功能，例如陳述式完成、 參數資訊，以及快速的資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。  
+  如需範例，顯示 IntelliSense 功能，例如陳述式完成、 參數資訊，以及快速的資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。  
   
 > [!NOTE]
 >  在 JavaScript 中，快速諮詢是指右邊的完成清單會出現快顯方塊。 無法以手動方式叫用 快速諮詢。  

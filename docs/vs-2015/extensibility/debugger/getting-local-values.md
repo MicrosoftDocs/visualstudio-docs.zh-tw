@@ -17,12 +17,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adba052e28a0a879410ca21e4e23759630ceca98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18e21ccebbfbb8e896cef4544c693b468d2f0283
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812123"
 ---
 # <a name="getting-local-values"></a>取得區域變數值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

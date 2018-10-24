@@ -17,23 +17,23 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7121395b54716096e562a8fe14bb38103f4bd8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863525"
 ---
 # <a name="saving-data-in-project-files"></a>將資料儲存於專案檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 專案子類型可以儲存並擷取專案檔中的子型別特定資料。 Managed Package Framework (MPF) 提供兩個介面，以完成這項工作：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面允許存取屬性值從**MSBuild**專案檔的區段。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>可由任何使用者呼叫，只要載入或儲存使用者必須建立相關的資料。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面允許存取屬性值從**MSBuild**專案檔的區段。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>可由任何使用者呼叫，只要載入或儲存使用者必須建立相關的資料。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用來保存自由格式的 XML 中的非建置相關的資料。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>會呼叫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]每當[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]必須保存在專案檔中的非建置相關的資料。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用來保存自由格式的 XML 中的非建置相關的資料。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>會呼叫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]每當[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]必須保存在專案檔中的非建置相關的資料。  
   
- 如需有關如何繼續進行建置和非建置相關的資料的詳細資訊，請參閱[MSBuild 專案檔中的保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
+  如需有關如何繼續進行建置和非建置相關的資料的詳細資訊，請參閱[MSBuild 專案檔中的保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>儲存及擷取組建的相關資料  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839319"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "49273256"
 ## <a name="the-dsl-tools-solution"></a>DSL 工具解決方案  
  定義域專屬設計工具精靈提供下列的解決方案範本：  
   
--   工作流程  
+- 工作流程  
   
--   類別圖表  
+- 類別圖表  
   
--   最小語言  
+- 最小語言  
   
--   元件模型  
+- 元件模型  
   
--   最小 WPF  
+- 最小 WPF  
   
--   最小 Windows.Forms  
+- 最小 Windows.Forms  
   
--   DSL 程式庫  
+- DSL 程式庫  
   
- 如需詳細資訊，請參閱 <<c0> [ 選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
   
- 此精靈會建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]有下列專案的方案：  
+  此精靈會建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]有下列專案的方案：  
   
--   Dsl  
+- Dsl  
   
-     Dsl 專案中定義特定領域語言，以及其編輯和處理工具。  
+   Dsl 專案中定義特定領域語言，以及其編輯和處理工具。  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     在 DslPackage 專案可讓您決定語言工具如何與整合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+   在 DslPackage 專案可讓您決定語言工具如何與整合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具的圖形化介面  
  若要將項目和關聯性新增至您的特定領域語言，您可以使用 DSL 工具的圖形化介面。 加入項目之後，您可以將它們對應至圖形、 自訂色彩，以及加入裝飾項目來定義其外觀。 您也可以將項目加入 [工具箱] 中。  

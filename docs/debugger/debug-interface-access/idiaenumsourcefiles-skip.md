@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Skip |Microsoft 文件'
+title: 'Idiaenumsourcefiles:: Skip |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dedc9e3218d56c4e58f35c70b3bce8bf4dd8ae7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2e517f03a13debfd13dacfe92b4bb08bfddc727
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849056"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-略過指定的數目的列舉順序中的原始程式檔。  
+略過列舉序列中的原始程式檔指定的數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]略過將列舉序列中的來源檔案數目。  
+ [in]略過列舉序列中的來源檔案的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`如果沒有更多的來源檔案以略過。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果沒有更多的來源檔案以略過。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

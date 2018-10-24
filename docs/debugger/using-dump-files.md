@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847840"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用 Visual Studio 中使用傾印檔案
 使用或不含堆積; 傾印檔案建立傾印檔案;開啟傾印檔案;尋找二進位檔、 pdb 的、 和傾印檔案的原始程式檔。
@@ -64,11 +64,11 @@ ms.locfileid: "44281022"
 ##  <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案
  若要使用 Visual Studio 建立傾印檔案：
 
--   當您在 Visual Studio 中對處理序進行偵錯時，可以在偵錯工具遇到例外狀況或中斷點停止時儲存傾印檔案。 選擇**偵錯**，然後**儲存傾印**，然後**偵錯**。 在**存傾印**對話方塊中，於**將儲存為類型**清單中，您可以選取**小型傾印**或**包含堆積的小型傾印**（預設值）。
+- 當您在 Visual Studio 中對處理序進行偵錯時，可以在偵錯工具遇到例外狀況或中斷點停止時儲存傾印檔案。 選擇**偵錯**，然後**儲存傾印**，然後**偵錯**。 在**存傾印**對話方塊中，於**將儲存為類型**清單中，您可以選取**小型傾印**或**包含堆積的小型傾印**（預設值）。
 
--   具有[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)啟用，您可以將偵錯工具附加至偵錯工具外部執行的損毀處理序，然後儲存傾印檔案。 請參閱[附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- 具有[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)啟用，您可以將偵錯工具附加至偵錯工具外部執行的損毀處理序，然後儲存傾印檔案。 請參閱[附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- 您也可以使用任何支援 Windows 小型傾印格式的程式建立傾印檔案。 例如， **Procdump**命令列公用程式[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以建立根據觸發程序或視需要處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)本主題，如需有關使用其他工具建立傾印檔案的詳細資訊。
+  您也可以使用任何支援 Windows 小型傾印格式的程式建立傾印檔案。 例如， **Procdump**命令列公用程式[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以建立根據觸發程序或視需要處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)本主題，如需有關使用其他工具建立傾印檔案的詳細資訊。
 
 ##  <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案
 
@@ -85,31 +85,31 @@ ms.locfileid: "44281022"
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找二進位檔、 符號 (.pdb) 檔和原始程式檔
  若要使用 Visual Studio 的完整功能對傾印檔案進行偵錯，您需要存取：
 
--   進行傾印的 .exe 檔案，以及傾印程序中所使用的其他二進位檔 (DLL 等)。
+- 進行傾印的 .exe 檔案，以及傾印程序中所使用的其他二進位檔 (DLL 等)。
 
-     如果您要對包含堆積資料的傾印進行偵錯，Visual Studio 可以處理某些模組遺漏二進位檔的情況，但是它必須擁有足夠的模組二進位檔才能產生有效的呼叫堆疊。 Visual Studio 會將原生模組納入包含堆積的傾印檔案中。
+   如果您要對包含堆積資料的傾印進行偵錯，Visual Studio 可以處理某些模組遺漏二進位檔的情況，但是它必須擁有足夠的模組二進位檔才能產生有效的呼叫堆疊。 Visual Studio 會將原生模組納入包含堆積的傾印檔案中。
 
--   .exe 和其他二進位檔的符號 (.pdb) 檔。
+- .exe 和其他二進位檔的符號 (.pdb) 檔。
 
--   所需模組的原始程式檔。
+- 所需模組的原始程式檔。
 
-     可執行檔和 .pdb 檔案必須完全符合建立傾印時所使用檔案的版本和組建。
+   可執行檔和 .pdb 檔案必須完全符合建立傾印時所使用檔案的版本和組建。
 
-     您可以偵錯使用反組譯碼的模組，如果找不到原始程式檔中，
+   您可以偵錯使用反組譯碼的模組，如果找不到原始程式檔中，
 
- **可執行檔的預設搜尋路徑**
+  **可執行檔的預設搜尋路徑**
 
- Visual Studio 會自動搜尋這些位置不包含在傾印檔案中的可執行檔：
+  Visual Studio 會自動搜尋這些位置不包含在傾印檔案中的可執行檔：
 
-1.  包含傾印檔案的目錄。
+1. 包含傾印檔案的目錄。
 
-2.  傾印檔案中指定的模組路徑。 這是收集傾印所在之電腦的模組路徑。
+2. 傾印檔案中指定的模組路徑。 這是收集傾印所在之電腦的模組路徑。
 
-3.  中指定的符號路徑**偵錯**，**選項**，**符號**Visual Studio 的頁面**工具**，**選項**  對話方塊。 您可以在這個頁面上加入更多要搜尋的位置。
+3. 中指定的符號路徑**偵錯**，**選項**，**符號**Visual Studio 的頁面**工具**，**選項**  對話方塊。 您可以在這個頁面上加入更多要搜尋的位置。
 
- **使用沒有二進位 > 符號 > 來源頁面**
+   **使用沒有二進位 > 符號 > 來源頁面**
 
- 如果 Visual Studio 找不到偵錯傾印中的模組所需的檔案，則會顯示適當頁面 (**No 二進位找到**，**找不到符號**，或**找不到來源**)。 這些頁面提供關於問題原因的詳細資訊，並提供可協助您識別檔案正確位置的動作連結。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+   如果 Visual Studio 找不到偵錯傾印中的模組所需的檔案，則會顯示適當頁面 (**No 二進位找到**，**找不到符號**，或**找不到來源**)。 這些頁面提供關於問題原因的詳細資訊，並提供可協助您識別檔案正確位置的動作連結。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ## <a name="see-also"></a>另請參閱
 

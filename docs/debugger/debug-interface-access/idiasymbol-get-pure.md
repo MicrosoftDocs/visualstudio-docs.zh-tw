@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_pure |Microsoft 文件'
+title: 'Idiasymbol:: Get_pure |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54c25dd0398674c7a583cbd3ac8163f4c0a5698
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f79523cec58c34039db817f36eaf22efe4e6acd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831181"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
-擷取的旗標會指定函式是否為純虛擬。  
+擷取旗標，指定函數是否為純虛擬。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_pure (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果函式是純虛擬的; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`如果函式是純虛擬; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

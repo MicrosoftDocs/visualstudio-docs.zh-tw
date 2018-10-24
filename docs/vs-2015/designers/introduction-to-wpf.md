@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826345"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
 ##  <a name="Markup_And_Codebehind"></a> 標記和程式碼後置  
  WPF 可讓您使用 *標記* 和 *程式碼後置*來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：  
   
--   由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。  
+- 由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。  
   
--   由於實作應用程式外觀的設計人員可以與實作應用程式行為的設計人員同時進行，因此開發作業會更有效率。  
+- 由於實作應用程式外觀的設計人員可以與實作應用程式行為的設計人員同時進行，因此開發作業會更有效率。  
   
--   WPF 應用程式的[全球化和當地語系化](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) 已經過簡化。  
+- WPF 應用程式的[全球化和當地語系化](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) 已經過簡化。  
   
- 以下是 WPF 標記和程式碼後置的簡介。  
+  以下是 WPF 標記和程式碼後置的簡介。  
   
 ### <a name="markup"></a>標記  
  XAML 是以宣告方式來實作應用程式外觀所用的 XML 標記語言。 它通常可用來建立視窗、對話方塊、頁面和使用者控制項，並填入控制項、圖案和圖形。  
@@ -194,23 +194,23 @@ End Namespace
   
  版面配置系統會透過基底 WPF 類別公開給子控制項。 WPF 針對格線、堆疊和停駐等常見版面配置，提供了數個版面配置控制項：  
   
--   <xref:System.Windows.Controls.Canvas>：子控制項會提供自己的版面配置。  
+- <xref:System.Windows.Controls.Canvas>：子控制項會提供自己的版面配置。  
   
--   <xref:System.Windows.Controls.DockPanel>：子控制項會沿著面板邊緣對齊。  
+- <xref:System.Windows.Controls.DockPanel>：子控制項會沿著面板邊緣對齊。  
   
--   <xref:System.Windows.Controls.Grid>：子控制項會依資料列和資料行定位。  
+- <xref:System.Windows.Controls.Grid>：子控制項會依資料列和資料行定位。  
   
--   <xref:System.Windows.Controls.StackPanel>：子控制項會垂直或水平堆疊。  
+- <xref:System.Windows.Controls.StackPanel>：子控制項會垂直或水平堆疊。  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>：子控制項會依水平或垂直方向，以單行顯示及排列。  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>：子控制項會依水平或垂直方向，以單行顯示及排列。  
   
--   <xref:System.Windows.Controls.WrapPanel>：子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。  
+- <xref:System.Windows.Controls.WrapPanel>：子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。  
   
- 下列範例使用 <xref:System.Windows.Controls.DockPanel> 來配置多個 <xref:System.Windows.Controls.TextBox> 控制項：  
+  下列範例使用 <xref:System.Windows.Controls.DockPanel> 來配置多個 <xref:System.Windows.Controls.TextBox> 控制項：  
   
- [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
+  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
- <xref:System.Windows.Controls.DockPanel> 可讓子 <xref:System.Windows.Controls.TextBox> 控制項指示排列方式。 為了執行這項操作， <xref:System.Windows.Controls.DockPanel> 會實作公開給子控制項的 <xref:System.Windows.Controls.DockPanel.Dock%2A> 屬性，讓每個控制項都能指定停駐樣式。  
+  <xref:System.Windows.Controls.DockPanel> 可讓子 <xref:System.Windows.Controls.TextBox> 控制項指示排列方式。 為了執行這項操作， <xref:System.Windows.Controls.DockPanel> 會實作公開給子控制項的 <xref:System.Windows.Controls.DockPanel.Dock%2A> 屬性，讓每個控制項都能指定停駐樣式。  
   
 > [!NOTE]
 >  WPF 建構是由父控制項實作並可供子控制項使用的屬性，又稱為 [附加屬性](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)。  
@@ -222,33 +222,33 @@ End Namespace
 ##  <a name="Data_Binding"></a> 資料繫結  
  大多數已建立的應用程式會為使用者提供檢視及編輯資料的方法。 至於 WPF 應用程式，儲存和存取資料的工作已由 SQL Server 和 ADO.NET 等技術提供。 存取資料並將資料載入應用程式的 Managed 物件之後，才會開始 WPF 應用程式的困難工作。 基本上，這涉及兩個動作：  
   
-1.  將資料從 Managed 物件複製到控制項，以在其中顯示及編輯資料。  
+1. 將資料從 Managed 物件複製到控制項，以在其中顯示及編輯資料。  
   
-2.  確保使用控制項對資料所做的變更，會複製回 Managed 物件。  
+2. 確保使用控制項對資料所做的變更，會複製回 Managed 物件。  
   
- 為了簡化應用程式開發工作，WPF 提供資料繫結引擎以自動執行這些步驟。 資料繫結引擎的核心單位是 <xref:System.Windows.Data.Binding> 類別，其工作是將控制項 (繫結目標) 繫結至資料物件 (繫結來源)。 下圖說明這個關聯性。  
+   為了簡化應用程式開發工作，WPF 提供資料繫結引擎以自動執行這些步驟。 資料繫結引擎的核心單位是 <xref:System.Windows.Data.Binding> 類別，其工作是將控制項 (繫結目標) 繫結至資料物件 (繫結來源)。 下圖說明這個關聯性。  
   
- ![基本資料繫結圖](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
+   ![基本資料繫結圖](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
- 下列範例示範如何將 <xref:System.Windows.Controls.TextBox> 繫結至自訂 `Person` 物件的執行個體。 `Person` 實作則如下列程式碼所示。  
+   下列範例示範如何將 <xref:System.Windows.Controls.TextBox> 繫結至自訂 `Person` 物件的執行個體。 `Person` 實作則如下列程式碼所示。  
   
- [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
+   [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
+   [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
   
- 下列標記會將 <xref:System.Windows.Controls.TextBox> 繫結至自訂 `Person` 物件的執行個體。  
+   下列標記會將 <xref:System.Windows.Controls.TextBox> 繫結至自訂 `Person` 物件的執行個體。  
   
- [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
   
- [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
+   [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
+   [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
   
- 在這個範例中， `Person` 類別會在程式碼後置中具現化，並已設定為 `DataBindingWindow`的資料內容。 在標記中， <xref:System.Windows.Controls.TextBox.Text%2A> 的 <xref:System.Windows.Controls.TextBox> 屬性已繫結至 `Person.Name` 屬性 (使用"`{Binding ... }`" XAML 語法)。 這個 XAML 會指示 WPF 將 <xref:System.Windows.Controls.TextBox> 控制項繫結至儲存在視窗之 `Person` 屬性中的 <xref:System.Windows.FrameworkElement.DataContext%2A> 物件。  
+   在這個範例中， `Person` 類別會在程式碼後置中具現化，並已設定為 `DataBindingWindow`的資料內容。 在標記中， <xref:System.Windows.Controls.TextBox.Text%2A> 的 <xref:System.Windows.Controls.TextBox> 屬性已繫結至 `Person.Name` 屬性 (使用"`{Binding ... }`" XAML 語法)。 這個 XAML 會指示 WPF 將 <xref:System.Windows.Controls.TextBox> 控制項繫結至儲存在視窗之 `Person` 屬性中的 <xref:System.Windows.FrameworkElement.DataContext%2A> 物件。  
   
- WPF 資料繫結引擎還提供其他支援，包括驗證、排序、篩選和群組。 此外，資料繫結可在標準 WPF 控制項所顯示的使用者介面不適用時，使用資料範本來建立繫結資料的自訂使用者介面。  
+   WPF 資料繫結引擎還提供其他支援，包括驗證、排序、篩選和群組。 此外，資料繫結可在標準 WPF 控制項所顯示的使用者介面不適用時，使用資料範本來建立繫結資料的自訂使用者介面。  
   
- 如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)。  
+   如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)。  
   
 ##  <a name="Graphics"></a> 圖形  
  WPF 引進了一組詳盡、可擴充且彈性的圖形功能，其優點如下：  
@@ -335,21 +335,21 @@ End Namespace
 ##  <a name="Text_and_Typography"></a> 文字和印刷樣式  
  為了達成高品質文字轉譯，WPF 提供下列功能：  
   
--   OpenType 字型支援。  
+- OpenType 字型支援。  
   
--   ClearType 增強功能。  
+- ClearType 增強功能。  
   
--   利用硬體加速的高效能。  
+- 利用硬體加速的高效能。  
   
--   將文字與媒體、圖形和動畫進行整合。  
+- 將文字與媒體、圖形和動畫進行整合。  
   
--   國際字型支援和後援機制。  
+- 國際字型支援和後援機制。  
   
- 為了示範文字與圖形的整合，下圖顯示文字裝飾的應用。  
+  為了示範文字與圖形的整合，下圖顯示文字裝飾的應用。  
   
- ![帶有各種文字裝飾的文字](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+  ![帶有各種文字裝飾的文字](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- 如需詳細資訊，請參閱 [Windows Presentation Foundation 中的印刷樣式](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)。  
+  如需詳細資訊，請參閱 [Windows Presentation Foundation 中的印刷樣式](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)。  
   
 ##  <a name="WPF_Customization"></a> 自訂 WPF 應用程式  
  到目前為止，您已經認識用於開發應用程式的核心 WPF 建置組塊。 您可以使用應用程式模型，來裝載及傳遞主要由控制項所組成的應用程式內容。 為了簡化使用者介面中的控制項排列方式，並確保不論視窗大小和顯示設定如何變更，都能維持此排列方式，您可以使用 WPF 版面配置系統。 由於大多數應用程式可讓使用者與資料互動，因此您可以使用資料繫結來減少使用者介面與資料整合的工作。 若要改進應用程式的視覺外觀，您可以使用的 WPF 所提供的各種圖形、動畫和媒體支援。  
@@ -445,51 +445,51 @@ End Namespace
   
  這個範例使用 `Window.Resources` 屬性項目來實作背景色彩資源。 這項資源可供 <xref:System.Windows.Window>的所有子系使用。 以下依其解析順序列出各種資源範圍，包括：  
   
-1.  個別控制項 (使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。  
+1. 個別控制項 (使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。  
   
-2.  <xref:System.Windows.Window> 或 <xref:System.Windows.Controls.Page> (也使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。  
+2. <xref:System.Windows.Window> 或 <xref:System.Windows.Controls.Page> (也使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。  
   
-3.  <xref:System.Windows.Application> (使用 <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 屬性)。  
+3. <xref:System.Windows.Application> (使用 <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 屬性)。  
   
- 上述各種範圍可讓您彈性地定義及共用資源。  
+   上述各種範圍可讓您彈性地定義及共用資源。  
   
- 除了直接建立資源與特定範圍的關聯之外，您還可以使用個別 <xref:System.Windows.ResourceDictionary> 封裝一或多項資源，以做為應用程式的其他組件來參考。 例如，下列範例會定義資源字典中的預設背景色彩。  
+   除了直接建立資源與特定範圍的關聯之外，您還可以使用個別 <xref:System.Windows.ResourceDictionary> 封裝一或多項資源，以做為應用程式的其他組件來參考。 例如，下列範例會定義資源字典中的預設背景色彩。  
   
- [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
   
- 下列範例會參考上述範例中定義的資源字典，以便在應用程式內部共用。  
+   下列範例會參考上述範例中定義的資源字典，以便在應用程式內部共用。  
   
- [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
   
- 資源與資源字典是 WPF 支援佈景主題和面板的基礎。  
+   資源與資源字典是 WPF 支援佈景主題和面板的基礎。  
   
- 如需詳細資訊，請參閱 [資源概觀](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx)。  
+   如需詳細資訊，請參閱 [資源概觀](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx)。  
   
 ### <a name="custom-controls"></a>自訂控制項  
  雖然 WPF 提供許多自訂支援，但是您可能還是會遇到現有 WPF 控制項不符合應用程式或其使用者需求的情況。 這種情況的發生原因包括：  
   
--   您無法藉由自訂現有 WPF 實作的外觀和風格，來建立所需的使用者介面。  
+- 您無法藉由自訂現有 WPF 實作的外觀和風格，來建立所需的使用者介面。  
   
--   現有 WPF 實作不支援 (或無法輕易支援) 您需要的行為。  
+- 現有 WPF 實作不支援 (或無法輕易支援) 您需要的行為。  
   
- 不過在這種情況下，您可以利用三種 WPF 模型之一來建立新的控制項。 每個模型各有適用的特定情況，並要求您的自訂控制項衍生自特定 WPF 基底類別。 以下列出這三種模型：  
+  不過在這種情況下，您可以利用三種 WPF 模型之一來建立新的控制項。 每個模型各有適用的特定情況，並要求您的自訂控制項衍生自特定 WPF 基底類別。 以下列出這三種模型：  
   
--   **使用者控制項模型**： 自訂控制項衍生自 <xref:System.Windows.Controls.UserControl> ，並由一或多個其他控制項所組成。  
+- **使用者控制項模型**： 自訂控制項衍生自 <xref:System.Windows.Controls.UserControl> ，並由一或多個其他控制項所組成。  
   
--   **控制項模型**： 自訂控制項衍生自 <xref:System.Windows.Controls.Control> ，並使用範本來建置實作以區隔其行為和外觀，與大多數 WPF 控制項非常類似。 衍生自 <xref:System.Windows.Controls.Control> 比使用者控制項更能夠讓您自由地建立自訂使用者介面，但可能需要投入更多時間。  
+- **控制項模型**： 自訂控制項衍生自 <xref:System.Windows.Controls.Control> ，並使用範本來建置實作以區隔其行為和外觀，與大多數 WPF 控制項非常類似。 衍生自 <xref:System.Windows.Controls.Control> 比使用者控制項更能夠讓您自由地建立自訂使用者介面，但可能需要投入更多時間。  
   
--   **架構項目模型**： 如果其外觀是由自訂轉譯邏輯 (而不是範本) 所定義，自訂控制項衍生自 <xref:System.Windows.FrameworkElement> 。  
+- **架構項目模型**： 如果其外觀是由自訂轉譯邏輯 (而不是範本) 所定義，自訂控制項衍生自 <xref:System.Windows.FrameworkElement> 。  
   
- 下列範例示範衍生自 <xref:System.Windows.Controls.UserControl>的自訂數值上下按鈕控制項。  
+  下列範例示範衍生自 <xref:System.Windows.Controls.UserControl>的自訂數值上下按鈕控制項。  
   
- [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
+  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
   
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
-[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
-[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
   
   
  下一個範例說明將使用者控制項併入 <xref:System.Windows.Window>所需的 XAML。  

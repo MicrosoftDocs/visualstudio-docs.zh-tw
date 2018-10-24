@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846976"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：檢視現有類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49305281"
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在類別圖上查看專案中的類型  
   
-1.  從 [方案總管] 的專案中開啟現有的類別圖 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
+1. 從 [方案總管] 的專案中開啟現有的類別圖 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
   
-2.  將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖。  
+2. 將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖。  
   
-    > [!WARNING]
-    >  如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：  
-    >   
-    >  -   包含圖表的應用程式專案  
-    > -   由應用程式專案匯入的共用專案  
-    > -   參考的專案  
-    > -   組件  
+   > [!WARNING]
+   >  如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：  
+   > 
+   > - 包含圖表的應用程式專案  
+   >   -   由應用程式專案匯入的共用專案  
+   >   -   參考的專案  
+   >   -   組件  
   
-     代表原始程式碼檔中所定義類型的圖案就會出現在圖表上您拖曳檔案所至的位置。  
+    代表原始程式碼檔中所定義類型的圖案就會出現在圖表上您拖曳檔案所至的位置。  
   
- 您也可以將一或多個類型從 [類別檢視] 的專案節點中拖曳至類別圖，以檢視專案中的類型。  
+   您也可以將一或多個類型從 [類別檢視] 的專案節點中拖曳至類別圖，以檢視專案中的類型。  
   
 > [!TIP]
 >  如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  

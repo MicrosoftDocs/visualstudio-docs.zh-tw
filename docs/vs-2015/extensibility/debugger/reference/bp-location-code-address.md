@@ -17,12 +17,12 @@ ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cc349fa5909575121231f949d04a65f9c1cf2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0f3264dd61f4f5a125e83eb80552c4d6e550123
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862784"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

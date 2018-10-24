@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasinlasm |Microsoft 文件'
+title: 'Idiasymbol:: Get_hasinlasm |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2410400bc18b461ea9dc9ba05cde1c1a3681
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c582e57a7cc2302d1afb9b9cfe4ac479bcdd0bdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847730"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
-擷取指定函式是否包含內嵌組譯碼的旗標。  
+擷取指定的函式是否包含內嵌組譯碼的旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,20 +34,20 @@ HRESULT get_hasInlAsm(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]傳回`TRUE`如果函式的任何內嵌組譯碼; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`函式具有任何內嵌組譯碼; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是使用符號。  
+>  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|版本:|DIA SDK 8.0 版|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

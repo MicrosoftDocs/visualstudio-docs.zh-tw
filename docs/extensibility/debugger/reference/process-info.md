@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO |Microsoft 文件
+title: PROCESS_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864617"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 包含處理序的相關資訊。  
@@ -57,28 +57,28 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>成員  
  欄位  
- 從旗標的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定哪些欄位都已填寫的列舉。  
+ 從旗標的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定哪些欄位都已填寫的列舉型別。  
   
  bstrFileName  
- 程序的完整路徑名稱。 相當於呼叫[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法與參數`GN_FILENAME`。  
+ 程序的完整路徑名稱。 相當於呼叫[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法搭配參數`GN_FILENAME`。  
   
  bstrBaseName  
- 檔案名稱和副檔名的程序。 相當於呼叫`IDebugProcess2::Getname`方法與參數`GN_BASENAME`。  
+ 檔案名稱和副檔名的程序。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_BASENAME`。  
   
  bstrTitle  
- 此程序，如果有標題。 相當於呼叫`IDebugProcess2::Getname`方法與參數`GN_TITLE`。  
+ 標題的過程中，如果有的話。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_TITLE`。  
   
  ProcessId  
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)識別處理序的結構。 相當於呼叫[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。  
   
  dwSessionId  
- 偵錯工作階段中執行此程序的識別項。  
+ 偵錯工作階段中執行此程序的識別碼。  
   
  bstrAttachedSessionName  
  附加的工作階段名稱。 相當於呼叫[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)方法。  
   
  CreationTime  
- 建立處理程序的時間。  
+ 建立程序的時間。  
   
  旗標  
  從旗標的組合[PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)列舉，指定處理序的屬性。  

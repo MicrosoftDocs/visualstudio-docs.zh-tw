@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH |Microsoft 文件
+title: NAME_MATCH |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a61e8a3cadeeadf0657ca6fe293a527113505a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867516"
 ---
 # <a name="namematch"></a>NAME_MATCH
 選取 比對名稱的大小寫選項。  
@@ -51,10 +51,10 @@ public enum NameMatchOptions {
  表示要比對的名稱會區分大小寫。  
   
  nmCaseInsensitive  
- 指出要比對的名稱不區分大小寫。  
+ 表示要比對的名稱不區分大小寫。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞給下列方法：  
+ 下列方法，以傳遞做為引數：  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   

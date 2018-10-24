@@ -15,12 +15,12 @@ ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1c32ef0e56871cb2db48d769c9d4c82c9aad076
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a9303eb738afc3ada918893e395b6a337a93bff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830479"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

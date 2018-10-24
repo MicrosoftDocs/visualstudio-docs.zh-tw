@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863623"
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ ms.locfileid: "49244617"
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>若要讓項目範本可在市集專案中使用  
   
-1.  遵循上述程序的步驟匯出項目範本。  
+1. 遵循上述程序的步驟匯出項目範本。  
   
-2.  從複製到 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ (或 **My Exported Templates**) 資料夾的 .zip 檔案，解壓縮 .vstemplate 檔案。  
+2. 從複製到 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ (或 **My Exported Templates**) 資料夾的 .zip 檔案，解壓縮 .vstemplate 檔案。  
   
-3.  在 Visual Studio 中開啟 .vstemplate 檔案。  
+3. 在 Visual Studio 中開啟 .vstemplate 檔案。  
   
-4.  若為 Windows 8.1 市集 C#  專案，請在 .vstemplate 檔中的開頭和結尾 `<TemplateData>` 標記內，加入下列 XML：`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`。  
+4. 若為 Windows 8.1 市集 C#  專案，請在 .vstemplate 檔中的開頭和結尾 `<TemplateData>` 標記內，加入下列 XML：`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`。  
   
-     C + + Windows 8.1 市集專案使用 `WinRT-Native-6.3` 的值。 若為 Windows 10 及其他專案類型，請參閱 [TemplateGroupID 項目 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md)。  
+    C + + Windows 8.1 市集專案使用 `WinRT-Native-6.3` 的值。 若為 Windows 10 及其他專案類型，請參閱 [TemplateGroupID 項目 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md)。  
   
-     下列範例顯示已加入 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 程式行之後 .vstemplate 檔案的完整內容。 這個範例是 C# 專案專用的。 您可以修改 <ProjectTpe> 和 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 項目，來指定其他語言和專案類型。  
+    下列範例顯示已加入 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 程式行之後 .vstemplate 檔案的完整內容。 這個範例是 C# 專案專用的。 您可以修改 <ProjectTpe> 和 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 項目，來指定其他語言和專案類型。  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     如需其他可能的 TemplateGroupID 值，請參閱 [TemplateGroupID 項目 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md))。 如需完整的 .vstemplate 參考，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
+    如需其他可能的 TemplateGroupID 值，請參閱 [TemplateGroupID 項目 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md))。 如需完整的 .vstemplate 參考，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
   
-5.  在 Visual Studio 中，儲存並關閉 .vstemplate 檔案。  
+5. 在 Visual Studio 中，儲存並關閉 .vstemplate 檔案。  
   
-6.  複製 .vstemplate 檔案，並將其貼至 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ 資料夾中的 .zip 檔案。  
+6. 複製 .vstemplate 檔案，並將其貼至 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ 資料夾中的 .zip 檔案。  
   
-     如果出現 [複製檔案] 對話方塊，請選擇 [複製並取代] 選項。  
+    如果出現 [複製檔案] 對話方塊，請選擇 [複製並取代] 選項。  
   
- 您現在可以使用 [新增項目] 對話方塊，將以這個範本為依據的項目新增至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 專案。  
+   您現在可以使用 [新增項目] 對話方塊，將以這個範本為依據的項目新增至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 專案。  
   
- 如需參數名稱的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。  
+   如需參數名稱的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>若要啟用特定專案子類型的範本  
   
-1.  開發環境可讓您使專案項目可從特定專案的 [加入項目] 對話方塊中取得。 使用此程序，可讓自訂項目可供 Windows、Web、Office 或資料庫專案使用。  
+1. 開發環境可讓您使專案項目可從特定專案的 [加入項目] 對話方塊中取得。 使用此程序，可讓自訂項目可供 Windows、Web、Office 或資料庫專案使用。  
   
-     在項目範本的.vstemplate 檔案中，找出 ProjectType 項目。  
+    在項目範本的.vstemplate 檔案中，找出 ProjectType 項目。  
   
-     緊接著 ProjectType 項目之後加入 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 項目。  
+    緊接著 ProjectType 項目之後加入 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 項目。  
   
-2.  將項目的文字值設為下列其中一個值：  
+2. 將項目的文字值設為下列其中一個值：  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  資料庫  
+   3. 資料庫  
   
-    4.  Web  
+   4. Web  
   
-     例如：`<ProjectSubType>Database</ProjectSubType>`。  
+      例如：`<ProjectSubType>Database</ProjectSubType>`。  
   
-     下列範例顯示可供 Office 專案使用的項目範本。  
+      下列範例顯示可供 Office 專案使用的項目範本。  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>若要手動建立項目範本而不使用 [匯出範本] 精靈  
   
