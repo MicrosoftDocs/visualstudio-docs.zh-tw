@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bd572cfff52537eab58e06ddf8f7a34bb087513c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811137"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：以 AssemblyVersionAttribute 標記組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -42,15 +43,15 @@ ms.locfileid: "49305372"
 ## <a name="rule-description"></a>規則描述
  身分識別的組件包含下列資訊：
 
--   組件名稱
+- 組件名稱
 
--   版本號碼
+- 版本號碼
 
--   culture
+- culture
 
--   強式名稱組件的公開金鑰。
+- 強式名稱組件的公開金鑰。
 
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 會使用版本號碼以便唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 會使用版本號碼以便唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入版本號碼組件使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>屬性。 請參閱下列範例。

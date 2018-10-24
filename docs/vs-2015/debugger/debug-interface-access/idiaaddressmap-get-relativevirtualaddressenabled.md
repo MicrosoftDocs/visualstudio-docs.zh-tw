@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f11cddaac1760b83c083983b89f7784c345f8cbc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 377e99187b9bd9170ba988ddacf1f3b55eb2de39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825792"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

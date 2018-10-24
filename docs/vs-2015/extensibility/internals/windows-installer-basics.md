@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829309"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
 ## <a name="authoring-a-vspackage"></a>撰寫 VSPackage  
  Windows 安裝程式會使用安裝封裝，其中包含 Windows 安裝程式必須安裝、 解除安裝或修復產品，並執行安裝程式使用者介面 (UI) 的資訊。 每個安裝套件包含.msi 檔案，其中包含安裝資料庫、 摘要資訊資料流，以及安裝的各個部分的資料流。 若要使用安裝程式，您必須編寫安裝。 因為安裝程式會安裝元件的概念為中心的組織，並將安裝的相關資訊儲存在關聯式資料庫，廣泛地撰寫安裝套件的程序需要下列步驟：  
   
-1.  規劃您的安裝程式編寫，以支援您的版本控制和並排顯示的策略。  
+1. 規劃您的安裝程式編寫，以支援您的版本控制和並排顯示的策略。  
   
-2.  識別要呈現給使用者的功能。  
+2. 識別要呈現給使用者的功能。  
   
-3.  組織成元件的 VSPackage 和相依性。  
+3. 組織成元件的 VSPackage 和相依性。  
   
-4.  在資料庫中填入安裝資訊。  
+4. 在資料庫中填入安裝資訊。  
   
-5.  驗證安裝的封裝。  
+5. 驗證安裝的封裝。  
   
- 這份文件主要涉及程序的第一個和第三個步驟。 在這些步驟將組織 VSPackage 功能到 WICs 讓您可以將您的版本控制和服務策略以迎合的後續版本框[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 其餘的三個步驟所述的平台 SDK 中的 Windows 安裝程式文件中的詳細資料。  
+   這份文件主要涉及程序的第一個和第三個步驟。 在這些步驟將組織 VSPackage 功能到 WICs 讓您可以將您的版本控制和服務策略以迎合的後續版本框[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 其餘的三個步驟所述的平台 SDK 中的 Windows 安裝程式文件中的詳細資料。  
   
 ## <a name="key-terms"></a>主要詞彙  
  以下是 Windows Installer 技術的相關的重要詞彙的定義。  

@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 617f4b1b12575b6362626dfca18b7c47698c5740
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1aa9077a0d27c105cd7008d550a4315ce8daf91a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836563"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045：不要以傳址方式傳遞類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotPassTypesByReference|

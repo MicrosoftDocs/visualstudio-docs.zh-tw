@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812500"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49292691"
 ## <a name="invoking-validation"></a>叫用驗證  
  當您已安裝驗證延伸模組時，它提供的條件約束可能會套用在下列情況。 某些條件約束已設定為只在這些部分情況下套用。  
   
--   **驗證命令。** 若要叫用驗證在任何時間，請按一下**驗證 UML 模型**上**架構**功能表。  
+- **驗證命令。** 若要叫用驗證在任何時間，請按一下**驗證 UML 模型**上**架構**功能表。  
   
-    > [!NOTE]
-    >  已安裝驗證條件約束時，才會出現命令。  
+  > [!NOTE]
+  >  已安裝驗證條件約束時，才會出現命令。  
   
--   **儲存模型。** 當您儲存模型時，可以套用驗證條件約束。 這些條件約束的目的是協助確定您不會儲存根據專案解譯無效的模型。  
+- **儲存模型。** 當您儲存模型時，可以套用驗證條件約束。 這些條件約束的目的是協助確定您不會儲存根據專案解譯無效的模型。  
   
-     如果發生錯誤，會詢問您是否仍要儲存模型。 您可以選擇要更正錯誤，還是依舊儲存模型。  
+   如果發生錯誤，會詢問您是否仍要儲存模型。 您可以選擇要更正錯誤，還是依舊儲存模型。  
   
--   **開啟模型時。** 當您開啟模型時，可以套用驗證方法以還原在您儲存模型時已存在的錯誤訊息。 處理模型不同部分的使用者所做的變更不一致時，也可能引入錯誤。 如需詳細資訊，請參閱 <<c0> [ 共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)。  
+- **開啟模型時。** 當您開啟模型時，可以套用驗證方法以還原在您儲存模型時已存在的錯誤訊息。 處理模型不同部分的使用者所做的變更不一致時，也可能引入錯誤。 如需詳細資訊，請參閱 <<c0> [ 共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)。  
   
- 驗證錯誤會在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 錯誤視窗中報告。  
+  驗證錯誤會在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 錯誤視窗中報告。  
   
- 若要在圖表中選取不正確的項目，請按兩下錯誤。 這只有在不正確的項目會顯示在已開啟的圖表時才能使用。  
+  若要在圖表中選取不正確的項目，請按兩下錯誤。 這只有在不正確的項目會顯示在已開啟的圖表時才能使用。  
   
 ## <a name="installing-validation-constraints"></a>安裝驗證條件約束  
  條件約束封裝在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能 (VSIX) 檔案內。 通常，一組條件約束會是同時包含其他定義 (例如功能表命令、設定檔和工具箱項目) 的擴充功能的一部分。  

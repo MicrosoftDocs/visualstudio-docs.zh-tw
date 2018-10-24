@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ccfb4fa9de6513ecc36cad7156117d70879fca2e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814911"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio Visualization and Modeling SDK 中，您可以建立不完整的 DSL 定義，您可以匯入至另一個 DSL。 這可讓您建構的類似模型的通用部分。
@@ -47,21 +47,21 @@ ms.locfileid: "47857972"
 
 #### <a name="to-import-a-dsl-library"></a>若要匯入的 DSL 程式庫
 
-1.  在另一個 DSL 定義中，在**DSL Explorer**，以滑鼠右鍵按一下 DSL 的根類別，然後按一下**加入新的 DslLibrary 匯入**。
+1. 在另一個 DSL 定義中，在**DSL Explorer**，以滑鼠右鍵按一下 DSL 的根類別，然後按一下**加入新的 DslLibrary 匯入**。
 
-2.  在 [屬性] 視窗中，設定**File-path**程式庫。 您可以使用相對或絕對路徑。
+2. 在 [屬性] 視窗中，設定**File-path**程式庫。 您可以使用相對或絕對路徑。
 
-     匯入程式庫會出現在 [DSL 總管] 中，在唯讀模式。
+    匯入程式庫會出現在 [DSL 總管] 中，在唯讀模式。
 
-3.  您可以使用匯入的類別作為基底類別。 在匯入的 DSL 中，建立網域類別，然後在 [屬性] 視窗中，將**基底類別**匯入的類別。
+3. 您可以使用匯入的類別作為基底類別。 在匯入的 DSL 中，建立網域類別，然後在 [屬性] 視窗中，將**基底類別**匯入的類別。
 
-4.  按一下 轉換所有範本。
+4. 按一下 轉換所有範本。
 
-5.  DSL 程式庫專案所建置的組件 (DLL) 的參考加入至 DSL 專案中。
+5. DSL 程式庫專案所建置的組件 (DLL) 的參考加入至 DSL 專案中。
 
-6.  建置方案。
+6. 建置方案。
 
- DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL 總管] 中。
+   DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL 總管] 中。
 
 ## <a name="see-also"></a>另請參閱
 
