@@ -17,12 +17,12 @@ ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9d7e5043e912789d04b35f4732ddee7536a7cc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 079da6aff49dde2fda94ebd98f38742ae81324f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842543"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 'Idiareadexeatoffsetcallback:: Readexecutableat |Microsoft 文件'
+title: 'Idiareadexeatoffsetcallback:: Readexecutableat |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44285e1d0ec0210193f196b5436407d8a0c2ff66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9f1c1ab49205a299b73837685b3d35b352a855d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837980"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-讀取指定的從可執行檔的指定位移處開始的位元組數目。  
+讀取指定的可執行檔從指定的位移開始的位元組數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,10 +46,10 @@ HRESULT ReadExecutableAt (
  [out]傳回讀取的位元組數目。  
   
  [資料]  
- [in、 out]陣列，其中已填入從檔案讀取的位元組。  
+ [in、 out]陣列，其中會填入從檔案讀取的位元組。  
   
 ## <a name="remarks"></a>備註  
- 從使用絕對檔案位移的可執行檔載入資料位元組的 DIA 支援程式碼會呼叫這個方法。 這個方法呼叫支援[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
+ DIA 支援程式碼，從使用絕對檔案位移的可執行檔載入資料的位元組被呼叫此方法。 會呼叫這個方法支援[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   

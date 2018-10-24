@@ -17,12 +17,12 @@ ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 189b1b8c4e597af6e1bd0a63824e53059a27c125
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f180cbc21f722b32979a107729d62ec92ffe3b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842270"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841269"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ ms.locfileid: "49235374"
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>使用起始頁專案範本的 VSIX 部署  
  當您使用起始頁專案範本，建立起始頁，然後建置專案時，Visual Studio 會建立可散發.vsix 檔案。 封裝在.vsix 檔案中的 [入門] 頁面可讓您部署中，根據您的適用對象的下列選項：  
   
--   您可以在公用網站或網路共用上放置.vsix 檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。  
+- 您可以在公用網站或網路共用上放置.vsix 檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。  
   
--   您可以上傳.vsix 檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，使用者可以使用來安裝它**延伸模組管理員**。  
+- 您可以上傳.vsix 檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，使用者可以使用來安裝它**延伸模組管理員**。  
   
- 起始頁專案範本會建立一份預設 Visual Studio 起始頁，讓您可以修改複本，並保留原始。  
+  起始頁專案範本會建立一份預設 Visual Studio 起始頁，讓您可以修改複本，並保留原始。  
   
- 您也可以使用來取得 「 起始頁專案範本**延伸模組管理員**或是從網站下載。  
+  您也可以使用來取得 「 起始頁專案範本**延伸模組管理員**或是從網站下載。  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>不使用起始頁專案範本的 VSIX 部署  
  成功的 VSIX 部署需要 VSIX 註冊程序與辨識的資料夾中安裝擴充功能**延伸模組管理員**。 由於起始頁專案範本已經指定正確的資料夾，我們建議您使用，每當您想要封裝的 VSIX 部署擴充功能。 不過，如果您的案例中，您無法使用的範本，您可以建立 VSIX 部署而不使用它。  
   
  若要建立 VSIX 部署，而不需使用起始頁專案範本，首先建立.vsix 檔案的 [入門] 頁面中的這兩種方式：  
   
--   藉由將空的 VSIX 專案中的自訂起始頁檔案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。  
+- 藉由將空的 VSIX 專案中的自訂起始頁檔案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。  
   
--   手動建立.vsix 檔案。 如需詳細資訊，請參閱 <<c0> [ 如何： 手動封裝擴充功能 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
+- 手動建立.vsix 檔案。 如需詳細資訊，請參閱 <<c0> [ 如何： 手動封裝擴充功能 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
   
- Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。  
+  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。  
   
- 如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件包含具有下列資訊的.pkgdef 檔。  
+  如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件包含具有下列資訊的.pkgdef 檔。  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

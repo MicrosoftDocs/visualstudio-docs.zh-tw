@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839982"
 ---
 # <a name="combo-element"></a>Combo 元素
 定義會出現在下拉式方塊中的命令。 有四種下拉式方塊，如下所示： 下拉式組合、 DynamicCombo、 IndexCombo 和 MRUCombo。  

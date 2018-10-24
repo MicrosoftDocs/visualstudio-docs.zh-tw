@@ -16,12 +16,12 @@ ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f37b30ca661922582c057e641fdd34f9b401b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd87d9d05095953eda23dda1de4b8aa12479b045
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842816"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

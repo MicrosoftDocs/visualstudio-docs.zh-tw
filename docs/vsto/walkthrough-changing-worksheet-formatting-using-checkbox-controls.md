@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843531"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>逐步解說： 變更工作表的格式使用核取方塊控制項
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的核取方塊變更格式的基本概念。 您將使用 Visual Studio 中的 Office 開發工具建立，並將程式碼新增至您的專案。 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -101,24 +101,24 @@ ms.locfileid: "38778366"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>將文字加入 NamedRange 控制項  
   
-1.  從**Excel 控制項** 索引標籤的 工具箱 拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入儲存格**B9**。  
+1. 從**Excel 控制項** 索引標籤的 工具箱 拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入儲存格**B9**。  
   
-2.  確認 **$B$ 9**會出現在可編輯的文字方塊中，且儲存格**B9**已選取。 如果沒有，請按一下資料格**B9**來選取它。  
+2. 確認 **$B$ 9**會出現在可編輯的文字方塊中，且儲存格**B9**已選取。 如果沒有，請按一下資料格**B9**來選取它。  
   
-3.  按一下 [確定 **Deploying Office Solutions**]。  
+3. 按一下 [確定 **Deploying Office Solutions**]。  
   
-4.  儲存格**B9**成為名為範圍`NamedRange1`。  
+4. 儲存格**B9**成為名為範圍`NamedRange1`。  
   
-     沒有在工作表中的可見指示，但`NamedRange1`會出現在**名稱 方塊**（工作表上方左側） 當資料格**B9**已選取。  
+    沒有在工作表中的可見指示，但`NamedRange1`會出現在**名稱 方塊**（工作表上方左側） 當資料格**B9**已選取。  
   
-5.  務必**NamedRange1**中的物件名稱 清單方塊會顯示**屬性** 視窗中，並變更下列屬性：  
+5. 務必**NamedRange1**中的物件名稱 清單方塊會顯示**屬性** 視窗中，並變更下列屬性：  
   
-    |屬性|值|  
-    |--------------|-----------|  
-    |**名稱**|**textFont**|  
-    |**Value2**|**按一下核取方塊以變更這段文字格式。**|  
+   |屬性|值|  
+   |--------------|-----------|  
+   |**名稱**|**textFont**|  
+   |**Value2**|**按一下核取方塊以變更這段文字格式。**|  
   
- 接下來，撰寫程式碼格式化的文字，在選取的選項。  
+   接下來，撰寫程式碼格式化的文字，在選取的選項。  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>在選取的選項，格式化文字  
  在本節中，您會撰寫程式碼，以便當使用者選取一個格式化選項，會變更的工作表中的文字格式。  

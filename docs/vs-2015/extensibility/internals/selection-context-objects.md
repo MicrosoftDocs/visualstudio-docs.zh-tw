@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836849"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "49228653"
   
  修改 Vspackage 可以監視的全域選擇內容觸發程序事件。 Vspackage 可以執行下列工作，藉由實作`IVsTrackSelectionEx`和<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>介面：  
   
--   更新階層中目前作用中的檔案。  
+- 更新階層中目前作用中的檔案。  
   
--   監視器會變更為特定類型的項目。 比方說，如果您的 VSPackage 會使用特殊**屬性** 視窗中，您可以監視作用中的變更**屬性**視窗，然後重新啟動您的需要時。  
+- 監視器會變更為特定類型的項目。 比方說，如果您的 VSPackage 會使用特殊**屬性** 視窗中，您可以監視作用中的變更**屬性**視窗，然後重新啟動您的需要時。  
   
- 下列順序顯示選取項目追蹤的一般程。  
+  下列順序顯示選取項目追蹤的一般程。  
   
 1.  IDE 會擷取新開啟的視窗中的選取項目內容，並將它放在全域範圍內容。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，該資訊不會傳播至全球的內容。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
   
