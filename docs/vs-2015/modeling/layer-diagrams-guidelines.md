@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844155"
 ---
 # <a name="layer-diagrams-guidelines"></a>圖層圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ ms.locfileid: "49202575"
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>在圖層之間對現有相依性進行反向工程  
   
--   選取一或多個圖層，以滑鼠右鍵按一下選取的圖層，然後按一下**產生相依性**。  
+- 選取一或多個圖層，以滑鼠右鍵按一下選取的圖層，然後按一下**產生相依性**。  
   
- 通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
+  通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
   
 ##  <a name="EditArchitecture"></a> 編輯圖層與相依性，以顯示預定的設計  
  若要描述您打算對系統或預期架構進行的變更，請使用下列步驟來編輯圖層圖表。 您也可以考慮先進行一些重構變更來改善程式碼結構，然後再擴充。 請參閱[改善程式碼結構](#Improving)。  
@@ -151,11 +151,11 @@ ms.locfileid: "49202575"
 ##  <a name="UpdateCode"></a> 更新程式碼以符合新的架構  
  通常，會在您第一次針對更新的圖層圖表驗證程式碼時出現錯誤。 這些錯誤可以有數個原因：  
   
--   成品指派給錯誤的圖層。 在此情況下，請移動成品。  
+- 成品指派給錯誤的圖層。 在此情況下，請移動成品。  
   
--   類別之類的成品以與架構發生衝突的方式使用另一個類別。 在此情況下，請重構程式碼以移除相依性。  
+- 類別之類的成品以與架構發生衝突的方式使用另一個類別。 在此情況下，請重構程式碼以移除相依性。  
   
- 若要解決這些錯誤，請更新程式碼直到驗證時不再出現錯誤為止。 這通常是反覆的程序。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
+  若要解決這些錯誤，請更新程式碼直到驗證時不再出現錯誤為止。 這通常是反覆的程序。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
   
 > [!NOTE]
 >  隨著您開發或重構程式碼，您可能會有新成品要連結至圖層圖表。 不過，這可能不是必要的，比方說在您有代表現有命名空間的圖層，而新的程式碼只會將更詳細的資料加入至這些命名空間時。  

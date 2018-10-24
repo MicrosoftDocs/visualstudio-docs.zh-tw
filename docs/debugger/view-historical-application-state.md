@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846859"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>檢查先前使用 IntelliTrace 倒退，Visual Studio 中的應用程式狀態
 
@@ -106,17 +106,17 @@ IntelliTrace 事件模式讓您啟動偵錯工具步驟及中斷點上的歷程�
 * 如果您的 Windows 10 Fall Creators Update (RS3)，比舊的 Windows 版本上使用 IntelliTrace 事件與快照集模式，而且應用程式的偵錯平台目標設定為 x86，IntelliTrace 不會快照集。
 
     因應措施︰
-    * 如果您是在 Windows 10 年度更新 (RS1) 且 10.0.14393.2273，版本若低於[安裝 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
-    * 如果您是在 Windows 10 Creators Update (RS2) 上且 10.0.15063.1112，版本若低於[安裝 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
-    * 安裝或升級至 Windows 10 Fall Creators Update (RS3)。 
-    * 或者： 
-        1. 從 Visual Studio 安裝程式安裝適用於桌上型電腦 (x86、x64) 的 VC++ 2015.3 v140 工具組。
-        2. 建置目標應用程式。
-        3. 從命令列使用 editbin 工具設定`Largeaddressaware`目標可執行檔的旗標。 比方說，您可以使用此命令 （在之後更新的路徑）:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
-        4. 若要開始偵錯，請按 **F5**。 現在，在偵錯工具步驟及中斷點上建立快照集。
+  * 如果您是在 Windows 10 年度更新 (RS1) 且 10.0.14393.2273，版本若低於[安裝 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
+  * 如果您是在 Windows 10 Creators Update (RS2) 上且 10.0.15063.1112，版本若低於[安裝 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
+  * 安裝或升級至 Windows 10 Fall Creators Update (RS3)。 
+  * 或者： 
+    1. 從 Visual Studio 安裝程式安裝適用於桌上型電腦 (x86、x64) 的 VC++ 2015.3 v140 工具組。
+    2. 建置目標應用程式。
+    3. 從命令列使用 editbin 工具設定`Largeaddressaware`目標可執行檔的旗標。 比方說，您可以使用此命令 （在之後更新的路徑）:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
+    4. 若要開始偵錯，請按 **F5**。 現在，在偵錯工具步驟及中斷點上建立快照集。
 
-        > [!Note]
-        > `Largeaddressaware`旗標必須設定每個可執行檔根據變更的時間。
+       > [!Note]
+       > `Largeaddressaware`旗標必須設定每個可執行檔根據變更的時間。
 
 * 當應用程式的程序的快照集後的應用程式，會使用持續性的記憶體對應檔案時，與快照集的程序保留獨佔鎖定記憶體對應檔案 （即使父處理序已釋放其鎖定）。 其他處理序都仍然能夠讀取，但不是寫入至記憶體對應檔案。
 

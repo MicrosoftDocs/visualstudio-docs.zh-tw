@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835148"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic SDK
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
@@ -31,29 +31,29 @@ ms.locfileid: "46495943"
   
 ##  <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件  
   
-1.  在功能表列上選擇 **檔案** > **新增** > **新專案**。  
+1. 在功能表列上選擇 **檔案** > **新增** > **新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。  
+2. 在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。  
   
-3.  在 [**名稱**方塊中，指定**SimpleMath**，然後選擇 **[確定]** ] 按鈕。  
+3. 在 [**名稱**方塊中，指定**SimpleMath**，然後選擇 **[確定]** ] 按鈕。  
   
-4.  在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**屬性**。  
+4. 在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**屬性**。  
   
-5.  重新命名**Class1.cs**要**Arithmetic.cs**並更新它以符合下列程式碼：  
+5. 重新命名**Class1.cs**要**Arithmetic.cs**並更新它以符合下列程式碼：  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  在**方案總管 中**，開啟捷徑功能表**解決方案 'SimpleMath'** 節點，然後選擇**Configuration Manager**。  
+6. 在**方案總管 中**，開啟捷徑功能表**解決方案 'SimpleMath'** 節點，然後選擇**Configuration Manager**。  
   
-     **Configuration Manager**對話方塊隨即開啟。  
+    **Configuration Manager**對話方塊隨即開啟。  
   
-7.  在 **現用方案組態**清單中，選擇**發行**。  
+7. 在 **現用方案組態**清單中，選擇**發行**。  
   
-8.  中**組態** 欄中，確認**SimpleMath**資料列設定為**版本**，然後選擇**關閉**按鈕以接受變更。  
+8. 中**組態** 欄中，確認**SimpleMath**資料列設定為**版本**，然後選擇**關閉**按鈕以接受變更。  
   
-    > [!IMPORTANT]
-    >  SimpleMath 元件 SDK 包含只有一個組態。 此設定必須是發行組建，或使用元件的應用程式，將不會傳遞認證[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。  
+   > [!IMPORTANT]
+   >  SimpleMath 元件 SDK 包含只有一個組態。 此設定必須是發行組建，或使用元件的應用程式，將不會傳遞認證[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。  
   
 9. 在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**建置**。  
   
@@ -154,23 +154,23 @@ ms.locfileid: "46495943"
   
 ##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
-1.  在功能表列上選擇 **檔案** > **新增** > **新專案**。  
+1. 在功能表列上選擇 **檔案** > **新增** > **新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。  
+2. 在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。  
   
-3.  選擇**空白應用程式**範本，將專案命名為**ArithmeticUI**，然後選擇**確定** 按鈕。  
+3. 選擇**空白應用程式**範本，將專案命名為**ArithmeticUI**，然後選擇**確定** 按鈕。  
   
-4.  在 [**方案總管] 中**，開啟捷徑功能表**ArithmeticUI**專案，，然後選擇**新增** > **參考**.  
+4. 在 [**方案總管] 中**，開啟捷徑功能表**ArithmeticUI**專案，，然後選擇**新增** > **參考**.  
   
-5.  在參考類型的清單中，依序展開**Windows**，然後選擇**延伸模組**。  
+5. 在參考類型的清單中，依序展開**Windows**，然後選擇**延伸模組**。  
   
-6.  在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
+6. 在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
   
-     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 https://msdn.microsoft.com/ ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
+    您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 https://msdn.microsoft.com/ ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
   
-7.  在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
+7. 在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
   
-8.  在功能表列上選擇 **檢視** > **物件瀏覽器**。  
+8. 在功能表列上選擇 **檢視** > **物件瀏覽器**。  
   
 9. 在 **瀏覽**清單中，選擇**簡單數學**。  
   
@@ -239,7 +239,7 @@ ms.locfileid: "46495943"
   
      正確的結果會出現。  
   
- 您已成功建立和使用擴充功能 SDK。  
+    您已成功建立和使用擴充功能 SDK。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

@@ -17,12 +17,12 @@ ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e095e4ac6c4972780df145b3c2706055ef4f439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a99371bbbed64f00f60404198cb09d0496b70c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843986"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

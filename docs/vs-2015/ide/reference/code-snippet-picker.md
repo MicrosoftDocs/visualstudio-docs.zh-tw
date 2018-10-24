@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845292"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213300"
   
  顯示 [程式碼片段選擇器] 的程序會根據所使用的語言而有所不同。  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著選取 [插入程式碼片段]。  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著選取 [插入程式碼片段]。  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - 無法使用 [程式碼片段選擇器]。  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - 無法使用 [程式碼片段選擇器]。  
   
--   Visual F# - 無法使用 [程式碼片段選擇器]。  
+- Visual F# - 無法使用 [程式碼片段選擇器]。  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] -- 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] -- 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
   
--   XML - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
+- XML - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
   
--   HTML - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
+- HTML - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段] 或 [範圍陳述式]。  
   
--   SQL - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段]。  
+- SQL - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段]。  
   
- 在大部分的 Visual Studio 開發語言中，您可以使用 [程式碼片段管理員] 將資料夾新增至 [資料夾清單]，[程式碼片段選擇器] 會掃描那些資料夾中是否有 XML程式碼片段檔案。 您也可以建立自己的程式碼片段並新增至清單。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
+  在大部分的 Visual Studio 開發語言中，您可以使用 [程式碼片段管理員] 將資料夾新增至 [資料夾清單]，[程式碼片段選擇器] 會掃描那些資料夾中是否有 XML程式碼片段檔案。 您也可以建立自己的程式碼片段並新增至清單。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  項目名稱  

@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839202"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令資料表 (。Vsct) 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ XML 命令表 (.vsct) 檔案描述的版面配置和外觀 VSPackage 的命令�
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 檔之間的差異  
  雖然為中現在已被取代.ctc 檔格式.vsct 檔案中的 XML 標記背後的意義都是相同的其實作會有點不同。  
   
--   新 **\<extern >** 標記是您用來參考其他的.h 檔案進行編譯，例如[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]工具列。  
+- 新 **\<extern >** 標記是您用來參考其他的.h 檔案進行編譯，例如[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]工具列。  
   
--   雖然.vsct 檔案支援 **/include**陳述式，.ctc 檔一樣，它也擁有全新\<**匯入 >** 項目。 差別在於**包含**帶入**所有**的資訊，但\<**匯入 >** 帶入只有名稱。  
+- 雖然.vsct 檔案支援 **/include**陳述式，.ctc 檔一樣，它也擁有全新\<**匯入 >** 項目。 差別在於**包含**帶入**所有**的資訊，但\<**匯入 >** 帶入只有名稱。  
   
--   雖然.ctc 檔需要您在其中定義您的前置處理器指示詞的標頭檔，其中一個不需要.vsct 檔案。 相反地，將您的指示詞放在符號表中，位於**\<符號 >** 項目，位於.vsct 檔的底部。  
+- 雖然.ctc 檔需要您在其中定義您的前置處理器指示詞的標頭檔，其中一個不需要.vsct 檔案。 相反地，將您的指示詞放在符號表中，位於**\<符號 >** 項目，位於.vsct 檔的底部。  
   
--   .vsct 檔案功能**\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。  
+- .vsct 檔案功能**\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。  
   
--   值會儲存為項目上的屬性。  
+- 值會儲存為項目上的屬性。  
   
--   可以儲存個別或堆疊命令旗標。  Intellisense，不過，不適用於堆疊的命令旗標。 如需有關命令旗標的詳細資訊，請參閱[Command Flag 元素](../../extensibility/command-flag-element.md)。  
+- 可以儲存個別或堆疊命令旗標。  Intellisense，不過，不適用於堆疊的命令旗標。 如需有關命令旗標的詳細資訊，請參閱[Command Flag 元素](../../extensibility/command-flag-element.md)。  
   
--   您可以指定多個類型，例如分割下拉式清單、 combos 等等。  
+- 您可以指定多個類型，例如分割下拉式清單、 combos 等等。  
   
--   未驗證的 Guid。  
+- 未驗證的 Guid。  
   
--   每個 UI 項目具有與它所顯示的文字表示的字串。  
+- 每個 UI 項目具有與它所顯示的文字表示的字串。  
   
--   父代是選擇性的。 如果省略，則會使用 「 群組不明 」 的值。  
+- 父代是選擇性的。 如果省略，則會使用 「 群組不明 」 的值。  
   
--   圖示引數是選擇性的。  
+- 圖示引數是選擇性的。  
   
--   檔案 [點陣圖] 區段-.ctc 相同，不同之處在於您現在可以指定檔案名稱，透過將 vsct.exe 編譯器提取，在編譯時期的 href。  
+- 檔案 [點陣圖] 區段-.ctc 相同，不同之處在於您現在可以指定檔案名稱，透過將 vsct.exe 編譯器提取，在編譯時期的 href。  
   
--   ResID-舊的點陣圖資源識別碼可用，而且仍然運作方式相同，如.ctc 檔所示。  
+- ResID-舊的點陣圖資源識別碼可用，而且仍然運作方式相同，如.ctc 檔所示。  
   
--   HRef-新的方法，可讓您指定點陣圖資源的檔案名稱。 它會假設所有會使用，因此您可以略過使用的區段。 編譯器會先搜尋本機資源的檔案，然後在任何網路共用，以及/I 參數所定義的任何資源。  
+- HRef-新的方法，可讓您指定點陣圖資源的檔案名稱。 它會假設所有會使用，因此您可以略過使用的區段。 編譯器會先搜尋本機資源的檔案，然後在任何網路共用，以及/I 參數所定義的任何資源。  
   
--   按鍵繫結關係，您不必指定模擬器。 如果您指定其中一個，編譯器會假設編輯器和模擬器都相同。  
+- 按鍵繫結關係，您不必指定模擬器。 如果您指定其中一個，編譯器會假設編輯器和模擬器都相同。  
   
--   已經卸除 Keychord。 新的格式是 Key1、 Mod1、 Key2、 Mod2。  您可以指定字元、 十六進位或 VK 常數。  
+- 已經卸除 Keychord。 新的格式是 Key1、 Mod1、 Key2、 Mod2。  您可以指定字元、 十六進位或 VK 常數。  
   
- 新的編譯器、 vsct.exe，編譯.ctc 和.vsct 檔。 舊的 ctc.exe 編譯器，不過，將不辨識或編譯.vsct 檔。  
+  新的編譯器、 vsct.exe，編譯.ctc 和.vsct 檔。 舊的 ctc.exe 編譯器，不過，將不辨識或編譯.vsct 檔。  
   
- 您可以將現有的.cto 檔轉換成.vsct 檔使用 vsct.exe 編譯器所在。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
+  您可以將現有的.cto 檔轉換成.vsct 檔使用 vsct.exe 編譯器所在。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct 檔項目  
  命令資料表具有下列階層和項目：  

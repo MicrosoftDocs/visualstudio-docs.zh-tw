@@ -17,12 +17,12 @@ ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 590d4039bfa89247fb1ada4b874055ed33972078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 769c3902595a52679070d6b01cc70672c5613951
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841776"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

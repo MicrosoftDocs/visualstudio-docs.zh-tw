@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthprolog |Microsoft 文件'
+title: 'Idiaframedata:: Get_lengthprolog |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8033e0f769c0222dc8c3ee90d680ea6f2de279fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843076"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 擷取的初構程式碼區塊中的位元組數目。  
@@ -37,10 +37,10 @@ HRESULT get_lengthProlog (
  [out]傳回的初構程式碼的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 初構程式碼是一串指示會保留暫存器、 設定 CPU 狀態，並建立函式的堆疊。  
+ 初構程式碼是一連串的指示，會保留暫存器、 設定 CPU 狀態，以及建立函式的堆疊。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

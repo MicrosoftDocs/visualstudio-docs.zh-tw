@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835984"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （獨立模式或整合）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "49266119"
   
 > [!IMPORTANT]
 >  [終端使用者授權合約 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)殼層的 Visual Studio 整合，並隔離包含資料收集 區段 (**第 3 節。資料**)。  它會描述可能會由 Microsoft 的整合式或外掛式 shell 軟體建置到您的應用程式的使用者收集的客戶使用量資料。 如需詳細資訊，請參閱 < [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/en-us/dn948229)。  
->   
+> 
 >  如果您透過您的應用程式，從您的客戶收集不同的使用方式資料，您必須提供適當的通知給您的收集您應用程式的使用者。  當您將獨立或整合式 shell 軟體發佈為應用程式的一部分，根據 Visual Studio 軟體開發套件的授權，您必須包含下列其中一項：  
->   
->  -   使用者授權合約，為您的應用程式授權的一部分  
-> -   需要您的客戶同意保護 Visual Studio 的條款自己使用者授權合約或整合獨立模式 shell 的程度，為 Microsoft 使用者授權條款，shell 軟體  
+> 
+> - 使用者授權合約，為您的應用程式授權的一部分  
+>   -   需要您的客戶同意保護 Visual Studio 的條款自己使用者授權合約或整合獨立模式 shell 的程度，為 Microsoft 使用者授權條款，shell 軟體  
   
 ## <a name="additional-resources"></a>其他資源  
  如需有關可轉散發套件的詳細資訊，請參閱[Visual Studio 擴充性下載](http://go.microsoft.com/fwlink/?LinkID=119298)網站。  

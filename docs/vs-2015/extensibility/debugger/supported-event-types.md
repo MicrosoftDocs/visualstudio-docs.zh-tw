@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839384"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio 偵錯目前支援下列事件類型：  
   
--   非同步事件  
+- 非同步事件  
   
-     通知工作階段的偵錯管理員 (SDM) 和正在偵錯的應用程式狀態正在變更的 IDE。 在 SDM 和 IDE 的休閒以處理這些事件。 處理事件之後，偵錯引擎 (DE) 會不傳送任何回應。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)並[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)介面是非同步事件的範例。  
+   通知工作階段的偵錯管理員 (SDM) 和正在偵錯的應用程式狀態正在變更的 IDE。 在 SDM 和 IDE 的休閒以處理這些事件。 處理事件之後，偵錯引擎 (DE) 會不傳送任何回應。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)並[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)介面是非同步事件的範例。  
   
--   同步事件  
+- 同步事件  
   
-     通知的 SDM 和正在偵錯的應用程式狀態正在變更的 IDE。 這些事件與非同步事件之間唯一的差別是，藉由傳送回覆[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
+   通知的 SDM 和正在偵錯的應用程式狀態正在變更的 IDE。 這些事件與非同步事件之間唯一的差別是，藉由傳送回覆[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
   
-     傳送同步的事件是需要您 DE 以繼續處理之後 IDE 會接收及處理事件時相當實用。  
+   傳送同步的事件是需要您 DE 以繼續處理之後 IDE 會接收及處理事件時相當實用。  
   
--   同步的停止事件，或停止事件  
+- 同步的停止事件，或停止事件  
   
-     通知應用程式進行偵錯已停止執行程式碼在 SDM 和 IDE。 當您透過此方法，會在傳送停止事件時[事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)，則[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)是必要參數。 正在停止事件會繼續藉由呼叫下列方法其中一個：  
+   通知應用程式進行偵錯已停止執行程式碼在 SDM 和 IDE。 當您透過此方法，會在傳送停止事件時[事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)，則[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)是必要參數。 正在停止事件會繼續藉由呼叫下列方法其中一個：  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     介面[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)並[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)會停止事件的範例。  
+    介面[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)並[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)會停止事件的範例。  
   
-    > [!NOTE]
-    >  不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。  
+  > [!NOTE]
+  >  不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。  
   
 ## <a name="discussion"></a>討論  
  事件的實際實作取決於您的德國的設計。 傳送每個事件的型別取決於其屬性，當您設計 DE 時設定。 比方說，可能會傳送一個 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)當做非同步事件，而另一個可能會將它傳送為停止事件。  
