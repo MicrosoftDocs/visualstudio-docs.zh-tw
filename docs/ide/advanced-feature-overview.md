@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fc62c4b48c6e2ee3ce959082f7f8ba6cb646c7
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542386"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863644"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
@@ -100,7 +100,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
-您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index?view=vsts) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
+您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
 
 Azure DevOps Services 是雲端型服務，用於規劃、裝載，自動化和部署軟體以及在小組中共同作業。 Azure DevOps Services 支援 Git repos (分散式版本控制) 和 Team Foundation 版本控制 (集中式版本控制)，以及用於儲存於版本控制系統中程式碼的連續建置和版本 (CI/CD) 管線。 Azure DevOps Services 也支援 Scrum、CMMI 和敏捷式開發方法。
 
