@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896760"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  此範例會說明這些重點有關建立項目：
 
--   建立新的項目存放區的特定資料分割中。 模型項目和關聯性，但不形狀，這通常是預設資料分割。
+- 建立新的項目存放區的特定資料分割中。 模型項目和關聯性，但不形狀，這通常是預設資料分割。
 
--   可讓內嵌關聯性的目標。 在此範例的 DslDefinition，每個人都必須是內嵌關聯性 FamilyTreeHasPeople 的目標。 若要達到此目的，我們可以設定 Person 物件，FamilyTreeModel 角色屬性，或是將人員新增至 FamilyTreeModel 物件的使用者角色屬性。
+- 可讓內嵌關聯性的目標。 在此範例的 DslDefinition，每個人都必須是內嵌關聯性 FamilyTreeHasPeople 的目標。 若要達到此目的，我們可以設定 Person 物件，FamilyTreeModel 角色屬性，或是將人員新增至 FamilyTreeModel 物件的使用者角色屬性。
 
--   設定新的項目，特別是為其屬性的屬性`IsName`是 DslDefinition 中，則為 true。 這個旗標標記是用來識別在其擁有者的唯一元素的屬性。 在此情況下，[名稱] 屬性會有該旗標。
+- 設定新的項目，特別是為其屬性的屬性`IsName`是 DslDefinition 中，則為 true。 這個旗標標記是用來識別在其擁有者的唯一元素的屬性。 在此情況下，[名稱] 屬性會有該旗標。
 
--   此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱 <<c0> [ 如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱 <<c0> [ 如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
- 當您建立的項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會出現在 自動指派的位置，而預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形顯示的位置和方式，請參閱 <<c0> [ 建立項目和其圖形](#merge)。
+  當您建立的項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會出現在 自動指派的位置，而預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形顯示的位置和方式，請參閱 <<c0> [ 建立項目和其圖形](#merge)。
 
 ##  <a name="links"></a> 建立連結關聯性
  有兩個範例 DSL 定義中定義的關聯性。 每個關聯性會定義*角色屬性*每一端的關聯性類別上。
 
  有三種方式，您可以在其中建立關聯性的執行個體。 每一種方法有相同的效果：
 
--   設定來源角色扮演者的屬性。 例如: 
+- 設定來源角色扮演者的屬性。 例如: 
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   設定目標角色扮演者的屬性。 例如: 
+- 設定目標角色扮演者的屬性。 例如: 
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         此角色的多重性是 「 `1..1`，因此我們將值指派。
+       此角色的多重性是 「 `1..1`，因此我們將值指派。
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         此角色的多重性是 「 `0..*`，因此我們將新增至集合。
+       此角色的多重性是 「 `0..*`，因此我們將新增至集合。
 
--   明確建構關聯性執行的個體。 例如: 
+- 明確建構關聯性執行的個體。 例如: 
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- 最後一個方法是很有用，如果您想要設定關聯性本身的屬性。
+  最後一個方法是很有用，如果您想要設定關聯性本身的屬性。
 
- 當您建立的項目，如此一來時，在圖表上的連接器會自動建立，但它有 「 預設 」 圖形、 色彩和其他功能。 若要控制相關聯的連接器的建立方式，請參閱[建立項目和其圖形](#merge)。
+  當您建立的項目，如此一來時，在圖表上的連接器會自動建立，但它有 「 預設 」 圖形、 色彩和其他功能。 若要控制相關聯的連接器的建立方式，請參閱[建立項目和其圖形](#merge)。
 
 ##  <a name="deleteelements"></a> 刪除項目
  刪除項目，藉由呼叫`Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  此外，也會刪除這項作業：
 
--   關聯性的連結項目。 例如，`edward.Parents`就不再包含`henry`。
+- 關聯性的連結項目。 例如，`edward.Parents`就不再包含`henry`。
 
--   在角色的項目`PropagatesDelete`旗標為 true。 比方說，將刪除的圖形顯示的項目。
+- 在角色的項目`PropagatesDelete`旗標為 true。 比方說，將刪除的圖形顯示的項目。
 
- 根據預設，每個內嵌關聯性具有`PropagatesDelete`在目標角色，則為 true。 正在刪除`henry`不會刪除`familyTree`，但`familyTree.Delete()`會刪除所有`Persons`。 如需詳細資訊，請參閱 <<c0> [ 自訂刪除行為](../modeling/customizing-deletion-behavior.md)。
+  根據預設，每個內嵌關聯性具有`PropagatesDelete`在目標角色，則為 true。 正在刪除`henry`不會刪除`familyTree`，但`familyTree.Delete()`會刪除所有`Persons`。 如需詳細資訊，請參閱 <<c0> [ 自訂刪除行為](../modeling/customizing-deletion-behavior.md)。
 
- 根據預設，`PropagatesDelete`不適用於參考關聯性的角色。
+  根據預設，`PropagatesDelete`不適用於參考關聯性的角色。
 
- 您可能會導致刪除規則，當您刪除物件時，請略過特定的傳用。 這非常有用，如果您會取代另一個項目。 您提供為其刪除不應散佈的一或多個角色的 GUID。 從關聯性類別，可以取得 GUID:
+  您可能會導致刪除規則，當您刪除物件時，請略過特定的傳用。 這非常有用，如果您會取代另一個項目。 您提供為其刪除不應散佈的一或多個角色的 GUID。 從關聯性類別，可以取得 GUID:
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (這個特定範例中會有任何作用中，，因為`PropagatesDelete`已`false`的角色`ParentsHaveChildren`關聯性。)
+  (這個特定範例中會有任何作用中，，因為`PropagatesDelete`已`false`的角色`ParentsHaveChildren`關聯性。)
 
- 在某些情況下，禁止刪除鎖定，項目或項目，會刪除傳播的存在。 您可以使用`element.CanDelete()`來檢查是否可以刪除的項目。
+  在某些情況下，禁止刪除鎖定，項目或項目，會刪除傳播的存在。 您可以使用`element.CanDelete()`來檢查是否可以刪除的項目。
 
 ##  <a name="deletelinks"></a> 刪除關聯性連結
  您可以藉由移除角色屬性中的項目來刪除關聯性連結：
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  在 DSL 定義中，您指定每個項目會建立衍生自其中一個下列的標準類別的類別。
 
 |元素的類型|基底類別|
-|---------------------|----------------|
+|-|-|
 |網域類別|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |網域關聯性|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |圖形|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  如果您提供多個圖形，設定它們使用的相對位置`AbsoluteBounds`。

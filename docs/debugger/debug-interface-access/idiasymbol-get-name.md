@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_name |Microsoft 文件'
+title: 'Idiasymbol:: Get_name |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ed63dce04967d9a312c57b5507da828814c6f6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: edd0a96e88b1466fb7c2e2a6220e638d06a52f19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914225"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 擷取的符號名稱。  
@@ -34,13 +34,13 @@ HRESULT get_name (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回的符號名稱。  
+ [out]傳回符號的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="example"></a>範例  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898170"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232098"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署可克服在部署中的三個主要問題：  
   
--   **更新應用程式的問題。** 使用 Microsoft Windows Installer 部署時，只要更新應用程式，使用者可以安裝更新，msp 檔案，並將它套用到已安裝的產品;使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，您可以自動提供更新。 下載的只有這些組件的應用程式已變更，並完整、 已更新的應用程式然後重新安裝新的並排顯示資料夾中。  
+- **更新應用程式的問題。** 使用 Microsoft Windows Installer 部署時，只要更新應用程式，使用者可以安裝更新，msp 檔案，並將它套用到已安裝的產品;使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，您可以自動提供更新。 下載的只有這些組件的應用程式已變更，並完整、 已更新的應用程式然後重新安裝新的並排顯示資料夾中。  
   
--   **若要在使用者電腦的影響。** 使用 Windows Installer 部署時，應用程式經常依賴共用元件，可能發生版本衝突;使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署中，每個應用程式是獨立的並不會干擾其他應用程式。  
+- **若要在使用者電腦的影響。** 使用 Windows Installer 部署時，應用程式經常依賴共用元件，可能發生版本衝突;使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署中，每個應用程式是獨立的並不會干擾其他應用程式。  
   
--   **安全性權限。** Windows Installer 部署需要系統管理權限，且允許只有有限的使用者安裝;[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署啟用非系統管理員的使用者安裝，並授與應用程式所需的程式碼存取安全性使用權。  
+- **安全性權限。** Windows Installer 部署需要系統管理權限，且允許只有有限的使用者安裝;[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署啟用非系統管理員的使用者安裝，並授與應用程式所需的程式碼存取安全性使用權。  
   
- 在過去，這些問題有時會導致開發人員決定建立 Web 應用程式，而不是以 Windows 為基礎的應用程式，犧牲豐富的使用者介面，以簡化安裝。 使用應用程式部署使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，您可以有最佳的這兩種技術。  
+  在過去，這些問題有時會導致開發人員決定建立 Web 應用程式，而不是以 Windows 為基礎的應用程式，犧牲豐富的使用者介面，以簡化安裝。 使用應用程式部署使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，您可以有最佳的這兩種技術。  
   
 ## <a name="what-is-a-clickonce-application"></a>什麼是 ClickOnce 應用程式？  
  A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式是任何的 Windows Presentation Foundation (.xbap)、 Windows Form (.exe)、 主控台應用程式 (.exe) 或使用發行 Office 方案 (.dll)[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]技術。 您可以發佈[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式的方式有三種： 從網頁、 網路檔案共用，或媒體例如 CD-ROM。 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式可以安裝在終端使用者的電腦上和在本機執行，即使電腦處於離線狀態，或可以在僅限線上模式中執行而不需要永久終端使用者的電腦上安裝任何項目。 如需詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  

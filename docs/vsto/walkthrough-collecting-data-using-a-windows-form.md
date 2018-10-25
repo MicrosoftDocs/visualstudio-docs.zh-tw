@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900471"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>逐步解說： 使用 Windows Form 收集資料
   本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。  
@@ -70,41 +70,41 @@ ms.locfileid: "35671110"
   
 ### <a name="to-add-a-windows-form"></a>加入 Windows Form  
   
-1.  在方案總管  中，選取專案 **WinFormInput**。  
+1. 在方案總管  中，選取專案 **WinFormInput**。  
   
-2.  在 [專案]  功能表上，按一下 [加入 Windows Form] 。  
+2. 在 [專案]  功能表上，按一下 [加入 Windows Form] 。  
   
-3.  將表單命名 **GetInputString.vb** 或 **GetInputString.cs**，然後按一下 [加入] 。  
+3. 將表單命名 **GetInputString.vb** 或 **GetInputString.cs**，然後按一下 [加入] 。  
   
-     新表單隨即在設計工具中開啟。  
+    新表單隨即在設計工具中開啟。  
   
-4.  將 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 加入表單。  
+4. 將 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 加入表單。  
   
-5.  選取按鈕，在 [屬性]  視窗中找到 [文字]  屬性，然後將文字變更為 [確定] 。  
+5. 選取按鈕，在 [屬性]  視窗中找到 [文字]  屬性，然後將文字變更為 [確定] 。  
   
- 接下來，將程式碼加入 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` ，以收集使用者的資訊。  
+   接下來，將程式碼加入 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` ，以收集使用者的資訊。  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>顯示 Windows 表單和收集的資訊  
  建立並顯示 `GetInputString` Windows Form 的執行個體，然後將使用者的資訊寫入工作表中的儲存格。  
   
 #### <a name="to-display-the-form-and-collect-information"></a>顯示表單並收集資訊  
   
-1.  以滑鼠右鍵按一下方案總管  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然後按一下 [檢視程式碼] 。  
+1. 以滑鼠右鍵按一下方案總管  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然後按一下 [檢視程式碼] 。  
   
-2.  在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件處理常式，加入下列程式碼以宣告表單 `GetInputString` 的變數，然後顯示表單。  
+2. 在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件處理常式，加入下列程式碼以宣告表單 `GetInputString` 的變數，然後顯示表單。  
   
-    > [!NOTE]  
-    >  在 C# 中，您必須加入事件處理常式，如以下 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件所示。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+   > [!NOTE]  
+   >  在 C# 中，您必須加入事件處理常式，如以下 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件所示。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  建立名為 `WriteStringToCell` 的方法，以將文字寫入指定範圍。 系統會從表單呼叫這個方法，並將使用者的輸入傳遞至儲存格 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`上的 **控制項**。  
+3. 建立名為 `WriteStringToCell` 的方法，以將文字寫入指定範圍。 系統會從表單呼叫這個方法，並將使用者的輸入傳遞至儲存格 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`上的 **控制項**。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- 接下來，將程式碼加入表單以處理按鈕的 Click 事件。  
+   接下來，將程式碼加入表單以處理按鈕的 Click 事件。  
   
 ## <a name="send-information-to-the-worksheet"></a>將資訊傳送至工作表  
   

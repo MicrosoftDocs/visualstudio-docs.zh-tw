@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893672"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>標準匯入  
  下列命名空間會自動匯入，因此您不需要為它撰寫 import 指示詞：  
   
--   `System`  
+- `System`  
   
- 此外，如果使用自訂指示詞，指示詞處理器可能會自動匯入一些組件。  
+  此外，如果使用自訂指示詞，指示詞處理器可能會自動匯入一些組件。  
   
- 例如，如果撰寫特定領域語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：  
+  例如，如果撰寫特定領域語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   DSL 的命名空間  
+- DSL 的命名空間  
   
 ## <a name="see-also"></a>另請參閱  
  [T4 組件指示詞](../modeling/t4-assembly-directive.md)

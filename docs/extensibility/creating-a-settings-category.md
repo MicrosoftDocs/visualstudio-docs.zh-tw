@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8ac70ae10389bb39a86e5ad305f3457c54bbb8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: afbb16d3f5bd9d9278ba6e787a6bba673cc28acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910006"
 ---
 # <a name="create-a-settings-category"></a>建立設定類別
 在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  

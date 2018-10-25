@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a92f0dc6d8ffff0a9dab397c348008454920d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06c61ec2d712b7e94ce939fe2510b0e6e8b76216
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907257"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

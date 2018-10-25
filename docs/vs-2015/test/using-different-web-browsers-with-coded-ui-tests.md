@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893230"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ ms.locfileid: "49210375"
   
  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
--   作業系統：  
+- 作業系統：  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Web 瀏覽器版本：  
+- Web 瀏覽器版本：  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   如需了解 Mozilla Firefox 及 Google Chrome 支援的版本，請參閱[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)。  
+  -   如需了解 Mozilla Firefox 及 Google Chrome 支援的版本，請參閱[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)。  
   
--   安裝 [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。  
+- 安裝 [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。  
   
- **哪些功能是所有網頁瀏覽器都支援的？**  
+  **哪些功能是所有網頁瀏覽器都支援的？**  
   
--   [加入用於控制功能的自訂程式碼](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) (例如屬性、搜尋和播放等候程式等功能)。  
+- [加入用於控制功能的自訂程式碼](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) (例如屬性、搜尋和播放等候程式等功能)。  
   
--   快顯和對話方塊  
+- 快顯和對話方塊  
   
--   [執行不含傳回型別的基本 JavaScript](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [執行不含傳回型別的基本 JavaScript](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   搜尋彈性 (使用智慧比對) 和 [performance improvements](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx) (效能改進)  
+- 搜尋彈性 (使用智慧比對) 和 [performance improvements](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx) (效能改進)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>為什麼應該跨多種 Web 瀏覽器類型使用自動程式化 UI 測試?  
  您的使用者可能執行不同的瀏覽器，因此使用各種 Web 瀏覽器類型測試 Web 應用程式可以進一步模擬其 UI 使用經驗。 例如，您的應用程式可能會在 Internet Explorer 中包含與其他 Web 瀏覽器不相容的控制項或程式碼。 若能跨其他瀏覽器執行自動程式碼 UI 測試，可以找出並修正任何可能影響客戶的問題。  
@@ -74,16 +74,16 @@ ms.locfileid: "49210375"
   
 #### <a name="installing-selenium-components"></a>安裝 Selenium 元件  
   
-1.  在 [工具]  功能表中選擇 [擴充功能和更新] 。  
+1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。  
   
-2.  在 [延伸模組和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。  
+2. 在 [延伸模組和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。  
   
-3.  反白顯示延伸模組並選擇 [下載]。  
+3. 反白顯示延伸模組並選擇 [下載]。  
   
-    > [!TIP]
-    >  您也可以在[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。  
+   > [!TIP]
+   >  您也可以在[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。  
   
- 如需建立和使用自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+   如需建立和使用自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   
 ### <a name="enable-debugging"></a>啟用偵錯  
  若要啟用偵錯 Web 應用程式的功能，您必須完成下列組態選項：  
@@ -106,29 +106,29 @@ ms.locfileid: "49210375"
  *我還應該知道什麼？*  
  **備註**  
   
--   ![必要條件](../test/media/prereq.png "Prereq") 不支援 Apple Safari 網頁瀏覽器。  
+- ![必要條件](../test/media/prereq.png "Prereq") 不支援 Apple Safari 網頁瀏覽器。  
   
--   ![必要條件](../test/media/prereq.png "Prereq") 自動程式碼 UI 測試必須包含啟動網頁瀏覽器的動作。  
+- ![必要條件](../test/media/prereq.png "Prereq") 自動程式碼 UI 測試必須包含啟動網頁瀏覽器的動作。  
   
-     如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。  
+   如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。  
   
--   ![必要條件](../test/media/prereq.png "Prereq") 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。  
+- ![必要條件](../test/media/prereq.png "Prereq") 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。  
   
- **祕訣**  
+  **祕訣**  
   
--   ![祕訣](../test/media/tip.png "祕訣") 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：  
+- ![祕訣](../test/media/tip.png "祕訣") 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     設定下列的值：  
+   設定下列的值：  
   
-    -   `EqtTraceLevel` 區段中的`system.diagnostics`。  
+  - `EqtTraceLevel` 區段中的`system.diagnostics`。  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         將值設為 3 或以上，即可擷取每一個動作的螢幕擷取畫面。 若將值設為 1 或 2 時，則只擷取錯誤動作的螢幕擷取畫面。  
+     將值設為 3 或以上，即可擷取每一個動作的螢幕擷取畫面。 若將值設為 1 或 2 時，則只擷取錯誤動作的螢幕擷取畫面。  
   
-     如需詳細資訊，請參閱[使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)。  
+    如需詳細資訊，請參閱[使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)。  
   
 ## <a name="external-resources"></a>外部資源  
   

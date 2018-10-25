@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881959"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49290494"
 ### <a name="managed-debugging-security"></a>Managed 偵錯安全性  
  以下列出幾項適用所有 Managed 偵錯的一般建議：  
   
--   當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
+- 當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
   
--   從網際網路下載專案並載入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。  
+- 從網際網路下載專案並載入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。  
   
- 如需詳細資訊，請參閱 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
+  如需詳細資訊，請參閱 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
   
 ### <a name="remote-debugging-security"></a>遠端偵錯安全性  
  本機偵錯通常比遠端偵錯安全。 遠端偵錯會增加能夠探查的整體表面範圍。  
@@ -79,11 +79,11 @@ ms.locfileid: "49290494"
 ### <a name="symbols-and-source-code"></a>符號和原始程式碼  
  需要考慮安全性的兩個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具如下所示：  
   
--   來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。  
+- 符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。  
   
- 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses |Microsoft 文件
+title: IDebugClassField::EnumBaseClasses |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5210859115947115bce6525cd5b6cd15c4d59d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5938809aa7fcd2e913743fc778c66205e39988e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901095"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
-建立這個類別的基底類別的列舉值。  
+建立此類別的基底類別的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int EnumBaseClasses(
  [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表基底類別清單。 如果沒有基底類別，則傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功的話，會傳回 S_OK，如果沒有基底類別會傳回 S_SH_NO_BASE_CLASSES (和`ppEnum`參數設定為 null 的值)，否則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，如果沒有基底類別，則傳回 S_SH_NO_BASE_CLASSES (和`ppEnum`參數設為 null 的值)，否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 中的列舉值物件的基底類別中最立即的 （或最常衍生的） 基底類別的大部分的遠端的基底類別的順序指定。 例如，如果已指定 c + + 類別：  
+ 中的列舉值物件的基底類別是以最立即可見的 （或最具衍生性的） 基底類別的大多數遠端的基底類別的順序指定。 例如，假設 c + + 類別：  
   
 ```  
 class Root { }  

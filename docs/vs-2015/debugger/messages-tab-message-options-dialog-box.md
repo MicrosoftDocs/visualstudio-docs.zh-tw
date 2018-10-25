@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912262"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ ms.locfileid: "49298541"
  **訊息群組**  
  選取檢視的訊息群組。 可用的群組包含：  
   
--   使用程式碼大於或等於 WM_USER WM_USER:  
+- 使用程式碼大於或等於 WM_USER WM_USER:  
   
--   註冊： 向**RegisterWindowMessage**呼叫  
+- 註冊： 向**RegisterWindowMessage**呼叫  
   
--   未知： 範圍介於 0 到 (WM_USER – 1) 中的未知的訊息  
+- 未知： 範圍介於 0 到 (WM_USER – 1) 中的未知的訊息  
   
- 請注意，這些**訊息群組**不會對應至特定的項目底下**訊息，以檢視**。 當您選取的群組時，選取項目是直接套用到訊息資料流。  
+  請注意，這些**訊息群組**不會對應至特定的項目底下**訊息，以檢視**。 當您選取的群組時，選取項目是直接套用到訊息資料流。  
   
- 灰色的核取方塊內**訊息群組**指出**訊息，以檢視**清單方塊是否變更過的該群組中的訊息; 不是所有的訊息類型，該群組中選取。  
+  灰色的核取方塊內**訊息群組**指出**訊息，以檢視**清單方塊是否變更過的該群組中的訊息; 不是所有的訊息類型，該群組中選取。  
   
- **將設定儲存為預設值**  
- 儲存目前的設定，以供稍後使用，做為訊息搜尋選項。 結束 Spy + + 時，也會儲存這些設定。
+  **將設定儲存為預設值**  
+  儲存目前的設定，以供稍後使用，做為訊息搜尋選項。 結束 Spy + + 時，也會儲存這些設定。
 
 
 

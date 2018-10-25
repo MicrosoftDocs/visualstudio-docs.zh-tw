@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893594"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集來指定要執行的 c + + 規則
 
@@ -34,11 +34,11 @@ ms.locfileid: "35671070"
 
 3. 在 **規則集**下拉式清單，請執行下列其中一項：
 
-    - 選擇您想要自訂的規則集。
+   - 選擇您想要自訂的規則集。
 
      \-或-
 
-    - 選擇**\<瀏覽 >** ，指定現有的規則集不在清單中。
+   - 選擇**\<瀏覽 >** ，指定現有的規則集不在清單中。
 
 4. 選擇**開啟**至規則集編輯器中顯示的規則。
 

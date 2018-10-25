@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913887"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "49272359"
   
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：  
   
--   建立最小的應用程式原始程式檔。  
+- 建立最小的應用程式原始程式檔。  
   
--   建立最小的 MSBuild 專案檔。  
+- 建立最小的 MSBuild 專案檔。  
   
--   擴充 PATH 環境變數以包括 MSBuild。  
+- 擴充 PATH 環境變數以包括 MSBuild。  
   
--   使用專案檔建置應用程式。  
+- 使用專案檔建置應用程式。  
   
--   加入屬性以控制組建。  
+- 加入屬性以控制組建。  
   
--   透過變更屬性值來控制組建。  
+- 透過變更屬性值來控制組建。  
   
--   將目標加入組建。  
+- 將目標加入組建。  
   
--   透過指定目標來控制組建。  
+- 透過指定目標來控制組建。  
   
--   以累加方式建置。  
+- 以累加方式建置。  
   
- 此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需 MSBuild 的詳細資訊，以及如何在命令提示字元中執行 MSBuild，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
+  此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需 MSBuild 的詳細資訊，以及如何在命令提示字元中執行 MSBuild，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
- 若要完成逐步解說，您必須已安裝 .NET Framework (2.0、3.5、4.0 或 4.5 版)，因為它包含此逐步解說所需的 MSBuild 和 Visual C# 編譯器。  
+  若要完成逐步解說，您必須已安裝 .NET Framework (2.0、3.5、4.0 或 4.5 版)，因為它包含此逐步解說所需的 MSBuild 和 Visual C# 編譯器。  
   
 ## <a name="creating-a-minimal-application"></a>建立最小應用程式  
  本節顯示如何使用文字編輯器建立最小 Visual C# 應用程式原始程式檔。  
@@ -109,39 +109,39 @@ ms.locfileid: "49272359"
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>建立最小的 MSBuild 專案檔  
   
-1.  在文字編輯器中，使用下列兩行取代現有文字：  
+1. 在文字編輯器中，使用下列兩行取代現有文字：  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  請插入此 `ItemGroup` 節點做為 `Project` 節點的子項目：  
+2. 請插入此 `ItemGroup` 節點做為 `Project` 節點的子項目：  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     請注意此 `ItemGroup` 已包含項目元素。  
+    請注意此 `ItemGroup` 已包含項目元素。  
   
-3.  請加入此 `Target` 節點做為 `Project` 節點的子項目。 將節點命名為 `Build`。  
+3. 請加入此 `Target` 節點做為 `Project` 節點的子項目。 將節點命名為 `Build`。  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  插入此工作項目做為 `Target` 節點的子項目：  
+4. 插入此工作項目做為 `Target` 節點的子項目：  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  儲存此專案檔，並將其命名為 Helloworld.csproj。  
+5. 儲存此專案檔，並將其命名為 Helloworld.csproj。  
   
- 您的最小專案檔應該類似下列程式碼：  
+   您的最小專案檔應該類似下列程式碼：  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ ms.locfileid: "49272359"
   
 #### <a name="to-add-build-properties"></a>加入建置屬性  
   
-1.  在命令提示字元中輸入**del helloworld.exe**，以刪除現有的應用程式。  
+1. 在命令提示字元中輸入**del helloworld.exe**，以刪除現有的應用程式。  
   
-2.  在專案檔中，於開頭的 `PropertyGroup` 項目之後，插入此 `Project` 項目：  
+2. 在專案檔中，於開頭的 `PropertyGroup` 項目之後，插入此 `Project` 項目：  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  將此工作加入建置目標之後，才能進行 `Csc` 工作：  
+3. 將此工作加入建置目標之後，才能進行 `Csc` 工作：  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     `MakeDir` 工作會建立由 `OutputPath` 屬性命名的資料夾，前提是目前沒有該名稱的資料夾。  
+    `MakeDir` 工作會建立由 `OutputPath` 屬性命名的資料夾，前提是目前沒有該名稱的資料夾。  
   
-4.  將此 `OutputAssembly` 屬性加入 `Csc` 工作：  
+4. 將此 `OutputAssembly` 屬性加入 `Csc` 工作：  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     這會指示 Visual C# 編譯器產生由 `AssemblyName` 屬性命名的組件，並將其置於由 `OutputPath` 屬性命名的資料夾中。  
+    這會指示 Visual C# 編譯器產生由 `AssemblyName` 屬性命名的組件，並將其置於由 `OutputPath` 屬性命名的資料夾中。  
   
-5.  儲存您的變更。  
+5. 儲存您的變更。  
   
- 您的專案檔現在應該類似下列程式碼：  
+   您的專案檔現在應該類似下列程式碼：  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ ms.locfileid: "49272359"
 ## <a name="adding-build-targets"></a>加入建置目標  
  接下來，再將兩個目標加入專案檔，如下所示：  
   
--   用於刪除舊檔案的「清除」目標。  
+- 用於刪除舊檔案的「清除」目標。  
   
--   使用 `DependsOnTargets` 屬性，在「建置」工作之前強制執行「清除」工作的「重建」目標。  
+- 使用 `DependsOnTargets` 屬性，在「建置」工作之前強制執行「清除」工作的「重建」目標。  
   
- 既然您具有多個目標，您可以將「建置」目標設為預設目標。  
+  既然您具有多個目標，您可以將「建置」目標設為預設目標。  
   
 #### <a name="to-add-build-targets"></a>加入建置目標  
   
-1.  在專案檔中，在「建置」目標之後加入這兩個目標：  
+1. 在專案檔中，在「建置」目標之後加入這兩個目標：  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     「清除」目標會叫用「刪除」工作，以刪除應用程式。 「重建」目標會在「清除」目標和「建置」目標執行之後才執行。 雖然「重建」目標沒有工作，但它會導致「清除」目標在「建置」目標之前執行。  
+    「清除」目標會叫用「刪除」工作，以刪除應用程式。 「重建」目標會在「清除」目標和「建置」目標執行之後才執行。 雖然「重建」目標沒有工作，但它會導致「清除」目標在「建置」目標之前執行。  
   
-2.  將此 `DefaultTargets` 屬性加入開頭的 `Project` 項目：  
+2. 將此 `DefaultTargets` 屬性加入開頭的 `Project` 項目：  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     這會將「建置」目標設為預設目標。  
+    這會將「建置」目標設為預設目標。  
   
- 您的專案檔現在應該類似下列程式碼：  
+   您的專案檔現在應該類似下列程式碼：  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

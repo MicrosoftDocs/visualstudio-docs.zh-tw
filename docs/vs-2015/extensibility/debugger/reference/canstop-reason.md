@@ -17,12 +17,12 @@ ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817f4190eeed1650def21ec4482452f5eadf5db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab1b74092896d44b13fdb6822172f6f95ee87c0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918697"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

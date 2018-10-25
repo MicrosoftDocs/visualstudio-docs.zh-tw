@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903630"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>不正確的字元集範圍 (JavaScript)
 您嘗試使用無效的字元設定的範圍建立規則運算式。 字元集的範圍必須從單一字元，例如 a-z 或 0-9;您不能包含字元類別，例如 \w 中的字元。 也必須在範圍中的第一個字元前面的範圍中，第二個字元。 例如:   

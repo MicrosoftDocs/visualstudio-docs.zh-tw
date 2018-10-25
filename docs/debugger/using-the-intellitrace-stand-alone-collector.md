@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905307"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。
@@ -33,22 +33,22 @@ ms.locfileid: "44283739"
 
  **需求**
 
--   .NET Framework 3.5、4 或 4.5
+- .NET Framework 3.5、4 或 4.5
 
--   在開發電腦或其他要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
+- 在開發電腦或其他要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
 
-    > [!NOTE]
-    >  請務必儲存符號 (.pdb) 檔案。 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
+  > [!NOTE]
+  >  請務必儲存符號 (.pdb) 檔案。 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
- **常見問題集**
+  **常見問題集**
 
--   [哪些 App 與收集器搭配使用？](#WhatApps)
+- [哪些 App 與收集器搭配使用？](#WhatApps)
 
--   [如何開始？](#GetStarted)
+- [如何開始？](#GetStarted)
 
--   [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing)
+- [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing)
 
--   [我還可以在哪裏取得 IntelliTrace 資料？](#WhereElse)
+- [我還可以在哪裏取得 IntelliTrace 資料？](#WhereElse)
 
 ##  <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
 
@@ -78,40 +78,40 @@ ms.locfileid: "44283739"
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安裝收集器
 
-1.  在您的應用程式伺服器上，建立收集器目錄，例如： **C:\IntelliTraceCollector**
+1. 在您的應用程式伺服器上，建立收集器目錄，例如： **C:\IntelliTraceCollector**
 
-2.  取得收集器，從 Microsoft 下載中心或從 Visual Studio 2013 Update 3 安裝資料夾。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
+2. 取得收集器，從 Microsoft 下載中心或從 Visual Studio 2013 Update 3 安裝資料夾。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-    -   **Microsoft 下載中心**：
+   - **Microsoft 下載中心**：
 
-        1.  選擇 **IntelliTraceCollector.exe**旁邊的 [下載] 。
+     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載] 。
 
-        2.  將 IntelliTraceCollector.exe 儲存至收集器目錄，例如： **C:\IntelliTraceCollector**
+     2. 將 IntelliTraceCollector.exe 儲存至收集器目錄，例如： **C:\IntelliTraceCollector**
 
-        3.  執行 IntelliTraceCollector.exe。 這會解壓縮 IntelliTraceCollection.cab 檔案。
+     3. 執行 IntelliTraceCollector.exe。 這會解壓縮 IntelliTraceCollection.cab 檔案。
 
-         \-或-
+        \-或-
 
-    -   **Visual Studio 安裝資料夾**：
+   - **Visual Studio 安裝資料夾**：
 
-        1.  從下列資料夾複製 IntelliTraceCollection.cab：
+     1.  從下列資料夾複製 IntelliTraceCollection.cab：
 
-             **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-        2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如： **C:\IntelliTraceCollector**
+     2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如： **C:\IntelliTraceCollector**
 
-3.  展開 IntelliTraceCollection.cab：
+3. 展開 IntelliTraceCollection.cab：
 
-    1.  在您的應用程式伺服器上，系統管理員身分開啟命令提示字元視窗。
+   1.  在您的應用程式伺服器上，系統管理員身分開啟命令提示字元視窗。
 
-    2.  瀏覽至收集器目錄，例如： **C:\IntelliTraceCollector**
+   2.  瀏覽至收集器目錄，例如： **C:\IntelliTraceCollector**
 
-    3.  使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
+   3.  使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
 
-         `expand  /f:* IntelliTraceCollection.cab .`
+        `expand  /f:* IntelliTraceCollection.cab .`
 
-        > [!NOTE]
-        >  句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
+       > [!NOTE]
+       >  句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
 
 ##  <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
 
@@ -167,47 +167,47 @@ ms.locfileid: "44283739"
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 設定 .iTrace 檔案目錄的權限
 
-1.  在您的應用程式伺服器上，建立.iTrace 檔案目錄，例如： **C:\IntelliTraceLogFiles**
+1. 在您的應用程式伺服器上，建立.iTrace 檔案目錄，例如： **C:\IntelliTraceLogFiles**
 
-    > [!NOTE]
-    >  -   若要避免應用程式變慢，請選擇不是非常活躍的本機高速磁碟上的位置。
-    > -   您可以將 .iTrace 檔案和收集器檔案放在相同的位置。 不過，如果您有 Web App 或 SharePoint 應用程式，請確認這個位置是在裝載應用程式的目錄外部。
+   > [!NOTE]
+   > - 若要避免應用程式變慢，請選擇不是非常活躍的本機高速磁碟上的位置。
+   >   -   您可以將 .iTrace 檔案和收集器檔案放在相同的位置。 不過，如果您有 Web App 或 SharePoint 應用程式，請確認這個位置是在裝載應用程式的目錄外部。
+   > 
+   > [!IMPORTANT]
+   > - 限制 iTrace 檔案目錄，僅供必須使用收集器的識別使用。 .ITrace 檔案可能包含機密資訊 (例如使用者、資料庫、其他來源位置和連接字串中的資料)，因為 IntelliTrace 可以記錄傳遞給方法參數或做為傳回值的任何資料。
+   >   -   請確定可以開啟 .iTrace 檔案的人具有檢視機密資料的授權。 共用 .iTrace 檔案時請小心。 如果其他人必須具有存取權，請將檔案複製到安全的共用位置。
 
-    > [!IMPORTANT]
-    >  -   限制 iTrace 檔案目錄，僅供必須使用收集器的識別使用。 .ITrace 檔案可能包含機密資訊 (例如使用者、資料庫、其他來源位置和連接字串中的資料)，因為 IntelliTrace 可以記錄傳遞給方法參數或做為傳回值的任何資料。
-    > -   請確定可以開啟 .iTrace 檔案的人具有檢視機密資料的授權。 共用 .iTrace 檔案時請小心。 如果其他人必須具有存取權，請將檔案複製到安全的共用位置。
+2. 針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。
 
-2.  針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。
+    例如: 
 
-     例如: 
+   - 使用 Windows **icacls** 命令設定權限：
 
-    -   使用 Windows **icacls** 命令設定權限：
+     - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
 
-        -   針對 **DefaultAppPool** 應用程式集區中的 Web App：
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
+     - 針對 **SharePoint - 80** 應用程式集區中的 SharePoint 應用程式：
 
-        -   針對 **SharePoint - 80** 應用程式集區中的 SharePoint 應用程式：
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
+       -或-
 
-         -或-
+   - 使用 Windows 檔案總管 (或檔案總管) 設定權限：
 
-    -   使用 Windows 檔案總管 (或檔案總管) 設定權限：
+     1.  開啟 .iTrace 檔案目錄的 [屬性]  。
 
-        1.  開啟 .iTrace 檔案目錄的 [屬性]  。
+     2.  在 [安全性]  索引標籤上，依序選擇 [編輯] 和 [新增] 。
 
-        2.  在 [安全性]  索引標籤上，依序選擇 [編輯] 和 [新增] 。
+     3.  請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果它未出現，請選擇**物件類型**將它加入。
 
-        3.  請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果它未出現，請選擇**物件類型**將它加入。
+     4.  請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果它未出現，請選擇**位置**加以變更。
 
-        4.  請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果它未出現，請選擇**位置**加以變更。
+     5.  在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
 
-        5.  在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
+     6.  選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。
 
-        6.  選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。
-
-        7.  請確認應用程式集區具有 [完全控制] 。
+     7.  請確認應用程式集區具有 [完全控制] 。
 
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
 
@@ -291,98 +291,95 @@ ms.locfileid: "44283739"
 
  以下是一些取得大部分資料而不會讓應用程式變慢的方法：
 
--   只有當您認為沒有問題，或是可以重現問題時，請執行收集器。
+- 只有當您認為沒有問題，或是可以重現問題時，請執行收集器。
 
-     開始收集，並重現問題，然後停止收集。 在 Visual Studio Enterprise 中開啟 .iTrace 檔案，並檢查資料。 請參閱 [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案](#BKMK_View_IntelliTrace_Log_Files)。
+   開始收集，並重現問題，然後停止收集。 在 Visual Studio Enterprise 中開啟 .iTrace 檔案，並檢查資料。 請參閱 [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案](#BKMK_View_IntelliTrace_Log_Files)。
 
--   針對 Web App 和 SharePoint 應用程式，收集器會為每個共用指定應用程式集區的應用程式記錄資料。 這可能會讓任何共用相同應用程式集區的 App 變慢，即使您只能在收集計劃中指定單一 App 的模組也是一樣。
+- 針對 Web App 和 SharePoint 應用程式，收集器會為每個共用指定應用程式集區的應用程式記錄資料。 這可能會讓任何共用相同應用程式集區的 App 變慢，即使您只能在收集計劃中指定單一 App 的模組也是一樣。
 
-     若要防止收集器讓其他 App 變慢，請在它自己的應用程式集區中裝載每個 App。
+   若要防止收集器讓其他 App 變慢，請在它自己的應用程式集區中裝載每個 App。
 
--   檢閱 IntelliTrace 在收集計劃中為其收集資料的事件。 編輯收集計劃，以停用不相關或您不感興趣的事件。
+- 檢閱 IntelliTrace 在收集計劃中為其收集資料的事件。 編輯收集計劃，以停用不相關或您不感興趣的事件。
 
-     若要停用事件，請將 `enabled` 項目的 `<DiagnosticEventSpecification>` 屬性設為 `false`：
+   若要停用事件，請將 `enabled` 項目的 `<DiagnosticEventSpecification>` 屬性設為 `false`：
 
-     `<DiagnosticEventSpecification enabled="false">`
+   `<DiagnosticEventSpecification enabled="false">`
 
-     如果 `enabled` 屬性不存在，表示已啟用事件。
+   如果 `enabled` 屬性不存在，表示已啟用事件。
 
-     *這樣如何改善效能？*
+   *這樣如何改善效能？*
 
-    -   您可以停用與 App 無關的事件，以減少啟動時間。 例如，針對未使用 Windows Workflow 的 App 停用 Windows Workflow 事件。
+  -   您可以停用與 App 無關的事件，以減少啟動時間。 例如，針對未使用 Windows Workflow 的 App 停用 Windows Workflow 事件。
 
-    -   您可以停用可存取登錄但未顯示登錄設定問題之 App 的登錄事件，以改善啟動和執行階段效能。
+  -   您可以停用可存取登錄但未顯示登錄設定問題之 App 的登錄事件，以改善啟動和執行階段效能。
 
--   檢閱 IntelliTrace 在收集計劃中為其收集資料的模組。 編輯收集計劃，使其只包括您感興趣的模組：
+- 檢閱 IntelliTrace 在收集計劃中為其收集資料的模組。 編輯收集計劃，使其只包括您感興趣的模組：
 
-    1.  開啟收集計劃。 尋找 `<ModuleList>` 項目。
+  1. 開啟收集計劃。 尋找 `<ModuleList>` 項目。
 
-    2.  在 `<ModuleList>`中，將 `isExclusionList` 屬性設為 `false`。
+  2. 在 `<ModuleList>`中，將 `isExclusionList` 屬性設為 `false`。
 
-    3.  使用 `<Name>` 項目，即可指定每個具有下列其中一個項目的模組：檔案名稱、包括其名稱中含有該字串之任何模組的字串值，或公開金鑰。
+  3. 使用 `<Name>` 項目，即可指定每個具有下列其中一個項目的模組：檔案名稱、包括其名稱中含有該字串之任何模組的字串值，或公開金鑰。
 
      例如，若只要收集 Fabrikam Fiber Web App 之主要 Web 模組中的資料，請建立與下面類似的清單：
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>FabrikamFiber.Web.dll</Name>
-    </ModuleList>
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>FabrikamFiber.Web.dll</Name>
+  </ModuleList>
+  ```
 
-    ```
+   若要從任何名稱中包括 "Fabrikam" 的模組中收集資料，請建立與下面類似的清單：
 
-     若要從任何名稱中包括 "Fabrikam" 的模組中收集資料，請建立與下面類似的清單：
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>Fabrikam</Name>
+  </ModuleList>
+  ```
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>Fabrikam</Name>
-    </ModuleList>
+   若要透過指定模組的公開金鑰語彙基元，以從模組中收集資料，請建立與下面類似的清單：
 
-    ```
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>PublicKeyToken:B77A5C561934E089</Name>
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>
+  </ModuleList>
+  ```
 
-     若要透過指定模組的公開金鑰語彙基元，以從模組中收集資料，請建立與下面類似的清單：
+   *這樣如何改善效能？*
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>PublicKeyToken:B77A5C561934E089</Name>
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>
-    </ModuleList>
+   這樣會減少 IntelliTrace 在啟動和執行 App 時所收集的方法呼叫資訊量與其他檢測資料量。 這項資料可讓您：
 
-    ```
+  - 在收集資料之後逐步執行程式碼。
 
-     *這樣如何改善效能？*
+  - 檢查傳遞給函式呼叫的值以及從函式呼叫傳回的值。
 
-     這樣會減少 IntelliTrace 在啟動和執行 App 時所收集的方法呼叫資訊量與其他檢測資料量。 這項資料可讓您：
+    *為何不改為排除模組？*
 
-    -   在收集資料之後逐步執行程式碼。
+    根據預設，收集計劃會透過將 `isExclusionList` 屬性設為 `true`來排除模組。 不過，排除模組時收集到的資料，還是可能來自不符合清單準則的模組，以及您可能不感興趣的模組，例如協力廠商或開放原始碼模組。
 
-    -   檢查傳遞給函式呼叫的值以及從函式呼叫傳回的值。
+- *是否有任何 IntelliTrace 不會收集的資料？*
 
-     *為何不改為排除模組？*
+   是，為了降低對效能的影響，IntelliTrace 會限制只對下列值進行資料收集：傳遞給方法以及從方法傳回的基本資料類型值，以及傳遞給方法以及從方法傳回之最上層物件欄位中的基本資料類型值。
 
-     根據預設，收集計劃會透過將 `isExclusionList` 屬性設為 `true`來排除模組。 不過，排除模組時收集到的資料，還是可能來自不符合清單準則的模組，以及您可能不感興趣的模組，例如協力廠商或開放原始碼模組。
+   例如，假設您有接受整數 `AlterEmployee` 和 `id` 物件 `Employee` 的 `oldemployee` 方法簽章：
 
--   *是否有任何 IntelliTrace 不會收集的資料？*
+   `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-     是，為了降低對效能的影響，IntelliTrace 會限制只對下列值進行資料收集：傳遞給方法以及從方法傳回的基本資料類型值，以及傳遞給方法以及從方法傳回之最上層物件欄位中的基本資料類型值。
+   `Employee` 類型具有下列屬性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 與 `Address` 類型之間具有關聯。
 
-     例如，假設您有接受整數 `AlterEmployee` 和 `id` 物件 `Employee` 的 `oldemployee` 方法簽章：
+   ![Employee 和 Address 之間的關聯性](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-     `public Employee AlterEmployee(int id, Employee oldemployee)`
-
-     `Employee` 類型具有下列屬性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 與 `Address` 類型之間具有關聯。
-
-     ![Employee 和 Address 之間的關聯性](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
-
-     收集器會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，收集器不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 收集器也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (當時記錄為方法參數)。
+   收集器會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，收集器不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 收集器也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (當時記錄為方法參數)。
 
 ##  <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
 
 -   從 偵錯在 Visual Studio Enterprise 中的工作階段的 IntelliTrace，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
--   從 Microsoft Test Manager 中的測試工作階段，請參閱[如何： 收集 IntelliTrace 資料以協助偵錯的困難問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues)。
+-   從 Microsoft Test Manager 中的測試工作階段，請參閱 [如何：收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues)。
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)

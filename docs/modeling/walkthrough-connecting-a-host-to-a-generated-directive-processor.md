@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896233"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -33,21 +33,22 @@ ms.locfileid: "47859935"
 
 本逐步解說包含下列工作：
 
--   使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]產生指示詞處理器為基礎的領域模型。
+- 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]產生指示詞處理器為基礎的領域模型。
 
--   將自訂文字範本主機連接至產生的指示詞處理器。
+- 將自訂文字範本主機連接至產生的指示詞處理器。
 
--   測試自訂主應用程式並將產生的指示詞處理器。
+- 測試自訂主應用程式並將產生的指示詞處理器。
 
 ## <a name="prerequisites"></a>必要條件
 
 若要定義 DSL，您必須已安裝下列元件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ ms.locfileid: "47859935"
 
 本逐步解說中，您可以使用特定領域語言設計工具精靈來建立特定領域語言解決方案 DSLMinimalTest。
 
-1.  建立特定領域語言解決方案，具有下列特性：
+1. 建立特定領域語言解決方案，具有下列特性：
 
-    -   名稱： DSLMinimalTest
+   -   名稱： DSLMinimalTest
 
-    -   解決方案範本： 最小語言
+   -   解決方案範本： 最小語言
 
-    -   副檔名： 最小值
+   -   副檔名： 最小值
 
-    -   公司名稱： Fabrikam
+   -   公司名稱： Fabrikam
 
    如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
-2.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
-    > [!IMPORTANT]
-    > 此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
+   > [!IMPORTANT]
+   > 此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
 
-3.  按一下 [偵錯] 功能表上的 [開始偵錯]。
+3. 按一下 [偵錯] 功能表上的 [開始偵錯]。
 
-     Visual Studio 的第二個執行個體隨即開啟。
+    Visual Studio 的第二個執行個體隨即開啟。
 
-4.  在實驗組建中，在**方案總管**，按兩下檔案**sample.min**。
+4. 在實驗組建中，在**方案總管**，按兩下檔案**sample.min**。
 
-     在設計工具中，開啟檔案。 請注意，此模型有兩個項目，ExampleElement1 ExampleElement2 和它們之間的連結。
+    在設計工具中，開啟檔案。 請注意，此模型有兩個項目，ExampleElement1 ExampleElement2 和它們之間的連結。
 
-5.  關閉 Visual Studio 的第二個執行個體。
+5. 關閉 Visual Studio 的第二個執行個體。
 
-6.  儲存方案，然後再關閉 特定領域語言設計工具。
+6. 儲存方案，然後再關閉 特定領域語言設計工具。
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>連線至指示詞處理器的自訂文字範本主機
 
@@ -230,7 +231,7 @@ ms.locfileid: "47859935"
             }
     ```
 
-7.  在 **檔案**功能表上，按一下**全部儲存**。
+7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
 8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 

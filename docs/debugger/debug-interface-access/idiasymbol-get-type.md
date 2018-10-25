@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_type |Microsoft 文件'
+title: 'Idiasymbol:: Get_type |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 414c66b000a7cd81783ec963d78105792d6b816b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896467"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-擷取表示這個符號的類型的符號。  
+擷取代表這個符號的類型的符號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表這個符號的類型。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示這個符號的類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 若要判斷有符號的類型，您必須呼叫這個方法，並檢查產生[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 請注意，可能不具有類型的符號。 例如，結構的名稱有沒有類型，但是它可能會有子系符號 (使用[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)方法來檢查這些子系)。  
+ 若要判斷有符號的類型，您必須呼叫這個方法，並檢查產生[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 請注意，可能不具有類型的符號。 例如，結構的名稱有任何類型，但是它可能會有子系符號 (使用[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)方法來檢查這些子系)。  
   
 ## <a name="example"></a>範例  
   

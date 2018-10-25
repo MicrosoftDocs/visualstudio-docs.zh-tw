@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale |Microsoft 文件
+title: IDebugComPlusSymbolProvider::IsFunctionStale |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5076c57ecc1a9e550f9daf869e5fe5b52a48eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbd68a17e940a7f0f183b49c8194439fd6c21d92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893451"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 決定是否在指定的偵錯位址函式會被視為過時。  
@@ -39,13 +39,13 @@ int IsFunctionStale(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]由偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。  
+ [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。  
   
 ## <a name="return-value"></a>傳回值  
- 如果函式會被視為過時，會傳回`S_OK`。 如果未過時的函式時，會傳回`S_FALSE`。  
+ 如果函式被視為過時，就會傳回`S_OK`。 如果函式不是過時的就會傳回`S_FALSE`。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  

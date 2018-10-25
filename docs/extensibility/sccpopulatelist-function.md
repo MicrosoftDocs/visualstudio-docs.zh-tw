@@ -1,5 +1,5 @@
 ---
-title: SccPopulateList 函式 |Microsoft 文件
+title: SccPopulateList 函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e7bbb4a99c3cd649eedb7638feb5b6170b3b59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903565"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
-此函式更新的特定來源控制命令的檔案清單，並提供所有指定檔案的原始檔控制狀態。  
+此函式會更新特定的原始檔控制命令的檔案清單，並提供對指定的所有檔案的原始檔控制狀態。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,28 +45,28 @@ SCCRTN SccPopulateList (
  [in]原始檔控制外掛程式的內容結構。  
   
  nCommand  
- [in]將會套用至所有檔案在原始檔控制命令`lpFileNames`陣列 (請參閱[的指令碼](../extensibility/command-code-enumerator.md)取得一份可能的命令)。  
+ [in]將會套用到所有的檔案，在原始檔控制命令`lpFileNames`陣列 (請參閱 <<c2> [ 的指令碼](../extensibility/command-code-enumerator.md)取得一份可能命令)。  
   
  nFiles  
  [in]中的檔案數目`lpFileNames`陣列。  
   
  lpFileNames  
- [in]IDE 已知的檔案名稱陣列。  
+ [in]Ide 的已知的檔案名稱的陣列。  
   
  pfnPopulate  
  [in]IDE 回呼函式呼叫來新增和移除檔案 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
   
  pvCallerData  
- [in]要傳遞的值保持不變，回呼函式。  
+ [in]要傳遞的值不變之回呼函式。  
   
  lpStatus  
  [in、 out]原始檔控制外掛程式傳回每個檔案的狀態旗標的陣列。  
   
- fOptions  
- [in]命令旗標 (請參閱 「 PopulateList 旗標 」 一節[特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)如需詳細資訊)。  
+ Stored  
+ [in]命令旗標 (請參閱 「 PopulateList 旗標 」 一節[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)如需詳細資訊)。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
 |值|描述|  
 |-----------|-----------------|  
@@ -74,19 +74,19 @@ SCCRTN SccPopulateList (
 |SCC_E_NONSPECIFICERROR|不明確的失敗。|  
   
 ## <a name="remarks"></a>備註  
- 此函式會檢查檔案的目前狀態的清單。 它會使用`pfnPopulate`檔案不相符的準則時，告知呼叫端的回呼函式`nCommand`。 例如，如果命令是`SCC_COMMAND_CHECKIN`，而且在清單中的檔案未簽出，則回呼用來告知呼叫端。 有時候，原始檔控制外掛程式可能會發現可以命令的一部分，並且將它們加入其他檔案。 這可讓，例如 Visual Basic 使用者簽出.bmp 檔案會使用他或她的專案，但不是會出現在 Visual Basic 專案檔中。 使用者選擇**取得**命令在 IDE 中。 IDE 會顯示一份其認定使用者也可以取得的所有檔案之前會顯示清單，但`SccPopulateList`呼叫函式可確定所要顯示清單是最新狀態。  
+ 此函式會檢查檔案的目前狀態的清單。 它會使用`pfnPopulate`回呼函式的檔案類型不符合的準則時告知呼叫端`nCommand`。 例如，如果命令是`SCC_COMMAND_CHECKIN`和清單中的檔案尚未簽出，則回呼會用來通知呼叫端。 有時候，原始檔控制外掛程式可能會發現其他檔案，可能是命令的一部分，並將其新增。 這可讓，比方說，Visual Basic 使用者簽出.bmp 檔案使用他 / 她的專案，但未出現在 Visual Basic 專案檔。 使用者選擇**取得**命令在 IDE 中。 IDE 會顯示一份它認為可以取得使用者，所有檔案，但之前顯示的清單，`SccPopulateList`呼叫函式可確保是最新的顯示清單。  
   
 ## <a name="example"></a>範例  
- IDE 會建置一份其認定使用者也可以取得的檔案。 它會顯示此清單之前，它會呼叫`SccPopulateList`函式，讓原始檔控制外掛程式有機會新增和刪除清單中的檔案。 外掛程式會修改清單藉由呼叫指定的回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
+ IDE 會建置它認為使用者可以取得檔案的清單。 它會顯示此清單之前，它會呼叫`SccPopulateList`函式中，讓原始檔控制外掛程式有機會新增並從清單中刪除檔案。 外掛程式會修改清單藉由呼叫指定的回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
   
- 呼叫此外掛程式會繼續`pfnPopulate`函式，以新增和刪除的檔案，直到完成，然後再傳回`SccPopulateList`函式。 IDE 可以顯示其清單。 `lpStatus`陣列都代表原始 IDE 所傳入的清單中的所有檔案。 外掛程式的填滿所有這些檔案除了要進行的狀態中使用的回呼函式。  
+ 若要呼叫的外掛程式會繼續`pfnPopulate`函式，可新增和刪除檔案，直到它已完成，並接著會傳回從`SccPopulateList`函式。 然後，IDE 可以顯示其清單。 `lpStatus`陣列都表示原始 IDE 所傳入的清單中的所有檔案。 在所有這些檔案除了使狀態中外掛程式的填滿使用的回呼函式。  
   
 > [!NOTE]
->  原始檔控制外掛程式一律會有選項可只會立即傳回從這個函式，因為它是保留的清單。 如果外掛程式會實作此函式，這可能表示這藉由設定`SCC_CAP_POPULATELIST`功能位元旗標的第一個呼叫中[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果在 IDE 設定`SCC_PL_DIR`加上旗標`fOptions`參數，傳遞的所有項目都被視為目錄。 外掛程式應該在目錄中加入隸屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。  
+>  原始檔控制外掛程式一律可以選擇只會立即傳回從此函式，因為它是保留的清單。 如果外掛程式實作此函式，可能表示這藉由設定`SCC_CAP_POPULATELIST`中的第一個呼叫的功能位元旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果設定 IDE`SCC_PL_DIR`加上旗標在`fOptions`參數，傳入的所有項目都視為目錄。 外掛程式應該在目錄中新增所屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
- [特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
- [指令碼](../extensibility/command-code-enumerator.md)
+ [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
+ [命令碼](../extensibility/command-code-enumerator.md)

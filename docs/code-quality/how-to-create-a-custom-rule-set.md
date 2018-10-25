@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884182"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -34,11 +34,11 @@ ms.locfileid: "39204111"
 
 3. 在 **執行此規則集**下拉式清單，請執行下列其中一項：
 
-    - 選取您想要自訂的規則集。
+   - 選取您想要自訂的規則集。
 
      \-或-
 
-    - 選取 [ **\<瀏覽] >** ，指定現有的規則集不在清單中。
+   - 選取 [ **\<瀏覽] >** ，指定現有的規則集不在清單中。
 
 4. 選取 **開啟**至規則集編輯器中顯示的規則。
 

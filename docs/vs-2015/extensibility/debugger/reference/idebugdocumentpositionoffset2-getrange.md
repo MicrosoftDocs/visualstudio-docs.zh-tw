@@ -15,12 +15,12 @@ ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1cfef2ef48439f6111cf2ecf1cf33dcc4ab39e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a31c66424032fb49bcc1f220ee86b038f53c3d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884117"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

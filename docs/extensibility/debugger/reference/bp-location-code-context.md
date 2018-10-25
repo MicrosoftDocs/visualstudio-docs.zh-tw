@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT |Microsoft 文件
+title: BP_LOCATION_CODE_CONTEXT |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ae1050b0324fcf2732bbeb0eb9d091878bef0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a953ae4ff100196ca6fc6174f3d81fcca139de1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913419"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
-描述直接繫結正在偵錯的程式中的位址中斷點的位置。  
+描述直接繫結中正在偵錯之程式的位址中斷點的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,7 +38,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)識別中斷點的位置，在程式碼中的物件。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是屬於[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構做為聯集的一部分。  
+ 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

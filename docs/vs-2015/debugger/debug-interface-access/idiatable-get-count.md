@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35fffd7498f749c583bfe9afe5e9bc142d64de60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 822eb186f28ba5fb3e9d40dc14e064429a94dd29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890201"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

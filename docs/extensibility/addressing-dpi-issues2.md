@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918528"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。  
   
  Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的顯示和及環境中將機器附加至同時適用之高密度標準密度會顯示在相同的時間。  
   
--   Windows 可以讓您將內容調整成使用 「 讓文字和其他項目放大或縮小 」 的裝置設定 （可自 Windows XP）。  
+- Windows 可以讓您將內容調整成使用 「 讓文字和其他項目放大或縮小 」 的裝置設定 （可自 Windows XP）。  
   
--   Windows 8.1 和更新版本會自動將內容調整對於大部分的應用程式一致的不同像素密度的顯示器之間移動時。 Windows 上的次要顯示器，當主要的顯示是高密度 （200%調整），而且次要顯示標準密度 （100%) 時，自動相應減少應用程式視窗內容 (針對每個所呈現的 4 個像素顯示的 1 個像素應用程式）。  
+- Windows 8.1 和更新版本會自動將內容調整對於大部分的應用程式一致的不同像素密度的顯示器之間移動時。 Windows 上的次要顯示器，當主要的顯示是高密度 （200%調整），而且次要顯示標準密度 （100%) 時，自動相應減少應用程式視窗內容 (針對每個所呈現的 4 個像素顯示的 1 個像素應用程式）。  
   
--   Windows 會預設為像素密度的比例，以及檢視顯示 (Windows 7 及更新版本，OEM 可設定) 的距離的權限。  
+- Windows 會預設為像素密度的比例，以及檢視顯示 (Windows 7 及更新版本，OEM 可設定) 的距離的權限。  
   
--   在超過 280 ppi （從 Windows 8.1 S14) 的新裝置上 Windows 可以自動調整設定為 250%內容。  
+- 在超過 280 ppi （從 Windows 8.1 S14) 的新裝置上 Windows 可以自動調整設定為 250%內容。  
   
- Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如:   
+  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如:   
   
- ![DPI 問題模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題模糊")  
+  ![DPI 問題模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題模糊")  
   
- Visual Studio 中選擇要 DPI 縮放比例感知，並因此未 「 虛擬化。 」  
+  Visual Studio 中選擇要 DPI 縮放比例感知，並因此未 「 虛擬化。 」  
   
- Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如:   
+  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如:   
   
--   WPF 會測量控制項，以與裝置無關的方式 （單位，不像素為單位）。 WPF UI 會自動調整為目前的 DPI。  
+- WPF 會測量控制項，以與裝置無關的方式 （單位，不像素為單位）。 WPF UI 會自動調整為目前的 DPI。  
   
--   不論 UI 架構的所有文字大小以點表示，因此會被系統 DPI 獨立。 Win32、 WinForms 和 WPF 中的文字已相應增加正確繪製至顯示裝置時。  
+- 不論 UI 架構的所有文字大小以點表示，因此會被系統 DPI 獨立。 Win32、 WinForms 和 WPF 中的文字已相應增加正確繪製至顯示裝置時。  
   
--   Win32/WinForms 對話方塊和視窗有啟用文字 （例如，透過方格、 流程和表格版面配置面板） 調整大小的版面配置的方式。 這些可讓避免字型的大小會增加時不會進行縮放的硬式編碼的像素位置。  
+- Win32/WinForms 對話方塊和視窗有啟用文字 （例如，透過方格、 流程和表格版面配置面板） 調整大小的版面配置的方式。 這些可讓避免字型的大小會增加時不會進行縮放的硬式編碼的像素位置。  
   
--   系統所提供的圖示或系統計量 （例如 SM_CXICON 和 SM_CXSMICON） 為基礎的資源已相應增加。  
+- 系統所提供的圖示或系統計量 （例如 SM_CXICON 和 SM_CXSMICON） 為基礎的資源已相應增加。  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>較舊的 Win32 GDI (GDI +） 和 WinForms 為基礎的 UI  
  在 WPF 高 DPI 感知，Win32/GDI 式程式碼大多不原始寫入的記住 DPI 感知。 Windows 提供的 DPI 縮放比例的 Api。 Win32 問題的修正程式應該使用這些在產品內以一致的方式。 Visual Studio 提供的協助程式類別庫，以避免複製功能，並確保在產品內的一致性。  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>版面配置問題  
  您可以避免常見的版面配置問題，主要是由相應的 UI 中，而另一個是相對於保留點，而不是使用絕對位置 （具體而言，單位為像素）。 例如:   
   
--   版面配置] / [文字位置需要調整相應增加映像的帳戶。  
+- 版面配置] / [文字位置需要調整相應增加映像的帳戶。  
   
--   在方格中的資料行必須能夠調整相應增加文字的寬度。  
+- 在方格中的資料行必須能夠調整相應增加文字的寬度。  
   
--   硬式編碼的大小或項目之間的空間也會需要相應增加。 因為字型自動相應增加，是通常沒問題，只根據文字維度的大小。  
+- 硬式編碼的大小或項目之間的空間也會需要相應增加。 因為字型自動相應增加，是通常沒問題，只根據文字維度的大小。  
   
- Helper 函式可用於<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>若要允許縮放 X 和 Y 軸上的類別：  
+  Helper 函式可用於<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>若要允許縮放 X 和 Y 軸上的類別：  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (函式允許調整 X / Y 軸)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (函式允許調整 X / Y 軸)  
   
--   int 空間 = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int 空間 = DpiHelper.LogicalToDeviceUnitsX (10);  
   
--   int 高度 = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int 高度 = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- 有 LogicalToDeviceUnits 多載，若要允許縮放物件，例如矩形、 點和大小。  
+  有 LogicalToDeviceUnits 多載，若要允許縮放物件，例如矩形、 點和大小。  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>使用 「 DPIHelper 程式庫/類別縮放影像和版面配置  
  Visual Studio DPI 協助程式程式庫提供原生和 managed 表單，並可供外部使用 Visual Studio shell 的其他應用程式。  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  建議：  
   
--   標誌影像及橫幅插圖，預設值為<xref:System.Windows.Media.BitmapScalingMode>無法使用調整大小模式。  
+- 標誌影像及橫幅插圖，預設值為<xref:System.Windows.Media.BitmapScalingMode>無法使用調整大小模式。  
   
--   功能表項目和遙控器映像，<xref:System.Windows.Media.BitmapScalingMode>它不會造成其他扭曲成品，以避免模糊不清 （在 200%到 300%） 時，應使用。  
+- 功能表項目和遙控器映像，<xref:System.Windows.Media.BitmapScalingMode>它不會造成其他扭曲成品，以避免模糊不清 （在 200%到 300%） 時，應使用。  
   
--   大型的縮放層級不是 100%（比方說，250%或 350%） 的倍數，調整具有雙立方的遙控器映像會導致模糊、 刷淡的 UI。 透過第一個調整 NearestNeighbor 至 100%（例如，200%或 300%） 的最大的多個映像和雙立方從中使用自動調整規模可取得更佳的結果。 請參閱 < 特殊案例︰ 適用於大型的 DPI prescaling WPF 映像的詳細資訊層級。  
+- 大型的縮放層級不是 100%（比方說，250%或 350%） 的倍數，調整具有雙立方的遙控器映像會導致模糊、 刷淡的 UI。 透過第一個調整 NearestNeighbor 至 100%（例如，200%或 300%） 的最大的多個映像和雙立方從中使用自動調整規模可取得更佳的結果。 請參閱 < 特殊案例︰ 適用於大型的 DPI prescaling WPF 映像的詳細資訊層級。  
   
- DpiHelper Microsoft.VisualStudio.PlatformUI 命名空間中的類別提供成員<xref:System.Windows.Media.BitmapScalingMode>，可用來繫結。 它可讓 Visual Studio shell 來控制的 DPI 縮放比例根據一致的方式，調整模式在產品內的點陣圖。  
+  DpiHelper Microsoft.VisualStudio.PlatformUI 命名空間中的類別提供成員<xref:System.Windows.Media.BitmapScalingMode>，可用來繫結。 它可讓 Visual Studio shell 來控制的 DPI 縮放比例根據一致的方式，調整模式在產品內的點陣圖。  
   
- 若要使用它在 XAML 中，加入：  
+  若要使用它在 XAML 中，加入：  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

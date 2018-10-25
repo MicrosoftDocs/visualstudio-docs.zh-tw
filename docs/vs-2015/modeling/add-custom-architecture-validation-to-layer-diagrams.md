@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897910"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>在分層圖中加入自訂架構驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ ms.locfileid: "49231090"
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能  
   
-1.  使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
+1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
   
-2.  在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [圖層設計工具驗證擴充功能] 。  
+2. 在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [圖層設計工具驗證擴充功能] 。  
   
-     此範本隨即建立包含小型範例的專案。  
+    此範本隨即建立包含小型範例的專案。  
   
-    > [!WARNING]
-    >  Makethe 範本正常運作：  
-    >   
-    >  -   編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。  
-    > -   如果您使用自訂屬性，套用更新中所述[將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)。  
+   > [!WARNING]
+   >  Makethe 範本正常運作：  
+   > 
+   > - 編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。  
+   >   -   如果您使用自訂屬性，套用更新中所述[將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)。  
   
-3.  編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
+3. 編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
   
-4.  若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
+4. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
   
-    > [!NOTE]
-    >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
+   > [!NOTE]
+   >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
-5.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+5. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>將圖層驗證程式加入個別的 VSIX 中  
  如果您想要建立一個包含圖層驗證程式、命令和其他擴充功能的 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對處理常式建立個別專案。 如需其他類型的模型擴充功能資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -127,42 +127,42 @@ ms.locfileid: "49231090"
 ##  <a name="programming"></a> 程式設計驗證  
  若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：  
   
--   宣告的整體形式如下：  
+- 宣告的整體形式如下：  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   當您發現錯誤時，可以使用 `LogValidationError()`回報。  
+- 當您發現錯誤時，可以使用 `LogValidationError()`回報。  
   
-    > [!WARNING]
-    >  請不要使用 `LogValidationError`的選擇性參數。  
+  > [!WARNING]
+  >  請不要使用 `LogValidationError`的選擇性參數。  
   
- 當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：  
+  當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案的圖層模型，在圖形中以節點和連結表示。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案的圖層模型，在圖形中以節點和連結表示。  
   
--   定義在方案中並以節點表示的程式碼、專案項目和其他成品，以及代表分析程序所探索到之相依性的連結。  
+- 定義在方案中並以節點表示的程式碼、專案項目和其他成品，以及代表分析程序所探索到之相依性的連結。  
   
--   從圖層節點到程式碼成品節點的連結。  
+- 從圖層節點到程式碼成品節點的連結。  
   
--   代表驗證程式所發現之錯誤的節點。  
+- 代表驗證程式所發現之錯誤的節點。  
   
- 建構好圖形後，會呼叫標準驗證方法。 完成時，任何已安裝的擴充驗證方法會依未指定的順序呼叫。 圖形會傳遞至每個 `ValidateArchitecture` 方法，它可以掃描圖形並報告其所找到的任何錯誤。  
+  建構好圖形後，會呼叫標準驗證方法。 完成時，任何已安裝的擴充驗證方法會依未指定的順序呼叫。 圖形會傳遞至每個 `ValidateArchitecture` 方法，它可以掃描圖形並報告其所找到的任何錯誤。  
   
 > [!NOTE]
 >  這與套用至 UML 圖表的驗證程序不同，而且與可以用於定義域專屬語言的驗證程序不同。  
@@ -173,25 +173,25 @@ ms.locfileid: "49231090"
   
  每個節點和每個連結都有一個或多個類別，此類別會指定其所代表的項目或關聯性的類型。 典型圖形的節點有下列類別：  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- 從圖層到程式碼中之項目的連結具有「代表」的類別。  
+  從圖層到程式碼中之項目的連結具有「代表」的類別。  
   
 ##  <a name="debugging"></a> 驗證偵錯  
  若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。  
@@ -199,11 +199,11 @@ ms.locfileid: "49231090"
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>測試包含相依性的方案  
  除非有下列特性，否則不會執行驗證：  
   
--   在分層圖上有至少一個相依性連結。  
+- 在分層圖上有至少一個相依性連結。  
   
--   在模型中有與程式碼項目相關聯的圖層。  
+- 在模型中有與程式碼項目相關聯的圖層。  
   
- 第一次啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體測試驗證擴充功能時，請開啟或建立具有下列特性的方案。  
+  第一次啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體測試驗證擴充功能時，請開啟或建立具有下列特性的方案。  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>在驗證架構之前執行清除方案  
  每當您更新驗證程式碼時，請使用實驗性方案中 [建置]  功能表上的 [清除方案]  命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您未更新測試分層圖或其程式碼，將不會執行驗證方法。  

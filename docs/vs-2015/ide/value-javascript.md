@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ad9f3834efd56ffbddb4686e741b7d85d3363c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f88f3ae2e7442549004d2331b4517eb7fa2b5509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914329"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;值&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,38 +44,38 @@ ms.locfileid: "49264169"
  `type`  
  選擇性。 屬性的資料型別。 類型可以是下列其中一項：  
   
--   是在 ECMAScript 5 規格中，例如 ECMAScript 語言型別`Number`和`Object`。  
+- 是在 ECMAScript 5 規格中，例如 ECMAScript 語言型別`Number`和`Object`。  
   
--   DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
+- DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
   
--   JavaScript 建構函式的函式。  
+- JavaScript 建構函式的函式。  
   
- `integer`  
- 選擇性。 如果`type`是`Number`，指定屬性是否為整數。 設定為`true`表示此屬性是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `integer`  
+  選擇性。 如果`type`是`Number`，指定屬性是否為整數。 設定為`true`表示此屬性是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `domElement`  
- 選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性指定的 DOM 項目是否包含文件的屬性。 設定為`true`指定的屬性是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會將文件的屬性視為`HTMLElement`執行陳述式完成時。  
+  `domElement`  
+  選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性指定的 DOM 項目是否包含文件的屬性。 設定為`true`指定的屬性是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會將文件的屬性視為`HTMLElement`執行陳述式完成時。  
   
- `mayBeNull`  
- 選擇性。 指定是否可以設定 [記錄] 屬性設為 null。 設定為`true`若要指出，屬性可以設定為 null，否則，請設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `mayBeNull`  
+  選擇性。 指定是否可以設定 [記錄] 屬性設為 null。 設定為`true`若要指出，屬性可以設定為 null，否則，請設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementType`  
- 選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
+  `elementType`  
+  選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
   
- `elementInteger`  
- 選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementInteger`  
+  選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementDomElement`  
- 選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
+  `elementDomElement`  
+  選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
   
- `elementMayBeNull`  
- 選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementMayBeNull`  
+  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `locid`  
- 選擇性。 如需屬性的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)項目。  
+  `locid`  
+  選擇性。 如需屬性的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)項目。  
   
- `description`  
- 選擇性。 屬性的描述。  
+  `description`  
+  選擇性。 屬性的描述。  
   
 ## <a name="remarks"></a>備註  
  ECMAScript 5 屬性使用[\<摘要 >](../ide/summary-javascript.md)項目。  
