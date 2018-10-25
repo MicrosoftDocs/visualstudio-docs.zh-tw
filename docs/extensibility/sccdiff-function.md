@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a38971aa15cca2dc1e2fe780b603ea885cba0a3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884767"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 此函式會顯示 （或選擇性地只會檢查） 目前的檔案 （位於本機磁碟上） 和最後一個簽入版本之間的差異，即可在來源控制系統。  

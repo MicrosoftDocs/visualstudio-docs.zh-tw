@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e78e3430ebb751d97cc3b46057f61b68c4e03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d1c9ff2dce8918d5bcc75c8504e5af133ea5e43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836149"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

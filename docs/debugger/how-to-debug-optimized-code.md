@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e223853c8bf805d7466fffec184032b24ec9e88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937794"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 > [!NOTE]
@@ -43,37 +43,37 @@ ms.locfileid: "44280814"
   
  最佳化會影響：  
   
--   區域變數，這些區域變數可能會由最佳化程式移除，或是移至偵錯工具不認識的位置。  
+- 區域變數，這些區域變數可能會由最佳化程式移除，或是移至偵錯工具不認識的位置。  
   
--   函式內部的位置，這些位置在最佳化程式合併程式碼區塊時會變更。  
+- 函式內部的位置，這些位置在最佳化程式合併程式碼區塊時會變更。  
   
--   呼叫堆疊上框架的函式名稱，這個名稱在最佳化程式合併兩個函式時可能會出錯。  
+- 呼叫堆疊上框架的函式名稱，這個名稱在最佳化程式合併兩個函式時可能會出錯。  
   
- 不過，假設所有框架都有符號，則您在呼叫堆疊上看見的框架幾乎一定是正確的。 如果您有堆疊損毀、以組件語言撰寫的函式，或是呼叫堆疊上的作業系統框架沒有相符的符號時，呼叫堆疊上的框架就會出錯。  
+  不過，假設所有框架都有符號，則您在呼叫堆疊上看見的框架幾乎一定是正確的。 如果您有堆疊損毀、以組件語言撰寫的函式，或是呼叫堆疊上的作業系統框架沒有相符的符號時，呼叫堆疊上的框架就會出錯。  
   
- 全域變數和靜態變數一定會正確顯示， 結構配置也會。 如果您有結構的指標，而且指標的值是正確的，則結構的每個成員變數都會顯示正確的值。  
+  全域變數和靜態變數一定會正確顯示， 結構配置也會。 如果您有結構的指標，而且指標的值是正確的，則結構的每個成員變數都會顯示正確的值。  
   
- 由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，在 Visual C++ 程式的 [偵錯] 組態中會關閉最佳化，而在 [發行] 組態中會啟用最佳化。  
+  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，在 Visual C++ 程式的 [偵錯] 組態中會關閉最佳化，而在 [發行] 組態中會啟用最佳化。  
   
- 然而，有時錯誤可能只出現在程式的最佳化版本中。 在這種情況下，您必須偵錯最佳化程式碼。  
+  然而，有時錯誤可能只出現在程式的最佳化版本中。 在這種情況下，您必須偵錯最佳化程式碼。  
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>若要啟動偵錯組建組態的最佳化  
   
-1.  當您建立新專案時，選取 `Win32 Debug` 目標。 使用`Win32``Debug`目標以前完成偵錯您的程式，並準備好建置`Win32 Release`目標。 編譯器不會最佳化 `Win32 Debug` 目標。  
+1. 當您建立新專案時，選取 `Win32 Debug` 目標。 使用`Win32``Debug`目標以前完成偵錯您的程式，並準備好建置`Win32 Release`目標。 編譯器不會最佳化 `Win32 Debug` 目標。  
   
-2.  在 [方案總管] 中選取專案。  
+2. 在 [方案總管] 中選取專案。  
   
-3.  在 **檢視**功能表上，按一下**屬性頁**。  
+3. 在 **檢視**功能表上，按一下**屬性頁**。  
   
-4.  在 **屬性頁**對話方塊方塊中，請確定`Debug`中選取**Configuration**下拉式清單。  
+4. 在 **屬性頁**對話方塊方塊中，請確定`Debug`中選取**Configuration**下拉式清單。  
   
-5.  在左側的資料夾檢視，選取**C/c + +** 資料夾。  
+5. 在左側的資料夾檢視，選取**C/c + +** 資料夾。  
   
-6.  底下**c + +** 資料夾中，選取`Optimization`。  
+6. 底下**c + +** 資料夾中，選取`Optimization`。  
   
-7.  在右邊的屬性清單裡，尋找 `Optimization`。 它旁邊的設定可能是`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 選擇其中一個其他選項 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
+7. 在右邊的屬性清單裡，尋找 `Optimization`。 它旁邊的設定可能是`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 選擇其中一個其他選項 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
   
-8.  如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。  
+8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。  
   
 9. 選取 [組態屬性 | C/c + +，命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`來**其他選項**文字方塊。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "44280814"
     >   
     >  新增`/Zo`將會停用[編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
   
- 當您偵錯最佳化程式碼時，使用**反組譯碼**視窗來查看哪些指令來實際建立並執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：  
+   當您偵錯最佳化程式碼時，使用**反組譯碼**視窗來查看哪些指令來實際建立並執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：  
   
 ```cpp
 for (x=0; x<10; x++)  

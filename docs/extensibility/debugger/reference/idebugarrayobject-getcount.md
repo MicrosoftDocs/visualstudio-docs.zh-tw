@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount |Microsoft 文件
+title: IDebugArrayObject::GetCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891397"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
-陣列中取得的項目計數。  
+取得陣列中的項目數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,13 +43,13 @@ int GetCount(
   
 #### <a name="parameters"></a>參數  
  `pdwElements`  
- [out]傳回計數。  
+ [out]傳回的計數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將所有項目的陣列物件視為一維陣列，即使多維陣列物件。 例如，假設陣列`myarray[3][2][6]`，這個方法會傳回在 36`pdwElements`參數。 使用[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)方法來擷取一次一個的個別項目。  
+ 這個方法會將所有項目的陣列物件視為一維陣列，即使是多維式陣列物件。 例如，假設陣列`myarray[3][2][6]`，這個方法會傳回在 36`pdwElements`參數。 使用[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)方法來擷取個別的項目一次。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

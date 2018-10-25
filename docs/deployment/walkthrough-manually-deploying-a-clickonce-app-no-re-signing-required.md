@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875095"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說： 手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊
 當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式並再將它提供給客戶發行並部署，客戶有以往都會需要更新部署資訊清單，並重新簽署資訊清單。 同時，仍然是慣用的方法，在大部分情況下，.NET Framework 3.5 可讓您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客戶可以部署而不需要重新產生新的部署資訊清單的部署。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式，但不重新簽署的測試和生產環境伺服器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。  
@@ -48,36 +48,36 @@ ms.locfileid: "39511405"
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>若要部署 ClickOnce 應用程式與多個部署使用 Mage.exe 的品牌支援  
   
-1.  開啟 Visual Studio 命令提示字元或[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]命令提示字元，並切換至目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]檔案。  
+1. 開啟 Visual Studio 命令提示字元或[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]命令提示字元，並切換至目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]檔案。  
   
-2.  建立名為目前的版本，您的部署。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。  
+2. 建立名為目前的版本，您的部署。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。  
   
-    > [!NOTE]
-    >  您部署的版本可能不同於您的應用程式檔案的版本。  
+   > [!NOTE]
+   >  您部署的版本可能不同於您的應用程式檔案的版本。  
   
-3.  建立名為子目錄**bin**並複製所有的應用程式檔案，包括可執行檔、 組件、 資源和資料檔案。  
+3. 建立名為子目錄**bin**並複製所有的應用程式檔案，包括可執行檔、 組件、 資源和資料檔案。  
   
-4.  產生應用程式資訊清單，Mage.exe 呼叫。  
+4. 產生應用程式資訊清單，Mage.exe 呼叫。  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  登入您的數位簽名的應用程式資訊清單。  
+5. 登入您的數位簽名的應用程式資訊清單。  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  產生部署資訊清單，藉由呼叫*Mage.exe*。 根據預設， *Mage.exe*會將標示您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署安裝的應用程式，讓它可以執行同時上線與離線狀態。 若要讓應用程式可用，只有當使用者在線上時，使用`-i`引數的值與`f`。 此應用程式會利用多個部署功能，因為排除`-providerUrl`引數*Mage.exe*。 (在舊版.NET Framework 3.5 版之前，不包括`-providerUrl`離線應用程式將會導致錯誤。)  
+6. 產生部署資訊清單，藉由呼叫*Mage.exe*。 根據預設， *Mage.exe*會將標示您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署安裝的應用程式，讓它可以執行同時上線與離線狀態。 若要讓應用程式可用，只有當使用者在線上時，使用`-i`引數的值與`f`。 此應用程式會利用多個部署功能，因為排除`-providerUrl`引數*Mage.exe*。 (在舊版.NET Framework 3.5 版之前，不包括`-providerUrl`離線應用程式將會導致錯誤。)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  未簽署部署資訊清單。  
+7. 未簽署部署資訊清單。  
   
-8.  提供的所有檔案提供給客戶，將部署自己的網路上的應用程式。  
+8. 提供的所有檔案提供給客戶，將部署自己的網路上的應用程式。  
   
 9. 到目前為止，客戶必須簽署部署資訊清單，使用自己自我產生的憑證。 例如，如果客戶適用於名為 Adventure Works 的公司，他可以產生自我簽署的憑證，使用*MakeCert.exe*工具。 接下來，使用*Pvk2pfx.exe*工具，以結合所建立的檔案*MakeCert.exe*成 PFX 檔案，可以傳遞給*Mage.exe*。  
   
@@ -96,28 +96,28 @@ ms.locfileid: "39511405"
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>若要部署 ClickOnce 應用程式與多個部署使用 MageUI.exe 的品牌支援  
   
-1.  開啟 Visual Studio 命令提示字元或[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]命令提示字元，並瀏覽至目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]檔案。  
+1. 開啟 Visual Studio 命令提示字元或[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]命令提示字元，並瀏覽至目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]檔案。  
   
-2.  建立名為子目錄**bin**並複製所有的應用程式檔案，包括可執行檔、 組件、 資源和資料檔案。  
+2. 建立名為子目錄**bin**並複製所有的應用程式檔案，包括可執行檔、 組件、 資源和資料檔案。  
   
-3.  建立目前的部署版本命名的子目錄。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。  
+3. 建立目前的部署版本命名的子目錄。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。  
   
-    > [!NOTE]
-    >  您部署的版本可能不同於您的應用程式檔案的版本。  
+   > [!NOTE]
+   >  您部署的版本可能不同於您的應用程式檔案的版本。  
   
-4.  移動\\ **bin**目錄到您在步驟 2 中建立的目錄。  
+4. 移動\\ **bin**目錄到您在步驟 2 中建立的目錄。  
   
-5.  啟動圖形化工具*MageUI.exe*。  
+5. 啟動圖形化工具*MageUI.exe*。  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  選取 建立新的應用程式資訊清單**檔案**，**新增**，**應用程式資訊清單**從功能表。  
+6. 選取 建立新的應用程式資訊清單**檔案**，**新增**，**應用程式資訊清單**從功能表。  
   
-7.  預設值**名稱**索引標籤上，輸入此部署的名稱和版本號碼。 此外，提供一個值**發行者**，用來作為資料夾名稱，在 [開始] 功能表中的應用程式的快顯連結部署時。  
+7. 預設值**名稱**索引標籤上，輸入此部署的名稱和版本號碼。 此外，提供一個值**發行者**，用來作為資料夾名稱，在 [開始] 功能表中的應用程式的快顯連結部署時。  
   
-8.  選取 **應用程式選項**索引標籤，然後按一下**使用應用程式資訊清單信任資訊**。 這會讓 淛鵸葺爦這個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
+8. 選取 **應用程式選項**索引標籤，然後按一下**使用應用程式資訊清單信任資訊**。 這會讓 淛鵸葺爦這個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
   
 9. 選取 **檔案**索引標籤，然後按一下**瀏覽**旁**應用程式目錄**文字方塊。  
   

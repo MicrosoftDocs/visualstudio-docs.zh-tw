@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909727"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "49286282"
 ### <a name="package-action"></a>套件動作  
  [套件動作] 屬性指出 Visual Studio 在執行組建時對檔案執行的動作。 [套件動作] 可以有數個值之一：  
   
--   **無**：檔案未包含在套件資訊清單中。 範例是包含讀我檔案這類文件的文字檔。  
+- **無**：檔案未包含在套件資訊清單中。 範例是包含讀我檔案這類文件的文字檔。  
   
--   **內容**：檔案包含在套件資訊清單中。 例如，此設定是 .htm、.js、.css、影像、音訊或視訊檔案的預設值。  
+- **內容**：檔案包含在套件資訊清單中。 例如，此設定是 .htm、.js、.css、影像、音訊或視訊檔案的預設值。  
   
--   **資訊清單**– 檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。  
+- **資訊清單**– 檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。  
   
--   **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。  
+- **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。  
   
- [套件動作] 的預設值取決於您新增至方案之檔案的副檔名。  
+  [套件動作] 的預設值取決於您新增至方案之檔案的副檔名。  
   
 ### <a name="file-name-property"></a>檔案名稱屬性  
  將檔案名稱顯示為唯讀值。 若要將檔案重新命名，您必須以滑鼠右鍵按一下方案總管，然後選取 [重新命名]。  

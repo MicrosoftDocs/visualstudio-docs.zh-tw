@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854769"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
@@ -88,19 +88,19 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
 ## <a name="related-sections"></a>相關章節  
  [使用中斷點](../debugger/using-breakpoints.md)
 
- - 當您想要偵錯個別的執行緒，請使用中斷點條件或篩選。  
+- 當您想要偵錯個別的執行緒，請使用中斷點條件或篩選。  
   
- - 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。  
+- 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。  
   
- [執行緒處理](/dotnet/standard/threading/index)  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
+  [執行緒處理](/dotnet/standard/threading/index)  
+  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
   
- [元件中的多執行緒](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- 如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 元件中使用多執行緒處理。  
+  [元件中的多執行緒](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 元件中使用多執行緒處理。  
   
- [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- 提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
+  [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+  提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

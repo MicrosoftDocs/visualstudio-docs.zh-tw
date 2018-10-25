@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827539"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704：識別項應該使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263740"
 ## <a name="rule-description"></a>規則描述
  此規則會識別項剖析為語彙基元，並檢查每個語彙基元的拼字。 剖析的演算法會執行下列轉換：
 
--   大寫字母會啟動新的權杖。 比方說，MyNameIsJoe 會語彙基元化為"My"、"Name"、"Is"、"Joe"。
+- 大寫字母會啟動新的權杖。 比方說，MyNameIsJoe 會語彙基元化為"My"、"Name"、"Is"、"Joe"。
 
--   對於多個大寫字母，最後一個大寫的字母會啟動新的權杖。 比方說，GUIEditor 會語彙基元化為"GUI 」，「 編輯器 」。
+- 對於多個大寫字母，最後一個大寫的字母會啟動新的權杖。 比方說，GUIEditor 會語彙基元化為"GUI 」，「 編輯器 」。
 
--   會移除開頭和尾端單引號。 例如，'sender' 會語彙基元化為"sender"。
+- 會移除開頭和尾端單引號。 例如，'sender' 會語彙基元化為"sender"。
 
--   表示權杖結尾底線，且會移除。 比方說，Hello_world 會語彙基元化為"Hello"，"world"。
+- 表示權杖結尾底線，且會移除。 比方說，Hello_world 會語彙基元化為"Hello"，"world"。
 
--   會移除內嵌的連字號。 例如，for&mat 會語彙基元化為 "format"。
+- 會移除內嵌的連字號。 例如，for&mat 會語彙基元化為 "format"。
 
- 預設情況下，會使用英文 (en) 版本的拼字檢查程式。 目前使用任何其他語言字典不。
+  預設情況下，會使用英文 (en) 版本的拼字檢查程式。 目前使用任何其他語言字典不。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，更正這個字的拼字，或將該字加入至名為 CustomDictionary.xml 自訂字典。 將字典中的工具，[專案目錄中，安裝目錄，或使用者的設定檔] 下方的工具相關聯的目錄中 (%USERPROFILE%\Application 資料\\...)。若要了解如何加入自訂字典中的專案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請參閱[How to： 自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   新增應該不會造成違反 Recognized/單字字典/路徑下的單字。
+- 新增應該不會造成違反 Recognized/單字字典/路徑下的單字。
 
--   新增應該會造成無法識別字典/文字/路徑下的違規的單字。
+- 新增應該會造成無法識別字典/文字/路徑下的違規的單字。
 
--   新增應該標示的文字，為即將淘汰字典/文字/路徑下已過時。 請參閱相關的規則主題[ca1726 建議： 使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)如需詳細資訊。
+- 新增應該標示的文字，為即將淘汰字典/文字/路徑下已過時。 請參閱相關的規則主題[ca1726 建議： 使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)如需詳細資訊。
 
--   加入至字典/首字母縮略字/CasingExceptions 路徑的首字母縮略字大小寫規則的例外狀況。
+- 加入至字典/首字母縮略字/CasingExceptions 路徑的首字母縮略字大小寫規則的例外狀況。
 
- 以下是結構的範例中的自訂字典檔案。
+  以下是結構的範例中的自訂字典檔案。
 
 ```
 <Dictionary>

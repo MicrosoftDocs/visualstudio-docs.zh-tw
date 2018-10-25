@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825303"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ ms.locfileid: "49273009"
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>允許在不載入專案或方案的情況下擷取圖形資訊  
   
-1.  在功能表列上，依序選擇 [檔案] 、[開啟舊檔] 及 [專案/方案] 。 [開啟專案]  對話方塊隨即出現。  
+1. 在功能表列上，依序選擇 [檔案] 、[開啟舊檔] 及 [專案/方案] 。 [開啟專案]  對話方塊隨即出現。  
   
-2.  指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟] 。  
+2. 指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟] 。  
   
-3.  在功能表列上，選擇 [ **偵錯**]、[ **圖形**]、[ **開始診斷**]。  
+3. 在功能表列上，選擇 [ **偵錯**]、[ **圖形**]、[ **開始診斷**]。  
   
- 在您啟動應用程式且應用程式正在轉譯畫面格之後，您可以擷取圖形資訊。  
+   在您啟動應用程式且應用程式正在轉譯畫面格之後，您可以擷取圖形資訊。  
   
 #### <a name="to-capture-graphics-information"></a>擷取圖形資訊  
   
--   在 [圖形診斷] 工具列上，選擇 [擷取]  按鈕。 ![圖形擷取按鈕圖示](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- 在 [圖形診斷] 工具列上，選擇 [擷取]  按鈕。 ![圖形擷取按鈕圖示](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     -或-  
+   -或-  
   
-     當應用程式進入焦點時，按 **Print Screen**鍵。  
+   當應用程式進入焦點時，按 **Print Screen**鍵。  
   
- 每次您擷取畫面格的相關資訊，圖形診斷就會記錄 Direct3D 事件及相關聯的狀態，並將該資料加入圖形記錄檔中。 每一個圖形診斷工作階段都會建立新的圖形記錄檔。 如圖形記錄檔的相關資訊，請參閱 <<c0> [ 概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+  每次您擷取畫面格的相關資訊，圖形診斷就會記錄 Direct3D 事件及相關聯的狀態，並將該資料加入圖形記錄檔中。 每一個圖形診斷工作階段都會建立新的圖形記錄檔。 如圖形記錄檔的相關資訊，請參閱 <<c0> [ 概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範如何手動擷取圖形資訊。 下一步是考慮此選項：  

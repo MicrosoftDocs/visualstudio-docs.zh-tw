@@ -20,15 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b253b32f4cea3d6e578001424881cf6a4dcdea64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9d85fef6cd581f32be9438b94264c201869ba01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888472"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：例外狀況必須是公用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ExceptionsShouldBePublic|

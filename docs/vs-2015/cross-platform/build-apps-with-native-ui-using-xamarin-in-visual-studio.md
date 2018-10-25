@@ -13,12 +13,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2f1971f2c9ed3cb7742c7144cf35708789f4a92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879307"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,62 +42,62 @@ ms.locfileid: "49193514"
   
 > [!TIP]
 >  您可以在 [GitHub 上的 mobile-samples 儲存機制 (英文)](https://github.com/xamarin/mobile-samples/tree/master/Weather) 中找到本專案的完整原始程式碼。
->
+> 
 >   如果問題持續存在或您遇到錯誤，請將問題張貼在 [forums.xamarin.com](http://forums.xamarin.com) 上。 有許多問題都可透過更新至 Xamarin 所需的最新 SDK 來解決，相關說明請參閱適用於每個平台的 [Xamarin 版本資訊 (英文)](https://developer.xamarin.com/releases/)。    
-  
+> 
 > [!NOTE]
 >  Xamarin 的開發人員文件也提供兼具快速入門與深入探討章節的幾個逐步解說，列出如下。 在所有頁面上，請確定已選取頁面右上方的 [Visual Studio]，以查看 Visual Studio 特定的逐步解說。  
->   
->  -   具有原生 UI 的 Xamarin 應用程式：  
->   
->      -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (單一畫面的簡單應用程式)  
->     -   [Hello, Android 多重畫面](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (可瀏覽不同畫面的應用程式)  
->     -   [Android Fragment 逐步解說](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (用於主要/詳細資料畫面及其他項目)  
->     -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Hello, iOS 多重畫面](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   具有 Xamarin.Forms (共用 UI) 的 Xamarin 應用程式  
->   
->      -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [嗨，Xamarin.Forms 多重畫面 (英文)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+> 
+> - 具有原生 UI 的 Xamarin 應用程式：  
+> 
+>   -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (單一畫面的簡單應用程式)  
+>   -   [Hello, Android 多重畫面](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (可瀏覽不同畫面的應用程式)  
+>   -   [Android Fragment 逐步解說](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (用於主要/詳細資料畫面及其他項目)  
+>   -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
+>   -   [Hello, iOS 多重畫面](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
+>   -   具有 Xamarin.Forms (共用 UI) 的 Xamarin 應用程式  
+> 
+>   -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>   -   [嗨，Xamarin.Forms 多重畫面 (英文)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a> 設定方案  
  下列步驟會建立具有原生 UI 的 Xamarin 方案，其中包含適用於共用程式碼的 PCL 以及兩個已加入的 NuGet 封裝。  
   
-1.  在 Visual Studio 中，建立新的**空的應用程式 (原生可攜式)** 方案，並將其命名為 **WeatherApp**。 您可以在搜尋欄位中輸入**原生可攜式**，就能輕鬆找到這個範本。  
+1. 在 Visual Studio 中，建立新的**空的應用程式 (原生可攜式)** 方案，並將其命名為 **WeatherApp**。 您可以在搜尋欄位中輸入**原生可攜式**，就能輕鬆找到這個範本。  
   
-     如果找不到，可能必須安裝 Xamarin，或是啟用 Visual Studio 2015 功能。請參閱 [Setup and install](../cross-platform/setup-and-install.md)。  
+    如果找不到，可能必須安裝 Xamarin，或是啟用 Visual Studio 2015 功能。請參閱 [Setup and install](../cross-platform/setup-and-install.md)。  
   
-2.  按一下 [確定] 建立解決方案後，您會擁有數個個別專案：  
+2. 按一下 [確定] 建立解決方案後，您會擁有數個個別專案：  
   
-    -   **WeatherApp (可攜式)**：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。  
+   - **WeatherApp (可攜式)**：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。  
   
-    -   **WeatherApp.Droid**：包含原生 Android 程式碼的專案。 這會設為預設啟始專案。  
+   - **WeatherApp.Droid**：包含原生 Android 程式碼的專案。 這會設為預設啟始專案。  
   
-    -   **WeatherApp.iOS**：包含原生 iOS 程式碼的專案。  
+   - **WeatherApp.iOS**：包含原生 iOS 程式碼的專案。  
   
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**：包含原生 Windows Phone 程式碼的專案。  
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**：包含原生 Windows Phone 程式碼的專案。  
   
      您可以在每個原生專案中存取對應平台的原生設計工具，並可實作平台專屬的畫面。  
   
-3.  將 **Newtonsoft.Json** 和 NuGet 套件新增至 PCL 專案，您將使用此專案來處理從天氣資料服務擷取而來的資訊：  
+3. 將 **Newtonsoft.Json** 和 NuGet 套件新增至 PCL 專案，您將使用此專案來處理從天氣資料服務擷取而來的資訊：  
   
-    -   在 [方案總管] 中以滑鼠右鍵按一下 ['WeatherApp' 方案]，然後選取 [管理方案的 NuGet 封裝...]。  
+   -   在 [方案總管] 中以滑鼠右鍵按一下 ['WeatherApp' 方案]，然後選取 [管理方案的 NuGet 封裝...]。  
   
-         在 [NuGet] 視窗中，選取 [瀏覽] 索引標籤，然後搜尋 **Newtonsoft**。  
+        在 [NuGet] 視窗中，選取 [瀏覽] 索引標籤，然後搜尋 **Newtonsoft**。  
   
-    -   選取 **Newtonsoft.Json**。  
+   -   選取 **Newtonsoft.Json**。  
   
-    -   在視窗右側，核取 **WeatherApp** 專案 (這是唯一一個必須安裝封裝的專案)。  
+   -   在視窗右側，核取 **WeatherApp** 專案 (這是唯一一個必須安裝封裝的專案)。  
   
-    -   請確認 [版本]  欄位設為 [最新穩定版]  。  
+   -   請確認 [版本]  欄位設為 [最新穩定版]  。  
   
-    -   按一下 [安裝] 。  
+   -   按一下 [安裝] 。  
   
-    -   ![找出並安裝 Newtonsoft.Json NuGet 封裝](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+   -   ![找出並安裝 Newtonsoft.Json NuGet 封裝](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-4.  重複步驟 3，以尋找並安裝 **Microsoft.Net.Http** 封裝。  
+4. 重複步驟 3，以尋找並安裝 **Microsoft.Net.Http** 封裝。  
   
-5.  建置方案，並確認沒有任何建置錯誤。  
+5. 建置方案，並確認沒有任何建置錯誤。  
   
 ##  <a name="dataservice"></a> 寫入共用的資料服務程式碼  
  您可以在 **WeatherApp (可攜式)** 專案中撰寫可攜式類別庫 (PCL) 程式碼，進而跨所有平台共用。 系統會在 iOS、Android 和 Windows Phone 專案所建置的應用程式封裝中自動包含 PCL。  

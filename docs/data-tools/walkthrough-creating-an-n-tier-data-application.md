@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942890"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說： 建立 n-tier 資料應用程式
 *多層式架構*資料應用程式是應用程式存取資料而且分成多個邏輯層，或*層*。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的終端使用者隔離。 如需詳細資訊，請參閱 <<c0> [ 多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。
@@ -73,7 +73,7 @@ ms.locfileid: "37175339"
  這個逐步解說的第一個步驟是建立一個方案和兩個類別庫專案。 第一個類別庫會保留資料集 (產生的具類型`DataSet`類別和保存應用程式的資料的 DataTables)。 此專案是用做應用程式的資料實體層，而且通常位於中介層。 資料集建立初始資料集，並自動將程式碼分為兩個類別程式庫。
 
 > [!NOTE]
->  請務必正確地命名專案和方案為再按一下 **確定**。 這麼做可以讓您輕鬆地完成這個逐步解說。
+> 請務必正確地命名專案和方案為再按一下 **確定**。 這麼做可以讓您輕鬆地完成這個逐步解說。
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>建立多層式架構方案和 DataEntityTier 類別庫
 
@@ -106,7 +106,7 @@ ms.locfileid: "37175339"
  下一個步驟是建立具類型資料集。 這兩個資料集類別以建立具類型資料集 (包括`DataTables`類別) 和`TableAdapter`單一專案中的類別。 (所有類別都會產生到單一檔案)。當您將資料集和 Tableadapter 分成不同的專案時，就會移至另一個專案，讓資料集類別`TableAdapter`原始專案中的類別。 因此，最後會包含 Tableadapter （DataAccessTier 專案） 的專案中建立資料集。 使用建立資料集**資料來源組態精靈**。
 
 > [!NOTE]
->  您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需有關如何設定 Northwind 範例資料庫的資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+> 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需有關如何設定 Northwind 範例資料庫的資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-dataset"></a>建立資料集
 
@@ -129,7 +129,7 @@ ms.locfileid: "37175339"
 6.  如果資料庫需要密碼，請選取選項來加入敏感性資料，然後選擇**下一步**。
 
     > [!NOTE]
-    >  如果您已選取本機資料庫檔案 (而非連接至 SQL Server)，則系統可能會詢問您是否要將檔案加入至專案。 選擇**是**將資料庫檔案加入至專案。
+    > 如果您已選取本機資料庫檔案 (而非連接至 SQL Server)，則系統可能會詢問您是否要將檔案加入至專案。 選擇**是**將資料庫檔案加入至專案。
 
 7.  選取 **下一步**上**將連接字串儲存到應用程式組態檔**頁面。
 
@@ -144,20 +144,20 @@ ms.locfileid: "37175339"
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>分隔 TableAdapter 與資料集
 
-1.  按兩下**NorthwindDataSet.xsd**中**方案總管**若要開啟中的資料集**Dataset 設計工具**。
+1. 按兩下**NorthwindDataSet.xsd**中**方案總管**若要開啟中的資料集**Dataset 設計工具**。
 
-2.  選取設計工具上的空白區域。
+2. 選取設計工具上的空白區域。
 
-3.  找出**資料集 Project**中的節點**屬性**視窗。
+3. 找出**資料集 Project**中的節點**屬性**視窗。
 
-4.  在 **資料集 Project**清單中，選取**DataEntityTier**。
+4. 在 **資料集 Project**清單中，選取**DataEntityTier**。
 
-5.  在 [建置] 功能表上，選取 [建置方案]。
+5. 在 [建置] 功能表上，選取 [建置方案]。
 
- 資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (`DataAccessTier`) 現在只會包含 Tableadapter。 中指定的專案**資料集 Project**屬性 (`DataEntityTier`) 包含具類型資料集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
+   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (`DataAccessTier`) 現在只會包含 Tableadapter。 中指定的專案**資料集 Project**屬性 (`DataEntityTier`) 包含具類型資料集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
 
 > [!NOTE]
->  當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，在專案中的現有部份資料集類別不會自動移動。 現有資料集部分類別必須手動移至資料集專案。
+> 當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，在專案中的現有部份資料集類別不會自動移動。 現有資料集部分類別必須手動移至資料集專案。
 
 ## <a name="create-a-new-service-application"></a>建立新的服務應用程式
 本逐步解說示範如何使用 WCF 服務來存取資料存取層，讓我們建立新的 WCF 服務應用程式。
@@ -224,7 +224,7 @@ ms.locfileid: "37175339"
  現在，資料存取層包含方法可以傳回資料、在資料服務中建立方法以呼叫資料存取層中的方法。
 
 > [!NOTE]
->  針對 C# 專案，您必須加入下列程式碼的 `System.Data.DataSetExtensions` 組件參考以進行編譯。
+> 針對 C# 專案，您必須加入下列程式碼的 `System.Data.DataSetExtensions` 組件參考以進行編譯。
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>在資料服務中建立 GetCustomers 和 GetOrders 函式
 
@@ -323,7 +323,7 @@ ms.locfileid: "37175339"
 3.  選取  **Service1** ，然後選擇**確定**。
 
     > [!NOTE]
-    >  如果您有多個服務，目前的電腦上，選取您先前在本逐步解說中建立的服務 (服務，其中包含`GetCustomers`和`GetOrders`方法)。
+    > 如果您有多個服務，目前的電腦上，選取您先前在本逐步解說中建立的服務 (服務，其中包含`GetCustomers`和`GetOrders`方法)。
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>將 DataGridViews 加入至表單以顯示資料服務所傳回的資料
  加入服務參考加入資料服務之後, **Zdroje dat**視窗會自動填入服務所傳回的資料。
@@ -361,7 +361,7 @@ ms.locfileid: "37175339"
 預設值`maxReceivedMessageSize`不夠大，無法保存從擷取的資料`Customers`和`Orders`資料表。 在下列步驟中，您將會增加為 6553600 值。 您變更在用戶端，會自動更新服務參考的值。
 
 > [!NOTE]
->  較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
+> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值
 

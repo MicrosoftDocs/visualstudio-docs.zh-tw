@@ -17,12 +17,12 @@ ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f1e4b0aa60cdf20a154305238de74ccdd72cd26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ebc236a2ffa2ea8d2fb2c1bfc71bd33ad4754b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869518"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

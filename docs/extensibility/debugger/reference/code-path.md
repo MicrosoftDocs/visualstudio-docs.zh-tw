@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH |Microsoft 文件
+title: CODE_PATH |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920257"
 ---
 # <a name="codepath"></a>CODE_PATH
-描述在方法或函式呼叫。  
+描述的方法或函式的呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,10 +46,10 @@ public struct CODE_PATH {
  程式碼路徑的名稱。  
   
  pCode  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)識別程式碼逐步執行函式中的物件。  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)其中逐步執行函式程式碼中識別的物件。  
   
 ## <a name="remarks"></a>備註  
- 這個結構用來實作逐步執行函式。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)從正在偵錯的程式中的目前位置會傳回所有的呼叫。 這個結構是表示一個這類呼叫。  
+ 此結構用來實作逐步執行函式。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)從目前的位置中正在偵錯程式會傳回所有的呼叫。 這個結構是表示一個這類呼叫。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

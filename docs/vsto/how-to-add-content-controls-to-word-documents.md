@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936962"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何： 將內容控制項加入 Word 文件
   在文件層級 Word 專案中，您可以將內容控制項加入文件在您的專案在設計階段或執行階段。 在 Word VSTO 增益集專案中，您可以將內容控制項加入任何開啟的文件，在執行階段。  
@@ -43,24 +43,24 @@ ms.locfileid: "35671135"
   
  本主題說明下列工作：  
   
--   [在設計階段加入內容控制項](#designtime)  
+- [在設計階段加入內容控制項](#designtime)  
   
--   [在文件層級專案中的執行階段加入內容控制項](#runtimedoclevel)  
+- [在文件層級專案中的執行階段加入內容控制項](#runtimedoclevel)  
   
--   [在 VSTO 增益集專案中的執行階段加入內容控制項](#runtimeaddin)  
+- [在 VSTO 增益集專案中的執行階段加入內容控制項](#runtimeaddin)  
   
- 如需內容控制項的資訊，請參閱[內容控制項](../vsto/content-controls.md)。  
+  如需內容控制項的資訊，請參閱[內容控制項](../vsto/content-controls.md)。  
   
 ##  <a name="designtime"></a> 加入內容控制項在設計階段  
  在文件層級專案中，有數個方式可於設計階段將內容控制項加入文件：  
   
--   從 [工具箱]  的 [Word 控制項] 索引標籤加入內容控制項。  
+- 從 [工具箱]  的 [Word 控制項] 索引標籤加入內容控制項。  
   
--   使用與在 Word 中加入原生內容控制項相同的方式，將內容控制項加入文件。  
+- 使用與在 Word 中加入原生內容控制項相同的方式，將內容控制項加入文件。  
   
--   從 [資料來源]  視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱 <<c0> [ 如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)並[How to： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+- 從 [資料來源]  視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱 <<c0> [ 如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)並[How to： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>若要使用工具箱將內容控制項加入文件  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35671135"
 ##  <a name="runtimedoclevel"></a> 在文件層級專案中的執行階段加入內容控制項  
  您可以將內容控制項以程式設計方式加入您的文件，在執行階段所使用的方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>屬性`ThisDocument`專案中的類別。 每個方法都有三個多載，可供您以下列方式加入內容控制項：  
   
--   在目前選取位置加入控制項。  
+- 在目前選取位置加入控制項。  
   
--   在指定的範圍加入控制項。  
+- 在指定的範圍加入控制項。  
   
--   加入以文件中的原生內容控制項為基礎的控制項。  
+- 加入以文件中的原生內容控制項為基礎的控制項。  
   
- 關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 > [!NOTE]  
 >  若要將核取方塊內容控制項加入至 Word 2010 專案中的文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)。  
@@ -141,15 +141,15 @@ ms.locfileid: "35671135"
 ##  <a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行階段加入內容控制項  
  您可以將內容控制項以程式設計方式加入任何開啟的文件，在執行階段使用 VSTO 增益集。 若要這麼做，請產生以開啟文件為基礎的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，然後使用這個主項目之 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 屬性的方法。 每個方法都有三個多載，可供您以下列方式加入內容控制項：  
   
--   在目前選取位置加入控制項。  
+- 在目前選取位置加入控制項。  
   
--   在指定的範圍加入控制項。  
+- 在指定的範圍加入控制項。  
   
--   加入以文件中的原生內容控制項為基礎的控制項。  
+- 加入以文件中的原生內容控制項為基礎的控制項。  
   
- 關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 <<c0> [ 保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 <<c0> [ 保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
- 如需在 VSTO 增益集專案中產生主項目的詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+  如需在 VSTO 增益集專案中產生主項目的詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 > [!NOTE]  
 >  若要將核取方塊內容控制項加入文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)。  

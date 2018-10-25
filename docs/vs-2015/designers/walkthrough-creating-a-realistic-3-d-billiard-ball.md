@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829582"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,49 +54,49 @@ ms.locfileid: "49274114"
   
 #### <a name="to-preview-the-shader-by-using-a-sphere"></a>使用球體預覽著色器  
   
--   在 [著色器設計工具] 的工具列上，選擇 [以圓球預覽]。  
+- 在 [著色器設計工具] 的工具列上，選擇 [以圓球預覽]。  
   
- 在下一個步驟中，您會建立將紋理套用至模型的著色器程式，但首先您必須建立可以使用的紋理。 本逐步解說示範如何使用影像編輯器建立紋理，這是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一部分，但是您可以使用任何能以合適格式來儲存紋理的影像編輯器。  
+  在下一個步驟中，您會建立將紋理套用至模型的著色器程式，但首先您必須建立可以使用的紋理。 本逐步解說示範如何使用影像編輯器建立紋理，這是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一部分，但是您可以使用任何能以合適格式來儲存紋理的影像編輯器。  
   
- 請確定已顯示 [屬性] 視窗和 [工具箱]。  
+  請確定已顯示 [屬性] 視窗和 [工具箱]。  
   
 #### <a name="to-create-a-billiard-ball-texture-by-using-the-image-editor"></a>使用影像編輯器建立撞球紋理  
   
-1.  建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
+1. 建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
   
-2.  設定影像大小，使其寬度是高度的兩倍。因為紋理對應到撞球球面的方式，此為必要步驟。 若要調整影像大小，請在 [屬性] 視窗中，指定 [寬度] 和 [高度] 屬性的新值。 例如，將寬度設定為 512、高度設為 256。  
+2. 設定影像大小，使其寬度是高度的兩倍。因為紋理對應到撞球球面的方式，此為必要步驟。 若要調整影像大小，請在 [屬性] 視窗中，指定 [寬度] 和 [高度] 屬性的新值。 例如，將寬度設定為 512、高度設為 256。  
   
-3.  繪製撞球的紋理，記住紋理如何對應到球體。  
+3. 繪製撞球的紋理，記住紋理如何對應到球體。  
   
-     紋理看起來應該像這樣：  
+    紋理看起來應該像這樣：  
   
-     ![撞球紋理](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+    ![撞球紋理](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
-4.  或者，您也可能想要減少此紋理的儲存需求。 您可以減少紋理的寬度使符合其高度，來完成此作業。 這會壓縮紋理及其寬度，但因為紋理對應至球體的方式，會在呈現撞球時展開。 調整大小後，紋理看起來應該像這樣：  
+4. 或者，您也可能想要減少此紋理的儲存需求。 您可以減少紋理的寬度使符合其高度，來完成此作業。 這會壓縮紋理及其寬度，但因為紋理對應至球體的方式，會在呈現撞球時展開。 調整大小後，紋理看起來應該像這樣：  
   
-     ![壓縮成方形的撞球紋理](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+    ![壓縮成方形的撞球紋理](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
- 現在您可以建立將此紋理套用至模型的著色器。  
+   現在您可以建立將此紋理套用至模型的著色器。  
   
 #### <a name="to-create-a-basic-texture-shader"></a>建立基本材質著色器  
   
-1.  建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。  
+1. 建立要使用的 DGSL 著色器。 如需有關如何將 DGSL 著色器加到專案的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜使用者入門＞一節。  
   
-     根據預設，著色器圖形看起來像這樣︰  
+    根據預設，著色器圖形看起來像這樣︰  
   
-     ![預設的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
+    ![預設的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
   
-2.  修改預設的著色器，以便將紋理樣本的值套用至目前的像素。 著色器圖形看起來應該像這樣︰  
+2. 修改預設的著色器，以便將紋理樣本的值套用至目前的像素。 著色器圖形看起來應該像這樣︰  
   
-     ![將紋理套用到物件的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
+    ![將紋理套用到物件的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
   
-3.  設定紋理屬性，套用您在之前程序中建立的紋理。 將 [材質範例] 節點的 **Texture** 屬性值設定為 [Texture1]，然後使用相同 [屬性] 視窗中的 **Texture1** 屬性群組的 **Filename** 屬性指定紋理檔案。  
+3. 設定紋理屬性，套用您在之前程序中建立的紋理。 將 [材質範例] 節點的 **Texture** 屬性值設定為 [Texture1]，然後使用相同 [屬性] 視窗中的 **Texture1** 屬性群組的 **Filename** 屬性指定紋理檔案。  
   
- 如需如何套用您著色器中紋理的詳細資訊，請參閱[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)。  
+   如需如何套用您著色器中紋理的詳細資訊，請參閱[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)。  
   
- 您的撞球現在看起來應該像這樣︰  
+   您的撞球現在看起來應該像這樣︰  
   
- ![經過紋理處理的撞球特寫](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
+   ![經過紋理處理的撞球特寫](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>使用 Lambert 光源模型建立深度  
  到目前為止，您已建立易於辨識的撞球。 不過，它看起起平淡無奇 — 比較像是撞球的卡通圖片，不夠逼真。 平淡的外觀來自簡單的著色器，其表現如同撞球表面的每個像素都接收等量的光照。  
@@ -107,17 +107,17 @@ ms.locfileid: "49274114"
   
 #### <a name="to-add-lambert-lighting-to-your-shader"></a>將 Lambert 光源新增至著色器  
   
--   修改著色器以 Lambert 光源值調整紋理範例的值。 您的著色器圖形看起來應該像這樣︰  
+- 修改著色器以 Lambert 光源值調整紋理範例的值。 您的著色器圖形看起來應該像這樣︰  
   
-     ![加上 Lambert 光源的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
+   ![加上 Lambert 光源的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
   
--   或者，您也可以選擇設定著色器圖形的 **MaterialDiffuse** 屬性，調整設定光源的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。  
+- 或者，您也可以選擇設定著色器圖形的 **MaterialDiffuse** 屬性，調整設定光源的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。  
   
- 如需如何在著色器中套用 Lambert 光源的詳細資訊，請參閱[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
+  如需如何在著色器中套用 Lambert 光源的詳細資訊，請參閱[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
   
- 套用 Lambert 光源後的撞球看起來應該像這樣︰  
+  套用 Lambert 光源後的撞球看起來應該像這樣︰  
   
- ![經過紋理和光源處理的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
+  ![經過紋理和光源處理的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>以高光強化基本的外觀。  
  Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 不過，撞球仍略顯平淡。  
@@ -128,17 +128,17 @@ ms.locfileid: "49274114"
   
 #### <a name="to-add-specular-highlights-to-your-shader"></a>將高光新增至著色器  
   
-1.  使用相加透明混色來修改著色器以包含高光比重。 您的著色器圖形看起來應該像這樣︰  
+1. 使用相加透明混色來修改著色器以包含高光比重。 您的著色器圖形看起來應該像這樣︰  
   
-     ![加上高光光的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
+    ![加上高光光的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
   
-2.  或者，您也可以設定著色器圖形的高光屬性 (**MaterialSpecular** 和 **MaterialSpecularPower**) 來調整高光的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。  
+2. 或者，您也可以設定著色器圖形的高光屬性 (**MaterialSpecular** 和 **MaterialSpecularPower**) 來調整高光的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。  
   
- 如需如何在著色器中套用高光的詳細資訊，請參閱[如何：建立基本 Phong 著色器](../designers/how-to-create-a-basic-phong-shader.md)。  
+   如需如何在著色器中套用高光的詳細資訊，請參閱[如何：建立基本 Phong 著色器](../designers/how-to-create-a-basic-phong-shader.md)。  
   
- 套用高光後的撞球看起來應該像這樣︰  
+   套用高光後的撞球看起來應該像這樣︰  
   
- ![加上高光的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
+   ![加上高光的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>反映環境以建立空間感  
  套用高光後的撞球看起來很逼真。 它有正確的形狀、正確的繪製作業及正確的效果。 不過，還有一項技術可讓您的撞球更融入環境。  
@@ -153,71 +153,71 @@ ms.locfileid: "49274114"
   
 #### <a name="to-create-textures-for-an-environment-map-by-using-the-image-editor"></a>使用影像編輯器建立環境貼圖的紋理  
   
-1.  建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
+1. 建立要使用的材質。 如需有關如何將材質加到專案的詳細資訊，請參閱[影像編輯器](../designers/image-editor.md)中的＜使用者入門＞一節。  
   
-2.  設定影像大小，使其寬度等於高度，且是 2 的乘冪大小。因為立方體貼圖編製索引的方式，所以這是必要的。 若要調整影像大小，請在 [屬性] 視窗中，指定 [寬度] 和 [高度] 屬性的新值。 例如，將 [寬度] 和 [高度] 屬性的值設成 256。  
+2. 設定影像大小，使其寬度等於高度，且是 2 的乘冪大小。因為立方體貼圖編製索引的方式，所以這是必要的。 若要調整影像大小，請在 [屬性] 視窗中，指定 [寬度] 和 [高度] 屬性的新值。 例如，將 [寬度] 和 [高度] 屬性的值設成 256。  
   
-3.  使用純色填滿紋理。 此紋理會是立方體貼圖的底面，對應球檯的表面。 請記住您所使用的色彩以處理下一個紋理。  
+3. 使用純色填滿紋理。 此紋理會是立方體貼圖的底面，對應球檯的表面。 請記住您所使用的色彩以處理下一個紋理。  
   
-4.  建立第二個紋理，大小和第一個紋理相同。 此紋理會在立方體貼圖的四個面重複，對應球檯的表面和邊，以及球檯附近的區域。 請務必使用和底面紋理相同的色彩，以此紋理繪製球檯的介面。 紋理看起來應該像這樣：  
+4. 建立第二個紋理，大小和第一個紋理相同。 此紋理會在立方體貼圖的四個面重複，對應球檯的表面和邊，以及球檯附近的區域。 請務必使用和底面紋理相同的色彩，以此紋理繪製球檯的介面。 紋理看起來應該像這樣：  
   
-     ![立方體貼圖各面的紋理](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+    ![立方體貼圖各面的紋理](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
-     請記住，反射貼圖不一定要完全一致才有效。例如，本文中建立影像所用的立方體貼圖只包含四個球袋而不是六個。  
+    請記住，反射貼圖不一定要完全一致才有效。例如，本文中建立影像所用的立方體貼圖只包含四個球袋而不是六個。  
   
-5.  建立第三個紋理，大小和其他紋理相同。 此紋理會是立方體貼圖的頂面，對應球檯上方的天花板。 為讓這部分的倒影更有趣，您可以繪製頂光以強調前個程序中新增至著色器的高光。 紋理看起來應該像這樣：  
+5. 建立第三個紋理，大小和其他紋理相同。 此紋理會是立方體貼圖的頂面，對應球檯上方的天花板。 為讓這部分的倒影更有趣，您可以繪製頂光以強調前個程序中新增至著色器的高光。 紋理看起來應該像這樣：  
   
-     ![立方體貼圖頂面的紋理](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+    ![立方體貼圖頂面的紋理](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
- 既然您已針對立方體貼圖的各面建立個別的紋理，就可以使用工具將它們組合至一個儲存在單一 .dds 紋理的立方體貼圖中。 只要可以 .dds 紋理格式來儲存立方體貼圖，您可以使用任何想用的程式來建立立方體貼圖。 本逐步解說示範如何使用附屬於 2010 年 6 月版的 DirectX SDK 的 DirectX 紋理工具來建立紋理。  
+   既然您已針對立方體貼圖的各面建立個別的紋理，就可以使用工具將它們組合至一個儲存在單一 .dds 紋理的立方體貼圖中。 只要可以 .dds 紋理格式來儲存立方體貼圖，您可以使用任何想用的程式來建立立方體貼圖。 本逐步解說示範如何使用附屬於 2010 年 6 月版的 DirectX SDK 的 DirectX 紋理工具來建立紋理。  
   
 #### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>使用 DirectX 紋理工具組合立方體貼圖  
   
-1.  在 DirectX 紋理工具的主功能表中，依序選擇 [檔案] 和 [New Texture]\(新增紋理)。 [New Texture]\(新增紋理) 對話方塊隨即出現。  
+1. 在 DirectX 紋理工具的主功能表中，依序選擇 [檔案] 和 [New Texture]\(新增紋理)。 [New Texture]\(新增紋理) 對話方塊隨即出現。  
   
-2.  在 [Texture Type]\(紋理類型) 群組中選擇 [Cubemap Texture]\(立方體貼圖紋理)。  
+2. 在 [Texture Type]\(紋理類型) 群組中選擇 [Cubemap Texture]\(立方體貼圖紋理)。  
   
-3.  在 [尺寸] 群組中，輸入正確的 [寬度] 和 [高度] 值，然後選擇 [確定]。 新的紋理文件隨即出現。 根據預設，紋理首先出現在紋理文件中，對應立方體的**正 X** 面。  
+3. 在 [尺寸] 群組中，輸入正確的 [寬度] 和 [高度] 值，然後選擇 [確定]。 新的紋理文件隨即出現。 根據預設，紋理首先出現在紋理文件中，對應立方體的**正 X** 面。  
   
-4.  將您為紋理立方體面建立的紋理載入到立方體面。 在主功能表上依序選擇 [檔案] 及 [Open Onto This Cubemap Face]\(在這個立方體面開啟)，選取您為此立方體面建立的紋理，然後選擇 [開啟]。  
+4. 將您為紋理立方體面建立的紋理載入到立方體面。 在主功能表上依序選擇 [檔案] 及 [Open Onto This Cubemap Face]\(在這個立方體面開啟)，選取您為此立方體面建立的紋理，然後選擇 [開啟]。  
   
-5.  對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face] (立方體貼圖面)，然後選取您想要檢視的立方體面。  
+5. 對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face] (立方體貼圖面)，然後選取您想要檢視的立方體面。  
   
-6.  在**正 Y** 立方體面載入您為紋理立方體頂面建立的紋理。  
+6. 在**正 Y** 立方體面載入您為紋理立方體頂面建立的紋理。  
   
-7.  在**負 Y** 立方體面載入您為紋理立方體底面建立的紋理。  
+7. 在**負 Y** 立方體面載入您為紋理立方體底面建立的紋理。  
   
-8.  儲存紋理。  
+8. 儲存紋理。  
   
- 您可以將立方體貼圖的配置想像成這樣︰  
+   您可以將立方體貼圖的配置想像成這樣︰  
   
- ![環境立方體貼圖的配置](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+   ![環境立方體貼圖的配置](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
- 頂端影像是正數 Y （+ Y） 立方體面;中間從左到右，請為 – X、 + Z、 + X 和-Z 立方體面;在底部是 – Y cube 面。  
+   頂端影像是正數 Y （+ Y） 立方體面;中間從左到右，請為 – X、 + Z、 + X 和-Z 立方體面;在底部是 – Y cube 面。  
   
- 您現在可以修改著色器，將立方體貼圖範例融入其他著色器。  
+   您現在可以修改著色器，將立方體貼圖範例融入其他著色器。  
   
 #### <a name="to-add-environment-mapping-to-your-shader"></a>將環境貼圖新增至著色器  
   
-1.  使用相加透明混色來修改著色器以包含環境貼圖。 您的著色器圖形看起來應該像這樣︰  
+1. 使用相加透明混色來修改著色器以包含環境貼圖。 您的著色器圖形看起來應該像這樣︰  
   
-     ![兩種反光著色器節點的特寫](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
+    ![兩種反光著色器節點的特寫](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
   
-     請注意，您可以使用 [乘積和] 節點來簡化著色器圖形。  
+    請注意，您可以使用 [乘積和] 節點來簡化著色器圖形。  
   
-     以下是實作環境貼圖的著色器節點的詳細檢視︰  
+    以下是實作環境貼圖的著色器節點的詳細檢視︰  
   
-     ![增環境貼圖的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
+    ![增環境貼圖的著色器圖形](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
   
-2.  設定立方體貼圖紋理屬性，套用您在之前程序中所建立的紋理。 將 [立方體貼圖範例] 節點的 **Texture** 屬性值設定為 [Texture2]，然後使用 **Texture2** 屬性群組的 **Filename** 屬性指定紋理檔案。  
+2. 設定立方體貼圖紋理屬性，套用您在之前程序中所建立的紋理。 將 [立方體貼圖範例] 節點的 **Texture** 屬性值設定為 [Texture2]，然後使用 **Texture2** 屬性群組的 **Filename** 屬性指定紋理檔案。  
   
-3.  或者，您也可以設定 [常數] 節點的 **Output** 屬性，調整撞球的反射率。 若要存取節點屬性，請先選擇節點，然後在 [屬性] 視窗中找出您想要存取的屬性。  
+3. 或者，您也可以設定 [常數] 節點的 **Output** 屬性，調整撞球的反射率。 若要存取節點屬性，請先選擇節點，然後在 [屬性] 視窗中找出您想要存取的屬性。  
   
- 套用環境貼圖後的撞球看起來應該像這樣︰  
+   套用環境貼圖後的撞球看起來應該像這樣︰  
   
- ![經過環境貼圖處理的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
+   ![經過環境貼圖處理的撞球特寫](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
   
- 在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
+   在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   

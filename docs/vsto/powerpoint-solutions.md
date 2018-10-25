@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906555"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。  
@@ -42,15 +42,15 @@ ms.locfileid: "35670878"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>使用 PowerPoint 物件模型自動化 PowerPoint  
  PowerPoint 物件模型會公開您可用來自動化 PowerPoint 的許多類型。 這些類型可讓您撰寫程式碼來完成一般工作：  
   
--   以程式設計方式建立和格式化簡報。  
+- 以程式設計方式建立和格式化簡報。  
   
--   新增或移除簡報中的投影片。  
+- 新增或移除簡報中的投影片。  
   
--   新增或變更投影片上的圖案。  
+- 新增或變更投影片上的圖案。  
   
- 若要從 VSTO 增益集存取 PowerPoint 物件模型，請使用`Application`欄位`ThisAddIn`專案中的類別。 `Application` 欄位傳回的 <xref:Microsoft.Office.Interop.PowerPoint.Application> 物件代表目前的 PowerPoint 執行個體。 如需詳細資訊，請參閱 <<c0> [ 程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
+  若要從 VSTO 增益集存取 PowerPoint 物件模型，請使用`Application`欄位`ThisAddIn`專案中的類別。 `Application` 欄位傳回的 <xref:Microsoft.Office.Interop.PowerPoint.Application> 物件代表目前的 PowerPoint 執行個體。 如需詳細資訊，請參閱 <<c0> [ 程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
- 呼叫 PowerPoint 物件模型時，您使用的類型是由 PowerPoint 的主要 Interop 組件所提供。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與 PowerPoint 中 COM 物件模型之間的橋樑。 PowerPoint 主要 Interop 組件中的所有類型都定義在 <xref:Microsoft.Office.Interop.PowerPoint> 命名空間中。 如需有關主要 interop 組件的詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
+  呼叫 PowerPoint 物件模型時，您使用的類型是由 PowerPoint 的主要 Interop 組件所提供。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與 PowerPoint 中 COM 物件模型之間的橋樑。 PowerPoint 主要 Interop 組件中的所有類型都定義在 <xref:Microsoft.Office.Interop.PowerPoint> 命名空間中。 如需有關主要 interop 組件的詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
   
 ##  <a name="WordOMDocumentation"></a> 使用 PowerPoint 物件模型文件  
  如需 PowerPoint 物件模型的完整資訊，您可以參閱 PowerPoint 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
@@ -80,7 +80,7 @@ ms.locfileid: "35670878"
  [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   

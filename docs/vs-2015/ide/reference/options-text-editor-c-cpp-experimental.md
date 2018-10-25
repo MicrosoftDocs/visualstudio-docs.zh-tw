@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814411"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ ms.locfileid: "49285112"
   
  如需 Visual Studio 組件庫中的其他文字編輯器功能，請參閱 [這裡](http://go.microsoft.com/fwlink/?LinkId=692016)的清單。 [C++ 快速修正](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)即為一例，其支援下列項目：  
   
--   **加入遺漏的 #include** - 建議相關的 #include 來表示程式碼中的未知符號  
+- **加入遺漏的 #include** - 建議相關的 #include 來表示程式碼中的未知符號  
   
--   **加入 Using 命名空間/完整限定符號** - 類似上一個項目，但針對命名空間  
+- **加入 Using 命名空間/完整限定符號** - 類似上一個項目，但針對命名空間  
   
--   **加入遺漏的分號**  
+- **加入遺漏的分號**  
   
--   **MSDN 說明** - 搜尋 MSDN 中的錯誤訊息  
+- **MSDN 說明** - 搜尋 MSDN 中的錯誤訊息  
   
- 您可以將游標停留在波浪線上，或是使用預設鍵盤快速鍵 Ctrl+點 (Ctrl +)，來取得燈泡。 請注意，針對鍵盤快速鍵，您的插入號不需要放在特定錯誤或語彙基元上；您可以直接在錯誤所在的同一行，叫用該行上任何項目的建議。  
+  您可以將游標停留在波浪線上，或是使用預設鍵盤快速鍵 Ctrl+點 (Ctrl +)，來取得燈泡。 請注意，針對鍵盤快速鍵，您的插入號不需要放在特定錯誤或語彙基元上；您可以直接在錯誤所在的同一行，叫用該行上任何項目的建議。  
   
 ## <a name="see-also"></a>另請參閱  
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)   

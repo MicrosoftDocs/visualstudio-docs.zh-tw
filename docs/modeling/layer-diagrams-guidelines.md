@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863330"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 
@@ -105,7 +105,7 @@ ms.locfileid: "47860065"
 若要描述您打算對您的系統或預期的架構進行的變更，使用下列步驟來編輯相依性圖表。 您也可以考慮先進行一些重構變更來改善程式碼結構，然後再擴充。 請參閱[改善程式碼結構](#Improving)。
 
 |**若要**|**執行下列步驟**|
-|------------|-----------------------------|
+|-|-|
 |刪除不應該存在的相依性|按一下 相依性，，然後按**刪除**。|
 |變更或限制相依性的方向|設定其**方向**屬性。|
 |建立新的相依性|使用**相依性**並**雙向相依性**工具。<br /><br /> 若要繪製多個相依性，請按兩下工具。 當您完成時，請按一下**指標**工具或按**ESC**索引鍵。|

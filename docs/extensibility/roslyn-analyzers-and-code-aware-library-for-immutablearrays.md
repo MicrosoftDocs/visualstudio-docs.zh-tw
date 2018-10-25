@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907478"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray
 
@@ -82,7 +82,6 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 開啟新的一行，在此方法並輸入 「 內容 」。 若要查看的 IntelliSense 完成清單。  您所見，完成清單中有許多`Register...`方法來處理各種類型的事件。  比方說，第一個`RegisterCodeBlockAction`，回到您的程式碼區塊，通常是大括號之間的程式碼的呼叫。  註冊的區塊也會回呼您的程式碼初始設定式的欄位、 屬性 (attribute) 來提供的值或選擇性參數的值。
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **虛設常式衍生的成員。** 現在，將編輯器插入號放在識別項`CodeFixProvider`按下**Ctrl**+**。** （句點） 來去除這個抽象基底類別的實作。  這會為您產生的屬性和方法。

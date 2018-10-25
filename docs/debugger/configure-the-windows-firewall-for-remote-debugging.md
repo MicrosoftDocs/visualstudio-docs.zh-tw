@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847951"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 R2 
+- Windows Server 2008 R2 
   
- 如果正在偵錯的網路未受到防火牆保護，便不需要進行這項設定。 否則，裝載 Visual Studio 的電腦和要進行偵錯的遠端電腦都需要進行變更防火牆設定。  
+  如果正在偵錯的網路未受到防火牆保護，便不需要進行這項設定。 否則，裝載 Visual Studio 的電腦和要進行偵錯的遠端電腦都需要進行變更防火牆設定。  
   
- **IPSec** 如果您的網路要求使用 IPSec 執行通訊，您必須在 Visual Studio 主機電腦和遠端電腦上都開啟其他連接埠。  
+  **IPSec** 如果您的網路要求使用 IPSec 執行通訊，您必須在 Visual Studio 主機電腦和遠端電腦上都開啟其他連接埠。  
   
- **網頁伺服器** 如果您正在偵錯遠端網頁伺服器，您必須在遠端電腦上開啟其他連接埠。 （如 IIS、 連接埠 80 必須開啟。）  
+  **網頁伺服器** 如果您正在偵錯遠端網頁伺服器，您必須在遠端電腦上開啟其他連接埠。 （如 IIS、 連接埠 80 必須開啟。）  
   
- 請注意，這兩部電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。      
+  請注意，這兩部電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>在遠端電腦上啟用遠端偵錯的連接埠  
   
@@ -120,4 +120,4 @@ ms.locfileid: "37433387"
 |80|傳出|TCP|網頁伺服器偵錯的必要項。|
   
 ## <a name="see-also"></a>另請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

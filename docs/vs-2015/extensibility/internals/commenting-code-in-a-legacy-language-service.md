@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873470"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼設為註解
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49291898"
 ## <a name="comment-styles"></a>註解樣式  
  有兩種一般的樣式的註解：  
   
-1.  行註解，以單行註解的所在。  
+1. 行註解，以單行註解的所在。  
   
-2.  區塊註解，其中註解可能包含多行。  
+2. 區塊註解，其中註解可能包含多行。  
   
- 行註解通常會有起始字元 （或字元），在區塊註解時有開頭和結尾字元。 例如，在 C# 中，行註解的開頭 / /、 區塊註解的開頭和 / *，並結束\*/。  
+   行註解通常會有起始字元 （或字元），在區塊註解時有開頭和結尾字元。 例如，在 C# 中，行註解的開頭 / /、 區塊註解的開頭和 / *，並結束\*/。  
   
- 當使用者選取命令**註解選取範圍**從**編輯** -> **進階**功能表中，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別。 當使用者選取命令**取消註解選取範圍**，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
+   當使用者選取命令**註解選取範圍**從**編輯** -> **進階**功能表中，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別。 當使用者選取命令**取消註解選取範圍**，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
   
 ## <a name="supporting-code-comments"></a>支援的程式碼註解  
  您可以讓您的語言服務支援的程式碼的註解藉由`EnableCommenting`具名參數的<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>。 這會設定<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>屬性<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 如需有關如何設定語言 servicce 功能的詳細資訊，請參閱 <<c0> [ 註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md))。  

@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919854"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49257188"
   
  若要從文字範本存取模型：  
   
--   將繼承屬性的範本指示詞，以設定<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 此存放區提供存取。  
+- 將繼承屬性的範本指示詞，以設定<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 此存放區提供存取。  
   
--   指定您想要存取的 dsl 的指示詞處理器。 這會載入 DSL 的組件，好讓您可以在文字範本的程式碼中使用其網域類別、 屬性和關聯性。 它也會載入您指定的模型檔案。  
+- 指定您想要存取的 dsl 的指示詞處理器。 這會載入 DSL 的組件，好讓您可以在文字範本的程式碼中使用其網域類別、 屬性和關聯性。 它也會載入您指定的模型檔案。  
   
- A`.tt`偵錯專案中建立類似下列的範例檔案，是當您建立新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]從 DSL 最小語言範本的方案。  
+  A`.tt`偵錯專案中建立類似下列的範例檔案，是當您建立新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]從 DSL 最小語言範本的方案。  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  請注意：  
   
-1.  `filename`和`validation`參數會以 「; 」，一定要有任何其他分隔符號或空格。  
+1. `filename`和`validation`參數會以 「; 」，一定要有任何其他分隔符號或空格。  
   
-2.  驗證類別目錄的清單會決定將執行哪些驗證方法。 應該以分隔多個類別"&#124;「 而且必須是沒有其他分隔符號或空格。  
+2. 驗證類別目錄的清單會決定將執行哪些驗證方法。 應該以分隔多個類別"&#124;「 而且必須是沒有其他分隔符號或空格。  
   
- 如果發現錯誤，它會回報 [錯誤] 視窗中，結果檔案將包含錯誤訊息。  
+   如果發現錯誤，它會回報 [錯誤] 視窗中，結果檔案將包含錯誤訊息。  
   
 ##  <a name="Multiple"></a> 從文字範本存取多個模型  
   

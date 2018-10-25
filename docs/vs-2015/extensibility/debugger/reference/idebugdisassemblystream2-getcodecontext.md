@@ -17,12 +17,12 @@ ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67186f527d3f2814ed67f5b646fa350e364d4c22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6415552da7c4b5c2a8541e0922dbe431d8485c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865540"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

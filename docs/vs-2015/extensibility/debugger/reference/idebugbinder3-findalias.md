@@ -17,12 +17,12 @@ ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a46dbd425dabd3ceeb5f5bcdc1096ef11f85eb7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbd5e823383513c6c5cf243bb37d94db17221192
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815075"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

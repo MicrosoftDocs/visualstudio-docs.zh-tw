@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877643"
 ---
 # <a name="editing-tableadapters"></a>編輯 TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ ms.locfileid: "49288401"
 ## <a name="create-new-stored-procedures"></a>建立新的預存程序  
  本節說明如何完成**TableAdapter 查詢組態精靈**時選取**建立新的預存程序**選項。  
   
-1.  在 **產生預存程序**頁面上，輸入 SQL 陳述式在呼叫預存程序時執行。  
+1. 在 **產生預存程序**頁面上，輸入 SQL 陳述式在呼叫預存程序時執行。  
   
-    > [!NOTE]
-    >  精靈會提供存取權**查詢產生器**，一種視覺化工具來建立 SQL 查詢。 若要開啟它，請按一下**查詢產生器** 按鈕。  
+   > [!NOTE]
+   >  精靈會提供存取權**查詢產生器**，一種視覺化工具來建立 SQL 查詢。 若要開啟它，請按一下**查詢產生器** 按鈕。  
   
-2.  在 **建立的預存程序**頁面上，執行下列動作：  
+2. 在 **建立的預存程序**頁面上，執行下列動作：  
   
-    1.  輸入新預存程序的名稱。  
+   1. 輸入新預存程序的名稱。  
   
-    2.  指定是否在基礎資料庫中建立預存程序。  
+   2. 指定是否在基礎資料庫中建立預存程序。  
   
-        > [!NOTE]
-        >  在資料庫中建立預存程序的能力是透過特定資料庫的安全性設定所決定。  
+      > [!NOTE]
+      >  在資料庫中建立預存程序的能力是透過特定資料庫的安全性設定所決定。  
   
-     **檢視精靈結果**頁面會顯示建立 TableAdapter 查詢的結果。 如果精靈發生問題，則此頁面會提供錯誤資訊。  
+      **檢視精靈結果**頁面會顯示建立 TableAdapter 查詢的結果。 如果精靈發生問題，則此頁面會提供錯誤資訊。  
   
 ## <a name="use-existing-stored-procedures"></a>使用現有的預存程序  
  本節說明如何完成**TableAdapter 查詢組態精靈**時選取**使用現有的預存程序**選項。  

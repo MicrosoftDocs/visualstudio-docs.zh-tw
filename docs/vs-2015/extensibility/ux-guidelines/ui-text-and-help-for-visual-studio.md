@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908234"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303810"
   
  此解決方案可讓您可能會導致 bug 的四個假設：  
   
--   對話方塊的 [說明] 按鈕**IDHELP** (9)。  
+- 對話方塊的 [說明] 按鈕**IDHELP** (9)。  
   
--   隱藏 [說明] 按鈕時，對話方塊看起來正確無誤。  
+- 隱藏 [說明] 按鈕時，對話方塊看起來正確無誤。  
   
--   對話方塊不會取代其 winproc。  
+- 對話方塊不會取代其 winproc。  
   
--   對話方塊不會內嵌在另一個對話方塊中。  
+- 對話方塊不會內嵌在另一個對話方塊中。  
   
- 如果您的對話方塊內 msenv，但未使用**VBDialogBoxParam**，調查運用**VBDialogBoxParam**實作您自己的處理常式之前。  
+  如果您的對話方塊內 msenv，但未使用**VBDialogBoxParam**，調查運用**VBDialogBoxParam**實作您自己的處理常式之前。  
   
 ##### <a name="dialogs-created-through-other-packages"></a>透過其他封裝所建立的對話方塊  
  您可以實作自己的解決方案了外部 msenv 的對話方塊。 在 VSPackage 中共用的對話方塊類別，請考慮將按鈕移至標題列，或實作在每個對話方塊上的處理常式。 下列程式碼是一個實作來幫助您入門的基本架構：  

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21331bf9abfdfdd3bdf8546676af58d8389a0974
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d79c90f3683f4699ba316e39c0c17eb5ec085a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938314"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25fbfec12299cecf265437baa04a3dd86093f30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849849"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49259319"
 ##  <a name="uninstalling"></a>   
 #### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>若要解除安裝 Visual Studio 使用 「 標準 」 解除安裝方法  
   
-1.  在 **控制台中**上**程式和功能**頁面上，選取您想要解除安裝，然後選擇的產品版本**變更**。  
+1. 在 **控制台中**上**程式和功能**頁面上，選取您想要解除安裝，然後選擇的產品版本**變更**。  
   
-2.  在安裝精靈中，選擇**解除安裝**，選擇**是**，然後依照精靈中其餘的指示。  
+2. 在安裝精靈中，選擇**解除安裝**，選擇**是**，然後依照精靈中其餘的指示。  
   
- 這個標準或預設方法會留下一些項目，您第一次安裝 Visual Studio 時最初安裝 （例如，Microsoft.NET Framework、 Microsoft Visual c + + 可轉散發套件、 Microsoft SQL Server 等）。   我們將保留安裝其他許多應用程式相依於這些因為這些項目。 不過，如果您想要太移除它們，選取 在其項目**程式和功能**，然後個別移除每個。  
+   這個標準或預設方法會留下一些項目，您第一次安裝 Visual Studio 時最初安裝 （例如，Microsoft.NET Framework、 Microsoft Visual c + + 可轉散發套件、 Microsoft SQL Server 等）。   我們將保留安裝其他許多應用程式相依於這些因為這些項目。 不過，如果您想要太移除它們，選取 在其項目**程式和功能**，然後個別移除每個。  
   
 #### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>若要解除安裝 Visual Studio 和所有其他相關的檔案 (亦即，若要解除安裝幾乎所有項目)  
   
@@ -66,18 +66,18 @@ ms.locfileid: "49259319"
   
 #### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>若要回復成先前的版本或版本的 Visual Studio  
   
-1.  使用本主題中所列的方法之一，解除安裝 Visual Studio。  
+1. 使用本主題中所列的方法之一，解除安裝 Visual Studio。  
   
-    > [!WARNING]
-    >  解除安裝目前版本的 Visual Studio （或 Visual Studio Update），然後安裝 先前的版本中可能無法正常運作。  
-    >   
-    >  結果取決於其版本或版本的 Visual Studio 您已安裝，安裝的一個元件的版本，已安裝哪些產品可能會有相依性可能是與 Visual Studio 版本或元件，以及最後，在想要安裝或重新安裝舊版 Visual Studio 版本。  由於所有這些變數，標準解除安裝將會經常離開元件可能無法使用舊版 Visual Studio 版本或版本。  
-    >   
-    >  因此，為了獲得最佳結果，我們建議您使用[Visual Studio 解除安裝工具](https://github.com/Microsoft/VisualStudioUninstaller/releases)。  
+   > [!WARNING]
+   >  解除安裝目前版本的 Visual Studio （或 Visual Studio Update），然後安裝 先前的版本中可能無法正常運作。  
+   >   
+   >  結果取決於其版本或版本的 Visual Studio 您已安裝，安裝的一個元件的版本，已安裝哪些產品可能會有相依性可能是與 Visual Studio 版本或元件，以及最後，在想要安裝或重新安裝舊版 Visual Studio 版本。  由於所有這些變數，標準解除安裝將會經常離開元件可能無法使用舊版 Visual Studio 版本或版本。  
+   >   
+   >  因此，為了獲得最佳結果，我們建議您使用[Visual Studio 解除安裝工具](https://github.com/Microsoft/VisualStudioUninstaller/releases)。  
   
-2.  安裝或重新安裝您想要使用的 Visual Studio 舊版。  
+2. 安裝或重新安裝您想要使用的 Visual Studio 舊版。  
   
- 即使您安裝舊版的 Visual Studio，安裝程式可能仍然嘗試使用較新版本或版本，如果有的話。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主題。  
+   即使您安裝舊版的 Visual Studio，安裝程式可能仍然嘗試使用較新版本或版本，如果有的話。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主題。  
   
 ## <a name="see-also"></a>另請參閱  
  [安裝 Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

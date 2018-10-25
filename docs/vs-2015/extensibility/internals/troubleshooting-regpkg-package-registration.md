@@ -15,12 +15,12 @@ ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6b95b440d83b8f7158dadb2d757b6d5b1d1f392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b5eec1c4726bc94ee9d57c3c4b50ac3dda2c02c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948300"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>針對 RegPkg 套件註冊進行疑難排解
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49245085"
 ## <a name="regpkg-versions-related-to-package-versions"></a>RegPkg 版本相關的套件版本  
  有兩個 RegPkg 版本。 一種版本納入[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 使用這個版本以註冊使用其中一種下列組件已建置的套件：  
   
-1.  Microsoft.VisualStudioShell.9.0.dll  
+1. Microsoft.VisualStudioShell.9.0.dll  
   
-2.  Microsoft.VisualStudioShell.10.0.dll  
+2. Microsoft.VisualStudioShell.10.0.dll  
   
-3.  Microsoft.VisualStudioShell.11.0.dll  
+3. Microsoft.VisualStudioShell.11.0.dll  
   
- 它無法註冊使用較早的 Microsoft.VisualStudio.Shell.dll 組件已建置的套件。  
+   它無法註冊使用較早的 Microsoft.VisualStudio.Shell.dll 組件已建置的套件。  
   
- RegPkg 舊版可以註冊使用 Microsoft.VisualStudio.Shell.dll 組件已建置的套件。 不過，它無法登錄使用的組件的更新版本所建置的套件。  
+   RegPkg 舊版可以註冊使用 Microsoft.VisualStudio.Shell.dll 組件已建置的套件。 不過，它無法登錄使用的組件的更新版本所建置的套件。  
   
 ## <a name="see-also"></a>另請參閱  
  [發行產品](../../misc/releasing-a-visual-studio-integration-product.md)

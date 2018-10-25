@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64d7477c8c463b17e601d7aaef086146f1362a77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 84979fe9c10c11d3bec544b69f3f1179a2cbf2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913659"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

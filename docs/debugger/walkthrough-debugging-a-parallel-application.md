@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872638"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說： 偵錯在 Visual Studio 中的平行應用程式
 本逐步解說示範如何使用**平行工作**並**平行堆疊**視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 程式碼中斷之後，本逐步解說會示範如何使用**平行工作**並**平行堆疊**視窗來檢查。  
@@ -63,25 +63,25 @@ ms.locfileid: "39468786"
   
 #### <a name="to-create-the-sample-project"></a>建立範例專案  
   
-1.  在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。  
+1. 在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。  
   
-2.  選取  **Visual C#**， **Visual Basic**，或**Visual c + +**。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]。  
+2. 選取  **Visual C#**， **Visual Basic**，或**Visual c + +**。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]。  
   
-3.  底下**Windows 桌面**，選擇**主控台應用程式**，然後按一下 **確定**。 保留偵錯組態，這是預設值。  
+3. 底下**Windows 桌面**，選擇**主控台應用程式**，然後按一下 **確定**。 保留偵錯組態，這是預設值。  
   
-4.  在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。  
+4. 在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。  
   
-5.  將所選擇語言的下列程式碼貼到空白程式碼檔案中。  
+5. 將所選擇語言的下列程式碼貼到空白程式碼檔案中。  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  在 **檔案**功能表上，按一下**全部儲存**。  
+6. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
-2.  在 **建置**功能表上，按一下**重建方案**。  
+7. 在 **建置**功能表上，按一下**重建方案**。  
   
-     請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。  
+    請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>使用平行堆疊視窗：執行緒檢視  
  按一下 [偵錯] 功能表上的 [開始偵錯]。 等待叫用第一個中斷點。  

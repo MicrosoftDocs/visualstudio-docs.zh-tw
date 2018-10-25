@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA |Microsoft 文件
+title: BP_RESOLUTION_DATA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876083"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 描述繫結資料中斷點的結果。  
@@ -50,16 +50,16 @@ public struct BP_RESOLUTION_DATA {
  已繫結的資料運算式。  
   
  `bstrFunc`  
- 函式的資料中斷點已繫結名稱中 （如果有的話）。  
+ 函式的名稱 （如果有的話），資料中斷點已經在繫結。  
   
  `bstrImage`  
- 資料中斷點已經繫結中的模組 (例如 MyModule.dll) 名稱。  
+ 資料中斷點已繫結中的模組 (例如 MyModule.dll) 名稱。  
   
  `dwFlags`  
- 中的值[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉，描述如何實作資料中斷點。  
+ 值，以從[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉，描述如何實作資料中斷點。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是屬於[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
+ 此結構是隸屬[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

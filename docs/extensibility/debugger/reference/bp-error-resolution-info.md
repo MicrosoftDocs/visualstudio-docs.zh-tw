@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO |Microsoft 文件
+title: BP_ERROR_RESOLUTION_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdf3b6aee272990fb22feee13f8e46ee8550073
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816770"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 描述錯誤的中斷點，包括位置、 程式和執行緒的解析度。  
@@ -51,22 +51,22 @@ public struct BP_ERROR_RESOLUTION_INFO {
   
 ## <a name="members"></a>成員  
  `dwFields`  
- 值組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)指定此結構的哪些欄位都已填寫列舉型別。  
+ 從值的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)指定此結構的欄位都已填寫的列舉類型。  
   
  `bpResLocation`  
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union、 指定中斷點解析位置。  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union、 指定的中斷點解析位置。  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表中斷點錯誤發生所在之應用程式的物件。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點錯誤發生所在的應用程式。  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表產生中斷點錯誤的應用程式執行所在的執行緒。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示產生中斷點錯誤的應用程式執行所在的執行緒。  
   
  `bstrMessage`  
- 字串，包含造成這個錯誤解決任何警告或錯誤訊息。  
+ 字串，包含此錯誤的解決方案所產生的任何警告或錯誤訊息。  
   
  `dwType`  
- 中的值[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)指定中斷點錯誤類型的列舉。  
+ 值，以從[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)指定中斷點錯誤類型的列舉型別。  
   
 ## <a name="remarks"></a>備註  
  此結構會傳回從[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法。  

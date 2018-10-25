@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921924"
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "49254731"
   
  陳述式是由下列資料識別：  
   
--   包含此函式陳述式的原始程式檔。  
+- 包含此函式陳述式的原始程式檔。  
   
--   包含此陳述式的函式。  
+- 包含此陳述式的函式。  
   
--   此陳述式在原始程式檔中開始的行位置。  
+- 此陳述式在原始程式檔中開始的行位置。  
   
--   此陳述式在原始程式檔中開始的字元。  
+- 此陳述式在原始程式檔中開始的字元。  
   
--   此陳述式在原始程式檔中結束的行位置。  
+- 此陳述式在原始程式檔中結束的行位置。  
   
--   此陳述式在原始程式檔中結束的字元。  
+- 此陳述式在原始程式檔中結束的字元。  
   
- [程式行名稱] 資料行提供識別項資料的可排序串連。  
+  [程式行名稱] 資料行提供識別項資料的可排序串連。  
   
- 下表說明 [程式行] 檢視報表的資料行。  
+  下表說明 [程式行] 檢視報表的資料行。  
   
 |資料行|描述|  
 |------------|-----------------|  

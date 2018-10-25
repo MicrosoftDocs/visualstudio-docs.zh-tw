@@ -17,12 +17,12 @@ ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4167ab216d27d14be5503ac9443fb75d90ca6c13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa72a59725bcfc425b6d5cb63b2d373c7b183edd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866359"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

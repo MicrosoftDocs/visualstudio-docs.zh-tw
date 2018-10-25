@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e990bd73bfe8341e1cae617c6d31ad5a705ede27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69e60b0f2ee8106b04507722f1b3094e1bbdbbc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874822"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008：列舉值中應該要有值為零的成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|

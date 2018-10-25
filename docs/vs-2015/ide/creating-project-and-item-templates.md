@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851656"
 ---
 # <a name="creating-project-and-item-templates"></a>建立專案和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49255344"
 ## <a name="contents-of-a-template"></a>範本的內容  
  所有專案範本和項目範本，不論是隨 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 一起安裝或由您建立，都以相同的原理運作且具有相似的內容。 所有範本都包含下列項目：  
   
--   使用範本時要建立的檔案。 這包括原始程式碼檔案、內嵌資源、專案檔等等。  
+- 使用範本時要建立的檔案。 這包括原始程式碼檔案、內嵌資源、專案檔等等。  
   
--   一個 .vstemplate 檔案。 此檔案包含的中繼資料提供必要資訊，讓 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在 [新增專案] 和 [新增項目] 對話方塊中顯示範本，以及從範本建立專案或項目。 如需 .vstemplate 檔案的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。  
+- 一個 .vstemplate 檔案。 此檔案包含的中繼資料提供必要資訊，讓 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在 [新增專案] 和 [新增項目] 對話方塊中顯示範本，以及從範本建立專案或項目。 如需 .vstemplate 檔案的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。  
   
- 當這些檔案壓縮成 .zip 檔案並放入正確的資料夾時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動顯示它們。 專案範本出現在 [新增專案] 對話方塊的 [我的範本] 區段中，而項目範本出現在 [新增項目] 對話方塊中。 如需範本資料夾的詳細資訊，請參閱[如何：尋找並組織範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
+  當這些檔案壓縮成 .zip 檔案並放入正確的資料夾時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動顯示它們。 專案範本出現在 [新增專案] 對話方塊的 [我的範本] 區段中，而項目範本出現在 [新增項目] 對話方塊中。 如需範本資料夾的詳細資訊，請參閱[如何：尋找並組織範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
   
 ## <a name="starter-kits"></a>入門套件  
  入門套件是增強的範本，可以與社群的其他成員共用。 入門套件包含可編譯的程式碼範例、文件和其他資源，協助使用者經由建置實際有用的應用程式，學習新的工具和程式設計技巧。 入門套件的基本內容和程序，與範本完全相同。 如需詳細資訊，請參閱[如何：建立入門套件](../ide/how-to-create-starter-kits.md)。  

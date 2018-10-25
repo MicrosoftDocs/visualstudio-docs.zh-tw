@@ -17,12 +17,12 @@ ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b1e6e949e9db827fae4163b97ae7838f4cd1f24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4fba497ec9f062b6191f9ba808f70aec646b7666
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861888"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

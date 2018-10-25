@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903149"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -43,13 +43,13 @@ ms.locfileid: "36327163"
 ## <a name="enable-debugging"></a>啟用偵錯
  當您第一次偵錯 SharePoint 方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，對話方塊中，系統會通知您，web.config 檔案未設定為啟用偵錯。 （當您安裝 SharePoint server 時，會建立 web.config 檔案。 如需詳細資訊，請參閱 <<c0> [ 處理 Web.config 檔案](http://go.microsoft.com/fwlink/?LinkID=149266)。)對話方塊可讓您選擇執行專案但不偵錯，或修改的 web.config 檔案，以啟用偵錯。 如果您選擇第一個選項，專案將會正常執行。 如果您選擇第二個選項，則 web.config 檔案會設定為：  
   
--   開啟 呼叫堆疊 (`CallStack="true"`)  
+- 開啟 呼叫堆疊 (`CallStack="true"`)  
   
--   停用中的自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="Off" />`)  
+- 停用中的自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="Off" />`)  
   
--   啟用編譯偵錯 (`<compilation debug="true">`)  
+- 啟用編譯偵錯 (`<compilation debug="true">`)  
   
- 產生的 web.config 檔案如下：  
+  產生的 web.config 檔案如下：  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327163"
 ## <a name="f5-debug-and-deployment-process"></a>F5 偵錯和部署程序
  當您在偵錯模式中執行您的 SharePoint 專案時，在 SharePoint 部署程序會執行下列工作：  
   
-1.  執行可自訂的預先部署命令。  
+1. 執行可自訂的預先部署命令。  
   
-2.  建立 Web 方案套件 (.wsp) 檔案使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]命令。 .Wsp 檔案包含的所有必要的檔案和功能。 如需詳細資訊，請參閱 <<c0> [ 解決方案概觀](http://go.microsoft.com/fwlink/?LinkID=128154)。  
+2. 建立 Web 方案套件 (.wsp) 檔案使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]命令。 .Wsp 檔案包含的所有必要的檔案和功能。 如需詳細資訊，請參閱 <<c0> [ 解決方案概觀](http://go.microsoft.com/fwlink/?LinkID=128154)。  
   
-3.  如果伺服器陣列方案為 SharePoint 方案，回收[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]指定的站台的應用程式集區[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]。 此步驟中釋放鎖定的檔案[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]背景工作處理序。  
+3. 如果伺服器陣列方案為 SharePoint 方案，回收[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]指定的站台的應用程式集區[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]。 此步驟中釋放鎖定的檔案[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]背景工作處理序。  
   
-4.  如果舊版的封裝已經存在，撤銷舊版本的.wsp 檔案中的功能。 此步驟中會停用功能、 方案套件時，會解除安裝，然後刪除 SharePoint 伺服器上的方案套件。  
+4. 如果舊版的封裝已經存在，撤銷舊版本的.wsp 檔案中的功能。 此步驟中會停用功能、 方案套件時，會解除安裝，然後刪除 SharePoint 伺服器上的方案套件。  
   
-5.  安裝目前版本的功能和檔案的.wsp 檔案中。 此步驟中新增，並在 SharePoint 伺服器上安裝解決方案。  
+5. 安裝目前版本的功能和檔案的.wsp 檔案中。 此步驟中新增，並在 SharePoint 伺服器上安裝解決方案。  
   
-6.  工作流程，會安裝工作流程組件。 您可以使用，以變更其位置*組件位置*屬性。  
+6. 工作流程，會安裝工作流程組件。 您可以使用，以變更其位置*組件位置*屬性。  
   
-7.  如果範圍是網站或 Web，請啟動 SharePoint 專案的功能。 在伺服器陣列和 WebApplication 範圍中的功能並未啟用。  
+7. 如果範圍是網站或 Web，請啟動 SharePoint 專案的功能。 在伺服器陣列和 WebApplication 範圍中的功能並未啟用。  
   
-8.  工作流程，將關聯工作流程，與 SharePoint 文件庫、 清單中或您在選取的站台**SharePoint 自訂精靈**。  
+8. 工作流程，將關聯工作流程，與 SharePoint 文件庫、 清單中或您在選取的站台**SharePoint 自訂精靈**。  
   
-    > [!NOTE]  
-    >  只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。  
+   > [!NOTE]  
+   >  只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。  
   
 9. 執行可自訂的部署後命令。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327163"
   
 12. 在 Web 瀏覽器中顯示適當的程式庫、 清單或網站頁面。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每個工作完成後，請在 [輸出] 視窗中顯示狀態訊息。 如果無法完成工作，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]錯誤清單 視窗中顯示的錯誤訊息。  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每個工作完成後，請在 [輸出] 視窗中顯示狀態訊息。 如果無法完成工作，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]錯誤清單 視窗中顯示的錯誤訊息。  
   
 ## <a name="sharepoint-project-features"></a>SharePoint 專案功能
  功能是功能的可修改站台的簡化使用網站定義的可攜性和模組化單位。 它也是一個封裝的[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 項目，可以啟動的特定範圍，而且，可協助使用者完成特定目標或工作。 範本會部署為功能。  
@@ -128,8 +128,8 @@ ms.locfileid: "36327163"
 ## <a name="debug-workflows"></a>偵錯工作流程
  當您偵錯工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]至程式庫或清單加入工作流程範本 （取決於其型別）。 您可以接著啟動工作流程範本，以手動方式或藉由新增或更新項目。 您可以接著使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工作流程。  
   
-> [!NOTE]  
->  如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
+> [!NOTE]
+>  如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
  不過，部署程序無法啟動工作流程。 您必須從 SharePoint 網站啟動工作流程。 使用 Microsoft Office Word 2010 中，用戶端應用程式，或使用不同的伺服器端程式碼，您也可以啟動工作流程。 使用其中一種方法中指定**SharePoint 自訂精靈**。  
   

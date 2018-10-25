@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265638"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891761"
 ---
 # <a name="publishing-clickonce-applications"></a>發行 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ ms.locfileid: "49265638"
 ## <a name="publish-wizard"></a>發行精靈  
  您可以使用 [發行精靈] 來設定基本設定，以發行您的應用程式。 這包括以下的發行屬性：  
   
--   發行資料夾位置：Visual Studio 複製檔案 (本機電腦、網路檔案共用、FTP 伺服器或網站) 的位置  
+- 發行資料夾位置：Visual Studio 複製檔案 (本機電腦、網路檔案共用、FTP 伺服器或網站) 的位置  
   
--   安裝資料夾位置：使用者進行安裝的來源之處 (網路檔案共用、FTP 伺服器、網站、CD/DVD)  
+- 安裝資料夾位置：使用者進行安裝的來源之處 (網路檔案共用、FTP 伺服器、網站、CD/DVD)  
   
--   線上或離線可用性：使用者是否可以在有網路連線或在沒有網路連線的情況下，存取應用程式  
+- 線上或離線可用性：使用者是否可以在有網路連線或在沒有網路連線的情況下，存取應用程式  
   
--   更新頻率：應用程式查看是否新的更新之頻率。  
+- 更新頻率：應用程式查看是否新的更新之頻率。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="publish-page"></a>發行頁面  
  [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。 下表列出相關主題  

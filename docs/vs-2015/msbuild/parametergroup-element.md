@@ -22,12 +22,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef5f386841954aa1017a68ff335a33281f0cc02f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 190aa6067979863fdd1189fa11da5a2869975043
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843999"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

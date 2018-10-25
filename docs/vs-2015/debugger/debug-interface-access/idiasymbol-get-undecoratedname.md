@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bb086b101155b75b64e4d0acb8be49ef9e7d73d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b5a2d25452db4487855d6327239bc5b9eef276a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893087"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

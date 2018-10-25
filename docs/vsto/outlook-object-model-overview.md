@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941187"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、<xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
@@ -59,13 +59,13 @@ ms.locfileid: "40008264"
 ### <a name="application-object"></a>Application 物件  
  <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示 Outlook 應用程式，而且它是 Outlook 物件模型中的最上層物件。 這個物件中某些最重要的成員包括：  
   
--   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法，可用來建立新的項目，例如電子郵件訊息、 工作或約會。  
+- [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) 方法，您可用來建立電子郵件訊息、工作或約會等新項目。  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 屬性，您可用來存取在 Outlook 使用者介面 (UI) 中顯示資料夾內容的視窗。  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 屬性，您可用來存取在 Outlook 使用者介面 (UI) 中顯示資料夾內容的視窗。  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 屬性，您可用來存取顯示單一項目內容的視窗，例如電子郵件訊息或會議邀請。  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 屬性，您可用來存取顯示單一項目內容的視窗，例如電子郵件訊息或會議邀請。  
   
- 若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
+  若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
 > [!NOTE]  
 >  為了避免安全性警告，當您使用屬性和方法所封鎖的 Outlook 物件模型保護時，取得 Outlook 物件的 [應用程式] 欄位從`ThisAddIn`類別。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。  
@@ -88,7 +88,7 @@ ms.locfileid: "40008264"
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 物件的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector>。  
   
 -   使用特定項目 (例如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>) 的 `GetInspector` 方法來擷取與該項目相關聯的偵測器。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "40008264"
 ### <a name="taskitem-object"></a>TaskItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件表示要在指定的時間範圍內執行的工作。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件是位在 [工作]  資料夾中。  
   
- 若要建立工作時，使用[CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法<xref:Microsoft.Office.Interop.Outlook.Application>物件，並傳入值<xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem>參數。  
+ 若要建立工作，請使用 [物件的](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) CreateItem <xref:Microsoft.Office.Interop.Outlook.Application> 方法，並傳入 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 值做為參數。  
   
 ### <a name="contactitem-object"></a>ContactItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>物件表示中的連絡人**連絡人**資料夾。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 物件含有它們所表示之人員的各種連絡資訊，例如街道地址、電子郵件地址和電話號碼。  

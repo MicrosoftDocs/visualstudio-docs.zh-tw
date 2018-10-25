@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft 文件
+title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a49723bb585f65ce544c0508bf886d9daba5c6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec0aefd8f59793fdd555ff0cc14f767c10e8972a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829907"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
-決定指定的偵錯位址是序列點。  
+判斷指定的偵錯位址為序列點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int IsAddressSequencePoint(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]偵錯所代表的位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ [in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果偵錯位址是序列點，會傳回`S_OK`; 否則傳回`S_FALSE`。  
+ 如果偵錯位址都是序列點，會傳回`S_OK`; 否則傳回`S_FALSE`。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  

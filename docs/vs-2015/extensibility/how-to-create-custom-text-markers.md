@@ -15,58 +15,58 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885703"
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 建立自訂文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您想要建立自訂文字標記，以強調或組織程式碼，您必須採取下列步驟：  
   
--   註冊新文字標記中，讓其他工具可以存取它  
+- 註冊新文字標記中，讓其他工具可以存取它  
   
--   提供的預設實作和文字標記的組態  
+- 提供的預設實作和文字標記的組態  
   
--   建立可供其他處理序進行的服務使用的文字標記  
+- 建立可供其他處理序進行的服務使用的文字標記  
   
- 如需有關如何將文字標記的程式碼區域的詳細資訊，請參閱 <<c0> [ 如何： 使用文字標記](../extensibility/how-to-use-text-markers.md)。  
+  如需有關如何將文字標記的程式碼區域的詳細資訊，請參閱 <<c0> [ 如何： 使用文字標記](../extensibility/how-to-use-text-markers.md)。  
   
 ### <a name="to-register-a-custom-marker"></a>若要註冊自訂標記  
   
-1.  建立登錄項目，如下所示：  
+1. 建立登錄項目，如下所示：  
   
-     Hkey_local_machine\software\microsoft\visualstudio \\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID >*  
+    Hkey_local_machine\software\microsoft\visualstudio \\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >* 是`GUID`用來識別要加入標記  
+    <em>\<MarkerGUID ></em>是`GUID`用來識別要加入標記  
   
-     *\<版本 >* 是版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，例如 8.0  
+    *\<版本 >* 是版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，例如 8.0  
   
-     *\<PackageGUID >* VSPackage 實作的 automation 物件的 guid。  
+    *\<PackageGUID >* VSPackage 實作的 automation 物件的 guid。  
   
-    > [!NOTE]
-    >  Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+   > [!NOTE]
+   >  Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2.  建立四個值 hkey_local_machine\software\microsoft\visualstudio \ 底下\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID>*  
+2. 建立四個值 hkey_local_machine\software\microsoft\visualstudio \ 底下\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID>*  
   
-    -   (預設值)  
+   -   (預設值)  
   
-    -   服務  
+   -   服務  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Package  
+   -   Package  
   
-    -   `Default` 是選擇性的 REG_SZ 類型項目。 設定時，項目的值是字串，包含一些實用識別資訊，例如 「 自訂文字標記 」。  
+   -   `Default` 是選擇性的 REG_SZ 類型項目。 設定時，項目的值是字串，包含一些實用識別資訊，例如 「 自訂文字標記 」。  
   
-    -   `Service` 這 REG_SZ 類型的項目包含可提供自訂文字標記所 proffering 服務的 GUID 字串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+   -   `Service` 這 REG_SZ 類型的項目包含可提供自訂文字標記所 proffering 服務的 GUID 字串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
-    -   `DisplayName` 這 REG_SZ 類型的項目包含自訂文字標記名稱的資源識別碼。 格式為 #YYYY。  
+   -   `DisplayName` 這 REG_SZ 類型的項目包含自訂文字標記名稱的資源識別碼。 格式為 #YYYY。  
   
-    -   `Package` 型別 REG_SZ，其中的項目`GUID`服務底下所列的 VSPackage 提供服務。 格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+   -   `Package` 型別 REG_SZ，其中的項目`GUID`服務底下所列的 VSPackage 提供服務。 格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
 ### <a name="to-create-a-custom-text-marker"></a>若要建立自訂文字標記  
   

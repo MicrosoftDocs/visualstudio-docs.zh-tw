@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850421"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203667"
   
 #### <a name="to-execute-a-function-at-design-time"></a>在設計階段執行函式  
   
-1.  將下列程式碼複製到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 主控台應用程式中：  
+1. 將下列程式碼複製到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 主控台應用程式中：  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  在 [偵錯] 功能表上，按一下 [視窗]，然後按一下 [即時運算]。  
+2. 在 [偵錯] 功能表上，按一下 [視窗]，然後按一下 [即時運算]。  
   
-3.  在 [即時運算] 視窗中鍵入`?MyFunction(2)`，然後按 Enter。  
+3. 在 [即時運算] 視窗中鍵入`?MyFunction(2)`，然後按 Enter。  
   
-     [即時運算] 視窗將執行 `MyFunction`，並顯示 `4`。  
+    [即時運算] 視窗將執行 `MyFunction`，並顯示 `4`。  
   
- 如果函式或副程式含有中斷點，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱[逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)。  
+   如果函式或副程式含有中斷點，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱[逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)。  
   
- 您無法在必須啟動執行環境的專案類型中使用設計階段運算式評估，這些專案類型包括 [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 專案、Web 專案、智慧型裝置專案和 SQL 專案。  
+   您無法在必須啟動執行環境的專案類型中使用設計階段運算式評估，這些專案類型包括 [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 專案、Web 專案、智慧型裝置專案和 SQL 專案。  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>在多專案方案中的設計階段運算式評估  
  為設計階段運算式評估建立內容時，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會參考方案總管中目前選取的專案。 如果方案總管中未選取任何專案，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會嘗試針對啟始專案評估函式。 如果無法在目前內容中評估函式，就會收到錯誤訊息。 如果您試圖評估的函式不是在方案的啟始專案中，而且發生錯誤，請嘗試在方案總管中選取專案，然後重新評估一次。  

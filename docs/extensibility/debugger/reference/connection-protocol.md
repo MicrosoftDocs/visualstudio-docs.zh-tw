@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL |Microsoft 文件
+title: CONNECTION_PROTOCOL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832759"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-指出用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
+表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
   
 ## <a name="syntax"></a>語法  
   
@@ -56,25 +56,25 @@ public enum CONNECTION_PROTOCOL {
  沒有已連接到伺服器。  
   
  CONNECTION_UNKNOWN  
- 已建立連線，但它是未知的型別。  
+ 已建立的連接，但它是未知的類型。  
   
  CONNECTION_LOCAL  
  連接是在本機伺服器。  
   
  CONNECTION_PIPE  
- 連接是透過具名管道。  
+ 連線是透過具名管道。  
   
  CONNECTION_TCPIP  
- 連接會使用 TCP/IP。  
+ 連線使用 TCP/IP。  
   
  CONNECTION_HTTP  
  連線使用 HTTP （透過 Web 伺服器）。  
   
  CONNECTION_OTHER  
- 已建立其他類型的連線 （這個值目前未使用）。  
+ 已建立其他類型的連接 （這個值目前未使用）。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳回從[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。  
+ 會傳回這些值從[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

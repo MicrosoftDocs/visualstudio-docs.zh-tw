@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934674"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
   本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連線**中的節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -57,11 +57,11 @@ ms.locfileid: "42635264"
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您必須建立兩個專案：  
   
--   若要建立要部署的 VSIX 封裝 VSIX 專案**伺服器總管**延伸模組。  
+- 若要建立要部署的 VSIX 封裝 VSIX 專案**伺服器總管**延伸模組。  
   
--   實作的類別庫專案**伺服器總管**延伸模組。  
+- 實作的類別庫專案**伺服器總管**延伸模組。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isaggregated |Microsoft 文件'
+title: 'Idiasymbol:: Get_isaggregated |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed27b239595034b55b66dfe71c261bb9f721371
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e74c6f465676b916954141679406b00b9787347
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941486"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-擷取指定資料符號是否為彙總或集合的符號; 的部分旗標編譯器會視為不同的實體的彙總的符號，但它們其實是一個較大符號的一部分。  
+擷取指定資料符號是否為彙總或符號; 集合的一部分的旗標編譯器會視為個別的實體的彙總的符號，但它們其實是單一的較大符號的一部分。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,23 +34,23 @@ HRESULT get_isAggregated(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]傳回`TRUE`如果資料屬於彙總的符號分割自父符號; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`如果資料是從父符號; 分割符號的彙總的一部分，否則傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- [Idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)方法`TRUE`符號之父系的彙總的符號。  
+ [Idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)方法是`TRUE`父系的彙總的符號的符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|版本:|DIA SDK 8.0 版|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

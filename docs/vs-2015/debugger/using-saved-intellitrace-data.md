@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929487"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ ms.locfileid: "49279093"
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>使用 SharePoint 相互關聯識別碼開始偵錯  
   
-1.  從來源複製 SharePoint 相互關聯識別碼。  
+1. 從來源複製 SharePoint 相互關聯識別碼。  
   
-     例如:   
+    例如:   
   
-     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  開啟 .iTrace 檔案，然後移至 [分析]  並輸入 SharePoint 相互關聯識別碼，以檢閱相符的 Web 要求和所記錄的事件。  
+2. 開啟 .iTrace 檔案，然後移至 [分析]  並輸入 SharePoint 相互關聯識別碼，以檢閱相符的 Web 要求和所記錄的事件。  
   
-     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。  
+3. 在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。  
   
-    1.  選擇要查看其詳細資料的事件。  
+   1. 選擇要查看其詳細資料的事件。  
   
-    2.  選擇 [開始偵錯]  以開始在發生事件的位置點上進行偵錯。  
+   2. 選擇 [開始偵錯]  以開始在發生事件的位置點上進行偵錯。  
   
-     ![IntelliTrace 記錄檔&#45;檢視 web 要求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace 記錄檔&#45;檢視 web 要求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- 您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：  
+   您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：  
   
 -   **使用者設定檔事件**  
   
@@ -204,28 +204,28 @@ ms.locfileid: "49279093"
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>從未處理的例外狀況開始偵錯  
   
-1.  選取例外狀況的 SharePoint 相互關聯識別碼。 例外狀況是依類型和呼叫堆疊來分組的。  
+1. 選取例外狀況的 SharePoint 相互關聯識別碼。 例外狀況是依類型和呼叫堆疊來分組的。  
   
-2.  (選擇性) 展開 [呼叫堆疊]  以查看例外狀況群組的呼叫堆疊。  
+2. (選擇性) 展開 [呼叫堆疊]  以查看例外狀況群組的呼叫堆疊。  
   
-3.  選擇 [偵錯例外狀況]  開始在發生例外狀況的位置及時間點上進行偵錯。  
+3. 選擇 [偵錯例外狀況]  開始在發生例外狀況的位置及時間點上進行偵錯。  
   
-     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- 如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+   如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ###  <a name="ThreadsList"></a> 執行緒清單  
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>若要從特定執行緒開始偵錯  
   
-1.  在 [執行緒清單] 底下，選擇執行緒。  
+1. 在 [執行緒清單] 底下，選擇執行緒。  
   
-2.  在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。  
+2. 在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。  
   
-     若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
- 使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。  
+   使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。  
   
 |**資料行**|**顯示的內容**|  
 |----------------|-------------------|  

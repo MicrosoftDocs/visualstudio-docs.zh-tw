@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent |Microsoft 文件
+title: IDebugEngine2::ContinueFromSynchronousEvent |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305179184df1241b6d944ea78e164c09af37923f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43589e4fd5a75c5c1cd7681dde4a3957f3fe4243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837512"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-工作階段的偵錯管理員 (SDM) 表示同步偵錯事件，先前傳送到 SDM，偵錯引擎 (DE) 已接收並處理呼叫。  
+工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,13 +44,13 @@ HRESULT ContinueFromSynchronousEvent(
  [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- DE 必須驗證它所代表事件的來源`pEvent`參數。  
+ DE 必須確認它已由事件來源的`pEvent`參數。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CEngine`實作物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
   
 ```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  

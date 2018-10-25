@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject |Microsoft 文件
+title: IPropertyProxyEESide::InPlaceUpdateObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf62b75fb421cdfb6ad323fbdd12958f93991254
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed69657823ac5e3ae821304aa6ffdbee55f39a70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847613"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用指定的資料物件更新物件的資料，並傳回新的資料物件，表示物件的新資料。  
@@ -43,20 +43,20 @@ int InPlaceUpdateObject(
   
 #### <a name="parameters"></a>參數  
  `dataIn`  
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含新的資料。  
+ [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，包含新的資料。  
   
  `dataOut`  
  [out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法實際上會更新物件的資料。 在傳回的資料[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件就不需要會在傳入的資料相同`IEEDataStorage`物件，但傳回的物件必須反映屬性的目前值。  
+ 這個方法實際上會更新物件的資料。 在傳回的資料[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件不需要在傳入的資料相同`IEEDataStorage`物件，但傳回的物件必須反映屬性的目前值。  
   
- 通常由 EE 不實作內送的資料物件。 不過，這個方法所傳回的物件一律由 EE，它可讓 EE 實作`IEEDataStorage`上想要使用任何類別的介面。  
+ 連入的資料物件通常不會實作由 EE。 不過，這個方法所傳回的物件一律藉由 EE，它可讓 EE 實作`IEEDataStorage`上想要使用任何類別的介面。  
   
- [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)方法建立根據連入的資料物件的資料物件，但不會影響屬性的原始資料。  
+ [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)方法會建立內送的資料物件為基礎的資料物件，但不會影響屬性的原始資料。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

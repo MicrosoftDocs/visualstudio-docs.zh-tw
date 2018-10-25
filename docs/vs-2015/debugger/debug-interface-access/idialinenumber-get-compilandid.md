@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a27c3d0ad1cdeddcc22415f4754b6d94c8b73bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5cf2db4a000c435464258dea71ed97f4a9ea8d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813566"
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

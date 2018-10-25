@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893819"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>鎖定值  
  鎖定可以設定存放區、 磁碟分割，或個別的 ModelElement。 鎖定是`Flags`列舉型別： 您可以結合使用其值 '&#124;'。  
   
--   鎖定的 ModelElement 永遠會包含其資料分割的鎖定。  
+- 鎖定的 ModelElement 永遠會包含其資料分割的鎖定。  
   
--   鎖定資料分割一律會包含存放區的鎖定。  
+- 鎖定資料分割一律會包含存放區的鎖定。  
   
- 您無法在磁碟分割上設定鎖定或儲存，並同時停用個別的項目上的鎖定。  
+  您無法在磁碟分割上設定鎖定或儲存，並同時停用個別的項目上的鎖定。  
   
 |值|這表示如果`IsLocked(Value)`為 true|  
 |-----------|------------------------------------------|  

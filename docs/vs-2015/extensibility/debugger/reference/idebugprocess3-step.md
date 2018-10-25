@@ -17,12 +17,12 @@ ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7deafc4c21d02b7ea65576c6986d1bc0c44d550
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ffdbe9994c3799057440d3b6e4995df5d96d71c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888602"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

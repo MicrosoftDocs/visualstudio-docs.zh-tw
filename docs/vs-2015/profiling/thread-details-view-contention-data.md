@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5a46f5d63e817a38808b0c48be75f750a4e2bc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865137"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "49275531"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼  
   
--   在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
+- 在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
   
- 該函式的原始程式碼必須是目前專案的一部分。  
+  該函式的原始程式碼必須是目前專案的一部分。  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>檢視程式碼剖析執行時所有執行緒中的資源爭用事件  
   

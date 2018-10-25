@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923364"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +32,25 @@ ms.locfileid: "49239131"
   
  以下是目前可供使用的 .NET Framework 版本：  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (隨附於 Visual Studio 2005)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (隨附於 Visual Studio 2005)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (隨附於 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (隨附於 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (隨附於 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (隨附於 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (隨附於 Visual Studio 2010)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (隨附於 Visual Studio 2010)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (隨附於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (隨附於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (隨附於 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (隨附於 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (隨附於 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (隨附於 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
- 組件清單中每一個組件所參考的 .NET Framework 版本各自不同。 例如，除非您專案是以 .NET Framework 3.0 (含) 以上版本為目標，否則您無法建置 Windows Presentation Foundation (WPF) 應用程式。  
+  組件清單中每一個組件所參考的 .NET Framework 版本各自不同。 例如，除非您專案是以 .NET Framework 3.0 (含) 以上版本為目標，否則您無法建置 Windows Presentation Foundation (WPF) 應用程式。  
   
- 目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.0`、`v4.5`、`v4.5.1`、`v4.5.2` 和 `v4.6`。  
+  目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.0`、`v4.5`、`v4.5.1`、`v4.5.2` 和 `v4.6`。  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -68,11 +68,11 @@ ms.locfileid: "49239131"
 ## <a name="target-platform"></a>目標平台  
  「平台」是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的  
   
--   `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。  
+- `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。  
   
--   `Xbox` 指定 Microsoft Xbox 360 平台。  
+- `Xbox` 指定 Microsoft Xbox 360 平台。  
   
- 「目標平台」是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `Platform` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員] 來變更目標平台。  
+  「目標平台」是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `Platform` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員] 來變更目標平台。  
   
 ```  
 <PropertyGroup>  

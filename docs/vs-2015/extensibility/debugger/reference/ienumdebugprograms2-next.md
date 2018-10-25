@@ -17,12 +17,12 @@ ms.assetid: 9120e263-e97c-4a40-ab2c-e9264ce3d6c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 921965a9e761ffbc890467a8a25e4650471b82eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebd15f410ff37121d4ecca5b929660fc56f1f037
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934427"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

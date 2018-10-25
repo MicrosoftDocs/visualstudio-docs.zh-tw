@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824278"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ ms.locfileid: "49204304"
 ## <a name="prerequisites"></a>必要條件  
  若要建立應用程式，您需要：  
   
--   Visual Studio Community 版本。  
+- Visual Studio Community 版本。  
   
--   SQL Server Express LocalDB。  
+- SQL Server Express LocalDB。  
   
--   您依照下列中的步驟建立的小型範例資料庫[使用指令碼中建立 SQL database](../data-tools/create-a-sql-database-by-using-a-script.md)。  
+- 您依照下列中的步驟建立的小型範例資料庫[使用指令碼中建立 SQL database](../data-tools/create-a-sql-database-by-using-a-script.md)。  
   
--   您設定之後的資料庫連接字串。 您可以找到此值，藉由開啟**SQL Server 物件總管**，開啟資料庫的捷徑功能表，選取**屬性**，然後捲動至**ConnectionString**屬性。  
+- 您設定之後的資料庫連接字串。 您可以找到此值，藉由開啟**SQL Server 物件總管**，開啟資料庫的捷徑功能表，選取**屬性**，然後捲動至**ConnectionString**屬性。  
   
- 本主題假設您熟悉 Visual Studio IDE 的基本功能，且可以建立 Windows Form 應用程式、將表單加入至該專案、將按鈕和其他控制項放置在這些表單上、設定這些控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)再開始本主題。  
+  本主題假設您熟悉 Visual Studio IDE 的基本功能，且可以建立 Windows Form 應用程式、將表單加入至該專案、將按鈕和其他控制項放置在這些表單上、設定這些控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)再開始本主題。  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> 設定範例資料庫  
  本逐步解說的範例資料庫包含 Customer 和 Orders 資料表。 資料表一開始不包含任何資料，但是當您執行建立的應用程式時，您會加入資料。 此資料庫也會有五個簡單的預存程序。 [使用指令碼中建立 SQL database](../data-tools/create-a-sql-database-by-using-a-script.md)包含建立資料表、 主要與外部索引鍵、 條件約束和預存程序的 TRANSACT-SQL 指令碼。  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> 建立表單，並加入控制項  
   
-1.  建立 Windows Forms 應用程式的專案，並命名它 SimpleDataApp。  
+1. 建立 Windows Forms 應用程式的專案，並命名它 SimpleDataApp。  
   
-     Visual Studio 會建立專案和數個檔案，包括名為 Form1 的空白 Windows Form。  
+    Visual Studio 會建立專案和數個檔案，包括名為 Form1 的空白 Windows Form。  
   
-2.  將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：  
+2. 將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：  
   
-    -   巡覽  
+   -   巡覽  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。  
+3. 為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。  
   
-    > [!NOTE]
-    >  加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。  
+   > [!NOTE]
+   >  加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。  
   
- **瀏覽表單**  
+   **瀏覽表單**  
   
- ![瀏覽對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![瀏覽對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |瀏覽表單的控制項|屬性|  
 |--------------------------------------|----------------|  

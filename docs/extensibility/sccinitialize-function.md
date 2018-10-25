@@ -1,5 +1,5 @@
 ---
-title: SccInitialize 函式 |Microsoft 文件
+title: SccInitialize 函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 136978a6d1dc19a414079ba424ebcd5d50f6840a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934570"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
-此函式初始化原始檔控制外掛程式，並提供整合式的開發環境 (IDE) 的限制及功能。  
+此函式會初始化原始檔控制外掛程式，並提供功能和整合式的開發環境 (IDE) 的限制。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,49 +42,49 @@ SCCRTN SccInitialize (
   
 #### <a name="parameters"></a>參數  
  `ppvContext`  
- [in]原始檔控制外掛程式可以在這裡放其內容結構的指標。  
+ [in]原始檔控制外掛程式可以在此放置其內容結構的指標。  
   
  `hWnd`  
- [in]原始檔控制外掛程式之任何它所提供的對話方塊，可以使用為父代 IDE 視窗的控制代碼。  
+ [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
   
  `lpCallerName`  
- [in]程式呼叫的原始檔控制外掛程式的名稱。  
+ [in]呼叫的原始檔控制外掛程式的程式名稱。  
   
  `lpSccName`  
- [in、 out]緩衝區的原始檔控制外掛程式，將自己的名稱 (不到超過`SCC_NAME_LEN`)。  
+ [in、 out]緩衝區的原始檔控制外掛程式，將自己的名稱 (不能超過`SCC_NAME_LEN`)。  
   
  `lpSccCaps`  
- [out]傳回的原始檔控制外掛程式功能旗標。  
+ [out]傳回原始檔控制外掛程式功能旗標。  
   
  `lpAuxPathLabel`  
- [in、 out]原始檔控制外掛程式，將描述的字串緩衝區`lpAuxProjPath`所傳回的參數[SccOpenProject](../extensibility/sccopenproject-function.md)和[SccGetProjPath](../extensibility/sccgetprojpath-function.md) (不到超過`SCC_AUXLABEL_LEN`)。  
+ [in、 out]原始檔控制外掛程式的字串，描述的放置位置的緩衝區`lpAuxProjPath`所傳回的參數[SccOpenProject](../extensibility/sccopenproject-function.md)並[SccGetProjPath](../extensibility/sccgetprojpath-function.md) (不能超過`SCC_AUXLABEL_LEN`)。  
   
  `pnCheckoutCommentLen`  
- [out]傳回簽出註解的最大允許長度。  
+ [out]傳回所允許的最大長度，簽出註解。  
   
  `pnCommentLen`  
  [out]傳回其他註解的最大允許長度。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
 |值|描述|  
 |-----------|-----------------|  
 |SCC_OK|原始檔控制初始化成功。|  
 |SCC_E_INITIALIZEFAILED|系統無法初始化。|  
 |SCC_E_NOTAUTHORIZED|不允許使用者執行指定的作業。|  
-|SCC_E_NONSPECFICERROR|不明確的失敗。未初始化原始檔控制系統。|  
+|SCC_E_NONSPECFICERROR|不明確的失敗;未初始化原始檔控制系統。|  
   
 ## <a name="remarks"></a>備註  
- 在第一次載入原始檔控制外掛程式時，IDE 會呼叫此函式。 它可讓 IDE 來傳遞特定資訊，例如，呼叫端的名稱、 的外掛程式。 IDE 也會取得回特定資訊，例如註解和功能的隨插即用單元的最大容許長度。  
+ 第一次載入原始檔控制外掛程式時，IDE 就會呼叫此函式。 它可讓 IDE 傳遞特定資訊，例如，呼叫者的名稱、 給外掛程式。 IDE 也會取得回特定的資訊，例如註解及隨插即用中的功能的允許長度上限。  
   
- `ppvContext`指向`NULL`指標。 原始檔控制外掛程式可以配置供其使用的結構，並儲存在該結構的指標`ppvContext`。 IDE 會將這個指標傳遞至每個其他 VSSCI API 函式允許外掛程式有可用的內容資訊，而不必全域儲存體，並支援多個外掛程式執行個體。 此結構應該取消配置時[SccUninitialize](../extensibility/sccuninitialize-function.md)呼叫。  
+ `ppvContext`指向`NULL`指標。 原始檔控制外掛程式可以配置供自身使用的結構，並將儲存在該結構的指標`ppvContext`。 IDE 會將這個指標傳遞至每個其他 VSSCI API 函式允許外掛程式有可用的內容資訊而不需使用全域儲存體，並支援多個外掛程式執行個體。 此結構應該要解除配置時[SccUninitialize](../extensibility/sccuninitialize-function.md)呼叫。  
   
- `lpCallerName`和`lpSccName`參數可讓在 IDE 和原始檔控制外掛程式交換名稱。 這些名稱可能只用來區別多個執行個體，或它們可能實際上會出現在功能表或對話方塊。  
+ `lpCallerName`和`lpSccName`參數可讓 IDE，以及原始檔控制外掛程式交換名稱。 這些名稱可用來區別多個執行個體，或它們可能會實際顯示在功能表或對話方塊。  
   
- `lpAuxPathLabel`參數是以註解用來識別儲存的方案檔，並傳遞至原始檔控制外掛程式的呼叫中的輔助專案路徑的字串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 會使用字串"SourceSafe 專案:";其他原始檔控制外掛程式應該避免使用這個特定的字串。  
+ `lpAuxPathLabel`參數是字串，用為註解來識別儲存在方案檔，並傳遞至原始檔控制外掛程式的呼叫中的輔助專案路徑[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 會使用字串"SourceSafe 專案:";其他原始檔控制外掛程式應該避免使用這個特定的字串。  
   
- `lpSccCaps`參數可讓原始檔控制外掛程式位置以儲存位元旗標，指出 「 隨插即用單元的功能。 (如需完整的功能位元旗標清單，請參閱[功能旗標](../extensibility/capability-flags.md))。 比方說，如果將結果寫入到呼叫端提供的回呼函式，此外掛程式會設定功能的外掛程式計劃位元 SCC_CAP_TEXTOUT。 這會通知 IDE 來建立版本控制結果的視窗。  
+ `lpSccCaps`參數可讓原始檔控制外掛程式位置以儲存位元旗標，指出隨插即用中的功能。 (如功能位元旗標完整清單，請參閱[功能旗標](../extensibility/capability-flags.md))。 比方說，如果外掛程式的計劃，將結果寫入至呼叫端提供的回呼函式，外掛程式會設定此功能，將位元 SCC_CAP_TEXTOUT。 這會指示 IDE 建立版本控制結果的視窗。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

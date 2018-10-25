@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87087a2087591b01170b82c0335e4bbffc579cc2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 369a2aa92c47c4db7b1036097ffb49f6d8de8a14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895414"
 ---
 # <a name="send-events"></a>傳送事件
 偵錯工具與偵錯引擎 (DE) 之間的通訊機制是 DCOM 所根據的事件模型。 事件會傳送為 COM 物件，且每個事件具有指定的參數：  
   
--   呼叫事件 DE。  
+- 呼叫事件 DE。  
   
--   描述發生什麼事。  
+- 描述發生什麼事。  
   
--   處理程序、 方案，以及識別發生事件的內容的執行緒資訊。 此程序不會傳送規定所傳來的事件。  
+- 處理程序、 方案，以及識別發生事件的內容的執行緒資訊。 此程序不會傳送規定所傳來的事件。  
   
--   事件類型，指出事件是否為同步或非同步。  
+- 事件類型，指出事件是否為同步或非同步。  
   
- 使用方法傳送所有的偵錯事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
+  使用方法傳送所有的偵錯事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [事件來源](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

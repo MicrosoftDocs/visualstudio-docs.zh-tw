@@ -16,12 +16,12 @@ ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 982fafb1449c5b8aaac85a73f08f4f82bdf1683a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0411fb03fc158641ee5d3f16b05d97f287157be3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924209"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

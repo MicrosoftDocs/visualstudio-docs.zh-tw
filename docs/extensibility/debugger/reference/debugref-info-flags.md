@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS |Microsoft 文件
+title: DEBUGREF_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858559"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 指定要擷取偵錯參考物件的相關資訊。  
@@ -58,38 +58,38 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
 ## <a name="members"></a>成員  
  DEBUGREF_INFO_NAME  
- 初始化/使用`bstrName`結構中的欄位。  
+ 初始化/使用`bstrName`欄位在結構中。  
   
  DEBUGREF_INFO_TYPE  
- 初始化/使用`bstrType`結構中的欄位。  
+ 初始化/使用`bstrType`欄位在結構中。  
   
  DEBUGREF_INFO_VALUE  
- 初始化/使用`bstrValue`結構中的欄位。  
+ 初始化/使用`bstrValue`欄位在結構中。  
   
  DEBUGREF_INFO_ATTRIB  
- 初始化/使用`dwAttrib`結構中的欄位。  
+ 初始化/使用`dwAttrib`欄位在結構中。  
   
  DEBUGREF_INFO_REFTYPE  
- 初始化/使用`dwRefType`結構中的欄位。  
+ 初始化/使用`dwRefType`欄位在結構中。  
   
  DEBUGREF_INFO_REF  
- 初始化/使用`pReference`結構中的欄位。  
+ 初始化/使用`pReference`欄位在結構中。  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- [值] 欄位應包含自動展開值，如果有的話，這種類型的物件。  
+ [值] 欄位應該包含自動展開值，如果有的話，這種類型的物件。  
   
  DEBUGREF_INFO_NONE  
- 表示已設定任何旗標。  
+ 表示會設定任何旗標。  
   
  DEBUGREF_INFO_ALL  
  表示旗標的遮罩。  
   
 ## <a name="remarks"></a>備註  
- 這些旗標會傳遞至[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)和[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法以指出哪些欄位的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構會進行初始化。  
+ 這些旗標會傳遞給[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)並[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法以指出哪些欄位[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構會進行初始化。  
   
- 用於`dwFields`隸屬`DEBUG_REFERENCE_INFO`結構，以指出哪些欄位時，會使用並有效會傳回這個結構。  
+ 用於`dwFields`隸屬`DEBUG_REFERENCE_INFO`表示哪些欄位是使用和有效時，會傳回這個結構的結構。  
   
- 這些值可能會合併使用位元`OR`。  
+ 這些值可能會合併的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

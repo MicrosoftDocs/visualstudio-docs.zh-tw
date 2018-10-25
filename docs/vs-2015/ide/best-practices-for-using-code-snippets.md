@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919906"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49241308"
 ## <a name="security"></a>安全性  
  程式碼片段的安全程度會視其在原始程式碼中的使用位置，以及位於程式碼之後的修改方式而定。 下列清單包含一些必須考量的部分。  
   
--   檔案和資料庫存取  
+- 檔案和資料庫存取  
   
--   程式碼存取安全性  
+- 程式碼存取安全性  
   
--   保護資源 (例如事件記錄檔、登錄)  
+- 保護資源 (例如事件記錄檔、登錄)  
   
--   儲存密碼  
+- 儲存密碼  
   
--   驗證輸入  
+- 驗證輸入  
   
--   將資料傳遞至指令碼技術  
+- 將資料傳遞至指令碼技術  
   
- 如需詳細資訊，請參閱[設定應用程式的安全性](../ide/securing-applications.md)。  
+  如需詳細資訊，請參閱[設定應用程式的安全性](../ide/securing-applications.md)。  
   
 ## <a name="downloaded-code-snippets"></a>已下載的程式碼片段  
  Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性方面的危險。 不過，這些程式碼片段在您的應用程式中可能會產生安全性風險。 從網際網路下載的程式碼片段應視為任何其他下載的內容，因此必須格外謹慎處理。  

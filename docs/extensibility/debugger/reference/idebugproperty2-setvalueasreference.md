@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference |Microsoft 文件
+title: IDebugProperty2::SetValueAsReference |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f8d871e6193835b51336a48355fde78fe95e103
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f31ba2bff7effce91232fd7e5cfc6f96afd9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833859"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 設定這個屬性的值，指定參考的值。  
@@ -47,25 +47,25 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>參數  
  `rgpArgs`  
- [in]傳遞至 managed 程式碼屬性 setter 引數的陣列。 如果屬性 setter 不接受引數，或如果此[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件不是指這類屬性 setter`rgpArgs`應為 null 的值。 此參數通常是 null 值。  
+ [in]要傳遞至 managed 程式碼屬性 setter 的引數陣列。 如果屬性 setter 不採用引數，或如果這個[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這類屬性 setter 中，未參考物件`rgpArgs`應為 null 的值。 此參數通常為 null 值。  
   
  `dwArgCount`  
  [in]中的引數數目`rgpArgs`陣列。  
   
  `pValue`  
- [in]中的表單的參考， [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，用來設定這個屬性的值。  
+ [in]參考，形式[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，用來設定這個屬性的值。  
   
  `dwTimeout`  
- [in]設定值，以毫秒為單位的時間長度。 一般的值是`INFINITE`。 這會影響任何可能評估需要花費的時間的長度。  
+ [in]取得值，設定以毫秒為單位的時間長度。 一般的值是`INFINITE`。 這會影響任何可評估需要花費的時間的長度。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則會傳回錯誤，程式碼，通常是下列其中之一：  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤程式碼，通常是下列其中之一：  
   
 |錯誤|描述|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|不支援的值設定的參考。|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|無法設定值，因為這個屬性會參考給方法。|  
-|`E_SETVALUE_VALUE_IS_READONLY`|值是唯讀，且無法設定。|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|不支援從參考中設定的值。|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|無法設定值，因為這個屬性所參考的方法。|  
+|`E_SETVALUE_VALUE_IS_READONLY`|值是唯讀的且無法設定。|  
 |`E_NOTIMPL`|未實作方法。|  
   
 ## <a name="see-also"></a>另請參閱  

@@ -15,12 +15,12 @@ ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0fb0c76c24a787b04b673d016e223714de29d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e3f63b0afffb833fdc59bf39ac5214ccc799e0f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865046"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>備註  
  有三種不同的方式偵錯工具可以繼續執行停止後的執行：  
   
--   執行： 取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。  
+- 執行： 取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。  
   
--   步驟： 取消任何舊的步驟，並執行，直到新的步驟會完成。  
+- 步驟： 取消任何舊的步驟，並執行，直到新的步驟會完成。  
   
--   繼續： 再次執行，並讓任何舊的步驟保持在作用中。  
+- 繼續： 再次執行，並讓任何舊的步驟保持在作用中。  
   
- 執行緒傳遞給`ExecuteOnThread`決定哪個步驟來取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 了解的執行緒，您只需要取消作用中執行緒上的步驟。  
+  執行緒傳遞給`ExecuteOnThread`決定哪個步驟來取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 了解的執行緒，您只需要取消作用中執行緒上的步驟。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   

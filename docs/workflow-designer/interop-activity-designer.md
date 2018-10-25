@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849355"
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 
@@ -46,7 +46,7 @@ C# 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中
 下表顯示<xref:System.Activities.Statements.Interop>屬性，並描述在設計工具的使用方式。 這些屬性可以在屬性方格中或在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活動的易記名稱。 預設值是**Interop**。 雖然顯示名稱不是必要的建議您為其提供。|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活動所包含之活動的活動型別。 指定的型別必須衍生自 <xref:System.Workflow.ComponentModel.Activity>。|
 
