@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852852"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ ms.locfileid: "49179487"
   
  不過，如果使用者叫用復原或取消復原，或正在復原交易，可能也呼叫 Set 方法。 當<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>為 true，Set 方法的行為，如下所示：  
   
--   它不應該存放區，例如將值指派給其他網域內容中進行變更。 復原管理員會設定它們的值。  
+- 它不應該存放區，例如將值指派給其他網域內容中進行變更。 復原管理員會設定它們的值。  
   
--   不過，它應該更新任何外部的資源，例如資料庫或檔案內容或市集外的物件。 如此可確保它們會保留在 synchronism 存放區中的值。  
+- 不過，它應該更新任何外部的資源，例如資料庫或檔案內容或市集外的物件。 如此可確保它們會保留在 synchronism 存放區中的值。  
   
- 例如:   
+  例如:   
   
 ```  
 void SetAgeValue(int value)  

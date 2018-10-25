@@ -17,12 +17,12 @@ ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01b67d902c963eababcf34a577c95f8b397344fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684b8bc0deccb4d463347670c986ee9104c564b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842049"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

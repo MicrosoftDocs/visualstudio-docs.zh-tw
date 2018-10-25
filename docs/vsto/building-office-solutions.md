@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847574"
 ---
 # <a name="build-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯，並在 Visual Studio 建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
@@ -64,23 +64,23 @@ ms.locfileid: "35671498"
 ### <a name="application-level-projects"></a>應用程式層級專案  
  當您建置 VSTO 增益集專案時，專案輸出會包含下列項目：  
   
--   其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。  
+- 其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。  
   
--   應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
+- 應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
--   部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。  
+- 部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。  
   
--   程式資料庫 (*PDB*) 為專案的組件的檔案。  
+- 程式資料庫 (*PDB*) 為專案的組件的檔案。  
   
- VSTO 增益集專案的建置程序也會在需要載入 VSTO 增益集的開發電腦上建立一組登錄項目。 如需詳細資訊，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
+  VSTO 增益集專案的建置程序也會在需要載入 VSTO 增益集的開發電腦上建立一組登錄項目。 如需詳細資訊，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
- 如果您建置了包含表單區域的 Outlook VSTO 增益集專案，建置程序會在登錄中加入以下額外的資訊：  
+  如果您建置了包含表單區域的 Outlook VSTO 增益集專案，建置程序會在登錄中加入以下額外的資訊：  
   
--   與一個或多個表單區域關聯之每個訊息類別的索引鍵。  
+- 與一個或多個表單區域關聯之每個訊息類別的索引鍵。  
   
--   每個表單區域的項目，以及代表 Outlook VSTO 增益集名稱的關聯值。  
+- 每個表單區域的項目，以及代表 Outlook VSTO 增益集名稱的關聯值。  
   
- Outlook 需要這項資訊載入表單區域。  
+  Outlook 需要這項資訊載入表單區域。  
   
 ## <a name="referenced-assemblies"></a>參考的組件  
  您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機] 的屬性。 [複製到本機] 指出組件是否要複製到輸出目錄。 根據預設，此屬性設定為 **true**。 每個將 [複製到本機]  設為 **true** 的參考組件都會複製到輸出目錄。  

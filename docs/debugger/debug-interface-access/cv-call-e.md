@@ -1,5 +1,5 @@
 ---
-title: CV_call_e |Microsoft 文件
+title: CV_call_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851105"
 ---
 # <a name="cvcalle"></a>CV_call_e
-指定的函式的呼叫慣例。  
+指定函式的呼叫慣例。  
   
 > [!NOTE]
->  只有最常見的列舉值記載於此。 Cvconst.h 標頭檔中可完整列舉。  
+>  只有最常見的列舉值記載於此。 完整的列舉型別適用於 cvconst.h 標頭檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,25 +42,25 @@ typedef enum CV_call_e {
   
 ## <a name="elements"></a>項目  
  CV_CALL_NEAR_C  
- 指定使用 near 由右至左推入函式呼叫慣例。 呼叫的函式會清除堆疊。  
+ 指定使用幾近的由右至左推入的函式呼叫慣例。 呼叫的函式會清除堆疊。  
   
  CV_CALL_NEAR_FAST  
- 指定暫存器中使用 near 左到右推入函式呼叫慣例。 呼叫的函式會清除堆疊使用參數的位元組總數。  
+ 指定暫存器搭配使用幾近的左到右推播函式呼叫慣例。 呼叫的函式會清除堆疊中使用參數的位元組總數。  
   
  CV_CALL_NEAR_STD  
- 指定使用 near 標準呼叫 （由右至左推入） 的函式呼叫慣例。  
+ 指定使用近乎標準呼叫 （由右至左推入） 的函式呼叫慣例。  
   
  CV_CALL_NEAR_SYS  
- 指定使用附近的系統呼叫的函式呼叫慣例。  
+ 指定使用幾近的系統呼叫的函式呼叫慣例。  
   
  CV_CALL_THISCALL  
- 指定的函式呼叫慣例 using`this`呼叫 (`this`暫存器中傳遞指標)。  
+ 指定使用函式呼叫慣例`this`呼叫 (`this`暫存器中傳遞的指標)。  
   
  CV_CALL_CLRCALL  
- 指定使用的 Common Language Runtime (CLR) （也稱為 managed 程式碼呼叫慣例） 函式呼叫慣例。  
+ 指定使用的 Common Language Runtime (CLR) （也稱為 managed 程式碼呼叫慣例） 的函式呼叫慣例。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回透過呼叫[idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)方法。  
+ 這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

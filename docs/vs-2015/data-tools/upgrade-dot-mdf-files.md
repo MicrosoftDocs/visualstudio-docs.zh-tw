@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3a684a4c07379021b9b5c625a20a3f715e572d8c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812630"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49298112"
   
 本主題說明在您安裝新版的 Visual Studio 之後，升級您的資料庫檔案 (.mdf) 的選項。 它包含下列工作的指示：  
   
--   升級使用較新版的 SQL Server Express LocalDB 資料庫檔案  
+- 升級使用較新版的 SQL Server Express LocalDB 資料庫檔案  
   
--   升級使用較新版本的 SQL Server Express 資料庫檔案  
+- 升級使用較新版本的 SQL Server Express 資料庫檔案  
   
--   使用 Visual Studio 中的資料庫檔案，但會保留與較舊版本的 SQL Server Express 或 LocalDB 的相容性  
+- 使用 Visual Studio 中的資料庫檔案，但會保留與較舊版本的 SQL Server Express 或 LocalDB 的相容性  
   
--   讓 SQL Server Express 的預設資料庫引擎  
+- 讓 SQL Server Express 的預設資料庫引擎  
   
- 您可以使用 Visual Studio 中開啟專案，其中包含使用較舊版本的 SQL Server Express 或 LocalDB 所建立的資料庫檔案 (.mdf)。 不過，若要繼續開發您的專案在 Visual Studio 中，您必須擁有 SQL Server Express 或 LocalDB 與 Visual Studio 中，相同的電腦上安裝該版本，或您必須先升級資料庫檔案。 如果您升級資料庫檔案時，您將無法存取使用舊版的 SQL Server Express 或 LocalDB。  
+  您可以使用 Visual Studio 中開啟專案，其中包含使用較舊版本的 SQL Server Express 或 LocalDB 所建立的資料庫檔案 (.mdf)。 不過，若要繼續開發您的專案在 Visual Studio 中，您必須擁有 SQL Server Express 或 LocalDB 與 Visual Studio 中，相同的電腦上安裝該版本，或您必須先升級資料庫檔案。 如果您升級資料庫檔案時，您將無法存取使用舊版的 SQL Server Express 或 LocalDB。  
   
- 您可能也會提示您升級資料庫檔案，如果檔案的版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，透過 SQL Server Express 或 LocalDB 的較早版本所建立的。 若要解決此問題，Visual Studio 會提示您升級的檔案。  
+  您可能也會提示您升級資料庫檔案，如果檔案的版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，透過 SQL Server Express 或 LocalDB 的較早版本所建立的。 若要解決此問題，Visual Studio 會提示您升級的檔案。  
   
 > [!IMPORTANT]
 >  我們建議您在升級之前先備份資料庫檔案。  
@@ -70,39 +70,39 @@ ms.locfileid: "49298112"
   
 ### <a name="to-upgrade-a-database-file"></a>若要升級的資料庫檔案  
   
-1.  在 [**伺服器總管**，選取**連接到資料庫**] 按鈕。  
+1. 在 [**伺服器總管**，選取**連接到資料庫**] 按鈕。  
   
-2.  在 **加入連接**對話方塊方塊中，指定下列資訊：  
+2. 在 **加入連接**對話方塊方塊中，指定下列資訊：  
   
-    -   **資料來源**: `Microsoft SQL Server (SqlClient)`  
+   -   **資料來源**: `Microsoft SQL Server (SqlClient)`  
   
-    -   **伺服器名稱**:  
+   -   **伺服器名稱**:  
   
-        -   若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。  
+       -   若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。  
   
-        -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。  
+       -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。  
   
-    -   **附加資料庫檔案**： 於主要.mdf 檔案的實體路徑。  
+   -   **附加資料庫檔案**： 於主要.mdf 檔案的實體路徑。  
   
-    -   **邏輯名稱**： 您想要使用與檔案的名稱。  
+   -   **邏輯名稱**： 您想要使用與檔案的名稱。  
   
-3.  選取 [確定] 按鈕。  
+3. 選取 [確定] 按鈕。  
   
-4.  當系統提示您時，選取**是**升級檔 按鈕。  
+4. 當系統提示您時，選取**是**升級檔 按鈕。  
   
- 資料庫會升級、 附加至 LocalDB 資料庫引擎，且不再與較舊的 LocalDB 版本相容。  
+   資料庫會升級、 附加至 LocalDB 資料庫引擎，且不再與較舊的 LocalDB 版本相容。  
   
- 您也可以修改 SQL Server Express 要使用的連線 LocalDB 開啟連接的捷徑功能表，然後選取**修改連接**。 在 **修改連接**對話方塊方塊中，變更伺服器名稱以`(LocalDB)\MSSQLLocalDB`。 在 **進階屬性**對話方塊方塊中，請確定**使用者執行個體**設定為**False**。  
+   您也可以修改 SQL Server Express 要使用的連線 LocalDB 開啟連接的捷徑功能表，然後選取**修改連接**。 在 **修改連接**對話方塊方塊中，變更伺服器名稱以`(LocalDB)\MSSQLLocalDB`。 在 **進階屬性**對話方塊方塊中，請確定**使用者執行個體**設定為**False**。  
   
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>若要升級至較新版本的 SQL Server Express  
   
-1.  在資料庫連接的捷徑功能表，選取**修改連接**。  
+1. 在資料庫連接的捷徑功能表，選取**修改連接**。  
   
-2.  在 [**修改連接**對話方塊中，選取**進階**] 按鈕。  
+2. 在 [**修改連接**對話方塊中，選取**進階**] 按鈕。  
   
-3.  在 **進階屬性**對話方塊中，選取**確定**按鈕不會變更伺服器名稱。  
+3. 在 **進階屬性**對話方塊中，選取**確定**按鈕不會變更伺服器名稱。  
   
- 資料庫檔案會升級到符合目前的 SQL Server Express 版本。  
+   資料庫檔案會升級到符合目前的 SQL Server Express 版本。  
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>若要使用 Visual Studio 中的資料庫，但保留與 SQL Server Express 的相容性  
   
@@ -114,15 +114,15 @@ ms.locfileid: "49298112"
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>若要讓 SQL Server Express 的預設資料庫引擎  
   
-1.  在功能表列上選取**工具** > **選項**。  
+1. 在功能表列上選取**工具** > **選項**。  
   
-2.  在 **選項**對話方塊方塊中，展開**Data Tools**選項，然後再選取**資料連接**節點。  
+2. 在 **選項**對話方塊方塊中，展開**Data Tools**選項，然後再選取**資料連接**節點。  
   
-3.  在  **SQL Server 執行個體名稱**文字中，指定的 SQL Server Express 或您想要使用的 LocalDB 執行個體的名稱。 如果不名為執行個體，指定`.\SQLEXPRESS or (localdb)\MSSQLLocalDB`。  
+3. 在  **SQL Server 執行個體名稱**文字中，指定的 SQL Server Express 或您想要使用的 LocalDB 執行個體的名稱。 如果不名為執行個體，指定`.\SQLEXPRESS or (localdb)\MSSQLLocalDB`。  
   
-4.  選取 [確定] 按鈕。  
+4. 選取 [確定] 按鈕。  
   
- SQL Server Express，將會是您的應用程式的預設資料庫引擎。  
+   SQL Server Express，將會是您的應用程式的預設資料庫引擎。  
   
 ## <a name="see-also"></a>另請參閱  
  [本機資料概觀](../data-tools/local-data-overview.md)   

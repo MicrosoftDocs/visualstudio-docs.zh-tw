@@ -18,12 +18,12 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 278d7b723bde187fc765c610bd8bc470bb2b2059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823568"
 ---
 # <a name="adding-command-line-switches"></a>新增命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ ms.locfileid: "49188738"
 ## <a name="retrieving-command-line-switches"></a>擷取命令列參數  
  當載入封裝時，您可以藉由完成下列步驟來擷取命令列參數。  
   
-1.  在您的 VSPackage 中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作中，呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>介面。  
+1. 在您的 VSPackage 中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作中，呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>介面。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>擷取使用者輸入的命令列參數。  
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>擷取使用者輸入的命令列參數。  
   
- 下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者：  
+   下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者：  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

@@ -17,12 +17,12 @@ ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ccfcba3936c1a4c4cbac1f80e24fbc8caf6c38f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8230c2653bea56f9325abed8a54460c14590a99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852657"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

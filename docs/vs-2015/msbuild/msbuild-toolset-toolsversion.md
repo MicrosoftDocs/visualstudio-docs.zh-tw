@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851825"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 ## <a name="toolset-implementation"></a>工具組實作  
  選取組成工具組的各種工具、目標和工作的路徑，即可實作工具組。 MSBuild 所定義之工具組中的工具來自下列來源：  
   
--   .NET Framework 資料夾。  
+- .NET Framework 資料夾。  
   
--   其他 Managed 工具。  
+- 其他 Managed 工具。  
   
- Managed 工具包括 ResGen.exe 和 TlbImp.exe。  
+  Managed 工具包括 ResGen.exe 和 TlbImp.exe。  
   
- MSBuild 會提供兩種方法來存取工具組：  
+  MSBuild 會提供兩種方法來存取工具組：  
   
--   透過使用工具組屬性  
+- 透過使用工具組屬性  
   
--   透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
+- 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
   
- 工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼，來設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
+  工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼，來設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
   
- 以下為工具組屬性：  
+  以下為工具組屬性：  
   
--   `MSBuildToolsPath` 會指定 MSBuild 二進位檔的路徑。  
+- `MSBuildToolsPath` 會指定 MSBuild 二進位檔的路徑。  
   
--   `SDK40ToolsPath` 會指定 MSBuild 4.x (可能是 4.0 或 4.5) 之其他 Managed 工具的路徑。  
+- `SDK40ToolsPath` 會指定 MSBuild 4.x (可能是 4.0 或 4.5) 之其他 Managed 工具的路徑。  
   
--   `SDK35ToolsPath` 會指定 MSBuild 3.5 之其他 Managed 工具的路徑。  
+- `SDK35ToolsPath` 會指定 MSBuild 3.5 之其他 Managed 工具的路徑。  
   
- 或者，您可以呼叫 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 類別的方法，即可以程式設計方式判定工具組。 該類別包括下列方法：  
+  或者，您可以呼叫 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 類別的方法，即可以程式設計方式判定工具組。 該類別包括下列方法：  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 會傳回 .NET Framework 資料夾的路徑。  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 會傳回 .NET Framework 資料夾的路徑。  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> 會傳回 .NET Framework 資料夾中檔案的路徑。  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> 會傳回 .NET Framework 資料夾中檔案的路徑。  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> 會傳回 Managed 工具資料夾的路徑。  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> 會傳回 Managed 工具資料夾的路徑。  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 會傳回通常位於 Managed 工具資料夾中的檔案路徑。  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 會傳回通常位於 Managed 工具資料夾中的檔案路徑。  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 會傳回建置工具的路徑。  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 會傳回建置工具的路徑。  
   
 ### <a name="sub-toolsets"></a>子工具組  
  如本主題先前所述，MSBuild 會使用登錄機碼指定基本工具的路徑。 如果機碼具有子機碼，MSBuild 會使用它指定包含其他工具之子工具組的路徑。 在此情況下，該工具組的定義方式為組合在兩個機碼中定義的屬性定義。  
@@ -107,19 +107,19 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
  如果 `VisualStudioVersion` 建置屬性存在，子工具組會變為使用中。 此屬性會採用下列其中一個值：  
   
--   "10.0" 會指定 .NET Framework 4 子工具組  
+- "10.0" 會指定 .NET Framework 4 子工具組  
   
--   "11.0" 會指定 .NET Framework 4.5 子工具組  
+- "11.0" 會指定 .NET Framework 4.5 子工具組  
   
--   "12.0" 會指定 .NET Framework 4.5.1 子工具組  
+- "12.0" 會指定 .NET Framework 4.5.1 子工具組  
   
- 子工具組 10.0 和 11.0 應該與 ToolsVersion 4.0 搭配使用。 在更新的版本中，子工具組版本應該與 ToolsVersion 相符。  
+  子工具組 10.0 和 11.0 應該與 ToolsVersion 4.0 搭配使用。 在更新的版本中，子工具組版本應該與 ToolsVersion 相符。  
   
- 在建置期間，MSBuild 會自動判定並設定 `VisualStudioVersion` 屬性的預設值 (如果尚未定義的話)。  
+  在建置期間，MSBuild 會自動判定並設定 `VisualStudioVersion` 屬性的預設值 (如果尚未定義的話)。  
   
- MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `VisualStudioVersion` 列舉值做為參數  
+  MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `VisualStudioVersion` 列舉值做為參數  
   
- 子工具組已引進 .NET Framework 4.5。  
+  子工具組已引進 .NET Framework 4.5。  
   
 ## <a name="see-also"></a>另請參閱  
  [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)   

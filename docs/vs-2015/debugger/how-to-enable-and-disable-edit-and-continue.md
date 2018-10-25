@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856700"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：啟用和停用編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ ms.locfileid: "49212815"
   
 #### <a name="to-enabledisable-edit-and-continue"></a>若要啟用/停用編輯後繼續   
   
-1.  開啟偵錯的 [選項] 頁面 (**工具 / 選項 / 偵錯**)。  
+1. 開啟偵錯的 [選項] 頁面 (**工具 / 選項 / 偵錯**)。  
   
-2.  向下捲動至**編輯後繼續**類別目錄。  
+2. 向下捲動至**編輯後繼續**類別目錄。  
   
-3.  若要啟用，請選取**啟用編輯後繼續**核取方塊。 若要停用，請清除該核取方塊。  
+3. 若要啟用，請選取**啟用編輯後繼續**核取方塊。 若要停用，請清除該核取方塊。  
   
-    > [!NOTE]
-    >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+   > [!NOTE]
+   >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定 **Deploying Office Solutions**]。  
   
- 如需這些選項的詳細資訊，請參閱[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+   如需這些選項的詳細資訊，請參閱[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)

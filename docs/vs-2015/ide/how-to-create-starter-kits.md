@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857402"
 ---
 # <a name="how-to-create-starter-kits"></a>如何：建立入門套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "49243382"
   
  如果您要建立範例應用程式或外掛程式：  
   
--   建立可建置而不發生錯誤的專案。  
+- 建立可建置而不發生錯誤的專案。  
   
--   新增範本程式碼來實作其他工作 (選擇性)。  
+- 新增範本程式碼來實作其他工作 (選擇性)。  
   
--   準備文件。  
+- 準備文件。  
   
- 如果您要建立學習工具：  
+  如果您要建立學習工具：  
   
--   建立可建置而不發生錯誤的專案。  
+- 建立可建置而不發生錯誤的專案。  
   
--   組織資源 (例如程式碼片段和項目範本)。  
+- 組織資源 (例如程式碼片段和項目範本)。  
   
--   準備文件。  
+- 準備文件。  
   
 ## <a name="creating-a-template"></a>建立範本  
  在您完成專案和文件之後，就已準備好建立入門套件的專案範本。 此程序與建立專案範本完全相同。  

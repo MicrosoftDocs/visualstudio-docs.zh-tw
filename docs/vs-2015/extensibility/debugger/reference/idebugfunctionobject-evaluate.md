@@ -17,12 +17,12 @@ ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd4f6247c03c805dccede59fc8f9952082118b84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3eafb749a71c7dc9e6163bd60a8c5c4d2396de32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835802"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

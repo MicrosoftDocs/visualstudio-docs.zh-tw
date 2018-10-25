@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be9d4e0e251d0e84627b04ccdd5bd4842d2a0e8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c5894eaf321204ace98a55a3d08411d61207ff7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857558"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 
@@ -32,7 +32,7 @@ ms.locfileid: "45546859"
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -181,5 +181,4 @@ public class Person
         return person;
     }
 }
-
 ```

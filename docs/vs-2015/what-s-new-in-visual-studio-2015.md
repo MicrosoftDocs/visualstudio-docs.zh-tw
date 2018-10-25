@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828737"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ ms.locfileid: "49226162"
 ## <a name="connect-to-services"></a>連接至服務  
  Visual Studio 2015 讓您的應用程式比過去更容易連接至服務。  新的 [加入已連接服務精靈] 可設定您的專案、加入必要的驗證支援，並下載必要的 NuGet 套件，以協助您快速順利地開始編寫服務的程式碼。 [加入已連接服務精靈] 也與新的帳戶管理員整合，因此更容易使用多個使用者帳戶和訂用帳戶。 在 Visual Studio 2015 中，對下列服務提供現成的支援 (假設您擁有帳戶)：  
   
-1.  Azure 行動服務  
+1. Azure 行動服務  
   
-2.  Azure 儲存體  
+2. Azure 儲存體  
   
-3.  Office 365 (郵件、連絡人、行事曆、檔案、使用者及群組)  
+3. Office 365 (郵件、連絡人、行事曆、檔案、使用者及群組)  
   
-4.  銷售力  
+4. 銷售力  
   
- 我們將持續加入新服務，您也可以按一下精靈中的 [尋找新服務連結] 探索這些服務。  
+   我們將持續加入新服務，您也可以按一下精靈中的 [尋找新服務連結] 探索這些服務。  
   
- ![加入已連接的服務 對話方塊](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![加入已連接的服務 對話方塊](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>設計您的 UI  
  設計 XAML 使用者介面的 Blend 體驗已大幅改進。 Blend 已完全重新設計，提供更直覺的 UI、含 IntelliSense 等更強大的 XAML 編輯功能，以及與 Visual Studio 更佳的整合。 如需詳細資訊，請參閱 < [Visual Studio 和 Blend for Visual Studio 中設計的 XAML](./designers/designing-xaml-in-visual-studio.md)。  
@@ -188,19 +188,19 @@ ms.locfileid: "49226162"
   
  在 Visual Studio Professional 和 Visual Studio Professional 中，您現在可以：  
   
--   取得 Visual Studio 編輯器中整個程式碼檔案的歷程記錄。  
+- 取得 Visual Studio 編輯器中整個程式碼檔案的歷程記錄。  
   
-     ![CodeLens：取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens：取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。  
+- 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。  
   
-     ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")  
   
--   輕鬆地查看上次變更程式碼的時間。  
+- 輕鬆地查看上次變更程式碼的時間。  
   
--   尋找影響您程式碼之其他分支的變更。  
+- 尋找影響您程式碼之其他分支的變更。  
   
- 請參閱 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
+  請參閱 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>設計和模型工具 (僅限 Enterprise 版本)  
  **Code map 和相依性圖形**  
@@ -213,35 +213,35 @@ ms.locfileid: "49226162"
   
  其他改進還包括：  
   
--   **改進由上而下的圖表**。 針對中大型 Visual Studio 方案，您現在可以使用簡化的 [架構] 功能表，取得對方案更實用的 Code Map。 方案的組件會依方案資料夾分組，因此您可以在內容中查看，並且利用之前建構方案的辛勞成果。 您會立即看到專案和組件參考，並接著顯示連結類型。 此外，方案的外部組件也會以更精簡的方式分組。  
+- **改進由上而下的圖表**。 針對中大型 Visual Studio 方案，您現在可以使用簡化的 [架構] 功能表，取得對方案更實用的 Code Map。 方案的組件會依方案資料夾分組，因此您可以在內容中查看，並且利用之前建構方案的辛勞成果。 您會立即看到專案和組件參考，並接著顯示連結類型。 此外，方案的外部組件也會以更精簡的方式分組。  
   
--   **測試專案已有不同的樣式並可篩選**。 由於對應上的測試專案具有不同的樣式，因此您現在可以更輕鬆快速地識別這些專案。 您也可以篩選專案，以專注於應用程式的使用中程式碼。  
+- **測試專案已有不同的樣式並可篩選**。 由於對應上的測試專案具有不同的樣式，因此您現在可以更輕鬆快速地識別這些專案。 您也可以篩選專案，以專注於應用程式的使用中程式碼。  
   
--   **簡化外部相依性連結**。 相依性連結不再繼承自 System.Object、System.ValueType、System.Enum 和 System.Delegate，因此您可以在 Code Map 中更輕鬆地查看外部相依性。  
+- **簡化外部相依性連結**。 相依性連結不再繼承自 System.Object、System.ValueType、System.Enum 和 System.Delegate，因此您可以在 Code Map 中更輕鬆地查看外部相依性。  
   
--   **「向內切入相依性連結」會將篩選納入考量**。 當您展開以了解相依性連結的比重時，可以獲得一目暸然的實用圖表。 這個圖表較整齊，也會將您所選取的連結篩選選項列入考量。  
+- **「向內切入相依性連結」會將篩選納入考量**。 當您展開以了解相依性連結的比重時，可以獲得一目暸然的實用圖表。 這個圖表較整齊，也會將您所選取的連結篩選選項列入考量。  
   
--   **程式碼項目會連同其內容加入 Code Map**。 由於圖表現在會連同其內容一起顯示 (最上層為可視需要篩選出的組件和方案資料夾)，因此當您從方案總管、類別檢視、物件瀏覽器拖放程式碼項目時，或者在方案總管中選取項目並選擇 [在 Code Map 上顯示] 時，您會獲得更實用的圖表。  
+- **程式碼項目會連同其內容加入 Code Map**。 由於圖表現在會連同其內容一起顯示 (最上層為可視需要篩選出的組件和方案資料夾)，因此當您從方案總管、類別檢視、物件瀏覽器拖放程式碼項目時，或者在方案總管中選取項目並選擇 [在 Code Map 上顯示] 時，您會獲得更實用的圖表。  
   
--   **更快取得反應靈敏的 Code Map**。 拖放作業會產生立即結果，並且可更快速地建立節點之間的連結，而不會影響後續使用者啟動的作業 (例如展開節點或要求更多節點)。 當您在不建置方案的情況下建立 Code Map 時，現在會處理所有極端案例 (例如未建置組件時)。  
+- **更快取得反應靈敏的 Code Map**。 拖放作業會產生立即結果，並且可更快速地建立節點之間的連結，而不會影響後續使用者啟動的作業 (例如展開節點或要求更多節點)。 當您在不建置方案的情況下建立 Code Map 時，現在會處理所有極端案例 (例如未建置組件時)。  
   
--   **略過重建方案。** 在建立及編輯圖表時提升效能。  
+- **略過重建方案。** 在建立及編輯圖表時提升效能。  
   
--   **篩選程式碼項目節點和群組**。 您可以根據程式碼項目的類別來顯示或隱藏程式碼項目，也可以依照方案資料夾、組件、命名空間、專案資料夾和類型分組程式碼項目，以快速地整理對應。  
+- **篩選程式碼項目節點和群組**。 您可以根據程式碼項目的類別來顯示或隱藏程式碼項目，也可以依照方案資料夾、組件、命名空間、專案資料夾和類型分組程式碼項目，以快速地整理對應。  
   
--   **篩選關聯性以更容易閱讀圖表**。 連結篩選現在也適用於跨群組連結，因此使用篩選視窗的干擾比舊版更低。  
+- **篩選關聯性以更容易閱讀圖表**。 連結篩選現在也適用於跨群組連結，因此使用篩選視窗的干擾比舊版更低。  
   
--   **從類別檢視和物件瀏覽器建立圖表**。 將檔案和組件從類別檢視和物件瀏覽器拖放到新的或現有的對應中。  
+- **從類別檢視和物件瀏覽器建立圖表**。 將檔案和組件從類別檢視和物件瀏覽器拖放到新的或現有的對應中。  
   
- 請參閱 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
+  請參閱 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
   
- **在此版本中其他設計和模型變更：**  
+  **在此版本中其他設計和模型變更：**  
   
--   **分層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。  
+- **分層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。  
   
--   **UML 圖表**。 您已無法再從程式碼建立 UML 類別圖和循序圖。 但您還是可以使用新的 UML 元素來建立這些圖表。  
+- **UML 圖表**。 您已無法再從程式碼建立 UML 類別圖和循序圖。 但您還是可以使用新的 UML 元素來建立這些圖表。  
   
--   **架構總管**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。  
+- **架構總管**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 擴充性工具  
  現在，您可以更輕鬆地安裝 Visual Studio 擴充性工具 (VS SDK 和範本)，因為這些工具已在安裝期間隨附為選用的元件。  擴充性工具可讓開發人員撰寫擴充功能，以自訂功能並將其加入 Visual Studio。 如需 Visual Studio 擴充性的詳細資訊，請參閱 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)。  

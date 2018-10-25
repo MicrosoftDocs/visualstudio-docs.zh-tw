@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878761"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含下列功能，可協助強化 SharePoint 應用程式的安全性。
@@ -34,7 +34,7 @@ ms.locfileid: "42626129"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 屬性
  根據預設，只有完全受信任的執行階段程式碼存取安全性 (CAS) 系統的應用程式可以存取的共用 managed 程式碼組件。 標記具有 AllowPartiallyTrustedCallers 屬性的完全信任組件可讓部分信任組件存取它。
 
- AllowPartiallyTrustedCallers 屬性加入至任何未部署到系統全域組件快取的 SharePoint 方案 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 這包括沙箱化方案或方案部署到 SharePoint 應用程式 Bin 目錄。 如需詳細資訊，請參閱 <<c0> [ 適用於 Microsoft.NET Framework 的版本 1 的安全性變更](http://go.microsoft.com/fwlink/?LinkId=177515)並[部署 SharePoint Foundation 中的 Web 組件](http://go.microsoft.com/fwlink/?LinkId=177509)。
+ AllowPartiallyTrustedCallers 屬性加入至任何未部署到系統全域組件快取的 SharePoint 方案 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 這包括沙箱化方案或方案部署到 SharePoint 應用程式 Bin 目錄。 如需詳細資訊，請參閱 <<c0> [ 適用於 Microsoft.NET Framework 的版本 1 的安全性變更](http://go.microsoft.com/fwlink/?LinkId=177515)並[部署 SharePoint Foundation 中的 Web 組件](http://go.microsoft.com/fwlink/?LinkId=177509)。
 
 ## <a name="safe-against-script-property"></a>針對指令碼屬性的安全
  *指令碼資料隱碼攻擊*是各控制項或 Web 網頁上的潛在惡意程式碼插入。 為了協助保護 SharePoint 2010 網站對指令碼資料隱碼攻擊，參與者無法檢視或編輯 預設的 Web 組件或其屬性。 此行為是由稱為 SafeAgainstScript 的 SafeControl 屬性控制。 在  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將這個屬性設定中的專案項目**安全控制項項目**子屬性**防止指令碼**。 如需詳細資訊，請參閱 <<c0> [ 提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)並[如何： 將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md)。

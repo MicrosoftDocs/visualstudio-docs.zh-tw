@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839761"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何： 從主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：  
   
-1.  以控制項中修改的資料更新記憶體內部資料來源。 一般而言，記憶體內部資料來源是 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或其他一些資料物件。  
+1. 以控制項中修改的資料更新記憶體內部資料來源。 一般而言，記憶體內部資料來源是 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或其他一些資料物件。  
   
-2.  以記憶體內部資料來源中變更的資料更新資料庫。 只有在資料來源已連接到 SQL Server 或 Microsoft Office Access 資料庫等後端資料庫時才適用。  
+2. 以記憶體內部資料來源中變更的資料更新資料庫。 只有在資料來源已連接到 SQL Server 或 Microsoft Office Access 資料庫等後端資料庫時才適用。  
   
- 如需有關主控制項和資料繫結的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)並[將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+   如需有關主控制項和資料繫結的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)並[將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>更新記憶體中的資料來源  
  根據預設，啟用簡單資料繫結的主控制項 (Word 文件上的內容控制項或 Excel 工作表上的具名範圍控制項)，不會將資料變更儲存至記憶體內部資料來源。 也就是說，當使用者變更主控制項中的值，並接著移動離開該控制項時，這個控制項中的新值並不會自動儲存至資料來源。  
@@ -57,16 +57,16 @@ ms.locfileid: "35671691"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>使用程式碼將控制項設定為自動更新記憶體內部資料來源  
   
-1.  使用的 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 模式<xref:System.Windows.Forms.Binding>控制項繫結至資料來源的物件。 您可以使用兩種選項來更新資料來源：  
+1. 使用的 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 模式<xref:System.Windows.Forms.Binding>控制項繫結至資料來源的物件。 您可以使用兩種選項來更新資料來源：  
   
-    -   若要驗證控制項時更新資料來源，請將這個屬性設 System.Windows.Forms.DataSourceUpdateMode.OnValidation。  
+   - 若要驗證控制項時更新資料來源，請將這個屬性設 System.Windows.Forms.DataSourceUpdateMode.OnValidation。  
   
-    -   若要更新資料來源，控制項的資料繫結屬性值變更時，請將這個屬性設 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。  
+   - 若要更新資料來源，控制項的資料繫結屬性值變更時，請將這個屬性設 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。  
   
-        > [!NOTE]  
-        >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 選項不適用於 Word 主控制項，，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。  
+     > [!NOTE]  
+     >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 選項不適用於 Word 主控制項，，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。  
   
-     下列範例會將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項設定為只要控制項中的值一變更就自動更新資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。  
+     下列範例會將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項設定為只要控制項中的值一變更就自動更新資料來源。 這個範例假設您有名為 `namedRange1` 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync |Microsoft 文件
+title: IDebugExpression2::EvaluateSync |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864604"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-這個方法會以同步方式評估運算式。  
+這個方法會以同步方式評估的運算式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,30 +47,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>參數  
  `dwFlags`  
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉。  
+ [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。  
   
  `dwTimeout`  
- [in]最大時間 （毫秒），從這個方法返回之前等候。 使用`INFINITE`無限期地等待。  
+ [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。  
   
  `pExprCallback`  
- [in]這個參數一律是 null 值。  
+ [in]此參數一律為 null 值。  
   
  `ppResult`  
  [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，其中包含的運算式評估結果。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 一些典型的錯誤碼為：  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 一些典型的錯誤碼為：  
   
 |錯誤|描述|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時運算式評估。|  
-|E_EVALUATE_TIMEOUT|評估已逾時。|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時的運算式評估。|  
+|E_EVALUATE_TIMEOUT|評估逾時。|  
   
 ## <a name="remarks"></a>備註  
- 對於同步評估，則不需要回到 Visual Studio，評估完成時傳送事件。  
+ 為了同步評估，不需要回到 Visual Studio，評估完成時傳送事件。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CExpression`實作物件[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CExpression`實作的物件[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面。  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
