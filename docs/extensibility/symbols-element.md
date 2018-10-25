@@ -1,5 +1,5 @@
 ---
-title: 符號項目 |Microsoft 文件
+title: 符號項目 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87e9159e1e392ff242407b105589f4f33341b45b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856727"
 ---
-# <a name="symbols-element"></a>符號的項目
-會定義 Guid 和其他 VSCT 項目所使用的識別碼。 對於 unmanaged 程式碼，這項資訊通常是由所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼使用的符號項目來定義這項資訊的子元素。  
+# <a name="symbols-element"></a>Symbols 項目
+定義 Guid 和 Id，可供其他 VSCT 項目。 Unmanaged 程式碼，這項資訊通常來自所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼會使用項目的子項目符號來定義這項資訊。  
   
- 如果您從現有的.cto 檔建立.vsct 檔，將會以符號項目的子系產生符號。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。  
+ 如果您從現有的.cto 檔建立.vsct 檔，就會產生符號做為符號項目的子系。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。  
   
- 符號的項目不應與混淆[定義項目](../extensibility/define-element.md)，而後者可定義前置處理器所使用的名稱 / 值組。  
+ Symbols 元素不應該與混淆[定義的項目](../extensibility/define-element.md)，其定義前置處理器所使用的名稱 / 值組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,12 +46,12 @@ ms.locfileid: "31142772"
 |---------------|-----------------|  
 |無||  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|GuidSymbol|會定義 GUID 符號。 GuidSymbol 具有兩個必要的屬性： 名稱和值。 名稱的符號名稱，且此值為 GUID 字串形式的值。<br /><br /> 例如：\<GuidSymbol 名稱 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
-|IDSymbol|定義符號。 IDSymbol 具有兩個必要的屬性： 名稱和值。 名稱的符號名稱，且此值為字串形式的符號值。<br /><br /> 例如：\<IDSymbol 名稱 ="MyMenuGroup"value ="0x1020"/ >|  
+|GuidSymbol|定義 GUID 符號。 GuidSymbol 有兩個必要的屬性： 名稱和值。 名稱為的符號名稱，值為 GUID 做為字串值。<br /><br /> 例如：\<GuidSymbol 名稱 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
+|IDSymbol|定義符號。 IDSymbol 有兩個必要的屬性： 名稱和值。 名稱為符號，名稱和值是字串形式的符號值。<br /><br /> 例如：\<IDSymbol 名稱 ="MyMenuGroup"value ="0x1020"/ >|  
   
 ### <a name="parent-elements"></a>父項目  
   

@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870155"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 開啟編輯器開啟的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49215991"
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>若要開啟專案特定的編輯器開啟的檔案  
   
-1.  呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> 方法。  
+1. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> 方法。  
   
-     此呼叫會傳回指標的文件階層、 階層項目，以及視窗框架中，如果適用的話。  
+    此呼叫會傳回指標的文件階層、 階層項目，以及視窗框架中，如果適用的話。  
   
-2.  如果文件開啟時，專案必須檢查是否只有文件資料物件存在，或如果文件檢視物件也會出現。  
+2. 如果文件開啟時，專案必須檢查是否只有文件資料物件存在，或如果文件檢視物件也會出現。  
   
-    -   如果文件檢視物件存在，此檢視會針對不同的階層或階層項目，專案會使用檢視的視窗框架指標 resurface 現有的視窗。  
+   - 如果文件檢視物件存在，此檢視會針對不同的階層或階層項目，專案會使用檢視的視窗框架指標 resurface 現有的視窗。  
   
-    -   如果文件檢視物件存在，此檢視位於相同的階層和階層項目，專案可以開啟第二個檢視，如果它可以附加至基礎的文件資料物件。 否則，專案也應該使用檢視的視窗框架的指標，來 resurface 現有的視窗。  
+   - 如果文件檢視物件存在，此檢視位於相同的階層和階層項目，專案可以開啟第二個檢視，如果它可以附加至基礎的文件資料物件。 否則，專案也應該使用檢視的視窗框架的指標，來 resurface 現有的視窗。  
   
-    -   如果只有文件資料物件存在時，專案應該判斷是否可以使用其檢視文件資料物件。 如果相容的文件資料物件，完成步驟所述[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。  
+   - 如果只有文件資料物件存在時，專案應該判斷是否可以使用其檢視文件資料物件。 如果相容的文件資料物件，完成步驟所述[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。  
   
      如果文件資料物件不相容，應該會顯示錯誤，指出檔案正在使用中的使用者。 這個錯誤應該只在暫時的情況下，顯示，例如使用者正在同時編譯檔案時嘗試開啟檔案，而不使用編輯器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心文字編輯器。 核心文字編輯器可以分享編譯器的文件資料物件。  
   
-3.  如果文件不是開啟的因為沒有任何文件資料物件或文件檢視物件，完成中的步驟[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。  
+3. 如果文件不是開啟的因為沒有任何文件資料物件或文件檢視物件，完成中的步驟[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。  
   
 ## <a name="opening-a-standard-editor"></a>開啟標準編輯器  
  使用下列程序，若要開啟的檔案已存在的標準編輯器開啟。  

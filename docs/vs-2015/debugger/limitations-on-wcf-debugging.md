@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888092"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用三種方式開始對 WCF 服務進行偵錯：  
   
--   您要對呼叫服務的用戶端處理序進行偵錯。 偵錯工具會逐步執行服務。 服務不需要與用戶端應用程式位於相同的方案內。  
+- 您要對呼叫服務的用戶端處理序進行偵錯。 偵錯工具會逐步執行服務。 服務不需要與用戶端應用程式位於相同的方案內。  
   
--   您要對要求服務的用戶端處理序進行偵錯。 服務必須是方案的一部分。  
+- 您要對要求服務的用戶端處理序進行偵錯。 服務必須是方案的一部分。  
   
--   您使用**附加至處理序**附加至目前執行的服務。 偵錯會從服務內部開始進行。  
+- 您使用**附加至處理序**附加至目前執行的服務。 偵錯會從服務內部開始進行。  
   
- 本主題將描述這些情節的限制。  
+  本主題將描述這些情節的限制。  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>逐步執行服務的限制  
  若要從您要進行偵錯的用戶端應用程式逐步執行服務，則必須符合下列條件：  

@@ -15,12 +15,12 @@ ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf335154763a0a5020ce7088b3d3cb4d42e9f0e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 57912d5e2cb564cab4c26d6d6360a16111d82aa8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815881"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

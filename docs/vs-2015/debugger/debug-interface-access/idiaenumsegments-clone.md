@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e51f4f73df7c096a2a11d678dc3eda03f89feada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54fc6aff415b0a8c7cc53622bbd911e0f3e7f8e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885658"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

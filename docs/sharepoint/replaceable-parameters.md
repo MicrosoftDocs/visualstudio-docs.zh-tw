@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879294"
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](/visualstudio/ide/template-parameters)。  
@@ -34,17 +34,17 @@ ms.locfileid: "37118795"
 ## <a name="token-rules"></a>語彙基元的規則
  下列規則適用於語彙基元：  
   
--   語彙基元可以指定行中的任何位置。  
+- 語彙基元可以指定行中的任何位置。  
   
--   權杖不能跨越多行。  
+- 權杖不能跨越多行。  
   
--   在同一行，並在相同的檔案，可能會多次指定相同的語彙基元。  
+- 在同一行，並在相同的檔案，可能會多次指定相同的語彙基元。  
   
--   可在同一行上指定不同的語彙基元。  
+- 可在同一行上指定不同的語彙基元。  
   
- 不遵守這些規則的語彙基元會忽略，而且不會導致警告或錯誤。  
+  不遵守這些規則的語彙基元會忽略，而且不會導致警告或錯誤。  
   
- 取代為字串值的語彙基元是資訊清單的轉換後立即完成。 這項取代可讓使用者編輯與權杖的資訊清單範本。  
+  取代為字串值的語彙基元是資訊清單的轉換後立即完成。 這項取代可讓使用者編輯與權杖的資訊清單範本。  
   
 ### <a name="token-name-resolution"></a>語彙基元的名稱解析
  在大部分情況下，權杖會解析為不論其中會包含特定值。 不過，如果權杖與封裝或功能時，權杖的值會取決於包含它。 例如，如果一項功能在封裝，則語彙基元`$SharePoint.Package.Name$`值解析為 「 套件 a。 」 如果相同的功能是在封裝 B，則`$SharePoint.Package.Name$`會解析成 「 套件 B 」  
@@ -75,19 +75,19 @@ ms.locfileid: "37118795"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>語彙基元取代檔案延伸模組清單中加入延伸模組
  雖然權杖理論上可供 SharePoint 專案項目包含在封裝中，根據預設，屬於任何檔案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]搜尋在封裝檔案，資訊清單檔案，並具有下列副檔名的檔案中的權杖：  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   Web 組件  
+- Web 組件  
   
--   DWP  
+- DWP  
   
- 這些擴充功能由定義`<TokenReplacementFileExtensions>`項目在 Microsoft.VisualStudio.SharePoint.targets 檔案中，位於...\\< 程式檔案\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 資料夾。  
+  這些擴充功能由定義`<TokenReplacementFileExtensions>`項目在 Microsoft.VisualStudio.SharePoint.targets 檔案中，位於...\\< 程式檔案\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 資料夾。  
   
- 不過，您可以將其他副檔名加入清單。 新增`<TokenReplacementFileExtensions>`之前會定義 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。  
+  不過，您可以將其他副檔名加入清單。 新增`<TokenReplacementFileExtensions>`之前會定義 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。  
   
 > [!NOTE]  
 >  編譯專案之後，就會發生語彙基元取代，因為您不應該新增會進行編譯，這類的檔案類型的檔案副檔名 *.cs*， *.vb*或是 *.resx*。 Token 已被取代，只在未編譯的檔案。  

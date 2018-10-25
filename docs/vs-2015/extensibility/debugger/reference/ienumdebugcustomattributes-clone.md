@@ -17,12 +17,12 @@ ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0a99cea4098d44339c5a41279200389f5f39c02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8de7e9cb5beaf975daa3f4a5ea578a091183335c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890513"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

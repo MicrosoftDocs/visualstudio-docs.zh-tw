@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::PassToDebuggee |Microsoft 文件
+title: IDebugExceptionEvent2::PassToDebuggee |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8e6b53a07f191d967bbd676e6fcfc96b53dc14
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1fb575299000e4b9ab894a4700fdf314d17d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832702"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-指定例外狀況應該傳遞給程式進行偵錯時就會繼續執行，或如果應該捨棄例外狀況。  
+指定例外狀況應該傳遞給正在偵錯程式時繼續執行，或如果例外狀況應予捨棄。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,15 +41,15 @@ int PassToDebuggee(
   
 #### <a name="parameters"></a>參數  
  `fPass`  
- [in]非零 (`TRUE`) 如果例外狀況應該傳遞給程式進行偵錯時就會繼續執行，則為零 (`FALSE`) 如果應該捨棄例外狀況。  
+ [in]非零值 (`TRUE`) 如果例外狀況應該傳遞給正在偵錯程式時繼續執行，則為零 (`FALSE`) 如果例外狀況應予捨棄。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法並不會實際會在偵錯程式中執行的任何程式碼。 呼叫只是要設定下一個程式碼執行狀態。 例如，若要呼叫[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)方法可能會傳回`S_OK`與[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)。`dwState` 欄位設定為`EXCEPTION_STOP_SECOND_CHANCE`。  
+ 呼叫這個方法並不會實際會執行所偵錯的程式中的任何程式碼。 呼叫只是設定為下一個程式碼執行狀態。 例如，呼叫[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)方法可能會傳回`S_OK`具有[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)。`dwState` 欄位設定為`EXCEPTION_STOP_SECOND_CHANCE`。  
   
- IDE，可能會收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件和呼叫[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)方法。 偵錯引擎 (DE) 應該會有預設的行為來處理則`PassToDebuggee`不會呼叫方法。  
+ IDE 可能會收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件，並呼叫[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)方法。 偵錯引擎 (DE) 應有的預設行為，可處理則`PassToDebuggee`不會呼叫方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

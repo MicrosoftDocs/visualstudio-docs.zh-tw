@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback |Microsoft 文件
+title: IDebugExpressionEvaluator2::SetCallback |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4b7c0333ff5328f4bdfd2411356074dc39d567c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03565e5fb6012a236eb5191aa8c126d923d04739
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823225"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-可讓運算式評估工具 (EE) 指定的回呼介面，偵錯工具引擎 (DE) 會用來讀取度量設定。  
+可讓運算式評估工具 (EE)，指定偵錯工具引擎 (DE) 將用來讀取計量設定的回呼介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,13 +43,13 @@ int SetCallback (
  [in]要用於設定回呼介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法提供的運算式評估工具可以用來讀取度量設定工作階段偵錯管理員介面。 它是用於遠端偵錯，以在讀取度量[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]電腦。  
+ 這個方法的運算式評估工具可用來讀取計量設定的工作階段偵錯管理員提供的介面。 它適合用來讀取計量上的遠端偵錯[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]電腦。  
   
 ## <a name="example"></a>範例  
- 下列範例將示範如何實作這個方法來**CEE**公開物件[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面。  
+ 下列範例示範如何實作這個方法，如**CEE**公開 （expose） 的物件[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面。  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

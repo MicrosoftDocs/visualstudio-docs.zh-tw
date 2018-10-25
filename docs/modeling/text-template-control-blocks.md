@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812020"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>運算式控制區塊
@@ -144,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>如何使用控制區塊
- 在單一範本 (包括包含的範本中的所有程式碼) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。 (如需詳細資訊，包括其他文字範本的`include`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
+ 在單一範本 (包括包含的範本中的所有程式碼) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。 (如需包括其他文字範本的詳細資訊`include`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
 
  使用控制區塊時，您應該記住下列考量：
 
--   **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 (如需有關`template`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
+-   **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 (如需詳細資訊`template`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
 
      您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。 您可以使用 Visual Basic 程式碼產生 C#，反之亦然。
 
@@ -170,4 +169,4 @@ Some text.
     <# } #>
     ```
 
--   **重構作業。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。
+-   **重構。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。

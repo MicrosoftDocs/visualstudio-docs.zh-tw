@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14421b6baede8f946a9bdfd86759e78657e1e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817420"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ ms.locfileid: "49222894"
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>搜尋處理序檢視中的處理序  
   
-1.  因此排列的視窗，Spy + + 和作用[處理序檢視](../debugger/processes-view.md)視窗會顯示。  
+1. 因此排列的視窗，Spy + + 和作用[處理序檢視](../debugger/processes-view.md)視窗會顯示。  
   
-2.  從**搜尋**功能表上，選擇**尋找處理序**  
+2. 從**搜尋**功能表上，選擇**尋找處理序**  
   
-     [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。  
+    [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。  
   
-3.  輸入的處理序識別碼或模組字串做為搜尋準則。  
+3. 輸入的處理序識別碼或模組字串做為搜尋準則。  
   
-4.  清除，您不想指定值的任何欄位。  
+4. 清除，您不想指定值的任何欄位。  
   
-    > [!TIP]
-    >  若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。  
+   > [!TIP]
+   >  若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。  
   
-5.  選擇**向上**或是**向下**初始搜尋的方向。  
+5. 選擇**向上**或是**向下**初始搜尋的方向。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定 **Deploying Office Solutions**]。  
   
- 如果找到相符的處理程序，它會以醒目提示**處理序檢視**視窗。
+   如果找到相符的處理程序，它會以醒目提示**處理序檢視**視窗。
 
 
 

@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889603"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ ms.locfileid: "49291235"
 ##  <a name="BKMK_In_this_topic"></a> 本主題內容  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [建立測試類別和方法](#BKMK_Create_test_classes_and_methods)  
+- [建立測試類別和方法](#BKMK_Create_test_classes_and_methods)  
   
--   [初始化和清除](#BKMK_Initialize_and_cleanup)  
+- [初始化和清除](#BKMK_Initialize_and_cleanup)  
   
-    -   [測試方法](#BKMK_Test_methods)  
+  -   [測試方法](#BKMK_Test_methods)  
   
-    -   [測試類別](#BKMK_Test_classes)  
+  -   [測試類別](#BKMK_Test_classes)  
   
-    -   [測試模組](#BKMK_Test_modules)  
+  -   [測試模組](#BKMK_Test_modules)  
   
--   [建立測試屬性](#BKMK_Create_test_attributes)  
+- [建立測試屬性](#BKMK_Create_test_attributes)  
   
-    -   [測試方法屬性](#BKMK_Test_method_attributes)  
+  - [測試方法屬性](#BKMK_Test_method_attributes)  
   
-    -   [測試類別屬性](#BKMK_Test_class_attributes)  
+  - [測試類別屬性](#BKMK_Test_class_attributes)  
   
-    -   [測試模組屬性](#BKMK_Test_module_attributes)  
+  - [測試模組屬性](#BKMK_Test_module_attributes)  
   
-    -   [預先定義的屬性](#BKMK_Pre_defined_attributes)  
+  - [預先定義的屬性](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [一般判斷提示](#BKMK_General_Asserts)  
+  - [一般判斷提示](#BKMK_General_Asserts)  
   
-        -   [相等](#BKMK_General_Are_Equal)  
+    -   [相等](#BKMK_General_Are_Equal)  
   
-        -   [不相等](#BKMK_General_Are_Not_Equal)  
+    -   [不相等](#BKMK_General_Are_Not_Equal)  
   
-        -   [相同](#BKMK_General_Are_Same)  
+    -   [相同](#BKMK_General_Are_Same)  
   
-        -   [不相同](#BKMK_General_Are_Not_Same)  
+    -   [不相同](#BKMK_General_Are_Not_Same)  
   
-        -   [為 Null](#BKMK_General_Is_Null)  
+    -   [為 Null](#BKMK_General_Is_Null)  
   
-        -   [不是 Null](#BKMK_General_Is_Not_Null)  
+    -   [不是 Null](#BKMK_General_Is_Not_Null)  
   
-        -   [為 True](#BKMK_General_Is_True)  
+    -   [為 True](#BKMK_General_Is_True)  
   
-        -   [為 False](#BKMK_General_Is_False)  
+    -   [為 False](#BKMK_General_Is_False)  
   
-        -   [失敗](#BKMK_General_Fail)  
+    -   [失敗](#BKMK_General_Fail)  
   
-    -   [Windows 執行階段判斷提示](#BKMK_WinRT_Asserts)  
+  - [Windows 執行階段判斷提示](#BKMK_WinRT_Asserts)  
   
-        -   [相等](#BKMK_WinRT_Are_Equal)  
+    -   [相等](#BKMK_WinRT_Are_Equal)  
   
-        -   [相同](#BKMK_WinRT_Are_Same)  
+    -   [相同](#BKMK_WinRT_Are_Same)  
   
-        -   [不相等](#BKMK_WinRT_Are_Not_Equal)  
+    -   [不相等](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [不相同](#BKMK_WinRT_Are_Not_Same)  
+    -   [不相同](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [為 Null](#BKMK_WinRT_Is_Null)  
+    -   [為 Null](#BKMK_WinRT_Is_Null)  
   
-        -   [不是 Null](#BKMK_WinRT_Is_Not_Null)  
+    -   [不是 Null](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [判斷提示例外狀況](#BKMK_Exception_Asserts)  
+  - [判斷提示例外狀況](#BKMK_Exception_Asserts)  
   
-        -   [預期例外狀況](#BKMK_Expect_Exception)  
+    - [預期例外狀況](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [記錄器](#BKMK_Logger)  
+    - [記錄器](#BKMK_Logger)  
   
-        -   [寫入訊息](#BKMK_Write_Message)  
+    - [寫入訊息](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

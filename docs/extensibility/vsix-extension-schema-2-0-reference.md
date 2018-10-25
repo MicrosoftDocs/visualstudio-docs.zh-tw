@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831922"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。  
@@ -41,7 +41,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Assets>` -本章節包含的所有包含此套件中的資產。 本節中，沒有此套件不會出現任何內容。  
   
--   `<AnyElement>*` -資訊清單的結構描述是有足夠的彈性，以允許任何其他項目。 資訊清單的載入器無法辨識的任何子項目會擴充管理員 API 中公開為額外的 XmlElement 物件。 使用這些子元素，VSIX 擴充功能可以在 Visual Studio 中執行的程式碼可以存取在執行階段之資訊清單檔案中定義其他資料。 請參閱<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A>和<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
+-   `<AnyElement>*` -資訊清單的結構描述是有足夠的彈性，以允許任何其他項目。 資訊清單的載入器無法辨識的任何子項目會擴充管理員 API 中公開為額外的 XmlElement 物件。 使用這些子元素，VSIX 擴充功能可以在 Visual Studio 中執行的程式碼可以存取在執行階段之資訊清單檔案中定義其他資料。 請參閱 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
   
 ### <a name="metadata-element"></a>中繼資料元素  
  本節是封裝、 其身分識別，以及廣告資訊的相關中繼資料。 `<Metadata>` 包含下列元素：  
@@ -162,33 +162,33 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 ### <a name="assets-element"></a>資產的項目  
  這個元素包含一份`<Asset>`這個封裝所呈現的標記每個擴充功能或內容的項目。  
   
--   `<Asset>` -此元素包含下列屬性和項目：  
+- `<Asset>` -此元素包含下列屬性和項目：  
   
-    -   `Type` 延伸模組或此元素所代表的內容類型。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
+  - `Type` 延伸模組或此元素所代表的內容類型。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         您可以建立自己的型別，並為它們提供唯一的名稱。 在 Visual Studio 內的執行階段，您的程式碼可以列舉並透過擴充管理員 API 來存取這些自訂的類型。  
+       您可以建立自己的型別，並為它們提供唯一的名稱。 在 Visual Studio 內的執行階段，您的程式碼可以列舉並透過擴充管理員 API 來存取這些自訂的類型。  
   
-    -   `Path` -檔案或資料夾包含資產之套件內的相對路徑。  
+  - `Path` -檔案或資料夾包含資產之套件內的相對路徑。  
     
-    -   `TargetVersion` -要套用指定的資產的版本範圍。 用來傳送多個版本的 Visual Studio 的不同版本的資產。 需要 Visual Studio 2017.3 或更新版本，才能產生的影響。
+  - `TargetVersion` -要套用指定的資產的版本範圍。 用來傳送多個版本的 Visual Studio 的不同版本的資產。 需要 Visual Studio 2017.3 或更新版本，才能產生的影響。
   
-    -   `AnyAttribute*` -屬性開放集合所公開的執行階段做為名稱 / 值組的字典。  
+  - `AnyAttribute*` -屬性開放集合所公開的執行階段做為名稱 / 值組的字典。  
   
-         `<AnyElement>*` -任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。  
+     `<AnyElement>*` -任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。  
   
 ### <a name="sample-manifest"></a>範例資訊清單  
   

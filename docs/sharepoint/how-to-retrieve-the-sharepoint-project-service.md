@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880594"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何： 擷取 SharePoint 專案服務
   您可以存取 SharePoint 專案服務，在下列幾種解決方案：  
@@ -96,11 +96,11 @@ ms.locfileid: "37118783"
   
  在 VSPackage 中，您可以要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件使用下列方法之一：  
   
--   <xref:System.IServiceProvider.GetService%2A>方法的 managed VSPackage，衍生自<xref:Microsoft.VisualStudio.Shell.Package>類別。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。  
+- <xref:System.IServiceProvider.GetService%2A>方法的 managed VSPackage，衍生自<xref:Microsoft.VisualStudio.Shell.Package>類別。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。  
   
--   靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 如需詳細資訊，請參閱 <<c0> [ 使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
+- 靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 如需詳細資訊，請參閱 <<c0> [ 使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
   
- 在 Visual Studio 擴充功能具有存取權<xref:EnvDTE80.DTE2>物件，您可以要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>使用的物件<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法<xref:Microsoft.VisualStudio.Shell.ServiceProvider>物件。 如需詳細資訊，請參閱 <<c0> [ 從 DTE 物件取得服務](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
+  在 Visual Studio 擴充功能具有存取權<xref:EnvDTE80.DTE2>物件，您可以要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>使用的物件<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法<xref:Microsoft.VisualStudio.Shell.ServiceProvider>物件。 如需詳細資訊，請參閱 <<c0> [ 從 DTE 物件取得服務](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
   
 ## <a name="see-also"></a>另請參閱
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   

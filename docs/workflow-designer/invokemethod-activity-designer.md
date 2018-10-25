@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839566"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "36757762"
 下表顯示<xref:System.Activities.Statements.InvokeMethod>屬性，並說明它們在設計工具的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 活動的易記名稱。 預設值為 InvokeMethod。<br /><br /> 雖然<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議您最好使用其中一個。|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|活動執行時要呼叫之方法的名稱。 呼叫的方法必須宣告為**公開**。 此屬性可編輯設計工具介面上，而且是必要的。|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|要呼叫之方法的參數集合。 將參數加入至集合時，加入順序必須與參數出現在方法簽章中的順序相同。 若要顯示**參數**對話方塊中，您可以設定這個屬性中，按一下省略符號按鈕，在**參數**屬性方格的欄位。 按一下 **建立引數**按鈕以新增參數。|
@@ -64,6 +64,6 @@ ms.locfileid: "36757762"
 ## <a name="see-also"></a>另請參閱
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [指派](../workflow-designer/assign-activity-designer.md)
-- [延遲](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862277"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活動圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49177836"
   
  您可以使用活動圖描述多種類型的程序，如下所示：  
   
--   商務程序或使用者與系統之間的工作流程。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
+- 商務程序或使用者與系統之間的工作流程。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
   
--   使用案例的執行步驟。 如需詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 使用案例的執行步驟。 如需詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
--   軟體通訊協定，也就是元件之間允許的互動序列。  
+- 軟體通訊協定，也就是元件之間允許的互動序列。  
   
--   軟體演算法。  
+- 軟體演算法。  
   
- 本主題描述活動圖中可以使用的項目。 如需詳細資訊繪製活動圖表請參閱[UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。 若要建立 UML 活動圖，在**架構**功能表上，按一下**新增 UML 或分層圖**。 如需如何在一般情況下繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+  本主題描述活動圖中可以使用的項目。 如需詳細資訊繪製活動圖表請參閱[UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。 若要建立 UML 活動圖，在**架構**功能表上，按一下**新增 UML 或分層圖**。 如需如何在一般情況下繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
 ## <a name="reading-activity-diagrams"></a>讀取活動圖  
  下列各節中的表格，會描述活動圖的可用項目及其主要屬性。 元素的屬性完整清單，請參閱 < [UML 活動圖表上的項目屬性](../modeling/properties-of-elements-on-uml-activity-diagrams.md)。  

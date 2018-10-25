@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871286"
 ---
 # <a name="help-viewer-administrator-guide"></a>說明檢視器系統管理員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ ms.locfileid: "49256952"
   
  需求：  
   
--   用戶端電腦必須能夠存取網際網路。  
+- 用戶端電腦必須能夠存取網際網路。  
   
--   在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
+- 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
   
- 警告：  
+  警告：  
   
--   說明的預設來源仍處於線上。  
+- 說明的預設來源仍處於線上。  
   
-    > [!TIP]
-    >  您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > [!TIP]
+  >  您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
--   用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 您可以修改  HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 登錄機碼，以停用此提示。  
+- 用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 您可以修改  HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 登錄機碼，以停用此提示。  
   
 ### <a name="example"></a>範例  
  以下範例將安裝 Visual Studio 的英文內容到用戶端電腦。  
@@ -78,47 +78,47 @@ ms.locfileid: "49256952"
   
  需求:  
   
--   您安裝該組內容的電腦必須能夠存取網際網路。  
+- 您安裝該組內容的電腦必須能夠存取網際網路。  
   
--   在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
+- 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
   
-    > [!TIP]
-    >  如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > [!TIP]
+  >  如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
- 警告：  
+  警告：  
   
--   如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+- 如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
--   說明的預設來源仍處於線上。  
+- 說明的預設來源仍處於線上。  
   
--   用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+- 用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
 ### <a name="create-the-content-set"></a>建立內容集  
  在您可以建立基底內容集之前，您必須先解除安裝目標電腦上的所有本機 Visual Studio 內容。  
   
 ##### <a name="to-uninstall-local-help"></a>解除安裝本機說明  
   
-1.  在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
   
-2.  底下**可用的文件**，巡覽至 Visual Studio 文件集。  
+2. 底下**可用的文件**，巡覽至 Visual Studio 文件集。  
   
-3.  選擇每個子項目旁的 [移除]。  
+3. 選擇每個子項目旁的 [移除]。  
   
-4.  選擇**啟動**解除安裝  
+4. 選擇**啟動**解除安裝  
   
-5.  瀏覽至*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 並確認該資料夾只包含檔案 catalogType.xml。  
+5. 瀏覽至*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 並確認該資料夾只包含檔案 catalogType.xml。  
   
- 一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。  
+   一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。  
   
 ##### <a name="to-download-the-content"></a>下載內容  
   
-1.  在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
   
-2.  底下**可用的文件**，瀏覽至您想要下載，然後選擇 文件集**新增**。  
+2. 底下**可用的文件**，瀏覽至您想要下載，然後選擇 文件集**新增**。  
   
-3.  選擇 [開始]。  
+3. 選擇 [開始]。  
   
- 接下來，您必須封裝內容，讓它可以部署到用戶端電腦。  
+   接下來，您必須封裝內容，讓它可以部署到用戶端電腦。  
   
 ##### <a name="to-package-the-content"></a>封裝內容  
   

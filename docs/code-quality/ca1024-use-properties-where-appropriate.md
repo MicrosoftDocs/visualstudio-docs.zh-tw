@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5677604505bf21b8f14a2f3ef6ca1341fc9ff191
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0f74c41584c8dc8960adce2bd253f7d1c38707f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823212"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
 
@@ -32,7 +32,7 @@ ms.locfileid: "45551671"
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

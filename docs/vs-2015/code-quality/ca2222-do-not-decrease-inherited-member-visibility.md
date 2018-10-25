@@ -20,15 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d3d91c2079119f54761c02af59543b2dcf753802
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bc4ff141e48554e631b2163afd64e7935f50c5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837746"
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222：請勿降低繼承成員的可視性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|

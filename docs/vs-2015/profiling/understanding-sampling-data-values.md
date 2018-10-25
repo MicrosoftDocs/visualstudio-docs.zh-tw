@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86458fcc630b023cd1495b91a388fe245b71d772
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877630"
 ---
 # <a name="understanding-sampling-data-values"></a>認識取樣資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "49221386"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 分析工具分析會判斷處理器是否正在執行目標處理序中的程式碼。 如果處理器未在執行目標處理序中的程式碼，則會捨棄此樣本。  
+  分析工具分析會判斷處理器是否正在執行目標處理序中的程式碼。 如果處理器未在執行目標處理序中的程式碼，則會捨棄此樣本。  
   
- 如果處理器在執行目標程式碼，分析工具會讓呼叫堆疊上每個函式的樣本計數遞增。 取樣時，呼叫堆疊上只能有一個函式正在執行程式碼。 堆疊上的其他函式則是函式呼叫階層中的父代，會等候其子系傳回。  
+  如果處理器在執行目標程式碼，分析工具會讓呼叫堆疊上每個函式的樣本計數遞增。 取樣時，呼叫堆疊上只能有一個函式正在執行程式碼。 堆疊上的其他函式則是函式呼叫階層中的父代，會等候其子系傳回。  
   
- 對於樣本事件，該分析工具會讓目前正在執行其指示的函式「專有」樣本計數遞增。 因為專有樣本也是函式總 (內含) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。  
+  對於樣本事件，該分析工具會讓目前正在執行其指示的函式「專有」樣本計數遞增。 因為專有樣本也是函式總 (內含) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。  
   
- 分析工具會讓呼叫堆疊上所有其他函式的內含樣本計數遞增。  
+  分析工具會讓呼叫堆疊上所有其他函式的內含樣本計數遞增。  
   
 ## <a name="inclusive-samples"></a>內含樣本  
  目標函式執行期間所收集的樣本總數。  

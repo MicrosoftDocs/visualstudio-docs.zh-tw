@@ -24,35 +24,35 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 908d5094ad36a6f907c781987fba1fd053d673dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64c663e423d0d87fa0b710b65f60b4890a836d88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830934"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以識別 Visual Studio 命令的鍵盤快速鍵、自訂這些捷徑，以及將它們匯出以供其他人使用。 許多捷徑會叫用相同的命令，不過，捷徑的行為可能會因為下列條件而不同：  
   
--   您在第一次執行 Visual Studio (例如，一般開發或 Visual C#) 時選擇了哪些預設的環境設定。  
+- 您在第一次執行 Visual Studio (例如，一般開發或 Visual C#) 時選擇了哪些預設的環境設定。  
   
--   您是否曾自訂捷徑的行為。  
+- 您是否曾自訂捷徑的行為。  
   
--   當您選擇捷徑時，是在使用什麼內容。 例如，如果您使用 [設定設計工具]，則 F2 捷徑會叫用 Edit.EditCell 命令，如果使用的是 [Team Explorer]，則會叫用 File.Rename 命令。  
+- 當您選擇捷徑時，是在使用什麼內容。 例如，如果您使用 [設定設計工具]，則 F2 捷徑會叫用 Edit.EditCell 命令，如果使用的是 [Team Explorer]，則會叫用 File.Rename 命令。  
   
- 不論設定、自訂和內容為何，您一定可以在 [選項] 對話方塊中找到和變更鍵盤快速鍵。 您也可以在[常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查閱數十個預設鍵盤快速鍵，在[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)中尋找所有預設捷徑的完整清單 (以一般開發設定為基礎)。  
+  不論設定、自訂和內容為何，您一定可以在 [選項] 對話方塊中找到和變更鍵盤快速鍵。 您也可以在[常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查閱數十個預設鍵盤快速鍵，在[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)中尋找所有預設捷徑的完整清單 (以一般開發設定為基礎)。  
   
- **本主題內容**  
+  **本主題內容**  
   
--   [識別鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
+- [識別鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
   
--   [自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
+- [自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
   
--   [共用自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
+- [共用自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
   
- 如果已在全域內容中將捷徑指派給某個命令，而且沒有其他內容，則該捷徑一定會叫用該命令。 不過，捷徑可以在全域內容中指派給某個命令，並在特定的內容中指派給不同命令。 如果您在特定內容中使用這類捷徑，該捷徑會叫用特定內容的命令，而不是全域內容的命令。  
+  如果已在全域內容中將捷徑指派給某個命令，而且沒有其他內容，則該捷徑一定會叫用該命令。 不過，捷徑可以在全域內容中指派給某個命令，並在特定的內容中指派給不同命令。 如果您在特定內容中使用這類捷徑，該捷徑會叫用特定內容的命令，而不是全域內容的命令。  
   
 > [!NOTE]
 >  您的設定和 Visual Studio 版本可能會變更功能表命令的名稱和位置，以及出現在對話方塊中的選項。 本主題是以**一般開發設定**為基礎。  

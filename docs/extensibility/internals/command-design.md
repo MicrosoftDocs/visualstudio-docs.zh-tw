@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09792f951b0cc77d2087904b1dcebc1c9b3b6a06
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5bd810d0c2f33d4a8ddbffd876357ead7e0e5e7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816504"
 ---
 # <a name="command-design"></a>命令設計
 當您將命令加入 VSPackage 時，您必須指定所要出現，時，它的方式處理。  
@@ -44,15 +44,15 @@ ms.locfileid: "39513055"
 ### <a name="command-organization"></a>命令的組織  
  環境將依照群組、 優先權和功能表命令。  
   
--   群組是邏輯集合的相關命令，例如，**剪下**，**複製**，並**貼上**命令群組。 群組會出現在功能表的命令。  
+- 群組是邏輯集合的相關命令，例如，**剪下**，**複製**，並**貼上**命令群組。 群組會出現在功能表的命令。  
   
--   優先順序會決定在群組中的個別命令功能表出現的順序。  
+- 優先順序會決定在群組中的個別命令功能表出現的順序。  
   
--   功能表做為容器的群組。  
+- 功能表做為容器的群組。  
   
- 某些命令、 群組和功能表會預先定義的環境。 如需詳細資訊，請參閱 <<c0> [ 預設命令、 群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
+  某些命令、 群組和功能表會預先定義的環境。 如需詳細資訊，請參閱 <<c0> [ 預設命令、 群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
   
- 命令可以指派給主要群組。 主要群組控制項的命令，在主功能表結構和位置**自訂** 對話方塊。 命令可以出現在多個群組;例如，命令可以是主功能表上、 快顯功能表和工具列。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
+  命令可以指派給主要群組。 主要群組控制項的命令，在主功能表結構和位置**自訂** 對話方塊。 命令可以出現在多個群組;例如，命令可以是主功能表上、 快顯功能表和工具列。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   
 ### <a name="command-routing"></a>命令路由  
  叫用和路由命令的 Vspackage 的程序與不同的物件執行個體上呼叫方法的程序。  

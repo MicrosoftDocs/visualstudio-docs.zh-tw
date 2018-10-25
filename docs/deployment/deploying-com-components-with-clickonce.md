@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868d9107edcc3490902bf677e364d9ad58c35d95
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820458"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>將 COM 元件，使用 ClickOnce 部署
 部署舊版的 COM 元件一直是困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用之間重疊的應用程式。 這種情況通常不是問題在.NET Framework 應用程式中的因為都是完全隔離的應用程式或元件並排顯示相容。 Visual Studio 可讓您部署隔離的 COM 元件，在 Windows XP 或更高版本的作業系統上。  
@@ -61,7 +61,7 @@ ms.locfileid: "39078871"
   
 1.  從使用 Visual Basic 6.0**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱] 方塊中，輸入 `VB6Hello`。  
+2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱]  方塊中，輸入 `VB6Hello`。  
   
     > [!NOTE]
     >  只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
@@ -85,46 +85,46 @@ ms.locfileid: "39078871"
   
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>若要建立以 Windows 為基礎的應用程式使用 COM 元件  
   
-1.  使用 Visual Basic 中，從**檔案**功能表上，按一下**新增**，然後**專案**。  
+1. 使用 Visual Basic 中，從**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱] 方塊中，輸入 `RegFreeComDemo`。  
+2. 在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱]  方塊中，輸入 `RegFreeComDemo`。  
   
-3.  在 **方案總管 中**，按一下**顯示所有檔案** 按鈕以顯示專案參考。  
+3. 在 **方案總管 中**，按一下**顯示所有檔案** 按鈕以顯示專案參考。  
   
-4.  以滑鼠右鍵按一下**參考**節點，然後選取**加入參考**從內容功能表。  
+4. 以滑鼠右鍵按一下**參考**節點，然後選取**加入參考**從內容功能表。  
   
-5.  在 [**加入參考**] 對話方塊中，按一下**瀏覽**索引標籤上，瀏覽至 VB6Hello.dll，然後選取它。  
+5. 在 [**加入參考**] 對話方塊中，按一下**瀏覽**索引標籤上，瀏覽至 VB6Hello.dll，然後選取它。  
   
-     A **VB6Hello**參考出現在 [參考] 清單中。  
+    A **VB6Hello**參考出現在 [參考] 清單中。  
   
-6.  指向**工具箱**，選取** 按鈕**控制項，並將它拖曳至**Form1**表單。  
+6. 指向**工具箱**，選取** 按鈕**控制項，並將它拖曳至**Form1**表單。  
   
-7.  在 [**屬性**] 視窗中，將按鈕的**文字**屬性設**Hello**。  
+7. 在 [**屬性**] 視窗中，將按鈕的**文字**屬性設**Hello**。  
   
-8.  按兩下按鈕以新增處理常式程式碼，並在程式碼檔案中，加入程式碼，讓處理常式，如下所示：  
+8. 按兩下按鈕以新增處理常式程式碼，並在程式碼檔案中，加入程式碼，讓處理常式，如下所示：  
   
-    ```vb  
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-        Dim VbObj As New VB6Hello.Class1  
-        VbObj.SayHello()  
-    End Sub  
-    ```  
+   ```vb  
+   Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
+       Dim VbObj As New VB6Hello.Class1  
+       VbObj.SayHello()  
+   End Sub  
+   ```  
   
 9. 執行應用程式。 從**偵錯**功能表上，按一下**開始偵錯**。  
   
- 接著，您必須找出控制項。 每個應用程式所使用的 COM 元件會在您的專案中顯示 COM 參考。 這些參考會顯示於下方**參考**中的節點**方案總管 中**視窗。 (請注意，您可以將參考直接使用**加入參考**命令**專案** 功能表中，或直接藉由將 ActiveX 控制項拖曳至表單。)  
+   接著，您必須找出控制項。 每個應用程式所使用的 COM 元件會在您的專案中顯示 COM 參考。 這些參考會顯示於下方**參考**中的節點**方案總管 中**視窗。 (請注意，您可以將參考直接使用**加入參考**命令**專案** 功能表中，或直接藉由將 ActiveX 控制項拖曳至表單。)  
   
- 下列步驟示範如何隔離的 COM 元件，並發佈更新的應用程式隔離的控制項：  
+   下列步驟示範如何隔離的 COM 元件，並發佈更新的應用程式隔離的控制項：  
   
 ##### <a name="to-isolate-a-com-component"></a>隔離的 COM 元件  
   
-1.  在 **方案總管**，請在**參考**節點中，選取**VB6Hello**參考。  
+1. 在 **方案總管**，請在**參考**節點中，選取**VB6Hello**參考。  
   
-2.  中**屬性** 視窗中，變更的值**隔離**屬性從**False**來**True**。  
+2. 中**屬性** 視窗中，變更的值**隔離**屬性從**False**來**True**。  
   
-3.  從**建置**功能表上，按一下**建置方案**。  
+3. 從**建置**功能表上，按一下**建置方案**。  
   
- 現在，您按下 f5 鍵，應用程式如預期般運作，，但是現在正在免註冊 com。 為了證明這點，請嘗試取消註冊 VB6Hello.dll 元件，並執行 Visual Studio IDE 外部 RegFreeComDemo1.exe。 按一下按鈕時，這次它仍能運作。 如果您暫時重新命名應用程式資訊清單，它會一次失敗。  
+   現在，您按下 f5 鍵，應用程式如預期般運作，，但是現在正在免註冊 com。 為了證明這點，請嘗試取消註冊 VB6Hello.dll 元件，並執行 Visual Studio IDE 外部 RegFreeComDemo1.exe。 按一下按鈕時，這次它仍能運作。 如果您暫時重新命名應用程式資訊清單，它會一次失敗。  
   
 > [!NOTE]
 >  您可以暫時將它取消登錄，以模擬 COM 元件不存在。 開啟命令提示字元中，移至您的系統資料夾中，輸入`cd /d %windir%\system32`，然後輸入，以取消註冊元件`regsvr32 /u VB6Hello.dll`。 您可以再次註冊輸入`regsvr32 VB6Hello.dll`。  
@@ -133,15 +133,15 @@ ms.locfileid: "39078871"
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>若要發佈應用程式更新與隔離的 COM 元件  
   
-1.  從**建置**功能表上，按一下**發佈 RegFreeComDemo**。  
+1. 從**建置**功能表上，按一下**發佈 RegFreeComDemo**。  
   
-     [發行精靈] 隨即出現。  
+    [發行精靈] 隨即出現。  
   
-2.  在 [發行精靈] 中，請在本機電腦的磁碟，您可以在此存取，並檢查已發行的檔案中指定的位置。  
+2. 在 [發行精靈] 中，請在本機電腦的磁碟，您可以在此存取，並檢查已發行的檔案中指定的位置。  
   
-3.  按一下 **完成**發行應用程式。  
+3. 按一下 **完成**發行應用程式。  
   
- 如果您檢查已發行的檔案時，您會發現 sysmon.ocx 檔案包含。 控制項是控制項的完全隔離，此應用程式，這表示，如果終端使用者的電腦上有另一個應用程式使用不同版本，它不會干擾此應用程式。  
+   如果您檢查已發行的檔案時，您會發現 sysmon.ocx 檔案包含。 控制項是控制項的完全隔離，此應用程式，這表示，如果終端使用者的電腦上有另一個應用程式使用不同版本，它不會干擾此應用程式。  
   
 ## <a name="reference-native-assemblies"></a>參考原生組件  
  Visual Studio 支援原生的 Visual Basic 6.0 或 c + + 組件的參考這類參考，會呼叫原生參考。 您可以分辨是否參考為原生驗證其**檔案類型**屬性設定為**原生**或是**ActiveX**。  
@@ -155,23 +155,23 @@ ms.locfileid: "39078871"
   
  不是每個元件是免註冊 COM 的適當候選項目 如果下列任一項成立，就不適合元件：  
   
--   元件是跨處理序伺服器。 不支援 EXE 伺服器;支援只 Dll。  
+- 元件是跨處理序伺服器。 不支援 EXE 伺服器;支援只 Dll。  
   
--   該元件是作業系統的一部分，或系統元件，例如 XML、 Internet Explorer 或 Microsoft Data Access Components (MDAC)。 您應該遵循元件作者; 的重新發佈原則請連絡廠商。  
+- 該元件是作業系統的一部分，或系統元件，例如 XML、 Internet Explorer 或 Microsoft Data Access Components (MDAC)。 您應該遵循元件作者; 的重新發佈原則請連絡廠商。  
   
--   元件是應用程式，例如 Microsoft Office 的一部分。 例如，您應該嘗試找出 Microsoft Excel 物件模型。 這是 Office 的一部分，並只能在電腦上安裝完整的 Office 產品。  
+- 元件是應用程式，例如 Microsoft Office 的一部分。 例如，您應該嘗試找出 Microsoft Excel 物件模型。 這是 Office 的一部分，並只能在電腦上安裝完整的 Office 產品。  
   
--   元件被為了做為增益集或嵌入式管理單元，例如 Office 增益集或網頁瀏覽器中的控制項。 這類元件通常需要某種類型的已超出範圍的資訊清單本身的裝載環境所定義的註冊配置。  
+- 元件被為了做為增益集或嵌入式管理單元，例如 Office 增益集或網頁瀏覽器中的控制項。 這類元件通常需要某種類型的已超出範圍的資訊清單本身的裝載環境所定義的註冊配置。  
   
--   元件會管理系統，例如，列印多工緩衝處理器的裝置驅動程式的實體或虛擬裝置。  
+- 元件會管理系統，例如，列印多工緩衝處理器的裝置驅動程式的實體或虛擬裝置。  
   
--   元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
- 在某些情況下，它可能會重新設計免註冊 COM 元件的開發人員 如果這不可行，但您仍會建置，並發佈應用程式，透過使用啟動載入器的標準註冊配置相依於這些。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
+  在某些情況下，它可能會重新設計免註冊 COM 元件的開發人員 如果這不可行，但您仍會建置，並發佈應用程式，透過使用啟動載入器的標準註冊配置相依於這些。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   
- COM 元件只能一次隔離，每個應用程式。 比方說，您無法將相同的 COM 元件，從兩個不同的隔離**類別庫**屬於相同的應用程式的專案。 這樣會導致建置警告，以及應用程式將無法在執行階段載入。 若要避免這個問題，Microsoft 會建議您將封裝單一類別庫中的 COM 元件。  
+  COM 元件只能一次隔離，每個應用程式。 比方說，您無法將相同的 COM 元件，從兩個不同的隔離**類別庫**屬於相同的應用程式的專案。 這樣會導致建置警告，以及應用程式將無法在執行階段載入。 若要避免這個問題，Microsoft 會建議您將封裝單一類別庫中的 COM 元件。  
   
- 即使應用程式的部署不需要註冊，則需要有 com 必須註冊開發人員的電腦的幾個案例。 `Isolated`屬性需要開發人員的電腦上註冊 COM 元件，以自動產生資訊清單在建置期間。 沒有註冊擷取的功能，在建置期間叫用自我登錄。 此外，任何未明確定義型別程式庫中的類別不會反映在資訊清單中。 使用既有的資訊清單，例如原生參考的 COM 元件時可能不會註冊在開發期間需要的元件。 不過，就必須註冊如果元件是以 ActiveX 控制項，而且您想要將它併入**工具箱**和 Windows Form 設計工具。  
+  即使應用程式的部署不需要註冊，則需要有 com 必須註冊開發人員的電腦的幾個案例。 `Isolated`屬性需要開發人員的電腦上註冊 COM 元件，以自動產生資訊清單在建置期間。 沒有註冊擷取的功能，在建置期間叫用自我登錄。 此外，任何未明確定義型別程式庫中的類別不會反映在資訊清單中。 使用既有的資訊清單，例如原生參考的 COM 元件時可能不會註冊在開發期間需要的元件。 不過，就必須註冊如果元件是以 ActiveX 控制項，而且您想要將它併入**工具箱**和 Windows Form 設計工具。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

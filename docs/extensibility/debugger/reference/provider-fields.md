@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS |Microsoft 文件
+title: PROVIDER_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: deda42120dc98e0222910c48b0faf574a57f03dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d71ab824017d054b8543770b7eaf1efe2856867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860340"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
-指定程式提供者相關聯的屬性。  
+指定的程式提供者相關聯的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,7 +50,7 @@ public enum enum_PROVIDER_FIELDS {
  `fIsDebuggerPresent`欄位無效。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳回`Fields`隸屬[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構表示明確填入結構的哪些欄位。  
+ 這些值會傳回在`Fields`隸屬[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，以表示哪些欄位結構的明確已填入。  
   
  這些值可以合併的位元`OR`。  
   

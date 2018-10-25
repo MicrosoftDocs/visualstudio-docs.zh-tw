@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886392"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>適用於 Visual Studio 的視覺化語言字典
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
   
  **一般指導方針**  
   
--   這些 visual 概念必須使用其字典定義的一致的方式。 否則，可能會令人困惑的使用者，預期有一致的意義的通用元素。  
+- 這些 visual 概念必須使用其字典定義的一致的方式。 否則，可能會令人困惑的使用者，預期有一致的意義的通用元素。  
   
--   選擇只有最相關或重要概念用於在您的圖示，以便圖像是清晰且容易區分。  
+- 選擇只有最相關或重要概念用於在您的圖示，以便圖像是清晰且容易區分。  
   
--   用於每個映像只需要一個或兩個概念。  
+- 用於每個映像只需要一個或兩個概念。  
   
--   如需設計圖示的策略，請參閱[迶蒩飶耵](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。  
+- 如需設計圖示的策略，請參閱[迶蒩飶耵](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。  
   
- **跳到章節：**  
+  **跳到章節：**  
   
 1.  [概念 A-Z、0-9](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

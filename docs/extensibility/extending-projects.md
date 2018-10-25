@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864669"
 ---
 # <a name="extend-projects"></a>擴充專案
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署單位的方式。 您可以找到有關中專案的詳細資訊[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
@@ -36,7 +36,7 @@ ms.locfileid: "42902815"
  描述如何建立自訂專案系統。  
   
  [將資料儲存在專案檔](../extensibility/saving-data-in-project-files.md)  
- 說明如何將新增至專案 (*。* proj *） 檔案。  
+ 說明如何將新增至專案 (<em>。</em>proj *） 檔案。  
   
  [在執行階段驗證專案的子類型](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  說明如何在執行階段驗證的專案子類型。  

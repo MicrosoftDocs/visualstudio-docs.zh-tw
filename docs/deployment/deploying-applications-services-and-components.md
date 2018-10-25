@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
-ms.translationtype: HT
+ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861627"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 初步了解在 Visual Studio 中的部署
 
@@ -121,7 +121,7 @@ ms.locfileid: "44320549"
 | 應用程式類型 | 部署情節 | 連結 |
 | --- | --- | --- |
 | **Office 應用程式** | 您可以從 Visual Studio 發行 Office 增益集。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
-| **WCF 或 OData 服務**  | 其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發及部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **WCF 或 OData 服務** | 其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發及部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch 在 Visual Studio 2017 已不再支援，但仍可以從 Visual Studio 2015 和更早版本部署。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>後續步驟

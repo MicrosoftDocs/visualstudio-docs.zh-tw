@@ -1,7 +1,7 @@
 ---
-title: 如何： 回應在 Just-in-time 偵錯工具 |Microsoft Docs
+title: 停用-Just-in-time 偵錯工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/23/17
+ms.date: 05/23/18
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,41 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: HT
+ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179771"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382775"
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 回應在 Just-in-time 偵錯工具
+# <a name="disable-the-just-in-time-debugger"></a>停用-Just-in-time 偵錯工具 
 
-當您看到的時間只需時，您應該採取的動作取決於您嘗試執行的偵錯工具 對話方塊中：
+[Just-In-Time 偵錯工具] 對話方塊中可能會開啟執行中應用程式，發生錯誤時，並阻止應用程式繼續執行。 
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>如果您想要修正或偵錯錯誤 （Visual Studio 使用者）
+Just-In-Time 偵錯工具可讓您啟動 Visual Studio 偵錯錯誤的選項。 您必須擁有[Visual Studio](http://visualstudio.microsoft.com)或另一個所選安裝偵錯工具若要檢視有關錯誤的詳細的資訊，或嘗試進行偵錯。 
 
-- 您必須擁有[安裝 Visual Studio](http://visualstudio.microsoft.com)來檢視有關錯誤的詳細的資訊，並嘗試進行偵錯。 如需詳細資訊，請參閱 <<c0> [ 使用 Just-In-Time 偵錯工具進行偵錯](../debugger/debug-using-the-just-in-time-debugger.md)。 如果您不能解決此錯誤並修正應用程式，請連絡應用程式的擁有者，來解決這個錯誤。
+如果您是 Visual Studio 使用者，而且想要嘗試偵錯錯誤，請參閱 <<c0> [ 使用 Just-In-Time 偵錯工具進行偵錯](../debugger/debug-using-the-just-in-time-debugger.md)。 如果您不能修正錯誤，或想要保留 Just-In-Time 偵錯工具無法開啟，您可以[從 Visual Studio 偵錯的停用 Just In Time](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)。 
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>如果您想要防止 [Just-In-Time 偵錯工具] 對話方塊中出現
+如果您已安裝 Visual Studio，但不是會再執行，您可能需要[停用 Just In Time 偵錯從 Windows 登錄](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)。 
 
-您可以採取步驟來防止在時間就不會出現的 [偵錯工具] 對話方塊。 如果應用程式會處理錯誤，您可以正常執行的應用程式。
+如果您沒有安裝 Visual Studio，您可以防止恰好時間偵錯的方式停用指令碼偵錯，或伺服器端偵錯。 
 
-1. （web 應用程式）如果您嘗試執行 web 應用程式，您可以停用指令碼偵錯。
+- 如果您想要執行 web 應用程式，停用指令碼偵錯：
+  
+  在 Windows**控制台中** > **網路和網際網路** > **網際網路選項**，選取**停用指令碼偵錯 （Internet Explorer)** 並**停用指令碼除錯 （其他）**。 確切步驟和設定這需視您的 Windows 和您的瀏覽器版本而定。
+  
+  ![JIT 網際網路選項](../debugger/media/jitinternetoptions.png "JIT 網際網路選項")
+  
+- 如果您裝載在 IIS 中的 ASP.NET web 應用程式，停用伺服器端偵錯：
 
-    Internet Explorer 或 Edge，停用指令碼偵錯 [網際網路選項] 對話方塊中。 您可以存取這些設定，從**控制台中** > **網路和網際網路** > **網際網路選項**(確切步驟取決於您版本的 Windows 和您的瀏覽器）。
+  1. 在 IIS 管理員**功能檢視**下方**ASP.NET**區段中，按兩下 **.NET 編譯**，或選取它，然後選取**開啟功能**中**動作**窗格。 
+  1. 底下**行為** > **偵錯**，選取**False**。 步驟是在舊版 IIS 中的不同。
 
-    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+停用 Just 時間偵錯之後，應用程式可以處理錯誤並正常執行。 
 
-    然後重新開啟您在發現錯誤所在的網頁。 如果變更此設定不會解決此問題，請連絡擁有者的 web 應用程式以修正此問題。
+如果應用程式仍有未處理的錯誤，您可能會看到錯誤訊息，或應用程式可能會當機或停止回應。 錯誤修正之前，不會正常執行的應用程式。 您可以嘗試連絡應用程式的擁有者，並要求他們要修正此問題。
 
-3. （Visual Studio 使用者）如果您已安裝的 Visual Studio （或如果您有先前安裝，並將其移除），[停用 Just in Time 偵錯](../debugger/debug-using-the-just-in-time-debugger.md)，然後再試一次執行應用程式。
-
-    > [!IMPORTANT]
-    > 如果您停用 Just in Time 偵錯和應用程式遇到未處理的例外狀況 （錯誤），相反地，您將看到標準錯誤對話方塊中或應用程式會當機或停止回應。 錯誤修正 （由您或應用程式的擁有者） 之前，應用程式將無法正常執行。
-
-2. （ASP.NET 和 IIS）如果您裝載在 IIS 中的 ASP.NET Web 應用程式，停用伺服器端偵錯。
-
-    在 IIS 管理員 中，以滑鼠右鍵按一下伺服器節點，然後選擇**切換至 功能檢視**。 在 [ASP.NET] 區段中，選擇 **.NET 編譯**，然後確定您選擇**False**做為偵錯行為 （步驟是在較舊版本的 IIS 不同）。
-
-## <a name="see-also"></a>另請參閱
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

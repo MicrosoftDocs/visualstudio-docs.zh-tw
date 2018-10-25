@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 |Microsoft 文件
+title: IDiaStackWalker::getEnumFrames2 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834b202d406ce7ae2e2a5b2ec80b8f7c46f0f576
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca384e594a9e8a295f291739589bed1eb92dd044
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854035"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 擷取特定平台類型的堆疊框架的列舉值。  
@@ -37,7 +37,7 @@ ms.locfileid: "31461369"
   
 #### <a name="parameters"></a>參數  
  `cpuid`  
- [in]中的值[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)指定平台類型的列舉。  
+ [in]值，以從[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)指定平台類型的列舉。  
   
  `pHelper`  
  [in]協助專家[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。  
@@ -46,10 +46,10 @@ ms.locfileid: "31461369"
  [out]傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 若要取得剛 x86 的堆疊框架清單平台，請呼叫[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。  
+ 若要取得堆疊框架清單只是 x86 平台，請呼叫[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   

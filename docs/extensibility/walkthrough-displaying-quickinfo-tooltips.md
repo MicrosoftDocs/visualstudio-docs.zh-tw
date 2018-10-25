@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824177"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>逐步解說︰ 顯示 QuickInfo 工具提示
 QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用者將指標移方法名稱。 您可以實作語言為基礎的功能，例如 QuickInfo 定義您要提供 QuickInfo 描述的識別碼，然後再建立要顯示的內容中的工具提示。 您可以定義 QuickInfo 中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並顯示 QuickInfo，只要該類型，或對於現有的內容類型 （例如 「 文字 」），您可以顯示 QuickInfo。 本逐步解說示範如何顯示 QuickInfo"text"的內容類型。  
   
  QuickInfo 範例中的，在此逐步解說會顯示工具提示，當使用者將指標移方法名稱。 這項設計會要求您實作這些四個介面：  
   
--   來源介面  
+- 來源介面  
   
--   來源提供者介面  
+- 來源提供者介面  
   
--   控制器介面  
+- 控制器介面  
   
--   控制器提供者介面  
+- 控制器提供者介面  
   
- 來源和控制站提供者是 Managed Extensibility Framework (MEF) 元件部分，而且會負責將匯出的來源和控制器類別，並匯入服務和訊息代理程式這類<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，這會建立的工具提示文字緩衝區，而<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，這會觸發 QuickInfo 工作階段。  
+  來源和控制站提供者是 Managed Extensibility Framework (MEF) 元件部分，而且會負責將匯出的來源和控制器類別，並匯入服務和訊息代理程式這類<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，這會建立的工具提示文字緩衝區，而<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，這會觸發 QuickInfo 工作階段。  
   
- 在此範例中，QuickInfo 來源使用硬式編碼清單的方法名稱和描述，但在完整的實作中，語言服務和語言文件，負責提供該內容。  
+  在此範例中，QuickInfo 來源使用硬式編碼清單的方法名稱和描述，但在完整的實作中，語言服務和語言文件，負責提供該內容。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，您不需要從下載中心安裝 Visual Studio SDK。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -44,7 +44,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
   
 ### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`QuickInfoTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `QuickInfoTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -55,7 +55,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
   
 #### <a name="to-implement-the-quickinfo-source"></a>若要實作 QuickInfo 來源  
   
-1.  將類別檔案並將它命名`TestQuickInfoSource`。  
+1.  加入類別檔案，並將它命名為 `TestQuickInfoSource`。  
   
 2.  將參考加入*Microsoft.VisualStudio.Language.IntelliSense*。  
   
@@ -154,7 +154,7 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  匯入<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>做為屬性。  
+2.  匯入 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 作為屬性。  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

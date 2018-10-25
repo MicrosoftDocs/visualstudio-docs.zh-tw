@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE |Microsoft 文件
+title: BUILT_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14a9010925db5c175b7110fb12261eb135162246
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0955ca40e136e5b89f105430f3dd887b66f25a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853307"
 ---
 # <a name="builttype"></a>BUILT_TYPE
-此結構會指定從中繼資料的欄位類型的相關資訊。  
+此結構會指定取自中繼資料的欄位類型的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,16 +45,16 @@ public struct BUILT_TYPE {
   
 #### <a name="parameters"></a>參數  
  ulAppDomainID  
- 應用程式的來源符號的識別碼。 這用來唯一識別應用程式的執行個體。  
+ 符號所來自的應用程式的識別碼。 這用來唯一識別應用程式的執行個體。  
   
  guidModule  
- 包含此欄位之模組的 GUID。  
+ 模組包含此欄位的 GUID。  
   
  pUnderlyingField  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，可識別此內建欄位相關聯的基礎欄位。  
   
 ## <a name="remarks"></a>備註  
- 此結構會顯示過程中的等位[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設為`TYPE_KIND_BUILT`(介於[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
+ 此結構會顯示為中的等位的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設定為`TYPE_KIND_BUILT`(值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  

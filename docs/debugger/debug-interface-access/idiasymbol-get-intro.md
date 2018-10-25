@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intro |Microsoft 文件'
+title: 'Idiasymbol:: Get_intro |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f43aeb33ce7727133a7ed2a4e4eba0cac53cda
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813371"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-擷取指定函數是否為介紹的虛擬函式的旗標。  
+擷取指定函數是否為簡介的虛擬函式的旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_intro (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果函式簡介虛擬; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`函式是簡介虛擬; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="example"></a>範例  
   
@@ -53,7 +53,7 @@ class B : public A {
 }  
 ```  
   
- 同時`A::f1`和`B::f1`是虛擬函式，但`A::f1`是虛擬的簡介。  
+ 兩者`A::f1`並`B::f1`是虛擬的函式，但`A::f1`是虛擬的簡介。  
   
 ## <a name="requirements"></a>需求  
   

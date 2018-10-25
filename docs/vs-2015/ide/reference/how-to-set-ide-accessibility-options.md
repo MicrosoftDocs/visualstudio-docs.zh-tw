@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867282"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205890"
  您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。  
   
 > [!NOTE]
->  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 **ALT+** 左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，完整實作高對比色彩。  
+>  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 <strong>ALT+</strong>左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，完整實作高對比色彩。  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩  
   

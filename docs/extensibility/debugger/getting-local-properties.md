@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 264250ecf245f4f13504d1e8a6e78ed23b780e3b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3b955076d79505560d187a59aa1dedec75a4fdbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850954"
 ---
 # <a name="get-local-properties"></a>取得本機內容
 > [!IMPORTANT]

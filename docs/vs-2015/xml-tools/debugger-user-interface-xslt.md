@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891845"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ ms.locfileid: "49300179"
   
  下列清單說明對 XPath 運算式評估的某些限制。  
   
--   只允許內建 XPath 函式。  
+- 只允許內建 XPath 函式。  
   
--   不允許內建 XSLT 函式，如 `document()`、`key()` 等。  
+- 不允許內建 XSLT 函式，如 `document()`、`key()` 等。  
   
--   不允許使用者定義函式。  
+- 不允許使用者定義函式。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 如何： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。  
   
 ## <a name="disassembly-window"></a>反組譯碼視窗  
  [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870259"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組或功能表的功能表。 藉由使用 CommandPlacement 元素，您不必完全重新定義這些項目，若要修改的使用者介面外觀。  

@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839423"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49243813"
 ## <a name="project-subtype-design"></a>專案子類型設計  
  專案子類型的初始設定之後，即可彙總主<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>物件。 此彙總可以覆寫或增強功能的基底專案的大部分專案子類型。 專案子類型有機會先處理使用的屬性<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>，使用的命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>，和專案項目管理使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>。 此外，也可以擴充專案子類型：  
   
--   專案組態的物件。  
+- 專案組態的物件。  
   
--   設定相依的物件。  
+- 設定相依的物件。  
   
--   設定獨立瀏覽的物件。  
+- 設定獨立瀏覽的物件。  
   
--   專案 automation 物件。  
+- 專案 automation 物件。  
   
--   專案自動化屬性集合。  
+- 專案自動化屬性集合。  
   
- 如需有關專案子類型所擴充性的詳細資訊，請參閱[屬性和方法擴充的專案子類型](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)。  
+  如需有關專案子類型所擴充性的詳細資訊，請參閱[屬性和方法擴充的專案子類型](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)。  
   
 ##### <a name="policy-files"></a>原則檔  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境提供的擴充原則檔案的實作中的專案子類型與基底專案系統的範例。 原則檔可讓的成形[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由管理功能，包括方案總管 中，環境**加入專案** 對話方塊中，**加入新項目** 對話方塊中， **屬性** 對話方塊。 原則的子類型會覆寫，並增強這些功能透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>，`IOleCommandTarget`和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>實作。  
