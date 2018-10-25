@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901186"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -51,7 +51,7 @@ ms.locfileid: "32425121"
 
 > [!NOTE]
 > 當您定義新的方案組態並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將新的組態自動指派給所有專案。 同樣地，當您定義新的方案平台並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將新的平台自動指派給所有專案。 此外，如果您加入以新平台為目標的專案，Visual Studio 會將該平台加入方案平台清單中，並指派給所有專案。
->
+> 
 > 您仍然可以修改每個專案的設定。
 
 使用中的方案組態也會提供 IDE 的內容。 例如，如果您正在處理某個專案，且組態指定這個專案是針對行動裝置所建置，則 [工具箱] 只會顯示可用於行動裝置專案中的項目。

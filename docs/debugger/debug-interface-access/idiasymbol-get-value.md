@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value |Microsoft 文件'
+title: 'Idiasymbol:: Get_value |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863733"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 擷取常數的值。  
@@ -34,16 +34,16 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [in、 out]A`VARIANT`填入這些常數值的物件。  
+ [in、 out]A`VARIANT`常數的值會填入的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 傳遞至這個方法之前，必須初始化所提供的 VARIANT。 如需詳細資訊，請參閱範例。  
+ 傳遞至這個方法之前，必須先初始化所提供的變數。 如需詳細資訊，請參閱範例。  
   
 ## <a name="example"></a>範例  
   

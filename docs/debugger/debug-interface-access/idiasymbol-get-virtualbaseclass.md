@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbaseclass |Microsoft 文件'
+title: 'Idiasymbol:: Get_virtualbaseclass |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a70bbf139301498425052886545ca6c3b668438
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9e4c75cd24940a4a16f3a4ad25ea6837e165de6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949444"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 擷取指定的使用者定義資料類型是否為虛擬基底類別的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_virtualBaseClass (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果使用者定義資料類型是虛擬基底類別; 否則會傳回`FALSE`。  
+ [out]會傳回`TRUE`使用者定義資料類型是虛擬的基底類別; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

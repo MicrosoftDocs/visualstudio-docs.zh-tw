@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::IsClosedType |Microsoft 文件
+title: IDebugExtendedField::IsClosedType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00c1e8bc4eba53a3109f08dc1b8d17c2901612c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 418a25fb5b23bcedf53b0b1af8fe8ddae0bc48c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863083"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
-決定是否表示封閉的類型欄位。  
+決定是否表示封閉式的型別欄位。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ int IsClosedType();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果欄位是封閉的型別，會傳回`S_OK`; 否則傳回`S_FALSE`。  
+ 如果欄位是封閉式的型別，會傳回`S_OK`; 否則傳回`S_FALSE`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914810"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
 取樣資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。  
@@ -27,21 +27,21 @@ ms.locfileid: "34845086"
   
  在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。 陳述式是由下列項目識別：  
   
--   包含此函式陳述式的原始程式檔。  
+- 包含此函式陳述式的原始程式檔。  
   
--   包含此陳述式的函式。  
+- 包含此陳述式的函式。  
   
--   此陳述式在原始程式檔中開始的行位置。  
+- 此陳述式在原始程式檔中開始的行位置。  
   
--   此陳述式在原始程式檔中開始的字元。  
+- 此陳述式在原始程式檔中開始的字元。  
   
--   此陳述式在原始程式檔中結束的行位置。  
+- 此陳述式在原始程式檔中結束的行位置。  
   
--   此陳述式在原始程式檔中結束的字元。  
+- 此陳述式在原始程式檔中結束的字元。  
   
- [程式行名稱] 資料行提供識別項資料的可排序串連。  
+  [程式行名稱] 資料行提供識別項資料的可排序串連。  
   
- 根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
+  根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
 |資料行|描述|  
 |------------|-----------------|  

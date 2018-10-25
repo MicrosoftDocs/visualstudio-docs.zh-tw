@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950132"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>將物件繫結做為 Visual Studio 中的資料來源
 
@@ -137,7 +137,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 Visual Studio 會建立可直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。
 
 |TableAdapter DBDirect 方法|描述|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|將新的記錄加入至資料庫，可讓您在個別的資料行值做為方法參數傳遞。|
 |`TableAdapter.Update`|更新現有的資料庫中的記錄。 更新方法會接受原始及新的資料行值作為方法參數。 原始的值用來找出原始記錄中，與新的值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也會用來協調回資料庫，資料集內的變更，藉由採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或陣列<xref:System.Data.DataRow>做為方法參數。|
 |`TableAdapter.Delete`|刪除現有記錄從資料庫根據原始的資料行值傳遞為方法參數。|

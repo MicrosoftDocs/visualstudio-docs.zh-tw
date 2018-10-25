@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: db3bf8cbb205a76b414091b401de7e48c5c96a38
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 325883bed0b917aa24d7c4b02239472b95d3e513
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892654"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說： 將資料插入的伺服器上的活頁簿
   本逐步解說示範如何將資料插入的資料集，Microsoft Office Excel 活頁簿中快取不會啟動 Excel 使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。
@@ -33,17 +33,17 @@ ms.locfileid: "36758883"
 
  這個逐步解說將說明下列工作：
 
--   定義包含在 AdventureWorksLT 資料庫中的資料的資料集。
+- 定義包含在 AdventureWorksLT 資料庫中的資料的資料集。
 
--   在 Excel 活頁簿專案] 和 [主控台應用程式專案中建立資料集的執行個體。
+- 在 Excel 活頁簿專案] 和 [主控台應用程式專案中建立資料集的執行個體。
 
--   建立<xref:Microsoft.Office.Tools.Excel.ListObject>繫結至活頁簿中的資料集。
+- 建立<xref:Microsoft.Office.Tools.Excel.ListObject>繫結至活頁簿中的資料集。
 
--   新增活頁簿中的資料集，資料快取。
+- 新增活頁簿中的資料集，資料快取。
 
--   將資料插入至快取的資料集執行主控台應用程式中的程式碼，而不啟動 Excel。
+- 將資料插入至快取的資料集執行主控台應用程式中的程式碼，而不啟動 Excel。
 
- 雖然本逐步解說假設您的開發電腦上執行的程式碼，本逐步解說所示範的程式碼可用並沒有 Excel 安裝在伺服器上。
+  雖然本逐步解說假設您的開發電腦上執行的程式碼，本逐步解說所示範的程式碼可用並沒有 Excel 安裝在伺服器上。
 
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -93,29 +93,29 @@ ms.locfileid: "36758883"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>若要定義類別庫專案中的具類型資料集
 
-1.  在 **方案總管**，按一下**AdventureWorksDataSet**專案。
+1. 在 **方案總管**，按一下**AdventureWorksDataSet**專案。
 
-2.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
+2. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
 
-3.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
+3. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-4.  按一下 [ **資料庫**]，然後按 [ **下一步**]。
+4. 按一下 [ **資料庫**]，然後按 [ **下一步**]。
 
-5.  如果您有現有的連線到 AdventureWorksLT 資料庫，請選擇此連線，然後按一下 [**下一步]**。
+5. 如果您有現有的連線到 AdventureWorksLT 資料庫，請選擇此連線，然後按一下 [**下一步]**。
 
-     否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料庫中的資料](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
+    否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料庫中的資料](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
 
-6.  在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
+6. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
-7.  在 **選擇您的資料庫物件**頁面上，展開**資料表**，然後選取**Product (SalesLT)**。
+7. 在 **選擇您的資料庫物件**頁面上，展開**資料表**，然後選取**Product (SalesLT)**。
 
-8.  按一下 [ **完成**]。
+8. 按一下 [ **完成**]。
 
-     *AdventureWorksLTDataSet.xsd*檔案新增至**AdventureWorksDataSet**專案。 這個檔案會定義下列項目：
+    *AdventureWorksLTDataSet.xsd*檔案新增至**AdventureWorksDataSet**專案。 這個檔案會定義下列項目：
 
-    -   具類型資料集，名稱為 `AdventureWorksLTDataSet`。 此資料集代表 AdventureWorksLT 資料庫中的 [Product] 資料表的內容。
+   - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 此資料集代表 AdventureWorksLT 資料庫中的 [Product] 資料表的內容。
 
-    -   名為 TableAdapter `ProductTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+   - 名為 TableAdapter `ProductTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      您將在本逐步解說稍後用到這兩個物件。
 
@@ -182,7 +182,7 @@ ms.locfileid: "36758883"
 
 3.  拖曳**產品**A1 儲存格的資料表。
 
-     A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為`productListObject`上的工作表中，然後再啟動儲存格 A1 中建立。 同時間，名為 `adventureWorksLTDataSet` 的資料集物件，和名為 `productBindingSource` 的 <xref:System.Windows.Forms.BindingSource> 會加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 會繫結至 <xref:System.Windows.Forms.BindingSource>，而後者則繫結至資料集物件。
+     A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為`productListObject`上的工作表中，然後再啟動儲存格 A1 中建立。 同時間，名為 `adventureWorksLTDataSet` 的資料集物件，和名為 <xref:System.Windows.Forms.BindingSource> 的 `productBindingSource` 會加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>將資料集加入至資料快取
  若要啟用外部存取活頁簿中的資料集的 Excel 活頁簿專案的程式碼，您必須新增資料集的資料快取。 如需有關資料快取的詳細資訊，請參閱[快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)並[快取資料](../vsto/caching-data.md)。
@@ -228,44 +228,44 @@ ms.locfileid: "36758883"
 
 ### <a name="to-add-data-to-the-cached-dataset"></a>若要將資料加入至快取的資料集
 
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下**資料寫入元**專案，然後按一下**加入參考**。
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下**資料寫入元**專案，然後按一下**加入參考**。
 
-2.  在  **.NET**索引標籤上，選取**microsoft.visualstudio.tools.applications.serverdocument 的參考**。
+2. 在  **.NET**索引標籤上，選取**microsoft.visualstudio.tools.applications.serverdocument 的參考**。
 
-3.  按一下 [確定 **Deploying Office Solutions**]。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
-4.  在 [**方案總管] 中**，以滑鼠右鍵按一下**資料寫入元**專案，然後按一下**加入參考**。
+4. 在 [**方案總管] 中**，以滑鼠右鍵按一下**資料寫入元**專案，然後按一下**加入參考**。
 
-5.  在上**專案**索引標籤上，選取**AdventureWorksDataSet**，然後按一下**確定**。
+5. 在上**專案**索引標籤上，選取**AdventureWorksDataSet**，然後按一下**確定**。
 
-6.  開啟*Program.cs*或是*Module1.vb*檔案在程式碼編輯器。
+6. 開啟*Program.cs*或是*Module1.vb*檔案在程式碼編輯器。
 
-7.  新增下列**使用**（適用於 C#) 或**匯入**（適用於 Visual Basic) 陳述式的程式碼檔案頂端。
+7. 新增下列**使用**（適用於 C#) 或**匯入**（適用於 Visual Basic) 陳述式的程式碼檔案頂端。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8.  將下列程式碼加入至 `Main` 方法。 此程式碼會宣告下列物件：
+8. 將下列程式碼加入至 `Main` 方法。 此程式碼會宣告下列物件：
 
-    -   執行個體`AdventureWorksLTDataSet`並`ProductTableAdapter`中所定義的型別**AdventureWorksDataSet**專案。
+   - 執行個體`AdventureWorksLTDataSet`並`ProductTableAdapter`中所定義的型別**AdventureWorksDataSet**專案。
 
-    -   AdventureWorksReport 活頁簿中的 [組建] 資料夾的路徑**AdventureWorksReport**專案。
+   - AdventureWorksReport 活頁簿中的 [組建] 資料夾的路徑**AdventureWorksReport**專案。
 
-    -   A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>物件，用來存取活頁簿中的資料快取。
+   - A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>物件，用來存取活頁簿中的資料快取。
 
-        > [!NOTE]
-        >  下列程式碼假設您使用具有的活頁簿 *.xlsx*副檔名。 如果您的專案中的活頁簿會有不同的檔案副檔名，修改視的路徑。
+     > [!NOTE]
+     >  下列程式碼假設您使用具有的活頁簿 *.xlsx*副檔名。 如果您的專案中的活頁簿會有不同的檔案副檔名，修改視的路徑。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
 
 9. 將下列程式碼加入`Main`方法中，您在上一個步驟中新增的程式碼之後。 這個程式碼會執行下列工作：
 
-    -   使用資料表配接器填入的具類型資料集物件。
+   - 使用資料表配接器填入的具類型資料集物件。
 
-    -   它會使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>屬性<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別來存取活頁簿中快取的資料集。
+   - 它會使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>屬性<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別來存取活頁簿中快取的資料集。
 
-    -   它會使用<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A>方法來填入快取的資料集，以從本機的具類型資料集的資料。
+   - 它會使用<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A>方法來填入快取的資料集，以從本機的具類型資料集的資料。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]

@@ -15,12 +15,12 @@ ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6854b4895ff03d575a3d26fad0e1117debf932f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c5e1cba339ab89957a942968acbb88f2204a6af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907855"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>將屬性新增至專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 371f027782c4cf598bb234107e94aaea2bc896fc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 30aea58afe014a4b6e19b32c03c780c129ec479d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896045"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 宣告不可為安全關鍵
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
 |CheckId|CA5122|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -38,7 +39,6 @@ public class C
     [DllImport("kernel32.dll")]
     public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke
    }
-
 ```
 
  在此範例中，`C.Beep(...)` 已標記為安全性安全關鍵方法。
@@ -64,7 +64,6 @@ class C
       return BeepPInvoke(frequency, duration);
    }
 }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機

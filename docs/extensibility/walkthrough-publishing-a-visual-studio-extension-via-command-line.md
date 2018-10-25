@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883350"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說： 發行的 Visual Studio 擴充功能，透過命令列
 
@@ -33,12 +33,12 @@ VsixPublisher.exe 是發佈至 Marketplace 的 Visual Studio 擴充功能的命�
 
 將延伸模組發佈至 Marketplace。 Vsix、 exe/msi 檔案或連結，可以是延伸模組。 如果延伸模組已存在具有相同的版本，它會覆寫擴充功能。 如果延伸模組不存在，它會建立新的延伸模組。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|裝載 （必要）                 |  若要發行裝載或做為 「 詳細資訊 URL 」 的連結可能是路徑。      |
-|publishManifest （必要）         |  發行路徑資訊清單使用的檔案。       |
-|ignoreWarnings                     |  發行擴充功能時，忽略警告的清單。 發行延伸模組時，這些警告會顯示為命令列的訊息。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
-|personalAccesToken                 |  個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。       |
+|裝載 （必要） | 若要發行裝載或做為 「 詳細資訊 URL 」 的連結可能是路徑。 |
+|publishManifest （必要） | 發行路徑資訊清單使用的檔案。 |
+|ignoreWarnings | 發行擴充功能時，忽略警告的清單。 發行延伸模組時，這些警告會顯示為命令列的訊息。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
+|personalAccesToken | 個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。 |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 在 Marketplace 上建立 「 發行者 」。 也會記錄 「 發行者 」 端插入後續的動作 （例如刪除/發佈擴充功能） 的機器。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|displayName （必要）             |  發行者顯示名稱。      |
-|publisherName （必要）           |  「 發行者 」 （例如，識別項） 的名稱。      |
-|personalAccessToken （必要）     |  個人存取權杖，用來驗證 「 發行者 」。      |
-|shortDescription                   |  「 發行者 」 （不是檔案） 的簡短描述。       |
-|longDescription                    |  「 發行者 」 （不是檔案） 的詳細描述。      |
+|displayName （必要） | 發行者顯示名稱。 |
+|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
+|personalAccessToken （必要） | 個人存取權杖，用來驗證 「 發行者 」。 |
+|shortDescription | 「 發行者 」 （不是檔案） 的簡短描述。 |
+|longDescription | 「 發行者 」 （不是檔案） 的詳細描述。 |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 刪除在 Marketplace 上的 「 發行者 」。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|publisherName （必要）           |  「 發行者 」 （例如，識別項） 的名稱。      |
-|personalAccessToken （必要）     |  個人存取權杖，用來驗證 「 發行者 」。      |
+|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
+|personalAccessToken （必要） | 個人存取權杖，用來驗證 「 發行者 」。 |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 從 Marketplace 刪除延伸模組。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|extensionName （必要）           |  若要刪除延伸模組的名稱。      |
-|publisherName （必要）           |  「 發行者 」 （例如，識別項） 的名稱。      |
-|personalAccessToken                |  個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。     |
+|extensionName （必要） | 若要刪除延伸模組的名稱。 |
+|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
+|personalAccessToken | 個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。 |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 登入電腦的 「 發行者 」。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|personalAccessToken （必要項      |  個人存取權杖，用來驗證 「 發行者 」。      |
-|publisherName （必要）           |  「 發行者 」 （例如，識別項） 的名稱。      |
-|覆寫                          |  指定應該在新的個人存取權杖與覆寫任何現有的發行者。     |
+|personalAccessToken （必要項 | 個人存取權杖，用來驗證 「 發行者 」。 |
+|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
+|覆寫 | 指定應該在新的個人存取權杖與覆寫任何現有的發行者。 |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 記錄從機器傳出的 「 發行者 」。
 
-|命令選項                    |描述  |
+|命令選項 |描述 |
 |---------|---------|
-|publisherName （必要）           |  「 發行者 」 （例如，識別項） 的名稱。      |
-|ignoreMissingPublisher             |  指定此工具應該沒有錯誤，是否指定的發行者是未已登入。     |
+|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
+|ignoreMissingPublisher | 指定此工具應該沒有錯誤，是否指定的發行者是未已登入。 |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

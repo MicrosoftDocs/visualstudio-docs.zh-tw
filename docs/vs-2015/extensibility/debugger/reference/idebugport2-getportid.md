@@ -17,12 +17,12 @@ ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d09cbd477c645de051589a9501607ac355138709
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13707e3ba47cc687d92c93e42032603bd593a177
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892515"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883025"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說： 下載附屬組件，依需求以 ClickOnce 部署 API
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。  
@@ -45,24 +45,24 @@ ms.locfileid: "44281217"
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>隨需下載附屬組件  
   
-1.  將下列程式碼加入您的應用程式，以便能夠隨需下載附屬組件。  
+1. 將下列程式碼加入您的應用程式，以便能夠隨需下載附屬組件。  
   
-     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+2. 使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-3.  產生應用程式資訊清單，或藉由開啟現有的應用程式資訊清單*MageUI.exe*。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
+3. 產生應用程式資訊清單，或藉由開啟現有的應用程式資訊清單*MageUI.exe*。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
   
-4.  按一下 [檔案]  索引標籤。  
+4. 按一下 [檔案]  索引標籤。  
   
-5.  按一下 **省略符號** 按鈕 (**...**)，然後選取 包含的所有應用程式的組件和檔案，包括使用產生的附屬組件的目錄*Resgen.exe*。 (附屬組件都會有名稱形式 *\<isoCode > \ApplicationName.resources.dll*，其中\<isoCode > 是 RFC 1766 格式的語言識別項。)  
+5. 按一下 **省略符號** 按鈕 (**...**)，然後選取 包含的所有應用程式的組件和檔案，包括使用產生的附屬組件的目錄*Resgen.exe*。 (附屬組件都會有名稱形式 *\<isoCode > \ApplicationName.resources.dll*，其中\<isoCode > 是 RFC 1766 格式的語言識別項。)  
   
-6.  按一下 [填入]  將檔案加入您的部署。  
+6. 按一下 [填入]  將檔案加入您的部署。  
   
-7.  選取每個附屬組件的 [選擇性]  核取方塊。  
+7. 選取每個附屬組件的 [選擇性]  核取方塊。  
   
-8.  設定群組欄位到每個附屬組件的 ISO 語言識別項。 以日文的附屬組件為例，您會將下載群組名稱指定為 `ja-JP`取得。 這可讓您在步驟 1 加入的程式碼，根據使用者之 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定，下載適合的附屬組件。  
+8. 設定群組欄位到每個附屬組件的 ISO 語言識別項。 以日文的附屬組件為例，您會將下載群組名稱指定為 `ja-JP`取得。 這可讓您在步驟 1 加入的程式碼，根據使用者之 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定，下載適合的附屬組件。  
   
 ## <a name="next-steps"></a>後續步驟  
  在生產環境中，因為用戶端電腦上會有正確的預設值，所以您可能需要移除行程式碼範例中，將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的行。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署您的應用程式之前，以程式設計方式設定這個值以測試附屬組件，是個好方法。  

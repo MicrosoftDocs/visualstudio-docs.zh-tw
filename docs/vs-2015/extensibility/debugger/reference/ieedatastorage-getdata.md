@@ -17,12 +17,12 @@ ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be6b411ae5881dbcfcfc51de98d5b67cd57e8048
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33ca85529b67b78096f7d9a0fa5fc5e89cd674f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874094"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

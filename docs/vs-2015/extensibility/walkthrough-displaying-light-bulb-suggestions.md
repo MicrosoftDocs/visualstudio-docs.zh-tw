@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869050"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說︰顯示燈泡建議
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ ms.locfileid: "49252495"
   
  在 Visual C# 和 Visual Basic 編輯器中，您也可以撰寫和封裝您自己的程式碼分析器會自動顯示燈泡動作，以使用.NET 編譯器平台 ("Roslyn")。 如需詳細資訊，請參閱:  
   
--   [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- C + + 等其他語言也會提供燈泡一些快速動作，例如建立該函式的虛設常式實作的建議。  
+  C + + 等其他語言也會提供燈泡一些快速動作，例如建立該函式的虛設常式實作的建議。  
   
- 以下是燈泡的樣貌。 在 Visual Basic 或 Visual C# 專案中，紅色波浪線會出現在變數名稱無效時。 當您將滑鼠移無效的識別項時，燈泡會顯示游標周圍。  
+  以下是燈泡的樣貌。 在 Visual Basic 或 Visual C# 專案中，紅色波浪線會出現在變數名稱無效時。 當您將滑鼠移無效的識別項時，燈泡會顯示游標周圍。  
   
- ![燈泡](../extensibility/media/lightbulb.png "燈泡")  
+  ![燈泡](../extensibility/media/lightbulb.png "燈泡")  
   
- 如果您按一下燈泡向下箭號，一組建議的動作會顯示，以及 預覽選取的動作。 在此情況下，它會顯示如果您執行此動作會對您的程式碼的變更。  
+  如果您按一下燈泡向下箭號，一組建議的動作會顯示，以及 預覽選取的動作。 在此情況下，它會顯示如果您執行此動作會對您的程式碼的變更。  
   
- ![燈泡預覽](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![燈泡預覽](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- 您可以使用燈泡，提供您自己的建議的動作。 比方說，您可以提供要移動開啟至新的一行的大括號，或將它們移至前一行結尾的動作。 下列逐步解說將示範如何建立燈泡出現在目前的字組，並有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
+  您可以使用燈泡，提供您自己的建議的動作。 比方說，您可以提供要移動開啟至新的一行的大括號，或將它們移至前一行結尾的動作。 下列逐步解說將示範如何建立燈泡出現在目前的字組，並有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

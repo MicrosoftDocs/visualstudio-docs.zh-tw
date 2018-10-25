@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872976"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "49202887"
   
  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
- 本節介紹可記錄及播放 Excel 工作表測試的自動程式碼 UI 測試擴充功能。 本節將說明該擴充功能的每個部分，想要建立此類擴充功能的開發人員可搭配程式碼註解依序操作。  
+  本節介紹可記錄及播放 Excel 工作表測試的自動程式碼 UI 測試擴充功能。 本節將說明該擴充功能的每個部分，想要建立此類擴充功能的開發人員可搭配程式碼註解依序操作。  
   
- ![UI 測試架構](../test/media/ui-testarch.png "UI_TestArch")  
-架構概觀  
+  ![UI 測試架構](../test/media/ui-testarch.png "UI_TestArch")  
+  架構概觀  
   
 ## <a name="download-the-sample"></a>下載範例  
  此範例包含 `CodedUIExtensibilitySample.sln` 解決方案中的四個專案：  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- 從這篇[部落格文章 (英文)](http://go.microsoft.com/fwlink/?LinkID=185592) 取得範例。  
+  從這篇[部落格文章 (英文)](http://go.microsoft.com/fwlink/?LinkID=185592) 取得範例。  
   
 > [!NOTE]
 >  此範例主要搭配 Microsoft Excel 2010 使用。 此範例可搭配其他版本的 Microsoft Excel 使用，但目前不支援。  

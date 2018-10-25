@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896441"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本，以及如何使用它們。 
@@ -95,17 +95,17 @@ ms.locfileid: "37118631"
 ### <a name="event-receiver"></a>事件接收器
  *事件接收器*處理事件的 SharePoint 網站，例如項目新增至清單時，web 項目刪除時，或啟動時，工作流程中的項目。 事件接收器專案項目範本可讓您處理  
   
--   列出的事件  
+- 列出的事件  
   
--   清單項目事件  
+- 清單項目事件  
   
--   列出的電子郵件事件  
+- 列出的電子郵件事件  
   
--   Web 事件  
+- Web 事件  
   
--   清單工作流程事件  
+- 清單工作流程事件  
   
- 建立事件接收器的專案項目**事件接收器**資料夾，並包含所有事件的事件處理常式，當您建立的專案中指定單一類別檔案**SharePoint 自訂精靈**。 事件接收器類別可以處理項目，例如檔案、 欄位、 項目、 清單、 附件、 web 組件和工作流程會新增、 更新、 刪除或移除時，在 SharePoint 網站發生的事件。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)並[建置組塊： 事件處理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
+  建立事件接收器的專案項目**事件接收器**資料夾，並包含所有事件的事件處理常式，當您建立的專案中指定單一類別檔案**SharePoint 自訂精靈**。 事件接收器類別可以處理項目，例如檔案、 欄位、 項目、 清單、 附件、 web 組件和工作流程會新增、 更新、 刪除或移除時，在 SharePoint 網站發生的事件。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)並[建置組塊： 事件處理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
   
 ### <a name="list"></a>清單  
  清單是可重複使用基底 SharePoint 清單定義，例如行事曆] 或 [工作清單的執行個體。 之後您可以將清單加入您的解決方案，清單設計工具可讓您將網站資料行新增至清單，並建立自訂的清單資料行。 這包括從內容類型的網站資料行。 您可以指定*檢視*針對清單中，以決定將會出現在清單中的資料行。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)並[建置組塊： 清單和文件庫](http://go.microsoft.com/fwlink/?LinkId=179421)。  
@@ -125,13 +125,13 @@ ms.locfileid: "37118631"
 ### <a name="site-definition-farm-solution-only"></a>站台定義 （僅限陣列方案）
  *網站定義*專案項目包含站台定義資料夾，其中包含下列檔案：  
   
--   預設的.aspx 網頁，作為站台預設網頁。  
+- 預設的.aspx 網頁，作為站台預設網頁。  
   
--   *Onet.xml*定義站台元件的檔案。  
+- *Onet.xml*定義站台元件的檔案。  
   
--   指定出現在站台定義設定 webtemp xml 檔案**範本選擇**一節**新的 SharePoint 網站**頁面。  
+- 指定出現在站台定義設定 webtemp xml 檔案**範本選擇**一節**新的 SharePoint 網站**頁面。  
   
- 新增網站定義之後，您可以加入程式碼和檔案引入功能。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立的 SharePoint 網站定義](../sharepoint/creating-site-definitions-for-sharepoint.md)並[網站定義和組態](http://go.microsoft.com/fwlink/?LinkId=260554)。  
+  新增網站定義之後，您可以加入程式碼和檔案引入功能。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立的 SharePoint 網站定義](../sharepoint/creating-site-definitions-for-sharepoint.md)並[網站定義和組態](http://go.microsoft.com/fwlink/?LinkId=260554)。  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>狀態機器工作流程 （僅限陣列方案）
  A*狀態機器工作流程*是一組商務邏輯狀態、 轉換及動作。 狀態機器工作流程中的步驟不會在序列中，執行相反地，它們會觸發動作和狀態。 循序工作流程，例如狀態機器工作流程是 SharePoint 項目，例如清單和文件相關聯。 同樣地，您可以建立站台層級 （全域） 的工作流程或清單層級 （本機）。 您也可以選取是否自動或手動啟動的工作流程。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 工作流程解決方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流程](http://go.microsoft.com/fwlink/?LinkId=260555)，並[What's New： 工作流程改進](http://go.microsoft.com/fwlink/?LinkId=179418)。  

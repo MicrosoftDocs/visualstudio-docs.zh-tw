@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919737"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -34,17 +34,17 @@ ms.locfileid: "43224356"
 
 1. 啟動 **Visual Studio for Mac**。
 
-1. 選取 [檔案] > [新增方案]。
+2. 選取 [檔案] > [新增方案]。
 
-1. 從 [雲端] > [一般] 類別，選取 [Azure Functions] 範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [ **下一步**]。
+3. 從 [雲端] > [一般] 類別，選取 [Azure Functions] 範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [ **下一步**]。
 
     ![選取 [Azure Functions] 範本](media/azure-functions-lab-image1.png)
 
-1. 將 [專案名稱] 設定為 **"AzureFunctionsLab"**，然後按一下 [建立]。
+4. 將 [專案名稱] 設定為 **"AzureFunctionsLab"**，然後按一下 [建立]。
 
     ![命名及建立您的 Azure Functions 專案](media/azure-functions-lab-image2.png)
 
-1. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。 
+5. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。 
 
      還有三個檔案：  
         - **host.json**：用於描述主機的全域設定選項  

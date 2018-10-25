@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d0bb507f1f8be2fb17fac1e9440d6a628ca5985
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3913185fe0d4348dd8288aa61b4875df74f3edcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890825"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

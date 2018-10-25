@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877253"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 
@@ -117,53 +117,53 @@ ms.locfileid: "39382725"
 
 ##  <a name="make_functions_visible"></a> 將測試專案結合至 DLL 專案
 
-1.  將 DLL 專案加入測試專案的專案參考中：
+1. 將 DLL 專案加入測試專案的專案參考中：
 
-    1.  開啟測試專案的屬性，然後選擇 [通用屬性] > [架構和參考]。
+   1.  開啟測試專案的屬性，然後選擇 [通用屬性] > [架構和參考]。
 
-         ![C++ 專案屬性 | 架構和參考](../test/media/utecpp08.png)
+        ![C++ 專案屬性 | 架構和參考](../test/media/utecpp08.png)
 
-    2.  選擇 [加入新參考] 。
+   2.  選擇 [加入新參考] 。
 
-         在 [加入參考]  對話方塊中，選取 DLL 專案，並選擇 [加入] 。
+        在 [加入參考]  對話方塊中，選取 DLL 專案，並選擇 [加入] 。
 
-         ![C++ 專案屬性 | 新增參考](../test/media/utecpp09.png)
+        ![C++ 專案屬性 | 新增參考](../test/media/utecpp09.png)
 
-2.  在主體單元測試 *.cpp* 檔案中，新增 DLL 程式碼的 *.h* 檔案：
+2. 在主體單元測試 *.cpp* 檔案中，新增 DLL 程式碼的 *.h* 檔案：
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  加入使用匯出函式的基本測試：
+3. 加入使用匯出函式的基本測試：
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  建置方案。
+4. 建置方案。
 
-     新測試會出現在 [測試總管] 中。
+    新測試會出現在 [測試總管] 中。
 
-5.  在 [測試總管] 中，選擇 [全部執行]。
+5. 在 [測試總管] 中，選擇 [全部執行]。
 
-     ![[單元測試總管] &#45;「基本測試」成功](../test/media/utecpp10.png)
+    ![[單元測試總管] &#45;「基本測試」成功](../test/media/utecpp10.png)
 
- 您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
+   您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
 ##  <a name="iterate"></a> 反覆擴大測試範圍並使其通過
 

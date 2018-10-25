@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876551"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
 包含傳遞至 `UsingTask` `TaskFactory` 的資料。 如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -55,9 +55,9 @@ ms.locfileid: "39567386"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供一種方式，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。|  
+| 元素 | 描述 |
+| - | - |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | 提供一種方式，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。 |
 
 ## <a name="example"></a>範例  
  下列範例示範如何使用具有 `Evaluate` 屬性的 `TaskBody` 項目。  

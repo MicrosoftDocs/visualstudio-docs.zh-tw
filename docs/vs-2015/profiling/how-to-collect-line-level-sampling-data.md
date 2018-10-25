@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893412"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49198584"
 ### <a name="available-data"></a>可用的資料  
  可用的程式行層級取樣資料包含下列資訊︰  
   
--   函式名稱。  
+- 函式名稱。  
   
--   函式位址。  
+- 函式位址。  
   
--   行開頭 – 取樣程式碼的行號。  
+- 行開頭 – 取樣程式碼的行號。  
   
--   行結尾 – 結束原始程式碼行號。 這通常與「行開頭」資料相同，除非單一程式陳述式跨越多個原始程式碼行。  
+- 行結尾 – 結束原始程式碼行號。 這通常與「行開頭」資料相同，除非單一程式陳述式跨越多個原始程式碼行。  
   
--   字元開頭 – 彙總樣本開頭的資料行。 這通常是 0，除非一行包含多個程式陳述式。  
+- 字元開頭 – 彙總樣本開頭的資料行。 這通常是 0，除非一行包含多個程式陳述式。  
   
--   字元結尾 – 彙總樣本結尾的資料行。  
+- 字元結尾 – 彙總樣本結尾的資料行。  
   
--   IP - 取得彙總樣本的位址 (僅限 IP 檢視)。  
+- IP - 取得彙總樣本的位址 (僅限 IP 檢視)。  
   
- 在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。  
+  在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉 Managed 程式碼的程式行層級取樣  
  程式行層級取樣預設為開啟。 您可以執行下列其中一項動作以關閉 Managed 程式碼的程式行層級資料收集︰  

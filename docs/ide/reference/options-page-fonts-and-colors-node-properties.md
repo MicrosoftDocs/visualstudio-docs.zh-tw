@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf39d9a01794e34a50d81489214bb006e4c6448
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926575"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項] 對話方塊的 [環境] 類別的 [字型和色彩] 中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。
@@ -37,7 +37,7 @@ ms.locfileid: "31944683"
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |FontFamily|Get/Set (字串)|要使用的字型名稱，例如「新細明體」。|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字元集類型，例如希伯來文或俄文。|
 |FontSize|Get/Set (短整數)|要使用的字型大小，以點為單位。 例如 10 或 12。|

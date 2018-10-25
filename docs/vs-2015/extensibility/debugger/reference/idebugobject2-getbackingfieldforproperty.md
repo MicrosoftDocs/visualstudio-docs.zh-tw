@@ -17,12 +17,12 @@ ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10f6c5b8a3da4539bfbe2efce23bd29a10f257ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7a3d7e1df6f7f8aad5c829eaa586d0900ac7147
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913679"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

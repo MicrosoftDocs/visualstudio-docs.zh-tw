@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_arrayindextype |Microsoft 文件'
+title: 'Idiasymbol:: Get_arrayindextype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882401"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
-擷取符號的陣列索引類型的符號介面。  
+擷取之型別的陣列索引符號的符號介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_arrayIndexType (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示符號的陣列索引類型。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示符號的陣列索引型別。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 某些語言可以指定為陣列的索引所使用的類型。 從這個方法傳回的符號指定該型別。  
+ 某些語言，可以指定為陣列的索引所使用的類型。 從這個方法傳回的符號指定該型別。  
   
 ## <a name="requirements"></a>需求  
   

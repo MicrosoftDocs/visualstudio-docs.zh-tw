@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861107"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。
 
 |若要執行這項操作|請執行|
-|-----------------------|-------------|
+| - |-------------|
 |在其他工具仍為選取狀態時，暫時選取[選取] 工具 (這樣可減少您必須在 [工具] 面板中，於 [選取] 工具和其他工具間來回選取項目的次數)|按住 **Ctrl**|
 |在已選取 [選取] 工具時，微調選取的物件|按下方向鍵|
 |移動瀏覽畫板|按住空格鍵，然後拖曳畫板|

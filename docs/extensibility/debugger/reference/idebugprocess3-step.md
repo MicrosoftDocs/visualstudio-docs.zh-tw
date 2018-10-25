@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step |Microsoft 文件
+title: IDebugProcess3::Step |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc19c339e5d53bc9dde13ebd4a1bbddd214810c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872248"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-導致程序逐步執行一個指令或陳述式。  
+讓逐步一指令或陳述式的處理序。  
   
 > [!NOTE]
 >  應該使用這個方法，而不是[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)。  
@@ -48,7 +48,7 @@ int Step(
   
 #### <a name="parameters"></a>參數  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表要逐步執行的執行緒。  
+ [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示正在逐步執行的執行緒。  
   
  `sk`  
  [in]其中一個[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)值。  
@@ -60,9 +60,9 @@ int Step(
  如果成功，會傳回 S_OK;否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 萬一有任何執行緒同步處理或執行緒之間的通訊，在特定執行緒逐步執行時，就應該會執行處理程序中的其他執行緒。  
+ 如果沒有任何執行緒同步處理或執行緒之間的通訊，當特定的執行緒逐步執行時，就應該會執行程序中的其他執行緒。  
   
- **警告**不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
+ **警告**不會傳送停止事件或即時 （同步） 事件，以[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

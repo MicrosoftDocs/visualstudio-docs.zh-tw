@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924222"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何： 讀取和寫入文件屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。  
@@ -35,13 +35,13 @@ ms.locfileid: "35671675"
 ## <a name="set-document-properties-in-excel"></a>在 Excel 中的設定文件屬性  
  若要處理 Excel 的內建屬性，請使用下列屬性:  
   
--   在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 類別的 `ThisWorkbook` 屬性。  
+- 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 類別的 `ThisWorkbook` 屬性。  
   
--   在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Workbook> 屬性。  
+- 在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Workbook> 屬性。  
   
- 這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
+  這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
   
- 下列程式碼範例說明如何變更文件層級專案的內建 **Revision Number** 屬性。  
+  下列程式碼範例說明如何變更文件層級專案的內建 **Revision Number** 屬性。  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>變更 Excel 的修訂編號屬性  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35671675"
 ## <a name="set-document-properties-in-word"></a>在 Word 中的設定文件屬性  
  若要處理 Word 的內建屬性，請使用下列屬性:  
   
--   在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 類別的 `ThisDocument` 屬性。  
+- 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 類別的 `ThisDocument` 屬性。  
   
--   在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Document> 屬性。  
+- 在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Document> 屬性。  
   
- 這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
+  這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
   
- 下列程式碼範例說明如何變更文件層級專案的內建 **Subject** 屬性。  
+  下列程式碼範例說明如何變更文件層級專案的內建 **Subject** 屬性。  
   
 ### <a name="to-change-the-subject-property"></a>變更主旨屬性  
   

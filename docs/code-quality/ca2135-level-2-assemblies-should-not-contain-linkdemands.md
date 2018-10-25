@@ -12,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d41310ba5c6e52add891a4a8d034c774f9f74d2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 08f8719a7b9434a774d00003a1b135e18c06eacb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898183"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135：層級 2 組件不應該包含 LinkDemand
+
 |||
 |-|-|
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2135|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

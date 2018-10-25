@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877762"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,42 +53,42 @@ ms.locfileid: "49251975"
   
 #### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案  
   
-1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-2.  底下**專案類型**，展開**其他專案類型**節點，然後按一下**擴充性**。  
+2. 底下**專案類型**，展開**其他專案類型**節點，然後按一下**擴充性**。  
   
-3.  按一下  **Domain-specific Language Designer**。  
+3. 按一下  **Domain-specific Language Designer**。  
   
-     ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+    ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-4.  在 **名稱**方塊中，輸入**列舉 FamilyTree**。 按一下 [確定 **Deploying Office Solutions**]。  
+4. 在 **名稱**方塊中，輸入**列舉 FamilyTree**。 按一下 [確定 **Deploying Office Solutions**]。  
   
-     **定義域專屬語言精靈**隨即開啟，並顯示範本 DSL 方案清單。  
+    **定義域專屬語言精靈**隨即開啟，並顯示範本 DSL 方案清單。  
   
-     按一下以查看描述，每個範本  
+    按一下以查看描述，每個範本  
   
-     此範本是很有用起始點。 每個提供完整運作的 DSL，您可以編輯以符合您的需求。 一般情況下，您會選擇最接近您要建立範本。  
+    此範本是很有用起始點。 每個提供完整運作的 DSL，您可以編輯以符合您的需求。 一般情況下，您會選擇最接近您要建立範本。  
   
-5.  此逐步解說中，選擇**最小語言**範本。  
+5. 此逐步解說中，選擇**最小語言**範本。  
   
-6.  在適當的精靈頁面中輸入 DSL 的副檔名。 這是包含 DSL 將使用之執行個體的檔案的副檔名。  
+6. 在適當的精靈頁面中輸入 DSL 的副檔名。 這是包含 DSL 將使用之執行個體的檔案的副檔名。  
   
-    -   選擇不在您的電腦，或您要安裝 DSL 的任何電腦中的任何應用程式相關聯的擴充功能。 例如， **docx**並**htm**是無法接受的檔案名稱副檔名。  
+   -   選擇不在您的電腦，或您要安裝 DSL 的任何電腦中的任何應用程式相關聯的擴充功能。 例如， **docx**並**htm**是無法接受的檔案名稱副檔名。  
   
-    -   如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 按一下 **開始**，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設 MicrosoftVisual Studio 2010 實驗執行個體**。  
+   -   如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 按一下 **開始**，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設 MicrosoftVisual Studio 2010 實驗執行個體**。  
   
-7.  檢查其他頁面，然後按一下 **完成**。  
+7. 檢查其他頁面，然後按一下 **完成**。  
   
-     產生的方案包含兩個專案。 它們會命名為 Dsl 和 DslPackage。 圖表檔，也就是開啟具名的 DslDefinition.dsl。  
+    產生的方案包含兩個專案。 它們會命名為 Dsl 和 DslPackage。 圖表檔，也就是開啟具名的 DslDefinition.dsl。  
   
-    > [!NOTE]
-    >  大部分的程式碼，您可以看到兩個專案中的資料夾中會產生從 DslDefinition.dsl。 基於這個理由，大部分您的 dsl 修改此檔案中。  
+   > [!NOTE]
+   >  大部分的程式碼，您可以看到兩個專案中的資料夾中會產生從 DslDefinition.dsl。 基於這個理由，大部分您的 dsl 修改此檔案中。  
   
- 這時使用者介面類似以下圖片。  
+   這時使用者介面類似以下圖片。  
   
- ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
   
- 此方案定義網域指定的語言。 如需詳細資訊，請參閱 < [Domain-specific Language Tools 使用者介面概觀](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。  
+   此方案定義網域指定的語言。 如需詳細資訊，請參閱 < [Domain-specific Language Tools 使用者介面概觀](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。  
   
 ## <a name="the-important-parts-of-the-dsl-solution"></a>DSL 方案的重要部分  
  請注意新的方案的下列層面。  
@@ -104,41 +104,41 @@ ms.locfileid: "49251975"
   
 #### <a name="to-experiment-with-the-dsl"></a>若要試驗 DSL  
   
-1.  按一下 **轉換所有範本**在 方案總管 工具列中。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。  
+1. 按一下 **轉換所有範本**在 方案總管 工具列中。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。  
   
-    > [!NOTE]
-    >  每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   > [!NOTE]
+   >  每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
-2.  按 f5 鍵，或在**偵錯**功能表上，按一下**開始偵錯**。  
+2. 按 f5 鍵，或在**偵錯**功能表上，按一下**開始偵錯**。  
   
-     建置 DSL，並已安裝在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+    建置 DSL，並已安裝在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 實驗執行個體需要個別的子樹的登錄中，從其設定位置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組已註冊要進行偵錯之用。 一般的執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不能那里註冊擴充功能的存取。  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 實驗執行個體需要個別的子樹的登錄中，從其設定位置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組已註冊要進行偵錯之用。 一般的執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不能那里註冊擴充功能的存取。  
   
-3.  在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，開啟名為模型檔案**測試**從**方案總管 中**。  
+3. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，開啟名為模型檔案**測試**從**方案總管 中**。  
   
-     \-或-  
+    \-或-  
   
-     以滑鼠右鍵按一下 偵錯專案，指向**新增**，然後按一下**項目**。 在 **加入項目**對話方塊方塊中，選取檔案類型的 DSL。  
+    以滑鼠右鍵按一下 偵錯專案，指向**新增**，然後按一下**項目**。 在 **加入項目**對話方塊方塊中，選取檔案類型的 DSL。  
   
-     模型檔案開啟為空白的圖表。  
+    模型檔案開啟為空白的圖表。  
   
-     工具箱 中開啟，並顯示適用於圖表類型的工具。  
+    工具箱 中開啟，並顯示適用於圖表類型的工具。  
   
-4.  使用工具來建立圖形和連接器，在圖表上。  
+4. 使用工具來建立圖形和連接器，在圖表上。  
   
-    1.  若要建立圖形，請從範例圖形工具拖曳至圖表拖曳。  
+   1.  若要建立圖形，請從範例圖形工具拖曳至圖表拖曳。  
   
-    2.  若要連接兩個圖形，按一下 範例連接器工具、 按一下第一個圖形，，然後按一下第二個圖形。  
+   2.  若要連接兩個圖形，按一下 範例連接器工具、 按一下第一個圖形，，然後按一下第二個圖形。  
   
-5.  按一下 變更形狀的標籤。  
+5. 按一下 變更形狀的標籤。  
   
- 您的實驗性[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將類似下列的範例：  
+   您的實驗性[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將類似下列的範例：  
   
- ![](../modeling/media/dsl-min.png "DSL_min")  
+   ![](../modeling/media/dsl-min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>模型的內容  
- DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型 * * 項目*並*連結*項目之間。 DSL 定義中指定的模型項目類型，可以存在於模型中的連結。 例如，在最小語言範本所建立的 DSL 中，沒有一種類型的模型項目和一種類型的連結。  
+ DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型項目*並*連結*項目之間。 DSL 定義中指定的模型項目類型，可以存在於模型中的連結。 例如，在最小語言範本所建立的 DSL 中，沒有一種類型的模型項目和一種類型的連結。  
   
  DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種圖案和接點的樣式。 您可以指定某些圖形出現在其他圖形。  
   
@@ -161,17 +161,17 @@ ms.locfileid: "49251975"
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>若要重新產生文字檔案之後變更的模型檔案  
   
-1.  在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，儲存模型檔案。  
+1. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，儲存模型檔案。  
   
-2.  請確定檔案名稱參數，每個.tt 檔案中的是指您要用於實驗的模型檔案。 儲存.tt 檔案。  
+2. 請確定檔案名稱參數，每個.tt 檔案中的是指您要用於實驗的模型檔案。 儲存.tt 檔案。  
   
-3.  按一下 [**轉換所有範本**中的工具列**方案總管] 中**。  
+3. 按一下 [**轉換所有範本**中的工具列**方案總管] 中**。  
   
-     \-或-  
+    \-或-  
   
-     以滑鼠右鍵按一下您想要重新產生，然後按一下 範本**執行自訂工具**。  
+    以滑鼠右鍵按一下您想要重新產生，然後按一下 範本**執行自訂工具**。  
   
- 您可以將任意數目的文字範本檔案新增至專案。 每個範本會產生一個結果檔案。  
+   您可以將任意數目的文字範本檔案新增至專案。 每個範本會產生一個結果檔案。  
   
 > [!NOTE]
 >  當您變更 DSL 定義中時，範例文字範本程式碼將無法運作，除非您更新它。  
@@ -238,39 +238,39 @@ ms.locfileid: "49251975"
   
 ##### <a name="to-add-properties-and-display-them"></a>若要加入屬性，並加以顯示  
   
-1.  將屬性加入。  
+1. 將屬性加入。  
   
-    1.  在 DSL 定義圖表中，以滑鼠右鍵按一下**Person**網域類別，指向**新增**，然後按一下**網域屬性**。  
+   1.  在 DSL 定義圖表中，以滑鼠右鍵按一下**Person**網域類別，指向**新增**，然後按一下**網域屬性**。  
   
-    2.  輸入一份新的屬性名稱，例如**出生**並**死亡**。 按下**Enter**之後每一個。  
+   2.  輸入一份新的屬性名稱，例如**出生**並**死亡**。 按下**Enter**之後每一個。  
   
-2.  新增會在圖形中顯示的屬性的裝飾項目。  
+2. 新增會在圖形中顯示的屬性的裝飾項目。  
   
-    1.  請遵循從 Person 網域類別延伸到圖表的另一端的灰線。 這是圖表項目對應。 它會連結到 shape 類別的網域類別。  
+   1.  請遵循從 Person 網域類別延伸到圖表的另一端的灰線。 這是圖表項目對應。 它會連結到 shape 類別的網域類別。  
   
-    2.  此圖形類別上按一下滑鼠右鍵，指向**新增**，然後按一下**文字裝飾項目**。  
+   2.  此圖形類別上按一下滑鼠右鍵，指向**新增**，然後按一下**文字裝飾項目**。  
   
-    3.  加入兩個的裝飾項目名稱，例如**BirthDecorator**並**DeathDecorator**。  
+   3.  加入兩個的裝飾項目名稱，例如**BirthDecorator**並**DeathDecorator**。  
   
-    4.  選取每個新的裝飾項目，然後在 [屬性] 視窗中，將**位置**欄位。 這會決定會在圖形上顯示網域屬性值。 例如，設定**InnerBottomLeft**並**InnerBottomRight**。  
+   4.  選取每個新的裝飾項目，然後在 [屬性] 視窗中，將**位置**欄位。 這會決定會在圖形上顯示網域屬性值。 例如，設定**InnerBottomLeft**並**InnerBottomRight**。  
   
-         ![區間圖形定義](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
+        ![區間圖形定義](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
-3.  將裝飾項目對應到屬性。  
+3. 將裝飾項目對應到屬性。  
   
-    1.  開啟 [DSL 詳細資料] 視窗。 這通常是在 [輸出] 視窗旁邊的索引標籤。 如果您看，在**檢視**功能表上，指向**其他 Windows**，然後按一下**DSL 詳細資料**。  
+   1.  開啟 [DSL 詳細資料] 視窗。 這通常是在 [輸出] 視窗旁邊的索引標籤。 如果您看，在**檢視**功能表上，指向**其他 Windows**，然後按一下**DSL 詳細資料**。  
   
-    2.  在 DSL 定義圖表中，按一下 連接的線條**人員**圖形類別的網域類別。  
+   2.  在 DSL 定義圖表中，按一下 連接的線條**人員**圖形類別的網域類別。  
   
-    3.  在  **DSL 詳細資料**上**裝飾項目對應**索引標籤上，按一下 未對應的裝飾項目 核取方塊。 在  **Display 屬性**，選取您要它對應的網域屬性。 例如，對應**BirthDecorator**要**出生**。  
+   3.  在  **DSL 詳細資料**上**裝飾項目對應**索引標籤上，按一下 未對應的裝飾項目 核取方塊。 在  **Display 屬性**，選取您要它對應的網域屬性。 例如，對應**BirthDecorator**要**出生**。  
   
-4.  儲存 DSL 中，按一下 轉換所有範本，然後按 F5。  
+4. 儲存 DSL 中，按一下 轉換所有範本，然後按 F5。  
   
-5.  在範例模型圖中，確認，您現在可以按一下您所選擇的位置，並在其輸入值。 此外，當您選取**人員**圖形中，[屬性] 視窗會顯示生日及死亡的新屬性。  
+5. 在範例模型圖中，確認，您現在可以按一下您所選擇的位置，並在其輸入值。 此外，當您選取**人員**圖形中，[屬性] 視窗會顯示生日及死亡的新屬性。  
   
-6.  在.tt 檔案中，您可以加入會取得每個人的內容的程式碼。  
+6. 在.tt 檔案中，您可以加入會取得每個人的內容的程式碼。  
   
- ![家譜圖表、 工具箱和總管](../modeling/media/familyt-instance.png "FamilyT_Instance")  
+   ![家譜圖表、 工具箱和總管](../modeling/media/familyt-instance.png "FamilyT_Instance")  
   
 ### <a name="define-new-classes"></a>定義新的類別  
  您可以將網域類別和關聯性加入模型。 例如，您可以建立新的類別來代表鄉鎮，以及新的關聯性，來代表人員存留現身。  

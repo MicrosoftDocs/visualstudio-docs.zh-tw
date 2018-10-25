@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921284"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
@@ -32,12 +32,12 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-|選項|描述|
-|------------|-----------------|
-|**CPU 取樣**|收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。|
-|**檢測**|收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。|
-|**.NET 記憶體配置**|使用取樣分析方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 記憶體配置資料。|
-|**並行**|收集數值資源爭用資料。|
+| 選項 | 描述 |
+|----------------------------| - |
+| **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
+| **檢測** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |
+| **.NET 記憶體配置** | 使用取樣分析方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 記憶體配置資料。 |
+| **並行** | 收集數值資源爭用資料。 |
 
 ## <a name="performance-explorer"></a>效能總管
 

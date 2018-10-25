@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService |Microsoft 文件
+title: IDebugBinder3::GetEEService |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866658"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 這個方法會傳回要求的服務。  
@@ -47,22 +47,22 @@ Int GetEEService(
   
 #### <a name="parameters"></a>參數  
  `vendor`  
- [in]`GUID`的供應商 （null 值是可接受）。  
+ [in]`GUID` （null 的值是可接受的） 之供應商。  
   
  `language`  
- [in]`GUID` （null 值是可接受） 的語言。  
+ [in]`GUID`的 （null 的值是可接受） 的語言。  
   
  `iid`  
  [in]`IID`要取得的服務。  
   
  `ppService`  
- [out]所要求的服務介面。  
+ [out]要求的服務介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳遞`IID`如[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面 (`IID_IEEVisualizerServiceProvider`) 類型的視覺化檢視服務是否可用。 如果運算式評估工具，可取得[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面，以支援類型的視覺化檢視。 請參閱[Visualizing 和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需詳細資訊。  
+ 傳遞`IID`for [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面 (`IID_IEEVisualizerServiceProvider`) 類型視覺化檢視服務是否可用。 如果運算式評估工具可以取得的話[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面，以支援類型視覺化檢視。 請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需詳細資訊。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

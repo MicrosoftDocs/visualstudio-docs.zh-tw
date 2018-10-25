@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 756b54c4497a114af69c642149b4617bfba52e95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ed89f1333427cfdf2cc3c41222ed9d16fe68efa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951284"
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

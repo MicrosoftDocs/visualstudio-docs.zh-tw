@@ -17,12 +17,12 @@ ms.assetid: eaa172c9-5748-4ce1-a0e2-33c2063f6752
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d14b41ea968ac0999fd5610281c1e8b7a3d0fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 496b742bc63beec2ba7c50ab5cc8dff88b47bc65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871208"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

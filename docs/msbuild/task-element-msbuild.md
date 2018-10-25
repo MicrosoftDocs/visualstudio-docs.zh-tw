@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914823"
 ---
 # <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 元素名稱取決於所建立之工作的名稱。  
@@ -56,13 +56,13 @@ ms.locfileid: "39153825"
 
 |元素|描述|  
 |-------------|-----------------|  
-|[Output](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|  
+|[輸出](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的容器元素。|  
+| 元素 | 描述 |
+| - | - |
+| [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的容器元素。 |
 
 ## <a name="remarks"></a>備註  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中的 `Task` 元素會建立工作的執行個體，設定屬性，然後執行它。 `Output` 元素會在專案檔中其他地方會使用的屬性或項目中儲存輸出參數。  

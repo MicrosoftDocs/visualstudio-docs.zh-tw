@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1ea73057992447016b1b9ac68c98b79b68f70c17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881608"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
 Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 8 及更新版本的虛擬化技術) 上執行。 若要執行模擬器，您的電腦必須符合執行 Hyper-V 的需求 (如本主題所述)。  
@@ -44,76 +44,76 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
   
  系統需求  
   
--   Hyper-V 支援 (請參閱下面的 Hyper-V 需求)  
+- Hyper-V 支援 (請參閱下面的 Hyper-V 需求)  
   
--   6 GB 或以上的 RAM。  
+- 6 GB 或以上的 RAM。  
   
--   64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本  
+- 64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本  
   
--   支援 SSSE3 或更新版本的處理器。  
+- 支援 SSSE3 或更新版本的處理器。  
   
- 網路需求  
+  網路需求  
   
--   DHCP  
+- DHCP  
   
--   自動設定的 DNS 和閘道設定  
+- 自動設定的 DNS 和閘道設定  
   
- Hyper-V 需求  
+  Hyper-V 需求  
   
--   在 BIOS 中，必須支援下列功能：  
+- 在 BIOS 中，必須支援下列功能：  
   
-    -   硬體協助虛擬化  
+  -   硬體協助虛擬化  
   
-    -   第二層位址轉譯 (SLAT)  
+  -   第二層位址轉譯 (SLAT)  
   
-    -   硬體型資料執行防止 (DEP)  
+  -   硬體型資料執行防止 (DEP)  
   
--   在 Windows 中，Hyper-V 必須啟用並執行。  
+- 在 Windows 中，Hyper-V 必須啟用並執行。  
   
--   您必須是本機 Hyper-V Administrators 群組的成員。  
+- 您必須是本機 Hyper-V Administrators 群組的成員。  
   
 ##  <a name="System"></a> 系統需求  
  您的電腦必須符合下列需求：  
   
--   HYPER-V 支援 (請參閱 [Hyper-V 需求](#HyperV))  
+- HYPER-V 支援 (請參閱 [Hyper-V 需求](#HyperV))  
   
--   6 GB 或以上的 RAM。  
+- 6 GB 或以上的 RAM。  
   
--   64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本。  
+- 64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本。  
   
- 若要檢查 RAM 和 Windows 的需求，請選擇 [控制台] 中的 [系統及安全性]，然後選擇 [系統]。  
+  若要檢查 RAM 和 Windows 的需求，請選擇 [控制台] 中的 [系統及安全性]，然後選擇 [系統]。  
   
- ![確認系統需求](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+  ![確認系統需求](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> 網路需求  
  您的網路必須符合下列需求：  
   
--   DHCP  
+- DHCP  
   
-     模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。  
+   模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。  
   
--   自動設定的 DNS 和閘道設定  
+- 自動設定的 DNS 和閘道設定  
   
-     您無法手動設定模擬器的 DNS 和閘道設定。  
+   您無法手動設定模擬器的 DNS 和閘道設定。  
   
- 若要疑難排解模擬器中的網路問題，請參閱下列主題：  
+  若要疑難排解模擬器中的網路問題，請參閱下列主題：  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V 需求  
  BIOS 中的 Hyper-V 需求  
   
  您電腦的 BIOS 必須支援下列需求，而且必須啟用它們：  
   
--   硬體協助虛擬化  
+- 硬體協助虛擬化  
   
--   第二層位址轉譯 (SLAT)  
+- 第二層位址轉譯 (SLAT)  
   
--   硬體型資料執行防止 (DEP)  
+- 硬體型資料執行防止 (DEP)  
   
- Windows 中的 Hyper-V 需求  
+  Windows 中的 Hyper-V 需求  
   
- 當您的電腦及 BIOS 已設定為支援 HYPER-V 時，安裝程式會啟用並啟動 HYPER-V。 否則，您可能需要手動啟用這些需求。  
+  當您的電腦及 BIOS 已設定為支援 HYPER-V 時，安裝程式會啟用並啟動 HYPER-V。 否則，您可能需要手動啟用這些需求。  
   
 |需求|如何檢查和啟用此需求|  
 |-----------------|----------------------------------------------|  
@@ -127,11 +127,11 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
  執行模擬器時，如果您還不是 Hyper-V Administrators 群組的成員，則系統會提示您加入該群組 (對話方塊指的是 Windows Phone 模擬器)。 加入此群組需要有系統管理員權限。  
   
 > [!IMPORTANT]
->  加入此群組之後，請登出或重新開機，以讓變更生效。  
+> 加入此群組之後，請登出或重新開機，以讓變更生效。  
   
  ![加入 Hyper&#45;V 系統管理員安全性群組](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
- 若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。 如需詳細資訊，請參閱 [將使用者帳戶加入群組](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7)。 (此 Windows 7 主題也適用於 Windows 8)。  
+ 若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。  
   
 ##  <a name="BootableVHD"></a> 不支援從可開機的 VHD 執行模擬器  
  如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 無法啟動模擬器時，您會看到下列訊息：應用程式部署失敗。 請重試。  
@@ -141,15 +141,15 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 ##  <a name="Files"></a> Hyper-V 需要未壓縮和未加密的檔案  
  在以 NTFS 檔案系統設定的硬碟上，Hyper-V 所使用的虛擬硬碟檔案必須為未壓縮和未加密。 請確定未壓縮或加密下列目錄：  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- 在 ReFS 檔案系統上，虛擬硬碟檔案不得設定完整性位元。  
+  在 ReFS 檔案系統上，虛擬硬碟檔案不得設定完整性位元。  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>硬體圖形轉送 (OpenGL ES 支援) 需求  
  為了讓模擬器模擬 GPU 呼叫 (例如 OpenGL ES 所使用的呼叫)，您的電腦必須具有已安裝適當 DirectX 驅動程式的 DirectX 相容 GPU。  

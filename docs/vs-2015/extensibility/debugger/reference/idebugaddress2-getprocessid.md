@@ -17,12 +17,12 @@ ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f6eb7ff4241def9b612a46ecc735eb90e2e9e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aed1e8fd75e5eb0793f524e58be772befdb660d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892073"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

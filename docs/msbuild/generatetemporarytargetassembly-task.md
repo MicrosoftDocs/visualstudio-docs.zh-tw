@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f771d71d6475ac9835ec21b36b44ce3cd131ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892944"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 如果專案中有至少一個 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 網頁參考該專案中本機宣告的類型，<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 工作會產生組件。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
-|---------------|-----------------|  
-|`AssemblyName`|必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生名稱為 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可執行檔，**AssemblyName** 參數的值會是 **WinExeAssembly**。|  
-|`CompileTargetName`|必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生組件的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。|  
-|`CompileTypeName`|必要的 **String** 參數。<br /><br /> 指定由 **CompileTargetName** 參數所指定目標來執行的編譯型別。 對於 **CoreCompile** 目標，此值是 **Compile**。|  
-|`CurrentProject`|必要的 **String** 參數。<br /><br /> 指定 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 專案檔的完整路徑，以供需要暫存目標組件的專案使用。|  
-|`GeneratedCodeFiles`|選擇性的 **ITaskItem[]** 參數。<br /><br /> 指定 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 工作產生的語言特定 Managed 程式碼檔的清單。|  
-|`IntermediateOutputPath`|必要的 **String** 參數。<br /><br /> 指定要在其中產生暫存目標組件的目錄。|  
-|`MSBuildBinPath`|必要的 **String** 參數。<br /><br /> 指定編譯暫存目標組件時所需的 *MSBuild.exe* 位置。|  
-|`ReferencePath`|選擇性的 **ITaskItem[]** 參數。<br /><br /> 依照路徑與檔案名稱，指定編譯為暫存目標組件的型別所參考的組件清單。|  
-|`ReferencePathTypeName`|必要的 **String** 參數。<br /><br /> 指定可指定組件參考 (**ReferencePath**) 清單的編譯目標 (**CompileTargetName**) 參數所使用的參數。 適當值為 **ReferencePath**。|  
+| 參數 | 描述 |
+|--------------------------| - |
+| `AssemblyName` | 必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生名稱為 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可執行檔，**AssemblyName** 參數的值會是 **WinExeAssembly**。 |
+| `CompileTargetName` | 必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生組件的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。 |
+| `CompileTypeName` | 必要的 **String** 參數。<br /><br /> 指定由 **CompileTargetName** 參數所指定目標來執行的編譯型別。 對於 **CoreCompile** 目標，此值是 **Compile**。 |
+| `CurrentProject` | 必要的 **String** 參數。<br /><br /> 指定 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 專案檔的完整路徑，以供需要暫存目標組件的專案使用。 |
+| `GeneratedCodeFiles` | 選擇性的 **ITaskItem[]** 參數。<br /><br /> 指定 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 工作產生的語言特定 Managed 程式碼檔的清單。 |
+| `IntermediateOutputPath` | 必要的 **String** 參數。<br /><br /> 指定要在其中產生暫存目標組件的目錄。 |
+| `MSBuildBinPath` | 必要的 **String** 參數。<br /><br /> 指定編譯暫存目標組件時所需的 *MSBuild.exe* 位置。 |
+| `ReferencePath` | 選擇性的 **ITaskItem[]** 參數。<br /><br /> 依照路徑與檔案名稱，指定編譯為暫存目標組件的型別所參考的組件清單。 |
+| `ReferencePathTypeName` | 必要的 **String** 參數。<br /><br /> 指定可指定組件參考 (**ReferencePath**) 清單的編譯目標 (**CompileTargetName**) 參數所使用的參數。 適當值為 **ReferencePath**。 |
   
 ## <a name="remarks"></a>備註  
  第一個標記編譯階段 (由 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 所執行) 會將 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案編譯為二進位格式。 因此，編譯器需要包含 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案所使用型別的參考組件清單。 不過，如果 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案使用相同專案中定義的型別，在建置專案之前，都不會建立該專案的對應組件。 因此，在第一個標記編譯階段期間，無法提供組件參考。  

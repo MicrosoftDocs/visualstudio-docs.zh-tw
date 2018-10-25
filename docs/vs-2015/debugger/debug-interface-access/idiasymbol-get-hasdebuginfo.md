@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c72faa4f13861f86b3735fbf5eb67b2abb64c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52b7081bce21a133d49f83fee9545bca15654ecc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901953"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
