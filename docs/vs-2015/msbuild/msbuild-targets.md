@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925731"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "49288674"
 ## <a name="target-build-order"></a>目標建置順序  
  如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 有幾種方式可指定目標的執行順序。  
   
--   初始目標  
+- 初始目標  
   
--   預設目標  
+- 預設目標  
   
--   第一個目標  
+- 第一個目標  
   
--   目標相依性  
+- 目標相依性  
   
--   `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)  
   
- 目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。  
+  目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。  
   
- 如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。  
+  如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。  
   
 ## <a name="target-batching"></a>目標批次處理  
  目標項目可能有 `Outputs` 屬性以 %(中繼資料) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的  

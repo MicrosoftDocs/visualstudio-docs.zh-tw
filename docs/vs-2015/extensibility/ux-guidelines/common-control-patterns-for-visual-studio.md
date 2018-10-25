@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860756"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224038"
   
 ##### <a name="visual-style"></a>視覺化樣式  
   
--   浮水印應該是水平置中視窗內。  
+- 浮水印應該是水平置中視窗內。  
   
--   浮水印應該中心對齊不靠左對齊。  
+- 浮水印應該中心對齊不靠左對齊。  
   
--   浮水印可能垂直置中或位於最上方的區域。 如果位於最上方的區域，必須有足夠的空間上述以便浮水印凸顯出來。  
+- 浮水印可能垂直置中或位於最上方的區域。 如果位於最上方的區域，必須有足夠的空間上述以便浮水印凸顯出來。  
   
--   使用`Environment.GrayText`色彩語彙基元和標準環境字型。 超連結應該使用標準的超連結共用權杖： `Environment.PanelHyperlink`， `Environment.PanelHyperlinkHover`， `Environment.PanelHyperlinkPressed`，和`Environment.PanelHyperlinkDisabled`。  
+- 使用`Environment.GrayText`色彩語彙基元和標準環境字型。 超連結應該使用標準的超連結共用權杖： `Environment.PanelHyperlink`， `Environment.PanelHyperlinkHover`， `Environment.PanelHyperlinkPressed`，和`Environment.PanelHyperlinkDisabled`。  
   
--   浮水印不能選取的背景  
+- 浮水印不能選取的背景  
   
--   可能的話，包含可協助使用者開始將浮水印的連結。  
+- 可能的話，包含可協助使用者開始將浮水印的連結。  
   
- ![設計師視窗中的文字加上浮水印](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![設計師視窗中的文字加上浮水印](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![浮水印文字的工具視窗中](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![浮水印文字的工具視窗中](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **在 Visual Studio 中的浮水印文字的範例**  
+  **在 Visual Studio 中的浮水印文字的範例**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> 按鈕和超連結  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224038"
   
  使用命令按鈕的時機：  
   
--   主要的命令  
+- 主要的命令  
   
--   顯示用來收集輸入的 windows，或選擇較高，即使它們為次要命令  
+- 顯示用來收集輸入的 windows，或選擇較高，即使它們為次要命令  
   
--   具破壞性或無法復原的動作  
+- 具破壞性或無法復原的動作  
   
--   精靈和頁面內的承諾用量按鈕流程  
+- 精靈和頁面內的承諾用量按鈕流程  
   
- 避免命令按鈕的工具視窗，或如果您需要兩個以上的文字標籤。 連結可以有較長的標籤。  
+  避免命令按鈕的工具視窗，或如果您需要兩個以上的文字標籤。 連結可以有較長的標籤。  
   
- 使用連結的時機：  
+  使用連結的時機：  
   
--   瀏覽至另一個視窗、 文件或網頁  
+- 瀏覽至另一個視窗、 文件或網頁  
   
--   需要較長的標籤或簡短的句子來描述動作的意圖的情況  
+- 需要較長的標籤或簡短的句子來描述動作的意圖的情況  
   
--   其中一個按鈕會會拖垮 UI，前提是該動作不是破壞性或無法復原的緊密空格  
+- 其中一個按鈕會會拖垮 UI，前提是該動作不是破壞性或無法復原的緊密空格  
   
--   取消強調情況中的第二個命令有許多命令  
+- 取消強調情況中的第二個命令有許多命令  
   
 #### <a name="examples"></a>範例  
  ![下一個狀態訊息的資訊列命令連結](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224038"
   
  使用僅限省略符號的簡短按鈕的時機：  
   
--   如果有一個以上長 **[瀏覽...]** 在對話方塊中，例如數個欄位進行瀏覽 按鈕。 使用簡短的 **[...]** 針對每個以避免這種情況下所建立令人困惑的存取金鑰 按鈕 (**（& s) 瀏覽**並**B & 覽**相同的對話方塊中)。  
+- 如果有一個以上長 **[瀏覽...]** 在對話方塊中，例如數個欄位進行瀏覽 按鈕。 使用簡短的 **[...]** 針對每個以避免這種情況下所建立令人困惑的存取金鑰 按鈕 (**（& s) 瀏覽**並**B & 覽**相同的對話方塊中)。  
   
--   在嚴格的對話方塊中，或將長的按鈕沒有合理的地方。  
+- 在嚴格的對話方塊中，或將長的按鈕沒有合理的地方。  
   
--   如果按鈕會出現在方格控制項。  
+- 如果按鈕會出現在方格控制項。  
   
- 使用 [] 按鈕的指導方針：  
+  使用 [] 按鈕的指導方針：  
   
--   請勿使用存取金鑰。 若要存取它使用鍵盤，使用者必須從相鄰的控制項索引標籤。 請確定定位順序，欄位將會填滿之後，立即就會任何瀏覽 按鈕。 永遠不會使用底線字元下方的第一個週期。  
+- 請勿使用存取金鑰。 若要存取它使用鍵盤，使用者必須從相鄰的控制項索引標籤。 請確定定位順序，欄位將會填滿之後，立即就會任何瀏覽 按鈕。 永遠不會使用底線字元下方的第一個週期。  
   
--   設定 Microsoft Active Accessibility (MSAA)**名稱**屬性設**瀏覽...** （包含省略符號） 讓，螢幕助讀程式會朗讀它像是 [瀏覽]，而不"點-點-點 」 或 「 週期-期間-期間。 」 對於受管理的控制項，這表示設定**AccessibleName**屬性。  
+- 設定 Microsoft Active Accessibility (MSAA)**名稱**屬性設**瀏覽...** （包含省略符號） 讓，螢幕助讀程式會朗讀它像是 [瀏覽]，而不"點-點-點 」 或 「 週期-期間-期間。 」 對於受管理的控制項，這表示設定**AccessibleName**屬性。  
   
--   永遠不會使用省略符號 **[...]** 按鈕以外的瀏覽動作。 例如，如果您需要 **[新增...]** 按鈕，但沒有足夠的空間，文字、，然後需要重新設計對話方塊。  
+- 永遠不會使用省略符號 **[...]** 按鈕以外的瀏覽動作。 例如，如果您需要 **[新增...]** 按鈕，但沒有足夠的空間，文字、，然後需要重新設計對話方塊。  
   
 ##### <a name="sizing-and-spacing"></a>調整大小和間距  
  ![調整大小&#91;瀏覽...&#93;按鈕](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224038"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid （樹狀檢視和格線檢視）  
  Trid 控制項是複雜的控制項，其中包含 grid 內的樹狀檢視。 展開、 摺疊，並瀏覽樹狀目錄中應該遵守相同的鍵盤命令，以樹狀檢視，具有下列功能：  
   
--   **向右箭號：** 展開節點。 節點已展開之後，則應繼續瀏覽至最接近的資料行右側。 瀏覽應該停止的資料列結尾。  
+- **向右箭號：** 展開節點。 節點已展開之後，則應繼續瀏覽至最接近的資料行右側。 瀏覽應該停止的資料列結尾。  
   
--   **索引標籤：** Navigates 到最接近的儲存格右邊。  在資料列的結束時，瀏覽會繼續下一個資料列。  
+- **索引標籤：** Navigates 到最接近的儲存格右邊。  在資料列的結束時，瀏覽會繼續下一個資料列。  
   
--   **Shift + Tab:** Navigates 到最接近的資料格左邊。  開頭的資料列時，瀏覽會繼續在先前的資料列中最右邊的儲存格。  
+- **Shift + Tab:** Navigates 到最接近的資料格左邊。  開頭的資料列時，瀏覽會繼續在先前的資料列中最右邊的儲存格。  
   
- ![在 Visual Studio 中的 Trid 控制項](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![在 Visual Studio 中的 Trid 控制項](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **在 Visual Studio 中的 trid 控制項**
+  **在 Visual Studio 中的 trid 控制項**
 

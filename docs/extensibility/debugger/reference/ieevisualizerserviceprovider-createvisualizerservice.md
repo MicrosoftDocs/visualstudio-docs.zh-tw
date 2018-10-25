@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider::CreateVisualizerService |Microsoft 文件
+title: IEEVisualizerServiceProvider::CreateVisualizerService |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59d86e94be5c0295786b747f6b57753aa087b07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 910265a63c9acc5f9835ff5006b6ac0c515a2d3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926056"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 這個方法會建立視覺化檢視服務。  
@@ -49,25 +49,25 @@ int CreateVisualizerService(
   
 #### <a name="parameters"></a>參數  
  `binder`  
- [in][IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件傳遞至[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。  
+ [in][IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件傳遞給[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。  
   
  `pSymProv`  
- [in][IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件傳遞至`IDebugParsedExpression::EvaluateSync`。  
+ [in][IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件傳遞給`IDebugParsedExpression::EvaluateSync`。  
   
  `pAddress`  
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件傳遞至`IDebugParsedExression::EvaluateSync`。  
+ [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件傳遞給`IDebugParsedExression::EvaluateSync`。  
   
  `dataProvider`  
- [in]實作[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) （由運算式評估工具提供） 的介面。  
+ [in]物件，實作[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) （由運算式評估工具提供） 的介面。  
   
  `ppService`  
- [out]建立的服務。  
+ [out]已建立的服務。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- `binder`， `pSymProv`，和`pAddress`參數已傳遞至`IDebugParsedExpression::EvaluateSync`方法。 `CreateVisualizerService` 是只會從呼叫`IDebugParsedExpression::EvaluateSync`一部分的運算式評估工具支援的類型視覺化檢視。  
+ `binder`， `pSymProv`，並`pAddress`參數所傳遞至`IDebugParsedExpression::EvaluateSync`方法。 `CreateVisualizerService` 要呼叫只能從`IDebugParsedExpression::EvaluateSync`一部分的運算式評估工具支援的類型視覺化檢視。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   

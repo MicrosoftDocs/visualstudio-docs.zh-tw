@@ -17,12 +17,12 @@ ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5cb1c5cc8b3baee8b77e43aeaed1cb29a0a4e3df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41268916baa127f35756ffd10b446491f1ef4070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844441"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

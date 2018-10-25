@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896135"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49274478"
   
 ## <a name="prerequisites"></a>必要條件  
   
--   對 C# 有中等程度的了解。  
+- 對 C# 有中等程度的了解。  
   
--   一份 [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)。  
+- 一份 [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)。  
   
- 若要處理剖析所提供的資訊，您手邊最好有偵錯符號資訊。  
+  若要處理剖析所提供的資訊，您手邊最好有偵錯符號資訊。  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>使用取樣方法進行剖析  
  取樣是一種剖析的方法，會定期輪詢有問題的處理序以判斷使用中的函式。 產生的資料會提供計數，表示在取樣處理序時，有問題的函式位於呼叫堆疊頂端的頻率。  
@@ -139,29 +139,29 @@ ms.locfileid: "49274478"
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>分析檢測的剖析結果  
   
-1.  報表的 [摘要] 檢視中的時間表圖形會顯示在執行程式碼剖析期間程式的 CPU 使用率。 匯出資料作業應該是圖形右側的明顯尖峰或上升後的穩定階段。 我們可以篩選效能工作階段，只顯示及分析匯出作業中所收集的資料。 在圖形上，按一下匯出資料作業開始之時間點的左側。 再按一下作業的右側。 然後按一下時間表右側連結清單中的 [依選取範圍篩選]。  
+1. 報表的 [摘要] 檢視中的時間表圖形會顯示在執行程式碼剖析期間程式的 CPU 使用率。 匯出資料作業應該是圖形右側的明顯尖峰或上升後的穩定階段。 我們可以篩選效能工作階段，只顯示及分析匯出作業中所收集的資料。 在圖形上，按一下匯出資料作業開始之時間點的左側。 再按一下作業的右側。 然後按一下時間表右側連結清單中的 [依選取範圍篩選]。  
   
-     [最忙碌路徑] 樹狀圖顯示 PeopleTrax.Form1.ExportData 方法呼叫的 <xref:System.String.Concat%2A> 方法耗用大部分的時間。 因為 **System.String.Concat** 也是位於 [含有最多個別工作的函式] 清單的最上方，所以減少此函式所花費的時間是可能的最佳化方式。  
+    [最忙碌路徑] 樹狀圖顯示 PeopleTrax.Form1.ExportData 方法呼叫的 <xref:System.String.Concat%2A> 方法耗用大部分的時間。 因為 **System.String.Concat** 也是位於 [含有最多個別工作的函式] 清單的最上方，所以減少此函式所花費的時間是可能的最佳化方式。  
   
-2.  在任一個摘要資料表中按兩下 [System.String.Concat]，查看 [函式詳細資料] 檢視中的詳細資訊。  
+2. 在任一個摘要資料表中按兩下 [System.String.Concat]，查看 [函式詳細資料] 檢視中的詳細資訊。  
   
-3.  您會發現 PeopleTrax.Form1.ExportData 是呼叫 Concat 的唯一方法。 按一下 [呼叫函式] 清單中的 [PeopleTrax.Form1.ExportData]，選取此方法做為 [函式詳細資料] 檢視的目標。  
+3. 您會發現 PeopleTrax.Form1.ExportData 是呼叫 Concat 的唯一方法。 按一下 [呼叫函式] 清單中的 [PeopleTrax.Form1.ExportData]，選取此方法做為 [函式詳細資料] 檢視的目標。  
   
-4.  檢查 [函式程式碼檢視] 視窗中的方法。 請注意，並沒有 **System.String.Concat** 的常值呼叫。 相反地，有數個地方使用 += 運算元，編譯器將其取代為 **System.String.Concat** 的呼叫。 在 .NET Framework 中對一個字串所做的任何修改，都會導致一個新字串受到配置。 .NET Framework 含有 <xref:System.Text.StringBuilder> 類別，此類別會針對字串的串連進行最佳化  
+4. 檢查 [函式程式碼檢視] 視窗中的方法。 請注意，並沒有 **System.String.Concat** 的常值呼叫。 相反地，有數個地方使用 += 運算元，編譯器將其取代為 **System.String.Concat** 的呼叫。 在 .NET Framework 中對一個字串所做的任何修改，都會導致一個新字串受到配置。 .NET Framework 含有 <xref:System.Text.StringBuilder> 類別，此類別會針對字串的串連進行最佳化  
   
-5.  若要以最佳化的程式碼取代這個有問題的區域，請將 OPTIMIZED_EXPORTDATA 以條件式編譯符號的方式加入至 PeopleTrax 專案。  
+5. 若要以最佳化的程式碼取代這個有問題的區域，請將 OPTIMIZED_EXPORTDATA 以條件式編譯符號的方式加入至 PeopleTrax 專案。  
   
-6.  在 [方案總管] 中，以滑鼠右鍵按一下 [PeopleTrax] 專案，然後按一下 [屬性]。  
+6. 在 [方案總管] 中，以滑鼠右鍵按一下 [PeopleTrax] 專案，然後按一下 [屬性]。  
   
-     [PeopleTrax] 專案屬性表單隨即出現。  
+    [PeopleTrax] 專案屬性表單隨即出現。  
   
-7.  按一下 [建置] 索引標籤。  
+7. 按一下 [建置] 索引標籤。  
   
-8.  在 [條件式編譯的符號] 文字方塊中，輸入 **OPTIMIZED_EXPORTDATA**。  
+8. 在 [條件式編譯的符號] 文字方塊中，輸入 **OPTIMIZED_EXPORTDATA**。  
   
 9. 關閉專案屬性表單，並在提示時選擇 [全部儲存]。  
   
- 當您再次執行應用程式時，便可見到顯著的效能改進。 雖然使用者能感覺到效能已有所改善，還是建議您再次執行剖析工作階段。 由於第一個問題可能會遮蔽其他問題，因此在修正問題後再次檢閱資料是很重要的。  
+   當您再次執行應用程式時，便可見到顯著的效能改進。 雖然使用者能感覺到效能已有所改善，還是建議您再次執行剖析工作階段。 由於第一個問題可能會遮蔽其他問題，因此在修正問題後再次檢閱資料是很重要的。  
   
 ## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   

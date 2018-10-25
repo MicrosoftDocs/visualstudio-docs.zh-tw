@@ -18,25 +18,25 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 943111386539ddb9ac686b0551dfe176f9e2d320
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f302dff3ea72217c6325aca667aec8ff4d7f218f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905227"
 ---
 # <a name="preemption-time"></a>先佔時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 時間軸中的這些區段，會和分類為先佔時間的封鎖時間相關聯。 此分類表示執行緒因為下列原因之一而被切換︰  
   
--   排程器已使用較高優先順序的執行緒取代它。  
+- 排程器已使用較高優先順序的執行緒取代它。  
   
--   執行緒的執行配量已到期，而其他執行緒已準備好執行。  
+- 執行緒的執行配量已到期，而其他執行緒已準備好執行。  
   
- 在這段期間內，執行緒因為並行視覺化檢視被視作先佔的核心等候原因而被封鎖。 先佔區段會在執行緒被推出邏輯核心時開始，並會在該執行緒繼續執行時結束。  
+  在這段期間內，執行緒因為並行視覺化檢視被視作先佔的核心等候原因而被封鎖。 先佔區段會在執行緒被推出邏輯核心時開始，並會在該執行緒繼續執行時結束。  
   
- 先佔區段的工具提示會顯示造成先佔的處理序或執行緒名稱。 不過，這不表示接手的處理序或執行緒會在先佔期間全程執行。  
+  先佔區段的工具提示會顯示造成先佔的處理序或執行緒名稱。 不過，這不表示接手的處理序或執行緒會在先佔期間全程執行。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

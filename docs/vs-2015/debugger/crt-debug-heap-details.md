@@ -80,12 +80,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923000"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **若要使用偵錯堆積**  
   
--   以 C 執行階段程式庫的偵錯版本連結您應用程式的偵錯組建。  
+- 以 C 執行階段程式庫的偵錯版本連結您應用程式的偵錯組建。  
   
- **若要變更一個或多個 _crtDbgFlag 位元欄位，並建立新的狀態旗標**  
+  **若要變更一個或多個 _crtDbgFlag 位元欄位，並建立新的狀態旗標**  
   
-1.  使用設為 `_CrtSetDbgFlag` (為取得目前的 `newFlag` 狀態) 的 `_CRTDBG_REPORT_FLAG` 參數來呼叫 `_crtDbgFlag`，且將傳回值儲存在暫存變數中。  
+1. 使用設為 `_CrtSetDbgFlag` (為取得目前的 `newFlag` 狀態) 的 `_CRTDBG_REPORT_FLAG` 參數來呼叫 `_crtDbgFlag`，且將傳回值儲存在暫存變數中。  
   
-2.  開啟任何位元`OR`-ing (位元&#124;符號) 暫存變數和對應的位元遮罩 （由應用程式程式碼中的資訊清單常數）。  
+2. 開啟任何位元`OR`-ing (位元&#124;符號) 暫存變數和對應的位元遮罩 （由應用程式程式碼中的資訊清單常數）。  
   
-3.  使用 `AND` (位元 & 符號) 變數和適當位元遮罩的 `NOT` (位元 ~ 符號) 來關閉其他位元。  
+3. 使用 `AND` (位元 & 符號) 變數和適當位元遮罩的 `NOT` (位元 ~ 符號) 來關閉其他位元。  
   
-4.  使用設成儲存於暫存變數值的 `_CrtSetDbgFlag` 參數呼叫 `newFlag`，以便建立 `_crtDbgFlag` 的新狀態。  
+4. 使用設成儲存於暫存變數值的 `_CrtSetDbgFlag` 參數呼叫 `newFlag`，以便建立 `_crtDbgFlag` 的新狀態。  
   
- 例如，下列程式碼開啟自動流失偵測並且關閉類型 `_CRT_BLOCK` 的區塊檢查：  
+   例如，下列程式碼開啟自動流失偵測並且關閉類型 `_CRT_BLOCK` 的區塊檢查：  
   
 ```  
 // Get current flag  

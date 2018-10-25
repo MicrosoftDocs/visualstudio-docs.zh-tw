@@ -17,12 +17,12 @@ ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c5d43175a2c73317013ec228b959bc9f9564432
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 542a56178347c76d9e13e889597d5be269f38385
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921765"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

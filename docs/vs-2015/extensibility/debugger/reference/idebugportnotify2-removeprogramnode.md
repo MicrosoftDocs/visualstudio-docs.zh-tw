@@ -17,12 +17,12 @@ ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 52653d28ec1a31515d34589ec472a58bb9cb2da3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f5e041a35a45a00f825d4b93feb1b62b0ad89dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924691"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
