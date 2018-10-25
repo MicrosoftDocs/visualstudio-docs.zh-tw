@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ebfe7825dbf4690246d6a7fc2e67a84c850a96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 338326e478c87a6c179cc8f1f506d82e8a782c30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938212"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

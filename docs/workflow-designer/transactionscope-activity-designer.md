@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950561"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活動設計工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755794"
 下表顯示 <xref:System.Activities.Statements.TransactionScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>和<xref:System.Activities.Statements.TransactionScope.Body%2A>屬性可以在工作流程設計工具介面上編輯。 但其他屬性必須在屬性方格上進行編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 活動可選用的易記名稱。 預設為 TransactionScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|指定要在單一異動中執行的活動。 新增<xref:System.Activities.Statements.TransactionScope.Body%2A>活動，從下拉式**工具箱**成**主體**方塊**TransactionScope**提示文字 「 在此置放活動的活動設計工具在這裡 」。|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|為這個 <xref:System.Transactions.IsolationLevel> 指定 <xref:System.Activities.Statements.TransactionScope>。|
@@ -48,5 +48,5 @@ ms.locfileid: "36755794"
 - [異動](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [補償](../workflow-designer/compensate-activity-designer.md)
-- [確認](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)

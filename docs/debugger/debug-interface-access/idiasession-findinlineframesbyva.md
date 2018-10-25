@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByVA |Microsoft 文件
+title: IDiaSession::findInlineFramesByVA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8288f152e7c134dd770eef4b2a33af96c767352
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bad59015ef6f70e049403269e77aee04dc226765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950637"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-擷取列舉，可讓用戶端來逐一查看所有指定的虛擬位址 (VA) 上的內嵌框架。  
+擷取列舉型別，可讓用戶端來逐一查看所有指定的虛擬位址 (VA) 上的內嵌框架。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,16 +33,16 @@ HRESULT findInlineFramesByVA (
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]`IDiaSymbol`表示父物件。  
+ [in]`IDiaSymbol`物件表示父代。  
   
  `va`  
- [in]指定的位址為 VA.  
+ [in]指定的位址為瑞斯  
   
  `ppResult`  
  [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

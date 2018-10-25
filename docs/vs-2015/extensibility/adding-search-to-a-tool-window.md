@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939263"
 ---
 # <a name="adding-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您建立或更新您的延伸模組中的工具視窗時，您可以在 Visual Studio 中新增其他地方出現的相同搜尋功能。 這項功能包含下列功能：  
   
--   一定會位於工具列的自訂區域中 [搜尋] 方塊中。  
+- 一定會位於工具列的自訂區域中 [搜尋] 方塊中。  
   
--   [搜尋] 方塊本身會有進度列指示器。  
+- [搜尋] 方塊本身會有進度列指示器。  
   
--   只要您輸入每個字元 （即時搜尋），或您選擇 Enter 鍵 （隨選的搜尋服務） 時，才顯示結果的功能。  
+- 只要您輸入每個字元 （即時搜尋），或您選擇 Enter 鍵 （隨選的搜尋服務） 時，才顯示結果的功能。  
   
--   顯示讓您搜尋過最新的詞彙清單。  
+- 顯示讓您搜尋過最新的詞彙清單。  
   
--   篩選搜尋特定欄位或搜尋目標方面的功能。  
+- 篩選搜尋特定欄位或搜尋目標方面的功能。  
   
- 依照本逐步解說中，您將了解如何執行下列工作：  
+  依照本逐步解說中，您將了解如何執行下列工作：  
   
 1.  建立 VSPackage 專案。  
   

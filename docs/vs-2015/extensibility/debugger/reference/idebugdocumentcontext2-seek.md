@@ -17,12 +17,12 @@ ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84f966521c05347d02a13ba70a65528ba3d68a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 857a83b975d2042eebcb4e31e82976efa6072207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929149"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

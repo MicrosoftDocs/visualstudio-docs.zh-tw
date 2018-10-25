@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949535"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：請正確實作序列化方法
 
@@ -32,11 +32,11 @@ ms.locfileid: "45549322"
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果方法不是組件外部可見。|
 
 ## <a name="cause"></a>原因
- 處理序列化事件的方法沒有正確的簽章、傳回類型或可視性。
+ 處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。
 
 ## <a name="rule-description"></a>規則描述
  方法所套用下列序列化事件屬性的其中一個指定的序列化事件處理常式：
@@ -49,7 +49,7 @@ ms.locfileid: "45549322"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- 序列化事件處理常式會接受單一參數型別的<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>、 return `void`，而且有`private`可見性。
+  序列化事件處理常式會接受單一參數型別的<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>、 return `void`，而且有`private`可見性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請更正簽章、 傳回型別或序列化的事件處理常式的可見性。

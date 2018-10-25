@@ -20,15 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 39a6a8d60968085455a4e6e80fe2e37ced4150bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 488d00b3277f4bf8cdc857f9c389348092f55bab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939380"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506：應避免使用結合過度的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|

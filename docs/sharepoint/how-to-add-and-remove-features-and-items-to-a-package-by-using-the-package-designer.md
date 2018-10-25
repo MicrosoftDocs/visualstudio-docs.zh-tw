@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935064"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何： 新增和移除功能和項目加入封裝時，使用封裝設計工具
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 功能加入方案中的套件。 最終的部署之前，您可以新增並移除 SharePoint 專案項目及修改 SharePoint 封裝的功能。  
@@ -36,21 +36,21 @@ ms.locfileid: "36756089"
   
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>若要新增的 SharePoint 功能與封裝設計工具
   
-1.  開啟**封裝設計工具**。  
+1. 開啟**封裝設計工具**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+    如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
-2.  執行下列一或多個下列的步驟，以新增一或多個 SharePoint 功能：  
+2. 執行下列一或多個下列的步驟，以新增一或多個 SharePoint 功能：  
   
-    1.  按兩下每個項目**方案中的項目**您想要新增的清單。  
+   1. 按兩下每個項目**方案中的項目**您想要新增的清單。  
   
-    2.  選擇您想要新增，然後選擇的項目**新增**按鈕 (>)。  
+   2. 選擇您想要新增，然後選擇的項目**新增**按鈕 (>)。  
   
-    3.  選擇**全部新增**按鈕 (>>) 若要同時新增的所有項目。  
+   3. 選擇**全部新增**按鈕 (>>) 若要同時新增的所有項目。  
   
-     例如，您可以按兩下中的項目**方案中的項目**將它加入至清單**封裝中的項目**清單。  
+      例如，您可以按兩下中的項目**方案中的項目**將它加入至清單**封裝中的項目**清單。  
   
-     SharePoint 專案項目和功能會出現在**封裝中的項目**清單。  
+      SharePoint 專案項目和功能會出現在**封裝中的項目**清單。  
   
 ## <a name="remove-features-from-a-sharepoint-package"></a>從 SharePoint 封裝中移除功能  
  您可以使用封裝設計工具來移除 SharePoint 封裝的功能。  

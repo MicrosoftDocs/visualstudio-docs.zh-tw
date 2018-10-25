@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c288beff8f4019cb33a4c231646f8d621b926714
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad05099ffef270ea15b11ae57ce6f1c6707dd9df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940095"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

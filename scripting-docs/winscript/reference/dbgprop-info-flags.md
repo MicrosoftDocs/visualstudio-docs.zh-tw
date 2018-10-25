@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS |Microsoft 文件
+title: DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941278"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 用來指定`DebugPropertyInfo`欄位  
@@ -61,10 +61,10 @@ enum {
  初始化`dwAttrib`欄位。  
   
  DBGPROP_INFO_DEBUGPROP  
- 初始化`pDebugProp`包含欄位`IDebugProperty`介面。  
+ 初始化`pDebugProp`欄位包含`IDebugProperty`介面。  
   
  DBGPROP_INFO_AUTOEXPAND  
- 指定 [值] 欄位應包含的自動展開的值，是否有的話，這種類型的物件。  
+ 指定 [值] 欄位應該包含自動擴充的值，是否有的話，這種類型的物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   

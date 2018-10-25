@@ -17,12 +17,12 @@ ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91b365bf673fdac009efc6fa3307b7eed73417db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c887fd9b87d1f3971a9f2a6e7dd204389b3feafa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930020"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

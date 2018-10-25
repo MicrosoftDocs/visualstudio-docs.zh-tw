@@ -17,12 +17,12 @@ ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b98688d49b8d6a4b84c085403be8d2396ebd8a54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2206b7ed4215043eb035b0d4bb79fea393ccd973
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934089"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

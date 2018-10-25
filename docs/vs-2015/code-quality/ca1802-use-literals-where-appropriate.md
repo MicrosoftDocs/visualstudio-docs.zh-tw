@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 746061d51a53c4cbcdff0dbac93cef07de57fb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25b9c521d55b16cef885c50138bff84c3000e1b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940082"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802：建議在適當時使用常值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|

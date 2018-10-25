@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940953"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49274413"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 您可以使用效能工作階段 **Method** 屬性來指定最適合您的應用程式的收集方法。 您可以從 [效能精靈]、[效能總管] 或效能工作階段中的屬性頁面設定收集方法。 如果您使用命令列工具，請參閱[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)以了解詳細資訊。  
+  您可以使用效能工作階段 **Method** 屬性來指定最適合您的應用程式的收集方法。 您可以從 [效能精靈]、[效能總管] 或效能工作階段中的屬性頁面設定收集方法。 如果您使用命令列工具，請參閱[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)以了解詳細資訊。  
   
 ## <a name="performance-wizard"></a>效能精靈  
   

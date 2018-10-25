@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d344cc8cd30d250c441788a7920d05086c38ca5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940004"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>檢視往來文章和使用平行堆疊 視窗的工作
 **平行堆疊**視窗會很有用，當您偵錯多執行緒應用程式。 其**執行緒檢視**顯示您的應用程式中的所有執行緒的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼 **[工作] 檢視**顯示呼叫堆疊的<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件。 原生程式碼，在 **[工作] 檢視**顯示呼叫堆疊[工作群組](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[平行演算法](/cpp/parallel/concrt/parallel-algorithms)，[非同步代理程式](/cpp/parallel/concrt/asynchronous-agents)，以及[輕量型工作](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -92,26 +92,26 @@ ms.locfileid: "39176963"
 ## <a name="tasks-view"></a>工作檢閱  
  如果您的應用程式使用<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件 （managed 程式碼） 或`task_handle`表示平行處理原則物件 （原生程式碼），您可以使用 [平行堆疊] 視窗工具列中的下拉式方塊切換至 *[工作] 檢視*。 [工作檢閱] 會顯示工作 (而非執行緒) 的呼叫堆疊。 [工作檢視] 有別於 [執行緒檢視] 之處在於：  
   
--   如果執行緒沒有在執行工作，則不會顯示該執行緒的呼叫堆疊。  
+- 如果執行緒沒有在執行工作，則不會顯示該執行緒的呼叫堆疊。  
   
--   如果執行緒目前正在執行工作，則會隱藏該執行緒之呼叫堆疊的頂端和底端，以顯示與工作最相關的框架。  
+- 如果執行緒目前正在執行工作，則會隱藏該執行緒之呼叫堆疊的頂端和底端，以顯示與工作最相關的框架。  
   
--   當有多個工作在同一個執行緒上時，這些工作的呼叫堆疊會分割成不同的節點。  
+- 當有多個工作在同一個執行緒上時，這些工作的呼叫堆疊會分割成不同的節點。  
   
- 下圖右邊顯示的是 [平行堆疊] 的 [工作檢閱]，左邊顯示的是對應的 [執行緒檢閱]。  
+  下圖右邊顯示的是 [平行堆疊] 的 [工作檢閱]，左邊顯示的是對應的 [執行緒檢閱]。  
   
- ![工作平行堆疊 視窗中的檢視](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+  ![工作平行堆疊 視窗中的檢視](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- 若要查看整個呼叫堆疊，只要切換回 執行緒檢視的堆疊框架上按一下滑鼠右鍵，然後按一下**移至執行緒**。  
+  若要查看整個呼叫堆疊，只要切換回 執行緒檢視的堆疊框架上按一下滑鼠右鍵，然後按一下**移至執行緒**。  
   
- 中所述較早的表格，停留在方法中，您可以看到其他資訊。 下圖為 [執行緒檢閱] 和 [工作檢閱] 的工具提示中所顯示的資訊。  
+  中所述較早的表格，停留在方法中，您可以看到其他資訊。 下圖為 [執行緒檢閱] 和 [工作檢閱] 的工具提示中所顯示的資訊。  
   
- ![平行堆疊 視窗中的工具提示](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+  ![平行堆疊 視窗中的工具提示](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>方法檢視  
  在 [執行緒檢視] 或 [工作檢視] 中，按一下工具列上的 [方法檢視] 圖示，就可以切換至目前方法的圖形。 [方法檢視] 會顯示所有執行緒上所有呼叫目前方法或被目前方法呼叫的方法。 下圖顯示 [執行緒檢視]，以及相同的資訊在 [方法檢視] 中的樣子。  
   
- ![[平行堆疊] 視窗中的方法檢視](../debugger/media/parallel_methodview.png "Parallel_MethodView")  
+ ![[平行堆疊] 視窗中的 [方法檢視]](../debugger/media/parallel_methodview.png "Parallel_MethodView")  
   
  切換至新的堆疊框架，就可以將該方法變成目前的方法，並讓視窗顯示新方法的所有呼叫端和被呼叫端。 有些執行緒可能會因此顯示或不見，視該方法是否出現在這些執行緒的呼叫堆疊中。 若要回到 [堆疊檢視]，請再按一下 [方法檢視] 工具列按鈕。  
   

@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939487"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：  
   
--   在 `List` 物件中儲存物件 (例如圖示)。  
+- 在 `List` 物件中儲存物件 (例如圖示)。  
   
--   使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。  
+- 使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。  
   
--   使用參考變數追蹤表單的狀態。  
+- 使用參考變數追蹤表單的狀態。  
   
--   建置您可以搭配多個物件使用的事件處理常式來回應事件。  
+- 建置您可以搭配多個物件使用的事件處理常式來回應事件。  
   
--   讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。  
+- 讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。  
   
- 當您完成此教學課程時，您的程式看起來類似下列圖片。  
+  當您完成此教學課程時，您的程式看起來類似下列圖片。  
   
- ![您在本教學課程中建立的遊戲](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-您在本教學課程中建立的遊戲  
+  ![您在本教學課程中建立的遊戲](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  您在本教學課程中建立的遊戲  
   
- 若要下載這個範例的完整版，請參閱 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (完整的配對遊戲教學課程範例)。  
+  若要下載這個範例的完整版，請參閱 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (完整的配對遊戲教學課程範例)。  
   
 > [!NOTE]
 >  在本教學課程中，Visual C# 和 Visual Basic 都會涵蓋在內，所以請將焦點放在您正在使用的程式語言專屬資訊。  

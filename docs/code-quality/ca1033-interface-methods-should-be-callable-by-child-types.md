@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b81ac3fcedf4f09c37bbe3aeeb6b7d2b572af8ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b56cd055fa8413d7d98a1c0d6d8b538a8a858af6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941317"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033：介面方法應該要可以由子類型呼叫
+
 |||
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

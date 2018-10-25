@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942877"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解除鎖定 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "49198857"
   
  這個訊息表示，雖然您的訂閱可能仍然有效，但是基於下列其中一個原因尚未重新整理 Visual Studio 用來保持最新訂閱的授權權杖，而且該權杖已經過時：  
   
-1.  您尚未使用 Visual Studio，或有很長一段時間沒有網際網路連線。  
+1. 您尚未使用 Visual Studio，或有很長一段時間沒有網際網路連線。  
   
-2.  您已登出 Visual Studio。  
+2. 您已登出 Visual Studio。  
   
- 在授權權杖過期之前，Visual Studio 會先顯示一個警告訊息，要求您重新輸入認證。  
+   在授權權杖過期之前，Visual Studio 會先顯示一個警告訊息，要求您重新輸入認證。  
   
- 如果您未重新輸入認證，則權杖會開始過時。 當發生這種情況時，[帳戶設定] 對話方塊會通知您在權杖完全過期之前還剩下多少天。 權杖過期之後，您必須使用上述另一個方法重新輸入這個帳戶或授權的認證，才能繼續使用 Visual Studio。  
+   如果您未重新輸入認證，則權杖會開始過時。 當發生這種情況時，[帳戶設定] 對話方塊會通知您在權杖完全過期之前還剩下多少天。 權杖過期之後，您必須使用上述另一個方法重新輸入這個帳戶或授權的認證，才能繼續使用 Visual Studio。  
   
 > [!IMPORTANT]
 >  如果您在限制存取或無法存取網際網路的環境中使用 Visual Studio 很長一段時間，則應使用產品金鑰來解除鎖定 Visual Studio，以避免中斷。  

@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949886"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在程式碼編輯器的資料提示中檢視資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ ms.locfileid: "49273919"
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>若要顯示資料提示方塊 (僅限在中斷模式中)  
   
-1.  在來源視窗中，將滑鼠指標放在目前範圍中的任何變數。  
+1. 在來源視窗中，將滑鼠指標放在目前範圍中的任何變數。  
   
-     資料提示方塊就會出現。  
+    資料提示方塊就會出現。  
   
-    > [!NOTE]
-    >  資料提示一律在暫停執行的內容中評估，而不是在游標停留的內容中評估。 如果您將游標停留在另一個函式的變數上，而該變數的名稱與目前內容中變數的名稱相同，則將另一個函式中的變數值當做目前內容中的變數值顯示。  
+   > [!NOTE]
+   >  資料提示一律在暫停執行的內容中評估，而不是在游標停留的內容中評估。 如果您將游標停留在另一個函式的變數上，而該變數的名稱與目前內容中變數的名稱相同，則將另一個函式中的變數值當做目前內容中的變數值顯示。  
   
-2.  當您移除滑鼠指標時，資料提示方塊就會消失。 若要固定 DataTip，使它保持開啟，按一下**釘選到來源**圖示，或  
+2. 當您移除滑鼠指標時，資料提示方塊就會消失。 若要固定 DataTip，使它保持開啟，按一下**釘選到來源**圖示，或  
   
-    -   以滑鼠右鍵按一下變數，然後按一下 **釘選到來源**。  
+   - 以滑鼠右鍵按一下變數，然後按一下 **釘選到來源**。  
   
      當偵錯工作階段結束時，固定的資料提示方塊就會關閉。  
   

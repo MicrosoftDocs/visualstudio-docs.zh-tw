@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933283"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 您可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。  
@@ -69,24 +69,24 @@ ms.locfileid: "39510422"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>取得 IDXGraphicsAnalysis 介面  
   
--   請使用下列程式碼將 IDXGraphicsAnalysis 介面連結到 DXGI 偵錯介面。  
+- 請使用下列程式碼將 IDXGraphicsAnalysis 介面連結到 DXGI 偵錯介面。  
   
-    ```cpp
-    IDXGraphicsAnalysis* pGraphicsAnalysis;  
-    HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
-    ```  
+  ```cpp
+  IDXGraphicsAnalysis* pGraphicsAnalysis;  
+  HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
+  ```  
   
-     請務必檢查`HRESULT`所傳回[DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)以確保您會取得有效的介面，才能使用它：  
+   請務必檢查`HRESULT`所傳回[DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)以確保您會取得有效的介面，才能使用它：  
   
-    ```cpp
-    if (FAILED(getAnalysis))  
-    {  
-        // Abort program or disable programmatic capture in your app.  
-    }  
-    ```  
+  ```cpp
+  if (FAILED(getAnalysis))  
+  {  
+      // Abort program or disable programmatic capture in your app.  
+  }  
+  ```  
   
-    > [!NOTE]
-    >  如果在 `DXGIGetDebugInterface1` 傳回 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)，請確定應用程式是在圖形診斷下執行 ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中的 Alt+F5)。  
+  > [!NOTE]
+  >  如果在 `DXGIGetDebugInterface1` 傳回 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)，請確定應用程式是在圖形診斷下執行 ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中的 Alt+F5)。  
   
 ### <a name="capturing-graphics-information"></a>擷取圖形資訊  
  現在，您具有有效的 `IDXGraphicsAnalysis` 介面，可以使用 `BeginCapture` 和 `EndCapture` 來擷取圖形資訊。  
@@ -118,5 +118,5 @@ ms.locfileid: "39510422"
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說： 擷取圖形資訊](walkthrough-capturing-graphics-information.md)   
- [擷取圖形資訊](capturing-graphics-information.md)   
+ [Capturing Graphics Information](capturing-graphics-information.md)   
  [命令列擷取工具](command-line-capture-tool.md)
