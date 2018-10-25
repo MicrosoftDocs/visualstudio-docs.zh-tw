@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857389"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
  若要模擬網路屬性：  
   
-1.  在模擬器工具列上，選擇 [變更網路屬性]  按鈕。  
+1. 在模擬器工具列上，選擇 [變更網路屬性]  按鈕。  
   
-2.  在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性] 。  
+2. 在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性] 。  
   
-     清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
+    清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
   
-3.  為模擬的網路輸入 [ **設定檔名稱** ]。 建議您使用不重複的名稱，以便在 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 物件的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 屬性中，能識別此模擬。  
+3. 為模擬的網路輸入 [ **設定檔名稱** ]。 建議您使用不重複的名稱，以便在 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 物件的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 屬性中，能識別此模擬。  
   
-4.  從 [網路成本類型] [](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 清單中，為設定檔選取 **NetworkCostType** 值。  
+4. 從 [[網路成本類型]](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 清單中，為設定檔選取 **NetworkCostType** 值。  
   
-5.  從 [資料限制狀態旗標]  清單中，可以將 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 屬性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)屬性設定為 true，也可以選擇 [低於資料限制]  ，將兩個值皆設定為 false。  
+5. 從 [資料限制狀態旗標]  清單中，可以將 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 屬性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)屬性設定為 true，也可以選擇 [低於資料限制]  ，將兩個值皆設定為 false。  
   
-6.  從 [漫遊狀態]  清單，設定 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 屬性。  
+6. 從 [漫遊狀態]  清單，設定 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 屬性。  
   
-7.  選擇 [設定屬性]  ，透過觸發前景 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 類型的背景 **SystemTrigger**來模擬網路屬性。  
+7. 選擇 [設定屬性]  ，透過觸發前景 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 類型的背景 **SystemTrigger**來模擬網路屬性。  
   
- **管理網路連接的詳細資訊**  
+   **管理網路連接的詳細資訊**  
   
- [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [網路資訊範例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [網路資訊範例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [分析能源利用](../profiling/analyze-energy-use-in-store-apps.md)  
+   [分析能源利用](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [如何使用背景工作回應系統事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [如何使用背景工作回應系統事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [如何在 Windows 市集應用程式中觸發暫停、繼續和背景事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [如何在 Windows 市集應用程式中觸發暫停、繼續和背景事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 使用鍵盤巡覽模擬器  
  您可以按 **CTRL+ALT+向上鍵** 將焦點從模擬器視窗切換至模擬器工具列，來巡覽模擬器工具列。 使用 **向上鍵** 和 **向下鍵** 可以在工具列按鈕之間移動。  
