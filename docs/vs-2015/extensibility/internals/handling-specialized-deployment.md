@@ -16,37 +16,37 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8568794b46a8d94e8d186fe297e9bb0d1cf53a3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827452"
 ---
 # <a name="handling-specialized-deployment"></a>處理特製化的部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 部署是專案的選擇性作業。 Web 專案，例如，支援，讓更新的 Web 伺服器專案的部署。 同樣地，**智慧型裝置**專案支援複製到目標裝置的內建應用程式的部署。 專案子類型可以藉由實作提供特製化的部署行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>介面。 這個介面會定義一組完整的部署作業：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- 應該進行個別的執行緒執行實際的部署作業[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]甚至更快速地回應使用者互動。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>會以非同步的方式呼叫[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並在背景中，如有必要，可讓查詢在任何時間的部署作業的狀態，或是停止作業，在環境中運作。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>使用者選取 [部署] 命令時，將會呼叫由環境的介面部署作業。  
+  應該進行個別的執行緒執行實際的部署作業[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]甚至更快速地回應使用者互動。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>會以非同步的方式呼叫[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並在背景中，如有必要，可讓查詢在任何時間的部署作業的狀態，或是停止作業，在環境中運作。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>使用者選取 [部署] 命令時，將會呼叫由環境的介面部署作業。  
   
- 若要通知之環境的部署作業已開始或結束，專案子類型需要呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。  
+  若要通知之環境的部署作業已開始或結束，專案子類型需要呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。  
   
 ## <a name="handling-specialized-deployment"></a>處理特製化的部署  
   

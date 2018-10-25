@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849537"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 如果您從未撰寫過 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**此頁面是否有幫助？** 螢幕的底部)，要求提供您想要。
@@ -30,13 +30,13 @@ ms.locfileid: "44321264"
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>使用 Visual Studio 擴充功能可以做的事情種類？
  為整個天際限制難想像不同的 Visual Studio 擴充功能。 當然，大部分的擴充功能和撰寫程式碼，但，沒有這種情況。 以下是一些範例，您可以建置的延伸模組的類型：
 
--   不隨附在 Visual Studio 中，語法著色、 IntelliSense 和編譯器和偵錯支援的語言的支援
+- 不隨附在 Visual Studio 中，語法著色、 IntelliSense 和編譯器和偵錯支援的語言的支援
 
--   擴充核心的產能工具 IDE 體驗的其他範本、 程式碼重構、 新的對話方塊或 工具視窗
+- 擴充核心的產能工具 IDE 體驗的其他範本、 程式碼重構、 新的對話方塊或 工具視窗
 
--   定義域專屬設計工具，像是資料設計] 或 [雲端支援的案例
+- 定義域專屬設計工具，像是資料設計] 或 [雲端支援的案例
 
- 如需擴充功能的範例，請參閱[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 許多擴充功能已開啟，並 Marketplace 包含連結至其的 GitHub 存放庫。
+  如需擴充功能的範例，請參閱[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 許多擴充功能已開啟，並 Marketplace 包含連結至其的 GitHub 存放庫。
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>可以擴充 Visual Studio 功能？
  理論上，您可以擴充 Visual Studio 的任何一部分： 功能表、 工具列、 指令、 windows、 方案、 專案、 編輯器和等等。

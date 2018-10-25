@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue |Microsoft 文件
+title: IDebugProgram2::Continue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f52fccf640cca32d4291b3d6fb8626c38370ded3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e776c91e68e4689c1cc6c54f17397eca495b493
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832651"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如步驟），並在程式啟動重新執行。  
+會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  
   
 > [!NOTE]
 >  這個方法已被取代。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
@@ -44,16 +44,16 @@ int Continue(
   
 #### <a name="parameters"></a>參數  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表在執行緒。  
+ [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 此程式正在進行偵錯程式數目，不論哪一個程式所產生的 「 停止 」 事件上呼叫這個方法。 實作必須保留先前的執行狀態 （例如步驟），並繼續執行，就好像它永遠不會具有停止之前完成之前執行。 也就是說，如果此程式中的執行緒正在執行之工作的步驟移轉作業，而且已停止，因為某些其他程式停止，而且而呼叫這個方法，程式必須完成原始進入作業。  
+ 此方法稱為這個方案，不論幾個程式正在偵錯，或哪些程式所產生的 「 停止 」 事件。 實作必須保留先前的執行狀態 （例如在步驟），並繼續執行，就好像它永遠不會具有停止之前完成其前一次執行。 也就是說，如果此程式中的執行緒所執行工作進入作業，而且已停止，因為某些其他程式停止，，然後才呼叫這個方法，程式必須完成原始不進入函式的作業。  
   
 > [!WARNING]
->  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
+>  不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

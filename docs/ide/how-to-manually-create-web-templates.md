@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826397"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
@@ -30,33 +30,33 @@ ms.locfileid: "39178939"
 
 1. 建立 Web 專案。
 
-1. 修改或刪除專案中的檔案，或將新檔案新增至專案。
+2. 修改或刪除專案中的檔案，或將新檔案新增至專案。
 
-1. 在與專案相同的目錄中，使用 *vstemplate* 副檔名來建立並儲存 XML 檔案。 在 Visual Studio 中，請不要將它新增至專案。
+3. 在與專案相同的目錄中，使用 *vstemplate* 副檔名來建立並儲存 XML 檔案。 在 Visual Studio 中，請不要將它新增至專案。
 
-1. 編輯 *vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
+4. 編輯 *vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
 
-1. 找出 *vstemplate* 檔案中的 `ProjectType` 元素，並將文字值設為 `Web`。
+5. 找出 *vstemplate* 檔案中的 `ProjectType` 元素，並將文字值設為 `Web`。
 
-1. 在 `ProjectType` 元素後面，新增 `ProjectSubType` 元素，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
+6. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    例如: 
+     例如: 
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. 在包含 *vstemplate* 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取項目，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 *.zip* 檔案。
+7. 在包含 *vstemplate* 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取項目，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 *.zip* 檔案。
 
-1. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\ProjectTemplates*。
+8. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\ProjectTemplates*。
 
 ## <a name="example"></a>範例
 

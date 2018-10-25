@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855595"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ ms.locfileid: "49259983"
 ## <a name="adding-the-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面  
  若要讓此控制項的起始頁專案中，使用起始頁專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [開始] 頁面的 XAML 標記。  
   
-1.  在 **方案總管 中**，在起始頁專案中，以滑鼠右鍵按一下**參考**，然後按一下 **加入參考**。  
+1. 在 **方案總管 中**，在起始頁專案中，以滑鼠右鍵按一下**參考**，然後按一下 **加入參考**。  
   
-2.  在 **專案**索引標籤上，選取**WebUserControl** ，然後按一下 **確定**。  
+2. 在 **專案**索引標籤上，選取**WebUserControl** ，然後按一下 **確定**。  
   
-3.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+3. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-     建置方案會將使用者控制項提供給 IntelliSense 的方案中的其他檔案。  
+    建置方案會將使用者控制項提供給 IntelliSense 的方案中的其他檔案。  
   
- 若要將控制項加入 [開始] 頁面的 XAML 標記，加入組件的命名空間參考，然後放在頁面上的控制項。  
+   若要將控制項加入 [開始] 頁面的 XAML 標記，加入組件的命名空間參考，然後放在頁面上的控制項。  
   
 #### <a name="to-add-the-control-to-the-markup"></a>若要將控制項加入標記  
   
-1.  在 [**方案總管] 中**，開啟起始頁.xaml 檔案。  
+1. 在 [**方案總管] 中**，開啟起始頁.xaml 檔案。  
   
-2.  在  **XAML**窗格中，將下列的命名空間宣告加入至最上層<xref:System.Windows.Controls.Grid>項目。  
+2. 在  **XAML**窗格中，將下列的命名空間宣告加入至最上層<xref:System.Windows.Controls.Grid>項目。  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  在 [ **XAML** ] 窗格中，捲動至\<方格 > 一節。  
+3. 在 [ **XAML** ] 窗格中，捲動至\<方格 > 一節。  
   
-     區段包含<xref:System.Windows.Controls.TabControl>中的項目<xref:System.Windows.Controls.Grid>項目。  
+    區段包含<xref:System.Windows.Controls.TabControl>中的項目<xref:System.Windows.Controls.Grid>項目。  
   
-4.  新增\<TabControl > 項目包含\<TabItem >，其中包含使用者控制項的參考。  
+4. 新增\<TabControl > 項目包含\<TabItem >，其中包含使用者控制項的參考。  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- 現在您可以測試控制項。  
+   現在您可以測試控制項。  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁  
   

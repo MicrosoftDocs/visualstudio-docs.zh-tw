@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638169"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410984"
 ---
 # <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage
 您可以使用屬性來註冊 VSPackage，但  
@@ -33,7 +33,9 @@ ms.locfileid: "39638169"
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
-{. . .}  
+{
+    // ...
+}  
 ```  
   
 ## <a name="unregister-an-extension"></a>取消登錄延伸模組  
@@ -63,9 +65,9 @@ public sealed class BasicPackage : Package
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
-    public class CustomRegistrationAttribute : RegistrationAttribute  
-    {  
-    }  
+public class CustomRegistrationAttribute : RegistrationAttribute  
+{  
+}  
 ```  
   
  <xref:System.AttributeUsageAttribute>屬性類別上用來指定與屬性，是否就可以使用一次以上，以及是否可繼承的程式元素 （類別、 方法等）。  
@@ -113,7 +115,7 @@ public override void Register(RegistrationAttribute.RegistrationContext context)
     {  
         if (packageKey != null)  
             packageKey.Close();  
-                }  
+    }  
 }  
   
 public override void Unregister(RegistrationContext context)  

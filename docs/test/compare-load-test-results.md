@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834277"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>針對測試比較或趨勢分析報告負載測試結果
 
@@ -38,7 +38,7 @@ ms.locfileid: "39176326"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-|
 |**建立效能與壓力報告：** 您可以使用 Microsoft Excel，建立負載測試與 Web 效能測試的報告。|- [如何：使用 Microsoft Excel 建立負載測試效能報告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**使用 Microsoft Word 手動建立效能與壓力報告：** 您可以透過將摘要、資料表和圖形資料複製並貼入 Microsoft Word 文件，手動建立負載和 Web 效能測試的報告。|- [如何：使用 Microsoft Word 手動建立負載測試效能報告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843194"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 
@@ -26,7 +26,7 @@ ms.locfileid: "46370974"
 ## <a name="build"></a>組建
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Shift+B** [全域]|
 |Build.Cancel|**Ctrl+Break** [全域]|
 |Build.Compile|**Ctrl+F7** [全域]|
@@ -35,7 +35,7 @@ ms.locfileid: "46370974"
 ## <a name="debug"></a>偵錯
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**Ctrl+B** [全域]|
 |Debug.BreakAll|**Ctrl+Alt+Break** [全域]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [全域]|
@@ -55,7 +55,7 @@ ms.locfileid: "46370974"
 ## <a name="edit"></a>Edit
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Enter** [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br /> 或 **Shift+Enter** [文字編輯器]|
 |Edit.CollapseToDefinitions|**Ctrl+M**、**Ctrl+O** [文字編輯器]|
 |Edit.CommentSelection|**Ctrl+K**、**Ctrl+C** [文字編輯器]|
@@ -106,7 +106,7 @@ ms.locfileid: "46370974"
 ## <a name="file"></a>檔案
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4** [全域]|
 |File.NewFile|**Ctrl+N** [全域]|
 |File.NewProject|**Ctrl+Shift+N** [全域]|
@@ -122,26 +122,26 @@ ms.locfileid: "46370974"
 ## <a name="project"></a>專案
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Shift+Alt+A** [全域]|
 |Project.AddNewItem|**Ctrl+Shift+A** [全域]|
 
 ## <a name="refactor"></a>重構
 
 |命令|鍵盤快速鍵 [內容]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R、Ctrl+M** [全域]|
 
 ## <a name="tools"></a>工具
 
 |命令|鍵盤快速鍵 [內容]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [全域]|
 
 ## <a name="view"></a>檢視
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl+Shift+C** [全域]|
 |View.EditLabel|**F2** [全域]|
 |View.ErrorList|\\Ctrl+**、Ctrl+E** [全域]<br /><br /> 或 **Ctrl+\\、E** [全域]|
@@ -162,7 +162,7 @@ ms.locfileid: "46370974"
 ## <a name="window"></a>視窗
 
 |命令|鍵盤快速鍵 [內容]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Esc** [全域]|
 |Window.CloseDocumentWindow|**Ctrl+F4** [全域]|
 |Window.NextDocumentWindow|**Ctrl+F6** [全域]|

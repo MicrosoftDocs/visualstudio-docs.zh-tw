@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f54ec6e284a913f8bdb87826f585b7c4f38a4c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ba677aca8b1e6f5392d742cfd37c805131c15cd1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817726"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  
@@ -73,27 +73,27 @@ public interface INodeLogger: ILogger
 或者，您也可以建立自訂的轉送記錄器。 建立自訂轉送記錄器，可以微調記錄器的行為。 不過，建立自訂轉送記錄器會比只自訂 ConfigurableForwardingLogger 更為複雜。 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>使用 ConfigurableForwardingLogger 進行簡單的分散式記錄  
- 若要附加 ConfigurableForwardingLogger 或自訂的轉送記錄器，請在 *MSBuild.exe* 命令列組建中使用 `/distributedlogger` 參數 (簡寫為 `/dl`)。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器一律有兩個記錄類別，而不是一個：轉送記錄器和集中式記錄器。 以下是如何附加 XMLForwardingLogger 自訂轉送記錄器的範例。  
+ 若要附加 ConfigurableForwardingLogger 或自訂的轉送記錄器，請在 *MSBuild.exe* 命令列組建中使用 `-distributedlogger` 參數 (簡寫為 `-dl`)。 用於指定記錄器類型和類別名稱的格式與 `-logger` 參數相同，差異在於分散式記錄器一律有兩個記錄類別，而不是一個：轉送記錄器和集中式記錄器。 以下是如何附加 XMLForwardingLogger 自訂轉送記錄器的範例。  
   
 ```cmd  
-msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
+msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
 > [!NOTE]
->  `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
+>  `-dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
   
  使用 ConfigurableForwardingLogger 和使用任何其他記錄器一樣 (如[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)中所述)，不同之處為附加 ConfigurableForwardingLogger 記錄器，而不是一般的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 記錄器，而且要將您讓 ConfigurableForwardingLogger 傳遞給中央節點的事件，指定為參數。  
   
  例如，如果只想收到組建開始和結束以及發生錯誤的通知，您可以傳遞 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 做為參數。 傳遞多個參數時可以分號分隔。 下例示範如何使用 ConfigurableForwardingLogger 只轉送 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 事件。  
   
 ```cmd  
-msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
+msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   
  以下是可用的 ConfigurableForwardingLogger 參數清單。  
   
 |ConfigurableForwardingLogger 參數|  
-|---------------------------------------------|  
+| - |  
 |BUILDSTARTEDEVENT|  
 |BUILDFINISHEDEVENT|  
 |PROJECTSTARTEDEVENT|  

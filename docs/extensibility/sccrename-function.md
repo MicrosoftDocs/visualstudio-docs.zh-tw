@@ -1,5 +1,5 @@
 ---
-title: SccRename 函式 |Microsoft 文件
+title: SccRename 函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24d84ff659d287f3b32be2b5585ded16b148395
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92c19e47f680d4feb6c4a4acd6de358c1a6191ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841226"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
 此函式會將檔案重新命名原始檔控制系統中。  
@@ -41,30 +41,30 @@ SCCRTN SccRename(
  [in]原始檔控制外掛程式的內容結構。  
   
  hWnd  
- [in]原始檔控制外掛程式之任何它所提供的對話方塊，可以使用為父代 IDE 視窗的控制代碼。  
+ [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
   
  lpFileName  
- [in]要重新命名檔案的完整的檔案名稱。  
+ [in]正在重新命名之檔案的完整的檔案名稱。  
   
  lpNewName  
  [in]完整的新名稱。 如果不同的目錄路徑，然後移動檔案從一個子目錄到另一個。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_OK|重新命名作業順利完成。|  
-|SCC_E_PROJNOTOPEN|無法在原始檔控制開啟專案。|  
-|SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制中。|  
-|SCC_E_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。|  
-|SCC_E_NOTAUTHORIZED|使用者沒有完成這項作業。|  
+|SCC_OK|重新命名作業已順利完成。|  
+|SCC_E_PROJNOTOPEN|無法開啟原始檔控制下的專案。|  
+|SCC_E_FILENOTCONTROLLED|檔案不是原始檔控制之下。|  
+|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|  
+|SCC_E_NOTAUTHORIZED|使用者無權完成此作業。|  
 |SCC_E_COULDNOTCREATEPROJECT|重新命名的程序的一部分，無法建立專案。|  
-|SCC_E_OPNOTPERFORMED|未執行操作。|  
+|SCC_E_OPNOTPERFORMED|未執行此作業。|  
 |SCC_E_NONSPECIFICERROR|發生未指定或一般錯誤。|  
   
 ## <a name="remarks"></a>備註  
- 此函式可用來重新命名檔案，或將它從一個位置移到另一個原始檔控制系統中。 原始檔控制外掛程式不應嘗試存取磁碟上的檔案。 它負責 IDE 的重新命名本機檔案。  
+ 此函式可用來重新命名檔案，或它從一個位置移到另一個原始檔控制系統中。 原始檔控制外掛程式不應嘗試存取磁碟上的檔案。 是 IDE 的責任，將本機檔案重新命名。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

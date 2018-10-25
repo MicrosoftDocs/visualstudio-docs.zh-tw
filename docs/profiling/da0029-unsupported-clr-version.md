@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818441"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支援的 CLR 版本
+
 |||  
 |-|-|  
 |規則 ID|DA0029|  
@@ -32,12 +33,12 @@ ms.locfileid: "34765735"
 |程式碼剖析方法|從命令列進行程式碼剖析|  
 |訊息|在收集期間偵測到不支援的 CLR 版本。 可能無法正確解析 Managed 符號。|  
 |規則型別|資訊。|  
-  
+
 ## <a name="cause"></a>原因  
  您嘗試使用分析工具不支援的 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 來分析應用程式。  
-  
+
 ## <a name="rule-description"></a>規則描述  
  因為分析工具無法解析應用程式中執行之 Managed 程式碼的符號，所以發生此警告。 分析工具無法解析執行 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 之應用程式的受控碼符號。  
-  
+
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  無。

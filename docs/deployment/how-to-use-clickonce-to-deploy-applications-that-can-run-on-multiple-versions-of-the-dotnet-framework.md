@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eb4d8696755a70005923833625c72a95e5f1e80a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842764"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何： 使用 ClickOnce 來部署可在多個.NET framework 版本執行的應用程式
 您可以部署目標使用 ClickOnce 部署技術的多個版本的.NET framework 的應用程式。 這需要您產生，並更新應用程式和部署資訊清單。  
@@ -82,23 +82,23 @@ ms.locfileid: "39079946"
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>若要變更的應用程式資訊清單，以做為.NET Framework 組件的相依組件標記  
   
-1.  在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟應用程式資訊清單。 部署資訊清單有 *.manifest*副檔名。  
+1. 在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟應用程式資訊清單。 部署資訊清單有 *.manifest*副檔名。  
   
-2.  新增`group="framework"`sentinel 組件相依性的 XML (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 看起來應該如下所示：  
+2. 新增`group="framework"`sentinel 組件相依性的 XML (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 看起來應該如下所示：  
   
-    ```xml  
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
-    ```  
+   ```xml  
+   <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
+   ```  
   
-3.  更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該看起來如下：  
+3. 更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該看起來如下：  
   
-    ```xml  
-    <dependency>  
-      <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
-        <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
-      </dependentAssembly>  
-    </dependency>  
-    ```  
+   ```xml  
+   <dependency>  
+     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
+       <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
+     </dependentAssembly>  
+   </dependency>  
+   ```  
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新簽署應用程式和部署資訊清單  
   

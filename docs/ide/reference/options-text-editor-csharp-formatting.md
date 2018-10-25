@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821379"
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
 
@@ -36,7 +36,7 @@ ms.locfileid: "42627180"
 
 這些設定「會在」程式碼編輯器將格式化選項套用至程式碼時有影響。
 
-|ThisAddIn|描述|
+|標籤|描述|
 |-----------|-----------------|
 |**於輸入時自動格式化**|當取消選取時，會停用 [輸入 ; 時將陳述式格式化] 及 [輸入 } 時將區塊格式化] 選項。|
 |**於 ; 處將陳述式自動格式化**|選取時，系統會在陳述式完成時，根據編輯器選取的格式化選項來將陳述式格式化。|
@@ -48,7 +48,7 @@ ms.locfileid: "42627180"
 
 這些設定會設定**將文件格式化**的命令，以在檔案執行額外的程式碼清理。 如需這些設定的套用方式詳細資訊，請參閱[將文件格式化的命令](../code-styles-and-quick-actions.md#format-document-command)。
 
-|ThisAddIn|描述|對應的 EditorConfig 與 [工具] > [選項] 規則|
+|標籤|描述|對應的 EditorConfig 與 [工具] > [選項] 規則|
 |-----------|-----------------|-----------------|-----------------|
 |**套用所有 C# 格式化規則 (縮排、換行、間距)**|**將文件格式化**的命令一律會修正格式化問題。 這項設定無法變更。| [Core EditorConfig 選項](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式化選項](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [格式化] > [縮排] 或 [新行] 或 [間距] 或 [換行]|
 |**在格式化期間執行其他程式碼清理**|如有選取，會對 **Edit.FormatDocument** 命令下指定的規則套用修正。| N/A |
@@ -57,12 +57,12 @@ ms.locfileid: "42627180"
 |**新增/移除單行控制陳述式的括號**|如有選取，會在 **Edit.FormatDocument** 觸發時從單行控制陳述式新增或移除括號。| csharp_prefer_braces<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [程式碼區塊喜好設定] > [建議使用括弧] |
 |**新增協助工具修飾詞**|如有選取，會在 **Edit.FormatDocument** 觸發時新增缺少的協助工具修飾詞。| dotnet_style_require_accessibility_modifiers |
 |**為存取範圍修飾詞排序**|如有選取，會在 **Edit.FormatDocument** 觸發時為協助工具修飾詞排序。| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**套用運算式/區塊主體喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將以運算式為主體的成員轉換成區塊主體，或反向轉換。| [以運算式為主體的成員 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [運算式喜好設定] > [對方法、建構函式等使用運算式主體]  |
-|**套用隱含/明確類型喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時將 `var` 轉換為明確類型，或反向轉換。| [明確類型 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [’var’喜好設定]  |
+|**套用運算式/區塊主體喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將以運算式為主體的成員轉換成區塊主體，或反向轉換。| [以運算式為主體的成員 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [運算式喜好設定] > [對方法、建構函式等使用運算式主體] |
+|**套用隱含/明確類型喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時將 `var` 轉換為明確類型，或反向轉換。| [明確類型 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [’var’喜好設定] |
 |**套用內嵌 'out' 變數喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時，於可行的位置內嵌 `out` 變數。| csharp_style_inlined_variable_declaration<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [變數喜好設定] > [建議使用內嵌變數宣告] |
 |**套用語言/架構類型喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將語言類型轉換為架構類型，或反向轉換。| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [預先定義的類型喜好設定] |
 |**套用物件/集合初始設定喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時，於可行的位置使用物件和集合初始設定式。| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [運算式喜好設定] > [建議使用物件初始設定式] 或 [建議使用集合初始設定式] |
-|**套用 'this.' 限定性條件喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時套用 `this.` 喜好設定。| [限定性條件 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [’this’ 喜好設定]  |
+|**套用 'this.' 限定性條件喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時套用 `this.` 喜好設定。| [限定性條件 EditorConfig 選項](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [’this’ 喜好設定] |
 |**在可行時將私人欄位設為唯讀**|如有選取，會在 **Edit.FormatDocument** 觸發時，於可行的位置將私人欄位設為 `readonly`。| dotnet_style_readonly_field<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [欄位喜好設定] > [建議唯讀] |
 |**移除不必要的 cast**|如有選取，會在 **Edit.FormatDocument** 觸發時移除不必要的 cast。| N/A |
 |**移除未使用的變數**|如有選取，會在 **Edit.FormatDocument** 觸發時移除未使用的變數。| N/A |

@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS |Microsoft 文件
+title: PROCESS_INFO_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3376db379e4e911bcaa8e865a16c63d1251229f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40a8bd1719ec69f78a5697f089062d86211542c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858312"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-指定要擷取處理序的資訊種類。  
+指定的擷取處理序的資訊類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -85,11 +85,11 @@ public enum enum_PROCESS_INFO_FIELDS {
  填寫所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法，以表示的哪些欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構會進行初始化。  
+ 傳遞給[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法，以表示哪些欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構會進行初始化。  
   
- 也用於`Fields`欄位`PROCESS_INFO`結構，以指出哪些欄位是使用且有效。  
+ 也用於`Fields`欄位`PROCESS_INFO`表示哪些欄位已使用且有效的結構。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_length |Microsoft 文件'
+title: 'Idiasymbol:: Get_length |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d58442f0b6e95732dab5a2bc5702e6c500d70a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844512"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-擷取的位元數或位元組這個符號所表示之物件所使用的記憶體。  
+擷取的位元數或位元組，這個符號所表示之物件所使用的記憶體。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_length (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回的位元組數目或位元這個符號所表示之物件所使用的記憶體。  
+ [out]傳回的位元組數目或這個符號所表示之物件所使用的記憶體的位元。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 如果[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)的符號是`LocIsBitField`，這個方法所傳回的長度是位元數; 否則長度是以位元組為單位，對於所有其他位置類型。  
+ 如果[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)符號是`LocIsBitField`，這個方法所傳回的長度是以位元; 否則長度是以位元組為單位，對於所有其他位置類型。  
   
 ## <a name="example"></a>範例  
   

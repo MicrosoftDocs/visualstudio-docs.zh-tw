@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849030"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說： 建立您第一個適用於 Excel 的文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的文件層級自訂。 只有在特定的活頁簿開啟時，才能使用您在這種方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何活頁簿開啟時顯示新功能區索引標籤。  
@@ -31,17 +31,17 @@ ms.locfileid: "38800928"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Excel 活頁簿專案。  
+- 建立 Excel 活頁簿專案。  
   
--   將文字加入 [Visual Studio 設計工具] 中裝載的工作表。  
+- 將文字加入 [Visual Studio 設計工具] 中裝載的工作表。  
   
--   撰寫可使用 Excel 物件模型的程式碼，該程式碼會在自訂工作表開啟時將文字加入此工作表。  
+- 撰寫可使用 Excel 物件模型的程式碼，該程式碼會在自訂工作表開啟時將文字加入此工作表。  
   
--   建置和執行專案來進行測試。  
+- 建置和執行專案來進行測試。  
   
--   清除完成的專案，將不需要的組建檔案和安全性設定從開發電腦上移除。  
+- 清除完成的專案，將不需要的組建檔案和安全性設定從開發電腦上移除。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -54,35 +54,35 @@ ms.locfileid: "38800928"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>在 Visual Studio 中建立新的 Excel 活頁簿專案  
   
-1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。  
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。  
   
-4.  在展開的 [Office/SharePoint] **Deploying Office Solutions** 節點下，選取 [Office 增益集]  節點。  
+4. 在展開的 [Office/SharePoint] **Deploying Office Solutions** 節點下，選取 [Office 增益集]  節點。  
   
-5.  在專案範本清單中，選擇 Excel VSTO 增益集專案。  
+5. 在專案範本清單中，選擇 Excel VSTO 增益集專案。  
   
-6.  在 **名稱**方塊中，輸入**FirstWorkbookCustomization**。  
+6. 在 **名稱**方塊中，輸入**FirstWorkbookCustomization**。  
   
-7.  按一下 [確定 **Deploying Office Solutions**]。  
+7. 按一下 [確定 **Deploying Office Solutions**]。  
   
-     隨即開啟 [Visual Studio Tools for Office 專案精靈]  。  
+    隨即開啟 [Visual Studio Tools for Office 專案精靈]  。  
   
-8.  選取 **建立新的文件**，然後按一下**確定**。  
+8. 選取 **建立新的文件**，然後按一下**確定**。  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立**FirstWorkbookCustomization**專案，然後將下列檔案加入專案。  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立**FirstWorkbookCustomization**專案，然後將下列檔案加入專案。  
   
-    -   *FirstWorkbookCustomization*.xlsx： 代表專案中的 Excel 活頁簿。 包含所有工作表和圖表。  
+   - *FirstWorkbookCustomization*.xlsx： 代表專案中的 Excel 活頁簿。 包含所有工作表和圖表。  
   
-    -   Sheet1 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-所提供的活頁簿中第一個工作表的設計介面和程式碼的工作表。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。  
+   - Sheet1 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-所提供的活頁簿中第一個工作表的設計介面和程式碼的工作表。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。  
   
-    -   Sheet2 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-提供活頁簿中的第二個工作表的設計介面和程式碼的工作表。  
+   - Sheet2 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-提供活頁簿中的第二個工作表的設計介面和程式碼的工作表。  
   
-    -   Sheet3 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-所提供的活頁簿中的第三個工作表的設計介面和程式碼的工作表。  
+   - Sheet3 (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-所提供的活頁簿中的第三個工作表的設計介面和程式碼的工作表。  
   
-    -   ThisWorkbook (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-包含的設計介面和活頁簿層級自訂的程式碼。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。  
+   - ThisWorkbook (*.vb* Visual basic 中的檔案或 *.cs* Visual C# 的檔案)-包含的設計介面和活頁簿層級自訂的程式碼。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。  
   
      Sheet1 程式碼檔案會在此設計工具中自動開啟。  
   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af890c62cc830693cec16494eac71176743cadd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856193"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 
@@ -131,16 +131,18 @@ typedef struct
 
 **類別設計工具**支援範本類別的視覺效果。 支援巢狀宣告。 下表顯示一些典型宣告。
 
-|程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
-|`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> 範本類別|
-|`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 範本類別|
-|`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> 範本類別|
-|`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 範本類別|
+
+| 程式碼項目 | 類別設計工具檢視 |
+| - | - |
+| `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> 範本類別 |
+| `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 範本類別 |
+| `template <class T, int i>`<br /><br /> `class A {};` | `A<T, i>`<br /><br /> 範本類別 |
+| `template <class T, template <class K> class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 範本類別 |
+
 下表顯示一些部分特製化範例。
 
 |程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
+|------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 範本類別|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> 範本類別|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> 範本類別|
@@ -149,13 +151,13 @@ typedef struct
 下表顯示部分特製化中的一些繼承範例。
 
 |程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 範本類別<br /><br /> `B`<br /><br /> 類別<br /><br /> (指向類別 A)<br /><br /> `C`<br /><br /> 類別<br /><br /> (指向類別 A)|
 
 下表顯示一些部分特製化範本函式範例。
 
 |程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
+|------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 個多載)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> 範本類別<br /><br /> `B<T2>`<br /><br /> 範本類別<br /><br /> (B 包含在「巢狀類型」的類別 A 內)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> 類別<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> 範本類別|
@@ -163,13 +165,13 @@ typedef struct
 下表顯示一些範本繼承範例。
 
 |程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 類別<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 類別<br /><br /> (B 包含在「巢狀類型」的類別 C 內)<br /><br /> `C<T>`<br /><br /> 範本類別|
 
 下表顯示一些標準特製化類別連接範例。
 
 |程式碼項目|類別設計工具檢視|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 類別<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 類別<br /><br /> `C<T>`<br /><br /> 範本類別<br /><br /> `D`<br /><br /> 類別<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 

@@ -17,12 +17,12 @@ ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0494d7136e2f00264fca9caca9b507ebf59fef8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af527759568d2f36d120002e7216e1d6ce517b54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816738"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854282"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立項目範本和專案範本，為 SharePoint 專案項目
   當您定義自訂的 SharePoint 專案項目類型時，則您可以將它與項目範本或專案範本。 此關聯可讓其他開發人員使用 Visual Studio 中的專案項目。 您也可以建立範本的精靈。
@@ -47,14 +47,16 @@ ms.locfileid: "36327137"
 
  下表列出一些最常見的選擇性檔案可以包含在項目範本。 某些類型的專案項目可能需要其他這裡未列出的檔案。
 
-|選用的檔案|描述|
-|-------------------|-----------------|
-|*Elements.xml*|A *Feature 元素*檔案。 此檔案會定義 UI 和專案項目所建立的自訂行為。 每一種自訂，例如清單執行個體、 內容類型或自訂動作，會有不同的結構描述會定義這個檔案的內容。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 功能](http://go.microsoft.com/fwlink/?LinkId=169183)並[功能結構描述](http://go.microsoft.com/fwlink/?LinkId=169192)。|
-|*Schema.xml*|清單定義結構描述檔案。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 清單和文件庫](http://go.microsoft.com/fwlink/?LinkId=177792)並[Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793)。|
-|*.webpart*|A *Web 組件定義*檔案。 此檔案包含在 Web 組件的屬性設定。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkId=177791)。|
-|*.ascx*|ASP.NET 使用者控制項檔案。 此檔案會定義視覺 Web 組件的 UI。|
-|*.aspx*|ASP.NET 網頁檔案中。 此檔案包含定義應用程式頁面的 XML 標記。|
-|*.cs*或是 *.vb*檔案|這些程式碼檔案會定義具有的程式設計模型，您可以從 Visual C# 或 Visual Basic 程式碼，例如應用程式頁面、 Web 組件和工作流程存取 SharePoint 自訂行為。|
+
+| 選用的檔案 | 描述 |
+|----------------------| - |
+| *Elements.xml* | A *Feature 元素*檔案。 此檔案會定義 UI 和專案項目所建立的自訂行為。 每一種自訂，例如清單執行個體、 內容類型或自訂動作，會有不同的結構描述會定義這個檔案的內容。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 功能](http://go.microsoft.com/fwlink/?LinkId=169183)並[功能結構描述](http://go.microsoft.com/fwlink/?LinkId=169192)。 |
+| *Schema.xml* | 清單定義結構描述檔案。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 清單和文件庫](http://go.microsoft.com/fwlink/?LinkId=177792)並[Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793)。 |
+| *.webpart* | A *Web 組件定義*檔案。 此檔案包含在 Web 組件的屬性設定。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkId=177791)。 |
+| *.ascx* | ASP.NET 使用者控制項檔案。 此檔案會定義視覺 Web 組件的 UI。 |
+| *.aspx* | ASP.NET 網頁檔案中。 此檔案包含定義應用程式頁面的 XML 標記。 |
+| *.cs*或是 *.vb*檔案 | 這些程式碼檔案會定義具有的程式設計模型，您可以從 Visual C# 或 Visual Basic 程式碼，例如應用程式頁面、 Web 組件和工作流程存取 SharePoint 自訂行為。 |
+
 ## <a name="create-project-templates"></a>建立專案範本
  當您建立 SharePoint 專案範本時，有一些總是必要和選擇性的特定類型的專案可能會使用的檔案的檔案。 一般而言，SharePoint 專案包含至少一個 SharePoint 專案項目。 不過，這是不必要。 例如，您可以定義要只能用來部署在其他專案中建立 SharePoint 方案的 SharePoint 專案範本。
 

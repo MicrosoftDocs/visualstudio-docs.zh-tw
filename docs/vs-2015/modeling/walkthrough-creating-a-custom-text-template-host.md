@@ -15,17 +15,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817271"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A *文字範本**主機* 提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
+A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
  您可以撰寫自訂主應用程式如果您想要使用*文字範本轉換*以外的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或如果您想要將該功能整合到自訂工具。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   

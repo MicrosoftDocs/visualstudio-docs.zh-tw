@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b2bda5a9f5d569057455af9e31fb5d6852c9881e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815490"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708：識別項名稱不應該只靠大小寫區別
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|

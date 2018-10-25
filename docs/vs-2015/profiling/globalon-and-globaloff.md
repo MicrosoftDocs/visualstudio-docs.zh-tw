@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827021"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ VSPerfCmd.exe **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令�
   
  **GlobalOff** 和 **GlobalOn** 選項也會影響由分析工具的 API 函式操作的全域開始/停止計數。  
   
--   **GlobalOff** 可立即將全域啟動/停止計數設定為 0，並因此會暫停分析。  
+- **GlobalOff** 可立即將全域啟動/停止計數設定為 0，並因此會暫停分析。  
   
--   **GlobalOn** 可立即將全域啟動/停止計數設定為 1，並因此會繼續分析。  
+- **GlobalOn** 可立即將全域啟動/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
+  如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

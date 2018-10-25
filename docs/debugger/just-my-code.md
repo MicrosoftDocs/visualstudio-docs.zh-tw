@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 2739a72fa356d9845b5e76304e101819b7e263d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852202"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否只使用 Just My Code，Visual Studio 中的使用者程式碼偵錯
 您可以設定 Visual Studio 自動不進入系統、 架構和其他非使用者呼叫，並摺疊這些呼叫，在 [呼叫堆疊] 視窗中。 啟用或停用此行為的功能稱為*Just My Code*。 本主題描述如何在 C#、 Visual Basic、 c + + 和 JavaScript 專案中使用 Just My Code。
@@ -49,13 +49,13 @@ ms.locfileid: "45612749"
   
  還有三個屬性也會影響偵錯工具如何判斷 My Code：  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 會告知偵錯工具它所套用的程式碼並不是 My Code。  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 會告知偵錯工具它所套用的程式碼並不是 My Code。  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> 會對偵錯工具隱藏程式碼，即使 Just My Code 已關閉。  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> 會對偵錯工具隱藏程式碼，即使 Just My Code 已關閉。  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> 會告知偵錯工具應逐步執行 (Step Through) 它所套用的程式碼，而非逐步執行 (Step Into) 程式碼。  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> 會告知偵錯工具應逐步執行 (Step Through) 它所套用的程式碼，而非逐步執行 (Step Into) 程式碼。  
   
- 其他程式碼可視為使用者程式碼。  
+  其他程式碼可視為使用者程式碼。  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> 逐步執行行為  
  當您**逐步執行**(鍵盤快速鍵： F11) 非使用者程式碼、 程式碼的偵錯工具步驟下, 一個使用者陳述式。 當您**跳離函式**(鍵盤： Shift + F11)，偵錯工具執行至下一行使用者程式碼。 如果不遇到任何使用者程式碼時，則會繼續執行直到應用程式就會結束，叫用中斷點時，或發生例外狀況。  
@@ -79,17 +79,17 @@ ms.locfileid: "45612749"
   
  根據預設，此偵錯工具在呼叫堆疊視窗會將這些函式視為非使用者程式碼：  
   
--   在其符號檔中已移除來源資訊之函式。  
+- 在其符號檔中已移除來源資訊之函式。  
   
--   符號檔表示沒有與堆疊框架對應的原始程式檔之函式。  
+- 符號檔表示沒有與堆疊框架對應的原始程式檔之函式。  
   
--   在 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 資料夾 `*.natjmc` 檔案中所指定的函式。  
+- 在 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 資料夾 `*.natjmc` 檔案中所指定的函式。  
   
- **逐步執行**  
+  **逐步執行**  
   
- 根據預設，只有在 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 資料夾的 `*.natstepfilter` 檔案中指定的函式可視為非使用者程式碼。  
+  根據預設，只有在 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 資料夾的 `*.natstepfilter` 檔案中指定的函式可視為非使用者程式碼。  
   
- 您可以建立自己的 `.natstepfilter` 和 `.natjmc` 來自訂 `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` 中的 [逐步執行] 和 [呼叫堆疊] 視窗行為。  
+  您可以建立自己的 `.natstepfilter` 和 `.natjmc` 來自訂 `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` 中的 [逐步執行] 和 [呼叫堆疊] 視窗行為。  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 逐步執行行為  
  當您**逐步執行**(鍵盤快速鍵： F11) 從使用者程式碼的非使用者程式碼、 偵錯工具不進入程式碼至下一行使用者程式碼。 當您**跳離函式**(鍵盤： Shift + F11)，偵錯工具執行至下一行使用者程式碼。 如果不遇到任何使用者程式碼時，則會繼續執行直到應用程式就會結束，叫用中斷點時，或發生例外狀況。  
@@ -102,11 +102,11 @@ ms.locfileid: "45612749"
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自訂逐步執行行為  
  您可以指定函式不進入某程式區段逐步執行 (Step Over)，方法是將其列出，做為 `*.natstepfilter` 檔案中的非使用者程式碼。  
   
--   若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 .natstepfilter 檔案到`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`資料夾。  
+- 若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 .natstepfilter 檔案到`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`資料夾。  
   
--   若要指定非使用者程式碼，針對個別使用者，新增 .natstepfilter 檔案到`%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`資料夾。  
+- 若要指定非使用者程式碼，針對個別使用者，新增 .natstepfilter 檔案到`%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`資料夾。  
   
- .natstepfilter 檔案是 xml 檔案，具有如下語法：  
+  .natstepfilter 檔案是 xml 檔案，具有如下語法：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -134,11 +134,11 @@ ms.locfileid: "45612749"
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自訂呼叫堆疊行為  
  您可以在 `*.natjmc` 檔案指定模組、原始程式檔和函式，將它們指定為在呼叫堆疊中視為非使用者程式碼。  
   
--   若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 .natjmc 檔案到`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`資料夾。  
+- 若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 .natjmc 檔案到`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`資料夾。  
   
--   若要指定非使用者程式碼，針對個別使用者，新增 .natjmc 檔案到`%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`資料夾。  
+- 若要指定非使用者程式碼，針對個別使用者，新增 .natjmc 檔案到`%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`資料夾。  
   
- .natjmc 檔案是 xml 檔案，具有如下語法：  
+  .natjmc 檔案是 xml 檔案，具有如下語法：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -196,19 +196,19 @@ ms.locfileid: "45612749"
   
  JavaScript 偵錯工具會自動將這些程式碼類型分類：  
   
--   執行由傳遞字串給主機所提供的指令碼`eval`函式分為**MyCode**。  
+- 執行由傳遞字串給主機所提供的指令碼`eval`函式分為**MyCode**。  
   
--   執行由傳遞字串給指令碼`Function`建構函式分為**LibraryCode**。  
+- 執行由傳遞字串給指令碼`Function`建構函式分為**LibraryCode**。  
   
--   Framework 參考，例如 WinJS 或 Azure SDK 中包含的指令碼分為**LibraryCode**。  
+- Framework 參考，例如 WinJS 或 Azure SDK 中包含的指令碼分為**LibraryCode**。  
   
--   執行由傳遞字串給指令碼`setTimeout`， `setImmediate`，或`setInterval`函式會分類為**UnrelatedCode**。  
+- 執行由傳遞字串給指令碼`setTimeout`， `setImmediate`，或`setInterval`函式會分類為**UnrelatedCode**。  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 為所有 Visual Studio JavaScript 專案指定其他使用者和非使用者程式碼。  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 為所有 Visual Studio JavaScript 專案指定其他使用者和非使用者程式碼。  
   
- 您可以修改預設分類，並將名為 `mycode.json` 的 .json 檔案加入專案根資料夾，來分類特定檔案和 URL。  
+  您可以修改預設分類，並將名為 `mycode.json` 的 .json 檔案加入專案根資料夾，來分類特定檔案和 URL。  
   
- 所有其他程式碼分為**MyCode**。  
+  所有其他程式碼分為**MyCode**。  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> 逐步執行行為  
   
@@ -233,30 +233,30 @@ ms.locfileid: "45612749"
 ###  <a name="BKMK_JS_Exception_behavior"></a> 例外狀況行為  
  假如未處理的例外狀況發生在：  
   
--   **MyCode**或是**LibraryCode**程式碼，偵錯工具一定中斷。  
+- **MyCode**或是**LibraryCode**程式碼，偵錯工具一定中斷。  
   
--   **UnrelatedCode**程式碼，並**MyCode**或是**LibraryCode**程式碼位於呼叫堆疊偵錯工具中斷。  
+- **UnrelatedCode**程式碼，並**MyCode**或是**LibraryCode**程式碼位於呼叫堆疊偵錯工具中斷。  
   
- 如果第一個可能的例外狀況啟用的例外狀況 對話方塊中，且會擲回例外狀況**LibraryCode**或是**UnrelatedCode**程式碼：  
+  如果第一個可能的例外狀況啟用的例外狀況 對話方塊中，且會擲回例外狀況**LibraryCode**或是**UnrelatedCode**程式碼：  
   
--   如果處理的例外狀況，偵錯工具不會中斷。  
+- 如果處理的例外狀況，偵錯工具不會中斷。  
   
--   如果例外狀況未經處理，則偵錯工具會中斷。  
+- 如果例外狀況未經處理，則偵錯工具會中斷。  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 自訂 Just My Code  
  若要為單一 Visual Studio 專案分類使用者程式碼和非使用者程式碼，請將名為 `mycode.json` 的 .json 檔案加入此專案的根資料夾。  
   
  會依這個順序執行分類：  
   
-1.  預設分類  
+1. 預設分類  
   
-2.  在 `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 檔案的分類  
+2. 在 `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 檔案的分類  
   
-3.  在目前專案的 `mycode. json` 檔案之分類。  
+3. 在目前專案的 `mycode. json` 檔案之分類。  
   
- 每個分類步驟都會覆寫先前的步驟。 .Json 檔案不需要列出所有的機碼值組，而**MyCode**，**程式庫**，並**Unrelated**值可以是空的陣列。  
+   每個分類步驟都會覆寫先前的步驟。 .Json 檔案不需要列出所有的機碼值組，而**MyCode**，**程式庫**，並**Unrelated**值可以是空的陣列。  
   
- My Code .json 檔案中使用這種語法：  
+   My Code .json 檔案中使用這種語法：  
   
 ```json  
 {  
@@ -294,15 +294,15 @@ ms.locfileid: "45612749"
   
  您可以變更此值為這些關鍵字之一：  
   
--   `MyCode`  將做為指令碼分類**MyCode**。  
+- `MyCode`  將做為指令碼分類**MyCode**。  
   
--   `Library`  將做為指令碼分類**LibraryCode**。  
+- `Library`  將做為指令碼分類**LibraryCode**。  
   
--   `Unrelated`  將做為指令碼分類**UnrelatedCode**。  
+- `Unrelated`  將做為指令碼分類**UnrelatedCode**。  
   
- **MyCode、 Libraries 和不相關**  
+  **MyCode、 Libraries 和不相關**  
   
- **MyCode**，**程式庫**，並**Unrelated**機碼值組指定的 url 或您想要包含在某個分類中的檔案：  
+  **MyCode**，**程式庫**，並**Unrelated**機碼值組指定的 url 或您想要包含在某個分類中的檔案：  
   
 |||  
 |-|-|  

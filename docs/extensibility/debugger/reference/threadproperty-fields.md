@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS |Microsoft 文件
+title: THREADPROPERTY_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5733bfa889a38c1d143fdd3bfbd8f208fed13a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44692c4715db3db8f65a85bd66a129b4d17e5138
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855543"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 指定要擷取執行緒的相關資訊。  
@@ -57,29 +57,29 @@ public enum enum_THREADPROPERTY_FIELDS {
  初始化/使用`dwThreadId`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  
   
  TPF_SUSPENDCOUNT  
- 初始化/使用`dwSuspendCount`欄位`THREADPROPERTIE`結構。  
+ 初始化/使用`dwSuspendCount`欄位`THREADPROPERTIE`S 結構。  
   
  TPF_STATE  
- 初始化/使用`dwThreadState`欄位`THREADPROPERTIE`結構。  
+ 初始化/使用`dwThreadState`欄位`THREADPROPERTIE`S 結構。  
   
  TPF_PRIORITY  
- 初始化/使用`bstrPriority`欄位`THREADPROPERTIE`結構。  
+ 初始化/使用`bstrPriority`欄位`THREADPROPERTIE`S 結構。  
   
  TPF_NAME  
- 初始化/使用`bstrName`欄位`THREADPROPERTIE`結構。  
+ 初始化/使用`bstrName`欄位`THREADPROPERTIE`S 結構。  
   
  TPF_LOCATION  
- 初始化/使用`bstrLocation`欄位`THREADPROPERTIE`結構。  
+ 初始化/使用`bstrLocation`欄位`THREADPROPERTIE`S 結構。  
   
  TPF_ALLFIELDS  
  指定所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞做為引數[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以表示的哪些欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。  
+ 這些值會傳遞做為引數[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以表示哪些欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。  
   
- 這些值也會在`dwFields`隸屬`THREADPROPERTIES`結構，以指出哪些欄位是使用且有效。  
+ 這些值也會在`dwFields`隸屬`THREADPROPERTIES`表示哪些欄位已使用且有效的結構。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

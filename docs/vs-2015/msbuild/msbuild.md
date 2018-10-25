@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837759"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253535"
   
  下列範例將說明何時可能會使用 MSBuild 命令列執行組建，而不是使用 Visual Studio IDE。  
   
--   未安裝 Visual Studio。  
+- 未安裝 Visual Studio。  
   
--   您想要使用 64 位元版的 MSBuild。 通常並不需要這個版本的 MSBuild，不過它可讓 MSBuild 存取更多記憶體。  
+- 您想要使用 64 位元版的 MSBuild。 通常並不需要這個版本的 MSBuild，不過它可讓 MSBuild 存取更多記憶體。  
   
--   您想要在多個流程中執行組建。 不過，您可以使用 IDE 在 C++ 和 C# 的專案中得到相同的結果。  
+- 您想要在多個流程中執行組建。 不過，您可以使用 IDE 在 C++ 和 C# 的專案中得到相同的結果。  
   
--   您想要修改建置系統。 例如，您可能會想要啟用下列動作：  
+- 您想要修改建置系統。 例如，您可能會想要啟用下列動作：  
   
-    -   使用編譯器處理檔案之前，先對檔案進行前置處理。  
+  -   使用編譯器處理檔案之前，先對檔案進行前置處理。  
   
-    -   將組建輸出複製到不同位置。  
+  -   將組建輸出複製到不同位置。  
   
-    -   從組建輸出建立壓縮檔。  
+  -   從組建輸出建立壓縮檔。  
   
-    -   進行後續處理步驟。 例如，您可能想要對組件加上不同版本的戳記。  
+  -   進行後續處理步驟。 例如，您可能想要對組件加上不同版本的戳記。  
   
- 您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種替代方式是，您可以在開發電腦的 IDE 中建置程式碼，但是使用 MSBuild 命令列建置整合自多位開發人員的程式碼。  
+  您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種替代方式是，您可以在開發電腦的 IDE 中建置程式碼，但是使用 MSBuild 命令列建置整合自多位開發人員的程式碼。  
   
 > [!NOTE]
 >  您可以使用 Team Foundation Build 自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Team Foundation Build 會使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  以下為多目標的一些優點：  
   
--   您可以開發以較舊版 .NET Framework (例如 2.0、3.0 和 3.5 版) 為目標的應用程式。  
+- 您可以開發以較舊版 .NET Framework (例如 2.0、3.0 和 3.5 版) 為目標的應用程式。  
   
--   您可以將 .NET Framework 以外的 Framework 做為目標，例如 Silverlight。  
+- 您可以將 .NET Framework 以外的 Framework 做為目標，例如 Silverlight。  
   
--   您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。  
+- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。  
   
--   如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。  
+- 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。  
   
--   多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。  
+- 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。  
   
- 如需詳細資訊，請參閱[多目標](../msbuild/msbuild-multitargeting-overview.md)。  
+  如需詳細資訊，請參閱[多目標](../msbuild/msbuild-multitargeting-overview.md)。  
   
 ## <a name="related-topics"></a>相關主題  
   

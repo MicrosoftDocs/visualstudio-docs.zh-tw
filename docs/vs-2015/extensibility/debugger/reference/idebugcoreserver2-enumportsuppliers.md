@@ -17,12 +17,12 @@ ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e6bc13d6b3ccf0c32eb595b51d5387721eb9dd92
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0cc1ebf536bba6cab71cc3c75ff818feb94acc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825240"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

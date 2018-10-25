@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839267"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 
@@ -100,7 +100,7 @@ ms.locfileid: "31953832"
 
     當您建立新的應用程式時，有些專案預設會以 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 為目標。
 
-- 您應該避免將檔案參考加入至同一方案中的其他專案輸出，因為這麼做可能會造成編譯錯誤。 請改用 [加入參考] 對話方塊中的 [專案] 索引標籤，來建立專案對專案間的參考。 這樣一來就能夠更有效的管理在專案中所建立的類別庫，使得小組開發更為容易。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)。
+您應該避免將檔案參考加入至同一方案中的其他專案輸出，因為這麼做可能會造成編譯錯誤。 請改用 [加入參考] 對話方塊中的 [專案] 索引標籤，來建立專案對專案間的參考。 這樣一來就能夠更有效的管理在專案中所建立的類別庫，使得小組開發更為容易。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)。
 
 > [!NOTE]
 > 在 Visual Studio 2015 (含) 以後版本中，如果某個專案的 .NET Framework 目標版本為第 4.5 版 (含) 以後版本，而其他專案的目標版本為第 2 版、第 3 版、第 3.5 版或第 4.0 版，則會建立檔案參考而非專案參考。
@@ -109,9 +109,9 @@ ms.locfileid: "31953832"
 
 - 將組件移動或複製至下列其中一個位置：
 
-    - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
+   - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
 
-    - 同一方案中的其他專案目錄。 (您可以使用 [專案] 索引標籤尋找這些組件)。
+   - 同一方案中的其他專案目錄。 (您可以使用 [專案] 索引標籤尋找這些組件)。
 
     \-或-
 
@@ -175,7 +175,7 @@ Windows 8.x 市集應用程式專案預設包含專案建立時，Windows 8 SDK 
 </PropertyGroup>
 ```
 
-確定已在這個子群組上選取 [Windows] 核取方塊。 接著您應該就能使用 Windows 執行階段項目。 不過，您可能也會想要新增 <xref:System.Runtime>，讓 Windows 執行階段定義一些標準類別和介面，例如 <xref:System.Collections.IEnumerable>，以便在整個 Windows 執行階段程式庫中使用。 如需如何新增 <xref:System.Runtime> 的詳細資訊，請參閱[受控的傳統型應用程式與 Windows 執行階段](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。
+確定已在這個子群組上選取 [Windows] 核取方塊。 接著您應該就能使用 Windows 執行階段項目。 不過，您可能也會想要新增 <xref:System.Runtime>，讓 Windows 執行階段定義一些標準類別和介面，例如 <xref:System.Collections.IEnumerable>，以便在整個 Windows 執行階段程式庫中使用。 如需如何新增 <xref:System.Runtime> 的詳細資訊，請參閱[受控的傳統型應用程式與 Windows 執行階段](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types)。
 
 ### <a name="extensions-subgroup"></a>[延伸模組] 子群組
 

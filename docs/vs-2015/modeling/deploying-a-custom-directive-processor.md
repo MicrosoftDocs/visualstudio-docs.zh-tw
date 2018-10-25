@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836394"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49251949"
   
  可供選擇的方法為：  
   
--   [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
+- [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
   
--   [VSPackage](../extensibility/internals/vspackages.md)。 如果您要定義除了指示詞處理器之外還包含其他功能的 VSPackage，有個便利的方法可以註冊指示詞處理器。  
+- [VSPackage](../extensibility/internals/vspackages.md)。 如果您要定義除了指示詞處理器之外還包含其他功能的 VSPackage，有個便利的方法可以註冊指示詞處理器。  
   
--   設定登錄機碼： 使用這個方法時，您會加入指示詞處理器的登錄項目。  
+- 設定登錄機碼： 使用這個方法時，您會加入指示詞處理器的登錄項目。  
   
- 只有當您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中轉換文字範本時，才需要使用上述其中一個方法。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
+  只有當您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中轉換文字範本時，才需要使用上述其中一個方法。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器  
  您可以新增自訂指示詞處理器[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
   
  您必須確認 .vsix 檔是否包含下列兩個項目：  
   
--   含有自訂指示詞處理器類別的組件 (.dll)。  
+- 含有自訂指示詞處理器類別的組件 (.dll)。  
   
--   註冊指示詞處理器的 .pkgdef 檔。 檔案的主檔名必須與組件相同。 例如，您的檔案可以命名為 CDP.dll 和 CDP.pkgdef。  
+- 註冊指示詞處理器的 .pkgdef 檔。 檔案的主檔名必須與組件相同。 例如，您的檔案可以命名為 CDP.dll 和 CDP.pkgdef。  
   
- 若要檢查或變更 .vsix 檔案的內容，請將副檔名變更為 .zip，然後開啟檔案。 編輯內容之後，再將檔名變更回 .vsix。  
+  若要檢查或變更 .vsix 檔案的內容，請將副檔名變更為 .zip，然後開啟檔案。 編輯內容之後，再將檔名變更回 .vsix。  
   
- 有數個建立 .vsix 檔的方法。 下列程序將說明其中一個方法。  
+  有數個建立 .vsix 檔的方法。 下列程序將說明其中一個方法。  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>若要在 VSIX 專案中開發自訂指示詞處理器  
   
@@ -167,27 +167,27 @@ ms.locfileid: "49251949"
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>若要設定登錄機碼來註冊指示詞處理器  
   
-1.  執行 `regedit`。  
+1. 執行 `regedit`。  
   
-2.  在 regedit 中巡覽至  
+2. 在 regedit 中巡覽至  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     如果您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗版本中安裝指示詞處理器，請在 "11.0" 後面插入 "Exp"。  
+    如果您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗版本中安裝指示詞處理器，請在 "11.0" 後面插入 "Exp"。  
   
-3.  加入與指示詞處理器相同名稱的登錄機碼。  
+3. 加入與指示詞處理器相同名稱的登錄機碼。  
   
-    -   在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。  
+   -   在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。  
   
-4.  根據下表，在新節點中加入 Class 和 CodeBase 或 Assembly 的字串值。  
+4. 根據下表，在新節點中加入 Class 和 CodeBase 或 Assembly 的字串值。  
   
-    1.  以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。  
+   1.  以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。  
   
-    2.  輸入該值的名稱。  
+   2.  輸入該值的名稱。  
   
-    3.  按兩下名稱，然後編輯資料。  
+   3.  按兩下名稱，然後編輯資料。  
   
- 如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：  
+   如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：  
   
 |名稱|類型|資料|  
 |----------|----------|----------|  

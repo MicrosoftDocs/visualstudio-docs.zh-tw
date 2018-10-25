@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836823"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -33,13 +33,13 @@ ms.locfileid: "36327072"
 
 1. 在建立的報表中，選擇 [新增留言] 來建立您對問題的私人描述。
 
-1. 在回覆編輯器中，使用 [提交] 和 [取消] 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視] 來限制 Microsoft 員工和您自己的可見性。
+2. 在回覆編輯器中，使用 [提交] 和 [取消] 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視] 來限制 Microsoft 員工和您自己的可見性。
 
    ![開發人員社群的隱私權控制](media/developer-community-privacy-control.png)
 
    只有您指定的人員才能看到留言以及其中包含的任何影像、連結或程式碼。 留言下的任何回覆具有與原始留言相同的可見性。 即使回覆的私用控制項未正確顯示受限的可見性狀態也是如此。
 
-1. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出] 按鈕以私下傳送這些資訊。
+3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出] 按鈕以私下傳送這些資訊。
 
    > [!NOTE]
    > 附加的檔案有 2-GB 的限制，最多 10 個檔案。 如果您需要上傳較大的檔案，則可以提交新的問題報表，或在私用留言中向 Microsoft 員工要求上傳 URL。
@@ -82,8 +82,8 @@ ms.locfileid: "36327072"
 
    - 傾印檔案
 
-   > [!NOTE]
-   > 您可以刪除任何不想在提交報表之前提交的記錄資料。
+    > [!NOTE]
+    > 您可以刪除任何不想在提交報表之前提交的記錄資料。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855530"
 ---
 # <a name="model-editor"></a>模型編輯器
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029130"
 [模型編輯器] 支援數個用在 DirectX 應用程式開發的 3D 模型格式：
 
 |格式名稱|副檔名|支援的作業 (檢視、編輯、建立)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |AutoDesk FBX 交換檔案|*.fbx*|檢視、編輯、建立|
 |Collada DAE 檔案|*.dae*|檢視、編輯 (使用 FBX 格式儲存對 Collada DAE 檔案進行的修改)。|
 |OBJ|*.obj*|檢視、編輯 (使用 FBX 格式儲存對 OBJ 檔案進行的修改)。|
@@ -254,7 +254,7 @@ Visual Studio 支援 3D 座標軸的每一個方向，並且可以從支援座�
 若要修改特定物件對場景中不同光源的反應，您可以變更材質的光源屬性，而不變更使用該材質的其他物件。 此表說明常見的光源屬性：
 
 |光源屬性|描述|
-|-----------------------|-----------------|
+| - |-----------------|
 |**環境**|描述介面如何受環境光源的影響。|
 |**擴散**|描述介面如何受定向光線和點光線的影響。|
 |**放射**|描述介面如何發出光線，與其他光源無關。|
@@ -294,7 +294,7 @@ Visual Studio 支援 3D 座標軸的每一個方向，並且可以從支援座�
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
 |命令|鍵盤快速鍵|
-|-------------|------------------------|
+|-------------| - |
 |切換至 [選取] 模式|**Ctrl**+**G**、**Ctrl**+**Q**<br /><br /> **S**|
 |切換到 [縮放] 模式|**Ctrl**+**G**、**Ctrl**+**Z**<br /><br /> **Z**|
 |切換到 [移動瀏覽] 模式|**Ctrl**+**G**、**Ctrl**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Visual Studio 支援 3D 座標軸的每一個方向，並且可以從支援座�
 |標題|描述|
 |-----------|-----------------|
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供可用來與圖形資產 (例如紋理及影像、3D 模型和著色器效果) 搭配工作之 Visual Studio 工具的概觀。|
-|[影像編輯器](../designers/image-editor.md)|描述如何使用 Visual Studio 影像編輯器來處理紋理和影像。|
+|[Image Editor](../designers/image-editor.md)|描述如何使用 Visual Studio 影像編輯器來處理紋理和影像。|
 |[著色器設計工具](../designers/shader-designer.md)|描述如何使用 Visual Studio 著色器設計工具，搭配著色器一起運作。|

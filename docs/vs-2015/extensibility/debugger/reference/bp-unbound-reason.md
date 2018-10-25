@@ -17,12 +17,12 @@ ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d6060753a3208fd09485a52d0959daf31f6c3e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f98c13b2f87492d9aea1ea6d3cc03fd7bf4a1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834515"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

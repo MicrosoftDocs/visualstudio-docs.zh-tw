@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b63a455ac1ff27bbdcf4434a6a70bc17b0a4893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ab77b58047c92cfbf692e014f041e34456a01e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31941742"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863578"
 ---
 # <a name="globalize-applications"></a>全球化應用程式
 
@@ -31,8 +31,8 @@ ms.locfileid: "31941742"
 
 - [全球化 Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)提供全球化 Windows Forms 的 [說明] 頁面連結。
 
-- [全球化和當地語系化 ](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供全球化 Web Form 頁面的 [說明] 頁面連結。
+- [全球化和當地語系化 ](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供全球化 Web Form 頁面的 [說明] 頁面連結。
 
 - [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)探討使用 Visual Basic 或 C# 開發國際市場軟體的基本概念。
 
-- [開發世界性應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。
+- [開發世界性應用程式的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

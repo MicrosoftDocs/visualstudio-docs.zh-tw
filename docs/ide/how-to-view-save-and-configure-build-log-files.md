@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1888e2244182296ad2c5375d0055583dda69e592
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860665"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
 
@@ -44,7 +44,7 @@ ms.locfileid: "31944969"
 3.  在 [MSBuild 專案建置輸出詳細資訊層級] 清單中，選擇下列其中一個值，然後選擇 [確定] 按鈕。
 
     |詳細資訊層級|描述|
-    |---------------------|-----------------|
+    | - |-----------------|
     |**無訊息**|只顯示組建摘要。|
     |**最少**|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息。|
     |**正常**|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息，還有組建的主要步驟。 您將最常使用此詳細層級。|
@@ -60,4 +60,4 @@ ms.locfileid: "31944969"
 
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

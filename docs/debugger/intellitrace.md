@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825411"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ ms.locfileid: "46542451"
 
 ## <a name="IntelliTraceSupport"></a> 哪些應用程式偵錯使用 IntelliTrace？
 
-|||
-|-|-|
-|**完整的支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支援**|-目標檢視快照集使用 IntelliTrace 倒退的 Windows 支援原生的應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClicent 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />-F # 實驗基礎的應用程式<br />支援僅適用於事件的 UWP 應用程式|
-|**不支援**|-其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|
+| | |
+|---------------------| - |
+| **完整的支援** | -Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
+| **有限的支援** | -目標檢視快照集使用 IntelliTrace 倒退的 Windows 支援原生的應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClicent 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />-F # 實驗基礎的應用程式<br />支援僅適用於事件的 UWP 應用程式 |
+| **不支援** | -其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式 |
 
 > [!NOTE]
 > 如果您想要偵錯已執行的處理序，您可以只收集 IntelliTrace 事件 （沒有呼叫資訊）。 您可以附加至只在本機電腦上的 32 位元或 64 位元處理序。 不會收集您附加至處理序之前發生的事件。
@@ -77,7 +77,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。
 
- 下面是一些 IntelliTrace 如何協助您偵錯的範例：
+  下面是一些 IntelliTrace 如何協助您偵錯的範例：
 
 - 您的應用程式含有損毀的資料檔，但您不知道此事件在何處發生。
 
@@ -111,11 +111,11 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
      根據預設，為了協助提高效能，IntelliTrace 不會記錄每個偵錯工具事件的可能值。 相反地，它會記錄下面這些值：
 
-    - 中的值**區域變數**視窗。 保持**區域變數**視窗中開啟來查看這些值。
+  - 中的值**區域變數**視窗。 保持**區域變數**視窗中開啟來查看這些值。
 
-    - 中的值**自動變數** 視窗才**自動變數**視窗已開啟
+  - 中的值**自動變數** 視窗才**自動變數**視窗已開啟
 
-    - 在您將滑鼠指標放置在來源視窗中的變數上方以查看它的值時，所出現的 DataTips 中的值。 IntelliTrace 不會收集固定的 DataTips 中的值。
+  - 在您將滑鼠指標放置在來源視窗中的變數上方以查看它的值時，所出現的 DataTips 中的值。 IntelliTrace 不會收集固定的 DataTips 中的值。
 
     啟用 IntelliTrace 事件與快照集模式時，IntelliTrace 會建立快照集的應用程式的程序在每個偵錯工具**中斷點**並**步驟**事件。 這會記錄中的值**區域變數**，**自動變數**，並**監看式**windows、 無論 windows 是否已開啟。 也會收集任何已釘選的資料提示中的值。
 

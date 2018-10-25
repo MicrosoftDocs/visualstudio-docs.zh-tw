@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854074"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 
@@ -104,7 +104,7 @@ ms.locfileid: "39180460"
 
 > [!NOTE]
 > 此選項只可用於 2.0 版為目標的專案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
-
+> 
 > [!NOTE]
 > **加入 Web 參考** 按鈕時，才可用**設定服務參考**對話方塊隨即出現從**Add Service Reference Dialog Box**。
 

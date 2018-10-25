@@ -1,7 +1,7 @@
 ---
 title: 移植、移轉及升級專案
 description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2017 支援參考，以及 Visual Studio 決定何時需要移轉專案的方式。
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280722"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325025"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
@@ -41,7 +41,7 @@ ms.locfileid: "44280722"
 
 下列清單描述 Visual Studio 2017 對使用舊版建立之專案的支援。
 
-如果您看不到此處列出的應有專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，使用本頁底部的 [Give documentation feedback] (提供書面意見反應) 選項，提供您專案的詳細資料。 (如果您想要得到回覆，請使用文件意見反應，而不是匿名的「本頁對您有幫助嗎？」 控制項。)
+如果您看不到此處列出的應有專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)，使用本頁底部的 [Give documentation feedback] (提供書面意見反應) 選項，提供您專案的詳細資料。 (如果您想要得到回覆，請使用文件意見反應，而不是匿名的「本頁對您有幫助嗎？」 控制項。)
 
 | 專案類型 | 支援 |
 | --- | --- |

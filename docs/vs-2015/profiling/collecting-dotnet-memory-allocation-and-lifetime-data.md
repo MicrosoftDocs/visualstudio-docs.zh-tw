@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844571"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具支援收集 .NET 記憶體配置和物件存留期資料，這些資料可協助您偵測應用程式中與記憶體相關的效能問題。  
   
--   與 .NET 記憶體配置相關的資料包括所配置的 .NET Framework 記憶體物件的大小與數目。  
+- 與 .NET 記憶體配置相關的資料包括所配置的 .NET Framework 記憶體物件的大小與數目。  
   
--   物件存留期資料包含在三個記憶體回收層代中回收之 .NET Framework 記憶體物件的大小和數目。  
+- 物件存留期資料包含在三個記憶體回收層代中回收之 .NET Framework 記憶體物件的大小和數目。  
   
- **需求**  
+  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -64,9 +64,9 @@ ms.locfileid: "49245553"
 ## <a name="common-tasks"></a>一般工作  
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  
   
--   在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
+- 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
   
- 下表中的工作說明當您收集 .NET 記憶體資料時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。  
+  下表中的工作說明當您收集 .NET 記憶體資料時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。  
   
 |工作|相關內容|  
 |----------|---------------------|  

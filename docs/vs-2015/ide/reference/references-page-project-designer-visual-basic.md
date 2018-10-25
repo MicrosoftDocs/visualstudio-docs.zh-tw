@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859053"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49254705"
   
 > [!NOTE]
 >  當專案系統找到組件參考時，系統會尋找下列位置以便解析參考，順序如下：  
->   
->  1.  專案資料夾。 當 [顯示所有檔案] 沒有作用時，方案總管即會顯示專案資料夾檔案。  
-> 2.  [參考路徑] 對話方塊中所指定的資料夾。  
-> 3.  [新增參考] 對話方塊中所示檔案的資料夾。  
-> 4.  專案的 obj 資料夾 (當您將 COM 參考新增至專案時，可能會將一或多個組件新增至專案的 obj 資料夾)。  
+> 
+> 1. 專案資料夾。 當 [顯示所有檔案] 沒有作用時，方案總管即會顯示專案資料夾檔案。  
+>    2.  [參考路徑] 對話方塊中所指定的資料夾。  
+>    3.  [新增參考] 對話方塊中所示檔案的資料夾。  
+>    4.  專案的 obj 資料夾 (當您將 COM 參考新增至專案時，可能會將一或多個組件新增至專案的 obj 資料夾)。  
   
  **參考**  
  這份清單會顯示專案中的所有參考 (不論使用或未使用)。  

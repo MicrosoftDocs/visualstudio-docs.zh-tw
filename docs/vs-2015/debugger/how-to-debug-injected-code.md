@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819780"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "49270031"
   
  使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱 <<c0> [ 概念](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：  
   
--   您可以檢視插入程式碼中的**反組譯碼**視窗。  
+- 您可以檢視插入程式碼中的**反組譯碼**視窗。  
   
--   使用[/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560)，您可以建立合併的原始程式檔，其中包含原始和插入程式碼。  
+- 使用[/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560)，您可以建立合併的原始程式檔，其中包含原始和插入程式碼。  
   
- **反組譯碼**視窗會顯示對應到原始程式碼和由屬性插入的程式碼的組合語言指令。 颾魤 ㄛ**反組譯碼**視窗可以顯示原始程式碼附註。  
+  **反組譯碼**視窗會顯示對應到原始程式碼和由屬性插入的程式碼的組合語言指令。 颾魤 ㄛ**反組譯碼**視窗可以顯示原始程式碼附註。  
   
 ### <a name="to-turn-on-source-annotation"></a>若要開啟來源附註  
   
