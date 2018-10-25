@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948937"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "49231519"
   
  某些網頁伺服器可能會封鎖副檔名為.dll、.config，等.mdf 檔案。 以 Windows 為基礎的應用程式通常會包含這些延伸模組的某些檔案。 如果使用者嘗試執行[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]存取封鎖的檔案，在 Web 伺服器上的應用程式，將會產生錯誤。 而不是解除封鎖所有的檔案副檔名，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]發佈".deploy"副檔名的每個應用程式檔案發佈的預設值。 因此，系統管理員只需要設定 Web 伺服器，以解除封鎖下列三個檔案延伸模組：  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- 不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
+  不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
   
- 您必須設定.manifest、.application，以及使用.deploy，比方說，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或如果您使用另一部 Web 伺服器 (例如 Apache)。  
+  您必須設定.manifest、.application，以及使用.deploy，比方說，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或如果您使用另一部 Web 伺服器 (例如 Apache)。  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 和安全通訊端層 (SSL)  
  A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式將會正常運作透過 SSL，但 Internet Explorer 時引發的 SSL 憑證的相關提示。 沒有發生問題的憑證，例如當站台名稱不相符或憑證已過期時，可能會引發的提示。 若要讓[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]工作透過 SSL 連線，請確定憑證是最新狀態，和憑證資料比對的站台資料。  
@@ -122,11 +122,11 @@ ms.locfileid: "49231519"
   
  如果您使用 IIS 伺服器部署，執行 inetmgr.exe，並新增新的檔案類型的預設網頁：  
   
--   .application 和.manifest 的擴充功能，MIME 類型應該是 「 應用程式/x-ms-應用程式。 」 其他檔案類型，MIME 類型應該是 「 應用程式/八位元資料流。 」  
+- .application 和.manifest 的擴充功能，MIME 類型應該是 「 應用程式/x-ms-應用程式。 」 其他檔案類型，MIME 類型應該是 「 應用程式/八位元資料流。 」  
   
--   如果您建立副檔名的 MIME 類型 「 * 」 和 「 應用程式/八位元資料流 」 MIME 類型，它會允許遭封鎖的檔案類型，若要下載的檔案。 （不過，封鎖無法下載類型，例如.aspx 和.asmx 檔案）。  
+- 如果您建立副檔名的 MIME 類型 「 * 」 和 「 應用程式/八位元資料流 」 MIME 類型，它會允許遭封鎖的檔案類型，若要下載的檔案。 （不過，封鎖無法下載類型，例如.aspx 和.asmx 檔案）。  
   
- 如需在 Windows Server 中設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文件 KB326965，「 IIS 6.0 不會不提供未知 MIME 類型 」， [ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
+  如需在 Windows Server 中設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文件 KB326965，「 IIS 6.0 不會不提供未知 MIME 類型 」， [ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
   
 ## <a name="content-type-mappings"></a>內容類型對應  
  .Application 檔案的內容類型 （也稱為 MIME 類型） 發行時透過 HTTP，應該是 「 應用程式/x-ms-應用程式。 」 如果您有[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]安裝在伺服器上，這會為您自動設定。 如果未安裝，則您需要建立新的 MIME 類型關聯，如[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式 vroot （或整部伺服器）。  

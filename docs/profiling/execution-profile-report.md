@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f053cbf6f85edbe79f0b108093410502f39a9f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fa0800bcf6a4fedfbcd8c787b3cca89638e9bcb9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935285"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
 執行分析報表是傳統的取樣分析。 當執行緒在邏輯核心上執行時，約每毫秒會擷取一次樣本，並行視覺化檢視會透過自動分頁累積的樣本堆疊集來建立典型的呼叫樹狀圖。 目前的時間範圍、隱藏的執行緒及下列可套用的篩選都可能影響此資料表中的資料︰  
   
--   如果已選取 Just My Code，只會顯示有使用者程式碼的堆疊框架，再加上使用者程式碼下方的一個層級。  
+- 如果已選取 Just My Code，只會顯示有使用者程式碼的堆疊框架，再加上使用者程式碼下方的一個層級。  
   
--   如果已設定 Noise 減少值，報表會篩掉小於指定頻率的自動分頁堆疊。  
+- 如果已設定 Noise 減少值，報表會篩掉小於指定頻率的自動分頁堆疊。  
   
- 下表顯示報表中的資料行。  
+  下表顯示報表中的資料行。  
   
 |資料行|描述|  
 |------------|-----------------|  

@@ -16,12 +16,12 @@ ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e1afd7bfa46e669c5125db18049e26984cf8d63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 42095de9fa0e275d2f75fae698c35a6c1bce3ec2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908765"
 ---
 # <a name="combos-element"></a>Combos 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

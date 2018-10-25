@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939549"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49195477"
   
  您有數個選項需要考慮您的專案中的項目之持續性。 您可以執行任何下列其中一個選項：  
   
--   已變更時，分別儲存每個檔案。  
+- 已變更時，分別儲存每個檔案。  
   
--   擷取在單一的許多交易**儲存**作業。  
+- 擷取在單一的許多交易**儲存**作業。  
   
--   儲存在本機將檔案然後發行到伺服器，或使用另一個方法，來儲存專案項目，當項目所表示的遠端物件的資料連接。  
+- 儲存在本機將檔案然後發行到伺服器，或使用另一個方法，來儲存專案項目，當項目所表示的遠端物件的資料連接。  
   
- 如需持續性的詳細資訊，請參閱[專案持續性](../../extensibility/internals/project-persistence.md)並[開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
+  如需持續性的詳細資訊，請參閱[專案持續性](../../extensibility/internals/project-persistence.md)並[開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
   
 ## <a name="project-commitment-model"></a>專案的承諾模型  
  將保存的資料物件會開啟在直接模式 」 或 「 交易的模式？  

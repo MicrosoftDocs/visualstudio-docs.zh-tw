@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833652"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用 Visual Studio 的視覺化和模型工具，以利了解現有的程式碼，並描述您的應用程式。 這可讓您以視覺化方式了解變更會如何影響程式碼，並幫助您評估因這些變更所導致的工作和風險。 例如：  
   
--   若要了解程式碼中的關聯性，請以視覺化方式對應這些關聯性。  
+- 若要了解程式碼中的關聯性，請以視覺化方式對應這些關聯性。  
   
--   若要描述系統架構，並讓程式碼保持與設計一致，請針對這些圖表建立分層圖並驗證程式碼。  
+- 若要描述系統架構，並讓程式碼保持與設計一致，請針對這些圖表建立分層圖並驗證程式碼。  
   
--   若要描述類別結構，建立類別圖。  
+- 若要描述類別結構，建立類別圖。  
   
--   若要建立系統各個層面的模型及溝通渠道，請繪製整合模組化語言 (UML) 圖表。 例如，您可以建立系統元件、類型、互動及處理程序的模型。  
+- 若要建立系統各個層面的模型及溝通渠道，請繪製整合模組化語言 (UML) 圖表。 例如，您可以建立系統元件、類型、互動及處理程序的模型。  
   
- 這些工具也可協助您更輕鬆地與專案相關人員通訊。 例如，您可以使用 UML 類別圖建立常用詞彙，與專案的專案關係人、使用者和小組成員討論系統。  
+  這些工具也可協助您更輕鬆地與專案相關人員通訊。 例如，您可以使用 UML 類別圖建立常用詞彙，與專案的專案關係人、使用者和小組成員討論系統。  
   
- 若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+  若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="what-do-you-want-to-do"></a>請您指定選項。  
   

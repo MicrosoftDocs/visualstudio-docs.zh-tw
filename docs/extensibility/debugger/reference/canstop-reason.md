@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON |Microsoft 文件
+title: CANSTOP_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938808"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-用來判斷是否停止程式在達到執行中的特定點之後的執行。  
+用來判斷是否程式可能會停止在達到執行中的特定點之後執行。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,13 +44,13 @@ public enum enum_CANSTOP_REASON {
   
 ## <a name="members"></a>成員  
  CANSTOP_ENTRYPOINT  
- 指定指定的程式的進入點。  
+ 指定特定程式的進入點。  
   
  CANSTOP_STEPIN  
- 指定逐步執行函式。  
+ 指定 逐步執行函式。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法以確認與工作階段偵錯管理員 (SDM)，如果可以停止或逐步執行函式或方法之後到達該程式的進入點。  
+ 作為引數[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法，以確認與工作階段進行偵錯管理員 (SDM)，如果可以停止或逐步執行函式或方法之後到達該程式的進入點。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833385"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49249102"
   
  **ThreadOff** 和 **ThreadOn** 子命令也會影響分析工具 API 函式操控的執行緒開始/停止計數。  
   
--   **ThreadOff** 可立即將執行緒開始/停止計數設定為 0，並因此會暫停分析。  
+- **ThreadOff** 可立即將執行緒開始/停止計數設定為 0，並因此會暫停分析。  
   
--   **ThreadOn** 可立即將執行緒開始/停止計數設定為 1，並因此會繼續分析。  
+- **ThreadOn** 可立即將執行緒開始/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
+  如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

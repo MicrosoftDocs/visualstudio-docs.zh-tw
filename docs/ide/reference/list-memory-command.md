@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815178"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。
@@ -71,7 +71,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  以下是 **Debug.ListMemory** 命令可用的別名清單：
 
 |Alias|命令和參數|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|
@@ -94,4 +94,4 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

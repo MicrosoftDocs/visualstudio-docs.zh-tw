@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933426"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ ms.locfileid: "49268162"
   
  例如，在範例 Library.dsl，`CirculationBook`網域類別具有`Generates``Double Derived`屬性設定為`true`。 產生的程式碼，該網域類別包含兩個類別：  
   
--   `CirculationBookBase`其為抽象，而且其中包含所有的方法和屬性。  
+- `CirculationBookBase`其為抽象，而且其中包含所有的方法和屬性。  
   
--   `CirculationBook`其係衍生自`CirculationBookBase`。 它是空的除了其建構函式。  
+- `CirculationBook`其係衍生自`CirculationBookBase`。 它是空的除了其建構函式。  
   
- 若要覆寫任何方法，您建立衍生類別的部分定義這類`CirculationBook`。 您可以覆寫產生的方法及繼承自模型化架構的方法。  
+  若要覆寫任何方法，您建立衍生類別的部分定義這類`CirculationBook`。 您可以覆寫產生的方法及繼承自模型化架構的方法。  
   
- 您可以使用這個方法用於所有類型的項目，包括模型項目、 關聯性、 圖形、 圖表和連接器。 您也可以覆寫其他產生的類別的方法。 某些產生例如 ToolboxHelper 永遠是雙衍生的類別。  
+  您可以使用這個方法用於所有類型的項目，包括模型項目、 關聯性、 圖形、 圖表和連接器。 您也可以覆寫其他產生的類別的方法。 某些產生例如 ToolboxHelper 永遠是雙衍生的類別。  
   
 ### <a name="custom-constructors"></a>自訂建構函式  
  您無法覆寫建構函式。 即使在雙衍生的類別，建構函式必須在衍生類別中。  

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938600"
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "49267458"
 ### <a name="links-to-related-graphics-objects"></a>相關圖形物件連結  
  有時需要一些額外內容，才能判定為什麼繪製呼叫會以特定方式與圖形管線互動。 為了更容易找到這項額外內容，[圖形管線階段] 視窗連結至一個或多個提供額外內容的物件，而額外內容與圖形管線中發生的事情有關。  
   
--   在 Direct3D 12 中，此物件通常是命令清單。  
+- 在 Direct3D 12 中，此物件通常是命令清單。  
   
--   在 Direct3D 11 中，此物件通常是圖形裝置內容。  
+- 在 Direct3D 11 中，此物件通常是圖形裝置內容。  
   
- 這些連結是位於 [圖形管線階段] 視窗左上角之目前圖形事件簽章的一部分。 請遵循下列任何連結，檢查物件的其他詳細資料。  
+  這些連結是位於 [圖形管線階段] 視窗左上角之目前圖形事件簽章的一部分。 請遵循下列任何連結，檢查物件的其他詳細資料。  
   
 ### <a name="viewing-and-debugging-shader-code"></a>檢視及偵錯著色器程式碼  
  您可以檢查和偵錯頂點、輪廓、網域、幾何和像素著色器的程式碼，方法是使用 [管線階段] 視窗中其各自階段底部的控制項。  

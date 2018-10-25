@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 61485e50c61580b69c1dfcb5434849ea9122bde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942331"
 ---
 # <a name="troubleshoot-snippets"></a>針對程式碼片段的問題進行疑難排解
 
@@ -27,9 +27,9 @@ IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀�
 
 ## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>程式碼片段無法從 [檔案總管] 拖曳至 Visual Studio 的原始程式檔
 
--   程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。
+- 程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。
 
--   程式碼片段檔案可能不符合程式碼片段結構描述。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。
+- 程式碼片段檔案可能不符合程式碼片段結構描述。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>程式碼有未反白顯示的編譯器錯誤
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments |Microsoft 文件
+title: IDebugGenericFieldInstance::GetTypeArguments |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0521405cfd9991ca0de72690e7b50ca22baaa67e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a73000e7c4ff4514005c47555cc4860c60e7466
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932685"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-擷取這個執行個體的類型參數的引數。  
+擷取這個執行個體的型別參數引數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,7 +53,7 @@ int GetTypeArguments(
  [in、 out]中的成員數目`ppArgs`陣列。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

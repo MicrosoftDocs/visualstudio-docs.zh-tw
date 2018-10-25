@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933569"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。
@@ -96,11 +96,12 @@ ms.locfileid: "31950029"
 ## <a name="element-spacing"></a>項目間距
  使用此設定可控制 XAML 文件中的項目排列方式
 
-|||
-|-|-|
-|**保留內容中的新行**|不會移除項目內容中的空白行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**將內容中的多個空白行摺疊成一行**|項目內容中的空白行會摺疊成一行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**移除內容中的空白行**|移除項目內容中的所有空白行。<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **保留內容中的新行** | 不會移除項目內容中的空白行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **將內容中的多個空白行摺疊成一行** | 項目內容中的空白行會摺疊成一行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **移除內容中的空白行** | 移除項目內容中的所有空白行。<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>其他區段、自動插入
  使用此設定可控制標記和引號的自動產生時機。

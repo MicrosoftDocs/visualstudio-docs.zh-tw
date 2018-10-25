@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941226"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49290390"
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  請提供問題的描述性標題，如此可協助我們將問題發送給 Visual Studio 中適當的團隊。  
+1. 請提供問題的描述性標題，如此可協助我們將問題發送給 Visual Studio 中適當的團隊。  
   
-2.  請提供其他詳細資訊，若可能的話，也請提供重現問題的步驟。  
+2. 請提供其他詳細資訊，若可能的話，也請提供重現問題的步驟。  
   
-3.  從下拉式表單中選擇問題區域。 若您不確定，則請選擇最接近的區域。  
+3. 從下拉式表單中選擇問題區域。 若您不確定，則請選擇最接近的區域。  
   
- ![[回報問題] 對話方塊](../ide/media/report-a-problem-dialog.png "[回報問題] 對話方塊")  
+   ![[回報問題] 對話方塊](../ide/media/report-a-problem-dialog.png "[回報問題] 對話方塊")  
   
 ## <a name="provide-a-screenshot-optional"></a>提供螢幕擷取畫面 (選擇性)  
  選擇 [包含螢幕擷取畫面]，將目前螢幕傳送給 Microsoft。 此工具可讓您裁剪影像，讓該影像只包含顯示出問題的螢幕部分。 按一下 [附加其他檔案] 按鈕，即可附加其他螢幕擷取畫面或其他檔案。  

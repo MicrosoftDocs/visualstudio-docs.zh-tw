@@ -17,12 +17,12 @@ ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b86bf7f1a9dc34ef6283d57dac99ffe71896bca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 617c9a4514ed82df5f03b318057cea736803a802
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947624"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
