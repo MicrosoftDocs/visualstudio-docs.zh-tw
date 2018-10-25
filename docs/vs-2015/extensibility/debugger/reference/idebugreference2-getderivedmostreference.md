@@ -17,12 +17,12 @@ ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59c75dcc7994c9d5dd5f3f6ffa593df01bfbd97c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6baff17ba485b45a239d2acb0af2b765844fa35c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914004"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

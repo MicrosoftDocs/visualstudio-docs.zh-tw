@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825331"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用 GPU 執行緒視窗
 在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[c + + AMP 概觀](/cpp/parallel/amp/cpp-amp-overview)。  
   
  [GPU 執行緒] 視窗包含一個資料表，其中每一個資料列代表一組在所有資料行中具有相同值的 GPU 執行緒。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以從 [GPU 執行緒] 視窗將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各資料行會在 [GPU 執行緒] 視窗中顯示：  
   
--   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
+- 旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
   
--   目前的執行緒資料行，其中黃色箭號表示目前的執行緒。  
+- 目前的執行緒資料行，其中黃色箭號表示目前的執行緒。  
   
--   **執行緒計數**資料行，在相同位置顯示的執行緒數目。  
+- **執行緒計數**資料行，在相同位置顯示的執行緒數目。  
   
--   **列**資料行，顯示每個執行緒群組所在的程式碼行。  
+- **列**資料行，顯示每個執行緒群組所在的程式碼行。  
   
--   **地址**資料行，顯示每個執行緒群組所在的指令位址。 根據預設，這個資料行是隱藏狀態。  
+- **地址**資料行，顯示每個執行緒群組所在的指令位址。 根據預設，這個資料行是隱藏狀態。  
   
--   **位置**資料行，這是在原始程式碼中的位置。  
+- **位置**資料行，這是在原始程式碼中的位置。  
   
--   **狀態**資料行，顯示執行緒為作用中、 已封鎖、 未啟動或完成。  
+- **狀態**資料行，顯示執行緒為作用中、 已封鎖、 未啟動或完成。  
   
--   **圖格**資料行，資料列中顯示執行緒的磚索引。  
+- **圖格**資料行，資料列中顯示執行緒的磚索引。  
   
- 資料表標頭會出現要顯示的 Tile 和執行緒。  
+  資料表標頭會出現要顯示的 Tile 和執行緒。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>若要顯示 GPU 執行緒視窗  
   

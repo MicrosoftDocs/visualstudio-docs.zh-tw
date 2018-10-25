@@ -18,47 +18,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917917"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何： 在 ClickOnce 應用程式中納入資料檔案
 每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>若要使用 Mage.exe 納入資料檔案  
   
-1.  將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。  
+1. 將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。  
   
-     一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。  
+    一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。  
   
-2.  清單的資料檔中更新您的應用程式資訊清單。  
+2. 清單的資料檔中更新您的應用程式資訊清單。  
   
-     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
+    `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     執行此工作會重新建立您的應用程式資訊清單中的檔案清單，而且也會自動產生的雜湊簽章。  
+    執行此工作會重新建立您的應用程式資訊清單中的檔案清單，而且也會自動產生的雜湊簽章。  
   
-3.  在您慣用的文字或 XML 編輯器中開啟應用程式資訊清單，並尋找`file`您最近新增的檔案的項目。  
+3. 在您慣用的文字或 XML 編輯器中開啟應用程式資訊清單，並尋找`file`您最近新增的檔案的項目。  
   
-     如果您已新增名為 XML 檔案`Data.xml`，檔案會看起來會類似下列的程式碼範例。  
+    如果您已新增名為 XML 檔案`Data.xml`，檔案會看起來會類似下列的程式碼範例。  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  將屬性加入`type`至這個項目，並提供其值為`data`。  
+4. 將屬性加入`type`至這個項目，並提供其值為`data`。  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  重新使用您的金鑰組或憑證，簽署應用程式資訊清單，然後重新登入您的部署資訊清單。  
+5. 重新使用您的金鑰組或憑證，簽署應用程式資訊清單，然後重新登入您的部署資訊清單。  
   
-     您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。  
+    您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。  
   
-     `mage -s app manifest -cf cert_file -pwd password`
+    `mage -s app manifest -cf cert_file -pwd password`
   
-     `mage -u deployment manifest -appm app manifest`
+    `mage -u deployment manifest -appm app manifest`
   
-     `mage -s deployment manifest -cf certfile -pwd password`
+    `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要使用 MageUI.exe 中納入資料檔案  
   

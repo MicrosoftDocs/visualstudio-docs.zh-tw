@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900159"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ ms.locfileid: "49297163"
   
  **註解和描述**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     參數不可為 null，和在後的狀態，指向位置不可為 null 且必須是有效的。  
+   參數不可為 null，和在後的狀態，指向位置不可為 null 且必須是有效的。  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     參數可能是 null，但後處於指向位置不得為 null 而且必須是有效的。  
+   參數可能是 null，但後處於指向位置不得為 null 而且必須是有效的。  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     參數不可為 null，並在後的狀態中指向的位置可以是 null。  
+   參數不可為 null，並在後的狀態中指向的位置可以是 null。  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     參數可能是 null，並在後的狀態中指向的位置可以是 null。  
+   參數可能是 null，並在後的狀態中指向的位置可以是 null。  
   
- 下表中，其他的子字串會插入到來進一步限定意義的註釋的註釋名稱。  各種子字串都`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。  
+  下表中，其他的子字串會插入到來進一步限定意義的註釋的註釋名稱。  各種子字串都`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。  
   
 > [!IMPORTANT]
 >  如果 COM 的介面，您會在加上附註，使用這些註解的 COM 形式。 不要使用任何其他類型介面的 COM 註解。  
   
  **註解和描述**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     傳回的指標含有`_Null_terminated_`註釋。  
+   傳回的指標含有`_Null_terminated_`註釋。  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     具有 COM 的語意，傳回的指標，並因此執行`_On_failure_`後置條件，傳回的指標是 null。  
+   具有 COM 的語意，傳回的指標，並因此執行`_On_failure_`後置條件，傳回的指標是 null。  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     傳回的指標指向有效的緩衝區大小的`s`項目或位元組。  
+   傳回的指標指向有效的緩衝區大小的`s`項目或位元組。  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     傳回的指標指向大小的緩衝區`s`項目或位元組，其中第一個`c`有效。  
+   傳回的指標指向大小的緩衝區`s`項目或位元組，其中第一個`c`有效。  
   
- 介面中的某些慣例假設 nullified 輸出參數時，會失敗。  除了明確的 COM 程式碼，會偏好使用下表中的表單。  COM 程式碼，使用 上一節中對應的 COM 形式列出。  
+  介面中的某些慣例假設 nullified 輸出參數時，會失敗。  除了明確的 COM 程式碼，會偏好使用下表中的表單。  COM 程式碼，使用 上一節中對應的 COM 形式列出。  
   
- **註解和描述**  
+  **註解和描述**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     修改其他註解。 結果是設定為 null 如果函式失敗。  
+   修改其他註解。 結果是設定為 null 如果函式失敗。  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     修改其他註解。 如果函式失敗，結果是會設為零。  
+   修改其他註解。 如果函式失敗，結果是會設為零。  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是為非選擇性的參數。  
+   傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是為非選擇性的參數。  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是選擇性參數。  
+   傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是選擇性參數。  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是針對參考參數。  
+   傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是針對參考參數。  
   
 ## <a name="output-reference-parameters"></a>輸出參考參數  
  參考參數的常見用法是輸出參數。  簡單輸出參考參數，例如`int&`—`_Out_`提供正確的語意。  不過，當輸出值是指標時，才 — 比方說`int *&`-對等指標註解讓`_Outptr_ int **`沒有提供正確的語意。  若要精確的指標類型的輸出參考參數的語意，使用這些複合的註解：  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue |Microsoft 文件
+title: IDebugObject::GetValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f65cba807abf4e8a0d7bc85ed28c765f7c6849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7b0f063e64649a07954367105df6a20d997033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868413"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 取得物件的值做為一系列連續的位元組。  
@@ -43,16 +43,16 @@ int GetValue(
   
 #### <a name="parameters"></a>參數  
  `pValue`  
- [in、 out]陣列，其中會填入一連串連續的位元組代表物件的值。  
+ [in、 out]陣列，其中會填入一連串連續的位元組表示之物件的值。  
   
  `nSize`  
  [in]要擷取的位元組數目上限。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 取得的值可以藉由呼叫讀取的位元組總數[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)方法。  
+ 取得的值可以藉由呼叫擷取的位元組總數[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

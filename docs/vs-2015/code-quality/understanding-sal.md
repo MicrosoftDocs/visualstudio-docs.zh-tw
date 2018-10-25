@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874276"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ void * memcpy(
   
  文件包含幾個建議，您的程式碼必須維護特定的屬性，以確保程式正確性資訊位元：  
   
--   `memcpy` 複製`count`的位元組從來源緩衝區複製到目的緩衝區。  
+- `memcpy` 複製`count`的位元組從來源緩衝區複製到目的緩衝區。  
   
--   目的緩衝區必須至少與來源緩衝區一樣大。  
+- 目的緩衝區必須至少與來源緩衝區一樣大。  
   
- 不過，編譯器無法讀取文件或非正式的註解。 它並不知道兩個緩衝區之間沒有關聯性和`count`，它也無法有效地猜發生了解關聯性。 SAL 可以提供更清楚的內容和實作的函式，如下所示：  
+  不過，編譯器無法讀取文件或非正式的註解。 它並不知道兩個緩衝區之間沒有關聯性和`count`，它也無法有效地猜發生了解關聯性。 SAL 可以提供更清楚的內容和實作的函式，如下所示：  
   
 ```cpp  
   
@@ -117,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>若要使用 Visual Studio 程式碼分析工具和 SAL  
   
-1.  在 Visual Studio 中，開啟包含 SAL 註釋的 c + + 專案。  
+1. 在 Visual Studio 中，開啟包含 SAL 註釋的 c + + 專案。  
   
-2.  在功能表列上選擇 **建置**，**針對方案執行程式碼分析**。  
+2. 在功能表列上選擇 **建置**，**針對方案執行程式碼分析**。  
   
-     請考慮 _In\_這一節的範例。 如果您在其上執行程式碼分析，會顯示此警告：  
+    請考慮\_在\_這一節的範例。 如果您在其上執行程式碼分析，會顯示此警告：  
   
-    > **C6387 無效的參數值**   
-    > 'pInt' 可能是 '0': 這不會遵守 'InCallee' 函式規格。  
+   > **C6387 無效的參數值**   
+   > 'pInt' 可能是 '0': 這不會遵守 'InCallee' 函式規格。  
   
-### <a name="example-the-in-annotation"></a>範例： _In\_註釋  
+### <a name="example-the-in-annotation"></a>範例：\_在\_註釋  
  `_In_`註解表示：  
   
 -   參數必須有效，而且將不會修改。  
@@ -164,7 +164,7 @@ void BadInCaller()
   
  如果您使用 Visual Studio 程式碼分析，在此範例中，它會驗證呼叫端傳遞非 Null 指標，來初始化緩衝區`pInt`。 在此情況下，`pInt`指標不能是 NULL。  
   
-### <a name="example-the-inopt-annotation"></a>範例： _In_opt\_註釋  
+### <a name="example-the-inopt-annotation"></a>範例： \_In_opt\_註釋  
  `_In_opt_` 等同於`_In_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -192,7 +192,7 @@ void InOptCaller()
   
  Visual Studio 程式碼分析驗證才能存取緩衝區的函式將會檢查 null。  
   
-### <a name="example-the-out-annotation"></a>範例： _Out\_註釋  
+### <a name="example-the-out-annotation"></a>範例：\_出\_註釋  
  `_Out_` 支援常見的案例，在其中傳入指向的項目緩衝區的非 NULL 指標和函式會初始化項目。 呼叫端沒有呼叫; 之前將緩衝區初始化將它初始化，它會傳回前能夠呼叫的函式。  
   
 ```cpp  
@@ -219,7 +219,7 @@ void OutCaller()
   
  Visual Studio 程式碼分析工具會驗證呼叫端傳遞非 NULL 指標，如緩衝區`pInt`，它會傳回之前將緩衝區初始化函式。  
   
-### <a name="example-the-outopt-annotation"></a>範例： _Out_opt\_註釋  
+### <a name="example-the-outopt-annotation"></a>範例： \_Out_opt\_註釋  
  `_Out_opt_` 等同於`_Out_`，差異在於參數可為 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -247,7 +247,7 @@ void OutOptCaller()
   
  Visual Studio 程式碼分析會驗證這個函數會檢查 null 之前`pInt`已取值，而且如果`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
-### <a name="example-the-inout-annotation"></a>範例： _Inout\_註釋  
+### <a name="example-the-inout-annotation"></a>範例： \_Inout\_註釋  
  `_Inout_` 用來加上註解可能會變更函式的指標參數。 滑鼠指標必須指向有效的初始化資料呼叫前，，即使它會變更，它必須在傳回時，仍有有效的值。 註解會指定函式可以自由的讀取和寫入至其中一個元素的緩衝區。 呼叫端必須提供緩衝區，並將它初始化。  
   
 > [!NOTE]
@@ -279,7 +279,7 @@ void BadInOutCaller()
   
  Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標，來初始化緩衝區`pInt`，而且，在傳回時之前,`pInt`仍然是非 null 並將緩衝區初始化。  
   
-### <a name="example-the-inoutopt-annotation"></a>範例： _Inout_opt\_註釋  
+### <a name="example-the-inoutopt-annotation"></a>範例： \_Inout_opt\_註釋  
  `_Inout_opt_` 等同於`_Inout_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -309,7 +309,7 @@ void InOutOptCaller()
   
  Visual Studio 程式碼分析會驗證它所存取之緩衝區之前，而且如果此函式將會檢查 null`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
-### <a name="example-the-outptr-annotation"></a>範例： _Outptr\_註釋  
+### <a name="example-the-outptr-annotation"></a>範例： \_Outptr\_註釋  
  `_Outptr_` 用來標註的參數，目的是要傳回的指標。  參數本身不能為 NULL，並呼叫的函式中傳回非 NULL 指標，該指標指向已初始化的資料。  
   
 ```cpp  
@@ -340,7 +340,7 @@ void OutPtrCaller()
   
  Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標， `*pInt`，而且它會傳回之前將緩衝區初始化函式。  
   
-### <a name="example-the-outptropt-annotation"></a>範例： _Outptr_opt\_註釋  
+### <a name="example-the-outptropt-annotation"></a>範例： \_Outptr_opt\_註釋  
  `_Outptr_opt_` 等同於`_Outptr_`，只不過是選擇性參數，呼叫端可以為參數傳遞 NULL 指標。  
   
 ```cpp  
@@ -373,7 +373,7 @@ void OutPtrOptCaller()
   
  Visual Studio 程式碼分析會驗證這個函數會檢查之前的 null`*pInt`已取值，而且它會傳回之前將緩衝區初始化函式。  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>範例： _Success\_搭配 _Out 註釋\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>範例：\_成功\_結合的註解\_出\_  
  註解可以套用至大部分的物件。  特別是，您可以標註的整個函式。  其中一個函式的最明顯的特性是它可以成功或失敗。 但緩衝區和大小之間的關聯，例如 C/c + + 無法表示函式成功或失敗。 使用`_Success_`註解，您可以說出成功的函式如下所示。  參數以`_Success_`註釋不只是，當為 true 表示已成功函式的運算式。 運算式可以是任何註解剖析器可以處理的項目。 函式成功時，都只適用於函式傳回之後的註釋的效果。 此範例示範如何`_Success_`互動`_Out_`執行適當的動作。 您可以使用關鍵字`return`來代表傳回的值。  
   
 ```cpp  
@@ -403,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>何時我加上註解？  
  以下是一些指導方針：  
   
--   所有的指標參數加上註解。  
+- 所有的指標參數加上註解。  
   
--   使程式碼分析，才能確保緩衝區和指標的安全性，加上註解的值範圍的註解。  
+- 使程式碼分析，才能確保緩衝區和指標的安全性，加上註解的值範圍的註解。  
   
--   標註鎖定規則和鎖定的副作用。 如需詳細資訊，請參閱 <<c0> [ 註釋鎖定行為](../code-quality/annotating-locking-behavior.md)。  
+- 標註鎖定規則和鎖定的副作用。 如需詳細資訊，請參閱 <<c0> [ 註釋鎖定行為](../code-quality/annotating-locking-behavior.md)。  
   
--   驅動程式屬性和其他網域特有的屬性加上註解。  
+- 驅動程式屬性和其他網域特有的屬性加上註解。  
   
- 或者，您可以標註，使整個您意圖清除，並讓您輕鬆查看註解，完成所有的參數。  
+  或者，您可以標註，使整個您意圖清除，並讓您輕鬆查看註解，完成所有的參數。  
   
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/p/?LinkId=251197)  

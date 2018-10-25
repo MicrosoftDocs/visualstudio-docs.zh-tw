@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906037"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀及行為的 SharePoint 網站頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們是在 SharePoint 網站上顯示之網頁的建置組塊。 請參閱[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -84,25 +84,25 @@ ms.locfileid: "36327212"
 ## <a name="visual-web-part-limitations"></a>視覺 web 組件限制
  開始在 Visual Studio 中，您可以將視覺 web 組件新增至沙箱化 SharePoint 方案與伺服器陣列方案。 不過，視覺 web 組件具有下列限制：  
   
--   視覺 web 組件不支援可置換的參數。 如需詳細資訊，請參閱 <<c0> [ 可置換的參數](../sharepoint/replaceable-parameters.md)。  
+- 視覺 web 組件不支援可置換的參數。 如需詳細資訊，請參閱 <<c0> [ 可置換的參數](../sharepoint/replaceable-parameters.md)。  
   
--   使用者控制項或視覺 web 組件無法拖曳和卸除或複製到視覺 web 組件。 這個動作會導致建置錯誤。  
+- 使用者控制項或視覺 web 組件無法拖曳和卸除或複製到視覺 web 組件。 這個動作會導致建置錯誤。  
   
--   視覺 web 組件不直接支援 SharePoint 伺服器語彙基元，例如 $SPUrl。 詳細的資訊，請參閱主題中的 「 權杖限制在沙箱化視覺 Web 組件 」[疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
+- 視覺 web 組件不直接支援 SharePoint 伺服器語彙基元，例如 $SPUrl。 詳細的資訊，請參閱主題中的 「 權杖限制在沙箱化視覺 Web 組件 」[疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
--   在沙箱化方案中的視覺 web 組件偶而會收到錯誤訊息、 「"沙箱化程式碼執行要求被拒絕的沙箱化程式碼主機服務太忙碌，無法處理要求，因為。 如需此錯誤的詳細資訊，請參閱在這篇文章[SharePoint 開發人員小組部落格](http://go.microsoft.com/fwlink/?LinkId=225932)。  
+- 在沙箱化方案中的視覺 web 組件偶而會收到錯誤訊息、 「"沙箱化程式碼執行要求被拒絕的沙箱化程式碼主機服務太忙碌，無法處理要求，因為。 如需此錯誤的詳細資訊，請參閱在這篇文章[SharePoint 開發人員小組部落格](http://go.microsoft.com/fwlink/?LinkId=225932)。  
   
--   伺服器端 JavaScript 偵錯不支援在 Visual Studio 中，但用戶端 JavaScript 偵錯支援。  
+- 伺服器端 JavaScript 偵錯不支援在 Visual Studio 中，但用戶端 JavaScript 偵錯支援。  
   
-     雖然您可以將內嵌 JavaScript 加入到伺服器端標記檔案中，偵錯不支援為加入至標記的中斷點。 若要偵錯 JavaScript，參考在標記檔案中的外部 JavaScript 檔案，然後在 JavaScript 檔案中設定中斷點。  
+   雖然您可以將內嵌 JavaScript 加入到伺服器端標記檔案中，偵錯不支援為加入至標記的中斷點。 若要偵錯 JavaScript，參考在標記檔案中的外部 JavaScript 檔案，然後在 JavaScript 檔案中設定中斷點。  
   
--   內嵌的偵錯[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]中產生的程式碼檔案而不是標記檔案中，必須完成的程式碼。  
+- 內嵌的偵錯[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]中產生的程式碼檔案而不是標記檔案中，必須完成的程式碼。  
   
--   視覺 web 組件不支援使用`<@ Assembly Src=`指示詞。  
+- 視覺 web 組件不支援使用`<@ Assembly Src=`指示詞。  
   
--   SharePoint web 控制項和部分[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]控制項不支援在 SharePoint 的沙箱環境中。 如果使用不支援的控制項上的視覺 web 組件，在沙箱化方案中，錯誤會出現"的類型或命名空間名稱 'Theme' 不存在於命名空間 'Microsoft.SharePoint.WebControls' 」。  
+- SharePoint web 控制項和部分[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]控制項不支援在 SharePoint 的沙箱環境中。 如果使用不支援的控制項上的視覺 web 組件，在沙箱化方案中，錯誤會出現"的類型或命名空間名稱 'Theme' 不存在於命名空間 'Microsoft.SharePoint.WebControls' 」。  
   
- 如需有關沙箱化方案的詳細資訊，請參閱[差異沙箱化方案與伺服器陣列解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
+  如需有關沙箱化方案的詳細資訊，請參閱[差異沙箱化方案與伺服器陣列解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>建立舊樣式 SharePoint 架構 web 組件
  您可以在 Visual Studio 中使用範本來建立自訂[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]適用於 SharePoint web 組件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web 組件為基礎建置的[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 組件基礎結構和建議針對新的專案類型。  

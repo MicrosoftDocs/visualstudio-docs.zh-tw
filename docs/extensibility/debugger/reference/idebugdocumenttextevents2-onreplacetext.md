@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onReplaceText |Microsoft 文件
+title: IDebugDocumentTextEvents2::onReplaceText |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d66eaeb8acb62555bc9a980c2280f763d30552fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 526830c1070622ff1a15459791da1709e204c814
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813436"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
-文件中，已取代的文字會告知偵錯封裝。  
+文件中，已被取代的文字會告知偵錯封裝。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,13 +43,13 @@ int onReplaceText(
   
 #### <a name="parameters"></a>參數  
  `pos`  
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)表示文字已被取代的位置。  
+ [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)表示已取代文字。  
   
  `dwNumToReplace`  
- [in]指定的文字所取代的字元數目。  
+ [in]指定文字的已取代的字元數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

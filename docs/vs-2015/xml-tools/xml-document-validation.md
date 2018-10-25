@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914264"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ XML 編輯器可檢查 XML 1.0 語法，並在您輸入時執行資料驗證。 
   
  藉由將已編譯結構描述的 `targetNamespace` 與該項目的 xmlns 宣告相比對，可找到驗證中所使用的結構描述。 已編譯的結構描述會從下列其中一個位置載入，並以優先順序列出：  
   
--   從指定的檔名**結構描述**文件的 [屬性] 視窗的欄位。  
+- 從指定的檔名**結構描述**文件的 [屬性] 視窗的欄位。  
   
--   內嵌結構描述或 DTD。  
+- 內嵌結構描述或 DTD。  
   
--   外部 DTD 或 `xsd:schemaLocation` 及 `xsd:noNamespaceSchemaLocation` 屬性。  
+- 外部 DTD 或 `xsd:schemaLocation` 及 `xsd:noNamespaceSchemaLocation` 屬性。  
   
--   「x-結構描述」XDR 結構描述命名空間 URI。  
+- 「x-結構描述」XDR 結構描述命名空間 URI。  
   
- 當結構描述具有非空白的目標命名空間時，也可在下列其他位置找到結構描述：  
+  當結構描述具有非空白的目標命名空間時，也可在下列其他位置找到結構描述：  
   
--   包含結構描述的其他編輯器視窗。  
+- 包含結構描述的其他編輯器視窗。  
   
--   目前解決方案中的結構描述。  
+- 目前解決方案中的結構描述。  
   
--   結構描述快取目錄中的結構描述。  
+- 結構描述快取目錄中的結構描述。  
   
 ## <a name="xslt-files"></a>XSLT 檔  
  編輯 XSLT 檔時，位於結構描述快取中的 xslt.xsd 檔案可用於驗證。 驗證錯誤以藍色波浪底線顯示。 XSLT 編譯器中的錯誤以紅色波浪底線顯示。  

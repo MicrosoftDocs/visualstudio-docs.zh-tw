@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926538"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 識別碼和 Guid 的命令
 已安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 Visual Studio 整合式的開發環境 (IDE) 中包含的命令 GUID 和 ID 值。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -34,23 +34,23 @@ ms.locfileid: "39500871"
   
 ### <a name="to-locate-a-command-definition"></a>若要找出命令定義  
   
-1.  在 Visual Studio 中，開啟下列檔案中的 *< Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\* 資料夾： *SharedCmdDef.vsct*，*ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
+1. 在 Visual Studio 中，開啟下列檔案中的 *< Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\* 資料夾： *SharedCmdDef.vsct*，*ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
   
-     大部分的 Visual Studio 命令定義於*SharedCmdDef.vsct*並*ShellCmdDef.vsct*。 *VsDbgCmdUsed.vsct*定義命令的相關偵錯工具，並*Venusmenu.vsct*定義專屬於 Web 開發的命令。  
+    大部分的 Visual Studio 命令定義於*SharedCmdDef.vsct*並*ShellCmdDef.vsct*。 *VsDbgCmdUsed.vsct*定義命令的相關偵錯工具，並*Venusmenu.vsct*定義專屬於 Web 開發的命令。  
   
-2.  如果命令的功能表項目，請注意功能表項目的的確切文字。 如果工具列上的按鈕命令，請注意當您暫停它時所顯示的工具提示文字。  
+2. 如果命令的功能表項目，請注意功能表項目的的確切文字。 如果工具列上的按鈕命令，請注意當您暫停它時所顯示的工具提示文字。  
   
-3.  按下**Ctrl**+**F**以開啟**尋找** 對話方塊。  
+3. 按下**Ctrl**+**F**以開啟**尋找** 對話方塊。  
   
-4.  在 **尋找目標**方塊中，輸入步驟 2 記下的文字。  
+4. 在 **尋找目標**方塊中，輸入步驟 2 記下的文字。  
   
-5.  確認**所有開啟的文件**會顯示在**查看** 方塊中。  
+5. 確認**所有開啟的文件**會顯示在**查看** 方塊中。  
   
-6.  按一下 **尋找下一步**按鈕，直到中選取的文字`<Strings>`一節[按鈕項目](../../extensibility/button-element.md)。  
+6. 按一下 **尋找下一步**按鈕，直到中選取的文字`<Strings>`一節[按鈕項目](../../extensibility/button-element.md)。  
   
-     `<Button>`命令中所顯示的項目是命令定義。  
+    `<Button>`命令中所顯示的項目是命令定義。  
   
- 當您發現命令定義時，您可以藉由建立另一個功能表或工具列上放置一份命令[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`做為命令的值。 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)。  
+   當您發現命令定義時，您可以藉由建立另一個功能表或工具列上放置一份命令[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`做為命令的值。 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)。  
   
 ### <a name="special-cases"></a>特殊案例  
  在下列情況中，功能表文字或工具提示文字可能不完全相同功能的命令定義。  

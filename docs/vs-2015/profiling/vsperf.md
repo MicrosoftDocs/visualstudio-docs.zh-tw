@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851025"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用 **VsPerf** 命令列工具，可以︰  
   
-1.  在裝置上未安裝 Visual Studio 時，從命令列來分析 Windows 市集應用程式。  
+1. 在裝置上未安裝 Visual Studio 時，從命令列來分析 Windows 市集應用程式。  
   
-2.  使用取樣分析方法來分析 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式。  
+2. 使用取樣分析方法來分析 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式。  
   
- 如需程式碼剖析選項的詳細資訊，請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+   如需程式碼剖析選項的詳細資訊，請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ##  <a name="BKMK_In_this_topic"></a>本主題內容  
  本主題說明您可以搭配 `vsperf.exe` 命令列工具一起使用的選項。 此主題包括下列各節：  

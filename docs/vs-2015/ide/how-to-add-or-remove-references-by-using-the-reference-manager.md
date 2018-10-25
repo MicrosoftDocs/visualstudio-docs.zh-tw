@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917543"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49258176"
   
 #### <a name="to-add-a-reference"></a>加入參考  
   
-1.  在方案總管中，以滑鼠右鍵按一下 [參考] 節點，然後選擇 [加入參考]。  
+1. 在方案總管中，以滑鼠右鍵按一下 [參考] 節點，然後選擇 [加入參考]。  
   
-2.  指定要新增的參考，然後選擇 [確定] 按鈕。  
+2. 指定要新增的參考，然後選擇 [確定] 按鈕。  
   
- [參考管理員] 隨即開啟，並依群組列出可用的參考。 專案類型決定下列哪些群組會出現：  
+   [參考管理員] 隨即開啟，並依群組列出可用的參考。 專案類型決定下列哪些群組會出現：  
   
 -   組件，包含 [Framework] 和 [擴充功能] 子群組。  
   
@@ -69,29 +69,29 @@ ms.locfileid: "49258176"
   
  [組件] 索引標籤包括兩個子索引標籤：  
   
-1.  [Framework] 會列出組成目標 Framework 的所有組件。  
+1. [Framework] 會列出組成目標 Framework 的所有組件。  
   
-    -   通告的組件為完整 Framework，並且會在您的專案以目標 Framework 的設定檔為目標時，於 [Framework] 清單中列舉。 通告的組件會以灰色顯示，以便與專案的目標 Framework 設定檔中的組件做出區分。 例如，如果專案是以 .NET Framework 4 Client 為目標，則 [Framework] 清單中會顯示 .NET Framework 4 中通告的組件。 當使用者新增通告的組件時，系統會告知使用者，專案將在 [參考管理員] 對話方塊關閉之後，重定目標為 .NET Framework 4，並新增通告的組件。  
+   -   通告的組件為完整 Framework，並且會在您的專案以目標 Framework 的設定檔為目標時，於 [Framework] 清單中列舉。 通告的組件會以灰色顯示，以便與專案的目標 Framework 設定檔中的組件做出區分。 例如，如果專案是以 .NET Framework 4 Client 為目標，則 [Framework] 清單中會顯示 .NET Framework 4 中通告的組件。 當使用者新增通告的組件時，系統會告知使用者，專案將在 [參考管理員] 對話方塊關閉之後，重定目標為 .NET Framework 4，並新增通告的組件。  
   
-    -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的專案預設包含專案建立時，目標[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有組件的參考。 在 Managed 專案中，方案總管 [參考] 資料夾下的唯讀節點表示整個 Framework 的參考。 因此，[Framework] 索引標籤不會列舉 Framework 中的任何組件，並改為顯示下列訊息：「所有 Framework 組件都已經被參考了。 請使用物件瀏覽器瀏覽 Framework 中的參考」。 對於傳統型專案，[Framework] 索引標籤會列舉目標 Framework 中的組件，而且使用者必須加入應用程式所需的參考。  
+   -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的專案預設包含專案建立時，目標[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有組件的參考。 在 Managed 專案中，方案總管 [參考] 資料夾下的唯讀節點表示整個 Framework 的參考。 因此，[Framework] 索引標籤不會列舉 Framework 中的任何組件，並改為顯示下列訊息：「所有 Framework 組件都已經被參考了。 請使用物件瀏覽器瀏覽 Framework 中的參考」。 對於傳統型專案，[Framework] 索引標籤會列舉目標 Framework 中的組件，而且使用者必須加入應用程式所需的參考。  
   
-2.  [擴充功能] 會列出外部元件和控制項廠商為了擴充目標 Framework 所開發的全部組件。 根據使用者應用程式的用途，可能會需要這些組件。  
+2. [擴充功能] 會列出外部元件和控制項廠商為了擴充目標 Framework 所開發的全部組件。 根據使用者應用程式的用途，可能會需要這些組件。  
   
-    -   填入擴充功能的方式是列舉下列位置所註冊的組件：  
+   -   填入擴充功能的方式是列舉下列位置所註冊的組件：  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         例如，如果專案在 32 位元電腦上的目標是 .NET Framework 4，則延伸模組會列舉 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 及 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下註冊的組件。  
+        例如，如果專案在 32 位元電腦上的目標是 .NET Framework 4，則延伸模組會列舉 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 及 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下註冊的組件。  
   
- 視專案的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本而定，清單中的部分元件可能不會顯示。 在下列狀況下可能會發生這種情形：  
+   視專案的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本而定，清單中的部分元件可能不會顯示。 在下列狀況下可能會發生這種情形：  
   
 -   使用最近版本 .NET Framework 的元件，與目標針對舊版 .NET Framework 的專案並不相容。  
   
@@ -108,35 +108,35 @@ ms.locfileid: "49258176"
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>若要在加入參考對話方塊中顯示組件  
   
--   將組件移動或複製至下列其中一個位置：  
+- 將組件移動或複製至下列其中一個位置：  
   
-    -   目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
+  - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
   
-    -   同一方案中的其他專案目錄。 (您可以使用 [專案] 索引標籤尋找這些組件)。  
+  - 同一方案中的其他專案目錄。 (您可以使用 [專案] 索引標籤尋找這些組件)。  
   
-     \-或-  
+    \-或-  
   
--   設定用以指定組件顯示位置的登錄機碼：  
+- 設定用以指定組件顯示位置的登錄機碼：  
   
-     針對 32 位元的作業系統，請加入下列登錄機碼之一。  
+   針對 32 位元的作業系統，請加入下列登錄機碼之一。  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
   
-     針對 64 位元的作業系統，請在 32 位元登錄區中，加入下列登錄機碼之一。  
+    針對 64 位元的作業系統，請在 32 位元登錄區中，加入下列登錄機碼之一。  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\<最低版本>\AssemblyFoldersEx\MyAssemblies]@="組件位置"  
   
-     <最低版本> 是適用的最低 .NET Framework 版本。 如果 <最低版本>是 3.0 版，則 AssemblyFoldersEx 中指定的資料夾適用於以 .NET Framework 3.0 (含) 以後版本為目標的專案。  
+    <最低版本> 是適用的最低 .NET Framework 版本。 如果 <最低版本>是 3.0 版，則 AssemblyFoldersEx 中指定的資料夾適用於以 .NET Framework 3.0 (含) 以後版本為目標的專案。  
   
-     <組件位置> 代表您想要在 [加入參考] 對話方塊中顯示的組件目錄，例如 C:\MyAssemblies\\。  
+    <組件位置> 代表您想要在 [加入參考] 對話方塊中顯示的組件目錄，例如 C:\MyAssemblies\\。  
   
-     在 HKEY_LOCAL_MACHINE 節點下建立登錄機碼，可讓所有使用者都能在 [加入參考] 對話方塊中看到指定位置的組件。 在 HKEY_CURRENT_USER 節點下建立登錄機碼，只會影響目前使用者的設定。  
+    在 HKEY_LOCAL_MACHINE 節點下建立登錄機碼，可讓所有使用者都能在 [加入參考] 對話方塊中看到指定位置的組件。 在 HKEY_CURRENT_USER 節點下建立登錄機碼，只會影響目前使用者的設定。  
   
-     再次開啟 [加入參考] 對話方塊。 組件應該會出現在 [.NET] 索引標籤上。如果沒有顯示，請確認組件位於指定的 <組件位置> 目錄中，然後重新啟動 Visual Studio 並再試一次。  
+    再次開啟 [加入參考] 對話方塊。 組件應該會出現在 [.NET] 索引標籤上。如果沒有顯示，請確認組件位於指定的 <組件位置> 目錄中，然後重新啟動 Visual Studio 並再試一次。  
   
 ## <a name="com-tab"></a>COM 索引標籤  
  [COM] 索引標籤會列出所有可供參考的 COM 元件。 如果您要將參考加入包含內部資訊清單的已註冊 COM DLL，請先移除註冊 DLL。 否則 Visual Studio 會將組件參考加入為 ActiveX 控制項，而不是原生 DLL。  
@@ -159,11 +159,11 @@ ms.locfileid: "49258176"
   
  您可以在 Visual Studio 中透過兩種方式產生 WinMD 檔案：  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式 Managed 專案**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案可以透過設定 [專案屬性 &#124; 輸出類型 = WinMD 檔案] 的方式輸出 WinMD 二進位檔。 WinMD 檔案名稱必須是本身包含之所有命名空間的超集命名空間。 例如，如果專案包括命名空間 A.B 和 A.B.C，則其輸出的 WinMD 可能名稱為 A.winmd 和 A.B.winmd。 如果使用者輸入的 [專案屬性 &#124; 組件名稱] 或 [專案屬性 &#124; 命名空間] 值與專案中的命名空間集合不相鄰，或是專案內沒有超集命名空間，則會產生建置警告：'A.winmd' 不是這個組件的有效 .winmd 檔案名稱。 Windows 中繼資料檔中的所有類型都必須存在檔案名稱的子命名空間內。 在執行階段將找不到不存在檔案名稱之子命名空間中的類型。 在這個組件中，最小通用命名空間為 'CSWSClassLibrary1'。 傳統型 Visual Basic 或 Visual C# 專案只能使用以 [!INCLUDE[win8](../includes/win8-md.md)] SDK 產生的 WinMD，它稱為第一方 WinMD 而且無法產生 WinMD。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式 Managed 專案**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案可以透過設定 [專案屬性 &#124; 輸出類型 = WinMD 檔案] 的方式輸出 WinMD 二進位檔。 WinMD 檔案名稱必須是本身包含之所有命名空間的超集命名空間。 例如，如果專案包括命名空間 A.B 和 A.B.C，則其輸出的 WinMD 可能名稱為 A.winmd 和 A.B.winmd。 如果使用者輸入的 [專案屬性 &#124; 組件名稱] 或 [專案屬性 &#124; 命名空間] 值與專案中的命名空間集合不相鄰，或是專案內沒有超集命名空間，則會產生建置警告：'A.winmd' 不是這個組件的有效 .winmd 檔案名稱。 Windows 中繼資料檔中的所有類型都必須存在檔案名稱的子命名空間內。 在執行階段將找不到不存在檔案名稱之子命名空間中的類型。 在這個組件中，最小通用命名空間為 'CSWSClassLibrary1'。 傳統型 Visual Basic 或 Visual C# 專案只能使用以 [!INCLUDE[win8](../includes/win8-md.md)] SDK 產生的 WinMD，它稱為第一方 WinMD 而且無法產生 WinMD。  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式原生專案**：原生 WinMD 檔案只包含中繼資料。 它的實作會出現在個別 DLL 中。 在 [新增專案] 對話方塊中選擇 Windows 執行階段元件專案範本，或是從空白專案開始並修改專案屬性來產生 WinMD 檔案，就可以產生原生二進位檔。 如果專案包含不相鄰的命名空間，則會產生建置錯誤，告訴使用者將其命名空間結合或執行 MSMerge 工具。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式原生專案**：原生 WinMD 檔案只包含中繼資料。 它的實作會出現在個別 DLL 中。 在 [新增專案] 對話方塊中選擇 Windows 執行階段元件專案範本，或是從空白專案開始並修改專案屬性來產生 WinMD 檔案，就可以產生原生二進位檔。 如果專案包含不相鄰的命名空間，則會產生建置錯誤，告訴使用者將其命名空間結合或執行 MSMerge 工具。  
   
- [Windows] 索引標籤包括兩個子群組。  
+  [Windows] 索引標籤包括兩個子群組。  
   
 ### <a name="core-subgroup"></a>核心子群組  
  [核心] 子群組會列出目標版本 Windows 的 SDK 中所有的 WinMD (針對 Windows 執行階段項目)。  

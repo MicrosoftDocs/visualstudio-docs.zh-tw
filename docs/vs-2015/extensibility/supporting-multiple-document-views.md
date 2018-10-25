@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826541"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以為您的編輯器建立個別的文件資料和文件檢視物件，以提供文件的多個檢視。 一些其他的文件檢視會很有用的案例如下：  
   
--   新的視窗支援： 您想要您的編輯器將提供的相同類型的兩個或多個檢視，如此已經在編輯器中開啟的視窗的使用者可以選取，開啟新視窗**開新視窗**命令**視窗**  功能表。  
+- 新的視窗支援： 您想要您的編輯器將提供的相同類型的兩個或多個檢視，如此已經在編輯器中開啟的視窗的使用者可以選取，開啟新視窗**開新視窗**命令**視窗**  功能表。  
   
--   表單和程式碼檢視的支援： 您想要您的編輯器，以提供不同類型的檢視。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]例如，提供 表單檢視和程式碼檢視。  
+- 表單和程式碼檢視的支援： 您想要您的編輯器，以提供不同類型的檢視。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]例如，提供 表單檢視和程式碼檢視。  
   
- 如需詳細資訊，請參閱 CreateEditorInstance 程序，在 Visual Studio 封裝範本所建立的自訂編輯器專案 EditorFactory.cs 檔案中。 如需有關此專案的詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
+  如需詳細資訊，請參閱 CreateEditorInstance 程序，在 Visual Studio 封裝範本所建立的自訂編輯器專案 EditorFactory.cs 檔案中。 如需有關此專案的詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
   
 ## <a name="synchronizing-views"></a>同步處理檢視  
  當您實作多個檢視時，文件資料物件負責保存所有同步處理資料的檢視。 您可以使用的事件上處理介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>資料與同步處理多個檢視。  

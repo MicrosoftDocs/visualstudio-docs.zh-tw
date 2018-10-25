@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833482"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>從程式碼建立分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ ms.locfileid: "49196127"
 > [!NOTE]
 >  您無法針對特定種類的成品進行其相依性的反向工程。 例如，對連結到文字檔的圖層進行反向工程時，無法找出與該圖層之間的任何相依性。 若要查看哪些成品具有相依性，您可以進行反向工程，開啟一或多個圖層的捷徑功能表，然後再選擇**檢視連結**。 在 **圖層總管**，檢查**支援驗證**資料行。 相依性不會顯示此資料行的成品進行反向工程**False**。  
   
--   選取一或多個圖層，開啟選取的圖層的捷徑功能表，然後選擇**產生相依性**。  
+- 選取一或多個圖層，開啟選取的圖層的捷徑功能表，然後選擇**產生相依性**。  
   
- 通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
+  通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
   
 ##  <a name="EditDependencies"></a> 編輯圖層與相依性，以顯示預定的設計  
  您可以編輯分層圖，藉以說明您計劃對系統或預期的架構進行的變更。  

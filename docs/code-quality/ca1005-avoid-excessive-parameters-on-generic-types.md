@@ -16,26 +16,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e65427aecb2d4ecc135480d23834fdc07a413b05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850122"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005：避免在泛型類型上包含過多參數
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  外部可見的泛型型別有兩個以上的型別參數。
 
 ## <a name="rule-description"></a>規則描述
- 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 通常具有一個型別參數，如下所示顯然`List<T>`，並在某些情況下，具有兩個類型參數，如下所示`Dictionary<TKey, TValue>`。 如果兩個以上的型別參數存在，都會變得難以太適合大部分的使用者 (例如`TooManyTypeParameters<T, K, V>`C# 中或`TooManyTypeParameters(Of T, K, V)`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 泛型類型所包含的型別參數越多，就越難了解並記住每個型別參數所代表的含意。 通常具有一個型別參數，如下所示顯然`List<T>`，並在某些情況下，具有兩個類型參數，如下所示`Dictionary<TKey, TValue>`。 如果兩個以上的型別參數存在，都會變得難以太適合大部分的使用者 (例如`TooManyTypeParameters<T, K, V>`C# 中或`TooManyTypeParameters(Of T, K, V)`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，變更設計，以使用不超過兩個類型參數。

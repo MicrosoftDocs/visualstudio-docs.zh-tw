@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5c4c44fa8773b851ebcc80e47c3f94038b49a653
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ca37a7bdcad290f9ab0c6d54814615731f6678c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864727"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SecureAsserts|

@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848536"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49247867"
   
  **本主題內容：**  
   
-1.  [藉由實作協助工具，支援錄製和播放以及屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [藉由實作協助工具，支援錄製和播放以及屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [藉由實作屬性提供者，支援自訂屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [藉由實作屬性提供者，支援自訂屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [藉由實作類別來存取自訂屬性，支援程式碼產生](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [藉由實作類別來存取自訂屬性，支援程式碼產生](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [藉由實作動作篩選，支援意圖感知動作](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [藉由實作動作篩選，支援意圖感知動作](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> 藉由實作協助工具，支援錄製和播放以及屬性驗證  
  自動程式化 UI 測試產生器會擷取它在錄製期間遇到之控制項的相關資訊，然後產生程式碼，以重新執行該工作階段。 如果您的控制項不支援協助工具，自動程式碼 UI 測試產生器將會使用螢幕座標來擷取動作 (例如滑鼠點按)。 播放測試時，所產生的程式碼就會在相同的螢幕座標中發出這些滑鼠點按動作。 如果在播放測試時，您的控制項出現在螢幕上的不同位置，所產生的程式碼將無法在您的控制項上執行該動作。 如果是在不同的螢幕組態上、在不同環境中，或是在 UI 配置有所變更之後播放測試，這樣會導致失敗。  

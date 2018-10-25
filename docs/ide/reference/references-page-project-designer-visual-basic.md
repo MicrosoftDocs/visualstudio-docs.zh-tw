@@ -18,39 +18,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815191"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
+
 使用 [專案設計工具] 的 [參考] 頁面來管理專案中的參考、Web 參考，以及匯入的命名空間。 專案可以包含 COM 元件、XML Web 服務、.NET Framework 類別庫/組件或其他類別庫的參考。 如需使用參考的詳細資訊，請參閱[管理專案中的參考](../../ide/managing-references-in-a-project.md)。
 
- 若要存取 [參考] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇功能表列上的 [專案]、[屬性]。 [專案設計工具] 出現時，請按一下 [參考] 索引標籤。
+若要存取 [參考] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇功能表列上的 [專案]、[屬性]。 [專案設計工具] 出現時，請按一下 [參考] 索引標籤。
 
 ## <a name="uielement-list"></a>UIElement 清單
- 下列選項可讓您選取或移除專案中的參考和匯入的命名空間。
 
- **未使用的參考**
+下列選項可讓您選取或移除專案中的參考和匯入的命名空間。
 
- 按一下此按鈕可存取 [未使用的參考] 對話方塊。
+**未使用的參考**
 
- [未使用的參考] 對話方塊可讓您移除專案中包含、但程式碼並未實際使用的參考。 此對話方塊包含格線，其中會列出專案中未使用之命名空間的 [參考名稱]、[路徑]，以及其他資訊。 在格線中，選取您想要從專案移除的命名空間參考，然後按一下 [移除]。
+按一下此按鈕可存取 [未使用的參考] 對話方塊。
 
- **參考路徑**
+[未使用的參考] 對話方塊可讓您移除專案中包含、但程式碼並未實際使用的參考。 此對話方塊包含格線，其中會列出專案中未使用之命名空間的 [參考名稱]、[路徑]，以及其他資訊。 在格線中，選取您想要從專案移除的命名空間參考，然後按一下 [移除]。
 
- 按一下此按鈕可存取 [參考路徑] 對話方塊。
+**參考路徑**
+
+按一下此按鈕可存取 [參考路徑] 對話方塊。
 
 > [!NOTE]
 > 當專案系統找到組件參考時，系統會尋找下列位置以便解析參考，順序如下：
-
 >
->  1.  專案資料夾。 當 [顯示所有檔案] 沒有作用時，方案總管即會顯示專案資料夾檔案。
-> 2.  [參考路徑] 對話方塊中所指定的資料夾。
-> 3.  [新增參考] 對話方塊中所示檔案的資料夾。
-> 4.  專案的 obj 資料夾 (當您將 COM 參考新增至專案時，可能會將一或多個組件新增至專案的 obj 資料夾)。
+> 1. 專案資料夾。 當 [顯示所有檔案] 沒有作用時，方案總管即會顯示專案資料夾檔案。
+> 2. [參考路徑] 對話方塊中所指定的資料夾。
+> 3. [新增參考] 對話方塊中所示檔案的資料夾。
+> 4. 專案的 obj 資料夾 (當您將 COM 參考新增至專案時，可能會將一或多個組件新增至專案的 obj 資料夾)。
 
  **參考**
 
@@ -96,7 +97,7 @@ ms.locfileid: "39180473"
 
 -   XML 命名空間，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理專案中的參考](../../ide/managing-references-in-a-project.md)
 - [如何：新增或移除匯入的命名空間 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

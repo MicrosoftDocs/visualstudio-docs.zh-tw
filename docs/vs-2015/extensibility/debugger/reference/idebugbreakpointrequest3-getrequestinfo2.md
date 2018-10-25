@@ -17,12 +17,12 @@ ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8644e4df05500489c70ca43943572316dde790c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163ac803eb8fb721c7a00f10fa2a84fdb3a2c24c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923052"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined |Microsoft 文件
+title: IDebugCustomAttributeQuery::IsCustomAttributeDefined |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f99523ea5c4ae955be86bfb9da1acd1f99143be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d4ee98e4a843227f1855a456fae0f698286b3dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893740"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-決定是否定義指定之自訂屬性。  
+判斷是否已定義指定之自訂屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,7 +46,7 @@ int IsCustomAttributeDefined(
  如果定義自訂屬性，則會傳回`S_OK`; 否則傳回`S_FALSE`。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugClassFieldSymbol**公開物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugClassFieldSymbol**公開 （expose） 的物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
   
 ```cpp  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  

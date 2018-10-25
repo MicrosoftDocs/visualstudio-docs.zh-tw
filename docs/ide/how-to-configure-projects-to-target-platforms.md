@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847977"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 
-Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 Visual Studio 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。
+Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 Visual Studio 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](/dotnet/framework/64-bit-apps)。
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用組態管理員設定目標平台
 
@@ -59,15 +59,15 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 根據您所使用的程式設計語言而定，此工作的執行會有所不同。 請參閱下列連結以取得詳細資訊：
 
--   若是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，請參閱 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
+- 若是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，請參閱 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
 
--   若是 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
+- 若是 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
--   若是 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](/cpp/build/reference/clr-common-language-runtime-compilation)。
+- 若是 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](/cpp/build/reference/clr-common-language-runtime-compilation)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [了解建置平台](../ide/understanding-build-platforms.md)
 - [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [64 位元應用程式](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)

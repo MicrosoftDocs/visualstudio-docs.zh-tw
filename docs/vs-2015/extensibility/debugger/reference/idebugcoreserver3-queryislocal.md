@@ -17,12 +17,12 @@ ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6cebb27caceca5dd743fbe777092eaee6b2ec966
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9bd8b13748f42aff635579899555fffce72d51ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949093"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

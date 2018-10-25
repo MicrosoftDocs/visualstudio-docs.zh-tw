@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasnestedtypes |Microsoft 文件'
+title: 'Idiasymbol:: Get_hasnestedtypes |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0952abadc15dc5cd80f81baa4a7042c03a03ed2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eb894c305fa45216a0c7b6be7dfe10c19145b7d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936715"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 擷取指定的使用者定義資料類型是否有巢狀型別定義的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_hasNestedTypes (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果在使用者定義資料類型有巢狀類型的定義; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`使用者定義資料類型有巢狀型別定義; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是使用符號。  
+>  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   

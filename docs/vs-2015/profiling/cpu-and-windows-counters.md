@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914563"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的所有 CPU 計數器清單  
   
-1.  在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
+1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
   
-2.  執行下列任一步驟：  
+2. 執行下列任一步驟：  
   
-    -   按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。  
+   - 按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。  
   
-         **注意** 按一下 [取消] 可回到前一個取樣組態。  
+      **注意** 按一下 [取消] 可回到前一個取樣組態。  
   
      -或-  
   
-    -   選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。  
+   - 選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。  
   
-         **注意** 按一下 [取消] 可回到前一個計數器收集組態。  
+      **注意** 按一下 [取消] 可回到前一個計數器收集組態。  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的 Windows 計數器清單  
   

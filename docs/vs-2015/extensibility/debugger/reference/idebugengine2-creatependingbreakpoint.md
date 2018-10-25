@@ -17,12 +17,12 @@ ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e14fd95d834842bdbfff07ba1840244aaa92cb15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13a134ce13724aa3f72c79d2d02ae3ae47cc845c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931970"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft 文件
+title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35337b26053876c9009be124bba9791743f53009
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d58c58dbbaad6d57518c8f13620029034ae4b76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920387"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-取得描述此中斷點的中斷點解析度。  
+取得描述此中斷點的中斷點解析。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,18 +44,18 @@ int GetBreakpointResolution(
  `ppBPResolution`  
  [out]傳回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)表示下列其中一種介面：  
   
--   描述程式碼中的，已經繫結程式碼中斷點位置的中斷點解析物件。  
+-   中斷點解析物件，描述其中的程式碼中斷點已繫結程式碼的位置。  
   
--   資料的位置已在繫結資料中斷點。  
+-   資料的位置已經在繫結資料中斷點。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設定為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
   
 ## <a name="remarks"></a>備註  
- 呼叫[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)方法，以判斷中斷點解析度是否為程式碼或資料。  
+ 呼叫[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)方法，以判斷中斷點解析是否為程式碼或資料。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開的物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
   
 ```  
 HRESULT CBoundBreakpoint::GetBreakpointResolution(  

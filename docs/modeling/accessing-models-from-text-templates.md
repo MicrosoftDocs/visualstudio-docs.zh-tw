@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882518"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔案和其他以特定領域語言模型為基礎的文字檔。 如需文字範本的基本資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本進行偵錯時您的 DSL 中，以實驗模式運作，並已部署的 DSL 所在的電腦上也能運作。
@@ -26,11 +26,11 @@ ms.locfileid: "47860338"
 
  若要從文字範本存取模型：
 
--   將繼承屬性的範本指示詞，以設定<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 此存放區提供存取。
+- 將繼承屬性的範本指示詞，以設定<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 此存放區提供存取。
 
--   指定您想要存取的 dsl 的指示詞處理器。 這會載入 DSL 的組件，好讓您可以在文字範本的程式碼中使用其網域類別、 屬性和關聯性。 它也會載入您指定的模型檔案。
+- 指定您想要存取的 dsl 的指示詞處理器。 這會載入 DSL 的組件，好讓您可以在文字範本的程式碼中使用其網域類別、 屬性和關聯性。 它也會載入您指定的模型檔案。
 
- A`.tt`時從 DSL 最小語言範本建立新的 Visual Studio 方案，建立類似下列的範例檔案中的偵錯專案。
+  A`.tt`時從 DSL 最小語言範本建立新的 Visual Studio 方案，建立類似下列的範例檔案中的偵錯專案。
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  請注意此範本有關的下列重點：
 
--   網域類別、 屬性和您在 DSL 定義中定義的關聯性，可以使用範本。
+- 網域類別、 屬性和您在 DSL 定義中定義的關聯性，可以使用範本。
 
--   在範本載入您在中指定的模型檔案`requires`屬性。
+- 在範本載入您在中指定的模型檔案`requires`屬性。
 
--   中的屬性`this`包含根項目。 從該處，您的程式碼可以巡覽至模型的其他項目。 屬性的名稱通常是與您的 DSL 的根網域類別相同。 在此範例中，它是 `this.ExampleModel`。
+- 中的屬性`this`包含根項目。 從該處，您的程式碼可以巡覽至模型的其他項目。 屬性的名稱通常是與您的 DSL 的根網域類別相同。 在此範例中，它是 `this.ExampleModel`。
 
--   雖然寫入程式碼片段的語言是 C#，您可以產生任何類型的文字。 您也可以撰寫程式碼[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]藉由將屬性加入`language="VB"`到`template`指示詞。
+- 雖然寫入程式碼片段的語言是 C#，您可以產生任何類型的文字。 您也可以撰寫程式碼[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]藉由將屬性加入`language="VB"`到`template`指示詞。
 
--   若要偵錯範本，請新增`debug="true"`至`template`指示詞。 如果發生例外狀況，將會開啟的 Visual Studio 的另一個執行個體範本。 如果您想要中斷偵錯程式碼中的特定點時，insert 陳述式 `System.Diagnostics.Debugger.Break();`
+- 若要偵錯範本，請新增`debug="true"`至`template`指示詞。 如果發生例外狀況，將會開啟的 Visual Studio 的另一個執行個體範本。 如果您想要中斷偵錯程式碼中的特定點時，insert 陳述式 `System.Diagnostics.Debugger.Break();`
 
-     如需詳細資訊，請參閱 <<c0> [ 偵錯 T4 文字範本](../modeling/debugging-a-t4-text-template.md)。
+   如需詳細資訊，請參閱 <<c0> [ 偵錯 T4 文字範本](../modeling/debugging-a-t4-text-template.md)。
 
 ## <a name="about-the-dsl-directive-processor"></a>關於 DSL 的指示詞處理器
  範本可以使用您在 DSL 定義中定義的網域類別。 這會帶來所通常會出現在接近範本開頭指示詞。 在上述範例中，它是下列項目。
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  請注意：
 
-1.  `filename`和`validation`參數會以 「; 」，一定要有任何其他分隔符號或空格。
+1. `filename`和`validation`參數會以 「; 」，一定要有任何其他分隔符號或空格。
 
-2.  驗證類別目錄的清單會決定將執行哪些驗證方法。 應該以分隔多個類別"&#124;「 而且必須是沒有其他分隔符號或空格。
+2. 驗證類別目錄的清單會決定將執行哪些驗證方法。 應該以分隔多個類別"&#124;「 而且必須是沒有其他分隔符號或空格。
 
- 如果發現錯誤，它會回報 [錯誤] 視窗中，結果檔案將包含錯誤訊息。
+   如果發現錯誤，它會回報 [錯誤] 視窗中，結果檔案將包含錯誤訊息。
 
 ## <a name="Multiple"></a> 從文字範本存取多個模型
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` 叫用`LoopTemplate.t4`，，然後將產生的檔案分割成其區段。 請注意，此範本不一定要模型化範本時，因為它不會讀取模型。
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

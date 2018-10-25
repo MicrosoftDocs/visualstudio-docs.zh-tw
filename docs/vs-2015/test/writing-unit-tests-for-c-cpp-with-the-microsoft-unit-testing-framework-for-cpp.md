@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904036"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ ms.locfileid: "49250532"
   
 ###  <a name="coupleProjects"></a> 將測試專案結合至 DLL 專案  
   
-1.  將 DLL 專案加入測試專案的專案參考中：  
+1. 將 DLL 專案加入測試專案的專案參考中：  
   
-    1.  開啟測試專案的屬性，然後選擇 [通用屬性] 、[架構和參考] 。  
+   1.  開啟測試專案的屬性，然後選擇 [通用屬性] 、[架構和參考] 。  
   
-         ![C&#43;&#43; 專案屬性 &#45; [架構和參考]](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43;&#43; 專案屬性 &#45; [架構和參考]](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  選擇 [加入新參考] 。  
+   2.  選擇 [加入新參考] 。  
   
-         在 [加入參考]  對話方塊中，選取 DLL 專案，並選擇 [加入] 。  
+        在 [加入參考]  對話方塊中，選取 DLL 專案，並選擇 [加入] 。  
   
-         ![C&#43;&#43; 專案屬性 &#45; [加入新參考]](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43;&#43; 專案屬性 &#45; [加入新參考]](../test/media/utecpp09.png "UteCpp09")  
   
-2.  在主體單元測試 .cpp 檔案中，加入 DLL 程式碼的 .h 檔案：  
+2. 在主體單元測試 .cpp 檔案中，加入 DLL 程式碼的 .h 檔案：  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  加入使用匯出函式的基本測試：  
+3. 加入使用匯出函式的基本測試：  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  建置方案。  
+4. 建置方案。  
   
-     新測試會出現在 [測試總管] 中。  
+    新測試會出現在 [測試總管] 中。  
   
-5.  在 [測試總管] 中，選擇 [ **全部執行**]。  
+5. 在 [測試總管] 中，選擇 [ **全部執行**]。  
   
-     ![單元測試總管 &#45; 基本測試成功](../test/media/utecpp10.png "UteCpp10")  
+    ![單元測試總管 &#45; 基本測試成功](../test/media/utecpp10.png "UteCpp10")  
   
- 您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。  
+   您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。  
   
 ###  <a name="iterate"></a> 反覆擴大測試範圍並使其通過  
   

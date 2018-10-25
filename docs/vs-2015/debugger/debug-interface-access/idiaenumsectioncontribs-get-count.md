@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 684963e059bb7fca8dd8ba4d06df826098c1b582
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f6d42c7f38ed590664bb48b96e3fa0363eeaf54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895284"
 ---
 # <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

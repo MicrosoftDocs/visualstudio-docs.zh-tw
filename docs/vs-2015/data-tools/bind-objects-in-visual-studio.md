@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918632"
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 ### <a name="loaddata-into-objects"></a>物件的 Loaddata  
  例如，您將資料載入您的物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。  
   
--   `TableAdapter.Fill`方法傳回的資料填入現有的資料表。  
+- `TableAdapter.Fill`方法傳回的資料填入現有的資料表。  
   
--   `TableAdapter.GetData`方法會傳回新的資料資料表填入資料。  
+- `TableAdapter.GetData`方法會傳回新的資料資料表填入資料。  
   
- 載入您的自訂物件的資料最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。  
+  載入您的自訂物件的資料最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。  
   
 > [!NOTE]
 >  Visual Studio 命名的 TableAdapter 查詢`Fill`和`GetData`根據預設，但是這些名稱可以變更為任何有效的方法名稱。  

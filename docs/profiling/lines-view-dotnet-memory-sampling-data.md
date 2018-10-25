@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 67148180fab5c712ee15551cf60a8874f427dc0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854841"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 使用取樣方法之 .NET 記憶體配置分析資料的 [程式行] 檢視，會列出在執行分析期間配置記憶體的陳述式。 資料行也包含配置的大小和數量。  
@@ -26,21 +26,21 @@ ms.locfileid: "34845635"
   
  陳述式是由下列項目識別：  
   
--   包含此函式陳述式的原始程式檔。  
+- 包含此函式陳述式的原始程式檔。  
   
--   包含此陳述式的函式。  
+- 包含此陳述式的函式。  
   
--   此陳述式在原始程式檔中開始的行位置。  
+- 此陳述式在原始程式檔中開始的行位置。  
   
--   此陳述式在原始程式檔中開始的字元。  
+- 此陳述式在原始程式檔中開始的字元。  
   
--   此陳述式在原始程式檔中結束的行位置。  
+- 此陳述式在原始程式檔中結束的行位置。  
   
--   此陳述式在原始程式檔中結束的字元。  
+- 此陳述式在原始程式檔中結束的字元。  
   
- [程式行名稱] 資料行提供識別項資料的可排序串連。  
+  [程式行名稱] 資料行提供識別項資料的可排序串連。  
   
- 根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
+  根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
 |資料行|描述|  
 |------------|-----------------|  

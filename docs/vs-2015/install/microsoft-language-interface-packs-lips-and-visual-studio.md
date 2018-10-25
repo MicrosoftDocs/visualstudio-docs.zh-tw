@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812877"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ ms.locfileid: "49179279"
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>設定 Visual Studio 中 UI 文字所使用的語言  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 **選項**對話方塊方塊中，展開**環境**，然後按一下 **國際設定**。  
+2. 在 **選項**對話方塊方塊中，展開**環境**，然後按一下 **國際設定**。  
   
-3.  在 **語言**清單中，選擇 UI 文字應顯示的語言開發環境中。  
+3. 在 **語言**清單中，選擇 UI 文字應顯示的語言開發環境中。  
   
-     若 UI 文字在 IDE 的比對作業系統顯示語言設定，請選取**與 Microsoft Windows 相同**。  
+    若 UI 文字在 IDE 的比對作業系統顯示語言設定，請選取**與 Microsoft Windows 相同**。  
   
- 您也可以使用 devenv 命令來設定 UI 所使用的語言。 如需詳細資訊，請參閱 < [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md)。  
+   您也可以使用 devenv 命令來設定 UI 所使用的語言。 如需詳細資訊，請參閱 < [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [選項對話方塊、環境、國際設定](../ide/reference/international-settings-environment-options-dialog-box.md)

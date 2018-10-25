@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c2a55c8abb2049f03d46c8a1a5cf27eecc341
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b18f8df30dc9f3385c2c5f154d66c598b423968e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929643"
 ---
 # <a name="automation-support-for-options-pages"></a>自動化支援的選項頁面
 Vspackage 可以提供自訂**選項**對話方塊來**工具**功能表 (**工具選項**頁面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並可供自動化模型。  
@@ -29,15 +29,15 @@ Vspackage 可以提供自訂**選項**對話方塊來**工具**功能表 (**工�
   
  它是選擇性的但極力建議您，以允許存取這個新的頁面，透過 automation 模型。 您可以執行下列步驟：  
   
-1.  擴充<xref:EnvDTE._DTE.Properties%2A>透過實作 IDispatch 衍生物件的物件。  
+1. 擴充<xref:EnvDTE._DTE.Properties%2A>透過實作 IDispatch 衍生物件的物件。  
   
-2.  傳回實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或 managed 程式碼<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 至 IDispatch 衍生物件。  
+2. 傳回實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或 managed 程式碼<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 至 IDispatch 衍生物件。  
   
-3.  當自動化取用者呼叫<xref:EnvDTE._DTE.Properties%2A>方法，在自訂**選項**屬性頁面中，環境會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，以取得自訂**工具選項**頁面的自動化實作。  
+3. 當自動化取用者呼叫<xref:EnvDTE._DTE.Properties%2A>方法，在自訂**選項**屬性頁面中，環境會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，以取得自訂**工具選項**頁面的自動化實作。  
   
-4.  VSPackage 的 automation 物件則用來提供每個<xref:EnvDTE.Property>所傳回<xref:EnvDTE._DTE.Properties%2A>。  
+4. VSPackage 的 automation 物件則用來提供每個<xref:EnvDTE.Property>所傳回<xref:EnvDTE._DTE.Properties%2A>。  
   
- 如需範例實作自訂**工具選項**頁面上，請參閱[VSSDK 範例](http://aka.ms/vs2015sdksamples)。  
+   如需範例實作自訂**工具選項**頁面上，請參閱[VSSDK 範例](http://aka.ms/vs2015sdksamples)。  
   
 ## <a name="see-also"></a>另請參閱  
  [公開專案物件](../../extensibility/internals/exposing-project-objects.md)

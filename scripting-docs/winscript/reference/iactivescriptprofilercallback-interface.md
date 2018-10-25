@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback 介面 |Microsoft 文件
+title: IActiveScriptProfilerCallback 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,35 +12,35 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4dc4b9d4e3b1f83a37e64e3a85387fd378d3ca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2511b3e622dfa977c0ed05212203ad59fb0e71bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912615"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback 介面
-提供指令碼引擎用於事件發生時，通知分析工具物件的方法。 實作這個介面是由程式碼剖析工具物件。  
+提供指令碼引擎用來通知分析工具物件發生事件的方法。 分析工具物件會實作這個介面。  
   
 ## <a name="methods"></a>方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|呼叫以初始化分析工具物件，每當程式碼剖析指令碼引擎已啟動。|  
-|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|呼叫以釋出和釋放分析工具物件，每當程式碼剖析指令碼引擎已停止。|  
-|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|通知分析工具的指令碼引擎的物件已編譯的指令碼。|  
-|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|遇到函式物件的指令碼引擎編譯指令碼時通知分析工具。|  
-|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|通知分析工具物件的指令碼引擎即將執行呼叫函式不是插入文件物件模型 (DOM) 的呼叫。|  
-|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|通知分析工具物件完成執行函式的指令碼引擎呼叫，不是呼叫至 dom。|  
+|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|呼叫程式碼剖析指令碼引擎上啟動時初始化分析工具物件。|  
+|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|呼叫以釋放，並釋出的程式碼剖析工具物件，只要在指令碼引擎上停止分析。|  
+|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|通知分析工具物件，指令碼引擎編譯指令碼。|  
+|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|編譯指令碼時，指令碼引擎的物件會發生函式會通知分析工具。|  
+|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|告知指令碼引擎即將執行不到文件物件模型 (DOM) 會呼叫的函式呼叫的程式碼剖析工具物件。|  
+|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|通知分析工具物件，指令碼引擎已完成執行函式呼叫，不會呼叫至 dom。|  
   
 ## <a name="remarks"></a>備註  
- 所提供的函式呼叫插入文件物件模型 (DOM) 通知[IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)。  
+ 所提供的函式呼叫到文件物件模型 (DOM) 的通知[IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)。  
   
 > [!NOTE]
->  若要加入的功能啟動和停止程式碼剖析執行指令碼時，呼叫下列方法。 藉由使用這些方法，您可以取得完整的呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正在執行，當您啟動或停止分析。  
->   
->  -   呼叫[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)您已經啟動程式碼剖析，通知分析工具。  
-> -   呼叫[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知分析工具，您很快就會停止程式碼剖析。  
+>  若要新增至啟動和停止指令碼執行時，程式碼剖析功能，請呼叫下列方法。 藉由使用這些方法，您可以取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]當您啟動或停止程式碼剖析執行。  
+> 
+> - 呼叫[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)通知分析工具，您已開始分析。  
+>   -   呼叫[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知分析工具，您很快就會停止分析。  
   
 ## <a name="see-also"></a>另請參閱  
  [動態指令碼分析工具介面](../../winscript/reference/active-script-profiler-interfaces.md)

@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901641"
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ ms.locfileid: "49173604"
   
  您可以篩選要在 [物件瀏覽器] 中檢視的項目。 使用視窗頂端的下拉式清單，可以選擇下列選項：  
   
--   任何 .NET Framework  
+- 任何 .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   作用中的方案  
+- 作用中的方案  
   
--   一組自訂的元件  
+- 一組自訂的元件  
   
- 自訂元件可包含 Managed 程式碼可執行檔、程式庫組件、類型程式庫和 .ocx 檔案。 無法加入 C + + 自訂元件。 自訂設定儲存在 Visual Studio 使用者應用程式目錄 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat 中。  
+  自訂元件可包含 Managed 程式碼可執行檔、程式庫組件、類型程式庫和 .ocx 檔案。 無法加入 C + + 自訂元件。 自訂設定儲存在 Visual Studio 使用者應用程式目錄 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat 中。  
   
- [物件瀏覽器] 的左窗格會顯示實體容器，例如 .NET Framework 和 COM 元件。 您可以展開容器以顯示其含有的命名空間，然後展開命名空間以顯示其包含的類型。 選取類型時，其成員 (例如屬性及方法) 將會列於右窗格中。 右下方的窗格會顯示有關所選項目的詳細資訊。  
+  [物件瀏覽器] 的左窗格會顯示實體容器，例如 .NET Framework 和 COM 元件。 您可以展開容器以顯示其含有的命名空間，然後展開命名空間以顯示其包含的類型。 選取類型時，其成員 (例如屬性及方法) 將會列於右窗格中。 右下方的窗格會顯示有關所選項目的詳細資訊。  
   
- 您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋] (X) 按鈕。  
+  您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋] (X) 按鈕。  
   
- [物件瀏覽器] 會持續追蹤您選取的項目，您可以使用工具列上的 [向前] 和 [向後] 按鈕，在選取的項目之間巡覽。  
+  [物件瀏覽器] 會持續追蹤您選取的項目，您可以使用工具列上的 [向前] 和 [向後] 按鈕，在選取的項目之間巡覽。  
   
- 您可以使用 [物件瀏覽器] 將組件參考新增至開啟的方案中，方法是選取項目 (組件、命名空間、類型或成員)，然後選擇工具列上的 [新增參考] 按鈕。  
+  您可以使用 [物件瀏覽器] 將組件參考新增至開啟的方案中，方法是選取項目 (組件、命名空間、類型或成員)，然後選擇工具列上的 [新增參考] 按鈕。  
   
 ### <a name="object-browser-settings"></a>物件瀏覽器設定  
  使用工具列上的 [物件瀏覽器設定] 按鈕，可以指定下列其中一個檢視。  

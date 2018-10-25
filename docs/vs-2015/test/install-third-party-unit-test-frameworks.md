@@ -13,12 +13,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900900"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,34 +34,34 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
   
 ### <a name="installing-from-visual-studio"></a>從 Visual Studio 安裝  
   
-1.  選擇標準功能表上的 [工具]，然後選擇 [延伸模組和更新]。  
+1. 選擇標準功能表上的 [工具]，然後選擇 [延伸模組和更新]。  
   
-2.  依序展開 [線上]、[Visual Studio 組件庫] 和 [工具]。 選擇 [測試]。  
+2. 依序展開 [線上]、[Visual Studio 組件庫] 和 [工具]。 選擇 [測試]。  
   
-3.  瀏覽清單以尋找架構。  
+3. 瀏覽清單以尋找架構。  
   
-4.  選取架構並選擇 [下載]。  
+4. 選取架構並選擇 [下載]。  
   
- 如需詳細資訊，請參閱[尋找及使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。  
+   如需詳細資訊，請參閱[尋找及使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。  
   
 ### <a name="installing-from-the-web"></a>從 Web 安裝  
  如果您知道對哪個架構感興趣：  
   
-1.  開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+1. 開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
   
-2.  在 [尋找] 方塊中鍵入架構的名稱。  
+2. 在 [尋找] 方塊中鍵入架構的名稱。  
   
-3.  在結果清單中選擇架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。  
+3. 在結果清單中選擇架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。  
   
- 若要瀏覽架構和其他測試工具的清單：  
+   若要瀏覽架構和其他測試工具的清單：  
   
-1.  開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+4. 開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
   
-2.  選擇 [瀏覽]。  
+5. 選擇 [瀏覽]。  
   
-3.  在 [分類] 清單中，展開 [工具] 節點，然後選擇 [測試]。  
+6. 在 [分類] 清單中，展開 [工具] 節點，然後選擇 [測試]。  
   
-4.  在結果清單中選擇一個架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。  
+7. 在結果清單中選擇一個架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。  
   
 ## <a name="see-also"></a>另請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

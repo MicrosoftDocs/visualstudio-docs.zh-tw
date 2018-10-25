@@ -15,12 +15,12 @@ ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b52db3e6612e733649f4fb5d88b1e26c027f5fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f98e7f3b804edea532a3ba2526e8664b29a26c62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817843"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

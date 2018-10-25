@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911631"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ ms.locfileid: "49218812"
   
  您可使用下列方式排列視窗：  
   
--   亦可將文件視窗鎖定至索引標籤左側。  
+- 亦可將文件視窗鎖定至索引標籤左側。  
   
--   將視窗固定至編輯框架。  
+- 將視窗固定至編輯框架。  
   
--   將工具視窗固定至 IDE 中的框架邊緣。  
+- 將工具視窗固定至 IDE 中的框架邊緣。  
   
--   將文件或工具視窗浮動於 IDE 上方或外部。  
+- 將文件或工具視窗浮動於 IDE 上方或外部。  
   
--   沿著 IDE 邊緣隱藏工具視窗。  
+- 沿著 IDE 邊緣隱藏工具視窗。  
   
--   在不同監視器上顯示視窗。  
+- 在不同監視器上顯示視窗。  
   
--   將視窗位置重設為預設版面配置，或是已儲存的自訂版面配置。  
+- 將視窗位置重設為預設版面配置，或是已儲存的自訂版面配置。  
   
- 您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。  
+  您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。  
   
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  

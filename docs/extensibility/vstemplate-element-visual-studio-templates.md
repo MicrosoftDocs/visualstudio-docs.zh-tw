@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828403"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 （Visual Studio 範本）
 包含有關專案範本、 項目範本或入門套件的所有中繼資料。  
@@ -40,10 +40,10 @@ ms.locfileid: "39586748"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|---------------|-----------------|  
-|`Type`|識別為專案範本或項目範本的範本。 這個屬性可以具有的值`Project`或`Item`。|  
-|`Version`|指定範本的版本號碼。 中的範本[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]並[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]有`Version`屬性值`3.0.0`。|  
+| 屬性 | 描述 |
+|-----------| - |
+| `Type` | 識別為專案範本或項目範本的範本。 這個屬性可以具有的值`Project`或`Item`。 |
+| `Version` | 指定範本的版本號碼。 中的範本[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]並[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]有`Version`屬性值`3.0.0`。 |
   
 ### <a name="child-elements"></a>子元素  
   

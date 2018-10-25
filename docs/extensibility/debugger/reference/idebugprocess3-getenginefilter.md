@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetEngineFilter |Microsoft 文件
+title: IDebugProcess3::GetEngineFilter |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c592220267444818f7310895974b92cd02c69a62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 487ac0f77307a58aab36fdfd55fad67d4bc9ce51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948534"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 擷取可用的偵錯引擎的唯一識別碼的陣列。  
@@ -40,10 +40,10 @@ public int GetEngineFilter(
   
 #### <a name="parameters"></a>參數  
  `pEngineArray`  
- [out]結構，其中包含的偵錯引擎的唯一識別碼的參考。  
+ [out]參考結構，其中包含偵錯引擎的唯一識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

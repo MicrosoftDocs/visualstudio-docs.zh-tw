@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032df2f7ebcf4cbc1eae0d4b18757a3f90c4f68
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d3b9e565e5579405fa73ea6a3de12d7c27ed7edc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926835"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 
@@ -38,7 +38,7 @@ ms.locfileid: "36758053"
 下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>屬性可以在屬性方格中編輯，但其他屬性必須在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 活動可選用的易記名稱。 預設為 CancellationScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定提供取消邏輯的活動。 若要新增<xref:System.Activities.Statements.CancellationScope.Body%2A>活動，從下拉式**工具箱**到**主體**方塊**CancellationScope**活動設計工具。 新增提示文字 「 置放活動 」。|
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|指定如果沒有取消執行的活動。 若要新增<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>活動，從下拉式**工具箱**到**已 CancellationHandler**方塊**CancellationScope**活動設計工具。 新增提示文字 「 置放活動 」。|
@@ -47,6 +47,6 @@ ms.locfileid: "36758053"
 
 - [異動](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [補償](../workflow-designer/compensate-activity-designer.md)
-- [確認](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

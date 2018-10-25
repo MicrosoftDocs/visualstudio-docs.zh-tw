@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a09253dbeff9adb2bed6ea21545675f343e15974
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836251"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 
@@ -38,7 +38,7 @@ ms.locfileid: "43774626"
 
 - 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。
 
- 下表中的工作說明當您使用取樣方法進行分析時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。
+  下表中的工作說明當您使用取樣方法進行分析時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。
 
 |工作|相關內容|
 |----------|---------------------|

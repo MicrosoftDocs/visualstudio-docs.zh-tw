@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875888"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說： 顯示燈泡建議
 燈泡是 Visual Studio 編輯器中，展開以顯示一組動作，例如，內建的程式碼分析器或重構程式碼所識別的問題的修正程式的圖示。  
   
  在 Visual C# 和 Visual Basic 編輯器中，您也可以撰寫和封裝您自己的程式碼分析器會自動顯示燈泡動作，以使用.NET 編譯器平台 ("Roslyn")。 如需詳細資訊，請參閱:  
   
--   [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- C + + 等其他語言也會提供一些快速動作，例如，若要建立該函式的虛設常式實作建議的燈泡。  
+  C + + 等其他語言也會提供一些快速動作，例如，若要建立該函式的虛設常式實作建議的燈泡。  
   
- 以下是燈泡的樣貌。 在 Visual Basic 或 Visual C# 專案中，紅色波浪線會出現在變數名稱無效時。 如果您將滑鼠移無效的識別項，則會在資料指標附近出現燈泡。  
+  以下是燈泡的樣貌。 在 Visual Basic 或 Visual C# 專案中，紅色波浪線會出現在變數名稱無效時。 如果您將滑鼠移無效的識別項，則會在資料指標附近出現燈泡。  
   
- ![燈泡](../extensibility/media/lightbulb.png "燈泡")  
+  ![燈泡](../extensibility/media/lightbulb.png "燈泡")  
   
- 如果您按一下燈泡向下箭號，則一組建議的動作會出現，以及所選動作的預覽。 在此情況下，它會顯示如果您執行此動作，對您的程式碼所做的變更。  
+  如果您按一下燈泡向下箭號，則一組建議的動作會出現，以及所選動作的預覽。 在此情況下，它會顯示如果您執行此動作，對您的程式碼所做的變更。  
   
- ![燈泡預覽](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![燈泡預覽](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- 您可以使用燈泡，提供您自己的建議的動作。 比方說，您可以提供要移動開啟至新的一行的大括號，或將它們移至前一行結尾的動作。 下列逐步解說將示範如何建立燈泡出現在目前的字組，並有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
+  您可以使用燈泡，提供您自己的建議的動作。 比方說，您可以提供要移動開啟至新的一行的大括號，或將它們移至前一行結尾的動作。 下列逐步解說將示範如何建立燈泡出現在目前的字組，並有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從下載中心取得。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>建立 Managed Extensibility Framework (MEF) 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`LightBulbTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `LightBulbTest`。  
   
 2.  新增**編輯器分類器**項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -222,14 +222,14 @@ ms.locfileid: "39500510"
   
 1.  在專案中，新增指向*Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*並設定**複製到本機**到`False`。  
   
-2.  建立兩個類別，第一個名為`UpperCaseSuggestedAction`和第二個名為`LowerCaseSuggestedAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
+2.  建立兩個類別：第一個命名為 `UpperCaseSuggestedAction` ，第二個則命名為 `LowerCaseSuggestedAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     這兩個類別是相同，不同之處在於其中一個會呼叫<xref:System.String.ToUpper%2A>及其他呼叫<xref:System.String.ToLower%2A>。 下列步驟僅涵蓋大寫動作類別，但您必須實作這兩個類別。 使用實作大寫動作的步驟，作為實作小寫動作的模式。  
+     這兩個類別相同，差別在於其中一個會呼叫 <xref:System.String.ToUpper%2A>，另一個會呼叫 <xref:System.String.ToLower%2A>。 下列步驟僅涵蓋大寫動作類別，但您必須實作這兩個類別。 使用實作大寫動作的步驟，作為實作小寫動作的模式。  
   
 3.  新增下列 using 陳述式，這些類別：  
   
@@ -319,7 +319,7 @@ ms.locfileid: "39500510"
     }  
     ```  
   
-9. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>範圍中的文字取代成其對等大寫; 方法。  
+9. 將範圍中的文字取代為其大寫對等項目，以實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 方法。  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

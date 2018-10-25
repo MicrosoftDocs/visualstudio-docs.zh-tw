@@ -17,12 +17,12 @@ ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15c9a245c74a32b9ac8e35d774e71f6efc763b7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23782a80527e35c6dafeb4ffd51eadf1a0ff2b06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948769"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

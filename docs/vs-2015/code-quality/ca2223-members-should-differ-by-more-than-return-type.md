@@ -20,15 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51497bda9c8d0d9d927a92b0c5ca7299d247febf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5832ef0fdbb51381273c01025a6645136ea0077a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869167"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223：成員不應該只有在傳回型別上不同
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
@@ -99,7 +100,6 @@ ms.locfileid: "49295024"
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```
 
 

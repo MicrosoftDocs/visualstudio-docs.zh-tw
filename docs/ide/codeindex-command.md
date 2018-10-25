@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926146"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>參數
 
 |**引數**|**描述**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|指定專案集合的名稱。 如果名稱包含空格，請為名稱加上引號，例如，"Fabrikam Website"。|
 |`CollectionId`|指定專案集合的識別號碼。|
 |`ServerPath`|指定程式碼檔案的路徑。|
 
 |**選項**|**描述**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|顯示程式碼索引服務的狀態和組態。|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並且開始僅為新變更集編製索引。|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 您可以在伺服器路徑的開頭、結尾或兩端使用萬用字元 (*)。|指定您不要編製索引之程式碼檔及其路徑的清單。<br /><br /> -   **add**：將您不要編製索引的檔案，新增到忽略的檔案清單中。<br />-   **remove**：從忽略的檔案清單中，移除您要編製索引的檔案。<br />-   **removeAll**：清除忽略的檔案清單，並開始為所有的檔案編製索引。<br />-   **view**：查看未編製索引的所有檔案。|

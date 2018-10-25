@@ -15,12 +15,12 @@ ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0309a3406b4b72c5a56a3c727ad21b165573674d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f96d42936f62b7724629127a638d2ea534d3b6f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883038"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

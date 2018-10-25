@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Get_lasterror |Microsoft 文件'
+title: 'Idiadatasource:: Get_lasterror |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d17e0532d4d5d987d69afa7de062a193371950
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e197262b84fcf964afb74f85e86ff384daa26c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819833"
 ---
 # <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
 擷取最後一個載入錯誤的檔案名稱。  
@@ -34,10 +34,10 @@ HRESULT get_lastError (
   
 #### <a name="parameters"></a>參數  
  pRetVal  
- [out]傳回包含與前次載入錯誤相關聯的.pdb 檔案名稱的字串。  
+ [out]傳回包含與最後一個載入錯誤相關聯的.pdb 檔案名稱的字串。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回負載作業所導致的最後一個錯誤碼。 傳回`E_INVALIDARG`如果`pRetVal`參數是`NULL`。  
+ 傳回載入作業所造成的最後一個錯誤碼。 傳回`E_INVALIDARG`如果`pRetVal`參數是`NULL`。  
   
 ## <a name="example"></a>範例  
   

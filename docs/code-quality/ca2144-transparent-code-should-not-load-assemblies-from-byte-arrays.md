@@ -12,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a40c159d62377110fe16e55a67e38e63221ef6c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a908b197e05b1795534dd00edc2c1ff9597f2d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876200"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144：透明程式碼不可以從位元組陣列載入組件
+
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |CheckId|CA2144|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861822"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
   
@@ -43,7 +43,7 @@ ms.locfileid: "44280827"
 -   執行其他工作，例如清除畫面。 如需命令的完整清單，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
 > [!TIP]
->  如果 [JavaScript 主控台] 視窗已關閉，選擇**偵錯**> **Windows** > **JavaScript 主控台**即可重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
+>  如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] >  >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
  使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
@@ -55,95 +55,95 @@ ms.locfileid: "44280827"
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>在 FlipView App 中為 JavaScript 程式碼偵錯  
   
-1.  在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
+1. 在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
   
-2.  選擇**JavaScript** > **Windows Universal**，然後選擇**WinJS 應用程式**。  
+2. 選擇**JavaScript** > **Windows Universal**，然後選擇**WinJS 應用程式**。  
   
-3.  輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
+3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
   
-4.  在 index.html 的本文項目，取代此程式碼中的現有的 HTML 程式碼：  
+4. 在 index.html 的本文項目，取代此程式碼中的現有的 HTML 程式碼：  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  開啟 default.css 並為 `#fView` 選取器新增 CSS：  
+5. 開啟 default.css 並為 `#fView` 選取器新增 CSS：  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 500px;  
-        margin: 25px;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 500px;  
+       margin: 25px;  
+   }  
+   ```  
   
-6.  開啟 default.js，並將程式碼取代為下列 JavaScript 程式碼：  
+6. 開啟 default.js，並將程式碼取代為下列 JavaScript 程式碼：  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
-            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
-            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
+           pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+           pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+           pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
-        };  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-7.  如果尚未選取偵錯目標，選擇**本機電腦**下拉式清單中下一步**裝置**按鈕**偵錯**工具列：  
+7. 如果尚未選取偵錯目標，選擇**本機電腦**下拉式清單中下一步**裝置**按鈕**偵錯**工具列：  
   
-     ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
+    ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  按 F5 以啟動偵錯工具。  
+8. 按 F5 以啟動偵錯工具。  
   
-     App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。  
+    App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。  
   
 9. 與`FlipView`應用程式執行時，型別`Data.items`於主控台視窗輸入提示 (旁">>"符號) 然後按 Enter。  
   
@@ -252,7 +252,7 @@ ms.locfileid: "44280827"
   
 ## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928174"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 命令群組是一律會出現在一起的功能表或工具列的命令集合。 將它指派給不同的父功能表的 CommandPlacements 區段中可重複使用任何命令群組 *.vsct*檔案。  
@@ -88,37 +88,37 @@ ms.locfileid: "39498850"
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>若要將一組可重複使用按鈕放在功能表上  
   
-1.  建立中的項目`CommandPlacements`一節。 設定的 GUID 和 ID 的`CommandPlacement`您的群組，其中的項目和設定的目標位置的父代 GUID 和 ID。  
+1. 建立中的項目`CommandPlacements`一節。 設定的 GUID 和 ID 的`CommandPlacement`您的群組，其中的項目和設定的目標位置的父代 GUID 和 ID。  
   
-     CommandPlacements 區段應該放置後方命令區段：  
+    CommandPlacements 區段應該放置後方命令區段：  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     命令群組可以包含一個以上的功能表中。 在父功能表可以是其中一個您所建立的由所提供的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)](如中所述*ShellCmdDef.vsct*或是*SharedCmdDef.vsct*)，或另一個 VSPackage 中定義的其中一個。 父圖層數目沒有限制，只要在父功能表最終會連線到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或 VSPackage 所顯示的捷徑功能表。  
+    命令群組可以包含一個以上的功能表中。 在父功能表可以是其中一個您所建立的由所提供的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)](如中所述*ShellCmdDef.vsct*或是*SharedCmdDef.vsct*)，或另一個 VSPackage 中定義的其中一個。 父圖層數目沒有限制，只要在父功能表最終會連線到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或 VSPackage 所顯示的捷徑功能表。  
   
-     下列範例會將群組放**方案總管 中**工具列右邊的 其他 按鈕。  
+    下列範例會將群組放**方案總管 中**工具列右邊的 其他 按鈕。  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

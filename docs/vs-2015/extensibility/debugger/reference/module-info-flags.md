@@ -17,12 +17,12 @@ ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a5ae6591c0b6fd09bd8133e22a223a99ecf6c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ceb09d4d6fcb930def186a9b6a171b2ac96bebab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825175"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

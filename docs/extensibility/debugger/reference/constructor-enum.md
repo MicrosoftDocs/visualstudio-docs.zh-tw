@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM |Microsoft 文件
+title: CONSTRUCTOR_ENUM |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4abc7e2eb8b29a0a7486264732778502c032f42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820534"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 選取不同類型的建構函式。  
@@ -54,7 +54,7 @@ public enum ConstructorMatchOptions {
  選取 靜態建構函式。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
+ 作為引數[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  

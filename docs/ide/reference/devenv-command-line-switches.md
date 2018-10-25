@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907036"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -61,7 +61,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 下列命令列參數顯示 IDE，並執行所述的工作。
 
 |命令列參數|描述|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|啟動 IDE，並執行指定的命令。|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|
 |[/LCID 或 /l](../../ide/reference/lcid-devenv-exe.md)|設定 IDE 的預設語言。 如果 Visual Studio 安裝中未包含指定的語言，則會忽略此設定。|
@@ -77,7 +77,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 下列命令列參數不會顯示 IDE。
 
 |命令列參數|描述|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> **Devenv myproj.csproj /clean**|

@@ -17,12 +17,12 @@ ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d66aa2646c4110933c8143fd0f716d39257587f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70314c10928f3f81ab19d09f28585d8e924be3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922987"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

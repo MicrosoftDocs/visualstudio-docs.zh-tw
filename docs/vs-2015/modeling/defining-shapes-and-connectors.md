@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812942"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "49244604"
 ##  <a name="shapeTypes"></a> 基本類型的圖案和接點  
  DSL 圖表顯示的集合*圖案*shape 由線條或*連接器*。  一般而言 (但並非絕對)：  
   
--   圖形是模型項目的視覺表示。  
+- 圖形是模型項目的視覺表示。  
   
--   連接器表示參考關聯性。  
+- 連接器表示參考關聯性。  
   
--   圖表表示模型根執行個體。  
+- 圖表表示模型根執行個體。  
   
--   模型項目之間的內嵌關聯性會以內含項目顯示。 例如，表示元件通訊埠的項目會內嵌於元件中。  
+- 模型項目之間的內嵌關聯性會以內含項目顯示。 例如，表示元件通訊埠的項目會內嵌於元件中。  
   
- 這些模式不會強制執行，但強烈建議使用。 當您設計 DSL 時，請記住內嵌關聯性的設計應會受到模型在畫面上之呈現方式的影響。 相對之下，參考關聯性則應反映您商務網域的概念。  
+  這些模式不會強制執行，但強烈建議使用。 當您設計 DSL 時，請記住內嵌關聯性的設計應會受到模型在畫面上之呈現方式的影響。 相對之下，參考關聯性則應反映您商務網域的概念。  
   
- 下列為可用的圖形類型：  
+  下列為可用的圖形類型：  
   
 |圖形類型|描述|  
 |----------------|-----------------|  

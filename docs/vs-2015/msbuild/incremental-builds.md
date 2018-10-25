@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812318"
 ---
 # <a name="incremental-builds"></a>累加建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ ms.locfileid: "49251448"
   
  有三種情況：  
   
--   目標的 `Condition` 屬性評估為 `false`。 在此情況下，不會執行目標，而且對組建沒有任何作用。  
+- 目標的 `Condition` 屬性評估為 `false`。 在此情況下，不會執行目標，而且對組建沒有任何作用。  
   
--   目標的輸出過期，將會執行以使其具有最新狀態。  
+- 目標的輸出過期，將會執行以使其具有最新狀態。  
   
--   目標沒有過期輸出，將會予以跳過。 MSBuild 會評估目標並變更項目和屬性，就像已執行目標一樣。  
+- 目標沒有過期輸出，將會予以跳過。 MSBuild 會評估目標並變更項目和屬性，就像已執行目標一樣。  
   
- 若要支援累加編譯，工作必須確保任何 `Output` 項目的 `TaskParameter` 屬性值相當於工作輸入參數。 以下是一些範例：  
+  若要支援累加編譯，工作必須確保任何 `Output` 項目的 `TaskParameter` 屬性值相當於工作輸入參數。 以下是一些範例：  
   
 ```  
 <CreateProperty Value="123">  

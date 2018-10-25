@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8c635555dd0378334c899a9d80de9bb3205dcc71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff0329c5c9d565685d4e5c0ff950b31dea3299f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854880"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：必須定義屬性引數的存取子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|

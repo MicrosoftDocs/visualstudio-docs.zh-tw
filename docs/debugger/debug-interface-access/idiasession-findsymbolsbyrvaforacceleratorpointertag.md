@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft 文件
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a75b82da742bee6ec6d504ec66876548f664cf57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887263"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-指定對應的標記值，這個方法會傳回列舉包含的符號的函式中指定的父 Accelerator 虛設常式在指定的相對虛擬位址。  
+指定對應的標記值，這個方法會傳回包含符號的列舉型別函式中指定的父加速器虛設常式在指定的相對虛擬位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,7 +35,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]`IDiaSymbol`對應於要搜尋的快速鍵虛設常式函式。  
+ [in]`IDiaSymbol` ，其對應於要搜尋的加速器虛設常式函式。  
   
  `tagValue`  
  [in]指標的標記值。  
@@ -47,10 +47,10 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
  [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 只有在呼叫這個方法`IDiaSymbol`Accelerator 虛設常式函式對應的介面。  
+ 只有在呼叫這個方法`IDiaSymbol`加速器虛設常式函式對應的介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

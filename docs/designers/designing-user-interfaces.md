@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f178c2a129ca0c9817dfa3d8545236705739e5db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938236"
 ---
 # <a name="design-user-interfaces"></a>設計使用者介面
 
 您可以使用 Visual Studio 中的各種工具，建立和設計應用程式的使用者介面。
 
 |深入了解|請參閱|
-|-------------------------|---------|
+| - |---------|
 | Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具功能 | [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md) |
 | 使用 Visual Studio 設計任何以 XAML 為基礎的應用程式|[在 Visual Studio 中使用 XAML 設計工具建立 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | 使用 Blend for Visual Studio 設計任何以 XAML 為基礎的應用程式 | [使用 Blend for Visual Studio 建立 UI](creating-a-ui-by-using-blend-for-visual-studio.md) |

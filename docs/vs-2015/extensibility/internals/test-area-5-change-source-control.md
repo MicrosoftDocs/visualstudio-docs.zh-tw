@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856661"
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5︰變更原始檔控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "49229251"
   
  **變更原始檔控制**命令為使用者提供四個基本的函式：  
   
--   **繫結：**  
+- **繫結：**  
   
-     可讓使用者建立或重新建立方案/專案和版本存放區之間的原始檔控制 連結。  
+   可讓使用者建立或重新建立方案/專案和版本存放區之間的原始檔控制 連結。  
   
--   **解除繫結：**  
+- **解除繫結：**  
   
-     移除每個連線為基礎的原始檔控制專案/方案。  
+   移除每個連線為基礎的原始檔控制專案/方案。  
   
--   **連接/中斷連線：**  
+- **連接/中斷連線：**  
   
- 切換連線或離線狀態的受控制的解決方案，區域 3 中所含。 如需詳細資訊，請參閱 <<c0> [ 測試區域 3： 簽出 / 復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
+  切換連線或離線狀態的受控制的解決方案，區域 3 中所含。 如需詳細資訊，請參閱 <<c0> [ 測試區域 3： 簽出 / 復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
   
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]與測試案例中會使用整合式的開發環境功能表路徑。  

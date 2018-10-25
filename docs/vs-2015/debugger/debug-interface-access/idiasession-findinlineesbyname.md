@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 534210b8f04fa10fd6193736860a2e31971d095a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9bec61eeaa96db7a003c58be808b6da852bf6b47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940392"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

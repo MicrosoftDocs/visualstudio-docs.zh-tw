@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Searchforreturnaddressstart |Microsoft 文件'
+title: 'Idiastackwalkframe:: Searchforreturnaddressstart |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2581233ceaba4ccf7d4e8593caf7f8b4dd306364
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b8c3bb2f26d67d08c0308ec3b47877d12ee81164
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936494"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-搜尋指定的堆疊框架的回覆地址或接近指定的位址。  
+搜尋指定的堆疊框架的地址，位於或接近指定的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,16 +36,16 @@ HRESULT searchForReturnAddressStart (
   
 #### <a name="parameters"></a>參數  
  `frame`  
- [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，代表目前的堆疊框架。  
+ [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示目前的堆疊框架。  
   
  `startAddress`  
- [in]中開始搜尋的虛擬記憶體位址。  
+ [in]從這裡開始搜尋的虛擬記憶體位址。  
   
  `returnAddress`  
- [out]傳回最接近的函式傳回位址`startAddress`。  
+ [out]會傳回最接近的函式傳回位址`startAddress`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

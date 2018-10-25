@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_classparent |Microsoft 文件'
+title: 'Idiasymbol:: Get_classparent |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 745342547d7c8264ebd9f2fa06bfababcc3aebcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816712"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-擷取類別的父系符號的參考。  
+擷取類別的父代符號的參考。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_classParent (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示的符號類別父物件。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表類別父系的符號的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是使用符號。  
+>  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
@@ -50,7 +50,7 @@ HRESULT get_classParent (
 |版本:|DIA SDK v7.0|  
   
 ## <a name="remarks"></a>備註  
- 可以是父類別的符號的類型都記錄於[類別階層架構的符號類型](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)。  
+ 可以是類別的父代的符號的類型所述[類別階層架構的符號類型](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

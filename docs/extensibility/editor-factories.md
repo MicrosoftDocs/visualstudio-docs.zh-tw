@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933127"
 ---
 # <a name="editor-factories"></a>編輯器 factory
 編輯器 factory 建立編輯器的物件，並將它們放在視窗框架內，又稱為實體的檢視。 它會建立文件資料及建立編輯器和設計工具所需的文件檢視物件。 編輯器 factory，才能建立 Visual Studio 核心編輯器和任何標準的編輯器。 也可以使用編輯器 factory 來建立自訂編輯器。  
@@ -46,13 +46,13 @@ ms.locfileid: "39638055"
 ## <a name="the-editor-factory-registration-process"></a>編輯器 factory 註冊程序  
  Visual Studio 會載入您使用編輯器 factory 的編輯器時，就會發生下列處理程序：  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
+2. 這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
   
-3.  當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
+3. 當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
   
-4.  如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
+4. 如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

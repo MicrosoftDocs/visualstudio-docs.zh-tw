@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess |Microsoft 文件
+title: IDebugPort2::GetProcess |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 586ea5bc944c152ee9ae2c8a2a4e9792b23d5b47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4958e296e83e3de0d8c3e41b73c0b30af144d743
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863200"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 取得指定的連接埠上執行的處理序。  
@@ -49,7 +49,7 @@ int GetProcess(
  [out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件代表處理程序。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

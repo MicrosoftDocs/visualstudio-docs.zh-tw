@@ -17,12 +17,12 @@ ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f00c100ef3b50f6b9b229d343a17e3468e1abdfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d50acb35d1b1ecba539d33539fbde91c4db2082
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862837"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

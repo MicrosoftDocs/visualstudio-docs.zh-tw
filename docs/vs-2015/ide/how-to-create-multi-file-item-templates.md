@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862173"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Visual Basic 的 Windows Forms 項目範本需要下列三個檔案：  
   
--   包含表單程式碼的.vb 檔案。  
+- 包含表單程式碼的.vb 檔案。  
   
--   包含表單設計工具資訊的 .designer.vb 檔案。  
+- 包含表單設計工具資訊的 .designer.vb 檔案。  
   
--   包含表單內嵌資源的 .resx 檔案。  
+- 包含表單內嵌資源的 .resx 檔案。  
   
- 多檔案項目範本需要參數，確保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立項目時使用正確的檔案名稱副檔名。 如果您使用 [匯出範本精靈] 建立項目範本，則會自動產生這些參數，而且不需要進行任何進一步編輯。 下列步驟說明如何使用參數，確保建立正確的檔案名稱副檔名。  
+  多檔案項目範本需要參數，確保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立項目時使用正確的檔案名稱副檔名。 如果您使用 [匯出範本精靈] 建立項目範本，則會自動產生這些參數，而且不需要進行任何進一步編輯。 下列步驟說明如何使用參數，確保建立正確的檔案名稱副檔名。  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本  
   

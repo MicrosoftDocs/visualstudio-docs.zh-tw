@@ -17,12 +17,12 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37b72287ae7d23649fcdd4bf54e91a40f61c7577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a7bc7edf46533c377857a3aae85e8dc97da8012
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827509"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875472"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>同處理序編譯器  
  如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 (不適用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：  
   
--   專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案使用。  
+- 專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案使用。  
   
--   這個工作的 `UseHostCompilerIfAvailable` 參數必須設定為 true。  
+- 這個工作的 `UseHostCompilerIfAvailable` 參數必須設定為 true。  
   
 ## <a name="design-time-intellisense"></a>設計階段 IntelliSense  
  若要在組建產生輸出組件之前取得 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的 IntelliSense 支援，必須符合下列條件：  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>參考解析  
  參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須觸發參考解析，才能夠在 [ **屬性** ] 視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。  
   
--   組件參考：  
+- 組件參考：  
   
-     專案系統使用已知名稱 `ResolveAssemblyReferences`呼叫目標。 這個目標應該以項目類型名稱 `ReferencePath`來產生項目。 每一個產生的項目都會包含完整參考路徑的項目規格 (即項目的 `Include` 屬性值)。 除了下列這些新的中繼資料以外，項目應該傳遞輸入項目中的所有中繼資料：  
+   專案系統使用已知名稱 `ResolveAssemblyReferences`呼叫目標。 這個目標應該以項目類型名稱 `ReferencePath`來產生項目。 每一個產生的項目都會包含完整參考路徑的項目規格 (即項目的 `Include` 屬性值)。 除了下列這些新的中繼資料以外，項目應該傳遞輸入項目中的所有中繼資料：  
   
-    -   `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
+  - `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
   
-    -   `OriginalItemSpec`，包含參考的原始項目規格。  
+  - `OriginalItemSpec`，包含參考的原始項目規格。  
   
-    -   `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
+  - `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
   
--   COM 參考：  
+- COM 參考：  
   
-     專案系統使用已知名稱 `ResolveCOMReferences`呼叫目標。 這個目標應該以項目類型名稱 `ComReferenceWrappers`來產生項目。 對於 COM 參考而言，每一個項目都應該有包含完整 Interop 組件路徑的項目規格。 除了名稱為 `CopyLocal` 的新中繼資料 (指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false) 以外，這些項目應該傳遞輸入項目中的所有中繼資料。  
+   專案系統使用已知名稱 `ResolveCOMReferences`呼叫目標。 這個目標應該以項目類型名稱 `ComReferenceWrappers`來產生項目。 對於 COM 參考而言，每一個項目都應該有包含完整 Interop 組件路徑的項目規格。 除了名稱為 `CopyLocal` 的新中繼資料 (指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false) 以外，這些項目應該傳遞輸入項目中的所有中繼資料。  
   
--   原生參考：  
+- 原生參考：  
   
-     專案系統使用已知名稱 `ResolveNativeReferences`呼叫目標。 這個目標應該以項目類型名稱 `NativeReferenceFile`來產生項目。 除了名為 `OriginalItemSpec`的新的中繼資料 (包含參考的原始項目規格) 以外，項目應該傳遞輸入項目中的所有中繼資料。  
+   專案系統使用已知名稱 `ResolveNativeReferences`呼叫目標。 這個目標應該以項目類型名稱 `NativeReferenceFile`來產生項目。 除了名為 `OriginalItemSpec`的新的中繼資料 (包含參考的原始項目規格) 以外，項目應該傳遞輸入項目中的所有中繼資料。  
   
 ## <a name="performance-shortcuts"></a>效能捷徑  
  如果您在 Visual Studio UI 中開始進行偵錯 (透過選擇 F5 鍵，或是選擇功能表列上的 [偵錯] > [開始偵錯])，建置流程會使用快速更新檢查改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。  

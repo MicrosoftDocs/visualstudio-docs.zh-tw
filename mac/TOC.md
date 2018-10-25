@@ -2,7 +2,8 @@
 # [IDE 導覽](ide-tour.md)
 
 # [安裝](installation.md)
-## [預覽安裝](install-preview.md)
+## [在防火牆或 Proxy 後方安裝及使用](install-behind-a-firewall-or-proxy-server.md)
+## [安裝預覽版本](install-preview.md)
 ## [更新](update.md)
 ## [解除安裝](uninstall.md)
 
@@ -40,9 +41,9 @@
 # [編譯和建置](compiling-and-building.md)
 ## [建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)
 ## [建置動作](build-actions.md)
-## [自訂組建系統](customizing-build-system.md)
-## [組態](configurations.md)
-### [建立和編輯組態](create-and-edit-configurations.md)
+## [自訂建置系統](customizing-build-system.md)
+## [設定](configurations.md)
+### [建立及編輯設定](create-and-edit-configurations.md)
 
 # [版本控制](version-control.md)
 ## [TF 版本控制](tf-version-control.md)

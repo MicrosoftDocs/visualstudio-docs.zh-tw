@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890175"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立 N-Tier 資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
  在這個逐步解說期間，您將執行下列步驟：  
   
--   建立含有多個專案的新多層式架構方案。  
+- 建立含有多個專案的新多層式架構方案。  
   
--   將兩個類別庫專案加入至多層式架構方案。  
+- 將兩個類別庫專案加入至多層式架構方案。  
   
--   使用建立具類型資料集**資料來源組態精靈**。  
+- 使用建立具類型資料集**資料來源組態精靈**。  
   
--   將產生[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集的程式碼分成離散專案。  
+- 將產生[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集的程式碼分成離散專案。  
   
--   建立要呼叫到資料存取層的 Windows Communication Foundation (WCF) 服務。  
+- 建立要呼叫到資料存取層的 Windows Communication Foundation (WCF) 服務。  
   
--   在服務中建立函式，以擷取資料存取層中的資料。  
+- 在服務中建立函式，以擷取資料存取層中的資料。  
   
--   建立 Windows Form 應用程式，以做為呈現層。  
+- 建立 Windows Form 應用程式，以做為呈現層。  
   
--   建立繫結至資料來源的 Windows Form 控制項。  
+- 建立繫結至資料來源的 Windows Form 控制項。  
   
--   撰寫程式碼以填入資料表。  
+- 撰寫程式碼以填入資料表。  
   
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[影片-如何： 建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。  
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[影片-如何： 建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您需要：  
@@ -144,17 +144,17 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>分隔 TableAdapter 與資料集  
   
-1.  按兩下**NorthwindDataSet.xsd**中**方案總管**若要開啟中的資料集**Dataset 設計工具**。  
+1. 按兩下**NorthwindDataSet.xsd**中**方案總管**若要開啟中的資料集**Dataset 設計工具**。  
   
-2.  按一下設計工具上的空白區域。  
+2. 按一下設計工具上的空白區域。  
   
-3.  找出**資料集 Project**中的節點**屬性**視窗。  
+3. 找出**資料集 Project**中的節點**屬性**視窗。  
   
-4.  在 **資料集 Project**清單中，按一下**DataEntityTier**。  
+4. 在 **資料集 Project**清單中，按一下**DataEntityTier**。  
   
-5.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+5. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
- 資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (DataAccessTier) 現在只會包含 TableAdapter。 中指定的專案**資料集 Project**屬性 (DataEntityTier) 包含具類型資料集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
+   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (DataAccessTier) 現在只會包含 TableAdapter。 中指定的專案**資料集 Project**屬性 (DataEntityTier) 包含具類型資料集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
 > [!NOTE]
 >  當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，在專案中的現有部份資料集類別不會自動移動。 現有資料集部分類別必須手動移至資料集專案。  

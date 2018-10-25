@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912041"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 剖析器是語言服務的核心。 Managed Package Framework (MPF) 語言類別需要的語言剖析器，以選取要顯示的程式碼的相關資訊。 剖析器會將文字分隔為語彙基元，並接著識別這些權杖由型別和功能。  
@@ -59,11 +59,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>類型的剖析器  
  語言服務剖析器不是編譯器的過程中使用的剖析器相同。 不過，這種剖析器必須掃描器和剖析器，用於與編譯器剖析器相同的方式。  
   
--   掃描器會用來識別的權杖類型。 反白顯示語法及快速識別語彙基元型別可以觸發其他作業，例如括號對稱，則會使用這項資訊。 此掃描器由<xref:Microsoft.VisualStudio.Package.IScanner>介面。  
+- 掃描器會用來識別的權杖類型。 反白顯示語法及快速識別語彙基元型別可以觸發其他作業，例如括號對稱，則會使用這項資訊。 此掃描器由<xref:Microsoft.VisualStudio.Package.IScanner>介面。  
   
--   剖析器用來描述函式和語彙基元的範圍。 這項資訊可在 IntelliSense 作業，來識別語言的項目，例如方法、 變數、 參數和宣告，並提供成員，以及根據內容的方法簽章的清單。 此剖析器也會用來尋找相符的語言項目組，例如大括號和括號中。 透過存取此剖析器<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別。  
+- 剖析器用來描述函式和語彙基元的範圍。 這項資訊可在 IntelliSense 作業，來識別語言的項目，例如方法、 變數、 參數和宣告，並提供成員，以及根據內容的方法簽章的清單。 此剖析器也會用來尋找相符的語言項目組，例如大括號和括號中。 透過存取此剖析器<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別。  
   
- 如何為您的語言服務實作的掃描器和剖析器是由您決定。 有數個資源剖析器的運作方式，以及如何撰寫您自己的剖析器也是如此。 此外，數個免費及商用產品現已推出，協助建立剖析器。  
+  如何為您的語言服務實作的掃描器和剖析器是由您決定。 有數個資源剖析器的運作方式，以及如何撰寫您自己的剖析器也是如此。 此外，數個免費及商用產品現已推出，協助建立剖析器。  
   
 ### <a name="the-parsesource-parser"></a>ParseSource 剖析器  
  與做為一部分 （語彙基元會轉換為某種形式的可執行程式碼） 編譯器的剖析器，不同的語言服務剖析器可以呼叫許多不同的原因，然後在許多不同的內容。 在這種方法的實作方式<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別是由您決定。 請務必記住，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>可能會在背景執行緒上呼叫方法。  

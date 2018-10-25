@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884897"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>逐步解說：偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>若要尋找執行緒標記  
   
-1.  以滑鼠右鍵按一下**執行緒** 視窗中，然後按一下**在來源中顯示執行緒**。  
+1. 以滑鼠右鍵按一下**執行緒** 視窗中，然後按一下**在來源中顯示執行緒**。  
   
-2.  查看來源視窗左邊的裝訂邊。 在這條線上，您會看見有個像是兩條布條的圖示。 其中一條是紅色、另一條是藍色。 執行緒標記表示執行緒會停在這個位置上。 執行緒可能會停在這個位置上。  
+2. 查看來源視窗左邊的裝訂邊。 在這條線上，您會看見有個像是兩條布條的圖示。 其中一條是紅色、另一條是藍色。 執行緒標記表示執行緒會停在這個位置上。 執行緒可能會停在這個位置上。  
   
-3.  將指標移到執行緒標記上。 資料提示方塊隨即出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。 此案例中只有一個執行緒，其名稱可能為 `<noname>`。  
+3. 將指標移到執行緒標記上。 資料提示方塊隨即出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。 此案例中只有一個執行緒，其名稱可能為 `<noname>`。  
   
-4.  以滑鼠右鍵按一下執行緒標記。 請注意捷徑功能表上的選項。  
+4. 以滑鼠右鍵按一下執行緒標記。 請注意捷徑功能表上的選項。  
   
- 此圖示*執行緒標記*:  
+   此圖示*執行緒標記*:  
   
- ![執行緒標記](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![執行緒標記](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>將執行緒加上旗標和取消旗標  
  在 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 中，您可以為需要特別注意的執行緒加上旗標。 為執行緒加上旗標可方便您追蹤重要的執行緒，而忽略您無需注意的執行緒。  

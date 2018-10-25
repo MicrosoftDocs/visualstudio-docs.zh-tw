@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837941"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ ms.locfileid: "49252807"
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>正在偵測平台專案和共用的專案中的變更  
   
-1.  如同您用於平台專案，您可以使用階層和專案的事件在共用專案中，偵測變更。 不過，共用專案中的專案項目不是可見的這表示共用的專案項目變更時，並不會引發特定事件。  
+1. 如同您用於平台專案，您可以使用階層和專案的事件在共用專案中，偵測變更。 不過，共用專案中的專案項目不是可見的這表示共用的專案項目變更時，並不會引發特定事件。  
   
-     請考慮重新命名專案中的檔案時的事件順序：  
+    請考慮重新命名專案中的檔案時的事件順序：  
   
-    1.  檔案名稱是在磁碟上變更。  
+   1. 檔案名稱是在磁碟上變更。  
   
-    2.  專案檔會更新以包含新的檔案名稱。  
+   2. 專案檔會更新以包含新的檔案名稱。  
   
-     階層架構事件 (例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤變更顯示在 UI 中，依照**方案總管 中**。 階層架構事件，請考慮包含刪除的檔案，然後檔案新增的檔案重新命名作業。 不過，不可見的項目變更時，階層事件系統會引發<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件，但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。 因此，如果您重新命名的平台專案中的檔案，您可以同時<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>，但如果您重新命名共用專案中的檔案，您會收到僅<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>。  
+      階層架構事件 (例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤變更顯示在 UI 中，依照**方案總管 中**。 階層架構事件，請考慮包含刪除的檔案，然後檔案新增的檔案重新命名作業。 不過，不可見的項目變更時，階層事件系統會引發<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件，但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。 因此，如果您重新命名的平台專案中的檔案，您可以同時<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>，但如果您重新命名共用專案中的檔案，您會收到僅<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>。  
   
-     若要追蹤變更專案項目中的，您可以處理 DTE 專案項目事件 (在中找到的<xref:EnvDTE.ProjectItemsEventsClass>)。 不過，如果您要處理大量的事件數目，您可以取得更佳的效能處理中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>。 在本逐步解說示範階層事件以及 DTE 事件。 在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
+      若要追蹤變更專案項目中的，您可以處理 DTE 專案項目事件 (在中找到的<xref:EnvDTE.ProjectItemsEventsClass>)。 不過，如果您要處理大量的事件數目，您可以取得更佳的效能處理中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>。 在本逐步解說示範階層事件以及 DTE 事件。 在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
   
-     在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
+      在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
   
-2.  加入事件接聽程式。 將新的類別檔案加入專案，並呼叫 HierarchyEventListener.cs。  
+2. 加入事件接聽程式。 將新的類別檔案加入專案，並呼叫 HierarchyEventListener.cs。  
   
-3.  開啟 HierarchyEventListener.cs 檔案並新增下列 using 陳述式：  
+3. 開啟 HierarchyEventListener.cs 檔案並新增下列 using 陳述式：  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  已`HierarchyEventListener`類別會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. 已`HierarchyEventListener`類別會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  實作的成員<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>，如下列程式碼。  
+5. 實作的成員<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>，如下列程式碼。  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  在相同類別中新增 DTE 事件的另一個事件處理常式<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>，就會出現每當重新命名專案項目。  
+6. 在相同類別中新增 DTE 事件的另一個事件處理常式<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>，就會出現每當重新命名專案項目。  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  註冊的階層架構事件。 您需要另外註冊您要追蹤每個專案。 新增下列程式碼中的`ShowMessageBox`，一個適用於共用的專案中，而另一個則用於其中一個平台專案。  
+7. 註冊的階層架構事件。 您需要另外註冊您要追蹤每個專案。 新增下列程式碼中的`ShowMessageBox`，一個適用於共用的專案中，而另一個則用於其中一個平台專案。  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  DTE 專案項目事件註冊<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>。 您將連結的第二個接聽程式之後，請新增下列程式碼。  
+8. DTE 專案項目事件註冊<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>。 您將連結的第二個接聽程式之後，請新增下列程式碼。  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. 修改共用的項目。 您無法修改共用的項目，在平台專案中;相反地，您必須修改它們實際的擁有者，這些項目之共用專案中。 您可以使用共用專案中取得對應的項目 ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>，讓它共用的項目完整路徑。 然後您可以修改共用的項目。 變更會傳播到平台專案中。  
   

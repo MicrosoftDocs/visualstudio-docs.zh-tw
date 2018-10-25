@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize |Microsoft 文件
+title: IDebugPendingBreakpoint2::Virtualize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9145cff487ebb97894d9b93ad5e1ec54d5b4b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948287"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-切換這個暫止中斷點虛擬化的狀態。 當為虛擬化的暫止中斷點時，偵錯引擎會嘗試每次新的程式碼載入程式，將它繫結。  
+切換虛擬化的狀態這暫止的中斷點。 當虛擬化暫止中斷點時，偵錯引擎會嘗試將它繫結，每次新的程式碼載入程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int Virtualize(
   
 #### <a name="parameters"></a>參數  
  `fVirtualize`  
- [in]設定為非零 (`TRUE`) 虛擬化暫止中斷點，或為零 (`FALSE`) 若要關閉 虛擬化。  
+ [in]設定為非零 (`TRUE`) 來虛擬化暫止的中斷點，或為零 (`FALSE`) 若要關閉 虛擬化。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。  
   
 ## <a name="remarks"></a>備註  
- 每次載入的程式碼時，虛擬化的中斷點會繫結。  
+ 每次載入的程式碼時，會繫結的虛擬化的中斷點。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開的物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

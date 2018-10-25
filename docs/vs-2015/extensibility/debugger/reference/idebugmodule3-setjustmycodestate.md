@@ -17,12 +17,12 @@ ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bdf95848230edbec32c67c6900281d7862d248a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0e7b5a9b7e0f5bcefed4e8aa3b30968140f52d2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924430"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

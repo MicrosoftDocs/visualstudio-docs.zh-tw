@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865852"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
   
  偵錯工具會在發生下列其中一種情況時，自動附加至指令碼：  
   
--   您到達了在指令碼中設定的中斷點。  
+- 您到達了在指令碼中設定的中斷點。  
   
--   您到達了指令碼中 VBScript 的 `Stop` 陳述式或 JScript 的 `debugger` 陳述式。  
+- 您到達了指令碼中 VBScript 的 `Stop` 陳述式或 JScript 的 `debugger` 陳述式。  
   
--   瀏覽器或伺服器遇到了指令碼中的語法或執行階段錯誤。 發生這種情況時會出現對話方塊，其中含有開始進行偵錯的選項。  
+- 瀏覽器或伺服器遇到了指令碼中的語法或執行階段錯誤。 發生這種情況時會出現對話方塊，其中含有開始進行偵錯的選項。  
   
- 當您以手動方式附加至指令碼時，指令碼處理序會繼續執行，直到由於某種未知的原因而暫止為止。 您可以選擇 [ **偵錯** ] 功能表上的 [ **中斷** ] 來暫止指令碼處理序。  
+  當您以手動方式附加至指令碼時，指令碼處理序會繼續執行，直到由於某種未知的原因而暫止為止。 您可以選擇 [ **偵錯** ] 功能表上的 [ **中斷** ] 來暫止指令碼處理序。  
   
- 當偵錯工具自動附加至指令碼時，指令碼會在中斷點所在的那一行、 `Stop` 陳述式或 `debugger` 陳述式、發生錯誤時，或您選擇要在 Internet Explorer 內啟動偵錯的所在點暫止。  
+  當偵錯工具自動附加至指令碼時，指令碼會在中斷點所在的那一行、 `Stop` 陳述式或 `debugger` 陳述式、發生錯誤時，或您選擇要在 Internet Explorer 內啟動偵錯的所在點暫止。  
   
- 此時，您可以使用一般偵錯工具的功能開始偵錯。 例如，您可以使用 [ **步驟** ] 命令，繼續逐行執行程式碼。 您可以使用 [ **呼叫堆疊** ] 視窗來檢視和控制指令碼流程。 您可以使用 [變數] 視窗或 [ **即時運算** ] 視窗來檢視或變更變數和屬性。  
+  此時，您可以使用一般偵錯工具的功能開始偵錯。 例如，您可以使用 [ **步驟** ] 命令，繼續逐行執行程式碼。 您可以使用 [ **呼叫堆疊** ] 視窗來檢視和控制指令碼流程。 您可以使用 [變數] 視窗或 [ **即時運算** ] 視窗來檢視或變更變數和屬性。  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>增強型指令碼偵錯錯誤訊息  
  Visual Studio 針對一般指令碼偵錯問題提供了增強的錯誤訊息。 除非您以手動方式附加至 Internet Explorer，否則不會顯示這些錯誤訊息。 如果您在 Internet Explorer 自動開啟時發生錯誤，請嘗試以手動方式附加，以便查看錯誤訊息。  

@@ -17,12 +17,12 @@ ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b77091d249de0c2f8c1171aa01707219f64f2b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adfbd4ce924acb7ef6cd3f22a1a7d4bf5de27683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933972"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

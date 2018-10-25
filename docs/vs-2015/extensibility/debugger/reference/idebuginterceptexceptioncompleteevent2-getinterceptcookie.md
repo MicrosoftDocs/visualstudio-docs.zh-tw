@@ -17,12 +17,12 @@ ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44a6656823f299b3d559c9a4ec9a8ed2912201ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc8f5c2172263590839194437c41108ef8fb23a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858403"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

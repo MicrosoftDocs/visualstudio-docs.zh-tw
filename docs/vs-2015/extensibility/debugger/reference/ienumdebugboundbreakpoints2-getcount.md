@@ -17,12 +17,12 @@ ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af6ea0fd79edaa127e33123427f444f15b93afe1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cd9bc889fedc11b755807a8fa79670f669e67ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918645"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

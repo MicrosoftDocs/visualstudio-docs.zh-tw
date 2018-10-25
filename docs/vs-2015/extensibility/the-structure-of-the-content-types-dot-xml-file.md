@@ -18,12 +18,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f89a928af01ad006b2a051c4ff583dcefcb061de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a33a1d8b82c03b2c8a45c63f5479011ab7249aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903136"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>結構的 [Content_types].xml 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "49218292"
   
 ### <a name="attribute-name-attribute"></a>{屬性 name}屬性  
   
-|值|描述|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|內容類型的結構描述的位置。|  
+|                           值                           |                描述                |
+|-----------------------------------------------------------|-------------------------------------------|
+| http://schemas.openformats.org/package/2006/content-types | 內容類型的結構描述的位置。 |
   
 ### <a name="child-elements"></a>子元素  
  `Types`項目可以包含任意數目的`Default`項目。  

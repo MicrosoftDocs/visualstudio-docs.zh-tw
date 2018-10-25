@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed |Microsoft 文件'
+title: 'Idiasymbol:: Get_sealed |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841802"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 擷取指定是否已密封類別或方法的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_sealed(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果已密封類別或方法; 否則會傳回`FALSE`。  
+ [out]會傳回`TRUE`已密封類別或方法; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
  密封類別不能當做基底類別使用。 密封的方法不能覆寫此屬性。  

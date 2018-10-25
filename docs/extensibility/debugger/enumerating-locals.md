@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15af19d988f39f8181fad734e3fcc058d33dda71
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 13dfa2ada2b0df38a133bb3f2bc112b496129f1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869908"
 ---
 # <a name="enumerate-locals"></a>列舉區域變數
 > [!IMPORTANT]

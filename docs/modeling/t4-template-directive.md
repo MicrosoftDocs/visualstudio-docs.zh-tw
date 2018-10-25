@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897195"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -93,7 +93,6 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 #>
 Content of myFile is:
 <#= myFile #>
-
 ```
 
  如果您同時使用 `inherits` 和 `hostspecific` 屬性，請在衍生類別中指定 host="trueFromBase"，在基底類別中指定 host="true"。 這可避免在產生的程式碼中出現 `Host` 屬性的雙重定義。
@@ -121,7 +120,6 @@ Squares of numbers:
 <#
   Next number
 #>
-
 ```
 
 ## <a name="inherits-attribute"></a>inherits 屬性
@@ -150,7 +148,6 @@ This is the common footer.
   protected virtual void SpecificFragment1() { }
   protected virtual void SpecificFragment2() { }
 #>
-
 ```
 
  執行階段 (前置處理過的) 文字範本 DerivedTemplate1.tt：
@@ -175,7 +172,6 @@ protected override void SpecificFragment2()
 <#+
 }
 #>
-
 ```
 
  用來叫用 DerivedTemplate1 的應用程式程式碼：

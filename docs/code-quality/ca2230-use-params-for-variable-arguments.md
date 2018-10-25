@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dbb5ba3fe1f16f5a05d01d25040de39370cddc8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e8139153be130ef05c150bd9d96d4298554c1269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866710"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
+
 |||
 |-|-|
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

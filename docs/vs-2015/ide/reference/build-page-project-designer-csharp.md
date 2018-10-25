@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837175"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "49280614"
   
  只有在下列所有條件都成立時，才能使用此核取方塊：  
   
--   在 [建置] 頁面上，[平台目標] 清單設定為 [任何 CPU]。  
+- 在 [建置] 頁面上，[平台目標] 清單設定為 [任何 CPU]。  
   
--   在 [應用程式] 頁面上，[輸出類型] 清單指定專案是應用程式。  
+- 在 [應用程式] 頁面上，[輸出類型] 清單指定專案是應用程式。  
   
--   在 [應用程式] 頁面上，[目標 Framework] 清單指定 .NET Framework 4.5。  
+- 在 [應用程式] 頁面上，[目標 Framework] 清單指定 .NET Framework 4.5。  
   
- **容許 unsafe 程式碼**  
- 允許程式碼使用 [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) 關鍵字來進行編譯。 如需詳細資訊，請參閱 [/unsafe (C# 編譯器選項)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)。  
+  **容許 unsafe 程式碼**  
+  允許程式碼使用 [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) 關鍵字來進行編譯。 如需詳細資訊，請參閱 [/unsafe (C# 編譯器選項)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)。  
   
- **最佳化程式碼**  
- 啟用或停用由編譯器執行的最佳化，讓您的輸出檔變得更小、更快且更有效率。 如需詳細資訊，請參閱 [/optimize (C# 編譯器選項)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)。  
+  **最佳化程式碼**  
+  啟用或停用由編譯器執行的最佳化，讓您的輸出檔變得更小、更快且更有效率。 如需詳細資訊，請參閱 [/optimize (C# 編譯器選項)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)。  
   
 ## <a name="errors-and-warnings"></a>錯誤和警告  
  您可以使用下列設定，為建置流程設定錯誤和警告選項。  

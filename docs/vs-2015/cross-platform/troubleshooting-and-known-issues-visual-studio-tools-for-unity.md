@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928681"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ ms.locfileid: "49250611"
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>回報使用 Visual Studio Tools for Unity 進行偵錯時 Visual Studio 凍結的情形  
   
-1.  開啟新的 Visual Studio 執行個體。  
+1. 開啟新的 Visual Studio 執行個體。  
   
-2.  開啟 [附加至處理序] 對話方塊。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] 、[附加至處理序] 。  
+2. 開啟 [附加至處理序] 對話方塊。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] 、[附加至處理序] 。  
   
-3.  將偵錯工具附加至 Visual Studio 的已凍結執行個體。 在 [附加至處理序]  對話方塊中，從 [可使用的處理序]  資料表選取 Visual Studio 的已凍結執行個體，然後選擇 [附加]  按鈕。  
+3. 將偵錯工具附加至 Visual Studio 的已凍結執行個體。 在 [附加至處理序]  對話方塊中，從 [可使用的處理序]  資料表選取 Visual Studio 的已凍結執行個體，然後選擇 [附加]  按鈕。  
   
-4.  暫停偵錯工具。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] 、[全部中斷]  ，或直接按 **Ctrl+Alt+Break**。  
+4. 暫停偵錯工具。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] 、[全部中斷]  ，或直接按 **Ctrl+Alt+Break**。  
   
-5.  建立執行緒傾印。 在 [命令] 視窗中，輸入下列命令，然後按 **Enter**鍵。  
+5. 建立執行緒傾印。 在 [命令] 視窗中，輸入下列命令，然後按 **Enter**鍵。  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     您可能需要先顯示 [命令]  視窗。 在 Visual Studio 主功能表上，選擇 [檢視] 、[其他視窗] 、[命令視窗] 。  
+    您可能需要先顯示 [命令]  視窗。 在 Visual Studio 主功能表上，選擇 [檢視] 、[其他視窗] 、[命令視窗] 。  
   
-6.  最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com)，並提供您在 Visual Studio 變成凍結時所執行的動作描述。
+6. 最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com)，並提供您在 Visual Studio 變成凍結時所執行的動作描述。
 

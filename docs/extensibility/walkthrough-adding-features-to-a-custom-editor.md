@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873015"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說： 將功能加入至自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。  
@@ -122,38 +122,38 @@ ms.locfileid: "39498937"
   
 13. 藉由實作公開 Automation 物件模型，從您的編輯器`IDispatch`介面。  
   
-     如需詳細資訊，請參閱 <<c0> [ 參與 Automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)。  
+     如需詳細資訊，請參閱 [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md)。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
   
--   IDE 呼叫時，會建立編輯器執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果編輯器支援多個檢視，`CreateEditorInstance`建立文件資料和文件檢視物件。 如果文件資料物件已開啟，請為非 null`punkDocDataExisting`值會傳遞至`IVsEditorFactory::CreateEditorInstance`。 您的編輯器 factory 實作必須判斷現有的文件資料物件是否相容，藉由查詢適當的介面，在其上。 如需詳細資訊，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。  
+- IDE 呼叫時，會建立編輯器執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果編輯器支援多個檢視，`CreateEditorInstance`建立文件資料和文件檢視物件。 如果文件資料物件已開啟，請為非 null`punkDocDataExisting`值會傳遞至`IVsEditorFactory::CreateEditorInstance`。 您的編輯器 factory 實作必須判斷現有的文件資料物件是否相容，藉由查詢適當的介面，在其上。 如需詳細資訊，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。  
   
--   如果您使用簡化的內嵌方法，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面。  
+- 如果您使用簡化的內嵌方法，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面。  
   
--   如果您決定使用就地啟用，請實作下列介面：  
+- 如果您決定使用就地啟用，請實作下列介面：  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。  
+  > [!NOTE]
+  >  `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。  
   
-     您`IOleCommandTarget`實作會處理命令這類**剪下**，**複製**，和**貼上**。 實作時`IOleCommandTarget`，決定您的編輯器的值需要有自己 *.vsct*檔案，以定義自己的命令功能表結構或者它可以實作所定義的標準命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常，編輯器使用和擴充 IDE 的功能表，然後定義自己的工具列。 不過，它通常是所需的編輯器來定義它自己特定的命令，除了使用 IDE 的標準命令集。 您的編輯器必須宣告它會使用標準命令，並接著定義任何新的命令、 內容、 最上層的功能表中功能表和工具列 *.vsct*檔案。 如果您建立就地啟用編輯器時，實作<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，並定義編輯器中的功能表和工具列 *.vsct*而不是使用 OLE 2 功能表合併的檔案。  
+   您`IOleCommandTarget`實作會處理命令這類**剪下**，**複製**，和**貼上**。 實作時`IOleCommandTarget`，決定您的編輯器的值需要有自己 *.vsct*檔案，以定義自己的命令功能表結構或者它可以實作所定義的標準命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常，編輯器使用和擴充 IDE 的功能表，然後定義自己的工具列。 不過，它通常是所需的編輯器來定義它自己特定的命令，除了使用 IDE 的標準命令集。 您的編輯器必須宣告它會使用標準命令，並接著定義任何新的命令、 內容、 最上層的功能表中功能表和工具列 *.vsct*檔案。 如果您建立就地啟用編輯器時，實作<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，並定義編輯器中的功能表和工具列 *.vsct*而不是使用 OLE 2 功能表合併的檔案。  
   
--   若要避免在 UI 中過度擁擠的功能表命令，您應該在 IDE 中使用現有的命令之前發明新的命令。 共用的命令定義於*SharedCmdDef.vsct*並*ShellCmdDef.vsct*。 這些檔案的 VisualStudioIntegration\Common\Inc 子目錄中的預設會安裝您[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安裝。  
+- 若要避免在 UI 中過度擁擠的功能表命令，您應該在 IDE 中使用現有的命令之前發明新的命令。 共用的命令定義於*SharedCmdDef.vsct*並*ShellCmdDef.vsct*。 這些檔案的 VisualStudioIntegration\Common\Inc 子目錄中的預設會安裝您[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安裝。  
   
--   `ISelectionContainer` 可以用來表示單一和多重選取項目。 每個選取的物件會實作為`IDispatch`物件。  
+- `ISelectionContainer` 可以用來表示單一和多重選取項目。 每個選取的物件會實作為`IDispatch`物件。  
   
--   IDE 會實作`IOleUndoManager`做為服務可以從存取<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或以物件可以透過執行個體化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 您的編輯器會實作`IOleUndoUnit`針對每個介面`Undo`動作。  
+- IDE 會實作`IOleUndoManager`做為服務可以從存取<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或以物件可以透過執行個體化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 您的編輯器會實作`IOleUndoUnit`針對每個介面`Undo`動作。  
   
--   有兩個地方的自訂編輯器可以公開 automation 物件：  
+- 有兩個地方的自訂編輯器可以公開 automation 物件：  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>另請參閱  
  [參與 automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   

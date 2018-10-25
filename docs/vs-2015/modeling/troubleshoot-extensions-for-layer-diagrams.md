@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879099"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>分層圖擴充功能疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "49250064"
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>當我按下 F5 偵錯擴充功能時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗執行個體的分層圖上沒有出現我的命令、軌跡處理常式、驗證擴充功能或自訂屬性。  
   
-1.  在實驗執行個體中開啟您的擴充方案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然後在**建置**功能表上，按一下 **重建方案**。  
+1. 在實驗執行個體中開啟您的擴充方案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然後在**建置**功能表上，按一下 **重建方案**。  
   
-2.  按下**F5**或是**CTRL + F5**來啟動實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 開啟分層圖並測試您的擴充功能。  
+2. 按下**F5**或是**CTRL + F5**來啟動實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 開啟分層圖並測試您的擴充功能。  
   
- 如有必要，請繼續執行下一個程序。  
+   如有必要，請繼續執行下一個程序。  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>執行的是舊版的擴充功能。  
   
-1.  請確定沒有任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗執行個體執行中。  
+1. 請確定沒有任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗執行個體執行中。  
   
-2.  刪除下列資料夾： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
+2. 刪除下列資料夾： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
   
-    > [!NOTE]
-    >  %Localappdata%通常是*DriveName*: \Users\\*UserName*\AppData\Local。  
+   > [!NOTE]
+   >  %Localappdata%通常是*DriveName*: \Users\\*UserName*\AppData\Local。  
   
- 如有必要，請繼續執行下一個程序。  
+   如有必要，請繼續執行下一個程序。  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>出現的是舊版的驗證結果，或沒有呼叫我的驗證方法。  
   

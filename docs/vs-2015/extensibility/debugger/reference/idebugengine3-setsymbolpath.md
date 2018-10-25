@@ -17,12 +17,12 @@ ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63ecd78913f67ff06f0280e4835bb199c4571b70
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f74fafc325693df6a312647c9e9060a24cf256ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863551"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

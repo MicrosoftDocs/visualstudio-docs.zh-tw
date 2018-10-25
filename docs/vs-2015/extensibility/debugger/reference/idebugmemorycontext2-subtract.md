@@ -18,12 +18,12 @@ ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bb2ce49440d5a2196b983ea53c761496a2c4570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 78304d49ac3b921b4930f94f7f3ac2573e46b82d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831299"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

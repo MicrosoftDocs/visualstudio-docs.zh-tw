@@ -17,12 +17,12 @@ ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9b3144097bf7eea103961210e28261554e37165
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb78f71f3b1190c116650495955f0fe33bdc46e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829972"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

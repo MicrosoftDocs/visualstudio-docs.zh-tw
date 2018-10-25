@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812981"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ ms.locfileid: "49292977"
 ## <a name="how-an-ide-locates-the-dll"></a>IDE 如何找出 DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 有兩個方式來尋找原始檔控制外掛程式 DLL:  
   
--   尋找預設原始檔控制外掛程式並連接到它以無訊息模式。  
+- 尋找預設原始檔控制外掛程式並連接到它以無訊息模式。  
   
--   尋找所有已註冊的原始檔控制外掛程式，從中使用者選擇其中一個。  
+- 尋找所有已註冊的原始檔控制外掛程式，從中使用者選擇其中一個。  
   
- 若要找出 DLL 中的第一個方法，IDE 會尋找項目的 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子機碼下。 此項目的值會指向另一個子機碼。 IDE 接著會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的第二個子機碼中的項目。 此項目的值會指向該 DLL 中的 IDE。  
+  若要找出 DLL 中的第一個方法，IDE 會尋找項目的 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子機碼下。 此項目的值會指向另一個子機碼。 IDE 接著會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的第二個子機碼中的項目。 此項目的值會指向該 DLL 中的 IDE。  
   
 > [!NOTE]
 >  IDE 無法載入 Dll 從相對路徑 (例如.\NewProvider.DLL)。 必須指定 DLL 的完整路徑 (例如 c:\Providers\NewProvider.DLL)。 這是藉由防止未經授權或模擬外掛程式的 Dll 載入加強安全性的 IDE。  
   
- 在第二種方法中，找出 DLL，IDE 會尋找所有項目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子機碼下 *。* 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單 *。* 當使用者選擇的名稱時，IDE 會在指向子機碼所選取名稱尋找的值。 IDE 會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的子機碼中的項目。 這個項目的值會指向正確的 DLL 中的 IDE。  
+ 在第二種方法中，找出 DLL，IDE 會尋找所有項目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子機碼下<em>。</em> 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單<em>。</em> 當使用者選擇的名稱時，IDE 會在指向子機碼所選取名稱尋找的值。 IDE 會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的子機碼中的項目。 這個項目的值會指向正確的 DLL 中的 IDE。  
   
  原始檔控制外掛程式需要支援兩種尋找 DLL，並因此，設定 ProviderRegKey，覆寫任何先前的設定。 更重要的是，它必須將本身加入 InstalledSccProviders 份這樣使用者就能選擇使用哪一個原始檔控制外掛程式。  
   

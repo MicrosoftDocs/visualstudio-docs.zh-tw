@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::SetSite |Microsoft 文件
+title: IDebugPortPicker::SetSite |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54286ded44f6acf44033c2fa5e2227ccaa688a64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00730a5338a3355f2397a91bc7a3693b30dca31b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930605"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 設定服務提供者。  
@@ -42,10 +42,10 @@ public int SetSite(
  [in]服務提供者的介面參考。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在呼叫其他任何方法之前，會呼叫這個方法。  
+ 任何其他方法之前呼叫，則會呼叫這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

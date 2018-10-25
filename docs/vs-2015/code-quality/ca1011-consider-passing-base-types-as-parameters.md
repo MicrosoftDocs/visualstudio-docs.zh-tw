@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898631"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：建議將基底類型當做參數傳遞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -48,13 +49,13 @@ ms.locfileid: "49220151"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏此規則的警告
 
--   如果方法必須由衍生的型別所提供的特定功能
+- 如果方法必須由衍生的型別所提供的特定功能
 
-     \-或-
+   \-或-
 
--   若要強制執行僅衍生的類型，或是衍生程度較大的類型，傳遞至方法。
+- 若要強制執行僅衍生的類型，或是衍生程度較大的類型，傳遞至方法。
 
- 在這些情況下，程式碼會更穩固因為強式型別檢查的編譯器和執行階段所提供。
+  在這些情況下，程式碼會更穩固因為強式型別檢查的編譯器和執行階段所提供。
 
 ## <a name="example"></a>範例
  下列範例示範的方法中， `ManipulateFileStream`，可用於只使用<xref:System.IO.FileStream>違反此規則的物件。 第二個方法中， `ManipulateAnyStream`，來取代符合規則<xref:System.IO.FileStream>參數使用<xref:System.IO.Stream>。

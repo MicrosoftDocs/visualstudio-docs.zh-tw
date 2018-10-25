@@ -14,32 +14,32 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 486c41c54e7935bcda27ad6bea18b3180aa0371e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882353"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Host
 實作 Microsoft Windows Script Host 時，您可以安全地假設指令碼引擎只呼叫基底執行緒內容中的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面，只要主機進行下列作業：  
   
--   選擇基底執行緒 (通常是包含訊息迴圈的執行緒)。  
+- 選擇基底執行緒 (通常是包含訊息迴圈的執行緒)。  
   
--   在基底執行緒中具現化指令碼引擎。  
+- 在基底執行緒中具現化指令碼引擎。  
   
--   除非特別允許，如 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 和 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 的情況，否則只從基底執行緒呼叫指令碼引擎方法。  
+- 除非特別允許，如 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 和 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 的情況，否則只從基底執行緒呼叫指令碼引擎方法。  
   
--   只從基底執行緒呼叫指令碼引擎的分派物件。  
+- 只從基底執行緒呼叫指令碼引擎的分派物件。  
   
--   如果提供視窗控制代碼，確保訊息迴圈會在基底執行緒中執行。  
+- 如果提供視窗控制代碼，確保訊息迴圈會在基底執行緒中執行。  
   
--   確保主機物件模型中的物件，只以基底執行緒中的事件為來源。  
+- 確保主機物件模型中的物件，只以基底執行緒中的事件為來源。  
   
- 所有單一執行緒的主機都會自動遵循這些規則。 上述限制模型是刻意鬆散到足以允許主機放棄無法停止的指令碼，只要從另一個執行緒 (由 CTRL+BREAK 或類似的處理常式起始) 呼叫 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)，或使用 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 複製新執行緒中的指令碼。  
+  所有單一執行緒的主機都會自動遵循這些規則。 上述限制模型是刻意鬆散到足以允許主機放棄無法停止的指令碼，只要從另一個執行緒 (由 CTRL+BREAK 或類似的處理常式起始) 呼叫 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)，或使用 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 複製新執行緒中的指令碼。  
   
 ## <a name="remarks"></a>備註  
  這些限制都不適用選擇實作無限制執行緒 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面和無限制執行緒物件模型的主機。 這類主機可以從任何執行緒使用 [IActiveScript](../winscript/reference/iactivescript.md) 介面，完全沒有限制。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼的介面](../winscript/windows-script-interfaces.md)

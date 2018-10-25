@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8efdd363089fb5068aa299bed2f229547b043f24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85dfa98aa6ea3afea067c9df431edd523f54a16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821509"
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

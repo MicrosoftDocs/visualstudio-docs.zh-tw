@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetSize |Microsoft 文件
+title: IDebugReference2::GetSize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa96ea3d7b8834e5c8e74acff18be95a4c57b361
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69924f0094753e87ac2f169a3348d59999e43ddc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911293"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-取得大小，以位元組為單位的參考的值。 保留供未來使用。  
+取得大小，以位元組為單位，值的參考。 保留供未來使用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,7 +41,7 @@ int GetSize (
   
 #### <a name="parameters"></a>參數  
  `pdwSize`  
- [out]傳回的大小，以位元組為單位的參考的值。  
+ [out]傳回大小，以位元組為單位，值的參考。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

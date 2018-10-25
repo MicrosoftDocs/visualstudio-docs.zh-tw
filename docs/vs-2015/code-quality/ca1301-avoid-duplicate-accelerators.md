@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0a7f821f11a86b0ce9bf12708df483a6ae071a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92c5baefff76626a42553d6ba5380fd07448b109
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886641"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免使用重複的快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|

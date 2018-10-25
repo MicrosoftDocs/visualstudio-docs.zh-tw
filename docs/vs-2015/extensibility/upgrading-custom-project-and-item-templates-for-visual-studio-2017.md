@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923442"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>適用於 Visual Studio"15"升級自訂專案與項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>安裝擴充功能的升級。MSI  
  有些以 MSI 為基礎的延伸模組會將範本部署到一般的範本位置，如下所示：  
   
--   **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**  
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**  
   
--   **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本 >**  
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本 >**  
   
- 如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含延伸模組安裝程式中。 您應該比較上述.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看您需要包含  
+  如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含延伸模組安裝程式中。 您應該比較上述.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看您需要包含  
   
- 您應該建立個別專案和項目範本資訊清單，它們應該指向根範本指定目錄上方。 您應該建立一份資訊清單，每個延伸模組和地區設定。  
+  您應該建立個別專案和項目範本資訊清單，它們應該指向根範本指定目錄上方。 您應該建立一份資訊清單，每個延伸模組和地區設定。  
   
 ## <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本  
  如果您遇到問題，部署您的專案或項目範本時，您可以啟用診斷記錄。  
   
-1.  執行下列命令，以設定登錄機碼來啟用記錄：  
+1. 執行下列命令，以設定登錄機碼來啟用記錄：  
   
-     **reg 新增 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **reg 新增 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。  
+2. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。  
   
- 記錄檔包含下列資料行：  
+   記錄檔包含下列資料行：  
   
 -   **FullPathToTemplate**，其中包含下列值：  
   

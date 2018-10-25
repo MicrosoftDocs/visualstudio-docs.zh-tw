@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176706"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863630"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 
@@ -30,9 +30,9 @@ ms.locfileid: "39176706"
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支援雙向語言的應用程式類型
 
--  Windows 應用程式： 您可以建立完整的雙向應用程式，以支援雙向文字、由右至左讀取順序及鏡像功能 (將視窗、功能表、對話方塊等配置反轉)。 除了鏡像功能以外，這些功能皆為預設提供或以屬性設定形式提供。 某些功能 (例如訊息方塊) 本身就支援鏡像， 但若為其他情況，則必須在程式碼中實作鏡像。 如需詳細資訊，請參閱 [Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。
+-  Windows 應用程式： 您可以建立完整的雙向應用程式，以支援雙向文字、由右至左讀取順序及鏡像功能 (將視窗、功能表、對話方塊等配置反轉)。 除了鏡像功能以外，這些功能皆為預設提供或以屬性設定形式提供。 某些功能 (例如訊息方塊) 本身就支援鏡像， 但若為其他情況，則必須在程式碼中實作鏡像。 如需詳細資訊，請參閱 [Windows Forms 應用程式的雙向支援](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)。
 
--  Web 應用程式： Web 服務可支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式的使用者介面需仰賴瀏覽器，因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度息息相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
+-  Web 應用程式： Web 服務可支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式的使用者介面需仰賴瀏覽器，因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度息息相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET Web 應用程式的雙向支援](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
 
 -  主控台應用程式 主控台應用程式不支援雙向語言的文字。 這是搭配使用 Windows 與主控台應用程式產生的後果。
 
@@ -41,7 +41,7 @@ ms.locfileid: "39176706"
 
 -   **文字輸入**：Visual Studio 可支援 Unicode，因此如果您的系統已設好適當的地區設定和輸入語言，即可使用阿拉伯文或希伯來文輸入文字。 (阿拉伯文支援包括 Kashida 和讀音符號)。
 
--   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他元素的名稱使用雙向語言。
+-   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他項目的名稱使用雙向語言。
 
 -   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[如何：使用編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "39176706"
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>使用阿拉伯文或希伯來文文字命名
  您可以使用阿拉伯文或希伯來文文字，將名稱指派給資料夾、變數或其他物件。 當使用阿拉伯文時，您可以使用任何阿拉伯文字元，包括 Kashida 和讀音符號。
 
- 下列元素可以使用阿拉伯文或希伯來文命名，並在 Visual Studio 中正確處理：
+ 下列項目可以使用阿拉伯文或希伯來文命名，並在 Visual Studio 中正確處理：
 
 -   方案、專案和檔案名稱，包括您在專案路徑中包含的任何資料夾。 [方案總管] 會正確顯示方案和項目名稱。
 
@@ -68,9 +68,9 @@ ms.locfileid: "39176706"
     > [!NOTE]
     >  程式碼編輯器是特殊案例。 如需詳細資訊，請參閱下方。
 
--   資料元素。 伺服器總管會正確顯示下列元素，以供您編輯。
+-   資料項目。 伺服器總管會正確顯示下列項目，以供您編輯。
 
--   複製到 Windows 剪貼簿的元素。
+-   複製到 Windows 剪貼簿的項目。
 
 -   屬性和中繼資料。
 
@@ -89,6 +89,6 @@ ms.locfileid: "39176706"
 ## <a name="see-also"></a>另請參閱
 
 - [Windows Forms 應用程式的雙向支援](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [ASP.NET Web 應用程式的雙向支援](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
 - [全球化應用程式](../ide/globalizing-applications.md)
 - [當地語系化應用程式](../ide/localizing-applications.md)

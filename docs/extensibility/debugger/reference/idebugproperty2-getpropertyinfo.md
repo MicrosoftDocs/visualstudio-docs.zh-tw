@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo |Microsoft 文件
+title: IDebugProperty2::GetPropertyInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f922731f5c595f7308f78269b8386b7da20e2398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f1f35e8699c04101936bcfa31abfdde751a236
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823095"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構描述的屬性。  
@@ -51,25 +51,25 @@ int GetPropertyInfo (
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]值組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位是填寫`pPropertyInfo`結構。  
+ [in]從值的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位是填寫`pPropertyInfo`結構。  
   
  `nRadix`  
- [in]基數來格式化數字的任何資訊。  
+ [in]要用於格式化數字的任何資訊的基數。  
   
  `dwTimeout`  
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期地等待。  
+ [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。  
   
  `rgpArgs`  
- [in、 out]保留供未來使用。設定為 null 的值。  
+ [in、 out]保留供未來使用;設定為 null 的值。  
   
  `dwArgCount`  
- [in]保留供未來使用。設定為零。  
+ [in]保留供未來使用;設定為零。  
   
  `pPropertyInfo`  
- [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)填入這些屬性描述的結構。  
+ [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會填入的屬性描述的結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

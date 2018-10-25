@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839332"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>逐步解說：顯示陳述式完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ ms.locfileid: "49280577"
   
 #### <a name="to-implement-the-completion-command-handler"></a>若要實作完成的命令處理常式  
   
-1.  新增名為類別`TestCompletionCommandHandler`實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. 新增名為類別`TestCompletionCommandHandler`實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  新增下一步 （要您傳遞的命令） 的命令處理常式、 文字 檢視、 命令處理常式提供者 （這可讓您存取各種服務），私用欄位和完成工作階段：  
+2. 新增下一步 （要您傳遞的命令） 的命令處理常式、 文字 檢視、 命令處理常式提供者 （這可讓您存取各種服務），私用欄位和完成工作階段：  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  新增設定文字檢視和提供者欄位中，並將命令加入至命令鏈結的建構函式：  
+3. 新增設定文字檢視和提供者欄位中，並將命令加入至命令鏈結的建構函式：  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，傳遞沿著命令：  
+4. 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，傳遞沿著命令：  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 當這個方法會接收按鍵動作時，它必須執行這些事項之一：  
+5. 實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 當這個方法會接收按鍵動作時，它必須執行這些事項之一：  
   
-    -   允許寫入緩衝區，並接著觸發程序或篩選完成的字元。 （列印字元這麼做。）  
+   - 允許寫入緩衝區，並接著觸發程序或篩選完成的字元。 （列印字元這麼做。）  
   
-    -   認可完成後，但不是允許寫入緩衝區的字元。 （空格、 索引標籤上，然後 enter 鍵時執行此動作會顯示完成的工作階段。）  
+   - 認可完成後，但不是允許寫入緩衝區的字元。 （空格、 索引標籤上，然後 enter 鍵時執行此動作會顯示完成的工作階段。）  
   
-    -   允許命令傳遞給下一個處理常式。 （所有其他命令。）  
+   - 允許命令傳遞給下一個處理常式。 （所有其他命令。）  
   
      因為這個方法可能會顯示 UI，所以呼叫<xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A>確保不會呼叫內容中的自動化：  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  此程式碼是觸發程序完成的工作階段的私用方法：  
+6. 此程式碼是觸發程序完成的工作階段的私用方法：  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  下一個範例會從取消訂閱的私用方法<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed>事件：  
+7. 下一個範例會從取消訂閱的私用方法<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed>事件：  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>建置和測試程式碼  
  若要測試此程式碼，建置 CompletionTest 方案，並在實驗執行個體中執行它。  

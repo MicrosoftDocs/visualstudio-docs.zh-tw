@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Item |Microsoft 文件'
+title: 'Idiaenumsourcefiles:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fda746edf51771e7927efd03094f42903141e6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 12fa454b0d91c0656e6f6792e0c77158f304af00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925544"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
 透過索引中擷取原始程式檔。  
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>參數  
  索引  
- [in]索引的[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)要擷取的物件。 索引是在 0 到`count`-1，其中`count`傳回[idiaenumsourcefiles:: Get_count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)方法。  
+ [in]索引[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)要擷取的物件。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumsourcefiles:: Get_count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)方法。  
   
  sourceFile  
- [out]傳回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，代表所需的來源檔案。  
+ [out]傳回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示所需的原始程式檔。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   

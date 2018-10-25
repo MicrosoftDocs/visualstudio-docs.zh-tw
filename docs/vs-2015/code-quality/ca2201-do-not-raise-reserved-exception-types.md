@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810589"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227060"
 ## <a name="rule-description"></a>規則描述
  下列的例外狀況型別則過於籠統，提供足夠的資訊給使用者：
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- 下列的例外狀況類型是保留的應該只能由 common language runtime 會擲回：
+  下列的例外狀況類型是保留的應該只能由 common language runtime 會擲回：
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **不會擲回一般例外狀況**
+  **不會擲回一般例外狀況**
 
- 如果您會擲回的一般例外狀況類型，例如<xref:System.Exception>或<xref:System.SystemException>中的程式庫或架構，它會強制消費者可以攔截所有例外狀況，包括他們不知道如何處理的未知例外狀況。
+  如果您會擲回的一般例外狀況類型，例如<xref:System.Exception>或<xref:System.SystemException>中的程式庫或架構，它會強制消費者可以攔截所有例外狀況，包括他們不知道如何處理的未知例外狀況。
 
- 相反地，擲回衍生程度較大的型別已存在於 framework，或建立您自己的類型衍生自<xref:System.Exception>。
+  相反地，擲回衍生程度較大的型別已存在於 framework，或建立您自己的類型衍生自<xref:System.Exception>。
 
- **擲回特定例外狀況**
+  **擲回特定例外狀況**
 
- 下表顯示參數和驗證的參數，包括實值參數之屬性的 set 存取子時所擲回的例外狀況：
+  下表顯示參數和驗證的參數，包括實值參數之屬性的 set 存取子時所擲回的例外狀況：
 
 |參數描述|例外|
 |---------------------------|---------------|

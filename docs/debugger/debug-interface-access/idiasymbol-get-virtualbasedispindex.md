@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbasedispindex |Microsoft 文件'
+title: 'Idiasymbol:: Get_virtualbasedispindex |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c877453f2ae3de97fbb085d79a3795aea369728
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7e1984bb9828e9e9dedef85fbd806583e1a8fea3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917826"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 擷取虛擬基底位移資料表中的符號索引。  
@@ -34,13 +34,13 @@ HRESULT get_virtualBaseDispIndex (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回虛擬基底位移資料表的索引。  
+ [out]傳回索引至虛擬基底位移資料表。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

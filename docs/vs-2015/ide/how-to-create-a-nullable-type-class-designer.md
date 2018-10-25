@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941941"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：建立可為 Null 的類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49179422"
   
  可為 Null 的型別是 <xref:System.Nullable%601> 結構的執行個體。 每個可為 Null 的型別，其執行個體皆有 `HasValue` 和 `Value` 這兩個公用唯讀屬性：  
   
--   `HasValue` 是 `bool` 類型，並指出變數是否包含定義的值。 `True` 表示變數包含非 null 值。 您可以使用 `if (x.HasValue)` 或 `if (y != null)` 這類陳述式來測試是否有定義的值。  
+- `HasValue` 是 `bool` 類型，並指出變數是否包含定義的值。 `True` 表示變數包含非 null 值。 您可以使用 `if (x.HasValue)` 或 `if (y != null)` 這類陳述式來測試是否有定義的值。  
   
--   `Value` 是與基礎類型相同的類型。 如果 `HasValue` 為 `True`，則 `Value` 包含有意義的值。 如果 `HasValue` 為 `False`，則存取 `Value` 時會擲回無效作業例外狀況。  
+- `Value` 是與基礎類型相同的類型。 如果 `HasValue` 為 `True`，則 `Value` 包含有意義的值。 如果 `HasValue` 為 `False`，則存取 `Value` 時會擲回無效作業例外狀況。  
   
- 當您將變數宣告為可為 Null 的型別時，該變數預設為除了基礎實值型別的預設值之外，不具有任何已定義的值 (`HasValue` 為 `False`)。  
+  當您將變數宣告為可為 Null 的型別時，該變數預設為除了基礎實值型別的預設值之外，不具有任何已定義的值 (`HasValue` 為 `False`)。  
   
- [類別設計工具] 針對可為 Null 型別的顯示方式，完全與顯示其基礎類型一樣。  
+  [類別設計工具] 針對可為 Null 型別的顯示方式，完全與顯示其基礎類型一樣。  
   
- 如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
+  如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>若要使用類別設計工具，新增可為 Null 的型別  
   

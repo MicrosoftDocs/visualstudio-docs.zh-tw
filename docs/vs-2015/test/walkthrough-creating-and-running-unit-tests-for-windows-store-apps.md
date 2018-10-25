@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852527"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：針對 Windows 市集應用程式建立和執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
   
  Visual Studio 提供下列單元測試功能：  
   
--   [建立單元測試專案](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [建立單元測試專案](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [編輯單元測試專案的資訊清單](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [編輯單元測試專案的資訊清單](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [撰寫單元測試的程式碼](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [撰寫單元測試的程式碼](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [執行單元測試](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [執行單元測試](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- 下列程序說明用來建立、執行和偵錯 Managed Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的單元測試之步驟。  
+  下列程序說明用來建立、執行和偵錯 Managed Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的單元測試之步驟。  
   
 ## <a name="prerequisites"></a>必要條件  
  Visual Studio  

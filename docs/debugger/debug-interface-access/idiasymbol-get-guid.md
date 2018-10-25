@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_guid |Microsoft 文件'
+title: 'Idiasymbol:: Get_guid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16fa27bf7938a0e7e6202daa4284cd3f2e6634b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e9498e8795daf5e1d566782461f2505bc8753135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884377"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 擷取符號的全域唯一識別碼 (GUID)。  
@@ -37,10 +37,10 @@ HRESULT get_guid (
  [out]傳回符號的 GUID。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   

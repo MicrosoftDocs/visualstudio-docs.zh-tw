@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE |Microsoft 文件
+title: REFERENCE_COMPARE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5b65ec3e0cc4a5b52aa909dea9f3dafa735050c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7765255583b7160c1cdd19b11889f5de1b35594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926653"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
-指定比較參考型的別。  
+指定參考的比較類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,16 +46,16 @@ public enum enum_REFERENCE_COMPARE {
   
 ## <a name="members"></a>成員  
  REF_COMPARE_EQUAL  
- 指定相等比較。  
+ 指定的等於比較。  
   
  REF_COMPARE_LESS_THAN  
- 指定小於-比較。  
+ 指定更少的比較。  
   
  REF_COMPARE_GREATER_THAN  
- 大於指定的比較。  
+ 指定大於-比較。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)方法。  
+ 作為引數[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

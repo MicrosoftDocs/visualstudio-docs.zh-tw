@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft 文件
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed07afde1db8aa99ce8edea093abd9bf25c069d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619c96a2e38302ff4f40a8376116a67c5664743c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834282"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 判斷名稱是否存在的自訂屬性。  
@@ -44,7 +44,7 @@ int IsCustomAttributeDefined(
  [in]字串，包含要尋找的自訂屬性的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回 S_OK 如果自訂屬性定義此欄位中，否則會傳回 S_FALSE。  
+ 會傳回 S_OK 如果自訂屬性定義此欄位中，否則會傳回 S_FALSE。  
   
 ## <a name="remarks"></a>備註  
  若要取得自訂屬性相關聯的屬性位元組，請呼叫[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。  

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f19d23ac4fed14e9c9f9c0a2f461719f522c44ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c553d16c8f1d98fc95e42bca4d00c063228ca1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865800"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

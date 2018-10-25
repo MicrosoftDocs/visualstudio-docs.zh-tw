@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_informational |Microsoft 文件'
+title: 'Idiasectioncontrib:: Get_informational |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8d991a5444c719696db62ab6f9c3374015ea7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4e077e0d2ac410601698d50c2c6ee0d8ede5cbe9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875151"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-擷取旗標，指出區段包含註解或類似的資訊。  
+擷取旗標，指出區段是否包含註解或類似的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_informational(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果區段包含註解或其他資訊; 否則會傳回`FALSE`。  
+ [out]會傳回`TRUE`如果區段包含註解或其他資訊中; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 通常.directive 區段包含資訊。  
+ 通常.directive 區段包含的資訊。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

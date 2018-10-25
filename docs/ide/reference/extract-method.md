@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4b5a818a75399fc4ce29fb7f2bec6332dac0585
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930592"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 
@@ -41,21 +41,21 @@ ms.locfileid: "31945788"
 
    - C#: 
 
-    ![醒目提示的程式碼 - C#](media/extractmethod-highlight-cs.png)
+       ![醒目提示的程式碼 - C#](media/extractmethod-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![醒目提示的程式碼 - Visual Basic](media/extractmethod-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 按 **CTRL+R**，再按 **CTRL+M**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
+      - 按 **CTRL+R**，再按 **CTRL+M**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
    - **滑鼠**
-     - 選取 [編輯] > [重構] > [擷取方法]。
-     - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]。
-     - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
+      - 選取 [編輯] > [重構] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
 
    系統將會立即建立方法。 從這裡，您現在即可輸入新名稱來為方法重新命名。
 
@@ -64,13 +64,13 @@ ms.locfileid: "31945788"
 
    - C#: 
 
-    ![重新命名方法 - C#](media/extractmethod-rename-cs.png)
+      ![重新命名方法 - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic：
 
-    ![重新命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
+      ![重新命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
 
-1. 當您對變更感到滿意時，請選擇 [套用] 按鈕或按 **ENTER**，便會認可變更。
+3. 當您對變更感到滿意時，請選擇 [套用] 按鈕或按 **ENTER**，便會認可變更。
 
 ## <a name="see-also"></a>另請參閱
 

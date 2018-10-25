@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916019"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 
@@ -41,15 +41,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>標準匯入
  下列命名空間會自動匯入，因此您不需要為它撰寫 import 指示詞：
 
--   `System`
+- `System`
 
- 此外，如果使用自訂指示詞，指示詞處理器可能會自動匯入一些組件。
+  此外，如果使用自訂指示詞，指示詞處理器可能會自動匯入一些組件。
 
- 例如，如果撰寫特定領域語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：
+  例如，如果撰寫特定領域語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   DSL 的命名空間
+- DSL 的命名空間
 
 ## <a name="see-also"></a>另請參閱
 

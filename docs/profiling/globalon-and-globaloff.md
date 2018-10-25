@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1731c47d3de9068affd4c7561e1dae94960b2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835913"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 *VSPerfCmd.exe* **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列分析工作階段中的所有處理序和執行緒進行分析。  
@@ -28,11 +28,11 @@ ms.locfileid: "35238000"
   
  **GlobalOff** 和 **GlobalOn** 選項也會影響由分析工具的 API 函式操作的全域開始/停止計數。  
   
--   **GlobalOff** 可立即將全域啟動/停止計數設定為 0，並因此會暫停分析。  
+- **GlobalOff** 可立即將全域啟動/停止計數設定為 0，並因此會暫停分析。  
   
--   **GlobalOn** 可立即將全域啟動/停止計數設定為 1，並因此會繼續分析。  
+- **GlobalOn** 可立即將全域啟動/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
+  如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

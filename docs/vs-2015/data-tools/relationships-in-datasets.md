@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935402"
 ---
 # <a name="relationships-in-datasets"></a>在資料集中的關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ ms.locfileid: "49275700"
   
  <xref:System.Data.DataRelation>物件會執行兩個函式：  
   
--   它可讓您正在使用的記錄相關的記錄。 如果您是在父記錄，它會提供子記錄 (<xref:System.Data.DataRow.GetChildRows%2A>) 和父記錄，如果您正在使用子記錄 (<xref:System.Data.DataRow.GetParentRow%2A>)。  
+- 它可讓您正在使用的記錄相關的記錄。 如果您是在父記錄，它會提供子記錄 (<xref:System.Data.DataRow.GetChildRows%2A>) 和父記錄，如果您正在使用子記錄 (<xref:System.Data.DataRow.GetParentRow%2A>)。  
   
--   它可以強制執行參考完整性，例如當您刪除父記錄，請刪除相關的子記錄的條件約束。  
+- 它可以強制執行參考完整性，例如當您刪除父記錄，請刪除相關的子記錄的條件約束。  
   
- 請務必了解真正的聯結與函式之間的差異<xref:System.Data.DataRelation>物件。 在真正的聯結，是取自父和子資料表的記錄，並將其放入單一的一般資料錄集中。 當您使用<xref:System.Data.DataRelation>物件時，會建立任何新資料錄集。 DataRelation 會追蹤資料表之間的關聯性而保留父和子記錄保持同步。  
+  請務必了解真正的聯結與函式之間的差異<xref:System.Data.DataRelation>物件。 在真正的聯結，是取自父和子資料表的記錄，並將其放入單一的一般資料錄集中。 當您使用<xref:System.Data.DataRelation>物件時，會建立任何新資料錄集。 DataRelation 會追蹤資料表之間的關聯性而保留父和子記錄保持同步。  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation 物件和條件約束  
  A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條件約束：  
   
--   Unique 條件約束，保證可直接存取資料表的資料行包含不重複的項目。  
+- Unique 條件約束，保證可直接存取資料表的資料行包含不重複的項目。  
   
--   Foreign key 條件約束，可用來維護參考資料集中的父和子資料表之間的完整性。  
+- Foreign key 條件約束，可用來維護參考資料集中的父和子資料表之間的完整性。  
   
- 您在中指定的條件約束<xref:System.Data.DataRelation>物件由自動建立適當的物件，或設定屬性。 如果您使用建立的外部索引鍵條件約束<xref:System.Data.DataRelation>物件、 執行個體的<xref:System.Data.ForeignKeyConstraint>類別會新增至<xref:System.Data.DataRelation>物件的<xref:System.Data.DataRelation.ChildKeyConstraint%2A>屬性。  
+  您在中指定的條件約束<xref:System.Data.DataRelation>物件由自動建立適當的物件，或設定屬性。 如果您使用建立的外部索引鍵條件約束<xref:System.Data.DataRelation>物件、 執行個體的<xref:System.Data.ForeignKeyConstraint>類別會新增至<xref:System.Data.DataRelation>物件的<xref:System.Data.DataRelation.ChildKeyConstraint%2A>屬性。  
   
- 會實作 unique 條件約束只設定<xref:System.Data.DataColumn.Unique%2A>屬性的資料行，以`true`，或加入的執行個體<xref:System.Data.UniqueConstraint>類別<xref:System.Data.DataRelation>物件的<xref:System.Data.DataRelation.ParentKeyConstraint%2A>屬性。 如需暫停資料集內的條件約束資訊，請參閱[填入 dataset 時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
+  會實作 unique 條件約束只設定<xref:System.Data.DataColumn.Unique%2A>屬性的資料行，以`true`，或加入的執行個體<xref:System.Data.UniqueConstraint>類別<xref:System.Data.DataRelation>物件的<xref:System.Data.DataRelation.ParentKeyConstraint%2A>屬性。 如需暫停資料集內的條件約束資訊，請參閱[填入 dataset 時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
   
 ### <a name="referential-integrity-rules"></a>參考完整性規則  
  外部索引鍵條件約束的一部份，您可以指定在三個點所套用的參考完整性規則：  
   
--   當更新父記錄  
+- 當更新父記錄  
   
--   當刪除父記錄  
+- 當刪除父記錄  
   
--   當接受或拒絕變更  
+- 當接受或拒絕變更  
   
- 中指定的規則，您可以進行<xref:System.Data.Rule>列舉型別和是下表所列。  
+  中指定的規則，您可以進行<xref:System.Data.Rule>列舉型別和是下表所列。  
   
 |外部索引鍵條件約束規則|動作|  
 |----------------------------------|------------|  

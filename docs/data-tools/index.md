@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948404"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "34691062"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 Visual Studio 及 .NET Framework 針對開發資料應用程式的工具和 API 支援</h3>
+                        <h3>了解 Visual Studio 與 .NET Framework 針對開發資料應用程式的工具與 API 支援</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ ms.locfileid: "34691062"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>深入了解設計、 部署和維護資料庫的 SQL Server Data Tools</h3>
+                        <h3>了解如何使用 SQL Server Data Tools 來設計、部署及維護資料庫</h3>
                     </div>
                 </div>
             </div>

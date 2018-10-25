@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864118"
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>物件代表資料表之間的父子式關聯性，以及從另一個傳回相關的記錄。 相關的資料表加入資料集，使用**資料來源組態精靈**，或有**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。
@@ -58,7 +58,7 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
 中指定的規則，您可以進行<xref:System.Data.Rule>列舉型別和是下表所列。
 
 |外部索引鍵條件約束規則|動作|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|父記錄所做的變更 （更新或刪除） 也會在子資料表中的相關記錄。|
 |<xref:System.Data.Rule.SetNull>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則時，可能導致子資料表中有無效的資料。|
 |<xref:System.Data.Rule.SetDefault>|相關的子記錄的外部索引鍵設為其預設值 (由資料行建立<xref:System.Data.DataColumn.DefaultValue%2A>屬性)。|

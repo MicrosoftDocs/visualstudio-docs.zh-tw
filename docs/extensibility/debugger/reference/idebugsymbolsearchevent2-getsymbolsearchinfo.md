@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo |Microsoft 文件
+title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 518429149ad1d997b860e486f3db4e519ef42cae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c38d1f834e9eb7deae62701a17c0d24ea21937c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915330"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-呼叫事件處理常式來擷取有關符號載入處理序的結果。  
+呼叫以擷取結果的符號載入處理序相關的事件處理常式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,7 +49,7 @@ int GetSymbolSearchInfo(
  [out]IDebugModule3 物件，表示已載入符號的模組。  
   
  `pbstrDebugMessage`  
- [in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有發生錯誤，這個字串將只包含模組的名稱，但不是能是空白。  
+ [in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有任何錯誤，此字串只會包含模組的名稱，但永遠不會是空白。  
   
 > [!NOTE]
 >  [C + +]`pbstrDebugMessage`不可`NULL`，而且必須與釋放`SysFreeString`。  
@@ -58,10 +58,10 @@ int GetSymbolSearchInfo(
  [out]從旗標的組合[MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)列舉，指出是否已載入任何符號。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 當處理常式會接收[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件之後嘗試載入模組的偵錯符號，處理常式會呼叫 thismethod 來判斷該負載結果。  
+ 當處理常式收到[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件之後嘗試載入模組的偵錯符號，處理常式可以呼叫 thismethod 來判斷該負載的結果。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

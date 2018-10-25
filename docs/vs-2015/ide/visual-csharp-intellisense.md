@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862199"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49303390"
 ## <a name="completion-lists"></a>完成清單  
  Visual C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字等的語彙基元。 它可以讓您快速存取：  
   
--   類型或命名空間的成員、  
+- 類型或命名空間的成員、  
   
--   變數、命令及函式名稱、  
+- 變數、命令及函式名稱、  
   
--   [程式碼片段](#CodeSnippets)、  
+- [程式碼片段](#CodeSnippets)、  
   
--   [語言關鍵字](#Keywords)、  
+- [語言關鍵字](#Keywords)、  
   
--   [擴充方法](#ExtensionMethods)  
+- [擴充方法](#ExtensionMethods)  
   
- C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
+  C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ###  <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
  Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
@@ -123,23 +123,23 @@ ms.locfileid: "49303390"
   
  若要顯示適當的選項，您可以使用下列其中一項程序：  
   
--   按一下未定義的識別碼。 最左邊的字元下會出現短底線。 將滑鼠指標停留在短底線，就會顯示智慧標籤 (圖示)。 按一下智慧標籤。  
+- 按一下未定義的識別碼。 最左邊的字元下會出現短底線。 將滑鼠指標停留在短底線，就會顯示智慧標籤 (圖示)。 按一下智慧標籤。  
   
--   按一下未定義的識別碼，然後再按 CTRL+. (句點)。  
+- 按一下未定義的識別碼，然後再按 CTRL+. (句點)。  
   
--   以滑鼠右鍵按一下未定義的識別碼，然後按一下 [產生]。  
+- 以滑鼠右鍵按一下未定義的識別碼，然後按一下 [產生]。  
   
- 顯示的選項包括：  
+  顯示的選項包括：  
   
--   **產生屬性虛設常式**  
+- **產生屬性虛設常式**  
   
--   **產生欄位虛設常式**  
+- **產生欄位虛設常式**  
   
--   **產生方法虛設常式**  
+- **產生方法虛設常式**  
   
--   **產生類別**  
+- **產生類別**  
   
--   **產生新的類型** (針對類別、結構、介面或列舉)  
+- **產生新的類型** (針對類別、結構、介面或列舉)  
   
 ## <a name="generate-event-handlers"></a>產生事件處理常式  
  在程式碼編輯器中，IntelliSense 可協助您將方法 (事件處理常式) 連結到事件欄位。  

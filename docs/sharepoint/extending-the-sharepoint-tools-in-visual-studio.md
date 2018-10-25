@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890669"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>擴充 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具符合許多應用程式開發案例的需求。 不過，您可能會發現情況下，它們並不提供您或其他開發人員需要的功能。 在這些情況下，您可以擴充 SharePoint 工具來建立您所需要的功能。
@@ -38,11 +38,11 @@ ms.locfileid: "42625920"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>擴充 SharePoint 連線節點，在 伺服器總管
  在 Visual Studio 中，您可以使用**SharePoint 連線**中的節點**伺服器總管**視窗來檢視在階層樹狀結構檢視中的許多元件的其中一個或多個本機 SharePoint 網站。 您也可以擴充**SharePoint 連線**節點，以下列方式：
 
--   藉由新增您自己的節點。 這非常有用，如果您想要顯示的預設未顯示的 SharePoint 網站的元件。
+- 藉由新增您自己的節點。 這非常有用，如果您想要顯示的預設未顯示的 SharePoint 網站的元件。
 
--   藉由擴充現有的節點。 例如，您可以將新的子節點加入現有的節點，或您可以將加入節點的捷徑功能表項目，並為開發人員按一下功能表項目時所執行的工作。
+- 藉由擴充現有的節點。 例如，您可以將新的子節點加入現有的節點，或您可以將加入節點的捷徑功能表項目，並為開發人員按一下功能表項目時所執行的工作。
 
- 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
 ## <a name="development-computer-requirements"></a>開發電腦的需求
  若要建立 SharePoint 工具擴充功能，您的開發電腦必須符合在 Visual Studio 中建立 SharePoint 方案的相同需求。

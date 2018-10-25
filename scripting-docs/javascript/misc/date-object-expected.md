@@ -1,5 +1,5 @@
 ---
-title: 必須是日期物件 |Microsoft 文件
+title: 必須是日期物件 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947637"
 ---
 # <a name="date-object-expected"></a>必須是日期物件
-您嘗試叫用**Date.prototype.toString**或**Date.prototype.valueOf**方法以外的類型的物件上`Date`。 這種類型的引動過程的物件必須屬於型別`Date`。 例如：  
+您嘗試叫用**Date.prototype.toString**或是**Date.prototype.valueOf**以外的類型的物件上的方法`Date`。 這種類型的引動過程的物件必須是型別`Date`。 例如:   
   
 ```JavaScript  
 var o = new Object;  
@@ -38,7 +38,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   只能叫用**Date.prototype.toString**或**Date.prototype.valueOf**類型的物件上的方法`Date`。  
+-   只能叫用**Date.prototype.toString**或是**Date.prototype.valueOf**類型的物件上的方法`Date`。  
   
 ## <a name="see-also"></a>另請參閱  
  [Date 物件](../../javascript/reference/date-object-javascript.md)   

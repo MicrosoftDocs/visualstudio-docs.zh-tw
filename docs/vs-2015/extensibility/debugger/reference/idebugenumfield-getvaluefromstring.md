@@ -17,12 +17,12 @@ ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c99c163eef122de65a15a43b5244ac2644f7618c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4019ed085a7af385548c72e1313957d235379e50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830024"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

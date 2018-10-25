@@ -15,12 +15,12 @@ ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd4874e338118a912ba4288cb0dd2c5489ed67b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b0b1e91e4dcf7429a9d803ede22cde8f71d431ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814360"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

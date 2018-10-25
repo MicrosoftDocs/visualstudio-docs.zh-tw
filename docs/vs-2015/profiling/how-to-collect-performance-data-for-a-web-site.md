@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840645"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "49185895"
   
  依據系統管理員提供的使用者存取權限設定，個別使用者不一定具有安全性權限可以在裝載 ASP.NET 處理序的電腦上建立分析工具工作階段。 下列範例説明各使用者之間可能存在的差異：  
   
--   當系統管理員設定了要啟動的驅動程式和服務時，某些使用者可以存取進階的程式碼剖析功能。  
+- 當系統管理員設定了要啟動的驅動程式和服務時，某些使用者可以存取進階的程式碼剖析功能。  
   
--   網域使用者只能存取取樣程式碼剖析。  
+- 網域使用者只能存取取樣程式碼剖析。  
   
--   某些使用者可以拒絕其他所有使用者存取程式碼剖析。  
+- 某些使用者可以拒絕其他所有使用者存取程式碼剖析。  
   
- 如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
+  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
   
 ### <a name="to-profile-a-web-site-project"></a>對網站專案進行程式碼剖析  
   
@@ -75,33 +75,33 @@ ms.locfileid: "49185895"
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>對網站進行程式碼剖析，但不在 Visual Studio 中開啟專案  
   
-1.  開啟 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]。  
+1. 開啟 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]。  
   
-2.  按一下 [分析]  功能表上的 [啟動效能精靈] 。  
+2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。  
   
-3.  在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。  
+3. 在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。  
   
-4.  在精靈的第二個頁面上，選取 [為 ASP.NET 或 JavaScript 應用程式進行程式碼剖析]  選項，然後按一下 [下一步] 。  
+4. 在精靈的第二個頁面上，選取 [為 ASP.NET 或 JavaScript 應用程式進行程式碼剖析]  選項，然後按一下 [下一步] 。  
   
-5.  在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式]  方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] 。  
+5. 在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式]  方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] 。  
   
-    -   針對以伺服器 (IIS) 為基礎的網站，請鍵入 URL，例如 **http://localhost/MySite/default.aspx** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。  
+   - 針對以伺服器 (IIS) 為基礎的網站，請鍵入 URL，例如 **http://localhost/MySite/default.aspx** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。  
   
-    -   針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。  
+   - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。  
   
-    -   針對您想要收集 JavaScript 資料的外部網站，請鍵入如 http://www.contoso.com 之類的 URL。  
+   - 針對您想要收集 JavaScript 資料的外部網站，請鍵入如 http://www.contoso.com 之類的 URL。  
   
      如需詳細資訊，請檢視 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 目標二進位檔的屬性頁。  
   
-6.  在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
+6. 在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
   
-    -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
+   -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
   
-    -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
+   -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
   
-7.  按 [ **下一步**]。  
+7. 按 [ **下一步**]。  
   
-8.  在精靈的第四個頁面上，按一下 [完成] 。  
+8. 在精靈的第四個頁面上，按一下 [完成] 。  
   
 9. 隨即為 ASP.NET 應用程式建立效能工作階段，並在瀏覽器中啟動網站。 執行您要進行程式碼剖析的功能，然後關閉瀏覽器。  
   

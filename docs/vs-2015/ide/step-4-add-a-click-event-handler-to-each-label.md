@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923377"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式加入至每個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 配對遊戲的運作方式如下：  
   
-1.  當玩家選擇其中一個含有隱藏圖示的方形時，則程式會將圖示色彩變更為黑色，以便對玩家顯示圖示。  
+1. 當玩家選擇其中一個含有隱藏圖示的方形時，則程式會將圖示色彩變更為黑色，以便對玩家顯示圖示。  
   
-2.  然後，玩家會選擇另一個隱藏的圖示。  
+2. 然後，玩家會選擇另一個隱藏的圖示。  
   
-3.  如果圖示相符，則會保持可見狀態。 如果不相符，則這兩個圖示會再次隱藏。  
+3. 如果圖示相符，則會保持可見狀態。 如果不相符，則這兩個圖示會再次隱藏。  
   
- 若要讓您的程式以該種方式運作，您可加入 Click 事件處理常式，以變更已選擇標籤的色彩。  
+   若要讓您的程式以該種方式運作，您可加入 Click 事件處理常式，以變更已選擇標籤的色彩。  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>若要將 Click 事件處理常式加入至每一個標籤  
   

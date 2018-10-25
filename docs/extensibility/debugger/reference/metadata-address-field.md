@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_FIELD |Microsoft 文件
+title: METADATA_ADDRESS_FIELD |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384966b842db1ed685f365b2bead228e5dadd23f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2896cff4133db49ca02aa3b0a08f227f389ab713
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834106"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 此結構表示類別或結構的欄位的位址。  
@@ -41,12 +41,12 @@ public struct METADATA_ADDRESS_FIELD {
   
 ## <a name="terms"></a>詞彙  
  tokField  
- 欄位語彙基元的識別碼。  
+ 欄位 token 的識別碼。  
   
- [C + +]`_mdToken`是`typedef`32 位元`int`。  
+ [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_FIELD`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_FIELD`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  

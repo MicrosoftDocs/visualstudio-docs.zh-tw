@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82741ef603cc82abbde442f2b86be0dc0d082251
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e8e9331cdd2496f358a5caa03562c633db9ff5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824473"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

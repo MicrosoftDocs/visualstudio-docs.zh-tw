@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS90 |Microsoft 文件
+title: BPREQI_FIELDS90 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef4363b210fff059a88f80bd7377d91971ef2bce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903162"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
-列舉有效的值，指定要擷取有關中斷點要求的資訊。 這個列舉型別擴充[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別。  
+列舉有效的值，指定要擷取有關中斷點要求的資訊。 這個列舉型別會擴充[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -78,46 +78,46 @@ public enum enum_BPREQI_FIELDS90
   
 #### <a name="parameters"></a>參數  
  BPREQI90_BPLOCATION  
- 初始化或使用`bpLocation`（中斷點位置） 欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 初始化，或使用`bpLocation`（中斷點位置） 欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或是[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
  BPREQI90_LANGUAGE  
- 初始化或使用`guidLanguage`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`guidLanguage`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_PROGRAM  
- 初始化或使用`pProgram`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`pProgram`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_PROGRAMNAME  
- 初始化或使用`bstrProgramName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bstrProgramName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_THREAD  
- 初始化或使用`pThread`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`pThread`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_THREADNAME  
- 初始化或使用`bstrThreadName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bstrThreadName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_PASSCOUNT  
- 初始化或使用`bpPassCount`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bpPassCount`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_CONDITION  
- 初始化或使用`bpCondition`（中斷點條件） 欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bpCondition`（中斷點條件） 欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_FLAGS  
- 初始化或使用`dwFlags`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`dwFlags`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_ALLOLDFIELDS  
- 初始化或使用的所有欄位的`BP_REQUEST_INFO`結構。  
+ 初始化，或使用的所有欄位的`BP_REQUEST_INFO`結構。  
   
  BPREQI90_VENDOR  
- 初始化或使用`guidVendor`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`guidVendor`欄位`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_CONSTRAINT  
- 初始化或使用`bstrConstraint`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bstrConstraint`欄位`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_TRACEPOINT  
- 初始化或使用`bstrTracepoint`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化，或使用`bstrTracepoint`欄位`BP_REQUEST_INFO2`結構。  
   
  BPREQI90_MACROTRACEPOINT  
- 初始化或使用`bstrMacroTracepoint`欄位`BP_REQUEST_INFO2`結構。 BPREQI_ALLFIELDS 不包含此欄位。  
+ 初始化，或使用`bstrMacroTracepoint`欄位`BP_REQUEST_INFO2`結構。 BPREQI_ALLFIELDS 不包含此欄位。  
   
  BPREQI90_ALLFIELDS  
  指定的所有欄位`BP_REQUEST_INFO2`結構。  

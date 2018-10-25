@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25c68fd9b64b2c88db16e55d20d79411f6bb6bec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3cffbcd9386385c98065c13e14b87479903fcbc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863304"
 ---
 # <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

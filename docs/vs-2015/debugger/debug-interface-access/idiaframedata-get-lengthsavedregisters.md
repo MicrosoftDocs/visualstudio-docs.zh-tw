@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b878966c535f1f4bd5f0281b59c265773ba2ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 55ffc50a83160a266fbfe0953f482b60a50d6031
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897650"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

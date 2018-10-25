@@ -16,12 +16,12 @@ ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93cbef5c1706fcbe84e1230683828a974bba1c00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8c3f1d128ed596d0a72f75d2ea1e348338c84640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881803"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

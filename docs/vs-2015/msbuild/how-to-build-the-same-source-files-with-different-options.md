@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830999"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "49243915"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令列中指定多個專案屬性  
   
--   多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
+- 多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - 或-  
+   - 或-  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- 環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
- 命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
+  命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
   
- 您可以在專案標記中使用 `TreatAsLocalProperty` 屬性，來變更此行為。 如果是使用該屬性列出的屬性名稱，命令列上指定的屬性值不會優先於專案檔中的值。 您可以在本主題稍後找到相關範例。  
+  您可以在專案標記中使用 `TreatAsLocalProperty` 屬性，來變更此行為。 如果是使用該屬性列出的屬性名稱，命令列上指定的屬性值不會優先於專案檔中的值。 您可以在本主題稍後找到相關範例。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例 "Hello World" 專案包含兩個新的屬性群組，其可用於建立偵錯組建及發行組建。  

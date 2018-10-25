@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936034"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK) 可讓您建立的控制項，會自動新增至**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。  
@@ -61,7 +61,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
     |`Button1`|**Text**|重設|  
   
 ### <a name="code-the-user-control"></a>使用者控制項的程式碼  
- `Counter`控制項會公開遞增計數器，此計數器會遞增，每當引發事件的方法**重設**按鈕，然後將目前的計數、 顯示文字，以及是否要顯示的三個屬性或隱藏**重設** 按鈕。 `ProvideToolboxControl`屬性會決定在何處**工具箱**`Counter`控制項就會出現。  
+ `Counter`控制項會公開遞增計數器，此計數器會遞增，每當引發事件的方法**重設**按鈕，然後將目前的計數、 顯示文字，以及是否要顯示的三個屬性或隱藏**重設** 按鈕。 `ProvideToolboxControl` 屬性會決定 [工具箱]  顯示 `Counter` 控制項的位置。  
   
 #### <a name="to-code-the-user-control"></a>使用者控制項的程式碼  
   
@@ -139,7 +139,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```  
   
-8.  類別定義正上方中`ProvideToolboxControl`屬性宣告中，從第一個參數的值變更`"MyWinFormsControl.Counter"`至`"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
+8.  在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
   
      下列範例會顯示 `ProvideToolboxControl` 屬性和調整過的類別定義。  
   
@@ -209,7 +209,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
      此計數器會重設為**0**。  
   
 ## <a name="next-steps"></a>後續步驟  
- 當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*中 * \bin\debug\*您專案的資料夾。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。  
+ 當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*中<em>\bin\debug\*您專案的資料夾。您可以將控制項部署上傳 *.vsix</em>檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider::GetPropertyProxy |Microsoft 文件
+title: IPropertyProxyProvider::GetPropertyProxy |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d789c1020c9e4cdcaf8e472fbf2c3e481ac211b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83a4f1e68ff58e61feb1d185626c4d55c16f6589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836485"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-擷取屬性 proxy 介面的指定之 proxy 識別碼  
+擷取的屬性 proxy 介面做為指定之 proxy 識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,10 +49,10 @@ int GetPropertyProxy(
  [out]傳回[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 若要支援外部類型視覺化檢視，這個方法通常會將轉送呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)方法。 請參閱[Visualizing 和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需如何取得 IEEVisualizerService 詳細資料。  
+ 若要支援外部類型視覺化檢視，這個方法通常將呼叫轉送到[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)方法。 請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需有關如何取得 IEEVisualizerService。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   

@@ -24,12 +24,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a41b7c66ff364febffb88c8d9a326b8cecdf6fd7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 11eeaa2c6742675372acf8b96280737f556c7799
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914134"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49199598"
   
 ## <a name="kinds-of-resources-in-the-hierarchy"></a>階層中的資源類型  
   
--   階層頂端是您預設文化特性的後援資源，例如英文 ("en")。 這是唯一不具有本身專屬檔案的資源；它們會儲存於主要組件中。  
+- 階層頂端是您預設文化特性的後援資源，例如英文 ("en")。 這是唯一不具有本身專屬檔案的資源；它們會儲存於主要組件中。  
   
--   在後援資源之下是任何中性文化特性的資源。 中性文化特性與語言相關聯，而不是與國家/地區關聯。 例如，法文 ("fr") 是中性文化特性。 (請注意，後援資源同樣也是中性文化特性，但它是特殊的)。  
+- 在後援資源之下是任何中性文化特性的資源。 中性文化特性與語言相關聯，而不是與國家/地區關聯。 例如，法文 ("fr") 是中性文化特性。 (請注意，後援資源同樣也是中性文化特性，但它是特殊的)。  
   
--   在中性文化特性資源之下是任何特定文化特性的資源。 特定文化特性與語言及國家/地區相關聯。 例如，加拿大法文 ("fr-CA") 是特定文化特性。  
+- 在中性文化特性資源之下是任何特定文化特性的資源。 特定文化特性與語言及國家/地區相關聯。 例如，加拿大法文 ("fr-CA") 是特定文化特性。  
   
- 如果應用程式嘗試載入任一當地語系化資源 (例如字串)，但找不到資源，則它會在階層架構中尋找，直到找到包含所要求資源的資源檔。  
+  如果應用程式嘗試載入任一當地語系化資源 (例如字串)，但找不到資源，則它會在階層架構中尋找，直到找到包含所要求資源的資源檔。  
   
- 儲存您資源的最佳方式是盡可能地將它們一般化。 也就是盡可能將當地語系化字串、影像等等儲存在中性文化特性的資源檔中，而不是特定文化特性。 舉例來說，如果您有適用於比利時法文 ("fr-BE") 文化特性的資源，而在該資源之上即為使用英文的後援資源，則當某些人在設定為加拿大法文文化特性的系統上使用您的應用程式時，可能會造成問題。 系統將會尋找 "fr-CA" 的附屬組件，但找不到，並且會載入包含後援資源的主要組件 (也就是英文) 而不是載入法文資源。 下圖顯示此不適當的案例。  
+  儲存您資源的最佳方式是盡可能地將它們一般化。 也就是盡可能將當地語系化字串、影像等等儲存在中性文化特性的資源檔中，而不是特定文化特性。 舉例來說，如果您有適用於比利時法文 ("fr-BE") 文化特性的資源，而在該資源之上即為使用英文的後援資源，則當某些人在設定為加拿大法文文化特性的系統上使用您的應用程式時，可能會造成問題。 系統將會尋找 "fr-CA" 的附屬組件，但找不到，並且會載入包含後援資源的主要組件 (也就是英文) 而不是載入法文資源。 下圖顯示此不適當的案例。  
   
- ![只限特定資源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+  ![只限特定資源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
- 如果您遵循建議的做法，盡可能地為 "fr" 文化特性的中性資源檔放入許多資源，則加拿大法文的使用者就不會看到標示為 "fr-BE" 文化特性的資源，但他或她會看到字串以法文顯示。 下列情況顯示此建議的案例。  
+  如果您遵循建議的做法，盡可能地為 "fr" 文化特性的中性資源檔放入許多資源，則加拿大法文的使用者就不會看到標示為 "fr-BE" 文化特性的資源，但他或她會看到字串以法文顯示。 下列情況顯示此建議的案例。  
   
- ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+  ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>另請參閱  
  [當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)   

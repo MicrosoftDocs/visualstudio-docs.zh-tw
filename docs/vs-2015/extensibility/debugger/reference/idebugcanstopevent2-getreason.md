@@ -17,12 +17,12 @@ ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c94a54f93cd9e7eb62e2b7cd1ff8aa8f17cd3cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b67c619e81eea903ddc7ceca8781517ab5641e55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842556"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

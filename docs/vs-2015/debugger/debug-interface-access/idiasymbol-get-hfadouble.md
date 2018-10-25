@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb210d668cebd68b340bce00a96d07c714430ee8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8594a2ba63d32e07895d518594ee09bf6992c66d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813553"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

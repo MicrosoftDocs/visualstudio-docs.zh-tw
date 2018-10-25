@@ -21,15 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7fd1cc9786c82a7abb5c8cca589317bae56c4b00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d5b5039c08e27dd97c0119948c87d7295756d7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811973"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
@@ -90,7 +91,6 @@ public class Person
     {
     }
 }
-
 ```
 
 ## <a name="example"></a>範例
@@ -123,7 +123,6 @@ public class Person
         return person;
     }
 }
-
 ```
 
 

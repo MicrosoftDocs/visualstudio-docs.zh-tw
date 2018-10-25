@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873965"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
@@ -61,17 +61,17 @@ ms.locfileid: "35671379"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>實作擴充性介面的範例  
  下列程式碼範例示範 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 介面的簡單實作，以建立自訂工作窗格。 這個範例會定義兩個類別：  
   
--   `TaskPaneHelper` 類別實作 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> ，以建立及顯示自訂工作窗格。  
+- `TaskPaneHelper` 類別實作 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> ，以建立及顯示自訂工作窗格。  
   
--   `TaskPaneUI` 類別提供工作窗格的 UI。 `TaskPaneUI` 類別的屬性讓 COM 可以看見該類別，進而讓 Microsoft Office 應用程式可以探索該類別。 在這個範例中，UI 是空的 <xref:System.Windows.Forms.UserControl>，但是您可以透過修改程式碼來加入控制項。  
+- `TaskPaneUI` 類別提供工作窗格的 UI。 `TaskPaneUI` 類別的屬性讓 COM 可以看見該類別，進而讓 Microsoft Office 應用程式可以探索該類別。 在這個範例中，UI 是空的 <xref:System.Windows.Forms.UserControl>，但是您可以透過修改程式碼來加入控制項。  
   
-    > [!NOTE]  
-    >  若要將 `TaskPaneUI` 類別公開至 COM，您也必須設定專案的 [註冊 COM Interop]  屬性。  
+  > [!NOTE]  
+  >  若要將 `TaskPaneUI` 類別公開至 COM，您也必須設定專案的 [註冊 COM Interop]  屬性。  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- 如需實作的詳細資訊<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，請參閱 < [2007 Office system 中建立自訂工作窗格](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be)Microsoft Office 文件中。  
+  如需實作的詳細資訊<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，請參閱 < [2007 Office system 中建立自訂工作窗格](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be)Microsoft Office 文件中。  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>覆寫 RequestService 方法的範例  
  下列程式碼範例示範如何覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法，以從先前的程式碼範例傳回 `TaskPaneHelper` 類別的執行個體。 它會檢查 *serviceGuid* 參數的值以判斷所要求的介面，然後傳回實作該介面的物件。  

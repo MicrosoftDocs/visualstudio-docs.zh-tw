@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883955"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ ms.locfileid: "49257903"
   
  第五個的主要內容區域是 IDE 的 UI 狀態。 UI 內容均由作用中的命令內容`GUID`s，如下所示：  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- 這些 Guid 會標示為作用中或非使用中，根據 IDE 的目前狀態。 多個 UI 內容可同時處於作用中。  
+  這些 Guid 會標示為作用中或非使用中，根據 IDE 的目前狀態。 多個 UI 內容可同時處於作用中。  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>隱藏和顯示內容為基礎的命令  
  您可以顯示或隱藏在 IDE 中的 [套件] 命令，而不載入封裝本身。 若要這樣做，請定義命令封裝.vsct 檔案中使用`DefaultDisabled`， `DefaultInvisible`，並`DynamicVisibility`命令旗標並新增一或多個[VisibilityItem](../../extensibility/visibilityitem-element.md)項目[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)一節。 當指定的命令內容`GUID`會變成作用中，此命令會顯示不含載入封裝。  
@@ -113,13 +113,13 @@ ms.locfileid: "49257903"
   
  命令是設定為啟用，而且顯示時的解決方案存在;也就是說，只要其中一個下列的命令內容的 Guid 是作用中：  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- 在範例中，請注意，每個命令旗標是個別[命令旗標](../../extensibility/command-flag-element.md)項目。  
+  在範例中，請注意，每個命令旗標是個別[命令旗標](../../extensibility/command-flag-element.md)項目。  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

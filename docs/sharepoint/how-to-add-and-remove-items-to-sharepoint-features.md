@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854828"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何： 新增和移除 SharePoint 功能的項目
   當您建立 SharePoint 方案時，Visual Studio 會將您的功能預設 SharePoint 專案項目。 再進行部署，您可以新增和移除 SharePoint 專案項目，來修改 SharePoint 功能。  
@@ -33,17 +33,17 @@ ms.locfileid: "36756242"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>若要加入 SharePoint 專案項目與功能設計工具  
   
-1.  開啟功能設計工具。  
+1. 開啟功能設計工具。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
+    如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
   
-2.  新增一或多個項目，從**方案中的項目**清單來**功能中的項目**清單執行一或多個下列步驟：  
+2. 新增一或多個項目，從**方案中的項目**清單來**功能中的項目**清單執行一或多個下列步驟：  
   
-    -   按兩下您要加入的每個項目。  
+   - 按兩下您要加入的每個項目。  
   
-    -   選擇您想要新增，然後選擇的項目**新增**按鈕 (>)。  
+   - 選擇您想要新增，然後選擇的項目**新增**按鈕 (>)。  
   
-    -   選擇**全部新增**按鈕 (>>)。  
+   - 選擇**全部新增**按鈕 (>>)。  
   
      SharePoint 專案項目會出現在**功能中的項目**清單。  
   

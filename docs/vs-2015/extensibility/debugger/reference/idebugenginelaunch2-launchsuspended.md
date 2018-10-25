@@ -17,12 +17,12 @@ ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 941b398b8b93bf20abc307f45f1a23bbcb16275b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbbebe758a73a4480a798e988535c907a33bae13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922638"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

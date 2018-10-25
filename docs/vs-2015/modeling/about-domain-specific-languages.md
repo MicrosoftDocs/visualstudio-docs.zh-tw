@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894517"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "49175262"
   
  您的業務和您的專案也會處理特殊組可以與 DSL 中所述的概念。 例如，您可以定義 DSL 的其中一個應用程式：  
   
--   在網站上的導覽路徑的計劃。  
+- 在網站上的導覽路徑的計劃。  
   
--   電子元件配線圖表。  
+- 電子元件配線圖表。  
   
--   傳送帶互連和行李處理設備，如機場的網路。  
+- 傳送帶互連和行李處理設備，如機場的網路。  
   
- 當您設計 DSL 時，您會定義*網域類別*針對每個網域，例如網頁、 lamp、 或機場登機報到櫃檯的重要概念。 您定義*網域關聯性*例如超連結、 網路或一條輸送帶將連結在一起的概念。  
+  當您設計 DSL 時，您會定義*網域類別*針對每個網域，例如網頁、 lamp、 或機場登機報到櫃檯的重要概念。 您定義*網域關聯性*例如超連結、 網路或一條輸送帶將連結在一起的概念。  
   
- 您的 DSL 的使用者可以建立*模型。* 模型都*執行個體*的 DSL。 比方說，它們會描述特定的網站或特定的裝置或處理系統中特定的機場行李的連接。  
+  您的 DSL 的使用者可以建立*模型。* 模型都*執行個體*的 DSL。 比方說，它們會描述特定的網站或特定的裝置或處理系統中特定的機場行李的連接。  
   
- 您的使用者可以檢視模型，為圖表或 Windows 表單。 模型也可以檢視為 XML，這是儲存的方式。 當您定義 DSL 時，您會定義每個網域類別和關聯性的執行個體出現在使用者畫面上的方式。 典型的 DSL 會顯示為圖示或箭號連接的矩形的集合。  
+  您的使用者可以檢視模型，為圖表或 Windows 表單。 模型也可以檢視為 XML，這是儲存的方式。 當您定義 DSL 時，您會定義每個網域類別和關聯性的執行個體出現在使用者畫面上的方式。 典型的 DSL 會顯示為圖示或箭號連接的矩形的集合。  
   
- 下圖顯示在圖表的 DSL 中的小型模型：  
+  下圖顯示在圖表的 DSL 中的小型模型：  
   
- ![都鐸王朝家譜模型](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![都鐸王朝家譜模型](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>您可以執行與 Dsl  
  DSL 的一般應用程式會產生程式碼或其他成品。 當您定義您的 DSL 時，您可以定義*文字範本*其讀取 DSL 的模型，並產生文字檔案。  

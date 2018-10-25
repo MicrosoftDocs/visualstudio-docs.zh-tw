@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ac14461338f528ba1a859fbbb3913b1f96c8a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b566d40e34b38eb5f1d2a10afc1df50e4f5199cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896311"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

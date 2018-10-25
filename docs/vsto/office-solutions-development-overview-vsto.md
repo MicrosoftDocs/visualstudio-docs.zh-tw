@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842660"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發概觀 (VSTO)
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。  
@@ -31,13 +31,13 @@ ms.locfileid: "35671138"
 ## <a name="choose-an-office-project-type"></a>選擇 Office project 類型  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供下列類型的專案範本，用於以 VSTO 為基礎的 Office 程式開發：  
   
--   **文件層級自訂** 與特定文件相關聯。  
+- **文件層級自訂** 與特定文件相關聯。  
   
--   **VSTO Add-ins** 與應用程式本身相關聯。  
+- **VSTO Add-ins** 與應用程式本身相關聯。  
   
- 若要決定哪些專案類型最適合您的方案，請考慮您是否只有在特定文件已開啟時才執行程式碼，或是否想要該程式碼在每次應用程式正執行時可供使用。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
+  若要決定哪些專案類型最適合您的方案，請考慮您是否只有在特定文件已開啟時才執行程式碼，或是否想要該程式碼在每次應用程式正執行時可供使用。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
- 您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ### <a name="document-level-customizations"></a>文件層級自訂  
  文件層級自訂是由與 Microsoft Office Word 或 Microsoft Office Excel 中的單一文件、活頁簿或範本關聯的組件所組成。 組件會在相關聯的文件開啟時載入。 只有在相關聯的文件開啟時，您才能使用自己建立之自訂中的功能。 自訂不能進行應用程式層範圍的變更，例如在任何文件開啟時顯示新的選單項目或功能區索引標籤。  
@@ -91,7 +91,7 @@ ms.locfileid: "35671138"
 ## <a name="see-also"></a>另請參閱  
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [開始使用 word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  

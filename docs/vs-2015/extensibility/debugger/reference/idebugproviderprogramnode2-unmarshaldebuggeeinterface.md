@@ -17,12 +17,12 @@ ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fb7b25492d1e401d288c80cb30811f1c3004007
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d90a0406d5325ee11ec5c6230110128abc14de5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893360"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919165"
 ---
 # <a name="filter-report-views"></a>篩選報告檢視
 您可以在分析資料檔案上套用篩選，限制效能報告檢視中顯示的分析資料，並匯出報表檔案。 您可以將報告限制為介於時間戳記值之間的資料，也可以將資料限制為特定處理序和執行緒。 您可以將篩選儲存到檔案，然後匯入儲存的篩選，在不同的分析資料檔案中建立篩選。  
@@ -46,19 +46,19 @@ ms.locfileid: "34262619"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>從標記報表檢視建立分析工具報表篩選  
   
-1.  從效能報表檢視工具列上的 [目前檢視] 清單中選取 [標記]。  
+1. 從效能報表檢視工具列上的 [目前檢視] 清單中選取 [標記]。  
   
-     即顯示標記分析工具報表。  
+    即顯示標記分析工具報表。  
   
-2.  選取要做為報告起點的 ETW 或取樣事件。  
+2. 選取要做為報告起點的 ETW 或取樣事件。  
   
-3.  按住 CTRL，然後按一下要做為報告結束點使用的事件。  
+3. 按住 CTRL，然後按一下要做為報告結束點使用的事件。  
   
-4.  以滑鼠右鍵按一下，再按一下下列選項之一：  
+4. 以滑鼠右鍵按一下，再按一下下列選項之一：  
   
-    -   [在標記上加入篩選條件] 會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在標記上加入篩選條件] 會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
   
-    -   [在時間戳記上加入篩選條件] 會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在時間戳記上加入篩選條件] 會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
   
      這兩個選項會在相同的起點和終點篩選目前的資料檔案。 如果匯出篩選用於其他報表，任一選項都可能更好。  
   

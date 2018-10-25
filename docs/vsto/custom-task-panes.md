@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889759"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。  
@@ -55,11 +55,11 @@ ms.locfileid: "42635553"
 ## <a name="create-a-custom-task-pane"></a>建立自訂工作窗格  
  您可以利用下列兩個步驟建立基本的自訂工作窗格：  
   
-1.  將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl> 物件，以建立自訂工作窗格的使用者介面。  
+1. 將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl> 物件，以建立自訂工作窗格的使用者介面。  
   
-2.  將使用者控制項傳遞給 VSTO 增益集中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 物件，將自訂工作窗格具現化。 這個集合會傳回可以用來修改工作窗格外觀以及回應使用者事件的新 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。  
+2. 將使用者控制項傳遞給 VSTO 增益集中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 物件，將自訂工作窗格具現化。 這個集合會傳回可以用來修改工作窗格外觀以及回應使用者事件的新 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+   如需詳細資訊，請參閱 <<c0> [ 如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
 ### <a name="create-the-user-interface"></a>建立使用者介面  
  所有以 Visual Studio 中的 Office 開發工具建立的自訂工作窗格都會包含 <xref:System.Windows.Forms.UserControl> 物件。 這個使用者控制項提供了自訂工作窗格的使用者介面。 在設計階段或執行階段，您可以建立使用者控制項。 如果您在設計階段建立此使用者控制項，即可使用 [Windows Form 設計工具] 建構工作窗格的使用者介面。  
@@ -77,11 +77,11 @@ ms.locfileid: "42635553"
   
  若要判斷顯示自訂工作窗格的視窗，則當您建立工作窗格時，請使用適當的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法多載：  
   
--   若要使工作窗格與現用視窗產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+- 若要使工作窗格與現用視窗產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
   
--   若要使工作窗格與指定之視窗所裝載的文件產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+- 若要使工作窗格與指定之視窗所裝載的文件產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
   
- 當有多個視窗開啟時，有些 Office 應用程式對於何時建立或顯示工作窗格需要獲得明確的指示。 因此務必仔細思考自訂工作窗格在程式碼中具現化的位置，才能確保工作窗格會在應用程式中顯示適當的文件或項目。 如需詳細資訊，請參閱 <<c0> [ 管理的應用程式視窗中的自訂工作窗格](#Managing)。  
+  當有多個視窗開啟時，有些 Office 應用程式對於何時建立或顯示工作窗格需要獲得明確的指示。 因此務必仔細思考自訂工作窗格在程式碼中具現化的位置，才能確保工作窗格會在應用程式中顯示適當的文件或項目。 如需詳細資訊，請參閱 <<c0> [ 管理的應用程式視窗中的自訂工作窗格](#Managing)。  
   
 ## <a name="access-the-application-from-the-task-pane"></a>從 [工作] 窗格存取應用程式  
  如果您要從使用者控制項自動化應用程式，可以使用程式碼中的 `Globals.ThisAddIn.Application` 直接存取物件模型。 靜態 `Globals` 類別會提供對 `ThisAddIn` 物件的存取。 這個物件的 `Application` 欄位為應用程式之物件模型的進入點。  
@@ -136,11 +136,11 @@ ms.locfileid: "42635553"
   
  下列應用程式群組具有不同的開發需求：  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)  
+- [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 管理 Word VSTO 增益集的工作窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 管理 Word VSTO 增益集的工作窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
   
 ##  <a name="Outlook"></a> Outlook  
  當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 總管視窗，顯示資料夾的內容，而偵測器顯示的項目，例如電子郵件訊息或工作的 windows。  
@@ -149,23 +149,23 @@ ms.locfileid: "42635553"
   
  若要將工作窗格與特定檔案總管或偵測器產生關聯，請使用<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>方法來建立工作 窗格中，並傳遞<xref:Microsoft.Office.Interop.Outlook.Explorer>或<xref:Microsoft.Office.Interop.Outlook.Inspector>物件*視窗*參數。 如需建立自訂工作窗格的詳細資訊，請參閱[自訂工作窗格概觀](../vsto/custom-task-panes.md)。  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- 若要監視 [檢查] 視窗的狀態，可以處理下列與 [檢查] 相關的事件：  
+  若要監視 [檢查] 視窗的狀態，可以處理下列與 [檢查] 相關的事件：  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>避免在 Outlook 中的自訂工作窗格的多個執行個體  
  若要避免 Outlook 視窗顯示自訂工作窗格的多個執行個體，請在關閉每個視窗時，從 `ThisAddIn` 類別的 `CustomTaskPanes` 集合中明確移除自訂工作窗格。 請在視窗關閉時所引發的事件 (例如 <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 或 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>) 中呼叫 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 方法。  

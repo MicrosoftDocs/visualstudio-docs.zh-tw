@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914498"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具概觀
   您可以使用 [BDC 設計工具中，設計商務資料連接 (BDC) 模型**BDC 方法詳細資料**] 視窗中，而**BDC 總管**。  
@@ -43,13 +43,13 @@ ms.locfileid: "36326214"
 ## <a name="bdc-designer"></a>BDC 設計工具
  BDC 設計工具可讓您在模型中定義的實體，並以視覺化方式彼此排列其關聯性。 您可以使用 BDC 設計工具來完成下列工作：  
   
--   將實體新增至模型。  
+- 將實體新增至模型。  
   
--   從模型移除實體。  
+- 從模型移除實體。  
   
--   定義實體之間的關聯性。  
+- 定義實體之間的關聯性。  
   
- 若要開啟 BDC 設計工具，按兩下您的專案中的模型檔案，或開啟模型檔案的捷徑功能表，然後選擇**開啟**。 將實體加入至模型中，拖曳或複製**實體**從**工具箱**拖曳至設計工具。 若要建立兩個實體之間的關聯，請選擇**關聯**控制中**工具箱**，選擇第一個實體，然後選擇 第二個實體。  
+  若要開啟 BDC 設計工具，按兩下您的專案中的模型檔案，或開啟模型檔案的捷徑功能表，然後選擇**開啟**。 將實體加入至模型中，拖曳或複製**實體**從**工具箱**拖曳至設計工具。 若要建立兩個實體之間的關聯，請選擇**關聯**控制中**工具箱**，選擇第一個實體，然後選擇 第二個實體。  
   
 ## <a name="bdc-method-details-window"></a>BDC 方法詳細資料視窗
  使用**BDC 方法詳細資料**視窗，即可定義的參數，執行個體，並篩選描述元的方法。  

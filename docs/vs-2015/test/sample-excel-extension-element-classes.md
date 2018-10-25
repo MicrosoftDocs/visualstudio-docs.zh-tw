@@ -13,12 +13,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811942"
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "49179292"
 ## <a name="utilities-and-excelutilities-classes"></a>Utilities 和 ExcelUtilities 類別  
  內部 `ExcelUtilities` 類別提供一些常數值 (例如技術名稱)，以及判斷提供的視窗控制代碼是否代表 Excel 工作表的方法。  
   
- `Utilities` 類別有 Helper 方法，會傳回 UI 的各種資訊。 有些方法會透過直接呼叫外部系統 DLL (例如 **USER32.DLL** 和 **OLEACC.DLL**)，從 UI 取得視窗控制代碼 **。**  
+ `Utilities` 類別有 Helper 方法，會傳回 UI 的各種資訊。 有些方法會透過直接呼叫外部系統 DLL (例如 **USER32.DLL** 和 **OLEACC.DLL**)，從 UI 取得視窗控制代碼<strong>。</strong>  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

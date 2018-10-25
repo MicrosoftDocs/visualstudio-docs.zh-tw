@@ -16,12 +16,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bed1496eb5519b315d2a52e500cb9cfd916fa248
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0194de0a9f14186dc02b17564c77b1b2bc7441be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920170"
 ---
 # <a name="property-functions"></a>屬性函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,87 +90,87 @@ ms.locfileid: "49250506"
   
  在靜態屬性函式中，您可以使用以下系統類別的靜態方法或屬性：  
   
--   System.Byte  
+- System.Byte  
   
--   System.Char  
+- System.Char  
   
--   System.Convert  
+- System.Convert  
   
--   System.DateTime  
+- System.DateTime  
   
--   System.Decimal  
+- System.Decimal  
   
--   System.Double  
+- System.Double  
   
--   System.Enum  
+- System.Enum  
   
--   System.Guid  
+- System.Guid  
   
--   System.Int16  
+- System.Int16  
   
--   System.Int32  
+- System.Int32  
   
--   System.Int64  
+- System.Int64  
   
--   System.IO.Path  
+- System.IO.Path  
   
--   System.Math  
+- System.Math  
   
--   System.UInt16  
+- System.UInt16  
   
--   System.UInt32  
+- System.UInt32  
   
--   System.UInt64  
+- System.UInt64  
   
--   System.SByte  
+- System.SByte  
   
--   System.Single  
+- System.Single  
   
--   System.String  
+- System.String  
   
--   System.StringComparer  
+- System.StringComparer  
   
--   System.TimeSpan  
+- System.TimeSpan  
   
--   System.Text.RegularExpressions.Regex  
+- System.Text.RegularExpressions.Regex  
   
--   Microsoft.Build.Utilities.ToolLocationHelper  
+- Microsoft.Build.Utilities.ToolLocationHelper  
   
- 此外，您可以使用下列靜態方法和屬性：  
+  此外，您可以使用下列靜態方法和屬性：  
   
--   System.Environment::CommandLine  
+- System.Environment::CommandLine  
   
--   System.Environment::ExpandEnvironmentVariables  
+- System.Environment::ExpandEnvironmentVariables  
   
--   System.Environment::GetEnvironmentVariable  
+- System.Environment::GetEnvironmentVariable  
   
--   System.Environment::GetEnvironmentVariables  
+- System.Environment::GetEnvironmentVariables  
   
--   System.Environment::GetFolderPath  
+- System.Environment::GetFolderPath  
   
--   System.Environment::GetLogicalDrives  
+- System.Environment::GetLogicalDrives  
   
--   System.IO.Directory::GetDirectories  
+- System.IO.Directory::GetDirectories  
   
--   System.IO.Directory::GetFiles  
+- System.IO.Directory::GetFiles  
   
--   System.IO.Directory::GetLastAccessTime  
+- System.IO.Directory::GetLastAccessTime  
   
--   System.IO.Directory::GetLastWriteTime  
+- System.IO.Directory::GetLastWriteTime  
   
--   System.IO.Directory::GetParent  
+- System.IO.Directory::GetParent  
   
--   System.IO.File::Exists  
+- System.IO.File::Exists  
   
--   System.IO.File::GetCreationTime  
+- System.IO.File::GetCreationTime  
   
--   System.IO.File::GetAttributes  
+- System.IO.File::GetAttributes  
   
--   System.IO.File::GetLastAccessTime  
+- System.IO.File::GetLastAccessTime  
   
--   System.IO.File::GetLastWriteTime  
+- System.IO.File::GetLastWriteTime  
   
--   System.IO.File::ReadAllText  
+- System.IO.File::ReadAllText  
   
 ###  <a name="BKMK_InstanceMethods"></a> 在靜態屬性上呼叫執行個體方法  
  如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 *Class* 是系統類別的名稱、*Property* 是屬性的名稱、*Method* 是方法的名稱，而 *(Parameters)* 是方法的參數清單：  

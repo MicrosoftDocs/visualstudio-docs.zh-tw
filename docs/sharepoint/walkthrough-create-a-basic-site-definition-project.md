@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844400"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說： 建立基本網站定義專案
   本逐步解說會示範如何建立基本網站定義包含在其上的控制項的視覺 Web 組件。 為求清楚起見，您建立視覺 Web 組件會有只有少數的控制項。 不過，您可以建立更複雜的 SharePoint 網站定義包含更多的功能。  
   
  本逐步解說將示範下列工作：  
   
--   使用建立網站定義[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案範本。  
+- 使用建立網站定義[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案範本。  
   
--   在 SharePoint 中使用的網站定義，以建立 SharePoint 網站。  
+- 在 SharePoint 中使用的網站定義，以建立 SharePoint 網站。  
   
--   將視覺 Web 組件新增至解決方案。  
+- 將視覺 Web 組件新增至解決方案。  
   
--   加入新的視覺 Web 組件的自訂網站的 default.aspx 頁面。  
+- 加入新的視覺 Web 組件的自訂網站的 default.aspx 頁面。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -52,29 +52,29 @@ ms.locfileid: "37118750"
   
 #### <a name="to-create-a-site-definition-project"></a>若要建立網站定義專案  
   
-1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
   
-     [ **新增專案** ] 對話方塊隨即出現。  
+    [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  依序展開**Visual C#** 節點或**Visual Basic**節點，展開**SharePoint**  節點，然後選擇**2010年**節點。  
+2. 依序展開**Visual C#** 節點或**Visual Basic**節點，展開**SharePoint**  節點，然後選擇**2010年**節點。  
   
-3.  在 **範本**清單中，選擇**SharePoint 2010 專案**範本。  
+3. 在 **範本**清單中，選擇**SharePoint 2010 專案**範本。  
   
-4.  在 [**名稱**方塊中，輸入**TestSiteDef**，然後選擇 **[確定]** ] 按鈕。  
+4. 在 [**名稱**方塊中，輸入**TestSiteDef**，然後選擇 **[確定]** ] 按鈕。  
   
-     **SharePoint 自訂精靈**隨即出現。  
+    **SharePoint 自訂精靈**隨即出現。  
   
-5.  在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義，在 SharePoint 網站的 URL，或使用預設位置 (http://*系統名稱*/)。  
+5. 在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義，在 SharePoint 網站的 URL，或使用預設位置 (http://<em>系統名稱</em>/)。  
   
-6.  在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
+6. 在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
   
-     所有的網站定義專案必須部署為伺服陣列方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
+    所有的網站定義專案必須部署為伺服陣列方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  選擇**完成** 按鈕。  
+7. 選擇**完成** 按鈕。  
   
-     專案會出現在**方案總管 中**。  
+    專案會出現在**方案總管 中**。  
   
-8.  在 **方案總管**，選擇專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。  
+8. 在 **方案總管**，選擇專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。  
   
 9. 之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**節點。  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f407347946df5ddc537001fcb14bae909e52646
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f8812a9dca40a69a4dc23209cdb5f85309a87755
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861549"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 元素
 群組[點陣圖項目](../extensibility/bitmap-element.md)項目。  

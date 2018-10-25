@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName |Microsoft 文件
+title: IDebugSymbolProvider::GetMethodFieldsByName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628cddc126e9617c918bf0d6f47c8fae46c09c0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa59d97cb95309f6a291d3c17ffee431cd596be3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822276"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-這個方法會取得代表完整的方法名稱欄位。  
+這個方法會取得代表完整的方法名稱的欄位。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,13 +51,13 @@ int GetMethodFieldsByName(
  [in]選取類型的相符項目，例如，區分大小寫。  
   
  `ppEnum`  
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉值，這個方法與相關聯的欄位。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉值，這個方法相關聯的欄位。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果它多載，例如，方法可以是多個欄位相關聯。  
+ 如果它多載，例如，可以與多個欄位相關聯的方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange |Microsoft 文件
+title: IDebugDocumentContext2::GetStatementRange |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f03b449142edaa2efc1da0128d4bb4a5b7c901
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c82954980602d9ab9e2fdd67f12abd2a7439309f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903591"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 取得檔案陳述式的範圍的文件內容。  
@@ -43,21 +43,21 @@ int GetStatementRange(
   
 #### <a name="parameters"></a>參數  
  `pBegPosition`  
- [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)已填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。  
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。  
   
  `pEndPosition`  
  [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 陳述式範圍是造成此文件內容所參考的程式碼行的範圍。  
+ 陳述式的範圍是提供此文件內容所參考的程式碼行的範圍。  
   
- 若要在此文件內容中取得來源程式碼 （包括註解） 的範圍，請呼叫[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)方法。  
+ 若要取得此文件內容中的各種來源 （包括註解） 的程式碼，呼叫[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)方法。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugContext`公開物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。 此範例中會填入結束位置只有開頭位置不是 null 值。  
+ 下列範例示範如何實作這個方法來簡單`CDebugContext`公開的物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。 此範例中會填入結束的位置只有開頭位置不是 null 值。  
   
 ```cpp  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  

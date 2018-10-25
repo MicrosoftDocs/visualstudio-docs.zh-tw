@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872560"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。
@@ -51,18 +51,18 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>將資源套用至項目或屬性
 
-1.  在 [文件大綱] 視窗中，選擇您要套用資源的項目。
+1. 在 [文件大綱] 視窗中，選擇您要套用資源的項目。
 
-2.  執行下列任一步驟：
+2. 執行下列任一步驟：
 
-    -   將資源套用至屬性。 在 [屬性] 視窗中，選擇屬性值旁邊的屬性標記、選擇 [本機資源] 或 [系統資源]，然後從出現的清單中選擇可用的資源。
+   - 將資源套用至屬性。 在 [屬性] 視窗中，選擇屬性值旁邊的屬性標記、選擇 [本機資源] 或 [系統資源]，然後從出現的清單中選擇可用的資源。
 
-         如果您看不到預期應出現的資源，可能是因為資源類型不符合屬性類型。
+      如果您看不到預期應出現的資源，可能是因為資源類型不符合屬性類型。
 
-    -   將樣式或控制項樣板資源套用至控制項。 開啟 [文件大綱] 視窗中控制項的操作功能表，選擇 [編輯範本] 或 [編輯其他範本]、選擇 [套用資源]，然後從出現的清單中選擇控制項範本的名稱。
+   - 將樣式或控制項樣板資源套用至控制項。 開啟 [文件大綱] 視窗中控制項的操作功能表，選擇 [編輯範本] 或 [編輯其他範本]、選擇 [套用資源]，然後從出現的清單中選擇控制項範本的名稱。
 
-        > [!NOTE]
-        >  [編輯範本] 會套用控制項範本。 [編輯其他範本] 會套用其他範本類型。
+     > [!NOTE]
+     >  [編輯範本] 會套用控制項範本。 [編輯其他範本] 會套用其他範本類型。
 
      只要資源相容，就可以套用資源。 例如，您可以將筆刷資源套用至 <xref:Windows.UI.Xaml.Controls.TextBox> 控制項的 **Foreground** 屬性。
 

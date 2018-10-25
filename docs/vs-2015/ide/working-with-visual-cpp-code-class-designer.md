@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929526"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ ms.locfileid: "49269537"
 ### <a name="type-resolution-issues"></a>類型解析問題  
  類別設計工具無法解析類型的可能原因如下：  
   
--   類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
--   類型不在正確的範圍內，因此類別設計工具無法找到它。 請確定您的程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
+- 類型不在正確的範圍內，因此類別設計工具無法找到它。 請確定您的程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
   
--   類型不存在 (或已標記為註解)。 若要更正這個錯誤，請確定您未將類型標記為註解或刪除類型。  
+- 類型不存在 (或已標記為註解)。 若要更正這個錯誤，請確定您未將類型標記為註解或刪除類型。  
   
--   類型位於 #import 指示詞所參考的程式庫中。 可行的因應措施之一，是將產生的程式碼 (.tlh 檔) 手動加入至標頭檔中的 #include 指示詞。  
+- 類型位於 #import 指示詞所參考的程式庫中。 可行的因應措施之一，是將產生的程式碼 (.tlh 檔) 手動加入至標頭檔中的 #include 指示詞。  
   
- 關於類型解析問題，最常見的錯誤是：**找不到類別圖表 '\<element>'** 中一或多個圖形的程式碼。 此錯誤訊息不一定表示您的程式碼有錯誤。 它只是指出類別設計工具無法顯示您的程式碼。 您可以嘗試下列措施：  
+  關於類型解析問題，最常見的錯誤是：**找不到類別圖表 '\<element>'** 中一或多個圖形的程式碼。 此錯誤訊息不一定表示您的程式碼有錯誤。 它只是指出類別設計工具無法顯示您的程式碼。 您可以嘗試下列措施：  
   
--   確定類型存在。 確定您未在無意中將原始程式檔標記為註解或刪除原始程式檔。  
+- 確定類型存在。 確定您未在無意中將原始程式檔標記為註解或刪除原始程式檔。  
   
--   確定類別設計工具支援您所輸入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。  
+- 確定類別設計工具支援您所輸入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。  
   
--   嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
--   確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
+- 確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
   
 ### <a name="troubleshooting-other-error-messages"></a>其他錯誤訊息的疑難排解  
  您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。  

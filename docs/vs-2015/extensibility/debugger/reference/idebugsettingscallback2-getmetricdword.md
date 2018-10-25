@@ -15,12 +15,12 @@ ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0fabe0f9090df4824db055203bec9c8c7497d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8186d1330731a6292def22c94c0f0e3bb0c19ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895609"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

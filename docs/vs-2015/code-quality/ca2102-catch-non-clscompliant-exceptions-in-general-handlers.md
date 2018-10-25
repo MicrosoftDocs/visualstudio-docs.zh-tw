@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877412"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244866"
 ## <a name="rule-description"></a>規則描述
  Catch 區塊處理<xref:System.Exception>取得所有與 Common Language Specification (CLS) 規範的例外狀況。 不過，它不會攔截非 CLS 標準的例外狀況。 不符合 CLS 相容的例外狀況擲回的原生程式碼，或從 managed 程式碼所產生的 Microsoft intermediate language (MSIL) 組譯工具。 請注意，C# 和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器不允許不符合 CLS 規範的例外狀況擲回和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]不會攔截非 CLS 標準的例外狀況。 如果 catch 區塊的目的是要處理所有例外狀況，請使用下列的一般 catch 區塊語法。
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C + +:`catch(...) {}`或 `catch(Object^) {}`
+- C + +:`catch(...) {}`或 `catch(Object^) {}`
 
- 在 catch 區塊中移除先前允許的權限時，未處理的非符合 CLS 規範的例外狀況就會成為安全性問題。 因為系統不會攔截非 CLS 標準的例外狀況，擲回不符合 CLS 規範的例外狀況的惡意方法可以執行以提高權限。
+  在 catch 區塊中移除先前允許的權限時，未處理的非符合 CLS 規範的例外狀況就會成為安全性問題。 因為系統不會攔截非 CLS 標準的例外狀況，擲回不符合 CLS 規範的例外狀況的惡意方法可以執行以提高權限。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，當目的是要攔截所有例外狀況，以取代或新增的一般 catch 區塊或標示組件`RuntimeCompatibility(WrapNonExceptionThrows = true)`。 如果在 catch 區塊中移除權限，重複的功能的一般 catch 區塊。 如果不打算處理所有例外狀況，取代 catch 區塊處理<xref:System.Exception>處理特定的例外狀況類型的 catch 區塊。

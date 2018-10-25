@@ -17,12 +17,12 @@ ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b00145dba853a6f2518bfdb67e8f2feb52f83c1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ae20021849b8d07cac101bc8ca9688e81626fcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843791"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95bab300cf67808af0fdd89d607b5d241bd8653c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff8645bcca588f6c186d96f43bdda491bf07c7f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907660"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

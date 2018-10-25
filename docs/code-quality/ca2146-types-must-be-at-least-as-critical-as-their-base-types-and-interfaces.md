@@ -12,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e829ae7f3546556ad80d0dd4c1d5d5b80eae9a4f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8f0550061102c7f785dfe69d1505801a60648e9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895895"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146：類型至少必須和基底類型與介面一樣關鍵
+
 |||
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921979"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說： 實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  
@@ -27,13 +27,13 @@ ms.locfileid: "39566593"
   
  本逐步解說將說明如何完成這些工作：  
   
-1.  建立並註冊特定語言的程式碼片段。  
+1. 建立並註冊特定語言的程式碼片段。  
   
-2.  新增**插入程式碼片段**命令至捷徑功能表。  
+2. 新增**插入程式碼片段**命令至捷徑功能表。  
   
-3.  實作程式碼片段展開。  
+3. 實作程式碼片段展開。  
   
- 本逐步解說根據[逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+   本逐步解說根據[逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從下載中心取得。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -43,72 +43,72 @@ ms.locfileid: "39566593"
   
  下列步驟示範如何建立程式碼片段，並將它們關聯的特定 GUID。  
   
-1.  建立下列目錄結構：  
+1. 建立下列目錄結構：  
   
-     **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     何處 *%installdir%* 是 Visual Studio 安裝資料夾。 （雖然這個路徑通常用來安裝的程式碼片段中，您可以指定任何路徑）。  
+    何處 *%installdir%* 是 Visual Studio 安裝資料夾。 （雖然這個路徑通常用來安裝的程式碼片段中，您可以指定任何路徑）。  
   
-2.  在 [\1033\] 資料夾中，建立 *.xml*檔案並將它命名**TestSnippets.xml**。 (雖然此名稱通常用於程式碼片段索引檔案，您就可以指定任何名稱，因為它具有 *.xml*副檔名。)加入下列文字，然後刪除版面配置區 GUID，並新增您自己。  
+2. 在 [\1033\] 資料夾中，建立 *.xml*檔案並將它命名**TestSnippets.xml**。 (雖然此名稱通常用於程式碼片段索引檔案，您就可以指定任何名稱，因為它具有 *.xml*副檔名。)加入下列文字，然後刪除版面配置區 GUID，並新增您自己。  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  在程式碼片段資料夾中建立檔案，將其命名**測試**`.snippet`，然後加入下列文字：  
+3. 在程式碼片段資料夾中建立檔案，將其命名**測試**`.snippet`，然後加入下列文字：  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- 下列步驟示範如何註冊的程式碼片段。  
+   下列步驟示範如何註冊的程式碼片段。  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要針對特定的 GUID 註冊程式碼片段  
   

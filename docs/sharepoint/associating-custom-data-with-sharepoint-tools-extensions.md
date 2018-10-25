@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939486"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂的資料產生關聯的 SharePoint 工具擴充功能
   您可以新增自訂資料中 SharePoint 工具擴充功能的特定物件。 當您需要在您想要從您的延伸模組中的其他程式碼供稍後存取的擴充功能的其中一部分中的資料，這非常有用。 而不是實作自訂的方式來儲存及存取資料，您可以在您的延伸模組相關聯物件的資料，然後稍後再從同一個物件擷取資料。  
@@ -73,14 +73,14 @@ ms.locfileid: "36327225"
   
  若要從 SharePoint 工具擴充功能中的物件中擷取自訂的資料，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性的物件，然後使用下列其中一個下列方法：  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 這個方法會傳回**真**如果資料物件存在，或**false**如果不存在。 您可以使用這個方法來擷取實值型別或參考類型的執行個體。  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 這個方法會傳回**真**如果資料物件存在，或**false**如果不存在。 您可以使用這個方法來擷取實值型別或參考類型的執行個體。  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 這個方法傳回的資料物件，如果結束，或是**null**如果不存在。 您只能使用這個方法來擷取執行個體的參考型別。  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 這個方法傳回的資料物件，如果結束，或是**null**如果不存在。 您只能使用這個方法來擷取執行個體的參考型別。  
   
- 下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是未與專案項目相關聯，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
+  下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是未與專案項目相關聯，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>另請參閱
  [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   

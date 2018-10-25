@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue |Microsoft 文件
+title: IDiaStackWalkHelper::get_registerValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccc491ec9e966b8d893b6d669aafc64ebc5c8cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: af5f68aaf5b2caed50d28a1a53022a095d478e60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887913"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 擷取暫存器的值。  
@@ -35,16 +35,16 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>參數  
  `index`  
- [in]中的值[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉指定的註冊以取得的值。  
+ [in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉指定的註冊並取得的值。  
   
  `pRetVal`  
- [out]傳回登錄的目前值。  
+ [out]傳回目前的暫存器值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 儘管大小`pRetVal`參數，實作應只哪些暫存器通常會保留儲存。 例如的 8 位元暫存器保留只最低 8 位元的指定值。 8 位元值，這個已擴充成 64 位元，從這個方法傳回時。  
+ 大小雖然`pRetVal`參數，實作應儲存只哪些暫存器通常會保留。 比方說，8 位元暫存器保留只最低 8 位元的指定值。 這個 8 位元值已擴充成 64 位元，從這個方法傳回時。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

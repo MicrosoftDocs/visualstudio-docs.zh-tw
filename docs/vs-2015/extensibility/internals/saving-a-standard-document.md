@@ -17,12 +17,12 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c13e2af373025cc264f9bec34f426fb8f9b75d66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 78fd77e9a5a898b31ff296f471e308706c09ba8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908090"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +34,25 @@ ms.locfileid: "49267510"
   
  下列步驟會詳細說明此程序：  
   
-1.  當**儲存**並**另存新檔**選取命令時，環境會使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務以判斷使用中的文件視窗，並因此項目應該儲存。 現用文件視窗知道後，環境就會尋找文件中執行的 document 資料表的階層指標和項目識別項 (itemID)。 如需詳細資訊，請參閱 <<c0> [ 執行文件表格](../../extensibility/internals/running-document-table.md)。  
+1. 當**儲存**並**另存新檔**選取命令時，環境會使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務以判斷使用中的文件視窗，並因此項目應該儲存。 現用文件視窗知道後，環境就會尋找文件中執行的 document 資料表的階層指標和項目識別項 (itemID)。 如需詳細資訊，請參閱 <<c0> [ 執行文件表格](../../extensibility/internals/running-document-table.md)。  
   
-     當**全部儲存**選取命令時，環境中執行的 document 資料表使用的資訊，以編譯儲存的所有項目的清單。  
+    當**全部儲存**選取命令時，環境中執行的 document 資料表使用的資訊，以編譯儲存的所有項目的清單。  
   
-2.  當解決方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫時，它會逐一選取項目組 (也就是由多重選取<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務)。  
+2. 當解決方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫時，它會逐一選取項目組 (也就是由多重選取<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務)。  
   
-3.  每個項目選取範圍中，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以判斷是否**儲存**應該啟用功能表命令。 如果一或多個項目已變更，則**儲存**已啟用命令。 如果階層會使用標準的編輯器，然後查詢的階層委派中途至編輯器的狀態呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
+3. 每個項目選取範圍中，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以判斷是否**儲存**應該啟用功能表命令。 如果一或多個項目已變更，則**儲存**已啟用命令。 如果階層會使用標準的編輯器，然後查詢的階層委派中途至編輯器的狀態呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
   
-4.  在已經變更每個選取的項目，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>適當的階層上的方法。  
+4. 在已經變更每個選取的項目，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>適當的階層上的方法。  
   
-     通常會使用標準的編輯器來編輯文件階層。 在此情況下，文件資料物件應該支援該編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>介面。 在收到<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>方法呼叫中，專案應該告知呼叫正在儲存文件編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A>文件資料物件上的方法。 編輯器可讓環境，以處理**另存新檔**對話方塊中，藉由呼叫`Query Service`如<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>介面。 這會傳回的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面。 編輯器必須再呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>方法，將指標傳遞至編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>藉由實作`pPersistFile`參數。 環境再執行儲存作業，並提供**另存新檔**編輯器的對話方塊。 環境然後回呼至編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>。  
+    通常會使用標準的編輯器來編輯文件階層。 在此情況下，文件資料物件應該支援該編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>介面。 在收到<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>方法呼叫中，專案應該告知呼叫正在儲存文件編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A>文件資料物件上的方法。 編輯器可讓環境，以處理**另存新檔**對話方塊中，藉由呼叫`Query Service`如<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>介面。 這會傳回的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面。 編輯器必須再呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>方法，將指標傳遞至編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>藉由實作`pPersistFile`參數。 環境再執行儲存作業，並提供**另存新檔**編輯器的對話方塊。 環境然後回呼至編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>。  
   
-5.  如果使用者嘗試儲存未命名的文件 （也就是先前未儲存文件），則會實際執行 [另存新檔] 命令。  
+5. 如果使用者嘗試儲存未命名的文件 （也就是先前未儲存文件），則會實際執行 [另存新檔] 命令。  
   
-6.  另存新檔 命令中，環境會顯示 另存新檔 對話方塊，提示使用者輸入檔案名稱。  
+6. 另存新檔 命令中，環境會顯示 另存新檔 對話方塊，提示使用者輸入檔案名稱。  
   
-     如果已變更的檔案名稱，則階層負責更新文件框架的快取資訊，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument)。  
+    如果已變更的檔案名稱，則階層負責更新文件框架的快取資訊，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument)。  
   
- 如果**另存新檔**命令會將移動的文件的位置和階層機密文件的位置，則階層會負責關閉開啟的文件視窗的擁有權交給另一個階層。 比方說，會發生這個錯誤的檔案是否為內部或外部的檔案 （其他檔案） 相對於專案，專案會追蹤。 若要將檔案的擁有權變更為其他檔案專案中使用下列程序。  
+   如果**另存新檔**命令會將移動的文件的位置和階層機密文件的位置，則階層會負責關閉開啟的文件視窗的擁有權交給另一個階層。 比方說，會發生這個錯誤的檔案是否為內部或外部的檔案 （其他檔案） 相對於專案，專案會追蹤。 若要將檔案的擁有權變更為其他檔案專案中使用下列程序。  
   
 ## <a name="changing-file-ownership"></a>變更檔案擁有權  
   

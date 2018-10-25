@@ -9,12 +9,12 @@ description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949106"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 
@@ -68,7 +68,7 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
 
 > [!NOTE]
 > Visual Studio 訂用帳戶需要技術連絡人角色
-    - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
+>     - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
 
 ## <a name="need-help"></a>需要協助嗎？
 訂閱者與方案系統管理員應該直接與 Microsoft 合作夥伴網路支援小組合作，以解決訂閱者存取訂用帳戶的任何問題。 瀏覽[合作夥伴支援](https://partner.microsoft.com/support)頁面以取得協助。 (將需要您的 MPN 登入認證)。

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue |Microsoft 文件
+title: IDiaStackWalkHelper::put_registerValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c094384fd4c1e01b28edcc809d58ab56b3bb225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838929"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
-設定暫存器的值。  
+設定暫存器值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT put_registerValue (
   
 #### <a name="parameters"></a>參數  
  `index`  
- [in]中的值[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉型別指定要寫入的暫存器。  
+ [in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)指定將寫入暫存器的列舉類型。  
   
  `NewVal`  
- [in]新登錄值。  
+ [in]新的暫存器值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 儘管之值的大小，實作應只哪些暫存器通常會保留儲存的。 例如的 8 位元暫存器會保存只最低 8 位元的指定值。  
+ 值的大小，儘管實作應該儲存只哪些暫存器通常會保留。 例如，8 位元暫存器會保存只有最低 8 位元的指定值。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

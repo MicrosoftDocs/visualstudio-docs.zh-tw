@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878553"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ ms.locfileid: "49294264"
   
  若要將延伸模組部署到主要[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，和其他電腦，請遵循下列步驟：  
   
-1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix  
+1. VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix  
   
-2.  這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。  
+2. 這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組管理員 隨即開啟，確認已安裝擴充功能。  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組管理員 隨即開啟，確認已安裝擴充功能。  
   
- 若要解除安裝擴充功能，請遵循下列步驟：  
+   若要解除安裝擴充功能，請遵循下列步驟：  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]上**工具**功能表上，按一下**延伸模組管理員**。  
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]上**工具**功能表上，按一下**延伸模組管理員**。  
   
-2.  選取擴充功能，並將它刪除。  
+4. 選取擴充功能，並將它刪除。  
   
 ## <a name="adding-a-shortcut-menu-command"></a>加入快顯功能表命令  
  若要讓 DSL 設計工具介面上或在 [DSL 總管] 視窗中顯示的捷徑功能表命令，撰寫類別，如下列所示。  

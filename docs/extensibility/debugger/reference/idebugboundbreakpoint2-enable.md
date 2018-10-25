@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Enable |Microsoft 文件
+title: IDebugBoundBreakpoint2::Enable |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cd5b36d8985ef36b67d5983113989a2f60bf588
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3f8589e8e7084853a4db5bb39b79c1abd6ee293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936635"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。  
@@ -42,13 +42,13 @@ int Enable(
   
 #### <a name="parameters"></a>參數  
  `fEnable`  
- [in]設定為非零 (`TRUE`) 來啟用，或為零 (`FALSE`) 若要停用中斷點。  
+ [in]設定為非零 (`TRUE`) 若要啟用，或為零 (`FALSE`) 若要停用中斷點。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設定為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開的物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    

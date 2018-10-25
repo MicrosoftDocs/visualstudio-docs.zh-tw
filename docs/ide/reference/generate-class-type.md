@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929604"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -41,24 +41,24 @@ ms.locfileid: "37116984"
 
    - C#: 
 
-    ![醒目提示的程式碼 C#](media/class-highlight-cs.png)
+       ![醒目提示的程式碼 C#](media/class-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 VB](media/class-highlight-vb.png)
+       ![醒目提示的程式碼 VB](media/class-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
-    ![「產生類別」預覽](media/class-preview-cs.png)
+      ![「產生類別」預覽](media/class-preview-cs.png)
 
-1. 從下拉式功能表中選取其中一個選項：
+3. 從下拉式功能表中選取其中一個選項：
 
    - 在新檔案中產生 '*TypeName*' 類別&mdash;在名為 *TypeName*.cs/.vb 的檔案中建立名為 *TypeName* 的類別
    - 產生 '*TypeName*' 類別&mdash;在目前的檔案中建立名為 *TypeName* 的類別。
@@ -68,7 +68,7 @@ ms.locfileid: "37116984"
    > [!TIP]
    > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
-1. 如果您選取 [產生新的類型] 項目，[產生類型] 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
+4. 如果您選取 [產生新的類型] 項目，[產生類型] 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
 
    ![產生類型](media/class-newtype-cs.png)
 

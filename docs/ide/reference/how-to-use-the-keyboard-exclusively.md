@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818259"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：完全只使用鍵盤
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949915"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用鍵盤將控制項從工具箱新增至設計工具
 
-1.  在功能表列上，依序選擇 [檢視] 和 [工具箱]。
+1. 在功能表列上，依序選擇 [檢視] 和 [工具箱]。
 
-2.  使用 Ctrl + 向上鍵或 Ctrl + 向下鍵，在目前的工具箱索引標籤的區段之間移動。
+2. 使用 Ctrl + 向上鍵或 Ctrl + 向下鍵，在目前的工具箱索引標籤的區段之間移動。
 
-3.  使用向上鍵或**向下鍵**在控制項之間移動。
+3. 使用向上鍵或**向下鍵**在控制項之間移動。
 
-4.  選取控制項之後，使用 Enter 鍵。
+4. 選取控制項之後，使用 Enter 鍵。
 
- 控制項會新增至表單或設計工具。
+   控制項會新增至表單或設計工具。
 
 ## <a name="dialog-box-options"></a>對話方塊選項
 
@@ -107,5 +107,5 @@ ms.locfileid: "31949915"
 ## <a name="see-also"></a>另請參閱
 
 * [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-* [協助工具秘訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
+* [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 * [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

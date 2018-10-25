@@ -17,12 +17,12 @@ ms.assetid: 6a3dee11-5267-4d77-9e28-6a38413ba70b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bcc7469ead7f54809c077892e7c2617b07030be0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 398f4255eae823a12b8ac8f0fb5f4ed084cbb1e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907751"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

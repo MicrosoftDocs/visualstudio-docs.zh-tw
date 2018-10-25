@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827554"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 進行偵錯
 
 這篇文章介紹 Visual Studio 偵錯工具的逐步解說中的功能。 如果您想要偵錯工具功能的較高層級檢視，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。 當您*偵錯您的應用程式*，通常表示您正在附加偵錯工具執行您的應用程式。 當您這樣做時，偵錯工具會提供許多方式來看看您的程式碼如何在執行。 您可以逐步執行程式碼，並查看儲存在變數中的值，您可以設定監看式變數以查看值的變更時，您可以檢查您的程式碼的執行路徑，查看程式碼分支是否正在執行，依此類推。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)之前，先透過這篇文章。
 
-|         |         |
+| | |
 |---------|---------|
-|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
 
 雖然示範應用程式是 C# 和 c + + 的功能都適用於 Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面是在 C#。
 
@@ -329,8 +329,8 @@ ms.locfileid: "49101039"
 
      ![使用 執行至點選功能](../debugger/media/get-started-run-to-click.png "執行至點選處")
 
-    >  [!NOTE]
-    > **執行至點選處** 按鈕的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。 如果您沒有看到綠色箭號按鈕，使用**F11**在此範例中改為偵錯工具前往正確的位置。
+   > [!NOTE]
+   > **執行至點選處** 按鈕的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。 如果您沒有看到綠色箭號按鈕，使用**F11**在此範例中改為偵錯工具前往正確的位置。
 
 6. 按一下 [**執行至點選處**] 按鈕![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
 
@@ -408,14 +408,14 @@ ms.locfileid: "49101039"
 
 1. 在暫停期間`foreach`迴圈 (`for` c + + 中的迴圈)，按一下**呼叫堆疊**視窗中，預設在右下方的窗格中開啟。
 
-1. 按一下  **F11**幾次，直到您看到 偵錯工具中暫停`Circle.Draw`程式碼編輯器中的方法。 看看**呼叫堆疊**視窗。
+2. 按一下  **F11**幾次，直到您看到 偵錯工具中暫停`Circle.Draw`程式碼編輯器中的方法。 看看**呼叫堆疊**視窗。
 
     ![檢查呼叫堆疊](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     **呼叫堆疊**視窗會顯示方法和函式會取得呼叫的順序。 第一行會顯示目前的函式 (`Circle.Draw`或`Circle::Draw`此應用程式中的方法)。 第二行顯示`Circle.Draw`已從呼叫`Main`方法 (`main` c + + 中)，依此類推。
 
-    >  [!NOTE]
-    > **呼叫堆疊**視窗是類似於偵錯觀點來看一些像是 Eclipse Ide 中。
+   > [!NOTE]
+   > **呼叫堆疊**視窗是類似於偵錯觀點來看一些像是 Eclipse Ide 中。
 
     呼叫堆疊會檢查並了解應用程式的執行流程的好方法。
 

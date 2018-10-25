@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928954"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -53,21 +53,21 @@ ms.locfileid: "37118619"
 ### <a name="resolution"></a>解決方式  
  SharePoint 專案和專案項目的名稱只能使用下列字元：  
   
--   英數字 ASCII 字元  
+- 英數字 ASCII 字元  
   
--   空格  
+- 空格  
   
--   句號 （.）  
+- 句號 （.）  
   
--   逗號 （，）  
+- 逗號 （，）  
   
--   底線 (_)  
+- 底線 (_)  
   
--   虛線 （-）  
+- 虛線 （-）  
   
--   反斜線 (\\)  
+- 反斜線 (\\)  
   
- 在封裝專案時，驗證規則會針對每一個您要部署的檔案驗證 deployment-path 屬性是否只包含這些有效的字元。  
+  在封裝專案時，驗證規則會針對每一個您要部署的檔案驗證 deployment-path 屬性是否只包含這些有效的字元。  
   
 ## <a name="errors-when-creating-custom-fields"></a>建立自訂欄位時發生錯誤
  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中，自訂欄位會以 XML 定義。 如果未使用特定格式定義或參考欄位，則可能會發生錯誤。  
@@ -99,7 +99,7 @@ ms.locfileid: "37118619"
  如果欄位的來源 XML 格式錯誤或者不是有效的 XML 檔案，或出現其他問題，則會發生「無法剖析檔案」錯誤。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英文網站定義未出現在 站台建立頁面在部署之後
- 建立和部署網站定義所使用的非英文版之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇** 方塊中，新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
+ 建立和部署網站定義所使用的非英文版之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇** 方塊中，新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
   
 ### <a name="error-message"></a>錯誤訊息
  無。  
@@ -147,15 +147,15 @@ ms.locfileid: "37118619"
 ### <a name="resolution"></a>解決方式  
  功能範圍必須是 「 網站 」 來處理網站層級的事件，但事件接收者專案的預設功能範圍為"Web"，就會發生此問題。 受影響的 Web 事件如下：  
   
--   正在站台刪除 (WebDeleting)  
+- 正在站台刪除 (WebDeleting)  
   
--   已刪除網站 (WebDeleted)  
+- 已刪除網站 (WebDeleted)  
   
--   站台正在移動 (WebMoving)  
+- 站台正在移動 (WebMoving)  
   
--   已移動站台 (WebMoved)  
+- 已移動站台 (WebMoved)  
   
- 若要修正此問題，變更功能範圍的事件接收器中，如下所示。  
+  若要修正此問題，變更功能範圍的事件接收器中，如下所示。  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>若要變更的功能範圍的事件接收器  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37118619"
  如果您重新命名匯入的清單執行個體，然後將它設為執行中，就會發生這個問題[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 ### <a name="error-message"></a>錯誤訊息
- 建置錯誤： 在部署步驟啟用功能時發生錯誤： 檔案 Template\Features\\[*匯入專案**功能**名稱*] \Files\Lists\\[*舊 * * 清單名稱*] \Schema.xml 不存在。  
+ 建置錯誤： 在部署步驟啟用功能時發生錯誤： 檔案 Template\Features\\[*匯入專案*<em>功能</em>*名稱*] \Files\Lists\\[*舊*<em>清單名稱</em>] \Schema.xml 不存在。  
   
 ### <a name="resolution"></a>解決方式  
  當您匯入的清單執行個體時，名為 CustomSchema 屬性就會加入至清單執行個體的 Elements.xml 檔案中。 Elements.xml 包含自訂的 schema.xml 清單執行個體的路徑。 當您重新命名使用中的清單執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 自訂 schema.xml 的部署路徑變更，但是不會更新 CustomSchema 屬性的路徑值。 如此一來，清單執行個體找*schema.xml*舊啟用此功能時，會將 CustomSchema 屬性所指定的路徑中的檔案。  

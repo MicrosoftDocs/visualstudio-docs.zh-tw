@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885131"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>若要偵錯 C#、F# 或 Visual Basic Windows Forms 應用程式  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟專案。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟專案。  
   
-2.  建立需要的中斷點。  
+2. 建立需要的中斷點。  
   
-     因為 Windows Forms 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
+    因為 Windows Forms 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
   
-    1.  與控制項相關的事件，例如點選、輸入等等。  
+   1. 與控制項相關的事件，例如點選、輸入等等。  
   
-    2.  與啟動和關閉應用程式有關的事件，例如載入、啟動等等。  
+   2. 與啟動和關閉應用程式有關的事件，例如載入、啟動等等。  
   
-    3.  焦點和驗證事件。  
+   3. 焦點和驗證事件。  
   
-     如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
+      如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
   
-3.  在 **偵錯**功能表上，按一下**開始**。  
+3. 在 **偵錯**功能表上，按一下**開始**。  
   
-4.  使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/debugger-basics.md)。  
+4. 使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   

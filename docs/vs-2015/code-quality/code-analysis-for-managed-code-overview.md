@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872664"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Managed 程式碼的程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>執行程式碼分析做為簽入原則的一部分  
  從組織的角度來看，您可能想指定所有的簽入都要滿足特定的原則， 尤其您會想要確認您已經確實遵循這些原則：  
   
--   所簽入的程式碼中沒有建置錯誤。  
+- 所簽入的程式碼中沒有建置錯誤。  
   
--   已執行程式碼分析做為最新組建的一部分。  
+- 已執行程式碼分析做為最新組建的一部分。  
   
- 您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用的 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
+  您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用的 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
   
 ## <a name="team-build-integration"></a>Team Build 整合  
  您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  

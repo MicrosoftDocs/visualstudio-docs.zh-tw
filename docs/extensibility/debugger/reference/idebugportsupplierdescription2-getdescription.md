@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription |Microsoft 文件
+title: IDebugPortSupplierDescription2::GetDescription |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c527d79c68f4ff95e002ab53b40b0fec9dd68f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8bd3ba878f0ab66cb6919ab84cd7eb8426219e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925340"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-擷取連接埠供應商的描述和描述中繼資料。  
+擷取連接埠提供者的描述和描述中繼資料。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,13 +41,13 @@ public int GetDescription(
   
 #### <a name="parameters"></a>參數  
  `pdwFlags`  
- [out]描述中繼資料旗標。  
+ [out]描述的中繼資料旗標。  
   
  `pbstrText`  
- [out]連接埠供應商的描述。  
+ [out]連接埠提供者的描述。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

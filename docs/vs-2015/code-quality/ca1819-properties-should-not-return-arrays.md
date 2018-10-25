@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24e547415e52e486833553ef5ef20b5cd05ac598
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6591431edf7ca6de84bbf18d431ad7350308a172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881718"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819：屬性不應傳回陣列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|

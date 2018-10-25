@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS |Microsoft 文件
+title: BPRESI_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6ecfd729762944bcf26814e735c4c73841e2d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908609"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 指定要擷取有關中斷點的成功解決方式的資訊。  
@@ -60,11 +60,11 @@ public enum enum_BPRESI_FIELDS {
  指定所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 傳遞至[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法，以表示的哪些欄位[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構會進行初始化。  
+ 傳遞給[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法，以表示哪些欄位[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構會進行初始化。  
   
- 這些旗標也可用來表示的哪些欄位`BP_RESOLUTION_INFO`結構時，會使用並有效傳回該結構。  
+ 這些旗標也可用來表示欄位`BP_RESOLUTION_INFO`結構會使用和有效時傳回該結構。  
   
- 這些值可能會合併使用位元`OR`。  
+ 這些值可能會合併的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

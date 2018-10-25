@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ea4603f6ddf6446fa51691ea1b482c18e707457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 78dff1fde421f96e5e07b69f72598af80f5d5c43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837590"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

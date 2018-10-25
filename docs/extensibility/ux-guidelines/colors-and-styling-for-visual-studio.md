@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918021"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 
@@ -425,7 +425,7 @@ IDE 會快取的字型和色彩設定的相關資訊。 因此，在 IDE 字型�
 
 - **處理 IDE 所產生的事件**藉由實作[IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)介面。 IDE 呼叫適當的方法，下列字型和色彩頁面的使用者修改。 比方說，它會呼叫[OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged)方法如果在選取新的字型。
 
- **OR**
+  **OR**
 
 - **輪詢變更 IDE**。 這可透過系統實作[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)介面。 主要目的是為了支援持續性，雖然[GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem)方法可以取得顯示項目的字型和色彩資訊。 如需有關字型和色彩設定的詳細資訊，請參閱 MSDN 文章[存取儲存的字型和色彩設定](../accessing-stored-font-and-color-settings.md)。
 

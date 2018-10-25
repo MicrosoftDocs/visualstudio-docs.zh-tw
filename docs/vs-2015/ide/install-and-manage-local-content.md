@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832728"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ ms.locfileid: "49193832"
   
 #### <a name="to-update-local-content"></a>更新本機內容  
   
--   在狀態列右下角，選擇 [按一下這裡立即下載] 連結。  
+- 在狀態列右下角，選擇 [按一下這裡立即下載] 連結。  
   
- 更新時間不盡相同，但是您可以在狀態列中檢視更新進度。  
+  更新時間不盡相同，但是您可以在狀態列中檢視更新進度。  
   
 ## <a name="moving-local-content"></a>移動本機內容  
  您可以從本機電腦移動已安裝的內容到網路共用或本機電腦上的另一個分割，以節省磁碟空間。  

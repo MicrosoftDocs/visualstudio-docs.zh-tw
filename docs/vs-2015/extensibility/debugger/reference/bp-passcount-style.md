@@ -17,12 +17,12 @@ ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19f40e23b54a28d84154e62567cc8d4fb442d0db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a296b9e2b4f11694efef03c200a9d646c342e590
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836693"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

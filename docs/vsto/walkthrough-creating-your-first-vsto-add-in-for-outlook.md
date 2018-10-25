@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950959"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook
   本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -32,15 +32,15 @@ ms.locfileid: "38778124"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Outlook 的 Outlook VSTO 增益集專案。  
+- 建立 Outlook 的 Outlook VSTO 增益集專案。  
   
--   撰寫使用 Outlook 物件模型的程式碼，將文字加入新郵件訊息的主旨和本文。  
+- 撰寫使用 Outlook 物件模型的程式碼，將文字加入新郵件訊息的主旨和本文。  
   
--   建置和執行專案來進行測試。  
+- 建置和執行專案來進行測試。  
   
--   清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
+- 清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -78,24 +78,24 @@ ms.locfileid: "38778124"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>將文字加入每封新郵件的主旨和本文  
   
-1.  在 ThisAddIn 程式碼檔中，宣告 `inspectors` 類別中名為 `ThisAddIn` 的欄位。 `inspectors` 欄位會維護目前 Outlook 執行個體中偵測器視窗的集合參考。 這個參考可以防止記憶體回收行程釋放包含 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件之事件處理常式的記憶體。  
+1. 在 ThisAddIn 程式碼檔中，宣告 `inspectors` 類別中名為 `ThisAddIn` 的欄位。 `inspectors` 欄位會維護目前 Outlook 執行個體中偵測器視窗的集合參考。 這個參考可以防止記憶體回收行程釋放包含 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件之事件處理常式的記憶體。  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  以下列程式碼取代 `ThisAddIn_Startup` 方法。 這個程式碼會將事件處理常式附加到 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件。  
+2. 以下列程式碼取代 `ThisAddIn_Startup` 方法。 這個程式碼會將事件處理常式附加到 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件。  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 這個程式碼會定義 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件的事件處理常式。  
+3. 在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 這個程式碼會定義 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 事件的事件處理常式。  
   
-     當使用者建立新郵件時，這個事件處理常式會將文字加入郵件的主旨和本文。  
+    當使用者建立新郵件時，這個事件處理常式會將文字加入郵件的主旨和本文。  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- 若要修改每封新郵件，前面的程式碼範例會使用下列物件：  
+   若要修改每封新郵件，前面的程式碼範例會使用下列物件：  
   
 -   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Outlook.Application> 物件，此物件代表 Outlook 目前的執行個體。  
   

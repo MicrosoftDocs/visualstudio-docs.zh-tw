@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96bf27327a3eede38ef8147d8b14691e698cbaf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d454d81aaab15a9e095e7f7ef4d83c2fe0a0981f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938340"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

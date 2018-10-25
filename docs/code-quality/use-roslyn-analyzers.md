@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817037"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
 
@@ -121,15 +121,15 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **在原始程式檔**或是**隱藏** > **隱藏項目檔**。
 
-   - 如果您選取**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示 C# 的預覽[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
+- 如果您選取**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示 C# 的預覽[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
 
-      ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
+   ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
 
-   - 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
+- 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
 
-      ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
+   ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
 
-   在 **預覽變更**對話方塊中，選取**套用**。
+在 **預覽變更**對話方塊中，選取**套用**。
 
 **錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 不過，從即時的分析或 IntelliSense、 診斷都一律是最新與目前的來源，而且可以從隱藏**錯誤清單**。 隱藏項目選項已停用，以滑鼠右鍵按一下或內容功能表中，它可能是因為您有一或多個組建診斷您的選取範圍。 若要從您的選取範圍中排除組建診斷，請切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**來**Intellisense 僅**。 然後，選取您想要隱藏並繼續如先前所述的診斷。
 

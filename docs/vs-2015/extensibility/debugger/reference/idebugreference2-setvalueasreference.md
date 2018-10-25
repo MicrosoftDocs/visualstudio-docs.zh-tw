@@ -17,12 +17,12 @@ ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1b53ce26a3de78d419bdeb4dbd4354021859744
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5c2f02b025584a5090b56638d78666fe4738854
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889096"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

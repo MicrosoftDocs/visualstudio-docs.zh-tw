@@ -16,12 +16,12 @@ ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51bd8b86e474c3d3cf0929673e02a1c5f575da89
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6302925df5e96973e99db1365c2b68fba73db198
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912587"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

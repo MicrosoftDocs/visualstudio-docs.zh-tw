@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92f14710646925778cb55f7e6e6d16f456ef496b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ee8ca017cd16b6d56c2e71b474d3f4283aeeb9b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849556"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。  
@@ -83,41 +83,41 @@ ms.locfileid: "39078408"
   
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>若要顯示的按鈕，開啟一或多個專案時  
   
-1.  在 `<Buttons>`一節*ToolbarButtonPackage.vsct*，將兩個命令旗標新增至現有`<Button>`項目之間`<Strings>`和`<Icons>`標記。  
+1. 在 `<Buttons>`一節*ToolbarButtonPackage.vsct*，將兩個命令旗標新增至現有`<Button>`項目之間`<Strings>`和`<Icons>`標記。  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible`並`DynamicVisibility`旗標必須設定操作中的項目`<VisibilityConstraints>`區段才會生效。  
+    `DefaultInvisible`並`DynamicVisibility`旗標必須設定操作中的項目`<VisibilityConstraints>`區段才會生效。  
   
-2.  建立`<VisibilityConstraints>`區段，其中含有兩個`<VisibilityItem>`項目。 將新的區段之後關閉`</Commands>`標記。  
+2. 建立`<VisibilityConstraints>`區段，其中含有兩個`<VisibilityItem>`項目。 將新的區段之後關閉`</Commands>`標記。  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     每個可見性項目表示指定的按鈕會顯示在其下的條件。 若要套用多個條件，您必須建立多個項目相同的按鈕。  
+    每個可見性項目表示指定的按鈕會顯示在其下的條件。 若要套用多個條件，您必須建立多個項目相同的按鈕。  
   
-3.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+3. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-     **方案總管 中**工具列不包含刪除線按鈕。  
+    **方案總管 中**工具列不包含刪除線按鈕。  
   
-4.  開啟任何包含專案的方案。  
+4. 開啟任何包含專案的方案。  
   
-     刪除線按鈕會出現在右邊的現有按鈕的工具列。  
+    刪除線按鈕會出現在右邊的現有按鈕的工具列。  
   
-5.  在 **檔案**功能表上，按一下**關閉方案**。 工具列按鈕就會消失。  
+5. 在 **檔案**功能表上，按一下**關閉方案**。 工具列按鈕就會消失。  
   
- 按鈕的可見性由控制[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]直到載入 VSPackage。 VSPackage 載入之後，按鈕的可見性會受到 VSPackage。  如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)。  
+   按鈕的可見性由控制[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]直到載入 VSPackage。 VSPackage 載入之後，按鈕的可見性會受到 VSPackage。  如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

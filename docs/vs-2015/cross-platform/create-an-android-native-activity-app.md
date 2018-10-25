@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899925"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "49174001"
   
 #### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  開啟 Visual Studio。 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 開啟 Visual Studio。 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在 [新增專案]  對話方塊中的 [範本] 底下，選擇 [Visual C++] 、[跨平台] ，然後選擇 [Native-Activity 應用程式 (Android)]  範本。  
+2. 在 [新增專案]  對話方塊中的 [範本] 底下，選擇 [Visual C++] 、[跨平台] ，然後選擇 [Native-Activity 應用程式 (Android)]  範本。  
   
-3.  指定像是 `MyAndroidApp` 的應用程式名稱，然後選擇 [確定]。  
+3. 指定像是 `MyAndroidApp` 的應用程式名稱，然後選擇 [確定]。  
   
-     ![建立 Native Activity 專案](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![建立 Native Activity 專案](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio 會建立新的方案，並開啟方案總管。  
+    Visual Studio 會建立新的方案，並開啟方案總管。  
   
-     ![[方案總管] 中的 Native Activity 專案](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![[方案總管] 中的 Native Activity 專案](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- 新的 Android Native Activity 應用程式方案包含兩個專案：  
+   新的 Android Native Activity 應用程式方案包含兩個專案：  
   
 -   **MyAndroidApp.NativeActivity** 包含參考和黏附程式碼 (glue code)，可讓您的應用程式當做 Native Activity 在 Android 上執行。 黏合程式碼 (glue code) 的進入點實作位於 main.cpp 中。 先行編譯標頭檔位於 pch.h 中。 這個 Native Activity 應用程式專案會編譯至封裝專案所挑選的共用程式庫 .so 檔案中。  
   

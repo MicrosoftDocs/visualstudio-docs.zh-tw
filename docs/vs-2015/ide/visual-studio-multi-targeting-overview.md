@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857675"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ ms.locfileid: "49277065"
 ## <a name="framework-targeting-features"></a>Framework 目標功能  
  Framework 目標包括下列功能：  
   
--   當您開啟以舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標的專案時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會自動將專案升級，或保留其目標。  
+- 當您開啟以舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標的專案時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會自動將專案升級，或保留其目標。  
   
--   當您建立專案時，您可以指定要以哪一個版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標。  
+- 當您建立專案時，您可以指定要以哪一個版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標。  
   
--   您可以變更現有專案的目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。  
+- 您可以變更現有專案的目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。  
   
--   您可以在相同方案的數個不同專案中，以不同版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標。  
+- 您可以在相同方案的數個不同專案中，以不同版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標。  
   
--   當您變更專案的目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會對參考和組態檔進行任何必要的變更。  
+- 當您變更專案的目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會對參考和組態檔進行任何必要的變更。  
   
- 當您使用以舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標的專案時，Visual Studio 會動態變更開發環境，例如：  
+  當您使用以舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 為目標的專案時，Visual Studio 會動態變更開發環境，例如：  
   
--   它會篩選 [新增專案] 對話方塊、[加入新項目] 對話方塊、[加入新參考] 對話方塊和 [加入服務參考] 對話方塊中的項目，以省略目標版本中未提供的選項。  
+- 它會篩選 [新增專案] 對話方塊、[加入新項目] 對話方塊、[加入新參考] 對話方塊和 [加入服務參考] 對話方塊中的項目，以省略目標版本中未提供的選項。  
   
--   它會在有多個控制項可供使用時，篩選 [工具箱] 中的自訂控制項，以移除目標版本中未提供的控制項，只顯示最新版控制項。  
+- 它會在有多個控制項可供使用時，篩選 [工具箱] 中的自訂控制項，以移除目標版本中未提供的控制項，只顯示最新版控制項。  
   
--   它會篩選 IntelliSense，以省略目標版本中未提供的語言功能。  
+- 它會篩選 IntelliSense，以省略目標版本中未提供的語言功能。  
   
--   它會篩選 [屬性] 視窗中的屬性，以省略目標版本中未提供的屬性。  
+- 它會篩選 [屬性] 視窗中的屬性，以省略目標版本中未提供的屬性。  
   
--   它會篩選功能表選項，以省略目標版本中未提供的選項。  
+- 它會篩選功能表選項，以省略目標版本中未提供的選項。  
   
--   對於組建，它會使用適用於目標版本的編譯器版本和編譯器選項。  
+- 對於組建，它會使用適用於目標版本的編譯器版本和編譯器選項。  
   
 > [!NOTE]
 >  Framework 目標不保證您的應用程式將會正確執行。 您必須測試應用程式，確定它能以目標版本執行。 您不能以早於 .NET Framework 2.0 版的 Framework 版本為目標。  

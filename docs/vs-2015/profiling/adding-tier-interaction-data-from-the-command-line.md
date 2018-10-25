@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872066"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ ms.locfileid: "49228408"
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行程式碼剖析的範例  
   
-1.  使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
+1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
   
-2.  初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：  
+2. 初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  啟動分析工具。 輸入下列命令：  
+3. 啟動分析工具。 輸入下列命令：  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  使用 VSPerfCmd 啟動應用程式。 輸入下列命令：  
+4. 使用 VSPerfCmd 啟動應用程式。 輸入下列命令：  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  執行應用程式以收集分析資料，接著按照一般方式關閉應用程式。  
+5. 執行應用程式以收集分析資料，接著按照一般方式關閉應用程式。  
   
-6.  清除 TIP 環境變數。 輸入下列命令：  
+6. 清除 TIP 環境變數。 輸入下列命令：  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- 如需詳細資訊，請參閱[對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)。  
+   如需詳細資訊，請參閱[對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)。  
   
 ### <a name="profiling-services"></a>對服務進行程式碼剖析  
  若要分析服務 (包括 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式)，請使用 **VSPerfClrEnv /GlobalInteractionOn** 選項設定環境變數，再使用 **VSPerfClrEnv /GlobalInteractionOff** 選項將它們移除。  
@@ -95,33 +95,33 @@ ms.locfileid: "49228408"
   
 ##### <a name="profiling-a-windows-service-example"></a>對 Windows 服務進行程式碼剖析的範例  
   
-1.  如有必要，請安裝服務。  
+1. 如有必要，請安裝服務。  
   
-2.  使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
+2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
   
-3.  初始化 .NET 程式碼剖析環境變數。 輸入下列命令：  
+3. 初始化 .NET 程式碼剖析環境變數。 輸入下列命令：  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  初始化 TIP 環境變數。 輸入下列命令  
+4. 初始化 TIP 環境變數。 輸入下列命令  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  重新啟動電腦以註冊環境變數。  
+5. 重新啟動電腦以註冊環境變數。  
   
-6.  使用系統管理員權限開啟命令提示視窗。  
+6. 使用系統管理員權限開啟命令提示視窗。  
   
-7.  啟動分析工具。 輸入下列命令：  
+7. 啟動分析工具。 輸入下列命令：  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  如有必要，請啟動服務。  
+8. 如有必要，請啟動服務。  
   
 9. 將程式碼剖析工具附加至服務。 輸入下列命令：  
   
@@ -143,11 +143,11 @@ ms.locfileid: "49228408"
   
 13. 重新啟動電腦以註冊清除的環境變數。  
   
- 如需詳細資訊，請參閱下列其中一個主題：  
+    如需詳細資訊，請參閱下列其中一個主題：  
   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)  
+    [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 加入階層互動資料  
  VSPerfASPNETCmd 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式。 相較於 **VSPerfCmd** 命令列工具，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 VSPerfASPNETCmd 的這些功能使得階層互動資料的收集變得格外輕鬆。  

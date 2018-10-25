@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925203"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180317"
 當您建立自動程式碼 UI 測試時，**自動程式碼 UI 測試產生器**會建立待測使用者介面的對應，以及所有測試的測試方法、參數和判斷提示。 它也會針對每個測試建立類別檔案。
 
 |檔案|內容|可編輯？|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[宣告區段](#UIMapDesignerFile)<br /><br /> [UIMap 類別](#UIMapClass) (部分、自動產生)<br /><br /> [方法](#UIMapMethods)<br /><br /> [屬性](#UIMapProperties)|否|
 |[UIMap.cs](#UIMapCS)|[UIMap 類別](#UIMapCS) (部分)|[是]|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 類別](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [屬性](#CodedUITestProperties)|[是]|

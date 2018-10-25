@@ -17,12 +17,12 @@ ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9bf61352ab7376aa5a4d3d862858e066025b160
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd91398a341ec413849fa579bb95fd1a721aad99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932048"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -34,12 +34,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa2e01859190b4e22f076892b23595c4617a29f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951297"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>輸出視窗中的診斷訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49246779"
 ## <a name="output-methods"></a>輸出方法  
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 類別會提供下列輸出方法：  
   
--   各種 `Write` 方法可在不中斷執行的情況下輸出資訊。 這些方法將取代前幾版 Visual Basic 所使用的 `Debug.Print` 方法。  
+- 各種 `Write` 方法可在不中斷執行的情況下輸出資訊。 這些方法將取代前幾版 Visual Basic 所使用的 `Debug.Print` 方法。  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法會在指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱 < [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法會在指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱 < [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
   
--   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法一定會中斷執行並輸出資訊。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法一定會中斷執行並輸出資訊。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。  
   
- 程式所輸出的應用程式中，除了**輸出**視窗可以顯示下列資訊：  
+  程式所輸出的應用程式中，除了**輸出**視窗可以顯示下列資訊：  
   
--   偵錯工具已載入或卸載的模組。  
+- 偵錯工具已載入或卸載的模組。  
   
--   已擲回的例外狀況。  
+- 已擲回的例外狀況。  
   
--   已結束的處理序。  
+- 已結束的處理序。  
   
--   已結束的執行序。  
+- 已結束的執行序。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

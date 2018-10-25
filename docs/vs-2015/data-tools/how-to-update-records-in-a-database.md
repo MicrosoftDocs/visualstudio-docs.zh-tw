@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949028"
 ---
 # <a name="how-to-update-records-in-a-database"></a>如何：更新資料庫中的資料錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ ms.locfileid: "49199510"
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>若要更新資料庫中的記錄與使用 DataSet、 DataTable、 DataRow，或是 DataRows() TableAdapter.Update 方法  
   
-1.  編輯所需的資料錄<xref:System.Data.DataTable>藉由直接編輯<xref:System.Data.DataRow>在<xref:System.Data.DataTable>。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯 DataTable 中的資料列](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)。  
+1. 編輯所需的資料錄<xref:System.Data.DataTable>藉由直接編輯<xref:System.Data.DataRow>在<xref:System.Data.DataTable>。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯 DataTable 中的資料列](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)。  
   
-2.  在 編輯資料列之後<xref:System.Data.DataTable>，呼叫`TableAdapter.Update`方法。 您可以控制要藉由傳入整個更新的資料量<xref:System.Data.DataSet>，則<xref:System.Data.DataTable>，陣列<xref:System.Data.DataRow>或單一<xref:System.Data.DataRow>。  
+2. 在 編輯資料列之後<xref:System.Data.DataTable>，呼叫`TableAdapter.Update`方法。 您可以控制要藉由傳入整個更新的資料量<xref:System.Data.DataSet>，則<xref:System.Data.DataTable>，陣列<xref:System.Data.DataRow>或單一<xref:System.Data.DataRow>。  
   
-     下列程式碼示範如何編輯中的資料錄<xref:System.Data.DataTable>，然後呼叫`TableAdapter.Update`方法，以將變更儲存到資料庫。 （此範例使用 Northwind 資料庫區域資料表）。  
+    下列程式碼示範如何編輯中的資料錄<xref:System.Data.DataTable>，然後呼叫`TableAdapter.Update`方法，以將變更儲存到資料庫。 （此範例使用 Northwind 資料庫區域資料表）。  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- 如果您的應用程式會使用物件來將資料儲存在您的應用程式，您可以使用 TableAdapter 的`DBDirect`將資料從您的物件傳送到資料庫的直接方法。 這些方法可讓您將每個資料行的個別值傳遞為方法參數。 呼叫這個方法會傳遞至方法的資料行值更新資料庫中的現有記錄。  
+   如果您的應用程式會使用物件來將資料儲存在您的應用程式，您可以使用 TableAdapter 的`DBDirect`將資料從您的物件傳送到資料庫的直接方法。 這些方法可讓您將每個資料行的個別值傳遞為方法參數。 呼叫這個方法會傳遞至方法的資料行值更新資料庫中的現有記錄。  
   
- 下列程序會使用 Northwind`Region`做為範例的資料表。  
+   下列程序會使用 Northwind`Region`做為範例的資料表。  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>若要更新記錄在資料庫中使用 取得資料行值 TableAdapter.Update 方法  
   

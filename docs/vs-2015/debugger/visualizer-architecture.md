@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828685"
 ---
 # <a name="visualizer-architecture"></a>視覺化檢視架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 偵錯工具視覺化檢視的架構分為兩部分：  
   
--   *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
+- *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
   
--   *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
+- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
   
- 視覺化檢視是可讓偵錯工具顯示的偵錯工具元件 (*視覺化*) 中有意義、 容易了解表單的資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
+  視覺化檢視是可讓偵錯工具顯示的偵錯工具元件 (*視覺化*) 中有意義、 容易了解表單的資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
   
- 要視覺化的資料物件位於您正在偵錯的程序 (*偵錯項目*程序)。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
+  要視覺化的資料物件位於您正在偵錯的程序 (*偵錯項目*程序)。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
   
 |偵錯工具處理序|偵錯項目處理序|  
 |----------------------|----------------------|  

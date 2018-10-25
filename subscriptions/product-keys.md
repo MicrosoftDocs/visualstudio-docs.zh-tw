@@ -9,12 +9,12 @@ description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900848"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -79,11 +79,11 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 
 索取產品金鑰：
-1.  登入 Visual Studio 訂用帳戶。  您必須登入才能下載產品或索取產品金鑰。
-2.  按一下 [[產品金鑰]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 索引標籤。
-3.  產品金鑰會依產品名稱的字母順序列出。  您可以向下捲動至所需產品的名稱，或使用頁面頂端的搜尋列搜尋產品。
-    > [!div class="mx-imgBorder"]
-    > ![搜尋產品金鑰](_img\product-keys\visio-product-key-cropped.png)
+1. 登入 Visual Studio 訂用帳戶。  您必須登入才能下載產品或索取產品金鑰。
+2. 按一下 [[產品金鑰]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 索引標籤。
+3. 產品金鑰會依產品名稱的字母順序列出。  您可以向下捲動至所需產品的名稱，或使用頁面頂端的搜尋列搜尋產品。
+   > [!div class="mx-imgBorder"]
+   > ![搜尋產品金鑰](_img/product-keys/visio-product-key-cropped.png)
 
 在此範例中，我們使用了搜尋列尋找 Visio 2010 的產品金鑰。
 您會看到列出數個 Visio 2010 版本。  Visio Standard 2010 和 Visio Premium 2010 已各領取一個金鑰，且各餘四個金鑰。  已領取的兩個金鑰都是零售金鑰，會顯示在頁面上。  請注意，您可以在 [備註] 欄中簡短註記已領取的金鑰。  這個項目可以和 [已領取] 欄中的日期搭配使用，追蹤已領取的金鑰。  例如，當您使用金鑰啟用產品安裝時，您可能會寫下它。

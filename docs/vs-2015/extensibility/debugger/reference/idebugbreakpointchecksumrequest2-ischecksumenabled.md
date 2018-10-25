@@ -15,12 +15,12 @@ ms.assetid: 8b1853b5-745c-4cd6-88a9-ce0673971bb0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b93ee720f411e2cfdbdc4d93af52694d53834c9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a464dd39038181b61b15d07d50b66099f167c354
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830609"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

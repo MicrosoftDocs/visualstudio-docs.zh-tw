@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc6ef0463f98b5aec938ff7748a64b34b32c3934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843830"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,43 +45,43 @@ ms.locfileid: "49181944"
 ##  <a name="OrganizeNodes"></a> 群組程式碼項目  
  您可以加入新的群組，或將現有的節點轉換成群組。  
   
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。  
   
-2.  若要將程式碼項目轉換成群組，請找出該程式碼項目的 `<Node/>` 項目。  
+2. 若要將程式碼項目轉換成群組，請找出該程式碼項目的 `<Node/>` 項目。  
   
-     \-或-  
+    \-或-  
   
-     若要加入新的群組，請找出 `<Nodes>` 區段。 加入新的 `<Node/>` 項目。  
+    若要加入新的群組，請找出 `<Nodes>` 區段。 加入新的 `<Node/>` 項目。  
   
-3.  在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如：  
+3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如：  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyFirstGroup" Group="Expanded" />  
-       <Node Id="MySecondGroup" Group="Collapsed" />  
-    </Nodes>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyFirstGroup" Group="Expanded" />  
+      <Node Id="MySecondGroup" Group="Collapsed" />  
+   </Nodes>  
+   ```  
   
-4.  在 `<Links>` 區段中，針對群組程式碼項目與其子程式碼項目之間的每一個關聯性，確定其中存在具有下列屬性的 `<Link/>` 項目：  
+4. 在 `<Links>` 區段中，針對群組程式碼項目與其子程式碼項目之間的每一個關聯性，確定其中存在具有下列屬性的 `<Link/>` 項目：  
   
-    -   `Source` 屬性，指定群組程式碼項目  
+   - `Source` 屬性，指定群組程式碼項目  
   
-    -   `Target` 屬性，指定子程式碼項目  
+   - `Target` 屬性，指定子程式碼項目  
   
-    -   `Category` 屬性，指定群組程式碼項目與其子程式碼項目之間的 `Contains` 關聯性  
+   - `Category` 屬性，指定群組程式碼項目與其子程式碼項目之間的 `Contains` 關聯性  
   
      例如:   
   
-    ```xml  
-    <Links>  
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
-    </Links>  
-    ```  
+   ```xml  
+   <Links>  
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
+   </Links>  
+   ```  
   
-     如需詳細資訊`Category`屬性，請參閱[指派分類給程式碼項目和連結](#AssignCategories)。  
+    如需詳細資訊`Category`屬性，請參閱[指派分類給程式碼項目和連結](#AssignCategories)。  
   
 ##  <a name="ChangeGraphStyle"></a> 變更地圖樣式  
  您可以編輯此對應的 .dgml 檔案，變更圖形的背景色彩和框線色彩。 若要變更的程式碼項目和連結的樣式，請參閱[變更程式碼項目和連結的樣式](#Highlight)。  
@@ -252,81 +252,81 @@ ms.locfileid: "49181944"
   
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>將自訂樣式套用至程式碼項目或連結的群組  
   
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。  
   
-2.  如果 `<Styles></Styles>` 項目不存在，請在 `<DirectedGraph></DirectedGraph>` 項目之後的 `<Links></Links>` 項目底下加入該項目。  
+2. 如果 `<Styles></Styles>` 項目不存在，請在 `<DirectedGraph></DirectedGraph>` 項目之後的 `<Links></Links>` 項目底下加入該項目。  
   
-3.  在 `<Styles></Styles>` 項目中的 `<Style/>` 項目底下，指定下列屬性：  
+3. 在 `<Styles></Styles>` 項目中的 `<Style/>` 項目底下，指定下列屬性：  
   
-    -   `TargetType="Node` &#124; `Link | Graph"`  
+   - `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="` *NameInLegendBox* `"`  
+   - `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="` *NameInStylePickerBox* `"`  
+   - `ValueLabel="` *NameInStylePickerBox* `"`  
   
      若要將自訂樣式套用至所有目標類型，請勿使用條件。  
   
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>將條件式樣式套用至程式碼項目或連結的群組  
   
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。  
   
-2.  在 `<Style/>` 項目中加入包含 `<Condition/>` 屬性的 `Expression` 項目，以指定傳回布林值的運算式。  
+2. 在 `<Style/>` 項目中加入包含 `<Condition/>` 屬性的 `Expression` 項目，以指定傳回布林值的運算式。  
   
-     例如:   
+    例如:   
   
-    ```xml  
-    <Condition Expression="MyCategory"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory"/>  
+   ```  
   
-     - 或 -  
+    - 或 -  
   
-    ```xml  
-    <Condition Expression="MyCategory > 100"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory > 100"/>  
+   ```  
   
-     - 或 -  
+    - 或 -  
   
-    ```xml  
-    <Condition Expression="HasCategory('MyCategory')"/>  
-    ```  
+   ```xml  
+   <Condition Expression="HasCategory('MyCategory')"/>  
+   ```  
   
-     這個運算式會使用下列 Backus-Naur 格式 (BNF) 語法：  
+    這個運算式會使用下列 Backus-Naur 格式 (BNF) 語法：  
   
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
   
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
   
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; 「 或 」 &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; 「 或 」 &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
   
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet> :: = 識別碼  
+    <PropertyGet> :: = 識別碼  
   
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
-     <Identifier> ::= [^. ]*  
+    <Identifier> ::= [^. ]*  
   
-     <Literal> :: = 單引號或雙引號括住字串常值  
+    <Literal> :: = 單引號或雙引號括住字串常值  
   
-     <Number> :: = 包含選擇性小數點的數字的字串  
+    <Number> :: = 包含選擇性小數點的數字的字串  
   
-     您可以指定多個`<Condition/>`項目，都必須要套用樣式，則為 true。  
+    您可以指定多個`<Condition/>`項目，都必須要套用樣式，則為 true。  
   
-3.  在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。  
+3. 在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。  
   
-     例如：  
+    例如：  
   
-    ```xml  
-    <Setter Property="BackGround" Value="Green"/>  
-    ```  
+   ```xml  
+   <Setter Property="BackGround" Value="Green"/>  
+   ```  
   
- 下列條件是一個簡單的完整範例，它會指定讓程式碼項目根據其 `Passed` 分類是設為 `True` 還是 `False` 來顯示為綠色或紅色：  
+   下列條件是一個簡單的完整範例，它會指定讓程式碼項目根據其 `Passed` 分類是設為 `True` 還是 `False` 來顯示為綠色或紅色：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -575,74 +575,74 @@ ms.locfileid: "49181944"
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>將文件或 URL 連結到程式碼項目  
   
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。  
   
-2.  找出您要的程式碼項目之 `<Node/>` 項目。  
+2. 找出您要的程式碼項目之 `<Node/>` 項目。  
   
-3.  執行下表的其中一項工作：  
+3. 執行下表的其中一項工作：  
   
-     單一程式碼項目  
+    單一程式碼項目  
   
-    -   在 `<Node/>` 或 `<Link/>` 項目中，加入 `Reference` 屬性以指定此程式碼項目的位置。  
+   - 在 `<Node/>` 或 `<Link/>` 項目中，加入 `Reference` 屬性以指定此程式碼項目的位置。  
   
-        > [!NOTE]
-        >  每個項目只能有一個 `Reference` 屬性。  
+     > [!NOTE]
+     >  每個項目只能有一個 `Reference` 屬性。  
   
      例如：  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" Reference="MyDocument.txt" />  
-    </Nodes>  
-    <Properties>  
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" Reference="MyDocument.txt" />  
+   </Nodes>  
+   <Properties>  
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     多個程式碼項目  
+    多個程式碼項目  
   
-    1.  在 `<Node/>` 或 `<Link/>` 中加入新屬性，以指定每個參考的位置。  
+   1. 在 `<Node/>` 或 `<Link/>` 中加入新屬性，以指定每個參考的位置。  
   
-    2.  在 `<Properties>` 區段中：  
+   2. 在 `<Properties>` 區段中：  
   
-        1.  針對每一個新的參考類型加入 `<Property/>` 項目。  
+      1.  針對每一個新的參考類型加入 `<Property/>` 項目。  
   
-        2.  將 `Id` 屬性設定為新參考屬性的名稱。  
+      2.  將 `Id` 屬性設定為新參考屬性的名稱。  
   
-        3.  新增`IsReference`屬性，並將它設定為`True`讓參考出現在程式碼項目的**移至參考**快顯功能表。  
+      3.  新增`IsReference`屬性，並將它設定為`True`讓參考出現在程式碼項目的**移至參考**快顯功能表。  
   
-        4.  使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。  
+      4.  使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。  
   
-     例如:   
+      例如:   
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     在此對應上，該程式碼項目名稱會顯示為加上底線。 當您開啟程式碼項目或連結的捷徑功能表時，您會看到**移至參考**包含連結的程式碼項目，以供您選擇的快顯功能表。  
+    在此對應上，該程式碼項目名稱會顯示為加上底線。 當您開啟程式碼項目或連結的捷徑功能表時，您會看到**移至參考**包含連結的程式碼項目，以供您選擇的快顯功能表。  
   
-4.  使用 `ReferenceTemplate` 屬性來指定多個參考使用的共同字串 (例如 URL)，而不要在參考中重複設定該字串。  
+4. 使用 `ReferenceTemplate` 屬性來指定多個參考使用的共同字串 (例如 URL)，而不要在參考中重複設定該字串。  
   
-     `ReferenceTemplate` 屬性會指定參考之值的預留位置。 在下列範例中，`{0}` 屬性中的 `ReferenceTemplate` 預留位置將會由 `MyFirstReference` 項目中的 `MySecondReference` 及 `<Node/>` 屬性值取代，以產生完整路徑：  
+    `ReferenceTemplate` 屬性會指定參考之值的預留位置。 在下列範例中，`{0}` 屬性中的 `ReferenceTemplate` 預留位置將會由 `MyFirstReference` 項目中的 `MySecondReference` 及 `<Node/>` 屬性值取代，以產生完整路徑：  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
+   </Properties>  
+   ```  
   
-5.  若要檢視參考的程式碼項目或來自此對應的程式碼項目，請開啟該程式碼項目或連結的捷徑功能表。 選擇**移至參考**，然後程式碼項目。  
+5. 若要檢視參考的程式碼項目或來自此對應的程式碼項目，請開啟該程式碼項目或連結的捷徑功能表。 選擇**移至參考**，然後程式碼項目。  
   
 ## <a name="see-also"></a>另請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   

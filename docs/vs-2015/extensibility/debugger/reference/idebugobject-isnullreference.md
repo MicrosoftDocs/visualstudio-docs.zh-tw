@@ -17,12 +17,12 @@ ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b6555bd9a683ec4b9b577c66f3159c0973992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 580ea2db9a9b9e7d3e40aff7f1d705a37a090513
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845157"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912028"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ ms.locfileid: "49193553"
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>僅建置啟始專案和其相依性  
   
-1.  在功能表列上選擇 [工具] 、[選項] 。  
+1. 在功能表列上選擇 [工具] 、[選項] 。  
   
-2.  在 [選項] 對話方塊方塊中，展開 [專案和方案] 節點，然後選擇 [建置並執行] 頁面。  
+2. 在 [選項] 對話方塊方塊中，展開 [專案和方案] 節點，然後選擇 [建置並執行] 頁面。  
   
-     [建置並執行]、[專案和方案]、[選項] 對話方塊隨即開啟。  
+    [建置並執行]、[專案和方案]、[選項] 對話方塊隨即開啟。  
   
-3.  選取 [僅在執行時建置啟始專案和相依性] 核取方塊。  
+3. 選取 [僅在執行時建置啟始專案和相依性] 核取方塊。  
   
-     如果選取此核取方塊，當您執行下列步驟之一時，只會建置目前的啟始專案和其相依性︰  
+    如果選取此核取方塊，當您執行下列步驟之一時，只會建置目前的啟始專案和其相依性︰  
   
-    -   在功能表列上，選擇 [偵錯]、[開始]\ (F5)。  
+   - 在功能表列上，選擇 [偵錯]、[開始]\ (F5)。  
   
-    -   在功能表列上，選擇 [建置]、[建置方案]\ (CTRL+SHIFT+B)。  
+   - 在功能表列上，選擇 [建置]、[建置方案]\ (CTRL+SHIFT+B)。  
   
      如果清除此核取方塊，當您執行其中一個上述命令時，會建置所有專案、其相依性及方案檔。 根據預設，會清除此核取方塊。  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>只建置選取的 Visual C++ 專案  
   
-1.  選擇 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，然後在功能表列上選擇 [建置]、[僅限專案]，以及下列其中一個命令︰  
+1. 選擇 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，然後在功能表列上選擇 [建置]、[僅限專案]，以及下列其中一個命令︰  
   
-    -   僅限建置 <專案名稱>  
+   - 僅限建置 <專案名稱>  
   
-    -   僅限重建 <專案名稱>  
+   - 僅限重建 <專案名稱>  
   
-    -   僅清除 <專案名稱>  
+   - 僅清除 <專案名稱>  
   
-    -   僅連結 <專案名稱>  
+   - 僅連結 <專案名稱>  
   
      這些命令只適用於您選擇的 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，而不建置、重建、清除或連結任何專案相依性或方案檔。 根據您的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本，[僅限專案] 子功能表可能包含更多命令。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906164"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c 
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>若要將 Microsoft.CppCoreCheck 套件新增至您的專案  
   
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下您想要將封裝加入方案中開啟您專案的內容功能表。 選擇**管理 NuGet 套件**來開啟**NuGet 套件管理員**。  
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下您想要將封裝加入方案中開啟您專案的內容功能表。 選擇**管理 NuGet 套件**來開啟**NuGet 套件管理員**。  
   
-2.  在  **NuGet 套件管理員**視窗中，搜尋 Microsoft.CppCoreCheck。  
+2. 在  **NuGet 套件管理員**視窗中，搜尋 Microsoft.CppCoreCheck。  
   
-     ![Nuget 套件管理員 視窗會顯示封裝 CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Nuget 套件管理員 視窗會顯示封裝 CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝** 按鈕，將規則新增至您的專案。  
+3. 選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝** 按鈕，將規則新增至您的專案。  
   
- NuGet 套件會將您的專案上啟用程式碼分析時，會叫用您專案中的其他的 MSBuild.targets 檔案。 這個.targets 檔案會將 c + + Core Check 規則做為額外的延伸模組加入至 Visual Studio 程式碼分析工具。  
+   NuGet 套件會將您的專案上啟用程式碼分析時，會叫用您專案中的其他的 MSBuild.targets 檔案。 這個.targets 檔案會將 c + + Core Check 規則做為額外的延伸模組加入至 Visual Studio 程式碼分析工具。  
   
- 您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**核取方塊**程式碼分析**一節**屬性頁**對話方塊您的專案。  
+   您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**核取方塊**程式碼分析**一節**屬性頁**對話方塊您的專案。  
   
- ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- C + + Core Check 規則成為預設的規則集執行程式碼分析已啟用時的一部分。 由於 c + + Core Check 規則在開發期間，某些規則可能無法供使用的所有程式碼，但在開發期間可能有用的資訊。 這些規則會發行為實驗性。 您可以選擇是否要為您的專案屬性中執行的已釋出或實驗性的規則。  
+   C + + Core Check 規則成為預設的規則集執行程式碼分析已啟用時的一部分。 由於 c + + Core Check 規則在開發期間，某些規則可能無法供使用的所有程式碼，但在開發期間可能有用的資訊。 這些規則會發行為實驗性。 您可以選擇是否要為您的專案屬性中執行的已釋出或實驗性的規則。  
   
- ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- 若要啟用或停用 c + + Core Check 規則集，請開啟**屬性頁**為您的專案 對話方塊。 底下**組態屬性**，展開**程式碼分析**，**延伸**。 下拉式清單中控制項旁**啟用 c + + Core Check （發行）** 或**啟用 c + + Core Check （實驗性）**，選擇**是**或是**否**。 選擇 **[確定]** 或是**套用**以儲存變更。  
+   若要啟用或停用 c + + Core Check 規則集，請開啟**屬性頁**為您的專案 對話方塊。 底下**組態屬性**，展開**程式碼分析**，**延伸**。 下拉式清單中控制項旁**啟用 c + + Core Check （發行）** 或**啟用 c + + Core Check （實驗性）**，選擇**是**或是**否**。 選擇 **[確定]** 或是**套用**以儲存變更。  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>檢查類型、 範圍和存留期  
  C + + Core Check 套件目前包含的西洋棋[型別安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)，[界限安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)，並[存留期安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime)設定檔。  
@@ -81,15 +81,15 @@ int main()
   
  此範例會示範幾個可以找到的 c + + Core Check 規則的警告：  
   
--   C26494 是規則 Type.5： 一律初始化物件。  
+- C26494 是規則 Type.5： 一律初始化物件。  
   
--   C26485 是規則 Bounds.3： 沒有陣列到指標 」 衰減。  
+- C26485 是規則 Bounds.3： 沒有陣列到指標 」 衰減。  
   
--   C26481 是規則 Bounds.1： 不使用指標算術。 請改用 `span`。  
+- C26481 是規則 Bounds.1： 不使用指標算術。 請改用 `span`。  
   
- 如果安裝和啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個 c + + Core Check 的程式碼分析規則集。 以下是範例程式碼的組建輸出：  
+  如果安裝和啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個 c + + Core Check 的程式碼分析規則集。 以下是範例程式碼的組建輸出：  
   
- **1 >---已開始建置： 專案： CoreCheckExample、 組態： Debug Win32-**  
+  **1 >---已開始建置： 專案： CoreCheckExample、 組態： Debug Win32-**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj]-> [C:\Users\username\documents\visual studio 2015\P**  

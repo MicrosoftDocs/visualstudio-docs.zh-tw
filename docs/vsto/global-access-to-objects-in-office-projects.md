@@ -33,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 933e53876108f4e8ee4260ae4ac4fdf41f8bbf01
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018ffc5c165c8cea7df66911c71f636712df4229
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932035"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
   當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
@@ -48,30 +48,30 @@ ms.locfileid: "35671715"
 ## <a name="how-to-use-the-globals-class"></a>如何使用 Globals 類別  
  `Globals` 是靜態類別，會將某些項目的參考保留在專案中。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取下列項目：  
   
--   Excel 活頁簿或範本專案中的 `ThisWorkbook` 和 `Sheet`*n* 類別。 您可以使用 `Globals.ThisWorkbook` 和 `Sheet`*n* 屬性來存取這些物件。  
+- Excel 活頁簿或範本專案中的 `ThisWorkbook` 和 `Sheet`*n* 類別。 您可以使用 `Globals.ThisWorkbook` 和 `Sheet`*n* 屬性來存取這些物件。  
   
--   Word 文件或範本專案中的 `ThisDocument` 類別。 您可以使用 `Globals.ThisDocument` 屬性來存取這個物件。  
+- Word 文件或範本專案中的 `ThisDocument` 類別。 您可以使用 `Globals.ThisDocument` 屬性來存取這個物件。  
   
--   `ThisAddIn` VSTO 增益集專案中的類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
+- `ThisAddIn` VSTO 增益集專案中的類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
   
--   專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱 <<c0> [ 存取在執行階段功能區](../vsto/accessing-the-ribbon-at-run-time.md)。  
+- 專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱 <<c0> [ 存取在執行階段功能區](../vsto/accessing-the-ribbon-at-run-time.md)。  
   
--   Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱 <<c0> [ 存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)。  
+- Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱 <<c0> [ 存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)。  
   
--   Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：  
+- Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：  
   
-    -   <xref:Microsoft.Office.Tools.Factory>  
+  -   <xref:Microsoft.Office.Tools.Factory>  
   
-    -   <xref:Microsoft.Office.Tools.Excel.Factory>  
+  -   <xref:Microsoft.Office.Tools.Excel.Factory>  
   
-    -   <xref:Microsoft.Office.Tools.Outlook.Factory>  
+  -   <xref:Microsoft.Office.Tools.Outlook.Factory>  
   
-    -   <xref:Microsoft.Office.Tools.Word.Factory>  
+  -   <xref:Microsoft.Office.Tools.Word.Factory>  
   
- 例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控制項。  
+  例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控制項。  
   
- [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
- [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
+  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
+  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
 ## <a name="initialize-the-globals-class"></a>初始化 Globals 類別  
  嘗試使用的程式碼`Globals`類別的文件或 VSTO 增益集初始化之前可能會擲回執行的階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。  

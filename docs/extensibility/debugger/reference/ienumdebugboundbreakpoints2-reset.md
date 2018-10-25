@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Reset |Microsoft 文件
+title: IEnumDebugBoundBreakpoints2::Reset |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2efed57d74f748de762ce4dcf48c7774ad7d4303
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b5e4849c13e5a7c9e88dd2be450cb75d4be70a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928148"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 將列舉重設第一個項目。  
@@ -38,10 +38,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法是下, 一次呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)方法會傳回第一個元素的列舉型別。  
+ 呼叫這個方法是，下一個呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)方法會傳回第一個元素的列舉型別。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

@@ -8,12 +8,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68379a05e77e30e5717c06c336592a90d35973fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866346"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
 Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不正常精細，延伸模組作者，讓任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
@@ -25,75 +25,75 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
   
  以規則為基礎的 UI 內容可以使用各種不同的方式：  
   
-1.  指定命令和工具視窗的可見性條件的約束。 直到符合 UI 內容規則時，您可以隱藏的命令/工具視窗。  
+1. 指定命令和工具視窗的可見性條件的約束。 直到符合 UI 內容規則時，您可以隱藏的命令/工具視窗。  
   
-2.  為自動載入條件約束： 只在符合規則時，自動載入封裝。  
+2. 為自動載入條件約束： 只在符合規則時，自動載入封裝。  
   
-3.  做為延遲的工作： 延遲載入，直到經過指定的間隔，且仍然符合規則。  
+3. 做為延遲的工作： 延遲載入，直到經過指定的間隔，且仍然符合規則。  
   
- 此機制可供任何 Visual Studio 擴充功能。  
+   此機制可供任何 Visual Studio 擴充功能。  
   
 ## <a name="create-a-rule-based-ui-context"></a>建立規則為基礎的 UI 內容  
  假設您有稱為 TestPackage 延伸模組，提供功能表命令，僅適用於檔案與 *.config*延伸模組。 VS2015 之前, 的最佳選項是載入 TestPackage 時<xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A>UI 內容已啟動。 以這種方式載入 TestPackage 並非有效，因為載入的方案甚至不能包含 *.config*檔案。 這些步驟顯示如何以規則為基礎的 UI 內容可用來啟用的 UI 內容的檔案時才 *.config*延伸模組，並選取該 UI 內容啟動時載入 TestPackage。  
   
-1.  定義新的 ui 內容 GUID，並加入 VSPackage 類別<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。  
+1. 定義新的 ui 內容 GUID，並加入 VSPackage 類別<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。  
   
-     例如，假設新的 ui 內容 「 UIContextGuid"是要加入。 建立 GUID (您可以按一下來建立 GUID**工具** > **建立 GUID**) 是 「 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然後，您會新增下列宣告套件類別：  
+    例如，假設新的 ui 內容 「 UIContextGuid"是要加入。 建立 GUID (您可以按一下來建立 GUID**工具** > **建立 GUID**) 是 「 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然後，您會新增下列宣告套件類別：  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     針對屬性，加入下列值: （這些屬性的詳細資料將於稍後說明）  
+    針對屬性，加入下列值: （這些屬性的詳細資料將於稍後說明）  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     這些中繼資料定義新的 ui 內容 GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 和運算式參考的 「 DotConfig"的詞彙。 「 DotConfig 」 一詞會評估為 true，每當目前的選取範圍，在使用中的階層架構中有符合規則運算式模式的名稱 「\\.config$ 」 (結尾 *.config*)。 （預設值） 值定義的規則適用於偵錯的選擇性名稱。  
+    這些中繼資料定義新的 ui 內容 GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 和運算式參考的 「 DotConfig"的詞彙。 「 DotConfig 」 一詞會評估為 true，每當目前的選取範圍，在使用中的階層架構中有符合規則運算式模式的名稱 「\\.config$ 」 (結尾 *.config*)。 （預設值） 值定義的規則適用於偵錯的選擇性名稱。  
   
-     屬性的值會新增至 pkgdef 建置期間之後產生。  
+    屬性的值會新增至 pkgdef 建置期間之後產生。  
   
-2.  VSCT 檔案中 TestPackage 的命令，加入適當的命令中的"DynamicVisibility 」 旗標：  
+2. VSCT 檔案中 TestPackage 的命令，加入適當的命令中的"DynamicVisibility 」 旗標：  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  在 VSCT 可視性 區段中，將繫結適當的命令，以新的 ui 內容 #1 中所定義的 GUID:  
+3. 在 VSCT 可視性 區段中，將繫結適當的命令，以新的 ui 內容 #1 中所定義的 GUID:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  在 [符號] 區段中，新增 ui 內容的定義：  
+4. 在 [符號] 區段中，新增 ui 內容的定義：  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     現在，內容功能表命令 *\*.config*檔案將會顯示在 [方案總管] 中選取的項目時才 *.config*檔案和套件將不會載入之前的其中之一選取命令。  
+    現在，內容功能表命令 *\*.config*檔案將會顯示在 [方案總管] 中選取的項目時才 *.config*檔案和套件將不會載入之前的其中之一選取命令。  
   
- 接下來，使用偵錯工具來確認只有當您預期載入封裝。 若要偵錯 TestPackage:  
+   接下來，使用偵錯工具來確認只有當您預期載入封裝。 若要偵錯 TestPackage:  
   
-1.  在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
+5. 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
   
-2.  建置 TestPackage 並開始偵錯。  
+6. 建置 TestPackage 並開始偵錯。  
   
-3.  建立專案或開啟其中一個。  
+7. 建立專案或開啟其中一個。  
   
-4.  選取任何副檔名的檔案以外 *.config*。應該不會叫用中斷點。  
+8. 選取任何副檔名的檔案以外 *.config*。應該不會叫用中斷點。  
   
-5.  選取  *App.Config*檔案。  
+9. 選取  *App.Config*檔案。  
   
- TestPackage 載入，並在中斷點停止。  
+   TestPackage 載入，並在中斷點停止。  
   
 ## <a name="add-more-rules-for-ui-context"></a>新增更多規則的 UI 內容  
  由於 UI 內容規則都是布林運算式，您可以新增更多限制的規則 UI 內容。 例如，在上述的 UI 內容中，您可以指定只在載入內含專案的方案時才套用規則。 如此一來，命令不會顯示是否您開啟 *.config*檔案以獨立檔案，而非專案的一部分。  

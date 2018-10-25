@@ -12,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 527086fa2b17de0330b394a7041232312f3b1719
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4ce7243630179aede0ce20aba998f6cb5eed0100
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887160"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142：透明程式碼不可以使用 LinkDemand 加以保護
+
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2142|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

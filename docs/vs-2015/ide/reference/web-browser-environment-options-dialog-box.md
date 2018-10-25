@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931829"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "49175600"
  檢視來源在  
  設定當您在網頁上從內部網頁瀏覽器選擇 [檢視原始檔] 時，用來開啟網頁的編輯器。  
   
--   **原始檔編輯器**：選取即可在[撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)時檢視原始檔。  
+- **原始檔編輯器**：選取即可在[撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)時檢視原始檔。  
   
--   **HTML 編輯器**：選取即可在 [HTML 設計工具](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。  
+- **HTML 編輯器**：選取即可在 [HTML 設計工具](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。  
   
--   **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。  
+- **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。  
   
- Internet Explorer 選項  
- 按一下即可在 [網際網路內容] 對話方塊中變更 Internet Explorer 的選項。 在此對話方塊中所做的變更，會同時影響內部網頁瀏覽器，以及在 Visual Studio IDE 外部起始的 Internet Explorer 執行個體 (例如透過 [開始] 功能表)。  
+  Internet Explorer 選項  
+  按一下即可在 [網際網路內容] 對話方塊中變更 Internet Explorer 的選項。 在此對話方塊中所做的變更，會同時影響內部網頁瀏覽器，以及在 Visual Studio IDE 外部起始的 Internet Explorer 執行個體 (例如透過 [開始] 功能表)。  
   
 > [!NOTE]
 >  使用 [瀏覽方式] 對話方塊，以不同的外部網頁瀏覽器取代 Visual Studio 的內部網頁瀏覽器 (也就是某個版本的 Internet Explorer)。  

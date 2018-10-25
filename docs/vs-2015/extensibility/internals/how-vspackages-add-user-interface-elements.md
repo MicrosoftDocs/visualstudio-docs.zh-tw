@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872443"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何新增使用者介面項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列
 #### <a name="menus"></a>Menus  
  每個功能表指[Menu Element](../../extensibility/menu-element.md)中`Menus`一節。 必須有功能表`guid`， `id`，並`priority`屬性，和`Parent`項目，也下列的其他屬性和子系：  
   
--   A`type`指定功能表是否應該出現在 IDE 中，為一種功能表或工具列中的屬性。  
+- A`type`指定功能表是否應該出現在 IDE 中，為一種功能表或工具列中的屬性。  
   
--   A [Strings 元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，在 IDE 中，指定功能表的標題和[CommandName 元素](../../extensibility/commandname-element.md)，以指定的名稱。用於**命令**來存取功能表的視窗。  
+- A [Strings 元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，在 IDE 中，指定功能表的標題和[CommandName 元素](../../extensibility/commandname-element.md)，以指定的名稱。用於**命令**來存取功能表的視窗。  
   
--   選擇性旗標。 A [Command Flag 元素](../../extensibility/command-flag-element.md)可能出現在功能表定義中，以變更其外觀或行為在 IDE 中的。  
+- 選擇性旗標。 A [Command Flag 元素](../../extensibility/command-flag-element.md)可能出現在功能表定義中，以變更其外觀或行為在 IDE 中的。  
   
- 每個`Menu`項目都必須有群組作為其父代，除非它是可停駐的項目，例如工具列。 可停駐功能表是其本身的父系。 如需功能表和值`type`屬性，請參閱[ 功能表項目](../../extensibility/menu-element.md)文件。  
+  每個`Menu`項目都必須有群組作為其父代，除非它是可停駐的項目，例如工具列。 可停駐功能表是其本身的父系。 如需功能表和值`type`屬性，請參閱[ 功能表項目](../../extensibility/menu-element.md)文件。  
   
- 下列範例顯示旁會出現在 Visual Studio 功能表列的功能表**工具**功能表。  
+  下列範例顯示旁會出現在 Visual Studio 功能表列的功能表**工具**功能表。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  中所定義的 combos`Combos`一節。 每個`Combo`項目代表在 IDE 中的下拉式清單方塊。 清單方塊可能會或可能不是可由使用者，根據的值寫入`type`屬性的組合。 Combos 具有相同的項目和按鈕的行為，也可以有下列額外屬性：  
   
--   A`defaultWidth`指定像素寬度的屬性。  
+- A`defaultWidth`指定像素寬度的屬性。  
   
--   `idCommandList`屬性，指定包含清單方塊中顯示的項目清單。 命令清單必須在同一個宣告`GuidSymbol`包含下拉式方塊的節點。  
+- `idCommandList`屬性，指定包含清單方塊中顯示的項目清單。 命令清單必須在同一個宣告`GuidSymbol`包含下拉式方塊的節點。  
   
- 下列範例會定義下拉式項目。  
+  下列範例會定義下拉式項目。  
   
 ```xml  
 <Combos>  

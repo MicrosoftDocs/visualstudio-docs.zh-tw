@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841414"
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266691"
   
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：  
   
--   建立和管理專案檔。  
+- 建立和管理專案檔。  
   
--   如何使用組建屬性  
+- 如何使用組建屬性  
   
--   如何使用組建項目。  
+- 如何使用組建項目。  
   
- 您可以從 Visual Studio 或命令視窗執行 MSBuild。 在本逐步解說中，您將使用 Visual Studio 來建立 MSBuild 專案檔。 您可以在 Visual Studio 中編輯專案檔，然後使用命令視窗來建置專案並檢查結果。  
+  您可以從 Visual Studio 或命令視窗執行 MSBuild。 在本逐步解說中，您將使用 Visual Studio 來建立 MSBuild 專案檔。 您可以在 Visual Studio 中編輯專案檔，然後使用命令視窗來建置專案並檢查結果。  
   
 ## <a name="creating-an-msbuild-project"></a>建立 MSBuild 專案  
  Visual Studio 專案系統是以 MSBuild 為基礎。 這可讓您輕鬆地使用 Visual Studio 建立新的專案檔。 在本節中，您將建立 Visual C# 專案檔。 您可以選擇改為建立 Visual Basic 專案檔。 在本逐步解說的內容中，這兩個專案檔之間的差異非常小。  
@@ -77,20 +77,20 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
  建置應用程式的工作是利用 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 項目來完成。  
   
--   工作 (Task) 是工作 (Work) 的最小單位，也就是組建的「元素」。 工作是獨立的可執行檔元件，其中可能會有輸入和輸出。 專案檔中沒有任何目前參考或定義的工作。 您會在下列各節中將工作加入至專案檔。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md) 主題。  
+- 工作 (Task) 是工作 (Work) 的最小單位，也就是組建的「元素」。 工作是獨立的可執行檔元件，其中可能會有輸入和輸出。 專案檔中沒有任何目前參考或定義的工作。 您會在下列各節中將工作加入至專案檔。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md) 主題。  
   
--   目標是一連串具名的工作。 專案檔結尾有兩個目標目前包含於 HTML 註解中：BeforeBuild 和 AfterBuild。  
+- 目標是一連串具名的工作。 專案檔結尾有兩個目標目前包含於 HTML 註解中：BeforeBuild 和 AfterBuild。  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)主題。  
+   如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)主題。  
   
- Project 節點具有選擇性的 DefaultTargets 屬性，可選取要建置的預設目標，在這個案例中為 Build。  
+  Project 節點具有選擇性的 DefaultTargets 屬性，可選取要建置的預設目標，在這個案例中為 Build。  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-add-a-target-and-a-task"></a>加入目標和工作  
   
-1.  將下列這幾行加入至專案檔，緊接在 Import 陳述式之後：  
+1. 將下列這幾行加入至專案檔，緊接在 Import 陳述式之後：  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     這會建立名為 HelloWorld 的目標。 請注意，您在編輯專案檔時必須具備 Intellisense 支援。  
+    這會建立名為 HelloWorld 的目標。 請注意，您在編輯專案檔時必須具備 Intellisense 支援。  
   
-2.  將這幾行加入至 HelloWorld 目標，因此，產生的區段會看起來如下：  
+2. 將這幾行加入至 HelloWorld 目標，因此，產生的區段會看起來如下：  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  儲存專案檔。  
+3. 儲存專案檔。  
   
- Message 工作是 MSBuild 隨附的許多工作之一。 如需可用工作的完整清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
+   Message 工作是 MSBuild 隨附的許多工作之一。 如需可用工作的完整清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
- Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出裝置上。 HelloWorld 目標會執行 Message 工作兩次：第一次顯示 "Hello"，接著顯示 "World"。  
+   Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出裝置上。 HelloWorld 目標會執行 Message 工作兩次：第一次顯示 "Hello"，接著顯示 "World"。  
   
 ## <a name="building-the-target"></a>建置目標  
  從 [Visual Studio 命令提示字元] 執行 MSBuild，以建置前述內容所定義的 HelloWorld 目標。 使用 /target 或 /t 命令列參數來選取目標。  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>從命令列設定專案值  
   
-1.  從 [命令視窗]，輸入並執行這一行：  
+1. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  檢查輸出結果， 您應該會看到下列這一行：  
+2. 檢查輸出結果， 您應該會看到下列這一行：  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild 會建立 Configuration 屬性，並提供值 "Release"。  
+   MSBuild 會建立 Configuration 屬性，並提供值 "Release"。  
   
 ## <a name="special-characters"></a>特殊字元  
  在 MSBuild 專案檔中，有某些字元具有特殊意義。 這些字元範例包括分號 (;) 和星號 (*)。 若要使用這些特殊字元做為專案檔中的常值，就必須使用 %xx 語法來指定它們，其中 xx 代表字元的 ASCII 十六進位值。  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>在 Message 工作中使用特殊字元  
   
-1.  從程式碼編輯器，使用下列這一行來取代這兩個 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代這兩個 Message 工作：  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  檢查輸出結果， 您應該會看到下列這一行：  
+4. 檢查輸出結果， 您應該會看到下列這一行：  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- 如需詳細資訊，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
+   如需詳細資訊，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
   
 ## <a name="build-items"></a>組建項目  
  項目是一種資訊，通常是檔案名稱，可用來做為建置系統的輸入。 例如，可能會將代表原始程式檔的項目集合傳遞至名為 Compile 的工作，以便將它們編譯為組件。  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>檢查項目類型值  
   
-1.  從程式碼編輯器，使用下列程式碼來取代 HelloWorld 目標工作：  
+1. 從程式碼編輯器，使用下列程式碼來取代 HelloWorld 目標工作：  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  檢查輸出結果， 您應該會看到下列這一長串的內容：  
+4. 檢查輸出結果， 您應該會看到下列這一長串的內容：  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- 預設會以分號分隔項目類型的值。  
+   預設會以分號分隔項目類型的值。  
   
- 若要變更項目類型的分隔符號，請使用下列語法，其中 ItemType 是項目類型，而 Separator 是一或多個分隔字元的字串：  
+   若要變更項目類型的分隔符號，請使用下列語法，其中 ItemType 是項目類型，而 Separator 是一或多個分隔字元的字串：  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>檢查項目中繼資料  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  檢查輸出結果， 您應該會看到下列這幾行：  
+4. 檢查輸出結果， 您應該會看到下列這幾行：  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- 請注意 "Compile.DependentUpon" 一詞多次出現的方式。 在目標內搭配此語法使用中繼資料，會導致「批次處理」。 批次處理表示會針對每個唯一的中繼資料值執行一次目標內的工作。 這是相當於「for 迴圈」的一般程式設計建構的 MSBuild 指令碼。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
+   請注意 "Compile.DependentUpon" 一詞多次出現的方式。 在目標內搭配此語法使用中繼資料，會導致「批次處理」。 批次處理表示會針對每個唯一的中繼資料值執行一次目標內的工作。 這是相當於「for 迴圈」的一般程式設計建構的 MSBuild 指令碼。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
 ### <a name="well-known-metadata"></a>已知的中繼資料  
  每次將項目加入至項目清單時，即會為該項目指派一些已知的中繼資料。 例如，%(Filename) 會傳回任何項目的檔案名稱。 如需已知中繼資料的完整清單，請參閱[已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。  
   
 ##### <a name="to-examine-well-known-metadata"></a>檢查已知的中繼資料  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  檢查輸出結果， 您應該會看到下列這幾行：  
+4. 檢查輸出結果， 您應該會看到下列這幾行：  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- 藉由比較上述兩個範例，您會發現，儘管 Compile 項目類型中不是每個項目都具有 DependentUpon 中繼資料，但所有項目都具有已知的 Filename 中繼資料。  
+   藉由比較上述兩個範例，您會發現，儘管 Compile 項目類型中不是每個項目都具有 DependentUpon 中繼資料，但所有項目都具有已知的 Filename 中繼資料。  
   
 ### <a name="metadata-transformations"></a>中繼資料轉換  
  項目清單可以轉換為新的項目清單。 若要轉換項目清單，請使用下列語法，其中 ItemType 是項目類型的名稱，而 MetadataName 是中繼資料的名稱：  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>使用中繼資料轉換項目  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  檢查輸出結果， 您應該會看到下列這一行：  
+4. 檢查輸出結果， 您應該會看到下列這一行：  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- 請注意，此語法中所表示的中繼資料不會導致批次處理。  
+   請注意，此語法中所表示的中繼資料不會導致批次處理。  
   
 ## <a name="whats-next"></a>後續步驟？  
  若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  

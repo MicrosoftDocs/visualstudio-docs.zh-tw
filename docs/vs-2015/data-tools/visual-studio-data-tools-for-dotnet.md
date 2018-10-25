@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859703"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
   
  典型的工作流程如下：  
   
-1.  在本機電腦上安裝開發或測試資料庫。 請參閱[安裝資料庫系統、 工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。 如果您使用 Azure 資料服務，就不需要此步驟。  
+1. 在本機電腦上安裝開發或測試資料庫。 請參閱[安裝資料庫系統、 工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。 如果您使用 Azure 資料服務，就不需要此步驟。  
   
-2.  在 Visual Studio 中測試資料庫 （或服務或本機檔案） 的連線。 請參閱[新增連線](../data-tools/add-new-connections.md)。  
+2. 在 Visual Studio 中測試資料庫 （或服務或本機檔案） 的連線。 請參閱[新增連線](../data-tools/add-new-connections.md)。  
   
-3.  （選擇性）您可以使用工具來產生和設定新的模型。 Entity Framework 為基礎的模型是新的應用程式提供預設建議。 模型中，您使用，一個是應用程式互動的資料來源。 模型會以邏輯方式位於資料庫或服務與應用程式。  請參閱[加入新的資料來源](../data-tools/add-new-data-sources.md)。  
+3. （選擇性）您可以使用工具來產生和設定新的模型。 Entity Framework 為基礎的模型是新的應用程式提供預設建議。 模型中，您使用，一個是應用程式互動的資料來源。 模型會以邏輯方式位於資料庫或服務與應用程式。  請參閱[加入新的資料來源](../data-tools/add-new-data-sources.md)。  
   
-4.  拖曳的資料來源**Zdroje dat**視窗拖曳至 Windows Form、 ASP.NET 或 Windows Presentation Foundation 的設計介面，以產生資料繫結程式碼，會在您指定的方法中對使用者顯示的資料。 請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
+4. 拖曳的資料來源**Zdroje dat**視窗拖曳至 Windows Form、 ASP.NET 或 Windows Presentation Foundation 的設計介面，以產生資料繫結程式碼，會在您指定的方法中對使用者顯示的資料。 請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
-5.  新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。  
+5. 新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。  
   
- 您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)。 請注意，您仍然可以使用的資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。  
+   您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)。 請注意，您仍然可以使用的資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。  
   
 ## <a name="in-this-section"></a>本節內容  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortSupplier |Microsoft 文件
+title: IDebugPort2::GetPortSupplier |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1425760c0ba568d57bb1c3d45ed735881d28134e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6a75c9ebacdfac2c8def4c31493b09197942090
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819624"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
-取得此連接埠的連接埠供應商。  
+取得此連接埠的連接埠提供者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,7 +44,7 @@ int GetPortSupplier(
  [out]傳回[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)物件都代表一個連接埠的連接埠供應商。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

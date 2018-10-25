@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823758"
 ---
 # <a name="image-service-and-catalog"></a>映像服務和目錄
 此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。  
@@ -32,46 +32,46 @@ ms.locfileid: "46371143"
   
  為什麼採用映像服務嗎？  
   
--   一律從 Visual Studio 中取得最新的 「 像素完美 」 映像  
+- 一律從 Visual Studio 中取得最新的 「 像素完美 」 映像  
   
--   您可以送出，並使用您自己的映像  
+- 您可以送出，並使用您自己的映像  
   
--   若要測試您的映像出 Windows 當新增新的 DPI 縮放比例不需要  
+- 若要測試您的映像出 Windows 當新增新的 DPI 縮放比例不需要  
   
--   解決您的實作中的舊架構障礙  
+- 解決您的實作中的舊架構障礙  
   
- Visual Studio shell 工具列之前和之後使用映像服務：  
+  Visual Studio shell 工具列之前和之後使用映像服務：  
   
- ![影像服務之前及之後](../extensibility/media/image-service-before-and-after.png "影像服務之前和之後")  
+  ![影像服務之前及之後](../extensibility/media/image-service-before-and-after.png "影像服務之前和之後")  
   
 ## <a name="how-it-works"></a>它的運作方式
  映像服務可以提供點陣圖影像適用於任何支援的 UI 架構：  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   WinForms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- 影像服務流程圖  
+  影像服務流程圖  
   
- ![影像服務流程圖](../extensibility/media/image-service-flow-diagram.png "影像服務流程圖")  
+  ![影像服務流程圖](../extensibility/media/image-service-flow-diagram.png "影像服務流程圖")  
   
- **影像 moniker**  
+  **影像 moniker**  
   
- 影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產 GUID/識別碼組。  
+  影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產 GUID/識別碼組。  
   
- **已知的 moniker**  
+  **已知的 moniker**  
   
- 一任何的組 Visual Studio 元件或擴充功能包含在 Visual Studio 映像目錄及公開可使用的影像 moniker。  
+  一任何的組 Visual Studio 元件或擴充功能包含在 Visual Studio 映像目錄及公開可使用的影像 moniker。  
   
- **影像資訊清單檔**  
+  **影像資訊清單檔**  
   
- 影像資訊清單 (*.imagemanifest*) 檔案是 XML 檔案，定義一組的影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
+  影像資訊清單 (*.imagemanifest*) 檔案是 XML 檔案，定義一組的影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
   
- **映像資訊清單結構描述**  
+  **映像資訊清單結構描述**  
   
- 完成映像資訊清單看起來像這樣：  
+  完成映像資訊清單看起來像這樣：  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  這些是使用工具視窗中的 moniker 索引鍵的地方。 請遵循每個指示：  
   
-1.  當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
+1. 當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
   
-     將這一行新增至衍生自類別的建構函式**ToolWindowPane**類型：  
+    將這一行新增至衍生自類別的建構函式**ToolWindowPane**類型：  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  若要開啟工具視窗命令。  
+2. 若要開啟工具視窗命令。  
   
-     在  *.vsct*封裝檔案中，編輯工具視窗的命令按鈕：  
+    在  *.vsct*封裝檔案中，編輯工具視窗的命令按鈕：  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **如何使用現有的工具視窗中的影像 moniker？**  
+   **如何使用現有的工具視窗中的影像 moniker？**  
   
- 更新現有的工具視窗，以使用影像 moniker 是類似的步驟來建立新的工具視窗。  
+   更新現有的工具視窗，以使用影像 moniker 是類似的步驟來建立新的工具視窗。  
   
- 這些是使用工具視窗中的 moniker 索引鍵的地方。 請遵循每個指示：  
+   這些是使用工具視窗中的 moniker 索引鍵的地方。 請遵循每個指示：  
   
-1.  當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
+3. 當索引標籤取得夠小工具視窗索引標籤 (也用於**Ctrl**+**索引標籤**視窗切換器)。  
   
-    1.  移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
+   1.  移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  請參閱步驟 1 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
+   2.  請參閱步驟 1 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
   
-2.  若要開啟工具視窗命令。  
+4. 若要開啟工具視窗命令。  
   
-    -   請參閱步驟 2 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
+   -   請參閱步驟 2 的 「 如何使用影像 moniker 中新的工具視窗？ 」 上一節。  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何使用.vsct 檔案中的影像 moniker？  
  更新您 *.vsct*檔案加上註解的線條下方所示：  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>如何連接埠的專案系統？  
  **如何為專案提供 ImageMonikers**  
   
-1.  實作**VSHPROPID_SupportsIconMonikers**專案的**IVsHierarchy**，並傳回 true。  
+1. 實作**VSHPROPID_SupportsIconMonikers**專案的**IVsHierarchy**，並傳回 true。  
   
-2.  實作**VSHPROPID_IconMonikerImageList** (如果使用原始專案**VSHPROPID_IconImgList**) 或**VSHPROPID_IconMonikerGuid**， **VSHPROPID_IconMonikerId**， **VSHPROPID_OpenFolderIconMonikerGuid**， **VSHPROPID_OpenFolderIconMonikerId** (如果使用原始專案**VSHPROPID_IconHandle**並**VSHPROPID_OpenFolderIconHandle**)。  
+2. 實作**VSHPROPID_IconMonikerImageList** (如果使用原始專案**VSHPROPID_IconImgList**) 或**VSHPROPID_IconMonikerGuid**， **VSHPROPID_IconMonikerId**， **VSHPROPID_OpenFolderIconMonikerGuid**， **VSHPROPID_OpenFolderIconMonikerId** (如果使用原始專案**VSHPROPID_IconHandle**並**VSHPROPID_OpenFolderIconHandle**)。  
   
-3.  變更原始 VSHPROPIDs 圖示來建立 「 舊版 」 版本的圖示，如果擴充點，要求它們的實作。 **IVsImageService2**提供讓那些圖示所需的功能  
+3. 變更原始 VSHPROPIDs 圖示來建立 「 舊版 」 版本的圖示，如果擴充點，要求它們的實作。 **IVsImageService2**提供讓那些圖示所需的功能  
   
- **額外的需求，vb / C# 專案特性**  
+   **額外的需求，vb / C# 專案特性**  
   
- 只有實作**VSHPROPID_SupportsIconMonikers**如果您偵測到您的專案**最外層 flavor**。 否則，實際的最外層類別可能不支援影像 moniker，事實上，而且基底的類別可能會有效地 「 隱藏 」 的自訂映像。  
+   只有實作**VSHPROPID_SupportsIconMonikers**如果您偵測到您的專案**最外層 flavor**。 否則，實際的最外層類別可能不支援影像 moniker，事實上，而且基底的類別可能會有效地 「 隱藏 」 的自訂映像。  
   
- **如何使用在 CPS 中的影像 moniker？**  
+   **如何使用在 CPS 中的影像 moniker？**  
   
- CPS （通用專案系統） 中設定的自訂映像可以進行手動或透過項目範本所隨附的專案系統擴充性 SDK。  
+   CPS （通用專案系統） 中設定的自訂映像可以進行手動或透過項目範本所隨附的專案系統擴充性 SDK。  
   
- **使用專案系統擴充性 SDK**  
+   **使用專案系統擴充性 SDK**  
   
- 請遵循指示[專案類型/項目型別提供自訂圖示](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)來自訂您的 CPS 映像。 CPS 的詳細資訊，參閱[Visual Studio 專案系統擴充性文件](https://github.com/Microsoft/VSProjectSystem)  
+   請遵循指示[專案類型/項目型別提供自訂圖示](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)來自訂您的 CPS 映像。 CPS 的詳細資訊，參閱[Visual Studio 專案系統擴充性文件](https://github.com/Microsoft/VSProjectSystem)  
   
- **手動使用 ImageMonikers**  
+   **手動使用 ImageMonikers**  
   
-1.  實作及匯出**IProjectTreeModifier**專案系統中的介面。  
+4. 實作及匯出**IProjectTreeModifier**專案系統中的介面。  
   
-2.  判斷哪些**KnownMoniker**或您想要使用的自訂映像 moniker。  
+5. 判斷哪些**KnownMoniker**或您想要使用的自訂映像 moniker。  
   
-3.  在**ApplyModifications**方法，執行下列位置中的方法，再傳回新的樹狀結構，類似於下列範例：  
+6. 在**ApplyModifications**方法，執行下列位置中的方法，再傳回新的樹狀結構，類似於下列範例：  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  如果您要建立新的樹狀結構，您可以設定自訂的映像傳遞所需的 moniker NewTree 方法類似於下列範例：  
+7. 如果您要建立新的樹狀結構，您可以設定自訂的映像傳遞所需的 moniker NewTree 方法類似於下列範例：  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>如何以 moniker 為基礎的影像區域轉換從實際的影像區域？  
  **我需要支援 HIMAGELISTs**  
   
  如果您想要更新為使用映像服務，但您會受限於需要傳遞映像清單 Api 的程式碼的現有影像區域，您仍然可以取得映像服務的優點。 若要建立的 moniker 為基礎的影像區域，請遵循下列步驟來建立資訊清單，從現有的 moniker。  
   
-1.  執行**ManifestFromResources**工具，將它傳遞影像區域。 這會產生帶狀的資訊清單。  
+1. 執行**ManifestFromResources**工具，將它傳遞影像區域。 這會產生帶狀的資訊清單。  
   
-    -   建議： 提供的資訊清單，以符合其使用量非預設名稱。  
+   -   建議： 提供的資訊清單，以符合其使用量非預設名稱。  
   
-2.  如果您只使用**KnownMonikers**，然後執行下列動作：  
+2. 如果您只使用**KnownMonikers**，然後執行下列動作：  
   
-    -   取代\<映像 > 與資訊清單區段\<映像 / >。  
+   -   取代\<映像 > 與資訊清單區段\<映像 / >。  
   
-    -   移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
+   -   移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
   
-    -   建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
+   -   建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
   
-    -   取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
+   -   取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
   
-        -   \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
+       -   \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
   
-    -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> 頂端\<符號 > 一節。  
+   -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> 頂端\<符號 > 一節。  
   
-        -   相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
+       -   相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
   
-3.  執行**ManifestToCode**工具來產生包裝函式，使現有的程式碼具有可用來查詢映像服務，影像區域的 moniker。  
+3. 執行**ManifestToCode**工具來產生包裝函式，使現有的程式碼具有可用來查詢映像服務，影像區域的 moniker。  
   
-    -   建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
+   -   建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
   
-4.  執行所有加入時，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
+4. 執行所有加入時，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
   
- 範例資訊清單，包括內部和外部的映像，以查看它應該看起來像：  
+   範例資訊清單，包括內部和外部的映像，以查看它應該看起來像：  
   
 ```xml  
 <?xml version="1.0"?>  

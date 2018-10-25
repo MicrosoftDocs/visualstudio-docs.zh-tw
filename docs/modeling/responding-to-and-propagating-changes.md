@@ -11,45 +11,45 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d87a93016f2004a45a572374d68a20d2e59073da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897975"
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
-當建立、 刪除或更新項目時，您可以撰寫傳播變更給模型的其他組件或外部的資源，例如檔案、 資料庫或其他元件的程式碼。
+當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。
 
 ## <a name="in-this-section"></a>本節內容
- 一般來說，請考慮下列技術順序如下：
+ 做為指導方針，請考慮下列技術順序如下：
 
 |技術|案例|如需詳細資訊|
-|---------------|---------------|--------------------------|
-|定義導出的網域屬性。|網域屬性，其值從模型中的其他屬性計算。 例如，價格的相關元素的加總價格。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
-|定義的自訂儲存體網域屬性。|網域屬性，儲存在模型或外部的其他部分。 例如，您無法剖析運算式字串為模型中的樹狀目錄。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
-|覆寫 OnValueChanging 等 OnDeleting 變更處理常式|保持同步，不同的項目，外部值與保持同步模型。<br /><br /> 限制值來定義的範圍。<br /><br /> 呼叫之前和之後屬性值和其他變更。 您可以藉由擲回例外狀況終止變更。|[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)|
-|規則|您可以定義佇列中等待變更發生在交易結束之前執行的規則。 它們不會在復原或重做上執行。 您可以使用它們來保留存放區的一組件與另一個同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|
-|儲存事件|模型存放區，提供通知的事件，例如加入或刪除項目或連結，或變更屬性的值。 事件也會復原和取消復原上執行。 您可以使用存放區事件更新不在存放區中的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|.NET 事件|圖形有回應滑鼠點選與其他筆勢的事件處理常式。 您必須註冊這些事件中的每個物件。 註冊通常是 InitializeInstanceResources，覆寫中，且必須進行的每個項目。<br /><br /> 這些事件通常發生於外部交易。|[如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|範圍規則|範圍規則是特別用來限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|選取規則|選取規則特別限制使用者可以選取的項目。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|
-|OnAssocatedPropertyChanged|表示使用的圖形和連接器陰影、 箭頭、 色彩和線條寬度和樣式等功能的模型項目狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
+|-|-|-|
+|定義導出的網域屬性。|網域屬性，其值會計算從模型中的其他屬性。 例如，價格是相關項目的價格總和。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
+|定義自訂儲存網域屬性。|網域屬性，儲存在模型或外部的其他部分。 比方說，您可以剖析的運算式字串到模型中的樹狀結構。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
+|覆寫 OnValueChanging 等 OnDeleting 變更處理常式|保留不同的項目進行同步處理，並讓外部值與模型保持同步。<br /><br /> 限制值來定義的範圍。<br /><br /> 呼叫前後立即屬性值和其他變更。 您可以藉由擲回例外狀況終止變更。|[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)|
+|規則|您可以定義佇列中等待執行的變更發生在交易結束之前的規則。 它們不會在復原或重做上執行。 您可以使用它們來持續存放區的一組件與另一個的同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|
+|存放區事件|模型存放區提供通知的事件，例如加入或刪除項目或連結，或變更屬性的值。 事件也會在復原與取消復原上執行。 您可以使用存放區事件更新不在存放區中的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
+|.NET 事件|圖形會有回應滑鼠點按和其他筆勢的事件處理常式。 您必須註冊這些事件的每個物件。 註冊通常是 InitializeInstanceResources，覆寫，且必須以每個項目。<br /><br /> 這些事件通常發生於交易外部的。|[如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|範圍規則|繫結規則，特別用於限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)|
+|選取規則|選取規則特別限制使用者可以選取。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|OnAssocatedPropertyChanged|表示使用的圖案和接點陰影、 線條、 色彩和線條寬度和樣式等功能的模型項目的狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**比較規則與事件存放區**
+## <a name="comparing-rules-and-store-events"></a>**比較的規則和存放區事件**
  在模型中發生變更時，會執行變更 notifiers、 規則和事件。
 
- 規則通常會套用在一般交易中發生變更，並認可交易中的變更之後，事件會套用。
+ 規則通常會套用在其中發生的變更，結束交易並認可交易中的變更之後，會套用事件。
 
- 使用存放區事件來同步處理的模型使用外部存放區和規則，以維護一致性存放區中的物件。
+ 若要使用外部存放區和規則，以維護一致性的存放區中的物件同步處理的模型使用存放區事件。
 
--   **建立自訂規則**您為抽象的規則從衍生類別中建立自訂規則。 您也必須通知有關的自訂規則的架構。 如需詳細資訊，請參閱[規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+-   **建立自訂規則**您建立自訂規則做為衍生的類別，從抽象的規則。 您也必須通知的自訂規則相關的架構。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 
--   **訂閱事件**可以訂閱事件之前，建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+-   **訂閱事件**可以訂閱事件之前，請建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
--   **復原變更**時復原交易，會引發事件，但是不會套用規則。 如果規則會將值變更，您可以復原該變更值會重設原始的值在復原動作。 事件引發時，您必須手動變更此值設回其原始值。 若要深入了解 transactons 和復原，請參閱[How to： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+-   **正在恢復變更**時將交易復原，會引發事件，但不是會套用規則。 如果規則變更的值，而且復原這項變更，值會重設為原始值期間復原動作。 當引發事件時，您必須手動變更此值設回其原始值。 若要深入了解 transactons 和復原，請參閱[如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
--   **事件引數傳遞至規則和事件**這兩個事件和傳遞規則`EventArgs`參數的相關資訊的模型變更。
+-   **傳遞規則和事件的事件引數**這兩個事件和傳遞規則`EventArgs`參數，其資訊的模型變更。
 
 ## <a name="see-also"></a>另請參閱
 

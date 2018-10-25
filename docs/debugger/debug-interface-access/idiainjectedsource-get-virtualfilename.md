@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_virtualfilename |Microsoft 文件'
+title: 'Idiainjectedsource:: Get_virtualfilename |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82a1cf2c998a141d52af3d996ee7c0763f56992
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9b4fe6547929a5db7f793d9f2f8551327a6455ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844538"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-擷取非檔案原始碼; 提供的名稱也就是已插入的程式碼。  
+擷取指定給非檔案來源的程式碼; 的名稱也就是插入的程式碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_virtualFilename (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回提供給插入非檔案原始碼的名稱。  
+ [out]傳回提供給插入非檔案來源的程式碼的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

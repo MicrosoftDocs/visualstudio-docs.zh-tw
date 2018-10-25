@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ab2777675df16df47b69d024be3f2d9458d0ba8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916838"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>使用檢測設備收集詳細計時資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。  
@@ -34,9 +34,9 @@ ms.locfileid: "43775161"
 ## <a name="common-tasks"></a>一般工作
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  
   
--   在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
+- 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
   
- 下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]  對話方塊中指定的選項。  
+  下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]  對話方塊中指定的選項。  
   
 |工作|相關內容|  
 |----------|---------------------|  

@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816821"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單，讓使用者能夠操作這些 Visual Studio 會的方式相同。 使用者可以改變背景、 大小、 DPI、 高對比和其他設定。 此工具也會顯示每個映像資訊清單的載入資訊，並會顯示映像資訊清單中的每個映像的來源資訊。 這項工具可用於：  
   
-1.  診斷錯誤  
+1. 診斷錯誤  
   
-2.  確保屬性已正確設定，在自訂映像資訊清單中  
+2. 確保屬性已正確設定，在自訂映像資訊清單中  
   
-3.  搜尋 Visual Studio 映像目錄中的映像，好讓 Visual Studio 擴充功能可以使用符合的 Visual Studio 樣式的映像  
+3. 搜尋 Visual Studio 映像目錄中的映像，好讓 Visual Studio 擴充功能可以使用符合的 Visual Studio 樣式的映像  
   
- ![影像庫檢視器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "影像庫檢視器主圖")  
+   ![影像庫檢視器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "影像庫檢視器主圖")  
   
- **影像 moniker**  
+   **影像 moniker**  
   
- 影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產的 guid: id 配對。  
+   影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產的 guid: id 配對。  
   
- **影像資訊清單檔**  
+   **影像資訊清單檔**  
   
- 映像資訊清單 (.imagemanifest) 檔案是 XML 檔案會定義一組影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
+   映像資訊清單 (.imagemanifest) 檔案是 XML 檔案會定義一組影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
   
- **映像資訊清單結構描述**  
+   **映像資訊清單結構描述**  
   
- 完成映像資訊清單看起來像這樣：  
+   完成映像資訊清單看起來像這樣：  
   
 ```xml  
 <ImageManifest>  

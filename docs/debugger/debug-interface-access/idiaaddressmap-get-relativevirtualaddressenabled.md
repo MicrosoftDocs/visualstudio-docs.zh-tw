@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_relativevirtualaddressenabled |Microsoft 文件'
+title: 'Idiaaddressmap:: Get_relativevirtualaddressenabled |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25159556d44ca37d7938e67e67f1b9900a05010b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849082"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
-指出是否已啟用的計算方式與使用的相對虛擬位址 (RVA)。  
+指出是否已啟用的計算方式與使用相對虛擬位址 (RVA)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,12 +37,12 @@ HRESULT get_relativeVirtualAddressEnabled (
  [out]傳回`TRUE`如果已啟用的 Rva 計算。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果區段有一開始載入 PDB 檔案從，啟用的 Rva。 Rva 使用可以暫時停用藉由呼叫[idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)方法。  
+ 如果區段有一開始載入 PDB 檔案中，會啟用的 Rva。 藉由呼叫可以暫時停用的 Rva [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)方法。  
   
- 此外，建立新的映像標頭，藉由呼叫[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫後面接著`put_relativeVirtualAddressEnabled`即可使用新的映像標頭的 Rva 的方法。  
+ 此外，建立新的映像標頭，藉由呼叫[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法，後面呼叫`put_relativeVirtualAddressEnabled`方法，以啟用使用新的映像標頭的 Rva。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

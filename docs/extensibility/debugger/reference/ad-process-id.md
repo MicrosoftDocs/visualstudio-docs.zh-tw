@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID |Microsoft 文件
+title: AD_PROCESS_ID |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d4174c5b190278367f0147806fe007beaa72c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9634d16a89670b92e616e4bd6b878f41166aea2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833872"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
-指定的處理序識別碼，這可能是系統識別碼或 GUID。  
+指定的處理序識別碼，可能是系統識別碼或 GUID。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,33 +49,33 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>成員  
  `ProcessIdType`  
- 中的值[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。  
+ 值，以從[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉，指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。  
   
  dwProcessId  
- 系統中的值為處理序識別碼。  
+ 值，以從系統處理序識別碼。  
   
  guidProcessId  
  處理序識別碼，做為 GUID。  
   
  dwUnused  
- 填補。  
+ 邊框距離。  
   
 ## <a name="remarks"></a>備註  
  此結構會傳遞下列方法：  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
--   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- 傳回從下列方法：  
+  而且會傳回下列任一方法：  
   
--   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
--   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
+- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

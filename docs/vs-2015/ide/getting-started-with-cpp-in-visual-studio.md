@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816590"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ ms.locfileid: "49240444"
   
 #### <a name="to-create-a-console-app"></a>若要建立主控台應用程式  
   
-1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-     ![在功能表列上，依序選擇 [檔案]、[新增] 和 [專案]](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![在功能表列上，依序選擇 [檔案]、[新增] 和 [專案]](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  在 [Visual C++] 分類中，選擇 [Win32 主控台應用程式] 範本，然後將專案命名為 `GreetingsConsoleApp`。  
+2. 在 [Visual C++] 分類中，選擇 [Win32 主控台應用程式] 範本，然後將專案命名為 `GreetingsConsoleApp`。  
   
-     ![Win32 主控台應用程式範本](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
+    ![Win32 主控台應用程式範本](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
   
-3.  [Win32 應用程式精靈] 出現時，請選擇 [完成]  按鈕。  
+3. [Win32 應用程式精靈] 出現時，請選擇 [完成]  按鈕。  
   
-     ![Win32 主控台應用程式精靈](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Win32 主控台應用程式精靈](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- 這樣會建立 GreetingsConsoleApp 專案和方案以及 Win32 主控台應用程式的基本檔案，並自動載入 **方案總管**。 GreetingsConsoleApp.cpp 檔案會在程式碼編輯器中開啟。 下列項目會在 **方案總管**中出現：  
+   這樣會建立 GreetingsConsoleApp 專案和方案以及 Win32 主控台應用程式的基本檔案，並自動載入 **方案總管**。 GreetingsConsoleApp.cpp 檔案會在程式碼編輯器中開啟。 下列項目會在 **方案總管**中出現：  
   
- 圖 4：專案項目  
+   圖 4：專案項目  
   
- ![方案在方案總管中的所有檔案](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![方案在方案總管中的所有檔案](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> 將程式碼新增到應用程式  
  接下來，您將新增程式碼以在主控台視窗中顯示 "Hello" 文字。  
@@ -117,40 +117,40 @@ ms.locfileid: "49240444"
   
 #### <a name="to-add-a-breakpoint"></a>若要加入中斷點  
   
-1.  從功能表列，將中斷點加入 `return 0;`這一行。 您也可以按一下左邊界來設定中斷點。  
+1. 從功能表列，將中斷點加入 `return 0;`這一行。 您也可以按一下左邊界來設定中斷點。  
   
-     ![[偵錯] 功能表上的 [切換中斷點] 命令](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
+    ![[偵錯] 功能表上的 [切換中斷點] 命令](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
-     在編輯器視窗最左緣、程式碼行的旁邊會出現一個紅色圓圈。  
+    在編輯器視窗最左緣、程式碼行的旁邊會出現一個紅色圓圈。  
   
-2.  選擇 F5 鍵開始偵錯。  
+2. 選擇 F5 鍵開始偵錯。  
   
-     偵錯工具隨即啟動，而主控台視窗會出現並顯示 **Hello**這個字。  
+    偵錯工具隨即啟動，而主控台視窗會出現並顯示 **Hello**這個字。  
   
-     ![Windows 命令提示字元視窗中的 Hello 文字](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![Windows 命令提示字元視窗中的 Hello 文字](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  按 SHIFT + F5 停止偵錯。  
+3. 按 SHIFT + F5 停止偵錯。  
   
- 如需詳細資訊，請參閱[主控台專案](../debugger/debugging-preparation-console-projects.md)。  
+   如需詳細資訊，請參閱[主控台專案](../debugger/debugging-preparation-console-projects.md)。  
   
 ##  <a name="BKMK_BuildRelease"></a> 建置應用程式的發行版本  
  既然已經驗證應用程式的運作一切正常，您就可以準備其發行組建。  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>若要清除方案檔案和建置發行版本  
   
-1.  從功能表列中，刪除在先前組建期間所建立的中繼檔和輸出檔。  
+1. 從功能表列中，刪除在先前組建期間所建立的中繼檔和輸出檔。  
   
-     ![[建置] 功能表上的 [清除方案] 命令](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![[建置] 功能表上的 [清除方案] 命令](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  將 GreetingsConsoleApp 的組建組態由 [偵錯]  變更為 [發行] 。  
+2. 將 GreetingsConsoleApp 的組建組態由 [偵錯]  變更為 [發行] 。  
   
-     ![建置應用程式的發行版本](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![建置應用程式的發行版本](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  建置方案。  
+3. 建置方案。  
   
-     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- 恭喜您完成此逐步解說！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。  
+   恭喜您完成此逐步解說！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

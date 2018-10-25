@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851929"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 ##  <a name="BKMK_Wildcards"></a> 使用萬用字元指定項目  
  您可以改用 **、\* 及 ? 萬用字元來指定一組檔案做為組建的輸入，而不是個別列出每個檔案。  
   
--   ? 萬用字元會比對單一字元。  
+- ? 萬用字元會比對單一字元。  
   
--   \* 萬用字元會比對零或多個字元。  
+- \* 萬用字元會比對零或多個字元。  
   
--   \*\* 萬用字元會循序比對部分路徑。  
+- \*\* 萬用字元會循序比對部分路徑。  
   
- 例如，您可以在專案檔中使用下列項目，來指定包含該專案檔之目錄中的所有 .cs 檔案。  
+  例如，您可以在專案檔中使用下列項目，來指定包含該專案檔之目錄中的所有 .cs 檔案。  
   
 ```  
 <CSFile Include="*.cs"/>  

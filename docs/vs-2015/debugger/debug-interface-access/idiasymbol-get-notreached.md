@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cd3d7b1b9ad26fc7b1cfa805e703fcfbd0b0aaf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c53ae8e65861b657fa2d908ae57cbf569e51479f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933751"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

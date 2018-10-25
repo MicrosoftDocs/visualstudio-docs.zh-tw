@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_relativevirtualaddress |Microsoft 文件'
+title: 'Idiasymbol:: Get_relativevirtualaddress |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5c1655930e4f4e841a9cff4f2146aaf5749381
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5056c149559cfb6760890fb960ec608042839e4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949782"
 ---
 # <a name="idiasymbolgetrelativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
-擷取位置的相對虛擬位址 (RVA)。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設`LocIsStatic`。  
+擷取位置的相對虛擬位址 (RVA)。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsStatic`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,10 +37,10 @@ HRESULT get_relativeVirtualAddress (
  [out]傳回位置的相對虛擬位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="example"></a>範例  
   

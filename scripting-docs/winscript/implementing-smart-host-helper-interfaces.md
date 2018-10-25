@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909818"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>實作智慧主機協助程式介面
 [IDebugDocumentHelper 介面](../winscript/reference/idebugdocumenthelper-interface.md)介面可大幅簡化建立智慧主機以進行主動式偵錯的工作，因為它提供智慧裝載所需的許多介面的實作。  
   
  若要使用 `IDebugDocumentHelper` 成為智慧主機，則主應用程式只能執行三件事：  
   
-1.  `CoCreate` 處理序偵錯管理員，並使用 [IProcessDebugManager 介面](../winscript/reference/iprocessdebugmanager-interface.md)介面將應用程式新增至可偵錯應用程式清單。  
+1. `CoCreate` 處理序偵錯管理員，並使用 [IProcessDebugManager 介面](../winscript/reference/iprocessdebugmanager-interface.md)介面將應用程式新增至可偵錯應用程式清單。  
   
-2.  使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法，以建立每個指令碼物件的偵錯文件協助程式。 請確定已定義文件名稱、父代文件、文字和指令碼區塊。  
+2. 使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法，以建立每個指令碼物件的偵錯文件協助程式。 請確定已定義文件名稱、父代文件、文字和指令碼區塊。  
   
-3.  對物件實作 [IActiveScriptSiteDebug 介面](../winscript/reference/iactivescriptsitedebug-interface.md)介面，而此介面可實作 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面 (動態指令碼處理的必要項目)。 `IActiveScriptSiteDebug` 介面上的唯一重要方法只會委派給協助程式。  
+3. 對物件實作 [IActiveScriptSiteDebug 介面](../winscript/reference/iactivescriptsitedebug-interface.md)介面，而此介面可實作 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面 (動態指令碼處理的必要項目)。 `IActiveScriptSiteDebug` 介面上的唯一重要方法只會委派給協助程式。  
   
- 如果主機需要語法色彩、文件內容建立和其他擴充功能的額外控制，則主機可以選擇性地實作 [IDebugDocumentHost 介面](../winscript/reference/idebugdocumenthost-interface.md)介面。  
+   如果主機需要語法色彩、文件內容建立和其他擴充功能的額外控制，則主機可以選擇性地實作 [IDebugDocumentHost 介面](../winscript/reference/idebugdocumenthost-interface.md)介面。  
   
- 智慧主機協助程式的主要限制是它只能處理文件，而文件在新增之後，其內容會變更或縮小 (雖然可以展開文件)。 不過，對於許多智慧主機而言，它提供的功能完全就是需要的功能。  
+   智慧主機協助程式的主要限制是它只能處理文件，而文件在新增之後，其內容會變更或縮小 (雖然可以展開文件)。 不過，對於許多智慧主機而言，它提供的功能完全就是需要的功能。  
   
- 下列各節會詳述每個步驟。  
+   下列各節會詳述每個步驟。  
   
 ## <a name="create-an-application-object"></a>建立應用程式物件  
  需要先建立 [IDebugApplication 介面](../winscript/reference/idebugapplication-interface.md)物件在偵錯工具中代表您的應用程式，才能使用智慧主機協助程式。  
@@ -105,5 +105,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 -   提供檔案系統中文件的路徑名稱。 有些偵錯 UI 會使用這個選項允許使用者編輯和儲存文件變更。 呼叫 [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md)，以在儲存文件之後通知主機。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯概觀](../winscript/active-script-debugging-overview.md)

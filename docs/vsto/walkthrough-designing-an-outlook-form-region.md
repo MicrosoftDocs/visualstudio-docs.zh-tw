@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813683"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說： 設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
@@ -45,11 +45,11 @@ ms.locfileid: "35671365"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如本主題的影片版本，請參閱[影片如何： 設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如本主題的影片版本，請參閱[影片如何： 設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案  
  第一次建立基本的 VSTO 增益集專案。  
@@ -117,24 +117,24 @@ ms.locfileid: "35671365"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>自訂表單區域的行為  
   
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下*MapIt.cs*或*MapIt.vb*，然後按一下**檢視程式碼**。  
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下*MapIt.cs*或*MapIt.vb*，然後按一下**檢視程式碼**。  
   
-     *MapIt.cs*或是*MapIt.vb*會在程式碼編輯器中開啟。  
+    *MapIt.cs*或是*MapIt.vb*會在程式碼編輯器中開啟。  
   
-2.  依序展開**表單區域 Factory**程式碼區域。  
+2. 依序展開**表單區域 Factory**程式碼區域。  
   
-     即會公開名為 `MapItFactory` 的表單區域 Factory 類別。  
+    即會公開名為 `MapItFactory` 的表單區域 Factory 類別。  
   
-3.  將下列程式碼加入至 `MapItFactory_FormRegionInitializing` 事件處理常式。 當使用者開啟連絡人項目時，即會呼叫這個事件處理常式。 下列程式碼會判斷連絡人項目是否包含地址。 如果連絡人項目不包含地址，此程式碼會設定<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>的屬性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>類別，即可 **，則為 true**而且不會顯示表單區域。 否則，VSTO 增益集會引發 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，並顯示表單區域。  
+3. 將下列程式碼加入至 `MapItFactory_FormRegionInitializing` 事件處理常式。 當使用者開啟連絡人項目時，即會呼叫這個事件處理常式。 下列程式碼會判斷連絡人項目是否包含地址。 如果連絡人項目不包含地址，此程式碼會設定<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>的屬性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>類別，即可 **，則為 true**而且不會顯示表單區域。 否則，VSTO 增益集會引發 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，並顯示表單區域。  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  將下列程式碼加入至 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件處理常式。 這個程式碼會執行下列工作：  
+4. 將下列程式碼加入至 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件處理常式。 這個程式碼會執行下列工作：  
   
-    -   串連連絡人項目中的每個地址，並建立 URL 字串。  
+   - 串連連絡人項目中的每個地址，並建立 URL 字串。  
   
-    -   呼叫 <xref:System.Windows.Forms.WebBrowser> 物件的<xref:System.Windows.Forms.WebBrowser.Navigate%2A> 方法，並將 URL 字串當成參數傳遞。  
+   - 呼叫 <xref:System.Windows.Forms.WebBrowser> 物件的<xref:System.Windows.Forms.WebBrowser.Navigate%2A> 方法，並將 URL 字串當成參數傳遞。  
   
      當地搜尋網站會出現在 Map It 表單區域中，並在便條簿中顯示每個地址。  
   

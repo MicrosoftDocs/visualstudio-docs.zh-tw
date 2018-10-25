@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7fdb1ef423c0fa7ccd1b788843720de092e20b4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7f1e496113e89d5fc8dcca601acfd25eecb8ffb9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859092"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

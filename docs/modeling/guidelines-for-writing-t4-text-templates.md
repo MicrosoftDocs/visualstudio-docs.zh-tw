@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 09ed896c85807da5a65084360fa62e24c3cca141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896207"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 下列一般指導方針可能會有幫助，如果您要在 Visual Studio 中產生程式碼或其他應用程式資源。 它們不被固定的規則。
@@ -43,28 +43,28 @@ ms.locfileid: "47859623"
  允許自訂程式碼： 產生部分類別。
 可讓您撰寫程式碼以手動方式此外要產生的程式碼。 很少能夠處理可能發生的所有可能變化的程式碼產生配置。 因此，您應該會加入或覆寫某些產生的程式碼。 其中產生的資料是以.NET 語言這類[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，兩種策略時特別有用：
 
--   產生的類別應該是部分。 這可讓您將內容加入至產生的程式碼。
+- 產生的類別應該是部分。 這可讓您將內容加入至產生的程式碼。
 
--   類別應該產生成對，繼承自另一個。 基底類別應該包含所有產生的方法和屬性，而且衍生的類別應該包含建構函式。 這可讓您手動撰寫的程式碼，來覆寫任何產生的方法。
+- 類別應該產生成對，繼承自另一個。 基底類別應該包含所有產生的方法和屬性，而且衍生的類別應該包含建構函式。 這可讓您手動撰寫的程式碼，來覆寫任何產生的方法。
 
- 在 XML 等其他產生語言，使用`<#@include#>`指示詞來提供簡單的手動撰寫和產生內容的組合。 在更複雜的情況下，您可能必須撰寫結合所產生的檔案與任何手寫檔案後置處理步驟。
+  在 XML 等其他產生語言，使用`<#@include#>`指示詞來提供簡單的手動撰寫和產生內容的組合。 在更複雜的情況下，您可能必須撰寫結合所產生的檔案與任何手寫檔案後置處理步驟。
 
- 將常見的資料移入 include 檔，或執行階段範本，以避免重複類似的區塊的文字和程式碼，在多個範本中，使用`<#@ include #>`指示詞。 如需詳細資訊，請參閱 < [T4 包含指示詞](../modeling/t4-include-directive.md)。
+  將常見的資料移入 include 檔，或執行階段範本，以避免重複類似的區塊的文字和程式碼，在多個範本中，使用`<#@ include #>`指示詞。 如需詳細資訊，請參閱 < [T4 包含指示詞](../modeling/t4-include-directive.md)。
 
- 您可以也建置在個別的專案中，執行階段文字範本，，然後將它們呼叫從設計階段範本。 若要這樣做，請使用`<#@ assembly #>`指示詞，以存取個別的專案。 如需範例，請參閱[「 繼承在文字範本 」 Gareth Jones 部落格中](http://go.microsoft.com/fwlink/?LinkId=208373)。
+  您可以也建置在個別的專案中，執行階段文字範本，，然後將它們呼叫從設計階段範本。 若要這樣做，請使用`<#@ assembly #>`指示詞，以存取個別的專案。 如需範例，請參閱[「 繼承在文字範本 」 Gareth Jones 部落格中](http://go.microsoft.com/fwlink/?LinkId=208373)。
 
- 請考慮移到不同的組件的大型區塊的程式碼。
- 如果您有大型的程式碼區塊和類別功能區塊，它可能有助於將有些程式碼移至您在個別的專案編譯的方法。 您可以使用`<#@ assembly #>`指示詞，以存取範本中的程式碼。 如需詳細資訊，請參閱 < [T4 組件指示詞](../modeling/t4-assembly-directive.md)。
+  請考慮移到不同的組件的大型區塊的程式碼。
+  如果您有大型的程式碼區塊和類別功能區塊，它可能有助於將有些程式碼移至您在個別的專案編譯的方法。 您可以使用`<#@ assembly #>`指示詞，以存取範本中的程式碼。 如需詳細資訊，請參閱 < [T4 組件指示詞](../modeling/t4-assembly-directive.md)。
 
- 您可以將方法放在樣板可以繼承的抽象類別。 抽象類別必須繼承自<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>。 如需詳細資訊，請參閱 < [T4 範本指示詞](../modeling/t4-template-directive.md)。
+  您可以將方法放在樣板可以繼承的抽象類別。 抽象類別必須繼承自<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>。 如需詳細資訊，請參閱 < [T4 範本指示詞](../modeling/t4-template-directive.md)。
 
- 產生程式碼，不設定檔案的一種方法撰寫變數的應用程式是撰寫可接受組態檔的一般程式碼。 以這種方式撰寫的應用程式非常有彈性，並重新設定當業務需求變更，而不需重建應用程式。 不過，這種方法的缺點是，應用程式會執行於更特定的應用程式效能不佳。 此外，其程式碼將會更難讀取與維護，部分原因是它必須永遠會處理大部分的泛型類型。
+  產生程式碼，不設定檔案的一種方法撰寫變數的應用程式是撰寫可接受組態檔的一般程式碼。 以這種方式撰寫的應用程式非常有彈性，並重新設定當業務需求變更，而不需重建應用程式。 不過，這種方法的缺點是，應用程式會執行於更特定的應用程式效能不佳。 此外，其程式碼將會更難讀取與維護，部分原因是它必須永遠會處理大部分的泛型類型。
 
- 相反地，其變動的組件會產生之前編譯的應用程式可以是強型別。 這可讓它更容易且更可靠撰寫手動撰寫的程式碼，並將它整合以產生組件的軟體。
+  相反地，其變動的組件會產生之前編譯的應用程式可以是強型別。 這可讓它更容易且更可靠撰寫手動撰寫的程式碼，並將它整合以產生組件的軟體。
 
- 若要取得所產生程式碼的完整優點，請嘗試產生程式碼，而不是組態檔案。
+  若要取得所產生程式碼的完整優點，請嘗試產生程式碼，而不是組態檔案。
 
- 使用產生的程式碼資料夾將範本與產生的檔案放在專案資料夾中名為**產生的程式碼**，讓它清除這些不應直接編輯的檔案。 如果您建立自訂的程式碼來覆寫或新增至產生的類別，可將這些類別放在名為的資料夾**自訂程式碼**。 一般專案結構看起來像這樣：
+  使用產生的程式碼資料夾將範本與產生的檔案放在專案資料夾中名為**產生的程式碼**，讓它清除這些不應直接編輯的檔案。 如果您建立自訂的程式碼來覆寫或新增至產生的類別，可將這些類別放在名為的資料夾**自訂程式碼**。 一般專案結構看起來像這樣：
 
 ```
 MyProject
@@ -77,7 +77,6 @@ MyProject
       Class2.tt
           Class2.cs
    AnotherClass.cs
-
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>執行階段 （前置處理過的） 的 T4 範本的指導方針
@@ -116,7 +115,6 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 }
 ...
   string PageToDisplay = new FabrikamTemplate().TextTransform();
-
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>所有 T4 範本的指導方針

@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817440"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual c + + for Cross-platform Mobile Development] (http://go.microsoft.com/fwl
   
 ##  <a name="Requirements"></a> 需求  
   
--   如需安裝需求，請參閱 [Visual Studio 2015 系統需求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
+- 如需安裝需求，請參閱 [Visual Studio 2015 系統需求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
   
-    > [!IMPORTANT]
-    >  如果您使用 Windows 7 或 Windows Server 2008 R2，便可以為傳統型 Windows 應用程式、Android Native Activity 應用程式和程式庫，以及適用於 iOS 的應用程式和程式碼程式庫開發程式碼，但不適用於 Windows 市集或通用 Windows 應用程式。  
+  > [!IMPORTANT]
+  >  如果您使用 Windows 7 或 Windows Server 2008 R2，便可以為傳統型 Windows 應用程式、Android Native Activity 應用程式和程式庫，以及適用於 iOS 的應用程式和程式碼程式庫開發程式碼，但不適用於 Windows 市集或通用 Windows 應用程式。  
   
- 若要建置特定裝置平台的應用程式，有幾個額外的需求：  
+  若要建置特定裝置平台的應用程式，有幾個額外的需求：  
   
--   Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
--   搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
+- 搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
   
--   建置 iOS 的程式碼需要 Apple ID、iOS 開發人員計劃帳戶，以及可在 OS X Mavericks 或更新版本中執行 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 或更新版本的 Mac 電腦。 如需簡單的安裝步驟，請參閱 [Install tools for iOS](#InstallForiOS)。  
+- 建置 iOS 的程式碼需要 Apple ID、iOS 開發人員計劃帳戶，以及可在 OS X Mavericks 或更新版本中執行 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 或更新版本的 Mac 電腦。 如需簡單的安裝步驟，請參閱 [Install tools for iOS](#InstallForiOS)。  
   
 ##  <a name="GetTheTools"></a> 取得工具  
  適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio Community、Professional 及 Enterprise 版本中的可安裝元件。 若要取得 Visual Studio，請移至 [Visual Studio 2015 下載](http://go.microsoft.com/fwlink/p/?linkid=517106)頁面，並下載 Visual Studio 2015 Update 2 或更新版本。  
@@ -101,31 +101,31 @@ Visual c + + for Cross-platform Mobile Development] (http://go.microsoft.com/fwl
   
  請閱讀下列資訊並使用這些連結，以手動安裝相依項目。  
   
--   [Java SE 開發套件](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE 開發套件](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     依預設，安裝程式會將 Java 工具放在 C:\Program Files (x86)\Java。  
+   依預設，安裝程式會將 Java 工具放在 C:\Program Files (x86)\Java。  
   
--   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     在安裝期間，請依照建議更新 API。 確定至少已安裝 Android 5.0 Lollipop (API 層級 21) 的 SDK。 依預設，安裝程式會將 Android SDK 放在 C:\Program Files (x86)\Android\android-sdk。  
+   在安裝期間，請依照建議更新 API。 確定至少已安裝 Android 5.0 Lollipop (API 層級 21) 的 SDK。 依預設，安裝程式會將 Android SDK 放在 C:\Program Files (x86)\Android\android-sdk。  
   
-     您可以在 Android SDK 目錄重新執行 SDK Manager 應用程式來更新 SDK，並安裝選擇性工具和其他 API 層級。 除非您使用 [以系統管理員身分執行]  執行 SDK Manager 應用程式，否則可能無法安裝更新。 如果您有建置 Android 應用程式的問題，請檢查 SDK Manager 以確認已安裝的 SDK 是否有更新。  
+   您可以在 Android SDK 目錄重新執行 SDK Manager 應用程式來更新 SDK，並安裝選擇性工具和其他 API 層級。 除非您使用 [以系統管理員身分執行]  執行 SDK Manager 應用程式，否則可能無法安裝更新。 如果您有建置 Android 應用程式的問題，請檢查 SDK Manager 以確認已安裝的 SDK 是否有更新。  
   
-     若要使用 Android SDK 隨附的一些 Android 模擬器，您必須安裝選擇性的 Intel HAXM 驅動程式。 您可能必須從 Windows 移除 Hyper-V 功能，以便順利安裝 Intel HAXM 驅動程式。 您必須還原 Hyper-V 功能，以使用 Windows Phone 模擬器和 Microsoft Visual Studio Emulator for Android。  
+   若要使用 Android SDK 隨附的一些 Android 模擬器，您必須安裝選擇性的 Intel HAXM 驅動程式。 您可能必須從 Windows 移除 Hyper-V 功能，以便順利安裝 Intel HAXM 驅動程式。 您必須還原 Hyper-V 功能，以使用 Windows Phone 模擬器和 Microsoft Visual Studio Emulator for Android。  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     根據預設，安裝程式會將 Android NDK 放在 C:\ProgramData\Microsoft\AndroidNDK。 您可以重新下載並安裝 Android NDK，以更新 NDK 安裝。  
+   根據預設，安裝程式會將 Android NDK 放在 C:\ProgramData\Microsoft\AndroidNDK。 您可以重新下載並安裝 Android NDK，以更新 NDK 安裝。  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     依預設，安裝程式會將 Apache Ant 放在 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps 中。  
+   依預設，安裝程式會將 Apache Ant 放在 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps 中。  
   
--   [Android 版 Microsoft Visual Studio 模擬器](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Android 版 Microsoft Visual Studio 模擬器](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     您可以從 Visual Studio 組件庫安裝和更新 Microsoft Visual Studio Emulator for Android。  
+   您可以從 Visual Studio 組件庫安裝和更新 Microsoft Visual Studio Emulator for Android。  
   
- 在大多數情況中，Visual Studio 皆可偵測您已安裝之協力廠商軟體的組態，並保留內部環境變數中的安裝路徑。 您可以在 Visual Studio IDE 中覆寫這些跨平台開發工具的預設路徑。  
+  在大多數情況中，Visual Studio 皆可偵測您已安裝之協力廠商軟體的組態，並保留內部環境變數中的安裝路徑。 您可以在 Visual Studio IDE 中覆寫這些跨平台開發工具的預設路徑。  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>若要設定協力廠商工具的路徑  
   

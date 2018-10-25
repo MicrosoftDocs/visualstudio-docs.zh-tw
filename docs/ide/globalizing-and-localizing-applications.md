@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942464"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863592"
 ---
 # <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
 
@@ -40,7 +40,7 @@ ms.locfileid: "31942464"
 
 ## <a name="see-also"></a>另請參閱
 
-- [開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供適用於國際對象的程式設計相關資訊。
+- [開發世界性的應用程式的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)提供適用於國際對象的程式設計相關資訊。
 - [類別庫概觀](/dotnet/standard/class-library-overview)介紹類別、介面和實值型別，以加速和最佳化開發過程並提供對系統功能的存取。
 - <xref:System.Globalization> 顯示此命名空間內的類別，其定義與文化特性相關的資訊，包括語言、國家/地區、使用中的行事曆、日期、貨幣和數字的格式模式，以及字串的排序順序。
 - <xref:System.Resources> 顯示此命名空間內的類別和介面，其可讓開發人員建立、儲存和管理應用程式中所使用的各種文化特性相關資源。

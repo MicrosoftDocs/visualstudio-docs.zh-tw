@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lowerboundid |Microsoft 文件'
+title: 'Idiasymbol:: Get_lowerboundid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fe2434b53932f6fdf9f579e45a095ff46e5564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1fe7109957167b9f2073660e035298bcc7613feb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873327"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
-擷取 FORTRAN 陣列維度的下限符號識別的項。  
+擷取的符號識別項的 FORTRAN 陣列維度的下限。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,16 +34,16 @@ HRESULT get_lowerBoundId (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回代表 FORTRAN 陣列維度的下限的符號的符號 ID。  
+ [out]傳回符號的識別碼代表 FORTRAN 陣列維度的下限的符號。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 識別碼是由 DIA SDK，以將標示為唯一的所有符號的唯一值。  
+ 識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

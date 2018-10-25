@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813813"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -45,28 +45,28 @@ ms.locfileid: "37118098"
 
 1. 在 Visual Studio 中建立新的專案有多種方式。 在 [起始頁] 上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案] > [新增] > [專案]，或選擇工具列上的 [新增專案] 按鈕。
 
-  ![起始頁](./media/vside-newproject1.png)
+   ![起始頁](./media/vside-newproject1.png)
 
-  在 [新增專案] 對話方塊中，可用的專案範本會出現在清單中的 [範本] 類別下。 範本會依程式設計語言和專案類型組織，例如 Visual C#、JavaScript 和 Azure Data Lake。
+   在 [新增專案] 對話方塊中，可用的專案範本會出現在清單中的 [範本] 類別下。 範本會依程式設計語言和專案類型組織，例如 Visual C#、JavaScript 和 Azure Data Lake。
 
-  ![[新增專案] 對話方塊](./media/vside-newproject-templates-list.png)
+   ![[新增專案] 對話方塊](./media/vside-newproject-templates-list.png)
 
-  > [!NOTE]
-  > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+   > [!NOTE]
+   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio 2017](../install/modify-visual-studio.md)。
 
-1. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
+2. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
 
-  下列範例示範適用於 Visual C# .NET Core 專案的專案範本。
+   下列範例示範適用於 Visual C# .NET Core 專案的專案範本。
 
-  ![專案範本](./media/new-project-dialog-net-core.png)
+   ![專案範本](./media/new-project-dialog-net-core.png)
 
-1. 在 [名稱] 方塊中輸入新專案的名稱。 您可以選擇將專案儲存在系統上的預設位置，或選擇 [瀏覽] 按鈕以尋找其他位置。
+3. 在 [名稱] 方塊中輸入新專案的名稱。 您可以選擇將專案儲存在系統上的預設位置，或選擇 [瀏覽] 按鈕以尋找其他位置。
 
-  您也可以選擇性地選擇變更方案名稱，或選擇 [新增至原始檔控制] 以將新專案新增至 Git 存放庫。
+   您也可以選擇性地選擇變更方案名稱，或選擇 [新增至原始檔控制] 以將新專案新增至 Git 存放庫。
 
-1. 選擇 [確定] 按鈕以建立方案和專案。
+4. 選擇 [確定] 按鈕以建立方案和專案。
 
-1. 如果您想要將其他專案新增至解決方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [新增項目]。
+5. 如果您想要將其他專案新增至解決方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [新增項目]。
 
 ## <a name="create-a-project-from-existing-code-files"></a>從現有程式碼檔案建立專案
 

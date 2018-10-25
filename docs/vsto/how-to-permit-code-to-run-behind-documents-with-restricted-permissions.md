@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855843"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何： 允許程式碼的文件背後執行以限制權限
   您可以使用 Microsoft Office 的資訊版權管理 (IRM) 功能的文件或活頁簿限制權限。 根據預設，受限制的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿背後的程式碼不允許執行。 您可以變更預設值，以便您的 managed 程式碼擴充功能可以存取物件模型中，而且您的解決方案會正常運作。  
@@ -36,18 +36,18 @@ ms.locfileid: "35255282"
   
 ## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>若要允許程式碼的文件背後執行以限制權限  
   
-1.  在 Word 或 Excel 中開啟的文件或活頁簿。  
+1. 在 Word 或 Excel 中開啟的文件或活頁簿。  
   
-2.  按一下 **檔案**索引標籤上，指向**準備**，指向**限制權限**，然後按一下**限制存取**。  
+2. 按一下 **檔案**索引標籤上，指向**準備**，指向**限制權限**，然後按一下**限制存取**。  
   
-    > [!NOTE]  
-    >  在第一次使用時，系統會提示您安裝 Windows 的 Rights Management 用戶端。 在安裝用戶端之後，您可能需要重複這些步驟。  
+   > [!NOTE]  
+   >  在第一次使用時，系統會提示您安裝 Windows 的 Rights Management 用戶端。 在安裝用戶端之後，您可能需要重複這些步驟。  
   
-3.  在 **權限**對話方塊中，選取**限制此文件的權限**，然後按一下 **更多選項**。  
+3. 在 **權限**對話方塊中，選取**限制此文件的權限**，然後按一下 **更多選項**。  
   
-4.  底下**額外的權限的使用者**，選取**以程式設計方式存取內容**。  
+4. 底下**額外的權限的使用者**，選取**以程式設計方式存取內容**。  
   
- Word 或 Excel，將允許以程式設計方式存取物件模型。  
+   Word 或 Excel，將允許以程式設計方式存取物件模型。  
   
 ## <a name="see-also"></a>另請參閱  
  [資訊版權管理和 managed 程式碼延伸模組概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   

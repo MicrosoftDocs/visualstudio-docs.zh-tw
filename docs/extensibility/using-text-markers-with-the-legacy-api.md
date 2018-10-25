@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835926"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
 文字標記是文字的浮動的一組可能會影響顯示的緩衝區中和文字的區域的行為。 標記包含中斷點、 書籤、 波浪底線和唯讀區域。 文字標記是基本上不同於語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面中，通常要求語法著色。 語法標色變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並套用特殊的行為和著色。  
@@ -30,14 +30,14 @@ ms.locfileid: "46496125"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
-|-----------|-----------------|  
-|[如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)|描述如何將所提供的標準文字標記類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器文字檢視。|  
-|[如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md)|描述如何實作的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用以使用紅色波浪底線指出錯誤的標記。|  
-|[如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)|描述如何建立並加入文字檢視中的自訂文字標記類型。|  
-|[如何：使用文字標記](../extensibility/how-to-use-text-markers.md)|說明如何新增文字標記。|  
-|[深入探索核心編輯器](../extensibility/inside-the-core-editor.md)|描述核心編輯器的功能，並提供有關如何自訂核心編輯器的詳細資料。|  
-|[編輯器功能](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述可用的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。|  
+| 標題 | 描述 |
+| - | - |
+| [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md) | 描述如何將所提供的標準文字標記類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器文字檢視。 |
+| [如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md) | 描述如何實作的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用以使用紅色波浪底線指出錯誤的標記。 |
+| [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md) | 描述如何建立並加入文字檢視中的自訂文字標記類型。 |
+| [如何：使用文字標記](../extensibility/how-to-use-text-markers.md) | 說明如何新增文字標記。 |
+| [深入探索核心編輯器](../extensibility/inside-the-core-editor.md) | 描述核心編輯器的功能，並提供有關如何自訂核心編輯器的詳細資料。 |
+| [編輯器功能](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | 描述可用的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。 |
   
 ## <a name="reference"></a>參考資料  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

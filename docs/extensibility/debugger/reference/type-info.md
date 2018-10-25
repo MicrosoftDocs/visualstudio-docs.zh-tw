@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO |Microsoft 文件
+title: TYPE_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 610abe4bd01c47b09d6438508318e90a41f6802e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810512"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此結構指定的各種欄位的類型的相關資訊。  
@@ -48,16 +48,16 @@ public struct TYPE_INFO {
   
 #### <a name="parameters"></a>參數  
  dwKind  
- 中的值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)決定如何解譯聯集的列舉。  
+ 值，以從[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉，決定如何解譯聯集。  
   
  type.typeMeta  
- [只有 c + +]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構如果`dwKind`是`TYPE_KIND_METADATA`。  
+ [只有 c + +]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構，如果`dwKind`是`TYPE_KIND_METADATA`。  
   
  type.typePdb  
- [只有 c + +]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構如果`dwKind`是`TYPE_KIND_PDB`。  
+ [只有 c + +]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構，如果`dwKind`是`TYPE_KIND_PDB`。  
   
  type.typeBuilt  
- [只有 c + +]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構如果`dwKind`是`TYPE_KIND_BUILT`。  
+ [只有 c + +]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構，如果`dwKind`是`TYPE_KIND_BUILT`。  
   
  type.unused  
  未使用的填補。  
@@ -72,9 +72,9 @@ public struct TYPE_INFO {
  此結構會傳遞至[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填滿其中的方法。 結構的內容的解譯方式根據`dwKind`欄位。  
   
 > [!NOTE]
->  [只有 c + +]如果`dwKind`等於`TYPE_KIND_BUILT`，就需要釋放基礎[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件終結時`TYPE_INFO`結構。 藉由呼叫 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 即可達到此目的。  
+>  [只有 c + +]如果`dwKind`equals `TYPE_KIND_BUILT`，然後才釋出基礎[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件終結時`TYPE_INFO`結構。 藉由呼叫 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 即可達到此目的。  
   
- [僅限 C#]下表顯示如何解譯`unionmember`的每一種類型的成員。 此範例會示範一種類型的方式。  
+ [僅限 C#]下表顯示如何解譯`unionmember`的每一種類型的成員。 此範例會示範如何做到這點一種型別。  
   
 |`dwKind`|`unionmember` 解譯為|  
 |--------------|----------------------------------|  
@@ -83,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|  
   
 ## <a name="example"></a>範例  
- 這個範例示範如何解譯`unionmember`隸屬`TYPE_INFO`C# 中的結構。 此範例顯示解譯只有一個型別 (`TYPE_KIND_METADATA`)，但其他完全相同的方式解譯。  
+ 此範例示範如何解譯`unionmember`隸屬`TYPE_INFO`C# 中的結構。 此範例示範解譯只能有一個類型 (`TYPE_KIND_METADATA`)，但其他完全相同的方式進行解譯。  
   
 ```csharp  
 using System;  

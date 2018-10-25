@@ -11,41 +11,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e6043142fa58cd5991815ebc107d425cc36950
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856024"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解和測試您的程式碼
 您接下來要將註解加入至程式碼。 註解是一種不會變更程式運作方式的附註。 它可讓讀取程式碼的人容易了解您的程式碼有何用途。 將註解加入至您的程式碼是個好習慣。 在 Visual C# 中，兩個斜線 (//) 可將一行標示成註解。 在 Visual Basic 中，使用單引號 (') 將一行標示成註解。 加入註解後，請測試程式。 較好的做法是，經常在您處理專案時執行和測試程式碼，以便在程式碼變得更複雜之前早期攔截並修正所有問題。 這稱為「反覆測試」。
 
  您剛才已建置一些有作用的功能，雖然尚未完成，但已能夠載入圖片。 在將註解加入至程式碼並測試之前，請花一點時間檢閱程式碼概念，因為您會經常用到這些概念：
 
--   當您在 **Windows Forms 設計工具**中按兩下 [顯示圖片] 按鈕時，IDE 會自動將*方法*新增至程式的程式碼。
+- 當您在 **Windows Forms 設計工具**中按兩下 [顯示圖片] 按鈕時，IDE 會自動將*方法*新增至程式的程式碼。
 
--   方法是用來組織程式碼的方式，也就是將程式碼組合在一起的方式。
+- 方法是用來組織程式碼的方式，也就是將程式碼組合在一起的方式。
 
--   方法通常會以特定順序執行少數幾項工作，例如 `showButton_Click()` 方法如何顯示對話方塊，然後載入圖片。
+- 方法通常會以特定順序執行少數幾項工作，例如 `showButton_Click()` 方法如何顯示對話方塊，然後載入圖片。
 
--   方法是由程式碼「陳述式」或程式碼行所構成。 可將方法視為將程式碼陳述式配套起來的機制。
+- 方法是由程式碼「陳述式」或程式碼行所構成。 可將方法視為將程式碼陳述式配套起來的機制。
 
--   執行 (或「呼叫」) 方法時，會從第一個陳述式開始依序逐一執行方法中的陳述式。
+- 執行 (或「呼叫」) 方法時，會從第一個陳述式開始依序逐一執行方法中的陳述式。
 
-     下列是陳述式的範例。
+   下列是陳述式的範例。
 
-    ```csharp
-    pictureBox1.Load(openFileDialog1.FileName);
-    ```
+  ```csharp
+  pictureBox1.Load(openFileDialog1.FileName);
+  ```
 
-    ```vb
-    pictureBox1.Load(openFileDialog1.FileName)
-    ```
+  ```vb
+  pictureBox1.Load(openFileDialog1.FileName)
+  ```
 
-     陳述式就是讓程式執行動作的機制。 在 Visual C# 中，陳述式的結尾一定是分號。 在 Visual Basic 中，行尾就代表陳述式結尾  (Visual Basic 中不需要分號)。上一個陳述式指示 <xref:System.Windows.Forms.PictureBox> 控制項載入使用者以 **OpenFileDialog** 元件選取的檔案。
+   陳述式就是讓程式執行動作的機制。 在 Visual C# 中，陳述式的結尾一定是分號。 在 Visual Basic 中，行尾就代表陳述式結尾  (Visual Basic 中不需要分號)。上一個陳述式指示 <xref:System.Windows.Forms.PictureBox> 控制項載入使用者以 **OpenFileDialog** 元件選取的檔案。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+  ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-add-comments"></a>加入註解
 

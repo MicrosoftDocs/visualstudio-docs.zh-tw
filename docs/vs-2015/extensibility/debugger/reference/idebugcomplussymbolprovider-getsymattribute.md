@@ -16,12 +16,12 @@ ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58a26380d103b1ecf4fee01d488feed5114bb4fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d02766f8e9be9a081eec3582cac4b43bde9fa1b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814814"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

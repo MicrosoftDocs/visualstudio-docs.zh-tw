@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844614"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy++ 可讓您執行下列工作︰  
   
--   顯示系統物件關聯性的圖形樹狀結構， 其中包括 [處理序](../debugger/processes-view.md)、 [執行緒](../debugger/threads-view.md)和 [視窗](../debugger/windows-view.md)。  
+- 顯示系統物件關聯性的圖形樹狀結構， 其中包括 [處理序](../debugger/processes-view.md)、 [執行緒](../debugger/threads-view.md)和 [視窗](../debugger/windows-view.md)。  
   
--   搜尋指定的 [視窗](../debugger/how-to-search-for-a-window-in-windows-view.md)、 [執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md)、 [處理序](../debugger/how-to-search-for-a-process-in-processes-view.md)或 [訊息](../debugger/how-to-search-for-a-message-in-messages-view.md)。  
+- 搜尋指定的 [視窗](../debugger/how-to-search-for-a-window-in-windows-view.md)、 [執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md)、 [處理序](../debugger/how-to-search-for-a-process-in-processes-view.md)或 [訊息](../debugger/how-to-search-for-a-message-in-messages-view.md)。  
   
--   檢視所選 [視窗](../debugger/how-to-display-window-properties.md)、 [執行緒](../debugger/how-to-display-thread-properties.md)、 [處理序](../debugger/how-to-display-process-properties.md)或 [訊息](../debugger/how-to-display-message-properties.md)的屬性。  
+- 檢視所選 [視窗](../debugger/how-to-display-window-properties.md)、 [執行緒](../debugger/how-to-display-thread-properties.md)、 [處理序](../debugger/how-to-display-process-properties.md)或 [訊息](../debugger/how-to-display-message-properties.md)的屬性。  
   
--   直接在檢視中選取視窗、執行緒、處理序或訊息。  
+- 直接在檢視中選取視窗、執行緒、處理序或訊息。  
   
--   使用 [搜尋工具](../debugger/how-to-use-the-finder-tool.md) ，依滑鼠指標位置來選取視窗。  
+- 使用 [搜尋工具](../debugger/how-to-use-the-finder-tool.md) ，依滑鼠指標位置來選取視窗。  
   
--   使用複雜的訊息記錄檔選取範圍參數，設定 **訊息選項** 。  
+- 使用複雜的訊息記錄檔選取範圍參數，設定 **訊息選項** 。  
   
- Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理]  命令來更新使用中的檢視，[視窗搜尋工具]  讓您更輕鬆地監視，而 [字型]  對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。  
+  Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理]  命令來更新使用中的檢視，[視窗搜尋工具]  讓您更輕鬆地監視，而 [字型]  對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。  
   
- 您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示]  ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。  
+  您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示]  ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。  
   
 > [!NOTE]
 >  下列兩個其他公用程式跟 Spy++ 相似：PView，會顯示處理序和執行緒的詳細資料；DDESPY.EXE，可讓您監視動態資料交換 (DDE) 訊息。  

@@ -17,12 +17,12 @@ ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9237c6f170c2e96269da429255a79467c6ee0ecc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a56c1f2c59a40255b9427b6e31659feaad72ba9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918658"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DisableAutoAttach |Microsoft 文件
+title: IDebugCoreServer3::DisableAutoAttach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c8a36e867d4ee7c180b96db6dec004ed4d5227e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e8a00b4b0b7b485d5f419128e18a5fd0bf65e4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821319"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 停用自動附加此伺服器相關聯的所有偵錯引擎。  
@@ -38,7 +38,7 @@ int DisableAutoAttach();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

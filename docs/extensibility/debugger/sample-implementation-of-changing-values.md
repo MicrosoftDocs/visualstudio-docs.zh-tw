@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01d3a13762612f40240fb377698745088aae6618
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 0b58d2c531fc2b29b53587f4fbd12959b8baf8fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876161"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 > [!IMPORTANT]

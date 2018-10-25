@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841100"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ ms.locfileid: "49301858"
   
 #### <a name="to-install-or-uninstall-help-content"></a>安裝或解除安裝說明內容  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能表列上，依序選擇 [說明] 、[加入和移除說明內容] 。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能表列上，依序選擇 [說明] 、[加入和移除說明內容] 。  
   
-2.  在 [Microsoft 說明檢視器]  的 [管理內容] 索引標籤上，選取適用於您說明內容的安裝來源。  
+2. 在 [Microsoft 說明檢視器]  的 [管理內容] 索引標籤上，選取適用於您說明內容的安裝來源。  
   
-3.  如果您要尋找特定的說明集合，請輸入名稱或中的關鍵字**搜尋**文字方塊中，然後按**Enter**。  
+3. 如果您要尋找特定的說明集合，請輸入名稱或中的關鍵字**搜尋**文字方塊中，然後按**Enter**。  
   
-4.  在您想要的說明集合名稱旁邊，選擇 [加入]  或 [移除]  連結。  
+4. 在您想要的說明集合名稱旁邊，選擇 [加入]  或 [移除]  連結。  
   
-5.  按一下 [**更新**] 按鈕。  
+5. 按一下 [**更新**] 按鈕。  
   
- 如需如何安裝或部署離線說明的詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
+   如需如何安裝或部署離線說明的詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
   
 ##  <a name="serviceReleases"></a> 檢查服務版本與產品更新  
  因為並非所有擴充功能都相容，Visual Studio 不會自動升級擴充功能從舊版升級時。 您必須重新安裝擴充功能[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkId=178891)或來自軟體發行者。  

@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings |Microsoft 文件
+title: IPerPropertyBrowsing2::GetPredefinedStrings |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915956"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-可讓呼叫者，使用計數的陣列，代表這個屬性的可能值的字串指標的填滿清單方塊。  
+可讓呼叫者使用的計數的陣列，代表這個屬性的可能值的字串指標的填滿清單方塊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>參數  
  `dispid`  
- [in]屬性為其呼叫端要求的字串清單的分派識別項。  
+ [in]為其呼叫端要求的字串清單屬性的分派識別項。  
   
  `pCaStrings`  
- [out]呼叫端配置計數的陣列結構，其中包含的項目計數和方法配置之陣列的字串指標的位址指標。 如果方法失敗，會配置任何記憶體，且結構的內容是未定義。  
+ [out]呼叫端配置計數的陣列結構，其中包含的項目計數和地址的字串指標的方法配置陣列的指標。 如果方法失敗，會配置任何記憶體，與結構的內容為未定義。  
   
  `pCaCookies`  
- [out]結構指標，呼叫端配置計數的陣列，其中包含項目計數和 Dword 方法配置陣列的位址。 如果方法失敗，會配置任何記憶體，且結構的內容是未定義。  
+ [out]呼叫端配置計數的陣列結構，其中包含的項目計數和 Dword 的方法配置陣列的位址指標。 如果方法失敗，會配置任何記憶體，與結構的內容為未定義。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回有效`HRESULT`，通常`S_OK`。  
+ 會傳回有效`HRESULT`，通常是`S_OK`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPerPropertyBrowsing2 介面 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

@@ -10,26 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae63583edac9b3ff6fefef416c8c1ce19d6e88f6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c8d90883f2aac5389ec0787fee08749da363e747
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821951"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。
 
 ## <a name="rule-description"></a>規則描述
- A*文件類型定義 (DTD)* 是下列其中一種 XML 剖析器用來判斷文件有效性所定義[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
+ *文件類型定義 (DTD)* 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
 
 - <xref:System.Xml.XmlDocument> 或<xref:System.Xml.XmlTextReader>類別針對 DTD 處理會使用預設解析程式的值。
 

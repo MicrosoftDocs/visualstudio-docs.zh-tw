@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate |Microsoft 文件
+title: IDebugProgram2::GetENCUpdate |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b4a22d8cfb1d8ab89adb5946305ea50425fa35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c356154c5d77c01f84c5fe4446b8ac92235c10e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866996"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-這個方法會取得此程式的 編輯後繼續 (ENC) 更新。 自訂偵錯引擎一律會傳回`E_NOTIMPL`。  
+這個方法會取得此程式的 編輯後繼續 (ENC) 更新。 自訂的偵錯引擎一律會傳回`E_NOTIMPL`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,13 +41,13 @@ int GetENCUpdate(
   
 #### <a name="parameters"></a>參數  
  `ppUpdate`  
- [out]傳回可以用來更新此程式的內部介面。  
+ [out]傳回可用來更新此程式的內部介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 > [!NOTE]
->  應該會一律傳回的自訂偵錯引擎`E_NOTIMPL`。  
+>  自訂的偵錯引擎應該一律傳回`E_NOTIMPL`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

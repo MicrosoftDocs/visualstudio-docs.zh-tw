@@ -16,12 +16,12 @@ ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d4e0b4a4b1e8af4c10677d13f6ac54ef26861b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3079a9cc5962fb990e43c2009a5b8fc94a6111
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902928"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

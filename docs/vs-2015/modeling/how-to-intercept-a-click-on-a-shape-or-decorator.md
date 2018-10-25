@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926744"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>攔截按一下和拖曳 CompartmentShape list  
  下列範例可讓使用者藉由拖曳它們重新排序區間圖形中的項目。 若要執行此程式碼：  
   
-1.  使用建立新的 DSL 方案**類別圖表**解決方案範本。  
+1. 使用建立新的 DSL 方案**類別圖表**解決方案範本。  
   
-     您也可以使用您自己的方案中，含有區間圖形。 此程式碼會假設是圖形時，所代表的模型項目，以及表示區間清單項目中的元素之間內嵌關聯性。  
+    您也可以使用您自己的方案中，含有區間圖形。 此程式碼會假設是圖形時，所代表的模型項目，以及表示區間清單項目中的元素之間內嵌關聯性。  
   
-2.  設定**產生雙衍生**區間圖形的屬性。  
+2. 設定**產生雙衍生**區間圖形的屬性。  
   
-3.  在檔案中加入下列程式碼**Dsl**專案。  
+3. 在檔案中加入下列程式碼**Dsl**專案。  
   
-4.  調整以符合您自己的 DSL 的這段程式碼中的網域類別和圖形名稱。  
+4. 調整以符合您自己的 DSL 的這段程式碼中的網域類別和圖形名稱。  
   
- 總而言之，程式碼的運作方式，如下所示。 在此範例中，`ClassShape`區間圖形的名稱。  
+   總而言之，程式碼的運作方式，如下所示。 在此範例中，`ClassShape`區間圖形的名稱。  
   
 -   一組的滑鼠事件處理常式會附加至每個區間的執行個體建立時。  
   

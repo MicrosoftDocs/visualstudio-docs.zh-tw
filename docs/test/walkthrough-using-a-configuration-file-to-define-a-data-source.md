@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821613"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -88,7 +88,7 @@ ms.locfileid: "39382675"
 3. 在第一個 **add** 項目中建立下列屬性和值，以連線至 Microsoft Access 資料庫：
 
 |屬性|值|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
@@ -135,7 +135,7 @@ ms.locfileid: "39382675"
 4. 在第一個 **add** 項目中建立下列屬性和值，以供 Microsoft Access 資料來源使用：
 
 |屬性|值|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|

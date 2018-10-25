@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasassignmentoperator |Microsoft 文件'
+title: 'Idiasymbol:: Get_hasassignmentoperator |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a8799ae740566bef247238a98b7dc58ca97ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850005"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 擷取指定的使用者定義資料類型是否有任何定義的指派運算子的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_hasAssignmentOperator (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`反之則傳回的使用者定義資料類型有定義; 任何指派運算子`FALSE`。  
+ [out]會傳回`TRUE`的使用者定義資料類型具有任何指派運算子可定義; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是使用符號。  
+>  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   

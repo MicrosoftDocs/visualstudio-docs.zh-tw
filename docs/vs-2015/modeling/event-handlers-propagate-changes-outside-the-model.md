@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823693"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Visualization and Modeling SDK，在中，您可以定義存放區的事件處�
   
 ### <a name="to-define-a-store-event"></a>若要定義的存放區事件  
   
-1.  選擇您想要監視的事件類型。 如需完整清單，查看 屬性<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>。 每個屬性會對應至類型的事件。 最常使用的事件類型包括：  
+1. 選擇您想要監視的事件類型。 如需完整清單，查看 屬性<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>。 每個屬性會對應至類型的事件。 最常使用的事件類型包括：  
   
-    -   `ElementAdded` – 當模型項目時，就會觸發，關聯性連結、 圖形或連接器建立。  
+   -   `ElementAdded` – 當模型項目時，就會觸發，關聯性連結、 圖形或連接器建立。  
   
-    -   ElementPropertyChanged – 觸發時的值`Normal`網域屬性會變更。 只有當新的和舊的值不相等，則會觸發事件。 事件不能用於計算及自訂的儲存體屬性。  
+   -   ElementPropertyChanged – 觸發時的值`Normal`網域屬性會變更。 只有當新的和舊的值不相等，則會觸發事件。 事件不能用於計算及自訂的儲存體屬性。  
   
-         它無法套用至角色內容對應至關聯性連結。 請改用`ElementAdded`来監視的網域關聯性。  
+        它無法套用至角色內容對應至關聯性連結。 請改用`ElementAdded`来監視的網域關聯性。  
   
-    -   `ElementDeleted` -觸發模型項目之後，關聯性、 圖形或連接器已刪除。 您仍然可以存取屬性值的項目，但會有其他項目沒有關聯性。  
+   -   `ElementDeleted` -觸發模型項目之後，關聯性、 圖形或連接器已刪除。 您仍然可以存取屬性值的項目，但會有其他項目沒有關聯性。  
   
-2.  加入的部分類別定義_您的 Dsl_**DocData**不同的程式碼檔案裡**DslPackage**專案。  
+2. 加入的部分類別定義_您的 Dsl_**DocData**不同的程式碼檔案裡**DslPackage**專案。  
   
-3.  事件的程式碼撰寫的方法，如下列範例所示。 它可以是`static`，除非您想要存取`DocData`。  
+3. 事件的程式碼撰寫的方法，如下列範例所示。 它可以是`static`，除非您想要存取`DocData`。  
   
-4.  覆寫`OnDocumentLoaded()`登錄處理常式。 如果您有多個處理常式時，您可以註冊它們全都放在相同的位置。  
+4. 覆寫`OnDocumentLoaded()`登錄處理常式。 如果您有多個處理常式時，您可以註冊它們全都放在相同的位置。  
   
- 註冊程式碼的位置並不重要。 `DocView.LoadView()` 是替代的位置。  
+   註冊程式碼的位置並不重要。 `DocView.LoadView()` 是替代的位置。  
   
 ```  
 using System;  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813849"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "44283325"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-|
 |**將其他回合設定新增至負載測試：** 除了執行 [新增負載測試精靈] 時所建立的回合設定以外，您還可以將其他回合設定新增至負載測試，以便在不同的狀況下執行測試。|-   [如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**指定要搭配負載測試使用的使用中回合設定：** 您可以使用 [負載測試編輯器] 來選取想要搭配負載測試使用的回合設定。 現用回合設定可由 "[Active]" 後置字元加以識別。|-   [如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**編輯回合設定屬性：** 您可以針對記錄選項等項目編輯回合設定屬性 (詳情請參閱下面)，以便決定測試的長度、準備持續期間、所回報錯誤詳細資料的數目上限、取樣率、連接模型 (僅限 Web 效能測試)、結果儲存類型、驗證層級，以及 SQL 追蹤。 回合設定應該反映負載測試的目標。|-   [負載測試回合設定屬性](../test/load-test-run-settings-properties.md)<br />-   [變更回合設定屬性](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

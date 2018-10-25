@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897767"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>選取條件對話方塊 (舊版)
 本主題描述如何使用**選取條件**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
  **選取條件**對話方塊用於選取要指派給活動的 condition 屬性的宣告式規則條件。 這些規則條件會公開為以下 Windows Workflow Foundation 全新活動中的屬性：  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- 如需有關如何存取資訊**選取條件** 對話方塊中，請參閱[如何： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
+  如需有關如何存取資訊**選取條件** 對話方塊中，請參閱[如何： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
   
- 下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。  
+  下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。  
   
 |UI 項目|描述|  
 |----------------|-----------------|  

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941837"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "49242849"
   
  您可以利用下列方式排除專案：  
   
--   從作用中的方案組態暫時將其移除。  
+- 從作用中的方案組態暫時將其移除。  
   
--   建立不包含專案的方案組態。  
+- 建立不包含專案的方案組態。  
   
- 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
+  如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>從作用中的方案組態暫時將專案移除  
   

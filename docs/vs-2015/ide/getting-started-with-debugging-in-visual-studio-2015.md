@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824434"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
   
  中斷點的常見用途包含：  
   
-1.  若要縮小造成當機或停止回應的來源，請在您認為會導致失敗的整個方法呼叫程式碼中四處散佈中斷點。 當您逐步執行程式碼時，請移除中斷點，然後將此中斷點重設得更為密集，直到您找出有問題的那一行程式碼。  
+1. 若要縮小造成當機或停止回應的來源，請在您認為會導致失敗的整個方法呼叫程式碼中四處散佈中斷點。 當您逐步執行程式碼時，請移除中斷點，然後將此中斷點重設得更為密集，直到您找出有問題的那一行程式碼。  
   
-2.  當您引入新的程式碼時，請在其開頭設定中斷點，並逐步執行程式碼，確定它會如預期地表現。  
+2. 當您引入新的程式碼時，請在其開頭設定中斷點，並逐步執行程式碼，確定它會如預期地表現。  
   
-3.  如果您已實作複雜的行為，請對演算碼設置中斷點，如此當程式中斷時，您可以檢查變數和資料的值。  
+3. 如果您已實作複雜的行為，請對演算碼設置中斷點，如此當程式中斷時，您可以檢查變數和資料的值。  
   
-4.  如果您要撰寫 C 或 C++ 程式碼，當要偵錯記憶體相關的失敗時，請使用中斷點來停止程式碼，以便您檢查位址值 (尋找 NULL) 和參考計數。  
+4. 如果您要撰寫 C 或 C++ 程式碼，當要偵錯記憶體相關的失敗時，請使用中斷點來停止程式碼，以便您檢查位址值 (尋找 NULL) 和參考計數。  
   
- 如需使用中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
+   如需使用中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
   
 ### <a name="setting-conditional-breakpoints"></a>設定條件中斷點  
  如果在迴圈或遞迴中有中斷點，或是您有很多經常逐步執行的中斷點，請使用條件中斷點，以確保程式碼只在符合特定條件時暫停。 否則，您要按 F11 非常多次。  

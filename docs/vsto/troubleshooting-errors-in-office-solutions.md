@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917098"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  這段程式碼會導致下列編譯錯誤：  
   
--   Visual Basic: 「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
+- Visual Basic: 「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
   
--   Visual C#:"Interop 類型 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌。 請改用適當的介面。」  
+- Visual C#:"Interop 類型 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌。 請改用適當的介面。」  
   
- 若要解決這個錯誤，請修改程式碼以參考對應的介面。 例如，不要參考 <xref:Microsoft.Office.Interop.Word.DocumentClass> 物件，改為參考 <xref:Microsoft.Office.Interop.Word.Document> 介面的執行個體。  
+  若要解決這個錯誤，請修改程式碼以參考對應的介面。 例如，不要參考 <xref:Microsoft.Office.Interop.Word.DocumentClass> 物件，改為參考 <xref:Microsoft.Office.Interop.Word.Document> 介面的執行個體。  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845430"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 
@@ -44,7 +44,7 @@ ms.locfileid: "36234159"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-|
 |**存取負載測試的結果：** 當您從 [負載測試編輯器] 執行負載測試時，負載測試結果會自動開啟，而且執行中的負載測試會顯示在 [負載測試分析器] 中。|-   [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)|
 |**在負載測試中新增分析注意事項：** 您可以在進行分析時將註解新增至負載測試。 註解會隨著負載測試結果永久儲存。 輸入的描述也會顯示在 [描述] 資料行中，這個資料行與 [負載測試編輯器] 的 [開啟和管理測試結果] 對話方塊中的負載測試建立關聯。<br /><br /> 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。<br /><br /> 此外，當您建立負載測試結果的 Excel 報表時，就會顯示註解。<br /><br /> 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。|-   [如何：在分析已完成的負載測試時新增註解](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**分析負載測試的結果：** 您必須先存取負載測試回合資料，之後才能分析產生的資料。 您可以檢視 [負載測試摘要]，快速了解測試的結果。 負載測試摘要會以精簡易讀的格式顯示主要的結果。<br /><br /> 您可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。<br /><br /> 您可以使用負載測試結果中的圖形和資料表，分析負載測試結果的詳細資料。 其中包括 [錯誤]、[頁面]、[要求]、[SQL 追蹤]、[測試]、[臨界值] 和 [異動]。|-   [負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)<br />-   [如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|

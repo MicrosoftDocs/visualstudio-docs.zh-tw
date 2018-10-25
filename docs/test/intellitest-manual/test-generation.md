@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e3f96f9ba893da2368ef7d982079cdbd834055ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881819"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -234,7 +234,6 @@ namespace MyTests
         }
     }
 }
-
 ```
 
 <a name="further-reading"></a>

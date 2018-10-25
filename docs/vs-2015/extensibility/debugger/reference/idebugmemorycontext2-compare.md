@@ -18,12 +18,12 @@ ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fb4ec2bda3b87d5a781d58aa39df82040da4069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 002f1c01c62e5578a652670f883ea2440e1d52f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928876"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

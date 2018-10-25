@@ -17,12 +17,12 @@ ms.assetid: d5b04bba-a8b9-4141-94fb-250c77f0534c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5789a6b3d99f16b87e06cc2d2a3ecab5a3ab0d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6921d0f6f97b3ca112053cbba80eb78965a75e16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863694"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

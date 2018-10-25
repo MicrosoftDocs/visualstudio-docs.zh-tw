@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symbolbyid |Microsoft 文件'
+title: 'Idiasession:: Symbolbyid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e5e2815985aacd43603d24f1c6f4052b66c19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8ca800c4409c9c3c1b72b625aa8cedac31e5b194
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911626"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
-擷取符號依其唯一的識別項。  
+擷取符號依其唯一識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,15 +41,15 @@ HRESULT symbolById (
  [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取表示符號的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  指定的識別項是由 DIA SDK 在內部用來使所有符號都是唯一的唯一值。  
   
- 這個方法可用，例如，擷取代表類型的另一個符號的符號 （請參閱範例）。  
+ 這個方法可用，比方說，來擷取代表類型的另一個符號的符號 （請參閱範例）。  
   
 ## <a name="example"></a>範例  
- 這個範例會擷取[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表類型的另一個符號。 這個範例示範如何使用`symbolById`工作階段中的方法。 更簡單的方法是呼叫[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法來直接擷取類型符號。  
+ 此範例會擷取[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表另一個符號的類型。 此範例示範如何使用`symbolById`工作階段中的方法。 更簡單的方法是呼叫[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法來直接擷取類型符號。  
   
 ```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  

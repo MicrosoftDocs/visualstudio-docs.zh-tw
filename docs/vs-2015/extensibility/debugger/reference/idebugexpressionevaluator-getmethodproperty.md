@@ -17,12 +17,12 @@ ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0548cab6892ffc6f6b2db81122b76dfe6642301e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51541aebd0e476519970216b2fdb848e3db89d5e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811760"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

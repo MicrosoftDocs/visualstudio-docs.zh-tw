@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc1fb335b854bd5fcb09a7024944b554fdedd19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5aae2fa927161caf51572543e1257e70e430ed9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819702"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

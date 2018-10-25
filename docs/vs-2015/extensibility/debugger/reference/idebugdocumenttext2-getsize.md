@@ -17,12 +17,12 @@ ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bbbfa85840222e8ac34038e2d18ccfc146149cef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 570ec02c2e4df7d2af9b175e6fa1c41dcd82ac8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906360"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

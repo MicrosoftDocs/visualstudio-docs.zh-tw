@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateAsync |Microsoft 文件
+title: IDebugExpression2::EvaluateAsync |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13364d94f33eca33bf71b7077c19b9da54298ed7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7906e1f1daa0b473473abd28417a2db1c9b7f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912821"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
-這個方法會以非同步方式評估運算式。  
+這個方法會以非同步方式評估的運算式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,23 +43,23 @@ int EvaluateAsync(
   
 #### <a name="parameters"></a>參數  
  `dwFlags`  
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉。  
+ [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。  
   
  `pExprCallback`  
- [in]這個參數一律是 null 值。  
+ [in]此參數一律為 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 典型的錯誤碼是：  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 典型的錯誤碼是：  
   
 |錯誤|描述|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時運算式評估。|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時的運算式評估。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法應該會啟動運算式評估之後，立即傳回。 當成功評估運算式時， [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)必須只能傳送到[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)做為透過提供的事件回呼[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)。  
+ 此方法應在開始運算式評估之後，立即傳回。 成功評估運算式時， [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)必須傳送至[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)透過提供的事件回呼[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或是[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CExpression`實作物件[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CExpression`實作的物件[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面。  
   
 ```cpp  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  

@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938379"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>如何在 Visual Studio 中為 Windows 市集應用程式觸發、暫停和繼續事件，以及讓事件成為背景事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49214756"
   
  [觸發背景工作](#BKMK_Trigger_background_tasks)  
   
--   [從標準偵錯工作階段中觸發背景工作](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [從標準偵錯工作階段中觸發背景工作](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [在應用程式未執行時觸發背景工作](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [在應用程式未執行時觸發背景工作](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [診斷背景工作啟用錯誤](#BKMK_Diagnosing_background_task_activation_errors)  
+  [診斷背景工作啟用錯誤](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 觸發處理程序生命週期管理事件  
  當使用者切換離開您的應用程式，或當 Windows 進入低電力狀態時，Windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「 **暫停** 」狀態繼續時，它會進入「 **執行中** 」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。  

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bd9e16f4abb082fd48d2be654b37d015f5efe27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c3f6a151fc85afa8c6f407137c4001ad3de5db3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885716"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

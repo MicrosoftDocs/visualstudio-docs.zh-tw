@@ -17,12 +17,12 @@ ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30b7f452b78d9ab446adccab61893af07473098c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cef9cae88228529474ab54710d2fd0c5cf3b981
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918684"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

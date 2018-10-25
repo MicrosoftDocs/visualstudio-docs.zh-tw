@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834294"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -48,15 +49,15 @@ ms.locfileid: "49186691"
 ## <a name="rule-description"></a>規則描述
  當<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成員選擇預設文化特性及格式設定為基礎的假設，可能不正確的程式碼。 若要確定程式碼運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列方針：
 
--   如果此值會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
+- 如果此值會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
 
--   如果將儲存的值，且供軟體 （保存至檔案或資料庫），使用文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
+- 如果將儲存的值，且供軟體 （保存至檔案或資料庫），使用文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
 
--   如果您不知道值的目的地，具有資料取用者，或提供者指定的文化特性。
+- 如果您不知道值的目的地，具有資料取用者，或提供者指定的文化特性。
 
- 請注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>只能用來擷取當地語系化的資源所使用的執行個體<xref:System.Resources.ResourceManager?displayProperty=fullName>類別。
+  請注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>只能用來擷取當地語系化的資源所使用的執行個體<xref:System.Resources.ResourceManager?displayProperty=fullName>類別。
 
- 即使多載成員的預設行為是適用於您的需求，最好明確呼叫的特定文化特性的多載，讓您的程式碼是自我記錄並更容易維護。
+  即使多載成員的預設行為是適用於您的需求，最好明確呼叫的特定文化特性的多載，讓您的程式碼是自我記錄並更容易維護。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，使用採用的多載<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider>和指定的引數，根據先前列出的指導方針。

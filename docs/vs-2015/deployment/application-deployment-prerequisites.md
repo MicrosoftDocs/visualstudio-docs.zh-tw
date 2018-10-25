@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890987"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "49217928"
 ## <a name="bootstrapping-and-clickonce-deployment"></a>啟動載入和 ClickOnce 部署  
  在用戶端電腦上安裝應用程式之前，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會檢查用戶端，確定該用戶端具有應用程式資訊清單中所指定的特定需求。 這些需求包括下列各項：  
   
--   Common Language Runtime 的最小必要版本，在應用程式資訊清單中會指定為一個組件相依性。  
+- Common Language Runtime 的最小必要版本，在應用程式資訊清單中會指定為一個組件相依性。  
   
--   應用程式所需之 Windows 作業系統的最小必要版本，如應用程式資訊清單中的 `<osVersionInfo>` 項目所指定。 (請參閱[\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md))  
+- 應用程式所需之 Windows 作業系統的最小必要版本，如應用程式資訊清單中的 `<osVersionInfo>` 項目所指定。 (請參閱[\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md))  
   
--   您必須在全域組件快取 (GAC) 中預先安裝所有組件的最小版本，如組件資訊清單中的組件相依性宣告所指定。  
+- 您必須在全域組件快取 (GAC) 中預先安裝所有組件的最小版本，如組件資訊清單中的組件相依性宣告所指定。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  若要變更 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 等工具所產生之資訊清單中的值，您需要在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱 [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  

@@ -18,12 +18,12 @@ ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a84963032e23bec740f639b5aef27277a24095d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf49ade15252a1adefa9fbf810a35f7c159e81e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194638"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852137"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

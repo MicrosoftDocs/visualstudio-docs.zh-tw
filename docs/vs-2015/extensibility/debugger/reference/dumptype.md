@@ -17,12 +17,12 @@ ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffdb44e3c909410f224c2cbbaf945d61bebde0d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e61e40458241ea1eb4249874bd9e9c26c6082257
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907686"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

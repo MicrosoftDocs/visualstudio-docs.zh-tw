@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881713"
 ---
 # <a name="how-to-install-sample-databases"></a>如何：安裝範例資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ ms.locfileid: "49251028"
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>若要安裝 Microsoft Access 適用的 Northwind 範例資料庫  
   
-1.  在 Microsoft Access 2010 或更新版本中，Northwind，搜尋線上範本，然後選擇**Desktop Northwind 2007 範例資料庫**。  
+1. 在 Microsoft Access 2010 或更新版本中，Northwind，搜尋線上範本，然後選擇**Desktop Northwind 2007 範例資料庫**。  
   
-2.  在 Microsoft Access 中，將資料庫檔案儲存為 Northwind.accdb。  
+2. 在 Microsoft Access 中，將資料庫檔案儲存為 Northwind.accdb。  
   
- 新的 Access 資料庫副檔名為 .accdb。 請參閱[Microsoft Access 2010 的資料程式設計](http://msdn.microsoft.com/library/office/ff965871.aspx)。 若要使用的存取，以連接至 Northwind 資料庫，請參閱[如何： 連接到 Northwind 資料庫](../data-tools/how-to-connect-to-the-northwind-database.md)。  
+   新的 Access 資料庫副檔名為 .accdb。 請參閱[Microsoft Access 2010 的資料程式設計](http://msdn.microsoft.com/library/office/ff965871.aspx)。 若要使用的存取，以連接至 Northwind 資料庫，請參閱[如何： 連接到 Northwind 資料庫](../data-tools/how-to-connect-to-the-northwind-database.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  範例資料庫是僅供說明使用，不一定會示範最佳安全性作法。  

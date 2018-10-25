@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a918b8077693ea199c20e776eaddc57c79b3975a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845357"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
  Fakes 分為兩種類別：  
   
--   [虛設常式](#stubs)會以一小段實作相同介面的類別取代類別。  若要使用虛設常式，您所設計的應用程式必須讓每個元件只相依於介面，而不相依於其他元件。 (「元件」表示一起設計及更新的類別或類別群組，通常會包含在組件中)。  
+- [虛設常式](#stubs)會以一小段實作相同介面的類別取代類別。  若要使用虛設常式，您所設計的應用程式必須讓每個元件只相依於介面，而不相依於其他元件。 (「元件」表示一起設計及更新的類別或類別群組，通常會包含在組件中)。  
   
--   [填充碼](#shims)會在執行階段修改應用程式的編譯程式碼，以便執行您的測試所提供的填充碼，而不是進行指定的方法呼叫。 您可以使用填充碼取代您無法修改的組件 (例如 .NET 組件) 的呼叫。  
+- [填充碼](#shims)會在執行階段修改應用程式的編譯程式碼，以便執行您的測試所提供的填充碼，而不是進行指定的方法呼叫。 您可以使用填充碼取代您無法修改的組件 (例如 .NET 組件) 的呼叫。  
   
- ![Fakes 會取代其他元件](../test/media/fakes-2.png "Fakes-2")  
+  ![Fakes 會取代其他元件](../test/media/fakes-2.png "Fakes-2")  
   
- **需求**  
+  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
 ## <a name="choosing-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇  
  由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。  
@@ -168,76 +168,76 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
  若要使用填充碼，就不需要修改應用程式程式碼或以特別方式撰寫程式碼。  
   
-1.  **新增 Fakes 組件**  
+1. **新增 Fakes 組件**  
   
-     在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 **System.dll** 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。  
+    在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 **System.dll** 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。  
   
-     選擇 [新增 Fakes 組件]。  
+    選擇 [新增 Fakes 組件]。  
   
-2.  **在 ShimsContext 中插入填充碼**  
+2. **在 ShimsContext 中插入填充碼**  
   
-    ```csharp  
-    [TestClass]  
-    public class TestClass1  
-    {   
-            [TestMethod]  
-            public void TestCurrentYear()  
-            {  
-                int fixedYear = 2000;  
+   ```csharp  
+   [TestClass]  
+   public class TestClass1  
+   {   
+           [TestMethod]  
+           public void TestCurrentYear()  
+           {  
+               int fixedYear = 2000;  
   
-                // Shims can be used only in a ShimsContext:  
-                using (ShimsContext.Create())  
-                {  
-                  // Arrange:  
-                    // Shim DateTime.Now to return a fixed date:  
-                    System.Fakes.ShimDateTime.NowGet =   
-                    () =>  
-                    { return new DateTime(fixedYear, 1, 1); };  
+               // Shims can be used only in a ShimsContext:  
+               using (ShimsContext.Create())  
+               {  
+                 // Arrange:  
+                   // Shim DateTime.Now to return a fixed date:  
+                   System.Fakes.ShimDateTime.NowGet =   
+                   () =>  
+                   { return new DateTime(fixedYear, 1, 1); };  
   
-                    // Instantiate the component under test:  
-                    var componentUnderTest = new MyComponent();  
+                   // Instantiate the component under test:  
+                   var componentUnderTest = new MyComponent();  
   
-                  // Act:  
-                    int year = componentUnderTest.GetTheCurrentYear();  
+                 // Act:  
+                   int year = componentUnderTest.GetTheCurrentYear();  
   
-                  // Assert:   
-                    // This will always be true if the component is working:  
-                    Assert.AreEqual(fixedYear, year);  
-                }  
-            }  
-    }  
+                 // Assert:   
+                   // This will always be true if the component is working:  
+                   Assert.AreEqual(fixedYear, year);  
+               }  
+           }  
+   }  
   
-    ```  
+   ```  
   
-    ```vb  
-    <TestClass()> _  
-    Public Class TestClass1  
-        <TestMethod()> _  
-        Public Sub TestCurrentYear()  
-            Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
-                Dim fixedYear As Integer = 2000  
-                ' Arrange:  
-                ' Detour DateTime.Now to return a fixed date:  
-                System.Fakes.ShimDateTime.NowGet = _  
-                    Function() As DateTime  
-                        Return New DateTime(fixedYear, 1, 1)  
-                    End Function  
+   ```vb  
+   <TestClass()> _  
+   Public Class TestClass1  
+       <TestMethod()> _  
+       Public Sub TestCurrentYear()  
+           Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
+               Dim fixedYear As Integer = 2000  
+               ' Arrange:  
+               ' Detour DateTime.Now to return a fixed date:  
+               System.Fakes.ShimDateTime.NowGet = _  
+                   Function() As DateTime  
+                       Return New DateTime(fixedYear, 1, 1)  
+                   End Function  
   
-                ' Instantiate the component under test:  
-                Dim componentUnderTest = New MyComponent()  
-                ' Act:  
-                Dim year As Integer = componentUnderTest.GetTheCurrentYear  
-                ' Assert:   
-                ' This will always be true if the component is working:  
-                Assert.AreEqual(fixedYear, year)  
-            End Using  
-        End Sub  
-    End Class  
-    ```  
+               ' Instantiate the component under test:  
+               Dim componentUnderTest = New MyComponent()  
+               ' Act:  
+               Dim year As Integer = componentUnderTest.GetTheCurrentYear  
+               ' Assert:   
+               ' This will always be true if the component is working:  
+               Assert.AreEqual(fixedYear, year)  
+           End Using  
+       End Sub  
+   End Class  
+   ```  
   
-     填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。 方法名稱後面要加上參數名稱。 (您不必將任何組件參考加入 System.Fakes。)  
+    填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。 方法名稱後面要加上參數名稱。 (您不必將任何組件參考加入 System.Fakes。)  
   
- 上述範例使用靜態方法的填充碼。 若要使用填充碼做為執行個體方法，請在類型名稱和方法名稱之間撰寫 `AllInstances`：  
+   上述範例使用靜態方法的填充碼。 若要使用填充碼做為執行個體方法，請在類型名稱和方法名稱之間撰寫 `AllInstances`：  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  

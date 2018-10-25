@@ -1,5 +1,5 @@
 ---
-title: BC 紋理壓縮變異 |Microsoft 文件
+title: BC 紋理壓縮變異 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49dfc92eeede177e843c9fd98b16b030f76079c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922441"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的紋理上啟用區塊壓縮。  
@@ -28,19 +28,19 @@ ms.locfileid: "31474397"
 ## <a name="remarks"></a>備註  
  在每次呼叫可建立來源紋理的 `ID3DDevice::CreateTexture2D` 時，使用區塊壓縮格式，即可壓縮紋理。 特別是在下列情況下，會壓縮紋理：  
   
--   `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述未變更的著色器資源；亦即：  
+- `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述未變更的著色器資源；亦即：  
   
-    -   BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
+  -   BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
   
-    -   Usage 成員設定為 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+  -   Usage 成員設定為 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
-    -   CPUAccessFlags 成員設定為 0 (無 CPU 存取)。  
+  -   CPUAccessFlags 成員設定為 0 (無 CPU 存取)。  
   
-    -   SamplerDesc 成員的 Count 成員設定為 1 (無多重取樣消除鋸齒 (MSAA))。  
+  -   SamplerDesc 成員的 Count 成員設定為 1 (無多重取樣消除鋸齒 (MSAA))。  
   
--   會將初始資料提供給 `CreateTexture2D` 呼叫。  
+- 會將初始資料提供給 `CreateTexture2D` 呼叫。  
   
- 以下是支援的來源格式和其區塊壓縮格式。  
+  以下是支援的來源格式和其區塊壓縮格式。  
   
 |原始格式 (來源)|壓縮格式 (目標)|  
 |------------------------------|------------------------------|  
@@ -63,4 +63,4 @@ ms.locfileid: "31474397"
  此變異會先在執行階段對紋理進行區塊壓縮，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為未壓縮的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會大幅增加應用程式中的載入時間，畢竟區塊壓縮需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線壓縮紋理。 這些方式會減少磁碟空間需求、去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以保留最佳影像品質。  
   
 ## <a name="see-also"></a>另請參閱  
- [半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)
+ [二分之一/四分之一紋理維度變化](half-quarter-texture-dimensions-variant.md)

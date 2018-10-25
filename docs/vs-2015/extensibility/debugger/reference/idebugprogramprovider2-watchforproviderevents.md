@@ -17,12 +17,12 @@ ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d95c03f622b56762fe5ea9f1fdaeee968cdd323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f0f0d23b7d06e77ba5a83d0a812747d0b5ea41b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934375"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

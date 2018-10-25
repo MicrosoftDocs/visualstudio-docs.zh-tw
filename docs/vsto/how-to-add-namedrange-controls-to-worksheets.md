@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867113"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何： 將 NamedRange 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.NamedRange>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
@@ -33,13 +33,13 @@ ms.locfileid: "35671371"
   
  本主題說明下列工作：  
   
--   [在設計階段加入 NamedRange 控制項](#designtime)  
+- [在設計階段加入 NamedRange 控制項](#designtime)  
   
--   [在文件層級專案中的執行階段加入 NamedRange 控制項](#runtimedoclevel)  
+- [在文件層級專案中的執行階段加入 NamedRange 控制項](#runtimedoclevel)  
   
--   [在 VSTO 增益集專案中的執行階段加入 NamedRange 控制項](#runtimeaddin)  
+- [在 VSTO 增益集專案中的執行階段加入 NamedRange 控制項](#runtimeaddin)  
   
- 如需詳細資訊<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，請參閱[NamedRange 控制項](../vsto/namedrange-control.md)。  
+  如需詳細資訊<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，請參閱[NamedRange 控制項](../vsto/namedrange-control.md)。  
   
 ##  <a name="designtime"></a> 在設計階段加入 NamedRange 控制項  
  有幾種方式可在文件層級專案中，於設計階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表：在 Excel 中、透過 Visual Studio 的 [工具箱] ，以及透過 [資料來源]  視窗。  
@@ -74,7 +74,7 @@ ms.locfileid: "35671371"
   
 2.  將單一欄位從 [資料來源]  視窗拖曳至您的工作表。  
   
-     資料繫結 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項隨即加入工作表。 如需詳細資訊，請參閱 <<c0> [ 資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
+     繫結至資料的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項隨即加入工作表。 如需詳細資訊，請參閱 <<c0> [ 資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
 ##  <a name="runtimedoclevel"></a> 在文件層級專案中的執行階段加入 NamedRange 控制項  
  您可以新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項以程式設計方式加入工作表，在執行階段。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的指定範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  

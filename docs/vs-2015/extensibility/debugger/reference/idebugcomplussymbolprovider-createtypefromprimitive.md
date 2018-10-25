@@ -16,12 +16,12 @@ ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1cf3dd284f0ac100242cbed4608c026c19a4c2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d91e6f1c2359badad98230548badcc2d3b139b96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912093"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

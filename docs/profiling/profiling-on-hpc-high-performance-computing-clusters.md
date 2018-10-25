@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842373"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
@@ -40,7 +40,7 @@ ms.locfileid: "34267841"
 
 - 在 HPC 計算節點上安裝 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 和獨立版本的程式碼剖析工具。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 和獨立分析工具的安裝程式均於 Visual Studio 安裝媒體上提供。 **注意**：您必須在安裝 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 之後以及安裝程式碼剖析工具之前，重新啟動電腦。
 
- 若要在作用中的 HPC 計算節點上，安裝 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 和獨立程式碼剖析工具，以及在叢集電腦上啟用程式碼剖析功能，請依照下列步驟執行：
+  若要在作用中的 HPC 計算節點上，安裝 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 和獨立程式碼剖析工具，以及在叢集電腦上啟用程式碼剖析功能，請依照下列步驟執行：
 
 1. 開啟隨 HPC Pack 安裝的命令提示字元視窗。
 
@@ -52,11 +52,11 @@ ms.locfileid: "34267841"
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|叢集前端節點的名稱。|
-|*%FxPath%*|[!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe|
+| | |
+|------------------| - |
+| *%HeadNode%* | 叢集前端節點的名稱。 |
+| *%FxPath%* | [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | 獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行分析
 
@@ -68,9 +68,9 @@ ms.locfileid: "34267841"
 
 3. 在精靈的第二個頁面上，選取您要進行程式碼剖析的應用程式。
 
-    - 若要對目前在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中開啟的專案進行程式碼剖析，請選取 [一個或多個可用的專案] 選項，然後從清單中選取專案名稱。
+   - 若要對目前在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中開啟的專案進行程式碼剖析，請選取 [一個或多個可用的專案] 選項，然後從清單中選取專案名稱。
 
-    - 若要進行程式碼剖析的二進位檔不在開啟專案中，請選取 [可執行檔 (.EXE 檔)] 選項。
+   - 若要進行程式碼剖析的二進位檔不在開啟專案中，請選取 [可執行檔 (.EXE 檔)] 選項。
 
 4. 按 [ **下一步**]。
 
@@ -137,16 +137,17 @@ ms.locfileid: "34267841"
 
 ### <a name="advanced-properties"></a>進階屬性
 
-|屬性|描述|
-|--------------|-----------------|
-|**專案名稱**|目前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 專案或解決方案的名稱。|
-|**於分析工具停止時清除**|為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。|
-|**其他要部署的檔案**|以分號分隔清單指定任何其他檔案，以部署在計算節點上。 您可以按一下省略符號按鈕 (**...**)，使用對話方塊來選取多個檔案。|
-|**MPIExec 命令**|指定會啟動 MPI 應用程式的應用程式。 預設值為 **mpiexec.exe**|
-|**MPIExec 引數**|指定要傳遞至 mpiexec.exe 命令的引數。|
-|**叢集上的要求節點**|在執行應用程式的叢集上，指定節點數目。|
-|**部署 CRT 檔案**|為 true 時，在叢集上部署 C/C++ 執行階段。|
-|**剖析前指令碼**|在程式碼剖析工作階段開始之前，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。|
-|**剖析前指令碼引數**|指定要傳遞至剖析前指令碼的引數。|
-|**剖析後指令碼**|在程式碼剖析工作階段結束之後，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。|
-|**剖析後指令碼引數**|指定要傳遞至剖析後指令碼的引數。|
+| 屬性 | 描述 |
+|---------------------------------------| - |
+| **專案名稱** | 目前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 專案或解決方案的名稱。 |
+| **於分析工具停止時清除** | 為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。 |
+| **其他要部署的檔案** | 以分號分隔清單指定任何其他檔案，以部署在計算節點上。 您可以按一下省略符號按鈕 (**...**)，使用對話方塊來選取多個檔案。 |
+| **MPIExec 命令** | 指定會啟動 MPI 應用程式的應用程式。 預設值為 **mpiexec.exe** |
+| **MPIExec 引數** | 指定要傳遞至 mpiexec.exe 命令的引數。 |
+| **叢集上的要求節點** | 在執行應用程式的叢集上，指定節點數目。 |
+| **部署 CRT 檔案** | 為 true 時，在叢集上部署 C/C++ 執行階段。 |
+| **剖析前指令碼** | 在程式碼剖析工作階段開始之前，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。 |
+| **剖析前指令碼引數** | 指定要傳遞至剖析前指令碼的引數。 |
+| **剖析後指令碼** | 在程式碼剖析工作階段結束之後，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。 |
+| **剖析後指令碼引數** | 指定要傳遞至剖析後指令碼的引數。 |
+

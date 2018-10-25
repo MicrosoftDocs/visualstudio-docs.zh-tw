@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION |Microsoft 文件
+title: ASSEMBLYLOCRESOLUTION |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331df62dabcdb919f2d8489de02ab7f2f815ef40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03d05cf8c224a24d143feb3d22df4357d623d308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933205"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 指定組件所在的位置。  
@@ -60,7 +60,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  組件位於遠端目錄。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳回由[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)和[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)方法。  
+ 這些值會傳回[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)並[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)方法。  
   
  這些值可以結合`OR`作業。  
   

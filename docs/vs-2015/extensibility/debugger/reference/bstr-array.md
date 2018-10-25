@@ -17,12 +17,12 @@ ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28d783a731d05f3256f2b1c8c278f1f5399a3ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 095297424b456e5a9ad903b1816f58e9849c4433
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913379"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3e84426745e324a8d14cfca5480956a7f5a16e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8349c4fd02d771adacb49d3eb4b310ae3ef4741c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892502"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

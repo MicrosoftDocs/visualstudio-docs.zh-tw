@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934921"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量的延伸模組影響啟動
 
@@ -169,11 +169,11 @@ PerfView 有詳細的指引如何讀取執行緒在其本身的更詳細的分�
 
 1. IO 使用`System.IO`類別： 可能不過於昂貴則表示追蹤中的這些框架 （含） 的成本，而它們是問題的可能原因因為檔案 IO 速度而異電腦之間。
 
-  ![系統 io 框架](media/perfview-system-io-frames.png)
+   ![系統 io 框架](media/perfview-system-io-frames.png)
 
 2. 封鎖等候其他非同步工作的呼叫： 在此情況下，內含時間代表主執行緒遭到封鎖的非同步工作完成時的時間。
 
-  ![封鎖的呼叫框架](media/perfview-blocking-call-frames.png)
+   ![封鎖的呼叫框架](media/perfview-blocking-call-frames.png)
 
 其中一個其他檢視中，有助判斷影響追蹤將會**映像載入堆疊**。 您可以套用相同的篩選套用至**執行緒時間堆疊**檢視，並了解所有組件載入，因為您自動載入的封裝所執行的程式碼。
 

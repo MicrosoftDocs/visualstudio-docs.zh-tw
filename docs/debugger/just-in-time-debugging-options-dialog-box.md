@@ -1,5 +1,5 @@
 ---
-title: 在 Just-in-time，偵錯、 選項對話方塊 |Microsoft 文件
+title: 只是時間，偵錯、 選項對話方塊 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,30 +22,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be7dacbe7b3b89b8bdc09515c23d7597e7e55e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a6736e0646193754dbd932e5501a6473ee18c7e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936325"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
-若要存取**時間恰好**頁面，請移至**工具**功能表，然後按一下**選項**。 在**選項**對話方塊方塊中，展開 **偵錯**節點，然後選取**時間恰好**。 這個頁面可讓您啟用 Managed 程式碼、機器碼和指令碼的 Just-In-Time 偵錯。 如需詳細資訊，請參閱[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)。  
+若要存取**Just In Time**頁面上，移至**工具**功能表，然後按一下**選項**。 在 **選項**對話方塊方塊中，展開**偵錯**節點，然後選取**Just In Time**。 這個頁面可讓您啟用 Managed 程式碼、機器碼和指令碼的 Just-In-Time 偵錯。 如需詳細資訊，請參閱 < [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)。  
   
  您可以為這些程式類型啟用 Just-In-Time 偵錯：  
   
--   Managed  
+- Managed  
   
--   原生  
+- 原生  
   
--   指令碼  
+- 指令碼  
   
- Just-In-Time 偵錯一項技術，可讓您對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部啟動的程式進行偵錯。 您可以執行在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 環境外的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中所建立的程式。 如果您已啟用 Just-In-Time 偵錯，發生損毀時將會顯示對話方塊，詢問您是否要進行偵錯。  
+  Just-In-Time 偵錯一項技術，可讓您對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部啟動的程式進行偵錯。 您可以執行在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 環境外的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中所建立的程式。 如果您已啟用 Just-In-Time 偵錯，發生損毀時將會顯示對話方塊，詢問您是否要進行偵錯。  
   
 ## <a name="associated-warnings"></a>相關聯的警告  
- 當您瀏覽的這個頁面**選項**對話方塊中，您可能會看到類似這樣的警告訊息：  
+ 當您瀏覽此頁面**選項** 對話方塊中，您可能會看到一則警告訊息就像這樣：  
   
- **其他偵錯工具已本身註冊為中時間恰好偵錯工具。若要修復，啟用 恰好時間偵錯或執行 Visual Studio 修復。**  
+ **另一個偵錯工具已經將本身註冊的時間只需為偵錯工具。若要修復，啟用 恰好時間偵錯或執行 Visual Studio 修復。**  
   
  如果您將另一個偵錯工具設為 Just-In-Time 偵錯工具 (可能是舊版的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具)，就會出現這則訊息。  
   
@@ -53,10 +53,10 @@ ms.locfileid: "31480885"
   
  **在 Just-in-time 偵錯註冊錯誤偵測到。若要修復，啟用 恰好時間偵錯或執行 Visual Studio 修復。**  
   
- 如果您看到這些警告，只要時間使用偵錯[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]需要系統管理員權限，直到您修正此問題。 如果您嘗試在這些狀況下以非系統管理員身分啟用，將會看見下列錯誤訊息：  
+ 如果您看到這些警告，只要時間使用偵錯[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]需要系統管理員權限，直到您修正問題。 如果您嘗試在這些狀況下以非系統管理員身分啟用，將會看見下列錯誤訊息：  
   
- **存取遭拒。有系統管理員啟用時間恰好偵錯 」，或修復您的 Visual Studio 的安裝。**  
+ **存取遭到拒絕。系統管理員啟用 Just In Time 偵錯 」，或修復 Visual Studio 的安裝。**  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯、 選項對話方塊](../debugger/debugging-options-dialog-box.md)   
+ [選項對話方塊、 偵錯](../debugger/debugging-options-dialog-box.md)   
  [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)

@@ -17,12 +17,12 @@ ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26738d07823edf5fe98ec683432220da2f542b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 742cd3643de8cea8a8fd096f9ee88ec88a46a727
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879411"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

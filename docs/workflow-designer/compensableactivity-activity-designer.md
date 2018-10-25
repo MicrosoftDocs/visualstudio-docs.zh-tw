@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7257e7cc31e0503c7e466bbf4f8c9dd02e5fe15a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836123"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "36758276"
  下表顯示 <xref:System.Activities.Statements.CompensableActivity> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>和<xref:System.Activities.Activity%601.Result%2A>屬性可以在屬性方格中編輯，但其他屬性必須在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 活動可選用的易記名稱。 預設為 CompensableActivity。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|指定 <xref:System.Activities.Statements.CompensableActivity> 的傳回值。 這個屬性必須在屬性方格中編輯。|
 |<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|指定提供補償、取消及確認邏輯的活動。 若要新增<xref:System.Activities.Statements.CompensableActivity.Body%2A>活動，從下拉式**工具箱**到**主體**方塊**CompensableActivity**活動設計工具。 加入提示文字 「 在此置放活動 」。|
@@ -47,6 +47,6 @@ ms.locfileid: "36758276"
 
 - [異動](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
-- [補償](../workflow-designer/compensate-activity-designer.md)
-- [確認](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

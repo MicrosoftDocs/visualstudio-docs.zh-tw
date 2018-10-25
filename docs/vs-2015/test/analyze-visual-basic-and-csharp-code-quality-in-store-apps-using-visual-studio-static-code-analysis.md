@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828698"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式中的 Visual Basic 和 C# 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ ms.locfileid: "49306107"
 ##  <a name="BKMK_Run"></a> 執行程式碼分析  
  在您的 Visual Studio 方案中執行程式碼分析：  
   
--   在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。  
+- 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。  
   
- 在您每次建立專案時自動執行程式碼分析：  
+  在您每次建立專案時自動執行程式碼分析：  
   
-1.  在方案總管中，以滑鼠右鍵按一下專案名稱，然後選擇 [屬性]。  
+1. 在方案總管中，以滑鼠右鍵按一下專案名稱，然後選擇 [屬性]。  
   
-2.  在專案屬性頁面中，選擇 [程式碼分析]，然後選擇 [建置時啟用程式碼分析] (定義 CODEANALYSIS 常數)。  
+2. 在專案屬性頁面中，選擇 [程式碼分析]，然後選擇 [建置時啟用程式碼分析] (定義 CODEANALYSIS 常數)。  
   
- 方案已編譯並且執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。  
+   方案已編譯並且執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。  
   
- ![程式碼分析視窗](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![程式碼分析視窗](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告  
  若要分析特定警告，請在 [程式碼分析] 視窗中按一下警告的標題。 展開警告以顯示問題的詳細資訊。  
@@ -80,15 +80,15 @@ ms.locfileid: "49306107"
   
  隱藏警告：  
   
-1.  如果未顯示詳細資訊，則按一下警告的標題以展開警告。  
+1. 如果未顯示詳細資訊，則按一下警告的標題以展開警告。  
   
-2.  選擇警告下方的 [動作] 連結。  
+2. 選擇警告下方的 [動作] 連結。  
   
-3.  指向 [隱藏訊息]，然後選擇 [在原始程式檔中] 或 [在隱藏項目檔中]。  
+3. 指向 [隱藏訊息]，然後選擇 [在原始程式檔中] 或 [在隱藏項目檔中]。  
   
-    -   [在原始程式檔中] 會在產生警告的方法上方的原始程式檔中，插入 `SuppressMessage` 屬性。 這可讓隱藏項目更方便搜尋。  
+   - [在原始程式檔中] 會在產生警告的方法上方的原始程式檔中，插入 `SuppressMessage` 屬性。 這可讓隱藏項目更方便搜尋。  
   
-    -   [在隱藏項目檔中] 將 `SuppressMessage` 屬性新增至專案的 **GlobalSuppressions.cs** 檔案。 這可讓隱藏項目的管理更加容易。 請注意，新增至 **GlobalSuppression.cs** 的 `SuppressMessage` 屬性也以產生警告的方法為目標。 它不會全域隱藏警告。  
+   - [在隱藏項目檔中] 將 `SuppressMessage` 屬性新增至專案的 **GlobalSuppressions.cs** 檔案。 這可讓隱藏項目的管理更加容易。 請注意，新增至 **GlobalSuppression.cs** 的 `SuppressMessage` 屬性也以產生警告的方法為目標。 它不會全域隱藏警告。  
   
      您對於在原始程式檔或在隱藏項目檔中隱藏警告的決策，取決於您的程式碼樣式和需求。  
   

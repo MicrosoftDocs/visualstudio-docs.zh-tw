@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847808"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>連接產生器的自訂程式碼  
  使用者介面中有四個核取方塊，用於定義連接產生器的不同自訂類型：  
   
--   **自訂接受**來源或目標角色指示詞上的核取方塊  
+- **自訂接受**來源或目標角色指示詞上的核取方塊  
   
--   **自訂連接**來源或目標角色指示詞上的核取方塊  
+- **自訂連接**來源或目標角色指示詞上的核取方塊  
   
--   **使用自訂連接**connect 指示詞上的核取方塊  
+- **使用自訂連接**connect 指示詞上的核取方塊  
   
--   **Is Custom**連接產生器的屬性  
+- **Is Custom**連接產生器的屬性  
   
- 您必須提供一些程式碼來建立這些自訂。 若要探索必須提供的程式碼，請核取上述其中一個方塊，按一下 [轉換所有範本]，然後建置您的方案。 錯誤報告隨即產生。 按兩下錯誤報告，以檢視說明應加入之程式碼的註解。  
+  您必須提供一些程式碼來建立這些自訂。 若要探索必須提供的程式碼，請核取上述其中一個方塊，按一下 [轉換所有範本]，然後建置您的方案。 錯誤報告隨即產生。 按兩下錯誤報告，以檢視說明應加入之程式碼的註解。  
   
 > [!NOTE]
 >  若要加入自訂程式碼，請使用與 GeneratedCode 資料夾中的程式碼檔案不同的程式碼檔案，建立部分類別定義。 為了避免遺失工作，請勿編輯產生的程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。  

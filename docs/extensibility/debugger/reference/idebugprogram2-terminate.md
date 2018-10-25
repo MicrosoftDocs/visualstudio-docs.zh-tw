@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate |Microsoft 文件
+title: IDebugProgram2::Terminate |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eb14280947ff93a4a0c2ab6d2cf025037fc06aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88fcbf0667c026cbbfc449936f92d440590e9a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834262"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
-結束程式。  
+終止程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,13 +38,13 @@ int Terminate();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  程式可能的話，會終止並從處理序; 卸載否則，偵錯引擎 (DE) 會執行任何必要的清除作業。  
   
- 這個方法或[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) IDE，通常是在回應停止偵錯的所有使用者所呼叫方法。 這個方法的實作應該在理想情況下，終止處理序內的程式。 如果不可行，DE 應該阻止程式執行此程序更多，並執行任何必要的清除。 如果`IDebugProcess2::Terminate`IDE 所呼叫方法，整個程序將會終止一段時間之後`IDebugProgram2::Terminate`方法呼叫。  
+ 這個方法或[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) IDE，通常以回應中止所有偵錯使用者所呼叫方法。 此方法的實作應該在理想情況下，終止處理序內的程式。 如果這不可行，DE 應該防止程式執行此程序更多 （並執行任何必要的清除）。 如果`IDebugProcess2::Terminate`由 IDE 所呼叫的方法，整個程序將會終止一段時間之後`IDebugProgram2::Terminate`呼叫方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [終止](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

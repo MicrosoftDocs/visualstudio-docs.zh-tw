@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 320699fd4d8cddcba8765758b23b61b942695fd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 131a326411c98ed9fda9834f2d15df31a97617fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936767"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

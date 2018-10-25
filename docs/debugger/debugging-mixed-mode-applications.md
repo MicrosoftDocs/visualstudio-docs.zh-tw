@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f06a1da269fec2cf1966b17b9497e840808b6c73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887614"
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 混合模式應用程式是指任何組合了機器碼 (C++) 和 Managed 程式碼 (例如在通用語言執行平台執行的 Visual Basic、Visual C# 或 C++) 的應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，偵錯混合模式應用程式是個極為平常的動作；這和偵錯單一模式應用程式大致上相同。 但是仍然要考慮一些特殊情況。  
@@ -48,13 +48,13 @@ ms.locfileid: "44283310"
   
 #### <a name="to-turn-off-property-evaluation"></a>若要關閉屬性評估  
   
-1.  在 [ **工具** ] 功能表上選擇 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。  
   
-2.  在 **選項**對話方塊中，開啟**偵錯**資料夾，然後選取**一般**類別目錄。  
+2. 在 **選項**對話方塊中，開啟**偵錯**資料夾，然後選取**一般**類別目錄。  
   
-3.  清除**啟用屬性評估及其他隱含函式呼叫**核取方塊。  
+3. 清除**啟用屬性評估及其他隱含函式呼叫**核取方塊。  
   
- 因為原生呼叫堆疊和 Managed 呼叫堆疊有所不同，偵錯工具無法一直為混合模式提供完整呼叫堆疊。 當機器碼呼叫 Managed 程式碼時，您可能會發現某些不一樣的地方。 如需詳細資訊，請參閱 <<c0> [ 混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
+   因為原生呼叫堆疊和 Managed 呼叫堆疊有所不同，偵錯工具無法一直為混合模式提供完整呼叫堆疊。 當機器碼呼叫 Managed 程式碼時，您可能會發現某些不一樣的地方。 如需詳細資訊，請參閱 <<c0> [ 混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926016"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **命名空間**
 
--   .Fakes 後置字元會加入命名空間。
+- .Fakes 後置字元會加入命名空間。
 
-     例如， `System.Fakes` 命名空間包含系統命名空間的填充碼類型。
+   例如， `System.Fakes` 命名空間包含系統命名空間的填充碼類型。
 
--   Global.Fakes 包含空白命名空間的填充碼類型。
+- Global.Fakes 包含空白命名空間的填充碼類型。
 
- **類型名稱**
+  **類型名稱**
 
--   填充碼前置詞會加入類型名稱，以建置填充碼類型名稱。
+- 填充碼前置詞會加入類型名稱，以建置填充碼類型名稱。
 
-     例如，ShimExample 是範例類型的填充碼類型。
+   例如，ShimExample 是範例類型的填充碼類型。
 
--   虛設常式前置詞會加入類型名稱，以建置虛設常式類型名稱。
+- 虛設常式前置詞會加入類型名稱，以建置虛設常式類型名稱。
 
-     例如，StubIExample 是 IExample 類型的虛設常式類型。
+   例如，StubIExample 是 IExample 類型的虛設常式類型。
 
- **類型引數和巢狀類型結構**
+  **類型引數和巢狀類型結構**
 
--   會複製泛型型別引數。
+- 會複製泛型型別引數。
 
--   會針對填充碼類型複製巢狀類型結構。
+- 會針對填充碼類型複製巢狀類型結構。
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>填充碼委派屬性或虛設常式委派欄位命名慣例
 
 欄位命名適用的**基本規則**，從空白名稱開始：
 
--   會附加方法名稱。
+- 會附加方法名稱。
 
--   如果方法名稱是明確的介面實作，則會將點移除。
+- 如果方法名稱是明確的介面實作，則會將點移除。
 
--   如果方法為泛型，則會附加 `Of`*n*，其中 *n* 是泛型方法引數的數目。
+- 如果方法為泛型，則會附加 `Of`*n*，其中 *n* 是泛型方法引數的數目。
 
- **特殊方法名稱**，例如屬性 getter 或 setter，會依照下表所述加以處理：
+  **特殊方法名稱**，例如屬性 getter 或 setter，會依照下表所述加以處理：
 
 |如果方法是...|範例|附加的方法名稱|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |**建構函式**|`.ctor`|`Constructor`|
 |靜態**建構函式**|`.cctor`|`StaticConstructor`|
 |方法名稱由兩個以 "_" 分隔的部分 (例如屬性 getter) 組成的**存取子**|*kind_name* (一般情況，但 ECMA 不會強制執行)|*NameKind*，其中這兩個部分會改成大寫並互換|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>參數類型命名慣例
 
 |假設|附加的字串是...|
-|-----------|-------------------------|
+|-|-|
 |**類型**`T`|T<br /><br /> 命名空間、巢狀結構和泛型 tics 會被丟棄。|
 |**out 參數**`out T`|`TOut`|
 |**ref 參數** `ref T`|`TRef`|

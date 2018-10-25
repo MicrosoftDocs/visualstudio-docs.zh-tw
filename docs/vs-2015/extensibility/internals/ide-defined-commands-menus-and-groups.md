@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0707544f739f934b49c6092bcb4c1c61975028ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848510"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義的命令、功能表和群組
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49246671"
 ## <a name="finding-environment-defined-commands"></a>尋找環境定義的命令  
  一組四個.vsct 檔案中定義的環境命令：  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- 這些檔案位於 *\<Visual Studio SDK 安裝路徑 >* \VisualStudioIntegration\Common\Inc\\。 這些檔案提供的定義與功能表和群組，您可以使用 VSPackage 的命令資料表 (.vsct) 的組態檔中做為容器為您自己的功能表、 群組和命令的 Guid。  
+  這些檔案位於 *\<Visual Studio SDK 安裝路徑 >* \VisualStudioIntegration\Common\Inc\\。 這些檔案提供的定義與功能表和群組，您可以使用 VSPackage 的命令資料表 (.vsct) 的組態檔中做為容器為您自己的功能表、 群組和命令的 Guid。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

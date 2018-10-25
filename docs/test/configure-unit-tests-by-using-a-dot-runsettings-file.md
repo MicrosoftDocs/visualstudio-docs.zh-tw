@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903552"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -137,7 +137,7 @@ ms.locfileid: "46495631"
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ ms.locfileid: "46495631"
 **RunConfiguration** 項目可以包括下列項目：
 
 |節點|預設|值|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||放置測試結果的目錄。|
 |**TargetFrameworkVersion**|Framework40|Framework35、Framework40、Framework45<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。|
 |**TargetPlatform**|x86|x86、x64|
@@ -241,7 +241,7 @@ public void HomePageTest()
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
 |Configuration|預設|值|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以選取 [測試] > [測試設定] > [選取測試設定檔] 來指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

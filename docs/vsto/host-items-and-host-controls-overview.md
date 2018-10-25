@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937495"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主項目和主控制項概觀
   主項目和主控制項類型可為使用 Visual Studio 中的 Office 開發工具建立的 Office 方案，提供程式撰寫模型。 主項目和主控制項會以較接近與 Managed 物件 (例如 Windows Form 控制項) 互動的方式，與以 COM 為基礎的 Microsoft Office Word 和 Microsoft Office Excel 物件模型進行互動。  
@@ -54,21 +54,21 @@ ms.locfileid: "35670899"
 ## <a name="host-items"></a>主項目  
  在 Office 專案中，主項目是位於物件模型階層架構最上層的類型。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會為 Word 和 Excel 方案定義下列主項目：  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- 上述每種類型會擴充原本就存在於 Word 或 Excel 物件模型的物件，又稱為「原生 Office 物件」 (Native Office Object)。 例如， <xref:Microsoft.Office.Tools.Word.Document> 主項目會擴充 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件是在 Word 的主要 Interop 組件中定義。  
+  上述每種類型會擴充原本就存在於 Word 或 Excel 物件模型的物件，又稱為「原生 Office 物件」 (Native Office Object)。 例如， <xref:Microsoft.Office.Tools.Word.Document> 主項目會擴充 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件是在 Word 的主要 Interop 組件中定義。  
   
- 主項目通常與對應的 Office 物件具有相同的基本功能，但是增強了下列功能：  
+  主項目通常與對應的 Office 物件具有相同的基本功能，但是增強了下列功能：  
   
--   能夠裝載 Managed 控制項，包括主控制項和 Windows Form 控制項。  
+- 能夠裝載 Managed 控制項，包括主控制項和 Windows Form 控制項。  
   
--   更豐富的事件模型。 原生 Word 和 Excel 物件模型中的某些文件、活頁簿和工作表事件只會在應用程式層級上引發。 主項目會在文件層級提供這些事件，如此就比較容易處理特定文件的事件。  
+- 更豐富的事件模型。 原生 Word 和 Excel 物件模型中的某些文件、活頁簿和工作表事件只會在應用程式層級上引發。 主項目會在文件層級提供這些事件，如此就比較容易處理特定文件的事件。  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>了解文件層級專案中的主項目  
  在文件層級專案中，主項目會為程式碼提供進入點，並具有可協助您開發方案的設計工具。  
@@ -85,35 +85,35 @@ ms.locfileid: "35670899"
  產生主項目之後，您可以執行像是將控制項加入文件等工作。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="host-controls"></a>主控制項  
- 主控制項會擴充 Word 和 Excel 物件模型中的各種使用者介面 (UI) 物件這類`Microsoft.Office.Interop.Word.ContentControl`和<xref:Microsoft.Office.Interop.Excel.Range>物件。  
+ 主控制項會擴充 Word 和 Excel 物件模型中的各種使用者介面 (UI) 物件，例如 `Microsoft.Office.Interop.Word.ContentControl` 和 <xref:Microsoft.Office.Interop.Excel.Range> 物件。  
   
  下列主控制項適用於 Excel 專案：  
   
--   [圖表控制項](../vsto/chart-control.md)  
+- [圖表控制項](../vsto/chart-control.md)  
   
--   [ListObject 控制項](../vsto/listobject-control.md)  
+- [ListObject 控制項](../vsto/listobject-control.md)  
   
--   [NamedRange 控制項](../vsto/namedrange-control.md)  
+- [NamedRange 控制項](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)  
   
- 下列主控制項適用於 Word 專案：  
+  下列主控制項適用於 Word 專案：  
   
--   [書籤控制項](../vsto/bookmark-control.md)  
+- [書籤控制項](../vsto/bookmark-control.md)  
   
--   [內容控制項](../vsto/content-controls.md)  
+- [內容控制項](../vsto/content-controls.md)  
   
--   [XMLNode 控制項](../vsto/xmlnode-control.md)  
+- [XMLNode 控制項](../vsto/xmlnode-control.md)  
   
--   [XMLNodes 控制項](../vsto/xmlnodes-control.md)  
+- [XMLNodes 控制項](../vsto/xmlnodes-control.md)  
   
- 加入 Office 文件的主控制項與原生 Office 物件有類似的運作方式，但是主控制項還具備額外的功能，包括事件和資料繫結功能。 例如，當您要在 Excel 中擷取原生 <xref:Microsoft.Office.Interop.Excel.Range> 物件的事件時，必須先處理工作表的變更事件。 然後，您必須判斷該變更是否在 <xref:Microsoft.Office.Interop.Excel.Range>中發生。 相反地， <xref:Microsoft.Office.Tools.Excel.NamedRange> 主控制項具有您可以直接處理的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件。  
+  加入 Office 文件的主控制項與原生 Office 物件有類似的運作方式，但是主控制項還具備額外的功能，包括事件和資料繫結功能。 例如，當您要在 Excel 中擷取原生 <xref:Microsoft.Office.Interop.Excel.Range> 物件的事件時，必須先處理工作表的變更事件。 然後，您必須判斷該變更是否在 <xref:Microsoft.Office.Interop.Excel.Range>中發生。 相反地， <xref:Microsoft.Office.Tools.Excel.NamedRange> 主控制項具有您可以直接處理的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件。  
   
- 主項目和主控制項之間的關聯性很類似 Windows Form 和 Windows Form 控制項之間的關聯性。 將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項放在 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目上，就像是將文字方塊控制項放在 Windows Form 上。 下圖說明主項目與主控制項之間的關聯性。  
+  主項目和主控制項之間的關聯性很類似 Windows Form 和 Windows Form 控制項之間的關聯性。 將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項放在 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目上，就像是將文字方塊控制項放在 Windows Form 上。 下圖說明主項目與主控制項之間的關聯性。  
   
- ![主項目和主控制項之間的關聯性](../vsto/media/hostitemscontrols.png "主項目和主控制項之間的關聯性")  
+  ![主項目和主控制項之間的關聯性](../vsto/media/hostitemscontrols.png "主項目和主控制項之間的關聯性")  
   
- 您也可以在 Office 方案中使用 Windows Form 控制項，方法是直接將控制項加入 Word 和 Excel 文件介面。 如需詳細資訊，請參閱 < [Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+  您也可以在 Office 方案中使用 Windows Form 控制項，方法是直接將控制項加入 Word 和 Excel 文件介面。 如需詳細資訊，請參閱 < [Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 > [!NOTE]  
 >  不支援將主控制項或 Windows Form 控制項加入 Word 子文件。  
@@ -121,31 +121,31 @@ ms.locfileid: "35670899"
 ### <a name="add-host-controls-to-your-documents"></a>將主控制項加入您的文件  
  在文件層級的專案中，您可以使用下列方式，在設計階段將主控制項加入 Word 文件或 Excel 工作表：  
   
--   依照加入原生物件的相同方式，在設計階段將主控制項加入文件。  
+- 依照加入原生物件的相同方式，在設計階段將主控制項加入文件。  
   
--   將主控制項從 [工具箱]  拖曳至文件和工作表上。 您可以在 Excel 專案的 [Excel 控制項]  索引標籤中使用 Excel 主控制項，並在 Word 專案的 [Word 控制項]  索引標籤中使用 Word 主控制項。  
+- 將主控制項從 [工具箱]  拖曳至文件和工作表上。 您可以在 Excel 專案的 [Excel 控制項]  索引標籤中使用 Excel 主控制項，並在 Word 專案的 [Word 控制項]  索引標籤中使用 Word 主控制項。  
   
--   將主控制項從 [資料來源]  視窗拖曳至文件和工作表上。 這可讓您加入已經繫結至資料的控制項。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+- 將主控制項從 [資料來源]  視窗拖曳至文件和工作表上。 這可讓您加入已經繫結至資料的控制項。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 在文件層級和 VSTO 增益集專案中，您也可以將某些主控制項加入在執行階段的文件。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  在文件層級和 VSTO 增益集專案中，您也可以將某些主控制項加入在執行階段的文件。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 如需如何將主控制項加入文件的詳細資訊，請參閱下列主題：  
+  如需如何將主控制項加入文件的詳細資訊，請參閱下列主題：  
   
--   [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [如何： 將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [如何： 將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [如何： 將 XMLNodes 控制項加入 Word 文件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [如何： 將 XMLNodes 控制項加入 Word 文件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>命名主控制項  
  當您將主控制項從 [工具箱]  拖曳至文件時，會自動使用控制項類型來命名控制項，並在結尾處加上一個累加號碼。 例如，書籤會命名為 **bookmark1**、 **bookmark2**，依此類推。 如果使用 Word 或 Excel 的原生功能來加入控制項，可以在建立控制項時為它指定特定名稱。 您也可以變更 [屬性]  視窗中的 [名稱]  屬性值，來重新命名控制項。  

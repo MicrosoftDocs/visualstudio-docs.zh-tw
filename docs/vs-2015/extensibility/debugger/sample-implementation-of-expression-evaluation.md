@@ -17,12 +17,12 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60582c20e50dbab64dbbfe2cf534337685c064a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e253f03f2ce0e1da1a1c9eac66e312aa31e4af39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921778"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

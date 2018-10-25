@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1e3ae3a77edd39bed48ac4a5a92cce2e232c589
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903513"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>逐步解說： 匯入在 Outlook 中設計表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈]  將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。  
@@ -30,13 +30,13 @@ ms.locfileid: "35671416"
   
  這個逐步解說將說明下列工作：  
   
--   使用 Outlook 中的表單區域設計工具設計表單區域。  
+- 使用 Outlook 中的表單區域設計工具設計表單區域。  
   
--   將表單區域匯入至 Outlook VSTO 增益集專案。  
+- 將表單區域匯入至 Outlook VSTO 增益集專案。  
   
--   處理表單區域上的控制項事件。  
+- 處理表單區域上的控制項事件。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -142,7 +142,7 @@ ms.locfileid: "35671416"
   
 3.  在 [選取您希望如何建立此表單區域]  頁面上，按一下 [匯入 Outlook 表單儲存區 (.ofs) 檔案] ，然後按一下 [瀏覽] 。  
   
-4.  在 [**現有 Outlook 表單區域檔案位置**] 對話方塊中，瀏覽至的位置*TaskFormRegion.ofs*，選取**TaskFormRegion.ofs**，按一下 [ **開放**，然後按一下**下一步]**。  
+4.  在 [現有 Outlook 表單區域檔案位置]  對話方塊中，瀏覽至 *TaskFormRegion.ofs*的位置並選取 **TaskFormRegion.ofs**，然後依序按一下 [開啟] 和 [下一步] 。  
   
 5.  在 [選取要建立的表單區域類型]  頁面上，按一下 [全部取代] ，然後按 [下一步] 。  
   
@@ -155,53 +155,53 @@ ms.locfileid: "35671416"
      A *TaskFormRegion.cs*或是*TaskFormRegion.vb*檔案新增至您的專案。  
   
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>處理表單區域上的控制項事件  
- 既然您已在專案中的表單區域，您可以加入程式碼來處理`Microsoft.Office.Interop.Outlook.OlkCommandButton.Click`按鈕新增至表單區域在 Outlook 中的事件。  
+ 現在專案中已有表單區域，您可以加入程式碼來處理 Outlook 表單區域中所加入按鈕的 `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` 事件。  
   
  此外，您也可以將程式碼加入 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，以便在表單區域出現時更新表單區域上的控制項。  
   
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>處理表單區域上的控制項事件  
   
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下*TaskFormRegion.cs*或*TaskFormRegion.vb*，然後按一下**檢視程式碼**。  
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下*TaskFormRegion.cs*或*TaskFormRegion.vb*，然後按一下**檢視程式碼**。  
   
-     *TaskFormRegion.cs*或是*TaskFormRegion.vb*會在程式碼編輯器中開啟。  
+    *TaskFormRegion.cs*或是*TaskFormRegion.vb*會在程式碼編輯器中開啟。  
   
-2.  將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會以 Outlook [工作] 資料夾中每項工作的主旨列，填入表單區域上的下拉式方塊。  
+2. 將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會以 Outlook [工作] 資料夾中每項工作的主旨列，填入表單區域上的下拉式方塊。  
   
-     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3.  將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會執行下列工作：  
+3. 將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會執行下列工作：  
   
-    -   找出`Microsoft.Office.Interop.Outlook.TaskItem`藉由呼叫 [工作] 資料夾中`FindTaskBySubjectName`helper 方法並傳遞所需的工作的主旨。 您將在下一個步驟中加入 `FindTaskBySubjectName` Helper 方法。  
+   - 在 [工作] 資料夾中呼叫 `FindTaskBySubjectName` Helper 方法並傳遞所需工作的主旨，藉此尋找 `Microsoft.Office.Interop.Outlook.TaskItem`。 您將在下一個步驟中加入 `FindTaskBySubjectName` Helper 方法。  
   
-    -   新增`Microsoft.Office.Interop.Outlook.TaskItem.Subject`和`Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete`相依工作清單方塊的值。  
+   - 將 `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 和 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 值加入相依工作清單方塊。  
   
-    -   將工作的主旨加入表單區域上的隱藏欄位。 隱藏欄位會將這些值儲存為 Outlook 項目的一部分。  
+   - 將工作的主旨加入表單區域上的隱藏欄位。 隱藏欄位會將這些值儲存為 Outlook 項目的一部分。  
   
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4.  將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼提供上一個步驟所述的 Helper 方法 `FindTaskBySubjectName` 。  
+4. 將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼提供上一個步驟所述的 Helper 方法 `FindTaskBySubjectName` 。  
   
-     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
+    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
+    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5.  將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會執行下列工作：  
+5. 將下列程式碼加入 `TaskFormRegion` 類別。 這個程式碼會執行下列工作：  
   
-    -   以每項相依工作的目前完成狀態，重新整理表單區域上的清單方塊。  
+   - 以每項相依工作的目前完成狀態，重新整理表單區域上的清單方塊。  
   
-    -   剖析隱藏的文字欄位，以取得每項相依工作的主旨。 然後找出各個`Microsoft.Office.Interop.Outlook.TaskItem`中*工作*資料夾，藉由呼叫`FindTaskBySubjectName`helper 方法並傳遞每個工作的主旨。  
+   - 剖析隱藏的文字欄位，以取得每項相依工作的主旨。 然後找出各個`Microsoft.Office.Interop.Outlook.TaskItem`中*工作*資料夾，藉由呼叫`FindTaskBySubjectName`helper 方法並傳遞每個工作的主旨。  
   
-    -   新增`Microsoft.Office.Interop.Outlook.TaskItem.Subject`和`Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete`相依工作清單方塊的值。  
+   - 將 `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 和 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 值加入相依工作清單方塊。  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
   
-6.  以下列程式碼取代 `TaskFormRegion_FormRegionShowing` 事件處理常式。 這個程式碼會執行下列工作：  
+6. 以下列程式碼取代 `TaskFormRegion_FormRegionShowing` 事件處理常式。 這個程式碼會執行下列工作：  
   
-    -   在表單區域出現時，以工作主旨填入表單區域上的下拉式方塊。  
+   - 在表單區域出現時，以工作主旨填入表單區域上的下拉式方塊。  
   
-    -   在表單區域出現時，呼叫 `RefreshTaskListBox` Helper 方法。 這會顯示之前開啟項目時，加入清單方塊的任何相依工作。  
+   - 在表單區域出現時，呼叫 `RefreshTaskListBox` Helper 方法。 這會顯示之前開啟項目時，加入清單方塊的任何相依工作。  
   
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
@@ -231,7 +231,7 @@ ms.locfileid: "35671416"
   
 8.  在 [選取要加入相依工作清單的工作]  下拉式方塊中，選取 [相依工作] ，然後按一下 [加入相依工作] 。  
   
-     [完成率 - 相依工作] 隨即出現在 [這項工作相依於下列工作]  清單方塊中。 這示範了，您已成功處理`Microsoft.Office.Interop.Outlook.OlkCommandButton.Click`按鈕的事件。  
+     [完成率 - 相依工作] 隨即出現在 [這項工作相依於下列工作]  清單方塊中。 如此即示範您已成功處理按鈕的 `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` 事件。  
   
 9. 儲存並關閉 [主要工作]  項目。  
   

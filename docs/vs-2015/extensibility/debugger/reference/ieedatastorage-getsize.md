@@ -17,12 +17,12 @@ ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc23ae09bf4cac79aeb9ed0a509b6647d2ccf930
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec27515146d9a94cce26d858e045f6234072e7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838458"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

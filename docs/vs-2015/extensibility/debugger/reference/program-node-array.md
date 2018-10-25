@@ -17,12 +17,12 @@ ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7363ff24f85f789692f2a92be343e5d8e7929c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e325e7b543e8b1a86687dd33edcc34b3ae88d6b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817661"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

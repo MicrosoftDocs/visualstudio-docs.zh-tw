@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount |Microsoft 文件
+title: IDebugBoundBreakpoint2::SetHitCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afeaa33e8cb9ffa8f4d7d12c433eff0d3298ec91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c1e760e8e3553e858ed707b03f31761f7aa97a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921024"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 設定繫結中斷點的叫用的次數。  
@@ -45,12 +45,12 @@ int SetHitCount(
  [in]若要設定叫用的次數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設定為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
   
 ## <a name="remarks"></a>備註  
- 叫用的次數是目前執行的工作階段期間引發此中斷點的次數。  
+ 叫用的次數是此中斷點已在目前工作階段的執行期間引發的次數。  
   
- 若要更新目前的叫用的次數中斷點上的偵錯引擎通常呼叫這個方法。  
+ 若要更新目前的叫用的次數，在此中斷點的偵錯引擎通常呼叫這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

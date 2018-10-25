@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887587"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284683"
 ## <a name="rule-description"></a>規則描述
  不會擲回例外狀況的方法可以分類如下：
 
--   屬性的 Get 方法
+- 屬性的 Get 方法
 
--   事件存取子方法
+- 事件存取子方法
 
--   Equals 方法
+- Equals 方法
 
--   GetHashCode 方法
+- GetHashCode 方法
 
--   ToString 方法
+- ToString 方法
 
--   靜態建構函式
+- 靜態建構函式
 
--   完成項
+- 完成項
 
--   Dispose 方法
+- Dispose 方法
 
--   等號比較運算子
+- 等號比較運算子
 
--   隱含轉型運算子
+- 隱含轉型運算子
 
- 下列各節將討論這些方法類型。
+  下列各節將討論這些方法類型。
 
 ### <a name="property-get-methods"></a>屬性的 Get 方法
  屬性基本上是智慧型欄位。 因此，它們應該表現得像是最大的欄位。 欄位並不會擲回例外狀況，所以屬性。 如果您有此屬性，則會擲回例外狀況，請考慮將它的方法。
@@ -91,22 +92,22 @@ ms.locfileid: "49284683"
 ### <a name="equals-methods"></a>Equals 方法
  下列**等於**方法不應該擲回例外狀況：
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- **Equals**方法應傳回`true`或`false`而非擲回例外狀況。 例如，若等於傳遞兩個不相符的類型應只會傳回`false`而非擲回<xref:System.ArgumentException>。
+  **Equals**方法應傳回`true`或`false`而非擲回例外狀況。 例如，若等於傳遞兩個不相符的類型應只會傳回`false`而非擲回<xref:System.ArgumentException>。
 
 ### <a name="gethashcode-methods"></a>GetHashCode 方法
  下列**GetHashCode**方法通常不應該擲回例外狀況：
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode**應該一律會傳回值。 否則，您可能會遺失雜湊表中的項目。
+  **GetHashCode**應該一律會傳回值。 否則，您可能會遺失雜湊表中的項目。
 
- 新版**GetHashCode**採用引數可能會擲回<xref:System.ArgumentException>。 不過， **Object.GetHashCode**應該永遠不會擲回例外狀況。
+  新版**GetHashCode**採用引數可能會擲回<xref:System.ArgumentException>。 不過， **Object.GetHashCode**應該永遠不會擲回例外狀況。
 
 ### <a name="tostring-methods"></a>ToString 方法
  偵錯工具會使用<xref:System.Object.ToString%2A?displayProperty=fullName>可顯示物件的相關資訊，以字串格式。 因此， **ToString**不應變更物件的狀態，它不應該擲回例外狀況。

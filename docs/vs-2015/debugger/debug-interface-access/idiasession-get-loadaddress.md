@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fec8f9ed59d46b6865bbf96d0b341eb4bcc434bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b79648e5844f49861ece700f4e3b35ea9b09d958
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950117"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

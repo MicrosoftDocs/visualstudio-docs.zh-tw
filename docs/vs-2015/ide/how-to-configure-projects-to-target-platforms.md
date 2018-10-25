@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843050"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "49294511"
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>將專案設定成以 64 位元平台為目標  
   
-1.  在功能表列上，選擇 [ **建置**]、[ **組態管理員**]。  
+1. 在功能表列上，選擇 [ **建置**]、[ **組態管理員**]。  
   
-2.  在 [使用中的方案平台] 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉] 按鈕。  
+2. 在 [使用中的方案平台] 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉] 按鈕。  
   
-    1.  如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。  
+   1.  如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。  
   
-         [新增方案平台] 對話方塊隨即出現。  
+        [新增方案平台] 對話方塊隨即出現。  
   
-    2.  在 [輸入或選取新平台] 清單中選擇 [x64]。  
+   2.  在 [輸入或選取新平台] 清單中選擇 [x64]。  
   
-        > [!NOTE]
-        >  如果您將組態改為新的名稱，則必須在 [專案設計工具] 中修改設定，才能以正確的平台為目標。  
+       > [!NOTE]
+       >  如果您將組態改為新的名稱，則必須在 [專案設計工具] 中修改設定，才能以正確的平台為目標。  
   
-    3.  如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。  
+   3.  如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。  
   
- 以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。  
+   以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>在專案設計工具中將平台設為目標  
  專案設計工具也可供您將專案的目標設為不同的平台。 如果您在 [新增方案平台] 對話方塊清單中，選取了一個不適用於方案的平台，您可以建立自訂組態名稱並修改 [專案設計工具] 中的設定，以正確的平台為目標。  

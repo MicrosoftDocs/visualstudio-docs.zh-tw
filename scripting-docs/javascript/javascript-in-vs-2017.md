@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280034"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880765"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -64,7 +64,7 @@ tsconfig 檔案的必要設定如下︰
  輸出位置以及 `node_modules` 或 `temp` 等非專案資料夾，應該加入此設定。
  - `enableAutoDiscovery`︰這項設定允許自動偵測和下載定義檔案，如先前所述。
  - `compileOnSave`︰此設定會告知編譯器是否只要來源檔案儲存在 Visual Studio 中，就應該隨時重新編譯。
- - `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[本節](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)。
+ - `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[本節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)。
 
 若要將 JavaScript 檔案轉換成 CommonJS 模組，並將其放入 `./out` 資料夾中，您可以使用下列 `tsconfig.json` 檔案：
 

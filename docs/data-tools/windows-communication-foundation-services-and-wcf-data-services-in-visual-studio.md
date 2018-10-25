@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915928"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供從 Visual Studio 的觀點來看 services 簡介。 如需完整的文件，請參閱[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)。
@@ -234,16 +234,16 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
-|-----------|-----------------|
-|[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|提供建立和使用 Visual Studio 中的 WCF 服務的逐步示範。|
-|[逐步解說： 使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供建立和使用方式的逐步示範[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。|
-|[使用 WCF 開發工具](/dotnet/framework/wcf/using-the-wcf-development-tools)|討論如何建立和測試 Visual Studio 中的 WCF 服務。|
-||[如何： 加入、 更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考及使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。|
-|[服務參考的疑難排解](../data-tools/troubleshooting-service-references.md)|提供服務的參考，以及如何避免它們可能會發生的一些常見錯誤。|
-|[偵錯 WCF 服務](../debugger/debugging-wcf-services.md)|描述常見的偵錯問題和偵錯 WCF 服務時，可能會遇到的技術。|
-|[逐步解說： 建立 n-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。|
-|[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)|描述使用者介面項目**設定服務參考** 對話方塊。|
+| 標題 | 描述 |
+| - | - |
+| [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供建立和使用 Visual Studio 中的 WCF 服務的逐步示範。 |
+| [逐步解說： 使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供建立和使用方式的逐步示範[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。 |
+| [使用 WCF 開發工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 討論如何建立和測試 Visual Studio 中的 WCF 服務。 |
+| | [如何： 加入、 更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [服務參考的疑難排解](../data-tools/troubleshooting-service-references.md) | 提供服務的參考，以及如何避免它們可能會發生的一些常見錯誤。 |
+| [偵錯 WCF 服務](../debugger/debugging-wcf-services.md) | 描述常見的偵錯問題和偵錯 WCF 服務時，可能會遇到的技術。 |
+| [逐步解說： 建立 n-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。 |
+| [設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md) | 描述使用者介面項目**設定服務參考** 對話方塊。 |
 
 ## <a name="reference"></a>參考資料
 

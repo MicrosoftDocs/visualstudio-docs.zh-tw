@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893373"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>逐步解說：改善 UI 回應性 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ ms.locfileid: "49258306"
   
 ### <a name="analyzing-performance-data"></a>分析效能資料  
   
-1.  在 [偵錯] 工具列的 [開始偵錯] 清單中，選擇其中一個 Windows Phone 模擬器。  
+1. 在 [偵錯] 工具列的 [開始偵錯] 清單中，選擇其中一個 Windows Phone 模擬器。  
   
-2.  在 [ **偵錯** ] 功能表上選擇 [ **效能及診斷**]。  
+2. 在 [ **偵錯** ] 功能表上選擇 [ **效能及診斷**]。  
   
-3.  在 [可用的工具] 中，選擇 [HTML UI 回應性]，然後選擇 [開始]。  
+3. 在 [可用的工具] 中，選擇 [HTML UI 回應性]，然後選擇 [開始]。  
   
-     在本教學課程中，我們會將分析工具附加至啟始專案。 如需其他選項 (例如將分析工具附加至已安裝的 App) 的詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。  
+    在本教學課程中，我們會將分析工具附加至啟始專案。 如需其他選項 (例如將分析工具附加至已安裝的 App) 的詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。  
   
-     當您啟動分析工具時，可能會出現 [使用者帳戶控制] 要求您提供執行 VsEtwCollector.exe 的權限。 選擇 [ **是**]。  
+    當您啟動分析工具時，可能會出現 [使用者帳戶控制] 要求您提供執行 VsEtwCollector.exe 的權限。 選擇 [ **是**]。  
   
-4.  在執行的 App 中，選擇 [等待值] 並等待約 10 秒。 確認按鈕文字和色彩是否大約每秒更新一次。  
+4. 在執行的 App 中，選擇 [等待值] 並等待約 10 秒。 確認按鈕文字和色彩是否大約每秒更新一次。  
   
-5.  當應用程式仍在執行時，切換至 Visual Studio (Alt+Tab)。  
+5. 當應用程式仍在執行時，切換至 Visual Studio (Alt+Tab)。  
   
-6.  選擇 [停止收集]。  
+6. 選擇 [停止收集]。  
   
-     分析工具會在 Visual Studio 中開啟新的索引標籤來顯示相關資訊。 當您查看 CPU 使用率和視覺輸送量 (FPS) 資料時，很容易就能了解一些趨勢：  
+    分析工具會在 Visual Studio 中開啟新的索引標籤來顯示相關資訊。 當您查看 CPU 使用率和視覺輸送量 (FPS) 資料時，很容易就能了解一些趨勢：  
   
-    -   CPU 使用率在大約 3 秒後 (當您按下 [等待值] 按鈕時) 大幅增加，且會從這時開始清楚地顯示事件模式 (處理指令碼、處理樣式及呈現等事件一致地混合在一起)。  
+   - CPU 使用率在大約 3 秒後 (當您按下 [等待值] 按鈕時) 大幅增加，且會從這時開始清楚地顯示事件模式 (處理指令碼、處理樣式及呈現等事件一致地混合在一起)。  
   
-    -   視覺輸送量並未受到影響，FPS (每秒畫面格數) 的值保持在 60 (也就是說，畫面並未減少)。  
+   - 視覺輸送量並未受到影響，FPS (每秒畫面格數) 的值保持在 60 (也就是說，畫面並未減少)。  
   
      讓我們來看看 CPU 使用率圖表的一部分區段，了解應用程式在這段大量活動期間做什麼。  
   
-7.  在 CPU 使用率圖表中選取一到兩秒的部分 (您可以按一下並拖曳或使用 Tab 和方向鍵來選取)。 下圖顯示在選取範圍之後的 CPU 使用率圖表。 非陰影區域是選取範圍。  
+7. 在 CPU 使用率圖表中選取一到兩秒的部分 (您可以按一下並拖曳或使用 Tab 和方向鍵來選取)。 下圖顯示在選取範圍之後的 CPU 使用率圖表。 非陰影區域是選取範圍。  
   
-     ![CPU 使用率圖形](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU 使用率圖形](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  選擇 [放大]。  
+8. 選擇 [放大]。  
   
-     圖表隨即變更，更詳細地顯示所選取的期間。 下圖顯示經過放大之後的 CPU 使用率圖表。 (特定資料可能有所差異，但是一般模式則很明顯。)  
+    圖表隨即變更，更詳細地顯示所選取的期間。 下圖顯示經過放大之後的 CPU 使用率圖表。 (特定資料可能有所差異，但是一般模式則很明顯。)  
   
-     ![放大的檢視](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![放大的檢視](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     下方窗格中的 [時間軸詳細資料] 會顯示所選取期間的詳細資料範例。  
+    下方窗格中的 [時間軸詳細資料] 會顯示所選取期間的詳細資料範例。  
   
-     ![時間軸詳細資料](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![時間軸詳細資料](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     透過 [時間表詳細資料] 中的事件，我們可以確定 CPU 使用率圖表中的趨勢：在短期間內發生了很多事件。 [時間表詳細資料] 檢視顯示這些事件都是 `Timer`、`Layout` 和 `Paint` 事件。  
+    透過 [時間表詳細資料] 中的事件，我們可以確定 CPU 使用率圖表中的趨勢：在短期間內發生了很多事件。 [時間表詳細資料] 檢視顯示這些事件都是 `Timer`、`Layout` 和 `Paint` 事件。  
   
 9. 使用操作功能表 (或是以滑鼠右鍵按一下) 下方窗格內的其中一個 `Timer` 事件，然後選擇 [篩選事件]。 下圖顯示此測試應用程式之其中一個 `Timer` 事件的典型詳細資料範例。  
   

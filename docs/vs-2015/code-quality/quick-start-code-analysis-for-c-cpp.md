@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851058"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ ms.locfileid: "49241770"
   
  若要針對方案執行程式碼分析：  
   
--   在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。  
+- 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。  
   
- 若要針對專案執行程式碼分析：  
+  若要針對專案執行程式碼分析：  
   
--   在 [方案總管] 中，選擇專案的名稱。  
+- 在 [方案總管] 中，選擇專案的名稱。  
   
--   在 **建置**功能表上，選擇**上執行程式碼分析***專案名稱*。  
+- 在 **建置**功能表上，選擇**上執行程式碼分析***專案名稱*。  
   
- 編譯專案或方案並執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。  
+  編譯專案或方案並執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。  
   
 ##  <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告  
  若要分析特定警告，請在 [程式碼分析] 視窗中選擇警告的標題。 隨即展開警告以顯示問題的其他資訊。 如果可能的話，程式碼分析會顯示導致警告的行號和分析邏輯。 如需警告的詳細資訊，包括可能的問題方案，請選擇警告識別碼，顯示 MSND 文件庫中有關訊息的說明主題。  
@@ -106,13 +106,13 @@ ms.locfileid: "49241770"
   
  若要隱藏警告：  
   
-1.  如果未顯示詳細資訊，請選擇警告標題以展開它。  
+1. 如果未顯示詳細資訊，請選擇警告標題以展開它。  
   
-2.  選擇警告下方的 [動作] 連結。  
+2. 選擇警告下方的 [動作] 連結。  
   
-3.  選擇**隱藏訊息**，然後選擇**在原始程式檔**。  
+3. 選擇**隱藏訊息**，然後選擇**在原始程式檔**。  
   
- 隱藏訊息時會插入可隱藏該程式碼行警告的 `#pragma warning (disable:`*WarningId*`)`。  
+   隱藏訊息時會插入可隱藏該程式碼行警告的 `#pragma warning (disable:`*WarningId*`)`。  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> 建立工作項目，程式碼分析警告  
  若要記錄來自 Visual Studio 的錯誤，您可以使用工作項目追蹤功能。 若要使用這項功能，您必須連接到 Team Foundation Server 的執行個體。  

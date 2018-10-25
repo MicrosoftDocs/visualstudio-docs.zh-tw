@@ -17,12 +17,12 @@ ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65f304a535e8413d9a1058926c8251b7c21b79d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7096d0e5bcb8f878c475db4f4c72a1a1aa7a7b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949184"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

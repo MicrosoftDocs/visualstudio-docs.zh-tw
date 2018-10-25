@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839644"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何： 公開給 VBA 的程式碼，在 Visual Basic 專案
   您的程式碼中的公開[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要與彼此互動的程式碼的兩個類型，專案加入 Visual Basic for Applications (VBA) 程式碼。  
@@ -35,11 +35,11 @@ ms.locfileid: "35256093"
   
  處理程序是不同的主項目類別中的程式碼比其他類別中的程式碼：  
   
--   [公開 （expose) 中的主項目類別的程式碼](#HostItemCode)  
+- [公開 （expose) 中的主項目類別的程式碼](#HostItemCode)  
   
--   [公開 （expose) 不是主項目類別的程式碼](#NonHostItem)  
+- [公開 （expose) 不是主項目類別的程式碼](#NonHostItem)  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何執行 do i： 呼叫 VSTO 程式碼從 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何執行 do i： 呼叫 VSTO 程式碼從 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
   
 ##  <a name="HostItemCode"></a> 公開 （expose) 中的主項目類別的程式碼  
  若要讓 VBA 呼叫 Visual Basic 程式碼中的主項目類別的程式碼，將**EnableVbaCallers**主項目的屬性 **，則為 True**。  

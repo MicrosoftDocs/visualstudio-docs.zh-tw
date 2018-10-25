@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: dee095f83d09ecf1425fa1117cafd629eb1a1add
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906776"
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 
@@ -32,7 +32,7 @@ ms.locfileid: "36757700"
 下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.State> 屬性，並說明如何在設計工具中使用它們。 其中一些屬性可以在屬性方格中進行編輯，有些可以在設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.State> 活動設計工具在標頭中的易記名稱。 預設值是**狀態**。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。 <xref:System.Activities.Statements.State.DisplayName%2A> 可用於階層連結巡覽，顯示在工作流程設計工具的頂端。<br /><br /> 雖然 <xref:System.Activities.Statements.State.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.State.Entry%2A>|False|指定此狀態在轉換時發生的動作。 當<xref:System.Activities.Statements.State>活動展開時，這個值可以藉由拖曳的活動設定**工具箱**並放到**項目**狀態一節。|
 |<xref:System.Activities.Statements.State.Exit%2A>|False|指定此狀態在轉換時發生的動作。 當<xref:System.Activities.Statements.State>活動展開時，這個值可以藉由拖曳的活動設定**工具箱**並放到**結束**狀態一節。|
@@ -42,4 +42,4 @@ ms.locfileid: "36757700"
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)
-- [轉換](../workflow-designer/transition-activity-designer.md)
+- [Transition](../workflow-designer/transition-activity-designer.md)

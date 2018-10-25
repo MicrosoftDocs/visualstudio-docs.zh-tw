@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c52965d31d66f21cdf738816d7ea9c0a8afbdf
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 027ec9b19bcf8a4a10e8b973b86e57be2dbc6be7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838318"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025：必須以參數陣列取代重複的引數
+
 |||
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer |Microsoft 文件
+title: IEEVisualizerDataProvider::GetNewObjectForVisualizer |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7025acd33aad7dddf947f5a151d4980fbe64a823
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e0f9ad21b14ef3999c115966ff387f0e4dcbf58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935337"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-這個方法會取得新的物件視覺化檢視。 這個方法一律會從現有物件建立新的物件。  
+這個方法會取得新物件的視覺化檢視。 這個方法一律會建立新的物件，從現有的物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int GetNewObjectForVisualizer(
  [out]新的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- `This method` 重新評估的物件目前是表示，並傳回新的物件形式的結果。 評估的結果，將會更新現有的物件。  
+ `This method` 重新評估的物件，目前是代表，然後傳回結果做為新的物件。 評估的結果，將會更新現有的物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

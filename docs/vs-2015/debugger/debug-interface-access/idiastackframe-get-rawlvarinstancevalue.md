@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 440a780ccd92a6f8f46f74c462e4adfc591c97ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ee04a345d95ee521c13f2023ab4a5a525003dac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887165"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

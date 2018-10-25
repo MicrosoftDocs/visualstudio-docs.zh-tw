@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826508"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集： 將增益集轉換成 VSPackage 擴充功能
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是一些有關如何將轉換的 Visual Studio 增益集，為 VSIX 擴充功能的常見問題集問題的答案。  
@@ -58,94 +58,94 @@ ms.locfileid: "39498976"
 ##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  
   
--   由功能表命令觸發 (程式碼位於`IDTCommandTarget.Exec`方法。)  
+- 由功能表命令觸發 (程式碼位於`IDTCommandTarget.Exec`方法。)  
   
--   啟動時自動執行 (程式碼在 `OnConnection` 事件處理常式中。)  
+- 啟動時自動執行 (程式碼在 `OnConnection` 事件處理常式中。)  
   
- 您可以在 VSPackage 中執行相同的動作。 以下是如何在回呼方法加入一些增益集程式碼：  
+  您可以在 VSPackage 中執行相同的動作。 以下是如何在回呼方法加入一些增益集程式碼：  
   
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>在 VSPackage 中實作功能表命令  
   
-1.  建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
+1. 建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
   
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)  
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)  
   
-3.  將下列 `using` 陳述式加入檔案中：  
+3. 將下列 `using` 陳述式加入檔案中：  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：  
+4. 尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  在增益集的 `IDTCommandTarget.Exec` 方法中加入其具有的程式碼。 例如，以下是一些程式碼，加入新窗格**輸出**視窗和 [新增] 窗格中的列印"Some Text"。  
+5. 在增益集的 `IDTCommandTarget.Exec` 方法中加入其具有的程式碼。 例如，以下是一些程式碼，加入新窗格**輸出**視窗和 [新增] 窗格中的列印"Some Text"。  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  建置並執行此專案。 按下**F5**或選取**開始**上**偵錯**工具列。 在 Visual Studio 中，實驗執行個體**工具**功能表應該會有一個按鈕名為**我的命令名稱**。 當您選擇此按鈕時，文字**Some Text**應該會出現在**輸出**視窗窗格。 (您可能必須開啟**輸出**視窗。)  
+6. 建置並執行此專案。 按下**F5**或選取**開始**上**偵錯**工具列。 在 Visual Studio 中，實驗執行個體**工具**功能表應該會有一個按鈕名為**我的命令名稱**。 當您選擇此按鈕時，文字**Some Text**應該會出現在**輸出**視窗窗格。 (您可能必須開啟**輸出**視窗。)  
   
- 您也可以讓程式碼在啟動時執行。 不過，通常不鼓勵對 VSPackage 擴充功能採用這種方法。 如果有太多擴充功能在 Visual Studio 啟動時嘗試載入，開始時間可能會變得很長。 較佳的做法是只在符合部分條件 (如開啟方案) 時才自動載入 VSPackage。  
+   您也可以讓程式碼在啟動時執行。 不過，通常不鼓勵對 VSPackage 擴充功能採用這種方法。 如果有太多擴充功能在 Visual Studio 啟動時嘗試載入，開始時間可能會變得很長。 較佳的做法是只在符合部分條件 (如開啟方案) 時才自動載入 VSPackage。  
   
- 這項程序示範如何在方案開啟時自動載入的 VSPackage 中，執行增益集程式碼：  
+   這項程序示範如何在方案開啟時自動載入的 VSPackage 中，執行增益集程式碼：  
   
 ### <a name="to-autoload-a-vspackage"></a>自動載入 VSPackage  
   
-1.  建立 VSIX 專案與 Visual Studio Package 專案項目。 (如需執行這項操作的步驟，請參閱[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)。 只要加入**Visual Studio Package**改為專案項目。)將專案命名為 VSIX**命名為 TestAutoload**。  
+1. 建立 VSIX 專案與 Visual Studio Package 專案項目。 (如需執行這項操作的步驟，請參閱[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)。 只要加入**Visual Studio Package**改為專案項目。)將專案命名為 VSIX**命名為 TestAutoload**。  
   
-2.  開啟*TestAutoloadPackage.cs*。 尋找宣告套件類別的一行：  
+2. 開啟*TestAutoloadPackage.cs*。 尋找宣告套件類別的一行：  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  這一行上方是一組屬性。 加入此屬性：  
+3. 這一行上方是一組屬性。 加入此屬性：  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  在 設定中斷點`Initialize()`方法，並開始偵錯 (**F5**)。  
+4. 在 設定中斷點`Initialize()`方法，並開始偵錯 (**F5**)。  
   
-5.  在實驗執行個體中，開啟專案。 這時 VSPackage 應會載入，並且叫用您的中斷點。  
+5. 在實驗執行個體中，開啟專案。 這時 VSPackage 應會載入，並且叫用您的中斷點。  
   
- 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 的欄位指定要在其中載入 VSPackage 的其他內容。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。  
+   您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 的欄位指定要在其中載入 VSPackage 的其他內容。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。  
   
 ## <a name="how-can-i-get-the-dte-object"></a>如何取得 DTE 物件？  
  如果您的增益集沒有顯示 UI (例如，功能表命令、工具列按鈕或工具視窗)，只要從 VSPackage 取得 DTE 自動化物件，就可以依現狀使用您的程式碼。 方式如下：  
   
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>從 VSPackage 取得 DTE 物件  
   
-1.  在 Visual Studio 封裝項目範本的 VSIX 專案，尋找*\<專案名稱 > Package.cs*檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。  
+1. 在 Visual Studio 封裝項目範本的 VSIX 專案，尋找*\<專案名稱 > Package.cs*檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。  
   
-2.  加入以下 `using` 陳述式：  
+2. 加入以下 `using` 陳述式：  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  尋找 `Initialize` 方法。 這個方法可處理您在套件精靈中指定的命令。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 DTE 物件：  
+3. 尋找 `Initialize` 方法。 這個方法可處理您在套件精靈中指定的命令。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 DTE 物件：  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- 具有 <xref:EnvDTE.DTE> 自動化物件之後，您可以將其餘的增益集程式碼加入專案。 如果您需要 <xref:EnvDTE80.DTE2> 物件，可以執行相同動作。  
+   具有 <xref:EnvDTE.DTE> 自動化物件之後，您可以將其餘的增益集程式碼加入專案。 如果您需要 <xref:EnvDTE80.DTE2> 物件，可以執行相同動作。  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>如何將增益集中的功能表命令和工具列按鈕變更為 VSPackage 樣式？  
  VSPackage 擴充功能使用 *.vsct*檔案以建立大部分的功能表命令、 工具列、 工具列按鈕和其他 UI。 **自訂命令**專案項目範本可讓您選擇上建立命令**工具**功能表。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c6e966a7feff00fc9b32495f3697643120f1ee
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817063"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 在項目或屬性中儲存工作輸出值。  
@@ -60,9 +60,9 @@ ms.locfileid: "39154420"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。|  
+| 元素 | 描述 |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 |
 
 ## <a name="example"></a>範例  
  在下列程式碼範例中，示範了在 `Target` 元素內執行的 `Csc` 工作。 傳遞至工作參數的項目和屬性，都在此範例範圍外宣告。 輸出參數 `OutputAssembly` 的值儲存在 `FinalAssemblyName` 項目中，而來自輸出參數 `BuildSucceeded` 的值則儲存在 `BuildWorked` 屬性中。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  

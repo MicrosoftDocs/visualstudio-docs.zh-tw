@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820770"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 
@@ -70,7 +70,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 Visual Studio 2017 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
 |**功能**|**企業版**|**專業版**|**Community 版本**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Code Map**|是|只支援讀取程式碼對應，對應篩選程式碼，加入新的泛型節點，並從選取範圍建立新的導向圖形。|-|
 |**相依性圖表**|是|只支援讀取相依性圖表。|只支援讀取相依性圖表。|
 |**有向圖形**（DGML 圖表）|是|是|是|

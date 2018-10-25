@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData |Microsoft 文件
+title: IDebugProgramProvider2::GetProviderProcessData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a6da58083feb8699c6db24207c265bf50c0f0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b0cc8d3a87cf89edebb5f1ac35a0493b9451dfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926237"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 擷取從指定的處理序中執行程式的清單。  
@@ -53,10 +53,10 @@ int GetProviderProcessData(
   
 |旗標|描述|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|呼叫端遠端電腦上執行。|  
-|`PFLAG_DEBUGGEE`|呼叫端目前所偵錯 （封送處理的其他資訊將會傳回每個節點）。|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是會啟動偵錯工具。|  
-|`PFLAG_GET_PROGRAM_NODES`|要傳回呼叫端要求程式節點的清單。|  
+|`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
+|`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點會傳回封送處理的其他資訊）。|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|  
+|`PFLAG_GET_PROGRAM_NODES`|呼叫端要求輸入程式節點的清單傳回。|  
   
  `pPort`  
  [in]呼叫處理序的連接埠上執行。  
@@ -65,16 +65,16 @@ int GetProviderProcessData(
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。  
   
  `EngineFilter`  
- [in]對於指派給偵錯此處理序 （這些會用來篩選實際傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 的偵錯引擎的 Guid 陣列。  
+ [in]指派給此程序 （這些會用來篩選實際上還會傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 進行偵錯的偵錯引擎 Guid 的陣列。  
   
  `pProcess`  
- [out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)會填入所要求的資訊的結構。  
+ [out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，其中會填入所要求的資訊。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法通常會呼叫處理程序來取得該處理序中執行的程式清單。 傳回的資訊是一份[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。  
+ 若要取得一份在該程序中執行程式處理程序正常呼叫這個方法。 傳回的資訊是一份[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

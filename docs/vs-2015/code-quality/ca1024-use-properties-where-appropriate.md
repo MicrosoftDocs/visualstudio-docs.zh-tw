@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858923"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222725"
 ## <a name="rule-description"></a>規則描述
  在大部分情況下，屬性代表資料，方法執行動作。 屬性與欄位類似，讓它們可使用的工作變得更容易存取。 方法是成為屬性，若符合下列條件之一，則的良好候選項目：
 
--   不接受引數，並傳回物件的狀態資訊。
+- 不接受引數，並傳回物件的狀態資訊。
 
--   接受單一引數來設定物件狀態的某些部分。
+- 接受單一引數來設定物件狀態的某些部分。
 
- 屬性應該如同它們是欄位，如果方法無法處理，它應該不會變更的屬性。 方法是優於在下列情況中的屬性：
+  屬性應該如同它們是欄位，如果方法無法處理，它應該不會變更的屬性。 方法是優於在下列情況中的屬性：
 
--   這個方法會執行耗時的作業。 此方法為感覺比所需的設定或取得欄位的值時間。
+- 這個方法會執行耗時的作業。 此方法為感覺比所需的設定或取得欄位的值時間。
 
--   這個方法會執行轉換。 存取欄位不會傳回轉換的版本，它會將儲存的資料。
+- 這個方法會執行轉換。 存取欄位不會傳回轉換的版本，它會將儲存的資料。
 
--   Get 方法具有可預見的副作用。 擷取欄位的值不會產生任何副作用。
+- Get 方法具有可預見的副作用。 擷取欄位的值不會產生任何副作用。
 
--   執行的順序很重要。 設定欄位的值不需要其他作業一次。
+- 執行的順序很重要。 設定欄位的值不需要其他作業一次。
 
--   連續兩次呼叫方法時，會建立不同的結果。
+- 連續兩次呼叫方法時，會建立不同的結果。
 
--   方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
+- 方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
 
--   方法會傳回陣列。
+- 方法會傳回陣列。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將方法變更為屬性。

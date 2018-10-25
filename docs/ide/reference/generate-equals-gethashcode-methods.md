@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: deaa0b37988e2df04bb7937c76f341af849698f0
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903110"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -43,10 +43,10 @@ ms.locfileid: "44124966"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有類型宣告的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有類型宣告的行上，此圖示就會出現在左邊界上。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 

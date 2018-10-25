@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912782"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 
@@ -69,7 +69,6 @@ private static bool IsStatusDone(UITestControl control)
 
 // In test method, wait till the method evaluates to true
 statusText.WaitForControlCondition(IsStatusDone);
-
 ```
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
@@ -88,7 +87,6 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 
 // In test method, wait till the method evaluates to true
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
-
 ```
 
  所有這些方法都具有下列行為：

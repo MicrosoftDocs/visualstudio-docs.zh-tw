@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted |Microsoft 文件
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e52c074b7243162aa80bae67923b0d61daae564
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 504fa6855ad8b1fb38428e6e7ec7b3ac9721f644
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864253"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-判斷指定的偵錯位址函式會刪除。  
+判斷指定的偵錯位址的函式會刪除。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]偵錯位址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。  
+ [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。  
   
 ## <a name="return-value"></a>傳回值  
- 如果刪除的函式，會傳回`S_OK`。 如果函式存在，傳回`S_FALSE`。  
+ 如果刪除的函式時，會傳回`S_OK`。 如果函式存在，傳回`S_FALSE`。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(  

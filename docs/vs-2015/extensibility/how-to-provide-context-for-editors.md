@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845327"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何： 提供的編輯器內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器，內容為使用中，只有當編輯器具有焦點或之前焦點已移至 工具視窗焦點時。 您可以提供編輯器的內容，執行下列動作：  
   
-1.  建立內容包。  
+1. 建立內容包。  
   
-2.  選取項目識別項 (SEID) 發佈的內容封包。  
+2. 選取項目識別項 (SEID) 發佈的內容封包。  
   
-3.  維持封包中的內容。  
+3. 維持封包中的內容。  
   
- 這些工作都涵蓋下列程序。 如需有關如何提供內容的詳細資訊，請參閱 <<c0>  **穩固的程式設計**本主題稍後的。  
+   這些工作都涵蓋下列程序。 如需有關如何提供內容的詳細資訊，請參閱 <<c0>  **穩固的程式設計**本主題稍後的。  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>若要建立內容包編輯器或設計工具  
   

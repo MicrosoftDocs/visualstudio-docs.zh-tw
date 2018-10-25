@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920361"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "49178941"
 ## <a name="prerequisites"></a>必要條件  
  若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰  
   
--   在和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的電腦上安裝 Microsoft HPC Pack 2008。 電腦不一定要是 HPC 叢集的一部分。 您可以在 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=177414)安裝 HPC Pack。  
+- 在和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的電腦上安裝 Microsoft HPC Pack 2008。 電腦不一定要是 HPC 叢集的一部分。 您可以在 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=177414)安裝 HPC Pack。  
   
--   在 HPC 計算節點上安裝 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和獨立版本的程式碼剖析工具。 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 和獨立分析工具的安裝程式均於 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體上提供。 **注意**：您必須在安裝 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 之後以及安裝程式碼剖析工具之前，重新啟動電腦。  
+- 在 HPC 計算節點上安裝 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和獨立版本的程式碼剖析工具。 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 和獨立分析工具的安裝程式均於 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體上提供。 **注意**：您必須在安裝 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 之後以及安裝程式碼剖析工具之前，重新啟動電腦。  
   
- 若要在作用中的 HPC 計算節點上，安裝 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和獨立程式碼剖析工具，以及在叢集電腦上啟用程式碼剖析功能，請依照下列步驟執行：  
+  若要在作用中的 HPC 計算節點上，安裝 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和獨立程式碼剖析工具，以及在叢集電腦上啟用程式碼剖析功能，請依照下列步驟執行：  
   
 1.  開啟隨 HPC Pack 安裝的命令提示字元視窗。  
   

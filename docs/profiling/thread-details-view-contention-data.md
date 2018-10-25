@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849524"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 執行緒詳細資料檢視會在時間軸圖形顯示因爭用資源，而在程式碼剖析執行選取的執行緒中造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制該執行緒暫停執行而發生封鎖事件。  
@@ -46,9 +46,9 @@ ms.locfileid: "34477349"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼  
   
--   在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
+- 在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
   
- 該函式的原始程式碼必須是目前專案的一部分。  
+  該函式的原始程式碼必須是目前專案的一部分。  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>檢視程式碼剖析執行時所有執行緒中的資源爭用事件  
   

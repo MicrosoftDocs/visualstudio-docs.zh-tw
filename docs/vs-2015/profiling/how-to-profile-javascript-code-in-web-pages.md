@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1fd8a4e06db5eb56b8f218ee8e1667d8eb59632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872105"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ ms.locfileid: "49176471"
   
 > [!WARNING]
 >  若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱下列其中一個主題：  
->   
->  -   [JavaScript 函式計時](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
-> -   [分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
-> -  
+> 
+> - [JavaScript 函式計時](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+>   -   [分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   -  
   
  您可以使用 [程式碼剖析精靈] 建立效能工作階段。 指定檢測方法，然後在效能工作階段的 [屬性] 對話方塊中，於 [檢測] 頁面上指定 JavaScript 程式碼剖析選項。  
   

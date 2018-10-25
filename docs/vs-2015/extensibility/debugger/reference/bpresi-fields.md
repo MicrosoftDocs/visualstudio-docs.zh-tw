@@ -17,12 +17,12 @@ ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 760e33f6b2f99450e4ffc69461236376eb70320f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c589622678c3b499ac705c834348bdf38c6eae80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879359"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

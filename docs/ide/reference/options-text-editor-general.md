@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830661"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 
@@ -88,7 +88,7 @@ ms.locfileid: "34747811"
 選取時，編輯器文字區域的左邊緣處會顯示垂直邊界。 您可以按一下此邊界來選取整行文字，或按一下並拖曳以選取連續文字行。
 
 |選取範圍邊界起點|選取範圍邊界終點|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 螢幕擷取畫面](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 螢幕擷取畫面](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>指示區邊界

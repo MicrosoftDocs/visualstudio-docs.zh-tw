@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement |Microsoft 文件
+title: IDebugArrayObject::GetElement |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2e10eced58835044220da0650712dacb131ada3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cff3d3894ae23e7751ac7e7ccd7e62a7cb4d5374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866099"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的項目。  
@@ -46,13 +46,13 @@ int GetElement(
  [in]項目索引。  
   
  `ppElement`  
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示項目的介面。  
+ [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，表示項目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將所有項目的陣列物件視為一維陣列，即使多維陣列物件。 例如，假設陣列`myarray[3][2][6]`和`dwIndex`20 的參數，這個方法會傳回的項目`myarray[1][1][2]`，和`dwIndex`21 參數會傳回的項目`myarray[1][1][3]`。 使用[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)方法，以判斷陣列中的項目總數。  
+ 這個方法會將所有項目的陣列物件視為一維陣列，即使是多維式陣列物件。 例如，假設陣列`myarray[3][2][6]`並`dwIndex`20 個參數，這個方法會傳回的項目`myarray[1][1][2]`，和`dwIndex`21 參數會傳回的項目`myarray[1][1][3]`。 使用[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)方法來判斷陣列中的項目總數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

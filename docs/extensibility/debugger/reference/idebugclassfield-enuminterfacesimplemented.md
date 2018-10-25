@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented |Microsoft 文件
+title: IDebugClassField::EnumInterfacesImplemented |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a8a313be7c24b4e3778a4e4890eaf2c5eb67b4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9119668cf4eb8ddb6196aec774acf171db04e868
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872677"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 建立這個類別所實作之介面的列舉值。  
@@ -44,10 +44,10 @@ int EnumInterfacesImplemented(
  [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表實作的介面清單。 如果沒有介面，則傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功的話，會傳回 S_OK，或如果沒有在這個類別上實作介面，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有在這個類別上實作介面，則傳回 S_FALSE。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述介面的物件。 請注意，unmanaged[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼不會使用介面當做離散實體所以這個方法一律會傳回 null 值的 unmanaged[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼。  
+ 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述介面的物件。 請注意，非受控[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼不會使用介面當做離散實體讓這個方法永遠都會傳回 null 值的非受控[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

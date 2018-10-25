@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893698"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ ms.locfileid: "49248530"
   
 #### <a name="to-create-an-empty-solution"></a>建立空的方案  
   
-1.  在 [檔案]  功能表上，按一下 [新增]  及 [新增專案] 。  
+1. 在 [檔案]  功能表上，按一下 [新增]  及 [新增專案] 。  
   
-2.  在左窗格中，選取 [已安裝] 及 [其他專案類型] ，然後從展開的清單中選取 [Visual Studio 方案]  。  
+2. 在左窗格中，選取 [已安裝] 及 [其他專案類型] ，然後從展開的清單中選取 [Visual Studio 方案]  。  
   
-3.  在中間窗格選取 [空白方案] 。  
+3. 在中間窗格選取 [空白方案] 。  
   
-4.  為您的方案設定 [名稱]  及 [位置]  值，然後按一下 [確定] 。  
+4. 為您的方案設定 [名稱]  及 [位置]  值，然後按一下 [確定] 。  
   
- 建立空的方案之後，您可以在 [專案]  功能表上，按一下 [新增項目]  或 [加入現有項目]  ，將新專案或項目或是現有專案或項目加入該方案。  
+   建立空的方案之後，您可以在 [專案]  功能表上，按一下 [新增項目]  或 [加入現有項目]  ，將新專案或項目或是現有專案或項目加入該方案。  
   
 ### <a name="deleting-solutions"></a>刪除方案  
  您可以永久刪除方案，但不是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來刪除。 刪除方案之前，請移動您可能再次用於另一個方案的任何專案。 然後使用 [檔案總管] 來刪除包含 .sln 和 .suo 方案檔案的目錄。  

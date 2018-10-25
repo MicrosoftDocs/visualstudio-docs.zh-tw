@@ -17,25 +17,25 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 567640eafb3886d51469447eba31e439ca150618
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836979"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 依據電腦系統管理員提供的 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 使用者存取權限設定，個別使用者可能具有安全性權限可以在該電腦上分析處理序。 下列範例説明各使用者之間可能存在的差異：  
   
--   當系統管理員設定了要啟動的驅動程式和服務時，某些使用者可以存取進階的程式碼剖析功能。  
+- 當系統管理員設定了要啟動的驅動程式和服務時，某些使用者可以存取進階的程式碼剖析功能。  
   
--   網域使用者只能存取取樣程式碼剖析。  
+- 網域使用者只能存取取樣程式碼剖析。  
   
--   某些使用者可以拒絕其他所有使用者存取程式碼剖析。  
+- 某些使用者可以拒絕其他所有使用者存取程式碼剖析。  
   
- 如需詳細資訊，請參閱 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
+  如需詳細資訊，請參閱 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
   
 ## <a name="cross-session-profiling"></a>跨工作階段進行程式碼剖析  
  「跨工作階段進行程式碼剖析」是指能夠分析在不同登入工作階段中執行的處理序。 例如，大部分服務是在工作階段 0 中執行，而使用者無法直接在工作階段 0 中執行。 使用 [效能總管] 工具列上的 [附加至處理序] 按鈕或 VSPerfCmd 命令列工具的 /attach 選項，您就可以分析不同登入工作階段中的大部分處理序。  

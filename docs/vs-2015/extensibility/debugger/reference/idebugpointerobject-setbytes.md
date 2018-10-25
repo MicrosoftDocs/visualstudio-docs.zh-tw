@@ -17,12 +17,12 @@ ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2358ea408edea5803fb7726e21d292400c083bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 347f7d2dc88a5e4e76134a7e60832542c9362b0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938444"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b63cea0485ad01b0b3c0812a04eee54c08cd55f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d739026e161261430aa75854b36c7b7fbe18e7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911573"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

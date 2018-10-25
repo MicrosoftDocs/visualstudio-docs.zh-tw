@@ -17,12 +17,12 @@ ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebcb8f2f4f28f58695cd80359a42951cc2699d64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93e77e86c868d785fef89bc1ebbe0fcc96afbfe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824408"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

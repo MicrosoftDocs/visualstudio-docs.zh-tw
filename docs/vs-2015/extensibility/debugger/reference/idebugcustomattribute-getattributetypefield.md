@@ -17,12 +17,12 @@ ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20be28fcee5c1b4e0b8d8eb234cdcddc96c0a2ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b934eb299470293fd82409be10e88d3e589915c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885118"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 |Microsoft 文件
+title: IDebugCoreServer2::GetMachineUtilities_V7 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f374d83af705d8e9376d8767c822af82ed4d4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 265c5b414c53fb6dfe43f63c1016204b8ff02c81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908661"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-這個方法會取得伺服器的機器公用程式。  
+這個方法會取得伺服器的機器的公用程式。  
   
 > [!NOTE]
->  這個方法已過時： 不要使用 ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]一律會傳回`E_NOTIMPL`如果在呼叫此方法)。 它會保留歷程記錄的原因。  
+>  這個方法已經過時： 請勿使用 ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]一律會傳回`E_NOTIMPL`如果在呼叫此方法)。 它會保留歷程記錄的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
   
 #### <a name="parameters"></a>參數  
  `ppUtil`  
- [out]傳回`IDebugMDMUtil2_V7`代表機器公用程式資訊的介面。  
+ [out]傳回`IDebugMDMUtil2_V7`表示機器的公用程式資訊的介面。  
   
 ## <a name="return-value"></a>傳回值  
- 一律傳回`E_NOTIMPL`，指出方法未實作。  
+ 一律會傳回`E_NOTIMPL`，指出，該方法尚未實作。  
   
 ## <a name="remarks"></a>備註  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 一律傳回`E_NOTIMPL`如果在呼叫這個方法。  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 一律會傳回`E_NOTIMPL`如果呼叫這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

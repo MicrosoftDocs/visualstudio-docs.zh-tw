@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS |Microsoft 文件
+title: MACHINE_INFO_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0ff6f75c0ee17bef57b1f2632c4d6926948528
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942500"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 指定要擷取特定電腦的資訊種類。  
@@ -46,20 +46,20 @@ public enum enum_MACHINE_INFO_FIELDS {
   
 ## <a name="members"></a>成員  
  MCIF_NAME  
- 初始化/使用`bstrName`結構中的欄位。  
+ 初始化/使用`bstrName`欄位在結構中。  
   
  MCIF_FLAGS  
- 初始化/使用`Flags`結構中的欄位。  
+ 初始化/使用`Flags`欄位在結構中。  
   
  MIF_ALL  
  初始化/使用的所有欄位在結構中。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞給[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，指出成員[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構會進行初始化。  
+ 這些值會傳遞給[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以表示哪些成員[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構會進行初始化。  
   
- 也用於`Fields`隸屬`MACHINE_INFO`結構，以指出哪些欄位是使用且有效。  
+ 也用於`Fields`隸屬`MACHINE_INFO`表示哪些欄位已使用且有效的結構。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

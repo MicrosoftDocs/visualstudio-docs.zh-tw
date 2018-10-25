@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926614"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -64,13 +64,13 @@ ms.locfileid: "47168353"
 
      ![Vue.js 方案](../javascript/media/vuejs-solution.png)
 
-  - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 .*njsproj* 檔案所呈現。
+   - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 .*njsproj* 檔案所呈現。
 
-  - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 .*sln* 檔案呈現) 是一或多個相關專案的容器。
+   - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 .*sln* 檔案呈現) 是一或多個相關專案的容器。
 
-  - **npm** 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
+   - **npm** 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
 
-1. 如果您想要從命令提示字元安裝 npm 套件或執行 Node.js 命令，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]。
+2. 如果您想要從命令提示字元安裝 npm 套件或執行 Node.js 命令，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]。
 
 ## <a name="add-a-vue-file-to-the-project"></a>將 .vue 檔案新增至專案
 

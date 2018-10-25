@@ -20,15 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1eaeb8f1785c6841668c7751bc5d3fdb861e19ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e729bb95f6b36afb4910ac6d03636c239994ae34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813488"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免包含未使用的私用欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|

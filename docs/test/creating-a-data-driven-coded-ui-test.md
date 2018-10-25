@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940446"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -33,64 +33,64 @@ ms.locfileid: "36303036"
 
 ### <a name="step-1---create-a-coded-ui-test"></a>步驟 1 - 建立自動程式碼 UI 測試
 
-1.  建立專案。
+1. 建立專案。
 
-     ![建立自動程式化 UI 測試](../test/media/cuit_datadriven_.png)
+    ![建立自動程式化 UI 測試](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-2.  選擇**錄製動作**。
+2. 選擇**錄製動作**。
 
-     ![選擇記錄動作](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![選擇記錄動作](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  開啟計算機應用程式，並開始錄製測試。
+3. 開啟計算機應用程式，並開始錄製測試。
 
-     ![記錄動作](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![記錄動作](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  加入 1 加 2，並暫停錄製器，然後產生測試方法。 稍後，我們會將此使用者輸入的值取代為資料檔中的值。
+4. 加入 1 加 2，並暫停錄製器，然後產生測試方法。 稍後，我們會將此使用者輸入的值取代為資料檔中的值。
 
-     ![產生測試方法](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![產生測試方法](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     關閉測試產生器。 此方法會加入至測試：
+    關閉測試產生器。 此方法會加入至測試：
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R**,**T**)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R**,**T**)。
 
-     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
+    [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
 
-6.  因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
 
-     對應計算機中顯示總和的文字控制項。
+    對應計算機中顯示總和的文字控制項。
 
-     ![對應 UI 文字控制項](../test/media/cuit_datadriven_addassertion.png)
+    ![對應 UI 文字控制項](../test/media/cuit_datadriven_addassertion.png)
 
-7.  加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
-     ![設定判斷提示](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![設定判斷提示](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  設定判斷提示之後，請重新從建立器產生程式碼。 這會建立新的方法來進行驗證。
+8. 設定判斷提示之後，請重新從建立器產生程式碼。 這會建立新的方法來進行驗證。
 
-     ![產生判斷提示方法](../test/media/cuit_datadriven_assertiongencode.png)
+    ![產生判斷提示方法](../test/media/cuit_datadriven_assertiongencode.png)
 
-     因為 `ValidateSum` 方法會驗證 `AddNumbers` 方法的結果，所以請將它移至程式碼區塊底端。
+    因為 `ValidateSum` 方法會驗證 `AddNumbers` 方法的結果，所以請將它移至程式碼區塊底端。
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R**,**T**)。
 

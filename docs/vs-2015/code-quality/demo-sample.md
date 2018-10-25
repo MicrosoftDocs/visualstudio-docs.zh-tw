@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880652"
 ---
 # <a name="demo-sample"></a>示範範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 以下程序會示範如何建立的範例[逐步解說： 分析 C/c + + 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 建立程序：  
   
--   A[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命名 CppDemo 解決方案。  
+- A[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命名 CppDemo 解決方案。  
   
--   靜態程式庫專案命名為 CodeDefects。  
+- 靜態程式庫專案命名為 CodeDefects。  
   
--   靜態程式庫專案命名為註解。  
+- 靜態程式庫專案命名為註解。  
   
- 程序也會提供靜態程式庫標頭和.cpp 檔的程式碼。  
+  程序也會提供靜態程式庫標頭和.cpp 檔的程式碼。  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>建立 CppDemo 解決方案和 CodeDefects 專案  
   

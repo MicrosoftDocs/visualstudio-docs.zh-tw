@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_addressmapenabled |Microsoft 文件'
+title: 'Idiaaddressmap:: Get_addressmapenabled |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cacee6377eebcc4e73f8f650bff4f4d3e500af66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 47d0b3ac64724881ab72cb9d9d873bc02f3bec9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938834"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 指出是否已為特定的工作階段建立對應的位址。  
@@ -37,12 +37,12 @@ HRESULT get_addressMapEnabled (
  [out]傳回`TRUE`如果已啟用的位址對應。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 可執行檔後處理器有時會更新可執行檔。 DIA 包含以支援新的版面配置的符號的轉譯機制。  
+ 可執行的後置處理器有時會更新可執行檔。 DIA 包含支援新的版面配置將符號的轉譯機制。  
   
- 用戶端應用程式可以藉由取得特定的工作階段中設定對應位址[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)介面從[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面及呼叫[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法呼叫後面接著[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法。 `get_addressMapEnabled`方法會傳回呼叫的結果`put_addressMapEnabled`方法。  
+ 用戶端應用程式可以藉由取得特定的工作階段中設定對應位址[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)從介面[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面及呼叫[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法呼叫後面接著[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法。 `get_addressMapEnabled`方法會傳回呼叫的結果`put_addressMapEnabled`方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

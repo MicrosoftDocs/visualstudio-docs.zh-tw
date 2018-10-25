@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904670"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>逐步解說： 更新使用選項按鈕的文件中的圖表
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。  
@@ -30,15 +30,15 @@ ms.locfileid: "35258216"
   
  這個逐步解說將說明下列工作：  
   
--   在設計階段，將圖表加入至文件層級專案中的文件。  
+- 在設計階段，將圖表加入至文件層級專案中的文件。  
   
--   透過將選項按鈕加入至使用者控制項來分組選項按鈕。  
+- 透過將選項按鈕加入至使用者控制項來分組選項按鈕。  
   
--   當選取選項時變更圖表樣式。  
+- 當選取選項時變更圖表樣式。  
   
- 若要查看完整的範例結果，請參閱 Word 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
+  若要查看完整的範例結果，請參閱 Word 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  

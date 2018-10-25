@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831811"
 ---
 # <a name="core-interfaces"></a>核心介面
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ ms.locfileid: "49217733"
 ## <a name="discussion"></a>討論  
  這些介面主要用來建立偵錯引擎 (DE)。 它們被依以下類別：  
   
--   [中斷點](#Breakpoints)  
+- [中斷點](#Breakpoints)  
   
--   [內容](#Contexts)  
+- [內容](#Contexts)  
   
--   [核心伺服器](#CoreServer)  
+- [核心伺服器](#CoreServer)  
   
--   [偵錯引擎](#DebugEngines)  
+- [偵錯引擎](#DebugEngines)  
   
--   [文件](#Documents)  
+- [文件](#Documents)  
   
--   [事件](#Events)  
+- [事件](#Events)  
   
--   [運算式](#Expressions)  
+- [運算式](#Expressions)  
   
--   [記憶體](#Memory)  
+- [記憶體](#Memory)  
   
--   [模組](#Modules)  
+- [模組](#Modules)  
   
--   [連接埠](#Ports)  
+- [連接埠](#Ports)  
   
--   [處理序](#Processes)  
+- [處理序](#Processes)  
   
--   [程式](#Programs)  
+- [程式](#Programs)  
   
--   [屬性](#Properties)  
+- [屬性](#Properties)  
   
--   [堆疊框架](#StackFrames)  
+- [堆疊框架](#StackFrames)  
   
--   [執行緒](#Threads)  
+- [執行緒](#Threads)  
   
--   [類型視覺化檢視](#TypeVisualizers)  
+- [類型視覺化檢視](#TypeVisualizers)  
   
- 可以實作介面的實體是：  
+  可以實作介面的實體是：  
   
--   偵錯引擎 (DE)  
+- 偵錯引擎 (DE)  
   
--   連接埠提供者 (PS)  
+- 連接埠提供者 (PS)  
   
--   運算式評估工具 (EE)  
+- 運算式評估工具 (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> 中斷點  
  有關這些介面實作] 和 [追蹤的中斷點。  

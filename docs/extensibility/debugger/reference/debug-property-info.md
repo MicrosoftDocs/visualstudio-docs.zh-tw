@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO |Microsoft 文件
+title: DEBUG_PROPERTY_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4466d74d0e19b898b3c377c67a14f7c39922d915
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847093"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 包含偵錯屬性的相關資訊。  
@@ -62,21 +62,21 @@ public struct DEBUG_PROPERTY_INFO {
  在內容屬性名稱。  
   
  bstrType  
- 屬性類型為格式化的字串。  
+ 為格式化的字串屬性型別。  
   
  bstrValue  
- 格式化字串為屬性值。  
+ 為格式化的字串屬性值。  
   
  屬性  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這個結構描述物件。  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這個結構所描述的物件。  
   
  dwAttrib  
- 從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)描述的屬性，這個屬性的列舉型別。  
+ 從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，描述這個屬性的屬性。  
   
 ## <a name="remarks"></a>備註  
- 屬性是階層式本質，具有名稱、 類型和值的物件。 例如，屬性可以描述本機變數、 參數、 監看變數和運算式和暫存器。  
+ 屬性是階層式本質上具有名稱、 類型和值的物件。 比方說，本機變數、 參數、 監看變數和運算式和暫存器，可描述屬性。  
   
- 此結構會傳遞至[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)填滿其中的方法。 此結構，從清單的一部分，也會傳回這個結構[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)介面，亦會從呼叫傳回[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)和[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法。  
+ 此結構會傳遞至[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)填滿其中的方法。 此結構也會傳回一份此結構的一部分[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)介面，反而會從呼叫傳回[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)和[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903812"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ ms.locfileid: "49231500"
 ### <a name="invoke-methods-from-a-template"></a>叫用方法，從範本  
  如果方法已存在，比方說，在標準[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]類別：  
   
--   使用  \<#@assembly#> 指示詞，以載入組件，並使用\<#@import#> 來設定命名空間內容。 如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。  
+- 使用  \<#@assembly#> 指示詞，以載入組件，並使用\<#@import#> 來設定命名空間內容。 如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。  
   
-     如果您經常使用相同的組件，並匯入指示詞，請考慮撰寫指示詞處理器。 在每個範本中，您可以叫用指示詞處理器，而這可以載入組件和模型檔案，並設定命名空間內容。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
+   如果您經常使用相同的組件，並匯入指示詞，請考慮撰寫指示詞處理器。 在每個範本中，您可以叫用指示詞處理器，而這可以載入組件和模型檔案，並設定命名空間內容。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
   
- 如果您要自行撰寫方法：  
+  如果您要自行撰寫方法：  
   
--   如果您正在撰寫執行階段文字範本，請撰寫執行階段文字範本的名稱相同的部分類別定義。 這個類別中加入額外的方法。  
+- 如果您正在撰寫執行階段文字範本，請撰寫執行階段文字範本的名稱相同的部分類別定義。 這個類別中加入額外的方法。  
   
--   撰寫類別功能控制區塊`<#+ ... #>`在方法、 屬性和私用的類別可以宣告它。 文字範本編譯時，會將它轉換為類別。 標準控制區塊`<#...#>`和文字會轉換至單一方法，和類別功能區塊會插入做為個別的成員。 如需詳細資訊，請參閱 <<c0> [ 文字範本控制區塊](../modeling/text-template-control-blocks.md)。  
+- 撰寫類別功能控制區塊`<#+ ... #>`在方法、 屬性和私用的類別可以宣告它。 文字範本編譯時，會將它轉換為類別。 標準控制區塊`<#...#>`和文字會轉換至單一方法，和類別功能區塊會插入做為個別的成員。 如需詳細資訊，請參閱 <<c0> [ 文字範本控制區塊](../modeling/text-template-control-blocks.md)。  
   
-     定義為類別功能也可以包含內嵌的文字區塊的方法。  
+   定義為類別功能也可以包含內嵌的文字區塊的方法。  
   
-     請考慮在不同的檔案，您可以將類別功能`<#@include#>`到一或多個範本檔案。  
+   請考慮在不同的檔案，您可以將類別功能`<#@include#>`到一或多個範本檔案。  
   
--   在不同的組件 （類別程式庫） 中撰寫方法，並呼叫它們從您的範本。 使用`<#@assembly#>`載入的組件的指示詞和`<#@import#>`來設定命名空間內容。 請注意，若要在偵錯時，請重建組件，您可能必須停止並重新啟動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。  
+- 在不同的組件 （類別程式庫） 中撰寫方法，並呼叫它們從您的範本。 使用`<#@assembly#>`載入的組件的指示詞和`<#@import#>`來設定命名空間內容。 請注意，若要在偵錯時，請重建組件，您可能必須停止並重新啟動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>從另一個模型結構描述產生許多檔案  
  如果您通常會從具有相同的資料庫或 XML 結構描述的模型產生檔案：  

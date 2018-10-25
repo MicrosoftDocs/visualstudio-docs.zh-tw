@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853515"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -162,7 +164,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 **分支**資料行中的圖示告訴您該分支與您正在處理的分支的相關性。
 
 |**圖示**|**變更來源：**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens - 從目前分支變更圖示](../ide/media/codelensbranchcurrenticon.png)|目前分支|
 |![CodeLens： 從父分支變更圖示](../ide/media/codelensbranchparenticon.png)|父分支|
 |![CodeLens - 從子分支變更圖示](../ide/media/codelensbranchchildicon.png)|子分支|

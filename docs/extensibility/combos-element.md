@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 02f0fac933ea719b712d9b3bba4117915065aa65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939016"
 ---
 # <a name="combos-element"></a>Combos 元素
 群組[Combo 元素](../extensibility/combo-element.md)項目。  

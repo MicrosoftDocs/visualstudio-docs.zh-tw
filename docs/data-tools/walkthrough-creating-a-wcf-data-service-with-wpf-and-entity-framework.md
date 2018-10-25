@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838760"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說： 使用 WPF 和 Entity Framework 建立 WCF 資料服務
 本逐步解說示範如何建立簡單[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]裝載在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 應用程式，然後將它存取 Windows Form 應用程式。
 
 在本逐步解說您：
 
--   建立 web 應用程式，以裝載[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+- 建立 web 應用程式，以裝載[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
--   建立[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]表示`Customers`Northwind 資料庫中的資料表。
+- 建立[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]表示`Customers`Northwind 資料庫中的資料表。
 
--   建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+- 建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
--   建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的參考。
+- 建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的參考。
 
--   啟用對服務的資料繫結，並產生使用者介面。
+- 啟用對服務的資料繫結，並產生使用者介面。
 
--   您可以選擇在應用程式中加入篩選功能。
+- 您可以選擇在應用程式中加入篩選功能。
 
 ## <a name="prerequisites"></a>必要條件
 本逐步解說會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
@@ -66,7 +66,7 @@ ms.locfileid: "44281529"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>若要建立 web 專案
+### <a name="to-create-the-web-project"></a>若要建立 web 專案
 
 1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
@@ -78,7 +78,7 @@ ms.locfileid: "44281529"
 
 在下一個步驟中，您會建立[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]表示`Customers`Northwind 資料庫中的資料表。
 
-#### <a name="to-create-the-entity-data-model"></a>若要建立實體資料模型
+### <a name="to-create-the-entity-data-model"></a>若要建立實體資料模型
 
 1.  在功能表列中，選擇 [專案] > [加入新項目]。
 
@@ -101,12 +101,12 @@ ms.locfileid: "44281529"
 6.  如果資料庫需要密碼，請選擇**是，連接字串中包括敏感性資料**選項按鈕，然後再選擇**下一步**  按鈕。
 
     > [!NOTE]
-    >  如果出現對話方塊，請選擇**是**將檔案儲存至您的專案。
+    > 如果出現對話方塊，請選擇**是**將檔案儲存至您的專案。
 
 7.  在 **選擇您的版本**頁面上，選擇**Entity Framework 5.0**選項按鈕，然後選擇**下一步**  按鈕。
 
     > [!NOTE]
-    >  若要使用最新版的 Entity Framework 6 與 WCF 服務，您必須安裝 WCF Data Services Entity Framework 提供者 NuGet 封裝。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
+    > 若要使用最新版的 Entity Framework 6 與 WCF 服務，您必須安裝 WCF Data Services Entity Framework 提供者 NuGet 封裝。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
 8.  在上**選擇您的資料庫物件**頁面上，展開**資料表**節點中，選取**客戶**核取方塊，，然後選擇**完成**按鈕。
 
@@ -114,7 +114,7 @@ ms.locfileid: "44281529"
 
 在下一個步驟中，您可以建立和測試資料服務。
 
-#### <a name="to-create-the-data-service"></a>若要建立資料服務
+### <a name="to-create-the-data-service"></a>若要建立資料服務
 
 1.  在功能表列中，選擇 [專案] > [加入新項目]。
 
@@ -141,7 +141,7 @@ ms.locfileid: "44281529"
      中的資料的 XML 表示法`Customers`資料表隨即出現。
 
     > [!NOTE]
-    >  在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。
+    > 在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。
 
 8.  關閉瀏覽器視窗。
 
@@ -152,7 +152,7 @@ ms.locfileid: "44281529"
 
  在第一個步驟中，您可以將 Windows Form 專案加入方案，並將它設定為啟始專案。
 
-#### <a name="to-create-the-client-application"></a>若要建立用戶端應用程式
+### <a name="to-create-the-client-application"></a>若要建立用戶端應用程式
 
 1.  在功能表列上選擇 [檔案]**新增** > **新專案**。
 
@@ -166,7 +166,7 @@ ms.locfileid: "44281529"
 
 您可以在下一個步驟中，加入服務參考[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 專案中。
 
-#### <a name="to-add-a-service-reference"></a>若要加入服務參考
+### <a name="to-add-a-service-reference"></a>若要加入服務參考
 
 1.  在功能表列上選擇 **專案** > **加入服務參考**。
 
@@ -178,7 +178,7 @@ ms.locfileid: "44281529"
 
 在下一個步驟中，您可以設定要啟用資料繫結至服務的資料來源。
 
-#### <a name="to-enable-data-binding-to-the-service"></a>若要啟用對服務的資料繫結
+### <a name="to-enable-data-binding-to-the-service"></a>若要啟用對服務的資料繫結
 
 1.  在功能表列上選擇 **檢視** > **其他 Windows** > **Zdroje dat**。
 
@@ -192,61 +192,60 @@ ms.locfileid: "44281529"
 
 在下一個步驟中，您可以建立使用者介面，顯示來自服務的資料。
 
-#### <a name="to-create-the-user-interface"></a>若要建立使用者介面
+### <a name="to-create-the-user-interface"></a>若要建立使用者介面
 
-1.  在 **資料來源** 視窗中，開啟捷徑功能表**客戶**節點，然後選擇 **複製**。
+1. 在 **資料來源** 視窗中，開啟捷徑功能表**客戶**節點，然後選擇 **複製**。
 
-2.  在  **Form1.vb**或是**Form1.cs**表單設計工具，開啟捷徑功能表，然後選擇**貼上**。
+2. 在  **Form1.vb**或是**Form1.cs**表單設計工具，開啟捷徑功能表，然後選擇**貼上**。
 
-     表單中會加入一個 <xref:System.Windows.Forms.DataGridView> 控制項、一個 <xref:System.Windows.Forms.BindingSource> 元件，和一個 <xref:System.Windows.Forms.BindingNavigator> 元件。
+    表單中會加入一個 <xref:System.Windows.Forms.DataGridView> 控制項、一個 <xref:System.Windows.Forms.BindingSource> 元件，和一個 <xref:System.Windows.Forms.BindingNavigator> 元件。
 
-3.  選擇**CustomersDataGridView**控制項，然後在**屬性** 視窗中設定**停駐**屬性設**填滿**。
+3. 選擇**CustomersDataGridView**控制項，然後在**屬性** 視窗中設定**停駐**屬性設**填滿**。
 
-4.  在**方案總管**，開啟捷徑功能表**Form1**節點，然後選擇 **檢視程式碼**以開啟程式碼編輯器，並新增下列`Imports`或`Using`陳述式在檔案頂端：
+4. 在**方案總管**，開啟捷徑功能表**Form1**節點，然後選擇 **檢視程式碼**以開啟程式碼編輯器，並新增下列`Imports`或`Using`陳述式在檔案頂端：
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  將下列程式碼加入至 `Form1_Load` 事件處理常式：
+5. 將下列程式碼加入至 `Form1_Load` 事件處理常式：
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. 在 **方案總管**，開啟捷徑功能表**NorthwindCustomers.svc**檔案，然後選擇**瀏覽器中的檢視**。 Internet Explorer 會開啟，並顯示服務的 XML 結構描述。
 
-6.  在 **方案總管**，開啟捷徑功能表**NorthwindCustomers.svc**檔案，然後選擇**瀏覽器中的檢視**。 Internet Explorer 會開啟，並顯示服務的 XML 結構描述。
+7. 由 Internet Explorer 的 [網址] 列複製 URL。
 
-7.  由 Internet Explorer 的 [網址] 列複製 URL。
-
-8.  由您在步驟 4 中加入的程式碼中，選取 `http://localhost:53161/NorthwindCustomers.svc/` 並取代為您剛剛複製的 URL。
+8. 由您在步驟 4 中加入的程式碼中，選取 `http://localhost:53161/NorthwindCustomers.svc/` 並取代為您剛剛複製的 URL。
 
 9. 在功能表列上選擇 **偵錯** > **開始偵錯**執行應用程式。 會顯示客戶資訊。
 
- 現在您會有一個工作應用程式，會顯示來自 NorthwindCustomers 服務的客戶清單。 如果您想要透過服務公開額外的資料，可以將 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 修改為包含來自 Northwind 資料庫的額外資料表。
+   現在您會有一個工作應用程式，會顯示來自 NorthwindCustomers 服務的客戶清單。 如果您想要透過服務公開額外的資料，可以將 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 修改為包含來自 Northwind 資料庫的額外資料表。
 
 在下一步的選擇性步驟中，您將了解如何篩選服務所傳回的資料。
 
 ## <a name="adding-filtering-capabilities"></a>加入篩選功能
  在此步驟中，您可以自訂要依客戶所在城市篩選資料的應用程式。
 
-#### <a name="to-add-filtering-by-city"></a>若要加入根據城市進行篩選的功能
+### <a name="to-add-filtering-by-city"></a>若要加入根據城市進行篩選的功能
 
 1.  在 **方案總管**，開啟捷徑功能表**Form1.vb**或**Form1.cs**節點，然後選擇 **開啟**。
 

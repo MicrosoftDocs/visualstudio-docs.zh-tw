@@ -18,12 +18,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb153568c21af8c7b870583adb8b3189c7e3c8cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b7d612c9bad2b4b718884f9d688da56cf8730c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939519"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

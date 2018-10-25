@@ -16,12 +16,12 @@ ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f20342c6cf1db9cb06466a6d51ea97d303ccdbab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d36ff305027207d46a9b3f87bdb6e5f3597be11e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903071"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

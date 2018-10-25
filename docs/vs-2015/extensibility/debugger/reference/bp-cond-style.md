@@ -17,12 +17,12 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18bd677c973adca556259a017802476c591f83b4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e57e82f39eb89f7a937a95ca2abc50840c2fe93f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850759"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

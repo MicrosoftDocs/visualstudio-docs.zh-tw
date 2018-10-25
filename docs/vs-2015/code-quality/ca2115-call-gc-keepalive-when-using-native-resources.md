@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48ad201a780c31fed5f324ff96a91bd21989522
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948742"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115：使用原生資源時必須呼叫 GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
@@ -50,11 +51,11 @@ ms.locfileid: "49213341"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  此規則可讓一些可能會導致誤判的假設。 您可以安全地隱藏此規則的警告，如果：
 
--   完成項不會釋放的內容<xref:System.IntPtr>或<xref:System.UIntPtr>方法所參考的欄位。
+- 完成項不會釋放的內容<xref:System.IntPtr>或<xref:System.UIntPtr>方法所參考的欄位。
 
--   此方法不會通過<xref:System.IntPtr>或<xref:System.UIntPtr>欄位至 unmanaged 程式碼。
+- 此方法不會通過<xref:System.IntPtr>或<xref:System.UIntPtr>欄位至 unmanaged 程式碼。
 
- 請仔細檢閱其他訊息之前排除它們。 此規則會偵測難以重現及偵錯的錯誤。
+  請仔細檢閱其他訊息之前排除它們。 此規則會偵測難以重現及偵錯的錯誤。
 
 ## <a name="example"></a>範例
  在下列範例中，`BadMethod`不包含呼叫`GC.KeepAlive`且因此違反此規則。 `GoodMethod` 包含已更正的程式碼。

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899327"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951917"
 
 1. 在 [編輯] 功能表上，展開 [尋找和取代]。
 
-1. 選擇 [檔案中取代]。
+2. 選擇 [檔案中取代]。
 
    — 或 —
 
-  如果 [尋找和取代] 視窗已開啟，請選擇工具列中的 [檔案中取代]。
+   如果 [尋找和取代] 視窗已開啟，請選擇工具列中的 [檔案中取代]。
 
 ## <a name="find-what"></a>尋找目標
 

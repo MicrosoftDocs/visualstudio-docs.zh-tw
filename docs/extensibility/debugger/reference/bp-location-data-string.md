@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_DATA_STRING |Microsoft 文件
+title: BP_LOCATION_DATA_STRING |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae83bf4d0f8ba6435a962f5c1477e460d69ae27f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c740c853fff0701bf27d3c37d69141440525b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875771"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
-用於設定使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎的資料中斷點。  
+用於設定資料中斷點的使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,19 +38,19 @@ typedef struct _BP_LOCATION_DATA_STRING {
   
 ## <a name="members"></a>成員  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生中斷點所在的執行緒。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。  
   
  `bstrContext`  
- 在程式碼中斷點，通常是方法或函式的名稱，當做呼叫堆疊上看到的內容。  
+ 程式碼內的中斷點，通常是方法或函式的名稱為 呼叫堆疊上看到的內容。  
   
  `bstrDataExpr`  
- 資料字串，使用者會輸入要設定中斷點。  
+ 資料字串，使用者會進入設定中斷點。  
   
  `dwNumElements`  
  中斷點會發生的資料字串中的項目數目。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是屬於[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構做為聯集的一部分。  
+ 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

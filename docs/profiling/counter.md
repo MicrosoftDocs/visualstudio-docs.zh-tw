@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d09dc41f3726f21b432f39a504b5ea8b320bf107
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3bfc59eb1cec7e4ed5ef9b7955438fffb03ca5d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832897"
 ---
 # <a name="counter"></a>計數器
 **Counter** 選項會從處理器 (硬體) 效能計數器收集資料。  
   
--   當您使用取樣分析方法時，**Counter** 會指定晶片上的效能計數器和計數器事件的數目，用來做為取樣間隔。 當您使用取樣時，只能指定一個計數器。  
+- 當您使用取樣分析方法時，**Counter** 會指定晶片上的效能計數器和計數器事件的數目，用來做為取樣間隔。 當您使用取樣時，只能指定一個計數器。  
   
--   當您使用檢測分析方法時，會在分析工具報表中的個別欄位中，列出在上一個與目前收集事件之間隔內發生的計數器事件數目。 當您使用檢測時，可以指定多個 **Counter** 選項。  
+- 當您使用檢測分析方法時，會在分析工具報表中的個別欄位中，列出在上一個與目前收集事件之間隔內發生的計數器事件數目。 當您使用檢測時，可以指定多個 **Counter** 選項。  
   
- 每個處理器類型都有一組自己的硬體效能計數器。 分析工具會定義一組幾乎所有處理器都通用的一般效能計數器。 若要列出您電腦上一般和處理器特定的計數器，請使用 VSPerfCmd **QueryCounters** 命令。  
+  每個處理器類型都有一組自己的硬體效能計數器。 分析工具會定義一組幾乎所有處理器都通用的一般效能計數器。 若要列出您電腦上一般和處理器特定的計數器，請使用 VSPerfCmd **QueryCounters** 命令。  
   
 ## <a name="syntax"></a>語法  
   

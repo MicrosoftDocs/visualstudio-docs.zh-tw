@@ -20,15 +20,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 630bd84f4b5ceaa3719aa0e19d7d64bb08423127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2548fe0e54e57e4374f8ae92e9d43302df419aa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940186"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031：不要攔截一般例外狀況類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|

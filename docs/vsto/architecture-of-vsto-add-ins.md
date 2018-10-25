@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933439"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 增益集的架構
   使用 Visual Studio 中 Office Developer Tools 建立的 VSTO 增益集具有同時強調穩定性和安全性的架構功能，這些功能可讓其與 Microsoft Office 密切合作。 本主題描述 VSTO 增益集的下列層面：  
   
--   [了解 VSTO 增益集](#UnderstandingAddIns)  
+- [了解 VSTO 增益集](#UnderstandingAddIns)  
   
--   [VSTO 增益集的元件](#AddinComponents)  
+- [VSTO 增益集的元件](#AddinComponents)  
   
--   [VSTO 增益集搭配 Microsoft Office 應用程式的運作方式](#HowAddinsWork)  
+- [VSTO 增益集搭配 Microsoft Office 應用程式的運作方式](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- 如需建立 VSTO 增益集的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[開始著手程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)。  
+  如需建立 VSTO 增益集的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[開始著手程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)。  
   
 ##  <a name="UnderstandingAddIns"></a> 了解 VSTO 增益集  
  當您在 Visual Studio 中使用的 Office developer tools 建置 VSTO 增益集時，您會建立 Microsoft Office 應用程式所載入的 managed 程式碼組件。 載入此組件之後，VSTO 該增益集就能回應應用程式所引發的事件 (例如，當使用者按一下功能表項目時)。 VSTO 增益集還可呼叫物件模型以自動化並擴充應用程式，而且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何類別。  

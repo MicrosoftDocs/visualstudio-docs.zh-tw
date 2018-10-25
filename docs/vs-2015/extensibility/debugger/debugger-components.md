@@ -17,33 +17,33 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811863"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會實作為 VSPackage 和管理整個偵錯工作階段。 偵錯工作階段包含下列項目：  
   
--   **偵錯封裝：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
+- **偵錯封裝：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
   
--   **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，以[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具進行偵錯引擎的各種不同的管理。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，以[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具進行偵錯引擎的各種不同的管理。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   **處理序偵錯管理員 (PDM):** 的所有執行的執行個體的管理， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- **處理序偵錯管理員 (PDM):** 的所有執行的執行個體的管理， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   **偵錯引擎 (DE):** 須負責監視正在偵錯程式進行通訊的 SDM 和 PDM，執行中的程式狀態，並與其互動的運算式評估工具和符號提供者，以提供即時的分析程式的記憶體和變數的狀態。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。  
+- **偵錯引擎 (DE):** 須負責監視正在偵錯程式進行通訊的 SDM 和 PDM，執行中的程式狀態，並與其互動的運算式評估工具和符號提供者，以提供即時的分析程式的記憶體和變數的狀態。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。  
   
--   **運算式評估工具 (EE):** 提供支援以動態方式評估變數和使用者所提供的程式已停止在特定時間點時的運算式。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的語言。  
+- **運算式評估工具 (EE):** 提供支援以動態方式評估變數和使用者所提供的程式已停止在特定時間點時的運算式。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的語言。  
   
--   **符號提供者 (SP):** 也稱為符號處理常式，將對應程式的偵錯的符號至程式的執行個體以便可提供有意義的資訊 （例如來源-程式碼層級偵錯和運算式評估）。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（Common Language runtime [CLR] 符號與程式資料庫 [PDB] 符號檔案格式） 和具有自己專屬的方法，儲存偵錯資訊的第三方廠商所提供。  
+- **符號提供者 (SP):** 也稱為符號處理常式，將對應程式的偵錯的符號至程式的執行個體以便可提供有意義的資訊 （例如來源-程式碼層級偵錯和運算式評估）。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（Common Language runtime [CLR] 符號與程式資料庫 [PDB] 符號檔案格式） 和具有自己專屬的方法，儲存偵錯資訊的第三方廠商所提供。  
   
- 下圖顯示 Visual Studio 偵錯工具的這些項目之間的關聯性。  
+  下圖顯示 Visual Studio 偵錯工具的這些項目之間的關聯性。  
   
- ![偵錯元件概觀](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+  ![偵錯元件概觀](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>本節內容  
  [偵錯封裝](../../extensibility/debugger/debug-package.md)  

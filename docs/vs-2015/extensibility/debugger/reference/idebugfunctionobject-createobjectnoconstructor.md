@@ -17,12 +17,12 @@ ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8cbafdb86d5f444b404a3e039d985da0e2fb45d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0973497a7985902b5ace6211e62be1e660597e69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930189"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6c5bf8b782d34cb1375f4357cd33f6e47cc22988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908453"
 ---
 # <a name="implement-an-expression-evaluator"></a>實作運算式評估工具
 > [!IMPORTANT]
@@ -29,37 +29,37 @@ ms.locfileid: "39232503"
   
  EE 會使用運算式從字串的形式在德國和剖析或加以評估。 EE 會執行下列介面，以供 DE:  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE 呼叫繫結器提供的物件，由 DE，以取得此值的符號和物件。 EE 會取用 DE 所實作的下列介面：  
+  EE 呼叫繫結器提供的物件，由 DE，以取得此值的符號和物件。 EE 會取用 DE 所實作的下列介面：  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
--   [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
+- [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
   
--   [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
+- [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
   
--   [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
+- [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
   
--   [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
+- [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
   
--   [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
+- [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- 執行 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供機制，來描述運算式評估，例如本機變數、 基本類型或 Visual Studio 中，則會顯示在適當的資訊物件的結果**區域變數**，**監看式**，或**即時運算**視窗。  
+  執行 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供機制，來描述運算式評估，例如本機變數、 基本類型或 Visual Studio 中，則會顯示在適當的資訊物件的結果**區域變數**，**監看式**，或**即時運算**視窗。  
   
- 預存程序會提供給 EE DE 時它會要求資訊。 預存程序執行介面描述位址和欄位，例如下列介面和其衍生項目：  
+  預存程序會提供給 EE DE 時它會要求資訊。 預存程序執行介面描述位址和欄位，例如下列介面和其衍生項目：  
   
--   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- EE 會消耗所有的這些介面。  
+  EE 會消耗所有的這些介面。  
   
 ## <a name="in-this-section"></a>本節內容  
  [運算式評估工具的實作策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  

@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE |Microsoft 文件
+title: REFERENCE_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c30bb562784d9de0d9b44a2c3169b595bb4bd39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcbf8792cf2972c4b419b6309ba2f561b8308812
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906893"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
-指定的參考類型。  
+指定的參考型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,9 +50,9 @@ public enum enum_REFERENCE_TYPE {
  指定強式參考。 無法結合`REF_TYPE_WEAK`。  
   
 ## <a name="remarks"></a>備註  
- 做為`dwRefType`隸屬[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。  
+ 做`dwRefType`隸屬[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。  
   
- 做為參數來傳遞[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)方法。  
+ 做為參數傳遞[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

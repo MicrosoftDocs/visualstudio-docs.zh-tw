@@ -1,5 +1,5 @@
 ---
-title: PropertyGroup 元素 (MSBuild) | Microsoft Docs
+title: PropertyGroup 項目 (MSBuild) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc849f0b3f66c7e2bdd85ff20023c9755ce5c985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853346"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
-包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 元素。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個 `Property` 元素都必須是 `PropertyGroup` 元素的子系。  
+包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個 `Property` 項目都必須是 `PropertyGroup` 項目的子系。  
 
  \<Project>  
  \<PropertyGroup>  
@@ -43,7 +43,7 @@ ms.locfileid: "39152184"
 ```  
 
 ## <a name="attributes-and-elements"></a>屬性和元素  
- 以下各節說明屬性、子元素和父元素。  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -55,16 +55,16 @@ ms.locfileid: "39152184"
 
 |元素|描述|  
 |-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|選擇性元素。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 元素中可能有零或多個 *Property* 元素。|  
+|[Property](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根元素。|  
+| 元素 | 描述 |
+| - | - |
+| [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
 ## <a name="example"></a>範例  
- 下列程式碼範例示範如何根據條件設定屬性。 在此範例中，如果 `CompileConfig` 屬性的值為 `DEBUG`，則會在 `PropertyGroup` 元素內設定 `Optimization`、`Obfuscate` 及 `OutputPath` 屬性。  
+ 下列程式碼範例示範如何根據條件設定屬性。 在此範例中，如果 `CompileConfig` 屬性的值為 `DEBUG`，則會在 `PropertyGroup` 項目內設定 `Optimization`、`Obfuscate` 及 `OutputPath` 屬性。  
 
 ```xml  
 <PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  

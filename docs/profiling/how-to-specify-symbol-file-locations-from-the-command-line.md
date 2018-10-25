@@ -10,31 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941928"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：  
   
--   **/SymbolPath** 選項或 **_NT_SYMBOL_PATH** 環境變數中指定的路徑。  
+- **/SymbolPath** 選項或 **_NT_SYMBOL_PATH** 環境變數中指定的路徑。  
   
--   編譯元件所在的確切本機路徑。  
+- 編譯元件所在的確切本機路徑。  
   
--   包含程式碼剖析資料 (.*vsp* 或 .*vsps*) 檔案的目錄。  
+- 包含程式碼剖析資料 (.*vsp* 或 .*vsps*) 檔案的目錄。  
   
- Microsoft 在符號伺服器中為許多產品線提供 .*pdb* 檔。 如果您用於回報的電腦已連接網際網路，VSPerfReport 會連接到線上符號伺服器以自動查閱符號資訊，並且將檔案儲存至本機存放區。  
+  Microsoft 在符號伺服器中為許多產品線提供 .*pdb* 檔。 如果您用於回報的電腦已連接網際網路，VSPerfReport 會連接到線上符號伺服器以自動查閱符號資訊，並且將檔案儲存至本機存放區。  
   
- 您可以透過下列方式指定符號檔的位置以及 Microsoft 符號伺服器存放區：  
+  您可以透過下列方式指定符號檔的位置以及 Microsoft 符號伺服器存放區：  
   
--   設定 **_NT_SYMBOL_PATH** 環境變數。  
+- 設定 **_NT_SYMBOL_PATH** 環境變數。  
   
--   將 **/SymbolPath** 選項加入至 VSPerfReport 命令列。  
+- 將 **/SymbolPath** 選項加入至 VSPerfReport 命令列。  
   
- 您也可以同時使用這兩種方法。  
+  您也可以同時使用這兩種方法。  
   
 > [!NOTE]
 >  如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須遵循本主題稍後所述的方式來設定 VSPerfReport 使用位置和伺服器。  
@@ -43,13 +43,13 @@ ms.locfileid: "34845206"
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>設定使用 Windows 符號伺服器  
   
-1.  如有需要，請建立目錄以在本機儲存符號檔。  
+1. 如有需要，請建立目錄以在本機儲存符號檔。  
   
-2.  使用下列語法設定 **_NT_SYMBOL_PATH** 環境變數或 VSPerfReport /SymbolPath 選項：  
+2. 使用下列語法設定 **_NT_SYMBOL_PATH** 環境變數或 VSPerfReport /SymbolPath 選項：  
   
-     **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
-     其中 *LocalStore* 代表您建立的本機目錄路徑。  
+    其中 *LocalStore* 代表您建立的本機目錄路徑。  
   
 ## <a name="specify-component-symbol-files"></a>指定元件符號檔  
  針對要進行程式碼剖析之元件的 .*pdb* 檔，程式碼剖析工具會在其原始位置 (可能儲存於元件或包含程式碼剖析資料檔的資料夾中) 進行搜尋。 您可以加入一或多個路徑至 **_NT_SYMBOL_PATH** 或 **/SymbolPath** 選項，以指定其他要搜尋的位置。 請使用分號分隔路徑。  

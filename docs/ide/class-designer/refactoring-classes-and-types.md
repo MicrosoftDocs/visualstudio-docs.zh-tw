@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922519"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 
@@ -38,7 +38,7 @@ ms.locfileid: "33957429"
 ## <a name="common-tasks"></a>一般工作
 
 |工作|支援內容|
-|----------|------------------------|
+|----------| - |
 |**重構類別：** 您可以使用重構作業來將一個類別分割成部分類別，或是實作抽象基底類別。|-   [如何：將類別分割成部分類別](how-to-split-a-class-into-partial-classes.md)|
 |**使用介面：** 在類別設計工具中，您可以將介面連接至替介面方法提供程式碼的類別，以在類別圖表上實作介面。|-   [如何：實作介面](how-to-implement-an-interface.md)|
 |**重構類型、類型成員與參數：** 使用類別設計工具，即可重新命名類型、覆寫類型成員，或將其從某類型移至另一類型。 您也可以建立可為 Null 的類型。|-   [重新命名類型和類型成員](#rename-types-and-type-members)<br />-   [將類型成員從一個類型移到另一個類型](#move-type-members-from-one-type-to-another)<br />-   [如何：建立可為 Null 的類型](how-to-create-a-nullable-type.md)|
