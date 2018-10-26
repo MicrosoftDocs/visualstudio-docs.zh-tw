@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883350"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050179"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說： 發行的 Visual Studio 擴充功能，透過命令列
 
@@ -38,7 +38,7 @@ VsixPublisher.exe 是發佈至 Marketplace 的 Visual Studio 擴充功能的命�
 |裝載 （必要） | 若要發行裝載或做為 「 詳細資訊 URL 」 的連結可能是路徑。 |
 |publishManifest （必要） | 發行路徑資訊清單使用的檔案。 |
 |ignoreWarnings | 發行擴充功能時，忽略警告的清單。 發行延伸模組時，這些警告會顯示為命令列的訊息。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
-|personalAccesToken | 個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。 |
+|personalAccessToken | 個人存取權杖 (PAT)，用來驗證 「 發行者 」。 如果未提供，PAT 會取得從登入的使用者。 |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"

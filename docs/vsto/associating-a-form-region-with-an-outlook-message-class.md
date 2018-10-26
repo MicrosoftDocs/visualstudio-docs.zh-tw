@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891995"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050258"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域的表單區域關聯至每個項目的訊息類別。 例如，如果您想要的郵件項目底部附加表單區域，您可以將表單區域`IPM.Note`訊息類別。  
@@ -111,7 +111,7 @@ ms.locfileid: "49891995"
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [若要建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [表單的名稱和訊息類別的概觀](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Outlook 表單和項目如何一起運作](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [表單的名稱和訊息類別的概觀](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Outlook 表單和項目如何一起運作](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   
