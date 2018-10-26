@@ -17,27 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933179"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>在 VSTO 增益集專案中服務的逐步解說： 繫結至資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。  
   
- **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱 [](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  這個逐步解說將說明下列工作：  
   
--   新增<xref:Microsoft.Office.Tools.Word.RichTextContentControl>控制項在執行階段的文件。  
+- 新增<xref:Microsoft.Office.Tools.Word.RichTextContentControl>控制項在執行階段的文件。  
   
--   繫結<xref:Microsoft.Office.Tools.Word.RichTextContentControl>控制項從 web 服務的資料。  
+- 繫結<xref:Microsoft.Office.Tools.Word.RichTextContentControl>控制項從 web 服務的資料。  
   
--   回應 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 控制項的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 事件。  
+- 回應 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 控制項的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 事件。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -91,7 +91,7 @@ ms.locfileid: "38808653"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  
   
-3.  將下列方法加入 `ThisAddIn` 類別中。 這個方法會初始化建立，並將要求傳送至 web 服務所需的物件。  
+3.  將下列方法加入 `ThisAddIn` 類別。 這個方法會初始化建立，並將要求傳送至 web 服務所需的物件。  
   
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]  
