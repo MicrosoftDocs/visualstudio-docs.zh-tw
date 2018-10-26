@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671678"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050205"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>在 Visual Studio Tools for Office runtime 的組件
   當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 組件的參考。 適用於 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 擴充功能包含不同的組件。 如需 Office 擴充功能的詳細資訊，請參閱[Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
@@ -59,7 +59,7 @@ ms.locfileid: "35671678"
 |Microsoft.Office.Tools.Word.v9.0.dll|提供 Word 方案的主項目和主控制項。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.v9.0.dll|提供下列類型：<br /><br /> - [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90))類別，可提供資料繫結功能的主控制項中的文件層級自訂。<br />-其他屬於 Visual Studio Tools for Office runtime 基礎結構，並不打算直接從您的程式碼的類型。|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|提供下列類型：<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>屬性和<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>介面，您可以使用文件層級自訂中的快取資料物件。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。<br />-Visual Studio tools for Office 執行階段可能會擲回的例外狀況。<br />-其他屬於 Visual Studio Tools for Office runtime 基礎結構，並不打算直接從您的程式碼的類型。|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|提供 <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> 介面，您可以實作這個介面來執行額外的安裝步驟，做為 Office 方案之 ClickOnce 安裝程式的最後一個步驟。 如需詳細資訊，請參閱 <<c0> [ 進階 Office 方案部署](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02)。|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|提供 <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> 介面，您可以實作這個介面來執行額外的安裝步驟，做為 Office 方案之 ClickOnce 安裝程式的最後一個步驟。 如需詳細資訊，請參閱 <<c0> [ 進階 Office 方案部署](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100))。|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|提供下列類型：<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別，您可以使用來以程式設計方式將自訂組件附加至文件並存取文件中快取的資料。 如需詳細資訊，請參閱 <<c0> [ 使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。<br />-數個類別，代表的階層快取文件層級自訂中的資料。 如需詳細資訊，請參閱 <<c0> [ 存取在伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)。|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|提供下列類型：<br /><br /> -Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry 和 Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList 類別，用來建立使用者內含清單項目，以授與信任給 Office.NET Framework 3.5 為目標的解決方案。<br />-其他屬於 Visual Studio Tools for Office runtime 基礎結構，並不打算直接從您的程式碼的類型。|  
   
