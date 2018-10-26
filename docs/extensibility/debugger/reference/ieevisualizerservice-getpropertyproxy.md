@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy |Microsoft 文件
+title: IEEVisualizerService::GetPropertyProxy |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 862f4688cbdfd7ce8ff560633e63d66dfd60f4cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ffdbedb8aa03c60b3e9dab607275ed0d5db0d99b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906933"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
-這個方法會傳回屬性物件的 proxy。  
+這個方法傳回的屬性物件的 proxy。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,10 +49,10 @@ int GetPropertyProxy(
  [out]需要 proxy 中實作[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)傳送要求至這個方法作為其的支援類型視覺化檢視。  
+ [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)要求傳遞至這個方法為其支援一部分類型視覺化檢視。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

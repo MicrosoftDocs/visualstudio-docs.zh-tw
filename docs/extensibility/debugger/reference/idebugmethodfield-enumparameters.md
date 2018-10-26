@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters |Microsoft 文件
+title: IDebugMethodField::EnumParameters |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112b91c2155c28b37b2222a99a45893fcb56e98c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7405b451a29af71a2cad3ad3e4a36692737d8d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910455"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
-建立方法的參數的列舉值。  
+建立的列舉程式方法的參數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,17 +41,17 @@ int EnumParameters(
   
 #### <a name="parameters"></a>參數  
  `ppParams`  
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)表示方法的參數清單的物件; 否則傳回 null 值，如果沒有任何參數。  
+ [out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)方法表示的參數清單的物件; 如果沒有任何參數，否則會傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，會傳回 S_OK，或如果沒有任何參數，則傳回 S_FALSE。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的參數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)每個物件，以判斷正確的參數類型所代表的物件上的方法。  
+ 每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的參數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)判斷完全代表哪種參數物件的每個物件上的方法。  
   
- 參數包含其變數名稱和其型別。 類別方法的第一個參數通常是"this"指標。  
+ 參數會包含其變數名稱和型別。 在類別方法的第一個參數通常是 「 this 」 指標。  
   
- 如果只需要參數的類型時，呼叫[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)方法。  
+ 如果只需要一個參數的類型時，呼叫[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950482"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要確定程式碼不會與其設計相衝突，請在 Visual Studio 中以分層圖驗證程式碼。 這可協助您：  
   
--   尋找在您的程式碼與分層圖相依性之間的衝突。  
+- 尋找在您的程式碼與分層圖相依性之間的衝突。  
   
--   尋找可能會受到建議變更所影響的相依性。  
+- 尋找可能會受到建議變更所影響的相依性。  
   
-     例如，您可以編輯圖層圖表來顯示潛在的架構變更，然後驗證程式碼，以便查看受影響的相依性。  
+   例如，您可以編輯圖層圖表來顯示潛在的架構變更，然後驗證程式碼，以便查看受影響的相依性。  
   
--   將程式碼重構或移轉至不同設計。  
+- 將程式碼重構或移轉至不同設計。  
   
-     在您將程式碼移至不同的架構時，請尋找需要運作的程式碼或相依性。  
+   在您將程式碼移至不同的架構時，請尋找需要運作的程式碼或相依性。  
   
- **需求**  
+  **需求**  
   
--   Visual Studio  
+- Visual Studio  
   
--   在您的 Team Foundation Build 伺服器的 Visual Studio 使用 Team Foundation Build 自動驗證程式碼  
+- 在您的 Team Foundation Build 伺服器的 Visual Studio 使用 Team Foundation Build 自動驗證程式碼  
   
--   包含具有分層圖的模型專案的方案。 這張分層圖必須與您想要驗證的 Visual C# .NET 或 Visual Basic .NET 的成品連結。 請參閱[從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)。  
+- 包含具有分層圖的模型專案的方案。 這張分層圖必須與您想要驗證的 Visual C# .NET 或 Visual Basic .NET 的成品連結。 請參閱[從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)。  
   
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片： 設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片： 設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
 >  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
@@ -108,41 +108,41 @@ ms.locfileid: "49173715"
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>若要在命令提示字元驗證程式碼  
   
-1.  開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示字元。  
+1. 開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示字元。  
   
-2.  選擇下列其中一項：  
+2. 選擇下列其中一項：  
   
-    -   若要根據方案中的特定模型專案來驗證程式碼，請使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
+   - 若要根據方案中的特定模型專案來驗證程式碼，請使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - 或 -  
+     - 或 -  
   
-         瀏覽至包含模型專案 (.modelproj) 檔案和圖層圖表的資料夾，然後使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+       瀏覽至包含模型專案 (.modelproj) 檔案和圖層圖表的資料夾，然後使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   若要根據方案中的所有模型專案來驗證程式碼，請使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+   - 若要根據方案中的所有模型專案來驗證程式碼，請使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - 或 -  
+     - 或 -  
   
-         瀏覽至方案資料夾 (其中必須包含圖層圖表所在的模型專案)，然後使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+       瀏覽至方案資料夾 (其中必須包含圖層圖表所在的模型專案)，然後使用下列自訂屬性執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      發生的任何錯誤都將列出。 如需詳細資訊[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，請參閱 < [MSBuild](../msbuild/msbuild.md)並[MSBuild 工作](../msbuild/msbuild-task.md)。  
   
- 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
+   如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
   
 ###  <a name="ManageErrors"></a> 管理驗證錯誤  
  在開發過程中，您可以隱藏驗證期間已報告過的某些衝突。 例如，您可能會想要隱藏已經處理的錯誤，或是與特定情節無關的錯誤。 當您隱藏錯誤時，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中記錄工作項目。  
@@ -152,9 +152,9 @@ ms.locfileid: "49173715"
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>若要針對驗證錯誤建立工作項目  
   
--   在 **錯誤清單**視窗中，以滑鼠右鍵按一下錯誤，指向**建立工作項目**，然後按一下您想要建立的工作項目類型。  
+- 在 **錯誤清單**視窗中，以滑鼠右鍵按一下錯誤，指向**建立工作項目**，然後按一下您想要建立的工作項目類型。  
   
- 使用這些工作來管理中的驗證錯誤**錯誤清單**視窗：  
+  使用這些工作來管理中的驗證錯誤**錯誤清單**視窗：  
   
 |**若要**|**請遵循下列步驟**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ ms.locfileid: "49173715"
   
  \-或-  
   
-1.  在 **方案總管**，以滑鼠右鍵按一下模型專案包含圖層圖表或圖表，然後按一下**屬性**。  
+1. 在 **方案總管**，以滑鼠右鍵按一下模型專案包含圖層圖表或圖表，然後按一下**屬性**。  
   
-2.  在 **屬性**視窗中，將模型專案的**驗證架構**屬性設**True**。  
+2. 在 **屬性**視窗中，將模型專案的**驗證架構**屬性設**True**。  
   
-     這會將模型專案納入驗證程序中。  
+    這會將模型專案納入驗證程序中。  
   
-3.  在 [**方案總管] 中**，按一下您想要用於驗證的圖層圖表 (.layerdiagram) 檔案。  
+3. 在 [**方案總管] 中**，按一下您想要用於驗證的圖層圖表 (.layerdiagram) 檔案。  
   
-4.  中**屬性** 視窗中，請確定圖表**建置動作**屬性設定為**Validate**。  
+4. 中**屬性** 視窗中，請確定圖表**建置動作**屬性設定為**Validate**。  
   
-     這會將圖層圖表納入驗證程序中。  
+    這會將圖層圖表納入驗證程序中。  
   
- 若要管理 [錯誤清單] 視窗中的錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
+   若要管理 [錯誤清單] 視窗中的錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>在 Team Foundation Build 執行期間自動驗證程式碼  
   
-1.  在  **Team Explorer**，按兩下組建定義之後，，然後按一下**程序**。  
+1. 在  **Team Explorer**，按兩下組建定義之後，，然後按一下**程序**。  
   
-2.  底下**建置流程參數**，展開**編譯**，然後輸入下列**MSBuild 引數**參數：  
+2. 底下**建置流程參數**，展開**編譯**，然後輸入下列**MSBuild 引數**參數：  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的詳細資訊，請參閱：  
+   如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的詳細資訊，請參閱：  
   
 -   [建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ ms.locfileid: "49173715"
 ##  <a name="UnderstandingValidationErrors"></a> 了解並解決圖層驗證錯誤  
  當您針對分層圖驗證程式碼時，如果程式碼設計發生衝突便會產生驗證錯誤。 例如，下列條件可能造成圖層驗證發生錯誤：  
   
--   成品指派給錯誤的圖層。 在此情況下，請移動成品。  
+- 成品指派給錯誤的圖層。 在此情況下，請移動成品。  
   
--   類別之類的成品以與架構發生衝突的方式使用另一個類別。 在此情況下，請重構程式碼以移除相依性。  
+- 類別之類的成品以與架構發生衝突的方式使用另一個類別。 在此情況下，請重構程式碼以移除相依性。  
   
- 若要解決這些錯誤，請更新程式碼直到驗證時不再出現錯誤為止。 您可以透過互動方式執行這項工作。  
+  若要解決這些錯誤，請更新程式碼直到驗證時不再出現錯誤為止。 您可以透過互動方式執行這項工作。  
   
- 以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。  
+  以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。  
   
 |**語法**|**描述**|  
 |----------------|---------------------|  

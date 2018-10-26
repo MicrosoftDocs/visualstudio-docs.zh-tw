@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942981"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -35,25 +35,25 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 此架構提供下列優點：
 
--   藉由新增其他測試代理程式至測試控制器來產生更多負載的能力。
+- 藉由新增其他測試代理程式至測試控制器來產生更多負載的能力。
 
--   在同一部電腦或不同電腦上安裝用戶端、測試控制器和測試代理程式軟體的彈性。 例如: 
+- 在同一部電腦或不同電腦上安裝用戶端、測試控制器和測試代理程式軟體的彈性。 例如: 
 
-     **本機組態：**
+   **本機組態：**
 
-    -   電腦 1： Visual Studio、控制器、代理程式。
+  - 電腦 1： Visual Studio、控制器、代理程式。
 
-     ![使用控制器和代理程式的本機電腦](./media/load-test-configa.png)
+    ![使用控制器和代理程式的本機電腦](./media/load-test-configa.png)
 
-     **一般遠端組態：**
+    **一般遠端組態：**
 
-    -   電腦 1 和 2：Visual Studio (多位測試人員可以使用同一個控制器)。
+  - 電腦 1 和 2：Visual Studio (多位測試人員可以使用同一個控制器)。
 
-    -   電腦 3：控制器 (也可以安裝代理程式)。
+  - 電腦 3：控制器 (也可以安裝代理程式)。
 
-    -   電腦 4-n：所有與電腦 3 的控制器相關聯的代理程式。
+  - 電腦 4-n：所有與電腦 3 的控制器相關聯的代理程式。
 
-     ![使用控制器和代理程式的遠端電腦](./media/load-test-configb.png)
+    ![使用控制器和代理程式的遠端電腦](./media/load-test-configb.png)
 
 雖然測試控制器通常能管理數個測試代理程式，但是一個代理程式只能與單一控制器相關聯。 每個測試代理程式可由一組開發人員共用。 這個架構能讓您輕鬆地增加代理程式的數量，進而產生更大的負載。
 

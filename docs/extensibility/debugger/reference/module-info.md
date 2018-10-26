@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO |Microsoft 文件
+title: MODULE_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897000"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 描述特定模組 （DLL、 EXE 或組件）。  
@@ -75,33 +75,33 @@ public struct MODULE_INFO {
  模組版本。  
   
  m_bstrDebugMessage  
- 是選擇性的訊息，模組的相關，例如 「 無法載入符號。 」  
+ 是選擇性的訊息相關模組，比方說，「 無法載入符號。 」  
   
  m_addrLoadAddress  
  模組載入地址。  
   
  m_addrPreferredLoadAddress  
- 慣用的載入模組的位址。  
+ 模組的慣用的載入位址。  
   
  m_dwSize  
  模組大小。  
   
  m_dwLoadOrder  
- 模組載入順序。  
+ 模組的載入順序。  
   
  m_TimeStamp  
- 符號檔案的上次修改時間。  
+ 符號檔案上次修改時間。  
   
  m_bstrUrlSymbolLocation  
- 符號檔的位置 (例如，"。\\") 指定模組中。 用來尋找模組符號的開始位置。  
+ 符號檔的位置 (例如，"。\\") 指定模組中。 用做為起始的位置來尋找符號的模組。  
   
  m_dwModuleFlags  
- 從旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉。  
+ 從旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉型別。  
   
 ## <a name="remarks"></a>備註  
  此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填滿其中的方法。  
   
- 此結構會對應到每個模組中所列**模組**視窗。  
+ 此結構會對應至每個模組中所列**模組**視窗。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

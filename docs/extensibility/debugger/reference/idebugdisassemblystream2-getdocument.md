@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument |Microsoft 文件
+title: IDebugDisassemblyStream2::GetDocument |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8585a777ace0d49749570d4efcbd78f133fb0edd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b0d697a7596f7582a69466193534d4f8908f2fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822198"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
-取得與此輸入資料流相關聯的來源文件。  
+取得與這個輸入資料流相關聯的來源文件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,13 +46,13 @@ int GetDocument(
  [in]文件 URL。  
   
  `ppDocument`  
- [out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，代表文件。  
+ [out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示文件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 有未儲存的實際檔案中的文字文件的偵錯引擎實作這個方法。  
+ 實作這個方法是由已不會儲存實際檔案中的文字文件的偵錯引擎。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

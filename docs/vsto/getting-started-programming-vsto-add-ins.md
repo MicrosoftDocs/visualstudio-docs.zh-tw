@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858884"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>開始進行程式設計 VSTO 增益集
   您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集相較於其他類型 Office 方案的如何使用 Visual Studio，您可以建立，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -60,40 +60,40 @@ ms.locfileid: "35671155"
 ## <a name="customize-the-user-interface-of-applications"></a>自訂應用程式的使用者介面  
  有數個不同的方式，若要使用 VSTO 增益集自訂主應用程式的 UI:  
   
--   對於 Excel 和 Word，您可以將 Managed 控制項加入文件。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+- 對於 Excel 和 Word，您可以將 Managed 控制項加入文件。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
--   如果應用程式支援的話，您可以自訂功能區。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。  
+- 如果應用程式支援的話，您可以自訂功能區。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。  
   
--   如果應用程式支援的話，您可以建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
+- 如果應用程式支援的話，您可以建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   針對 Outlook，您可以建立自訂表單區域。 如需詳細資訊，請參閱 <<c0> [ 建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+- 針對 Outlook，您可以建立自訂表單區域。 如需詳細資訊，請參閱 <<c0> [ 建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
--   對於所有 Microsoft Office 應用程式，您可以在 VSTO 增益集中顯示 Windows Form。  
+- 對於所有 Microsoft Office 應用程式，您可以在 VSTO 增益集中顯示 Windows Form。  
   
- 如需如何自訂 UI 的 Microsoft Office 應用程式的詳細資訊，請參閱[Office UI 自訂](../vsto/office-ui-customization.md)。  
+  如需如何自訂 UI 的 Microsoft Office 應用程式的詳細資訊，請參閱[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
 ## <a name="next-steps"></a>後續步驟  
  若要了解如何建立 VSTO 增益集，請參閱下面的逐步解說：  
   
--   [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- 這些逐步解說會為您介紹 Visual Studio 中的 Office Developer Tools，以及 VSTO 增益集的程式撰寫模型。  
+  這些逐步解說會為您介紹 Visual Studio 中的 Office Developer Tools，以及 VSTO 增益集的程式撰寫模型。  
   
- 如需逐步引導您完成一些常見工作，在 Office 專案中的主題，請參閱[在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)。  
+  如需逐步引導您完成一些常見工作，在 Office 專案中的主題，請參閱[在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
   
   

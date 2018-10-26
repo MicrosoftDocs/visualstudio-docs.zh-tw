@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879832"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -38,7 +38,7 @@ ms.locfileid: "39382366"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-----------------------|
 |**管理負載測試的計數器集合：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯 [計數器集合]。 對應計數器集合包含選擇您要從中收集效能資料的電腦集合，並指派一組計數器集合收集每一部個別電腦。 您可以在 [負載測試編輯器] 中管理計數器。|-   [如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**將計數器集合新增至負載測試：** 當您使用 [新增負載測試精靈] 建立負載測試時，可以新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 當您建立負載測試之後，您可以使用 [負載測試編輯器] 將新的計數器加入至現有的計數器集合。|-   [如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：新增自訂計數器集合](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**為負載測試指定使用計數器的臨界值規則：** 臨界值規則是設定在單獨之效能計數器上的規則，用來監視負載測試期間的系統資源使用狀況。 計數器集合定義包含許多關鍵效能計數器之預先定義的臨界值規則。 負載測試中的臨界值規則會將效能計數器值與常數值或其他效能計數器值做比較。|-   [如何：新增臨界值規則](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ ms.locfileid: "39382366"
 以下是一些取樣率的方針。
 
 |負載測試持續期間|建議取樣率|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 小時|5 秒|
 |1 - 8 小時|15 秒|
 |8 - 24 小時|30 秒|

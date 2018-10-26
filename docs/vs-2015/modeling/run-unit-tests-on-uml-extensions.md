@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873665"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 歸納起來：  
   
--   [設定 VSIX 擴充功能的單元測試](#Host)  
+- [設定 VSIX 擴充功能的單元測試](#Host)  
   
-     使用 VS IDE 主機介面卡執行測試。 在每種測試方法的前面加上 `[HostType("VS IDE")]`。 當您執行測試時，這個主機介面卡會啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
+   使用 VS IDE 主機介面卡執行測試。 在每種測試方法的前面加上 `[HostType("VS IDE")]`。 當您執行測試時，這個主機介面卡會啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
--   [存取 DTE 和 ModelStore](#DTE)  
+- [存取 DTE 和 ModelStore](#DTE)  
   
-     您通常需要開啟模型和其圖表，並在測試初始化時存取 `IModelStore` 。  
+   您通常需要開啟模型和其圖表，並在測試初始化時存取 `IModelStore` 。  
   
--   [開啟模型圖](#Opening)  
+- [開啟模型圖](#Opening)  
   
-     `EnvDTE.ProjectItem` 可以轉換為 `IDiagramContext`，反之亦然。  
+   `EnvDTE.ProjectItem` 可以轉換為 `IDiagramContext`，反之亦然。  
   
--   [在 UI 執行緒中執行變更](#UiThread)  
+- [在 UI 執行緒中執行變更](#UiThread)  
   
-     變更模型存放區的測試必須在 UI 執行緒中執行。 您可以針對這個目的使用 `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` 。  
+   變更模型存放區的測試必須在 UI 執行緒中執行。 您可以針對這個目的使用 `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` 。  
   
--   [測試命令、 手勢和其他 MEF 元件](#MEF)  
+- [測試命令、 手勢和其他 MEF 元件](#MEF)  
   
-     若要測試 MEF 元件，您必須將其匯入的屬性明確地連接至值。  
+   若要測試 MEF 元件，您必須將其匯入的屬性明確地連接至值。  
   
- 下列各節會詳細說明這些重點。  
+  下列各節會詳細說明這些重點。  
   
- 您可以在程式碼範例庫的 [UML - 使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)中找到進行過單元測試的 UML 擴充功能範例。  
+  您可以在程式碼範例庫的 [UML - 使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)中找到進行過單元測試的 UML 擴充功能範例。  
   
 ## <a name="requirements"></a>需求  
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  

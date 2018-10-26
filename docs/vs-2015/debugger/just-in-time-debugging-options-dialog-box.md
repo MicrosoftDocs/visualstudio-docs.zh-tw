@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872924"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ ms.locfileid: "49207489"
   
  您可以為這些程式類型啟用 Just-In-Time 偵錯：  
   
--   Managed  
+- Managed  
   
--   原生  
+- 原生  
   
--   指令碼  
+- 指令碼  
   
- Just-In-Time 偵錯一項技術，可讓您對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部啟動的程式進行偵錯。 您可以執行在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 環境外的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所建立的程式。 如果您已啟用 Just-In-Time 偵錯，發生損毀時將會顯示對話方塊，詢問您是否要進行偵錯。  
+  Just-In-Time 偵錯一項技術，可讓您對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部啟動的程式進行偵錯。 您可以執行在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 環境外的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所建立的程式。 如果您已啟用 Just-In-Time 偵錯，發生損毀時將會顯示對話方塊，詢問您是否要進行偵錯。  
   
 ## <a name="associated-warnings"></a>相關聯的警告  
  當您瀏覽此頁面**選項** 對話方塊中，您可能會看到一則警告訊息就像這樣：  

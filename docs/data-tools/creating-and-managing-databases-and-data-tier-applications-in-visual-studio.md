@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942526"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>資料庫專案和 Visual Studio 中的資料層應用程式
 
@@ -30,11 +30,11 @@ ms.locfileid: "39176098"
 
 ## <a name="common-high-level-tasks"></a>常見的高層級工作
 
-|高層級的工作|支援內容|
-|----------------------|------------------------|
-|**開始的資料層應用程式的開發工作：** DAC 是一種所引進的新概念[!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)]，其中包含定義[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫，並支援執行個體所使用的用戶端-伺服器或 3 層式架構的物件應用程式。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用 Visual Studio 建立 DAC 專案，建置 DAC 封裝檔案，並將該 DAC 封裝檔案傳送至部署的執行個體上的資料庫管理員[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫引擎。|-   [建立和管理資料層應用程式](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**執行反覆的資料庫開發：** 如果您是開發人員或測試人員，您簽出專案的組件，並加以隔離式的開發環境中更新。 透過這種環境，您可以測試您的變更，而不會影響小組的其他成員。 完成變更之後，您會檢查回版本控制，讓其他小組成員可以取得您的變更和建構並將其部署至測試伺服器的檔案。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [TRANSACT-SQL 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**建立原型，正在驗證測試結果，並修改資料庫指令碼和物件：** 您可以使用[!INCLUDE[tsql](../data-tools/includes/tsql_md.md)]執行任一這些常見工作的編輯器。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| 高層級的工作 | 支援內容 |
+| - | - |
+| **開始的資料層應用程式的開發工作：** DAC 是一種所引進的新概念[!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)]，其中包含定義[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫，並支援執行個體所使用的用戶端-伺服器或 3 層式架構的物件應用程式。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用 Visual Studio 建立 DAC 專案，建置 DAC 封裝檔案，並將該 DAC 封裝檔案傳送至部署的執行個體上的資料庫管理員[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫引擎。 | -   [建立和管理資料層應用程式](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **執行反覆的資料庫開發：** 如果您是開發人員或測試人員，您簽出專案的組件，並加以隔離式的開發環境中更新。 透過這種環境，您可以測試您的變更，而不會影響小組的其他成員。 完成變更之後，您會檢查回版本控制，讓其他小組成員可以取得您的變更和建構並將其部署至測試伺服器的檔案。 | -   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [TRANSACT-SQL 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **建立原型，正在驗證測試結果，並修改資料庫指令碼和物件：** 您可以使用[!INCLUDE[tsql](../data-tools/includes/tsql_md.md)]執行任一這些常見工作的編輯器。 | -   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>另請參閱
 

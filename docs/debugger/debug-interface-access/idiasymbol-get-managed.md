@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_managed |Microsoft 文件'
+title: 'Idiasymbol:: Get_managed |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23f59a4506ccf369b60bf45cf9320ff407b129c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 92e833bbb37e43d61911b18f27a1f1cf5a8e5b0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823238"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 擷取指定的符號是否參考 managed 程式碼的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_managed (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果符號參考 managed 程式碼; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`符號是指 managed 程式碼; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

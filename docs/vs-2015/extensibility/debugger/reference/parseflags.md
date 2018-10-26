@@ -17,12 +17,12 @@ ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68eaa04da057d514a833b86efd1fd08ea807fe6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27f0c32c8a432a6aaa0ef83b06d6b424486ce29b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898352"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

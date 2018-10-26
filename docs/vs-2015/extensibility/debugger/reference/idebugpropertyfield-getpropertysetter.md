@@ -17,12 +17,12 @@ ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b8b85e014df567f37a43aae65fbb5b296b9eca5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df1da987761a9e11ea774e673500d1670cb4ad50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910721"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913445"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：建立基本 3D 模型
 
@@ -42,37 +42,37 @@ ms.locfileid: "37924326"
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>建立房屋的簡化 3D 模型
 
-1.  建立要使用的 3D 模型。 如需有關如何將模型加到專案的詳細資訊，請參閱[模型編輯器](../designers/model-editor.md)中的＜使用者入門＞一節。
+1. 建立要使用的 3D 模型。 如需有關如何將模型加到專案的詳細資訊，請參閱[模型編輯器](../designers/model-editor.md)中的＜使用者入門＞一節。
 
-2.  將立方體加入場景。 在 [工具箱] 視窗的 [圖形] 下，選取 [立方體]，然後將其移至設計介面。
+2. 將立方體加入場景。 在 [工具箱] 視窗的 [圖形] 下，選取 [立方體]，然後將其移至設計介面。
 
-3.  切換至表面選取模式。 在 [模型編輯器] 工具列上，選擇 [選取表面]。
+3. 切換至表面選取模式。 在 [模型編輯器] 工具列上，選擇 [選取表面]。
 
-4.  細分立方體頂端。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體頂端以選取最上層表面。 在 [模型編輯器] 工具列上，選擇 [細分表面]。 這樣會在立方體頂端加入新的頂點，分割成大小均一的四個部分。
+4. 細分立方體頂端。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體頂端以選取最上層表面。 在 [模型編輯器] 工具列上，選擇 [細分表面]。 這樣會在立方體頂端加入新的頂點，分割成大小均一的四個部分。
 
-     ![細分立方體的頂端](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![細分立方體的頂端](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  使立方體的兩個相鄰面立體化，例如立方體的前面與右邊。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體的某一面。 按住 **Ctrl** 鍵，在立方體選擇和您最先選取的面相鄰的另一面，然後在 [模型編輯器] 工具列上，選擇 [使表面立體化]。
+5. 使立方體的兩個相鄰面立體化，例如立方體的前面與右邊。 在表面選取模式中，選擇立方體一次，啟動選擇功能，然後選擇立方體的某一面。 按住 **Ctrl** 鍵，在立方體選擇和您最先選取的面相鄰的另一面，然後在 [模型編輯器] 工具列上，選擇 [使表面立體化]。
 
-     ![將立方體的側邊立體化](../designers/media/gfx_model_demo_house_extrude.png)
+    ![將立方體的側邊立體化](../designers/media/gfx_model_demo_house_extrude.png)
 
-6.  擴充立體化的其中一面。 選擇剛才已立體化的其中一面，然後在 [模型編輯器] 工具列上，選擇 [平移] 工具，並向相同的立體化方向移動平移操作工具。
+6. 擴充立體化的其中一面。 選擇剛才已立體化的其中一面，然後在 [模型編輯器] 工具列上，選擇 [平移] 工具，並向相同的立體化方向移動平移操作工具。
 
-     ![進一步將立方體的其中一邊立體化。](../designers/media/gfx_model_demo_house_extend.png)
+    ![進一步將立方體的其中一邊立體化。](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  將模型分成三角形。 在 [模型編輯器] 工具列上，選擇 [進階] > [工具] > [分成三角形]。
+7. 將模型分成三角形。 在 [模型編輯器] 工具列上，選擇 [進階] > [工具] > [分成三角形]。
 
-8.  建立房屋的屋頂。 在 [模型編輯器] 工具列上，選擇 [選取邊緣]，然後選取立方體來加以啟動，切換至邊緣選取模式。 按住 **Ctrl** 鍵，並選取如下所示的邊緣︰
+8. 建立房屋的屋頂。 在 [模型編輯器] 工具列上，選擇 [選取邊緣]，然後選取立方體來加以啟動，切換至邊緣選取模式。 按住 **Ctrl** 鍵，並選取如下所示的邊緣︰
 
-     ![即將成為屋頂頂端的邊緣](../designers/media/gfx_model_demo_house_edges.png)
+    ![即將成為屋頂頂端的邊緣](../designers/media/gfx_model_demo_house_edges.png)
 
-     選取邊緣後，在 [模型編輯器] 工具列上，選擇 [平移] 工具，然後向上移動平移操作工具來建立屋脊。
+    選取邊緣後，在 [模型編輯器] 工具列上，選擇 [平移] 工具，然後向上移動平移操作工具來建立屋脊。
 
- 完成簡化的房屋模型。 以下顯示套用平面網底的最終模型︰
+   完成簡化的房屋模型。 以下顯示套用平面網底的最終模型︰
 
- ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
+   ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
 
- 下一步可以將著色器套用至這個 3D 模型。 如需資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步可以將著色器套用至這個 3D 模型。 如需資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -17,12 +17,12 @@ ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 833dfbfe62a7e8b669460d332ade43f670a4a13e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80749be54899d288b7e4e49e5acf98dccaee9f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923390"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

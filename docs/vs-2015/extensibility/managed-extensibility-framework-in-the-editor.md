@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877578"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49215666"
 ### <a name="component-parts-and-composition-containers"></a>元件組件和組合容器  
  將元件組件是類別或類別的成員可以執行其中一個 （或兩者） 下列：  
   
--   使用另一個元件  
+- 使用另一個元件  
   
--   可供另一個元件  
+- 可供另一個元件  
   
- 比方說，假設購物應用程式有一種順序項目元件，取決於倉儲庫存元件所提供的產品可用性資料。 MEF 而言，可以清查一部分*匯出*產品可用性的資料，而且訂單項目組件可以*匯入*資料。 訂單項目和清查部分不需要知道彼此;*組合容器*（由主應用程式提供） 會負責維護一組匯出，並解決匯出並匯入。  
+  比方說，假設購物應用程式有一種順序項目元件，取決於倉儲庫存元件所提供的產品可用性資料。 MEF 而言，可以清查一部分*匯出*產品可用性的資料，而且訂單項目組件可以*匯入*資料。 訂單項目和清查部分不需要知道彼此;*組合容器*（由主應用程式提供） 會負責維護一組匯出，並解決匯出並匯入。  
   
- 組合容器， <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>，通常由主機所擁有。 組合容器會維護*目錄*匯出的元件組件。  
+  組合容器， <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>，通常由主機所擁有。 組合容器會維護*目錄*匯出的元件組件。  
   
 ### <a name="exporting-and-importing-component-parts"></a>匯出和匯入元件組件  
  您可以匯出任何功能，，只要它會實作為公用類別或公用類別的成員 （屬性或方法）。 您沒有衍生您的元件組件從<xref:System.ComponentModel.Composition.Primitives.ComposablePart>。 相反地，您必須新增<xref:System.ComponentModel.Composition.ExportAttribute>屬性至類別或您想要匯出的類別成員。 這個屬性會指定*合約*的另一個元件組件可以匯入您的功能。  

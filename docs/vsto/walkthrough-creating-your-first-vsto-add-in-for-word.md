@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940966"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說： 建立 Word 的第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -32,15 +32,15 @@ ms.locfileid: "38808894"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Word VSTO 增益集專案。  
+- 建立 Word VSTO 增益集專案。  
   
--   撰寫可使用 Word 物件模型的程式碼，儲存文件時便可加入文字。  
+- 撰寫可使用 Word 物件模型的程式碼，儲存文件時便可加入文字。  
   
--   建置和執行專案來進行測試。  
+- 建置和執行專案來進行測試。  
   
--   清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
+- 清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -78,25 +78,25 @@ ms.locfileid: "38808894"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>將文字段落加入儲存的文件  
   
-1.  在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 新的程式碼會定義 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式，該事件是在儲存文件時所引發的。  
+1. 在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 新的程式碼會定義 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式，該事件是在儲存文件時所引發的。  
   
-     當使用者儲存文件時，事件處理常式會將新文字加入此文件開頭。  
+    當使用者儲存文件時，事件處理常式會將新文字加入此文件開頭。  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  此程式碼會使用索引值 1 來存取 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一個段落。 雖然 Visual Basic 和 Visual C# 都是使用以 0 為起始的陣列，但是在 Word 物件模型中，大多數集合的陣列界限下限都是 1。 如需詳細資訊，請參閱 <<c0> [ 撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。  
+   > [!NOTE]  
+   >  此程式碼會使用索引值 1 來存取 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一個段落。 雖然 Visual Basic 和 Visual C# 都是使用以 0 為起始的陣列，但是在 Word 物件模型中，大多數集合的陣列界限下限都是 1。 如需詳細資訊，請參閱 <<c0> [ 撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。  
   
-2.  如果使用的是 C#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這段程式碼是用來連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件。  
+2. 如果使用的是 C#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這段程式碼是用來連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件。  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- 若要在儲存文件時修改文件，前面的程式碼範例可以使用下列物件：  
+   若要在儲存文件時修改文件，前面的程式碼範例可以使用下列物件：  
   
 -   `ThisAddIn` 類別的 `Application` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Word.Application> 物件，此物件代表 Word 目前的執行個體。  
   
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式的 `Doc` 參數。 `Doc` 參數是 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件代表儲存的文件。 如需詳細資訊，請參閱 < [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
+-   `Doc` 事件之事件處理常式的 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 參數。 `Doc` 參數是 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件代表儲存的文件。 如需詳細資訊，請參閱 < [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
   
 ## <a name="test-the-project"></a>測試專案  
   

@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE |Microsoft 文件
+title: BP_COND_STYLE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939770"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-指定的中斷點條件樣式暫止和繫結中斷點。  
+指定中斷點條件樣式暫止和繫結中斷點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,10 +49,10 @@ public enum enum_BP_COND_STYLE {
  當到達中斷點的位置時，就會引發中斷點。 沒有指定中斷點條件。  
   
  BP_COND_WHEN_TRUE  
- 引發中斷點的條件運算式與中斷點相關聯的時評估為僅`true`。  
+ 條件運算式與中斷點相關聯的時評估為僅，就會引發中斷點`true`。  
   
  BP_COND_WHEN_CHANGED  
- 引發中斷點與中斷點相關聯的條件運算式的值時，才已從先前的評估。  
+ 引發中斷點與中斷點相關聯的條件式運算式的值時，才已經從其先前的評估。  
   
 ## <a name="remarks"></a>備註  
  用於`styleCondition`隸屬[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構。  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873778"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說：建立具有隱私權提示的自訂啟動載入器
 您可以設定為自動更新時使用較新的檔案版本和組件版本的組件，就可以使用 ClickOnce 應用程式。 若要確定您的客戶同意加入這項行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，它不會安裝。  
@@ -43,23 +43,23 @@ ms.locfileid: "39152496"
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要建立顯示同意對話方塊  
   
-1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-2.  在 **新的專案** 對話方塊中，按一下**Windows**，然後按一下  **WindowsFormsApplication**。  
+2. 在 **新的專案** 對話方塊中，按一下**Windows**，然後按一下  **WindowsFormsApplication**。  
   
-3.  針對**名稱**，型別**ConsentDialog**，然後按一下**確定**。  
+3. 針對**名稱**，型別**ConsentDialog**，然後按一下**確定**。  
   
-4.  在設計師中，按一下 [表單]。  
+4. 在設計師中，按一下 [表單]。  
   
-5.  在 **屬性**視窗中，變更**文字**屬性設**更新同意對話方塊**。  
+5. 在 **屬性**視窗中，變更**文字**屬性設**更新同意對話方塊**。  
   
-6.  中**工具箱**，展開**所有的 Windows Form**，然後將拖曳**標籤**控制項加入表單。  
+6. 中**工具箱**，展開**所有的 Windows Form**，然後將拖曳**標籤**控制項加入表單。  
   
-7.  在設計工具中，按一下 label 控制項。  
+7. 在設計工具中，按一下 label 控制項。  
   
-8.  在 **屬性**視窗中，變更**文字**下的屬性**外觀**如下：  
+8. 在 **屬性**視窗中，變更**文字**下的屬性**外觀**如下：  
   
-     您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下 「 我同意 」，您可以授權檢查，並自動從網際網路安裝更新的應用程式。  
+    您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下 「 我同意 」，您可以授權檢查，並自動從網際網路安裝更新的應用程式。  
   
 9. 在 **工具箱**，拖曳**核取方塊**中間的表單控制項。  
   
@@ -112,28 +112,28 @@ ms.locfileid: "39152496"
   
      Visual Basic 開發人員只：  
   
-    1.  在 **方案總管**，按一下**ConsentDialog**。  
+    1. 在 **方案總管**，按一下**ConsentDialog**。  
   
-    2.  在上**專案**功能表上，按一下**加入模組**，然後按一下 **新增**。  
+    2. 在上**專案**功能表上，按一下**加入模組**，然後按一下 **新增**。  
   
-    3.  在  *Module1.vb*程式碼檔案，新增下列程式碼。  
+    3. 在  *Module1.vb*程式碼檔案，新增下列程式碼。  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  在上**專案** 功能表中，按一下**ConsentDialog 屬性**，然後按一下**應用程式** 索引標籤。  
+    4. 在上**專案** 功能表中，按一下**ConsentDialog 屬性**，然後按一下**應用程式** 索引標籤。  
   
-    5.  取消核取**啟用應用程式架構**。  
+    5. 取消核取**啟用應用程式架構**。  
   
-    6.  在 **啟始物件**下拉式選單中，選取**Module1**。  
+    6. 在 **啟始物件**下拉式選單中，選取**Module1**。  
   
-        > [!NOTE]
-        >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
+       > [!NOTE]
+       >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
-     適用於 Visual C# 只有開發人員：  
+       適用於 Visual C# 只有開發人員：  
   
-     開啟*Program.cs*程式碼檔案，並新增下列程式碼。  
+       開啟*Program.cs*程式碼檔案，並新增下列程式碼。  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. 在 **建置**功能表上，按一下**和 BuildSolution**。  
   

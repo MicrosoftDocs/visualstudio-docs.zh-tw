@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925901"
 ---
 # <a name="command-implementation"></a>命令實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 若要在 VSPackage 中實作的命令，您必須執行下列工作：  
   
-1.  在.vsct 檔案中，設定命令群組，並接著將命令加入至它。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
+1. 在.vsct 檔案中，設定命令群組，並接著將命令加入至它。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
   
-2.  向 Visual Studio 中的命令。  
+2. 向 Visual Studio 中的命令。  
   
-3.  實作命令。  
+3. 實作命令。  
   
- 下列各節說明如何註冊及實作命令。  
+   下列各節說明如何註冊及實作命令。  
   
 ## <a name="registering-commands-with-visual-studio"></a>向 Visual Studio 中的命令  
  如果您的命令就會出現在功能表上，您必須新增<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>到您的 VSPackage，並使用做為值的功能表名稱或其資源識別碼。  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>查詢狀態方法  
  如果您要實作其中一個<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>方法中，檢查的命令集命令所屬的 GUID 和命令的識別碼。 請遵循這些方針：  
   
--   如果無法辨識的 GUID，這兩種方法的實作必須傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+- 如果無法辨識的 GUID，這兩種方法的實作必須傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
--   如果這兩種方法的實作可辨識的 GUID，但尚未實際實作命令，則這個方法應傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+- 如果這兩種方法的實作可辨識的 GUID，但尚未實際實作命令，則這個方法應傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
--   如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列旗標：  
+- 如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列旗標：  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
   
--   如果命令已定義在.vsct 檔案中以`TextChanges`旗標，請設定下列參數：  
+- 如果命令已定義在.vsct 檔案中以`TextChanges`旗標，請設定下列參數：  
   
-    -   設定`rgwz`項目`pCmdText`新命令文字的參數。  
+  -   設定`rgwz`項目`pCmdText`新命令文字的參數。  
   
-    -   設定`cwActual`項目`pCmdText`命令字串的大小參數。  
+  -   設定`cwActual`項目`pCmdText`命令字串的大小參數。  
   
- 也請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。  
+  也請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。  
   
- 若要指出您是否支援特定的命令，傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 如需其他命令，傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+  若要指出您是否支援特定的命令，傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 如需其他命令，傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
- 在下列範例中，查詢狀態方法第一次可確保內容不是自動化函式，則會尋找正確的命令集 GUID 和命令識別碼。 命令本身會設定為啟用，而且支援。 支援不含其他命令。  
+  在下列範例中，查詢狀態方法第一次可確保內容不是自動化函式，則會尋找正確的命令集 GUID 和命令識別碼。 命令本身會設定為啟用，而且支援。 支援不含其他命令。  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

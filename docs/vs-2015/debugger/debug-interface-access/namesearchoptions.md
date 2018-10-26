@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b3e29ece07ffb385da0c54a3f8f4d31afc60be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b5efb8578ea5a5984f3d10a90f1daa3490566ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921687"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

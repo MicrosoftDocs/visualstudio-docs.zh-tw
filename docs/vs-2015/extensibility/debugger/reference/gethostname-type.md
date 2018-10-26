@@ -17,12 +17,12 @@ ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1235592e9da0f677867cb1b882a935f30cdc5c2f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 845ec1b24125ee21874efda0b19c956d1e055d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848406"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO |Microsoft 文件
+title: FIELD_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a968f642b8a4bf26e2e69d1d3ddff45dc1f25
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0687209b1e4144064c6e6e934cd7443f1aa2c496
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834548"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 此結構描述的本機變數、 參數或其他欄位。  
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
   
 ## <a name="members"></a>成員  
  dwFields  
- 從旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定要填入哪些成員。  
+ 從旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定哪些成員會填入。  
   
  bstrFullName  
  欄位的完整名稱。  
@@ -61,7 +61,7 @@ public struct FIELD_INFO {
  欄位類型。  
   
  dwModifiers  
- 從旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉。  
+ 從旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉型別。  
   
 ## <a name="remarks"></a>備註  
  此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)填滿其中的方法。  

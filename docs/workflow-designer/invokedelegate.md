@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e3d802000bede1a654b088fb80b134a36a0185be
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927927"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -37,7 +37,7 @@ ms.locfileid: "36758523"
 下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 活動的易記名稱。 預設值為 InvokeDelegate。<br /><br /> 雖然<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議您最好使用其中一個。|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|活動執行時要呼叫之 <xref:System.Activities.ActivityDelegate> 的名稱。 此屬性可編輯設計工具介面上，而且是必要的。|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|被呼叫之委派的引數集合。 索引鍵是參數物件的名稱上<xref:System.Activities.ActivityDelegate>，且值為引數的運算式會評估並指派給對應的參數物件。 若要顯示**DelegateArguments**對話方塊中，您可以設定這個屬性中，按一下省略符號按鈕，在**DelegateArguments**屬性方格的欄位。 按一下 **建立引數**欄位可新增引數。|

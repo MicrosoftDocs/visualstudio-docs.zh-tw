@@ -18,12 +18,12 @@ ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 530796683976c0dba888684d89443975b8c6327c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 117c80ba8dd27b706e4ee83bb42dcb37f898845a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863317"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

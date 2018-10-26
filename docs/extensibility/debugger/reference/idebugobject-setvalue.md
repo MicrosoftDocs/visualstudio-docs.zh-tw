@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue |Microsoft 文件
+title: IDebugObject::SetValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850967"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。  
@@ -49,10 +49,10 @@ int SetValue(
  [in]值，以位元組為單位的大小。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 陣列中的值會複製到這個[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，並取代任何現有的值。 大於或小於現有的值，可以是新值的大小。 這`IDebugObject`不能是 null 參考。  
+ 陣列中的值會複製到這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，取代任何現有的值。 新值的大小可以大於或小於現有的值。 這`IDebugObject`不能是 null 參考。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

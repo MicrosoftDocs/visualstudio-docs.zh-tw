@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases |Microsoft 文件
+title: IDebugBinder3::GetAllAliases |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6da1b26b41c80d0417da16f478ef3f6672edd12a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 75c8a916d6b69dbe4c7947e82093595a60cabbfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859989"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
-這個方法會擷取程式的別名清單。  
+這個方法會擷取從程式的別名清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,16 +45,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>參數  
  `uRequest`  
- [in]別名，以傳回的最大數目 (指定傳遞至陣列的長度`ppAliases`)。  
+ [in]別名，以傳回的最大數目 (指定長度的陣列傳遞至`ppAliases`)。  
   
  `ppAliases`  
- [in、 out]別名所填入的陣列 (如果這是 null 值和`uRequest`是 0，則會傳回別名可傳回的計數`puFetched`)。  
+ [in、 out]別名所填入的陣列 (如果這個值是 null 值和`uRequest`為 0，就會傳回別名可傳回的計數`puFetched`)。  
   
  `puFetched`  
- [out]傳回取得的別名的數量。  
+ [out]傳回取得的別名的數字。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

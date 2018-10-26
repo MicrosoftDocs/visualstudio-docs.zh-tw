@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY |Microsoft 文件
+title: GUID_ARRAY |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1802d5784ad6e94aee4ff63fb51d2c92dbf164f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa68a3064cd40cca8c62f90c2f144a767ebb9e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855569"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 描述可用的偵錯引擎的唯一識別碼的陣列。  
@@ -43,13 +43,13 @@ public struct GUID_ARRAY
   
 ## <a name="terms"></a>詞彙  
  dwCount  
- 陣列中的唯一識別碼的數目。  
+ 陣列中的唯一識別項的數目。  
   
  成員  
- 陣列，其中包含唯一識別碼。  
+ 包含唯一識別碼的陣列。  
   
 ## <a name="remarks"></a>備註  
- 這個結構由[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法。  
+ 此結構由[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： Msdbg.h  

@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862082"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ ms.locfileid: "49181515"
   
  有三種方式，客戶可以簽署部署資訊清單，在此情況下：  
   
-1.  客戶可以使用的憑證授權單位 (CA) 核發的有效憑證。  
+1. 客戶可以使用的憑證授權單位 (CA) 核發的有效憑證。  
   
-2.  這種方法的一種變化，客戶可以選擇使用自我簽署的憑證其部署資訊清單簽章。 缺點是，它會導致應用程式顯示文字 「 未知的發行者 」 時系統會詢問是否要安裝它。 不過，好處是，它會防止較小的客戶需花費的時間和金錢所需的憑證授權單位所核發的憑證。  
+2. 這種方法的一種變化，客戶可以選擇使用自我簽署的憑證其部署資訊清單簽章。 缺點是，它會導致應用程式顯示文字 「 未知的發行者 」 時系統會詢問是否要安裝它。 不過，好處是，它會防止較小的客戶需花費的時間和金錢所需的憑證授權單位所核發的憑證。  
   
-3.  最後，開發人員可以在安裝套件包含他們自己的自我簽署的憑證。 這會引入本主題稍早所述的應用程式身分識別的潛在問題。  
+3. 最後，開發人員可以在安裝套件包含他們自己的自我簽署的憑證。 這會引入本主題稍早所述的應用程式身分識別的潛在問題。  
   
- 設定部署專案方法的缺點是時間和建置自訂部署的應用程式所需的費用。  
+   設定部署專案方法的缺點是時間和建置自訂部署的應用程式所需的費用。  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>讓客戶產生部署資訊清單  
  第三個可能的部署策略是交給只有應用程式檔案和應用程式資訊清單關閉給客戶。 在此案例中，客戶須負責產生並簽署部署資訊清單中使用.NET Framework SDK。  

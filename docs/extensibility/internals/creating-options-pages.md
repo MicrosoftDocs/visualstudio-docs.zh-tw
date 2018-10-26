@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949639"
 ---
 # <a name="create-options-pages"></a>建立選項頁
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]managed 的封裝架構類別衍生自<xref:Microsoft.VisualStudio.Shell.DialogPage>擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由新增 IDE**選項**頁面下**工具**功能表。  
@@ -47,17 +47,17 @@ ms.locfileid: "39499474"
 ## <a name="implement-dialogpage-class"></a>實作 DialogPage 類別  
  這個物件提供 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生的型別可以利用下列繼承的功能：  
   
--   預設使用者介面視窗。  
+- 預設使用者介面視窗。  
   
--   預設持續性機制，可以使用任一 if<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`的<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
+- 預設持續性機制，可以使用任一 if<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`的<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
   
--   自動化支援。  
+- 自動化支援。  
   
- 物件，實作的最低需求**工具選項**頁面上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是加入的公用屬性。  
+  物件，實作的最低需求**工具選項**頁面上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是加入的公用屬性。  
   
- 如果類別已正確註冊為**工具選項**頁面上提供者，則其公用屬性位於**選項**一節**工具**功能表中的表單屬性方格。  
+  如果類別已正確註冊為**工具選項**頁面上提供者，則其公用屬性位於**選項**一節**工具**功能表中的表單屬性方格。  
   
- 所有這些預設的功能可以被覆寫。 例如，若要建立更複雜的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
+  所有這些預設的功能可以被覆寫。 例如，若要建立更複雜的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
   
 ## <a name="example"></a>範例  
  以下是簡單"Hello world"的實作選項頁面。 將下列程式碼加入預設專案與 Visual Studio 封裝範本所建立**功能表命令**選項選取適當地將示範選項頁面的功能。  

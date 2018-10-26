@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877396"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：必須檢視 SQL 查詢中是否有安全性弱點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206501"
 ## <a name="rule-description"></a>規則描述
  這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 資料隱碼攻擊，惡意使用者所提供的改變查詢的設計嘗試損毀或未經授權存取基礎資料庫中的輸入。 典型的技術包括資料隱碼攻擊的單引號或縮寫符號，也就是 SQL 常值字串分隔符號中;兩個連字號，這表示 SQL 註解;和分號，這表示，新的命令如下所示。 如果使用者輸入必須是查詢的一部份，下列程式碼，使用其中一個列出的有效性，為了降低攻擊風險。
 
--   使用預存程序。
+- 使用預存程序。
 
--   使用參數化的命令的字串。
+- 使用參數化的命令的字串。
 
--   建置命令字串之前，請驗證使用者輸入的類型和內容。
+- 建置命令字串之前，請驗證使用者輸入的類型和內容。
 
- 下列[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型別會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
+  下列[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型別會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) 和 [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) 和 [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- 請注意，在明確或隱含使用 ToString 方法的型別時，違反此規則來建構查詢字串。 下列為範例。
+  請注意，在明確或隱含使用 ToString 方法的型別時，違反此規則來建構查詢字串。 下列為範例。
 
 ```
 int x = 10;

@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec4757c8b60827c05626d2c5f642ca3caf7b68e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d7982ad4fd7e9785634b3b729af4057b8179381
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928408"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804：必須移除未使用的區域變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|

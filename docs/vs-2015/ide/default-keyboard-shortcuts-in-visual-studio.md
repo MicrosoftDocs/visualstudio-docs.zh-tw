@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867373"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ ms.locfileid: "49247178"
   
 ##  <a name="bkmk_TextEditor"></a> 文字編輯器  
   
-|命令|鍵盤快速鍵|  
-|--------------|------------------------|  
-|Edit.BreakLine|Enter<br /><br /> 或<br /><br /> Shift+Enter|  
-|Edit.CharLeft|向左鍵|  
-|Edit.CharLeftExtend|Shift+向左鍵|  
-|Edit.CharLeftExtendColumn|Shift+Alt+向左鍵|  
-|Edit.CharRight|向右鍵|  
-|Edit.CharRightExtend|Shift+向右鍵|  
-|Edit.CharRightExtendColumn|Shift+Alt+向右鍵|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K、Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M、Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M、Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M、Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M、Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K、Ctrl+C|  
-|Edit.CompleteWord|Ctrl+空格鍵<br /><br /> 或<br /><br /> Alt+向右鍵|  
-|Edit.CopyParameterTip|Ctrl+Shift+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|退格鍵<br /><br /> 或<br /><br /> Shift+退格鍵|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K、Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+End|  
-|Edit.DocumentEndExtend|Ctrl+Shift+End|  
-|Edit.DocumentStart|Ctrl+Home|  
-|Edit.DocumentStartExtend|Ctrl+Shift+Home|  
-|Edit.ExpandAllOutlining|Ctrl+M、Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M、Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K、Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K、Ctrl+F|  
-|Edit.GotoBrace|Ctrl+]|  
-|Edit.GotoBraceExtend|Ctrl+Shift+]|  
-|Edit.HideSelection|Ctrl+M、Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|Ctrl+I|  
-|Edit.InsertTab|索引標籤|  
-|Edit.LineCut|Ctrl+L|  
-|Edit.LineDelete|Ctrl+Shift+L|  
-|Edit.LineDown|向下鍵|  
-|Edit.LineDownExtend|Shift+向下鍵|  
-|Edit.LineDownExtendColumn|Shift+Alt+向下鍵|  
-|Edit.LineEnd|End - 結束|  
-|Edit.LineEndExtend|Shift+End|  
-|Edit.LineEndExtendColumn|Shift+Alt+End|  
-|Edit.LineOpenAbove|Ctrl+Enter|  
-|Edit.LineOpenBelow|Ctrl+Shift+Enter|  
-|Edit.LineStart|首頁|  
-|Edit.LineStartExtend|Shift+Home|  
-|Edit.LineStartExtendColumn|Shift+Alt+Home|  
-|Edit.LineTranspose|Shift+Alt+T|  
-|Edit.LineUp|向上鍵|  
-|Edit.LineUpExtend|Shift+向上鍵|  
-|Edit.LineUpExtendColumn|Shift+Alt+向上鍵|  
-|Edit.ListMembers|Ctrl+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt+向下鍵|  
-|Edit.MoveSelectedLinesUp|Alt+向上鍵|  
-|Edit.NextHighlightedReference|Ctrl+Shift+向下鍵|  
-|Edit.OvertypeMode|Insert|  
-|Edit.PageDown|PgDn|  
-|Edit.PageDownExtend|Shift+PgDn|  
-|Edit.PageUp|PgUp|  
-|Edit.PageUpExtend|Shift+PgUp|  
-|Edit.ParameterInfo|Ctrl+Shift+空格鍵|  
-|Edit.PasteParameterTip|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|Alt+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl+Shift+向上鍵|  
-|Edit.QuickInfo|Ctrl+K、Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Shift+I|  
-|Edit.ScrollLineDown|Ctrl+向下鍵|  
-|Edit.ScrollLineUp|Ctrl+向上鍵|  
-|Edit.SelectCurrentWord|Ctrl+W|  
-|Edit.SelectionCancel|逸出字元|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M、Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M、Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K、Ctrl+A|  
-|Edit.TabLeft|Shift + Tab|  
-|Edit.ToggleAllOutlining|Ctrl+M、Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K、Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+空格鍵|  
-|Edit.ToggleOutliningExpansion|Ctrl+M、Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K、Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E、Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K、Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Shift+PgDn|  
-|Edit.ViewTop|Ctrl+PgUp|  
-|Edit.ViewTopExtend|Ctrl+Shift+PgUp|  
-|Edit.ViewWhiteSpace|Ctrl+R、Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Delete|  
-|Edit.WordDeleteToStart|Ctrl+退格鍵|  
-|Edit.WordNext|Ctrl+向右鍵|  
-|Edit.WordNextExtend|Ctrl+Shift+向右鍵|  
-|Edit.WordNextExtendColumn|Ctrl+Shift+Alt+向右鍵|  
-|Edit.WordPrevious|Ctrl+向左鍵|  
-|Edit.WordPreviousExtend|Ctrl+Shift+向左鍵|  
-|Edit.WordPreviousExtendColumn|Ctrl+Shift+Alt+向左鍵|  
-|Edit.WordTranspose|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+Enter|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K、Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
+|                             命令                              |                  鍵盤快速鍵                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          Edit.BreakLine                           |     Enter<br /><br /> 或<br /><br /> Shift+Enter      |
+|                           Edit.CharLeft                           |                      向左鍵                       |
+|                        Edit.CharLeftExtend                        |                   Shift+向左鍵                    |
+|                     Edit.CharLeftExtendColumn                     |                 Shift+Alt+向左鍵                  |
+|                          Edit.CharRight                           |                      向右鍵                      |
+|                       Edit.CharRightExtend                        |                   Shift+向右鍵                   |
+|                    Edit.CharRightExtendColumn                     |                 Shift+Alt+向右鍵                 |
+|                        Edit.CharTranspose                         |                        Ctrl+T                         |
+|                        Edit.ClearBookmarks                        |                    Ctrl+K、Ctrl+L                     |
+|                     Edit.CollapseAllOutlining                     |                    Ctrl+M、Ctrl+A                     |
+|                    Edit.CollapseCurrentRegion                     |                    Ctrl+M、Ctrl+S                     |
+|                         Edit.CollapseTag                          |                    Ctrl+M、Ctrl+T                     |
+|                    Edit.CollapsetoDefinitions                     |                    Ctrl+M、Ctrl+O                     |
+|                       Edit.CommentSelection                       |                    Ctrl+K、Ctrl+C                     |
+|                         Edit.CompleteWord                         | Ctrl+空格鍵<br /><br /> 或<br /><br /> Alt+向右鍵 |
+|                       Edit.CopyParameterTip                       |                   Ctrl+Shift+Alt+C                    |
+|                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
+|                       Edit.DeleteBackwards                        |   退格鍵<br /><br /> 或<br /><br /> Shift+退格鍵   |
+|                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K、Ctrl+\                     |
+|                         Edit.DocumentEnd                          |                       Ctrl+End                        |
+|                      Edit.DocumentEndExtend                       |                    Ctrl+Shift+End                     |
+|                        Edit.DocumentStart                         |                       Ctrl+Home                       |
+|                     Edit.DocumentStartExtend                      |                    Ctrl+Shift+Home                    |
+|                      Edit.ExpandAllOutlining                      |                    Ctrl+M、Ctrl+X                     |
+|                     Edit.ExpandCurrentRegion                      |                    Ctrl+M、Ctrl+E                     |
+|                        Edit.FormatDocument                        |                    Ctrl+K、Ctrl+D                     |
+|                       Edit.FormatSelection                        |                    Ctrl+K、Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        Ctrl+]                         |
+|                       Edit.GotoBraceExtend                        |                     Ctrl+Shift+]                      |
+|                        Edit.HideSelection                         |                    Ctrl+M、Ctrl+H                     |
+|                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
+|                      Edit.IncrementalSearch                       |                        Ctrl+I                         |
+|                          Edit.InsertTab                           |                          索引標籤                          |
+|                           Edit.LineCut                            |                        Ctrl+L                         |
+|                          Edit.LineDelete                          |                     Ctrl+Shift+L                      |
+|                           Edit.LineDown                           |                      向下鍵                       |
+|                        Edit.LineDownExtend                        |                   Shift+向下鍵                    |
+|                     Edit.LineDownExtendColumn                     |                 Shift+Alt+向下鍵                  |
+|                           Edit.LineEnd                            |                          End - 結束                          |
+|                        Edit.LineEndExtend                         |                       Shift+End                       |
+|                     Edit.LineEndExtendColumn                      |                     Shift+Alt+End                     |
+|                        Edit.LineOpenAbove                         |                      Ctrl+Enter                       |
+|                        Edit.LineOpenBelow                         |                   Ctrl+Shift+Enter                    |
+|                          Edit.LineStart                           |                         首頁                          |
+|                       Edit.LineStartExtend                        |                      Shift+Home                       |
+|                    Edit.LineStartExtendColumn                     |                    Shift+Alt+Home                     |
+|                        Edit.LineTranspose                         |                      Shift+Alt+T                      |
+|                            Edit.LineUp                            |                       向上鍵                        |
+|                         Edit.LineUpExtend                         |                    Shift+向上鍵                     |
+|                      Edit.LineUpExtendColumn                      |                  Shift+Alt+向上鍵                   |
+|                         Edit.ListMembers                          |                        Ctrl+J                         |
+|                        Edit.MakeLowercase                         |                        Ctrl+U                         |
+|                        Edit.MakeUppercase                         |                     Ctrl+Shift+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt+向下鍵                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt+向上鍵                      |
+|                   Edit.NextHighlightedReference                   |                 Ctrl+Shift+向下鍵                 |
+|                         Edit.OvertypeMode                         |                        Insert                         |
+|                           Edit.PageDown                           |                         PgDn                          |
+|                        Edit.PageDownExtend                        |                      Shift+PgDn                       |
+|                            Edit.PageUp                            |                         PgUp                          |
+|                         Edit.PageUpExtend                         |                      Shift+PgUp                       |
+|                        Edit.ParameterInfo                         |                  Ctrl+Shift+空格鍵                  |
+|                      Edit.PasteParameterTip                       |                   Ctrl+Shift+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        Alt+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 Edit.PreviousHighlightedReference                 |                  Ctrl+Shift+向上鍵                  |
+|                          Edit.QuickInfo                           |                    Ctrl+K、Ctrl+I                     |
+|                   Edit.ReverseIncrementalSearch                   |                     Ctrl+Shift+I                      |
+|                        Edit.ScrollLineDown                        |                    Ctrl+向下鍵                    |
+|                         Edit.ScrollLineUp                         |                     Ctrl+向上鍵                     |
+|                      Edit.SelectCurrentWord                       |                        Ctrl+W                         |
+|                       Edit.SelectionCancel                        |                        逸出字元                         |
+|                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        Alt +\`                         |
+|                      Edit.StopHidingCurrent                       |                    Ctrl+M、Ctrl+U                     |
+|                        Edit.StopOutlining                         |                    Ctrl+M、Ctrl+P                     |
+|                          Edit.SwapAnchor                          |                    Ctrl+K、Ctrl+A                     |
+|                           Edit.TabLeft                            |                       Shift + Tab                       |
+|                      Edit.ToggleAllOutlining                      |                    Ctrl+M、Ctrl+L                     |
+|                        Edit.ToggleBookmark                        |                    Ctrl+K、Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl+Alt+空格鍵                     |
+|                   Edit.ToggleOutliningExpansion                   |                    Ctrl+M、Ctrl+M                     |
+|                    Edit.ToggleTaskListShortcut                    |                    Ctrl+K、Ctrl+H                     |
+|                        Edit.ToggleWordWrap                        |                    Ctrl+E、Ctrl+W                     |
+|                      Edit.UncommentSelection                      |                    Ctrl+K、Ctrl+U                     |
+|                          Edit.ViewBottom                          |                       Ctrl+PgDn                       |
+|                       Edit.ViewBottomExtend                       |                    Ctrl+Shift+PgDn                    |
+|                           Edit.ViewTop                            |                       Ctrl+PgUp                       |
+|                        Edit.ViewTopExtend                         |                    Ctrl+Shift+PgUp                    |
+|                        Edit.ViewWhiteSpace                        |                    Ctrl+R、Ctrl+W                     |
+|                       Edit.WordDeleteToEnd                        |                      Ctrl+Delete                      |
+|                      Edit.WordDeleteToStart                       |                    Ctrl+退格鍵                     |
+|                           Edit.WordNext                           |                   Ctrl+向右鍵                    |
+|                        Edit.WordNextExtend                        |                Ctrl+Shift+向右鍵                 |
+|                     Edit.WordNextExtendColumn                     |              Ctrl+Shift+Alt+向右鍵               |
+|                         Edit.WordPrevious                         |                    Ctrl+向左鍵                    |
+|                      Edit.WordPreviousExtend                      |                 Ctrl+Shift+向左鍵                 |
+|                   Edit.WordPreviousExtendColumn                   |               Ctrl+Shift+Alt+向左鍵               |
+|                        Edit.WordTranspose                         |                     Ctrl+Shift+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Enter                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K、Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> UML 活動圖表  
   

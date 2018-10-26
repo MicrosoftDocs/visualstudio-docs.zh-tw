@@ -22,52 +22,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3004e6b83f98ccf82e6086c4669618ef4fb48c8c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951414"
 ---
 # <a name="how-to-add-an-updater-method"></a>如何： 加入更新者方法
   您可以讓使用者藉由更新 SharePoint 外部清單中的商務資料*Updater*方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-an-updater-method"></a>若要建立 Updater 方法  
   
-1.  在 BDC 設計工具中，選擇 [實體]。  
+1. 在 BDC 設計工具中，選擇 [實體]。  
   
-2.  在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。  
+2. 在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。  
   
-     [BDC 方法詳細資料] 視窗隨即開啟。 如需有關此視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
+    [BDC 方法詳細資料] 視窗隨即開啟。 如需有關此視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
   
-3.  在 **將方法加入**清單中，選擇**建立 Updater 方法**。  
+3. 在 **將方法加入**清單中，選擇**建立 Updater 方法**。  
   
-     Visual Studio 會將下列項目加入至模型。 這些項目會出現在 [BDC 方法詳細資料] 視窗中。  
+    Visual Studio 會將下列項目加入至模型。 這些項目會出現在 [BDC 方法詳細資料] 視窗中。  
   
-    -   方法，稱為**更新**。  
+   - 方法，稱為**更新**。  
   
-    -   方法的輸入的參數。  
+   - 方法的輸入的參數。  
   
-    -   參數型別描述項。 根據預設，Visual Studio 會使用您所定義的實體型別描述元的搜尋工具方法 (例如： 連絡人)。  
+   - 參數型別描述項。 根據預設，Visual Studio 會使用您所定義的實體型別描述元的搜尋工具方法 (例如： 連絡人)。  
   
-    -   方法執行個體方法。  
+   - 方法執行個體方法。  
   
      如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-    > [!NOTE]  
-    >  如果實體類型的識別項表示不會自動產生的資料庫資料表中的欄位，設定**預先更新者欄位**屬性設 **，則為 True**。  
+   > [!NOTE]  
+   >  如果實體類型的識別項表示不會自動產生的資料庫資料表中的欄位，設定**預先更新者欄位**屬性設 **，則為 True**。  
   
-4.  在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。  
+4. 在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。  
   
-     實體服務程式碼檔案中開啟**程式碼編輯器**。 如需有關該檔案的詳細資訊，請參閱[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
+    實體服務程式碼檔案中開啟**程式碼編輯器**。 如需有關該檔案的詳細資訊，請參閱[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
   
-5.  加入程式碼來更新資料的 Update 方法。 下列範例會更新為 SQL Server 的 AdventureWorks 範例資料庫中的連絡人資訊。  
+5. 加入程式碼來更新資料的 Update 方法。 下列範例會更新為 SQL Server 的 AdventureWorks 範例資料庫中的連絡人資訊。  
   
-    > [!NOTE]  
-    >  值取代`ServerName`欄位與您伺服器的名稱。  
+   > [!NOTE]  
+   >  值取代`ServerName`欄位與您伺服器的名稱。  
   
-     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
-     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
+    [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
+    [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
 ## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   

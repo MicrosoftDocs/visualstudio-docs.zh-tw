@@ -17,12 +17,12 @@ ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1e7b3fe9b51a06a3212e4febf52b361787bfd85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a234622738603e6e2116976bd4c904b76ceef90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926822"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

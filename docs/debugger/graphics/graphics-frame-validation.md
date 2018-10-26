@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850876"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
 <!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
@@ -26,13 +26,14 @@ ms.locfileid: "39511291"
 
 按一下 **執行驗證**在起始分析左上角的按鈕。  可能需要幾分鐘才能完成，視框架的複雜度而定。  會出現下面是結合來自兩個來源的資料： 訊息的 D3D 本身會時發出[SDK 層](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)啟用時，和收集自追蹤工具自己的內部狀態的資料。 完成後，您會看到多個資料行：
 
-**資料行**|**描述**
----|---
-事件 ID | 這會對應到中的項目 ID[事件清單](graphics-event-list.md)視窗。
-嚴重性 | 損毀、 錯誤、 警告、 資訊或訊息。
-分類 | 應用程式定義的其他、 初始化、 清理、 編譯、 狀態建立、 狀態設定、 狀態開始，執行、 資源操作、 著色器、 重複、 也未使用。
-訊息 | 與事件相關聯的訊息。
-Event - 事件 | 相關聯的錯誤或警告事件。
+
+| **資料行** | **描述** |
+|------------| - |
+| 事件 ID | 這會對應到中的項目 ID[事件清單](graphics-event-list.md)視窗。 |
+| 嚴重性 | 損毀、 錯誤、 警告、 資訊或訊息。 |
+| 分類 | 應用程式定義的其他、 初始化、 清理、 編譯、 狀態建立、 狀態設定、 狀態開始，執行、 資源操作、 著色器、 重複、 也未使用。 |
+| 訊息 | 與事件相關聯的訊息。 |
+| Event - 事件 | 相關聯的錯誤或警告事件。 |
 
 ## <a name="see-also"></a>另請參閱  
 [圖形診斷 （偵錯 DirectX 圖形）](visual-studio-graphics-diagnostics.md)   

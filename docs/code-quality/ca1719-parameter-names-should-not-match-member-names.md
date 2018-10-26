@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 64a10bd39ef34d207d910c3bc428ba862019369e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924014"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：參數名稱不應符合成員名稱
+
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|
 |CheckId|CA1719|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

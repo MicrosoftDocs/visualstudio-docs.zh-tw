@@ -17,12 +17,12 @@ ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 092235b007b7ba8fd58d76366aa6a53a8fa5a078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 367dcd6648beb14e71de11fb542c6d401b0abcc4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843466"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

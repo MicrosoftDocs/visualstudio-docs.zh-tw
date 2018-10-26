@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860353"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49293679"
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>若要設定要針對資料表或物件來建立控制項  
   
-1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
+1. 請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
   
-2.  在 [ **Zdroje dat** ] 視窗中，選取表示資料表的項目，或您要設定物件。  
+2. 在 [ **Zdroje dat** ] 視窗中，選取表示資料表的項目，或您要設定物件。  
   
-3.  按一下 項目，下拉式功能表，然後按一下其中一個功能表中的下列項目：  
+3. 按一下 項目，下拉式功能表，然後按一下其中一個功能表中的下列項目：  
   
-    -   若要在個別控制項中顯示每個資料欄位，請按一下**詳細資料**。 當您將資料的項目拖曳至設計工具時，這個動作會建立不同的資料繫結控制項，每個資料行或屬性的父資料表或物件，以及每個控制項的標籤。  
+   - 若要在個別控制項中顯示每個資料欄位，請按一下**詳細資料**。 當您將資料的項目拖曳至設計工具時，這個動作會建立不同的資料繫結控制項，每個資料行或屬性的父資料表或物件，以及每個控制項的標籤。  
   
-    -   若要顯示的所有資料的單一控制項，選取不同的控制項清單中，例如**DataGrid**或是**清單**WPF 應用程式中，或**DataGridView** Windows Form 中應用程式。  
+   - 若要顯示的所有資料的單一控制項，選取不同的控制項清單中，例如**DataGrid**或是**清單**WPF 應用程式中，或**DataGridView** Windows Form 中應用程式。  
   
      可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及是否您已新增自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項是可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   

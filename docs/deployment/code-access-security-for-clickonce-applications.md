@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d186ce9ab14cc43b40d9f3fa788cc03a0e4e461c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1fe8709d6bb94c1437f03c4bd0c5b8b368d05b21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934908"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼存取安全性限制。 因此，您必須了解程式碼存取安全性的含意，並照著撰寫 ClickOnce 應用程式。  
@@ -40,14 +40,14 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
 ## <a name="default-clickonce-code-access-security"></a>預設 ClickOnce 程式碼存取安全性  
  根據預設，ClickOnce 應用程式會在用戶端電腦上安裝或執行時獲得完全信任的權限。  
   
--   具有完全信任權限的應用程式可以不受限制地存取資源，例如檔案系統和登錄。 這可能會允許您的應用程式 (和使用者的系統) 會遭到惡意程式碼入侵。  
+- 具有完全信任權限的應用程式可以不受限制地存取資源，例如檔案系統和登錄。 這可能會允許您的應用程式 (和使用者的系統) 會遭到惡意程式碼入侵。  
   
--   當應用程式需要完全信任權限時，可能會提示使用者將權限授與應用程式。 這表示應用程式無法真正提供 ClickOnce 經驗，而且提示可能會令較沒有經驗的使用者困惑。  
+- 當應用程式需要完全信任權限時，可能會提示使用者將權限授與應用程式。 這表示應用程式無法真正提供 ClickOnce 經驗，而且提示可能會令較沒有經驗的使用者困惑。  
   
-    > [!NOTE]
-    >  從卸除式媒體例如 CD-ROM 安裝應用程式時，不會提示使用者。 此外，網路系統管理員可以設定網路原則，以便在安裝來自信任來源的應用程式時，不會提示使用者。 如需詳細資訊，請參閱 <<c0> [ 信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+  > [!NOTE]
+  >  從卸除式媒體例如 CD-ROM 安裝應用程式時，不會提示使用者。 此外，網路系統管理員可以設定網路原則，以便在安裝來自信任來源的應用程式時，不會提示使用者。 如需詳細資訊，請參閱 <<c0> [ 信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
   
- 若要限制 ClickOnce 應用程式的權限，您可以修改您應用程式的程式碼存取安全性權限，要求最符合應用程式所需權限的區域。 在大部分情況下，您可以選取要從中部署應用程式的區域。 例如，如果您的應用程式是企業應用程式，您可以使用 [近端內部網路]  區域。 如果您的應用程式是網際網路應用程式，您可以使用 [網際網路]  區域。  
+  若要限制 ClickOnce 應用程式的權限，您可以修改您應用程式的程式碼存取安全性權限，要求最符合應用程式所需權限的區域。 在大部分情況下，您可以選取要從中部署應用程式的區域。 例如，如果您的應用程式是企業應用程式，您可以使用 [近端內部網路]  區域。 如果您的應用程式是網際網路應用程式，您可以使用 [網際網路]  區域。  
   
 ## <a name="configure-security-permissions"></a>設定安全性權限  
  您應該永遠設定 ClickOnce 應用程式來要求適當的區域，以限制程式碼存取安全性權限。 您可以在 [專案設計工具]  的 [安全性] 頁面上設定安全性權限。  
@@ -74,23 +74,23 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
 ## <a name="security-permissions-for-browser-hosted-applications"></a>瀏覽器裝載的應用程式的安全性權限  
  Visual Studio 針對 Windows Presentation Foundation (WPF) 應用程式提供下列專案類型：  
   
--   WPF Windows 應用程式  
+- WPF Windows 應用程式  
   
--   WPF 網頁瀏覽器應用程式  
+- WPF 網頁瀏覽器應用程式  
   
--   WPF 自訂控制項程式庫  
+- WPF 自訂控制項程式庫  
   
--   WPF 服務程式庫  
+- WPF 服務程式庫  
   
- 這些專案類型當中，只有 WPF 網頁瀏覽器應用程式裝載在網頁瀏覽器，並因此需要特殊的部署和安全性設定。 這些應用程式的預設安全性設定如下所示：  
+  這些專案類型當中，只有 WPF 網頁瀏覽器應用程式裝載在網頁瀏覽器，並因此需要特殊的部署和安全性設定。 這些應用程式的預設安全性設定如下所示：  
   
--   **啟用 ClickOnce 安全性設定**  
+- **啟用 ClickOnce 安全性設定**  
   
--   **這是部分信任的應用程式**  
+- **這是部分信任的應用程式**  
   
--   **網際網路區域** (並已選取 WPF 網頁瀏覽器應用程式的預設權限集合)  
+- **網際網路區域** (並已選取 WPF 網頁瀏覽器應用程式的預設權限集合)  
   
- 在 [進階安全性設定]  對話方塊中，已選取並停用 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊。 這是因為無法針對瀏覽器裝載之應用程式關閉在區域中偵錯。  
+  在 [進階安全性設定]  對話方塊中，已選取並停用 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊。 這是因為無法針對瀏覽器裝載之應用程式關閉在區域中偵錯。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

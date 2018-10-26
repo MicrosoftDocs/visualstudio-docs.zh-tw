@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isstripped |Microsoft 文件'
+title: 'Idiasymbol:: Get_isstripped |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79204e0082fdfb1920959e1c1b143bf04529ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772310c03bef7c645829bbe5c5877a5aa6cd22d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917501"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 擷取旗標，指出是否從符號檔中已移除專用符號。  
@@ -34,23 +34,23 @@ HRESULT get_isStripped(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]傳回`TRUE`如果私用符號移除了符號檔中; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`私用符號移除了符號檔中; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 這個屬性是可從`SymTagExe`符號類型 (請參閱[Exe](../../debugger/debug-interface-access/exe.md))。  
+ 這個屬性會使用來自`SymTagExe`符號類型 (請參閱 < [Exe](../../debugger/debug-interface-access/exe.md))。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|版本:|DIA SDK 8.0 版|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

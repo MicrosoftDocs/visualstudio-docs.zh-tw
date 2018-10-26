@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948760"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>逐步解說： 新增功能事件接收器
   功能事件接收器是發生在 SharePoint 中的其中一種下列功能相關的事件時執行的方法：
 
--   功能的安裝。
+- 功能的安裝。
 
--   啟動功能。
+- 啟動功能。
 
--   一項功能會停用。
+- 一項功能會停用。
 
--   已移除的功能。
+- 已移除的功能。
 
- 本逐步解說示範如何將事件接收器加入至 SharePoint 專案中的功能。 它會示範下列工作：
+  本逐步解說示範如何將事件接收器加入至 SharePoint 專案中的功能。 它會示範下列工作：
 
--   建立功能事件接收器的空白專案。
+- 建立功能事件接收器的空白專案。
 
--   處理**FeatureDeactivating**方法。
+- 處理**FeatureDeactivating**方法。
 
--   您可以使用 SharePoint 專案物件模型來將宣告新增至宣告清單。
+- 您可以使用 SharePoint 專案物件模型來將宣告新增至宣告清單。
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：

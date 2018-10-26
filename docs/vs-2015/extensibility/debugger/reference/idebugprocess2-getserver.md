@@ -17,12 +17,12 @@ ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 633c640c1d2ceb21685caa35ea93dacbdc359b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b02525c62a5842c3db1cf38de091a5100d971d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852891"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

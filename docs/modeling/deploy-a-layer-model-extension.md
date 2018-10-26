@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874614"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 
@@ -29,13 +29,13 @@ ms.locfileid: "46370909"
 
 ### <a name="to-install-the-extension"></a>安裝擴充功能
 
-1.  包含專案中**source.vsix.manifest**，開啟**bin\\ \*** 檔案總管 中。
+1. 包含專案中**source.vsix.manifest**，開啟*bin*目錄檔案總管 中。
 
-2.  複製 **\*.vsix**檔案至您要安裝擴充功能的電腦。
+2. 複製 **\*.vsix**檔案至您要安裝擴充功能的電腦。
 
-3.  在目標電腦的 Windows [檔案總管] 中，按兩下 *.vsix 檔案。
+3. 在目標電腦的 Windows [檔案總管] 中，按兩下 *.vsix 檔案。
 
-     隨即開啟 VSIX 安裝程式。
+    隨即開啟 VSIX 安裝程式。
 
 ### <a name="to-uninstall-the-extension"></a>安裝擴充功能
 

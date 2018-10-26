@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 104c78732d4f0171fc372c1bfa2848fb11b34b04
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 14f21857468f73d2a9d6eca50fbd6666ae140ef5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934453"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：為進行程式碼剖析的處理序所配置的平均私用位元組
+
 |||  
 |-|-|  
 |規則 ID|DA0505|  
@@ -29,19 +30,19 @@ ms.locfileid: "34766372"
 |程式碼剖析方法|全部|  
 |訊息|收集此資訊僅供參考之用。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 報告的值是針對所有測量間隔計算的平均。|  
 |規則型別|資訊|  
-  
+
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
-  
+
 ## <a name="rule-description"></a>規則描述  
  此訊息報告處理序目前已配置的虛擬記憶體平均數量，以位元組 (私用位元組) 為單位。 私用位元組表示只能由處理序內執行的執行緒存取的處理序所配置的虛擬記憶體位置。  
-  
+
  對於在 32 位元電腦上執行的 32 位元處理序，處理序位址空間之私用部分的上限是 2 GB。 使用 [/3GB](http://go.microsoft.com/fwlink/?LinkId=177831) Boot.ini 參數，32 位元處理序就可以取得最大 3 GB 的虛擬記憶體。 在 64 位元電腦上執行的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
-  
+
  在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的私用虛擬記憶體。  
-  
+
  報告的值是所分析的處理序作用中之所有測量間隔的平均。  
-  
+
  如需處理序位址空間的詳細資訊，請參閱《Windows 記憶體管理》文件中的[虛擬位址空間 (英文)](http://go.microsoft.com/fwlink/?LinkId=177832) 。  
-  
+
 ## <a name="how-to-use-rule-data"></a>如何使用規則資料  
  使用報告的值可比較程式不同版本或組建的效能，或了解不同分析情節中的應用程式效能。

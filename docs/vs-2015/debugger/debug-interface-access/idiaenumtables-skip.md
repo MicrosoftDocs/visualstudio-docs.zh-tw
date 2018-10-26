@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e731462df676d9646859c127de28995ec263cff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 556c96f2c53c7b4a0ae455b9a7bb626877f71952
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817330"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

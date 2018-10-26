@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924196"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 詞彙*查閱資料表*(有時也稱為*查閱繫結*) 描述會顯示資訊從一個資料表，根據另一個資料表中的外部索引鍵欄位值的控制項。 您可以藉由拖曳父資料表的主要節點建立查閱資料表或物件**Zdroje dat**視窗拖曳至已繫結至資料行或屬性相關的子資料表中的控制項。
@@ -83,7 +83,7 @@ ms.locfileid: "39176124"
      Visual Studio 會將設定查閱繫結控制項上的某些屬性。 下表列出 Visual Studio 會修改的屬性。 如果有必要，您可以變更這些屬性在 XAML 中或**屬性**視窗。
 
     |屬性|設定說明|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|此屬性會指定集合或用來取得的資料，會顯示在控制項中的繫結。 Visual Studio 會將此屬性設定為<xref:System.Windows.Data.CollectionViewSource>針對您拖曳至控制項的父資料。|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|此屬性會指定在控制項中顯示之資料項目的路徑。 Visual Studio 設定此屬性的第一個資料行或屬性在父資料中，主索引鍵具有字串資料類型之後。<br /><br /> 如果您想要在父資料顯示不同的資料行或屬性，變更此屬性的不同屬性的路徑。|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 這個屬性繫結至資料行或您拖曳到設計工具的子資料的屬性。 這是父資料的外部索引鍵。|

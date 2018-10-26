@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894231"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>將項目新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ ms.locfileid: "49223088"
 ## <a name="filtering-project-items"></a>篩選的專案項目  
  `IVsFilterAddProjectItemDlg2` 提供下列方式篩選樹狀目錄 （左窗格） 專案檔 （右窗格） 中的項目：  
   
--   當地語系化的名稱 （.vsdir 檔案所包含的對話方塊中顯示的標題） 來提供`IVsFilterAddProjectItemDlg`。  
+- 當地語系化的名稱 （.vsdir 檔案所包含的對話方塊中顯示的標題） 來提供`IVsFilterAddProjectItemDlg`。  
   
--   實際名稱的檔案和磁碟上的資料夾 (非當地語系化 — 任何.vsdir 檔案) 所提供`IVsFilterAddProjectItemDlg`。  
+- 實際名稱的檔案和磁碟上的資料夾 (非當地語系化 — 任何.vsdir 檔案) 所提供`IVsFilterAddProjectItemDlg`。  
   
--   依類別、 提供`IVsFilterAddProjectItemDlg2`。  
+- 依類別、 提供`IVsFilterAddProjectItemDlg2`。  
   
- 若要依類別篩選，提供項目在.vsdir 檔案中，例如 「 Web 表單 」 或 「 用戶端項目 」，在 Visual Basic 中的類別目錄字串。 對話方塊程式碼再擷取.vsdir 檔案中的類別目錄分類，並將它傳遞給您。 然後，您可以將該資訊傳遞您實作`IVsFilterAddProjectItemDlg2`來篩選**加入新項目**對話方塊中，依類別分組。 為 Web 網頁或用戶端 Win32 應用程式的情況下，您也可以篩選項目。 此外，您可以識別[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]標示 Microsoft Foundation Classes (MFC) 或使用中的範本程式庫 (ATL) 項目中的項目。 當您識別這些項目時，專案系統可以定義自己的分類，以便系統可以根據類別和分類篩選。  
+  若要依類別篩選，提供項目在.vsdir 檔案中，例如 「 Web 表單 」 或 「 用戶端項目 」，在 Visual Basic 中的類別目錄字串。 對話方塊程式碼再擷取.vsdir 檔案中的類別目錄分類，並將它傳遞給您。 然後，您可以將該資訊傳遞您實作`IVsFilterAddProjectItemDlg2`來篩選**加入新項目**對話方塊中，依類別分組。 為 Web 網頁或用戶端 Win32 應用程式的情況下，您也可以篩選項目。 此外，您可以識別[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]標示 Microsoft Foundation Classes (MFC) 或使用中的範本程式庫 (ATL) 項目中的項目。 當您識別這些項目時，專案系統可以定義自己的分類，以便系統可以根據類別和分類篩選。  
   
- 如果您實作此篩選器功能時，您不必將對應的每個項目應該隱藏資料表。 您只要可以分類為類型的項目，並放在.vsdir 檔案或檔案的分類。 然後您可以隱藏任何實作介面中有某個特定分類的項目。 如此一來，您可以進行中的項目**加入新項目**對話方塊方塊動態根據專案中的狀態。  
+  如果您實作此篩選器功能時，您不必將對應的每個項目應該隱藏資料表。 您只要可以分類為類型的項目，並放在.vsdir 檔案或檔案的分類。 然後您可以隱藏任何實作介面中有某個特定分類的項目。 如此一來，您可以進行中的項目**加入新項目**對話方塊方塊動態根據專案中的狀態。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

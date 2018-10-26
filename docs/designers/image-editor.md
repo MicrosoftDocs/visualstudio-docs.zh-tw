@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878371"
 ---
 # <a name="image-editor"></a>影像編輯器
 
@@ -30,7 +30,7 @@ ms.locfileid: "47029117"
 **影像編輯器**支援下列影像格式：
 
 |格式名稱|檔案名稱副檔名|
-|-----------------|-------------------------|
+|-----------------| - |
 |可攜式網路圖形|*.png*|
 |JPEG|*.jpg*、*.jpeg*、*.jpe*、*.jfif*|
 |DirectDraw 表面|*.dds*|
@@ -245,7 +245,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
 |命令|鍵盤快速鍵|
-|-------------|------------------------|
+|-------------| - |
 |切換至 [選取] 模式|**S**|
 |切換到 [縮放] 模式|**Z**|
 |切換到 [移動瀏覽] 模式|**K**|

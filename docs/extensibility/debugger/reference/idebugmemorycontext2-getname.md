@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetName |Microsoft 文件
+title: IDebugMemoryContext2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6d29f5b37dca86f25083479f819217e665a0cef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a80912aeed3ed5a3a93cad92f6d1613661692da6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819650"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
-擷取此內容可顯示使用者的名稱。  
+擷取此內容的使用者可顯示名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,10 +42,10 @@ int GetName(
   
 #### <a name="parameters"></a>參數  
  `pbstrName`  
- [out]傳回的記憶體內容的名稱。  
+ [out]傳回記憶體內容的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  通常不使用的記憶體內容的名稱。  

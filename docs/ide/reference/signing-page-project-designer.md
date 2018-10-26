@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951992"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459786"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 使用 [專案設計工具]的 [簽署] 頁面可簽署應用程式和部署資訊清單，也可簽署組件 (強式名稱簽署)。
@@ -35,7 +35,7 @@ ms.locfileid: "31951992"
 
  此外，金鑰檔資訊的儲存方式會與資訊清單簽署和組件簽署不同。 針對資訊清單簽署，金鑰資訊會儲存在您電腦的密碼編譯儲存資料庫和目前使用者的 Windows 憑證存放區中。 針對組件簽署，金鑰資訊只會儲存在您電腦的密碼編譯儲存資料庫中。
 
- 若要存取 [簽署] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [簽署] 索引標籤。
+ 若要存取 [簽署] 頁面，請選取 [方案總管]中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [簽署] 索引標籤。
 
 ## <a name="application-and-deployment-manifest-signing"></a>應用程式和部署資訊清單簽署
  [簽署 ClickOnce 資訊清單] 核取方塊
@@ -73,7 +73,7 @@ ms.locfileid: "31951992"
 
  選取這個核取方塊可簽署組件並建立強式名稱金鑰檔。 如需使用 [專案設計工具] 簽署組件的詳細資訊，請參閱[如何：簽署組件 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)。
 
- 這個選項會使用 [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) 所提供的 Al.exe 工具。
+ 此選項使用由 Windows 軟體開發套件 (SDK) 提供的 Al.exe 工具來簽署組件。 如需 Al.exe 的詳細資訊，請參閱[如何：使用強式名稱簽署組件](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)。
 
  [選擇強式名稱金鑰檔] 清單
 

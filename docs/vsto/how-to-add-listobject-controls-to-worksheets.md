@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949249"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何： 將 ListObject 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
@@ -32,13 +32,13 @@ ms.locfileid: "35671354"
   
  本主題說明下列工作：  
   
--   [在設計階段加入 ListObject 控制項](#designtime)  
+- [在設計階段加入 ListObject 控制項](#designtime)  
   
--   [在文件層級專案中的執行階段加入 ListObject 控制項](#runtimedoclevel)  
+- [在文件層級專案中的執行階段加入 ListObject 控制項](#runtimedoclevel)  
   
--   [在 VSTO 增益集專案中的執行階段加入 ListObject 控制項](#runtimeaddin)  
+- [在 VSTO 增益集專案中的執行階段加入 ListObject 控制項](#runtimeaddin)  
   
- 如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
+  如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
   
 ##  <a name="designtime"></a> 在設計階段加入 ListObject 控制項  
  有幾種方式可在文件層級專案中，於設計階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表：在 Excel 中、透過 Visual Studio 的 [工具箱] ，以及透過 [資料來源]  視窗。  

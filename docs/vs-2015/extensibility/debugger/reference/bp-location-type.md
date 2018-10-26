@@ -17,12 +17,12 @@ ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6feb9f65789ea401b1ee79e2b23f265798fcd18e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d84cb1f79a86de5ad9c9865fcea6a0f46171d7b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909714"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

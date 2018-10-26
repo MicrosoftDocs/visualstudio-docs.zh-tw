@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses |Microsoft 文件
+title: IDebugClassField::EnumNestedClasses |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 382e822a03a7a4e4a9ae30b41b4b9a4a7ec1643f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a313e27c3dcbca0136b00bfb789e444174474369
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937522"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-建立這個類別中的巢狀類別的列舉值。  
+建立此類別中巢狀類別的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,15 +41,15 @@ int EnumNestedClasses(
   
 #### <a name="parameters"></a>參數  
  `ppEnum`  
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表巢狀類別的清單。 如果沒有巢狀的類別會傳回 null 值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀類別的清單。 如果沒有巢狀的類別，則傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功的話，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。  
   
- 巢狀的類別是另一個類別中定義的類別。 例如:   
+ 巢狀的類別是定義在另一個類別的類別。 例如:   
   
 ```  
 class RootClass {  
@@ -57,7 +57,7 @@ class RootClass {
 };  
 ```  
   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉會包含一個物件，代表`NestedClass`類別。  
+ [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉型別會包含一個物件，表示`NestedClass`類別。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

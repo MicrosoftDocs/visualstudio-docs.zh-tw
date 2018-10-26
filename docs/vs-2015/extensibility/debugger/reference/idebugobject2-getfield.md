@@ -17,12 +17,12 @@ ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d83994446bf38ec7a8c5a28f45aab0688e99dd2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebf3bda946ced80dd0e0ff114c14aff730aef63e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924300"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

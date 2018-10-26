@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915772"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "49294290"
   
  上圖與相關的一些注意事項：  
   
--   `IDispatch` 已標示為選擇性組態物件中。 具體來說，是選擇性的以瀏覽物件上設定介面。  
+- `IDispatch` 已標示為選擇性組態物件中。 具體來說，是選擇性的以瀏覽物件上設定介面。  
   
--   `IVsDebuggableProjectCfg` 標示為在組態物件中，選擇性，但需要偵錯支援。  
+- `IVsDebuggableProjectCfg` 標示為在組態物件中，選擇性，但需要偵錯支援。  
   
--   `IVsProjectCfg2` 標示為在組態物件中，選擇性，但需要群組支援的輸出。  
+- `IVsProjectCfg2` 標示為在組態物件中，選擇性，但需要群組支援的輸出。  
   
--   `Config Provider`物件標示為選擇性的物件，但選項是實作它的位置。 您可能會實作物件，或個別的物件上的 project 物件。  
+- `Config Provider`物件標示為選擇性的物件，但選項是實作它的位置。 您可能會實作物件，或個別的物件上的 project 物件。  
   
--   `IVsCfgProvider2` 所需的支援平台和組態編輯。 `IVsCfgProvider` 就已足夠，如果您不會實作該功能。  
+- `IVsCfgProvider2` 所需的支援平台和組態編輯。 `IVsCfgProvider` 就已足夠，如果您不會實作該功能。  
   
--   其中某些物件顯示圖表中，為不同的物件可以結合到相同的類別，在可行的情況取決於您特定的設計需求。 在這一節的其他主題，不過，物件與這些物件相關聯的介面將會討論根據圖表中所示的案例。  
+- 其中某些物件顯示圖表中，為不同的物件可以結合到相同的類別，在可行的情況取決於您特定的設計需求。 在這一節的其他主題，不過，物件與這些物件相關聯的介面將會討論根據圖表中所示的案例。  
   
--   某些物件會個別實作。 比方說，專案和方案建置會發生在個別的執行緒以及所要物件，描述組建組態分開管理組建生活物件中。  
+- 某些物件會個別實作。 比方說，專案和方案建置會發生在個別的執行緒以及所要物件，描述組建組態分開管理組建生活物件中。  
   
- 如需的組態物件的介面和在上圖中的組態提供者物件介面的詳細資訊，請參閱[專案組態物件](../../extensibility/internals/project-configuration-object.md)。 颾魤 ㄛ[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)上的組態產生器及建置相依性物件的介面，提供詳細的資訊並[管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)進一步描述連接到組態部署器部署相依性物件的介面。 最後，[輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)描述的輸出群組和輸出物件的介面，以及使用的屬性頁來檢視和設定組態相依屬性。  
+  如需的組態物件的介面和在上圖中的組態提供者物件介面的詳細資訊，請參閱[專案組態物件](../../extensibility/internals/project-configuration-object.md)。 颾魤 ㄛ[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)上的組態產生器及建置相依性物件的介面，提供詳細的資訊並[管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)進一步描述連接到組態部署器部署相依性物件的介面。 最後，[輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)描述的輸出群組和輸出物件的介面，以及使用的屬性頁來檢視和設定組態相依屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

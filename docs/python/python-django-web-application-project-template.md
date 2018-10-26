@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499539"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100961"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
@@ -56,7 +56,7 @@ Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命
 
     ![主控台](media/template-django-console-sync-db.png)
 
-- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 *settings.py* 中的 `STATIC_ROOT` 所指定的路徑。 當您[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) 時，系統會自動收集靜態檔案作為發佈作業的一部分。
+- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 *settings.py* 中的 `STATIC_ROOT` 所指定的路徑。
 
     ![主控台](media/template-django-console-collect-static.png)
 

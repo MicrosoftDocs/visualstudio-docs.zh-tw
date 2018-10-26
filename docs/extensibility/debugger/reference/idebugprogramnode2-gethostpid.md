@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid |Microsoft 文件
+title: IDebugProgramNode2::GetHostPid |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33296937ec969deb204d98363afd8ec8af9f1e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d6931efe0025d1437e91a0194807e8ea7c9783b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854347"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 取得裝載程式的處理序的系統處理序識別碼。  
@@ -41,13 +41,13 @@ int GetHostPid (
   
 #### <a name="parameters"></a>參數  
  `pdwHostPid`  
- [out]傳回為裝載處理序的系統處理序識別碼。  
+ [out]傳回裝載處理序的系統處理序識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CProgram`實作物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
 ```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    

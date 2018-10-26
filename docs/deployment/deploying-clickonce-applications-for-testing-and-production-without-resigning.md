@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8e84397a5c08a00b704bc571ca1eba3361bfd6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846586"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>不重新簽署部署 ClickOnce 應用程式測試和生產環境的伺服器
 本文說明.NET Framework 3.5 版可讓部署 ClickOnce 應用程式，從多個網路位置，而不重新簽署，或變更 ClickOnce 資訊清單中所引入的 ClickOnce 的功能。  
@@ -54,11 +54,11 @@ ms.locfileid: "39081393"
   
  以下是兩個範例說明此點。 在第一個範例中，您可以發行 ClickOnce 應用程式沒有任何`deploymentProvider`標記，而且您要求使用者安裝從 http://www.adatum.com/MyApplication/ 。 如果您決定您想要將應用程式的下一個更新發行 http://subdomain.adatum.com/MyApplication/ ，沒有其他方法的這表示部署資訊清單位於 http://www.adatum.com/MyApplication/。 您可以執行下列其中一種：  
   
--   告知使用者解除安裝舊的版本，並從新位置中安裝新的版本。  
+- 告知使用者解除安裝舊的版本，並從新位置中安裝新的版本。  
   
--   在 包含更新 http://www.adatum.com/MyApplication/ ，其中包含`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/ 。  
+- 在 包含更新 http://www.adatum.com/MyApplication/ ，其中包含`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/ 。  
   
- 在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，但後來將它移除。 一次新的版本不含`deploymentProvider`下載用戶端，您無法將重新導向到用於更新，直到您發行的版本，具有應用程式的路徑`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置，不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`，這是指 http://subdomain.adatum.com/MyApplication/ ，則下一次的更新會失敗。  
+  在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，但後來將它移除。 一次新的版本不含`deploymentProvider`下載用戶端，您無法將重新導向到用於更新，直到您發行的版本，具有應用程式的路徑`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置，不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`，這是指 http://subdomain.adatum.com/MyApplication/ ，則下一次的更新會失敗。  
   
 ## <a name="create-a-deployment"></a>建立部署  
  如需建立可以從不同的網路位置進行部署的部署的逐步指引，請參閱[逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  

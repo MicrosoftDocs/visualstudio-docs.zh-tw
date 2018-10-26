@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828672"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 Visual Studio Visualization and Modeling SDK 的不變性 API 可讓程式鎖定的特定領域語言 (DSL) 模型的部分或全部，如此可以讀取但不是會變更。 無法使用這個唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>鎖定值
  鎖定可以設定存放區、 磁碟分割，或個別的 ModelElement。 鎖定是`Flags`列舉型別： 您可以結合使用其值 '&#124;'。
 
--   鎖定的 ModelElement 永遠會包含其資料分割的鎖定。
+- 鎖定的 ModelElement 永遠會包含其資料分割的鎖定。
 
--   鎖定資料分割一律會包含存放區的鎖定。
+- 鎖定資料分割一律會包含存放區的鎖定。
 
- 您無法在磁碟分割上設定鎖定或儲存，並同時停用個別的項目上的鎖定。
+  您無法在磁碟分割上設定鎖定或儲存，並同時停用個別的項目上的鎖定。
 
 |值|這表示如果`IsLocked(Value)`為 true|
-|-----------|------------------------------------------|
+|-|-|
 |無|沒有限制。|
 |屬性|無法變更定義域屬性的項目。 這不適用於關聯性中的網域類別的角色所產生的屬性。|
 |新增|在資料分割，則無法建立新的項目和連結，或儲存。<br /><br /> 不適用於`ModelElement`。|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  若要確定使用者隨時都可以刪除項目，即使其他程式碼會呼叫 `SetLocks(Lock.Delete):`

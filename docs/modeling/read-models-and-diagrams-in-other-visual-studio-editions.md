@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 466c9c6598102381e0b2163b800cc2a9616d7fff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936975"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 在不支援模型建立的 Visual Studio 版本中開啟模型時，會以唯讀模式開啟模型。 在此模式中，您可以變更圖表的版面配置，但是無法變更模型。
@@ -47,16 +47,16 @@ ms.locfileid: "47859675"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>您可以在唯讀模式中進行的變更
  如果您在不支援模型建立的 Visual Studio 版本中開啟模型和其圖表，則無法變更模型。 也就是說，您無法變更圖表或模型總管中所顯示的項目和關聯性。 不過，您可以對圖表的版面配置進行一些變更：
 
--   重新排列圖表上的圖形和連接器。
+- 重新排列圖表上的圖形和連接器。
 
--   展開和摺疊圖形。
+- 展開和摺疊圖形。
 
- 您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。
+  您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。
 
 ## <a name="RelatedTopics"></a> 相關的主題
 
 |標題|描述|
-|-----------|-----------------|
+|-|-|
 |[相依性圖表︰參考](../modeling/layer-diagrams-reference.md)|分層圖會顯示現有或提議之架構的結構。 撰寫程式碼時，可以針對分層圖自動進行驗證。|
 
 ## <a name="see-also"></a>另請參閱

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815737"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說︰ 發行 Visual Studio 擴充功能
 
@@ -39,7 +39,7 @@ ms.locfileid: "39566800"
 
 1. 更新延伸模組 *.vsixmanifest*有關產品名稱、 作者和版本的正確資訊。
 
-  ![更新延伸模組 vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![更新延伸模組 vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. 在建置您的延伸模組**發行**模式。 現在您的延伸模組會封裝成 VSIX \bin\Release 資料夾中。
 
@@ -67,7 +67,7 @@ ms.locfileid: "39566800"
 
 5. 按一下 **發行擴充功能**。  此選項可讓您巡覽至所有延伸模組的 [管理] 頁面。 如果您還沒有發佈者帳戶，系統會提示您建立一個在此階段。
 
-  ![上傳至 Marketplace](media/upload-to-marketplace.png)
+   ![上傳至 Marketplace](media/upload-to-marketplace.png)
 
 6. 選擇您想要用來上傳您的延伸模組的發行者。 您可以變更 「 發行者 」 按一下列在左側的 「 發行者 」 名稱。 按一下 **新的延伸模組**，然後選取**Visual Studio**。
 
@@ -85,29 +85,29 @@ ms.locfileid: "39566800"
     
    * **標誌**用於您的延伸模組。 此標誌是從自動填入*source.extension.vsixmanifest*檔案提供。
     
-    * **簡短描述**您的擴充功能的作用。 這項描述是從自動填入*source.extension.vsixmanifest*檔案。
+     * **簡短描述**您的擴充功能的作用。 這項描述是從自動填入*source.extension.vsixmanifest*檔案。
     
-    * **概觀**是包含螢幕擷取畫面以及您的擴充功能的詳細的資訊的好地方。
+     * **概觀**是包含螢幕擷取畫面以及您的擴充功能的詳細的資訊的好地方。
     
-    * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 擴充功能將在上運作。 您的延伸模組只會安裝這些版本。
+     * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 擴充功能將在上運作。 您的延伸模組只會安裝這些版本。
     
-    * * * 支援 Visual Studio 版本可讓您選擇哪些版本的 Visual Studio 會作用於您的延伸模組。 您的延伸模組只會安裝這些版本。
+     * * * 支援 Visual Studio 版本可讓您選擇哪些版本的 Visual Studio 會作用於您的延伸模組。 您的延伸模組只會安裝這些版本。
     
-    * **型別**： 最常見的延伸模組的類型是**工具**。
+     * **型別**： 最常見的延伸模組的類型是**工具**。
     
-    * **類別**。 挑選最多 3 是最適合您的延伸模組。
+     * **類別**。 挑選最多 3 是最適合您的延伸模組。
     
-    * **標記**是關鍵字，協助使用者尋找擴充功能。 標記可協助增加您的擴充功能，在 Marketplace 中搜尋相關性。
+     * **標記**是關鍵字，協助使用者尋找擴充功能。 標記可協助增加您的擴充功能，在 Marketplace 中搜尋相關性。
     
-    * **定價分類**就是您的擴充功能的成本。
+     * **定價分類**就是您的擴充功能的成本。
     
-    * **原始程式碼存放庫**可讓您與社群分享您的程式碼的連結。
+     * **原始程式碼存放庫**可讓您與社群分享您的程式碼的連結。
     
-    * **您的擴充功能可讓問與答**可讓使用者保留在您的延伸模組項目頁面上的問題。
+     * **您的擴充功能可讓問與答**可讓使用者保留在您的延伸模組項目頁面上的問題。
 
 9. 按一下 **儲存並上傳**。 如此的選項會讓您回到您的發行者管理頁面。 您的延伸模組尚未發佈。 若要發佈您的延伸模組，以滑鼠右鍵按一下您的延伸模組並選取**設為公用**。 您可以檢視您的延伸模組的外觀類似 Marketplace 上選取**檢視延伸模組**。 取得數字，按一下**報表**。 若要變更您的延伸模組，請按一下**編輯**。
 
-  ![延伸模組項目功能表](media/extension-entry-menu.png)
+   ![延伸模組項目功能表](media/extension-entry-menu.png)
 
 10. 按一下後**設為公用**，您的擴充功能現在是公用的。 您的擴充功能在 Visual Studio Marketplace 內搜尋。
 
@@ -119,17 +119,17 @@ Marketplace 可支援授與其他使用者的權限來存取和管理發佈者�
 
 2. 選取 **成員**，然後按一下**新增**。
 
-  ![新增額外的使用者](media/add-users.png)
+   ![新增額外的使用者](media/add-users.png)
 
 3. 然後，您可以指定您想要新增並授與正確的層級的存取權之使用者的電子郵件地址**選取角色**。  您可以從下列選項中選擇：
 
-  * **建立者**： 使用者可發行擴充功能，但是您無法檢視或管理其他使用者所發行的擴充功能。
+   * **建立者**： 使用者可發行擴充功能，但是您無法檢視或管理其他使用者所發行的擴充功能。
   
-  * **讀取器**： 使用者可以檢視擴充功能，但是您無法發行或管理擴充功能。
+   * **讀取器**： 使用者可以檢視擴充功能，但是您無法發行或管理擴充功能。
   
-  * **參與者**： 使用者可以發佈和管理擴充功能，但是您無法編輯發行者設定或管理存取權。
+   * **參與者**： 使用者可以發佈和管理擴充功能，但是您無法編輯發行者設定或管理存取權。
   
-  * **擁有者**： 使用者可以發佈和管理擴充功能、 編輯發行者設定和管理存取權。
+   * **擁有者**： 使用者可以發佈和管理擴充功能、 編輯發行者設定和管理存取權。
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝延伸模組
 

@@ -1,5 +1,5 @@
 ---
-title: 更新您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
+title: 更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,34 +15,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38734366f5b7d19ef0780c8ef998efb19e50a46f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: aeb36f92533992161e2c7fa4f7bbcd3537fd0ebc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919396"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：  
   
--   [GetVstoObject 和 HasVstoObject 方法](#GetVstoObject)  
+- [GetVstoObject 和 HasVstoObject 方法](#GetVstoObject)  
   
--   [文件層級專案中之產生的類別](#generatedclasses)  
+- [文件層級專案中之產生的類別](#generatedclasses)  
   
--   [文件上的 Windows Form 控制項](#winforms)  
+- [文件上的 Windows Form 控制項](#winforms)  
   
--   [Word 內容控制項事件](#ccevents)  
+- [Word 內容控制項事件](#ccevents)  
   
--   [OLEObject 和 OLEControl 類別](#ole)  
+- [OLEObject 和 OLEControl 類別](#ole)  
   
--   [Controls.Item(Object) 屬性](#itemproperty)  
+- [Controls.Item(Object) 屬性](#itemproperty)  
   
--   [衍生自 CollectionBase 的集合](#collections)  
+- [衍生自 CollectionBase 的集合](#collections)  
   
- 您也必須移除`Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`以及參考`Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy`類別之 Excel 專案的目標重定為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。 Visual Studio 不會為您移除這個屬性或類別參考。  
+  您也必須移除`Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`以及參考`Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy`類別之 Excel 專案的目標重定為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。 Visual Studio 並不會為您移除這個屬性或類別參考。  
   
 ## <a name="remove-the-excellocale1033-attribute-from-excel-projects"></a>從 Excel 專案中移除 ExcelLocale1033 屬性  
- `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`已從 Visual Studio 2010 Tools for Office runtime 為目標的方案使用的部分移除[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本中的 Common Language Runtime (CLR) 會一律將地區設定 ID 1033 傳遞給 Excel 物件模型，而您也無法再使用這個屬性停用此行為。 如需詳細資訊，請參閱[全球化和當地語系化 Excel 方案的](../vsto/globalization-and-localization-of-excel-solutions.md)。  
+ `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`已從 Visual Studio 2010 Tools for Office runtime 為目標的方案使用部分[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本中的 Common Language Runtime (CLR) 會一律將地區設定 ID 1033 傳遞給 Excel 物件模型，而您也無法再使用這個屬性停用此行為。 如需詳細資訊，請參閱 <<c0> [ 全球化和當地語系化 Excel 方案的](../vsto/globalization-and-localization-of-excel-solutions.md)。  
   
 ### <a name="to-remove-the-excellocale1033attribute"></a>移除 ExcelLocale1033Attribute  
   
@@ -53,7 +53,7 @@ ms.locfileid: "34767526"
     > [!NOTE]  
     >  在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。  
   
-3.  找出 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`，並將它從檔案移除或加上註解。  
+3.  找出 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`，並將它從檔案移除或加以註解化。  
   
     ```vb  
     <Assembly: ExcelLocale1033Proxy(True)>  
@@ -70,7 +70,7 @@ ms.locfileid: "34767526"
   
 1.  請在 Visual Studio 中開啟專案，再開啟 [方案總管] 。  
   
-2.  在**方案總管] 中**，開啟捷徑功能表*ThisAddin.cs* （適用於 C#) 或*ThisAddin.vb* （適用於 Visual Basic 中)，然後選擇 [**檢視程式碼**.  
+2.  中**方案總管] 中**，開啟捷徑功能表*ThisAddin.cs* (如C#) 或*ThisAddin.vb* （適用於 Visual Basic 中)，然後選擇 [**檢視程式碼**.  
   
 3.  在程式碼編輯器的 `VSTO generated code` 區域中，移除或註解化下列程式碼行。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "34767526"
     ```  
   
 ##  <a name="GetVstoObject"></a> 更新使用 GetVstoObject 和 HasVstoObject 方法的程式碼  
- 在以 .NET Framework 3.5 為目標的專案中，`GetVstoObject` 或 `HasVstoObject` 方法在專案下列其中一個原生物件上可用為擴充方法：<xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Interop.Excel.Workbook>、<xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.ListObject>。 當您呼叫這些方法時，不需要傳遞參數。 下列程式碼範例示範如何使用 GetVstoObject 方法，在 Word VSTO 增益集以.NET Framework 3.5 為目標。  
+ 在以 .NET Framework 3.5 為目標的專案中，`GetVstoObject` 或 `HasVstoObject` 方法在專案下列其中一個原生物件上可用為擴充方法：<xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Interop.Excel.Workbook>、<xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.ListObject>。 當您呼叫這些方法時，不需要傳遞參數。 下列程式碼範例示範如何使用 GetVstoObject 方法中的 Word VSTO 增益集以.NET Framework 3.5 為目標。  
   
 ```vb  
 Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
@@ -99,56 +99,56 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，您必須修改程式碼，以下列方式之一存取這些方法：  
   
--   您仍然可以在後列物件上存取這些方法當成擴充方法： <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Excel.Workbook>、 <xref:Microsoft.Office.Interop.Excel.Worksheet>或 <xref:Microsoft.Office.Interop.Excel.ListObject> 物件。 不過，您現在必須將 `Globals.Factory` 屬性傳回的物件傳遞給這些方法。  
+- 您仍然可以在後列物件上存取這些方法當成擴充方法： <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Excel.Workbook>、 <xref:Microsoft.Office.Interop.Excel.Worksheet>或 <xref:Microsoft.Office.Interop.Excel.ListObject> 物件。 不過，您現在必須將 `Globals.Factory` 屬性傳回的物件傳遞給這些方法。  
   
-    ```vb  
-    Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
-        Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory)  
-    ```  
+  ```vb  
+  Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
+      Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory)  
+  ```  
   
-    ```csharp  
-    Microsoft.Office.Tools.Word.Document vstoDocument =   
-        Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory);  
-    ```  
+  ```csharp  
+  Microsoft.Office.Tools.Word.Document vstoDocument =   
+      Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory);  
+  ```  
   
--   或者，您可以存取位於 `Globals.Factory` 屬性傳回之物件上的這些方法。 當您以這種方式存取這些方法時，您必須將想要擴充的原生物件傳遞給方法。  
+- 或者，您可以存取位於 `Globals.Factory` 屬性傳回之物件上的這些方法。 當您以這種方式存取這些方法時，您必須將想要擴充的原生物件傳遞給方法。  
   
-    ```vb  
-    Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
-        Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument)  
-    ```  
+  ```vb  
+  Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
+      Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument)  
+  ```  
   
-    ```csharp  
-    Microsoft.Office.Tools.Word.Document vstoDocument =   
-        Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
-    ```  
+  ```csharp  
+  Microsoft.Office.Tools.Word.Document vstoDocument =   
+      Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
+  ```  
   
- 如需詳細資訊，請參閱[擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ##  <a name="generatedclasses"></a> 更新使用產生的類別的執行個體文件層級專案中的程式碼  
  在以 .NET Framework 3.5 為目標的文件層級專案中，專案中的產生的類別衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的下列類別：  
   
--   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>  
+- `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>  
   
--   `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，上文列出的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 類型是介面，而不是類別。 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中之產生的類別，衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的下列新類別：  
+  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，上文列出的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 類型是介面，而不是類別。 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中之產生的類別，衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的下列新類別：  
   
--   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
+- `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
--   `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.WorkbookBase>  
+- `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.WorkbookBase>  
   
--   `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.WorksheetBase>  
+- `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.WorksheetBase>  
   
--   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheetBase>  
+- `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheetBase>  
   
- 如果專案中的程式碼將參考的其中一個產生的類別執行個體，視為其衍生來源的基底類別，您必須修改程式碼。  
+  如果專案中的程式碼將參考的其中一個產生的類別執行個體，視為其衍生來源的基底類別，您必須修改程式碼。  
   
- 例如，在以 .NET Framework 3.5 為目標的 Excel 活頁簿專案中，您可能有個 helper 方法，會對專案中之產生的 `Sheet`*n* 類別執行個體執行一些工作。  
+  例如，在以 .NET Framework 3.5 為目標的 Excel 活頁簿專案中，您可能有個 helper 方法，會對專案中之產生的 `Sheet`*n* 類別執行個體執行一些工作。  
   
 ```vb  
 Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.Worksheet)  
@@ -191,13 +191,13 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     ```  
   
 ##  <a name="winforms"></a> 使用文件上的 Windows Form 控制項的更新程式碼  
- 您必須新增**使用**(C#) 或**匯入**(Visual Basic) 陳述式<xref:Microsoft.Office.Tools.Excel>或<xref:Microsoft.Office.Tools.Word>使用要加入 Windows Form 控制項屬性的任何程式碼檔案頂端的命名空間以程式設計方式控制文件或工作表。  
+ 您必須新增**使用**(C#) 或**匯入**(Visual Basic) 陳述式<xref:Microsoft.Office.Tools.Excel>或是<xref:Microsoft.Office.Tools.Word>加入 Windows 中使用控制項屬性的任何程式碼檔案頂端的命名空間以程式設計方式 form 控制項加入文件或工作表。  
   
  在以 .NET Framework 3.5 為目標的專案中，加入 Windows Form 控制項的方法(例如 `AddButton` 方法)，都是在 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 和 <xref:Microsoft.Office.Tools.Word.ControlCollection> 類別中所定義。  
   
- 在目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，這些方法是擴充方法所提供的控制項屬性。 若要使用這些擴充方法，方法使用所在的程式碼檔中必須有 **N:Microsoft.Office.Tools.Excel** 或 **N:Microsoft.Office.Tools.Word** 命名空間的 <xref:Microsoft.Office.Tools.Excel> 或 <xref:Microsoft.Office.Tools.Word> 陳述式。 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的新專案中，會自動產生這個陳述式。 不過，以 .NET Framework 3.5 為目標的專案不會自動加入這個陳述式，所以您必須在重定專案目標時將其加入。  
+ 專案中的 目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，這些方法是擴充方法所提供的控制項屬性。 若要使用這些擴充方法，方法使用所在的程式碼檔中必須有 **N:Microsoft.Office.Tools.Excel** 或 **N:Microsoft.Office.Tools.Word** 命名空間的 <xref:Microsoft.Office.Tools.Excel> 或 <xref:Microsoft.Office.Tools.Word> 陳述式。 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的新專案中，會自動產生這個陳述式。 不過，以 .NET Framework 3.5 為目標的專案不會自動加入這個陳述式，所以您必須在重定專案目標時將其加入。  
   
- 如需詳細資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ##  <a name="ccevents"></a> 更新處理 Word 內容控制項事件的程式碼  
  在以 .NET Framework 3.5 為目標的專案中，Word 內容控制項的事件是由泛型 <xref:System.EventHandler%601> 委派所處理。 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些事件是由其他委派處理。  
@@ -205,7 +205,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
  下表列出在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，與它們相關聯的 Word 內容控制項事件和委派。  
   
 |Event - 事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting>|<xref:Microsoft.Office.Tools.Word.ContentControlDeletingEventHandler>|  
@@ -218,16 +218,16 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，<xref:Microsoft.Office.Tools.Excel.ControlSite> 和 <xref:Microsoft.Office.Tools.Word.ControlSite> 介面已取代這些類別。 您必須修改原參考 `Microsoft.Office.Tools.Excel.OLEObject` 和 `Microsoft.Office.Tools.Word.OLEControl` 的程式碼，改為參考 <xref:Microsoft.Office.Tools.Excel.ControlSite> 和 <xref:Microsoft.Office.Tools.Word.ControlSite>。 除了新名稱以外，這些控制項的行為方式和它們在以 .NET Framework 3.5 為目標的專案中一樣。  
   
- 如需詳細資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ##  <a name="itemproperty"></a> 更新使用 controls.item （object） 屬性的程式碼  
- 在.NET Framework 3.5 為目標的專案中，您可以使用 Microsoft.Office.Tools.Word.Document.Controls Item(Object) 屬性或`Microsoft.Office.Tools.Excel.Worksheet.Controls`來判斷文件或工作表是否有指定的控制項集合。  
+ 在.NET Framework 3.5 為目標的專案中，您可以使用 Microsoft.Office.Tools.Word.Document.Controls Item(Object) 屬性或`Microsoft.Office.Tools.Excel.Worksheet.Controls`集合來判斷文件或工作表是否有指定的控制項。  
   
- 在目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，已經從這些集合移除 Item(Object) 屬性。 若要判斷文件或工作表是否包含指定的控制項，請使用 Contains(System.Object) 方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>或<xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A>集合改為。  
+ 專案中的 目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，已移除 Item(Object) 屬性從這些集合。 若要判斷文件或工作表是否包含指定的控制項，請使用 Contains(System.Object) 方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>或<xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A>集合改為。  
   
- 文件和工作表的控制項集合的相關資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細文件和工作表的控制項集合的相關資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
-##  <a name="collections"></a> 更新使用衍生自 CollectionBase 集合的程式碼  
+##  <a name="collections"></a> 更新使用衍生自 CollectionBase 的集合的程式碼  
  在.NET Framework 3.5 為目標的專案中，有數個集合中的型別[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]衍生自<xref:System.Collections.CollectionBase>類別，例如`Microsoft.Office.Tools.SmartTagCollection`， `Microsoft.Office.Tools.Excel.ControlCollection`，和`Microsoft.Office.Tools.Word.ControlCollection`。  
   
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些集合類型現在是非衍生自 <xref:System.Collections.CollectionBase>的介面。 這些集合類型也不再提供某些成員，例如 <xref:System.Collections.CollectionBase.Capacity%2A>、 <xref:System.Collections.CollectionBase.List%2A>和 <xref:System.Collections.CollectionBase.InnerList%2A>。  
@@ -235,7 +235,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 ## <a name="see-also"></a>另請參閱  
  [移轉至.NET Framework 4 或更新版本的 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [內容控制項](../vsto/content-controls.md)   
- [擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)  
   

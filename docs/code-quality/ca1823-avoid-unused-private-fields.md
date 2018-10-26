@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3a9ef0e63e13ab6e05025ef1a24c4032feb5eacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923702"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免包含未使用的私用欄位
+
 |||
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

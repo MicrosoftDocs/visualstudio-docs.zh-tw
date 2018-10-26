@@ -15,12 +15,12 @@ ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa3165b92fbd985799ceba85922d6c41ba2eadc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33dc72fb9fe438993a129dbd7389f9b1274b545b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898092"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

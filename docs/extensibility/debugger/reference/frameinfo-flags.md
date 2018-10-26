@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS |Microsoft 文件
+title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b23e9f87e807b3eec0e3ad35ea5414ac8dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd2273e7ca2769c5dde43d1c29f08989503659f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949119"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-指定要擷取堆疊框架物件的相關資訊。  
+指定要擷取的堆疊框架物件有關的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -135,10 +135,10 @@ public enum enum_FRAMEINFO_FLAGS {
  初始化/使用`m_pModule`欄位。  
   
  FIF_FUNCNAME_FORMAT  
- 格式函式名稱。 在傳回的結果`m_bstrFunName`欄位及任何其他欄位都已填寫。  
+ 格式函式名稱。 在傳回的結果`m_bstrFunName`欄位和任何其他欄位會填入。  
   
  FIF_FUNCNAME_RETURNTYPE  
- 將傳回型別以`m_bstrFuncName`欄位。  
+ 將傳回的型別以`m_bstrFuncName`欄位。  
   
  FIF_FUNCNAME_ARGS  
  將加入的引數`m_bstrFuncName`欄位。  
@@ -153,31 +153,31 @@ public enum enum_FRAMEINFO_FLAGS {
  新增的行數`m_bstrFuncName`欄位。  
   
  FIF_FUNCNAME_OFFSET  
- 將加入至`m_bstrFuncName`欄位這一行開頭處的位元組位移，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果無法使用行號，以位元組為單位加入位移從函式的開頭。  
+ 將加入至`m_bstrFuncName`欄位從行開頭的位元組位移，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果沒有可用的行號，以位元組為單位將位移從函式的開頭。  
   
  FIF_FUNCNAME_ARGS_TYPES  
  將每個函式引數的類型加入`m_bstrFuncName`欄位。  
   
  FIF_FUNCNAME_ARGS_NAMES  
- 將每個函式引數的名稱加入`m_bstrFuncName`欄位。  
+ 新增至每個函式引數名稱`m_bstrFuncName`欄位。  
   
  FIF_FUNCNAME_ARGS_VALUES  
  將每個函式引數的值加入`m_bstrFuncName`欄位。  
   
  FIF_FUNCNAME_ARGS_ALL  
- 將類型、 名稱和值的所有引數的`m_bstrFuncName`欄位。  
+ 將型別、 名稱和值的所有引數`m_bstrFuncName`欄位。  
   
  FIF_ARGS_TYPES  
- 引數型別都會擷取並格式化。  
+ 引數類型會擷取並格式化。  
   
  FIF_ARGS_NAMES  
- 引數名稱都會擷取並格式化。  
+ 引數名稱會擷取並格式化。  
   
  FIF_ARGS_VALUES  
- 引數的值都會擷取並格式化。  
+ 將引數值會擷取並格式化。  
   
  FIF_ARGS_ALL  
- 擷取並格式化類型、 名稱和所有引數的值。  
+ 擷取並格式化型別、 名稱和所有的引數的值。  
   
  FIF_ARGS_NOFORMAT  
  指定不格式化的引數 （例如，進行不加入開啟和關閉前後的引數清單括號也新增引數之間的分隔符號）。  
@@ -186,18 +186,18 @@ public enum enum_FRAMEINFO_FLAGS {
  指定擷取引數的值時，不應該使用函式 （屬性） 評估。  
   
  FIF_FILTER_NON_USER_CODE  
- 篩選非使用者程式碼框架，因此不會包含為偵錯引擎。  
+ 偵錯引擎是篩選非使用者程式碼框架，因此它們都不包含。  
   
  FIF_ARGS_NO_TOSTRING  
  不允許`ToString()`函式評估或格式傳回函式引數時。  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- 從裝載的應用程式定義域，而不是使用裝載處理序，應該取得框架資訊。  
+ 從裝載的應用程式定義域，而不是裝載處理序，就應該取得框架資訊。  
   
 ## <a name="remarks"></a>備註  
- 這些旗標會傳遞至[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)和[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法以指出哪些欄位是在初始化[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  
+ 這些旗標會傳遞給[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)並[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法以指出哪些欄位是在初始化[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  
   
- 這些旗標也可用來表示的哪些欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構時，會使用並有效會傳回這個結構。 這些值可能會合併使用位元`OR`。  
+ 這些旗標也可用來表示欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構會使用和有效時，會傳回這個結構。 這些值可能會合併的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

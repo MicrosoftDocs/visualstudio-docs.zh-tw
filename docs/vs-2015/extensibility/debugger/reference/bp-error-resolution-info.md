@@ -17,12 +17,12 @@ ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f00ce48d2aa2089ba88652c5f616f9a9f75d5422
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ffe45810a54bb1cc7182e957b2876e8190f2c5ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812305"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

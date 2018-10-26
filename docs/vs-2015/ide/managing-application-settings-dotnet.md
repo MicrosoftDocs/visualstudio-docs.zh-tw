@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866125"
 ---
 # <a name="managing-application-settings-net"></a>管理應用程式設定 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49289506"
   
  應用程式設定根據範圍可分成兩種類型：  
   
--   應用程式範圍的設定可用於 Web 服務的 URL 或資料庫連接字串等資訊。 這些值與應用程式相關聯。 因此，使用者無法在執行時期變更。  
+- 應用程式範圍的設定可用於 Web 服務的 URL 或資料庫連接字串等資訊。 這些值與應用程式相關聯。 因此，使用者無法在執行時期變更。  
   
--   使用者範圍的設定可用於保留表單最後一個位置或字型偏好設定等資訊。 使用者可以在執行階段變更這些值。  
+- 使用者範圍的設定可用於保留表單最後一個位置或字型偏好設定等資訊。 使用者可以在執行階段變更這些值。  
   
- 您可以使用 [範圍]  屬性變更設定的類型。  
+  您可以使用 [範圍]  屬性變更設定的類型。  
   
- 專案系統會將應用程式設定儲存在兩個 XML 檔案中：一個是您建立第一個應用程式設定時所建立的 app.config 檔案，另一個是在執行時期，當執行應用程式的使用者變更任何使用者設定的值時，所建立的 user.config 檔案。 請注意，使用者設定中的變更不會寫入磁碟中，除非應用程式明確呼叫方法以執行這個動作。  
+  專案系統會將應用程式設定儲存在兩個 XML 檔案中：一個是您建立第一個應用程式設定時所建立的 app.config 檔案，另一個是在執行時期，當執行應用程式的使用者變更任何使用者設定的值時，所建立的 user.config 檔案。 請注意，使用者設定中的變更不會寫入磁碟中，除非應用程式明確呼叫方法以執行這個動作。  
   
 ## <a name="creating-application-settings-at-design-time"></a>在設計階段建立應用程式設定  
  在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定] 頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。  

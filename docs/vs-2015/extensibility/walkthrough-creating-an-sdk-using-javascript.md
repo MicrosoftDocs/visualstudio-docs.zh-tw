@@ -13,23 +13,23 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2048d8acca517ce4e2c032df3dd61e1c26231a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9b495ed1bc5ada2adaa26e8382e23d9071eeab3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931268"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說將說明如何使用 JavaScript 來建立簡單的數學 SDK 作為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分為下列部分：  
   
--   [若要建立 SimpleMathVSIX 擴充功能 SDK 專案](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [若要建立 SimpleMathVSIX 擴充功能 SDK 專案](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [若要建立範例應用程式使用 SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [若要建立範例應用程式使用 SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- 適用於 JavaScript，沒有任何類別庫專案型別。 在本逐步解說中，直接在 VSIX 專案中建立範例 arithmetic.js 檔案。 在實務上，我們建議您先建置和測試 Windows 市集應用程式的 JavaScript 和 CSS 檔案 — 例如，藉由使用**空白應用程式**範本 — 您將它們放在 VSIX 專案之前。  
+  適用於 JavaScript，沒有任何類別庫專案型別。 在本逐步解說中，直接在 VSIX 專案中建立範例 arithmetic.js 檔案。 在實務上，我們建議您先建置和測試 Windows 市集應用程式的 JavaScript 和 CSS 檔案 — 例如，藉由使用**空白應用程式**範本 — 您將它們放在 VSIX 專案之前。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  

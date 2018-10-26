@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::GetCount |Microsoft 文件
+title: IEnumDebugBoundBreakpoints2::GetCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b41f1df51ddfeca8e36e164792625983fe4d67b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e248a438b47489638ef1a9e167589a8cc7a861e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854620"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 列舉中傳回的項目數。  
@@ -44,10 +44,10 @@ int GetCount(
  [out]列舉中傳回的項目數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法不是指定的自訂 COM 列舉介面的一部分`Next`， `Clone`， `Skip`，和`Reset`必須實作的方法。  
+ 這個方法不是指定的自訂 COM 列舉型別介面的一部分`Next`， `Clone`， `Skip`，和`Reset`必須實作的方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

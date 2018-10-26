@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b02adab3b0ba032a39ce73c08bd287213ef2ffc4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853944"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何： 以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可在 Microsoft Office Word 文件中設定搜尋選項的選取項目：  
   
--   設定個別屬性<xref:Microsoft.Office.Interop.Word.Find>物件。  
+- 設定個別屬性<xref:Microsoft.Office.Interop.Word.Find>物件。  
   
--   使用引數<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法的<xref:Microsoft.Office.Interop.Word.Find>物件。  
+- 使用引數<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法的<xref:Microsoft.Office.Interop.Word.Find>物件。  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="use-properties-of-a-find-object"></a>使用尋找物件的屬性  
  下列程式碼設定的屬性<xref:Microsoft.Office.Interop.Word.Find>物件來搜尋目前的選取範圍中的文字。 請注意，搜尋準則，例如搜尋順向、 換行和搜尋的文字內容的<xref:Microsoft.Office.Interop.Word.Find>物件。  

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908903"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>快速入門：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 
@@ -46,9 +46,9 @@ ms.locfileid: "36283321"
 
    ![在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的 [目標版本] 和 [最低版本] 設定](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > 如果這是您第一次使用 Visual Studio 來建立 UWP 應用程式，可能會出現 [設定] 對話方塊。 請選擇 [開發人員模式]，然後選擇 [是]。<br><br>
- ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](../ide/media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定] 對話方塊。
+   > [!NOTE]
+   > 如果這是您第一次使用 Visual Studio 來建立 UWP 應用程式，可能會出現 [設定] 對話方塊。 請選擇 [開發人員模式]，然後選擇 [是]。<br><br>
+   ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](../ide/media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定] 對話方塊。
 
 ## <a name="create-the-application"></a>建立應用程式
 
@@ -58,29 +58,29 @@ ms.locfileid: "36283321"
 
 1. 在 [方案總管] 中，按兩下 [MainPage.xaml] 以開啟分割檢視。
 
-  ![從 [方案總管] 中開啟 MainPage.xaml ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![從 [方案總管] 中開啟 MainPage.xaml ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  有兩個窗格：[XAML 設計工具] (其中包含設計畫布) 和 [XAML 編輯器] (可供您新增或變更程式碼)。
+   有兩個窗格：[XAML 設計工具] (其中包含設計畫布) 和 [XAML 編輯器] (可供您新增或變更程式碼)。
 
-  ![XAML 編輯器中的 [XAML 設計工具] 窗格](../ide/media/uwp-xaml-editor.png)
+   ![XAML 編輯器中的 [XAML 設計工具] 窗格](../ide/media/uwp-xaml-editor.png)
 
 2. 選擇 [工具箱] 以開啟 [工具箱] 飛出視窗。
 
-  ![按一下 [工具箱] 以開啟 [工具箱] 飛出視窗](../ide/media/uwp-toolbox.png)
+   ![按一下 [工具箱] 以開啟 [工具箱] 飛出視窗](../ide/media/uwp-toolbox.png)
 
-  (如果沒有看到 [工具箱] 選項，您可以從功能表列中開啟它。 若要這樣做，請選擇 [檢視] > [工具列]。 或按 **Ctrl**+**Alt**+**X**)。
+   (如果沒有看到 [工具箱] 選項，您可以從功能表列中開啟它。 若要這樣做，請選擇 [檢視] > [工具列]。 或按 **Ctrl**+**Alt**+**X**)。
 
 3. 按一下**固定**圖示，以固定 [工具箱] 視窗。
 
-  ![按一下 [釘選] 圖示以固定 [工具箱] 視窗](../ide/media/uwp-toolbox-autohide.png)
+   ![按一下 [釘選] 圖示以固定 [工具箱] 視窗](../ide/media/uwp-toolbox-autohide.png)
 
 4. 按一下 [Button] 控制項，然後將它拖曳至設計畫布。
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](../ide/media/uwp-toolbox-add-button-control.png)
 
-  如果您查看 [XAML 編輯器] 中的程式碼，就會看到在該處也新增了 Button：
+   如果您查看 [XAML 編輯器] 中的程式碼，就會看到在該處也新增了 Button：
 
-  ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](../ide/media/uwp-xaml-control-code-window.png)
+   ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>為按鈕新增標籤
 
@@ -100,18 +100,18 @@ ms.locfileid: "36283321"
 
 2. 編輯 *MainPage.xaml.cs* (程式碼後置頁面) 中的事件處理常式程式碼。
 
- 這是開始有趣的地方。 預設的事件處理常式看起來會像這樣：
+   這是開始有趣的地方。 預設的事件處理常式看起來會像這樣：
 
    ![預設的 Button_Click 事件處理常式 ](../ide/media/uwp-button-click-code.png)
 
- 我們會變更它，讓它看起來像這樣：
+   我們會變更它，讓它看起來像這樣：
 
     ![新的非同步 Button_Click 事件處理常式 ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  以下是要複製和貼上的程式碼：
+   以下是要複製和貼上的程式碼：
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ ms.locfileid: "36283321"
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>我們剛剛做了什麼？
 
@@ -141,7 +141,7 @@ ms.locfileid: "36283321"
 
 3. 按一下 [Hello World] 按鈕。
 
- 您的 Windows 10 裝置字面上會顯示 "Hello, World!"
+   您的 Windows 10 裝置字面上會顯示 "Hello, World!"
 
 4. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯] 按鈕。 (或者，您也可以從功能表列中選擇 [偵錯] > [開始偵錯]，或按 **Shift**+**F5**)。
 

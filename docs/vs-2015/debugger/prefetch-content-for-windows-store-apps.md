@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1da34d2baba519f9b8fa8cfde5756e8fccdfe7b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868725"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>預先擷取 Windows 市集應用程式的內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49211441"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>若要強制 ContentPrefetcher 預先載入指定的資源  
  下列程序會假設您已經設定 ContentPrefetcher 功能，而且已指定要在應用程式專案中預先載入的內容 URI。 若要新增或修改指定的資源時，請強制預先載入內容，您必須先啟動，然後停止應用程式，再選擇**觸發 Windows 市集應用程式預先擷取**命令。 您要先執行應用程式以註冊 URI。 **觸發 Windows 市集應用程式預先擷取**命令會強制 ContentPrefetcher 下載內容，並將它加入快取。 未來執行應用程式時，您就可以認定內容已經預先載入。  
   
-1.  啟動應用程式，向應用程式註冊預先擷取內容 URI。 在 **偵錯**功能表上，選擇**開始偵錯**(鍵盤快速鍵： F5)。  
+1. 啟動應用程式，向應用程式註冊預先擷取內容 URI。 在 **偵錯**功能表上，選擇**開始偵錯**(鍵盤快速鍵： F5)。  
   
-2.  在 **偵錯**功能表上，選擇**停止偵錯**(鍵盤快速鍵： Shift + F5)。  
+2. 在 **偵錯**功能表上，選擇**停止偵錯**(鍵盤快速鍵： Shift + F5)。  
   
-3.  在 **偵錯**功能表上，選擇**其他偵錯目標**，然後選擇**觸發 Windows 市集應用程式預先擷取**。  
+3. 在 **偵錯**功能表上，選擇**其他偵錯目標**，然後選擇**觸發 Windows 市集應用程式預先擷取**。  
   
- 現在您可以在已經預先擷取 Web 資源的情況下偵錯、測試或分析應用程式。  
+   現在您可以在已經預先擷取 Web 資源的情況下偵錯、測試或分析應用程式。  
   
 > [!NOTE]
 >  當您新增或修改指定的 Web 內容時，請重複上述步驟。  

@@ -17,12 +17,12 @@ ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82ac1ef2d1e4a5fd23c095d560957417dea9ec1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be81a74f9ce13511e463c4244fc1e817f5c94d1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940628"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

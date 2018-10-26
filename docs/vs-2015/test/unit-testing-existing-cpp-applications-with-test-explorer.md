@@ -13,12 +13,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dab39c5718b8872df5e81281ba9dda886ebf313
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941200"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>使用測試總管針對現有 C++ 應用程式執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,118 +60,118 @@ ms.locfileid: "49172454"
   
 ###  <a name="staticLink"></a> 將受測程式碼變更為靜態程式庫  
   
--   如果您的測試必須使用不是由受測專案匯出的成員，並且受測專案是建置為動態程式庫，請考慮將它轉換成靜態程式庫。  
+- 如果您的測試必須使用不是由受測專案匯出的成員，並且受測專案是建置為動態程式庫，請考慮將它轉換成靜態程式庫。  
   
-    1.  在方案總管中，於受測專案的捷徑功能表上選擇 [屬性]。 專案的屬性視窗便會開啟。  
+  1.  在方案總管中，於受測專案的捷徑功能表上選擇 [屬性]。 專案的屬性視窗便會開啟。  
   
-    2.  依序選擇 [組態屬性] 和 [一般]。  
+  2.  依序選擇 [組態屬性] 和 [一般]。  
   
-    3.  將 [組態類型] 設定為 [靜態程式庫 (.lib)]。  
+  3.  將 [組態類型] 設定為 [靜態程式庫 (.lib)]。  
   
- 繼續進行[將測試連結至物件或程式庫檔案](#objectRef)程序。  
+  繼續進行[將測試連結至物件或程式庫檔案](#objectRef)程序。  
   
 ###  <a name="projectRef"></a> 從測試專案參考匯出的函式  
   
--   如果受測專案會匯出您要測試的函式，那麼您就可以從測試專案加入程式碼專案的參考。  
+- 如果受測專案會匯出您要測試的函式，那麼您就可以從測試專案加入程式碼專案的參考。  
   
-    1.  建立 C++ 測試專案。  
+  1.  建立 C++ 測試專案。  
   
-        1.  在 [檔案] 功能表上，依序選擇 [新增]、[專案]、[Visual C++]、[測試]和 [C++ 單元測試專案]。  
+      1.  在 [檔案] 功能表上，依序選擇 [新增]、[專案]、[Visual C++]、[測試]和 [C++ 單元測試專案]。  
   
-    2.  在方案總管中，於測試專案的捷徑功能表上，選擇 [參考]。 專案的屬性視窗便會開啟。  
+  2.  在方案總管中，於測試專案的捷徑功能表上，選擇 [參考]。 專案的屬性視窗便會開啟。  
   
-    3.  依序選取 [通用屬性]、[架構和參考] 和 [新增參考] 按鈕。  
+  3.  依序選取 [通用屬性]、[架構和參考] 和 [新增參考] 按鈕。  
   
-    4.  選取 [專案]，然後選取要測試的專案。  
+  4.  選取 [專案]，然後選取要測試的專案。  
   
-         選擇 [ **加入** ] 按鈕。  
+       選擇 [ **加入** ] 按鈕。  
   
-    5.  在測試專案的屬性中，將受測專案的位置加入至 [Include 目錄] 中。  
+  5.  在測試專案的屬性中，將受測專案的位置加入至 [Include 目錄] 中。  
   
-         依序選擇 [組態屬性]、[VC++ 目錄]和 [Include 目錄]。  
+       依序選擇 [組態屬性]、[VC++ 目錄]和 [Include 目錄]。  
   
-         選擇 [編輯]，然後新增受測專案的標頭目錄。  
+       選擇 [編輯]，然後新增受測專案的標頭目錄。  
   
- 移至[撰寫單元測試](#addTests)程序。  
+  移至[撰寫單元測試](#addTests)程序。  
   
 ###  <a name="objectRef"></a> 將測試連結至物件或程式庫檔案  
   
--   如果受測程式碼不會匯出您要測試的函式，您可以將輸出 **.obj** 或 **.lib** 檔案新增至測試專案的相依性。  
+- 如果受測程式碼不會匯出您要測試的函式，您可以將輸出 **.obj** 或 **.lib** 檔案新增至測試專案的相依性。  
   
-    1.  建立 C++ 測試專案。  
+  1.  建立 C++ 測試專案。  
   
-        1.  在 [檔案] 功能表上，依序選擇 [新增]、[專案]、[Visual C++]、[測試]和 [C++ 單元測試專案]。  
+      1.  在 [檔案] 功能表上，依序選擇 [新增]、[專案]、[Visual C++]、[測試]和 [C++ 單元測試專案]。  
   
-    2.  在方案總管中，於測試專案的捷徑功能表上，選擇 [屬性]。 專案的屬性視窗便會開啟。  
+  2.  在方案總管中，於測試專案的捷徑功能表上，選擇 [屬性]。 專案的屬性視窗便會開啟。  
   
-    3.  依序選擇 [組態屬性]、[連結器]、[輸入] 和 [其他相依性]。  
+  3.  依序選擇 [組態屬性]、[連結器]、[輸入] 和 [其他相依性]。  
   
-         選擇 [編輯]，然後新增 **.obj** 或 **.lib** 檔案的名稱。 不要使用完整路徑名稱。  
+       選擇 [編輯]，然後新增 **.obj** 或 **.lib** 檔案的名稱。 不要使用完整路徑名稱。  
   
-    4.  依序選擇 [組態屬性]、[連結器]、[一般] 和 [其他程式庫目錄]。  
+  4.  依序選擇 [組態屬性]、[連結器]、[一般] 和 [其他程式庫目錄]。  
   
-         選擇 [編輯]，然後新增 **.obj** 或 **.lib** 檔案的目錄路徑。 該路徑通常是位於受測專案的組建資料夾內。  
+       選擇 [編輯]，然後新增 **.obj** 或 **.lib** 檔案的目錄路徑。 該路徑通常是位於受測專案的組建資料夾內。  
   
-    5.  依序選擇 [組態屬性]、[VC++ 目錄]和 [Include 目錄]。  
+  5.  依序選擇 [組態屬性]、[VC++ 目錄]和 [Include 目錄]。  
   
-         選擇 [編輯]，然後新增受測專案的標頭目錄。  
+       選擇 [編輯]，然後新增受測專案的標頭目錄。  
   
- 移至[撰寫單元測試](#addTests)程序。  
+  移至[撰寫單元測試](#addTests)程序。  
   
 ###  <a name="sameProject"></a> 在相同專案中新增單元測試  
   
-1.  修改產品程式碼專案屬性，以包含單元測試所需的標頭和程式庫檔案。  
+1. 修改產品程式碼專案屬性，以包含單元測試所需的標頭和程式庫檔案。  
   
-    1.  在 [方案總管] 中，在受測專案的捷徑功能表中選擇 [屬性]。 專案的屬性視窗便會開啟。  
+   1.  在 [方案總管] 中，在受測專案的捷徑功能表中選擇 [屬性]。 專案的屬性視窗便會開啟。  
   
-    2.  依序選擇 [組態屬性] 和 [VC++ 目錄]。  
+   2.  依序選擇 [組態屬性] 和 [VC++ 目錄]。  
   
-    3.  編輯 Include 目錄和程式庫目錄：  
+   3.  編輯 Include 目錄和程式庫目錄：  
   
-        |||  
-        |-|-|  
-        |**Include 目錄**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
-        |**程式庫目錄**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
+       |||  
+       |-|-|  
+       |**Include 目錄**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
+       |**程式庫目錄**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
   
-2.  加入 C++ 單元測試檔案：  
+2. 加入 C++ 單元測試檔案：  
   
-    -   在方案總管中，於專案的捷徑功能表中，依序選擇 [新增]、[新增項目] 和 [C++ 單元測試]。  
+   -   在方案總管中，於專案的捷徑功能表中，依序選擇 [新增]、[新增項目] 和 [C++ 單元測試]。  
   
- 移至[撰寫單元測試](#addTests)程序。  
+   移至[撰寫單元測試](#addTests)程序。  
   
 ##  <a name="addTests"></a> 撰寫單元測試  
   
-1.  在每個單元測試程式碼檔案中，為受測專案的標頭加入一個 `#include` 陳述式。  
+1. 在每個單元測試程式碼檔案中，為受測專案的標頭加入一個 `#include` 陳述式。  
   
-2.  在單元測試程式碼檔案中加入測試類別和方法。 例如:   
+2. 在單元測試程式碼檔案中加入測試類別和方法。 例如:   
   
-    ```cpp  
-    #include "stdafx.h"  
-    #include "CppUnitTest.h"  
-    #include "MyProjectUnderTest.h"  
-    using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
-    namespace MyTest  
-    {  
-      TEST_CLASS(MyTests)  
-      {  
-      public:  
-          TEST_METHOD(MyTestMethod)  
-          {  
-              Assert::AreEqual(MyProject::Multiply(2,3), 6);  
-          }  
-      };  
-    }  
-    ```  
+   ```cpp  
+   #include "stdafx.h"  
+   #include "CppUnitTest.h"  
+   #include "MyProjectUnderTest.h"  
+   using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
+   namespace MyTest  
+   {  
+     TEST_CLASS(MyTests)  
+     {  
+     public:  
+         TEST_METHOD(MyTestMethod)  
+         {  
+             Assert::AreEqual(MyProject::Multiply(2,3), 6);  
+         }  
+     };  
+   }  
+   ```  
   
- 如需詳細資訊，請參閱[使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)。  
+   如需詳細資訊，請參閱[使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)。  
   
 ## <a name="run-the-tests"></a>執行測試  
   
-1.  在 [ **檢視** ] 功能表上，選擇 [ **其他視窗**]、[ **測試總管**]。  
+1. 在 [ **檢視** ] 功能表上，選擇 [ **其他視窗**]、[ **測試總管**]。  
   
-2.  在 [測試總管] 中，選擇 [ **全部執行**]。  
+2. 在 [測試總管] 中，選擇 [ **全部執行**]。  
   
- 如需詳細資訊，請參閱[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)。
+   如需詳細資訊，請參閱[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)。
 
 
 

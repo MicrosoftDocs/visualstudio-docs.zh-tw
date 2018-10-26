@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898820"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -33,31 +33,31 @@ Unity 引擎會將訊息廣播到 MonoBehaviour 指令碼，讓開發人員可�
 
 不過，Visual Studio for Mac Tools for Unity 會將其 IntelliSense 功能擴充為 Unity 訊息。 這可在 MonoBehaviour 指令碼中輕鬆地實作 Unity 訊息，並協助了解 Unity API。 使用適用於 Unity 訊息的 IntelliSense：
 
-1.  將游標放在衍生自 MonoBehaviour 之類別主體內的新行。
+1. 將游標放在衍生自 MonoBehaviour 之類別主體內的新行。
 
-2.  開始鍵入 Unity 訊息的名稱，例如 `OnTriggerEnter`。
+2. 開始鍵入 Unity 訊息的名稱，例如 `OnTriggerEnter`。
 
-3.  已鍵入 "**ont**" 字母之後，會出現 IntelliSense 建議清單。
+3. 已鍵入 "**ont**" 字母之後，會出現 IntelliSense 建議清單。
 
-  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  有三種方式可以變更清單上的選項：
+4. 有三種方式可以變更清單上的選項：
 
-    * 使用向上和向下方向鍵。
+   * 使用向上和向下方向鍵。
 
-    * 使用滑鼠按一下所需的項目。
+   * 使用滑鼠按一下所需的項目。
 
-    * 繼續鍵入所需項目的名稱。
+   * 繼續鍵入所需項目的名稱。
 
-5.  IntelliSense 可以插入選取的 Unity 訊息，包含任何必要參數：
+5. IntelliSense 可以插入選取的 Unity 訊息，包含任何必要參數：
 
-    * 按 **Tab**。
+   * 按 **Tab**。
 
-    * 按 **Return**。
+   * 按 **Return**。
 
-    * 按兩下選取的項目。
+   * 按兩下選取的項目。
 
-  ![從 IntelliSense 插入 Unity 訊息](media/using-vsmac-tools-unity-image3.png)
+   ![從 IntelliSense 插入 Unity 訊息](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>新增 Unity 檔案和資料夾
 
@@ -93,22 +93,22 @@ Unity 專案可以使用 Visual Studio for Mac 進行偵錯。
 
 啟動偵錯：
 
-1.  按一下 [播放] 按鈕，或者鍵入 **Command + Return** 或 **F5**，以將 Visual Studio 連線至 Unity。
+1. 按一下 [播放] 按鈕，或者鍵入 **Command + Return** 或 **F5**，以將 Visual Studio 連線至 Unity。
 
-  ![在 Visual Studio 中按一下 [播放]](media/using-vsmac-tools-unity-image5.png)
+   ![在 Visual Studio 中按一下 [播放]](media/using-vsmac-tools-unity-image5.png)
 
-2.  切換至 Unity，然後按一下 [播放] 按鈕，以在編輯器中執行遊戲。
+2. 切換至 Unity，然後按一下 [播放] 按鈕，以在編輯器中執行遊戲。
 
-  ![在 Unity 中按一下 [播放]](media/using-vsmac-tools-unity-image6.png)
+   ![在 Unity 中按一下 [播放]](media/using-vsmac-tools-unity-image6.png)
 
-3.  如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio for Mac 中叫用中斷點的一行程式碼。
+3. 如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio for Mac 中叫用中斷點的一行程式碼。
 
 ### <a name="stop-debugging"></a>停止偵錯
 
 停止偵錯：
 
-1.  在 Visual Studio for Mac 中按一下 [停止] 按鈕，或按 **Shift + Command + Return**。
+1. 在 Visual Studio for Mac 中按一下 [停止] 按鈕，或按 **Shift + Command + Return**。
 
-  ![在 Visual Studio 中按一下 [停止]](media/using-vsmac-tools-unity-image7.png)
+   ![在 Visual Studio 中按一下 [停止]](media/using-vsmac-tools-unity-image7.png)
 
 若要深入了解 Visual Studio for Mac 中的偵錯，請參閱 [Using the debugger](https://docs.microsoft.com/visualstudio/mac/debugging) (使用偵錯工具)。

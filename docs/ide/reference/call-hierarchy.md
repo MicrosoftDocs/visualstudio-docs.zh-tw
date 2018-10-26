@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905950"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 
@@ -40,7 +40,7 @@ ms.locfileid: "34448346"
 
 ![Visual Studio 中 C# 程式碼的呼叫階層](media/call-hierarchy-csharp.png)
 
-- 如果您展開 [呼叫目標] 節點，就會顯示呼叫所選成員的所有成員。
+- 如果您展開 [呼叫目標] 節點，則會顯示呼叫選取之成員的所有成員。
 
 - 針對 C++，如果您展開 [呼叫來源] 節點，則會顯示所選成員所呼叫的所有成員。
 
@@ -66,7 +66,7 @@ ms.locfileid: "34448346"
 下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。
 
 |操作功能表項目|描述|
-|-----------------------|-----------------|
+| - |-----------------|
 |**增為新根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|
 |**移至定義**|在選取的節點上執行 [移至定義] 命令。 如此即可巡覽至成員呼叫的原始定義或變數定義。<br /><br /> 若要執行 [移至定義] 命令，您也可以按兩下選取的節點，或在選取的節點上按 F12。|

@@ -9,12 +9,12 @@ description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899457"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 
@@ -75,6 +75,7 @@ ms.locfileid: "46495800"
 若要檢視 CSP 合作夥伴的 Visual Studio 定價，請登入[合作夥伴中心](https://partnercenter.microsoft.com)。  從左邊的巡覽列選擇 [Pricing and offers] (定價和供應項目)。  選擇右上 [usage-based services] (用量型服務) 下的當月定價檔案。 下載 Excel 試算表後，請移至 [Azure Price List] (Azure 價格清單) 工作表，在 [計量類別目錄] 欄中篩選 [Visual Studio]。
 
 以下是您所見此試算表內容的解讀方法：
+
 | 計量類別目錄    |   名稱                 |  單位                                |           說明                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 企業             |  訂閱                         | Visual Studio Enterprise 月租方案   |

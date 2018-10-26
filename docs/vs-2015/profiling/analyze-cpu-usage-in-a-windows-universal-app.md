@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833599"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ ms.locfileid: "49250714"
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
  ![在模擬器中執行應用程式的發行組建](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  在 Visual Studio 中，將部署目標設定為 [Simulator (模擬器)]，並將方案組態設定為 [Release (發行)]。  
+1. 在 Visual Studio 中，將部署目標設定為 [Simulator (模擬器)]，並將方案組態設定為 [Release (發行)]。  
   
-    -   在模擬器中執行應用程式，可讓您輕鬆地切換應用程式與 Visual Studio IDE。  
+   -   在模擬器中執行應用程式，可讓您輕鬆地切換應用程式與 Visual Studio IDE。  
   
-    -   在 [Release (發行)] 模式中執行此應用程式，可讓您更適當地檢視應用程式的實際效能。  
+   -   在 [Release (發行)] 模式中執行此應用程式，可讓您更適當地檢視應用程式的實際效能。  
   
-2.  在 [偵錯]  功能表上選擇 [效能分析工具...] 。  
+2. 在 [偵錯]  功能表上選擇 [效能分析工具...] 。  
   
-3.  在效能與診斷中樞中，選擇 [CPU Usage (CPU 使用量)]，然後選擇 [Start (開始)]。  
+3. 在效能與診斷中樞中，選擇 [CPU Usage (CPU 使用量)]，然後選擇 [Start (開始)]。  
   
-     ![開始 CpuUsage 診斷工作階段](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![開始 CpuUsage 診斷工作階段](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  當應用程式啟動時，按一下 [取得最大數目] 。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
+4. 當應用程式啟動時，按一下 [取得最大數目] 。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
   
-5.  第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
+5. 第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
   
- ![停止 CpuUsage 資料收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 資料收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具會分析資料，以及顯示報告。  
+   CPU 使用量工具會分析資料，以及顯示報告。  
   
- ![CpuUsage 報表](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 報表](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a>分析 CPU 使用量報告  
   

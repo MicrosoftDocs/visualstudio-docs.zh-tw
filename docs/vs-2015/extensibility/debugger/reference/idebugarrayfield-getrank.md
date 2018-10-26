@@ -17,12 +17,12 @@ ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1f06df292c5ed9ed2b7201589f5aa659b3f9716
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 162bb52a557e983b8616e4662ddcdd0976496105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814328"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

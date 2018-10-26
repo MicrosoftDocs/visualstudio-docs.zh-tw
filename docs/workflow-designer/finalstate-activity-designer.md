@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d89e9f81bb7dc8237069a79784eadc0e5d375d6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f49ed7bd2d370f72d8a6be69c28148fbf67e1bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924339"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活動設計工具
 
@@ -23,19 +23,19 @@ ms.locfileid: "31972533"
 
 ## <a name="using-the-finalstate-activity-designer"></a>使用 FinalState 活動設計工具
 
-**FinalState**設計工具用於建立<xref:System.Activities.Statements.State>預先設定為終止狀態機器中的狀態。 A<xref:System.Activities.Statements.State>建立<xref:System.Activities.Core.Presentation.FinalState>活動設計工具有其<xref:System.Activities.Statements.State.IsFinal%2A>屬性設定為**true**，沒有任何<xref:System.Activities.Statements.State.Exit%2A>活動和轉換源自於此。 若要使用<xref:System.Activities.Core.Presentation.FinalState>活動設計工具加入<xref:System.Activities.Statements.State>預先設定為終止狀態機器狀態的活動拖曳**FinalState**活動設計工具從**狀態機器**區段**工具箱**拖放到工作流程設計工具。 <xref:System.Activities.Core.Presentation.FinalState> 活動設計工具可以放到 <xref:System.Activities.Statements.StateMachine> 和稍後加入的轉換，或是可以在放置 <xref:System.Activities.Core.Presentation.FinalState> 活動設計工具時建立轉換。 如需有關建立轉換的詳細資訊，請參閱[轉換](../workflow-designer/transition-activity-designer.md)。
+**FinalState**設計工具用來建立<xref:System.Activities.Statements.State>預先設定為終止狀態機器中的狀態。 A<xref:System.Activities.Statements.State>建立使用<xref:System.Activities.Core.Presentation.FinalState>活動設計工具有其<xref:System.Activities.Statements.State.IsFinal%2A>屬性設定為 **，則為 true**，沒有任何<xref:System.Activities.Statements.State.Exit%2A>活動和轉換源自於此。 若要使用<xref:System.Activities.Core.Presentation.FinalState>活動設計工具加入<xref:System.Activities.Statements.State>預先設定為狀態機器中的終止狀態的活動拖曳**FinalState**活動設計工具，從**狀態機器**一節**工具箱**拖放到工作流程設計工具。 <xref:System.Activities.Core.Presentation.FinalState> 活動設計工具可以放到 <xref:System.Activities.Statements.StateMachine> 和稍後加入的轉換，或是可以在放置 <xref:System.Activities.Core.Presentation.FinalState> 活動設計工具時建立轉換。 如需有關如何建立轉換的詳細資訊，請參閱 <<c0> [ 轉換](../workflow-designer/transition-activity-designer.md)。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 State 活動屬性
 
 下表顯示可使用 <xref:System.Activities.Core.Presentation.FinalState> 設計工具設定的屬性，並說明如何在設計工具中使用它們。 其中一些屬性可以在屬性方格中進行編輯，有些可以在設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.State> 活動設計工具在標頭中的易記名稱。 預設值是**狀態**。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。 <xref:System.Activities.Statements.State.DisplayName%2A> 可用於階層連結巡覽，顯示在工作流程設計工具的頂端。<br /><br /> 雖然 <xref:System.Activities.Statements.State.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|指定此狀態在轉換時發生的動作。 這個值可以拖曳中的活動設定**工具箱**並放到<xref:System.Activities.Statements.State.Entry%2A>區段的狀態。|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|指定此狀態在轉換時發生的動作。 這個值可以藉由拖曳 將活動從設定**工具箱**並放到<xref:System.Activities.Statements.State.Entry%2A>狀態一節。|
 
 ## <a name="see-also"></a>另請參閱
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [狀態](../workflow-designer/state-activity-designer.md)
-- [轉換](../workflow-designer/transition-activity-designer.md)
+- [Transition](../workflow-designer/transition-activity-designer.md)

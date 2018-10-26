@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887783"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ ms.locfileid: "49195674"
   
 #### <a name="to-open-the-configuration-manager-dialog-box"></a>開啟 [Configuration Manager] 對話方塊  
   
--   在方案總管中，開啟方案的捷徑功能表，然後選擇 [Configuration Manager]。  
+- 在方案總管中，開啟方案的捷徑功能表，然後選擇 [Configuration Manager]。  
   
-    > [!NOTE]
-    >  如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具]、[選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案]、[一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
+  > [!NOTE]
+  >  如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具]、[選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案]、[一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
   
-     在 [Configuration Manager] 對話方塊中，您可以使用 [使用中的方案組態] 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台] 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容] 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。  
+   在 [Configuration Manager] 對話方塊中，您可以使用 [使用中的方案組態] 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台] 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容] 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。  
   
- 設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。  
+  設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。  
   
 #### <a name="to-set-properties-based-on-configurations"></a>根據組態來設定屬性  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819585"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。  
@@ -39,17 +39,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  分析項目的名稱。 如果是下列情況，則名稱無效 (導致 NameProfileA 傳回 NAME_ERROR_INVALID_NAME)：  
   
--   傳遞至 NameProfileA 的指標是 NULL 值  
+- 傳遞至 NameProfileA 的指標是 NULL 值  
   
--   pszName 的字串資料開頭是數字  
+- pszName 的字串資料開頭是數字  
   
--   pszName 的字串資料包含空格  
+- pszName 的字串資料包含空格  
   
--   pszName 的字串資料包含下列任何字元：,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- pszName 的字串資料包含下列任何字元：,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- 指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 值可以用來指出可套用效能資料收集的三種層級的其中一種：  
+  指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 值可以用來指出可套用效能資料收集的三種層級的其中一種：  
   
 |列舉值|描述|  
 |----------------|-----------------|  

@@ -13,12 +13,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d8acf315322a7dfdac70a158bd78f69aebbde15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867867"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,26 +63,26 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 ##  <a name="Requirements"></a> 系統需求和回溯相容性  
  如需 Visual Studio Emulator for Android 之硬體、軟體與組態需求的重要資訊，請參閱下列主題。  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Visual Studio Emulator for Android 需要 Visual Studio 2015；它與舊版 Visual Studio 不相容。  
+  Visual Studio Emulator for Android 需要 Visual Studio 2015；它與舊版 Visual Studio 不相容。  
   
- 新版模擬器是安裝在舊版之上 (在某些情況下可能會取代舊映像，並捨棄這些映像上的設定，以及安裝在這些映像上的應用程式和檔案)。  
+  新版模擬器是安裝在舊版之上 (在某些情況下可能會取代舊映像，並捨棄這些映像上的設定，以及安裝在這些映像上的應用程式和檔案)。  
   
 ##  <a name="Networking"></a> Visual Studio 的 Android 模擬器網路功能  
  Visual Studio Emulator for Android 的網路連線運作方式類似桌上型電腦的連線，並具有下列特性：  
   
--   模擬器以具有自己 IP 位址的個別裝置形式出現在網路上。  
+- 模擬器以具有自己 IP 位址的個別裝置形式出現在網路上。  
   
--   它不需要模擬器尚未隨附安裝的任何其他網路軟體。  
+- 它不需要模擬器尚未隨附安裝的任何其他網路軟體。  
   
--   它未加入 Windows 網域。  
+- 它未加入 Windows 網域。  
   
- 若要了解模擬器的網路連線功能，請將它視為類似從您的 Android 手機連接到相同網路的 Wi-Fi 連線。 如果您的手機上執行的應用程式可以透過其 Wi-Fi 連線存取網路資源，則模擬器上執行的應用程式也可以存取相同的網路資源。  
+  若要了解模擬器的網路連線功能，請將它視為類似從您的 Android 手機連接到相同網路的 Wi-Fi 連線。 如果您的手機上執行的應用程式可以透過其 Wi-Fi 連線存取網路資源，則模擬器上執行的應用程式也可以存取相同的網路資源。  
   
- 如需網路需求的詳細資訊，請參閱 [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
+  如需網路需求的詳細資訊，請參閱 [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
   
- 如需針對網路問題進行疑難排解的詳細資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
+  如需針對網路問題進行疑難排解的詳細資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
   
 ##  <a name="Configuring"></a> 設定 Visual Studio 的 Android 模擬器  
  在各種大量的 Android 硬體之間測試 Android 應用程式的相容性可能是項挑戰。 市面上的 Android 手機和平板電腦橫跨各種版本和螢幕大小，並有許多不同的硬體組態 (RAM、CPU、架構等)。 Visual Studio Emulator for Android 簡化了使用裝置設定檔的這項工作。 我們提供了一組裝置設定檔，代表市面上最受歡迎的硬體，包括 Samsung、Motorola、Sony、LG 等裝置。  

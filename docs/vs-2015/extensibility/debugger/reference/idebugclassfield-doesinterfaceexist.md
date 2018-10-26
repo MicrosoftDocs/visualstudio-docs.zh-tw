@@ -17,12 +17,12 @@ ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abefe68c29b2062eea5e88874563e0e0d02d843
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b386e3a64c05829ab2e5b6ac9f16a438eee5e625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925574"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

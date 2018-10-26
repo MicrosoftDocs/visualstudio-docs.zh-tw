@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870768"
 ---
 # <a name="content-definition-dialog-box"></a>內容定義對話方塊
 
@@ -26,7 +26,7 @@ ms.locfileid: "36757947"
 下表描述的使用者介面 (UI) 項目**初始化相互關聯** 對話方塊中：
 
 |UI 項目|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**訊息**|指定的訊息內容，其中**訊息資料**運算式文字方塊中，使用的型別**訊息類型**下拉式清單方塊。 根據預設，**內容定義**會使用<xref:System.ServiceModel.Activities.ReceiveMessageContent>，這會預期<xref:System.ServiceModel.Channels.Message>或訊息合約中的工作流程服務定義的型別。|
 |**參數**|按一下 **參數**選項按鈕，以使用<xref:System.ServiceModel.Activities.ReceiveParametersContent>，這會預期的資料合約。 使用資料方格設定 <xref:System.Activities.OutArgument> 索引鍵/值配對的泛型集合，配對的值會指派給目前工作流程中的變數參數。|
 

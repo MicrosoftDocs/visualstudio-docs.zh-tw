@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928655"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>參數
 
 |**引數**|**描述**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|識別您想要轉換的範本檔案的名稱。|
 
 |**選項**|**描述**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<filename>|要轉換的輸出寫入檔案。|
 |**-r** \<assembly>|用來編譯和執行文字範本組件。|
 |**-u** \<namespace>|用於編譯範本命名空間。|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>相關主題
 
 |工作|主題|
-|----------|-----------|
+|-|-|
 |在 Visual Studio 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
 |撰寫文字範本化主應用程式，可讓您叫用您自己的應用程式從文字範本。|[使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)|

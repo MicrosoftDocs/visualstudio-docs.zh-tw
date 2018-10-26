@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 819f64b9d526cc307f0f9fbd0a35db5d4e7bd1ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a566a6aa73ef9b1e3729248b14b0f3879f21d21c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898770"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,76 +50,76 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
   
  系統需求  
   
--   Hyper-V 支援 (請參閱下面的 Hyper-V 需求)  
+- Hyper-V 支援 (請參閱下面的 Hyper-V 需求)  
   
--   6 GB 或以上的 RAM。  
+- 6 GB 或以上的 RAM。  
   
--   64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本  
+- 64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本  
   
--   支援 SSSE3 或更新版本的處理器。  
+- 支援 SSSE3 或更新版本的處理器。  
   
- 網路需求  
+  網路需求  
   
--   DHCP  
+- DHCP  
   
--   自動設定的 DNS 和閘道設定  
+- 自動設定的 DNS 和閘道設定  
   
- Hyper-V 需求  
+  Hyper-V 需求  
   
--   在 BIOS 中，必須支援下列功能：  
+- 在 BIOS 中，必須支援下列功能：  
   
-    -   硬體協助虛擬化  
+  -   硬體協助虛擬化  
   
-    -   第二層位址轉譯 (SLAT)  
+  -   第二層位址轉譯 (SLAT)  
   
-    -   硬體型資料執行防止 (DEP)  
+  -   硬體型資料執行防止 (DEP)  
   
--   在 Windows 中，Hyper-V 必須啟用並執行。  
+- 在 Windows 中，Hyper-V 必須啟用並執行。  
   
--   您必須是本機 Hyper-V Administrators 群組的成員。  
+- 您必須是本機 Hyper-V Administrators 群組的成員。  
   
 ##  <a name="System"></a> 系統需求  
  您的電腦必須符合下列需求：  
   
--   HYPER-V 支援 (請參閱 [Hyper-V 需求](#HyperV))  
+- HYPER-V 支援 (請參閱 [Hyper-V 需求](#HyperV))  
   
--   6 GB 或以上的 RAM。  
+- 6 GB 或以上的 RAM。  
   
--   64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本。  
+- 64 位元版的 Windows 8、Windows 8.1、Windows10 或更高的 Pro 版本。  
   
- 若要檢查 RAM 和 Windows 的需求，請選擇 [控制台] 中的 [系統及安全性]，然後選擇 [系統]。  
+  若要檢查 RAM 和 Windows 的需求，請選擇 [控制台] 中的 [系統及安全性]，然後選擇 [系統]。  
   
- ![確認系統需求](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
+  ![確認系統需求](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> 網路需求  
  您的網路必須符合下列需求：  
   
--   DHCP  
+- DHCP  
   
-     模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。  
+   模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。  
   
--   自動設定的 DNS 和閘道設定  
+- 自動設定的 DNS 和閘道設定  
   
-     您無法手動設定模擬器的 DNS 和閘道設定。  
+   您無法手動設定模擬器的 DNS 和閘道設定。  
   
- 若要疑難排解模擬器中的網路問題，請參閱下列主題：  
+  若要疑難排解模擬器中的網路問題，請參閱下列主題：  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V 需求  
  BIOS 中的 Hyper-V 需求  
   
  您電腦的 BIOS 必須支援下列需求，而且必須啟用它們：  
   
--   硬體協助虛擬化  
+- 硬體協助虛擬化  
   
--   第二層位址轉譯 (SLAT)  
+- 第二層位址轉譯 (SLAT)  
   
--   硬體型資料執行防止 (DEP)  
+- 硬體型資料執行防止 (DEP)  
   
- Windows 中的 Hyper-V 需求  
+  Windows 中的 Hyper-V 需求  
   
- 當您的電腦及 BIOS 已設定為支援 HYPER-V 時，安裝程式會啟用並啟動 HYPER-V。 否則，您可能需要手動啟用這些需求。  
+  當您的電腦及 BIOS 已設定為支援 HYPER-V 時，安裝程式會啟用並啟動 HYPER-V。 否則，您可能需要手動啟用這些需求。  
   
 |需求|如何檢查和啟用此需求|  
 |-----------------|----------------------------------------------|  
@@ -147,15 +147,15 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 ##  <a name="Files"></a> Hyper-V 需要未壓縮和未加密的檔案  
  在以 NTFS 檔案系統設定的硬碟上，Hyper-V 所使用的虛擬硬碟檔案必須為未壓縮和未加密。 請確定未壓縮或加密下列目錄：  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- 在 ReFS 檔案系統上，虛擬硬碟檔案不得設定完整性位元。  
+  在 ReFS 檔案系統上，虛擬硬碟檔案不得設定完整性位元。  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>硬體圖形轉送 (OpenGL ES 支援) 需求  
  為了讓模擬器模擬 GPU 呼叫 (例如 OpenGL ES 所使用的呼叫)，您的電腦必須具有已安裝適當 DirectX 驅動程式的 DirectX 相容 GPU。  

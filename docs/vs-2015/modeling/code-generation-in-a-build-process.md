@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907920"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ ms.locfileid: "49208646"
 
 在 `AfterTransform` 中，您可以參考檔案清單：
 
--   GeneratedFiles：流程所寫入之檔案的清單。 對於已覆寫現有唯讀檔的檔案而言，%(GeneratedFiles.ReadOnlyFileOverwritten) 將會是 true。 您可以從原始檔控制中簽出這些檔案。
+- GeneratedFiles：流程所寫入之檔案的清單。 對於已覆寫現有唯讀檔的檔案而言，%(GeneratedFiles.ReadOnlyFileOverwritten) 將會是 true。 您可以從原始檔控制中簽出這些檔案。
 
--   NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。
+- NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。
 
- 例如，您可以定義工作以檢查 GeneratedFiles。
+  例如，您可以定義工作以檢查 GeneratedFiles。
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath 和 OutputFileName
 
@@ -255,7 +255,6 @@ Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可�
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 您現在可以在 assembly 和 include 指示詞中使用專案屬性：

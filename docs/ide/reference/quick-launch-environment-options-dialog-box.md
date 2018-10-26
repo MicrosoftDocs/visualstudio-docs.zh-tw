@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad37856e8692d5182ddba4f80ec1c07aa095f674
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936650"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 您可以使用 [快速啟動] 快速搜尋選項、範本、功能表這類 IDE 資產，並對其執行動作。 但無法使用 [快速啟動] 來搜尋程式碼和符號。 [快速啟動] 搜尋方塊位於功能表列的右上角，而且選擇 Ctrl+Q 鍵即可存取。 只要在方塊中輸入搜尋字串即可。 若要搜尋包含 @ 的字串，請使用 ”@@”。
@@ -34,7 +34,7 @@ ms.locfileid: "31946776"
  您可以使用下列快速鍵，限制搜尋特定分類。
 
 |分類|快速鍵|快速鍵描述|
-|--------------|--------------|--------------------------|
+|--------------|--------------| - |
 |最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|
 |Menus|@menu<br /><br /> 例如：`@menu font`|限制搜尋功能表項目。|
 |選項|@opt<br /><br /> 例如：`@opt font`|限制搜尋 [選項] 對話方塊中的設定。|

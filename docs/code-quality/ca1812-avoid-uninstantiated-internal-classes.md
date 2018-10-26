@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827454"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免使用未執行個體化的內部類別
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47858999"
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 組件層級類型的執行個體不是由組件中的程式碼所建立。
+
+組件層級類型的執行個體不是由組件中的程式碼所建立。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會嘗試找出其中的型別，建構函式的呼叫，並報告違規情形，如果不找到任何呼叫。
 
- 此規則就不會檢查下列類型：
+此規則會嘗試找出其中的型別，建構函式的呼叫，並報告違規情形，如果不找到任何呼叫。
+
+此規則就不會檢查下列類型：
 
 - 值類型
 
@@ -51,19 +54,21 @@ ms.locfileid: "47858999"
 
 - 類型，無法具現化，並定義`static`(`Shared` Visual Basic 中) 只方法。
 
- 如果您套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>正在分析之組件，此規則不會發生在標示為任何建構函式`internal`因為您不知道欄位是否正由另一個`friend`組件。
+如果您套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>正在分析之組件，此規則不會發生在標示為任何建構函式`internal`因為您不知道欄位是否正由另一個`friend`組件。
 
- 即使您不能解決這項限制，在 Visual Studio 程式碼分析，外部的獨立 FxCop 會內部建構函式上每個`friend`組件會出現在分析中。
+即使您不能解決這項限制，在 Visual Studio 程式碼分析，外部的獨立 FxCop 會內部建構函式上每個`friend`組件會出現在分析中。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
+
+若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
 
 - 私用建構函式以.NET Framework 1.0 和 1.1 版為目標的類型。
 
 - `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告。 我們建議您隱藏這個警告，在下列情況：
+
+它可安全地隱藏此規則的警告。 我們建議您隱藏這個警告，在下列情況：
 
 - 這類的類別建立透過晚期繫結反映方法<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
 
@@ -90,11 +95,12 @@ ms.locfileid: "47858999"
     mc.Create();
     ```
 
- 在這些情況下，我們建議您隱藏這個警告。
+  在這些情況下，我們建議您隱藏這個警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

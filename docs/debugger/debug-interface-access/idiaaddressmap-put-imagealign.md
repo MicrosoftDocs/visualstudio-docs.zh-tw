@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Put_imagealign |Microsoft 文件'
+title: 'Idiaaddressmap:: Put_imagealign |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c87592dc04c244e394f1df06cfa46d77f595a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06110568e0854692b19c3c118e948024bd346295
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903994"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
-設定影像的對齊方式。  
+設定的影像對齊方式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,18 +34,18 @@ HRESULT put_imageAlign (
   
 #### <a name="parameters"></a>參數  
  NewVal  
- [in]新影像對齊值的可執行檔。  
+ [in]新映像對齊值的可執行檔。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 指定的記憶體界限對齊映像 （載入可執行檔）。 此連接可以受到目前的系統架構和編譯和連結時間選項影響。 影像對齊方式一律為位元組界限上。 下列影像對齊是有效值： 1、 2、 4、 8、 16、 32 和 64 位元組界限。  
+ 指定的記憶體界限對齊映像 （載入可執行檔）。 目前的系統架構以及編譯和連結的時間選項，可能會影響這種對齊方式。 影像對齊方式一律為位元組界限上。 下列影像對齊方式是有效值： 1、 2、 4、 8、 16、 32 和 64 位元組的界限。  
   
- 可以藉由呼叫擷取目前的影像對齊[idiaaddressmap:: Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)方法。  
+ 藉由呼叫可擷取目前的影像對齊[idiaaddressmap:: Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)方法。  
   
 > [!NOTE]
->  可以呼叫這個方法已載入影像。 `put_imageAlign`映像已移動或變更和新的對齊是必要時，通常會使用方法。  
+>  映像已載入時，可以呼叫這個方法。 `put_imageAlign`映像已經移動或變更和新的對齊是必要時，通常會使用方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

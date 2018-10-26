@@ -17,12 +17,12 @@ ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98a81f8d0fc5990f00c13d64752c07cbea8e9998
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e643a2d5dedb8b62ae640487749d75592cd4e6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921648"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c69c69cfed53b0080614984853b3128908c2e89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893646"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>逐步解說：LinqToXmlDataBinding 範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "49182281"
 ## <a name="remarks"></a>備註  
  LinqToXmlDataBinding 程式是由 C# 和 XAML 原始程式檔撰寫的 Windows Presentation Foundation (WPF) 應用程式。 該程式包含定義書籍清單以及讓使用者檢視、加入、刪除與編輯這些項目的內嵌 XML 文件， 並以下列兩個主要原始程式檔組成：  
   
--   L2DBForm.xaml 包含適用於主視窗之使用者介面 (UI) 的 XAML 宣告程式碼。 它也包含可定義書籍清單之資料提供者與內嵌 XML 文件的視窗資源區段。  
+- L2DBForm.xaml 包含適用於主視窗之使用者介面 (UI) 的 XAML 宣告程式碼。 它也包含可定義書籍清單之資料提供者與內嵌 XML 文件的視窗資源區段。  
   
--   L2DBForm.xaml.cs 包含與 UI 相關聯的初始化與事件處理方法。  
+- L2DBForm.xaml.cs 包含與 UI 相關聯的初始化與事件處理方法。  
   
- 主視窗分為下列四個 UI 垂直區段：  
+  主視窗分為下列四個 UI 垂直區段：  
   
--   **XML**：顯示內嵌書籍清單的 XML 原始檔。  
+- **XML**：顯示內嵌書籍清單的 XML 原始檔。  
   
--   **書籍清單**：將書籍項目顯示為標準文字，並讓使用者選取和刪除個別的項目。  
+- **書籍清單**：將書籍項目顯示為標準文字，並讓使用者選取和刪除個別的項目。  
   
--   **編輯選取的書籍**：可讓使用者編輯與目前所選之書籍項目相關聯的值。  
+- **編輯選取的書籍**：可讓使用者編輯與目前所選之書籍項目相關聯的值。  
   
--   **加入新的書籍**：可根據使用者輸入的值，建立新的書籍項目。  
+- **加入新的書籍**：可根據使用者輸入的值，建立新的書籍項目。  
   
 ## <a name="in-this-section"></a>本節內容  
   

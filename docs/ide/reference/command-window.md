@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905946"
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
@@ -55,7 +55,7 @@ ms.locfileid: "36235098"
  下列快速鍵可協助您在處於命令模式時進行巡覽。
 
 |動作|游標位置|按鍵繫結關係|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |循環使用先前輸入的命令清單。|輸入行|向上鍵和向下鍵|
 |向上捲動視窗。|命令視窗內容|CTRL+向上鍵|
 |向下捲動視窗。|命令視窗內容|向下鍵或 CTRL+向下鍵|
@@ -114,5 +114,5 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
 ## <a name="see-also"></a>請參閱
 
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

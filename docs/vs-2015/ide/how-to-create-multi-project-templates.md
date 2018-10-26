@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950845"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ ms.locfileid: "49256564"
   
  多專案範本必須包含下列項目，且壓縮成 .zip 檔案：  
   
--   整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
+- 整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
   
--   包含完整專案範本所需之檔案的一或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。  
+- 包含完整專案範本所需之檔案的一或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。  
   
- 例如，有兩個專案的多專案範本 .zip 檔，可能有下列檔案和目錄：  
+  例如，有兩個專案的多專案範本 .zip 檔，可能有下列檔案和目錄：  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- 多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：  
+  多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：  
   
--   `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如:   
+- `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如:   
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如:   
+- `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如:   
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- 多專案範本的行為也與一般範本不同。 多專案範本具有下列獨特的特性：  
+  多專案範本的行為也與一般範本不同。 多專案範本具有下列獨特的特性：  
   
--   多專案範本中的個別專案不能由 [新增專案] 對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
+- 多專案範本中的個別專案不能由 [新增專案] 對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
   
--   多專案範本可以包含以不同語言撰寫的專案，但整個範本本身只能使用 `ProjectType` 項目放在一個分類。  
+- 多專案範本可以包含以不同語言撰寫的專案，但整個範本本身只能使用 `ProjectType` 項目放在一個分類。  
   
 ### <a name="to-create-a-multi-project-template"></a>建立多專案範本  
   

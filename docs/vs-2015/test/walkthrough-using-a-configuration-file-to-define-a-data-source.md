@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843037"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "49253002"
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要將自訂組態區段加入 app.config 檔案  
   
-1.  app.config 的根項目應該是 `configuration` 項目。 在 `configuration` 項目內建立 `configSections` 項目。 `configSections` 應該是 app.config 檔案中的第一個項目。  
+1. app.config 的根項目應該是 `configuration` 項目。 在 `configuration` 項目內建立 `configSections` 項目。 `configSections` 應該是 app.config 檔案中的第一個項目。  
   
-2.  在 `configSections` 項目中建立 `section` 項目。  
+2. 在 `configSections` 項目中建立 `section` 項目。  
   
-3.  在 `section` 項目中加入名為 `name` 的屬性，並為它指派一個與 `microsoft.visualstudio.testtools` 相等的值。 加入另一個名為 `type` 的屬性，並為它指派一個與 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 相等的值。  
+3. 在 `section` 項目中加入名為 `name` 的屬性，並為它指派一個與 `microsoft.visualstudio.testtools` 相等的值。 加入另一個名為 `type` 的屬性，並為它指派一個與 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 相等的值。  
   
- `section` 項目應該看起來像這樣：  
+   `section` 項目應該看起來像這樣：  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ ms.locfileid: "49253002"
 ## <a name="define-data-sources"></a>定義資料來源  
  資料來源區段會包含四個屬性，測試引擎會利用這些屬性，從資料來源中擷取資料。  
   
--   `name` 會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 所使用的識別，以指定要使用哪一個資料來源。  
+- `name` 會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 所使用的識別，以指定要使用哪一個資料來源。  
   
--   `connectionString` 可識別在先前＜定義連接字串＞小節中所建立的連接字串。  
+- `connectionString` 可識別在先前＜定義連接字串＞小節中所建立的連接字串。  
   
--   `dataTableName` 會定義測試中所使用之資料所在的資料表或工作表。  
+- `dataTableName` 會定義測試中所使用之資料所在的資料表或工作表。  
   
--   `dataAccessMethod` 會定義存取資料來源之資料值的技巧。  
+- `dataAccessMethod` 會定義存取資料來源之資料值的技巧。  
   
- 在這個章節中，您會定義兩個將用於單元測試中的資料來源。  
+  在這個章節中，您會定義兩個將用於單元測試中的資料來源。  
   
 #### <a name="to-define-data-sources"></a>若要定義資料來源  
   

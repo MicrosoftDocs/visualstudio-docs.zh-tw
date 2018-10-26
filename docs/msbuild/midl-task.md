@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080310"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863851"
 ---
 # <a name="midl-task"></a>MIDL 工作
 包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 (midl.exe)。 如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。  
@@ -245,7 +245,7 @@ ms.locfileid: "39080310"
   
      若為 `true`，則輸入檔的格式必須與 mktyplib.exe 2.03 版相容。  
   
-     如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的 [ODL 檔案語法](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx)。  
+     如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的 [ODL 檔案語法](/previous-versions/windows/desktop/automat/odl-file-syntax)。  
   
 -   **OutputDirectory**  
   

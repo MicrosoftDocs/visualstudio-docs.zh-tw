@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865958"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中設定警告
 
@@ -39,7 +39,7 @@ ms.locfileid: "31918978"
  編譯器的 **/warnaserror** 命令列選項也能用於指定是否要將警告視為錯誤。 您可以將逗號分隔清單新增至此選項，利用 + 或 - 指定應將哪些警告視為錯誤或警告。 下表詳細說明可能的選項。
 
 |命令列選項|指定|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|將所有警告視為錯誤|
 |`/warnsaserror`-|不要將警告視為錯誤。 這是預設值。|
 |`/warnaserror+:<warning list` `>`|將特定警告視為錯誤，這些警告會在逗號分隔清單中依其錯誤識別碼列出。|

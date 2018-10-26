@@ -17,12 +17,12 @@ ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17c2f0223d680030a10832ed97b2e9ff18497069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ba0259cae82ff1fba4fa93d2f81432e84ba426dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911612"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

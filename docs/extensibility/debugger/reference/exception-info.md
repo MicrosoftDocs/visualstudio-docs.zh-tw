@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO |Microsoft 文件
+title: EXCEPTION_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48772ed5835daeff9d47773e6e48526993fa425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bbefc02a05d03dc966c05941ca08c05cce0a5a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947908"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-描述例外狀況或程式偵錯時所擲回執行階段錯誤。  
+描述例外狀況或擲回的正在偵錯之程式的執行階段錯誤。  
   
 ## <a name="syntax"></a>語法  
   
@@ -63,13 +63,13 @@ public struct EXCEPTION_INFO {
  例外狀況或執行階段錯誤的識別碼。  
   
  dwState  
- 中的值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)定義的例外狀況狀態的列舉。  
+ 值，以從[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉型別，定義例外狀況的狀態。  
   
  guidType  
- GUID 的語言識別項，在`guidLang`或`guidEng`。  
+ GUID 的語言識別項、 任一`guidLang`或`guidEng`。  
   
 ## <a name="remarks"></a>備註  
- 此結構會當做參數傳遞[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)和[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此結構也會傳遞至[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)要填入的方法。  
+ 此結構會做為參數傳遞[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)並[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此結構也會傳遞至[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)来填入的方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

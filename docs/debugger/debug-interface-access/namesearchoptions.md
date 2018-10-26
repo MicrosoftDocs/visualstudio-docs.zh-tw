@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions |Microsoft 文件
+title: NameSearchOptions |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95d5ed2e91b847b99d063b6fcba485fb96c3290
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c4b8771ad1bf2ee97ec1f22636a4684bc9aa7ee8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950338"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 指定符號和檔案名稱的搜尋選項。  
@@ -49,22 +49,22 @@ enum NameSearchOptions {
  未指定任何選項。  
   
  `nsfCaseSensitive`  
- 適用於區分大小寫名稱相符。  
+ 適用於區分大小寫的名稱相符項目。  
   
  `nsfCaseInsensitive`  
- 適用於不區分大小寫的名稱相符。  
+ 適用於不區分大小寫的名稱相符項目。  
   
  `nsfFNameExt`  
- 視為路徑名稱，並套用 filename.ext 名稱相符。  
+ 視為路徑的名稱，並套用 filename.ext 名稱相符項目。  
   
  `nsfRegularExpression`  
- 適用於使用星號 （*） 和問號 （？） 做為萬用字元區分大小寫名稱相符。  
+ 適用於區分大小寫的名稱比對使用星號 （*） 和問號 （？） 作為萬用字元。  
   
  `nsfUndecoratedName`  
  僅適用於具有未裝飾和裝飾名稱的符號。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉的值傳遞給下列方法：  
+ 這個列舉的值會傳遞下列方法：  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   

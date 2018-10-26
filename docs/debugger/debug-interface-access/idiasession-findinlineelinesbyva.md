@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByVA |Microsoft 文件
+title: IDiaSession::findInlineeLinesByVA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfbe97837e377f79e81368e55b0f02823cd6f7f2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b32604f435d41efcb661386397073f8bf2103cb1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904631"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
-擷取可讓用戶端來逐一查看的所有函式內嵌，直接或間接地以指定的父符號的行號資訊和指定的虛擬位址 (VA) 內所包含的列舉。  
+擷取列舉型別，可讓用戶端來逐一查看所有函式是內嵌的直接或間接由指定之父代符號的行號資訊，而且包含在指定的虛擬位址 (VA)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,19 +33,19 @@ HRESULT findInlineeLinesByVA (
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]`IDiaSymbol`表示父物件。  
+ [in]`IDiaSymbol`物件表示父代。  
   
  `va`  
- [in]指定的位址為 VA.  
+ [in]指定的位址為瑞斯  
   
  `length`  
- [in]指定的位址範圍，在與此查詢所涵蓋的位元組數目。  
+ [in]指定位址範圍中涵蓋此查詢使用的位元組數目。  
   
  `ppResult`  
  [out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

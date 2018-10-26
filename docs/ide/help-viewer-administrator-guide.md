@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951089"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 
@@ -50,7 +50,6 @@ ms.locfileid: "33704263"
 -   用戶端電腦必須能夠存取網際網路。
 
 -   在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
-
 
 警告：
 
@@ -93,17 +92,17 @@ ms.locfileid: "33704263"
 
 #### <a name="to-uninstall-local-help"></a>解除安裝本機說明
 
-1.  在 Help Viewer 中，選擇 [管理內容] 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
 
-2.  巡覽至 Visual Studio 文件集。
+2. 巡覽至 Visual Studio 文件集。
 
-3.  選擇每個子項目旁的 [移除]。
+3. 選擇每個子項目旁的 [移除]。
 
-4.  選擇 [更新] 以解除安裝。
+4. 選擇 [更新] 以解除安裝。
 
-5.  瀏覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*，並確認該資料夾只包含檔案 catalogType.xml。
+5. 瀏覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*，並確認該資料夾只包含檔案 catalogType.xml。
 
- 一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。
+   一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。
 
 #### <a name="to-download-the-content"></a>下載內容
 
@@ -112,7 +111,6 @@ ms.locfileid: "33704263"
 2.  在 [建議的文件] 或 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。
 
 3.  選擇 [更新]。
-
 
 接下來，您必須封裝內容，讓它可以部署到用戶端電腦。
 
@@ -128,7 +126,7 @@ ms.locfileid: "33704263"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o `
 
-     例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     例如： `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>部署內容
 

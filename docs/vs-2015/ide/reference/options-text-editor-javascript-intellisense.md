@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f04ea48505bee0f27fdeaa62458aa7ef8df915e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822407"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>IntelliSense、JavaScript、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ ms.locfileid: "49279627"
   
  您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 有四種參考群組可用：  
   
--   隱含 (Windows *版本*)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 此群組中所含的檔案會在程式碼編輯器中針對使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式開啟的每個 .js 檔案範圍中。  
+- 隱含 (Windows *版本*)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 此群組中所含的檔案會在程式碼編輯器中針對使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式開啟的每個 .js 檔案範圍中。  
   
--   隱含 (Web)，適用於 HTML5 專案。 這個群組中包含的檔案會在程式碼編輯器中針對這些專案類型開啟的每一個 .js 檔案範圍中。  
+- 隱含 (Web)，適用於 HTML5 專案。 這個群組中包含的檔案會在程式碼編輯器中針對這些專案類型開啟的每一個 .js 檔案範圍中。  
   
--   專屬的背景工作參考群組，適用於 HTML5 Web 背景工作。 在這個群組中指定的檔案會在具有專屬背景工作參考群組之明確參考的 .js 檔案範圍中。  
+- 專屬的背景工作參考群組，適用於 HTML5 Web 背景工作。 在這個群組中指定的檔案會在具有專屬背景工作參考群組之明確參考的 .js 檔案範圍中。  
   
--   泛型，適用於其他 JavaScript 專案類型。  
+- 泛型，適用於其他 JavaScript 專案類型。  
   
- **包含的檔案**  
- 這個選項會指定檔案載入語言服務內容的順序。 您可以使用 [ **移除**]、[ **上移**] 和 [ **下移** ] 按鈕設定順序。 若要讓 IntelliSense 正常運作，相依於另一個檔案的檔案必須在另一個檔案載入後才能載入。  
+  **包含的檔案**  
+  這個選項會指定檔案載入語言服務內容的順序。 您可以使用 [ **移除**]、[ **上移**] 和 [ **下移** ] 按鈕設定順序。 若要讓 IntelliSense 正常運作，相依於另一個檔案的檔案必須在另一個檔案載入後才能載入。  
   
 > [!CAUTION]
 >  如果以不設條件的方式在兩個以上的隱含參考中定義物件，則這個清單中的最後一個參考將用來定義該物件。  

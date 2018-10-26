@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS |Microsoft 文件
+title: DEBUGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9ecaab348ca69a792c39a8cb74e998d8f3a6aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f92138aa9cb3867343ec1d83653d8b30f9b1a8a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927594"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 指定要擷取偵錯屬性物件的相關資訊。  
@@ -87,22 +87,22 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
  初始化/使用`dwAttrib`欄位。  
   
  DEBUGPROP_INFO_PROP，  
- 初始化/使用`pProperty`包含欄位[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。  
+ 初始化/使用`pProperty`包含的欄位[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- 指定 [值] 欄位應包含的自動展開的值，是否有的話，這種類型的物件。  
+ 指定 [值] 欄位應該包含自動擴充的值，是否有的話，這種類型的物件。  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
  已取代。  
   
  DEBUGPROP_INFO_VALUE_RAW  
- 不會傳回任何 beautified 的值或成員 （也就是不要格式化值）。  
+ 不會傳回任何 beautified 的值或成員 （也就是不會將格式化的值）。  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
  不會傳回任何特殊的合成的值 (例如，請勿呼叫`ToString()`上用來產生值的物件)。  
   
  DEBUGPROP_INFO_NONE  
- 指定設定任何旗標。  
+ 指定會設定任何旗標。  
   
  DEBUGPROP_INFO_STANDARD  
  初始化/使用`dwAttrib`， `bstrName`， `bstrType`，和`bstrValue`欄位。  
@@ -111,11 +111,11 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
  表示所有旗標的遮罩。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞給[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)， [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)，和[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法以指出哪些欄位是初始化[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
+ 這些值會傳遞給[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)， [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)，並[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法以指出哪些欄位是初始化[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
- 這些值也會用於`dwFields`隸屬`DEBUG_PROPERTY_INFO`結構，表示結構的哪些欄位時，會使用並有效會傳回這個結構。  
+ 這些值也會用於`dwFields`隸屬`DEBUG_PROPERTY_INFO`表示結構的哪些欄位是使用和有效時，會傳回這個結構的結構。  
   
- 這些值可能會合併使用位元`OR`。  
+ 這些值可能會合併的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

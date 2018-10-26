@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922467"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發行已啟用視覺化樣式的 WPF 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "49250207"
   
  若要解決此錯誤，並發行方案，您必須執行下列工作：  
   
--   [發行方案，而不需要啟用視覺化樣式](#BKMK_publishsolwovs)。  
+- [發行方案，而不需要啟用視覺化樣式](#BKMK_publishsolwovs)。  
   
--   [建立資訊清單檔](#BKMK_CreateManifest)。  
+- [建立資訊清單檔](#BKMK_CreateManifest)。  
   
--   [發佈方案的可執行檔中嵌入資訊清單檔](#BKMK_embedmanifest)。  
+- [發佈方案的可執行檔中嵌入資訊清單檔](#BKMK_embedmanifest)。  
   
--   [簽署應用程式和部署資訊清單](#BKMK_signappdeplyman)。  
+- [簽署應用程式和部署資訊清單](#BKMK_signappdeplyman)。  
   
- 然後，您可以將已發行的檔案移至 您從中安裝應用程式的終端使用者的位置。  
+  然後，您可以將已發行的檔案移至 您從中安裝應用程式的終端使用者的位置。  
   
 ##  <a name="BKMK_publishsolwovs"></a> 發行方案，而不需要啟用視覺化樣式  
   
@@ -100,72 +100,72 @@ ms.locfileid: "49250207"
   
 ##  <a name="BKMK_embedmanifest"></a> 發佈方案的可執行檔中嵌入資訊清單檔案  
   
-1.  開啟**Visual Studio 命令提示字元**。  
+1. 開啟**Visual Studio 命令提示字元**。  
   
-     如需有關如何開啟**Visual Studio 命令提示字元**，請參閱[命令提示字元](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。  
+    如需有關如何開啟**Visual Studio 命令提示字元**，請參閱[命令提示字元](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。  
   
-    > [!NOTE]
-    >  其餘的步驟進行下列假設有關您的解決方案：  
-    >   
-    >  -   方案的名稱是**MyWPFProject**。  
-    > -   方案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
-    >   
-    >      將解決方案發佈到下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
-    > -   最新版的已發行的應用程式檔案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  您沒有使用上述的目錄位置或名稱。 上面所述的位置與名稱是只能用來說明發佈您的解決方案所需的步驟。  
+   > [!NOTE]
+   >  其餘的步驟進行下列假設有關您的解決方案：  
+   > 
+   > - 方案的名稱是**MyWPFProject**。  
+   >   -   方案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
+   > 
+   >   將解決方案發佈到下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
+   >   -   最新版的已發行的應用程式檔案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   您沒有使用上述的目錄位置或名稱。 上面所述的位置與名稱是只能用來說明發佈您的解決方案所需的步驟。  
   
-2.  在命令提示字元中，將路徑變更為包含最新版的已發行的應用程式檔案的目錄。 下列範例示範此步驟。  
+2. 在命令提示字元中，將路徑變更為包含最新版的已發行的應用程式檔案的目錄。 下列範例示範此步驟。  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  在命令提示字元中，執行下列命令，以將資訊清單檔內嵌到應用程式的可執行檔。  
+3. 在命令提示字元中，執行下列命令，以將資訊清單檔內嵌到應用程式的可執行檔。  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> 簽署應用程式和部署資訊清單  
   
-1.  在命令提示字元中，執行下列命令來移除`.deploy`從目前目錄中可執行檔。  
+1. 在命令提示字元中，執行下列命令來移除`.deploy`從目前目錄中可執行檔。  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  這個範例假設只有一個檔案`.deploy`副檔名。 請確定您已重新命名此目錄中擁有的所有檔案`.deploy`副檔名。  
+   > [!NOTE]
+   >  這個範例假設只有一個檔案`.deploy`副檔名。 請確定您已重新命名此目錄中擁有的所有檔案`.deploy`副檔名。  
   
-2.  在命令提示字元中，執行下列命令來簽署應用程式資訊清單。  
+2. 在命令提示字元中，執行下列命令來簽署應用程式資訊清單。  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  這個範例假設您使用簽署資訊清單`.pfx`專案檔案。 如果您不會簽署資訊清單，您可以省略`–cf`此範例中使用的參數。 如果您所簽署的憑證需要密碼的資訊清單，指定`–password`選項 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`)。  
+   > [!NOTE]
+   >  這個範例假設您使用簽署資訊清單`.pfx`專案檔案。 如果您不會簽署資訊清單，您可以省略`–cf`此範例中使用的參數。 如果您所簽署的憑證需要密碼的資訊清單，指定`–password`選項 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`)。  
   
-3.  在命令提示字元中，執行下列命令，以新增`.deploy`您此程序的上一個步驟中重新命名的檔案名稱的擴充功能。  
+3. 在命令提示字元中，執行下列命令，以新增`.deploy`您此程序的上一個步驟中重新命名的檔案名稱的擴充功能。  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  這個範例假設只有一個檔案有`.deploy`副檔名。 請確定您已重新命名這個先前的目錄中的所有檔案`.deploy`副檔名。  
+   > [!NOTE]
+   >  這個範例假設只有一個檔案有`.deploy`副檔名。 請確定您已重新命名這個先前的目錄中的所有檔案`.deploy`副檔名。  
   
-4.  在命令提示字元中，執行下列命令來簽署部署資訊清單。  
+4. 在命令提示字元中，執行下列命令來簽署部署資訊清單。  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  這個範例假設您使用簽署資訊清單`.pfx`專案檔案。 如果您不會簽署資訊清單，您可以省略`–cf`此範例中使用的參數。 如果您所簽署的憑證需要密碼的資訊清單，指定`–password`選項，如此範例所示：`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`。  
+   > [!NOTE]
+   >  這個範例假設您使用簽署資訊清單`.pfx`專案檔案。 如果您不會簽署資訊清單，您可以省略`–cf`此範例中使用的參數。 如果您所簽署的憑證需要密碼的資訊清單，指定`–password`選項，如此範例所示：`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`。  
   
- 在您執行這些步驟之後，您可以移動已發行的檔案到您從中安裝應用程式的終端使用者的位置。 如果您想要經常更新方案，您可以將這些命令移至 指令碼，並執行指令碼每次您發行新版本。  
+   在您執行這些步驟之後，您可以移動已發行的檔案到您從中安裝應用程式的終端使用者的位置。 如果您想要經常更新方案，您可以將這些命令移至 指令碼，並執行指令碼每次您發行新版本。  
   
 ## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

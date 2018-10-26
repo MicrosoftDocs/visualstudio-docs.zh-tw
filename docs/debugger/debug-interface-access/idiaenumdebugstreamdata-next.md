@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Next |Microsoft 文件'
+title: 'Idiaenumdebugstreamdata:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e816edd5b93ffdfec46d36d9aabba154ab035d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895245"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-擷取指定之列舉順序中的記錄數。  
+擷取指定的列舉順序中的記錄數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,13 +47,13 @@ HRESULT Next (
  [out]傳回動作傳回的位元組的數目。 如果`data`是 NULL，則`pcbData`所有要求的記錄包含的可用資料的位元組總數。  
   
  [資料]  
- [out]是要填入的偵錯資料流記錄資料的緩衝區。  
+ [out]要填滿偵錯資料流記錄資料的緩衝區。  
   
  pceltFetched  
  [in、 out]傳回的記錄數目`data`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

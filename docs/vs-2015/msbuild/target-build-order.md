@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925873"
 ---
 # <a name="target-build-order"></a>目標建置順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241236"
   
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
--   `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
+- `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
   
--   `DefaultTargets`. 如果未在命令列上明確指定目標，則這個 `Project` 屬性會指定要執行哪些目標。  
+- `DefaultTargets`. 如果未在命令列上明確指定目標，則這個 `Project` 屬性會指定要執行哪些目標。  
   
--   `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。  
+- `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。  
   
--   `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。  
+- `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。  
   
- 目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。  
+  目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。  
   
- 目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
+  目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
   
 ## <a name="initial-targets"></a>初始目標  
  [Project](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。  

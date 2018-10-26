@@ -17,12 +17,12 @@ ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92eec14d563b441b028c620aa16a9c3dd19ac650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7a00ccf948d7e0359b93a81e4196da129b0315f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879801"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

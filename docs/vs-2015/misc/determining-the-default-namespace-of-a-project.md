@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950946"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>判斷專案的預設命名空間
 針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]的話`CustomToolNamespace`上的輸入檔的值設定屬性`CustomToolNamespace`會變成傳遞至預設命名空間參數的值<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法。 否則，請`wszDefaultNamespace`參數傳遞至`Generate`會一律等於根命名空間。 如需有關命名空間的詳細資訊，請參閱 <<c0> [ 命名空間關鍵字](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b)。  
@@ -28,11 +28,11 @@ ms.locfileid: "49223323"
   
  階層鏈結包含 Web 參考資料夾時，就會發生此規則的例外狀況。 例如，如果：  
   
--   FolderC Web 參考資料夾，命名空間為**CL9。FolderC**。  
+- FolderC Web 參考資料夾，命名空間為**CL9。FolderC**。  
   
--   FolderB Web 參考資料夾，命名空間為**CL9。FolderB.FolderC**。  
+- FolderB Web 參考資料夾，命名空間為**CL9。FolderB.FolderC**。  
   
- 也就是命名空間會使用下列格式：  
+  也就是命名空間會使用下列格式：  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870051"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -39,7 +39,7 @@ ms.locfileid: "39175744"
 下列表格列出可用於分析負載測試結果的內建圖形。
 
 |圖形名稱|描述|
-|----------------|-----------------|
+|-|-|
 |關鍵指標|用於描述測試效能基本層面的計數器，例如使用者負載、輸送量和回應時間。|
 |測試回應時間|執行測試所需時間量的資料。|
 |頁面回應時間|負載測試期間所存取 Web 頁面的平均回應時間。|
@@ -63,7 +63,7 @@ ms.locfileid: "39175744"
  圖例會包含下列欄位：
 
 |計數器|計數器的名稱|
-|-------------|-----------------------------|
+|-|-|
 |執行個體|計數器執行個體的名稱。|
 |分類|計數器分類的名稱。|
 |電腦|要收集計數器的電腦名稱。|
@@ -77,7 +77,7 @@ ms.locfileid: "39175744"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-|
 |**使用圖例自訂圖形：**[圖形] 檢視圖例會顯示每個與圖形建立關聯之效能計數器的資訊。 您可以使用圖例來移除效能計數器、反白顯示圖形中的效能計數器，以及自訂繪圖選項。|-   [使用圖形檢視圖例來分析負載測試](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**在圖形上顯示計數器：** 藉由在圖形上置放計數器，您可以將各種資料新增至負載測試結果圖形。|-   [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**放大圖形：** 完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。|-   [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

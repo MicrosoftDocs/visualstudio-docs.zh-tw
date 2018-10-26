@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode |Microsoft 文件
+title: IDebugPortNotify2::AddProgramNode |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54726a332bd27d01a0229a9127480d2871360d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6724d33a10f766ac30d8211b656710c8a9f900da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860528"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-註冊可偵錯的程式與連接埠執行。  
+可以進行偵錯的程式會向其執行的連接埠。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,7 +44,7 @@ int AddProgramNode(
  [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要登錄的程式。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  程式節點可以取消註冊該連接埠從藉由呼叫[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)方法。  

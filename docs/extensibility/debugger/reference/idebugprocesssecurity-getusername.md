@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName |Microsoft 文件
+title: IDebugProcessSecurity::GetUserName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94fcc74943deb33e7f98ba24e9d7389a9d5746fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f13d7597877104613f0e6ef6380abf0b6bc2a594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891463"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-從連接埠供應商取得的使用者名稱。  
+從連接埠提供者取得的使用者名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,10 +42,10 @@ int GetUserName (
  [out]字串，包含使用者名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果此方法成功，它會傳回`S_OK`。 否則會傳回錯誤碼。  
+ 如果方法成功，它會傳回`S_OK`。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- `GetUserName` 傳回中所顯示的使用者名稱**使用者名**資料行**附加至處理序** 對話方塊。 若要檢視**附加至處理序**對話方塊中，按一下 **附加至處理序**上**工具**功能表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  
+ `GetUserName` 傳回會顯示在使用者名稱**使用者名**資料行**附加至處理序** 對話方塊。 若要檢視**připojit k procesu**  對話方塊中，按一下**附加至處理序**上**工具**功能表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

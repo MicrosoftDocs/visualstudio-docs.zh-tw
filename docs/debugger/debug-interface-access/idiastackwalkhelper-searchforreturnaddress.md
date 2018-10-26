@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::searchForReturnAddress |Microsoft 文件
+title: IDiaStackWalkHelper::searchForReturnAddress |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e1dfc4244d375b398b4efce3852c62acf519d19
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a93ea1ae986941ef81dd50026996f4e0d9f56eae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927212"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-搜尋指定的堆疊框架的最接近的函式傳回的位址。  
+搜尋指定的堆疊框架之最接近的函式傳回的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT searchForReturnAddress(
   
 #### <a name="parameters"></a>參數  
  `frame`  
- [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，代表目前的堆疊框架。  
+ [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示目前的堆疊框架。  
   
  `returnAddress`  
  [out]傳回最接近的函式傳回的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

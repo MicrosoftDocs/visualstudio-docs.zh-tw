@@ -17,12 +17,12 @@ ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ec9f0ae560d28304c3d739011e4d6eb509d66d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d9359637a4a1bbd1650a80c8210f615964703d68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907764"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

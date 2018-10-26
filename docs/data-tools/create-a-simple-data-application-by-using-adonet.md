@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891007"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 
 當您建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、 插入資料，以及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
 
- 這篇文章示範簡單的方式，以快速的方式取得資料庫中的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。
+這篇文章示範簡單的方式，以快速的方式取得資料庫中的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。
 
 > [!IMPORTANT]
 > 為了簡化程式碼，它不包含可實際執行的例外狀況處理。
@@ -65,29 +65,29 @@ ms.locfileid: "36758479"
 
 ## <a name="create-the-forms-and-add-controls"></a>建立表單並加入控制項
 
-1.  建立 Windows Forms 應用程式的專案，然後加以命名**SimpleDataApp**。
+1. 建立 Windows Forms 應用程式的專案，然後加以命名**SimpleDataApp**。
 
-     Visual Studio 會建立專案和數個檔案，包括空白 Windows 表單名為**Form1**。
+    Visual Studio 會建立專案和數個檔案，包括空白 Windows 表單名為**Form1**。
 
-2.  將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：
+2. 將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：
 
-    -   **巡覽**
+   -   **巡覽**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。
+3. 為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。
 
-    > [!NOTE]
-    >  加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。
+   > [!NOTE]
+   > 加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。
 
- **瀏覽表單**
+   **瀏覽表單**
 
- ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png)
+   ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png)
 
 |瀏覽表單的控制項|屬性|
-|--------------------------------------|----------------|
+| - |----------------|
 |按鈕|Name = btnGoToAdd|
 |按鈕|Name = btnGoToFillOrCancel|
 |按鈕|Name = btnExit|
@@ -97,7 +97,7 @@ ms.locfileid: "36758479"
  ![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 表單的控制項|屬性|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
 |按鈕|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ ms.locfileid: "36758479"
  ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 表單的控制項|屬性|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtOrderID|
 |按鈕|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|

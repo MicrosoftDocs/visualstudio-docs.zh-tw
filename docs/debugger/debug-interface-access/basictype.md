@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 61d63f20bb086190f6409d3eb4cd08c80689d10f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874016"
 ---
 # <a name="basictype"></a>BasicType
 指定符號的基本類型。  

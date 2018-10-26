@@ -1,5 +1,5 @@
 ---
-title: CV_CPU_TYPE_e |Microsoft 文件
+title: CV_CPU_TYPE_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a52c65823bb5e4f6ee93522648b235feba691d0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f5dc2c5f053d14a42bac59f56f58d4aa6227980c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925718"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目標處理器。  
   
 > [!NOTE]
->  在之後的列舉項目中識別處理器`CV_CFL_*`前置詞。  
+>  之後的列舉型別項目中已識別的處理器`CV_CFL_*`前置詞。  
   
 ## <a name="syntax"></a>語法  
   
@@ -97,7 +97,7 @@ typedef enum CV_CPU_TYPE_e {
 ```  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回透過呼叫[idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法。  
+ 這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

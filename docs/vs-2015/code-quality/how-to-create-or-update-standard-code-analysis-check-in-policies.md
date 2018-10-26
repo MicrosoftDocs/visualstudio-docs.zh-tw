@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939432"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49301557"
   
  程式碼分析簽入原則套用至每個 team 專案中的程式碼專案，並設定 team 專案設定。 程式碼分析回合設定的程式碼專案的專案 (.xxproj) 檔案中的程式碼專案。 在本機電腦上執行程式碼分析回合。 中 team 專案設定的規則時啟用程式碼分析簽入原則、 其上次的編輯之後必須編譯要簽入程式碼專案中的檔案和包含執行的程式碼分析，至少必須在電腦上執行，c已對 hanges。  
   
--   對於 managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含的程式碼分析規則子集。  
+- 對於 managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含的程式碼分析規則子集。  
   
--   對於 C/c + + 程式碼，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 team 專案中的個別程式碼專案的特定規則。  
+- 對於 C/c + + 程式碼，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 team 專案中的個別程式碼專案的特定規則。  
   
- 指定 managed 程式碼簽入原則之後，小組成員可以同步處理的 team 專案的原則設定的程式碼專案其程式碼分析設定。  
+  指定 managed 程式碼簽入原則之後，小組成員可以同步處理的 team 專案的原則設定的程式碼專案其程式碼分析設定。  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>若要開啟簽入原則編輯器  
   

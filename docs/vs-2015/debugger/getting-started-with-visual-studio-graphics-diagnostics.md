@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824928"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49277806"
 ## <a name="requirements"></a>需求  
  若要在 Visual Studio 2015 中使用圖形診斷，您必須具有下列其中一個版本：  
   
--   Visual Studio 2015 Enterprise  
+- Visual Studio 2015 Enterprise  
   
--   Visual Studio 2015 Professional  
+- Visual Studio 2015 Professional  
   
--   Visual Studio 2015 Community  
+- Visual Studio 2015 Community  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Windows 10 必要條件  
  選擇性 Windows 功能*圖形工具*提供所需的 Windows 10 上圖形診斷擷取和播放基礎結構。  
@@ -54,17 +54,17 @@ ms.locfileid: "49277806"
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>安裝適用於 Windows 10 的圖形工具  
   
-1.  在 **開始**功能表上，選擇**設定**。 **設定**對話方塊隨即出現。  
+1. 在 **開始**功能表上，選擇**設定**。 **設定**對話方塊隨即出現。  
   
-2.  在 [**設定**] 對話方塊中，選擇**系統**，然後選取**安裝的應用程式**從系統設定的清單。  
+2. 在 [**設定**] 對話方塊中，選擇**系統**，然後選取**安裝的應用程式**從系統設定的清單。  
   
-3.  右手邊**設定** 對話方塊中，選擇**管理選擇性功能**之下**安裝應用程式和功能**。 **管理選擇性功能**對話方塊隨即出現。  
+3. 右手邊**設定** 對話方塊中，選擇**管理選擇性功能**之下**安裝應用程式和功能**。 **管理選擇性功能**對話方塊隨即出現。  
   
-4.  在 [**管理選擇性功能**] 對話方塊中，選擇**新增功能**。 您可以安裝的選擇性功能清單隨即出現。  
+4. 在 [**管理選擇性功能**] 對話方塊中，選擇**新增功能**。 您可以安裝的選擇性功能清單隨即出現。  
   
-5.  選取 **圖形工具**從清單中的功能，然後選擇**安裝**。  
+5. 選取 **圖形工具**從清單中的功能，然後選擇**安裝**。  
   
- 安裝 Windows 10 SDK 時，也會自動安裝圖形工具功能。  
+   安裝 Windows 10 SDK 時，也會自動安裝圖形工具功能。  
   
 > [!TIP]
 >  Windows 10 的選擇性圖形工具功能提供輕量型擷取和播放功能 — 例如命令列擷取程式**dxcap.exe**— 可用於在支援、 測試和診斷案例未安裝開發人員工具的機器。 如需詳細資訊，請參閱 <<c0> [ 命令列擷取工具](../debugger/command-line-capture-tool.md)主題。  
@@ -75,11 +75,11 @@ ms.locfileid: "49277806"
 ### <a name="1---create-a-direct3d-app"></a>1 - 建立 Direct3D 應用程式  
  如果您已經有可用來瀏覽圖形診斷的專屬 Direct3D 應用程式，很好！ 否則，您可以使用程式碼庫上可用的其中一個 Direct3D 範例。  
   
--   若要試用具有 Direct3D 12 上使用 Visual Studio 2015 的 Windows 10 的圖形診斷，請嘗試[Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)適用於 Windows 10。  
+- 若要試用具有 Direct3D 12 上使用 Visual Studio 2015 的 Windows 10 的圖形診斷，請嘗試[Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)適用於 Windows 10。  
   
--   若要試用具有 Direct3D 11 Windows 10 或 Windows 8.1 上圖形診斷，您可以使用**DirectX 應用程式 （Windows 通用）** 或是**DirectX 應用程式 (Windows 8.1)** 專案範本。 或者，更有趣的東西，請嘗試[DirectX 彈珠迷宮遊戲範例](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)for Windows 8.1。  
+- 若要試用具有 Direct3D 11 Windows 10 或 Windows 8.1 上圖形診斷，您可以使用**DirectX 應用程式 （Windows 通用）** 或是**DirectX 應用程式 (Windows 8.1)** 專案範本。 或者，更有趣的東西，請嘗試[DirectX 彈珠迷宮遊戲範例](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)for Windows 8.1。  
   
- 繼續前請先確定您可以建置應用程式。  
+  繼續前請先確定您可以建置應用程式。  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 啟動圖形診斷工作階段  
  您現在已經準備好開始第一個圖形診斷工作階段。 在 Visual Studio 主功能表上，選擇**偵錯，圖形中，開始診斷**，或直接按**alt+f5**。 這樣會使用圖形診斷來啟動您的應用程式，並在 Visual Studio 中顯示診斷工作階段視窗。  
@@ -96,11 +96,11 @@ ms.locfileid: "49277806"
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>擷取一系列畫面格  
   
--   在 Visual Studio 中，在診斷工作階段 視窗中，設定**要擷取的畫面**至您想要在順序中擷取的畫面格數目，然後擷取順序 」 使用您上面所述來擷取單一畫面格的方法之一。  
+- 在 Visual Studio 中，在診斷工作階段 視窗中，設定**要擷取的畫面**至您想要在順序中擷取的畫面格數目，然後擷取順序 」 使用您上面所述來擷取單一畫面格的方法之一。  
   
-     若要再次擷取單一畫面格，將**要擷取的畫面**至`1`。  
+   若要再次擷取單一畫面格，將**要擷取的畫面**至`1`。  
   
- 當您完成時擷取的畫面格剛結束應用程式，或選擇**停止**從 圖形 工具列或診斷工作階段 視窗的按鈕。  
+  當您完成時擷取的畫面格剛結束應用程式，或選擇**停止**從 圖形 工具列或診斷工作階段 視窗的按鈕。  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 - 在圖形分析器中檢查擷取的畫面格  
  您現在可以檢查剛剛擷取的畫面格。 若要開始分析畫面格，請從診斷工作階段視窗中選擇您要檢查之畫面格的畫面格編號。 這會開啟中的框架**圖形分析器**，其中您可以使用圖形診斷工具來檢查您的應用程式如何使用 Direct3D 來追蹤轉譯問題，或使用**畫面格分析**工具了解其效能。  

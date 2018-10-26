@@ -15,27 +15,27 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937041"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 啟動程式之後, 的連接埠必須會收到通知，，如下所示：  
   
-1.  當連接埠接收新的 [程式] 節點時，它會將程式建立事件送回偵錯工作階段中。 事件會有代表程式的介面。  
+1. 當連接埠接收新的 [程式] 節點時，它會將程式建立事件送回偵錯工作階段中。 事件會有代表程式的介面。  
   
-2.  偵錯工作階段會查詢的程式可以將附加至偵錯引擎 (DE) 的識別碼。  
+2. 偵錯工作階段會查詢的程式可以將附加至偵錯引擎 (DE) 的識別碼。  
   
-3.  偵錯工作階段會檢查裝置允許 DEs，該程式的清單上。 偵錯工作階段會取得這份清單，從方案的使用中的程式設定中，原本由偵錯封裝，以傳遞給它。  
+3. 偵錯工作階段會檢查裝置允許 DEs，該程式的清單上。 偵錯工作階段會取得這份清單，從方案的使用中的程式設定中，原本由偵錯封裝，以傳遞給它。  
   
-     裝置必須在允許清單中，否則 DE 將不會附加至程式。  
+    裝置必須在允許清單中，否則 DE 將不會附加至程式。  
   
- 以程式設計的方式，當連接埠先接收新的方案節點，它會建立[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面代表程式。  
+   以程式設計的方式，當連接埠先接收新的方案節點，它會建立[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面代表程式。  
   
 > [!NOTE]
 >  這不應該混淆與`IDebugProgram2`稍後由偵錯引擎 (DE) 的介面。  

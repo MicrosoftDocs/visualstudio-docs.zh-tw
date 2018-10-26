@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac15ee59299653c71c2d1036e8318a0fee2b693c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927563"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `update`項目會指定的方案會檢查更新的間隔。  
+  `update`項目指定的方案將會檢查更新的間隔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,30 +40,30 @@ ms.locfileid: "34767604"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `update` 為必要元素，位於 `vstav3` 命名空間。  
+ `update` 項目是必要的，且位於 `vstav3` 命名空間。  
   
- `update`元素都具有下列屬性。  
+ `update` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`enabled`|必要。 將 enabled 設定為下列值之一：<br /><br /> -   **true**檢查更新。<br />-   **false**以防止 檢查更新。|  
   
- `update`項目具有下列子元素。  
+ `update` 項目具有下列子項目。  
   
 ### <a name="expiration"></a>到期日  
- `expiration` 為必要元素，位於 `vstav3` 命名空間。 這個項目指定的方案檢查更新的間隔。  
+ `expiration` 項目是必要的，且位於 `vstav3` 命名空間。 這個元素指定的方案檢查更新的間隔。  
   
- `expiration`元素都具有下列屬性。  
+ `expiration` 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`maximumAge`|   必要。 將其設定為整數。|  
-|`unit`|必要。 設定`unit`至下列值之一：<br /><br /> -   **小時**<br />-   **天**<br />-   **週**|  
+|`maximumAge`| 必要。 將此選項設定為整數。|  
+|`unit`|必要。 設定`unit`下列值之一：<br /><br /> -   **時數**<br />-   **天**<br />-   **週**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明`update`設為一律檢查更新，在 Office 方案中的項目。  
+ 下列程式碼範例說明`update`設在 Office 方案中的更新一定要檢查的項目。  
   
 ### <a name="code"></a>程式碼  
   
@@ -74,7 +74,7 @@ ms.locfileid: "34767604"
 ## <a name="example-of-setting-a-default-update-interval"></a>設定預設的更新間隔的範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明`update`Office 方案的應用程式資訊清單中的項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明`update`Office 方案的應用程式資訊清單中的項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   

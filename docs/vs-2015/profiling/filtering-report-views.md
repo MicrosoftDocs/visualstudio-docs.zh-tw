@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878449"
 ---
 # <a name="filtering-report-views"></a>篩選報表檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ ms.locfileid: "49238286"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>從標記報表檢視建立分析工具報表篩選  
   
-1.  從效能報表檢視工具列上的 [目前檢視] 清單中選取 [標記]。  
+1. 從效能報表檢視工具列上的 [目前檢視] 清單中選取 [標記]。  
   
-     即顯示標記分析工具報表。  
+    即顯示標記分析工具報表。  
   
-2.  選取要做為報告起點的 ETW 或取樣事件。  
+2. 選取要做為報告起點的 ETW 或取樣事件。  
   
-3.  按住 CTRL，然後按一下要做為報告結束點使用的事件。  
+3. 按住 CTRL，然後按一下要做為報告結束點使用的事件。  
   
-4.  以滑鼠右鍵按一下，再按一下下列選項之一：  
+4. 以滑鼠右鍵按一下，再按一下下列選項之一：  
   
-    -   [在標記上加入篩選條件] 會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在標記上加入篩選條件] 會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
   
-    -   [在時間戳記上加入篩選條件] 會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在時間戳記上加入篩選條件] 會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
   
      這兩個選項會在相同的起點和終點篩選目前的資料檔案。 如果匯出篩選用於其他報表，任一選項都可能更好。  
   

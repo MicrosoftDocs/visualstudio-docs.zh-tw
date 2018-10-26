@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField |Microsoft 文件
+title: IDebugSymbolProvider::GetContainerField |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41709f658da15001b6f604b78bf081edefd88b8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac7acc5d12ecce72119f19a51b1f4313a1aabe08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926397"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
-這個方法會取得包含偵錯地址的欄位。  
+這個方法會取得包含偵錯位址的欄位。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,13 +43,13 @@ int GetContainerField(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]所表示的位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ [in]表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
  `ppContainerField`  
  [out]傳回由容器欄位[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

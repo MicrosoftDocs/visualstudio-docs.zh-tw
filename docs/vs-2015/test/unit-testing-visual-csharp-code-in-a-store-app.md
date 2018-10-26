@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901550"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>對市集應用程式中的 Visual C# 程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "49245436"
   
 > [!NOTE]
 >  Visual Studio Community、Enterprise  及 Professional 均提供針對單元測試的額外功能。  
->   
->  -   請使用任何協力廠商及開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析及顯示測試的程式碼涵蓋範圍資訊。  
-> -   每次建置後都執行測試。  
-> -   VS Enterprise 還包含 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，幫助您將測試焦點放在自己的程式碼上。  
->   
->  如需詳細資訊，請參閱 MSDN Library 中的[使用單元測試驗證程式碼](http://msdn.microsoft.com/library/dd264975.aspx)。  
+> 
+> - 請使用任何協力廠商及開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析及顯示測試的程式碼涵蓋範圍資訊。  
+>   -   每次建置後都執行測試。  
+>   -   VS Enterprise 還包含 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，幫助您將測試焦點放在自己的程式碼上。  
+> 
+>   如需詳細資訊，請參閱 MSDN Library 中的[使用單元測試驗證程式碼](http://msdn.microsoft.com/library/dd264975.aspx)。  
   
 ##  <a name="BKMK_In_this_topic"></a>本主題內容  
  [建立方案和單元測試專案](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ ms.locfileid: "49245436"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> 將測試專案與應用程式專案結合  
   
-1.  將 Maths 應用程式的參考新增至 RooterTests 專案。  
+1. 將 Maths 應用程式的參考新增至 RooterTests 專案。  
   
-    1.  在方案總管中選擇 **RooterTests** 專案，然後在捷徑功能表上選擇 [新增參考...]。  
+   1.  在方案總管中選擇 **RooterTests** 專案，然後在捷徑功能表上選擇 [新增參考...]。  
   
-    2.  在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 然後選取 **Maths** 項目。  
+   2.  在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 然後選取 **Maths** 項目。  
   
-         ![將參考新增至 Maths 專案](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![將參考新增至 Maths 專案](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  將 using 陳述式新增至 UnitTest1.cs 檔案：  
+2. 將 using 陳述式新增至 UnitTest1.cs 檔案：  
   
-    1.  開啟 **UnitTest1.cs**。  
+   1.  開啟 **UnitTest1.cs**。  
   
-    2.  將這個程式碼新增至 `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 這一行下方：  
+   2.  將這個程式碼新增至 `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 這一行下方：  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  新增使用 Rooter 函式的測試。 將下列程式碼新增至 **UnitTest1.cpp**：  
+3. 新增使用 Rooter 函式的測試。 將下列程式碼新增至 **UnitTest1.cpp**：  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  建置方案。  
+4. 建置方案。  
   
-     新測試會出現在 [測試總管] 的 [未執行的測試] 節點中。  
+    新測試會出現在 [測試總管] 的 [未執行的測試] 節點中。  
   
-5.  在 [測試總管] 中，選擇 [ **全部執行**]。  
+5. 在 [測試總管] 中，選擇 [ **全部執行**]。  
   
-     ![基本測試成功](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![基本測試成功](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- 您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。  
+   您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 反覆擴大測試範圍並使其通過  
   
@@ -256,70 +256,70 @@ ms.locfileid: "49245436"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> 對失敗的測試進行偵錯  
   
-1.  將另一個測試新增至 **UnitTest1.cs**：  
+1. 將另一個測試新增至 **UnitTest1.cs**：  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  在 [測試總管] 中，選擇 [ **全部執行**]。  
+2. 在 [測試總管] 中，選擇 [ **全部執行**]。  
   
-     測試失敗。 在 [測試總管] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。  
+    測試失敗。 在 [測試總管] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。  
   
-     ![NegativeRangeTests 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![NegativeRangeTests 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  若要查看測試失敗的原因，請逐步執行函式：  
+3. 若要查看測試失敗的原因，請逐步執行函式：  
   
-    1.  在 `SquareRoot` 函式的開頭設定中斷點。  
+   1.  在 `SquareRoot` 函式的開頭設定中斷點。  
   
-    2.  在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試] 。  
+   2.  在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試] 。  
   
-         當在中斷點停止執行時，逐步執行程式碼。  
+        當在中斷點停止執行時，逐步執行程式碼。  
   
-    3.  將程式碼新增至 Rooter 方法以擷取例外狀況：  
+   3.  將程式碼新增至 Rooter 方法以擷取例外狀況：  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  在 [測試總管] 中，選擇 [全部執行] 測試修正過的方法，並確定並未導入迴歸。  
+   1.  在 [測試總管] 中，選擇 [全部執行] 測試修正過的方法，並確定並未導入迴歸。  
   
- 現在所有測試都通過了。  
+   現在所有測試都通過了。  
   
- ![所有測試都成功](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![所有測試都成功](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> 重構程式碼  
  **簡化 SquareRoot 函式中的主要計算。**  

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 25fa9581dff49dbdebe9ce79f6f0143d393bb275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823615"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -32,17 +32,17 @@ ms.locfileid: "47860130"
 ## <a name="running-validation"></a>執行驗證
  當使用者編輯模型 (亦即網域指定的語言執行個體) 時，下列動作會執行驗證：
 
--   以滑鼠右鍵按一下圖表，然後選取**全部驗證**。
+- 以滑鼠右鍵按一下圖表，然後選取**全部驗證**。
 
--   以滑鼠右鍵按一下您的 DSL，然後選取 [總管] 中的最上層節點**全部驗證**
+- 以滑鼠右鍵按一下您的 DSL，然後選取 [總管] 中的最上層節點**全部驗證**
 
--   儲存模型。
+- 儲存模型。
 
--   開啟模型。
+- 開啟模型。
 
--   此外，您可以撰寫執行驗證的程式碼，以做為功能表命令的一部分或回應變更。
+- 此外，您可以撰寫執行驗證的程式碼，以做為功能表命令的一部分或回應變更。
 
- 任何驗證錯誤會出現在**錯誤清單**視窗。 使用者可以按兩下錯誤訊息，選取造成錯誤的模型項目。
+  任何驗證錯誤會出現在**錯誤清單**視窗。 使用者可以按兩下錯誤訊息，選取造成錯誤的模型項目。
 
 ## <a name="defining-validation-constraints"></a>定義驗證條件約束
  您可以將驗證方法加入至 DSL 的網域類別或關聯性，藉此定義驗證條件約束。 當使用者執行驗證或在程式控制下執行驗證時，即會執行部分或所有驗證方法。 每個方法都會套用至其類別的每個執行個體，並且每個類別中可以有數個驗證方法。
@@ -54,37 +54,37 @@ ms.locfileid: "47860130"
 
 #### <a name="to-define-a-validation-constraint"></a>定義驗證條件約束
 
-1.  啟用中的驗證**於**節點：
+1. 啟用中的驗證**於**節點：
 
-    1.  開啟**Dsl\DslDefinition.dsl**。
+   1.  開啟**Dsl\DslDefinition.dsl**。
 
-    2.  在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。
+   2.  在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。
 
-    3.  在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。
+   3.  在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。
 
-    4.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。
+   4.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。
 
-2.  撰寫一個或多個網域類別或網域關聯性的部分類別定義。 新的程式碼檔案中撰寫這些定義**Dsl**專案。
+2. 撰寫一個或多個網域類別或網域關聯性的部分類別定義。 新的程式碼檔案中撰寫這些定義**Dsl**專案。
 
-3.  在每個類別的前面加上下列屬性：
+3. 在每個類別的前面加上下列屬性：
 
-    ```csharp
-    [ValidationState(ValidationState.Enabled)]
-    ```
+   ```csharp
+   [ValidationState(ValidationState.Enabled)]
+   ```
 
-    -   根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。
+   -   根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。
 
-4.  將驗證方法加入至類別。 每個驗證方法可以命名為任何名稱，但只能有一個 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 類型的參數。
+4. 將驗證方法加入至類別。 每個驗證方法可以命名為任何名稱，但只能有一個 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 類型的參數。
 
-     此方法的前面必須加上一個或多個 `ValidationMethod` 屬性：
+    此方法的前面必須加上一個或多個 `ValidationMethod` 屬性：
 
-    ```csharp
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
-    ```
+   ```csharp
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
+   ```
 
-     ValidationCategories 指定何時執行方法。
+    ValidationCategories 指定何時執行方法。
 
- 例如：
+   例如：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -127,27 +127,27 @@ public partial class ParentsHaveChildren
 
  請注意有關這個程式碼的下列重點：
 
--   您可以將驗證方法加入至網域類別或網域關聯性。 針對這些類型的程式碼位於**Dsl\Generated Code\Domain\*.cs**。
+- 您可以將驗證方法加入至網域類別或網域關聯性。 針對這些類型的程式碼位於**Dsl\Generated Code\Domain\*.cs**。
 
--   每個驗證方法會套用至其類別和子類別的每一個執行個體。 在網域關聯性的案例中，每個執行個體是兩個模型項目之間的連結。
+- 每個驗證方法會套用至其類別和子類別的每一個執行個體。 在網域關聯性的案例中，每個執行個體是兩個模型項目之間的連結。
 
--   您無法依任何指定的順序套用驗證方法，也無法依任何預期的順序將每個方法套用至其類別的執行個體。
+- 您無法依任何指定的順序套用驗證方法，也無法依任何預期的順序將每個方法套用至其類別的執行個體。
 
--   讓驗證方法更新存放區內容通常不是很好的做法，因為這會導致不一致的結果。 相反地，此方法應呼叫 `context.LogError`、`LogWarning` 或 `LogInfo` 來報告任何錯誤。
+- 讓驗證方法更新存放區內容通常不是很好的做法，因為這會導致不一致的結果。 相反地，此方法應呼叫 `context.LogError`、`LogWarning` 或 `LogInfo` 來報告任何錯誤。
 
--   在 LogError 呼叫中，您可以提供模型項目或關聯性連結的清單，以供使用者按兩下錯誤訊息時選取。
+- 在 LogError 呼叫中，您可以提供模型項目或關聯性連結的清單，以供使用者按兩下錯誤訊息時選取。
 
--   如需如何讀取程式碼中的模型詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+- 如需如何讀取程式碼中的模型詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
- 此範例會套用至下列網域模型。 ParentsHaveChildren 關聯性具有名為 Child 和 Parent 的角色。
+  此範例會套用至下列網域模型。 ParentsHaveChildren 關聯性具有名為 Child 和 Parent 的角色。
 
- ![DSL 定義圖&#45;家譜模型](../modeling/media/familyt_person.png)
+  ![DSL 定義圖&#45;家譜模型](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>驗證分類
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 屬性中，您可以指定何時應執行驗證方法。
 
 |分類|執行|
-|--------------|---------------|
+|-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|使用者叫用 [驗證] 功能表命令時。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|開啟模型檔時。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|儲存檔案時。 如果發生驗證錯誤，使用者可以選擇取消儲存作業。|
@@ -173,7 +173,6 @@ public partial class Person
     {
         if (this.BirthYear <= parent.BirthYear)
         { ...
-
 ```
 
  **彙總驗證條件約束。** 若要套用驗證可預測的順序，請定義一個驗證方法的擁有者類別，這類的根項目模型上。 這個方法也可讓您將多份錯誤報告彙總成一個訊息。
@@ -189,7 +188,6 @@ erroneousLinks = new List<ParentsHaveChildren>();
 erroneousLinks.Add(this);
 context.SetCacheValue("erroneousLinks", erroneousLinks);
 if (erroneousLinks.Count < 5) { context.LogError( ... ); }
-
 ```
 
 ## <a name="validation-of-multiplicities"></a>多重性驗證
@@ -197,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  如果將網域關聯性角色的多重性設定為 1..* 或 1..1，但使用者未建立此關聯性的連結，則會出現驗證錯誤訊息。
 
- 比方說，如果您的 DSL 具有類別 Person 和 Town 和關聯性的關聯性 PersonLivesInTown **1..\*** 在 Town 角色中，然後針對每個沒有 town 的 Person 會出現錯誤訊息。
+ 比方說，如果您的 DSL 具有類別 Person 和 Town 和關聯性的關聯性 PersonLivesInTown **1..\\*** 在 Town 角色中，然後針對每個沒有 town 的 Person 會出現錯誤訊息。
 
 ## <a name="running-validation-from-program-code"></a>從程式碼執行驗證
  您可以存取或建立 ValidationController 來執行驗證。 如果您想要在錯誤視窗中對使用者顯示的錯誤，請使用 附加至您的圖表之 DocData 的 ValidationController。 例如，如果您要撰寫功能表命令，可以使用命令集類別中的 `CurrentDocData.ValidationController`：
@@ -213,7 +211,6 @@ partial class MyLanguageCommandSet
   {
    ValidationController controller = this.CurrentDocData.ValidationController;
 ...
-
 ```
 
  如需詳細資訊，請參閱 <<c0> [ 如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
@@ -233,7 +230,6 @@ if (!validator.Validate(store, ValidationCategories.Save))
   // Deal with errors:
   foreach (ValidationMessage message in validator.ValidationMessages) { ... }
 }
-
 ```
 
 ## <a name="running-validation-when-a-change-occurs"></a>發生變更時執行驗證
@@ -297,7 +293,6 @@ namespace Company.FamilyTree
     }
   }
 }
-
 ```
 
  在影響連結或項目的復原或取消復原作業之後，也會呼叫處理常式。
@@ -314,7 +309,6 @@ namespace Company.FamilyTree
 [ValidationMethod(ValidationCategory.Menu)]
 private void TestForCircularLinks(ValidationContext context)
 {...}
-
 ```
 
 > [!NOTE]

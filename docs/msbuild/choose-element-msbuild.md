@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895466"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。  
@@ -64,11 +64,11 @@ ms.locfileid: "37945765"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。|  
-|[When](../msbuild/when-element-msbuild.md)|指定 `Choose` 項目可能要選取的程式碼區塊。|  
+| 元素 | 描述 |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | 指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。 |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [When](../msbuild/when-element-msbuild.md) | 指定 `Choose` 項目可能要選取的程式碼區塊。 |
 
 ## <a name="remarks"></a>備註  
  `Choose`、`When` 和 `Otherwise` 元素會一起用來提供選取一個程式碼區段的方式，以執行一些可能的替代方案。 如需詳細資訊，請參閱[條件式建構](../msbuild/msbuild-conditional-constructs.md)。  

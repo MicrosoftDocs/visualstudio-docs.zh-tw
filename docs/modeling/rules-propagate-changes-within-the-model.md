@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865962"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區的規則，以將變更傳播從一個項目到另一個在 Visualization and Modeling SDK (VMSDK)。 存放區中的任何項目變更時發生，來執行，只有認可的最外層的交易時，通常被排定規則。 有不同類型的不同類型的事件，例如加入項目，或刪除它的規則。 您可以將規則附加至特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保當模型變更時，會更新圖表。 您可以自訂特定領域語言，藉由新增您自己的規則。
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>若要定義規則
 
-1.  定義規則，如前面會加上類別`RuleOn`屬性。 屬性會將規則與其中一個網域類別、 關聯性或圖表項目產生關聯。 此規則將套用至每個執行個體，這個類別，它可能是抽象。
+1. 定義規則，如前面會加上類別`RuleOn`屬性。 屬性會將規則與其中一個網域類別、 關聯性或圖表項目產生關聯。 此規則將套用至每個執行個體，這個類別，它可能是抽象。
 
-2.  註冊規則，方法是將它新增至所傳回之集`GetCustomDomainModelTypes()`網域模型類別中。
+2. 註冊規則，方法是將它新增至所傳回之集`GetCustomDomainModelTypes()`網域模型類別中。
 
-3.  從其中一個抽象的規則類別，衍生規則類別，並撰寫程式碼的執行方法。
+3. 從其中一個抽象的規則類別，衍生規則類別，並撰寫程式碼的執行方法。
 
- 下列各節會說明這些步驟，在更多詳細資料。
+   下列各節會說明這些步驟，在更多詳細資料。
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>若要在網域類別上定義的規則
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>若要撰寫的程式碼的規則
 
--   從下列基底類別的其中一個衍生規則類別：
+- 從下列基底類別的其中一個衍生規則類別：
 
-    |基底類別|觸發程序|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|新增項目、 連結或圖形。<br /><br /> 使用此選項來偵測新的關聯性，除了新的項目。|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|網域屬性值已變更。 方法引數提供的舊和新值。<br /><br /> 如圖形，就會觸發這個規則時內建`AbsoluteBounds`屬性變更，如果圖形移動時。<br /><br /> 在許多情況下，會更方便地覆寫`OnValueChanged`或`OnValueChanging`屬性處理常式中。 變更立即之前和之後，會呼叫這些方法。 相反地，規則通常會在交易結束執行。 如需詳細資訊，請參閱 <<c0> [ 網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。 **注意：** 建立或刪除連結時，不會觸發此規則。 相反地，撰寫`AddRule`和`DeleteRule`網域關聯性。|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|即將刪除的項目或連結時觸發。 屬性 ModelElement.IsDeleting 成立直到交易結束為止。|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|已刪除的項目或連結時執行。 所有其他規則已執行，包括 DeletingRules 之後，會執行規則。 ModelElement.IsDeleting 為 false，而且 ModelElement.IsDeleted 為 true。 若要供後續的復原，項目實際上不會移除從記憶體中，但它會從 Store.ElementDirectory 移除。|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|項目移到另一個存放區的資料分割。<br /><br /> （請注意，這不相關，圖形化圖案的位置）。|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|此規則只適用於網域關聯性。 如果您明確地將模型項目指派給連結的任一端，就會觸發這項目。|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|或從項目連結的順序連結使用的 MoveBefore 或 MoveToIndex 方法變更時觸發。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|會建立的交易時，就會執行。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|執行會認可交易時。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|執行回復交易時。|
 
--   每個類別會具有您覆寫的方法。 型別`override`在您的類別，以進行探索。 此方法的參數會識別正在變更的項目。
+  | 基底類別 | 觸發程序 |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 新增項目、 連結或圖形。<br /><br /> 使用此選項來偵測新的關聯性，除了新的項目。 |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | 網域屬性值已變更。 方法引數提供的舊和新值。<br /><br /> 如圖形，就會觸發這個規則時內建`AbsoluteBounds`屬性變更，如果圖形移動時。<br /><br /> 在許多情況下，會更方便地覆寫`OnValueChanged`或`OnValueChanging`屬性處理常式中。 變更立即之前和之後，會呼叫這些方法。 相反地，規則通常會在交易結束執行。 如需詳細資訊，請參閱 <<c0> [ 網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。 **注意：** 建立或刪除連結時，不會觸發此規則。 相反地，撰寫`AddRule`和`DeleteRule`網域關聯性。 |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | 即將刪除的項目或連結時觸發。 屬性 ModelElement.IsDeleting 成立直到交易結束為止。 |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | 已刪除的項目或連結時執行。 所有其他規則已執行，包括 DeletingRules 之後，會執行規則。 ModelElement.IsDeleting 為 false，而且 ModelElement.IsDeleted 為 true。 若要供後續的復原，項目實際上不會移除從記憶體中，但它會從 Store.ElementDirectory 移除。 |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | 項目移到另一個存放區的資料分割。<br /><br /> （請注意，這不相關，圖形化圖案的位置）。 |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | 此規則只適用於網域關聯性。 如果您明確地將模型項目指派給連結的任一端，就會觸發這項目。 |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | 或從項目連結的順序連結使用的 MoveBefore 或 MoveToIndex 方法變更時觸發。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | 會建立的交易時，就會執行。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 執行會認可交易時。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 執行回復交易時。 |
 
- 請注意下列有關規則的重點：
+
+- 每個類別會具有您覆寫的方法。 型別`override`在您的類別，以進行探索。 此方法的參數會識別正在變更的項目。
+
+  請注意下列有關規則的重點：
 
 1.  一組在交易中的變更可能會觸發許多規則。 通常，最外層的交易認可時，會執行規則。 它們會在未指定的順序執行。
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>另請參閱

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intrinsic |Microsoft 文件'
+title: 'Idiasymbol:: Get_intrinsic |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5293c17d73e1c0b9232862f3b8ff491a55b7e24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 14f5525a63e4453c594cd84b248f71303b083312
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931216"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 擷取指定類別是否為內建類型的旗標。  
@@ -34,13 +34,13 @@ HRESULT get_intrinsic(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`如果類別是內建類型; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`類別是內建函式的型別; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
   

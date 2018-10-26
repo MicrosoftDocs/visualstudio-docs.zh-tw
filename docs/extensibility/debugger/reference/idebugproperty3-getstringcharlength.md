@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength |Microsoft 文件
+title: IDebugProperty3::GetStringCharLength |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1694a39af0dff4577ea767efb34a048e29bbb07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8400a9d0e8123d3803403a3e73c90cc1beea84c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935051"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-傳回相關聯的屬性的字串中的字元數。  
+在相關聯的屬性的字串中傳回字元的數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int GetStringCharLength(
   
 |參數|描述|  
 |---------------|-----------------|  
-|`pLen`|[out]傳回屬性的字串中的字元數。|  
+|`pLen`|[out]屬性的字串中傳回字元的數。|  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 一般而言，這個方法用做為配置緩衝區來呼叫 prelude [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)方法。  
+ 一般而言，會使用這個方法呼叫為配置緩衝區以準備[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)方法。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CProperty**公開物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
+ 下列範例示範如何實作這個方法，如**CProperty**公開 （expose） 的物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
   
 ```cpp  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  

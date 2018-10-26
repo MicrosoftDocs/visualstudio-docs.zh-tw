@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818155"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   
  `Code` 項目包含三個變數。  
   
--   $name$ 為使用者定義的變數。 它可建立 `name` 項目，其具有預設為 name 的可編輯值。 使用者定義變數使用 `Literal` 項目來定義。  
+- $name$ 為使用者定義的變數。 它可建立 `name` 項目，其具有預設為 name 的可編輯值。 使用者定義變數使用 `Literal` 項目來定義。  
   
--   $selected$ 為預先定義的變數。 它表示叫用片段之前在 XML 編輯器中選取的文字。 這個變數的位置決定了所選文字在環繞該選取內容之程式碼片段中出現的位置。  
+- $selected$ 為預先定義的變數。 它表示叫用片段之前在 XML 編輯器中選取的文字。 這個變數的位置決定了所選文字在環繞該選取內容之程式碼片段中出現的位置。  
   
--   $end$ 為預先定義的變數。 當使用者按 ENTER 鍵完成編輯程式碼片段欄位時，這個變數決定了插入號 (^) 移至何處。  
+- $end$ 為預先定義的變數。 當使用者按 ENTER 鍵完成編輯程式碼片段欄位時，這個變數決定了插入號 (^) 移至何處。  
   
- 上面的 `Code` 項目會插入下列 XML 文字：  
+  上面的 `Code` 項目會插入下列 XML 文字：  
   
 ```  
 <test>  

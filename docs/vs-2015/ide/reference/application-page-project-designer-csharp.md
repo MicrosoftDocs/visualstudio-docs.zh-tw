@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867230"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ ms.locfileid: "49264071"
  **Manifest**  
  透過使用者帳戶控制 (UAC) 在 Windows Vista 上執行應用程式時，請選取資訊清單產生選項。 此選項可以包含下列值：  
   
--   **用預設設定嵌入資訊清單**。 支援 Visual Studio 在 Windows Vista 上操作的一般方式，亦即將 `requestedExecutionLevel` 指定為 `AsInvoker`，以在應用程式可執行檔中嵌入安全性資訊。 這是預設選項。  
+- **用預設設定嵌入資訊清單**。 支援 Visual Studio 在 Windows Vista 上操作的一般方式，亦即將 `requestedExecutionLevel` 指定為 `AsInvoker`，以在應用程式可執行檔中嵌入安全性資訊。 這是預設選項。  
   
--   **建立無資訊清單應用程式**。 此方法稱為「虛擬化」。 使用此選項，以與舊版應用程式相容。  
+- **建立無資訊清單應用程式**。 此方法稱為「虛擬化」。 使用此選項，以與舊版應用程式相容。  
   
--   **Properties\app.manifest**。 ClickOnce 或免註冊 COM 所部署的應用程式需要此選項。 如果您使用 ClickOnce 部署來發行應用程式，[資訊清單] 會自動設為此選項。  
+- **Properties\app.manifest**。 ClickOnce 或免註冊 COM 所部署的應用程式需要此選項。 如果您使用 ClickOnce 部署來發行應用程式，[資訊清單] 會自動設為此選項。  
   
- **資源檔**  
- 提供專案的資源檔時，請選取此選項按鈕。 選取此選項會停用 [圖示] 和 [資訊清單] 選項。  
+  **資源檔**  
+  提供專案的資源檔時，請選取此選項按鈕。 選取此選項會停用 [圖示] 和 [資訊清單] 選項。  
   
- 輸入路徑名稱，或使用 [瀏覽] 按鈕 (**...**) 將 Win32 資源檔新增至專案。  
+  輸入路徑名稱，或使用 [瀏覽] 按鈕 (**...**) 將 Win32 資源檔新增至專案。  
   
 ## <a name="see-also"></a>另請參閱  
 [管理應用程式屬性](../../ide/application-properties.md)  

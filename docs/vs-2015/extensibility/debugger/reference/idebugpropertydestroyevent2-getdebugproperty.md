@@ -17,12 +17,12 @@ ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3eda816ec0db6163fd361e867741515f6e22b9e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da5cc29c179f8dbefc519b1eaf1aaffdad4bb2f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949483"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

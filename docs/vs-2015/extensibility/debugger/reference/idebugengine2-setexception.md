@@ -17,12 +17,12 @@ ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0591ce53167dbd3ddd5ab20534e248510004a6a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af33fbb7166078db0bc31114a9a218cd976c009c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821407"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr |Microsoft 文件
+title: IDiaSymbol::findInlineFramesByAddr |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf330238d213854ba26d8345d0daaee7b3f9b1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0ddc8e2ea4c4ba8e2f142a3f30ec1206a8abc4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862368"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-擷取列舉，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。  
+擷取列舉型別，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,7 +43,7 @@ HRESULT findInlineFramesByAddr (
  [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

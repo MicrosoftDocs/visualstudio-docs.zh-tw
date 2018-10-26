@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924911"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說： 自訂文字檢視
 您可以自訂文字檢視，方法是修改任何它的編輯器格式對應中的下列屬性：  
@@ -40,7 +40,7 @@ ms.locfileid: "39498402"
   
 ## <a name="create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`ViewPropertyTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ViewPropertyTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -48,26 +48,26 @@ ms.locfileid: "39498402"
   
 ## <a name="define-the-content-type"></a>內容類型定義  
   
-1.  將類別檔案並將它命名`ViewPropertyModifier`。  
+1. 加入類別檔案，並將它命名為 `ViewPropertyModifier`。  
   
-2.  新增下列`using`指示詞：  
+2. 新增下列`using`指示詞：  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  宣告類別，名為`TestViewCreationListener`繼承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 匯出這個類別具有下列屬性：  
+3. 宣告類別，名為`TestViewCreationListener`繼承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 匯出這個類別具有下列屬性：  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定要套用此接聽程式的內容類型。  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定要套用此接聽程式的內容類型。  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定此接聽程式的角色。  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定此接聽程式的角色。  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
-4.  在此類別中，匯入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
+4. 在此類別中，匯入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="change-the-view-properties"></a>變更檢視的屬性  
   

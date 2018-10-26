@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844701"
 ---
 # <a name="switchlttgt-activity-designer"></a>交換器&lt;T&gt;活動設計工具
 <xref:System.Activities.Statements.Switch%601> 活動會評估指定的運算式，並且從關聯索引鍵符合求值結果的活動集合中執行該活動。  
@@ -50,11 +50,11 @@ ms.locfileid: "49244760"
   
  有兩個方法可以刪除案例：  
   
-1.  選取該案例，然後將其刪除。  
+1. 選取該案例，然後將其刪除。  
   
-2.  選取案例中，按一下滑鼠右鍵以顯示操作功能表，然後選取**刪除**。  
+2. 選取案例中，按一下滑鼠右鍵以顯示操作功能表，然後選取**刪除**。  
   
- 請注意，您必須選取要刪除的案例本身。 選取與刪除案例內的活動僅會刪除活動，而不會刪除案例。  
+   請注意，您必須選取要刪除的案例本身。 選取與刪除案例內的活動僅會刪除活動，而不會刪除案例。  
   
 ## <a name="see-also"></a>另請參閱  
  [控制流程](../workflow-designer/control-flow-activity-designers.md)

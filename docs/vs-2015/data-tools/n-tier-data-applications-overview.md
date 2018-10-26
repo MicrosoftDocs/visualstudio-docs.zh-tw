@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852917"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
 ## <a name="presentation-tier"></a>展示層  
  *展示層*是使用者與應用程式的互動的層。 它通常會包含其他的應用程式邏輯也。 典型的展示層元件包括下列各項：  
   
--   資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
+- 資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
   
--   物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)展示層中使用的實體類別。  
+- 物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)展示層中使用的實體類別。  
   
- 展示層通常存取中介層使用的服務參考 (例如[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)應用程式)。 展示層不會直接存取資料層。 展示層會與資料層透過中介層的資料存取元件通訊。  
+  展示層通常存取中介層使用的服務參考 (例如[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)應用程式)。 展示層不會直接存取資料層。 展示層會與資料層透過中介層的資料存取元件通訊。  
   
 ## <a name="middle-tier"></a>中介層  
  *中介層*用來彼此通訊的展示層和資料層的層。 典型的中介層元件包括下列各項：  
   
--   商務邏輯，例如商務規則和資料驗證。  
+- 商務邏輯，例如商務規則和資料驗證。  
   
--   資料存取元件和邏輯，如下所示：  
+- 資料存取元件和邏輯，如下所示：  
   
-    -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-    -   物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
+  -   物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
   
-    -   一般應用程式服務，例如驗證、 授權和個人化。  
+  -   一般應用程式服務，例如驗證、 授權和個人化。  
   
- 下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。  
+  下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。  
   
- ![中間層元件](../data-tools/media/ntiermid.png "NtierMid")  
-中介層  
+  ![中間層元件](../data-tools/media/ntiermid.png "NtierMid")  
+  中介層  
   
- 中介層通常會連接到資料層使用的資料連接。 此資料連接通常會儲存在資料存取元件中。  
+  中介層通常會連接到資料層使用的資料連接。 此資料連接通常會儲存在資料存取元件中。  
   
 ## <a name="data-tier"></a>資料層  
  *資料層*基本上是將應用程式的資料儲存在伺服器 (例如，將執行的伺服器[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)])。  

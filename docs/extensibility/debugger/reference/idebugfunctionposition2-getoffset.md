@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset |Microsoft 文件
+title: IDebugFunctionPosition2::GetOffset |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b38ef58238032530252fa487e320d1bd52d4098
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f06223ffc68ed4728f8cd9181575dac361af1bdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849134"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 擷取函式的來源文件中的位置。  
@@ -41,10 +41,10 @@ int GetOffset(
   
 #### <a name="parameters"></a>參數  
  `pPosition`  
- [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)填入這些函式的位置，在文件中的結構。  
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，其中會填入函式的文件中的位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   

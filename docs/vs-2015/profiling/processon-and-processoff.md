@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849395"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續�
   
  **ProcessOff** 和 **ProcessOn** 子命令也會影響分析工具 API 函式操控的處理序開始/停止計數。  
   
--   **ProcessOff** 可立即將處理序開始/停止計數設定為 0，並因此會暫停分析。  
+- **ProcessOff** 可立即將處理序開始/停止計數設定為 0，並因此會暫停分析。  
   
--   **ProcessOn** 可立即將處理序開始/停止計數設定為 1，並因此會繼續分析。  
+- **ProcessOn** 可立即將處理序開始/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
+  如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

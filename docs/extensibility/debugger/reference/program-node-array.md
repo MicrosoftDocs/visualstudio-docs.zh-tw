@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY |Microsoft 文件
+title: PROGRAM_NODE_ARRAY |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 079c6dc3ef36c19867ed4b292040876f630e63df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c8db3ee875a86f072a75f084dbe0c7f68f847b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832977"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 包含描述感興趣的程式物件的陣列。  
@@ -49,7 +49,7 @@ public struct tagPROGRAM_NODE_ARRAY {
  陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，描述要求的程式。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是一部分[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構接著會填入呼叫[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法。  
+ 此結構是的一部分[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構會接著會填入呼叫[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

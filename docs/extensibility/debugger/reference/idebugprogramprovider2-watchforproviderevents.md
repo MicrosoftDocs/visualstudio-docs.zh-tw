@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft 文件
+title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875134"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-允許的連接埠事件通知的程序。  
+允許的連接埠事件通知程序。  
   
 ## <a name="syntax"></a>語法  
   
@@ -55,10 +55,10 @@ int WatchForProviderEvents(
   
 |旗標|描述|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|呼叫端遠端電腦上執行。|  
-|`PFLAG_DEBUGGEE`|呼叫端目前所偵錯 （每個節點都會傳回封送處理的其他資訊）。|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是會啟動偵錯工具。|  
-|`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標。 然後會移除回撥事件和呼叫端不會再接收通知。|  
+|`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
+|`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點都會傳回封送處理的其他資訊）。|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|  
+|`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標。 然後會移除回呼事件和呼叫端不會再收到通知。|  
   
  `pPort`  
  [in]呼叫處理序的連接埠上執行。  
@@ -67,22 +67,22 @@ int WatchForProviderEvents(
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。  
   
  `EngineFilter`  
- [in]偵錯引擎與處理序相關聯的 Guid 陣列。  
+ [in]偵錯引擎處理序相關聯的 Guid 的陣列。  
   
  `guidLaunchingEngine`  
- [in]GUID （如果有的話），請啟動此程序的偵錯引擎。  
+ [in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。  
   
  `pEventCallback`  
  [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 當呼叫端想要移除先前呼叫這個方法與已建立的事件處理常式時，呼叫端傳遞相同的參數，如同第一次，但保留關閉`PFLAG_REASON_WATCH`旗標。  
+ 當呼叫端想要移除使用這個方法由先前呼叫所建立的事件處理常式時，呼叫端傳遞相同的參數，如同第一次，但分葉關閉`PFLAG_REASON_WATCH`旗標。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugEngine**公開物件[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugEngine**公開 （expose） 的物件[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

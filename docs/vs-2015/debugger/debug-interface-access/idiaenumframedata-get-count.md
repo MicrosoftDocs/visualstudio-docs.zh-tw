@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a61e1701ad4f0f508a1cab8efea0c3f07859565
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea0c5455886670eb1d55079538a1297e396de10a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861848"
 ---
 # <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

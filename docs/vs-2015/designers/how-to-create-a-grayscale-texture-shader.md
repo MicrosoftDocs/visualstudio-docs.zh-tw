@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 046ae16670edaebb44986dee34ea086b4129a0a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922337"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階材質著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ ms.locfileid: "49304794"
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>建立灰階材質著色器  
   
-1.  建立基本材質著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。  
+1. 建立基本材質著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。  
   
-2.  將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。  
+2. 將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。  
   
-3.  將 [反滲透] 節點加入圖形。 在 [工具箱] 的 [篩選] 下，選取 [反滲透]，並將其移至設計介面。  
+3. 將 [反滲透] 節點加入圖形。 在 [工具箱] 的 [篩選] 下，選取 [反滲透]，並將其移至設計介面。  
   
-4.  使用 [反滲透] 節點來計算灰階值。 在 [選取] 模式中，將 [材質範例] 節點的 [RGB] 端點移至 [反滲透] 節點的 [RGB] 端點。  
+4. 使用 [反滲透] 節點來計算灰階值。 在 [選取] 模式中，將 [材質範例] 節點的 [RGB] 端點移至 [反滲透] 節點的 [RGB] 端點。  
   
-    > [!NOTE]
-    >  根據預設，[反滲透] 節點可將輸入色彩完全去色，並使用標準的明亮度加權進行灰階轉換。 您可以變更 [明亮度] 屬性的值或只將輸入色彩部分去色，來變更 [反滲透] 節點的行為。 若要將輸入色彩部份去色，請對 [反滲透] 節點的 [百分比] 端點提供 [0, 1] 範圍內的純量值。  
+   > [!NOTE]
+   >  根據預設，[反滲透] 節點可將輸入色彩完全去色，並使用標準的明亮度加權進行灰階轉換。 您可以變更 [明亮度] 屬性的值或只將輸入色彩部分去色，來變更 [反滲透] 節點的行為。 若要將輸入色彩部份去色，請對 [反滲透] 節點的 [百分比] 端點提供 [0, 1] 範圍內的純量值。  
   
-5.  將灰階色彩值連接到完稿色彩。 將 [反滲透] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
+5. 將灰階色彩值連接到完稿色彩。 將 [反滲透] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
   
- 下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
+   下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
 >  在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  

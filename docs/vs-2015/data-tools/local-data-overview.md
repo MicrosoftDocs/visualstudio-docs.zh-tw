@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885573"
 ---
 # <a name="local-data-overview"></a>區域資料概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "49210479"
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   建立 SQL Server 資料庫專案，按一下 [方案總管] 中的方案節點，然後選擇**新增&#124;新的專案**。  在左窗格中，選擇**SQL Server&#124;資料庫**專案，然後按一下 [確定]。 在 [方案總管] 中，匯入本機資料庫檔案，在資料庫專案節點上按一下滑鼠右鍵，然後開發連接到資料庫專案所產生的應用程式。 當您開發和修改資料庫結構描述在相同的時間，您正在開發應用程式的良好。  
+- 建立 SQL Server 資料庫專案，按一下 [方案總管] 中的方案節點，然後選擇**新增&#124;新的專案**。  在左窗格中，選擇**SQL Server&#124;資料庫**專案，然後按一下 [確定]。 在 [方案總管] 中，匯入本機資料庫檔案，在資料庫專案節點上按一下滑鼠右鍵，然後開發連接到資料庫專案所產生的應用程式。 當您開發和修改資料庫結構描述在相同的時間，您正在開發應用程式的良好。  
   
-     ![資料庫匯入資料庫專案](../data-tools/media/raddata-import-database-into-database-project.png "raddata 匯入資料庫到資料庫專案")  
+   ![資料庫匯入資料庫專案](../data-tools/media/raddata-import-database-into-database-project.png "raddata 匯入資料庫到資料庫專案")  
   
--   如果您要建立新的資料庫，先將**服務架構資料庫檔案**至您的專案 (**專案&#124;加入新項目)**。 這會建立新的.mdf 檔案附加至預設 SQL Server 執行個體，其預設值是 (localdb) \MSSQLocalDB 在本機電腦上。 資料庫應該會出現在 [伺服器總管] 中。 展開節點，並以滑鼠右鍵按一下要新增新的資料庫物件，例如資料表、 檢視、 函數和等等的節點。  
+- 如果您要建立新的資料庫，先將**服務架構資料庫檔案**至您的專案 (**專案&#124;加入新項目)**。 這會建立新的.mdf 檔案附加至預設 SQL Server 執行個體，其預設值是 (localdb) \MSSQLocalDB 在本機電腦上。 資料庫應該會出現在 [伺服器總管] 中。 展開節點，並以滑鼠右鍵按一下要新增新的資料庫物件，例如資料表、 檢視、 函數和等等的節點。  
   
- 如需有關 SQL Server Express LocalDB 的詳細資訊，請參閱 < [LocalDB 簡介-、 增強的 SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375)並[LocalDB： 其中是我的資料庫？](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 網站上。  
+  如需有關 SQL Server Express LocalDB 的詳細資訊，請參閱 < [LocalDB 簡介-、 增強的 SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375)並[LocalDB： 其中是我的資料庫？](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 網站上。  
   
- 下表將提供說明如何將應用程式連接至本機資料的主題連結：  
+  下表將提供說明如何將應用程式連接至本機資料的主題連結：  
   
 |主題|描述|  
 |-----------|-----------------|  

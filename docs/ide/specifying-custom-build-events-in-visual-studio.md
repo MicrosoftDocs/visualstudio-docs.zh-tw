@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908730"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
@@ -37,24 +37,24 @@ ms.locfileid: "31945918"
 
  為了獲得最佳結果，請依照下列格式秘訣：
 
--   在執行 *.bat* 檔案的所有建置事件之前新增 `call` 陳述式。
+- 在執行 *.bat* 檔案的所有建置事件之前新增 `call` 陳述式。
 
-     範例：`call C:\MyFile.bat`
+   範例：`call C:\MyFile.bat`
 
-     範例：`call C:\MyFile.bat call C:\MyFile2.bat`
+   範例：`call C:\MyFile.bat call C:\MyFile2.bat`
 
--   以引號括住檔案路徑。
+- 以引號括住檔案路徑。
 
-     範例 (適用於 [!INCLUDE[win8](../debugger/includes/win8_md.md)])：如果是 "$(TargetPath)"，則為 "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe"
+   範例 (適用於 [!INCLUDE[win8](../debugger/includes/win8_md.md)])：如果是 "$(TargetPath)"，則為 "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe"
 
--   使用分行符號來分隔多個命令。
+- 使用分行符號來分隔多個命令。
 
--   視需要包含萬用字元。
+- 視需要包含萬用字元。
 
-     範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
+   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
 
-    > [!NOTE]
-    >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
+  > [!NOTE]
+  >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942006"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ ms.locfileid: "49182790"
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>將不同的紋理繫結至材質暫存器，或修改其他材質參數  
   
-1.  在 [選取] 模式中，選取設計介面的空白區域。 這會導致 [屬性] 視窗顯示全域著色器屬性。  
+1. 在 [選取] 模式中，選取設計介面的空白區域。 這會導致 [屬性] 視窗顯示全域著色器屬性。  
   
-2.  在[屬性] 視窗中，對您想要變更的材質和參數屬性指定新值。  
+2. 在[屬性] 視窗中，對您想要變更的材質和參數屬性指定新值。  
   
- 以下是您可以修改的著色器參數︰  
+   以下是您可以修改的著色器參數︰  
   
 |參數|屬性|  
 |---------------|----------------|  

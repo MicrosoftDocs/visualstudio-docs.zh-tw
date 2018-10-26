@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868686"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 windows
 您可以存取任何 Visual Studio 中的 [工具] 視窗。 本逐步解說示範如何整合到新的工具視窗的相關資訊**選項**頁面和新的設定上**屬性**頁面上，以及如何將寫入**工作清單**並**輸出**windows。  
@@ -98,33 +98,33 @@ ms.locfileid: "39499873"
 ## <a name="create-an-options-page"></a>建立選項頁面  
  您可以提供中的頁面**選項**對話方塊，讓使用者可以變更工具視窗的設定。 建立選項頁面需要這兩個類別，描述的選項和中的項目*TodoListPackage.cs*或是*TodoListPackage.vb*檔案。  
   
-1.  新增類別，名為`ToolsOptions.cs`。 製作`ToolsOptions`類別繼承自<xref:Microsoft.VisualStudio.Shell.DialogPage>。  
+1. 新增類別，名為`ToolsOptions.cs`。 製作`ToolsOptions`類別繼承自<xref:Microsoft.VisualStudio.Shell.DialogPage>。  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  新增下列 using 陳述式：  
+2. 新增下列 using 陳述式：  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  在此逐步解說中的 [選項] 頁面會提供名為 DaysAhead 只有一個選項。 新增名為私用欄位**daysAhead**和名為屬性**DaysAhead**到`ToolsOptions`類別：  
+3. 在此逐步解說中的 [選項] 頁面會提供名為 DaysAhead 只有一個選項。 新增名為私用欄位**daysAhead**和名為屬性**DaysAhead**到`ToolsOptions`類別：  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- 現在您必須進行專案了解此選項頁面。  
+   現在您必須進行專案了解此選項頁面。  
   
 ### <a name="make-the-options-page-available-to-users"></a>讓使用者可以使用 [選項] 頁面  
   

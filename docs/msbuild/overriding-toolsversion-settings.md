@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153913"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879293"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  
   
-1.  從命令列建置專案或方案時，請使用 `/ToolsVersion` 參數 (或簡寫 `/tv`)。  
+1.  從命令列建置專案或方案時，請使用 `-ToolsVersion` 參數 (或簡寫 `-tv`)。  
   
 2.  在 MSBuild 工作上設定 `ToolsVersion` 參數。  
   
 3.  在方案的專案上設定 `$(ProjectToolsVersion)` 屬性。 這可讓您使用與其他專案不同的工具組版本，以在方案中建置專案。  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>覆寫命令列組建上專案和方案的 ToolsVersion 設定  
- 雖然一般會使用專案檔中所指定的 ToolsVersion 來建置 Visual Studio 專案，但是您可以在命令列上使用 `/ToolsVersion` (或 `/tv`) 切換參數來覆寫該值，並使用不同的工具組來建置所有專案和其專案間相依性。 例如:   
+ 雖然一般會使用專案檔中所指定的 ToolsVersion 來建置 Visual Studio 專案，但是您可以在命令列上使用 `-ToolsVersion` (或 `-tv`) 切換參數來覆寫該值，並使用不同的工具組來建置所有專案和其專案間相依性。 例如:   
   
 ```cmd  
-msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
+msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  
 ```  
   
  在此範例中，使用 ToolsVersion 12.0 建置所有專案 (不過，請參閱本主題稍後的[優先順序](#order-of-precedence)一節)。  
   
- 在命令列上使用 `/tv` 切換參數時，您可以選擇性地在個別專案中使用 `$(ProjectToolsVersion)` 屬性，以使用與方案中其他專案不同的 ToolsVersion 值來建置它們。  
+ 在命令列上使用 `-tv` 切換參數時，您可以選擇性地在個別專案中使用 `$(ProjectToolsVersion)` 屬性，以使用與方案中其他專案不同的 ToolsVersion 值來建置它們。  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>使用 MSBuild 工作的 ToolsVersion 參數覆寫 ToolsVersion 設定  
  MSBuild 工作是讓某個專案建置另一個專案的主要方式。 為了讓 MSBuild 工作使用與專案中所指定的不同 ToolsVersion 來建置專案，它會提供名為 `ToolsVersion` 的選擇性工作參數。 下列範例示範如何使用這個參數：  
@@ -78,10 +78,10 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 3.  在命令提示字元中，輸入下列命令：  
   
     ```cmd  
-    msbuild projectA.proj /t:go /toolsversion:3.5  
+    msbuild projectA.proj -t:go -toolsversion:3.5  
     ```  
   
-4.  即會出現下列輸出。 針對 `projectA`，命令列上的 `/toolsversion:3.5` 設定會覆寫 `Project` 標記中的 `ToolsVersion=12.0` 設定。  
+4.  即會出現下列輸出。 針對 `projectA`，命令列上的 `-toolsversion:3.5` 設定會覆寫 `Project` 標記中的 `ToolsVersion=12.0` 設定。  
   
      `projectA` 中的工作會呼叫 `ProjectB`。 這項工作具有 `ToolsVersion=2.0`，可覆寫 `projectB` 的其他 `ToolsVersion` 設定。  
   
@@ -101,7 +101,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 1.  MSBuild 工作上用來建置專案的 `ToolsVersion` 屬性 (如果有的話)。  
   
-2.  msbuild.exe 命令中使用的 `/toolsversion` (或 `/tv`) 切換參數 (如果有的話)。  
+2.  msbuild.exe 命令中使用的 `-toolsversion` (或 `-tv`) 切換參數 (如果有的話)。  
   
 3.  如果設定環境變數 `MSBUILDTREATALLTOOLSVERSIONSASCURRENT`，則會使用目前的 `ToolsVersion`。  
   

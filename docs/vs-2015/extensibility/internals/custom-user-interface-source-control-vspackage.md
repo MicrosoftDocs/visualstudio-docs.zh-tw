@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852254"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage 透過 Visual Studio Command Table (.vsct) 檔案中宣告它的功能
   
  下列清單會顯示受到原始檔控制 VSPackage 的作用中狀態的介面：  
   
--   追蹤專案文件的事件。  
+- 追蹤專案文件的事件。  
   
--   解決方案的事件。  
+- 解決方案的事件。  
   
--   解決方案的持續性介面。 當非作用中時，套件應該不會寫入.sln 和.suo 的檔案。  
+- 解決方案的持續性介面。 當非作用中時，套件應該不會寫入.sln 和.suo 的檔案。  
   
--   屬性擴充項。  
+- 屬性擴充項。  
   
- 所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，就也與原始檔控制相關聯的任何選擇性介面不會呼叫原始檔控制 VSPackage 非作用中時。  
+  所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，就也與原始檔控制相關聯的任何選擇性介面不會呼叫原始檔控制 VSPackage 非作用中時。  
   
- 當[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 啟動時，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]命令 UI 內容設定為目前的預設原始檔控制 VSPackage 識別碼的識別碼 這會導致靜態的作用中的原始檔控制 VSPackage，才會出現在 IDE 中，而不用實際載入 VSPackage 的 UI。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 暫停向 vspackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>它可讓 VSPackage 的任何呼叫之前。  
+  當[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 啟動時，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]命令 UI 內容設定為目前的預設原始檔控制 VSPackage 識別碼的識別碼 這會導致靜態的作用中的原始檔控制 VSPackage，才會出現在 IDE 中，而不用實際載入 VSPackage 的 UI。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 暫停向 vspackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>它可讓 VSPackage 的任何呼叫之前。  
   
- 下表描述的特定詳細資料，關於如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 會隱藏不同的 UI 項目。  
+  下表描述的特定詳細資料，關於如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 會隱藏不同的 UI 項目。  
   
 |UI 項目|描述|  
 |-------------|-----------------|  

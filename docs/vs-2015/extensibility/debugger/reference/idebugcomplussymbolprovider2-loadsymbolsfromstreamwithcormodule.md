@@ -16,12 +16,12 @@ ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cbe412dc37811b7993101c7004632fbf35435d9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edb3ab54ae7ce87b4d23f54c21627ce4ca791e4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951257"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

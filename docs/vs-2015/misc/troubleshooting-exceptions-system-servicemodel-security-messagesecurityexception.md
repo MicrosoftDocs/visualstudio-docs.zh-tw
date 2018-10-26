@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853164"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
@@ -48,35 +48,35 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>若要為裝載於 ASP.NET 程式開發伺服器內的 WCF 服務建立自訂服務繫結  
   
-1.  開啟產生例外狀況的 WCF 服務的 Web.config 檔案。  
+1. 開啟產生例外狀況的 WCF 服務的 Web.config 檔案。  
   
-2.  將下列資訊輸入到 Web.config 檔案中。  
+2. 將下列資訊輸入到 Web.config 檔案中。  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  儲存並關閉 Web.config 檔案。  
+3. 儲存並關閉 Web.config 檔案。  
   
-4.  在 WCF 或 Web 服務的程式碼中，將端點值變更成下列：  
+4. 在 WCF 或 Web 服務的程式碼中，將端點值變更成下列：  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     這樣可以確保服務會使用自訂繫結。  
+    這樣可以確保服務會使用自訂繫結。  
   
-5.  在存取服務的 Web 應用程式中，加入服務的參考 (在 [ **加入服務參考** ] 對話方塊中，加入服務的參考，方法如同您在產生例外狀況的原始服務一樣)。  
+5. 在存取服務的 Web 應用程式中，加入服務的參考 (在 [ **加入服務參考** ] 對話方塊中，加入服務的參考，方法如同您在產生例外狀況的原始服務一樣)。  
   
- 當您使用 WCF 服務參考時，可以遵循下列步驟停用 NTLM 安全性。  
+   當您使用 WCF 服務參考時，可以遵循下列步驟停用 NTLM 安全性。  
   
 > [!IMPORTANT]
 >  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  

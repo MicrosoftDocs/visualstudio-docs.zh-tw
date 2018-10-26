@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919327"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
@@ -59,19 +59,19 @@ ms.locfileid: "47859779"
 
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例
 
-1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
+1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
-2.  將需求工作項目連結至模型中的一個或多個使用案例。
+2. 將需求工作項目連結至模型中的一個或多個使用案例。
 
-     在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下**連結至工作項目**。
+    在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下**連結至工作項目**。
 
-3.  加入測試套件 (驗證使用案例的測試案例)。
+3. 加入測試套件 (驗證使用案例的測試案例)。
 
- 通常，每個使用者劇本或需求工作項目都會連結至模型中的數個使用案例，而且每個使用案例都會連結至數個使用者劇本或需求。 原因是每個使用者劇本或需求都涵蓋一組開發數個使用案例的工作。 例如，在專案的早期反覆項目中，您可能會開發基本使用者劇本，在其中，客戶可以選擇目錄中的項目並傳送它們。 在後期反覆項目中，劇本可能是使用者在完成訂單時付款，供應商則會在交貨之後收到金額。  每個劇本都會在「訂貨」(Order Goods) 使用案例的後置條件中加入子句。
+   通常，每個使用者劇本或需求工作項目都會連結至模型中的數個使用案例，而且每個使用案例都會連結至數個使用者劇本或需求。 原因是每個使用者劇本或需求都涵蓋一組開發數個使用案例的工作。 例如，在專案的早期反覆項目中，您可能會開發基本使用者劇本，在其中，客戶可以選擇目錄中的項目並傳送它們。 在後期反覆項目中，劇本可能是使用者在完成訂單時付款，供應商則會在交貨之後收到金額。  每個劇本都會在「訂貨」(Order Goods) 使用案例的後置條件中加入子句。
 
- 您可以建立從需求到後置條件子句的個別連結，方法是在使用案例圖的不同註解中撰寫這些子句。 您可以將每個註解連結至需求工作項目，並將註解連結至圖表上的使用案例。
+   您可以建立從需求到後置條件子句的個別連結，方法是在使用案例圖的不同註解中撰寫這些子句。 您可以將每個註解連結至需求工作項目，並將註解連結至圖表上的使用案例。
 
 ### <a name="base-tests-on-the-requirements-types"></a>測試是以需求類型為基礎
  需求模型的類型 (即類別、介面和列舉) 描述使用者如何認為和溝通有關其業務的概念和關聯性。 它會排除只與系統內部設計相關的類型。
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>將測試連結至模型項目或關聯性
 
-1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
+1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
-2.  將需求工作項目連結至模型中的一個或多個項目。
+2. 將需求工作項目連結至模型中的一個或多個項目。
 
-     在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下**連結至工作項目**。
+    在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下**連結至工作項目**。
 
-3.  加入測試套件 (驗證模型項目中所表示的需求的測試案例)。
+3. 加入測試套件 (驗證模型項目中所表示的需求的測試案例)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_uniqueid |Microsoft 文件'
+title: 'Idiasourcefile:: Get_uniqueid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3714ce733b0388e3ac462a9495360171971a6750
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860782"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-擷取是唯一的這個映像的簡單的整數值。  
+擷取都是唯一的這個映像的簡單的整數值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_uniqueId (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回簡單的整數索引鍵的值是唯一的這個映像。  
+ [out]傳回簡單的整數的金鑰值，都是唯一的這個映像。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 比較索引鍵，而不是字串可加速行數處理。  
+ 比較索引鍵，而不是字串可以加速行數字處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

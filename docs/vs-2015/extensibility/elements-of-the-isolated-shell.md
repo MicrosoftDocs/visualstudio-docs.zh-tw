@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868426"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Isolated Shell 的項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49246047"
 ## <a name="run-time-settings"></a>執行階段設定  
  當使用者啟動 isolated 的 shell 應用程式時，它會呼叫 Visual Studio shell 的啟動進入點。 應用程式設定會定義您的應用程式啟動時，，如下所示：  
   
-1.  Visual Studio shell 中，會檢查特定金鑰的應用程式登錄。 如果開始進入點的呼叫中指定的索引鍵的設定，則該值會覆寫登錄中的值。  
+1. Visual Studio shell 中，會檢查特定金鑰的應用程式登錄。 如果開始進入點的呼叫中指定的索引鍵的設定，則該值會覆寫登錄中的值。  
   
-2.  如果不登錄，也不進入點參數指定的設定，值，則會使用預設值，此設定。  
+2. 如果不登錄，也不進入點參數指定的設定，值，則會使用預設值，此設定。  
   
- 當使用者從命令列啟動您的應用程式時，就會將所有的命令列參數傳遞至 Visual Studio shell 中，將它們視為相同的方式執行 Devenv。 如需 Devenv 參數的詳細資訊，請參閱[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)並[適用於 VSPackage 開發的 Devenv 命令列參數](../extensibility/devenv-command-line-switches-for-vspackage-development.md)。 如需有關如何封裝註冊命令列參數的詳細資訊，請參閱[加入命令列參數](../extensibility/adding-command-line-switches.md)。  
+   當使用者從命令列啟動您的應用程式時，就會將所有的命令列參數傳遞至 Visual Studio shell 中，將它們視為相同的方式執行 Devenv。 如需 Devenv 參數的詳細資訊，請參閱[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)並[適用於 VSPackage 開發的 Devenv 命令列參數](../extensibility/devenv-command-line-switches-for-vspackage-development.md)。 如需有關如何封裝註冊命令列參數的詳細資訊，請參閱[加入命令列參數](../extensibility/adding-command-line-switches.md)。  
   
 ## <a name="the-start-entry-point"></a>開始進入點  
  Appenvstub.dll 檔案包含用於存取 isolated 的 shell 進入點。 當應用程式啟動時，它會呼叫開始進入點的 Appenvstub.dll。  

@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815997"
 ---
 # <a name="solutions-overview"></a>方案概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49292654"
   
  開啟方案時，下列程序進行。  
   
-1.  環境讀取方案。  
+1. 環境讀取方案。  
   
-2.  如果環境找到`CLSID`，它會載入對應的 VSPackage。  
+2. 如果環境找到`CLSID`，它會載入對應的 VSPackage。  
   
-3.  如果載入 VSPackage 時，此環境會呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>介面，VSPackage 所需要的介面。  
+3. 如果載入 VSPackage 時，此環境會呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>介面，VSPackage 所需要的介面。  
   
-    1.  從.sln 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionProps`。  
+   1.  從.sln 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionProps`。  
   
-    2.  從.suo 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionOpts`。  
+   2.  從.suo 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionOpts`。  
   
- 使用這些檔案的相關的特定資訊可在[解決方案 (。Sln) 檔案](../../extensibility/internals/solution-dot-sln-file.md)和[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
+   使用這些檔案的相關的特定資訊可在[解決方案 (。Sln) 檔案](../../extensibility/internals/solution-dot-sln-file.md)和[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
   
 > [!NOTE]
 >  如果您想要建立新的方案組態包含兩個專案組態，並從組建排除第三，您要使用的屬性頁面 UI 或自動化。 您無法直接變更方案的組建管理員設定和其屬性，但您可以使用操作使用的解決方案組建管理員`SolutionBuild`從 DTE automation 模型中的類別。 如需有關如何設定解決方案的詳細資訊，請參閱 <<c0> [ 方案組態](../../extensibility/internals/solution-configuration.md)。  

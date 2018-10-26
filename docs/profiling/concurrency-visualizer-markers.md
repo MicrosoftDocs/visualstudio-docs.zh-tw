@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884780"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視標記
 在並行視覺化檢視中，標記是代表應用程式中事件的圖示。  一般而言，應用程式會產生這些事件，以指定應用程式中的階段或發生次數。  應用程式或程式庫和應用程式使用的執行階段，可以產生事件。  
@@ -43,21 +43,21 @@ ms.locfileid: "34692297"
 ## <a name="known-sources-of-markers"></a>已知的標記來源  
  只要提供者符合某些限制式，任何 ETW 提供者都可以產生標記。 您可以設定並行視覺化檢視來接聽其他事件來源的標記。 預設會接聽這些事件來源︰  
   
--   [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)  
+- [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)  
   
--   [工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [資料流程](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [資料流程](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [平行 LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [平行 LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)  
+- [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [情節標記支援](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [情節標記支援](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- 您可以使用 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中的 [標記] 索引標籤，控制各種來源的標記是否顯示在並行視覺化檢視中，您可以依照重要性和類別篩選標記。  
+  您可以使用 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中的 [標記] 索引標籤，控制各種來源的標記是否顯示在並行視覺化檢視中，您可以依照重要性和類別篩選標記。  
   
 ## <a name="markers-from-eventsource"></a>來自 EventSource 的標記  
  並行視覺化檢視也可以顯示 EventSource 事件。  如需詳細資訊，請參閱[將 EventSource 事件顯示為標記](../profiling/visualizing-eventsource-events-as-markers.md)。  

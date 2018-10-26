@@ -16,12 +16,12 @@ ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8008db1ee61adb310d22f30bdecac71ab0c9f250
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c78db574240a6ecd667266206f505b24efa3b00f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858910"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

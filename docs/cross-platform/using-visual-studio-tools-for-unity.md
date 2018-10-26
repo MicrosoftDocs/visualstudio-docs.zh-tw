@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 74bd467417d6138d603382bd5432fe84af04d3b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909844"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -31,23 +31,23 @@ ms.locfileid: "46496060"
 
 ## <a name="unity-documentation-access"></a>Unity 文件存取
 
- 您可以從 Visual Studio 快速存取 Unity 指令碼文件。 如果 Visual Studio Tools for Unity 在本機找不到應用程式開發介面文件，則會嘗試在線上尋找。
+您可以從 Visual Studio 快速存取 Unity 指令碼文件。 如果 Visual Studio Tools for Unity 在本機找不到應用程式開發介面文件，則會嘗試在線上尋找。
 
 - 在 Visual Studio 中，反白顯示您要了解的 Unity API 或將游標置於其上，然後按 **Ctrl**+**Alt**+**M**、**Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API 訊息的 IntelliSense
 
- Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Unity API 訊息，並協助了解 Unity API。 使用適用於 Unity 訊息的 IntelliSense：
+Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Unity API 訊息，並協助了解 Unity API。 使用適用於 Unity 訊息的 IntelliSense：
 
 1. 將游標放在衍生自 `MonoBehaviour` 之類別主體內的新行。
 
-1. 開始鍵入 Unity 訊息的名稱，例如 `OnTriggerEnter`。
+2. 開始鍵入 Unity 訊息的名稱，例如 `OnTriggerEnter`。
 
-1. 一旦鍵入 「**ontri**" 字母之後，會出現 IntelliSense 建議清單。
+3. 一旦鍵入 「**ontri**" 字母之後，會出現 IntelliSense 建議清單。
 
-  ![Using IntelliSense](media/vstu_intellisense1.png)
+   ![Using IntelliSense](media/vstu_intellisense1.png)
 
-1. 有三種方式可以變更清單上的選項：
+4. 有三種方式可以變更清單上的選項：
 
     - 使用向上和向下方向鍵。
 
@@ -55,7 +55,7 @@ ms.locfileid: "46496060"
 
     - 繼續鍵入所需項目的名稱。
 
-1. IntelliSense 可以插入選取的 Unity 訊息，包含任何必要參數：
+5. IntelliSense 可以插入選取的 Unity 訊息，包含任何必要參數：
 
     - 按 **Tab**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "46496060"
 
     - 按兩下選取的項目。
 
-  ![從 IntelliSense 插入 Unity 訊息](media/vstu_intellisense2.png)
+   ![從 IntelliSense 插入 Unity 訊息](media/vstu_intellisense2.png)
 
 ## <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior 指令碼精靈
 
@@ -73,31 +73,31 @@ ms.locfileid: "46496060"
 
 1. 在 Visual Studio 中，將游標置於您要插入方法的位置，然後按 **Ctrl**+**Shift**+**M** 啟動 MonoBehavior 精靈。
 
-1. 在 [建立指令碼方法] 視窗中，標記您要加入之每個方法名稱旁的核取方塊。
+2. 在 [建立指令碼方法] 視窗中，標記您要加入之每個方法名稱旁的核取方塊。
 
-1. 使用 [Framework 版本] 下拉式清單來選取您想要的版本。
+3. 使用 [Framework 版本] 下拉式清單來選取您想要的版本。
 
-1. 根據預設，方法會插入到游標所在位置。 或者，您可以選擇將它們插入到已在您的類別中實作的任何方法之後，方法是將 [插入點] 下拉式清單的值變更為您想要的位置。
+4. 根據預設，方法會插入到游標所在位置。 或者，您可以選擇將它們插入到已在您的類別中實作的任何方法之後，方法是將 [插入點] 下拉式清單的值變更為您想要的位置。
 
-1. 如果您希望精靈為您選取的方法產生註解，請標記 [產生方法註解] 核取方塊。 這些註解可協助您了解何時呼叫方法，以及方法的一般責任為何。
+5. 如果您希望精靈為您選取的方法產生註解，請標記 [產生方法註解] 核取方塊。 這些註解可協助您了解何時呼叫方法，以及方法的一般責任為何。
 
-1. 選擇 [確定] 按鈕以結束精靈，並將方法插入到您的程式碼。
+6. 選擇 [確定] 按鈕以結束精靈，並將方法插入到您的程式碼。
 
- ![MonoBehavior 精靈對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![MonoBehavior 精靈對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Unity Project Explorer
 
- ![Unity 專案總管視窗。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Unity 專案總管視窗。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
- Unity 專案總管會使用與 Unity 編輯器一樣的方式顯示您的所有 Unity 專案檔案與目錄。 這與使用一般 Visual Studio 方案總管瀏覽 Unity 指令碼的方式不同，一般 Visual Studio 方案總管會將它們組織為專案與 Visual Studio 產生的方案。
+Unity 專案總管會使用與 Unity 編輯器一樣的方式顯示您的所有 Unity 專案檔案與目錄。 這與使用一般 Visual Studio 方案總管瀏覽 Unity 指令碼的方式不同，一般 Visual Studio 方案總管會將它們組織為專案與 Visual Studio 產生的方案。
 
 - 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]。 鍵盤快速鍵：**Alt**+**Shift**+**E**
 
-     ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Unity 偵錯
 
- Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工具，同時對 Unity 專案的編輯器和遊戲指令碼進行偵錯。
+Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工具，同時對 Unity 專案的編輯器和遊戲指令碼進行偵錯。
 
 ### <a name="debug-in-the-unity-editor"></a>在 Unity 編輯器中偵錯
 
@@ -105,13 +105,13 @@ ms.locfileid: "46496060"
 
 1. 按一下標籤為 [附加至 Unity] 的 [播放] 按鈕，或使用鍵盤快速鍵 **F5** ，以將 Visual Studio 附加至 Unity。
 
-  ![在 Visual Studio 中按一下 [播放]](media/vstu_play-button.png)
+   ![在 Visual Studio 中按一下 [播放]](media/vstu_play-button.png)
 
-1. 切換至 Unity，然後按一下 [播放] 按鈕，以在編輯器中執行遊戲。
+2. 切換至 Unity，然後按一下 [播放] 按鈕，以在編輯器中執行遊戲。
 
-  ![在 Unity 中按一下 [播放]](media/vstu_unity-play-button.png)
+   ![在 Unity 中按一下 [播放]](media/vstu_unity-play-button.png)
 
-1. 如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio 中叫用中斷點的一行程式碼。
+3. 如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio 中叫用中斷點的一行程式碼。
 
 #### <a name="stop-debugging"></a>停止偵錯
 
@@ -143,66 +143,67 @@ ms.locfileid: "46496060"
 
 1. 在 Unity 中，選取 [檔案] > [組建設定]以開啟 [組建設定]。
 
-1. 在 [組建設定] 視窗中，標記 [開發建置] 和 [指令碼偵錯] 核取方塊。
+2. 在 [組建設定] 視窗中，標記 [開發建置] 和 [指令碼偵錯] 核取方塊。
 
- ![設定用於偵錯的 Unity 組建設定。](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+   ![設定用於偵錯的 Unity 組建設定。](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>選取要附加偵錯工具的 Unity 執行個體
 
 - 在 Visual Studio 主功能表中，選擇 [偵錯] > [附加 Unity 偵錯工具]。
 
-     ![附加 Unity 的偵錯工具。](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![附加 Unity 的偵錯工具。](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
-    [選取 Unity 執行個體] 對話方塊會顯示您可連接之每個 Unity 執行個體的一些資訊。
+   [選取 Unity 執行個體] 對話方塊會顯示您可連接之每個 Unity 執行個體的一些資訊。
 
-     ![選擇要連接到的 Unity 執行個體。](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![選擇要連接到的 Unity 執行個體。](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
- **專案** 在這個 Unity 執行個體中執行的 Unity 專案名稱。
+   **Project**
 
- **機器** 這個 Unity 執行個體執行所在的電腦或裝置名稱。
+   在這個 Unity 執行個體中執行的 Unity 專案名稱。
 
- 如果這個 Unity 執行個體當做 Unity Editor 的一部分來執行，則為 **Type**
- **Editor**；如果這個 Unity 執行個體是獨立播放器，則為 **Player**。
+   **機器** 這個 Unity 執行個體執行所在的電腦或裝置名稱。
 
- **連接埠** 這個 Unity 執行個體用於通訊之 UDP 通訊端的通訊埠編號。
+   **類型** 如果這個 Unity 執行個體以 Unity Editor 的一部分來執行，為 [編輯器]；如果這個 Unity 執行個體是獨立播放程式，則為 [播放程式]。
+
+   **連接埠** 這個 Unity 執行個體用於通訊之 UDP 通訊端的通訊埠編號。
 
 > [!IMPORTANT]
 > 由於 Visual Studio Tools for Unity 是透過 UDP 網路通訊端與 Unity 執行個體通訊，因此您的防火牆可能會要求這項資訊。 如果發生這種情況，您必須授權連接，VSTU 和 Unity 才能通訊。
 
 ### <a name="debug-a-dll-in-your-unity-project"></a>針對 Unity 專案中的 DLL 進行偵錯
 
- 許多 Unity 開發人員會將程式碼元件撰寫成外部 DLL，以便與其他專案共用他們所開發的功能。 Visual Studio Tools for Unity 可讓您順暢地連同 Unity 專案中的其他程式碼一起為這些 DLL 中的程式碼偵錯。
+許多 Unity 開發人員會將程式碼元件撰寫成外部 DLL，以便與其他專案共用他們所開發的功能。 Visual Studio Tools for Unity 可讓您順暢地連同 Unity 專案中的其他程式碼一起為這些 DLL 中的程式碼偵錯。
 
 > [!NOTE]
 > 目前，Visual Studio Tools for Unity 僅支援 Managed DLL， 並不支援對機器碼 DLL 進行偵錯 (例如以 C++ 撰寫的 DLL)。
 
- 請注意，此處所述的情節假設您有原始程式碼；也就是說，您正在開發或重複使用自己的第一方程式碼，或您有協力廠商程式庫的程式碼，並打算將其部署至 Unity 專案中做為 DLL。 該情節不會說明如何對您沒有原始程式碼的 DLL 進行偵錯。
+請注意，此處所述的情節假設您有原始程式碼；也就是說，您正在開發或重複使用自己的第一方程式碼，或您有協力廠商程式庫的程式碼，並打算將其部署至 Unity 專案中做為 DLL。 該情節不會說明如何對您沒有原始程式碼的 DLL 進行偵錯。
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
 1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
 
-     ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
-     不論是哪一種情況，Visual Studio Tools for Unity 都會保留專案參考 (即使必須再次重新產生專案和方案檔亦然)，因此您只需要執行這些步驟一次。
+   不論是哪一種情況，Visual Studio Tools for Unity 都會保留專案參考 (即使必須再次重新產生專案和方案檔亦然)，因此您只需要執行這些步驟一次。
 
-1. 參考 DLL 專案中的正確 Unity Framework 設定檔。 在 Visual Studio 的 DLL 專案屬性中，將 [目標 Framework] 屬性設定為您所使用的 Unity Framework 版本。 這是與專案的目標應用程式開發介面相容的 Unity 基底類別庫，例如 Unity 完整、微型或 Web 基底類別庫。 如此可防止 DLL 呼叫存在於其他 Framework 或相容性層級中，但可能不存在於您所使用之 Unity Framework 版本的 Framework 方法。
+2. 參考 DLL 專案中的正確 Unity Framework 設定檔。 在 Visual Studio 的 DLL 專案屬性中，將 [目標 Framework] 屬性設定為您所使用的 Unity Framework 版本。 這是與專案的目標應用程式開發介面相容的 Unity 基底類別庫，例如 Unity 完整、微型或 Web 基底類別庫。 如此可防止 DLL 呼叫存在於其他 Framework 或相容性層級中，但可能不存在於您所使用之 Unity Framework 版本的 Framework 方法。
 
-     ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-1. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 是在執行階段連結，因此您必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
+3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 是在執行階段連結，因此您必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
 
    - 修改 DLL 專案的組建設定，以包含將輸出 DLL 和 PDB 檔案從其輸出資料夾複製到 Unity 專案之 [Assets] 資料夾的建置後工作。
 
    - 修改 DLL 專案的組建設定，將其輸出資料夾設定為 Unity 專案的 [Assets] 資料夾。 DLL 和 PDB 檔案都會被放在 [Assets] 資料夾中。
 
-     由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是 Unity 指令碼引擎所使用的偵錯符號格式。
+   由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是 Unity 指令碼引擎所使用的偵錯符號格式。
 
-1. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。
+4. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。
 
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
- 您可以使用鍵盤快速鍵快速存取 Unity Tools for Visual Studio 功能。 以下是可用的快速鍵摘要。
+您可以使用鍵盤快速鍵快速存取 Unity Tools for Visual Studio 功能。 以下是可用的快速鍵摘要。
 
 |命令|快速鍵|快速鍵命令名稱|
 |-------------|--------------|---------------------------|
@@ -211,4 +212,4 @@ ms.locfileid: "46496060"
 |存取 Unity 文件|**Ctrl**+**Alt**+**M、Ctrl**+**H**|**Help.UnityAPIReference**|
 |附加至 Unity 偵錯工具 (播放器或編輯器)|**無預設值**|**Debug.AttachUnityDebugger**|
 
- 如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

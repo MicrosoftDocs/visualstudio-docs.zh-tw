@@ -17,12 +17,12 @@ ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2bbc78476c7c6c98a27bc0d8a4850880b49faa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5035b84e6a669d217e0df82d49f26dbbd163449
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844662"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

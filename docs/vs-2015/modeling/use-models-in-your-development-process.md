@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872276"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49285996"
 ## <a name="how-to-use-models"></a>如何使用模型  
  模型可以藉由許多方式協助您：  
   
--   繪製模型圖表可以協助您釐清涉及需求、架構及高階設計的概念。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
+- 繪製模型圖表可以協助您釐清涉及需求、架構及高階設計的概念。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
   
--   使用模型可以協助您顯示出需求中的不一致。  
+- 使用模型可以協助您顯示出需求中的不一致。  
   
--   透過模型傳達可以協助您傳遞重要的概念，這比使用自然語言傳達更清楚。 如需詳細資訊，請參閱 <<c0> [ 您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
+- 透過模型傳達可以協助您傳遞重要的概念，這比使用自然語言傳達更清楚。 如需詳細資訊，請參閱 <<c0> [ 您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
--   您可以偶爾使用模型來產生程式碼或其他成品，例如資料庫結構描述或文件。 例如，[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 的模型元件就是從模型產生的。  如需詳細資訊，請參閱 <<c0> [ 產生，並設定您的應用程式，從模型](../modeling/generate-and-configure-your-app-from-models.md)。  
+- 您可以偶爾使用模型來產生程式碼或其他成品，例如資料庫結構描述或文件。 例如，[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 的模型元件就是從模型產生的。  如需詳細資訊，請參閱 <<c0> [ 產生，並設定您的應用程式，從模型](../modeling/generate-and-configure-your-app-from-models.md)。  
   
- 您可以在各種不同的程序中使用模型，不論是極端敏捷式還是高度形式化都可以。  
+  您可以在各種不同的程序中使用模型，不論是極端敏捷式還是高度形式化都可以。  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>使用模型來減少語意模糊  
  模組化語言會比自然語言更清楚，而且它是設計來表達軟體開發過程中通常需要的想法。  

@@ -27,16 +27,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cd2a749bc96271e4ed16872f1d5c4a485c55900e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179914"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863945"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，建立世界性的應用程式有兩個部分︰全球化，設計適用不同文化特性應用程式的程序；當地語系化，轉譯特定文化特性資源的程序。 如需針對國際市場使用者設計應用程式的一般資訊，請參閱[開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。
+在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，建立世界性的應用程式有兩個部分︰全球化，設計適用不同文化特性應用程式的程序；當地語系化，轉譯特定文化特性資源的程序。 如需針對國際市場使用者設計應用程式的一般資訊，請參閱[開發世界性的應用程式的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)。
 
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 當地語系化模型包含主要組件，它包含應用程式程式碼和後援資源：最初開發應用程式所用語言的字串、影像和其他物件。 每個已當地語系化的應用程式都有附屬組件，或只包含當地語系化資源的組件。 因為主要組件一律包含後援資源，所以如果在當地語系化的附屬組件中找不到資源，<xref:System.Resources.ResourceManager> 就會以階層方式嘗試載入資源，最後回到主要組件的資源。 [階層式組織當地語系化的資源](../ide/hierarchical-organization-of-resources-for-localization.md)中會詳細說明資源後援系統。
 

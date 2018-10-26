@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925497"
 ---
 # <a name="memory-windows"></a>記憶體視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ ms.locfileid: "49297189"
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>若要變更記憶體視窗中的欄位數  
   
-1.  在頂端的工具列**記憶體** 視窗中，找出**資料行**清單。  
+1. 在頂端的工具列**記憶體** 視窗中，找出**資料行**清單。  
   
-2.  在 **資料行**清單中，選取您想要顯示或選取的資料行數目**自動**自動調整成視窗寬度。  
+2. 在 **資料行**清單中，選取您想要顯示或選取的資料行數目**自動**自動調整成視窗寬度。  
   
- 如果您不想要的內容**記憶體**視窗變更為您的程式執行時，您可以關閉實況運算式評估。  
+   如果您不想要的內容**記憶體**視窗變更為您的程式執行時，您可以關閉實況運算式評估。  
   
 #### <a name="to-toggle-live-evaluation"></a>若要切換實況評估  
   
-1.  以滑鼠右鍵按一下**記憶體**視窗。  
+1. 以滑鼠右鍵按一下**記憶體**視窗。  
   
-2.  在捷徑功能表，按一下 **自動重新評估**。  
+2. 在捷徑功能表，按一下 **自動重新評估**。  
   
-     如果開啟實況評估，則會選取這個選項，您只要再按一下該選項即可關閉實況評估。 如果關閉實況評估，則不會選取這個選項，您只要再按一下該選項即可開啟實況評估。  
+    如果開啟實況評估，則會選取這個選項，您只要再按一下該選項即可關閉實況評估。 如果關閉實況評估，則不會選取這個選項，您只要再按一下該選項即可開啟實況評估。  
   
- 您可以隱藏或顯示在頂端的工具列**記憶體**視窗。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
+   您可以隱藏或顯示在頂端的工具列**記憶體**視窗。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>若要切換工具列  
   

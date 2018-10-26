@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883292"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
 
@@ -49,13 +49,13 @@ ms.locfileid: "39379945"
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活動的設計工具中顯示註釋
 
-1.  與活動設計工具的註釋顯示位於活動外部，按一下**Pin**註釋裝飾項中的圖示。
+1. 與活動設計工具的註釋顯示位於活動外部，按一下**Pin**註釋裝飾項中的圖示。
 
    註解會顯示在活動設計工具。 在下列螢幕擷取畫面中，註釋「工作流程中的開始活動」顯示在活動的設計工具中。
 
    ![在活動設計工具中顯示的註釋](../workflow-designer/media/annotationindesigner.png)
 
-1. 若要顯示的活動設計工具外部註釋，將滑鼠停留在活動設計工具中的註釋區域，按一下**取消釘選**圖示
+2. 若要顯示的活動設計工具外部註釋，將滑鼠停留在活動設計工具中的註釋區域，按一下**取消釘選**圖示
 
    ![活動設計工具外部顯示註釋](../workflow-designer/media/annotationoutsidedesigner.png)
 

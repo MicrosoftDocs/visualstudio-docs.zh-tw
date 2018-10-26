@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933543"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在這個步驟中，您會將 [顯示圖片] 按鈕變成如下的運作方式：  
   
--   當使用者選擇該按鈕時，程式會開啟 [開啟檔案] 對話方塊。  
+- 當使用者選擇該按鈕時，程式會開啟 [開啟檔案] 對話方塊。  
   
--   如果使用者開啟圖片檔案，程式會在 PictureBox 中顯示該圖片。  
+- 如果使用者開啟圖片檔案，程式會在 PictureBox 中顯示該圖片。  
   
- IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 TAB 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。  
+  IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 TAB 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。  
   
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205215) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205203)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205215) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205203)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>若要為顯示圖片按鈕事件處理常式撰寫程式碼  
   

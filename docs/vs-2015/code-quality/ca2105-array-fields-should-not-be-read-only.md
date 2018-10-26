@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894972"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：陣列欄位不應為唯讀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
@@ -47,11 +48,11 @@ ms.locfileid: "49207944"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則所識別的安全性弱點，請勿依賴可公開存取的唯讀陣列的內容。 強烈建議使用下列程序的其中一個：
 
--   無法變更的強類型集合取代陣列。 如需詳細資訊，請參閱<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
+- 無法變更的強類型集合取代陣列。 如需詳細資訊，請參閱<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
--   公用欄位取代為傳回的私用陣列複製品的方法。 因為您的程式碼不需要複製，不是可能如果修改的項目。
+- 公用欄位取代為傳回的私用陣列複製品的方法。 因為您的程式碼不需要複製，不是可能如果修改的項目。
 
- 如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱 < [CA1819： 屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
+  如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱 < [CA1819： 屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  此規則的警告排除極為不妥。 幾乎在所有情況中，就會都發生唯讀欄位的內容中都很重要。 如果這是您的案例的情況，移除`readonly`修飾詞，而不是排除該訊息。

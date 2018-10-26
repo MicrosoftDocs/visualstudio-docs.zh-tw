@@ -17,12 +17,12 @@ ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 526e0b129e07a7c52f7f4215e1f61d1c4f306061
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c436f4a0e2d566879e5ce52be765074bee0dfa90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933738"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

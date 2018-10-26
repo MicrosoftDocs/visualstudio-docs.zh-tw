@@ -1,5 +1,5 @@
 ---
-title: 陣列長度必須是有限的正整數 |Microsoft 文件
+title: 陣列長度必須是有限的正整數 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,31 +21,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c6589bd2e9bb4acbec5f169087a49e64417dfae7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882557"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
-您要呼叫**陣列**不是整數 （整數包含零加上正整數的集合） 的引數的建構函式。  
+您呼叫**陣列**不是整數 （整數包含零，再加上正值的整數的集合） 的引數的建構函式。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   建立新時，才使用這個正整數`Array`物件。 如果您想要建立具有單一元素且不是整數的陣列，則會執行兩個步驟程序中。 先建立陣列，含有一個項目，然後將值放在第一個項目 (array[0])。 以下是範例會產生這個錯誤。  
+-   只有在建立新時，才使用正整數`Array`物件。 如果您想要建立具有單一元素且不是整數的陣列，則會執行雙步驟程序中。 先建立陣列，含有一個項目，然後將值放在第一個項目 (array[0])。 以下是範例，會產生這個錯誤。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
     ```  
   
-     下列範例會示範正確的方式來指定陣列的單一數字的項目。  
+     下列範例會示範正確的方式來指定陣列與單一數字的項目。  
   
     ```JavaScript  
     var piArray = new Array(1);  
     piArray [0] = 3.14159;  
     ```  
   
-     陣列，最大整數值 （約 10 億 4） 以外的大小沒有上限。  
+     最大整數值 （約 4 億） 以外的值陣列的大小沒有上限。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

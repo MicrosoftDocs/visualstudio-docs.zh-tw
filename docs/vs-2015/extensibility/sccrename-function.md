@@ -17,12 +17,12 @@ ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef59da920e8011e5b2a23e14dcd58cdc07365d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80e7efbf1c08265b6a228e0671b9649061a223f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232203"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902825"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

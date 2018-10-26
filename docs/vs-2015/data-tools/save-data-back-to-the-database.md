@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829635"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215159"
   
 資料集是記憶體中資料的複本。 如果您修改該資料時，最好先將這些變更儲存回資料庫。 您可以執行這三種方式之一：  
   
--   透過呼叫其中一個`Update`的 TableAdapter 方法  
+- 透過呼叫其中一個`Update`的 TableAdapter 方法  
   
--   藉由呼叫其中一個 TableAdapter 的 DBDirect 方法  
+- 藉由呼叫其中一個 TableAdapter 的 DBDirect 方法  
   
--   藉由呼叫 UpdateAll 方法上`TableAdapterManager`Visual Studio 會為您產生資料集包含相關資料集中的其他資料表的資料表時，  
+- 藉由呼叫 UpdateAll 方法上`TableAdapterManager`Visual Studio 會為您產生資料集包含相關資料集中的其他資料表的資料表時，  
   
- 當您的資料將資料集資料表繫結至 Windows Form 或 XAML 頁面上的控制項時，則在資料繫結架構會為您的所有工作。  
+  當您的資料將資料集資料表繫結至 Windows Form 或 XAML 頁面上的控制項時，則在資料繫結架構會為您的所有工作。  
   
- 如果您熟悉 TableAdapters，您可以直接跳到其中一個主題：  
+  如果您熟悉 TableAdapters，您可以直接跳到其中一個主題：  
   
 |主題|描述|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ ms.locfileid: "49215159"
   
  若要避免過早的條件約束違規，您可以暫時暫停更新條件約束。 這有兩種用途：  
   
--   它會防止您已完成更新一個資料行，但尚未啟動另一個更新之後，所擲回錯誤。  
+- 它會防止您已完成更新一個資料行，但尚未啟動另一個更新之後，所擲回錯誤。  
   
--   它可防止特定更新的事件引發 （通常用於驗證的事件）。  
+- 它可防止特定更新的事件引發 （通常用於驗證的事件）。  
   
- 完成更新之後，您可以重新啟用條件約束檢查，這也會重新啟用 更新事件，並引發它們。  
+  完成更新之後，您可以重新啟用條件約束檢查，這也會重新啟用 更新事件，並引發它們。  
   
 > [!NOTE]
 >  在 Windows Forms 中，內建資料格的資料繫結架構暫止條件約束檢查焦點移出資料列，並沒有明確呼叫之前<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
@@ -177,33 +177,33 @@ ms.locfileid: "49215159"
   
  如果所做的變更會反映資料來源的目前狀態，您不再需要維護這項資訊。 一般而言，有兩倍的資料集和其來源何時同步：  
   
--   緊接在後您已將資訊載入資料集，例如當您從來源讀取資料時。  
+- 緊接在後您已將資訊載入資料集，例如當您從來源讀取資料時。  
   
--   從資料集的變更傳送至資料來源之後, (而非之前，因為您會遺失變更傳送到資料庫所需的變更資訊)。  
+- 從資料集的變更傳送至資料來源之後, (而非之前，因為您會遺失變更傳送到資料庫所需的變更資訊)。  
   
- 您也可以呼叫到資料集認可暫止的變更<xref:System.Data.DataSet.AcceptChanges%2A>方法。 一般而言，<xref:System.Data.DataSet.AcceptChanges%2A>會在您的應用程式中的下列時間期間呼叫。  
+  您也可以呼叫到資料集認可暫止的變更<xref:System.Data.DataSet.AcceptChanges%2A>方法。 一般而言，<xref:System.Data.DataSet.AcceptChanges%2A>會在您的應用程式中的下列時間期間呼叫。  
   
--   之後您載入資料集。 如果您載入資料集藉由呼叫 TableAdapter 的`Fill`方法，則配接器會自動為您認可變更。 不過，如果您載入資料集合併另一個資料集，然後您必須以手動方式認可的變更。  
+- 之後您載入資料集。 如果您載入資料集藉由呼叫 TableAdapter 的`Fill`方法，則配接器會自動為您認可變更。 不過，如果您載入資料集合併另一個資料集，然後您必須以手動方式認可的變更。  
   
-    > [!NOTE]
-    >  您可以避免配接器會自動認可變更，當您呼叫`Fill`方法，藉由設定`AcceptChangesDuringFill`屬性的介面卡`false`。 如果設定為`false`，則<xref:System.Data.DataRow.RowState%2A>填滿期間插入每個資料列會設為<xref:System.Data.DataRowState>。  
+  > [!NOTE]
+  >  您可以避免配接器會自動認可變更，當您呼叫`Fill`方法，藉由設定`AcceptChangesDuringFill`屬性的介面卡`false`。 如果設定為`false`，則<xref:System.Data.DataRow.RowState%2A>填滿期間插入每個資料列會設為<xref:System.Data.DataRowState>。  
   
--   之後您的資料集將變更傳送至另一個處理序，例如 XML Web service。  
+- 之後您的資料集將變更傳送至另一個處理序，例如 XML Web service。  
   
-    > [!CAUTION]
-    >  認可變更，如此一來，就會清除任何變更資訊。 不認可後的變更直到您完成執行作業，需要您的應用程式知道在資料集中進行哪些變更。  
+  > [!CAUTION]
+  >  認可變更，如此一來，就會清除任何變更資訊。 不認可後的變更直到您完成執行作業，需要您的應用程式知道在資料集中進行哪些變更。  
   
- 這個方法會產生下列結果：  
+  這個方法會產生下列結果：  
   
--   寫入<xref:System.Data.DataRowVersion>版本的一筆記錄到其<xref:System.Data.DataRowVersion>版本並覆寫原始的版本。  
+- 寫入<xref:System.Data.DataRowVersion>版本的一筆記錄到其<xref:System.Data.DataRowVersion>版本並覆寫原始的版本。  
   
--   移除任何資料列所在<xref:System.Data.DataRow.RowState%2A>屬性設定為<xref:System.Data.DataRowState>。  
+- 移除任何資料列所在<xref:System.Data.DataRow.RowState%2A>屬性設定為<xref:System.Data.DataRowState>。  
   
--   設定組<xref:System.Data.DataRow.RowState%2A>要記錄的屬性<xref:System.Data.DataRowState>。  
+- 設定組<xref:System.Data.DataRow.RowState%2A>要記錄的屬性<xref:System.Data.DataRowState>。  
   
- <xref:System.Data.DataSet.AcceptChanges%2A>方法會使用可在三個層級。 您可以對它呼叫<xref:System.Data.DataRow>物件，以認可變更該資料列。 您也可以呼叫它在<xref:System.Data.DataTable>認可資料表中的所有資料列的物件。 最後，您可以在呼叫它<xref:System.Data.DataSet>認可中的資料集的所有資料表的所有記錄的所有暫止變更的物件。  
+  <xref:System.Data.DataSet.AcceptChanges%2A>方法會使用可在三個層級。 您可以對它呼叫<xref:System.Data.DataRow>物件，以認可變更該資料列。 您也可以呼叫它在<xref:System.Data.DataTable>認可資料表中的所有資料列的物件。 最後，您可以在呼叫它<xref:System.Data.DataSet>認可中的資料集的所有資料表的所有記錄的所有暫止變更的物件。  
   
- 下表說明哪些會認可變更，根據內容物件上呼叫方法。  
+  下表說明哪些會認可變更，根據內容物件上呼叫方法。  
   
 |方法|結果|  
 |------------|------------|  
@@ -221,16 +221,16 @@ ms.locfileid: "49215159"
   
  您可以驗證資料透過數種方式：  
   
--   在商務層中，將程式碼加入至您的應用程式，以驗證資料。 資料集是執行這項操作的一個位置。 資料集提供的一些後端驗證的優點，例如能夠驗證變更，因為資料行和資料列的值變更。 如需詳細資訊，請參閱 <<c0> [ 驗證資料集中](../data-tools/validate-data-in-datasets.md)。  
+- 在商務層中，將程式碼加入至您的應用程式，以驗證資料。 資料集是執行這項操作的一個位置。 資料集提供的一些後端驗證的優點，例如能夠驗證變更，因為資料行和資料列的值變更。 如需詳細資訊，請參閱 <<c0> [ 驗證資料集中](../data-tools/validate-data-in-datasets.md)。  
   
--   在 將驗證新增至表單的展示層。 如需詳細資訊，請參閱 <<c0> [ 在 Windows Form 中驗證使用者輸入](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
+- 在 將驗證新增至表單的展示層。 如需詳細資訊，請參閱 <<c0> [ 在 Windows Form 中驗證使用者輸入](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
--   在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。  
+- 在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。  
   
-    > [!IMPORTANT]
-    >  使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
+  > [!IMPORTANT]
+  >  使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
   
- 集中進行完變更之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），如果有的話，然後再執行適當的命令。  
+  集中進行完變更之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），如果有的話，然後再執行適當的命令。  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>傳輸至資料來源的更新  
  如何進行更新的說明，假設您的應用程式會使用包含單一資料表的資料集。 應用程式會從資料庫擷取兩個資料列。 在擷取之後，記憶體中資料的資料表看起來像這樣：  

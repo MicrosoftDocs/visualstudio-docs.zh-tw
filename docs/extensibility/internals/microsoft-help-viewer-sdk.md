@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 320ba112303b0f3fc6c076fbd6be7068c83cf27f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880581"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 這篇文章包含 Visual Studio 說明檢視器整合者的下列工作：  
@@ -266,107 +266,107 @@ some F# code
 </div>  
 </body>  
 </html>  
-  
 ```  
-  
+
 **F1 支援**  
-  
+
 在 Visual Studio 中，選取 F1 會產生從 IDE 中的資料指標位置所提供的值並於其中填入 「 屬性包 」 與提供的值 （根據游標位置。 當游標位於功能 x 時，x 功能是在主動/焦點，並填入值的屬性包。  選取 f1 鍵時的屬性包會填入和 Visual Studio F1 程式碼看起來的客戶預設說明來源是否為本機或在線上 （online 是預設值），然後建立適當的字串，根據設定的使用者 （online 是預設值）-殼層執行（請參閱協助系統管理員指南 exe 啟動參數） 的本機說明檢視器再加上關鍵字，從屬性包，如果本機說明的預設值或參數清單中的關鍵字將 MSDN URL 的參數。  
-  
+
 如果三個字串所傳回的 f1 鍵，參考為多重值字串時，需要在第一個詞彙，尋找叫用，如果找不到，我們已完成; 和否則，請移至下一個字串。  順序很重要。 多重值關鍵字的呈現方式應該是最長的字串，以最短的字串。  若要確認如果是多重值的關鍵字，看看線上 F1 URL 字串，其中包含所選的關鍵字。  
-  
+
 在 Visual Studio 2012 中，我們刻意之間所做更強的除以線上和離線，以便針對 Online 使用者的設定時，然後我們只是 F1 要求直接傳遞至我們的線上查詢服務於 MSDN，而不是協助程式庫代理程式透過路由我們必須在 Visual Studio 2010。 我們再仰賴的狀態為 「 廠商已安裝的內容 = true"來判斷是否有不同的內容中。 如果為 true，我們再執行此剖析和路由邏輯取決於您想要為您的客戶支援。 如果為 false，則我們只要移至 MSDN。 如果是本機使用者的設定，然後所有的呼叫只要移至本機說明引擎。  
-  
+
 F1 流程圖表：  
-  
+
 ![F1 流程](../../extensibility/internals/media/f1flow.png "F1flow")  
-  
+
 當說明檢視器的預設說明內容來源設定為線上 （啟動瀏覽器中）：  
-  
+
 -   Visual Studio 合作夥伴 (VSP) 功能發出 F1 屬性包 （屬性包 prefix.keyword 和線上 URL 在登錄中找到的前置詞） 的值： F1 傳送 VSP URL + 參數至瀏覽器。  
-  
+
 -   Visual Studio 功能 （語言編輯器，Visual Studio 特定的功能表項目等）： F1 將 Visual Studio URL 傳送給瀏覽器。  
-  
+
 當說明檢視器的預設說明內容來源設定為本機說明 （Help Viewer 中啟動）：  
-  
+
 -   F1 屬性包與本機存放區索引之間的關鍵字相符的 VSP 功能 (也就是屬性包 prefix.keyword = 本機存放區索引中找到的值): F1 呈現說明檢視器中的主題。  
-  
+
 -   Visual Studio 功能 （沒有的選項來覆寫所發出的 Visual Studio 功能的屬性包 VSP）： F1 呈現 Visual Studio 中的主題說明檢視器。  
-  
+
 設定下列登錄值以啟用 F1 後援廠商說明內容。 F1 後援表示線上說明檢視器設定為尋找 F1 說明內容，而且廠商內容會在本機安裝到使用者的硬碟機。 說明檢視器應該查看本機說明內容，即使預設設定是取得線上說明。  
-  
-1.  設定**VendorContent**協助 2.3 登錄機碼下的值：  
-  
-    -   適用於 32 位元作業系統：  
-  
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
-  
-         「 VendorContent"= dword: 00000001  
-  
-    -   適用於 64 位元作業系統：  
-  
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
-  
-         「 VendorContent"= dword: 00000001  
-  
-2.  註冊協助 2.3 登錄機碼的夥伴命名空間：  
-  
-    -   適用於 32 位元作業系統：  
-  
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner*\\< 命名空間\>*  
-  
-         「 位置 」 = 「 離線 」  
-  
-    -   適用於 64 位元作業系統：  
-  
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner*\\< 命名空間\>*  
-  
-         「 位置 」 = 「 離線 」  
-  
+
+1. 設定**VendorContent**協助 2.3 登錄機碼下的值：  
+
+   -   適用於 32 位元作業系統：  
+
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
+
+        「 VendorContent"= dword: 00000001  
+
+   -   適用於 64 位元作業系統：  
+
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
+
+        「 VendorContent"= dword: 00000001  
+
+2. 註冊協助 2.3 登錄機碼的夥伴命名空間：  
+
+   - 適用於 32 位元作業系統：  
+
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< 命名空間\></em>  
+
+      「 位置 」 = 「 離線 」  
+
+   - 適用於 64 位元作業系統：  
+
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< 命名空間\></em>  
+
+      「 位置 」 = 「 離線 」  
+
 **剖析的基底原生命名空間**  
-  
+
 若要開啟基底的原生命名空間剖析，在登錄中新增 DWORD 的名稱： BaseNativeNamespaces 並設定其值為 1 （下他們想要支援目錄索引鍵）。  例如，如果您想要使用 Visual Studio 類別目錄，您無法將金鑰新增至路徑：  
-  
+
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
-  
+
 當標頭/方法時發現格式 F1 關鍵字時，'/' 字元將會被剖析，導致下列建構：  
-  
+
 -   標頭： 將會是可用來在登錄中登錄的命名空間  
-  
+
 -   方法： 這會成為傳遞的關鍵字。  
-  
+
 例如，假設一個稱為 CustomLibrary 的自訂程式庫和方法，稱為 MyTestMethod，當要求傳入 F1 將會格式化為`CustomLibrary/MyTestMethod`。  
-  
+
 使用者可以註冊 CustomLibrary 為命名空間底下的合作夥伴，並提供他們想要的任何位置索引鍵，因此傳遞給查詢的關鍵字 MyTestMethod。  
-  
+
 **啟用偵錯工具在 IDE 中的說明**  
-  
+
 新增下列登錄機碼和值：  
-  
+
 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵： 零售值中的 顯示偵錯輸出: 是  
-  
+
 在 IDE 中，[說明] 功能表項目之下，選取 [偵錯協助內容]  
-  
+
 **內容的中繼資料**  
-  
+
 在下表中，括號之間出現的任何字串會是一個預留位置，必須可辨識的值來取代。 例如，在\<中繼 name="Microsoft.Help.Locale"內容 ="在 [語言]"/ >，"[語言程式碼]"必須取代的值，例如 「 en-us-我們"。  
+
   
-|屬性 （HTML 表示）|描述|  
-|--------------------------------------|-----------------|  
-|\< 中繼 name="Microsoft.Help.Locale"內容 ="[語言代碼]"/ >|本主題的地區設定。 如果此標記用在主題中，必須一次使用，而且它必須插入上述任何其他的 Microsoft 說明標記。 如果未使用此標記，本主題的內文會使用斷詞工具所關聯的產品地區設定中，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 ISOC RFC 4646 符合此標記。 若要確保 Microsoft 技術能夠正常運作，使用此屬性而不是一般的 [語言] 屬性。|  
-|\< 中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ >|本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 主題是顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。|  
-|\< 標題 > [標題] \< /標題 >|指定本主題的標題。 此標記為必要項，並必須用於主題的一次。 如果本主題的本文不包含標題\<d i v > 區段中，這個標題會顯示主題中，並在目錄中。|  
-|\< 中繼名稱 ="Microsoft.Help.Keywords 」 內容 ="[aKeywordPhrase]"/ >|指定連結的說明檢視器的 [索引] 窗格中顯示的文字。 按一下連結時，即會顯示主題。您可以指定多個索引關鍵字的主題，或如果您不想要顯示在索引中此主題的連結，您可以省略此標記。 "K"關鍵字，從早期版本的說明可以轉換成這個屬性。|  
-|\< 中繼 name="Microsoft.Help.Id"內容 ="[TopicID]"/ >|設定本主題的識別碼。 此標記為必要項，並必須用於主題的一次。 識別碼必須是唯一的目錄中有相同的地區設定的主題。 在另一個主題中，您可以建立本主題的連結，使用此識別碼。|  
-|\< 中繼 name="Microsoft.Help.F1"content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|指定本主題的 f1 說明關鍵字。 您可以指定多個 F1 關鍵字的主題，或如果不想讓此應用程式使用者按下 F1 鍵時要顯示的主題，您可以省略此標記。 通常，只有一個 F1 關鍵字會指定主題。 "F"關鍵字，從早期版本的說明可以轉換成這個屬性。|  
-|\< 中繼名稱 ="Description"content ="[主題 description]"/ >|提供簡短摘要，本主題中的內容。 如果此標記用在主題中，它必須使用一次。 直接由查詢程式庫，存取這個屬性它不會儲存在索引檔案。|  
- 中繼 name="Microsoft.Help.TocParent"內容 ="[sys.internal_tables]"/ >|指定本主題的最上層主題中的目錄。 此標記為必要項，並必須用於主題的一次。 這個值會是父代的 Microsoft.Help.Id。 主題可以有一個位置資料表中的內容。 "-1"，就會被視為目錄根的主題識別碼。 在  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，該頁面是說明檢視器首頁。 這是我們特別將 TocParent = 1 加入一些主題，以確保，它們會顯示在上方層級相同的原因。說明檢視器首頁是系統頁面，因此不可取代。 如果 VSP 嘗試新增的頁面識別碼為-1 時，它可能會加入至內容集，但說明檢視器一律會使用 系統 頁面-說明檢視器首頁|  
-|\< 中繼 name="Microsoft.Help.TocOrder"內容 ="[整數]"/ >|指定的目錄中本主題出現的位置相對於其對等主題。 此標記為必要項，並必須用於主題的一次。 值為整數。 指定的數值較小的整數的主題上方指定較高值整數的主題。|  
-|\< 中繼 name="Microsoft.Help.Product"內容 ="[product code]"/ >|指定此主題描述的產品。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。|  
-|\< 中繼 name="Microsoft.Help.ProductVersion"內容 ="[版本號碼]"/ >|指定此主題描述的產品版本。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。|  
-|\< 中繼 name="Microsoft.Help.Category"內容 ="[string]"/ >|用來識別小節內容的產品。 您可以識別多個小節的主題，或如果您不想找出任何小節的連結，您可以省略此標記。 此標記用來儲存 TargetOS 和 TargetFrameworkMoniker 的屬性，當轉換從較早版本的說明主題。 內容的格式是 AttributeName:AttributeValue。|  
-|\< 中繼 name="Microsoft.Help.TopicVersion 內容 ="[主題版本號碼]"/ >|在目錄中的多個版本存在時，請指定此版本的主題。 Microsoft.Help.Id 不保證是唯一的因為此標記時，需要多個版本的主題時存在，在目錄中，例如，目錄包含.NET Framework 3.5 和主題的主題，適用於.NET Framework 4 而且兩者都有相同的 Micro軟性。Help.Id。|  
-|\< 中繼名稱 ="SelfBranded"content ="[為 TRUE 或 FALSE]"/ >|指定本主題使用 Help Library 管理員啟動商標或商標套件的特定主題。 此標記必須是 TRUE 或 FALSE。 如果是 TRUE，則相關主題的品牌封裝會覆寫 Help Library 管理員啟動，以便讓主題呈現如預期般，即使其不同於其他內容的轉譯時，會設定品牌封裝。 如果是 FALSE，目前的主題是根據 Help Library 管理員啟動時設定品牌封裝中呈現。 根據預設，Help Library 管理員假設自我品牌除非 SelfBranded 變數宣告為 TRUE; 否則為 false因此，您並不需要宣告\<中繼名稱 ="SelfBranded"content ="FALSE"/ >。|  
+| 屬性 （HTML 表示） | 描述 |
+| - | - |
+| \< 中繼 name="Microsoft.Help.Locale"內容 ="[語言代碼]"/ > | 本主題的地區設定。 如果此標記用在主題中，必須一次使用，而且它必須插入上述任何其他的 Microsoft 說明標記。 如果未使用此標記，本主題的內文會使用斷詞工具所關聯的產品地區設定中，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 ISOC RFC 4646 符合此標記。 若要確保 Microsoft 技術能夠正常運作，使用此屬性而不是一般的 [語言] 屬性。 |
+| \< 中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ > | 本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 主題是顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。 |
+| \< 標題 > [標題] \< /標題 > | 指定本主題的標題。 此標記為必要項，並必須用於主題的一次。 如果本主題的本文不包含標題\<d i v > 區段中，這個標題會顯示主題中，並在目錄中。 |
+| \< 中繼名稱 ="Microsoft.Help.Keywords 」 內容 ="[aKeywordPhrase]"/ > | 指定連結的說明檢視器的 [索引] 窗格中顯示的文字。 按一下連結時，即會顯示主題。您可以指定多個索引關鍵字的主題，或如果您不想要顯示在索引中此主題的連結，您可以省略此標記。 "K"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
+| \< 中繼 name="Microsoft.Help.Id"內容 ="[TopicID]"/ > | 設定本主題的識別碼。 此標記為必要項，並必須用於主題的一次。 識別碼必須是唯一的目錄中有相同的地區設定的主題。 在另一個主題中，您可以建立本主題的連結，使用此識別碼。 |
+| \< 中繼 name="Microsoft.Help.F1"content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | 指定本主題的 f1 說明關鍵字。 您可以指定多個 F1 關鍵字的主題，或如果不想讓此應用程式使用者按下 F1 鍵時要顯示的主題，您可以省略此標記。 通常，只有一個 F1 關鍵字會指定主題。 "F"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
+| \< 中繼名稱 ="Description"content ="[主題 description]"/ > | 提供簡短摘要，本主題中的內容。 如果此標記用在主題中，它必須使用一次。 直接由查詢程式庫，存取這個屬性它不會儲存在索引檔案。 |
+| 中繼 name="Microsoft.Help.TocParent"內容 ="[sys.internal_tables]"/ > | 指定本主題的最上層主題中的目錄。 此標記為必要項，並必須用於主題的一次。 這個值會是父代的 Microsoft.Help.Id。 主題可以有一個位置資料表中的內容。 "-1"，就會被視為目錄根的主題識別碼。 在  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，該頁面是說明檢視器首頁。 這是我們特別將 TocParent = 1 加入一些主題，以確保，它們會顯示在上方層級相同的原因。說明檢視器首頁是系統頁面，因此不可取代。 如果 VSP 嘗試新增的頁面識別碼為-1 時，它可能會加入至內容集，但說明檢視器一律會使用 系統 頁面-說明檢視器首頁 |
+| \< 中繼 name="Microsoft.Help.TocOrder"內容 ="[整數]"/ > | 指定的目錄中本主題出現的位置相對於其對等主題。 此標記為必要項，並必須用於主題的一次。 值為整數。 指定的數值較小的整數的主題上方指定較高值整數的主題。 |
+| \< 中繼 name="Microsoft.Help.Product"內容 ="[product code]"/ > | 指定此主題描述的產品。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。 |
+| \< 中繼 name="Microsoft.Help.ProductVersion"內容 ="[版本號碼]"/ > | 指定此主題描述的產品版本。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。 |
+| \< 中繼 name="Microsoft.Help.Category"內容 ="[string]"/ > | 用來識別小節內容的產品。 您可以識別多個小節的主題，或如果您不想找出任何小節的連結，您可以省略此標記。 此標記用來儲存 TargetOS 和 TargetFrameworkMoniker 的屬性，當轉換從較早版本的說明主題。 內容的格式是 AttributeName:AttributeValue。 |
+| \< 中繼 name="Microsoft.Help.TopicVersion 內容 ="[主題版本號碼]"/ > | 在目錄中的多個版本存在時，請指定此版本的主題。 Microsoft.Help.Id 不保證是唯一的因為此標記時，需要多個版本的主題時存在，在目錄中，例如，目錄包含.NET Framework 3.5 和主題的主題，適用於.NET Framework 4 而且兩者都有相同的 Micro軟性。Help.Id。 |
+| \< 中繼名稱 ="SelfBranded"content ="[為 TRUE 或 FALSE]"/ > | 指定本主題使用 Help Library 管理員啟動商標或商標套件的特定主題。 此標記必須是 TRUE 或 FALSE。 如果是 TRUE，則相關主題的品牌封裝會覆寫 Help Library 管理員啟動，以便讓主題呈現如預期般，即使其不同於其他內容的轉譯時，會設定品牌封裝。 如果是 FALSE，目前的主題是根據 Help Library 管理員啟動時設定品牌封裝中呈現。 根據預設，Help Library 管理員假設自我品牌除非 SelfBranded 變數宣告為 TRUE; 否則為 false因此，您並不需要宣告\<中繼名稱 ="SelfBranded"content ="FALSE"/ >。 |
   
 ### <a name="creating-a-branding-package"></a>建立品牌封裝  
 Visual Studio 版本包含幾個不同的 Visual Studio 產品，包括適用於 Visual Studio 合作夥伴的隔離和整合式的 shell。  每個這些產品都需要某種程度的主題為基礎說明內容的支援，唯一產品的商標。  例如，Visual Studio 主題需要有一致的品牌的簡報，而 SQL Studio，包裝 ISO Shell，則需要使用它自己唯一說明內容的商標每個主題。  整合式 Shell 合作夥伴可能會想要能在 Visual Studio 產品的說明內容的父系，同時維持自己的主題商標其 [說明] 主題。  
@@ -435,88 +435,89 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
   
 **Branding.xml**  
   
-|||  
-|-|-|  
-|功能：|**CollapsibleArea**|  
-|用法:|展開摺疊內容控制項文字|  
-|**目**|**值**|  
-|ExpandText|Expand|  
-|CollapseText|摺疊|  
-|功能：|**CodeSnippet**|  
-|用法:|程式碼片段控制項文字。  注意: 「 非中斷 」 空間的程式碼片段內容將會變更至空間。|  
-|**目**|**值**|  
-|CopyToClipboard|複製至剪貼簿|  
-|ViewColorizedText|檢視彩色樣式|  
-|CombinedVBTabDisplayLanguage|Visual Basic （範例）|  
-|VBDeclaration|宣告|  
-|VBUsage|使用量|  
-|功能：|**意見反應、 頁尾和標誌**|  
-|用法:|提供客戶提供有關透過電子郵件的目前主題的意見反應的意見反應控制項。  著作權文字內容。  標誌的定義。|  
-|**目**|**值 （這些字串可以修改以符合內容的採用者需要）。**|  
-|著作權|© 2013 Microsoft Corporation。 著作權所有，並保留一切權利。|  
-|SendFeedback|\<a ="{0}」 {1}> 傳送意見反應 \< /a > 給 Microsoft 的這個主題。|  
-|FeedbackLink||  
-|LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
-|LogoFileName|vs_logo_bk.gif|  
-|LogoFileNameHC|vs_logo_wh.gif|  
-|功能：|**免責聲明**|  
-|用法:|一組機器案例特定的免責聲明的翻譯內容。|  
-|**目**|**值**|  
-|MT_Editable|本文是機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|MT_NonEditable|本文是機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|MT_QualityEditable|本文是人工翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|MT_QualityNonEditable|本文是人工翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|MT_BetaContents|這篇文章是針對初步發行的機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|MT_BetaRecycledContents|本文是人工翻譯為初步發行版。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。|  
-|功能：|**用於 LinkTable**|  
-|用法:|如需線上主題的連結支援|  
-|**目**|**值**|  
-|LinkTableTitle|連結資料表|  
-|TopicEnuLinkText|檢視的英文版 \< /a > 您的電腦上可以使用本主題。|  
-|TopicOnlineLinkText|檢視這個主題\<href ="{0}" {1}> online \< /a >|  
-|OnlineText|Online|  
-|功能：|**視訊的音訊控制項**|  
-|用法:|顯示項目和視訊內容的文字|  
-|**目**|**值**|  
-|MultiMediaNotSupported|Internet Explorer 9 或更新版本必須安裝支援{0}內容。|  
-|VideoText|顯示視訊|  
-|AudioText|資料流處理音訊|  
-|OnlineVideoLinkText|\<p > 若要檢視與這個主題相關的影片，請按一下{0} \<href ="{1}">{2}這裡\</a >。\</ p >|  
-|OnlineAudioLinkText|\<p > 若要聆聽與這個主題相關聯的音訊，按一下{0} \<href ="{1}">{2}這裡\</a >。\</ p >|  
-|功能：|**未安裝的內容控制項**|  
-|用法:|用於 contentnotinstalled.htm 轉譯的文字元素 （字串）|  
-|**目**|**值**|  
-|ContentNotInstalledTitle|在您的電腦上找不到任何內容。|  
-|ContentNotInstalledDownloadContentText|\<p > 若要將內容下載到您的電腦， \<href ="{0}" {1}> 按一下 [管理] 索引標籤\</a >。\</ p >|  
-|ContentNotInstalledText|\<p > 您的電腦上已安裝的任何內容。 請參閱您的系統管理員的本機說明內容安裝。 \< /p >|  
-|功能：|**主題找不到控制項**|  
-|用法:|用於 topicnotfound.htm 轉譯的文字元素 （字串）|  
-|**目**|**值**|  
-|TopicNotFoundTitle|在您的電腦上找不到要求的主題。|  
-|TopicNotFoundViewOnlineText|\<p > 您的電腦上找不到所要求的主題，但是您可以\<href ="{0}" {1}> 檢視線上主題\</a >。\</ p >|  
-|TopicNotFoundDownloadContentText|\<p > 查看類似的主題，連結的瀏覽窗格或\<href ="{0}" {1}> 按一下 [管理] 索引標籤\</a > 為內容下載到您的電腦。\</ p >|  
-|TopicNotFoundText|\<p > 您的電腦上找不到所要求的主題。 \< /p >|  
-|功能：|**主題已損毀的控制項**|  
-|用法:|用於 topiccorrupted.htm 轉譯的文字元素 （字串）|  
-|**目**|**值**|  
-|TopicCorruptedTitle|無法顯示要求的主題。|  
-|TopicCorruptedViewOnlineText|\<p > 說明檢視器會無法顯示要求的主題。 可能有錯誤主題的內容或基礎系統相依性。 \< /p >|  
-|功能：|**首頁上的控制項**|  
-|用法:|支援說明檢視器的最上層節點內容的顯示文字。|  
-|**目**|**值**|  
-|HomePageTitle|說明檢視器首頁|  
-|HomePageIntroduction|\<p > 歡迎使用 Microsoft Help Viewer，基本每一位使用者使用 Microsoft 工具、 產品、 技術和服務的資訊來源。 說明檢視器可讓您存取使用說明及參考資訊、 範例程式碼、 技術文章等等。 若要尋找的需要請瀏覽目錄的內容，使用全文檢索搜尋，或瀏覽使用關鍵字索引的內容。 \< /p >|  
-|HomePageContentInstallText|\<p >\<b / > 使用\<href ="{0}" {1}> 管理內容\</a > 索引標籤上，執行下列動作：\<u l >\<l i > 將內容新增至您的電腦。\</ l i >\<l i > 檢查您的本機內容的更新。\</ l i >\<l i > 移除您的電腦上的內容。\</ l i >\</u l > \< /p >|  
-|HomePageInstalledBooks|已安裝的書籍|  
-|HomePageNoBooksInstalled|在您的電腦上找不到任何內容。|  
-|HomePageHelpSettings|說明內容設定|  
-|HomePageHelpSettingsText|\<p > 您目前的設定是本機說明。 說明檢視器會顯示您已安裝在電腦的內容。\<b / > 若要變更您的來源的說明內容，請在 Visual Studio 功能表列上選擇\<s p a n style ="{0}"> 協助，請設定說明偏好\</s p a n >。\<b / > \< /p >|  
-|Mb|MB|  
-  
+
+| | |
+| - | - |
+| 功能： | **CollapsibleArea** |
+| 用法: | 展開摺疊內容控制項文字 |
+| **目** | **值** |
+| ExpandText | Expand |
+| CollapseText | 摺疊 |
+| 功能： | **CodeSnippet** |
+| 用法: | 程式碼片段控制項文字。  注意: 「 非中斷 」 空間的程式碼片段內容將會變更至空間。 |
+| **目** | **值** |
+| CopyToClipboard | 複製至剪貼簿 |
+| ViewColorizedText | 檢視彩色樣式 |
+| CombinedVBTabDisplayLanguage | Visual Basic （範例） |
+| VBDeclaration | 宣告 |
+| VBUsage | 使用量 |
+| 功能： | **意見反應、 頁尾和標誌** |
+| 用法: | 提供客戶提供有關透過電子郵件的目前主題的意見反應的意見反應控制項。  著作權文字內容。  標誌的定義。 |
+| **目** | **值 （這些字串可以修改以符合內容的採用者需要）。** |
+| 著作權 | © 2013 Microsoft Corporation。 著作權所有，並保留一切權利。 |
+| SendFeedback | \<a ="{0}」 {1}> 傳送意見反應 \< /a > 給 Microsoft 的這個主題。 |
+| FeedbackLink | |
+| LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
+| LogoFileName | vs_logo_bk.gif |
+| LogoFileNameHC | vs_logo_wh.gif |
+| 功能： | **免責聲明** |
+| 用法: | 一組機器案例特定的免責聲明的翻譯內容。 |
+| **目** | **值** |
+| MT_Editable | 本文是機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| MT_NonEditable | 本文是機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| MT_QualityEditable | 本文是人工翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| MT_QualityNonEditable | 本文是人工翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| MT_BetaContents | 這篇文章是針對初步發行的機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| MT_BetaRecycledContents | 本文是人工翻譯為初步發行版。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
+| 功能： | **用於 LinkTable** |
+| 用法: | 如需線上主題的連結支援 |
+| **目** | **值** |
+| LinkTableTitle | 連結資料表 |
+| TopicEnuLinkText | 檢視的英文版 \< /a > 您的電腦上可以使用本主題。 |
+| TopicOnlineLinkText | 檢視這個主題\<href ="{0}" {1}> online \< /a > |
+| OnlineText | Online |
+| 功能： | **視訊的音訊控制項** |
+| 用法: | 顯示項目和視訊內容的文字 |
+| **目** | **值** |
+| MultiMediaNotSupported | Internet Explorer 9 或更新版本必須安裝支援{0}內容。 |
+| VideoText | 顯示視訊 |
+| AudioText | 資料流處理音訊 |
+| OnlineVideoLinkText | \<p > 若要檢視與這個主題相關的影片，請按一下{0} \<href ="{1}">{2}這裡\</a >。\</ p > |
+| OnlineAudioLinkText | \<p > 若要聆聽與這個主題相關聯的音訊，按一下{0} \<href ="{1}">{2}這裡\</a >。\</ p > |
+| 功能： | **未安裝的內容控制項** |
+| 用法: | 用於 contentnotinstalled.htm 轉譯的文字元素 （字串） |
+| **目** | **值** |
+| ContentNotInstalledTitle | 在您的電腦上找不到任何內容。 |
+| ContentNotInstalledDownloadContentText | \<p > 若要將內容下載到您的電腦， \<href ="{0}" {1}> 按一下 [管理] 索引標籤\</a >。\</ p > |
+| ContentNotInstalledText | \<p > 您的電腦上已安裝的任何內容。 請參閱您的系統管理員的本機說明內容安裝。 \< /p > |
+| 功能： | **主題找不到控制項** |
+| 用法: | 用於 topicnotfound.htm 轉譯的文字元素 （字串） |
+| **目** | **值** |
+| TopicNotFoundTitle | 在您的電腦上找不到要求的主題。 |
+| TopicNotFoundViewOnlineText | \<p > 您的電腦上找不到所要求的主題，但是您可以\<href ="{0}" {1}> 檢視線上主題\</a >。\</ p > |
+| TopicNotFoundDownloadContentText | \<p > 查看類似的主題，連結的瀏覽窗格或\<href ="{0}" {1}> 按一下 [管理] 索引標籤\</a > 為內容下載到您的電腦。\</ p > |
+| TopicNotFoundText | \<p > 您的電腦上找不到所要求的主題。 \< /p > |
+| 功能： | **主題已損毀的控制項** |
+| 用法: | 用於 topiccorrupted.htm 轉譯的文字元素 （字串） |
+| **目** | **值** |
+| TopicCorruptedTitle | 無法顯示要求的主題。 |
+| TopicCorruptedViewOnlineText | \<p > 說明檢視器會無法顯示要求的主題。 可能有錯誤主題的內容或基礎系統相依性。 \< /p > |
+| 功能： | **首頁上的控制項** |
+| 用法: | 支援說明檢視器的最上層節點內容的顯示文字。 |
+| **目** | **值** |
+| HomePageTitle | 說明檢視器首頁 |
+| HomePageIntroduction | \<p > 歡迎使用 Microsoft Help Viewer，基本每一位使用者使用 Microsoft 工具、 產品、 技術和服務的資訊來源。 說明檢視器可讓您存取使用說明及參考資訊、 範例程式碼、 技術文章等等。 若要尋找的需要請瀏覽目錄的內容，使用全文檢索搜尋，或瀏覽使用關鍵字索引的內容。 \< /p > |
+| HomePageContentInstallText | \<p >\<b / > 使用\<href ="{0}" {1}> 管理內容\</a > 索引標籤上，執行下列動作：\<u l >\<l i > 將內容新增至您的電腦。\</ l i >\<l i > 檢查您的本機內容的更新。\</ l i >\<l i > 移除您的電腦上的內容。\</ l i >\</u l > \< /p > |
+| HomePageInstalledBooks | 已安裝的書籍 |
+| HomePageNoBooksInstalled | 在您的電腦上找不到任何內容。 |
+| HomePageHelpSettings | 說明內容設定 |
+| HomePageHelpSettingsText | \<p > 您目前的設定是本機說明。 說明檢視器會顯示您已安裝在電腦的內容。\<b / > 若要變更您的來源的說明內容，請在 Visual Studio 功能表列上選擇\<s p a n style ="{0}"> 協助，請設定說明偏好\</s p a n >。\<b / > \< /p > |
+| Mb | MB |
+
 **branding.js**  
-  
+
 Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用的 JavaScript。  以下是品牌元素和支援的 JavaScript 函式的清單。  這個檔案是當地語系化的所有字串是區段中都定義 「 可當地語系化的字串"這個檔案的頂端。  請注意，已建立 ICL 檔案 branding.js 檔案內當地語系化字串。  
-  
+
 ||||  
 |-|-|-|  
 |**商標功能**|**JavaScript 函式**|**描述**|  
@@ -549,11 +550,11 @@ Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用�
 ||styleRectify （styleName、 styleValue）||  
 ||showCC(id)||  
 ||subtitle(id)||  
-  
+
 **HTM 檔案**  
-  
+
 品牌封裝包含一組支援的通訊金鑰資訊，以便說明內容的使用者，例如首頁，其中包含描述安裝哪些內容集的區段和頁面時主題無法告知使用者案例的 HTM 檔案位於本機的主題集。 請注意這些 HTM 檔案，可以修改每項產品。  ISO Shell 廠商可採取的預設商標套件，並將行為和這些頁面的內容套件自己的需求。  這些檔案會參考其相對應的商標套件，才能將商標的標記，以取得從 branding.xml 檔案的相對應的內容中。  
-  
+
 ||||  
 |-|-|-|  
 |**檔案**|**使用**|**顯示內容的來源**|  
@@ -574,21 +575,21 @@ Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用�
 ||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledTitle >|  
 ||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledDownloadContentText >|  
 ||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledText >|  
-  
+
 **CSS 檔案**  
-  
+
 Visual Studio 說明檢視器品牌封裝包含兩個的 css 檔案，以支援一致的 Visual Studio 說明內容呈現：  
-  
+
 -   Branding.css-包含 css 項目呈現位置 SelfBranded = false  
-  
+
 -   Printer.css-包含 css 項目呈現位置 SelfBranded = false  
-  
+
 Branding.css 檔案包含 Visual Studio 主題簡報的定義 (需要注意的是 branding.css 內 Branding_\<地區設定 >.mshc 從封裝服務可能會變更)。  
-  
+
 **圖形檔**  
-  
+
 Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。  Visual Studio 說明檢視器的品牌封裝中的圖形檔案的完整清單如下所示。  
-  
+
 ||||  
 |-|-|-|  
 |**檔案**|**使用**|**範例**|  
@@ -603,18 +604,18 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 |ccOff.png|隱藏式輔助字幕的圖形||  
 |ccOn.png|隱藏式輔助字幕的圖形||  
 |ImageSprite.png|用來呈現可摺疊區域|展開或摺疊圖形|  
-  
+
 ### <a name="deploying-a-set-of-topics"></a>部署一組的主題  
 這是非常簡單且快速的教學課程，建立說明檢視器的內容部署，設定組成 MSHA 檔案及 cab 組或 MSHC 包含的主題。 描述一組的 cab 檔案的 XML 檔案或 MSHC 檔案 MSHA。 說明檢視器可以讀取以取得一份內容 (MSHA。封包或。MSHC 檔案） 可供本機安裝。  
-  
+
 這是只描述非常基本的 XML 結構描述的說明檢視器 MSHA 入門指南。  請注意，本簡短的概觀如下實作範例和範例 HelpContentSetup.msha。  
-  
+
 此入門，目的 MSHA，名稱是的 HelpContentSetup.msha （檔案名稱可以是任何項目，擴充功能。MSHA)。 HelpContentSetup.msha （下面的範例） 應該包含一份 cab 或 MSHCs 可用。  請注意，檔案類型必須是內 （不支援 MSHA 和 CAB 檔案類型的組合） MSHA 保持一致。 針對每個封包或 MSHC，應該會有\<div 類別 ="套件">...\</div > （請參閱以下範例）。  
-  
+
 注意： 在實作範例中中,，我們都納入商標的套件。 這很重要的包含，以便取得所需的 Visual Studio 內容呈現項目和內容的行為。  
-  
+
 範例 [HelpContentSetup.msha] 檔案: (取代 「 內容會設定名稱 1 」 和 「 內容集名稱 2 」 等等，都是與您的檔案名稱。)  
-  
+
 ```html
 <html>  
 <head />  
@@ -636,7 +637,6 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 <span class="deployed">True</span>  
 <a class="current-link"href=" Your_Company _Content_Set_2.mshc "> Your_Company _Content_Set_2.mshc </a>  
 </div>.  
-  
 ```  
   
 1.  建立本機資料夾，如下所示"C:\SampleContent 」  
@@ -703,11 +703,11 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
   
 建立獨立模式 Shell 為基礎的應用程式和其說明的基本步驟：  
   
-1.  取得[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]ISO Shell 可轉散發套件 （Microsoft 下載）。  
+1. 取得[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]ISO Shell 可轉散發套件 （Microsoft 下載）。  
   
-2.  在 Visual Studio 中，建立說明延伸模組為基礎的隔離 Shell 中，例如，本逐步解說稍後所述的 Contoso 說明延伸模組。  
+2. 在 Visual Studio 中，建立說明延伸模組為基礎的隔離 Shell 中，例如，本逐步解說稍後所述的 Contoso 說明延伸模組。  
   
-3.  換行的擴充功能與 ISO Shell 可轉散發到部署 MSI （應用程式安裝程式）。 本逐步解說不包括設定步驟。  
+3. 換行的擴充功能與 ISO Shell 可轉散發到部署 MSI （應用程式安裝程式）。 本逐步解說不包括設定步驟。  
   
 建立 Visual Studio 內容存放區。 整合式 Shell 案例中，變更視覺化 Studio12 產品類別目錄名稱，如下所示：  
   
@@ -722,13 +722,13 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
   
 在登錄中定義的內容存放區。 整合式 Shell 中，變更 VisualStudio15 中產品類別目錄名稱的內容︰  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
   
-     索引鍵： LocationPath 字串值： C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\  
+   索引鍵： LocationPath 字串值： C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US  
   
-     索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件  
+   索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件  
   
 **建立專案**  
   
@@ -772,42 +772,42 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
   
 若要測試這個，如同部署：  
   
-1.  在電腦上，您要部署 Contoso，若要安裝下載的 ISO 殼層 （上述）。  
+1. 在電腦上，您要部署 Contoso，若要安裝下載的 ISO 殼層 （上述）。  
   
-2.  建立資料夾\\\Program Files (x86)\\，並將它命名`Contoso`。  
+2. 建立資料夾\\\Program Files (x86)\\，並將它命名`Contoso`。  
   
-3.  內容複製到 ContosoHelpShell 發行資料夾\\\Program Files (x86) \Contoso\ 資料夾。  
+3. 內容複製到 ContosoHelpShell 發行資料夾\\\Program Files (x86) \Contoso\ 資料夾。  
   
-4.  啟動登錄編輯程式選擇**執行**中**開始**功能表，然後輸入`Regedit`。 在 登錄編輯器中，選擇**檔案**，然後**匯入**。 瀏覽至 ContosoHelpShell 專案資料夾。 在 ContosoHelpShell 子資料夾中，選擇 [ContosoHelpShell.reg]。  
+4. 啟動登錄編輯程式選擇**執行**中**開始**功能表，然後輸入`Regedit`。 在 登錄編輯器中，選擇**檔案**，然後**匯入**。 瀏覽至 ContosoHelpShell 專案資料夾。 在 ContosoHelpShell 子資料夾中，選擇 [ContosoHelpShell.reg]。  
   
-5.  建立內容的存放區：  
+5. 建立內容的存放區：  
   
-     ISO shell-建立 Contoso 內容存放區 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12  
+    ISO shell-建立 Contoso 內容存放區 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12  
   
-     針對[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]整合式 Shell、 建立資料夾 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15  
+    針對[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]整合式 Shell、 建立資料夾 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15  
   
-6.  建立 CatalogType.xml 並加入要包含的內容存放區 （上一個步驟）：  
+6. 建立 CatalogType.xml 並加入要包含的內容存放區 （上一個步驟）：  
   
-    ```  
-    <?xml version="1.0" encoding="UTF-8"?>  
-    <catalogType>UserManaged</catalogType>  
-    ```  
+   ```  
+   <?xml version="1.0" encoding="UTF-8"?>  
+   <catalogType>UserManaged</catalogType>  
+   ```  
   
-7.  新增下列登錄機碼：  
+7. 新增下列登錄機碼：  
   
-     HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath 字串值：  
+    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath 字串值：  
   
-     ISO shell:  
+    ISO shell:  
   
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
   
-     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 整合式的 Shell:  
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 整合式的 Shell:  
   
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美國  
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美國  
   
-     索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件。 ISO 殼層，這是您目錄的名稱。  
+    索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件。 ISO 殼層，這是您目錄的名稱。  
   
-8.  將您的內容 （cab 或 MSHC 和 MSHA） 複製到本機資料夾。  
+8. 將您的內容 （cab 或 MSHC 和 MSHA） 複製到本機資料夾。  
   
 9. 整合式 Shell 命令列範例測試內容存放區。 ISO shell 變更類別目錄和 launchingApp 為適當的值來比對的產品。  
   

@@ -13,12 +13,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c2922d5be6c3326dac3b0c2667e5210ec908722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915447"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,31 +34,31 @@ Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 
   
  [轉換現有測試](#BKMK_Converting_an_existing_test)  
   
--   [將模擬器套件新增至測試專案](#BKMK_Adding_the_Emulators_package_to_a_test_project)  
+- [將模擬器套件新增至測試專案](#BKMK_Adding_the_Emulators_package_to_a_test_project)  
   
--   [使用模擬執行測試方法](#BKMK__Running_a_test_method_in_the_emulation_context)  
+- [使用模擬執行測試方法](#BKMK__Running_a_test_method_in_the_emulation_context)  
   
- [建立兩用類別和方法](#BKMK_Creating_dual_use_classes_and_methods)  
+  [建立兩用類別和方法](#BKMK_Creating_dual_use_classes_and_methods)  
   
- [使用 TestInitialize 和 TestCleanup 屬性建立兩用測試類別](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)  
+  [使用 TestInitialize 和 TestCleanup 屬性建立兩用測試類別](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)  
   
- [處理非模擬的 SharePoint 方法](#BKMK_Handling_non_emulated_SharePoint_methods)  
+  [處理非模擬的 SharePoint 方法](#BKMK_Handling_non_emulated_SharePoint_methods)  
   
- [從頭開始撰寫模擬測試和摘要](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)  
+  [從頭開始撰寫模擬測試和摘要](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)  
   
- [範例](#BKMK_Example)  
+  [範例](#BKMK_Example)  
   
- [模擬的 SharePoint 類型](#BKMK_Emulated_SharePoint_types)  
+  [模擬的 SharePoint 類型](#BKMK_Emulated_SharePoint_types)  
   
 ##  <a name="BKMK_Requirements"></a> 需求  
   
--   Microsoft SharePoint 2010 (SharePoint 2010 Server 或 SharePoint 2010 Foundation)  
+- Microsoft SharePoint 2010 (SharePoint 2010 Server 或 SharePoint 2010 Foundation)  
   
--   Microsoft Visual Studio Enterprise  
+- Microsoft Visual Studio Enterprise  
   
--   Microsoft SharePoint 模擬器 NuGet 套件  
+- Microsoft SharePoint 模擬器 NuGet 套件  
   
- 您也應該要熟悉 [Visual Studio 中單元測試的基本概念](../test/unit-test-basics.md)和 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 的一些知識。  
+  您也應該要熟悉 [Visual Studio 中單元測試的基本概念](../test/unit-test-basics.md)和 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 的一些知識。  
   
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart 範例  
  AppointmentsWebPart 會讓您檢視和管理約會的 SharePoint 清單。  
@@ -67,11 +67,11 @@ Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 
   
  在本範例中，我們將測試 Web 組件的兩個方法：  
   
--   `ScheduleAppointment` 方法會驗證傳遞至此方法的清單項目值，並在指定的 SharePoint 網站上建立清單中的新項目。  
+- `ScheduleAppointment` 方法會驗證傳遞至此方法的清單項目值，並在指定的 SharePoint 網站上建立清單中的新項目。  
   
--   `GetAppointmentsForToday` 方法會傳回今天約會的詳細資料。  
+- `GetAppointmentsForToday` 方法會傳回今天約會的詳細資料。  
   
- [本主題內容](#BKMK_In_this_topic)  
+  [本主題內容](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Converting_an_existing_test"></a> 轉換現有測試  
  在 SharePoint 元件中方法的一般測試，此測試方法會在 SharePoint Foundation 中建立暫存網站，並將 SharePoint 元件加入受測程式碼所需的網站。 此測試方法接著會建立該元件的執行個體並加以執行。 在測試結束時，會終止此站台。  
@@ -146,15 +146,15 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ###  <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> 將模擬器套件新增至測試專案  
  若要將 SharePoint 模擬器加入測試專案：  
   
-1.  在 [方案總管] 中選取測試專案。  
+1. 在 [方案總管] 中選取測試專案。  
   
-2.  在捷徑功能表上，選擇 [管理 NuGet 套件...]。  
+2. 在捷徑功能表上，選擇 [管理 NuGet 套件...]。  
   
-3.  搜尋 `Microsoft.SharePoint.Emulators` 的 [線上] 分類，然後選擇 [安裝]。  
+3. 搜尋 `Microsoft.SharePoint.Emulators` 的 [線上] 分類，然後選擇 [安裝]。  
   
- ![Sharepoint 模擬器 NuGet 套件](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")  
+   ![Sharepoint 模擬器 NuGet 套件](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")  
   
- [本主題內容](#BKMK_In_this_topic)  
+   [本主題內容](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> 使用模擬執行測試方法  
  安裝此套件會將參考加入您的專案之必要程式庫中。 若要在現有的測試類別中輕鬆使用模擬器，請加入命名空間 `Microsoft.SharePoint.Emulators` 和 `Microsoft.QualityTools.Testing.Emulators`。  
@@ -235,15 +235,15 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ##  <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> 使用 TestInitialize 和 TestCleanup 屬性建立兩用測試類別  
  如果您使用 `SharePointEmulationScope` 執行類別中的所有或大部分測試，就可以利用類別層級技術設定模擬模式。  
   
--   以 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> 和 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> 屬性化的測試類別方法可以建立和終結此範圍。  
+- 以 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> 和 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> 屬性化的測試類別方法可以建立和終結此範圍。  
   
--   在類別層級設定 `EmulationMode` 可讓您自動化 `EmulationMode.Enabled` 和 `EmulationMode.Passthrough` 之間的模式變更。  
+- 在類別層級設定 `EmulationMode` 可讓您自動化 `EmulationMode.Enabled` 和 `EmulationMode.Passthrough` 之間的模式變更。  
   
- 屬性為 `[TestInitialize]` 的類別方法會在每個測試方法的開頭執行，屬性為 `[TestCleanup]` 的方法則在每個測試方法的結束執行。 您可以在類別層級宣告 `SharePointEmulationScope` 物件的私用欄位，在 `TestInitialize` 屬性方法中初始化，然後在 `TestCleanup` 屬性化方法中處置物件。  
+  屬性為 `[TestInitialize]` 的類別方法會在每個測試方法的開頭執行，屬性為 `[TestCleanup]` 的方法則在每個測試方法的結束執行。 您可以在類別層級宣告 `SharePointEmulationScope` 物件的私用欄位，在 `TestInitialize` 屬性方法中初始化，然後在 `TestCleanup` 屬性化方法中處置物件。  
   
- 您可以使用任何您選擇用來自動化 `EmulationMode` 選取的方法。 其中一種方式為使用前置處理器指示詞檢查符號的存在。 例如，若要使用模擬器在類別中執行測試方法，您可以在測試專案檔或建置命令列中定義符號 (如 `USE_EMULATION`)。 如果已定義符號，則會宣告類別層級 `EmulationMode` 常數，並將其設定為 `Enabled`。 否則，會將此常數設定為 `Passthrough`。  
+  您可以使用任何您選擇用來自動化 `EmulationMode` 選取的方法。 其中一種方式為使用前置處理器指示詞檢查符號的存在。 例如，若要使用模擬器在類別中執行測試方法，您可以在測試專案檔或建置命令列中定義符號 (如 `USE_EMULATION`)。 如果已定義符號，則會宣告類別層級 `EmulationMode` 常數，並將其設定為 `Enabled`。 否則，會將此常數設定為 `Passthrough`。  
   
- 這裡提供測試類別的範例，示範如何使用前置處理器指示詞及 `TestInitialize` 和 `TestCleanup` 屬性方法設定模擬模式。  
+  這裡提供測試類別的範例，示範如何使用前置處理器指示詞及 `TestInitialize` 和 `TestCleanup` 屬性方法設定模擬模式。  
   
 ```csharp  
 //namespace declarations  
@@ -306,21 +306,21 @@ namspace MySPAppTests
   
  若要明確呼叫 Microsoft Fakes 填充碼：  
   
-1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 Microsoft.SharePoint.fakes 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。  
+1. 如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 Microsoft.SharePoint.fakes 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。  
   
-     ![方案總管中的 Fakes 資料夾](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")  
+    ![方案總管中的 Fakes 資料夾](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")  
   
-2.  在您安裝 Microsoft SharePoint 模擬器套件之後，以及如果您編輯了 Microsoft.SharePoint.Fakes 檔案，請重建此測試專案至少一次。 建置此專案會在磁碟上專案根資料夾中建立 **FakesAssembly** 資料夾並予以填入。  
+2. 在您安裝 Microsoft SharePoint 模擬器套件之後，以及如果您編輯了 Microsoft.SharePoint.Fakes 檔案，請重建此測試專案至少一次。 建置此專案會在磁碟上專案根資料夾中建立 **FakesAssembly** 資料夾並予以填入。  
   
-     ![FakesAssembly 資料夾](../test/media/ut-emulators-fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")  
+    ![FakesAssembly 資料夾](../test/media/ut-emulators-fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")  
   
-3.  將參考新增至位於 **FakesAssembly** 資料夾中的 **Microsoft.SharePoint.14.0.0.0.Fakes.dll** 組件。  
+3. 將參考新增至位於 **FakesAssembly** 資料夾中的 **Microsoft.SharePoint.14.0.0.0.Fakes.dll** 組件。  
   
-4.  (選擇性) 加入 `Microsoft.QualityTools.Testing.Fakes`、`Microsoft.SharePoint.Fakes` 和您要使用的 `Microsoft.SharePoint.Fakes` 之任何巢狀命名空間的測試類別命名空間指示詞。  
+4. (選擇性) 加入 `Microsoft.QualityTools.Testing.Fakes`、`Microsoft.SharePoint.Fakes` 和您要使用的 `Microsoft.SharePoint.Fakes` 之任何巢狀命名空間的測試類別命名空間指示詞。  
   
- **實作 SharePoint 方法的填充碼委派**  
+   **實作 SharePoint 方法的填充碼委派**  
   
- 在範例專案中，`GetAppointmentsForToday` 方法會呼叫 [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API 方法。  
+   在範例專案中，`GetAppointmentsForToday` 方法會呼叫 [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API 方法。  
   
 ```csharp  
 // method under test  
@@ -393,19 +393,19 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 ##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 從頭開始撰寫模擬測試和摘要  
  雖然先前章節描述的建立模擬和兩用測試的技術假設您要轉換現有的測試，但您也可以使用這些技術從頭開始撰寫測試。 下列清單摘要說明這些技術：  
   
--   若要在測試專案中使用模擬器，請將 Microsoft.SharePoint.Emulators NuGet 套件加入到該專案。  
+- 若要在測試專案中使用模擬器，請將 Microsoft.SharePoint.Emulators NuGet 套件加入到該專案。  
   
--   若要在測試方法中使用模擬器，請在該方法的開頭建立 `SharePointEmulationScope` 物件。 會模擬所有支援的 SharePoint 應用程式開發介面，直到已處置此範圍為止。  
+- 若要在測試方法中使用模擬器，請在該方法的開頭建立 `SharePointEmulationScope` 物件。 會模擬所有支援的 SharePoint 應用程式開發介面，直到已處置此範圍為止。  
   
--   撰寫您的測試程式碼，就如同您針對實際的 SharePoint 應用程式開發介面撰寫測試程式碼一樣。 模擬內容會自動將至 SharePoint 方法的呼叫繞道至其模擬器。  
+- 撰寫您的測試程式碼，就如同您針對實際的 SharePoint 應用程式開發介面撰寫測試程式碼一樣。 模擬內容會自動將至 SharePoint 方法的呼叫繞道至其模擬器。  
   
--   並非所有的 SharePoint 物件都是模擬的，而且某些模擬物件的方法並非都是模擬的。 當您使用非模擬物件或方法時，就會擲回 `NotSupportedException` 例外狀況。 如果發生這種情況，請明確建立此方法的 Fakes 填充碼委派，以傳回必要的行為。  
+- 並非所有的 SharePoint 物件都是模擬的，而且某些模擬物件的方法並非都是模擬的。 當您使用非模擬物件或方法時，就會擲回 `NotSupportedException` 例外狀況。 如果發生這種情況，請明確建立此方法的 Fakes 填充碼委派，以傳回必要的行為。  
   
--   若要建立兩用測試，請使用 `SharePointEmulationScope(EmulationMode)` 建構函式建立模擬範圍物件。 `EmulationMode` 值會指定要模擬 SharePoint 呼叫，還是針對實際 SharePoint 網站執行該呼叫。  
+- 若要建立兩用測試，請使用 `SharePointEmulationScope(EmulationMode)` 建構函式建立模擬範圍物件。 `EmulationMode` 值會指定要模擬 SharePoint 呼叫，還是針對實際 SharePoint 網站執行該呼叫。  
   
--   如果測試類別中的全部或大部分測試方法都是在模擬內容中執行，則您可以使用類別層級的 `TestInitialize` 屬性方法建立 `SharePointEmulationScope` 物件，以及使用類別層級欄位來設定模擬模式。 這會幫助您自動變更模擬模式。 然後使用 `TestCleanup` 屬性方法處置此範圍物件。  
+- 如果測試類別中的全部或大部分測試方法都是在模擬內容中執行，則您可以使用類別層級的 `TestInitialize` 屬性方法建立 `SharePointEmulationScope` 物件，以及使用類別層級欄位來設定模擬模式。 這會幫助您自動變更模擬模式。 然後使用 `TestCleanup` 屬性方法處置此範圍物件。  
   
- [本主題內容](#BKMK_In_this_topic)  
+  [本主題內容](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Example"></a> 範例  
  以下是合併上述各項 SharePoint 模擬器技術的最後一個範例：  

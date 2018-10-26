@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908778"
 ---
 # <a name="form-support-in-workflows"></a>在工作流程中的表單支援
   表單的四種可用工作流程中： 關聯、 初始化、 工作及修改。 這些表單類型可以根據 ASPX 表單或 InfoPath 表單。 支援層級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供特定的格式取決於許多因素下, 表所述。 如需工作流程表單類型的詳細資訊，請參閱[工作流程表單概觀](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 網站上。  
@@ -43,7 +43,7 @@ ms.locfileid: "36326076"
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]匯入至的 SharePoint 可重複使用工作流程中的 ASPX 或 InfoPath 表單上的不同表單類型的支援[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 |為表單類型|可重複使用已匯入從 SharePoint Designer ASPX 表單的工作流程|可重複使用已從 SharePoint Designer 匯入 InfoPath 表單的工作流程|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |關聯|-在表單中會參考*Elements.xml*工作流程檔案。<br />- *Elements.xml*當表單重新命名或刪除，或它的部署路徑變更時，已重構的工作流程檔案。|-表單會匯入，但不是能以參考*Elements.xml*工作流程。<br />- *Elements.xml*工作流程的檔案不在重構。|  
 |起始|-在表單中的工作流程所參考*Elements.xml*工作流程檔案。<br />- *Elements.xml*當表單重新命名或刪除，或它的部署路徑變更時，已重構的工作流程檔案。|-表單會匯入，但不是能以參考*Elements.xml*工作流程。<br />- *Elements.xml*工作流程的檔案不在重構。 **注意：** 規則和屬性必須新增和變更這個案例運作。|  
 |工作|-在表單中會參考*Elements.xml*工作流程檔案。<br />- *Elements.xml*工作流程的檔案不在重構。|-表單會匯入，但不是能以參考*Elements.xml*工作流程。<br />- *Elements.xml*工作流程的檔案不在重構。 **注意：** 規則和屬性必須新增和變更這個案例運作。|  

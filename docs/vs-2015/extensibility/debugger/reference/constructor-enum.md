@@ -17,12 +17,12 @@ ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6259f5cd5dce142364d455478a16e56e90116823
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 032eb96110d6bd41173dfc1e48c5b777829691a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876928"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

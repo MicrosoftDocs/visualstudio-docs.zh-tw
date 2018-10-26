@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927797"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞命令
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  
@@ -28,17 +28,17 @@ ms.locfileid: "46495254"
 ## <a name="register-standard-verbs"></a>註冊標準動詞命令  
  作業系統可辨識下列的標準動詞命令：  
   
--   開啟  
+- 開啟  
   
--   編輯  
+- 編輯  
   
--   播放  
+- 播放  
   
--   的  
+- 的  
   
--   預覽  
+- 預覽  
   
- 可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟 *.htm*檔案顯示在瀏覽器中，而編輯 *.htm*檔案啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
+  可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟 *.htm*檔案顯示在瀏覽器中，而編輯 *.htm*檔案啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
   
 > [!NOTE]
 >  註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938262"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -132,10 +132,10 @@ LSP 不包含有關如何提供文字顏色標示語言規格。 若要提供自
 
 4. 建立 *.pkgdef*檔案，並新增一行如下所示：
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. 以滑鼠右鍵按一下檔案，然後選取**屬性**。 變更**建置**動作來**內容**並**Include in VSIX**屬性設為 true。
 
@@ -295,40 +295,40 @@ namespace MockLanguageExtension
 
 1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如: 
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. JSON 檔案上按一下滑鼠右鍵，然後選取**屬性**。 變更**建置**動作 「 內容 」 和 「 Include in VSIX' 屬性設為 true。
 
 3. 實作 ConfigurationSections 並傳回 JSON 檔案中定義的設定的前置詞清單 （在 Visual Studio Code 中，這會對應至 package.json 中的組態區段名稱）：
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. 加入.pkgdef 檔案至專案 （加入新的文字檔，並將副檔名變更為.pkgdef）。 Pkgdef 檔案應該包含這項資訊：
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. .Pkgdef 檔上按一下滑鼠右鍵，然後選取**屬性**。 變更**建置**動作來**內容**並**Include in VSIX**屬性設為 true。
 
 6. 開啟*source.extension.vsixmanifest*檔案，並新增中的資產**資產** 索引標籤：
 
-  ![編輯 vspackage 資產](media/lsp-add-vspackage-asset.png)
+   ![編輯 vspackage 資產](media/lsp-add-vspackage-asset.png)
 
-  * **型別**: Microsoft.VisualStudio.VsPackage
-  * **來源**： 檔案系統上的
-  * **路徑**: [路徑您 *.pkgdef*檔案]
+   * **型別**: Microsoft.VisualStudio.VsPackage
+   * **來源**： 檔案系統上的
+   * **路徑**: [路徑您 *.pkgdef*檔案]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>使用者編輯的工作區設定
 
@@ -336,16 +336,16 @@ namespace MockLanguageExtension
 2. 使用者新增的檔案 *.vs*稱為資料夾*VSWorkspaceSettings.json*。
 3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如: 
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>啟用診斷追蹤
-可以啟用診斷追蹤，以用戶端與伺服器，這有助於進行問題偵錯之間的所有訊息都輸出。  若要啟用診斷追蹤，執行下列作業：
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>啟用診斷追蹤
+   可以啟用診斷追蹤，以用戶端與伺服器，這有助於進行問題偵錯之間的所有訊息都輸出。  若要啟用診斷追蹤，執行下列作業：
 
-1. 開啟或建立工作區的設定檔*VSWorkspaceSettings.json* （請參閱 「 編輯設定的工作區的使用者 」）。
-2. 設定 json 檔案中加入下面這一行：
+4. 開啟或建立工作區的設定檔*VSWorkspaceSettings.json* （請參閱 「 編輯設定的工作區的使用者 」）。
+5. 設定 json 檔案中加入下面這一行：
 
 ```json
 {

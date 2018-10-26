@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ed93b4acef31dd3b1be55983525ac8999c539c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869284"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 程式碼分析會使用內建的字典，來檢查拼字、 文法的情況下和其他的.NET Framework 方針的命名慣例中的錯誤程式碼中的識別項。 您可以建立自訂字典的 Xml 檔案，來新增、 移除或修改詞彙、 縮寫，以及內建的字典的縮略字。
@@ -61,17 +61,17 @@ ms.locfileid: "47860052"
 ## <a name="custom-dictionary-elements"></a>自訂字典的項目
  您可以修改程式碼分析字典的行為將詞彙新增為自訂字典中的下列元素的內部文字：
 
--   [字典/文字/辨識/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [字典/文字/辨識/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
--   [字典/文字/無法辨識的/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [字典/文字/無法辨識的/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
--   [字典/文字/取代/詞彙 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [字典/文字/取代/詞彙 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
--   [字典/文字/複合/詞彙 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [字典/文字/複合/詞彙 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
--   [字典/文字/DiscreteExceptions/詞彙](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [字典/文字/DiscreteExceptions/詞彙](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
--   [字典/首字母縮略字/CasingExceptions/縮寫](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [字典/首字母縮略字/CasingExceptions/縮寫](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/文字/辨識/Word
  若要併入的程式碼分析識別正確拼寫的詞彙之清單中的詞彙，請新增一詞做為字典/文字/Recognized/文字項目的內部文字。 字典/文字/Recognized/文字項目中的詞彙不區分大小寫。
@@ -89,7 +89,6 @@ ms.locfileid: "47860052"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Recognized/字典/文字節點中的條款適用於下列的程式碼分析規則：
@@ -124,7 +123,6 @@ ms.locfileid: "47860052"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  無法識別字典/文字節點中的條款適用於下列的程式碼分析規則：
@@ -148,11 +146,11 @@ ms.locfileid: "47860052"
 
  若要包含建議的替代詞彙警告中，替代 PreferredAlternate 在屬性中指定的詞彙項目。 如果您不想建議替代，您可以將屬性值保留空白。
 
--   已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。
+- 已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。
 
--   PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。
+- PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。
 
- **範例**
+  **範例**
 
 ```
 <Dictionary>
@@ -165,7 +163,6 @@ ms.locfileid: "47860052"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  已取代字典/文字節點中的條款適用於下列的程式碼分析規則：
@@ -183,11 +180,11 @@ ms.locfileid: "47860052"
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/文字/複合/詞彙 [@CompoundAlternate]
  內建的字典中識別為單一、 離散的詞彙，而不是複合詞彙的一些術語。 若要納入的複合字識別的程式碼分析的詞彙之清單中的詞彙，並指定正確的大小寫的詞彙，加入詞彙做為字典/文字/複合/詞彙項目的內部文字。 中的詞彙項目 CompoundAlternate 屬性，指定單字的大寫單字 （依照 pascal 命名法大小寫） 的第一個字母組成的複合詞彙。 請注意，內部文字中指定的詞彙會自動新增至字典/文字/DiscreteExceptions 清單。
 
--   已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。
+- 已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。
 
--   PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。
+- PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。
 
- **範例**
+  **範例**
 
 ```
 <Dictionary>
@@ -200,7 +197,6 @@ ms.locfileid: "47860052"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  字典/文字/化合物節點中的條款適用於下列的程式碼分析規則：
@@ -229,7 +225,6 @@ ms.locfileid: "47860052"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  DiscreteExceptions/字典/文字節點中的條款適用於下列的程式碼分析規則：
@@ -254,7 +249,6 @@ ms.locfileid: "47860052"
       </Acronyms>
       ...
 </Dictionary>
-
 ```
 
  字典/首字母縮略字/CasingExceptions 節點中的條款適用於下列的程式碼分析規則：

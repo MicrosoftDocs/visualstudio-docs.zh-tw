@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933153"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說： 建立使用快取的資料集的主版詳細資料關聯性
   本逐步解說會示範在工作表，來建立主從式關聯和快取資料，以便可以離線使用方案。  
@@ -57,34 +57,34 @@ ms.locfileid: "38808261"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立 Excel 活頁簿專案同名**我的主版詳細資料**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 建立 Excel 活頁簿專案同名**我的主版詳細資料**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
- Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的主版詳細資料**專案加入**方案總管 中**。  
+   Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的主版詳細資料**專案加入**方案總管 中**。  
   
 ## <a name="create-the-data-source"></a>建立資料來源  
  使用 [ **資料來源** ] 視窗將型別資料集加入專案。  
   
 ### <a name="to-create-the-data-source"></a>若要建立資料來源  
   
-1.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
+1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
   
-2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
+2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
   
-3.  選取 [**資料庫**，然後按一下**下一步]**。  
+3. 選取 [**資料庫**，然後按一下**下一步]**。  
   
-4.  選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。  
+4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。  
   
-5.  選取或建立連線後, 按一下 [**下一步]**。  
+5. 選取或建立連線後, 按一下 [**下一步]**。  
   
-6.  清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
+6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
   
-7.  依序展開**資料表**中的節點**資料庫物件**視窗。  
+7. 依序展開**資料表**中的節點**資料庫物件**視窗。  
   
-8.  選取**訂單**資料表並**Order Details**資料表。  
+8. 選取**訂單**資料表並**Order Details**資料表。  
   
 9. 按一下 [ **完成**]。  
   
- 精靈會新增兩個資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
+   精靈會新增兩個資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
   
 ## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表  
  在此步驟中，您會將已命名的範圍、 list 物件和兩個按鈕新增至第一個工作表。 首先，新增已命名的範圍及清單中的物件**Zdroje dat**視窗，讓它們自動繫結至資料來源。 接下來，新增按鈕等，從**工具箱**。  
@@ -109,30 +109,30 @@ ms.locfileid: "38808261"
   
 ### <a name="to-add-two-buttons"></a>若要新增兩個按鈕  
   
-1.  從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。  
+1. 從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。  
   
-     此欄位稱為`Button1`。  
+    此欄位稱為`Button1`。  
   
-2.  新增另一個<xref:System.Windows.Forms.Button>控制項加入儲存格**B3**工作表。  
+2. 新增另一個<xref:System.Windows.Forms.Button>控制項加入儲存格**B3**工作表。  
   
-     此欄位稱為`Button2`。  
+    此欄位稱為`Button2`。  
   
- 接下來，將標示要快取文件中的資料集。  
+   接下來，將標示要快取文件中的資料集。  
   
 ## <a name="cache-the-dataset"></a>快取資料集  
  將標示要由讓資料集，公開並設定快取文件中的資料集**CacheInDocument**屬性。  
   
 ### <a name="to-cache-the-dataset"></a>快取資料集  
   
-1.  選取  **NorthwindDataSet**元件匣中。  
+1. 選取  **NorthwindDataSet**元件匣中。  
   
-2.  在 **屬性**視窗中，變更**修飾詞**屬性設**公用**。  
+2. 在 **屬性**視窗中，變更**修飾詞**屬性設**公用**。  
   
-     在啟用快取之前，必須是公用資料集。  
+    在啟用快取之前，必須是公用資料集。  
   
-3.  變更**CacheInDocument**屬性設 **，則為 True**。  
+3. 變更**CacheInDocument**屬性設 **，則為 True**。  
   
- 下一個步驟是將文字加入至按鈕，並在 C# 中，加入程式碼來連結事件處理常式。  
+   下一個步驟是將文字加入至按鈕，並在 C# 中，加入程式碼來連結事件處理常式。  
   
 ## <a name="initialize-the-controls"></a>初始化的控制項  
  設定按鈕文字，並新增事件處理常式期間<xref:Microsoft.Office.Tools.Excel.Workbook.Startup>事件。  

@@ -1,5 +1,5 @@
 ---
-title: BP_RES_DATA_FLAGS |Microsoft 文件
+title: BP_RES_DATA_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08890a0be03329bd2c2c3469cc20c330223fb8a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e72ab80cb60e1d5d85a6059e387069d335c64856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917904"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-指定是否正在模擬資料中斷點，或實作中的硬體。  
+指定是否要模擬資料中斷點或實作中的硬體。  
   
 ## <a name="syntax"></a>語法  
   

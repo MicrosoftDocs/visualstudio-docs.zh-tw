@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor |Microsoft 文件
+title: IDebugFunctionObject::CreateObjectNoConstructor |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d641fa8dc0f999d55d177e9a3f48e0227e17f159
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d82df4cef343965d9fdf88357154a9a3a399d9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842153"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-建立沒有建構函式物件。  
+使用沒有建構函式建立物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int CreateObjectNoConstructor(
   
 #### <a name="parameters"></a>參數  
  `pClassObject`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表要建立之物件的類型。  
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要建立之物件的型別。  
   
  `ppObject`  
  [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表新建立的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法來建立物件，表示結構或複雜類型 （也就不需要建構函式） 的函式的參數所代表的執行個體[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
+ 呼叫這個方法來建立物件，表示結構或複雜型別 （也就不需要建構函式） 的函式的參數所表示的執行個體[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
   
  如果物件參數需要建構函式，呼叫[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)方法。  
   

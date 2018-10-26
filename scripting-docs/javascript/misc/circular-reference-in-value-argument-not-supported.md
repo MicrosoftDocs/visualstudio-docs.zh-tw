@@ -1,5 +1,5 @@
 ---
-title: 不支援數值引數中的循環參考 |Microsoft 文件
+title: 不支援的數值引數中的循環參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949418"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支援數值引數中的循環參考
-嘗試叫用`JSON.stringify`不是有效的值。 `value`引數、 陣列或物件，包含循環參考。  
+已嘗試叫用`JSON.stringify`不是有效的值。 `value`引數、 陣列或物件，包含循環參考。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 -   移除引數中的循環參考。  
   
 ## <a name="example"></a>範例  
- 在此範例中的程式碼會造成執行階段錯誤，因為`john`參考到`mary`和`mary`參考`john`。 若要移除循環參考，請移除或取消設定屬性`brother`從`mary`物件或`sister`屬性從`john`物件。  
+ 在此範例中的程式碼會造成執行階段錯誤，因為`john`參考`mary`並`mary`具有指向`john`。 若要移除循環參考，請移除或取消設定的屬性`brother`從`mary`物件或`sister`屬性從`john`物件。  
   
 ```JavaScript  
 var john = new Object();  

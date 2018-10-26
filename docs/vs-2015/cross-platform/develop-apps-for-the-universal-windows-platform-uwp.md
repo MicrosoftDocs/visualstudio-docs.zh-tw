@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909051"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ ms.locfileid: "49287088"
   
  以下是您需要的軟體清單：  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。  
   
- 安裝這個軟體之後，您也需要 [啟用 Windows 10 裝置](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 進行開發。 (您不再需要取得每部 Windows 10 裝置的開發人員授權)。  
+  安裝這個軟體之後，您也需要 [啟用 Windows 10 裝置](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 進行開發。 (您不再需要取得每部 Windows 10 裝置的開發人員授權)。  
   
- **Windows 8.1 和 Windows 7 支援**  
+  **Windows 8.1 和 Windows 7 支援**  
   
- 如果您選擇在非 Windows 10 平台上，使用 Visual Studio 2015 開發通用 Windows 應用程式，其限制如下：  
+  如果您選擇在非 Windows 10 平台上，使用 Visual Studio 2015 開發通用 Windows 應用程式，其限制如下：  
   
--   Windows 8.1：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您可以使用 Visual Studio 中的模擬器 (Emulator)，但無法使用模擬器 (Simulator)。  
+- Windows 8.1：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您可以使用 Visual Studio 中的模擬器 (Emulator)，但無法使用模擬器 (Simulator)。  
   
--   Windows 7：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您無法使用 Visual Studio 中的模擬器 (Emulator 或 Simulator)。  
+- Windows 7：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您無法使用 Visual Studio 中的模擬器 (Emulator 或 Simulator)。  
   
- 如果您的開發平台為 Windows 10，則只能使用 XAML 設計工具。  
+  如果您的開發平台為 Windows 10，則只能使用 XAML 設計工具。  
   
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式  
  從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  

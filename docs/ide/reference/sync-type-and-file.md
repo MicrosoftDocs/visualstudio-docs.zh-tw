@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58a4a1647912203fd1415176f4089904f8c70e0f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942318"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -39,30 +39,30 @@ ms.locfileid: "31947465"
 
    - C#: 
 
-    ![醒目提示的程式碼 - C#](media/synctype-highlight-cs.png)
+       ![醒目提示的程式碼 - C#](media/synctype-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 - Visual Basic](media/synctype-highlight-vb.png)
+       ![醒目提示的程式碼 - Visual Basic](media/synctype-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
    - **滑鼠**
-     - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
-     - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
 
    類型或檔案會重新命名。
 
    - C#：在下面的範例中，檔案 **MyClass.cs** 已重新命名為 **MyNewClass.cs** 以符合類型名稱。
 
-      ![內嵌結果 C#](media/synctype-result-cs.png)
+       ![內嵌結果 C#](media/synctype-result-cs.png)
 
    - Visual Basic：在下面的範例中，檔案 **Employee.vb** 已重新命名為 **Person.vb** 以符合類型名稱。
 
-      ![內嵌結果 Visual Basic](media/synctype-result-vb.png)
+       ![內嵌結果 Visual Basic](media/synctype-result-vb.png)
 
 > ！[注意] 這項重構尚不適用於.NET Standard 和.NET Core 專案。
 

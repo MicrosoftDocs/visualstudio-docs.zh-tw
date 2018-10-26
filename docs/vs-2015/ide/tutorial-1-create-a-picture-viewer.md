@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884962"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 您也會開始撰寫程式碼。 您將學習如何：  
   
--   建立新的專案。  
+- 建立新的專案。  
   
--   測試 (偵錯) 應用程式。  
+- 測試 (偵錯) 應用程式。  
   
--   將基本控制項 (例如核取方塊和按鈕) 加入至表單。  
+- 將基本控制項 (例如核取方塊和按鈕) 加入至表單。  
   
--   使用版面配置將控制項放置在表單上。  
+- 使用版面配置將控制項放置在表單上。  
   
--   將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。  
+- 將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。  
   
--   使用 IntelliSense 和程式碼片段撰寫程式碼。  
+- 使用 IntelliSense 和程式碼片段撰寫程式碼。  
   
--   撰寫事件處理常式方法。  
+- 撰寫事件處理常式方法。  
   
- 完成時，您的程式看起來類似下列圖片。  
+  完成時，您的程式看起來類似下列圖片。  
   
- ![您在本教學課程中建立的圖片](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-您在本教學課程中建立的圖片  
+  ![您在本教學課程中建立的圖片](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  您在本教學課程中建立的圖片  
   
- 若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。  
+  若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。  
   
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何：在 C# 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何：在 C# 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
   
 > [!NOTE]
 >  這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  

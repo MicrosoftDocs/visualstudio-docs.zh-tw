@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount |Microsoft 文件
+title: IDebugPendingBreakpoint2::SetPassCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21e39c54249add3b5d57cd6db907256122aab56b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c83a2498de2e939a41c07196a67c0844b7311668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846356"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
-設定或變更暫止中斷點相關聯的密碼計數。  
+設定或變更暫止中斷點相關聯的傳遞計數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,10 +45,10 @@ int SetPassCount(
  [in]A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含傳遞計數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。  
   
 ## <a name="remarks"></a>備註  
- 任何暫止中斷點先前關聯的傳遞計數將會遺失。 暫止中斷點，從這個繫結的所有中斷點會都呼叫以將其傳遞計數設定為`bpPassCount`參數。  
+ 任何暫止中斷點先前關聯的傳遞計數將會遺失。 所有的中斷點暫止的中斷點，從這個繫結會呼叫以將其傳遞計數設定為`bpPassCount`參數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

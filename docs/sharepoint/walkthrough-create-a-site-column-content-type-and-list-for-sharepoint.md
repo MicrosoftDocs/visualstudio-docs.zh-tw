@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900120"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和清單
   下列程序示範如何建立自訂的 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立會使用新的內容類型的清單。  
   
  本逐步解說包含下列工作：  
   
--   [建立自訂網站欄](#BKMK_CreatingCustSiteCols)。  
+- [建立自訂網站欄](#BKMK_CreatingCustSiteCols)。  
   
--   [建立自訂的內容類型](#BKMK_CreateCustContType)。  
+- [建立自訂的內容類型](#BKMK_CreateCustContType)。  
   
--   [建立清單](#BKMK_CreateList)。  
+- [建立清單](#BKMK_CreateList)。  
   
--   [建立清單](#BKMK_CreateList)。  
+- [建立清單](#BKMK_CreateList)。  
   
--   [測試應用程式](#BKMK_TestApp)。  
+- [測試應用程式](#BKMK_TestApp)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  

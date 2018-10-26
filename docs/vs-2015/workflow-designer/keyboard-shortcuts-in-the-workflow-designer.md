@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895336"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的所有核心功能都可以利用鍵盤存取。  
@@ -49,29 +49,29 @@ ms.locfileid: "49267796"
 ### <a name="flowchart"></a>流程圖  
  下列是透過鍵盤建構流程圖所使用的手勢。 就像在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的其餘部分，活動會使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 提供的全域工具箱快速鍵加入至設計工具介面。  
   
--   若要移動活動，請選取該活動並使用方向鍵重新定位。  
+- 若要移動活動，請選取該活動並使用方向鍵重新定位。  
   
--   若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。  
+- 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。  
   
--   若要將活動設為 [啟動] 節點中，使用**Set as StartNode**的內容功能表命令。  
+- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**的內容功能表命令。  
   
--   若要連接活動：  
+- 若要連接活動：  
   
-    1.  使用 Tab 鍵選取來源活動。  
+  1.  使用 Tab 鍵選取來源活動。  
   
-    2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
+  2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
   
-    3.  按 CTRL+E、S 將目的地活動加入至選取範圍。  
+  3.  按 CTRL+E、S 將目的地活動加入至選取範圍。  
   
-    4.  按 CTRL+E、F 加入從來源到目的地的連接線。  
+  4.  按 CTRL+E、F 加入從來源到目的地的連接線。  
   
- 有關使用鍵盤連接活動的附註：  
+  有關使用鍵盤連接活動的附註：  
   
--   只要先加入更多活動至選取範圍，再按 CTRL+E、F，就可以同時做多個連接。連接會以活動加入至選取範圍的順序來做。  
+- 只要先加入更多活動至選取範圍，再按 CTRL+E、F，就可以同時做多個連接。連接會以活動加入至選取範圍的順序來做。  
   
--   如果成對的活動無法連接，例如來源活動已經有傳出的連接，則選取範圍內活動之間的其他連接，只要有可能連接仍然會連接。  
+- 如果成對的活動無法連接，例如來源活動已經有傳出的連接，則選取範圍內活動之間的其他連接，只要有可能連接仍然會連接。  
   
--   當**FlowDecision**包含在選取項目和**FlowDecision**沒有傳出的連接器，連接器會放在 **，則為 True**分支。  
+- 當**FlowDecision**包含在選取項目和**FlowDecision**沒有傳出的連接器，連接器會放在 **，則為 True**分支。  
   
 ### <a name="expression-editing"></a>運算式編輯  
  根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 文字編輯的預設快速鍵適用於 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的運算式編輯器內部，並有下列限制：  

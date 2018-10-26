@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft 文件
+title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e8dcebf06c5779ee51b11e315c5277d99b4971
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: baf6f6b7643c3d24a0f691a95477ad805823e541
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922376"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-擷取泛型欄位相關聯的型別參數數目。  
+擷取一般欄位相關聯的型別參數數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,10 +43,10 @@ int TypeParamCount(
  [in、 out]型別參數數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果清單\<T >，這個方法會傳回 1，並在清單\<T1、 T2 >，這個方法會傳回 2。 如果沒有任何型別參數，這個方法會傳回 0。  
+ 如果清單\<T >，這個方法會傳回 1，而且，如果清單\<T1，T2 >，這個方法會傳回 2。 如果沒有任何型別參數，這個方法會傳回 0。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

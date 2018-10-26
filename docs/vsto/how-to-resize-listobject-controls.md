@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811499"
 ---
 # <a name="how-to-resize-listobject-controls"></a>如何： 調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。  
@@ -32,15 +32,15 @@ ms.locfileid: "35671377"
   
  本主題說明下列工作：  
   
--   [在設計階段調整 ListObject 控制項](#designtime)  
+- [在設計階段調整 ListObject 控制項](#designtime)  
   
--   [調整 ListObject 控制項，在文件層級專案中的執行階段的大小](#runtimedoclevel)  
+- [調整 ListObject 控制項，在文件層級專案中的執行階段的大小](#runtimedoclevel)  
   
--   [調整 ListObject 控制項，在 VSTO 增益集專案中的執行階段的大小](#runtimeaddin)  
+- [調整 ListObject 控制項，在 VSTO 增益集專案中的執行階段的大小](#runtimeaddin)  
   
- 如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
+  如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 將資料行加入資料繫結清單物件，在執行階段？](http://go.microsoft.com/fwlink/?LinkID=130318)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 將資料行加入資料繫結清單物件，在執行階段？](http://go.microsoft.com/fwlink/?LinkID=130318)。  
   
 ##  <a name="designtime"></a> 在設計階段調整 ListObject 控制項  
  若要調整清單的大小，您可以按一下並拖曳其中一個調整大小控點，或是在 [調整清單大小]  對話方塊中重新定義其大小。  

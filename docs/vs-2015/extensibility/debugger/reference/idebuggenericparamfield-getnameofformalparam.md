@@ -16,12 +16,12 @@ ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 054102c21aea4ebe6299db6369091e45c9e8fd55
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85c526f1764152ba66d9754b1b334d3637de7cc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817570"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

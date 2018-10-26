@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852bf01278829616a2e8592a8c6ffcbaa87d3628
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891189"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49232462"
   
  `ContinueOnError` 屬性可包含一或多個下列值：  
   
--   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。  
+- **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。  
   
--   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。  
+- **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。  
   
--   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。  
+- **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。  
   
- 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。  
+  只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。  
   
- `ContinueOnError` 的預設值為 `ErrorAndStop`。 如果將屬性設為 `ErrorAndStop`，就會明確地針對任何讀取專案檔的人做出此行為。  
+  `ContinueOnError` 的預設值為 `ErrorAndStop`。 如果將屬性設為 `ErrorAndStop`，就會明確地針對任何讀取專案檔的人做出此行為。  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830739"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
 ## <a name="intellisense-in-an-xslt-document"></a>XSLT 文件中的 IntelliSense  
  在您將具名範本或屬性加入至 XSLT 文件後，即可使用 IntelliSense 插入下列內容：  
   
--   屬性集名稱。  
+- 屬性集名稱。  
   
--   範本模式。  
+- 範本模式。  
   
--   範本名稱。  
+- 範本名稱。  
   
--   指定模式的參數名稱。‏  
+- 指定模式的參數名稱。‏  
   
--   指定具名範本的參數名稱。‏  
+- 指定具名範本的參數名稱。‏  
   
- 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。  
+  如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。  
   
 ## <a name="auto-completion"></a>自動完成  
  XML 編輯器還可藉由填入必要的 XML 語法，使編輯 XML 變得更容易。 例如，如果您鍵入下列開始標記：  
@@ -72,19 +72,19 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
  同樣地，XML 編輯器還會自動插入下列 XML 語法：  
   
--   結束處理指示：`?>`  
+- 結束處理指示：`?>`  
   
--   結束 CDATA 區塊：`]]>`  
+- 結束 CDATA 區塊：`]]>`  
   
--   結束註解：`-->`  
+- 結束註解：`-->`  
   
--   結束 DTD 宣告：`>`  
+- 結束 DTD 宣告：`>`  
   
- 如果您從 IntelliSense 清單選取命名空間限定的項目或屬性，且該項目或屬性的命名空間尚不在範圍內，則 XML 編輯器還具有插入命名空間宣告的功能。  
+  如果您從 IntelliSense 清單選取命名空間限定的項目或屬性，且該項目或屬性的命名空間尚不在範圍內，則 XML 編輯器還具有插入命名空間宣告的功能。  
   
- 例如，如果您從 IntelliSense 清單中選取 `e:Book` 項目，該清單中的前置詞繫結至尚未在文件中宣告的 `http://books` 命名空間，則 XML 編輯器會插入必要的命名空間宣告。 下列是產生的 XML 文字：  
+  例如，如果您從 IntelliSense 清單中選取 `e:Book` 項目，該清單中的前置詞繫結至尚未在文件中宣告的 `http://books` 命名空間，則 XML 編輯器會插入必要的命名空間宣告。 下列是產生的 XML 文字：  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>括號對稱  
  XML 編輯器提供括號反白顯示，以將您剛剛關閉之項目的立即回應提供給您。 您也可以使用鍵盤快速鍵 (CTRL+])，從一個括號跳至對稱的括號。  

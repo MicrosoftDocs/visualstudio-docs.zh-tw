@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942565"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本的 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49199533"
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>若要自訂預設網頁瀏覽器首頁  
   
-1.  在 MyVSShellStub.Application.pkgdef 檔案中，變更`DefaultHomePage`項目值 」 http://www.microsoft.com"。  
+1. 在 MyVSShellStub.Application.pkgdef 檔案中，變更`DefaultHomePage`項目值 」<http://www.microsoft.com>"。  
   
-2.  重建 MyVSShellStub 專案。  
+2. 重建 MyVSShellStub 專案。  
   
-3.  建置方案並開始偵錯。  
+3. 建置方案並開始偵錯。  
   
-4.  在 **檢視 / 其他 Windows**，按一下**網頁瀏覽器**。 **網頁瀏覽器**視窗會顯示 Microsoft Corporation 的 [首頁] 頁面。  
+4. 在 **檢視 / 其他 Windows**，按一下**網頁瀏覽器**。 **網頁瀏覽器**視窗會顯示 Microsoft Corporation 的 [首頁] 頁面。  
   
 ## <a name="removing-the-print-command"></a>移除列印命令  
  .Vsct 檔在獨立模式的 shell UI 專案中包含的一組宣告的形式`<Define name=No_`*項目*`>`，其中*項目*是其中一個標準的 Visual Studio 功能表和命令。  
@@ -173,26 +173,26 @@ ms.locfileid: "49199533"
 ## <a name="deploying-the-isolated-shell-application"></a>部署獨立的 Shell 應用程式  
  您可以建立安裝專案部署到目標電腦您 isolated 的 shell 應用程式。 您必須指定這些項目：  
   
--   在目標電腦上的檔案和資料夾的版面配置。  
+- 在目標電腦上的檔案和資料夾的版面配置。  
   
--   保證在.NET Framework 和 Visual Studio shell 執行階段的啟動條件會安裝在目標電腦上。  
+- 保證在.NET Framework 和 Visual Studio shell 執行階段的啟動條件會安裝在目標電腦上。  
   
- 在下列程序中，您必須在電腦上安裝 InstallShield Limited Edition。  
+  在下列程序中，您必須在電腦上安裝 InstallShield Limited Edition。  
   
 #### <a name="to-create-the-setup-project"></a>若要建立安裝專案  
   
-1.  在 **方案總管**，以滑鼠右鍵按一下方案節點，然後按一下**加入新的專案**。  
+1. 在 **方案總管**，以滑鼠右鍵按一下方案節點，然後按一下**加入新的專案**。  
   
-2.  在 **新的專案**對話方塊方塊中，展開**其他專案類型**，然後選取**安裝和部署**。 選取 InstallShield 範本。 將新專案命名`MySetup`，然後按一下  **確定**。  
+2. 在 **新的專案**對話方塊方塊中，展開**其他專案類型**，然後選取**安裝和部署**。 選取 InstallShield 範本。 將新專案命名`MySetup`，然後按一下  **確定**。  
   
-3.  如果已經安裝 InstallShield 限量版，則繼續下一個步驟。  
+3. 如果已經安裝 InstallShield 限量版，則繼續下一個步驟。  
   
-     如果尚未安裝 InstallShield 限量版，則會出現 InstallShield 下載頁面。 請遵循指示下載並安裝此產品中，選擇適用於您的 Visual Studio 版本的 InstallShield 的版本。 您必須決定是否要註冊的 InstallShield 安裝，或使用它作為一份評估。 完成安裝之後，您必須重新啟動 Visual Studio。  
+    如果尚未安裝 InstallShield 限量版，則會出現 InstallShield 下載頁面。 請遵循指示下載並安裝此產品中，選擇適用於您的 Visual Studio 版本的 InstallShield 的版本。 您必須決定是否要註冊的 InstallShield 安裝，或使用它作為一份評估。 完成安裝之後，您必須重新啟動 Visual Studio。  
   
-    > [!IMPORTANT]
-    >  建立 InstallShield 專案之前，您必須以系統管理員身分啟動 Visual Studio。 如果不這麼做，您會收到錯誤，當您建置專案。  
+   > [!IMPORTANT]
+   >  建立 InstallShield 專案之前，您必須以系統管理員身分啟動 Visual Studio。 如果不這麼做，您會收到錯誤，當您建置專案。  
   
- 接下來的步驟示範如何設定安裝專案。  
+   接下來的步驟示範如何設定安裝專案。  
   
 > [!IMPORTANT]
 >  請確定您已設定安裝專案之前可能建立獨立的 shell 專案的發行組態至少一次。  

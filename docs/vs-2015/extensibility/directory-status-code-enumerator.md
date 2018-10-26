@@ -16,12 +16,12 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aaa983b6365e5d8b1c0969b03ebacd5f6b0f8f94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858507"
 ---
 # <a name="directory-status-code-enumerator"></a>目錄狀態碼列舉值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863278"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說︰顯示 QuickInfo 工具提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
   
  QuickInfo 範例中的，在此逐步解說會顯示工具提示，當使用者將指標移方法名稱。 這項設計會要求您實作這些四個介面：  
   
--   來源介面  
+- 來源介面  
   
--   來源提供者介面  
+- 來源提供者介面  
   
--   控制器介面  
+- 控制器介面  
   
--   控制器提供者介面  
+- 控制器提供者介面  
   
- 來源和控制站提供者是 Managed Extensibility Framework (MEF) 元件部分，而且會負責將匯出的來源和控制器類別，並匯入服務和訊息代理程式這類<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，這會建立的工具提示文字緩衝區，而<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，這會觸發 QuickInfo 工作階段。  
+  來源和控制站提供者是 Managed Extensibility Framework (MEF) 元件部分，而且會負責將匯出的來源和控制器類別，並匯入服務和訊息代理程式這類<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，這會建立的工具提示文字緩衝區，而<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，這會觸發 QuickInfo 工作階段。  
   
- 在此範例中，QuickInfo 來源使用硬式編碼清單的方法名稱和描述，但在完整的實作中，語言服務和語言文件，負責提供該內容。  
+  在此範例中，QuickInfo 來源使用硬式編碼清單的方法名稱和描述，但在完整的實作中，語言服務和語言文件，負責提供該內容。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898406"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何： 將屬性加入至 SharePoint 專案
   若要將屬性加入至任何 SharePoint 專案，您可以使用專案擴充功能。 屬性會出現在**屬性**視窗中選取專案時**方案總管 中**。  
@@ -48,11 +48,11 @@ ms.locfileid: "36758555"
   
  若要保存屬性值，來變更**設定**屬性存取子會使用下列 Api:  
   
--   `CustomUserFileProperty` 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>屬性，以將其值儲存到專案使用者選項檔。  
+- `CustomUserFileProperty` 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>屬性，以將其值儲存到專案使用者選項檔。  
   
--   `CustomProjectFileProperty` 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法，將其值儲存至專案檔。  
+- `CustomProjectFileProperty` 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法，將其值儲存至專案檔。  
   
- 如需這些檔案中保存資料的詳細資訊，請參閱[將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+  如需這些檔案中保存資料的詳細資訊，請參閱[將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為  
  您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：  

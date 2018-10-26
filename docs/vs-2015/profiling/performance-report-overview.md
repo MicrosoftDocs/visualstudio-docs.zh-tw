@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845845"
 ---
 # <a name="performance-report-overview"></a>效能報告概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49290429"
 ### <a name="callercallee-view"></a>呼叫端/被呼叫端檢視  
  [呼叫者/被呼叫者] 檢視顯示個別函式的呼叫樹狀圖。 此檢視分為三個部分：  
   
--   目標函式會顯示在檢視的中間。  
+- 目標函式會顯示在檢視的中間。  
   
--   呼叫該函式的函式 (呼叫者) 會顯示在目標函式上方。  
+- 呼叫該函式的函式 (呼叫者) 會顯示在目標函式上方。  
   
--   目標函式呼叫的函式 (被呼叫者) 會顯示在目標下方。  
+- 目標函式呼叫的函式 (被呼叫者) 會顯示在目標下方。  
   
- 您可以按兩下呼叫的清單或被呼叫者清單來選取不同的函式。 如需詳細資訊，請參閱[呼叫者/被呼叫者檢視](../profiling/caller-callee-view.md)。  
+  您可以按兩下呼叫的清單或被呼叫者清單來選取不同的函式。 如需詳細資訊，請參閱[呼叫者/被呼叫者檢視](../profiling/caller-callee-view.md)。  
   
 ### <a name="call-tree-view"></a>呼叫樹狀圖檢閱  
  [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點會列出它所呼叫的所有函式，以及這些函式呼叫的相關效能資料。  

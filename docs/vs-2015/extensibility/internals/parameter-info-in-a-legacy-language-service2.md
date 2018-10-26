@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887562"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>剖析器中支援的參數資訊工具提示  
  <xref:Microsoft.VisualStudio.Package.Source>類別會做出一些假設的內容<xref:Microsoft.VisualStudio.Package.AuthoringScope>和<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別時的參數資訊工具提示會顯示，並且會更新。  
   
--   指定剖析器<xref:Microsoft.VisualStudio.Package.ParseReason>輸入參數清單的起點字元時。  
+- 指定剖析器<xref:Microsoft.VisualStudio.Package.ParseReason>輸入參數清單的起點字元時。  
   
--   指定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>物件是參數清單開始字元之後，立即。 剖析器必須收集可在所有的方法宣告的簽章的位置，並將它們儲存在您的版本中的清單<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 這份清單包含方法名稱、 方法型別 （或傳回型別），以及一份可用的參數。 這份清單稍後搜尋的方法簽章或簽章，以顯示參數資訊工具提示中。  
+- 指定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>物件是參數清單開始字元之後，立即。 剖析器必須收集可在所有的方法宣告的簽章的位置，並將它們儲存在您的版本中的清單<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 這份清單包含方法名稱、 方法型別 （或傳回型別），以及一份可用的參數。 這份清單稍後搜尋的方法簽章或簽章，以顯示參數資訊工具提示中。  
   
- 剖析器必須再剖析由指定的行<xref:Microsoft.VisualStudio.Package.ParseRequest>物件來收集輸入的方法，以及使用者過程的進展的名稱是輸入參數。 藉由傳遞至方法的名稱即可達成<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件，然後再呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>剖析方法的參數清單開始字元時，呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>方法時的參數清單下一個字元是剖析，而最後呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>方法剖析的參數清單結尾字元時。 會由使用這些方法呼叫的結果<xref:Microsoft.VisualStudio.Package.Source>類別，以適當地更新參數資訊工具提示。  
+  剖析器必須再剖析由指定的行<xref:Microsoft.VisualStudio.Package.ParseRequest>物件來收集輸入的方法，以及使用者過程的進展的名稱是輸入參數。 藉由傳遞至方法的名稱即可達成<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件，然後再呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>剖析方法的參數清單開始字元時，呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>方法時的參數清單下一個字元是剖析，而最後呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>方法剖析的參數清單結尾字元時。 會由使用這些方法呼叫的結果<xref:Microsoft.VisualStudio.Package.Source>類別，以適當地更新參數資訊工具提示。  
   
 ### <a name="example"></a>範例  
  以下是文字的使用者可能輸入行。 這一行下方的數字會指出哪一個步驟由剖析器 （假設剖析將從左到右） 的一行中該位置。 這裡的假設是之前, 的所有項目已經過剖析方法簽章，包括 「 testfunc"方法簽章。  

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832098"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入項目
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。  
@@ -41,40 +41,40 @@ ms.locfileid: "37118623"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 不支援匯入在下列應用程式中建立的方案：  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- 雖然您經常可以成功匯入這些應用程式所建立的解決方案，但這項功能並未經過測試且不受支援。  
+  雖然您經常可以成功匯入這些應用程式所建立的解決方案，但這項功能並未經過測試且不受支援。  
   
 ## <a name="item-import-restrictions"></a>項目匯入限制
  雖然大部分的 SharePoint 項目可以匯入的現有 *.wsp*檔案中，下列項目不支援，而且可能需要修改才能正確運作：  
   
--   BDC 實體  
+- BDC 實體  
   
--   程式碼工作流程關聯項目  
+- 程式碼工作流程關聯項目  
   
--   程式碼工作流程  
+- 程式碼工作流程  
   
--   視覺 Web 組件 (.ascx)  
+- 視覺 Web 組件 (.ascx)  
   
--   Web 服務 (*.asmx*)  
+- Web 服務 (*.asmx*)  
   
--   內容類型繫結  
+- 內容類型繫結  
   
--   事件接收器  
+- 事件接收器  
   
--   清單定義 (範本)  
+- 清單定義 (範本)  
   
--   網站定義  
+- 網站定義  
   
- 當您匯出的解決方案，從[!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)]或是[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]，這些項目會自動從排除 *.wsp*檔案。 不過，其他 *.wsp*從受支援的工具產生的檔案可能會包含這些項目。 (請參閱本主題中稍早的＜支援的 SharePoint 方案＞。)  
+  當您匯出的解決方案，從[!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)]或是[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]，這些項目會自動從排除 *.wsp*檔案。 不過，其他 *.wsp*從受支援的工具產生的檔案可能會包含這些項目。 (請參閱本主題中稍早的＜支援的 SharePoint 方案＞。)  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>當您匯入方案時，會發生什麼事
  當您匯入匯入 SharePoint 方案套件範本後，方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會將所有的內容複製 *.wsp*檔案並嘗試調解並保留任意數目的關聯和參考之間匯入項目和其檔案越好。  

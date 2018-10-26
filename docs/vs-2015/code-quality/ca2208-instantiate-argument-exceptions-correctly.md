@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f6505d7242fde714a5757bd709fe99b376e4a974
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 55789b7d5b4b1e462b715649b7583299b9f02e6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825598"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208：請正確執行個體化引數例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|

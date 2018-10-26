@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Next |Microsoft 文件'
+title: 'Idiaenumsymbols:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867477"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-擷取指定的數目的列舉順序中的符號。  
+擷取指定的列舉型別序列中的符號數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT Next (
  [in]要擷取列舉值中的符號數目。  
   
  rgelt  
- [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表所要的符號。  
+ [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表所需的符號。  
   
  pceltFetched  
  [out]擷取列舉值中傳回符號的數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`是否有任何符號。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`有沒有更多的符號。 反之則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   

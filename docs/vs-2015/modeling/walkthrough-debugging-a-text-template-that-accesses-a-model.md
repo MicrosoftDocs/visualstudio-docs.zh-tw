@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924885"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "49220086"
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案  
  在此程序中，您可以建立具有下列特性的特定領域語言解決方案：  
   
--   名稱： DebuggingTestLanguage  
+- 名稱： DebuggingTestLanguage  
   
--   解決方案範本： 最小語言  
+- 解決方案範本： 最小語言  
   
--   副檔名：.ddd  
+- 副檔名：.ddd  
   
--   公司名稱： Fabrikam  
+- 公司名稱： Fabrikam  
   
- 如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+  如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 ## <a name="creating-a-text-template"></a>建立文字範本  
  將文字範本加入至您的方案。  

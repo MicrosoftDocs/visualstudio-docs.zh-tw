@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers |Microsoft 文件
+title: IDebugProperty::EnumMembers |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924235"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 列舉屬性的成員。  
@@ -47,13 +47,13 @@ HRESULT EnumMembers (
  [in]用於解譯任何數字資訊的基數。  
   
  `refiid`  
- [in]此 IID 會傳遞用於篩選的列舉值。 IID 是其中一個`IDebugPropertyEnumType`介面繼承自`IDebugPropertyEnumType_All`。  
+ [in]此 IID 為篩選的列舉值傳遞。 IID 是其中一個`IDebugPropertyEnumType`介面繼承自`IDebugPropertyEnumType_All`。  
   
  `ppEnum`  
  [out]傳回`IEnumDebugPropertyInfo`列舉的成員屬性的介面。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回有效`HRESULT`，通常`S_OK`。  
+ 會傳回有效`HRESULT`，通常是`S_OK`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   

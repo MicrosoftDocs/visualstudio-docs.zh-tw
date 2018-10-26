@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895739"
 ---
 # <a name="layer-diagrams-reference"></a>圖層圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ ms.locfileid: "49248309"
   
  您可以使用分層圖來幫助您執行下列工作：  
   
--   溝通系統的現有或預期邏輯架構。  
+- 溝通系統的現有或預期邏輯架構。  
   
--   探索您現有程式碼和預期架構之間的衝突。  
+- 探索您現有程式碼和預期架構之間的衝突。  
   
--   當重構、更新或發展您的系統時，以視覺化方式檢視變更對預期架構的影響。  
+- 當重構、更新或發展您的系統時，以視覺化方式檢視變更對預期架構的影響。  
   
--   在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。  
+- 在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。  
   
- 本主題描述分層圖中可以使用的項目。 如需詳細資訊，有關如何建立和繪製分層圖，請參閱[分層圖： 方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[典範與實例的站台](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+  本主題描述分層圖中可以使用的項目。 如需詳細資訊，有關如何建立和繪製分層圖，請參閱[分層圖： 方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[典範與實例的站台](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
 ## <a name="reading-layer-diagrams"></a>閱讀分層圖  
  ![分層圖上的項目](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ ms.locfileid: "49248309"
 ##  <a name="Explorer"></a> 圖層總管  
  您可以將每個圖層連結到方案中的成品，例如專案、類別、命名空間、專案檔和您軟體的其他部分。 圖層上的數字顯示連結至該圖層的成品數目。 不過，當閱讀圖層上的成品數時，請記住下列：  
   
--   如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。  
+- 如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。  
   
-     例如，如果圖層連結到單一命名空間，即使命名空間包含類別，連結的成品數目仍為 1。 如果圖層也有命名空間中每個類別的連結，則數字將包含這些已連結的類別。  
+   例如，如果圖層連結到單一命名空間，即使命名空間包含類別，連結的成品數目仍為 1。 如果圖層也有命名空間中每個類別的連結，則數字將包含這些已連結的類別。  
   
--   如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。  
+- 如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。  
   
- 如需連結圖層與成品的詳細資訊，請參閱：  
+  如需連結圖層與成品的詳細資訊，請參閱：  
   
--   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)  
+- [分層圖：方針](../modeling/layer-diagrams-guidelines.md)  
   
--   [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
+- [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>檢查連結的成品  
   

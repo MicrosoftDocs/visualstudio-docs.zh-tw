@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940576"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio 中的 Just-In-Time 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ ms.locfileid: "49294043"
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>若要啟用或停用 Just-In-Time 偵錯  
   
-1.  開啟 Visual Studio。 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 開啟 Visual Studio。 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 **選項**對話方塊中，選取**偵錯**資料夾。  
+2. 在 **選項**對話方塊中，選取**偵錯**資料夾。  
   
-3.  在 **偵錯**資料夾中，選取**Just In Time**頁面。  
+3. 在 **偵錯**資料夾中，選取**Just In Time**頁面。  
   
-4.  在 **啟用的 Just-In-Time 偵錯這些程式碼類型**方塊中，選取或清除相關的程式類型：**受控**，**原生**，或**指令碼**.  
+4. 在 **啟用的 Just-In-Time 偵錯這些程式碼類型**方塊中，選取或清除相關的程式類型：**受控**，**原生**，或**指令碼**.  
   
-     若要在啟用 Just-In-Time 偵錯之後加以停用，您必須以系統管理員權限執行。 啟用 Just-In-Time 偵錯會設定一個登錄機碼，您必須使用系統管理員權限才能變更該機碼。  
+    若要在啟用 Just-In-Time 偵錯之後加以停用，您必須以系統管理員權限執行。 啟用 Just-In-Time 偵錯會設定一個登錄機碼，您必須使用系統管理員權限才能變更該機碼。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定 **Deploying Office Solutions**]。  
   
- 即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。  
+   即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>若要編輯登錄來停用 Just-In-Time 偵錯  
   
@@ -187,7 +187,7 @@ static void Main(string[] args)
   
      當您嘗試附加至另一個使用者身分執行處理序時，就會發生此錯誤。  
   
-     若要解決這個問題，請啟動 Visual Studio 中，開啟**připojit k procesu**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。  
+     若要解決這個問題，請啟動 Visual Studio 中，開啟**附加至處理序**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。  
   
 -   **無法啟動偵錯工具，因為沒有使用者登入。**  
   

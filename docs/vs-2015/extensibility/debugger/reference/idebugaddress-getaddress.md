@@ -17,12 +17,12 @@ ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ddb3b6e3d8055dd9a5b6304cf57a355986706b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 323c3e8ea13b7809090d239acfaf5772b9e5b2d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839475"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

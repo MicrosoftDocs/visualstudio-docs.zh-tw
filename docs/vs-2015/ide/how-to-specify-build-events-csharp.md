@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872014"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,75 +78,75 @@ ms.locfileid: "49297287"
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>建立 .exe 命令以變更應用程式資訊清單  
   
-1.  建立命令的主控台應用程式。 從 [檔案] 功能表，指向 [新增]，然後按一下 [專案]。  
+1. 建立命令的主控台應用程式。 從 [檔案] 功能表，指向 [新增]，然後按一下 [專案]。  
   
-2.  在 [新增專案] 對話方塊中，展開 [Visual C#]、依序按一下 [Windows] 和 [主控台應用程式] 範本。 將專案命名為 `ChangeOSVersionCS`。  
+2. 在 [新增專案] 對話方塊中，展開 [Visual C#]、依序按一下 [Windows] 和 [主控台應用程式] 範本。 將專案命名為 `ChangeOSVersionCS`。  
   
-3.  在 Program.cs 中，將下面這行新增在檔案最上方的另一個 `using` 陳述式：  
+3. 在 Program.cs 中，將下面這行新增在檔案最上方的另一個 `using` 陳述式：  
   
-    ```  
-    using System.Xml;  
-    ```  
+   ```  
+   using System.Xml;  
+   ```  
   
-4.  在 `ChangeOSVersionCS` 命名空間中，將 `Program` 類別實作取代為下列程式碼：  
+4. 在 `ChangeOSVersionCS` 命名空間中，將 `Program` 類別實作取代為下列程式碼：  
   
-    ```  
-    class Program  
-    {  
-       /// <summary>  
-       /// This function will set the minimum operating system version for a ClickOnce application.  
-       /// </summary>  
-       /// <param name="args">  
-       /// Command Line Arguments:  
-       /// 0 - Path to application manifest (.exe.manifest).  
-       /// 1 - Version of OS  
-       ///</param>  
-       static void Main(string[] args)  
-       {  
-          string applicationManifestPath = args[0];  
-          Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
+   ```  
+   class Program  
+   {  
+      /// <summary>  
+      /// This function will set the minimum operating system version for a ClickOnce application.  
+      /// </summary>  
+      /// <param name="args">  
+      /// Command Line Arguments:  
+      /// 0 - Path to application manifest (.exe.manifest).  
+      /// 1 - Version of OS  
+      ///</param>  
+      static void Main(string[] args)  
+      {  
+         string applicationManifestPath = args[0];  
+         Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
   
-          // Get version name.  
-          Version osVersion = null;  
-          if (args.Length >=2 ){  
-             osVersion = new Version(args[1]);  
-          }else{  
-             throw new ArgumentException("OS Version not specified.");  
-          }  
-          Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
+         // Get version name.  
+         Version osVersion = null;  
+         if (args.Length >=2 ){  
+            osVersion = new Version(args[1]);  
+         }else{  
+            throw new ArgumentException("OS Version not specified.");  
+         }  
+         Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
   
-          XmlDocument document;  
-          XmlNamespaceManager namespaceManager;  
-          namespaceManager = new XmlNamespaceManager(new NameTable());  
-          namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
-          namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
+         XmlDocument document;  
+         XmlNamespaceManager namespaceManager;  
+         namespaceManager = new XmlNamespaceManager(new NameTable());  
+         namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
+         namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
   
-          document = new XmlDocument();  
-          document.Load(applicationManifestPath);  
+         document = new XmlDocument();  
+         document.Load(applicationManifestPath);  
   
-          string baseXPath;  
-          baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
+         string baseXPath;  
+         baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
   
-          // Change minimum required operating system version.  
-          XmlNode node;  
-          node = document.SelectSingleNode(baseXPath, namespaceManager);  
-          node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
-          node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
-          node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
-          node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
+         // Change minimum required operating system version.  
+         XmlNode node;  
+         node = document.SelectSingleNode(baseXPath, namespaceManager);  
+         node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
+         node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
+         node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
+         node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
   
-          document.Save(applicationManifestPath);  
-       }  
-    }  
-    ```  
+         document.Save(applicationManifestPath);  
+      }  
+   }  
+   ```  
   
-     命令接受兩個引數：應用程式資訊清單的路徑 (也就是建置程序建立資訊清單的資料夾，通常為 Projectname.publish)，以及新的作業系統版本。  
+    命令接受兩個引數：應用程式資訊清單的路徑 (也就是建置程序建立資訊清單的資料夾，通常為 Projectname.publish)，以及新的作業系統版本。  
   
-5.  建置專案。 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+5. 建置專案。 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-6.  將 .exe 檔案 (例如 `C:\TEMP\ChangeOSVersionVB.exe`) 複製到目錄。  
+6. 將 .exe 檔案 (例如 `C:\TEMP\ChangeOSVersionVB.exe`) 複製到目錄。  
   
- 接下來，在建置後事件中叫用此命令，以修改應用程式資訊清單。  
+   接下來，在建置後事件中叫用此命令，以修改應用程式資訊清單。  
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>叫用建置後事件，以修改應用程式資訊清單  
   

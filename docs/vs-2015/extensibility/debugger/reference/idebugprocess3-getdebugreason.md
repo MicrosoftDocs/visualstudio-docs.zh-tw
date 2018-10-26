@@ -17,12 +17,12 @@ ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e92b1ac359db329ac62a8e7ad9a4559aeff5002
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0e64bcc61c701d775e50571feb6c3f5cceca22bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884195"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

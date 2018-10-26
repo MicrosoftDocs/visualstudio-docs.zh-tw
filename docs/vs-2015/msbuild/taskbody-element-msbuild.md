@@ -22,12 +22,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bdf658dac69c6d048e568d9854b2cd334780fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb6121a6fc2260ac988552433ee847b13abc32d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934141"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

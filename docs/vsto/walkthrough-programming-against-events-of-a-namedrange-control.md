@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812514"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說： 針對 NamedRange 控制項的事件進行程式設計
   本逐步解說示範如何新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，Microsoft Office Excel 工作表並對其事件，藉由使用 Visual Studio 中 Office 開發工具的程式。  
@@ -87,15 +87,15 @@ ms.locfileid: "35671623"
   
 ### <a name="to-add-text-to-your-worksheet"></a>將文字加入工作表  
   
-1.  在資料格中**A1**，輸入下列文字：  
+1. 在資料格中**A1**，輸入下列文字：  
   
-     **這是 NamedRange 控制項的範例。**  
+    **這是 NamedRange 控制項的範例。**  
   
-2.  在資料格中**A3** (左邊的`namedRange2`)，輸入下列文字：  
+2. 在資料格中**A3** (左邊的`namedRange2`)，輸入下列文字：  
   
-     **事件：**  
+    **事件：**  
   
- 在下列章節中，您將撰寫程式碼，將文字插入`namedRange2`，並修改的屬性`namedRange2`控制項以回應<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>，並<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件`namedRange1`。  
+   在下列章節中，您將撰寫程式碼，將文字插入`namedRange2`，並修改的屬性`namedRange2`控制項以回應<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>，並<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件`namedRange1`。  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>加入程式碼以回應 BeforeDoubleClick 事件  
   

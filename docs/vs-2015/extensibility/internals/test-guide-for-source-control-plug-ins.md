@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873548"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>原始檔控制外掛程式測試指南
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ ms.locfileid: "49219579"
  Web 專案  
  有四種類型的 Web 專案： 檔案系統、 本機 IIS，遠端站台和 FTP。  
   
--   本機路徑上建立檔案系統的專案，但它們不需要的 「 網際網路資訊服務 (IIS) 」，因為它們透過 UNC 路徑，在內部存取，而且可以放在 IDE 中，非常類似用戶端專案的原始檔控制下進行安裝。  
+- 本機路徑上建立檔案系統的專案，但它們不需要的 「 網際網路資訊服務 (IIS) 」，因為它們透過 UNC 路徑，在內部存取，而且可以放在 IDE 中，非常類似用戶端專案的原始檔控制下進行安裝。  
   
--   本機 IIS 專案搭配使用指向本機電腦的 URL 安裝在同一部電腦上，且會存取 IIS。  
+- 本機 IIS 專案搭配使用指向本機電腦的 URL 安裝在同一部電腦上，且會存取 IIS。  
   
--   遠端站台的專案也會建立在 IIS 的服務，但它們被放在原始檔控制在 IIS 伺服器電腦上，而不是從內部[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
+- 遠端站台的專案也會建立在 IIS 的服務，但它們被放在原始檔控制在 IIS 伺服器電腦上，而不是從內部[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
   
--   FTP 專案透過遠端 FTP 伺服器存取，但無法將它們放在原始檔控制。  
+- FTP 專案透過遠端 FTP 伺服器存取，但無法將它們放在原始檔控制。  
   
- 登記  
- 針對方案或專案原始檔控制下的另一種說法。  
+  登記  
+  針對方案或專案原始檔控制下的另一種說法。  
   
- 版本存放區  
- 正在透過原始檔控制外掛程式 API 存取原始檔控制資料庫。  
+  版本存放區  
+  正在透過原始檔控制外掛程式 API 存取原始檔控制資料庫。  
   
 ## <a name="test-areas-covered-in-this-section"></a>本章節涵蓋的測試區域  
   

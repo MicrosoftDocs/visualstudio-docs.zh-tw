@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949303"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ ms.locfileid: "49225559"
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>若要針對遺漏的 VSPackage 或其中一個相依性進行疑難排解  
   
-1.  針對 managed 程式碼，請確定參考路徑正確無誤。  
+1. 針對 managed 程式碼，請確定參考路徑正確無誤。  
   
-    1.  在 [專案] 功能表上，按一下 [屬性]。  
+   1.  在 [專案] 功能表上，按一下 [屬性]。  
   
-    2.  選取 [**參考**索引標籤中**屬性頁**] 對話方塊中，並確定所有路徑都是否正確。 或者，您可以使用**物件瀏覽器**瀏覽參考的物件。  
+   2.  選取 [**參考**索引標籤中**屬性頁**] 對話方塊中，並確定所有路徑都是否正確。 或者，您可以使用**物件瀏覽器**瀏覽參考的物件。  
   
-         針對 managed 程式碼，您可以使用[Fuslogvw.exe （組件繫結記錄檔檢視器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)顯示失敗的組件載入的詳細資料。  
+        針對 managed 程式碼，您可以使用[Fuslogvw.exe （組件繫結記錄檔檢視器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)顯示失敗的組件載入的詳細資料。  
   
-2.  對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄節點：  
+2. 對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄節點：  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
   
- 請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
+   請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

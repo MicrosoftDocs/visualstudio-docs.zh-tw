@@ -16,12 +16,12 @@ ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fef6c76f10f31322ea8bb9ed27ab544f70d8a24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe32019bf5ec90dd428cada91a00865b4edefd72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890422"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

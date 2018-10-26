@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892996"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ ms.locfileid: "49289558"
   
  這個逐步解說將說明下列工作：  
   
--   建立 WPF 應用程式，以及建立從 AdventureWorksLT 範例資料庫中的資料產生的資料集。  
+- 建立 WPF 應用程式，以及建立從 AdventureWorksLT 範例資料庫中的資料產生的資料集。  
   
--   建立一組資料繫結控制項中資料的資料表**Zdroje dat**至 WPF 設計工具中的視窗的視窗。  
+- 建立一組資料繫結控制項中資料的資料表**Zdroje dat**至 WPF 設計工具中的視窗的視窗。  
   
--   建立可向前及向後巡覽產品記錄的按鈕。  
+- 建立可向前及向後巡覽產品記錄的按鈕。  
   
--   建立可將使用者對產品記錄所做的變更儲存至資料表和基礎資料來源的按鈕。  
+- 建立可將使用者對產品記錄所做的變更儲存至資料表和基礎資料來源的按鈕。  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。  
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。  
   
- 預先了解下列概念也有助於完成此逐步解說 (但非必要)：  
+  預先了解下列概念也有助於完成此逐步解說 (但非必要)：  
   
--   資料集和 TableAdapter。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)並[TableAdapter 概觀](../data-tools/tableadapter-overview.md)。  
+- 資料集和 TableAdapter。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)並[TableAdapter 概觀](../data-tools/tableadapter-overview.md)。  
   
--   使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
--   WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-project"></a>建立專案  
  建立新的 WPF 專案。 此專案將顯示產品記錄。  

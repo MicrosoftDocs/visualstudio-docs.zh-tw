@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924833"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>如何： 調整書籤控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。  
@@ -30,21 +30,21 @@ ms.locfileid: "35670851"
   
  調整書籤大小的方法有三種：  
   
--   在 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項中加入或移除文字。  
+- 在 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項中加入或移除文字。  
   
-     每當您在書籤中加入文字時，都會自動放大書籤，以包含新的文字。 當您刪除文字時，則會自動縮小書籤。  
+   每當您在書籤中加入文字時，都會自動放大書籤，以包含新的文字。 當您刪除文字時，則會自動縮小書籤。  
   
--   變更 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 控制項的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 屬性。  
+- 變更 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 控制項的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 屬性。  
   
-     如果變更的大小只有幾個字元，則適合這種方法。  
+   如果變更的大小只有幾個字元，則適合這種方法。  
   
--   重新建立 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。  
+- 重新建立 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。  
   
-     如果要大幅變更書籤的大小或位置，則適合這種方法。  
+   如果要大幅變更書籤的大小或位置，則適合這種方法。  
   
- 在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>變更 start 和 end 屬性  
   

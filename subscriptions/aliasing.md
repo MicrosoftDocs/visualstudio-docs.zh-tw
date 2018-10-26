@@ -9,12 +9,12 @@ description: 登入可能會因為使用別名或易記名稱而失敗
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854464"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -116,10 +116,10 @@ ms.locfileid: "39637678"
 1. 瀏覽 https://my.visualstudio.com，然後按一下 [建立新的 Microsoft 帳戶]。
 
 2. 完成欄位：
-    - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
-    - 建立您的密碼
-    - 選擇您的推廣設定
-    - 按一下 [下一步] 
+   - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
+   - 建立您的密碼
+   - 選擇您的推廣設定
+   - 按一下 [下一步] 
 
 3. 完成驗證步驟並按一下 [下一步]。
 
@@ -141,10 +141,10 @@ ms.locfileid: "39637678"
 2. 按一下右邊的 [建立新的 Microsoft 帳戶]
 
 3. 完成表單：
-    - 在 someone@example.com 方塊中使用您的公司電子郵件地址
-    - 輸入密碼
-    - 選取您的推廣喜好設定
-    - 按一下 [下一步]
+   - 在 someone@example.com 方塊中使用您的公司電子郵件地址
+   - 輸入密碼
+   - 選取您的推廣喜好設定
+   - 按一下 [下一步]
 
 4. 完成帳戶驗證步驟
 

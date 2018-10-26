@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884078"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說： 建立書籤的捷徑功能表
   本逐步解說示範如何建立捷徑功能表<xref:Microsoft.Office.Tools.Word.Bookmark>Word 文件層級自訂中的控制項。 當使用者以滑鼠右鍵按一下書籤中的文字時，快顯功能表會隨即出現，並提供格式化文字的使用者選項。  
@@ -32,15 +32,15 @@ ms.locfileid: "38783838"
   
  這個逐步解說將說明下列工作：  
   
--   [建立專案](#BKMK_CreateProject)。  
+- [建立專案](#BKMK_CreateProject)。  
   
--   [加入文件中的文字和書籤](#BKMK_addtextandbookmarks)。  
+- [加入文件中的文字和書籤](#BKMK_addtextandbookmarks)。  
   
--   [將命令加入至捷徑功能表](#BKMK_AddCmndsShortMenu)。  
+- [將命令加入至捷徑功能表](#BKMK_AddCmndsShortMenu)。  
   
--   [格式化文字方塊中的書籤](#BKMK_formattextbkmk)。  
+- [格式化文字方塊中的書籤](#BKMK_formattextbkmk)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -69,22 +69,22 @@ ms.locfileid: "38783838"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>若要加入書籤控制項加入文件  
   
-1.  在 **工具箱**，從**Word 控制項**索引標籤，拖曳<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件。  
+1. 在 **工具箱**，從**Word 控制項**索引標籤，拖曳<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件。  
   
-     **加入書籤控制項** 對話方塊隨即出現。  
+    **加入書籤控制項** 對話方塊隨即出現。  
   
-2.  選取 「 文字上按一下滑鼠右鍵時，請建立快顯功能表 」 的文字，然後按一下**確定**。  
+2. 選取 「 文字上按一下滑鼠右鍵時，請建立快顯功能表 」 的文字，然後按一下**確定**。  
   
-     `bookmark1` 會加入至文件。  
+    `bookmark1` 會加入至文件。  
   
-3.  新增另一個<xref:Microsoft.Office.Tools.Word.Bookmark>控制字組 」 以滑鼠右鍵按一下書籤中的文字 」。  
+3. 新增另一個<xref:Microsoft.Office.Tools.Word.Bookmark>控制字組 」 以滑鼠右鍵按一下書籤中的文字 」。  
   
-     `bookmark2` 會加入至文件。  
+    `bookmark2` 會加入至文件。  
   
-    > [!NOTE]  
-    >  "以滑鼠右鍵按一下文字 」 會在單字`bookmark1`和`bookmark2`。  
+   > [!NOTE]  
+   >  "以滑鼠右鍵按一下文字 」 會在單字`bookmark1`和`bookmark2`。  
   
- 當您在設計階段新增至文件書籤<xref:Microsoft.Office.Tools.Word.Bookmark>建立控制項。 您可以針對數個事件的書籤程式。 您可以撰寫程式碼<xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>事件的書籤，以便當使用者按一下滑鼠右鍵在書籤，文字會出現捷徑功能表。  
+   當您在設計階段新增至文件書籤<xref:Microsoft.Office.Tools.Word.Bookmark>建立控制項。 您可以針對數個事件的書籤程式。 您可以撰寫程式碼<xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>事件的書籤，以便當使用者按一下滑鼠右鍵在書籤，文字會出現捷徑功能表。  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> 將命令加入至捷徑功能表  
  將按鈕加入至您以滑鼠右鍵按一下 文件時，會出現快顯功能表。  

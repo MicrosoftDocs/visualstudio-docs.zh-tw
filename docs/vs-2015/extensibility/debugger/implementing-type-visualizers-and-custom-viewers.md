@@ -16,12 +16,12 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df678c3688008b3367d53046d6ab54ce5279dbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15860e6716d30b19d2223faa8b6bb13aa0eaa466
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838734"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>實作類型視覺化檢視和自訂檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ ms.locfileid: "49251988"
 ## <a name="interfaces"></a>介面  
  EE 會實作下列介面以支援類型的視覺化檢視，以供 Visual Studio:  
   
--   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
+- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
--   [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
+- [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
   
--   [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
+- [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
   
--   [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
+- [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
   
--   [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
+- [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
- EE 會取用要支援類型視覺化檢視的下列介面：  
+  EE 會取用要支援類型視覺化檢視的下列介面：  
   
--   [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
+- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
--   [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
+- [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
   
--   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
+- [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   

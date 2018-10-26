@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848484"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49281394"
   
 ### <a name="to-disable-the-hosting-process"></a>停用裝載處理序  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟可執行專案。 不會產生可執行檔 (例如，類別庫或服務專案) 的專案沒有此選項。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟可執行專案。 不會產生可執行檔 (例如，類別庫或服務專案) 的專案沒有此選項。  
   
-2.  在 [專案] 功能表上，按一下 [屬性]。  
+2. 在 [專案] 功能表上，按一下 [屬性]。  
   
-3.  按一下 [偵錯] 索引標籤。  
+3. 按一下 [偵錯] 索引標籤。  
   
-4.  清除 [啟用 Visual Studio 裝載處理序] 核取方塊。  
+4. 清除 [啟用 Visual Studio 裝載處理序] 核取方塊。  
   
- 停用裝載處理序時，無法使用數個偵錯功能，或效能降低。 如需詳細資訊，請參閱[偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)。  
+   停用裝載處理序時，無法使用數個偵錯功能，或效能降低。 如需詳細資訊，請參閱[偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)。  
   
- 一般情況下，停用裝載處理序時：  
+   一般情況下，停用裝載處理序時：  
   
 -   開始偵錯 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 應用程式所需的時間會增加。  
   

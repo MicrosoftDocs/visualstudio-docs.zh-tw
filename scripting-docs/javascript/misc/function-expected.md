@@ -1,5 +1,5 @@
 ---
-title: 必須是函式 |Microsoft 文件
+title: 必須是函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928928"
 ---
 # <a name="function-expected"></a>必須是函式
-可能是您嘗試叫用的其中一個**函式原型**不是物件上的方法`Function`物件，或使用物件函式呼叫內容中。 例如，下列程式碼會產生這個錯誤因為**範例**不是函式。  
+可能是您嘗試叫用的其中一個**函式原型**不是物件上的方法`Function`物件，或您的物件則會在函式呼叫內容中使用。 例如，下列程式碼會產生這個錯誤因為**範例**不是函式。  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -37,9 +37,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   只能呼叫**函式原型**方法`Function`物件。  
+-   只呼叫**函式原型**上的方法`Function`物件。  
   
--   請確定您使用函式呼叫運算子`()`呼叫只函式。  
+-   請確定您使用函式呼叫運算子`()`只有函式來呼叫。  
   
 ## <a name="see-also"></a>另請參閱  
  [函式物件](../../javascript/reference/function-object-javascript.md)   

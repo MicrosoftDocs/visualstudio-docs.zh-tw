@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884169"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "49255706"
  沒有選取範圍時，可將 [剪下] 或 [複製] 命令套用至空白行  
  當您將插入點置於空白行上但不選取任何範圍，然後「複製」或「剪下」時，這個選項可設定編輯器的行為。  
   
--   選取這個選項時，即可複製或剪下這個空白行。 如果您稍後貼上，則會插入新的空白行。  
+- 選取這個選項時，即可複製或剪下這個空白行。 如果您稍後貼上，則會插入新的空白行。  
   
--   清除此選項時，則「剪下」命令會移除空白行。 不過，會保留剪貼簿裡的資料。 因此，如果您稍後使用 [貼上] 命令，則會貼上最近複製到剪貼簿的內容。 如果先前沒有複製任何項目，則不會貼上任何內容。  
+- 清除此選項時，則「剪下」命令會移除空白行。 不過，會保留剪貼簿裡的資料。 因此，如果您稍後使用 [貼上] 命令，則會貼上最近複製到剪貼簿的內容。 如果先前沒有複製任何項目，則不會貼上任何內容。  
   
- 某行不是空白行時，這個設定對複製或剪下沒有作用。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。  
+  某行不是空白行時，這個設定對複製或剪下沒有作用。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。  
   
 > [!TIP]
 >  若要顯示空格、定位點和行尾的指示器，並進而區分縮排行與完全空白的行，請從 [編輯] 功能表選取 [進階]，並選擇 [檢視空格]。  

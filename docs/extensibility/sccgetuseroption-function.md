@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption 函式 |Microsoft 文件
+title: SccGetUserOption 函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928200"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 此函式會擷取各種不同的使用者特定的選項。  
@@ -46,7 +46,7 @@ SCCRTN SccGetUserOption(
  [out]與選項相關聯的值。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
 |值|描述|  
 |-----------|-----------------|  
@@ -59,7 +59,7 @@ SCCRTN SccGetUserOption(
   
 |使用者選項|描述|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|決定使用者是否想要簽出本機版本的檔案。 `lpVal` 指派`SCC_USEROPT_COLV_YES`（使用者想要簽出本機檔案） 或`SCC_USEROPT_COLV_NO`。|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出檔案的本機版本。 `lpVal` 指派`SCC_USEROPT_COLV_YES`（使用者想要簽出本機檔案） 或`SCC_USEROPT_COLV_NO`。|  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

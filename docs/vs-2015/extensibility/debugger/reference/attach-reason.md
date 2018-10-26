@@ -17,12 +17,12 @@ ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1805956ad9726a900d8425ac04a9215fcb70f65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff2c71418f3586c2915f1d4f4f4ff2fe37ed9bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873600"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893685"
 ---
 # <a name="creating-options-pages"></a>建立選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,17 +51,17 @@ ms.locfileid: "49243083"
 ## <a name="implementing-dialogpage-class"></a>實作 DialogPage 類別  
  這個物件提供 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生的型別可以利用下列繼承的功能：  
   
--   預設使用者介面視窗。  
+- 預設使用者介面視窗。  
   
--   預設持續性機制，可以使用任一 if<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`的<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
+- 預設持續性機制，可以使用任一 if<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`的<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
   
--   自動化支援。  
+- 自動化支援。  
   
- 物件，實作的最低需求**工具選項**頁面上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是加入的公用屬性。  
+  物件，實作的最低需求**工具選項**頁面上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是加入的公用屬性。  
   
- 如果類別已正確註冊為**工具選項**頁面上提供者，則其公用屬性位於**選項**一節**工具**功能表中的表單屬性方格。  
+  如果類別已正確註冊為**工具選項**頁面上提供者，則其公用屬性位於**選項**一節**工具**功能表中的表單屬性方格。  
   
- 所有這些預設的功能可以被覆寫。 例如，若要建立更複雜的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
+  所有這些預設的功能可以被覆寫。 例如，若要建立更複雜的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
   
 ## <a name="example"></a>範例  
  以下是 [選項] 頁面的簡單"hello world"實作。 將下列程式碼加入預設專案由 Visual Studio Package 範本，使用**功能表命令**選項選取適當地將示範選項頁面的功能。  

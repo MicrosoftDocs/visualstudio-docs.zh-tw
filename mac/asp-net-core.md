@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942942"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
- * `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
- * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
- * `.UseIISIntegration()`：指定應用程式應該使用 IIS。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
- * `.UseStartup<Startup>()`：指定啟動類別。
+* `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
+* `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
+* `.UseIISIntegration()`：指定應用程式應該使用 IIS。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
+* `.UseStartup<Startup>()`：指定啟動類別。
 
- Build 和 Run 方法會建置裝載應用程式的 IWebHost，並使其開始接聽傳入的 HTTP 要求。
+  Build 和 Run 方法會建置裝載應用程式的 IWebHost，並使其開始接聽傳入的 HTTP 要求。
 
 ### <a name="startupcs"></a>Startup.cs
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819038"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何： 加入、 更新或移除 WCF 資料服務參考
 A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**加入服務參考**對話方塊，即可搜尋[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在目前方案中，區域網路上，在本機，或在網際網路上。
@@ -55,21 +55,21 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要加入服務參考目前方案中
 
-1.  在 [**方案總管**，以滑鼠右鍵按一下您想要新增服務]，然後按一下專案名稱**加入服務參考**。
+1. 在 [**方案總管**，以滑鼠右鍵按一下您想要新增服務]，然後按一下專案名稱**加入服務參考**。
 
-     **加入服務參考** 對話方塊隨即出現。
+    **加入服務參考** 對話方塊隨即出現。
 
-2.  按一下 **探索**。
+2. 按一下 **探索**。
 
-     所有服務 (同時[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服務) 在目前的方案會加入至**Services**清單。
+    所有服務 (同時[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服務) 在目前的方案會加入至**Services**清單。
 
-3.  在  **Services**清單中，展開您想要使用選取的實體集服務的節點。
+3. 在  **Services**清單中，展開您想要使用選取的實體集服務的節點。
 
-4.  在 **命名空間**方塊中，輸入您想要針對參考使用的命名空間。
+4. 在 **命名空間**方塊中，輸入您想要針對參考使用的命名空間。
 
-5.  按一下 **確定**加入至專案參考。
+5. 按一下 **確定**加入至專案參考。
 
-     產生服務用戶端 (proxy)，並描述服務的中繼資料加入至*app.config*檔案。
+    產生服務用戶端 (proxy)，並描述服務的中繼資料加入至*app.config*檔案。
 
 ## <a name="update-a-service-reference"></a>更新服務參考
  實體資料模型[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]有時會變更。 當發生這種情況時，您必須更新服務參考。

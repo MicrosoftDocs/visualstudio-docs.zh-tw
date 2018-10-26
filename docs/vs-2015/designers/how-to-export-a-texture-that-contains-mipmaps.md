@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10a8a918de6f4228e34660b1699b3b9204e5218d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 847655d04359fa795f878ea921e69b1b5cd16460
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811733"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：匯出包含 Mipmap 的材質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49299659"
   
 #### <a name="to-export-a-texture-that-has-mipmaps"></a>匯出具有 mipmap 的材質  
   
-1.  從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述，建立影像檔案。 若要支援 mipmap，指定的材質寬度和高度大小都是 2 的相同乘冪，例如 64x64、256x256 或 512x512。  
+1. 從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述，建立影像檔案。 若要支援 mipmap，指定的材質寬度和高度大小都是 2 的相同乘冪，例如 64x64、256x256 或 512x512。  
   
-2.  設定您剛建立以便由影像內容管線處理的材質檔案。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。  
+2. 設定您剛建立以便由影像內容管線處理的材質檔案。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。  
   
-3.  設定影像內容管線以產生 mipmap。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 **產生 Mips** 屬性設定為 [是] (/generatemips)。  
+3. 設定影像內容管線以產生 mipmap。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 **產生 Mips** 屬性設定為 [是] (/generatemips)。  
   
-4.  選擇 [確定]  按鈕。  
+4. 選擇 [確定]  按鈕。  
   
- 當您建置專案時，「 影像內容管線會將來源影像從工作格式轉換成輸出格式指定，包括 MIP 層級，並將結果複製到專案的輸出目錄中。
+   當您建置專案時，「 影像內容管線會將來源影像從工作格式轉換成輸出格式指定，包括 MIP 層級，並將結果複製到專案的輸出目錄中。
 
 
 

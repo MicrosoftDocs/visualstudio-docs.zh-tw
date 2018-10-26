@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9a9586c2278bfdc8e8ec781783a12ff140d1afe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2915b5e2caac5cd9585a4c7fe339998785cd123f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820807"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

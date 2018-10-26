@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916521"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>新增 最近使用的子功能表清單
 本逐步解說是根據在示範[子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。  
@@ -38,9 +38,9 @@ ms.locfileid: "39081331"
   
 ## <a name="create-an-extension"></a>建立擴充功能  
   
--   請依照下列中的程序[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)下列程序中建立的已修改的子功能表。  
+- 請依照下列中的程序[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)下列程序中建立的已修改的子功能表。  
   
- 在本逐步解說的程序會假設 VSPackage 的名稱是`TopLevelMenu`，這是名稱中使用[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
+  在本逐步解說的程序會假設 VSPackage 的名稱是`TopLevelMenu`，這是名稱中使用[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
   
 ## <a name="create-a-dynamic-item-list-command"></a>建立動態項目清單命令  
   

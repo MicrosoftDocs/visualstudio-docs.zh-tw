@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes |Microsoft 文件
+title: IDebugReference2::GetMemoryBytes |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dfe557fc114cad61ae666c22be6c5f50079ee1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 023212274e2d06cd246f51497adf79fa730d1a5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951076"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-取得記憶體的位元組實際包含參考的值。 保留供未來使用。  
+取得實際包含參考的值的記憶體位元組。 保留供未來使用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,7 +41,7 @@ int GetMemoryBytes (
   
 #### <a name="parameters"></a>參數  
  `ppMemoryBytes`  
- [out]傳回[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)可以用來擷取包含參考的值的記憶體的物件。  
+ [out]傳回[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件，可用來擷取包含參考的值的記憶體。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

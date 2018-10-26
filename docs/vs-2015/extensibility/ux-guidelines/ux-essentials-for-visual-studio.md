@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848653"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303307"
 ### <a name="hyperlink-anti-patterns"></a>超連結反向模式  
  下列範例包含兩個反向模式。  
   
-1.  暫留時開啟紅色前景表示未使用正確的共用的色彩從字型服務。  
+1. 暫留時開啟紅色前景表示未使用正確的共用的色彩從字型服務。  
   
-2.  「 了解更多 」 不是適當的文字，概念性主題的連結。 使用者的目標不是為了深入了解它是了解他們所選擇的後果。  
+2. 「 了解更多 」 不是適當的文字，概念性主題的連結。 使用者的目標不是為了深入了解它是了解他們所選擇的後果。  
   
- ![反的超連結&#45;模式](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![反的超連結&#45;模式](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **忽略色彩服務，並使用 「 了解更多 」 超連結是 Visual Studio 的反向模式。**  
+   **忽略色彩服務，並使用 「 了解更多 」 超連結是 Visual Studio 的反向模式。**  
   
- **更好的解決方案：** 造成按的連結，會詢問使用者問題。  
+   **更好的解決方案：** 造成按的連結，會詢問使用者問題。  
   
 -   Windows Azure 服務如何運作？  
   

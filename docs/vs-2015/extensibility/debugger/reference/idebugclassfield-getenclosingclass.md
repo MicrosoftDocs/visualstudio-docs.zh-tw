@@ -17,12 +17,12 @@ ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ebbfcfbd0fc8d21dfc67193e6e1164e38c923dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69c9359fe8d9f337a09e0ab3fae4f92b0fc4c264
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924733"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916760"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -39,30 +39,30 @@ ms.locfileid: "31945606"
 
    - C#: 
 
-    ![醒目提示的程式碼 - C#](media/inline-highlight-cs.png)
+       ![醒目提示的程式碼 - C#](media/inline-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 - Visual Basic](media/inline-highlight-vb.png)
+       ![醒目提示的程式碼 - Visual Basic](media/inline-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-     - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構] 功能表。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構] 功能表。
 
-1. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]。
+3. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]。
 
    系統會移除變數，並以變數的值取代使用該變數的地方。
 
    - C#: 
 
-    ![內嵌結果 - C#](media/inline-result-cs.png)
+      ![內嵌結果 - C#](media/inline-result-cs.png)
 
    - Visual Basic：
 
-    ![內嵌結果 - Visual Basic](media/inline-result-vb.png)
+      ![內嵌結果 - Visual Basic](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>另請參閱
 

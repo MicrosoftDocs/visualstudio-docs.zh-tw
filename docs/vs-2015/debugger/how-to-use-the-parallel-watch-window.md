@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837070"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>如何：使用平行監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行所示**平行監看式**視窗：  
   
--   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
+- 旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
   
--   框架資料行，其中的箭號表示選取的框架。  
+- 框架資料行，其中的箭號表示選取的框架。  
   
--   可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。  
+- 可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。  
   
-    > [!TIP]
-    >  您必須開啟**平行工作** 視窗顯示中的工作資訊**平行監看式**視窗。  
+  > [!TIP]
+  >  您必須開啟**平行工作** 視窗顯示中的工作資訊**平行監看式**視窗。  
   
--   **\<新增監看式 >** 資料行中，您可以在其中輸入要監看的運算式。  
+- **\<新增監看式 >** 資料行中，您可以在其中輸入要監看的運算式。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>若要顯示 [平行監看式] 視窗  
   

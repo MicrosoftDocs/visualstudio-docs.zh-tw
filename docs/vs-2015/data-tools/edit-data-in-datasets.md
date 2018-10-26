@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949288"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "49184843"
   
  變更會追蹤每個資料列中的兩種方式：  
   
--   每個資料列包含它的相關資訊<xref:System.Data.DataRow.RowState%2A>(例如<xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>，或<xref:System.Data.DataRowState>)。  
+- 每個資料列包含它的相關資訊<xref:System.Data.DataRow.RowState%2A>(例如<xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>，或<xref:System.Data.DataRowState>)。  
   
--   每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，原始的版本 （在之前的變更） 和目前的版本 （在之後變更）。 情況下，變更已暫止的時期間 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本 — 也有提供。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得特定版本 DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md)。  
+- 每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，原始的版本 （在之前的變更） 和目前的版本 （在之後變更）。 情況下，變更已暫止的時期間 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本 — 也有提供。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得特定版本 DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md)。  
   
- <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取變更資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+  <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取變更資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要判斷是否已變更的所有資料列  
   

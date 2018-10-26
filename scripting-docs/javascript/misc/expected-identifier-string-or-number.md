@@ -1,5 +1,5 @@
 ---
-title: 必須是識別項、 字串或數字 |Microsoft 文件
+title: 必須是識別項、 字串或數字 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855127"
 ---
 # <a name="expected-identifier-string-or-number"></a>必須是識別項、字串或數字
-您用來宣告物件常值的常值的語法不正確。 物件常值的屬性必須是識別項、 字串或數字。 物件常值 （也稱為 「 物件初始設定 」） 是一份以逗號分隔的屬性： 值配對，所有括在方括號內。 例如：  
+您用來宣告物件常值的常值語法不正確。 物件常值的屬性必須是識別項、 字串或數字。 物件常值 （也稱為 「 物件初始設定 」） 是由逗號分隔的清單括號括住所有被封入的屬性： 值配對所組成。 例如:   
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -36,7 +36,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請使用適當的常值語法。  
+-   請確定使用適當的常值語法。  
   
 ## <a name="see-also"></a>另請參閱  
  [逗號運算子 (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

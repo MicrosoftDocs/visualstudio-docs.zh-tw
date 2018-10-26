@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839540"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   實作 IManagedAddin 介面以建立元件，可將 managed VSTO 增益集。2007 Microsoft Office system 中已新增這個介面。  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>如何載入受管理的增益集  
  當應用程式啟動時，會執行下列步驟：  
   
-1.  應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：  
+1. 應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<應用程式名稱 >* \Addins\\**  
   
-     這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。  
+    這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。  
   
-2.  應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。  
+2. 應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。  
   
-     受管理的 VSTO 增益集可以儲存的資訊清單的完整路徑`Manifest`下的項目**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\\_\<增益集識別碼 >_**。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
+    受管理的 VSTO 增益集可以儲存的資訊清單的完整路徑`Manifest`下的項目**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\\_\<增益集識別碼 >_**。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
   
-3.  如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會嘗試建立實作 IManagedAddin 介面的 COM 物件。  
+3. 如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會嘗試建立實作 IManagedAddin 介面的 COM 物件。  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包含 VSTO 增益集載入器元件 (*VSTOLoader.dll*)，或者您可以建立您自己的實作 IManagedAddin 介面。  
+    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包含 VSTO 增益集載入器元件 (*VSTOLoader.dll*)，或者您可以建立您自己的實作 IManagedAddin 介面。  
   
-4.  應用程式會呼叫 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，並傳入 `Manifest` 項目的值。  
+4. 應用程式會呼叫 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，並傳入 `Manifest` 項目的值。  
   
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。  
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。  
   
- 如需有關登錄 Microsoft Office 應用程式用來探索及載入的金鑰管理 VSTO 增益集，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
+   如需有關登錄 Microsoft Office 應用程式用來探索及載入的金鑰管理 VSTO 增益集，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>若要實作 IManagedAddin 的指引  
  如果您實作 IManagedAddin 時，您必須註冊包含實作，使用下列 CLSID 的 DLL:  

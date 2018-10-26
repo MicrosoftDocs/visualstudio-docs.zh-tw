@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach |Microsoft 文件
+title: IDebugProcess2::Detach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fce67b16d8de1e70e308fd107af3c26012e752c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de18df907c8a30235fcfc3391fe6879afdcaa1f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854295"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-會從這個處理序偵錯工具中斷連結卸離所有處理序中的程式。  
+會從這個處理序偵錯工具中斷連結所有處理序中的程式中斷連結。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 所有程式和處理程序繼續執行，但不會再偵錯工作階段的一部分。 在卸離後作業已完成，沒有其他偵錯此處理程序 （以及它的程式） 的事件將會傳送。  
+ 所有程式和處理程序繼續執行，但不會再偵錯工作階段的一部分。 卸離作業之後完成，沒有更多偵錯此處理程序 （和其程式） 的事件將會傳送。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

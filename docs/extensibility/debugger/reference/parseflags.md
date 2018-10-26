@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS |Microsoft 文件
+title: PARSEFLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913003"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何剖析的運算式。  
@@ -49,13 +49,13 @@ public enum enum_PARSEFLAGS {
  表示運算式不是陳述式。  
   
  PARSE_FUNCTION_AS_ADDRESS  
- 表示運算式剖析 （和更新版本評估） 位址。  
+ 表示運算式的剖析 （並稍後再評估） 位址。  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- 表示在設計階段期間剖析運算式 （也就是當設計工具開啟時）。  
+ 表示在設計階段剖析運算式 （也就是當設計工具開啟時）。  
   
 ## <a name="remarks"></a>備註  
- 做為參數來傳遞[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)和[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。  
+ 做為參數傳遞[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)並[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

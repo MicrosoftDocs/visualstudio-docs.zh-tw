@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ed52f7898f10b5f13f55c27cba380334489871
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 3cfd9d43a8152b629635103b399ef0d7566e4867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933114"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 定義對話方塊
 
@@ -28,7 +28,7 @@ ms.locfileid: "36758130"
 下表描述的使用者介面 (UI) 項目**CorrelatesOn**  對話方塊。
 
 |UI 項目|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**CorrelatesWith**|用來路由訊息到適當工作流程執行個體的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
 |**XPath 查詢**|配對的索引鍵/值，其中包含用來從傳入訊息擷取相互關聯資料的查詢。 這個值會對應到<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>屬性。 XPath 查詢會包含在 <xref:System.ServiceModel.MessageQuerySet> 物件中。|
 

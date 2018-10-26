@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 文件 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831025"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>嘗試 5 分鐘快速入門</h3>
-                                                <h4>以您選擇的語言建置 "Hello, World"。</h4>
+                                                <h4>以您選擇的語言建置 &quot;Hello, World&quot;。</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -287,7 +287,7 @@ Unity 遊戲</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>組建</h3>
+                                                    <h3>建置</h3>
                                                     <p>編譯和建置您的原始程式碼。</p>
                                                 </div>
                                             </div>

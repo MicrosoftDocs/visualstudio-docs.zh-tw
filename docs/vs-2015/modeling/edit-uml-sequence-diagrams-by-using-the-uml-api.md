@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941993"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 編輯 UML 循序圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>正在更新互動及其配置  
  當您更新互動時，請一律使用下列方法之一來更新此配置，以結束您的作業：  
   
--   `ISequenceDiagram.UpdateShapePositions()` 調整最近已插入或移動的圖形和其相鄰圖形的位置。  
+- `ISequenceDiagram.UpdateShapePositions()` 調整最近已插入或移動的圖形和其相鄰圖形的位置。  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 會重新繪製整個圖表。 您可以使用參數來指定生命線、訊息或兩者的重新調整位置。  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 會重新繪製整個圖表。 您可以使用參數來指定生命線、訊息或兩者的重新調整位置。  
   
- 當您插入新項目或移動現有項目時，這一點格位重要。 必須在您執行其中一項作業之後，這些項目才會出現在圖表的正確位置上。 您只需要在完成一連串變更時，呼叫一次其中一項作業。  
+  當您插入新項目或移動現有項目時，這一點格位重要。 必須在您執行其中一項作業之後，這些項目才會出現在圖表的正確位置上。 您只需要在完成一連串變更時，呼叫一次其中一項作業。  
   
- 若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如：  
+  若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如：  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

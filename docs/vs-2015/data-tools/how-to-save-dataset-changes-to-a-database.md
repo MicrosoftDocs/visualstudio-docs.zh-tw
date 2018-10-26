@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949015"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>如何：將資料集變更儲存至資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ ms.locfileid: "49202276"
 ## <a name="updating-two-related-tables-in-a-dataset"></a>更新資料集內的兩個相關的資料表  
  在更新資料集中的相關的資料表時，務必依照正確順序排列，以減少發生違反參考完整性條件約束的更新。 命令執行的順序也會遵循索引<xref:System.Data.DataRowCollection>資料集內。 若要避免資料完整性錯誤所引發，最佳做法是依下列順序將資料庫更新：  
   
-1.  子資料表： 刪除記錄。  
+1. 子資料表： 刪除記錄。  
   
-2.  父資料表： 插入、 更新和刪除記錄。  
+2. 父資料表： 插入、 更新和刪除記錄。  
   
-3.  子資料表： 插入和更新記錄。  
+3. 子資料表： 插入和更新記錄。  
   
- 如需儲存多個資料表中資料的詳細資訊，請參閱[將資料儲存至資料庫 （多個資料表）](../data-tools/save-data-to-a-database-multiple-tables.md)。  
+   如需儲存多個資料表中資料的詳細資訊，請參閱[將資料儲存至資料庫 （多個資料表）](../data-tools/save-data-to-a-database-multiple-tables.md)。  
   
- 如果您要更新兩個或多個相關的資料表，您就應該包含在交易內的所有更新邏輯。 異動是可以在認可所有變更之前，確保對資料庫的所有相關變更都能成功的流程。 如需詳細資訊，請參閱[異動和並行存取](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+   如果您要更新兩個或多個相關的資料表，您就應該包含在交易內的所有更新邏輯。 異動是可以在認可所有變更之前，確保對資料庫的所有相關變更都能成功的流程。 如需詳細資訊，請參閱[異動和並行存取](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>若要更新使用 TableAdapter 的兩個相關的資料表  
   

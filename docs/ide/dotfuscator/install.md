@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880360"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>安裝 Dotfuscator Community Edition (CE)
 
@@ -46,9 +46,9 @@ Visual Studio 2017 推出新的低影響安裝體驗。
 
 1. 在 [快速啟動] \(Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![快速啟動](media/install_from_vs_12.png) <br/> <br/>
 2. 在 [快速啟動] 結果顯示畫面的「安裝」標題下，選取 [PreEmptive Protection - Dotfuscator (個別元件)]。
-  * 但若看到「功能表」標題下的 [工具] - [PreEmptive Protection - Dotfuscator]，則已安裝 Dotfuscator CE。 如需使用方式詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
+   * 但若看到「功能表」標題下的 [工具] - [PreEmptive Protection - Dotfuscator]，則已安裝 Dotfuscator CE。 如需使用方式詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
 3. [Visual Studio 安裝程式] 視窗即會啟動，預先設定安裝 Dotfuscator CE。
-  * 您可能需要提供系統管理員認證才能繼續。
+   * 您可能需要提供系統管理員認證才能繼續。
 4. 關閉所有 Visual Studio IDE 執行個體。 <br/> <br/> ![按一下 [安裝]](media/install_from_vs_345.png) <br/> <br/>
 5. 在 [Visual Studio 安裝程式] 視窗中，按一下 [安裝]。
 

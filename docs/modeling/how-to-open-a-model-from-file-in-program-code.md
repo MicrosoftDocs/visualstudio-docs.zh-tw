@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812487"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 您可以在任何應用程式中開啟 DSL 模型。
@@ -58,13 +58,13 @@ ms.locfileid: "47860416"
 ## <a name="reading-from-a-file"></a>從檔案讀取
  下列範例被設計來讀取的 DSL 中的重要類別，如下所示：
 
--   FamilyTreeModel
+- FamilyTreeModel
 
--   FamilyTreeSerializationHelper
+- FamilyTreeSerializationHelper
 
--   FamilyTreeDomainModel
+- FamilyTreeDomainModel
 
- 在此 DSL 的其他網域類別是人員。
+  在此 DSL 的其他網域類別是人員。
 
 ```csharp
 using System;

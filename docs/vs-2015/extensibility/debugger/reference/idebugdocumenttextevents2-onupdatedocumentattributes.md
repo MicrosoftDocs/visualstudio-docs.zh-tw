@@ -17,12 +17,12 @@ ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc0ce6380c6dc5b3e1d37d7b5cb891a352d383d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5cb76fc0d90dfd76fbf45e629f03b59052fda05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883070"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

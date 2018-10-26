@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850512"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49301388"
  為編輯器中的錯誤加上底線  
  識別程式碼中的建置錯誤。 選取這個選項時，會使用具有特定意義的色彩來顯示波浪底線︰  
   
--   剖析錯誤為紅色。  
+- 剖析錯誤為紅色。  
   
--   建置錯誤為藍色。  
+- 建置錯誤為藍色。  
   
--   建置警告為綠色。  
+- 建置警告為綠色。  
   
--   無效的[編輯後繼續](../../debugger/edit-and-continue.md)編輯為紫色。  
+- 無效的[編輯後繼續](../../debugger/edit-and-continue.md)編輯為紫色。  
   
- 將指標移至加底線程式碼區段上方，來查看具有錯誤資訊的工具提示。  
+  將指標移至加底線程式碼區段上方，來查看具有錯誤資訊的工具提示。  
   
- 顯示即時語意錯誤  
- 識別未進行明確編譯的特定編譯錯誤，例如，宣告和使用未知類型，或是參考未知屬性。  
+  顯示即時語意錯誤  
+  識別未進行明確編譯的特定編譯錯誤，例如，宣告和使用未知類型，或是參考未知屬性。  
   
- 反白顯示游標下的符號參考  
- 如果將游標置入符號內，或按一下符號，則會反白顯示該符號在程式碼檔中的所有執行個體。  
+  反白顯示游標下的符號參考  
+  如果將游標置入符號內，或按一下符號，則會反白顯示該符號在程式碼檔中的所有執行個體。  
   
 ## <a name="refactoring"></a>重構  
  驗證重構結果  

@@ -17,12 +17,12 @@ ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6649f9da2066a826bdb21ec60370649722b3e1cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fda34a49bfa88c7c84b03cbbae611bc62fcff873
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878618"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

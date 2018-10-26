@@ -17,12 +17,12 @@ ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6994d785126b769a90f2c4f4dd9eb5bf84f3c000
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6525777be8affcd70a716a35f04da203e7a04b2c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838175"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

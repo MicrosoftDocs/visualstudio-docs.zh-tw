@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902473"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>基本 (Visual Basic)、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227834"
  **程式碼美化排列 (重新格式化)**  
  文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：  
   
--   將您的程式碼對齊正確的定位點位置  
+- 將您的程式碼對齊正確的定位點位置  
   
--   重新將關鍵字、變數和物件指定為正確的大小寫  
+- 重新將關鍵字、變數和物件指定為正確的大小寫  
   
--   將遺漏的 `Then` 新增至 `If...Then` 陳述式  
+- 將遺漏的 `Then` 新增至 `If...Then` 陳述式  
   
--   將括弧新增至函式呼叫  
+- 將括弧新增至函式呼叫  
   
--   將遺漏的結尾引號新增至字串  
+- 將遺漏的結尾引號新增至字串  
   
--   重新格式化指數標記法  
+- 重新格式化指數標記法  
   
--   重新格式化日期  
+- 重新格式化日期  
   
- **啟用大綱模式**  
- 當您在程式碼編輯器中開啟檔案時，可以使用大綱模式檢視文件。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。 選取此選項後，在您開啟檔案時將會啟動大綱功能。  
+  **啟用大綱模式**  
+  當您在程式碼編輯器中開啟檔案時，可以使用大綱模式檢視文件。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。 選取此選項後，在您開啟檔案時將會啟動大綱功能。  
   
- **自動插入 Interface 及 MustOverride 成員**  
- 當您認可 `Implements` 陳述式或類別的 `Inherits` 陳述式時，文字編輯器就會插入必須各自實作或覆寫之成員的原型。  
+  **自動插入 Interface 及 MustOverride 成員**  
+  當您認可 `Implements` 陳述式或類別的 `Inherits` 陳述式時，文字編輯器就會插入必須各自實作或覆寫之成員的原型。  
   
- **顯示程序行分隔符號**  
- 文字編輯器會指出程序的可見範圍。 在專案的 .vb 原始程式檔中描繪一行，而這些原始程式檔是位於下表所列的位置：  
+  **顯示程序行分隔符號**  
+  文字編輯器會指出程序的可見範圍。 在專案的 .vb 原始程式檔中描繪一行，而這些原始程式檔是位於下表所列的位置：  
   
 |vb 原始程式檔中的位置|行位置的範例|  
 |---------------------------------|------------------------------|  

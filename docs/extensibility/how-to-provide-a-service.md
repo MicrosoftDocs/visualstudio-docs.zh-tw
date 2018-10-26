@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942545"
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
 VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。  
@@ -32,50 +32,50 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
   
 ## <a name="implement-a-service"></a>實作服務  
   
-1.  建立 VSIX 專案 (**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **VSIX 專案**)。  
+1. 建立 VSIX 專案 (**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **VSIX 專案**)。  
   
-2.  加入專案中的 VSPackage。 選取專案節點，在**方案總管**，按一下 **新增** > **新項目** > **Visual C# 項目**  > **擴充性** > **Visual Studio 套件**。  
+2. 加入專案中的 VSPackage。 選取專案節點，在**方案總管**，按一下 **新增** > **新項目** > **Visual C# 項目**  > **擴充性** > **Visual Studio 套件**。  
   
-3.  若要實作服務，您需要建立三種類型：  
+3. 若要實作服務，您需要建立三種類型：  
   
-    -   描述服務的介面。 許多這些介面是空的也就是說，它們有沒有任何方法。  
+   - 描述服務的介面。 許多這些介面是空的也就是說，它們有沒有任何方法。  
   
-    -   描述服務介面的介面。 這個介面包含要實作的方法。  
+   - 描述服務介面的介面。 這個介面包含要實作的方法。  
   
-    -   實作服務和服務介面的類別。  
+   - 實作服務和服務介面的類別。  
   
      下列範例顯示三種類型的基本實作。 服務類別的建構函式必須設定服務提供者。  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="register-a-service"></a>註冊服務  
   

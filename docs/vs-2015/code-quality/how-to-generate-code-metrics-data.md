@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836199"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：產生程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ ms.locfileid: "49189798"
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>若要產生一個或多個程式碼度量結果中，選取 專案  
   
-1.  在 [**方案總管] 中**，選取一或多個專案。  
+1. 在 [**方案總管] 中**，選取一或多個專案。  
   
-2.  按一下 **分析**，然後按一下**產生所選專案 (s) 的程式碼度量**。  
+2. 按一下 **分析**，然後按一下**產生所選專案 (s) 的程式碼度量**。  
   
-     \-或-  
+    \-或-  
   
-     以滑鼠右鍵按一下您的選擇，然後按一下**CalculateCode 計量**。  
+    以滑鼠右鍵按一下您的選擇，然後按一下**CalculateCode 計量**。  
   
- 就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
+   就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
   
 ### <a name="to-view-the-results-details"></a>若要檢視結果詳細資料  
   

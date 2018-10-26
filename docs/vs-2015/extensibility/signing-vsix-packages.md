@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915590"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "49263873"
   
 #### <a name="to-use-the-vsixsigntool"></a>若要使用 VSIXSignTool  
   
-1.  將您的 VSIX，加入專案。  
+1. 將您的 VSIX，加入專案。  
   
-2.  以滑鼠右鍵按一下專案節點，在 [方案總管] 中，選取**新增&#124;管理 NuGet 套件**。  如需詳細資訊，NuGet 和加入 NuGet 套件請參閱[NuGet 概觀](http://docs.nuget.org/)並[使用對話方塊管理 NuGet 封裝](http://docs.nuget.org/Consume/Package-Manager-Dialog)。  
+2. 以滑鼠右鍵按一下專案節點，在 [方案總管] 中，選取**新增&#124;管理 NuGet 套件**。  如需詳細資訊，NuGet 和加入 NuGet 套件請參閱[NuGet 概觀](http://docs.nuget.org/)並[使用對話方塊管理 NuGet 封裝](http://docs.nuget.org/Consume/Package-Manager-Dialog)。  
   
-3.  搜尋從 VisualStudioExtensibility VSIXSignTool 並安裝 NuGet 套件。  
+3. 搜尋從 VisualStudioExtensibility VSIXSignTool 並安裝 NuGet 套件。  
   
-4.  您現在可以執行 VSIXSignTool 從專案的本機封裝的位置。 如您簽署的案例，請參閱工具的命令列說明 (VSIXSignTool.exe /？)。  
+4. 您現在可以執行 VSIXSignTool 從專案的本機封裝的位置。 如您簽署的案例，請參閱工具的命令列說明 (VSIXSignTool.exe /？)。  
   
- 例如若要使用密碼保護的憑證檔簽署的資訊：  
+   例如若要使用密碼保護的憑證檔簽署的資訊：  
   
- VSIXSignTool.exe 登 /f \<certfile >/p\<密碼 > \<VSIXfile >  
+   VSIXSignTool.exe 登 /f \<certfile >/p\<密碼 > \<VSIXfile >  
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

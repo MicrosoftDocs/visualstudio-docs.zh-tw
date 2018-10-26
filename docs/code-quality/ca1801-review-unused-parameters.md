@@ -1,5 +1,5 @@
 ---
-title: CA1801：必須檢視未使用的參數
+title: CA1801：必須檢閱未使用的參數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -17,19 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0c5f288b57a377c69bf159f9e92ccc575f983083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948209"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢視未使用的參數
+# <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢閱未使用的參數
+
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷-成員不是組件，不論您所做的變更外部可見。<br /><br /> 非中斷-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|
 
 ## <a name="cause"></a>原因

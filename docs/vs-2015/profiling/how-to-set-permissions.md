@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905250"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49187539"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Users 群組的成員會需要存取磁碟上，與這個小組中之其他成員共用的資料夾和檔案。 第二個程序，「授與共用專案檔的存取權限」，說明如何授與此存取權限。  
+  Users 群組的成員會需要存取磁碟上，與這個小組中之其他成員共用的資料夾和檔案。 第二個程序，「授與共用專案檔的存取權限」，說明如何授與此存取權限。  
   
- 如果系統管理員將或程式碼剖析工具軟體驅動程式的存取權限授與 Users 群組的成員，他們就可以執行這個程式碼剖析工具。 最後一個程序，「授與剖析工具驅動程式的存取權限」，說明如何授與此驅動程式的存取權限。  
+  如果系統管理員將或程式碼剖析工具軟體驅動程式的存取權限授與 Users 群組的成員，他們就可以執行這個程式碼剖析工具。 最後一個程序，「授與剖析工具驅動程式的存取權限」，說明如何授與此驅動程式的存取權限。  
   
 > [!NOTE]
 >  您必須具有系統管理員權限，才能執行這些程序中的步驟。  
@@ -89,47 +89,47 @@ ms.locfileid: "49187539"
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>授與程式碼剖析驅動程式的存取權限  
   
-1.  以系統管理員身分開啟命令提示字元。  
+1. 以系統管理員身分開啟命令提示字元。  
   
-2.  變更目錄至以下路徑：  
+2. 變更目錄至以下路徑：  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  執行下列命令：  
+3. 執行下列命令：  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     這個命令會安裝並啟動程式碼剖析工具的驅動程式。  
+    這個命令會安裝並啟動程式碼剖析工具的驅動程式。  
   
-     這個命令會啟動程式碼剖析驅動程式和服務，讓非系統管理員使用者可以使用自己的使用者處理序空間中提供的程式碼剖析功能。 只有系統管理員可以執行此命令；如果執行者是非系統管理員使用者，此命令將會失敗。  
+    這個命令會啟動程式碼剖析驅動程式和服務，讓非系統管理員使用者可以使用自己的使用者處理序空間中提供的程式碼剖析功能。 只有系統管理員可以執行此命令；如果執行者是非系統管理員使用者，此命令將會失敗。  
   
-     請注意，除非您也執行這個程序中的最後步驟，否則這個步驟的效果會在電腦重新啟動後消失。  
+    請注意，除非您也執行這個程序中的最後步驟，否則這個步驟的效果會在電腦重新啟動後消失。  
   
-4.  執行以下命令，允許在該電腦上沒有系統管理員存取權的使用者或群組存取程式碼剖析驅動程式功能：  
+4. 執行以下命令，允許在該電腦上沒有系統管理員存取權的使用者或群組存取程式碼剖析驅動程式功能：  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     這個命令會授與 \<使用者名稱> 或 \<群組名稱> 帳戶對程式碼剖析工具的存取權限。 [\<權限>] 選項會決定使用者可以存取的程式碼剖析功能。 [\<權限>] 選項可以是下列其中一個或多個值：  
+    這個命令會授與 \<使用者名稱> 或 \<群組名稱> 帳戶對程式碼剖析工具的存取權限。 [\<權限>] 選項會決定使用者可以存取的程式碼剖析功能。 [\<權限>] 選項可以是下列其中一個或多個值：  
   
-    -   FullAccess - 允許存取所有程式碼剖析方法，包括從服務收集效能資料、取樣和跨工作階段進行程式碼剖析。  
+   -   FullAccess - 允許存取所有程式碼剖析方法，包括從服務收集效能資料、取樣和跨工作階段進行程式碼剖析。  
   
-    -   SampleProfiling - 允許存取取樣程式碼剖析方法。  
+   -   SampleProfiling - 允許存取取樣程式碼剖析方法。  
   
-    -   CrossSession -允許存取跨工作階段程式碼剖析，這是對服務進行程式碼剖析所需要的權限。  
+   -   CrossSession -允許存取跨工作階段程式碼剖析，這是對服務進行程式碼剖析所需要的權限。  
   
-5.  (選擇性) 若要在電腦重新啟動後保留前述任一步驟的結果，請執行下列命令：  
+5. (選擇性) 若要在電腦重新啟動後保留前述任一步驟的結果，請執行下列命令：  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- 指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。  
+   指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。  
   
 ## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   

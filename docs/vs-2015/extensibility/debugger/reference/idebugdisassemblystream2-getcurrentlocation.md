@@ -17,12 +17,12 @@ ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73fd851afbf357c492fb7fe476b8d0fd7dfeebc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cd479bfc3edfcfef2d5990a121cf63fe2c6a049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877019"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

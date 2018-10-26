@@ -33,25 +33,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934323"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：  
   
--   [文件層級自訂](#DocLevel)  
+- [文件層級自訂](#DocLevel)  
   
--   [VSTO 增益集](#AppLevel)  
+- [VSTO 增益集](#AppLevel)  
   
- 如需這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+  如需這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
- Office 專案範本位於 [ **新增專案** ] 對話方塊之 [ **Visual C#** ] 和 [ **Visual Basic** ] 語言節點的 [ **Office** ] 節點底下。 每個範本都會根據目標應用程式產生具有適當組態的專案，包括組件參考和偵錯設定。  
+  Office 專案範本位於 [ **新增專案** ] 對話方塊之 [ **Visual C#** ] 和 [ **Visual Basic** ] 語言節點的 [ **Office** ] 節點底下。 每個範本都會根據目標應用程式產生具有適當組態的專案，包括組件參考和偵錯設定。  
   
- 每個專案都會提供檔案和程式碼，協助您建立特定類型的方案。 針對每個專案產生的程式碼都包含開機和關機事件處理常式。 您可以在這些事件處理常式中加入程式碼，以在載入方案時將方案初始化，並在卸載方案時將方案清除。 如需詳細資訊，請參閱 < [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)並[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+  每個專案都會提供檔案和程式碼，協助您建立特定類型的方案。 針對每個專案產生的程式碼都包含開機和關機事件處理常式。 您可以在這些事件處理常式中加入程式碼，以在載入方案時將方案初始化，並在卸載方案時將方案清除。 如需詳細資訊，請參閱 < [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)並[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
   
 > [!NOTE]  
 >  特定 Visual Studio 版本隨附 Office 開發工具。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -59,25 +59,25 @@ ms.locfileid: "35671074"
 ##  <a name="DocLevel"></a> 文件層級自訂  
  [ **新增專案** ] 對話方塊中的 [ **Office** ] 節點提供下列專案範本，讓您開始建立 Word 和 Excel 文件層級的自訂：  
   
--   **Word 2013 和 2016 VSTO 文件**  
+- **Word 2013 和 2016 VSTO 文件**  
   
--   **Word 2013 和 2016 VSTO 範本**  
+- **Word 2013 和 2016 VSTO 範本**  
   
--   **Excel 2013 和 2016 VSTO 活頁簿**  
+- **Excel 2013 和 2016 VSTO 活頁簿**  
   
--   **Excel 2013 和 2016 VSTO 範本**  
+- **Excel 2013 和 2016 VSTO 範本**  
   
--   **Word 2010 VSTO 文件**  
+- **Word 2010 VSTO 文件**  
   
--   **Word 2010 VSTO 範本**  
+- **Word 2010 VSTO 範本**  
   
--   **Excel 2010 VSTO 活頁簿**  
+- **Excel 2010 VSTO 活頁簿**  
   
--   **Excel 2010 VSTO 範本**  
+- **Excel 2010 VSTO 範本**  
   
- [Word 文件] 和 [Excel 活頁簿] 專案範本提供程式碼，讓您開始建立以特定文件或活頁簿為基礎的方案。 在這些類型的方案中，您的程式碼只有在 Word 或 Excel 中開啟相關聯的文件時才會執行。  
+  [Word 文件] 和 [Excel 活頁簿] 專案範本提供程式碼，讓您開始建立以特定文件或活頁簿為基礎的方案。 在這些類型的方案中，您的程式碼只有在 Word 或 Excel 中開啟相關聯的文件時才會執行。  
   
- [Word 範本] 和 [Excel 範本] 專案範本的運作方式與 [Word 文件] 和 [Excel 活頁簿] 專案範本完全相同。 不過，[Word 範本] 和 [Excel 範本] 專案範本可讓使用者以您方案中的自訂範本，輕鬆地建立新的本機文件或活頁簿複本。 使用者透過範本建立的新文件會具有您方案中的功能。  
+  [Word 範本] 和 [Excel 範本] 專案範本的運作方式與 [Word 文件] 和 [Excel 活頁簿] 專案範本完全相同。 不過，[Word 範本] 和 [Excel 範本] 專案範本可讓使用者以您方案中的自訂範本，輕鬆地建立新的本機文件或活頁簿複本。 使用者透過範本建立的新文件會具有您方案中的功能。  
   
 > [!NOTE]  
 >  參考 Managed 程式碼擴充的 Word 範本不能當做全域 VSTO 增益集。如果是從 Word 的 Startup 目錄載入該範本，則不會呼叫該組件。 如需詳細資訊，請參閱[全域範本和 Excel 增益集 （.xla 檔案） 的限制](#Limitations)  
@@ -97,51 +97,51 @@ ms.locfileid: "35671074"
 ##  <a name="AppLevel"></a> VSTO 增益集  
  [新增專案]  對話方塊中的 [Office/SharePoint]  節點提供下列專案範本，讓您開始建立 VSTO 增益集。  
   
--   **Excel 2013 和 2016 VSTO 增益集**  
+- **Excel 2013 和 2016 VSTO 增益集**  
   
--   **InfoPath 2013 VSTO 增益集**  
+- **InfoPath 2013 VSTO 增益集**  
   
--   **Outlook 2013 和 2016 VSTO 增益集**  
+- **Outlook 2013 和 2016 VSTO 增益集**  
   
--   **PowerPoint 2013 和 2016 增益集**  
+- **PowerPoint 2013 和 2016 增益集**  
   
--   **Project 2013 和 2016 增益集**  
+- **Project 2013 和 2016 增益集**  
   
--   **Visio 2013 和 2016 增益集**  
+- **Visio 2013 和 2016 增益集**  
   
--   **Word 2013 和 2016 增益集**  
+- **Word 2013 和 2016 增益集**  
   
--   **Excel 2010 增益集**  
+- **Excel 2010 增益集**  
   
--   **InfoPath 2010 增益集**  
+- **InfoPath 2010 增益集**  
   
--   **Outlook 2010 增益集**  
+- **Outlook 2010 增益集**  
   
--   **PowerPoint 2010 增益集**  
+- **PowerPoint 2010 增益集**  
   
--   **Project 2010 增益集**  
+- **Project 2010 增益集**  
   
--   **Visio 2010 增益集**  
+- **Visio 2010 增益集**  
   
--   **Word 2010 增益集**  
+- **Word 2010 增益集**  
   
- 當您建立以上述其中一種專案範本為基礎的專案時，會在開啟相關聯的應用程式時執行您方案中的程式碼。 與文件層級專案不同，您的程式碼並未與單一文件相關聯。  
+  當您建立以上述其中一種專案範本為基礎的專案時，會在開啟相關聯的應用程式時執行您方案中的程式碼。 與文件層級專案不同，您的程式碼並未與單一文件相關聯。  
   
- 如需開始使用這些專案類型的詳細資訊，請參閱下列主題：  
+  如需開始使用這些專案類型的詳細資訊，請參閱下列主題：  
   
--   [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
+- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
+- [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
   
--   [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>文件與範本方案的比較  
  設計 Word 文件或 Excel 活頁簿適用的方案時，必須決定向使用者提供這份文件的最佳方式。  

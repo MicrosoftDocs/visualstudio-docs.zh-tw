@@ -17,12 +17,12 @@ ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fcc74d44e9a460156ac3ab8b14bf7dc407aea35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a2063eb1abbbcaf0f59b8d041bc50b65fb7900c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948391"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

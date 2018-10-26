@@ -18,17 +18,17 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e359bdd2e97a3c1b31986a8ef7455590b5b2335e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a63bbe6f8f65e9e90cb4c57705cc664792bd6f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922116"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取這個符號的基礎類型 *。*  
+擷取這個符號的基礎類型。  
   
 ## <a name="syntax"></a>語法  
   

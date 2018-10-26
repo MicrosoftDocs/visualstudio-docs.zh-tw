@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841932"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將分析回合的符號內嵌到 .*vsp* 檔案。  
@@ -31,16 +31,16 @@ ms.locfileid: "34815834"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>將分析回合的符號內嵌到分析資料 (.*vsp*) 檔案  
   
--   在命令提示字元視窗中，鍵入下列命令：  
+- 在命令提示字元視窗中，鍵入下列命令：  
   
-     \<路徑>**VSPerfReport \<** VSP 檔案> **/PackSymbols**  
+   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/PackSymbols**  
   
-     .*vsps* 檔案預設會使用 .*vsp* 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。  
+   .*vsps* 檔案預設會使用 .*vsp* 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>建立摘要分析資料檔案  
   
--   在命令提示字元視窗中，鍵入下列命令：  
+- 在命令提示字元視窗中，鍵入下列命令：  
   
-     \<路徑>**VSPerfReport \<** VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]  
+   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]  
   
-     .*vsps* 檔案預設會使用 .*vsp* 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。
+   .*vsps* 檔案預設會使用 .*vsp* 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。

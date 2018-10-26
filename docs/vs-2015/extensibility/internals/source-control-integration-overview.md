@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836764"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49224181"
   
  若要實作原始檔控制外掛程式使用原始檔控制外掛程式 API，請遵循下列步驟：  
   
-1.  建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
+1. 建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
   
-2.  藉由適當的登錄項目註冊的 DLL (中所述[如何： 安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. 藉由適當的登錄項目註冊的 DLL (中所述[如何： 安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
-3.  UI 和顯示原始檔控制配接器套件 （會處理透過原始檔控制外掛程式的原始檔控制功能的 Visual Studio 元件） 出現提示時，建立協助程式  
+3. UI 和顯示原始檔控制配接器套件 （會處理透過原始檔控制外掛程式的原始檔控制功能的 Visual Studio 元件） 出現提示時，建立協助程式  
   
- 在原始檔控制命令的回應，Visual Studio IDE 提供的基本作業的標準 UI，然後將資訊傳遞至原始檔控制外掛程式透過原始檔控制外掛程式 API 中所定義的函式。 如需進階的選項，原始檔控制外掛程式上無法呼叫來呈現它自己的 UI，比方說，瀏覽原始檔控制專案。 這表示，使用者可能會顯示兩個可能是不同的 UI 處理原始檔控制時： Visual Studio 會顯示 UI 和原始檔控制外掛程式所提供的 UI。 這是最明顯與進階的原始檔控制作業。  
+   在原始檔控制命令的回應，Visual Studio IDE 提供的基本作業的標準 UI，然後將資訊傳遞至原始檔控制外掛程式透過原始檔控制外掛程式 API 中所定義的函式。 如需進階的選項，原始檔控制外掛程式上無法呼叫來呈現它自己的 UI，比方說，瀏覽原始檔控制專案。 這表示，使用者可能會顯示兩個可能是不同的 UI 處理原始檔控制時： Visual Studio 會顯示 UI 和原始檔控制外掛程式所提供的 UI。 這是最明顯與進階的原始檔控制作業。  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>若要實作原始檔控制外掛程式的缺點  
   

@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f95c3e68190acbd53c4b75ceb81abf2885d15bce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922623"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：P/Invokes 必須正確宣告
+
 |||
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|在組件外，看不到非-中斷-如果 P/Invoke 宣告的參數。 中斷-可以看到組件外部的 P/Invoke 宣告的參數。|
 
 ## <a name="cause"></a>原因

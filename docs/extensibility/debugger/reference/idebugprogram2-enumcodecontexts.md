@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts |Microsoft 文件
+title: IDebugProgram2::EnumCodeContexts |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902512"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-擷取原始程式檔中指定位置的程式碼內容的清單。  
+擷取一份原始程式檔中的指定位置的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int EnumCodeContexts(
   
 #### <a name="parameters"></a>參數  
  `pDocPos`  
- [in][IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)代表已知 IDE 原始程式檔中的抽象位置物件。  
+ [in][IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)代表已知的 ide 原始程式檔中的抽象位置物件。  
   
  `ppEnum`  
  [out]傳回[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)物件，其中包含一份程式碼內容。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法可讓偵錯工作階段管理員 (SDM) 或對應至程式碼位置的來源檔案位置的 IDE。 如果來源會產生多個區塊的程式碼 （例如，c + + 範本），則會傳回一個以上的程式碼內容。  
+ 這個方法可讓偵錯工作階段管理員 (SDM) 或對應到的程式碼指定位置的來源檔案位置的 IDE。 如果來源所產生的程式碼 （例如，c + + 範本） 的多個區塊，則會傳回一個以上的程式碼內容。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

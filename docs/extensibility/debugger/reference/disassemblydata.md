@@ -1,5 +1,5 @@
 ---
-title: DisassemblyData |Microsoft 文件
+title: DisassemblyData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4276009244f1d49b89311d5d158a34bebf3fcf23
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: a7ab7b278c03d092e1e559f1eb74f5d6bdc86d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816848"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
-描述一個反組譯碼指令整合式的開發環境 (IDE) 以顯示。  
+描述一個反組譯碼指令的整合式的開發環境 (IDE) 來顯示。  
   
 ## <a name="syntax"></a>語法  
   
@@ -68,13 +68,13 @@ public struct DisassemblyData {
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)指定哪些欄位都已填寫的常數。  
   
  `bstrAddress`  
- 從某個起點 （通常是相關聯的函式的開頭） 的位移為位址。  
+ 從某個起點 （通常是相關聯的函式的開頭） 的位移位址。  
   
  `bstrCodeBytes`  
- 針對這個指令程式碼位元組。  
+ 此指令程式碼位元組。  
   
  `bstrOpcode`  
- 這個指令的 opcode。  
+ 這個指示 opcode。  
   
  `bstrOperands`  
  這個指令的運算元。  
@@ -83,38 +83,38 @@ public struct DisassemblyData {
  符號名稱，如果有的話，與相關聯的位址 （公用符號、 標籤和等等）。  
   
  `uCodeLocationId`  
- 此行反組譯程式碼位置識別項。 是否大於另一個程式碼內容位址中一行的程式碼內容位址，然後反組譯的碼的第一個位置識別碼也會大於第二個程式碼位置識別項。  
+ 反組譯此行程式碼位置識別碼。 如果一行的程式碼內容位址大於另一個程式碼內容位址，然後反組譯程式碼位置識別碼的第一個也會大於第二個程式碼位置識別碼。  
   
  `posBeg`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)對應至文件中的位置反組譯碼資料開始處。  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的開始處的位置。  
   
  `posEnd`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)對應至文件中的反組譯碼資料結束的位置。  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的結束位置的位置。  
   
  `bstrDocumentUrl`  
- 可以表示為檔案名稱的文字文件`bstrDocumentUrl`欄位填入檔案名稱，其中可以找到來源，使用格式`file://file name`。  
+ 可以表示為檔案名稱的文字文件`bstrDocumentUrl`欄位會填入檔案名稱，您可以找到來源，使用格式`file://file name`。  
   
- 無法表示為檔案名稱的文字文件`bstrDocumentUrl`是文件的唯一識別碼和偵錯引擎必須實作[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。  
+ 無法為檔案名稱，表示文字文件`bstrDocumentUrl`是文件的唯一識別碼，而且必須實作的偵錯引擎[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。  
   
- 這個欄位也可以包含總和檢查碼的其他資訊。 如需詳細資訊，請參閱 < 備註 >。  
+ 此欄位也可以包含總和檢查碼的其他資訊。 如需詳細資訊，請參閱 < 備註 >。  
   
  `dwByteOffset`  
- 指令是從程式碼行開頭的位元組數目。  
+ 指令會從程式碼行開頭的位元組數目。  
   
  `dwFlags`  
- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)常數，指定所使用的旗標。  
+ [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)指定的旗標都是作用中的常數。  
   
 ## <a name="remarks"></a>備註  
  每個`DisassemblyData`結構描述反組譯碼的一個指令。 這些結構的陣列會傳回從[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構用於以文字為基礎的文件。 此指示的來源的程式碼範圍填寫僅適用於從陳述式或列，例如產生的第一個指令，當`dwByteOffset == 0`。  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構可用來以文字為基礎的文件。 此指令的來源的程式碼範圍填妥只針對從陳述式或列，例如產生的第一個指令，當`dwByteOffset == 0`。  
   
- 可從程式碼，取得非文字的文件，文件內容和`bstrDocumentUrl`欄位應為 null 的值。 如果`bstrDocumentUrl`欄位等同於`bstrDocumentUrl`欄位在舊版`DisassemblyData`陣列項目，然後設定`bstrDocumentUrl`為 null 值。  
+ 對於非文字的文件，文件內容可從此程式碼，而`bstrDocumentUrl`欄位應為 null 的值。 如果`bstrDocumentUrl`欄位是相同`bstrDocumentUrl`欄位中先前`DisassemblyData`陣列項目，然後設定`bstrDocumentUrl`null 值。  
   
- 如果`dwFlags`欄位具有`DF_DOCUMENT_CHECKSUM`旗標設定，其他的總和檢查碼資訊如下所指向的字串`bstrDocumentUrl`欄位。 具體而言，null 字串結束字元之後那里遵循識別總和檢查碼演算法，依次後面 4 位元組值，指出總和檢查碼中的位元組數目，而且，依次後面的總和檢查碼位元組的 GUID。 如何編碼和解碼的欄位中，請參閱本主題的範例[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
+ 如果`dwFlags`欄位都`DF_DOCUMENT_CHECKSUM`加上旗標集，則其他的總和檢查碼資訊如下所指向的字串`bstrDocumentUrl`欄位。 具體而言，null 字串結束字元之後那里遵循用來識別，進而後面 4 位元組值，指出總和檢查碼中的位元組數目，而且，依序且後面跟著的總和檢查碼位元組的總和檢查碼演算法的 GUID。 如何編碼和解碼的欄位中，請參閱本主題的範例[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
   
 ## <a name="example"></a>範例  
- `bstrDocumentUrl`欄位只能包含字串以外的其他資訊，如果`DF_DOCUMENT_CHECKSUM`旗標設定。 建立和讀取此編碼的字串的程序是直接在[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]。 不過，在[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]，它是另一個主題。 那些好奇，如下列範例會示範如何建立編碼的字串，從[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]和其中一種方式來解碼的編碼的字串中[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
+ `bstrDocumentUrl`欄位只能包含字串以外的其他資訊，如果`DF_DOCUMENT_CHECKSUM`旗標設定。 建立和讀取此編碼的字串的程序相當簡單[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]。 不過，在[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]，它是另一回事。 對於使用者而言很好奇，下列範例會示範如何建立編碼的字串，從[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]其中一種方式來解碼的編碼的字串和[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
   
 ```csharp  
 using System;  

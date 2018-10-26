@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911599"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>如何：不成功的 Visual Studio 專案升級疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ ms.locfileid: "49176109"
   
 #### <a name="to-resolve-incorrect-references"></a>若要解決不正確的參考  
   
-1.  在文字編輯器中開啟您的專案檔。  
+1. 在文字編輯器中開啟您的專案檔。  
   
-2.  開啟專案屬性。  
+2. 開啟專案屬性。  
   
-3.  選取正確**目標 Framework**值。 或者，您可以修改的值`<TargetFrameworkVersion>`直接在專案檔中的項目。  
+3. 選取正確**目標 Framework**值。 或者，您可以修改的值`<TargetFrameworkVersion>`直接在專案檔中的項目。  
   
- 如果您要在升級中執行專案[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本中，您必須更新專案的參考，以及更新任何`Imports`或`Using`呼叫參考的陳述式。 如果您的專案載入在 IDE 中，您可以使用更新的參考**方案總管**或**參考管理員** 對話方塊。  
+   如果您要在升級中執行專案[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本中，您必須更新專案的參考，以及更新任何`Imports`或`Using`呼叫參考的陳述式。 如果您的專案載入在 IDE 中，您可以使用更新的參考**方案總管**或**參考管理員** 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [/ 升級 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

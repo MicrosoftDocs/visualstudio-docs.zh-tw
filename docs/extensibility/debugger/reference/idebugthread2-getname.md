@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName |Microsoft 文件
+title: IDebugThread2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ef4ff5a2e1896bccaab82b32c1244da9f1ca2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 670ee7b9fe8262e981f3c0abeb57710c2da9b0e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898469"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 取得執行緒的名稱。  
@@ -44,10 +44,10 @@ int GetName (
  [out]傳回執行緒的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 擷取的名稱永遠可以顯示的名稱，而且此名稱會說明執行緒。 執行緒名稱可能會衍生自執行階段架構支援將具名的執行緒，或可能被衍生自的偵錯引擎的名稱。 或者，設定執行緒名稱，由呼叫[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)方法。  
+ 擷取的名稱一律可以顯示的名稱，而且此名稱描述執行緒。 執行緒名稱可能會衍生自執行階段架構支援將具名的執行緒，或可能被衍生自的偵錯引擎的名稱。 或者，設定執行緒名稱，藉由呼叫[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

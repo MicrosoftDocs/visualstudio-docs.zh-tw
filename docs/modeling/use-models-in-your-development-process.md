@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824291"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
@@ -123,7 +123,7 @@ ms.locfileid: "47859389"
 不同種類的圖表可用於描述不同抽象層級的設計。 許多圖表類型可用於多個層級。 下表顯示每種圖表類型的使用方式。
 
 |設計層級|圖表類型|
-|------------------|-------------------|
+|-|-|
 |商務程序<br /><br /> 了解使用系統的內容可協助您了解使用者的需求。|-概念性類別圖會描述商務程序內使用的商務概念。|
 |使用者需求<br /><br /> 使用者對於系統需求的定義。|個別的文件可以描述商務規則和服務需求品質。|
 |高階設計<br /><br /> 系統的整體結構：主要元件以及它們如何結合在一起。|相依性圖表描述系統如何結構化為彼此相依的組成部分。 您可以驗證針對相依性圖表，以確保它符合此架構的程式碼。|
@@ -132,9 +132,9 @@ ms.locfileid: "47859389"
 ## <a name="external-resources"></a>外部資源
 
 |**分類**|**連結**|
-|------------------|---------------|
+|-|-|
 |**影片**|![影片連結](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 影片： 如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [Channel 9: UML 搭配 Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列： UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**論壇**|- [Visual Studio Visualization & Modeling 工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|- [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**部落格**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

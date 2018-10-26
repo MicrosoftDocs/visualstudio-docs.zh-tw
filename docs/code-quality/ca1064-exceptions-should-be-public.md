@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a47334da2879760142dd925917339a011890554
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 904aa1fe83677e2d53d2e93964619a5c2aa82625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816818"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：例外狀況必須是公用
+
 |||
 |-|-|
 |TypeName|ExceptionsShouldBePublic|
 |CheckId|CA1064|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

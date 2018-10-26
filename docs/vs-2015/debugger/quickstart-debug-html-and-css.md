@@ -26,12 +26,12 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873925"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ ms.locfileid: "49225481"
   
  本主題內容：  
   
--   [檢查 Llive DOM](#InspectingDOM)  
+- [檢查 Llive DOM](#InspectingDOM)  
   
--   [Selecting elements](#SelectingElements)  
+- [Selecting elements](#SelectingElements)  
   
- 如需使用 DOM 總管的詳細資訊，請參閱下列主題：  
+  如需使用 DOM 總管的詳細資訊，請參閱下列主題：  
   
--   [使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)  
+- [使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)  
+- [使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)  
+- [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)  
   
--   [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
+- [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
--   [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)  
+- [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)  
   
- 如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+  如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InspectingDOM"></a> 檢查 Llive DOM  
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
@@ -70,13 +70,13 @@ ms.locfileid: "49225481"
   
  您可將 DOM 總管用於：  
   
--   巡覽 DOM 項目樹狀子結構，並檢查呈現的 HTML、CSS 和 JavaScript 程式碼。  
+- 巡覽 DOM 項目樹狀子結構，並檢查呈現的 HTML、CSS 和 JavaScript 程式碼。  
   
--   動態編輯所呈現項目的屬性和 CSS 樣式，並立即看到結果。  
+- 動態編輯所呈現項目的屬性和 CSS 樣式，並立即看到結果。  
   
--   檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。  
+- 檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。  
   
- 偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 Windows 市集應用程式也支援 [事件]  和 [變更]  索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
+  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 Windows 市集應用程式也支援 [事件]  和 [變更]  索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
 >  如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
@@ -88,100 +88,100 @@ ms.locfileid: "49225481"
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>藉由檢查 Live DOM 偵錯  
   
-1.  在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
+1. 在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
   
-2.  選擇**JavaScript** > **存放區**，選擇  **Windows 應用程式**或是**Windows Phone 應用程式**，然後選擇  **空白應用程式**。  
+2. 選擇**JavaScript** > **存放區**，選擇  **Windows 應用程式**或是**Windows Phone 應用程式**，然後選擇  **空白應用程式**。  
   
-3.  輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
+3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
   
-4.  在 default.html 的 BODY 項目中，加入此段程式碼：  
+4. 在 default.html 的 BODY 項目中，加入此段程式碼：  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  開啟 default.css 並新增下列 CSS：  
+5. 開啟 default.css 並新增下列 CSS：  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  以此段程式碼取代 default.js 中的程式碼：  
+6. 以此段程式碼取代 default.js 中的程式碼：  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
-        };  
+           pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
+           pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
+           pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     下圖顯示當我們在 Phone 模擬器中執行此應用程式時，所希望看到的樣子 (與在模擬器中看到的相似)。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。  
+    下圖顯示當我們在 Phone 模擬器中執行此應用程式時，所希望看到的樣子 (與在模擬器中看到的相似)。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。  
   
-     ![顯示預期的結果的 FlipView 應用程式](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
+    ![顯示預期的結果的 FlipView 應用程式](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
   
-7.  在 [ **偵錯** ] 工具列上，選取 [ **開始偵錯** ] 按鈕旁邊下拉式清單中的 [ **模擬器** ] 或 [ **Emulator 8.1 WVGA 4 英吋 512MB** ]：  
+7. 在 [ **偵錯** ] 工具列上，選取 [ **開始偵錯** ] 按鈕旁邊下拉式清單中的 [ **模擬器** ] 或 [ **Emulator 8.1 WVGA 4 英吋 512MB** ]：  
   
-     ![選取偵錯目標清單](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![選取偵錯目標清單](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  選擇 [JavaScript] **Emulator 8.1 WVGA 4 英吋 512MB** > **模擬器**，或按 F5，以偵錯模式執行您的應用程式。  
+8. 選擇 [JavaScript] **Emulator 8.1 WVGA 4 英吋 512MB** > **模擬器**，或按 F5，以偵錯模式執行您的應用程式。  
   
-     接下來會在模擬器或 Phone 模擬器中執行應用程式，不過您看到的主要是空白畫面，因為樣式有幾個 Bug。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
+    接下來會在模擬器或 Phone 模擬器中執行應用程式，不過您看到的主要是空白畫面，因為樣式有幾個 Bug。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
   
 9. 如果您是在 [模擬器] 中執行應用程式，請選擇 [模擬器] 右邊的 [變更解析度]  工具列命令，將螢幕解析度設定為 1280 x 800。 如此即可確保下列步驟中顯示的值與您在模擬器中看到的都完全相同。  
   
@@ -234,15 +234,15 @@ ms.locfileid: "49225481"
   
      在 [配置]  索引標籤中，您將看到下列值：  
   
-    -   適用於模擬器的是 320px (Offset) 和 320px (Margin)。  
+    - 適用於模擬器的是 320px (Offset) 和 320px (Margin)。  
   
-    -   適用於 Phone 模擬器的是 100px (Offset) 和 100px (Margin)。  
+    - 適用於 Phone 模擬器的是 100px (Offset) 和 100px (Margin)。  
   
-     下圖顯示當我們使用 [Phone 模擬器] (100px 位移和邊界) 時的 [配置]  外觀。  
+      下圖顯示當我們使用 [Phone 模擬器] (100px 位移和邊界) 時的 [配置]  外觀。  
   
-     ![DOM 總管配置 索引標籤](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![DOM 總管配置 索引標籤](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
-     這似乎不正確。 [ **計算** ] 索引標籤也會顯示相同的邊界值。  
+      這似乎不正確。 [ **計算** ] 索引標籤也會顯示相同的邊界值。  
   
 21. 選擇 [ **樣式** ] 索引標籤，尋找 `#fView` CSS 選取器。 您可以看到 **margin** 屬性的值為 25%。  
   
@@ -267,23 +267,23 @@ ms.locfileid: "49225481"
 ##  <a name="SelectingElements"></a> Selecting elements  
  偵錯應用程式時，您可以使用三種方式選取 DOM 項目：  
   
--   直接在 [DOM 總管] 視窗中按一下項目 (或使用方向鍵)。  
+- 直接在 [DOM 總管] 視窗中按一下項目 (或使用方向鍵)。  
   
--   使用 [ **選取元素** ] 按鈕 (Ctrl+B)。  
+- 使用 [ **選取元素** ] 按鈕 (Ctrl+B)。  
   
--   使用  `select` 命令，此為其中一個 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+- 使用  `select` 命令，此為其中一個 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
- 當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
+  當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
   
- ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
- 按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
+  按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
   
- 在您選擇 [選取項目] 之前，您可以透過切換 [針對在 DOM 樹狀目錄中選取的項目顯示網頁醒目提示方塊]  按鈕，指定是否要在執行中的應用程式內反白顯示該項目。 下圖顯示這個按鈕。 預設會顯示醒目提示。  
+  在您選擇 [選取項目] 之前，您可以透過切換 [針對在 DOM 樹狀目錄中選取的項目顯示網頁醒目提示方塊]  按鈕，指定是否要在執行中的應用程式內反白顯示該項目。 下圖顯示這個按鈕。 預設會顯示醒目提示。  
   
- ![顯示網頁醒目提示按鈕](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![顯示網頁醒目提示按鈕](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
- 當您選擇要醒目提示項目時，只要在模擬器中將滑鼠停留在任何項目上方，該項目就會醒目提示。 已反白顯示之元素的色彩，會與顯示在 [DOM 總管] 之 [ **配置** ] 索引標籤中的方塊模型相符。  
+  當您選擇要醒目提示項目時，只要在模擬器中將滑鼠停留在任何項目上方，該項目就會醒目提示。 已反白顯示之元素的色彩，會與顯示在 [DOM 總管] 之 [ **配置** ] 索引標籤中的方塊模型相符。  
   
 > [!NOTE]
 >  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
@@ -293,13 +293,13 @@ ms.locfileid: "49225481"
 ##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台都支援 Visual Studio Tools for JavaScript、DOM 總管和 [JavaScript 主控台] 視窗：  
   
--   使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  
+- 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  
   
--   在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
+- 在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
   
--   在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
+- 在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
- 移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
+  移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
   
 ## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

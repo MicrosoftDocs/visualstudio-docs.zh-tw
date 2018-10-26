@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938470"
 ---
 # <a name="historical-debugging"></a>歷程偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 (遞增 `testInt` 20 次的結果)。 (我們也假設您看不到 `AddInt()` 中的 Bug)。但是，結果實際上是 44。 如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？ 我們可以使用歷程偵錯更迅速且更輕鬆地找到 Bug。 方式如下：  
   
-1.  在 [工具] / [選項] / [IntelliTrace] / [一般] 中，確定已啟用 IntelliTrace，然後選取 [IntelliTrace 事件和呼叫資訊] 選項。 如果您未選取此選項，則無法看到巡覽邊 (如下所述)。  
+1. 在 [工具] / [選項] / [IntelliTrace] / [一般] 中，確定已啟用 IntelliTrace，然後選取 [IntelliTrace 事件和呼叫資訊] 選項。 如果您未選取此選項，則無法看到巡覽邊 (如下所述)。  
   
-2.  在 `Console.WriteLine(resultInt);` 行上設定中斷點。  
+2. 在 `Console.WriteLine(resultInt);` 行上設定中斷點。  
   
-3.  開始偵錯。 程式碼會執行到中斷點。 在 [**區域變數**] 視窗中，您可以看到的值`resultInt`是 44。  
+3. 開始偵錯。 程式碼會執行到中斷點。 在 [**區域變數**] 視窗中，您可以看到的值`resultInt`是 44。  
   
-4.  開啟**診斷工具** 視窗 (**偵錯 / 顯示診斷工具**)。 程式碼視窗應該如下所示：  
+4. 開啟**診斷工具** 視窗 (**偵錯 / 顯示診斷工具**)。 程式碼視窗應該如下所示：  
   
-     ![在中斷點的程式碼視窗](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![在中斷點的程式碼視窗](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  您應該會在左邊界旁邊看到雙箭頭，就在中斷點正上方。 這個區域稱為巡覽邊，並用於歷程偵錯。 按一下箭頭。  
+5. 您應該會在左邊界旁邊看到雙箭頭，就在中斷點正上方。 這個區域稱為巡覽邊，並用於歷程偵錯。 按一下箭頭。  
   
-     在程式碼視窗中，您應該會看到前一行程式碼 (`int resultInt = AddIterative(testInt);`) 加上粉紅色。 在視窗上方，您應該會看到一則訊息，指出現在您正在使用歷程偵錯。  
+    在程式碼視窗中，您應該會看到前一行程式碼 (`int resultInt = AddIterative(testInt);`) 加上粉紅色。 在視窗上方，您應該會看到一則訊息，指出現在您正在使用歷程偵錯。  
   
-     程式碼視窗現在如下所示：  
+    程式碼視窗現在如下所示：  
   
-     ![在 歷程偵錯模式中的程式碼視窗](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![在 歷程偵錯模式中的程式碼視窗](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  現在您可以逐步執行`AddAll()`方法 (**F11**，或有**逐步執行**巡覽邊中的按鈕。 逐步往前 (**F10**，或**移至下一個呼叫**巡覽邊中。 粉紅色行現在位於 `j = AddInt(j);` 行。 **F10**在此情況下不會逐步下一行程式碼。 而是會逐步執行至下一個函式呼叫。 歷程偵錯呼叫會巡覽不同的呼叫，並略過不包括函式呼叫的程式碼行。  
+6. 現在您可以逐步執行`AddAll()`方法 (**F11**，或有**逐步執行**巡覽邊中的按鈕。 逐步往前 (**F10**，或**移至下一個呼叫**巡覽邊中。 粉紅色行現在位於 `j = AddInt(j);` 行。 **F10**在此情況下不會逐步下一行程式碼。 而是會逐步執行至下一個函式呼叫。 歷程偵錯呼叫會巡覽不同的呼叫，並略過不包括函式呼叫的程式碼行。  
   
-7.  現在會逐步執行 `AddInt()` 方法。 您應該會立即看到此程式碼中的 Bug。  
+7. 現在會逐步執行 `AddInt()` 方法。 您應該會立即看到此程式碼中的 Bug。  
   
- 此程序只會大略探討您如何使用歷程偵錯。 若要深入了解不同的設定以及巡覽邊中不同按鈕的效果，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   此程序只會大略探討您如何使用歷程偵錯。 若要深入了解不同的設定以及巡覽邊中不同按鈕的效果，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 
 

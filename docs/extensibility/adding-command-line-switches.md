@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901043"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
 您可以新增套用至 VSPackage 的命令列參數時*devenv.exe*執行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>宣告的參數和其屬性的名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器**AddCommandSwitchPackage**搭配任何引數與自動載入 VSPackage。  
@@ -36,7 +36,7 @@ ms.locfileid: "39153294"
 |-|-|-|-|
 | 參數 | 描述|
 | 引數 | 參數的引數數目。 可以是 「 * 」，或引數清單。 |
-| DemandLoad |  如果這設定為 1，否則設為 0，如果要自動載入 VSPackage。 |  
+| DemandLoad | 如果這設定為 1，否則設為 0，如果要自動載入 VSPackage。 |  
 | HelpString | 說明字串或資源識別碼的字串來顯示具有**devenv /？**。 |
 | 名稱 | 此參數。 |
 | PackageGuid | 封裝的 GUID。 |  
@@ -54,11 +54,11 @@ ms.locfileid: "39153294"
 ## <a name="retrieve-command-line-switches"></a>擷取命令列參數  
  當載入封裝時，您可以藉由完成下列步驟來擷取命令列參數。  
   
-1.  在您的 VSPackage 中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作中，呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>介面。  
+1. 在您的 VSPackage 中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作中，呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>介面。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>擷取使用者輸入的命令列參數。  
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>擷取使用者輸入的命令列參數。  
   
- 下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者：  
+   下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者：  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

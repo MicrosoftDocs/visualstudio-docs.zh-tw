@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873886"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說： 將資料繫結至 Word 執行窗格上的控制項
   本逐步解說會示範在 Word 執行窗格上的控制項資料繫結。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。  
@@ -78,28 +78,28 @@ ms.locfileid: "38781928"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>將資料來源加入至專案  
   
-1.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
+1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。  
   
-    > [!NOTE]  
-    >  如果**顯示資料來源**，按一下 Word 文件，然後再檢查一次。  
+   > [!NOTE]  
+   >  如果**顯示資料來源**，按一下 Word 文件，然後再檢查一次。  
   
-2.  按一下 **加入新的資料來源**來啟動**資料來源組態精靈**。  
+2. 按一下 **加入新的資料來源**來啟動**資料來源組態精靈**。  
   
-3.  選取 [**資料庫**，然後按一下**下一步]**。  
+3. 選取 [**資料庫**，然後按一下**下一步]**。  
   
-4.  選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。  
+4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。  
   
-5.  按 [ **下一步**]。  
+5. 按 [ **下一步**]。  
   
-6.  清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
+6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。  
   
-7.  依序展開**資料表**中的節點**資料庫物件**視窗。  
+7. 依序展開**資料表**中的節點**資料庫物件**視窗。  
   
-8.  選取此核取方塊旁**供應商**並**產品**資料表。  
+8. 選取此核取方塊旁**供應商**並**產品**資料表。  
   
 9. 按一下 [ **完成**]。  
   
- 精靈會新增**供應商**資料表並**產品**資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
+   精靈會新增**供應商**資料表並**產品**資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>若要將資料繫結 Windows Form 控制項加入執行窗格控制項  
   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865775"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -55,19 +55,19 @@ ms.locfileid: "44281087"
 
 - 如果您想要將您的預設認證用於 Proxy，您可以執行下列動作：
 
-    1. 在 **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 中尋找 **devenv.exe.config** (devenv.exe 設定檔)。
+  1. 在 **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 中尋找 **devenv.exe.config** (devenv.exe 設定檔)。
 
-    1. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
+  2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
+      您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
 
-    OR
+     OR
 
 - 您也可以遵循[如何透過驗證的 Web Proxy 進行連線](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) \(英文\) 部落格文章中的指示，該文章能示範如何新增可讓您使用 Proxy 的程式碼。
 
@@ -109,8 +109,8 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 
 - &#42;.nuget.org (適用於 NuGet 連線)
 
- > [!NOTE]
- > 此清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以在 %APPData%\Nuget\NuGet.Config 中檢查您所使用的 NuGet 伺服器。
+  > [!NOTE]
+  > 此清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以在 %APPData%\Nuget\NuGet.Config 中檢查您所使用的 NuGet 伺服器。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

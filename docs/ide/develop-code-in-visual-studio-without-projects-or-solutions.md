@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812071"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -64,9 +64,9 @@ ms.locfileid: "37117117"
 
    您現在可以瀏覽所複製存放庫中的資料夾和檔案，並在 Visual Studio 程式碼編輯器中檢視及搜尋程式碼，其中會包含語法色彩標示及其他功能。
 
-|         |         |
+| | |
 |---------|---------|
-|  ![影片的電影攝影機圖示](../install/media/video-icon.png)|    [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) 了解如何使用 Visual Studio 複製及開啟 GitHub 存放庫的程式碼。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png)| [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) 了解如何使用 Visual Studio 複製及開啟 GitHub 存放庫的程式碼。 |
 
 ## <a name="run-and-debug-your-code"></a>執行程式碼並對它進行偵錯
 

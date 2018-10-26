@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943059"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 
@@ -35,11 +35,11 @@ ms.locfileid: "36757964"
 
 ### <a name="use-quick-find"></a>使用快速尋找
 
-1.  工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯** > **尋找和取代** > **快速尋找**.
+1. 工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯** > **尋找和取代** > **快速尋找**.
 
-2.  輸入搜尋詞彙**Find what**文字方塊中，按一下 **尋找下一個**。
+2. 輸入搜尋詞彙**Find what**文字方塊中，按一下 **尋找下一個**。
 
-3.  搜尋字詞位於目前的工作流程。 下圖顯示位於設計工具中的活動顯示名稱：
+3. 搜尋字詞位於目前的工作流程。 下圖顯示位於設計工具中的活動顯示名稱：
 
    ![Workflow Designer 中的搜尋結果](../workflow-designer/media/designersearch.png)
 

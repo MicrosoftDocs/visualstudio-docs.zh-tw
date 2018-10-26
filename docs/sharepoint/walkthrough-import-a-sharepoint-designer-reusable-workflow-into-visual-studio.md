@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19c2ab969de8f3e1e24cf789ae3979d2c15809b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851474"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。  
@@ -38,17 +38,17 @@ ms.locfileid: "42626498"
   
  本逐步解說將示範下列工作：  
   
--   在 SharePoint Designer 中建立簡單、 可重複使用工作流程。  
+- 在 SharePoint Designer 中建立簡單、 可重複使用工作流程。  
   
--   匯出至 SharePoint Designer 可重複使用工作流程 *.wsp*檔案到 SharePoint。  
+- 匯出至 SharePoint Designer 可重複使用工作流程 *.wsp*檔案到 SharePoint。  
   
--   匯入 *.wsp*檔案載入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用匯入可重複使用工作流程專案。  
+- 匯入 *.wsp*檔案載入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用匯入可重複使用工作流程專案。  
   
--   加入程式碼變更工作流程。  
+- 加入程式碼變更工作流程。  
   
--   在 SharePoint 網站中使用匯入的工作流程。  
+- 在 SharePoint 網站中使用匯入的工作流程。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -64,21 +64,21 @@ ms.locfileid: "42626498"
   
 #### <a name="to-create-sharepoint-subsites"></a>若要建立 SharePoint 子網站  
   
-1.  在 SharePoint Designer 2010 中，在功能表列上選擇**檔案** > **新增空白網站**。  
+1. 在 SharePoint Designer 2010 中，在功能表列上選擇**檔案** > **新增空白網站**。  
   
-2.  在 **新增空白網站** 對話方塊中，瀏覽至 SharePoint 網站，您想要用來建立工作流程，或使用 http:// 的值*SystemName*/，然後選擇 **確定**按鈕。  
+2. 在 **新增空白網站** 對話方塊中，瀏覽至 SharePoint 網站，您想要用來建立工作流程，或使用 http:// 的值<em>SystemName</em>/，然後選擇 **確定**按鈕。  
   
-     首頁隨即出現。  
+    首頁隨即出現。  
   
-3.  在 [**子**區段中，選擇**新增**] 按鈕。  
+3. 在 [**子**區段中，選擇**新增**] 按鈕。  
   
-4.  在**新增**對話方塊方塊中，選擇**SharePoint 範本**從左窗格中的清單，然後選擇 **小組網站**從右窗格中的清單。  
+4. 在**新增**對話方塊方塊中，選擇**SharePoint 範本**從左窗格中的清單，然後選擇 **小組網站**從右窗格中的清單。  
   
-5.  在**指定網站的位置**方塊中，將 word**子網站**URL 中**SPD1**，然後選擇**確定**  按鈕。  
+5. 在**指定網站的位置**方塊中，將 word**子網站**URL 中**SPD1**，然後選擇**確定**  按鈕。  
   
-     這會開啟新的子網站，到 SharePoint Designer。 關閉 SharePoint Designer 的這個執行個體，並返回第一個執行個體 （最上層站台）。  
+    這會開啟新的子網站，到 SharePoint Designer。 關閉 SharePoint Designer 的這個執行個體，並返回第一個執行個體 （最上層站台）。  
   
-6.  重複步驟 3-5 來建立第二個的子網站，這次是取代單字**subsite**中[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]具有**SPD2**。  
+6. 重複步驟 3-5 來建立第二個的子網站，這次是取代單字**subsite**中[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]具有**SPD2**。  
   
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>建立 SharePoint Designer 可重複使用工作流程
  因為 SharePoint 不包含任何可重複使用的工作流程，您可以使用此範例中，您會建立一個。 在此簡單的工作流程，當使用者有特定的標題，工作清單 中輸入新的工作的工作會指派給該使用者。  
@@ -158,32 +158,32 @@ ms.locfileid: "42626498"
   
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>若要從.wsp 檔案匯入工作流程，並加以修改  
   
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇**檔案** > **新增** > **專案**。  
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇**檔案** > **新增** > **專案**。  
   
-2.  在**新的專案**對話方塊方塊中，展開**SharePoint**之下的節點**Visual C#** 或**Visual Basic**，然後選擇  **2010年**節點。  
+2. 在**新的專案**對話方塊方塊中，展開**SharePoint**之下的節點**Visual C#** 或**Visual Basic**，然後選擇  **2010年**節點。  
   
-3.  中**範本**窗格中，選擇**匯入可重複使用 SharePoint 2010 工作流程**範本中，保留做為專案名稱**WorkflowImportProject1**，然後選擇**確定** 按鈕。  
+3. 中**範本**窗格中，選擇**匯入可重複使用 SharePoint 2010 工作流程**範本中，保留做為專案名稱**WorkflowImportProject1**，然後選擇**確定** 按鈕。  
   
-     SharePoint 自訂精靈 隨即出現。  
+    SharePoint 自訂精靈 隨即出現。  
   
-4.  在 **指定偵錯的網站和安全性層級**頁面上，輸入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]與您先前建立的第二個 SharePoint 子網站： http://*系統名稱*/SPD2。  
+4. 在 **指定偵錯的網站和安全性層級**頁面上，輸入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]與您先前建立的第二個 SharePoint 子網站： http://<em>系統名稱</em>/SPD2。  
   
-5.  在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕，然後選擇**下一步**  按鈕。  
+5. 在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕，然後選擇**下一步**  按鈕。  
   
-     如需有關沙箱和伺服器陣列方案，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
+    如需有關沙箱和伺服器陣列方案，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
-6.  在 [**指定新專案來源**頁面上，瀏覽至您先前儲存在系統上位置 *.wsp*檔案，開啟檔案，然後選擇**下一步]** 按鈕。  
+6. 在 [**指定新專案來源**頁面上，瀏覽至您先前儲存在系統上位置 *.wsp*檔案，開啟檔案，然後選擇**下一步]** 按鈕。  
   
-    > [!NOTE]  
-    >  選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。  
+   > [!NOTE]  
+   >  選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。  
   
-     這會顯示一份可供匯入可重複使用工作流程。  
+    這會顯示一份可供匯入可重複使用工作流程。  
   
-7.  在**選取要匯入項目**方塊中，選擇**SPD Task Workflow**工作流程，然後選擇**完成** 按鈕。  
+7. 在**選取要匯入項目**方塊中，選擇**SPD Task Workflow**工作流程，然後選擇**完成** 按鈕。  
   
-     匯入作業完成之後，專案名為**WorkflowImportProject1**會建立包含名為工作流程**SPD_Workflow_TestFT**。 在此資料夾是工作流程的定義檔*Elements.xml*和 工作流程設計工具檔案 (*.xoml*)。 設計工具包含兩個檔案： 規則檔案 (.rules) 和程式碼後置檔案 (任一 *.cs*或是 *.vb*，取決於您的專案的程式設計語言)。  
+    匯入作業完成之後，專案名為**WorkflowImportProject1**會建立包含名為工作流程**SPD_Workflow_TestFT**。 在此資料夾是工作流程的定義檔*Elements.xml*和 工作流程設計工具檔案 (*.xoml*)。 設計工具包含兩個檔案： 規則檔案 (.rules) 和程式碼後置檔案 (任一 *.cs*或是 *.vb*，取決於您的專案的程式設計語言)。  
   
-8.  在 **方案總管**，刪除**其他匯入檔案**資料夾。  
+8. 在 **方案總管**，刪除**其他匯入檔案**資料夾。  
   
 9. 在  *Elements.xml*檔案，請刪除`InstantiationURL="_layouts/IniErkflIP.sspx"`。  
   
@@ -203,11 +203,11 @@ ms.locfileid: "42626498"
   
 13. 在  **Windows Workflow v3.0**節點**工具箱**，執行下列步驟：  
   
-    -   開啟捷徑功能表**程式碼**活動，然後選擇**複製**。 在工作流程設計工具中，開啟 在下一行的捷徑功能表**SequenceActivity1**活動，然後選擇**貼上**。  
+    - 開啟捷徑功能表**程式碼**活動，然後選擇**複製**。 在工作流程設計工具中，開啟 在下一行的捷徑功能表**SequenceActivity1**活動，然後選擇**貼上**。  
   
-    -   拖曳**程式碼**活動，從**工具箱**工作流程設計工具中，並將它連接到下一行**SequenceActivity1**活動。  
+    - 拖曳**程式碼**活動，從**工具箱**工作流程設計工具中，並將它連接到下一行**SequenceActivity1**活動。  
   
-     這將活動加入至名為工作流程設計工具**CodeActivity1**。 在這個活動中，您將建立公告的公告清單中，當使用者開始工作流程的程式碼動作。  
+      這將活動加入至名為工作流程設計工具**CodeActivity1**。 在這個活動中，您將建立公告的公告清單中，當使用者開始工作流程的程式碼動作。  
   
 14. 請執行下列其中一組步驟：  
   

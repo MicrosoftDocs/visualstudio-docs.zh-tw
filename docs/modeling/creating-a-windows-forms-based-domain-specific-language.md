@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926679"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示定義域專屬語言 (DSL) 模型，而不是使用 DSL 圖表的狀態。 本主題會引導您完成繫結至 DSL 中，使用 Visual Studio Visualization and Modeling SDK 的 Windows Form。
@@ -26,30 +26,32 @@ ms.locfileid: "47859519"
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>若要建立的最小的 WinForms DSL
 
-1.  建立從 DSL**最小 WinForm 設計工具**範本。
+1. 建立從 DSL**最小 WinForm 設計工具**範本。
 
-     在本逐步解說中，會假設下列名稱：
+    在本逐步解說中，會假設下列名稱：
 
-    |||
-    |-|-|
-    |方案和 DSL 的名稱|FarmApp|
-    |命名空間|Company.FarmApp|
 
-2.  第一個範本提供的範例實驗：
+   | | |
+   |-|-|
+   | 方案和 DSL 的名稱 | FarmApp |
+   | 命名空間 | Company.FarmApp |
 
-    1.  轉換所有範本。
 
-    2.  建置並執行範例 (**CTRL + F5**)。
+2. 第一個範本提供的範例實驗：
 
-    3.  在 Visual Studio 的實驗性執行個體，開啟`Sample`偵錯的專案中的檔案。
+   1.  轉換所有範本。
 
-         請注意，它會顯示 Windows Form 控制項中。
+   2.  建置並執行範例 (**CTRL + F5**)。
 
-         您也可以查看 [總管] 中顯示的模型項的目。
+   3.  在 Visual Studio 的實驗性執行個體，開啟`Sample`偵錯的專案中的檔案。
 
-         加入一些項目，無論是在表單 或 總管 中，並請注意，它們會出現在其他的顯示。
+        請注意，它會顯示 Windows Form 控制項中。
 
- 在 Visual Studio 的主要執行個體，請注意下列有關 DSL 方案的重點：
+        您也可以查看 [總管] 中顯示的模型項的目。
+
+        加入一些項目，無論是在表單 或 總管 中，並請注意，它們會出現在其他的顯示。
+
+   在 Visual Studio 的主要執行個體，請注意下列有關 DSL 方案的重點：
 
 -   `DslDefinition.dsl` 不包含任何圖表項目。 這是因為您不會使用 DSL 圖表來檢視此 DSL 的執行個體模型。 相反地，您會將 Windows 表單繫結至模型，並在表單上的項目會顯示模型。
 
@@ -132,30 +134,30 @@ ms.locfileid: "47859519"
 
 #### <a name="to-connect-your-model-to-a-form"></a>您的模型連接至表單
 
-1.  在  **UI**專案中，刪除所有現有的.cs 檔案。
+1. 在  **UI**專案中，刪除所有現有的.cs 檔案。
 
-2.  加入新**使用者控制項**檔案名`FarmControl`要**UI**專案。
+2. 加入新**使用者控制項**檔案名`FarmControl`要**UI**專案。
 
-3.  在 **資料來源**視窗中的，在下拉式清單功能表**伺服陣列**，選擇**詳細資料**。
+3. 在 **資料來源**視窗中的，在下拉式清單功能表**伺服陣列**，選擇**詳細資料**。
 
-     保留其他屬性的預設設定。
+    保留其他屬性的預設設定。
 
-4.  在 [設計] 檢視中開啟 FarmControl.cs。
+4. 在 [設計] 檢視中開啟 FarmControl.cs。
 
-     拖曳**伺服陣列**從 FarmControl 資料來源 視窗。
+    拖曳**伺服陣列**從 FarmControl 資料來源 視窗。
 
-     一組控制項隨即出現，其中每一個屬性。 關聯性屬性不會產生的控制項。
+    一組控制項隨即出現，其中每一個屬性。 關聯性屬性不會產生的控制項。
 
-5.  刪除**farmBindingNavigator**。 這也會自動產生在`FarmControl`設計工具中，但它並不適用於此應用程式。
+5. 刪除**farmBindingNavigator**。 這也會自動產生在`FarmControl`設計工具中，但它並不適用於此應用程式。
 
-6.  使用工具箱 中建立兩個執行個體**DataGridView**，並將它們命名`AnimalGridView`和`FieldGridView`。
+6. 使用工具箱 中建立兩個執行個體**DataGridView**，並將它們命名`AnimalGridView`和`FieldGridView`。
 
-    > [!NOTE]
-    >  是的動物 」 和 「 欄位項目從資料來源視窗拖曳至控制項的替代步驟。 此動作會自動建立資料格和格線檢視與資料來源之間的繫結。 不過，此繫結運作不正常的 Dsl。 因此最好是建立資料格和繫結以手動方式。
+   > [!NOTE]
+   >  是的動物 」 和 「 欄位項目從資料來源視窗拖曳至控制項的替代步驟。 此動作會自動建立資料格和格線檢視與資料來源之間的繫結。 不過，此繫結運作不正常的 Dsl。 因此最好是建立資料格和繫結以手動方式。
 
-7.  如果 [工具箱] 中不含**ModelingBindingSource**工具，請將它加入。 在捷徑功能表上**資料**索引標籤上，選擇**選擇項目**。 在 [**選擇工具箱項目**對話方塊中，選取**ModelingBindingSource**從 **.NET Framework] 索引標籤**。
+7. 如果 [工具箱] 中不含**ModelingBindingSource**工具，請將它加入。 在捷徑功能表上**資料**索引標籤上，選擇**選擇項目**。 在 [**選擇工具箱項目**對話方塊中，選取**ModelingBindingSource**從 **.NET Framework] 索引標籤**。
 
-8.  使用 [工具箱] 中建立兩個執行個體**ModelingBindingSource**，並將它們命名`AnimalBinding`和`FieldBinding`。
+8. 使用 [工具箱] 中建立兩個執行個體**ModelingBindingSource**，並將它們命名`AnimalBinding`和`FieldBinding`。
 
 9. 設定**DataSource**每個屬性**ModelingBindingSource**來**farmBindingSource**。
 
@@ -165,15 +167,15 @@ ms.locfileid: "47859519"
 
 11. 調整您的體驗的伺服器陣列控制項的版面配置。
 
- **ModelingBindingSource**是配接器執行專屬 Dsl 的數個功能：
+    **ModelingBindingSource**是配接器執行專屬 Dsl 的數個功能：
 
--   它會更新包裝在 VMSDK 存放區交易中。
+- 它會更新包裝在 VMSDK 存放區交易中。
 
-     例如，當使用者刪除資料列的資料檢視方格中，規則的繫結將會導致交易例外狀況。
+   例如，當使用者刪除資料列的資料檢視方格中，規則的繫結將會導致交易例外狀況。
 
--   它可確保，當使用者選取一個資料列，[屬性] 視窗會顯示對應的模型項目，而不是資料方格資料列的屬性。
+- 它可確保，當使用者選取一個資料列，[屬性] 視窗會顯示對應的模型項目，而不是資料方格資料列的屬性。
 
- ![DslWpf4](../modeling/media/dslwpf4.png)結構描述資料來源和檢視之間的連結。
+  ![DslWpf4](../modeling/media/dslwpf4.png)結構描述資料來源和檢視之間的連結。
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成的 dsl 的繫結
 
@@ -247,62 +249,60 @@ ms.locfileid: "47859519"
 
 #### <a name="to-provide-add-buttons"></a>若要提供新增按鈕
 
-1.  在 FarmControl.cs 設計 檢視中，使用工具箱 中建立的表單上的按鈕。
+1. 在 FarmControl.cs 設計 檢視中，使用工具箱 中建立的表單上的按鈕。
 
-     編輯名稱與文字的按鈕，例如以`New Sheep`。
+    編輯名稱與文字的按鈕，例如以`New Sheep`。
 
-2.  開啟 [] 按鈕背後的程式碼 （例如藉由按兩下）。
+2. 開啟 [] 按鈕背後的程式碼 （例如藉由按兩下）。
 
-     編輯，如下所示：
+    編輯，如下所示：
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    您也必須插入下列指示詞：
 
-     您也必須插入下列指示詞：
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. 將類似的按鈕加入山羊和欄位。
 
-    ```
+4. 建置並執行方案。
 
-3.  將類似的按鈕加入山羊和欄位。
+5. 確認 [新增] 按鈕將項目。 在這兩個 FarmApp 總管，然後在適當的資料格檢視中，應該會出現新的項目。
 
-4.  建置並執行方案。
+    您應該能夠編輯的資料格檢視中的項目名稱。 您也可以從那裡刪除它。
 
-5.  確認 [新增] 按鈕將項目。 在這兩個 FarmApp 總管，然後在適當的資料格檢視中，應該會出現新的項目。
-
-     您應該能夠編輯的資料格檢視中的項目名稱。 您也可以從那裡刪除它。
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>關於程式碼中新增項目
  新的項目按鈕，如下列替代程式碼則稍微簡單一些。
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  不過，此程式碼不會設定新的項目的預設名稱。 它不會執行任何您可能已經定義中的自訂的合併**項目合併指示詞**的 DSL，並不會執行任何可能已定義的自訂合併程式碼。

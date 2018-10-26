@@ -15,12 +15,12 @@ ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc59e680a88e7f90370ca490f7749cb02df352c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81ff2359048ef949032289e4f6cc424c42f12117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951492"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

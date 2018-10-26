@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950910"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 偵錯範例
 兩個範例會示範如何擴充 Visual Studio 偵錯工具使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
-  
--   偵錯工具運算式評估工具範例提供 managed 語言，包含在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]視窗中，按一下**範例**索引標籤上，按一下 **所有**或**C#** 語言，然後再按一下清單中**偵錯工具**。  
-  
--   Visual Studio 偵錯引擎範例，原生語言，可在 MSDN Code Gallery 上。 如需詳細資訊，請參閱 < [Visual Studio 偵錯引擎範例](http://go.microsoft.com/fwlink/?LinkId=150236)Microsoft 網站上。
+
+- 偵錯工具運算式評估工具範例提供 managed 語言，包含在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]視窗中，按一下**範例**索引標籤上，按一下 **所有**或**C#** 語言，然後再按一下清單中**偵錯工具**。  
+
+- Visual Studio 偵錯引擎範例，原生語言，可在 MSDN Code Gallery 上。 如需詳細資訊，請參閱 < [Visual Studio 偵錯引擎範例](http://go.microsoft.com/fwlink/?LinkId=150236)Microsoft 網站上。

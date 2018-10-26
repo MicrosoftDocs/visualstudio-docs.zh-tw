@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853801"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 複製檔案的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "49188652"
   
 ### <a name="to-specify-a-publishing-location"></a>指定發行位置  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2. 按一下 [**發佈**] 索引標籤。  
   
-3.  在 **發行位置**欄位中，輸入發行位置，使用下列格式之一：  
+3. 在 **發行位置**欄位中，輸入發行位置，使用下列格式之一：  
   
-    -   若要發行至檔案共用或磁碟路徑，請使用 UNC 路徑中輸入的路徑 (\\\Server\ApplicationName) 或檔案路徑 (C:\Deploy\ApplicationName)。  
+   - 若要發行至檔案共用或磁碟路徑，請使用 UNC 路徑中輸入的路徑 (\\\Server\ApplicationName) 或檔案路徑 (C:\Deploy\ApplicationName)。  
   
-    -   若要發行至 FTP 伺服器，請使用 ftp://ftp.microsoft.com/ApplicationName 格式來輸入路徑。  
+   - 若要發行至 FTP 伺服器，請使用 ftp://ftp.microsoft.com/ApplicationName 格式來輸入路徑。  
   
      請注意，文字必須存在於**發行位置**方塊中才能讓瀏覽 (**...**) 按鈕運作。  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Clone |Microsoft 文件
+title: IEnumDebugCodeContexts2::Clone |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8b2161d784a2718d6838d8641f3d08f8f3e5f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4acfaac88439f2793e41e0b3fb396f8c59980829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926172"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
-傳回目前的列舉，為個別物件的複本。  
+傳回一份目前的列舉，為個別的物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int Clone(
  [out]傳回這個列舉型別為個別物件的複本。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 列舉的副本會呼叫這個方法只有在有相同的原始狀態。 不過，複製和原始的狀態分開的而且可以個別變更。  
+ 列舉的複本會呼叫這個方法只有在有相同的原始狀態。 不過，複本與原始的狀態是分開的而且可以個別變更。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

@@ -18,12 +18,12 @@ ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aab98e2e7d52ec45ff8e6d87d3438b57029c70c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc974372d5ffc81db09bfa9418dbbc6fc18308fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819676"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

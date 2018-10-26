@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921830"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "49194736"
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>一次建置多個方案組態  
   
-1.  使用 [組態管理員] 為方案至少新增兩個目標平台。  
+1. 使用 [組態管理員] 為方案至少新增兩個目標平台。  
   
-2.  使用 [批次建置] 視窗，一次建置數個方案組態。  
+2. 使用 [批次建置] 視窗，一次建置數個方案組態。  
   
- 例如，可能會將方案層級平台設為 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]，而且以相同平台為目標的這個方案內沒有專案。 您的方案也可能有多個檔案，而且每個檔案都以不同的平台為目標。 建議，如果您有上述其中一種情況，則建立具有描述性名稱的新組態，以避免產生混淆。  
+   例如，可能會將方案層級平台設為 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]，而且以相同平台為目標的這個方案內沒有專案。 您的方案也可能有多個檔案，而且每個檔案都以不同的平台為目標。 建議，如果您有上述其中一種情況，則建立具有描述性名稱的新組態，以避免產生混淆。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   

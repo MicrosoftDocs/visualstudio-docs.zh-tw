@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855439"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
+
 XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動作縮減為單一鍵盤快速鍵，以加速您的作業。
 
 ## <a name="element-shortcuts"></a>項目快速鍵
- 下表列出在畫板上處理項目時可供使用的快速鍵。
+
+下表列出在畫板上處理項目時可供使用的快速鍵。
 
 |**若要執行這個動作**|**請這樣做**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |建立項目|按 **Ctrl**+**N**|
 |複製項目|按住 **Alt** 鍵並按方向鍵。|
 |編輯控制項中的文字|按 **F2** 鍵 (按 **Esc** 鍵結束)|
@@ -39,10 +41,11 @@ XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動
 |選取項目的屬性|當選取項目且焦點在 [屬性] 視窗上時，按下 **Tab** 鍵 (使用 **Ctrl**+**Tab** 可將焦點變更為 [屬性] 視窗)。您可以使用方向鍵，從下拉式清單中選取屬性值。|
 
 ## <a name="document-outline-window-shortcuts"></a>[文件大綱] 視窗快速鍵
- 下表列出在 [文件大綱] 視窗中處理項目時可供使用的快速鍵。
+
+下表列出在 [文件大綱] 視窗中處理項目時可供使用的快速鍵。
 
 |**若要執行這個動作**|**請這樣做**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |當焦點在 [文件大綱] 視窗上時隱藏畫板物件|**Ctrl**+**H**|
 |當焦點在 [文件大綱] 視窗上時取消隱藏畫板物件|**Shift**+**Ctrl**+**H**|
 |當焦點在 [文件大綱] 視窗上時鎖定畫板物件|**Ctrl**+**L**|

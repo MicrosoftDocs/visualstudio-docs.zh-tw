@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928759"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ ms.locfileid: "49269577"
   
  如果 Managed 記憶體負擔過重是問題，請考量下列其中一個選項︰  
   
--   最佳化 Managed 記憶體資源的應用程式使用方式  
+- 最佳化 Managed 記憶體資源的應用程式使用方式  
   
-     -或-  
+   -或-  
   
--   採取步驟解除 32 位元處理序之虛擬記憶體大小上限的架構限制  
+- 採取步驟解除 32 位元處理序之虛擬記憶體大小上限的架構限制  
   
- 若要最佳化 Managed 記憶體資源的應用程式使用方式，請在 .NET 記憶體配置分析執行中收集 Managed 記憶體配置資料。 檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。  
+  若要最佳化 Managed 記憶體資源的應用程式使用方式，請在 .NET 記憶體配置分析執行中收集 Managed 記憶體配置資料。 檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。  
   
- 使用[物件存留期檢視](../profiling/object-lifetime-view.md)可判斷程式的哪些資料物件會存留下一代，然後從該處回收。  
+  使用[物件存留期檢視](../profiling/object-lifetime-view.md)可判斷程式的哪些資料物件會存留下一代，然後從該處回收。  
   
- 使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
+  使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
   
- 如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=177946)。  
+  如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=177946)。  
   
- 若要對處理序位址空間之私用部分大小解除虛擬記憶體的架構限制，請嘗試在 64 位元電腦上執行這個 32 位元處理序。  在 64 位元電腦上的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
+  若要對處理序位址空間之私用部分大小解除虛擬記憶體的架構限制，請嘗試在 64 位元電腦上執行這個 32 位元處理序。  在 64 位元電腦上的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
   
- 在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的虛擬記憶體。 請考慮重新編譯應用程式，以原生的 64 位元應用程式執行。 此規則僅供參考，可能不需要更正措施。
+  在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的虛擬記憶體。 請考慮重新編譯應用程式，以原生的 64 位元應用程式執行。 此規則僅供參考，可能不需要更正措施。
 
 
 

@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894166"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說： 建立自訂網站工作流程活動
   本逐步解說示範如何建立站台層級工作流程使用自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是在站台上的清單）。自訂活動建立備份的公告清單中，並再將 [公告] 清單的內容複製到其中。  
   
  本逐步解說將示範下列工作：  
   
--   建立站台層級工作流程。  
+- 建立站台層級工作流程。  
   
--   建立自訂工作流程活動。  
+- 建立自訂工作流程活動。  
   
--   建立和刪除 SharePoint 清單。  
+- 建立和刪除 SharePoint 清單。  
   
--   從一份清單的項目複製到另一個。  
+- 從一份清單的項目複製到另一個。  
   
--   在 [快速啟動] 列上顯示的清單。  
+- 在 [快速啟動] 列上顯示的清單。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  

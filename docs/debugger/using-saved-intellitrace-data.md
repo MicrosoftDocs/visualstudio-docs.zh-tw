@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912964"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。
@@ -159,25 +159,25 @@ ms.locfileid: "44321212"
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>使用 SharePoint 相互關聯識別碼開始偵錯
 
-1.  從來源複製 SharePoint 相互關聯識別碼。
+1. 從來源複製 SharePoint 相互關聯識別碼。
 
-     例如: 
+    例如: 
 
-     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  開啟 .iTrace 檔案，然後移至 [分析]  並輸入 SharePoint 相互關聯識別碼，以檢閱相符的 Web 要求和所記錄的事件。
+2. 開啟 .iTrace 檔案，然後移至 [分析]  並輸入 SharePoint 相互關聯識別碼，以檢閱相符的 Web 要求和所記錄的事件。
 
-     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
+3. 在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
 
-    1.  選擇要查看其詳細資料的事件。
+   1. 選擇要查看其詳細資料的事件。
 
-    2.  選擇 [開始偵錯]  以開始在發生事件的位置點上進行偵錯。
+   2. 選擇 [開始偵錯]  以開始在發生事件的位置點上進行偵錯。
 
-     ![IntelliTrace 記錄檔&#45;檢視 web 要求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![IntelliTrace 記錄檔&#45;檢視 web 要求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- 您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：
+   您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：
 
 -   **使用者設定檔事件**
 
@@ -199,28 +199,28 @@ ms.locfileid: "44321212"
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>從未處理的例外狀況開始偵錯
 
-1.  選取例外狀況的 SharePoint 相互關聯識別碼。 例外狀況是依類型和呼叫堆疊來分組的。
+1. 選取例外狀況的 SharePoint 相互關聯識別碼。 例外狀況是依類型和呼叫堆疊來分組的。
 
-2.  (選擇性) 展開 [呼叫堆疊]  以查看例外狀況群組的呼叫堆疊。
+2. (選擇性) 展開 [呼叫堆疊]  以查看例外狀況群組的呼叫堆疊。
 
-3.  選擇 [偵錯例外狀況]  開始在發生例外狀況的位置及時間點上進行偵錯。
+3. 選擇 [偵錯例外狀況]  開始在發生例外狀況的位置及時間點上進行偵錯。
 
-     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- 如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ###  <a name="ThreadsList"></a> 執行緒清單
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>若要從特定執行緒開始偵錯
 
-1.  在 [執行緒清單] 底下，選擇執行緒。
+1. 在 [執行緒清單] 底下，選擇執行緒。
 
-2.  在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。
+2. 在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。
 
-     若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
- 使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。
+   使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。
 
 |**資料行**|**顯示的內容**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ ms.locfileid: "44321212"
 |----------------|-------------------|
 |**模組名稱**|模組檔案名稱|
 |**模組路徑**|載入模組的磁碟位置|
-|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱[尋找符號 (.pdb) 檔和原始程式檔](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。|
+|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱 [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。|
 
 ### <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)

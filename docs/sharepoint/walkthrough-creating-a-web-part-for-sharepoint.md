@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872404"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說： 建立 SharePoint web 組件
 
@@ -96,13 +96,13 @@ Web 組件會顯示資料格線中的員工。 使用者指定的檔案，其中
 
 3. 將下列程式碼加入 `WebPart1` 類別。 此程式碼會宣告下列欄位：
 
-    - 資料格，以顯示 Web 組件中的員工。
+   - 資料格，以顯示 Web 組件中的員工。
 
-    - 用來篩選資料格的控制項顯示的文字。
+   - 用來篩選資料格的控制項顯示的文字。
 
-    - 會顯示錯誤，如果資料格無法顯示資料標籤。
+   - 會顯示錯誤，如果資料格無法顯示資料標籤。
 
-    - 字串，包含員工資料檔案的路徑。
+   - 字串，包含員工資料檔案的路徑。
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Web 組件會顯示資料格線中的員工。 使用者指定的檔案，其中
 
 5. 以下列程式碼取代 `CreateChildControls` 方法。 這個程式碼會執行下列工作：
 
-    - 上一個步驟中，新增您所宣告的標籤與資料格。
+   - 上一個步驟中，新增您所宣告的標籤與資料格。
 
-    - 將資料格繫結至 XML 檔案，其中包含員工資料。
+   - 將資料格繫結至 XML 檔案，其中包含員工資料。
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. 將下列方法加入 `WebPart1` 類別中。 這個程式碼會執行下列工作：
+6. 將下列方法加入 `WebPart1` 類別。 這個程式碼會執行下列工作：
 
-    - 會出現的動詞命令建立 Web 組件動詞命令的功能表中呈現的網頁組件。
+   - 會出現的動詞命令建立 Web 組件動詞命令的功能表中呈現的網頁組件。
 
-    - 處理當使用者選擇動詞命令功能表中的動詞命令時所引發的事件。 此程式碼來篩選出現在資料格中的員工清單。
+   - 處理當使用者選擇動詞命令功能表中的動詞命令時所引發的事件。 此程式碼來篩選出現在資料格中的員工清單。
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

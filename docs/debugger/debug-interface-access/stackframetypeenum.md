@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum |Microsoft 文件
+title: StackFrameTypeEnum |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853920"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-指定堆疊框架類型。  
+指定的堆疊框架的類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,13 +51,13 @@ enum StackFrameTypeEnum {
  標準的 EBP 堆疊框架。  
   
  `FrameTypeFrameData`  
- 框架指標省略;框架資料可用的資訊。  
+ 框架指標省略;畫面格的資料可用的資訊。  
   
  `FrameTypeUnknown`  
  沒有任何偵錯資訊的框架。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回透過呼叫[idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法。  
+ 這個列舉型別中的值會傳回呼叫[idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

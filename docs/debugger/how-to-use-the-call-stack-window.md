@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853606"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>檢視呼叫堆疊，並使用 Visual Studio 偵錯工具中 [呼叫堆疊] 視窗
 
@@ -45,17 +45,17 @@ ms.locfileid: "43774725"
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **呼叫堆疊**視窗是類似於偵錯觀點來看一些像是 Eclipse Ide 中。 
-
+> 
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更您的設定，請選取**匯入和匯出設定**上**工具**功能表。  請參閱[個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>檢視呼叫堆疊偵錯工具中 
   
--   偵錯時，在**偵錯**功能表上，選取**Windows > 呼叫堆疊**。
+- 偵錯時，在**偵錯**功能表上，選取**Windows > 呼叫堆疊**。
 
- ![呼叫堆疊 視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![呼叫堆疊 視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 執行指標目前所在的堆疊框架位置會以黃色箭頭識別。 根據預設，這是在來源中，不會顯示其資訊的堆疊框架**區域變數**，**自動變數**，**監看式**，以及**反組譯碼**windows. 如果您想要將偵錯工具內容變更為另一個框架在堆疊上，您可以這麼[切換到另一個堆疊框架](#bkmk_switch)。   
   
