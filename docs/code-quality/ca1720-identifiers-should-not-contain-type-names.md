@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548799"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143121"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
 
@@ -29,7 +29,7 @@ ms.locfileid: "45548799"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -80,7 +80,7 @@ ms.locfileid: "45548799"
 
 此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
 
-- 物件
+- Object
 
 - obj
 
@@ -138,7 +138,7 @@ ms.locfileid: "45548799"
  語言特定資料型別識別項，該成員的名稱取代為一個詞彙，進一步說明其意義、 語言獨立對等項目或更泛型的詞彙如 'value'。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 對於有舊版隨附的程式庫，您可能必須隱藏此規則的警告。
+ 偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 如先前所提供的程式庫，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
  [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

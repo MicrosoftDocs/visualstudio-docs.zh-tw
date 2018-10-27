@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 296bc30089d4c0f4b2b739e1dd977fd66cba1ace
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851991"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143290"
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "49851991"
 |DesignTime 資料夾|包含只能在後置入執行/偵錯階段所需的檔案。 這些可能是 XML 文件、 程式庫、 標頭、 工具箱設計階段二進位檔，MSBuild 成品等等<br /><br /> XML 文件，在理想情況下，放在 \DesignTime 資料夾中，但是參考的 XML 文件將會繼續被放置在一起的 Visual Studio 中的參考檔案。 例如，XML 文件的參考 \References\\[設定]\\[arch]\sample.dll 會 \References\\[config]\\[arch]\sample.xml 和，文件的當地語系化的版本會 \References\\[設定]\\[arch]\\[locale]\sample.xml。|  
 |設定資料夾|可以有三個資料夾： 偵錯、 零售和 CommonConfiguration。 如果相同的 SDK 檔案集應該取用，不論 SDK 取用者會為目標的組態，SDK 作者可以放置在 CommonConfiguration 檔案。|  
 |架構資料夾|可以存在的任何支援的架構資料夾。 Visual Studio 支援下列架構： x86、 x64、 ARM、 忍受及無感。 注意： Win32 對應設為 x86，而 AnyCPU 對應到中性。<br /><br /> MSBuild 會只有在 \CommonConfiguration\neutral 平台 Sdk。|  
-|SDKManifest.xml|此檔案會描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = “Windows”             PlatformIdentity = “Windows, version=8.1”             TargetFramework = “.NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1”             MinVSVersion = “14.0”>              <File Reference = “Windows.winmd”>                <ToolboxItems VSCategory = “Toolbox.Default” />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 是否存在，這個屬性會告知 Visual Studio 和 MSBuild SDK 是平台 SDK，並從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:** Visual Studio 會使用此屬性以確保，只會為這個值指定相同的架構目標的專案屬性可使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 會使用這個屬性使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，如下所示。|  
+|SDKManifest.xml|此檔案會描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 是否存在，這個屬性會告知 Visual Studio 和 MSBuild SDK 是平台 SDK，並從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:** Visual Studio 會使用此屬性以確保，只會為這個值指定相同的架構目標的專案屬性可使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 會使用這個屬性使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，如下所示。|  
   
 ##  <a name="ExtensionSDKs"></a> 擴充功能 Sdk  
  下列各節說明您需要如何部署擴充功能 SDK。  
@@ -142,22 +142,22 @@ ms.locfileid: "49851991"
   
 ```  
 <FileList>  
-DisplayName = “My SDK”  
-ProductFamilyName = “My SDKs”  
-TargetFramework = “.NETCore, version=v4.5.1; .NETFramework, version=v4.5.1”  
-MinVSVersion = “14.0”  
+DisplayName = "My SDK"  
+ProductFamilyName = "My SDKs"  
+TargetFramework = ".NETCore, version=v4.5.1; .NETFramework, version=v4.5.1"  
+MinVSVersion = "14.0"  
 MaxPlatformVersion = "8.1"  
 AppliesTo = "WindowsAppContainer + WindowsXAML"  
-SupportPrefer32Bit = “True”  
-SupportedArchitectures = “x86;x64;ARM”  
-SupportsMultipleVersions = “Error”  
-CopyRedistToSubDirectory = “.”  
-DependsOn = “SDKB, version=2.0”  
-MoreInfo = “http://msdn.microsoft.com/MySDK”>  
-<File Reference = “MySDK.Sprint.winmd” Implementation = “XNASprintImpl.dll”>  
-<Registration Type = “Flipper” Implementation = “XNASprintFlipperImpl.dll” />  
-<Registration Type = “Flexer” Implementation = “XNASprintFlexerImpl.dll” />  
-<ToolboxItems VSCategory = “Toolbox.Default” />  
+SupportPrefer32Bit = "True"  
+SupportedArchitectures = "x86;x64;ARM"  
+SupportsMultipleVersions = "Error"  
+CopyRedistToSubDirectory = "."  
+DependsOn = "SDKB, version=2.0"  
+MoreInfo = "http://msdn.microsoft.com/MySDK">  
+<File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
+<Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
+<Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  
+<ToolboxItems VSCategory = "Toolbox.Default" />  
 </File>  
 </FileList>  
 ```  
@@ -204,26 +204,26 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 1.  將控制項放在 [工具箱] 的預設分類。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Default”/>       
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Default"/>       
     </File>  
     ```  
   
 2.  將特定類別名稱的控制項。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory= “MyCategoryName”/>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory= "MyCategoryName"/>  
     </File>  
     ```  
   
 3.  放置在特定的類別名稱 底下的控制項。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems VSCategory = “Data”>  
+        <ToolboxItems VSCategory = "Data">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -232,8 +232,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
   
     ```  
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph” BlendCategory = “Controls/sample/Graph”>   
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph" BlendCategory = "Controls/sample/Graph">   
         <ToolboxItems />  
     </File>  
     ```  
@@ -241,10 +241,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 5.  列舉以不同的方式在 Blend 和 Visual Studio 中的特定控制項。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems BlendCategory = “Controls/sample/Graph”>  
+        <ToolboxItems BlendCategory = "Controls/sample/Graph">  
         <ToolboxItems/>  
     </File>  
     ```  
@@ -252,10 +252,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 6.  列舉特定的控制項，並將它們放在 Visual Studio 共用路徑，或僅在所有的控制項群組。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Common”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Common">  
         <ToolboxItems />  
-        <ToolboxItems VSCategory = “Toolbox.All”>  
+        <ToolboxItems VSCategory = "Toolbox.All">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -263,8 +263,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 7.  列舉特定控制項，並顯示只有一組特定 ChooseItems 中，而不需要它們要在工具箱中。  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.ChooseItemsOnly”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.ChooseItemsOnly">  
         <ToolboxItems />  
     </File>  
     ```  

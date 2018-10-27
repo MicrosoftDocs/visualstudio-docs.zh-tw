@@ -1,6 +1,6 @@
 ---
-title: 如何：啟用和停用 Managed 程式碼的自動程式碼分析
-ms.date: 09/28/2018
+title: 啟用或停用程式碼分析
+ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,22 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3113143b07ccb6f765cd0cf1735b34be6e952c72
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443541"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143394"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何： 啟用和停用 managed 程式碼的自動程式碼分析
 
-您可以設定程式碼分析，managed 程式碼專案的每次建置之後執行。 您可以設定不同的程式碼分析屬性，每個組建組態，例如，偵錯和發行。
+您可以設定 （靜態） 的程式碼分析，managed 程式碼專案的每次建置之後執行。 您可以設定不同的程式碼分析屬性，每個組建組態，例如，偵錯和發行。
+
+本文適用於只為靜態程式碼分析，並使用未即時程式碼分析[Roslyn 程式碼分析器](roslyn-analyzers-overview.md)。
 
 ## <a name="to-enable-or-disable-automatic-code-analysis"></a>若要啟用或停用自動程式碼分析
 
 1. 在 **方案總管**，以滑鼠右鍵按一下專案，然後選擇**屬性**。
 
 1. 在專案 屬性 對話方塊中，選擇**程式碼分析** 索引標籤。
+
+   > [!TIP]
+   > 較新的專案類型，例如.NET Core 和.NET Standard 的應用程式沒有**程式碼分析** 索引標籤。靜態程式碼分析不適用於這些專案類型，但您仍能使用的即時程式碼分析[Roslyn 程式碼分析器](roslyn-analyzers-overview.md)。 若要隱藏警告的 Roslyn 程式碼分析器，請參閱這篇文章結尾處的附註。
 
 1. 指定組建類型中的**組態**和中的目標平台**平台**。
 
