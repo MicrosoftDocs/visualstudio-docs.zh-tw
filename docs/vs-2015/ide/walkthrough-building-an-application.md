@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923091"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143173"
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ ms.locfileid: "49923091"
   
 3.  選擇 [建置] 頁面，然後在 [隱藏警告] 方塊中指定警告編號 `1762`。  
   
-     ![專案設計工具、建置頁](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![建置 page，Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      如需詳細資訊，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "49923091"
   
 3. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。  
   
-    ![專案設計工具、編譯頁](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![編譯 page，Project Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。  
   

@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 735b4891449d139058b7cf114639390f6a930b55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908338"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143459"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
 C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 在 Visual Studio 2017 中，預設會安裝核心指南檢查工具，並會[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
@@ -134,10 +134,10 @@ CPPCORECHECK_BOUNDS_WARNINGS
 Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可用來隱藏在運算式和函式內的區塊陳述式的警告。
 
 ```cpp
-// Supress only warnings from the 'r.11' rule in expression.
+// Suppress only warnings from the 'r.11' rule in expression.
 [[gsl::suppress(r.11)]] new int;
 
-// Supress all warnings from the 'r' rule group (resource management) in block.
+// Suppress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
 {
     new int;
