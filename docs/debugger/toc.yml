@@ -29,7 +29,7 @@ items:
     href: debugging-absolute-beginners.md
 - name: 作法指南
   items:
-  - name: 使用偵錯工具瀏覽程式碼
+  - name: 使用偵錯工具巡覽程式碼
     href: navigating-through-code-with-the-debugger.md
   - name: 使用中斷點
     href: using-breakpoints.md
@@ -161,18 +161,18 @@ items:
         items:
         - name: 指定偵錯工具設定
           href: how-to-specify-debugger-settings.md
-        - name: 設定偵錯和發行設定
+        - name: 設定偵錯和發行組態
           href: how-to-set-debug-and-release-configurations.md
-        - name: C++ 偵錯設定的專案設定
+        - name: C++ 偵錯組態的專案設定
           href: project-settings-for-a-cpp-debug-configuration.md
           items:
           - name: 啟用 Visual C++ 中的偵錯功能 (-D_DEBUG)
             href: enabling-debug-features-in-visual-cpp-d-debug.md
         - name: Web 專案的屬性頁設定
           href: property-pages-settings-for-web-projects.md
-        - name: C# 偵錯設定的專案設定
+        - name: C# 偵錯組態的專案設定
           href: project-settings-for-csharp-debug-configurations.md
-        - name: Visual Basic 偵錯設定的專案設定
+        - name: Visual Basic 偵錯組態的專案設定
           href: project-settings-for-a-visual-basic-debug-configuration.md
       - name: 對 DLL 專案進行偵錯
         href: debugging-dll-projects.md
@@ -476,7 +476,7 @@ items:
               href: allocation-hooks-and-c-run-time-memory-allocations.md
           - name: 報告攔截函式
             href: report-hook-functions.md
-        - name: 使用 CRT 程式庫尋找記憶體流失
+        - name: 尋找 CRT 程式庫的記憶體流失問題
           href: finding-memory-leaks-using-the-crt-library.md
       - name: 對機器碼進行偵錯的常見問題集
         href: debugging-native-code-faqs.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 96117c4b066013a5581d25abc10f0f08d78de274
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382827"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050374"
