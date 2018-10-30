@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949431"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220231"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ ms.locfileid: "49949431"
 |**關鍵字**|保留的指定語言關鍵字。 例如：類別和命名空間。|  
 |**記憶體位址**|用來在 [記憶體] 視窗內顯示位址欄的文字色彩。|  
 |**記憶體已變更**|用來在 [記憶體] 視窗內顯示已變更資料的文字色彩。|  
-|**記憶體資料**|用來在 [記憶體] 視窗內顯示資料的文字色彩。|  
+|**記憶體資料**|用來顯示資料內的文字的色彩**記憶體**視窗。|  
 |**記憶體無法讀取**|用來在 [記憶體] 視窗內顯示無法讀取的記憶體區域的文字色彩。|  
 |**數字**|程式碼中的數字，代表實際數值。|  
 |**Operator**|運算子，例如 +、- 和 !=。|  

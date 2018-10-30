@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20b27a232c0e707751f8dd8111989d761635e9e6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894049"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220309"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ int main() {
 |**l,h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|  
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|  
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
-|**g**g|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
+|**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
 |c|單一字元|\<location>|101 'e'|  
 |秒|const char*|\<location>|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  

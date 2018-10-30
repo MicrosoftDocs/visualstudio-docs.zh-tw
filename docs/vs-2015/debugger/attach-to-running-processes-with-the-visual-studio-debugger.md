@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 604c9834594c14e8c1cc6b2c310f96cb68321931
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825684"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220000"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "49825684"
   
    2. 按一下附加至 [限定詞]  清單方塊的下拉箭號，然後從下拉式清單中選取電腦名稱。  
   
-   3. 按一下 [限定詞]  清單旁的 [尋找] 按鈕，開啟 [遠端偵錯工具連接]  對話方塊。 [選取遠端偵錯工具連接]  對話方塊會列出位於您本機子網路上的所有裝置，以及透過乙太網路纜線直接附加至電腦的裝置。 按一下您想要的電腦或裝置，然後按一下 [選取] 。 
+   3. 按一下 [**尋找**按鈕旁**限定詞**以開啟清單**選取遠端偵錯工具連接**] 對話方塊。 [選取遠端偵錯工具連接]  對話方塊會列出位於您本機子網路上的所有裝置，以及透過乙太網路纜線直接附加至電腦的裝置。 按一下您想要的電腦或裝置，然後按一下 [選取] 。 
   
       [限定詞]  設定只有在使用該限定詞成功產生偵錯連接時，才會在偵錯工作階段之間持續維持。
      

@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836784"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220013"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "49836784"
   
 5. 輸入 `msbuild /target:publish`。  
   
-   上述步驟將會產生完整[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]的子資料夾中的應用程式部署，您的專案命名為 P**ublish**。 CmdLineDemo.application 是[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署資訊清單。 CmdLineDemo_1.0.0.0 資料夾包含檔案 CmdLineDemo.exe 和 CmdLineDemo.exe.manifest，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單。 Setup.exe 是啟動載入器，其預設值設定為安裝[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 DotNetFX 資料夾包含的可轉散發套件[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 這是完整的部署您的應用程式，透過 Web 或透過 UNC 或 CD/DVD 所需的檔案。  
+   上述步驟將會產生完整[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]的子資料夾中的應用程式部署，您的專案命名為**發行**。 CmdLineDemo.application 是[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署資訊清單。 CmdLineDemo_1.0.0.0 資料夾包含檔案 CmdLineDemo.exe 和 CmdLineDemo.exe.manifest，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單。 Setup.exe 是啟動載入器，其預設值設定為安裝[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 DotNetFX 資料夾包含的可轉散發套件[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 這是完整的部署您的應用程式，透過 Web 或透過 UNC 或 CD/DVD 所需的檔案。  
   
 ## <a name="publishing-properties"></a>發行屬性  
  當您在上述程序中發佈應用程式時，下列屬性會插入到您的專案檔，發行精靈。 這些屬性會直接影響如何[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]產生的應用程式。  

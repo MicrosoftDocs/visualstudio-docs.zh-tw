@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f9d3b735eb0633c5faf9b4b43ba15f6ec4a2d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d340a858c152b371c296883c19309c79f77aba1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195880"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218742"
 ---
 # <a name="launch"></a>啟動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Start:** `Method`  
  初始化命令列分析工具工作階段，並設定指定的分析方法。  
   
- **GlobalOn** 和 **GlobalOff**  
+ **GlobalOn**和**GlobalOff**  
  繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。  
   
  **ProcessOn:** `PID` 和 **ProcessOff**:`PID`  

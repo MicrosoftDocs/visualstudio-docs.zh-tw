@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933556"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219883"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>逐步解說： 偵錯在 Visual Studio 中使用 [執行緒] 視窗中的多執行緒應用程式
 Visual Studio 提供**執行緒**視窗和其他使用者介面來協助您偵錯多執行緒應用程式的項目。 本教學課程示範如何使用**執行緒**視窗和**偵錯位置**工具列。 如需其他工具的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 本教學課程只需要幾分鐘，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。   
@@ -37,7 +37,7 @@ Visual Studio 提供**執行緒**視窗和其他使用者介面來協助您偵�
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  在 **專案類型**s 方塊中，按一下您所選擇的語言： **Visual Basic**， **Visual C#**，或**Visual c + +**。  
+2.  在 **專案類型**方塊中，按一下您所選擇的語言： **Visual Basic**， **Visual C#** ，或**Visual c + +**。  
   
 3.  底下**Windows 桌面**，選擇**主控台應用程式**。  
   

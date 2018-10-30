@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868571"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219824"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "49868571"
   
 -   功能表項目包含未加上底線的字元，例如**列印**命令**檔案**功能表上，在其中 P 加上底線。  
   
-     所顯示的前面加上 '&' 字元功能表項目名稱中的字元加底線。 不過，.vsct 檔案以 XML 撰寫，會使用 '&' 字元來表示特殊字元，且需要顯示連字號，必須拼出為&amp;'。 因此，在.vsct 檔案中， **P**rint 命令會顯示為 '&amp;列印 '。  
+     所顯示的前面加上 '&' 字元功能表項目名稱中的字元加底線。 不過，.vsct 檔案以 XML 撰寫，會使用 '&' 字元來表示特殊字元，且需要顯示連字號，必須拼出為&amp;'。 因此，在.vsct 檔案中，**列印**命令會顯示為 '&amp;列印 '。  
   
 -   命令，例如具有動態的文字**儲存***目前的檔名*，和動態產生功能表項目，例如項目**最近使用的檔案**清單。  
   
