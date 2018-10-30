@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d6cac51aaa73053dc0e1f306288d8198fdacccfd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775431"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219053"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -84,7 +84,7 @@ Dotfuscator CE 提供現成的基本保護。
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [software-protection]:  https://www.preemptive.com/software-protection
 [obfuscation]:  https://www.preemptive.com/obfuscation
 [app-protection]:  https://www.preemptive.com/application-protection
