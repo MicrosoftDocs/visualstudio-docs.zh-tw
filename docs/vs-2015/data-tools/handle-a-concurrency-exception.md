@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812929"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220413"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ ms.locfileid: "49812929"
   
 #### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  選取 **F5**執行應用程式  
+1.  選取  **F5**執行應用程式  
   
      表單會顯示<xref:System.Windows.Forms.DataGridView>填滿資料的控制項在其上`Customers`資料表。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "49812929"
   
 #### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  選取 **F5**執行應用程式。  
+1.  選取  **F5**執行應用程式。  
   
 2.  表單出現後，讓它保持執行，並切換至 Visual Studio IDE。  
   
@@ -215,8 +215,8 @@ ms.locfileid: "49812929"
   
      引發了並行錯誤，並出現訊息方塊。  
   
-10. 選取**No**取消更新，並使用目前資料庫中的值來更新資料集。選取**是**寫入資料庫中的建議的值。  
+10. 選取**No**取消更新，並使用目前資料庫中的值來更新資料集。 選取**是**寫入資料庫中的建議的值。
   
-## <a name="see-also"></a>另請參閱  
- [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>另請參閱
 
+- [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

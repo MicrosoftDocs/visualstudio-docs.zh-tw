@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928954"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219779"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -136,7 +136,7 @@ ms.locfileid: "49928954"
   
 -   安裝 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。  
   
--   請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱 <<c0> [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 線上文章[指派或移除服務應用程式的系統管理員在 SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
+-   請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱 <<c0> [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 線上文章[指派或移除服務應用程式的系統管理員在 SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>站台刪除網頁事件不會發生在事件接收器專案
  當您建立事件接收器專案時，您選取特定 Web 事件，例如"正在刪除站台 」 時永遠不會發生這個事件。  

@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812708"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220039"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "49812708"
   
 3. 在 **按下快捷鍵**方塊中，輸入您想要使用的鍵盤快速鍵。  
   
-    如果已在 Visual Studio 中，使用捷徑**目前所使用的捷徑**方塊會顯示快顯目前呼叫的命令。  
+    如果已在 Visual Studio 中，使用捷徑**目前所使用的快顯**方塊會顯示快顯目前呼叫的命令。  
   
 4. 直到您找到未對應的其中一個，請嘗試不同的組合索引鍵。  
   
    > [!NOTE]
-   >  使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的捷徑**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
+   >  使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的快顯**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
   
    下列程序假設您有現有的 VSPackage，具有功能表命令。 如果您需要這麼做的說明，看看[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   

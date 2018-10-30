@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928707"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220104"
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
+
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 藉由設定定義了影像圖形`Image`類別的屬性以預先定義的映像檔案。 支援下列格式：
 
 - .gif
@@ -38,11 +39,11 @@ ms.locfileid: "49928707"
 
 - .png
 
-  根據預設，設計工具的資源檔，例如影像檔案，位於**資源**中的資料夾**Dsl**專案。
+根據預設，設計工具的資源檔，例如影像檔案，位於**資源**中的資料夾**Dsl**專案。
 
-  如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-  影像圖案具有下表中所列的屬性。
+影像圖案具有下表中所列的屬性。
 
 |屬性|描述|預設|
 |-|-|-|

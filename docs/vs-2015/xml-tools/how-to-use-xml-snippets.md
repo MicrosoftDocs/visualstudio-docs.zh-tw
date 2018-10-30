@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245852"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219610"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "49245852"
   
  按 ENTER 鍵或 ESC 鍵以取消欄位編輯，並將編輯器返回到正常狀態。  
   
- 可以藉由修改中的程式碼片段欄位設定變更可編輯的程式碼片段欄位的預設色彩**字型和色彩**窗格**選項**對話方塊。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
+ 可以藉由修改中的程式碼片段欄位設定變更可編輯的程式碼片段欄位的預設色彩**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 程式碼片段](../xml-tools/xml-snippets.md)   

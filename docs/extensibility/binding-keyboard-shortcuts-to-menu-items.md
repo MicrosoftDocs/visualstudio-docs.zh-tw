@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822097"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219636"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 若要將鍵盤快速鍵繫結至自訂功能表命令，請加入一個項目 *.vsct*封裝檔案。 本主題說明如何將鍵盤快速鍵對應至自訂的按鈕、 功能表項目或工具列命令，以及如何套用的預設編輯器中的鍵盤對應或將它限制成自訂編輯器。  
@@ -45,7 +45,7 @@ ms.locfileid: "49822097"
 4. 直到您找到未對應的其中一個，請嘗試不同的組合索引鍵。  
   
    > [!NOTE]
-   >  鍵盤使用的快速鍵**Alt**可能開啟功能表，並不是直接執行命令。 因此，**目前所使用的捷徑** 方塊中可能是空白，當您輸入包含快顯**Alt**。您可以確認捷徑不會透過關閉開啟功能表**選項** 對話方塊中，然後按 索引鍵。  
+   >  鍵盤使用的快速鍵**Alt**可能開啟功能表，並不是直接執行命令。 因此，**目前所使用的快顯** 方塊中可能是空白，當您輸入包含快顯**Alt**。您可以確認捷徑不會透過關閉開啟功能表**選項** 對話方塊中，然後按 索引鍵。  
   
    下列程序假設您有現有的 VSPackage，具有功能表命令。 如果您需要這麼做的說明，看看[建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49822097"
   
    在大部分情況下， **Shift**不應該使用而不需要的第二個修飾詞，因為它已按下會導致大部分英數字元的按鍵輸入大寫的字母或符號。  
   
-   虛擬按鍵碼可讓您存取並沒有與其相關聯，例如，函式的索引鍵的字元的特殊按鍵和**退格鍵**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 虛擬按鍵碼](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes)。  
+   虛擬按鍵碼可讓您存取並沒有與其相關聯，例如，函式的索引鍵的字元的特殊按鍵和**退格鍵**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 虛擬按鍵碼](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes)。  
   
    若要讓命令在 Visual Studio 編輯器，請設定`editor`屬性設定為`guidVSStd97`。  
   
