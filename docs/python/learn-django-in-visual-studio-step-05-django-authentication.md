@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626933"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120351"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
@@ -198,9 +198,9 @@ ms.locfileid: "42626933"
 
 1. 當您全部完成時，請停止伺服器，並再次將變更認可至原始檔控制。
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 項目中出現的 {% crsf_token %} 標籤有什麼用途？
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 元素中出現的 {% csrf_token %} 標籤有什麼用途？
 
-回答：`{% crsf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (crsf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) \(英文\) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
+回答：`{% csrf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008443"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788015"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式
 
-藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您了解整合式開發環境 (IDE) 的運作時，您將會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
+藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您在學習如何使用整合式開發環境 ([IDE](visual-studio-ide.md)) 時，您會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
 
 ## <a name="configure-the-ide"></a>設定 IDE
 
@@ -48,11 +48,14 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 1. 選取 [確定]。
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+   Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
 
-![已載入 HelloWPFApp 檔案的 [方案總管]](../ide/media/exploreide-hellowpfappfiles.png)
+   ![已載入 HelloWPFApp 檔案的 [方案總管]](../ide/media/exploreide-hellowpfappfiles.png)
 
-建立專案之後，您可以進行自訂。 使用 [屬性]  視窗 (在 [檢視]  功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。
+   > [!NOTE]
+   > 如需 XAML (eXtensible Application Markup Language) 的詳細資訊，請參閱 [WPF 的 XAML 概觀](/dotnet/framework/wpf/advanced/xaml-overview-wpf)頁面。
+
+建立專案之後，您可以進行自訂。 使用 [屬性] 視窗 (在 [檢視] 功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱
 
@@ -84,7 +87,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ![問候表單上的 [TextBlock] 控制項](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-XAML 標記應該看起來與下列程式碼範例相似：
+XAML 標記應該看起來與下列範例相似：
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -98,7 +101,7 @@ XAML 標記應該看起來與下列程式碼範例相似：
    Text="Select a message option and then choose the Display button."
    ```
 
-2. 如有必要，請將 TextBlock 重新置中，按 **Ctrl**+**S** 或使用 [檔案] 功能表項目儲存您的變更。
+2. 如有必要，請將 TextBlock 再次置中，然後按 **Ctrl**+**S** 或使用 [檔案] 功能表項目儲存您的變更。
 
 接下來，您會將兩個 [RadioButton](/dotnet/framework/wpf/controls/radiobutton) 控制項新增至表單。
 
@@ -114,13 +117,13 @@ XAML 標記應該看起來與下列程式碼範例相似：
 
      ![具有一個 TextBlock 和兩個 RadioButton 的問候表單](../ide/media/exploreide-greetingswithradiobuttons.png)
 
-3. 在左側 RadioButton 控制項的 [ **屬性** ] 視窗中，將 [ **名稱** ] 屬性 (在 [ **屬性** ] 視窗頂端的屬性) 變更為 `HelloButton`。
+3. 在左側 RadioButton 控制項的 [屬性] 視窗中，將 [名稱] 屬性 (在 [屬性] 視窗頂端的屬性) 變更為 `HelloButton`。
 
      ![RadioButton 的 [屬性] 視窗](../ide/media/exploreide-buttonproperties.png)
 
 4. 在右邊 RadioButton 控制項的 [屬性] 視窗中，將 [名稱] 屬性變更為 `GoodbyeButton`，然後儲存您的變更。
 
-您現在可以為每個 RadioButton 控制項加入顯示的文字。 下列步驟會更新 RadioButton 控制項的 [ **內容** ] 屬性。
+您現在可以為每個 RadioButton 控制項加入顯示的文字。 下列步驟會更新 RadioButton 控制項的 [內容] 屬性。
 
 ### <a name="add-display-text-for-each-radio-button"></a>為每個選項按鈕新增顯示的文字
 
@@ -130,7 +133,7 @@ XAML 標記應該看起來與下列程式碼範例相似：
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>設定預設勾選的選項按鈕
 
-在這個步驟中，我們會設定預設勾選 HelloButton，以便一律選取這兩個選項按鈕的其中之一。
+在此步驟中，我們會設定預設勾選 HelloButton，這樣就一律會選取兩個選項按鈕的其中一個。
 
 在 XAML 檢視中，找出 HelloButton 的標記並新增 **IsChecked** 屬性：
 
@@ -156,7 +159,7 @@ IsChecked="True"
 
 此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.vb* 或 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
 
-1. 在設計介面上，按兩下 [ **顯示** ] 按鈕。
+1. 在設計介面上，按兩下 [顯示] 按鈕。
 
      *Greetings.xaml.vb* 或 *Greetings.xaml.cs* 隨即開啟，並將游標置於 `Button_Click` 事件中。
 
@@ -198,7 +201,7 @@ IsChecked="True"
 
 ## <a name="debug-and-test-the-application"></a>偵錯和測試應用程式
 
-接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀 [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和[對 WPF 進行偵錯](../debugger/debugging-wpf.md)以取得詳細資訊。
+接下來，您會針對應用程式進行偵錯以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 與[針對 WPF 進行偵錯](../debugger/debugging-wpf.md)以取得詳細資訊。
 
 ### <a name="find-and-fix-errors"></a>尋找和修正錯誤
 
@@ -206,7 +209,7 @@ IsChecked="True"
 
 #### <a name="start-debugging-and-find-the-error"></a>開始偵錯並找出錯誤
 
-1. 依序選取 [ **偵錯**] 和 [ **開始偵錯**]，以啟動偵錯工具。
+1. 依序選取 [偵錯] 與 [開始偵錯]，以啟動偵錯工具。
 
      ![[偵錯] 功能表上的 [開始偵錯] 命令](../ide/media/exploreide-startdebugging.png)
 

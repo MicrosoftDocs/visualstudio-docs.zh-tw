@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178514"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880145"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：
@@ -37,24 +37,24 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 
 1.  開啟 Visual Studio。
 
-2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。
+2.  在 [檔案] **** 功能表中，指向 [新增] ****，然後按一下 [專案] ****。
 
-3.  在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\*。 接受 [為方案建立目錄] (已選取)、[加入至原始檔控制] (未選取) 及 [方案名稱] (**BuildApp**) 的預設值。
+3.  在 [新增專案]**** 對話方塊中，選取 [Visual C#]**** 專案類型，然後選取 [Windows Forms 應用程式]**** 範本。 在 [名稱] **** 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]****，例如 *D:\\*。 接受 [為方案建立目錄]**** (已選取)、[加入至原始檔控制]**** (未選取) 及 [方案名稱]**** (**BuildApp**) 的預設值。
 
-4.    按一下 [確定] 以建立專案檔。
+4.    按一下 [確定]**** 以建立專案檔。
 
 ## <a name="examine-the-project-file"></a>檢查專案檔
- 在上一節中，您使用了 Visual Studio 來建立 Visual C# 專案檔。 專案檔會在 [方案總管] 中，透過名為 BuildApp 的專案節點來顯示。 您可以使用 Visual Studio 程式碼編輯器來檢查專案檔。
+ 在上一節中，您使用了 Visual Studio 來建立 Visual C# 專案檔。 專案檔會在 [方案總管]**** 中，透過名為 BuildApp 的專案節點來顯示。 您可以使用 Visual Studio 程式碼編輯器來檢查專案檔。
 
 #### <a name="to-examine-the-project-file"></a>檢查專案檔
 
-1.  在 [方案總管] 中，按一下專案節點 **BuildApp**。
+1.  在 [方案總管]**** 中，按一下專案節點 **BuildApp**。
 
-2.  在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 *BuildApp.csproj*。 所有專案檔名稱的尾碼都是 *proj*。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 *BuildApp.vbproj*。
+2.  在 [屬性]**** 瀏覽器中，請注意 [專案檔]**** 屬性為 *BuildApp.csproj*。 所有專案檔名稱的尾碼都是 *proj*。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 *BuildApp.vbproj*。
 
-3.  以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。
+3.  以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]****。
 
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。
+4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]****。
 
      該專案檔隨即出現在程式碼編輯器中。
 
@@ -116,24 +116,24 @@ Message 工作是 MSBuild 隨附的許多工作之一。 如需可用工作的�
 Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出裝置上。 HelloWorld 目標會執行 Message 工作兩次：第一次顯示 "Hello"，接著顯示 "World"。
 
 ## <a name="build-the-target"></a>建置目標
- 從 [Visual Studio 命令提示字元] 執行 MSBuild，以建置前述內容所定義的 HelloWorld 目標。 使用 /target 或 /t 命令列參數來選取目標。
+ 從 [Visual Studio 命令提示字元]**** 執行 MSBuild，以建置前述內容所定義的 HelloWorld 目標。 使用 -target 或 -t 命令列參數選取目標。
 
 > [!NOTE]
 >  我們會在下列各節中，將 **Visual Studio 命令提示字元**稱為**命令視窗**。
 
 #### <a name="to-build-the-target"></a>建置目標
 
-1.  按一下 [開始]，然後按一下 [所有程式]。 在 [Visual Studio Tools] 資料夾中，找出並按一下 [Visual Studio 命令提示字元]。
+1.  按一下 [開始]****，然後按一下 [所有程式]****。 在 [Visual Studio Tools]**** 資料夾中，找出並按一下 [Visual Studio 命令提示字元]****。
 
 2.  從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 *D:\BuildApp\BuildApp*。
 
-3.  使用命令參數 /t:HelloWorld 來執行 msbuild。 這會選取並建置 HelloWorld 目標：
+3.  使用命令參數 -t:HelloWorld 執行 msbuild。 這會選取並建置 HelloWorld 目標：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  檢查 [命令視窗] 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：
+4.  檢查 [命令視窗]**** 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：
 
     ```
     Hello
@@ -197,10 +197,10 @@ $(PropertyName)
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：
@@ -231,14 +231,14 @@ $(PropertyName)
  您可以使用和組建屬性一樣的方式，來參考專案檔中的環境變數。 例如，若要在專案檔中使用 PATH 環境變數，請使用 $(Path)。 如果專案包含與環境變數相同名稱的專案定義，則專案中的屬性會覆寫環境變數的值。 如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="set-properties-from-the-command-line"></a>從命令列設定屬性
- 您可以在命令列上，使用 /property 或 /p 命令列參數來定義屬性。 接收自命令列的屬性值會覆寫專案檔和環境變數中所設定的屬性值。
+ 您可以在命令列上，使用 -property 或 -p 命令列參數定義屬性。 接收自命令列的屬性值會覆寫專案檔和環境變數中所設定的屬性值。
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>從命令列設定專案值
 
-1.  從 [命令視窗]，輸入並執行這一行：
+1.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  檢查輸出結果， 您應該會看到下列這一行：
@@ -264,10 +264,10 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這一行：
@@ -326,10 +326,10 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這一長串的內容：
@@ -358,10 +358,10 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這幾行：
@@ -438,10 +438,10 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 3.  儲存專案檔。
 
-4.  從 [命令視窗]，輸入並執行這一行：
+4.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  檢查輸出結果， 您應該會看到下列這一行：
@@ -479,10 +479,10 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這幾行：
@@ -509,10 +509,10 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這幾行：
@@ -547,10 +547,10 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 2.  儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3.  從 [命令視窗]****，輸入並執行這一行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  檢查輸出結果， 您應該會看到下列這一行：

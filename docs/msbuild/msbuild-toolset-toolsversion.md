@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821106"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 *microsoft.common.tasks* 檔案、*microsoft.common.targets* 檔案和編譯器，例如 *csc.exe* 和 *vbc.exe*。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。  
@@ -40,7 +40,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
  當在專案檔中定義 `ToolsVersion` 值時，MSBuild 會使用該值來判定可用於該專案的工具組屬性值。 一個工具組屬性為 `$(MSBuildToolsPath)`，它會指定 .NET Framework 工具的路徑。 僅需要該工具組屬性 (或 `$(MSBuildBinPath)`)。  
   
- 從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 /ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
+ 從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 -ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
   
  在下列範例中，MSBuild 會使用 `MSBuildToolsPath` 保留屬性，尋找 *Microsoft.CSharp.targets* 檔案。  
   
@@ -61,9 +61,9 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 ## <a name="toolset-implementation"></a>工具組實作  
  選取組成工具組的各種工具、目標和工作的路徑，即可實作工具組。 MSBuild 所定義之工具組中的工具來自下列來源：  
   
--   .NET Framework 資料夾。  
+- .NET Framework 資料夾。  
   
--   其他 Managed 工具。  
+- 其他 Managed 工具。  
   
   Managed 工具包括 *ResGen.exe* 和 *TlbImp.exe*。  
 

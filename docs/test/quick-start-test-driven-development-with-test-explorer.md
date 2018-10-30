@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837083"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 
@@ -33,33 +33,33 @@ ms.locfileid: "39382086"
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用測試總管來執行單元測試
 
-1.  建立使用您選擇的測試架構的單元測試。
+1. 建立使用您選擇的測試架構的單元測試。
 
-     例如，建立使用 MSTest 架構的測試：
+    例如，建立使用 MSTest 架構的測試：
 
-    1.  建立測試專案。
+   1.  建立測試專案。
 
-         在 [新增專案] 對話方塊中，展開 [Visual Basic] > [Visual C#] 或 [Visual C++]，然後選擇 [測試]。
+        在 [新增專案]**** 對話方塊中，展開 [Visual Basic]****、[Visual C#]**** 或 [Visual C++]****，然後選擇 [測試]****。
 
-         選取 [ **單元測試專案**]。
+        選取 [ **單元測試專案**]。
 
-    2.  將每個單元測試撰寫成方法。 在每個測試方法的前面加上 `[TestMethod]` 屬性。
+   2.  將每個單元測試撰寫成方法。 在每個測試方法的前面加上 `[TestMethod]` 屬性。
 
-2.  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+2. 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
-3.  在功能表列上，選擇 [測試] > [執行單元測試] > [所有測試]。
+3. 在功能表列上，選擇 [測試]**** > [執行單元測試]**** > [所有測試]****。
 
-     接著就會建置方案並執行測試。
+    接著就會建置方案並執行測試。
 
-     [測試總管] 會開啟並顯示測試結果的摘要。
+    [測試總管] 會開啟並顯示測試結果的摘要。
 
- **若要查看完整的測試清單：** 請選擇任何分類中的 [ **全部顯示** ]。
+   **若要查看完整的測試清單：** 請選擇任何分類中的 [ **全部顯示** ]。
 
- **若要查看測試結果的詳細資料：** 請在 [測試總管] 中選取測試，以便在詳細資料窗格中檢視詳細資料 (例如例外狀況訊息)。
+   **若要查看測試結果的詳細資料：** 請在 [測試總管] 中選取測試，以便在詳細資料窗格中檢視詳細資料 (例如例外狀況訊息)。
 
- **若要巡覽至測試的程式碼：** 請在 [測試總管] 中按兩下測試，或在捷徑功能表上選擇 [ **開啟測試** ]。
+   **若要巡覽至測試的程式碼：** 請在 [測試總管] 中按兩下測試，或在捷徑功能表上選擇 [ **開啟測試** ]。
 
- **若要偵錯測試：** 請開啟一個或多個測試的捷徑功能表，然後選擇 [ **偵測選取的測試**]。
+   **若要偵錯測試：** 請開啟一個或多個測試的捷徑功能表，然後選擇 [ **偵測選取的測試**]。
 
 > [!IMPORTANT]
 > 顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。
@@ -74,61 +74,61 @@ ms.locfileid: "39382086"
 
 ### <a name="create-the-test-and-method"></a>建立測試和方法
 
-1.  建立一個 Visual C# 類別庫專案。 這個專案會包含所要提供的程式碼。 在此範例中，它的名稱是 `MyMath`。
+1. 建立一個 Visual C# 類別庫專案。 這個專案會包含所要提供的程式碼。 在此範例中，它的名稱是 `MyMath`。
 
-2.  建立測試專案。
+2. 建立測試專案。
 
-    -   在 [新增專案] 對話方塊中，選擇 [Visual C#] > [測試]，然後選擇 [單元測試專案]。
+   -   在 [新增專案]**** 對話方塊中，選擇 [Visual C#]**** > [測試]****，然後選擇 [單元測試專案]****。
 
-         ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
+        ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
 
-3.  撰寫基本測試方法。 驗證特定輸入所產生的結果：
+3. 撰寫基本測試方法。 驗證特定輸入所產生的結果：
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  從測試產生方法。
+4. 從測試產生方法。
 
-    1.  將游標置於 `Rooter` 上，然後在捷徑功能表中選擇 [產生] > [新增類型]。
+   1.  將游標置於 `Rooter` 上，然後在捷徑功能表中選擇 [產生]**** > [新增類型]****。
 
-    2.  在 [ **產生新的類型** ] 對話方塊中，將 [ **專案** ] 設為類別庫專案。 在此範例中，它是 `MyMath`。
+   2.  在 [ **產生新的類型** ] 對話方塊中，將 [ **專案** ] 設為類別庫專案。 在此範例中，它是 `MyMath`。
 
-    3.  將游標置於 `SquareRoot` 上，然後在捷徑功能表中選擇 [產生] > [方法 Stub]。
+   3.  將游標置於 `SquareRoot` 上，然後在捷徑功能表中選擇 [產生]**** > [方法 Stub]****。
 
-5.  執行單元測試。
+5. 執行單元測試。
 
-    1.  在 [測試] 功能表列上，選擇 [執行單元測試] > [所有測試]。
+   1.  在 [測試]**** 功能表列上，選擇 [執行單元測試]**** > [所有測試]****。
 
-         接著就會建置並執行方案。
+        接著就會建置並執行方案。
 
-         [測試總管] 會開啟並顯示測試結果。
+        [測試總管] 會開啟並顯示測試結果。
 
-         此測試會出現在 [ **失敗的測試**] 底下。
+        此測試會出現在 [ **失敗的測試**] 底下。
 
-6.  選取測試的名稱。
+6. 選取測試的名稱。
 
-     測試的詳細資料會顯示在 [測試總管] 的下半部。
+    測試的詳細資料會顯示在 [測試總管] 的下半部。
 
-7.  選取 [ **堆疊追蹤** ] 底下的項目，以查看測試失敗的位置。
+7. 選取 [ **堆疊追蹤** ] 底下的項目，以查看測試失敗的位置。
 
- ![顯示失敗之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough2.png)
+   ![顯示失敗之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough2.png)
 
- 此時，您已建立要修改的測試和 stub，好讓測試能夠成功。
+   此時，您已建立要修改的測試和 stub，好讓測試能夠成功。
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>在每次變更後讓所有的測試都成功
 

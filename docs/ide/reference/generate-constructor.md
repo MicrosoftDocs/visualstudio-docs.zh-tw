@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中產生建構函式
+title: 產生建構函式的快速動作
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926731"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
@@ -47,23 +47,23 @@ ms.locfileid: "44124979"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
 
    ![「產生建構函式」預覽](media/constructor1-preview-cs.png)
 
-1. 從下拉功能表選取 [產生建構函式]。
+1. 從下拉功能表選取 [產生建構函式]****。
 
-   [選取成員] 對話方塊隨即開啟。
+   [選取成員]**** 對話方塊隨即開啟。
 
-1. 選取您想要納入為建構函式參數的成員。 您可以使用向上鍵和向下鍵加以排序。 選擇 [確定] 。
+1. 選取您想要納入為建構函式參數的成員。 您可以使用向上鍵和向下鍵加以排序。 選擇 [確定] ****。
 
    ![[選取成員] 對話方塊](media/constructor1-dialog-cs.png)
 
    > [!TIP]
-   > 您可以選取 [新增 null 檢查] 核取方塊，來自動為建構函式參數產生 null 檢查。
+   > 您可以選取 [新增 null 檢查]**** 核取方塊，來自動為建構函式參數產生 null 檢查。
 
    系統會使用指定的參數來建立建構函式。
 
@@ -78,14 +78,14 @@ ms.locfileid: "44124979"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有選取項目的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有選取項目的行上，此圖示就會出現在左邊界上。
 
-     ![「產生建構函式」預覽](media/constructor2-preview-cs.png)
+      ![「產生建構函式」預覽](media/constructor2-preview-cs.png)
 
-1. 從下拉式功能表選取 [產生建構函式 'TypeName(...)']。
+1. 從下拉式功能表選取 [產生建構函式 'TypeName(...)']****。
 
    系統會使用選取的參數來建立建構函式。
 
@@ -97,62 +97,64 @@ ms.locfileid: "44124979"
 
    - C#: 
 
-    ![醒目提示的程式碼 C#](media/constructor-highlight-cs.png)
+       ![醒目提示的程式碼 C#](media/constructor-highlight-cs.png)
 
    - Visual Basic：
 
-    ![醒目提示的程式碼 VB](media/constructor-highlight-vb.png)
+       ![醒目提示的程式碼 VB](media/constructor-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
-    ![「產生建構函式」預覽](media/constructor-preview-cs.png)
+      ![「產生建構函式」預覽](media/constructor-preview-cs.png)
 
-1. 從下拉式功能表選取 [在 '*TypeName*' 中產生建構函式 ]。
+3. 從下拉式功能表選取 [在 '*TypeName*' 中產生建構函式 ]****。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更]**** 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    建構函式隨即建立，而任何參數會從使用方式推斷。
 
    - C#: 
 
-      ![產生方法結果 C#](media/constructor-result-cs.png)
+       ![產生方法結果 C#](media/constructor-result-cs.png)
 
    - Visual Basic：
 
-      ![產生方法結果 VB](media/constructor-result-vb.png)
+       ![產生方法結果 VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> 將參數新增至現有的建構函式 (僅限 C#)
 
 1. 將參數新增至現有的建構函式呼叫。
 
-1. 將游標放在有紅色曲線的行上，該曲線代表您使用尚未存在的建構函式。
+2. 將游標放在有紅色曲線的行上，該曲線代表您使用尚未存在的建構函式。
 
     ![「產生建構函式」醒目標示](media/constructor4-highlight-cs.png)
 
-1. 接著，執行下列其中一項操作：
+3. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
-    ![「產生建構函式」預覽](media/constructor4-preview-cs.png)
+      ![「產生建構函式」預覽](media/constructor4-preview-cs.png)
 
-1. 從下拉式功能表選取 [將參數新增至 'TypeName(...)']。
+4. 從下拉式功能表選取 [將參數新增至 'TypeName(...)']****。
 
    參數會新增至建構函式，而其類型會從使用方式推斷。
 
    ![「產生建構函式」結果](media/constructor4-result-cs.png)
+
+您也可以將參數新增到現有的方法。 如需詳細資訊，請參閱[將參數新增至方法](add-parameter.md)。
 
 ## <a id="create"></a> 從建構函式參數建立欄位或屬性並加以初始化 (僅限 C#)
 
@@ -165,14 +167,14 @@ ms.locfileid: "44124979"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-     - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-     - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有所新增參數的行上，此圖示就會顯示在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有所新增參數的行上，此圖示就會顯示在左邊界上。
 
    ![「產生建構函式」預覽](media/constructor5-preview-cs.png)
 
-1. 從下拉式功能表選取 [建立和初始化屬性] 或 [建立和初始化欄位]。
+1. 從下拉式功能表選取 [建立和初始化屬性]**** 或 [建立和初始化欄位]****。
 
    系統會宣告欄位或屬性，並自動命名以符合您的類型。 在建構函式主體中，還會新增一行程式碼以將欄位或屬性初始化。
 

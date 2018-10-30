@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838071"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Xamarin University 訓練課程權益
 
@@ -67,16 +67,17 @@ Visual Studio Dev Essentials 成員具有建立免費帳戶的資格，此帳戶
     > ![Xamarin University 入口網站](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  [是] |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 3 個月       |  [是] |
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是 |
+| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 3 個月       |  是 |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA        |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                             |  NA        |
-| Visual Studio Dev Essentials | NA  | 免費方案                                             |  [是]        |
+| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                             |  NA        |
+| Visual Studio Dev Essentials | NA  | 免費方案                                             |  是        |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)。Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。 排除：MCT Software & Services。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)。Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。 排除：MCT Software & Services。*
 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。

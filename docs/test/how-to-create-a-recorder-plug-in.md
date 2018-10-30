@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909768"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器] 工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器]**** 工具列中的 [停止]**** 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
 
-錄製器外掛程式可讓您執行自己的自訂動態參數相互關聯。 利用內建的相互關聯功能，Web 效能測試會在完成時偵測 Web 錄製中的動態參數，或者當您使用 [Web 效能測試編輯器] 工具列上的 [將動態參數升至 Web 測試參數] 時偵測動態參數。 不過，內建偵測功能不一定會找到所有動態參數。 例如，它找不到通常在 5 到 30 分鐘之內就會變更值的工作階段 ID。 因此，您必須手動執行相互關聯程序。
+錄製器外掛程式可讓您執行自己的自訂動態參數相互關聯。 利用內建的相互關聯功能，Web 效能測試會在完成時偵測 Web 錄製中的動態參數，或者當您使用 [Web 效能測試編輯器]**** 工具列上的 [將動態參數升至 Web 測試參數]**** 時偵測動態參數。 不過，內建偵測功能不一定會找到所有動態參數。 例如，它找不到通常在 5 到 30 分鐘之內就會變更值的工作階段 ID。 因此，您必須手動執行相互關聯程序。
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您撰寫您自己的自訂外掛程式程式碼。 這個外掛程式會在 [Web 效能測試編輯器] 儲存及呈現 Web 效能測試之前，以許多方式執行相互關聯或修改 Web 效能測試。 因此，如果您判斷特定動態變數必須針對許多錄製進行相互關聯，可以自動化此程序。
 
@@ -35,30 +35,30 @@ ms.locfileid: "39382061"
 
 1.  開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
 
-2.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選取 [新增]，然後選擇 [新增專案]。
+2.  在 [方案總管]**** 中，以滑鼠右鍵按一下方案，選取 [新增]****，然後選擇 [新增專案]****。
 
-     [新增專案] 對話方塊隨即顯示。
+     [新增專案]**** 對話方塊隨即顯示。
 
-3.  在 [已安裝的範本] 底下，選取 [Visual C#]。
+3.  在 [已安裝的範本]**** 底下，選取 [Visual C#]****。
 
-4.  在範本清單中，選取 [類別庫]。
+4.  在範本清單中，選取 [類別庫]****。
 
-5.  在 [名稱] 文字方塊中，鍵入錄製器外掛程式的名稱。
+5.  在 [名稱]**** 文字方塊中，鍵入錄製器外掛程式的名稱。
 
-     類別庫會加入至 [方案總管]，而且新的類別會在 [程式碼編輯器] 中開啟。
+     類別庫會加入至 [方案總管]****，而且新的類別會在 [程式碼編輯器]**** 中開啟。
 
-6.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考] 資料夾，然後選取 [新增參考]。
+6.  在 [方案總管]**** 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考]**** 資料夾，然後選取 [新增參考]****。
 
     > [!TIP]
     > 新類別庫專案資料夾的範例是 **RecorderPlugins**。
 
-     [新增參考] 對話方塊隨即顯示。
+     [新增參考]**** 對話方塊隨即顯示。
 
-7.  選取 [.NET] 索引標籤。
+7.  選取 [.NET]**** 索引標籤。
 
-8.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]。
+8.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]****。
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 就會新增至 [方案總管] 中的 [參考] 資料夾。
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 就會新增至 [方案總管]**** 中的 [參考]**** 資料夾。
 
 9. 撰寫錄製器外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 的新公用類別。
 
@@ -81,17 +81,17 @@ ms.locfileid: "39382061"
 
 11. 依據您要錄製器外掛程式在 Web 錄製發生之後執行的動作，加入其他程式碼。 例如，您可以加入程式碼以處理自訂相互關聯，如下列範例所示。 此外，也可以建立錄製器外掛程式，以用於將註解轉換為異動，或將驗證規則加入至 Web 效能測試等作業。
 
-12. 選擇 [建置] 功能表上的 [建置 \<類別庫專案名稱>]。
+12. 選擇 [建置]**** 功能表上的 [建置 \<類別庫專案名稱>]****。
 
 13. 接下來，您必須部署錄製器外掛程式，以便向 Visual Studio 註冊。
 
 ### <a name="deploy-the-recorder-plug-in"></a>部署錄製器外掛程式
 
-在編譯錄製器外掛程式之後，您需要在下列兩個位置的其中一個放置產生的 DLL 檔案：
+在編譯錄製器外掛程式之後，請在下列兩個位置的其中一個放置產生的 DLL：
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[版本]\\[版別]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<版本**>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [版本]\WebTestPlugins*
 
 > [!WARNING]
 > 將錄製器外掛程式複製到這兩個位置之一後，您必須重新啟動 Visual Studio，以便註冊錄製器外掛程式。
@@ -100,9 +100,9 @@ ms.locfileid: "39382061"
 
 1.  建立新的 Web 效能測試。
 
-     [啟用 WebTestRecordPlugins] 對話方塊隨即顯示。
+     [啟用 WebTestRecordPlugins]**** 對話方塊隨即顯示。
 
-2.  選取錄製器外掛程式的核取方塊，然後選擇 [確定]。
+2.  選取錄製器外掛程式的核取方塊，然後選擇 [確定]****。
 
      在 Web 效能測試完成錄製之後，就會執行新的錄製器外掛程式。
 
@@ -113,8 +113,8 @@ ms.locfileid: "39382061"
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
-    > 1.  在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
-    > 2.  從測試或適當的位置中移除外掛程式，然後再重新加入。
+    > 1. 在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
+    > 2. 從測試或適當的位置中移除外掛程式，然後再重新加入。
 
 ## <a name="example"></a>範例
 
@@ -123,7 +123,7 @@ ms.locfileid: "39382061"
 > [!NOTE]
 > 範例程式碼完整清單位在本主題底部。
 
- **檢閱範例程式碼**
+**檢閱範例程式碼**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>逐一查看結果，以尋找有 ReportSession 的第一頁
 

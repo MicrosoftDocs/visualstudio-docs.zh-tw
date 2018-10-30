@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548227"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101052"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
@@ -37,17 +37,17 @@ ms.locfileid: "45548227"
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>步驟 6-1： 建立專案，並初始化資料庫
 
-1. 在 Visual Studio 中，移至 [方案總管]，接著在本教學課程稍早建立的 **LearningDjango** 方案上按一下滑鼠右鍵，然後依序選取 [新增] > [新增專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
+1. 在 Visual Studio 中，移至 [方案總管]****，接著在本教學課程稍早建立的 **LearningDjango** 方案上按一下滑鼠右鍵，然後依序選取 [新增]**** > [新增專案]****。 (或者，如果您想要使用新的方案，請依序選取 [檔案]**** > [新增]**** > [專案]****)。
 
-1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Django Web 專案] 範本，接著呼叫 DjangoPolls 專案，然後選取 [確定]。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Django Web 專案]**** 範本，接著呼叫 DjangoPolls 專案，然後選取 [確定]****。
 
-1. 與 Visual Studio 中的其他專案範本一樣，「投票 Django Web 專案」範本也包含一個 *requirements.txt* 檔案，Visual Studio 提示會詢問您要將這些相依性安裝到何處。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
+1. 與 Visual Studio 中的其他專案範本一樣，「投票 Django Web 專案」範本也包含一個 *requirements.txt* 檔案，Visual Studio 提示會詢問您要將這些相依性安裝到何處。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
 
-1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 步驟前後順序就是先在 [方案總管] 中的 **DjangoPolls** 專案按一下滑鼠右鍵，接著依序選取 [Python] > [Django 遷移] 命令，然後再一次在專案上按一下滑鼠右鍵，依序選取 [Python] > [Django 建立 Superuser] 命令，並遵循畫面上的提示操作。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
+1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 步驟前後順序就是先在 [方案總管] **** 中的 **DjangoPolls** 專案按一下滑鼠右鍵，接著依序選取 [Python]**** > [Django 遷移]**** 命令，然後再一次在專案上按一下滑鼠右鍵，依序選取 [Python]**** > [Django 建立 Superuser]**** 命令，並遵循畫面上的提示操作。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
 
-1. 您可以到 [方案總管] 中的 **DjangoPolls** 專案按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 您可以到 [方案總管]**** 中的 **DjangoPolls** 專案按一下滑鼠右鍵，然後選取 [設定為啟始專案]****，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
-1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕來執行伺服器：
+1. 依序選取 [偵錯]**** > [開始偵錯]**** (**F5**)，或使用工具列上的 [網頁伺服器]**** 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -61,7 +61,7 @@ ms.locfileid: "45548227"
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
+    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer]**** 中的 [變更]**** 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]****。
 
 ### <a name="examine-the-project-contents"></a>檢查專案內容
 
@@ -169,8 +169,8 @@ def seed(request):
 您以後一定會對自己的模型進行變更，不過 Django 可以讓基礎資料庫結構描述保有這些最新的模型。 以下是大致的工作流程：
 
 1. 變更 *models.py* 檔案中的模型。
-1. 到 Visual Studio 中的 [方案總管]，然後在專案上按一下滑鼠右鍵，接下來依序選取 [Python] > [Django 遷移] 命令。 如先前所述，這個命令會在 *app/migrations* 中產生指令碼，以便將資料庫從目前的狀態遷移至新的狀態。
-1. 若要將指令碼套用至實際的資料庫，再次到專案上以滑鼠右鍵按，然後依序選取 [Python] > [Django 遷移]。
+1. 到 Visual Studio 中的 [方案總管]****，然後在專案上按一下滑鼠右鍵，接下來依序選取 [Python]**** > [Django 遷移]**** 命令。 如先前所述，這個命令會在 *app/migrations* 中產生指令碼，以便將資料庫從目前的狀態遷移至新的狀態。
+1. 若要將指令碼套用至實際的資料庫，再次到專案上以滑鼠右鍵按，然後依序選取 [Python]**** > [Django 遷移]****。
 
 Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要您執行遷移命令，Django 就會套用任何必要的遷移。 比方說您建立新的空白資料庫，執行遷轉命令便會套用每一個遷轉指令碼，讓您擁有最新的模型。 同樣地，如果您對多個模型進行變更，並在開發電腦上產生遷移，就可以在生產伺服器上執行遷移命令，以便能夠將累積的遷移套用至生產資料庫。 Django 又會再一次只套用那些自從生產資料庫最後一次遷移之後，另外產生的遷移指令碼。
 
@@ -182,10 +182,10 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. 儲存檔案，然後在 [方案總管] 的 **DjangoPolls** 專案上按一下滑鼠右鍵，接下來依序選取 [Python] > [Django 遷移] 命令。
-1. 依序選取 [專案] > [顯示所有檔案] 命令，查看 **migrations** 資料夾中產生的新指令碼，其名稱開頭為 **002_auto_**。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]。 然後您可以再次依序選取 [專案] >  [顯示所有檔案] 來還原原始的檢視。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
+1. 儲存檔案，然後在 [方案總管] **** 的 **DjangoPolls** 專案上按一下滑鼠右鍵，接下來依序選取 [Python]**** > [Django 遷移]**** 命令。
+1. 依序選取 [專案]**** > [顯示所有檔案]**** 命令，查看 **migrations** 資料夾中產生的新指令碼，其名稱開頭為 **002_auto_**。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]****。 然後您可以再次依序選取 [專案]**** >  [顯示所有檔案]**** 來還原原始的檢視。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
 1. 如有需要，開啟這個檔案並檢查 Django 指令碼如伺記錄模型從舊狀態到新狀態狀態之間的變動過程。
-1. 再次到 Visual Studio 專案上按一下滑鼠右鍵，然後依序選取 [Python] > [Django 遷移]，將狀態變更套用至資料庫。
+1. 再次到 Visual Studio 專案上按一下滑鼠右鍵，然後依序選取 [Python]**** > [Django 遷移]****，將狀態變更套用至資料庫。
 1. 如有需要，請在適當的檢視器中開啟資料庫，以確認變更。
 
 整體來說，Django 的遷移功能表示您永遠不需要手動管理資料庫結構描述。 只要在您的模型做一些變更，接著產生遷移指令碼，然後使用遷移命令來套用這些指令碼就可以了。
@@ -198,7 +198,7 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>問題： 為什麼執行 Djang 遷移之後，方案總管不顯示產生的新指令碼？
 
-回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾並在執行 [Django 遷移] 命令時套用了新指令碼，但因為它們未被新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] 中。 若要顯示它們，請先依序選取 [專案] > [顯示所有檔案]功能表命令或下圖中列出的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]，這樣下次您認可時，也會將它們包含在原始控制項中。
+回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾並在執行 [Django 遷移]**** 命令時套用了新指令碼，但因為它們未被新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] **** 中。 若要顯示它們，請先依序選取 [專案]**** > [顯示所有檔案]**** 功能表命令或下圖中列出的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]****，這樣下次您認可時，也會將它們包含在原始控制項中。
 
 ![包含在方案總管的專案命令中](media/django/step06-include-migrations-script-in-project.png)
 
@@ -368,7 +368,7 @@ admin.site.register(Poll, PollAdmin)
 
 在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
 
-- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括如 Django 應用程式所需的特定變更。
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 建立名為 *templates/404.html* 的範本，以自訂 404 頁面。 如果這個範本存在，Django 就會使用它，而不使用預設範本。 如需詳細資訊，請參閱 Django 文件中的[錯誤檢視](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 
@@ -376,8 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來操作 Azure 儲存體服務，例如資料表和 blob。
 
-- 在 Azure Pipelines 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 Azure Repos、GitHub 或其他位置上)，您可以讓 Azure Test Plans 自動執行單元測試作為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps Services 與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具關閉整個週期。 如需詳細資訊，請參閱:
-
-  - [使用 Azure DevOps Projects來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [使用 Visual Studio Team Services 在 Azure 中進行 Python 程式設計 (影片，11 分鐘 21 秒)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
-
+- 在 Visual Studio Team Services (VSTS) 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 VSTS、GitHub 或其他位置上)，您可以讓 VSTS 自動執行單元測試做為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 VSTS，此外，與監視 App Insights 方案整合，並關閉與 agile 規劃工具的整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)。

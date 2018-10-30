@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831844"
 ---
 # <a name="concierge-chat"></a>指引對談
 
@@ -39,16 +39,17 @@ ms.locfileid: "44282518"
     > ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  [是]          |
+| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 可用       |  是          |
+| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 可用                                                            |  是          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 可用                                             |  [是]          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 | Visual Studio Dev Essentials | NA  | 無法使用 |N/A |
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark。排除：FTE、Microsoft Valued Partner (MVP)、Region Director (RD)、Microsoft Partner Network (MPN)、Imagine。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark。排除：FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Imagine。*
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812656"
 ---
 # <a name="target-build-order"></a>目標組建順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
--   `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
+- `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
   
--   `DefaultTargets`. 如果未在命令列上明確指定目標，則這個 `Project` 屬性會指定要執行哪些目標。  
+- `DefaultTargets`. 如果未在命令列上明確指定目標，則這個 `Project` 屬性會指定要執行哪些目標。  
   
--   `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。  
+- `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。  
   
--   `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。  
+- `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。  
   
- 目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。  
+  目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。  
   
- 目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
+  目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
   
 ## <a name="initial-targets"></a>初始目標  
  [Project](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。  
@@ -56,9 +56,9 @@ ms.locfileid: "43774941"
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 您可以在命令列上使用 **/target** 參數來覆寫預設目標。 下列範例會指定 `Build` 目標執行，然後 `Report` 目標執行。 當您以這種方式指定目標時，就會忽略任何預設目標。  
+ 您可以在命令列上使用 **-target** 參數覆寫預設目標。 下列範例會指定 `Build` 目標執行，然後 `Report` 目標執行。 當您以這種方式指定目標時，就會忽略任何預設目標。  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  如果未指定初始目標和預設目標，以及如果未指定任何命令列目標，MSBuild 就會先執行初始目標，接著執行預設目標。  
   
@@ -108,7 +108,7 @@ ms.locfileid: "43774941"
   
 1.  執行 `InitialTargets` 目標。  
   
-2.  執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
+2.  執行命令列上使用 **-target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
   
 3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。
 

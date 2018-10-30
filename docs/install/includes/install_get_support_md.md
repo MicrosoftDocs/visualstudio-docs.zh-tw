@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 0c7400338692b5f0eb8608c82d5d468eaec8ea1f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: dfdc1003cb09e17c911a2a065c7301123861bb50
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40100389"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49084269"
 ---
 ## <a name="get-support"></a>取得支援
 
@@ -16,6 +16,5 @@ ms.locfileid: "40100389"
 以下是一些支援選項：
 
 * 您可以透過 Visual Studio 安裝程式及 Visual Studio IDE 中的[回報問題](../../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具回報產品的問題。
-* 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品的建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)中追蹤產品問題及尋找解答。
-* 您可以使用您的 [GitHub](https://github.com/) 帳戶與我們連絡，以及參加 [Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與其他 Visual Studio 開發人員對話。 
+* 在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中建議功能、追蹤產品問題和尋找解答。
+* 您可以使用您的 [GitHub](https://github.com/) 帳戶與我們連絡，以及參加 [Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與其他 Visual Studio 開發人員對話。
