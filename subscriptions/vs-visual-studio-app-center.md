@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940979"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -41,16 +41,17 @@ App Center 是應用程式的任務控制機制。
     > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, NFR<sup>1</sup> | 包含       |  [是]          |
-| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售                                       | 包含                                                            |[是] |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 包含                                                            |[是] |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 包含                                                            |[是] |
-| Visual Studio Dev Essentials | NA  | 包含                                                            |[是] |
+| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL、Azure、零售、NFR<sup>1</sup> | 包含       |  是          |
+| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL、Azure、零售                                       | 包含                                                            |是 |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 包含                                                            |是 |
+| MSDN 平台 (標準)                                          | VL、零售                                              | 包含                                                            |是 |
+| Visual Studio Dev Essentials | NA  | 包含                                                            |是 |
 
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Partner (MVP)、Region Director (RD)。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Professional (MVP)、Region Director (RD)。*
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

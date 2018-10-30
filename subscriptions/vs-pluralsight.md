@@ -9,12 +9,12 @@ description: 了解有關隨附於 Visual Studio 訂用帳戶的 Pluralsight 訓
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912002"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -27,61 +27,63 @@ ms.locfileid: "44283141"
 
 ## <a name="activation-steps"></a>啟用步驟
 1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 Pluralsight 權益磚上的 [取得代碼] 連結 (位於 [專業開發] 區段)。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益磚](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
-
-    > [!IMPORTANT]
-    > 當您按一下 Pluralsight 權益磚上的 [取得代碼] 連結時，您可能會收到下列訊息：
-    >
-    > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益磚](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > 
+   > [!IMPORTANT]
+   > 當您按一下 Pluralsight 權益磚上的 [取得代碼] 連結時，您可能會收到下列訊息：
+   > 
+   > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
 2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟用]。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益啟用](_img\vs-pluralsight\vs-pluralsight-activate.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3.  系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。  在此範例中，我們將啟用 Visual Studio Dev Essentials 成員資格所提供的權益。 按一下 [Activate your benefit (啟用您的權益)]。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight VSDE 登陸頁面](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。  在此範例中，我們將啟用 Visual Studio Dev Essentials 成員資格所提供的權益。 按一下 [Activate your benefit (啟用您的權益)]。
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight VSDE 登陸頁面](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
 
-4.  在啟用頁面上：
-    - 在表單中提供要求的連絡資訊
-    - 按一下核取方塊，接受使用條款和隱私權原則
-    - 按一下 [I agree, activate benefit] (我同意，啟用權益)。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益啟用](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益條款](_img\vs-pluralsight\vs-pluralsight-terms.png)
+4. 在啟用頁面上：
+   - 在表單中提供要求的連絡資訊
+   - 按一下核取方塊，接受使用條款和隱私權原則
+   - 按一下 [I agree, activate benefit] (我同意，啟用權益)。
+     > [!div class="mx-imgBorder"]
+     > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > [!div class="mx-imgBorder"]
+     > ![Pluralsight 權益條款](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
-5.  可能需要一點時間來設定您的帳戶。  完成之後，您將會在頁面上看到確認訊息，並收到一封電子郵件，其中包含您的登入資訊。  此電子郵件將會傳送至您在建立帳戶時所指定的別名。  如果找不到此郵件，請務必檢查您的垃圾郵件資料夾。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益確認](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+5. 可能需要一點時間來設定您的帳戶。  完成之後，您將會在頁面上看到確認訊息，並收到一封電子郵件，其中包含您的登入資訊。  此電子郵件將會傳送至您在建立帳戶時所指定的別名。  如果找不到此郵件，請務必檢查您的垃圾郵件資料夾。
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益確認](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
+   > 
+   > [!NOTE]
+   > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
 
-    > [!NOTE]
-    > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
+6. 一旦成功建立您的帳戶，您會收到一封電子郵件，其中包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]。
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益歡迎電子郵件](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
-6.  一旦成功建立您的帳戶，您會收到一封電子郵件，其中包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益歡迎電子郵件](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]。
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益登入](_img/vs-pluralsight/vs-pluralsight-login.png)
 
-7.  輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]。
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益登入](_img\vs-pluralsight\vs-pluralsight-login.png)
-
-8.  就這麼容易！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
-    > [!div class="mx-imgBorder"]
-    > ![Pluralsight 權益首頁](_img\vs-pluralsight\vs-pluralsight-home.png)
+8. 就這麼容易！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 權益首頁](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>資格
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售 | 6 個月       |  否<sup>2</sup>|
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 3 個月                                                           |否<sup>2</sup>         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                                           |否<sup>2</sup>         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                                           |否<sup>2</sup>         |
-| Visual Studio Dev Essentials | NA  | 3 個月 |否|
-| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                  |NA|
-| Visual Studio Enterprise (NFR<sup>1</sup>) | 計畫                                       | 無法使用                                  |NA|
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Partner (MVP)、Region Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine。*
+
+|                          訂用帳戶層級                          |     通道      |    優勢    |   可續約？   |
+|----------------------------------------------------------------------|-------------------|---------------|----------------|
+|          Visual Studio Enterprise (標準、年度雲端)           | VL、Azure、零售 |   6 個月    | 否<sup>2</sup> |
+|         Visual Studio Professional (標準、年度雲端)          | VL、Azure、零售 |   3 個月    | 否<sup>2</sup> |
+|              Visual Studio Test Professional (標準訂用帳戶)              |    VL、零售     |   3 個月    | 否<sup>2</sup> |
+|                      MSDN 平台 (標準)                       |    VL、零售     |   3 個月    | 否<sup>2</sup> |
+|                     Visual Studio Dev Essentials                     |        NA         |   3 個月    |       否       |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
+|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      計畫      | 無法使用 |       NA       |
+
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
 
 <sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，就無法重設。如需詳細資訊，請參閱下面的常見問題集。在 Pluralsight 訂用帳戶過期之後，您就有資格收到三個研究領域中其中一個研究領域的 50 個所選取 Pluralsight 課程的 12 個月存取權。
 

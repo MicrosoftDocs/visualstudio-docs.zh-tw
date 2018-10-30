@@ -9,12 +9,12 @@ description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923559"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 權益
 
@@ -28,28 +28,28 @@ ms.locfileid: "43289328"
 下載 IDE：
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在 [工具] 區段中找出 Visual Studio IDE 磚，然後按一下權益磚底部的 [下載] 連結。  您也可以從[下載](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)頁面進行下載。
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise 磚](_img\vs-ide-experience\vs-ide-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Enterprise 磚](_img/vs-ide-experience/vs-ide-tile.png)
 
-3.  按一下，會將您重新導向至 Visual Studio Enterprise 的 [下載結果] 頁面，而您有機會在其中下載 IDE，並取得產品金鑰進行啟用。 您也可以按一下藍色的 [取得金鑰] 連結來索取產品金鑰，或稍後在[產品金鑰](https://my.visualstudio.com/productkeys)頁面上索取金鑰。
-4.  在 [下載結果] 頁面的 [詳細資料] 索引標籤上：
-    - 選取您想要的架構 (x86、x64)
-    - 選取您的語言參考。
-5.  按一下藍色的 [下載] 按鈕。
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise 下載詳細資料](_img\vs-ide-experience\vs-ide-download-details.png)
-6.  若要立即安裝，請按一下 [執行]。
-7.  在 [使用者帳戶控制] 對話方塊中，按一下 [是]。
-8.  按一下 [繼續] 接受授權條款。
-9.  安裝程式啟動時，請選擇您想要的工作負載、個別元件和語言套件，方法是在對應的索引標籤上選擇它們。
-    > [!div class="mx-imgBorder"]
-    > ![自訂 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+3. 按一下，會將您重新導向至 Visual Studio Enterprise 的 [下載結果] 頁面，而您有機會在其中下載 IDE，並取得產品金鑰進行啟用。 您也可以按一下藍色的 [取得金鑰] 連結來索取產品金鑰，或稍後在[產品金鑰](https://my.visualstudio.com/productkeys)頁面上索取金鑰。
+4. 在 [下載結果] 頁面的 [詳細資料] 索引標籤上：
+   - 選取您想要的架構 (x86、x64)
+   - 選取您的語言參考。
+5. 按一下藍色的 [下載] 按鈕。
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Enterprise 下載詳細資料](_img/vs-ide-experience/vs-ide-download-details.png)
+6. 若要立即安裝，請按一下 [執行]。
+7. 在 [使用者帳戶控制] 對話方塊中，按一下 [是]。
+8. 按一下 [繼續] 接受授權條款。
+9. 安裝程式啟動時，請選擇您想要的工作負載、個別元件和語言套件，方法是在對應的索引標籤上選擇它們。
+   > [!div class="mx-imgBorder"]
+   > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10.  按一下 [安裝] 。
+10. 按一下 [安裝] 。
 
 11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動] 開始使用。
     > [!div class="mx-imgBorder"]
-    > ![啟動 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
 
 12. 使用與 Visual Studio 訂用帳戶建立關聯的帳戶登入。
 
@@ -57,18 +57,19 @@ ms.locfileid: "43289328"
 
 14. [啟動] 頁面隨即顯示。  您已準備好開始使用 Visual Studio！
     > [!div class="mx-imgBorder"]
-    > ![開始使用 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > ![開始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
-| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | Visual Studio Community |[是] |
+| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 可用       |  是          |
+| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL、Azure、零售                                       | 可用                                                            |  是          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 可用                                             |  是         |
+| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                              |  N/A          |
+| Visual Studio Dev Essentials | N/A  | Visual Studio Community |是 |
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。排除：MCT Software & Services。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。排除：MCT Software & Services。*
 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。

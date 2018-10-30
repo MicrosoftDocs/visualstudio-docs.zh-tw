@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551658"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101130"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何指派要為專案使用的 Python 環境
 
@@ -50,7 +50,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 (反之，共用全域環境則會包含任意數目的程式庫，不論您是否在專案中使用這些程式庫)。如此一來，您即可輕鬆從虛擬環境建立 *requirements.txt* 檔案，然後用來在其他的開發或生產電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
 
-當您在 Visual Studio 中開啟的專案包含 *requirements.txt* 檔案時，Visual Studio 會自動提供可讓您重新建立虛擬環境的選項。 在未安裝 Visual Studio (例如 Azure App Service) 的電腦上，您可以使用 `pip install -r requirements.txt` 以還原套件 ([管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 中描述此程序)。
+當您在 Visual Studio 中開啟的專案包含 *requirements.txt* 檔案時，Visual Studio 會自動提供可讓您重新建立虛擬環境的選項。 在未安裝 Visual Studio 的電腦上，您可以使用 `pip install -r requirements.txt` 還原套件。
 
 由於虛擬環境包含基底解譯器的硬式編碼路徑，而且您可以使用 *requirements.txt* 重新建立環境，所以一般來說，您可以省略來自原始檔控制的整個虛擬環境資料夾。
 

@@ -1,7 +1,7 @@
 ---
 title: 對 Python 程式碼進行偵錯
 description: 在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627037"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101156"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -25,7 +25,6 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 另請參閱下列案例特定的偵錯文章︰
 
 - [Linux 遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
-- [Azure 遠端偵錯](debugging-remote-python-code-on-azure.md)
 - [混合模式 Python/C++ 偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -170,7 +169,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | 命令 | 引數 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 從目前的陳述式開始執行程式。 |
-| `$down`, `$d` | 在堆疊追蹤中將目前的框架下移一層。 |
+| `$down`、 `$d` | 在堆疊追蹤中將目前的框架下移一層。 |
 | `$frame` | | 顯示目前的框架 ID。
 | `$frame` | 框架 ID | 將目前的框架切換到指定的框架 ID。
 | `$load` | 從檔案載入命令並執行，直到完成為止 |
@@ -183,7 +182,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | `$thread` | | 顯示目前的執行緒 ID。 |
 | `$thread` | 執行緒 ID | 將目前的執行緒切換到指定的執行緒 ID。 |
 | `$threads` | | 列出目前正在進行偵錯的執行緒。 |
-| `$up`, `$u` | | 在堆疊追蹤中將目前的框架上移一層。 |
+| `$up`、 `$u` | | 在堆疊追蹤中將目前的框架上移一層。 |
 | `$where`, `$w`, `$bt` | 列出目前執行緒的框架。 |
 
 請注意，標準偵錯工具視窗 (例如 [處理序]、[執行緒] 和 [呼叫堆疊]) 不會與 [互動式偵錯] 視窗同步。 在 [互動式偵錯] 視窗中變更使用中的處理序、執行緒或框架，不會影響其他偵錯工具視窗。 同樣地，在其他偵錯工具視窗變更使用中的處理序、執行緒或框架，也不會影響 [互動式偵錯] 視窗。
@@ -227,9 +226,45 @@ Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的�
 
 1. 如果版本低於 4.1.1a9 (隨附於 Visual Studio 的版本)，請選取套件右側的 **X** 以將舊版解除安裝。 Visual Studio 就會使用其隨附的版本。 (您也可以使用 `pip uninstall ptvsd` 從 PowerShell 解除安裝。)
 
-1. 或者，您可以將 ptvsd 套件更新為其最新版本。 在搜尋方塊中輸入 `ptvsd --upgrade -pre`，然後選取 [執行命令: pip install ptvsd --upgrade -pre]。 (您也可以從 PowerShell 使用相同的命令。)
+1. 或者，您可以依照[疑難排解](#troubleshooting)一節的指示，將 ptvsd 套件更新為最新版本。
 
-    ![在 [Python 環境] 視窗中提供升級命令](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>疑難排解
+
+如果您的偵錯工具有問題，請先升級您的 ptvsd 版本，如下所示：
+
+1. 瀏覽到 [Python 環境] 視窗中的 [套件] 索引標籤。
+
+1. 在搜尋方塊中輸入 `ptvsd --upgrade`，然後選取 [執行命令: pip install ptvsd --upgrade]。 (您也可以從 PowerShell 使用相同的命令。)
+
+    ![在 [Python 環境] 視窗中提供 ptvsd 升級命令](media/debugging-experimental-upgrade-ptvsd.png)
+
+如果問題持續發生，請在 [PTVS GitHub 存放庫](https://github.com/Microsoft/ptvs/issues)上提出問題。
+
+### <a name="enable-debugger-logging"></a>啟用偵錯工具記錄
+
+在調查偵錯工具問題的過程中，Microsoft 可能會要求您啟用並收集有助於進行診斷的偵錯工具記錄。
+
+下列步驟在目前的 Visual Studio 工作階段中啟用偵錯：
+
+1. 在 Visual Studio 中使用 [檢視] > [其他視窗] > [命令視窗] 功能表命令開啟命令視窗。
+
+1. 輸入下列命令：
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. 開始偵錯，並瀏覽重現您的問題所需採取的任何步驟。 在此期間，[偵錯配接器主機記錄] 下的 [輸出] 視窗中會出現偵錯記錄。 接著，您可以從該視窗中複製記錄，並貼到 GitHub 問題、電子郵件等等。
+
+    ![[輸出] 視窗中的偵錯工具記錄輸出](media/debugger-logging-output.png)
+
+1. 如果 Visual Studio 停止回應，或是您無法存取 [輸出] 視窗，請重新啟動 Visual Studio、開啟命令視窗，並輸入下列命令：
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. 開始偵錯，並再次重現您的問題。 然後您就可以在 `%temp%\DebugAdapterHostLog.txt` 找到偵錯工具記錄。
 
 ## <a name="see-also"></a>另請參閱
 

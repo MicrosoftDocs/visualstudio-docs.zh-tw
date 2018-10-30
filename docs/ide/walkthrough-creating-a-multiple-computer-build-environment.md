@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951609"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦組建環境
 
@@ -55,9 +55,9 @@ ms.locfileid: "46371052"
 
 1. 在主機電腦上，安裝 Visual Studio。
 
-2. 在組建電腦上，安裝 .NET Framework 4.5。 若要確認已安裝，請確定登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version** 的值是以 "4.5" 為開頭。
+2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version] 項目的值是否為 [4.5] 或更高。
 
-## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>將檔案從主機電腦複製到組建電腦
+## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>將檔案從主機電腦複製到建置電腦
 
 本節說明如何將特定檔案、編譯器、建置工具、MSBuild 資產和登錄設定從主機電腦複製到組建電腦。 這些指示假設您已在主機電腦上的預設位置安裝 Visual Studio；如果您安裝在其他位置，請據以調整步驟。
 
@@ -73,29 +73,29 @@ ms.locfileid: "46371052"
 
 1. 如果您只安裝 Windows 8 的 Windows SDK，請將下列資料夾從主機電腦遞迴複製到組建電腦：
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    如果您還有下列其他 Windows 8 套件...
+     如果您還有下列其他 Windows 8 套件...
 
-    - Microsoft Windows 評定及部署套件
+   - Microsoft Windows 評定及部署套件
 
-    - Microsoft Windows 驅動程式套件
+   - Microsoft Windows 驅動程式套件
 
-    - Microsoft Windows 硬體認證套件
+   - Microsoft Windows 硬體認證套件
 
-    ...這些套件可能已將檔案安裝到上一個步驟所列的 *%ProgramFiles%\Windows Kits\8.0* 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
+     ...這些套件可能已將檔案安裝到上一個步驟所列的 *%ProgramFiles%\Windows Kits\8.0* 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
 
 2. 將下列資料夾從主機電腦遞迴複製到組建電腦：
 
@@ -202,53 +202,53 @@ ms.locfileid: "46371052"
 
 2. 在組建電腦上建立下列登錄項目。 所有項目都是字串 (登錄中的 Type == "REG_SZ")。 將這些項目的值設定為主機電腦上可比較項目的相同值。
 
-    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
+   - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    在 x64 組建電腦上，同時建立下列登錄項目，並參考主機電腦，以判斷如何設定此項目。
+   在 x64 組建電腦上，同時建立下列登錄項目，並參考主機電腦，以判斷如何設定此項目。
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    如果您的組建電腦是 x64，而且您想要使用 64 位元版本的 MSBuild，或者如果您想要在 x64 電腦上使用 Team Foundation Server 組建服務，則必須在原生 64 位元登錄中建立下列登錄項目。 請參考主機電腦，以判斷如何設定這些項目。
+   如果您的建置電腦是 x64，而且您想要使用 64 位元版本的 MSBuild，或者如果您是在 x64 電腦上使用 Team Foundation Server 組建服務，請在原生 64 位元登錄中建立下列登錄項目。 請參考主機電腦，以判斷如何設定這些項目。
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>設定組建電腦上的環境變數
 
@@ -261,7 +261,7 @@ ms.locfileid: "46371052"
 下表描述 *vcvarsall.bat* 支援的引數：
 
 |Vcvarsall.bat 引數|編譯器|組建電腦架構|組建輸出架構|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86 (預設)|32 位元 Native|x86、x64|x86|
 |x86_amd64|x64 Cross|x86、x64|X64|
 |amd64|x64 Native|X64|X64|
@@ -276,17 +276,17 @@ ms.locfileid: "46371052"
 
 2. 或者，您也可以將下列路徑新增至 PATH 變數，以更輕鬆地使用 MSBuild 來建置方案。
 
-    如果您想要使用原生 32 位元 MSBuild，請將下列路徑新增至 PATH 變數：
+   如果您想要使用原生 32 位元 MSBuild，請將下列路徑新增至 PATH 變數：
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    如果您想要使用原生 64 位元 MSBuild，請將下列路徑新增至 PATH 變數：
+   如果您想要使用原生 64 位元 MSBuild，請將下列路徑新增至 PATH 變數：
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)
 

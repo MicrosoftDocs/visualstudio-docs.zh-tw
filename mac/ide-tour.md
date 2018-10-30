@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224271"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228856"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教學課程
 
@@ -97,7 +97,7 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 ![分支名稱指出專案進行原始檔控制](media/ide-tour-image22.png)
 
-具有未認可之變更的檔案，在 [解決方案] 窗格中的圖示上會有註解，如下圖所示：
+具有未認可之變更的檔案，在 [方案窗格] 中的圖示上會有註釋，如下圖所示：
 
 ![Solution Pad 中的未認可檔案](media/ide-tour-image23.png)
 

@@ -1,7 +1,7 @@
 ---
-title: 在 Azure App Service 上設定 Python
+title: 在 Azure App Service 上設定 Python (Windows)
 description: 如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468711"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459864"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上設定 Python 環境
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
 > [!Important]
-> Microsoft 計劃取代本文所述之適用於 App Service 的 Python 延伸模組，改為直接部署到 Linux 上的 App Service。 於此同時仍可繼續使用此延伸模組。 若要部署到 Linux 上的 App Service，請參閱[在用於容器的 Web App 中部署 Python Web 應用程式](/azure/app-service/containers/quickstart-python)。
+> Microsoft 已經取代本文所述之適用於 Windows 上 App Service 的 Python 延伸模組，改為直接部署到 [Linux 上的 App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 
@@ -172,7 +172,7 @@ HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Pytho
 
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service 的 Kudu 主控台
 
-[Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一個重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
+[Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
 1. 在 Azure 入口網站上選取 [開發工具] > [進階工具] [移至] [App Service] 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 

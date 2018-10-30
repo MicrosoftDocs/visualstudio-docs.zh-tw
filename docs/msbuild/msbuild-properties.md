@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080746"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879186"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>全域屬性  
- MSBuild 可讓您使用 **/property** (或 **/p**) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。  
+ MSBuild 可讓您使用 **-property** (或 **-p**) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。  
   
  下列範例會將全域 `Configuration` 屬性設定為 `DEBUG`。  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 除非使用 MSBuild 工作的 `RemoveProperties` 屬性指定不轉送屬性清單，否則全域屬性也會轉送至子專案。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。
@@ -140,7 +140,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
- [ MSBuild](../msbuild/msbuild.md)  
+ [MSBuild](../msbuild/msbuild.md)  
  [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)   
  [如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
  [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828850"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。  
@@ -172,7 +172,7 @@ ms.locfileid: "39179186"
   
 #### <a name="to-build-the-application"></a>建置應用程式  
   
-1.  在命令提示字元中，輸入 **msbuild helloworld.csproj /t: build**。  
+1.  在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。  
   
      叫用 Visual C# 編譯器來建立 Helloworld 應用程式，即可建置 Helloworld 專案檔的建置目標。  
   
@@ -183,7 +183,7 @@ ms.locfileid: "39179186"
 > [!NOTE]
 >  提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列命令：  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>加入建置屬性  
  您可以將建置屬性加入專案檔，以進一步控制組建。 立刻加入以下屬性：  
@@ -259,7 +259,7 @@ ms.locfileid: "39179186"
   
 #### <a name="to-test-the-build-properties"></a>測試建置屬性  
   
-1.  在命令提示字元中，輸入 **msbuild helloworld.csproj /t: build**。  
+1.  在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。  
   
      這會建立 *\Bin\\* 資料夾，然後叫用 Visual C# 編譯器，即可建立 *MSBuildSample* 應用程式，並將其置於 *\Bin\\* 資料夾中。  
   
@@ -334,9 +334,9 @@ ms.locfileid: "39179186"
   
 #### <a name="to-test-the-build-targets"></a>測試建置目標  
   
-1.  在命令提示字元中，輸入 **msbuild helloworld.csproj /p:AssemblyName=Greetings**。  
+1.  在命令提示字元中，輸入 **msbuild helloworld.csproj -p:AssemblyName=Greetings**。  
   
-     由於您未使用 **/t** 參數來明確地設定目標，因此 MSBuild 會執行預設的 Build 目標。 **/p** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings`。 這會在 *\Bin\\* 資料夾中建立新的應用程式 *Greetings.exe*。  
+     由於您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的 Build 目標。 **-p** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings`。 這會在 *\Bin\\* 資料夾中建立新的應用程式 *Greetings.exe*。  
   
 2.  若要驗證 *\Bin\\* 資料夾包含 *MSBuildSample* 應用程式和新的 *Greetings* 應用程式，請輸入 **dir Bin**。  
   
@@ -344,11 +344,11 @@ ms.locfileid: "39179186"
   
      此時應該會顯示 [Hello, world!] 訊息。  
   
-4.  輸入 **msbuild helloworld.csproj /t:clean** 來刪除 MSBuildSample 應用程式。  
+4.  輸入 **msbuild helloworld.csproj -t:clean** 來刪除 MSBuildSample 應用程式。  
   
      這會執行 Clean 工作，以移除具有預設 `AssemblyName` 屬性值 `MSBuildSample` 的應用程式。  
   
-5.  輸入 **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings** 來刪除 Greetings 應用程式。  
+5.  輸入 **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** 來刪除 Greetings 應用程式。  
   
      這會執行 Clean 工作，以移除具有指定 **AssemblyName** 屬性值 `Greetings` 的應用程式。  
   
@@ -382,11 +382,11 @@ ms.locfileid: "39179186"
     </Target>  
     ```  
   
-2.  在命令提示字元中輸入 **msbuild /v:d**，以測試 Build 目標。  
+2.  在命令提示字元中輸入 **msbuild -v:d**，以測試 Build 目標。  
   
      請記住，*helloworld.csproj* 是預設專案檔，而該「建置」是預設目標。  
   
-     **/v:d** 參數會指定建置流程的詳細描述。  
+     **-v:d** 參數會指定建置流程的詳細描述。  
   
      此時應該顯示下列幾行：  
   

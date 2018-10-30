@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919295"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>控制 R 程式碼以工作區執行的位置
 
@@ -37,7 +37,7 @@ Visual Studio R 工具 (RTVS) 的工作區可讓您設定 R 工作階段的執�
 
 [本機工作區] 清單會顯示您電腦上安裝的所有 R 解譯器。 
 
-Visual Studio 啟動時，它會嘗試透過查看 *HKEY_LOCAL_MACHINE\Software\R-Core\** 登錄機碼，自動偵測您已安裝的所有 R 版本。 因為這項檢查只會在啟動時完成，所以如果您安裝新的 R 解譯器，就需要重新啟動 Visual Studio。
+Visual Studio 啟動時，它會嘗試透過查看 **HKEY_LOCAL_MACHINE\Software\R-Core\\** 登錄機碼，自動偵測您已安裝的所有 R 版本。 因為這項檢查只會在啟動時完成，所以如果您安裝新的 R 解譯器，就需要重新啟動 Visual Studio。
 
 RTVS 可能偵測不到非以標準方式安裝的 R 解譯器 (例如，僅將檔案複製到資料夾而不是執行安裝程式)。 如果是這種情況，請以手動方式建立新的本機 R 工作區，如下所示︰
 

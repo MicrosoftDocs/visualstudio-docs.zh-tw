@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897169"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
@@ -50,41 +50,41 @@ ms.locfileid: "39081653"
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>在命令列上指定屬性  
- 一旦將您的專案檔編寫為可接受多個組態之後，您就必須能夠在每次建置專案時變更這些設定。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 藉由允許使用 **/property** 或 **/p** 參數在命令列中指定屬性來提供此功能。  
+ 一旦將您的專案檔編寫為可接受多個組態之後，您就必須能夠在每次建置專案時變更這些設定。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 藉由允許使用 **-property** 或 **-p** 參數在命令列中指定屬性來提供此功能。  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性  
   
--   使用 **/property** 參數搭配屬性和屬性值。 例如:   
+-   使用 **-property** 參數搭配屬性和屬性值。 例如:   
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     或  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令列中指定多個專案屬性  
   
--   多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
+- 多次使用 **-property** 或 **-p** 參數搭配屬性和屬性值，或使用一個 **-property** 或 **-p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    或
+  或
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- 環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
- 命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
+  命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
   
- 您可以在專案標記中使用 `TreatAsLocalProperty` 屬性，來變更此行為。 如果是使用該屬性列出的屬性名稱，命令列上指定的屬性值不會優先於專案檔中的值。 您可以在本主題稍後找到相關範例。  
+  您可以在專案標記中使用 `TreatAsLocalProperty` 屬性，來變更此行為。 如果是使用該屬性列出的屬性名稱，命令列上指定的屬性值不會優先於專案檔中的值。 您可以在本主題稍後找到相關範例。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例 "Hello World" 專案包含兩個新的屬性群組，其可用於建立偵錯組建及發行組建。  
@@ -92,13 +92,13 @@ ms.locfileid: "39081653"
  若要建置此專案的偵錯版本，請輸入：  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  若要建置此專案的零售版本，請輸入：  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  若要建置專案，請輸入下列命令：  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  
@@ -185,7 +185,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[ MSBuild](../msbuild/msbuild.md)  
+[MSBuild](../msbuild/msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)

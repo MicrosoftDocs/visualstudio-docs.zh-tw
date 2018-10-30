@@ -21,16 +21,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69e301f61ddf6acca9d90b8410630cbf7acd65d6
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138850"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382762"
 ---
 # <a name="remove-visual-studio"></a>移除 Visual Studio
 
-如果您遇到重大錯誤且無法修復或解除安裝 Visual Studio，您可以執行 `InstallCleanup.exe` 工具來移除安裝檔案和產品資訊。 執行此工具只可作為修復或解除安裝失敗時的最後手段，而且可能將其他 Visual Studio 安裝或其他需要修復之產品中的功能解除安裝。
+如果您遇到重大錯誤，且無法修復或解除安裝 Visual Studio，您可以執行 `InstallCleanup.exe` 工具來針對已安裝的所有 Visual Studio 2017 (與更新版本) 執行個體移除安裝檔案與產品資訊。 執行此工具只可作為修復或解除安裝失敗時的最後手段，而且可能將其他 Visual Studio 安裝或其他需要修復之產品中的功能解除安裝。
 
 在下列指示中，您可以透過具有下列行為的不同命令列參數來執行此工具：
 
@@ -41,9 +41,9 @@ ms.locfileid: "43138850"
 
 1. 關閉 Visual Studio 安裝程式。
 2. 開啟系統管理員命令提示字元。 若要開啟系統管理員命令提示字元，請遵循下列步驟：
-   * 按一下 [開始] 功能表
+   * 按一下 [開始]**** 功能表
    * 輸入 **cmd**。
-   * 以滑鼠右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身分執行]。
+   * 以滑鼠右鍵按一下 [命令提示字元]****，然後按一下 [以系統管理員身分執行]****。
 3. 輸入 `InstallCleanup.exe` 公用程式的完整路徑，並傳遞您想要的任何命令列參數。 根據預設，公用程式的路徑如下所示：
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe

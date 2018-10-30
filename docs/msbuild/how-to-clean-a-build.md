@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079118"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879053"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
@@ -53,13 +53,13 @@ ms.locfileid: "39079118"
 ## <a name="example"></a>範例  
  下列程式碼範例專案包含新的目標 `Clean`，以使用 `RemoveDir` 工作來刪除目錄以及其中所含的所有檔案和目錄。 在此範例中，`Compile` 目標也會為要在清除組建時刪除的輸出項目建立個別目錄。  
   
- `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您使用命令列參數 **/target** 來指定不同的目標。 例如:   
+ `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您要使用命令列參數 **-target** 指定不同的目標。 例如:   
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- **/target** 參數可以縮短為 **/t**，而且可以指定多個目標。 例如，若要依序使用目標 `Clean` 和目標 `Compile`，請鍵入：  
+ **-target** 參數可以縮短為 **-t**，而且可以指定多個目標。 例如，若要依序使用目標 `Clean` 和目標 `Compile`，請鍵入：  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  

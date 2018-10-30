@@ -1,6 +1,6 @@
 ---
-title: 安裝適用於 Visual Studio 的 AI 工具
-description: 適用於 Visual Studio 的 AI 工具安裝
+title: 安裝 AI 工具
+description: 描述如何安裝適用於 Visual Studio 的 AI 工具
 keywords: AI, Visual Studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303105"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459760"
 ---
 # <a name="installation"></a>安裝
 
@@ -27,22 +27,23 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 此延伸模組適用於 Visual Studio 2015 和 Visual Studio 2017 Community 版或更高版本。
 
-若要安裝，請從 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或從 Visual Studio 內下載
+您可以從 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或從 Visual Studio 內下載這些工具：
 
-1. **工具** > **延伸模組和更新**
+1. 選取 [工具]**** > [擴充功能和更新]****。
 
-![在 Windows 上安裝 CUDA](media\installation\extensions.png)
+   ![Visual Studio 中的 [擴充功能和更新] 功能表](media/installation/extensions.png)
 
-1. 在右上角**搜尋** "Tools for AI"
-2. 選取 [Visual Studio Tools for AI]
-3. 按一下 [下載]
+2. 在 [擴充功能和更新]**** 對話方塊中，選取左側的 [線上]****。
+3. 在右上角的 [搜尋] 方塊中，鍵入或輸入 "tools for ai"。
+4. 從結果中選取 [Visual Studio Tools for AI]****。
+5. 按一下 [下載]****。
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
 
-在本機電腦上定型深度學習模型之前，您必須確定已安裝最新的適用必要條件。 這包括確定您的 NVIDIA GPU (如果有的話) 有最新的驅動程式和程式庫。 您也應該確定已安裝 Python 和 Python 程式庫 (例如 NumPy、SciPy)，以及您打算在專案中使用的適當深度學習架構，例如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和/或 Chainer。
+在本機電腦上為深度學習模型定型之前，請確定您已安裝適用的先決條件。 這包括確定您的 NVIDIA GPU (如果有的話) 有最新的驅動程式與程式庫。 您也應該確定已安裝 Python 和 Python 程式庫 (例如 NumPy、SciPy)，以及您打算在專案中使用的適當深度學習架構，例如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 與 Chainer。
 
 > [!NOTE]
-> 以下各小節中的軟體簡介摘錄自其首頁。
+> 以下各節中的軟體簡介摘錄自其首頁。
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 驅動程式
 
@@ -50,9 +51,7 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 首創的平行運算平台和程式設計模型。
-它充分利用 GPU 的強大功能，來大幅提升運算效能。
-目前，深度學習架構需要 CUDA Toolkit 8.0。
+[CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 首創的平行運算平台和程式設計模型。 它充分利用 GPU 的強大功能，來大幅提升運算效能。 目前，深度學習架構需要 CUDA Toolkit 8.0。
 
 安裝 CUDA
 
@@ -60,7 +59,7 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 - 請務必安裝 CUDA 執行階段程式庫，然後將 CUDA 二進位檔路徑新增至 %PATH% 或 $Path 環境變數。
 - 在 Windows 上，這個路徑預設為 "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin"。
 
-![在 Windows 上安裝 CUDA](media\installation\install_cuda_win.png)
+![在 Windows 上安裝 CUDA](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python 一直是深度學習應用程式的主要程式設計語言。 需要 **
 
 深度學習架構需要 pip 才能進行安裝。
 
-![在 Windows 上安裝 Python](media\installation\install_python_win.png)
+![在 Windows 上安裝 Python](media/installation/install_python_win.png)
 
 然後，我們需要確認是否已正確安裝 Python 3.5，並藉由在終端機中執行下列命令，來將 pip 升級為最新版本：
 

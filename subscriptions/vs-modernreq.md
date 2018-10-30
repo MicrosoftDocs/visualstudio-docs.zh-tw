@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942864"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
@@ -22,79 +22,80 @@ ms.locfileid: "44279020"
 
 
 ## <a name="activation-steps"></a>啟用步驟
-1.  若要使用 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-2.  在 [工具] 區段找到 [MODERNRequirements4TFS] 磚，並按一下權益磚左下角的 [取得代碼] 連結。
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 權益磚](_img\vs-modernreq\vs-modernreq-tile.png)
+1. 若要使用 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+2. 在 [工具] 區段找到 [MODERNRequirements4TFS] 磚，並按一下權益磚左下角的 [取得代碼] 連結。
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 權益磚](_img/vs-modernreq/vs-modernreq-tile.png)
 
-2.  您會收到已成功擷取代碼的通知。  按一下 [啟用]。
+3. 您會收到已成功擷取代碼的通知。  按一下 [啟用]。
 
-3.  系統會將您重新導向至 ModernRequirements 網站以建立您的帳戶，並下載軟體。  在登陸頁面上，提供要求的連絡資訊，然後按一下 [Get License Key and Download] (取得授權金鑰並下載)。
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 登陸頁面](_img\vs-modernreq\vs-modernreq-landing.png)
-
-
-4.  下一頁會包含您的授權金鑰。  請檢閱頁面上所提供安裝的相關資訊，然後按一下頁面中間的藍色 [To download the software please click here]　(若要下載軟體請，按一下這裡) 連結。
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 授權金鑰](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+4. 系統會將您重新導向至 ModernRequirements 網站以建立您的帳戶，並下載軟體。  在登陸頁面上，提供要求的連絡資訊，然後按一下 [Get License Key and Download] (取得授權金鑰並下載)。
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 登陸頁面](_img/vs-modernreq/vs-modernreq-landing.png)
 
 
-5.  在 [下載] 頁面上，您可以選擇安裝 MODERNRequirements 套件，或從 SMARTOffice4TFS 套件安裝個別模組。  您適用的選項取決於您的喜好設定，以及您已安裝的 TFS 版本。  請務必熟悉頁面上的資訊，以協助您選取正確的產品版本。
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+5. 下一頁會包含您的授權金鑰。  請檢閱頁面上所提供安裝的相關資訊，然後按一下頁面中間的藍色 [To download the software please click here]　(若要下載軟體請，按一下這裡) 連結。
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 授權金鑰](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
 
-6.  在此範例中，我們將選擇 SMARTOffice4TFS。  下載對話方塊將會出現，並提供三個選項來下載並儲存 .zip 檔案。  我們將選擇 [儲存]，以在電腦的 [下載] 資料夾中儲存套件複本。
 
-7.  下載 **SmartOffice4TFS_Online.zip** 完成時，請按一下 [開啟資料夾]。
+6. 在 [下載] 頁面上，您可以選擇安裝 MODERNRequirements 套件，或從 SMARTOffice4TFS 套件安裝個別模組。  您適用的選項取決於您的喜好設定，以及您已安裝的 TFS 版本。  請務必熟悉頁面上的資訊，以協助您選取正確的產品版本。
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirement 下載選項](_img/vs-modernreq/vs-modernreq-download-page-new.png)
 
-8.  開啟 “SmartOffice4TFS_Online” 資料夾。
+7. 在此範例中，我們將選擇 SMARTOffice4TFS。  下載對話方塊將會出現，並提供三個選項來下載並儲存 .zip 檔案。  我們將選擇 [儲存]，以在電腦的 [下載] 資料夾中儲存套件複本。
 
-9.  開啟 “SmartOffice4TFS_Online” 子資料夾。
+8. 下載 **SmartOffice4TFS_Online.zip** 完成時，請按一下 [開啟資料夾]。
 
-10. 此資料夾將包含四個安裝程式應用程式，而每個都是適用於：
+9. 開啟 “SmartOffice4TFS_Online” 資料夾。
+
+10. 開啟 “SmartOffice4TFS_Online” 子資料夾。
+
+11. 此資料夾將包含四個安裝程式應用程式，而每個都是適用於：
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
     > [!div class="mx-imgBorder"]
-    > ![ModernRequirement 下載選項](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > ![ModernRequirement 下載選項](_img/vs-modernreq/vs-modernreq-downloaded-cropped.png)
 
-11. 以滑鼠右鍵按一下資料夾，然後選擇 [Extract All] (全部解壓縮)。  指定您要在其中解壓縮檔案的位置，然後按一下 [Extract ] (解壓縮)。
+12. 以滑鼠右鍵按一下資料夾，然後選擇 [Extract All] (全部解壓縮)。  指定您要在其中解壓縮檔案的位置，然後按一下 [Extract ] (解壓縮)。
 
-12. 若要安裝任何產品，請從 [下載] 資料夾中啟動對應的應用程式。  在我們的範例中，我們將安裝 SmartWord4TFS。  開啟 [使用者帳戶控制] 對話方塊時，請按一下 [是] 來啟動應用程式。
+13. 若要安裝任何產品，請從 [下載] 資料夾中啟動對應的應用程式。  在我們的範例中，我們將安裝 SmartWord4TFS。  開啟 [使用者帳戶控制] 對話方塊時，請按一下 [是] 來啟動應用程式。
 
-13. [安裝精靈] 即會啟動。  按 [下一步]  以繼續。
+14. [安裝精靈] 即會啟動。  按 [下一步]  以繼續。
 
-14. 按一下 [我同意] 選項按鈕接受條款，然後按一下 [下一步]。
+15. 按一下 [我同意] 選項按鈕接受條款，然後按一下 [下一步]。
 
-15. 選擇要在其中安裝應用程式的位置，並指定您是要將它提供給所有使用者，還是只提供給您自己。  按 [ **下一步**]。
+16. 選擇要在其中安裝應用程式的位置，並指定您是要將它提供給所有使用者，還是只提供給您自己。  按 [ **下一步**]。
 
-16. 選擇您以作者模式還是檢閱者模式安裝 SmartWord。  如需這些模式的詳細資訊，請連絡 [MODERNRequirements 支援](http://www.modernrequirements.com/support-2/)。  按 [ **下一步**]。
+17. 選擇您以作者模式還是檢閱者模式安裝 SmartWord。  如需這些模式的詳細資訊，請連絡 [MODERNRequirements 支援](http://www.modernrequirements.com/support-2/)。  按 [ **下一步**]。
 
-17. 接下來，選擇您是否要安裝範本，然後按一下 [下一步]。
+18. 接下來，選擇您是否要安裝範本，然後按一下 [下一步]。
 
-18. 再按一次 [下一步] 開始安裝。
+19. 再按一次 [下一步] 開始安裝。
 
-19. 顯示 [使用者帳戶控制] 對話方塊時，請按一下 [是]。
+20. 顯示 [使用者帳戶控制] 對話方塊時，請按一下 [是]。
 
-20. 安裝完成後，請按一下 [關閉]。
+21. 安裝完成後，請按一下 [關閉]。
 
-21. 下一次啟動 Microsoft Word 時，會看到 [Microsoft Office 自訂安裝程式] 對話方塊，要求您確認要安裝 SmartWord4TFS 增益集。  按一下 [安裝] 。
+22. 下一次啟動 Microsoft Word 時，會看到 [Microsoft Office 自訂安裝程式] 對話方塊，要求您確認要安裝 SmartWord4TFS 增益集。  按一下 [安裝] 。
 
-22. 開啟 Word 時，您會看到已新增 [SmartWord4TFS] 索引標籤。 按一下此索引標籤，以顯示 SmartWord4TFS 工具組。
+23. 開啟 Word 時，您會看到已新增 [SmartWord4TFS] 索引標籤。 按一下此索引標籤，以顯示 SmartWord4TFS 工具組。
 
 ## <a name="eligibility"></a>資格
+
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                          |NA     |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                          |NA     |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                          |NA     |
+| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 無法使用                                                          |NA     |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 無法使用                                                          |NA     |
+| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                                          |NA     |
 | Visual Studio Dev Essentials | NA  |無法使用                                                          |NA     |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、FTE。排除：Microsoft Partner Network (Professional)、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。MCT Software & Services。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、FTE。排除：Microsoft 合作夥伴網路 (Professional)、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。MCT Software & Services。*
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942214"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -114,23 +114,23 @@ ms.locfileid: "34748214"
 
 1. 在**方案總管**中，選擇頂層專案節點。
 
-1. 在功能表列上選擇 [檢視 ] > [屬性頁]。
+2. 在功能表列上選擇 [檢視 ] > [屬性頁]。
 
      [專案設計工具] 隨即開啟。
 
-1. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
+3. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
 
      ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsupresswarnings.png)
 
      如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。
 
-1. 建置方案。
+4. 建置方案。
 
- [輸出] 視窗只會顯示組建的摘要資訊。
+   [輸出] 視窗只會顯示組建的摘要資訊。
 
- ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- 如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在輸出視窗中顯示其他組建詳細資料
 
@@ -138,7 +138,6 @@ ms.locfileid: "34748214"
 
 > [!IMPORTANT]
 > 如果顯示詳細資訊，組建將需要更長的時間來完成。
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>變更輸出視窗中的資訊量
 
@@ -221,7 +220,7 @@ ms.locfileid: "34748214"
 
    可執行檔會複製到您指定的網路路徑。 其路徑會是 `\\myserver\builds\\FileName.exe`。
 
-恭喜︰您已成功完成本逐步解說。
+恭喜您！ 您已經成功完成此逐步解說。
 
 ## <a name="see-also"></a>另請參閱
 

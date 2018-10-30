@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776031"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100935"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 
@@ -42,15 +42,10 @@ Python 專案中的項目範本可透過 [專案] > [加入新項目] 功能表�
 | **IronPython WPF 視窗** | WPF 視窗包含兩個並存的檔案：使用空白的 `<Grid>` 元素定義 `<Window>` 的 *.xaml* 檔案，以及使用 `wpf` 程式庫來載入 XAML 檔案的相關聯 *.py* 檔案。 通常是在使用其中一個 IronPython 專案範本所建立的專案中使用。 請參閱[管理 Python 專案 - 專案範本](managing-python-projects-in-visual-studio.md#project-templates)。 |
 | **Web 角色支援檔案** | 專案根目錄中的 *bin* 資料夾 (不論專案中所選的資料夾為何)。 該資料夾包含預設的部署指令碼和 Azure 雲端服務 Web 角色的 *web.config* 檔案。 該範本也包含說明詳細資料的 *readme.html* 檔案。 |
 | **背景工作角色支援檔案** | 專案根目錄中的 *bin* 資料夾 (不論專案中所選的資料夾為何)。 該資料夾包含預設部署和啟動指令碼，還有 Azure 雲端服務背景工作角色的 *web.config* 檔案。 該範本也包含說明詳細資料的 *readme.html* 檔案。 |
-| **Azure web.config (FastCGI)** | *web.config* 檔案，其中包含使用 [WSGI](https://wsgi.readthedocs.io/en/latest/) 物件來處理傳入連線之應用程式的項目。 此檔案通常部署在執行 IIS (例如 Azure App Service) 的 Web 伺服器根目錄。 如需詳細資訊，請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure web.config (HttpPlatformHandler)** | *web.config* 檔案，其中包含接聽傳入連線通訊端應用程式的項目。 此檔案通常部署在執行 IIS (例如 Azure App Service) 的 Web 伺服器根目錄。 如需詳細資訊，請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure 靜態檔案 web.config** | 通常會新增到 *static* 資料夾 (或含有靜態項目的其他資料夾) 中以停用處理該資料夾之 Python 的 *web.config* 檔案。 此組態檔會與上述 FastCGI 或 HttpPlatformHandler 組態檔其中之一搭配運作。 如需詳細資訊，請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure 遠端偵錯 web.config** | *web.config.debug* 檔案，可透過 WebSockets 啟用遠端偵錯，連同 *Microsoft.PythonTools.WebRole.dll* 與 *ptvsd* 資料夾，其中包含要部署到伺服器以啟用遠端偵測的模組。 您通常會在與 *web.config* 檔案相同的位置建立此項目。 如需詳細資訊，請參閱[對 Azure 上的 Python 程式碼進行遠端偵錯](debugging-remote-python-code-on-azure.md)。 另請參閱下列附註。 |
-
-> [!Note]
-> 如果您將偵錯 *web.config* 範本新增到專案，並計劃使用 Python 遠端偵錯，則必須使用 [偵錯] 設定來發行網站。 此設定不同於目前使用中的方案組態，且一律預設為 [發行]。 若要加以變更，請開啟 [設定] 索引標籤，然後使用 [發行精靈] 中的 [設定]下拉式方塊 (如需有關建立及部署至 Azure Web 應用程式的詳細資訊，請參閱[Azure 文件](https://azure.microsoft.com/develop/python/)。)
->
-> ![正在變更發佈設定](media/template-web-publish-config.png)
+| **Azure web.config (FastCGI)** | *web.config* 檔案，其中包含使用 [WSGI](https://wsgi.readthedocs.io/en/latest/) 物件來處理傳入連線之應用程式的項目。 此檔案通常會部署到執行 IIS 的網頁伺服器根目錄。 如需詳細資訊，請參閱[為應用程式設定 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure web.config (HttpPlatformHandler)** | *web.config* 檔案，其中包含接聽傳入連線通訊端應用程式的項目。 此檔案通常部署在執行 IIS (例如 Azure App Service) 的 Web 伺服器根目錄。 如需詳細資訊，請參閱[為應用程式設定 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure 靜態檔案 web.config** | 通常會新增到 *static* 資料夾 (或含有靜態項目的其他資料夾) 中以停用處理該資料夾之 Python 的 *web.config* 檔案。 此組態檔會與上述 FastCGI 或 HttpPlatformHandler 組態檔其中之一搭配運作。 如需詳細資訊，請參閱[為應用程式設定 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure 遠端偵錯 web.config** | 已被取代 (用於在適用於 Windows 的 Azure App Service 上進行遠端偵錯，已不再支援)。 |
 
 ## <a name="see-also"></a>另請參閱
 

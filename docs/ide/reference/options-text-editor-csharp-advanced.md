@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433298"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356739"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階] 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [C#] > [進階]。
+使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [工具]**** > [選項]****，然後選擇 [文字編輯器]**** > [C#]**** > [進階]****。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。
@@ -32,6 +32,69 @@ ms.locfileid: "37433298"
 
    除了開啟程式碼檔案之外，您也必須為解決方案中的所有檔案啟用程式法分析。 如需詳細資訊，請參閱[完整解決方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
 
+## <a name="using-directives"></a>using 指示詞
+
+- 排序 using 時先放置 'System' 指示詞
+
+   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會對 `using` 指示詞進行排序，並將 'System' 命名空間置於清單頂端
+
+   排序之前：
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   排序之後：
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- 使用指示詞群組來進行分隔
+
+   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+
+   排序之前：
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   排序之後：
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- 針對參考組件與 NuGet 套件中的型別新增 Using 
+
+   選取後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
+
+   ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>醒目提示
 
 - 反白顯示游標下的符號參考

@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 825131bff8d6ed3466a6418bb1aac98787a2daea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9a7717a9ef889ee575afb3cc0b01fbb573a54f1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880426"
 ---
 # <a name="repair-visual-studio-2017"></a>修復 Visual Studio 2017
 
@@ -24,12 +24,12 @@ ms.locfileid: "43139051"
 
 1. 在電腦上找到 Visual Studio 安裝程式。
 
-     例如，在執行「Windows 10 年度更新版」的電腦上，選取 [開始]，然後捲動至字母 [V]，它將會列為 [Visual Studio 安裝程式]。
+     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]****，然後捲動至字母 [V]****，它是列為 [Visual Studio 安裝程式]****。
 
-     >[!NOTE]
-     在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   >   在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]****。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. 按一下或點選來啟動安裝程式，然後選取 [更多]，再選取 [修復]。
+2. 按一下或點選來啟動安裝程式，然後選取 [更多]****，再選取 [修復]****。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

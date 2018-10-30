@@ -4,18 +4,18 @@ description: 如何提供建議或針對使用 Visual Studio for Mac 時遇到�
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223932"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101117"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何在 Visual Studio for Mac 中回報問題
 
-如果您在使用 Visual Studio for Mac 時發生問題，請告知我們，讓我們能夠加以診斷並修正。 
+如果您在使用 Visual Studio for Mac 時發生問題，我們想要深入了解。 以下說明如何向 [Developer Community](https://developercommunity.visualstudio.com/) 回報問題，讓我們加以診斷及修正。
 
 ## <a name="how-to-report-a-problem"></a>如何回報問題
 

@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548786"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100909"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
-如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](python-azure-cloud-service-project-template.md)，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
+如果您要與其他人共用專案、使用建置系統，或是打算將其部署至需要還原環境所在的其他任何位置，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (透過在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 *requirements.txt* 提供了專屬支援：
 
