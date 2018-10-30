@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029281"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443411"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
@@ -33,17 +33,17 @@ ms.locfileid: "47029281"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+2. 從頂端功能表列中，選擇 [檔案]**** > [新增]**** > [專案]****。
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *HelloWorld*。
+3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將專案命名為 *HelloWorld*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。
+     如果您沒有看到 [主控台應用程式 (.NET Core)]**** 專案範本，請在 [新增專案]**** 對話方塊的左窗格中，選擇 [開啟 Visual Studio 安裝程式]**** 連結。
 
-   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
-     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+     Visual Studio 安裝程式隨即啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
 
      ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
@@ -75,9 +75,9 @@ ms.locfileid: "47029281"
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 按一下工具列上的 [HelloWorld] 按鈕以在偵錯模式中執行應用程式。 (或者，您可以按下 **F5**。)
+1. 選擇工具列上的 [HelloWorld]**** 按鈕以在偵錯模式中執行應用程式。 (或者，您可以按下 **F5**。)
 
-   ![按一下 Hello World 按鈕，以從工具列執行程式](../ide/media/csharp-console-hello-world-button.png)
+   ![選擇 [Hello World] 按鈕以從工具列執行應用程式](../ide/media/csharp-console-hello-world-button.png)
 
 1. 在主控台視窗中檢視您的應用程式。
 
@@ -87,7 +87,7 @@ ms.locfileid: "47029281"
 
 1. 按下 **ENTER** 以關閉主控台視窗。
 
-1. 關閉 Visual Studio 中的 [輸出] 窗格。
+1. 關閉 Visual Studio 中的 [輸出]**** 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](../ide/media/csharp-hello-world-close-output-pane.png)
 
@@ -98,4 +98,4 @@ ms.locfileid: "47029281"
 恭喜您完成此快速入門！ 希望您已經更了解 C# 和 Visual Studio IDE。 若要深入了解，請繼續進行下列教學課程。
 
 > [!div class="nextstepaction"]
-> [C# 教學課程](/dotnet/csharp/tutorials/)
+> [開始在 Visual Studio 中使用 C# 主控台應用程式](tutorial-csharp-console.md)

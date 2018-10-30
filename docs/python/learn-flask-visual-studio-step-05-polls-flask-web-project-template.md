@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908984"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實作都會呼叫在 *models\__init__.py* 中找到的`_load_samples_json` 方法以將 *models\samples.json* 檔案載入到記憶體中，然後逐一查看該資料以在資料存放區中建立必要的 `Poll` 和 `Choice` 物件。
+對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實作都會呼叫在 *models\_\_init\_\_.py* 中找到的 `_load_samples_json` 方法，以便將 *models\samples.json* 檔案載入到記憶體中，然後逐一查看該資料，以便在資料存放區中建立必要的 `Poll` 和 `Choice` 物件。
 
 該程序完成之後，`seed` 方法中的 `redirect('/')` 陳述式就會瀏覽回首頁。 由於 `repository.get_polls` 現在會傳回資料物件，因此 *templates\index.html* 中的條件式標籤現在會轉譯成包含投票項目的資料表。
 
@@ -352,11 +352,8 @@ def results(key):
 
 在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
 
-- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括 Flask 應用程式所需的特定變更。
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
 
-- 在 Azure Pipelines 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 Azure Repos、GitHub 或其他位置上)，您可以讓 Azure Test Plans 自動執行單元測試作為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps Services 與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具關閉整個週期。 如需詳細資訊，請參閱:
-
-  - [使用 Azure DevOps Projects來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [使用 Visual Studio Team Services 在 Azure 中進行 Python 程式設計 (影片，11 分鐘 21 秒)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
+- 在 Visual Studio Team Services (VSTS) 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 VSTS、GitHub 或其他位置上)，您可以讓 VSTS 自動執行單元測試做為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 VSTS，此外，與監視 App Insights 方案整合，並關閉與 agile 規劃工具的整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)。

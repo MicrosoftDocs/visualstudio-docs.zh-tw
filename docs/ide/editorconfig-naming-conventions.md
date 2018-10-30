@@ -12,24 +12,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627239"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443580"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以透過在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
-在 .editorconfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。
+在 *.editorconfig* 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。
 
 針對每一個命名慣例，您必須使用以下描述的屬性來指定其適用的符號、命名樣式以及嚴重性，以強制執行慣例。 屬性的順序不重要。
 
 若要開始，請為您將在每個所需要用來完整描述規則的屬性中使用的命名規則選擇一個標題。 例如：`public_members_must_be_capitalized` 是一個良好且具描述性的命名規則名稱。 我們將會在下列各節中以 **<namingRuleTitle\>** 來代稱您選擇的標題。
 
-## <a name="symbols"></a>Symbol
+## <a name="symbols"></a>符號
 
 首先，請先識別欲套用命名規則的符號群組。 此屬性具有下列格式：
 
@@ -47,18 +47,18 @@ ms.locfileid: "42627239"
 
 - \*(請使用此值來指定所有符號)
 - namespace
-- Class - 類別
+- class
 - struct
 - interface
 - enum
-- 屬性
-- 方法
-- Field - 欄位
-- Event - 事件
-- Delegate - 委派
-- 參數
+- property
+- method
+- field
+- event
+- delegate
+- parameter
 - type_parameter
-- 本機
+- local
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>符號的存取層級
@@ -75,7 +75,7 @@ ms.locfileid: "42627239"
 - private
 - protected
 - protected\_internal 或 protected_friend
-- 本機
+- local
 
 > [!NOTE]
 > 如果存取範圍不適用於您設定為目標的符號，則請勿將存取層級指定為命名慣例的一部分。 例如，參數沒有存取層級。 如果您為參數命名慣例指定存取層級，命名規則將不會正確運作。
@@ -88,11 +88,14 @@ ms.locfileid: "42627239"
 
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
-- abstract 或 must_inherit
-- async
-- const
-- readonly
-- static 或 shared
+- `abstract` 或 `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` 或 `shared`
+
+   > [!NOTE]
+   > 如果您有 `static` 或 `shared` 符號的命名規則，則它也套用到 `const` 符號，因為它們是隱含靜態的。 如果您不想要 `static` 命名規則套用到 `const` 符號，請針對 `const` 符號建立個別的命名規則。
 
 `required_modifiers` 是選擇性屬性。 若您省略這個屬性，您的命名規則將會套用至所有修飾詞。
 

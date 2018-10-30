@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284046"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -50,7 +50,7 @@ ms.locfileid: "46496112"
 
    ![從 [新增專案] 對話方塊中選取 [開啟 Visual Studio 安裝程式] 連結](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+1. Visual Studio 安裝程式隨即啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
 
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/quickstart-aspnet-workload.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "46496112"
 
 1. 取消 [新增專案] 對話方塊。 然後從功能表列選擇 [工具] > [取得工具與功能]。
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+1. Visual Studio 安裝程式隨即啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
 
    (您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
 
@@ -131,7 +131,7 @@ ms.locfileid: "46496112"
 
 1. 將瀏覽器視窗保持開啟，並回到 Visual Studio。
 
-1. 在 Visual Studio 中，選擇 [About.cshtml]。 然後，刪除文字 _changed_，並在其位置新增文字 _file and directory_。
+1. 在 Visual Studio 中，選擇 [About.cshtml]。 然後，刪除文字 _additional_，並在其位置新增文字 _file and directory_。
 
     ![變更 About.cshtml 檔案中的文字](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
