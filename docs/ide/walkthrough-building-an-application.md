@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942214"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143186"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -100,7 +100,7 @@ ms.locfileid: "49942214"
 
 1. 選擇 [組建] 頁面，然後在 [隱藏警告] 方塊中指定警告編號 **0168**。
 
-     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      如需詳細資訊，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -120,7 +120,7 @@ ms.locfileid: "49942214"
 
 3. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
 
-     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。
 

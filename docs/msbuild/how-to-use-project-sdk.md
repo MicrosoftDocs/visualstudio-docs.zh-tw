@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151011"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220440"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
@@ -101,7 +101,7 @@ ms.locfileid: "39151011"
    此解析程式會找出 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 等屬於產品一部分的專案 SDK。
 3. 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
 
-以 NuGet 為基礎的 SDK 解析程式支援在您的 [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) 中指定版本，讓您可以在一個位置控制專案 SDK 版本，而不需要在個別的專案中指定：
+以 NuGet 為基礎的 SDK 解析程式支援在您的 [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) 中指定版本，讓您可以在一個位置控制專案 SDK 版本，而不需要在個別的專案中指定：
 
 ```json
 {

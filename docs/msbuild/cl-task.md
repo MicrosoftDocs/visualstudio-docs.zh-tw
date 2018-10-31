@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922402"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220361"
 ---
 # <a name="cl-task"></a>CL 工作
 包裝 Visual C++ 編譯器工具 *cl.exe*。 編譯器會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 檔案或程式碼模組 (*.netmodule*) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
@@ -52,7 +52,9 @@ ms.locfileid: "49922402"
   
    如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。  
   
-- **AdditionalUsingDirectories**選擇性的 String[] 參數。  
+- **AdditionalUsingDirectories**
+
+   選擇性的 String[] 參數。  
   
    指定編譯器要搜尋的目錄，以解析傳遞給 **#using** 指示詞的檔案參考。  
   

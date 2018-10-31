@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 應用程式專案
 description: 專案在 Visual Studio 中的目的，在於如何建立及管理適用於 Python 程式碼的專案，以及可供 Python 使用的各種專案範本。
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499015"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220465"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
