@@ -358,7 +358,7 @@ items:
           href: ide/visual-cpp-intellisense.md
         - name: 設定 C++ IntelliSense 專案
           href: ide/visual-cpp-intellisense-configuration.md
-      - name: 瀏覽您的程式碼
+      - name: 巡覽您的程式碼
         href: ide/navigating-code.md
         items:
         - name: 在您的程式碼中尋找參考
@@ -572,7 +572,7 @@ items:
     - name: 建置與清除專案和方案
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
       items:
-      - name: 變更建置輸出目錄
+      - name: 變更組建輸出目錄
         href: ide/how-to-change-the-build-output-directory.md
       - name: 建置到通用輸出目錄
         href: ide/how-to-build-to-a-common-output-directory.md
@@ -582,20 +582,20 @@ items:
         href: ide/how-to-set-multiple-startup-projects.md
       - name: 建立及移除專案相依性
         href: ide/how-to-create-and-remove-project-dependencies.md
-      - name: 檢視、儲存及設定建置記錄檔
+      - name: 檢視、儲存及設定組建記錄檔
         href: ide/how-to-view-save-and-configure-build-log-files.md
       - name: 從組建排除專案
         href: ide/how-to-exclude-projects-from-a-build.md
       - name: 隱藏編譯器警告
         href: ide/how-to-suppress-compiler-warnings.md
-    - name: 建置設定
+    - name: 組建組態
       href: ide/understanding-build-configurations.md
       items:
-      - name: 建立及編輯設定
+      - name: 建立及編輯組態
         href: ide/how-to-create-and-edit-configurations.md
-      - name: 在套用 Visual Basic 開發人員設定的情況下管理建置設定
+      - name: 在套用 Visual Basic 開發人員設定的情況下管理組建組態
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-      - name: 同時建置多個設定
+      - name: 同時建置多個組態
         href: ide/how-to-build-multiple-configurations-simultaneously.md
     - name: 建置平台
       href: ide/understanding-build-platforms.md
@@ -614,7 +614,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: Configuring Warnings in Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 逐步解說：建立多電腦建置環境
+    - name: 逐步解說：建立多電腦組建環境
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: 偵錯...
     href: debugger/index.md
@@ -774,7 +774,7 @@ items:
         - name: 文字編輯器 - 所有語言
           href: ide/reference/options-text-editor-all-languages.md
         - name: 文字編輯器 - 所有語言、捲軸
-          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+          href: ide/reference/options-text-editor-all-languages-scroll-bars.md
         - name: 文字編輯器 - 索引標籤、所有語言
           href: ide/reference/options-text-editor-all-languages-tabs.md
         - name: 文字編輯器 - 基本 (Visual Basic)、進階
@@ -789,7 +789,7 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: 文字編輯器 - 實驗、C/C++
           href: ide/reference/options-text-editor-c-cpp-experimental.md
-        - name: 文字編輯器 - 格式、C#
+        - name: 文字編輯器 - C#、程式碼樣式、格式化
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: 文字編輯器 - 進階、C#
           href: ide/reference/options-text-editor-csharp-advanced.md
@@ -854,7 +854,7 @@ items:
       - name: 專案設計工具、發行頁
         href: ide/reference/publish-page-project-designer.md
         items:
-        - name: 先決條件對話方塊
+        - name: 必要條件對話方塊
           href: ide/reference/prerequisites-dialog-box.md
       - name: 專案設計工具，參考頁 (Visual Basic)
         href: ide/reference/references-page-project-designer-visual-basic.md
@@ -1087,9 +1087,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 8964084be1b142b7ab5ac7203b1436abe7fb08e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32ae829c7ddde6da31cd3ef869020255da078c59
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883090"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220348"
