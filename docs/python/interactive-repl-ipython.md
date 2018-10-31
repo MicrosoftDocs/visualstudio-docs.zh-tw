@@ -1,7 +1,7 @@
 ---
 title: IPython REPL (互動式視窗)
 description: 在 IPython 模式中使用 Visual Studio 互動式視窗，以便有易於使用的互動式開發環境，並具有「互動式平行計算」功能。
-ms.date: 06/19/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28fb0bdb181b1f4f2c08112e40d6236db22b7a08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918918"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219246"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
