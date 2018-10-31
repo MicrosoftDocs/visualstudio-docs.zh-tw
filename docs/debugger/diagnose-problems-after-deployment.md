@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865358"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219909"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>部署後，使用 IntelliTrace 診斷問題
 
@@ -44,7 +44,7 @@ ms.locfileid: "49865358"
 
 Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，，然後移除。 若要在部署後，偵錯 ASP.NET web 應用程式，請使用其中一種下列方法：
 
-* 部署至 Azure，使用[Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)。
+* 部署至 Azure，使用[Application Insights](https://docs.microsoft.com/azure/application-insights/)。
 
 * 如果您要使用 IntelliTrace，在 Visual Studio 中開啟專案，並比對的組建從載入的符號檔。 您可以載入符號檔，從**模組** 視窗或藉由設定中的符號**工具** > **選項** > **偵錯**  > **符號**。
 
