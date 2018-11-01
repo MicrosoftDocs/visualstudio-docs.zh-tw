@@ -41,7 +41,7 @@ ms.locfileid: "39078081"
   
 2.  按一下 [**發佈**] 索引標籤。  
   
-3.  在 安裝 URL 欄位中，輸入 使用完整的 URL，使用格式的安裝位置*http://www.microsoft.com/ApplicationName*，或使用的格式將 UNC 路徑 *\\\Server\ApplicationName*.  
+3.  在 安裝 URL 欄位中，輸入 使用完整的 URL，使用格式的安裝位置*http://www.microsoft.com/ApplicationName*，或使用的格式將 UNC 路徑*\\\Server\ApplicationName*.  
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 指定 Visual Studio 複製檔案的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
