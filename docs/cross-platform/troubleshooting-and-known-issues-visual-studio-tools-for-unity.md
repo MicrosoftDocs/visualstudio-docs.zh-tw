@@ -90,7 +90,7 @@ Visual Studio Tools for Unity 需要 .NET Framework 3.5，但 Windows 8 或 Wind
 
 ## <a name="breakpoints-not-hit"></a>未達到的中斷點
 
-請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 結束 Unity 和 Visual Studio，然後刪除所有產生的檔案 (*.csproj、*.sln) 和整個文件庫資料夾。
+請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 結束 Unity 和 Visual Studio，然後刪除所有產生的檔案 (\*.csproj、\*.sln) 和整個文件庫資料夾。
 
 ## <a name="unable-to-debug-android-players"></a>無法偵錯 Android 播放器
 
