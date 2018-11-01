@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671356"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744861"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>資料繫結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。  
@@ -42,7 +42,7 @@ ms.locfileid: "35671356"
 ## <a name="simple-data-binding"></a>簡單資料繫結  
  當控制項屬性繫結至單一資料項目時，例如資料表中的值，便存在簡單資料繫結。 例如， <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項具有 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性，該屬性可繫結至資料集中的欄位。 當資料集中的欄位變更時，具名範圍中的值也會變更。 除了 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項以外，所有主控制項都支援簡單資料繫結。 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項是一個集合，因此不支援資料繫結。  
   
- 若要執行簡單資料繫結至主控制項，新增<xref:System.Windows.Forms.Binding>至`DataBindings`控制項的屬性。 <xref:System.Windows.Forms.Binding> 物件代表控制項屬性值與資料項目值之間的簡單繫結。  
+ 若要對主控制項執行簡單資料繫結，請將 <xref:System.Windows.Forms.Binding> 加入該控制項的 `DataBindings` 屬性。 <xref:System.Windows.Forms.Binding> 物件代表控制項屬性值與資料項目值之間的簡單繫結。  
   
  下列範例示範如何在文件層級專案中，將 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性繫結至資料項目。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "35671356"
 ## <a name="complex-data-binding"></a>複雜資料繫結  
  當控制項屬性繫結至多個資料項目時，例如資料表中的多個資料行，便存在複雜資料繫結。 Excel 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是唯一支援複雜資料繫結的主控制項。 另外還有許多支援複雜資料繫結的 Windows Form 控制項，例如 <xref:System.Windows.Forms.DataGridView> 控制項。  
   
- 若要執行複雜資料繫結，設定`DataSource`資料來源物件支援複雜資料繫結至控制項的屬性。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 控制項的 <xref:Microsoft.Office.Tools.Excel.ListObject> 屬性可以繫結至資料表中的多個資料行。 資料表中的所有資料會顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項中，而且當資料表中的資料變更時， <xref:Microsoft.Office.Tools.Excel.ListObject> 也會變更。 如需可用於複雜資料繫結的資料來源的清單，請參閱 < [Windows Form 支援的資料來源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
+ 若要執行複雜資料繫結，請將控制項的 `DataSource` 屬性設定為複雜資料繫結所支援的資料來源物件。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 屬性可以繫結至資料表中的多個資料行。 資料表中的所有資料會顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項中，而且當資料表中的資料變更時， <xref:Microsoft.Office.Tools.Excel.ListObject> 也會變更。 如需可用於複雜資料繫結的資料來源的清單，請參閱 < [Windows Form 支援的資料來源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
   
  下列程式碼範例會建立具有兩個 <xref:System.Data.DataSet> 物件的 <xref:System.Data.DataTable> ，並將資料填入其中一個資料表。 然後程式碼會將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至含有資料的資料表。 這是示範 Excel 文件層級專案的範例。  
   

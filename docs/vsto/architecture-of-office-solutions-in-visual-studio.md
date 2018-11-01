@@ -18,11 +18,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671755"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744843"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>在 Visual Studio 中的 Office 方案的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  

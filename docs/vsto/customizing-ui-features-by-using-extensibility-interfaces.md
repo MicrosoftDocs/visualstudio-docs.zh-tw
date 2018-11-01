@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670837"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
@@ -71,7 +71,7 @@ ms.locfileid: "49873965"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  如需實作的詳細資訊<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，請參閱 < [2007 Office system 中建立自訂工作窗格](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be)Microsoft Office 文件中。  
+  如需實作的詳細資訊<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，請參閱 < [2007 Office system 中建立自訂工作窗格](/previous-versions/office/developer/office-2007/aa338197(v=office.12))Microsoft Office 文件中。  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>覆寫 RequestService 方法的範例  
  下列程式碼範例示範如何覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法，以從先前的程式碼範例傳回 `TaskPaneHelper` 類別的執行個體。 它會檢查 *serviceGuid* 參數的值以判斷所要求的介面，然後傳回實作該介面的物件。  

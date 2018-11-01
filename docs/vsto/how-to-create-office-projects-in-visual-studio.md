@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672765"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何： 在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -87,7 +87,7 @@ ms.locfileid: "49839033"
 7. 選擇 [確定]  按鈕。
   
     > [!NOTE]  
-    >  建立增益集專案時，一律會進行儲存， 而無法建立為暫存專案。 如需有關暫存專案的詳細資訊，請參閱[暫存專案](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+    >  建立增益集專案時，一律會進行儲存， 而無法建立為暫存專案。 如需有關暫存專案的詳細資訊，請參閱[暫存專案](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
   
 ### <a name="to-create-a-document-level-customization-project"></a>若要建立文件層級的自訂專案  
   

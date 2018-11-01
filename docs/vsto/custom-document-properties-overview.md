@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80a95bdce139ccaf1e18af8dd36aecc63f913c08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671517"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性概觀
 
@@ -58,5 +58,5 @@ ms.locfileid: "49846430"
 - [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)

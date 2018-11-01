@@ -29,11 +29,11 @@ ms.locfileid: "24632728"
 # <a name="access-is-denied"></a>存取遭拒。
 指令碼嘗試從來源而不是目前頁面的主機存取資料。 Internet Explorer 及其他瀏覽器所遵循的相同來源原則，只允許程式碼從具有相同配置、主機和目前頁面之 URL 連接埠的來源存取資料。  
   
- 例如，如果目前的頁面是 https://employees.mycompany.com，您將無法從下列 URL 存取資料：  
+ 例如，如果目前的頁面是 https://employees.mycompany.com ，您將無法從下列 URL 存取資料：  
   
--   http://data.contoso.com ，因為此 URL 使用 HTTP 而非 HTTPS。  
+-   [http://data.contoso.com](http://data.contoso.com) ，因為此 URL 使用 HTTP 而非 HTTPS。  
   
--   https://somedatasource.com ，因為這是不同的網域。  
+-   [https://somedatasource.com](https://somedatasource.com) ，因為這是不同的網域。  
   
 -   https://employees.mycompany.com:8888 ，因為此 URL 使用不同的連接埠。  
   

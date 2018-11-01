@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671076"
 ---
 # <a name="secure-deployment"></a>安全的部署
   當您建立 Office 方案時，會自動允許之程式碼執行的專案中更新您的開發電腦。 不過，當您部署您的解決方案，您必須提供要簽署的憑證、 解決方案或使用根據信任決策的辨識項[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵。 如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
@@ -49,7 +49,7 @@ ms.locfileid: "49865722"
   
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
- [準備執行或裝載 Office 方案的電腦](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [準備執行或裝載 Office 方案的電腦](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

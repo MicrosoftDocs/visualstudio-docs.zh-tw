@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673051"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]以了解如何為 Office 方案建立 Windows Installer。  
@@ -532,7 +532,7 @@ ms.locfileid: "49874913"
 
 
 ## <a name="see-also"></a>另請參閱  
-[Office 方案的部署必要條件](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Office 方案的部署必要條件](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
 [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)  
 [自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)  

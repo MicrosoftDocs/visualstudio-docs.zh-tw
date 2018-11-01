@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672222"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>設定電腦以開發 Office 方案
 
@@ -44,7 +44,7 @@ ms.locfileid: "35670867"
 
      若要確定已安裝這些工具，啟動 Visual Studio 安裝程式，然後選擇**修改** 按鈕。 選取 [Microsoft Office Developer Tools]  核取方塊，然後選擇 [更新]  按鈕。
 
-- 請確定您不執行的隨選按一下可執行的 Office 版本。 請參閱[如何： 驗證 Outlook 是否在電腦上的按一下 執行應用程式](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx)。
+- 請確定您不執行的隨選按一下可執行的 Office 版本。 請參閱[如何： 驗證 Outlook 是否在電腦上的按一下 執行應用程式](/previous-versions/office/developer/office-2010/ff864733(v=office.14))。
 
 - 請確定您執行只有一個版本的 Microsoft Office。
 

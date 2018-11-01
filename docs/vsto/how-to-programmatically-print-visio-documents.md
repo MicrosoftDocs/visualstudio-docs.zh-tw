@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671218"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>如何： 以程式設計方式列印 Visio 文件
   您可以列印整份 Microsoft Office Visio 文件，或僅列印特定頁面。  
   
- 如需此列印方法的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) 方法和 [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) 方法的 VBA 參考文件。  
+ 如需此列印方法的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) 方法和 [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) 方法的 VBA 參考文件。  
   
 ## <a name="print-a-visio-document"></a>列印 Visio 文件  
   
 ### <a name="to-print-a-complete-document"></a>列印整份文件  
   
--   呼叫`Microsoft.Office.Interop.Visio.Document.Print`方法的`Microsoft.Office.Interop.Visio.Document`您想要列印的物件。  
+-   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Document` 物件的 `Microsoft.Office.Interop.Visio.Document.Print` 方法。  
   
      下列程式碼範例會列印使用中的文件。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "35257501"
   
 ### <a name="to-print-a-page-of-a-document"></a>列印文件頁面  
   
--   呼叫`Microsoft.Office.Interop.Visio.Pages.Print`方法的`Microsoft.Office.Interop.Visio.Pages`您想要列印的物件。  
+-   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Pages` 物件的 `Microsoft.Office.Interop.Visio.Pages.Print` 方法。  
   
      下列程式碼範例會列印使用中之文件的第一頁。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。  
   

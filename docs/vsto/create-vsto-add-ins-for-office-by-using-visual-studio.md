@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670867"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。  
@@ -108,10 +108,10 @@ ms.locfileid: "35671727"
  [MSDN library 的 Microsoft Office 程式開發章節](http://go.microsoft.com/fwlink/?LinkId=149870)  
  MSDN library，您可以在此找到的文件，並參考有關開發數種版本的 Office （不限於使用 Visual Studio 的 Office 程式開發） 方案的文件的區域。  
   
- [Visual Studio 中的應用程式開發](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Visual Studio 中的應用程式開發](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  包含說明如何使用 Visual Studio 來設計、 開發、 偵錯和部署 web 應用程式、 XML web service 和傳統的用戶端應用程式的主題連結。  
   
- [Visual Studio 中的.NET framework 程式設計](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Visual Studio 中的.NET framework 程式設計](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  討論在 Visual Basic 和 Visual C# 中使用 .NET Framework 進行的應用程式開發。  
   
   

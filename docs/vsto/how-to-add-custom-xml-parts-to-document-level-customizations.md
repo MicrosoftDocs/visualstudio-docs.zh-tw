@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671575"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744856"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何： 將自訂 XML 組件新增至文件層級自訂
   您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱 <<c0> [ 自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)。  
