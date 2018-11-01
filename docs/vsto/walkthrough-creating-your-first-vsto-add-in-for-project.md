@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671413"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說： 建立您第一個 VSTO 增益集專案
   本逐步解說會示範如何建立 Microsoft Office Project 的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -103,7 +103,7 @@ ms.locfileid: "49884858"
   
 1.  按 **F5** 建置及執行專案。 Microsoft Project 會啟動並自動開啟新的空白專案。  
   
-     當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Project 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱 < [Office 解決方案建置流程概觀](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee)。  
+     當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Project 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱 < [Office 解決方案建置流程概觀](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))。  
   
 2.  確認新工作已加入空白專案。  
   

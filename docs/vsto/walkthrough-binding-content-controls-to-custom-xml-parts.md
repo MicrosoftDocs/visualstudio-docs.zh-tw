@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673033"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說： 將內容控制項繫結至自訂 XML 組件
   本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。  
@@ -296,7 +296,7 @@ ms.locfileid: "49916747"
   
 9. 將檔案命名**EmployeeControls.docx.zip**。  
   
-     **EmployeeControls.docx** Open XML 格式儲存文件。 重新命名此文件，藉以 *.zip*副檔名，您可以檢查文件的內容。 如需有關 Open XML 的詳細資訊，請參閱技術文件[簡介 Office (2007) Open XML 檔案格式](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)。  
+     **EmployeeControls.docx** Open XML 格式儲存文件。 重新命名此文件，藉以 *.zip*副檔名，您可以檢查文件的內容。 如需有關 Open XML 的詳細資訊，請參閱技術文件[簡介 Office (2007) Open XML 檔案格式](/previous-versions/office/developer/office-2007/aa338205(v=office.12))。  
   
 10. 開啟**EmployeeControls.docx.zip**檔案。  
   

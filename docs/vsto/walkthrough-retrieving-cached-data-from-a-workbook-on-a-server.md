@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2365fc766ede37d39eccdccc664d5710dc68d586
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672999"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說： 擷取伺服器上的活頁簿中的快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中而不啟動 Excel 使用快取的資料集擷取資料<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。  
@@ -57,9 +57,9 @@ ms.locfileid: "49816959"
   
 -   存取權的 Microsoft SQL Server 或 Microsoft SQL Server Express 具有附加的 AdventureWorksLT 範例資料庫執行個體。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。 如需附加資料庫的詳細資訊，請參閱下列主題：  
   
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。  
+    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。  
   
-    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。  
+    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。  
   
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>建立定義資料集的類別庫專案  
  若要使用相同的資料集的 Excel 活頁簿專案和主控台應用程式中，您必須定義資料集由兩個專案參考其他組件中。 此逐步解說中定義的類別庫專案中的資料集。  

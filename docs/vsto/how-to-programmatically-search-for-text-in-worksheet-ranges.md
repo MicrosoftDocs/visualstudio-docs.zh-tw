@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671959"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何： 以程式設計方式在工作表範圍中搜尋的文字
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您搜尋的範圍內的文字。 這段文字也可以是任何錯誤字串，例如可以出現在工作表儲存格中`#NULL!`或`#VALUE!`。 如需詳細的錯誤字串的詳細資訊，請參閱[儲存格的錯誤值](http://msdn.microsoft.com/library/office/ff839168.aspx)。  
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您搜尋的範圍內的文字。 這段文字也可以是任何錯誤字串，例如可以出現在工作表儲存格中`#NULL!`或`#VALUE!`。 如需詳細的錯誤字串的詳細資訊，請參閱[儲存格的錯誤值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

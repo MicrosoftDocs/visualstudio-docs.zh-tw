@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881777"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673012"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄項目
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。  
@@ -88,7 +88,7 @@ ms.locfileid: "49881777"
   
  當您建置專案時，Visual Studio 會在開發電腦上建立表單區域登錄項目，如同所有 VSTO 增益集共用的其他登錄項目一樣。 如果您使用 ClickOnce 部署 VSTO 增益集時，登錄項目會自動建立在使用者電腦上。 如果您使用 Windows Installer 部署 VSTO 增益集時，您必須設定 InstallShield Limited Edition 專案來建立在使用者電腦上的登錄項目。  
   
- 如需表單區域登錄項目詳細資訊，請參閱 <<c0> [ 為自訂的表單中指定的表單區域的位置](http://msdn.microsoft.com/library/office/ff868998.aspx)。 如需 Outlook 表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+ 如需表單區域登錄項目詳細資訊，請參閱 <<c0> [ 為自訂的表單中指定的表單區域的位置](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)。 如需 Outlook 表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior 值  
  **LoadBehavior**下方的項目*根*\Software\Microsoft\Office\\*應用程式名稱*\Addins\\*增益集識別碼*索引鍵包含的位元組合，這個值指定 VSTO 增益集的執行的階段行為。 最低順序位元 (值 0 和 1) 表示 VSTO 增益集目前處於卸載或載入狀態。 其他位元則表示應用程式嘗試載入 VSTO 增益集的時間。  

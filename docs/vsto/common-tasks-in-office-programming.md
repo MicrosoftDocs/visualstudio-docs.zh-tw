@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672804"
 ---
 # <a name="common-tasks-in-office-programming"></a>在 Office 程式設計中的一般工作
   本主題旨在協助您找出下列類別之使用 Visual Studio 進行 Office 方案程式設計的相關常見問題解答。  
@@ -47,7 +47,7 @@ ms.locfileid: "35670871"
   
 -   [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
--   [如何： 升級 Office 方案](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
+-   [如何： 升級 Office 方案](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
   
 -   [如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35670871"
   
 ##  <a name="deployment"></a> 部署工作  
   
--   [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+-   [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
--   [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
--   [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
+-   [如何： 安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
   
--   [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+-   [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
--   [如何： 準備 IIS 來部署 Office 方案](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
+-   [如何： 準備 IIS 來部署 Office 方案](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
   
--   [如何： 更新部署 Office 方案](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
+-   [如何： 更新部署 Office 方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
   
--   [如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+-   [如何： 變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
 ## <a name="see-also"></a>另請參閱  
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

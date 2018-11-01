@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 248fa3051a3d639798f37270dc7957a759e20d6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671543"
 ---
 # <a name="visio-solutions"></a>Visio 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Visio 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Visio、擴充 Visio 功能，或自訂 Visio 的使用者介面 (UI)。  
@@ -66,7 +66,7 @@ ms.locfileid: "49941980"
 |----------|--------------------------|  
 |自訂功能區。|[功能區概觀](../vsto/ribbon-overview.md)|  
   
- 如需 Visio 自訂 UI 的相關資訊，請參閱 VBA 參考文件的 [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) 類別。  
+ 如需 Visio 自訂 UI 的相關資訊，請參閱 VBA 參考文件的 [Visio.UIObject](/office/vba/api/Visio.UIObject) 類別。  
   
 ## <a name="see-also"></a>另請參閱  
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   

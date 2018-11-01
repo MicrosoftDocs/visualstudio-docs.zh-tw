@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671855"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說： 從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。  
@@ -178,14 +178,14 @@ ms.locfileid: "49862186"
 ## <a name="next-steps"></a>後續步驟  
  接著可以執行下列一些工作：  
   
--   在 Excel 中建立執行窗格。 如需詳細資訊，請參閱 <<c0> [ 如何： 執行窗格加入 Excel 活頁簿](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)。  
+-   在 Excel 中建立執行窗格。 如需詳細資訊，請參閱 <<c0> [ 如何： 執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
   
 -   將資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [如何： 執行窗格加入 Excel 活頁簿](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [如何： 執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [如何： 管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [書籤控制項](../vsto/bookmark-control.md)  
   

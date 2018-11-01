@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672895"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  
@@ -81,7 +81,7 @@ ms.locfileid: "49940225"
  有九種不同型別的內容控制項可以加入文件。 大部分的內容控制項在 <xref:Microsoft.Office.Tools.Word> 命名空間中有對應的型別。 您也可以使用泛型的 <xref:Microsoft.Office.Tools.Word.ContentControl>，它可以代表任何可用的內容控制項。 如需示範如何使用每個可用的內容控制項的逐步解說，請參閱 <<c0> [ 逐步解說： 使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
   
 ### <a name="build-block-gallery"></a>建置組塊庫  
- 建置組塊庫可讓使用者從清單中選取*文件建置組塊*插入文件。 文件建置組塊是一段可以多次使用的內容，例如通用的封面頁、格式化的資料表或頁首。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 型別。 如需有關建置組塊的詳細資訊，請參閱[適用於 Word 2007 中的開發人員最新消息](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84)。  
+ 建置組塊庫可讓使用者從清單中選取*文件建置組塊*插入文件。 文件建置組塊是一段可以多次使用的內容，例如通用的封面頁、格式化的資料表或頁首。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 型別。 如需有關建置組塊的詳細資訊，請參閱[適用於 Word 2007 中的開發人員最新消息](/previous-versions/office/developer/office-2007/bb266218(v=office.12))。  
   
 ### <a name="check-box"></a>核取方塊  
  核取方塊提供的 UI，代表二進位狀態：選取或清除。  

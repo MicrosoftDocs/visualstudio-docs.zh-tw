@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904709"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672713"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行 Page，Project Designer （Visual Studio 中的 Office 程式開發）
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  
@@ -32,7 +32,7 @@ ms.locfileid: "49904709"
  若要存取此頁面，選取 [] 中的專案**方案總管**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。  
   
 > [!NOTE]  
->  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+>  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置 (網站、FTP 伺服器或檔案路徑)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904709"
   
  如果安裝檔案位於相對於文件或安裝程式的位置，例如使用 CD 選項，請將這個方塊保留空白。  
   
- 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+ 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
  **必要條件**  
  必要條件可包含在安裝程式中，或視需要於安裝期間下載。  
@@ -113,6 +113,6 @@ ms.locfileid: "49904709"
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Office 方案的部署必要條件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Office 方案的部署必要條件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

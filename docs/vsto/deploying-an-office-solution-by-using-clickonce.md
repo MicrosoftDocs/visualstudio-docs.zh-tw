@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859365"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673064"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果一個以上的使用者將同一部電腦上執行您的解決方案。  
@@ -86,7 +86,7 @@ ms.locfileid: "49859365"
 9. 如果您的解決方案是以.NET Framework 4.5 為目標，同時選取**Visual Studio 2010 Tools for Office Runtime**核取方塊。  
 
     > [!NOTE]  
-    >  根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 建立的 Office 2013 VSTO 增益集啟動載入器套件](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)。  
+    >  根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 建立的 Office 2013 VSTO 增益集啟動載入器套件](create-vsto-add-ins-for-office-by-using-visual-studio.md)。  
 
 10. 底下**指定必要條件的安裝位置**，選擇其中一個選項，會出現，然後選擇**確定** 按鈕。  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859365"
 |錯誤碼|定義|  
 |----------------|----------------|  
 |0|方案已成功安裝或解除安裝，或是出現 VSTOInstaller [說明]。|  
-|-100|一個或多個命令列選項無效，或是設定超過一次。 如需詳細資訊，請輸入"vstoinstaller /？ 」 或參閱[建立自訂安裝 ClickOnce Office 方案](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
+|-100|一個或多個命令列選項無效，或是設定超過一次。 如需詳細資訊，請輸入"vstoinstaller /？ 」 或參閱[建立自訂安裝 ClickOnce Office 方案](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
 |-101|一或多個命令列選項無效。 如需詳細資訊，請輸入 "vstoinstaller /?"。|  
 |-200|部署資訊清單 URI 無效。 如需詳細資訊，請輸入 "vstoinstaller /?"。|  
 |-201|無法安裝方案，因為部署資訊清單無效。 請參閱[Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859365"
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [發行 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [建立自訂安裝 ClickOnce office 方案](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [如何： 安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [建立自訂安裝 ClickOnce office 方案](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

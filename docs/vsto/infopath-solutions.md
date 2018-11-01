@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078bbbf448b1a940461f2859601944627b7c2394
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670854"
 ---
 # <a name="infopath-solutions"></a>InfoPath 方案
   Visual Studio 提供的專案範本，可用來建立 Microsoft Office InfoPath 2013 與 InfoPath 2010 的 VSTO 增益集。 Office 2016 不提供 InfoPath。  
@@ -47,7 +47,7 @@ ms.locfileid: "35670810"
 ## <a name="automate-infopath-by-using-an-add-in"></a>使用增益集自動化 InfoPath  
  若要從在 Visual Studio 中使用 Office 開發工具建立的 Office VSTO 增益集存取 InfoPath 物件模型，請使用專案中 `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位傳回的 <xref:Microsoft.Office.Interop.InfoPath.Application> 物件，代表 InfoPath 目前的執行個體。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
- 當您從 VSTO 增益集呼叫 InfoPath 物件模型時，您會使用 InfoPath 主要 interop 組件中所提供的類型。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與 InfoPath 中 COM 物件模型之間的橋樑。 InfoPath 主要 Interop 組件中的所有類型，都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空間中定義。 如需 InfoPath 主要 interop 組件的詳細資訊，請參閱[關於 「 Microsoft Office InfoPath 主要 interop 組件](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)。 如需主要 interop 組件的詳細資訊在一般情況下，請參閱[Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
+ 當您從 VSTO 增益集呼叫 InfoPath 物件模型時，您會使用 InfoPath 主要 interop 組件中所提供的類型。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與 InfoPath 中 COM 物件模型之間的橋樑。 InfoPath 主要 Interop 組件中的所有類型，都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空間中定義。 如需 InfoPath 主要 interop 組件的詳細資訊，請參閱[關於 「 Microsoft Office InfoPath 主要 interop 組件](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)。 如需主要 interop 組件的詳細資訊在一般情況下，請參閱[Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>使用增益集自訂 InfoPath 使用者介面  
  當您針對 InfoPath 建立 VSTO 增益集時，您會有數個不同的 UI 自訂選項。 下表列出其中一些選項。  
@@ -60,10 +60,10 @@ ms.locfileid: "35670810"
  如需有關自訂 InfoPath 的 UI 和其他 Microsoft Office 應用程式的詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [有關 Microsoft Office InfoPath 主要 interop 組件](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
+ [有關 Microsoft Office InfoPath 主要 interop 組件](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673077"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。  
@@ -60,7 +60,7 @@ ms.locfileid: "49866424"
   
 - 在 [讀取窗格] 和 [檢查] 中顯示自訂 UI。  
   
-  如需詳細資訊，請參閱 <<c0> [ 來自訂表單頁面與表單區域](http://msdn.microsoft.com/library/office/ff869060.aspx)。  
+  如需詳細資訊，請參閱 <<c0> [ 來自訂表單頁面與表單區域](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)。  
   
 ##  <a name="Adding"></a> 將 Outlook 表單區域加入至專案  
  您可以使用**新的 Outlook 表單區域**設計新的表單區域，或匯入在 Outlook 中設計的表單區域精靈。 此外，如果您在另一個 Outlook VSTO 增益集專案中使用表單區域，則可重複使用現有的表單區域。  
