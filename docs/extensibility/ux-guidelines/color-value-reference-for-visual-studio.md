@@ -1,27 +1,25 @@
 ---
-title: 適用於 Visual Studio 色彩值參考 |Microsoft Docs
+title: 色彩值參考
 description: 建立新的 Visual Studio 色彩語彙基元的參考： 十六進位碼
 keywords: 色彩的十六進位碼、 色調、 佈景主題 UI、 佈景主題
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
 ms.technology:
 - vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902602"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751085"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
+
 本主題是建立新的色彩語彙基元的參考。 當您建立新的 UI 時，您可以使用現有的 UI 中的類似色彩選擇針對每個主要的佈景主題色彩和高對比佈景主題用於該元素的系統色彩名稱。 
 
 如需有關建立新的色彩語彙基元的實作資訊，請參閱[色彩佈景主題工具](../../extensibility/internals/color-theming-tools.md)。

@@ -13,35 +13,37 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 252c505260986bd08b5522ba79d1e00a82624241
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942955"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50915123"
 ---
-您必須具有系統管理權限在遠端電腦上。  
+1. 在遠端電腦中，尋找並啟動**遠端偵錯工具**從**開始**功能表。 
+   
+   如果您在遠端電腦上沒有系統管理權限，以滑鼠右鍵按一下**遠端偵錯工具**應用程式並選取**系統管理員身分執行**。 否則，只是它以正常方式啟動。
+
+   可能有不同版本的*msvsmon.exe*中*x64*， *x32*，或其他資料夾。 請確定在開始您需要偵錯您的應用程式的版本。 
+   
+1. 第一次啟動遠端偵錯工具 （或之前，您已設定它），**遠端偵錯組態** 對話方塊隨即出現。  
   
-1. 尋找遠端偵錯工具應用程式。 (在它已安裝的位置找到 msvsmon.exe 或開啟 [開始] 功能表和搜尋**遠端偵錯工具**。)
+    ![遠端偵錯工具組態](../media/remotedebuggerconfwizardpage.png "遠端偵錯工具組態")  
   
-    如果您在遠端伺服器上執行遠端偵錯工具，您可以以滑鼠右鍵按一下 遠端偵錯工具應用程式，並選擇**系統管理員身分執行**。 如果您不會執行它，在遠端伺服器上，只是正常方式啟動。
+1. 如果 Windows Web 服務 API 未安裝，只在 Windows Server 2008 R2 上發生這種情況，請選取**安裝** 按鈕。  
   
-2. 當您啟動遠端工具第一次 （或在設定之前），則**遠端偵錯組態** 對話方塊隨即出現。  
+1. 選取您想要使用上的遠端工具的至少一個網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果電腦經由工作群組或家用群組連線，選擇適當的第二個或第三個項目。  
   
-    ![RemoteDebuggerConfWizardPage](../media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+1. 選取 **設定遠端偵錯**設定防火牆並啟動遠端偵錯工具。  
   
-3. 如果 Windows 服務 API 未安裝 （這只能在 Windows Server 2008 R2 上發生），請選擇**安裝** 按鈕。  
+1. 組態完成時，**遠端偵錯工具** 視窗隨即出現。
   
-4. 選取您想要在遠端工具上使用的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就需要視情況選擇第二個或第三個項目。  
+    ![遠端偵錯工具視窗](../media/remotedebuggerwindow.png "遠端偵錯工具視窗")
   
-5. 選擇**設定遠端偵錯**設定防火牆並啟動此工具。  
+    遠端偵錯工具目前正在等待連接。 使用伺服器名稱和連接埠號碼顯示在 Visual Studio 中設定遠端連線設定。  
   
-6. 設定完成時，[遠端偵錯工具] 視窗隨即出現。
+若要停止遠端偵錯工具，請選取**檔案** > **結束**。 您可以重新啟動從**啟動** 功能表中，或從命令列：  
   
-    ![RemoteDebuggerWindow](../media/remotedebuggerwindow.png "RemoteDebuggerWindow")
-  
-    遠端偵錯工具目前正在等待連接。 請記下的伺服器名稱和連接埠號碼會顯示，因為這必須符合您稍後使用 Visual Studio 中的組態。  
-  
-   當您完成偵錯 」 和 「 停止遠端偵錯工具的需要時，按一下**檔案 > 結束**視窗上。 您可以重新啟動從**啟動**功能表或從命令列：  
-  
-   **\<遠端偵錯工具安裝目錄 >\\< x86、 x64、 ARM、 ARM64 或 Appx > \msvsmon.exe**。  
+```cmd
+<Remote debugger installation directory>\msvsmon.exe
+```

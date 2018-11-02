@@ -17,32 +17,34 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b5884ff140097010c90fbf2208fecd95980f2fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5b34bcb9c1532190f730e26c691289d489a2f3c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924445"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751072"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
+
 您可以擴充 TableAdapter 的功能，將程式碼加入至 TableAdapter 的部分類別檔案。
 
- 定義 TableAdapter 的程式碼會重新產生任何變更的 TableAdapter 時**Dataset 設計工具**，或當精靈修改 TableAdapter 的組態。 若要防止在 TableAdapter 的重新產生期間正在刪除您的程式碼，將程式碼加入至 TableAdapter 的部分類別檔案。
+定義 TableAdapter 的程式碼在 TableAdapter 中對任何變更時重新產生**Dataset 設計工具**，或當精靈修改 TableAdapter 的組態。 若要避免您的程式碼在 TableAdapter 的重新產生期間遭到刪除，請在 TableAdapter 的部分類別檔案中加入程式碼。
 
- 部分類別可讓分割為多個實體檔案的特定類別的程式碼。 如需詳細資訊，請參閱[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
+部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
 
 ## <a name="locate-tableadapters-in-code"></a>在程式碼中找出 Tableadapter
- 雖然 Tableadapter 專搭配**Dataset 設計工具**，所產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於 TableAdapter 的相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，Tableadapter 將位於`HRDataSetTableAdapters`命名空間。 (命名慣例遵循下列模式： *DatasetName* + `TableAdapters`)。
 
- 下列範例假設名為 TableAdapter`CustomersTableAdapter`位於與專案中`NorthwindDataSet`。
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式： *DatasetName* + `TableAdapters`)。
 
-#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要建立部分類別的 TableAdapter
+下列範例假設名為 TableAdapter`CustomersTableAdapter`位於與專案`NorthwindDataSet`。
 
-1.  專案中加入新的類別，請前往**專案**功能表，然後選取**加入類別**。
+### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要建立 TableAdapter 部分類別
+
+1.  將新類別加入專案，方法是前往**專案**功能表，然後選取**加入類別**。
 
 2.  將類別命名為 `CustomersTableAdapterExtended` 。
 
-3.  選取**新增**。
+3.  選取 [新增]。
 
 4.  程式碼取代為您的專案的部分類別名稱與正確的命名空間，如下所示：
 
