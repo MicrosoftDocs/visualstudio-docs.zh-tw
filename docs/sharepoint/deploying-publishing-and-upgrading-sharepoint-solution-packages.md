@@ -59,7 +59,7 @@ ms.locfileid: "36327199"
  您也可以新增要在部署前後執行的命令。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。  
   
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>將套件發佈到遠端或本機伺服器
- 若要將沙箱化 SharePoint 方案發行至遠端伺服器，在功能表列上，選擇**建置**，**發佈**，然後在**發行**對話方塊方塊中，選擇  **發行至 SharePoint 網站**選項按鈕，提供遠端伺服器的 URL，例如**https://someremoteserver.sharepoint.microsoftonline.com**。  
+ 若要將沙箱化 SharePoint 方案發行至遠端伺服器，在功能表列上，選擇**建置**，**發佈**，然後在**發行**對話方塊方塊中，選擇  **發行至 SharePoint 網站**選項按鈕，提供遠端伺服器的 URL，例如 **https://someremoteserver.sharepoint.microsoftonline.com**。  
   
  在發行至本機伺服器、 SharePoint 方案**發佈**對話方塊方塊中，選擇**發行至檔案系統**選項按鈕，提供本機系統路徑。  
   

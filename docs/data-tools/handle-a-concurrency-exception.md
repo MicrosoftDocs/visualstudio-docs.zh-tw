@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582329"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750808"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
@@ -162,13 +162,13 @@ ms.locfileid: "39582329"
 
 1. 新增下列程式碼下方`Form1_Load`方法：
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. 取代`CustomersBindingNavigatorSaveItem_Click`方法來呼叫`UpdateDatabase`方法，讓它看起來如下所示：
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>向使用者顯示的選項
 
@@ -176,8 +176,8 @@ ms.locfileid: "39582329"
 
 藉由新增下列程式碼，以建立訊息**程式碼編輯器**。 輸入下列程式碼下方`UpdateDatabase`方法：
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>處理使用者的回應
 
@@ -185,8 +185,8 @@ ms.locfileid: "39582329"
 
 下列程式碼下方新增上一節中所加入的程式碼：
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>測試表單
 

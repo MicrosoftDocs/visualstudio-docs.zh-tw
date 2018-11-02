@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089434"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750755"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
+
 此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用客戶和訂單資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二個表單會顯示所選取的客戶的訂單。 本逐步解說示範如何從第一個表單接收資料的第二個表單上建立方法。
 
 > [!NOTE]
->  此逐步解說只示範一種在表單之間傳遞資料的方法。 還有其他選項，將資料傳遞至表單，包括建立第二個建構函式來接收資料，或建立的公用屬性，可以使用設定資料從第一種形式。
+> 此逐步解說只示範一種在表單之間傳遞資料的方法。 還有其他選項，將資料傳遞至表單，包括建立第二個建構函式來接收資料，或建立的公用屬性，可以使用設定資料從第一種形式。
 
- 這個逐步解說中所述的工作包括：
+這個逐步解說中所述的工作包括：
 
 -   建立新**Windows Forms 應用程式**專案。
 
@@ -49,6 +50,7 @@ ms.locfileid: "37089434"
 -   在表單之間傳遞資料。
 
 ## <a name="prerequisites"></a>必要條件
+
 本逐步解說會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
 1.  如果您沒有 SQL Server Express LocalDB，請將它安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或作為個別的元件。
@@ -65,9 +67,7 @@ ms.locfileid: "37089434"
 
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
-## <a name="create-the-windows-forms-application"></a>建立 Windows Forms 應用程式
-
-### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案
+## <a name="create-the-windows-forms-app-project"></a>建立 Windows Forms 應用程式專案
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
@@ -80,8 +80,6 @@ ms.locfileid: "37089434"
      **PassingDataBetweenForms**專案時建立，並加入至**方案總管 中**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
-
-### <a name="to-create-the-data-source"></a>若要建立資料來源
 
 1.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
@@ -108,7 +106,8 @@ ms.locfileid: "37089434"
      **NorthwindDataSet**新增至您的專案，而**客戶**並**訂單**資料表會出現在**資料來源**視窗。
 
 ## <a name="create-the-first-form-form1"></a>建立第一個表單 (Form1)
- 您可以建立資料繫結方格 (<xref:System.Windows.Forms.DataGridView>控制項)，藉由拖曳**客戶**節點從**Zdroje dat**視窗拖曳至表單。
+
+您可以建立資料繫結方格 (<xref:System.Windows.Forms.DataGridView>控制項)，藉由拖曳**客戶**節點從**Zdroje dat**視窗拖曳至表單。
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>在表單上建立資料繫結資料格
 
@@ -116,9 +115,9 @@ ms.locfileid: "37089434"
 
      A<xref:System.Windows.Forms.DataGridView>和的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 的巡覽記錄會出現在**Form1**。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)，CustomersTableAdapter， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
 
-## <a name="create-the-second-form-form2"></a>建立第二個表單 (Form2)
+## <a name="create-the-second-form"></a>建立第二個表單
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>建立要將資料傳遞至其中的第二個表單
+建立第二個表單，以將資料傳遞至。
 
 1.  在 [專案] 功能表中，選擇 [新增 Windows Form]。
 
@@ -132,9 +131,9 @@ ms.locfileid: "37089434"
 
      **OrdersBindingNavigator**就會消失**Form2**。
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>將 TableAdapter 查詢加入 Form2 以載入 Form1 上所選客戶的訂單
+## <a name="add-a-tableadapter-query"></a>加入 TableAdapter 查詢
 
-### <a name="to-create-a-tableadapter-query"></a>若要建立 TableAdapter 查詢
+加入 TableAdapter 查詢加入 Form2 以載入 Form1 上所選客戶的訂單。
 
 1.  按兩下**NorthwindDataSet.xsd**中的檔案**方案總管 中**。
 
@@ -153,7 +152,7 @@ ms.locfileid: "37089434"
     ```
 
     > [!NOTE]
-    >  針對資料庫確認參數語法是否正確。 例如，在 Microsoft Access 中，WHERE 子句應看起來類似：`WHERE CustomerID = ?`。
+    > 針對資料庫確認參數語法是否正確。 例如，在 Microsoft Access 中，WHERE 子句應看起來類似：`WHERE CustomerID = ?`。
 
 6.  按 [ **下一步**]。
 
@@ -165,8 +164,6 @@ ms.locfileid: "37089434"
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>若要將資料傳遞至 Form2 上建立方法
 
-### <a name="to-create-a-method-to-pass-data-to"></a>建立方法以將資料傳遞給它
-
 1.  以滑鼠右鍵按一下**Form2**，然後選取**檢視程式碼**以開啟**Form2**中**程式碼編輯器**。
 
 2.  將下列程式碼加入**Form2**之後`Form2_Load`方法：
@@ -175,8 +172,6 @@ ms.locfileid: "37089434"
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>將資料傳遞，並顯示 Form2 的 Form1 上建立方法
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>建立方法以將資料傳遞給 Form2
 
 1.  在  **Form1**，在 Customer 資料格，以滑鼠右鍵按一下，然後按一下**屬性**。
 
@@ -191,9 +186,7 @@ ms.locfileid: "37089434"
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>執行應用程式
-
-### <a name="to-run-the-application"></a>若要執行應用程式
+## <a name="run-the-app"></a>執行應用程式
 
 -   按 **F5** 執行應用程式。
 
