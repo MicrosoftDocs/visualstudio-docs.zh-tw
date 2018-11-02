@@ -5,15 +5,15 @@ items:
 - name: 發佈至 Azure
   items:
   - name: 將 ASP.NET Core 應用程式發行到 Azure
-    href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json&view=aspnetcore-2.1
+    href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
   - name: 將 .NET 待辦事項清單 Web 應用程式發佈到 Azure
-    href: /dotnet/azure/dotnet-quickstart-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json&view=azure-dotnet
+    href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
   - name: 發佈 Azure Functions
     href: /azure/azure-functions/functions-develop-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   - name: 搭配 ASP.NET Core 使用 Visual Studio 與 Git 持續部署至 Azure
-    href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deploymenttoc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json&?view=aspnetcore-2.1
+    href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
   - name: 使用 Azure Pipelines 持續部署到 Azure
-    href: /azure/devops/pipelines/get-started-yaml?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json&view=vsts
+    href: /azure/devops/pipelines/get-started-yaml?view=vsts
   - name: 將 ASP.NET Web 應用程式發佈到 Azure VM
     href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   expanded: true
@@ -35,7 +35,7 @@ items:
     - name: 臉部辨識
       href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: 電腦視覺
-      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/vs-azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   expanded: false
 - name: 雲端服務
   items:
@@ -120,9 +120,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: 從伺服器總管存取 Azure 虛擬機器
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: 0e3e8ddeca9bbbbc00aa99e978688ce0cd57773c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c8f94c6f53fd97da08ab4d8135b4a1c8eaa19b77
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673110"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750477"
