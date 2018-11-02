@@ -789,18 +789,28 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: 文字編輯器 - 實驗、C/C++
           href: ide/reference/options-text-editor-c-cpp-experimental.md
+        - name: 文字編輯器 - C/C++、檢視
+          href: ide/reference/options-text-editor-c-cpp-view.md
         - name: 文字編輯器 - C#、程式碼樣式、格式化
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: 文字編輯器 - 進階、C#
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 文字編輯器 - IntelliSense、C#
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 文字編輯器 - JavaScript、程式碼驗證
+          href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: 文字編輯器 - 格式、JavaScript
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: 文字編輯器 - IntelliSense、JavaScript
           href: ide/reference/options-text-editor-javascript-intellisense.md
         - name: 文字編輯器 - 格式、XAML
           href: ide/reference/options-text-editor-xaml-formatting.md
+        - name: 文字編輯器 - XAML、雜項
+          href: ide/reference/options-text-editor-xaml-miscellaneous.md
+        - name: 文字編輯器 - XML、格式設定
+          href: ide/reference/options-text-editor-xml-formatting.md
+        - name: 文字編輯器 - XML、雜項
+          href: ide/reference/options-text-editor-xml-miscellaneous.md
       - name: 專案和方案、選項對話方塊
         href: ide/reference/projects-and-solutions-options-dialog-box.md
         items:
@@ -1087,9 +1097,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 32ae829c7ddde6da31cd3ef869020255da078c59
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f1fd877d75f4a771826c44b6992ecde6165b3f41
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220348"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671907"
