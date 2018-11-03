@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871741"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966839"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 （DSL 工具），其裝載在 Visual Studio 中，可讓您設計的特定領域語言，然後再產生所有使用者必須具備才能建立模型為基礎之語言的項目。
@@ -79,4 +79,4 @@ ms.locfileid: "49871741"
 ## <a name="see-also"></a>另請參閱
 
 - [實驗執行個體](../extensibility/the-experimental-instance.md)
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898547"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967515"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -298,7 +298,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 在撰寫 C# 針對此模型時，您可以透過在一個步驟中的連結跳利用上每個類別與它相關的屬性關聯性產生：
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 不過，您必須在「路徑語法」中明確地執行兩個躍點。 由於此要求，您可以更輕鬆地存取中繼連結。 下列程式碼完成從連結到 Component 的躍點：
@@ -581,6 +581,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

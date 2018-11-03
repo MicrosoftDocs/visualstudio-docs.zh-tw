@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1fd001f5371e346a07f82c9c48a3acb699cefd52
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893932"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966761"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義的屬性
 DslDefinition 屬性會定義*定義域專屬語言*定義屬性，例如版本編號。 DslDefinition 屬性會出現在**屬性**視窗中，當您按一下圖中的開放區域*特定領域語言設計工具*。
@@ -46,4 +46,4 @@ DslDefinition 屬性會定義*定義域專屬語言*定義屬性，例如版本�
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

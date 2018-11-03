@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849440"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966540"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -52,10 +52,10 @@ ms.locfileid: "49849440"
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|
 |[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|使用模型描述系統的整體結構和行為，以及確保其符合使用者的需求。|
 |[在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)|確認您的軟體符合使用者的需求以及系統的整體架構。|
-|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在 Agile 開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型可幫助您在開發期間了解和變更系統。|
+|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型可幫助您在開發期間了解和變更系統。|
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|組織大型或中型專案中的模型。|
 
 ## <a name="resources"></a>資源
 
 - [Visual Studio Visualization & Modeling 工具論壇](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Visual Studio 擴充性論壇](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Visual Studio 擴充性論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

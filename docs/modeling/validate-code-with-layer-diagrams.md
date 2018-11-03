@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835705"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967281"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -173,7 +173,7 @@ ms.locfileid: "49835705"
 
 ## <a name="validate-code-automatically"></a>自動驗證程式碼
 
-您可以在每次執行本機組建時執行圖層驗證。 如果您的小組會使用 Azure DevOps，您可以執行閘道簽入，藉由建立自訂的 MSBuild 工作和使用組建報告收集驗證錯誤，您可以指定圖層驗證。 若要建立閘道的簽入組建，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
+您可以在每次執行本機組建時執行圖層驗證。 如果您的小組會使用 Azure DevOps，您可以執行閘道簽入，藉由建立自訂的 MSBuild 工作和使用組建報告收集驗證錯誤，您可以指定圖層驗證。 若要建立閘道的簽入組建，請參閱[TFVC 閘道簽入](/azure/devops/pipelines/build/triggers#gated)。
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>在本機組建執行期間自動驗證程式碼
 
@@ -237,6 +237,6 @@ ms.locfileid: "49835705"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 - [影片： 驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

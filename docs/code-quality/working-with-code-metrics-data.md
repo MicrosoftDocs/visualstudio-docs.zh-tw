@@ -1,9 +1,9 @@
 ---
-title: 在 Visual Studio 中的 [程式碼度量結果] 視窗
+title: 程式碼度量視窗
 ms.date: 12/12/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -15,40 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 6aa1de7b3c4a029038072e84bea1918ea33031db
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321251"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967164"
 ---
-# <a name="using-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
+# <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
 **程式碼度量結果**視窗會顯示所產生的程式碼度量資訊分析的資料。 如需有關程式碼度量資料值的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
 
-## <a name="displaying-code-metrics-results"></a>顯示程式碼度量結果
+## <a name="display-code-metrics-results"></a>顯示程式碼度量結果
 
 **程式碼度量結果**視窗會自動顯示，當您產生程式碼度量結果。 您也可以在任何時候顯示的視窗。
 
-### <a name="to-display-the-code-metrics-results-window"></a>若要顯示程式碼度量結果視窗
+您可以顯示程式碼度量結果視窗中，使用下列功能表序列的其中一個：
 
 - 在 **分析**功能表上，選擇**Windows** > **程式碼度量結果**。
 
-   \-或-
-
 - 在 **檢視**功能表上，選擇**其他 Windows** > **程式碼度量結果**。
 
-**程式碼度量結果**視窗會顯示，即使它包含沒有任何結果。
+**程式碼度量結果**視窗隨即開啟，即使它包含沒有任何結果。
 
 ### <a name="to-view-code-metrics-details"></a>若要檢視程式碼度量詳細資料
 
 如果已產生程式碼度量結果，展開樹狀目錄中的**階層**資料行。
 
-## <a name="filtering-code-metrics-results"></a>篩選程式碼度量結果
+## <a name="filter-code-metrics-results"></a>篩選程式碼度量結果
 
 您可以篩選會顯示在結果**程式碼度量結果**視窗使用頂端的工具列。 例如，您可能要查看具有可維護性指數 65 以下結果。
 
-**篩選**下拉式清單方塊包含 結果資料行的名稱。 定義篩選時，會將它新增至與縮排清單的底部。 此清單可以包含最後十個已定義的篩選。
+**篩選**下拉式清單方塊包含 結果資料行的名稱。 定義篩選時，會將它新增至與縮排清單的底部。 此清單可以包含最後 10 個已定義的篩選。
 
 ### <a name="to-filter-the-code-metrics-results"></a>若要篩選程式碼度量結果
 
@@ -62,45 +60,29 @@ ms.locfileid: "44321251"
 
 5.  若要查看的結果詳細資料，請展開階層樹狀結構。
 
-## <a name="adding-removing-and-rearranging-data-columns"></a>新增、 移除及重新排列資料行
+## <a name="add-remove-and-rearrange-data-columns"></a>新增、 移除和重新排列資料行
 
 您可以新增或移除結果中的資料行**程式碼度量結果**視窗。 此外，您可以重新排列結果資料行，使其出現在您想要的順序。
 
-### <a name="to-remove-a-column"></a>若要移除資料行
+### <a name="add-or-remove-a-column"></a>新增或移除資料行
+
+1. 按一下 **新增/移除資料行**按鈕，或以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
+
+1. 在 [**新增/移除資料行**] 對話方塊中，選取或清除核取方塊資料行，您想要新增或移除，然後選擇**確定**。
+
+### <a name="rearrange-columns"></a>重新排列資料行
 
 1. 按一下 [**新增/移除資料行**] 按鈕。
 
-     \- 或-以滑鼠右鍵按一下任何欄標題，，然後按一下**新增/移除欄位**。
+1. 在 **新增/移除資料行**對話方塊方塊中，選取您想要移動，然後選擇 向上鍵或向下箭號的資料行。
 
-1. 在 [**新增/移除資料行**] 對話方塊中，清除核取方塊資料行，您想要移除，然後按一下**確定**。
+1. 當您想要的位置定位的資料行時，選擇**確定**。
 
-### <a name="to-add-a-previously-removed-column"></a>若要加入先前移除的資料行
-
-1. 按一下 [**新增/移除資料行**] 按鈕。
-
-     \-或-
-
-     以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
-
-1. 在 **新增/移除資料行**對話方塊方塊中，選取您想要新增，然後按一下資料行的核取方塊**確定**。
-
-### <a name="to-rearrange-columns"></a>若要重新排列資料行
-
-1. 按一下 [**新增/移除資料行**] 按鈕。
-
-     \-或-
-
-     以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
-
-1. 在 **新增/移除資料行**對話方塊方塊中，選取您想要移動，然後按一下 向上鍵或向下箭號的資料行。
-
-1. 當資料行位於您想要的位置時，按一下**確定**。
-
-## <a name="copying-data-to-the-clipboard-or-excel"></a>將資料複製到剪貼簿或 Excel
+## <a name="copy-data-to-the-clipboard-or-excel"></a>將資料複製到剪貼簿或 Excel
 
 您可以選取，並將選取的資料列的程式碼計量資料複製到剪貼簿中，為文字字串，其中包含一條線的名稱和值的每個資料行。 您也可以按一下**在 Microsoft Excel 中開啟選取項目**，將所有的程式碼度量結果匯出至 Excel 試算表。
 
-## <a name="creating-a-work-item-based-on-code-metric-results"></a>建立工作項目，根據程式碼度量結果
+## <a name="create-a-work-item-based-on-code-metric-results"></a>建立工作項目，根據程式碼度量結果
 
 您可以建立[Azure 面板](/azure/devops/boards/index?view=vsts)為基礎的工作項目導致**程式碼度量結果**視窗。 建立工作項目時，Visual Studio 會自動輸入其中一個職銜**標題**下方的欄位和程式碼度量資料**歷程記錄** 索引標籤。
 

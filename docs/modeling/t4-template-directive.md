@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f564fd9c86e62a121eb69cc09ce267e2f36dfe21
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897195"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967034"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -82,6 +82,7 @@ hostspecific="true"
 <#@ assembly name="EnvDTE" #>
 <#@ import namespace="EnvDTE" #>
 <#@ import namespace="System.IO" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <# // Get the Visual Studio API as a service:
  DTE dte = ((IServiceProvider)this.Host).GetCOMService(typeof(DTE)) as DTE;
 #>

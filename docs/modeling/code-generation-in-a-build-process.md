@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409800"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967112"
 ---
 # <a name="code-generation-in-a-build-process"></a>在建置流程中的程式碼產生
 
-[文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的 Visual Studio 方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
+[文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](/azure/devops/pipelines/index)的 Visual Studio 方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
 
 根據不同的建置引擎，建置工作可執行的動作會有些差異。 如果當您建置 Visual Studio 中的解決方案時，文字範本可以存取 Visual Studio API (EnvDTE) [hostspecific ="true"](../modeling/t4-template-directive.md)屬性設定。 但當您建置解決方案，從命令列，或當您起始透過 Visual Studio 的伺服器組建時也不會。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
 
@@ -33,7 +33,7 @@ ms.locfileid: "39409800"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-如果[您的組建伺服器](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 替代的最新的版本號碼 ' *'。
+如果[您的組建伺服器](/azure/devops/pipelines/agents/agents)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 替代的最新的版本號碼 ' *'。
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -236,7 +236,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-在指示詞處理器中，您可以呼叫[ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+在指示詞處理器中，您可以呼叫[ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

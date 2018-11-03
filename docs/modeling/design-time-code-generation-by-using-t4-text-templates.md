@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829465"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967450"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -153,7 +153,7 @@ ms.locfileid: "49829465"
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -225,7 +225,7 @@ ms.locfileid: "49829465"
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -270,12 +270,13 @@ ms.locfileid: "49829465"
  `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
 ### <a name="getting-data-from-visual-studio"></a>從 Visual Studio 中取得資料
- 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
+ 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
@@ -295,7 +296,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  如果您已安裝 Visual Studio Modeling SDK，您可以在執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
