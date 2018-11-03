@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885653"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967320"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
 本主題說明在定義和使用適用於 Visual Studio 中使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ ms.locfileid: "49885653"
 1.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。
 
     > [!NOTE]
-    > 每當您變更*DslDefinition.dsl*，您必須按一下**轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+    > 每當您變更*DslDefinition.dsl*，您必須按一下**轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 2.  按 **F5**，或在 [偵錯]  功能表上，按一下 [開始偵錯] 。
 

@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860639"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967528"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -213,7 +213,7 @@ ms.locfileid: "49860639"
 
 ##### <a name="to-test-the-new-domain-classes"></a>測試新的網域類別
 
-1.  **按一下 [轉換所有範本**] 工具列中的 [方案總管] 中，以產生 DSL 設計工具程式碼。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+1.  **按一下 [轉換所有範本**] 工具列中的 [方案總管] 中，以產生 DSL 設計工具程式碼。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 2.  **建置並執行 DSL。** 按 F5 或 CTRL + F5，在實驗模式中執行 Visual Studio 的新執行個體。 在 Visual Studio 的實驗性執行個體，開啟或建立您的 DSL 的副檔名的檔案。
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942474"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967502"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -186,11 +186,11 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 請參閱：
 
-- [定義建置流程](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [使用視覺化設計工具](/azure/devops/pipelines/get-started-designer)
 
-- [使用閘道簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC 閘道簽入](/azure/devops/pipelines/build/triggers#gated)
 
-- [自訂建置流程範本](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [建置與發行工作](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>與建立及使用模型相關的一般提示
 
@@ -220,7 +220,7 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 - [圖表、 儀表板和 widget （Azure DevOps 服務）](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [使用 Project 建立您的待處理項目和工作](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [使用 Project 建立您的待處理項目和工作](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> 測試、 驗證和簽入程式碼
 
@@ -486,5 +486,5 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-- [在 Agile 開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861276"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967385"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼定義。 大部分的 DSL 方案中的程式碼會產生這個檔案。
@@ -152,4 +152,4 @@ ms.locfileid: "49861276"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

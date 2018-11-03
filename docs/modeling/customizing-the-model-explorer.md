@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929968"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966647"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
@@ -115,4 +115,4 @@ ms.locfileid: "49929968"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

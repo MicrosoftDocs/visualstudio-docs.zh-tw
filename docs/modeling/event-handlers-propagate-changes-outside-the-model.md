@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02cf41daa9bea74e62ceb96f7c6227982bfcad84
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910624"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967346"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 
@@ -189,6 +189,6 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="see-also"></a>另請參閱
 
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
-- [程式碼範例： 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [程式碼範例： 電路圖表](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

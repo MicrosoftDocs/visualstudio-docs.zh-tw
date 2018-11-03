@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4a57e5abafd75751f48fb843b6f1a5f3be8ab727
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98013b53641efec6a088c1e89bf521613fc7659e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815464"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966566"
 ---
 # <a name="properties-of-compartment-shapes"></a>區間圖案的屬性
 區間圖形都是其中一個圖形，您可以使用特定領域語言中顯示的網域類別。 您可以展開和摺疊區間。
@@ -59,4 +59,4 @@ ms.locfileid: "49815464"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
