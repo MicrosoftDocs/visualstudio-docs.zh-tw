@@ -11,6 +11,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.Formatting.General
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
@@ -19,14 +20,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821379"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220517"
 ---
-# <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
+# <a name="options-text-editor-c-code-style-formatting"></a>選項、文字編輯器、C#、程式碼樣式、格式化
 
 使用 [格式化] 選項頁面，可設定在程式碼編輯器中用於程式碼格式化的選項。 若要存取此選項頁面，請選擇 [工具] > [選項]。 在 [選項] 對話方塊中，選擇 [文字編輯器] > [C#] > [程式碼樣式] > [格式化]。
 

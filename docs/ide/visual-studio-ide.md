@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2017 的概觀
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907517"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244446"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
-Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。
+Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
-這篇概觀文章著重在 Visual Studio 2017 for Windows。 文中將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
+Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+
+本篇概觀文章將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 

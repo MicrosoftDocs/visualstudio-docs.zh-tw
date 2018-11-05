@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8ffe7a2a730f10d0f29a13b5123fbd7f56beda13
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924778"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050153"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -37,7 +37,7 @@ Visual Studio 2017 包含改善的 [Vue.js](https://vuejs.org/) 架構支援，�
     > [!IMPORTANT]
     > 本文需要的功能是從 Visual Studio 2017 15.8 版 Preview 3 開始提供。
 
-    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
@@ -79,7 +79,7 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 * 開啟檔案 *./Startup.cs*，並將下列幾行新增至 Configure 方法：
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

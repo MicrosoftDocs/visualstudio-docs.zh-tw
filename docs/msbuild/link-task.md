@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081705"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220117"
 ---
 # <a name="link-task"></a>Link 工作
 包裝 Visual C++ 連結器工具 (link.exe)。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 (*.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。  
@@ -67,7 +67,7 @@ ms.locfileid: "39081705"
   
      指定將放入資訊清單檔案的 `dependency` 區段的屬性。  
   
-     如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另請參閱[發行者組態檔](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files)。  
+     如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另請參閱[發行者組態檔](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)。  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +187,7 @@ ms.locfileid: "39081705"
   
      指定連結器是否會將 **SuppressUnmanagedCodeSecurityAttribute** 套用至連結器產生的 P/Invoke 呼叫 (由 Managed 程式碼至原生 DLL)。  
   
-    如需詳細資訊，請參閱 [/CLRUNMANAGEDCODECHECK (加入 SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
+    如需詳細資訊，請參閱 [/CLRUNMANAGEDCODECHECK (新增 SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)。  
   
 -   **CreateHotPatchableImage**  
   

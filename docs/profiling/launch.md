@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34cf3124ab4479be624f097502240e5014b330
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844400"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219194"
 ---
 # <a name="launch"></a>啟動
 **Launch** 選項會使用取樣方法來啟動分析工具，也會啟動指定的應用程式。  

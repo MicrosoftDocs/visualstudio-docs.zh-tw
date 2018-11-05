@@ -1,6 +1,6 @@
 ---
-title: 使用建置或發行管理進行自動化的測試
-ms.date: 03/02/2018
+title: 使用 Azure Pipelines 進行自動化測試
+ms.date: 10/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,28 +11,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a410601b0d7ab6b6a3901333b062e515555ec2d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950650"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218657"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 而非 Lab Management 進行自動化測試
 
-如果您使用 Microsoft Test Manager (MTM) 和 Lab Management 進行自動化測試，或建置-部署-測試自動化，本主題會說明如何使用 Team Foundation Server (TFS) 和 Azure Test Plans 中的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能來達到相同的目標。
+如果您使用 Microsoft Test Manager 和 Lab Management 進行自動化測試或建置、部署、測試自動化，本主題會說明如何使用 Azure Pipelines 與 Team Foundation Server (TFS) 中的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能來達到相同的目標。
 
 ## <a name="build-deploy-test-automation"></a>建置、部署、測試自動化
 
-MTM 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測試應用程式。 XAML 組建依賴各種以 MTM 建立的建構，例如實驗室環境、測試套件和測試設定，以及各種基礎結構元件，例如組建控制器、組建代理程式、測試控制器和測試代理程式，來達成這個目標。 使用 TFS 和 Azure Pipelines 的 Build 或 Release Management，能以較少步驟完成相同作業。
+Microsoft Test Manager 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測試應用程式。 XAML 組建依賴各種以 Microsoft Test Manager 建立的建構 (例如實驗室環境、測試套件和測試設定)，以及各種基礎結構元件 (例如組建控制器、組建代理程式、測試控制器和測試代理程式) 來達成這個目標。 您可以使用 Azure Pipelines 或 TFS，以較少的步驟來完成相同作業。
 
-| 步驟 | 使用 XAML 組建 | 使用 Build or Release Management |
-|-------|-|-----------------|
-| 找出要部署組建和執行測試的機器。 | 以 MTM 在這些機器上建立標準的實驗室環境。 | N/A |
-| 找出要執行的測試。 | 以 MTM 建立測試套件、建立測試案例，以及建立自動化與每個測試案例的關聯性。 以可識別電腦角色的 MTM，在應該執行測試的實驗室環境中建立測試設定。 | 如果您計劃透過測試計劃來管理您的測試，請以相同的方式在 MTM 中建立自動化的測試套件。 或者，您也可以跳過此程序，如果您想要直接從組建產生的測試二進位檔執行測試。 不必每個案例都建立測試設定。 |
+| 步驟 | 使用 XAML 組建 | 在建置或發行中 |
+|-------|----------------------|-----------------|
+| 找出要部署組建和執行測試的機器。 | 以 Microsoft Test Manager 在這些機器上建立標準的實驗室環境。 | N/A |
+| 找出要執行的測試。 | 以 Microsoft Test Manager 建立測試套件、建立測試案例，以及建立自動化與每個測試案例的關聯性。 以可識別電腦角色的 Microsoft Test Manager，在應該執行測試的實驗室環境中建立測試設定。 | 如果您計劃透過測試計劃來管理您的測試，請以相同方式在 Microsoft Test Manager 中建立自動化的測試套件。 或者，您也可以跳過此程序，如果您想要直接從組建產生的測試二進位檔執行測試。 不必每個案例都建立測試設定。 |
 | 自動化部署及測試。 | 使用 LabDefaultTemplate.*.xaml 建立 XAML 組建定義。 在組建定義中指定組建、測試套件和實驗室環境。 | 建立單一環境的[建置或發行Release 管線](/azure/devops/pipelines/index?view=vsts)。 使用命令列工作 (從 XAML 組建定義) 執行相同的部署指令碼，並使用 Test Agent 部署和執行功能測試工作執行自動化的測試。 指定機器清單及其認證，當作這些工作的輸入資料。 |
 
-本案例使用 Build or Release Management 的優點包括：
+在此案例中使用 Azure Pipelines 或 TFS 的一些優點包括：
 
 * 您不需要組建控制器或測試控制器。
 * 測試代理程式是透過工作，安裝為組建或版本的一部分。
@@ -57,8 +57,8 @@ MTM 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測
 
 下表摘要說明您在實驗室中心執行的一般活動，以及如何透過 SCVMM 或 Azure (如果它們是基礎結構管理活動) 或透過 TFS 和 Azure DevOps Services (如果是測試或部署活動) 來完成這些活動：
 
-| 步驟 | 使用實驗室中心 | 使用 Build or Release Management |
-|-------|-|-----------------|
+| 步驟 | 使用實驗室中心 | 在建置或發行中 |
+|-------|-----------------|-----------------------|
 | 管理環境範本程式庫。 | 建立實驗室環境。 在虛擬機器上安裝必要軟體。 將環境 Sysprep 和存放為程式庫範本。 | 直接使用 SCVMM 管理主控台來建立及管理虛擬機器範本或服務範本。 當使用 Azure 時，選取其中一個 [Azure 快速入門範本](https://azure.microsoft.com/resources/templates/)。 |
 | 建立實驗室環境。 | 選取並部署程式庫中的環境範本。 提供自訂虛擬機器設定的必要參數。 | 直接使用 SCVMM 管理主控台從範本建立 VM 或服務執行個體。 直接使用 Azure 入口網站建立資源。 或者，建立環境的版本定義。 使用 Azure 工作或 [SCVMM 整合延伸模組](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)的工作，建立新的虛擬機器。 建立此定義的新版本，相當於在實驗室中心建立新的環境。 |
 | 連接到電腦。 | 在環境檢視器中開啟實驗室環境。 | 直接使用 SCVMM 管理主控台連線至虛擬機器。 或者，使用虛擬機器的 IP 位址或 DNS 名稱，開啟遠端桌面工作階段。 |
@@ -68,7 +68,7 @@ MTM 和 Lab Management 依賴 XAML 組建定義來自動化建置、部署和測
 
 網路隔離的實驗室環境是可以安全複製，卻不會造成網路衝突的 SCVMM 虛擬機器群組。 在 MTM 中使用一連串指示即可完成這項作業：使用一組網路介面卡在私人網路中設定虛擬機器，然後用另一組網路介面卡在公用網路中設定虛擬機器。
 
-但是，Azure Test Plans 和 TFS 搭配在 SCVMM 建置和部署工作，可用來管理 SCVMM 環境、佈建隔離的虛擬網路、以及實作建置-部署-測試案例。 例如，您可以使用此工作來：
+但是，Azure Pipelines 和 TFS 搭配 SCVMM 建置和部署工作，可用來管理 SCVMM 環境、佈建隔離的虛擬網路、以及實作建置、部署、測試案例。 例如，您可以使用此工作來：
 
 * 建立、還原和刪除檢查點
 * 使用範本來建立新的虛擬機器

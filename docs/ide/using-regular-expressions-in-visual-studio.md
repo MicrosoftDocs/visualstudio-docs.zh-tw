@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945542"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050296"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -49,7 +49,8 @@ Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-type
 |比對先前運算式中零個或多個項目 (比對的字元越少越好)|*?|`e.*?e` 會比對 "feeder" 中的 "ee"，但不比對 "eede"。|
 |比對先前運算式中一個或多個項目 (比對的字元越少越好)|+?|`e.+?e` 會比對 "enterprise" 中的 "ente" 及 "erprise"，但不比對完整單字 "enterprise"。|
 |將比對字串錨定至行首或字串開頭|^|`^car` 只會比對出現在行首的 "car" 這個字。|
-|將比對字串錨定至行尾|\r?$|`End\r?$` 只會比對出現在行尾的 "end"。|
+|將比對字串錨定至行尾|\r?$|`end\r?$` 只會比對出現在行尾的 "end"。|
+|將比對字串錨定至檔案結尾|$|`end$` 只會比對出現在檔案結尾的 "end"。|
 |比對集合中的任何單一字元|[abc]|`b[abc]` 會比對 "ba"、"bb" 和 "bc"。|
 |比對字元範圍之間的任何字元|[a-f]|`be[n-t]` 會比對 "between" 中的 "bet"、"beneath" 中的 "ben" 和 "beside" 中的 "bes"，但不比對 "below"。|
 |擷取和隱含編號包含在括號內的運算式|()|`([a-z])X\1` 會比對 "aXa" 和 "bXb"，但不比對 "aXb"。 "\1" 表示第一個運算式群組 "[a-z]"。|
@@ -58,8 +59,8 @@ Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-type
 |比對符號之前或之後的運算式。|&#124;|`(sponge\|mud) bath` 會比對 "sponge bath" 和 "mud bath"。|
 |逸出反斜線之後的字元| \\ |`\^` 會比對字元 ^。|
 |指定前置字元或群組的出現次數。|{x}，其中 x 是發生次數。|`x(ab){2}x` 會比對 "xababx"，而 `x(ab){2,3}x` 會比對 "xababx" 和 "xabababx"，但不比對 "xababababx"。|
-|比對 Unicode 字元類別中的文字，其中 "X" 是 Unicode 數字。 如需 Unicode 字元類別的詳細資訊，請參閱 <br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}|`\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。|
-|比對字邊界|`\b` (在字元類別之外 \b 會指定字邊界，在字元類別內則會指定退格鍵)。|`\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。|
+|比對 Unicode 字元類別中的文字。 如需 Unicode 字元類別的詳細資訊，請參閱 <br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。|
+|比對字邊界|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。|
 |比對分行符號 (即歸位字元後面接著新行)。|\r?\n|`End\r?\nBegin` 只在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時比對 "End" 和 "Begin"。|
 |比對任何英數字元|\w|`a\wd` 會比對 "add" 和 "a1d"，但不比對 "a d"。|
 |比對任何空白字元。|(?([^\r\n])\s)|`Public\sInterface` 會比對 "Public Interface" 這個片語。|

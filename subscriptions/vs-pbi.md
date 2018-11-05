@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894556"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219532"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -73,10 +73,10 @@ ms.locfileid: "49894556"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 可用       |  是|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]|
 | Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                            |NA         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  是|
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  [是]|
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA|
 | Visual Studio Enterprise (每月雲端) | Azure                                       | 無法使用                                  |NA|
 
@@ -92,9 +92,24 @@ ms.locfileid: "49894556"
 - 信用卡。  如果您提供信用卡號碼，將不會向您的卡片收費。 
 - 發票。  如果您選取「發票」作為付款類型，則不需要提供信用卡號碼。  您也可以將間隔設定為「年度」。  如此一來，您會收到單一電子郵件，讓您知道已為您準備好發票。  發票金額將會是美金 $0.00 元。  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>問：在生產環境中，可以使用我訂用帳戶中所含的 Power BI Pro 權益嗎？
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>問：在生產環境中，是否可以使用我訂用帳戶授權中所含的 Power BI Pro 權益？
 答：可以。  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>問：當我嘗試啟動 Power BI Pro 時，收到訊息「您已透過工作取得帳戶」。  我仍然可以使用這項權益嗎？
+答：可以。  此訊息指出您要登入的網域已經有您不是系統管理員的使用中 Office 365 租用戶。  若要將 Power BI Pro 新增至租用戶，您必須是該租用戶的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。
+1.  當您看到「您已透過工作取得帳戶」的訊息時，請按一下 [建立新帳戶]。
+
+2.  在下一個畫面上，提供您的連絡資訊，然後按一下 [下一步]。
+
+3.  建立您的使用者識別碼和密碼。  若要利用免費的供應項目，請務必選取 **.onmicrosoft.com** 作為網域。 按一下 [Create my account] (建立我的帳戶)。
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Pro 權益建立專用租用戶使用者識別碼](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  從步驟 6 開始，此處理序的其餘步驟與本文內文中所列步驟完全相同。
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>問：我位在政府機關網域上。  我可以使用這項權益嗎？ 
+答：不會。  Power BI Pro 權益不能新增至政府機關網域上的租用戶。 
 
 ## <a name="support-resources"></a>支援資源
 -  需要使用 Power BI Pro 的說明嗎？
@@ -103,3 +118,6 @@ ms.locfileid: "49894556"
     - 在[支援頁面](https://powerbi.microsoft.com/support/)上瀏覽最常發生的問題、取得社群協助或提交支援票證。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+若要啟用您的 Power BI Pro 權益，請前往 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

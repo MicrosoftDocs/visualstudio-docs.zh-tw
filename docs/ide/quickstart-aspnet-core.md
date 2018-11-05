@@ -2,7 +2,7 @@
 title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,18 +14,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 90b1f8209928922c388325163f37f0b1d7e983bb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 4f074e118d942aee2d56c30efea6854d4a0cc35e
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135591"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244407"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
 在這個 5-10 分鐘的 Visual Studio 使用方式簡介中，您將會使用 ASP.NET 專案範本與 C# 程式設計語言建立簡單的 "Hello World" Web 應用程式。
 
+## <a name="before-you-begin"></a>開始之前
+
+### <a name="install-visual-studio"></a>安裝 Visual Studio
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+
+### <a name="update-visual-studio"></a>更新 Visual Studio 2017
+
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../install/update-visual-studio.md)頁面。
+
+### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
+
+本快速入門包含使用深色佈景主題的螢幕擷取畫面。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](quickstart-personalize-the-ide.md)頁面以了解做法。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -40,7 +52,7 @@ ms.locfileid: "46135591"
    ![建立新的 C# ASP.NET Core Web 應用程式專案](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+   > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 (根據您的顯示設定，您可能必須捲動才能看到它。)
    >
    > ![從 [新增專案] 對話方塊開啟 Visual Studio 安裝程式](../ide/media/open-visual-studio-installer.png)
    >
@@ -50,7 +62,12 @@ ms.locfileid: "46135591"
    >
    > (您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，確認上方的下拉式功能表出現 [ASP.NET Core 2.0]。 接著，選擇 [Web 應用程式]，然後選擇 [確定]。
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從頂端的下拉式功能表中選取 **ASP.NET Core 2.0** 或更新版本。
+
+   > [!NOTE]
+   > 如果您沒有看到 **ASP.NET Core 2.0** 或更新版本，請確定您執行最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../install/update-visual-studio.md)頁面。
+
+1. 接下來，選擇 [Web 應用程式]，然後選擇 [確定]。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/quickstart-aspnet-core20.png)
 
@@ -91,7 +108,7 @@ Visual Studio 隨即開啟您的專案檔。
 1. 按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
    > [!NOTE]
-   > 如果您收到錯誤訊息指出「無法連接到網頁伺服器 'IIS Express'」，請關閉 Visual Studio，然後使用右鍵或操作功能表中的 [以系統管理員身分執行] 選項來開啟它。 接著，再次執行應用程式。
+   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵功能表或操作功能表使用 [以系統管理員身分執行] 選項來開啟 Visual Studio。 接著，再次執行應用程式。
 
 1. 在網頁頂端，選擇 [關於]。
 
@@ -114,4 +131,4 @@ Visual Studio 隨即開啟您的專案檔。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

@@ -1,6 +1,6 @@
 ---
 title: 安裝測試代理程式和測試控制器
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370961"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219025"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
@@ -44,9 +44,9 @@ ms.locfileid: "46370961"
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS、Microsoft Test Manager、測試控制器和測試代理程式的相容版本
 
-您可以根據下表，混合使用不同版本的 TFS、Microsoft Test Manager (MTM)、測試控制器和測試代理程式：
+您可以根據下表，混合使用不同版本的 TFS、Microsoft Test Manager、測試控制器和測試代理程式：
 
-| TFS | MTM 與實驗室中心 | 控制器 | 代理程式 |
+| TFS | 具有實驗室中心的 Microsoft Test Manager | 控制器 | 代理程式 |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017：從 2015 升級或全新安裝 | 2017 | 2017 | 2017 |
 | 2017：從 2015 升級或全新安裝 | 2017 | 2013 Update 5 | 2013 Update 5 |
@@ -55,6 +55,9 @@ ms.locfileid: "46370961"
 | 2015：全新安裝 | 2013 | 2013 | 2013 |
 | 2015：從 2013 升級或全新安裝 | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> TFS 2018 和 Azure DevOps Services 中的 Lab management 案例已淘汰。 如需詳細資訊，請參閱 [TFS 2018 版本資訊](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager)。
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>從 Visual Studio 2013 測試代理程式升級
 
