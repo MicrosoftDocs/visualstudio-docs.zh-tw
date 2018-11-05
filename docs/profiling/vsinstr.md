@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573202"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220543"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具是用來檢測二進位檔。 使用下列語法叫用：  
@@ -47,7 +47,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|從檢測中排除小型函式，其為不會進行任何函式呼叫的精簡函式。 **ExcludeSmallFuncs** 選項的檢測負荷較低，因此可改善檢測速度。<br /><br /> 排除小型函式，也會減少 .*vsp* 的檔案大小和分析所需的時間。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|插入設定檔標記 (用來分隔報表中資料的識別碼)，您可以用來識別 .vsp 報告檔中某個資料範圍的開頭或結尾。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱<br /><br /> `Markid` - 正整數 (長整數)，可用來當做設定檔標記的識別碼。|  
 |**Coverage**|執行涵蓋範圍檢測。 只能和下列選項搭配使用：**Verbose**、**OutputPath**、**Exclude** 及 **Logfile**。|  
-|**Verbose**|**Verbose** 選項是用來檢視有關檢測處理序的詳細資訊。|  
+|**Verbose**|[詳細資訊] 選項是用來檢視有關檢測處理序的詳細資訊。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|隱藏所有或特定的警告。<br /><br /> `Message Number` - 警告編號。 如果省略 `Message Number`，則會隱藏所有警告。<br /><br /> 如需詳細資訊，請參閱 [VSInstr 警告](../profiling/vsinstr-warnings.md)。|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|指定下列 VSInstr 資料收集控制選項的程式碼剖析層級︰<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 指定執行緒層級的資料收集控制函式。 只會針對目前的執行緒啟動或停止程式碼剖析。 不會影響其他執行緒的程式碼剖析狀態。 預設值為 Thread。<br /><br /> **Process** - 指定處理序層級的程式碼剖析資料收集控制函式。 可針對目前處理序中的所有執行緒啟動或停止程式碼剖析。 不會影響其他處理序的程式碼剖析狀態。<br /><br /> **Global** - 指定全域層級 (跨處理序) 的資料收集控制函式。<br /><br /> 如果您沒有指定程式碼剖析層級，就會發生錯誤。|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|限制只對目標函式和該函式呼叫的子函式收集資料。<br /><br /> **Inside** - 在目標函式進入之後，立即插入 StartProfile 函式。 在目標函式中的每個傳回之前，立即插入 StopProfile 函式。<br /><br /> **Outside** - 在每次呼叫目標函式之前，立即插入 StartProfile 函式。 在每次呼叫目標函式之後，立即插入 StopProfile 函式。<br /><br /> `funcname` - 目標函式的名稱。|  

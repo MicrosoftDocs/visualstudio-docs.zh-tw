@@ -367,7 +367,7 @@ items:
       - name: 啟動 UWP 應用程式 的偵錯工作階段
         href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
         items:
-        - name: 在遠端電腦上執行 UWP 應用程式
+        - name: 在遠端電腦上對 UWP 應用程式偵錯
           href: run-windows-store-apps-on-a-remote-machine.md
         - name: 在模擬器中執行 UWP 應用程式
           href: run-windows-store-apps-in-the-simulator.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050374"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751046"

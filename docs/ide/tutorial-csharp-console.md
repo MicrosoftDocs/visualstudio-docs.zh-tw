@@ -2,7 +2,7 @@
 title: 開始在 Visual Studio 中使用 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859506"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244368"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>教學課程：開始在 Visual Studio 中使用 C# 主控台應用程式
 
@@ -33,39 +33,35 @@ ms.locfileid: "47859506"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**** > [新增]**** > [專案]****。
+2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 接著，將檔案命名為 *Calculator*。
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 接著，將檔案命名為 *Calculator*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workgroup-optional"></a>新增工作群組 (選擇性)
 
-如果您看不到 [主控台應用程式]**** 專案範本，則其取得方式是新增 [.NET Core 跨平台開發]**** 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
+如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 選擇 [新增專案]**** 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式]**** 連結。
+1. 選擇 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
    ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](../ide/media/csharp-open-visual-studio-installer-generic-dark.png)
 
-1. Visual Studio 安裝程式隨即啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新專案]**** 對話方塊，然後從頂端功能表列中選擇 [工具]**** > [取得工具和功能]****。
+1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
 
-1. Visual Studio 安裝程式隨即啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
 ## <a name="create-a-c-console-calculator-app"></a>建立「C# 主控台 Calculator」應用程式
 
-1. 開啟 Visual Studio 2017，然後從頂端功能表列中，選擇 [檔案]**** > [新增]**** > [專案]****。
-
-1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 接著，將檔案命名為 *Calculator*。
-
-1. 在程式碼編輯器中輸入或貼上下列程式碼：
+1. 在您建立 **C# 主控台應用程式**之後，將下列程式碼輸入或貼入程式碼編輯器中：
 
     ```csharp
     using System;
@@ -137,7 +133,7 @@ ms.locfileid: "47859506"
 
    ![顯示 C# 主控台 Calculator 的程式碼編輯器](../ide/media/csharp-console-calculator-code.png)
 
-1. 選擇 [Calculator]**** 來執行您的程式 (或按 **F5**)。
+1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](../ide/media/csharp-console-calculator-button.png)
 
@@ -149,7 +145,7 @@ ms.locfileid: "47859506"
 
 1. 按任意鍵來關閉計算機應用程式。
 
-1. 關閉 Visual Studio 中的 [輸出]**** 窗格。
+1. 關閉 Visual Studio 中的 [輸出] 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](../ide/media/csharp-calculator-close-output-pane.png)
 
@@ -159,7 +155,7 @@ ms.locfileid: "47859506"
 
 以下提供常見問題集的快問快答，來強調幾個重要概念。
 
-### <a name="what-is-c"></a>什麼是 C#？
+### <a name="what-is-c"></a>什麼是 C#?
 
 C# 是在 NET Framework 與 .NET Core 上執行的型別安全程式設計語言。 使用 C#，您可以建立 Windows 應用程式、主從式應用程式、資料庫應用程式、XML Web Service、分散式元件等等。
 

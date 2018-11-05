@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126634"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219091"
 ---
 # <a name="packagejson-configuration"></a>package.json 組態
 
@@ -28,7 +28,7 @@ Npm 套件版本控制系統有嚴格的規則。 版本格式如下：
 
     [major].[minor].[patch]
 
-假設您的應用程式中有 5.2.1 版的套件。 5 是主要版本，2 是次要版本，1 是修補程式。
+假設您的應用程式中有 5.2.1 版的套件。 主要版本是 5，次要版本是 2，而修補程式是 1。
 
 * 在主要版本更新中，套件會包含回溯不相容的新功能，亦即重大變更。
 * 在次要版本更新中，新功能已新增到與稍早套件版本回溯相容的套件。

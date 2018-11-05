@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dc0783ad10b01e8dcc7f5f85fa627ec142334597
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234630"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218614"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 

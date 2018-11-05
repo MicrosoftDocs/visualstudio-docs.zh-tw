@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954225"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220257"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。

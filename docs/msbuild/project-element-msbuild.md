@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3acd9add6f19ec258f808fd55a955eac14b6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831733"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050309"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。  
@@ -59,7 +59,7 @@ ms.locfileid: "49831733"
 | 屬性 | 描述 |
 |------------------------| - |
 | `DefaultTargets` | 選擇性屬性。<br /><br /> 如果未指定任何目標，則為一或多個做為組建進入點的預設目標。 請以分號 (;) 來分隔多個目標。<br /><br /> 如果未在 `DefaultTargets` 屬性或 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 命令列中指定任何預設目標，則引擎會在已評估 [Import](../msbuild/import-element-msbuild.md) 項目之後執行專案中的第一個目標。 |
-| `InitialTargets` | 選擇性屬性。<br /><br /> 要在 `DefaultTargets` 屬性中或命令列上指定目標之前執行的一或多個初始目標。 請以分號 (;) 來分隔多個目標。 |
+| `InitialTargets` | 選擇性屬性。<br /><br /> 要在 `DefaultTargets` 屬性中或命令列上指定目標之前執行的一或多個初始目標。 請以分號 (`;`) 來分隔多個目標。 如果多個匯入的檔案定義 `InitialTargets`，則提到的所有目標都會按照進行匯入的順序執行。 |
 | `Sdk` | 選擇性屬性。 <br /><br /> 要用來建立隱含 Import 陳述式 (會將它新增至 .proj 檔案) 的 SDK 名稱和選擇性版本。 如果未指定版本，MSBuild 會嘗試解析預設版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。 |
 | `ToolsVersion` | 選擇性屬性。<br /><br /> MSBuild 用來判斷 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 之值的工具組版本。 |
 | `TreatAsLocalProperty` | 選擇性屬性。<br /><br /> 將不會被視為全域的屬性名稱。 這個屬性可防止特定的命令列屬性覆寫專案檔或目標檔案及所有後續匯入中設定的屬性值。 請以分號 (;) 來分隔多個屬性。<br /><br /> 一般來說，全域屬性值會覆寫專案檔或目標檔案中所設定的屬性值。 如果此屬性列於 `TreatAsLocalProperty` 值中，則全域屬性值不會覆寫該檔案及任何後續匯入中所設定的屬性值。 如需詳細資訊，請參閱[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意︰** 您可以使用 **-property** (或 **-p**) 參數，在命令提示字元中設定全域屬性。 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。 |

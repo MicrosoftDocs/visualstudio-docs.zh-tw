@@ -9,12 +9,12 @@ description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908388"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244459"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365
 
@@ -25,15 +25,24 @@ ms.locfileid: "49908388"
 遵循下列步驟下載並啟用 Office 365：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。  
 2. 按一下 [下載] 索引標籤。
-3. 您會看到一份精選下載的清單。 在 [Office] 清單中，選擇 [Office 專業增強版 2019]
-0. 您會看到兩個清單。  Office 365 的清單是第二個。  確認第一個和最後一個下拉式清單，分別名為 **UNK** 和 **OTH**，這會決定架構和媒體類型。   
-0. 若要安裝 Office 365，您需要產品金鑰。  按一下第二個清單下的 [取得金鑰] 連結。
-0. 飛出視窗會顯示任何已領取的金鑰。  若要取得新的金鑰，請按一下 [領取金鑰]。
+3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
+0. 若要安裝 Office 365，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
+0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Pllus 2019] 清單下的 [領取金鑰]。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 領取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
 0. 按一下 [下載] 按鈕。 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 開始下載](_img/vs-office365/vs-office365-download-button.png)
 0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
 0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
 0. 再按一下 [下一步]。
 0. 按一下 [安裝] 以安裝 Office 應用程式。 
 
@@ -46,11 +55,11 @@ ms.locfileid: "49908388"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售| 可用       |  是          |
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售| 可用       |  [是]          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 無法使用       |  N/A          |
-| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 無法使用                                                            |  N/A          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 無法使用                                             |  N/A          |
-| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                              |  N/A          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                            |  N/A          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 | Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
 
