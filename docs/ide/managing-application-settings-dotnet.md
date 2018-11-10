@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4ea61199159e68f3707b6dac4d3a6c1f5ea7635
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671783"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -100,7 +100,7 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀 (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
+如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀 (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
 
 ## <a name="see-also"></a>另請參閱
 

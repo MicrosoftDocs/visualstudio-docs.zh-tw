@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874666"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671803"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -28,7 +28,7 @@ ms.locfileid: "49874666"
 
 IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 **Tab** 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。
 
-![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱 [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4)。 這部影片使用舊版 Visual Studio，因此有一些功能表命令和其他使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱 [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4)。 這部影片使用舊版 Visual Studio，因此有一些功能表命令和其他使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -48,7 +48,7 @@ IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫
 
     2.  [IntelliSense] 視窗隨即開啟並顯示 [openFileDialog1]。 選擇 **Tab** 鍵加以選取。 (在 Visual Basic 中，它的開頭是大寫，因此您會看到 [OpenFileDialog1]。 確定已選取 [OpenFileDialog1])。
 
-         若要深入了解 `OpenFileDialog`，請參閱 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。
+         若要深入了解 `OpenFileDialog`，請參閱 [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>)。
 
     3.  鍵入句號 (`.`) (許多程式設計人員會說是一個點)。因為您在 **openFileDialog1** 後面鍵入一個點，所以 [IntelliSense] 視窗隨即開啟並填入 **OpenFileDialog** 元件的所有屬性和方法。 當您在 **Windows Forms 設計工具**中選擇該元件時，[屬性] 視窗中也會顯示相同的屬性。 您也可以選擇指示元件執行動作 (例如開啟對話方塊) 的方法。
 
@@ -63,9 +63,9 @@ IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫
 
     4.  開始鍵入 `ShowDialog` (大小寫對 IntelliSense 而言不重要)。 `ShowDialog()` 方法會顯示 [開啟檔案] 對話方塊。 視窗反白顯示 **ShowDialog** 後，請選擇 **Tab** 鍵。 您也可以反白顯示 "ShowDialog" 並選擇 **F1** 鍵以取得其說明。
 
-         若要深入了解 `ShowDialog()` 方法，請參閱 [ShowDialog 方法](http://msdn.microsoft.com/library/c7ykbedk.aspx)。
+         若要深入了解 `ShowDialog()` 方法，請參閱 [ShowDialog 方法](<xref:System.Windows.Forms.Form.ShowDialog%2A>)。
 
-    5.  當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括弧。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。
+    5.  當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括號。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。
 
         > [!NOTE]
         > 方法在任何程式中都很重要，本教學課程已展示幾種使用方法的做法。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法來指示程式執行動作，例如您正在建置名為 `showButton_Click()` 的方法，當使用者選擇按鈕時，就會開啟對話方塊和圖片。
@@ -79,7 +79,7 @@ IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫
 
     8.  鍵入一個點來開啟 DialogResult 值 [IntelliSense] 視窗。 輸入字母 `O`，然後選擇 **Tab** 鍵來插入 **OK**。
 
-         若要深入了解 DialogResult，請參閱 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。
+         若要深入了解 DialogResult，請參閱 [DialogResult](<xref:System.Windows.Forms.DialogResult>)。
 
         > [!NOTE]
         >  第一行程式碼應該就完成。 在 Visual C# 中，程式碼應該如下所示。

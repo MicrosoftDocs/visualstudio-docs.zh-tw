@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865775"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672310"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -69,7 +69,7 @@ ms.locfileid: "49865775"
 
      OR
 
-- 您也可以遵循[如何透過驗證的 Web Proxy 進行連線](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) \(英文\) 部落格文章中的指示，該文章能示範如何新增可讓您使用 Proxy 的程式碼。
+- 您也可以遵循[如何透過驗證的 Web Proxy 進行連線](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) \(英文\) 部落格文章中的指示，該文章能示範如何新增可讓您使用 Proxy 的程式碼。
 
 ## <a name="error-the-underlying-connection-was-closed"></a>錯誤：「基礎連線已關閉」
 

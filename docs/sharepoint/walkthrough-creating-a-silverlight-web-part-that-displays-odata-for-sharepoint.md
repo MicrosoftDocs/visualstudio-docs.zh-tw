@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878177"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296108"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說： 建立顯示 SharePoint 之 OData 的 Silverlight web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是 RESTful 服務 ListData.svc 所實作。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會顯示使用 ListData.svc 公告 SharePoint 清單資訊。 如需詳細資訊，請參閱 < [SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)並[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -71,7 +71,7 @@ ms.locfileid: "49878177"
   
 #### <a name="to-customize-the-silverlight-application"></a>若要自訂 Silverlight 應用程式
   
-1.  在 Silverlight 應用程式中加入 System.Windows.Data 的組件參考。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入或移除參考使用 Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+1.  在 Silverlight 應用程式中加入 System.Windows.Data 的組件參考。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入或移除參考使用 Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 2.  在 **方案總管 中**，開啟捷徑功能表**參考**，然後選擇 **加入服務參考**。  
   

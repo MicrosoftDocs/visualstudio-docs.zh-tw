@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671881"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。
@@ -53,7 +53,7 @@ ms.locfileid: "50143160"
 
 -   **原始檔編輯器**：選取即可在[編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)中檢視原始檔。
 
--   **HTML 編輯器**：選取即可在 [HTML 設計工具](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
+-   **HTML 編輯器**：選取即可在 [HTML 設計工具](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
 
 -   **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。
 
@@ -68,4 +68,4 @@ ms.locfileid: "50143160"
 
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML 設計工具](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML 設計工具](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

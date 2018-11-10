@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673025"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -212,7 +212,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![Visual Studio 中的新例外狀況協助程式對話方塊](../ide/media/vs2017ide-ExceptionHelper.png)
 
-如需詳細資訊，請參閱 [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
+如需詳細資訊，請參閱 [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照集和 IntelliTrace 回溯
 
@@ -264,7 +264,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 &mdash;從 C#、Visual Basic、C++ 或 JavaScript&mdash; 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 Visual Studio 2017 提供各種語言的 UWP app 範本，讓您可以建立適用於所有裝置的單一專案。 當工作完成時，您可以產生應用程式套件，並從 Visual Studio 提交給 Microsoft Store，以將您的應用程式提供給任何 Windows 10 裝置上的客戶。
 
-**15.5 的新功能**：Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支援。 Windows 10 Fall Creators Update 也提供 UWP 開發人員許多增強功能。 以下是其中一些最重大的變更： 
+**15.5 的新功能**：Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支援。 Windows 10 Fall Creators Update 也提供 UWP 開發人員許多增強功能。 以下是其中一些最重大的變更： 
 
 * **.NET Standard 2.0 的支援**<br/>除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
 * **UWP 和 Win32 的最佳選擇**<br/>我們改進了 Windows 10 平台，提供[傳統型橋接器](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)讓 Windows 10 更適用於所有 .NET 開發人員，不論其目前焦點是在 UWP、WPF、Windows Form 或 Xamarin。 透過 Visual Studio 2017 15.5 版中新增的應用程式套件專案類型，您可以像是針對 UWP 專案一樣，針對 WPF 或 Windows Forms 專案建立 Windows 應用程式套件。 封裝應用程式之後，您將享有所有 Windows 10 應用程式部署優點，並可選擇透過 Microsoft Store (適用於消費者應用程式) 或商務用 Microsoft Store 和教育用 Microsoft Store 進行散發。 由於已封裝應用程式可以存取桌面上的完整 UWP API 介面和 Win32 API，因此您現在可以使用 UWP API 和 Windows 10 功能逐漸將 WPF 和 Windows Forms 應用程式現代化。 此外，您可以將 Win32 元件加入 UWP 應用程式，在桌面上顯示所有 Win32 功能。

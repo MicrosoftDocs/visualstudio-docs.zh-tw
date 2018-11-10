@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935064"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294964"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何： 新增和移除功能和項目加入封裝時，使用封裝設計工具
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 功能加入方案中的套件。 最終的部署之前，您可以新增並移除 SharePoint 專案項目及修改 SharePoint 封裝的功能。  
@@ -64,5 +64,5 @@ ms.locfileid: "49935064"
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [如何： 建立套件](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
+ [如何： 建立套件](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
   

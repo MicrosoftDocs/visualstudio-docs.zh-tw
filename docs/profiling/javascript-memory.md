@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911313"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221031"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -355,15 +355,15 @@ if (performance && performance.mark) {
   
 -   尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如:   
   
-    -   使用 [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函式不正確，可能會造成此問題。  
+    -   使用 [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) 函式不正確，可能會造成此問題。  
   
-    -   部分物件可能會提供 `dispose` 方法和建議以供使用。 例如，當您呼叫清單的 `dispose` 方法時，應在 [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) 上呼叫 `createFiltered` ，然後離開頁面。  
+    -   部分物件可能會提供 `dispose` 方法和建議以供使用。 例如，當您呼叫清單的 `dispose` 方法時，應在 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) 上呼叫 `createFiltered` ，然後離開頁面。  
   
     -   您可能需要移除一個或多個事件接聽程式。 如需詳細資訊，請參閱 [View DOM event listeners](../debugger/view-dom-event-listeners.md)。  
   
--   請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
+-   請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](https://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
--   請閱讀[在 UWP App 中管理記憶體](http://msdn.microsoft.com/magazine/jj651575.aspx)。  
+-   請閱讀[在 UWP App 中管理記憶體](https://msdn.microsoft.com/magazine/jj651575.aspx)。  
   
 -   考慮暫時修改程式碼來隔離問題。 例如，您可能要：  
   

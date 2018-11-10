@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9af45262649473f9676bff80b4a238fdd642ac
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 51fcd9ece62afca8c5369c813d5ca8e5314dafe6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844208"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670876"
 ---
 # <a name="output-window"></a>輸出視窗
 
@@ -78,7 +78,7 @@ ms.locfileid: "34844208"
 ## <a name="see-also"></a>另請參閱
 
 - [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [如何：控制輸出視窗](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [如何：控制輸出視窗](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
 - [了解建置組態](../../ide/understanding-build-configurations.md)
 - [類別庫概觀](/dotnet/standard/class-library-overview)

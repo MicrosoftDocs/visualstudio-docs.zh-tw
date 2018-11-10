@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908778"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296186"
 ---
 # <a name="form-support-in-workflows"></a>在工作流程中的表單支援
-  表單的四種可用工作流程中： 關聯、 初始化、 工作及修改。 這些表單類型可以根據 ASPX 表單或 InfoPath 表單。 支援層級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供特定的格式取決於許多因素下, 表所述。 如需工作流程表單類型的詳細資訊，請參閱[工作流程表單概觀](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 網站上。  
+  表單的四種可用工作流程中： 關聯、 初始化、 工作及修改。 這些表單類型可以根據 ASPX 表單或 InfoPath 表單。 支援層級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供特定的格式取決於許多因素下, 表所述。 如需工作流程表單類型的詳細資訊，請參閱[工作流程表單概觀](http://go.microsoft.com/fwlink/?LinkId=185228)。  
   
 ## <a name="xml-refactoring"></a>XML 重構
  當您將加入到 ASPX 關聯或初始表單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流程專案項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]自動重構的工作流程中的 XML *Elements.xml*保留屬性參考到關聯的檔案或同步更新表單的名稱或部署路徑時的初始表單已刪除。 不過，當您使用其他表單類型工作流程工作或修改的形式，例如*Elements.xml*檔案不在重構。  
