@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929799"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220826"
 ---
 # <a name="summary-view"></a>摘要檢視
 [摘要] 檢視顯示分析回合中效能耗費最多資源的函式或物件資訊。 此檢視會提供時間軸圖表，以及根據分析方法效能計量之兩個以上耗費最多資源的函式或物件清單。 此檢視中的資料取決於所使用的分析方法 (取樣、檢測或並行) 以及是否收集 .NET 記憶體配置。  
@@ -52,8 +52,8 @@ ms.locfileid: "49929799"
 | **顯示修改過的呼叫樹狀圖** | 顯示 [呼叫樹狀圖檢視] 中耗費最多資源的執行路徑。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)。 |
 | **顯示熱門程式行** | 不適用於使用檢測方法所收集的分析資料。 在 [程式行檢視] 中，顯示耗費最多資源的原始程式碼行。 如需詳細資訊，請參閱[程式行檢視](../profiling/lines-view.md)。 |
 | **比較報告** | 顯示 [選取要進行比較的分析檔案] 對話方塊，您可以在其中指定要與目前資料檔案比較的另一個分析資料檔案。 如需詳細資訊，請參閱[比較效能資料檔案](../profiling/comparing-performance-data-files.md)。 |
-| **匯出報告資料** | 顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[如何：匯出分析工具報表](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)。 |
-| **儲存分析的報告** | 將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[如何：儲存已分析的分析資料檔案](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)。 |
+| **匯出報告資料** | 顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[如何：匯出分析工具報表](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))。 |
+| **儲存分析的報告** | 將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[如何：儲存已分析的分析資料檔案](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))。 |
 | **篩選報告資料** | 顯示分析報表篩選窗格，您可以在其中指定準則來限制報表檢視中的資料。 如需詳細資訊，請參閱[效能報表檢視篩選](../profiling/performance-report-view-filter.md) |
 | **切換全螢幕** | 切換報表檢視的全螢幕模式。 |
 

@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0ee3f5765c3be3228453ef6c870335bde5e999d8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326017"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295014"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
-  您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具錯誤和警告的疑難排解主題和 Microsoft Developer Network (MSDN) 公共論壇。  
+  您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具錯誤和警告的疑難排解主題和公共論壇。  
   
 ## <a name="troubleshoot-errors-and-issues"></a>疑難排解錯誤和問題
  如需一些常見錯誤及其他問題的協助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，請參閱下列主題：  
@@ -41,7 +41,7 @@ ms.locfileid: "36326017"
 -   [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>其他資源
- 下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具論壇和其他資源可在 MSDN 上取得。  
+ 下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具論壇和其他可用的資源。  
   
 |詞彙|定義|  
 |----------|----------------|  

@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671920"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步驟 11：執行您的程式並嘗試其他功能
 您的程式已完成，可以開始執行。 您可以執行程式並設定 <xref:System.Windows.Forms.PictureBox> 的背景色彩。 若要進一步了解，請試著變更表單的色彩、自訂按鈕和核取方塊並變更表單的屬性，以改善程式。
 
- 若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。
+ 若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。
 
  ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
@@ -53,7 +53,7 @@ ms.locfileid: "34747638"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要深入了解如何使用 Visual Studio 進行程式設計，請參閱[程式設計概念](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)。
+-   若要深入了解如何使用 Visual Studio 進行程式設計，請參閱[程式設計概念](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)。
 
 -   若要深入了解 Visual Basic，請參閱[使用 Visual Basic 開發應用程式](/dotnet/visual-basic/developing-apps/index)。
 

@@ -1,5 +1,5 @@
 ---
-title: 存取被拒 |Microsoft 文件
+title: 存取遭到拒絕 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -19,23 +19,23 @@ ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9c097cd09712d19acf5a0e4999b5c7a47469f958
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632728"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295159"
 ---
 # <a name="access-is-denied"></a>存取遭拒。
 指令碼嘗試從來源而不是目前頁面的主機存取資料。 Internet Explorer 及其他瀏覽器所遵循的相同來源原則，只允許程式碼從具有相同配置、主機和目前頁面之 URL 連接埠的來源存取資料。  
   
- 例如，如果目前的頁面是 https://employees.mycompany.com ，您將無法從下列 URL 存取資料：  
+ 例如，如果目前的頁面是`https://employees.mycompany.com`，您無法從下列 Url 來存取資料：  
   
--   [http://data.contoso.com](http://data.contoso.com) ，因為此 URL 使用 HTTP 而非 HTTPS。  
+-   `http://data.contoso.com`因為它正在使用 HTTP 而不 HTTPS。  
   
--   [https://somedatasource.com](https://somedatasource.com) ，因為這是不同的網域。  
+-   `https://somedatasource.com`因為它是不同的網域。  
   
--   https://employees.mycompany.com:8888 ，因為此 URL 使用不同的連接埠。  
+-   `https://employees.mycompany.com:8888`因為它會使用不同的連接埠。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

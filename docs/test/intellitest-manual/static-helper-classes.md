@@ -11,19 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511063"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000473"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
 IntelliTest 提供一組靜態的協助程式類別，可以在撰寫[參數化單元測試](test-generation.md#parameterized-unit-testing)時使用：
 
-* [PexAssume](#pexassume)：用來在輸入上定義假設，對於篩選不想要的輸入很有幫助
-* [PexAssert](#pexassert)：當您的測試架構不提供時，可使用的簡易判斷提示類別
+* [PexAssume](#pexassume)：用來在輸入上定義假設，對於篩選不想要的輸入很有幫助。
+* [PexAssert](#pexassert)：當您的測試架構不提供時，可使用的簡易判斷提示類別。
 * [PexChoose](#pexchoose)：IntelliTest 管理的其他測試輸入資料流
 * [PexObserve](#pexobserve)：記錄具體值，並選擇性地在產生的程式碼中驗證它們
 
@@ -174,4 +174,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上張貼想法和功能要求。
+在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

@@ -26,19 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671023"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 提供現成可用的強大 JavaScript 編輯體驗。 由 TypeScript 型語言服務提供，Visual Studio 提供更豐富的 IntelliSense、支援最新的 JavaScript 功能，並改善如移至定義、重構及更多的生產力功能。
 
 > [!NOTE]
-> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的 JavaScript 語言服務使用新的語言服務引擎 (稱為 "Salsa")。 本主題包含詳細資料，您也可以閱讀本[部落格文章](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc)。 新的編輯經驗大部分也適用於 Visual Studio Code。 如需詳細資訊，請參閱 [JavaScript in VS Code](https://code.visualstudio.com/docs/languages/javascript) (VS 程式碼中的 JavaScript)。
+> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的 JavaScript 語言服務使用新的語言服務引擎 (稱為 "Salsa")。 本主題包含詳細資料，您也可以閱讀本[部落格文章](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/)。 新的編輯經驗大部分也適用於 Visual Studio Code。 如需詳細資訊，請參閱 [JavaScript in VS Code](https://code.visualstudio.com/docs/languages/javascript) (VS 程式碼中的 JavaScript)。
 
 如需一般 Visual Studio IntelliSense 功能的詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 

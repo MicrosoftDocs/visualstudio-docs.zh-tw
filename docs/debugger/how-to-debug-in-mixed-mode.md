@@ -1,7 +1,7 @@
 ---
 title: 如何： 在混合模式偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182672"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295471"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>如何： 在混合模式偵錯
 下列程序說明如何啟用 managed 和原生程式碼在一起，也就是會在混合模式偵錯的偵錯。 有兩種的混合模式偵錯的案例：  
@@ -58,9 +58,12 @@ ms.locfileid: "49182672"
    
 1. 選取 **偵錯**索引標籤，然後按**啟用機器碼偵錯**。
    
-1. 使用**檔案** > **儲存選取項目**或是**Ctrl + S**以儲存變更。
+1. 關閉 [屬性] 頁面，以儲存變更。
 
    ![啟用機器碼偵錯](../debugger/media/dbg-mixed-mode-from-csharp.png "啟用機器碼偵錯")
   
+>[!NOTE]
+>在大部分的 Visual Studio 2017 版本中，您必須使用*launchSettings.json*檔案而不是專案屬性，以啟用混合模式偵錯的.NET Core 應用程式中的原生程式碼。 如需詳細資訊，請參閱 <<c0> [ 偵錯 managed 和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
+
 ## <a name="see-also"></a>另請參閱  
  [如何：從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)

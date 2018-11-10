@@ -11,12 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667921"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220803"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 
@@ -108,7 +108,7 @@ ms.locfileid: "35667921"
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>適用於 Linux 的 Windows 子系統 (WSL)
 
-1. 請遵循適用於 [Windows 10](https://msdn.microsoft.com/commandline/wsl/install-win10) 或 [Windows Server](https://msdn.microsoft.com/en-us/commandline/wsl/install-on-server) 的 WSL 安裝指示。
+1. 請遵循適用於 [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) 或 [Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl) 的 WSL 安裝指示。
 1. 在 Windows 上啟動 Bash，然後遵循先前[實體 Ubuntu 電腦](#physical-ubuntu-computer)一節中所描述的指示，除了其中一點。 在步驟 3 中，請改為使用命令 `rtvsd` 啟動服務，因為 WSL 目前不支援 systemd/systemctl 介面。
 
 ### <a name="local-or-remote-docker-container-clean-build"></a>本機或遠端 Docker 容器 (全新組建)

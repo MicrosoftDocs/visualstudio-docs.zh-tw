@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073737"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671985"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 
@@ -54,7 +54,7 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>我想要參與開發人員社群
 
-如果您想要與其他開發人員分享您的問題和解答，可以使用 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com)網站 \(英文\)、[MSDN 論壇](http://social.msdn.microsoft.com/Forums/home)或 [StackOverflow](http://stackoverflow.com/) \(英文\)。 您也可以在[開發人員程式碼範例](http://code.msdn.microsoft.com/)網站上檢視其他開發人員的程式碼和分享您自己的範例。
+如果您想要與其他開發人員分享您的問題和解答，可以使用 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com)網站 \(英文\)、[MSDN 論壇](https://social.msdn.microsoft.com/Forums/home)或 [StackOverflow](http://stackoverflow.com/) \(英文\)。 您也可以在 [開發人員程式碼範例](https://code.msdn.microsoft.com/)網站上檢視其他開發人員的程式碼和分享您自己的範例。
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我想要協助改善 Visual Studio 文件
 
@@ -63,5 +63,5 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 ## <a name="see-also"></a>另請參閱
 
 * [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)
-* [開發人員社群](https://developercommunity.visualstudio.com)
-* [開發人員社群資料隱私權](developer-community-privacy.md)
+* [Developer Community](https://developercommunity.visualstudio.com)
+* [Developer Community 資料隱私權](developer-community-privacy.md)

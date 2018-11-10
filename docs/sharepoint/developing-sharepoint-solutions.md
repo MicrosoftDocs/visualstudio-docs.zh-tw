@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889993"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295900"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
   
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。  
+ 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。  
   
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 專案的項目
  SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能會包含一個以上的子檔案，稱為 *「SharePoint 項目檔案」*(SharePoint item file)，例如 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 組態檔、.aspx 表單等等。  
@@ -97,10 +97,10 @@ ms.locfileid: "49889993"
   
 |屬性名稱|描述|  
 |-------------------|-----------------|  
-|建置動作|指定檔案與組建和部署處理序相關聯的方式。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可為下列其中一個值：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *有更新時才複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
+|建置動作|指定檔案與組建和部署處理序相關聯的方式。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可為下列其中一個值：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *有更新時才複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
 |部署位置|檔案在 SharePoint 伺服器中的完整路徑。 這個路徑是由部署根和部署路徑的子屬性構成。|  
 |部署路徑|在 SharePoint 伺服器檔案，例如 Workflow1 檔案的相對路徑\\。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 選取的值*RootFile* for*部署類型*屬性變更*Deployment Root*屬性設\<SharePointRoot >\\，產生的完整路徑\<SharePointRoot > \Workflow1\\。 如需詳細資訊，請參閱 <<c0> [ 封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如， \<SharePointRoot > \Template\Features\\\<FeatureName >\\。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|  

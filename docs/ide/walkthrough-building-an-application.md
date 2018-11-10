@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672778"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -225,5 +225,5 @@ ms.locfileid: "50143186"
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [ASP.NET Web 應用程式專案先行編譯概觀](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [ASP.NET Web 應用程式專案先行編譯概觀](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

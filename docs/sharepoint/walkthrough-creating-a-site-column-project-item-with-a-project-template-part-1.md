@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813204"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296251"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說： 使用專案範本，第 1 部分中建立網站資料行專案項目
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後再將它們關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後會建立專案範本，可用來建立新的專案，其中包含網站資料行專案項目。  
@@ -642,7 +642,7 @@ ms.locfileid: "49813204"
   
 1.  在 **方案總管**，請在**SiteColumnProjectItem**專案中，開啟 source.extension.vsixmanifest 檔案中的資訊清單編輯器。  
   
-     Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在  **Product Name**方塊中，輸入**站台的資料行**。  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813204"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.ProjectTemplate**。  
   
     > [!NOTE]  
-    >  這個值會對應到`ProjectTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)。  
+    >  這個值會對應到`ProjectTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813204"
 10. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 11. 在 **來源**清單中，選擇**目前方案中的專案**。  
   

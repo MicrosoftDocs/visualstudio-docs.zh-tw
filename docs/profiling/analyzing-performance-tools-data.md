@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668485"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744829"
 ---
 # <a name="analyze-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能報表可讓您檢視並分析應用程式效能問題。 本節提供可用來檢查效能資料的效能報告和檢視概觀。  

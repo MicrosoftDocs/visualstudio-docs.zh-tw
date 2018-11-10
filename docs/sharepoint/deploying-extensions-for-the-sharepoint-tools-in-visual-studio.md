@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774912"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295965"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署適用於 Visual Studio 中 SharePoint 工具擴充功能
 
@@ -235,13 +235,13 @@ ms.locfileid: "43774912"
 
 4.  修改 extension.vsixmanifest 檔案：
 
-    -   新增`Microsoft.VisualStudio.MefComponent`項目底下`Assets`項目，然後再將設定要在 VSIX 封裝中實作您的延伸模組的組件的相對路徑的新項目值。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。
+    -   新增`Microsoft.VisualStudio.MefComponent`項目底下`Assets`項目，然後再將設定要在 VSIX 封裝中實作您的延伸模組的組件的相對路徑的新項目值。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-    -   如果您的延伸模組包含可呼叫伺服器物件模型，適用於 SharePoint 的 SharePoint 命令，新增`Microsoft.VisualStudio.Assembly`項目底下`Assets`項目。 新項目的值設成 VSIX 封裝中實作之 SharePoint 命令的組件的相對路徑。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    -   如果您的延伸模組包含可呼叫伺服器物件模型，適用於 SharePoint 的 SharePoint 命令，新增`Microsoft.VisualStudio.Assembly`項目底下`Assets`項目。 新項目的值設成 VSIX 封裝中實作之 SharePoint 命令的組件的相對路徑。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
-    -   如果您的延伸模組包含專案範本或項目範本，將`ProjectTemplate`或是`ItemTemplate`下方的項目`Assets`項目。 新項目的值設為包含在 VSIX 套件中的範本的資料夾的相對路徑。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)並[ItemTemplate 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0)。
+    -   如果您的延伸模組包含專案範本或項目範本，將`ProjectTemplate`或是`ItemTemplate`下方的項目`Assets`項目。 新項目的值設為包含在 VSIX 套件中的範本的資料夾的相對路徑。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))並[ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
-    -   如果您的延伸模組包含專案範本或項目範本的自訂精靈，加入`Assembly`項目底下`Assets`項目。 將新項目的值設定為在 VSIX 封裝中，組件的相對路徑，然後設定`AssemblyName`屬性 （包括版本、 文化特性和公開金鑰語彙基元） 的完整組件名稱。 如需詳細資訊，請參閱 <<c0> [ 相依性項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
+    -   如果您的延伸模組包含專案範本或項目範本的自訂精靈，加入`Assembly`項目底下`Assets`項目。 將新項目的值設定為在 VSIX 封裝中，組件的相對路徑，然後設定`AssemblyName`屬性 （包括版本、 文化特性和公開金鑰語彙基元） 的完整組件名稱。 如需詳細資訊，請參閱 <<c0> [ 相依性項目 （VSX 結構描述）](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
 
 ### <a name="example"></a>範例
 

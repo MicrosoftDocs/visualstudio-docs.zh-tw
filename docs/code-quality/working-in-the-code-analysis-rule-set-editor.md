@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio 中的程式碼分析規則集編輯器
-ms.date: 04/-4/2018
+title: 使用程式碼分析規則集編輯器
+ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b219af4574c8323a3a1d54224182238d8984ce3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203582"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000812"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 

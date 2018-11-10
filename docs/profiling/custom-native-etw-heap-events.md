@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668308"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744986"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 

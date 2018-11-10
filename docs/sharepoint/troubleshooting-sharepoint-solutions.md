@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219779"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296043"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
-  當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
+  當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>沙箱化視覺 web 組件中的語彙基元限制
  沙箱化方案中的視覺 Web 組件無法處理標準語彙基元，例如 SharePoint 執行階段支援的 $SPUrl。 因此無法解析 URL，而且如果您直接在指令碼項目中參考內容，也無法在視覺 Web 組件設計工具的 [設計] 檢視中預覽該內容，如下列範例所示：  
@@ -105,7 +105,7 @@ ms.locfileid: "50219779"
  無。  
   
 ### <a name="resolution"></a>解決方式  
- 因為不正確的值中會發生這個問題**路徑**webtemp 站台定義設定的屬性檔，例如*webtemp_SiteDefinitionProject1.xml*。 在 **路徑**webtemp 檔案，位於屬性**部署位置**，將 1033年變更為適當的地區設定[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日本地區設定將值變更為 1041年。 如需詳細資訊，請參閱 <<c0> [ 由 Microsoft 指派的地區設定識別碼](http://go.microsoft.com/fwlink/?LinkID=165561)MSDN 網站上。  
+ 因為不正確的值中會發生這個問題**路徑**webtemp 站台定義設定的屬性檔，例如*webtemp_SiteDefinitionProject1.xml*。 在 **路徑**webtemp 檔案，位於屬性**部署位置**，將 1033年變更為適當的地區設定[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日本地區設定將值變更為 1041年。 如需詳細資訊，請參閱 <<c0> [ 由 Microsoft 指派的地區設定識別碼](http://go.microsoft.com/fwlink/?LinkID=165561)。  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在乾淨系統上部署工作流程專案時，就會出現錯誤
  如果您在乾淨系統上的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中部署工作流程專案，就會發生此問題。 乾淨系統為具有 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 SharePoint 全新安裝，但是沒有任何已部署工作流程專案的電腦。  

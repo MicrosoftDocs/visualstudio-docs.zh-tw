@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d181891fb36645e4f246aa0c2238c12ea1dc4903
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854282"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296004"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立項目範本和專案範本，為 SharePoint 專案項目
   當您定義自訂的 SharePoint 專案項目類型時，則您可以將它與項目範本或專案範本。 此關聯可讓其他開發人員使用 Visual Studio 中的專案項目。 您也可以建立範本的精靈。
@@ -42,7 +42,7 @@ ms.locfileid: "49854282"
 |必要檔案|描述|
 |-------------------|-----------------|
 |*.Spdata*檔案|此 XML 檔案指定的內容和專案項目的預設行為。 這個檔案必須包含在項目範本。 如需有關的內容 *.spdata*檔，請參閱[SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)。|
-|A *.vstemplate*檔案。|此檔案會提供 Visual Studio 中顯示範本中的所需的資訊**加入新項目** 對話方塊中，並從範本建立專案項目。 這個檔案必須包含在項目範本。 如需詳細資訊，請參閱 < [Visual Studio 範本中繼資料檔案](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961)。|
+|A *.vstemplate*檔案。|此檔案會提供 Visual Studio 中顯示範本中的所需的資訊**加入新項目** 對話方塊中，並從範本建立專案項目。 這個檔案必須包含在項目範本。 如需詳細資訊，請參閱 < [Visual Studio 範本中繼資料檔案](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))。|
 |Visual Studio 延伸模組組件可實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面。|這個組件定義的執行的階段行為的專案項目。 這個組件必須包含在 VSIX 封裝，包含項目範本。 如需詳細資訊，請參閱 <<c0> [ 定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)並[部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。|
 
  下表列出一些最常見的選擇性檔案可以包含在項目範本。 某些類型的專案項目可能需要其他這裡未列出的檔案。
@@ -66,7 +66,7 @@ ms.locfileid: "49854282"
 
 |必要檔案|描述|
 |-------------------|-----------------|
-|A *.vstemplate*檔案|此檔案會提供 Visual Studio 中顯示範本中的所需的資訊**新的專案** 對話方塊中，並從範本建立專案。 如需詳細資訊，請參閱 < [Visual Studio 範本中繼資料檔案](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961)。|
+|A *.vstemplate*檔案|此檔案會提供 Visual Studio 中顯示範本中的所需的資訊**新的專案** 對話方塊中，並從範本建立專案。 如需詳細資訊，請參閱 < [Visual Studio 範本中繼資料檔案](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))。|
 |A *.csproj*或是 *.vbproj*檔案|這是專案檔。 它會定義的內容和專案的組態設定。|
 |*封裝*|此檔案會定義專案的部署套件。 當您使用封裝設計工具自訂專案的方案套件時，Visual Studio 會儲存此檔案中的方案套件的相關資料。<br /><br /> 當您建立自訂的 SharePoint 專案範本時，我們建議您加入只有最小必要的內容中*封裝*檔案，以及您在使用中的 Api 來設定的方案套件<xref:Microsoft.VisualStudio.SharePoint.Packages>在專案範本與相關聯的擴充功能中的命名空間。 如果您這麼做，您的專案範本受到未來變更的結構*封裝*檔案。 如需範例，示範如何建立*封裝*檔案只需要最少內容，請參閱[逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果您想要修改*封裝*直接檔案中，您可以使用之結構描述，以確認內容 *%Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd*.|
 |*Package.Template.xml*|這個檔案提供的基礎方案的資訊清單檔案 (*manifest.xml*) 的 SharePoint 方案套件 (*.wsp*)，從專案中產生。 如果您想要指定某些不是要變更您的專案類型的使用者的行為，您可以將內容到這個檔案。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 方案](http://go.microsoft.com/fwlink/?LinkId=169186)並[解決方案結構描述](http://go.microsoft.com/fwlink/?LinkId=177794)。<br /><br /> 當您建置專案的方案套件時，Visual Studio 會將合併的內容*封裝*並*Package.Template.xml*到解決方案的檔案資訊清單檔案。 如需建置方案套件的詳細資訊，請參閱 <<c0> [ 如何： 使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|

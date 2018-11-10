@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220143"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221044"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>其他資訊  
   
--   請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
+-   請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](https://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
--   讀取有關使用 JavaScript 針對 Windows 建置的 UWP App 的效能提示。 如需詳細資訊，請參閱[使用 JavaScript 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+-   讀取有關使用 JavaScript 針對 Windows 建置的 UWP App 的效能提示。 如需詳細資訊，請參閱[使用 JavaScript 的 UWP App 的效能最佳做法](/previous-versions/windows/apps/hh465194\(v\=win.10\))。  
   
--   如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
+-   如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](/previous-versions/windows/apps/hh781217\(v\=win.10\))。  
   
 ## <a name="see-also"></a>另請參閱  
  [初步認識分析工具](../profiling/profiling-feature-tour.md)
