@@ -18,7 +18,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
 ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51295757"

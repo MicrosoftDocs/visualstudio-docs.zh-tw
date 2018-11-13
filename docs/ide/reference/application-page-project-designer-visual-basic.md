@@ -1,6 +1,6 @@
 ---
-title: Application Page, Project Designer (Visual Basic)
-ms.date: 11/04/2016
+title: VB 專案屬性應用程式頁面
+ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670958"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -36,7 +36,11 @@ ms.locfileid: "38800729"
 
 ### <a name="assembly-name"></a>組件名稱
 
-指定將包含組件資訊清單之輸出檔的名稱。 如果您變更此屬性，也會變更 [輸出名稱] 屬性。 您也可以使用 [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 編譯器參數，從命令提示字元指定輸出檔案的名稱。 如需如何以程式設計方式存取此屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。
+指定將包含組件資訊清單之輸出檔的名稱。 如果您變更此屬性，也會變更 [輸出名稱] 屬性。
+
+您也可以使用 [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 編譯器參數，從命令提示字元指定輸出檔案的名稱。
+
+如需如何以程式設計方式存取此屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。
 
 ### <a name="root-namespace"></a>根命名空間
 
@@ -45,7 +49,7 @@ ms.locfileid: "38800729"
 如果您清除 [根命名空間]，則可以在程式碼中指定專案的命名空間結構。
 
 > [!NOTE]
-> 如果您在 [Namespace 陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 Global 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的＜Namespace 陳述式中的 Global 關鍵字＞。
+> 如果您在[命名空間陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 `Global` 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的＜Namespace 陳述式中的 Global 關鍵字＞。
 
 如需如何在程式碼中建立命名空間的資訊，請參閱 [Namespace 陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)。
 
@@ -66,20 +70,17 @@ ms.locfileid: "38800729"
 
 ### <a name="application-type"></a>應用程式類型
 
-指定要建置的應用程式類型。 針對 Windows 8.x 應用程式，您可以指定 [Windows 市集應用程式]、[類別庫] 或 [WinMD 檔案]。 針對大多數其他應用程式類型，您可以指定 [Windows 應用程式]、[主控台應用程式]、[類別庫]、[Windows 服務] 或 [Web 控制項程式庫]。
+指定要建置的應用程式類型。 值會因專案類型而有所不同。 例如，針對 **Windows Forms 應用程式**專案，您可以指定 [Windows Forms 應用程式]、[類別庫]、[主控台應用程式]、[Windows 服務] 或 [Web 控制項程式庫]。
 
 針對 Web 應用程式專案，您必須指定 [類別庫]。
 
-如果您指定 [WinMD 檔案] 選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]選項，包括 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic)。
-
-> [!NOTE]
-> Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。
-
 如需 [應用程式類型] 屬性的詳細資訊，請參閱 [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)。 如需如何以程式設計方式存取該屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.OutputType%2A>。
 
-### <a name="icon"></a>圖示
+### <a name="auto-generate-binding-redirects"></a>自動產生繫結重新導向
 
-設定想要用來當作程式圖示的 .ico 檔案。 選取 [\<瀏覽...>]，以瀏覽現有圖形。 如需詳細資訊，請參閱 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (或 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
+若應用程式或其元件參考相同組件的多個版本，則繫結重新導向會新增至您的專案。 如果您希望手動定義專案檔中的繫結重新導向，請取消選取 [自動產生繫結重新導向]。 Visual Studio 2017 15.7 版引入此核取方塊。
+
+如需重新導向的詳細資訊，請參閱[重新導向組件版本](/dotnet/framework/configure-apps/redirect-assembly-versions)。
 
 ### <a name="startup-form--startup-object--startup-uri"></a>啟動表單/啟始物件/啟動 URI
 
@@ -92,6 +93,10 @@ ms.locfileid: "38800729"
 如果清除 [啟用應用程式架構]，此清單會成為 [啟始物件]，並顯示具有 `Sub Main` 的表單和類別或模組。
 
 [啟始物件] 定義要在應用程式載入時呼叫的進入點。 通常，這會設定成您應用程式中的主要表單，或應該在應用程式啟動時執行的 `Sub Main` 處理序。 因為類別庫沒有進入點，所以這個屬性的唯一選項是 [(無)]。 如需詳細資訊，請參閱 [/main](/dotnet/visual-basic/reference/command-line-compiler/main)。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。
+
+### <a name="icon"></a>圖示
+
+設定想要用來當作程式圖示的 .ico 檔案。 選取 [\<瀏覽...>]，以瀏覽現有圖形。 如需詳細資訊，請參閱 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (或 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
 
 ### <a name="assembly-information"></a>組件資訊
 
@@ -107,7 +112,7 @@ ms.locfileid: "38800729"
 
 ### <a name="view-windows-settings"></a>檢視 Windows 設定
 
-按一下此按鈕，以產生並開啟 app.manifest 檔案。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後，修改 app.manifest 中的 `<requestedExecutionLevel>` 標記，來設定 UAC 要求執行層級，如下所示：
+按一下此按鈕，以產生並開啟 *app.manifest* 檔案。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後，修改 *app.manifest* 中的 `<requestedExecutionLevel>` 標記來設定 UAC 要求執行層級，如下所示：
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -117,7 +122,10 @@ ClickOnce 使用 `asInvoker` 層級或透過虛擬化模式 (無資訊清單產�
 
 ## <a name="windows-application-framework-properties"></a>Windows 應用程式架構屬性
 
-[Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 後續區段描述 Windows Presentation Foundation (WPF) 應用程式的 [Windows 應用程式架構屬性] 設定。
+[Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。
+
+> [!TIP]
+> 後續區段描述設定於 Windows Presentation Foundation (WPF) 應用程式的 [Windows 應用程式架構屬性] 設定。
 
 ### <a name="enable-xp-visual-styles"></a>啟用 XP 視覺化樣式
 
@@ -153,13 +161,13 @@ ClickOnce 使用 `asInvoker` 層級或透過虛擬化模式 (無資訊清單產�
 
 按一下此按鈕，以顯示您可用來撰寫應用程式架構事件 `Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` 和 `NetworkAvailabilityChanged` 之事件的事件程式碼檔案。 您也可以覆寫特定應用程式架構方法。 例如，您可以覆寫 `OnInitialize` 來變更啟動顯示畫面的顯示行為。
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Windows Presentation Foundation (WPF) 應用程式的 Windows 應用程式架構屬性
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Windows Presentation Foundation (WPF) 應用程式的 Windows 應用程式架構屬性
 
-專案是 Windows Presentation Foundation 應用程式時，[Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 此表格中所列的選項僅適用於 WPF 應用程式或 WPF 瀏覽器應用程式。 它們不適用於 WPF 使用者控制項或自訂控制項程式庫。
+當專案是 Windows Presentation Foundation (WPF) 應用程式時，[Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 此表格中所列的選項僅適用於 WPF 或 WPF 瀏覽器應用程式。 它們不適用於 WPF 使用者控制項或自訂控制項程式庫。
 
 ### <a name="shutdown-mode"></a>關閉模式
 
-此屬性只適用於 Windows Presentation Foundation 應用程式。
+此屬性只適用於 Windows Presentation Foundation (WPF) 應用程式。
 
 選取 [在明確關機時]，來指定應用程式在明確呼叫 <xref:System.Windows.Application.Shutdown%2A> 時結束。
 
@@ -171,10 +179,10 @@ ClickOnce 使用 `asInvoker` 層級或透過虛擬化模式 (無資訊清單產�
 
 ### <a name="edit-xaml"></a>編輯 XAML
 
-按一下此按鈕，以使用 XAML 編輯器開啟並修改應用程式定義檔案 (Application.xaml)。 按一下此按鈕時，會開啟應用程式定義節點上的 Application.xaml。 您可能必須編輯此檔案，才能執行特定工作 (例如定義資源)。 如果應用程式定義檔案不存在，則 [專案設計工具] 會建立一個應用程式定義檔案。
+此按鈕會在 XAML 編輯器中開啟應用程式定義檔案 (Application.xaml)。 按一下此按鈕時，會開啟應用程式定義節點上的 *Application.xaml*。 您可能必須編輯此檔案，才能執行特定工作 (例如定義資源)。 如果應用程式定義檔案不存在，則 [專案設計工具] 會建立一個應用程式定義檔案。
 
 ### <a name="view-application-events"></a>檢視應用程式事件
 
-按一下此按鈕，以在程式碼編輯器中顯示 `Application` 部分類別檔案 (Application.xaml.vb)。 如果檔案不存在，則 [專案設計工具] 會建立一個具有適當類別名稱和命名空間的檔案。
+此按鈕會在程式碼編輯器中開啟 `Application` 類別檔案 (*Application.xaml.vb*)。 如果檔案不存在，則 [專案設計工具] 會建立一個具有適當類別名稱和命名空間的檔案。
 
 特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。

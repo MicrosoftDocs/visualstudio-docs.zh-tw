@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4fdf7cb791339350ff9644d0f727e3adc299add6
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297613"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220901"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -76,10 +76,11 @@ RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual
 
 離線安裝適用於未連線到網際網路的電腦︰
 
-1. 遵循指示來建立 Visual Studio 版本的離線安裝程式：
+1. 前往[建立 Visual Studio 2017 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)。
 
-    - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
-    - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
+1. 如果您使用 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
+
+1. 請遵循網站中針對建立離線安裝的指示。
 
 1. 如果是 Visual Studio 2015，請從 [https://aka.ms/rtvs-current-zip ](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip ](https://aka.ms/rtvs-remote-zip)下載離線 RTVS 安裝程式。
 

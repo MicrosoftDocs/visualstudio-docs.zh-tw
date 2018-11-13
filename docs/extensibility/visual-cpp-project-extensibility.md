@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850804"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349672"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -434,7 +434,7 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 ### <a name="project-property-pages"></a>專案屬性頁
 
-一般設計資訊，請參閱[平台擴充性-第 1 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx)並[平台擴充性-第 2 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx)。
+一般設計資訊，請參閱[平台擴充性-第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)並[平台擴充性-第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
 
 簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/ide/property-page-xml-files)。
 

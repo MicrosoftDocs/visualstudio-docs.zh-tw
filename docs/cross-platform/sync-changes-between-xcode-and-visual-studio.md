@@ -32,7 +32,7 @@ ms.locfileid: "39379298"
 ### <a name="open-in-xcode"></a>在 XCode 中開啟
  若要從 Visual Studio 在 XCode 中開啟專案，在 [遠端電腦] 子功能表上，選擇 [在 XCode 中開啟]，以便在配對的遠端電腦上開啟選取的專案。 vcremote 伺服器可用來在您的 Mac 上開啟 XCode，並瀏覽至您 Mac 上所建立且包含專案複本的暫存目錄。 Visual Studio 會出現一個對話方塊，顯示用於專案的暫存目錄。 遠端電腦上所採取的動作也會顯示在 Visual Studio 的 [輸出] 視窗中。 若要查看它們，您可能需要在 [輸出] 視窗頂端的 [顯示輸出來源] 下拉式清單中，選取 [Visual C++ 遠端電腦]。
 
- ![[輸出] 視窗會顯示遠端電腦的動作。] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![[輸出] 視窗會顯示遠端電腦的動作。](../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
 
  在 Mac 上，您可以使用所有的 XCode 工具來編輯您的程式碼和資源、分鏡腳本和動作。 在 Visual Studio 中，您的 iOS 應用程式專案會加上「已在 XCode 中開啟」的註解，以指出可能會在遠端電腦上進行變更。 當您完成編輯之後，可以使用 [從遠端提取] 或 [從遠端累加提取] 命令，將變更複製回您的 Visual Studio 專案。
 

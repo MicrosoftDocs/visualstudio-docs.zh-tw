@@ -1,7 +1,7 @@
 ---
 title: 編輯 R 程式碼
 description: Visual Studio 提供針對 R 量身打造的編輯體驗，同時保留所有功能和使用延伸模組的能力。
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235260"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220875"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
 
-Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體驗，同時保留所有功能和使用延伸模組的能力。 (例如，如果您偏好 VIM 按鍵繫結，您可以從 Visual Studio 組件庫安裝免費的 [VsVim 延伸模組](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)。)
+Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體驗，同時保留所有功能和使用延伸模組的能力。 (例如，如果您偏好 VIM 按鍵繫結，您可以從 Visual Studio Marketplace 安裝免費的 [VsVim 延伸模組](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)。)
 
 除了本文中的功能之外，另請參閱 [IntelliSense](r-intellisense.md)、[Linting](linting-r-code.md)、[程式碼片段](code-snippets-for-r.md)，和[R Markdown](rmarkdown-with-r-in-visual-studio.md)。
 

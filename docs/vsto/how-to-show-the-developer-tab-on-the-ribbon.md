@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780425"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349620"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何： 在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤上的 Office 應用程式功能區中，您必須將它設定為顯示該索引標籤上，因為它不會出現預設。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。  
   
 > [!NOTE]  
->  本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[如何： 在功能區顯示開發人員索引標籤](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx)。  
+>  本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[如何： 在功能區顯示開發人員索引標籤](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+)。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   

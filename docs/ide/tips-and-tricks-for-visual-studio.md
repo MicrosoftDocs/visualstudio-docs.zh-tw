@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 鍵盤快速鍵
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321277"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220849"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的鍵盤快速鍵
 
@@ -73,6 +73,11 @@ ms.locfileid: "44321277"
 
 |命令|快速鍵|適用的版本|
 |-|-|-|
+|移至全部|**Ctrl**+**T**|
+|前往最近使用的檔案|**Ctrl**+**T**,**R**|
+|多插入號多個插入點|**Ctrl**+**Alt**+**click**|
+|多插入號新增比對選取項目|**Shift**+**Alt**+**Ins**|
+|格式化文件|**Ctrl**+**K**,**D**|Visual Studio 2017 15.8 版|
 |IntelliSense 建議模式|**Ctrl**+**Alt**+**空格鍵** (切換)||
 |強制顯示 IntelliSense|**Ctrl**+**J**||
 |快速動作|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ ms.locfileid: "44321277"
 |在多個 [查看定義] 視窗之間巡覽|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**||
 |在多個查看結果之間巡覽|**F8** 和 **Shift**+**F8**||
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|**Shift**+**Esc**||
+|移至封入區塊|**Ctrl**+**Alt**+**UpArrow**|
+|前往上一個/下一個問題|**Alt**+**PgUp**/**PgDn**|
+|關聯式導覽功能表|**Alt**+**`**|
 
 ## <a name="toolbars"></a>工具列
 
@@ -128,4 +136,4 @@ ms.locfileid: "44321277"
 
 - [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
 - [鍵盤快速鍵 (Azure DevOps Services 和 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio 秘訣和訣竅部落格](https://blogs.msdn.com/b/zainnab)
