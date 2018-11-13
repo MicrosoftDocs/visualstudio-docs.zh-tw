@@ -73,9 +73,9 @@ ms.locfileid: "39512313"
   
 -   輸入的欄位都應該調整大小以符合內容，不以符合在其中，它們會顯示，視窗的寬度，也不能以任意符合長的欄位，例如路徑的長度。 長度可能是向使用者表示的欄位中允許多少個字元的限制。  
   
-     ![不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl")<br />不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。
+     ![不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl")<br />不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。
   
-     ![更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。
+     ![更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 下拉式方塊和下拉式清單  
 典型的互動行為，請遵循[下拉式清單和下拉式方塊的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-drop)。  
@@ -89,9 +89,9 @@ ms.locfileid: "39512313"
 #### <a name="layout"></a>配置  
 下拉式方塊和下拉式清單應該調整大小以符合內容，不以符合在其中，它們會顯示，視窗的寬度，也不能以任意符合長的欄位，例如路徑的長度。  
   
-![不正確： 下拉式清單寬度是將顯示的內容太長。] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707年 03_IncorrectDropDownLayout")<br />不正確： 下拉式清單寬度是將顯示的內容太長。
+![不正確： 下拉式清單寬度是將顯示的內容太長。](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707年 03_IncorrectDropDownLayout")<br />不正確： 下拉式清單寬度是將顯示的內容太長。
   
-![正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。 
+![正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。 
   
 ###  <a name="BKMK_CheckBoxes"></a> 核取方塊  
 典型的互動行為，請遵循[核取方塊的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-check-boxes)。  
@@ -108,9 +108,9 @@ ms.locfileid: "39512313"
   
 -   對齊文字的第一行基準線的核取方塊。  
   
-     ![不正確： 核取方塊會置中的文字。] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign")<br />不正確： 核取方塊會置中的文字。
+     ![不正確： 核取方塊會置中的文字。](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign")<br />不正確： 核取方塊會置中的文字。
   
-     ![正確： 核取方塊對齊文字的第一行。] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正確： 核取方塊對齊文字的第一行。
+     ![正確： 核取方塊對齊文字的第一行。](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正確： 核取方塊對齊文字的第一行。
   
 ###  <a name="BKMK_RadioButtons"></a> 選項按鈕  
 典型的互動行為，請遵循[選項按鈕的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-radio-buttons)。  
@@ -346,9 +346,9 @@ Windows 和 Visual Studio 所使用的展開器設計應該符合樹狀檢視控
 #### <a name="selection"></a>選取  
 在樹狀檢視中選取節點時，反白顯示應該展開成完整的樹狀檢視控制項的寬度。 這有助於使用者清楚地識別他們選取了哪一個項目。 選取範圍色彩應反映出目前的 Visual Studio 佈景主題。  
   
-![正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。
+![正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。
   
-![不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。
+![不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。
   
 #### <a name="icons"></a>圖示  
 圖示只有他們協助以視覺化方式識別項目之間的差異的情況下，只應該在樹狀檢視控制項中使用。 一般情況下，圖示應該只能用於異質性清單圖示，執行區分項目類型的資訊。 同質的清單中使用的圖示通常視為非搜尋，應該予以避免。 在此情況下 （父系） 中的 [群組] 圖示可傳達其內的項目的類型。 此規則的例外狀況是如果圖示是動態的而用來指示狀態。  
@@ -356,14 +356,14 @@ Windows 和 Visual Studio 所使用的展開器設計應該符合樹狀檢視控
 #### <a name="scroll-bars"></a>捲軸  
 如果內容符合樹狀檢視控制項一律應隱藏捲軸。 它是可接受的捲軸在可捲動視窗中會隱藏，或具有半透明和時包含樹狀檢視中的視窗有焦點，顯示或樹狀結構的滑鼠停留在檢視本身。  
   
-![因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。
+![因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。
   
 ###  <a name="BKMK_TreeViewInteractions"></a> 樹狀結構檢視的互動  
   
 #### <a name="context-menus"></a>操作功能表  
 在樹狀檢視節點可能會顯示內容功能表中的子功能表選項。 通常，這就會發生當使用者以滑鼠右鍵按一下項目，或在與所選取項目的 Windows 鍵盤上按下功能表鍵。 請務必確定節點取得焦點，然後選取。 這有助於使用者識別的子功能表屬於哪一個項目。  
   
-![已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。
+![已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。
   
 #### <a name="keyboard"></a>鍵盤  
 樹狀檢視中應提供選取項目 」 和 「 展開/摺疊節點使用鍵盤的能力。 這可確保瀏覽符合我們的協助工具需求。  

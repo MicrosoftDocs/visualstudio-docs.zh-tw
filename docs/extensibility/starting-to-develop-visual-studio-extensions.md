@@ -14,21 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849537"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349659"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
+
 如果您從未撰寫過 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**此頁面是否有幫助？** 螢幕的底部)，要求提供您想要。
 
+> [!NOTE]
+> 這篇文章適用於在 Windows 上的 Visual Studio。 Visual Studio for Mac，請參閱 <<c0> [ 擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)。
+
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>我需要哪些軟體開發的 Visual Studio 延伸模組？
- 必須先安裝 Visual Studio SDK 除了 Visual Studio，以便開發 Visual Studio 擴充功能。 您可以安裝 Visual Studio SDK，一般的安裝程序，或您可以在稍後安裝。 如需有關如何安裝 Visual Studio SDK 的詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+
+必須先安裝 Visual Studio SDK 除了 Visual Studio，以便開發 Visual Studio 擴充功能。 您可以安裝 Visual Studio SDK，一般的安裝程序，或您可以在稍後安裝。 如需有關如何安裝 Visual Studio SDK 的詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>使用 Visual Studio 擴充功能可以做的事情種類？
- 為整個天際限制難想像不同的 Visual Studio 擴充功能。 當然，大部分的擴充功能和撰寫程式碼，但，沒有這種情況。 以下是一些範例，您可以建置的延伸模組的類型：
+
+為整個天際限制難想像不同的 Visual Studio 擴充功能。 當然，大部分的擴充功能和撰寫程式碼，但，沒有這種情況。 以下是一些範例，您可以建置的延伸模組的類型：
 
 - 不隨附在 Visual Studio 中，語法著色、 IntelliSense 和編譯器和偵錯支援的語言的支援
 
@@ -36,12 +42,13 @@ ms.locfileid: "49849537"
 
 - 定義域專屬設計工具，像是資料設計] 或 [雲端支援的案例
 
-  如需擴充功能的範例，請參閱[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 許多擴充功能已開啟，並 Marketplace 包含連結至其的 GitHub 存放庫。
+如需擴充功能的範例，請參閱[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 許多擴充功能已開啟，並 Marketplace 包含連結至其的 GitHub 存放庫。
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>可以擴充 Visual Studio 功能？
- 理論上，您可以擴充 Visual Studio 的任何一部分： 功能表、 工具列、 指令、 windows、 方案、 專案、 編輯器和等等。
 
- 在實務上，我們發現大多數人想要擴充的功能是命令、 功能表和工具列、 windows、 IntelliSense 和專案。 以下是相關章節的連結：
+理論上，您可以擴充 Visual Studio 的任何一部分： 功能表、 工具列、 指令、 windows、 方案、 專案、 編輯器和等等。
+
+在實務上，我們發現大多數人想要擴充的功能是命令、 功能表和工具列、 windows、 IntelliSense 和專案。 以下是相關章節的連結：
 
 -   [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)： 將您自己的項目新增至 Visual Studio 功能表和工具列。 您可以使用它們來啟動 Visual Studio 的新功能或您自己的外部協助應用程式。 您也可以提供自訂快速鍵的功能表項目。
 
@@ -88,3 +95,7 @@ ms.locfileid: "49849537"
  您可以在另一部電腦上安裝擴充功能，或將它傳送給您的朋友為.vsix 檔案，按兩下安裝。 您可以深入了解在 VSIX 封裝[傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。
 
  您也可以發佈您的延伸模組，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 封裝至 Marketplace 延伸模組的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需有關您要如何在 Marketplace 上發佈的詳細資訊，請參閱 <<c0> [ 產品和 Visual Studio 擴充功能](/azure/devops/extend/overview?view=vsts)。
+
+## <a name="see-also"></a>另請參閱
+
+- [擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)

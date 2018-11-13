@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826527"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348671"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。  
@@ -44,7 +44,7 @@ ms.locfileid: "49826527"
   
 3. 請檢查您的 VSPackage 登錄項目。  
   
-    如需詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)並[管理 Vspackage](../extensibility/managing-vspackages.md)。  
+    如需詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](registering-and-unregistering-vspackages.md)並[管理 Vspackage](../extensibility/managing-vspackages.md)。  
   
 4. 開啟**輸出**視窗中的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，無法載入 VSPackage。 若要載入 VSPackage 的失敗原因的相關資訊可能會顯示該視窗中。  
   

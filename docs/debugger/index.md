@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 68dfbdab841e425926268e40345d0370e4aeee87
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: f64c2748688f06e5f0f7035b1a98bc93d7a6a61c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542360"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348110"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
@@ -238,6 +238,19 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardText">
                         <h3>Spy++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/mac/debugging">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>偵錯 (Visual Studio for Mac)</h3>
                     </div>
                 </div>
             </div>

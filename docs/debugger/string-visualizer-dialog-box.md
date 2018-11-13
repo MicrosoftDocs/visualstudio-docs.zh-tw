@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274309"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349084"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字串視覺化檢視中檢視字串
 
@@ -43,9 +43,9 @@ ms.locfileid: "49274309"
 
 ## <a name="view-string-visualizer-data"></a>檢視字串視覺化檢視資料
 
-在字串視覺化檢視視窗中，**運算式**欄位會顯示變數或運算式，您要將滑鼠停留，而**值**欄位顯示的字串值。 
+在字串視覺化檢視視窗中，**運算式**欄位會顯示變數或運算式，您要將滑鼠停留，而**值**欄位顯示的字串值。
 
-空白**值**表示所選的視覺化檢視無法辨識字串。 例如， **XML 視覺化檢視**會顯示空白**值**沒有的 XML 標記的文字字串或 JSON 字串。 
+空白**值**表示所選的視覺化檢視無法辨識字串。 例如， **XML 視覺化檢視**會顯示空白**值**沒有的 XML 標記的文字字串或 JSON 字串。
 
 若要檢視所選的視覺化檢視無法辨識的字串，請選擇**文字視覺化檢視**。 **文字視覺化檢視**顯示純文字。
 
@@ -67,5 +67,7 @@ ms.locfileid: "49274309"
 
 ![HTML 字串視覺化檢視](../debugger/media/dbg-string-visualizers-html.png "HTML 字串視覺化檢視")
 
-## <a name="see-also"></a>另請參閱  
- [建立自訂視覺化檢視 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>另請參閱
+
+- [建立自訂視覺化檢視 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)
+- [在 Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)

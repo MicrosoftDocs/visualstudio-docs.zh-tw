@@ -7,19 +7,19 @@ ms.technology:
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
-- tool windows, displaying project propeties
+- tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d254ebc5d1dad42527ec2ef3b6acee242976207
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b285c3a41a2d022358378a7e5e16403b83e8172b
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876434"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561604"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 本逐步解說示範如何在工具視窗中顯示專案內容。  

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850232"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349487"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 
@@ -73,7 +73,7 @@ ms.locfileid: "49850232"
    
    - 任何本機符號快取資料夾中。  
   
-   - 如果選取，請指定網路、 網際網路或本機符號伺服器和位置，例如 Microsoft 符號伺服器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以從實作符號伺服器下載偵錯符號檔`symsrv`通訊協定。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)而[的 Windows 偵錯工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx)是兩項工具，可以使用符號伺服器。 
+   - 如果選取，請指定網路、 網際網路或本機符號伺服器和位置，例如 Microsoft 符號伺服器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以從實作符號伺服器下載偵錯符號檔`symsrv`通訊協定。 [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)而[的 Windows 偵錯工具](/windows-hardware/drivers/debugger/index)是兩項工具，可以使用符號伺服器。
       
      您可以使用的符號伺服器包括：  
       

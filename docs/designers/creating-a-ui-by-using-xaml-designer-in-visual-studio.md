@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中使用 XAML 設計工具建立 UI
-ms.date: 07/17/2017
+title: 使用 XAML 設計工具建立 UI
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903253"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220992"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 
 Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的 Windows 和 Web 應用程式。 您可以從 [工具箱]  拖曳控制項並在 [屬性]  視窗中設定屬性，藉此建立應用程式的使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
 
@@ -108,6 +108,9 @@ XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯
 
 ## <a name="device-window"></a>[裝置] 視窗
 
+> [!NOTE]
+> 如果 UWP 應用程式的目標平台版本 (`TargetPlatformVersion`) 是 10.0.16299.0 或更高版本，則無法使用 [裝置]視窗。
+
 XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計] 功能表存取 [裝置] 視窗。 看起來如下：
 
 ![[裝置] 視窗](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ XAML 設計工具中的 [文件大綱] 視窗可協助您執行下列工作：
 
 ![屬性視窗](../designers/media/xaml_editor_prop_window.png)
 
-[屬性] 視窗的頂端有各種選項。 您可以使用 [名稱]  方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據] 清單中的 [分類] 、[名稱]  或 [來源]  。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件]  按鈕。 若要搜尋屬性，請在 [搜尋屬性]  方塊中開始輸入屬性的名稱。 在您鍵入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱[快速入門：新增控制項和處理事件](http://go.microsoft.com/fwlink/?LinkID=247983)
+[屬性] 視窗的頂端有各種選項。 您可以使用 [名稱]  方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據] 清單中的 [分類] 、[名稱]  或 [來源]  。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件]  按鈕。 若要搜尋屬性，請在 [搜尋屬性]  方塊中開始輸入屬性的名稱。 在您鍵入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱[控制項和模式簡介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 

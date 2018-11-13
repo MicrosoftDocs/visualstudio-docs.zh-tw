@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d448b9e8da383959665469983567ad94ef628192
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dea4acc347094657bdb916a7d5be386dcd54f8ad
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858832"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349552"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是一系列 Api，您可以參考 Visual Studio 中的單一項目。 **參考管理員**對話方塊會列出所有與專案相關的 Sdk。 當您將 SDK 加入專案時，就有一個 Api 可在 Visual Studio 中。  
@@ -150,7 +150,7 @@ SupportedArchitectures = "x86;x64;ARM"
 SupportsMultipleVersions = "Error"  
 CopyRedistToSubDirectory = "."  
 DependsOn = "SDKB, version=2.0"  
-MoreInfo = "http://msdn.microsoft.com/MySDK">  
+MoreInfo = "https://msdn.microsoft.com/MySDK">  
 <File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
 <Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
 <Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  
