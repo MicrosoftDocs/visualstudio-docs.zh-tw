@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876746"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607766"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 本逐步解說會建立簡單的工具/選項頁面用以檢查和設定屬性的屬性方格。  
@@ -110,7 +110,7 @@ ms.locfileid: "49876746"
   
 2.  新增下列 using 陳述式。  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -231,7 +231,7 @@ ms.locfileid: "49876746"
   
 1.  在封裝的程式碼檔案中，新增名為的公用屬性**OptionInteger**要**MyToolsOptionsPackage**類別。  
   
-    ```  
+    ```csharp  
     public int OptionInteger  
     {  
         get  

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380713"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295614"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -24,13 +24,13 @@ ms.locfileid: "39380713"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>哪些功能是所有網頁瀏覽器都支援的？
 
--   [加入用於控制功能的自訂程式碼](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) (例如屬性、搜尋和播放等候程式等功能)。
+-   [加入用於控制功能的自訂程式碼](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) (例如屬性、搜尋和播放等候程式等功能)。
 
 -   快顯和對話方塊
 
--   [執行不含傳回型別的基本 JavaScript](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [執行不含傳回型別的基本 JavaScript](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   搜尋彈性 (使用智慧比對) 和 [performance improvements](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx) (效能改進)
+-   搜尋彈性 (使用智慧比對) 和 [performance improvements](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/) (效能改進)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>為什麼應該跨多種 Web 瀏覽器類型使用自動程式化 UI 測試?
 

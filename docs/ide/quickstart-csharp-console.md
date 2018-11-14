@@ -33,17 +33,17 @@ ms.locfileid: "47443411"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**** > [新增]**** > [專案]****。
+2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將專案命名為 *HelloWorld*。
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *HelloWorld*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     如果您沒有看到 [主控台應用程式 (.NET Core)]**** 專案範本，請在 [新增專案]**** 對話方塊的左窗格中，選擇 [開啟 Visual Studio 安裝程式]**** 連結。
+     如果您沒有看到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，選擇 [開啟 Visual Studio 安裝程式] 連結。
 
    ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
-     Visual Studio 安裝程式隨即啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
+     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
      ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "47443411"
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 選擇工具列上的 [HelloWorld]**** 按鈕以在偵錯模式中執行應用程式。 (或者，您可以按下 **F5**。)
+1. 選擇工具列上的 [HelloWorld] 按鈕以在偵錯模式中執行應用程式。 (或者，您可以按下 **F5**。)
 
    ![選擇 [Hello World] 按鈕以從工具列執行應用程式](../ide/media/csharp-console-hello-world-button.png)
 
@@ -87,7 +87,7 @@ ms.locfileid: "47443411"
 
 1. 按下 **ENTER** 以關閉主控台視窗。
 
-1. 關閉 Visual Studio 中的 [輸出]**** 窗格。
+1. 關閉 Visual Studio 中的 [輸出] 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](../ide/media/csharp-hello-world-close-output-pane.png)
 

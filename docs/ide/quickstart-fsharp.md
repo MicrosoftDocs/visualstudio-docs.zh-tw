@@ -40,7 +40,7 @@ ms.locfileid: "43224778"
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
+4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定] 。
 
 ## <a name="explore-the-ide"></a>探索 IDE
 

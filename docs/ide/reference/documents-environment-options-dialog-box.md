@@ -34,10 +34,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 81ae8fd7cf7acb27fd528c306c0d6a57955c6fe8
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "50143381"
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件

@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ec63f231698bfa4c5a1360d21908aa2a4e2649e
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826397"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607454"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
@@ -64,7 +64,7 @@ ms.locfileid: "49826397"
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
         <Description>A simple web template</Description>
