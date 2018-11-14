@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324973"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348704"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
@@ -30,7 +30,7 @@ Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Win
 
 如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
-Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
+Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md#the-python-environments-window) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
 | 解譯器 | 描述 |
 | --- | --- |

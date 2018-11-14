@@ -1,7 +1,7 @@
 ---
 title: 適用於 Python 的 Django Web 專案範本
 description: 使用 Django 架構以 Python 所撰寫 Web 應用程式 Visual Studio 範本的概觀。
-ms.date: 07/03/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100961"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607428"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 

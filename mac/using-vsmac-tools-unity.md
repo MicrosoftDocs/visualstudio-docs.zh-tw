@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898820"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348926"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -111,4 +111,4 @@ Unity 專案可以使用 Visual Studio for Mac 進行偵錯。
 
    ![在 Visual Studio 中按一下 [停止]](media/using-vsmac-tools-unity-image7.png)
 
-若要深入了解 Visual Studio for Mac 中的偵錯，請參閱 [Using the debugger](https://docs.microsoft.com/visualstudio/mac/debugging) (使用偵錯工具)。
+若要深入了解 Visual Studio for Mac 中的偵錯，請參閱 [Using the debugger](debugging.md) (使用偵錯工具)。

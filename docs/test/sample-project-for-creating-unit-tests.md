@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379770"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293443"
 ---
 # <a name="sample-code-for-testing"></a>用於測試的範例程式碼
 
@@ -27,7 +27,7 @@ ms.locfileid: "39379770"
 下列逐步解說中會使用此程式碼：
 
 - [針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。
-- [使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 *MSTest.exe* 命令列公用程式來執行測試及檢視結果。
+- [使用命令列測試公用程式](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 *MSTest.exe* 命令列公用程式來執行測試及檢視結果。
 
 ## <a name="sample-code"></a>範例程式碼
 
@@ -135,4 +135,4 @@ namespace BankAccountNS
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

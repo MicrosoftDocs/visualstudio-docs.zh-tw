@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a986675a2fd239918c43fd2350713bfabee4f046
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000623"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295887"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -142,7 +142,7 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>進一步閱讀
 
-* [它如何運作？](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [它如何運作？](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 

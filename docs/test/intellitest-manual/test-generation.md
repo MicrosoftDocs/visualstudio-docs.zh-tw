@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a634a4f694c6d93a42440bfa80169d5942a3cdbe
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000639"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295861"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -239,8 +239,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>進一步閱讀
 
-* [程式碼繫結測試](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [一項掌控全場的測試](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [程式碼繫結測試](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [一項掌控全場的測試](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 

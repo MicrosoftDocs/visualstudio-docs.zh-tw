@@ -1,7 +1,7 @@
 ---
 title: 如何定義 Python 專案的自訂功能表命令
 description: 示範如何在 Visual Studio 中編輯專案及 .targets 檔案，以將自訂命令新增至 Python 專案操作功能表。 命令可叫用可執行程式、指令碼、模組、內嵌程式碼片段及 PIP。
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008319"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607844"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -135,7 +135,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 | 屬性 | 必要 | 描述 |
 | --- | --- | --- |
 | 名稱 | [是] | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
-| ThisAddIn | [是] | [Python] 子功能表上顯示的 UI 顯示名稱。 |
+| 標籤 | [是] | [Python] 子功能表上顯示的 UI 顯示名稱。 |
 | Returns | [是] | 必須包含可將目標識別為命令的 `@(Commands)`。 |
 
 ### <a name="createpythoncommanditem-attributes"></a>CreatePythonCommandItem 屬性
