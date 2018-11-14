@@ -2,7 +2,11 @@ items:
 - name: 偵錯工具文件
   href: index.md
 - name: 總覽
-  href: debugger-overview.md
+  items:
+  - name: 什麼是偵錯？
+    href: what-is-debugging.md
+  - name: 使用 Visual Studio 撰寫更優質的 C# 程式碼
+    href: write-better-code-with-visual-studio.md
 - name: 快速入門
   items:
   - name: 偵錯工具簡介
@@ -832,9 +836,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751046"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561682"
