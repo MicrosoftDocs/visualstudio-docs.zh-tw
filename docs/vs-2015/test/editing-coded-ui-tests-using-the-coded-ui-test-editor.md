@@ -80,7 +80,7 @@ ms.locfileid: "49951253"
   
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。  
   
- 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx’>'**，則您可以將 URL 變更為 `‘ http://Contoso2/default.aspx’`。  
+ 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx’>'**，則您可以將 URL 變更為 `‘http://Contoso2/default.aspx’`。  
   
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 編輯控制項屬性  
